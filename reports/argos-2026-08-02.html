@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>ARGOS 01 — Reporte Nacional de Seguridad (2026-08-02)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --bg-navy:#040814;
+    --panel:#0a1230;
+    --panel-2:#0d1638;
+    --grid-line: rgba(76,230,255,0.08);
+    --border: rgba(76,230,255,0.28);
+    --cyan:#4ce6ff;
+    --cyan-dim:#8fb8c8;
+    --white:#eef6fb;
+    --red:#ff3b3b;
+    --yellow:#ffd23f;
+    --green:#33d17a;
+    --mono: "Consolas","SFMono-Regular","Courier New",monospace;
+    --sans: "Segoe UI","Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:#000;}
+  body{
+    font-family:var(--sans);
+    color:var(--white);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:24px;
+    padding:24px 0 60px;
+  }
+
+  /* ---------- PAGE SHELL ---------- */
+  .page{
+    width:1000px;
+    max-width:96vw;
+    min-height:1360px;
+    background:
+      linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0/40px 40px,
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0/40px 40px,
+      radial-gradient(ellipse at 50% -10%, #0c1a3d 0%, var(--bg-navy) 55%);
+    background-color:var(--bg-navy);
+    border:1px solid var(--border);
+    position:relative;
+    padding:22px 30px 70px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    box-shadow:0 0 0 1px #000, 0 20px 60px rgba(0,0,0,.6);
+  }
+  @media print{
+    body{background:#000;padding:0;gap:0;}
+    .page{box-shadow:none;break-after:page; max-width:none; width:210mm; min-height:297mm;}
+  }
+
+  /* ---------- HEADER ---------- */
+  .masthead{
+    display:grid;
+    grid-template-columns:150px 1fr 150px;
+    align-items:center;
+    gap:14px;
+    border-bottom:1px solid var(--border);
+    padding-bottom:12px;
+  }
+  .masthead .brand{
+    font-family:var(--mono);
+    font-weight:700;
+    letter-spacing:2px;
+  }
+  .brand .argos-num{
+    font-size:34px;
+    color:var(--cyan);
+    text-shadow:0 0 10px rgba(76,230,255,.35);
+    line-height:1;
+  }
+  .brand .sub{
+    font-size:10px;
+    color:var(--cyan-dim);
+    margin-top:4px;
+  }
+  .masthead .titles{
+    text-align:center;
+  }
+  .titles h1{
+    margin:0;
+    font-size:20px;
+    letter-spacing:4px;
+    color:var(--white);
+  }
+  .titles h2{
+    margin:2px 0 0;
+    font-size:12px;
+    letter-spacing:2px;
+    color:var(--cyan);
+    font-weight:600;
+  }
+  .titles .motto{
+    margin-top:6px;
+    font-family:var(--mono);
+    font-size:10px;
+    color:var(--cyan-dim);
+    letter-spacing:2px;
+  }
+  .masthead .corte{
+    text-align:right;
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--cyan-dim);
+    line-height:1.6;
+  }
+  .masthead .corte b{color:var(--white);}
+
+  /* ---------- RADAR + MAP (PORTADA) ---------- */
+  .cover-visuals{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+  }
+  .panel{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:2px;
+    padding:14px 16px;
+  }
+  .panel-title{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:2px;
+    color:var(--cyan);
+    border-bottom:1px solid var(--border);
+    padding-bottom:6px;
+    margin-bottom:10px;
+    display:flex;
+    justify-content:space-between;
+  }
+  .radar-box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:220px;
+  }
+  .radar{
+    position:relative;
+    width:200px;height:200px;border-radius:50%;
+    background:
+      repeating-radial-gradient(circle, transparent 0 24px, var(--grid-line) 24px 25px),
+      radial-gradient(circle, rgba(76,230,255,.06), transparent 70%);
+    border:1px solid var(--border);
+  }
+  .radar::before, .radar::after{
+    content:"";position:absolute;background:var(--border);
+  }
+  .radar::before{width:100%;height:1px;top:50%;left:0;}
+  .radar::after{height:100%;width:1px;left:50%;top:0;}
+  .radar .sweep{
+    position:absolute;inset:0;border-radius:50%;
+    background:conic-gradient(from 0deg, rgba(76,230,255,.55), transparent 35%);
+    animation:sweep 4s linear infinite;
+    mix-blend-mode:screen;
+  }
+  .radar .blip{
+    position:absolute;width:6px;height:6px;border-radius:50%;
+    background:var(--yellow); box-shadow:0 0 8px var(--yellow);
+  }
+  @keyframes sweep{ to { transform:rotate(360deg); } }
+
+  .map-box{
+    height:220px;
+    display:flex;align-items:center;justify-content:center;
+    position:relative;
+  }
+  .map-box svg{width:100%;height:100%;}
+  .map-box .node{fill:var(--red);}
+  .map-box .node-label{fill:var(--cyan-dim);font-family:var(--mono);font-size:8px;}
+  .map-caption{
+    position:absolute;bottom:6px;left:0;right:0;text-align:center;
+    font-family:var(--mono);font-size:9px;color:var(--cyan-dim);
+  }
+
+  /* ---------- SEMAFORO ---------- */
+  .semaforo{
+    display:flex;gap:10px;
+  }
+  .sem-item{
+    flex:1;
+    border:1px solid var(--border);
+    background:var(--panel);
+    padding:10px 12px;
+    font-family:var(--mono);
+  }
+  .sem-item .dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:8px;}
+  .sem-item.alto .dot{background:var(--red);box-shadow:0 0 8px var(--red);}
+  .sem-item.medio .dot{background:var(--yellow);box-shadow:0 0 8px var(--yellow);}
+  .sem-item.bajo .dot{background:var(--green);box-shadow:0 0 8px var(--green);}
+  .sem-item .lbl{font-size:11px;letter-spacing:1px;color:var(--cyan-dim);}
+  .sem-item .val{font-size:20px;color:var(--white);margin-top:4px;}
+
+  /* ---------- SECTION HEADS ---------- */
+  .section-head{
+    font-family:var(--mono);
+    font-size:13px;
+    letter-spacing:3px;
+    color:var(--cyan);
+    border-left:3px solid var(--cyan);
+    padding:4px 10px;
+    background:linear-gradient(90deg, rgba(76,230,255,.08), transparent);
+  }
+
+  /* ---------- EXEC LIST ---------- */
+  .list{
+    display:flex;flex-direction:column;gap:8px;
+  }
+  .list-item{
+    display:grid;
+    grid-template-columns:70px 1fr 110px;
+    gap:10px;
+    border:1px solid var(--border);
+    background:var(--panel);
+    padding:8px 12px;
+    font-size:12px;
+    align-items:center;
+  }
+  .tag{
+    font-family:var(--mono);
+    font-size:9px;
+    padding:2px 6px;
+    text-align:center;
+    border-radius:2px;
+    letter-spacing:1px;
+  }
+  .tag.alto{background:rgba(255,59,59,.15);color:var(--red);border:1px solid var(--red);}
+  .tag.medio{background:rgba(255,210,63,.15);color:var(--yellow);border:1px solid var(--yellow);}
+  .tag.bajo{background:rgba(51,209,122,.15);color:var(--green);border:1px solid var(--green);}
+  .placeholder{color:var(--cyan-dim);font-style:italic;}
+
+  /* ---------- ALERTA ---------- */
+  .alerta{
+    border:1px solid var(--red);
+    background:rgba(255,59,59,.08);
+    padding:10px 14px;
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+  }
+  .alerta .flag{
+    font-family:var(--mono);color:var(--red);font-weight:700;font-size:12px;letter-spacing:2px;
+    white-space:nowrap;
+  }
+  .alerta p{margin:0;font-size:12px;color:var(--white);}
+
+  /* ---------- TABLE ---------- */
+  table.exec{
+    width:100%;
+    border-collapse:collapse;
+    font-size:11.5px;
+  }
+  table.exec th, table.exec td{
+    border:1px solid var(--border);
+    padding:6px 8px;
+    text-align:left;
+  }
+  table.exec th{
+    background:var(--panel-2);
+    color:var(--cyan);
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:1px;
+  }
+  table.exec td{background:var(--panel);}
+
+  /* ---------- NOTA CARD (4 apartados) ---------- */
+  .nota{
+    border:1px solid var(--border);
+    background:var(--panel);
+  }
+  .nota-header{
+    display:flex;justify-content:space-between;align-items:center;
+    background:var(--panel-2);
+    padding:8px 12px;
+    border-bottom:1px solid var(--border);
+  }
+  .nota-header h3{
+    margin:0;font-size:13px;color:var(--white);letter-spacing:.5px;
+  }
+  .nota-header .risk-flag{
+    font-family:var(--mono);font-size:9px;
+    border:1px solid; padding:2px 6px;letter-spacing:1px;
+  }
+  .nota-header .risk-flag.alto{color:var(--red);border-color:var(--red);}
+  .nota-header .risk-flag.medio{color:var(--yellow);border-color:var(--yellow);}
+  .nota-header .risk-flag.bajo{color:var(--green);border-color:var(--green);}
+  .nota-body{padding:10px 14px;display:flex;flex-direction:column;gap:8px;}
+  .apartado{font-size:12px;line-height:1.5;}
+  .apartado .k{
+    display:block;
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:1.5px;
+    color:var(--cyan);
+    margin-bottom:2px;
+  }
+  .nota-footer{
+    border-top:1px solid var(--border);
+    padding:8px 14px;
+    font-family:var(--mono);
+    font-size:10px;
+    color:var(--cyan-dim);
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    align-items:center;
+  }
+  .nota-footer b{color:var(--white);}
+  .stars{color:var(--yellow);letter-spacing:1px;}
+  .src-tag{
+    border:1px solid var(--border);
+    padding:1px 6px;
+    border-radius:2px;
+  }
+
+  /* ---------- PHOTO SLOT ---------- */
+  .photo-slot{
+    border:1px dashed var(--cyan-dim);
+    background:repeating-linear-gradient(45deg, rgba(76,230,255,.03) 0 10px, transparent 10px 20px);
+    min-height:110px;
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;
+    font-family:var(--mono);
+    font-size:10px;
+    color:var(--cyan-dim);
+    padding:8px;
+  }
+
+  /* ---------- FOOTER BAR ---------- */
+  .footbar{
+    position:absolute;
+    left:0;right:0;bottom:0;
+    display:flex;
+    justify-content:space-between;
+    padding:8px 30px;
+    border-top:1px solid var(--border);
+    font-family:var(--mono);
+    font-size:9.5px;
+    color:var(--cyan-dim);
+    background:rgba(4,8,20,.9);
+  }
+  .footbar .uso{color:var(--yellow);letter-spacing:1px;}
+
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;}
+  .muted-note{
+    font-family:var(--mono);font-size:9.5px;color:var(--cyan-dim);
+    border:1px dashed var(--border); padding:6px 10px;
+  }
+  .src-list{font-size:11px;line-height:1.7;}
+  .src-list .grp{color:var(--cyan-dim);font-family:var(--mono);font-size:9px;letter-spacing:1px;display:block;margin-top:6px;}
+</style>
+</head>
+<body>
+
+<!-- =========================================================
+     PÁGINA 1 — PORTADA
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand">
+      <div class="argos-num">ARGOS 01</div>
+      <div class="sub">SISTEMA DE INTELIGENCIA CRIMINAL TRAZABLE</div>
+    </div>
+    <div class="titles">
+      <h1>REPORTE NACIONAL DE SEGURIDAD</h1>
+      <h2>REPORTE DIARIO DE INTELIGENCIA CRIMINAL</h2>
+      <div class="motto">INVESTIGACIONES, BÚSQUEDA Y VERDAD</div>
+    </div>
+    <div class="corte">
+      CORTE INFORMATIVO<br>
+      <b>Fecha:</b> 2026-08-02<br>
+      <b>Hora:</b> 09:01 (CDMX)
+    </div>
+  </header>
+
+  <div class="cover-visuals">
+    <div class="panel">
+      <div class="panel-title"><span>RADAR CENTRAL</span><span>EN VIVO</span></div>
+      <div class="radar-box">
+        <div class="radar">
+          <div class="sweep"></div>
+          <div class="blip" style="top:38%; left:62%;"></div>
+          <div class="blip" style="top:64%; left:40%;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-title"><span>MAPA NACIONAL — FOCOS DEL CORTE</span><span>ESQUEMÁTICO</span></div>
+      <div class="map-box">
+        <svg viewBox="0 0 300 200" preserveAspectRatio="xMidYMid meet">
+          <polygon points="30,40 90,25 150,35 200,20 260,45 270,80 240,95 250,130 210,150 170,140 140,165 100,150 70,160 40,120 20,90"
+                   fill="none" stroke="var(--cyan-dim)" stroke-width="1.2" stroke-dasharray="3,2"/>
+          <circle class="node" cx="150" cy="100" r="4"/><text class="node-label" x="156" y="102">MICHOACÁN (ARG-01-001)</text>
+          <circle class="node" cx="185" cy="70" r="4"/><text class="node-label" x="191" y="72">CDMX / EDOMÉX (ARG-01-002)</text>
+          <circle class="node" cx="90" cy="70" r="4" fill="var(--yellow)"/><text class="node-label" x="96" y="72">SONORA (ARG-01-006)</text>
+        </svg>
+        <div class="map-caption">Contorno esquemático — sustituir por capa GIS oficial verificada</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-head">SEMÁFORO ARGOS</div>
+  <div class="semaforo">
+    <div class="sem-item alto"><span class="dot"></span><span class="lbl">RIESGO ALTO</span><div class="val">2 eventos</div></div>
+    <div class="sem-item medio"><span class="dot"></span><span class="lbl">RIESGO MEDIO</span><div class="val">3 eventos</div></div>
+    <div class="sem-item bajo"><span class="dot"></span><span class="lbl">RIESGO BAJO</span><div class="val">1 evento</div></div>
+  </div>
+
+  <div class="section-head">EJES DEL DÍA</div>
+  <div class="list">
+    <div class="list-item"><span class="tag alto">EJE 1</span><span>Cae "El R1", presunto autor intelectual del homicidio del alcalde de Uruapan, Carlos Manzo; SSPC lo vincula al CJNG.</span><span>ARG-01-001</span></div>
+    <div class="list-item"><span class="tag alto">EJE 2</span><span>Octavo detenido por el homicidio de la pareja binacional hallada en fosas de La Marquesa, Ocoyoacac (Edomex).</span><span>ARG-01-002</span></div>
+    <div class="list-item"><span class="tag medio">EJE 3</span><span>SESNSP reporta caída de 48% en homicidio doloso diario entre septiembre 2024 y junio 2026.</span><span>ARG-01-003</span></div>
+  </div>
+
+  <div class="section-head">NOTICIAS DE AYER Y HOY</div>
+  <table class="exec">
+    <thead><tr><th>Fecha del hecho</th><th>Entidad</th><th>Hecho</th><th>Nivel de riesgo</th><th>ARG-ID</th></tr></thead>
+    <tbody>
+      <tr><td>2026-07-30</td><td>Michoacán</td><td>Captura de "El R1", autor intelectual señalado del homicidio de Carlos Manzo</td><td><span class="tag alto">ALTO</span></td><td>ARG-01-001</td></tr>
+      <tr><td>2026-08-01 / 08-02</td><td>CDMX / Edomex</td><td>Octavo detenido, caso fosas de La Marquesa (pareja binacional)</td><td><span class="tag alto">ALTO</span></td><td>ARG-01-002</td></tr>
+      <tr><td>2026-07-25</td><td>Sonora</td><td>Ejército y Guardia Nacional aseguran arsenal atribuido al Cártel del Pacífico</td><td><span class="tag medio">MEDIO</span></td><td>ARG-01-006</td></tr>
+      <tr><td>2026-07-14</td><td>Nacional</td><td>SESNSP reporta caída de 48% en homicidio doloso diario</td><td><span class="tag medio">MEDIO</span></td><td>ARG-01-003</td></tr>
+    </tbody>
+  </table>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-08-02 · Hora: 09:01 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 01</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- =========================================================
+     PÁGINA 2 — TABLERO EJECUTIVO
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:22px;">ARGOS 01</div></div>
+    <div class="titles"><h2 style="font-size:14px;">TABLERO EJECUTIVO</h2></div>
+    <div class="corte">PÁG. 2 / 4</div>
+  </header>
+
+  <div class="section-head">RESUMEN EJECUTIVO</div>
+  <p style="font-size:12.5px;line-height:1.6;">
+    El corte concentra dos eventos de riesgo alto con vínculo directo a estructuras de crimen organizado:
+    la detención del presunto autor intelectual del homicidio del alcalde de Uruapan (Michoacán), atribuido
+    institucionalmente al CJNG, y el octavo detenido en el homicidio de una pareja binacional localizada en
+    fosas clandestinas en el Estado de México. Ambos casos muestran capacidad de judicialización sostenida
+    (detenciones acumulativas a lo largo de semanas) más que hechos aislados de un solo día. A nivel de
+    indicadores, el SESNSP reporta una tendencia oficial a la baja en homicidio doloso, sin que ello sea
+    verificable por este corte para el nivel municipal de los casos aquí documentados.
+  </p>
+
+  <div class="section-head">EVENTOS PRIORITARIOS</div>
+  <table class="exec">
+    <thead>
+      <tr><th>Entidad</th><th>Hecho</th><th>Nivel de riesgo</th><th>Fuente institucional</th><th>Fuente nacional</th><th>Nivel de confianza</th><th>ARG-ID</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Michoacán</td>
+        <td>Captura de "El R1" (Ramón Ángel Álvarez Ayala), señalado autor intelectual del homicidio de Carlos Manzo</td>
+        <td><span class="tag alto">ALTO</span></td>
+        <td>SSPC / Fiscalía de Michoacán</td>
+        <td>El Universal, La Jornada, Milenio</td>
+        <td><span class="stars">★★★★☆</span></td>
+        <td>ARG-01-001</td>
+      </tr>
+      <tr>
+        <td>CDMX / Edomex</td>
+        <td>Detención de Iván "N" (Iván Lazcano Álvarez), octavo implicado, caso fosas de La Marquesa</td>
+        <td><span class="tag alto">ALTO</span></td>
+        <td>SSC CDMX / FGJ CDMX / SSPC</td>
+        <td>Excélsior, Infobae, Proceso</td>
+        <td><span class="stars">★★★★☆</span></td>
+        <td>ARG-01-002</td>
+      </tr>
+      <tr>
+        <td>Sonora</td>
+        <td>Aseguramiento de arsenal (+272 mil cartuchos, 81 armas) atribuido al Cártel del Pacífico</td>
+        <td><span class="tag medio">MEDIO</span></td>
+        <td>SEDENA / Guardia Nacional</td>
+        <td>Infobae</td>
+        <td><span class="stars">★★★★☆</span></td>
+        <td>ARG-01-006</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="section-head">ARGOS ALERTA</div>
+  <div class="alerta">
+    <span class="flag">⚠ ALERTA</span>
+    <p>
+      El titular de la SSPC, Omar García Harfuch, confirmó que el homicidio del alcalde de Uruapan, Carlos
+      Manzo, fue ordenado por el CJNG tras considerar sus posturas públicas una "provocación", con indicios
+      de que el líder de la organización tenía conocimiento de la orden. Van 31 personas detenidas en la
+      investigación al corte del 31 de julio de 2026. Riesgo latente: reincidencia de agresiones contra
+      autoridades municipales en zonas de disputa territorial del CJNG.
+    </p>
+  </div>
+
+  <div class="section-head">DETENCIONES RELEVANTES</div>
+  <table class="exec">
+    <thead><tr><th>Fecha</th><th>Entidad</th><th>Objetivo / Cargo</th><th>Autoridad</th><th>Fuente</th><th>ARG-ID</th></tr></thead>
+    <tbody>
+      <tr><td>2026-07-30</td><td>Michoacán</td><td>Ramón Ángel Álvarez Ayala, "El R1" — presunto autor intelectual, célula CJNG</td><td>SSPC / CNI / Fiscalía Michoacán</td><td>La Jornada, El Universal</td><td>ARG-01-001</td></tr>
+      <tr><td>2026-08-01/02</td><td>Milpa Alta, CDMX</td><td>Iván Lazcano Álvarez, "Iván N." (33 años) — 8.º detenido del caso</td><td>SSC CDMX / FGJ CDMX / SSPC</td><td>Excélsior, Quadratín</td><td>ARG-01-002</td></tr>
+    </tbody>
+  </table>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-08-02 · Hora: 09:01 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 01</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- =========================================================
+     PÁGINA 3 — CRIMEN ORGANIZADO
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:22px;">ARGOS 01</div></div>
+    <div class="titles"><h2 style="font-size:14px;">CRIMEN ORGANIZADO</h2></div>
+    <div class="corte">PÁG. 3 / 4</div>
+  </header>
+
+  <div class="grid-2">
+
+    <div class="nota">
+      <div class="nota-header"><h3>HOMICIDIO DE AUTORIDAD MUNICIPAL / CJNG</h3><span class="risk-flag alto">ALTO</span></div>
+      <div class="nota-body">
+        <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+          El 30 de julio de 2026 fue detenido Ramón Ángel Álvarez Ayala, alias "El R1", señalado por la SSPC
+          y la Fiscalía de Michoacán como presunto autor intelectual del homicidio del entonces alcalde de
+          Uruapan, Carlos Manzo (asesinado el 1 de noviembre de 2025). El 31 de julio de 2026, el titular de
+          la SSPC, Omar García Harfuch, atribuyó el homicidio al CJNG, señalando que habría sido ordenado
+          como respuesta a declaraciones públicas del alcalde consideradas una "provocación". Van 31 personas
+          detenidas en la investigación al corte citado.
+        </div>
+        <div class="apartado"><span class="k">CORROBORACIÓN</span>
+          Fuente institucional (SSPC, Fiscalía de Michoacán) + fuente nacional (El Universal, La Jornada,
+          Milenio, El Financiero, UnoTV).
+        </div>
+        <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+          Confirma capacidad del CJNG para ordenar agresiones directas contra autoridades municipales en
+          disputa territorial en Michoacán. Riesgo: efecto réplica contra otras autoridades locales que
+          adopten posturas públicas de confrontación. Objetivo de interés: identificación de la cadena de
+          mando completa (autor material ya fallecido, autor intelectual detenido, mandos superiores de la
+          célula bajo investigación). Vacío: no se ha confirmado judicialmente el nivel de conocimiento
+          directo atribuido al líder nacional de la organización.
+        </div>
+        <div class="photo-slot">[ Insertar fotografía oficial verificada de la detención — no disponible en este corte ]</div>
+      </div>
+      <div class="nota-footer">
+        <b>ARG-01-001</b>
+        <span>Confianza: <span class="stars">★★★★☆</span> 🟡 Medio-Alto</span>
+        <span class="src-tag">Institucional</span><span class="src-tag">Nacional</span>
+        <span>Consulta: 2026-08-02 09:01 CDMX</span>
+      </div>
+    </div>
+
+    <div class="nota">
+      <div class="nota-header"><h3>DESAPARICIONES / FOSAS — LA MARQUESA</h3><span class="risk-flag alto">ALTO</span></div>
+      <div class="nota-body">
+        <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+          El 1-2 de agosto de 2026 fue detenido Iván Lazcano Álvarez, "Iván N." (33 años), en la colonia
+          Villa Milpa Alta, como octavo implicado en el homicidio de Guillermo Jaffet Hidalgo Ortiz y Zafar
+          Padamsee Mawani, pareja binacional (mexicana-estadounidense) desaparecida el 20 de mayo de 2026 en
+          Tlalpan, CDMX, cuyos cuerpos fueron localizados el 17 de junio de 2026 en dos fosas clandestinas en
+          el paraje El Venado, La Marquesa, municipio de Ocoyoacac, Estado de México. Se le aseguraron 40
+          dosis de marihuana, 20 dosis de cristal, efectivo, celular, mochila tipo repartidor y una motocicleta.
+        </div>
+        <div class="apartado"><span class="k">CORROBORACIÓN</span>
+          Fuente institucional (comunicado conjunto SSC CDMX / FGJ CDMX / SSPC) + fuente nacional (Excélsior,
+          Infobae, Proceso, Aristegui Noticias, La Razón) + fuente regional (Quadratín).
+        </div>
+        <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+          El caso evidencia una red operativa con al menos ocho integrantes detenidos en un lapso de dos
+          meses, lo que sugiere una célula con roles diferenciados (privación de la libertad, traslado,
+          ocultamiento de cuerpos). Riesgo: la ubicación de La Marquesa (corredor CDMX-Toluca) ya había sido
+          usada previamente para inhumación clandestina. Objetivo de interés: identificación de los mandos
+          que ordenaron la privación de la libertad original. Vacío: no se ha hecho pública la motivación del
+          homicidio ni la relación previa entre víctimas y detenidos.
+        </div>
+        <div class="photo-slot">[ Insertar fotografía oficial verificada de la detención — no disponible en este corte ]</div>
+      </div>
+      <div class="nota-footer">
+        <b>ARG-01-002</b>
+        <span>Confianza: <span class="stars">★★★★☆</span> 🟡 Medio-Alto</span>
+        <span class="src-tag">Institucional</span><span class="src-tag">Nacional</span><span class="src-tag">Regional</span>
+        <span>Consulta: 2026-08-02 09:01 CDMX</span>
+      </div>
+    </div>
+
+    <div class="nota">
+      <div class="nota-header"><h3>NARCOTRÁFICO MARÍTIMO</h3><span class="risk-flag medio">MEDIO</span></div>
+      <div class="nota-body">
+        <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+          La SEMAR reportó, al 26 de julio de 2026, un acumulado administrativo de 90 toneladas de droga
+          aseguradas y 337 detenidos en operaciones marítimas. Entre los aseguramientos individuales
+          reportados en el periodo reciente: 1.36 toneladas de cocaína frente a costas de Guerrero (7 de junio
+          de 2026) y 1.187 toneladas en la Aduana Marítima de Lázaro Cárdenas, Michoacán (fecha de reporte no
+          precisada en fuente consultada).
+        </div>
+        <div class="apartado"><span class="k">CORROBORACIÓN</span>
+          Fuente institucional (SEMAR) + fuente nacional (Tribuna, Excélsior, Tribuna de México).
+        </div>
+        <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+          El acumulado sostiene la hipótesis de uso continuo de la ruta del Pacífico mediante embarcaciones
+          rápidas y semisumergibles. Riesgo: persistencia del corredor Guerrero-Michoacán-Oaxaca como punto de
+          entrada. Línea a explotar: cruce de aseguramientos marítimos con las estructuras de narcomenudeo
+          terrestre ya identificadas en Michoacán (ARG-01-001). Vacío: no se cuenta con desglose de organización
+          criminal responsable por cada aseguramiento individual.
+        </div>
+      </div>
+      <div class="nota-footer">
+        <b>ARG-01-004</b>
+        <span>Confianza: <span class="stars">★★★★☆</span> 🟡 Medio</span>
+        <span class="src-tag">Institucional</span><span class="src-tag">Nacional</span>
+        <span>Consulta: 2026-08-02 09:01 CDMX</span>
+      </div>
+    </div>
+
+    <div class="nota">
+      <div class="nota-header"><h3>HUACHICOL</h3><span class="risk-flag medio">MEDIO</span></div>
+      <div class="nota-body">
+        <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+          Pemex reconoció públicamente, el 7 de mayo de 2026, la colusión de funcionarios propios en el robo
+          de combustible, señalando un promedio de 30 ordeñas diarias a ductos. Para el primer trimestre de
+          2026, Pemex reportó una reducción de 30% en pérdidas por huachicol frente al mismo periodo de 2025
+          (3,812 millones de pesos vs. 5,417 millones de pesos). No se identificó un evento operativo puntual
+          de huachicol con corroboración institucional durante este corte.
+        </div>
+        <div class="apartado"><span class="k">CORROBORACIÓN</span>
+          Fuente institucional (Pemex) + fuente nacional (Expansión, El Universal, Proceso).
+        </div>
+        <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+          La reducción de pérdidas reportada convive con reconocimiento institucional de colusión interna, lo
+          que indica un riesgo estructural más que episódico. Objetivo de interés: identificación de
+          funcionarios de Pemex señalados en la colusión reconocida. Vacío: no hay corte diario de ordeñas
+          detectadas para este corte específico; la cifra de "30 diarias" corresponde a un promedio 2024-2025.
+        </div>
+      </div>
+      <div class="nota-footer">
+        <b>ARG-01-005</b>
+        <span>Confianza: <span class="stars">★★★★☆</span> 🟡 Medio</span>
+        <span class="src-tag">Institucional</span><span class="src-tag">Nacional</span>
+        <span>Consulta: 2026-08-02 09:01 CDMX</span>
+      </div>
+    </div>
+
+    <div class="nota">
+      <div class="nota-header"><h3>EXTORSIÓN</h3><span class="risk-flag bajo">BAJO</span></div>
+      <div class="nota-body">
+        <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+          El 29 de julio de 2026 se realizó audiencia contra tres presuntos extorsionadores de la facción "2
+          de Abril", vinculada a la Fuerza Anti-Unión, en la Ciudad de México: Fernando "N" ("El Palillo"),
+          Cristian "N" ("El Chispa") y Elevy "N", por extorsión agravada cometida en pandilla entre 2023 y
+          2025. Se les impuso prisión preventiva y un plazo de dos meses para el cierre de la investigación
+          complementaria.
+        </div>
+        <div class="apartado"><span class="k">CORROBORACIÓN</span>
+          Pendiente de corroboración independiente — solo se identificó una fuente nacional (Infobae) para
+          este hecho específico durante la búsqueda del corte.
+        </div>
+        <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+          El proceso judicial confirma la presencia activa de células vinculadas a la Fuerza Anti-Unión
+          operando extorsión en la capital. Línea a explotar: identificación de las víctimas/giros comerciales
+          afectados por esta célula específica. Vacío: no se ubicó comunicado institucional (FGJ CDMX) que
+          corrobore de forma independiente la nota periodística.
+        </div>
+      </div>
+      <div class="nota-footer">
+        <b>ARG-01-007</b>
+        <span>Confianza: <span class="stars">★★☆☆☆</span> 🟠 Bajo</span>
+        <span class="src-tag">Nacional</span>
+        <span>Consulta: 2026-08-02 09:01 CDMX</span>
+      </div>
+    </div>
+
+    <div class="nota">
+      <div class="nota-header"><h3>LABORATORIOS / REDES FINANCIERAS</h3><span class="risk-flag bajo">SIN DATO</span></div>
+      <div class="nota-body">
+        <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+          <span class="placeholder">SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE.</span>
+        </div>
+        <div class="apartado"><span class="k">CORROBORACIÓN</span>
+          <span class="placeholder">No aplica — sin hecho que corroborar en este corte.</span>
+        </div>
+        <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+          <span class="placeholder">No aplica. Mantener monitoreo institucional (FGR, UIF, SSPC) para el
+          siguiente corte.</span>
+        </div>
+      </div>
+      <div class="nota-footer">
+        <b>ARG-01-008</b>
+        <span>Confianza: <span class="stars">☆☆☆☆☆</span> — Sin dato</span>
+        <span>Consulta: 2026-08-02 09:01 CDMX</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section-head">ANÁLISIS ARGOS</div>
+  <p style="font-size:12px;line-height:1.6;">
+    Los dos eventos de riesgo alto del corte (ARG-01-001 y ARG-01-002) comparten un patrón: ambos son el
+    resultado de investigaciones acumulativas de semanas o meses que hoy suman un detenido adicional, no
+    hechos violentos ocurridos en las últimas 24 horas. Esto sugiere que la métrica relevante para el
+    seguimiento no es el hecho aislado sino el ritmo de judicialización de cada expediente. El aseguramiento
+    de arsenal en Sonora (ARG-01-006) y el acumulado de la SEMAR (ARG-01-004) muestran actividad institucional
+    sostenida contra el traslado de armas y droga por vía marítima y terrestre en el corredor del Pacífico.
+    Vacío transversal del corte: no se localizó información institucional verificable sobre laboratorios
+    clandestinos o desarticulación de redes financieras vinculadas a estos casos.
+  </p>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-08-02 · Hora: 09:01 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 01</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- =========================================================
+     PÁGINA 4 — VALORACIÓN / CONCLUSIONES / FUENTES
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:22px;">ARGOS 01</div></div>
+    <div class="titles"><h2 style="font-size:14px;">VALORACIÓN Y FUENTES</h2></div>
+    <div class="corte">PÁG. 4 / 4</div>
+  </header>
+
+  <div class="section-head">VALORACIÓN</div>
+  <p style="font-size:12.5px;line-height:1.6;">
+    El nivel de riesgo agregado del corte se califica como MEDIO-ALTO. Los dos eventos de riesgo alto
+    corresponden a avances judiciales en casos ya abiertos (homicidio de una autoridad municipal en Michoacán
+    y homicidio de ciudadanos extranjeros en el Valle de México), no a hechos violentos nuevos del día. La
+    confiabilidad general de las fuentes de este corte es alta: los dos casos prioritarios cuentan con
+    confirmación institucional directa (SSPC, SSC CDMX, FGJ CDMX, Fiscalía de Michoacán) y corroboración en
+    múltiples medios nacionales. El punto de menor confiabilidad es la nota de extorsión (ARG-01-007), que
+    solo cuenta con una fuente nacional identificada.
+  </p>
+
+  <div class="section-head">CONCLUSIONES</div>
+  <p style="font-size:12.5px;line-height:1.6;">
+    El corte confirma continuidad en la judicialización de dos expedientes de alto perfil vinculados a
+    estructuras de crimen organizado (CJNG en Michoacán; red no identificada públicamente en el caso de La
+    Marquesa). La reducción oficial de homicidio doloso reportada por el SESNSP no es contrastable, con la
+    información de este corte, contra la incidencia específica de los casos aquí documentados. Se recomienda
+    dar seguimiento a la siguiente audiencia del caso Manzo y a la identificación de los mandos superiores en
+    el caso La Marquesa en el próximo corte.
+  </p>
+
+  <div class="section-head">INDICADORES OFICIALES</div>
+  <table class="exec">
+    <thead><tr><th>Indicador</th><th>Fuente</th><th>Periodo</th><th>Valor</th></tr></thead>
+    <tbody>
+      <tr><td>Homicidio doloso, promedio diario nacional</td><td>SESNSP / Gabinete de Seguridad</td><td>Sep. 2024 → Jun. 2026</td><td>86.9 → 45.4 víctimas/día (−48%)</td></tr>
+      <tr><td>Homicidio doloso, promedio diario, 1.er semestre</td><td>SESNSP / Gabinete de Seguridad</td><td>Ene.–Jun. 2026</td><td>49.7 víctimas/día (mínimo desde 2016)</td></tr>
+      <tr><td>Concentración de homicidio doloso por entidad (top 8, 54% del total nacional)</td><td>SESNSP / Gabinete de Seguridad</td><td>1.er semestre 2026</td><td>Guanajuato 8.8% · Baja California 8.1% · Chihuahua 7.8% · Sinaloa 7% · Edomex 5.9% · Guerrero 5.6% · Morelos 5.5% · Veracruz 5%</td></tr>
+      <tr><td>Droga asegurada / detenidos, operaciones marítimas (acumulado de administración)</td><td>SEMAR</td><td>Al 26 jul. 2026</td><td>90 toneladas · 337 detenidos</td></tr>
+      <tr><td>Pérdidas por huachicol, 1.er trimestre</td><td>Pemex</td><td>Ene.–Mar. 2026 vs. 2025</td><td>3,812 mdp (−30% vs. 5,417 mdp)</td></tr>
+      <tr><td>Carpetas de investigación (federal)</td><td>FGR</td><td>—</td><td class="placeholder">SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE</td></tr>
+      <tr><td>Indicadores socioeconómicos asociados</td><td>INEGI</td><td>—</td><td class="placeholder">SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE</td></tr>
+    </tbody>
+  </table>
+
+  <div class="section-head">FUENTES CONSULTADAS EN ESTE CORTE</div>
+  <div class="grid-3">
+    <div class="panel">
+      <div class="panel-title">INSTITUCIONALES</div>
+      <div class="src-list">
+        SSPC (Omar García Harfuch) · Fiscalía General de Justicia de Michoacán · SSC Ciudad de México
+        (Pablo Vázquez Camacho) · Fiscalía General de Justicia de la Ciudad de México · SEMAR · SEDENA /
+        Guardia Nacional · Pemex · SESNSP / Gabinete de Seguridad
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-title">MEDIOS NACIONALES / REGIONALES</div>
+      <div class="src-list">
+        El Universal · La Jornada · Milenio · El Financiero · Proceso · Infobae México · Excélsior · Aristegui
+        Noticias · La Razón · UnoTV · Expansión · Tribuna de México
+        <span class="grp">REGIONAL</span>
+        Quadratín (Estado de México)
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-title">FUENTES ABIERTAS (NO OFICIAL)</div>
+      <div class="src-list placeholder">Ninguna fuente abierta (redes sociales, Telegram, blogs no periodísticos) fue utilizada para corroborar hechos de este corte.</div>
+    </div>
+  </div>
+
+  <p class="muted-note" style="margin-top:6px;">
+    Nota metodológica: este producto se generó mediante búsqueda web dirigida siguiendo el orden de fuentes
+    definido en CLAUDE.md (institucional → nacional → regional → abierta). Los enlaces de verificación de cada
+    hecho fueron registrados por el analista y pueden solicitarse para auditoría; no se incluyen en el cartelón
+    por diseño editorial. El número de reporte "ARGOS 01" es correlativo interno de este repositorio y debe
+    ajustarse a la numeración real de la unidad si difiere.
+  </p>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-08-02 · Hora: 09:01 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 01</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+</body>
+</html>
