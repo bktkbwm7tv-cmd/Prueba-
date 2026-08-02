@@ -1,4 +1,4 @@
-# ARGOS 01 — Registro de fuentes (auditoría)
+# ARGOS 86 — Registro de fuentes (auditoría)
 
 Corte: 2026-08-02 · Hora de consulta: 09:01 (Ciudad de México)
 
@@ -6,7 +6,7 @@ Este documento respalda `argos-2026-08-02.html` con los enlaces exactos consulta
 hecho, conforme al requisito de trazabilidad de `CLAUDE.md`. No se incluyen en el cartelón por
 diseño editorial, pero deben conservarse para auditoría documental.
 
-## ARG-01-001 — Homicidio de autoridad municipal / CJNG (Uruapan, Michoacán)
+## ARG-86-001 — Homicidio de autoridad municipal / CJNG (Uruapan, Michoacán)
 
 - Institucional — SSPC (declaración de Omar García Harfuch): [El Universal](https://www.eluniversal.com.mx/nacion/harfuch-homicidio-de-carlos-manzo-fue-una-provocacion-entre-el-cjng-y-el-alcalde-el-mencho-conocia-orden-para-matarlo/)
 - Institucional — Fiscalía de Michoacán / captura "El R1": [La Jornada](https://www.jornada.com.mx/noticia/2026/07/30/politica/capturaron-a-el-r1-presunto-autor-intelectual-del-asesinato-de-carlos-manzo-alcalde-de-uruapan)
@@ -15,7 +15,7 @@ diseño editorial, pero deben conservarse para auditoría documental.
 - Nacional: [UnoTV — 20 detenidos, caso Manzo](https://www.unotv.com/estados/michoacan/20-detenidos-homicidio-alcalde-uruapan-fiscalia-michoacan/)
 - Nacional (cifra de 31 detenidos al corte del 31 jul.): [La Jornada](https://www.jornada.com.mx/noticia/2026/07/31/politica/asesinato-de-carlos-manzo-fue-ordenado-por-r1-posturas-del-alcalde-eran-consideradas-provocaciones-al-cjng-harfuch)
 
-## ARG-01-002 — Desapariciones / fosas de La Marquesa (CDMX / Edomex)
+## ARG-86-002 — Desapariciones / fosas de La Marquesa (CDMX / Edomex)
 
 - Institucional (comunicado conjunto SSC CDMX / FGJ CDMX / SSPC, referido por medios): [SSC CDMX — sección comunicación](https://www.ssc.cdmx.gob.mx/)
 - Nacional: [Excélsior](https://www.excelsior.com.mx/ciudad-de-mexico/detenido-implicado-homicidio-extranjeros-cdmx)
@@ -24,23 +24,23 @@ diseño editorial, pero deben conservarse para auditoría documental.
 - Nacional: [Aristegui Noticias — localización en fosa de Edomex](https://aristeguinoticias.com/1906/mexico/localizan-en-fosa-de-edomex-a-pareja-desaparecida-de-eu/)
 - Regional: [Quadratín — octavo implicado](https://mexico.quadratin.com.mx/cae-octavo-implicado-en-desaparicion-y-homicidio-de-estadounidenses/)
 
-## ARG-01-004 — Narcotráfico marítimo (SEMAR)
+## ARG-86-004 — Narcotráfico marítimo (SEMAR)
 
 - Institucional / Nacional: [Tribuna — 90 toneladas y 337 detenidos](https://tribuna.com.mx/mexico/2026/07/26/semar-decomisa-90-toneladas-de-droga-y-detiene-a-337-en-operaciones-maritimas_624281/)
 - Nacional: [Tribuna de México — 90 toneladas](https://tribunademexico.com/marina-90-toneladas-narcotrafico-maritimo/)
 - Nacional: [Semanario ZETA — 1.36 t frente a Guerrero](https://zetatijuana.com/2026/06/semar-decomisa-1-36-toneladas-de-presunta-cocaina-frente-a-costas-de-guerrero/)
 - Nacional: [Tribuna de México — decomiso Michoacán](https://tribunademexico.com/semar-golpe-narcotrafico-michoacan/)
 
-## ARG-01-005 — Huachicol (Pemex)
+## ARG-86-005 — Huachicol (Pemex)
 
 - Institucional (reconocimiento de Pemex): [Expansión](https://expansion.mx/empresas/2026/05/07/pemex-acepta-colusion-funcionarios-huachicol)
 - Nacional: [El Universal — pérdidas por huachicol bajan 30%](https://www.eluniversal.com.mx/cartera/bajan-30-las-perdidas-por-huachicol-en-2026/)
 
-## ARG-01-006 — Aseguramiento de arsenal (Sonora)
+## ARG-86-006 — Aseguramiento de arsenal (Sonora)
 
 - Institucional / Nacional: [Infobae — Ejército y GN aseguran arsenal en Sonora](https://www.infobae.com/mexico/2026/07/25/ejercito-y-guardia-nacional-aseguran-arsenal-del-cartel-del-pacifico-en-sonora-decomisan-mas-de-272-mil-cartuchos-y-81-armas/)
 
-## ARG-01-007 — Extorsión (facción "2 de Abril" / Fuerza Anti-Unión, CDMX)
+## ARG-86-007 — Extorsión (facción "2 de Abril" / Fuerza Anti-Unión, CDMX)
 
 - Nacional (única fuente identificada — de ahí la confianza ★★☆☆☆): [Infobae](https://www.infobae.com/mexico/2026/07/31/procesan-a-tres-presuntos-extorsionadores-de-la-faccion-2-de-abril-vinculados-a-la-fuerza-anti-union-en-cdmx/)
 
