@@ -86,6 +86,61 @@ Cada nota se divide exactamente en cuatro apartados:
    - Fuentes: Institucional / Nacional / Regional / Abierta
    - Consulta: fecha y hora
 
+## Metodología del nivel de riesgo nacional (semáforo ARGOS)
+
+Versión 1.0
+
+### Principio
+
+El Nivel de Riesgo Nacional ARGOS no se determina por el número de eventos registrados ni por
+estadísticas generales. Se determina por la gravedad e impacto estratégico de los hechos ocurridos
+durante el periodo de corte.
+
+Las acciones exitosas del Estado (detenciones, cateos, aseguramientos, rescates, extradiciones,
+etc.) **no incrementan el nivel de riesgo**. Por el contrario, representan capacidad institucional
+y deben visualizarse como acciones positivas.
+
+### Clasificación
+
+**🔴 ROJO — Eventos de alto impacto.** Representan un incremento del riesgo nacional: homicidios
+múltiples, masacres, ataques contra autoridades, asesinato de funcionarios, atentados, secuestros
+masivos, desapariciones múltiples, hallazgo de fosas clandestinas, narcobloqueos, quema masiva de
+vehículos, ataques con explosivos, uso de drones armados, terror contra población civil, motines
+con víctimas, ataques a infraestructura crítica, ataques coordinados del crimen organizado. Estos
+eventos son los que determinan el Nivel de Riesgo Nacional ARGOS.
+
+**🟡 AMARILLO — Violencia operativa.** Eventos donde existe confrontación criminal, pero sin
+representar por sí mismos un incremento estratégico del riesgo nacional: enfrentamientos, topones,
+persecuciones, agresiones a fuerzas de seguridad, bloqueos carreteros aislados, operativos con
+intercambio de disparos, incidentes armados focalizados. Representan un nivel de atención
+intermedio.
+
+**🟢 VERDE — Acciones institucionales.** No representan incremento del riesgo; corresponden a
+resultados operativos del Estado: detenciones, cateos, aseguramientos de armas/droga/hidrocarburo,
+desmantelamiento de laboratorios, rescate de víctimas, extradiciones, órdenes de aprehensión
+cumplimentadas, congelamiento de cuentas, operativos coordinados exitosos. Estos eventos
+fortalecen la capacidad institucional y deben presentarse en color verde.
+
+### Regla operativa
+
+El color asignado corresponde al **tipo de evento**, no al resultado político ni al número de
+casos: rojo = amenaza o daño; amarillo = confrontación o riesgo operativo; verde = respuesta
+institucional. Cuando el hecho reportado en el corte es la detención de un responsable de un delito
+grave ocurrido en el pasado, el color del hecho de hoy es verde (es una acción institucional); el
+delito original, si ocurrió durante un corte anterior, se clasificó en su momento como rojo en ese
+corte y no se recalifica retroactivamente.
+
+### Aplicación en ARGOS
+
+El cartelón agrupa los eventos por color y elabora la Valoración ARGOS considerando principalmente
+los eventos clasificados en rojo. Las acciones verdes se reportan como logros operativos y nunca se
+utilizan para justificar un aumento del nivel de riesgo nacional. El apartado "Nivel de Riesgo
+Nacional ARGOS" es una valoración analítica derivada de los eventos rojos observados durante el
+corte, complementada por el contexto operativo de los eventos amarillos y la capacidad de respuesta
+reflejada en los eventos verdes. Con esta metodología, el semáforo ARGOS deja de ser un elemento
+gráfico y se convierte en una herramienta de evaluación de inteligencia, con una lógica uniforme y
+reproducible para todos los reportes.
+
 ## Metodología de búsqueda (orden obligatorio)
 
 1. **Fuentes institucionales**: Gabinete de Seguridad, SSPC, FGR, SEMAR, SEDENA, Guardia Nacional,
@@ -110,7 +165,9 @@ hay datos recientes: `SIN ACTUALIZACIÓN OFICIAL.`
 ## Tablas
 
 Columnas obligatorias: Entidad, Hecho, Nivel de riesgo, Fuente institucional, Fuente nacional,
-Nivel de confianza, ARG-ID.
+Nivel de confianza, ARG-ID. El "Nivel de riesgo" se clasifica con la escala 🔴 Rojo / 🟡 Amarillo /
+🟢 Verde definida en "Metodología del nivel de riesgo nacional", no con una escala genérica de
+alto/medio/bajo.
 
 ## Escala de nivel de confianza
 
