@@ -249,6 +249,8 @@
     white-space:nowrap;
   }
   .alerta p{margin:0;font-size:12px;color:var(--white);}
+  .alerta.contexto{border-color:var(--cyan);background:rgba(76,230,255,.06);}
+  .alerta.contexto .flag{color:var(--cyan);}
 
   /* ---------- TABLE ---------- */
   table.exec{
@@ -291,6 +293,7 @@
   .nota-header .risk-flag.alto{color:var(--red);border-color:var(--red);}
   .nota-header .risk-flag.medio{color:var(--yellow);border-color:var(--yellow);}
   .nota-header .risk-flag.bajo{color:var(--green);border-color:var(--green);}
+  .nota-header .risk-flag.sindato{color:var(--cyan-dim);border-color:var(--cyan-dim);}
   .nota-body{padding:10px 14px;display:flex;flex-direction:column;gap:8px;}
   .apartado{font-size:12px;line-height:1.5;}
   .apartado .k{
@@ -398,9 +401,9 @@
         <svg viewBox="0 0 300 200" preserveAspectRatio="xMidYMid meet">
           <polygon points="30,40 90,25 150,35 200,20 260,45 270,80 240,95 250,130 210,150 170,140 140,165 100,150 70,160 40,120 20,90"
                    fill="none" stroke="var(--cyan-dim)" stroke-width="1.2" stroke-dasharray="3,2"/>
-          <circle class="node" cx="150" cy="100" r="4"/><text class="node-label" x="156" y="102">MICHOACÁN (ARG-86-001)</text>
-          <circle class="node" cx="185" cy="70" r="4"/><text class="node-label" x="191" y="72">CDMX / EDOMÉX (ARG-86-002)</text>
-          <circle class="node" cx="90" cy="70" r="4" fill="var(--yellow)"/><text class="node-label" x="96" y="72">SONORA (ARG-86-006)</text>
+          <circle class="node" cx="150" cy="110" r="4" fill="var(--green)"/><text class="node-label" x="156" y="112">MICHOACÁN — ARG-86-001</text>
+          <circle class="node" cx="200" cy="55" r="4" fill="var(--green)"/><text class="node-label" x="206" y="53">CDMX/EDOMÉX — ARG-86-002</text>
+          <circle class="node" cx="80" cy="55" r="4" fill="var(--green)"/><text class="node-label" x="86" y="53">SONORA — ARG-86-006</text>
         </svg>
         <div class="map-caption">Contorno esquemático — sustituir por capa GIS oficial verificada</div>
       </div>
@@ -408,29 +411,39 @@
   </div>
 
   <div class="section-head">SEMÁFORO ARGOS</div>
+  <p class="muted-note">
+    Clasificación por tipo de evento, no por número de casos (Metodología del Nivel de Riesgo
+    Nacional, CLAUDE.md v3.0). Las detenciones y aseguramientos de este corte son acciones
+    institucionales exitosas y se reportan en verde; no incrementan el riesgo nacional.
+  </p>
   <div class="semaforo">
-    <div class="sem-item alto"><span class="dot"></span><span class="lbl">RIESGO ALTO</span><div class="val">2 eventos</div></div>
-    <div class="sem-item medio"><span class="dot"></span><span class="lbl">RIESGO MEDIO</span><div class="val">3 eventos</div></div>
-    <div class="sem-item bajo"><span class="dot"></span><span class="lbl">RIESGO BAJO</span><div class="val">1 evento</div></div>
+    <div class="sem-item alto"><span class="dot"></span><span class="lbl">🔴 ROJO — ALTO IMPACTO</span><div class="val">0 eventos</div></div>
+    <div class="sem-item medio"><span class="dot"></span><span class="lbl">🟡 AMARILLO — VIOLENCIA OPERATIVA</span><div class="val">1 evento</div></div>
+    <div class="sem-item bajo"><span class="dot"></span><span class="lbl">🟢 VERDE — ACCIONES INSTITUCIONALES</span><div class="val">5 eventos</div></div>
   </div>
 
   <div class="section-head">EJES DEL DÍA</div>
   <div class="list">
-    <div class="list-item"><span class="tag alto">EJE 1</span><span>Cae "El R1", presunto autor intelectual del homicidio del alcalde de Uruapan, Carlos Manzo; SSPC lo vincula al CJNG.</span><span>ARG-86-001</span></div>
-    <div class="list-item"><span class="tag alto">EJE 2</span><span>Octavo detenido por el homicidio de la pareja binacional hallada en fosas de La Marquesa, Ocoyoacac (Edomex).</span><span>ARG-86-002</span></div>
-    <div class="list-item"><span class="tag medio">EJE 3</span><span>SESNSP reporta caída de 48% en homicidio doloso diario entre septiembre 2024 y junio 2026.</span><span>ARG-86-003</span></div>
+    <div class="list-item"><span class="tag bajo">VERDE</span><span>Cae "El R1", presunto autor intelectual del homicidio del alcalde de Uruapan, Carlos Manzo; SSPC lo vincula al CJNG. Detención: acción institucional.</span><span>ARG-86-001</span></div>
+    <div class="list-item"><span class="tag bajo">VERDE</span><span>Octavo detenido por el homicidio de la pareja binacional hallada en fosas de La Marquesa, Ocoyoacac (Edomex). Detención: acción institucional.</span><span>ARG-86-002</span></div>
+    <div class="list-item"><span class="tag medio">AMARILLO</span><span>Persiste riesgo estructural de huachicol: Pemex reconoce colusión de funcionarios pese a reducción de pérdidas reportada en el 1.er trimestre de 2026.</span><span>ARG-86-005</span></div>
   </div>
 
   <div class="section-head">NOTICIAS DE AYER Y HOY</div>
   <table class="exec">
     <thead><tr><th>Fecha del hecho</th><th>Entidad</th><th>Hecho</th><th>Nivel de riesgo</th><th>ARG-ID</th></tr></thead>
     <tbody>
-      <tr><td>2026-07-30</td><td>Michoacán</td><td>Captura de "El R1", autor intelectual señalado del homicidio de Carlos Manzo</td><td><span class="tag alto">ALTO</span></td><td>ARG-86-001</td></tr>
-      <tr><td>2026-08-01 / 08-02</td><td>CDMX / Edomex</td><td>Octavo detenido, caso fosas de La Marquesa (pareja binacional)</td><td><span class="tag alto">ALTO</span></td><td>ARG-86-002</td></tr>
-      <tr><td>2026-07-25</td><td>Sonora</td><td>Ejército y Guardia Nacional aseguran arsenal atribuido al Cártel del Pacífico</td><td><span class="tag medio">MEDIO</span></td><td>ARG-86-006</td></tr>
-      <tr><td>2026-07-14</td><td>Nacional</td><td>SESNSP reporta caída de 48% en homicidio doloso diario</td><td><span class="tag medio">MEDIO</span></td><td>ARG-86-003</td></tr>
+      <tr><td>2026-07-30</td><td>Michoacán</td><td>Captura de "El R1", autor intelectual señalado del homicidio de Carlos Manzo (detención)</td><td><span class="tag bajo">VERDE</span></td><td>ARG-86-001</td></tr>
+      <tr><td>2026-08-01 / 08-02</td><td>CDMX / Edomex</td><td>Octavo detenido, caso fosas de La Marquesa, pareja binacional (detención)</td><td><span class="tag bajo">VERDE</span></td><td>ARG-86-002</td></tr>
+      <tr><td>2026-07-29</td><td>CDMX</td><td>Audiencia contra tres presuntos extorsionadores de la Fuerza Anti-Unión, prisión preventiva (acción judicial)</td><td><span class="tag bajo">VERDE</span></td><td>ARG-86-007</td></tr>
+      <tr><td>2026-07-25</td><td>Sonora</td><td>Ejército y Guardia Nacional aseguran arsenal atribuido al Cártel del Pacífico (aseguramiento)</td><td><span class="tag bajo">VERDE</span></td><td>ARG-86-006</td></tr>
     </tbody>
   </table>
+  <p class="muted-note">
+    Indicador SESNSP (homicidio doloso −48%, sep. 2024–jun. 2026) y demás cifras oficiales se
+    presentan en la sección "Indicadores oficiales" (pág. 4): son estadísticas agregadas, no
+    eventos discretos, y por tanto no se clasifican en el semáforo rojo/amarillo/verde.
+  </p>
 
   <footer class="footbar">
     <span>Versión 3.0</span>
@@ -453,13 +466,16 @@
 
   <div class="section-head">RESUMEN EJECUTIVO</div>
   <p style="font-size:12.5px;line-height:1.6;">
-    El corte concentra dos eventos de riesgo alto con vínculo directo a estructuras de crimen organizado:
-    la detención del presunto autor intelectual del homicidio del alcalde de Uruapan (Michoacán), atribuido
-    institucionalmente al CJNG, y el octavo detenido en el homicidio de una pareja binacional localizada en
-    fosas clandestinas en el Estado de México. Ambos casos muestran capacidad de judicialización sostenida
-    (detenciones acumulativas a lo largo de semanas) más que hechos aislados de un solo día. A nivel de
-    indicadores, el SESNSP reporta una tendencia oficial a la baja en homicidio doloso, sin que ello sea
-    verificable por este corte para el nivel municipal de los casos aquí documentados.
+    Bajo la Metodología del Nivel de Riesgo Nacional ARGOS, este corte no registra eventos de alto
+    impacto (rojo): los dos hechos de mayor perfil —la detención del presunto autor intelectual del
+    homicidio del alcalde de Uruapan (Michoacán) y el octavo detenido en el homicidio de una pareja
+    binacional localizada en fosas clandestinas en el Estado de México— son acciones institucionales
+    (detenciones) y se clasifican en verde. Ambos corresponden a expedientes ya abiertos por delitos
+    graves ocurridos en cortes anteriores (noviembre de 2025 y mayo de 2026, respectivamente); el
+    hecho de hoy es el avance judicial, no una nueva agresión. Se registra un evento amarillo:
+    persistencia estructural del huachicol, reconocida institucionalmente por Pemex. A nivel de
+    indicadores, el SESNSP reporta una tendencia oficial a la baja en homicidio doloso, sin que ello
+    sea verificable por este corte para el nivel municipal de los casos aquí documentados.
   </p>
 
   <div class="section-head">EVENTOS PRIORITARIOS</div>
@@ -470,8 +486,8 @@
     <tbody>
       <tr>
         <td>Michoacán</td>
-        <td>Captura de "El R1" (Ramón Ángel Álvarez Ayala), señalado autor intelectual del homicidio de Carlos Manzo</td>
-        <td><span class="tag alto">ALTO</span></td>
+        <td>Captura de "El R1" (Ramón Ángel Álvarez Ayala), señalado autor intelectual del homicidio de Carlos Manzo (detención)</td>
+        <td><span class="tag bajo">VERDE</span></td>
         <td>SSPC / Fiscalía de Michoacán</td>
         <td>El Universal, La Jornada, Milenio</td>
         <td><span class="stars">★★★★☆</span></td>
@@ -479,8 +495,8 @@
       </tr>
       <tr>
         <td>CDMX / Edomex</td>
-        <td>Detención de Iván "N" (Iván Lazcano Álvarez), octavo implicado, caso fosas de La Marquesa</td>
-        <td><span class="tag alto">ALTO</span></td>
+        <td>Detención de Iván "N" (Iván Lazcano Álvarez), octavo implicado, caso fosas de La Marquesa (detención)</td>
+        <td><span class="tag bajo">VERDE</span></td>
         <td>SSC CDMX / FGJ CDMX / SSPC</td>
         <td>Excélsior, Infobae, Proceso</td>
         <td><span class="stars">★★★★☆</span></td>
@@ -488,25 +504,37 @@
       </tr>
       <tr>
         <td>Sonora</td>
-        <td>Aseguramiento de arsenal (+272 mil cartuchos, 81 armas) atribuido al Cártel del Pacífico</td>
-        <td><span class="tag medio">MEDIO</span></td>
+        <td>Aseguramiento de arsenal (+272 mil cartuchos, 81 armas) atribuido al Cártel del Pacífico (aseguramiento)</td>
+        <td><span class="tag bajo">VERDE</span></td>
         <td>SEDENA / Guardia Nacional</td>
         <td>Infobae</td>
         <td><span class="stars">★★★★☆</span></td>
         <td>ARG-86-006</td>
       </tr>
+      <tr>
+        <td>Nacional (huachicol)</td>
+        <td>Pemex reconoce colusión de funcionarios en robo de combustible; riesgo estructural persistente</td>
+        <td><span class="tag medio">AMARILLO</span></td>
+        <td>Pemex</td>
+        <td>Expansión, El Universal</td>
+        <td><span class="stars">★★★★☆</span></td>
+        <td>ARG-86-005</td>
+      </tr>
     </tbody>
   </table>
 
   <div class="section-head">ARGOS ALERTA</div>
-  <div class="alerta">
-    <span class="flag">⚠ ALERTA</span>
+  <div class="alerta contexto">
+    <span class="flag">ℹ CONTEXTO</span>
     <p>
-      El titular de la SSPC, Omar García Harfuch, confirmó que el homicidio del alcalde de Uruapan, Carlos
-      Manzo, fue ordenado por el CJNG tras considerar sus posturas públicas una "provocación", con indicios
-      de que el líder de la organización tenía conocimiento de la orden. Van 31 personas detenidas en la
-      investigación al corte del 31 de julio de 2026. Riesgo latente: reincidencia de agresiones contra
-      autoridades municipales en zonas de disputa territorial del CJNG.
+      Sin eventos rojos (alto impacto) durante este corte. Se documenta como contexto relevante: el
+      titular de la SSPC, Omar García Harfuch, confirmó que el homicidio del alcalde de Uruapan, Carlos
+      Manzo (hecho rojo del corte del 1 de noviembre de 2025, ya reportado en su momento), fue ordenado
+      por el CJNG tras considerar sus posturas públicas una "provocación", con indicios de que el líder
+      de la organización tenía conocimiento de la orden. Van 31 personas detenidas en la investigación
+      al corte del 31 de julio de 2026 — cifra que refleja capacidad institucional, no un nuevo riesgo.
+      Vigilancia recomendada: posible reincidencia de agresiones contra autoridades municipales en zonas
+      de disputa territorial del CJNG, que de ocurrir se clasificaría en rojo en el corte correspondiente.
     </p>
   </div>
 
@@ -541,7 +569,7 @@
   <div class="grid-2">
 
     <div class="nota">
-      <div class="nota-header"><h3>HOMICIDIO DE AUTORIDAD MUNICIPAL / CJNG</h3><span class="risk-flag alto">ALTO</span></div>
+      <div class="nota-header"><h3>HOMICIDIO DE AUTORIDAD MUNICIPAL / CJNG — DETENCIÓN</h3><span class="risk-flag bajo">VERDE</span></div>
       <div class="nota-body">
         <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
           El 30 de julio de 2026 fue detenido Ramón Ángel Álvarez Ayala, alias "El R1", señalado por la SSPC
@@ -561,7 +589,10 @@
           adopten posturas públicas de confrontación. Objetivo de interés: identificación de la cadena de
           mando completa (autor material ya fallecido, autor intelectual detenido, mandos superiores de la
           célula bajo investigación). Vacío: no se ha confirmado judicialmente el nivel de conocimiento
-          directo atribuido al líder nacional de la organización.
+          directo atribuido al líder nacional de la organización. Clasificación de riesgo: VERDE — el
+          hecho reportado en este corte es una detención (acción institucional), no un nuevo ataque; el
+          homicidio original del alcalde (1 de noviembre de 2025) fue un evento rojo en el corte en que
+          ocurrió y no se recalifica retroactivamente.
         </div>
         <div class="photo-slot">[ Insertar fotografía oficial verificada de la detención — no disponible en este corte ]</div>
       </div>
@@ -574,7 +605,7 @@
     </div>
 
     <div class="nota">
-      <div class="nota-header"><h3>DESAPARICIONES / FOSAS — LA MARQUESA</h3><span class="risk-flag alto">ALTO</span></div>
+      <div class="nota-header"><h3>DESAPARICIONES / FOSAS — LA MARQUESA (DETENCIÓN)</h3><span class="risk-flag bajo">VERDE</span></div>
       <div class="nota-body">
         <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
           El 1-2 de agosto de 2026 fue detenido Iván Lazcano Álvarez, "Iván N." (33 años), en la colonia
@@ -594,7 +625,10 @@
           ocultamiento de cuerpos). Riesgo: la ubicación de La Marquesa (corredor CDMX-Toluca) ya había sido
           usada previamente para inhumación clandestina. Objetivo de interés: identificación de los mandos
           que ordenaron la privación de la libertad original. Vacío: no se ha hecho pública la motivación del
-          homicidio ni la relación previa entre víctimas y detenidos.
+          homicidio ni la relación previa entre víctimas y detenidos. Clasificación de riesgo: VERDE — el
+          hecho reportado en este corte es una detención (acción institucional); el homicidio original
+          (mayo de 2026) y el hallazgo de las fosas (junio de 2026) fueron eventos rojo en los cortes
+          en que ocurrieron y no se recalifican retroactivamente.
         </div>
         <div class="photo-slot">[ Insertar fotografía oficial verificada de la detención — no disponible en este corte ]</div>
       </div>
@@ -607,7 +641,7 @@
     </div>
 
     <div class="nota">
-      <div class="nota-header"><h3>NARCOTRÁFICO MARÍTIMO</h3><span class="risk-flag medio">MEDIO</span></div>
+      <div class="nota-header"><h3>NARCOTRÁFICO MARÍTIMO — ASEGURAMIENTO</h3><span class="risk-flag bajo">VERDE</span></div>
       <div class="nota-body">
         <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
           La SEMAR reportó, al 26 de julio de 2026, un acumulado administrativo de 90 toneladas de droga
@@ -624,7 +658,8 @@
           rápidas y semisumergibles. Riesgo: persistencia del corredor Guerrero-Michoacán-Oaxaca como punto de
           entrada. Línea a explotar: cruce de aseguramientos marítimos con las estructuras de narcomenudeo
           terrestre ya identificadas en Michoacán (ARG-86-001). Vacío: no se cuenta con desglose de organización
-          criminal responsable por cada aseguramiento individual.
+          criminal responsable por cada aseguramiento individual. Clasificación de riesgo: VERDE — son
+          aseguramientos (acción institucional exitosa), no eventos de confrontación o amenaza.
         </div>
       </div>
       <div class="nota-footer">
@@ -636,7 +671,7 @@
     </div>
 
     <div class="nota">
-      <div class="nota-header"><h3>HUACHICOL</h3><span class="risk-flag medio">MEDIO</span></div>
+      <div class="nota-header"><h3>HUACHICOL</h3><span class="risk-flag medio">AMARILLO</span></div>
       <div class="nota-body">
         <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
           Pemex reconoció públicamente, el 7 de mayo de 2026, la colusión de funcionarios propios en el robo
@@ -653,6 +688,9 @@
           que indica un riesgo estructural más que episódico. Objetivo de interés: identificación de
           funcionarios de Pemex señalados en la colusión reconocida. Vacío: no hay corte diario de ordeñas
           detectadas para este corte específico; la cifra de "30 diarias" corresponde a un promedio 2024-2025.
+          Clasificación de riesgo: AMARILLO — actividad criminal persistente sin confrontación ni acción
+          institucional puntual reportada en este corte; no escala a rojo por no tratarse de un ataque o
+          incremento estratégico agudo, ni baja a verde por no ser, en sí, un resultado operativo del corte.
         </div>
       </div>
       <div class="nota-footer">
@@ -664,7 +702,7 @@
     </div>
 
     <div class="nota">
-      <div class="nota-header"><h3>EXTORSIÓN</h3><span class="risk-flag bajo">BAJO</span></div>
+      <div class="nota-header"><h3>EXTORSIÓN — JUDICIALIZACIÓN</h3><span class="risk-flag bajo">VERDE</span></div>
       <div class="nota-body">
         <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
           El 29 de julio de 2026 se realizó audiencia contra tres presuntos extorsionadores de la facción "2
@@ -681,7 +719,10 @@
           El proceso judicial confirma la presencia activa de células vinculadas a la Fuerza Anti-Unión
           operando extorsión en la capital. Línea a explotar: identificación de las víctimas/giros comerciales
           afectados por esta célula específica. Vacío: no se ubicó comunicado institucional (FGJ CDMX) que
-          corrobore de forma independiente la nota periodística.
+          corrobore de forma independiente la nota periodística. Clasificación de riesgo: VERDE — el hecho
+          reportado es la judicialización (prisión preventiva) de los detenidos, una acción institucional;
+          la clasificación de riesgo es independiente del nivel de confianza informativo, señalado abajo
+          como bajo por depender de una sola fuente.
         </div>
       </div>
       <div class="nota-footer">
@@ -693,7 +734,7 @@
     </div>
 
     <div class="nota">
-      <div class="nota-header"><h3>LABORATORIOS / REDES FINANCIERAS</h3><span class="risk-flag bajo">SIN DATO</span></div>
+      <div class="nota-header"><h3>LABORATORIOS / REDES FINANCIERAS</h3><span class="risk-flag sindato">SIN DATO</span></div>
       <div class="nota-body">
         <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
           <span class="placeholder">SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE.</span>
@@ -717,14 +758,19 @@
 
   <div class="section-head">ANÁLISIS ARGOS</div>
   <p style="font-size:12px;line-height:1.6;">
-    Los dos eventos de riesgo alto del corte (ARG-86-001 y ARG-86-002) comparten un patrón: ambos son el
-    resultado de investigaciones acumulativas de semanas o meses que hoy suman un detenido adicional, no
-    hechos violentos ocurridos en las últimas 24 horas. Esto sugiere que la métrica relevante para el
-    seguimiento no es el hecho aislado sino el ritmo de judicialización de cada expediente. El aseguramiento
-    de arsenal en Sonora (ARG-86-006) y el acumulado de la SEMAR (ARG-86-004) muestran actividad institucional
-    sostenida contra el traslado de armas y droga por vía marítima y terrestre en el corredor del Pacífico.
-    Vacío transversal del corte: no se localizó información institucional verificable sobre laboratorios
-    clandestinos o desarticulación de redes financieras vinculadas a estos casos.
+    Bajo la Metodología del Nivel de Riesgo Nacional ARGOS, este corte no registra eventos rojos (alto
+    impacto): los dos hechos de mayor perfil (ARG-86-001 y ARG-86-002) son detenciones —acciones
+    institucionales, clasificadas en verde— derivadas de investigaciones acumulativas de semanas o meses,
+    no hechos violentos ocurridos en las últimas 24 horas. Los delitos graves que las originaron
+    (homicidio del alcalde de Uruapan, noviembre de 2025; homicidio de la pareja binacional, mayo de
+    2026) ya fueron clasificados en rojo en los cortes en que ocurrieron y no se recalifican
+    retroactivamente. El aseguramiento de arsenal en Sonora (ARG-86-006), el acumulado de la SEMAR
+    (ARG-86-004) y la judicialización del caso de extorsión (ARG-86-007) son igualmente acciones
+    institucionales (verde). El único evento amarillo del corte es la persistencia estructural del
+    huachicol (ARG-86-005): riesgo operativo continuo sin un hecho puntual de confrontación o de acción
+    institucional durante este corte específico. Vacío transversal del corte: no se localizó información
+    institucional verificable sobre laboratorios clandestinos o desarticulación de redes financieras
+    vinculadas a estos casos.
   </p>
 
   <footer class="footbar">
@@ -748,23 +794,32 @@
 
   <div class="section-head">VALORACIÓN</div>
   <p style="font-size:12.5px;line-height:1.6;">
-    El nivel de riesgo agregado del corte se califica como MEDIO-ALTO. Los dos eventos de riesgo alto
-    corresponden a avances judiciales en casos ya abiertos (homicidio de una autoridad municipal en Michoacán
-    y homicidio de ciudadanos extranjeros en el Valle de México), no a hechos violentos nuevos del día. La
-    confiabilidad general de las fuentes de este corte es alta: los dos casos prioritarios cuentan con
-    confirmación institucional directa (SSPC, SSC CDMX, FGJ CDMX, Fiscalía de Michoacán) y corroboración en
-    múltiples medios nacionales. El punto de menor confiabilidad es la nota de extorsión (ARG-86-007), que
-    solo cuenta con una fuente nacional identificada.
+    Conforme a la Metodología del Nivel de Riesgo Nacional ARGOS, el Nivel de Riesgo Nacional de este
+    corte se determina por los eventos rojos observados: NINGUNO. Los dos hechos de mayor perfil
+    (detención del presunto autor intelectual del homicidio del alcalde de Uruapan; octavo detenido en
+    el homicidio de una pareja binacional en el Valle de México) son acciones institucionales exitosas y
+    se clasifican en verde; no incrementan el riesgo nacional, aun cuando se refieren a delitos graves
+    ocurridos en cortes anteriores. Se identifica un evento amarillo (persistencia estructural del
+    huachicol, ARG-86-005) que amerita atención intermedia sin representar una escalada estratégica. La
+    confiabilidad general de las fuentes de este corte es alta: los dos casos de mayor perfil cuentan con
+    confirmación institucional directa (SSPC, SSC CDMX, FGJ CDMX, Fiscalía de Michoacán) y corroboración
+    en múltiples medios nacionales. El punto de menor confiabilidad informativa es la nota de extorsión
+    (ARG-86-007), que solo cuenta con una fuente nacional identificada; esto es independiente de su
+    clasificación de riesgo (verde).
   </p>
 
   <div class="section-head">CONCLUSIONES</div>
   <p style="font-size:12.5px;line-height:1.6;">
-    El corte confirma continuidad en la judicialización de dos expedientes de alto perfil vinculados a
-    estructuras de crimen organizado (CJNG en Michoacán; red no identificada públicamente en el caso de La
-    Marquesa). La reducción oficial de homicidio doloso reportada por el SESNSP no es contrastable, con la
-    información de este corte, contra la incidencia específica de los casos aquí documentados. Se recomienda
-    dar seguimiento a la siguiente audiencia del caso Manzo y a la identificación de los mandos superiores en
-    el caso La Marquesa en el próximo corte.
+    El corte no registra eventos de alto impacto; confirma en cambio continuidad en la judicialización de
+    dos expedientes de alto perfil vinculados a estructuras de crimen organizado (CJNG en Michoacán; red
+    no identificada públicamente en el caso de La Marquesa) y actividad institucional sostenida en los
+    frentes marítimo, de armamento y de extorsión. La reducción oficial de homicidio doloso reportada por
+    el SESNSP no es contrastable, con la información de este corte, contra la incidencia específica de los
+    casos aquí documentados. El riesgo estructural del huachicol (amarillo) se mantiene sin cambios pese a
+    la reducción de pérdidas reportada por Pemex. Se recomienda dar seguimiento a la siguiente audiencia
+    del caso Manzo y a la identificación de los mandos superiores en el caso La Marquesa en el próximo
+    corte; ambos, de derivar en nuevos hechos violentos, se clasificarían en rojo en el corte
+    correspondiente.
   </p>
 
   <div class="section-head">INDICADORES OFICIALES</div>

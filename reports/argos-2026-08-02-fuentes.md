@@ -6,6 +6,12 @@ Este documento respalda `argos-2026-08-02.html` con los enlaces exactos consulta
 hecho, conforme al requisito de trazabilidad de `CLAUDE.md`. No se incluyen en el cartelón por
 diseño editorial, pero deben conservarse para auditoría documental.
 
+La clasificación de riesgo (rojo/amarillo/verde) de cada ARG-ID sigue la Metodología del Nivel de
+Riesgo Nacional ARGOS (v1.0, incorporada a `CLAUDE.md`): ARG-86-001, 002, 004, 006 y 007 son
+acciones institucionales (detenciones, aseguramientos, judicialización) y se clasifican en verde;
+ARG-86-005 (huachicol) se clasifica en amarillo por riesgo estructural persistente; no se registró
+ningún evento rojo en este corte.
+
 ## ARG-86-001 — Homicidio de autoridad municipal / CJNG (Uruapan, Michoacán)
 
 - Institucional — SSPC (declaración de Omar García Harfuch): [El Universal](https://www.eluniversal.com.mx/nacion/harfuch-homicidio-de-carlos-manzo-fue-una-provocacion-entre-el-cjng-y-el-alcalde-el-mencho-conocia-orden-para-matarlo/)

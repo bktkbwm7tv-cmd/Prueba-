@@ -276,11 +276,12 @@
     background:var(--panel);
   }
   .nota-header{
-    display:flex;justify-content:space-between;align-items:center;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;
     background:var(--panel-2);
     padding:8px 12px;
     border-bottom:1px solid var(--border);
   }
+  .nota-header > div{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
   .nota-header h3{
     margin:0;font-size:13px;color:var(--white);letter-spacing:.5px;
   }
@@ -288,6 +289,13 @@
     font-family:var(--mono);font-size:9px;color:var(--yellow);
     border:1px solid var(--yellow);padding:2px 6px;letter-spacing:1px;
   }
+  .nota-header .risk-flag{
+    font-family:var(--mono);font-size:9px;
+    border:1px solid; padding:2px 6px;letter-spacing:1px;margin-right:8px;
+  }
+  .nota-header .risk-flag.rojo{color:var(--red);border-color:var(--red);}
+  .nota-header .risk-flag.amarillo{color:var(--yellow);border-color:var(--yellow);}
+  .nota-header .risk-flag.verde{color:var(--green);border-color:var(--green);}
   .nota-body{padding:10px 14px;display:flex;flex-direction:column;gap:8px;}
   .apartado{font-size:12px;line-height:1.5;}
   .apartado .k{
@@ -405,17 +413,22 @@
   </div>
 
   <div class="section-head">SEMÁFORO ARGOS</div>
+  <p class="muted-note">
+    Clasificación por tipo de evento, no por número de casos (ver Metodología del Nivel de Riesgo
+    Nacional en CLAUDE.md). Las acciones institucionales exitosas (detenciones, aseguramientos,
+    rescates) se reportan en verde y nunca incrementan el nivel de riesgo.
+  </p>
   <div class="semaforo">
-    <div class="sem-item alto"><span class="dot"></span><span class="lbl">RIESGO ALTO</span><div class="val placeholder">SIN ACTUALIZACIÓN OFICIAL</div></div>
-    <div class="sem-item medio"><span class="dot"></span><span class="lbl">RIESGO MEDIO</span><div class="val placeholder">SIN ACTUALIZACIÓN OFICIAL</div></div>
-    <div class="sem-item bajo"><span class="dot"></span><span class="lbl">RIESGO BAJO</span><div class="val placeholder">SIN ACTUALIZACIÓN OFICIAL</div></div>
+    <div class="sem-item alto"><span class="dot"></span><span class="lbl">🔴 ROJO — ALTO IMPACTO</span><div class="val placeholder">SIN ACTUALIZACIÓN OFICIAL</div></div>
+    <div class="sem-item medio"><span class="dot"></span><span class="lbl">🟡 AMARILLO — VIOLENCIA OPERATIVA</span><div class="val placeholder">SIN ACTUALIZACIÓN OFICIAL</div></div>
+    <div class="sem-item bajo"><span class="dot"></span><span class="lbl">🟢 VERDE — ACCIONES INSTITUCIONALES</span><div class="val placeholder">SIN ACTUALIZACIÓN OFICIAL</div></div>
   </div>
 
   <div class="section-head">EJES DEL DÍA</div>
   <div class="list">
-    <div class="list-item"><span class="tag alto">EJE 1</span><span class="placeholder">Pendiente de corte informativo — completar con hecho confirmado y fuente.</span><span class="placeholder">ARG-XX-001</span></div>
-    <div class="list-item"><span class="tag medio">EJE 2</span><span class="placeholder">Pendiente de corte informativo — completar con hecho confirmado y fuente.</span><span class="placeholder">ARG-XX-002</span></div>
-    <div class="list-item"><span class="tag bajo">EJE 3</span><span class="placeholder">Pendiente de corte informativo — completar con hecho confirmado y fuente.</span><span class="placeholder">ARG-XX-003</span></div>
+    <div class="list-item"><span class="tag alto">ROJO</span><span class="placeholder">Pendiente de corte informativo — completar con hecho confirmado y fuente. Usar ROJO solo para eventos de alto impacto (ver metodología).</span><span class="placeholder">ARG-XX-001</span></div>
+    <div class="list-item"><span class="tag medio">AMARILLO</span><span class="placeholder">Pendiente de corte informativo — completar con hecho confirmado y fuente. Usar AMARILLO para violencia operativa/confrontación.</span><span class="placeholder">ARG-XX-002</span></div>
+    <div class="list-item"><span class="tag bajo">VERDE</span><span class="placeholder">Pendiente de corte informativo — completar con hecho confirmado y fuente. Usar VERDE para acciones institucionales exitosas.</span><span class="placeholder">ARG-XX-003</span></div>
   </div>
 
   <div class="section-head">NOTICIAS DE AYER Y HOY</div>
@@ -503,7 +516,7 @@
   <div class="grid-2">
 
     <div class="nota">
-      <div class="nota-header"><h3>DESAPARICIONES / FOSAS</h3><span class="example-flag">EJEMPLO — SUSTITUIR</span></div>
+      <div class="nota-header"><h3>DESAPARICIONES / FOSAS</h3><div><span class="risk-flag rojo">ROJO</span><span class="example-flag">EJEMPLO — SUSTITUIR</span></div></div>
       <div class="nota-body">
         <div class="apartado"><span class="k">HECHO CONFIRMADO</span><span class="placeholder">Sin actualización oficial durante el corte.</span></div>
         <div class="apartado"><span class="k">CORROBORACIÓN</span><span class="placeholder">Pendiente de corroboración independiente.</span></div>
@@ -519,9 +532,9 @@
     </div>
 
     <div class="nota">
-      <div class="nota-header"><h3>LABORATORIOS / NARCOTRÁFICO</h3><span class="example-flag">EJEMPLO — SUSTITUIR</span></div>
+      <div class="nota-header"><h3>LABORATORIOS / NARCOTRÁFICO</h3><div><span class="risk-flag verde">VERDE*</span><span class="example-flag">EJEMPLO — SUSTITUIR</span></div></div>
       <div class="nota-body">
-        <div class="apartado"><span class="k">HECHO CONFIRMADO</span><span class="placeholder">Sin actualización oficial durante el corte.</span></div>
+        <div class="apartado"><span class="k">HECHO CONFIRMADO</span><span class="placeholder">Sin actualización oficial durante el corte.</span> <span class="placeholder">(*VERDE si es desmantelamiento; reclasificar si el hecho es distinto)</span></div>
         <div class="apartado"><span class="k">CORROBORACIÓN</span><span class="placeholder">Pendiente de corroboración independiente.</span></div>
         <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span><span class="placeholder">¿Qué significa? · ¿Qué riesgo implica? · ¿Qué objetivos interesan? · ¿Qué vacíos existen? · ¿Qué líneas deben explotarse?</span></div>
         <div class="photo-slot">[ Insertar fotografía real verificada del hecho — nunca imagen decorativa ]</div>
@@ -535,9 +548,9 @@
     </div>
 
     <div class="nota">
-      <div class="nota-header"><h3>HUACHICOL</h3><span class="example-flag">EJEMPLO — SUSTITUIR</span></div>
+      <div class="nota-header"><h3>HUACHICOL</h3><div><span class="risk-flag amarillo">AMARILLO*</span><span class="example-flag">EJEMPLO — SUSTITUIR</span></div></div>
       <div class="nota-body">
-        <div class="apartado"><span class="k">HECHO CONFIRMADO</span><span class="placeholder">Sin actualización oficial durante el corte.</span></div>
+        <div class="apartado"><span class="k">HECHO CONFIRMADO</span><span class="placeholder">Sin actualización oficial durante el corte.</span> <span class="placeholder">(*AMARILLO por riesgo persistente; VERDE si el hecho es un aseguramiento)</span></div>
         <div class="apartado"><span class="k">CORROBORACIÓN</span><span class="placeholder">Pendiente de corroboración independiente.</span></div>
         <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span><span class="placeholder">¿Qué significa? · ¿Qué riesgo implica? · ¿Qué objetivos interesan? · ¿Qué vacíos existen? · ¿Qué líneas deben explotarse?</span></div>
       </div>
@@ -550,7 +563,7 @@
     </div>
 
     <div class="nota">
-      <div class="nota-header"><h3>NARCOTRÁFICO MARÍTIMO</h3><span class="example-flag">EJEMPLO — SUSTITUIR</span></div>
+      <div class="nota-header"><h3>NARCOTRÁFICO MARÍTIMO</h3><div><span class="risk-flag verde">VERDE</span><span class="example-flag">EJEMPLO — SUSTITUIR</span></div></div>
       <div class="nota-body">
         <div class="apartado"><span class="k">HECHO CONFIRMADO</span><span class="placeholder">Sin actualización oficial durante el corte.</span></div>
         <div class="apartado"><span class="k">CORROBORACIÓN</span><span class="placeholder">Pendiente de corroboración independiente.</span></div>
@@ -565,7 +578,7 @@
     </div>
 
     <div class="nota">
-      <div class="nota-header"><h3>REDES FINANCIERAS</h3><span class="example-flag">EJEMPLO — SUSTITUIR</span></div>
+      <div class="nota-header"><h3>REDES FINANCIERAS</h3><div><span class="risk-flag verde">VERDE</span><span class="example-flag">EJEMPLO — SUSTITUIR</span></div></div>
       <div class="nota-body">
         <div class="apartado"><span class="k">HECHO CONFIRMADO</span><span class="placeholder">Sin actualización oficial durante el corte.</span></div>
         <div class="apartado"><span class="k">CORROBORACIÓN</span><span class="placeholder">Pendiente de corroboración independiente.</span></div>
@@ -580,9 +593,9 @@
     </div>
 
     <div class="nota">
-      <div class="nota-header"><h3>EXTORSIÓN</h3><span class="example-flag">EJEMPLO — SUSTITUIR</span></div>
+      <div class="nota-header"><h3>EXTORSIÓN</h3><div><span class="risk-flag amarillo">AMARILLO*</span><span class="example-flag">EJEMPLO — SUSTITUIR</span></div></div>
       <div class="nota-body">
-        <div class="apartado"><span class="k">HECHO CONFIRMADO</span><span class="placeholder">Sin actualización oficial durante el corte.</span></div>
+        <div class="apartado"><span class="k">HECHO CONFIRMADO</span><span class="placeholder">Sin actualización oficial durante el corte.</span> <span class="placeholder">(*AMARILLO por defecto; VERDE si el hecho reportado es una detención/judicialización)</span></div>
         <div class="apartado"><span class="k">CORROBORACIÓN</span><span class="placeholder">Pendiente de corroboración independiente.</span></div>
         <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span><span class="placeholder">¿Qué significa? · ¿Qué riesgo implica? · ¿Qué objetivos interesan? · ¿Qué vacíos existen? · ¿Qué líneas deben explotarse?</span></div>
       </div>
