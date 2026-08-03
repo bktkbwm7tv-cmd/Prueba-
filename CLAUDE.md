@@ -59,6 +59,37 @@ de Gobierno, SSPC, SEDENA, SEMAR, Guardia Nacional o FGR. No usar frases propaga
 Únicamente fotografías reales relacionadas con la nota (detenidos, armas, vehículos, laboratorios,
 drogas, fosas, embarcaciones, inmuebles cateados, mapas GIS). Nunca imágenes decorativas.
 
+## Módulo visual de inteligencia (Radar Central y Mapa Nacional)
+
+Versión 1.0
+
+Radar Central y Mapa Nacional **no son elementos decorativos**: son componentes dinámicos que
+representan el análisis de inteligencia del corte. Nunca se generan de forma aleatoria ni con
+puntos o colores ficticios; toda representación gráfica se deriva de los eventos clasificados por
+ARGOS (mismo arreglo de datos para ambos módulos — ver `EVENTOS` en la implementación de
+referencia, `reports/argos-2026-08-02.html`).
+
+**Mapa Nacional**: base cartográfica vectorial (SVG) de la República Mexicana, geométricamente
+correcta — no esquemática, no silueta deformada, no ilustración. Cada entidad federativa toma el
+color del evento de **mayor gravedad** ocurrido en el corte (rojo > amarillo > verde), nunca por
+número de eventos. Sin eventos del corte: gris. Al pasar el cursor sobre un estado debe mostrarse:
+Estado, Nivel ARGOS, Evento principal, ARG-ID, Fuentes, Nivel de confianza, fecha y hora de
+consulta.
+
+**Radar Central**: cada evento priorizado del corte se representa como un eco con cuatro
+variables: (1) color = rojo/amarillo/verde según la Metodología del Nivel de Riesgo Nacional; (2)
+tamaño ∝ impacto estratégico (pequeño/mediano/grande); (3) posición angular = región del país
+(Noroeste, Noreste, Occidente, Centro, Golfo, Sureste, Pacífico), cada una con un sector fijo; (4)
+distancia radial = temporalidad (más reciente, más cerca del borde; más antiguo, más cerca del
+centro). Barrido lento, sin animaciones exageradas; los eventos rojos emiten un pulso suave.
+Debajo del radar se muestran los totales por color (alto impacto / violencia operativa / acciones
+institucionales), calculados del mismo arreglo de eventos que colorea el mapa — ambos módulos
+deben ser siempre consistentes entre sí.
+
+Cada eco y cada estado coloreado enlazan mediante su ARG-ID a la ficha completa del evento en la
+página 3 (trazabilidad visual). Regla de oro: si un elemento visual no aporta inteligencia, no
+debe existir en ARGOS.
+
 ## Estructura del reporte
 
 1. **Portada**: ARGOS + número consecutivo, corte informativo, radar, mapa, noticias de ayer y
