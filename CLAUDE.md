@@ -102,12 +102,16 @@ las tarjetas de Crimen Organizado, que no deben comprimirse para caber en una so
 3. **Página 3 — Crimen organizado (I)**: ataques a autoridades, desapariciones, fosas.
 4. **Página 4 — Crimen organizado (II)**: laboratorios, huachicol, narcotráfico marítimo, redes
    financieras, extorsión, Análisis ARGOS.
-5. **Página 5**: valoración, conclusiones, indicadores oficiales, fuentes.
+5. **Página 5 — Conteo Nacional de Armamento y Artefactos Explosivos Asegurados** (ver
+   "Módulos adicionales de explotación nacional").
+6. **Página 6 — Rastreo Nacional de Sentencias y Resultados Judiciales** (ver "Módulos
+   adicionales de explotación nacional").
+7. **Página 7**: valoración, conclusiones, indicadores oficiales, fuentes.
 
-La distribución exacta de categorías entre las páginas 3 y 4 puede ajustarse corte a corte según
-el volumen de notas de cada bloque; la regla fija es que ninguna tarjeta debe recortarse ni
-comprimirse por falta de espacio — si un bloque crece, se reparte entre más páginas, no se
-reduce el contenido de cada tarjeta.
+La distribución exacta de categorías entre páginas puede ajustarse corte a corte según el volumen
+de notas de cada bloque; la regla fija es que ninguna tarjeta debe recortarse ni comprimirse por
+falta de espacio — si un bloque crece, se reparte entre más páginas, no se reduce el contenido de
+cada tarjeta.
 
 ## Regla de las cuatro secciones por nota
 
@@ -218,6 +222,188 @@ alto/medio/bajo.
 | ★★★☆☆ | Dos medios, sin fuente institucional |
 | ★★☆☆☆ | Una fuente, pendiente |
 | ★☆☆☆☆ | Fuente abierta, sin corroboración |
+
+## Módulos adicionales de explotación nacional
+
+Versión 1.0
+
+Dos secciones permanentes, exclusivamente con información verificable, trazable y correspondiente
+al periodo de corte. Prohibido: inventar cifras, inferir cantidades no publicadas, duplicar
+aseguramientos, sumar armas cuya cantidad no esté claramente especificada, presentar
+vinculaciones a proceso como sentencias, confundir detenciones con condenas, usar una sola fuente
+abierta como confirmación, o presentar procesos en curso como resoluciones definitivas. Sin
+información suficiente: `SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE`.
+
+### Sección 1 — Conteo Nacional de Armamento y Artefactos Explosivos Asegurados
+
+Concentra, clasifica y contabiliza armamento, municiones, explosivos y artefactos asegurados por
+autoridades federales, estatales y municipales durante el corte, con lectura nacional, regional y
+estatal. No es un listado decorativo: debe permitir leer volumen, tipo de armas, concentración
+territorial, presencia de armamento de alto poder, uso de explosivos, rutas probables de
+abastecimiento, patrones logísticos y zonas de escalamiento.
+
+**Búsqueda obligatoria**: federal (Gabinete de Seguridad, SSPC, FGR, SEDENA, SEMAR, Guardia
+Nacional, Aduanas, delegaciones estatales de FGR, zonas militares/regiones navales cuando sean
+públicas) → estatal (32 fiscalías, 32 secretarías de seguridad, gobiernos y policías estatales,
+mesas de construcción de paz) → municipal cuando el evento sea relevante → medios nacionales →
+medios regionales/locales del estado o municipio del hecho → fuentes abiertas (X, Telegram,
+Facebook institucional, Blog del Narco, cuentas ciudadanas), siempre marcadas
+`NO OFICIALES — PENDIENTES DE CONFIRMACIÓN INSTITUCIONAL`.
+
+**Taxonomía obligatoria** (clasificar cada aseguramiento, sin mezclar categorías):
+
+1. **Armas cortas** — pistolas, revólveres, subametralladoras compactas (si la autoridad las
+   clasifica así), armas hechizas cortas.
+2. **Armas largas** — fusiles, rifles, carabinas, escopetas, ametralladoras, subametralladoras
+   largas, fusiles antimaterial, armas hechizas largas.
+3. **Municiones** — cartuchos útiles, cargadores, tambores, cintas, munición de alto calibre o
+   perforante (si se confirma). Cargadores y cartuchos **nunca** se suman como una sola cifra.
+4. **Granadas** — fragmentación, humo, lacrimógenas, artesanales, 40 mm, sin clasificar (si la
+   autoridad solo dice "granadas", conservar esa descripción sin inferir el tipo).
+5. **AEI (Artefacto Explosivo Improvisado)** — terminado, en fabricación, carga improvisada, mina
+   terrestre improvisada, artefacto lanzado por dron, vehículo con explosivos, dispositivo por
+   cable o radiofrecuencia, artefacto incendiario. Nunca atribuir capacidad explosiva no confirmada.
+6. **Explosivos y componentes** — dinamita, explosivo comercial o plástico, pólvora, fulminantes,
+   detonadores, cordón detonante, temporizadores, iniciadores, contenedores, componentes
+   electrónicos, precursores químicos, material fragmentario, drones modificados.
+7. **Armamento especial** — lanzagranadas, lanzacohetes, cohetes, ametralladoras pesadas, calibre
+   .50, armas antiblindaje/antiaéreas, torres de fuego, drones armados, vehículos artesanales
+   blindados y armados.
+
+**Regla de conteo**: solo sumar cantidades expresamente publicadas ("12 armas largas, 4 cortas,
+850 cartuchos" → suma exacta por categoría). Si la fuente dice solo "diverso armamento": cantidad
+no determinada, no se integra al total numérico, se registra como evento cualitativo.
+
+**Deduplicación**: un mismo aseguramiento publicado por SSPC + SEDENA + FGR + gobierno estatal +
+medios se cuenta **una sola vez**, usando fecha, municipio, entidad, corporación, cantidad, tipo
+de armamento, detenidos, inmueble, vehículo, nombre del operativo y número de carpeta/comunicado
+como criterios de cruce. En caso de duda: `POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN`.
+
+**Periodo de corte**: distinguir fecha del hecho, fecha del aseguramiento, fecha de publicación y
+fecha de consulta. Un decomiso ocurrido antes pero publicado hoy se marca
+`Evento anterior publicado durante el corte`, sin mezclarlo con hechos de las últimas 48 horas.
+
+**Tabla obligatoria**: ARG-ID · Entidad · Municipio · Fecha del hecho · Armas cortas · Armas
+largas · Cartuchos · Cargadores · Granadas · AEI · Explosivos/componentes · Fuente primaria ·
+Corroboración · Confianza.
+
+**Total nacional del corte** (o `Sin total nacional verificable durante el corte`): pistolas/armas
+cortas, armas largas, cartuchos, cargadores, granadas, AEI, explosivos, drones armados, armamento
+especial, estados con aseguramientos, eventos contabilizados, eventos cualitativos sin cantidad.
+
+**Lectura regional**: agrupar por Noroeste, Noreste, Occidente, Centro, Golfo, Pacífico Sur,
+Sureste — regionalización consistente entre ediciones.
+
+**Mapa**: mismo semáforo ARGOS (verde = aseguramiento sin enfrentamiento; amarillo = aseguramiento
+derivado de enfrentamiento/agresión/topón; rojo = armamento vinculado a un evento de alto impacto;
+gris = sin evento). La sola presencia de armas no vuelve rojo a un estado; el color lo define el
+tipo de evento asociado, no el armamento en sí.
+
+**Explotación ARGOS**: concentración geográfica, presencia de armas largas, incremento de granadas
+o AEI, calibres recurrentes, relación con células, armas de uso exclusivo, rutas de
+abastecimiento, drones armados, manufactura local de explosivos, vínculos con corredores
+fronterizos/puertos/aduanas — siempre en modo hipótesis ("sugiere", "es consistente con",
+"requiere validación", "no confirmado"), nunca como afirmación definitiva.
+
+**Trazabilidad**: `ARG-XXX-ARM-001` por evento, con fuente primaria, fuente secundaria, fecha de
+publicación, fecha de consulta, nivel de confianza, enlace verificable, observación de duplicidad
+y estatus (Confirmado / Parcialmente corroborado / Pendiente de corroboración / Fuente abierta no
+oficial).
+
+### Sección 2 — Rastreo Nacional de Sentencias y Resultados Judiciales
+
+Mide resultados judiciales **reales** (capacidad del Estado para convertir investigaciones en
+sentencias), no actividad ministerial. **Nunca** contar como sentencia: detenciones, órdenes de
+aprehensión, vinculaciones a proceso, prisión preventiva, cateos, judicializaciones,
+formulaciones de imputación, acuerdos reparatorios, criterios de oportunidad, acusaciones,
+audiencias intermedias o procesos pendientes.
+
+**Universo de revisión**: FGR y sus fiscalías especializadas (Delincuencia Organizada, Derechos
+Humanos, Control Regional, Delitos Electorales, Asuntos Internos), delegaciones estatales de FGR,
+tribunales federales y CJF cuando publiquen resoluciones verificables, más las fiscalías o
+procuradurías de las 32 entidades federativas (boletines, sala de prensa, redes oficiales,
+apartados de sentencias, tribunales estatales cuando sea necesario).
+
+**Tipos de resolución a clasificar**: sentencia condenatoria; sentencia absolutoria (no ocultar si
+son relevantes); procedimiento abreviado con sentencia; sentencia en juicio oral; sentencia firme
+(solo si la autoridad lo indica expresamente — nunca asumir firmeza); sentencia de primera
+instancia; sentencia modificada/revocada por instancia superior; reparación del daño (monto,
+restitución, indemnización — nunca inventar montos).
+
+**Delitos prioritarios**: delincuencia organizada, homicidio, feminicidio, secuestro, desaparición
+forzada o por particulares, trata de personas, extorsión, narcotráfico, tráfico de armas,
+operaciones con recursos de procedencia ilícita, corrupción, delitos contra periodistas o
+defensores, huachicol, abuso sexual, violación, pornografía infantil, explotación sexual,
+tortura, delitos de servidores públicos, ataques a vías de comunicación, terrorismo, uso de
+explosivos, robo de vehículo con violencia, delitos ambientales relevantes.
+
+**Datos mínimos por sentencia**: ARG-ID, autoridad, entidad, municipio, tribunal, tipo de
+proceso, delito, nombre del sentenciado (si es legalmente publicable), alias oficial, pena de
+prisión, multa, reparación del daño, decomiso, inhabilitación, fecha de sentencia, fecha de
+publicación, estatus de firmeza, fuente oficial, fuente secundaria, enlace, nivel de confianza.
+
+**Tabla obligatoria**: ARG-ID · Fiscalía · Entidad · Delito · Sentenciados · Pena · Multa ·
+Reparación del daño · Tipo de sentencia · Firmeza · Fuente oficial · Corroboración · Confianza.
+
+**Regla de validación jurídica**: solo incluir un caso si el comunicado usa expresamente
+"sentencia condenatoria", "fallo condenatorio", "pena impuesta", "condena", "sentencia
+definitiva/firme" o "procedimiento abreviado/juicio oral con sentencia". Si solo dice "vinculado a
+proceso", "imputado", "detenido", "procesado", "ingresado a prisión" o "sujeto a medida
+cautelar": **no se incluye** en la sección de sentencias.
+
+Cada caso separa: hecho procesal confirmado (qué resolvió el tribunal), pena, estatus (firme /
+primera instancia / apelable / no informado), reparación del daño, trazabilidad y Explotación
+ARGOS (relevancia jurídica y criminal).
+
+**Conteo nacional**: sentencias condenatorias, absolutorias, procedimientos abreviados con
+sentencia, sentencias en juicio oral, sentencias firmes, sentencias de primera instancia,
+personas sentenciadas, años de prisión acumulados, multas acumuladas, reparación del daño
+ordenada, fiscalías con resultados reportados, delitos con mayor número de sentencias.
+
+**Años acumulados**: solo sumar cuando la pena esté expresada claramente, se trate de personas
+distintas, no sea una actualización de una sentencia ya contada, y no existan penas simultáneas
+ambiguas. Penas concurrentes/simultáneas no se suman automáticamente:
+`Pena compuesta — requiere revisión jurídica`.
+
+**Deduplicación judicial**: un mismo caso publicado por fiscalía + tribunal + gobierno + medios se
+cuenta una sola sentencia, usando nombre, alias, delito, tribunal, fecha, pena, carpeta/causa
+penal, municipio y fiscalía responsable como criterios de cruce.
+
+**Fuentes periodísticas**: solo corroboran, contextualizan o verifican antecedentes; la existencia
+de una sentencia descansa prioritariamente en fuente oficial. Si solo hay nota periodística:
+`PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL`.
+
+**Explotación ARGOS jurídica**: fiscalías con más sentencias, delitos con mayor respuesta
+judicial, diferencia entre detenciones y condenas, casos de alto impacto con sentencia, tiempos
+procesales, sentencias por delincuencia organizada/desaparición/extorsión, reparación del daño,
+reincidencia, participación de servidores públicos, capacidad de judicialización, concentración
+regional, federal vs. estatal, vacíos de publicación.
+
+**Indicador de cobertura obligatorio** (nunca afirmar cobertura total sin haberla verificado):
+Fiscalías revisadas: X de 32 · FGR revisada: Sí/No · Fiscalías con sentencia publicada: X ·
+Fiscalías sin actualización: X · Páginas no disponibles: X · Fuentes con error de acceso: X.
+
+**Trazabilidad**: `ARG-XXX-SEN-001` por sentencia.
+
+### Niveles de confianza de estos dos módulos
+
+Escala propia (distinta de la de ★, usada solo en Secciones 1 y 2): **Alto** (fuente oficial
+primaria + corroboración independiente) · **Medio** (fuente oficial única con datos suficientes) ·
+**Bajo** (dos fuentes periodísticas coincidentes sin comunicado oficial) · **No confirmado**
+(fuente abierta o versión aislada — nunca se integra a los totales).
+
+### Estructura visual recomendada
+
+Bloque 1 — tarjetas de conteo (armas cortas, armas largas, municiones, granadas, AEI, explosivos,
+estados con aseguramientos). Bloque 2 — mapa de aseguramientos con semáforo ARGOS. Bloque 3 —
+eventos de mayor relevancia (con fotografía oficial cuando exista). Bloque 4 — tarjetas de
+sentencias (condenatorias, personas sentenciadas, pena acumulada verificable, reparación del
+daño, fiscalías con resultados). Bloque 5 — tabla jurídica con pena, delito, fiscalía, firmeza y
+trazabilidad.
+
+Regla final: cero cifras inferidas, cero sentencias presumidas, cero duplicidades. Ambas
+secciones deben ser verificables, deduplicadas, auditables, comparables entre ediciones y
+trazables hasta la fuente original.
 
 ## Pie de página
 

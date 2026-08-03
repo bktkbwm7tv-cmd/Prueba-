@@ -42,9 +42,46 @@ ningún evento rojo en este corte.
 - Institucional (reconocimiento de Pemex): [Expansión](https://expansion.mx/empresas/2026/05/07/pemex-acepta-colusion-funcionarios-huachicol)
 - Nacional: [El Universal — pérdidas por huachicol bajan 30%](https://www.eluniversal.com.mx/cartera/bajan-30-las-perdidas-por-huachicol-en-2026/)
 
-## ARG-86-006 — Aseguramiento de arsenal (Sonora)
+## ARG-86-006 / ARG-86-ARM-001 — Aseguramiento de arsenal (San Luis Río Colorado, Sonora)
+
+Mismo evento, dos representaciones: ARG-86-006 es la tarjeta narrativa (página 3); ARG-86-ARM-001
+es su registro en el Conteo Nacional de Armamento (página 5), con el desglose táctico completo.
 
 - Institucional / Nacional: [Infobae — Ejército y GN aseguran arsenal en Sonora](https://www.infobae.com/mexico/2026/07/25/ejercito-y-guardia-nacional-aseguran-arsenal-del-cartel-del-pacifico-en-sonora-decomisan-mas-de-272-mil-cartuchos-y-81-armas/)
+- Nacional (desglose de armamento — 81 armas largas, 128 cargadores, 274,800 cartuchos): [El Financiero](https://www.elfinanciero.com.mx/estados/2026/07/25/aseguran-81-armas-largas-y-mas-de-274-mil-cartuchos-en-inmueble-de-san-luis-rio-colorado/)
+- Institucional (comunicado conjunto SEDENA/GN/FGR): [La Jornada](https://www.jornada.com.mx/2026/07/25/politica/005n2pol)
+- Nacional: [Publimetro](https://www.publimetro.com.mx/noticias/2026/07/25/golpe-al-cartel-del-pacifico-aseguran-arsenal-con-81-armas-y-casi-275-mil-cartuchos-en-sonora/)
+- Nacional: [Vanguardia](https://vanguardia.com.mx/noticias/aseguran-arsenal-del-cartel-del-pacifico-en-sonora-decomisan-81-armas-y-casi-275-mil-cartuchos-EF22414231)
+- Nacional: [AFmedios](https://www.afmedios.com/aseguran-ejercito-guardia-nacional-y-fgr-arsenal-con-81-armas-y-casi-275-mil-cartuchos-en-sonora/)
+- Regional (Sonora): [Radio Sonora](https://www.radiosonora.com.mx/asegura-mesa-estatal-de-seguridad-arsenal-de-alto-poder-en-slrc/)
+- Regional: [Turquesa News](https://turquesanews.mx/mexico/autoridades-aseguran-impresionante-arsenal-de-alto-poder-en-sonora/)
+- Regional: [PorEsto](https://www.poresto.com/mexico/sucesos/2026/7/25/golpe-al-cartel-del-pacifico-en-sonora-aseguran-arsenal-con-81-armas-y-casi-275-mil-cartuchos.html)
+- Nota de atribución: una fuente (Somos Juárez) atribuye el inmueble a "Los Rusos", brazo armado de
+  "La Mayiza" (facción del Cártel de Sinaloa), mientras la mayoría usa "Cártel del Pacífico" — ambos
+  nombres se usan en la nota del corte: [Somos Juárez](https://somosjuarez.com/2026/07/25/asegura-gabinete-de-seguridad-arsenal-de-los-rusos/)
+
+## ARG-86-SEN-001 — Sentencia condenatoria por robo agravado (Durango)
+
+- Institucional: [Fiscalía General del Estado de Durango](https://fiscalia.durango.gob.mx/2026/07/29/fged-obtiene-sentencia-condenatoria-de-mas-de-9-anos-de-prision-para-responsables-de-robo-agravado/) — el fetch directo devolvió HTTP 403; contenido confirmado vía resultados de búsqueda y medio regional.
+- Regional: [El Siglo de Torreón](https://www.elsiglodetorreon.com.mx/noticia/2026/los-sentencian-a-mas-de-9-anos-de-prision-por-robo-en-empresa-de-la-region-laguna-de-durango.html)
+- Regional: [Inforednoticias](https://www.inforednoticias.com/post/sentencia-condenatoria-de-m%C3%A1s-de-9-a%C3%B1os-de-prisi%C3%B3n-para-responsables-de-robo-agravado)
+
+## ARG-86-SEN-002 — Sentencia condenatoria por portación de arma de uso exclusivo (Mazatlán, Sinaloa)
+
+- Institucional / Nacional: [La Jornada](https://www.jornada.com.mx/noticia/2026/07/20/sociedad/fgr-obtiene-sentencia-condenatoria-contra-tres-personas-por-portacion-de-armas-de-fuego-de-uso-exclusivo)
+- Nacional: [La Jornada (seguimiento)](https://www.jornada.com.mx/2026/07/21/politica/014n3pol)
+- Nacional: [Capital México](https://www.capitalmexico.com.mx/estados/sinaloa/tres-hombres-son-sentenciados-a-29-anos-de-carcel-por-portar-equipo-de-uso-exclusivo-del-ejercito/)
+- Nacional: [López Dóriga](https://lopezdoriga.com/nacional/sentencian-a-tres-sujetos-detenidos-en-sinaloa-por-portacion-de-armas-de-fuego/)
+- Nacional: [Plaza de Armas](https://plazadearmas.com.mx/sentencia-29-anos-prision-portacion-armas-sinaloa/)
+
+## ARG-86-SEN-003 — Sentencia condenatoria por lavado de dinero (Zhenli Ye Gon)
+
+- Institucional / Nacional: [Infobae](https://www.infobae.com/mexico/2026/07/31/fgr-logra-sentencia-condenatoria-contra-zhenli-ye-gon-15-anos-de-carcel-y-multa-de-140-mil-400-pesos/)
+- Nacional: [La Jornada](https://www.jornada.com.mx/2026/07/31/politica/012n2pol)
+- Nacional: [La Jornada (crónica)](https://www.jornada.com.mx/noticia/2026/07/30/politica/zhenli-ye-gon-recibe-primera-condena-por-lavado-de-dinero-fgr-logra-sentencia-de-15-anos-de-prision)
+- Nacional: [Publimetro](https://www.publimetro.com.mx/noticias/2026/07/31/sentencian-a-zhenli-n-a-15-anos-de-prision-por-lavado-de-dinero/)
+- Nacional: [Aristegui Noticias](https://aristeguinoticias.com/3007/mexico/dan-15-anos-de-carcel-a-zhenli-ye-gon-por-lavado-de-dinero/)
+- Regional: [El Diario de Sonora](https://eldiariodesonora.com.mx/mexico/2026/07/31/fgr-sentencia-zhengli-ye-gon.html)
 
 ## ARG-86-007 — Extorsión (facción "2 de Abril" / Fuerza Anti-Unión, CDMX)
 
@@ -60,6 +97,20 @@ ningún evento rojo en este corte.
 - **Laboratorios clandestinos**: sin resultado institucional verificable en la búsqueda del corte.
 - **Redes financieras**: sin resultado institucional verificable en la búsqueda del corte.
 - **FGR (carpetas de investigación) / INEGI**: sin publicación reciente localizada para este corte.
+- **Granadas, AEI y explosivos** (Conteo Nacional de Armamento, página 5): sin evento verificable en
+  este corte.
+
+## Cobertura de los módulos de armamento y sentencias (páginas 5-6)
+
+- El Conteo Nacional de Armamento cubrió, para este corte, un solo evento verificado (Sonora,
+  ARG-86-ARM-001); no se realizó verificación individual de las 32 secretarías de seguridad
+  estatales ni de las 32 fiscalías, solo búsqueda dirigida vía medios nacionales/regionales y
+  fuentes institucionales federales.
+- El Rastreo Nacional de Sentencias identificó 3 sentencias (2 de la FGR, 1 de la Fiscalía General
+  del Estado de Durango) mediante búsqueda dirigida, no mediante revisión sistemática de las 32
+  fiscalías estatales — ver "Indicador de cobertura" en la página 6 del cartelón para el detalle
+  exacto (2 de 32 fiscalías revisadas). La ausencia de sentencias reportadas para las 30 fiscalías
+  restantes no implica ausencia de actividad judicial real en esas entidades durante el corte.
 
 ## Limitaciones de la búsqueda
 
