@@ -86,19 +86,28 @@ Debajo del radar se muestran los totales por color (alto impacto / violencia ope
 institucionales), calculados del mismo arreglo de eventos que colorea el mapa — ambos módulos
 deben ser siempre consistentes entre sí.
 
-Cada eco y cada estado coloreado enlazan mediante su ARG-ID a la ficha completa del evento en la
-página 3 (trazabilidad visual). Regla de oro: si un elemento visual no aporta inteligencia, no
-debe existir en ARGOS.
+Cada eco y cada estado coloreado enlazan mediante su ARG-ID a la ficha completa del evento en las
+páginas de Crimen Organizado (trazabilidad visual). Regla de oro: si un elemento visual no aporta
+inteligencia, no debe existir en ARGOS.
 
 ## Estructura del reporte
+
+Versión 5 páginas — el reporte se dividió en cinco páginas (antes cuatro) para dar más espacio a
+las tarjetas de Crimen Organizado, que no deben comprimirse para caber en una sola página.
 
 1. **Portada**: ARGOS + número consecutivo, corte informativo, radar, mapa, noticias de ayer y
    hoy, ejes del día, semáforo ARGOS.
 2. **Página 2 — Tablero ejecutivo**: resumen ejecutivo, eventos prioritarios, ARGOS ALERTA,
    detenciones relevantes.
-3. **Página 3 — Crimen organizado**: desapariciones, fosas, laboratorios, huachicol, narcotráfico
-   marítimo, redes financieras, extorsión, Análisis ARGOS.
-4. **Página 4**: valoración, conclusiones, fuentes.
+3. **Página 3 — Crimen organizado (I)**: ataques a autoridades, desapariciones, fosas.
+4. **Página 4 — Crimen organizado (II)**: laboratorios, huachicol, narcotráfico marítimo, redes
+   financieras, extorsión, Análisis ARGOS.
+5. **Página 5**: valoración, conclusiones, indicadores oficiales, fuentes.
+
+La distribución exacta de categorías entre las páginas 3 y 4 puede ajustarse corte a corte según
+el volumen de notas de cada bloque; la regla fija es que ninguna tarjeta debe recortarse ni
+comprimirse por falta de espacio — si un bloque crece, se reparte entre más páginas, no se
+reduce el contenido de cada tarjeta.
 
 ## Regla de las cuatro secciones por nota
 
