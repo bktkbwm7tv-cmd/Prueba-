@@ -166,6 +166,61 @@
   .matriz-nivel input[type=radio]{accent-color:var(--cyan);margin:0;}
   .matriz-row textarea{width:100%;min-height:40px;background:var(--bg-navy);border:1px solid var(--border);color:var(--white);font-family:var(--sans);font-size:10.5px;padding:5px 7px;resize:vertical;outline:none;}
   .matriz-row textarea:focus{border-color:var(--cyan);}
+
+  /* ---------- OPEN TABLE SCROLL WRAPPER ---------- */
+  .table-scroll{overflow-x:auto;}
+  .table-scroll table.exec{min-width:640px;}
+
+  /* ================================================================
+     MÓVIL — celular / pantalla angosta: todo se apila en una columna
+     y se agranda el área táctil, en vez de comprimir la cuadrícula.
+  ================================================================= */
+  @media (max-width: 640px){
+    body{padding:0 0 40px;gap:14px;}
+    .page{padding:14px 14px 60px;min-height:0;gap:12px;}
+    .toolbar{
+      position:sticky; top:0; right:auto; left:0;
+      width:100%; justify-content:center;
+      background:var(--bg-navy); border-bottom:1px solid var(--border);
+      padding:8px 0; margin-bottom:0; z-index:100;
+    }
+    .toolbar button{padding:10px 16px;font-size:10px;}
+
+    .masthead{grid-template-columns:1fr;text-align:center;gap:8px;padding-bottom:10px;}
+    .masthead .corte{text-align:center;}
+    .titles h1{font-size:15px;letter-spacing:1.5px;}
+    .titles h2{font-size:9.5px;}
+
+    .indice{font-size:11px;}
+
+    .ctrl-grid, .free-grid, .grid-2{grid-template-columns:1fr;}
+
+    /* Ítems de checklist: se apilan; el grupo Sí/No/Pend/N-A pasa a fila
+       horizontal con más espacio para el dedo, y observaciones ocupa
+       todo el ancho debajo. */
+    .chk-row{
+      grid-template-columns:1fr;
+      gap:8px;
+      padding:12px 10px;
+    }
+    .chk-row.head{display:none;} /* la cabecera de columnas no aporta en una sola columna */
+    .chk-no{display:inline;padding-top:0;}
+    .chk-no::after{content:". ";}
+    .chk-label{display:inline;font-size:13px;}
+    .chk-marc{flex-direction:row;flex-wrap:wrap;gap:10px 16px;font-size:11.5px;}
+    .chk-marc label{padding:4px 0;}
+    .chk-marc input[type=radio]{width:18px;height:18px;}
+    .chk-obs textarea{min-height:52px;font-size:13px;}
+
+    .matriz-row{grid-template-columns:1fr;gap:8px;padding:12px 10px;}
+    .matriz-row.head{display:none;}
+    .matriz-nivel{gap:14px;font-size:11.5px;}
+    .matriz-nivel input[type=radio]{width:18px;height:18px;}
+
+    .free-field textarea, .ctrl-field input{font-size:13px;}
+
+    table.exec td textarea, table.exec td input{font-size:13px;}
+  }
 </style>
 </head>
 <body>
@@ -947,9 +1002,9 @@ function renderOpenTable(containerId, columns, initialRows){
     });
     tbody.appendChild(tr);
   }
-  let html = '<table class="exec" id="' + tableId + '"><thead><tr>' +
+  let html = '<div class="table-scroll"><table class="exec" id="' + tableId + '"><thead><tr>' +
     columns.map(function(c){ return "<th>" + c + "</th>"; }).join("") +
-    '</tr></thead><tbody></tbody></table>' +
+    '</tr></thead><tbody></tbody></table></div>' +
     '<button type="button" class="add-row-btn no-print">+ AGREGAR FILA</button>';
   el.innerHTML = html;
   const tbody = el.querySelector("tbody");
