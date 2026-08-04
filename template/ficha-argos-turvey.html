@@ -260,6 +260,9 @@
     padding:11px 12px;cursor:pointer;border-radius:2px;margin-top:4px;
   }
   .lock-panel button:hover{border-color:var(--cyan);}
+  .lock-panel button:disabled{opacity:.4;cursor:not-allowed;}
+  .lock-panel button:disabled:hover{border-color:var(--border);}
+  .lock-error{white-space:pre-wrap;line-height:1.5;}
   .lock-panel button.lock-danger{color:var(--red);border-color:rgba(255,59,59,.4);margin-top:14px;}
   .lock-panel button.lock-danger:hover{border-color:var(--red);}
   .lock-disclaimer{
@@ -1258,12 +1261,29 @@ function unlockUI(){
   document.getElementById("lock-again-btn").style.display = "";
 }
 
+function cryptoAvailable(){
+  return !!(window.crypto && window.crypto.subtle && window.crypto.subtle.importKey);
+}
+
+const NO_CRYPTO_MSG = "Este navegador está bloqueando el cifrado en este archivo abierto localmente " +
+  "(restricción de Safari/iOS con páginas file:// — no es un error del formulario). " +
+  "Para que funcione: pide que este archivo se aloje en un sitio interno con https:// " +
+  "(no tiene que ser mío ni de Claude, cualquier servidor de la Dirección General sirve), " +
+  "y ábrelo desde esa dirección en vez de como archivo suelto.";
+
 function initLock(){
   const raw = localStorage.getItem(STORAGE_KEY);
   const createPanel = document.getElementById("lock-create");
   const unlockPanel = document.getElementById("lock-unlock");
   if (raw) { createPanel.style.display = "none"; unlockPanel.style.display = ""; }
   else { createPanel.style.display = ""; unlockPanel.style.display = "none"; }
+
+  if (!cryptoAvailable()) {
+    document.getElementById("lock-create-error").textContent = NO_CRYPTO_MSG;
+    document.getElementById("lock-unlock-error").textContent = NO_CRYPTO_MSG;
+    document.getElementById("lock-create-btn").disabled = true;
+    document.getElementById("lock-unlock-btn").disabled = true;
+  }
 
   function onEnter(inputId, btnId){
     document.getElementById(inputId).addEventListener("keydown", function(e){
@@ -1278,24 +1298,32 @@ function initLock(){
     const p2 = document.getElementById("lock-pass-confirm").value;
     const errEl = document.getElementById("lock-create-error");
     errEl.textContent = "";
+    if (!cryptoAvailable()) { errEl.textContent = NO_CRYPTO_MSG; return; }
     if (!p1 || p1.length < 6) { errEl.textContent = "Usa al menos 6 caracteres."; return; }
     if (p1 !== p2) { errEl.textContent = "Las contraseñas no coinciden."; return; }
-    const salt = crypto.getRandomValues(new Uint8Array(16));
-    sessionKey = await deriveKey(p1, salt);
-    const enc = await encryptJSON(sessionKey, { radios: {}, texts: {} });
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({
-      salt: b64FromBytes(salt), iv: enc.iv, ct: enc.ct, savedAt: new Date().toISOString()
-    }));
-    unlockUI();
-    setStatus("🔒 Guardado automático activo");
+    try {
+      const salt = crypto.getRandomValues(new Uint8Array(16));
+      sessionKey = await deriveKey(p1, salt);
+      const enc = await encryptJSON(sessionKey, { radios: {}, texts: {} });
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({
+        salt: b64FromBytes(salt), iv: enc.iv, ct: enc.ct, savedAt: new Date().toISOString()
+      }));
+      unlockUI();
+      setStatus("🔒 Guardado automático activo");
+    } catch (e) {
+      errEl.textContent = "No se pudo crear la contraseña en este navegador (" + (e && e.message ? e.message : e) + ").";
+    }
   });
 
   document.getElementById("lock-unlock-btn").addEventListener("click", async function(){
     const pass = document.getElementById("lock-pass-unlock").value;
     const errEl = document.getElementById("lock-unlock-error");
     errEl.textContent = "";
+    if (!cryptoAvailable()) { errEl.textContent = NO_CRYPTO_MSG; return; }
+    let stored;
+    try { stored = JSON.parse(raw); }
+    catch (e) { errEl.textContent = "Los datos guardados en este dispositivo están dañados o incompletos."; return; }
     try {
-      const stored = JSON.parse(raw);
       const key = await deriveKey(pass, bytesFromB64(stored.salt));
       const data = await decryptJSON(key, stored.iv, stored.ct);
       sessionKey = key;
