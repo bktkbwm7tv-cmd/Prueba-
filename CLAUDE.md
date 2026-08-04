@@ -196,6 +196,62 @@ reproducible para todos los reportes.
 4. **Fuentes abiertas**: Blog del Narco, NarcoData, X, Telegram — marcar siempre como
    `NO OFICIAL`. Nunca confirmar un hecho solo con estas fuentes.
 
+## Barrido obligatorio de portales oficiales
+
+Versión 1.0
+
+Ninguna categoría del reporte puede declararse `SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE` sin
+haber consultado antes los portales institucionales listados abajo. **Declarar un vacío sin haber
+hecho el barrido es un error de método, no un hallazgo**: los medios nacionales publican solo una
+fracción de los aseguramientos, detenciones y resoluciones que las corporaciones difunden en sus
+propios canales. Un `SIN DATO` derivado únicamente de no encontrar la nota en medios es un dato
+falso.
+
+### Portales de consulta obligatoria en cada corte
+
+**Federales**
+
+- **Guardia Nacional** — `gob.mx/guardianacional/prensa`. Publica aseguramientos por entidad con
+  desglose de armas largas y cortas, cargadores, cartuchos, granadas y explosivos.
+- **SEDENA** — `gob.mx/sedena`, más zonas y regiones militares cuando publiquen.
+- **SEMAR** — `gob.mx/semar` y regiones navales.
+- **FGR** — `gob.mx/fgr`, fiscalías especializadas y delegaciones estatales.
+- **SSPC / Gabinete de Seguridad** — `gob.mx/sspc` y `seguridad.sspc.gob.mx`, incluidos los
+  comunicados conjuntos e informes diarios.
+- **Aduanas / ANAM** cuando el hecho sea fronterizo o portuario.
+
+**Estatales — las 32 entidades**
+
+- Secretaría de Seguridad Pública o Ciudadana de cada estado (p. ej. `ssp.michoacan.gob.mx`,
+  `sspsinaloa.gob.mx`).
+- Fiscalía o Procuraduría General de Justicia de cada estado.
+- Policía Estatal, Guardia Civil, Fuerza Civil o Policía Ministerial, según el nombre local.
+- Mesas de Coordinación o de Construcción de la Paz estatales.
+
+Si un portal no responde o bloquea la consulta directa, se registra como `PORTAL NO DISPONIBLE` en
+el indicador de cobertura y se intenta la vía de buscador. **Nunca se sustituye silenciosamente por
+una nota de medios**: la sustitución debe quedar anotada.
+
+### Qué se extrae en cada barrido
+
+De cada comunicado institucional se extrae, cuando exista:
+
+1. **Armas** — cortas y largas, contabilizadas por separado.
+2. **Explosivos y artefactos** — granadas, AEI, componentes y precursores.
+3. **Municiones** — cartuchos y cargadores, contabilizados por separado y nunca sumados entre sí.
+4. **Personas detenidas** — número exacto publicado por la autoridad.
+
+Estos cuatro rubros alimentan el **conteo diario del corte**. Los eventos de alto impacto
+detectados en el mismo barrido (ataques a autoridades, enfrentamientos, narcobloqueos, hallazgos de
+fosas, uso de AEI contra personal o población) no son línea de conteo: se clasifican con el
+semáforo ARGOS y se documentan como tarjeta propia con sus cuatro apartados.
+
+### Registro del barrido
+
+Cada edición conserva en su archivo de fuentes qué portales se consultaron, cuáles publicaron y
+cuáles no, de modo que todo `SIN DATO` sea demostrable y auditable, y que la cobertura declarada
+nunca exceda la efectivamente verificada.
+
 ## Reglas de validación
 
 Cada evento debe cumplir, en la medida de lo posible: ✔ fuente institucional, ✔ fuente nacional,
@@ -242,13 +298,18 @@ estatal. No es un listado decorativo: debe permitir leer volumen, tipo de armas,
 territorial, presencia de armamento de alto poder, uso de explosivos, rutas probables de
 abastecimiento, patrones logísticos y zonas de escalamiento.
 
-**Búsqueda obligatoria**: federal (Gabinete de Seguridad, SSPC, FGR, SEDENA, SEMAR, Guardia
-Nacional, Aduanas, delegaciones estatales de FGR, zonas militares/regiones navales cuando sean
-públicas) → estatal (32 fiscalías, 32 secretarías de seguridad, gobiernos y policías estatales,
-mesas de construcción de paz) → municipal cuando el evento sea relevante → medios nacionales →
-medios regionales/locales del estado o municipio del hecho → fuentes abiertas (X, Telegram,
-Facebook institucional, Blog del Narco, cuentas ciudadanas), siempre marcadas
-`NO OFICIALES — PENDIENTES DE CONFIRMACIÓN INSTITUCIONAL`.
+**Búsqueda obligatoria**: se ejecuta el "Barrido obligatorio de portales oficiales" definido arriba
+— federal (Gabinete de Seguridad, SSPC, FGR, SEDENA, SEMAR, Guardia Nacional, Aduanas, delegaciones
+estatales de FGR, zonas militares/regiones navales cuando sean públicas) → estatal (32 fiscalías,
+32 secretarías de seguridad, gobiernos y policías estatales, mesas de construcción de paz) →
+municipal cuando el evento sea relevante → medios nacionales → medios regionales/locales del estado
+o municipio del hecho → fuentes abiertas (X, Telegram, Facebook institucional, Blog del Narco,
+cuentas ciudadanas), siempre marcadas `NO OFICIALES — PENDIENTES DE CONFIRMACIÓN INSTITUCIONAL`.
+
+La sala de prensa de la Guardia Nacional (`gob.mx/guardianacional/prensa`) y los portales de las
+secretarías de seguridad estatales son la fuente primaria de esta sección, no un complemento: son
+quienes publican el desglose numérico por categoría que los medios suelen omitir. **Esta sección no
+puede cerrarse en `SIN DATO` sin haberlos consultado y sin registrar el resultado de esa consulta.**
 
 **Taxonomía obligatoria** (clasificar cada aseguramiento, sin mezclar categorías):
 
@@ -284,12 +345,19 @@ fecha de consulta. Un decomiso ocurrido antes pero publicado hoy se marca
 `Evento anterior publicado durante el corte`, sin mezclarlo con hechos de las últimas 48 horas.
 
 **Tabla obligatoria**: ARG-ID · Entidad · Municipio · Fecha del hecho · Armas cortas · Armas
-largas · Cartuchos · Cargadores · Granadas · AEI · Explosivos/componentes · Fuente primaria ·
-Corroboración · Confianza.
+largas · Cartuchos · Cargadores · Granadas · AEI · Explosivos/componentes · Detenidos · Corporación ·
+Fuente primaria · Corroboración · Confianza.
 
 **Total nacional del corte** (o `Sin total nacional verificable durante el corte`): pistolas/armas
 cortas, armas largas, cartuchos, cargadores, granadas, AEI, explosivos, drones armados, armamento
-especial, estados con aseguramientos, eventos contabilizados, eventos cualitativos sin cantidad.
+especial, **personas detenidas**, estados con aseguramientos, eventos contabilizados, eventos
+cualitativos sin cantidad.
+
+**Conteo de detenidos**: se contabilizan únicamente las personas detenidas en el mismo evento de
+aseguramiento y cuya cifra publique expresamente la autoridad. Una detención sin aseguramiento de
+armamento no entra en este conteo (corresponde a la tabla de "Detenciones relevantes" del tablero
+ejecutivo). Las personas detenidas nunca se suman entre eventos que puedan ser el mismo hecho
+publicado por dos corporaciones: aplica la misma regla de deduplicación que el armamento.
 
 **Lectura regional**: agrupar por Noroeste, Noreste, Occidente, Centro, Golfo, Pacífico Sur,
 Sureste — regionalización consistente entre ediciones.
@@ -323,6 +391,18 @@ Humanos, Control Regional, Delitos Electorales, Asuntos Internos), delegaciones 
 tribunales federales y CJF cuando publiquen resoluciones verificables, más las fiscalías o
 procuradurías de las 32 entidades federativas (boletines, sala de prensa, redes oficiales,
 apartados de sentencias, tribunales estatales cuando sea necesario).
+
+**Barrido obligatorio**: esta sección se alimenta recorriendo los portales oficiales de la FGR y de
+las fiscalías o procuradurías de **las 32 entidades federativas**, una por una. Las sentencias son
+el producto institucional peor cubierto por los medios nacionales —la mayoría solo se publica en el
+boletín de la propia fiscalía—, por lo que una búsqueda apoyada en medios producirá casi siempre un
+falso `SIN DATO`. Se revisa el apartado de boletines, sala de prensa o comunicados de cada fiscalía
+correspondiente al periodo del corte.
+
+El resultado del recorrido se refleja literalmente en el Indicador de cobertura: las fiscalías
+efectivamente revisadas, las que publicaron sentencia, las que no tuvieron actualización y aquellas
+cuyo portal no estuvo disponible. **Nunca se declara una cobertura mayor a la verificada**, y una
+fiscalía no consultada se reporta como no revisada, jamás como "sin actualización".
 
 **Tipos de resolución a clasificar**: sentencia condenatoria; sentencia absolutoria (no ocultar si
 son relevantes); procedimiento abreviado con sentencia; sentencia en juicio oral; sentencia firme
