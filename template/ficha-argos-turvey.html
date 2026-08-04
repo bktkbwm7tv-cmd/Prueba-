@@ -221,13 +221,103 @@
 
     table.exec td textarea, table.exec td input{font-size:13px;}
   }
+
+  /* ---------- CANDADO DE CONTRASEÑA (cifrado local) ---------- */
+  #app-content.locked{filter:blur(14px);pointer-events:none;user-select:none;}
+  .lock-screen{
+    position:fixed;inset:0;z-index:200;
+    display:flex;align-items:center;justify-content:center;padding:16px;
+    background:
+      linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0/40px 40px,
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0/40px 40px,
+      radial-gradient(ellipse at 50% -10%, #0c1a3d 0%, var(--bg-navy) 55%);
+    background-color:var(--bg-navy);
+  }
+  .lock-screen[hidden]{display:none;}
+  .lock-box{
+    width:420px;max-width:100%;
+    background:var(--panel);border:1px solid var(--border);border-radius:2px;
+    padding:22px 24px;display:flex;flex-direction:column;gap:12px;
+    box-shadow:0 20px 60px rgba(0,0,0,.6);
+  }
+  .lock-title{
+    font-family:var(--mono);font-size:15px;letter-spacing:2px;color:var(--cyan);
+    text-shadow:0 0 10px rgba(76,230,255,.3);text-align:center;line-height:1.5;
+    border-bottom:1px solid var(--border);padding-bottom:12px;
+  }
+  .lock-panel{display:flex;flex-direction:column;gap:8px;}
+  .lock-note{font-size:11.5px;line-height:1.6;color:var(--white);margin:0;}
+  .lock-panel label{font-family:var(--mono);font-size:9.5px;letter-spacing:1px;color:var(--cyan-dim);margin-top:4px;}
+  .lock-panel input[type=password]{
+    background:var(--bg-navy);border:1px solid var(--border);color:var(--white);
+    font-family:var(--sans);font-size:14px;padding:9px 10px;outline:none;
+  }
+  .lock-panel input[type=password]:focus{border-color:var(--cyan);}
+  .lock-error{font-size:11px;color:var(--red);min-height:14px;}
+  .lock-panel button{
+    font-family:var(--mono);font-size:11px;letter-spacing:1px;
+    background:var(--panel-2);color:var(--cyan);border:1px solid var(--border);
+    padding:11px 12px;cursor:pointer;border-radius:2px;margin-top:4px;
+  }
+  .lock-panel button:hover{border-color:var(--cyan);}
+  .lock-panel button.lock-danger{color:var(--red);border-color:rgba(255,59,59,.4);margin-top:14px;}
+  .lock-panel button.lock-danger:hover{border-color:var(--red);}
+  .lock-disclaimer{
+    font-family:var(--mono);font-size:9px;line-height:1.6;color:var(--cyan-dim);
+    border-top:1px dashed var(--border);padding-top:10px;
+  }
+  .save-status{font-family:var(--mono);font-size:9.5px;color:var(--cyan-dim);align-self:center;white-space:nowrap;}
+  #lock-again-btn{color:var(--yellow);}
+  @media (max-width:640px){
+    .lock-box{padding:18px 16px;}
+    .save-status{display:none;} /* no cabe junto a los botones en móvil; el estado se ve igual */
+  }
 </style>
 </head>
 <body>
 
 <div class="toolbar no-print">
+  <span id="save-status" class="save-status"></span>
+  <button type="button" id="lock-again-btn" style="display:none;">🔒 BLOQUEAR</button>
   <button onclick="window.print()">IMPRIMIR / PDF</button>
 </div>
+
+<div id="lock-screen" class="lock-screen no-print">
+  <div class="lock-box">
+    <div class="lock-title">ARGOS-TURVEY<br>ACCESO CIFRADO AL CASO</div>
+
+    <div id="lock-create" class="lock-panel">
+      <p class="lock-note">
+        Este dispositivo no tiene un caso guardado todavía. Crea una contraseña para cifrar lo que
+        se guarde aquí — contiene datos de una persona no localizada.
+      </p>
+      <label for="lock-pass-new">Nueva contraseña</label>
+      <input type="password" id="lock-pass-new" autocomplete="new-password">
+      <label for="lock-pass-confirm">Confirmar contraseña</label>
+      <input type="password" id="lock-pass-confirm" autocomplete="new-password">
+      <div class="lock-error" id="lock-create-error"></div>
+      <button type="button" id="lock-create-btn">CREAR Y CONTINUAR</button>
+    </div>
+
+    <div id="lock-unlock" class="lock-panel" style="display:none;">
+      <p class="lock-note">Hay un caso guardado en este dispositivo, cifrado. Ingresa la contraseña para abrirlo.</p>
+      <label for="lock-pass-unlock">Contraseña</label>
+      <input type="password" id="lock-pass-unlock" autocomplete="current-password">
+      <div class="lock-error" id="lock-unlock-error"></div>
+      <button type="button" id="lock-unlock-btn">DESBLOQUEAR</button>
+      <button type="button" id="lock-wipe-btn" class="lock-danger">BORRAR DATOS GUARDADOS (si se olvidó la contraseña)</button>
+    </div>
+
+    <div class="lock-disclaimer">
+      Esto cifra (AES-256) lo que se guarda en el almacenamiento de este navegador con la
+      contraseña que ingreses. No es un sistema de cuentas por persona, no distingue quién accedió
+      ni cuándo, y cualquiera que conozca esta contraseña puede desbloquear. La contraseña no se
+      guarda en ningún lado: si se olvida, los datos guardados no se pueden recuperar.
+    </div>
+  </div>
+</div>
+
+<div id="app-content" class="locked">
 
 <!-- =========================================================
      PÁGINA 1 — PORTADA + ÍNDICE + SECCIÓN 1 (DATOS DE CONTROL)
@@ -738,7 +828,11 @@
   </footer>
 </section>
 
+</div><!-- /#app-content -->
+
 <script>
+const OPEN_TABLES = {};
+
 const CTRL_CASO = [
   "Nombre de la persona","Sexo","Edad","Tipo de caso",
   "Carpeta / expediente","Fiscalía / autoridad","Entidad / municipio",
@@ -767,7 +861,7 @@ function renderCtrlGrid(containerId, fields){
   const el = document.getElementById(containerId);
   if (!el) return;
   el.innerHTML = fields.map(function(f, i){
-    return '<div class="ctrl-field"><label>' + f + '</label><input type="text" data-field="' + f + '"></div>';
+    return '<div class="ctrl-field"><label>' + f + '</label><input type="text" data-field="' + f + '" data-key="' + containerId + ':' + i + '"></div>';
   }).join("");
 }
 
@@ -788,7 +882,7 @@ function renderChecklist(containerId, items, opts){
         '<label><input type="radio" name="' + name + '" value="pend"> Pend.</label>' +
         '<label><input type="radio" name="' + name + '" value="na"> N/A</label>' +
       '</div>' +
-      '<div class="chk-obs"><textarea placeholder="Observaciones / fuente / acción derivada"></textarea></div>' +
+      '<div class="chk-obs"><textarea placeholder="Observaciones / fuente / acción derivada" data-key="' + name + ':obs"></textarea></div>' +
     '</div>';
   });
   el.innerHTML = html;
@@ -948,9 +1042,10 @@ function renderFreeGrid(containerId, pairs){
   const el = document.getElementById(containerId);
   if (!el) return;
   let html = "";
+  let i = 0;
   pairs.forEach(function(pair){
     pair.forEach(function(label){
-      html += '<div class="free-field"><label>' + label + '</label><textarea></textarea></div>';
+      html += '<div class="free-field"><label>' + label + '</label><textarea data-key="' + containerId + ':' + (i++) + '"></textarea></div>';
     });
   });
   el.innerHTML = html;
@@ -980,8 +1075,8 @@ function renderMatriz(containerId, factores){
         '<label><input type="radio" name="' + name + '" value="medio"> Medio</label>' +
         '<label><input type="radio" name="' + name + '" value="alto"> Alto</label>' +
       '</div>' +
-      '<textarea placeholder="Evidencia"></textarea>' +
-      '<textarea placeholder="Acción"></textarea>' +
+      '<textarea placeholder="Evidencia" data-key="' + name + ':evidencia"></textarea>' +
+      '<textarea placeholder="Acción" data-key="' + name + ':accion"></textarea>' +
     '</div>';
   });
   el.innerHTML = html;
@@ -993,11 +1088,13 @@ function renderOpenTable(containerId, columns, initialRows){
   const el = document.getElementById(containerId);
   if (!el) return;
   const tableId = containerId + "-table";
+  let rowIndex = 0;
   function addRow(tbody){
     const tr = document.createElement("tr");
-    columns.forEach(function(){
+    const ri = rowIndex++;
+    columns.forEach(function(c, ci){
       const td = document.createElement("td");
-      td.innerHTML = "<textarea></textarea>";
+      td.innerHTML = '<textarea data-key="' + containerId + ':' + ri + ':' + ci + '"></textarea>';
       tr.appendChild(td);
     });
     tbody.appendChild(tr);
@@ -1009,7 +1106,10 @@ function renderOpenTable(containerId, columns, initialRows){
   el.innerHTML = html;
   const tbody = el.querySelector("tbody");
   for (let i = 0; i < (initialRows || 4); i++) addRow(tbody);
-  el.querySelector(".add-row-btn").addEventListener("click", function(){ addRow(tbody); });
+  el.querySelector(".add-row-btn").addEventListener("click", function(){ addRow(tbody); onFormChanged(); });
+  OPEN_TABLES[containerId] = {
+    ensureRows: function(minRows){ while (rowIndex < minRows) addRow(tbody); }
+  };
 }
 renderOpenTable("tbl-entrevistas",
   ["Fecha/hora","Nombre / calidad","Contacto","Lugar entrevista","Dato relevante","Confiabilidad","Acción derivada"], 5);
@@ -1045,6 +1145,183 @@ const CIERRE_VALIDACION_PAIRS = [
   ["Responsable","Observaciones finales"],
 ];
 renderFreeGrid("grid-cierre", CIERRE_VALIDACION_PAIRS);
+
+/* ===================================================================
+   ACCESO CIFRADO Y GUARDADO AUTOMÁTICO
+   Los datos que se guardan en este navegador (localStorage) se cifran
+   con AES-256-GCM usando una clave derivada (PBKDF2) de la contraseña
+   que el usuario define. La contraseña nunca se guarda ni se envía a
+   ningún lado — solo vive en memoria mientras la sesión está
+   desbloqueada. No hay cuentas de usuario ni servidor: es protección
+   del dato en reposo en este dispositivo, no un sistema de acceso por
+   persona.
+=================================================================== */
+const STORAGE_KEY = "argos_turvey_case_v1";
+let sessionKey = null;
+let saveTimer = null;
+
+function b64FromBytes(bytes){
+  let bin = "";
+  const arr = new Uint8Array(bytes);
+  for (let i = 0; i < arr.length; i++) bin += String.fromCharCode(arr[i]);
+  return btoa(bin);
+}
+function bytesFromB64(b64){
+  const bin = atob(b64);
+  const arr = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+  return arr;
+}
+async function deriveKey(passphrase, saltBytes){
+  const enc = new TextEncoder();
+  const baseKey = await crypto.subtle.importKey("raw", enc.encode(passphrase), "PBKDF2", false, ["deriveKey"]);
+  return crypto.subtle.deriveKey(
+    { name: "PBKDF2", salt: saltBytes, iterations: 200000, hash: "SHA-256" },
+    baseKey,
+    { name: "AES-GCM", length: 256 },
+    false,
+    ["encrypt", "decrypt"]
+  );
+}
+async function encryptJSON(key, obj){
+  const iv = crypto.getRandomValues(new Uint8Array(12));
+  const enc = new TextEncoder();
+  const ct = await crypto.subtle.encrypt({ name: "AES-GCM", iv: iv }, key, enc.encode(JSON.stringify(obj)));
+  return { iv: b64FromBytes(iv), ct: b64FromBytes(ct) };
+}
+async function decryptJSON(key, ivB64, ctB64){
+  const iv = bytesFromB64(ivB64);
+  const ct = bytesFromB64(ctB64);
+  const pt = await crypto.subtle.decrypt({ name: "AES-GCM", iv: iv }, key, ct);
+  return JSON.parse(new TextDecoder().decode(pt));
+}
+
+function collectFormData(){
+  const data = { radios: {}, texts: {} };
+  document.querySelectorAll('#app-content input[type=radio]:checked').forEach(function(r){ data.radios[r.name] = r.value; });
+  document.querySelectorAll('#app-content input[type=text][data-key]').forEach(function(i){ if (i.value) data.texts[i.dataset.key] = i.value; });
+  document.querySelectorAll('#app-content textarea[data-key]').forEach(function(t){ if (t.value) data.texts[t.dataset.key] = t.value; });
+  return data;
+}
+
+function applyFormData(data){
+  if (!data) return;
+  const texts = data.texts || {};
+  Object.keys(texts).forEach(function(key){
+    Object.keys(OPEN_TABLES).forEach(function(tableId){
+      if (key.indexOf(tableId + ":") === 0) {
+        const row = parseInt(key.slice(tableId.length + 1).split(":")[0], 10);
+        if (!isNaN(row)) OPEN_TABLES[tableId].ensureRows(row + 1);
+      }
+    });
+  });
+  Object.keys(data.radios || {}).forEach(function(name){
+    const val = data.radios[name];
+    const el = document.querySelector('#app-content input[type=radio][name="' + CSS.escape(name) + '"][value="' + CSS.escape(val) + '"]');
+    if (el) el.checked = true;
+  });
+  Object.keys(texts).forEach(function(key){
+    const el = document.querySelector('#app-content [data-key="' + CSS.escape(key) + '"]');
+    if (el) el.value = texts[key];
+  });
+}
+
+function setStatus(text){
+  const el = document.getElementById("save-status");
+  if (el) el.textContent = text;
+}
+
+async function saveNow(){
+  if (!sessionKey) return;
+  try {
+    const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
+    if (!stored || !stored.salt) return;
+    const enc = await encryptJSON(sessionKey, collectFormData());
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+      salt: stored.salt, iv: enc.iv, ct: enc.ct, savedAt: new Date().toISOString()
+    }));
+    setStatus("🔒 Guardado " + new Date().toLocaleTimeString("es-MX", { hour: "2-digit", minute: "2-digit" }));
+  } catch (e) {
+    setStatus("⚠ Error al guardar");
+  }
+}
+function onFormChanged(){
+  if (!sessionKey) return;
+  setStatus("Guardando…");
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(saveNow, 700);
+}
+
+function unlockUI(){
+  document.getElementById("lock-screen").setAttribute("hidden", "");
+  document.getElementById("app-content").classList.remove("locked");
+  document.getElementById("lock-again-btn").style.display = "";
+}
+
+function initLock(){
+  const raw = localStorage.getItem(STORAGE_KEY);
+  const createPanel = document.getElementById("lock-create");
+  const unlockPanel = document.getElementById("lock-unlock");
+  if (raw) { createPanel.style.display = "none"; unlockPanel.style.display = ""; }
+  else { createPanel.style.display = ""; unlockPanel.style.display = "none"; }
+
+  function onEnter(inputId, btnId){
+    document.getElementById(inputId).addEventListener("keydown", function(e){
+      if (e.key === "Enter") document.getElementById(btnId).click();
+    });
+  }
+  onEnter("lock-pass-confirm", "lock-create-btn");
+  onEnter("lock-pass-unlock", "lock-unlock-btn");
+
+  document.getElementById("lock-create-btn").addEventListener("click", async function(){
+    const p1 = document.getElementById("lock-pass-new").value;
+    const p2 = document.getElementById("lock-pass-confirm").value;
+    const errEl = document.getElementById("lock-create-error");
+    errEl.textContent = "";
+    if (!p1 || p1.length < 6) { errEl.textContent = "Usa al menos 6 caracteres."; return; }
+    if (p1 !== p2) { errEl.textContent = "Las contraseñas no coinciden."; return; }
+    const salt = crypto.getRandomValues(new Uint8Array(16));
+    sessionKey = await deriveKey(p1, salt);
+    const enc = await encryptJSON(sessionKey, { radios: {}, texts: {} });
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+      salt: b64FromBytes(salt), iv: enc.iv, ct: enc.ct, savedAt: new Date().toISOString()
+    }));
+    unlockUI();
+    setStatus("🔒 Guardado automático activo");
+  });
+
+  document.getElementById("lock-unlock-btn").addEventListener("click", async function(){
+    const pass = document.getElementById("lock-pass-unlock").value;
+    const errEl = document.getElementById("lock-unlock-error");
+    errEl.textContent = "";
+    try {
+      const stored = JSON.parse(raw);
+      const key = await deriveKey(pass, bytesFromB64(stored.salt));
+      const data = await decryptJSON(key, stored.iv, stored.ct);
+      sessionKey = key;
+      applyFormData(data);
+      unlockUI();
+      setStatus("🔒 Desbloqueado");
+    } catch (e) {
+      errEl.textContent = "Contraseña incorrecta.";
+    }
+  });
+
+  document.getElementById("lock-wipe-btn").addEventListener("click", function(){
+    const ok = confirm("¿Borrar TODOS los datos guardados de este caso en este dispositivo? Esta acción no se puede deshacer.");
+    if (ok) { localStorage.removeItem(STORAGE_KEY); location.reload(); }
+  });
+
+  document.getElementById("lock-again-btn").addEventListener("click", async function(){
+    await saveNow();
+    location.reload();
+  });
+
+  document.getElementById("app-content").addEventListener("input", onFormChanged);
+  document.getElementById("app-content").addEventListener("change", onFormChanged);
+}
+
+initLock();
 </script>
 
 </body>
