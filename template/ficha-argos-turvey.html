@@ -1,0 +1,1051 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>ARGOS-TURVEY — Bitácora de Campo de Victimología Forense (Plantilla)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --bg-navy:#040814;
+    --panel:#0a1230;
+    --panel-2:#0d1638;
+    --grid-line: rgba(76,230,255,0.08);
+    --border: rgba(76,230,255,0.28);
+    --cyan:#4ce6ff;
+    --cyan-dim:#8fb8c8;
+    --white:#eef6fb;
+    --red:#ff3b3b;
+    --yellow:#ffd23f;
+    --green:#33d17a;
+    --mono: "Consolas","SFMono-Regular","Courier New",monospace;
+    --sans: "Segoe UI","Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:#000;}
+  body{
+    font-family:var(--sans);
+    color:var(--white);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:24px;
+    padding:24px 0 60px;
+  }
+
+  /* ---------- PAGE SHELL ---------- */
+  .page{
+    width:1000px;
+    max-width:96vw;
+    min-height:1360px;
+    background:
+      linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0/40px 40px,
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0/40px 40px,
+      radial-gradient(ellipse at 50% -10%, #0c1a3d 0%, var(--bg-navy) 55%);
+    background-color:var(--bg-navy);
+    border:1px solid var(--border);
+    position:relative;
+    padding:22px 30px 70px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    box-shadow:0 0 0 1px #000, 0 20px 60px rgba(0,0,0,.6);
+    overflow-x:auto;
+  }
+  @media print{
+    body{background:#000;padding:0;gap:0;}
+    .page{box-shadow:none;break-after:page; max-width:none; width:210mm; min-height:297mm;}
+    .no-print{display:none !important;}
+  }
+
+  /* ---------- HEADER ---------- */
+  .masthead{
+    display:grid;
+    grid-template-columns:210px 1fr 150px;
+    align-items:center;
+    gap:14px;
+    border-bottom:1px solid var(--border);
+    padding-bottom:12px;
+  }
+  .masthead .brand{font-family:var(--mono);font-weight:700;letter-spacing:2px;}
+  .brand .argos-num{font-size:22px;color:var(--cyan);text-shadow:0 0 10px rgba(76,230,255,.35);line-height:1;}
+  .brand .sub{font-size:9.5px;color:var(--cyan-dim);margin-top:4px;letter-spacing:1px;}
+  .masthead .titles{text-align:center;}
+  .titles h1{margin:0;font-size:17px;letter-spacing:3px;color:var(--white);}
+  .titles h2{margin:2px 0 0;font-size:10.5px;letter-spacing:1.5px;color:var(--cyan);font-weight:600;}
+  .titles .motto{margin-top:5px;font-family:var(--mono);font-size:9px;color:var(--cyan-dim);letter-spacing:1.5px;}
+  .masthead .corte{text-align:right;font-family:var(--mono);font-size:10.5px;color:var(--cyan-dim);line-height:1.6;}
+  .masthead .corte b{color:var(--white);}
+
+  /* ---------- PANELS / SECTION HEADS ---------- */
+  .panel{min-width:0;background:var(--panel);border:1px solid var(--border);border-radius:2px;padding:14px 16px;}
+  .panel-title{font-family:var(--mono);font-size:11px;letter-spacing:2px;color:var(--cyan);border-bottom:1px solid var(--border);padding-bottom:6px;margin-bottom:10px;display:flex;justify-content:space-between;}
+  .section-head{font-family:var(--mono);font-size:13px;letter-spacing:3px;color:var(--cyan);border-left:3px solid var(--cyan);padding:4px 10px;background:linear-gradient(90deg, rgba(76,230,255,.08), transparent);}
+  .subsection-head{font-family:var(--mono);font-size:11px;letter-spacing:1.5px;color:var(--white);border-bottom:1px dashed var(--border);padding-bottom:4px;margin-top:2px;}
+  .muted-note{font-family:var(--mono);font-size:9.5px;color:var(--cyan-dim);border:1px dashed var(--border);padding:6px 10px;line-height:1.6;}
+  .body-text{font-size:11.5px;line-height:1.6;color:var(--white);}
+  .body-text b{color:var(--cyan);}
+
+  /* ---------- FOOTER BAR ---------- */
+  .footbar{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;padding:8px 30px;border-top:1px solid var(--border);font-family:var(--mono);font-size:9.5px;color:var(--cyan-dim);background:rgba(4,8,20,.9);}
+  .footbar .uso{color:var(--yellow);letter-spacing:1px;}
+
+  /* ---------- ÍNDICE ---------- */
+  .indice{display:flex;flex-direction:column;gap:2px;font-family:var(--mono);font-size:11.5px;}
+  .indice a{color:var(--white);text-decoration:none;border-bottom:1px dotted transparent;}
+  .indice a:hover{color:var(--cyan);border-bottom-color:var(--border);}
+  .indice .sub{padding-left:18px;color:var(--cyan-dim);font-size:10.5px;}
+
+  /* ---------- CONTROL FIELD GRID (Sección 1) ---------- */
+  .ctrl-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;}
+  .ctrl-field{border:1px solid var(--border);background:var(--panel);padding:6px 10px;}
+  .ctrl-field label{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:1px;color:var(--cyan-dim);margin-bottom:4px;}
+  .ctrl-field input{width:100%;background:transparent;border:none;border-bottom:1px solid var(--border);color:var(--white);font-family:var(--sans);font-size:12px;padding:3px 0;outline:none;}
+  .ctrl-field input:focus{border-bottom-color:var(--cyan);}
+
+  /* ---------- CHECKLIST TABLE (Secciones 3,4,5,6) ---------- */
+  .chk-table{display:flex;flex-direction:column;gap:0;border:1px solid var(--border);}
+  .chk-row{display:grid;grid-template-columns:34px 1fr 128px 1fr;gap:10px;padding:8px 10px;border-bottom:1px solid var(--border);align-items:start;}
+  .chk-row:last-child{border-bottom:none;}
+  .chk-row:nth-child(odd){background:var(--panel);}
+  .chk-row:nth-child(even){background:var(--panel-2);}
+  .chk-row.head{background:var(--panel-2);font-family:var(--mono);font-size:9px;letter-spacing:1px;color:var(--cyan-dim);padding:6px 10px;}
+  .chk-no{font-family:var(--mono);font-size:11px;color:var(--cyan-dim);padding-top:2px;}
+  .chk-label{font-size:12px;color:var(--white);padding-top:2px;}
+  .chk-marc{display:flex;flex-direction:column;gap:3px;font-family:var(--mono);font-size:10px;color:var(--cyan-dim);}
+  .chk-marc label{display:flex;align-items:center;gap:5px;cursor:pointer;}
+  .chk-marc input[type=radio]{accent-color:var(--cyan);margin:0;}
+  .chk-obs textarea{width:100%;min-height:44px;background:var(--bg-navy);border:1px solid var(--border);color:var(--white);font-family:var(--sans);font-size:11px;padding:5px 7px;resize:vertical;outline:none;}
+  .chk-obs textarea::placeholder{color:var(--cyan-dim);opacity:.7;font-size:10px;}
+  .chk-obs textarea:focus{border-color:var(--cyan);}
+  .paquete-block{display:flex;flex-direction:column;gap:8px;}
+  .producto-esperado{font-family:var(--mono);font-size:10.5px;color:var(--yellow);border:1px dashed var(--yellow);padding:6px 10px;}
+
+  /* ---------- FREE TEXT TABLE (matrices, bitácoras) ---------- */
+  table.exec{width:100%;border-collapse:collapse;font-size:11.5px;}
+  table.exec th, table.exec td{border:1px solid var(--border);padding:6px 8px;text-align:left;vertical-align:top;}
+  table.exec th{background:var(--panel-2);font-family:var(--mono);font-size:9.5px;letter-spacing:1px;color:var(--cyan-dim);}
+  table.exec td{background:var(--panel);}
+  table.exec td textarea, table.exec td input{width:100%;background:transparent;border:none;color:var(--white);font-family:var(--sans);font-size:11px;outline:none;min-height:20px;}
+  table.exec td textarea{min-height:34px;resize:vertical;}
+
+  /* ---------- GLOSARIO ---------- */
+  .glosario-item{border:1px solid var(--border);background:var(--panel);padding:10px 14px;}
+  .glosario-item h4{margin:0 0 6px;font-size:12.5px;color:var(--cyan);letter-spacing:.5px;}
+  .glosario-item p{margin:0;font-size:11.5px;line-height:1.6;color:var(--white);}
+
+  /* ---------- BIBLIOGRAFÍA ---------- */
+  .biblio{display:flex;flex-direction:column;gap:6px;font-size:11px;line-height:1.5;color:var(--white);}
+  .biblio li{margin-left:16px;}
+
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .toolbar{position:fixed;top:14px;right:14px;z-index:90;display:flex;gap:8px;}
+  .toolbar button{font-family:var(--mono);font-size:10px;letter-spacing:1px;background:var(--panel-2);color:var(--cyan);border:1px solid var(--border);padding:8px 12px;cursor:pointer;border-radius:2px;}
+  .toolbar button:hover{border-color:var(--cyan);}
+
+  /* ---------- FREE-TEXT PAIR GRID (hipótesis, cierre) ---------- */
+  .free-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;}
+  .free-field{border:1px solid var(--border);background:var(--panel);padding:6px 10px;}
+  .free-field label{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:1px;color:var(--cyan-dim);margin-bottom:4px;}
+  .free-field textarea{width:100%;min-height:40px;background:transparent;border:none;border-bottom:1px solid var(--border);color:var(--white);font-family:var(--sans);font-size:12px;padding:3px 0;outline:none;resize:vertical;}
+  .free-field textarea:focus{border-bottom-color:var(--cyan);}
+
+  /* ---------- OPEN TABLE (bitácoras de renglones abiertos) ---------- */
+  .open-table-wrap{display:flex;flex-direction:column;gap:6px;}
+  .add-row-btn{align-self:flex-start;font-family:var(--mono);font-size:9.5px;letter-spacing:1px;background:var(--panel-2);color:var(--cyan);border:1px solid var(--border);padding:5px 10px;cursor:pointer;border-radius:2px;}
+  .add-row-btn:hover{border-color:var(--cyan);}
+
+  /* ---------- MATRIZ DE EXPOSICIÓN ---------- */
+  .matriz-row{display:grid;grid-template-columns:1fr 150px 1fr 1fr;gap:10px;padding:8px 10px;border-bottom:1px solid var(--border);align-items:start;}
+  .matriz-row:last-child{border-bottom:none;}
+  .matriz-row:nth-child(odd){background:var(--panel);}
+  .matriz-row:nth-child(even){background:var(--panel-2);}
+  .matriz-row.head{background:var(--panel-2);font-family:var(--mono);font-size:9px;letter-spacing:1px;color:var(--cyan-dim);padding:6px 10px;}
+  .matriz-factor{font-size:12px;color:var(--white);padding-top:2px;}
+  .matriz-nivel{display:flex;gap:6px;font-family:var(--mono);font-size:10px;color:var(--cyan-dim);}
+  .matriz-nivel label{display:flex;align-items:center;gap:3px;cursor:pointer;}
+  .matriz-nivel input[type=radio]{accent-color:var(--cyan);margin:0;}
+  .matriz-row textarea{width:100%;min-height:40px;background:var(--bg-navy);border:1px solid var(--border);color:var(--white);font-family:var(--sans);font-size:10.5px;padding:5px 7px;resize:vertical;outline:none;}
+  .matriz-row textarea:focus{border-color:var(--cyan);}
+
+  /* ---------- OPEN TABLE SCROLL WRAPPER ---------- */
+  .table-scroll{overflow-x:auto;}
+  .table-scroll table.exec{min-width:640px;}
+
+  /* ================================================================
+     MÓVIL — celular / pantalla angosta: todo se apila en una columna
+     y se agranda el área táctil, en vez de comprimir la cuadrícula.
+  ================================================================= */
+  @media (max-width: 640px){
+    body{padding:0 0 40px;gap:14px;}
+    .page{padding:14px 14px 60px;min-height:0;gap:12px;}
+    .toolbar{
+      position:sticky; top:0; right:auto; left:0;
+      width:100%; justify-content:center;
+      background:var(--bg-navy); border-bottom:1px solid var(--border);
+      padding:8px 0; margin-bottom:0; z-index:100;
+    }
+    .toolbar button{padding:10px 16px;font-size:10px;}
+
+    .masthead{grid-template-columns:1fr;text-align:center;gap:8px;padding-bottom:10px;}
+    .masthead .corte{text-align:center;}
+    .titles h1{font-size:15px;letter-spacing:1.5px;}
+    .titles h2{font-size:9.5px;}
+
+    .indice{font-size:11px;}
+
+    .ctrl-grid, .free-grid, .grid-2{grid-template-columns:1fr;}
+
+    /* Ítems de checklist: se apilan; el grupo Sí/No/Pend/N-A pasa a fila
+       horizontal con más espacio para el dedo, y observaciones ocupa
+       todo el ancho debajo. */
+    .chk-row{
+      grid-template-columns:1fr;
+      gap:8px;
+      padding:12px 10px;
+    }
+    .chk-row.head{display:none;} /* la cabecera de columnas no aporta en una sola columna */
+    .chk-no{display:inline;padding-top:0;}
+    .chk-no::after{content:". ";}
+    .chk-label{display:inline;font-size:13px;}
+    .chk-marc{flex-direction:row;flex-wrap:wrap;gap:10px 16px;font-size:11.5px;}
+    .chk-marc label{padding:4px 0;}
+    .chk-marc input[type=radio]{width:18px;height:18px;}
+    .chk-obs textarea{min-height:52px;font-size:13px;}
+
+    .matriz-row{grid-template-columns:1fr;gap:8px;padding:12px 10px;}
+    .matriz-row.head{display:none;}
+    .matriz-nivel{gap:14px;font-size:11.5px;}
+    .matriz-nivel input[type=radio]{width:18px;height:18px;}
+
+    .free-field textarea, .ctrl-field input{font-size:13px;}
+
+    table.exec td textarea, table.exec td input{font-size:13px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar no-print">
+  <button onclick="window.print()">IMPRIMIR / PDF</button>
+</div>
+
+<!-- =========================================================
+     PÁGINA 1 — PORTADA + ÍNDICE + SECCIÓN 1 (DATOS DE CONTROL)
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand">
+      <div class="argos-num">ARGOS-TURVEY</div>
+      <div class="sub">DIRECCIÓN GENERAL DE INVESTIGACIÓN<br>DE PERSONAS NO LOCALIZADAS</div>
+    </div>
+    <div class="titles">
+      <h1>BITÁCORA DE CAMPO</h1>
+      <h2>BÚSQUEDA DESDE LA VICTIMOLOGÍA FORENSE APLICADA A PERSONAS DESAPARECIDAS O NO LOCALIZADAS</h2>
+      <div class="motto">ARGOS: VER · BUSCAR · ENCONTRAR</div>
+    </div>
+    <div class="corte">
+      DOCUMENTO DE TRABAJO<br>
+      <b>Uso operativo</b><br>
+      Versión 1.0
+    </div>
+  </header>
+
+  <p class="body-text">
+    Instrumento operativo para agentes de investigación en campo, lectura de carpetas en
+    fiscalías, comisiones de búsqueda y comisiones de víctimas. Basado en la metodología de
+    victimología forense de Brent E. Turvey y en el modelo ENCUIST de perfilado indirecto de
+    personalidad (Halty, González y Sotoca, 2017).
+  </p>
+
+  <div class="section-head">ÍNDICE</div>
+  <div class="indice">
+    <a href="#s1">1. Datos de control del caso y comisión</a>
+    <a href="#s2">2. Instrucciones de llenado y regla operativa</a>
+    <a href="#s2-1" class="sub">2.1 Instructivo: observaciones, fuente y acción derivada</a>
+    <a href="#s3">3. Formato de recepción y riesgo inmediato</a>
+    <a href="#s4">4. Checklist de los 9 paquetes de victimología forense</a>
+    <a href="#s4-1" class="sub">4.1 Paquete personal</a>
+    <a href="#s4-2" class="sub">4.2 Paquete digital</a>
+    <a href="#s4-3" class="sub">4.3 Paquete residencial</a>
+    <a href="#s4-4" class="sub">4.4 Paquete relacional</a>
+    <a href="#s4-5" class="sub">4.5 Paquete laboral o escolar</a>
+    <a href="#s4-6" class="sub">4.6 Paquete financiero</a>
+    <a href="#s4-7" class="sub">4.7 Paquete médico</a>
+    <a href="#s4-8" class="sub">4.8 Paquete judicial</a>
+    <a href="#s4-9" class="sub">4.9 Paquete ideológico</a>
+    <a href="#s5">5. Reconstrucción temporal: últimas 24, 48 y 72 horas</a>
+    <a href="#s6">6. Punto probable de adquisición</a>
+    <a href="#s7">7. Matriz de exposición de victimología forense</a>
+    <a href="#s8">8. Bitácora de entrevistas y testigos</a>
+    <a href="#s9">9. Bitácora de campo, hallazgos y acciones derivadas</a>
+    <a href="#s10">10. Productos mínimos al cierre de la comisión</a>
+    <a href="#s11">11. Bibliografía y fuentes de consulta</a>
+    <a href="#s12">12. Glosario operativo de los nueve paquetes</a>
+  </div>
+
+  <div class="section-head" id="s1">1. DATOS DE CONTROL DEL CASO Y COMISIÓN</div>
+  <div class="subsection-head">1.1 Identificación del caso</div>
+  <div class="ctrl-grid" id="ctrl-caso"></div>
+
+  <div class="subsection-head">1.2 Datos de la comisión / equipo</div>
+  <div class="ctrl-grid" id="ctrl-comision"></div>
+
+  <footer class="footbar">
+    <span>ARGOS-TURVEY · Bitácora de Campo · Versión 1.0</span>
+    <span>PÁG. 1 / 11</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- =========================================================
+     PÁGINA 2 — SECCIONES 2 Y 3
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:16px;">ARGOS-TURVEY</div></div>
+    <div class="titles"><h2 style="font-size:12px;">INSTRUCCIONES Y RIESGO INMEDIATO</h2></div>
+    <div class="corte">PÁG. 2 / 11</div>
+  </header>
+
+  <div class="section-head" id="s2">2. INSTRUCCIONES DE LLENADO Y REGLA OPERATIVA</div>
+  <p class="body-text">
+    Esta bitácora se llena en campo, gabinete, fiscalía, comisión de búsqueda o comisión de
+    víctimas. Debe acompañar la lectura de carpeta, entrevistas, inspección del domicilio,
+    revisión de rutas, solicitud de cámaras, georreferenciación y búsqueda física.
+  </p>
+
+  <div class="subsection-head" id="s2-1">2.1 Instructivo para llenar "Observaciones / fuente / acción derivada"</div>
+  <p class="body-text">
+    Estos tres conceptos permiten que el agente no solo marque "sí/no", sino que deje
+    trazabilidad operativa del dato dentro de la bitácora de victimología forense.
+  </p>
+  <p class="body-text">
+    <b>Observaciones:</b> aquí se escribe qué se encontró, qué se dijo, qué se vio o qué falta por
+    verificar. Debe responder: qué dato concreto obtuve; qué detalle amplía el ítem; si hay
+    contradicciones; y qué quedó pendiente. Ejemplo: "El punto de última vista se ubica en una
+    calle secundaria sin tránsito constante. La familia refiere que la víctima no solía caminar
+    por esa ruta. Un vecino menciona haber visto un vehículo gris estacionado en el sitio dos días
+    antes".
+  </p>
+  <p class="body-text">
+    <b>Fuente:</b> aquí se coloca de dónde salió la información. Puede ser entrevista a familiar;
+    testigo presencial; policía primer respondiente; carpeta de investigación; video C5/C4; cámara
+    privada; registro telefónico; geolocalización; parte informativo; inspección física; comisión
+    de búsqueda; comisión de víctimas; Ministerio Público; perito; captura de pantalla; documento
+    bancario; o bitácora escolar/laboral.
+  </p>
+  <p class="body-text">
+    <b>Acción derivada:</b> aquí se escribe qué se hará con ese dato. La información debe
+    convertirse en acción operativa o analítica: solicitar video; entrevistar testigo; ampliar
+    entrevista; georreferenciar punto; verificar ruta; pedir sábana telefónica; revisar cámaras
+    C5; hacer recorrido físico; solicitar informe pericial; cruzar placas; ubicar vehículo; buscar
+    en hospitales; consultar separos; revisar SEMEFO; generar hipótesis; abrir línea de
+    investigación; o priorizar cuadrante de búsqueda.
+  </p>
+  <p class="body-text">
+    <b>Ejemplo completo de llenado:</b> Ítem: ¿El agresor conocía la zona? Observaciones: lugar de
+    última vista corresponde a ruta secundaria poco visible; la víctima no usaba normalmente ese
+    trayecto; existe referencia de vehículo gris estacionado previamente. Fuente: entrevista a
+    madre; entrevista a vecino; inspección física del punto; cámara privada pendiente de
+    solicitud. Acción derivada: solicitar video de negocios cercanos; ampliar entrevista al
+    vecino; georreferenciar punto como posible zona de vigilancia previa; revisar ruta de entrada
+    y salida del vehículo.
+  </p>
+  <div class="muted-note">
+    Lógica de llenado: observación = qué encontré; fuente = quién o qué lo sostiene; acción
+    derivada = qué hago con ese dato.<br><br>
+    Regla de oro: ningún dato de victimología forense debe quedar aislado. Todo dato debe
+    convertirse en una pregunta, una entrevista, una búsqueda, un punto en el mapa, una hipótesis
+    o una acción de campo.
+  </div>
+
+  <div class="section-head" id="s3">3. FORMATO DE RECEPCIÓN Y RIESGO INMEDIATO</div>
+  <div class="subsection-head">3.1 Riesgo inmediato y acciones urgentes</div>
+  <div class="chk-table" id="tbl-riesgo"></div>
+
+  <footer class="footbar">
+    <span>ARGOS-TURVEY · Bitácora de Campo · Versión 1.0</span>
+    <span>PÁG. 2 / 11</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- =========================================================
+     PÁGINA 3 — SECCIÓN 4: PAQUETES 4.1 PERSONAL Y 4.2 DIGITAL
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:16px;">ARGOS-TURVEY</div></div>
+    <div class="titles"><h2 style="font-size:12px;">PAQUETES DE VICTIMOLOGÍA FORENSE (I)</h2></div>
+    <div class="corte">PÁG. 3 / 11</div>
+  </header>
+
+  <div class="section-head" id="s4">4. CHECKLIST DE LOS 9 PAQUETES DE VICTIMOLOGÍA FORENSE</div>
+  <p class="body-text">
+    Los paquetes permiten reconstruir integralmente a la persona desaparecida. En cada apartado
+    debe indicarse si el dato fue verificado, cuál fue la fuente y qué acción genera: entrevista,
+    búsqueda, solicitud de video, georreferenciación, análisis telefónico, revisión financiera,
+    inspección o línea de investigación.
+  </p>
+
+  <div class="paquete-block" id="s4-1">
+    <div class="subsection-head">4.1 Paquete personal</div>
+    <div class="chk-table" id="tbl-paq-1"></div>
+    <div class="producto-esperado" id="prod-paq-1"></div>
+  </div>
+
+  <div class="paquete-block" id="s4-2">
+    <div class="subsection-head">4.2 Paquete digital</div>
+    <div class="chk-table" id="tbl-paq-2"></div>
+    <div class="producto-esperado" id="prod-paq-2"></div>
+  </div>
+
+  <footer class="footbar">
+    <span>ARGOS-TURVEY · Bitácora de Campo · Versión 1.0</span>
+    <span>PÁG. 3 / 11</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- =========================================================
+     PÁGINA 4 — SECCIÓN 4: PAQUETES 4.3 RESIDENCIAL Y 4.4 RELACIONAL
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:16px;">ARGOS-TURVEY</div></div>
+    <div class="titles"><h2 style="font-size:12px;">PAQUETES DE VICTIMOLOGÍA FORENSE (II)</h2></div>
+    <div class="corte">PÁG. 4 / 11</div>
+  </header>
+
+  <div class="paquete-block" id="s4-3">
+    <div class="subsection-head">4.3 Paquete residencial</div>
+    <div class="chk-table" id="tbl-paq-3"></div>
+    <div class="producto-esperado" id="prod-paq-3"></div>
+  </div>
+
+  <div class="paquete-block" id="s4-4">
+    <div class="subsection-head">4.4 Paquete relacional</div>
+    <div class="chk-table" id="tbl-paq-4"></div>
+    <div class="producto-esperado" id="prod-paq-4"></div>
+  </div>
+
+  <footer class="footbar">
+    <span>ARGOS-TURVEY · Bitácora de Campo · Versión 1.0</span>
+    <span>PÁG. 4 / 11</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- =========================================================
+     PÁGINA 5 — SECCIÓN 4: PAQUETES 4.5 LABORAL/ESCOLAR Y 4.6 FINANCIERO
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:16px;">ARGOS-TURVEY</div></div>
+    <div class="titles"><h2 style="font-size:12px;">PAQUETES DE VICTIMOLOGÍA FORENSE (III)</h2></div>
+    <div class="corte">PÁG. 5 / 11</div>
+  </header>
+
+  <div class="paquete-block" id="s4-5">
+    <div class="subsection-head">4.5 Paquete laboral o escolar</div>
+    <div class="chk-table" id="tbl-paq-5"></div>
+    <div class="producto-esperado" id="prod-paq-5"></div>
+  </div>
+
+  <div class="paquete-block" id="s4-6">
+    <div class="subsection-head">4.6 Paquete financiero</div>
+    <div class="chk-table" id="tbl-paq-6"></div>
+    <div class="producto-esperado" id="prod-paq-6"></div>
+  </div>
+
+  <footer class="footbar">
+    <span>ARGOS-TURVEY · Bitácora de Campo · Versión 1.0</span>
+    <span>PÁG. 5 / 11</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- =========================================================
+     PÁGINA 6 — SECCIÓN 4: PAQUETES 4.7 MÉDICO, 4.8 JUDICIAL, 4.9 IDEOLÓGICO
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:16px;">ARGOS-TURVEY</div></div>
+    <div class="titles"><h2 style="font-size:12px;">PAQUETES DE VICTIMOLOGÍA FORENSE (IV)</h2></div>
+    <div class="corte">PÁG. 6 / 11</div>
+  </header>
+
+  <div class="paquete-block" id="s4-7">
+    <div class="subsection-head">4.7 Paquete médico</div>
+    <div class="chk-table" id="tbl-paq-7"></div>
+    <div class="producto-esperado" id="prod-paq-7"></div>
+  </div>
+
+  <div class="paquete-block" id="s4-8">
+    <div class="subsection-head">4.8 Paquete judicial</div>
+    <div class="chk-table" id="tbl-paq-8"></div>
+    <div class="producto-esperado" id="prod-paq-8"></div>
+  </div>
+
+  <div class="paquete-block" id="s4-9">
+    <div class="subsection-head">4.9 Paquete ideológico</div>
+    <div class="chk-table" id="tbl-paq-9"></div>
+    <div class="producto-esperado" id="prod-paq-9"></div>
+  </div>
+
+  <footer class="footbar">
+    <span>ARGOS-TURVEY · Bitácora de Campo · Versión 1.0</span>
+    <span>PÁG. 6 / 11</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- =========================================================
+     PÁGINA 7 — SECCIÓN 5: RECONSTRUCCIÓN TEMPORAL 24/48/72H
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:16px;">ARGOS-TURVEY</div></div>
+    <div class="titles"><h2 style="font-size:12px;">RECONSTRUCCIÓN TEMPORAL</h2></div>
+    <div class="corte">PÁG. 7 / 11</div>
+  </header>
+
+  <div class="section-head" id="s5">5. RECONSTRUCCIÓN TEMPORAL: ÚLTIMAS 24, 48 Y 72 HORAS</div>
+  <p class="body-text">
+    La reconstrucción temporal permite ordenar actividades, traslados, comunicaciones, cambios de
+    conducta, rutas y puntos de posible adquisición. Las últimas 24 horas son prioritarias; las 48
+    y 72 horas permiten detectar preparación, vigilancia previa, amenazas, citas, cambios de
+    rutina y rutas preparatorias.
+  </p>
+
+  <div class="paquete-block" id="s5-1">
+    <div class="subsection-head">5.1 Ventana de últimas 24 horas</div>
+    <p class="muted-note">Objetivo: reconstruir cronológicamente la ventana previa a la
+      desaparición y detectar cambios de rutina, contactos relevantes, puntos de riesgo, cámaras,
+      testigos y evidencia.</p>
+    <div class="open-table-wrap" id="tbl-temporal-24"></div>
+    <div class="chk-table" id="tbl-chk-24"></div>
+  </div>
+
+  <div class="paquete-block" id="s5-2">
+    <div class="subsection-head">5.2 Ventana de últimas 48 horas</div>
+    <p class="muted-note">Objetivo: reconstruir cronológicamente la ventana previa a la
+      desaparición y detectar cambios de rutina, contactos relevantes, puntos de riesgo, cámaras,
+      testigos y evidencia.</p>
+    <div class="open-table-wrap" id="tbl-temporal-48"></div>
+    <div class="chk-table" id="tbl-chk-48"></div>
+  </div>
+
+  <div class="paquete-block" id="s5-3">
+    <div class="subsection-head">5.3 Ventana de últimas 72 horas</div>
+    <p class="muted-note">Objetivo: reconstruir cronológicamente la ventana previa a la
+      desaparición y detectar cambios de rutina, contactos relevantes, puntos de riesgo, cámaras,
+      testigos y evidencia.</p>
+    <div class="open-table-wrap" id="tbl-temporal-72"></div>
+    <div class="chk-table" id="tbl-chk-72"></div>
+  </div>
+
+  <footer class="footbar">
+    <span>ARGOS-TURVEY · Bitácora de Campo · Versión 1.0</span>
+    <span>PÁG. 7 / 11</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- =========================================================
+     PÁGINA 8 — SECCIÓN 6: PUNTO PROBABLE DE ADQUISICIÓN
+     SECCIÓN 7: MATRIZ DE EXPOSICIÓN DE VICTIMOLOGÍA FORENSE
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:16px;">ARGOS-TURVEY</div></div>
+    <div class="titles"><h2 style="font-size:12px;">ADQUISICIÓN Y EXPOSICIÓN VICTIMOLÓGICA</h2></div>
+    <div class="corte">PÁG. 8 / 11</div>
+  </header>
+
+  <div class="section-head" id="s6">6. PUNTO PROBABLE DE ADQUISICIÓN</div>
+  <div class="subsection-head">6.1 Checklist de adquisición</div>
+  <div class="chk-table" id="tbl-adquisicion"></div>
+
+  <div class="subsection-head">6.2 Hipótesis de adquisición</div>
+  <div class="free-grid" id="grid-hipotesis"></div>
+
+  <div class="section-head" id="s7">7. MATRIZ DE EXPOSICIÓN DE VICTIMOLOGÍA FORENSE</div>
+  <div class="muted-note">
+    La matriz no debe usarse para responsabilizar a la víctima. Su función es identificar
+    exposición, vulnerabilidad, oportunidad criminal y necesidades urgentes de búsqueda.
+  </div>
+  <div class="chk-table" id="tbl-matriz-exposicion"></div>
+
+  <footer class="footbar">
+    <span>ARGOS-TURVEY · Bitácora de Campo · Versión 1.0</span>
+    <span>PÁG. 8 / 11</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- =========================================================
+     PÁGINA 9 — SECCIÓN 8: ENTREVISTAS · SECCIÓN 9: BITÁCORA DE CAMPO
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:16px;">ARGOS-TURVEY</div></div>
+    <div class="titles"><h2 style="font-size:12px;">ENTREVISTAS Y BITÁCORA DE CAMPO</h2></div>
+    <div class="corte">PÁG. 9 / 11</div>
+  </header>
+
+  <div class="section-head" id="s8">8. BITÁCORA DE ENTREVISTAS Y TESTIGOS</div>
+  <p class="body-text">
+    Registrar toda entrevista realizada en campo, fiscalía, comisión de búsqueda, comisión de
+    víctimas o lectura de carpeta. Incluir fuente, nivel de confiabilidad y acción derivada.
+  </p>
+  <div class="open-table-wrap" id="tbl-entrevistas"></div>
+
+  <div class="section-head" id="s9">9. BITÁCORA DE CAMPO, HALLAZGOS Y ACCIONES DERIVADAS</div>
+
+  <div class="subsection-head" id="s9-1">9.1 Lectura de carpeta en fiscalía</div>
+  <div class="open-table-wrap" id="tbl-campo-1"></div>
+
+  <div class="subsection-head" id="s9-2">9.2 Trabajo con comisión de búsqueda</div>
+  <div class="open-table-wrap" id="tbl-campo-2"></div>
+
+  <div class="subsection-head" id="s9-3">9.3 Trabajo con comisión de víctimas</div>
+  <div class="open-table-wrap" id="tbl-campo-3"></div>
+
+  <div class="subsection-head" id="s9-4">9.4 Despliegue territorial y búsqueda física</div>
+  <div class="open-table-wrap" id="tbl-campo-4"></div>
+
+  <footer class="footbar">
+    <span>ARGOS-TURVEY · Bitácora de Campo · Versión 1.0</span>
+    <span>PÁG. 9 / 11</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- =========================================================
+     PÁGINA 10 — SECCIÓN 10: PRODUCTOS DE CIERRE · SECCIÓN 11: BIBLIOGRAFÍA
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:16px;">ARGOS-TURVEY</div></div>
+    <div class="titles"><h2 style="font-size:12px;">CIERRE DE LA COMISIÓN Y FUENTES</h2></div>
+    <div class="corte">PÁG. 10 / 11</div>
+  </header>
+
+  <div class="section-head" id="s10">10. PRODUCTOS MÍNIMOS AL CIERRE DE LA COMISIÓN</div>
+  <div class="subsection-head">10.1 Control de productos</div>
+  <div class="chk-table" id="tbl-productos"></div>
+
+  <div class="subsection-head">10.2 Cierre y validación</div>
+  <div class="free-grid" id="grid-cierre"></div>
+
+  <div class="section-head" id="s11">11. BIBLIOGRAFÍA Y FUENTES DE CONSULTA</div>
+  <ul class="biblio">
+    <li>Turvey, B. E. (2022). <i>Criminal Profiling: An Introduction to Behavioral Evidence Analysis</i> (5th ed.). Academic Press / Elsevier.</li>
+    <li>Turvey, B. E. (2014). <i>Forensic Victimology: Examining Violent Crime Victims in Investigative and Legal Contexts</i> (2nd ed.). Academic Press / Elsevier.</li>
+    <li>Petherick, W., Turvey, B. E., &amp; Ferguson, C. E. (2010). <i>Forensic Criminology</i>. Academic Press.</li>
+    <li>Rossmo, D. K. (2000). <i>Geographic Profiling</i>. CRC Press.</li>
+    <li>Cohen, L. E., &amp; Felson, M. (1979). Social change and crime rate trends: A routine activity approach. <i>American Sociological Review</i>, 44(4), 588-608.</li>
+    <li>Comisión Nacional de Búsqueda. <i>Protocolo Homologado para la Búsqueda de Personas Desaparecidas y No Localizadas</i>. Diario Oficial de la Federación, 6 de octubre de 2020.</li>
+    <li>Sistema Nacional de Búsqueda de Personas. <i>Protocolo Adicional para la Búsqueda de Niñas, Niños y Adolescentes</i>. Diario Oficial de la Federación, 15 de julio de 2021.</li>
+    <li>Ley General en Materia de Desaparición Forzada de Personas, Desaparición Cometida por Particulares y del Sistema Nacional de Búsqueda de Personas.</li>
+    <li>Ley General de Víctimas.</li>
+    <li>Código Nacional de Procedimientos Penales.</li>
+    <li>Fiscalía General de la República. <i>Protocolo Homologado de Investigación del Delito de Feminicidio</i>.</li>
+    <li>Corte Interamericana de Derechos Humanos. Caso González y otras ("Campo Algodonero") vs. México. Sentencia de 16 de noviembre de 2009.</li>
+  </ul>
+  <div class="muted-note">
+    Nota metodológica: esta bitácora es un instrumento de apoyo operativo. Debe aplicarse conforme
+    a la legislación vigente, protocolos homologados, perspectiva de género, enfoque diferencial,
+    preservación de indicios, cadena de custodia, protección de datos personales y derechos de las
+    víctimas.
+  </div>
+
+  <footer class="footbar">
+    <span>ARGOS-TURVEY · Bitácora de Campo · Versión 1.0</span>
+    <span>PÁG. 10 / 11</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- =========================================================
+     PÁGINA 11 — SECCIÓN 12: GLOSARIO OPERATIVO DE LOS NUEVE PAQUETES
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:16px;">ARGOS-TURVEY</div></div>
+    <div class="titles"><h2 style="font-size:12px;">GLOSARIO OPERATIVO</h2></div>
+    <div class="corte">PÁG. 11 / 11</div>
+  </header>
+
+  <div class="section-head" id="s12">12. GLOSARIO OPERATIVO DE LOS NUEVE PAQUETES</div>
+  <p class="body-text">
+    El siguiente glosario explica el sentido operativo de cada ítem. Debe orientar al agente sobre
+    qué buscar, cómo preguntarlo y por qué puede resultar relevante para la búsqueda. No sustituye
+    la entrevista ni el análisis: ayuda a convertir cada dato en observación, fuente y acción
+    derivada.
+  </p>
+
+  <div class="glosario-item">
+    <h4>Paquete 1. Personal</h4>
+    <p><b>Nombre completo:</b> registrar nombre legal completo, alias conocidos y forma habitual en que la persona era identificada. · <b>Edad:</b> consignar edad cumplida o aproximada al momento de la desaparición. · <b>Sexo:</b> anotar sexo y, en su caso, identidad de género relevante para la búsqueda. · <b>Estatura:</b> indicar talla en metros o centímetros; útil para filtros de video y búsqueda en campo. · <b>Peso aproximado:</b> rango aproximado de peso para fines de identificación. · <b>Complexión:</b> delgada, media, robusta, atlética u otra categoría útil. · <b>Color y largo de cabello:</b> describir color natural o aparente y longitud. · <b>Cabello teñido / corte reciente:</b> indicar cambios recientes de imagen que puedan alterar la identificación. · <b>Color de ojos:</b> color visible habitual. · <b>Uso de lentes o pupilentes:</b> si usa lentes graduados, oscuros o lentes de contacto. · <b>Señas particulares:</b> marcas notorias, lunares, malformaciones, amputaciones u otras singularidades. · <b>Tatuajes / cicatrices / perforaciones:</b> describir ubicación, forma, color y contenido. · <b>Ropa al momento de la desaparición:</b> prendas superiores e inferiores, colores, marcas y estado. · <b>Calzado:</b> tipo, color, marca, talla aproximada y desgaste. · <b>Joyería / accesorios:</b> relojes, anillos, pulseras, cadenas, aretes, sombreros u otros. · <b>Mochila / bolsa / cartera / portafolio:</b> indicar tipo, color y contenido aparente. · <b>Objetos personales:</b> documentos, credenciales, llaves, audífonos, cargadores u objetos de uso constante. · <b>Medicamentos que portaba:</b> fármacos o recetas que suelen acompañar a la persona. · <b>Teléfono celular:</b> modelo, color, IMEI, funda y línea utilizada. · <b>Llaves:</b> llaves de casa, vehículo, negocio u otras. · <b>Dinero / tarjetas:</b> monto aproximado y medios de pago que llevaba. · <b>Forma habitual de vestir:</b> estilo recurrente: uniforme, casual, formal, deportivo, táctico u otro. · <b>Higiene y arreglo personal:</b> nivel de cuidado personal y presentación ordinaria. · <b>Hobbies / habilidades:</b> aficiones, deportes, oficios y destrezas útiles para inferir lugares o vínculos. · <b>Actividades diarias / compromisos:</b> rutinas, citas y compromisos importantes inmediatamente previos.</p>
+  </div>
+
+  <div class="glosario-item">
+    <h4>Paquete 2. Digital</h4>
+    <p><b>Número celular principal:</b> número de uso cotidiano de la persona desaparecida. · <b>Otros números:</b> líneas secundarias o equipos adicionales. · <b>Compañía telefónica:</b> operadora para solicitud de conservación de datos o registros. · <b>Última llamada realizada:</b> hora, duración, destino y contexto de la comunicación. · <b>Última llamada recibida:</b> hora, origen y relevancia investigativa. · <b>Último mensaje enviado:</b> aplicación utilizada, hora y contenido relevante. · <b>Último mensaje recibido:</b> identificar remitente, tono y posible cita o captación. · <b>WhatsApp / Telegram / Messenger:</b> actividad reciente, chats, grupos y ubicaciones compartidas. · <b>Instagram / Facebook / TikTok / X:</b> publicaciones, mensajes directos, historias, interacciones y riesgos. · <b>Correos electrónicos:</b> cuentas activas y mensajes relevantes. · <b>Aplicaciones de citas:</b> perfiles, contactos, encuentros acordados y chats. · <b>Aplicaciones de transporte:</b> viajes solicitados, rutas, placas, conductores y pagos. · <b>Aplicaciones bancarias:</b> ingresos, retiros, transferencias y autenticaciones. · <b>Historial de GPS / ubicaciones:</b> rutas, puntos frecuentes y última geolocalización conocida. · <b>Fotos / videos recientes:</b> material útil para establecer ropa, compañía y lugares. · <b>Capturas de pantalla:</b> pueden contener amenazas, citas, pagos, placas o conflictos. · <b>Contactos frecuentes / bloqueados / eliminados:</b> identificar patrones, ocultamientos, insistencias o conflictos. · <b>Amenazas digitales / ciberacoso / extorsión:</b> registrar incidentes y evidencia conservable. · <b>Mensajes de pareja / expareja:</b> detectar control, violencia, vigilancia o citación. · <b>Mensajes laborales / escolares:</b> citas, sanciones, conflictos o cambios de rutina. · <b>Historial de navegación:</b> consultas útiles para inferir intención, miedo, cita o trayecto. · <b>Dispositivos vinculados / nube:</b> equipos con sincronización que permitan recuperar información.</p>
+  </div>
+
+  <div class="glosario-item">
+    <h4>Paquete 3. Residencial</h4>
+    <p><b>Domicilio completo:</b> ubicación exacta y referencias para inspección. · <b>Tipo de vivienda:</b> casa, departamento, cuarto rentado, albergue u otro. · <b>Personas que habitan el domicilio:</b> identificar convivientes, accesos y posibles testigos. · <b>Condición de la habitación:</b> orden o desorden significativo en el entorno íntimo. · <b>Cama tendida o desordenada:</b> puede orientar sobre la última actividad. · <b>Ropa, maletas o documentos faltantes:</b> valorar salida planeada, abrupta o simulada. · <b>Medicamentos faltantes:</b> inferir nivel de preparación o riesgo médico. · <b>Celular / cargador / llaves / cartera presentes o ausentes:</b> determinar si salió de manera voluntaria, forzada o inducida. · <b>Signos de violencia:</b> lucha, arrastre, manchas, objetos fuera de lugar. · <b>Puertas o ventanas forzadas:</b> ingreso o salida violenta. · <b>Manchas hemáticas / objetos rotos:</b> indicadores críticos de agresión o traslado. · <b>Mensajes escritos / diarios / cartas:</b> elementos de contexto emocional o amenazas. · <b>Libros / música / fotografías / objetos religiosos:</b> ayudan al contexto personal, simbólico e ideológico. · <b>Objetos sexuales o material explícito:</b> solo registrar si aporta contexto de victimología forense y con reserva. · <b>Correspondencia personal:</b> recibos, citatorios, cobranza, amenazas o comunicaciones. · <b>Cámaras propias o de vecinos:</b> fuentes de imagen a preservar de inmediato. · <b>Interfon / registro de visitas:</b> control de entradas y salidas. · <b>Vehículo en domicilio y su condición:</b> verificar uso reciente, combustible, daños o rastros. · <b>Llamadas desde teléfono fijo / reportes 911:</b> antecedentes de incidentes o solicitudes de auxilio. · <b>Antecedentes de violencia en el domicilio:</b> valorar riesgo interno y repetición.</p>
+  </div>
+
+  <div class="glosario-item">
+    <h4>Paquete 4. Relacional</h4>
+    <p><b>Pareja actual / exparejas / cónyuge:</b> identificar vínculos afectivos presentes o pasados. · <b>Relaciones ocultas:</b> posibles fuentes de conflicto o citas secretas. · <b>Conflictos sentimentales recientes:</b> separaciones, celos, amenazas o control. · <b>Violencia familiar:</b> hechos previos, patrones y posibles medidas de protección. · <b>Amenazas:</b> directas o indirectas, presenciales o digitales. · <b>Custodia de hijos:</b> litigios o disputas sensibles. · <b>Familia nuclear y extensa:</b> apoyos, tensiones y personas de acceso. · <b>Integrantes del hogar:</b> quienes tienen contacto cotidiano. · <b>Amigos cercanos y recientes:</b> diferenciar amistades históricas y nuevos contactos. · <b>Compañeros de escuela o trabajo:</b> vínculos funcionales y cotidianos. · <b>Vecinos:</b> observadores o actores relevantes. · <b>Personas con acceso cotidiano:</b> choferes, jefes, entrenadores, docentes, clientes, etc. · <b>Deuda emocional o económica:</b> dependencias, resentimientos o conflictos por dinero. · <b>Personas que la víctima temía o evitaba:</b> prioridad de entrevista e hipótesis. · <b>Personas que insistían en verla:</b> riesgo de acecho, control o captación. · <b>Terapia de pareja / denuncias / órdenes de protección:</b> documentos útiles para contexto de violencia. · <b>Testigos de conflictos:</b> quienes pueden corroborar amenazas o patrones. · <b>Última persona que la vio o habló con ella:</b> núcleo de la reconstrucción inmediata. · <b>Quien reportó la desaparición y quien tardó en hacerlo:</b> valorar tiempos, inconsistencias u omisiones. · <b>Persona con conducta evasiva:</b> marcar y documentar por separado.</p>
+  </div>
+
+  <div class="glosario-item">
+    <h4>Paquete 5. Laboral o escolar</h4>
+    <p><b>Nivel educativo / escuela / carrera:</b> contexto académico de la persona. · <b>Horario escolar:</b> ventanas de desplazamiento y ausencia. · <b>Ruta a la escuela:</b> trayecto y medios de transporte. · <b>Compañeros cercanos / maestros / administrativos:</b> fuentes de entrevista y acceso. · <b>Conflictos escolares / acoso escolar o sexual:</b> indicadores de riesgo y posibles personas de interés. · <b>Ocupación / lugar de trabajo / puesto:</b> contexto laboral y responsabilidades. · <b>Jefe inmediato:</b> interlocutor clave para registros y horarios. · <b>Horario laboral:</b> determina tiempos de exposición y desaparición. · <b>Cambios recientes de turno:</b> alteraciones de rutina que abren nuevas hipótesis. · <b>Conflictos laborales / despido / deudas:</b> motivos de represalia, presión o fuga. · <b>Acoso laboral o sexual:</b> registrar antecedentes y testigos. · <b>Compañeros cercanos:</b> personas de contacto cotidiano. · <b>Vehículo / teléfono / computadora laboral:</b> fuentes de rastreo y evidencia. · <b>Correos laborales:</b> mensajes, instrucciones o amenazas. · <b>GPS empresarial / bitácoras de entrada y salida:</b> cronología objetiva. · <b>Cámaras del trabajo o escuela:</b> preservación inmediata. · <b>Última asistencia registrada:</b> última prueba documental de presencia. · <b>Persona que notó la ausencia:</b> primer alertante funcional.</p>
+  </div>
+
+  <div class="glosario-item">
+    <h4>Paquete 6. Financiero</h4>
+    <p><b>Cartera / efectivo / tarjetas:</b> medios de pago y si estaban con la persona. · <b>Último retiro / compra / transferencia:</b> cronología financiera crítica. · <b>Deudas / préstamos / aplicaciones de crédito:</b> presión económica y riesgo. · <b>Montadeudas:</b> verificar préstamos extorsivos. · <b>Pagos recientes:</b> rentas, nómina, colegiaturas, servicios, deudas u otros. · <b>Cuentas bancarias / digitales:</b> instituciones y productos activos. · <b>Propiedades / vehículos / seguros:</b> patrimonio y posibles móviles. · <b>Beneficiarios de seguros:</b> relevantes cuando exista interés económico. · <b>Fondos de retiro / criptomonedas:</b> otros activos o cuentas. · <b>Préstamos informales:</b> deudas no bancarias, cobradores o amenazas. · <b>Amenazas por deuda / extorsión / cobro de piso:</b> registrar fuente, monto, fecha y evidencia. · <b>Actividad financiera inusual:</b> operaciones atípicas previas o posteriores. · <b>Uso posterior de tarjeta:</b> puede orientar a retención, robo o simulación. · <b>Retiro o compras posteriores a la desaparición:</b> indicio fuerte para georreferencia y videovigilancia.</p>
+  </div>
+
+  <div class="glosario-item">
+    <h4>Paquete 7. Médico</h4>
+    <p><b>Estado de intoxicación al desaparecer:</b> si estaba bajo efecto de alcohol o drogas. · <b>Consumo de alcohol o drogas:</b> patrones de consumo y contexto del último día. · <b>Enfermedades físicas:</b> condiciones crónicas o agudas relevantes. · <b>Enfermedades mentales:</b> diagnósticos, tratamiento y riesgo clínico. · <b>Discapacidad:</b> motricidad, comunicación, visión, audición u otra. · <b>Medicamentos actuales y faltantes:</b> dependencia y urgencia de localización. · <b>Tratamientos activos:</b> quimioterapia, diálisis, rehabilitación, etc. · <b>Médicos tratantes / psicólogos / psiquiatras:</b> fuentes de información y riesgo clínico. · <b>Citas médicas recientes o próximas:</b> puntos de contacto y rutina. · <b>Adicciones:</b> dependencia y vulnerabilidad. · <b>Conductas obsesivas / riesgo suicida:</b> factores de vulnerabilidad inmediata. · <b>Crisis emocional reciente:</b> duelo, ruptura, pérdida económica, diagnóstico, etc. · <b>Embarazo:</b> factor de riesgo específico. · <b>Lesiones u hospitalizaciones previas:</b> antecedentes relevantes. · <b>Vulnerabilidad por edad o salud:</b> adultos mayores, niñas, niños, adolescentes, etc. · <b>Necesidad urgente de atención:</b> justifica acciones de búsqueda prioritarias.</p>
+  </div>
+
+  <div class="glosario-item">
+    <h4>Paquete 8. Judicial</h4>
+    <p><b>Denuncias previas:</b> carpetas relacionadas como víctima, testigo o imputado. · <b>Carpetas de investigación activas:</b> número, delito, fiscalía y estado procesal. · <b>Órdenes de protección:</b> vigencia y autoridad emisora. · <b>Arrestos previos / mandamientos judiciales:</b> antecedentes con impacto de victimología forense. · <b>Historial como víctima:</b> patrones de violencia o riesgo. · <b>Historial como testigo:</b> posible represalia. · <b>Historial como imputado:</b> conflictos o entornos delictivos. · <b>Demandas civiles / juicios familiares o patrimoniales:</b> disputas activas. · <b>Testimonios previos / declaraciones ministeriales:</b> participación procesal relevante. · <b>Amenazas por declarar:</b> riesgo directo. · <b>Participación en proceso penal:</b> audiencias, señalamientos, colaboración. · <b>Actividad criminal de la víctima durante el hecho:</b> no prejuzgar; solo anotar lo verificable. · <b>Actividad criminal no relacionada:</b> sirve para contexto y líneas de investigación. · <b>Registros en otros estados:</b> ampliar consulta interinstitucional. · <b>Conflictos con grupos criminales o autoridades:</b> riesgo de represalia, privación o desaparición. · <b>Antecedentes de violencia de género / medidas cautelares:</b> contexto y urgencia.</p>
+  </div>
+
+  <div class="glosario-item">
+    <h4>Paquete 9. Ideológico</h4>
+    <p><b>Religión / grupos religiosos:</b> creencias, prácticas y pertenencias relevantes. · <b>Grupos políticos:</b> afiliación formal o simpatía activa. · <b>Activismo social o digital:</b> causas defendidas y nivel de exposición. · <b>Participación en marchas:</b> eventos, fechas y contraparte. · <b>Defensa de derechos humanos:</b> actividad pública o comunitaria. · <b>Defensa ambiental o animal:</b> causas con posible conflicto local. · <b>Colectivos / sindicatos / grupos estudiantiles / feministas:</b> pertenencia, rol y exposición pública. · <b>Grupos de oposición:</b> identificar actores con fricción. · <b>Conflictos ideológicos:</b> debates, amenazas, hostigamiento o señalamientos. · <b>Amenazas por publicaciones:</b> capturas, enlaces y testigos. · <b>Discursos de odio recibidos:</b> registrar plataforma y origen si es posible. · <b>Pertenencia u oposición a grupos radicales:</b> solo con base verificable. · <b>Publicaciones polémicas:</b> contenido que pudo detonar represalias. · <b>Denuncias públicas / exposición mediática:</b> apariciones en medios o redes. · <b>Actividad contra autoridades o grupos criminales:</b> contexto de riesgo por denuncia o señalamiento. · <b>Riesgo por pertenencia o discurso:</b> valoración final del paquete ideológico.</p>
+  </div>
+
+  <footer class="footbar">
+    <span>ARGOS-TURVEY · Bitácora de Campo · Versión 1.0</span>
+    <span>PÁG. 11 / 11</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<script>
+const CTRL_CASO = [
+  "Nombre de la persona","Sexo","Edad","Tipo de caso",
+  "Carpeta / expediente","Fiscalía / autoridad","Entidad / municipio",
+  "Fecha de inicio","Fecha desaparición","Hora desaparición","Fecha de reporte",
+  "Nivel de riesgo inicial"
+];
+const CTRL_COMISION = [
+  "Agente responsable","Equipo de búsqueda","Cargo","Vehículo / placas",
+  "Unidad / área","Lugar de comisión","Teléfono institucional",
+  "Fecha / hora de salida","Analista asignado","Fecha / hora de cierre",
+  "Entrevistador","Mando que valida"
+];
+
+const RIESGO_INMEDIATO = [
+  "¿La persona es niña, niño, adolescente, adulta mayor o persona con discapacidad?",
+  "¿Existe riesgo médico urgente, medicación indispensable o condición clínica grave?",
+  "¿Hay violencia familiar, de pareja, amenazas, acoso o control previo?",
+  "¿Hay indicios de privación de libertad, engaño, interceptación o captación?",
+  "¿Existe actividad criminal, extorsión, deuda o amenaza de grupo delictivo?",
+  "¿La última ubicación tiene cámaras, testigos o puntos de búsqueda inmediatos?",
+  "¿Se preservó domicilio, vehículo, celular, computadora, redes y evidencia digital?",
+  "¿Se activaron hospitales, separos, SEMEFO, C5/C4, transporte y búsquedas urgentes?"
+];
+
+function renderCtrlGrid(containerId, fields){
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  el.innerHTML = fields.map(function(f, i){
+    return '<div class="ctrl-field"><label>' + f + '</label><input type="text" data-field="' + f + '"></div>';
+  }).join("");
+}
+
+let CHK_UID = 0;
+function renderChecklist(containerId, items, opts){
+  opts = opts || {};
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  let html = '<div class="chk-row head"><span>NO.</span><span>DATO / VERIFICACIÓN</span><span>MARCACIÓN</span><span>OBSERVACIONES / FUENTE / ACCIÓN DERIVADA</span></div>';
+  items.forEach(function(item, idx){
+    const name = "chk-" + (CHK_UID++);
+    html += '<div class="chk-row">' +
+      '<div class="chk-no">' + (idx + 1) + '</div>' +
+      '<div class="chk-label">' + item + '</div>' +
+      '<div class="chk-marc">' +
+        '<label><input type="radio" name="' + name + '" value="si"> Sí</label>' +
+        '<label><input type="radio" name="' + name + '" value="no"> No</label>' +
+        '<label><input type="radio" name="' + name + '" value="pend"> Pend.</label>' +
+        '<label><input type="radio" name="' + name + '" value="na"> N/A</label>' +
+      '</div>' +
+      '<div class="chk-obs"><textarea placeholder="Observaciones / fuente / acción derivada"></textarea></div>' +
+    '</div>';
+  });
+  el.innerHTML = html;
+}
+
+renderCtrlGrid("ctrl-caso", CTRL_CASO);
+renderCtrlGrid("ctrl-comision", CTRL_COMISION);
+renderChecklist("tbl-riesgo", RIESGO_INMEDIATO);
+
+/* ===================== SECCIÓN 4 — 9 PAQUETES ===================== */
+const PAQUETES = [
+  { n:1, items:[
+      "Nombre completo","Edad","Sexo","Estatura","Peso aproximado","Complexión",
+      "Color y largo de cabello","Cabello teñido, extensiones o corte reciente","Color de ojos",
+      "Uso de lentes o pupilentes","Señas particulares","Tatuajes, cicatrices o perforaciones",
+      "Ropa usada al momento de la desaparición","Calzado","Joyería",
+      "Mochila, bolsa, cartera, maleta o portafolio","Objetos personales",
+      "Medicamentos que portaba","Teléfono celular","Llaves","Dinero en efectivo","Tarjetas",
+      "Forma habitual de vestir","Higiene y arreglo personal","Fumador o no fumador","Hobbies",
+      "Habilidades","Actividades diarias","Compromisos recientes","Eventos próximos"
+    ], producto:"Producto esperado: ficha personal de reconocimiento y vulnerabilidad inicial." },
+  { n:2, items:[
+      "Número celular principal","Otros números","Compañía telefónica","Última llamada realizada",
+      "Última llamada recibida","Último mensaje enviado","Último mensaje recibido","WhatsApp",
+      "Telegram","Messenger","Instagram","Facebook","TikTok","X / Twitter",
+      "Correos electrónicos","Aplicaciones de citas","Aplicaciones de transporte",
+      "Aplicaciones bancarias","Historial de GPS","Ubicaciones compartidas","Fotos recientes",
+      "Videos recientes","Capturas de pantalla","Contactos frecuentes","Contactos bloqueados",
+      "Contactos eliminados","Amenazas digitales","Extorsiones","Ciberacoso",
+      "Mensajes de pareja o expareja","Mensajes laborales","Mensajes escolares",
+      "Historial de navegación","Dispositivos vinculados","Laptop o computadora","Tableta",
+      "Reloj inteligente","GPS de vehículo","Nube digital"
+    ], producto:"Producto esperado: mapa de comunicaciones, última actividad digital y posibles puntos de captación." },
+  { n:3, items:[
+      "Domicilio completo","Tipo de vivienda","Personas que habitan el domicilio",
+      "Condición de la habitación","Cama tendida o desordenada","Ropa faltante",
+      "Maletas faltantes","Documentos faltantes","Medicamentos faltantes",
+      "Cargador de celular presente o ausente","Llaves presentes o ausentes",
+      "Cartera presente o ausente","Signos de violencia","Puertas forzadas","Ventanas forzadas",
+      "Manchas hemáticas","Objetos rotos","Mensajes escritos","Diarios","Cartas","Libros",
+      "Música","Fotografías","Objetos religiosos","Objetos sexuales o material explícito",
+      "Correspondencia personal","Cámara de seguridad propia","Cámaras de vecinos","Interfon",
+      "Registro de visitas","Vehículo personal en domicilio","Condición del vehículo",
+      "Llamadas desde teléfono fijo","Reportes previos al 911",
+      "Antecedentes de violencia en el domicilio"
+    ], producto:"Producto esperado: informe de entorno residencial y señales de salida voluntaria, forzada o inducida." },
+  { n:4, items:[
+      "Pareja actual","Exparejas","Cónyuge","Relaciones ocultas",
+      "Conflictos sentimentales recientes","Celos","Violencia familiar","Amenazas",
+      "Separación reciente","Custodia de hijos","Familia nuclear","Familia extensa",
+      "Integrantes del hogar","Amigos cercanos","Amigos recientes","Compañeros de escuela",
+      "Compañeros de trabajo","Vecinos","Personas con acceso cotidiano",
+      "Personas con deuda emocional","Personas con deuda económica","Personas que la víctima temía",
+      "Personas que la víctima evitaba","Personas que insistían en verla","Terapia de pareja",
+      "Antecedentes de denuncias","Órdenes de protección","Testigos de conflictos",
+      "Última persona que la vio","Última persona que habló con ella",
+      "Persona que reportó la desaparición","Persona que tardó en reportar",
+      "Persona que muestra conducta evasiva"
+    ], producto:"Producto esperado: matriz de relaciones, conflictos y personas de interés." },
+  { n:5, items:[
+      "Nivel educativo","Escuela","Carrera o grado","Horario escolar","Ruta a la escuela",
+      "Compañeros cercanos","Maestros","Personal administrativo","Conflictos escolares",
+      "Acoso escolar","Acoso sexual","Ocupación","Lugar de trabajo","Puesto","Jefe inmediato",
+      "Horario laboral","Cambios recientes de turno","Conflictos laborales","Despido reciente",
+      "Deudas laborales","Acoso laboral","Acoso sexual laboral","Compañeros cercanos",
+      "Vehículo de trabajo","Teléfono laboral","Computadora laboral","Correos laborales",
+      "GPS empresarial","Bitácoras de entrada y salida","Cámaras del trabajo o escuela",
+      "Última asistencia registrada","Persona que notó la ausencia"
+    ], producto:"Producto esperado: mapa de rutina laboral/escolar y personas con acceso funcional a la víctima." },
+  { n:6, items:[
+      "Cartera","Dinero en efectivo","Tarjetas bancarias","Último retiro","Última compra",
+      "Última transferencia","Deudas","Préstamos","Aplicaciones de crédito","Montadeudas",
+      "Pagos recientes","Cuentas bancarias","Cuentas digitales","Propiedades","Vehículos",
+      "Seguros","Beneficiarios de seguros","Fondos de retiro","Criptomonedas",
+      "Préstamos informales","Amenazas por deuda","Extorsión","Cobro de piso",
+      "Actividad financiera inusual","Uso posterior de tarjeta tras la desaparición",
+      "Retiro posterior a desaparición","Compras posteriores a desaparición"
+    ], producto:"Producto esperado: línea de tiempo financiera y posible móvil económico." },
+  { n:7, items:[
+      "Estado de intoxicación al momento de desaparecer","Consumo de alcohol","Consumo de drogas",
+      "Enfermedades físicas","Enfermedades mentales","Discapacidad","Medicamentos actuales",
+      "Medicamentos faltantes","Tratamientos activos","Médicos tratantes",
+      "Psicólogos o psiquiatras","Citas médicas recientes","Citas médicas próximas","Adicciones",
+      "Conductas obsesivas","Riesgo suicida","Crisis emocional reciente","Embarazo",
+      "Lesiones previas","Hospitalizaciones previas","Dependencia de medicamento",
+      "Vulnerabilidad por edad","Vulnerabilidad por salud","Necesidad urgente de atención médica"
+    ], producto:"Producto esperado: ficha de riesgo médico y urgencia de localización." },
+  { n:8, items:[
+      "Denuncias previas","Carpetas de investigación activas","Órdenes de protección",
+      "Arrestos previos","Mandamientos judiciales","Historial como víctima",
+      "Historial como testigo","Historial como imputado","Demandas civiles",
+      "Juicios familiares","Juicios patrimoniales","Testimonios previos",
+      "Declaraciones ministeriales","Amenazas por declarar","Participación en proceso penal",
+      "Actividad criminal de la víctima durante el hecho","Actividad criminal no relacionada",
+      "Registros en otros estados","Conflictos con grupos criminales",
+      "Conflictos con autoridades","Antecedentes de violencia de género","Medidas cautelares"
+    ], producto:"Producto esperado: matriz de riesgo judicial y posible represalia." },
+  { n:9, items:[
+      "Religión","Grupos religiosos","Grupos políticos","Activismo social","Activismo digital",
+      "Participación en marchas","Defensa de derechos humanos","Defensa ambiental",
+      "Defensa animal","Colectivos","Sindicatos","Grupos estudiantiles","Grupos feministas",
+      "Grupos de oposición","Conflictos ideológicos","Amenazas por publicaciones",
+      "Discursos de odio recibidos","Pertenencia a grupos radicales",
+      "Oposición a grupos radicales","Publicaciones polémicas","Denuncias públicas",
+      "Exposición mediática","Actividad contra autoridades","Actividad contra grupos criminales",
+      "Riesgo por pertenencia o discurso"
+    ], producto:"Producto esperado: análisis de contexto ideológico, amenazas y posibles objetivos." },
+];
+PAQUETES.forEach(function(p){
+  renderChecklist("tbl-paq-" + p.n, p.items);
+  const prodEl = document.getElementById("prod-paq-" + p.n);
+  if (prodEl) prodEl.textContent = p.producto;
+});
+
+/* ===================== SECCIÓN 5 — RECONSTRUCCIÓN TEMPORAL ===================== */
+const TEMPORAL_COLS = ["Hora/periodo","Lugar/ubicación","Actividad","Persona/contacto","Fuente/evidencia","Verificación","Acción derivada"];
+const TEMPORAL_CHK_ITEMS = [
+  "Llamadas y mensajes relevantes durante la ventana",
+  "Ubicaciones confirmadas y no confirmadas",
+  "Cambios de conducta, ánimo, ropa, ruta o plan",
+  "Testigos directos e indirectos identificados",
+  "Cámaras públicas/privadas ubicadas en ruta",
+  "Movimientos bancarios, transporte, tickets o accesos",
+  "Personas que intentaron verla, citarla o contactarla",
+  "Eventos de violencia, amenazas, discusión o seguimiento",
+  "Puntos ciegos: sin cámara, baja luz, aislamiento, terreno agreste",
+  "Acciones urgentes pendientes para la siguiente comisión"
+];
+["24","48","72"].forEach(function(w){
+  renderOpenTable("tbl-temporal-" + w, TEMPORAL_COLS, 5);
+  renderChecklist("tbl-chk-" + w, TEMPORAL_CHK_ITEMS);
+});
+
+/* ===================== SECCIÓN 6 — PUNTO PROBABLE DE ADQUISICIÓN ===================== */
+const ADQUISICION_ITEMS = [
+  "¿Dónde fue vista por última vez?","¿Ese lugar era parte de su rutina?",
+  "¿Iba sola o acompañada?","¿Alguien la esperaba?","¿Cambió su ruta habitual?",
+  "¿Recibió una llamada antes de moverse?","¿Recibió un mensaje antes de moverse?",
+  "¿Fue citada?","¿Fue engañada?","¿Fue seguida?","¿Fue interceptada?",
+  "¿Subió voluntariamente a un vehículo?","¿Fue obligada a subir?","¿Hubo testigos?",
+  "¿Hubo cámaras?","¿El lugar era visible?","¿El agresor conocía la zona?",
+  "¿El agresor necesitaba vigilancia previa?","¿El agresor pudo mezclarse con el entorno?",
+  "¿El agresor era alguien esperado en ese lugar?","¿La adquisición expuso al agresor a ser visto?",
+  "¿La adquisición redujo el riesgo del agresor?","¿La víctima estaba en alta o baja exposición?"
+];
+renderChecklist("tbl-adquisicion", ADQUISICION_ITEMS);
+
+const HIPOTESIS_ADQ_PAIRS = [
+  ["Punto probable 1","Persona de interés 1"],
+  ["Fundamento","Motivo"],
+  ["Punto probable 2","Vehículo probable"],
+  ["Fundamento","Datos"],
+  ["Punto probable 3","Ruta de traslado probable"],
+  ["Fundamento","Acción inmediata"],
+];
+function renderFreeGrid(containerId, pairs){
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  let html = "";
+  pairs.forEach(function(pair){
+    pair.forEach(function(label){
+      html += '<div class="free-field"><label>' + label + '</label><textarea></textarea></div>';
+    });
+  });
+  el.innerHTML = html;
+}
+renderFreeGrid("grid-hipotesis", HIPOTESIS_ADQ_PAIRS);
+
+/* ===================== SECCIÓN 7 — MATRIZ DE EXPOSICIÓN ===================== */
+const MATRIZ_EXPOSICION = [
+  "Horarios nocturnos","Traslados sola","Trabajo de riesgo","Consumo de alcohol o drogas",
+  "Relaciones violentas","Pareja o expareja conflictiva","Deudas o extorsión",
+  "Activismo o exposición pública","Alta exposición digital","Zonas de alto riesgo",
+  "Uso de transporte informal","Rutinas predecibles","Hora de desaparición",
+  "Iluminación del lugar","Presencia de cámaras","Presencia de testigos","Estado emocional",
+  "Estado de intoxicación","Condición médica","Nivel de aislamiento",
+  "Nivel de control del agresor sobre la escena"
+];
+function renderMatriz(containerId, factores){
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  let html = '<div class="matriz-row head"><span>FACTOR</span><span>NIVEL</span><span>EVIDENCIA</span><span>ACCIÓN</span></div>';
+  factores.forEach(function(f, idx){
+    const name = "matriz-" + idx;
+    html += '<div class="matriz-row">' +
+      '<div class="matriz-factor">' + f + '</div>' +
+      '<div class="matriz-nivel">' +
+        '<label><input type="radio" name="' + name + '" value="bajo"> Bajo</label>' +
+        '<label><input type="radio" name="' + name + '" value="medio"> Medio</label>' +
+        '<label><input type="radio" name="' + name + '" value="alto"> Alto</label>' +
+      '</div>' +
+      '<textarea placeholder="Evidencia"></textarea>' +
+      '<textarea placeholder="Acción"></textarea>' +
+    '</div>';
+  });
+  el.innerHTML = html;
+}
+renderMatriz("tbl-matriz-exposicion", MATRIZ_EXPOSICION);
+
+/* ===================== TABLAS DE RENGLONES ABIERTOS (Secciones 8, 9) ===================== */
+function renderOpenTable(containerId, columns, initialRows){
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  const tableId = containerId + "-table";
+  function addRow(tbody){
+    const tr = document.createElement("tr");
+    columns.forEach(function(){
+      const td = document.createElement("td");
+      td.innerHTML = "<textarea></textarea>";
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  }
+  let html = '<div class="table-scroll"><table class="exec" id="' + tableId + '"><thead><tr>' +
+    columns.map(function(c){ return "<th>" + c + "</th>"; }).join("") +
+    '</tr></thead><tbody></tbody></table></div>' +
+    '<button type="button" class="add-row-btn no-print">+ AGREGAR FILA</button>';
+  el.innerHTML = html;
+  const tbody = el.querySelector("tbody");
+  for (let i = 0; i < (initialRows || 4); i++) addRow(tbody);
+  el.querySelector(".add-row-btn").addEventListener("click", function(){ addRow(tbody); });
+}
+renderOpenTable("tbl-entrevistas",
+  ["Fecha/hora","Nombre / calidad","Contacto","Lugar entrevista","Dato relevante","Confiabilidad","Acción derivada"], 5);
+
+const BITACORA_CAMPO_COLS = ["Fecha/hora","Lugar","Actividad realizada","Hallazgo / dato","Evidencia / soporte","Acción derivada"];
+["1","2","3","4"].forEach(function(sub){
+  renderOpenTable("tbl-campo-" + sub, BITACORA_CAMPO_COLS, 4);
+});
+
+/* ===================== SECCIÓN 10 — PRODUCTOS DE CIERRE ===================== */
+const PRODUCTOS_CIERRE_ITEMS = [
+  "Ficha personal de reconocimiento y vulnerabilidad inicial actualizada",
+  "Mapa de comunicaciones y última actividad digital",
+  "Informe de entorno residencial",
+  "Matriz de relaciones, conflictos y personas de interés",
+  "Mapa de rutina laboral/escolar",
+  "Línea de tiempo financiera",
+  "Ficha de riesgo médico",
+  "Matriz de riesgo judicial",
+  "Análisis de contexto ideológico",
+  "Cronología integrada de 24, 48 y 72 horas",
+  "Mapa de ruta, puntos ciegos, cámaras y testigos",
+  "Hipótesis de adquisición",
+  "Matriz de exposición de victimología forense",
+  "Ficha táctica para siguiente despliegue de búsqueda"
+];
+renderChecklist("tbl-productos", PRODUCTOS_CIERRE_ITEMS);
+
+const CIERRE_VALIDACION_PAIRS = [
+  ["Principales hallazgos","Fecha/hora de cierre"],
+  ["Hipótesis prioritaria","Nombre y firma del agente"],
+  ["Acciones urgentes pendientes","Nombre y firma del mando"],
+  ["Responsable","Observaciones finales"],
+];
+renderFreeGrid("grid-cierre", CIERRE_VALIDACION_PAIRS);
+</script>
+
+</body>
+</html>
