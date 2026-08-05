@@ -7,11 +7,22 @@ hecho, conforme al requisito de trazabilidad de `CLAUDE.md`. No se incluyen en e
 diseño editorial, pero deben conservarse para auditoría documental.
 
 La clasificación de riesgo (rojo/amarillo/verde) sigue la Metodología del Nivel de Riesgo Nacional
-ARGOS (v1.0): este es el primer corte de la serie sin ningún evento rojo. ARG-88-003 (balacera en
-Nogales) se clasifica en amarillo (incidente armado focalizado sin confrontación bilateral
-sostenida ni víctimas); ARG-88-001, 002 y 005 son acciones institucionales y se clasifican en
-verde. ARG-88-004 (desapariciones, Culiacán) no recibe semáforo por tratarse de la resolución
-forense de un caso previamente abierto, no de un hecho nuevo del corte.
+ARGOS (v1.0). ARG-88-007 (ataque a la GN, Tula, Hidalgo) y ARG-88-009 (ataque al Ejército, Joaquín
+Amaro, Zacatecas) se clasifican en rojo. ARG-88-003 (balacera en Nogales) se clasifica en amarillo
+(incidente armado focalizado sin confrontación bilateral sostenida ni víctimas); ARG-88-001, 002 y
+005, así como los 13 aseguramientos de armamento ARM-001 a 013, son acciones institucionales y se
+clasifican en verde (salvo ARM-007, Jalisco, amarillo por derivar de un enfrentamiento). ARG-88-004
+(desapariciones, Culiacán) no recibe semáforo por tratarse de la resolución forense de un caso
+previamente abierto. ARG-88-010 (posible enfrentamiento en Zacatecas) permanece sin semáforo por no
+estar corroborado.
+
+**Corrección editorial**: la primera versión de este cartelón, generada exclusivamente con búsqueda
+en medios nacionales, se publicó con la conclusión de "CERO eventos rojos" y omitió por completo
+ARG-88-007 y ARG-88-009, además de las 13 líneas de armamento y las 10 sentencias estatales
+adicionales listadas abajo. El barrido de portales institucionales (Gabinete de Seguridad, FGR y las
+32 fiscalías/secretarías de seguridad estatales), ejecutado después de publicar esa primera versión,
+localizó estos hechos y motivó la reescritura de `argos-2026-08-04.html` y
+`argos-2026-08-04-movil.html` documentada en `reports/_pendiente-barrido-ARGOS-88.md`.
 
 ## ARG-88-001 — Aseguramiento marítimo récord de la SEMAR (Oaxaca y Chiapas)
 
@@ -84,6 +95,53 @@ tabla "Detenciones relevantes" (página 2) por su relevancia como acción instit
 - Nacional: [Tribuna](https://tribuna.com.mx/seguridad/2026/08/03/harfuch-confirma-captura-de-el-tito-presunto-responsable-del-feminicidio-de-beany-lozano_642611/)
 - Nacional: [Quadratín Chiapas](https://chiapas.quadratin.com.mx/principal/capturan-en-sinaloa-a-el-tito-el-presunto-feminicida-mas-buscado-de-chiapas/)
 
+## ARG-88-007 — Emboscada armada contra la Guardia Nacional (Tula de Allende, Hidalgo)
+
+- Institucional: boletín conjunto del Gabinete de Seguridad, 3-ago-2026, reproducido por
+  [Talla Política](https://tallapolitica.com.mx/gabinete-de-seguridad-informa-sobre-hechos-relevantes-en-materia-de-seguridad-3-de-agosto-2026/)
+- Nacional: [El Universal](https://www.eluniversal.com.mx/estados/dos-agentes-de-la-gn-resultan-heridos-tras-ataque-armado-en-tula-hidalgo-tres-agresores-fueron-detenidos/)
+- Nacional: [Excélsior](https://www.excelsior.com.mx/nacional/repelen-emboscada-tula-hay-2-guardias-nacionales-heridos-y-3-detenidos)
+- Regional: Diario de Yucatán, Tribuna (reproducción de la misma nota de agencia; enlace exacto no
+  capturado en el barrido — pendiente de re-verificación antes de cualquier distribución externa)
+
+**Nota de discrepancia**: el Gabinete de Seguridad reporta 4 personas detenidas; El Universal,
+Excélsior, Diario de Yucatán y Tribuna reportan 3. Se documentan ambas cifras sin resolver la
+discrepancia.
+
+## ARG-88-009 — Agresión armada contra el Ejército (Joaquín Amaro, Zacatecas — Operación SAGAZ)
+
+- Regional: [NTR Zacatecas](https://ntrzacatecas.com/2026/08/detienen-a-dos-menores-tras-agresion-en-mesa-de-palmira/)
+- Regional: [Imagen Zacatecas](https://imagenzac.com.mx/seguridad/abaten-a-presunto-agresor-y-detienen-a-dos-menores-en-joaquin-amaro)
+- Regional: Periódico Mirador (enlace exacto no capturado en el barrido)
+- **Sin fuente institucional ni fuente nacional localizada** en este barrido: `ssp.zacatecas.gob.mx`
+  y `zacatecas.gob.mx` devolvieron HTTP 403 (ver "Portales consultados" abajo); ningún medio nacional
+  reprodujo la nota al momento del corte. Confianza reducida a Medio (★★★☆☆) por esta razón, no por
+  duda sobre el hecho en sí — tres medios regionales independientes convergen en los mismos datos.
+
+## ARG-88-010 — Posible enfrentamiento en Zacatecas (2-ago-2026) — NO CORROBORADO, no integrado al semáforo
+
+- Abierta / NO OFICIAL: [Calibre 800](https://www.calibre800.com/2026/08/02/mueren-policias-y-5-sicarios-en-enfrentamiento-en-zacatecas/)
+- Única fuente localizada. Sin fuente institucional ni nacional. No se integra al conteo de eventos
+  rojos del corte conforme a la regla de validación de CLAUDE.md ("Si solo hay una fuente, escribir
+  literalmente Pendiente de corroboración independiente"). Pendiente de verificación en el siguiente
+  corte antes de publicarse como hecho confirmado.
+
+## ARM-001 a ARM-013 — Conteo Nacional de Armamento (13 eventos, 8 entidades)
+
+- Fuente dominante — Institucional: boletines conjuntos del Gabinete de Seguridad ("31 jul, 1 y 2
+  ago" y "3 ago"), reproducidos por [La Jornada](https://www.jornada.com.mx/2026/08/04/politica/011n3pol)
+  y Talla Política (enlace del boletín agregado arriba, en ARG-88-007).
+- ARM-013 (Durango, cateo FGR-FECOR): Institucional/Nacional —
+  [Excélsior](https://www.excelsior.com.mx/nacional/fgr-asegura-granadas-arma-larga-y-cartuchos-cateo-durango)
+- Detalle de discrepancia de cartuchos en ARM-007 (Valle de Guadalupe, Jalisco): La Jornada reporta
+  ~1,000 cartuchos; Notisistema reporta 1,001. Se usa 1,000 en el cartelón y se documenta aquí la
+  discrepancia.
+- Eventos excluidos del conteo (ver también página 5 del cartelón, Bloque 3): Quintana Roo (seis
+  cateos, 3-ago, sin cifra — fuentes Posta y 24 Horas QRoo, con contradicción de detenidos entre
+  ambas, enlaces no capturados en el barrido); Zacatecas (comunicado de GN con indicios de
+  pertenecer al periodo 2018-2021 del "Plan Nacional de Paz y Seguridad 2018-2024" — no integrado
+  sin verificación manual de fecha).
+
 ## ARG-88-SEN-001 — FGR (FECOR Sonora): transporte de narcóticos en autobús de pasajeros
 
 - Institucional / Nacional: [Telemax](https://telemax.com.mx/blog/2026/08/03/fgr-obtiene-sentencia-de-ocho-anos-de-prision-en-contra-de-angela-n-por-transportar-mas-de-40-kilos-de-narcoticos-en-autobus-de-pasajeros/)
@@ -97,22 +155,98 @@ tabla "Detenciones relevantes" (página 2) por su relevancia como acción instit
 - Nacional: [Red Metropolitana](https://www.redmetropolitana.com.mx/2026/08/03/dan-40-anos-de-prision-a-dos-personas-por-robo-de-autotransporte-federal-robo-de-mercancia-y-secuestro-expres/)
 - Nacional: [Línea de Contraste](https://www.lineadecontraste.com/fgr-obtiene-6/)
 
+## ARG-88-SEN-003/004/005 — FGE Chihuahua: cuádruple homicidio, tentativa y homicidio culposo (Ciudad Juárez)
+
+- Institucional: Fiscalía de Distrito Zona Centro de Chihuahua, causa penal 2776/2024 (comunicado
+  oficial; enlace exacto no capturado en el registro de este barrido — pendiente de re-verificación).
+- Regional: cobertura de medios de Chihuahua citada en la ficha (enlace no capturado); un medio
+  regional tituló "180 años de cárcel", cifra no reconciliable con las penas reportadas por el resto
+  de las fuentes — discrepancia documentada en la ficha ARG-88-SEN-003, no resuelta.
+
+## ARG-88-SEN-006 — FGJES: homicidio calificado con ventaja (Sonora)
+
+- Institucional: Fiscalía General de Justicia del Estado de Sonora (comunicado oficial; enlace no
+  capturado en el registro de este barrido).
+
+## ARG-88-SEN-007 — FGR (FECOR Coahuila): tráfico de personas extranjeras
+
+- Institucional/Nacional: FGR — Fiscalía Especializada en Materia de Delitos relacionados con Hechos
+  de Corrupción / delegación Coahuila (comunicado oficial; enlace no capturado en el registro de este
+  barrido).
+
+## ARG-88-SEN-008 — FGE Querétaro: homicidio culposo
+
+- Institucional: Fiscalía General del Estado de Querétaro (comunicado oficial; enlace no capturado
+  en el registro de este barrido). Pena conmutable sujeta a pago de reparación del daño.
+
+## ARG-88-SEN-009 — FGE Quintana Roo: homicidio en grado de tentativa
+
+- Institucional: Fiscalía General del Estado de Quintana Roo (comunicado oficial; enlace no
+  capturado). **Nota de discrepancia**: una fuente adicional consigna el delito como "feminicidio en
+  grado de tentativa" en lugar de "homicidio en grado de tentativa" — no resuelta, documentada en la
+  ficha.
+
+## ARG-88-SEN-010 — Abuso sexual agravado contra dos menores (Ciudad de México)
+
+- Nacional: cobertura de medios nacionales (enlace no capturado). **No se confirmó institucionalmente**
+  si la fiscalía responsable es la FGR o la FGJCDMX — dato pendiente de precisión antes de una
+  eventual re-publicación de esta ficha.
+
+## ARG-88-SEN-011 — FGE Oaxaca: secuestro agravado (140 años)
+
+- Institucional: Fiscalía General del Estado de Oaxaca (comunicado oficial; enlace no capturado en
+  el registro de este barrido). Continúan diligencias contra otros implicados según la propia FGE.
+
+## ARG-88-SEN-012 — FGR (Tlaxcala): portación de arma de fuego sin licencia
+
+- Institucional: FGR, delegación Tlaxcala (comunicado oficial; enlace no capturado en el registro de
+  este barrido).
+
+## Resoluciones detectadas y NO integradas al conteo nacional de sentencias
+
+- **Guanajuato**: la Tercera Sala Penal del Supremo Tribunal de Justicia ratificó en apelación una
+  condena previa de 4a6m por cohecho contra el exdirector general de Transporte y Movilidad — es
+  firmeza sobre una sentencia de instancia anterior, no una sentencia nueva; no se suma a los años
+  acumulados del corte.
+- **Zacatecas**: dos sentencias por portación de arma y posesión de cartuchos de uso exclusivo
+  (6a2m20d y 4a8m) — `PENDIENTE DE CONFIRMACIÓN OFICIAL DE FECHA`, posible traslape con
+  publicaciones de julio; no integradas.
+
+## Portales oficiales consultados en el barrido (Barrido obligatorio de portales oficiales, CLAUDE.md)
+
+**Federales**: Gabinete de Seguridad (`gabinetedeseguridad.gob.mx` — HTTP 403, sustituido por
+reproducción en medios), Guardia Nacional (`gob.mx/guardianacional/prensa` — HTTP 403), SSPC
+(`gob.mx/sspc` y `seguridad.sspc.gob.mx` — HTTP 403 ambos), SEDENA (`gob.mx/sedena` — consultado, sin
+comunicado propio distinto del boletín conjunto en el periodo), SEMAR (`gob.mx/semar` — consultado,
+con publicación), FGR (`gob.mx/fgr` y fiscalías especializadas — consultado, con publicación),
+ANAM/Aduanas (consultado, sin eventos en el periodo).
+
+**Estatales — 32 de 32 entidades revisadas** para el módulo de sentencias (fiscalía/procuraduría de
+cada estado); los siguientes portales devolvieron HTTP 403 durante el barrido y su resultado se
+sustituyó por medios cuando fue posible, marcado como tal en cada ficha: `ssp.zacatecas.gob.mx`,
+`zacatecas.gob.mx`, `fiscalia.chihuahua.gob.mx`, `poderjudicialmichoacan.gob.mx`,
+`fiscaliamorelos.gob.mx`. Un sexto portal con error de acceso se registra en el Indicador de
+cobertura de la página 6 sin nombre de dominio específico anotado en el barrido original.
+
+**Consecuencia directa documentada**: la ausencia de fuente institucional propia en ARG-88-009
+(Zacatecas) es resultado del bloqueo de `ssp.zacatecas.gob.mx` y `zacatecas.gob.mx`, no de que la
+búsqueda no se haya realizado — se deja constancia expresa para que este `SIN DATO` parcial sea
+auditable y no se confunda con un vacío de método.
+
 ## Categorías sin dato verificado en este corte
 
-- **Ataques a autoridades**: sin resultado institucional verificable en la búsqueda del corte.
 - **Fosas clandestinas**: sin hallazgo institucional verificable en la búsqueda del corte.
 - **Huachicol**: sin resultado operativo específico verificable; se localizó únicamente un artículo
   de análisis/tendencia ([Diario de Yucatán, 4-ago-2026](https://www.yucatan.com.mx/mexico/2026/08/04/huachicol-sofisticado-grupos-criminales-en-mexico-operan-refinerias-mas-complejas.html))
   sin un evento operativo (fecha, lugar, autoridad, detenidos) que cumpla el estándar de hecho
   confirmado — se excluye del cartelón.
 - **Redes financieras**: sin resultado institucional verificable en la búsqueda del corte.
-- **Armamento cuantificado**: sin aseguramiento de armas/municiones con tipo y cantidad
-  expresamente publicados que no hubiera sido ya reportado en una edición anterior (el arsenal de
-  81 armas largas / 274,800 cartuchos de Sonora ya fue reportado como ARG-86-ARM-001 el 25 de julio
-  de 2026 — no se recicla en este corte).
-- **Indicadores SESNSP/FGR/INEGI**: sin publicación adicional localizada; se conserva la última
-  cifra oficial disponible (reportada en ARGOS 86) con nota explícita de que no hubo actualización
-  en este corte.
+- **Explosivos/componentes (categoría 6 de la taxonomía de armamento)**: sin aseguramiento
+  específico de esta categoría publicado en el periodo, distinto de las 3 granadas ya contadas en
+  ARM-013.
+- **Indicadores SESNSP/FGR/INEGI** (excepto el indicador de AEI acumulado en Michoacán, añadido en
+  esta edición): sin publicación adicional localizada; se conserva la última cifra oficial
+  disponible con nota explícita de que no hubo actualización en este corte.
 
 ## Limitaciones de la búsqueda
 
@@ -120,12 +254,15 @@ tabla "Detenciones relevantes" (página 2) por su relevancia como acción instit
   consultados directamente (verificado que no es falla del proxy de la sesión, sino bloqueo anti-bot
   de los propios sitios); la información de este corte proviene de fragmentos de resultados de
   búsqueda (snippets) en la mayoría de los casos, no de lectura completa de artículo.
-- No se realizó verificación individual de las 32 fiscalías estatales ni de las 32 secretarías de
-  seguridad estatales; la búsqueda fue dirigida vía medios nacionales/regionales y fuentes
-  institucionales identificadas por esos medios.
+- El barrido de las 32 fiscalías estatales y de las 32 secretarías de seguridad estatales se ejecutó
+  como corrección posterior a la primera publicación de este cartelón (ver nota editorial al inicio
+  de este documento); varios enlaces individuales de comunicados estatales de sentencias no quedaron
+  capturados en las notas de trabajo del barrido y se marcan arriba como "enlace no capturado" — la
+  existencia del comunicado está corroborada por la ficha correspondiente del cartelón, pero el
+  enlace exacto debe re-obtenerse antes de cualquier distribución externa de este registro.
 - El segundo narcolaboratorio de Culiacán (parte de ARG-88-002) solo se documentó dentro de la
   cobertura del operativo marítimo de Oaxaca/Chiapas, sin comunicado institucional propio localizado
   — se señala como limitación de confianza dentro de la propia ficha.
-- No se intentó verificar directamente boletines de gabinetedeseguridad.gob.mx, fgr.org.mx ni de los
-  portales estatales de Sonora, Sinaloa o Morelos; toda corroboración institucional proviene de
-  declaraciones y comunicados citados por medios.
+- ARG-88-009 (Zacatecas) no tiene fuente institucional ni nacional localizada en este barrido —
+  limitación documentada explícitamente en la ficha y en la Valoración de la página 7, no oculta ni
+  compensada con una fuente inventada.

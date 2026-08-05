@@ -1,7 +1,13 @@
 # PENDIENTE — Integración del barrido en ARGOS 88
 
-Estado: **barrido COMPLETO** (3 agentes). Sentencias ya integradas al cartelón. Falta armamento,
-eventos rojos, semáforo y versión móvil.
+Estado: **RESUELTO.** Los eventos rojos (R1 Tula/ARG-88-007, R2 Joaquín Amaro/ARG-88-009), el
+armamento (ARM-001 a 013), el semáforo, `EVENTOS`, la valoración/conclusiones de página 7 y la
+versión móvil (incluidas las sentencias, que no se habían tocado ahí) quedaron integrados en
+`argos-2026-08-04.html` y `argos-2026-08-04-movil.html`. R3 (enfrentamiento Zacatecas 2-ago) se
+documentó como ARG-88-010, sin corroborar, sin semáforo. `argos-2026-08-04-fuentes.md` se actualizó
+con el registro completo. De paso se corrigió una inconsistencia preexistente en la página 6 del
+cartelón (Explotación ARGOS jurídica e Indicador de cobertura seguían describiendo la versión vieja
+de 2 sentencias / 1 de 32 fiscalías, pese a que el Bloque 4 y la tabla ya tenían las 12 sentencias).
 
 Corte: **2026-08-04 (ARGOS 88)** · Rama: `claude/argos-criminal-intelligence-otiawj`
 
