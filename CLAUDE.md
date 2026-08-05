@@ -95,10 +95,9 @@ inteligencia, no debe existir en ARGOS.
 Versión 5 páginas — el reporte se dividió en cinco páginas (antes cuatro) para dar más espacio a
 las tarjetas de Crimen Organizado, que no deben comprimirse para caber en una sola página.
 
-1. **Portada**: ARGOS + número consecutivo, corte informativo, radar, mapa, noticias de ayer y
-   hoy, ejes del día, semáforo ARGOS.
-2. **Página 2 — Tablero ejecutivo**: resumen ejecutivo, eventos prioritarios, ARGOS ALERTA,
-   detenciones relevantes.
+1. **Portada**: ARGOS + número consecutivo, corte informativo, radar, mapa, semáforo ARGOS.
+2. **Página 2 — Tablero ejecutivo**: resumen ejecutivo, eventos prioritarios (única tabla-lista de
+   eventos del corte — ver regla de no duplicación abajo), ARGOS ALERTA, detenciones relevantes.
 3. **Página 3 — Crimen organizado (I)**: ataques a autoridades, desapariciones, fosas.
 4. **Página 4 — Crimen organizado (II)**: laboratorios, huachicol, narcotráfico marítimo, redes
    financieras, extorsión, Análisis ARGOS.
@@ -107,6 +106,31 @@ las tarjetas de Crimen Organizado, que no deben comprimirse para caber en una so
 6. **Página 6 — Rastreo Nacional de Sentencias y Resultados Judiciales** (ver "Módulos
    adicionales de explotación nacional").
 7. **Página 7**: valoración, conclusiones, indicadores oficiales, fuentes.
+
+### Regla de no duplicación entre secciones
+
+Cada hecho del corte se lista, en formato lista/tabla, en un solo lugar: **Eventos prioritarios**
+(página 2) — es la única sección con fuente institucional, fuente nacional y nivel de confianza en
+columnas, por lo que concentra el mayor valor analítico. La portada **no** repite un listado de
+eventos (ni "noticias de ayer y hoy" ni "ejes del día" como listas separadas): el radar, el mapa y
+el semáforo ya cumplen esa función visual de vistazo rápido, con enlace a la ficha completa de cada
+evento. La ficha completa de cuatro apartados (páginas 3-4) es la única fuente extensa del hecho.
+
+Las tres secciones de síntesis en prosa —**ARGOS ALERTA** (página 2), **Análisis ARGOS** (página
+4) y **Conclusiones** (página 7)— no deben recitar la misma lista de eventos con las mismas
+palabras; cada una tiene un propósito distinto y debe aportar contenido que las otras dos no dan:
+
+- **ARGOS ALERTA**: caja corta de advertencia operativa (2-4 líneas). Solo el o los focos de
+  riesgo activo más urgentes del corte, sin reenumerar todos los eventos rojos con su fuente —
+  para eso está Eventos prioritarios.
+- **Análisis ARGOS**: síntesis interpretativa transversal — patrones, correlaciones entre casos,
+  hipótesis de vínculo, vacíos de información. No es un resumen del corte; si una oración solo
+  repite "hubo N eventos rojos: A, B, C" sin aportar una lectura nueva, no debe escribirse.
+- **Conclusiones**: exclusivamente la lista numerada de líneas de investigación y seguimiento
+  para el próximo corte. Sin párrafo introductorio que recuente los hechos del corte.
+- **Valoración** (página 7) es la excepción: por metodología, debe citar los eventos rojos que
+  determinan el Nivel de Riesgo Nacional — esa mención no cuenta como duplicación porque es el
+  cálculo mismo, no una repetición decorativa.
 
 La distribución exacta de categorías entre páginas puede ajustarse corte a corte según el volumen
 de notas de cada bloque; la regla fija es que ninguna tarjeta debe recortarse ni comprimirse por
