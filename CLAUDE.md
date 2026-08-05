@@ -547,4 +547,9 @@ más que hacerlo bien la primera vez. No repetir ese patrón.
    su ÚNICA representación. Después de editar `EVENTOS`, actualizar el diccionario
    `STATE_COLORS` de `reports/_sync-map-colors.py` con el color de mayor severidad por estado y
    correr el script contra el cartelón y la versión móvil del corte, en vez de recolorear estados
-   a mano con búsquedas y reemplazos.
+   a mano con búsquedas y reemplazos. El mismo problema afecta al Radar Central: sus ecos y sus
+   totales (`radar-stats`) también quedan horneados en el HTML y se desactualizan con cada cambio
+   a `EVENTOS` (ARGOS 88 se publicó con el radar mostrando 0 eventos rojos y solo 3 acciones
+   verdes cuando ya había 3 y 15). Después de actualizar `EVENTOS`, actualizar también la lista
+   `EVENTOS` de `reports/_sync-radar.py` (mismo orden, el jitter depende del índice) y correr el
+   script — no recalcular coordenadas de los ecos a mano.
