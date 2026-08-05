@@ -275,50 +275,122 @@ municipio, corporación y operación nombrada (Rastrillo vs. SAGAZ).
 
 ## ARG-88-SEN-003/004/005 — FGE Chihuahua: cuádruple homicidio, tentativa y homicidio culposo (Ciudad Juárez)
 
-- Institucional: Fiscalía de Distrito Zona Centro de Chihuahua, causa penal 2776/2024 (comunicado
-  oficial; enlace exacto no capturado en el registro de este barrido — pendiente de re-verificación).
-- Regional: cobertura de medios de Chihuahua citada en la ficha (enlace no capturado); un medio
-  regional tituló "180 años de cárcel", cifra no reconciliable con las penas reportadas por el resto
-  de las fuentes — discrepancia documentada en la ficha ARG-88-SEN-003, no resuelta.
+**URLs capturadas 2026-08-05.** Sentenciados: Ender Iván M.S. y Víctor Manuel R.V., causa penal
+2776/2024, hecho del 2-ago-2023 en Privada de Martín López, colonia Villa Juárez, Ciudad Juárez.
+
+- Institucional (título indexado; texto íntegro bloqueado por HTTP 403 al fetch directo): [Fiscalía General del Estado de Chihuahua](http://fiscalia.chihuahua.gob.mx/dictan-fallo-condenatorio-contra-dos-homicidas-en-cd-juarez/) — "Dictan fallo condenatorio contra dos homicidas en Cd. Juárez"
+- Regional: [La Opción de Chihuahua](https://laopcion.com.mx/local/condenan-a-mas-de-108-anos-de-carcel-a-dos-por-homicidios-20260804-524252.html) ·
+  [El Bordo](https://elbordo.com.mx/estatal/condenan-a-mas-de-108-anos-de-prision-a-responsables-de-4-homicidios-20260804-118647.html)
+- **Discrepancia "180 años" — NO resuelta**: [El Pueblo](https://elpueblo.com/regionales/condenan-a-180-anos-de-carcel-a-responsables-de-4-homicidios-20260804-480538.html)
+  reporta la cifra divergente para el mismo hecho (mismos nombres, misma fecha, mismo lugar); no fue
+  posible leer el cuerpo del artículo (403) para determinar si es un error editorial o una suma de
+  penas distinta. Se conserva 108a4m (mayoría de fuentes + fiscalía) en el cartelón.
 
 ## ARG-88-SEN-006 — FGJES: homicidio calificado con ventaja (Sonora)
 
-- Institucional: Fiscalía General de Justicia del Estado de Sonora (comunicado oficial; enlace no
-  capturado en el registro de este barrido).
+**URLs capturadas 2026-08-05.** Sentenciado: Gilberto Iván "N", víctima Sergio David "N". Hecho:
+5-feb-2025, colonia Bella Vista, Hermosillo (agresión con arma blanca; la víctima acompañaba a un
+grupo de un centro de tratamiento de adicciones). Procedimiento abreviado; reparación del daño
+reservada a etapa de ejecución para las víctimas indirectas.
+
+- Regional: [El Imparcial](https://www.elimparcial.com/son/hermosillo/2026/08/04/sentencian-a-25-anos-de-prision-a-hombre-que-mato-a-rescatista-en-hermosillo/) ·
+  [INFOSON](https://infoson.com.mx/2026/08/04/fgjes-obtiene-condena-de-25-anos-de-prision-por-homicidio-calificado-con-ventaja-en-hermosillo/) ·
+  [Crítica.com.mx](https://www.critica.com.mx/vernoticias.php?artid=118123&relacion=critica&mas=10)
+- No se localizó URL de boletín institucional directo (`fiscalia.sonora.gob.mx` o equivalente); los
+  medios citan a FGJES como fuente sin enlazar el comunicado original.
 
 ## ARG-88-SEN-007 — FGR (FECOR Coahuila): tráfico de personas extranjeras
 
-- Institucional/Nacional: FGR — Fiscalía Especializada en Materia de Delitos relacionados con Hechos
-  de Corrupción / delegación Coahuila (comunicado oficial; enlace no capturado en el registro de este
-  barrido).
+**URLs capturadas 2026-08-05.** Sentenciado: Raúl "N", detenido transportando 26 migrantes en
+Piedras Negras, colonia Las Cumbres, por elementos de la Guardia Nacional. Procedimiento abreviado.
+
+- Nacional: [Excélsior](https://www.excelsior.com.mx/nacional/sentencian-sujeto-mas-nueve-anos-prision-trafico-personas-extranjeras-coahuila)
+- Regional: [Vanguardia](https://vanguardia.com.mx/coahuila/piedras-negras/dan-mas-de-nueve-anos-de-prision-a-traficante-de-migrantes-en-coahuila-NF22630863)
+- Nota: existen otros casos similares de tráfico de migrantes en Coahuila en 2026 (Matehuala, Acuña,
+  Saltillo) con penas distintas; los datos numéricos (9a7m6d, 6,000 UMA) coinciden únicamente con
+  este caso.
 
 ## ARG-88-SEN-008 — FGE Querétaro: homicidio culposo
 
-- Institucional: Fiscalía General del Estado de Querétaro (comunicado oficial; enlace no capturado
-  en el registro de este barrido). Pena conmutable sujeta a pago de reparación del daño.
+**URLs capturadas 2026-08-05 — Confianza ★★★★★, institucional + nacional + regional reconciliados
+exactamente.** Sentenciada: Paola Alejandra "N", alias "La Mufasa". Hecho: 17-jul-2025, Calzada de
+Los Arcos, municipio de Querétaro (hecho de tránsito).
+
+- Institucional: [Fiscalía General del Estado de Querétaro](https://fiscaliageneralqro.gob.mx/portal/2026/08/04/con-acuerdos-reparatorios-aceptacion-de-responsabilidad-y-procedimiento-abreviado-concluye-proceso-penal-por-hecho-de-transito-en-los-arcos/) —
+  "Con acuerdos reparatorios, aceptación de responsabilidad y procedimiento abreviado concluye
+  proceso penal por hecho de tránsito en Los Arcos"
+- Regional: [CódigoQro](https://codigoqro.mx/nota/local/2026/08/04/sentencian-mufasa-4-nos-11-meses-prision) ·
+  [Noticias de Querétaro](https://noticiasdequeretaro.com.mx/2026/08/05/sentencian-a-4-anos-11-meses-la-mufasa-por-homicidio-culposo-tras-accidente-en-los-arcos/)
+- Nacional: [El Heraldo de México](https://heraldodemexico.com.mx/nacional/2026/8/4/la-ley-que-nacio-de-la-mufasa-no-pudo-aplicarse-en-caso-de-homicidio-vial-862903.html)
 
 ## ARG-88-SEN-009 — FGE Quintana Roo: homicidio en grado de tentativa
 
-- Institucional: Fiscalía General del Estado de Quintana Roo (comunicado oficial; enlace no
-  capturado). **Nota de discrepancia**: una fuente adicional consigna el delito como "feminicidio en
-  grado de tentativa" en lugar de "homicidio en grado de tentativa" — no resuelta, documentada en la
-  ficha.
+**URLs capturadas 2026-08-05.** Sentenciado: Ernesto Espinoza Zárate. Hecho: 19-jul-2023, obra de un
+hotel en el km 16.5 del Boulevard Kukulcán, Cancún; víctima trabajador de la construcción, con
+extorsión previa señalada por la fiscalía.
+
+- Regional: [Palco Noticias](https://www.palcoquintanarroense.com.mx/logra-fiscalia-sentencia-de-16-anos-y-seis-meses-para-un-sujeto-por-homicidio-en-grado-de-tentativa-en-benito-juarez/) ·
+  [24 Horas QR](https://24horasqroo.mx/2026/08/04/carcel-de-cancun-6/)
+- Boletín de detalle de FGE Quintana Roo no localizado (el listado de comunicados devolvió HTTP 403
+  al fetch directo).
+- **Nota de discrepancia — NO resuelta con fuente oficial**: varios medios regionales califican el
+  mismo hecho como "feminicidio en grado de tentativa" ([Marcrix Noticias](https://www.marcrixnoticias.com.mx/sentencian-a-16-anos-de-prision-a-hombre-por-intento-de-feminicidio-en-cancun/),
+  [Turquesa News](https://turquesanews.mx/cancun/condenan-a-mas-de-16-anos-de-prision-a-feminicida-en-cancun/),
+  [El Sureste](https://www.elsureste.com.mx/obtiene-fge-quintana-roo-pena-de-16-anos-de-prision-por-feminicidio-en-grado-de-tentativa-en-benito-juarez/)),
+  mientras otros lo describen como "homicidio calificado en grado de tentativa" contra un trabajador
+  varón (Palco Noticias, 24 Horas QR). El término "feminicidio" es jurídicamente incompatible con una
+  víctima masculina, por lo que la versión "homicidio" es la más consistente con el hecho narrado,
+  sin haber podido confirmarse contra el comunicado oficial.
 
 ## ARG-88-SEN-010 — Abuso sexual agravado contra dos menores (Ciudad de México)
 
-- Nacional: cobertura de medios nacionales (enlace no capturado). **No se confirmó institucionalmente**
-  si la fiscalía responsable es la FGR o la FGJCDMX — dato pendiente de precisión antes de una
-  eventual re-publicación de esta ficha.
+**Fiscalía resuelta 2026-08-05: FGR (FECOR CDMX), no FGJCDMX.** Sentenciado: Timothy Paul Hitchcock
+(también identificado como Timoteo Andrew Godwin Smith), estadounidense, exprofesor de la primaria
+"Emperador Cuauhtémoc", colonia Nueva Santa María, Azcapotzalco. Detenido por la Policía Federal
+Ministerial en enero de 2017.
+
+- Nacional: [El Universal](https://www.eluniversal.com.mx/nacion/dan-16-anos-de-carcel-a-exmaestro-estadounidense-por-abuso-sexual-de-dos-menores-daba-clases-en-azcapotzalco/) ·
+  [Yucatán.com.mx (agencia)](https://www.yucatan.com.mx/mexico/2026/08/04/condenan-a-16-anos-de-prision-a-maestro-estadounidense-por-abuso-sexual-de-menores-en-cdmx.html) ·
+  [López-Dóriga Digital](https://lopezdoriga.com/nacional/sentencian-a-timothy-n-extranjero-acusado-de-abuso-sexual/)
+- Institucional: no localizado directamente. Se revisaron comunicados de
+  `gabinetedeseguridad.gob.mx` sobre sentencias FGR por abuso sexual agravado en el periodo, pero
+  ninguno mencionó a Hitchcock (correspondían a casos distintos).
 
 ## ARG-88-SEN-011 — FGE Oaxaca: secuestro agravado (140 años)
 
-- Institucional: Fiscalía General del Estado de Oaxaca (comunicado oficial; enlace no capturado en
-  el registro de este barrido). Continúan diligencias contra otros implicados según la propia FGE.
+**URLs capturadas 2026-08-05 — ALERTA de posible confusión con otro expediente, documentada en la
+ficha del cartelón.** Sentenciado: Job I.V.Z., alias "El Pumba" o "El Raptor".
 
-## ARG-88-SEN-012 — FGR (Tlaxcala): portación de arma de fuego sin licencia
+- Nacional: [La Silla Rota](https://lasillarota.com/estados/2026/8/4/dan-140-anos-de-prision-el-pumba-por-secuestro-agravado-en-oaxaca-611264.html)
+- Regional: [El Imparcial de Oaxaca](https://imparcialoaxaca.mx/policiaca/dan-140-anos-de-carcel-a-el-pumba-por-sangriento-secuestro-en-la-ciudad/)
+  ([versión ampliada](https://imparcialoaxaca.mx/policiaca/secuestro-rescate-y-muerte-140-anos-de-prision-para-el-pumba-por-crimen-que-sacudio-oaxaca/)) ·
+  [La Onda Oaxaca](https://www.laondaoaxaca.com.mx/2026/08/sentencia-de-140-anos-de-prision-contra-responsable-de-secuestro-agravado-cometido-en-la-capital-oaxaquena) ·
+  [NVI Noticias](https://www.nvinoticias.com/roja/delitos/140-anos-de-prision-condenan-el-pumba-por-secuestro-de-dos-personas/191449)
+- **No se localizó el boletín numerado de FGEO específico para este caso.** El portal institucional
+  fue indexado, pero los boletines hallados en la ventana de fechas (Boletín 1576 y Boletín 1647,
+  ambos "150 años de prisión contra tres responsables de secuestro cometido en la ciudad de Oaxaca de
+  Juárez") describen un **caso distinto** (150 años, tres sentenciados) del de "El Pumba" (140 años,
+  un sentenciado). El hecho de "El Pumba" está corroborado de forma consistente por cuatro medios
+  independientes (nombre, alias, cifra de pena y multa coincidentes), por lo que se mantiene en el
+  cartelón con la alerta documentada, para evitar que ediciones futuras confundan ambos expedientes.
 
-- Institucional: FGR, delegación Tlaxcala (comunicado oficial; enlace no capturado en el registro de
-  este barrido).
+## ARG-88-SEN-012 — FGR (Tlaxcala): portación de arma de fuego sin licencia — POSIBLE DUPLICIDAD
+
+**Hallazgo 2026-08-05: NO se pudo confirmar la identidad exacta del caso — excluido del total del
+corte conforme a la regla de deduplicación de CLAUDE.md.** Existen al menos cinco sentencias de
+FGR-Tlaxcala por el mismo delito con la misma pena (2a6m) en fechas distintas de 2026 (29 abr, 19
+jun, 3 jul, 22 jul, 4 ago), lo que impide identificar con certeza cuál corresponde al caso
+originalmente reportado en el resumen previo (sin municipio ni número de carpeta especificados).
+
+- Candidato más cercano a la ventana del corte (3-4 ago): sentenciado "Carlos N.", detenido en
+  Cuaxomulco por policías municipales portando arma sin licencia en vía pública; pena 2a6m, multa 84
+  UMA, procedimiento abreviado, reportado el 4-ago-2026 — [La Prensa de Tlaxcala](https://laprensadetlaxcala.com/2026/08/borracho-y-armado-le-dan-2-anos-y-medio-de-carcel-en-tlaxcala-por-portar-pistola-sin-licencia/) ·
+  [385 Grados](https://www.385grados.com/policia/126685/)
+- Candidato adicional descartado por fecha: [e-tlaxcala.mx, 22-jul-2026](https://e-tlaxcala.mx/nota/2026-07-22/seguridad/logra-fgr-sentencia-condenatoria-contra-una-persona-detenida-con-un-arma) —
+  fuera de la ventana del corte (3-4 ago), posible caso distinto.
+- **No se descarta** que el dato original corresponda a uno de los otros casos idénticos (Xalostoc,
+  julio 2026; La Magdalena Tlaltelulco, julio 2026). Se requiere el número de carpeta o municipio
+  exacto del reporte original para desambiguar antes de reintegrar este caso al conteo nacional.
 
 ## Resoluciones detectadas y NO integradas al conteo nacional de sentencias
 
