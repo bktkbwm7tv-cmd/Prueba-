@@ -110,13 +110,51 @@ discrepancia.
 
 ## ARG-88-009 — Agresión armada contra el Ejército (Joaquín Amaro, Zacatecas — Operación SAGAZ)
 
+**Actualización 2026-08-05** — corroboración posterior a la primera integración de este evento.
+
+- Institucional: [SSP Zacatecas](https://ssp.zacatecas.gob.mx/detienen-fuerzas-de-seguridad-a-presuntos-generadores-de-violencia-tras-agresion-contra-personal-militar-en-joaquin-amaro/) —
+  boletín localizado por dominio/título en `ssp.zacatecas.gob.mx`, con réplica en
+  [zacatecas.gob.mx](https://www.zacatecas.gob.mx/detienen-fuerzas-de-seguridad-a-presuntos-generadores-de-violencia-tras-agresion-contra-personal-militar-en-joaquin-amaro/).
+  **El texto íntegro no pudo leerse**: ambos dominios devuelven HTTP 403 al fetch directo (con y sin
+  `www`, http y https) — mismo bloqueo ya documentado para estos portales. El título indexado y el
+  dominio oficial coinciden de forma inequívoca con el hecho.
+- Institucional (legible): [cuenta oficial de X de la SSP Zacatecas (@ssp_zac / vocería)](https://x.com/voceria_spz/status/2084449979436011764) —
+  publicación con fotografías que reproduce el mismo texto del boletín ("En la comunidad Mesa de
+  Palmira, en el municipio de Joaquín Amaro, personal del Ejército Mexicano desplegado como parte de
+  la Operación SAGAZ, fue agredido por sujetos armados..."). Este es el único canal institucional
+  cuyo contenido se pudo verificar por lectura directa.
 - Regional: [NTR Zacatecas](https://ntrzacatecas.com/2026/08/detienen-a-dos-menores-tras-agresion-en-mesa-de-palmira/)
 - Regional: [Imagen Zacatecas](https://imagenzac.com.mx/seguridad/abaten-a-presunto-agresor-y-detienen-a-dos-menores-en-joaquin-amaro)
-- Regional: Periódico Mirador (enlace exacto no capturado en el barrido)
-- **Sin fuente institucional ni fuente nacional localizada** en este barrido: `ssp.zacatecas.gob.mx`
-  y `zacatecas.gob.mx` devolvieron HTTP 403 (ver "Portales consultados" abajo); ningún medio nacional
-  reprodujo la nota al momento del corte. Confianza reducida a Medio (★★★☆☆) por esta razón, no por
-  duda sobre el hecho en sí — tres medios regionales independientes convergen en los mismos datos.
+- Regional: [Periódico Mirador](https://www.periodicomirador.com/2026/08/03/agreden-a-elementos-de-seguridad-en-el-plateado-de-joaquin-amaro/) (contenido bloqueado por HTTP 403; título/fecha coinciden)
+- Regional (adicionales, localizados en la corroboración del 5-ago, contenido no leído por 403):
+  [El Sol de Zacatecas](https://oem.com.mx/elsoldezacatecas/local/ejercito-mexicano-repele-agresion-armada-en-joaquin-amaro-zacatecas-31423699) ·
+  [Express Zacatecas](https://expresszacatecas.com/seguridad/policia/contienen-agresion-a-friz-en-joaquin-amaro-dos-detenidos-y-un-muerto) ·
+  [Zacatecas Online](https://zacatecasonline.com.mx/muerto-ataque-plateado/) ·
+  [Testigo Ocular](https://www.testigoocular.com/tras-agresion-al-ejercito-capturan-a-presuntos-generadores-de-violencia/) ·
+  [Conexión 58](https://www.conexion58.com/2026/08/muere-agresor-detienen-a-dos-menores-en-joaquin-amaro/) ·
+  [Noticiero El Circo](https://www.noticieroelcirco.mx/tras-agresion-contra-militares-en-joaquin-amaro-detuvieron-a-presuntos-generadores-de-violencia/) ·
+  [Radio Evolución](https://www.radioevolucion.com/tras-agresion-militares-dos-menores-detenidas/)
+- Abierta / NO OFICIAL: [Blog del Narco](https://www.blogdelnarco.org/2026/08/fuerzas-federales-y-estatales.html) — coincide con el hecho, marcado NO OFICIAL, no usado para corroborar.
+- **Sin fuente nacional localizada**, pese a búsqueda dirigida restringida a los dominios de El
+  Universal, Milenio, Excélsior, Proceso e Infobae México (y verificación general contra Reforma,
+  Animal Político, Latinus, Aristegui Noticias, N+, Radio Fórmula, El País México) — resultado
+  negativo confirmado, no vacío de método.
+- **Datos NO integrados al hecho confirmado** por falta de verificación documental directa (solo
+  aparecen en síntesis de buscador sobre notas regionales bloqueadas por 403): una cifra de "4 armas
+  largas" y la atribución del ataque a un grupo identificado como "Los Cabrera". No se suman al
+  conteo de armamento de la página 5 ni se citan como hecho en el cartelón hasta poder leerse
+  directamente de una fuente primaria.
+- Contexto verificado independientemente: "Operación SAGAZ" es un mecanismo interinstitucional
+  formalizado el 30 de junio de 2026 entre los gobiernos de Aguascalientes y Zacatecas (11ª Zona
+  Militar, Guadalupe, Zacatecas), reportado desde julio de 2026 por medios de Aguascalientes (La
+  Razón de México, Capital México).
+
+**Confianza actualizada: ★★★★☆ (provisional)** — se cumple el criterio institucional (boletín
+localizado por dominio/título + cuenta oficial de X legible) y hay convergencia regional amplia (8
+medios); no se cumple el criterio de medio nacional. Queda como provisional porque el texto íntegro
+del boletín oficial no pudo verificarse por el bloqueo HTTP 403 del portal — se recomienda
+verificación manual (navegador, captura de pantalla de @ssp_zac, o solicitud directa a la vocería de
+SSP Zacatecas) antes de tratar el boletín como leído en su totalidad.
 
 ## ARG-88-010 — Posible enfrentamiento en Zacatecas (2-ago-2026) — NO CORROBORADO, no integrado al semáforo
 
