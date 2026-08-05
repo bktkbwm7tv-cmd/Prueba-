@@ -7,22 +7,30 @@ hecho, conforme al requisito de trazabilidad de `CLAUDE.md`. No se incluyen en e
 diseño editorial, pero deben conservarse para auditoría documental.
 
 La clasificación de riesgo (rojo/amarillo/verde) sigue la Metodología del Nivel de Riesgo Nacional
-ARGOS (v1.0). ARG-88-007 (ataque a la GN, Tula, Hidalgo) y ARG-88-009 (ataque al Ejército, Joaquín
-Amaro, Zacatecas) se clasifican en rojo. ARG-88-003 (balacera en Nogales) se clasifica en amarillo
-(incidente armado focalizado sin confrontación bilateral sostenida ni víctimas); ARG-88-001, 002 y
-005, así como los 13 aseguramientos de armamento ARM-001 a 013, son acciones institucionales y se
-clasifican en verde (salvo ARM-007, Jalisco, amarillo por derivar de un enfrentamiento). ARG-88-004
+ARGOS (v1.0). ARG-88-007 (ataque a la GN, Tula, Hidalgo), ARG-88-009 (ataque al Ejército, Joaquín
+Amaro, Zacatecas) y ARG-88-010 (ataque con explosivo a la Policía Municipal, Luis Moya, Zacatecas)
+se clasifican en rojo. ARG-88-003 (balacera en Nogales) y ARG-88-011 (enfrentamiento con FRIZ/PDI,
+Calera, Zacatecas) se clasifican en amarillo; ARG-88-001, 002 y 005, así como los 14 aseguramientos
+de armamento ARM-001 a 014, son acciones institucionales y se clasifican en verde (salvo ARM-007,
+Jalisco, y ARM-014, Zacatecas, amarillo por derivar de un enfrentamiento). ARG-88-004
 (desapariciones, Culiacán) no recibe semáforo por tratarse de la resolución forense de un caso
-previamente abierto. ARG-88-010 (posible enfrentamiento en Zacatecas) permanece sin semáforo por no
-estar corroborado.
+previamente abierto.
 
-**Corrección editorial**: la primera versión de este cartelón, generada exclusivamente con búsqueda
-en medios nacionales, se publicó con la conclusión de "CERO eventos rojos" y omitió por completo
-ARG-88-007 y ARG-88-009, además de las 13 líneas de armamento y las 10 sentencias estatales
-adicionales listadas abajo. El barrido de portales institucionales (Gabinete de Seguridad, FGR y las
-32 fiscalías/secretarías de seguridad estatales), ejecutado después de publicar esa primera versión,
-localizó estos hechos y motivó la reescritura de `argos-2026-08-04.html` y
+**Corrección editorial (primera pasada)**: la primera versión de este cartelón, generada
+exclusivamente con búsqueda en medios nacionales, se publicó con la conclusión de "CERO eventos
+rojos" y omitió por completo ARG-88-007 y ARG-88-009, además de las 13 líneas de armamento y las 10
+sentencias estatales adicionales listadas abajo. El barrido de portales institucionales (Gabinete de
+Seguridad, FGR y las 32 fiscalías/secretarías de seguridad estatales), ejecutado después de publicar
+esa primera versión, localizó estos hechos y motivó la reescritura de `argos-2026-08-04.html` y
 `argos-2026-08-04-movil.html` documentada en `reports/_pendiente-barrido-ARGOS-88.md`.
+
+**Corrección editorial (segunda pasada, 2026-08-05)**: esa corrección quedó, a su vez, con un tercer
+posible evento rojo sin corroborar (una sola fuente abierta, Calibre 800, sobre un enfrentamiento en
+Zacatecas). Una investigación de seguimiento estableció que ese señalamiento correspondía en realidad
+a dos hechos reales y distintos —Luis Moya (31-jul) y Calera (1-ago)— con respaldo institucional y
+nacional pleno, integrados ahora como ARG-88-010 (rojo) y ARG-88-011 (amarillo, con su armamento
+asociado como ARM-014). El Nivel de Riesgo Nacional del corte pasó de MEDIO-ALTO a ALTO como
+resultado.
 
 ## ARG-88-001 — Aseguramiento marítimo récord de la SEMAR (Oaxaca y Chiapas)
 
@@ -156,21 +164,93 @@ del boletín oficial no pudo verificarse por el bloqueo HTTP 403 del portal — 
 verificación manual (navegador, captura de pantalla de @ssp_zac, o solicitud directa a la vocería de
 SSP Zacatecas) antes de tratar el boletín como leído en su totalidad.
 
-## ARG-88-010 — Posible enfrentamiento en Zacatecas (2-ago-2026) — NO CORROBORADO, no integrado al semáforo
+## ARG-88-010 — Ataque con explosivo contra la Policía Municipal de Luis Moya, Zacatecas (31-jul-2026)
 
-- Abierta / NO OFICIAL: [Calibre 800](https://www.calibre800.com/2026/08/02/mueren-policias-y-5-sicarios-en-enfrentamiento-en-zacatecas/)
-- Única fuente localizada. Sin fuente institucional ni nacional. No se integra al conteo de eventos
-  rojos del corte conforme a la regla de validación de CLAUDE.md ("Si solo hay una fuente, escribir
-  literalmente Pendiente de corroboración independiente"). Pendiente de verificación en el siguiente
-  corte antes de publicarse como hecho confirmado.
+**Corregido el 2026-08-05.** El señalamiento original de Calibre 800 ("mueren policías y 5 sicarios
+en enfrentamiento en Zacatecas", 2-ago) se investigó y resultó corresponder a la combinación de dos
+hechos reales y distintos, ocurridos la noche del 31-jul y la madrugada del 1-ago dentro del
+Operativo Rastrillo (desplegado desde el 18-jul-2026). No fue un rumor sin base: fue una nota que
+agregó dos sucesos de dos municipios distintos sin precisarlo. Se documentan por separado.
 
-## ARM-001 a ARM-013 — Conteo Nacional de Armamento (13 eventos, 8 entidades)
+- Institucional: Gobierno del Estado de Zacatecas — boletín localizado por dominio/título en
+  `zacatecas.gob.mx` (portal bloqueado a fetch directo, HTTP 403; contenido verificado por réplica
+  coincidente en seis medios independientes).
+- Nacional: [Proceso](https://www.proceso.com.mx/nacional/estados/2026/8/1/atacan-con-coche-bomba-a-policias-en-zacatecas-matan-a-uno-y-lesionan-a-dos-377241.html) ·
+  [Infobae](https://www.infobae.com/mexico/2026/08/01/operativo-rastrillo-dos-ataques-contra-policias-en-zacatecas-dejan-un-elemento-muerto-y-cinco-agresores-abatidos/) ·
+  [El Heraldo de México](https://heraldodemexico.com.mx/nacional/2026/8/1/ataque-con-explosivos-policias-en-zacatecas-deja-un-agente-muerto-dos-heridos-860906.html) ·
+  [Publimetro](https://www.publimetro.com.mx/noticias/2026/08/01/ataque-con-presuntos-explosivos-deja-un-policia-muerto-y-dos-heridos-en-zacatecas/) ·
+  [UnoTV](https://www.unotv.com/estados/zacatecas/matan-a-policia-tras-ataque-con-explosivos-en-zacatecas/) ·
+  [Reforma](https://www.reforma.com/atacan-a-policias-en-zacatecas-van-2-agresiones-y-un-muerto/ar3250729) /
+  [El Norte](https://www.elnorte.com/atacan-a-policias-en-zacatecas-van-2-agresiones-y-un-muerto/ar3250730)
+- Regional: [Zacatecas Online](https://zacatecasonline.com.mx/policias-luis-moya-explosivo/) ·
+  [Imagen Zacatecas](https://www.imagenzac.com.mx/seguridad/ataque-con-artefacto-explosivo-en-luis-moya-deja-un-policia-muerto-y-dos-heridos) ·
+  [Angulo7](https://www.angulo7.com.mx/2026/nacional/tras-ataque-con-explosivos-fallece-policia-municipal-en-luis-moya-zacatecas/711971/) ·
+  [Zacatecas Web News](https://www.zacatecaswebnews.com.mx/continuan-indagaciones-por-coche-bomba-en-luis-moya-y-enfrentamiento-en-calera/) ·
+  [Diario.mx](https://diario.mx/nacional/2026/aug/01/atacan-a-policias-en-zacatecas-van-2-agresiones-y-un-muerto-1131012.html)
+- Abierta / NO OFICIAL (no usada para corroborar): [Blog del Narco](https://www.blogdelnarco.org/2026/08/siguen-los-ataques-terroristas-en.html)
+
+**Confianza: ★★★★★** — institucional + múltiples medios nacionales + regionales, coincidencia total
+en cifras (1 policía muerto, 2 heridos incluido el director de la corporación).
+
+## ARG-88-011 — Enfrentamiento con FRIZ/PDI en Calera, Zacatecas (1-ago-2026)
+
+**Nuevo el 2026-08-05**, resultado de la misma investigación de corroboración de ARG-88-010. Segundo
+hecho agregado en la nota original de Calibre 800.
+
+- Institucional: Secretaría General de Gobierno de Zacatecas (declaración preliminar del Secretario
+  Rodrigo Reyes Mugüerza, 1-ago) + Fiscalía General de Justicia del Estado de Zacatecas (confirmación
+  formal del 3-ago) — [Pórtico](https://portico.mx/2026/08/03/confirma-fiscalia-la-muerte-de-cinco-civiles-por-enfrentamiento-en-calera)
+  y [Gobierno de Zacatecas](https://www.zacatecas.gob.mx/reporta-gobierno-de-zacatecas-posible-vinculo-entre-vehiculos-utilizados-en-calera-y-los-hechos-del-18-de-julio/)
+  (`fiscaliazacatecas.gob.mx/boletines-y-comunicados/` bloqueado a fetch directo, HTTP 403; contenido
+  verificado por réplica en medios).
+- Nacional: [El Universal](https://www.eluniversal.com.mx/estados/atacan-de-nuevo-a-corporaciones-de-seguridad-en-zacatecas-enfrentamiento-deja-5-civiles-armados-muertos-en-el-municipio-de-calera/) ·
+  [Proceso](https://www.proceso.com.mx/nacional/estados/2026/8/2/policias-abaten-a-cinco-civiles-durante-enfrentamiento-en-calera-zacatecas-377262.html) ·
+  [Infobae](https://www.infobae.com/mexico/2026/08/01/operativo-rastrillo-dos-ataques-contra-policias-en-zacatecas-dejan-un-elemento-muerto-y-cinco-agresores-abatidos/) ·
+  [La Silla Rota](https://lasillarota.com/estados/2026/8/1/zacatecas-cinco-civiles-armados-abatidos-durante-el-operativo-rastrillo-611051.html) ·
+  [La Razón](https://www.razon.com.mx/estados/2026/08/01/ataque-contra-policias-en-calera-zacatecas-culmina-con-5-civiles-abatidos/) ·
+  [TV Azteca](https://www.tvazteca.com/aztecanoticias/cinco-civiles-abatidos-enfrentamiento-autoridades-y-presuntos-delincuentes-en-calera-zacatecas) ·
+  [Zeta Tijuana](https://zetatijuana.com/2026/08/policias-matan-a-cinco-civiles-armados-tras-emboscada-con-explosivos-en-zacatecas/)
+- Regional: [Express Zacatecas](https://expresszacatecas.com/seguridad/policia/abaten-a-civiles-armados-tras-ataque-a-policias-en-calera) ·
+  [El Informador](https://www.informador.mx/mexico/zacatecas-enfrentamiento-armado-se-registra-en-el-municipio-de-calera-esto-se-sabe-al-momento-20260801-0093.html) ·
+  [Zacatecas Online](https://zacatecasonline.com.mx/balacera-calera-muertos/) ·
+  [Testigo Ocular](https://www.testigoocular.com/friz-ejercito-y-guardia-nacional-repelen-agresion-armada-en-calera/) ·
+  [El Sol de Zacatecas](https://oem.com.mx/elsoldezacatecas/local/operativo-en-calera-deja-cinco-agresores-reducidos-y-tres-vehiculos-asegurados-31416851) ·
+  [Imagen Zacatecas](https://www.imagenzac.com.mx/seguridad/fuerzas-de-seguridad-repelen-ataque-armado-en-calera-y-aseguran-vehiculos-robados-armas-y-equipo-tactico) ·
+  [Conexión 58](https://www.conexion58.com/2026/08/agreden-a-la-friz-y-pdi-en-calera-mueren-5-agresores/) ·
+  [SeUnoNoticias](https://seunonoticias.mx/2026/08/01/zacatecas-suma-otra-jornada-violenta-con-enfrentamiento-en-calera/)
+- Abierta / NO OFICIAL (no usada para corroborar): [Blog del Narco](https://www.blogdelnarco.org/2026/08/fuerzas-estatales-y-federales.html),
+  [Calibre 800](https://www.calibre800.com/2026/08/02/mueren-policias-y-5-sicarios-en-enfrentamiento-en-zacatecas/),
+  [Péndulo Informativo](https://www.penduloinformativo.com/%F0%9F%9A%A8%F0%9F%94%A5-zacatecas-bajo-fuego-coche-bomba-mata-a-un-policia-en-luis-moya-y-horas-despues-otro-ataque-armado-sacude-calera/)
+
+**Confianza: ★★★★★** — institucional doble + múltiples medios nacionales + regionales, coincidencia
+en cifra de 5 abatidos y en el aseguramiento de 3 vehículos. El armamento asegurado (8 armas largas,
+3 vehículos) se integra al Conteo Nacional de Armamento como ARM-014.
+
+**Contradicciones no resueltas, documentadas sin resolver:**
+1. Prensa Libre (Guatemala) reportó "14 muertos" para este hecho — cifra que ningún medio mexicano ni
+   fuente institucional respalda; se descarta como dato aislado, no se integra.
+2. Los reportes del 1-ago ubican el enfrentamiento en "Río Frío"; los boletines del 3-ago lo ubican en
+   "Noria de Agostaderos". No se pudo confirmar documentalmente si es la misma localidad.
+3. El origen del Operativo Rastrillo se describe de dos formas no reconciliadas entre fuentes:
+   hallazgo de 10 cuerpos en Pánuco/Morelos/Sain Alto (Infobae) vs. homicidio múltiple de 10
+   empresarios y funcionarios de Fresnillo, entre ellos el exalcalde de Sombrerete (El Sol de
+   Zacatecas/Testigo Ocular).
+
+**Evaluación de duplicidad con ARG-88-009**: no hay riesgo de duplicidad. Luis Moya (31-jul, Policía
+Municipal, explosivo, 1 policía muerto) y Calera (1-ago, FRIZ/PDI, 5 civiles abatidos) son distintos
+entre sí y de Joaquín Amaro (3-ago, Ejército, Operación SAGAZ, 1 agresor abatido) — difieren en fecha,
+municipio, corporación y operación nombrada (Rastrillo vs. SAGAZ).
+
+## ARM-001 a ARM-014 — Conteo Nacional de Armamento (14 eventos, 9 entidades)
 
 - Fuente dominante — Institucional: boletines conjuntos del Gabinete de Seguridad ("31 jul, 1 y 2
   ago" y "3 ago"), reproducidos por [La Jornada](https://www.jornada.com.mx/2026/08/04/politica/011n3pol)
   y Talla Política (enlace del boletín agregado arriba, en ARG-88-007).
 - ARM-013 (Durango, cateo FGR-FECOR): Institucional/Nacional —
   [Excélsior](https://www.excelsior.com.mx/nacional/fgr-asegura-granadas-arma-larga-y-cartuchos-cateo-durango)
+- ARM-014 (Calera, Zacatecas — 8 armas largas, 3 vehículos): ver fuentes completas en la sección
+  ARG-88-011 arriba. Integrado el 5-ago-2026 tras corroboración institucional del enfrentamiento del
+  1-ago.
 - Detalle de discrepancia de cartuchos en ARM-007 (Valle de Guadalupe, Jalisco): La Jornada reporta
   ~1,000 cartuchos; Notisistema reporta 1,001. Se usa 1,000 en el cartelón y se documenta aquí la
   discrepancia.
