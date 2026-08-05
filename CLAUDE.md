@@ -500,3 +500,27 @@ Cada cartelón ARGOS debe poder presentarse directamente a un Secretario de Esta
 Gabinete de Seguridad o Mesa Nacional de Inteligencia: rigor técnico, trazabilidad completa y
 capacidad de auditoría, de forma que cada dato pueda verificarse documentalmente sin necesidad de
 reinterpretaciones.
+
+## Playbook de ejecución diaria (eficiencia)
+
+ARGOS es un reporte diario. Estas reglas existen porque ARGOS 88 se publicó incompleto (0 eventos
+rojos falsos) y tuvo que corregirse en tres pasadas separadas — cada pasada de corrección cuesta
+más que hacerlo bien la primera vez. No repetir ese patrón.
+
+1. **Barrido completo en paralelo, antes de redactar el primer borrador — nunca publicar y
+   corregir después.** Antes de escribir una sola tarjeta, lanzar en paralelo la investigación de:
+   (a) eventos rojos/amarillos vía portales institucionales, (b) eventos vía medios
+   nacionales/regionales, (c) Conteo Nacional de Armamento (barrido de las 32 fiscalías/SSP
+   estatales), (d) Rastreo Nacional de Sentencias (barrido de las 32 fiscalías). Redactar el
+   cartelón solo cuando las cuatro líneas de investigación regresaron.
+2. **Concurrencia de agentes: máximo 2 en paralelo.** Lanzar 3 o más agentes de investigación
+   simultáneos agotó el límite de sesión el 2026-08-05 y forzó reintentos. Si se necesitan más de
+   2 líneas de investigación, encolarlas de dos en dos.
+3. **Mantener sincronizado el SVG estático de los mapas tras cualquier cambio a `EVENTOS`.** El
+   mapa/radar del cartelón de escritorio se regenera solo vía JS al cargar en un navegador, pero
+   el SVG "horneado" en el HTML (usado como respaldo en vistas sin JS, p. ej. iOS Quick Look) no
+   se actualiza solo — y la versión móvil no lleva JS en absoluto, por lo que ese SVG horneado es
+   su ÚNICA representación. Después de editar `EVENTOS`, actualizar el diccionario
+   `STATE_COLORS` de `reports/_sync-map-colors.py` con el color de mayor severidad por estado y
+   correr el script contra el cartelón y la versión móvil del corte, en vez de recolorear estados
+   a mano con búsquedas y reemplazos.
