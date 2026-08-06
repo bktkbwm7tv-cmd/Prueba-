@@ -32,25 +32,32 @@ COLOR = {
 }
 
 # Authoritative state -> severity color, derived from the EVENTOS array.
-# Update this dict each corte before running the script.
+# Update this dict each corte before running the script. States that had a
+# color in the previous edition but have no event this corte must be listed
+# explicitly as "gris" — the script only touches states present in this dict.
 STATE_COLORS = {
-    "MX-OAX": "verde",
-    "MX-CHP": "verde",
-    "MX-SIN": "verde",
-    "MX-SON": "amarillo",
-    "MX-MOR": "verde",
-    "MX-HID": "rojo",
-    "MX-ZAC": "rojo",
-    "MX-MIC": "verde",
-    "MX-QUE": "verde",
+    "MX-SIN": "rojo",
+    "MX-CHH": "amarillo",
+    "MX-GUA": "amarillo",
     "MX-GRO": "verde",
-    "MX-DUR": "verde",
-    "MX-JAL": "amarillo",
+    "MX-CAM": "verde",
+    "MX-TAM": "verde",
+    "MX-SLP": "verde",
+    "MX-HID": "verde",
+    "MX-MOR": "verde",
+    "MX-OAX": "gris",
+    "MX-CHP": "gris",
+    "MX-SON": "gris",
+    "MX-ZAC": "gris",
+    "MX-MIC": "gris",
+    "MX-QUE": "gris",
+    "MX-DUR": "gris",
+    "MX-JAL": "gris",
 }
 
 FILES = [
-    "argos-2026-08-04.html",
-    "argos-2026-08-04-movil.html",
+    "argos-2026-08-06.html",
+    "argos-2026-08-06-movil.html",
 ]
 
 
@@ -61,7 +68,7 @@ def patch_file(path):
     total = 0
     for sid, severity in STATE_COLORS.items():
         color = COLOR[severity]
-        opacity = "0.88"
+        opacity = "0.55" if severity == "gris" else "0.88"
         pattern = re.compile(
             r'(data-sid="' + re.escape(sid) + r'"[^>]*?fill=")[^"]*("[^>]*?fill-opacity=")[^"]*(")'
         )

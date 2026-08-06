@@ -31,59 +31,35 @@ CX = CY = 110
 RMAX = 98
 RMIN = 20
 WINDOW_DAYS = 10
-CORTE_FECHA = date(2026, 8, 4)
+CORTE_FECHA = date(2026, 8, 6)
 
 # Mirrors the JS EVENTOS array (order matters: jitter uses the array index).
 EVENTOS = [
-    ("ARG-88-001", "Pacífico", "verde", "grande",
-     "SEMAR asegura ~3 t de cocaína y detiene a 10 personas frente a costas de Oaxaca", date(2026, 8, 3)),
-    ("ARG-88-001", "Pacífico", "verde", "grande",
-     "SEMAR asegura ~1.4 t de cocaína y detiene a 6 personas frente a costas de Chiapas", date(2026, 8, 3)),
-    ("ARG-88-002", "Noroeste", "verde", "mediano",
-     "SEMAR destruye cuatro narcolaboratorios en Topolobampo y Culiacán", date(2026, 8, 1)),
-    ("ARG-88-003", "Noroeste", "amarillo", "pequeno",
-     "Balacera durante partido de sóftbol en Nogales; sujetos evaden un alto policial, sin lesionados", date(2026, 8, 1)),
-    ("ARG-88-005", "Centro", "verde", "pequeno",
-     'Vinculación a proceso de Marisol "N" por extorsión agravada en Temoac', date(2026, 8, 1)),
-    ("ARG-88-007", "Centro", "rojo", "mediano",
-     "Emboscada armada contra convoy de la Guardia Nacional en Tula de Allende; 2 elementos heridos, 3-4 detenidos", date(2026, 8, 3)),
-    ("ARG-88-009", "Noreste", "rojo", "mediano",
-     "Agresión armada contra el Ejército en Joaquín Amaro (Operación SAGAZ); 1 agresor abatido, 2 menores detenidas", date(2026, 8, 3)),
-    ("ARG-88-010", "Noreste", "rojo", "mediano",
-     "Ataque con explosivo contra la Policía Municipal de Luis Moya; 1 policía muerto, 2 heridos", date(2026, 7, 31)),
-    ("ARG-88-011", "Noreste", "amarillo", "mediano",
-     "Enfrentamiento con FRIZ/PDI en Calera; 5 civiles armados abatidos, sin bajas institucionales", date(2026, 8, 1)),
-    ("ARM-001", "Occidente", "verde", "pequeno",
-     "Aseguramiento de 2 armas largas en Queréndaro (Pueblo Viejo), sin agresión", date(2026, 8, 3)),
-    ("ARM-002", "Occidente", "verde", "mediano",
-     "Aseguramiento en Buenavista (Tescalame): 1 arma corta, 1 larga, 4 cargadores, 9,939 cartuchos", date(2026, 8, 4)),
+    ("ARG-89-001", "Noroeste", "rojo", "grande",
+     "Asesinato del influencer César Gastélum a balazos durante transmisión en vivo en Culiacán; FGE Sinaloa reporta 4 carpetas más por homicidio doloso el mismo día en la misma zona", date(2026, 8, 4)),
+    ("ARG-89-002", "Noroeste", "amarillo", "pequeno",
+     "Ataque armado contra policías estatales durante persecución vehicular en Aldama; sin heridos, vehículo abandonado con droga y armas", date(2026, 8, 4)),
+    ("ARG-89-003", "Occidente", "amarillo", "pequeno",
+     "Dos balaceras contra fachadas de vivienda en Celaya; sin heridos ni detenidos, motivo no esclarecido", date(2026, 8, 4)),
+    ("ARG-89-004", "Noreste", "verde", "mediano",
+     'FGR desmantela cuatro "refinerías" clandestinas de huachicol en San Luis Potosí, Hidalgo y Morelos; ~1 millón de litros asegurados en conjunto', date(2026, 8, 4)),
+    ("ARG-89-004", "Centro", "verde", "mediano",
+     'FGR desmantela cuatro "refinerías" clandestinas de huachicol en San Luis Potosí, Hidalgo y Morelos; ~1 millón de litros asegurados en conjunto', date(2026, 8, 4)),
+    ("ARG-89-004", "Centro", "verde", "mediano",
+     'FGR desmantela cuatro "refinerías" clandestinas de huachicol en San Luis Potosí, Hidalgo y Morelos; ~1 millón de litros asegurados en conjunto', date(2026, 8, 4)),
+    ("ARM-001", "Sureste", "verde", "mediano",
+     "Aseguramiento en Chilpancingo (Santa Bárbara): 3 armas largas, 13 cargadores, 566 cartuchos, 2 motocicletas, 7 detenidos", date(2026, 8, 4)),
+    ("ARM-002", "Noroeste", "verde", "mediano",
+     "Aseguramiento en Angostura (El Ébano): 4 armas largas, equipo táctico, 1 camioneta, 3 detenidos; cartuchos reportados de forma inconsistente entre fuentes (600-680), no integrados al total", date(2026, 8, 4)),
     ("ARM-003", "Sureste", "verde", "pequeno",
-     "Aseguramiento en Benemérito de las Américas: 1 arma larga, 11 cargadores, 340 cartuchos", date(2026, 8, 2)),
-    ("ARM-004", "Noroeste", "verde", "pequeno",
-     "Aseguramiento en San Dimas: 2 armas largas, 18 cargadores, 536 cartuchos", date(2026, 8, 2)),
-    ("ARM-005", "Sureste", "verde", "mediano",
-     "Aseguramiento en Chilpancingo (Santa Bárbara): 3 armas largas, 13 cargadores, 566 cartuchos, 7 detenidos", date(2026, 8, 2)),
-    ("ARM-006", "Occidente", "verde", "pequeno",
-     "Aseguramiento en Jalisco (municipio no especificado): 2 armas cortas, 2 cargadores, 15 cartuchos, 1 detenido", date(2026, 8, 2)),
-    ("ARM-007", "Occidente", "amarillo", "grande",
-     "Aseguramiento derivado de enfrentamiento en Valle de Guadalupe: fusil Barrett, ametralladora, vehículo con blindaje artesanal, 3 armas largas, ~1,000 cartuchos", date(2026, 8, 2)),
-    ("ARM-008", "Centro", "verde", "mediano",
-     "Aseguramiento en dos inmuebles de Querétaro: 1 arma corta, 2 largas, 4 cargadores, 152 cartuchos, 7 detenidos", date(2026, 8, 2)),
-    ("ARM-009", "Noroeste", "verde", "pequeno",
-     "Aseguramiento en Cajeme (col. Cortinas): 3 armas cortas, 2 largas, 7 cargadores, 61 cartuchos, 3 detenidos (1 menor)", date(2026, 8, 2)),
-    ("ARM-010", "Noroeste", "verde", "mediano",
-     "Aseguramiento en Sinaloa (municipio no determinado): 2 armas largas, 25 cargadores, 2,047 cartuchos", date(2026, 8, 2)),
-    ("ARM-011", "Noroeste", "verde", "pequeno",
-     "Aseguramiento en Concordia (av. A. López Mateos): 4 armas largas, 19 cargadores, 573 cartuchos", date(2026, 8, 3)),
-    ("ARM-012", "Noroeste", "verde", "pequeno",
-     "Aseguramiento en Sonora (municipio no determinado): 1,399 cartuchos y 14 eslabones para ametralladora, sin arma asociada", date(2026, 8, 3)),
-    ("ARM-013", "Noroeste", "verde", "mediano",
-     "Cateo de FGR (FECOR) en Victoria de Durango (Práxedis G. Guerrero Nuevo): 1 arma larga, 22 cargadores, 411 cartuchos, 3 granadas", date(2026, 8, 3)),
-    ("ARM-014", "Noreste", "amarillo", "mediano",
-     "Aseguramiento derivado del enfrentamiento en Calera: 8 armas largas y 3 vehículos (2 con reporte de robo)", date(2026, 8, 1)),
+     "Aseguramiento en Ciudad del Carmen: 3 armas largas, 159 cartuchos, 6 cargadores, 2 vehículos — POSIBLE DUPLICIDAD, no integrado al total nacional", date(2026, 8, 4)),
+    ("ARM-004", "Noreste", "verde", "pequeno",
+     "Aseguramiento en Matamoros: 1 arma larga, 133 cartuchos, 2 cargadores, 4 detenidos", date(2026, 8, 4)),
+    ("ARM-005", "Noroeste", "verde", "pequeno",
+     "Cateo de dos inmuebles en Ciudad Juárez: 3 detenidos señalados de vínculo con célula de secuestro/extorsión; sin cifra de armamento publicada", date(2026, 8, 4)),
 ]
 
-FILES = ["argos-2026-08-04.html", "argos-2026-08-04-movil.html"]
+FILES = ["argos-2026-08-06.html", "argos-2026-08-06-movil.html"]
 
 
 def argos_hash(s):
