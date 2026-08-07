@@ -95,10 +95,9 @@ inteligencia, no debe existir en ARGOS.
 Versión 5 páginas — el reporte se dividió en cinco páginas (antes cuatro) para dar más espacio a
 las tarjetas de Crimen Organizado, que no deben comprimirse para caber en una sola página.
 
-1. **Portada**: ARGOS + número consecutivo, corte informativo, radar, mapa, noticias de ayer y
-   hoy, ejes del día, semáforo ARGOS.
-2. **Página 2 — Tablero ejecutivo**: resumen ejecutivo, eventos prioritarios, ARGOS ALERTA,
-   detenciones relevantes.
+1. **Portada**: ARGOS + número consecutivo, corte informativo, radar, mapa, semáforo ARGOS.
+2. **Página 2 — Tablero ejecutivo**: resumen ejecutivo, eventos prioritarios (única tabla-lista de
+   eventos del corte — ver regla de no duplicación abajo), ARGOS ALERTA, detenciones relevantes.
 3. **Página 3 — Crimen organizado (I)**: ataques a autoridades, desapariciones, fosas.
 4. **Página 4 — Crimen organizado (II)**: laboratorios, huachicol, narcotráfico marítimo, redes
    financieras, extorsión, Análisis ARGOS.
@@ -107,6 +106,31 @@ las tarjetas de Crimen Organizado, que no deben comprimirse para caber en una so
 6. **Página 6 — Rastreo Nacional de Sentencias y Resultados Judiciales** (ver "Módulos
    adicionales de explotación nacional").
 7. **Página 7**: valoración, conclusiones, indicadores oficiales, fuentes.
+
+### Regla de no duplicación entre secciones
+
+Cada hecho del corte se lista, en formato lista/tabla, en un solo lugar: **Eventos prioritarios**
+(página 2) — es la única sección con fuente institucional, fuente nacional y nivel de confianza en
+columnas, por lo que concentra el mayor valor analítico. La portada **no** repite un listado de
+eventos (ni "noticias de ayer y hoy" ni "ejes del día" como listas separadas): el radar, el mapa y
+el semáforo ya cumplen esa función visual de vistazo rápido, con enlace a la ficha completa de cada
+evento. La ficha completa de cuatro apartados (páginas 3-4) es la única fuente extensa del hecho.
+
+Las tres secciones de síntesis en prosa —**ARGOS ALERTA** (página 2), **Análisis ARGOS** (página
+4) y **Conclusiones** (página 7)— no deben recitar la misma lista de eventos con las mismas
+palabras; cada una tiene un propósito distinto y debe aportar contenido que las otras dos no dan:
+
+- **ARGOS ALERTA**: caja corta de advertencia operativa (2-4 líneas). Solo el o los focos de
+  riesgo activo más urgentes del corte, sin reenumerar todos los eventos rojos con su fuente —
+  para eso está Eventos prioritarios.
+- **Análisis ARGOS**: síntesis interpretativa transversal — patrones, correlaciones entre casos,
+  hipótesis de vínculo, vacíos de información. No es un resumen del corte; si una oración solo
+  repite "hubo N eventos rojos: A, B, C" sin aportar una lectura nueva, no debe escribirse.
+- **Conclusiones**: exclusivamente la lista numerada de líneas de investigación y seguimiento
+  para el próximo corte. Sin párrafo introductorio que recuente los hechos del corte.
+- **Valoración** (página 7) es la excepción: por metodología, debe citar los eventos rojos que
+  determinan el Nivel de Riesgo Nacional — esa mención no cuenta como duplicación porque es el
+  cálculo mismo, no una repetición decorativa.
 
 La distribución exacta de categorías entre páginas puede ajustarse corte a corte según el volumen
 de notas de cada bloque; la regla fija es que ninguna tarjeta debe recortarse ni comprimirse por
@@ -500,3 +524,32 @@ Cada cartelón ARGOS debe poder presentarse directamente a un Secretario de Esta
 Gabinete de Seguridad o Mesa Nacional de Inteligencia: rigor técnico, trazabilidad completa y
 capacidad de auditoría, de forma que cada dato pueda verificarse documentalmente sin necesidad de
 reinterpretaciones.
+
+## Playbook de ejecución diaria (eficiencia)
+
+ARGOS es un reporte diario. Estas reglas existen porque ARGOS 88 se publicó incompleto (0 eventos
+rojos falsos) y tuvo que corregirse en tres pasadas separadas — cada pasada de corrección cuesta
+más que hacerlo bien la primera vez. No repetir ese patrón.
+
+1. **Barrido completo en paralelo, antes de redactar el primer borrador — nunca publicar y
+   corregir después.** Antes de escribir una sola tarjeta, lanzar en paralelo la investigación de:
+   (a) eventos rojos/amarillos vía portales institucionales, (b) eventos vía medios
+   nacionales/regionales, (c) Conteo Nacional de Armamento (barrido de las 32 fiscalías/SSP
+   estatales), (d) Rastreo Nacional de Sentencias (barrido de las 32 fiscalías). Redactar el
+   cartelón solo cuando las cuatro líneas de investigación regresaron.
+2. **Concurrencia de agentes: máximo 2 en paralelo.** Lanzar 3 o más agentes de investigación
+   simultáneos agotó el límite de sesión el 2026-08-05 y forzó reintentos. Si se necesitan más de
+   2 líneas de investigación, encolarlas de dos en dos.
+3. **Mantener sincronizado el SVG estático de los mapas tras cualquier cambio a `EVENTOS`.** El
+   mapa/radar del cartelón de escritorio se regenera solo vía JS al cargar en un navegador, pero
+   el SVG "horneado" en el HTML (usado como respaldo en vistas sin JS, p. ej. iOS Quick Look) no
+   se actualiza solo — y la versión móvil no lleva JS en absoluto, por lo que ese SVG horneado es
+   su ÚNICA representación. Después de editar `EVENTOS`, actualizar el diccionario
+   `STATE_COLORS` de `reports/_sync-map-colors.py` con el color de mayor severidad por estado y
+   correr el script contra el cartelón y la versión móvil del corte, en vez de recolorear estados
+   a mano con búsquedas y reemplazos. El mismo problema afecta al Radar Central: sus ecos y sus
+   totales (`radar-stats`) también quedan horneados en el HTML y se desactualizan con cada cambio
+   a `EVENTOS` (ARGOS 88 se publicó con el radar mostrando 0 eventos rojos y solo 3 acciones
+   verdes cuando ya había 3 y 15). Después de actualizar `EVENTOS`, actualizar también la lista
+   `EVENTOS` de `reports/_sync-radar.py` (mismo orden, el jitter depende del índice) y correr el
+   script — no recalcular coordenadas de los ecos a mano.
