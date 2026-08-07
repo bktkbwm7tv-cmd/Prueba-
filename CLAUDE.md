@@ -95,10 +95,22 @@ inteligencia, no debe existir en ARGOS.
 Versión 5 páginas — el reporte se dividió en cinco páginas (antes cuatro) para dar más espacio a
 las tarjetas de Crimen Organizado, que no deben comprimirse para caber en una sola página.
 
-1. **Portada**: ARGOS + número consecutivo, corte informativo, radar, mapa, noticias de ayer y
-   hoy, ejes del día, semáforo ARGOS.
-2. **Página 2 — Tablero ejecutivo**: resumen ejecutivo, eventos prioritarios, ARGOS ALERTA,
-   detenciones relevantes.
+1. **Portada**: ARGOS + número consecutivo, corte informativo, radar, mapa, ejes del día, semáforo
+   ARGOS. "Ejes del día" es el único listado resumido de hechos en esta página — no debe
+   duplicarse con una segunda tabla tipo "noticias de ayer y hoy" que repita los mismos hechos.
+2. **Página 2 — Tablero ejecutivo**: resumen ejecutivo, eventos prioritarios (tabla con fuente
+   institucional/nacional y confianza — esta es la única tabla del reporte con ese nivel de
+   desglose por fuente), ARGOS ALERTA, detenciones relevantes.
+
+### Regla de no duplicación
+
+Cada hecho del corte aparece en como máximo dos lugares: (1) un resumen breve en "Ejes del día"
+(portada) y/o en la tabla "Eventos prioritarios" (tablero ejecutivo) — nunca ambos con el mismo
+nivel de detalle — y (2) su ficha completa de cuatro apartados en Crimen Organizado, Armamento o
+Sentencias. Antes de publicar, revisar que ninguna sección resumida repita íntegramente el
+contenido de otra sección resumida de la misma edición (mismo titular, mismos datos, sin aportar
+fuente, confianza o análisis adicional). Si dos secciones tienden a coincidir en contenido,
+fusionarlas en una sola en vez de mantener ambas.
 3. **Página 3 — Crimen organizado (I)**: ataques a autoridades, desapariciones, fosas.
 4. **Página 4 — Crimen organizado (II)**: laboratorios, huachicol, narcotráfico marítimo, redes
    financieras, extorsión, Análisis ARGOS.
