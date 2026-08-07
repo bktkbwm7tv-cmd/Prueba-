@@ -98,19 +98,11 @@ las tarjetas de Crimen Organizado, que no deben comprimirse para caber en una so
 1. **Portada**: ARGOS + número consecutivo, corte informativo, radar, mapa, ejes del día, semáforo
    ARGOS. "Ejes del día" es el único listado resumido de hechos en esta página — no debe
    duplicarse con una segunda tabla tipo "noticias de ayer y hoy" que repita los mismos hechos.
-2. **Página 2 — Tablero ejecutivo**: resumen ejecutivo, eventos prioritarios (tabla con fuente
-   institucional/nacional y confianza — esta es la única tabla del reporte con ese nivel de
-   desglose por fuente), ARGOS ALERTA, detenciones relevantes.
-
-### Regla de no duplicación
-
-Cada hecho del corte aparece en como máximo dos lugares: (1) un resumen breve en "Ejes del día"
-(portada) y/o en la tabla "Eventos prioritarios" (tablero ejecutivo) — nunca ambos con el mismo
-nivel de detalle — y (2) su ficha completa de cuatro apartados en Crimen Organizado, Armamento o
-Sentencias. Antes de publicar, revisar que ninguna sección resumida repita íntegramente el
-contenido de otra sección resumida de la misma edición (mismo titular, mismos datos, sin aportar
-fuente, confianza o análisis adicional). Si dos secciones tienden a coincidir en contenido,
-fusionarlas en una sola en vez de mantener ambas.
+2. **Página 2 — Tablero ejecutivo**: resumen ejecutivo, ARGOS ALERTA, detenciones relevantes. No
+   incluye una tabla adicional de "eventos prioritarios": esa tabla repetía el mismo listado ya
+   presentado en "Ejes del día" (portada); si se necesita mostrar fuente institucional/nacional y
+   confianza por evento, esos datos van en la ficha completa de cuatro apartados de cada nota
+   (Crimen Organizado, Armamento, Sentencias), no en una tabla resumen adicional.
 3. **Página 3 — Crimen organizado (I)**: ataques a autoridades, desapariciones, fosas.
 4. **Página 4 — Crimen organizado (II)**: laboratorios, huachicol, narcotráfico marítimo, redes
    financieras, extorsión, Análisis ARGOS.
@@ -124,6 +116,16 @@ La distribución exacta de categorías entre páginas puede ajustarse corte a co
 de notas de cada bloque; la regla fija es que ninguna tarjeta debe recortarse ni comprimirse por
 falta de espacio — si un bloque crece, se reparte entre más páginas, no se reduce el contenido de
 cada tarjeta.
+
+## Regla de no duplicación
+
+Cada hecho del corte aparece en como máximo dos lugares: (1) un resumen breve en "Ejes del día"
+(portada) y (2) su ficha completa de cuatro apartados en Crimen Organizado, Armamento o
+Sentencias — nunca una tercera tabla o listado intermedio que repita el mismo titular sin aportar
+fuente, confianza o análisis adicional sustancial. Antes de publicar, revisar que ninguna sección
+resumida repita íntegramente el contenido de otra sección resumida de la misma edición (mismo
+titular, mismos datos). Si dos secciones tienden a coincidir en contenido, fusionarlas en una sola
+en vez de mantener ambas.
 
 ## Regla de las cuatro secciones por nota
 
