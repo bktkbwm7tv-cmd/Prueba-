@@ -98,11 +98,12 @@ las tarjetas de Crimen Organizado, que no deben comprimirse para caber en una so
 1. **Portada**: ARGOS + número consecutivo, corte informativo, radar, mapa, ejes del día, semáforo
    ARGOS. "Ejes del día" es el único listado resumido de hechos en esta página — no debe
    duplicarse con una segunda tabla tipo "noticias de ayer y hoy" que repita los mismos hechos.
-2. **Página 2 — Tablero ejecutivo**: resumen ejecutivo, ARGOS ALERTA, detenciones relevantes. No
-   incluye una tabla adicional de "eventos prioritarios": esa tabla repetía el mismo listado ya
-   presentado en "Ejes del día" (portada); si se necesita mostrar fuente institucional/nacional y
-   confianza por evento, esos datos van en la ficha completa de cuatro apartados de cada nota
-   (Crimen Organizado, Armamento, Sentencias), no en una tabla resumen adicional.
+2. **Página 2 — Tablero ejecutivo**: resumen ejecutivo, detenciones relevantes. No incluye un
+   bloque "ARGOS ALERTA" ni una tabla adicional de "eventos prioritarios": ambos repetían el mismo
+   hecho de mayor gravedad ya resumido en "Ejes del día" (portada) y desarrollado en su ficha
+   completa de Crimen Organizado — si se necesita mostrar fuente institucional/nacional y confianza
+   por evento, esos datos van en la ficha completa de cuatro apartados de cada nota (Crimen
+   Organizado, Armamento, Sentencias), no en un bloque o tabla resumen adicional en esta página.
 3. **Página 3 — Crimen organizado (I)**: ataques a autoridades, desapariciones, fosas.
 4. **Página 4 — Crimen organizado (II)**: laboratorios, huachicol, narcotráfico marítimo, redes
    financieras, extorsión, Análisis ARGOS.
