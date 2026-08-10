@@ -275,9 +275,37 @@
     .lock-box{padding:18px 16px;}
     .save-status{display:none;} /* no cabe junto a los botones en móvil; el estado se ve igual */
   }
+  .fatal-error-banner{
+    position:fixed;top:0;left:0;right:0;z-index:999;
+    background:#3a0a0a;border-bottom:2px solid var(--red);color:#ffdede;
+    font-family:var(--mono);font-size:11px;line-height:1.6;
+    padding:12px 14px;white-space:pre-wrap;word-break:break-word;
+  }
 </style>
 </head>
 <body>
+
+<script>
+  // Red de seguridad: cualquier error que rompa la página se muestra en pantalla
+  // en vez de fallar en silencio (crítico para diagnosticar en un teléfono, sin consola).
+  (function(){
+    var shown = false;
+    function showFatal(msg){
+      if (shown) return; shown = true;
+      var b = document.createElement("div");
+      b.className = "fatal-error-banner";
+      b.textContent = "ERROR EN LA PÁGINA — copia y envía este texto: " + msg;
+      document.body.insertBefore(b, document.body.firstChild);
+    }
+    window.addEventListener("error", function(e){
+      showFatal((e && e.message) ? e.message : String(e));
+    });
+    window.addEventListener("unhandledrejection", function(e){
+      var r = e && e.reason;
+      showFatal((r && r.message) ? r.message : String(r));
+    });
+  })();
+</script>
 
 <div class="toolbar no-print">
   <span id="save-status" class="save-status"></span>
