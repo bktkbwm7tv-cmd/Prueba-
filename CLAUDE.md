@@ -502,7 +502,10 @@ trazables hasta la fuente original.
 
 ## Pie de página
 
-Debe incluir: versión, fecha, hora, corte, número ARGOS, "Uso Institucional".
+Debe incluir: versión, fecha, hora, corte, número ARGOS, "Uso Institucional". La hora debe ser
+siempre la hora real de Ciudad de México (CDMX) al momento de elaborar el corte — nunca un valor
+por defecto (p. ej. 09:00) sin verificar. Confirmar la hora real antes de escribirla en el
+encabezado, el pie de página y cada marca "Consulta:" del cartelón (escritorio y móvil).
 
 ## Estilo de redacción
 
