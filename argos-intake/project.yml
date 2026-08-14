@@ -1,0 +1,74 @@
+name: ArgosIntake
+options:
+  bundleIdPrefix: mx.argos
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+
+packages:
+  ArgosCore:
+    path: .
+
+targets:
+  ArgosIntake:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: ArgosIntake
+        excludes:
+          - "Info.plist"
+          - "ArgosIntake.entitlements"
+    info:
+      path: ArgosIntake/Info.plist
+    entitlements:
+      path: ArgosIntake/ArgosIntake.entitlements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: mx.argos.intake
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "5.9"
+        # El código no usa APIs exclusivas de UIKit-solo-iPhone; activar
+        # "Mac (Designed for iPad)" / Catalyst en Xcode extiende a macOS
+        # (sección 3, prioridad 3) sin cambios de fuente.
+        SUPPORTS_MACCATALYST: "NO"
+    dependencies:
+      - target: ArgosShareExtension
+        embed: true
+      - package: ArgosCore
+
+  ArgosShareExtension:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: ArgosShareExtension
+        excludes:
+          - "Info.plist"
+          - "ArgosShareExtension.entitlements"
+      - path: ArgosIntake/Models
+      - path: ArgosIntake/Services
+      - path: ArgosIntake/Views/Shared
+    info:
+      path: ArgosShareExtension/Info.plist
+    entitlements:
+      path: ArgosShareExtension/ArgosShareExtension.entitlements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: mx.argos.intake.share
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "5.9"
+        SKIP_INSTALL: "YES"
+    dependencies:
+      - package: ArgosCore
+
+schemes:
+  ArgosIntake:
+    build:
+      targets:
+        ArgosIntake: all
+        ArgosShareExtension: all
+    run:
+      config: Debug
+    test:
+      config: Debug

@@ -1,0 +1,86 @@
+import SwiftUI
+import SwiftData
+import ArgosCore
+
+/// Ficha de archivo (secciones 15 y 39): imagen/preview, archivo original,
+/// fecha, tamaño, hash, caso, chat de origen, remitente, etiquetas, notas.
+/// El original nunca se edita desde aquí — solo se editan metadatos
+/// administrativos (notas, etiquetas, estatus de verificación).
+struct ItemDetailView: View {
+    @Bindable var item: ItemEntity
+    @Environment(\.modelContext) private var context
+    @EnvironmentObject private var session: AppSession
+
+    @State private var showingTechnicalDetails = false
+
+    var body: some View {
+        Form {
+            Section {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(item.originalFilename).font(.headline).foregroundStyle(ArgosTheme.textPrimary)
+                    Text(item.argosIdentifier).font(.caption.monospaced()).foregroundStyle(ArgosTheme.cyan)
+                }
+            }
+            .listRowBackground(ArgosTheme.surface)
+
+            Section("Clasificación") {
+                Picker("Tipo", selection: Binding(get: { item.type }, set: { item.type = $0 })) {
+                    ForEach(ItemType.allCases, id: \.self) { Text($0.displayName).tag($0) }
+                }
+                Picker("Subtipo", selection: Binding(get: { item.subtype }, set: { item.subtype = $0 })) {
+                    Text("Sin especificar").tag(ItemSubtype?.none)
+                    ForEach(ItemSubtype.allCases, id: \.self) { Text($0.displayName).tag(ItemSubtype?.some($0)) }
+                }
+                Picker("Verificación", selection: Binding(get: { item.verificationStatus }, set: { updateVerification($0) })) {
+                    ForEach(VerificationStatus.allCases, id: \.self) { Text($0.rawValue).tag($0) }
+                }
+            }
+            .listRowBackground(ArgosTheme.surface)
+
+            Section("Origen") {
+                LabeledContent("Caso", value: item.caseArgosCode)
+                LabeledContent("Fuente", value: item.source)
+                if let chat = item.sourceChat { LabeledContent("Chat de origen", value: chat) }
+                if let sender = item.sourceSender { LabeledContent("Remitente", value: sender) }
+                LabeledContent("Importado", value: item.importedAt.formatted(date: .abbreviated, time: .shortened))
+            }
+            .listRowBackground(ArgosTheme.surface)
+
+            Section("Etiquetas") {
+                TagPickerView(selectedTags: Binding(get: { item.tags }, set: { item.tags = $0 }))
+            }
+            .listRowBackground(ArgosTheme.surface)
+
+            Section("Nota — ¿qué representa este archivo?") {
+                TextField("Nota", text: Binding(get: { item.notes ?? "" }, set: { item.notes = $0.isEmpty ? nil : $0 }), axis: .vertical)
+            }
+            .listRowBackground(ArgosTheme.surface)
+
+            Section {
+                DisclosureGroup("Detalles técnicos", isExpanded: $showingTechnicalDetails) {
+                    LabeledContent("Extensión", value: item.fileExtension)
+                    LabeledContent("Tamaño", value: ByteCountFormatter.string(fromByteCount: item.sizeBytes, countStyle: .file))
+                    LabeledContent("SHA-256", value: item.sha256).font(.caption.monospaced())
+                    LabeledContent("Nombre almacenado", value: item.storedFilename).font(.caption)
+                    LabeledContent("Estatus de clasificación", value: item.classificationStatus.rawValue)
+                    LabeledContent("Estatus en bandeja", value: item.inboxStatus.rawValue)
+                }
+            }
+            .listRowBackground(ArgosTheme.surface)
+        }
+        .scrollContentBackground(.hidden)
+        .navigationTitle("Ficha del elemento")
+    }
+
+    private func updateVerification(_ newValue: VerificationStatus) {
+        item.verificationStatus = newValue
+        AuditLogService(context: context).record(
+            user: session.currentAnalyst,
+            action: .cambioDeMetadatosAdministrativos,
+            caseCode: item.caseArgosCode,
+            itemFilename: item.originalFilename,
+            sha256: item.sha256,
+            detail: "Verificación → \(newValue.rawValue)"
+        )
+    }
+}
