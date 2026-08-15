@@ -222,6 +222,27 @@ fracción de los aseguramientos, detenciones y resoluciones que las corporacione
 propios canales. Un `SIN DATO` derivado únicamente de no encontrar la nota en medios es un dato
 falso.
 
+### Restricción de acceso vigente (verificada en ARGOS 98)
+
+Los dominios `*.gob.mx` y los de las fiscalías y secretarías de seguridad estatales **están fuera de
+la lista blanca de egreso del entorno**. La comprobación directa devuelve
+`curl: (56) CONNECT tunnel failed, response 403`, es decir, una denegación por política de la
+organización en el proxy de salida — no un fallo de la herramienta ni un problema del portal. El
+`EGRESS_BLOCKED` que reportan los agentes al usar `WebFetch` es la misma restricción.
+
+Consecuencias operativas, mientras siga vigente:
+
+- **No se intenta rodear.** Se registra el host bloqueado y se sustituye por búsqueda `site:`
+  dirigida al dominio oficial, que sí devuelve boletines indexados. La sustitución se anota siempre.
+- **El techo de confianza de todo el producto es ★★★★☆.** El nivel ★★★★★ exige documento oficial o
+  fotografía verificada, y ningún documento primario puede leerse íntegro en estas condiciones.
+- Ampliar el número de equipos de investigación **no** levanta este techo: multiplica las peticiones
+  contra la misma puerta cerrada. La única solución real es que se añadan esos dominios a la política
+  de red del entorno.
+- Si en algún corte el acceso directo empieza a funcionar, debe hacerse constar expresamente: cambia
+  el techo de confianza de todas las secciones y vuelve ejecutable el barrido tal como está descrito
+  en este documento.
+
 ### Portales de consulta obligatoria en cada corte
 
 **Federales**
@@ -266,6 +287,44 @@ semáforo ARGOS y se documentan como tarjeta propia con sus cuatro apartados.
 Cada edición conserva en su archivo de fuentes qué portales se consultaron, cuáles publicaron y
 cuáles no, de modo que todo `SIN DATO` sea demostrable y auditable, y que la cobertura declarada
 nunca exceda la efectivamente verificada.
+
+### Ejecución del barrido por regiones
+
+El barrido de las 32 entidades no se ejecuta como una sola tarea: se reparte en seis agentes
+`barrido-regional` en paralelo, uno por región (Noroeste, Noreste, Occidente, Centro, Golfo,
+Sureste), cada uno con la lista de portales de sus entidades. Un solo equipo intentando el país
+entero produce cobertura parcial declarada como total — el fallo documentado en ARGOS 98, donde el
+módulo de armamento cubrió 18 de 32 entidades.
+
+## Control editorial antes de publicar
+
+Versión 1.0
+
+Ninguna edición se publica sin pasar estos tres controles. No son opcionales ni sustituibles por una
+revisión general: cada uno existe por un fallo real y repetido de la serie, y su omisión es lo que
+permitió que esos fallos llegaran al producto.
+
+1. **`editor-duplicidad`** — contrasta el borrador consigo mismo y contra las ediciones anteriores.
+   Impide que dos equipos publiquen el mismo hecho con dos ARG-ID, que un hecho ya publicado se
+   presente como nuevo, y que una tercera tabla repita titulares ya cubiertos por "Ejes del día" y
+   las fichas. En ARGOS 98 detectó dos casos que iban camino de publicarse.
+2. **`procedencia-cifras`** — exige, para cada número del borrador, el fragmento literal que lo
+   sostiene, y separa las cifras citables de las que solo existen dentro del resumen generado por el
+   buscador o se heredaron de una edición previa sin reverificar. La cifra de Huajicori sobrevivió
+   cuatro ediciones por ausencia de este control. **ARGOS no es fuente de sí mismo**: una cifra que
+   solo se sostiene en ediciones anteriores no tiene fuente.
+3. **`barrido-regional`** ×6 — condición previa para que cualquier módulo pueda declarar
+   `SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE`.
+
+Cuando un control devuelva `CORREGIR ANTES DE PUBLICAR`, se corrige y se vuelve a pasar. Si un
+hallazgo se decide no corregir, la razón se deja escrita en el archivo de fuentes de la edición.
+
+### Cifras arrastradas: umbral de fe de erratas
+
+Una cifra que llegue a **dos ediciones consecutivas** sin respaldo citable no se sigue señalando: se
+retira del acumulado y se publica la fe de erratas correspondiente, marcando el renglón como
+`CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO`. Señalar un problema sin resolverlo,
+edición tras edición, no es trazabilidad: es un error conocido que se sigue publicando.
 
 ## Reglas de validación
 
