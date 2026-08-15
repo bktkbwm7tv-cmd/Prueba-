@@ -76,9 +76,28 @@
   }
   .brand .argos-num{
     font-size:34px;
-    color:var(--cyan);
-    text-shadow:0 0 10px rgba(76,230,255,.35);
     line-height:1;
+    display:flex;
+    align-items:baseline;
+    gap:.22em;
+  }
+  .brand .argos-num .w{
+    font-size:1.14em;
+    font-weight:900;
+    letter-spacing:.14em;
+    color:var(--cyan);
+    -webkit-text-stroke:.7px var(--cyan);
+    text-shadow:0 0 12px rgba(76,230,255,.40);
+  }
+  .brand .argos-num .n{
+    font-size:.86em;
+    font-weight:800;
+    letter-spacing:.04em;
+    color:var(--white);
+    border:1px solid var(--cyan-dim);
+    padding:.06em .3em;
+    line-height:1;
+    background:rgba(76,230,255,.07);
   }
   .brand .sub{
     font-size:10px;
@@ -389,7 +408,7 @@
 <section class="page">
   <header class="masthead">
     <div class="brand">
-      <div class="argos-num">ARGOS 98</div>
+      <div class="argos-num"><span class="w">ARGOS</span><span class="n">98</span></div>
       <div class="sub">SISTEMA DE INTELIGENCIA CRIMINAL TRAZABLE</div>
     </div>
     <div class="titles">
@@ -480,8 +499,7 @@
     12 de agosto. Tres sentencias condenatorias nuevas (76a9m10d sobre cinco personas, ninguna
     informada como firme, ver pág. 5). Sin actualización verificable en fosas clandestinas,
     narcobloqueos, ataques a infraestructura crítica, drones armados, narcotráfico marítimo, aduanas,
-    trata ni congelamiento de cuentas UIF. <b>Los seis vacíos de cobertura detectados de forma
-    incidental por ARGOS 97 se confirman como vacíos reales</b>, y este corte publica la
+    trata ni congelamiento de cuentas UIF. <b>De los seis vacíos de cobertura detectados de forma incidental por ARGOS 97, cinco se confirman y uno queda anulado</b> —Apatzingán ya estaba publicado y contabilizado por ARGOS 95—, y este corte publica la
     <b>fe de erratas</b> pendiente sobre Huajicori, Nayarit (ARG-98-FE-001), además de resolver la
     contradicción sobre el número de detenidos en el cateo de Ciudad Juárez del 13 de agosto — ver
     pág. 6 y <code>argos-2026-08-15-fuentes.md</code>.
@@ -507,7 +525,7 @@
 ========================================================= -->
 <section class="page">
   <header class="masthead">
-    <div class="brand"><div class="argos-num" style="font-size:22px;">ARGOS 98</div></div>
+    <div class="brand"><div class="argos-num" style="font-size:22px;"><span class="w">ARGOS</span><span class="n">98</span></div></div>
     <div class="titles"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (I) — ALTO IMPACTO, ATAQUES A AUTORIDADES Y DESAPARICIONES</h2></div>
     <div class="corte">PÁG. 2 / 6</div>
   </header>
@@ -697,7 +715,7 @@
 ========================================================= -->
 <section class="page">
   <header class="masthead">
-    <div class="brand"><div class="argos-num" style="font-size:22px;">ARGOS 98</div></div>
+    <div class="brand"><div class="argos-num" style="font-size:22px;"><span class="w">ARGOS</span><span class="n">98</span></div></div>
     <div class="titles"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (II) — LABORATORIOS, HUACHICOL FISCAL, EXTORSIÓN Y ANÁLISIS</h2></div>
     <div class="corte">PÁG. 3 / 6</div>
   </header>
@@ -910,7 +928,7 @@
 ========================================================= -->
 <section class="page">
   <header class="masthead">
-    <div class="brand"><div class="argos-num" style="font-size:22px;">ARGOS 98</div></div>
+    <div class="brand"><div class="argos-num" style="font-size:22px;"><span class="w">ARGOS</span><span class="n">98</span></div></div>
     <div class="titles"><h2 style="font-size:14px;">CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS</h2></div>
     <div class="corte">PÁG. 4 / 6</div>
   </header>
@@ -918,30 +936,37 @@
   <div class="section-head">BLOQUE 1 — TOTAL NACIONAL DEL CORTE (VENTANA ESTRICTA)</div>
   <div class="stat-grid">
     <div class="stat-tile"><div class="icon">🔫</div><div class="lbl">ARMAS CORTAS</div><div class="val">4</div></div>
-    <div class="stat-tile"><div class="icon">🎯</div><div class="lbl">ARMAS LARGAS</div><div class="val">2</div></div>
+    <div class="stat-tile"><div class="icon">🎯</div><div class="lbl">ARMAS LARGAS</div><div class="val">6</div></div>
     <div class="stat-tile"><div class="icon">🧨</div><div class="lbl">CARTUCHOS</div><div class="val">220*</div></div>
     <div class="stat-tile"><div class="icon">📦</div><div class="lbl">CARGADORES</div><div class="val">≥8</div></div>
     <div class="stat-tile"><div class="icon">💣</div><div class="lbl">GRANADAS</div><div class="val">0</div></div>
     <div class="stat-tile"><div class="icon">⚠️</div><div class="lbl">AEI</div><div class="val">0</div></div>
     <div class="stat-tile"><div class="icon">🧪</div><div class="lbl">EXPLOSIVOS</div><div class="val">0</div></div>
-    <div class="stat-tile"><div class="icon">🗺️</div><div class="lbl">ESTADOS CON ASEGURAMIENTOS</div><div class="val">1</div></div>
+    <div class="stat-tile"><div class="icon">🚀</div><div class="lbl">ARMAMENTO ESPECIAL</div><div class="val">1</div></div>
+    <div class="stat-tile"><div class="icon">🗺️</div><div class="lbl">ESTADOS CON ASEGURAMIENTOS</div><div class="val">2</div></div>
     <div class="stat-tile"><div class="icon">👤</div><div class="lbl">PERSONAS DETENIDAS</div><div class="val">4</div></div>
   </div>
   <p class="muted-note">
-    Total construido con los dos eventos cuya fecha del hecho está firmemente ubicada dentro de la
-    ventana, ambos en Baja California. Armas cortas (4), arma larga (1 fusil), cartuchos y cargadores
-    y detenidos (2): Valle de Mexicali, <code>ARG-98-ARM-001</code>. Arma larga (1 fusil) y detenidos
-    (2): Tijuana, <code>ARG-98-ARM-002</code> — esta fuente <b>no publica cifra</b> de cartuchos ni
-    cargadores, por lo que ese renglón no aporta al total.
+    Total construido con los <b>tres</b> eventos con aseguramiento y fecha del hecho firmemente ubicada
+    en la ventana. Armas cortas (4), arma larga (1 fusil), cartuchos, cargadores y detenidos (2): Valle
+    de Mexicali, <code>ARG-98-ARM-001</code>. Arma larga (1 fusil) y detenidos (2): Tijuana,
+    <code>ARG-98-ARM-002</code> — esta fuente <b>no publica cifra</b> de cartuchos ni cargadores.
+    <b>Cuatro armas largas y un lanzagranadas: carretera La Piedad–Zamora, Michoacán</b>
+    (<code>ARG-98-002</code>), aseguramiento derivado del enfrentamiento con fuerzas federales; sus
+    cargadores y cartuchos se reportan sin cantidad, por lo que van como
+    <code>CANTIDAD NO DETERMINADA</code> y no alimentan esos renglones. Sin detenidos en ese evento.
     <b>*Reserva expresa sobre los cartuchos:</b> la cifra de 220 es una suma bruta de un desglose
-    fragmentado por la fuente (31 en el fusil + 23 asociados a las armas cortas + 75 en tres
-    cargadores adicionales + 91 sueltos) y conlleva riesgo de doble conteo entre cartuchos alojados en
-    cargadores y cartuchos sueltos; se publica marcada y no consolidada, pendiente del comunicado
-    primario de la SSC-BC/FGR. Los cargadores se reportan como <b>≥8</b> porque la fuente no explicita
-    la cifra exacta. Cartuchos y cargadores nunca se suman entre sí.
-    <b>Granadas, AEI, explosivos y armamento especial: cero en la ventana estricta</b> — a diferencia
-    de ARGOS 97 (11 AEI en Jalisco). Esto no debe leerse como ausencia de actividad real, sino como
-    posible vacío de publicación dado el bloqueo de acceso a los portales institucionales.
+    fragmentado por la fuente (31 en el fusil + 23 asociados a las armas cortas + 75 en tres cargadores
+    adicionales + 91 sueltos) y conlleva riesgo de doble conteo entre cartuchos alojados en cargadores y
+    cartuchos sueltos; se publica marcada y no consolidada. Los cargadores se reportan como <b>≥8</b>
+    porque la fuente no explicita la cifra exacta. Cartuchos y cargadores nunca se suman entre sí.
+    <b>Granadas, AEI y explosivos: cero en la ventana estricta</b> — a diferencia de ARGOS 97 (11 AEI en
+    Jalisco). No debe leerse como ausencia de actividad real, sino como posible vacío de publicación dado
+    el bloqueo de acceso a los portales institucionales.
+    <b>Corrección de este corte:</b> el aseguramiento de <code>ARG-98-002</code> se integró tras ser
+    detectado por el control <code>procedencia-cifras</code>; la primera versión de esta edición lo omitió
+    pese a estar documentado en su propia ficha, lo que dejaba «armas largas: 2», «armamento especial: 0»
+    y «estados con aseguramientos: 1».
   </p>
 
   <div class="section-head">BLOQUE 2 — MAPA DE ASEGURAMIENTOS</div>
@@ -984,6 +1009,7 @@
     <tbody>
       <tr><td>ARG-98-ARM-001</td><td>Baja California</td><td>Mexicali (Valle)</td><td>2026-08-14</td><td>4</td><td>1</td><td>220*</td><td>≥8</td><td>0</td><td>0</td><td>0</td><td>2</td><td>Fuerzas de Coordinación Institucional (SSC-BC, FGR, GN, SEMAR)</td><td>Infobae</td><td>La Jornada, Zócalo, California Medios</td><td>Alto</td></tr>
       <tr><td>ARG-98-ARM-002</td><td>Baja California</td><td>Tijuana (Anexa 20 de Noviembre)</td><td>2026-08-14</td><td>0</td><td>1</td><td>No determinado</td><td>No determinado</td><td>0</td><td>0</td><td>0</td><td>2</td><td>Policía Municipal de Tijuana</td><td>Pulso Ciudadano</td><td>Uniradio Informa BC</td><td>Bajo</td></tr>
+      <tr><td>ARG-98-002</td><td>Michoacán</td><td>La Piedad (carretera federal a Zamora)</td><td>2026-08-14</td><td>0</td><td>4</td><td>No determinado</td><td>No determinado</td><td>0</td><td>0</td><td>0</td><td>0</td><td>SEDENA / GN</td><td>Infobae, El Heraldo</td><td>La Jornada, LatinUS, Quadratín Michoacán</td><td>Medio</td></tr>
       <tr><td>ARG-98-ARM-003</td><td>Michoacán</td><td>Lázaro Cárdenas</td><td>En disputa (13 o 14-ago)</td><td>0</td><td>1</td><td>490</td><td>3</td><td>0</td><td>0</td><td>0</td><td>No especificados</td><td>Ejército, GN, Policía Municipal</td><td>La Voz de Michoacán</td><td>Capital México; Gabinete de Seguridad (citado)</td><td>Medio — NO INTEGRADO</td></tr>
     </tbody>
   </table>
@@ -1011,7 +1037,7 @@
 ========================================================= -->
 <section class="page">
   <header class="masthead">
-    <div class="brand"><div class="argos-num" style="font-size:22px;">ARGOS 98</div></div>
+    <div class="brand"><div class="argos-num" style="font-size:22px;"><span class="w">ARGOS</span><span class="n">98</span></div></div>
     <div class="titles"><h2 style="font-size:14px;">RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES</h2></div>
     <div class="corte">PÁG. 5 / 6</div>
   </header>
@@ -1194,21 +1220,18 @@
     Dos de las tres sentencias del corte son federales y por delitos de portación de armas: la
     respuesta judicial verificable de esta ventana se concentra en el delito más fácil de acreditar,
     no en los que definen el riesgo nacional. Ninguna corresponde a delincuencia organizada,
-    desaparición forzada, extorsión ni homicidio, y ninguna se informa como firme. El contraste con la
-    página 2 es el indicador más explotable del corte: <b>cuatro detenciones relevantes frente a tres
-    sentencias</b>, ninguna de las cuales corresponde a los hechos de este corte —la más antigua data
-    de septiembre de 2024—. La brecha entre detención y condena, ya señalada en ediciones anteriores,
+    desaparición forzada, extorsión ni homicidio, y ninguna se informa como firme. El contraste más explotable del corte es temporal: <b>ninguna de las tres sentencias corresponde a hechos de esta ventana</b> —la más antigua data de septiembre de 2024— mientras las detenciones documentadas en las páginas 2 y 4 seguirán su curso procesal durante meses. La brecha entre detención y condena, ya señalada en ediciones anteriores,
     se mantiene. El caso de Veracruz añade una dimensión distinta: el obstáculo no es la ausencia de
     resultados judiciales, sino su publicación en agregados que impiden verificarlos caso por caso.
   </p>
 
   <div class="section-head">INDICADOR DE COBERTURA — SENTENCIAS</div>
   <div class="coverage">
-    <div>Entidades consultadas mediante búsqueda dirigida: <b>32 de 32</b>. Entidades consultadas mediante <b>acceso directo al portal oficial: 0 de 32</b> (<code>EGRESS_BLOCKED</code> o <code>ENOTFOUND</code> en la totalidad de los intentos). La cobertura declarada es la efectivamente verificada por buscador, nunca por lectura del portal.</div>
+    <div>Entidades consultadas mediante búsqueda dirigida: <b>32 de 32</b> (3 con sentencia en la ventana + 16 con actividad fuera de ella + 13 sin actualización localizada). Entidades consultadas mediante <b>acceso directo al portal oficial: 0 de 32</b> (<code>EGRESS_BLOCKED</code> o <code>ENOTFOUND</code> en la totalidad de los intentos). La cobertura declarada es la efectivamente verificada por buscador, nunca por lectura del portal.</div>
     <div>FGR revisada: <b>Sí</b>, vía búsqueda dirigida a <code>fgr.org.mx</code> y subdominios; acceso directo no disponible.</div>
     <div>Fiscalías con sentencia publicada dentro de la ventana estricta: <b>3</b> — FGR/FECOR Tlaxcala, FGJEM Estado de México, FGR/FECOR Chihuahua.</div>
-    <div>Entidades con actividad judicial detectada <b>fuera</b> de la ventana (no integrada al conteo): <b>14</b> — Durango, Oaxaca, Querétaro, Sinaloa, Michoacán, Coahuila, Jalisco, CDMX, Guanajuato, Nuevo León, Nayarit, Colima, Aguascalientes y Veracruz.</div>
-    <div>Entidades sin actualización localizada en el barrido: <b>13</b> — Guerrero, Hidalgo, Chiapas, San Luis Potosí, Quintana Roo, Yucatán, Campeche, Baja California, Sonora, Morelos, Tabasco, Zacatecas y Baja California Sur. No equivale a ausencia real de publicación.</div>
+    <div>Entidades con actividad judicial detectada <b>fuera</b> de la ventana (no integrada al conteo): <b>16</b> — Durango, Oaxaca, Querétaro, Sinaloa, Michoacán, Coahuila, Jalisco, CDMX, Guanajuato, Nuevo León, Nayarit, Colima, Aguascalientes, Veracruz, <b>Puebla</b> (sentencia firme de Coronango, 12-ago) y <b>Baja California Sur</b> (procedimiento abreviado de La Paz, 11-ago) — ambas documentadas en la auditoría retroactiva de esta misma edición.</div>
+    <div>Entidades sin actualización localizada en el barrido: <b>13</b> — Guerrero, Hidalgo, Chiapas, San Luis Potosí, Quintana Roo, Yucatán, Campeche, Baja California, Sonora, Morelos, Tabasco, Zacatecas y <b>Tamaulipas</b>. No equivale a ausencia real de publicación.</div>
     <div>Dominios con error de acceso: <b>13</b> (<code>EGRESS_BLOCKED</code> o <code>ENOTFOUND</code>), entre ellos <code>gob.mx/fgr/prensa</code>, <code>comunicacion.fiscaliaveracruz.gob.mx</code>, <code>fiscalia.durango.gob.mx</code>, <code>portal.fgeo.gob.mx</code> y <code>poderjudicialmichoacan.gob.mx</code>.</div>
   </div>
 
@@ -1226,7 +1249,7 @@
 ========================================================= -->
 <section class="page">
   <header class="masthead">
-    <div class="brand"><div class="argos-num" style="font-size:22px;">ARGOS 98</div></div>
+    <div class="brand"><div class="argos-num" style="font-size:22px;"><span class="w">ARGOS</span><span class="n">98</span></div></div>
     <div class="titles"><h2 style="font-size:14px;">VALORACIÓN, AUDITORÍA Y FUENTES</h2></div>
     <div class="corte">PÁG. 6 / 6</div>
   </header>
@@ -1257,22 +1280,21 @@
   <div class="alerta contexto">
     <span class="flag">FE DE ERRATAS</span>
     <p id="ARG-98-FE-001">
-      <b>Caso Huajicori, Nayarit — corrección formal tras cuatro ediciones.</b> ARGOS 95 y ARGOS 96
-      citaron, dentro del aseguramiento del 11 de agosto de 2026 en Huajicori (detención de Alfredo
+      <b>Caso Huajicori, Nayarit — corrección formal tras cuatro ediciones.</b> ARGOS 96 y ARGOS 97
+      registraron, dentro del aseguramiento del 11 de agosto de 2026 en Huajicori (detención de Alfredo
       "N"), la cifra de <b>8 cargadores y 235 cartuchos</b>. Tras rondas independientes de
       verificación en ARGOS 96, 97 y este corte, <b>esa cifra no ha podido reconfirmarse</b>: en
       ninguna consulta apareció en un título, encabezado o fragmento textual citable de una fuente
       primaria o secundaria — únicamente en texto sintetizado por la herramienta de búsqueda. Existe
       un riesgo real de que las ediciones sucesivas la hayan venido copiando entre sí.
-      <b>Se retira del total nacional acumulado</b> y el renglón de municiones de ese evento se marca
-      <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code> hasta que se logre
-      lectura directa del boletín oficial.
+      <b>La cifra no se reintegra a ningún total</b> — conviene precisar que nunca llegó a integrarse a un total nacional publicado, por lo que no hay resta que aplicar: lo que se retira es su uso como dato citable.
       <b>Sí se confirma</b>, con corroboración institucional indirecta, nacional y regional: la
       detención de Alfredo "N", de 26 años, en La Estancia, municipio de Huajicori, Nayarit, el 11 de
       agosto de 2026, por Ejército, Guardia Nacional y Policía Estatal, con aseguramiento de 1 fusil
       Barrett descrito como antiblindaje, 4 armas largas adicionales, 2 artefactos explosivos
       improvisados y 1 inhibidor de señal de drones. El hecho, cubierto desde el 12 de agosto, no fue
-      incorporado a tiempo por ARGOS 94, 95 ni 96, pese a que el boletín que lo contiene ya había sido
+      incorporado a tiempo por ARGOS 94, 95 ni 96 (la cifra solo aparece en los registros de
+      fuentes de ARGOS 96 y 97, nunca en un cartelón), pese a que el boletín que lo contiene ya había sido
       explotado por ARGOS 96 para otro hecho (ARG-96-004, General Escobedo, Nuevo León): fue un vacío
       de <b>extracción incompleta de una fuente ya identificada</b>, no de localización. Señalado en
       cuatro ediciones consecutivas (95, 96, 97 y 98) sin corrección formal hasta esta fe de erratas.
@@ -1293,9 +1315,7 @@
     ARG-96-004 (General Escobedo), sin riesgo de duplicidad; ★★★☆☆. (2) <b>Teotihuacán, Estado de
     México</b> (10-ago): rescate de una víctima de secuestro mediante dron táctico del C5 con
     coordinación del C5i de Tlaxcala y tres detenidos; hecho en ventana de ARGOS 94, publicación en la
-    de ARGOS 96; ★★★☆☆. (3) <b>Apatzingán, Michoacán</b> (11-ago): 3 fusiles, 1,340 cartuchos, 38
-    cargadores, equipo balístico y dos vehículos con reporte de robo, sin detenidos; <b>con boletín
-    institucional propio de la SSP de Michoacán</b>; ventana de ARGOS 95; ★★★★☆. (4)
+    de ARGOS 96; ★★★☆☆. (3) <b>Apatzingán, Michoacán</b> (11-ago): <b>NO ERA UN VACÍO — corrección de este corte.</b> El aseguramiento de 3 fusiles, 1,340 cartuchos, 38 cargadores, equipo balístico y dos vehículos con reporte de robo en El Tesorero <b>ya estaba publicado y contabilizado</b> como <code>ARG-95-ARM-001</code> en ARGOS 95, cuyos totales nacionales lo integran (sus 3 fusiles dentro de las 20 armas largas, sus 1,340 cartuchos dentro de 3,716 y sus 38 cargadores dentro de 119). El caso entró por error en la lista de seis de ARGOS 97 y se dio por confirmado en este corte sin cruzarlo contra el archivo. <b>Queda anulado como vacío</b>; el registro válido es <code>ARG-95-ARM-001</code> y sus cifras no deben reintegrarse a ningún total. Detectado por el control <code>editor-duplicidad</code>. (4)
     <b>Coronango, Puebla</b> (12-ago): fallo condenatorio <b>confirmado en apelación</b> contra dos
     personas por violación equiparada agravada, 26 años 7 meses 15 días cada una; cumple la regla dura
     de sentencia y es de los pocos casos con firmeza expresa; ventana de ARGOS 95; ★★★★☆. (5)
@@ -1461,6 +1481,24 @@ const EVENTOS = [
 ];
 
 
+
+// Arreglo propio del módulo de armamento: SOLO eventos con aseguramiento contabilizado.
+// El color sigue el semáforo del mapa (CLAUDE.md): verde = aseguramiento sin enfrentamiento;
+// amarillo = derivado de enfrentamiento o agresión. No hereda EVENTOS para no pintar entidades
+// que no tuvieron aseguramiento — el error que el mapa arrastraba de la plantilla.
+const EVENTOS_ARM = [
+  { id:"ARG-98-ARM-001", estado:"MX-BCN", region:"Noroeste", color:"verde", impacto:"mediano",
+    hecho:"Valle de Mexicali: 4 armas cortas, 1 fusil, cartuchos y cargadores, 2 detenidos",
+    fuentes:["Infobae","La Jornada","Zócalo"], confianza:"Alto", fecha:"2026-08-14", hora:"noche" },
+
+  { id:"ARG-98-ARM-002", estado:"MX-BCN", region:"Noroeste", color:"verde", impacto:"pequeno",
+    hecho:"Tijuana (Anexa 20 de Noviembre): 1 fusil, 2 detenidos",
+    fuentes:["Pulso Ciudadano","Uniradio Informa BC"], confianza:"Bajo", fecha:"2026-08-14", hora:"—" },
+
+  { id:"ARG-98-002", estado:"MX-MIC", region:"Occidente", color:"amarillo", impacto:"mediano",
+    hecho:"Carretera La Piedad–Zamora: 4 armas largas y 1 lanzagranadas asegurados tras el enfrentamiento con fuerzas federales",
+    fuentes:["Infobae","El Heraldo de México","La Jornada"], confianza:"Medio", fecha:"2026-08-14", hora:"12:00" }
+];
 
 const REGION_ORDER = ["Noroeste","Noreste","Occidente","Centro","Golfo","Sureste","Pacífico"];
 const STATE_REGION = {
@@ -1628,7 +1666,7 @@ function argosRenderRadar(containerId, statsId, eventos, corteFechaStr){
 document.addEventListener("DOMContentLoaded", function () {
   argosRenderMap("argos-map", EVENTOS);
   argosRenderRadar("argos-radar", "argos-radar-stats", EVENTOS, CORTE_FECHA);
-  argosRenderMap("argos-map-arm", EVENTOS);
+  argosRenderMap("argos-map-arm", EVENTOS_ARM);
 });
 
 </script>

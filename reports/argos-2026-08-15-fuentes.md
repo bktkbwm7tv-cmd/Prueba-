@@ -294,16 +294,16 @@ no cifra del corte.
 | Categoría | Total | Aritmética |
 |---|---|---|
 | Armas cortas | 4 | 4 Mexicali |
-| Armas largas | 2 | 1 Mexicali + 1 Tijuana |
+| Armas largas | 6 | 1 Mexicali + 1 Tijuana + 4 La Piedad |
 | Cartuchos | 220* | solo Mexicali; Tijuana no publica cifra |
 | Cargadores | ≥8 | solo Mexicali; cifra exacta no explicitada |
 | Granadas | 0 | — |
 | AEI | 0 | — |
 | Explosivos/componentes | 0 | — |
-| Armamento especial | 0 | — |
+| Armamento especial | 1 | 1 lanzagranadas, La Piedad |
 | Personas detenidas | 4 | 2 Mexicali + 2 Tijuana |
-| Estados con aseguramientos | 1 | Baja California |
-| Eventos contabilizados | 2 | `ARG-98-ARM-001`, `ARG-98-ARM-002` |
+| Estados con aseguramientos | 2 | Baja California, Michoacán |
+| Eventos contabilizados | 3 | `ARG-98-ARM-001`, `ARG-98-ARM-002`, `ARG-98-002` |
 | Eventos cualitativos / no integrados | 3 | `ARG-98-ARM-003`, pipa de Apaseo, Las Choapas |
 
 **Granadas, AEI, explosivos y armamento especial: cero en la ventana estricta**, a diferencia de
@@ -312,9 +312,11 @@ de publicación dado el bloqueo de acceso a portales institucionales.
 
 ### Lectura regional
 
-- **Noroeste (Baja California)**: único bloque con eventos plenamente confirmados en la ventana —
-  Mexicali y Tijuana. Concentra el 100% del armamento contabilizado con fecha firme.
-- **Occidente (Michoacán)**: un evento con fecha en disputa, no integrado.
+- **Noroeste (Baja California)**: Mexicali y Tijuana, los dos eventos de aseguramiento puro.
+- **Occidente (Michoacán)**: el aseguramiento derivado del enfrentamiento de La Piedad
+  (`ARG-98-002`) — 4 armas largas y 1 lanzagranadas. Su omisión en la versión inicial de esta
+  edición hacía afirmar que Baja California concentraba el 100% del armamento del corte, lo que
+  era falso. Corregido tras la detección del control `procedencia-cifras`.
 - **Noreste, Centro, Golfo, Pacífico Sur, Sureste**: sin aseguramientos con fecha verificable en la
   ventana tras el barrido.
 
@@ -448,20 +450,22 @@ sentencias**.
   portal.
 - FGR revisada: **Sí**, vía búsqueda dirigida a `fgr.org.mx` y subdominios; acceso directo no disponible.
 - Fiscalías con sentencia publicada **en la ventana**: **3** — FECOR Tlaxcala, FGJEM, FECOR Chihuahua.
-- Entidades con actividad judicial detectada **fuera** de la ventana, no integrada: **14** — Durango,
+- Entidades con actividad judicial detectada **fuera** de la ventana, no integrada: **16** — Durango,
   Oaxaca, Querétaro, Sinaloa, Michoacán (secuestro en Morelia, 82/89 años, contradicción no resuelta),
   Coahuila, Jalisco (19 del CJNG, 10–11 ago), CDMX (feminicidio en Tlalpan), Guanajuato, Nuevo León,
-  Nayarit, Colima, Aguascalientes y Veracruz.
+  Nayarit, Colima, Aguascalientes, Veracruz, **Puebla** (sentencia firme de Coronango) y
+  **Baja California Sur** (procedimiento abreviado de La Paz) — ambas documentadas en la auditoría
+  retroactiva de esta misma edición, lo que las hacía incompatibles con el renglón de "sin actualización".
 - Entidades **sin actualización localizada**: **13** — Guerrero, Hidalgo, Chiapas, San Luis Potosí,
-  Quintana Roo, Yucatán, Campeche, Baja California, Sonora, Morelos, Tabasco, Zacatecas y Baja
-  California Sur. **No equivale a ausencia real de publicación.**
+  Quintana Roo, Yucatán, Campeche, Baja California, Sonora, Morelos, Tabasco, Zacatecas y
+  **Tamaulipas**. **No equivale a ausencia real de publicación.**
 - Dominios con error de acceso: **13**.
 
 ---
 
 ## Página 7 — Auditoría retroactiva y fe de erratas
 
-### Los seis vacíos incidentales de ARGOS 97: LOS SEIS CONFIRMADOS
+### Los seis vacíos incidentales de ARGOS 97: CINCO CONFIRMADOS, UNO ANULADO
 
 1. **Huachicol en Pesquería, Nuevo León** (12-ago) — FGR aseguró 62,000 L de hidrocarburo, 9
    tractocamiones, 9 pipas, 10 tanques tipo frac, 1 oleoducto y 2 camionetas, tras denuncia anónima;
@@ -480,13 +484,20 @@ sentencias**.
    [Quadratín Edomex](https://edomex.quadratin.com.mx/guia-dron-rescate-y-captura-a-tres-secuestradores-en-teotihuacan/) ·
    [e-tlaxcala](https://e-tlaxcala.mx/nota/2026-08-13/seguridad/secuestran-persona-en-tlaxcala-y-la-rescatan-en-teotihuacan-hay-tres) ·
    [Digital Mex](https://www.digitalmex.mx/seguridad/story/69758/rescatan-victima-secuestro-detienen-tres-teotihuacan)
-3. **Aseguramiento en Apatzingán, Michoacán** (11-ago) — SSP Michoacán, SEDENA y GN aseguraron en El
-   Tesorero 3 fusiles (.223, 7.62x39 y 5.56 mm), 1,340 cartuchos, 38 cargadores, chalecos y cascos
-   balísticos, 1 camioneta Chevrolet y 1 motocicleta Italika con reporte de robo; sin detenidos.
-   **Con boletín institucional propio**. Ventana de **ARGOS 95**. **VACÍO CONFIRMADO**, ★★★★☆.
-   [SSP Michoacán](https://ssp.michoacan.gob.mx/asegurados-tres-fusiles-y-mas-de-mil-300-cartuchos-utiles-en-apatzingan/) ·
-   [Quadratín Michoacán](https://www.quadratin.com.mx/justicia/asegurados-tres-fusiles-y-mas-de-mil-300-cartuchos-utiles-en-apatzingan/) ·
-   [Mi Zitácuaro](https://mizitacuaro.com/noticias/seguridad/fge-ejercito-mexicano-y-guardia-nacional-aseguran-armamento-equipo-tactico-y-vehiculos-robados-en-apatzingan/358797/)
+3. **Aseguramiento en Apatzingán, Michoacán** (11-ago) — **NO ERA UN VACÍO. Corrección aplicada tras
+   la publicación inicial de esta edición.** El hecho (3 fusiles .223/7.62×39/5.56, 1,340 cartuchos,
+   38 cargadores, equipo balístico y dos vehículos con reporte de robo en El Tesorero, sin detenidos)
+   **ya estaba publicado y contabilizado** como `ARG-95-ARM-001` en `argos-2026-08-12.html`, y sus
+   cifras están integradas en los totales nacionales de ARGOS 95: sus 3 fusiles dentro de las 20 armas
+   largas, sus 1,340 cartuchos dentro de 3,716 y sus 38 cargadores dentro de 119. Coinciden diez
+   criterios de cruce, incluida la misma URL de Quadratín Michoacán.
+   El error se originó en la lista de seis de ARGOS 97 y este corte lo dio por confirmado sin cruzarlo
+   contra el archivo. **Queda anulado como vacío**; el registro válido es `ARG-95-ARM-001` y sus cifras
+   **no deben reintegrarse a ningún total**. Detectado por el control `editor-duplicidad` en su primera
+   ejecución. Nota adicional: esta edición llegó a listar el mismo hecho dos veces con motivos
+   incompatibles — como "excluido por fuera de ventana" y como "vacío de cobertura"; ambas
+   clasificaciones eran erróneas.
+
 4. **Sentencia firme en Coronango, Puebla** (12-ago) — FGE Puebla obtuvo fallo condenatorio
    **confirmado en apelación (firme)** contra Anadalay "N" y Carlos Andrés "N" por violación
    equiparada agravada contra una menor (hecho de enero de 2023): **26 años 7 meses 15 días** cada uno
@@ -557,14 +568,14 @@ Co., valor estimado superior a $75,000).
 - Nacional: [Milenio](https://www.milenio.com/policia/inhibidor-drones-asi-funciona-dispositivo-asegurado-nayarit)
 - Regional: [NTV — El Portal de Nayarit](https://ntv.com.mx/2026/08/12/ejercito-asegura-fusil-antiblindaje-e-inhibidor-de-drones-en-sierra-de-huajicori/)
 
-**NO CONFIRMADO — la cifra de "8 cargadores, 235 cartuchos"** citada por ARGOS 95 y 96. En cuatro
+**NO CONFIRMADO — la cifra de "8 cargadores, 235 cartuchos"**, registrada por ARGOS 96 y 97 (corrección: la edición inicial de ARGOS 98 la atribuía a ARGOS 95 y 96; la cadena no aparece en ningún archivo de ARGOS 95, donde el municipio de Huajicori no se menciona ni una vez). En cuatro
 consultas distintas de `WebSearch`, el resumen automático repitió esa cifra de forma consistente, pero
 **en ningún caso apareció en un título, encabezado o fragmento textual citable** de los resultados —
 únicamente en el texto sintetizado por la propia herramienta de búsqueda. `WebFetch` a `ntv.com.mx`,
 `milenio.com` y `gob.mx` devolvió `EGRESS_BLOCKED`. Existe un **riesgo real de que las ediciones
 sucesivas se la hayan venido copiando entre sí** en vez de corroborarla de forma independiente.
 
-**Se retira del total nacional acumulado**; el renglón de municiones de ese evento se marca
+**No se reintegra a ningún total**; conviene precisar que nunca llegó a integrarse a un total nacional publicado, de modo que no hay resta que aplicar —lo que se retira es su uso como dato citable—; el renglón de municiones de ese evento se marca
 `CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO` hasta lograr lectura directa del boletín
 oficial.
 

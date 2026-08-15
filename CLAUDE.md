@@ -319,6 +319,19 @@ permitió que esos fallos llegaran al producto.
 Cuando un control devuelva `CORREGIR ANTES DE PUBLICAR`, se corrige y se vuelve a pasar. Si un
 hallazgo se decide no corregir, la razón se deja escrita en el archivo de fuentes de la edición.
 
+### Cierre de la edición: archivo de pendientes
+
+Último paso obligatorio de cada corte, después de los tres controles: **actualizar
+`reports/_pendientes.md`** con lo que la edición deja abierto — seguimientos judiciales, vacíos sin
+resolver, contradicciones no arbitradas y deuda de método —, y mover a "Cerrados recientemente" lo
+que se haya resuelto.
+
+Ese archivo es el traspaso entre ediciones. La continuidad de ARGOS no vive en la conversación que
+generó un corte, sino en el repositorio: cada edición debe poder arrancar en una sesión nueva leyendo
+`CLAUDE.md`, `reports/_pendientes.md` y la edición anterior, sin depender de que alguien recuerde y
+transcriba la lista de seguimientos. Un pendiente que solo existe en la memoria de una conversación
+es un pendiente perdido.
+
 ### Cifras arrastradas: umbral de fe de erratas
 
 Una cifra que llegue a **dos ediciones consecutivas** sin respaldo citable no se sigue señalando: se

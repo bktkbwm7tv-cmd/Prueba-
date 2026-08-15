@@ -49,7 +49,10 @@ vm.runInContext(code, sandbox);
 // Renderiza con el mismo arreglo EVENTOS y la misma fecha de corte del escritorio.
 vm.runInContext(
   'argosRenderMap("argos-map", EVENTOS);' +
-  'argosRenderRadar("argos-radar", "argos-radar-stats", EVENTOS, CORTE_FECHA);',
+  'argosRenderRadar("argos-radar", "argos-radar-stats", EVENTOS, CORTE_FECHA);' +
+  // El módulo de armamento usa su propio arreglo cuando existe: solo eventos con
+  // aseguramiento contabilizado. Si la edición no lo define, cae a EVENTOS.
+  'argosRenderMap("argos-map-arm", typeof EVENTOS_ARM !== "undefined" ? EVENTOS_ARM : EVENTOS);',
   sandbox
 );
 
@@ -58,7 +61,9 @@ fs.mkdirSync(outDir, { recursive: true });
 fs.writeFileSync(path.join(outDir, "out-map.svg"), store["argos-map"].innerHTML);
 fs.writeFileSync(path.join(outDir, "out-radar.svg"), store["argos-radar"].innerHTML);
 fs.writeFileSync(path.join(outDir, "out-stats.html"), store["argos-radar-stats"].innerHTML);
+fs.writeFileSync(path.join(outDir, "out-map-arm.svg"), store["argos-map-arm"].innerHTML);
 
 console.log("map bytes  :", store["argos-map"].innerHTML.length);
+console.log("map-arm    :", store["argos-map-arm"].innerHTML.length);
 console.log("radar bytes:", store["argos-radar"].innerHTML.length);
 console.log("stats      :", store["argos-radar-stats"].innerHTML);
