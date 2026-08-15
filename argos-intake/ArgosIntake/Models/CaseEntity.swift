@@ -43,6 +43,9 @@ final class CaseEntity {
     @Relationship(deleteRule: .nullify, inverse: \TagEntity.cases)
     var tags: [TagEntity] = []
 
+    @Relationship(deleteRule: .cascade, inverse: \ChatImportEntity.caseRef)
+    var chatImports: [ChatImportEntity] = []
+
     var estatus: CaseStatus {
         get { CaseStatus(rawValue: estatusRaw) ?? .abierto }
         set { estatusRaw = newValue.rawValue }

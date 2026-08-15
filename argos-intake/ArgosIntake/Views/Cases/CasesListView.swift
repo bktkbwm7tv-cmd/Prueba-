@@ -7,6 +7,7 @@ import ArgosCore
 struct CasesListView: View {
     @Query(sort: \CaseEntity.updatedAt, order: .reverse) private var cases: [CaseEntity]
     @State private var showingNewCase = false
+    @State private var showingImportChat = false
 
     let onSelect: (CaseEntity) -> Void
 
@@ -36,6 +37,13 @@ struct CasesListView: View {
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button {
+                    showingImportChat = true
+                } label: {
+                    Label("Importar chat", systemImage: "square.and.arrow.down")
+                }
+            }
+            ToolbarItem(placement: .primaryAction) {
+                Button {
                     showingNewCase = true
                 } label: {
                     Label("Nuevo caso", systemImage: "plus")
@@ -44,6 +52,9 @@ struct CasesListView: View {
         }
         .sheet(isPresented: $showingNewCase) {
             NewCaseView()
+        }
+        .sheet(isPresented: $showingImportChat) {
+            ImportChatView(preselectedCase: nil)
         }
     }
 }

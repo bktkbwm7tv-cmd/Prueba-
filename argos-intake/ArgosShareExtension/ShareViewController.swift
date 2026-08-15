@@ -51,7 +51,9 @@ final class ShareViewController: UIViewController {
             CaseEntity.self,
             ItemEntity.self,
             TagEntity.self,
-            AuditLogEntity.self
+            AuditLogEntity.self,
+            ChatImportEntity.self,
+            MessageEntity.self
         ])
         guard let groupURL = FileManager.default
             .containerURL(forSecurityApplicationGroupIdentifier: FileStorageService.appGroupIdentifier)

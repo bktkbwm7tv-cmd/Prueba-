@@ -8,6 +8,12 @@ options:
 packages:
   ArgosCore:
     path: .
+  # Lectura de los .zip que WhatsApp genera al exportar un chat con
+  # multimedia (sección 5). Solo la necesita la app principal — la Share
+  # Extension no importa chats, así que se excluye de su target más abajo.
+  ZIPFoundation:
+    url: https://github.com/weichsel/ZIPFoundation.git
+    from: "0.9.16"
 
 targets:
   ArgosIntake:
@@ -36,6 +42,7 @@ targets:
       - target: ArgosShareExtension
         embed: true
       - package: ArgosCore
+      - package: ZIPFoundation
 
   ArgosShareExtension:
     type: app-extension
@@ -48,6 +55,10 @@ targets:
           - "ArgosShareExtension.entitlements"
       - path: ArgosIntake/Models
       - path: ArgosIntake/Services
+        excludes:
+          # Solo la app principal importa chats de WhatsApp (sección 5); esto
+          # evita que la extensión necesite enlazar ZIPFoundation.
+          - "ChatImportService.swift"
       - path: ArgosIntake/Views/Shared
     info:
       path: ArgosShareExtension/Info.plist

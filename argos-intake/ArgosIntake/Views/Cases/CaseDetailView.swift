@@ -31,6 +31,23 @@ struct CaseDetailView: View {
             }
             .listRowBackground(ArgosTheme.surface)
 
+            if !caseEntity.chatImports.isEmpty {
+                Section("Conversaciones importadas (\(caseEntity.chatImports.count))") {
+                    ForEach(caseEntity.chatImports.sorted(by: { $0.importedAt > $1.importedAt }), id: \.persistentModelID) { chat in
+                        NavigationLink {
+                            ChatDetailView(chat: chat)
+                        } label: {
+                            VStack(alignment: .leading) {
+                                Text(chat.chatName).foregroundStyle(ArgosTheme.textPrimary)
+                                Text("\(chat.messageCount) mensajes · \(chat.participants.count) participantes")
+                                    .font(.caption).foregroundStyle(ArgosTheme.textSecondary)
+                            }
+                        }
+                    }
+                }
+                .listRowBackground(ArgosTheme.surface)
+            }
+
             ForEach(itemsByType, id: \.0) { type, items in
                 Section("\(type.logicalFolder) (\(items.count))") {
                     ForEach(items.sorted(by: { $0.importedAt > $1.importedAt })) { item in
@@ -48,8 +65,8 @@ struct CaseDetailView: View {
                 .listRowBackground(ArgosTheme.surface)
             }
 
-            if caseEntity.items.isEmpty {
-                Text("Este caso aún no tiene elementos. Usa \"Guardar en ARGOS\" desde WhatsApp o la Captura Rápida.")
+            if caseEntity.items.isEmpty && caseEntity.chatImports.isEmpty {
+                Text("Este caso aún no tiene elementos. Usa \"Guardar en ARGOS\" desde WhatsApp, importa un chat, o la Captura Rápida.")
                     .foregroundStyle(ArgosTheme.textSecondary)
                     .listRowBackground(ArgosTheme.surface)
             }

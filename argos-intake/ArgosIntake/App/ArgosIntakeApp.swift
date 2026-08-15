@@ -11,7 +11,9 @@ struct ArgosIntakeApp: App {
             CaseEntity.self,
             ItemEntity.self,
             TagEntity.self,
-            AuditLogEntity.self
+            AuditLogEntity.self,
+            ChatImportEntity.self,
+            MessageEntity.self
         ])
         // Almacenamiento local-first (sección 27): el store SwiftData vive en
         // el contenedor del App Group para que la Share Extension pueda
