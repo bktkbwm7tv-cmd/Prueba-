@@ -11,10 +11,10 @@ clasificado, indexado, buscable y auditable — sin modificar jamás el archivo 
 Este directorio implementa el **MVP 1** completo descrito en la instrucción maestra (creación de
 casos, Share Extension "Guardar en ARGOS", importación de archivos, bandeja de entrada,
 clasificación automática por extensión, preservación del original, SHA-256, fichas de archivo,
-búsqueda, etiquetas, Face ID/PIN y almacenamiento local) más la primera pieza de **MVP 2**:
-importación de chats completos de WhatsApp (sección 5). OCR, extracción de entidades, mapa,
-timeline, coincidencias entre casos, multiusuario/servidor y ARGOS AI siguen fuera de este alcance
-a propósito (la propia instrucción maestra lo pide así, sección 35).
+búsqueda, etiquetas, Face ID/PIN y almacenamiento local) más dos piezas de **MVP 2**: importación
+de chats completos de WhatsApp (sección 5) y OCR sobre imágenes y PDFs (sección 14). Extracción de
+entidades, mapa, timeline, coincidencias entre casos, multiusuario/servidor y ARGOS AI siguen fuera
+de este alcance a propósito (la propia instrucción maestra lo pide así, sección 35).
 
 ## Por qué este código no está compilado ni probado en este entorno
 
@@ -67,8 +67,10 @@ argos-intake/
                                       parsea con WhatsAppChatParser y vincula cada adjunto
                                       encontrado a su propio ItemEntity vía IngestionService
       AuditLogService              — bitácora de auditoría, solo-inserción (sección 12)
+      OCRService                    — Vision (imágenes) + PDFKit (texto embebido, o cada página
+                                       renderizada y reconocida con Vision si el PDF es un escaneo)
       SearchService                — construye el índice de búsqueda desde SwiftData
-                                      (ítems + mensajes de chats importados)
+                                      (ítems, su texto OCR, y mensajes de chats importados)
       AuthenticationService        — Face ID/Touch ID (LocalAuthentication) + PIN en Keychain
     Views/
       RootView                    — NavigationSplitView de 4 áreas (sección 20) + botón "+" flotante
@@ -78,7 +80,8 @@ argos-intake/
                                       reconstruida: mensajes en orden + adjuntos vinculados)
       Search/SearchView            — buscador global (sección 18)
       Activity/ActivityView        — bitácora como actividad reciente
-      Item/ItemDetailView          — ficha de archivo (secciones 15, 39)
+      Item/ItemDetailView          — ficha de archivo (secciones 15, 39), con extracción de texto
+                                      (OCR) bajo demanda para imágenes y PDF
       Capture/QuickCaptureView     — botón flotante "+" (sección 23): foto/video, documento,
                                       ubicación, nota — todo converge en IngestionService
       Auth/LockScreenView          — pantalla de bloqueo
@@ -118,6 +121,13 @@ argos-intake/
   paso 1 de `ChatImportService` es la evidencia de referencia y no se toca; extraerlo a un
   directorio temporal solo sirve para leer su contenido y copiar los adjuntos, que luego se
   preservan por su cuenta con su propio hash — el directorio de extracción se borra al terminar.
+- **OCR es bajo demanda, no automático.** El analista dispara la extracción desde la ficha del
+  archivo; nada se ejecuta en segundo plano al importar. El texto se guarda dos veces con dos
+  propósitos distintos: `ItemEntity.ocrText` (caché en el modelo, lo que `SearchService` indexa
+  directamente) y un `.txt` en `Derivados/` vía `FileStorageService.storeDerived` (el producto
+  derivado auditable que pide la sección 14) — ninguno de los dos toca el archivo original. Para
+  PDF se intenta primero la capa de texto embebida (exacta, sin "nivel de confianza" porque no es
+  reconocimiento) y solo se cae a Vision página por página cuando el PDF es un escaneo sin texto.
 
 ### Qué falta para tener un `.xcodeproj` abrible
 
@@ -149,6 +159,8 @@ este entorno):
    se compiló en esta sesión. La lógica de fechas de `WhatsAppChatParser` en particular merece una
    prueba manual con una exportación real: la ambigüedad día/mes de WhatsApp es un problema del
    formato, no solo del código, así que vale la pena confirmar con chats reales de tu región.
+5. **Vision/OCR no puede probarse en simulador de forma confiable para todos los idiomas** — probar
+   `OCRService` con fotografías y PDF reales en un dispositivo, no solo en el simulador.
 
 ## Estética ARGOS (sección 21)
 
@@ -159,15 +171,14 @@ prioridad de caso en lugar de al Nivel de Riesgo Nacional.
 
 ## Próximos pasos (MVP2 / MVP3)
 
-Ver secciones 36-37 de la instrucción maestra. Importación de chats de WhatsApp (sección 5) ya está
-implementada; en orden sugerido para lo que sigue, tras validar todo lo anterior en un dispositivo
-real:
+Ver secciones 36-37 de la instrucción maestra. Importación de chats de WhatsApp (sección 5) y OCR
+(sección 14) ya están implementados; en orden sugerido para lo que sigue, tras validar todo lo
+anterior en un dispositivo real:
 
-1. OCR sobre imágenes y PDFs (Vision framework) guardando el texto como derivado, nunca como
-   modificación del original.
-2. ARGOS EXTRACT: extracción de entidades (personas, teléfonos, vehículos, geografía, financiero,
+1. ARGOS EXTRACT: extracción de entidades (personas, teléfonos, vehículos, geografía, financiero,
    identificadores) con distinción explícita entre HECHO / EXTRACCIÓN AUTOMÁTICA / INFERENCIA /
-   VALIDACIÓN HUMANA (sección 29).
-3. Mapa del caso (MapKit) y Timeline ARGOS que mezcle mensajes, fotos, documentos y eventos.
-4. Módulo de Coincidencias ARGOS entre casos (sección 19).
-5. Multiusuario, servidor institucional, sincronización, red de vínculos y ARGOS AI (MVP3).
+   VALIDACIÓN HUMANA (sección 29) — ahora que hay texto OCR además de notas y mensajes, esto tiene
+   más de dónde extraer.
+2. Mapa del caso (MapKit) y Timeline ARGOS que mezcle mensajes, fotos, documentos y eventos.
+3. Módulo de Coincidencias ARGOS entre casos (sección 19).
+4. Multiusuario, servidor institucional, sincronización, red de vínculos y ARGOS AI (MVP3).

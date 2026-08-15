@@ -12,6 +12,8 @@ struct ItemDetailView: View {
     @EnvironmentObject private var session: AppSession
 
     @State private var showingTechnicalDetails = false
+    @State private var isRunningOCR = false
+    @State private var ocrErrorMessage: String?
 
     var body: some View {
         Form {
@@ -56,6 +58,39 @@ struct ItemDetailView: View {
             }
             .listRowBackground(ArgosTheme.surface)
 
+            if isOCREligible {
+                Section("Texto extraído (OCR)") {
+                    if let ocrText = item.ocrText, !ocrText.isEmpty {
+                        Text(ocrText)
+                            .font(.caption)
+                            .foregroundStyle(ArgosTheme.textSecondary)
+                            .lineLimit(8)
+                        if let confidence = item.ocrConfidence {
+                            LabeledContent("Confianza", value: "\(Int((confidence * 100).rounded()))%")
+                        }
+                    } else {
+                        Text("Sin texto extraído todavía.")
+                            .font(.caption)
+                            .foregroundStyle(ArgosTheme.textSecondary)
+                    }
+
+                    Button {
+                        Task { await runOCR() }
+                    } label: {
+                        Label(
+                            isRunningOCR ? "Extrayendo texto…" : (item.ocrText == nil ? "Extraer texto (OCR)" : "Volver a extraer"),
+                            systemImage: "text.viewfinder"
+                        )
+                    }
+                    .disabled(isRunningOCR)
+
+                    if let ocrErrorMessage {
+                        Text(ocrErrorMessage).font(.caption).foregroundStyle(ArgosTheme.alertRed)
+                    }
+                }
+                .listRowBackground(ArgosTheme.surface)
+            }
+
             Section {
                 DisclosureGroup("Detalles técnicos", isExpanded: $showingTechnicalDetails) {
                     LabeledContent("Extensión", value: item.fileExtension)
@@ -70,6 +105,45 @@ struct ItemDetailView: View {
         }
         .scrollContentBackground(.hidden)
         .navigationTitle("Ficha del elemento")
+    }
+
+    private var isOCREligible: Bool {
+        item.type == .image || (item.type == .document && item.fileExtension.lowercased() == "pdf")
+    }
+
+    private func runOCR() async {
+        isRunningOCR = true
+        ocrErrorMessage = nil
+        defer { isRunningOCR = false }
+
+        let storage = FileStorageService()
+        do {
+            let result = try await OCRService().extractText(from: item, storage: storage)
+            item.ocrText = result.text
+            item.ocrConfidence = result.confidence
+
+            if let derived = try? storage.storeDerived(
+                data: Data(result.text.utf8),
+                caseCode: item.caseArgosCode,
+                itemId: item.itemId,
+                filename: "\(item.itemId.uuidString)_ocr.txt"
+            ) {
+                item.ocrRelativePath = derived.relativePath
+            }
+
+            AuditLogService(context: context).record(
+                user: session.currentAnalyst,
+                action: .extraccionDeTexto,
+                caseCode: item.caseArgosCode,
+                itemFilename: item.originalFilename,
+                sha256: item.sha256,
+                detail: "OCR: \(result.text.count) caracteres extraídos"
+            )
+        } catch OCRError.noTextFound {
+            ocrErrorMessage = "No se detectó texto en este archivo."
+        } catch {
+            ocrErrorMessage = "No se pudo extraer texto: \(error.localizedDescription)"
+        }
     }
 
     private func updateVerification(_ newValue: VerificationStatus) {

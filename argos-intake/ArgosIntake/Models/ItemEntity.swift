@@ -48,7 +48,17 @@ final class ItemEntity {
     /// preservado — nunca al derivado.
     var originalRelativePath: String
     var previewRelativePath: String?
+
+    /// Texto extraído por OCR (sección 14), cacheado aquí para que
+    /// `SearchService` lo indexe sin releer el derivado en cada búsqueda.
+    /// El derivado en sí (la fuente de verdad, auditable) vive en
+    /// `ocrRelativePath` — nunca se escribe sobre el original.
     var ocrText: String?
+    var ocrRelativePath: String?
+    /// Confianza promedio que reporta Vision, 0.0–1.0. `nil` cuando el
+    /// texto vino de la capa de texto embebida de un PDF (no hay
+    /// "confianza" que reportar ahí: es texto exacto, no reconocido).
+    var ocrConfidence: Double?
 
     var latitude: Double?
     var longitude: Double?
@@ -121,6 +131,8 @@ final class ItemEntity {
         self.originalRelativePath = originalRelativePath
         self.previewRelativePath = nil
         self.ocrText = nil
+        self.ocrRelativePath = nil
+        self.ocrConfidence = nil
         self.latitude = nil
         self.longitude = nil
     }
