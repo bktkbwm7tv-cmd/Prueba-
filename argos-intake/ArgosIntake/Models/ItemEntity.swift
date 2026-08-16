@@ -68,6 +68,9 @@ final class ItemEntity {
     @Relationship(deleteRule: .nullify, inverse: \TagEntity.items)
     var tags: [TagEntity] = []
 
+    @Relationship(deleteRule: .cascade, inverse: \EntityCandidateEntity.itemRef)
+    var entityCandidates: [EntityCandidateEntity] = []
+
     var type: ItemType {
         get { ItemType(rawValue: typeRaw) ?? .other }
         set { typeRaw = newValue.rawValue }

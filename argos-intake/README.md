@@ -11,10 +11,11 @@ clasificado, indexado, buscable y auditable — sin modificar jamás el archivo 
 Este directorio implementa el **MVP 1** completo descrito en la instrucción maestra (creación de
 casos, Share Extension "Guardar en ARGOS", importación de archivos, bandeja de entrada,
 clasificación automática por extensión, preservación del original, SHA-256, fichas de archivo,
-búsqueda, etiquetas, Face ID/PIN y almacenamiento local) más dos piezas de **MVP 2**: importación
-de chats completos de WhatsApp (sección 5) y OCR sobre imágenes y PDFs (sección 14). Extracción de
-entidades, mapa, timeline, coincidencias entre casos, multiusuario/servidor y ARGOS AI siguen fuera
-de este alcance a propósito (la propia instrucción maestra lo pide así, sección 35).
+búsqueda, etiquetas, Face ID/PIN y almacenamiento local) más tres piezas de **MVP 2**: importación
+de chats completos de WhatsApp (sección 5), OCR sobre imágenes y PDFs (sección 14), y ARGOS EXTRACT
+— extracción de entidades propuestas, nunca confirmadas automáticamente (sección 13). Mapa,
+timeline, coincidencias entre casos, multiusuario/servidor y ARGOS AI siguen fuera de este alcance
+a propósito (la propia instrucción maestra lo pide así, sección 35).
 
 ## Por qué este código no está compilado ni probado en este entorno
 
@@ -50,6 +51,8 @@ argos-intake/
     Search/SearchIndex           — coincidencia de texto normalizado (sección 18)
     Audit/AuditEvent             — catálogo de acciones auditables + AuditLogEntry (sección 11-12)
     Chat/WhatsAppChatParser      — parsing de `_chat.txt` (iOS/Android, ES/EN) — sección 5
+    Extraction/EntityExtractor   — ARGOS EXTRACT: identificadores por patrón (teléfono, IMEI,
+                                    RFC, CURP, CLABE, tarjeta, placa, coordenadas) — sección 13
   Tests/ArgosCoreTests/          — XCTest para cada módulo de arriba
 
   project.yml                    — especificación XcodeGen del proyecto Xcode (ver abajo)
@@ -57,7 +60,8 @@ argos-intake/
   ArgosIntake/                   — target de app (iPadOS → iOS → macOS, sección 3)
     App/ArgosIntakeApp.swift     — entry point, ModelContainer compartido (App Group), AppSession
     Models/                      — @Model de SwiftData: CaseEntity, ItemEntity, TagEntity,
-                                    AuditLogEntity, ChatImportEntity, MessageEntity
+                                    AuditLogEntity, ChatImportEntity, MessageEntity,
+                                    EntityCandidateEntity
     Services/
       FileStorageService         — preservación de originales vs. derivados (secciones 10, 40)
       IngestionService            — pipeline único de ingesta (clasificar → hash → preservar →
@@ -69,6 +73,10 @@ argos-intake/
       AuditLogService              — bitácora de auditoría, solo-inserción (sección 12)
       OCRService                    — Vision (imágenes) + PDFKit (texto embebido, o cada página
                                        renderizada y reconocida con Vision si el PDF es un escaneo)
+      PersonNameExtractor           — nombres de persona/organización vía NaturalLanguage (NLTagger)
+      EntityExtractionService       — corre EntityExtractor + PersonNameExtractor sobre el texto
+                                       OCR/notas de un ítem y crea propuestas sin duplicar lo ya
+                                       revisado
       SearchService                — construye el índice de búsqueda desde SwiftData
                                       (ítems, su texto OCR, y mensajes de chats importados)
       AuthenticationService        — Face ID/Touch ID (LocalAuthentication) + PIN en Keychain
@@ -81,7 +89,8 @@ argos-intake/
       Search/SearchView            — buscador global (sección 18)
       Activity/ActivityView        — bitácora como actividad reciente
       Item/ItemDetailView          — ficha de archivo (secciones 15, 39), con extracción de texto
-                                      (OCR) bajo demanda para imágenes y PDF
+                                      (OCR) y detección de entidades (ARGOS EXTRACT) bajo demanda,
+                                      con Confirmar/Rechazar por cada propuesta
       Capture/QuickCaptureView     — botón flotante "+" (sección 23): foto/video, documento,
                                       ubicación, nota — todo converge en IngestionService
       Auth/LockScreenView          — pantalla de bloqueo
@@ -128,6 +137,17 @@ argos-intake/
   derivado auditable que pide la sección 14) — ninguno de los dos toca el archivo original. Para
   PDF se intenta primero la capa de texto embebida (exacta, sin "nivel de confianza" porque no es
   reconocimiento) y solo se cae a Vision página por página cuando el PDF es un escaneo sin texto.
+- **ARGOS EXTRACT nunca confirma nada por sí mismo (secciones 13, 29, 30).** Cada hallazgo entra
+  como `EntityCandidateEntity` con estatus `RECIBIDO` — el mismo vocabulario de la sección 30, no
+  uno inventado para esta función — y solo pasa a `VERIFICADO` o `DESCARTADO` cuando el analista lo
+  revisa desde la ficha del ítem. La separación HECHO / EXTRACCIÓN AUTOMÁTICA / VALIDACIÓN HUMANA de
+  la sección 29 está en el propio dato, no solo en la interfaz: nada en el modelo permite que una
+  entidad detectada se confunda con una confirmada. La detección de identificadores estructurados
+  (teléfono, RFC, CURP, CLABE, tarjeta, coordenadas) es Swift puro y probado (`ArgosCore`); nombres
+  de persona/organización usan `NaturalLanguage` (`PersonNameExtractor`), Apple-only, en el target
+  de la app. No hay extractor de domicilios/colonias en texto libre a propósito: sin un gazetteer
+  real de municipios y estados, "detectar" una dirección sería adivinar — la única señal geográfica
+  que se extrae de texto son pares de coordenadas explícitas.
 
 ### Qué falta para tener un `.xcodeproj` abrible
 
@@ -171,14 +191,15 @@ prioridad de caso en lugar de al Nivel de Riesgo Nacional.
 
 ## Próximos pasos (MVP2 / MVP3)
 
-Ver secciones 36-37 de la instrucción maestra. Importación de chats de WhatsApp (sección 5) y OCR
-(sección 14) ya están implementados; en orden sugerido para lo que sigue, tras validar todo lo
-anterior en un dispositivo real:
+Ver secciones 36-37 de la instrucción maestra. Importación de chats de WhatsApp (sección 5), OCR
+(sección 14) y ARGOS EXTRACT (sección 13) ya están implementados; en orden sugerido para lo que
+sigue, tras validar todo lo anterior en un dispositivo real:
 
-1. ARGOS EXTRACT: extracción de entidades (personas, teléfonos, vehículos, geografía, financiero,
-   identificadores) con distinción explícita entre HECHO / EXTRACCIÓN AUTOMÁTICA / INFERENCIA /
-   VALIDACIÓN HUMANA (sección 29) — ahora que hay texto OCR además de notas y mensajes, esto tiene
-   más de dónde extraer.
-2. Mapa del caso (MapKit) y Timeline ARGOS que mezcle mensajes, fotos, documentos y eventos.
-3. Módulo de Coincidencias ARGOS entre casos (sección 19).
+1. Extender ARGOS EXTRACT a los mensajes de chats importados (`MessageEntity`), no solo a ítems —
+   el servicio y el modelo ya están escritos para ser genéricos, falta la UI en `ChatDetailView`.
+2. Mapa del caso (MapKit) y Timeline ARGOS que mezcle mensajes, fotos, documentos y eventos —
+   coordenadas ya detectadas por ARGOS EXTRACT pueden alimentar los primeros puntos del mapa.
+3. Módulo de Coincidencias ARGOS entre casos (sección 19) — ahora hay entidades confirmadas
+   (`EntityCandidateEntity` en estatus `VERIFICADO`) que son la base natural para cruzar entre
+   casos.
 4. Multiusuario, servidor institucional, sincronización, red de vínculos y ARGOS AI (MVP3).
