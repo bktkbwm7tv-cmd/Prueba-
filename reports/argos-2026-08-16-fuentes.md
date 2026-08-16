@@ -30,8 +30,19 @@ da `ENOTFOUND` mientras que el dominio correcto `fiscalia.chihuahua.gob.mx` exis
 `veracruz.gob.mx/seguridad/`.
 
 **Ningún documento primario se leyó por acceso directo en toda la edición.** Toda la información
-proviene de fragmentos y resúmenes de `WebSearch`. **Techo de confianza aplicado: ★★★★☆** —
-ningún hecho alcanza ★★★★★, que exige documento oficial o fotografía verificada.
+proviene de fragmentos y resúmenes de `WebSearch`.
+
+**Techo de confianza efectivo: ★★★☆☆ para los hechos de la ventana.** La edición se abrió con un
+techo declarado de ★★★★☆ (el nivel de ★★★★★ exige documento oficial o fotografía verificada), pero
+el control `procedencia-cifras` hizo notar que ★★★★☆ exige *fuente institucional + un medio
+nacional*, y que **ningún documento institucional se leyó**: los comunicados se citan, no se leen.
+En consecuencia se degradaron a ★★★☆☆ las dos fichas que llevaban ★★★★☆ (`ARG-99-005` y
+`ARG-99-006`). **La única ficha que conserva ★★★★☆ es `ARG-99-SEN-CIERRE`**, porque el boletín de la
+FGR está reproducido íntegramente —con desglose nominal— en dos medios, lo que sí constituye acceso
+al texto institucional aunque sea por vía indirecta.
+
+La etiqueta `Institucional (indirecta)` que aparece en varias fichas significa, en toda esta
+edición: **comunicado citado por prensa, no leído; no satisface la pata institucional de la escala.**
 
 ### Segundo límite, no previsto: el presupuesto de búsqueda
 
@@ -273,19 +284,29 @@ Plana Mayor · El Valle · Heraldo Edomex · DigitalMex
 
 | Categoría | Total |
 |---|---|
-| Armas cortas | 1 |
+| Armas cortas | 0 |
 | Armas largas | 19 |
-| Cartuchos | 15,496 |
-| Cargadores | 1,132 |
+| Cartuchos | 15,480 |
+| Cargadores | 1,131 |
 | Granadas | 0 |
 | AEI | 0 |
 | Explosivos | 0 |
 | Armamento especial | 0 |
-| Estados con aseguramientos | 2 (Sinaloa, Zacatecas) |
-| Eventos contabilizados | 2 |
+| Estados con aseguramientos | 2 (Sinaloa, Zacatecas); **1 con cifras integradas al total** |
+| Eventos contabilizados | 2 (**1 con desglose integrado**) |
 | Personas detenidas | 7 |
 
 **Cartuchos y cargadores nunca se suman entre sí.**
+
+**Corrección del control `procedencia-cifras` (aplicada).** La primera versión de esta edición
+publicaba 1 arma corta, 15,496 cartuchos y 1,132 cargadores, integrando el desglose de Sain Alto.
+El control detectó **corroboración asimétrica**: las tres fuentes coinciden en el aseguramiento y en
+los 5 detenidos, pero **solo ZHN publica el desglose numérico**; Express Zacatecas se limita a "un
+arma de fuego", sin clasificar ni cuantificar munición. Conforme a la escala del módulo, una cifra
+granular sin corroboración es *versión aislada* y **no se integra a los totales** — es el mismo
+mecanismo del caso Huajicori. Se retiró del total numérico (arma corta → 0, cartuchos → 15,480,
+cargadores → 1,131), se conservaron los **5 detenidos** por estar corroborados por las tres fuentes,
+y el arma pasó al Bloque 3 como evento cualitativo sin clasificar.
 
 ### Decisión de método sobre la integración al total
 
@@ -322,7 +343,9 @@ corte`— queda documentada aquí como alternativa expresa.
 ### Indicador de cobertura — armamento
 
 - **Portales leídos por acceso directo: 0** de 128 estatales objetivo (4 × 32) y 0 federales.
-- **Portales estatales alcanzados por búsqueda dirigida (no leídos): ~40 de 128.**
+- **Portales estatales alcanzados por búsqueda dirigida (no leídos): mínimo defendible 40 de 128.**
+  La cifra exacta **no es reconstruible** a partir de los seis informes regionales; se declara el
+  mínimo demostrable y nunca una estimación al alza.
 - **Mesas de Construcción de la Paz: 0 consultadas en todo el país.**
 - **Entidades sin ningún portal institucional alcanzado (NO REVISADAS): Baja California Sur,
   Tlaxcala, Hidalgo, Querétaro.**
@@ -344,6 +367,10 @@ derechos civiles y políticos · hecho de agosto de 2025 · publicado **15-ago-2
 informada** · multa y reparación **no publicadas**.
 Fuentes: Infobae `https://www.infobae.com/mexico/2026/08/15/dictan-sentencia-de-40-anos-de-carcel-para-extorsionadora-del-sector-constructor-en-ecatepec/` ·
 La Jornada `https://www.jornada.com.mx/noticia/2026/08/15/estados/dan-40-anos-a-mujer-que-extorsiono-a-una-familia-en-ecatepec-se-decia-integrante-de-la-ctm`
+**Monto de la extorsión**: **5,000 pesos** exigidos a una persona que supervisaba la construcción de
+su casa, haciéndose pasar por trabajadora de una central obrera (CTM), con amenaza de detener la
+obra y recurrir a un grupo criminal. Cifra publicada por Infobae y La Jornada; sostiene la lectura
+analítica de la ficha sobre la desproporción entre pena y monto.
 **Término expreso verificado**: "dictan sentencia", "40 años de cárcel", pena impuesta. Cumple el
 criterio jurídico — no es vinculación ni prisión preventiva.
 **Estatus**: `PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL`. Boletín de la
@@ -381,7 +408,7 @@ integrables**: las tres carecen de comunicado institucional leído. Pena localiz
 40 años + 8 años + 2 años 8 meses = **50 años 8 meses** sobre **3 personas**. Sentencias firmes: 0.
 Reparación del daño: `SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE`.
 
-### PENDIENTE CERRADO — 19 sentenciados del CJNG, Jalisco
+### ARG-99-SEN-CIERRE — PENDIENTE CERRADO: 19 sentenciados del CJNG, Jalisco
 
 **Existe comunicado de la FGR**, localizado por reproducción íntegra:
 AFmedios `https://www.afmedios.com/fgr-obtiene-sentencias-de-hasta-18-anos-de-prision-contra-19-personas-detenidas-con-arsenal-en-jalisco/` ·
@@ -395,7 +422,12 @@ La Prensa `https://www.laprensa.mx/notas.asp?id=809795`
   Alto. Arsenal: 28 armas largas, 2,470 cartuchos, 18 chalecos, 12 placas balísticas.
   Compurgan en Puente Grande.
 - **Salvedad de trazabilidad**: la URL directa del comunicado en `fgr.org.mx` **no se localizó
-  indexada**. Confianza sube de ★★★☆☆ a **★★★★☆**.
+  indexada**. Confianza sube de ★★★☆☆ a **★★★★☆** — es la única ficha de la edición que sostiene
+  ese nivel, por estar el boletín reproducido íntegramente en dos medios.
+- **Salvedad sobre el titular**: la única cadena verificable en URL es el slug de AFmedios
+  (`...sentencias-de-hasta-18-anos-de-prision...`), que **redondea a la baja**: la pena mayor
+  documentada en el cuerpo es de 18 años 1 mes 22 días, superior a los "hasta 18 años" del titular.
+  El desglose fino (18a1m22d / 16a6m) proviene del cuerpo reproducido, vía resumen.
 - **Sentencia del 10-ago** → ventana de una edición anterior. **No se integra al conteo de ARGOS 99**;
   se publica como cierre de pendiente. Tiempo procesal: **casi cuatro años** entre hecho y sentencia.
 
@@ -416,7 +448,8 @@ Poder Judicial publica resoluciones individuales.
 
 ### Indicador de cobertura — sentencias
 
-- **Fiscalías revisadas por lectura directa: 0 de 32.** Consultadas por búsqueda dirigida: ~22 de 32.
+- **Fiscalías revisadas por lectura directa: 0 de 32.** Consultadas por búsqueda dirigida:
+  **mínimo defendible 22 de 32** (cifra exacta no reconstruible; se declara el mínimo demostrable).
 - **FGR revisada**: sí, por búsqueda dirigida; portal no legible.
 - **Fiscalías con sentencia publicada localizada: 3** (FGJEM, FGE Tabasco, FGESLP), más FGR en
   ventana anterior.
@@ -464,12 +497,35 @@ cargadores, 490 cartuchos, 1 chaleco táctico y 100 kg de marihuana**.
    25 años de prisión tras una confesión obtenida bajo tortura.
    La Jornada `https://www.jornada.com.mx/noticia/2026/08/14/estados/detienen-a-ex-policia-judicial-de-morelos-por-tortura-contra-mujer-que-paso-25-anos-en-prision`
 
-### Contradicción documental interna heredada
+### ARG-99-FE-003 — Fe de erratas de procedencia: indicador SESNSP
 
-La pág. 4 de `argos-2026-08-15.html` acredita una corrección de cifras al control
+Detectada por el control `procedencia-cifras`. El indicador de homicidio doloso que ARGOS viene
+publicando como único indicador oficial nacional arrastraba tres defectos:
+
+1. **Edición de origen mal atribuida.** ARGOS 98 y la primera versión de ARGOS 99 lo atribuían a
+   **ARGOS 90**. Su entrada real es **ARGOS 86** (`reports/argos-2026-08-02.html`), verificado por
+   `grep` sobre todo `reports/`.
+2. **Par de origen suprimido.** ARGOS 86 publicaba **86.9 → 45.4 víctimas/día (−48%)**, SESNSP /
+   Gabinete, sep-2024 → jun-2026. Las ediciones intermedias dejaron caer el par y conservaron solo
+   el porcentaje derivado, que por sí solo no es auditable. **Restituido en esta edición.**
+3. **Contradicción suprimida.** ARGOS 90 (`reports/argos-2026-08-07.html`) registró una **cifra
+   alterna de −60%** para el mismo periodo, marcada entonces como *no verificada en portal
+   primario*. Ediciones posteriores la eliminaron sin resolverla. **Repuesta como contradicción
+   abierta.**
+
+El renglón se publica marcado `HEREDADO — NO REVERIFICADO EN ESTA EDICIÓN`: con el egreso
+bloqueado, `gob.mx/sesnsp` no es consultable y la reverificación es materialmente imposible. **No
+se retira el dato** —tuvo respaldo citable en su edición de origen—, pero deja de presentarse como
+indicador limpio.
+
+### ARG-99-FE-004 — Contradicción documental interna heredada: RESUELTA
+
+La pág. 4 de `argos-2026-08-15.html` acreditaba una corrección de cifras al control
 `procedencia-cifras`, mientras que `reports/_pendientes.md` —actualizado en esa misma edición—
-afirma que ese control **nunca se ha ejecutado**. Ambas afirmaciones no pueden ser ciertas a la vez.
-**No se arbitra**; se traslada a `_pendientes.md` para que ARGOS 100 la resuelva.
+afirmaba que ese control **nunca se había ejecutado**. La ejecución de hoy la arbitra: **ARGOS 99 es
+la primera ejecución real del control**, luego `_pendientes.md` era el documento correcto y la
+atribución de ARGOS 98 debe leerse como **corrección editorial interna**, no como hallazgo de
+`procedencia-cifras`. **Cerrada, no heredada.**
 
 ### Vacío de edición anterior detectado de paso
 
@@ -486,7 +542,9 @@ ARGOS 99.
 ## Hechos NO integrados por imposibilidad de verificación
 
 El agotamiento del presupuesto de búsqueda impidió verificar dos candidatos. Conforme al principio
-de cero información inventada, **no se integran** y se trasladan a `_pendientes.md`:
+de cero información inventada, **no se integran**. Por indicación del control `procedencia-cifras`
+**dejaron de vivir solo en este anexo**: aparecen ahora como bloque visible `CANDIDATOS NO
+VERIFICADOS` en la pág. 2 del reporte y en `_pendientes.md` como prioridad 1.
 
 1. **Azcapotzalco, CDMX** — cuatro personas ejecutadas, entre ellas un **menor de 13 años**, en la
    madrugada del domingo 16-ago, col. Pueblo de Santa María Malinalco. Fuente única e indirecta
@@ -509,6 +567,15 @@ trata de personas · secuestro masivo · motines.
 `https://www.jornada.com.mx/2026/08/15/politica/004n2pol`): se presentó el manual de operación de
 las fiscalías o unidades especializadas para la recepción de denuncias, investigación y persecución
 del delito de extorsión, y se acordó fortalecer las especializadas en desaparición.
+
+## Indicadores oficiales — respaldo
+
+**SESNSP / Gabinete de Seguridad — homicidio doloso.** `86.9 → 45.4 víctimas/día (−48%)`, periodo
+sep-2024 → jun-2026. Entrada original: **ARGOS 86**, `reports/argos-2026-08-02.html`. Estado en esta
+edición: `HEREDADO — NO REVERIFICADO` (portal `gob.mx/sesnsp` no consultable por bloqueo de egreso).
+**Contradicción abierta**: cifra alterna de −60% registrada en ARGOS 90 como no verificada. Ver
+`ARG-99-FE-003`. Es el único indicador oficial que publica esta edición; no se derivan de él tasas,
+proyecciones ni tendencias.
 
 ## Nota de generación
 
