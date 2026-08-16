@@ -270,8 +270,10 @@ Plana Mayor · El Valle · Heraldo Edomex · DigitalMex
 ### ARG-99-ARM-002 — Sain Alto, Zacatecas (🟢 VERDE)
 
 - **Hecho 15-ago, publicado 15-ago.** "Operativo Tornado", col. Lomas de San Sebastián.
-  **1 arma corta, 1 cargador, 16 cartuchos, 5 detenidos**, más 30 envoltorios de presunta
-  metanfetamina y 2 equipos de comunicación (no son línea de conteo de armamento).
+  **5 detenidos** (integrados) y **1 arma de fuego sin clasificar**; el desglose publicado —1 arma
+  corta, 1 cargador, 16 cartuchos— **NO se integra al total nacional** (réplica única, ver reservas
+  abajo). Además 30 envoltorios de presunta metanfetamina y 2 equipos de comunicación (no son línea
+  de conteo de armamento).
   Ejército, GN, FRIZ y FGJEZ.
 - **Fuentes**: ZHN `https://zhn.com.mx/detienen-fuerzas-de-seguridad-a-cinco-probables-generadores-de-violencia-aseguran-arma-de-fuego-y-droga/` ·
   Express Zacatecas `https://expresszacatecas.com/seguridad/policia/detienen-a-cinco-generadores-de-violencia-en-sain-alto` ·
