@@ -11,11 +11,12 @@ clasificado, indexado, buscable y auditable — sin modificar jamás el archivo 
 Este directorio implementa el **MVP 1** completo descrito en la instrucción maestra (creación de
 casos, Share Extension "Guardar en ARGOS", importación de archivos, bandeja de entrada,
 clasificación automática por extensión, preservación del original, SHA-256, fichas de archivo,
-búsqueda, etiquetas, Face ID/PIN y almacenamiento local) más tres piezas de **MVP 2**: importación
-de chats completos de WhatsApp (sección 5), OCR sobre imágenes y PDFs (sección 14), y ARGOS EXTRACT
-— extracción de entidades propuestas, nunca confirmadas automáticamente (sección 13). Mapa,
-timeline, coincidencias entre casos, multiusuario/servidor y ARGOS AI siguen fuera de este alcance
-a propósito (la propia instrucción maestra lo pide así, sección 35).
+búsqueda, etiquetas, Face ID/PIN y almacenamiento local) más casi todo **MVP 2**: importación de
+chats completos de WhatsApp (sección 5), OCR sobre imágenes y PDFs (sección 14), ARGOS EXTRACT —
+extracción de entidades propuestas, nunca confirmadas automáticamente (sección 13) —, Mapa del Caso
+(sección 16) y Timeline ARGOS (sección 17). Coincidencias entre casos, multiusuario/servidor y
+ARGOS AI siguen fuera de este alcance a propósito (la propia instrucción maestra lo pide así,
+sección 35).
 
 ## Por qué este código no está compilado ni probado en este entorno
 
@@ -44,7 +45,8 @@ argos-intake/
   Package.swift                  — paquete SPM ArgosCore (multiplataforma, sin UIKit/SwiftData)
   Sources/ArgosCore/
     Models/                      — ItemType, ItemSubtype, CaseStatus, PriorityLevel,
-                                    InboxStatus, VerificationStatus, ClassificationStatus, TagCategory
+                                    InboxStatus, VerificationStatus, ClassificationStatus,
+                                    TagCategory, LocationPointKind
     Identifiers/ArgosIdentifier  — formato ARGOS-[CASO]-[AÑO]-[TIPO]-[CONSECUTIVO] (sección 9)
     Classification/FileClassifier — clasificación automática por extensión (sección 6)
     Hashing/FileHasher           — SHA-256 en streaming vía swift-crypto/CryptoKit (sección 10-11)
@@ -90,10 +92,16 @@ argos-intake/
       Search/SearchView            — buscador global (sección 18)
       Activity/ActivityView        — bitácora como actividad reciente
       Item/ItemDetailView          — ficha de archivo (secciones 15, 39), con extracción de texto
-                                      (OCR) y detección de entidades (ARGOS EXTRACT) bajo demanda,
-                                      con Confirmar/Rechazar por cada propuesta
+                                      (OCR), detección de entidades (ARGOS EXTRACT) y tipo de punto
+                                      para ítems de ubicación (sección 16), todo bajo demanda con
+                                      Confirmar/Rechazar por cada propuesta de entidad
       Capture/QuickCaptureView     — botón flotante "+" (sección 23): foto/video, documento,
                                       ubicación, nota — todo converge en IngestionService
+      Map/CaseMapView              — Mapa del Caso (sección 16): un pin por ítem con coordenadas,
+                                      diferenciados por tipo (LocationPointKind), no por color
+      Timeline/CaseTimelineView    — Timeline ARGOS (sección 17): ítems + mensajes de chat
+                                      mezclados cronológicamente, agrupados por día, con filtros
+                                      por tipo de archivo, categoría de etiqueta y fuente
       Auth/LockScreenView          — pantalla de bloqueo
       Shared/                      — tema visual ARGOS, selector de etiquetas, y
                                       EntityCandidateRow/EntityCandidateGroupedList (ARGOS EXTRACT,
@@ -151,6 +159,19 @@ argos-intake/
   de la app. No hay extractor de domicilios/colonias en texto libre a propósito: sin un gazetteer
   real de municipios y estados, "detectar" una dirección sería adivinar — la única señal geográfica
   que se extrae de texto son pares de coordenadas explícitas.
+- **El mapa diferencia por ícono, no por color (sección 16).** A diferencia del semáforo
+  rojo/amarillo/verde de los reportes ARGOS (que sí clasifica por gravedad), la sección 16 de
+  ARGOS INTAKE solo pide diferenciar el *tipo* de punto — domicilio, avistamiento, vehículo,
+  cámara, banco, cajero, antena, evento, hallazgo, punto de interés — así que `CaseMapView` no
+  inventa un esquema de color que el instructivo no pide ahí. `ItemEntity.locationPointKind` es
+  `nil` hasta que el analista lo clasifica explícitamente; nunca se infiere de otro campo.
+- **El Timeline omite lo que no puede fechar con certeza.** Un mensaje cuya fecha no se pudo
+  interpretar (ver la ambigüedad día/mes de `WhatsAppChatParser`) no aparece en `CaseTimelineView`
+  en vez de mostrarse con una fecha inventada. Los ítems usan `importedAt` como fecha del evento —
+  la mejor aproximación disponible hasta que exista lectura de metadatos EXIF/de captura (fuera de
+  alcance de MVP2). El filtro por etiqueta (persona/teléfono/vehículo/ubicación, sección 17) solo
+  puede aplicarse a ítems — los mensajes no llevan etiquetas — así que con ese filtro activo los
+  mensajes se excluyen en vez de mostrarse sin evaluar.
 
 ### Qué falta para tener un `.xcodeproj` abrible
 
@@ -194,16 +215,11 @@ prioridad de caso en lugar de al Nivel de Riesgo Nacional.
 
 ## Próximos pasos (MVP2 / MVP3)
 
-Ver secciones 36-37 de la instrucción maestra. Importación de chats de WhatsApp (sección 5), OCR
-(sección 14) y ARGOS EXTRACT (sección 13) ya están implementados; en orden sugerido para lo que
-sigue, tras validar todo lo anterior en un dispositivo real:
+Ver secciones 36-37 de la instrucción maestra. De MVP2 ya están implementados: importación de
+chats de WhatsApp (sección 5), OCR (sección 14), ARGOS EXTRACT sobre ítems y mensajes (sección 13),
+Mapa del Caso (sección 16) y Timeline ARGOS (sección 17). Queda:
 
-ARGOS EXTRACT ya corre tanto sobre ítems como sobre mensajes de chats importados (con
-`EntityCandidateGroupedList` compartido entre `ItemDetailView` y `ChatDetailView`). Lo que sigue:
-
-1. Mapa del caso (MapKit) y Timeline ARGOS que mezcle mensajes, fotos, documentos y eventos —
-   coordenadas ya detectadas por ARGOS EXTRACT pueden alimentar los primeros puntos del mapa.
-2. Módulo de Coincidencias ARGOS entre casos (sección 19) — ahora hay entidades confirmadas
+1. Módulo de Coincidencias ARGOS entre casos (sección 19) — ahora hay entidades confirmadas
    (`EntityCandidateEntity` en estatus `VERIFICADO`) que son la base natural para cruzar entre
-   casos.
-3. Multiusuario, servidor institucional, sincronización, red de vínculos y ARGOS AI (MVP3).
+   casos: mismo valor, misma categoría, casos distintos.
+2. Multiusuario, servidor institucional, sincronización, red de vínculos y ARGOS AI (MVP3).

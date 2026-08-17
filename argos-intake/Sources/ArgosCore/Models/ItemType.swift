@@ -48,6 +48,25 @@ public enum ItemType: String, Codable, CaseIterable, Sendable, Hashable {
         case .other: return "Otro"
         }
     }
+
+    /// Nombre de SF Symbol para representar el tipo en listas, bandeja de
+    /// entrada y timeline — un solo lugar para que todas las vistas usen
+    /// el mismo glifo por tipo.
+    public var symbolName: String {
+        switch self {
+        case .image: return "photo"
+        case .video: return "video"
+        case .audio: return "waveform"
+        case .document: return "doc.text"
+        case .message: return "message"
+        case .location: return "mappin.circle"
+        case .phone: return "phone"
+        case .vehicle: return "car"
+        case .person: return "person"
+        case .financial: return "banknote"
+        case .other: return "questionmark.folder"
+        }
+    }
 }
 
 /// Subclasificaciones sugeridas por tipo (sección 6). No exhaustivo: el

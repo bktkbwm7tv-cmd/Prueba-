@@ -41,6 +41,23 @@ struct ItemDetailView: View {
             }
             .listRowBackground(ArgosTheme.surface)
 
+            if item.type == .location {
+                Section("Punto en el mapa (sección 16)") {
+                    Picker("Tipo de punto", selection: Binding(get: { item.locationPointKind }, set: { item.locationPointKind = $0 })) {
+                        Text("Sin clasificar").tag(LocationPointKind?.none)
+                        ForEach(LocationPointKind.allCases, id: \.self) { kind in
+                            Label(kind.displayName, systemImage: kind.symbolName).tag(LocationPointKind?.some(kind))
+                        }
+                    }
+                    if let latitude = item.latitude, let longitude = item.longitude {
+                        LabeledContent("Coordenadas", value: String(format: "%.6f, %.6f", latitude, longitude))
+                    } else {
+                        Text("Sin coordenadas registradas.").font(.caption).foregroundStyle(ArgosTheme.textSecondary)
+                    }
+                }
+                .listRowBackground(ArgosTheme.surface)
+            }
+
             Section("Origen") {
                 LabeledContent("Caso", value: item.caseArgosCode)
                 LabeledContent("Fuente", value: item.source)

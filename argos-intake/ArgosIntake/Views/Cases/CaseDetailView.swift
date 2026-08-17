@@ -31,6 +31,20 @@ struct CaseDetailView: View {
             }
             .listRowBackground(ArgosTheme.surface)
 
+            Section("Herramientas") {
+                NavigationLink {
+                    CaseMapView(caseEntity: caseEntity)
+                } label: {
+                    Label("Mapa del caso", systemImage: "map")
+                }
+                NavigationLink {
+                    CaseTimelineView(caseEntity: caseEntity)
+                } label: {
+                    Label("Timeline ARGOS", systemImage: "clock.arrow.circlepath")
+                }
+            }
+            .listRowBackground(ArgosTheme.surface)
+
             if !caseEntity.chatImports.isEmpty {
                 Section("Conversaciones importadas (\(caseEntity.chatImports.count))") {
                     ForEach(caseEntity.chatImports.sorted(by: { $0.importedAt > $1.importedAt }), id: \.persistentModelID) { chat in

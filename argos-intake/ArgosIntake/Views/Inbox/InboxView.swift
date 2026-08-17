@@ -73,7 +73,7 @@ private struct InboxRow: View {
 
     var body: some View {
         HStack(spacing: 12) {
-            Image(systemName: iconName)
+            Image(systemName: item.type.symbolName)
                 .foregroundStyle(ArgosTheme.cyan)
                 .frame(width: 28)
 
@@ -92,22 +92,6 @@ private struct InboxRow: View {
                 .padding(.horizontal, 8).padding(.vertical, 3)
                 .background(ArgosTheme.surfaceElevated, in: Capsule())
                 .foregroundStyle(ArgosTheme.textSecondary)
-        }
-    }
-
-    private var iconName: String {
-        switch item.type {
-        case .image: return "photo"
-        case .video: return "video"
-        case .audio: return "waveform"
-        case .document: return "doc.text"
-        case .message: return "message"
-        case .location: return "mappin.circle"
-        case .phone: return "phone"
-        case .vehicle: return "car"
-        case .person: return "person"
-        case .financial: return "banknote"
-        case .other: return "questionmark.folder"
         }
     }
 }

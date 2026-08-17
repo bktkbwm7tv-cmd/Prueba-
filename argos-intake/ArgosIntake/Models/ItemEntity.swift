@@ -62,6 +62,10 @@ final class ItemEntity {
 
     var latitude: Double?
     var longitude: Double?
+    /// Solo tiene sentido cuando `type == .location` (sección 16). No se
+    /// infiere de ningún otro campo — sin valor, el mapa lo trata como
+    /// `.puntoDeInteres` genérico hasta que el analista lo clasifique.
+    var locationPointKindRaw: String?
 
     var caseRef: CaseEntity?
 
@@ -94,6 +98,11 @@ final class ItemEntity {
     var inboxStatus: InboxStatus {
         get { InboxStatus(rawValue: inboxStatusRaw) ?? .pendiente }
         set { inboxStatusRaw = newValue.rawValue }
+    }
+
+    var locationPointKind: LocationPointKind? {
+        get { locationPointKindRaw.flatMap(LocationPointKind.init(rawValue:)) }
+        set { locationPointKindRaw = newValue?.rawValue }
     }
 
     init(
@@ -138,5 +147,6 @@ final class ItemEntity {
         self.ocrConfidence = nil
         self.latitude = nil
         self.longitude = nil
+        self.locationPointKindRaw = nil
     }
 }
