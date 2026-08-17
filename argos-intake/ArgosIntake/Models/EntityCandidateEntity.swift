@@ -14,7 +14,13 @@ final class EntityCandidateEntity {
     @Attribute(.unique) var id: UUID
 
     var caseArgosCode: String
+    /// La entidad viene de un ítem o de un mensaje de chat — nunca de
+    /// ambos. Dos relaciones opcionales en lugar de una jerarquía común
+    /// porque `ItemEntity` y `MessageEntity` son fuentes con forma distinta
+    /// (archivo vs. renglón de conversación) y no vale la pena forzar una
+    /// abstracción compartida solo para esto.
     var itemRef: ItemEntity?
+    var messageRef: MessageEntity?
 
     var categoryRaw: String
     /// Etiqueta específica ("RFC", "Teléfono", "Nombre de persona"...).

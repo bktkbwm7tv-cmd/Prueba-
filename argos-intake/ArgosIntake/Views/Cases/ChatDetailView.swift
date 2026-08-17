@@ -7,9 +7,18 @@ import ArgosCore
 /// ficha de archivo cuando el paquete los incluía.
 struct ChatDetailView: View {
     @Bindable var chat: ChatImportEntity
+    @Environment(\.modelContext) private var context
+    @EnvironmentObject private var session: AppSession
+
+    @State private var isRunningExtraction = false
+    @State private var extractionMessage: String?
 
     private var orderedMessages: [MessageEntity] {
         chat.messages.sorted { $0.sequenceIndex < $1.sequenceIndex }
+    }
+
+    private var allCandidates: [EntityCandidateEntity] {
+        chat.messages.flatMap(\.entityCandidates)
     }
 
     private let timeFormatter: DateFormatter = {
@@ -34,6 +43,29 @@ struct ChatDetailView: View {
             }
             .listRowBackground(ArgosTheme.surface)
 
+            Section("Entidades detectadas (ARGOS EXTRACT)") {
+                Text("Propuestas automáticas sobre el texto de los mensajes — ninguna se trata como hecho confirmado hasta que la revises.")
+                    .font(.caption)
+                    .foregroundStyle(ArgosTheme.textSecondary)
+
+                EntityCandidateGroupedList(candidates: allCandidates, onConfirm: confirm, onReject: reject)
+
+                Button {
+                    Task { await runEntityExtraction() }
+                } label: {
+                    Label(
+                        isRunningExtraction ? "Analizando…" : "Detectar entidades en la conversación",
+                        systemImage: "sparkle.magnifyingglass"
+                    )
+                }
+                .disabled(isRunningExtraction || chat.messages.isEmpty)
+
+                if let extractionMessage {
+                    Text(extractionMessage).font(.caption).foregroundStyle(ArgosTheme.textSecondary)
+                }
+            }
+            .listRowBackground(ArgosTheme.surface)
+
             Section("Mensajes") {
                 ForEach(orderedMessages, id: \.persistentModelID) { message in
                     MessageRow(message: message, timeFormatter: timeFormatter)
@@ -43,6 +75,44 @@ struct ChatDetailView: View {
         }
         .scrollContentBackground(.hidden)
         .navigationTitle(chat.chatName)
+    }
+
+    private func runEntityExtraction() async {
+        isRunningExtraction = true
+        extractionMessage = nil
+        defer { isRunningExtraction = false }
+
+        let service = EntityExtractionService(context: context, currentUser: session.currentAnalyst)
+        let created = service.extractEntities(forChat: chat)
+        extractionMessage = created.isEmpty
+            ? "No se detectaron entidades nuevas."
+            : "\(created.count) entidad(es) nueva(s) propuesta(s)."
+    }
+
+    private func confirm(_ candidate: EntityCandidateEntity) {
+        candidate.status = .verificado
+        candidate.reviewedAt = Date()
+        candidate.reviewedBy = session.currentAnalyst
+        AuditLogService(context: context).record(
+            user: session.currentAnalyst,
+            action: .cambioDeMetadatosAdministrativos,
+            caseCode: chat.caseArgosCode,
+            itemFilename: chat.chatName,
+            detail: "Entidad confirmada: \(candidate.label) \"\(candidate.value)\""
+        )
+    }
+
+    private func reject(_ candidate: EntityCandidateEntity) {
+        candidate.status = .descartado
+        candidate.reviewedAt = Date()
+        candidate.reviewedBy = session.currentAnalyst
+        AuditLogService(context: context).record(
+            user: session.currentAnalyst,
+            action: .cambioDeMetadatosAdministrativos,
+            caseCode: chat.caseArgosCode,
+            itemFilename: chat.chatName,
+            detail: "Entidad descartada: \(candidate.label) \"\(candidate.value)\""
+        )
     }
 }
 

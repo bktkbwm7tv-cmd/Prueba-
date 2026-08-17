@@ -37,6 +37,9 @@ final class MessageEntity {
     /// desacuerdo con la interpretación automática.
     var rawLine: String
 
+    @Relationship(deleteRule: .cascade, inverse: \EntityCandidateEntity.messageRef)
+    var entityCandidates: [EntityCandidateEntity] = []
+
     init(
         caseArgosCode: String,
         sequenceIndex: Int,

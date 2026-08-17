@@ -111,11 +111,6 @@ struct ItemDetailView: View {
         .navigationTitle("Ficha del elemento")
     }
 
-    private var candidatesByCategory: [(EntityCategory, [EntityCandidateEntity])] {
-        Dictionary(grouping: item.entityCandidates, by: \.category)
-            .sorted { $0.key.rawValue < $1.key.rawValue }
-    }
-
     @ViewBuilder
     private var entitiesSection: some View {
         Section("Entidades detectadas (ARGOS EXTRACT)") {
@@ -123,23 +118,7 @@ struct ItemDetailView: View {
                 .font(.caption)
                 .foregroundStyle(ArgosTheme.textSecondary)
 
-            if item.entityCandidates.isEmpty {
-                Text("Sin entidades detectadas todavía.")
-                    .font(.caption)
-                    .foregroundStyle(ArgosTheme.textSecondary)
-            } else {
-                ForEach(candidatesByCategory, id: \.0) { category, candidates in
-                    DisclosureGroup("\(category.displayName) (\(candidates.count))") {
-                        ForEach(candidates, id: \.persistentModelID) { candidate in
-                            EntityCandidateRow(
-                                candidate: candidate,
-                                onConfirm: { confirm(candidate) },
-                                onReject: { reject(candidate) }
-                            )
-                        }
-                    }
-                }
-            }
+            EntityCandidateGroupedList(candidates: item.entityCandidates, onConfirm: confirm, onReject: reject)
 
             Button {
                 Task { await runEntityExtraction() }
@@ -242,40 +221,5 @@ struct ItemDetailView: View {
             sha256: item.sha256,
             detail: "Verificación → \(newValue.rawValue)"
         )
-    }
-}
-
-private struct EntityCandidateRow: View {
-    @Bindable var candidate: EntityCandidateEntity
-    let onConfirm: () -> Void
-    let onReject: () -> Void
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            HStack {
-                Text(candidate.label).font(.caption.bold()).foregroundStyle(ArgosTheme.textPrimary)
-                Spacer()
-                statusPill
-            }
-            Text(candidate.value).font(.subheadline.monospaced()).foregroundStyle(ArgosTheme.cyan)
-            Text(candidate.context).font(.caption2).foregroundStyle(ArgosTheme.textSecondary)
-            Text("Fuente: \(candidate.sourceLabel)").font(.caption2).foregroundStyle(ArgosTheme.textSecondary)
-
-            if candidate.status == .recibido {
-                HStack {
-                    Button("Confirmar", action: onConfirm).font(.caption)
-                    Button("Rechazar", role: .destructive, action: onReject).font(.caption)
-                }
-            }
-        }
-        .padding(.vertical, 2)
-    }
-
-    private var statusPill: some View {
-        Text(candidate.status.rawValue)
-            .font(.caption2.bold())
-            .padding(.horizontal, 6).padding(.vertical, 2)
-            .background(ArgosTheme.color(for: candidate.status).opacity(0.18), in: Capsule())
-            .foregroundStyle(ArgosTheme.color(for: candidate.status))
     }
 }

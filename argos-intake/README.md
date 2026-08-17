@@ -75,8 +75,8 @@ argos-intake/
                                        renderizada y reconocida con Vision si el PDF es un escaneo)
       PersonNameExtractor           — nombres de persona/organización vía NaturalLanguage (NLTagger)
       EntityExtractionService       — corre EntityExtractor + PersonNameExtractor sobre el texto
-                                       OCR/notas de un ítem y crea propuestas sin duplicar lo ya
-                                       revisado
+                                       OCR/notas de un ítem o el cuerpo de un mensaje de chat, y
+                                       crea propuestas sin duplicar lo ya revisado
       SearchService                — construye el índice de búsqueda desde SwiftData
                                       (ítems, su texto OCR, y mensajes de chats importados)
       AuthenticationService        — Face ID/Touch ID (LocalAuthentication) + PIN en Keychain
@@ -85,7 +85,8 @@ argos-intake/
       Inbox/InboxView              — bandeja de entrada con selección múltiple (sección 24)
       Cases/                       — lista de casos, alta de caso, ficha de expediente,
                                       ImportChatView (importar chat), ChatDetailView (conversación
-                                      reconstruida: mensajes en orden + adjuntos vinculados)
+                                      reconstruida: mensajes en orden + adjuntos vinculados +
+                                      ARGOS EXTRACT sobre todos los mensajes de la conversación)
       Search/SearchView            — buscador global (sección 18)
       Activity/ActivityView        — bitácora como actividad reciente
       Item/ItemDetailView          — ficha de archivo (secciones 15, 39), con extracción de texto
@@ -94,7 +95,9 @@ argos-intake/
       Capture/QuickCaptureView     — botón flotante "+" (sección 23): foto/video, documento,
                                       ubicación, nota — todo converge en IngestionService
       Auth/LockScreenView          — pantalla de bloqueo
-      Shared/                      — tema visual ARGOS y selector de etiquetas reutilizado
+      Shared/                      — tema visual ARGOS, selector de etiquetas, y
+                                      EntityCandidateRow/EntityCandidateGroupedList (ARGOS EXTRACT,
+                                      reutilizados entre ItemDetailView y ChatDetailView)
 
   ArgosShareExtension/            — target de Share Extension "Guardar en ARGOS" (sección 4)
     ShareViewController           — punto de entrada del sistema (NSExtensionItem → SwiftUI)
@@ -195,11 +198,12 @@ Ver secciones 36-37 de la instrucción maestra. Importación de chats de WhatsAp
 (sección 14) y ARGOS EXTRACT (sección 13) ya están implementados; en orden sugerido para lo que
 sigue, tras validar todo lo anterior en un dispositivo real:
 
-1. Extender ARGOS EXTRACT a los mensajes de chats importados (`MessageEntity`), no solo a ítems —
-   el servicio y el modelo ya están escritos para ser genéricos, falta la UI en `ChatDetailView`.
-2. Mapa del caso (MapKit) y Timeline ARGOS que mezcle mensajes, fotos, documentos y eventos —
+ARGOS EXTRACT ya corre tanto sobre ítems como sobre mensajes de chats importados (con
+`EntityCandidateGroupedList` compartido entre `ItemDetailView` y `ChatDetailView`). Lo que sigue:
+
+1. Mapa del caso (MapKit) y Timeline ARGOS que mezcle mensajes, fotos, documentos y eventos —
    coordenadas ya detectadas por ARGOS EXTRACT pueden alimentar los primeros puntos del mapa.
-3. Módulo de Coincidencias ARGOS entre casos (sección 19) — ahora hay entidades confirmadas
+2. Módulo de Coincidencias ARGOS entre casos (sección 19) — ahora hay entidades confirmadas
    (`EntityCandidateEntity` en estatus `VERIFICADO`) que son la base natural para cruzar entre
    casos.
-4. Multiusuario, servidor institucional, sincronización, red de vínculos y ARGOS AI (MVP3).
+3. Multiusuario, servidor institucional, sincronización, red de vínculos y ARGOS AI (MVP3).
