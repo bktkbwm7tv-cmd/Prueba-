@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>ARGOS INTAKE</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>ARGOS INTAKE usa Face ID para proteger el acceso a los expedientes de investigación.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>ARGOS INTAKE solicita la ubicación únicamente cuando el analista guarda un punto de interés en un caso.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>ARGOS INTAKE usa la cámara para capturar fotografías, video y documentos escaneados en campo.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>ARGOS INTAKE usa el micrófono para grabar notas de voz y entrevistas asociadas a un caso.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>ARGOS INTAKE necesita acceso a tus fotos y videos para incorporarlos a un expediente cuando los seleccionas explícitamente.</string>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+</dict>
+</plist>
