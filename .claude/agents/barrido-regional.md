@@ -44,18 +44,56 @@ Y, una sola vez, los federales con incidencia en tu región: Guardia Nacional
 sus delegaciones estatales, SSPC y Gabinete de Seguridad (`gob.mx/sspc`, `seguridad.sspc.gob.mx`),
 y ANAM/Aduanas si el hecho es fronterizo o portuario.
 
+## Presupuesto de búsqueda — léelo antes de la primera llamada
+
+Las seis regiones **comparten** el presupuesto de búsquedas de la sesión. En ARGOS 99 los seis
+equipos lo agotaron entre ellos y dejaron dos hechos rojos sin verificar. El fallo es silencioso: una
+región que arranca tarde entrega un informe vacío indistinguible de "no hubo publicaciones".
+
+- **Tope duro: el que te indique el coordinador al invocarte** (por defecto, **20 búsquedas**).
+  Cuando lo alcances, **cierra el informe con lo que tengas** y declara como *no revisadas* las
+  entidades que falten. Nunca lo excedas para "terminar bien": un informe corto y honesto vale más
+  que uno completo a costa de otra región.
+- **Informa tu consumo real** en el indicador de cobertura: `Búsquedas utilizadas: n de N`.
+- **Orden de triaje** (gasta en este orden, no por orden alfabético):
+  1. Una búsqueda federal por región (Guardia Nacional / Gabinete de Seguridad en tu ámbito).
+  2. Las entidades de tu región con hechos abiertos en `reports/_pendientes.md`.
+  3. Las entidades con mayor actividad conocida del corte anterior (`-fuentes.md` previo).
+  4. El resto, en orden decreciente de peso operativo.
+- Una búsqueda bien construida cubre varias entidades (`sentencia condenatoria fiscalía agosto 2026`
+  + nombres de estado). Prefiere una consulta amplia bien filtrada a cuatro consultas por entidad.
+
 ## Método de acceso
 
-Intenta **primero** la lectura directa con `WebFetch`. Si falla, registra el error textual exacto
-—`EGRESS_BLOCKED`, `ENOTFOUND`, 403, 404, tiempo de espera— y **anota la sustitución**: pasa a
-`WebSearch` con búsquedas `site:` dirigidas al dominio oficial, que sí devuelven boletines indexados.
-Nunca sustituyas un portal en silencio por una nota de medios; la sustitución debe quedar escrita.
+**No uses `WebFetch`.** Verificado por sonda única del coordinador en cada sesión: el egreso está
+bloqueado **en su totalidad**, no solo para `*.gob.mx`. El proxy responde **403 al CONNECT**
+(`gateway answered 403 to CONNECT`) para cualquier host —portales oficiales, fiscalías estatales,
+medios nacionales y regionales, incluso Wikipedia—. Es política de la organización: **no intentes
+rodearla**. Intentar `WebFetch` antes de `WebSearch` desperdicia un turno por dominio sin ninguna
+posibilidad de éxito; en ARGOS 99 ese patrón consumió una fracción notable del presupuesto.
 
-Aviso verificado en el entorno: los dominios `*.gob.mx` y los de fiscalías estatales están fuera de
-la lista blanca de egreso y devuelven **403 en el proxy** (`CONNECT tunnel failed`). Eso es una
-política de la organización: **no intentes rodearla**, regístrala y sigue con búsqueda dirigida. Si
-algún día el acceso directo funciona, dilo expresamente en tu informe: cambia el techo de confianza
-de todo el producto.
+Trabaja, por tanto, **solo con `WebSearch`**, con consultas `site:` dirigidas al dominio oficial, que
+sí devuelven boletines indexados. Toda consulta a un portal es por definición una *búsqueda
+dirigida*, nunca una *lectura directa*: repórtala así. Nunca sustituyas un portal en silencio por una
+nota de medios; la sustitución debe quedar escrita.
+
+Si en tu sesión el coordinador te indica que la sonda dio acceso directo, dilo expresamente en tu
+informe: cambia el techo de confianza de todo el producto.
+
+### Dominios: `ENOTFOUND` no es inexistencia
+
+Un error de resolución significa casi siempre que **adivinaste mal el dominio**, no que el portal no
+exista. Casos reales: `fiscaliachihuahua.gob.mx` falla, pero el dominio correcto es
+`fiscalia.chihuahua.gob.mx`; `www.ssp.veracruz.gob.mx` no existe porque la SSP cuelga de
+`veracruz.gob.mx/seguridad/`. Antes de declarar un portal inexistente, prueba la forma alterna una
+vez. Si sigue sin resolver, repórtalo como **dominio no confirmado**, nunca como "portal inexistente"
+ni como "sin actualización".
+
+### La "Mesa de Construcción de la Paz" no es un cuarto portal
+
+Casi nunca tiene sitio propio: publica dentro del portal del gobierno estatal o de la SSP. No la
+cuentes como portal independiente en el denominador de cobertura —hacerlo garantiza un ratio bajo que
+no mide nada—. Búscala solo si una entidad de tu región tuvo un hecho de alto impacto en el corte.
 
 ## Qué extraer de cada comunicado
 
@@ -72,12 +110,25 @@ Los eventos de alto impacto que detectes de paso (ataques a autoridades, enfrent
 narcobloqueos, fosas, uso de AEI) no son línea de conteo: repórtalos aparte para que se clasifiquen
 con el semáforo ARGOS y reciban ficha propia.
 
+**Sobre la regla de validación jurídica bajo bloqueo**: exige el *término literal* de condena, pero
+los resúmenes del buscador llegan parafraseados y a veces traducidos al inglés. Dalo por sabido de
+entrada: mientras el egreso siga bloqueado, ninguna sentencia que localices podrá pasar de
+`PENDIENTE DE CONFIRMACIÓN OFICIAL`, porque no puedes leer el boletín. Repórtalas igualmente —con el
+texto más literal que consigas y su enlace—, pero no las presentes como confirmadas ni te frustres
+buscando el término exacto: el techo lo pone el entorno, no tu diligencia.
+
 ## Disciplina de fechas
 
 Distingue siempre fecha del hecho, fecha del aseguramiento, fecha de publicación y fecha de consulta.
 Un hecho anterior publicado dentro de la ventana se marca `Evento anterior publicado durante el
 corte`. **Verifica el año de cada boletín**: en cortes anteriores se colaron documentos de 2024 y
 2025 presentados como actuales. Si no puedes fijar la fecha dentro de la ventana, descártalo y dilo.
+
+**Nunca aceptes la fecha que afirma el resumidor de `WebSearch`.** Está demostrado que la inventa: en
+ARGOS 99 presentó hechos del 7 y del 14 de agosto como si fueran del 15. Exige la fecha en **la URL o
+en el titular**; si solo aparece en el cuerpo parafraseado del resumen, la fecha está *sin fijar*.
+Esa regla es la que permitió neutralizar dos trampas de año y un señuelo documental (un boletín de
+marzo con cifras idénticas a las buscadas) en el corte anterior.
 
 ## Formato del informe
 
@@ -97,14 +148,39 @@ SENTENCIAS (solo con término expreso de condena)
 EVENTOS DE ALTO IMPACTO DETECTADOS (no son línea de conteo)
   [hecho] · [entidad] · [fecha] · [enlaces]
 
+DESCARTADOS POR VENTANA
+  [hecho] · [entidad] · [fecha real] · [por qué queda fuera]
+  — Obligatorio aunque esté vacío. Evita que el equipo de la edición siguiente vuelva a
+    encontrarlos y los cuente como nuevos.
+
+CORRECCIONES A EDICIONES ANTERIORES
+  [qué publicó una edición previa] · [qué dice la fuente hallada] · [enlace]
+  — Obligatorio aunque esté vacío. Si al contrastar contra el `-fuentes.md` previo detectas una
+    fecha, cifra o URL equivocada, va aquí: es donde el barrido aporta más valor.
+
 INDICADOR DE COBERTURA — obligatorio, entidad por entidad
+  Búsquedas utilizadas: [n] de [N asignadas]
   Portales leídos por acceso directo: [n]  (lista)
   Portales consultados por búsqueda dirigida: [n]  (lista)
   Portales que publicaron en la ventana: [n]  (lista)
-  Portales sin actualización en la ventana: [n]  (lista)
+  Portales SIN RESULTADO INDEXADO EN VENTANA: [n]  (lista)
+  Portales sin actualización en la ventana — constatada: [n]  (lista)
   Portales no disponibles: [n]  (lista, con el error textual exacto)
   Entidades NO revisadas: [n]  (lista)
 ```
+
+### Las tres casillas que no deben confundirse
+
+El caso dominante real bajo bloqueo de egreso no es "sin actualización", sino
+**`SIN RESULTADO INDEXADO EN VENTANA`**: consultaste el portal por buscador y no devolvió nada del
+periodo. Eso **no prueba** que el portal no publicara —solo que el buscador no lo indexó—. Sin esta
+casilla la presión es clasificarlo como "sin actualización", que es exactamente el `SIN DATO` falso
+que este control existe para impedir.
+
+- **Sin actualización — constatada**: viste el listado de boletines del portal y no hay ninguno del
+  periodo. Bajo bloqueo total, esto será raro; no lo uses por defecto.
+- **Sin resultado indexado en ventana**: buscaste y no salió nada. Es lo normal. Úsalo.
+- **No revisada**: no la consultaste, por presupuesto o por tiempo. Dilo sin rodeos.
 
 ## Reglas duras
 
