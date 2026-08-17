@@ -52,7 +52,7 @@ rojos sin verificar. Esta edición fijó topes por adelantado:
 | Barrido Centro | 20 | **21** | Excedido en 1 — declarado por el propio equipo |
 | Barrido Golfo | 20 | **24** | Excedido en 4 — declarado por el propio equipo |
 | Barrido Sureste | 20 | 20 | Tope alcanzado |
-| **Total** | **166** | **142 de 200** | Reserva no consumida: ~58 |
+| **Total** | **146** | **142 de 200** | Reserva no consumida: ~58 |
 
 Los tres excesos se declararon sin ocultarse, que es el comportamiento que la regla busca. Ninguna
 región terminó con informe vacío por inanición de presupuesto, que era el fallo silencioso de
@@ -159,7 +159,15 @@ regla de la URL fija la publicación, no el hecho; ambos deben distinguirse siem
   La Razón reporta **2** (`razon.com.mx/estados/2026/08/16/aseguran-297-mil-litros-de-diesel-en-altamira-tamaulipas-hay-dos-detenidos/`,
   fecha en URL). No se localizó comunicado de FGR ni SEMAR que fije el número.
 - **Corroboración**: nacional (El Universal, La Razón) + regional (Plano Informativo, Hoy Tamaulipas,
-  Uniradio). Las cinco coinciden en los 297,000 L y en el inventario de unidades.
+  Uniradio). Las cinco coinciden en los 297,000 L.
+- **CONTRADICHA — inventario vehicular, sin arbitrar.** Las fuentes **no consolidan un total de
+  unidades**. El Universal detalla, además de los 23 tractocamiones, 70 remolques y 23 dollys, un
+  inventario más largo (autotanque, cajas secas y refrigeradas, pipas, retroexcavadora, tanques frac,
+  camionetas, motocicleta, cisternas, bombas de despacho) **sin cifra agregada**; una sexta fuente,
+  `noticiaspc.com.mx`, titula **"136 vehículos"**. **ARGOS no publica total de unidades**: solo son
+  citables las tres categorías con cantidad expresa. Una primera versión de esta edición publicó
+  "116 unidades vehiculares" —suma propia de 23+70+23 presentada como dato publicado—; el control
+  `procedencia-cifras` la detectó y **se retiró antes de la publicación**.
   `Pendiente de corroboración institucional.` Confianza ★★★☆☆ / Medio.
 - **Contexto NO verificado institucionalmente**, registrado como tal y no como dato: los medios
   citan un acumulado de ~4.52 millones de litros y 16 detenidos desde el 21-jul, y describen este
