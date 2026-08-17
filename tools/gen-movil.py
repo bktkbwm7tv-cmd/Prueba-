@@ -80,6 +80,26 @@ shell = (shell
          .replace(f"<b>{FECHA_ANT}</b>", f"<b>{FECHA}</b>"))
 shell = re.sub(r"\d{2}:\d{2} \(CDMX\)", f"{HORA} (CDMX)", shell)
 
+# CSS de la red de seguridad de tablas. Se inyecta aquí y no se hereda del shell
+# de la edición anterior, para que el generador siga siendo autosuficiente aunque
+# la móvil previa no lo tuviera.
+CSS_TABLA = """
+  .tabla-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;
+    border:1px solid var(--border);border-radius:6px;margin:8px 0;}
+  .tabla-scroll table{border-collapse:collapse;font-size:11px;min-width:max-content;}
+  .tabla-scroll th,.tabla-scroll td{border:1px solid var(--border);padding:5px 7px;
+    text-align:left;white-space:nowrap;}
+  .tabla-scroll th{background:var(--panel-2);color:var(--cyan);font-family:var(--mono);
+    font-size:9.5px;letter-spacing:1px;}
+  .tabla-scroll td{background:var(--panel);}
+  /* Segunda causa previsible de desborde en esta serie: una URL o un ARG-ID
+     largo sin espacios. Se parte en vez de empujar el ancho de la página. */
+  .seccion code, .seccion a, .reg-txt, .nota-body{overflow-wrap:anywhere;}
+  .seccion img, .seccion svg{max-width:100%;height:auto;}
+"""
+if ".tabla-scroll" not in shell:
+    shell = shell.replace("</style>", CSS_TABLA + "</style>", 1)
+
 # Anclas realmente existentes en el escritorio: solo estas pueden enlazarse.
 ANCLAS = frozenset(re.findall(r'<div class="nota" id="([^"]+)"', desk))
 
@@ -142,7 +162,18 @@ def tabla_a_ficha(p, con_tarjetas):
                  '<b>no se reproducen en esta versión</b>: constan en '
                  f'<code>reports/argos-{FECHA}.html</code> y en '
                  f'<code>reports/argos-{FECHA}-fuentes.md</code>.</p>')
-    return re.sub(r'<div class="table-wrap">.*?</table>\s*</div>', lambda m: aviso, p, flags=re.S)
+    p = re.sub(r'<div class="table-wrap">.*?</table>\s*</div>', lambda m: aviso, p, flags=re.S)
+
+    # Red de seguridad: una tabla escrita sin el envoltorio `table-wrap` no la
+    # detectaba la regla de arriba y llegaba entera a la móvil, desbordando el
+    # ancho de la página entera (fallo real de ARGOS 100, pág. 2). El envoltorio
+    # es una convención del escritorio y es fácil olvidarlo al redactar, así que
+    # aquí se atrapa: lo que sobreviva se hace desplazable dentro de su propio
+    # contenedor, nunca a costa del cuerpo del documento.
+    p = re.sub(r'<table\b.*?</table>',
+               lambda m: '<div class="tabla-scroll">' + m.group(0) + '</div>',
+               p, flags=re.S)
+    return p
 
 
 SEM = f'''<div class="semaforo">

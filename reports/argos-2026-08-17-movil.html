@@ -235,6 +235,19 @@
     font-family:var(--mono);font-size:9px;color:var(--cyan-dim);line-height:1.5;
   }
   .footbar .uso{color:var(--yellow);letter-spacing:1px;}
+
+  .tabla-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;
+    border:1px solid var(--border);border-radius:6px;margin:8px 0;}
+  .tabla-scroll table{border-collapse:collapse;font-size:11px;min-width:max-content;}
+  .tabla-scroll th,.tabla-scroll td{border:1px solid var(--border);padding:5px 7px;
+    text-align:left;white-space:nowrap;}
+  .tabla-scroll th{background:var(--panel-2);color:var(--cyan);font-family:var(--mono);
+    font-size:9.5px;letter-spacing:1px;}
+  .tabla-scroll td{background:var(--panel);}
+  /* Segunda causa previsible de desborde en esta serie: una URL o un ARG-ID
+     largo sin espacios. Se parte en vez de empujar el ancho de la página. */
+  .seccion code, .seccion a, .reg-txt, .nota-body{overflow-wrap:anywhere;}
+  .seccion img, .seccion svg{max-width:100%;height:auto;}
 </style>
 </head>
 <body>
@@ -426,18 +439,7 @@
     nivel de riesgo nacional</b>: se reportan como capacidad institucional.
   </p>
 
-  <table>
-    <thead>
-      <tr><th>Entidad</th><th>Hecho</th><th>Nivel</th><th>Fuente institucional</th><th>Fuente nacional</th><th>Confianza</th><th>ARG-ID</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Tamaulipas</td><td>Altamira: 297,000 L de diésel, 23 tractocamiones, 70 remolques, 23 dollys; 2 o 3 detenidos</td><td>🟢 Verde</td><td>FGR / SEMAR — <b>no localizada</b></td><td>El Universal, La Razón</td><td>★★★☆☆</td><td>ARG-100-001</td></tr>
-      <tr><td>Guanajuato</td><td>León: 506 kg de presunta marihuana en 39 cajas, empresa de paquetería; 0 detenidos</td><td>🟢 Verde</td><td><b>FSPE — boletín 16-ago</b></td><td>Infobae, La Jornada San Luis</td><td>★★★☆☆</td><td>ARG-100-002</td></tr>
-      <tr><td>Sonora</td><td>Hermosillo: 3 armas cortas y droga; 5 detenidos, uno con 8 órdenes de aprehensión</td><td>🟢 Verde</td><td>AMIC / FGJES — <b>no localizada</b></td><td>Infobae</td><td>★★★☆☆</td><td>ARG-100-003</td></tr>
-      <tr><td>Oaxaca</td><td>Pinotepa Nacional: cateo con metanfetamina y cannabis; 3 detenidos, sin armamento</td><td>🟢 Verde</td><td>FGEO — <b>no localizada</b></td><td>—</td><td>★★★☆☆</td><td>ARG-100-004</td></tr>
-      <tr><td>Baja California</td><td>Tijuana: 1 arma de fuego cargada sin clasificar; 1 detenido por asalto a peatón</td><td>🟢 Verde</td><td>—</td><td>—</td><td>★★☆☆☆</td><td>ARG-100-005</td></tr>
-    </tbody>
-  </table>
+  <p class="muted-note"><b>Tabla ejecutiva.</b> Se omite la retícula para evitar desplazamiento horizontal. Las cifras por evento están en los bloques de esta sección, pero los campos de <b>corporación, fuente primaria y corroboración</b> <b>no se reproducen en esta versión</b>: constan en <code>reports/argos-2026-08-17.html</code> y en <code>reports/argos-2026-08-17-fuentes.md</code>.</p>
 
   <div class="block-head">DETENCIONES RELEVANTES</div>
   <p class="muted-note">
@@ -447,17 +449,24 @@
     umbral de corroboración. <b>Ninguna cifra de esta tabla se suma a la de la pág. 4</b>: son
     conjuntos disjuntos y se publican por separado para que no puedan agregarse por error.
   </p>
-  <table>
-    <thead>
-      <tr><th>Entidad · Municipio</th><th>Detenidos</th><th>Corporación</th><th>Motivo de exclusión del conteo de armamento</th><th>ARG-ID</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Tamaulipas · Altamira</td><td><b>2 o 3</b> — cifra no conciliada</td><td>FGR con apoyo de SEMAR</td><td>Sin aseguramiento de armas: el evento es de hidrocarburo</td><td>ARG-100-001</td></tr>
-      <tr><td>Oaxaca · Pinotepa Nacional</td><td>3 (1 mujer, 2 hombres)</td><td>FGEO</td><td>Sin aseguramiento de armas: el evento es de narcóticos</td><td>ARG-100-004</td></tr>
-      <tr><td>Baja California · Tijuana</td><td>1</td><td>Policía Municipal, remitido a FGE</td><td>Arma sin clasificar y fuente única: el evento no entra al total</td><td>ARG-100-005</td></tr>
-      <tr><td>Guanajuato · León</td><td><b>0</b></td><td>FSPE</td><td>El aseguramiento no produjo detenciones</td><td>ARG-100-002</td></tr>
-    </tbody>
-  </table>
+  <div>
+    <div class="reg">
+    <div class="reg-top"><span class="tag sindato">2 O 3 — SIN CONCILIAR</span><a class="argid" href="#ARG-100-001">ARG-100-001</a></div>
+    <div class="reg-txt"><b>Tamaulipas · Altamira</b> — FGR con apoyo de SEMAR. <b>Fuera del conteo de armamento</b>: sin aseguramiento de armas, el evento es de hidrocarburo. La cifra de detenidos no está conciliada entre fuentes.</div>
+  </div>
+    <div class="reg">
+    <div class="reg-top"><span class="tag sindato">3 DETENIDOS</span><a class="argid" href="#ARG-100-004">ARG-100-004</a></div>
+    <div class="reg-txt"><b>Oaxaca · Pinotepa Nacional</b> — FGEO (1 mujer, 2 hombres). <b>Fuera del conteo de armamento</b>: sin aseguramiento de armas, el evento es de narcóticos.</div>
+  </div>
+    <div class="reg">
+    <div class="reg-top"><span class="tag sindato">1 DETENIDO</span><a class="argid" href="#ARG-100-005">ARG-100-005</a></div>
+    <div class="reg-txt"><b>Baja California · Tijuana</b> — Policía Municipal, remitido a la FGE. <b>Fuera del conteo de armamento</b>: arma sin clasificar y fuente única, el evento no entra al total.</div>
+  </div>
+    <div class="reg">
+    <div class="reg-top"><span class="tag sindato">0 DETENIDOS</span><a class="argid" href="#ARG-100-002">ARG-100-002</a></div>
+    <div class="reg-txt"><b>Guanajuato · León</b> — FSPE. El aseguramiento de 506 kg de marihuana <b>no produjo detenciones</b>, dato operativo relevante por sí mismo: no generó línea de investigación sobre remitente ni destinatario.</div>
+  </div>
+  </div>
   <p class="muted-note">
     <b>Integradas al conteo de armamento y por tanto ausentes de esta tabla</b>: las <b>5</b> personas
     detenidas en Hermosillo, Sonora (<code>ARG-100-003</code> / <code>ARG-100-ARM-001</code>), único
@@ -844,14 +853,7 @@
   </div>
 
   <div class="block-head">TABLA DE ASEGURAMIENTOS DEL CORTE</div>
-  <table>
-    <thead>
-      <tr><th>ARG-ID</th><th>Entidad</th><th>Municipio</th><th>Fecha hecho</th><th>Cortas</th><th>Largas</th><th>Cartuchos</th><th>Cargadores</th><th>Granadas</th><th>AEI</th><th>Expl.</th><th>Detenidos</th><th>Corporación</th><th>Fuente primaria</th><th>Corroboración</th><th>Confianza</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>ARG-100-ARM-001</td><td>Sonora</td><td>Hermosillo</td><td>2026-08-16</td><td>3</td><td>0</td><td>s/c</td><td>s/c</td><td>0</td><td>0</td><td>0</td><td>5</td><td>AMIC / FGJES</td><td>Tribuna</td><td>Infobae, Crítica</td><td>Bajo</td></tr>
-    </tbody>
-  </table>
+  <p class="muted-note"><b>Tabla ejecutiva.</b> Se omite la retícula para evitar desplazamiento horizontal. Las cifras por evento están en los bloques de esta sección, pero los campos de <b>corporación, fuente primaria y corroboración</b> <b>no se reproducen en esta versión</b>: constan en <code>reports/argos-2026-08-17.html</code> y en <code>reports/argos-2026-08-17-fuentes.md</code>.</p>
   <p class="muted-note" style="margin-top:4px;">
     <code>s/c</code> = sin cifra publicada por ninguna fuente. Mismo código que en el bloque de
     totales. No se infiere, no se estima y no se sustituye por cero.
