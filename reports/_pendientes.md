@@ -83,9 +83,15 @@ lo primero que debe hacer ARGOS 100.
 | ARGOS 99 | **Trazabilidad de cifras heredadas** | Regla que faltaba: para toda cifra heredada, `grep` sobre `reports/` hasta su **primera** aparición, verificar que la edición citada sea la de entrada y comprobar si allí había reservas o contradicciones que las ediciones posteriores dejaron caer. El borrado silencioso de una contradicción es tan grave como inventar la cifra |
 | ARGOS 98 | **Índice de ARG-ID** | Sigue sin existir. Falta `reports/indice-arg-id.md` con ARG-ID · fecha · entidad · municipio · cifras clave · edición. Con 99 ediciones el cruce por intuición ya no es viable |
 | ARGOS 98 | **Lista blanca de egreso** | `docs/solicitud-lista-blanca-egreso.md` sigue sin tramitar. **ARGOS 99 la eleva de mejora incremental a bloqueante**: seis barridos regionales independientes demostraron que el barrido obligatorio de `CLAUDE.md` **no puede cumplirse** —0 portales leídos de ~128 objetivo— y que el techo de ★★★★☆ lleva **diez ediciones** |
-| ARGOS 98 | **Generación de la versión móvil** | El script antiguo sigue desfasado. ARGOS 99 construyó la móvil con un transformador nuevo sobre el escritorio + `tools/gen-movil-svg.js`, guardado fuera del repositorio. **Conviene versionarlo en `tools/`** para no rehacerlo cada corte |
 
 ## Cerrados recientemente
+
+- **Generación de la versión móvil** — resuelto en ARGOS 99. `tools/gen-movil.py` queda versionado y
+  parametrizado (`python3 tools/gen-movil.py <NUM> <FECHA> <NUM_ANT> <FECHA_ANT> <HORA>`). No
+  reconstruye la móvil: **transforma el escritorio ya terminado**, así que no puede divergir del
+  cartelón. Toma el contador del radar de `gen-movil-svg.js` —nunca a mano— y valida al terminar
+  (markup, 6 secciones, 3 SVG, sin restos de clases de escritorio), fallando si algo no cuadra.
+  El script antiguo, desfasado desde el paso de 7 a 6 páginas, queda obsoleto. *Cerrado.*
 
 - **Contradicción documental sobre `procedencia-cifras`** (`ARG-99-FE-004`) — ARGOS 98 acreditaba una
   corrección de cifras a ese control mientras este archivo afirmaba que nunca se había ejecutado. La
