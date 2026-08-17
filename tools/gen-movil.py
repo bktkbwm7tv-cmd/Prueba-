@@ -80,6 +80,9 @@ shell = (shell
          .replace(f"<b>{FECHA_ANT}</b>", f"<b>{FECHA}</b>"))
 shell = re.sub(r"\d{2}:\d{2} \(CDMX\)", f"{HORA} (CDMX)", shell)
 
+# Anclas realmente existentes en el escritorio: solo estas pueden enlazarse.
+ANCLAS = frozenset(re.findall(r'<div class="nota" id="([^"]+)"', desk))
+
 # ---------------------------------------------------------------- 3. secciones
 paginas = re.findall(r'<section class="page">(.*?)</section>', desk, re.S)
 if len(paginas) != 6:
@@ -99,13 +102,20 @@ def limpia(p):
     return p
 
 
-def lista_a_reg(bloque):
-    """Convierte <div class="list"> del escritorio en tarjetas .reg de la móvil."""
+def lista_a_reg(bloque, anclas_validas=frozenset()):
+    """Convierte <div class="list"> del escritorio en tarjetas .reg de la móvil.
+
+    Un ARG-ID solo se enlaza si existe realmente una ficha con ese id en el
+    documento. Antes bastaba con que el ID fuera de la edición en curso, lo que
+    producía enlaces muertos hacia hechos descartados que nunca llegaron a tener
+    ficha propia (detectado por editor-duplicidad en ARGOS 100).
+    """
     def una(m):
         cls, tag, txt, idd = m.group(1), m.group(2), m.group(3), m.group(4)
         idd = re.sub(r"<[^>]+>", "", idd).strip()
         anchor = (f'<a class="argid" href="#{idd}">{idd}</a>'
-                  if idd.startswith(f"ARG-{NUM}-") else f'<span class="argid">{idd}</span>')
+                  if idd.startswith(f"ARG-{NUM}-") and idd in anclas_validas
+                  else f'<span class="argid">{idd}</span>')
         return (f'<div class="reg">\n    <div class="reg-top">'
                 f'<span class="tag {cls}">{tag}</span>{anchor}</div>\n'
                 f'    <div class="reg-txt">{txt}</div>\n  </div>')
@@ -146,7 +156,7 @@ TITULOS = [("PORTADA", 1), ("CRIMEN ORGANIZADO (I)", 2), ("CRIMEN ORGANIZADO (II
 
 partes = []
 for i, (titulo, n) in enumerate(TITULOS):
-    cuerpo = tabla_a_ficha(lista_a_reg(limpia(paginas[i])), con_tarjetas=(n == 5))
+    cuerpo = tabla_a_ficha(lista_a_reg(limpia(paginas[i]), ANCLAS), con_tarjetas=(n == 5))
 
     if n == 1:
         # Consumir TODO el bloque de visuales hasta el semáforo: un .*? no

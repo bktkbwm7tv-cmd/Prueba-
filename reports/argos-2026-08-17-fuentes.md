@@ -196,7 +196,7 @@ regla de la URL fija la publicación, no el hecho; ambos deben distinguirse siem
   Agustín G. del Campo. Asegurados **3 armas cortas (pistolas)** y droga. Uno de los detenidos
   acumula **8 órdenes de aprehensión por desaparición y secuestro**.
 - **Cartuchos y cargadores: no especificados por ninguna fuente.** No se infieren ni se sustituyen
-  por cero en el total; se marcan `n/p` en la tabla.
+  por cero en el total; se marcan `s/c` en la tabla.
 - **Fuentes**: Tribuna (regional, fecha en URL `tribuna.com.mx/seguridad/2026/08/16/…`), Infobae
   (nacional, URL `infobae.com/mexico/2026/08/17/…`), Crítica (regional). Las tres coinciden en
   detenidos, armas y órdenes de aprehensión.
@@ -269,7 +269,7 @@ sería inventar un dato.
 
 | ARG-ID | Entidad | Municipio | Fecha hecho | Cortas | Largas | Cartuchos | Cargadores | Granadas | AEI | Expl. | Detenidos | Corporación | Fuente primaria | Corroboración | Confianza |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| ARG-100-ARM-001 | Sonora | Hermosillo | 2026-08-16 | 3 | 0 | n/p | n/p | 0 | 0 | 0 | 5 | AMIC / FGJES | Tribuna | Infobae, Crítica | Bajo |
+| ARG-100-ARM-001 | Sonora | Hermosillo | 2026-08-16 | 3 | 0 | s/c | s/c | 0 | 0 | 0 | 5 | AMIC / FGJES | Tribuna | Infobae, Crítica | Bajo |
 
 ### Eventos cualitativos y no integrados
 
@@ -352,7 +352,14 @@ ningún boletín pudo leerse por acceso directo. La casilla correcta para las di
 
 ### ARG-100-SEN-SEG-001 — Cosamaloapan, Veracruz: se rompe el vacío de tres ediciones
 
-**Primera de las "10 condenatorias sin desglose" del agregado del 13-ago que se logra identificar.**
+**Primera condenatoria del agregado del 13-ago que pasa de mención a caso documentado.**
+
+**PRECISIÓN DE CRÉDITO — obligatoria.** La **pena y el número de sentenciados de Cosamaloapan ya
+constaban en ARGOS 99** (`argos-2026-08-16.html:1308`), que los citó como dato de contraste para
+demostrar que el boletín de marzo era un señuelo. Lo que aporta ARGOS 100 **no es la cifra** sino el
+expediente: los cinco nombres, la autoridad, el distrito judicial, el hecho de origen con sus fechas
+y las fuentes con enlace. Detectado por el control `editor-duplicidad`, que señaló que presentarlo
+como "primera identificación" atribuía a este corte un hallazgo parcialmente ajeno.
 
 - **Autoridad**: FGE Veracruz, por conducto de la Unidad Especializada en Combate al Secuestro.
 - **Delito**: secuestro agravado. **Distrito judicial**: Cosamaloapan.
