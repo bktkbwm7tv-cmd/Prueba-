@@ -8,7 +8,9 @@ un caso que ARGOS 99 ya había citado, y solo un control editorial lo detectó.
 municipio. Un ARG-ID previo sobre el mismo hecho obliga a citar la edición de origen y a declarar
 qué aporta la edición actual que no constara ya.
 
-Generado automáticamente desde los `-fuentes.md` del repositorio. Cada renglón registra la edición
+Generado automáticamente desde los `-fuentes.md` del repositorio. **El generador inicial omitía
+los ARG-ID de tres segmentos (`-SEN-SEG-`, `-ARM-SEG-`); el control `editor-duplicidad` lo detectó
+en ARGOS 101 y quedaron incorporados.** Cada renglón registra la edición
 en que el ARG-ID fue **definido por primera vez**.
 
 | ARG-ID | Ed. | Corte | Descripción de origen |
@@ -129,6 +131,18 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-100-FE-002` | 100 | 2026-08-17 | ARG-100-FE-002 — Zamora, Michoacán: omisión real de ARGOS 99, recuperada |
 | `ARG-100-FE-003` | 100 | 2026-08-17 | ARG-100-FE-003 — Veracruz "108 armas": descartado por ventana |
 | `ARG-100-SEG-001` | 100 | 2026-08-17 | ARG-100-SEG-001 — Seguimientos que no cierran |
+| `ARG-100-SEN-SEG-001` | 100 | 2026-08-17 | ARG-100-SEN-SEG-001 — Cosamaloapan, Veracruz: se rompe el vacío de tres ediciones |
+| `ARG-101-001` | 101 | 2026-08-18 | ARG-101-001 — Pacífico frente a Lázaro Cárdenas, Michoacán (🟢 VERDE) |
+| `ARG-101-002` | 101 | 2026-08-18 | ARG-101-002 — Colima, Colima (🟡 AMARILLO) |
+| `ARG-101-003` | 101 | 2026-08-18 | ARG-101-003 — Zinapécuaro, Michoacán (🟡 AMARILLO) |
+| `ARG-101-004` | 101 | 2026-08-18 | ARG-101-004 — Texcoco y Ecatepec, Estado de México (🟢 VERDE) |
+| `ARG-101-005` | 101 | 2026-08-18 | ARG-101-005 — Cuauhtémoc, Ciudad de México (🟢 VERDE) |
+| `ARG-101-006` | 101 | 2026-08-18 | ARG-101-006 — Seis municipios, Querétaro (🟢 VERDE) |
+| `ARG-101-007` | 101 | 2026-08-18 | ARG-101-007 — Acámbaro, Guanajuato (🟢 VERDE) |
+| `ARG-101-008` | 101 | 2026-08-18 | ARG-101-008 — Tijuana, Baja California (🟢 VERDE) |
+| `ARG-101-009` | 101 | 2026-08-18 | ARG-101-009 — Chalco, Estado de México (🟢 VERDE) — cierra `ARG-97-004` |
+| `ARG-101-010` | 101 | 2026-08-18 | ARG-101-010 — Zapopan, Jalisco (🟢 VERDE) |
+| `ARG-101-SEN-001` | 101 | 2026-08-18 | ARG-101-SEN-001 — Región Laguna, Durango (🟢 VERDE) — única condenatoria integrada |
 
-**Total de ARG-ID indexados: 116** · Ediciones cubiertas: 15 archivos de fuentes.
+**Total de ARG-ID indexados: 128** · Ediciones cubiertas: 15 archivos de fuentes.
 

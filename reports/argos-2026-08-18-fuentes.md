@@ -173,7 +173,7 @@ en `_pendientes.md`.
 | Barrido Golfo | 20 | 20 | Tope alcanzado |
 | Barrido Sureste | 20 | 20 | Tope alcanzado |
 | Coordinación (verificación directa) | — | 2 | Cocaína del Pacífico y Colima |
-| **Total** | **146** | **148 de 200** | **Ningún equipo excedió su tope** |
+| **Total** | **146 asignadas** | **146 + 2 de coordinación (sin tope) = 148 de un techo de 200** | **Ningún equipo excedió su tope** |
 
 Frente a ARGOS 100 (142 consumidas, tres equipos excedidos), esta edición **cierra con los ocho
 topes respetados**. El mandato de `CLAUDE.md` (4 portales × 32 entidades + federales) sigue siendo
@@ -331,10 +331,12 @@ Ver el desarrollo completo y la justificación de método en la pág. 5 del cart
 |---|---|---|---|---|
 | **Noroeste** | 6 de 6 revisadas | 1 portal publicó en ventana (`fiscalia.durango.gob.mx`); 7 `SIN RESULTADO INDEXADO` | 2 (`ARG-101-008`, `ARG-101-SEN-001`) | 20/20 |
 | **Noreste** | 5 de 5 revisadas | 10 portales dirigidos, 0 con material en ventana | **0** | 20/20 |
-| **Occidente** | 6 de 6 revisadas | 1 portal publicó (`boletines.guanajuato.gob.mx`); 4 `SIN RESULTADO INDEXADO` | 3 (`ARG-101-002`, `-003`, `-007`) + `-010` | 20/20 |
+| **Occidente** | 6 de 6 revisadas | 1 portal publicó (`boletines.guanajuato.gob.mx`); 4 `SIN RESULTADO INDEXADO` | **4** (`ARG-101-002`, `-003`, `-007`, `-010`) | 20/20 |
 | **Centro** | 7 de 7 revisadas | 10 portales dirigidos; Querétaro publicó fuera de ventana | 4 (`ARG-101-004`, `-005`, `-006`, `-009`) | 20/20 |
 | **Golfo** | 2 de 2 revisadas | 10 portales dirigidos, 0 con hecho en ventana | **0** | 20/20 |
 | **Sureste** | 6 de 6 revisadas | 6 portales dirigidos, 0 con hecho en ventana | **0** | 20/20 |
+| **Coordinación** | — | Verificación directa del coordinador | **1** (`ARG-101-001`) | 2 |
+| **Total** | **32 de 32** | — | **11** | **148** |
 
 **Total de portales consultados por búsqueda dirigida: 49** —Noroeste 8, Noreste 10, Occidente 5,
 Centro 10, Golfo 10, Sureste 6—, de los cuales **2 publicaron material localizable en la ventana**
@@ -458,3 +460,21 @@ Son contextos distintos —una es un conteo de personas publicado por la Mesa Es
 Sonora y la otra era una suma propia sobre vehículos en Tamaulipas— y **casi con certeza se trata de
 una coincidencia**. Se deja anotado para que ninguna edición futura la recoja sin releerla contra su
 fuente literal.
+
+## Trazabilidad del módulo de armamento — las cinco líneas ARM
+
+Incorporada tras el control `editor-duplicidad`, que detectó que solo una de las cinco ARG-ID del
+módulo llegaba a este registro. Los datos ya constaban dispersos en las fichas; aquí quedan con su
+identificador propio, como exige la regla de trazabilidad del módulo.
+
+| ARG-ID | Evento | Cifras integradas | Detenidos | Estatus |
+|---|---|---|---|---|
+| `ARG-101-ARM-001` | Cuauhtémoc, CDMX, col. Guerrero (`ARG-101-005`) | **1 arma corta**; cartuchos mencionados sin cantidad | 2 | Integrado. Confianza Medio |
+| `ARG-101-ARM-002` | Acámbaro, Guanajuato (`ARG-101-007`) | **5 armas sin clasificar** — renglón propio, no se reparte | 4 | Integrado. Confianza Medio |
+| `ARG-101-ARM-003` | Texcoco y Ecatepec, Edomex (`ARG-101-004`) | Ninguna: armas de uso exclusivo y cartuchos **sin cantidad** | 4 | Cualitativo. Confianza Medio |
+| `ARG-101-ARM-004` | Seis municipios, Querétaro (`ARG-101-006`) | Ninguna: armas **sin cantidad** | 7 | Cualitativo. Confianza Medio |
+| `ARG-101-ARM-005` | Colima (`ARG-101-002`) | Ninguna: granadas, armas y cargadores **sin cantidad**; "más de 2,500 cartuchos" **imprecisa** | **no conciliados** (0 frente a 1) | Cualitativo, derivado de enfrentamiento. Confianza Medio |
+
+**Total integrado**: 1 arma corta · 0 largas · 5 sin clasificar · cartuchos `s/c` · cargadores `s/c` ·
+granadas `s/c` con presencia confirmada · **17 detenidos** (suma propia de ARGOS: 2+4+4+7) ·
+**5 entidades**.
