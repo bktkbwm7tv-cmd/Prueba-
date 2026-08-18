@@ -269,6 +269,29 @@ if "sem-item" in salida or "stat-tile" in salida or "cover-visuals" in salida:
 if salida.count("<svg") != 3:
     errores.append(f"se esperaban 3 SVG, hay {salida.count('<svg')}")
 
+# --- control de desborde horizontal (fallo de ARGOS 100) ---------------------
+# La móvil de ARGOS 100 se salió de la pantalla y la validación dijo "OK": comprobaba
+# markup, secciones y SVG, pero nunca el ANCHO. Estas dos comprobaciones cubren los dos
+# orígenes reales del desborde. Se ejecutan sobre el ESCRITORIO, que es donde escribe el
+# redactor: corregir ahí es lo que evita que el fallo vuelva a colarse en silencio.
+sueltas = len(re.findall(r'<table\b', desk)) - len(
+    re.findall(r'<div class="table-wrap">\s*<table\b', desk))
+if sueltas > 0:
+    errores.append(
+        f"{sueltas} tabla(s) del escritorio sin envoltorio <div class=\"table-wrap\">: "
+        "la regla que retira las retículas detecta por el envoltorio y no dispararía")
+
+# Tokens largos sin punto de corte (URLs desnudas, IDs concatenados) en texto visible.
+texto = re.sub(r"<svg.*?</svg>", " ", salida, flags=re.S)
+texto = re.sub(r"<style.*?</style>", " ", texto, flags=re.S)
+texto = re.sub(r"<script.*?</script>", " ", texto, flags=re.S)
+texto = re.sub(r"<[^>]+>", " ", texto)
+largos = sorted({t for t in re.findall(r"\S{75,}", texto)})
+if largos:
+    errores.append(
+        f"{len(largos)} token(s) de 75+ caracteres sin corte en texto visible "
+        f"(desbordan en pantalla estrecha), p. ej.: {largos[0][:90]}")
+
 print(f"escrita {OUT} ({len(salida)} bytes)")
 print(f"contadores del generador: 🔴 {n_rojo}  🟡 {n_ama}  🟢 {n_verde}")
 print("tarjetas: móvil %d / escritorio %d"

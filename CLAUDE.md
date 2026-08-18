@@ -339,6 +339,67 @@ retira del acumulado y se publica la fe de erratas correspondiente, marcando el 
 `CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO`. Señalar un problema sin resolverlo,
 edición tras edición, no es trazabilidad: es un error conocido que se sigue publicando.
 
+## Reglas de procedencia del dato
+
+Versión 1.0 — reglas que se aplicaban de facto en las definiciones de agente o en la práctica de las
+ediciones, y que se consagran aquí porque cada una nació de un fallo real ya ocurrido.
+
+### La fecha de la URL fija la publicación, no el hecho
+
+Exigir la fecha en la URL o en el titular es la única defensa eficaz contra el resumidor del
+buscador, que afirma fechas que la fuente no sostiene. Pero esa fecha es la de **publicación**.
+**Fecha del hecho, fecha del aseguramiento, fecha de publicación y fecha de consulta son cuatro
+campos distintos y nunca se sustituyen entre sí.** Un hecho procesal del 10 de agosto puede
+publicarse el 17 con una URL fechada el 17: ambas fechas son correctas y describen cosas distintas.
+
+Corolario para los agregados institucionales: **nunca aceptar una pena o una cifra destacada en el
+titular de un agregado sin una URL fechada que la ate específicamente a ese corte.** Una fiscalía
+puede encabezar un boletín de agosto con una condena de junio sin faltar a la verdad.
+
+### Toda cifra derivada debe declararse como cálculo propio
+
+El riesgo no está solo en copiar mal una cifra: está en **derivarla correctamente y olvidar declarar
+que se derivó**. Una suma, un promedio, un total o un acumulado calculado por ARGOS a partir de
+datos publicados es un **cálculo propio** y debe ir marcado como tal, nunca presentado como dato de
+fuente. Si la autoridad no publicó el agregado, ARGOS puede calcularlo, pero entonces el agregado es
+de ARGOS y se dice.
+
+### Corroboración asimétrica
+
+El nivel de confianza de una fila **lo fija el campo peor sostenido**, no el mejor ni el promedio.
+Un evento con fecha, municipio y corporación bien corroborados pero con el desglose numérico en una
+sola fuente vale lo que vale ese desglose. La marca se aplica al renglón completo.
+
+### Corrección heredada: dos supuestos distintos
+
+- Un dato **sin respaldo jamás** —que no lo tuvo en su edición de origen— se retira y se publica la
+  **fe de erratas** correspondiente.
+- Un dato **con respaldo en su origen pero no reverificado** en la edición actual se conserva y se
+  marca `HEREDADO — NO REVERIFICADO`.
+
+Confundirlos produce dos errores opuestos: borrar datos buenos o arrastrar datos malos.
+
+### Las tres casillas de cobertura
+
+Un portal que no publicó, un portal que no se pudo ver y un portal que no se consultó son tres
+estados distintos y **jamás se reportan con la misma etiqueta**:
+
+| Casilla | Significa | Cuándo puede usarse |
+|---|---|---|
+| `SIN ACTUALIZACIÓN CONSTATADA` | Se vio el listado de boletines y no había nada del periodo | Solo con lectura directa del portal |
+| `SIN RESULTADO INDEXADO EN VENTANA` | Se buscó dirigido y el buscador no devolvió nada del periodo | Con el egreso bloqueado, es la casilla correcta en casi todos los casos |
+| `NO REVISADA` | No se llegó a consultar | Siempre que el presupuesto se haya agotado antes. **Nunca disfrazarla de "sin actualización"** |
+
+### Umbral de integración: asimétrico entre los dos módulos
+
+- **Armamento**: un evento con confianza **Bajo** (dos fuentes periodísticas coincidentes sin
+  comunicado oficial) **sí se integra** al conteo nacional, marcado con su nivel.
+- **Sentencias**: la confianza **Bajo** **no basta**. Una sentencia sin fuente oficial queda en
+  `PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL`.
+
+La asimetría es deliberada: un aseguramiento mal contado se corrige en la edición siguiente; una
+sentencia inexistente atribuida a una persona con nombre no se corrige con una fe de erratas.
+
 ## Reglas de validación
 
 Cada evento debe cumplir, en la medida de lo posible: ✔ fuente institucional, ✔ fuente nacional,
@@ -355,6 +416,20 @@ Columnas obligatorias: Entidad, Hecho, Nivel de riesgo, Fuente institucional, Fu
 Nivel de confianza, ARG-ID. El "Nivel de riesgo" se clasifica con la escala 🔴 Rojo / 🟡 Amarillo /
 🟢 Verde definida en "Metodología del nivel de riesgo nacional", no con una escala genérica de
 alto/medio/bajo.
+
+### Convención de marcado de tablas (obligatoria para la paridad móvil)
+
+Toda tabla del cartelón se escribe **siempre** envuelta:
+
+```html
+<div class="table-wrap"><table class="exec"> … </table></div>
+```
+
+Usar `class="exec wide"` cuando la tabla tenga muchas columnas (las de los módulos de armamento y
+sentencias). **El generador de la versión móvil detecta las tablas por el envoltorio
+`table-wrap`**: una `<table>` suelta no dispara la regla que retira las retículas y **desborda
+horizontalmente la pantalla en silencio**. Es un fallo que ya ocurrió y que el propio generador solo
+puede mitigar, no evitar.
 
 ## Escala de nivel de confianza
 

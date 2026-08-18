@@ -275,8 +275,12 @@ sería inventar un dato.
 
 - **Tijuana, BC** (`ARG-100-005`): 1 arma **sin clasificar**, fuente única. Fuera por taxonomía y por
   umbral de corroboración. Detenido no integrado.
-- **Altamira, Tamaulipas** (`ARG-100-001`): hidrocarburo y 116 unidades vehiculares, fuera de
-  taxonomía. Detenidos (2 o 3, sin conciliar) van a "Detenciones relevantes".
+- **Altamira, Tamaulipas** (`ARG-100-001`): hidrocarburo y unidades vehiculares, fuera de
+  taxonomía. **Sin total de unidades**: las tres categorías con cantidad expresa son 23
+  tractocamiones, 70 remolques y 23 dollys; su suma sería un **cálculo propio de ARGOS** y no se
+  publica como dato. Detenidos (2 o 3, sin conciliar) van a "Detenciones relevantes".
+  *(Corregido por ARGOS 101: este renglón conservaba el "116 unidades vehiculares" que el control
+  `procedencia-cifras` ya había retirado del cuerpo de la edición.)*
 - **León, Guanajuato** (`ARG-100-002`): 506 kg de marihuana, fuera de taxonomía. Sin detenidos.
 - **Pinotepa Nacional, Oaxaca** (`ARG-100-004`): narcótico en cantidad no publicada, sin armamento.
   3 detenidos no integrados.
