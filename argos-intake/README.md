@@ -11,11 +11,12 @@ clasificado, indexado, buscable y auditable — sin modificar jamás el archivo 
 Este directorio implementa el **MVP 1** completo descrito en la instrucción maestra (creación de
 casos, Share Extension "Guardar en ARGOS", importación de archivos, bandeja de entrada,
 clasificación automática por extensión, preservación del original, SHA-256, fichas de archivo,
-búsqueda, etiquetas, Face ID/PIN y almacenamiento local) más casi todo **MVP 2**: importación de
+búsqueda, etiquetas, Face ID/PIN y almacenamiento local) más **MVP 2 completo**: importación de
 chats completos de WhatsApp (sección 5), OCR sobre imágenes y PDFs (sección 14), ARGOS EXTRACT —
 extracción de entidades propuestas, nunca confirmadas automáticamente (sección 13) —, Mapa del Caso
-(sección 16) y Timeline ARGOS (sección 17). Coincidencias entre casos, multiusuario/servidor y
-ARGOS AI siguen fuera de este alcance a propósito (la propia instrucción maestra lo pide así,
+(sección 16), Timeline ARGOS (sección 17) y el Módulo de Coincidencias ARGOS entre casos
+(sección 19). Multiusuario, servidor institucional, sincronización, red de vínculos y ARGOS AI son
+MVP 3 y siguen fuera de este alcance a propósito (la propia instrucción maestra lo pide así,
 sección 35).
 
 ## Por qué este código no está compilado ni probado en este entorno
@@ -81,6 +82,10 @@ argos-intake/
                                        crea propuestas sin duplicar lo ya revisado
       SearchService                — construye el índice de búsqueda desde SwiftData
                                       (ítems, su texto OCR, y mensajes de chats importados)
+      CoincidenciasService          — Módulo de Coincidencias ARGOS (sección 19): agrupa
+                                       EntityCandidateEntity por (categoría, valor) y reporta los
+                                       grupos que aparecen en más de un caso — se recalcula al
+                                       vuelo, nunca se persiste, para no quedar desactualizado
       AuthenticationService        — Face ID/Touch ID (LocalAuthentication) + PIN en Keychain
     Views/
       RootView                    — NavigationSplitView de 4 áreas (sección 20) + botón "+" flotante
@@ -102,6 +107,10 @@ argos-intake/
       Timeline/CaseTimelineView    — Timeline ARGOS (sección 17): ítems + mensajes de chat
                                       mezclados cronológicamente, agrupados por día, con filtros
                                       por tipo de archivo, categoría de etiqueta y fuente
+      Coincidencias/CoincidenciasView — Módulo de Coincidencias ARGOS (sección 19), accesible
+                                         desde la barra de herramientas de Casos: agrupado por
+                                         categoría → valor → caso, con el aviso de la sección 19
+                                         de que es información para analizar, no una vinculación
       Auth/LockScreenView          — pantalla de bloqueo
       Shared/                      — tema visual ARGOS, selector de etiquetas, y
                                       EntityCandidateRow/EntityCandidateGroupedList (ARGOS EXTRACT,
@@ -172,6 +181,16 @@ argos-intake/
   alcance de MVP2). El filtro por etiqueta (persona/teléfono/vehículo/ubicación, sección 17) solo
   puede aplicarse a ítems — los mensajes no llevan etiquetas — así que con ese filtro activo los
   mensajes se excluyen en vez de mostrarse sin evaluar.
+- **Coincidencias nunca declara una vinculación (sección 19).** `CoincidenciasService` agrupa
+  `EntityCandidateEntity` por (categoría, valor normalizado) y reporta los grupos que tocan más de
+  un caso — eso es literalmente todo lo que calcula. No hay puntaje de similitud, no hay "probable
+  vínculo", no hay texto en `CoincidenciasView` que sugiera una conclusión: el aviso de la pantalla
+  ("coincidencia de información susceptible de análisis") es la sección 19 citada casi
+  textualmente, a propósito. Se excluyen las propuestas `DESCARTADO` (si el analista ya dijo que un
+  valor estaba mal en un caso, no debe seguir generando coincidencias en otros); `RECIBIDO` y
+  `VERIFICADO` sí cuentan, con su estatus visible por caso para que quede claro cuánto se ha
+  revisado cada aparición. El resultado no se persiste — se recalcula cada vez que se abre la
+  pantalla, así que nunca puede quedar desactualizado respecto al estado real de las entidades.
 
 ### Qué falta para tener un `.xcodeproj` abrible
 
@@ -213,13 +232,17 @@ blanco, rojo solo para alertas, amarillo para pendientes, verde para validado �
 semáforo que usan los reportes ARGOS de este repositorio, aplicada aquí a estados de verificación y
 prioridad de caso en lugar de al Nivel de Riesgo Nacional.
 
-## Próximos pasos (MVP2 / MVP3)
+## Próximos pasos (MVP3)
 
-Ver secciones 36-37 de la instrucción maestra. De MVP2 ya están implementados: importación de
-chats de WhatsApp (sección 5), OCR (sección 14), ARGOS EXTRACT sobre ítems y mensajes (sección 13),
-Mapa del Caso (sección 16) y Timeline ARGOS (sección 17). Queda:
-
-1. Módulo de Coincidencias ARGOS entre casos (sección 19) — ahora hay entidades confirmadas
-   (`EntityCandidateEntity` en estatus `VERIFICADO`) que son la base natural para cruzar entre
-   casos: mismo valor, misma categoría, casos distintos.
-2. Multiusuario, servidor institucional, sincronización, red de vínculos y ARGOS AI (MVP3).
+Ver secciones 36-37 de la instrucción maestra. **MVP2 está completo**: importación de chats de
+WhatsApp (sección 5), OCR (sección 14), ARGOS EXTRACT sobre ítems y mensajes (sección 13), Mapa del
+Caso (sección 16), Timeline ARGOS (sección 17) y el Módulo de Coincidencias ARGOS (sección 19). Lo
+que sigue es MVP3 en su totalidad — multiusuario con permisos por caso/módulo/archivo/función,
+servidor institucional (reemplazando el local-first actual por una capa de almacenamiento
+intercambiable, sección 28), sincronización, auditoría institucional, red de vínculos visual
+(`RELATIONSHIP` de la sección 38 — el grafo persona↔teléfono↔vehículo↔domicilio↔caso que hoy solo
+existe implícitamente a través de `EntityCandidateEntity` y las coincidencias) y ARGOS AI, con la
+separación HECHO / EXTRACCIÓN AUTOMÁTICA / INFERENCIA / VALIDACIÓN HUMANA de la sección 29 aplicada
+también ahí. Es un salto de complejidad real — arquitectura de servidor, autenticación
+multiusuario, sincronización con resolución de conflictos — y vale la pena tratarlo como su propio
+proyecto de diseño antes de escribir código, no como una extensión más de este MVP2.

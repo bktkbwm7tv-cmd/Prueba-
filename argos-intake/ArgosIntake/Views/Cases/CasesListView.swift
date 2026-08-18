@@ -36,6 +36,13 @@ struct CasesListView: View {
         .navigationTitle("Casos")
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
+                NavigationLink {
+                    CoincidenciasView()
+                } label: {
+                    Label("Coincidencias", systemImage: "point.3.connected.trianglepath.dotted")
+                }
+            }
+            ToolbarItem(placement: .primaryAction) {
                 Button {
                     showingImportChat = true
                 } label: {
