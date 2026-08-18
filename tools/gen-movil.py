@@ -145,24 +145,39 @@ def lista_a_reg(bloque, anclas_validas=frozenset()):
 
 
 def tabla_a_ficha(p, con_tarjetas):
-    """Las tablas ejecutivas se retiran para evitar desplazamiento horizontal.
+    """Las tablas ANCHAS se retiran para evitar desplazamiento horizontal.
 
-    La nota que las sustituye NO debe declarar una integridad que la sección no
-    tenga: si la sección no lleva una ficha por evento, sus campos de corporación
-    y fuente realmente no se reproducen, y hay que decirlo.
+    Regla afinada en ARGOS 101 tras un hallazgo del control `procedencia-cifras`:
+    la versión anterior retiraba TODAS las tablas de la sección, y con ellas se
+    perdían los dos indicadores de cobertura —que `CLAUDE.md` declara
+    obligatorios— y la tabla de indicadores oficiales. Peor aún, el aviso
+    sustitutorio afirmaba que esos campos constaban en las fichas de la misma
+    sección, lo que era falso para las tablas que no describen eventos.
+
+    Ahora solo se retiran las tablas de MÁS DE CUATRO COLUMNAS, que son las que
+    realmente desbordan. Las de dos, tres o cuatro columnas —cobertura,
+    indicadores, seguimientos— caben y se conservan íntegras, dentro de su propio
+    contenedor desplazable. La nota que sustituye a una tabla retirada NO declara
+    una integridad que la sección no tenga.
     """
-    if con_tarjetas:
-        aviso = ('<p class="muted-note"><b>Tabla ejecutiva.</b> Se omite la retícula para evitar '
-                 'desplazamiento horizontal; sus campos constan íntegros en las fichas de esta '
-                 f'misma sección y en <code>reports/argos-{FECHA}-fuentes.md</code>.</p>')
-    else:
-        aviso = ('<p class="muted-note"><b>Tabla ejecutiva.</b> Se omite la retícula para evitar '
-                 'desplazamiento horizontal. Las cifras por evento están en los bloques de esta '
-                 'sección, pero los campos de <b>corporación, fuente primaria y corroboración</b> '
-                 '<b>no se reproducen en esta versión</b>: constan en '
-                 f'<code>reports/argos-{FECHA}.html</code> y en '
-                 f'<code>reports/argos-{FECHA}-fuentes.md</code>.</p>')
-    p = re.sub(r'<div class="table-wrap">.*?</table>\s*</div>', lambda m: aviso, p, flags=re.S)
+    def sustituir(m):
+        bloque = m.group(0)
+        ncols = len(re.findall(r'<th\b', bloque.split('</thead>')[0])) if '</thead>' in bloque else 99
+        if ncols <= 4:
+            # Cabe en pantalla estrecha: se conserva, desplazable en su contenedor.
+            return '<div class="tabla-scroll">' + bloque.split('<div class="table-wrap">')[-1].rsplit('</div>', 1)[0] + '</div>'
+        if con_tarjetas:
+            return ('<p class="muted-note"><b>Tabla ejecutiva de ' + str(ncols) + ' columnas.</b> '
+                    'No se reproduce en esta versión por ancho; cada evento tiene su ficha completa '
+                    'en esta misma sección, y la tabla íntegra está en '
+                    f'<code>reports/argos-{FECHA}.html</code>.</p>')
+        return ('<p class="muted-note"><b>Tabla ejecutiva de ' + str(ncols) + ' columnas.</b> '
+                'No se reproduce en esta versión por ancho. <b>Sus cifras no constan en otro lugar '
+                'de la versión móvil</b>: consúltese la tabla íntegra en '
+                f'<code>reports/argos-{FECHA}.html</code> o el registro de fuentes en '
+                f'<code>reports/argos-{FECHA}-fuentes.md</code>.</p>')
+
+    p = re.sub(r'<div class="table-wrap">.*?</table>\s*</div>', sustituir, p, flags=re.S)
 
     # Red de seguridad: una tabla escrita sin el envoltorio `table-wrap` no la
     # detectaba la regla de arriba y llegaba entera a la móvil, desbordando el

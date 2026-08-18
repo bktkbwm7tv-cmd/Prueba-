@@ -336,6 +336,12 @@ Ver el desarrollo completo y la justificación de método en la pág. 5 del cart
 | **Golfo** | 2 de 2 revisadas | 10 portales dirigidos, 0 con hecho en ventana | **0** | 20/20 |
 | **Sureste** | 6 de 6 revisadas | 6 portales dirigidos, 0 con hecho en ventana | **0** | 20/20 |
 
+**Total de portales consultados por búsqueda dirigida: 49** —Noroeste 8, Noreste 10, Occidente 5,
+Centro 10, Golfo 10, Sureste 6—, de los cuales **2 publicaron material localizable en la ventana**
+(`fiscalia.durango.gob.mx` y `boletines.guanajuato.gob.mx`) y **47 quedaron
+`SIN RESULTADO INDEXADO EN VENTANA`**. *Las tres cifras son conteo propio de ARGOS, agregado a partir
+de las casillas región por región.*
+
 **Ninguna entidad quedó `NO REVISADA`.** **Ninguna entidad pudo reclamar `SIN ACTUALIZACIÓN
 CONSTATADA`**: bajo bloqueo total no puede verse el listado de boletines de ningún portal.
 
@@ -367,3 +373,88 @@ nuevo (los dos casos del corte son resoluciones judiciales, no hechos), **ataque
 Ninguna de estas categorías puede declararse `SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE`: no se
 leyó ningún portal por acceso directo, de modo que la casilla correcta es la de resultado no
 indexado.
+
+---
+
+## Eventos anteriores publicados durante el corte — respaldo
+
+Incorporada tras el control `procedencia-cifras`, que detectó que la tabla del Bloque 4 de la pág. 4
+—más de treinta cifras— **no tenía una sola línea en este registro**. Ninguna de estas cifras suma a
+los totales de ARGOS 101; se documentan porque circularán a las ediciones siguientes como antecedente.
+
+| Entidad · Municipio | Desglose publicado | Fuentes (fecha en URL salvo indicación) |
+|---|---|---|
+| **Durango · Mapimí** | 8 armas largas, 4 cortas (12 en total, cifra de la fuente), 87 cargadores, 4,715 cartuchos, 4 detenidos, 6.665 kg de marihuana, 1 vehículo, equipo táctico. Ejército + GN, a disposición de FGR Gómez Palacio | `razon.com.mx/mexico/2026/08/17/…`, `cronica.com.mx/nacional/2026/08/17/…`, `infobae.com/mexico/2026/08/17/…`, `yucatan.com.mx/mexico/2026/08/17/…`. **Fecha del hecho (15-ago) solo en cuerpo parafraseado — no fijada** |
+| **Campeche · Hopelchén** | 1 arma larga, 1 corta, 16 cartuchos, 1 cargador, 7 detenidos, 2 inmuebles; dosis (56 marihuana, 41 metanfetamina, 12 cocaína). SEDENA y GN con SSPC, SEMAR, FGR y FGE | `yucatan.com.mx/mexico/2026/08/17/…`, `calibre800.com/2026/08/17/…`, `eluniversal.com.mx/nacion/…`, `excelsior.com.mx/nacional/cateos-hopelchen-campeche`. **Hecho del 14-ago según dos medios nacionales** |
+| **Veracruz · 23 municipios** | 38 cateos, 29 detenidos. Armas, cargadores y cartuchos **sin cantidades**. FGE con SEDENA, SEMAR, GN, SSP y policías municipales | `plumaslibres.com.mx/2026/08/17/…`; corroboración `xeu.mx/veracruz/1429723/…` (sin fecha en URL). Hecho: 10–16 ago |
+| **Guerrero · estatal** | 34 detenidos; Policía Estatal: 2 armas largas, 6 cortas, 13 cargadores, 322 cartuchos; 105 armas blancas. FGE: 31 órdenes, 19 vinculaciones, **5 sentencias condenatorias** (2a8m a 67 años) | `guerrero.quadratin.com.mx/…`, `laplazadiario.com.mx/…`. **Ambas sin fecha en URL**; periodo 10–16 ago. ⚠️ La segunda da **36 detenidos y 17 armas**: `DISCREPANCIA — NO INTEGRAR` |
+| **Sonora · estatal** | 116 detenidos, 18 armas **sin desglose**, 1,061 cartuchos, 15 vehículos, >2 millones de dosis. Mesa Estatal de Seguridad | `tribuna.com.mx/seguridad/2026/08/17/…`, `infoson.com.mx/2026/08/17/…`. Periodo 10–16 ago |
+| **Baja California · Tijuana** | 227 detenidos, 11 armas (7 cortas / 4 largas), "más de cien cartuchos" (**imprecisa**), 29 vehículos recuperados. SSPCM | `pulsociudadano.mx/2026/08/17/…`, `tijuanaenlinea.com/policiaca/2026/08/17/…`, `rosaritonoticias.com/2026/08/17/…`. ⚠️ `fuertenoticias.info` titula **213**: contradicción no arbitrada |
+| **Nuevo León · Pesquería** | 62,000 L de hidrocarburo, 10 fracktanks, 9 tractocamiones, 9 autotanques, 2 vehículos, 9 cajas secas. FGR. Sin detenidos publicados | Boletín del Gabinete de Seguridad del **14-15-16 ago**, `gob.mx/sspc/prensa/…-14-15-y-16-de-agosto-de-2026`. **Cifras del resumidor, no del documento** |
+
+**Advertencia común a las siete filas**: ninguna se leyó en su portal de origen. Las de Mapimí,
+Hopelchén, Sonora y Tijuana proceden de medios; las de Pesquería, del resumidor sobre el boletín
+federal. **Ninguna es integrable en ninguna edición sin reverificación.**
+
+## Señuelos de fecha — respaldo de la tabla del cartelón
+
+Incorporada tras el mismo control, que detectó que el cartelón afirmaba que este registro contenía
+los quince señuelos cuando solo documentaba cuatro.
+
+| # | Señuelo | Fecha real | Ancla que la fija |
+|---|---|---|---|
+| 1 | Suchiapa, Chiapas — 9 cateos, 26 detenidos, 21 policías municipales | **4-abr-2025** | `aristeguinoticias.com/040425/…`, `proceso.com.mx/…/2025/4/4/…`, `infobae.com/mexico/2025/04/05/…` |
+| 2 | Matamoros — SEMAR, enfrentamiento, 3 detenidos, "jueves 17 de agosto" | **17-ago-2023** | `infobae.com/mexico/2023/08/17/…`. Refuerzo: el 17-ago-**2026 fue lunes** |
+| 3 | Camargo, Tamaulipas — 3 detenidos, 3 armas largas | **10-11 ene 2026** | Ejido Comales; El Universal publica con **slug sin fecha** — riesgo alto |
+| 4 | BCS — 17 detenidos, 25 armas, 145 cartuchos, 43 cargadores, 110 artefactos explosivos | **25-jun-2026** | `analisisbcs.com.mx/2026/06/25/…` |
+| 5 | Sinaloa — 88 detenidos, 71 armas, 19,711 municiones, 12 AEI, 35 vehículos | periodo **3–9 ago** | `tusbuenasnoticias.com/…/2026/08/14/…` |
+| 6 | `sspsinaloa.gob.mx` — los dos boletines indexados del portal oficial | **15-ago-2025** y 20-nov-2025 | Trampa de aniversario **en el propio portal oficial** |
+| 7 | NotiMX — "sentencian a 40 años por extorsión agravada" | **mayo-2026** | `notimx.mx/2026/05/…`. Cifra y delito idénticos a `ARG-99-SEN-001` |
+| 8 | Michoacán — "GobMich: 4 abatidos y 2 detenidos tras jornada violenta" | **22-feb-2026** | `elheraldoslp.com.mx/new/2026/02/23/…` |
+| 9 | Colima — "El Huesos" y "El Topo", jefes de sicarios del CJNG abatidos | **14-may-2026** y **21-jul-2026** | `abcnoticias.mx/nacional/2026/5/14/…`, `infobae.com/mexico/2026/07/21/…` |
+| 10 | Veracruz — "Condenas de hasta 350 años", Tuxpan | indicio de **junio-2026** | `laopinion.net/350-anos-de-prision-a-secuestradores/` (sin fecha en slug) |
+| 11 | Veracruz — Córdoba/Poza Rica, 110 y 50 años | agregado del **5-ago-2026** | `lapoliticaenrosa.com/2026/08/05/…` (32 resoluciones, no 53) |
+| 12 | Oaxaca — Boletín 1,261 FGEO, 3 vinculados por narcomenudeo en Pinotepa Nacional | **feb-2025** | `publimar.mx/…/2025/02/19/…`, `laondaoaxaca.com.mx/2025/02/…` |
+| 13 | Quintana Roo — cuatro sentencias de 50 años (Benito Juárez, Isla Mujeres, Cozumel, Playa del Carmen mar-2026) | casos **distintos** | `noticaribe…/2026/03/18/…` para el cuarto |
+| 14 | "Arsenal oculto en camioneta, 2 detenidos" — aparece en búsquedas de Chiapas | **Las Choapas, VERACRUZ**, 13-ago | `golpepolitico.com/2026/08/14/…`. Los detenidos son originarios de Chiapas |
+| 15 | Altamira — "hecho del 17-ago" y "comunicado de la Primera Zona Naval del 15-ago" | hecho **16-ago**; el comunicado **no existe localizable** | La URL de `noticiaspc.com.mx/2026/08/17/` fija **publicación**. El comunicado fue afirmado por el resumidor **sin URL ni título** |
+
+## Playa del Carmen — la reverificación de la multa
+
+El cartelón declara la multa **reverificada**; esta es la línea que lo respalda, incorporada tras el
+control, que advirtió con razón que una reserva de auditoría no puede cerrarse con una verificación
+que no consta en ningún expediente.
+
+- **Cifra**: 260,640 pesos **por cada sentenciado**. Entró en `argos-2026-08-16-fuentes.md` (ARGOS 99)
+  y se arrastró sin reverificar hasta ARGOS 100.
+- **Reverificación de ARGOS 101**: **segunda consulta dirigida independiente** ejecutada por el
+  barrido Sureste, que devolvió la misma cifra de forma coincidente.
+- **Límite expreso de lo que eso vale**: la reverificación es **sobre texto parafraseado del
+  buscador**, no sobre boletín leído. El boletín de la FGE Quintana Roo **no se localizó**
+  (`site:fgeqroo.gob.mx` sin resultado para el caso). Por tanto la reserva se cierra **solo en el
+  sentido de que la cifra ya no descansa en una sola consulta**; el caso sigue
+  `PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL`.
+
+## Candidatas judiciales no integradas — respaldo
+
+| Entidad | Caso | Fuente | Motivo de exclusión |
+|---|---|---|---|
+| Chihuahua | Cd. Juárez: 5a6m4d y multa de 170 UMA, posesión de arma y marihuana (FECOR/FGR) | `diario.mx/juarez/2026/aug/17/…-1133671.html` | Titular dice **"se declara culpable"**, no "sentencia condenatoria". Fuente única periodística. *(Las 170 UMA se publican sin convertir a pesos: la conversión sería cálculo propio.)* |
+| San Luis Potosí | Matlapa: Elías "N", lesiones doblemente agravadas, procedimiento abreviado, hecho ago-2024 | `mhnoticias.mx` (término literal en titular), `codigosanluis.com`, `sanluispotosi.quadratin.com.mx` | **Ninguna URL fija fecha.** Firmeza no informada |
+| Estado de México | Ecatepec: 40 años, extorsión agravada | La Jornada e Infobae, publicación **15-ago** | **Fuera de la ventana** |
+| Aguascalientes | Luis Ángel "N", 50 años, delitos contra la libertad | `clgnoticias.com/2026/08/…` | La URL **fija solo el mes**; el día lo afirma el resumidor |
+| Colima | Omar "N", 35 años, homicidio calificado y tentativa, Villa de Álvarez | AFmedios | **Sin fecha en URL**; el resumidor la sitúa a mediados de julio |
+| Guerrero | 5 condenatorias, 2a8m a 67 años | Quadratín Guerrero, La Plaza | **Agregado sin desglose nominal**; periodo 10–16 ago |
+| Guanajuato | 36 personas sentenciadas por extorsión "en lo que va de 2026" | `boletines.guanajuato.gob.mx/2026/08/17/…`; `bajio.quadratin.com.mx/…`, `primerplanoirapuato.com/…/2026/08/17/…` | **AGREGADO ANUAL**, no del corte, sin desglose por caso |
+| Quintana Roo | Playa del Carmen: 50 años a tres personas | `24horasqroo.mx/2026/08/12/50-anos-prision-4/`, `quintanaroohoy.com`, `grupointeractivotv.com`, `periodicoquequi.com` | Publicación **12-ago**, fuera de ventana. Vacío arrastrado de ARGOS 99 |
+| Tabasco | Cunduacán: 8 años por violación, Miguel "N" | `novedadesdetabasco.com.mx/2026/08/15/…` | Publicación **15-ago**, ventana de ARGOS 99. Boletín institucional no localizado pese a explotar `/Boletin/Index/<id>` |
+| Michoacán | Ruffo Appel / Ingemar: amparo de Ricardo Thompson Navarro | `jornada.com.mx/noticia/2026/08/13/…`, `infobae.com/mexico/2026/08/14/…` | **Es una suspensión provisional, no una sentencia.** Fuera de ventana |
+
+## Nota de vigilancia sobre una cifra
+
+El control anotó que los **116 detenidos** del agregado de Sonora coinciden numéricamente con la
+cifra falsa que ese mismo control retiró en ARGOS 100 ("116 unidades vehiculares", suma 23+70+23).
+Son contextos distintos —una es un conteo de personas publicado por la Mesa Estatal de Seguridad de
+Sonora y la otra era una suma propia sobre vehículos en Tamaulipas— y **casi con certeza se trata de
+una coincidencia**. Se deja anotado para que ninguna edición futura la recoja sin releerla contra su
+fuente literal.
