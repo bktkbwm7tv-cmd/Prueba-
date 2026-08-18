@@ -1,0 +1,890 @@
+ARGOS 100 — REPORTE NACIONAL DE SEGURIDAD
+REPORTE DIARIO DE INTELIGENCIA CRIMINAL — "INVESTIGACIONES, BÚSQUEDA Y VERDAD"
+Corte informativo: 2026-08-17, 02:47 (CDMX) · Corte matutino · Uso institucional
+Ventana de hechos: 2026-08-16 07:38 CDMX → 2026-08-17 02:47 CDMX (~19 h)
+Versión 3.0 · Sistema de Inteligencia Criminal Trazable
+
+==============================================================================================
+PÁGINA 1 — PORTADA
+==============================================================================================
+
+
+── SEMÁFORO ARGOS ──────────────────────────────────────────────────────────────────────────
+
+Cero eventos rojos y cero amarillos en la ventana de este corte, frente a tres rojos y uno
+amarillo en ARGOS 99. Esta cifra no debe leerse como un dato de seguridad. La ventana es corta
+(~19 h, de domingo por la mañana a lunes de madrugada) y el barrido de las seis regiones cerró
+con cero portales institucionales leídos por acceso directo y con el boletín diario del
+Gabinete de Seguridad sin indexarse por cuarto corte consecutivo. Lo que ARGOS 100 registra es
+la ausencia de eventos de alto impacto verificables, no la ausencia de eventos de alto
+impacto. Los cinco hechos del corte son acciones institucionales verdes, encabezadas por el
+aseguramiento de 297,000 litros de diésel en Altamira, Tamaulipas (ARG-100-001), que reactiva
+la categoría de huachicol. Conforme a la Metodología del Nivel de Riesgo Nacional, las
+acciones verdes no reducen el nivel de riesgo; y sin eventos rojos observados ni cobertura
+suficiente para afirmar que no los hubo, el nivel no es determinable en este corte (ver pág.
+6).
+
+
+── EJES DEL DÍA ────────────────────────────────────────────────────────────────────────────
+
+[VERDE] La FGR, con apoyo de la SEMAR, asegura 297,000 litros de diésel, un inmueble, 23
+tractocamiones, 70 remolques y 23 dollys en Altamira, Tamaulipas. Cifra de detenidos no
+conciliada (2 vs. 3). Reactiva la categoría de huachicol.  (ARG-100-001)
+
+[VERDE] Un oficial canino de las FSPE detecta 506 kg de presunta marihuana en 39 cajas dentro
+de una empresa de paquetería en León, Guanajuato. Sin detenidos. Único boletín institucional
+del corte fechado dentro de la ventana.  (ARG-100-002)
+
+[VERDE] La AMIC detiene a cinco hombres con tres armas cortas y droga en Hermosillo, Sonora;
+uno de ellos acumula ocho órdenes de aprehensión por desaparición y secuestro. Único
+aseguramiento que alimenta el conteo nacional de armamento.  (ARG-100-003)
+
+[VERDE] Cateo de la FGEO en Pinotepa Nacional, Oaxaca: tres detenidos, metanfetamina y
+cannabis. Sin armamento asegurado, por lo que no es línea de conteo del módulo de armamento.
+(ARG-100-004)
+
+[VERDE] Detención de un asaltante con un arma de fuego cargada en el Cañón del Padre, Tijuana.
+Fuente única regional y arma sin clasificar: fuera del total numérico, se registra como evento
+cualitativo.  (ARG-100-005)
+
+[CORRECCIÓN] El homicidio múltiple de Azcapotzalco heredado como prioridad de ARGOS 99 —cuatro
+muertos, entre ellos un menor de 13 años— no ocurrió el 16 de agosto: el hecho es real pero
+del 14 de junio de 2026. Error de fecha, no hallazgo. Ver pág. 6.  (ARG-100-FE-001)
+
+[RECUPERACIÓN] Zamora, Michoacán: balacera y operativo del 15-ago con 4 detenidos, 3 fusiles
+AR-15 y una pistola. Pertenece a la ventana de ARGOS 99, que lo omitió. Se recupera sin
+sumarlo al conteo de hoy.  (ARG-100-FE-002)
+
+[AVANCE] Avanza el vacío de tres ediciones sobre las sentencias de Veracruz: Cosamaloapan pasa
+de mención a caso documentado —nombres, autoridad, distrito y hecho de origen— sobre una cifra
+que ARGOS 99 ya había citado. Quedan nueve condenatorias sin desglose. Ver pág. 5.
+(ARG-100-SEN-SEG-001)
+
+[SIN SENTENCIAS] Ninguna sentencia condenatoria dentro de la ventana en las 19 de 32 fiscalías
+donde sí se buscó. El conteo nacional judicial del corte es cero. Trece fiscalías quedaron no
+revisadas por presupuesto — ver pág. 5.
+
+[VACÍO FEDERAL] El boletín diario del Gabinete de Seguridad sigue sin indexarse desde el
+13-ago: cuarto corte consecutivo. Confirmado de forma independiente por cuatro de los seis
+equipos regionales.  (pág. 6)
+
+
+── RESUMEN EJECUTIVO ───────────────────────────────────────────────────────────────────────
+
+La edición número 100 cierra sin un solo evento rojo o amarillo verificable, algo que no había
+ocurrido en las catorce ediciones conservadas. El dato principal del corte es metodológico
+antes que criminal, y no debe leerse como una mejora de la seguridad: en una ventana de unas
+diecinueve horas, el barrido de las seis regiones no localizó ningún hecho de alto impacto con
+fecha demostrable, pero afirmar que no ocurrieron excedería lo que ese barrido puede sostener
+—cero portales leídos por acceso directo, el boletín del Gabinete de Seguridad sin indexarse
+por cuarto corte y trece de treinta y dos fiscalías sin revisar—. De ahí que el nivel de
+riesgo se declare no determinable (pág. 6). Los cinco hechos del corte, listados arriba, son
+acciones institucionales: no reducen el nivel de riesgo y se reportan como capacidad del
+Estado. Las tres prioridades heredadas de ARGOS 99 quedan cerradas y dos eran falsas
+—Azcapotzalco es del 14 de junio y las "108 armas" de Veracruz, del 15 de junio—, ambas
+artefactos del resumidor de búsqueda. El módulo judicial cierra en cero, con un único avance:
+Cosamaloapan pasa de mención a caso documentado. Siguen sin cerrar la audiencia de Chalco, la
+contradicción de Cuautla y Zanatepec, que suma un tercer corte sin detenidos.
+
+Indicador SESNSP (homicidio doloso: 86.9 → 45.4 víctimas/día, −48%, sep. 2024–jun. 2026) sin
+actualización adicional dentro de la ventana de este corte. Entró en ARGOS 86 (2026-08-02) y
+se mantiene en "Indicadores oficiales" (pág. 6) marcado como HEREDADO — NO REVERIFICADO, con
+la contradicción del −60% todavía abierta.
+
+
+==============================================================================================
+PÁGINA 2 — CRIMEN ORGANIZADO (I): HUACHICOL, NARCÓTICOS Y ARMAMENTO
+==============================================================================================
+
+
+── TABLERO EJECUTIVO — EVENTOS DEL CORTE (VENTANA ESTRICTA) ────────────────────────────────
+
+Ventana: 2026-08-16 07:38 → 2026-08-17 02:47 CDMX, en continuidad con el cierre de ARGOS 99.
+Ningún evento rojo ni amarillo con fecha demostrable dentro del periodo. Las cinco fichas de
+este corte son acciones institucionales. Conforme a la regla de las cuatro secciones de
+CLAUDE.md, cada una separa hecho confirmado, corroboración, explotación y trazabilidad; y
+conforme a la regla operativa del semáforo, ninguna de ellas modifica el nivel de riesgo
+nacional: se reportan como capacidad institucional.
+
+  | Entidad | Hecho | Nivel | Fuente institucional | Fuente nacional | Confianza | ARG-ID |
+  | Tamaulipas | Altamira: 297,000 L de diésel, 23 tractocamiones, 70 remolques, 23 dollys; 2 o 3 detenidos | 🟢 Verde | FGR / SEMAR — no localizada | El Universal, La Razón | ★★★☆☆ | ARG-100-001 |
+  | Guanajuato | León: 506 kg de presunta marihuana en 39 cajas, empresa de paquetería; 0 detenidos | 🟢 Verde | FSPE — boletín 16-ago | Infobae, La Jornada San Luis | ★★★☆☆ | ARG-100-002 |
+  | Sonora | Hermosillo: 3 armas cortas y droga; 5 detenidos, uno con 8 órdenes de aprehensión | 🟢 Verde | AMIC / FGJES — no localizada | Infobae | ★★★☆☆ | ARG-100-003 |
+  | Oaxaca | Pinotepa Nacional: cateo con metanfetamina y cannabis; 3 detenidos, sin armamento | 🟢 Verde | FGEO — no localizada | — | ★★★☆☆ | ARG-100-004 |
+  | Baja California | Tijuana: 1 arma de fuego cargada sin clasificar; 1 detenido por asalto a peatón | 🟢 Verde | — | — | ★★☆☆☆ | ARG-100-005 |
+
+── DETENCIONES RELEVANTES ──────────────────────────────────────────────────────────────────
+
+Personas detenidas en la ventana, con la corporación que las presenta. Se listan aquí las que
+no alimentan el conteo del módulo de armamento, porque su evento no incluyó aseguramiento de
+armas —regla del módulo— o porque el hecho quedó excluido del total por taxonomía o por umbral
+de corroboración. Ninguna cifra de esta tabla se suma a la de la pág. 4: son conjuntos
+disjuntos y se publican por separado para que no puedan agregarse por error.
+
+[2 O 3 — SIN CONCILIAR] Tamaulipas · Altamira — FGR con apoyo de SEMAR. Fuera del conteo de
+armamento: sin aseguramiento de armas, el evento es de hidrocarburo. La cifra de detenidos no
+está conciliada entre fuentes.  (ARG-100-001)
+
+[3 DETENIDOS] Oaxaca · Pinotepa Nacional — FGEO (1 mujer, 2 hombres). Fuera del conteo de
+armamento: sin aseguramiento de armas, el evento es de narcóticos.  (ARG-100-004)
+
+[1 DETENIDO] Baja California · Tijuana — Policía Municipal, remitido a la FGE. Fuera del
+conteo de armamento: arma sin clasificar y fuente única, el evento no entra al total.
+(ARG-100-005)
+
+[0 DETENIDOS] Guanajuato · León — FSPE. El aseguramiento de 506 kg de marihuana no produjo
+detenciones, dato operativo relevante por sí mismo: no generó línea de investigación sobre
+remitente ni destinatario.  (ARG-100-002)
+
+Integradas al conteo de armamento y por tanto ausentes de esta tabla: las 5 personas detenidas
+en Hermosillo, Sonora (ARG-100-003 / ARG-100-ARM-001), único evento del corte con
+aseguramiento de armas. Fuera de la ventana y por tanto fuera de ambas tablas: las 4 de
+Zamora, Michoacán (ARG-100-FE-002), pertenecientes a la ventana de ARGOS 99.
+
+
+── FICHAS DEL CORTE ────────────────────────────────────────────────────────────────────────
+
+
+▌ HUACHICOL — ASEGURAMIENTO DE 297,000 LITROS DE DIÉSEL, ALTAMIRA, TAMAULIPAS   [VERDE]
+
+  HECHO CONFIRMADO:
+    El 16 de agosto de 2026, la Fiscalía General de la República, con apoyo de la Secretaría
+    de Marina, ejecutó una diligencia ministerial en una distribuidora de combustible del
+    municipio de Altamira, Tamaulipas. Se aseguraron 297,000 litros de diésel, el inmueble,
+    23 tractocamiones, 70 remolques tipo plataforma, 23 dollys y equipo de trasiego. Cifra
+    de detenidos no conciliada: El Universal reporta tres y La Razón dos. Se publican ambas
+    versiones sin arbitrar, porque no se localizó comunicado de la FGR ni de la SEMAR que
+    fije el número.
+
+  CORROBORACIÓN:
+    Nacional (El Universal, La Razón) + regional (Plano Informativo, Hoy Tamaulipas,
+    Uniradio). Las cinco fuentes coinciden en los 297,000 litros; discrepan en detenidos y
+    no consolidan un total de unidades vehiculares. El Universal detalla, además de los 23
+    tractocamiones, 70 remolques y 23 dollys, un inventario más largo —autotanque, cajas
+    secas y refrigeradas, pipas, retroexcavadora, tanques frac, camionetas, motocicleta,
+    cisternas y bombas de despacho— sin cifra agregada, mientras una sexta fuente
+    (noticiaspc.com.mx) titula 136 vehículos. ARGOS no publica un total de unidades: solo
+    son citables las tres categorías con cantidad expresa (23 + 70 + 23). Cualquier suma
+    sería un cálculo propio y la cifra alterna de 136 queda registrada como contradicha y
+    sin arbitrar. Fecha fijada por URL de publicación del 16-ago en dos de ellas. Sin fuente
+    institucional: no se localizó boletín de FGR ni de SEMAR, y los portales federales no
+    pudieron consultarse por acceso directo. Pendiente de corroboración institucional.
+
+  EXPLOTACIÓN ARGOS:
+    El valor del hecho no está en el volumen de combustible sino en el parque vehicular
+    asegurado: 23 tractocamiones y 70 remolques no son el equipamiento de un punto de venta,
+    sino el de una operación logística de traslado a escala, hipótesis consistente con el
+    uso de una distribuidora formal como fachada y que requiere validación. Los medios
+    sitúan este aseguramiento como el cuarto golpe al huachicol en Tamaulipas en tres
+    semanas, con un acumulado citado de ~4.52 millones de litros y 16 detenidos desde el 21
+    de julio; esa serie no está verificada institucionalmente y se registra como contexto
+    periodístico, no como dato. Vacíos: razón social de la distribuidora, origen del
+    hidrocarburo, si el diésel es de procedencia nacional o importada, y por qué un
+    aseguramiento de este tamaño no produjo comunicado federal. Líneas a explotar: cotejo de
+    las placas y del padrón de permisionarios de la CRE; y si los detenidos son operadores o
+    titulares de la empresa. Conforme a la regla del módulo de armamento, los detenidos de
+    este evento no entran en aquel conteo, porque no hubo aseguramiento de armas.
+
+  ── ARG-100-001 Confianza: ★★★☆☆ 🟢 Acción institucional NacionalRegional Consulta: 2026-08-17 02:47 CDMX
+
+
+▌ NARCÓTICOS — 506 KG DE PRESUNTA MARIHUANA EN UNA PAQUETERÍA, LEÓN, GUANAJUATO   [VERDE]
+
+  HECHO CONFIRMADO:
+    El 16 de agosto de 2026, un oficial canino de las Fuerzas de Seguridad Pública del
+    Estado de Guanajuato, identificado como "Orkan", detectó 506 kilogramos de presunta
+    marihuana distribuidos en 39 cajas dentro de una empresa de paquetería de la colonia Las
+    Rosas, en León. El material fue puesto a disposición de la delegación de la FGR en esa
+    ciudad. Sin personas detenidas.
+
+  CORROBORACIÓN:
+    Institucional: boletín de las FSPE publicado el 16-ago en boletines.guanajuato.gob.mx,
+    con fecha en la propia URL — el único hecho de este corte respaldado por un boletín
+    oficial fechado dentro de la ventana. Nacional (Infobae, La Jornada San Luis) + regional
+    (AM León, Periódico Correo), todas del 16-ago. El boletín no pudo leerse por acceso
+    directo: se localizó por índice de buscador, por lo que la cita descansa en el resumen
+    indexado y no en el documento.
+
+  EXPLOTACIÓN ARGOS:
+    Media tonelada de marihuana movida por paquetería comercial y en cajas fraccionadas
+    sugiere el uso de mensajería formal como canal de distribución, con reparto del riesgo
+    entre múltiples envíos — patrón distinto del transporte carretero en un solo vehículo y
+    más difícil de interdictar. La ausencia de detenidos es el dato operativo relevante: el
+    aseguramiento no produjo, por sí mismo, línea de investigación sobre remitente ni
+    destinatario. Vacíos: empresa de paquetería involucrada, origen y destino de los envíos,
+    si existía documentación de embarque y si la carga estaba consignada a nombre real o
+    simulado. Líneas a explotar: trazado de guías y remitentes; y si el hallazgo derivó de
+    revisión rutinaria o de información previa. Este hecho no integra el conteo nacional de
+    armamento: la droga está fuera de su taxonomía.
+
+  ── ARG-100-002 Confianza: ★★★☆☆ 🟢 Acción institucional InstitucionalNacionalRegional Consulta: 2026-08-17 02:47 CDMX
+
+
+▌ ARMAMENTO — CINCO DETENIDOS CON TRES ARMAS CORTAS, HERMOSILLO, SONORA   [VERDE]
+
+  HECHO CONFIRMADO:
+    El 16 de agosto de 2026, la Agencia Ministerial de Investigación Criminal detuvo a cinco
+    hombres en la colonia Casa Bonita Residencial, sobre el bulevar Agustín G. del Campo, en
+    Hermosillo. Se aseguraron tres armas cortas (pistolas) y droga. Uno de los detenidos
+    acumula ocho órdenes de aprehensión por desaparición y secuestro. La cantidad de
+    cartuchos y de cargadores no fue especificada por ninguna fuente y, por tanto, no se
+    contabiliza.
+
+  CORROBORACIÓN:
+    Nacional (Infobae, con fecha 17-ago en URL) + regional (Tribuna, con fecha 16-ago en
+    URL; Crítica). Las tres coinciden en el número de detenidos, en las tres armas y en las
+    ocho órdenes de aprehensión. Sin fuente institucional: no se localizó comunicado de la
+    FGJES ni de sonora.gob.mx. Pendiente de corroboración independiente. Confianza Bajo en
+    la escala propia del módulo de armamento.
+
+  EXPLOTACIÓN ARGOS:
+    El dato de mayor valor no es el armamento —tres armas cortas es un volumen menor— sino
+    el perfil de uno de los detenidos: ocho órdenes de aprehensión vigentes por desaparición
+    y secuestro implican que la autoridad lo tenía plenamente identificado y que las órdenes
+    no se habían cumplimentado. Es un indicador de brecha entre judicialización y captura
+    más que de capacidad de reacción. La composición del aseguramiento —solo armas cortas,
+    sin armas largas ni munición reportada— es consistente con una célula de operación
+    urbana y no con una estructura de choque, hipótesis que requiere validación. Vacíos:
+    calibres, matrículas, resultado del rastreo balístico, y a qué carpetas corresponden las
+    ocho órdenes. Líneas a explotar: cotejo de las órdenes con las carpetas de desaparición
+    abiertas en Sonora, y si alguna de las armas está vinculada a hechos previos.
+
+  ── ARG-100-003 Confianza: ★★★☆☆ 🟢 Acción institucional NacionalRegional Consulta: 2026-08-17 02:47 CDMX
+
+
+==============================================================================================
+PÁGINA 3 — CRIMEN ORGANIZADO (II): ACCIONES MENORES, RECUPERACIONES Y SEGUIMIENTOS
+==============================================================================================
+
+
+▌ NARCÓTICOS — CATEO CON TRES DETENIDOS, PINOTEPA NACIONAL, OAXACA   [VERDE]
+
+  HECHO CONFIRMADO:
+    El 16 de agosto de 2026, la Fiscalía General del Estado de Oaxaca ejecutó un cateo en
+    Pinotepa Nacional con resultado de tres personas detenidas —una mujer y dos hombres— y
+    el aseguramiento de metanfetamina y cannabis. No se aseguró armamento, por lo que el
+    hecho no constituye línea de conteo del módulo de armamento y sus detenidos tampoco se
+    integran a aquel total.
+
+  CORROBORACIÓN:
+    Localizado por búsqueda dirigida a la FGEO durante el barrido de la región Sureste. La
+    cantidad exacta de narcótico no fue publicada y no se infiere. Pendiente de
+    corroboración independiente. El portal portal.fgeo.gob.mx no pudo leerse por acceso
+    directo.
+
+  EXPLOTACIÓN ARGOS:
+    Es la única acción institucional del corte en la región Sureste, donde el barrido no
+    localizó ningún otro hecho con fecha demostrable dentro de la ventana en seis entidades.
+    Su valor es principalmente de contraste de cobertura: confirma que la Fiscalía de Oaxaca
+    sí produjo actividad publicable en el periodo, lo que refuerza que el silencio de los
+    demás portales de la región debe leerse como SIN RESULTADO INDEXADO EN VENTANA y no como
+    inactividad. Vacíos: cantidades de droga, domicilio cateado, carpeta de investigación y
+    si el cateo se relaciona con la violencia registrada en la costa oaxaqueña en cortes
+    anteriores. Sin cantidades publicadas, el hecho es cualitativo y no aporta cifras a
+    ningún total.
+
+  ── ARG-100-004 Confianza: ★★★☆☆ 🟢 Acción institucional InstitucionalRegional Consulta: 2026-08-17 02:47 CDMX
+
+
+▌ ACCIÓN MENOR — DETENCIÓN DE UN ASALTANTE ARMADO, CAÑÓN DEL PADRE, TIJUANA   [VERDE]
+
+  HECHO CONFIRMADO:
+    El 16 de agosto de 2026, la Policía Municipal de Tijuana detuvo a Hugo "N", de 37 años,
+    tras atender una denuncia por asalto a un peatón en la zona del Cañón del Padre. Se le
+    aseguró un arma de fuego cargada, cuyo tipo no fue especificado —no consta si es corta o
+    larga—. Fue remitido a la Fiscalía General del Estado. El hecho no está vinculado por la
+    autoridad a la delincuencia organizada.
+
+  CORROBORACIÓN:
+    Fuente única regional (Tijuana en Línea, con fecha 16-ago fijada en la URL). No se
+    localizó ninguna segunda fuente ni comunicado de la Policía Municipal, de la FGE de Baja
+    California o de la SSPCM. Pendiente de corroboración independiente.
+
+  EXPLOTACIÓN ARGOS:
+    Se registra por completitud del barrido y no por valor de inteligencia: es un delito
+    común, sin vínculo publicado con estructuras criminales. Su función en este producto es
+    documentar que Baja California sí tuvo actividad publicable en la ventana. Queda fuera
+    del total nacional de armamento por dos razones independientes, cualquiera de ellas
+    suficiente: el arma se publica sin clasificar como corta o larga, lo que impide
+    asignarla a una categoría de la taxonomía obligatoria; y el hecho descansa en una fuente
+    única, por debajo del umbral de integración. Su detenido tampoco se suma. Se documenta
+    como evento cualitativo.
+
+  ── ARG-100-005 Confianza: ★★☆☆☆ 🟢 Acción institucional Regional Consulta: 2026-08-17 02:47 CDMX
+
+
+▌ RECUPERACIÓN — OPERATIVO Y BALACERA EN ZAMORA, MICHOACÁN (VENTANA DE ARGOS 99)   [RECUPERADO]
+
+  HECHO CONFIRMADO:
+    El 15 de agosto de 2026, hacia las 05:00 h, un reporte al C5i por personas armadas en la
+    colonia Primero de Mayo de Zamora, Michoacán, derivó en el despliegue del Ejército
+    Mexicano y la Guardia Nacional. Se registraron detonaciones de arma de fuego en las
+    colonias Primero de Mayo y Monte Olivo. Resultado: cuatro personas detenidas —Salvador
+    A. D., José Ángel C. Z., José R. O. y Miguel Ángel A. G.—, el aseguramiento de tres
+    fusiles AR-15, una pistola, una camioneta con reporte de robo y ponchallantas. De manera
+    preliminar no se reportaron personas lesionadas. Detenidos e indicios quedaron a
+    disposición del Ministerio Público Federal. Ninguna fuente publica desglose de cartuchos
+    ni de cargadores, y no se infiere.
+
+  CORROBORACIÓN:
+    Siete fuentes regionales coincidentes (RED Michoacán, con fecha 2026/08/15 fijada en
+    URL; La Voz de Michoacán, Mi Morelia, Respuesta, Contramuro, Atiempo, RED113). Sin
+    comunicado institucional localizado de la SSP Michoacán, SEDENA o Guardia Nacional.
+    Señuelo descartado: un titular casi idéntico de El Universal, en la misma colonia y con
+    cuatro detenidos, describe un hecho distinto con tres abatidos y es del 2 de octubre de
+    2025. Pendiente de corroboración institucional.
+
+  EXPLOTACIÓN ARGOS:
+    Por qué aparece aquí y no en el conteo: el hecho ocurrió el 15 de agosto, dentro de la
+    ventana de ARGOS 99 (15-ago 07:29 → 16-ago 07:38), que no lo recogió. Se publica como
+    recuperación de una omisión de aquella edición y no se suma a ningún total de ARGOS 100;
+    integrarlo hoy inflaría el conteo de este corte con armamento de otro periodo. En
+    inteligencia, tres fusiles AR-15 en una sola intervención urbana, con vehículo robado y
+    ponchallantas, es un perfil de célula de reacción y bloqueo más que de vigilancia: los
+    ponchallantas son material de obstrucción de persecuciones. Vacíos: calibres,
+    matrículas, munición, adscripción de los detenidos y si la camioneta robada tiene
+    reporte local o de otra entidad. Línea a explotar: cotejo con la actividad registrada en
+    el corredor La Piedad–Zamora, donde ARGOS 98 dejó una contradicción abierta que sigue
+    sin arbitrar.
+
+  ── ARG-100-FE-002 Confianza: ★★★☆☆ 🟡 Recuperación de ventana anterior Regional Consulta: 2026-08-17 02:47 CDMX
+
+
+▌ SEGUIMIENTOS — CHALCO SIN RESOLUCIÓN, CUAUTLA SIN ÁRBITRO Y ZANATEPEC SIN DETENIDOS   [SEGUIMIENTO]
+
+  HECHO CONFIRMADO:
+    Edomex, verificentros (ARG-97-004): la audiencia de vinculación a proceso de los
+    funcionarios de la Secretaría de Medio Ambiente, celebrada el sábado 15 de agosto a las
+    10:30 h en el Juzgado de Control de Chalco, sigue sin resolución publicada. Tras seis
+    búsquedas dirigidas adicionales en este corte —diez acumuladas entre dos ediciones—,
+    todas las fuentes indexadas continúan describiendo la audiencia como futura o en curso.
+    Morelos, bar "Tlecuichelas" (ARG-99-004): la contradicción sobre el número de lesionados
+    se reconfirma en ambos extremos —dos según la Fiscalía de Morelos, cinco según La Unión
+    y Azteca Morelos— sin que aparezca boletín de cierre. Oaxaca, Zanatepec (ARG-98-001):
+    tercer corte consecutivo sin detenidos; la búsqueda dirigida a la FGEO no arroja
+    actualización posterior al 15-ago. Michoacán, Gabriela "N" (ARGOS 92): la audiencia de
+    individualización de sanción sigue sin celebrarse; sin pena impuesta, el caso no entra
+    al módulo de sentencias.
+
+  CORROBORACIÓN:
+    Los cuatro seguimientos se declaran SIN RESULTADO INDEXADO EN VENTANA, no "sin
+    actualización oficial": los portales correspondientes se consultaron por búsqueda
+    dirigida, no por lectura directa, y su silencio en el índice no prueba que no hayan
+    publicado. Distinguir ambas casillas es lo que impide convertir una limitación de acceso
+    en un dato falso. Dos señuelos neutralizados en estos seguimientos: un ataque a un bar
+    de Cuautla —"La Azotea", un muerto y dos heridos— resultó ser del 14 de marzo de 2026,
+    mismo municipio y mismo tipo de hecho que Tlecuichelas; y en Morelia se descartaron dos
+    sentencias de secuestro agravado en Villas del Pedregal —Jorge "N", 82 años, y Brenda
+    Marisol G., 110 años, esta del 29 de abril de 2025— que corresponden a personas y
+    víctimas distintas de Gabriela "N".
+
+  EXPLOTACIÓN ARGOS:
+    El patrón que forman los cuatro es más informativo que cada uno por separado: en los
+    cuatro casos existe una actuación institucional documentada —una audiencia celebrada,
+    una cifra oficial de lesionados, una carpeta abierta, un fallo de culpabilidad— y en los
+    cuatro falta el acto que la cierra: la resolución, el boletín de arbitraje, la
+    detención, la pena. La brecha no está en la investigación sino en la publicación del
+    resultado, que es precisamente lo que un producto de inteligencia necesita para
+    convertir actividad en capacidad demostrada. Los tres señuelos descartados en esta
+    página comparten mecanismo: coinciden en municipio, tipo de hecho y hasta en
+    fraccionamiento con el caso buscado, y solo la exigencia de fecha en URL o titular los
+    separó. Línea de método: en seguimientos prolongados, el riesgo dominante no es no
+    encontrar nada, sino encontrar el caso equivocado.
+
+  ── ARG-100-SEG-001 Confianza: ★★★☆☆ ⚪ Seguimiento InstitucionalNacionalRegional Consulta: 2026-08-17 02:47 CDMX
+
+
+==============================================================================================
+PÁGINA 4 — CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS
+==============================================================================================
+
+Periodo: 2026-08-16 07:38 → 2026-08-17 02:47 CDMX. Solo se suman cantidades expresamente
+publicadas por la autoridad y correspondientes a hechos ocurridos dentro de la ventana. Un
+único evento del corte alimenta el conteo: la detención de cinco personas con tres armas
+cortas en Hermosillo, Sonora (ARG-100-003). Cartuchos y cargadores nunca se suman entre sí, y
+en este corte ninguna fuente publicó cifra alguna de munición, por lo que ambos renglones
+quedan marcados s/c —sin cifra publicada— y no en cero: la ausencia de publicación no es una
+cantidad, y la distinción es material.
+
+
+── BLOQUE 1 — TOTAL NACIONAL DEL CORTE (VENTANA ESTRICTA) ──────────────────────────────────
+
+  ARMAS CORTAS                         3
+  ARMAS LARGAS                         0
+  CARTUCHOS                            s/c
+  CARGADORES                           s/c
+  GRANADAS                             0
+  AEI                                  0
+  EXPLOSIVOS                           0
+  ARMAMENTO ESPECIAL                   0
+  ESTADOS CON ASEGURAMIENTOS           1
+  PERSONAS DETENIDAS                   5
+
+s/c = sin cifra publicada, y no es lo mismo que cero. Cero significa que la autoridad publicó
+una cantidad y era cero; s/c significa que ninguna fuente publicó cifra alguna. En este corte,
+el único evento integrado —la detención de cinco personas con tres armas cortas en Hermosillo,
+Sonora (ARG-100-ARM-001)— se reportó sin especificar munición. Sustituir esa ausencia por un
+cero sería inventar un dato, y hacerlo en el renglón de munición además falsearía a la baja el
+volumen del corte. Cartuchos y cargadores nunca se suman entre sí; se publican en renglones
+separados. Granadas, AEI, explosivos y armamento especial: cero en la ventana estricta, con la
+misma advertencia de siempre — no debe leerse como ausencia de actividad real, sino como
+posible vacío de publicación dado el bloqueo de acceso a los portales institucionales.
+
+Decisión de método, heredada de ARGOS 99 y mantenida. El único evento integrado tiene
+confianza Baja: se sostiene en tres fuentes periodísticas coincidentes y ningún comunicado
+institucional pudo leerse. Se integra igualmente con esa marca, porque la escala propia de
+este módulo contempla expresamente el nivel Bajo = "dos fuentes periodísticas coincidentes sin
+comunicado oficial": los eventos solo-prensa están previstos aquí. La regla NO INTEGRAR AL
+CONTEO NACIONAL que CLAUDE.md fija ante la falta de fuente oficial es específica del módulo de
+sentencias, y aplicarla también en este bajo un bloqueo total de egreso haría que nunca
+pudiera publicarse un total. La lectura más estricta posible de estas mismas cifras —Sin total
+nacional verificable durante el corte— queda documentada como alternativa expresa.
+
+
+── BLOQUE 2 — MAPA DE ASEGURAMIENTOS ───────────────────────────────────────────────────────
+
+
+── TABLA DE ASEGURAMIENTOS DEL CORTE ───────────────────────────────────────────────────────
+
+  | ARG-ID | Entidad | Municipio | Fecha hecho | Cortas | Largas | Cartuchos | Cargadores | Granadas | AEI | Expl. | Detenidos | Corporación | Fuente primaria | Corroboración | Confianza |
+  | ARG-100-ARM-001 | Sonora | Hermosillo | 2026-08-16 | 3 | 0 | s/c | s/c | 0 | 0 | 0 | 5 | AMIC / FGJES | Tribuna | Infobae, Crítica | Bajo |
+
+── EVENTOS CUALITATIVOS Y NO INTEGRADOS AL TOTAL ───────────────────────────────────────────
+
+[SIN CLASIFICAR + FUENTE ÚNICA] Tijuana, Baja California (ARG-100-005): 1 arma de fuego
+cargada. Queda fuera por dos razones independientes: el arma se publica sin clasificar como
+corta o larga, y el hecho descansa en una sola fuente regional. Su detenido tampoco se
+integra.
+
+[NO ES ARMAMENTO] Altamira, Tamaulipas (ARG-100-001): 297,000 L de diésel y las unidades
+vehiculares aseguradas. El hidrocarburo está fuera de la taxonomía de este módulo; los 2 o 3
+detenidos corresponden a "Detenciones relevantes" del tablero ejecutivo, no a este conteo, y
+su cifra sigue sin conciliar.
+
+[NO ES ARMAMENTO] León, Guanajuato (ARG-100-002): 506 kg de presunta marihuana. Fuera de
+taxonomía. Sin detenidos, por lo que no aporta a ningún renglón del módulo.
+
+[NO ES ARMAMENTO] Pinotepa Nacional, Oaxaca (ARG-100-004): metanfetamina y cannabis en
+cantidad no publicada, sin armamento. Sus 3 detenidos no entran en este conteo por la regla de
+detención sin aseguramiento de armas.
+
+[FUERA DE VENTANA] Zamora, Michoacán (ARG-100-FE-002): 3 fusiles AR-15, 1 pistola y 4
+detenidos. Hecho del 15-ago, perteneciente a la ventana de ARGOS 99. Se recupera como omisión
+de aquella edición y no se suma al total de este corte.
+
+
+── CORRECCIÓN AL TOTAL DE ARGOS 99 — SAIN ALTO, ZACATECAS ──────────────────────────────────
+
+La reserva de corroboración asimétrica queda resuelta. ARGOS 99 dejó fuera de su total
+nacional el desglose de ARG-99-ARM-002 ("Operativo Tornado", Sain Alto) porque las tres
+fuentes coincidían en el aseguramiento y en los cinco detenidos, pero solo una publicaba el
+desglose numérico. El barrido Noreste de este corte localizó el boletín institucional primario
+de la SSP de Zacatecas, que confirma textualmente un arma corta, un cargador y 16 cartuchos
+útiles, además de 30 envoltorios de metanfetamina, dos equipos de comunicación y los cinco
+detenidos con nombre y edad. Al tratarse de una fuente institucional primaria y no de una
+segunda réplica mediática, el criterio de "versión aislada" deja de aplicar: procede
+reintegrar 1 arma corta, 1 cargador y 16 cartuchos al total de ARGOS 99, con confianza Medio
+(fuente oficial única). El hecho es del 15-ago, por lo que la corrección se aplica al total de
+aquella edición y no al de esta. La segunda reserva sigue abierta: el boletín no consigna
+hora, de modo que la pertenencia del hecho a la ventana estricta de ARGOS 99 continúa sin
+poder demostrarse y se mantiene HORA NO DETERMINADA.
+
+
+── LECTURA REGIONAL Y EXPLOTACIÓN ARGOS ────────────────────────────────────────────────────
+
+Noroeste aporta el único evento integrado (Sonora) y el único cualitativo por clasificación
+(Baja California). Noreste, Occidente y Sureste aportan hechos fuera de la taxonomía del
+módulo. Centro y Golfo cierran sin ningún aseguramiento localizado. Con un solo evento
+contabilizado, cualquier lectura de concentración territorial, de calibres recurrentes, de
+rutas de abastecimiento o de tendencia frente a cortes anteriores sería estadísticamente
+inválida y no se ofrece: un conteo de tres armas cortas no soporta análisis de patrón. La
+observación que sí se sostiene es de otro orden y es negativa: en una ventana de diecinueve
+horas, el país entero produjo un solo aseguramiento de armamento verificable, y ese hallazgo
+dice más sobre el canal de publicación que sobre el flujo de armas. El desglose numérico por
+entidad lo publica el boletín diario del Gabinete de Seguridad, que acumula cuatro cortes sin
+indexarse; sin él, este módulo no puede medir volumen nacional, solo registrar lo que la
+prensa recogió.
+
+
+── INDICADOR DE COBERTURA — ARMAMENTO ──────────────────────────────────────────────────────
+
+Portales leídos por acceso directo: 0 de ~128 objetivo, en las seis regiones, sin una sola
+excepción — el egreso está bloqueado en su totalidad y así se verificó por sonda al inicio de
+la sesión. Portales consultados por búsqueda dirigida: 38, distribuidos en las 32 entidades y
+los federales. Portales que publicaron dentro de la ventana: 1 (boletines.guanajuato.gob.mx).
+Sin resultado indexado en ventana: 37. Sin actualización constatada: 0 — bajo bloqueo total no
+fue posible ver el listado completo de boletines de ningún portal, por lo que ninguna entidad
+puede reclamar esa casilla y ningún SIN DATO de este módulo puede presentarse como
+institucional. Entidades con cobertura mínima (una sola búsqueda agregada, sin barrido de los
+cuatro portales): Puebla, Hidalgo, Querétaro, Tlaxcala, Campeche, Yucatán y Quintana Roo.
+Portales no consultados: Policía Estatal o equivalente en la mayoría de las entidades; SEDENA,
+SEMAR y ANAM sin consulta dirigida propia. La Mesa de Construcción de la Paz deja de contarse
+como cuarto portal en el denominador —casi nunca tiene sitio propio— y solo se busca ante un
+hecho de alto impacto, condición que no se cumplió en ninguna región. Presupuesto de búsqueda:
+142 consultas de 200 disponibles, repartidas por tope explícito entre los seis equipos
+regionales y el control de verificación prioritaria.
+
+
+==============================================================================================
+PÁGINA 5 — RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES
+==============================================================================================
+
+
+── CONTEO NACIONAL DEL CORTE ───────────────────────────────────────────────────────────────
+
+SIN SENTENCIAS DENTRO DE LA VENTANA. En las 19 de 32 fiscalías donde sí se ejecutó búsqueda de
+resoluciones, ninguna publicó una sentencia con fecha demostrable entre el 16-ago 07:38 y el
+17-ago 02:47 CDMX. El conteo nacional judicial de este corte es cero en todos sus renglones:
+cero condenatorias, cero absolutorias, cero procedimientos abreviados, cero sentencias en
+juicio oral, cero firmes, cero personas sentenciadas, cero años de prisión acumulados, cero
+multas y cero reparación del daño ordenada. Este cero no es un vacío institucional demostrado:
+trece fiscalías no llegaron a revisarse y ningún boletín pudo leerse por acceso directo. La
+casilla correcta para las diecinueve revisadas es SIN RESULTADO INDEXADO EN VENTANA.
+
+
+── AVANCE SOBRE EL VACÍO MÁS PERSISTENTE DEL REPOSITORIO ───────────────────────────────────
+
+
+▌ FGE VERACRUZ — SECUESTRO AGRAVADO, COSAMALOAPAN: 180 AÑOS A CADA UNO DE CINCO SENTENCIADOS   [AVANCE]
+
+  HECHO PROCESAL CONFIRMADO:
+    La Fiscalía General del Estado de Veracruz, por conducto de la Unidad Especializada en
+    Combate al Secuestro, obtuvo sentencia condenatoria contra cinco personas —Ángel Manuel
+    "N", Pablo "N", Yael Alberto "N", Francisco Antonio "N" y Fernando "N"— por el delito de
+    secuestro agravado, en el distrito judicial de Cosamaloapan. La pena impuesta es de 180
+    años de prisión a cada uno, equivalentes a 900 años en conjunto. El hecho de origen es
+    un secuestro cometido el 22 de agosto de 2024 en la localidad de Pachuca, municipio de
+    Ixmatlahuacan, con liberación de tres víctimas y detención en flagrancia el 2 de
+    septiembre de 2024. La resolución se publicó el 13 de agosto de 2026. Firmeza no
+    informada: ninguna fuente indica si la sentencia causó estado, y no se asume.
+
+  CORROBORACIÓN:
+    Fuente primaria: Golpe Político, que reproduce el boletín de la Fiscalía con el detalle
+    fáctico completo, con fecha 2026/08/13 fijada en la URL. Corroboración independiente de
+    xeu.mx y El Sol de Veracruz, que publican la cifra conjunta de 900 años, y de Notiver,
+    que publica la individual de 180. La URL institucional en
+    comunicacion.fiscaliaveracruz.gob.mx no se localizó indexada y el portal sigue sin poder
+    leerse por acceso directo, por lo que el caso se mantiene en PENDIENTE DE CONFIRMACIÓN
+    OFICIAL. Confianza Medio.
+
+  EXPLOTACIÓN ARGOS:
+    Por qué importa más de lo que su fecha sugiere: el 13 de agosto la Fiscalía de Veracruz
+    informó un agregado de "53 resoluciones judiciales y 11 sentencias condenatorias" sin
+    desglosar diez de ellas. Ese vacío lleva tres ediciones abiertas y ha resistido el
+    ataque directo al portal de la Fiscalía. Precisión de crédito, obligatoria: la pena y el
+    número de sentenciados de Cosamaloapan ya constaban en ARGOS 99, que los citó como dato
+    de contraste para demostrar que el boletín de marzo era un señuelo. Lo que aporta este
+    corte no es la cifra, sino el expediente: los cinco nombres, la autoridad (UECS), el
+    distrito judicial, el hecho de origen con sus fechas y las fuentes con enlace. Es el
+    primer caso del agregado que pasa de mención a caso documentado, y confirma que la vía
+    útil no es la sala de prensa de la Fiscalía —que publica agregados— sino la reproducción
+    íntegra del boletín en medios regionales. Quedan nueve condenatorias sin desglose. Sobre
+    la pena: 180 años por secuestro agravado es coherente con la acumulación por número de
+    víctimas, pero no se convierte en años acumulados del conteo nacional por dos razones:
+    el hecho está fuera de la ventana de este corte, y sin constancia de firmeza ni de si
+    las penas son concurrentes procede la marca Pena compuesta — requiere revisión jurídica.
+    Línea a explotar: solicitar el listado nominal de las 53 resoluciones, que es el único
+    documento capaz de cerrar el vacío de una vez.
+
+  ── ARG-100-SEN-SEG-001 Confianza: ★★★☆☆ Medio · PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL NacionalRegional Consulta: 2026-08-17 02:47 CDMX
+
+
+── SEGUIMIENTOS JUDICIALES QUE NO CIERRAN ──────────────────────────────────────────────────
+
+[SIGUE ABIERTO] FGE Tabasco, Cunduacán (ARG-99-SEN-002): sentencia de 8 años por violación
+contra Miguel "N". Dos búsquedas dirigidas adicionales a fiscaliatabasco.gob.mx no localizaron
+el boletín. Sigue en PENDIENTE DE CONFIRMACIÓN OFICIAL y fuera del conteo. Dato útil para el
+futuro: los boletines de esa Fiscalía se numeran en la ruta /Boletin/Index/<id>.
+
+[SIGUE ABIERTO] FGJEM Ecatepec (40 años) y FGESLP Matlapa (2a8m) (ARG-99-SEN-001 y 003): sin
+comunicado institucional localizado. Las tres sentencias de ARGOS 99 continúan sin integrarse
+a ningún conteo nacional.
+
+[SIGUE ABIERTO] Michoacán, Gabriela "N" (ARGOS 92): fallo de culpabilidad del 11-ago
+confirmado, pero la audiencia de individualización de sanción sigue sin celebrarse. Sin pena
+impuesta, no hay sentencia que contar.
+
+[NO ES SENTENCIA] Edomex, verificentros (ARG-97-004): la audiencia de Chalco sigue sin
+resolución publicada. Recordatorio de la regla de validación jurídica: una vinculación a
+proceso no es una sentencia y no entrará a este módulo aunque se publique.
+
+[PENDIENTE DE INTEGRAR] Playa del Carmen, Quintana Roo: sentencia de 50 años a tres personas
+por homicidio calificado doble, publicada el 12-ago-2026, sigue ausente de todos los archivos
+de fuentes del repositorio. Sentenciados: Rodman de Jesús Calderón Pineda, Juan José Velázquez
+Ramírez y Óscar Zacarías Chablé; hecho del 12-oct-2020 en la Quinta Avenida. Multa citada de
+260,640 pesos por sentenciado, no reverificada institucionalmente. Es un vacío de edición
+anterior, no un hallazgo de este corte.
+
+
+── SENTENCIAS LOCALIZADAS Y DESCARTADAS POR VENTANA ────────────────────────────────────────
+
+Se documentan para que la edición siguiente no las recoja como nuevas: Oaxaca, 140 años por
+secuestro agravado ("El Pumba", 3-ago) y 9 años por robo con violencia en San Pedro Pochutla
+(11-ago); Guerrero, 80 años por secuestro agravado (6-ago); Yucatán, FGR, 8 años y 7a2m contra
+cinco personas por narcomenudeo y cartuchos de uso exclusivo (6-ago); Guanajuato, FGR, 13a4m y
+6a8m por delincuencia organizada, y ratificación de 4.5 años por cohecho (principios de
+agosto); Tamaulipas, 50 años a doce secuestradores (mayo-2026); Zacatecas, 4 años por
+extorsión (julio-2026); Jalisco, los 19 sentenciados del CJNG del 10-ago, ya cerrados en ARGOS
+99. Tres señuelos documentales neutralizados en Veracruz: un boletín de la COESCONPAZ con "33
+años por secuestro agravado y 8 años por abuso sexual" que resultó ser del 30 de enero de
+2023; el boletín de "51 resoluciones y 12 condenatorias" reconfirmado como del 13 de marzo de
+2026; y los agregados de "27 resoluciones" y "36 resoluciones en 24 horas", del 12-ago. La
+coincidencia de la cifra "8 años" entre el boletín de 2023 y el caso abierto de Tabasco es
+casual: entidades y delitos distintos.
+
+
+── INDICADOR DE COBERTURA — SENTENCIAS ─────────────────────────────────────────────────────
+
+Fiscalías revisadas: 19 de 32. Fiscalías NO revisadas: 13 — las seis del Noroeste (Baja
+California, Baja California Sur, Sonora, Chihuahua, Sinaloa, Durango) y las siete del Centro
+(Ciudad de México, Estado de México, Morelos, Puebla, Tlaxcala, Hidalgo, Querétaro), donde el
+presupuesto se agotó en el módulo de armamento antes de llegar a la búsqueda judicial. Se
+reportan como no revisadas, jamás como "sin actualización". FGR revisada: parcialmente — solo
+por incidencia regional en Golfo y Sureste, sin consulta dirigida a sus fiscalías
+especializadas ni a sus delegaciones estatales. Fiscalías con sentencia publicada dentro de la
+ventana: 0. Fiscalías con resultado indexado fuera de la ventana: 8. Páginas no disponibles: 0
+registradas como tales, porque no se intentó el acceso directo: la sonda inicial demostró que
+habría fallado en todos los dominios y el intento habría consumido presupuesto sin posibilidad
+de éxito. Portales tratados por búsqueda dirigida: entre otros, pjeveracruz.gob.mx,
+comunicacion.fiscaliaveracruz.gob.mx, fiscaliatabasco.gob.mx, portal.fgeo.gob.mx,
+fiscaliaguerrero.gob.mx, fgeqroo.gob.mx, fge.yucatan.gob.mx, fgecam.campeche.gob.mx,
+fiscalia.jalisco.gob.mx, fiscaliazacatecas.gob.mx. Advertencia estructural: mientras el egreso
+siga bloqueado, la regla de validación jurídica de CLAUDE.md —que exige el término literal de
+condena— es inaplicable, porque los resúmenes del buscador llegan parafraseados. Toda
+sentencia localizada en estas condiciones queda, como máximo, en PENDIENTE DE CONFIRMACIÓN
+OFICIAL, y el conteo nacional judicial permanecerá estructuralmente en cero. No es un
+resultado del sistema de justicia: es un resultado del canal de acceso.
+
+
+==============================================================================================
+PÁGINA 6 — VALORACIÓN, AUDITORÍA RETROACTIVA, CONCLUSIONES Y FUENTES
+==============================================================================================
+
+
+── VALORACIÓN — NIVEL DE RIESGO NACIONAL ARGOS ─────────────────────────────────────────────
+
+NIVEL NO DETERMINABLE POR INSUFICIENCIA DE COBERTURA. Es la primera vez en las catorce
+ediciones conservadas que ARGOS se abstiene de declarar un nivel, y la abstención es
+deliberada. La Metodología del Nivel de Riesgo Nacional establece que el nivel se deriva
+principalmente de los eventos rojos observados durante el corte. En esta ventana no se observó
+ninguno. Ese resultado admite dos lecturas incompatibles —que no ocurrieron hechos de alto
+impacto, o que ocurrieron y no fueron verificables— y este producto no tiene elementos para
+elegir entre ellas. Declarar "riesgo bajo" sería convertir una limitación de acceso en una
+afirmación sobre la seguridad del país, que es exactamente el SIN DATO falso que CLAUDE.md
+prohíbe. Lo que sí puede afirmarse. Primero, que en aproximadamente diecinueve horas, de
+domingo por la mañana a lunes de madrugada, el barrido de las seis regiones —142 consultas
+dirigidas a 38 portales institucionales— no localizó un solo homicidio múltiple, ataque a
+autoridades, enfrentamiento, narcobloqueo, hallazgo de fosa ni uso de artefactos explosivos
+con fecha demostrable dentro del periodo. Segundo, que cinco acciones institucionales sí
+fueron verificables, de las cuales una es de volumen relevante —297,000 litros de diésel y un
+parque de transporte cuyo inventario ninguna fuente consolida en un total único (ver reserva
+en pág. 2)— y otra aporta el único armamento del conteo: tres armas cortas y cinco detenidos
+en Hermosillo, uno con ocho órdenes de aprehensión pendientes por desaparición y secuestro.
+Conforme a la metodología, ninguna de ellas reduce el nivel de riesgo: se reportan como
+capacidad institucional. Tercero, y es lo que sostiene la abstención: la cobertura de este
+corte es demostrablemente insuficiente para respaldar una afirmación negativa. Cero portales
+leídos por acceso directo de aproximadamente 128 objetivo; el boletín diario del Gabinete de
+Seguridad —única fuente que publica el desglose numérico por entidad— sin indexarse por cuarto
+corte consecutivo; trece de treinta y dos fiscalías sin revisar en el módulo judicial; y siete
+entidades con una sola búsqueda agregada en lugar del barrido de cuatro portales. Un producto
+de inteligencia puede informar que no encontró; no puede informar que no hubo.
+
+
+── CORRECCIONES A EDICIONES ANTERIORES ─────────────────────────────────────────────────────
+
+Este corte dedicó su control de verificación prioritaria a los tres pendientes que ARGOS 99
+dejó sin resolver por agotamiento de presupuesto. Dos de los tres resultaron ser artefactos de
+fecha. Se publican conforme al principio de auditabilidad; no se modifican retroactivamente
+los archivos de aquella edición.
+
+[CORRECCIÓN 1] Azcapotzalco, CDMX — el evento rojo que ARGOS 99 temió haber omitido no
+pertenece a agosto. Aquella edición registró como prioridad máxima un homicidio múltiple con
+cuatro víctimas, entre ellas un menor de 13 años, situado en la madrugada del domingo 16 de
+agosto en la colonia Pueblo de Santa María Malinalco. El hecho es real, pero ocurrió el 14 de
+junio de 2026: cuatro personas muertas —hombres de 39 y 13 años, mujeres de 35 y 26—, dos
+adolescentes heridas que sobrevivieron, agresores en tres motocicletas. La fecha está fijada
+en la URL de La Silla Rota, Latinus, Infobae y La Jornada. Un barrido específico de FGJ-CDMX y
+SSC-CDMX para el 15-17 de agosto no arrojó ningún multihomicidio en Azcapotzalco. Reserva
+expresa: no localizar la nota no prueba que no ocurriera nada esa madrugada; lo que queda
+demostrado es que el hecho descrito con ese detalle es de junio y que no debe publicarse como
+evento de agosto. Persiste una contradicción menor en el evento de junio: la edad de las dos
+menores heridas se reporta como 10 y 12 años en unas fuentes y 15 y 17 en otras.
+(ARG-100-FE-001)
+
+[CORRECCIÓN 2] Veracruz, "108 armas de fuego" — señuelo confirmado. El titular heredado como
+posible mayor aseguramiento del corte corresponde a un operativo del 15 de junio de 2026 en
+Tierra Blanca: cateos de la SSP Veracruz con SEMAR, SEDENA, Guardia Nacional y FGR en tres
+inmuebles, con 108 armas largas, 50 granadas, 2,700 cargadores, 51,400 cartuchos, tres
+lanzagranadas y 440 kg de marihuana, sin detenidos reportados. La fecha está fijada por el
+propio boletín en veracruz.gob.mx. Dos meses fuera de ventana: queda descartado expresamente
+para que no vuelva a resurgir.  (ARG-100-FE-003)
+
+[CORRECCIÓN 3] Zamora, Michoacán — omisión real de ARGOS 99, recuperada. El tercer pendiente
+sí era un hecho verdadero: operativo y balacera del 15 de agosto, ~05:00 h, con cuatro
+detenidos, tres fusiles AR-15, una pistola y una camioneta con reporte de robo. Cae dentro de
+la ventana de ARGOS 99, que no lo recogió. Se publica como ficha propia (ARG-100-FE-002) y no
+se suma al conteo de este corte.
+
+[CORRECCIÓN 4] Sain Alto, Zacatecas (ARG-99-ARM-002) — reserva de corroboración asimétrica
+resuelta. Localizado el boletín primario de la SSP de Zacatecas: procede reintegrar 1 arma
+corta, 1 cargador y 16 cartuchos al total de ARGOS 99, con confianza Medio. La reserva sobre
+la hora del hecho sigue abierta: el boletín no la consigna. Detalle en pág. 4.
+
+[CORRECCIÓN 5] "Operación Sable", Mazatlán — dato nuevo, no arbitraje. La contradicción
+abierta desde ARGOS 98 (1 cargador/15 cartuchos frente a 9 cargadores/55 cartuchos) no se
+cierra. Se aporta información que no constaba: la intervención se sitúa en el fraccionamiento
+Real del Valle con tres detenidos, además de droga, radios, vehículos y efectivo. La fecha de
+esa nota no está fijada en URL ni titular, por lo que el dato se registra sin integrarse. Solo
+un boletín de la SSP o de la FGE de Sinaloa puede cerrarla.
+
+[CORRECCIÓN 6] La Piedad, Michoacán — advertencia contra una fusión falsa. La contradicción de
+ARG-98-002 sobre el número de fallecidos sigue sin arbitrar. El barrido localizó una nota de
+La Jornada sobre un enfrentamiento en La Piedad con tres presuntos sicarios fallecidos y
+cuatro policías heridos: es del 22 de febrero de 2026 y describe un hecho distinto. Se deja
+constancia para que ninguna edición futura los fusione por coincidencia de topónimo.
+
+
+── AUDITORÍA DE MÉTODO — SEGUNDA PRUEBA DE CAMPO DE LOS CONTROLES ──────────────────────────
+
+(1) El tope de presupuesto por región funcionó. Es la corrección más importante frente a ARGOS
+99, donde los seis equipos agotaron entre sí las 200 consultas de la sesión y dejaron dos
+hechos rojos sin verificar. Este corte fijó por adelantado un tope de 20 consultas por región
+y reservó cuota para la verificación prioritaria, que se ejecutó primero y en solitario para
+garantizar su presupuesto. Consumo total: 142 de 200. Tres equipos rebasaron su tope —Golfo
+por cuatro consultas, Occidente por dos, Centro por una— y los tres lo declararon sin
+ocultarlo, que es el comportamiento que la regla busca. (2) El orden de ejecución decidió el
+resultado. Ejecutar la verificación prioritaria antes que los barridos permitió descubrir que
+dos de los tres pendientes rojos heredados eran falsos. De haberse mantenido el orden de ARGOS
+99, ARGOS 100 habría podido publicar como hecho de agosto un homicidio múltiple de junio, con
+un menor de 13 años entre las víctimas. (3) La prohibición de WebFetch liberó presupuesto
+real. La sonda de entorno del coordinador confirmó que el egreso está bloqueado en su
+totalidad —403 al CONNECT para cualquier host, incluidos medios nacionales y Wikipedia, no
+solo *.gob.mx—. La definición anterior mandaba intentar la lectura directa antes de la
+búsqueda, lo que desperdiciaba un turno por dominio sin ninguna posibilidad de éxito.
+Eliminado ese paso, las seis regiones dedicaron el presupuesto íntegro a consultas útiles. (4)
+La tercera casilla de cobertura cambió lo que el producto puede afirmar. Se incorporó SIN
+RESULTADO INDEXADO EN VENTANA, distinta de "sin actualización constatada" y de "no revisada".
+El resultado es contundente: ninguna entidad, en ninguna región, pudo reclamar la casilla de
+"sin actualización constatada", porque bajo bloqueo total no se puede ver el listado de
+boletines de ningún portal. Sin esa casilla, este corte —con cinco hechos en todo el país—
+habría producido decenas de SIN DATO falsos. (5) El resumidor del buscador volvió a afirmar
+fechas falsas, y a mayor escala. Se neutralizaron doce señuelos: dos de los tres pendientes
+prioritarios (junio presentado como agosto), una trampa de año en Matamoros (2025 por 2026),
+otra en Acapulco (diciembre de 2025), dos boletines veracruzanos (enero de 2023 y marzo de
+2026), un ataque a un bar de Cuautla de marzo, dos sentencias de Morelia con personas y
+víctimas distintas, un enfrentamiento de La Piedad de febrero y una vinculación de la FGJ-CDMX
+cuya URL lleva fecha 17-ago mientras el hecho procesal es del 10. La única técnica que
+funcionó fue exigir la fecha en la URL o el titular y descartar cuando solo aparece en el
+cuerpo parafraseado. (6) Un caso quedó sin arbitrar por contradicción entre URLs: Suchiapa,
+Chiapas, donde El Heraldo fecha la nota el 15-ago y Infobae el 16-ago. Aplicando la regla de
+primera publicación se descartó de este corte, pero es candidato a omisión de ARGOS 99 y se
+entrega como tal, no como corrección confirmada. (7) El control procedencia-cifras volvió a
+modificar este reporte, y su paso 0 fue otra vez el más productivo. El cruce bidireccional
+entre el producto y su registro de fuentes —toda reserva del anexo debe aparecer en el
+cartelón, toda cifra del cartelón debe tener entrada en el anexo— cerró sin discrepancias,
+pero el control detectó tres defectos propios de esta edición, los tres corregidos antes de
+publicar. El más grave: el reporte publicaba "116 unidades vehiculares" en Altamira como si
+fuera dato de fuente, cuando era una suma propia de 23+70+23; ninguna fuente consolida un
+total, El Universal detalla un inventario más largo sin cifra agregada y una sexta fuente
+titula 136 vehículos. La cifra se retiró y la contradicción quedó registrada sin arbitrar. Los
+otros dos: una frase que decía que los renglones de munición "quedan en cero", a ocho líneas
+de la regla que prohíbe exactamente esa palabra para describir una ausencia de publicación; y
+un descuadre aritmético en la tabla de presupuesto del anexo (tope total 166 por 146).
+Lección: el riesgo de inventar una cifra no está solo en copiarla mal de la fuente, sino en
+derivarla correctamente y olvidar declarar que se derivó. (8) editor-duplicidad completó por
+primera vez como subagente, sobre un borrador congelado y commiteado y con una regla de salida
+explícita —una sola instantánea, auditar contra ella, no reextraer—. En ARGOS 99 se atascó
+porque el coordinador aplicaba correcciones mientras auditaba, y se le abortó además por usar
+el tamaño del archivo de transcripción como señal de vida, que no lo es. Ambas causas quedaron
+corregidas y el control entregó. No halló ninguna duplicidad de hechos ni descuadre en los
+totales, y verificó los cruces engañosos: "tractocamión" en Altamira y en Mazatlán son hechos
+distintos, igual que Pinotepa Nacional y San Pedro Amuzgos en Oaxaca. Sí halló cuatro defectos
+de trazabilidad, los cuatro corregidos antes de publicar. El más serio: este reporte
+presentaba Cosamaloapan como "la primera de las diez condenatorias que se logra identificar",
+cuando ARGOS 99 ya había citado su pena y su número de sentenciados al descartar el señuelo de
+marzo — se reescribió para acreditar lo que aporta cada edición. Los otros tres: dos
+remisiones a una tabla de "Detenciones relevantes" que no existía en el documento (se añadió,
+en pág. 2); el uso de dos códigos distintos, s/c y n/p, para la misma ausencia de cifra dentro
+de la misma página (unificados en s/c); y dos enlaces muertos en la versión móvil hacia fichas
+descartadas que nunca se publicaron. Este último no se parcheó en la salida sino en el
+generador, que ahora solo enlaza un ARG-ID si existe la ficha: la móvil se regeneró desde el
+escritorio ya corregido, de modo que la paridad sigue siendo estructural y no reparada a mano.
+(9) Limitación de registro, reincidente. Igual que en ARGOS 99, los tres agentes de control no
+estaban disponibles por nombre al inicio de la sesión y los seis barridos se ejecutaron
+cargándoles su archivo de definición como primer paso, con el mismo método y las mismas
+herramientas. El registro se recargó a mitad de sesión. No es un fallo resuelto: es un fallo
+que se repite y que debe corregirse en la carga del registro, no en cada edición.
+
+
+── CONCLUSIONES ────────────────────────────────────────────────────────────────────────────
+
+1. El corte cierra con cero eventos rojos, cero amarillos y cinco verdes, y con el nivel de
+riesgo nacional declarado no determinable. La abstención es el resultado principal de esta
+edición y debe leerse como tal: no hay elementos para afirmar que el país tuvo diecinueve
+horas sin hechos de alto impacto, ni para afirmar lo contrario. 2. El hecho de mayor valor
+operativo es el aseguramiento de 297,000 litros de diésel en Altamira, cuyo interés está en el
+parque de transporte —23 tractocamiones y 70 remolques— más que en el volumen: es
+infraestructura logística, no punto de venta. La categoría de huachicol se reactiva tras dos
+cortes sin actualización. 3. El hecho de mayor valor de inteligencia es menor en escala: uno
+de los cinco detenidos de Hermosillo acumulaba ocho órdenes de aprehensión por desaparición y
+secuestro. El dato no mide capacidad de reacción sino brecha entre judicialización y captura.
+4. El conteo nacional de armamento se sostiene en un solo evento —tres armas cortas y cinco
+detenidos— con confianza Baja. Con esa base, ninguna lectura de concentración territorial,
+calibres o rutas es estadísticamente válida, y no se ofrece. 5. El módulo judicial cierra en
+cero dentro de la ventana, con trece de treinta y dos fiscalías sin revisar. Avanza, sin
+cerrarse, el vacío veracruzano: Cosamaloapan pasa de mención a caso documentado —cinco
+nombres, autoridad, distrito judicial y hecho de origen— sobre una pena que ARGOS 99 ya había
+citado. La vía útil resultó ser la reproducción íntegra del boletín en medios regionales, no
+la sala de prensa de la Fiscalía. Quedan nueve condenatorias sin desglose. 6. Dos de los tres
+pendientes rojos heredados eran falsos, y lo eran por el mismo mecanismo: un resumidor que
+atribuye a un hecho la fecha de la consulta. Es la conclusión de método más transferible de
+este corte, y obliga a una regla que ya está escrita en la definición del barrido: la fecha se
+exige en la URL o el titular, nunca en el cuerpo del resumen. 7. El techo de confianza no
+supera ★★★☆☆ para ningún hecho de la ventana. Solo un hecho de los cinco —León, Guanajuato—
+cuenta con boletín institucional fechado dentro del periodo, y ni siquiera ese pudo leerse: se
+localizó por índice. Con cero portales leídos por acceso directo de aproximadamente 128
+objetivo, la solicitud de lista blanca de egreso (docs/solicitud-lista-blanca-egreso.md) sigue
+siendo condición de posibilidad del método, no una mejora incremental. Es la undécima edición
+consecutiva sin superar ★★★★☆.
+
+
+── INDICADORES OFICIALES ───────────────────────────────────────────────────────────────────
+
+SESNSP — homicidio doloso: 86.9 → 45.4 víctimas/día (−48%) entre septiembre de 2024 y junio de
+2026. Sin actualización oficial adicional dentro de la ventana de este corte. Su entrada al
+repositorio es ARGOS 86 (reports/argos-2026-08-02.html), conforme a la fe de erratas de
+procedencia publicada en ARGOS 99. El renglón se mantiene marcado HEREDADO — NO REVERIFICADO:
+con el egreso bloqueado, gob.mx/sesnsp no es consultable y la reverificación es materialmente
+imposible. Contradicción todavía abierta: ARGOS 90 registró una cifra alterna de −60% para el
+mismo periodo, marcada entonces como no verificada en portal primario; sigue sin resolverse.
+No se publican indicadores derivados, proyecciones ni tasas calculadas por ARGOS: CLAUDE.md
+prohíbe expresamente inventar o inferir indicadores. Cualquier lectura de tendencia a partir
+de los cinco eventos de este corte sería estadísticamente inválida y no se ofrece; con mayor
+razón que en cortes anteriores, dado que la ventana es de diecinueve horas y no de
+veinticuatro.
+
+
+── FUENTES CONSULTADAS EN ESTE CORTE ───────────────────────────────────────────────────────
+
+Institucionales — consultadas por búsqueda dirigida; una sola devolvió boletín fechado dentro
+de la ventana (boletines.guanajuato.gob.mx) y ninguna pudo leerse por acceso directo: Gabinete
+de Seguridad / SSPC, Guardia Nacional, SEDENA, SEMAR, FGR y sus delegaciones, FSPE Guanajuato,
+SSP Zacatecas, FGJEZ, FGJES / AMIC, FGEO, FGE Guerrero, FGE Chiapas, FGE Campeche, FGE
+Yucatán, FGE Quintana Roo, FGE Veracruz, Poder Judicial de Veracruz, FGE Tabasco, FGJ-CDMX,
+SSC-CDMX, FGJEM, FGE Morelos, FGE Puebla, FGE Querétaro, FGJE Tlaxcala, FGE Michoacán, SSP
+Michoacán, Fiscalía de Jalisco, Fiscalía de Chihuahua, Fiscalía de Durango, SSP Tamaulipas,
+SSP Veracruz. Nacionales: El Universal, La Razón, Infobae México, La Jornada, La Jornada San
+Luis, Excélsior, El Heraldo de México, La Silla Rota, Latinus, MVS Noticias, Récord, Proceso.
+Regionales: Tribuna, Crítica, Tijuana en Línea, Plano Informativo, Hoy Tamaulipas, Uniradio,
+AM León, Periódico Correo, RED Michoacán, RED113, La Voz de Michoacán, Mi Morelia, Respuesta,
+Contramuro, Atiempo, Quadratín, Golpe Político, xeu.mx, El Sol de Veracruz, Notiver, 24 Horas
+Quintana Roo, Quintana Roo Hoy, Grupo Interactivo TV, Periódico Quequi, ZHN, Express
+Zacatecas, Conexión 58, Zócalo, Azteca Morelos, Diario de Morelos, La Unión. Abiertas: no se
+utilizó ninguna fuente abierta como sostén de hecho alguno en este corte.
+
+Registro de auditoría: el detalle de qué portal se consultó, cuál respondió y cuál no, los
+informes íntegros de los seis barridos regionales con su consumo de presupuesto declarado, los
+doce señuelos descartados por fecha o por año, y los enlaces exactos por hecho se conservan en
+reports/argos-2026-08-17-fuentes.md, de modo que todo SIN DATO de esta edición sea demostrable
+y auditable. Los pendientes vivos que deja este corte quedan en reports/_pendientes.md.
+
