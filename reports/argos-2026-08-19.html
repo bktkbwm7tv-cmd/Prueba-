@@ -1,0 +1,1930 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>ARGOS 102 — Reporte Nacional de Seguridad (2026-08-19)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --bg-navy:#040814;
+    --panel:#0a1230;
+    --panel-2:#0d1638;
+    --grid-line: rgba(76,230,255,0.08);
+    --border: rgba(76,230,255,0.28);
+    --cyan:#4ce6ff;
+    --cyan-dim:#8fb8c8;
+    --white:#eef6fb;
+    --red:#ff3b3b;
+    --yellow:#ffd23f;
+    --green:#33d17a;
+    --mono: "Consolas","SFMono-Regular","Courier New",monospace;
+    --sans: "Segoe UI","Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:#000;}
+  body{
+    font-family:var(--sans);
+    color:var(--white);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:24px;
+    padding:24px 0 60px;
+  }
+
+  /* ---------- PAGE SHELL ---------- */
+  .page{
+    width:1000px;
+    max-width:96vw;
+    min-height:1360px;
+    background:
+      linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0/40px 40px,
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0/40px 40px,
+      radial-gradient(ellipse at 50% -10%, #0c1a3d 0%, var(--bg-navy) 55%);
+    background-color:var(--bg-navy);
+    border:1px solid var(--border);
+    position:relative;
+    padding:22px 30px 70px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    box-shadow:0 0 0 1px #000, 0 20px 60px rgba(0,0,0,.6);
+    overflow-x:auto;
+  }
+  table.exec{ min-width:600px; }
+  @media print{
+    body{background:#000;padding:0;gap:0;}
+    .page{box-shadow:none;break-after:page; max-width:none; width:210mm; min-height:297mm;}
+  }
+  @media (max-width:480px){
+    .panel-title{flex-direction:column;align-items:flex-start;gap:2px;}
+  }
+
+  /* ---------- HEADER ---------- */
+  .masthead{
+    display:grid;
+    grid-template-columns:150px 1fr 150px;
+    align-items:center;
+    gap:14px;
+    border-bottom:1px solid var(--border);
+    padding-bottom:12px;
+  }
+  .masthead .brand{
+    font-family:var(--mono);
+    font-weight:700;
+    letter-spacing:2px;
+  }
+  .brand .argos-num{
+    font-size:34px;
+    line-height:1;
+    display:flex;
+    align-items:baseline;
+    gap:.22em;
+  }
+  .brand .argos-num .w{
+    font-size:1.14em;
+    font-weight:900;
+    letter-spacing:.14em;
+    color:var(--cyan);
+    -webkit-text-stroke:.7px var(--cyan);
+    text-shadow:0 0 12px rgba(76,230,255,.40);
+  }
+  .brand .argos-num .n{
+    font-size:.86em;
+    font-weight:800;
+    letter-spacing:.04em;
+    color:var(--white);
+    border:1px solid var(--cyan-dim);
+    padding:.06em .3em;
+    line-height:1;
+    background:rgba(76,230,255,.07);
+  }
+  .brand .sub{
+    font-size:10px;
+    color:var(--cyan-dim);
+    margin-top:4px;
+  }
+  .masthead .titles{
+    text-align:center;
+  }
+  .titles h1{
+    margin:0;
+    font-size:20px;
+    letter-spacing:4px;
+    color:var(--white);
+  }
+  .titles h2{
+    margin:2px 0 0;
+    font-size:12px;
+    letter-spacing:2px;
+    color:var(--cyan);
+    font-weight:600;
+  }
+  .titles .motto{
+    margin-top:6px;
+    font-family:var(--mono);
+    font-size:10px;
+    color:var(--cyan-dim);
+    letter-spacing:2px;
+  }
+  .masthead .corte{
+    text-align:right;
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--cyan-dim);
+    line-height:1.6;
+  }
+  .masthead .corte b{color:var(--white);}
+
+  /* ---------- RADAR + MAP (PORTADA) ---------- */
+  .cover-visuals{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    min-width:0;
+  }
+  .panel{
+    min-width:0;
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:2px;
+    padding:14px 16px;
+  }
+  .panel-title{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:2px;
+    color:var(--cyan);
+    border-bottom:1px solid var(--border);
+    padding-bottom:6px;
+    margin-bottom:10px;
+    display:flex;
+    justify-content:space-between;
+  }
+  .radar-box, .map-box{
+    height:220px;
+    display:flex;align-items:center;justify-content:center;
+    position:relative;
+    min-width:0;
+    overflow:hidden;
+  }
+  .radar-box svg, .map-box svg{width:100%;height:100%;display:block;}
+  .estado-path{stroke:var(--bg-navy);stroke-width:0.6;cursor:pointer;transition:filter .15s;}
+  .estado-path:hover{filter:brightness(1.4);}
+  .radar-ring{fill:none;stroke:var(--border);stroke-width:1;}
+  .radar-cross{stroke:var(--border);stroke-width:1;}
+  .radar-sweep-path{fill:rgba(76,230,255,.35);}
+  .eco{stroke:#04101f;stroke-width:0.7;cursor:pointer;}
+  .eco.pulse{animation:ecoPulse 1.6s ease-in-out infinite;}
+  @keyframes ecoPulse{ 0%,100%{opacity:1;} 50%{opacity:.4;} }
+  .map-caption{
+    position:absolute;bottom:2px;left:0;right:0;text-align:center;
+    font-family:var(--mono);font-size:9px;color:var(--cyan-dim);
+  }
+  .radar-stats{
+    display:flex;justify-content:space-between;gap:6px;margin-top:8px;
+    font-family:var(--mono);font-size:9px;color:var(--cyan-dim);
+    border-top:1px dashed var(--border);padding-top:6px;text-align:center;
+  }
+  .radar-stats b{color:var(--white);display:block;font-size:14px;margin-top:2px;}
+  .argos-tooltip{
+    position:fixed;z-index:80;max-width:260px;
+    background:var(--panel-2);border:1px solid var(--border);
+    padding:8px 10px;font-family:var(--mono);font-size:10px;color:var(--white);
+    line-height:1.5;pointer-events:none;opacity:0;transition:opacity .1s;
+    box-shadow:0 6px 18px rgba(0,0,0,.5);
+  }
+  .argos-tooltip.show{opacity:1;}
+  .argos-tooltip b{color:var(--cyan);}
+  .nota{scroll-margin-top:16px;}
+
+  /* ---------- SEMAFORO ---------- */
+  .semaforo{
+    display:flex;gap:10px;
+  }
+  .sem-item{
+    flex:1;
+    border:1px solid var(--border);
+    background:var(--panel);
+    padding:10px 12px;
+    font-family:var(--mono);
+  }
+  .sem-item .dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:8px;}
+  .sem-item.alto .dot{background:var(--red);box-shadow:0 0 8px var(--red);}
+  .sem-item.medio .dot{background:var(--yellow);box-shadow:0 0 8px var(--yellow);}
+  .sem-item.bajo .dot{background:var(--green);box-shadow:0 0 8px var(--green);}
+  .sem-item .lbl{font-size:11px;letter-spacing:1px;color:var(--cyan-dim);}
+  .sem-item .val{font-size:20px;color:var(--white);margin-top:4px;}
+
+  /* ---------- SECTION HEADS ---------- */
+  .section-head{
+    font-family:var(--mono);
+    font-size:13px;
+    letter-spacing:3px;
+    color:var(--cyan);
+    border-left:3px solid var(--cyan);
+    padding:4px 10px;
+    background:linear-gradient(90deg, rgba(76,230,255,.08), transparent);
+  }
+
+  /* ---------- EXEC LIST ---------- */
+  .list{
+    display:flex;flex-direction:column;gap:8px;
+  }
+  .list-item{
+    display:grid;
+    grid-template-columns:70px 1fr 110px;
+    gap:10px;
+    border:1px solid var(--border);
+    background:var(--panel);
+    padding:8px 12px;
+    font-size:12px;
+    align-items:center;
+  }
+  .tag{
+    font-family:var(--mono);
+    font-size:9px;
+    padding:2px 6px;
+    text-align:center;
+    border-radius:2px;
+    letter-spacing:1px;
+  }
+  .tag.alto{background:rgba(255,59,59,.15);color:var(--red);border:1px solid var(--red);}
+  .tag.medio{background:rgba(255,210,63,.15);color:var(--yellow);border:1px solid var(--yellow);}
+  .tag.bajo{background:rgba(51,209,122,.15);color:var(--green);border:1px solid var(--green);}
+  .tag.sindato{background:rgba(143,184,200,.12);color:var(--cyan-dim);border:1px solid var(--cyan-dim);}
+  .placeholder{color:var(--cyan-dim);font-style:italic;}
+
+  /* ---------- ALERTA ---------- */
+  .alerta{
+    border:1px solid var(--red);
+    background:rgba(255,59,59,.08);
+    padding:10px 14px;
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+  }
+  .alerta .flag{
+    font-family:var(--mono);color:var(--red);font-weight:700;font-size:12px;letter-spacing:2px;
+    white-space:nowrap;
+  }
+  .alerta p{margin:0;font-size:12px;color:var(--white);}
+  .alerta.contexto{border-color:var(--cyan);background:rgba(76,230,255,.06);}
+  .alerta.contexto .flag{color:var(--cyan);}
+
+  /* ---------- TABLE ---------- */
+  table.exec{
+    width:100%;
+    border-collapse:collapse;
+    font-size:11.5px;
+  }
+  table.exec th, table.exec td{
+    border:1px solid var(--border);
+    padding:6px 8px;
+    text-align:left;
+  }
+  table.exec th{
+    background:var(--panel-2);
+    color:var(--cyan);
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:1px;
+  }
+  table.exec td{background:var(--panel);}
+
+  /* ---------- NOTA CARD (4 apartados) ---------- */
+  .nota{
+    border:1px solid var(--border);
+    background:var(--panel);
+  }
+  .nota-header{
+    display:flex;justify-content:space-between;align-items:center;
+    background:var(--panel-2);
+    padding:8px 12px;
+    border-bottom:1px solid var(--border);
+  }
+  .nota-header h3{
+    margin:0;font-size:13px;color:var(--white);letter-spacing:.5px;
+  }
+  .nota-header .risk-flag{
+    font-family:var(--mono);font-size:9px;
+    border:1px solid; padding:2px 6px;letter-spacing:1px;
+  }
+  .nota-header .risk-flag.alto{color:var(--red);border-color:var(--red);}
+  .nota-header .risk-flag.medio{color:var(--yellow);border-color:var(--yellow);}
+  .nota-header .risk-flag.bajo{color:var(--green);border-color:var(--green);}
+  .nota-header .risk-flag.sindato{color:var(--cyan-dim);border-color:var(--cyan-dim);}
+  .nota-body{padding:10px 14px;display:flex;flex-direction:column;gap:8px;}
+  .apartado{font-size:12px;line-height:1.5;}
+  .apartado .k{
+    display:block;
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:1.5px;
+    color:var(--cyan);
+    margin-bottom:2px;
+  }
+  .nota-footer{
+    border-top:1px solid var(--border);
+    padding:8px 14px;
+    font-family:var(--mono);
+    font-size:10px;
+    color:var(--cyan-dim);
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    align-items:center;
+  }
+  .nota-footer b{color:var(--white);}
+  .stars{color:var(--yellow);letter-spacing:1px;}
+  .src-tag{
+    border:1px solid var(--border);
+    padding:1px 6px;
+    border-radius:2px;
+  }
+
+  /* ---------- PHOTO SLOT ---------- */
+  .photo-slot{
+    border:1px dashed var(--cyan-dim);
+    background:repeating-linear-gradient(45deg, rgba(76,230,255,.03) 0 10px, transparent 10px 20px);
+    min-height:110px;
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;
+    font-family:var(--mono);
+    font-size:10px;
+    color:var(--cyan-dim);
+    padding:8px;
+  }
+
+  /* ---------- FOOTER BAR ---------- */
+  .footbar{
+    position:absolute;
+    left:0;right:0;bottom:0;
+    display:flex;
+    justify-content:space-between;
+    padding:8px 30px;
+    border-top:1px solid var(--border);
+    font-family:var(--mono);
+    font-size:9.5px;
+    color:var(--cyan-dim);
+    background:rgba(4,8,20,.9);
+  }
+  .footbar .uso{color:var(--yellow);letter-spacing:1px;}
+
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;}
+  .muted-note{
+    font-family:var(--mono);font-size:9.5px;color:var(--cyan-dim);
+    border:1px dashed var(--border); padding:6px 10px;
+  }
+  .src-list{font-size:11px;line-height:1.7;}
+  .src-list .grp{color:var(--cyan-dim);font-family:var(--mono);font-size:9px;letter-spacing:1px;display:block;margin-top:6px;}
+
+  /* ---------- STAT TILES (Bloques 1 y 4) ---------- */
+  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+  .stat-tile{
+    border:1px solid var(--border);background:var(--panel);
+    padding:8px 10px;text-align:center;
+  }
+  .stat-tile .lbl{font-family:var(--mono);font-size:8.5px;color:var(--cyan-dim);letter-spacing:.5px;}
+  .stat-tile .val{font-size:19px;color:var(--white);margin-top:3px;font-weight:600;}
+  .stat-tile .icon{font-size:15px;}
+
+  /* ---------- COVERAGE INDICATOR ---------- */
+  .coverage{
+    font-family:var(--mono);font-size:9.5px;color:var(--cyan-dim);
+    border:1px dashed var(--border);padding:8px 10px;
+    display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px 14px;
+  }
+  .coverage b{color:var(--white);}
+
+  table.exec.wide{min-width:920px;}
+</style>
+</head>
+<body>
+<!-- =========================================================
+     PÁGINA 1 — PORTADA
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand">
+      <div class="argos-num"><span class="w">ARGOS</span><span class="n">102</span></div>
+      <div class="sub">SISTEMA DE INTELIGENCIA CRIMINAL TRAZABLE</div>
+    </div>
+    <div class="titles">
+      <h1>REPORTE NACIONAL DE SEGURIDAD</h1>
+      <h2>REPORTE DIARIO DE INTELIGENCIA CRIMINAL</h2>
+      <div class="motto">INVESTIGACIONES, BÚSQUEDA Y VERDAD</div>
+    </div>
+    <div class="corte">
+      CORTE INFORMATIVO<br>
+      <b>Fecha:</b> 2026-08-18<br>
+      <b>Hora:</b> 13:37 (CDMX)
+    </div>
+  </header>
+
+  <div class="cover-visuals">
+    <div class="panel">
+      <div class="panel-title"><span>RADAR CENTRAL</span><span>EN VIVO</span></div>
+      <div class="radar-box" id="argos-radar"></div>
+      <div class="radar-stats" id="argos-radar-stats"><div>🔴 Alto impacto<br><b>0</b></div><div>🟡 Violencia operativa<br><b>2</b></div><div>🟢 Acciones institucionales<br><b>9</b></div></div>
+    </div>
+    <div class="panel">
+      <div class="panel-title"><span>MAPA NACIONAL — FOCOS DEL CORTE</span><span>GIS POR ENTIDAD</span></div>
+      <div class="map-box" id="argos-map"></div>
+      <div class="map-caption">Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.</div>
+    </div>
+  </div>
+
+  <div class="section-head">SEMÁFORO ARGOS</div>
+  <p class="muted-note">
+    <b>Cero eventos rojos y dos amarillos</b> en la ventana de este corte, frente a cero y cero en
+    ARGOS 100. <b>El aumento de volumen no es un dato de seguridad</b>: la ventana de hoy dura unas
+    <b>35 horas</b> frente a las ~19 h de la edición anterior, casi el doble, y la cobertura de esta edición fue mayor
+    (pág. 5). Más hechos registrados con más tiempo y más barrido no equivale a más violencia. Queda además una reserva sobre el propio recuento: el ataque armado que
+    origina <code>ARG-101-008</code> <b>dejó un fallecido</b> y su fecha es ambigua; si cae en la
+    ventana, el corte no tuvo cero rojos (ver pág. 6). Los dos amarillos son <b>confrontación armada</b>: el
+    enfrentamiento de Colima con dos presuntos integrantes del CJNG abatidos (<code>ARG-101-002</code>)
+    y el intercambio de disparos de cerca de una hora en la sierra de Zinapécuaro, Michoacán
+    (<code>ARG-101-003</code>). Conforme a la Metodología del Nivel de Riesgo Nacional, las nueve
+    acciones verdes <b>no reducen</b> el nivel de riesgo; y sin eventos rojos observados ni cobertura
+    suficiente para afirmar que no los hubo, el nivel <b>no es determinable</b> (ver pág. 6).
+  </p>
+  <div class="semaforo">
+    <div class="sem-item alto"><span class="dot"></span><span class="lbl">🔴 ROJO — ALTO IMPACTO</span><div class="val">0 eventos</div></div>
+    <div class="sem-item medio"><span class="dot"></span><span class="lbl">🟡 AMARILLO — VIOLENCIA OPERATIVA</span><div class="val">2 eventos</div></div>
+    <div class="sem-item bajo"><span class="dot"></span><span class="lbl">🟢 VERDE — ACCIONES INSTITUCIONALES</span><div class="val">9 eventos</div></div>
+  </div>
+
+  <div class="section-head">EJES DEL DÍA</div>
+  <div class="list">
+    <div class="list-item"><span class="tag alto">CORRECCIÓN MAYOR</span><span>El <b>vacío del boletín del Gabinete de Seguridad</b>, publicado durante <b>tres ediciones</b> y contabilizado como cuarto corte consecutivo, <b>queda desmentido para el 16 de agosto en adelante</b>: el boletín existe y está indexado, en formato <b>agregado de tres días</b> (14, 15 y 16 de agosto). No era una interrupción de la publicación, era un <b>artefacto de la consulta</b>. Ver pág. 6.</span><span>ARG-101-FE-001</span></div>
+    <div class="list-item"><span class="tag bajo">VERDE</span><span>La <b>SEMAR</b> asegura <b>más de 1,600 kg de presunta cocaína</b> en <b>54 bultos</b> flotando en el Pacífico, a unos <b>329 km al suroeste de Lázaro Cárdenas</b> (178 millas náuticas), Michoacán. <b>Sin detenidos.</b> Reactiva la categoría de narcotráfico marítimo.</span><span>ARG-101-001</span></div>
+    <div class="list-item"><span class="tag medio">AMARILLO</span><span><b>Colima</b>: elementos de la SSPC estatal y de la SEMAR son agredidos en una presunta casa de seguridad y repelen la agresión; <b>dos presuntos integrantes del CJNG abatidos</b>. Se aseguran <b>granadas</b>, armas, cargadores y más de 2,500 cartuchos, <b>ninguno con cantidad exacta publicada</b>.</span><span>ARG-101-002</span></div>
+    <div class="list-item"><span class="tag medio">AMARILLO</span><span><b>Zinapécuaro, Michoacán</b>: cerca de una hora de detonaciones entre civiles armados en la zona serrana. <b>Sin información oficial</b>: se desconoce si hubo fallecidos o lesionados. Fecha sostenida solo por coincidencia de cinco medios regionales.</span><span>ARG-101-003</span></div>
+    <div class="list-item"><span class="tag bajo">VERDE</span><span><b>Estado de México</b>: detención de <b>cuatro presuntos agentes de la propia FGJEM</b> por extorsión y secuestro exprés, en operación de la FEMDO y la AIC de la FGR con la SSPC y la Fuerza de Tarea Marina. Es el hecho de mayor valor de inteligencia del corte.</span><span>ARG-101-004</span></div>
+    <div class="list-item"><span class="tag bajo">SENTENCIA</span><span><b>Durango</b>: la FGE publica <b>sentencia condenatoria por más de 26 años</b> por homicidio calificado y agravado por parentesco en la Región Laguna. <b>Primera condenatoria que el módulo judicial integra desde ARGOS 98</b>: las ediciones 99 y 100 cerraron en cero. Ver la justificación de método en la pág. 5.</span><span>ARG-101-SEN-001</span></div>
+    <div class="list-item"><span class="tag bajo">CIERRE</span><span>Se cierra el seguimiento de los <b>verificentros del Edomex</b> (<code>ARG-97-004</code>), abierto desde ARGOS 97 y buscado <b>diez veces sin resultado</b>: hay resolución publicada. <b>Es una vinculación a proceso, no una sentencia</b>, y por regla expresa no entra al módulo judicial.</span><span>ARG-101-009</span></div>
+    <div class="list-item"><span class="tag alto">SEÑUELO NEUTRALIZADO</span><span>La pista prioritaria de <b>Suchiapa, Chiapas</b> —9 cateos, <b>26 detenidos, 21 de ellos policías municipales</b>— es real pero del <b>4 de abril de 2025</b>: <b>dieciséis meses</b> fuera de ventana. El portal de la FGE Chiapas publica con URL sin fecha, lo que la volvía indistinguible de un hecho de hoy.</span><span>ARG-101-FE-002</span></div>
+    <div class="list-item"><span class="tag sindato">SIN CERRAR</span><span>Las <b>nueve condenatorias</b> restantes del agregado de Veracruz siguen <b>sin desglose</b> en su cuarta edición, y la contradicción de fecha de <b>Bulmaro "N"</b> (Suchiapa) sigue <b>sin arbitrar</b>: ningún boletín institucional la fija. Ver pág. 5 y 6.</span><span>—</span></div>
+  </div>
+
+  <div class="section-head">RESUMEN EJECUTIVO</div>
+  <p style="font-size:12.5px;line-height:1.6;">
+    <b>El dato principal de esta edición vuelve a ser metodológico, y esta vez corrige a ARGOS</b>:
+    el vacío del boletín del Gabinete de Seguridad, sostenido durante cuatro cortes y "confirmado de
+    forma independiente" por cuatro equipos regionales, <b>había dejado de existir sin que nadie lo
+    notara</b>. El emisor había cambiado
+    de boletín diario a agregado de varios días y las consultas por día suelto no lo alcanzaban. La
+    consecuencia para este corte es que el vacío real es de un solo día, el 17 de agosto, y que la
+    cobertura federal declarada por las tres ediciones anteriores era peor de lo que ellas creían.
+    <b>La lección de método se desarrolla, sin repetirse, en la pág. 6.</b>
+    <b>En la ventana se registran once hechos</b>: nueve acciones institucionales y dos de violencia
+    operativa —Colima y Zinapécuaro—, sin ningún evento rojo con fecha fijada. El de mayor
+    valor de inteligencia no es el de mayor volumen: la detención de <b>cuatro presuntos agentes de
+    la Fiscalía mexiquense</b> por extorsión y secuestro exprés, ejecutada por autoridades federales
+    sobre personal de una fiscalía estatal. El mayor aseguramiento del corte es marítimo: <b>1,600 kg
+    de cocaína</b> flotando frente a Michoacán, sin detenidos.
+    <b>La cobertura mejoró de forma verificable</b>: las 32 fiscalías quedaron revisadas —frente a 19
+    en ARGOS 100— al aplicarse por primera vez la rotación declarada sobre las trece que habían
+    quedado sin revisar. Pero <b>el techo no se movió</b>: cero portales leídos por acceso directo,
+    duodécima edición consecutiva bajo bloqueo total de egreso.
+    <b>De los dos pendientes de PRIORIDAD 1, ninguno se cerró</b>; el rendimiento estuvo en
+    delimitar por qué no se pueden cerrar y en <b>descartar tres candidatos falsos</b>, uno de ellos
+    con dieciséis meses de antigüedad.
+  </p>
+
+  <p class="muted-note">
+    Indicador SESNSP (homicidio doloso: <b>86.9 → 45.4 víctimas/día, −48%</b>, sep. 2024–jun. 2026)
+    sin actualización adicional dentro de la ventana de este corte. Entró en <b>ARGOS 86</b>
+    (2026-08-02) y se mantiene en "Indicadores oficiales" (pág. 6) marcado como
+    <code>HEREDADO — NO REVERIFICADO</code>, con la contradicción del −60% todavía abierta.
+  </p>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-08-18 · Hora: 13:37 (CDMX)</span>
+    <span>Corte: Vespertino</span>
+    <span>ARGOS N.° 102</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- =========================================================
+     PÁGINA 2 — CRIMEN ORGANIZADO (I)
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:22px;"><span class="w">ARGOS</span><span class="n">102</span></div></div>
+    <div class="titles"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (I) — NARCOTRÁFICO MARÍTIMO, CONFRONTACIÓN ARMADA Y CORRUPCIÓN INSTITUCIONAL</h2></div>
+    <div class="corte">PÁG. 2 / 6</div>
+  </header>
+
+  <div class="section-head">TABLERO EJECUTIVO — EVENTOS DEL CORTE (VENTANA ESTRICTA)</div>
+  <p class="muted-note">
+    Ventana: <b>2026-08-17 02:47 → 2026-08-18 13:37 CDMX</b>, en continuidad estricta con el cierre
+    de ARGOS 100. <b>Once hechos</b>: dos de violencia operativa y nueve acciones institucionales.
+    Conforme a la regla de las cuatro secciones de CLAUDE.md, cada ficha separa hecho confirmado,
+    corroboración, explotación y trazabilidad; y conforme a la regla operativa del semáforo, las
+    acciones verdes <b>no modifican el nivel de riesgo nacional</b>: se reportan como capacidad
+    institucional. <b>Advertencia transversal de esta edición</b>: en la mayoría de los hechos la
+    fecha fijada en URL es la de <b>publicación</b>; cuando la fecha del hecho no pudo fijarse de
+    forma independiente, la ficha lo dice expresamente y no se sustituye una por otra.
+  </p>
+
+  <div class="table-wrap">
+  <table class="exec">
+    <thead>
+      <tr><th>Entidad</th><th>Hecho</th><th>Nivel</th><th>Fuente institucional</th><th>Fuente nacional</th><th>Confianza</th><th>ARG-ID</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Michoacán (Pacífico)</td><td>329 km al SO de Lázaro Cárdenas: 54 bultos con más de 1,600 kg de presunta cocaína; 0 detenidos</td><td>🟢 Verde</td><td>SEMAR — citada, <b>boletín no localizado</b></td><td>La Razón, Crónica, Tribuna</td><td>★★★☆☆</td><td>ARG-101-001</td></tr>
+      <tr><td>Colima</td><td>Casa de seguridad: 2 presuntos integrantes del CJNG abatidos tras agresión; granadas y armas <b>sin cantidad</b></td><td>🟡 Amarillo</td><td>SSPC Colima / SEMAR / FGE — <b>no localizada</b></td><td>Infobae, Milenio</td><td>★★★☆☆</td><td>ARG-101-002</td></tr>
+      <tr><td>Michoacán</td><td>Zinapécuaro: cerca de una hora de detonaciones entre civiles armados; sin información oficial de víctimas</td><td>🟡 Amarillo</td><td>—</td><td>—</td><td>★★☆☆☆</td><td>ARG-101-003</td></tr>
+      <tr><td>Estado de México</td><td>Texcoco y Ecatepec: 4 presuntos agentes de la FGJEM detenidos por extorsión y secuestro exprés</td><td>🟢 Verde</td><td>FGR (FEMDO/AIC) — <b>no localizada</b></td><td>Infobae</td><td>★★★☆☆</td><td>ARG-101-004</td></tr>
+      <tr><td>Ciudad de México</td><td>Cuauhtémoc, col. Guerrero: cateo con 1 arma corta y 2 detenidos</td><td>🟢 Verde</td><td>SSC-CDMX / FGJ-CDMX — <b>no localizada</b></td><td>El Heraldo de México</td><td>★★★☆☆</td><td>ARG-101-005</td></tr>
+      <tr><td>Querétaro</td><td>Cateos simultáneos en seis municipios: 7 detenidos, drogas y armas <b>sin cantidad</b></td><td>🟢 Verde</td><td>FGE Querétaro — citada, <b>boletín no localizado</b></td><td>Infobae (<b>única</b>)</td><td>★★☆☆☆</td><td>ARG-101-006</td></tr>
+      <tr><td>Guanajuato</td><td>Acámbaro: 4 detenidos, <b>5 armas de fuego sin desglose</b>, 137 dosis y 3 motocicletas</td><td>🟢 Verde</td><td>FSPE — <b>boletín no localizado</b></td><td>La Crónica</td><td>★★★☆☆</td><td>ARG-101-007</td></tr>
+      <tr id="ARG-101-008"><td>Baja California</td><td>Tijuana, Zona Centro: 3 detenidos por ataque armado con un fallecido; sin armamento publicado</td><td>🟢 Verde</td><td>—</td><td>—</td><td>★★☆☆☆</td><td>ARG-101-008</td></tr>
+      <tr><td>Estado de México</td><td>Chalco: vinculación a proceso de 2 exfuncionarios por la red de extorsión a verificentros</td><td>🟢 Verde</td><td>FGJEM — <b>no localizada</b></td><td>La Silla Rota, La Jornada</td><td>★★★☆☆</td><td>ARG-101-009</td></tr>
+      <tr><td>Jalisco</td><td>Zapopan: 5 presuntos integrantes de "Los Deltas" vinculados a proceso por acopio de armas</td><td>🟢 Verde</td><td>FGR — <b>no localizada</b></td><td>Infobae</td><td>★★☆☆☆</td><td>ARG-101-010</td></tr>
+      <tr><td>Durango</td><td>Región Laguna: sentencia condenatoria por <b>más de 26 años</b>, homicidio calificado agravado por parentesco</td><td>🟢 Verde</td><td><b>FGE Durango — ruta de URL 17-ago</b></td><td>—</td><td>★★☆☆☆</td><td>ARG-101-SEN-001</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="section-head">DETENCIONES RELEVANTES</div>
+  <p class="muted-note">
+    Personas detenidas en la ventana cuyo evento <b>no aporta detenidos</b> al conteo del módulo de
+    armamento —sea porque no hubo aseguramiento de armas, sea porque la cifra de detenidos no es
+    conciliable—. <b>Ninguna cifra de esta tabla se suma a la
+    de la pág. 4</b>: son conjuntos disjuntos y se publican por separado para que no puedan agregarse
+    por error.
+  </p>
+  <div class="list">
+    <div class="list-item"><span class="tag sindato">3 DETENIDOS</span><span><b>Baja California · Tijuana</b> — Policía Municipal, por ataque armado con un fallecido. <b>Fuera del conteo de armamento</b>: ninguna fuente publica aseguramiento de armas en el evento.</span><span>ARG-101-008</span></div>
+    <div class="list-item"><span class="tag sindato">0 DETENIDOS</span><span><b>Michoacán · Pacífico</b> — SEMAR. El aseguramiento de 1,600 kg de cocaína <b>no produjo detenciones</b>: la droga fue localizada a la deriva, sin embarcación ni tripulación asociadas. Dato operativo relevante por sí mismo.</span><span>ARG-101-001</span></div>
+    <div class="list-item"><span class="tag sindato">SIN CIFRA CONCILIADA</span><span><b>Colima</b> — Dos personas abatidas. Sobre detenidos hay <b>contradicción</b>: dos fuentes <b>sin cifra publicada</b> (Infobae, Puente Libre) frente a <b>1 detenida</b> de El Occidental. <b>No se integra</b> mientras no haya boletín que la fije.</span><span>ARG-101-002</span></div>
+  </div>
+  <p class="muted-note">
+    <b>Integradas al conteo de armamento y por tanto ausentes de esta tabla</b>: las <b>17</b>
+    personas detenidas en los cuatro eventos con aseguramiento de armas —2 en la Ciudad de México
+    (<code>ARG-101-ARM-001</code>), 4 en Acámbaro (<code>ARG-101-ARM-002</code>), 4 en el Estado de
+    México (<code>ARG-101-ARM-003</code>) y 7 en Querétaro (<code>ARG-101-ARM-004</code>)—. Se
+    contabilizan aunque dos de esos eventos sean cualitativos: <b>la regla del módulo exige que haya
+    aseguramiento de armamento, no que se haya publicado su cantidad.</b>
+  </p>
+
+  <div class="section-head">FICHAS DEL CORTE</div>
+
+  <div class="nota" id="ARG-101-001">
+    <div class="nota-header"><h3>NARCOTRÁFICO MARÍTIMO — 1,600 KG DE COCAÍNA A LA DERIVA FRENTE A MICHOACÁN</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+        El 17 de agosto de 2026, personal de la <b>Octava Región Naval</b> y de la <b>Décimo Sexta
+        Zona Naval</b> de la Secretaría de Marina localizó, durante patrullajes aéreos de rutina,
+        <b>54 bultos</b> a la deriva en la superficie marina del Océano Pacífico, aproximadamente a
+        <b>329 kilómetros al suroeste de Lázaro Cárdenas</b>, Michoacán —distancia que una fuente
+        regional expresa como <b>178 millas náuticas</b>; ambas son equivalentes, y la equivalencia
+        (1 mn = 1.852 km) es <b>cálculo propio de ARGOS</b>, no dato publicado—. Los bultos contenían
+        <b>más de 1,600 kilogramos de presunta cocaína</b>. <b>Sin personas detenidas</b> y sin
+        embarcación asociada: el cargamento se encontró abandonado y boyado.
+      </div>
+      <div class="apartado"><span class="k">CORROBORACIÓN</span>
+        Nacional (La Razón, La Crónica de Hoy, Diario de Juárez, Meganoticias) + regional (Tribuna,
+        Periódico Correo, Plano Informativo, CódigoQro, Atiempo). <b>Nueve fuentes coinciden</b> en
+        las 1.6 toneladas, los 54 bultos y la distancia. Fecha del hecho y de publicación fijadas
+        <b>en la URL</b> de al menos cinco de ellas (<code>razon.com.mx/mexico/2026/08/17/</code>,
+        <code>tribuna.com.mx/seguridad/2026/08/17/</code>, <code>cronica.com.mx/nacional/2026/08/17/</code>,
+        <code>diario.mx/nacional/2026/aug/17/</code>, <code>periodicocorreo.com.mx/nacional/2026/aug/17/</code>).
+        <b>Discrepancia declarada</b>: el <i>slug</i> de La Crónica dice "más de 16 toneladas"; su
+        propio titular y las otras ocho fuentes dicen <b>1.6 toneladas</b>. Se publica 1,600 kg y se
+        descarta el "16" como error del slug, dejándolo anotado.
+        <b>Sin fuente institucional leída</b>: la SEMAR es citada por todas las fuentes pero su
+        comunicado no se localizó indexado y no pudo consultarse por acceso directo.
+        <code>Pendiente de corroboración institucional.</code>
+      </div>
+      <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+        Un cargamento boyado y abandonado a unos 329 km de la costa <b>sugiere</b> un abandono deliberado
+        ante detección —práctica documentada para evitar la captura de la tripulación— o una entrega
+        programada por coordenadas que no llegó a recogerse. Ambas hipótesis <b>requieren
+        validación</b> y ninguna está confirmada. El dato de mayor valor operativo es la
+        <b>ausencia total de detenidos y de embarcación</b>: el aseguramiento retira producto pero
+        <b>no genera línea de investigación</b> sobre remitente, transportista ni destinatario, de
+        modo que su efecto sobre la estructura es de costo, no de desarticulación. La localización
+        frente a Lázaro Cárdenas es consistente con el corredor del Pacífico michoacano ya observado
+        en cortes anteriores; el volumen —1.6 t en un solo hallazgo— lo sitúa por encima de un
+        transporte de reparto. <b>Vacío</b>: sin análisis de laboratorio publicado, la sustancia es
+        "presunta"; sin fecha de arrojado, no puede estimarse la deriva ni el punto de origen.
+        <b>Línea a explotar</b>: correlación con tráfico marítimo AIS en la ventana y con las
+        regiones navales que ya reportaron actividad en el Pacífico durante el corte.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-101-001</code> · Nivel de confianza: <b>🟡 Medio</b> (★★★☆☆) · Fuentes:
+        Institucional (SEMAR, citada, no leída) / Nacional (La Razón, Crónica, Diario de Juárez,
+        Meganoticias) / Regional (Tribuna, Periódico Correo, Plano Informativo, CódigoQro, Atiempo) ·
+        Fecha del hecho: <b>2026-08-17</b> · Consulta: 2026-08-18 13:37 (CDMX).
+        <b>Fuera de la taxonomía del módulo de armamento</b> (es droga): no aporta a ningún renglón
+        del conteo. <b>Precisión geográfica</b>: el hallazgo ocurre en <b>aguas del Pacífico, fuera de
+        toda entidad federativa</b>; se atribuye a Michoacán <b>solo por proximidad</b>, y en el radar
+        ocupa el sector "Pacífico" y no el de Occidente que le correspondería por estado. <b>Reactiva la categoría de narcotráfico marítimo</b>, sin registro desde
+        <code>ARG-99-005</code>.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-101-002">
+    <div class="nota-header"><h3>CONFRONTACIÓN ARMADA — CASA DE SEGURIDAD Y DOS ABATIDOS, COLIMA</h3><span class="risk-flag medio">AMARILLO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+        El 18 de agosto de 2026, elementos de la <b>Secretaría de Seguridad y Protección Ciudadana
+        del Estado de Colima</b>, la <b>Secretaría de Marina</b> y la <b>Fiscalía General del
+        Estado</b> intervinieron una presunta casa de seguridad en el municipio de Colima.
+        <b>Los elementos fueron agredidos y repelieron la agresión</b>; en el enfrentamiento
+        murieron <b>dos presuntos integrantes del Cártel Jalisco Nueva Generación</b>, cuyas
+        identidades no habían sido dadas a conocer al cierre de este corte. Se aseguraron
+        <b>granadas</b>, armas de fuego, cargadores, chalecos, carrilleras, <b>"más de 2,500
+        cartuchos"</b> y equipo táctico.
+      </div>
+      <div class="apartado"><span class="k">CORROBORACIÓN</span>
+        Nacional (Infobae, Milenio) + regional (Puente Libre, El Occidental, Chihuahua en Red).
+        Fecha fijada en el <i>slug</i> de Puente Libre
+        (<code>reventaron-casa-colima-abatieron-sicarios-cjng-18-agosto-2026</code>) y en la URL de
+        Infobae (<code>infobae.com/mexico/2026/08/18/</code>). <b>Sin boletín institucional
+        localizado</b> de la SSPC de Colima, la SEMAR ni la FGE.
+        <code>Pendiente de corroboración institucional.</code>
+        <b>DOS EXTREMOS NO ARBITRADOS, publicados sin conciliar</b>: (a) <b>detenidos</b> — Infobae y
+        Puente Libre <b>no publican cifra</b>; El Occidental reporta <b>una mujer detenida</b> y describe
+        a uno de los abatidos como <b>jefe de sicarios</b>; (b) <b>hallazgo de restos humanos</b> en
+        el inmueble, que aparece <b>únicamente en el titular de Infobae</b> y no se reproduce en el
+        cuerpo de ninguna otra fuente. <b>Ninguno de los dos se integra.</b>
+        <b>Deslinde obligatorio</b>: existen dos hechos previos muy similares en el mismo estado que
+        <b>no deben fusionarse</b> con este — el abatimiento de <b>"El Huesos"</b>, objetivo
+        prioritario del CJNG, del <b>14-may-2026</b>, y el de <b>"El Topo"</b>, presunto jefe de
+        sicarios del CJNG en Colima, del <b>21-jul-2026</b>. La atribución de "jefe de sicarios" en
+        la nota regional es precisamente el punto por el que este hecho podría confundirse con
+        aquellos.
+      </div>
+      <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+        <b>La presencia de granadas es el dato de mayor peso</b>, y es también el peor documentado:
+        ninguna fuente publica cuántas, de qué tipo ni si eran de fragmentación, de percusión o
+        artesanales. Granadas en una casa de seguridad urbana <b>son consistentes con</b> una célula
+        con capacidad ofensiva por encima del armamento individual, hipótesis que <b>requiere
+        validación</b> mediante el desglose oficial. Los "más de 2,500 cartuchos" —<b>cifra imprecisa,
+        no integrada al conteo</b>— indican aprovisionamiento para sostenimiento prolongado, no para
+        portación. <b>Riesgo</b>: el
+        municipio de Colima acumula, en menos de cuatro meses, tres intervenciones con abatidos
+        vinculadas a la misma organización, lo que <b>sugiere</b> una disputa sostenida más que
+        hechos aislados; el patrón <b>no está confirmado</b> y su verificación exige serie
+        institucional, no conteo de notas. <b>Vacío</b>: sin cifras de armamento, este evento no
+        puede alimentar el conteo nacional pese a ser el más significativo del corte en capacidad de
+        fuego. <b>Línea a explotar</b>: exigir el desglose numérico a la SSPC de Colima y determinar
+        si el hallazgo de restos humanos se confirma — de confirmarse, <b>el evento reclasifica a
+        🔴 ROJO</b> y con él el nivel de riesgo nacional del corte.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-101-002</code> · Nivel de confianza: <b>🟡 Medio</b> (★★★☆☆) · Fuentes:
+        Institucional (SSPC Colima / SEMAR / FGE, citadas, no localizadas) / Nacional (Infobae,
+        Milenio) / Regional (Puente Libre, El Occidental, Chihuahua en Red) · Fecha del hecho: <b>2026-08-18</b> ·
+        Consulta: 2026-08-18 13:37 (CDMX). <b>Evento cualitativo en el módulo de armamento</b>
+        (<code>ARG-101-ARM-005</code>): ninguna cantidad exacta publicada, no integra el total
+        numérico. Los "más de 2,500 cartuchos" son <b>cifra imprecisa</b> y por regla no se integran.
+        <b>Aporta entidad al conteo</b> (Colima es una de las cinco), <b>pero no aporta detenidos</b>:
+        la cifra está contradicha.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     PÁGINA 3 — CRIMEN ORGANIZADO (II)
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:22px;"><span class="w">ARGOS</span><span class="n">102</span></div></div>
+    <div class="titles"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (II) — ACCIONES INSTITUCIONALES, RECUPERACIONES Y SEGUIMIENTOS</h2></div>
+    <div class="corte">PÁG. 3 / 6</div>
+  </header>
+
+  <div class="nota" id="ARG-101-004">
+    <div class="nota-header"><h3>CORRUPCIÓN INSTITUCIONAL — CUATRO PRESUNTOS AGENTES DE LA FISCALÍA MEXIQUENSE DETENIDOS</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+        Publicado el 18 de agosto de 2026: detención de <b>cuatro personas señaladas como agentes
+        investigadores de la Fiscalía General de Justicia del Estado de México</b> —Benito "N" (57),
+        María Fernanda "N" (38), Efraín "N" (65) y Mario "N" (43)— por <b>extorsión y secuestro
+        exprés</b>, en Texcoco y Ecatepec. La operación fue ejecutada por la <b>Fiscalía Especializada
+        en Materia de Delincuencia Organizada (FEMDO)</b> y la <b>Agencia de Investigación Criminal</b>
+        de la FGR, con la SSPC y la Fuerza de Tarea Marina Ecatepec. Se les aseguraron
+        <b>armas de fuego de uso exclusivo, cartuchos útiles y drogas sintéticas</b>,
+        <b>ninguno con cantidad publicada</b>.
+        <b>La fecha del hecho no está fijada</b>: las fuentes fechan la publicación, no la detención.
+      </div>
+      <div class="apartado"><span class="k">CORROBORACIÓN</span>
+        Nacional (Infobae, con fecha en URL <code>infobae.com/mexico/2026/08/18/</code>) + regional
+        (Quadratín Edomex, Red Acciones). <b>Sin boletín institucional localizado</b> de la FGR ni de
+        la FGJEM. <code>Pendiente de corroboración institucional.</code> Confianza <b>Medio</b>.
+      </div>
+      <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+        Es el hecho de <b>mayor valor de inteligencia del corte</b>, y no por su volumen sino por su
+        estructura: <b>autoridades federales deteniendo a personal ministerial de una fiscalía
+        estatal</b> por los delitos que esa fiscalía debería perseguir. La combinación
+        <b>extorsión + secuestro exprés + agentes investigadores</b> es consistente con el uso de la
+        facultad de investigación como instrumento del delito —acceso a carpetas, a domicilios y a
+        la condición de autoridad frente a la víctima—, hipótesis que <b>requiere validación</b> con
+        la carpeta federal. Que la intervención la ejecute la FEMDO <b>sugiere</b> que la conducta se
+        atribuye a una estructura y no a cuatro individuos, pero <b>no está confirmado</b> que exista
+        imputación por delincuencia organizada. <b>Riesgo</b>: la detención de agentes ministeriales
+        compromete las carpetas en las que hayan intervenido y abre una línea de revisión que ninguna
+        fuente menciona. <b>Vacíos</b>: no se publica la adscripción exacta de los detenidos, ni el
+        número de víctimas, ni el periodo de la conducta, ni la cantidad de armamento asegurado — lo
+        que impide integrarlo al conteo nacional. <b>Línea a explotar</b>: relación con el otro caso
+        mexiquense de este corte, la red de extorsión a verificentros (<code>ARG-101-009</code>),
+        también de servidores públicos estatales; <b>son casos distintos</b> y no deben fusionarse,
+        pero su coincidencia en la ventana es un dato de patrón que merece seguimiento.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-101-004</code> · Nivel de confianza: <b>🟡 Medio</b> (★★★☆☆) · Fuentes:
+        Institucional (FGR/FGJEM, no localizadas) / Nacional (Infobae) / Regional (Quadratín Edomex,
+        Red Acciones) · Fecha de publicación: <b>2026-08-18</b>; <b>fecha del hecho no fijada</b> ·
+        Consulta: 2026-08-18 13:37 (CDMX). <b>Evento cualitativo en el módulo de armamento</b>:
+        armamento asegurado sin cantidad publicada. Sus <b>4 detenidos sí se contabilizan</b>
+        (<code>ARG-101-ARM-003</code>).
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-101-003">
+    <div class="nota-header"><h3>VIOLENCIA OPERATIVA — ENFRENTAMIENTO EN LA SIERRA DE ZINAPÉCUARO, MICHOACÁN</h3><span class="risk-flag medio">AMARILLO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+        La noche del <b>17 de agosto de 2026</b>, pasadas las <b>21:00 h</b>, se reportaron
+        detonaciones de arma de fuego de alto calibre entre las localidades de <b>San José del
+        Rincón y Taimeo</b>, en la zona serrana de Zinapécuaro, Michoacán, con intercambio de
+        disparos durante <b>aproximadamente una hora</b>. Se movilizaron <b>SEDENA, Guardia Nacional
+        y Guardia Civil</b>. <b>Sin información oficial</b>: al cierre de este corte se desconoce si
+        hubo personas fallecidas o lesionadas, y ninguna autoridad había emitido postura.
+      </div>
+      <div class="apartado"><span class="k">CORROBORACIÓN</span>
+        Regional (Quadratín Michoacán, Respuesta, MiMorelia, La Voz de Michoacán, Red 113): cinco
+        medios coinciden. <b>Sin fuente institucional y sin fuente nacional.</b>
+        <code>Pendiente de corroboración independiente.</code>
+        <b>ADVERTENCIA DE MÉTODO, publicada expresamente</b>: la fecha aparece <b>solo en el cuerpo</b>
+        de las notas ("la noche del lunes 17 de agosto"), <b>no en URL ni en titular</b>. El único
+        refuerzo objetivo es que el 17-ago-2026 <b>efectivamente fue lunes</b> y que cinco medios
+        regionales coinciden. Bajo la regla de esta casa, <b>la fecha no queda fijada</b> y la ficha
+        se publica con esa reserva. <b>Dos notas descartadas</b> por no poder fecharse y describir
+        posiblemente otro hecho: una de Contramuro con 1 muerto, 1 herido, bloqueos y vehículos
+        dañados, y una de Excélsior con quema de vehículos. <b>No se fusionan</b>: existe un
+        enfrentamiento previo en Zinapécuaro documentado en <b>abril de 2026</b>.
+      </div>
+      <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+        Una hora de intercambio de disparos con armamento de alto calibre <b>sugiere</b> una
+        confrontación entre grupos con capacidad sostenida, no un incidente de portación; el
+        despliegue conjunto de tres corporaciones apunta a que la autoridad lo valoró como tal. El
+        dato más significativo es <b>el silencio institucional</b>: transcurridas más de dieciséis
+        horas del hecho, ninguna corporación había publicado saldo, lo que impide clasificar el
+        evento por encima de amarillo <b>aunque no permite descartar que corresponda a rojo</b>. Es
+        el ejemplo más claro del corte de cómo el vacío de publicación <b>degrada la clasificación</b>
+        y no solo la corroboración. <b>Línea a explotar</b>: requerir a la FGE y a la SSP de Michoacán
+        el saldo del hecho; si aparecen víctimas, procede reclasificación en la edición siguiente.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-101-003</code> · Nivel de confianza: <b>🟠 Bajo</b> (★★☆☆☆) · Fuentes: Regional
+        (Quadratín, Respuesta, MiMorelia, La Voz de Michoacán, Red 113) · Fecha del hecho:
+        <b>2026-08-17, no fijada por URL</b> · Consulta: 2026-08-18 13:37 (CDMX).
+        <b>Cero aporte al conteo de armamento</b>: ninguna cifra publicada.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-101-009">
+    <div class="nota-header"><h3>CIERRE DE SEGUIMIENTO — RED DE EXTORSIÓN A VERIFICENTROS, ESTADO DE MÉXICO</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+        <b>Se cierra un seguimiento abierto desde ARGOS 97 —con la cadena iniciada en ARGOS 94— y
+        buscado sin éxito diez veces</b> entre las ediciones 99 y 100.
+        <b>PRECISIÓN DE CRÉDITO</b>: la prisión preventiva y el Juzgado de Control de Chalco
+        <b>ya constaban en <code>ARG-97-004</code></b> con ★★★★☆ y nueve fuentes; y la advertencia de
+        que una vinculación no es sentencia <b>ya la dejó escrita ARGOS 100</b>. Lo que aporta
+        ARGOS 101 es la <b>resolución</b>: la vinculación a proceso, la <b>imputación diferenciada por
+        persona</b> —extorsión agravada para uno, abuso de autoridad para el otro— y la
+        identificación de Carlos Eduardo "N". Publicado el <b>17 y 18 de agosto de 2026</b>: <b>vinculación a
+        proceso</b> de <b>Raúl "N"</b>, por extorsión agravada, y <b>Carlos Eduardo "N"</b>, por
+        abuso de autoridad, exfuncionarios de la Secretaría del Medio Ambiente del Estado de México,
+        ambos recluidos en el penal de Chalco con <b>prisión preventiva</b>. El caso corresponde a la
+        red de cobro a concesionarios de verificentros.
+        <b>Una vinculación a proceso NO es una sentencia</b>: por regla expresa de CLAUDE.md, este
+        hecho <b>no entra al módulo judicial</b> ni suma al conteo nacional de sentencias.
+      </div>
+      <div class="apartado"><span class="k">CORROBORACIÓN</span>
+        Nacional (La Jornada, 18-ago) + regional (La Silla Rota, con fecha en URL
+        <code>lasillarota.com/metropoli/2026/8/17/</code>; Crónica, <code>2026/08/17</code>).
+        <b>Sin boletín de la FGJEM localizado.</b> La cifra citada sobre el tamaño de la red
+        —<b>430 millones de pesos</b> y una cuota mensual de <b>200 mil pesos por verificentro</b>—
+        procede de fuente periodística y <b>no está respaldada por comunicado institucional</b>: se
+        registra como dato citado, no como dato verificado.
+        <b>La fecha del hecho procesal no queda fijada</b> por estas URLs, solo la de publicación.
+      </div>
+      <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+        El valor del cierre es tanto operativo como metodológico. En lo operativo, <b>hay resolución
+        publicada</b> el 17-ago, después de que diez búsquedas dirigidas describieran la audiencia como
+        futura o en curso. <b>La fecha de la audiencia que la produjo no está publicada</b>: la del
+        15-ago procede de ediciones anteriores y <b>no se reverificó</b>, de modo que no puede
+        afirmarse que fuera esa y no una reprogramación.
+        En lo metodológico, <b>valida la casilla</b> <code>SIN RESULTADO INDEXADO EN VENTANA</code>:
+        el caso nunca estuvo inactivo, estaba sin indexar. La imputación diferenciada —extorsión
+        agravada para uno, abuso de autoridad para el otro— <b>sugiere</b> roles distintos dentro de
+        la red, con un operador del cobro y un facilitador desde la función pública; <b>requiere
+        validación</b>. <b>Vacío</b>: no se publica el número de verificentros afectados ni el periodo
+        de la conducta, y el monto de 430 mdp carece de respaldo oficial. <b>Advertencia para
+        ediciones futuras</b>: este caso <b>seguirá sin poder entrar al módulo de sentencias</b>
+        hasta que exista pena impuesta; que se publique una resolución no lo convierte en condena.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-101-009</code> · Cierra <code>ARG-97-004</code>; cadena abierta en <code>ARG-94-003</code> · Nivel de confianza:
+        <b>🟡 Medio</b> (★★★☆☆) · Fuentes: Institucional (FGJEM, no localizada) / Nacional (La
+        Jornada) / Regional (La Silla Rota, Crónica) · Fecha de publicación: <b>2026-08-17/18</b> ·
+        Consulta: 2026-08-18 13:37 (CDMX).
+      </div>
+    </div>
+  </div>
+
+  <div class="section-head">ACCIONES INSTITUCIONALES DE MENOR ESCALA — FICHAS ABREVIADAS</div>
+  <p class="muted-note">
+    Cinco hechos verdes de la ventana documentados en formato corto por volumen y valor de
+    inteligencia menores. <b>Cada uno conserva sus cuatro apartados</b> en el registro de fuentes
+    (<code>argos-2026-08-18-fuentes.md</code>); aquí se publican en forma comprimida sin recortar
+    hecho, corroboración ni trazabilidad.
+  </p>
+
+  <div class="nota" id="ARG-101-005">
+    <div class="nota-header"><h3>CATEO EN LA COLONIA GUERRERO, CUAUHTÉMOC, CIUDAD DE MÉXICO</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+        Cateo de la <b>SSC-CDMX</b> con la <b>FGJ-CDMX</b>, con apoyo de la Guardia Nacional y la
+        SEMAR, en la colonia Guerrero, alcaldía Cuauhtémoc. Detenidos <b>una mujer de 27 años y un
+        hombre de 36</b>. Asegurados <b>1 arma corta</b> y <b>cartuchos útiles en cantidad no
+        publicada</b>. Publicación: 17-ago (URL <code>heraldodemexico.com.mx/nacional/2026/8/17/</code>).
+        <b>Fecha del hecho no fijada.</b>
+      </div>
+      <div class="apartado"><span class="k">CORROBORACIÓN</span>
+        Nacional (El Heraldo de México) + abierta (NotiMX). <b>Sin boletín institucional
+        localizado.</b> <code>Pendiente de corroboración institucional.</code> Confianza Medio.
+      </div>
+      <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+        <b>Es el único evento del corte que aporta una cifra exacta al conteo nacional de
+        armamento</b>: un arma corta. Su relevancia es de método más que criminal: en una ventana de
+        35 horas con once hechos, <b>el total nacional de armamento descansa en un solo dato numérico
+        publicado</b> (ver la lectura del conteo en la pág. 4). Los cartuchos
+        aparecen mencionados <b>sin cantidad</b> y por tanto se marcan <code>s/c</code>, nunca cero.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-101-005</code> / <code>ARG-101-ARM-001</code> · Confianza: <b>🟡 Medio</b>
+        (★★★☆☆) · Fecha de publicación: 2026-08-17 · Consulta: 2026-08-18 13:37 (CDMX).
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-101-007">
+    <div class="nota-header"><h3>CINCO ARMAS Y CUATRO DETENIDOS EN ACÁMBARO, GUANAJUATO</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+        Las <b>Fuerzas de Seguridad Pública del Estado</b> detuvieron a <b>cuatro personas</b> en
+        patrullaje preventivo en la colonia San Isidro, Acámbaro. Asegurados <b>5 armas de fuego</b>,
+        <b>137 dosis</b> de presunta droga y <b>3 motocicletas</b> con alteraciones documentales.
+        Publicación: 17-ago (URLs de La Crónica y AM). <b>Fecha del hecho no fijada.</b>
+      </div>
+      <div class="apartado"><span class="k">CORROBORACIÓN</span>
+        Nacional (La Crónica) + regional (AM, Guanajuato Desconocido). La búsqueda dirigida a
+        <code>boletines.guanajuato.gob.mx</code> <b>no localizó el boletín de este hecho</b>, pese a
+        que el texto de los medios es reproducción de un comunicado: <b>no se sustituye el portal en
+        silencio por la nota</b>, la sustitución queda escrita. Confianza Medio.
+      </div>
+      <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+        <b>La fuente publica "5 armas de fuego" sin decir cuántas son cortas y cuántas largas.</b>
+        Por la taxonomía obligatoria, ARGOS <b>no reparte</b> esa cifra entre categorías: se publica
+        en un renglón propio de <b>armas sin clasificar</b>. Repartirlas —aunque fuera de forma
+        proporcional o conservadora— sería inventar un dato. Es el segundo evento del corte con
+        cantidad publicada y el que más armas aporta, y aun así <b>no puede sumarse a ninguna de las
+        dos categorías principales</b>: la limitación es de la fuente, no del barrido.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-101-007</code> / <code>ARG-101-ARM-002</code> · Confianza: <b>🟡 Medio</b>
+        (★★★☆☆) · Fecha de publicación: 2026-08-17 · Consulta: 2026-08-18 13:37 (CDMX).
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-101-006">
+    <div class="nota-header"><h3>CATEOS SIMULTÁNEOS EN SEIS MUNICIPIOS DE QUERÉTARO</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+        Cateos simultáneos en <b>seis municipios</b> con <b>7 personas detenidas</b> y decomiso de
+        drogas y armas, informados por la <b>Fiscalía General del Estado de Querétaro</b>.
+        <b>Ninguna cantidad de armamento publicada.</b> Publicación: 18-ago (URL
+        <code>infobae.com/mexico/2026/08/18/</code>). <b>Fecha del hecho no fijada.</b>
+      </div>
+      <div class="apartado"><span class="k">CORROBORACIÓN</span>
+        Nacional (Infobae). <b>Fuente única</b>; el boletín de la FGE Querétaro no se localizó para
+        este hecho. <code>Pendiente de corroboración independiente.</code> Confianza Medio.
+        <b>Señuelo descartado</b>: una nota sobre "5 cateos, 5 detenidos y 110 dosis" en el marco de
+        la estrategia <i>Sinergia por Querétaro</i> <b>no pudo fecharse</b> y es un hecho distinto;
+        no se fusiona con este.
+      </div>
+      <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+        La simultaneidad en seis municipios <b>sugiere</b> una carpeta única con objetivos
+        distribuidos, no operativos independientes; <b>requiere validación</b>. Hallazgo de método
+        aprovechable para próximos cortes: <code>fiscaliageneralqro.gob.mx</code> resultó
+        <b>el portal mejor indexado de la región Centro</b>, con fecha en la ruta
+        (<code>/portal/AAAA/MM/DD/</code>) y con categoría propia de sentencias — es la vía más barata
+        de revisión judicial de esa región y así queda anotado.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-101-006</code> / <code>ARG-101-ARM-004</code> · Confianza: <b>🟠 Bajo</b>
+        (★★☆☆☆, fuente única) · Fecha de publicación: 2026-08-18 · Consulta: 2026-08-18 13:37 (CDMX).
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-101-010">
+    <div class="nota-header"><h3>CINCO PRESUNTOS INTEGRANTES DE "LOS DELTAS" VINCULADOS A PROCESO, ZAPOPAN, JALISCO</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+        La FGR <b>vinculó a proceso</b> a <b>cinco presuntos integrantes de "Los Deltas"</b>, célula
+        atribuida al CJNG, detenidos en flagrancia en <b>dos cateos en Zapopan</b>, por <b>acopio de
+        armas de fuego y posesión de cartuchos de uso exclusivo</b>. Continúan en prisión preventiva.
+        <b>Ninguna cifra de armamento publicada.</b> <b>No es sentencia</b>: excluido del módulo
+        judicial. Publicación: 17-ago. <b>Fecha del hecho no publicada.</b>
+      </div>
+      <div class="apartado"><span class="k">CORROBORACIÓN</span>
+        Nacional (Infobae, en formato de minuto a minuto). <b>Fuente única</b> y de tipo agregador,
+        sin boletín de la FGR localizado. <code>Pendiente de corroboración independiente.</code>
+        Confianza <b>Bajo</b>.
+      </div>
+      <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+        El delito imputado —<b>acopio</b>, no portación— es el dato con valor: implica volumen
+        suficiente para que la autoridad lo califique así, y ninguna fuente publica cuántas armas.
+        <b>Pero la razón por la que este evento NO entra al módulo de armamento no es la falta de
+        cantidad</b> —los eventos cualitativos de Texcoco y Querétaro sí entran sin ella—: es que
+        <b>el aseguramiento no está fechado</b>. Lo publicado dentro de la ventana es la
+        <b>vinculación a proceso</b>; los dos cateos que produjeron el acopio pueden ser muy
+        anteriores, y contarlos sería atribuir al corte un aseguramiento de fecha desconocida.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-101-010</code> · Confianza: <b>🟠 Bajo</b> (★★☆☆☆) · Fecha de publicación:
+        2026-08-17 · Consulta: 2026-08-18 13:37 (CDMX). Fuera del conteo de armamento y del módulo
+        judicial.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-101-008-ficha">
+    <div class="nota-header"><h3>TRES DETENIDOS POR ATAQUE ARMADO CON UN FALLECIDO, TIJUANA, BAJA CALIFORNIA</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+        Detención de <b>tres personas</b> —Fausto "N", Ramón "N" y Kevin "N"— por la Policía Municipal
+        en la Zona Centro de Tijuana, por un <b>ataque armado que dejó un fallecido</b>.
+        <b>Sin aseguramiento de armas publicado.</b> Publicación: 17-ago
+        (<code>elimparcial.com/tij/policiaca/2026/08/17/</code>).
+      </div>
+      <div class="apartado"><span class="k">CORROBORACIÓN</span>
+        Regional (El Imparcial). <b>Fuente única</b>, sin boletín de la FGE ni de la SSPM.
+        <code>Pendiente de corroboración independiente.</code> Confianza ★★☆☆☆.
+        <b>Fecha del hecho ambigua</b>: el cuerpo dice "el lunes" y la publicación es del mismo lunes
+        17-ago, de modo que <b>no puede fijarse si el ataque ocurrió dentro o antes de la ventana</b>.
+      </div>
+      <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+        La ficha se publica en <b>verde</b> porque el hecho reportado en el corte es la
+        <b>detención</b>, conforme a la regla operativa del semáforo. <b>Pero el delito de origen es un
+        homicidio</b>, y la regla del verde retroactivo ampara el delito de un <b>corte anterior</b>,
+        no el de la misma ventana. Mientras la fecha del ataque no se fije, <b>este evento es la
+        reserva más seria contra la afirmación de que el corte no tuvo hechos rojos</b>, y así se
+        declara en la valoración de la pág. 6. <b>Línea a explotar</b>: fijar la fecha y hora del
+        ataque con la FGE de Baja California.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-101-008</code> · Confianza: <b>🟠 Bajo</b> (★★☆☆☆) · Fuente: Regional (El Imparcial) ·
+        Publicación: 2026-08-17; <b>fecha del hecho no fijada</b> · Consulta: 2026-08-18 13:37 (CDMX).
+        Fuera del conteo de armamento: sin aseguramiento publicado.
+      </div>
+    </div>
+  </div>
+
+  <div class="section-head">SEGUIMIENTOS QUE NO CIERRAN</div>
+  <div class="table-wrap">
+  <table class="exec">
+    <thead><tr><th>Caso</th><th>Estado tras este corte</th></tr></thead>
+    <tbody>
+      <tr><td><b>Suchiapa, Chiapas — Bulmaro "N"</b></td><td><b>Contradicción de fecha NO arbitrada.</b> Búsquedas dirigidas a <code>ssp.chiapas.gob.mx</code> y <code>fge.chiapas.gob.mx</code> sin localizar boletín del hecho. El Heraldo fecha en URL 15-ago; Infobae, 16-ago. <b>En ningún escenario cae en la ventana de ARGOS 101</b>; sigue siendo candidato a omisión de ARGOS 99. Ver pág. 6</td></tr>
+      <tr><td><b>Veracruz — 9 condenatorias del agregado del 13-ago</b></td><td><b>Cuarta edición sin desglose.</b> 14 búsquedas dirigidas, cero desglosadas, listado nominal de las 53 resoluciones no localizado. Dos candidatos descartados. Ver pág. 5</td></tr>
+      <tr><td><b>Michoacán — Gabriela "N"</b> (ARGOS 92)</td><td>La audiencia de <b>individualización de sanción sigue sin celebrarse</b>; las fuentes la describen como futura. <b>Sin pena impuesta no hay sentencia que contar.</b> <code>SIN RESULTADO INDEXADO EN VENTANA</code></td></tr>
+      <tr><td><b>La Piedad, Michoacán</b> (<code>ARG-98-002</code>)</td><td><b>AVANCE SUSTANTIVO</b>: se identificó el origen del extremo "4 abatidos" — es un <b>balance estatal de nueve regiones del 22-feb-2026</b>, no un conteo de La Piedad. La contradicción <b>deja de estar simétrica</b>: el hecho de agosto se sostiene en 3 muertos + 1 adolescente herido. No se declara cerrada sin boletín</td></tr>
+      <tr><td><b>Cuautla, Morelos</b> (<code>ARG-99-004</code>)</td><td>Contradicción abierta pero <b>desequilibrada hacia 2 lesionados</b>: Diario de Morelos aporta una <b>tercera fuente coincidente con el extremo de 2</b> —no un tercer extremo—, que ARGOS 100 ya sostenía con la propia Fiscalía de Morelos, fuente institucional más fuerte. El desequilibrio no es nuevo; lo nuevo es una fuente adicional. Sin boletín de la FGE Morelos, no se arbitra</td></tr>
+      <tr><td><b>"Operación Sable", Mazatlán</b> (<code>ARG-97-ARM-003</code>)</td><td><b>Hipótesis de arbitraje identificada, no integrada</b>: el reportaje describe <b>dos subeventos</b> —1 cargador y 15 cartuchos en Real del Valle; 8 cargadores y 40 cartuchos en revisión posterior—, cuya suma daría los 9 y 55 en disputa. <b>Esa suma sería cálculo propio de ARGOS</b> y ninguna fuente la presenta agregada: no se integra. <b>Crédito</b>: Real del Valle y los 3 detenidos los aportó ARGOS 100; ARGOS 101 aporta la descomposición en subeventos</td></tr>
+      <tr><td><b>Zanatepec, Oaxaca</b> (<code>ARG-98-001</code>)</td><td><b>Cuarto corte consecutivo sin detenidos.</b> La FGEO mantiene que los trabajos periciales avanzan; sin móvil público</td></tr>
+      <tr><td><b>Ruffo Appel / Ingemar</b> (<code>ARG-98-SEG-001</code>)</td><td><b>AVANCE, fuera de ventana</b>: lo publicado no es la resolución de fondo sino una <b>suspensión provisional</b> que frena la apertura a juicio oral de Ricardo Thompson Navarro (amparo promovido el 11-ago). <b>No es sentencia</b> y no entra al módulo judicial. El amparo de Guadalupe Hernández Hinojosa sigue sin localizarse</td></tr>
+      <tr><td><b>Privada Amberes, Ciudad Juárez</b></td><td><b>AVANCE: deja de ser fuente única y la fecha se acota.</b> Dos medios regionales independientes con publicación fijada el 14-ago sitúan el ataque "el jueves por la noche" = <b>13-ago</b>. Sin boletín de FGE Chihuahua ni SSPM. No fusionar con "ejecutan a dos abogados en su despacho", que es hecho distinto</td></tr>
+      <tr><td><b>Culiacán</b> (<code>ARG-99-001</code>)</td><td><b>Sin avance.</b> Hora y ubicación siguen sin conciliar; sin detenidos. <code>SIN RESULTADO INDEXADO EN VENTANA</code></td></tr>
+      <tr><td><b>La Paz, BCS</b> — abuso sexual (11-ago)</td><td><b>Tercera edición sin avance.</b> <code>Pendiente de corroboración independiente</code></td></tr>
+      <tr><td><b>Pinotepa Nacional, Oaxaca</b> (<code>ARG-100-004</code>)</td><td><b>Sigue siendo evento cualitativo</b>: la cantidad de narcótico <b>no se publicó</b> y las fuentes conservan "diversas dosis". No convertible en línea cuantificable</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- =========================================================
+     PÁGINA 4 — CONTEO NACIONAL DE ARMAMENTO
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:22px;"><span class="w">ARGOS</span><span class="n">102</span></div></div>
+    <div class="titles"><h2 style="font-size:14px;">CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS</h2></div>
+    <div class="corte">PÁG. 4 / 6</div>
+  </header>
+
+  <p class="muted-note">
+    Periodo: <b>2026-08-17 02:47 → 2026-08-18 13:37 CDMX</b>. Solo se suman cantidades
+    <b>expresamente publicadas</b> por la autoridad y correspondientes a hechos de la ventana.
+    <b>Cinco eventos del corte incluyeron aseguramiento de armamento; solo dos publicaron
+    cantidad.</b> Cartuchos y cargadores <b>nunca</b> se suman entre sí. <b>Los agregados de esta página
+    son conteos propios de ARGOS y van marcados como tales</b>: ninguna autoridad publicó el total de
+    17 detenidos —es la suma de 2+4+4+7—, ni el de entidades, eventos con cifra o eventos
+    cualitativos. Las cantidades por evento sí son las publicadas por la fuente.
+  </p>
+
+  <div class="section-head">BLOQUE 1 — TOTAL NACIONAL DEL CORTE (VENTANA ESTRICTA)</div>
+  <div class="stat-grid">
+    <div class="stat-tile"><div class="icon">🔫</div><div class="lbl">ARMAS CORTAS</div><div class="val">1</div></div>
+    <div class="stat-tile"><div class="icon">🎯</div><div class="lbl">ARMAS LARGAS</div><div class="val">0</div></div>
+    <div class="stat-tile"><div class="icon">❓</div><div class="lbl">ARMAS SIN CLASIFICAR</div><div class="val">5</div></div>
+    <div class="stat-tile"><div class="icon">🧨</div><div class="lbl">CARTUCHOS</div><div class="val">s/c</div></div>
+    <div class="stat-tile"><div class="icon">📦</div><div class="lbl">CARGADORES</div><div class="val">s/c</div></div>
+    <div class="stat-tile"><div class="icon">💣</div><div class="lbl">GRANADAS</div><div class="val">s/c</div></div>
+    <div class="stat-tile"><div class="icon">⚠️</div><div class="lbl">AEI</div><div class="val">0</div></div>
+    <div class="stat-tile"><div class="icon">🧪</div><div class="lbl">EXPLOSIVOS</div><div class="val">0</div></div>
+    <div class="stat-tile"><div class="icon">🚀</div><div class="lbl">ARMAMENTO ESPECIAL</div><div class="val">0</div></div>
+    <div class="stat-tile"><div class="icon">🗺️</div><div class="lbl">ESTADOS CON ASEGURAMIENTOS</div><div class="val">5</div><div class="lbl" style="opacity:.65;">conteo ARGOS</div></div>
+    <div class="stat-tile"><div class="icon">👤</div><div class="lbl">PERSONAS DETENIDAS</div><div class="val">17</div><div class="lbl" style="opacity:.65;">suma ARGOS 2+4+4+7</div></div>
+    <div class="stat-tile"><div class="icon">📄</div><div class="lbl">EVENTOS CUALITATIVOS</div><div class="val">3</div><div class="lbl" style="opacity:.65;">conteo ARGOS</div></div>
+  </div>
+  <p class="muted-note">
+    <b>Los cuatro símbolos de esta página, y no son intercambiables.</b> <code>s/c</code> = la categoría
+    <b>se mencionó sin cantidad</b> (es el caso de las granadas y de los cartuchos de Colima).
+    <code>—</code> = <b>la fuente no menciona la categoría</b> en ese evento; no se infiere nada.
+    <code>imprecisa</code> = hay una expresión de cantidad pero no una cantidad ("más de 2,500"), y
+    <b>por regla no se integra</b>. <code>0</code> en el total nacional = <b>ningún evento del corte
+    registró esa categoría</b>. Lo que nunca se hace es sustituir una ausencia de publicación por un
+    cero de la autoridad: sería inventar un dato.
+    <b>El renglón de granadas es el caso más grave de esta edición</b>: en Colima
+    (<code>ARG-101-002</code>) <b>la presencia de granadas está confirmada por cinco fuentes</b>,
+    pero <b>ninguna publica cuántas</b>. El conteo nacional de granadas del corte es por tanto
+    <code>s/c</code> con presencia confirmada — <b>no cero</b>, y tampoco un número.
+    <b>Los "más de 2,500 cartuchos" de Colima son cifra imprecisa</b> y por regla no se integran:
+    "más de" no es una cantidad.
+  </p>
+  <p class="muted-note">
+    <b>Nota sobre el renglón "armas sin clasificar"</b>, que esta edición estrena: en Acámbaro,
+    Guanajuato (<code>ARG-101-007</code>) la fuente publica <b>"5 armas de fuego"</b> sin decir
+    cuántas son cortas y cuántas largas. La taxonomía obligatoria de CLAUDE.md no admite mezclar
+    categorías, y repartir esa cifra —aunque fuera de forma conservadora— sería inventar el reparto.
+    Se abre por tanto un renglón propio que <b>no suma ni a cortas ni a largas</b>. Es la cifra de
+    armamento más alta del corte y, aun así, <b>no es asignable</b>.
+    <b>CAMBIO DE CRITERIO, declarado</b>: ARGOS 100 enfrentó el caso equivalente
+    (<code>ARG-100-005</code>, un arma sin clasificar en Tijuana) y lo resolvió <b>excluyéndolo del
+    total</b>. ARGOS 101 lo hace visible en un renglón propio en vez de descartarlo. <b>Las series de
+    armamento anteriores y posteriores a este cambio no son directamente comparables</b>, y así debe
+    citarse.
+  </p>
+
+  <div class="section-head">BLOQUE 2 — TABLA OBLIGATORIA DE EVENTOS DE LA VENTANA</div>
+  <div class="table-wrap">
+  <table class="exec wide">
+    <thead>
+      <tr><th>ARG-ID</th><th>Entidad</th><th>Municipio</th><th>Fecha hecho</th><th>Cortas</th><th>Largas</th><th>S/clasif.</th><th>Cartuchos</th><th>Cargadores</th><th>Granadas</th><th>AEI</th><th>Expl.</th><th>Detenidos</th><th>Corporación</th><th>Fuente primaria</th><th>Corroboración</th><th>Confianza</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>ARG-101-ARM-001</td><td>Ciudad de México</td><td>Cuauhtémoc</td><td>2026-08-17 (pub.)</td><td>1</td><td>—</td><td>—</td><td>s/c</td><td>—</td><td>—</td><td>—</td><td>—</td><td>2</td><td>SSC-CDMX / FGJ-CDMX</td><td>El Heraldo de México</td><td>NotiMX</td><td>Medio</td></tr>
+      <tr><td>ARG-101-ARM-002</td><td>Guanajuato</td><td>Acámbaro</td><td>2026-08-17 (pub.)</td><td>—</td><td>—</td><td><b>5</b></td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>4</td><td>FSPE</td><td>La Crónica</td><td>AM, Gto. Desconocido</td><td>Medio</td></tr>
+      <tr><td>ARG-101-ARM-003</td><td>Estado de México</td><td>Texcoco / Ecatepec</td><td>2026-08-18 (pub.)</td><td>s/c</td><td>s/c</td><td>s/c</td><td>s/c</td><td>—</td><td>—</td><td>—</td><td>—</td><td>4</td><td>FEMDO / AIC (FGR)</td><td>Infobae</td><td>Quadratín Edomex</td><td>Medio</td></tr>
+      <tr><td>ARG-101-ARM-004</td><td>Querétaro</td><td>Seis municipios</td><td>2026-08-18 (pub.)</td><td>s/c</td><td>s/c</td><td>s/c</td><td>s/c</td><td>—</td><td>—</td><td>—</td><td>—</td><td>7</td><td>FGE Querétaro</td><td>Infobae</td><td>—</td><td>Medio</td></tr>
+      <tr><td>ARG-101-ARM-005</td><td>Colima</td><td>Colima</td><td>2026-08-18</td><td>s/c</td><td>s/c</td><td>s/c</td><td><b>imprecisa</b></td><td>s/c</td><td><b>s/c*</b></td><td>—</td><td>—</td><td>no concil.</td><td>SSPC Colima / SEMAR / FGE</td><td>Infobae</td><td>Puente Libre, Milenio</td><td>Medio</td></tr>
+      <tr><td colspan="17"><b>TOTAL NACIONAL DEL CORTE</b> — cortas <b>1</b> · largas <b>0</b> · sin clasificar <b>5</b> · cartuchos <b>s/c</b> · cargadores <b>s/c</b> · granadas <b>s/c con presencia confirmada</b> · AEI <b>0</b> · explosivos <b>0</b> · armamento especial <b>0</b> · detenidos <b>17</b> · entidades con aseguramiento <b>5</b> · eventos con cifra <b>2</b> · eventos cualitativos <b>3</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="muted-note">
+    <b>(*)</b> Granadas en Colima: <b>presencia confirmada por cinco fuentes, cantidad no publicada
+    por ninguna.</b> No se infiere ni se sustituye por cero.
+    <b>Sobre los detenidos</b>: se contabilizan las 17 personas detenidas en los cuatro eventos con
+    aseguramiento de armamento y cifra de detenidos expresamente publicada. <b>Colima no aporta
+    detenidos al total</b> porque la cifra está contradicha entre fuentes (<b>dos sin cifra publicada</b> frente a <b>1</b> de El Occidental). Los
+    eventos cualitativos <b>sí aportan detenidos</b> aunque no aporten armamento: la regla del módulo
+    exige que el evento incluya aseguramiento de armas, no que se haya publicado su cantidad.
+  </p>
+
+  <div class="section-head">BLOQUE 3 — MAPA NACIONAL DE ASEGURAMIENTOS</div>
+  <div class="panel">
+    <div class="panel-title"><span>ASEGURAMIENTOS DEL CORTE POR ENTIDAD</span><span>SEMÁFORO ARGOS</span></div>
+    <div class="map-box" id="argos-map-arm"></div>
+    <div class="map-caption">
+      Verde = aseguramiento sin enfrentamiento · Amarillo = aseguramiento derivado de enfrentamiento
+      o agresión · Gris = sin aseguramiento en el corte. <b>La sola presencia de armas no vuelve rojo
+      a un estado</b>: el color lo define el tipo de evento asociado, no el armamento en sí.
+    </div>
+  </div>
+
+  <div class="section-head">BLOQUE 4 — EVENTOS ANTERIORES PUBLICADOS DURANTE EL CORTE</div>
+  <p class="muted-note">
+    Aseguramientos <b>publicados dentro de la ventana</b> cuyo <b>hecho es anterior</b>. Conforme a
+    CLAUDE.md se marcan <code>Evento anterior publicado durante el corte</code> y
+    <b>no se mezclan con los hechos de la ventana ni suman a su total</b>. Se documentan con su
+    desglose para que las ediciones futuras no los recojan como nuevos y para dejar constancia de
+    que el corte los vio.
+  </p>
+  <div class="table-wrap">
+  <table class="exec wide">
+    <thead><tr><th>Entidad</th><th>Municipio</th><th>Fecha del hecho</th><th>Publicación</th><th>Desglose publicado</th><th>Detenidos</th><th>Estatus</th></tr></thead>
+    <tbody>
+      <tr><td>Durango</td><td>Mapimí</td><td>15-ago (solo en cuerpo, <b>no fijada</b>)</td><td>17-ago (4 URLs)</td><td><b>8 largas · 4 cortas · 87 cargadores · 4,715 cartuchos</b> · 6.665 kg de marihuana · 1 vehículo</td><td>4</td><td>Fuera de la ventana. <b>Es el mayor desglose de armamento visto en el corte</b> y no suma</td></tr>
+      <tr><td>Campeche</td><td>Hopelchén</td><td><b>14-ago</b> (dos medios nacionales)</td><td>17-ago (2 URLs)</td><td><b>1 larga · 1 corta · 16 cartuchos · 1 cargador</b> · dosis de droga</td><td>7</td><td>Fuera de la ventana. ⚠️ <code>POSIBLE DUPLICIDAD</code> con el boletín federal del 14-16 ago — no integrar sin validación</td></tr>
+      <tr><td>Veracruz</td><td>23 municipios</td><td>10–16 ago</td><td>17-ago</td><td><b>Ninguno</b>: "armas de fuego de diferentes calibres, cargadores, cartuchos" <b>sin cantidades</b></td><td>29</td><td>Fuera de la ventana y cualitativo. 38 cateos, FGE con SEDENA, SEMAR, GN y SSP</td></tr>
+      <tr><td>Guerrero</td><td>Estatal</td><td>10–16 ago</td><td>17-ago (<b>no fijada</b>)</td><td><b>2 largas · 6 cortas · 13 cargadores · 322 cartuchos</b> · 105 armas blancas</td><td>34</td><td>Agregado semanal. ⚠️ Una segunda fuente da 36 detenidos y 17 armas: <code>DISCREPANCIA — NO INTEGRAR</code></td></tr>
+      <tr><td>Sonora</td><td>Estatal</td><td>10–16 ago</td><td>17-ago</td><td><b>18 armas sin desglose</b> · 1,061 cartuchos</td><td>116</td><td>Agregado semanal de la Mesa Estatal. Periodo anterior: no integrable</td></tr>
+      <tr><td>Baja California</td><td>Tijuana</td><td>10–16 ago</td><td>17-ago</td><td><b>11 armas (7 cortas / 4 largas)</b> · "más de cien cartuchos" (<b>imprecisa</b>)</td><td>227</td><td>Agregado municipal. ⚠️ <b>Contradicción</b>: una cuarta fuente titula <b>213</b> detenidos frente a 227</td></tr>
+      <tr><td>Nuevo León</td><td>Pesquería</td><td>14–16 ago</td><td>Boletín federal</td><td>62,000 L de hidrocarburo · 10 fracktanks · 9 tractocamiones · 9 autotanques</td><td>0 publicados</td><td><b>Posible omisión de ARGOS 100.</b> Sin armamento: no es línea de este módulo</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="section-head">BLOQUE 5 — INDICADOR DE COBERTURA Y EXPLOTACIÓN ARGOS</div>
+  <div class="table-wrap">
+  <table class="exec">
+    <thead><tr><th>Indicador</th><th>Resultado</th></tr></thead>
+    <tbody>
+      <tr><td>Entidades revisadas</td><td><b>32 de 32</b> — ninguna región cerró con entidades <code>NO REVISADA</code></td></tr>
+      <tr><td>Portales leídos por acceso directo</td><td><b>0</b> de ~128 objetivo — <b>duodécima edición consecutiva</b> bajo bloqueo total de egreso</td></tr>
+      <tr><td>Portales consultados por búsqueda dirigida</td><td><b>49</b>, sumando las seis regiones (8 · 10 · 5 · 10 · 10 · 6) — <i>conteo propio de ARGOS</i></td></tr>
+      <tr><td>Portales que publicaron material localizable en la ventana</td><td><b>2</b> — <code>fiscalia.durango.gob.mx</code> y <code>boletines.guanajuato.gob.mx</code></td></tr>
+      <tr><td>Portales <code>SIN RESULTADO INDEXADO EN VENTANA</code></td><td><b>47</b> — <i>conteo propio de ARGOS</i>: 49 consultados menos los 2 que publicaron</td></tr>
+      <tr><td>Portales con <code>SIN ACTUALIZACIÓN CONSTATADA</code></td><td><b>0</b> — imposible de reclamar bajo bloqueo: no puede verse el listado de boletines de ningún portal</td></tr>
+      <tr><td>Regiones que aportaron cero hechos a la ventana</td><td><b>3</b> — Noreste, Golfo y Sureste, las tres con todas sus entidades consultadas</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="muted-note">
+    <b>EXPLOTACIÓN ARGOS — lectura del conteo.</b> El total nacional de armamento de esta ventana
+    —<b>una sola arma corta con cifra exacta</b>— <b>no mide la actividad del país, mide la opacidad
+    del canal</b>. La prueba está dentro de esta misma página: los eventos <i>fuera</i> de la ventana
+    publicados durante el corte suman, entre Mapimí, Hopelchén y los agregados estatales, decenas de
+    armas y miles de cartuchos con desglose. La diferencia no es que hubiera más armamento la semana
+    pasada: es que <b>los hechos recientes llegan sin cifras y los anteriores llegan ya
+    consolidados</b>. Un conteo diario bajo bloqueo mide, sobre todo, el retraso de la publicación.
+    <b>Concentración geográfica</b>: cinco entidades con aseguramiento —Ciudad de México, Guanajuato,
+    Estado de México, Querétaro y Colima— dibujan un corte de <b>centro del país</b>, sin presencia
+    del corredor noroeste que domina las series históricas; el dato <b>es consistente con</b> una
+    ventana corta y con el vacío de indexación de Sinaloa, y <b>no debe leerse</b> como
+    desplazamiento territorial. <b>El indicador de mayor peso es el de granadas</b>: por segunda vez
+    en pocas ediciones aparece material explosivo o de fragmentación en un inmueble urbano
+    —Colima ahora, los 9 AEI de Michoacán en el boletín federal del 14-16 ago— <b>sin que ninguno
+    pueda contabilizarse</b>, el primero por falta de cifra y el segundo por estar fuera de ventana y
+    no haberse leído el documento. <b>Requiere validación</b>: si esa tendencia es real, el conteo
+    nacional la está perdiendo entera. <b>Línea a explotar</b>: solicitar a la SSPC de Colima el
+    desglose por tipo de granada, y leer el boletín federal en cuanto el egreso lo permita.
+  </p>
+</section>
+
+<!-- =========================================================
+     PÁGINA 5 — RASTREO NACIONAL DE SENTENCIAS
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:22px;"><span class="w">ARGOS</span><span class="n">102</span></div></div>
+    <div class="titles"><h2 style="font-size:14px;">RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES</h2></div>
+    <div class="corte">PÁG. 5 / 6</div>
+  </header>
+
+  <p class="muted-note">
+    Periodo: <b>2026-08-17 02:47 → 2026-08-18 13:37 CDMX</b>. Este módulo mide <b>resultados
+    judiciales reales</b>, no actividad ministerial. <b>No cuentan como sentencia</b> las
+    detenciones, órdenes de aprehensión, vinculaciones a proceso, prisión preventiva, cateos ni
+    judicializaciones. En esta ventana <b>tres hechos relevantes fueron descartados por esa regla</b>
+    —los verificentros del Edomex, "Los Deltas" en Zapopan y el amparo de Ricardo Thompson—, todos
+    ellos resoluciones publicadas que <b>no son condenas</b>.
+  </p>
+
+  <div class="section-head">BLOQUE 1 — CONTEO NACIONAL DEL CORTE</div>
+  <div class="stat-grid">
+    <div class="stat-tile"><div class="icon">⚖️</div><div class="lbl">SENTENCIAS CONDENATORIAS</div><div class="val">1</div></div>
+    <div class="stat-tile"><div class="icon">🚫</div><div class="lbl">ABSOLUTORIAS</div><div class="val">0</div></div>
+    <div class="stat-tile"><div class="icon">📑</div><div class="lbl">PROC. ABREVIADOS</div><div class="val">0</div></div>
+    <div class="stat-tile"><div class="icon">👥</div><div class="lbl">PERSONAS SENTENCIADAS</div><div class="val">1</div><div class="lbl" style="opacity:.65;">inferido del singular</div></div>
+    <div class="stat-tile"><div class="icon">⏳</div><div class="lbl">AÑOS ACUMULADOS</div><div class="val">n/s</div></div>
+    <div class="stat-tile"><div class="icon">🔒</div><div class="lbl">SENTENCIAS FIRMES</div><div class="val">0</div></div>
+    <div class="stat-tile"><div class="icon">💰</div><div class="lbl">MULTAS</div><div class="val">s/c</div></div>
+    <div class="stat-tile"><div class="icon">🏛️</div><div class="lbl">FISCALÍAS REVISADAS</div><div class="val">32/32</div></div>
+    <div class="stat-tile"><div class="icon">✅</div><div class="lbl">FISCALÍAS CON SENTENCIA EN VENTANA</div><div class="val">1</div></div>
+  </div>
+  <p class="muted-note">
+    <b><code>n/s</code> = no sumable.</b> La única condenatoria del corte se publica como
+    <b>"más de 26 años"</b>: no es una cantidad exacta y, conforme a la regla de años acumulados de
+    CLAUDE.md, <b>no se suma</b>. Publicar "26" sería redondear a la baja un dato que la fuente no
+    da, y publicar "26 años 3 meses" —cifra que aparece en el cuerpo parafraseado del buscador—
+    sería tomar por dato lo que la fuente institucional no puso en su titular.
+    <b>Sentencias firmes: 0</b>, porque <b>ninguna autoridad informó firmeza</b> y la firmeza nunca
+    se asume. <b>El número de personas sentenciadas es una inferencia</b>, y se publica como tal: la
+    autoridad no lo da, se deduce del <b>singular</b> de "responsable" en el texto institucional.
+  </p>
+
+  <div class="section-head">BLOQUE 2 — LA CONDENATORIA DEL CORTE</div>
+  <div class="nota" id="ARG-101-SEN-001">
+    <div class="nota-header"><h3>DURANGO — MÁS DE 26 AÑOS POR HOMICIDIO CALIFICADO Y AGRAVADO POR PARENTESCO, REGIÓN LAGUNA</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO PROCESAL CONFIRMADO</span>
+        La <b>Fiscalía General del Estado de Durango</b> publicó el <b>17 de agosto de 2026</b> que
+        obtuvo <b>sentencia condenatoria por más de 26 años de prisión</b> contra el responsable de
+        <b>homicidio calificado y agravado por parentesco</b> cometido en la <b>Región Laguna</b>.
+        El término <b>"sentencia condenatoria"</b> y la pena <b>"más de 26 años"</b> aparecen
+        <b>literalmente en la ruta de la URL del dominio institucional</b>. <b>El titular y el cuerpo
+        del boletín no se leyeron</b>: la URL se conoce por índice de buscador y no llegó a resolverse.
+        <b>Fecha de la sentencia: no presente en la ruta de la URL</b> — lo fijado es la fecha de
+        publicación. <b>Firmeza: NO INFORMADA</b>, no se asume.
+        <b>No se publica el nombre del sentenciado</b>: el que circula procede del cuerpo
+        parafraseado del buscador y no del texto institucional.
+      </div>
+      <div class="apartado"><span class="k">POR QUÉ SÍ SE INTEGRA — DECISIÓN DE MÉTODO</span>
+        ARGOS 100 dejó escrito que, bajo bloqueo de egreso, la regla del <b>término literal</b> era
+        inaplicable —los resúmenes del buscador llegan parafraseados— y que toda sentencia quedaría,
+        como máximo, en <code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code>, con el conteo nacional
+        estructuralmente en cero. <b>Este caso rompe ese techo por una razón concreta</b>: el término
+        condenatorio y la pena <b>no vienen del resumen</b>, vienen <b>del slug de la URL del propio
+        dominio institucional</b> (<code>fiscalia.durango.gob.mx</code> → <code>/2026/08/17/</code> →
+        <code>fged-obtiene-sentencia-condenatoria-</code><code>por-mas-de-26-anos-…</code>),
+        que es <b>texto primario de la autoridad</b> y no una paráfrasis de tercero, y que además
+        lleva <b>la fecha en la propia ruta</b>. La objeción que sostenía el cero —"lo que leemos es
+        el resumidor"— <b>no aplica a la ruta</b>. <b>Regla que hace falta enunciar, porque esta misma
+        edición descarta un slug erróneo</b> (el de La Crónica, que dice "16 toneladas" contra su propio
+        titular): <b>una ruta sostiene una afirmación cuando pertenece al dominio del emisor del hecho,
+        nombra el acto y la fecha, y ninguna fuente la contradice</b>; la ruta de un tercero que
+        contradice a su propio titular no sostiene nada.
+        Conforme al umbral asimétrico de CLAUDE.md, esto es <b>fuente oficial única con datos
+        suficientes = confianza Medio</b>, y Medio sí integra.
+        <b>Lo que esta decisión NO afirma</b>: no afirma que el boletín se haya leído —no se leyó—,
+        ni que la sentencia sea firme, ni cuál es la pena exacta. Lo observado es <b>una entrada de
+        índice, no un documento</b>: la URL no se resolvió, de modo que "texto primario de la autoridad"
+        describe la <b>autoría</b> de la cadena, no la <b>observación</b> que ARGOS hizo de ella. Queda expresamente sometida a
+        revisión del control editorial y de la edición siguiente.
+      </div>
+      <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+        El valor no es el volumen —una sentencia— sino que <b>rompe dos ediciones consecutivas en cero</b> (ARGOS 99 y 100; la última condenatoria integrada fue de ARGOS 98)
+        y demuestra que el cero anterior era, al menos en parte, <b>un artefacto del método de
+        lectura</b> y no una ausencia de resultados judiciales. <b>Y en parte, algo peor: una omisión
+        de registro propio.</b> El control editorial de este corte localizó en el archivo la sentencia
+        <b>firme</b> de Coronango, Puebla —26 años 7 meses 15 días a dos personas, con boletín
+        institucional y el término condenatorio en el slug—, que <b>ARGOS 98 declaró vacío confirmado
+        y que ninguna edición integró ni trasladó a los pendientes</b>. El caso que mejor sostiene el
+        criterio que hoy se estrena llevaba tres ediciones perdido en el propio expediente. <b>Línea a explotar</b>: los portales
+        con <b>fecha en la ruta</b> —<code>fiscalia.durango.gob.mx/AAAA/MM/DD/</code>,
+        <code>boletines.guanajuato.gob.mx/AAAA/MM/DD/</code>,
+        <code>fiscaliageneralqro.gob.mx/portal/AAAA/MM/DD/</code>— son <b>fechables sin leerlos</b> y
+        deben encabezar el triaje judicial de las próximas ediciones. Los que usan identificadores
+        opacos —el GUID de la FGE Chiapas, el <code>/Boletin/Index/&lt;id&gt;</code> de Tabasco— son
+        estructuralmente inservibles bajo bloqueo y deben tratarse como tales.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-101-SEN-001</code> · Autoridad: FGE Durango · Entidad: Durango · Región Laguna ·
+        Delito: homicidio calificado y agravado por parentesco · Pena: <b>más de 26 años</b>
+        (<code>no sumable al acumulado</code>) · Multa, reparación del daño y decomiso:
+        <b>no publicados</b> · Firmeza: <b>no informada</b> · Fuente oficial:
+        <code>fiscalia.durango.gob.mx</code>, publicación <b>2026-08-17</b>, fecha en la ruta ·
+        Corroboración independiente: <b>ninguna localizada</b> · Nivel de confianza: <b>Medio</b> ·
+        Consulta: 2026-08-18 13:37 (CDMX).
+      </div>
+    </div>
+  </div>
+
+  <div class="section-head">BLOQUE 3 — TABLA JURÍDICA DEL CORTE</div>
+  <div class="table-wrap">
+  <table class="exec wide">
+    <thead><tr><th>ARG-ID</th><th>Fiscalía</th><th>Entidad</th><th>Delito</th><th>Sentenciados</th><th>Pena</th><th>Multa</th><th>Reparación</th><th>Tipo</th><th>Firmeza</th><th>Fuente oficial</th><th>Corroboración</th><th>Confianza</th></tr></thead>
+    <tbody>
+      <tr><td>ARG-101-SEN-001</td><td>FGE Durango</td><td>Durango</td><td>Homicidio calificado y agravado por parentesco</td><td>1 <i>(inferido)</i></td><td><b>Más de 26 años</b></td><td>No publicada</td><td>No publicada</td><td>Condenatoria</td><td><b>No informada</b></td><td><code>fiscalia.durango.gob.mx</code> 17-ago</td><td>Ninguna localizada</td><td><b>Medio</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="section-head">BLOQUE 4 — CANDIDATAS NO INTEGRADAS Y POR QUÉ</div>
+  <div class="table-wrap">
+  <table class="exec wide">
+    <thead><tr><th>Entidad</th><th>Caso</th><th>Motivo de exclusión</th></tr></thead>
+    <tbody>
+      <tr><td>Chihuahua</td><td>Ciudad Juárez: 5 años 6 meses 4 días y multa de 170 UMA por posesión de arma y marihuana (FECOR/FGR)</td><td>El titular dice <b>"se declara culpable"</b>, no "sentencia condenatoria". <b>Fuente única periodística</b>, sin boletín de la FGR. <code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code></td></tr>
+      <tr><td>San Luis Potosí</td><td>Matlapa (<code>ARG-99-SEN-003</code>): Elías "N", lesiones doblemente agravadas, procedimiento abreviado, hecho de agosto de 2024</td><td><b>Enriquecida pero no fechada</b>: un medio reproduce el término literal en titular, corroborado por otros dos, pero <b>ninguna URL fija fecha</b>. Tercera edición sin boletín institucional</td></tr>
+      <tr><td>Estado de México</td><td>Ecatepec (<code>ARG-99-SEN-001</code>): 40 años por extorsión agravada</td><td>Publicación fijada el <b>15-ago</b>: <b>fuera de la ventana</b>. Tercera edición sin comunicado de la FGJEM</td></tr>
+      <tr><td>Aguascalientes</td><td>Luis Ángel "N", 50 años, delitos contra la libertad de las personas</td><td>La URL <b>fija solo el mes</b>; el día lo afirma el resumidor. <b>Fecha no fijada</b></td></tr>
+      <tr><td>Colima</td><td>Omar "N", 35 años, homicidio calificado y tentativa, Villa de Álvarez</td><td><b>Sin fecha en URL</b>; el resumidor la sitúa hacia mediados de julio. Descartada de la ventana</td></tr>
+      <tr><td>Guerrero</td><td><b>5 sentencias condenatorias</b> con penas de 2a8m a 67 años, en agregado semanal</td><td><b>Agregado sin desglose nominal</b>: ni sentenciado, ni delito, ni tribunal, ni firmeza por caso. Periodo <b>10–16 ago</b>, fuera de ventana. <code>NO INTEGRAR AL CONTEO</code></td></tr>
+      <tr><td>Guanajuato</td><td><b>36 personas sentenciadas</b> por extorsión "en lo que va de 2026" (boletín del 17-ago)</td><td><b>AGREGADO ANUAL</b>, no del corte. Publicado en la ventana, pero acumula todo 2026 y <b>no desglosa ningún caso</b>. Mismo modo de fallo que el agregado de Veracruz</td></tr>
+      <tr><td><b>Puebla</b></td><td><b>Coronango: 26 años 7 meses 15 días a dos personas, violación equiparada agravada, sentencia FIRME confirmada en apelación</b></td><td><b>No es un hallazgo del corte: es un vacío del propio archivo.</b> ARGOS 98 lo declaró <code>VACÍO CONFIRMADO</code> ★★★★☆ con <b>boletín institucional de <code>fiscalia.puebla.gob.mx</code></b> y el término "fallo condenatorio" <b>en el propio slug</b>, y <b>nunca se integró ni pasó a los pendientes</b>. Pertenece a la ventana de <b>ARGOS 95</b>. Bajo el criterio que esta edición estrena, <b>su respaldo es más fuerte que el de Durango</b>: es firme y sí tiene corroboración independiente</td></tr>
+      <tr><td>Quintana Roo</td><td>Playa del Carmen: 50 años a tres personas por homicidio calificado doble</td><td>Publicada el <b>12-ago</b>: vacío arrastrado de ARGOS 99, no hecho nuevo. Ver bloque 5</td></tr>
+      <tr><td>Tabasco</td><td>Cunduacán (<code>ARG-99-SEN-002</code>): 8 años por violación, Miguel "N"</td><td>Reproducción periodística fijada el <b>15-ago</b> — ventana de ARGOS 99. Boletín institucional <b>no localizado</b> pese a explotar el patrón <code>/Boletin/Index/&lt;id&gt;</code></td></tr>
+      <tr><td>Veracruz</td><td>Las <b>9 condenatorias</b> restantes del agregado del 13-ago</td><td><b>Cuarta edición sin desglose.</b> Ver bloque 5</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="section-head">BLOQUE 5 — LOS DOS PENDIENTES JUDICIALES DE FONDO</div>
+  <p class="muted-note">
+    <b>Veracruz — el agregado del 13 de agosto, cuarta edición abierta.</b> Se corroboró con dos
+    fuentes fechadas en URL que el agregado existe: <b>11 sentencias condenatorias, 42 vinculaciones
+    a proceso, 18 imputaciones, 13 órdenes cumplimentadas, 10 detenciones en flagrancia y 1 persona
+    localizada</b>, presentado en la COESCONPAZ. <b>Cosamaloapan sigue siendo la única documentada</b>
+    (<code>ARG-100-SEN-SEG-001</code>). Catorce búsquedas dirigidas <b>no desglosaron ninguna de las
+    nueve restantes</b> ni localizaron el listado nominal de las 53 resoluciones.
+    <b>Dos candidatos descartados</b>: las "condenas de hasta 350 años" de Tuxpan —cuya única fuente
+    fechada la sitúa en <b>junio</b>— y el caso de Córdoba/Poza Rica —110 y 50 años—, que pertenece
+    al agregado del <b>5-ago</b>, de 32 resoluciones, no al del 13-ago.
+    <b>Regla nueva que deja este caso</b>: la propia Fiscalía encabeza sus agregados con penas de
+    casos anteriores —"Condenas de hasta 350 años y 53 resoluciones judiciales" mezcla una pena de
+    junio con un lote de agosto—. <b>Nunca aceptar una pena destacada en el titular de un agregado
+    sin una URL fechada que la ate a ese corte.</b>
+  </p>
+  <p class="muted-note">
+    <b>Playa del Carmen, Quintana Roo — el vacío que sigue sin integrarse, ahora con la multa
+    reverificada.</b> Sentencia de <b>50 años</b> a <b>Rodman de Jesús Calderón Pineda "Zombi"</b>,
+    <b>Juan José Velázquez Ramírez "Pollo"</b> y <b>Óscar Zacarías Chablé "Botitas"</b> por homicidio
+    calificado doble; hecho de origen del <b>12-oct-2020</b> en la Quinta Avenida, colonia Centro.
+    La <b>multa de 260,640 pesos por cada sentenciado</b> <b>deja de descansar en una sola
+    consulta</b>: una segunda consulta dirigida independiente devolvió la misma cifra. La
+    reverificación es <b>sobre texto parafraseado del buscador, no sobre boletín leído</b>, de modo que
+    <b>la reserva de reverificación institucional que abrió ARGOS 100 sigue abierta</b>. <b>El boletín de la FGE
+    Quintana Roo sigue sin localizarse</b> y la publicación es del <b>12-ago</b>, fuera de esta
+    ventana: permanece como <b>vacío de edición anterior</b>, no como hecho del corte.
+    <b>Cuatro señuelos deslindados</b> para que no se fusionen: una sentencia de 50 años por
+    homicidio calificado en <b>Benito Juárez</b> (hecho de dic-2020), dos feminicidios con la misma
+    pena en <b>Isla Mujeres</b> y <b>Cozumel</b>, y una condena de 50 años en Playa del Carmen del
+    <b>18-mar-2026</b> con un solo sentenciado.
+  </p>
+
+  <div class="section-head">BLOQUE 6 — INDICADOR DE COBERTURA JUDICIAL</div>
+  <div class="table-wrap">
+  <table class="exec">
+    <thead><tr><th>Indicador</th><th>ARGOS 101</th><th>ARGOS 100</th></tr></thead>
+    <tbody>
+      <tr><td><b>Fiscalías revisadas</b></td><td><b>32 de 32</b></td><td>19 de 32</td></tr>
+      <tr><td>Fiscalías <b>NO revisadas</b></td><td><b>0</b></td><td>13</td></tr>
+      <tr><td>FGR revisada</td><td>Parcialmente — por incidencia regional, sin consulta dirigida a sus fiscalías especializadas</td><td>Parcialmente</td></tr>
+      <tr><td>Fiscalías con sentencia publicada <b>dentro</b> de la ventana</td><td><b>1</b> (Durango)</td><td>0</td></tr>
+      <tr><td>Fiscalías con resultado indexado <b>fuera</b> de la ventana</td><td><b>11</b></td><td>8</td></tr>
+      <tr><td>Páginas no disponibles</td><td><b>0 registradas como tales</b> — no se intentó el acceso directo: la sonda inicial demostró que fallaría en todos los dominios</td><td>0</td></tr>
+      <tr><td>Sentencias integradas al conteo nacional</td><td><b>1</b></td><td>0</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="muted-note">
+    <b>La rotación de cobertura funcionó y queda declarada.</b> Las trece fiscalías que ARGOS 100
+    dejó sin revisar —las seis del Noroeste y las siete del Centro— fueron precisamente las que
+    encabezaron el triaje judicial de esta edición, por instrucción expresa. <b>El resultado valida
+    la mecánica</b>: la única condenatoria integrable del corte apareció en Durango, es decir, en una
+    de las entidades que la edición anterior no había alcanzado a revisar. Sin la rotación, ARGOS 101
+    habría cerrado en cero y ese cero habría sido falso.
+  </p>
+</section>
+
+<!-- =========================================================
+     PÁGINA 6 — VALORACIÓN Y CONCLUSIONES
+========================================================= -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand"><div class="argos-num" style="font-size:22px;"><span class="w">ARGOS</span><span class="n">102</span></div></div>
+    <div class="titles"><h2 style="font-size:14px;">VALORACIÓN, AUDITORÍA RETROACTIVA, CONCLUSIONES Y FUENTES</h2></div>
+    <div class="corte">PÁG. 6 / 6</div>
+  </header>
+
+  <div class="section-head">NIVEL DE RIESGO NACIONAL ARGOS</div>
+  <p style="font-size:12.5px;line-height:1.6;">
+    <b>NO DETERMINABLE</b>, por segunda edición consecutiva y por la misma razón de fondo, aunque con
+    un margen menor. El Nivel de Riesgo Nacional se deriva de los <b>eventos rojos</b> observados
+    durante el corte, y en esta ventana <b>no se localizó ninguno con fecha fijada</b>. Pero
+    "no se localizó" y "no ocurrió" siguen sin ser lo mismo: <b>cero portales institucionales se
+    leyeron por acceso directo</b>, y el evento más significativo del corte —el enfrentamiento de una
+    hora en la sierra de Zinapécuaro— <b>cerró sin que ninguna autoridad publicara su saldo</b>. Un
+    hecho del que se ignora si dejó muertos <b>no puede clasificarse por encima de amarillo, y
+    tampoco puede descartarse que sea rojo</b>. Lo mismo vale para el hallazgo de restos humanos que
+    una sola fuente atribuye a la casa de seguridad de Colima: de confirmarse, ese evento
+    <b>reclasifica a rojo</b> y con él la valoración del corte.
+    <b>Y hay una tercera reserva, que esta edición debe declarar sobre sí misma</b>: el hecho de
+    Tijuana (<code>ARG-101-008</code>) se publica en verde porque lo reportado es la detención, pero
+    <b>el ataque armado que la origina dejó un fallecido</b> y su fecha es ambigua —el cuerpo dice
+    "el lunes" y la publicación es del mismo lunes 17—. <b>Si ese homicidio cae dentro de la ventana,
+    el corte no tuvo cero hechos rojos</b>. La regla del verde retroactivo ampara el delito de un
+    corte anterior, no el de la misma ventana.
+    <b>Los dos eventos amarillos</b> —Colima y Zinapécuaro— sitúan el contexto operativo en
+    confrontación armada activa en el occidente del país. <b>Las nueve acciones verdes no reducen el
+    nivel de riesgo</b>: se reportan como capacidad institucional, y dos de ellas —la detención de
+    cuatro presuntos agentes ministeriales del Edomex y la vinculación de dos exfuncionarios
+    mexiquenses— miden esa capacidad ejerciéndose <b>sobre el propio aparato del Estado</b>.
+    <b>Lo que sí mejoró es la base sobre la que se emite esta valoración</b> (pág. 5): el margen de
+    indeterminación se estrecha; no desaparece.
+  </p>
+
+  <div class="section-head">AUDITORÍA RETROACTIVA — CORRECCIONES A EDICIONES ANTERIORES</div>
+
+  <div class="nota" id="ARG-101-FE-001">
+    <div class="nota-header"><h3>FE DE ERRATAS — EL VACÍO DEL BOLETÍN FEDERAL NO EXISTÍA (ARGOS 98, 99 Y 100)</h3><span class="risk-flag alto">CORRECCIÓN</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">QUÉ SE PUBLICÓ</span>
+        ARGOS 98, 99 y 100 publicaron que el boletín diario del Gabinete de Seguridad llevaba
+        <b>cortes consecutivos sin indexarse</b> y que el más reciente localizable era el del
+        <b>13 de agosto</b>; ARGOS 100 lo contabilizó como <b>cuarto corte consecutivo</b>. ARGOS 100 lo rotuló <b>VACÍO FEDERAL</b> en sus
+        Ejes del día y lo presentó reforzado por estar <b>"confirmado de forma independiente por
+        cuatro de los seis equipos regionales"</b> —este último entrecomillado es literal—.
+      </div>
+      <div class="apartado"><span class="k">QUÉ ES CIERTO</span>
+        <b>El boletín existe y está indexado.</b> Cubre el <b>14, 15 y 16 de agosto de 2026</b> en
+        <code>gob.mx/sspc/prensa</code>, con los tres días enumerados en el título y en la ruta.
+        Fue localizado <b>de forma independiente por cuatro de los seis equipos regionales de esta
+        edición</b> —Noroeste, Noreste, Centro y Golfo—, por rutas de búsqueda distintas, y está
+        corroborado por dos reproducciones íntegras en medios.
+        <b>La causa del error está identificada</b>: el Gabinete pasó de <b>boletín diario a agregado
+        de varios días</b>. Las consultas por día suelto —"del 14", "del 15", "del 16"— no alcanzan un
+        documento cuyo título enumera los tres. <b>Los boletines no faltaban: estaban fusionados.</b>
+        Se localizó además un portal federal que ninguna edición había registrado:
+        <code>gabinetedeseguridad.gob.mx</code>.
+        <b>ALCANCE DEL ERRATUM — acotado tras el control editorial.</b> El documento se titula
+        "acciones relevantes del 14, 15 y 16 de agosto": <b>no pudo existir antes del 16 de agosto</b>.
+        El corte de ARGOS 98 es del 15-ago y el de ARGOS 99 cerró el 16-ago a las 07:38, de modo que
+        <b>sus afirmaciones eran ciertas cuando se publicaron</b> y no se corrigen aquí. <b>La
+        fecha de publicación del agregado no consta en su ruta y no pudo fijarse</b>, así que ni
+        siquiera respecto de ARGOS 100 puede demostrarse que fuera localizable antes de su cierre
+        (17-ago 02:47). Lo que este erratum sí establece: <b>el vacío fue real hasta el 15 de
+        agosto; a partir del 16 dejó de serlo por un cambio de formato del emisor, sin que el
+        barrido lo detectara</b>, y ARGOS 101 lo habría seguido publicando como vacío de cuatro
+        cortes si un equipo regional no lo hubiera cuestionado.
+        <b>Lo que subsiste</b>: no hay boletín indexado del <b>17 de agosto</b>.
+      </div>
+      <div class="apartado"><span class="k">LECCIÓN — LA MÁS IMPORTANTE DE ESTA EDICIÓN</span>
+        Tres ediciones (98, 99 y 100) publicaron como <b>vacío institucional</b> lo que a partir del
+        16 de agosto era un <b>cambio de formato del emisor</b>, y ARGOS 100 lo contabilizó como cuarto
+        corte consecutivo. Y el mecanismo que debía protegernos —la confirmación
+        independiente por varios equipos— <b>agravó el error en lugar de corregirlo</b>: cuatro equipos
+        que ejecutan la misma consulta equivocada producen cuatro confirmaciones del mismo artefacto.
+        <b>Un <code>SIN DATO</code> confirmado por repetición no queda confirmado: queda repetido.</b>
+        <b>Regla que se incorpora</b>: cuando un vacío se prolonga más de dos cortes, la primera
+        hipótesis a probar no es que el emisor dejó de publicar, sino que <b>el barrido dejó de
+        encontrarlo</b> — y debe probarse variando la forma de la consulta, no repitiéndola.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-101-FE-001</code> · Corrige el diagnóstico heredado de <b>ARGOS 100</b> y acota lo
+        publicado por <b>ARGOS 98 y 99</b>, que era cierto en su fecha · Fuente:
+        <code>gob.mx/sspc/prensa</code>, boletín del 14-15-16 ago · Confianza: <b>🟢 Alto</b> en la
+        existencia del documento; <b>🔴 No confirmado</b> en su contenido numérico, que procede del
+        resumidor y <b>no se integra a ningún total</b> · Consulta: 2026-08-18 13:37 (CDMX).
+        <b>Pendiente derivado</b>: el desglose por entidad del boletín —incluidos 9 AEI y un
+        lanzagranadas en Michoacán, y 13,300 cartuchos en Veracruz— corresponde a las ventanas de
+        <b>ARGOS 98, 99 y 100</b> (el 14-ago cae en la de ARGOS 98) y <b>queda abierto como omisión
+        recuperable</b>, no integrado aquí.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-101-FE-002">
+    <div class="nota-header"><h3>SEÑUELO NEUTRALIZADO — SUCHIAPA, 26 DETENIDOS: EL HECHO ES DE ABRIL DE 2025</h3><span class="risk-flag alto">DESCARTADO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">EL HECHO Y SU FECHA REAL</span>
+        Durante la verificación prioritaria apareció, en el portal de la FGE de Chiapas, un caso de
+        alto valor: <b>9 cateos en Suchiapa con 26 personas detenidas</b>, de las cuales <b>21 eran
+        policías municipales</b> señalados por asociación delictuosa y uso indebido de uniformes e
+        insignias, más 4 por delitos contra la salud. Se investigó como posible hecho de la ventana.
+        <b>El hecho es real y es del 4 de abril de 2025</b>: <b>dieciséis meses fuera de ventana</b>.
+        La fecha quedó fijada por <b>tres anclas independientes en la URL</b> —Aristegui Noticias
+        (<code>/040425/</code>), Proceso (<code>/2025/4/4/</code>) e Infobae
+        (<code>/2025/04/05/</code>)—. Deriva de un ataque armado del 29 de marzo de 2025 con una
+        persona muerta y tres privadas de la libertad.
+      </div>
+      <div class="apartado"><span class="k">POR QUÉ ERA PELIGROSO</span>
+        <b>El portal de la FGE Chiapas publica con URL de identificador GUID, sin fecha alguna.</b>
+        Un boletín suyo de hace dieciséis meses es <b>tipográficamente indistinguible</b> de uno de
+        hoy, y el buscador no lo ordena por fecha. Sin las tres anclas externas, este caso —una
+        policía municipal completa detenida, exactamente el tipo de hecho que un reporte de
+        inteligencia quiere destacar— <b>habría entrado como hallazgo del corte</b>.
+        <b>Deslinde obligatorio: son tres hechos distintos</b> y comparten el tema de los uniformes,
+        que es justo lo que los vuelve confundibles — (a) estos 9 cateos con 26 detenidos, Suchiapa,
+        <b>abr-2025</b>; (b) <b>Bulmaro "N"</b>, Suchiapa, un solo detenido con uniforme clonado de la
+        Fuerza Pakal, fecha disputada entre el 15 y el 16-ago-2026; (c) una orden de aprehensión
+        contra un servidor público por abuso de autoridad en <b>Cintalapa de Figueroa</b>. Ninguno
+        debe fusionarse con otro.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-101-FE-002</code> · Confianza: <b>🟢 Alto</b> en el descarte · Fuentes: FGE Chiapas
+        (boletín, sin fecha) + Aristegui, Proceso e Infobae (fechas en URL) · Consulta: 2026-08-18.
+        <b>Regla que deja</b>: <b>ningún boletín de un portal cuya URL no lleve fecha puede asignarse
+        a una ventana sin ancla externa fechada.</b> Portales afectados ya identificados: FGE Chiapas
+        (GUID) y FGE Tabasco (<code>/Boletin/Index/&lt;id&gt;</code>).
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-101-FE-003">
+    <div class="nota-header"><h3>CORRECCIÓN MENOR — RESIDUO DE UNA CIFRA YA RETIRADA (ARGOS 100)</h3><span class="risk-flag medio">CORREGIDO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">QUÉ SE CORRIGE</span>
+        ARGOS 100 detectó y retiró del cuerpo de su edición la cifra de <b>"116 unidades
+        vehiculares"</b> de Altamira, que era una <b>suma propia</b> (23 + 70 + 23) presentada como
+        dato de fuente. <b>Pero el registro de fuentes conservaba la cifra en un renglón</b>, sin la
+        marca de cálculo propio, en la lista de eventos cualitativos. Detectado por el barrido
+        Noreste de esta edición y <b>corregido en el archivo de ARGOS 100</b>, que ahora publica las
+        tres categorías con cantidad expresa y declara que su suma sería un cálculo propio.
+      </div>
+      <div class="apartado"><span class="k">LECCIÓN</span>
+        Retirar una cifra del cartelón <b>no la retira del expediente</b>. Cuando un control elimina
+        un dato, la eliminación debe recorrer <b>todos</b> los archivos de la edición, no solo el
+        documento principal — o la cifra vuelve a circular desde el registro que debía auditarla.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-101-FE-003</code> · Corrige <code>argos-2026-08-17-fuentes.md</code> ·
+        Confianza: <b>🟢 Alto</b> · Consulta: 2026-08-18.
+      </div>
+    </div>
+  </div>
+
+  <p class="muted-note">
+    <b>Cuarta corrección, sin ficha propia por ser un avance y no una errata</b>: el extremo
+    <b>"4 abatidos"</b> de la contradicción de <b>La Piedad, Michoacán</b> (<code>ARG-98-002</code>),
+    abierta tres ediciones, <b>procede de un balance estatal de nueve regiones del 22-feb-2026</b> y
+    no de un conteo de La Piedad. <b>Precisión de crédito</b>: ARGOS 100 ya había fechado ese ítem en
+    el 22-feb y lo había deslindado de <code>ARG-98-002</code> como hecho distinto; lo que aporta
+    ARGOS 101 es su <b>naturaleza</b> —que es un balance estatal agregado, no un saldo municipal— y el
+    ancla de URL que lo fija. La contradicción deja de estar simétrica: el hecho de agosto se
+    sostiene en <b>3 muertos y 1 adolescente herido</b>. <b>No se declara cerrada</b> sin boletín de
+    la FGE o la SSP de Michoacán, pero el peso probatorio se ha desplazado por completo hacia un lado.
+  </p>
+
+  <div class="section-head">SEÑUELOS DE FECHA NEUTRALIZADOS EN ESTE CORTE</div>
+  <p class="muted-note">
+    El resumidor del buscador volvió a afirmar fechas que la fuente no sostiene. La única técnica que
+    funcionó sigue siendo <b>exigir la fecha en la URL o en el titular</b> y descartar cuando solo
+    aparece en el cuerpo parafraseado. Se documentan para que ninguna edición futura los recoja como
+    nuevos.
+  </p>
+  <div class="table-wrap">
+  <table class="exec">
+    <thead><tr><th>#</th><th>Señuelo</th><th>Fecha real</th><th>Fecha sugerida</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Suchiapa, Chiapas</b> — 9 cateos, 26 detenidos, 21 policías municipales</td><td><b>4-abr-2025</b></td><td>ventana 17-18 ago</td></tr>
+      <tr><td>2</td><td>Matamoros, Tamaulipas — SEMAR, enfrentamiento, 3 detenidos, "tarde del jueves 17 de agosto"</td><td><b>17-ago-2023</b></td><td>17-ago-2026 (que fue <b>lunes</b>, no jueves)</td></tr>
+      <tr><td>3</td><td>Camargo, Tamaulipas — 3 detenidos, 3 armas largas (El Universal, slug sin fecha)</td><td><b>10-11 ene 2026</b></td><td>ventana</td></tr>
+      <tr><td>4</td><td>BCS — agregado con 25 armas, 145 cartuchos, 43 cargadores y <b>110 artefactos explosivos</b></td><td><b>25-jun-2026</b></td><td>actualidad</td></tr>
+      <tr><td>5</td><td>Sinaloa — agregado de 88 detenidos, 71 armas, 19,711 municiones, 12 AEI</td><td>periodo <b>3–9 ago</b></td><td>ventana</td></tr>
+      <tr><td>6</td><td><code>sspsinaloa.gob.mx</code> — los dos boletines indexados del portal oficial</td><td><b>15-ago-2025</b> y 20-nov-2025</td><td>15-ago-2026 (aniversario de fecha)</td></tr>
+      <tr><td>7</td><td>NotiMX — "sentencian a 40 años por extorsión agravada", cifra y delito idénticos a <code>ARG-99-SEN-001</code></td><td><b>mayo-2026</b></td><td>Ecatepec, agosto</td></tr>
+      <tr><td>8</td><td>Michoacán — "GobMich: 4 abatidos y 2 detenidos tras jornada violenta"</td><td><b>22-feb-2026</b></td><td>La Piedad, agosto</td></tr>
+      <tr><td>9</td><td>Colima — "El Huesos" (14-may-2026) y "El Topo" (21-jul-2026), ambos jefes de sicarios del CJNG abatidos</td><td><b>may y jul 2026</b></td><td><code>ARG-101-002</code></td></tr>
+      <tr><td>10</td><td>Veracruz — "Condenas de hasta 350 años", Tuxpan</td><td>indicio de <b>junio-2026</b></td><td>agregado del 13-ago</td></tr>
+      <tr><td>11</td><td>Veracruz — Córdoba/Poza Rica, 110 y 50 años</td><td>agregado del <b>5-ago-2026</b></td><td>agregado del 13-ago</td></tr>
+      <tr><td>12</td><td>Oaxaca — Boletín 1,261 FGEO, 3 vinculados por narcomenudeo en <b>Pinotepa Nacional</b></td><td><b>feb-2025</b></td><td><code>ARG-100-004</code></td></tr>
+      <tr><td>13</td><td>Quintana Roo — cuatro sentencias de 50 años (Benito Juárez, Isla Mujeres, Cozumel y una de mar-2026)</td><td>casos <b>distintos</b></td><td>Playa del Carmen</td></tr>
+      <tr><td>14</td><td>"Arsenal oculto en camioneta, 2 detenidos" — aparece en búsquedas de Chiapas</td><td><b>Las Choapas, VERACRUZ</b>, 13-ago</td><td>Chiapas</td></tr>
+      <tr><td>15</td><td>Altamira — "el hecho fue el 17-ago" / "comunicado de la Primera Zona Naval del 15-ago"</td><td>hecho <b>16-ago</b>; el comunicado <b>no existe localizable</b></td><td>ventana de ARGOS 101</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="section-head">INDICADORES OFICIALES</div>
+  <div class="table-wrap">
+  <table class="exec">
+    <thead><tr><th>Indicador</th><th>Cifra</th><th>Fuente y periodo</th><th>Estatus</th></tr></thead>
+    <tbody>
+      <tr><td>Homicidio doloso — víctimas diarias</td><td>86.9 → 45.4 (−48%)</td><td>SESNSP / SSPC, sep. 2024 – jun. 2026</td><td><code>HEREDADO — NO REVERIFICADO</code> desde ARGOS 86. Contradicción del −60% <b>abierta</b>; no reverificable mientras <code>gob.mx/sesnsp</code> siga bloqueado</td></tr>
+      <tr><td>Cualquier otro indicador nacional</td><td>—</td><td>—</td><td><code>SIN RESULTADO INDEXADO EN VENTANA</code> — los portales de indicadores (SESNSP, INEGI) no se leyeron por acceso directo</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="section-head">CONCLUSIONES DE MÉTODO</div>
+  <div class="list">
+    <div class="list-item"><span class="tag alto">1</span><span><b>El hallazgo mayor del corte es una autocorrección.</b> El vacío federal más citado de las últimas ediciones no existía. Lo que lo sostuvo no fue la falta de barrido, sino <b>la repetición de una consulta mal construida por cuatro equipos independientes</b>. La confirmación cruzada no protege contra un error de forma compartido.</span><span>ARG-101-FE-001</span></div>
+    <div class="list-item"><span class="tag alto">2</span><span><b>La rotación declarada de cobertura funcionó y debe institucionalizarse.</b> Las 32 fiscalías quedaron revisadas frente a 19, y <b>la única condenatoria integrable apareció en Durango</b>, una de las trece entidades que la edición anterior no alcanzó. Sin rotación, el módulo judicial habría cerrado en un cero falso.</span><span>pág. 5</span></div>
+    <div class="list-item"><span class="tag medio">3</span><span><b>El slug institucional es texto primario y rompe el techo del bloqueo.</b> Cuando el término condenatorio y la fecha están <b>en la ruta del dominio oficial</b>, la objeción de "lo que leemos es el resumidor" no aplica. De ahí se sigue un criterio operativo: <b>los portales con fecha en la ruta deben encabezar el triaje</b>, y los de identificador opaco tratarse como estructuralmente inservibles bajo bloqueo.</span><span>ARG-101-SEN-001</span></div>
+    <div class="list-item"><span class="tag medio">4</span><span><b>Ejecutar la verificación prioritaria primero y en solitario volvió a pagar</b>, aunque esta vez no cerrara ningún pendiente: su rendimiento fue <b>descartar tres candidatos falsos</b>, uno de ellos con dieciséis meses de antigüedad y con apariencia de gran hallazgo.</span><span>pág. 5 y 6</span></div>
+    <div class="list-item"><span class="tag medio">5</span><span><b>Los ocho topes de búsqueda se respetaron sin excepción</b> —148 de 200 consultas—, frente a tres equipos excedidos en ARGOS 100. Ninguna región cerró por inanición de presupuesto.</span><span>—</span></div>
+    <div class="list-item"><span class="tag sindato">6</span><span><b>El conteo de armamento mide la opacidad del canal, no la actividad del país</b> — desarrollado con sus cifras en la pág. 4.</span><span>pág. 4</span></div>
+    <div class="list-item"><span class="tag sindato">7</span><span><b>El techo de confianza no se movió</b>: cero portales leídos por acceso directo de ~128 objetivo, <b>duodécima edición consecutiva</b>. La solicitud de lista blanca de egreso sigue sin tramitarse y es el único cambio que elevaría el producto por encima de ★★★☆☆.</span><span>—</span></div>
+  </div>
+
+  <div class="section-head">FUENTES Y AUDITORÍA</div>
+  <p class="muted-note">
+    El registro completo de fuentes de esta edición —con las URL, las fechas fijadas, los portales
+    consultados por región, las tres casillas de cobertura entidad por entidad, el consumo de
+    búsquedas de cada equipo y el detalle de los quince señuelos— está en
+    <code>reports/argos-2026-08-18-fuentes.md</code>. El índice de trazabilidad cruzada de todas las
+    ediciones, estrenado en este corte, está en <code>reports/indice-arg-id.md</code>.
+    <b>El respaldo de la tabla de seguimientos de la pág. 3 está en <code>reports/_pendientes.md</code></b>,
+    no en el registro de fuentes; y ni siquiera ahí constan URL para Diario de Morelos (Cuautla) ni
+    para los dos medios regionales de Privada Amberes.
+    <b>Metodología de búsqueda aplicada</b>: institucional → nacional → regional → abierta, con
+    barrido por seis regiones y verificación prioritaria previa y en solitario.
+    <b>Limitación declarada</b>: bajo bloqueo total de egreso (403 al CONNECT verificado por sonda
+    contra cuatro hosts de control), <b>ninguna afirmación de esta edición descansa en la lectura
+    directa de un documento oficial</b>. Todas las citas institucionales proceden de índices de
+    buscador, y así se reportan.
+  </p>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-08-18 · Hora: 13:37 (CDMX)</span>
+    <span>Corte: Vespertino</span>
+    <span>ARGOS N.° 102</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+
+
+<div id="argos-tooltip" class="argos-tooltip"></div>
+<script>
+const MEXICO_VIEWBOX = "0 0 900 520";
+const MEXICO_PATHS = {
+  "MX-ZAC": { name: "Zacatecas", d: "M452 234L451 235L448 240L445 241L444 244L440 245L439 247L439 250L440 251L439 254L438 255L433 257L432 258L429 263L424 265L422 268L419 268L416 267L415 269L416 271L415 272L416 275L415 280L416 283L420 285L422 287L425 288L427 291L428 292L432 291L436 286L439 285L441 288L440 290L437 296L437 298L438 301L437 305L435 309L434 309L431 308L429 305L426 304L423 303L421 300L421 299L418 297L415 295L415 293L412 296L409 298L406 299L404 303L402 307L400 310L400 311L403 313L403 316L403 317L406 319L406 322L405 323L402 325L399 328L397 327L395 328L395 330L393 331L392 331L388 332L385 331L382 330L380 328L378 327L378 326L383 324L383 322L382 322L380 322L379 319L381 319L383 317L383 312L386 310L388 308L393 306L394 304L395 300L394 299L392 299L392 296L390 296L388 296L388 298L389 299L386 301L385 304L383 303L382 304L380 304L380 302L383 296L383 293L380 291L376 292L376 300L375 301L374 300L373 298L373 295L374 292L376 289L377 288L377 287L375 286L373 287L371 288L371 289L372 293L373 295L372 296L370 296L371 293L370 293L367 294L367 296L365 297L364 298L363 296L363 294L364 291L365 289L368 288L369 283L369 281L368 278L368 277L370 274L371 268L371 266L374 263L376 260L375 256L376 255L376 251L375 248L377 247L380 245L382 242L384 240L386 238L390 238L392 239L395 238L400 239L400 238L402 239L408 238L409 236L408 232L406 232L407 227L405 225L404 223L403 221L403 220L410 218L419 219L422 221L424 222L426 223L428 226L431 226L431 229L434 230L435 229L438 228L441 229L442 230L444 233L445 235L447 235L450 234L452 234Z" },
+  "MX-YUC": { name: "Yucatán", d: "M787 319L787 324L786 326L785 329L787 333L787 334L784 339L784 341L783 342L777 347L775 348L772 348L771 347L770 348L768 350L766 351L765 354L761 356L759 356L755 359L754 360L752 361L748 362L746 363L745 364L740 365L740 367L739 369L738 365L735 362L734 359L730 357L728 352L726 351L726 349L724 347L722 349L721 348L720 348L718 346L715 345L715 338L714 337L716 333L717 332L722 328L725 327L729 325L733 324L740 323L747 322L754 321L759 319L759 318L765 317L767 317L770 317L772 315L774 316L776 317L779 317L781 318L785 319L787 319Z" },
+  "MX-VER": { name: "Veracruz", d: "M528 298L529 303L531 308L530 309L531 311L531 314L534 319L535 319L536 323L537 324L538 328L542 336L543 337L544 341L545 343L549 347L549 348L555 355L559 360L560 361L562 364L563 367L564 372L566 374L565 376L566 379L569 380L571 383L571 385L572 386L574 386L575 390L577 392L577 394L580 394L584 395L594 395L599 399L603 400L606 404L608 407L609 409L610 410L612 411L615 410L622 408L621 409L621 414L622 415L622 418L624 420L626 422L630 424L632 427L631 430L632 432L634 433L630 436L628 437L627 438L609 437L598 436L599 435L597 432L595 431L593 429L591 426L591 424L593 423L591 422L590 423L586 424L583 426L580 426L579 427L577 427L575 422L575 420L576 419L578 414L577 411L576 410L573 409L571 409L569 409L567 408L566 406L565 405L564 406L561 403L560 400L561 399L559 397L559 400L557 403L555 401L553 400L550 402L548 401L547 398L543 396L542 394L542 391L544 389L544 388L544 381L549 381L549 378L546 377L542 376L540 375L541 374L539 370L540 369L542 364L542 363L544 358L546 355L539 352L536 356L535 356L534 354L531 354L530 351L530 347L532 346L533 347L535 345L534 344L531 341L531 339L531 336L528 336L526 339L525 340L525 343L522 342L520 344L519 345L517 347L514 349L512 350L510 347L511 343L511 339L512 338L515 336L517 337L518 337L518 335L518 333L520 331L518 327L516 326L515 327L512 326L510 325L511 323L510 321L509 317L508 317L507 316L507 313L510 312L511 310L509 308L509 306L511 306L511 305L511 302L512 301L515 301L513 298L512 297L508 296L506 296L505 294L507 293L511 293L514 294L516 294L516 293L518 292L519 294L522 295L523 295L526 299L528 298ZM533 309L534 311L537 314L540 316L540 318L538 323L537 323L539 319L539 318L537 316L536 314L533 311L533 309Z" },
+  "MX-TLA": { name: "Tlaxcala", d: "M508 374L507 374L506 372L511 370L514 370L517 367L519 368L522 368L523 366L529 371L529 373L531 372L533 374L533 375L534 376L533 378L530 378L528 381L526 381L524 380L521 383L520 383L516 381L515 378L510 374L508 374Z" },
+  "MX-TAM": { name: "Tamaulipas", d: "M528 298L526 299L523 295L522 295L519 294L518 292L516 293L516 294L514 294L511 293L507 293L505 294L502 295L500 294L499 294L495 294L493 294L491 291L490 289L488 286L486 286L485 284L483 286L481 286L478 285L473 284L472 283L472 279L472 276L471 274L471 271L470 270L470 268L474 268L473 264L474 262L475 261L476 258L478 256L481 257L483 256L484 254L486 255L485 252L484 252L483 248L481 245L482 240L481 237L478 236L479 234L481 233L484 231L486 229L487 229L488 228L492 227L492 226L494 225L494 223L493 221L496 218L497 219L500 219L502 216L506 215L509 213L511 212L513 209L510 208L509 204L510 202L509 200L509 197L508 194L503 194L501 196L500 195L498 192L494 192L493 188L491 189L489 186L487 184L486 179L484 179L483 177L481 177L481 172L478 170L479 167L481 166L480 163L479 162L479 158L478 157L479 155L477 155L474 154L475 152L478 151L480 149L483 150L485 152L485 153L486 154L485 158L486 160L487 162L487 167L488 168L491 171L493 178L494 180L496 182L495 183L499 184L502 185L504 186L506 188L508 188L514 191L517 193L519 193L521 193L524 193L526 193L529 194L530 194L532 195L535 198L537 199L539 198L540 197L543 196L545 196L545 198L544 203L543 205L539 212L538 211L535 210L535 212L535 214L533 214L533 212L531 212L530 216L531 217L529 223L531 224L529 227L530 229L530 231L530 232L529 234L527 235L528 239L529 238L530 241L529 246L529 255L530 259L529 266L529 277L529 281L528 283L527 285L526 288L527 289L526 293L527 295L528 298Z" },
+  "MX-TAB": { name: "Tabasco", d: "M662 397L664 401L667 404L668 404L669 405L669 407L672 412L676 415L676 416L679 417L681 418L684 417L685 413L688 413L691 414L693 415L700 418L700 420L700 435L689 435L690 434L689 432L686 430L684 430L683 429L684 427L683 423L680 422L680 420L679 418L677 418L674 418L674 419L670 419L669 420L669 422L667 423L662 428L660 429L656 432L654 432L653 429L650 428L650 426L648 423L649 420L649 418L647 418L645 417L642 415L640 416L640 419L640 422L639 425L636 428L636 430L634 433L632 432L631 430L632 427L630 424L626 422L624 420L622 418L622 415L621 414L621 409L622 408L627 407L627 408L630 408L630 406L634 406L635 404L639 403L644 403L645 405L647 404L648 403L652 403L655 401L657 398L662 397Z" },
+  "MX-SON": { name: "Sonora", d: "M163 106L163 108L165 112L164 116L163 119L156 116L158 114L158 112L158 108L161 106L163 106ZM252 48L253 49L252 50L254 54L254 56L254 59L253 61L255 62L255 65L256 66L255 67L256 69L258 76L257 79L259 82L257 85L257 90L259 90L259 97L259 99L258 101L259 107L257 107L257 110L256 111L256 114L255 115L256 117L254 120L254 122L255 124L254 125L256 128L258 129L256 131L253 132L250 131L249 132L246 132L245 133L247 135L246 138L249 139L251 142L251 144L250 146L254 148L257 156L257 157L256 161L256 164L255 165L259 167L261 166L263 166L263 168L259 172L260 174L258 175L256 179L252 180L251 183L249 184L245 186L244 185L242 184L240 183L240 182L239 180L235 176L235 175L233 174L232 176L229 176L227 175L224 173L223 169L223 165L221 164L219 165L218 164L213 163L209 159L209 157L207 156L206 154L206 152L205 150L206 148L205 146L206 143L204 143L199 141L197 143L196 141L194 141L189 138L187 135L184 131L183 129L178 127L176 123L172 120L173 118L170 116L168 114L166 113L166 109L165 106L164 103L162 104L160 103L160 102L161 100L161 98L158 96L157 93L156 93L154 89L154 88L152 87L152 85L151 83L151 80L151 79L149 77L149 74L148 72L145 70L143 66L142 62L143 57L144 55L143 52L140 51L136 50L131 49L129 48L130 47L129 44L123 41L119 44L116 44L113 42L112 41L107 38L105 36L103 36L102 36L101 35L100 35L94 31L95 28L95 26L95 24L94 22L96 20L97 16L99 16L121 23L147 32L165 38L180 43L194 48L209 48L227 48L252 48ZM100 35L103 37L102 39L100 37L100 36L100 35Z" },
+  "MX-SIN": { name: "Sinaloa", d: "M268 221L270 224L270 226L268 224L268 221ZM263 219L264 220L269 225L268 226L266 222L263 219ZM241 186L242 186L242 184L244 185L245 186L249 184L251 183L252 180L256 179L258 175L260 174L259 172L263 168L263 166L268 166L269 167L269 169L270 169L271 172L271 177L272 178L273 181L275 184L276 186L278 190L281 191L284 192L287 192L290 197L290 200L292 203L292 205L290 207L291 209L290 212L290 217L290 219L291 219L293 224L294 227L297 227L298 229L299 229L300 234L302 234L302 238L304 242L305 242L310 239L311 238L315 239L317 240L320 245L320 247L322 252L323 253L323 256L325 259L327 261L328 264L329 266L328 267L330 270L331 274L335 274L337 276L336 277L335 280L334 282L334 285L335 286L336 290L335 291L332 290L330 289L329 289L329 291L325 286L322 283L321 282L316 276L310 271L309 268L308 266L306 264L302 259L299 255L299 254L297 251L292 247L290 245L287 243L286 243L282 240L284 239L284 237L282 235L281 237L277 236L276 234L272 232L271 230L271 228L270 221L269 219L267 219L265 217L262 215L261 217L260 215L254 212L252 211L251 209L252 208L250 207L248 207L249 208L248 210L247 208L245 209L243 207L245 206L247 206L248 205L248 204L245 204L245 206L242 205L239 202L235 200L236 198L235 196L235 195L237 191L239 190L240 187L241 186Z" },
+  "MX-SLP": { name: "San Luis Potosí", d: "M470 270L471 271L471 274L472 276L472 279L472 283L473 284L478 285L481 286L483 286L485 284L486 286L488 286L490 289L491 291L493 294L495 294L499 294L500 294L502 295L505 294L506 296L508 296L512 297L513 298L515 301L512 301L511 302L511 305L511 306L509 306L509 308L511 310L510 312L507 313L507 316L508 317L509 317L510 321L508 321L506 323L505 326L504 325L503 327L500 326L499 323L497 324L492 319L491 317L489 317L488 320L483 320L482 317L480 316L478 318L476 319L471 319L469 317L465 314L461 313L460 314L460 317L458 317L456 318L451 315L449 313L446 312L441 310L440 310L437 309L435 309L437 305L438 301L437 298L437 296L440 290L441 288L439 285L436 286L432 291L428 292L427 291L425 288L422 287L420 285L416 283L415 280L416 275L415 272L416 271L415 269L416 267L419 268L422 268L424 265L429 263L432 258L433 257L438 255L439 254L440 251L439 250L439 247L440 245L444 244L445 241L448 240L451 235L452 237L455 238L456 240L454 241L456 244L456 245L459 248L460 251L459 255L460 257L460 260L459 263L460 264L460 269L462 272L463 272L466 270L470 270Z" },
+  "MX-ROO": { name: "Quintana Roo", d: "M807 343L806 346L802 351L800 352L800 350L800 348L802 345L804 345L807 343ZM746 416L746 414L748 411L749 408L749 404L748 403L749 401L748 399L747 397L747 395L748 391L748 388L749 387L749 381L747 377L744 374L741 371L739 369L740 367L740 365L745 364L746 363L748 362L752 361L754 360L755 359L759 356L761 356L765 354L766 351L768 350L770 348L771 347L772 348L775 348L777 347L783 342L784 341L784 339L787 334L787 333L785 329L786 326L787 324L787 319L791 320L795 320L797 319L798 316L800 317L803 321L804 325L805 326L805 328L806 329L805 332L803 336L800 340L798 343L794 347L792 349L791 352L790 353L788 358L789 362L788 365L786 365L784 368L782 369L781 371L784 373L785 372L789 371L790 372L789 374L787 376L786 376L784 377L783 382L784 381L786 379L787 378L789 379L787 382L786 385L784 389L783 394L782 395L781 403L779 406L779 409L778 408L778 405L777 404L777 403L773 401L775 396L775 393L773 391L768 400L768 401L763 401L762 402L761 405L760 406L760 409L758 410L757 413L756 414L755 415L753 417L749 415L747 415L746 416Z" },
+  "MX-QUE": { name: "Querétaro", d: "M497 324L496 327L491 329L490 328L488 329L489 331L487 334L485 336L484 339L485 341L483 343L477 344L476 351L475 352L474 354L474 356L472 358L469 359L466 355L466 354L464 352L463 350L461 348L460 346L460 344L458 340L458 338L459 335L464 335L465 334L468 334L470 333L470 330L473 327L474 326L476 328L479 326L480 323L477 323L479 321L478 318L480 316L482 317L483 320L488 320L489 317L491 317L492 319L497 324Z" },
+  "MX-PUE": { name: "Puebla", d: "M557 403L554 407L552 408L548 411L545 410L543 411L541 413L540 415L538 415L538 413L535 409L534 408L535 407L535 405L532 406L530 410L532 413L531 415L529 415L527 413L525 414L522 414L520 414L518 416L517 417L515 416L514 414L509 415L509 414L505 412L505 410L502 411L501 408L499 406L499 405L501 403L502 402L504 400L507 403L508 402L506 395L508 388L509 386L509 382L508 379L509 376L508 374L510 374L515 378L516 381L520 383L521 383L524 380L526 381L528 381L530 378L533 378L534 376L533 375L533 374L531 372L529 373L529 371L523 366L522 368L519 368L518 363L520 360L521 355L520 353L518 353L517 351L521 350L522 348L525 346L525 343L525 340L526 339L528 336L531 336L531 339L531 341L534 344L535 345L533 347L532 346L530 347L530 351L531 354L534 354L535 356L536 356L539 352L546 355L544 358L542 363L542 364L540 369L539 370L541 374L540 375L542 376L546 377L549 378L549 381L544 381L544 388L544 389L542 391L542 394L543 396L547 398L548 401L550 402L553 400L555 401L557 403Z" },
+  "MX-OAX": { name: "Oaxaca", d: "M627 438L627 441L626 442L625 446L622 448L620 455L620 456L621 459L621 461L621 464L619 465L615 463L614 462L613 462L613 464L614 465L618 465L621 468L616 466L613 465L606 464L608 462L609 461L607 460L605 461L602 458L600 458L599 461L598 461L596 463L601 463L601 464L592 466L590 467L589 469L588 470L584 471L582 472L580 472L578 473L574 474L570 476L567 478L563 478L561 479L559 479L556 477L552 477L548 475L547 474L543 472L540 471L538 471L535 471L529 470L525 467L518 463L513 462L509 461L514 457L514 455L517 453L518 451L519 450L521 449L522 447L523 445L522 443L520 442L520 438L517 437L517 435L518 434L518 429L515 424L515 421L517 417L518 416L520 414L522 414L525 414L527 413L529 415L531 415L532 413L530 410L532 406L535 405L535 407L534 408L535 409L538 413L538 415L540 415L541 413L543 411L545 410L548 411L552 408L554 407L557 403L559 400L559 397L561 399L560 400L561 403L564 406L565 405L566 406L567 408L569 409L571 409L573 409L576 410L577 411L578 414L576 419L575 420L575 422L577 427L579 427L580 426L583 426L586 424L590 423L591 422L593 423L591 424L591 426L593 429L595 431L597 432L599 435L598 436L609 437L627 438Z" },
+  "MX-NLE": { name: "Nuevo León", d: "M480 149L478 151L475 152L474 154L477 155L479 155L478 157L479 158L479 162L480 163L481 166L479 167L478 170L481 172L481 177L483 177L484 179L486 179L487 184L489 186L491 189L493 188L494 192L498 192L500 195L501 196L503 194L508 194L509 197L509 200L510 202L509 204L510 208L513 209L511 212L509 213L506 215L502 216L500 219L497 219L496 218L493 221L494 223L494 225L492 226L492 227L488 228L487 229L486 229L484 231L481 233L479 234L478 236L481 237L482 240L481 245L483 248L484 252L485 252L486 255L484 254L483 256L481 257L478 256L476 258L475 261L474 262L473 264L474 268L470 268L470 270L466 270L463 272L462 272L460 269L460 264L459 263L460 260L460 257L459 255L460 251L459 248L456 245L456 244L454 241L456 240L455 238L452 237L451 235L452 234L453 231L452 229L451 227L451 224L453 225L453 222L452 219L454 216L456 215L457 214L458 214L460 216L463 217L465 217L466 215L464 212L461 212L461 211L457 208L456 204L454 204L452 203L451 202L451 199L452 196L449 194L448 191L446 189L441 184L442 183L444 181L445 178L446 177L449 177L451 176L455 175L456 173L457 173L458 170L457 165L455 164L454 165L453 167L451 165L450 162L451 160L453 158L455 158L457 157L459 157L460 156L459 154L461 151L462 149L463 148L467 148L472 149L475 148L477 146L478 147L480 149Z" },
+  "MX-NAY": { name: "Nayarit", d: "M305 313L308 314L309 316L308 317L306 316L305 313ZM363 294L363 296L364 298L363 303L364 306L365 306L368 308L368 309L369 312L373 313L374 314L375 317L377 318L377 320L377 324L376 325L374 326L372 327L371 328L366 328L366 332L365 337L363 338L364 342L361 339L360 338L358 335L354 334L353 333L350 332L347 335L345 334L343 335L342 338L339 341L338 339L337 340L334 338L335 336L339 332L340 332L341 330L341 327L341 323L342 320L341 318L340 318L336 316L335 314L334 311L331 306L330 303L330 300L333 302L335 303L335 301L331 298L331 297L331 292L330 289L332 290L335 291L336 290L335 286L334 285L334 282L335 280L336 277L337 276L339 279L341 278L342 277L344 279L347 279L348 282L349 282L349 285L346 287L345 288L347 291L348 292L351 288L352 290L354 291L356 293L357 295L359 296L360 295L363 294ZM310 319L312 319L312 321L309 319L310 319Z" },
+  "MX-MOR": { name: "Morelos", d: "M501 385L503 388L506 389L508 387L509 386L508 388L506 395L508 402L507 403L504 400L502 402L501 403L499 405L496 403L491 402L489 399L486 399L486 397L488 394L491 388L492 385L494 385L495 386L497 385L498 386L501 385Z" },
+  "MX-MIC": { name: "Michoacán", d: "M464 352L466 354L466 355L469 359L469 361L470 363L469 364L468 367L466 368L467 371L467 374L467 376L466 377L466 380L464 382L462 386L460 387L459 389L457 391L455 393L455 392L453 393L454 398L454 401L457 405L456 406L451 403L449 404L447 401L445 401L440 400L438 401L434 401L433 401L432 399L430 398L427 400L426 399L425 401L425 404L425 405L425 407L422 409L421 409L419 410L418 411L418 415L419 416L417 417L415 416L410 414L402 412L397 410L394 409L391 408L385 406L384 404L382 401L379 398L380 398L378 396L379 394L381 393L381 390L382 391L385 388L388 388L390 386L392 388L394 386L396 385L400 381L402 381L404 381L405 379L406 377L407 376L406 374L403 374L404 371L402 367L403 365L402 362L398 361L395 361L396 359L396 357L397 356L400 356L401 357L405 356L405 354L407 353L408 353L411 351L416 351L418 350L421 350L422 350L423 354L425 355L428 354L429 354L431 352L433 351L436 351L436 353L437 359L442 360L443 358L445 359L447 358L448 361L452 362L456 362L457 361L463 359L464 358L463 357L464 355L463 353L464 352Z" },
+  "MX-MEX": { name: "México", d: "M506 372L507 374L508 374L509 376L508 379L509 382L509 386L508 387L506 389L503 388L501 385L502 383L501 380L498 378L497 375L495 373L493 375L493 377L490 379L490 381L492 385L491 388L488 394L486 397L485 397L483 396L479 397L477 400L473 400L471 401L472 402L470 403L467 405L466 405L464 402L461 401L463 400L462 397L461 397L461 395L461 391L462 389L462 386L464 382L466 380L466 377L467 376L467 374L467 371L466 368L468 367L469 364L470 363L469 361L469 359L472 358L474 356L474 354L475 352L476 351L477 353L481 355L485 355L487 359L486 360L487 361L490 367L490 364L492 365L493 364L493 361L494 360L497 359L501 358L501 359L500 364L498 365L500 368L502 365L508 364L508 366L506 371L506 372Z" },
+  "MX-JAL": { name: "Jalisco", d: "M403 313L405 312L409 313L411 314L413 315L414 315L418 313L421 310L425 308L423 306L423 303L426 304L429 305L431 308L434 309L433 311L432 313L431 319L432 322L430 324L429 323L427 328L425 330L424 333L419 339L421 340L423 343L421 347L421 350L418 350L416 351L411 351L408 353L407 353L405 354L405 356L401 357L400 356L397 356L396 357L396 359L395 361L398 361L402 362L403 365L402 367L404 371L403 374L406 374L407 376L406 377L405 379L404 381L402 381L400 381L396 385L394 386L392 388L390 386L388 388L385 388L385 386L384 385L384 383L384 379L383 376L382 372L379 374L376 376L372 376L370 377L368 378L366 378L364 379L361 379L360 380L358 380L357 382L355 382L352 381L352 379L350 379L348 378L346 376L344 372L340 368L338 365L334 359L333 357L333 353L330 351L329 348L331 347L333 346L339 346L340 344L341 343L339 341L342 338L343 335L345 334L347 335L350 332L353 333L354 334L358 335L360 338L361 339L364 342L363 338L365 337L366 332L366 328L371 328L372 327L374 326L376 325L377 324L377 320L377 318L375 317L374 314L373 313L369 312L368 309L368 308L365 306L364 306L363 303L364 298L365 297L367 296L367 294L370 293L371 293L370 296L372 296L373 295L372 293L371 289L371 288L373 287L375 286L377 287L377 288L376 289L374 292L373 295L373 298L374 300L375 301L376 300L376 292L380 291L383 293L383 296L380 302L380 304L382 304L383 303L385 304L386 301L389 299L388 298L388 296L390 296L392 296L392 299L394 299L395 300L394 304L393 306L388 308L386 310L383 312L383 317L381 319L379 319L380 322L382 322L383 322L383 324L378 326L378 327L380 328L382 330L385 331L388 332L392 331L393 331L395 330L395 328L397 327L399 328L402 325L405 323L406 322L406 319L403 317L403 316L403 313Z" },
+  "MX-HID": { name: "Hidalgo", d: "M510 321L511 323L510 325L512 326L515 327L516 326L518 327L520 331L518 333L518 335L518 337L517 337L515 336L512 338L511 339L511 343L510 347L512 350L514 349L517 347L519 345L520 344L522 342L525 343L525 346L522 348L521 350L517 351L518 353L520 353L521 355L520 360L518 363L519 368L517 367L514 370L511 370L506 372L506 371L508 366L508 364L502 365L500 368L498 365L500 364L501 359L501 358L497 359L494 360L493 361L493 364L492 365L490 364L490 367L487 361L486 360L487 359L485 355L481 355L477 353L476 351L477 344L483 343L485 341L484 339L485 336L487 334L489 331L488 329L490 328L491 329L496 327L497 324L499 323L500 326L503 327L504 325L505 326L506 323L508 321L510 321Z" },
+  "MX-GRO": { name: "Guerrero", d: "M486 397L486 399L489 399L491 402L496 403L499 405L499 406L501 408L502 411L505 410L505 412L509 414L509 415L514 414L515 416L517 417L515 421L515 424L518 429L518 434L517 435L517 437L520 438L520 442L522 443L523 445L522 447L521 449L519 450L518 451L517 453L514 455L514 457L509 461L504 454L500 455L493 453L486 451L482 451L479 449L477 448L475 447L474 445L463 441L456 438L446 435L446 433L442 430L436 428L436 427L435 425L433 425L431 424L431 422L429 420L427 418L423 416L421 415L419 416L418 415L418 411L419 410L421 409L422 409L425 407L425 405L425 404L425 401L426 399L427 400L430 398L432 399L433 401L434 401L438 401L440 400L445 401L447 401L449 404L451 403L456 406L457 405L454 401L454 398L453 393L455 392L455 393L457 391L459 389L460 387L462 386L462 389L461 391L461 395L461 397L462 397L463 400L461 401L464 402L466 405L467 405L470 403L472 402L471 401L473 400L477 400L479 397L483 396L485 397L486 397Z" },
+  "MX-GUA": { name: "Guanajuato", d: "M478 318L479 321L477 323L480 323L479 326L476 328L474 326L473 327L470 330L470 333L468 334L465 334L464 335L459 335L458 338L458 340L460 344L460 346L461 348L463 350L464 352L463 353L464 355L463 357L464 358L463 359L457 361L456 362L452 362L448 361L447 358L445 359L443 358L442 360L437 359L436 353L436 351L433 351L431 352L429 354L428 354L425 355L423 354L422 350L421 350L421 347L423 343L421 340L419 339L424 333L425 330L427 328L429 323L430 324L432 322L431 319L432 313L433 311L434 309L435 309L437 309L440 310L441 310L446 312L449 313L451 315L456 318L458 317L460 317L460 314L461 313L465 314L469 317L471 319L476 319L478 318Z" },
+  "MX-DUR": { name: "Durango", d: "M375 174L379 176L383 180L385 184L384 188L386 192L386 196L387 200L386 204L383 207L384 209L386 210L384 211L383 212L383 215L385 217L386 219L388 221L389 224L390 226L394 228L397 228L399 229L400 228L399 227L400 224L403 221L404 223L405 225L407 227L406 232L408 232L409 236L408 238L402 239L400 238L400 239L395 238L392 239L390 238L386 238L384 240L382 242L380 245L377 247L375 248L376 251L376 255L375 256L376 260L374 263L371 266L371 268L370 274L368 277L368 278L369 281L369 283L368 288L365 289L364 291L363 294L360 295L359 296L357 295L356 293L354 291L352 290L351 288L348 292L347 291L345 288L346 287L349 285L349 282L348 282L347 279L344 279L342 277L341 278L339 279L337 276L335 274L331 274L330 270L328 267L329 266L328 264L327 261L325 259L323 256L323 253L322 252L320 247L320 245L317 240L315 239L311 238L310 239L305 242L304 242L302 238L302 234L300 234L299 229L298 229L297 227L294 227L293 224L291 219L290 219L290 217L290 212L291 209L290 207L292 205L292 203L295 202L296 204L301 205L302 206L303 204L307 202L309 199L308 196L307 195L309 191L309 189L311 187L313 186L314 184L314 182L314 180L315 174L317 173L317 172L320 173L323 174L324 176L326 178L327 177L331 180L333 180L333 181L335 181L337 182L341 180L346 180L348 182L351 183L353 183L355 183L355 180L357 177L358 177L361 174L361 172L366 175L373 173L375 174Z" },
+  "MX-CMX": { name: "Ciudad de México", d: "M501 385L498 386L497 385L495 386L494 385L492 385L490 381L490 379L493 377L493 375L495 373L497 375L498 378L501 380L502 383L501 385Z" },
+  "MX-COL": { name: "Colima", d: "M385 388L382 391L381 390L381 393L379 394L378 396L377 394L373 391L368 388L364 387L364 385L363 384L361 384L355 382L357 382L358 380L360 380L361 379L364 379L366 378L368 378L370 377L372 376L376 376L379 374L382 372L383 376L384 379L384 383L384 385L385 386L385 388Z" },
+  "MX-COA": { name: "Coahuila", d: "M477 146L475 148L472 149L467 148L463 148L462 149L461 151L459 154L460 156L459 157L457 157L455 158L453 158L451 160L450 162L451 165L453 167L454 165L455 164L457 165L458 170L457 173L456 173L455 175L451 176L449 177L446 177L445 178L444 181L442 183L441 184L446 189L448 191L449 194L452 196L451 199L451 202L452 203L454 204L456 204L457 208L461 211L461 212L464 212L466 215L465 217L463 217L460 216L458 214L457 214L456 215L454 216L452 219L453 222L453 225L451 224L451 227L452 229L453 231L452 234L450 234L447 235L445 235L444 233L442 230L441 229L438 228L435 229L434 230L431 229L431 226L428 226L426 223L424 222L422 221L419 219L410 218L403 220L403 221L400 224L399 227L400 228L399 229L397 228L394 228L390 226L389 224L388 221L386 219L385 217L383 215L383 212L384 211L386 210L384 209L383 207L386 204L387 200L386 196L386 192L384 188L385 184L383 180L379 176L375 174L374 172L372 171L372 168L376 167L376 165L374 164L374 159L373 155L373 152L372 152L371 147L372 146L371 145L372 143L371 142L373 141L374 138L378 130L377 129L380 124L383 122L385 118L386 118L387 117L385 116L387 112L391 113L394 113L395 110L396 110L397 107L399 107L400 106L400 103L402 101L401 100L404 95L405 92L410 91L412 91L414 88L418 89L419 90L421 91L422 90L425 90L427 90L431 91L434 91L436 91L438 93L441 95L441 98L443 98L444 99L446 100L447 102L450 104L453 105L454 108L456 110L456 114L459 118L460 122L463 124L462 125L464 127L464 129L465 131L465 132L467 134L471 136L472 138L473 140L475 142L476 145L477 146Z" },
+  "MX-CHH": { name: "Chihuahua", d: "M387 112L385 116L387 117L386 118L385 118L383 122L380 124L377 129L378 130L374 138L373 141L371 142L372 143L371 145L372 146L371 147L372 152L373 152L373 155L374 159L374 164L376 165L376 167L372 168L372 171L374 172L375 174L373 173L366 175L361 172L361 174L358 177L357 177L355 180L355 183L353 183L351 183L348 182L346 180L341 180L337 182L335 181L333 181L333 180L331 180L327 177L326 178L324 176L323 174L320 173L317 172L317 173L315 174L314 180L314 182L314 184L313 186L311 187L309 189L309 191L307 195L308 196L309 199L307 202L303 204L302 206L301 205L296 204L295 202L292 203L290 200L290 197L287 192L284 192L281 191L278 190L276 186L275 184L273 181L272 178L271 177L271 172L270 169L269 169L269 167L268 166L263 166L261 166L259 167L255 165L256 164L256 161L257 157L257 156L254 148L250 146L251 144L251 142L249 139L246 138L247 135L245 133L246 132L249 132L250 131L253 132L256 131L258 129L256 128L254 125L255 124L254 122L254 120L256 117L255 115L256 114L256 111L257 110L257 107L259 107L258 101L259 99L259 97L259 90L257 90L257 85L259 82L257 79L258 76L256 69L255 67L256 66L255 65L255 62L253 61L254 59L254 56L254 54L252 50L253 49L252 48L266 48L266 36L285 36L308 36L309 37L312 37L314 40L314 42L316 44L320 46L321 46L323 48L325 49L327 53L332 55L333 58L336 60L337 61L340 63L341 63L345 65L346 66L347 68L349 69L350 71L350 74L354 78L355 80L354 84L355 87L356 88L358 92L358 94L363 98L365 98L367 99L368 101L373 104L376 104L378 105L379 107L381 108L383 108L387 112Z" },
+  "MX-CHP": { name: "Chiapas", d: "M621 464L621 461L621 459L620 456L620 455L622 448L625 446L626 442L627 441L627 438L628 437L630 436L634 433L636 430L636 428L639 425L640 422L640 419L640 416L642 415L645 417L647 418L649 418L649 420L648 423L650 426L650 428L653 429L654 432L656 432L660 429L662 428L667 423L669 422L669 420L670 419L674 419L674 418L677 418L679 418L680 420L680 422L683 423L684 427L683 429L684 430L686 430L689 432L690 434L689 435L691 438L694 439L695 442L698 445L701 446L703 448L707 450L708 452L708 456L710 457L712 457L712 458L714 458L715 460L713 464L714 468L698 468L681 467L672 484L669 490L673 495L672 497L671 498L671 500L670 502L671 506L669 509L669 510L664 506L653 493L648 488L641 481L635 476L632 474L626 470L628 469L626 467L622 466L621 464Z" },
+  "MX-CAM": { name: "Campeche", d: "M686 393L683 396L681 397L679 397L678 396L681 396L686 393ZM715 338L715 345L718 346L720 348L721 348L722 349L724 347L726 349L726 351L728 352L730 357L734 359L735 362L738 365L739 369L741 371L744 374L747 377L749 381L749 387L748 388L748 391L747 395L747 397L748 399L749 401L748 403L749 404L749 408L748 411L746 414L746 416L746 420L731 420L714 420L700 420L700 418L693 415L691 414L688 413L685 413L684 417L681 418L679 417L676 416L676 415L672 412L669 407L669 405L668 404L667 404L664 401L662 397L664 396L674 395L675 396L676 397L678 398L677 399L676 398L675 399L678 401L685 403L686 402L687 401L692 399L692 396L693 395L692 393L691 394L690 392L689 390L696 386L697 385L701 383L705 379L706 377L707 374L707 372L707 370L707 369L708 366L712 363L713 361L712 358L713 357L712 349L712 346L713 342L714 339L715 338Z" },
+  "MX-BCS": { name: "Baja California Sur", d: "M167 215L167 216L166 219L166 223L166 225L165 228L163 228L165 222L167 215ZM116 141L117 141L150 141L151 143L153 146L155 149L160 151L162 153L163 157L164 158L165 161L168 163L172 165L170 166L170 168L172 170L174 172L174 173L173 175L174 176L176 179L177 180L179 179L175 175L174 171L175 170L177 171L179 174L181 176L181 179L184 180L184 183L186 185L186 188L188 193L187 196L188 201L190 203L191 205L193 208L195 208L195 210L196 213L197 214L198 218L202 223L204 227L203 230L202 233L202 236L203 237L204 240L205 243L207 244L210 245L210 247L213 245L212 242L213 240L215 240L216 243L219 244L221 245L221 248L223 249L225 248L226 249L225 252L228 255L228 257L229 259L233 261L235 265L235 271L232 274L229 275L228 277L226 278L225 279L223 281L222 281L219 279L218 276L217 269L213 263L211 261L207 259L204 257L200 251L194 247L189 243L183 240L182 239L180 238L179 234L178 235L176 235L174 232L172 230L170 229L168 228L166 226L166 225L167 221L166 220L167 218L168 215L168 209L169 208L169 204L165 195L165 194L163 193L162 190L160 188L158 188L152 185L143 178L143 177L140 173L142 170L140 168L140 171L139 172L138 174L137 173L133 172L131 175L129 175L128 173L127 173L125 169L123 168L121 167L120 168L118 165L115 163L111 163L108 161L108 157L107 156L105 154L101 153L100 151L97 149L96 148L95 147L93 145L97 144L102 145L105 146L107 146L113 143L112 146L113 147L116 149L118 150L119 148L121 149L123 152L124 151L122 149L123 148L123 145L121 144L120 146L120 147L117 148L115 147L115 145L117 143L116 141ZM212 235L213 237L213 239L211 237L212 235ZM171 235L174 235L175 237L177 238L178 240L178 241L171 235ZM223 239L226 245L224 246L223 243L223 239ZM194 193L193 195L191 197L190 197L191 195L191 194L194 193ZM203 219L204 221L206 221L207 226L204 224L203 221L203 219ZM196 391L198 393L198 395L195 394L194 393L196 391Z" },
+  "MX-BCN": { name: "Baja California", d: "M131 97L133 98L135 100L136 102L136 104L141 104L141 109L141 110L143 111L142 113L139 110L138 108L135 106L134 105L132 103L130 100L131 97ZM89 129L91 133L91 136L90 139L89 139L87 137L87 136L89 134L88 132L89 129ZM117 141L116 141L115 142L113 141L116 138L116 140L117 141ZM99 16L97 16L96 20L94 22L95 24L95 26L95 28L94 31L100 35L99 36L100 40L99 41L98 44L98 47L98 50L98 53L98 55L100 56L99 57L102 59L102 62L102 67L104 71L104 77L103 79L105 83L107 86L110 88L110 90L111 92L113 91L115 92L116 93L120 97L124 100L126 101L129 104L129 107L131 109L132 111L131 114L132 115L133 114L136 115L136 118L139 117L140 118L141 122L142 122L143 126L145 127L148 127L149 128L148 132L150 135L150 136L150 139L151 141L151 143L150 141L118 141L119 139L117 138L117 137L118 135L118 133L117 133L119 128L118 126L115 122L114 121L111 119L110 116L108 114L106 114L105 113L104 110L102 109L101 107L99 106L95 102L93 101L90 100L88 98L85 97L83 95L82 95L80 93L79 93L77 91L77 88L76 86L74 86L75 82L75 81L75 77L74 75L72 74L68 72L69 67L68 63L65 61L63 58L61 58L62 53L60 49L58 48L56 45L53 43L52 42L53 39L53 37L54 37L54 34L51 32L50 31L47 29L47 26L46 23L43 22L41 16L41 15L63 13L78 12L102 10L100 13L99 16ZM13 107L12 109L13 110L13 114L12 115L11 111L10 110L10 108L13 107Z" },
+  "MX-AGU": { name: "Aguascalientes", d: "M403 313L400 311L400 310L402 307L404 303L406 299L409 298L412 296L415 293L415 295L418 297L421 299L421 300L423 303L423 306L425 308L421 310L418 313L414 315L413 315L411 314L409 313L405 312L403 313Z" },
+};
+
+const CORTE_FECHA = "2026-08-19";
+const EVENTOS = [
+  { id:"ARG-101-001", estado:"MX-MIC", region:"Pacífico", color:"verde", impacto:"grande",
+    hecho:"La SEMAR localiza 54 bultos con más de 1,600 kg de presunta cocaína a la deriva, a unos 329 km (178 millas náuticas) al suroeste de Lázaro Cárdenas; sin detenidos ni embarcación asociada. Reactiva el narcotráfico marítimo",
+    fuentes:["SEMAR (citada)","La Razón","Crónica","Tribuna","Periódico Correo"], confianza:"\u2605\u2605\u2605\u2606\u2606", fecha:"2026-08-17", hora:"\u2014" },
+
+  { id:"ARG-101-002", estado:"MX-COL", region:"Occidente", color:"amarillo", impacto:"grande",
+    hecho:"Elementos de la SSPC de Colima y de la SEMAR son agredidos en una presunta casa de seguridad y repelen la agresión: dos presuntos integrantes del CJNG abatidos. Granadas y armas aseguradas SIN cantidad publicada",
+    fuentes:["Infobae","Milenio","Puente Libre","El Occidental"], confianza:"\u2605\u2605\u2605\u2606\u2606", fecha:"2026-08-18", hora:"\u2014" },
+
+  { id:"ARG-101-003", estado:"MX-MIC", region:"Occidente", color:"amarillo", impacto:"mediano",
+    hecho:"Cerca de una hora de detonaciones entre civiles armados en la zona serrana de Zinapécuaro; se movilizan SEDENA, GN y Guardia Civil. Sin información oficial: se desconoce si hubo víctimas",
+    fuentes:["Quadratín","Respuesta","MiMorelia","La Voz de Michoacán"], confianza:"\u2605\u2605\u2606\u2606\u2606", fecha:"2026-08-17", hora:"~21:00" },
+
+  { id:"ARG-101-004", estado:"MX-MEX", region:"Centro", color:"verde", impacto:"grande",
+    hecho:"La FEMDO y la AIC de la FGR detienen a cuatro presuntos agentes investigadores de la FGJEM por extorsión y secuestro exprés en Texcoco y Ecatepec; armamento asegurado sin cantidad publicada",
+    fuentes:["Infobae","Quadratín Edomex","Red Acciones"], confianza:"\u2605\u2605\u2605\u2606\u2606", fecha:"2026-08-18", hora:"\u2014" },
+
+  { id:"ARG-101-005", estado:"MX-CMX", region:"Centro", color:"verde", impacto:"pequeno",
+    hecho:"Cateo de la SSC-CDMX y la FGJ-CDMX en la colonia Guerrero, Cuauhtémoc: 1 arma corta y 2 detenidos. Único evento del corte con cifra exacta de armamento",
+    fuentes:["El Heraldo de México","NotiMX"], confianza:"\u2605\u2605\u2605\u2606\u2606", fecha:"2026-08-17", hora:"\u2014" },
+
+  { id:"ARG-101-006", estado:"MX-QUE", region:"Centro", color:"verde", impacto:"mediano",
+    hecho:"Cateos simultáneos de la FGE de Querétaro en seis municipios: 7 detenidos, drogas y armas sin cantidad publicada",
+    fuentes:["Infobae"], confianza:"\u2605\u2605\u2605\u2606\u2606", fecha:"2026-08-18", hora:"\u2014" },
+
+  { id:"ARG-101-007", estado:"MX-GUA", region:"Occidente", color:"verde", impacto:"mediano",
+    hecho:"Las FSPE detienen a cuatro personas en Acámbaro y aseguran 5 armas de fuego sin desglose corta/larga, 137 dosis y 3 motocicletas",
+    fuentes:["La Crónica","AM","Guanajuato Desconocido"], confianza:"\u2605\u2605\u2605\u2606\u2606", fecha:"2026-08-17", hora:"\u2014" },
+
+  { id:"ARG-101-008", estado:"MX-BCN", region:"Noroeste", color:"verde", impacto:"pequeno",
+    hecho:"Detención de tres personas en la Zona Centro de Tijuana por un ataque armado con un fallecido; sin aseguramiento de armas publicado",
+    fuentes:["El Imparcial"], confianza:"\u2605\u2605\u2606\u2606\u2606", fecha:"2026-08-17", hora:"\u2014" },
+
+  { id:"ARG-101-009", estado:"MX-MEX", region:"Centro", color:"verde", impacto:"pequeno",
+    hecho:"Vinculación a proceso de dos exfuncionarios de Medio Ambiente por la red de extorsión a verificentros, recluidos en Chalco. Cierra el seguimiento ARG-97-004; NO es sentencia",
+    fuentes:["La Silla Rota","Crónica","La Jornada"], confianza:"\u2605\u2605\u2605\u2606\u2606", fecha:"2026-08-17", hora:"\u2014" },
+
+  { id:"ARG-101-010", estado:"MX-JAL", region:"Occidente", color:"verde", impacto:"pequeno",
+    hecho:"La FGR vincula a proceso a cinco presuntos integrantes de Los Deltas por acopio de armas y cartuchos de uso exclusivo, tras dos cateos en Zapopan. NO es sentencia",
+    fuentes:["Infobae"], confianza:"\u2605\u2605\u2606\u2606\u2606", fecha:"2026-08-17", hora:"\u2014" },
+
+  { id:"ARG-101-SEN-001", estado:"MX-DUR", region:"Noroeste", color:"verde", impacto:"mediano",
+    hecho:"La FGE de Durango publica sentencia condenatoria por más de 26 años por homicidio calificado y agravado por parentesco en la Región Laguna. Única condenatoria integrada del corte; firmeza no informada",
+    fuentes:["FGE Durango"], confianza:"\u2605\u2605\u2605\u2606\u2606", fecha:"2026-08-17", hora:"\u2014" }
+];
+
+
+
+// Arreglo propio del módulo de armamento: TODOS los eventos del corte con aseguramiento de
+// armamento, tengan o no cantidad publicada. ARGOS 101 incorpora también los cualitativos para
+// que el mapa y la tarjeta "estados con aseguramientos" (5) no puedan divergir entre si.
+// El color sigue el semáforo del mapa (CLAUDE.md): verde = aseguramiento sin enfrentamiento;
+// amarillo = derivado de enfrentamiento o agresión. No hereda EVENTOS para no pintar entidades
+// que no tuvieron aseguramiento — el error que el mapa arrastraba de la plantilla.
+const EVENTOS_ARM = [
+  { id:"ARG-101-ARM-001", estado:"MX-CMX", region:"Centro", color:"verde", impacto:"pequeno",
+    hecho:"Cuauhtémoc, col. Guerrero: 1 arma corta y 2 detenidos. Cartuchos mencionados sin cantidad — no se infieren",
+    fuentes:["El Heraldo de México","NotiMX"], confianza:"Medio", fecha:"2026-08-17", hora:"\u2014" },
+
+  { id:"ARG-101-ARM-002", estado:"MX-GUA", region:"Occidente", color:"verde", impacto:"mediano",
+    hecho:"Acámbaro: 5 armas de fuego SIN desglose corta/larga y 4 detenidos. Renglón propio de armas sin clasificar: no se reparte entre categorías",
+    fuentes:["La Crónica","AM"], confianza:"Medio", fecha:"2026-08-17", hora:"\u2014" },
+
+  { id:"ARG-101-ARM-003", estado:"MX-MEX", region:"Centro", color:"verde", impacto:"mediano",
+    hecho:"Texcoco y Ecatepec: armas de uso exclusivo y cartuchos SIN cantidad publicada; 4 detenidos, presuntos agentes de la FGJEM. Evento cualitativo",
+    fuentes:["Infobae","Quadratín Edomex"], confianza:"Medio", fecha:"2026-08-18", hora:"\u2014" },
+
+  { id:"ARG-101-ARM-004", estado:"MX-QUE", region:"Centro", color:"verde", impacto:"mediano",
+    hecho:"Seis municipios: armas y droga SIN cantidad publicada; 7 detenidos. Evento cualitativo",
+    fuentes:["Infobae"], confianza:"Medio", fecha:"2026-08-18", hora:"\u2014" },
+
+  { id:"ARG-101-ARM-005", estado:"MX-COL", region:"Occidente", color:"amarillo", impacto:"grande",
+    hecho:"Colima: granadas, armas y cargadores SIN cantidad publicada; más de 2,500 cartuchos es cifra imprecisa y no se integra. Aseguramiento derivado de enfrentamiento",
+    fuentes:["Infobae","Puente Libre"], confianza:"Medio", fecha:"2026-08-18", hora:"\u2014" }
+];
+
+const REGION_ORDER = ["Noroeste","Noreste","Occidente","Centro","Golfo","Sureste","Pacífico"];
+const STATE_REGION = {
+  "MX-BCN":"Noroeste","MX-BCS":"Noroeste","MX-SON":"Noroeste","MX-CHH":"Noroeste","MX-SIN":"Noroeste","MX-DUR":"Noroeste",
+  "MX-COA":"Noreste","MX-NLE":"Noreste","MX-TAM":"Noreste","MX-SLP":"Noreste","MX-ZAC":"Noreste",
+  "MX-JAL":"Occidente","MX-COL":"Occidente","MX-NAY":"Occidente","MX-AGU":"Occidente","MX-MIC":"Occidente","MX-GUA":"Occidente",
+  "MX-CMX":"Centro","MX-MEX":"Centro","MX-MOR":"Centro","MX-PUE":"Centro","MX-TLA":"Centro","MX-HID":"Centro","MX-QUE":"Centro",
+  "MX-VER":"Golfo","MX-TAB":"Golfo",
+  "MX-CHP":"Sureste","MX-OAX":"Sureste","MX-GRO":"Sureste","MX-CAM":"Sureste","MX-YUC":"Sureste","MX-ROO":"Sureste"
+};
+const SEVERITY_RANK = { rojo:3, amarillo:2, verde:1 };
+const SEVERITY_COLOR = { rojo:"#ff3b3b", amarillo:"#ffd23f", verde:"#33d17a" };
+const SEVERITY_LABEL = { rojo:"🔴 Alto impacto", amarillo:"🟡 Violencia operativa", verde:"🟢 Acción institucional" };
+const GRIS = "#26314a";
+const SIZE_R = { grande:11, mediano:7.5, pequeno:5 };
+
+function argosHash(s){
+  let h = 0;
+  for (let i = 0; i < s.length; i++) { h = (h * 31 + s.charCodeAt(i)) | 0; }
+  return Math.abs(h);
+}
+
+function argosPolarPoint(cx, cy, r, angDeg){
+  const a = (angDeg * Math.PI) / 180;
+  return [cx + r * Math.cos(a), cy + r * Math.sin(a)];
+}
+
+function argosTopEventFor(evs){
+  return evs.slice().sort(function (a, b) {
+    const r = SEVERITY_RANK[b.color] - SEVERITY_RANK[a.color];
+    if (r !== 0) return r;
+    return (b.fecha || "").localeCompare(a.fecha || "");
+  })[0];
+}
+
+function argosBuildStateTooltip(sid, evs){
+  const name = (MEXICO_PATHS[sid] && MEXICO_PATHS[sid].name) || sid;
+  if (!evs || !evs.length) {
+    return "<b>" + name + "</b><br>Nivel: ⚪ Sin datos<br>Sin eventos relevantes durante el corte.";
+  }
+  const top = argosTopEventFor(evs);
+  let html = "<b>" + name + "</b>" +
+    "<br>Nivel: " + SEVERITY_LABEL[top.color] +
+    "<br>Evento: " + top.hecho +
+    "<br>ARG-ID: " + top.id +
+    "<br>Fuentes: " + (top.fuentes || []).join(", ") +
+    "<br>Confianza: " + (top.confianza || "—") +
+    "<br>Consulta: " + (top.fecha || "—") + " " + (top.hora || "");
+  if (evs.length > 1) {
+    html += "<br><i>+" + (evs.length - 1) + " evento(s) adicional(es) en esta entidad</i>";
+  }
+  return html;
+}
+
+function argosShowTooltip(e, html){
+  const tt = document.getElementById("argos-tooltip");
+  if (!tt) return;
+  tt.innerHTML = html;
+  const pad = 14;
+  let x = e.clientX + pad, y = e.clientY + pad;
+  tt.style.left = x + "px";
+  tt.style.top = y + "px";
+  tt.classList.add("show");
+}
+function argosHideTooltip(){
+  const tt = document.getElementById("argos-tooltip");
+  if (tt) tt.classList.remove("show");
+}
+
+function argosRenderMap(containerId, eventos){
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  const byState = {};
+  eventos.forEach(function (ev) {
+    if (!ev.estado) return;
+    (byState[ev.estado] = byState[ev.estado] || []).push(ev);
+  });
+  let svg = '<svg viewBox="' + MEXICO_VIEWBOX + '" preserveAspectRatio="xMidYMid meet">';
+  Object.keys(MEXICO_PATHS).forEach(function (sid) {
+    const st = MEXICO_PATHS[sid];
+    const evs = byState[sid];
+    const top = evs ? argosTopEventFor(evs) : null;
+    const fill = top ? SEVERITY_COLOR[top.color] : GRIS;
+    svg += '<path class="estado-path" data-sid="' + sid + '" d="' + st.d + '" fill="' + fill + '" fill-opacity="' + (top ? "0.88" : "0.55") + '"></path>';
+  });
+  svg += "</svg>";
+  el.innerHTML = svg;
+  el.querySelectorAll(".estado-path").forEach(function (path) {
+    const sid = path.dataset.sid;
+    path.addEventListener("mousemove", function (e) {
+      argosShowTooltip(e, argosBuildStateTooltip(sid, byState[sid]));
+    });
+    path.addEventListener("mouseleave", argosHideTooltip);
+    path.addEventListener("click", function () {
+      const evs = byState[sid];
+      if (evs && evs.length) { location.hash = argosTopEventFor(evs).id; }
+    });
+  });
+}
+
+function argosRenderRadar(containerId, statsId, eventos, corteFechaStr){
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  const W = 220, H = 220, CX = 110, CY = 110, RMAX = 98, RMIN = 20, WINDOW_DAYS = 10;
+  const sector = 360 / REGION_ORDER.length;
+  const corte = corteFechaStr ? new Date(corteFechaStr) : new Date();
+
+  let svg = '<svg viewBox="0 0 ' + W + ' ' + H + '">';
+  svg += '<defs><radialGradient id="rgrad-' + containerId + '" cx="50%" cy="50%" r="50%">' +
+    '<stop offset="0%" stop-color="rgba(76,230,255,.10)"/><stop offset="100%" stop-color="rgba(76,230,255,0)"/></radialGradient></defs>';
+  svg += '<circle cx="' + CX + '" cy="' + CY + '" r="' + RMAX + '" fill="url(#rgrad-' + containerId + ')"/>';
+  [1, 2, 3, 4].forEach(function (i) {
+    svg += '<circle class="radar-ring" cx="' + CX + '" cy="' + CY + '" r="' + (RMAX * i / 4) + '"/>';
+  });
+  svg += '<line class="radar-cross" x1="' + (CX - RMAX) + '" y1="' + CY + '" x2="' + (CX + RMAX) + '" y2="' + CY + '"/>';
+  svg += '<line class="radar-cross" x1="' + CX + '" y1="' + (CY - RMAX) + '" x2="' + CX + '" y2="' + (CY + RMAX) + '"/>';
+
+  const sweepAngle = 42;
+  const p0 = argosPolarPoint(CX, CY, RMAX, -90);
+  const p1 = argosPolarPoint(CX, CY, RMAX, -90 + sweepAngle);
+  const sweepPath = "M" + CX + " " + CY + " L" + p0[0].toFixed(1) + " " + p0[1].toFixed(1) +
+    " A" + RMAX + " " + RMAX + " 0 0 1 " + p1[0].toFixed(1) + " " + p1[1].toFixed(1) + " Z";
+  svg += '<g><path class="radar-sweep-path" d="' + sweepPath + '">' +
+    '<animateTransform attributeName="transform" type="rotate" from="0 ' + CX + ' ' + CY + '" to="360 ' + CX + ' ' + CY + '" dur="9s" repeatCount="indefinite"/>' +
+    "</path></g>";
+
+  const counts = { rojo: 0, amarillo: 0, verde: 0 };
+  const countedIds = {};
+  eventos.forEach(function (ev, idx) {
+    if (!countedIds[ev.id]) { counts[ev.color] = (counts[ev.color] || 0) + 1; countedIds[ev.id] = true; }
+    const ri = REGION_ORDER.indexOf(ev.region);
+    const baseAngle = (ri >= 0 ? ri * sector + sector / 2 : 0) - 90;
+    const jitterSeed = argosHash(ev.id + "-" + idx) % 100;
+    const jitter = (jitterSeed / 100 - 0.5) * (sector * 0.7);
+    const angle = baseAngle + jitter;
+    let daysAgo = WINDOW_DAYS;
+    if (ev.fecha) {
+      const d = new Date(ev.fecha);
+      daysAgo = Math.max(0, Math.round((corte - d) / 86400000));
+    }
+    const t = Math.min(1, daysAgo / WINDOW_DAYS);
+    const r = RMAX - t * (RMAX - RMIN);
+    const p = argosPolarPoint(CX, CY, r, angle);
+    const rad = SIZE_R[ev.impacto] || SIZE_R.pequeno;
+    const color = SEVERITY_COLOR[ev.color] || "#8fb8c8";
+    const cls = "eco" + (ev.color === "rojo" ? " pulse" : "");
+    svg += '<a href="#' + ev.id + '"><circle class="' + cls + '" cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) +
+      '" r="' + rad + '" fill="' + color + '"><title>' + ev.id + " — " + ev.hecho + " (" + (ev.fecha || "") + ")</title></circle></a>";
+  });
+
+  svg += "</svg>";
+  el.innerHTML = svg;
+
+  if (statsId) {
+    const st = document.getElementById(statsId);
+    if (st) {
+      st.innerHTML =
+        "<div>🔴 Alto impacto<br><b>" + (counts.rojo || 0) + "</b></div>" +
+        "<div>🟡 Violencia operativa<br><b>" + (counts.amarillo || 0) + "</b></div>" +
+        "<div>🟢 Acciones institucionales<br><b>" + (counts.verde || 0) + "</b></div>";
+    }
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  argosRenderMap("argos-map", EVENTOS);
+  argosRenderRadar("argos-radar", "argos-radar-stats", EVENTOS, CORTE_FECHA);
+  argosRenderMap("argos-map-arm", EVENTOS_ARM);
+});
+
+</script>
+</body>
+</html>

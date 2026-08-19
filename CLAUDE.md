@@ -189,6 +189,37 @@ grave ocurrido en el pasado, el color del hecho de hoy es verde (es una acción 
 delito original, si ocurrió durante un corte anterior, se clasificó en su momento como rojo en ese
 corte y no se recalifica retroactivamente.
 
+### Un delito y su detención son dos eventos, no uno
+
+Versión 1.0 — regla nacida del fallo de `ARG-101-008`, corregido en ARGOS 102.
+
+La regla anterior resuelve el caso en que el delito ocurrió en un corte **pasado**. No resolvía el
+caso en que el delito y su detención ocurren **dentro de la misma ventana**, y ahí se produjo un
+error real: ARGOS 101 publicó como **un solo evento 🟢 VERDE** la detención de tres personas por un
+ataque armado **que dejó un muerto ese mismo día, dentro de la ventana**. El homicidio quedó
+absorbido por la acción institucional y desapareció del recuento del semáforo.
+
+**Cuando el delito y la respuesta institucional caen los dos dentro de la ventana, se abren dos
+fichas con dos ARG-ID**: una para el hecho delictivo, con el color que le corresponda por su tipo, y
+otra para la detención, en verde. **Un homicidio nunca se contabiliza en verde**, ni siquiera cuando
+la noticia del corte es la captura de sus presuntos responsables. La capacidad de respuesta y el
+daño causado son dos hechos distintos y el semáforo debe poder verlos por separado.
+
+### Homicidio doloso único: cierre de un vacío de la escala
+
+La enumeración de 🔴 ROJO exige homicidios **múltiples**, y la de 🟡 AMARILLO recoge los
+"incidentes armados focalizados", de modo que un **homicidio doloso único contra un civil** no
+estaba enumerado en ninguna de las tres categorías. Se resuelve así:
+
+- **🟡 AMARILLO** — homicidio doloso único sin las agravantes de la lista roja. Es daño consumado,
+  pero no un incremento del riesgo estratégico nacional, que es lo que la metodología mide.
+- **🔴 ROJO** — el mismo hecho sube de color si concurre cualquiera de estas: víctimas múltiples;
+  víctima que sea autoridad, servidor público, periodista o persona defensora; uso de explosivos,
+  AEI o drones armados; ejecución pública dirigida a aterrorizar a la población; o vinculación a un
+  ataque coordinado del crimen organizado.
+
+El criterio sigue siendo el **tipo de evento**, nunca el número de casos ni el impacto mediático.
+
 ### Aplicación en ARGOS
 
 El cartelón agrupa los eventos por color y elabora la Valoración ARGOS considerando principalmente
@@ -253,8 +284,22 @@ Consecuencias operativas, mientras siga vigente:
 - **SEMAR** — `gob.mx/semar` y regiones navales.
 - **FGR** — `gob.mx/fgr`, fiscalías especializadas y delegaciones estatales.
 - **SSPC / Gabinete de Seguridad** — `gob.mx/sspc` y `seguridad.sspc.gob.mx`, incluidos los
-  comunicados conjuntos e informes diarios.
+  comunicados conjuntos e informes diarios. **Emisor de formato variable**: alterna boletín diario y
+  agregado de varios días sin avisar. Ver la regla de la doble consulta más abajo.
+- **Gabinete de Seguridad — portal propio** `gabinetedeseguridad.gob.mx/resultados/`. **Obligatorio
+  desde el 1-sep-2026**: el emisor anunció el 18-ago-2026 que los reportes diarios preliminares de
+  homicidio y robo de vehículo migran a ese sitio.
 - **Aduanas / ANAM** cuando el hecho sea fronterizo o portuario.
+
+**Regla de la doble consulta (obligatoria antes de declarar cualquier vacío federal)**
+
+Ningún vacío del boletín federal puede declararse sin haber consultado **en las dos formas**: por
+día suelto ("acciones relevantes del 17 de agosto") **y** por rango ("del 14, 15 y 16 de agosto").
+Una consulta por día no alcanza un agregado y una consulta por rango no alcanza un diario. Esta
+regla nace de dos falsos vacíos consecutivos: ARGOS 98-100 declararon cuatro cortes sin boletín
+cuando el emisor había pasado a agregado, y ARGOS 101 —al corregir el primero— dejó vivo un
+"vacío del 17-ago" que tampoco existía, porque el emisor había vuelto al formato diario. **El
+formato del boletín no es estable y no debe suponerse por el del corte anterior.**
 
 **Estatales — las 32 entidades**
 
@@ -295,6 +340,43 @@ El barrido de las 32 entidades no se ejecuta como una sola tarea: se reparte en 
 Sureste), cada uno con la lista de portales de sus entidades. Un solo equipo intentando el país
 entero produce cobertura parcial declarada como total — el fallo documentado en ARGOS 98, donde el
 módulo de armamento cubrió 18 de 32 entidades.
+
+### Rotación de cobertura — mecánica obligatoria
+
+Versión 1.0 — validada en ARGOS 101, escrita aquí en ARGOS 102.
+
+El presupuesto de búsqueda no alcanza para agotar los dos módulos en las 32 entidades: cada región
+debe elegir en qué gasta sus primeras consultas, y lo que se consulta al final es lo que se queda
+sin consultar. Si el orden de triaje es siempre el mismo, **son siempre las mismas entidades las
+que quedan sin revisar**, y el producto acumula un punto ciego fijo que ninguna edición ve porque
+todas lo heredan.
+
+La corrección es rotar qué regiones **encabezan el triaje judicial** —es decir, gastan sus primeras
+búsquedas en fiscalías y sentencias en vez de en armamento— en un ciclo fijo de tres ediciones que
+recorre las seis regiones:
+
+| Ciclo | Regiones que encabezan el triaje judicial | Ediciones |
+|---|---|---|
+| **A** | Noroeste + Centro | ARGOS 101, 104, 107… |
+| **B** | Noreste + Golfo | ARGOS 102, 105, 108… |
+| **C** | Occidente + Sureste | ARGOS 103, 106, 109… |
+
+Las cuatro regiones restantes de cada corte encabezan con el módulo de armamento. **El ciclo que
+toca se declara expresamente en el archivo de fuentes de la edición**, junto con el resultado: qué
+aportó la rotación que el orden anterior no habría aportado.
+
+Dos reglas que la acompañan:
+
+- **Prioridad sobre el ciclo**: si una edición dejó entidades `NO REVISADA`, esas entidades
+  encabezan el triaje de la edición siguiente **aunque no les toque por ciclo**, y el ciclo se
+  reanuda después. Saldar cobertura vence a mantener el turno.
+- **La rotación se declara, no se supone.** Una edición que no diga qué ciclo aplicó no aplicó
+  ninguno.
+
+El fundamento empírico es de ARGOS 101: al mandar a las trece fiscalías que ARGOS 100 había dejado
+sin revisar a encabezar el triaje, las 32 quedaron revisadas y **la única sentencia condenatoria
+integrable del corte apareció precisamente en una de esas trece** (Durango). No es una mejora
+cosmética de cobertura: cambia lo que el producto encuentra.
 
 ## Control editorial antes de publicar
 
@@ -355,6 +437,36 @@ publicarse el 17 con una URL fechada el 17: ambas fechas son correctas y describ
 Corolario para los agregados institucionales: **nunca aceptar una pena o una cifra destacada en el
 titular de un agregado sin una URL fechada que la ate específicamente a ese corte.** Una fiscalía
 puede encabezar un boletín de agosto con una condena de junio sin faltar a la verdad.
+
+### El *slug* institucional prueba el término, no identifica el caso
+
+Versión 1.0 — regla nacida del fallo de Coronango, detectado en ARGOS 102.
+
+El *slug* de un boletín oficial es texto primario de la autoridad y no paráfrasis del resumidor del
+buscador: por eso un término jurídico dentro del *slug* (`…fallo-condenatorio…`,
+`…sentencia-condenatoria…`) **sí sostiene la clasificación jurídica** de un caso, cosa que el mismo
+término en el titular de un medio no sostendría. Ese criterio se mantiene.
+
+Lo que **no** sostiene es la **identidad del caso**. ARGOS 98 respaldó la sentencia de Coronango con
+un boletín cuyo *slug* decía "fallo condenatorio por violación equiparada" en el municipio
+correcto — y era **otra persona, otra pena, otro año y otra colonia**. Municipio y delito
+coincidentes no identifican un caso, y en un mismo municipio una fiscalía publica varios casos del
+mismo delito.
+
+Regla operativa, en dos partes:
+
+1. **Para clasificar** un caso como sentencia, el término en el *slug* institucional basta.
+2. **Para identificar** un caso, hacen falta además **al menos dos campos individualizadores
+   coincidentes** —nombre o alias, pena exacta, fecha del hecho, colonia o fraccionamiento, número
+   de causa penal—. Sin ellos, el boletín es de un caso homónimo mientras no se demuestre lo
+   contrario, y se marca `POSIBLE CASO HOMÓNIMO — NO INTEGRAR HASTA VALIDACIÓN`.
+
+Corolario sobre la calidad de la ruta: un *slug* semántico **con fecha en la ruta**
+(`fiscalia.durango.gob.mx/2026/08/17/fged-obtiene-sentencia-condenatoria-…`) es un respaldo
+sustancialmente más fuerte que un *slug* semántico **sin fecha**, y ambos son más fuertes que una
+ruta GUID opaca. Cuando una edición sustituya la URL de un caso por otra, debe comprobar que la
+nueva es del mismo caso: la regresión de Coronango consistió en cambiar una URL correcta —que ARGOS
+97 ya tenía— por otra que parecía mejor porque su *slug* se leía.
 
 ### Toda cifra derivada debe declararse como cálculo propio
 
