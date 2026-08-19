@@ -144,5 +144,35 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-101-010` | 101 | 2026-08-18 | ARG-101-010 — Zapopan, Jalisco (🟢 VERDE) |
 | `ARG-101-SEN-001` | 101 | 2026-08-18 | ARG-101-SEN-001 — Región Laguna, Durango (🟢 VERDE) — única condenatoria integrada |
 
-**Total de ARG-ID indexados: 128** · Ediciones cubiertas: 15 archivos de fuentes.
+| `ARG-102-001` | 102 | 2026-08-19 | ARG-102-001 — Poza Rica / Xalapa, Veracruz (🟢 VERDE) — único hecho del corte con pertenencia a la ventana demostrada |
+| `ARG-102-002` | 102 | 2026-08-19 | ARG-102-002 — Los Reyes, Michoacán (🔴 ROJO) — 5 abatidos tras agredir a un patrullaje del Ejército |
+| `ARG-102-003` | 102 | 2026-08-19 | ARG-102-003 — Zinapécuaro, Michoacán (🟢 VERDE) — 4 cateos, 5 armas largas, uniformes apócrifos de CFE |
+| `ARG-102-004` | 102 | 2026-08-19 | ARG-102-004 — Tijuana, col. 3 de Octubre, Baja California (🟢 VERDE) |
+| `ARG-102-005` | 102 | 2026-08-19 | ARG-102-005 — Alfajayucan, Hidalgo (🟢 VERDE) — PENDIENTE DE ANCLA FECHADA |
+| `ARG-102-ARM-001` | 102 | 2026-08-19 | ARG-102-ARM-001 — Zinapécuaro, Michoacán: 5 armas largas, 4 detenidos. FRONTERA DE VENTANA |
+| `ARG-102-ARM-002` | 102 | 2026-08-19 | ARG-102-ARM-002 — Tijuana, Baja California: 1 arma corta .380, 1 detenido. FRONTERA DE VENTANA |
+| `ARG-102-ARM-003` | 102 | 2026-08-19 | ARG-102-ARM-003 — Los Reyes, Michoacán: cualitativo, 0 detenidos. FRONTERA DE VENTANA |
+| `ARG-102-SEN-REC-001` | 102 | 2026-08-19 | ARG-102-SEN-REC-001 — Coronango, Puebla: 26a7m15d a dos personas. Recuperación de omisión de ARGOS 95 |
+| `ARG-102-FE-001` | 102 | 2026-08-19 | ARG-102-FE-001 — ARGOS 101 omitió la masacre de Tlapa de Comonfort, Guerrero (🔴), ocurrida dentro de su ventana |
+| `ARG-102-FE-002` | 102 | 2026-08-19 | ARG-102-FE-002 — ARG-101-008 absorbió un homicidio en una ficha verde; además sí hubo aseguramiento |
+| `ARG-102-FE-003` | 102 | 2026-08-19 | ARG-102-FE-003 — El vacío del boletín federal del 17-ago tampoco existía: segundo falso vacío consecutivo |
+| `ARG-102-FE-004` | 102 | 2026-08-19 | ARG-102-FE-004 — Pesquería, NL: el hecho es del 12-ago, no del boletín del 14-16 ago |
+| `ARG-102-FE-005` | 102 | 2026-08-19 | ARG-102-FE-005 — La Piedad (ARG-98-002): el "4 abatidos" era un cuarto agresor herido bajo custodia |
+| `ARG-102-FE-006` | 102 | 2026-08-19 | ARG-102-FE-006 — Coronango: el slug con que ARGOS 98 la respaldó es de otro caso |
+| `ARG-102-FE-007` | 102 | 2026-08-19 | ARG-102-FE-007 — Veracruz: las condenatorias sin desglosar son 10, no 9 |
+| `ARG-102-FE-008` | 102 | 2026-08-19 | ARG-102-FE-008 — ARG-101-002 Colima reclasifica de 🟡 a 🔴: restos humanos confirmados |
+| `ARG-102-FE-009` | 102 | 2026-08-19 | ARG-102-FE-009 — ARG-101-005 CDMX: los cartuchos sí tenían cantidad (65 cartuchos, 1 cargador) |
+| `ARG-102-FE-010` | 102 | 2026-08-19 | ARG-102-FE-010 — El acervo de Chiapas queda refutado: Frontera Comalapa es de jun-2025 |
+| `ARG-102-FE-011` | 102 | 2026-08-19 | ARG-102-FE-011 — El motín de Cárdenas, Tabasco (16-ago, 🔴) no fue registrado por ARGOS 100 ni 101 |
+| `ARG-102-REC-001` | 102 | 2026-08-19 | ARG-102-REC-001 — El Rosario, Sinaloa: 303 AEI, 125 kg de explosivo, 175 kg de emulsión. Omisión de ARGOS 99/100 |
+| `ARG-102-REC-002` | 102 | 2026-08-19 | ARG-102-REC-002 — La Piedad, Michoacán (🔴): 4 largas, 1 lanzagranadas, 12 cargadores, 123 cartuchos, 9 AEI |
+| `ARG-102-REC-003` | 102 | 2026-08-19 | ARG-102-REC-003 — Nayarit, cuatro municipios: 15 AEI, 169 cartuchos, 12 cargadores, 3 detenidos |
+| `ARG-102-REC-004` | 102 | 2026-08-19 | ARG-102-REC-004 — Tihuatlán, Veracruz: 2 largas, 1 corta, 95 cartuchos, 51,910 L de hidrocarburo |
+| `ARG-102-REC-005` | 102 | 2026-08-19 | ARG-102-REC-005 — Tuxpan, Veracruz: 3 largas, 1 corta, 5 cargadores, 197 cartuchos, 2 detenidos |
+| `ARG-102-REC-006` | 102 | 2026-08-19 | ARG-102-REC-006 — Ahome, Sinaloa: 8 cortas, 9 largas, 8 cargadores, 2 detenidos |
+| `ARG-102-REC-007` | 102 | 2026-08-19 | ARG-102-REC-007 — Satevó, Chihuahua: 20 kg de metanfetamina, 2 detenidos. Sin armamento |
+| `ARG-102-REC-008` | 102 | 2026-08-19 | ARG-102-REC-008 — Cuitláhuac, Veracruz: 2 armas sin desglose, 3 detenidos |
+| `ARG-102-REC-009` | 102 | 2026-08-19 | ARG-102-REC-009 — Cárdenas, Tabasco: 3 armas cortas, 3 detenidos (boletín del 12-ago) |
+
+**Total de ARG-ID indexados: 157** · Ediciones cubiertas: 16 archivos de fuentes.
 
