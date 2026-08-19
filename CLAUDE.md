@@ -466,6 +466,32 @@ Corolario para los agregados institucionales: **nunca aceptar una pena o una cif
 titular de un agregado sin una URL fechada que la ate específicamente a ese corte.** Una fiscalía
 puede encabezar un boletín de agosto con una condena de junio sin faltar a la verdad.
 
+### Frontera de ventana: cuando la fuente no publica la hora
+
+Versión 1.0 — regla nacida de ARGOS 102, donde afectó a **todos** los candidatos del corte.
+
+Las ventanas de ARGOS se declaran con precisión de minutos (`13:37 CDMX`), pero **las fuentes
+publican con precisión de día**: la fecha en la ruta de una URL fija el día, casi nunca la hora. El
+resultado es que un hecho publicado el mismo día en que se cierra una ventana **no puede asignarse
+con certeza a ninguna de las dos ediciones que lo tocan**. No es un defecto de la búsqueda: es que
+la convención de corte es más fina que la resolución de las fuentes.
+
+Regla, para que ningún hecho se pierda entre dos ediciones ni se cuente dos veces:
+
+1. Un hecho cuya **publicación cae el día de cierre** y cuya **hora no está fijada** se marca
+   `FRONTERA DE VENTANA — HORA NO FIJADA`.
+2. Se integra a la **edición que lo ve primero**, con esa marca. Como la edición anterior ya cerró
+   sin él, integrarlo en la siguiente es la única forma de no perderlo.
+3. La marca es permanente y se declara en el archivo de fuentes: si más tarde aparece un ancla
+   horaria y el hecho resulta pertenecer a la ventana anterior, se corrige por fe de erratas y se
+   retira del total donde se contó.
+4. **Nunca se infiere la hora** a partir del orden de los resultados del buscador, de la posición en
+   una portada, ni de la hora de consulta.
+
+Cuando la frontera afecta a la mayoría de los hechos de un corte, **el corte debe decirlo en su
+valoración**: sus totales no son comparables sin más con los de ediciones cuyos hechos sí quedaron
+fijados dentro de ventana.
+
 ### El *slug* institucional prueba el término, no identifica el caso
 
 Versión 1.0 — regla nacida del fallo de Coronango, detectado en ARGOS 102.

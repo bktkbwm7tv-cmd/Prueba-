@@ -105,8 +105,8 @@ ANCLAS = frozenset(re.findall(r'<div class="nota" id="([^"]+)"', desk))
 
 # ---------------------------------------------------------------- 3. secciones
 paginas = re.findall(r'<section class="page">(.*?)</section>', desk, re.S)
-if len(paginas) != 6:
-    sys.exit(f"El escritorio tiene {len(paginas)} páginas, se esperaban 6.")
+if not paginas:
+    sys.exit("El escritorio no tiene ninguna <section class=\"page\">.")
 
 
 def limpia(p):
@@ -197,12 +197,71 @@ SEM = f'''<div class="semaforo">
     <div class="sem bajo"><span class="dot"></span><span class="lbl">🟢 VERDE<br>ACC. INSTITUC.</span><span class="val">{n_verde}</span></div>
   </div>'''
 
-TITULOS = [("PORTADA", 1), ("CRIMEN ORGANIZADO (I)", 2), ("CRIMEN ORGANIZADO (II)", 3),
-           ("ARMAMENTO Y EXPLOSIVOS", 4), ("RASTREO DE SENTENCIAS", 5), ("VALORACIÓN", 6)]
+# Los títulos y el número de páginas se DERIVAN del escritorio, no se fijan aquí.
+# Fijarlos rompía el generador cada vez que una edición cambiaba de estructura: pasó de
+# 7 a 6 páginas en ARGOS 98 y de 6 a 8 en ARGOS 102, y en ambos casos hubo que tocar el
+# script. Lo estable no es el número de páginas, es que cada una lleva su título en el
+# masthead y que la portada es la primera.
+TITULOS_CORTOS = {
+    "CRIMEN ORGANIZADO": "CRIMEN ORGANIZADO",
+    "CONTEO NACIONAL DE ARMAMENTO": "ARMAMENTO Y EXPLOSIVOS",
+    "RASTREO NACIONAL DE SENTENCIAS": "RASTREO DE SENTENCIAS",
+    "AUDITORÍA RETROACTIVA": "AUDITORÍA RETROACTIVA",
+    "VALORACIÓN": "VALORACIÓN",
+    "TABLERO EJECUTIVO": "TABLERO EJECUTIVO",
+}
+
+
+def titulo_de(pagina, indice):
+    """Extrae el título de una página del masthead del escritorio y lo abrevia."""
+    if indice == 0:
+        return "PORTADA"
+    m = re.search(r'<h2 style="font-size:14px;">(.*?)</h2>', pagina, re.S)
+    if not m:
+        return f"SECCIÓN {indice + 1}"
+    crudo = re.sub(r"<[^>]+>", "", m.group(1)).strip()
+    # El masthead usa "TÍTULO — subtítulo descriptivo"; para la navegación móvil
+    # basta la parte anterior al guion largo.
+    corto = crudo.split("—")[0].strip()
+    for clave, abrev in TITULOS_CORTOS.items():
+        if corto.startswith(clave):
+            # Del resto del título solo se conserva el numeral romano de
+            # "CRIMEN ORGANIZADO (I)" / "(II)". Cualquier otra cola es la
+            # enumeración descriptiva del masthead, que no cabe en la barra
+            # de navegación de un teléfono y se descarta.
+            sufijo = corto[len(clave):].strip()
+            if re.fullmatch(r"\(I+\)", sufijo):
+                return f"{abrev} {sufijo}"
+            return abrev
+    return corto
+
+
+TITULOS = [(titulo_de(pg, i), i + 1) for i, pg in enumerate(paginas)]
+TOTAL = len(TITULOS)
+
+# La barra de navegación se hereda del shell de la edición anterior y llevaba tantos
+# enlaces como secciones tuviera aquella. Se reconstruye a partir de TITULOS para que
+# no queden anclas muertas ni falten secciones cuando la estructura cambie.
+NAV_ABREV = {
+    "CRIMEN ORGANIZADO (I)": "C. ORGANIZADO I",
+    "CRIMEN ORGANIZADO (II)": "C. ORGANIZADO II",
+    "ARMAMENTO Y EXPLOSIVOS": "ARMAMENTO",
+    "RASTREO DE SENTENCIAS": "SENTENCIAS",
+    "AUDITORÍA RETROACTIVA": "AUDITORÍA",
+    "TABLERO EJECUTIVO": "TABLERO",
+}
+nav_links = "\n".join(
+    f'    <a href="#s{n}">{NAV_ABREV.get(t, t)}</a>' for t, n in TITULOS)
+m_nav = re.search(r'( *<a href="#s\d+">.*?</a>\n?)+', shell, re.S)
+if not m_nav:
+    sys.exit("No se localizó la barra de navegación en el shell de la móvil anterior.")
+shell = shell[: m_nav.start()] + nav_links + "\n" + shell[m_nav.end():]
 
 partes = []
 for i, (titulo, n) in enumerate(TITULOS):
-    cuerpo = tabla_a_ficha(lista_a_reg(limpia(paginas[i]), ANCLAS), con_tarjetas=(n == 5))
+    es_sentencias = "RASTREO NACIONAL DE SENTENCIAS" in paginas[i]
+    tiene_mapa_arm = 'id="argos-map-arm"' in paginas[i]
+    cuerpo = tabla_a_ficha(lista_a_reg(limpia(paginas[i]), ANCLAS), con_tarjetas=es_sentencias)
 
     if n == 1:
         # Consumir TODO el bloque de visuales hasta el semáforo: un .*? no
@@ -225,7 +284,7 @@ for i, (titulo, n) in enumerate(TITULOS):
         # Mismo motivo: consumir hasta "EJES DEL DÍA" o quedan sem-item sueltos.
         cuerpo = re.sub(r'<div class="semaforo">.*?(?=<div class="block-head">EJES DEL DÍA</div>)',
                         SEM + "\n\n  ", cuerpo, flags=re.S)
-    if n == 4:
+    if tiene_mapa_arm:
         cuerpo = re.sub(
             r'<div class="panel">\s*<div class="panel-title">.*?</div>\s*'
             r'<div class="map-box" id="argos-map-arm"></div>\s*<div class="map-caption">(.*?)</div>\s*</div>',
@@ -239,7 +298,7 @@ for i, (titulo, n) in enumerate(TITULOS):
 <section class="seccion" id="s{n}">
   <div class="sec-head">
     <h2>{titulo}</h2>
-    <span class="pg">PÁG. {n} / 6</span>
+    <span class="pg">PÁG. {n} / {TOTAL}</span>
   </div>
 {cuerpo}
 </section>''')
@@ -277,8 +336,8 @@ for etiqueta in ("div", "section", "p"):
     c = len(re.findall(r"</" + etiqueta + r">", salida))
     if a != c:
         errores.append(f"{etiqueta}: {a} abre / {c} cierra")
-if salida.count('<section class="seccion"') != 6:
-    errores.append("no hay 6 secciones")
+if salida.count('<section class="seccion"') != TOTAL:
+    errores.append(f"no hay {TOTAL} secciones")
 if "sem-item" in salida or "stat-tile" in salida or "cover-visuals" in salida:
     errores.append("quedaron restos de clases de escritorio")
 if salida.count("<svg") != 3:

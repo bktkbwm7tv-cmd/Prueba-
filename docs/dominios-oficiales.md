@@ -86,13 +86,13 @@ Marcados `✓` los verificados en el registro de fuentes de alguna edición.
 
 | Entidad | Dominio | Clase | Nota |
 |---|---|---|---|
-| Ciudad de México | `fgjcdmx.gob.mx` ✓ · `fiscaliageneral.cdmx.gob.mx` ✓ · `ssc.cdmx.gob.mx` ✓ | B | **Dos variantes de la fiscalía**: arbitrar |
-| Estado de México | `fiscaliaedomex.gob.mx` ✓ · `fgjem.edomex.gob.mx` ✓ | B | **Dos variantes**: arbitrar. Ningún boletín localizado pese a varios hechos del Edomex publicados por medios |
-| Hidalgo | `SIN DOMINIO CANÓNICO REGISTRADO` | — | |
-| Morelos | `SIN DOMINIO CANÓNICO REGISTRADO` | — | Contradicción de Cuautla abierta desde ARGOS 99 sin boletín |
-| Puebla | `fiscalia.puebla.gob.mx` ✓ | B | **Término jurídico en el *slug*** (`fallo-condenatorio`): es el respaldo del caso Coronango |
+| Ciudad de México | `fgjcdmx.gob.mx/comunicacion/nota/CS<AAAA>-<NNN>` ✓ · `ssc.cdmx.gob.mx` ✓ | **B** | **Variante arbitrada en ARGOS 102**: el canónico es `fgjcdmx.gob.mx`; `fiscaliageneral.cdmx.gob.mx` **no devolvió ningún contenido indexado** y se descarta. **Reclasificado de C a B**: el **año va en el folio del boletín** (`CS2026-066`), lo que separa años sin abrir el documento — no da el día |
+| Estado de México | `fgjem.edomex.gob.mx/prensa` ✓ (boletines) · `fiscaliaedomex.gob.mx` ✓ (documentos y fichas) | C | **Arbitrado en ARGOS 102 con un matiz: no son variantes, son dos sitios vivos con funciones distintas.** Para boletines, el objetivo correcto es `fgjem.edomex.gob.mx/prensa`. Ambos siguen clase C: **el problema del Edomex no es la variante, es que ninguno indexa boletines fechados** |
+| Hidalgo | `procuraduria.hidalgo.gob.mx` ✓ (PGJEH) | C | **Fijado en ARGOS 102.** Canal secundario verificado: X `@PGJE_Hidalgo` |
+| Morelos | `fiscaliamorelos.gob.mx/prensa` ✓ | C | **Fijado en ARGOS 102.** Localizado, pero **no devolvió el boletín de Cuautla** pese a la búsqueda dirigida |
+| Puebla | `fiscalia.puebla.gob.mx/Home/Comunicado/<GUID>` ✓ · `fiscalia.puebla.gob.mx/…/boletines/<n>-<slug>` ✓ | **C** | **Reclasificado de B a C en ARGOS 102.** Convive un patrón GUID opaco con otro de *slug* semántico, y **el caso bueno está en el opaco**. ⚠️ **Mantiene dos familias de titulación casi intercambiables** —sentencia impuesta ("Logra la FGE sentencia de más de 26 años…") y firmeza en alzada ("Logra la FGE que quede firme sentencia de 60 años", 50, 35, 23)—, todas con GUID sin fecha. **Es el vivero de confusiones que produjo el error de Coronango**: exigir siempre dos campos individualizadores |
 | Querétaro | `fiscaliageneralqro.gob.mx/portal/AAAA/MM/DD/` ✓ | **A** | Fecha en la ruta **y categoría propia `/sentencias/`**. El mejor portal de la región Centro |
-| Tlaxcala | `fgjtlaxcala.gob.mx` ✓ | C | |
+| Tlaxcala | `fgjtlaxcala.gob.mx` ✓ | C | **`NO REVISADA` en ARGOS 102** por agotamiento de presupuesto — única entidad del país en esa casilla este corte. ⚠️ La FGR-Tlaxcala publica una **serie de boletines casi idénticos** (`lineadecontraste.com/logra-fgr-sentencia/`, `-2`, `-3`, `-5`), ninguno con fecha en URL: exigir nombre + pena + municipio para no duplicar |
 
 ### Golfo
 
