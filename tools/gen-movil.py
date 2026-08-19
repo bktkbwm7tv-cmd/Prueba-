@@ -96,6 +96,18 @@ CSS_TABLA = """
      largo sin espacios. Se parte en vez de empujar el ancho de la página. */
   .seccion code, .seccion a, .reg-txt, .nota-body{overflow-wrap:anywhere;}
   .seccion img, .seccion svg{max-width:100%;height:auto;}
+  /* Tablas anchas reflujadas a tarjetas (ARGOS 102): una tarjeta por fila, con el
+     nombre de la columna delante del valor. Sustituye a la regla que las retiraba. */
+  .tabla-tarjetas{margin:8px 0;}
+  .fila-tarjeta{border:1px solid var(--border);border-radius:6px;background:var(--panel);
+    padding:8px 10px;margin:6px 0;}
+  .fila-tarjeta .campo{font-size:11.5px;line-height:1.5;padding:2px 0;
+    border-bottom:1px dotted rgba(76,230,255,0.14);}
+  .fila-tarjeta .campo:last-child{border-bottom:none;}
+  .fila-tarjeta .campo .k{display:block;font-family:var(--mono);font-size:9px;
+    letter-spacing:1px;color:var(--cyan);text-transform:uppercase;}
+  .fila-total{border:1px solid var(--border);border-radius:6px;background:var(--panel-2);
+    padding:8px 10px;margin:6px 0;font-size:11.5px;line-height:1.5;}
 """
 if ".tabla-scroll" not in shell:
     shell = shell.replace("</style>", CSS_TABLA + "</style>", 1)
@@ -144,38 +156,65 @@ def lista_a_reg(bloque, anclas_validas=frozenset()):
     return pat.sub(una, bloque).replace('<div class="list">', "<div>")
 
 
+def _celdas_a_tarjeta(fila_html, cabeceras):
+    """Convierte un <tr> del escritorio en una tarjeta apilada de la móvil."""
+    celdas = re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", fila_html, re.S)
+    if not celdas:
+        return ""
+    # Fila de totales o de nota: una sola celda con colspan. Se emite entera.
+    if len(celdas) == 1:
+        return f'<div class="fila-total">{celdas[0].strip()}</div>'
+    partes = []
+    for i, celda in enumerate(celdas):
+        valor = celda.strip()
+        if not valor or valor in ("—", "&mdash;"):
+            continue          # columna vacía: no se inventa contenido ni se ocupa espacio
+        etiqueta = cabeceras[i] if i < len(cabeceras) else f"col. {i + 1}"
+        partes.append(f'<div class="campo"><span class="k">{etiqueta}</span>{valor}</div>')
+    return '<div class="fila-tarjeta">' + "".join(partes) + "</div>"
+
+
 def tabla_a_ficha(p, con_tarjetas):
-    """Las tablas ANCHAS se retiran para evitar desplazamiento horizontal.
+    """Reflúa las tablas del escritorio a la anchura de un teléfono, SIN perder contenido.
 
-    Regla afinada en ARGOS 101 tras un hallazgo del control `procedencia-cifras`:
-    la versión anterior retiraba TODAS las tablas de la sección, y con ellas se
-    perdían los dos indicadores de cobertura —que `CLAUDE.md` declara
-    obligatorios— y la tabla de indicadores oficiales. Peor aún, el aviso
-    sustitutorio afirmaba que esos campos constaban en las fichas de la misma
-    sección, lo que era falso para las tablas que no describen eventos.
+    Historia de esta función, porque explica su forma actual:
 
-    Ahora solo se retiran las tablas de MÁS DE CUATRO COLUMNAS, que son las que
-    realmente desbordan. Las de dos, tres o cuatro columnas —cobertura,
-    indicadores, seguimientos— caben y se conservan íntegras, dentro de su propio
-    contenedor desplazable. La nota que sustituye a una tabla retirada NO declara
-    una integridad que la sección no tenga.
+    - La primera versión retiraba TODAS las tablas de la sección. Con ellas se
+      perdían los indicadores de cobertura que `CLAUDE.md` declara obligatorios.
+    - ARGOS 101 la afinó para retirar solo las de más de cuatro columnas, y
+      conservar las estrechas dentro de un contenedor desplazable.
+    - El control `editor-duplicidad` de ARGOS 102 midió lo que esa regla costaba:
+      la móvil reproducía **13 de los 27 ARG-ID** de la edición. Cinco tablas
+      anchas se sustituían por una nota, y con ellas desaparecían del móvil ocho
+      de las nueve recuperaciones, cinco de las once fes de erratas y las tres
+      líneas del módulo de armamento. Un lector que solo tuviera la móvil no
+      podía verificar la mitad de la edición.
+
+    La regla actual no retira ninguna tabla. Las de hasta cuatro columnas se
+    conservan íntegras en un contenedor desplazable; **las anchas se reflúan a
+    tarjetas apiladas**, una por fila, con el nombre de cada columna delante de su
+    valor. Se pierde la lectura comparativa entre filas —que en un teléfono no
+    existía de todos modos— y no se pierde ni un dato.
     """
     def sustituir(m):
         bloque = m.group(0)
-        ncols = len(re.findall(r'<th\b', bloque.split('</thead>')[0])) if '</thead>' in bloque else 99
+        cabeza = bloque.split("</thead>")[0] if "</thead>" in bloque else ""
+        cabeceras = [re.sub(r"<[^>]+>", "", c).strip()
+                     for c in re.findall(r"<th\b[^>]*>(.*?)</th>", cabeza, re.S)]
+        ncols = len(cabeceras) if cabeceras else 99
+        interior = bloque.split('<div class="table-wrap">')[-1].rsplit("</div>", 1)[0]
         if ncols <= 4:
             # Cabe en pantalla estrecha: se conserva, desplazable en su contenedor.
-            return '<div class="tabla-scroll">' + bloque.split('<div class="table-wrap">')[-1].rsplit('</div>', 1)[0] + '</div>'
-        if con_tarjetas:
-            return ('<p class="muted-note"><b>Tabla ejecutiva de ' + str(ncols) + ' columnas.</b> '
-                    'No se reproduce en esta versión por ancho; cada evento tiene su ficha completa '
-                    'en esta misma sección, y la tabla íntegra está en '
-                    f'<code>reports/argos-{FECHA}.html</code>.</p>')
-        return ('<p class="muted-note"><b>Tabla ejecutiva de ' + str(ncols) + ' columnas.</b> '
-                'No se reproduce en esta versión por ancho. <b>Sus cifras no constan en otro lugar '
-                'de la versión móvil</b>: consúltese la tabla íntegra en '
-                f'<code>reports/argos-{FECHA}.html</code> o el registro de fuentes en '
-                f'<code>reports/argos-{FECHA}-fuentes.md</code>.</p>')
+            return '<div class="tabla-scroll">' + interior + "</div>"
+        cuerpo = bloque.split("</thead>")[-1] if "</thead>" in bloque else bloque
+        filas = re.findall(r"<tr\b[^>]*>(.*?)</tr>", cuerpo, re.S)
+        tarjetas = "".join(_celdas_a_tarjeta(f, cabeceras) for f in filas)
+        if not tarjetas:
+            return '<div class="tabla-scroll">' + interior + "</div>"
+        return ('<div class="tabla-tarjetas"><p class="muted-note">'
+                f"<b>Tabla ejecutiva de {ncols} columnas</b>, reflujada a tarjetas para esta "
+                "versión. <b>No se omitió ningún dato</b>; la tabla en su forma original está en "
+                f"<code>reports/argos-{FECHA}.html</code>.</p>" + tarjetas + "</div>")
 
     p = re.sub(r'<div class="table-wrap">.*?</table>\s*</div>', sustituir, p, flags=re.S)
 
@@ -185,8 +224,8 @@ def tabla_a_ficha(p, con_tarjetas):
     # es una convención del escritorio y es fácil olvidarlo al redactar, así que
     # aquí se atrapa: lo que sobreviva se hace desplazable dentro de su propio
     # contenedor, nunca a costa del cuerpo del documento.
-    p = re.sub(r'<table\b.*?</table>',
-               lambda m: '<div class="tabla-scroll">' + m.group(0) + '</div>',
+    p = re.sub(r"<table\b.*?</table>",
+               lambda m: '<div class="tabla-scroll">' + m.group(0) + "</div>",
                p, flags=re.S)
     return p
 

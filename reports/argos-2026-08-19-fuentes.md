@@ -131,6 +131,14 @@ era falsa**:
   como adolescente. Se publica **"niña", sin la edad exacta**, por tratarse de víctima infantil de
   delito sexual.
 
+- **Trazabilidad de la recuperación**: `ARG-102-SEN-REC-001` · Fiscalía General del Estado de
+  Puebla · Coronango · violación equiparada agravada · **2 personas sentenciadas** · **26 a 7 m 15 d
+  cada una** · multa **212 UMA no integrada** · **firmeza no informada por la fuente oficial** ·
+  publicación **11-ago-2026** · confianza **Medio** · **recuperación de omisión de la ventana de
+  ARGOS 95, no suma al conteo nacional de ARGOS 102**. *Este renglón se añadió tras el control
+  `editor-duplicidad`, que detectó que era el único de los 27 identificadores de la edición que no
+  llegaba a este registro.*
+
 **Tijuana (`ARG-101-008`)** — el homicidio **sí cae dentro de la ventana de ARGOS 101**:
 
 - Hecho el **lunes 17-ago por la tarde, poco antes de las 15:00 h de Tijuana** (≈16:00 CDMX;
