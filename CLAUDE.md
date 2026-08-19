@@ -220,6 +220,34 @@ estaba enumerado en ninguna de las tres categorías. Se resuelve así:
 
 El criterio sigue siendo el **tipo de evento**, nunca el número de casos ni el impacto mediático.
 
+### Quién inicia: el criterio que separa "ataque contra autoridades" de "enfrentamiento"
+
+Versión 1.0 — regla nacida de una incoherencia detectada en ARGOS 102.
+
+La lista roja incluye **"ataques contra autoridades"** y la amarilla incluye **"agresiones a fuerzas
+de seguridad"** y **"operativos con intercambio de disparos"**. Los dos renglones describen el mismo
+suceso con distinto color, y esa ambigüedad produjo **tres colores distintos para el mismo tipo de
+hecho en dos ediciones consecutivas**. Se resuelve con un criterio único: **quién inicia la
+agresión**, no quién resulta muerto.
+
+| Situación | Color | Razón |
+|---|---|---|
+| El grupo criminal **agrede a personal en patrullaje, traslado o puesto de control** | **🔴 ROJO** | Es un **ataque contra autoridades**: el grupo criminal proyecta fuerza contra el Estado. Es lo que la lista roja nombra |
+| La fuerza pública **ejecuta una acción** (cateo, detención, revisión) y es **repelida** | **🟡 AMARILLO** | Es **confrontación derivada de un operativo**: el Estado inicia y encuentra resistencia. Es lo que la lista amarilla nombra |
+
+**El número de abatidos no mueve el color**, ni al alza ni a la baja: un operativo con cinco
+agresores abatidos sigue siendo amarillo si lo inició la autoridad, y una emboscada sin bajas sigue
+siendo roja. Contar los muertos del lado criminal como medida de gravedad convertiría la eficacia
+de la respuesta estatal en un aumento del riesgo nacional, que es justo lo que la metodología
+prohíbe.
+
+**Cuando no se puede determinar quién inició**, se clasifica **🟡** y se declara la reserva: subir a
+rojo por defecto inflaría el nivel de riesgo con hechos no acreditados.
+
+**Agravantes que suben a 🔴 con independencia de quién inició**: hallazgo de restos humanos o de
+fosa en el inmueble intervenido, víctimas civiles ajenas al hecho, uso de explosivos, AEI o drones
+armados, y muerte de personal de las fuerzas de seguridad.
+
 ### Aplicación en ARGOS
 
 El cartelón agrupa los eventos por color y elabora la Valoración ARGOS considerando principalmente

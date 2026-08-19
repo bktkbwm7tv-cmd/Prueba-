@@ -36,12 +36,12 @@ por el que ARGOS 101 integró la sentencia de Durango.
 | Emisor | Dominio | Clase | Nota de uso |
 |---|---|---|---|
 | SSPC / Gabinete de Seguridad | `gob.mx/sspc/prensa` | B | ⚠️ **Emisor de formato variable — la causa de dos falsos vacíos consecutivos.** Alterna **boletín diario** y **agregado de varios días** sin avisar: el del 14-15-16 ago es agregado, el del 17-ago volvió a ser diario. Una consulta por día suelto no alcanza un agregado, y una consulta por rango no alcanza un diario. **Hay que consultar siempre en ambas formas antes de declarar cualquier vacío.** El título lleva la fecha en el *slug* |
-| Gabinete de Seguridad (portal propio) | `gabinetedeseguridad.gob.mx/resultados/` | C | **Pasa a portal federal de consulta obligatoria a partir del 1-sep-2026**: el emisor anunció el 18-ago-2026 que los reportes diarios preliminares de homicidio y robo de vehículo migran a este sitio (ancla: `lasillarota.com/nacion/2026/8/18/…`). Si el barrido no lo incorpora, ARGOS reproducirá en septiembre el mismo falso vacío que costó cuatro ediciones |
+| Gabinete de Seguridad (portal propio) | `gabinetedeseguridad.gob.mx/resultados/` | B | **Pasa a portal federal de consulta obligatoria a partir del 1-sep-2026**: el emisor anunció el 18-ago-2026 que los reportes diarios preliminares de homicidio y robo de vehículo migran a este sitio (ancla: `lasillarota.com/nacion/2026/8/18/…`). Si el barrido no lo incorpora, ARGOS reproducirá en septiembre el mismo falso vacío que costó cuatro ediciones |
 | SSPC — informes | `seguridad.sspc.gob.mx` | C | Poco indexado |
-| Guardia Nacional | `gob.mx/guardianacional/prensa` | B | **Fuente primaria del módulo de armamento**: publica desglose por entidad de armas largas/cortas, cargadores, cartuchos, granadas y explosivos que los medios omiten |
+| Guardia Nacional | `gob.mx/guardianacional/prensa` | **C** | ⚠️ **Reclasificado de B a C en ARGOS 102, y es el hallazgo estructural más incómodo del directorio.** Es la fuente primaria declarada del módulo de armamento —su *slug* es el titular y trae el desglose numérico y la entidad—, **pero la URL no lleva fecha en ninguna forma**, así que **ningún boletín suyo es asignable a una ventana sin ancla externa fechada**. Esa es la causa estructural de que la fuente primaria del módulo no rinda nunca en el corte del día |
 | SEDENA | `gob.mx/sedena` | B | Más zonas y regiones militares cuando publiquen |
 | SEMAR | `gob.mx/semar` | B | Más regiones navales. Citada por medios con frecuencia sin que su comunicado se localice indexado |
-| FGR | `gob.mx/fgr` | B | Fiscalías especializadas y delegaciones estatales |
+| FGR | `fgr.org.mx` ✓ (no `gob.mx/fgr`) | C | **Corregido en ARGOS 102**: el portal operativo es `fgr.org.mx`, con salas de prensa paginadas por *query string* y comunicados numerados (`DPE/NNNN/2026`) **sin fecha en la URL**. Dominios hermanos: `hasvistoa.`, `renadet.`, `inacipe.`, `historicopgr.` |
 | SESNSP | `gob.mx/sesnsp` | — | **Bloqueado y sin indexación útil.** Es la razón de que el indicador de homicidio doloso siga `HEREDADO — NO REVERIFICADO` |
 
 ---
@@ -54,33 +54,33 @@ Marcados `✓` los verificados en el registro de fuentes de alguna edición.
 
 | Entidad | Dominio | Clase | Nota |
 |---|---|---|---|
-| Baja California | `SIN DOMINIO CANÓNICO REGISTRADO` | — | La FGE de BC se ha buscado sin fijar dominio. **Pendiente activo** (caso Tijuana) |
-| Baja California Sur | `SIN DOMINIO CANÓNICO REGISTRADO` | — | |
-| Chihuahua | `fiscalia.chihuahua.gob.mx` ✓ · `sspe.chihuahua.gob.mx` ✓ | B | **Variante sin punto** (`fiscaliachihuahua.gob.mx`) también citada: arbitrar antes de gastar búsquedas en la equivocada |
+| Baja California | `fgebc.gob.mx/boletines/<NNNNN>-<slug>` ✓ | **C** | **Fijado en ARGOS 102.** Correlativo numérico opaco (14237 … 16641), **pero el término jurídico va en el *slug*** (`sentencia-condenatoria-de-21-anos…`): sirve al módulo judicial en cuanto exista ancla externa fechada. También `fgebc.gob.mx/publicaciones/<n>-<slug>` |
+| Baja California Sur | `bcs.gob.mx` ✓ | C | **Fijado en ARGOS 102.** Publica la Mesa Estatal de Seguridad; *slug* sin fecha |
+| Chihuahua | `fiscalia.chihuahua.gob.mx` ✓ · `sspe.chihuahua.gob.mx` ✓ · `municipiochihuahua.gob.mx/CCS/Prensa/` ✓ | **C** | **Variante arbitrada en ARGOS 102**: el canónico es **con punto**; `fiscaliachihuahua.gob.mx` se descarta. **Reclasificado de B a C**: sus comunicados son *slug* puro sin fecha alguna |
 | Durango | `fiscalia.durango.gob.mx/AAAA/MM/DD/` ✓ | **A** | **El mejor portal de la serie.** Fecha en la ruta y término jurídico en el *slug*. Origen de `ARG-101-SEN-001` |
 | Sinaloa | `sspsinaloa.gob.mx` ✓ · `sinaloa.gob.mx` ✓ | C | ⚠️ **Trampa de aniversario documentada**: los dos boletines indexados del portal son de **15-ago-2025** y 20-nov-2025. Un barrido de agosto los recoge como si fueran del corte |
-| Sonora | `sonora.gob.mx` ✓ | C | Los agregados de la Mesa Estatal de Seguridad llegan por medios, no por portal |
+| Sonora | `sonora.gob.mx` ✓ · emisor judicial: **FGJES** | C | Portal propio de la FGJES no localizado. **La vía fechable real de Sonora son sus medios regionales con fecha en ruta**: `elimparcial.com/son/…/AAAA/MM/DD/`, `eldiariodesonora.com.mx/…/AAAA/MM/DD/`, `telemax.com.mx/blog/AAAA/MM/DD/` |
 
 ### Noreste
 
 | Entidad | Dominio | Clase | Nota |
 |---|---|---|---|
-| Coahuila | `SIN DOMINIO CANÓNICO REGISTRADO` | — | |
-| Nuevo León | `SIN DOMINIO CANÓNICO REGISTRADO` | — | |
-| San Luis Potosí | `fiscaliaslp.gob.mx` ✓ | C | Caso Matlapa abierto desde ARGOS 99 sin que ninguna URL fije fecha |
-| Tamaulipas | `tamaulipas.gob.mx` ✓ | C | Región con **cero hechos en ventana** en ARGOS 101 pese a diez portales consultados |
-| Zacatecas | `ssp.zacatecas.gob.mx` ✓ · `fiscaliazacatecas.gob.mx` ✓ | B | El boletín primario de la SSP **reaparece pero no consigna hora** (reserva de Sain Alto) |
+| Coahuila | `sitio.fgecoahuila.gob.mx` ✓ (también `fgecoahuila.gob.mx`) | B | **Fijado en ARGOS 102.** WordPress con archivo anual `/2026/` |
+| Nuevo León | `fiscalianl.gob.mx` ✓ | **C** | **Fijado en ARGOS 102.** ⚠️ **Portal de servicios sin sala de prensa indexable**: la fiscalía comunica por Facebook y X (`@FGJNL`). **Esto explica el cero crónico de Nuevo León** y no es un vacío del territorio. Variante `fiscalia-nl.gob.mx` **arbitrada: es un subsitio de capacitación, no la fiscalía** — no gastar búsquedas en ella |
+| San Luis Potosí | `fiscaliaslp.gob.mx` ✓ | C | **Sí publica**: seis boletines de condena indexados, **ninguno fechable**. Caso Matlapa abierto desde ARGOS 99 sin que ninguna URL fije fecha |
+| Tamaulipas | `fgjtam.gob.mx` ✓ | B | **Corregido en ARGOS 102.** El registro apuntaba a `tamaulipas.gob.mx`, el portal genérico del estado: **es la causa raíz probable de los "cero hechos" que la región arrastraba** |
+| Zacatecas | `fiscaliazacatecas.gob.mx` ✓ · `ssp.zacatecas.gob.mx` ✓ | B | Publica **con el término jurídico en el *slug*** pero **sin fecha en la URL**. Ancla externa útil: `ljz.mx/DD/MM/AAAA/` (La Jornada Zacatecas) lleva **fecha en la ruta**. El boletín primario de la SSP no consigna hora (reserva de Sain Alto) |
 
 ### Occidente
 
 | Entidad | Dominio | Clase | Nota |
 |---|---|---|---|
-| Aguascalientes | `SIN DOMINIO CANÓNICO REGISTRADO` | — | |
-| Colima | `SIN DOMINIO CANÓNICO REGISTRADO` | — | Pendiente activo (`ARG-101-002`) |
+| Aguascalientes | `SIN DOMINIO CANÓNICO REGISTRADO` | — | **Deuda no saldada en ARGOS 102.** Sus sentencias llegan solo por medios sin día en la URL (`clgnoticias.com/AAAA/MM/`) |
+| Colima | **Sin portal web canónico.** Emisores verificados: `x.com/FiscaliaColima` ✓ y la **Mesa Estatal de Coordinación para la Construcción de la Paz y Seguridad** ✓ | **C** | **Registrados en ARGOS 102.** ⚠️ La fiscalía publica **sentencias condenatorias en su cuenta de X, sin fecha visible**. La Mesa Estatal llega por medios regionales (`afmedios.com`, sin fecha en URL). Es la primera fuente institucional de Colima registrada en la serie |
 | Guanajuato | `boletines.guanajuato.gob.mx/AAAA/MM/DD/` ✓ · `fge.guanajuato.gob.mx` ✓ · `enterate.leon.gob.mx` ✓ | **A** | Fecha en la ruta. ⚠️ Publica **agregados anuales** ("36 sentenciados en lo que va de 2026") que **no son del corte** y no son integrables sin desglose |
-| Jalisco | `fiscalia.jalisco.gob.mx` ✓ · `fiscaliadejusticia.jalisco.gob.mx` ✓ | B | **Dos variantes citadas**: arbitrar |
-| Michoacán | `fiscaliamichoacan.gob.mx` ✓ · `ssp.michoacan.gob.mx` ✓ · `michoacan.gob.mx` ✓ · `poderjudicialmichoacan.gob.mx` ✓ · `policiamorelia.gob.mx` ✓ | B | La entidad con más portales registrados y varias contradicciones abiertas (La Piedad, Zinapécuaro) |
-| Nayarit | `SIN DOMINIO CANÓNICO REGISTRADO` | — | |
+| Jalisco | `fiscalia.jalisco.gob.mx` ✓ · `fiscaliadejusticia.jalisco.gob.mx` ✓ | B | **Dos variantes citadas, sin arbitrar tras dos ediciones**: ninguna devolvió resultado propio en ARGOS 102. Lo que se localiza de Jalisco llega por **FGR** y medios |
+| Michoacán | `fiscaliamichoacan.gob.mx` ✓ · `ssp.michoacan.gob.mx` ✓ · `michoacan.gob.mx` ✓ · `poderjudicialmichoacan.gob.mx/…nota.aspx?id=<n>` ✓ · `policiamorelia.gob.mx` ✓ | B / C | La entidad con más portales registrados y la más productiva de la serie. ⚠️ **La FGE reproduce sus boletines en seis medios regionales pero su portal propio no se localiza indexado.** El Poder Judicial es **clase C** (`id` correlativo sin fecha) y publica **agregados semestrales** no integrables. Ancla fechada útil: `esferanoticias.mx/AAAA/MM/DD/` |
+| Nayarit | `SIN DOMINIO CANÓNICO REGISTRADO` | — | **Deuda no saldada en ARGOS 102.** Se cubre por el boletín federal y por `ntv.com.mx/AAAA/MM/DD/`, medio regional **con fecha en ruta** — hoy la única vía fechable del estado |
 
 ### Centro
 
