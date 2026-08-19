@@ -195,7 +195,7 @@ confirmada por lectura directa del archivo.**
 | Barrido Golfo *(Ciclo B — triaje judicial)* | 20 | 20 | Tope alcanzado |
 | Barrido Sureste | 20 | 20 | Tope alcanzado |
 | Coordinación | — | **0** | Sonda de egreso por `curl` y verificación directa del archivo con `grep`: **sin consumo de búsqueda** |
-| **Total** | **154 asignadas** | **153 de un techo de 200** | **Ningún equipo excedió su tope** — segunda edición consecutiva |
+| **Total** | **154 asignadas** | **153 de un techo de 200** | **Los nueve topes respetados** — segunda edición consecutiva |
 
 ### Rotación de cobertura — Ciclo B, aplicada y declarada
 
@@ -317,13 +317,19 @@ evento de aseguramiento. Se contabilizan en "Detenciones relevantes" del tablero
 
 | Región | Entidades | Portales por búsqueda dirigida | Hechos en ventana | Consumo |
 |---|---|---|---|---|
-| **Noroeste** | 6 de 6 revisadas | 11 | 1 (`ARG-102-004`) | 20/20 |
+| **Noroeste** | 6 de 6 revisadas | 15 | 1 (`ARG-102-004`) | 20/20 |
 | **Noreste** | 5 de 5 revisadas | 13 | **0** | 20/20 |
 | **Occidente** | 6 de 6 revisadas | 13 | 2 (`ARG-102-002`, `-003`) | 20/20 |
 | **Centro** | **6 de 7 revisadas** — **Tlaxcala `NO REVISADA`** | 13 | 1 condicionado (`ARG-102-005`) | 19/20 |
 | **Golfo** | 2 de 2 revisadas | 10 | 1 (`ARG-102-001`) | 20/20 |
 | **Sureste** | 6 de 6 revisadas | 15 | **0** en ventana; **1 🔴 de la ventana de ARGOS 101** | 20/20 |
-| **Total** | **31 de 32** | **66** *(conteo propio de ARGOS)* | **5** | **153** |
+| **Total** | **31 de 32** | **79** *(conteo propio de ARGOS)* | **5** | **153** |
+
+*La cifra de 79 cuenta **consultas dirigidas a portal**, no dominios distintos: los portales
+federales (`gob.mx/sspc/prensa`, `gob.mx/guardianacional/prensa`, `fgr.org.mx`,
+`gabinetedeseguridad.gob.mx`) fueron consultados de forma independiente por varias regiones y se
+cuentan una vez por cada consulta. Corregido tras el control `procedencia-cifras`, que detectó que
+el total publicado (66) no era la suma de los renglones regionales.*
 
 **Portales que publicaron material dentro de la ventana: 2** — `fgr.org.mx` y
 `comunicacion.fiscaliaveracruz.gob.mx`.
@@ -350,6 +356,33 @@ declarable es `CONSULTADO POR BÚSQUEDA DIRIGIDA — SIN RESULTADO INDEXADO`, nu
 porque el registro apuntaba a `gob.mx/fgr`— publica comunicados numerados **sin fecha en la ruta y
 sin la pena en el titular**. Es el emisor que más resoluciones aporta al barrido y el que menos
 permite integrarlas.
+
+
+### Sentencias publicadas FUERA de ventana — respaldo del indicador de cobertura
+
+Incorporada tras el control `procedencia-cifras`, que detectó con razón que el cartelón declaraba
+**seis fiscalías con sentencia publicada fuera de ventana** sin que cuatro de ellas constaran en
+ningún renglón de este registro. **Una cobertura declarada y no documentada no es demostrable.**
+Ninguna de estas resoluciones suma a ARGOS 102; se documentan porque sostienen el indicador y porque
+circularán a ediciones siguientes.
+
+| Fiscalía | Caso | Pena | Fecha | Ancla |
+|---|---|---|---|---|
+| **FGE Puebla** | Coronango — Anadalay "N" y Carlos Andrés "N", violación equiparada agravada | **26 a 7 m 15 d** cada uno | Publicación **11-ago** | `intoleranciadiario.com/articles/inseguridad/2026/08/11/` |
+| **FGE San Luis Potosí** | Matlapa — Elías "N", lesiones doblemente agravadas, procedimiento abreviado | **2 a 8 m** + sanción económica y reparación | **Ninguna URL fija fecha** | `mhnoticias.mx` (término en *slug*), `codigosanluis.com`, `quadratin` |
+| **FGE Querétaro** | Los Arcos — procedimiento abreviado · "El Pancho" y "El Nata", robo de vehículo (**3 a** + 200 días multa) · Antonio "N", abuso de confianza (**4 a**) · Paola Alejandra "N", homicidio culposo (**4 a 11 m**) | Ver columna | **4-ago** y **10-ago** | `fiscaliageneralqro.gob.mx/portal/AAAA/MM/DD/`, **fecha en la ruta**, categoría propia `/sentencias/` |
+| **FGE Zacatecas** | Seis personas por secuestro agravado; víctimas de Villa González Ortega; hecho de **ago-2021** | **100 años** sin liberación anticipada, más multa, suspensión de derechos políticos y reparación | **NO FECHABLE** | `fiscaliazacatecas.gob.mx/la-fiscalia-general-obtiene-fallo-condenatorio-…-secuestro-agravado/` — término en el *slug* institucional, **sin fecha en la URL y sin ancla externa** |
+| **FGE Michoacán** | Juan "V", narcomenudeo y cohecho (**3 a 2 m**, 15-ago) · Jorge "N", secuestro agravado (**82 años** + 1,049,646 pesos, 12-ago) · Uruapan, Jorge Alberto "N", homicidio calificado y tentativa (**30 a 1 m 25 d**, sin fecha) | Ver columna | 12 y 15-ago; una sin fecha | `redmichoacan.com/2026/08/15/`, `esferanoticias.mx/2026/08/12/`, `poderjudicialmichoacan.gob.mx/…nota.aspx?id=2701` (**clase C, sin fecha**) |
+| **Fiscalía Yucatán** | Juicio oral iniciado 19-may (**108 a 4 m**) · tres condenatorias (**~127 años** acumulados) · FGR, cinco personas por narcóticos y cartuchos de uso exclusivo (de **8 a** a **7 a 2 m**) · violación agravada (**260 a 8 m 12 d**, sin fecha) | Ver columna | **3, 4 y 6-ago** | `elpueblo.com/…20260804…`, `elcronistayucatan.mx/2026/08/06/`, `yucatan.quadratin.com.mx` (sin fecha) |
+
+**Deslinde anotado**: el caso de **Zacatecas** localizado en este corte **no es** el señuelo de Luis
+Moya y Calera (31-jul y 1-ago), que sigue descartado. Son hechos distintos. El control los confundió
+al no constar el primero en este registro — razón de más para que conste.
+
+**Nota sobre Michoacán**: el caso de **Gabriela "N"** (Morelia) **no entra en esta tabla**. Hay fallo
+de culpabilidad del 11-ago, pero todas las fuentes coinciden en que *"la pena se definirá en una
+audiencia posterior"*: **sin pena impuesta no es una sentencia con dato mínimo**, y el indicador no
+lo cuenta.
 
 ### El arbitraje "9 vs 6 vs 10" — RESUELTO A FAVOR DE 10
 
