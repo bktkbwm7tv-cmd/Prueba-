@@ -174,5 +174,22 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-102-REC-008` | 102 | 2026-08-19 | ARG-102-REC-008 — Cuitláhuac, Veracruz: 2 armas sin desglose, 3 detenidos |
 | `ARG-102-REC-009` | 102 | 2026-08-19 | ARG-102-REC-009 — Cárdenas, Tabasco: 3 armas cortas, 3 detenidos (boletín del 12-ago) |
 
-**Total de ARG-ID indexados: 157** · Ediciones cubiertas: 16 archivos de fuentes.
+| `ARG-103-001` | 103 | 2026-08-20 | ARG-103-001 — Narcobloqueos y quema de vehículos en más de una decena de municipios de Michoacán (🔴 ROJO) — cifra de puntos contradicha: 24/20+/11/8 |
+| `ARG-103-002` | 103 | 2026-08-20 | ARG-103-002 — Tanhuato y Ecuandureo, Michoacán (🟢 VERDE) — 12 detenidos, 9 largas, 8 AEI, armamento especial y 64 vehículos |
+| `ARG-103-003` | 103 | 2026-08-20 | ARG-103-003 — Poza Rica, Álamo y Misantla, Veracruz (🟢 VERDE) — 21 detenidos, 2 armas cortas. Evento anterior publicado durante el corte |
+| `ARG-103-ARM-001` | 103 | 2026-08-20 | ARG-103-ARM-001 — Michoacán · Tanhuato y Ecuandureo — 1 corta, 9 largas, 8 AEI, 12 detenidos + 7 piezas de armamento especial no sumadas |
+| `ARG-103-ARM-002` | 103 | 2026-08-20 | ARG-103-ARM-002 — Veracruz · Poza Rica y otros — 2 armas cortas, 2 detenidos. La réplica no se cuenta como arma |
+| `ARG-103-AUD-001` | 103 | 2026-08-20 | ARG-103-AUD-001 — Iguala, Guerrero (🔴) — omisión de ARGOS 99: 2 muertos y 1 adolescente herida, 16-ago ~03:00 |
+| `ARG-103-AUD-002` | 103 | 2026-08-20 | ARG-103-AUD-002 — Coatepec/Tlaltetela, Veracruz (🔴) — omisión de ARGOS 99: dos estudiantes de la UV, hallazgo 15-ago |
+| `ARG-103-AUD-003` | 103 | 2026-08-20 | ARG-103-AUD-003 — El Pital, San Rafael, Veracruz (🔴) — omisión de ARGOS 100: 3 muertos, noche del 16-ago |
+| `ARG-103-AUD-004` | 103 | 2026-08-20 | ARG-103-AUD-004 — Celaya, Guanajuato (🔴) — omisión de ARGOS 101: cuerpo semienterrado, 17-ago. Un solo cuerpo |
+| `ARG-103-FE-001` | 103 | 2026-08-20 | ARG-103-FE-001 — ARGOS 99 omitió dos eventos rojos de su ventana: sus rojos pasan de 3 a 5 |
+| `ARG-103-FE-002` | 103 | 2026-08-20 | ARG-103-FE-002 — ARGOS 100: NO DETERMINABLE confirmado como falso — al menos dos rojos en su ventana |
+| `ARG-103-FE-003` | 103 | 2026-08-20 | ARG-103-FE-003 — ARGOS 101: NO DETERMINABLE confirmado como falso — al menos tres rojos en su ventana |
+| `ARG-103-REC-001` | 103 | 2026-08-20 | ARG-103-REC-001 — Los 27 AEI de Sinaloa: son La Campana, Escuinapa — dos entradas distintas, contradicción resuelta |
+| `ARG-103-REC-002` | 103 | 2026-08-20 | ARG-103-REC-002 — Tijuana, col. Hipódromo: gana fuente institucional (declaración de la Fiscal de BC). Sigue NO INTEGRABLE |
+| `ARG-103-SEG-001` | 103 | 2026-08-20 | ARG-103-SEG-001 — QRoo — Playa del Carmen: fechado por primera vez (12-ago-2026), lo que lo saca de toda ventana cubierta |
+| `ARG-103-SEG-002` | 103 | 2026-08-20 | ARG-103-SEG-002 — Tabasco — Cunduacán, Miguel N: delito confirmado por primera vez (violación), 8 años |
+
+**Total de ARG-ID indexados: 173** · Ediciones cubiertas: 17 archivos de fuentes.
 

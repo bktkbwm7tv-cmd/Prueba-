@@ -1,6 +1,8 @@
 # Directorio de dominios oficiales — ARGOS
 
-Versión 1.0 · Creado en **ARGOS 102** (corte 2026-08-19) · Pendiente abierto desde ARGOS 101.
+Versión 1.1 · Creado en **ARGOS 102** (corte 2026-08-19) · **Actualizado en ARGOS 103** (corte 2026-08-20):
+Jalisco arbitrado, Aguascalientes y Nayarit localizados, subdominio de Michoacán corregido y
+`gabinetedeseguridad.gob.mx` sondeado y reclasificado como bloqueado.
 
 Este archivo existe porque cada edición estaba redescubriendo, a fuerza de búsquedas, qué dominio
 publica cada corporación y cuál de ellos es utilizable bajo el bloqueo de egreso. Ese
@@ -36,7 +38,7 @@ por el que ARGOS 101 integró la sentencia de Durango.
 | Emisor | Dominio | Clase | Nota de uso |
 |---|---|---|---|
 | SSPC / Gabinete de Seguridad | `gob.mx/sspc/prensa` | B | ⚠️ **Emisor de formato variable — la causa de dos falsos vacíos consecutivos.** Alterna **boletín diario** y **agregado de varios días** sin avisar: el del 14-15-16 ago es agregado, el del 17-ago volvió a ser diario. Una consulta por día suelto no alcanza un agregado, y una consulta por rango no alcanza un diario. **Hay que consultar siempre en ambas formas antes de declarar cualquier vacío.** El título lleva la fecha en el *slug* |
-| Gabinete de Seguridad (portal propio) | `gabinetedeseguridad.gob.mx/resultados/` | B | **Pasa a portal federal de consulta obligatoria a partir del 1-sep-2026**: el emisor anunció el 18-ago-2026 que los reportes diarios preliminares de homicidio y robo de vehículo migran a este sitio (ancla: `lasillarota.com/nacion/2026/8/18/…`). Si el barrido no lo incorpora, ARGOS reproducirá en septiembre el mismo falso vacío que costó cuatro ediciones |
+| Gabinete de Seguridad (portal propio) | `gabinetedeseguridad.gob.mx/resultados/` | **BLOQUEADO** | **Pasa a portal federal de consulta obligatoria a partir del 1-sep-2026**: el emisor anunció el 18-ago-2026 que los reportes diarios preliminares de homicidio y robo de vehículo migran a este sitio (ancla: `lasillarota.com/nacion/2026/8/18/…`). Si el barrido no lo incorpora, ARGOS reproducirá en septiembre el mismo falso vacío que costó cuatro ediciones. ⚠️ **ARGOS 103 lo sondeó por primera vez con `curl`: devuelve `CONNECT tunnel failed, response 403` igual que el resto de `*.gob.mx`.** **El portal al que migran los reportes diarios nace bloqueado**, así que incorporarlo al barrido no resuelve el pendiente: solo lo hará la lista blanca de egreso |
 | SSPC — informes | `seguridad.sspc.gob.mx` | C | Poco indexado |
 | Guardia Nacional | `gob.mx/guardianacional/prensa` | **C** | ⚠️ **Reclasificado de B a C en ARGOS 102, y es el hallazgo estructural más incómodo del directorio.** Es la fuente primaria declarada del módulo de armamento —su *slug* es el titular y trae el desglose numérico y la entidad—, **pero la URL no lleva fecha en ninguna forma**, así que **ningún boletín suyo es asignable a una ventana sin ancla externa fechada**. Esa es la causa estructural de que la fuente primaria del módulo no rinda nunca en el corte del día |
 | SEDENA | `gob.mx/sedena` | B | Más zonas y regiones militares cuando publiquen |
@@ -75,12 +77,12 @@ Marcados `✓` los verificados en el registro de fuentes de alguna edición.
 
 | Entidad | Dominio | Clase | Nota |
 |---|---|---|---|
-| Aguascalientes | `SIN DOMINIO CANÓNICO REGISTRADO` | — | **Deuda no saldada en ARGOS 102.** Sus sentencias llegan solo por medios sin día en la URL (`clgnoticias.com/AAAA/MM/`) |
+| Aguascalientes | `fiscalia-aguascalientes.gob.mx` ✓ · X `@fiscaliaAGS` ✓ | **SIN CLASIFICAR** | **Dominio localizado en ARGOS 103**, tras dos ediciones como `SIN DOMINIO CANÓNICO REGISTRADO`. ⚠️ **Localizar no es clasificar**: no alcanzó el presupuesto para verificar si sus boletines llevan fecha en la ruta, así que **su clase sigue sin determinar** y la deuda solo está saldada a medias. Sus sentencias siguen llegando por medios sin día en la URL (`clgnoticias.com/AAAA/MM/`) |
 | Colima | **Sin portal web canónico.** Emisores verificados: `x.com/FiscaliaColima` ✓ y la **Mesa Estatal de Coordinación para la Construcción de la Paz y Seguridad** ✓ | **C** | **Registrados en ARGOS 102.** ⚠️ La fiscalía publica **sentencias condenatorias en su cuenta de X, sin fecha visible**. La Mesa Estatal llega por medios regionales (`afmedios.com`, sin fecha en URL). Es la primera fuente institucional de Colima registrada en la serie |
 | Guanajuato | `boletines.guanajuato.gob.mx/AAAA/MM/DD/` ✓ · `fge.guanajuato.gob.mx` ✓ · `enterate.leon.gob.mx` ✓ | **A** | Fecha en la ruta. ⚠️ Publica **agregados anuales** ("36 sentenciados en lo que va de 2026") que **no son del corte** y no son integrables sin desglose |
-| Jalisco | `fiscalia.jalisco.gob.mx` ✓ · `fiscaliadejusticia.jalisco.gob.mx` ✓ | B | **Dos variantes citadas, sin arbitrar tras dos ediciones**: ninguna devolvió resultado propio en ARGOS 102. Lo que se localiza de Jalisco llega por **FGR** y medios |
-| Michoacán | `fiscaliamichoacan.gob.mx` ✓ · `ssp.michoacan.gob.mx` ✓ · `michoacan.gob.mx` ✓ · `poderjudicialmichoacan.gob.mx/…nota.aspx?id=<n>` ✓ · `policiamorelia.gob.mx` ✓ | B / C | La entidad con más portales registrados y la más productiva de la serie. ⚠️ **La FGE reproduce sus boletines en seis medios regionales pero su portal propio no se localiza indexado.** El Poder Judicial es **clase C** (`id` correlativo sin fecha) y publica **agregados semestrales** no integrables. Ancla fechada útil: `esferanoticias.mx/AAAA/MM/DD/` |
-| Nayarit | `SIN DOMINIO CANÓNICO REGISTRADO` | — | **Deuda no saldada en ARGOS 102.** Se cubre por el boletín federal y por `ntv.com.mx/AAAA/MM/DD/`, medio regional **con fecha en ruta** — hoy la única vía fechable del estado |
+| Jalisco | `fiscalia.jalisco.gob.mx` ✓ | **A/B** | ⚠️ **VARIANTE ARBITRADA EN ARGOS 103, deuda de dos ediciones cerrada.** El canónico es `fiscalia.jalisco.gob.mx`: devuelve contenido propio indexado y sus *slugs* llevan **fecha completa como sufijo** (`comunicado-1055-20260605`, `boletin-1785-20240723`), de modo que **un resultado de búsqueda ya fecha el boletín sin ancla externa**. `fiscaliadejusticia.jalisco.gob.mx` **no devolvió un solo resultado propio en dos ediciones consecutivas** y se descarta — no gastar búsquedas en ella |
+| Michoacán | **`comunicacion.fiscaliamichoacan.gob.mx`** ✓ *(objetivo correcto)* · `ssp.michoacan.gob.mx` ✓ · `michoacan.gob.mx` ✓ · `poderjudicialmichoacan.gob.mx/…nota.aspx?id=<n>` ✓ · `policiamorelia.gob.mx` ✓ | B / C | La entidad con más portales registrados y la más productiva de la serie. ⚠️ **Matiz de subdominio corregido en ARGOS 103**: el que realmente indexa es **`comunicacion.fiscaliamichoacan.gob.mx`**, no el dominio raíz, y **sus *slugs* llevan fecha completa** (`20250116-…`). El directorio apuntaba al sitio equivocado, lo que explica en parte que la FGE pareciera no indexar. La FGE reproduce además sus boletines en seis medios regionales. El Poder Judicial es **clase C** (`id` correlativo sin fecha) y publica **agregados semestrales** no integrables. Ancla fechada útil: `esferanoticias.mx/AAAA/MM/DD/` |
+| Nayarit | `fiscaliageneral.nayarit.gob.mx` ✓ | **SIN CLASIFICAR** | **Dominio localizado en ARGOS 103**, tras dos ediciones como `SIN DOMINIO CANÓNICO REGISTRADO`. ⚠️ **Sin verificar si indexa boletines con fecha propia**: su clase sigue sin determinar. Vías fechables confirmadas: `ntv.com.mx/AAAA/MM/DD/` y `nayaritnoticias.com/AAAA/MM/DD/`, que **reproduce comunicados de la FGR en Nayarit** |
 
 ### Centro
 
@@ -130,7 +132,6 @@ Marcados `✓` los verificados en el registro de fuentes de alguna edición.
 
 ## Variantes pendientes de arbitrar
 
-Cinco entidades aparecen con **dos dominios distintos** en el registro de fuentes, sin que ninguna
-edición haya determinado cuál es el canónico: **Chihuahua**, **Jalisco**, **Ciudad de México**,
-**Estado de México** y **Veracruz**. Gastar una búsqueda en la variante equivocada es un coste
+Quedan **dos** entidades con variantes sin arbitrar: **Estado de México** y **Veracruz**.
+**Chihuahua** y **Ciudad de México** se arbitraron en ARGOS 102, y **Jalisco en ARGOS 103**. Gastar una búsqueda en la variante equivocada es un coste
 recurrente y silencioso. Arbitrarlas es trabajo de una sola edición y beneficia a todas las demás.

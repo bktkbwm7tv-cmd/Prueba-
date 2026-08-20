@@ -466,6 +466,37 @@ Corolario para los agregados institucionales: **nunca aceptar una pena o una cif
 titular de un agregado sin una URL fechada que la ate específicamente a ese corte.** Una fiscalía
 puede encabezar un boletín de agosto con una condena de junio sin faltar a la verdad.
 
+### El *liveblog* fecha la página, no el hecho
+
+Versión 1.0 — regla nacida de ARGOS 103, donde el mismo tipo de fuente produjo **dos errores
+distintos en una sola edición**.
+
+Los medios nacionales publican **coberturas en vivo** —"EN VIVO: seguridad y crimen hoy 15 de
+agosto"— que agregan hechos de varios días bajo una URL cuya fecha es la **de la página**, no la del
+suceso. Cumplen formalmente la regla de la fecha en la ruta y por eso la burlan: pasan el control
+sin sostener nada.
+
+En ARGOS 103 un equipo trajo como omisión nueva un hecho del **14-ago** citando un *liveblog* del
+**15**, cuando el hecho ya estaba publicado desde ARGOS 98 **con esa misma fuente**; y tres portales
+que replicaban un *liveblog* estuvieron a punto de introducir **cinco muertos de otro evento** en el
+hecho principal del corte.
+
+Regla operativa:
+
+1. **Un *liveblog* nunca fecha un hecho.** Su fecha en la ruta acredita cuándo se publicó la página,
+   y nada más. Para asignar un hecho a una ventana hace falta **otra fuente**, con fecha propia y
+   referida al hecho.
+2. **Un *liveblog* no basta como fuente única** de un evento ni de una cifra. Puede corroborar lo que
+   otra fuente ya sostiene; no puede sostenerlo solo.
+3. **Se identifica por su forma**: `en-vivo`, `minuto-a-minuto`, `hoy-DD-de-MES`, o un titular que
+   agregue varios sucesos sin relación entre sí. Ante la duda, tratarlo como *liveblog*.
+
+Corolario general, que vale para toda fuente y no cuesta ninguna búsqueda: **comprobar la coherencia
+interna de la fuente antes de aceptarla**. Si una nota dice "el martes" y el día que se le atribuye
+no fue martes, la atribución es falsa. En ARGOS 103 ese control —verificar el día de la semana
+contra el calendario— impidió atribuir cinco muertes al evento equivocado y confirmó, en la
+auditoría, que las fechas de cuatro hallazgos no procedían del resumidor.
+
 ### Frontera de ventana: cuando la fuente no publica la hora
 
 Versión 1.0 — regla nacida de ARGOS 102, donde afectó a **todos** los candidatos del corte.
