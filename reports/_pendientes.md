@@ -88,7 +88,7 @@ fallo de cobertura **era sistemático**, y eso obliga a dos cosas que ninguna ed
 ## Cerrados recientemente
 
 - **La auditoría de cobertura hacia atrás (ventanas 99-101)** — **CERRADA CON VEREDICTO: SISTEMÁTICO**
-  (`ARG-103-FE-001/002/003`, `ARG-103-AUD-001` a `-004`). Cuatro eventos 🔴 más, en tres entidades y
+  (`ARG-103-FE-001/002/003`, `ARG-103-REC-003` a `-006`). Cuatro eventos 🔴 más, en tres entidades y
   las tres ventanas, **todos publicados con fecha en la URL** y **ninguno presente en el archivo**,
   verificado con `grep` por el coordinador. La serie 99-101 pasa de **3 rojos a 10**. *Cerrada la
   pregunta de ARGOS 102; se abren en su lugar las dos PRIORIDAD 1 de arriba.*

@@ -101,20 +101,20 @@ del **domingo 16**. El calendario de 2026 confirma que el 15 de agosto fue sába
 
 | ARG-ID | Hecho | Fecha del hecho | Ventana | Color y razón |
 |---|---|---|---|---|
-| `ARG-103-AUD-001` | **Iguala, Guerrero**, col. Primero de Mayo, calle Magnolias: ataque armado contra una vivienda con fusil AK-47 y arma corta. **Dos hombres muertos** (uno en el sitio, otro en hospital) y **una adolescente de 15 años herida**. Casquillos 7.62 y 9 mm | **16-ago, ~03:00 h** | **99** | 🔴 **víctimas múltiples** |
-| `ARG-103-AUD-002` | **Coatepec / Tlaltetela, Veracruz**: **Melanie Michelle Méndez Morales** (22) y **Luis Fernando Hernández Ibáñez**, estudiantes de Psicología de la Universidad Veracruzana, desaparecidos la noche del 14 tras salir de una cafetería en Xalapa, hallados con heridas de bala dentro de una camioneta cerca del puente Los Pescados | **15-ago** (hallazgo, mañana del sábado) | **99** | 🔴 **víctimas múltiples** |
-| `ARG-103-AUD-003` | **San Rafael, Veracruz**, comunidad **El Pital**: ataque armado **frente a una escuela primaria** durante una convivencia familiar. **Tres personas muertas**: Irma Lagunes y Jorge Cortés, originarios de Puebla, y Alfredo Bautista, de El Pital | **noche del 16-ago** | **100** | 🔴 **víctimas múltiples** |
-| `ARG-103-AUD-004` | **Celaya, Guanajuato**, entre las comunidades de **San Cayetano y La Soledad**: cuerpo semienterrado a menos de 20 cm de profundidad en terreno agrícola. **Una sola persona**, varón de ~17 años según dato pericial preliminar | **17-ago** | **101** | 🔴 **hallazgo de fosa clandestina** |
+| `ARG-103-REC-003` | **Iguala, Guerrero**, col. Primero de Mayo, calle Magnolias: ataque armado contra una vivienda con fusil AK-47 y arma corta. **Dos hombres muertos** (uno en el sitio, otro en hospital) y **una adolescente de 15 años herida**. Casquillos 7.62 y 9 mm | **16-ago, ~03:00 h** | **99** | 🔴 **víctimas múltiples** |
+| `ARG-103-REC-004` | **Coatepec / Tlaltetela, Veracruz**: **Melanie Michelle Méndez Morales** (22) y **Luis Fernando Hernández Ibáñez**, estudiantes de Psicología de la Universidad Veracruzana, desaparecidos la noche del 14 tras salir de una cafetería en Xalapa, hallados con heridas de bala dentro de una camioneta cerca del puente Los Pescados | **15-ago** (hallazgo, mañana del sábado) | **99** | 🔴 **víctimas múltiples** |
+| `ARG-103-REC-005` | **San Rafael, Veracruz**, comunidad **El Pital**: ataque armado **frente a una escuela primaria** durante una convivencia familiar. **Tres personas muertas**: Irma Lagunes y Jorge Cortés, originarios de Puebla, y Alfredo Bautista, de El Pital | **noche del 16-ago** | **100** | 🔴 **víctimas múltiples** |
+| `ARG-103-REC-006` | **Celaya, Guanajuato**, entre las comunidades de **San Cayetano y La Soledad**: cuerpo semienterrado a menos de 20 cm de profundidad en terreno agrícola. **Una sola persona**, varón de ~17 años según dato pericial preliminar | **17-ago** | **101** | 🔴 **hallazgo de fosa clandestina** |
 
-**Reserva declarada sobre `ARG-103-AUD-004`**: las dos fuentes regionales que lo fechan
+**Reserva declarada sobre `ARG-103-REC-006`**: las dos fuentes regionales que lo fechan
 (`am.com.mx/celaya/2026/08/17/`, `periodicocorreo.com.mx/…/2026/aug/17/`) lo describen como
 **"cuerpo semienterrado"**, mientras que las nacionales (`infobae.com/mexico/2026/08/18/`, Omnia)
 lo titulan **"fosa clandestina"**. Se clasifica 🔴 por la enumeración de la metodología, que nombra
 el hallazgo de fosas, **pero la discrepancia descriptiva se declara y no se resuelve**: es un solo
 cuerpo, y así se reporta. **No se infiere pluralidad en ningún caso.**
 
-**Corrección de ventana aplicada por el coordinador**: la primera ronda situó `ARG-103-AUD-003` el
-17-ago (ventana 101) y `ARG-103-AUD-004` el 18-ago (ventana 101), en ambos casos por la **fecha de
+**Corrección de ventana aplicada por el coordinador**: la primera ronda situó `ARG-103-REC-005` el
+17-ago (ventana 101) y `ARG-103-REC-006` el 18-ago (ventana 101), en ambos casos por la **fecha de
 publicación**. La ronda de corroboración localizó fuentes regionales que fechan **el hecho** un día
 antes en los dos casos, lo que reasigna el primero a la **ventana 100** y confirma el segundo en la
 **101**. Es la regla de `CLAUDE.md` operando: **la fecha de la URL fija la publicación, no el

@@ -851,6 +851,44 @@ siempre la hora real de Ciudad de México (CDMX) al momento de elaborar el corte
 por defecto (p. ej. 09:00) sin verificar. Confirmar la hora real antes de escribirla en el
 encabezado, el pie de página y cada marca "Consulta:" del cartelón (escritorio y móvil).
 
+## El cartelón es para el mando, no para el método
+
+Versión 1.0 — regla nacida de ARGOS 103, por instrucción editorial directa.
+
+**El destinatario del cartelón es un mando policial o militar.** Lo que le sirve es dato criminal
+trazable: hechos, entidad y municipio, fecha, armamento y explosivos asegurados con su desglose,
+personas detenidas, víctimas, fosas, secuestros, desapariciones, sentencias — cada cosa con su
+fuente institucional, nacional o regional, su nivel de confianza y su ARG-ID.
+
+**Lo que no le sirve es ARGOS hablando de ARGOS.** En ARGOS 103 el cartelón llegó a abrir su Tablero
+Ejecutivo con "esta edición se define por una auditoría de sí misma", a encabezar los "Ejes del día"
+con un veredicto sobre el método —no con un hecho—, y a cerrar con **siete conclusiones de las que
+ninguna era de inteligencia criminal**: todas eran de método, control, fuentes o redacción. El
+producto medía su propia cobertura y lo publicaba como si fuera inteligencia.
+
+Regla operativa:
+
+1. **Ningún hallazgo de método entra en el cartelón.** Las lecciones de barrido, los señuelos
+   descartados, el presupuesto de búsqueda, el rendimiento de la rotación, las acusaciones de omisión
+   a ediciones anteriores y las conclusiones sobre el instrumento van al **archivo de fuentes de la
+   edición** y a **`reports/_pendientes.md`**. Ahí son valiosas y ahí se auditan.
+2. **Las "Conclusiones" del cierre son de inteligencia criminal**: patrones territoriales, corredores,
+   calibres y firmas balísticas, perfiles de víctima, modus operandi, capacidad de fuego, brecha entre
+   detención y condena, líneas a explotar. Si una conclusión no le dice a un mando algo que pueda
+   accionar o vigilar, no es una conclusión de ARGOS.
+3. **Un hecho de alto impacto encontrado en la ventana de una edición anterior se publica como ficha
+   de hecho, no como hallazgo de auditoría.** Lleva sus cuatro apartados, su ARG-ID `-REC-`, su
+   **ventana de origen declarada**, y no entra en los totales del corte que lo publica. Su efecto
+   sobre el conteo de la edición de origen se registra en una **fe de erratas compacta**, que es
+   trazabilidad y no narrativa.
+4. **Lo que el producto haya aprendido sobre sí mismo se demuestra corrigiéndose, no narrándose.**
+   Una edición que dedica páginas a explicar por qué es mejor que las anteriores está gastando en
+   autorreferencia el espacio que le debe a los hechos.
+
+Excepciones, que son de trazabilidad y no de opinión, y deben ser breves: la **declaración de
+ventana** de cada ficha, la **advertencia de comparabilidad**, la **limitación por bloqueo de
+egreso**, las **tres casillas de cobertura**, los **deslindes de duplicidad** y la **fe de erratas**.
+
 ## Estilo de redacción
 
 Escribir como analista criminal, nunca como periodista, comentarista o editorialista. Sin

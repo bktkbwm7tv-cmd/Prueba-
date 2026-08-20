@@ -179,10 +179,10 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-103-003` | 103 | 2026-08-20 | ARG-103-003 — Poza Rica, Álamo y Misantla, Veracruz (🟢 VERDE) — 21 detenidos, 2 armas cortas. Evento anterior publicado durante el corte |
 | `ARG-103-ARM-001` | 103 | 2026-08-20 | ARG-103-ARM-001 — Michoacán · Tanhuato y Ecuandureo — 1 corta, 9 largas, 8 AEI, 12 detenidos + 7 piezas de armamento especial no sumadas |
 | `ARG-103-ARM-002` | 103 | 2026-08-20 | ARG-103-ARM-002 — Veracruz · Poza Rica y otros — 2 armas cortas, 2 detenidos. La réplica no se cuenta como arma |
-| `ARG-103-AUD-001` | 103 | 2026-08-20 | ARG-103-AUD-001 — Iguala, Guerrero (🔴) — omisión de ARGOS 99: 2 muertos y 1 adolescente herida, 16-ago ~03:00 |
-| `ARG-103-AUD-002` | 103 | 2026-08-20 | ARG-103-AUD-002 — Coatepec/Tlaltetela, Veracruz (🔴) — omisión de ARGOS 99: dos estudiantes de la UV, hallazgo 15-ago |
-| `ARG-103-AUD-003` | 103 | 2026-08-20 | ARG-103-AUD-003 — El Pital, San Rafael, Veracruz (🔴) — omisión de ARGOS 100: 3 muertos, noche del 16-ago |
-| `ARG-103-AUD-004` | 103 | 2026-08-20 | ARG-103-AUD-004 — Celaya, Guanajuato (🔴) — omisión de ARGOS 101: cuerpo semienterrado, 17-ago. Un solo cuerpo |
+| `ARG-103-REC-003` | 103 | 2026-08-20 | ARG-103-REC-003 — Iguala, Guerrero (🔴) — omisión de ARGOS 99: 2 muertos y 1 adolescente herida, 16-ago ~03:00 |
+| `ARG-103-REC-004` | 103 | 2026-08-20 | ARG-103-REC-004 — Coatepec/Tlaltetela, Veracruz (🔴) — omisión de ARGOS 99: dos estudiantes de la UV, hallazgo 15-ago |
+| `ARG-103-REC-005` | 103 | 2026-08-20 | ARG-103-REC-005 — El Pital, San Rafael, Veracruz (🔴) — omisión de ARGOS 100: 3 muertos, noche del 16-ago |
+| `ARG-103-REC-006` | 103 | 2026-08-20 | ARG-103-REC-006 — Celaya, Guanajuato (🔴) — omisión de ARGOS 101: cuerpo semienterrado, 17-ago. Un solo cuerpo |
 | `ARG-103-FE-001` | 103 | 2026-08-20 | ARG-103-FE-001 — ARGOS 99 omitió dos eventos rojos de su ventana: sus rojos pasan de 3 a 5 |
 | `ARG-103-FE-002` | 103 | 2026-08-20 | ARG-103-FE-002 — ARGOS 100: NO DETERMINABLE confirmado como falso — al menos dos rojos en su ventana |
 | `ARG-103-FE-003` | 103 | 2026-08-20 | ARG-103-FE-003 — ARGOS 101: NO DETERMINABLE confirmado como falso — al menos tres rojos en su ventana |
