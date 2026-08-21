@@ -319,15 +319,33 @@ Consecuencias operativas, mientras siga vigente:
   homicidio y robo de vehículo migran a ese sitio.
 - **Aduanas / ANAM** cuando el hecho sea fronterizo o portuario.
 
-**Regla de la doble consulta (obligatoria antes de declarar cualquier vacío federal)**
+**Regla de la triple consulta (obligatoria antes de declarar cualquier vacío federal)**
 
-Ningún vacío del boletín federal puede declararse sin haber consultado **en las dos formas**: por
-día suelto ("acciones relevantes del 17 de agosto") **y** por rango ("del 14, 15 y 16 de agosto").
-Una consulta por día no alcanza un agregado y una consulta por rango no alcanza un diario. Esta
-regla nace de dos falsos vacíos consecutivos: ARGOS 98-100 declararon cuatro cortes sin boletín
-cuando el emisor había pasado a agregado, y ARGOS 101 —al corregir el primero— dejó vivo un
-"vacío del 17-ago" que tampoco existía, porque el emisor había vuelto al formato diario. **El
-formato del boletín no es estable y no debe suponerse por el del corte anterior.**
+Versión 2.0 — ampliada en ARGOS 104, tras el **tercer** falso vacío consecutivo del mismo emisor.
+
+Ningún vacío del boletín federal puede declararse sin haber consultado **en las tres formas**:
+
+1. Por **día suelto** — "acciones relevantes del 17 de agosto".
+2. Por **rango o agregado** — "del 14, 15 y 16 de agosto".
+3. Por **título del boletín, sin restricción de dominio** — sin `site:`, para alcanzar a los
+   republicadores.
+
+Las dos primeras nacen de dos falsos vacíos por **formato**: ARGOS 98-100 declararon cuatro cortes
+sin boletín cuando el emisor había pasado a agregado, y ARGOS 101 —al corregir el primero— dejó vivo
+un "vacío del 17-ago" que tampoco existía, porque el emisor había vuelto al diario. Una consulta por
+día no alcanza un agregado y una por rango no alcanza un diario. **El formato del boletín no es
+estable y no debe suponerse por el del corte anterior.**
+
+La tercera nace de un falso vacío de **naturaleza distinta**, detectado en ARGOS 104: el boletín del
+**19-ago-2026 existe y `gob.mx` no lo indexó**. Una búsqueda `site:gob.mx/sspc` no lo devuelve en
+ninguna de las dos primeras formas; solo aparece **a través de sus republicadores**, uno de ellos con
+fecha en la ruta. **Que el portal emisor no indexe un documento no significa que el documento no
+exista**, y con el egreso bloqueado el buscador es la única vía: si el índice falla, hay que
+rodearlo por el contenido, no por el dominio.
+
+Corolario de trazabilidad: cuando el boletín se tome de un republicador, **la sustitución se anota**
+y la corroboración se declara **débil por construcción** — varios republicadores del mismo boletín
+**no son fuentes independientes**.
 
 **Estatales — las 32 entidades**
 

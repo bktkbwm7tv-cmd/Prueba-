@@ -8,123 +8,126 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 103 (corte 2026-08-20).
+**Última actualización**: ARGOS 104 (corte 2026-08-21).
 
 ---
 
-## PRIORIDAD 1 para ARGOS 104
+## PRIORIDAD 1 para ARGOS 105
 
-La auditoría que ARGOS 102 ordenó y ARGOS 103 ejecutó **cerró su pregunta y abrió otra mayor**. El
-fallo de cobertura **era sistemático**, y eso obliga a dos cosas que ninguna edición ha hecho aún.
+La auditoría de ARGOS 104 **respondió la pregunta de ARGOS 103 y encontró un modo de fallo
+distinto**. ARGOS 103 diagnosticó un fallo de **búsqueda**: el hecho no se encontraba. ARGOS 104
+encontró un fallo de **registro**: el hecho **se encontró, se verificó y se clasificó — y no se
+publicó**. Los dos existen y se corrigen de forma distinta.
 
 | Desde | Caso | Qué falta | Qué lo cierra |
 |---|---|---|---|
-| ARGOS 103 | **¿Dónde empieza el fallo? Auditar hacia atrás las ventanas de ARGOS 95-98** | El barrido por tipo de hecho sobre las ventanas 99, 100 y 101 localizó **cuatro eventos 🔴 más** que ninguna edición registró, en **tres entidades y las tres ventanas**. **No hay ninguna razón para suponer que el fallo empezó en ARGOS 99**: el método defectuoso —barrer por entidad— es el mismo desde el principio de la serie. Mientras no se audite hacia atrás, **no se sabe cuántos rojos faltan en el archivo** | Un barrido dirigido **solo a hechos de alto impacto**, **por tipo de hecho y no por entidad**, sobre las ventanas de **ARGOS 95 a 98** (aprox. 11-15 de agosto). Mismo método que rindió en ARGOS 103: equipos temáticos (masacres y homicidios múltiples · violencia colectiva: motines, fosas, narcobloqueos, AEI) más una ronda de corroboración. **El bloque de ataques contra autoridades puede omitirse o reducirse**: ARGOS 103 demostró que ese tipo de hecho **sí se recoge** |
-| ARGOS 103 | **Reconstruir en bloque las valoraciones de la serie 99-101** | La serie pasa de **3 eventos 🔴 registrados a 10**. Las valoraciones de **ARGOS 100 y 101 quedan confirmadas como falsas** y la de ARGOS 99, incompleta. **Ninguna edición ha reescrito esos cartelones**, así que el archivo sigue publicando `NO DETERMINABLE` donde hoy consta que había rojos | Decidir y ejecutar el **formato de la rectificación**: o una nota de fe de erratas insertada en cada cartelón afectado, o un cartelón de rectificación propio. **Cualquier serie temporal construida sobre esas valoraciones está viciada** mientras esto no se haga, y así consta en ARGOS 103 |
-| ARGOS 102 | **Colima — entidad `NO REVISADA`, sustituye a Tlaxcala** | **Cero búsquedas dedicadas en ARGOS 103**, por agotamiento del presupuesto de Occidente antes de llegar a ella. Es la única entidad del país en esa casilla este corte. Colima **no tiene portal web canónico**: sus emisores verificados son `x.com/FiscaliaColima` y la Mesa Estatal de Coordinación | **Encabeza el triaje de ARGOS 104 por prioridad sobre el ciclo**, aunque no le toque por turno. En segundo orden: **Aguascalientes y Nayarit**, que en ARGOS 103 recibieron solo arbitraje de dominio, **sin barrido de boletines** |
+| ARGOS 104 | **La deuda de registro: hechos que ARGOS ya verificó y nunca publicó** | La auditoría de **ARGOS 97** confirmó **seis vacíos** de las ventanas 94-96 y detectó **seis más** de forma incidental. De todos ellos **solo uno llegó a producir un ARG-ID** (`ARG-98-FE-001`, Huajicori). ARGOS 104 publicó el 🔴 de Aquila y el de Buenavista, e **inventarió otros cuatro sin ficha**. **Es la deuda más barata de saldar de todo el archivo**: los hechos ya están verificados y con fuentes: solo hay que registrarlos | Darles ARG-ID y ficha, o declararlos expresamente fuera de umbral. Los inventariados en la pág. 7 de ARGOS 104: **Sabanillas/Tuxpan-Tamiahua** (🟡), **Nuevo Teapa–Cosoleacaque** (🟡), **"El G1" Ensenada** (🟢), **"El Loco" Metepec** (🟢). Y los seis incidentales de `argos-2026-08-14-fuentes.md`, líneas 130-150, **que nadie ha revisado nunca** |
+| ARGOS 104 | **Auditar hacia atrás las ventanas de ARGOS 88 a 93** | La auditoría por tipo de hecho **ya cubrió 95-98** (ARGOS 104) y **99-101** (ARGOS 103), y ARGOS 97 auditó 94-96 por su cuenta. **El tramo 88-93 no lo ha auditado nadie**, y es el más antiguo y el que se produjo con el método menos maduro | El mismo método que ha rendido tres veces: **consultar por tipo de hecho y no por entidad**, equipos temáticos (masacres y homicidios múltiples · violencia colectiva) más ronda de corroboración, **ejecutado primero**. El bloque de ataques contra autoridades sigue pudiendo omitirse |
+| ARGOS 102 | **Sinaloa — 50 años a Wilberth "N" por secuestro agravado** | **Localizado por el Noroeste en ARGOS 104 y verificado con `grep`: no figura en ninguna edición.** Publicación **15-ago** con fecha en la ruta (`fuentesfidedignas.com.mx/index.php/2026/08/15/`), fuera de toda ventana cubierta | Boletín de la FGE de Sinaloa. Mientras no exista, `PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR`. **Candidato a omisión de la serie 98/99** |
 
 ## Seguimientos judiciales abiertos
 
 | Desde | Caso | Qué falta | Qué lo cierra |
 |---|---|---|---|
-| ARGOS 99 | **QRoo — Playa del Carmen**, 50 años (`ARG-103-SEG-001`) | **FECHADO POR PRIMERA VEZ tras cuatro ediciones**: `24horasqroo.mx/2026/08/12/50-anos-prision-4/`, fecha en la ruta, con los tres nombres coincidiendo —Rodman de Jesús Calderón Pineda, Juan José Velázquez Ramírez y Óscar Zacarías Chablé—. Corroborado por cinco medios más | ⚠️ **Consecuencia inesperada del hallazgo: la fecha (12-ago) lo saca de todas las ventanas cubiertas.** Ya no es candidato de ningún corte reciente. Sigue sin boletín de `fgeqroo.gob.mx` y **sin fuente oficial**, así que no integra. **Señuelo ya deslindado**: el caso de Benito Juárez, dos sentenciados, hecho de dic-2020 |
-| ARGOS 99 | **Tabasco — Cunduacán**, Miguel "N" (`ARG-103-SEG-002`) | **DELITO CONFIRMADO POR PRIMERA VEZ: violación** — antes constaba sin especificar. Se mantienen **8 años**, reparación del daño y suspensión de derechos políticos. Ancla: `novedadesdetabasco.com.mx/2026/08/15/`, con fecha en ruta pero **medio regional** | El boletín institucional. **Confirmado que `/Boletin/Index/<id>` no correlaciona con fecha**. ⚠️ **Dos señuelos deslindados en ARGOS 103**: no es el boletín de extorsión de 10 años (`/Boletin/Index/37454`) ni el tercer caso de ~24-mar-2026 |
-| ARGOS 102 | **Coronango, Puebla** — el boletín de firmeza | La sentencia quedó **integrada** como `ARG-102-SEN-REC-001`, pero con reserva: el título del boletín citado dice "sentencia", **no "firme" ni "condenatoria"** | El **segundo GUID**, de la familia de firmeza, más la **fecha de publicación** institucional y el **fragmento literal**. La multa de **212 UMA** sigue `SIN ANCLA DOCUMENTAL` y **no debe convertirse a pesos** |
-| ARGOS 99 | **SLP — Matlapa**, Elías "N" | Pena de **2 años 8 meses**, procedimiento abreviado, más sanción económica y reparación de montos no publicados | El boletín de la FGE SLP. **Ninguna de las tres URLs lleva fecha** |
-| ARGOS 92 | **Michoacán — Gabriela "N"**, Morelia | **Confirmado que no entra.** Fallo del 11-ago por secuestro agravado contra cinco personas, hechos de oct-2022. Todas las fuentes: "la pena se definirá en audiencia posterior" | La pena impuesta. **Señuelos descartados**: Jorge "N" (82 años, 12-ago — un medio publica 89, es error), Brenda Marisol G. (abr-2025) |
-| ARGOS 101 | **Durango — Región Laguna** (`ARG-101-SEN-001`) | URL y fecha reconfirmadas en el portal institucional; **ARGOS 103 confirmó que sigue siendo el resultado más reciente** de `fiscalia.durango.gob.mx` | **Pena exacta, firmeza y corroboración independiente: no obtenidas.** Sigue en "más de 26 años", no sumable |
-| ARGOS 102 | **Jalisco — Tizapán el Alto: 19 personas sentenciadas por la FGR** | 12 personas a **18 a 1 m 22 d** y 7 a **16 a 6 m**, por acopio de armas y asociación delictuosa, hechos de nov-2022. Publicación **10-11 ago** | Es el mayor renglón judicial de agosto (~332 años acumulables) y corresponde a la ventana de **ARGOS 95/96**. Falta comunicado de la FGR. ⚠️ **ARGOS 103 lo reencontró y no lo duplicó**: sigue fuera de ventana |
-| ARGOS 102 | **Sonora — Nogales: 21 a 7 m 15 d a dos personas** | Trata de personas y corrupción de menores. Multa global **$506,696.19**, reparación material $20,100 y moral $18,239.76; lectura de sentencia 13-ago 17:10 h. **Cinco URLs con fecha en ruta** lo fijan el **12-ago** | **No aparece en ninguna edición.** Corresponde a la ventana de ARGOS 96 |
-| ARGOS 102 | **Zacatecas — 100 años a seis personas por secuestro agravado** | **Segunda edición sin ancla externa.** Término **"fallo condenatorio" en el *slug* institucional**; seis sentenciados nominados (Oscar Iván, Oscar Alberto, Oscar, Agustín, Eduardo, Alondra); víctimas de Villa González Ortega; hecho de **ago-2021** | **La URL no lleva fecha y `ljz.mx` no devolvió nada** pese a búsqueda dirigida. `NO ASIGNABLE A NINGUNA VENTANA`. **Riesgo alto de trampa de aniversario.** **Deslinde**: no es el señuelo de Luis Moya y Calera |
-| ARGOS 96 | **Ruffo Appel / Ingemar**, huachicol fiscal (`ARG-98-SEG-001`) | Sin avance en ARGOS 102 ni 103. Lo último publicado es una **suspensión provisional**, no la resolución de fondo | Sentencia de amparo de fondo, o el amparo de Guadalupe Hernández Hinojosa |
-| ARGOS 101 | **Guerrero — 5 sentencias** y **Guanajuato — 36 sentenciadas** | Sin avance. Ambos son **agregados sin desglose nominal**; el de Guanajuato es además **anual**. ARGOS 103 reconfirmó el de Guanajuato en el boletín del 17-ago y **no lo integró** | El desglose caso por caso. Mientras no exista, ninguno es integrable |
+| ARGOS 101 | **Durango — Lerdo** (`ARG-101-SEN-001`) | **Gana municipio por primera vez: Lerdo**, no genéricamente "Región Laguna", y su **primera corroboración independiente** (El Siglo de Torreón). ⚠️ **Duplicidad interceptada en ARGOS 104**: el buscador devolvió el mismo *slug* bajo `/2026/08/20/` y bajo `/2026/08/17/`; dos consultas de control confirmaron que **es un solo boletín bajo dos rutas**, no una segunda condena | **Pena exacta y firmeza: siguen sin obtenerse.** Continúa en "más de 26 años", **no sumable** |
+| ARGOS 102 | **Coronango, Puebla** (`ARG-102-SEN-REC-001`) | **Gana su primera ancla fechada** —`intoleranciadiario.com/…/2026/08/11/`— y los dos sentenciados individualizados: **Anadalay "N" y Carlos Andrés "N"**, violación equiparada agravada, hecho de ene-2023, **confirmada en alzada**. La fecha lo sitúa **fuera de toda ventana reciente** | ⚠️ **Contradicción nueva de ARGOS 104**: un medio publica **23 años** frente a **26 a 7 m 15 d**. `CONTRADICHA — reportar ambas`. Las **212 UMA siguen `SIN ANCLA DOCUMENTAL`** y **no se convierten a pesos**. Candidato a segundo GUID: `fiscalia.puebla.gob.mx/Home/Comunicado/627ec10a-…` — **no verificable sin lectura directa** |
+| ARGOS 99 | **SLP — Matlapa**, Elías "N" | **Cuarta URL localizada en ARGOS 104, ninguna fechada.** Se precisa el delito: **lesiones doblemente agravadas**, hecho de ago-2024, procedimiento abreviado, 2 años 8 meses | El boletín de la FGE SLP. **El término jurídico está expreso; lo que falta es la fecha** |
+| ARGOS 99 | **QRoo — Playa del Carmen**, 50 años (`ARG-103-SEG-001`) | Fechado el **12-ago**, lo que lo saca de toda ventana cubierta. Sin boletín de `fgeqroo.gob.mx` | **No integra.** ARGOS 104 no le gastó búsquedas. **No reabrir salvo que aparezca fuente oficial** |
+| ARGOS 99 | **Tabasco — Cunduacán**, Miguel "N" (`ARG-103-SEG-002`) | ARGOS 104 añade que el boletín **cubre Centro, Cárdenas y Cunduacán**, pero **no devolvió su `id`** | ⚠️ **El equipo del Golfo recomienda no gastar más búsquedas**: tres ediciones y once `id` recuperados demuestran que **el patrón `/Boletin/Index/<id>` no es resoluble por buscador** |
+| ARGOS 102 | **Jalisco — Tizapán el Alto: 19 personas sentenciadas por la FGR** | ~332 años acumulables, ventana de ARGOS 95/96. **Tercera edición que se reencuentra y no se duplica** | El comunicado de la FGR. **No gastar búsquedas dedicadas** |
+| ARGOS 102 | **Sonora — Nogales: 21 a 7 m 15 d a dos personas** | ARGOS 104 lo reconfirma **con dos URLs fechadas en ruta** (`eldiariodesonora.com.mx/…/2026/08/12/`, `telemax.com.mx/blog/2026/08/12/`): el hecho es del **12-ago** | **Confirmado fuera de toda ventana reciente.** No aparece en ninguna edición: es candidato de la ventana de ARGOS 96 |
+| ARGOS 96 | **Ruffo Appel / Ingemar**, huachicol fiscal (`ARG-98-SEG-001`) | **Primer movimiento en cinco ediciones**: **Rigoberto Blanco Cantú se entregó en EU** (red Farías / Mefra Fletes, nexos con Cártel del Golfo y CJNG), publicado el **20-ago** con fecha en la ruta | Sentencia de amparo de fondo. El movimiento **no aporta línea a ningún conteo** |
+| ARGOS 101 | **Guerrero — 5 sentencias** y **Guanajuato — 36 sentenciadas** | Sin avance. Agregados **sin desglose nominal**; el de Guanajuato es **anual**. Reconfirmados y no integrados por tercera edición | El desglose caso por caso |
 
 ## Vacíos de publicación que siguen sin resolverse
 
 | Desde | Caso | Estado |
 |---|---|---|
-| ARGOS 102 | **Boletín federal — el vacío se amplía a tres días** | **18, 19 y 20 de agosto sin boletín indexado**, confirmado de forma independiente por los equipos de Golfo y Centro. ⚠️ **Se declara con reserva expresa**: este emisor ya produjo **dos falsos vacíos consecutivos** por alternar formato diario y agregado, y en ARGOS 103 **no se pudo aplicar la regla de la doble consulta** —por día suelto y por rango— por agotamiento de presupuesto. **Aplicarla es lo primero que debe hacer ARGOS 104** |
-| ARGOS 102 | **`gabinetedeseguridad.gob.mx/resultados/` — obligatorio desde el 1-sep** | ⚠️ **ARGOS 103 lo sondeó por primera vez con `curl`: 403 al CONNECT, igual que el resto de `*.gob.mx`.** **El portal al que migran los reportes diarios de homicidio y robo de vehículo nace bloqueado**, así que incorporarlo al barrido **no resuelve el pendiente**: solo lo hará la lista blanca de egreso. Queda registrado en `docs/dominios-oficiales.md` como **BLOQUEADO** |
-| ARGOS 102 | **Jiutepec, Morelos — ataque con dron y explosivos** | **Segunda edición en `PENDIENTE DE ANCLA FECHADA`.** La URL de `diariodemorelos.com` **no lleva fecha** y la hora "14:00 del 18-ago" procede **solo del resumidor**; si fuera exacta caería **23 minutos después** del cierre de la ventana 101. **Si se fechara dentro de cualquier ventana sería 🔴** por uso de drones armados. **Basta una URL fechada o un boletín de la FGE de Morelos** |
-| ARGOS 102 | **Tijuana, col. Hipódromo** — cuatro cuerpos en cajuelas (`ARG-103-REC-002`) | **Gana fuente institucional** —declaración en video de la **Fiscal de BC**: "venían del mismo lugar los cuatro vehículos"—, pero **sigue `NO INTEGRABLE`**, y no por falta de fuente: los cuerpos aparecieron en **puntos distintos a lo largo de ~8 horas**. Determinar si es **una ejecución múltiple** o **el hallazgo en un día de víctimas de hechos distintos** exige un dato que nadie ha publicado. **Lo cerraría un boletín de `fgebc.gob.mx` que vincule los cuatro casos** |
-| ARGOS 98 | **La Paz, BCS**, abuso sexual (11-ago) | **Quinta edición sin avance.** `Pendiente de corroboración independiente` |
-| ARGOS 101 | **Zinapécuaro** (`ARG-101-003`) — saldo del enfrentamiento del 17-ago | **Ninguna autoridad publicó saldo.** **Tres hechos con la misma firma** en el mismo municipio (julio, abril y el del corte): atribuir el saldo sería la fusión que el control existe para impedir. Se mantiene 🟡 |
-| ARGOS 102 | **Los Reyes, Michoacán** (`ARG-102-002`) — sin fuente institucional | Cinco abatidos y **ningún comunicado** de SEDENA, 21ª Zona Militar, SSP o FGE de Michoacán. ⚠️ **ARGOS 103 descubrió que su cifra de cinco muertos se está filtrando a otros hechos**: tres portales la atribuyeron a los narcobloqueos del 19-ago. **La ficha necesita fuente institucional también para impedir esa contaminación** |
-| ARGOS 102 | **Alfajayucan, Hidalgo** (`ARG-102-005`) | `PENDIENTE DE ANCLA FECHADA`: **ninguna URL fija la fecha**. **No integra ningún total.** Basta una URL fechada |
-| ARGOS 103 | **El operativo de Michoacán no tiene una línea escrita de fuente federal** | Un operativo con **12 detenidos, 9 armas largas, 8 AEI, calibre .50, Minimi y lanzagranadas**, y los **narcobloqueos** que desencadenó, **sin un solo comunicado** de SEDENA, GN o SSPC tres días después. Todo lo institucional del corte es **verbal**. `SIN RESULTADO INDEXADO EN VENTANA` en los tres portales |
+| ARGOS 104 | **Occidente en el boletín federal del 19-ago** | Los renglones de **Romita (Gto.), Tlajomulco (Jal.) y Los Reyes de Salgado (Mich., 5 largas y 5 cargadores)** **no se integraron**: el equipo de la región **no pudo anclarlos a una URL fechada**, aunque otros tres equipos sí localizaron el boletín. **Integrarlos por inferencia cruzada sería la fusión que los controles impiden.** `PENDIENTE DE ANCLA FECHADA` — lo cierra una consulta al boletín por título sin restricción de dominio |
+| ARGOS 104 | **Veracruz — el bloque de hechos graves del agregador** | Cuerpo desmembrado en Coatzintla, cabeza humana en Poza Rica, normalista asesinada en Tuxpan. ⚠️ **La fuente es un agregador sin fecha en ruta** y **el mismo bloque aparece casi idéntico en resultados del 25-26 de junio de 2026**: riesgo alto de recirculación. **Si se fechara en ventana sería 🔴.** Basta una URL fechada en ruta o un boletín de la FGE de Veracruz |
+| ARGOS 102 | **Jiutepec, Morelos — ataque con dron y explosivos** | ⚠️ **Diagnóstico nuevo de ARGOS 104: el pendiente está contaminado con un hecho de 2025.** El racimo devuelto es mayoritariamente de **agosto de 2025** (`informador.mx/…/20250831-0020`), y el resumidor narró como actual una secuencia de cateos que corresponde a ese año. Las dos URLs de `diariodemorelos.com` **siguen sin fecha en ruta y podrían ser dos hechos o uno solo**. `PENDIENTE DE ANCLA FECHADA` **con advertencia expresa de trampa de aniversario**. **No se declara 🔴** |
+| ARGOS 102 | **`gabinetedeseguridad.gob.mx/resultados/` — obligatorio desde el 1-sep** | Sigue **BLOQUEADO** al acceso directo. ⚠️ **Matiz de ARGOS 104**: la ruta `/contenido/<id>/` **sí devuelve resultados indexados** y publica sentencias de la FGR. **No es un dominio muerto, es un dominio ilegible por acceso directo**: por buscador es utilizable |
+| ARGOS 102 | **Tijuana, col. Hipódromo** — cuatro cuerpos en cajuelas (`ARG-103-REC-002`) | Sin avance. Sigue `NO INTEGRABLE`: los cuerpos aparecieron en **puntos distintos a lo largo de ~8 horas**. Lo cerraría un boletín de `fgebc.gob.mx` que vincule los cuatro casos |
+| ARGOS 98 | **La Paz, BCS**, abuso sexual (11-ago) | **Sexta edición sin avance.** ARGOS 104 no le gastó búsqueda, conforme al tope. `Pendiente de corroboración independiente` |
+| ARGOS 101 | **Zinapécuaro** (`ARG-101-003`) — saldo del enfrentamiento del 17-ago | Sin avance. **Tres hechos con la misma firma** en el mismo municipio. Se mantiene 🟡 |
+| ARGOS 102 | **Los Reyes, Michoacán** (`ARG-102-002`) — sin fuente institucional | Sin avance. ⚠️ ARGOS 104 confirma que **el aseguramiento de Los Reyes del boletín federal es sin detenidos y sin abatidos**: **no es el hecho de los cinco abatidos** y no debe fusionarse con él |
+| ARGOS 102 | **Alfajayucan, Hidalgo** (`ARG-102-005`) | Sin avance. Solo páginas-etiqueta sin fecha. `PENDIENTE DE ANCLA FECHADA` |
+| ARGOS 104 | **Coahuila — brecha Rancherías, Hidalgo** | Enfrentamiento con civiles armados, sin fallecidos ni detenidos. **Ninguna de las tres URLs lleva día** y las cantidades no se publican. Sería 🟡 si se fechara |
+| ARGOS 104 | **Chiapas — Mapastepec** | Dos detenidos tras disparar contra policía estatal; 2 armas cortas y 3 cargadores. La URL es **ruta *hash* sin fecha**. Candidato 🟡 `PENDIENTE DE ANCLA FECHADA` |
 
 ## Contradicciones abiertas
 
 | Desde | Caso | Detalle |
 |---|---|---|
-| ARGOS 103 | **Las 84 UMA de Tlaxcala** | ARGOS 102 las atribuyó a **Luis "N"** (Huamantla, portación de arma, 2 a 6 m). El barrido del Centro encuentra al resumidor atribuyéndolas a **"Marvin 'N'"**, sin multa para Luis. **No se arbitra, y la razón importa**: ambas lecturas dependen del **mismo resumidor**, que parafrasea, y ninguna URL de esa serie lleva fecha ni permite lectura directa. Arbitrar entre dos paráfrasis no produciría un dato mejor. `CONTRADICHA — REQUIERE LECTURA DIRECTA` |
-| ARGOS 103 | **La cifra de bloqueos de Michoacán** (`ARG-103-001`) | **Cuatro lecturas publicadas sin fundir**: **24 puntos** (C5 a las 08:30), **"más de 20"**, **11**, **"al menos ocho carreteras"**. **Ninguna fuente institucional escrita fija un número**, y el listado de municipios también varía. `CONTRADICHA — reportar todas, no promediar` |
-| ARGOS 103 | **Armamento especial vs. armas largas** (`ARG-103-ARM-001`) | Las fuentes publican **"9 armas largas"** y, por separado, **1 calibre .50, 4 Minimi y 2 lanzagranadas**, **sin precisar si están comprendidos en las nueve**. Sumarlos daría 16 y podría contar dos veces las mismas armas. `NO DETERMINABLE SI EL ARMAMENTO ESPECIAL ESTÁ COMPRENDIDO EN LAS NUEVE LARGAS` — se publican por separado |
-| ARGOS 103 | **La reserva de color de `ARG-103-002`** | Tres portales regionales reportan **agresión armada contra la GN en Tanhuato**. **No se pudo determinar si ocurrió durante el cateo** —lo que haría 🟡 la ficha del operativo— **o si es parte de la reacción de bloqueos**, ya recogida en `ARG-103-001` (🔴). Se resolvió dejando la agresión en la ficha roja para que **no desaparezca del semáforo**. **Una fuente que la sitúe en el punto de la captura obliga a fe de erratas** |
-| ARGOS 101 | **Mapimí, Durango** | Es **un solo evento**, pero el boletín federal da **65 cargadores** sin cuantificar cartuchos, frente a **87 cargadores y 4,715 cartuchos** de los medios. `CONTRADICHA — reportar ambas, no sumar` |
-| ARGOS 101 | **Colima** (`ARG-101-002`) — detenidos | Los restos humanos quedaron confirmados y el evento reclasificó a 🔴. **Sigue sin arbitrar el otro extremo**: Infobae y Puente Libre no reportan detenidos, El Occidental reporta **1 mujer detenida**. El desglose numérico sigue **cualitativo** |
-| ARGOS 100 | **Altamira, Tamaulipas** (`ARG-100-001`) | **Sin avance.** Siguen 2 detenidos frente a 3. El "comunicado de la Primera Zona Naval del 15-ago" **no existe localizable** |
-| ARGOS 98 | **"Operación Sable", Mazatlán** (`ARG-97-ARM-003`) | Sin avance. La hipótesis de los dos subeventos sigue sin boletín. **La suma sería cálculo propio de ARGOS** |
-| ARGOS 98 | **Privada Amberes, Ciudad Juárez** | Sin avance. Sin boletín de FGE Chihuahua ni SSPM |
-| ARGOS 99 | **Culiacán** (`ARG-99-001`) | **Sin avance.** Hora y ubicación no conciliadas; sigue sin detenidos |
-| ARGOS 99 | **Indicador SESNSP: −48% frente a −60%** | Sin cambio. `HEREDADO — NO REVERIFICADO`. No reverificable mientras `gob.mx/sesnsp` siga bloqueado. **Origen verificado**: entró en ARGOS 86 con respaldo citable real, así que **se conserva y no procede fe de erratas** |
-| ARGOS 100 | **Azcapotzalco, CDMX** | Sin avance. El hecho es del 14-jun-2026 y **no se reabre** |
-| ARGOS 101 | **Campeche — Hopelchén** | `POSIBLE DUPLICIDAD` con el boletín federal. **ARGOS 103 reconfirmó el hecho el 14-ago** y **no lo reintegró**. No integrar sin validación |
-| ARGOS 102 | **Chiapas — Cintalapa: la ficha del archivo no es verificable** | Aparecen **cuatro** casos distintos bajo el mismo topónimo y **ninguno** tiene "1 cargador, 15 cartuchos, 4 detenidos". Puede ser una **fusión de dos casos**. **La ficha debe reescribirse o retirarse** |
-| ARGOS 102 | **Chiapas — Benemérito de las Américas** | El desglose localizado (Selvin "N": 1 corta, 3 AK-47, 37 cargadores, 1 de disco con 59 cartuchos) **no coincide** con la ficha `ARM-003` de `_pendiente-barrido-ARGOS-88.md`. ⚠️ Los "37 cargadores de 30 cartuchos cada uno" son **capacidad declarada, no cartuchos contados**: nunca convertir a 1,110 |
+| ARGOS 104 | **Puerto Madero, Chiapas** (`ARG-104-ARM-003`) | **Dos lecturas incompatibles de la misma fuente institucional**: **0 armas cortas y 172 cartuchos desglosados** frente a **4 cortas de 9 mm y 322 cartuchos de 7.62×39**. Solo se integraron las **3 largas y los 4 detenidos**. `CONTRADICHA — NO INTEGRAR HASTA VALIDACIÓN` |
+| ARGOS 104 | **Juchipila — número de personas liberadas** | **Contradicción dentro de la misma fuente**: el boletín estatal y el *slug* de El Financiero dicen **dos**, su titular dice **una**. Se publicó **2** con la salvedad anotada |
+| ARGOS 104 | **El fusil Barrett de La Angostura** | La fuente publica "un fusil Barrett, seis armas largas" **sin precisar si está comprendido**. `NO DETERMINABLE` — se publica por separado, no se suma |
+| ARGOS 103 | **Armamento especial vs. armas largas** (`ARG-103-ARM-001`) | ⚠️ **La balanza se inclina, pero no se cierra.** El boletín federal del 19-ago enumera "nueve armas largas, dos cortas" y, **como renglones separados y adicionales**, "cinco ametralladoras, un fusil Barrett": sostiene que **el armamento especial NO está comprendido**. Confianza **Media** —es paráfrasis del resumidor, no lectura literal—. ⚠️ **Nota**: el boletín federal da **dos armas cortas** frente a **una** de la ficha publicada |
+| ARGOS 99 | **Culiacán** (`ARG-99-001`) | **Ubicación conciliada por ARGOS 104**: cruce de los bulevares **Constitución y Lázaro Cárdenas**, frente al Palacio de Gobierno; víctimas **Jahir Alexander "N" (29)** y **Miguel Ángel "N" (32)**, atacadas con fusiles automáticos. **Hora: tres versiones —12:30, 13:00 y ~14:00—.** `CONTRADICHA — reportar las tres, no promediar`. **Sin detenidos: confirmado** |
+| ARGOS 101 | **Mapimí, Durango** | **Dato nuevo**: el desglose es **8 largas + 4 cortas = 12 armas**, con **87 cargadores y 4,715 cartuchos**, frente a los **65 cargadores** del boletín federal. **La contradicción de cargadores sigue abierta**; el desglose 8/4 es ganancia |
+| ARGOS 100 | **Altamira, Tamaulipas** (`ARG-100-001`) | **Se propone cerrar como `2 o 3 — DISCREPANCIA NO RESUELTA`.** El Universal mantiene **3**, `opciudadana.com` mantiene **2**, y el "comunicado de la Primera Zona Naval del 15-ago" **sigue sin existir localizable**. ARGOS 104 sí acredita que la Primera Zona Naval participó, y fija la publicación el **16-ago**, lo que **desmiente el "hecho del 17-ago" de ARGOS 100** |
+| ARGOS 103 | **Las 84 UMA de Tlaxcala** | Sin cambio. `CONTRADICHA — REQUIERE LECTURA DIRECTA`. **ARGOS 104 no gastó ninguna búsqueda**, conforme a lo decidido: arbitrar entre dos paráfrasis del mismo resumidor no produciría un dato mejor |
+| ARGOS 103 | **La cifra de bloqueos de Michoacán** (`ARG-103-001`) | Sin cambio. Cuatro lecturas publicadas sin fundir. `CONTRADICHA — reportar todas, no promediar` |
+| ARGOS 103 | **La reserva de color de `ARG-103-002`** | Sin cambio. Una fuente que sitúe la agresión a la GN en el punto de la captura obliga a fe de erratas |
+| ARGOS 102 | **Chiapas — Cintalapa y Benemérito de las Américas** | ⚠️ **ARGOS 104 aporta un deslinde**: ambos reaparecen con GUID sin fecha, y **se confirma que son casos distintos de los del archivo** — el de Benemérito **no es el de Selvin "N"**. La ficha de Cintalapa **sigue debiendo reescribirse o retirarse**. Los "37 cargadores de 30 cartuchos cada uno" son **capacidad declarada**: nunca convertir a 1,110 |
+| ARGOS 101 | **Colima** (`ARG-101-002`) — detenidos | Sin arbitrar: Infobae y Puente Libre no reportan detenidos, El Occidental reporta 1 mujer detenida |
+| ARGOS 98 | **"Operación Sable", Mazatlán** (`ARG-97-ARM-003`) · **Privada Amberes, Ciudad Juárez** | Sin avance en ninguno de los dos |
+| ARGOS 99 | **Indicador SESNSP: −48% frente a −60%** | Sin cambio. `HEREDADO — NO REVERIFICADO`. **Origen verificado**: entró en ARGOS 86 con respaldo citable real, así que **se conserva y no procede fe de erratas** |
+| ARGOS 100 | **Azcapotzalco, CDMX** · **Campeche — Hopelchén** | Sin cambio. El primero es del 14-jun-2026 y no se reabre; el segundo, `POSIBLE DUPLICIDAD`, reencontrado y no reintegrado por tercera edición |
 
 ## Deuda editorial y de método
 
 | Desde | Asunto | Acción pendiente |
 |---|---|---|
-| ARGOS 98 | **Lista blanca de egreso** | `docs/solicitud-lista-blanca-egreso.md` **sigue sin tramitar**. Sonda de ARGOS 103 sobre **cuatro** hosts: 403 en los cuatro. **Cero portales leídos por acceso directo, decimocuarta edición.** Sigue siendo **el único cambio que elevaría el techo del producto**, y ahora hay **dos pruebas concretas de su coste**: el pendiente de Veracruz y el portal del Gabinete de Seguridad, que **nace bloqueado** justo antes de volverse obligatorio |
-| ARGOS 102 | **Mergear las ramas de edición a `main`** | **Ninguna rama de ARGOS 88 a 103 está mergeada.** La causa raíz está identificada: las definiciones de `barrido-regional`, `procedencia-cifras` y `editor-duplicidad` llegan con el `git merge --ff-only` de arranque, es decir **después** de que la sesión tome su registro de agentes, y por eso no resuelven por nombre. **Solución aplicada en ARGOS 103 y que funciona**: lanzarlos como `general-purpose` indicándoles que **lean primero su archivo en `.claude/agents/`**. No degrada el resultado —los dos controles devolvieron hallazgos reales—, pero **no es la corrección de fondo**. ⚠️ **Observación nueva de ARGOS 103, que precisa el diagnóstico**: los tres agentes **sí resolvieron por nombre al final de la sesión**, ya pasada la fase de controles. Es decir, el registro **se actualiza durante la sesión, pero demasiado tarde para las fases que los necesitan**. Confirma que la causa es de *momento*, no de definición, y que **mergear a `main` la resolvería**: quien arranque ARGOS 104 puede probar a invocarlos por nombre directamente, y si fallan, aplicar el rodeo sin gastar tiempo en diagnosticar |
-| ARGOS 99 | **Presupuesto de búsqueda** | ARGOS 103 cerró con **184 de 200** y **10 de 11 topes respetados**: el equipo del Centro gastó **22 de 20** y **lo declaró él mismo**. Se rompe la racha de dos ediciones con los topes íntegros. ⚠️ **Dato nuevo a vigilar**: **cuatro de los once equipos —el 38 % del presupuesto— se dedicaron a auditar a ARGOS, no a cubrir el país**. Fue la decisión correcta, pero costó **Colima** y el módulo de sentencias |
-| ARGOS 100 | **Correcciones de ARGOS 99 a ARGOS 98 que siguen sin aplicarse** | **Sexta edición sin ejecutarse.** Reintegrar Lázaro Cárdenas (`ARG-98-ARM-003`) al total de ARGOS 98; sustituir dos URL mal citadas en `argos-2026-08-15-fuentes.md`; incorporar tres hechos omitidos por ARGOS 98 (Chilpancingo/Los Ardillos 14-ago, Nopala Hidalgo 13-ago, excomandante por tortura en Cuautla); reintegrar el desglose de Sain Alto al total de ARGOS 99. **Se suman las nueve recuperaciones `ARG-102-REC-*` y los 27 AEI de Escuinapa de ARGOS 103** |
-| ARGOS 102 | **Rotación de cobertura — a ARGOS 104 le toca el Ciclo A** | ARGOS 103 aplicó el **Ciclo C** (Occidente + Sureste) y lo declaró. **Rendimiento: ninguna de las dos regiones produjo sentencia integrable** —segunda edición consecutiva—, pero sí **el arbitraje de Jalisco**, **dos dominios localizados** y **el fechado de Playa del Carmen**. **A ARGOS 104 le toca el Ciclo A: Noroeste + Centro encabezan el triaje judicial.** ⚠️ **Prioridad sobre el ciclo: Colima encabeza**, aunque sea de Occidente |
-| ARGOS 102 | **Directorio de dominios — cuatro ganancias, dos deudas a medias** | `docs/dominios-oficiales.md` actualizado a **v1.1** en ARGOS 103: **Jalisco arbitrado** (`fiscalia.jalisco.gob.mx`, con fecha completa en el *slug*, sube a casi-A), **Aguascalientes y Nayarit localizados** pero **SIN CLASIFICAR** —localizar no es clasificar—, **subdominio de Michoacán corregido** a `comunicacion.fiscaliamichoacan.gob.mx`, y **`gabinetedeseguridad.gob.mx` reclasificado como BLOQUEADO**. **Variantes que siguen sin arbitrar: Estado de México y Veracruz** |
-| ARGOS 103 | **Un *liveblog* es fuente de clase propia — REGLA YA ESCRITA** | En una sola edición produjo **dos errores distintos**: un falso hallazgo de omisión —un hecho del 14-ago traído como nuevo desde una página del 15— y estuvo a punto de introducir **cinco muertos ajenos** en el hecho principal del corte. *Cerrado como deuda de documentación*: la regla **quedó escrita en `CLAUDE.md`** ("El *liveblog* fecha la página, no el hecho"), junto con el corolario de **comprobar la coherencia interna de la fuente**, que no cuesta ninguna búsqueda. **Queda por ver si los equipos la aplican**: verificarlo es trabajo de ARGOS 104 |
+| ARGOS 98 | **Lista blanca de egreso** | `docs/solicitud-lista-blanca-egreso.md` **sigue sin tramitar**. **Cero portales leídos por acceso directo, decimoquinta edición.** Sigue siendo **el único cambio que elevaría el techo del producto** por encima de ★★★★☆ |
+| ARGOS 102 | **Mergear las ramas de edición a `main`** | **Ninguna rama de ARGOS 88 a 104 está mergeada.** ⚠️ **ARGOS 104 confirmó el diagnóstico de forma limpia**: `barrido-regional`, `procedencia-cifras` y `editor-duplicidad` **fallaron por nombre en las tres invocaciones**, y el rodeo —lanzarlos como `general-purpose` diciéndoles que lean su archivo en `.claude/agents/`— **funcionó en las nueve**. Ya no hace falta diagnosticar: **aplicar el rodeo directamente** y, cuando se pueda, mergear a `main`, que es la corrección de fondo |
+| ARGOS 104 | **Rotación de cobertura — a ARGOS 105 le toca el Ciclo B** | ARGOS 104 aplicó el **Ciclo A** (Noroeste + Centro) y lo declaró. **Rendimiento: positivo y comprobable** — la única sentencia integrable del corte apareció en **Durango**, primera entidad del triaje del Noroeste, igual que en ARGOS 101. **A ARGOS 105 le toca el Ciclo B: Noreste + Golfo.** ✔ **Ninguna entidad quedó `NO REVISADA`**, así que **no hay prioridad sobre el ciclo** y el turno se aplica limpio |
+| ARGOS 100 | **Correcciones de ARGOS 99 a ARGOS 98 que siguen sin aplicarse** | **Séptima edición sin ejecutarse.** Reintegrar Lázaro Cárdenas (`ARG-98-ARM-003`) al total de ARGOS 98; sustituir dos URL mal citadas en `argos-2026-08-15-fuentes.md`; incorporar tres hechos omitidos por ARGOS 98 (Chilpancingo/Los Ardillos 14-ago, Nopala Hidalgo 13-ago, excomandante por tortura en Cuautla); reintegrar el desglose de Sain Alto al total de ARGOS 99. Se suman las nueve recuperaciones `ARG-102-REC-*` y los 27 AEI de Escuinapa |
+| ARGOS 104 | **Las portadas de ARGOS 95, 96, 99, 100 y 101 no reflejan su conteo rectificado** | Los **cinco cartelones llevan ya su bloque de fe de erratas encima de la valoración**, pero sus **portadas** —semáforo y contadores del radar— siguen mostrando el conteo original, porque se generan desde el arreglo `EVENTOS` de cada edición y regenerarlas obligaría a reescribir fichas que la rectificación deja intactas. Verificado con `grep` que `NO DETERMINABLE` **solo aparece en la valoración**, que es donde está el bloque. **Residuo conocido y acotado** |
+| ARGOS 104 | **Consultar el boletín federal por título, no solo por dominio** | El vacío del 19-ago era falso porque **`gob.mx` no indexó su propio boletín**: solo aparece por republicadores. **La regla de la doble consulta (día suelto + rango) ya no basta**: hay que añadir una **tercera forma, por título del boletín sin restricción de dominio**. Es la lección de método más rentable de esta edición y **debe incorporarse a `CLAUDE.md`** |
 
 ## Cerrados recientemente
 
-- **La auditoría de cobertura hacia atrás (ventanas 99-101)** — **CERRADA CON VEREDICTO: SISTEMÁTICO**
-  (`ARG-103-FE-001/002/003`, `ARG-103-REC-003` a `-006`). Cuatro eventos 🔴 más, en tres entidades y
-  las tres ventanas, **todos publicados con fecha en la URL** y **ninguno presente en el archivo**,
-  verificado con `grep` por el coordinador. La serie 99-101 pasa de **3 rojos a 10**. *Cerrada la
-  pregunta de ARGOS 102; se abren en su lugar las dos PRIORIDAD 1 de arriba.*
+- **La auditoría de las ventanas 95-98** — **CERRADA, con un veredicto distinto del esperado**
+  (`ARG-104-REC-001/002`, `ARG-104-FE-001/002`). Dos eventos 🔴 más, ambos en Michoacán, y sobre todo
+  el hallazgo de que **el fallo no es solo de cobertura sino de registro**: el 🔴 de Aquila lo había
+  verificado y clasificado **el propio ARGOS 97**, y seis ediciones pasaron junto a él sin
+  publicarlo. *Cerrada la pregunta; se abre en su lugar la deuda de registro de PRIORIDAD 1.*
 
-- **Los 27 AEI de la segunda línea de Sinaloa** — **CONTRADICCIÓN RESUELTA** (`ARG-103-REC-001`).
-  No eran dos lecturas del mismo renglón: el boletín federal del 17-ago tiene **dos entradas de
-  Sinaloa en municipios distintos** — **Ahome** y **La Campana, Escuinapa** (1 arma larga, 13
-  cargadores, 1,389 cartuchos, **27 AEI**). **Escuinapa es geográficamente incompatible con Ahome.**
-  ⚠️ El boletín **no se leyó íntegro**: el cierre se apoya en triangulación entre dos medios, y
-  ninguna URL lleva fecha. Confianza **Medio**. *Cerrado; su reintegración a los totales del periodo
-  pasa a deuda editorial.*
+- **La rectificación en bloque de ARGOS 99, 100 y 101** — **EJECUTADA.** Se eligió **insertar la fe
+  de erratas en cada cartelón afectado** y no publicar un cartelón de rectificación aparte, porque
+  un documento separado deja intacta la valoración falsa **en el punto de consulta**. Seis piezas
+  corregidas (escritorio y móvil de las tres), más cuatro de ARGOS 95 y 96. *Cerrado.*
 
-- **Tlaxcala — deuda de cobertura SALDADA.** Encabezó el triaje del Centro por la regla de prioridad
-  sobre el ciclo, pese a no tocarle por turno, y cierra en `SIN RESULTADO INDEXADO EN VENTANA` —
-  **una casilla escrita, no un silencio**. *Cerrado; su lugar como entidad `NO REVISADA` lo ocupa
-  ahora **Colima**.*
+- **Colima — deuda de cobertura SALDADA**, y con corrección de directorio: **sí tiene portal
+  canónico**, `fgecolima.mx`, que tres ediciones no encontraron **por buscarlo bajo `.gob.mx`**.
+  Sale de `NO REVISADA` con hecho propio en ventana. *Cerrado; ninguna entidad queda en esa casilla.*
 
-- **Jalisco — variante arbitrada** tras dos ediciones. `fiscalia.jalisco.gob.mx` es el canónico y su
-  *slug* lleva **fecha completa**; `fiscaliadejusticia.jalisco.gob.mx` no devolvió un solo resultado
-  propio en dos ediciones. *Cerrado; quedan Estado de México y Veracruz.*
+- **Aguascalientes y Nayarit — clasificados.** Ambos **clase C**. *Cerrada la deuda que ARGOS 103
+  dejó a medias.*
 
-- **Veracruz — las condenatorias del lote del 13-ago** — **CERRADO COMO NO REINTENTABLE.**
-  `BLOQUEADO POR EGRESO`: el portal **sí expone archivo fechado** `/AAAA/MM/DD/`, pero agosto-2026
-  **no está indexado** y solo se resolvería por lectura directa. **ARGOS 103 no gastó ninguna
-  búsqueda en él**, conforme a la instrucción. *Cerrado como deuda de búsqueda; reabrir solo si
-  cambia la política de red.*
+- **Veracruz — variante arbitrada** tras dos ediciones: la canónica es la ruta **fechada**,
+  `veracruz.gob.mx/AAAA/MM/DD/<slug>/`. *Cerrado; queda solo el Estado de México, y con el matiz de
+  que **su problema no es de variante sino de indexación**.*
 
-- **La causa raíz del fallo de agentes** — **CERRADA CON SOLUCIÓN PRÁCTICA VERIFICADA.** Lanzarlos
-  como `general-purpose` indicándoles que lean su archivo en `.claude/agents/` funciona y no degrada
-  el resultado. *Cerrado el diagnóstico y el rodeo; la corrección de fondo —mergear a `main`— sigue
-  en deuda editorial.*
+- **El vacío del boletín federal de tres días** — **REFUTADO en dos de los tres días.** *Cerrado como
+  vacío; abre en su lugar la deuda de método de la tercera forma de consulta.*
 
-- **Los pendientes cerrados en ARGOS 102** —desglose del boletín federal del 14-16 ago, el falso
-  vacío del 17-ago, Coronango, Tijuana `ARG-101-008`, Colima `ARG-101-002`, La Piedad `ARG-98-002`,
-  el acervo sin fechar de Chiapas, Suchiapa y Cuautla— *se retiran de esta lista conforme a la
-  convención de dos ediciones.*
+- **"El operativo de Michoacán no tiene una línea escrita de fuente federal"** — **CERRADO.** El
+  boletín del 19-ago lo recoge con desglose: 12 detenidos, 5 ametralladoras, 1 fusil Barrett,
+  9 armas largas, 2 cortas, 1 dron y 8 AEI.
+
+- **Ciudad Juárez — rescate de 14 personas** — **CERRADO COMO FUERA DE VENTANA.** El hecho es del
+  **21 de julio de 2026**, con boletín propio de la SSPE de Chihuahua.
+
+- **Zacatecas — 100 años a seis personas** — **SE PROPONE CERRAR** como `NO ASIGNABLE A NINGUNA
+  VENTANA`. Tercera edición sin ancla externa; hecho de **ago-2021**, trampa de aniversario
+  confirmada, y `ljz.mx` solo devuelve otro caso (1,416 años, oct-2024). *Seguir gastando búsquedas
+  aquí no es rentable.*
+
+- **Los pendientes cerrados en ARGOS 103** —la auditoría 99-101, los 27 AEI de Escuinapa, Tlaxcala,
+  Jalisco, Veracruz como no reintentable y la causa raíz del fallo de agentes— *se retiran conforme
+  a la convención de dos ediciones.*
 
 ---
 
@@ -132,77 +135,74 @@ fallo de cobertura **era sistemático**, y eso obliga a dos cosas que ninguna ed
 
 Sesión nueva, un solo mensaje:
 
-> Haz el ARGOS 104 de hoy siguiendo `CLAUDE.md`. Rama `claude/argos-104-<sufijo>`. Lee
+> Haz el ARGOS 105 de hoy siguiendo `CLAUDE.md`. Rama `claude/argos-105-<sufijo>`. Lee
 > `reports/_pendientes.md`, `docs/dominios-oficiales.md` y la edición anterior
-> (`reports/argos-2026-08-20*`) para no duplicar hechos ni perder seguimientos. Verifica antes si la
-> rama de ARGOS 103 (`claude/argos-103-audit-9tuqp9`) ya se mergeó a `main`; si no, trae sus cambios
+> (`reports/argos-2026-08-21*`) para no duplicar hechos ni perder seguimientos. Verifica antes si la
+> rama de ARGOS 104 (`claude/argos-104-c0x7fm`) ya se mergeó a `main`; si no, trae sus cambios
 > primero con `git merge --ff-only`.
 >
-> **La ventana abre donde cerró ARGOS 103: 2026-08-20 08:16 CDMX.** Confirma la hora real de CDMX
+> **La ventana abre donde cerró ARGOS 104: 2026-08-21 07:55 CDMX.** Confirma la hora real de CDMX
 > al arrancar y séllala en encabezado, pie y cada marca "Consulta:".
 >
-> **PRIORIDAD 1 — continuar la auditoría hacia atrás, sobre las ventanas de ARGOS 95 a 98**
-> (aprox. 11-15 de agosto), con el método que rindió en ARGOS 103: **consultar por tipo de hecho y
-> no por entidad**, ejecutada **primero y en solitario**. ARGOS 103 demostró que el fallo de
-> cobertura era **sistemático**, no puntual, y no hay razón para suponer que empezó en ARGOS 99.
-> Equipos temáticos: masacres y homicidios múltiples · violencia colectiva (motines, fosas,
-> narcobloqueos, AEI), más una ronda de corroboración. **El bloque de ataques contra autoridades
-> puede reducirse**: ARGOS 103 demostró que ese tipo de hecho sí se recoge.
+> **PRIORIDAD 1 — saldar la deuda de registro, que es la más barata del archivo.** ARGOS 104
+> descubrió que el fallo no es solo de búsqueda sino **de registro**: hechos que ARGOS ya verificó y
+> clasificó, y que nunca recibieron ficha. Los cuatro inventariados en la pág. 7 de ARGOS 104
+> —Sabanillas, Nuevo Teapa–Cosoleacaque, "El G1" de Ensenada y "El Loco" de Metepec— **ya tienen
+> fuentes**: solo hay que darles ARG-ID y ficha, o declararlos fuera de umbral. Y **revisar los seis
+> vacíos incidentales de `argos-2026-08-14-fuentes.md` (líneas 130-150), que nadie ha mirado nunca.**
+> Esto **no cuesta búsquedas**, así que hazlo antes de gastar presupuesto.
 >
-> ⚠️ **Lo que la auditoría produce son fichas de hecho criminal, no una página de auditoría.** Es la
-> corrección editorial de ARGOS 103, y ahora es regla en `CLAUDE.md` ("El cartelón es para el mando,
-> no para el método"). Cada hecho recuperado va con sus **cuatro apartados**, ARG-ID `-REC-`,
-> **ventana de origen declarada**, y **fuera de los totales del corte**; su efecto sobre el conteo
-> de la edición de origen va en una **fe de erratas compacta**. Todo lo demás —lecciones de barrido,
-> señuelos, presupuesto, rendimiento de la rotación— va **al archivo de fuentes y a este archivo**,
-> nunca al cartelón. **Las conclusiones del cierre son de inteligencia criminal**: corredores,
-> calibres, perfiles de víctima, modus operandi, brecha entre detención y condena.
+> **PRIORIDAD 2 — auditar hacia atrás las ventanas de ARGOS 88 a 93**, el único tramo que nadie ha
+> auditado, con el método que ha rendido tres veces: **por tipo de hecho y no por entidad**, equipos
+> temáticos (masacres y homicidios múltiples · violencia colectiva), ejecutado **primero**. El bloque
+> de ataques contra autoridades puede omitirse.
 >
-> **PRIORIDAD 2 — rectificar en bloque las valoraciones de ARGOS 99, 100 y 101.** La serie pasa de
-> 3 eventos 🔴 a 10; el archivo sigue publicando `NO DETERMINABLE` donde consta que había rojos.
-> Hay que decidir el formato —nota de fe de erratas en cada cartelón afectado, o cartelón de
-> rectificación propio— y ejecutarlo.
+> ⚠️ **Lo que la auditoría produce son fichas de hecho criminal, no una página de auditoría**
+> (`CLAUDE.md`, "El cartelón es para el mando, no para el método"). Cuatro apartados, ARG-ID `-REC-`,
+> ventana de origen declarada, fuera de los totales del corte, y su efecto en una **fe de erratas
+> compacta**. Todo lo de método va al archivo de fuentes y a `_pendientes.md`.
 >
-> Aplica el **Ciclo A** (Noroeste + Centro encabezan el triaje judicial), con **Colima encabezando
-> por prioridad sobre el ciclo**: quedó `NO REVISADA`. En segundo orden, **Aguascalientes y
-> Nayarit**, que solo recibieron arbitraje de dominio y no barrido de boletines.
+> Aplica el **Ciclo B** (Noreste + Golfo encabezan el triaje judicial). **Ninguna entidad quedó
+> `NO REVISADA` en ARGOS 104**, así que el turno se aplica limpio, sin prioridad sobre el ciclo.
+>
+> **Añade la tercera forma de consulta del boletín federal**: por día suelto, por rango **y por
+> título del boletín sin restricción de dominio**. El vacío del 19-ago era falso porque `gob.mx`
+> **no indexó su propio boletín** y solo aparecía por republicadores.
 >
 > Antes del commit, ejecuta los tres controles obligatorios (`barrido-regional` ×6,
 > `procedencia-cifras` y `editor-duplicidad`) y actualiza `reports/_pendientes.md`.
 >
-> Dos cosas que te ahorran tiempo: **prueba a invocar los agentes de control por nombre** —en ARGOS
-> 103 acabaron resolviendo, y si fallan, lánzalos como `general-purpose` diciéndoles que lean
-> primero su archivo en `.claude/agents/`—. Y **no gastes búsquedas en el pendiente de Veracruz**:
-> está `BLOQUEADO POR EGRESO` y seis ediciones lo han intentado.
+> **No pierdas tiempo invocando los agentes de control por nombre**: en ARGOS 104 fallaron las tres
+> veces. Lánzalos directamente como `general-purpose` diciéndoles que **lean primero su archivo en
+> `.claude/agents/`** — funcionó en las nueve invocaciones. Y **no gastes búsquedas** en el pendiente
+> de Veracruz (`BLOQUEADO POR EGRESO`), en las 84 UMA de Tlaxcala (dos paráfrasis del mismo
+> resumidor), ni en el `id` del boletín de Cunduacán (tres ediciones y once `id` demuestran que no es
+> resoluble por buscador).
 
-### Lo que funcionó en ARGOS 103 y conviene repetir
+### Lo que funcionó en ARGOS 104 y conviene repetir
 
-1. **Invertir el eje del barrido.** Consultar **por tipo de hecho y no por entidad** produjo cuatro
-   eventos rojos que tres ediciones no vieron, con 36 búsquedas. Es el hallazgo de método más
-   rentable de la serie y **debe volverse fase permanente**, no auditoría extraordinaria.
-2. **Ejecutar la verificación prioritaria primero y en solitario**, tercera edición consecutiva que
-   lo confirma. Y **darle una segunda ronda de corroboración**: fue la que corrigió la ventana de dos
-   de los cuatro hallazgos, al distinguir fecha del hecho de fecha de publicación.
-3. **Verificar personalmente las acusaciones graves contra el archivo, con `grep`.** De seis
-   candidatos a omisión, **dos eran falsos** y ya estaban publicados. Sin esa comprobación, ARGOS 103
-   habría acusado a ARGOS 98 de dos omisiones inexistentes.
-4. **Comprobar la coherencia interna de las fuentes cuesta cero búsquedas y salva cifras.**
-   Verificar que "martes" correspondiera al 18 de agosto impidió atribuir cinco muertes al evento
-   equivocado; verificar "sábado 15" y "domingo 16" confirmó que las fechas de la auditoría no venían
-   del resumidor.
-5. **Dar a cada equipo los señuelos ya descartados en su encargo**, cuarta edición que lo confirma.
-   Ninguno reintrodujo un señuelo cerrado.
-6. **Publicar las cifras contradictorias sin fundirlas.** Cuatro cifras de bloqueos y un armamento
-   especial que no se suma a las armas largas. **Un total limpio que oculta una duda es peor producto
-   que un total con reserva.**
-7. **Corregir el generador, no su salida.** Su validación de desborde volvió a atrapar una URL de 75+
-   caracteres antes de publicar, y la paridad escritorio/móvil cerró en **16 de 16 ARG-ID**.
-8. **El archivo del repositorio manda sobre cualquier descripción de la norma.** `editor-duplicidad`
-   detectó que el borrador había reintroducido en la página 2 los bloques "ARGOS ALERTA" y "eventos
-   prioritarios", que `CLAUDE.md` **retiró expresamente** y que ninguna de las tres ediciones
-   anteriores trae. La regresión se produjo porque el coordinador siguió una descripción
-   **desactualizada** de la estructura en vez de leer la del repositorio. **Es el mismo principio que
-   ARGOS predica para las fuentes, aplicado a su propia norma.**
-9. **Un equipo que no encuentra nada puede estar aportando el diagnóstico.** El cero del bloque de
-   ataques contra autoridades acotó el fallo: **lo que ARGOS pierde es la violencia contra civiles
-   anónimos**, no la ejercida contra el Estado.
+1. **Verificar con `grep` toda acusación de omisión, antes de publicarla.** De los tres candidatos
+   que la auditoría trajo, **uno era falso**: San Pedro Amuzgos ya estaba publicado como
+   `ARG-99-003`, y **mejor sostenido en el archivo que en el hallazgo** —el archivo tiene la fuente
+   institucional que el equipo no encontró—. Tercera edición consecutiva en que este control salva
+   al producto de acusar a una edición anterior de algo que no hizo.
+2. **Leer las ediciones anteriores, no solo el índice.** El hallazgo mayor de este corte —el 🔴 de
+   Aquila— **no estaba en `indice-arg-id.md`**, porque nunca recibió ARG-ID: estaba en el **cuerpo de
+   dos archivos de fuentes**, como nota de método. El índice responde "¿tiene ARG-ID?"; no responde
+   "¿ARGOS ya sabía esto?".
+3. **La ronda de corroboración vuelve a rendir**, cuarta edición consecutiva: cerró una reserva
+   abierta (Ciudad Juárez, fuera de ventana por tres semanas), fijó la hora que decidía una ventana
+   (Buenavista, 06:30, media hora antes del cierre) y **deslindó un falso positivo** (el boletín de
+   la FGE de BC, de título casi idéntico y de otro caso).
+4. **Publicar las cifras contradictorias sin fundirlas**, y aplicarlo también **dentro de una misma
+   fuente**: en Juchipila el titular y el *slug* del mismo medio dan cifras distintas de personas
+   liberadas. **La contradicción no siempre está entre fuentes.**
+5. **Corregir el generador, no su salida.** Su validación de desborde atrapó de nuevo una URL de 75+
+   caracteres antes de publicar; se corrigió **en el escritorio** y se regeneró. Paridad
+   escritorio/móvil: **9 de 9 fichas**, contadores coincidentes.
+6. **La rotación de cobertura vuelve a acertar donde importa.** Segunda vez en la serie que **la
+   única sentencia integrable del corte aparece en la primera entidad del triaje** de la región que
+   encabezaba por ciclo. No es cobertura cosmética: **cambia lo que el producto encuentra**.
+7. **Un equipo que no encuentra algo puede estar señalando un problema real.** Occidente no localizó
+   el boletín federal del 19-ago que otros tres equipos sí encontraron. Su conclusión era incompleta,
+   pero **su cautela era correcta** y destapó la causa: **el portal no indexa su propio boletín**.

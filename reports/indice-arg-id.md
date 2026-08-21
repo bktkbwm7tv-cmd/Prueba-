@@ -191,5 +191,26 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-103-SEG-001` | 103 | 2026-08-20 | ARG-103-SEG-001 — QRoo — Playa del Carmen: fechado por primera vez (12-ago-2026), lo que lo saca de toda ventana cubierta |
 | `ARG-103-SEG-002` | 103 | 2026-08-20 | ARG-103-SEG-002 — Tabasco — Cunduacán, Miguel N: delito confirmado por primera vez (violación), 8 años |
 
-**Total de ARG-ID indexados: 173** · Ediciones cubiertas: 17 archivos de fuentes.
+| `ARG-104-001` | 104 | 2026-08-21 | ARG-104-001 — Agresión armada repelida durante cateos, Juchipila, Zacatecas (🟡 AMARILLO) — 10 detenidos, 2 personas liberadas |
+| `ARG-104-002` | 104 | 2026-08-21 | ARG-104-002 — Cateos con granadas de fragmentación y aditamento lanzagranadas, Lázaro Cárdenas, Quintana Roo (🟢 VERDE) — FRONTERA DE VENTANA |
+| `ARG-104-003` | 104 | 2026-08-21 | ARG-104-003 — Detención de 4 presuntos integrantes de "Los Mayitos", Puerto Madero, Tapachula, Chiapas (🟢 VERDE) — desglose CONTRADICHO |
+| `ARG-104-004` | 104 | 2026-08-21 | ARG-104-004 — Detención de "El Mayus", buscado por feminicidio, Álvaro Obregón, CDMX (🟢 VERDE) |
+| `ARG-104-005` | 104 | 2026-08-21 | ARG-104-005 — Detención de "El Pirul", Cártel de Los Mezcales, Colima (🟢 VERDE) — sin armamento publicado |
+| `ARG-104-006` | 104 | 2026-08-21 | ARG-104-006 — Aseguramientos de La Angostura y Los Ébanos, Mazatlán, Sinaloa (🟢 VERDE) — evento anterior publicado durante el corte |
+| `ARG-104-007` | 104 | 2026-08-21 | ARG-104-007 — Cateo con 120 kg de fentanilo, Mexicali, Baja California (🟢 VERDE) — evento anterior publicado durante el corte |
+| `ARG-104-008` | 104 | 2026-08-21 | ARG-104-008 — Aseguramiento en recorridos de seguridad, Ciudad Victoria, Tamaulipas (🟢 VERDE) — evento anterior publicado durante el corte |
+| `ARG-104-ARM-001` | 104 | 2026-08-21 | ARG-104-ARM-001 — Juchipila, Zacatecas: 1 larga, 60 cartuchos, 8 cargadores, 10 detenidos (🟡) |
+| `ARG-104-ARM-002` | 104 | 2026-08-21 | ARG-104-ARM-002 — Lázaro Cárdenas, Quintana Roo: 4 largas, 354 cartuchos, 15 cargadores, 2 granadas, 1 aditamento lanzagranadas, 1 detenido |
+| `ARG-104-ARM-003` | 104 | 2026-08-21 | ARG-104-ARM-003 — Puerto Madero, Chiapas: 3 largas y 4 detenidos (único dato coincidente); cortas, cartuchos y cargadores CONTRADICHOS |
+| `ARG-104-ARM-004` | 104 | 2026-08-21 | ARG-104-ARM-004 — Álvaro Obregón, CDMX: 1 corta, 1 detenido |
+| `ARG-104-ARM-005` | 104 | 2026-08-21 | ARG-104-ARM-005 — Mazatlán (La Angostura), Sinaloa: 6 largas, 5,675 cartuchos, 85 cargadores, 1 fusil Barrett |
+| `ARG-104-ARM-006` | 104 | 2026-08-21 | ARG-104-ARM-006 — Mazatlán (Los Ébanos), Sinaloa: 3,290 cartuchos y 45 cargadores, SIN ARMAS |
+| `ARG-104-ARM-007` | 104 | 2026-08-21 | ARG-104-ARM-007 — Mexicali, Baja California: 1 corta, 1 cargador, 120 kg de fentanilo |
+| `ARG-104-ARM-008` | 104 | 2026-08-21 | ARG-104-ARM-008 — Ciudad Victoria, Tamaulipas: 7 largas, 340 cartuchos, 18 cargadores |
+| `ARG-104-SEN-001` | 104 | 2026-08-21 | ARG-104-SEN-001 — FGE Durango, Gómez Palacio — Robo agravado, 7 años 10 meses, procedimiento abreviado |
+| `ARG-104-REC-001` | 104 | 2026-08-21 | ARG-104-REC-001 — Aquila (La Estanzuela), Michoacán: artefacto explosivo lanzado por dron, 1 muerto (🔴). Ventana de origen: ARGOS 95 |
+| `ARG-104-REC-002` | 104 | 2026-08-21 | ARG-104-REC-002 — Buenavista (col. Del Parque), Michoacán: ataque armado, muertas una mujer de 18 años y su bebé (🔴). Ventana de origen: ARGOS 96 |
+| `ARG-104-FE-001` | 104 | 2026-08-21 | ARG-104-FE-001 — FE DE ERRATAS: ARGOS 95 pasa de 0 a 1 evento 🔴 |
+| `ARG-104-FE-002` | 104 | 2026-08-21 | ARG-104-FE-002 — FE DE ERRATAS: ARGOS 96 pasa de 1 a 2 eventos 🔴 |
+**Total de ARG-ID indexados: 194** · Ediciones cubiertas: 18 archivos de fuentes.
 
