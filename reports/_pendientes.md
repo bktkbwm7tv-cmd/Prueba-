@@ -138,21 +138,42 @@ Sesión nueva, un solo mensaje:
 > rama de ARGOS 103 (`claude/argos-103-audit-9tuqp9`) ya se mergeó a `main`; si no, trae sus cambios
 > primero con `git merge --ff-only`.
 >
-> La PRIORIDAD 1 es **continuar la auditoría hacia atrás, sobre las ventanas de ARGOS 95 a 98**,
-> con el mismo método que rindió en ARGOS 103: **consultar por tipo de hecho y no por entidad**,
-> primero y en solitario. ARGOS 103 demostró que el fallo de cobertura era **sistemático**, no
-> puntual, y no hay razón para suponer que empezó en ARGOS 99.
+> **La ventana abre donde cerró ARGOS 103: 2026-08-20 08:16 CDMX.** Confirma la hora real de CDMX
+> al arrancar y séllala en encabezado, pie y cada marca "Consulta:".
+>
+> **PRIORIDAD 1 — continuar la auditoría hacia atrás, sobre las ventanas de ARGOS 95 a 98**
+> (aprox. 11-15 de agosto), con el método que rindió en ARGOS 103: **consultar por tipo de hecho y
+> no por entidad**, ejecutada **primero y en solitario**. ARGOS 103 demostró que el fallo de
+> cobertura era **sistemático**, no puntual, y no hay razón para suponer que empezó en ARGOS 99.
+> Equipos temáticos: masacres y homicidios múltiples · violencia colectiva (motines, fosas,
+> narcobloqueos, AEI), más una ronda de corroboración. **El bloque de ataques contra autoridades
+> puede reducirse**: ARGOS 103 demostró que ese tipo de hecho sí se recoge.
+>
+> ⚠️ **Lo que la auditoría produce son fichas de hecho criminal, no una página de auditoría.** Es la
+> corrección editorial de ARGOS 103, y ahora es regla en `CLAUDE.md` ("El cartelón es para el mando,
+> no para el método"). Cada hecho recuperado va con sus **cuatro apartados**, ARG-ID `-REC-`,
+> **ventana de origen declarada**, y **fuera de los totales del corte**; su efecto sobre el conteo
+> de la edición de origen va en una **fe de erratas compacta**. Todo lo demás —lecciones de barrido,
+> señuelos, presupuesto, rendimiento de la rotación— va **al archivo de fuentes y a este archivo**,
+> nunca al cartelón. **Las conclusiones del cierre son de inteligencia criminal**: corredores,
+> calibres, perfiles de víctima, modus operandi, brecha entre detención y condena.
+>
+> **PRIORIDAD 2 — rectificar en bloque las valoraciones de ARGOS 99, 100 y 101.** La serie pasa de
+> 3 eventos 🔴 a 10; el archivo sigue publicando `NO DETERMINABLE` donde consta que había rojos.
+> Hay que decidir el formato —nota de fe de erratas en cada cartelón afectado, o cartelón de
+> rectificación propio— y ejecutarlo.
 >
 > Aplica el **Ciclo A** (Noroeste + Centro encabezan el triaje judicial), con **Colima encabezando
-> por prioridad sobre el ciclo**: quedó `NO REVISADA`.
+> por prioridad sobre el ciclo**: quedó `NO REVISADA`. En segundo orden, **Aguascalientes y
+> Nayarit**, que solo recibieron arbitraje de dominio y no barrido de boletines.
 >
 > Antes del commit, ejecuta los tres controles obligatorios (`barrido-regional` ×6,
 > `procedencia-cifras` y `editor-duplicidad`) y actualiza `reports/_pendientes.md`.
 >
-> Dos cosas que te ahorran tiempo: **los agentes de control no resuelven por nombre** —lánzalos como
-> `general-purpose` diciéndoles que lean primero su archivo en `.claude/agents/`; funciona—. Y **no
-> gastes búsquedas en el pendiente de Veracruz**: está `BLOQUEADO POR EGRESO` y seis ediciones lo han
-> intentado.
+> Dos cosas que te ahorran tiempo: **prueba a invocar los agentes de control por nombre** —en ARGOS
+> 103 acabaron resolviendo, y si fallan, lánzalos como `general-purpose` diciéndoles que lean
+> primero su archivo en `.claude/agents/`—. Y **no gastes búsquedas en el pendiente de Veracruz**:
+> está `BLOQUEADO POR EGRESO` y seis ediciones lo han intentado.
 
 ### Lo que funcionó en ARGOS 103 y conviene repetir
 
