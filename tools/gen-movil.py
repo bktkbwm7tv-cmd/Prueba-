@@ -158,19 +158,34 @@ def lista_a_reg(bloque, anclas_validas=frozenset()):
 
 def _celdas_a_tarjeta(fila_html, cabeceras):
     """Convierte un <tr> del escritorio en una tarjeta apilada de la móvil."""
-    celdas = re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", fila_html, re.S)
+    celdas = re.findall(r"(<t[dh][^>]*>)(.*?)</t[dh]>", fila_html, re.S)
     if not celdas:
         return ""
     # Fila de totales o de nota: una sola celda con colspan. Se emite entera.
     if len(celdas) == 1:
-        return f'<div class="fila-total">{celdas[0].strip()}</div>'
+        return f'<div class="fila-total">{celdas[0][1].strip()}</div>'
+    # BUG DE ARGOS 104: esta función emparejaba celda i con cabecera i, ignorando
+    # colspan. En la fila TOTAL de la pág. 5 —que abre con un td colspan=4 y cierra
+    # con otro colspan=2— eso desplazaba TODAS las etiquetas y la móvil publicaba
+    # "Cortas 172" y "Granadas 16" donde el escritorio decía 2 armas cortas y
+    # 2 granadas. Cifras falsas, no un defecto de maquetación. Ahora se lleva la
+    # cuenta real de columnas y las celdas que abarcan varias se emiten a lo ancho,
+    # sin etiqueta, porque ninguna cabecera concreta las describe.
     partes = []
-    for i, celda in enumerate(celdas):
+    col = 0
+    for apertura, celda in celdas:
+        m = re.search(r'colspan\s*=\s*["\']?(\d+)', apertura, re.I)
+        span = int(m.group(1)) if m else 1
         valor = celda.strip()
         if not valor or valor in ("—", "&mdash;"):
+            col += span
             continue          # columna vacía: no se inventa contenido ni se ocupa espacio
-        etiqueta = cabeceras[i] if i < len(cabeceras) else f"col. {i + 1}"
-        partes.append(f'<div class="campo"><span class="k">{etiqueta}</span>{valor}</div>')
+        if span > 1:
+            partes.append(f'<div class="campo campo-ancho">{valor}</div>')
+        else:
+            etiqueta = cabeceras[col] if col < len(cabeceras) else f"col. {col + 1}"
+            partes.append(f'<div class="campo"><span class="k">{etiqueta}</span>{valor}</div>')
+        col += span
     return '<div class="fila-tarjeta">' + "".join(partes) + "</div>"
 
 

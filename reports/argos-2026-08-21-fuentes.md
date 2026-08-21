@@ -449,3 +449,181 @@ valoraciones originales está viciada, y debe reconstruirse con las rectificadas
    entidades, Colima saldada y una sentencia integrable**. La auditoría no tiene por qué pagarse con
    cobertura.
 
+---
+
+## Procedencia de cada cifra que entra a un total
+
+Añadido en ARGOS 104 **a exigencia del control `procedencia-cifras`**, que señaló con razón que el
+cartelón declaraba demostrable aquí lo que este archivo no registraba.
+
+**Advertencia que encabeza la tabla y vale para todas sus filas**: con el egreso bloqueado,
+**ninguna cifra de esta edición procede de la lectura íntegra de un documento oficial**. La columna
+«De dónde sale el dato» distingue lo único que aquí puede distinguirse: si el número aparece en el
+**titular** o el **_slug_** —texto primario, verificable en el resultado de búsqueda— o si procede
+del **resumen generado por el buscador**, que parafrasea. **Ninguna cifra de este corte tiene
+fragmento literal archivado**, y eso es una limitación del entorno, no del método.
+
+| Cifra | Evento | URL que la sostiene | De dónde sale el dato |
+|---|---|---|---|
+| 1 larga · 60 cartuchos · 8 cargadores · 10 detenidos · 152 ponchallantas | `ARG-104-ARM-001` | `elfinanciero.com.mx/estados/2026/08/20/` · `periodicomirador.com/2026/08/20/` · `zacatecas.gob.mx` (institucional, *slug* sin fecha) | **Resumen del buscador**; el *slug* institucional confirma el hecho y los liberados, no el desglose |
+| 4 largas · 354 cartuchos · 15 cargadores · 2 granadas · 1 aditamento · 1 detenido | `ARG-104-ARM-002` | `jornada.com.mx/noticia/2026/08/20/` · `poresto.com/…/2026/8/20/` · `24horasqroo.mx/2026/08/20/` · comunicado FGE QRoo (*slug* sin fecha) | **Resumen del buscador**, con tres anclas fechadas que fijan la publicación |
+| 3 largas · 4 detenidos *(único dato coincidente)* | `ARG-104-ARM-003` | `elsoldelsoconusco.com/2026/08/20/` · `infobae.com/mexico/2026/08/21/` · Milenio | **Resumen del buscador.** Las demás cifras quedan `CONTRADICHA` precisamente por esto |
+| 1 corta · 1 detenido | `ARG-104-ARM-004` | `infobae.com/mexico/2026/08/20/` | **Resumen del buscador**, fuente única. Por eso la ficha va en confianza **Bajo** |
+| 6 largas · 5,675 cartuchos · 85 cargadores · 1 Barrett | `ARG-104-ARM-005` | `eleese.com.mx/2026/08/20/` · `tallapolitica.com.mx` · `red113mx.com/2026/08/` | **Resumen del buscador sobre una reproducción del boletín federal.** La URL canónica de `gob.mx` **no se indexó** |
+| 3,290 cartuchos · 45 cargadores | `ARG-104-ARM-006` | ídem | ídem |
+| 1 corta · 1 cargador · 120 kg de fentanilo | `ARG-104-ARM-007` | ídem | ídem |
+| 7 largas · 340 cartuchos · 18 cargadores | `ARG-104-ARM-008` | ídem | ídem |
+| **7 años 10 meses · $64,150.38 · $397,554.90** | `ARG-104-SEN-001` | `fiscalia.durango.gob.mx/2026/08/20/fged-obtiene-sentencia-de-mas-de-7-anos-…` · El Siglo de Torreón | ⚠️ **El *slug* institucional sostiene «más de 7 años» y la fecha de publicación. No sostiene «7 años 10 meses» ni los dos importes al centavo**, que proceden del resumen. Ver reserva abajo |
+
+### Reserva sobre las tres cifras judiciales
+
+El control lo señaló y tiene razón: el *slug* prueba el **término jurídico** y el **umbral** («más de
+7 años»), no la **pena exacta** ni los **importes**. Se resuelve **conservando las tres cifras y
+declarando qué sostiene cada nivel de la fuente**, no retirándolas: la sentencia **existe**, está en
+un portal **clase A con fecha en la ruta**, el término jurídico es expreso y hay corroboración
+regional independiente. Lo que no está probado documentalmente es el **detalle decimal**.
+
+`PENA EXACTA E IMPORTES: SOSTENIDOS POR EL RESUMEN, NO POR EL SLUG.` Si ARGOS 105 no consigue
+lectura directa ni una segunda fuente que los repita, **la regla de las cifras arrastradas obliga a
+retirarlos del acumulado en la segunda edición** y a dejar la pena como «más de 7 años», no sumable.
+**La sentencia seguiría contando; el detalle no.**
+
+---
+
+## Cobertura por portal — detalle que el indicador resume
+
+**51 registros de consulta** en los seis informes regionales, con solapamiento en los federales.
+**No equivale a 32 fiscalías consultadas una por una**: el barrido es por entidad y cada región
+reparte sus 20 búsquedas entre triaje judicial y armamento.
+
+| Región | Portales con consulta registrada | Publicaron en ventana | `SIN RESULTADO INDEXADO EN VENTANA` |
+|---|---|---|---|
+| **Noroeste** | 12 — `fiscalia.durango.gob.mx` · `fiscalia.chihuahua.gob.mx` · `sspe.chihuahua.gob.mx` · `fgebc.gob.mx` · `bcs.gob.mx` · `sspsinaloa.gob.mx` · `sinaloa.gob.mx` · FGJES (vía medios, sustitución declarada) · `gob.mx/sspc` · `gob.mx/guardianacional` · SEDENA · SEMAR | **2** — Durango y el Gabinete de Seguridad | **10** |
+| **Noreste** | 8 — `sitio.fgecoahuila.gob.mx` · `fgjtam.gob.mx` · `fiscaliazacatecas.gob.mx` · `ssp.zacatecas.gob.mx` · `zacatecas.gob.mx` · `fiscaliaslp.gob.mx` · `gob.mx/sspc` · `gob.mx/guardianacional` | **2** — Gabinete y Gobierno de Zacatecas | **6** |
+| **Occidente** | 9 — `fgecolima.mx` · `col.gob.mx` · `fiscalia.jalisco.gob.mx` · `boletines.guanajuato.gob.mx` · `fiscalia-aguascalientes.gob.mx` · `fiscaliageneral.nayarit.gob.mx` · `gob.mx/sspc` · `gabinetedeseguridad.gob.mx` · `fgr.org.mx` | **2** — Guanajuato (sin contenido de seguridad) y la vía Colima | **5** |
+| **Centro** | 8 — `fiscaliageneralqro.gob.mx` (×2) · `fgjcdmx.gob.mx` · `fiscalia.puebla.gob.mx` · `fgjem.edomex.gob.mx` · `procuraduria.hidalgo.gob.mx` · `fiscaliamorelos.gob.mx` · `fgjtlaxcala.gob.mx` · `gob.mx/sspc` | **0** | **7** |
+| **Golfo** | 5 — `gob.mx/sspc` · `comunicacion.fiscaliaveracruz.gob.mx` · `veracruz.gob.mx` · `fiscaliatabasco.gob.mx` · `tabasco.gob.mx` | **0** | **5** |
+| **Sureste** | 9 — `fge.chiapas.gob.mx` · `ssp.chiapas.gob.mx` · `portal.fgeo.gob.mx` · `sspo.gob.mx` · `fiscaliaguerrero.gob.mx` · `fgeqroo.gob.mx` · `spsc.campeche.gob.mx` · `fgecam.campeche.gob.mx` · `fge.yucatan.gob.mx` | **2** — SSP Chiapas y FGE QRoo, **ambos vía cita en medios** | **7** |
+
+**Portales leídos por acceso directo: 0**, en las seis regiones. **`SIN ACTUALIZACIÓN CONSTATADA`:
+0**, con una excepción parcial —**Guanajuato**, cuyo portal **sí indexó el 20-ago** dos boletines,
+ninguno de seguridad: es la única casilla de la edición apoyada en algo parecido a la lectura de un
+listado. **Portales no localizados: 1** (FGJES Sonora). **Bloqueados sondeados: 1**
+(`gabinetedeseguridad.gob.mx/resultados/`).
+
+---
+
+## Control editorial antes de publicar — los tres controles obligatorios
+
+Los tres agentes **fallaron al invocarse por nombre**, las tres veces. Se aplicó el rodeo que
+`_pendientes.md` documenta —lanzarlos como `general-purpose` indicándoles que lean primero su
+archivo en `.claude/agents/`— y **funcionó en las nueve invocaciones**.
+
+### 1 · `barrido-regional` ×6 — ejecutado
+
+Es la condición previa para que cualquier módulo declare un vacío. **32 de 32 entidades**, ninguna
+`NO REVISADA`, seis topes respetados. Detalle en «Cobertura por portal».
+
+### 2 · `procedencia-cifras` — `CORREGIR ANTES DE PUBLICAR` · **corregido**
+
+Verificó la aritmética de forma independiente y **la encontró exacta**: las diez cifras del total
+nacional cuadran, ninguna cifra `contradicha` entró en un total, cartuchos y cargadores no se
+sumaron entre sí, el armamento especial no se sumó a las largas y nadie se contó dos veces. Lo que
+bloqueó la publicación fue otra cosa. **Dieciséis hallazgos, todos aceptados:**
+
+| Hallazgo | Corrección aplicada |
+|---|---|
+| **H-01 · El renglón TOTAL de la móvil publicaba cifras falsas** — «Cortas 172», «Granadas 16», «Cartuchos 0» | ⚠️ **El más grave de la edición.** Se corrigió **el generador, no su salida**: `_celdas_a_tarjeta` emparejaba celda *i* con cabecera *i* **ignorando `colspan`**, y la fila TOTAL abre con `colspan=4` y cierra con `colspan=2`. Ahora lleva la cuenta real de columnas y emite a lo ancho las celdas que abarcan varias. **Corrige a todas las ediciones futuras** |
+| H-02 · «Cuatro de los siete verdes» — son **tres** | Son **3 eventos** y **4 líneas de armamento**: Sinaloa aporta dos poblados en una sola ficha. Reformulado |
+| H-03 · «las cuatro piezas» — la frase enumera **cinco** | Corregido a cinco |
+| H-04 · «en veinte días» — el intervalo es de **ocho** | Corregido |
+| H-05 · «en cinco días» — son **dos** | Corregido; el argumento sale reforzado |
+| H-06 · «ocho fuentes regionales» — se nombran **siete** | Corregido a siete. La cifra venía arrastrada de la auditoría de ARGOS 97 sin recontarse |
+| H-07 · «ninguna entidad aporta más de un tercio del total» | **Falso para la munición**: Sinaloa aporta el **92%**. Acotado a armas largas y añadida la concentración |
+| H-08 · «16 detenidos» usado como total nacional | Son **17 personas detenidas**; 16 es el conteo **del módulo de armamento**. Corregido en los dos puntos |
+| H-09 · El cartelón prometía en el archivo de fuentes lo que este no contenía | Añadidos **«Procedencia de cada cifra que entra a un total»** y **«Cobertura por portal»**, y reescrita la promesa del cartelón para que **no declare más de lo que hay** |
+| H-10 · «32 fiscalías revisadas» declaraba más de lo verificado | Reformulado a **«Entidades con barrido dirigido: 32 de 32»** más **«51 registros de consulta a portales»**, con la advertencia de que **no equivale a 32 fiscalías consultadas una por una** |
+| H-11 · «siete casos acreditados» — cifra sin aritmética | Sustituida por la cuenta explícita: **cinco ediciones rectificadas por nueve hechos** |
+| H-12 · «dos personas liberadas» arbitrado sin marca en cuatro lugares | Añadida la marca `CONTRADICHA` en portada, ejes, tabla y resumen |
+| H-13 · La fecha en disputa de Aquila se presentaba como fijada | Corregido a «11 o 12 de agosto» en los dos puntos |
+| H-14 · Mexicali publicaba un `0` de cartuchos que la fuente no publicó | Cambiado a `s/c` |
+| H-15 · Cifras del archivo usadas sin marca de herencia · **Jilotlán es Jalisco, no Michoacán** | Añadido `HEREDADO — NO REVERIFICADO` a las tres, y **corregido el error de entidad** en la conclusión 2 |
+| H-16 · Comentario de `EVENTOS_ARM` heredado de ARGOS 103 y falso aquí | Reescrito. Afirmaba un rojo en el mapa de portada **en una edición que declara cero rojos** |
+
+**Reserva que el control abrió y no se cierra**: el *slug* de Durango sostiene **«más de 7 años»** y
+la fecha, **no** la pena exacta ni los dos importes al centavo. Se conservan las tres cifras
+**declarando qué sostiene cada nivel de la fuente** —ver «Procedencia»—, y queda escrito que si
+ARGOS 105 no obtiene lectura directa ni segunda fuente, **la regla de las cifras arrastradas obliga a
+retirar el detalle en la segunda edición**.
+
+### 3 · `editor-duplicidad` — `CORREGIR ANTES DE PUBLICAR` · **corregido**
+
+**No encontró ninguna duplicidad**: ni interna, ni contra las 17 ediciones anteriores. Verificó con
+`grep` los catorce topónimos y cifras del corte y confirmó que **ninguno aparece en el archivo**.
+También **verificó las dos fes de erratas contra las ediciones de origen** —no contra la edición que
+las declara— y las halló correctamente atribuidas, y confirmó que los bloques insertados en los seis
+archivos coinciden literalmente con la tabla de la pág. 8 y no contradicen los de ARGOS 103.
+
+**Amplió el diagnóstico de Aquila**: el vacío es **más antiguo y está mejor documentado** de lo que
+el coordinador reportó. No solo consta en dos archivos de fuentes, sino **en el cuerpo de dos
+cartelones publicados** (`argos-2026-08-13.html` y `argos-2026-08-14.html`) y en
+`argos-2026-08-15-fuentes.md`. **Confirmó que Buenavista y `ARG-99-002` son hechos distintos**, y por
+cinco criterios, no uno.
+
+**Dos afirmaciones falsas o no acreditadas, ambas corregidas:**
+
+1. **Misatribución.** El cartelón decía que **ARGOS 103** corrigió el desglose de Matamoros-Güémez.
+   `grep` sobre ARGOS 103 devuelve **cero**: la corrección es de **ARGOS 102**. Corregido en los tres
+   puntos. *Un deslinde de duplicidad que apunta a la edición equivocada no es trazable.*
+2. **Acusación no acreditada.** El cartelón decía que el boletín del 19-ago existía «contra lo que
+   dos ediciones anteriores dieron por un vacío». **La propia edición lo desmiente**: el boletín se
+   publicó el **20-ago, dentro de la ventana de ARGOS 104**, que abre a las 08:16, justo donde
+   ARGOS 103 cerró — **ARGOS 103 no pudo verlo**, y además no declaró que no existiera, sino
+   `SIN RESULTADO INDEXADO EN VENTANA … con reserva expresa`. **La cláusula se suprimió.**
+   ⚠️ **Esto acota el hallazgo del vacío federal**: lo que sí es un falso vacío acreditado es el
+   **18-ago**, con URL canónica en `gob.mx`. El del 19 **no lo es**.
+
+**Excedente de método retirado del cartelón** (regla «El cartelón es para el mando, no para el
+método», y por instrucción editorial directa de esta edición):
+
+| Retirado | Dónde estaba |
+|---|---|
+| Fila «Presupuesto de búsqueda — 177 de 200 · 9 de 9 topes» | Indicador de cobertura, pág. 8 |
+| Fila «Ciclo de rotación aplicado — Ciclo A» | Indicador de cobertura, pág. 8 |
+| «aparece donde la rotación de cobertura mandó buscar primero» | Ficha judicial, pág. 6 |
+| La acusación a otros cortes en la nota del semáforo | Portada — **sustituida por el criterio de clasificación**: por qué Juchipila es 🟡 y no 🔴 ni 🟢 |
+| «esta edición lo sostiene con prueba propia», «siete casos acreditados», el diagnóstico del instrumento | Valoración, pág. 8 — reducido a **una línea epistémica** |
+| «y sigue sin tramitarse» | Limitación, pág. 8 — reclamación administrativa |
+| Tres invocaciones de «verificado con `grep`» | Págs. 4, 6 y 7 |
+| Tabla «Hechos de ventanas anteriores inventariados» (5 filas) | Pág. 7 — **reducida a una nota de tres líneas**; el detalle ya estaba aquí |
+| Tabla «Candidatos judiciales» (9 filas) | Pág. 6 — **colapsada a 2 filas**: se conserva el deslinde de duplicidad de `ARG-101-SEN-001`, que es excepción permitida, y se agrupan los otros ocho |
+| «candidato a omisión de la serie 98/99» | Pág. 6 — acusación a ediciones anteriores |
+| Tercera repetición del argumento «cero rojos ≠ cero ocurridos» | Análisis ARGOS, pág. 4 — **queda una sola vez, en la valoración** |
+| «Colima sale de la casilla NO REVISADA» y «el resumidor rotuló este renglón como Sonora» | Textos emergentes del radar — sustituidos por el dato |
+
+**Las siete conclusiones de inteligencia pasaron el control sin objeción**: dron como arma de
+coacción, cotejo pericial de la firma de explosivos, escalón de capacidad de fuego antiblindaje,
+perfil de víctima civil con menores, munición almacenada aparte del arma, ponchallantas
+preposicionadas en el Cañón de Juchipila y brecha entre detención y condena. **Es la corrección
+respecto de ARGOS 103, cuyas siete conclusiones eran todas de método.**
+
+**Un hallazgo menor anotado y no corregido**, con su razón: **Chiapas** se regionaliza aquí como
+**Sureste**, y en `argos-2026-08-03/04.html` figuró como **Pacífico**. `CLAUDE.md` exige
+regionalización consistente entre ediciones. **Sureste es la lectura correcta** y la que usan las
+diecisiete ediciones siguientes: **no se toca el archivo antiguo**, se deja constancia aquí para que
+la divergencia no se reabra.
+
+### Balance de los controles
+
+**Los dos controles de gabinete devolvieron 34 hallazgos y se aceptaron 33.** Ninguno era de
+aritmética —los dos la verificaron por separado y la encontraron exacta—, y el más grave
+**no estaba en el cartelón sino en el generador**: una fila de totales que la versión móvil
+publicaba con las etiquetas desplazadas, es decir **cifras falsas para quien lea en teléfono**.
+Se corrigió el generador.
+
+El segundo bloque en importancia no son errores de dato sino **de disciplina editorial**: doce
+pasajes de ARGOS hablando de ARGOS que la norma prohíbe y que se habían colado igual. Es la segunda
+edición consecutiva en que `editor-duplicidad` tiene que retirar autorreferencia del cartelón, lo
+que sugiere que **la regla del mando todavía no se aplica sola** y que este control es, por ahora,
+lo único que la hace efectiva.
+

@@ -38,6 +38,7 @@ publicó**. Los dos existen y se corrigen de forma distinta.
 | ARGOS 102 | **Sonora — Nogales: 21 a 7 m 15 d a dos personas** | ARGOS 104 lo reconfirma **con dos URLs fechadas en ruta** (`eldiariodesonora.com.mx/…/2026/08/12/`, `telemax.com.mx/blog/2026/08/12/`): el hecho es del **12-ago** | **Confirmado fuera de toda ventana reciente.** No aparece en ninguna edición: es candidato de la ventana de ARGOS 96 |
 | ARGOS 96 | **Ruffo Appel / Ingemar**, huachicol fiscal (`ARG-98-SEG-001`) | **Primer movimiento en cinco ediciones**: **Rigoberto Blanco Cantú se entregó en EU** (red Farías / Mefra Fletes, nexos con Cártel del Golfo y CJNG), publicado el **20-ago** con fecha en la ruta | Sentencia de amparo de fondo. El movimiento **no aporta línea a ningún conteo** |
 | ARGOS 101 | **Guerrero — 5 sentencias** y **Guanajuato — 36 sentenciadas** | Sin avance. Agregados **sin desglose nominal**; el de Guanajuato es **anual**. Reconfirmados y no integrados por tercera edición | El desglose caso por caso |
+| ARGOS 104 | **Durango — la pena exacta y los importes de `ARG-104-SEN-001`** | El *slug* institucional sostiene **«más de 7 años»** y la fecha de publicación; **no sostiene «7 años 10 meses», ni los $64,150.38 de multa, ni los $397,554.90 de reparación**, que proceden del resumen del buscador. Lo detectó `procedencia-cifras` | Lectura directa del boletín o una segunda fuente que repita los importes. ⚠️ **Si ARGOS 105 no lo consigue, la regla de las cifras arrastradas obliga a retirar el detalle en la segunda edición** y dejar la pena como «más de 7 años», no sumable. **La sentencia seguiría contando; el detalle no** |
 
 ## Vacíos de publicación que siguen sin resolverse
 
@@ -59,6 +60,7 @@ publicó**. Los dos existen y se corrigen de forma distinta.
 
 | Desde | Caso | Detalle |
 |---|---|---|
+| ARGOS 104 | **Chiapas: Sureste o Pacífico** | Se regionaliza como **Sureste** desde ARGOS 88, pero en `argos-2026-08-03/04.html` figuró como **Pacífico**, y `CLAUDE.md` exige regionalización consistente entre ediciones. **Sureste es la lectura correcta.** *No se toca el archivo antiguo*: queda anotado para que la divergencia no se reabra |
 | ARGOS 104 | **Puerto Madero, Chiapas** (`ARG-104-ARM-003`) | **Dos lecturas incompatibles de la misma fuente institucional**: **0 armas cortas y 172 cartuchos desglosados** frente a **4 cortas de 9 mm y 322 cartuchos de 7.62×39**. Solo se integraron las **3 largas y los 4 detenidos**. `CONTRADICHA — NO INTEGRAR HASTA VALIDACIÓN` |
 | ARGOS 104 | **Juchipila — número de personas liberadas** | **Contradicción dentro de la misma fuente**: el boletín estatal y el *slug* de El Financiero dicen **dos**, su titular dice **una**. Se publicó **2** con la salvedad anotada |
 | ARGOS 104 | **El fusil Barrett de La Angostura** | La fuente publica "un fusil Barrett, seis armas largas" **sin precisar si está comprendido**. `NO DETERMINABLE` — se publica por separado, no se suma |
@@ -83,8 +85,9 @@ publicó**. Los dos existen y se corrigen de forma distinta.
 | ARGOS 102 | **Mergear las ramas de edición a `main`** | **Ninguna rama de ARGOS 88 a 104 está mergeada.** ⚠️ **ARGOS 104 confirmó el diagnóstico de forma limpia**: `barrido-regional`, `procedencia-cifras` y `editor-duplicidad` **fallaron por nombre en las tres invocaciones**, y el rodeo —lanzarlos como `general-purpose` diciéndoles que lean su archivo en `.claude/agents/`— **funcionó en las nueve**. Ya no hace falta diagnosticar: **aplicar el rodeo directamente** y, cuando se pueda, mergear a `main`, que es la corrección de fondo |
 | ARGOS 104 | **Rotación de cobertura — a ARGOS 105 le toca el Ciclo B** | ARGOS 104 aplicó el **Ciclo A** (Noroeste + Centro) y lo declaró. **Rendimiento: positivo y comprobable** — la única sentencia integrable del corte apareció en **Durango**, primera entidad del triaje del Noroeste, igual que en ARGOS 101. **A ARGOS 105 le toca el Ciclo B: Noreste + Golfo.** ✔ **Ninguna entidad quedó `NO REVISADA`**, así que **no hay prioridad sobre el ciclo** y el turno se aplica limpio |
 | ARGOS 100 | **Correcciones de ARGOS 99 a ARGOS 98 que siguen sin aplicarse** | **Séptima edición sin ejecutarse.** Reintegrar Lázaro Cárdenas (`ARG-98-ARM-003`) al total de ARGOS 98; sustituir dos URL mal citadas en `argos-2026-08-15-fuentes.md`; incorporar tres hechos omitidos por ARGOS 98 (Chilpancingo/Los Ardillos 14-ago, Nopala Hidalgo 13-ago, excomandante por tortura en Cuautla); reintegrar el desglose de Sain Alto al total de ARGOS 99. Se suman las nueve recuperaciones `ARG-102-REC-*` y los 27 AEI de Escuinapa |
+| ARGOS 104 | **La regla del mando todavía no se aplica sola** | **Segunda edición consecutiva** en que `editor-duplicidad` tiene que retirar autorreferencia del cartelón: esta vez **doce pasajes** —dos filas del indicador de cobertura, dos tablas de auditoría, tres invocaciones de `grep` y cuatro pasajes de ARGOS hablando de ARGOS—, pese a que el coordinador tenía la regla presente desde el arranque. **Ese control es, por ahora, lo único que la hace efectiva.** Conviene redactar el borrador **sin** esos bloques desde el principio, en vez de escribirlos y retirarlos |
 | ARGOS 104 | **Las portadas de ARGOS 95, 96, 99, 100 y 101 no reflejan su conteo rectificado** | Los **cinco cartelones llevan ya su bloque de fe de erratas encima de la valoración**, pero sus **portadas** —semáforo y contadores del radar— siguen mostrando el conteo original, porque se generan desde el arreglo `EVENTOS` de cada edición y regenerarlas obligaría a reescribir fichas que la rectificación deja intactas. Verificado con `grep` que `NO DETERMINABLE` **solo aparece en la valoración**, que es donde está el bloque. **Residuo conocido y acotado** |
-| ARGOS 104 | **Consultar el boletín federal por título, no solo por dominio** | El vacío del 19-ago era falso porque **`gob.mx` no indexó su propio boletín**: solo aparece por republicadores. **La regla de la doble consulta (día suelto + rango) ya no basta**: hay que añadir una **tercera forma, por título del boletín sin restricción de dominio**. Es la lección de método más rentable de esta edición y **debe incorporarse a `CLAUDE.md`** |
+| ARGOS 104 | **Consultar el boletín federal por título, no solo por dominio** | **Ya incorporado a `CLAUDE.md`** como «regla de la triple consulta»: día suelto + rango + **título sin restricción de dominio**. El boletín del 19-ago existe y **`gob.mx` no lo indexó**: solo aparece por republicadores. ⚠️ **Acotación de `editor-duplicidad`, que corrige a esta misma edición**: el falso vacío acreditado es el del **18-ago**, con URL canónica en `gob.mx`. **El del 19 no lo es** — se publicó el 20-ago, dentro de la ventana de ARGOS 104, así que ARGOS 103 no pudo verlo. **No se acusa a ninguna edición anterior por él** |
 
 ## Cerrados recientemente
 
@@ -124,6 +127,13 @@ publicó**. Los dos existen y se corrigen de forma distinta.
   VENTANA`. Tercera edición sin ancla externa; hecho de **ago-2021**, trampa de aniversario
   confirmada, y `ljz.mx` solo devuelve otro caso (1,416 años, oct-2024). *Seguir gastando búsquedas
   aquí no es rentable.*
+
+- **El bug de `colspan` del generador móvil** — **CERRADO, corregido en la herramienta y no en su
+  salida.** `_celdas_a_tarjeta` emparejaba celda *i* con cabecera *i* ignorando `colspan`, de modo
+  que la fila TOTAL de la pág. 5 —que abre con `colspan=4` y cierra con `colspan=2`— salía en la
+  móvil con **todas las etiquetas desplazadas**: publicaba «Cortas 172», «Granadas 16» y
+  «Cartuchos 0». **Cifras falsas para quien lea en teléfono**, no un defecto de maquetación. Lo
+  detectó `procedencia-cifras`. *La corrección beneficia a todas las ediciones futuras.*
 
 - **Los pendientes cerrados en ARGOS 103** —la auditoría 99-101, los 27 AEI de Escuinapa, Tlaxcala,
   Jalisco, Veracruz como no reintentable y la causa raíz del fallo de agentes— *se retiran conforme
