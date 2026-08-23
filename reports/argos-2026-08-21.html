@@ -921,10 +921,9 @@
     <b>Cálculo propio declarado.</b> Estos totales son <b>suma de ARGOS</b> sobre cifras publicadas
     por las fuentes. <b>Ninguna autoridad publicó un agregado nacional</b> para este periodo, de modo
     que el agregado es de ARGOS y se dice. <b>Cartuchos y cargadores nunca se suman entre sí.</b>
-    <b>El armamento especial no se suma a las armas largas</b>: el fusil Barrett de La Angostura y el
-    aditamento lanzagranadas de Chiquilá se publican aparte porque
-    <code>NO ES DETERMINABLE SI ESTÁN COMPRENDIDOS</code> en los renglones de armas largas de sus
-    respectivos boletines.
+    <b>El armamento especial no se suma a las armas largas</b>:
+    <code>NO ES DETERMINABLE SI ESTÁ COMPRENDIDO</code> en los renglones de armas largas de sus
+    boletines.
   </p>
 
   <div class="section-head">TABLA NACIONAL DEL CORTE</div>
@@ -1069,30 +1068,27 @@
     </div>
   </div>
 
-  <div class="section-head">INDICADOR DE COBERTURA — OBLIGATORIO</div>
+  <div class="section-head">INDICADOR DE COBERTURA</div>
   <div class="table-wrap"><table class="exec">
     <thead><tr><th>Indicador</th><th>Resultado</th></tr></thead>
     <tbody>
-      <tr><td>Entidades con barrido dirigido</td><td><b>32 de 32</b> — ninguna entidad queda <code>NO REVISADA</code></td></tr>
-      <tr><td>Portales con consulta registrada</td><td><b>51 registros de consulta</b> en los seis informes regionales, con solapamiento en los federales. <b>No equivale a 32 fiscalías consultadas una por una</b>: el barrido es por entidad y reparte sus búsquedas entre triaje judicial y armamento</td></tr>
+      <tr><td>Entidades revisadas</td><td><b>32 de 32</b> · <code>NO REVISADA</code>: <b>0</b></td></tr>
       <tr><td>FGR revisada</td><td><b>Sí</b>, en las seis regiones</td></tr>
-      <tr><td>Fiscalías con sentencia publicada <b>dentro de la ventana</b></td><td><b>1</b> — FGE Durango</td></tr>
-      <tr><td>Entidades <code>SIN RESULTADO INDEXADO EN VENTANA</code> en el módulo judicial</td><td><b>31</b> — el detalle portal por portal está en el archivo de fuentes</td></tr>
-      <tr><td><code>SIN ACTUALIZACIÓN CONSTATADA</code></td><td><b>0</b> — imposible bajo bloqueo: exige lectura directa del listado. <b>La única excepción</b> es Guanajuato, cuyo portal <b>sí indexó el 20-ago</b> dos boletines, ninguno de seguridad</td></tr>
-      <tr><td>Portales leídos por acceso directo</td><td><b>0</b> — decimoquinta edición consecutiva</td></tr>
-      <tr><td>Portales no localizados</td><td><b>1</b> — FGJES Sonora (no localizado, <b>no inexistente</b>). <b>No excluyente</b>: mide disponibilidad de portal, no resultado</td></tr>
-      <tr><td>Portales bloqueados sondeados</td><td><b>1</b> — <code>gabinetedeseguridad.gob.mx</code></td></tr>
+      <tr><td>Fiscalías con sentencia publicada en ventana</td><td><b>1</b> — FGE Durango</td></tr>
+      <tr><td>Entidades <code>SIN RESULTADO INDEXADO EN VENTANA</code></td><td><b>31</b></td></tr>
+      <tr><td><code>SIN ACTUALIZACIÓN CONSTATADA</code></td><td><b>0</b> — exige lectura directa del listado, imposible bajo bloqueo</td></tr>
+      <tr><td>Portal no localizado</td><td><b>1</b> — FGJES Sonora (no localizado, <b>no inexistente</b>)</td></tr>
     </tbody>
   </table></div>
 
-  <div class="section-head">CANDIDATOS JUDICIALES EXAMINADOS QUE NO INTEGRAN</div>
-  <div class="table-wrap"><table class="exec">
-    <thead><tr><th>Caso</th><th>Entidad</th><th>Razón de exclusión</th></tr></thead>
-    <tbody>
-      <tr><td><b>"Más de 26 años", Región Laguna</b> — <code>ARG-101-SEN-001</code></td><td>Durango</td><td><b><code>POSIBLE DUPLICIDAD</code> interceptada.</b> El buscador devolvió el <i>slug</i> bajo la ruta <code>/2026/08/20/</code>, idéntico al ya publicado bajo <code>/2026/08/17/</code>. Dos consultas de control confirmaron que <b>es el mismo boletín bajo dos rutas, no una segunda condena</b>. <b>Gana municipio —Lerdo— y su primera corroboración independiente</b>; <b>pena exacta y firmeza siguen sin obtenerse</b> y no es sumable</td></tr>
-      <tr><td><b>Otros ocho candidatos examinados</b></td><td>Edomex · Puebla · Querétaro · Veracruz · Sinaloa · Oaxaca · SLP · Guerrero y Guanajuato</td><td><b>No integran</b> por quedar <b>fuera de ventana</b>, por ser <b>agregados sin desglose nominal</b> o por <code>PENDIENTE DE ANCLA FECHADA</code>. Dos reservas que sí afectan a cifras publicadas: las <b>212 UMA de Coronango</b> siguen <code>SIN ANCLA DOCUMENTAL</code> y <b>no se convierten a pesos</b>, y su pena está <b>CONTRADICHA</b> —23 años frente a 26 a 7 m 15 d—. Detalle caso por caso en el archivo de fuentes</td></tr>
-    </tbody>
-  </table></div>
+  <p class="muted-note">
+    <b>Nueve candidatos judiciales más se examinaron y no integran</b>, por quedar fuera de ventana,
+    por ser agregados sin desglose nominal o por falta de ancla fechada. <b>Uno importa al conteo</b>:
+    el buscador devolvió el boletín de <b>Región Laguna</b> (<code>ARG-101-SEN-001</code>) bajo una
+    segunda ruta de fecha; dos consultas de control confirmaron que <b>es el mismo boletín, no una
+    segunda condena</b> — <code>POSIBLE DUPLICIDAD</code> interceptada. Gana municipio, <b>Lerdo</b>,
+    pero su <b>pena exacta sigue sin obtenerse y no es sumable</b>.
+  </p>
 
   <footer class="footbar">
     <span>Versión 3.0</span>
@@ -1112,11 +1108,8 @@
   </div>
 
   <p class="muted-note">
-    <b>Evento anterior publicado durante el corte.</b> Los dos hechos de esta página ocurrieron entre
-    el <b>11 y el 13 de agosto</b> y se documentan por primera vez aquí. <b>No se mezclan con los
-    hechos de la ventana</b> ni entran en sus totales: cada ficha declara su ventana de origen. Su
-    efecto sobre el semáforo de aquellas ediciones consta en la fe de erratas
-    <code>ARG-104-FE-001/002</code> (pág. 8).
+    <b>Hechos del 11 y el 13 de agosto, documentados por primera vez aquí.</b> Cada ficha declara su
+    ventana de origen y <b>ninguno entra en los totales de este corte</b>.
   </p>
 
   <div class="nota" id="ARG-104-REC-001">
@@ -1221,14 +1214,6 @@
     </div>
   </div>
 
-  <p class="muted-note">
-    <b>Otros hechos de esas mismas ventanas, sin ficha en este corte.</b> La auditoría confirmó
-    además <b>dos hechos 🟡 en Veracruz</b> —quema de dos camiones de volteo en Sabanillas y
-    homicidio de un tráilero en la carretera Nuevo Teapa–Cosoleacaque, ambos del 11-ago— y
-    <b>dos detenciones 🟢</b> —"El G1" en Ensenada, Baja California, y "El Loco" en Metepec, Estado
-    de México—. <b>No son de alto impacto</b> y su espacio pertenece a los hechos del corte: quedan
-    inventariados en el archivo de fuentes con sus URL.
-  </p>
 
 
   <footer class="footbar">
@@ -1324,21 +1309,11 @@
     de la FGR: no es un dominio muerto, es un dominio ilegible por acceso directo.
   </p>
 
-  <div class="section-head">COBERTURA Y LIMITACIÓN DEL PRODUCTO</div>
-  <div class="table-wrap"><table class="exec">
-    <thead><tr><th>Indicador</th><th>Resultado</th></tr></thead>
-    <tbody>
-      <tr><td>Entidades con barrido dirigido</td><td><b>32 de 32</b> · <code>NO REVISADA</code>: <b>0</b> · <b>51 registros de consulta a portales</b></td></tr>
-      <tr><td>Portales leídos por acceso directo</td><td><b>0</b> — decimoquinta edición consecutiva con el egreso bloqueado</td></tr>
-      <tr><td>Techo de confianza del producto</td><td><b>★★★★☆</b> — ningún documento primario puede leerse íntegro</td></tr>
-    </tbody>
-  </table></div>
-
   <p class="muted-note">
-    <b>Limitación declarada.</b> Los dominios <code>*.gob.mx</code> y los de fiscalías y secretarías
-    estatales están fuera de la lista blanca de egreso del entorno (<code>403</code> al CONNECT).
-    Toda fuente institucional de esta edición llega por <b>búsqueda dirigida o reproducción en
-    medios</b>, nunca por lectura del documento. <b>Es el único cambio que elevaría el techo del producto.</b>
+    <b>Cobertura y limitación.</b> <b>32 de 32 entidades</b> con barrido dirigido, ninguna
+    <code>NO REVISADA</code>. Los dominios <code>*.gob.mx</code> y los de fiscalías estatales están
+    bloqueados al acceso directo, así que <b>toda fuente institucional llega por búsqueda dirigida o
+    reproducción en medios</b>: el techo de confianza del producto es <b>★★★★☆</b>.
   </p>
 
   <div class="section-head">FUENTES DEL CORTE</div>
