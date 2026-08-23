@@ -184,8 +184,22 @@ se añade una validación que falla si hay tarjetas sin sus reglas.
 los `sem-item` salían sin estilo. Ahora el div se consume **por balance de etiquetas**, sin depender
 de qué venga detrás.
 
-Los dos fallos comparten causa: **anclar en algo que la edición puede cambiar**. Ambos se corrigieron
-en el generador, no en su salida.
+**Fallo 3, detectado por `editor-duplicidad`.** La conversión de listas a tarjetas exigía **dos
+`<span>` tras la etiqueta** —texto y ARG-ID— y operaba con `re.S`. Una lista **sin ARG-ID**, como las
+Conclusiones, hacía que el grupo del texto se extendiera **hasta el siguiente ítem**: los pares
+quedaban vacíos y los impares mostraban el texto del siguiente. En la móvil de esta edición
+**desaparecieron tres de las siete conclusiones** y otras tres quedaron mal atribuidas. Ahora se
+acota cada ítem primero y el ARG-ID es opcional, con una validación que falla si alguna tarjeta queda
+sin texto.
+
+Los tres fallos comparten causa: **suponer una estructura que la edición puede cambiar** —un selector
+presente, una sección que viene detrás, un tercer `<span>`—. Los tres se corrigieron en el generador,
+no en su salida.
+
+**Un cuarto defecto, este del cartelón y no de la herramienta**: la fila de Compostela de la tabla de
+armamento declaraba `colspan="4"` y dejaba **10 celdas para 11 columnas**, de modo que detenidos,
+corporación y confianza se mostraban corridos una columna. Corregido añadiendo la celda de AEI, y
+verificado que las cuatro filas de la tabla cuadran a 11.
 
 ---
 

@@ -157,16 +157,33 @@ def lista_a_reg(bloque, anclas_validas=frozenset()):
     ficha propia (detectado por editor-duplicidad en ARGOS 100).
     """
     def una(m):
-        cls, tag, txt, idd = m.group(1), m.group(2), m.group(3), m.group(4)
-        idd = re.sub(r"<[^>]+>", "", idd).strip()
-        anchor = (f'<a class="argid" href="#{idd}">{idd}</a>'
-                  if idd.startswith(f"ARG-{NUM}-") and idd in anclas_validas
-                  else f'<span class="argid">{idd}</span>')
+        interior = m.group(1)
+        # El tag es siempre el primer <span class="tag X">…</span>.
+        mt = re.match(r'\s*<span class="tag ([a-z]+)">(.*?)</span>(.*)$', interior, re.S)
+        if not mt:
+            return m.group(0)
+        cls, tag, resto = mt.group(1), mt.group(2), mt.group(3)
+        # Los <span> restantes: el primero es el texto; el segundo, si existe, el ARG-ID.
+        trozos = re.findall(r"<span>(.*?)</span>", resto, re.S)
+        txt = trozos[0] if trozos else resto
+        idd = re.sub(r"<[^>]+>", "", trozos[1]).strip() if len(trozos) > 1 else ""
+        if idd:
+            anchor = (f'<a class="argid" href="#{idd}">{idd}</a>'
+                      if idd.startswith(f"ARG-{NUM}-") and idd in anclas_validas
+                      else f'<span class="argid">{idd}</span>')
+        else:
+            anchor = ""
         return (f'<div class="reg">\n    <div class="reg-top">'
                 f'<span class="tag {cls}">{tag}</span>{anchor}</div>\n'
                 f'    <div class="reg-txt">{txt}</div>\n  </div>')
-    pat = re.compile(r'<div class="list-item"><span class="tag ([a-z]+)">([^<]*)</span>'
-                     r'<span>(.*?)</span><span>(.*?)</span></div>', re.S)
+
+    # ⚠️ La expresión anterior exigía DOS <span> tras el tag —texto y ARG-ID— y usaba
+    # `re.S`. Una lista sin ARG-ID, como las Conclusiones, hacía que el grupo del texto
+    # se extendiera HASTA EL SIGUIENTE ítem: los pares quedaban vacíos y los impares
+    # mostraban el texto del siguiente. En ARGOS 105 eso borró tres de siete
+    # conclusiones en la móvil. Ahora se acota cada `list-item` primero y se analiza su
+    # interior, con el ARG-ID opcional.
+    pat = re.compile(r'<div class="list-item">(.*?)</div>', re.S)
     return pat.sub(una, bloque).replace('<div class="list">', "<div>")
 
 
@@ -439,6 +456,9 @@ if "sem-item" in salida or "stat-tile" in salida or "cover-visuals" in salida:
     errores.append("quedaron restos de clases de escritorio")
 # El CSS de las tarjetas tiene que llegar SIEMPRE que haya tarjetas: su ausencia
 # no rompe el markup, solo lo vuelve ilegible, así que hay que comprobarla aparte.
+vacias = len(re.findall(r'<div class="reg-txt">\s*</div>', salida))
+if vacias:
+    errores.append(f"{vacias} tarjeta(s) .reg sin texto — la lista se reflujó mal")
 if 'class="fila-tarjeta"' in salida:
     for _c in (".fila-tarjeta{", ".fila-tarjeta .campo{", ".fila-tarjeta .campo .k{"):
         if _c not in salida:
