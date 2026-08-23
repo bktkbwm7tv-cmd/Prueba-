@@ -111,9 +111,14 @@ abiertos quedaron cerrados en negativo:
 
 - **Tamaulipas, choque Ejército-civiles del «viernes 21»**: sin ninguna cobertura institucional,
   nacional ni regional anclada al 21-ago. `NO OFICIAL — PENDIENTE DE CONFIRMACIÓN`. No se integra.
-- **Nuevo León, sentencia de 31 años 3 meses (Rincón de Mitras)**: publicada el **20-ago**, un día
-  antes de la ventana; sin republicación institucional de la FGJNL dentro del periodo. **Queda
-  fuera.**
+- **Nuevo León, sentencia de 31 años 3 meses (Rincón de Mitras)**: Francisco "N" y Pedro "N",
+  homicidio calificado y tentativa, hecho de **sep-2023**, juicio oral resuelto en agosto de 2026.
+  ⚠️ **Corrección de criterio respecto del borrador**: el motivo declarado era la ventana, y **era el
+  motivo equivocado** —publicada el 20-ago sin hora fijada, la regla de frontera la asignaría a esta
+  edición, que es la primera que la ve—. **El motivo real es la regla asimétrica**: fuente
+  periodística única (MVS Noticias) y **ningún comunicado de la FGJNL localizado**, porque esa
+  fiscalía comunica por redes y no por portal.
+  `PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL`.
 
 ⚠️ **Trampa de año neutralizada, y era grave.** El resumidor presentó como hecho del **22-ago-2026**
 un enfrentamiento en **Doctor Coss, Nuevo León** con **12 abatidos** y 8 armas largas. Las URLs
@@ -151,8 +156,14 @@ flagrancia—, presentado en la Mesa Estatal de Construcción de la Paz y republ
 delito verificable. Además `CONTRADICHA` — unas cabeceras dicen «24 horas» y otras «este fin de
 semana».
 
-Tabasco: boletín `/Boletin/Index/36454` con **200 años por secuestro agravado en Cárdenas**, pero el
-**año no está fijado** y la ruta es opaca. `PENDIENTE DE CONFIRMACIÓN OFICIAL`.
+Tabasco: boletín `/Boletin/Index/36454`, «Resumen detenidos y sentencias del 18 al 22 de agosto»,
+con **«más de 200 años» acumulados** por secuestro en Cárdenas y Cunduacán. **Queda fuera por dos
+motivos, y el segundo es definitivo**: no es una pena única sino un **acumulado de varias personas
+con condenas previas** —sin desglose nominal no hay sentencia verificable—; y el **orden del
+correlativo lo fecha**: el archivo ya había localizado el boletín **`37454`** (Cunduacán, 10 años por
+extorsión) el **20-ago-2026**, mil identificadores por encima, de modo que **`36454` es anterior a esa
+fecha** y el resumen corresponde a **agosto de 2025**. *Es una trampa de aniversario que el orden del
+correlativo desmonta sin necesidad de lectura directa: útil como método para un portal clase C.*
 
 ### Sureste — 6 de 6 · dos hechos en ventana
 Champotón (Campeche) y "El Abulón" (Oaxaca). `fge.chiapas.gob.mx`, `ssp.chiapas.gob.mx`,
