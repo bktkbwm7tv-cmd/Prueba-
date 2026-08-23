@@ -108,6 +108,29 @@ CSS_TABLA = """
     letter-spacing:1px;color:var(--cyan);text-transform:uppercase;}
   .fila-total{border:1px solid var(--border);border-radius:6px;background:var(--panel-2);
     padding:8px 10px;margin:6px 0;font-size:11.5px;line-height:1.5;}
+
+  /* ---------- ICONOGRAFÍA DE ARMAMENTO ----------
+     Trazo monocromo que hereda el color del texto. Cada icono identifica una
+     categoría de la taxonomía de CLAUDE.md y va SIEMPRE con etiqueta y cifra:
+     nunca identifica por color ni por forma en solitario. */
+  .ico{width:15px;height:15px;vertical-align:-3px;margin-right:5px;flex:none;
+    stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;
+    stroke-linejoin:round;opacity:.92;}
+  .ico-lg{width:22px;height:22px;margin:0 0 6px 0;vertical-align:0;}
+
+  /* Tarjetas de conteo del módulo de armamento (Bloque 1 de CLAUDE.md). */
+  .conteo{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));
+    gap:6px;margin:10px 0 4px;}
+  .conteo .tile{border:1px solid var(--border);background:var(--panel);
+    padding:9px 8px;display:flex;flex-direction:column;align-items:flex-start;}
+  .conteo .tile .lbl{font-family:var(--mono);font-size:8.5px;letter-spacing:1px;
+    text-transform:uppercase;color:var(--cyan);line-height:1.3;}
+  .conteo .tile .num{font-size:19px;font-weight:700;color:var(--white);
+    line-height:1.15;margin-top:3px;}
+  .conteo .tile .sub{font-size:8.5px;color:var(--muted);margin-top:2px;}
+  /* Categoría en cero: se muestra igual, atenuada. La ausencia es dato. */
+  .conteo .tile.cero{opacity:.45;}
+  .conteo .tile.cero .num{color:var(--muted);font-weight:600;}
 """
 # ⚠️ Este guardián comprobaba UNA sola clase (`.tabla-scroll`). Como el shell se
 # hereda de la móvil anterior, bastaba con que esa clase existiera para omitir el
@@ -118,7 +141,8 @@ CSS_TABLA = """
 # solo medía markup, secciones y ancho, nunca la presencia del CSS.
 # Ahora se comprueba cada selector por separado y se inyecta lo que falte.
 _SELECTORES = (".tabla-scroll{", ".fila-tarjeta{", ".fila-tarjeta .campo{",
-               ".fila-tarjeta .campo .k{", ".fila-total{", ".tabla-tarjetas{")
+               ".fila-tarjeta .campo .k{", ".fila-total{", ".tabla-tarjetas{",
+               ".ico{", ".conteo{")
 _faltan = [c for c in _SELECTORES if c not in shell]
 if _faltan:
     # Se retiran del shell las reglas parciales que sí estuvieran, para no duplicarlas,
@@ -463,9 +487,16 @@ if 'class="fila-tarjeta"' in salida:
     for _c in (".fila-tarjeta{", ".fila-tarjeta .campo{", ".fila-tarjeta .campo .k{"):
         if _c not in salida:
             errores.append(f"hay tarjetas pero falta la regla CSS {_c} — saldrían sin estilo")
+# Se cuentan solo radar y mapas: los iconos de la taxonomía de armamento también
+# son <svg> y no deben confundirse con ellos.
 svg_esperados = 3 if 'id="argos-map-arm"' in desk else 2
-if salida.count("<svg") != svg_esperados:
-    errores.append(f"se esperaban {svg_esperados} SVG, hay {salida.count('<svg')}")
+svg_visuales = salida.count("<svg") - salida.count('<svg class="ico')
+if svg_visuales != svg_esperados:
+    errores.append(f"se esperaban {svg_esperados} SVG de radar/mapa, hay {svg_visuales}")
+# Los iconos tienen que llegar a la móvil igual que al escritorio.
+ico_desk, ico_mov = desk.count('<svg class="ico'), salida.count('<svg class="ico')
+if ico_desk and not ico_mov:
+    errores.append("el escritorio lleva iconos y la móvil ninguno")
 
 # --- control de desborde horizontal (fallo de ARGOS 100) ---------------------
 # La móvil de ARGOS 100 se salió de la pantalla y la validación dijo "OK": comprobaba

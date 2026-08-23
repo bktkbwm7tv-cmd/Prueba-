@@ -22,6 +22,7 @@ cualquier otra consideración de formato.**
 | **Solo el día** | El cartelón publica **únicamente hechos de su propia ventana**. Las recuperaciones de ventanas anteriores, las fes de erratas y los hallazgos de auditoría van al **archivo de fuentes y a este documento**, nunca al cartelón |
 | **Sin «Ejes del día»** | La sección se retiró. Cada hecho aparece **una sola vez**, en su ficha. Las tablas de módulo (detenciones, armamento, sentencias) aportan **campos distintos** —cifras, corporación, pena—, no repiten el titular |
 | **Sin exposición sobre ARGOS** | Nada de presupuesto de búsqueda, ciclos, agentes, `grep`, cobertura del instrumento ni autorreferencia. Las excepciones de trazabilidad —declaración de ventana, casillas de cobertura, contradicciones— se escriben **en una línea**, no en párrafos |
+| **Iconografía de armamento** | Cada categoría de la taxonomía lleva icono propio, monocromo y de trazo, en las tarjetas de conteo y en las cabeceras de la tabla. **Siempre con etiqueta y cifra**, nunca identificando solo. Las categorías en cero se muestran atenuadas: la ausencia es dato. Fijado en `CLAUDE.md` desde ARGOS 105 |
 | **Explicación al mínimo** | Es un análisis para un mando: hecho, entidad, municipio, fecha, cifras con su desglose, fuente, confianza y ARG-ID. Lo demás sobra |
 
 ## Seguimientos abiertos por los hechos de ARGOS 105

@@ -849,6 +849,27 @@ primaria + corroboración independiente) · **Medio** (fuente oficial única con
 **Bajo** (dos fuentes periodísticas coincidentes sin comunicado oficial) · **No confirmado**
 (fuente abierta o versión aislada — nunca se integra a los totales).
 
+### Iconografía de la taxonomía (obligatoria desde ARGOS 105)
+
+Cada categoría de la taxonomía lleva un **icono propio**, en las tarjetas de conteo y en las
+cabeceras de la tabla de armamento. Son **SVG de trazo monocromo** que heredan el color del texto
+(`currentColor`): sin relleno, sin 3D, sin color propio. Su función es que un mando localice una
+categoría de un vistazo, no decorar.
+
+Tres reglas que los gobiernan:
+
+1. **El icono nunca identifica solo.** Va siempre acompañado de **etiqueta y cifra**. Ni el color ni
+   la forma por separado transmiten el dato.
+2. **Las categorías en cero se muestran igualmente**, atenuadas. Que en 48 horas no haya granadas,
+   explosivos ni armamento especial **es dato**, no hueco: retirarlas del bloque haría invisible la
+   ausencia.
+3. **El bloque de tarjetas no repite la tabla**: la tarjeta da el total nacional por categoría, la
+   tabla da el desglose por evento con su ARG-ID, corporación y confianza. Son campos distintos.
+
+La definición de los nueve iconos —cortas, largas, cartuchos, cargadores, granadas, AEI, explosivos,
+armamento especial y detenidos— vive en el CSS del cartelón (`.ico`, `.conteo`) y **el generador
+móvil la inyecta también en la versión de teléfono**, donde las tarjetas se reflúan a rejilla de tres.
+
 ### Estructura visual recomendada
 
 Bloque 1 — tarjetas de conteo (armas cortas, armas largas, municiones, granadas, AEI, explosivos,
