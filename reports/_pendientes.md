@@ -12,23 +12,33 @@ segunda edición siguiente.
 
 ---
 
-## PRIORIDAD 1 para ARGOS 106 — la ventana que ARGOS 105 no pudo barrer
+## Instrucción editorial permanente — la forma del cartelón
 
-**ARGOS 105 se quedó sin presupuesto de búsqueda (200/200 de la sesión) antes de que cinco de las
-seis regiones ejecutaran una sola consulta.** No es un vacío del territorio: es un vacío de
-observación, y está declarado como tal en todo el producto.
+Fijada por el destinatario en ARGOS 105, tras revisar la edición en teléfono. **Rige por encima de
+cualquier otra consideración de formato.**
+
+| Regla | Detalle |
+|---|---|
+| **Solo el día** | El cartelón publica **únicamente hechos de su propia ventana**. Las recuperaciones de ventanas anteriores, las fes de erratas y los hallazgos de auditoría van al **archivo de fuentes y a este documento**, nunca al cartelón |
+| **Sin «Ejes del día»** | La sección se retiró. Cada hecho aparece **una sola vez**, en su ficha. Las tablas de módulo (detenciones, armamento, sentencias) aportan **campos distintos** —cifras, corporación, pena—, no repiten el titular |
+| **Sin exposición sobre ARGOS** | Nada de presupuesto de búsqueda, ciclos, agentes, `grep`, cobertura del instrumento ni autorreferencia. Las excepciones de trazabilidad —declaración de ventana, casillas de cobertura, contradicciones— se escriben **en una línea**, no en párrafos |
+| **Explicación al mínimo** | Es un análisis para un mando: hecho, entidad, municipio, fecha, cifras con su desglose, fuente, confianza y ARG-ID. Lo demás sobra |
+
+## Seguimientos abiertos por los hechos de ARGOS 105
 
 | Desde | Caso | Qué falta | Qué lo cierra |
 |---|---|---|---|
-| ARGOS 105 | **La ventana 2026-08-21 07:55 → 2026-08-23 08:00 quedó sin barrer en 27 de 32 entidades** | Solo se barrió el **Noreste** (Coahuila, NL, Tamaulipas, SLP, Zacatecas), con resultado cero. **Noroeste, Occidente, Centro, Golfo y Sureste quedan `NO REVISADA`**, igual que **el emisor federal**: la regla de la triple consulta **no llegó a ejecutarse** para los boletines del 21 y 22 de agosto | Barrer esa ventana **además** de la propia de ARGOS 106. ⚠️ **Prioridad sobre el ciclo**: la regla es que las entidades `NO REVISADA` encabezan el triaje de la edición siguiente **aunque no les toque por ciclo**. Son 27, así que en la práctica **ARGOS 106 encabeza con cobertura, no con turno**, y el ciclo se reanuda después |
-| ARGOS 105 | **El Ciclo B se aplicó a medias** | Encabezaban el triaje judicial **Noreste y Golfo**. El Noreste lo ejecutó —resultado negativo, sin sentencia en ventana—; **el Golfo no llegó a lanzar consulta**. La mitad del experimento de rotación **no se realizó** | Ejecutar el triaje judicial del **Golfo** (Veracruz, Tabasco) en ARGOS 106, y solo entonces dar el Ciclo B por concluido. **A ARGOS 106 le correspondería el Ciclo C (Occidente + Sureste)**, pero la prioridad de cobertura vence al turno |
-| ARGOS 105 | **Presupuesto de búsqueda: el fallo es silencioso y ya costó una edición entera** | El agotamiento **no avisa**: una región que arranca tarde entrega un informe vacío indistinguible de «no hubo publicaciones». El equipo del Sureste lo detectó y lo reportó **en vez de entregar el informe vacío**, que es lo que salvó la edición de declarar un falso `SIN DATO` nacional | Arrancar el barrido regional **antes** que cualquier otro encargo, o repartir el presupuesto explícitamente por región. La auditoría retroactiva, por valiosa que sea, **consumió el presupuesto que le tocaba al corte del día** |
-
-## Seguimiento nuevo, entregado por el usuario y sin corroborar
-
-| Desde | Caso | Qué falta | Qué lo cierra |
-|---|---|---|---|
-| ARGOS 105 | **Zapopan, Jalisco — Octavio Haro, empresario reportado como desaparecido, hallado muerto** | Reportado por el usuario durante la elaboración de ARGOS 105, con la indicación de que la autoridad apunta a **«un posible móvil relacionado con su entorno personal»** y de que es **tema de atención en la línea de desaparecidos**. ⚠️ **ARGOS 105 no pudo corroborarlo: cero búsquedas disponibles.** No se publicó ficha porque **no hay una sola URL que lo sostenga**, y la regla es que un dato que no puede comprobarse no aparece | **Encargo explícito para ARGOS 106**, y de los primeros: fecha del hallazgo y fecha del reporte de desaparición —son campos distintos—, municipio exacto, boletín de la **FGE de Jalisco** (`fiscalia.jalisco.gob.mx`, **clase A/B: sus *slugs* llevan fecha completa como sufijo**), y contraste del móvil declarado. **Si se acredita, es 🟡 o 🔴 según agravantes**, y entra por la línea de personas no localizadas |
+| ARGOS 105 | **Jalisco — Octavio Haro Cachúa** (`ARG-105-001`) | **Publicado.** Reporte de desaparición 11-ago, cuerpo hallado 19-ago en La Venta del Astillero, peritajes 21-ago, identificación 22-ago. La FGE declara móvil «de carácter personal» y reporta avances para órdenes de aprehensión. ⚠️ **Causa de muerte NO PUBLICADA** y **sin boletín propio** de `fiscalia.jalisco.gob.mx` | La causa de muerte, el boletín institucional y las órdenes de aprehensión cuando se cumplimenten |
+| ARGOS 105 | **Jalisco — los otros dos empresarios inmobiliarios** | **Ricardo Cabezas Talavera** y **César Ríos**, reportados como no localizados en las tres semanas previas. La FGE sostiene que los tres casos son **independientes** | **Encargo para ARGOS 106**: cruzar los tres expedientes por desarrollos, socios y predios en litigio en el corredor Zapopan–carretera a Nogales. Si hay patrón, cambia la clasificación de los tres |
+| ARGOS 105 | **Campeche — la avioneta de Champotón** (`ARG-105-002`) | Matrícula, bitácora y planes de vuelo **no publicados**; origen de los 3,000 L de turbosina, sin determinar; sin comunicado primario de `fgr.org.mx` | El comunicado de la FGR y el registro aeronáutico. Es la línea de mayor rendimiento del corte |
+| ARGOS 105 | **Los Mezcales — dos capturas en 36 horas** | "El Pirul" en Colima (`ARG-104-005`) y **"El Abulón" en Oaxaca** (`ARG-105-003`), segundo al mando, residiendo a 1,200 km de su plaza | Estado procesal de la causa de 2023 de "El Abulón" —que explica cómo estaba en libertad— y mapeo de arrendamientos en fraccionamientos privados de Oaxaca de Juárez |
+| ARGOS 105 | **Nayarit — los 6 AEI de La Yesca** (`ARG-105-007`) | `FRONTERA DE VENTANA — FECHA NO FIJADA`: podría ser del 20-ago. **Fuente única** (NTV), sin comunicado institucional; tipo de AEI y número de armas no publicados | Un ancla fechada o el comunicado. Si resulta del 20-ago, se retira del total por fe de erratas |
+| ARGOS 105 | **CDMX — las alcaldías de la banda de robo a casa habitación** (`ARG-105-005`) | Sin alcaldías ni colonias publicadas, el hecho **no puede cruzarse con el mapa de incidencia**. Sin fuente institucional localizada | Un comunicado de la FGJ CDMX |
+| ARGOS 105 | **Querétaro — la sentencia de Altozano** (`ARG-105-SEN-001`) | La pena solo existe en el resumen del buscador: `CANTIDAD NO DETERMINADA`, no sumable | Lectura directa del boletín o una segunda fuente que repita la pena |
+| ARGOS 105 | **Veracruz — el agregado de 36 resoluciones judiciales** | 5 condenatorias y 31 vinculaciones **sin desglose nominal**; además `CONTRADICHA`: «24 horas» frente a «este fin de semana» | El desglose caso por caso |
+| ARGOS 105 | **Tabasco — 200 años por secuestro agravado, Cárdenas** | Boletín `/Boletin/Index/36454`, **año sin fijar**, ruta opaca | Un ancla externa fechada que confirme 2026 |
+| ARGOS 105 | **Chiapas — posible subregistro de `ARG-104-003`** | La cobertura del 20-ago describe **8-9 detenidos en cuatro puntos** de Tapachula; la ficha registró solo Puerto Madero (4 detenidos, 3 largas). **No se tocó el archivo sin lectura directa** | Una fuente que desglose los cuatro puntos |
+| ARGOS 105 | **Nuevo León — sentencia de 31 años 3 meses (Rincón de Mitras)** | Publicada el **20-ago**, un día antes de la ventana; sin republicación institucional de la FGJNL dentro del periodo | Un post de `@FGJNL`. Candidata para ARGOS 106 si reaparece |
 
 ## Deuda de método abierta por ARGOS 105
 
@@ -37,6 +47,9 @@ observación, y está declarado como tal en todo el producto.
 | ARGOS 105 | **La serie tiene al menos un intervalo que ninguna edición cubre** | Hallazgo nuevo, y es un **tercer modo de fallo**, distinto de los dos conocidos. No es de búsqueda (el hecho no se encuentra) ni de registro (se encuentra y no se ficha): es **de continuidad de ventana**. El multihomicidio de Saltillo (`ARG-105-REC-001`) ocurre la **tarde del 4-ago**; **ARGOS 88 cerró a las 07:15 de ese día** y la ventana declarada de **ARGOS 90 abre el 5-ago**. **No existe ARGOS 89.** El hecho no fue omitido por nadie: cayó entre dos ediciones. **Acción**: recorrer las ventanas declaradas de toda la serie y **listar los intervalos sin cobertura**. Es trabajo de `grep` sobre los archivos de fuentes, **no cuesta búsquedas**, y cada hueco que aparezca es un tramo donde la serie no puede afirmar nada |
 | ARGOS 105 | **Tres «vacíos» del archivo no lo eran** | El contraste con `grep` sobre todo el repositorio desmintió **tres acusaciones de omisión** heredadas: los **funcionarios de Medio Ambiente del Edomex** (acusación de ARGOS 97) estaban publicados como `ARG-94-003`; los **19 sentenciados de Tizapán el Alto** (acusación de ARGOS 98) estaban publicados como `ARG-94-SEN-002`; y **Apatzingán** ya lo había anulado ARGOS 98. **Dos pendientes vivos descansaban sobre una premisa falsa.** **Acción**: antes de heredar un pendiente, comprobar que el hecho que lo motiva no está ya en el archivo. Cuesta un `grep` |
 | ARGOS 105 | **Un `grep` solo sirve si se leen sus resultados** | El control `procedencia-cifras` descubrió que `ARG-105-REC-007` iba a publicar la versión de ARGOS 98 de Pesquería **sin cotejar `ARG-102-FE-004`**, que ya la había reconciliado mejor. **El `grep` de PRIORIDAD 1 sí devolvió esa línea**, y el coordinador no la siguió. No falta un control: falta **leer lo que el control devuelve**. Cuando una consulta devuelva una fe de erratas o un `-FE-` sobre el hecho que se está fichando, **es de lectura obligatoria antes de redactar** |
+| ARGOS 105 | **El resumidor no solo confunde años: inventa futuros** | Patrón **nuevo**, distinto de la trampa de aniversario. Para el racimo de Jiutepec, Morelos, el resumen atribuyó fechas del **25, 26 y 28 de agosto de 2026**, **posteriores al día del corte**: hechos que no pueden haber ocurrido. Se descartó el racimo íntegro. **Comprobar que ninguna fecha sea posterior a la del corte** es un control de coste cero que debe hacerse siempre |
+| ARGOS 105 | **La trampa de año que estuvo a punto de entrar como el hecho rojo del corte** | El resumidor presentó como del **22-ago-2026** el enfrentamiento de **Doctor Coss, Nuevo León** (12 abatidos). Las URLs primarias lo sitúan en **2025**. Sin la verificación se habría publicado el hecho más grave del corte, y sería falso. **Ninguna cifra de abatidos entra sin URL con año en la ruta** |
+| ARGOS 105 | **El Ciclo B no acertó, y conviene registrarlo** | Noreste y Golfo encabezaron el triaje judicial y **ninguno halló sentencia**; la única del corte apareció en **Querétaro**, que encabezaba con armamento. **Dos éxitos consecutivos no hacen una regla.** A ARGOS 106 le toca el **Ciclo C (Occidente + Sureste)** |
 | ARGOS 105 | **El generador móvil: corregido, y la lección se repite** | El ancla de inyección de los SVG exigía el título **literal** `SEMÁFORO ARGOS`; esta edición lo matizó con un sufijo y la móvil salió **sin radar, sin mapa y con los `sem-item` en crudo**, en silencio salvo por la validación. Corregido para tolerar sufijos, y el validador ya no exige 3 SVG fijos —una edición sin aseguramientos lleva 2 legítimamente—. **Se corrigió la herramienta, no su salida**, y la corrección beneficia a todas las ediciones futuras |
 
 ## Seguimientos judiciales abiertos
@@ -147,73 +160,59 @@ Sesión nueva, un solo mensaje:
 
 > Haz el ARGOS 106 de hoy siguiendo `CLAUDE.md`. Rama `claude/argos-106-<sufijo>`. Lee
 > `reports/_pendientes.md`, `docs/dominios-oficiales.md` y la edición anterior
-> (`reports/argos-2026-08-23*`) para no duplicar hechos ni perder seguimientos. **Mergea las ramas
-> antes de empezar**: comprueba si `claude/argos-105-us24r6` ya está en `main` y, si no, trae sus
-> cambios con `git merge --ff-only`.
+> (`reports/argos-2026-08-23*`). **Mergea las ramas antes de empezar**: comprueba si
+> `claude/argos-105-us24r6` ya está en `main` y, si no, trae sus cambios con `git merge --ff-only`.
 >
-> **La ventana abre donde cerró ARGOS 105: 2026-08-23 08:00 CDMX.** Confirma la hora real de CDMX al
+> **La ventana abre donde cerró ARGOS 105: 2026-08-23 09:08 CDMX.** Confirma la hora real de CDMX al
 > arrancar y séllala en encabezado, pie y cada marca "Consulta:".
 >
-> ⚠️ **PRIMERO DE TODO, Y ANTES DE CUALQUIER OTRO ENCARGO: lanza los seis `barrido-regional`.**
-> ARGOS 105 se quedó **sin presupuesto de búsqueda** (200/200 de la sesión) porque gastó la
-> auditoría retroactiva antes que el barrido, y **cinco de las seis regiones no llegaron a lanzar una
-> sola consulta**. No repitas ese orden. El agotamiento **no avisa**: una región que arranca tarde
-> entrega un informe vacío indistinguible de "no hubo publicaciones".
+> ⚠️ **LA FORMA DEL CARTELÓN ESTÁ FIJADA POR EL DESTINATARIO. Léela arriba, en «Instrucción editorial
+> permanente», y respétala por encima de todo lo demás.** En corto: **solo hechos del día**, **sin
+> «Ejes del día»**, **cada hecho una sola vez**, **nada de ARGOS hablando de ARGOS**, y la
+> explicación al mínimo. Todo lo de método, las recuperaciones y las fes de erratas van al archivo de
+> fuentes y a este documento.
 >
-> **Tienes que barrer DOS ventanas**: la propia de ARGOS 106 y la de **2026-08-21 07:55 → 2026-08-23
-> 08:00**, que quedó `NO REVISADA` en **27 de 32 entidades** y en el emisor federal. **Prioridad
-> sobre el ciclo**: esas entidades encabezan el triaje aunque no les toque por turno; el **Golfo**
-> además debe ejecutar el triaje judicial que le correspondía por Ciclo B y no pudo hacer. El
-> Ciclo C (Occidente + Sureste) se reanuda después.
+> **Lanza los seis `barrido-regional` primero**, antes que ningún otro encargo. En ARGOS 105 el
+> presupuesto de búsqueda de la sesión se agotó por haber gastado antes una auditoría retroactiva, y
+> cinco regiones se quedaron sin una sola consulta; hubo que rehacer la edición entera. El
+> agotamiento **no avisa**.
+>
+> **Aplica el Ciclo C: Occidente + Sureste encabezan el triaje judicial.** Ninguna entidad quedó
+> `NO REVISADA` en ARGOS 105 —las 32 se cubrieron—, así que el turno se aplica limpio.
 >
 > **Consulta el boletín federal en las tres formas** —día suelto, rango y **título sin restricción de
-> dominio**— para el **21, 22 y 23 de agosto**: la regla de la triple consulta **no llegó a
-> ejecutarse** en ARGOS 105.
+> dominio**—. En ARGOS 105 el vacío del 21, 22 y 23-ago se verificó en las tres y **es real**.
 >
-> ⚠️ **REGLA EDITORIAL, POR ENCIMA DE TODO LO DEMÁS: el cartelón es un análisis para un mando, no un
-> informe sobre ARGOS.** Nada de textos de auditoría, presupuesto de búsqueda, ciclos de rotación,
-> `grep`, cobertura del instrumento ni acusaciones a ediciones anteriores. **Y nada de repetir el
-> mismo hecho o la misma cifra en varias secciones**: cada hecho va en «Ejes del día» y en su ficha,
-> y en ningún sitio más. Todo lo de método va al archivo de fuentes y a `_pendientes.md`.
+> **Encargo nominal de seguimiento**: cruzar los expedientes de **Octavio Haro**, **Ricardo Cabezas
+> Talavera** y **César Ríos**, los tres empresarios inmobiliarios no localizados en Jalisco en tres
+> semanas. La FGE sostiene que son casos independientes; esa afirmación es lo que hay que probar o
+> descartar.
 >
-> **Encargo nominal, de los primeros**: **Octavio Haro**, empresario reportado como desaparecido y
-> **hallado muerto en Zapopan, Jalisco**. La autoridad apunta a un móvil «relacionado con su entorno
-> personal». ARGOS 105 **no pudo corroborarlo y no publicó ficha** por no tener una sola URL que lo
-> sostuviera. Busca: fecha del hallazgo **y** fecha del reporte de desaparición —son campos
-> distintos—, municipio, y boletín de la **FGE de Jalisco** (`fiscalia.jalisco.gob.mx`, cuyos
-> *slugs* llevan **fecha completa como sufijo**, así que un resultado de búsqueda ya fecha el
-> boletín).
->
-> **Deuda de método que no cuesta búsquedas, hazla mientras el barrido corre**: recorre las ventanas
-> declaradas de toda la serie y **lista los intervalos que ninguna edición cubre**. ARGOS 105
-> descubrió uno —el 4-ago por la tarde, entre el cierre de ARGOS 88 y la apertura de ARGOS 90, con
-> la edición 89 inexistente— y no hay motivo para suponer que sea el único.
+> **Dos controles de coste cero que ARGOS 105 tuvo que aplicar y salvaron el producto**: comprobar
+> que **ninguna fecha sea posterior a la del corte** —el resumidor llegó a inventar hechos del 25 al
+> 28 de agosto—, y **exigir año en la ruta antes de aceptar cualquier cifra de abatidos** —un
+> enfrentamiento de 2025 con 12 abatidos estuvo a punto de entrar como el hecho rojo del corte—.
 >
 > Antes del commit, ejecuta los tres controles obligatorios (`barrido-regional` ×6,
 > `procedencia-cifras` y `editor-duplicidad`) y actualiza `reports/_pendientes.md`.
 >
 > **No gastes búsquedas** en: el pendiente de Veracruz (`BLOQUEADO POR EGRESO`, séptima edición), las
-> 84 UMA de Tlaxcala, el `id` del boletín de Cunduacán, ni Zacatecas 100 años (hecho de ago-2021,
-> trampa de aniversario confirmada).
+> 84 UMA de Tlaxcala, el `id` del boletín de Cunduacán, ni Zacatecas 100 años (ago-2021, trampa
+> confirmada).
 
 ### Lo que funcionó en ARGOS 105 y conviene repetir
 
-1. **Ejecutar primero lo que no cuesta búsquedas.** La deuda de registro se saldó íntegra con `grep`
-   sobre el repositorio, sin gastar una sola consulta. Fue lo único que sobrevivió al agotamiento del
-   presupuesto, y es lo que sostiene la edición.
-2. **Verificar con `grep` toda acusación de omisión, sobre TODO el repositorio.** De los doce
-   "vacíos" heredados, **tres no lo eran**, y **dos pendientes vivos descansaban sobre una premisa
-   falsa**. Cuarta edición consecutiva en que este control salva al producto de acusar a una edición
-   anterior de algo que sí hizo.
-3. **Un equipo que reporta su propio fallo vale más que uno que entrega.** El Sureste detectó el
-   agotamiento del presupuesto y lo reportó como hallazgo crítico **en vez de entregar un informe
-   vacío**. Eso es lo que impidió que la edición declarara un falso `SIN DATO` nacional.
-4. **La ronda de corroboración rinde por quinta vez consecutiva**, y esta vez su aportación decisiva
-   fue **un deslinde**: dos hallazgos de restos humanos en la misma colonia de Tijuana, ambos en
-   lunes, separados por catorce días, que se habrían fundido sin cotejar vehículo, punto y forma de
-   presentación.
-5. **Corregir la herramienta, no su salida.** El generador móvil falló en silencio por un ancla
-   demasiado literal; se corrigió el generador y la corrección beneficia a todas las ediciones
-   futuras.
-6. **Declarar `NO REVISADA` y no `SIN ACTUALIZACIÓN`.** Es la diferencia entre una edición con un
-   vacío honesto y una que publica un cero falso sobre 27 entidades.
+1. **Lanzar las seis regiones antes que nada.** Cuando se hizo en ese orden, las **32 entidades
+   quedaron revisadas** y el corte produjo ocho hechos en ocho entidades. Cuando se hizo al revés, el
+   presupuesto se agotó y cinco regiones entregaron cero.
+2. **Verificar el año en la ruta antes de aceptar una cifra de abatidos.** Doctor Coss (12 abatidos)
+   era de 2025 y el resumidor lo presentaba como del 22-ago-2026.
+3. **Comprobar que ninguna fecha sea posterior a la del corte.** El resumidor fabricó fechas del 25,
+   26 y 28 de agosto para el racimo de Jiutepec.
+4. **Buscar el boletín por título, sin `site:`.** Así apareció el agregado de la FGE de Veracruz, que
+   la consulta por dominio no devolvía. La regla de la triple consulta también rinde a escala estatal.
+5. **Corregir la herramienta, no su salida.** Los dos fallos del generador móvil de esta edición
+   —el CSS de tarjetas que nunca se inyectaba y el semáforo anclado en una sección retirada—
+   compartían causa: **anclar en algo que la edición puede cambiar**.
+6. **Declarar `NO REVISADA` y no `SIN ACTUALIZACIÓN`** cuando el barrido no llega. Es la diferencia
+   entre un vacío honesto y un cero falso.

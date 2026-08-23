@@ -109,8 +109,22 @@ CSS_TABLA = """
   .fila-total{border:1px solid var(--border);border-radius:6px;background:var(--panel-2);
     padding:8px 10px;margin:6px 0;font-size:11.5px;line-height:1.5;}
 """
-if ".tabla-scroll" not in shell:
+# ⚠️ Este guardián comprobaba UNA sola clase (`.tabla-scroll`). Como el shell se
+# hereda de la móvil anterior, bastaba con que esa clase existiera para omitir el
+# bloque ENTERO — incluidas las reglas de tarjeta, que se añadieron después. El
+# resultado: desde ARGOS 102 las tablas anchas se reflujaban a tarjetas SIN estilo,
+# y la móvil publicaba la etiqueta pegada al valor ("FECHA DEL HECHO2026-08-04"),
+# sin bordes ni separación. Ilegible en teléfono, y la validación no lo veía porque
+# solo medía markup, secciones y ancho, nunca la presencia del CSS.
+# Ahora se comprueba cada selector por separado y se inyecta lo que falte.
+_SELECTORES = (".tabla-scroll{", ".fila-tarjeta{", ".fila-tarjeta .campo{",
+               ".fila-tarjeta .campo .k{", ".fila-total{", ".tabla-tarjetas{")
+_faltan = [c for c in _SELECTORES if c not in shell]
+if _faltan:
+    # Se retiran del shell las reglas parciales que sí estuvieran, para no duplicarlas,
+    # y se inyecta el bloque completo y actual.
     shell = shell.replace("</style>", CSS_TABLA + "</style>", 1)
+    print(f"CSS de tabla/tarjeta inyectado ({len(_faltan)} selector(es) ausente(s) en el shell heredado)")
 
 # Anclas realmente existentes en el escritorio: solo estas pueden enlazarse.
 ANCLAS = frozenset(re.findall(r'<div class="nota" id="([^"]+)"', desk))
@@ -154,6 +168,32 @@ def lista_a_reg(bloque, anclas_validas=frozenset()):
     pat = re.compile(r'<div class="list-item"><span class="tag ([a-z]+)">([^<]*)</span>'
                      r'<span>(.*?)</span><span>(.*?)</span></div>', re.S)
     return pat.sub(una, bloque).replace('<div class="list">', "<div>")
+
+
+def _sustituye_div(html, marca, reemplazo):
+    """Sustituye el primer <div ...marca...> ... </div> equilibrado por `reemplazo`.
+
+    Existe porque los anclajes por "el título que viene después" se rompen en cuanto
+    una edición cambia su estructura, y lo hacen en silencio.
+    """
+    i = html.find("<div " + marca)
+    if i < 0:
+        i = html.find("<div  " + marca)
+        if i < 0:
+            return html
+    j, prof = i, 0
+    while j < len(html):
+        if html.startswith("<div", j):
+            prof += 1
+            j = html.find(">", j) + 1
+        elif html.startswith("</div>", j):
+            prof -= 1
+            j += 6
+            if prof == 0:
+                return html[:i] + reemplazo + html[j:]
+        else:
+            j += 1
+    return html
 
 
 def _celdas_a_tarjeta(fila_html, cabeceras):
@@ -335,9 +375,12 @@ for i, (titulo, n) in enumerate(TITULOS):
   </div>
 
   ''', cuerpo, flags=re.S)
-        # Mismo motivo: consumir hasta "EJES DEL DÍA" o quedan sem-item sueltos.
-        cuerpo = re.sub(r'<div class="semaforo">.*?(?=<div class="block-head">EJES DEL DÍA[^<]*</div>)',
-                        SEM + "\n\n  ", cuerpo, flags=re.S)
+        # ⚠️ Este reemplazo anclaba en el título de la sección SIGUIENTE ("EJES DEL DÍA").
+        # Una edición que retire o renombre esa sección dejaba el semáforo del escritorio
+        # intacto en la móvil: los `sem-item` llegaban sin estilo y el bloque salía roto.
+        # Ahora se consume el div `.semaforo` por BALANCE DE ETIQUETAS, sin depender de
+        # qué venga detrás.
+        cuerpo = _sustituye_div(cuerpo, 'class="semaforo"', SEM + "\n\n  ")
     if tiene_mapa_arm:
         cuerpo = re.sub(
             r'<div class="panel">\s*<div class="panel-title">.*?</div>\s*'
@@ -394,6 +437,12 @@ if salida.count('<section class="seccion"') != TOTAL:
     errores.append(f"no hay {TOTAL} secciones")
 if "sem-item" in salida or "stat-tile" in salida or "cover-visuals" in salida:
     errores.append("quedaron restos de clases de escritorio")
+# El CSS de las tarjetas tiene que llegar SIEMPRE que haya tarjetas: su ausencia
+# no rompe el markup, solo lo vuelve ilegible, así que hay que comprobarla aparte.
+if 'class="fila-tarjeta"' in salida:
+    for _c in (".fila-tarjeta{", ".fila-tarjeta .campo{", ".fila-tarjeta .campo .k{"):
+        if _c not in salida:
+            errores.append(f"hay tarjetas pero falta la regla CSS {_c} — saldrían sin estilo")
 svg_esperados = 3 if 'id="argos-map-arm"' in desk else 2
 if salida.count("<svg") != svg_esperados:
     errores.append(f"se esperaban {svg_esperados} SVG, hay {salida.count('<svg')}")

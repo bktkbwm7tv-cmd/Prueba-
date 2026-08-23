@@ -212,6 +212,15 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-104-REC-002` | 104 | 2026-08-21 | ARG-104-REC-002 — Buenavista (col. Del Parque), Michoacán: ataque armado, muertas una mujer de 18 años y su bebé (🔴). Ventana de origen: ARGOS 96 |
 | `ARG-104-FE-001` | 104 | 2026-08-21 | ARG-104-FE-001 — FE DE ERRATAS: ARGOS 95 pasa de 0 a 1 evento 🔴 |
 | `ARG-104-FE-002` | 104 | 2026-08-21 | ARG-104-FE-002 — FE DE ERRATAS: ARGOS 96 pasa de 1 a 2 eventos 🔴 |
+| `ARG-105-001` | 105 | 2026-08-23 | ARG-105-001 — Zapopan, Jalisco: identificado el cuerpo de Octavio Haro Cachúa, empresario inmobiliario reportado como no localizado el 11-ago (🟡) |
+| `ARG-105-002` | 105 | 2026-08-23 | ARG-105-002 — Champotón, Campeche (rancho El Cerrito): avioneta, 3,000 L de turbosina, 61 vehículos, 5 largas, 3 cortas, 12 cargadores, ~1,000 cartuchos y 6 detenidos (🟢) |
+| `ARG-105-003` | 105 | 2026-08-23 | ARG-105-003 — Oaxaca de Juárez: detención de "El Abulón", segundo al mando del Cártel de Los Mezcales (🟢) |
+| `ARG-105-004` | 105 | 2026-08-23 | ARG-105-004 — Uruapan, Michoacán: 12 presuntos Caballeros Templarios vinculados a proceso por extorsión. Desarrollo procesal de ARG-95-004, no detención nueva (🟢) |
+| `ARG-105-005` | 105 | 2026-08-23 | ARG-105-005 — Ciudad de México: 15 detenidos y 7 órdenes de aprehensión contra una banda de robo a casa habitación (🟢) |
+| `ARG-105-006` | 105 | 2026-08-23 | ARG-105-006 — Manzanillo, Colima: 6 personas vinculadas a proceso por sustracción ilícita de hidrocarburo de ducto (🟢) |
+| `ARG-105-007` | 105 | 2026-08-23 | ARG-105-007 — La Yesca y Compostela, Nayarit: 6 AEI, 2 cargadores, 60 cartuchos y 1 detenido. FRONTERA DE VENTANA (🟢) |
+| `ARG-105-008` | 105 | 2026-08-23 | ARG-105-008 — Querétaro: captura en Colombia de un requerido por homicidio cometido en la entidad, Operativo Sinergia (🟢) |
+| `ARG-105-SEN-001` | 105 | 2026-08-23 | ARG-105-SEN-001 — FGE Querétaro, Altozano: Luis Antonio "N", robo a casa habitación, procedimiento abreviado. Pena CANTIDAD NO DETERMINADA |
 | `ARG-105-REC-001` | 105 | 2026-08-23 | ARG-105-REC-001 — Saltillo (col. Espinoza Mireles), Coahuila: tres personas asesinadas y una herida de gravedad; agresor expolicía de Texas detenido en Piedras Negras (🔴). Ventana de origen: intervalo no cubierto (hueco 88/90) |
 | `ARG-105-REC-002` | 105 | 2026-08-23 | ARG-105-REC-002 — Tijuana (col. Hipódromo), Baja California: restos humanos fragmentados en la cajuela de un vehículo, estacionamiento del Calimax de Agua Caliente (🔴). Ventana de origen: ARGOS 88 |
 | `ARG-105-REC-003` | 105 | 2026-08-23 | ARG-105-REC-003 — Sabanillas, tramo Tuxpan–Tamiahua, Veracruz: incendio de dos camiones de volteo por un grupo armado (🟡). Ventana de origen: ARGOS 95 |
@@ -225,5 +234,9 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-105-FE-003` | 105 | 2026-08-23 | ARG-105-FE-003 — FE DE ERRATAS: ARGOS 95 pasa de 3 a 5 🟡 y de 8 a 10 🟢 |
 | `ARG-105-FE-004` | 105 | 2026-08-23 | ARG-105-FE-004 — CONSTANCIA: ARG-105-REC-001 (Saltillo) cae en un intervalo que ninguna edición cubre; la serie no tiene ARGOS 89. Ningún conteo se rectifica |
 | `ARG-105-FE-005` | 105 | 2026-08-23 | ARG-105-FE-005 — FE DE ERRATAS: se retira el detalle de ARG-104-SEN-001 (Durango). Pena queda en «más de 7 años», no sumable; multa y reparación CANTIDAD NO DETERMINADA. La sentencia se conserva |
-**Total de ARG-ID indexados: 207** · Ediciones cubiertas: 19 archivos de fuentes.
+**Total de ARG-ID indexados: 216** · Ediciones cubiertas: 19 archivos de fuentes.
+
+> Los `ARG-105-REC-*` y `ARG-105-FE-*` son **registros de archivo**: quedan documentados en
+> `reports/argos-2026-08-23-fuentes.md`, no en el cartelón, que publica únicamente los hechos
+> de su propia ventana.
 
