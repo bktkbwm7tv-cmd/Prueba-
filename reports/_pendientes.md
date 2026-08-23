@@ -147,47 +147,63 @@ Sesión nueva, un solo mensaje:
 
 > Haz el ARGOS 105 de hoy siguiendo `CLAUDE.md`. Rama `claude/argos-105-<sufijo>`. Lee
 > `reports/_pendientes.md`, `docs/dominios-oficiales.md` y la edición anterior
-> (`reports/argos-2026-08-21*`) para no duplicar hechos ni perder seguimientos. Verifica antes si la
-> rama de ARGOS 104 (`claude/argos-104-c0x7fm`) ya se mergeó a `main`; si no, trae sus cambios
-> primero con `git merge --ff-only`.
+> (`reports/argos-2026-08-21*`) para no duplicar hechos ni perder seguimientos. **Mergea las ramas
+> antes de empezar**: comprueba si `claude/argos-104-c0x7fm` ya está en `main` y, si no, trae sus
+> cambios con `git merge --ff-only`.
 >
-> **La ventana abre donde cerró ARGOS 104: 2026-08-21 07:55 CDMX.** Confirma la hora real de CDMX
-> al arrancar y séllala en encabezado, pie y cada marca "Consulta:".
+> **La ventana abre donde cerró ARGOS 104: 2026-08-21 07:55 CDMX.** Confirma la hora real de CDMX al
+> arrancar y séllala en encabezado, pie y cada marca "Consulta:".
 >
-> **PRIORIDAD 1 — saldar la deuda de registro, que es la más barata del archivo.** ARGOS 104
-> descubrió que el fallo no es solo de búsqueda sino **de registro**: hechos que ARGOS ya verificó y
-> clasificó, y que nunca recibieron ficha. Los cuatro inventariados en la pág. 7 de ARGOS 104
-> —Sabanillas, Nuevo Teapa–Cosoleacaque, "El G1" de Ensenada y "El Loco" de Metepec— **ya tienen
-> fuentes**: solo hay que darles ARG-ID y ficha, o declararlos fuera de umbral. Y **revisar los seis
-> vacíos incidentales de `argos-2026-08-14-fuentes.md` (líneas 130-150), que nadie ha mirado nunca.**
-> Esto **no cuesta búsquedas**, así que hazlo antes de gastar presupuesto.
+> ⚠️ **REGLA EDITORIAL, POR ENCIMA DE TODO LO DEMÁS: el cartelón es un análisis para un mando, no un
+> informe sobre ARGOS.** Nada de textos de auditoría. Nada de presupuesto de búsqueda, ciclos de
+> rotación, señuelos descartados, `grep`, cobertura del instrumento, acusaciones a ediciones
+> anteriores ni ARGOS hablando de ARGOS. **Y nada de repetir el mismo hecho o la misma cifra en
+> varias secciones**: cada hecho va en «Ejes del día» y en su ficha, y en ningún sitio más. Todo lo
+> de método va al archivo de fuentes y a `_pendientes.md`. Lo que le sirve a un mando es dato
+> criminal trazable: hechos, entidad y municipio, fecha, armamento con su desglose, detenidos,
+> víctimas, fosas, secuestros, sentencias — cada cosa con su fuente, su nivel de confianza y su
+> ARG-ID.
+>
+> **PRIORIDAD 1 — saldar la deuda de registro. No cuesta búsquedas, así que hazlo primero.**
+> ARGOS 104 descubrió que el fallo de la serie no es solo de búsqueda sino **de registro**: hechos
+> que ARGOS ya encontró, verificó y clasificó, y que nunca recibieron ficha. Cuatro están
+> inventariados en `argos-2026-08-21-fuentes.md` con sus fuentes —**Sabanillas** y **Nuevo
+> Teapa–Cosoleacaque** (Veracruz, 🟡), **"El G1"** de Ensenada y **"El Loco"** de Metepec (🟢)—.
+> Dales ARG-ID y ficha, o decláralos fuera de umbral. Y **revisa los seis vacíos incidentales de
+> `argos-2026-08-14-fuentes.md`, líneas 130-150, que nadie ha mirado nunca.**
 >
 > **PRIORIDAD 2 — auditar hacia atrás las ventanas de ARGOS 88 a 93**, el único tramo que nadie ha
-> auditado, con el método que ha rendido tres veces: **por tipo de hecho y no por entidad**, equipos
-> temáticos (masacres y homicidios múltiples · violencia colectiva), ejecutado **primero**. El bloque
-> de ataques contra autoridades puede omitirse.
+> auditado. Método que ha rendido tres veces: **por tipo de hecho y no por entidad**, equipos
+> temáticos (masacres y homicidios múltiples · violencia colectiva), **ejecutado primero y en
+> solitario**. El bloque de ataques contra autoridades puede omitirse: ese tipo de hecho sí se
+> recoge.
 >
-> ⚠️ **Lo que la auditoría produce son fichas de hecho criminal, no una página de auditoría**
-> (`CLAUDE.md`, "El cartelón es para el mando, no para el método"). Cuatro apartados, ARG-ID `-REC-`,
-> ventana de origen declarada, fuera de los totales del corte, y su efecto en una **fe de erratas
-> compacta**. Todo lo de método va al archivo de fuentes y a `_pendientes.md`.
+> ⚠️ **Lo que la auditoría produce son fichas de hecho criminal, no una página de auditoría.** Cuatro
+> apartados, ARG-ID `-REC-`, ventana de origen declarada, **fuera de los totales del corte**, y su
+> efecto en una **fe de erratas compacta**. Nada más de la auditoría entra al cartelón.
+>
+> **Verifica con `grep` sobre TODO el repositorio, no solo sobre `indice-arg-id.md`**, antes de
+> publicar cualquier hecho como omisión de una edición anterior. El hallazgo mayor de ARGOS 104 no
+> estaba en el índice: estaba en el cuerpo de dos archivos de fuentes y de dos cartelones. Y al
+> revés — en ARGOS 104 uno de los tres candidatos a omisión resultó **ya publicado**.
 >
 > Aplica el **Ciclo B** (Noreste + Golfo encabezan el triaje judicial). **Ninguna entidad quedó
-> `NO REVISADA` en ARGOS 104**, así que el turno se aplica limpio, sin prioridad sobre el ciclo.
+> `NO REVISADA`**, así que el turno se aplica limpio, sin prioridad sobre el ciclo.
 >
-> **Añade la tercera forma de consulta del boletín federal**: por día suelto, por rango **y por
-> título del boletín sin restricción de dominio**. El vacío del 19-ago era falso porque `gob.mx`
-> **no indexó su propio boletín** y solo aparecía por republicadores.
+> **Consulta el boletín federal en las tres formas** —día suelto, rango y **título sin restricción de
+> dominio**—: la regla está en `CLAUDE.md`. El del 19-ago existía y `gob.mx` no lo indexó.
 >
 > Antes del commit, ejecuta los tres controles obligatorios (`barrido-regional` ×6,
 > `procedencia-cifras` y `editor-duplicidad`) y actualiza `reports/_pendientes.md`.
 >
-> **No pierdas tiempo invocando los agentes de control por nombre**: en ARGOS 104 fallaron las tres
-> veces. Lánzalos directamente como `general-purpose` diciéndoles que **lean primero su archivo en
-> `.claude/agents/`** — funcionó en las nueve invocaciones. Y **no gastes búsquedas** en el pendiente
-> de Veracruz (`BLOQUEADO POR EGRESO`), en las 84 UMA de Tlaxcala (dos paráfrasis del mismo
-> resumidor), ni en el `id` del boletín de Cunduacán (tres ediciones y once `id` demuestran que no es
-> resoluble por buscador).
+> **Los agentes ya resuelven por nombre**: `barrido-regional`, `procedencia-cifras` y
+> `editor-duplicidad` están disponibles como tipo de agente. Si alguno fallara, lánzalo como
+> `general-purpose` diciéndole que **lea primero su archivo en `.claude/agents/`**.
+>
+> **No gastes búsquedas** en: el pendiente de Veracruz (`BLOQUEADO POR EGRESO`, seis ediciones), las
+> 84 UMA de Tlaxcala (dos paráfrasis del mismo resumidor), el `id` del boletín de Cunduacán (tres
+> ediciones y once `id` demuestran que no es resoluble por buscador), ni Zacatecas 100 años (hecho de
+> ago-2021, trampa de aniversario confirmada).
 
 ### Lo que funcionó en ARGOS 104 y conviene repetir
 
