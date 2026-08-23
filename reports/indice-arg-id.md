@@ -212,5 +212,18 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-104-REC-002` | 104 | 2026-08-21 | ARG-104-REC-002 — Buenavista (col. Del Parque), Michoacán: ataque armado, muertas una mujer de 18 años y su bebé (🔴). Ventana de origen: ARGOS 96 |
 | `ARG-104-FE-001` | 104 | 2026-08-21 | ARG-104-FE-001 — FE DE ERRATAS: ARGOS 95 pasa de 0 a 1 evento 🔴 |
 | `ARG-104-FE-002` | 104 | 2026-08-21 | ARG-104-FE-002 — FE DE ERRATAS: ARGOS 96 pasa de 1 a 2 eventos 🔴 |
-**Total de ARG-ID indexados: 194** · Ediciones cubiertas: 18 archivos de fuentes.
+| `ARG-105-REC-001` | 105 | 2026-08-23 | ARG-105-REC-001 — Saltillo (col. Espinoza Mireles), Coahuila: tres personas asesinadas y una herida de gravedad; agresor expolicía de Texas detenido en Piedras Negras (🔴). Ventana de origen: intervalo no cubierto (hueco 88/90) |
+| `ARG-105-REC-002` | 105 | 2026-08-23 | ARG-105-REC-002 — Tijuana (col. Hipódromo), Baja California: restos humanos fragmentados en la cajuela de un vehículo, estacionamiento del Calimax de Agua Caliente (🔴). Ventana de origen: ARGOS 88 |
+| `ARG-105-REC-003` | 105 | 2026-08-23 | ARG-105-REC-003 — Sabanillas, tramo Tuxpan–Tamiahua, Veracruz: incendio de dos camiones de volteo por un grupo armado (🟡). Ventana de origen: ARGOS 95 |
+| `ARG-105-REC-004` | 105 | 2026-08-23 | ARG-105-REC-004 — Carretera Nuevo Teapa–Cosoleacaque, Veracruz: homicidio de un conductor de tráiler (🟡). Ventana de origen: ARGOS 95 |
+| `ARG-105-REC-005` | 105 | 2026-08-23 | ARG-105-REC-005 — Ensenada, Baja California: detención de Gerardo Humberto Piña, "El G1", célula de Maneadero del Cártel de Sinaloa (🟢). Ventana de origen: ARGOS 95 |
+| `ARG-105-REC-006` | 105 | 2026-08-23 | ARG-105-REC-006 — Metepec, Estado de México: detención de Erick Jesús "N", "El Loco", La Familia Michoacana (🟢). Ventana de origen: ARGOS 94 |
+| `ARG-105-REC-007` | 105 | 2026-08-23 | ARG-105-REC-007 — Pesquería, Nuevo León: 62,000 L de hidrocarburo, 9 pipas, 9 tractocamiones, 10 tanques y 1 oleoducto asegurados por la FGR (🟢). Ventana de origen: ARGOS 95 |
+| `ARG-105-REC-008` | 105 | 2026-08-23 | ARG-105-REC-008 — Teotihuacán, Estado de México: rescate de víctima de secuestro localizada con dron táctico, 3 detenidos (🟢). Ventana de origen: ARGOS 94 |
+| `ARG-105-FE-001` | 105 | 2026-08-23 | ARG-105-FE-001 — FE DE ERRATAS: ARGOS 88 pasa de 0 a 1 evento 🔴 |
+| `ARG-105-FE-002` | 105 | 2026-08-23 | ARG-105-FE-002 — FE DE ERRATAS: ARGOS 94 pasa de 3 a 5 eventos 🟢 |
+| `ARG-105-FE-003` | 105 | 2026-08-23 | ARG-105-FE-003 — FE DE ERRATAS: ARGOS 95 pasa de 3 a 5 🟡 y de 8 a 10 🟢 |
+| `ARG-105-FE-004` | 105 | 2026-08-23 | ARG-105-FE-004 — CONSTANCIA: ARG-105-REC-001 (Saltillo) cae en un intervalo que ninguna edición cubre; la serie no tiene ARGOS 89. Ningún conteo se rectifica |
+| `ARG-105-FE-005` | 105 | 2026-08-23 | ARG-105-FE-005 — FE DE ERRATAS: se retira el detalle de ARG-104-SEN-001 (Durango). Pena queda en «más de 7 años», no sumable; multa y reparación CANTIDAD NO DETERMINADA. La sentencia se conserva |
+**Total de ARG-ID indexados: 207** · Ediciones cubiertas: 19 archivos de fuentes.
 

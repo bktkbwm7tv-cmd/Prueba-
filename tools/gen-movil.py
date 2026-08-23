@@ -321,7 +321,7 @@ for i, (titulo, n) in enumerate(TITULOS):
         # Consumir TODO el bloque de visuales hasta el semáforo: un .*? no
         # codicioso deja huérfano el panel del mapa.
         cuerpo = re.sub(
-            r'<div class="cover-visuals">.*?(?=<div class="block-head">SEMÁFORO ARGOS</div>)',
+            r'<div class="cover-visuals">.*?(?=<div class="block-head">SEMÁFORO ARGOS[^<]*</div>)',
             f'''<div class="viz">
     <div class="viz-title"><span>RADAR CENTRAL</span><span>EN VIVO</span></div>
     <div class="radar-box">{svg_radar}</div>
@@ -336,7 +336,7 @@ for i, (titulo, n) in enumerate(TITULOS):
 
   ''', cuerpo, flags=re.S)
         # Mismo motivo: consumir hasta "EJES DEL DÍA" o quedan sem-item sueltos.
-        cuerpo = re.sub(r'<div class="semaforo">.*?(?=<div class="block-head">EJES DEL DÍA</div>)',
+        cuerpo = re.sub(r'<div class="semaforo">.*?(?=<div class="block-head">EJES DEL DÍA[^<]*</div>)',
                         SEM + "\n\n  ", cuerpo, flags=re.S)
     if tiene_mapa_arm:
         cuerpo = re.sub(
@@ -394,8 +394,9 @@ if salida.count('<section class="seccion"') != TOTAL:
     errores.append(f"no hay {TOTAL} secciones")
 if "sem-item" in salida or "stat-tile" in salida or "cover-visuals" in salida:
     errores.append("quedaron restos de clases de escritorio")
-if salida.count("<svg") != 3:
-    errores.append(f"se esperaban 3 SVG, hay {salida.count('<svg')}")
+svg_esperados = 3 if 'id="argos-map-arm"' in desk else 2
+if salida.count("<svg") != svg_esperados:
+    errores.append(f"se esperaban {svg_esperados} SVG, hay {salida.count('<svg')}")
 
 # --- control de desborde horizontal (fallo de ARGOS 100) ---------------------
 # La móvil de ARGOS 100 se salió de la pantalla y la validación dijo "OK": comprobaba
