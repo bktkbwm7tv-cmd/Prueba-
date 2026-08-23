@@ -61,10 +61,31 @@ confirma que la regla de la triple consulta también rinde a escala estatal.
 - **`ARG-105-007` Nayarit.** `FRONTERA DE VENTANA — FECHA DEL HECHO NO FIJADA`: la publicación es del
   22-ago, pero el propio texto liga los hechos a acciones reportadas el **20-ago**. Se integra en la
   edición que lo ve primero, con la marca. **No se infiere la fecha.** Fuente única.
-- **`ARG-105-SEN-001` Querétaro.** El término jurídico consta en el *slug* institucional, que es
-  texto primario, y la ruta lleva fecha; el caso queda individualizado por nombre, delito y
-  fraccionamiento. **La pena solo existe en el resumen del buscador**:
-  `CANTIDAD NO DETERMINADA`, no sumable.
+- **`ARG-105-SEN-001` Querétaro.** El término jurídico consta en el *slug* institucional y la ruta
+  lleva fecha. **La pena sí es citable** —**dos años**— por **tres títulos independientes**:
+  `cronicaregional.com.mx`, `meganoticias.mx` y `elqueretano.info`. El caso queda individualizado
+  frente a un **homónimo de enero de 2026** (Jardines de la Hacienda, robo de cable de cobre) por
+  **cinco campos coincidentes**: nombre, colonia, delito, fecha del hecho (29-dic-2024) y fecha de
+  audiencia (17-jul-2026). **Se integra al conteo nacional con 2 años sumables.**
+  *El borrador la había declarado `CANTIDAD NO DETERMINADA` por exceso de cautela; el control de
+  procedencia localizó las tres fuentes.*
+
+- **El conteo de personas del corte se publica separado, y no en un solo total.** **30 personas con
+  evento nuevo** —24 detenidas y 6 vinculadas a proceso— más, aparte, **12 vinculaciones en Uruapan
+  de personas ya contabilizadas como detenidas en ARGOS 95**. Un total único de 42 habría contado dos
+  veces a esas doce y **habría contradicho la propia ficha**, que declara que no se cuentan como
+  detención nueva.
+
+- **Reserva sobre el desglose fino de Champotón.** Las cifras de **3,000 L de turbosina, 2 tanques de
+  gas LP, el desglose 5 largas / 3 cortas, los 12 cargadores, las 2 miras nocturnas, los 2 chalecos,
+  los 2 aditamentos y los $777,750** **no se pudieron confirmar con fragmento titulado**: aparecen de
+  forma reiterada en la síntesis del buscador en tres consultas distintas, pero `WebFetch` está
+  bloqueado también para los dominios de medios, no solo para `*.gob.mx`. Lo que sí tiene título
+  citable es **la avioneta, los 61 vehículos, los 5,912 L de hidrocarburo y los 6 detenidos**, y un
+  título de `codigoqro.mx` sostiene el **agregado de «más de 8 mil 900 litros»**, coherente con la
+  suma 5,912 + 3,000. **Se integran marcadas, con la confianza Medio ya asignada.** La calificación
+  de los cartuchos como **aproximados** tampoco está confirmada literalmente: es razonable, no
+  verificada.
 
 ---
 
