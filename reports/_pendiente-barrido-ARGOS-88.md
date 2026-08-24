@@ -147,8 +147,34 @@ acumulado nov-2025/jun-2026 → candidato a **Indicador oficial** en página 7, 
 
 ---
 
+## 4-bis. CLAUDE.md CAMBIÓ — ARGOS 88 ya no cumple la estructura vigente
+
+La "Estructura del reporte" se actualizó y se añadió una **"Regla de no duplicación"**. Cambios que
+afectan directamente a este corte:
+
+- **Portada**: "Ejes del día" es ahora el **único** listado resumido de hechos. La tabla
+  **"NOTICIAS DE AYER Y HOY" queda prohibida** y debe eliminarse.
+- **Página 2 (Tablero ejecutivo)**: se reduce a **resumen ejecutivo + detenciones relevantes**. Los
+  bloques **"ARGOS ALERTA"** y **"EVENTOS PRIORITARIOS"** quedan prohibidos y deben eliminarse —
+  repetían el mismo hecho ya resumido en Ejes del día y desarrollado en su ficha completa. La fuente
+  institucional/nacional y la confianza por evento van en la ficha de cuatro apartados, no en una
+  tabla resumen.
+- **Regla general**: cada hecho aparece en **máximo dos lugares** — resumen breve en Ejes del día y
+  ficha completa en Crimen Organizado / Armamento / Sentencias. Nada de una tercera tabla intermedia.
+
+**ARGOS 88 (cartelón y móvil) todavía tiene las tres secciones prohibidas.** Al integrar el barrido
+hay que eliminarlas en la misma pasada, no dejarlas para después: si se añaden los eventos rojos sin
+quitarlas, la duplicación empeora (cada rojo aparecería en Ejes del día + Noticias + Eventos
+prioritarios + Alerta + su ficha).
+
+Verificar también que ARGOS 86 y 87 no queden fuera de norma; si se decide alinearlos, es trabajo
+aparte y debe consultarse antes.
+
 ## 5. QUÉ FALTA HACER
 
+0. **Estructura primero** — eliminar de la portada la tabla "NOTICIAS DE AYER Y HOY", y de la
+   página 2 los bloques "ARGOS ALERTA" y "EVENTOS PRIORITARIOS" (ver 4-bis). Hacerlo antes de
+   añadir contenido nuevo, o la duplicación se multiplica.
 1. **Página 3** — sustituir `ARG-88-007` ("ATAQUES A AUTORIDADES / FOSAS — SIN DATO") por tarjetas
    reales de Tula (R1) y Joaquín Amaro (R2). Verificar R3 antes de integrarlo.
 2. **Página 5** — reemplazar todo el SIN DATO por los 13 eventos, los totales y la tabla nacional.
