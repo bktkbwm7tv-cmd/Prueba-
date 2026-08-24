@@ -8,7 +8,7 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 105 (corte 2026-08-23).
+**Última actualización**: ARGOS 106 (corte 2026-08-24).
 
 ---
 
@@ -24,6 +24,82 @@ cualquier otra consideración de formato.**
 | **Sin exposición sobre ARGOS** | Nada de presupuesto de búsqueda, ciclos, agentes, `grep`, cobertura del instrumento ni autorreferencia. Las excepciones de trazabilidad —declaración de ventana, casillas de cobertura, contradicciones— se escriben **en una línea**, no en párrafos |
 | **Iconografía de armamento** | Cada categoría de la taxonomía lleva icono propio, monocromo y de trazo, en las tarjetas de conteo y en las cabeceras de la tabla. **Siempre con etiqueta y cifra**, nunca identificando solo. Las categorías en cero se muestran atenuadas: la ausencia es dato. Fijado en `CLAUDE.md` desde ARGOS 105 |
 | **Explicación al mínimo** | Es un análisis para un mando: hecho, entidad, municipio, fecha, cifras con su desglose, fuente, confianza y ARG-ID. Lo demás sobra |
+
+---
+
+## ⚠ ARGOS 106 — DOS HALLAZGOS QUE CAMBIAN LA SERIE
+
+### 1. La causa raíz de por qué cada sesión arranca desactualizada
+
+**El HEAD por defecto del repositorio es `claude/argos-criminal-intelligence-otiawj`, que solo llega
+a ARGOS 88.** La sesión de ARGOS 106 clonó eso y estuvo a punto de publicar un «ARGOS 89» —edición
+que no existe ni debe existir—, con ventana solapada, sin versión móvil (`tools/gen-movil.py` no
+existe en esa rama) y con el método de ARGOS 88.
+
+| Referencia | Archivos en `reports/` | Última edición |
+|---|---|---|
+| `main` | 2 | anterior a ARGOS 87 |
+| `claude/argos-criminal-intelligence-otiawj` (**HEAD por defecto**) | 8 | ARGOS 88 |
+| rama de la edición vigente | 59+ | ARGOS 105 |
+
+**No es una incidencia de una sesión: es la deuda «Mergear las ramas de edición a `main`», abierta
+desde ARGOS 102, manifestándose.** Mientras el HEAD por defecto apunte a ARGOS 88, *toda* sesión
+nueva heredará el mismo fallo.
+
+**Acción ejecutada en ARGOS 106, autorizada por el destinatario**: mergear las ramas de edición a
+`main`. **Regla nueva, de coste cero**: el primer paso de cada corte es comprobar contra qué punto de
+la serie se está trabajando —`git ls-remote --heads origin` y `ls reports/`— antes de numerar la
+edición. Numerar a partir de lo que la rama local tenga a la vista es lo que produjo el falso 89.
+
+### 2. ARGOS 105 dejó cuatro hechos rojos sin publicar en su propia ventana
+
+`grep` sobre todos los `-fuentes.md` confirma que **ninguna edición de la serie los registra**:
+
+| ARG-ID en 106 | Hecho | Fecha |
+|---|---|---|
+| `ARG-106-REC-001` | **Acapulco** — comando con chalecos rotulados «Guardia Nacional» asesina a **4 integrantes de una familia** | 22-ago (o 21, contradicha) |
+| `ARG-106-REC-002` | **Morelia** — balacera con elementos de la GN de civil; 2 muertos, 2 federales asegurados | 22-ago |
+| `ARG-106-REC-003` | **Los Bayados, Ajuchitlán** — ataque de ~8 h contra la comunidad | 21-ago |
+| `ARG-106-REC-004` | **«El Willy», Casas Grandes** — nuevos restos óseos | 20-ago |
+
+**ARGOS 105 publicó «cero eventos rojos». Con estos cuatro, esa afirmación no se sostiene**: su
+semáforo queda corregido por fe de erratas a **4 🔴 y 1 🟡**. El archivo antiguo no se reescribe.
+
+**Es un cuarto modo de fallo**, distinto de los tres conocidos: no es de búsqueda, ni de registro, ni
+de continuidad de ventana. ARGOS 105 declaró **32 de 32 entidades revisadas** y aun así no localizó
+una masacre de cuatro víctimas en Acapulco ni un homicidio con participación de personal federal en
+Morelia. **Es un fallo de recall dentro de una cobertura declarada completa.** Una cobertura del
+100% de portales no garantiza el 100% de los hechos cuando los portales institucionales están
+bloqueados y el barrido depende del buscador.
+
+**Acción para ARGOS 107**: cuando una región se declare revisada sin hallazgos, contrastar con una
+**consulta genérica por entidad sin restricción de dominio** («ataque armado \<entidad\> \<fecha\>»)
+antes de cerrarla. Es lo que hizo aparecer estos cuatro hechos.
+
+## Seguimientos abiertos por los hechos de ARGOS 106
+
+| Desde | Caso | Qué falta | Qué lo cierra |
+|---|---|---|---|
+| ARGOS 106 | **Morelia — los dos elementos de la GN asegurados** (`ARG-106-REC-002`) | Situación jurídica de Juan Carlos Dorantes Rebolledo (40) y Rubén Isaí Landeros García (22), y **qué fuero asume la investigación**. Sin comunicado de GN, FGE Michoacán ni FGR. La versión de ebriedad **no está confirmada y no se integró** | **Es el indicador más informativo del próximo corte**: liberación temprana o traslado a fuero distinto marcará el criterio institucional aplicable |
+| ARGOS 106 | **Acapulco — el agresor herido y los chalecos** (`ARG-106-REC-001`) | **Rastreo hospitalario** del agresor herido en el tórax —línea perecedera, ya con 48 h perdidas—; procedencia de los chalecos cruzada con uniformes reportados como perdidos o robados en Guerrero. **Sin pronunciamiento de la GN sobre el uso de sus insignias** | Un boletín de la FGE Guerrero y el deslinde de la GN |
+| ARGOS 106 | **Mazatlán como concentrador** (`ARG-106-001/003/004`) | Tres de los ocho hechos de la ventana en el mismo municipio: ataque con 2 muertos, 3 AEI y un fusil de asalto. **Lectura por municipio, no por evento** | El registro completo de eventos del municipio en agosto, para confirmar o descartar disputa territorial activa en el eje rural-portuario |
+| ARGOS 106 | **Sinaloa — registro consolidado de AEI de agosto** (`ARG-106-003`) | Los 3 AEI se suman a los 303 de El Rosario (18-ago) y al laboratorio con la discrepancia 72/172. **Sin desglose por municipio no se distingue expansión del fenómeno de intensificación del rastreo** | Un registro consolidado de la SEMAR |
+| ARGOS 106 | **Colima — ¿carpetas acumuladas?** (`ARG-106-002`) | Dos ataques sobre el mismo núcleo familiar en 48 h y en la misma colonia. Sin móvil oficial, sin detenidos, sin medidas de protección publicadas | Si la FGE Colima los trata como hechos separados, **eso mismo es el hallazgo** sobre su capacidad de detección de series |
+| ARGOS 106 | **Los Bayados — desplazamiento** (`ARG-106-REC-003`) | **Conteo de salidas de familias en los 7 días posteriores al 21-ago**: mide el éxito o fracaso del despliegue. La denuncia de **drones** sigue sin confirmación institucional y no se contabiliza | El registro estatal de desplazamiento interno |
+| ARGOS 106 | **«El Willy» — corte numérico único** (`ARG-106-REC-004`) | Acumulado `EN CONFLICTO` entre **56 y ~100**. Sin denominador confiable no hay medición de avance forense | Un corte de la FGE Chihuahua: restos localizados / individualizados / identificados / entregados |
+| ARGOS 106 | **Nopaltepec — el expolicía** (`ARG-106-007`) | Periodo de servicio y causa de baja de Diego Vladimir "N"; si otros elementos de la misma corporación figuran en la carpeta; destino de los vehículos. **Fuente única nacional** | Un boletín de la FGJEM y una segunda fuente |
+| ARGOS 106 | **CDMX — colonias no publicadas, segunda edición consecutiva** (`ARG-106-008`) | Como `ARG-105-005`, el hecho **no puede cruzarse con el mapa de incidencia** por falta de colonia | El desglose por colonia de la FGJ CDMX para robo a casa habitación en agosto |
+| ARGOS 106 | **72 vs. 172 AEI — Sinaloa** | Heredada y **sin resolver**. Desglose idéntico en ambas coberturas salvo esa cifra: apunta a error de transcripción sobre un mismo boletín | El boletín original. **100 AEI de diferencia bloquean cualquier serie de explosivos del estado** |
+| ARGOS 106 | **Sonora — pena compuesta** (`ARG-106-SEN-REC-001`) | 28a 3d «para dos sujetos», **sin precisar si es por persona o conjunta**. No sumable | El boletín de la FGJE Sonora. Si es por persona, el acumulado sube 56 años |
+
+## Deuda de método abierta por ARGOS 106
+
+| Desde | Asunto | Acción pendiente |
+|---|---|---|
+| ARGOS 106 | **Cobertura real: 5 de 32 entidades** | No se ejecutó el barrido regional por entidad: la búsqueda fue **dirigida por categoría**. Las 27 restantes se declararon `NO REVISADA`, nunca `SIN ACTUALIZACIÓN`. **ARGOS 107 debe saldar esas 27 antes que el ciclo**, por la regla de prioridad sobre el ciclo |
+| ARGOS 106 | **El Ciclo C no se aplicó** | A ARGOS 106 le tocaba **Occidente + Sureste** encabezando el triaje judicial. No hubo barrido que rotar. **ARGOS 107 debe declarar expresamente qué ciclo aplica**, y saldar antes la cobertura pendiente |
+| ARGOS 106 | **Los tres controles no se invocaron como subagentes** | `editor-duplicidad` y `procedencia-cifras` se ejecutaron **a mano** con el mismo criterio y ambos produjeron hallazgos reales; `barrido-regional` no se ejecutó. La ausencia se declaró en el indicador de cobertura en vez de disimularse |
+| ARGOS 106 | **Un *liveblog* volvió a ser fuente única** | `ARG-106-008` (Tláhuac) descansa en el minuto a minuto de Infobae. Se integró por bajo impacto y coincidencia con el día de publicación, **marcado `PENDIENTE DE CORROBORACIÓN INDEPENDIENTE`**. La regla de ARGOS 103 sigue vigente: un *liveblog* no fecha un hecho |
 
 ## Seguimientos abiertos por los hechos de ARGOS 105
 

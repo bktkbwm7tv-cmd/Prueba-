@@ -240,3 +240,17 @@ en que el ARG-ID fue **definido por primera vez**.
 > `reports/argos-2026-08-23-fuentes.md`, no en el cartelón, que publica únicamente los hechos
 > de su propia ventana.
 
+| `ARG-106-001` | 106 | 2026-08-24 | ARG-106-001 — Mazatlán, Sinaloa: dos ataques armados la tarde del 23-ago (cols. Felipe Ángeles y centro); 2 muertos, 5 heridos, 1 agresor detenido en azotea de hotel (🔴) |
+| `ARG-106-002` | 106 | 2026-08-24 | ARG-106-002 — Colima capital (col. Francisco I. Madero): ataque armado durante un velorio; 2 muertos. Segunda agresión sobre el mismo núcleo familiar en 48 h (🔴) |
+| `ARG-106-003` | 106 | 2026-08-24 | ARG-106-003 — El Quelite y corredor Mazatlán-Concordia, Sinaloa: SEMAR destruye 3 AEI y asegura 1 vehículo con blindaje artesanal; sin detenidos (🟢) |
+| `ARG-106-004` | 106 | 2026-08-24 | ARG-106-004 — Mazatlán (La Noria-Palo Blanco), Sinaloa: 1 AK-47, 1 pistola 9 mm, 7 cargadores, 190 cartuchos, 200 dosis de cristal, 200 L de gasolina y 2 detenidos (🟢) |
+| `ARG-106-005` | 106 | 2026-08-24 | ARG-106-005 — Hermosillo (col. Los Pueblitos), Sonora: localizados 2 hermanos con Alerta Amber activa desde el 23-feb; 2 detenidos y 14 envoltorios de cristal (🟢) |
+| `ARG-106-006` | 106 | 2026-08-24 | ARG-106-006 — Cuauhtémoc, CDMX (tianguis de La Lagunilla): agresión con disparos, 1 herido, 6 detenidos, 1 arma corta y 50 bolsitas de marihuana (🟡) |
+| `ARG-106-007` | 106 | 2026-08-24 | ARG-106-007 — Nopaltepec, Estado de México: 6 detenidos de "Los Cerdos" por robo de vehículos, incluidos su presunto líder y un expolicía municipal (🟢) |
+| `ARG-106-008` | 106 | 2026-08-24 | ARG-106-008 — Tláhuac, CDMX: 4 detenidos tras intento de robo al domicilio de una mujer de 74 años. Colonia no publicada (🟢) |
+| `ARG-106-REC-001` | 106 | 2026-08-24 | ARG-106-REC-001 — La Estación, Acapulco, Guerrero: comando con chalecos rotulados "Guardia Nacional" asesina a 4 integrantes de una familia (🔴). Ventana de origen: ARGOS 105 |
+| `ARG-106-REC-002` | 106 | 2026-08-24 | ARG-106-REC-002 — Morelia (col. Del Periodista), Michoacán: balacera con elementos de la GN de civil; 2 muertos, 2 federales asegurados por policía municipal (🔴). Ventana de origen: ARGOS 105 |
+| `ARG-106-REC-003` | 106 | 2026-08-24 | ARG-106-REC-003 — Los Bayados, Ajuchitlán del Progreso, Guerrero: ataque armado de ~8 h contra la comunidad; 2 heridos y despliegue militar (🔴). Ventana de origen: ARGOS 105 |
+| `ARG-106-REC-004` | 106 | 2026-08-24 | ARG-106-REC-004 — Predio "El Willy", Casas Grandes, Chihuahua: nuevos restos óseos y osamenta incompleta; acumulado en conflicto entre 56 y ~100 (🔴). Ventana de origen: ARGOS 105 |
+| `ARG-106-SEN-REC-001` | 106 | 2026-08-24 | ARG-106-SEN-REC-001 — FGJE Sonora, Hermosillo: 28a 3d por homicidio y lesiones a 2 personas, juicio oral. PENA COMPUESTA — no sumable. Ventana de origen: ARGOS 105 |
+| `ARG-106-SEN-REC-002` | 106 | 2026-08-24 | ARG-106-SEN-REC-002 — FGE Guanajuato, León: 27a 11m a Christian Gustavo "N" por el feminicidio de su madre. Ventana de origen: ARGOS 105 |
