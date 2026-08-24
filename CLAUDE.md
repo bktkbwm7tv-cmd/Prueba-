@@ -95,10 +95,15 @@ inteligencia, no debe existir en ARGOS.
 Versión 5 páginas — el reporte se dividió en cinco páginas (antes cuatro) para dar más espacio a
 las tarjetas de Crimen Organizado, que no deben comprimirse para caber en una sola página.
 
-1. **Portada**: ARGOS + número consecutivo, corte informativo, radar, mapa, noticias de ayer y
-   hoy, ejes del día, semáforo ARGOS.
-2. **Página 2 — Tablero ejecutivo**: resumen ejecutivo, eventos prioritarios, ARGOS ALERTA,
-   detenciones relevantes.
+1. **Portada**: ARGOS + número consecutivo, corte informativo, radar, mapa, ejes del día, semáforo
+   ARGOS. "Ejes del día" es el único listado resumido de hechos en esta página — no debe
+   duplicarse con una segunda tabla tipo "noticias de ayer y hoy" que repita los mismos hechos.
+2. **Página 2 — Tablero ejecutivo**: resumen ejecutivo, detenciones relevantes. No incluye un
+   bloque "ARGOS ALERTA" ni una tabla adicional de "eventos prioritarios": ambos repetían el mismo
+   hecho de mayor gravedad ya resumido en "Ejes del día" (portada) y desarrollado en su ficha
+   completa de Crimen Organizado — si se necesita mostrar fuente institucional/nacional y confianza
+   por evento, esos datos van en la ficha completa de cuatro apartados de cada nota (Crimen
+   Organizado, Armamento, Sentencias), no en un bloque o tabla resumen adicional en esta página.
 3. **Página 3 — Crimen organizado (I)**: ataques a autoridades, desapariciones, fosas.
 4. **Página 4 — Crimen organizado (II)**: laboratorios, huachicol, narcotráfico marítimo, redes
    financieras, extorsión, Análisis ARGOS.
@@ -112,6 +117,16 @@ La distribución exacta de categorías entre páginas puede ajustarse corte a co
 de notas de cada bloque; la regla fija es que ninguna tarjeta debe recortarse ni comprimirse por
 falta de espacio — si un bloque crece, se reparte entre más páginas, no se reduce el contenido de
 cada tarjeta.
+
+## Regla de no duplicación
+
+Cada hecho del corte aparece en como máximo dos lugares: (1) un resumen breve en "Ejes del día"
+(portada) y (2) su ficha completa de cuatro apartados en Crimen Organizado, Armamento o
+Sentencias — nunca una tercera tabla o listado intermedio que repita el mismo titular sin aportar
+fuente, confianza o análisis adicional sustancial. Antes de publicar, revisar que ninguna sección
+resumida repita íntegramente el contenido de otra sección resumida de la misma edición (mismo
+titular, mismos datos). Si dos secciones tienden a coincidir en contenido, fusionarlas en una sola
+en vez de mantener ambas.
 
 ## Regla de las cuatro secciones por nota
 
@@ -174,6 +189,65 @@ grave ocurrido en el pasado, el color del hecho de hoy es verde (es una acción 
 delito original, si ocurrió durante un corte anterior, se clasificó en su momento como rojo en ese
 corte y no se recalifica retroactivamente.
 
+### Un delito y su detención son dos eventos, no uno
+
+Versión 1.0 — regla nacida del fallo de `ARG-101-008`, corregido en ARGOS 102.
+
+La regla anterior resuelve el caso en que el delito ocurrió en un corte **pasado**. No resolvía el
+caso en que el delito y su detención ocurren **dentro de la misma ventana**, y ahí se produjo un
+error real: ARGOS 101 publicó como **un solo evento 🟢 VERDE** la detención de tres personas por un
+ataque armado **que dejó un muerto ese mismo día, dentro de la ventana**. El homicidio quedó
+absorbido por la acción institucional y desapareció del recuento del semáforo.
+
+**Cuando el delito y la respuesta institucional caen los dos dentro de la ventana, se abren dos
+fichas con dos ARG-ID**: una para el hecho delictivo, con el color que le corresponda por su tipo, y
+otra para la detención, en verde. **Un homicidio nunca se contabiliza en verde**, ni siquiera cuando
+la noticia del corte es la captura de sus presuntos responsables. La capacidad de respuesta y el
+daño causado son dos hechos distintos y el semáforo debe poder verlos por separado.
+
+### Homicidio doloso único: cierre de un vacío de la escala
+
+La enumeración de 🔴 ROJO exige homicidios **múltiples**, y la de 🟡 AMARILLO recoge los
+"incidentes armados focalizados", de modo que un **homicidio doloso único contra un civil** no
+estaba enumerado en ninguna de las tres categorías. Se resuelve así:
+
+- **🟡 AMARILLO** — homicidio doloso único sin las agravantes de la lista roja. Es daño consumado,
+  pero no un incremento del riesgo estratégico nacional, que es lo que la metodología mide.
+- **🔴 ROJO** — el mismo hecho sube de color si concurre cualquiera de estas: víctimas múltiples;
+  víctima que sea autoridad, servidor público, periodista o persona defensora; uso de explosivos,
+  AEI o drones armados; ejecución pública dirigida a aterrorizar a la población; o vinculación a un
+  ataque coordinado del crimen organizado.
+
+El criterio sigue siendo el **tipo de evento**, nunca el número de casos ni el impacto mediático.
+
+### Quién inicia: el criterio que separa "ataque contra autoridades" de "enfrentamiento"
+
+Versión 1.0 — regla nacida de una incoherencia detectada en ARGOS 102.
+
+La lista roja incluye **"ataques contra autoridades"** y la amarilla incluye **"agresiones a fuerzas
+de seguridad"** y **"operativos con intercambio de disparos"**. Los dos renglones describen el mismo
+suceso con distinto color, y esa ambigüedad produjo **tres colores distintos para el mismo tipo de
+hecho en dos ediciones consecutivas**. Se resuelve con un criterio único: **quién inicia la
+agresión**, no quién resulta muerto.
+
+| Situación | Color | Razón |
+|---|---|---|
+| El grupo criminal **agrede a personal en patrullaje, traslado o puesto de control** | **🔴 ROJO** | Es un **ataque contra autoridades**: el grupo criminal proyecta fuerza contra el Estado. Es lo que la lista roja nombra |
+| La fuerza pública **ejecuta una acción** (cateo, detención, revisión) y es **repelida** | **🟡 AMARILLO** | Es **confrontación derivada de un operativo**: el Estado inicia y encuentra resistencia. Es lo que la lista amarilla nombra |
+
+**El número de abatidos no mueve el color**, ni al alza ni a la baja: un operativo con cinco
+agresores abatidos sigue siendo amarillo si lo inició la autoridad, y una emboscada sin bajas sigue
+siendo roja. Contar los muertos del lado criminal como medida de gravedad convertiría la eficacia
+de la respuesta estatal en un aumento del riesgo nacional, que es justo lo que la metodología
+prohíbe.
+
+**Cuando no se puede determinar quién inició**, se clasifica **🟡** y se declara la reserva: subir a
+rojo por defecto inflaría el nivel de riesgo con hechos no acreditados.
+
+**Agravantes que suben a 🔴 con independencia de quién inició**: hallazgo de restos humanos o de
+fosa en el inmueble intervenido, víctimas civiles ajenas al hecho, uso de explosivos, AEI o drones
+armados, y muerte de personal de las fuerzas de seguridad.
+
 ### Aplicación en ARGOS
 
 El cartelón agrupa los eventos por color y elabora la Valoración ARGOS considerando principalmente
@@ -207,6 +281,27 @@ fracción de los aseguramientos, detenciones y resoluciones que las corporacione
 propios canales. Un `SIN DATO` derivado únicamente de no encontrar la nota en medios es un dato
 falso.
 
+### Restricción de acceso vigente (verificada en ARGOS 98)
+
+Los dominios `*.gob.mx` y los de las fiscalías y secretarías de seguridad estatales **están fuera de
+la lista blanca de egreso del entorno**. La comprobación directa devuelve
+`curl: (56) CONNECT tunnel failed, response 403`, es decir, una denegación por política de la
+organización en el proxy de salida — no un fallo de la herramienta ni un problema del portal. El
+`EGRESS_BLOCKED` que reportan los agentes al usar `WebFetch` es la misma restricción.
+
+Consecuencias operativas, mientras siga vigente:
+
+- **No se intenta rodear.** Se registra el host bloqueado y se sustituye por búsqueda `site:`
+  dirigida al dominio oficial, que sí devuelve boletines indexados. La sustitución se anota siempre.
+- **El techo de confianza de todo el producto es ★★★★☆.** El nivel ★★★★★ exige documento oficial o
+  fotografía verificada, y ningún documento primario puede leerse íntegro en estas condiciones.
+- Ampliar el número de equipos de investigación **no** levanta este techo: multiplica las peticiones
+  contra la misma puerta cerrada. La única solución real es que se añadan esos dominios a la política
+  de red del entorno.
+- Si en algún corte el acceso directo empieza a funcionar, debe hacerse constar expresamente: cambia
+  el techo de confianza de todas las secciones y vuelve ejecutable el barrido tal como está descrito
+  en este documento.
+
 ### Portales de consulta obligatoria en cada corte
 
 **Federales**
@@ -217,8 +312,40 @@ falso.
 - **SEMAR** — `gob.mx/semar` y regiones navales.
 - **FGR** — `gob.mx/fgr`, fiscalías especializadas y delegaciones estatales.
 - **SSPC / Gabinete de Seguridad** — `gob.mx/sspc` y `seguridad.sspc.gob.mx`, incluidos los
-  comunicados conjuntos e informes diarios.
+  comunicados conjuntos e informes diarios. **Emisor de formato variable**: alterna boletín diario y
+  agregado de varios días sin avisar. Ver la regla de la doble consulta más abajo.
+- **Gabinete de Seguridad — portal propio** `gabinetedeseguridad.gob.mx/resultados/`. **Obligatorio
+  desde el 1-sep-2026**: el emisor anunció el 18-ago-2026 que los reportes diarios preliminares de
+  homicidio y robo de vehículo migran a ese sitio.
 - **Aduanas / ANAM** cuando el hecho sea fronterizo o portuario.
+
+**Regla de la triple consulta (obligatoria antes de declarar cualquier vacío federal)**
+
+Versión 2.0 — ampliada en ARGOS 104, tras el **tercer** falso vacío consecutivo del mismo emisor.
+
+Ningún vacío del boletín federal puede declararse sin haber consultado **en las tres formas**:
+
+1. Por **día suelto** — "acciones relevantes del 17 de agosto".
+2. Por **rango o agregado** — "del 14, 15 y 16 de agosto".
+3. Por **título del boletín, sin restricción de dominio** — sin `site:`, para alcanzar a los
+   republicadores.
+
+Las dos primeras nacen de dos falsos vacíos por **formato**: ARGOS 98-100 declararon cuatro cortes
+sin boletín cuando el emisor había pasado a agregado, y ARGOS 101 —al corregir el primero— dejó vivo
+un "vacío del 17-ago" que tampoco existía, porque el emisor había vuelto al diario. Una consulta por
+día no alcanza un agregado y una por rango no alcanza un diario. **El formato del boletín no es
+estable y no debe suponerse por el del corte anterior.**
+
+La tercera nace de un falso vacío de **naturaleza distinta**, detectado en ARGOS 104: el boletín del
+**19-ago-2026 existe y `gob.mx` no lo indexó**. Una búsqueda `site:gob.mx/sspc` no lo devuelve en
+ninguna de las dos primeras formas; solo aparece **a través de sus republicadores**, uno de ellos con
+fecha en la ruta. **Que el portal emisor no indexe un documento no significa que el documento no
+exista**, y con el egreso bloqueado el buscador es la única vía: si el índice falla, hay que
+rodearlo por el contenido, no por el dominio.
+
+Corolario de trazabilidad: cuando el boletín se tome de un republicador, **la sustitución se anota**
+y la corroboración se declara **débil por construcción** — varios republicadores del mismo boletín
+**no son fuentes independientes**.
 
 **Estatales — las 32 entidades**
 
@@ -252,6 +379,242 @@ Cada edición conserva en su archivo de fuentes qué portales se consultaron, cu
 cuáles no, de modo que todo `SIN DATO` sea demostrable y auditable, y que la cobertura declarada
 nunca exceda la efectivamente verificada.
 
+### Ejecución del barrido por regiones
+
+El barrido de las 32 entidades no se ejecuta como una sola tarea: se reparte en seis agentes
+`barrido-regional` en paralelo, uno por región (Noroeste, Noreste, Occidente, Centro, Golfo,
+Sureste), cada uno con la lista de portales de sus entidades. Un solo equipo intentando el país
+entero produce cobertura parcial declarada como total — el fallo documentado en ARGOS 98, donde el
+módulo de armamento cubrió 18 de 32 entidades.
+
+### Rotación de cobertura — mecánica obligatoria
+
+Versión 1.0 — validada en ARGOS 101, escrita aquí en ARGOS 102.
+
+El presupuesto de búsqueda no alcanza para agotar los dos módulos en las 32 entidades: cada región
+debe elegir en qué gasta sus primeras consultas, y lo que se consulta al final es lo que se queda
+sin consultar. Si el orden de triaje es siempre el mismo, **son siempre las mismas entidades las
+que quedan sin revisar**, y el producto acumula un punto ciego fijo que ninguna edición ve porque
+todas lo heredan.
+
+La corrección es rotar qué regiones **encabezan el triaje judicial** —es decir, gastan sus primeras
+búsquedas en fiscalías y sentencias en vez de en armamento— en un ciclo fijo de tres ediciones que
+recorre las seis regiones:
+
+| Ciclo | Regiones que encabezan el triaje judicial | Ediciones |
+|---|---|---|
+| **A** | Noroeste + Centro | ARGOS 101, 104, 107… |
+| **B** | Noreste + Golfo | ARGOS 102, 105, 108… |
+| **C** | Occidente + Sureste | ARGOS 103, 106, 109… |
+
+Las cuatro regiones restantes de cada corte encabezan con el módulo de armamento. **El ciclo que
+toca se declara expresamente en el archivo de fuentes de la edición**, junto con el resultado: qué
+aportó la rotación que el orden anterior no habría aportado.
+
+Dos reglas que la acompañan:
+
+- **Prioridad sobre el ciclo**: si una edición dejó entidades `NO REVISADA`, esas entidades
+  encabezan el triaje de la edición siguiente **aunque no les toque por ciclo**, y el ciclo se
+  reanuda después. Saldar cobertura vence a mantener el turno.
+- **La rotación se declara, no se supone.** Una edición que no diga qué ciclo aplicó no aplicó
+  ninguno.
+
+El fundamento empírico es de ARGOS 101: al mandar a las trece fiscalías que ARGOS 100 había dejado
+sin revisar a encabezar el triaje, las 32 quedaron revisadas y **la única sentencia condenatoria
+integrable del corte apareció precisamente en una de esas trece** (Durango). No es una mejora
+cosmética de cobertura: cambia lo que el producto encuentra.
+
+## Control editorial antes de publicar
+
+Versión 1.0
+
+Ninguna edición se publica sin pasar estos tres controles. No son opcionales ni sustituibles por una
+revisión general: cada uno existe por un fallo real y repetido de la serie, y su omisión es lo que
+permitió que esos fallos llegaran al producto.
+
+1. **`editor-duplicidad`** — contrasta el borrador consigo mismo y contra las ediciones anteriores.
+   Impide que dos equipos publiquen el mismo hecho con dos ARG-ID, que un hecho ya publicado se
+   presente como nuevo, y que una tercera tabla repita titulares ya cubiertos por "Ejes del día" y
+   las fichas. En ARGOS 98 detectó dos casos que iban camino de publicarse.
+2. **`procedencia-cifras`** — exige, para cada número del borrador, el fragmento literal que lo
+   sostiene, y separa las cifras citables de las que solo existen dentro del resumen generado por el
+   buscador o se heredaron de una edición previa sin reverificar. La cifra de Huajicori sobrevivió
+   cuatro ediciones por ausencia de este control. **ARGOS no es fuente de sí mismo**: una cifra que
+   solo se sostiene en ediciones anteriores no tiene fuente.
+3. **`barrido-regional`** ×6 — condición previa para que cualquier módulo pueda declarar
+   `SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE`.
+
+Cuando un control devuelva `CORREGIR ANTES DE PUBLICAR`, se corrige y se vuelve a pasar. Si un
+hallazgo se decide no corregir, la razón se deja escrita en el archivo de fuentes de la edición.
+
+### Cierre de la edición: archivo de pendientes
+
+Último paso obligatorio de cada corte, después de los tres controles: **actualizar
+`reports/_pendientes.md`** con lo que la edición deja abierto — seguimientos judiciales, vacíos sin
+resolver, contradicciones no arbitradas y deuda de método —, y mover a "Cerrados recientemente" lo
+que se haya resuelto.
+
+Ese archivo es el traspaso entre ediciones. La continuidad de ARGOS no vive en la conversación que
+generó un corte, sino en el repositorio: cada edición debe poder arrancar en una sesión nueva leyendo
+`CLAUDE.md`, `reports/_pendientes.md` y la edición anterior, sin depender de que alguien recuerde y
+transcriba la lista de seguimientos. Un pendiente que solo existe en la memoria de una conversación
+es un pendiente perdido.
+
+### Cifras arrastradas: umbral de fe de erratas
+
+Una cifra que llegue a **dos ediciones consecutivas** sin respaldo citable no se sigue señalando: se
+retira del acumulado y se publica la fe de erratas correspondiente, marcando el renglón como
+`CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO`. Señalar un problema sin resolverlo,
+edición tras edición, no es trazabilidad: es un error conocido que se sigue publicando.
+
+## Reglas de procedencia del dato
+
+Versión 1.0 — reglas que se aplicaban de facto en las definiciones de agente o en la práctica de las
+ediciones, y que se consagran aquí porque cada una nació de un fallo real ya ocurrido.
+
+### La fecha de la URL fija la publicación, no el hecho
+
+Exigir la fecha en la URL o en el titular es la única defensa eficaz contra el resumidor del
+buscador, que afirma fechas que la fuente no sostiene. Pero esa fecha es la de **publicación**.
+**Fecha del hecho, fecha del aseguramiento, fecha de publicación y fecha de consulta son cuatro
+campos distintos y nunca se sustituyen entre sí.** Un hecho procesal del 10 de agosto puede
+publicarse el 17 con una URL fechada el 17: ambas fechas son correctas y describen cosas distintas.
+
+Corolario para los agregados institucionales: **nunca aceptar una pena o una cifra destacada en el
+titular de un agregado sin una URL fechada que la ate específicamente a ese corte.** Una fiscalía
+puede encabezar un boletín de agosto con una condena de junio sin faltar a la verdad.
+
+### El *liveblog* fecha la página, no el hecho
+
+Versión 1.0 — regla nacida de ARGOS 103, donde el mismo tipo de fuente produjo **dos errores
+distintos en una sola edición**.
+
+Los medios nacionales publican **coberturas en vivo** —"EN VIVO: seguridad y crimen hoy 15 de
+agosto"— que agregan hechos de varios días bajo una URL cuya fecha es la **de la página**, no la del
+suceso. Cumplen formalmente la regla de la fecha en la ruta y por eso la burlan: pasan el control
+sin sostener nada.
+
+En ARGOS 103 un equipo trajo como omisión nueva un hecho del **14-ago** citando un *liveblog* del
+**15**, cuando el hecho ya estaba publicado desde ARGOS 98 **con esa misma fuente**; y tres portales
+que replicaban un *liveblog* estuvieron a punto de introducir **cinco muertos de otro evento** en el
+hecho principal del corte.
+
+Regla operativa:
+
+1. **Un *liveblog* nunca fecha un hecho.** Su fecha en la ruta acredita cuándo se publicó la página,
+   y nada más. Para asignar un hecho a una ventana hace falta **otra fuente**, con fecha propia y
+   referida al hecho.
+2. **Un *liveblog* no basta como fuente única** de un evento ni de una cifra. Puede corroborar lo que
+   otra fuente ya sostiene; no puede sostenerlo solo.
+3. **Se identifica por su forma**: `en-vivo`, `minuto-a-minuto`, `hoy-DD-de-MES`, o un titular que
+   agregue varios sucesos sin relación entre sí. Ante la duda, tratarlo como *liveblog*.
+
+Corolario general, que vale para toda fuente y no cuesta ninguna búsqueda: **comprobar la coherencia
+interna de la fuente antes de aceptarla**. Si una nota dice "el martes" y el día que se le atribuye
+no fue martes, la atribución es falsa. En ARGOS 103 ese control —verificar el día de la semana
+contra el calendario— impidió atribuir cinco muertes al evento equivocado y confirmó, en la
+auditoría, que las fechas de cuatro hallazgos no procedían del resumidor.
+
+### Frontera de ventana: cuando la fuente no publica la hora
+
+Versión 1.0 — regla nacida de ARGOS 102, donde afectó a **todos** los candidatos del corte.
+
+Las ventanas de ARGOS se declaran con precisión de minutos (`13:37 CDMX`), pero **las fuentes
+publican con precisión de día**: la fecha en la ruta de una URL fija el día, casi nunca la hora. El
+resultado es que un hecho publicado el mismo día en que se cierra una ventana **no puede asignarse
+con certeza a ninguna de las dos ediciones que lo tocan**. No es un defecto de la búsqueda: es que
+la convención de corte es más fina que la resolución de las fuentes.
+
+Regla, para que ningún hecho se pierda entre dos ediciones ni se cuente dos veces:
+
+1. Un hecho cuya **publicación cae el día de cierre** y cuya **hora no está fijada** se marca
+   `FRONTERA DE VENTANA — HORA NO FIJADA`.
+2. Se integra a la **edición que lo ve primero**, con esa marca. Como la edición anterior ya cerró
+   sin él, integrarlo en la siguiente es la única forma de no perderlo.
+3. La marca es permanente y se declara en el archivo de fuentes: si más tarde aparece un ancla
+   horaria y el hecho resulta pertenecer a la ventana anterior, se corrige por fe de erratas y se
+   retira del total donde se contó.
+4. **Nunca se infiere la hora** a partir del orden de los resultados del buscador, de la posición en
+   una portada, ni de la hora de consulta.
+
+Cuando la frontera afecta a la mayoría de los hechos de un corte, **el corte debe decirlo en su
+valoración**: sus totales no son comparables sin más con los de ediciones cuyos hechos sí quedaron
+fijados dentro de ventana.
+
+### El *slug* institucional prueba el término, no identifica el caso
+
+Versión 1.0 — regla nacida del fallo de Coronango, detectado en ARGOS 102.
+
+El *slug* de un boletín oficial es texto primario de la autoridad y no paráfrasis del resumidor del
+buscador: por eso un término jurídico dentro del *slug* (`…fallo-condenatorio…`,
+`…sentencia-condenatoria…`) **sí sostiene la clasificación jurídica** de un caso, cosa que el mismo
+término en el titular de un medio no sostendría. Ese criterio se mantiene.
+
+Lo que **no** sostiene es la **identidad del caso**. ARGOS 98 respaldó la sentencia de Coronango con
+un boletín cuyo *slug* decía "fallo condenatorio por violación equiparada" en el municipio
+correcto — y era **otra persona, otra pena, otro año y otra colonia**. Municipio y delito
+coincidentes no identifican un caso, y en un mismo municipio una fiscalía publica varios casos del
+mismo delito.
+
+Regla operativa, en dos partes:
+
+1. **Para clasificar** un caso como sentencia, el término en el *slug* institucional basta.
+2. **Para identificar** un caso, hacen falta además **al menos dos campos individualizadores
+   coincidentes** —nombre o alias, pena exacta, fecha del hecho, colonia o fraccionamiento, número
+   de causa penal—. Sin ellos, el boletín es de un caso homónimo mientras no se demuestre lo
+   contrario, y se marca `POSIBLE CASO HOMÓNIMO — NO INTEGRAR HASTA VALIDACIÓN`.
+
+Corolario sobre la calidad de la ruta: un *slug* semántico **con fecha en la ruta**
+(`fiscalia.durango.gob.mx/2026/08/17/fged-obtiene-sentencia-condenatoria-…`) es un respaldo
+sustancialmente más fuerte que un *slug* semántico **sin fecha**, y ambos son más fuertes que una
+ruta GUID opaca. Cuando una edición sustituya la URL de un caso por otra, debe comprobar que la
+nueva es del mismo caso: la regresión de Coronango consistió en cambiar una URL correcta —que ARGOS
+97 ya tenía— por otra que parecía mejor porque su *slug* se leía.
+
+### Toda cifra derivada debe declararse como cálculo propio
+
+El riesgo no está solo en copiar mal una cifra: está en **derivarla correctamente y olvidar declarar
+que se derivó**. Una suma, un promedio, un total o un acumulado calculado por ARGOS a partir de
+datos publicados es un **cálculo propio** y debe ir marcado como tal, nunca presentado como dato de
+fuente. Si la autoridad no publicó el agregado, ARGOS puede calcularlo, pero entonces el agregado es
+de ARGOS y se dice.
+
+### Corroboración asimétrica
+
+El nivel de confianza de una fila **lo fija el campo peor sostenido**, no el mejor ni el promedio.
+Un evento con fecha, municipio y corporación bien corroborados pero con el desglose numérico en una
+sola fuente vale lo que vale ese desglose. La marca se aplica al renglón completo.
+
+### Corrección heredada: dos supuestos distintos
+
+- Un dato **sin respaldo jamás** —que no lo tuvo en su edición de origen— se retira y se publica la
+  **fe de erratas** correspondiente.
+- Un dato **con respaldo en su origen pero no reverificado** en la edición actual se conserva y se
+  marca `HEREDADO — NO REVERIFICADO`.
+
+Confundirlos produce dos errores opuestos: borrar datos buenos o arrastrar datos malos.
+
+### Las tres casillas de cobertura
+
+Un portal que no publicó, un portal que no se pudo ver y un portal que no se consultó son tres
+estados distintos y **jamás se reportan con la misma etiqueta**:
+
+| Casilla | Significa | Cuándo puede usarse |
+|---|---|---|
+| `SIN ACTUALIZACIÓN CONSTATADA` | Se vio el listado de boletines y no había nada del periodo | Solo con lectura directa del portal |
+| `SIN RESULTADO INDEXADO EN VENTANA` | Se buscó dirigido y el buscador no devolvió nada del periodo | Con el egreso bloqueado, es la casilla correcta en casi todos los casos |
+| `NO REVISADA` | No se llegó a consultar | Siempre que el presupuesto se haya agotado antes. **Nunca disfrazarla de "sin actualización"** |
+
+### Umbral de integración: asimétrico entre los dos módulos
+
+- **Armamento**: un evento con confianza **Bajo** (dos fuentes periodísticas coincidentes sin
+  comunicado oficial) **sí se integra** al conteo nacional, marcado con su nivel.
+- **Sentencias**: la confianza **Bajo** **no basta**. Una sentencia sin fuente oficial queda en
+  `PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL`.
+
+La asimetría es deliberada: un aseguramiento mal contado se corrige en la edición siguiente; una
+sentencia inexistente atribuida a una persona con nombre no se corrige con una fe de erratas.
+
 ## Reglas de validación
 
 Cada evento debe cumplir, en la medida de lo posible: ✔ fuente institucional, ✔ fuente nacional,
@@ -268,6 +631,20 @@ Columnas obligatorias: Entidad, Hecho, Nivel de riesgo, Fuente institucional, Fu
 Nivel de confianza, ARG-ID. El "Nivel de riesgo" se clasifica con la escala 🔴 Rojo / 🟡 Amarillo /
 🟢 Verde definida en "Metodología del nivel de riesgo nacional", no con una escala genérica de
 alto/medio/bajo.
+
+### Convención de marcado de tablas (obligatoria para la paridad móvil)
+
+Toda tabla del cartelón se escribe **siempre** envuelta:
+
+```html
+<div class="table-wrap"><table class="exec"> … </table></div>
+```
+
+Usar `class="exec wide"` cuando la tabla tenga muchas columnas (las de los módulos de armamento y
+sentencias). **El generador de la versión móvil detecta las tablas por el envoltorio
+`table-wrap`**: una `<table>` suelta no dispara la regla que retira las retículas y **desborda
+horizontalmente la pantalla en silencio**. Es un fallo que ya ocurrió y que el propio generador solo
+puede mitigar, no evitar.
 
 ## Escala de nivel de confianza
 
@@ -472,6 +849,27 @@ primaria + corroboración independiente) · **Medio** (fuente oficial única con
 **Bajo** (dos fuentes periodísticas coincidentes sin comunicado oficial) · **No confirmado**
 (fuente abierta o versión aislada — nunca se integra a los totales).
 
+### Iconografía de la taxonomía (obligatoria desde ARGOS 105)
+
+Cada categoría de la taxonomía lleva un **icono propio**, en las tarjetas de conteo y en las
+cabeceras de la tabla de armamento. Son **SVG de trazo monocromo** que heredan el color del texto
+(`currentColor`): sin relleno, sin 3D, sin color propio. Su función es que un mando localice una
+categoría de un vistazo, no decorar.
+
+Tres reglas que los gobiernan:
+
+1. **El icono nunca identifica solo.** Va siempre acompañado de **etiqueta y cifra**. Ni el color ni
+   la forma por separado transmiten el dato.
+2. **Las categorías en cero se muestran igualmente**, atenuadas. Que en 48 horas no haya granadas,
+   explosivos ni armamento especial **es dato**, no hueco: retirarlas del bloque haría invisible la
+   ausencia.
+3. **El bloque de tarjetas no repite la tabla**: la tarjeta da el total nacional por categoría, la
+   tabla da el desglose por evento con su ARG-ID, corporación y confianza. Son campos distintos.
+
+La definición de los nueve iconos —cortas, largas, cartuchos, cargadores, granadas, AEI, explosivos,
+armamento especial y detenidos— vive en el CSS del cartelón (`.ico`, `.conteo`) y **el generador
+móvil la inyecta también en la versión de teléfono**, donde las tarjetas se reflúan a rejilla de tres.
+
 ### Estructura visual recomendada
 
 Bloque 1 — tarjetas de conteo (armas cortas, armas largas, municiones, granadas, AEI, explosivos,
@@ -487,7 +885,48 @@ trazables hasta la fuente original.
 
 ## Pie de página
 
-Debe incluir: versión, fecha, hora, corte, número ARGOS, "Uso Institucional".
+Debe incluir: versión, fecha, hora, corte, número ARGOS, "Uso Institucional". La hora debe ser
+siempre la hora real de Ciudad de México (CDMX) al momento de elaborar el corte — nunca un valor
+por defecto (p. ej. 09:00) sin verificar. Confirmar la hora real antes de escribirla en el
+encabezado, el pie de página y cada marca "Consulta:" del cartelón (escritorio y móvil).
+
+## El cartelón es para el mando, no para el método
+
+Versión 1.0 — regla nacida de ARGOS 103, por instrucción editorial directa.
+
+**El destinatario del cartelón es un mando policial o militar.** Lo que le sirve es dato criminal
+trazable: hechos, entidad y municipio, fecha, armamento y explosivos asegurados con su desglose,
+personas detenidas, víctimas, fosas, secuestros, desapariciones, sentencias — cada cosa con su
+fuente institucional, nacional o regional, su nivel de confianza y su ARG-ID.
+
+**Lo que no le sirve es ARGOS hablando de ARGOS.** En ARGOS 103 el cartelón llegó a abrir su Tablero
+Ejecutivo con "esta edición se define por una auditoría de sí misma", a encabezar los "Ejes del día"
+con un veredicto sobre el método —no con un hecho—, y a cerrar con **siete conclusiones de las que
+ninguna era de inteligencia criminal**: todas eran de método, control, fuentes o redacción. El
+producto medía su propia cobertura y lo publicaba como si fuera inteligencia.
+
+Regla operativa:
+
+1. **Ningún hallazgo de método entra en el cartelón.** Las lecciones de barrido, los señuelos
+   descartados, el presupuesto de búsqueda, el rendimiento de la rotación, las acusaciones de omisión
+   a ediciones anteriores y las conclusiones sobre el instrumento van al **archivo de fuentes de la
+   edición** y a **`reports/_pendientes.md`**. Ahí son valiosas y ahí se auditan.
+2. **Las "Conclusiones" del cierre son de inteligencia criminal**: patrones territoriales, corredores,
+   calibres y firmas balísticas, perfiles de víctima, modus operandi, capacidad de fuego, brecha entre
+   detención y condena, líneas a explotar. Si una conclusión no le dice a un mando algo que pueda
+   accionar o vigilar, no es una conclusión de ARGOS.
+3. **Un hecho de alto impacto encontrado en la ventana de una edición anterior se publica como ficha
+   de hecho, no como hallazgo de auditoría.** Lleva sus cuatro apartados, su ARG-ID `-REC-`, su
+   **ventana de origen declarada**, y no entra en los totales del corte que lo publica. Su efecto
+   sobre el conteo de la edición de origen se registra en una **fe de erratas compacta**, que es
+   trazabilidad y no narrativa.
+4. **Lo que el producto haya aprendido sobre sí mismo se demuestra corrigiéndose, no narrándose.**
+   Una edición que dedica páginas a explicar por qué es mejor que las anteriores está gastando en
+   autorreferencia el espacio que le debe a los hechos.
+
+Excepciones, que son de trazabilidad y no de opinión, y deben ser breves: la **declaración de
+ventana** de cada ficha, la **advertencia de comparabilidad**, la **limitación por bloqueo de
+egreso**, las **tres casillas de cobertura**, los **deslindes de duplicidad** y la **fe de erratas**.
 
 ## Estilo de redacción
 
