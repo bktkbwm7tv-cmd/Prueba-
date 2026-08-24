@@ -5,6 +5,13 @@ eventos rojos, semáforo y versión móvil.
 
 Corte: **2026-08-04 (ARGOS 88)** · Rama: `claude/argos-criminal-intelligence-otiawj`
 
+> **Estado de git al abrir la sesión nueva:** el PR #7 ya fue **mergeado y cerrado**, y todo el
+> trabajo previo (CLAUDE.md, ARGOS 86/87/88, versión móvil, sentencias del barrido) está en `main`.
+> Un PR mergeado no puede seguir recibiendo trabajo: el trabajo pendiente descrito abajo va en una
+> rama reiniciada desde `main` (`git fetch origin main && git checkout -B
+> claude/argos-criminal-intelligence-otiawj origin/main`) y, si se pide PR, será **uno nuevo**, no
+> el #7. No reabrir el #7.
+
 ---
 
 ## ⚠ HALLAZGO CRÍTICO — la conclusión publicada de ARGOS 88 es FALSA
