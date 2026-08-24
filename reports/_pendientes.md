@@ -198,6 +198,20 @@ Sesión nueva, un solo mensaje:
 > 28 de agosto—, y **exigir año en la ruta antes de aceptar cualquier cifra de abatidos** —un
 > enfrentamiento de 2025 con 12 abatidos estuvo a punto de entrar como el hecho rojo del corte—.
 >
+> **El umbral judicial es más duro que el de armamento, y hay que decirlo en el cartelón.** Para
+> integrar una sentencia hacen falta **las tres cosas**: fuente oficial, desglose por persona y fecha
+> que la ate a la ventana. Un agregado sin desglose nominal no cuenta, y una nota periodística sola
+> tampoco. **Cuando descartes casos judiciales, escribe el motivo real de cada uno**: en ARGOS 105 uno
+> se excluyó «por la ventana» y ese motivo era falso.
+>
+> **Truco de fechado que no cuesta búsquedas**: en portales de ID correlativo sin fecha —Tabasco,
+> Chiapas, Oaxaca, Baja California—, **un boletín ya fechado en el archivo acota a todos los de
+> numeración inferior**. Así se probó que el «200 años» de Tabasco era de 2025.
+>
+> **El módulo de armamento lleva iconografía**: tarjetas de conteo con icono, etiqueta y cifra por
+> categoría, y las **categorías en cero se muestran atenuadas**, porque la ausencia es dato. La regla
+> está en `CLAUDE.md`; el generador móvil ya inyecta su CSS.
+>
 > Antes del commit, ejecuta los tres controles obligatorios (`barrido-regional` ×6,
 > `procedencia-cifras` y `editor-duplicidad`) y actualiza `reports/_pendientes.md`.
 >
@@ -221,3 +235,7 @@ Sesión nueva, un solo mensaje:
    compartían causa: **anclar en algo que la edición puede cambiar**.
 6. **Declarar `NO REVISADA` y no `SIN ACTUALIZACIÓN`** cuando el barrido no llega. Es la diferencia
    entre un vacío honesto y un cero falso.
+7. **Renderizar el producto y mirarlo.** Ninguna validación automática detectó que dos iconos no se
+   distinguían entre sí ni que nueve tarjetas no cabían en una fila; una captura de pantalla, sí.
+8. **Explicar al mando el criterio cuando algo se descarta.** Cuatro sentencias fuera sin decir por
+   qué se leen como un vacío del producto, cuando son un filtro funcionando.
