@@ -254,3 +254,12 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-106-REC-004` | 106 | 2026-08-24 | ARG-106-REC-004 — Predio "El Willy", Casas Grandes, Chihuahua: nuevos restos óseos y osamenta incompleta; acumulado en conflicto entre 56 y ~100 (🔴). Ventana de origen: ARGOS 105 |
 | `ARG-106-SEN-REC-001` | 106 | 2026-08-24 | ARG-106-SEN-REC-001 — FGJE Sonora, Hermosillo: 28a 3d por homicidio y lesiones a 2 personas, juicio oral. PENA COMPUESTA — no sumable. Ventana de origen: ARGOS 105 |
 | `ARG-106-SEN-REC-002` | 106 | 2026-08-24 | ARG-106-SEN-REC-002 — FGE Guanajuato, León: 27a 11m a Christian Gustavo "N" por el feminicidio de su madre. Ventana de origen: ARGOS 105 |
+
+| `ARG-107-001` | 107 | 2026-08-25 | ARG-107-001 — Poza Rica (col. Cazones), Veracruz: ataque armado contra dos reporteros de la fuente policiaca; Elí Martínez sustraído y reportado no localizado, Raymundo Perdomo huyó (🔴) |
+| `ARG-107-002` | 107 | 2026-08-25 | ARG-107-002 — Mazatlán (Central de Autobuses, col. Palos Prietos), Sinaloa: tres hombres agredidos a quemarropa al llegar con equipaje; 1 muerto, 1 herido grave, 1 ileso (🔴) |
+| `ARG-107-003` | 107 | 2026-08-25 | ARG-107-003 — Candela, Coahuila: célula armada intenta ingresar desde Nuevo León; 1 civil abatido y 1 policía estatal herido. FECHA DEL HECHO NO ANCLADA EN RUTA (🟡) |
+| `ARG-107-REC-001` | 107 | 2026-08-25 | ARG-107-REC-001 — Culiacán (col. Lomas de Tamazula), Sinaloa: ataque armado contra una fiesta familiar; Martín (59) muerto, Luis y un menor de 3 años heridos (🔴). Ventana de origen: ARGOS 106 |
+| `ARG-107-REC-002` | 107 | 2026-08-25 | ARG-107-REC-002 — Tecamachalco (barrio de San Juan), Puebla: seis agresores derriban la barda de un domicilio y ejecutan al hombre que se refugiaba dentro (🟡). Ventana de origen: ARGOS 106 |
+| `ARG-107-REC-003` | 107 | 2026-08-25 | ARG-107-REC-003 — Hidalgo, Jalisco y Michoacán: 36 inmuebles cateados, 20 detenidos del CJNG, 7 cortas, 3 largas, 113 vehículos, 1 dron y 1 inhibidor de señal (🟢). Ventana de origen: 21-23 ago |
+| `ARG-107-FE-001` | 107 | 2026-08-25 | ARG-107-FE-001 — FE DE ERRATAS: se retira la cifra de AEI en conflicto 72/172 (Concordia-Culiacán-Mazatlán, Sinaloa) tras tres ediciones sin arbitraje. CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO |
+| `ARG-107-FE-002` | 107 | 2026-08-25 | ARG-107-FE-002 — FE DE ERRATAS: ARGOS 106 pasa de 2 🔴 y 1 🟡 a 3 🔴 y 2 🟡, por ARG-107-REC-001 y ARG-107-REC-002 |
