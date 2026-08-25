@@ -12,6 +12,13 @@ segunda edición siguiente.
 
 ---
 
+## Arranque de la edición siguiente
+
+**`reports/_arranque-ARGOS-107.md`** contiene la orden de arranque para una sesión nueva: verificación
+de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y comandos de construcción.
+**Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
+sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
+
 ## Instrucción editorial permanente — la forma del cartelón
 
 Fijada por el destinatario en ARGOS 105, tras revisar la edición en teléfono. **Rige por encima de
