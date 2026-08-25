@@ -270,6 +270,41 @@ Ninguno de los tres hechos de la ventana llevó aseguramiento con cifra publicad
 un civil abatido pero **el armamento no se publicó**; los otros dos son agresiones sin
 aseguramiento. Las nueve categorías se muestran **en cero y atenuadas**: la ausencia es dato.
 
+### ⚠️ Corrección de presentación aplicada tras revisión del destinatario
+
+**El bloque de tarjetas mostraba nueve ceros mientras la misma edición tabulaba decenas de armas.**
+El cero era metodológicamente correcto —esas armas pertenecen a hechos de ventanas anteriores— pero
+**se leía como un error del producto, no como una distinción**, que es un fallo real: un mando no
+tiene por qué reconstruir la regla para entender la cifra.
+
+**Corrección**: cada tarjeta lleva ahora **dos cifras con significados distintos y rotulados**.
+La **cifra grande** es lo asegurado en hechos de la ventana —lo que alimenta el total nacional del
+corte— y la **línea inferior** es lo publicado durante el corte procedente de hechos anteriores.
+Encima del bloque va la leyenda que las distingue.
+
+**Las cifras de la línea inferior son cálculo propio de ARGOS**, por suma de lo publicado por cada
+autoridad, y se declaran como tal:
+
+| Rubro | Suma | Desglose |
+|---|---|---|
+| Armas cortas | **25** | Veracruz 3 + Tijuana 15 + CJNG 7 |
+| Armas largas | **12** | Veracruz 1 + Tijuana 3 + Los Reyes de Salgado 5 + CJNG 3 |
+| Cargadores | **5** | Los Reyes de Salgado 5 |
+| Cartuchos | **0** | **Ninguna fuente publicó cifra de munición en ningún evento** |
+| Personas detenidas | **326** | CJNG 20 + Veracruz operativo 26 + Veracruz FGE 42 cateos 30 + Tijuana 229 + Romita 8 + Edomex 13 |
+
+**Salvedades que van escritas en el propio cartelón, no solo aquí:**
+
+- **Las 326 personas detenidas no son una cifra homogénea**: **229 corresponden al agregado semanal
+  multidelito de Tijuana**, que no puede vincularse 1:1 con armamento y ni siquiera es
+  exclusivamente de delitos armados. Sumarlas sin decirlo sería el error que la regla de conteo de
+  detenidos prohíbe.
+- **Champotón queda fuera de ambas cifras** por la contradicción no resuelta entre versiones.
+- **Las réplicas no se cuentan como armas**: 1 en Veracruz y 5 en Tijuana quedan fuera.
+- **Cartuchos en cero por partida doble**, y conviene subrayarlo: ni en la ventana ni en lo
+  publicado durante el corte hay **una sola cifra de munición**. Es un vacío de publicación
+  sostenido, no una casualidad de este corte.
+
 ### Eventos anteriores publicados durante el corte — NO INTEGRADOS
 
 Todos con fecha de hecho anterior a la apertura de la ventana. Se documentan porque son lo único
@@ -489,6 +524,7 @@ que se sigue publicando.* El resto del desglose de ese evento **no se altera**.
 | `barrido-regional` ×6 | **Ejecutado como subagentes**, autorizados por el destinatario, los seis en paralelo antes que ningún otro encargo | **32 de 32 entidades consultadas.** Saldada la deuda de cobertura de ARGOS 106. Ciclo C aplicado y declarado |
 | `editor-duplicidad` | **Ejecutado manualmente** (`grep` sobre todos los `-fuentes.md` y sobre `indice-arg-id.md`) | **Ningún hecho de esta edición estaba publicado.** Dos coincidencias léxicas leídas —no dadas por buenas de oído—: «Poza Rica» corresponde a `ARG-102-001` y `ARG-103-ARM-002`, hechos distintos; «inhibidor» corresponde a Huajicori, Nayarit, 12-ago. **Esta segunda mejoró la edición**: la ficha `ARG-107-REC-003` y la conclusión de capacidad técnica se corrigieron para citar el precedente en vez de presentar el hallazgo como inédito |
 | `procedencia-cifras` | **Ejecutado manualmente** | Toda cifra del cartelón tiene fragmento que la sostiene. **Cinco declaradas no integrables**: 72/172 AEI (retirada por fe de erratas), Champotón A/B, agregados de Tijuana y de la FGE Veracruz, y la pena de Jiquilpan. **Una conversión rechazada**: los cargadores «de 20 cartuchos cada uno» del Operativo Muralla son capacidad declarada y no se convierten |
+| Revisión del destinatario | **Tres correcciones aplicadas tras entrega** | (1) **Duplicación**: el megaoperativo del CJNG aparecía en la tabla de la pág. 2 **y** con ficha completa en la pág. 4. Retirado de la tabla, que ahora lo remite a su ficha. (2) **Resumen ejecutivo retirado**: repetía los tres hechos ya desarrollados en sus fichas, contra la regla de no duplicación; la pág. 2 pasa a titularse por lo que realmente contiene. (3) **Las nueve tarjetas en cero** se leían como un error junto a tablas llenas de armas: ahora llevan **doble cifra rotulada**. Ver el apartado de la Sección 1 |
 
 Los dos controles manuales se ejecutaron con el mismo criterio que sus agentes, como en ARGOS 106,
 y **ambos produjeron hallazgos reales** —el precedente del inhibidor y el defecto de identidad de
