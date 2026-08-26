@@ -320,7 +320,13 @@ def tabla_a_ficha(p, con_tarjetas):
     # es una convención del escritorio y es fácil olvidarlo al redactar, así que
     # aquí se atrapa: lo que sobreviva se hace desplazable dentro de su propio
     # contenedor, nunca a costa del cuerpo del documento.
-    p = re.sub(r"<table\b.*?</table>",
+    # La red se aplica SOLO a lo que no envolvió ya la regla anterior. Sin este
+    # deslinde, una tabla que sí traía `table-wrap` acababa con dos
+    # `tabla-scroll` anidados —defecto real, presente en la móvil de ARGOS 107 en
+    # cuatro tablas—: dos contenedores desplazables uno dentro de otro atrapan el
+    # gesto de arrastre en pantalla táctil. El lookbehind descarta la tabla que
+    # ya abre inmediatamente después de su envoltorio.
+    p = re.sub(r'(?<!<div class="tabla-scroll">)<table\b.*?</table>',
                lambda m: '<div class="tabla-scroll">' + m.group(0) + "</div>",
                p, flags=re.S)
     return p
