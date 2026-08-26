@@ -172,6 +172,33 @@ Instrucción editorial permanente del destinatario, vigente:
   `<div class="alerta contexto"><span class="flag">NIVEL: …</span><p>…</p></div>`. Un `sem-item`
   suelto hace fallar la validación de la móvil — le pasó a ARGOS 107.
 
+### Las tres correcciones que el destinatario pidió sobre ARGOS 107
+
+Detectadas al revisar la edición **en teléfono**, ya entregada. **No las repita.**
+
+1. **Sin resumen ejecutivo.** El párrafo de apertura del tablero repetía los hechos que ya
+   desarrollan sus fichas, sin aportar fuente, confianza ni análisis. **Se retiró la sección
+   completa** y la página pasó a titularse por lo único que contenía. Si una página solo tiene una
+   tabla, titúlela por la tabla.
+2. **Ningún hecho con ficha propia entra además en una tabla resumen.** El megaoperativo del CJNG
+   estaba en la tabla de la pág. 2 **y** con ficha completa en la pág. 4. La tabla debe **remitir a
+   la ficha**, no repetir sus cifras.
+3. ⚠️ **La cifra en cero necesita contexto en la propia tarjeta.** Es la corrección de fondo.
+   ARGOS 107 mostró **nueve tarjetas en cero** —correcto: ningún hecho de la ventana llevó
+   aseguramiento— **junto a tablas llenas de armas** de hechos anteriores. Metodológicamente
+   impecable y **ilegible para un mando**: se lee como un error del producto, no como una
+   distinción.
+
+   **Solución adoptada, consérvela**: cada tarjeta lleva **dos cifras rotuladas** —la grande, lo
+   asegurado en hechos de la ventana; la línea inferior, lo publicado durante el corte procedente de
+   hechos anteriores— con una **leyenda encima del bloque** que las distingue. Las de la línea
+   inferior son **cálculo propio de ARGOS** y se declaran como tal, con sus salvedades **escritas en
+   el cartelón**, no solo en el archivo de fuentes: en ARGOS 107, que 229 de las 326 personas
+   detenidas eran un **agregado semanal multidelito** no vinculable 1:1 con armamento.
+
+   **Regla general que se desprende**: cuando una cifra correcta pueda leerse como un error, el
+   defecto es del producto. **Póngale al lado el dato que la explica.**
+
 ---
 
 ## BLOQUE 7 — CONSTRUCCIÓN Y VALIDACIÓN
@@ -226,17 +253,21 @@ decide no corregir, la razón se deja escrita en el archivo de fuentes.
 
 > Genera el ARGOS de hoy. Antes de numerar la edición, lee `reports/_arranque-ARGOS-108.md` y
 > ejecuta su Bloque 0: la numeración sale del archivo, no de lo que veas en la rama local. Después
-> lee `CLAUDE.md`, `reports/_pendientes.md` y el archivo de fuentes de la edición anterior.
+> lee `CLAUDE.md`, `reports/_pendientes.md` y `reports/argos-2026-08-25-fuentes.md`.
 >
 > La ventana abre donde cerró ARGOS 107 (2026-08-25 09:26 CDMX) y cierra a la hora real de arranque,
 > verificada con `TZ=America/Mexico_City date`.
 >
-> Prioridades de esta edición: **localizar al periodista Elí Martínez** (`ARG-107-001`, la línea más
-> perecedera del archivo); saldar los portales que quedaron `NO REVISADA` dentro de entidades ya
-> consultadas; y aplicar y declarar el **Ciclo A (Noroeste + Centro)**.
+> Prioridades: **localizar al periodista Elí Martínez** (`ARG-107-001`, la línea más perecedera del
+> archivo); saldar los portales que quedaron `NO REVISADA` dentro de entidades ya consultadas; y
+> aplicar y declarar el **Ciclo A (Noroeste + Centro)**.
+>
+> Respeta las tres correcciones del Bloque 6: **sin resumen ejecutivo**; **ningún hecho con ficha
+> propia se repite en una tabla resumen**; y **toda cifra en cero lleva al lado el dato que la
+> explica** —las tarjetas de armamento van con doble cifra rotulada—.
 >
 > Genera cartelón **y** versión móvil —esta última con `tools/gen-movil.py`, nunca a mano—,
 > actualiza `_pendientes.md` e `indice-arg-id.md`, escribe el arranque de ARGOS 109, y al cerrar
 > mergea a `main`.
 >
-> Dime si autorizas subagentes para los seis barridos regionales y los tres controles editoriales.
+> Autorizo subagentes para los seis barridos regionales.
