@@ -8,13 +8,13 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 108 (corte 2026-08-26).
+**Última actualización**: ARGOS 109 (corte 2026-08-27).
 
 ---
 
 ## Arranque de la edición siguiente
 
-**`reports/_arranque-ARGOS-109.md`** contiene la orden de arranque para una sesión nueva: verificación
+**`reports/_arranque-ARGOS-110.md`** contiene la orden de arranque para una sesión nueva: verificación
 de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y comandos de construcción.
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
@@ -33,32 +33,6 @@ cualquier otra consideración de formato.**
 | **Explicación al mínimo** | Es un análisis para un mando: hecho, entidad, municipio, fecha, cifras con su desglose, fuente, confianza y ARG-ID. Lo demás sobra |
 
 ---
-
-## ARGOS 107 — lo que abre esta edición
-
-### Seguimientos nuevos
-
-| Desde | Caso | Qué falta | Qué lo cierra |
-|---|---|---|---|
-| ARGOS 107 | **Poza Rica — el periodista sustraído** (`ARG-107-001`) | **Localización de Elí Martínez.** Línea perecedera y de máxima prioridad: la sustracción con vida, a diferencia de un homicidio, deja ventana de rescate. Sin boletín de la FGE de Veracruz ni de la SSP | Un boletín institucional y el cruce de las **tres carpetas de agresiones a reporteros de la fuente policiaca en Poza Rica en 2026** (enero, junio, agosto) por autoría, arma y zona |
-| ARGOS 107 | **Poza Rica — el patrón de gremio** (`ARG-107-001`) | Acreditar o descartar autoría común entre las tres agresiones. Hoy solo consta la coincidencia de gremio, fuente y municipio; **no se afirma vínculo** | La balística cruzada y el tema común de las últimas publicaciones de los tres comunicadores |
-| ARGOS 107 | **Mazatlán — la central de autobuses** (`ARG-107-002`) | **Video de andenes y taquilla** y **manifiestos de pasajeros** de las corridas arribadas entre 16:00 y 17:00 h del 24-ago. Sin ellos no puede probarse el señalamiento previo del arribo | El registro de la terminal. Determina si el eslabón está dentro de la central o en el origen del viaje |
-| ARGOS 107 | **Candela — la fecha** (`ARG-107-003`) | ⚠️ `FECHA DEL HECHO NO ANCLADA EN RUTA`. La URL fija el año 2026, no el día; el 25-ago procede del resumidor. **Se integró a esta edición con la marca** | Una URL con día en la ruta. **Si resulta anterior al 24-ago 09:15, se retira por fe de erratas** del conteo de ARGOS 107 |
-| ARGOS 107 | **Candela — identidad del abatido** (`ARG-107-003`) | Nombre y **plaza de origen** del civil abatido: es lo único que ubicaría la estructura que intentaba cruzar. Armamento asegurado no publicado | Un boletín de la SSP o de la FGE de Coahuila |
-| ARGOS 107 | **El inhibidor de drones, segundo del archivo** (`ARG-107-REC-003`) | **Marca y lote** del inhibidor del megaoperativo. El de Huajicori, Nayarit (12-ago) era de origen chino, marca **Tatusky Technology**. Dos en trece días apuntan a **difusión de la contramedida**, hipótesis sin validar | El desglose técnico del aseguramiento. Si coinciden marca y lote, hay canal de abastecimiento común |
-| ARGOS 107 | **Megaoperativo CJNG — desglose por entidad** (`ARG-107-REC-003`) | Las cifras —20 detenidos, 10 armas, 113 vehículos— son **agregadas para Hidalgo, Jalisco y Michoacán**. Sin desglose no puede medirse el peso de cada plaza | El boletín de la SSPC o de la FGR. También el **estatus legal de los 113 vehículos**, que es la vía patrimonial más directa |
-| ARGOS 107 | **Mazatlán — fracc. Petróleos Mexicanos** | Indicio **real pero no fichado**: ataque atribuido a la noche del 24-ago, **fuente única sin fecha en ruta**, y los titulares mezclan un saldo de jornada con un hecho puntual | Una URL fechada y un saldo deslindado. `NO INTEGRADO — PENDIENTE DE ANCLA FECHADA` |
-| ARGOS 107 | **Chihuahua — carretera a Ojinaga** | «Emboscada con fusiles .50 contra policías estatales»: fuente regional única, sin fecha fijable ni corroboración. **No se ficha ni se descarta** | Una segunda fuente con fecha. Sería 🔴 si se acreditara |
-
-### Deuda de método abierta por ARGOS 107
-
-| Desde | Asunto | Acción pendiente |
-|---|---|---|
-| ARGOS 107 | **La cobertura es por entidad, no por portal** | 32 de 32 entidades **consultadas**, pero dentro de varias quedaron portales sin ver: SSP y policías estatales de Noroeste (5), Occidente (4) y Sureste (6), mesas de paz de Noreste y Sureste, y SEDENA/SEMAR/FGR regionales. **Declarados `NO REVISADA`.** Por la regla de prioridad, encabezan el triaje de ARGOS 108 |
-| ARGOS 107 | **Tres dominios de fiscalía sin confirmar** | **Tlaxcala, Nayarit y Guanajuato**: no se localizó el dominio oficial. Se sustituyó Guanajuato por `boletines.guanajuato.gob.mx`, sustitución declarada. **Hallazgo reutilizable**: el dominio real de Colima es `fgecolima.mx`, no `fiscalia.colima.gob.mx` |
-| ARGOS 107 | **El renglón de Los Reyes de Salgado aparece en dos boletines** | Las mismas cifras (5 largas, 5 cargadores) figuran atribuidas al boletín federal **del 19-ago** (pendiente de ARGOS 104) y al **del 21-23 ago** (barrido de esta edición). **No se cerró el pendiente**: arbitrar sin lectura directa produciría un dato peor. Lo cierra la lectura del boletín |
-| ARGOS 107 | **El Ciclo C rindió defensivamente, no ofensivamente** | Occidente y Sureste encabezaron el triaje judicial y **no produjeron una sentencia integrable**, a diferencia de ARGOS 101 (Durango). Sí evitaron **dos falsos positivos** —la vinculación de Oaxaca del 24-ago, que estaba **dentro de ventana**, y el candidato de Jiquilpan— e inventariaron dominios. **Se registra sin inflarlo.** A ARGOS 108 le toca el **Ciclo A (Noroeste + Centro)** |
-| ARGOS 107 | **Los dos controles editoriales siguen ejecutándose a mano** | `editor-duplicidad` y `procedencia-cifras` se ejecutaron manualmente con el mismo criterio, y **ambos produjeron hallazgos reales**. La autorización de subagentes de esta sesión cubrió los seis barridos; los controles no se invocaron como agentes y así se declara |
 
 ## ARGOS 108 — lo que cierra esta edición
 
@@ -84,11 +58,11 @@ cualquier otra consideración de formato.**
 | ARGOS 108 | **Chilpancingo — el móvil** (`ARG-108-001`) | Tres víctimas **sin capacidad de disputa territorial** —limpiaparabrisas y un vendedor de dulces con discapacidad— en un crucero de alta afluencia. Sin móvil oficial | Determinar si hay cobro de piso a trabajadores informales del crucero: **preguntar en los cruceros contiguos, no en el del hecho** |
 | ARGOS 108 | **Acapulco — la ruta del colectivo** (`ARG-108-003`) | A qué concesión y ruta pertenece la unidad, si esa ruta reportó incremento de cuota y si la base tenía amenaza previa. **El taxi estaba detenido en su base**: descarta ataque de oportunidad | El registro de la concesión y la carpeta de la FGE Guerrero |
 | ARGOS 108 | ⚠️ **Guerrero — lectura conjunta de las dos plazas** | Dos ataques contra población civil desarmada en vía pública, en Chilpancingo y Acapulco, con **un día de diferencia y perfiles de víctima distintos pero la misma lógica de control del espacio público** | Un inventario de puntos fijos de economía informal —cruceros, bases de ruta, tianguis— de ambas ciudades, leído como mapa de blancos de extorsión y no como incidencia dispersa |
-| ARGOS 108 | ⚠️ **Zacatecas — captura institucional del corredor sur** (`ARG-108-006`) | **Dos mandos municipales del mismo corredor detenidos por secuestro agravado en seis meses**: Tlaltenango (4-feb-2026) y Juchipila (25-ago-2026). Pregunta operativa única: **¿la orden de aprehensión de Juchipila deriva de los cateos del 21-ago (`ARG-104-001`), que dejaron 10 detenidos y 2 personas liberadas?** | El número de causa penal. Si es la misma carpeta, la corporación municipal estaba integrada a la estructura. **Revisión preventiva de control de confianza en todo el corredor Juchipila–Tlaltenango–Tepechitlán** |
-| ARGOS 108 | **Tepechitlán — identidad de los cuatro abatidos** (`ARG-108-002`) | Nombres y plaza de origen; **qué armamento se les recogió**, que la autoridad no publicó | Un boletín de la SSP de Zacatecas o de la GN. Cotejo de sus armas con las aseguradas en Juchipila el 21-ago |
+| ARGOS 108 | ⚠️ **REFORMULADO en ARGOS 109**: no se publica causa penal, pero el Fiscal General atribuye **ambas** detenciones al **Plan SAGAZ** (activo desde finales de junio), y la de Juchipila se ejecutó tras **dos cateos propios del 25-ago**, distintos de los del 21-ago. **La lectura «misma carpeta» queda descartada**; el interlocutor es la coordinación SAGAZ. **Zacatecas — captura institucional del corredor sur** (`ARG-108-006`) | **Dos mandos municipales del mismo corredor detenidos por secuestro agravado en seis meses**: Tlaltenango (4-feb-2026) y Juchipila (25-ago-2026). Pregunta operativa única: **¿la orden de aprehensión de Juchipila deriva de los cateos del 21-ago (`ARG-104-001`), que dejaron 10 detenidos y 2 personas liberadas?** | El número de causa penal. Si es la misma carpeta, la corporación municipal estaba integrada a la estructura. **Revisión preventiva de control de confianza en todo el corredor Juchipila–Tlaltenango–Tepechitlán** |
+| ARGOS 108 | ⚠️ **PARCIALMENTE CERRADO en ARGOS 109**: el armamento **no fue publicado por la autoridad** —vacío acreditado, no pendiente de búsqueda—; la identidad sigue abierta. **Tepechitlán — identidad de los cuatro abatidos** (`ARG-108-002`) | Nombres y plaza de origen; **qué armamento se les recogió**, que la autoridad no publicó | Un boletín de la SSP de Zacatecas o de la GN. Cotejo de sus armas con las aseguradas en Juchipila el 21-ago |
 | ARGOS 108 | **Tamaulipas — los talleres de blindaje** (`ARG-108-008`) | **48 «monstruos» inutilizados en 2026 en un solo estado** implica capacidad industrial sostenida. Lo explotable no son los vehículos sino los talleres | **Cruzar los números de serie de los 48 contra reportes de robo de vehículo con violencia del noreste**: convertiría 48 chatarras en 48 carpetas con víctima y trazaría el mapa de talleres y proveedores de placa |
 | ARGOS 108 | **«El Koki» — por qué estaba fuera de plaza** (`ARG-108-007`) | Detenido en la carretera México–Pachuca con plaza en Centro y Nacajuca, Tabasco. ¿Repliegue o expansión al corredor Hidalgo–Valle de México? Identidad de los dos operadores | Con quién iba a reunirse y si la escisión conserva mando en Tabasco. ⚠️ **Deslindar «Pueblo Unido» (Tabasco) de «Pueblos Unidos» (Hidalgo/Michoacán)**: son organizaciones distintas de nombre casi homónimo, y el resumidor ya las mezcló |
-| ARGOS 108 | **San Andrés Tuxtla — quién inició** (`ARG-108-004`) | Clasificado 🟡 **por reserva expresa**. Cifras de 1 policía herido y 5 detenidos, de **fuente única sin confirmación**. SEMAR desplegada tierra adentro, en la sierra de Los Tuxtlas | Un boletín de la FGE o de la SSP de Veracruz. **Una fuente que fije el iniciador obliga a fe de erratas del color** |
+| ARGOS 108 | ✅ **CERRADO en ARGOS 109** — **San Andrés Tuxtla — quién inició** (`ARG-108-004`) | Clasificado 🟡 **por reserva expresa**. Cifras de 1 policía herido y 5 detenidos, de **fuente única sin confirmación**. SEMAR desplegada tierra adentro, en la sierra de Los Tuxtlas | Un boletín de la FGE o de la SSP de Veracruz. **Una fuente que fije el iniciador obliga a fe de erratas del color** |
 | ARGOS 108 | **Candela — identidad de los dos abatidos** (`ARG-108-FE-001`) | Son **dos**, no uno. Identificados preliminarmente como originarios del **Estado de México** y de **Nuevo León**. Faltan nombres | Un boletín de la FGE de Coahuila. Cruzar por número de serie las 2 armas largas contra carpetas de Nuevo León |
 | ARGOS 108 | **Mazatepec — ¿conservaba medidas de protección?** (`ARG-108-REC-001`) | Amenaza electoral documentada en 2024 (manta y ataque en su domicilio) y ejecución en 2026, ya fuera de contienda. **Una amenaza que no caducó al terminar el proceso electoral** | Si se le retiraron las medidas, cuándo y con qué valoración de riesgo. Sin boletín de la Fiscalía de Morelos |
 | ARGOS 108 | **El inhibidor de señal, tercero del archivo** (`ARG-108-SEN-001`) | Tercera aparición tras Huajicori (12-ago, marca **Tatusky Technology**) y el megaoperativo del CJNG (`ARG-107-REC-003`). **Novedad: la resolución de la FGR lo sanciona económicamente**, y la multa mayor de las tres recae sobre quien lo portaba | **Exigir marca y lote en todo aseguramiento de inhibidores**: es el único campo que permitiría cruzar los tres casos |
@@ -108,13 +82,71 @@ cualquier otra consideración de formato.**
 |---|---|---|
 | ARGOS 108 | ⚠️ **El barrido por dominio institucional ya no ve la mayoría de los hechos** | **Cinco de los ocho hechos del corte los aportó el recall nacional del coordinador**, no los seis barridos regionales: Chilpancingo y Acapulco (no los vio Sureste), Tepechitlán y Juchipila (no los vio Noreste). Las regiones declararon correctamente `SIN RESULTADO INDEXADO EN VENTANA` **y era cierto**: ninguna autoridad publicó boletín sobre esos hechos. **Con los portales bloqueados, un barrido organizado por dominio no ve lo que solo publican los medios.** Consecuencia para ARGOS 109: **subir la fracción de presupuesto que cada región gasta en consulta genérica por entidad** y bajar la de `site:` que devuelve boletines viejos |
 | ARGOS 108 | **Cobertura por portal, otra capa** | 32 de 32 entidades consultadas y saldada la deuda nominal de ARGOS 107, pero quedan `NO REVISADA`: SSP de Chihuahua, BC, BCS, Durango, Coahuila, Tamaulipas, SLP, Puebla, Tlaxcala, Nayarit y Tabasco; fiscalías de **Jalisco, Aguascalientes y Nuevo León**; mesas de paz de Noreste, Sureste y Occidente; SEDENA, SEMAR, FGR y ANAM regionales en casi todas las regiones. **Encabezan el triaje de ARGOS 109 por prioridad sobre el ciclo** |
-| ARGOS 108 | **Dominios que siguen sin confirmar** | **Michoacán** (indicio: `fiscaliamichoacan.gob.mx`, no `fge.michoacan.gob.mx`) · **SSP de Nayarit** (probar `ssp.nayarit.gob.mx` y `sspc.nayarit.gob.mx`) · **Guanajuato** (sigue por el agregador `boletines.guanajuato.gob.mx`) · fiscalías de **Sonora y Sinaloa** (no devuelven contenido propio vía `site:`; existe `fiscaliasinaloa.mx`). **Precisado**: Chihuahua es `fiscalia.chihuahua.gob.mx` |
+| ARGOS 108 | ✅ **TRES CERRADOS en ARGOS 109**: Michoacán, SSP Nayarit (`ssypc.nayarit.gob.mx`) y Sinaloa (`fiscaliasinaloa.mx`). Siguen abiertos Guanajuato y Sonora. **Dominios que seguían sin confirmar** | **Michoacán** (indicio: `fiscaliamichoacan.gob.mx`, no `fge.michoacan.gob.mx`) · **SSP de Nayarit** (probar `ssp.nayarit.gob.mx` y `sspc.nayarit.gob.mx`) · **Guanajuato** (sigue por el agregador `boletines.guanajuato.gob.mx`) · fiscalías de **Sonora y Sinaloa** (no devuelven contenido propio vía `site:`; existe `fiscaliasinaloa.mx`). **Precisado**: Chihuahua es `fiscalia.chihuahua.gob.mx` |
 | ARGOS 108 | **El Ciclo A rindió ofensivamente** | Centro localizó **las dos únicas sentencias estatales del corte** (FGE Querétaro, único portal institucional de las 32 que publicó en ventana) y cerró el dominio de Tlaxcala; Occidente cerró el de Nayarit. A diferencia del Ciclo C de ARGOS 107, **la rotación cambió lo que el producto encontró**. **A ARGOS 109 le toca el Ciclo B — Noreste + Golfo** |
 | ARGOS 108 | **Los dos controles editoriales siguen a mano, y siguen produciendo hallazgos** | Tercera edición consecutiva. `editor-duplicidad` interceptó **un doble conteo real** (Ciudad Victoria = `ARG-104-ARM-008`, 7 largas y 18 cargadores) y `procedencia-cifras` retiró **tres cifras inferidas por el redactor** (distancias sin fuente). La autorización de subagentes de esta sesión cubrió solo los seis barridos, y así se declara |
 | ARGOS 108 | ✅ **Defecto del generador móvil, corregido en la herramienta** | `tools/gen-movil.py` envolvía dos veces las tablas que ya traían `table-wrap`, produciendo `<div class="tabla-scroll">` anidados —cuatro en la móvil de ARGOS 107—: dos contenedores desplazables anidados atrapan el gesto táctil. **Se corrigió la red de seguridad con un lookbehind**, no la salida. Verificado: 0 anidamientos |
 | ARGOS 108 | ⚠️ **`gabinetedeseguridad.gob.mx/resultados/`** | **Obligatorio desde el 1 de septiembre: quedan seis días.** Sigue ilegible por acceso directo |
-| ARGOS 108 | **Candidatos vivos que ARGOS 109 debe cerrar** | **Morelos · Cuautla**, extorsión agravada 16a 8m (Luis Ángel «N»): URL sin fecha en la ruta, el «25-ago» es del resumidor. **SSC CDMX**, comunicado 946 (cargadores y 400 cartuchos, GAM): URL sin fecha en la ruta. Ninguno se integró ni se descartó |
+| ARGOS 108 | ✅ **AMBOS CERRADOS en ARGOS 109** (Cuautla retirado por umbral; SSC CDMX descartado por esquema de URL). **Candidatos vivos que ARGOS 109 debía cerrar** | **Morelos · Cuautla**, extorsión agravada 16a 8m (Luis Ángel «N»): URL sin fecha en la ruta, el «25-ago» es del resumidor. **SSC CDMX**, comunicado 946 (cargadores y 400 cartuchos, GAM): URL sin fecha en la ruta. Ninguno se integró ni se descartó |
 | ARGOS 108 | ⚠️ **Michoacán · Jiquilpan reaparece** | «Sentencia por violación equiparada agravada, +11 años»: **mismo tipo de *slug* que hizo caer a ARGOS 107, sin campos individualizadores**. `POSIBLE CASO HOMÓNIMO — NO INTEGRAR HASTA VALIDACIÓN`. No gastar presupuesto sin dos campos coincidentes |
+
+## ARGOS 109 — lo que cierra esta edición
+
+| Cerrado | Cómo |
+|---|---|
+| ✅ **`ARG-108-004` — quién inició en San Andrés Tuxtla** | **RESUELTO CON FUENTE INSTITUCIONAL, y a favor del color ya publicado.** El portal oficial del Gobierno de Veracruz (`/2026/08/26/`) establece que personal de SSP y Ejército **acudió a un reporte vecinal de privación ilegal de la libertad** y que al llegar **«fue recibido con disparos»**. Es el supuesto «la fuerza pública ejecuta una acción y es repelida» → **sostiene 🟡; NO procede fe de erratas de color**. Publicado como `ARG-109-FE-001` |
+| ✅ **`ARG-108-004` — número de detenidos** | **Corregido de 5 a 6**, ahora con fuente institucional en vez de fuente única. Dato nuevo: **rescate con vida de un empresario prestamista de 62 años**, que fue lo que motivó el operativo. Confianza de la ficha: ★★☆☆☆ → ★★★★☆ |
+| ✅ **Candidato vivo — Cuautla, Morelos** | **RETIRADO POR UMBRAL DE FE DE ERRATAS.** Segunda edición sin una sola URL con fecha en la ruta. **Agravante decisivo**: existen al menos otros dos casos de extorsión agravada en Cuautla y Jiutepec con **la pena exacta de 16 años 8 meses**, todos por abreviado. No vuelve a listarse como candidato |
+| ✅ **Candidato vivo — SSC CDMX, comunicado 946** | **DESCARTADO, fuera de ventana.** SSC CDMX **reutiliza el número de comunicado entre años bajo esquemas de URL distintos**: el formato vigente en 2026 es `COM<n>-DD-MM-AAAA`, verificado con un `COM946-02-04-2026` que es otro comunicado, de otro delito, del 2-abr-2026. La evidencia apunta a un hecho anterior a 2026 |
+| ✅ **Las tres fiscalías `NO REVISADA`** | **Jalisco, Aguascalientes y Nuevo León consultadas.** Deuda nominal de fiscalías saldada: 32 de 32 |
+| ✅ **Dominio de la SSP de Nayarit** | **`ssypc.nayarit.gob.mx`.** ⚠️ **Las dos hipótesis heredadas eran falsas**: ni `ssp.nayarit.gob.mx` ni `sspc.nayarit.gob.mx` |
+| ✅ **Dominio de la fiscalía de Michoacán** | **`fiscaliamichoacan.gob.mx` CONFIRMADO**, con subdominios activos `comunicacion.`, `juridico.` y `directorio.` — no `fge.michoacan.gob.mx` |
+| ✅ **Dominio de la fiscalía de Sinaloa** | **`fiscaliasinaloa.mx` CONFIRMADO** (sección «Boletines Informativos») — no `fiscaliasinaloa.gob.mx` |
+| ✅ **Zacatecas — armamento de los cuatro abatidos de Tepechitlán** | **CERRADO COMO VACÍO ACREDITADO, no como pendiente de búsqueda.** Rastreado en cinco coberturas distintas; **ninguna lo reporta**. Queda constatado que **la autoridad no lo publicó**. No gastar más presupuesto salvo que aparezca boletín |
+
+## ARGOS 109 — lo que abre esta edición
+
+### Seguimientos nuevos
+
+| Desde | Caso | Qué falta | Qué lo cierra |
+|---|---|---|---|
+| ARGOS 109 | ⚠️ **Michoacán — el revólver .32 de Tacámbaro** (`ARG-109-001`) | Arsenal **heterogéneo y de aprovisionamiento local**: fusil .223 + arma 9 mm + **revólver .32**, no dotación uniforme de estructura. El revólver es la pieza con mayor probabilidad de **tener propietario registrado** | **Cotejo por número de serie** del .223 y del .32 contra carpetas de robo con violencia de la meseta purépecha. Es la vía de trazabilidad más barata del corte |
+| ARGOS 109 | **Michoacán — el tractocamión de Opopeo** (`ARG-109-001`) | El vehículo incendiado iba **cargado de madera**, en el eje de salida de la producción forestal de la tenencia. Si el bloqueo es represalia, la estructura tiene interés en la **cadena maderera**, no solo en el narcomenudeo que sugieren los envoltorios | El **registro de permisos de aprovechamiento forestal** del corredor Opopeo–Santa Clara, y si el tractocamión estaba en el padrón de transportistas. Falta también identidad y plaza de los 3 detenidos |
+| ARGOS 109 | ⚠️ **Oaxaca — Loxicha: ¿criminal o agrario?** (`ARG-109-002`) | Los impactos en cofre, parabrisas, puerta del copiloto y techo describen **fuego frontal y desde altura**: emboscada preparada con **conocimiento previo del itinerario**, no ataque de oportunidad. Víctimas de **Santa Cruz Loxicha**, hecho en **San Agustín Loxicha** | **Deslindar expresamente** si pertenece a la serie de conflictos agrarios e intercomunitarios de la Sierra Sur o a disputa criminal: **la respuesta institucional que corresponde es distinta**. Falta carpeta, detenidos, número de casquillos e identidad del tercer adulto herido |
+| ARGOS 109 | ⚠️ **Baja California — el canal del aviso de Mexicali** (`ARG-109-003`) | La amenaza llegó al espacio público **por alerta consular extranjera**, y la confirmación mexicana vino **después y en respuesta**. Es anomalía de flujo, no de contenido | **Qué órgano mexicano recibió el aviso y cuándo.** Un canal que informa antes al público extranjero que a la corporación amenazada es problema de coordinación, y se corrige sin gasto |
+| ARGOS 109 | **Baja California — el blanco de Mexicali** (`ARG-109-003`) | Se amenazó a **FGR y Policía Municipal**, no a GN ni Ejército: las dos corporaciones con **carpetas y contacto directo** sobre la plaza. Es coacción sobre expedientes, no proyección territorial | **Qué carpetas de la FGR en Mexicali llegaron a fase crítica en los 15 días previos**; antecedentes de uso real de AEI en el corredor Mexicali–San Luis Río Colorado, para calibrar capacidad y no solo intención. ⚠️ **Vigilar el efecto diversivo**: 450 elementos en el casco institucional descubren el resto de la ciudad |
+| ARGOS 109 | ⚠️ **Puebla/Sinaloa — la red que alojaba a «El Dron»** (`ARG-109-004`) | Un tirador de Culiacán refugiado en la periferia universitaria de Puebla, con **tres sujetos armados dispuestos a enfrentar a agentes federales**. **La estructura que lo alojaba es el objetivo, no el detenido** | **Cotejo de las tres armas por número de serie** contra carpetas de Sinaloa y de Puebla: si el armamento viajó con él es **red de traslado**; si se lo dieron en destino, **red de acogida**. Además: contrato de arrendamiento, titular del servicio eléctrico y padrón vehicular del inmueble. **El segundo tirador sigue prófugo** |
+| ARGOS 109 | **Querétaro — los dos terminales** (`ARG-109-005`) | Cateos simultáneos en **los dos extremos del corredor de la autopista México–Querétaro**: una sola estructura con células en ambos nodos, no dos casos locales. Lo explotable no son las 3 armas, sino **2 teléfonos, 1 tableta y efectivo sin monto** | La **extracción de los dos terminales** acredita comunicación entre ambos domicilios y con un posible tercero no intervenido. Falta **conteo y denominación del efectivo** —la fiscalía publicó «importante cantidad» sin cifra— y la clasificación de las 3 armas |
+| ARGOS 109 | ⚠️ **Tamaulipas — el rancho de Altamira** (`ARG-109-006`) | **Una sola persona detenida para cinco inmuebles y ocho unidades**: la estructura operativa no está detenida. Los **135 ejemplares de fauna exótica** exigen gasto veterinario y alimentario sostenido, que **deja rastro documental donde el combustible no lo deja** | **Facturas de proveedores de carne y forraje, servicios veterinarios, permisos SEMARNAT/UMA**, y **cruce con ANAM**: las especies CITES implican importación, punto aduanal y documento. Es la vía más directa al **propietario real del predio**, que rara vez es el detenido. Falta también titularidad registral y destino del diésel |
+| ARGOS 109 | **Nacional — la fauna exótica como activo** | **Tercera aparición en el archivo**: pantera, tigre y león en el megaoperativo del 21-23 ago; **135 ejemplares** ahora. Deja de ser anécdota | Que la **pregunta por los animales entre en el protocolo de cateo** —origen, permisos, proveedores— y no en la nota de color. Medir cuántos cateos de hidrocarburo o de estructura criminal reportan fauna |
+| ARGOS 109 | ⚠️ **Nacional — la pena tarifada del abreviado** | Al menos **tres sentencias por extorsión agravada en Cuautla y Jiutepec comparten la pena exacta de 16 años 8 meses**, todas por abreviado. **Consecuencia de trazabilidad**: en delitos con alto uso de abreviado, **la pena deja de ser campo individualizador** y no cuenta entre los ≥2 que exige la regla del *slug* | **Medir qué proporción de las condenas por extorsión son procedimientos abreviados**: es deducible de los propios boletines y ninguna fiscalía lo publica. Si el delito que más denuncian los comerciantes se resuelve sistemáticamente por abreviado tarifado, es dato de política criminal |
+
+### Contradicciones y reservas nuevas, sin arbitrar
+
+| Desde | Caso | Detalle |
+|---|---|---|
+| ARGOS 109 | **Michoacán — el herido de Tacámbaro** | Los primeros reportes regionales publicaron **«1 herido y 1 detenido»** sin precisar de qué lado estaba el herido; la versión posterior de la SSP dice **3 detenidos, 2 heridos, y los heridos son los detenidos, con los agentes ilesos**. **Se ficha la versión institucional** y se declara la primera. No se promedian |
+| ARGOS 109 | ⚠️ **Chiapas — Cintalapa de Figueroa** | Agresión contra la Fuerza de Reacción Inmediata Pakal, Ejército y GN: 1 abatido, 1 detenido con arma larga. La nota dice **«a media tarde del jueves»**, y el jueves de esa semana es el **27-ago**, cuya tarde es **posterior al cierre de la ventana**. URL solo ancla `/2026/08/`. `FECHA NO FIJABLE — NO INTEGRAR`. **Lo cierra una URL con día en la ruta**; si resulta del 26-ago por la tarde, entra en ARGOS 110 con su marca |
+| ARGOS 109 | **Guanajuato — «ocho homicidios en cinco horas»** | Indicio real, sin fecha fijable: `paginanueve.com` no la ancla, y `redmetropolitana.com.mx/2026/08/26/` sí la ancla **pero con cifras distintas** (7 hombres y 2 mujeres). `CONTRADICHA — NO SE FUNDEN NI SE INTEGRAN SIN LECTURA DIRECTA` |
+| ARGOS 109 | **Veracruz — Jalapilla, Rafael Delgado** | Ataque a un comerciante ambulante desde tres motocicletas; herido. **Fuente sin fecha en la ruta ni en el titular.** No integrable, no descartado |
+| ARGOS 109 | **Baja California — Tijuana, Zona Centro** | 3 detenidos por homicidio, 2 armas sin desglose. `FRONTERA DE VENTANA — FECHA NO FIJADA`: el «26-ago» solo consta en el resumidor |
+| ARGOS 109 | **Sinaloa — bar de Concordia** | Presunto lanzamiento de artefactos explosivos dentro de un establecimiento. **Solo apareció como fragmento embebido, sin URL propia ni fecha.** Candidato para búsqueda dedicada, no se ficha ni se descarta |
+
+### Deuda de método abierta por ARGOS 109
+
+| Desde | Asunto | Acción pendiente |
+|---|---|---|
+| ARGOS 109 | ✅ **El cambio de reparto de presupuesto funcionó — conservarlo** | Invertido el patrón de ARGOS 108: **4 de 6 hechos los aportaron los barridos regionales** y 2 el recall nacional, cuando en ARGOS 108 fue 3 y 5. **Las cuatro regiones que aportaron hecho lo hicieron por consulta genérica sin `site:`**, no por barrido de dominio. **Mantener el reparto ~60-65 % genérico / ~25 % `site:` / ~10 % judicial**, y **mantener el recall nacional como obligatorio**: aportó 2 hechos y, sobre todo, **interceptó cuatro falsos positivos** que las regiones no vieron |
+| ARGOS 109 | ⚠️ **La deuda de los once portales de SSP no se saldó** | **Ninguno** de los portales de SSP pendientes (Chihuahua, BC, BCS, Durango, Coahuila, Tamaulipas, SLP, Puebla, Tlaxcala, Nayarit, Tabasco) se consultó como portal propio. Es **la deuda más antigua del producto**, abierta desde ARGOS 107. **Encabeza el triaje de ARGOS 110 por prioridad sobre el ciclo** |
+| ARGOS 109 | **Tlaxcala, con cobertura débil** | Solo se cubrió mediante una búsqueda combinada con Hidalgo, sin `site:` dirigido a `fgjtlaxcala.gob.mx` ni a SSP Tlaxcala. **Se declara como equivalente a `NO REVISADA` en la práctica**, aunque formalmente se intentó |
+| ARGOS 109 | **El Ciclo B rindió defensivamente** | No produjo sentencia integrable —como el Ciclo B de ARGOS 105 y a diferencia del Ciclo A de ARGOS 108—. **Sí** resolvió la reserva de `ARG-108-004` con fuente oficial, descartó dos trampas de fecha y acreditó que FGJ Nuevo León no publica en portal. **Se registra sin inflarlo. A ARGOS 110 le toca el Ciclo C — Occidente + Sureste** |
+| ARGOS 109 | ⚠️ **Regla nueva: verificar el esquema de URL del emisor en el año del corte** | Nacida del descarte del comunicado 946 de SSC CDMX. **Un número de comunicado sin fecha en la ruta no identifica un documento**: los emisores reutilizan la numeración entre años y cambian el esquema. Antes de aceptar un candidato así, **verificar cuál es el formato vigente del emisor en el año del corte** |
+| ARGOS 109 | ⚠️ **Regla nueva: la pena no individualiza en delitos con alto uso de abreviado** | Ver el seguimiento de la pena tarifada. Afecta directamente a la regla del *slug* institucional: **la pena exacta deja de contar entre los ≥2 campos individualizadores** cuando el delito se resuelve habitualmente por abreviado |
+| ARGOS 109 | **Los dos controles editoriales siguen a mano, y siguen produciendo hallazgos** | **Cuarta edición consecutiva.** `editor-duplicidad` interceptó el hecho de **Cumbres de Llano Largo**, que iba a publicarse como nuevo siendo la ubicación alternativa ya declarada como contradicción de `ARG-108-003`. `procedencia-cifras` **retiró dos distancias geográficas inferidas por el redactor** —reincidencia del mismo defecto de ARGOS 108— y **obligó a declarar dos sumas propias**. La autorización de subagentes cubrió solo los seis barridos, y así se declara |
+| ARGOS 109 | ⚠️ **Frontera de ventana: cinco de seis hechos** | La proporción más alta desde ARGOS 102. Causa estructural: **ventana corta que abre a media tarde** + fuentes que publican con precisión de día. **Declarado en el cartelón**: los totales de esta edición no son comparables sin más. Si aparece ancla horaria que sitúe alguno antes de las 14:21 del 26-ago, **fe de erratas y retiro del total** |
+| ARGOS 109 | ⚠️ **`gabinetedeseguridad.gob.mx/resultados/` — quedan cinco días** | **Obligatorio desde el 1 de septiembre.** Sigue ilegible por acceso directo. Si el corte de ARGOS 110 o 111 cae en septiembre, **su ausencia es un vacío exigible**, no una limitación heredada, y debe declararse como tal |
+| ARGOS 109 | **Boletín federal: cuarto falso positivo del resumidor** | La triple consulta se ejecutó en las tres formas. El más reciente con URL propia es el del **25 de agosto**; **no existe boletín del 26 ni del 27 con URL verificable**. El resumidor sí afirma contenido del 26-ago sin devolver enlace. **La regla sigue siendo el control correcto y sigue costando tres búsquedas** |
+| ARGOS 109 | ✅ **Defecto de plantilla corregido** | ARGOS 108 traía **dos etiquetas `<body>` consecutivas**. Se corrigió en ARGOS 109 dejando una. **No reintroducirlo**: se hereda al copiar la edición anterior como base |
 
 ## ⚠ ARGOS 106 — DOS HALLAZGOS QUE CAMBIAN LA SERIE
 
@@ -346,31 +378,37 @@ antes de cerrarla. Es lo que hizo aparecer estos cuatro hechos.
 
 ## Cómo arrancar la edición siguiente
 
-**No se transcribe aquí.** La orden de arranque vive en **`reports/_arranque-ARGOS-108.md`**, que se
+**No se transcribe aquí.** La orden de arranque vive en **`reports/_arranque-ARGOS-110.md`**, que se
 escribe al cierre de cada edición y la consume la siguiente. Ese archivo lleva la verificación de
 base previa a numerar, la ventana, la deuda heredada, las trampas ya verificadas y los comandos de
 construcción.
 
-Una sesión nueva arranca leyendo, en este orden: **`_arranque-ARGOS-108.md`** → **`CLAUDE.md`** →
-**este archivo** → **`reports/argos-2026-08-25-fuentes.md`** → **`reports/indice-arg-id.md`**.
+Una sesión nueva arranca leyendo, en este orden: **`_arranque-ARGOS-110.md`** → **`CLAUDE.md`** →
+**este archivo** → **`reports/argos-2026-08-27-fuentes.md`** → **`reports/indice-arg-id.md`**.
 
-### Lo que funcionó en ARGOS 107 y conviene repetir
+### Lo que funcionó en ARGOS 109 y conviene repetir
 
-1. **Lanzar los seis `barrido-regional` en paralelo antes que nada.** 32 de 32 entidades frente a
-   las 5 de 32 de ARGOS 106. Es la diferencia entre un producto con cobertura y uno sin ella.
-2. **Un recall nacional del coordinador, además del de cada región.** Las regiones agotan
-   presupuesto; el coordinador no. De ahí salieron **dos de los tres hechos recuperados**
-   —Tecamachalco y el megaoperativo del CJNG—.
-3. **Leer lo que el `grep` devuelve.** Las dos coincidencias de `editor-duplicidad` parecían ruido y
-   una —el inhibidor de drones de Huajicori, 12-ago— **mejoró una conclusión del cartelón**: el
-   hallazgo dejó de presentarse como inédito y pasó a ser el segundo en trece días.
-4. **Verificar el TÍTULO de la URL institucional, no solo su existencia.** El candidato a sentencia
-   de Jiquilpan tenía respaldo institucional aparente hasta que se leyó el título de la nota:
-   hablaba de **Morelia y Uruapan**. Es el fallo de Coronango repitiéndose, y el control lo atrapó.
-5. **Perseguir la fecha en la ruta hasta el final.** Tres candidatos cayeron o quedaron marcados por
-   esa sola comprobación. Uno —«Operativo Muralla, 9 detenidos y 9 armas largas»— resultó ser del
-   **27 de enero** y habría metido nueve armas largas falsas en el conteo nacional.
-6. **No convertir capacidad declarada en munición.** Los «42 cargadores de 20 cartuchos cada uno» de
-   ese mismo operativo no son 840 cartuchos. La regla del caso de Chiapas sigue rindiendo.
-7. **Declarar `NO REVISADA` con granularidad de portal, no de entidad.** Decir «32 de 32» sin más
-   habría sido cierto y engañoso a la vez.
+1. **`git merge --ff-only origin/main` como primer comando, antes de leer nada.** Tercera edición
+   consecutiva con la rama desactualizada: mostraba `argos-2026-08-24` y no traía su propio archivo
+   de arranque. **El patrón no ha fallado ni una vez en favor del producto.**
+2. **Subir la fracción de consulta genérica y bajar la de `site:`.** Invirtió el resultado de
+   ARGOS 108: **4 de 6 hechos los aportaron los barridos regionales**, y las cuatro regiones que
+   aportaron hecho lo hicieron **por consulta genérica**, no por dominio.
+3. **Mantener el recall nacional aunque los barridos rindan.** Aportó dos hechos y, sobre todo,
+   **interceptó cuatro falsos positivos** que ninguna región vio porque no eran suyos: Luis Moya
+   (cifras de 2024), Tula (febrero), Zanatepec (14-ago) y El Roble/Mazatlán (ya contado en ARGOS 92).
+4. **`grep` al índice antes de fichar, y leer lo que devuelve.** Volvió a resolver lo que la web no:
+   las cifras de El Roble/Mazatlán ya estaban en `ARG-92-002` desde el 9 de agosto.
+5. **Verificar el día de la semana contra el calendario.** Descartó Cintalapa: la nota decía
+   «jueves» y el jueves de esa semana cae **después** del cierre de la ventana. Cuesta cero.
+6. **Comparar la hora publicada contra la apertura de la ventana, no solo la fecha.** Armería,
+   Colima ocurrió a las **12:52** del 26-ago: mismo día, **antes** de las 14:21.
+7. **Desconfiar de un desglose que coincide exactamente con otro evento del archivo.** El
+   «8 largas / 4 cortas» de Durango es idéntico al de Mapimí del 15-ago, y el propio artículo se
+   contradecía.
+8. **Dar prioridad a saldar cobertura sobre mantener el turno del ciclo.** Las tres fiscalías
+   `NO REVISADA` encabezaron el triaje de sus regiones y **quedaron saldadas**.
+9. **Declarar la desviación de presupuesto.** Tres regiones se pasaron y las tres lo dijeron.
+   Se acepta declarado, nunca disimulado.
+10. **Corregir la herramienta, no su salida.** El `<body>` duplicado venía heredado de la plantilla
+    de ARGOS 108 y se corrigió en origen, no parcheando la móvil.
