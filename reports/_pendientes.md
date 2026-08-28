@@ -8,13 +8,13 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 109 (corte 2026-08-27).
+**Última actualización**: ARGOS 110 (corte 2026-08-28).
 
 ---
 
 ## Arranque de la edición siguiente
 
-**`reports/_arranque-ARGOS-110.md`** contiene la orden de arranque para una sesión nueva: verificación
+**`reports/_arranque-ARGOS-111.md`** contiene la orden de arranque para una sesión nueva: verificación
 de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y comandos de construcción.
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
@@ -149,6 +149,71 @@ cualquier otra consideración de formato.**
 | ARGOS 109 | **Boletín federal: cuarto falso positivo del resumidor** | La triple consulta se ejecutó en las tres formas. El más reciente con URL propia es el del **25 de agosto**; **no existe boletín del 26 ni del 27 con URL verificable**. El resumidor sí afirma contenido del 26-ago sin devolver enlace. **La regla sigue siendo el control correcto y sigue costando tres búsquedas** |
 | ARGOS 109 | ⚠️ **Se incumplió la instrucción editorial de no llevar fes de erratas al cartelón** | La edición dedicó su **página 2** a `ARG-109-FE-001` (San Andrés Tuxtla), cuando la instrucción permanente ya decía que las fes de erratas van al archivo de fuentes y a este documento, **nunca al cartelón**. **El destinatario la reiteró al cierre.** Desde ARGOS 110 el cartelón queda en **seis páginas** y las correcciones se registran solo aquí y en el archivo de fuentes, conservando el ARG-ID `-FE-` en `indice-arg-id.md` |
 | ARGOS 109 | ✅ **Defecto de plantilla corregido** | ARGOS 108 traía **dos etiquetas `<body>` consecutivas**. Se corrigió en ARGOS 109 dejando una. **No reintroducirlo**: se hereda al copiar la edición anterior como base |
+
+## ARGOS 110 — lo que cierra esta edición
+
+| Cerrado | Cómo |
+|---|---|
+| ✅ **Candidato vivo — Chiapas, Cintalapa de Figueroa** | **RESUELTO E INTEGRADO como `ARG-110-003`.** Lo cerró exactamente lo que el arranque predijo: **una URL con día en la ruta** (`miguelangelluna.mx/2026/08/27/…`), que fija el hecho en el **jueves 27-ago por la tarde**, dentro de esta ventana. ⚠️ **El resumidor insistió en «26 de agosto» en tres consultas distintas, sin ancla de URL**: se descartó |
+| ✅ **Candidato vivo — Baja California, Tijuana Zona Centro** | **CERRADO, fuera de ventana.** Anclado al **miércoles 26-ago** por `elimparcial.com/tij/policiaca/2026/08/26/`, día de semana verificado. `ARG-110-FE-002` |
+| ✅ **Candidato vivo — Sinaloa, bar de Concordia** | **CERRADO, fuera de ventana.** Anclado al **domingo 23-ago** por `luznoticias.mx/2026-08-23/`, con **6 heridos**. Queda fuera de las ventanas de ARGOS 109 y 110; debió cerrarse antes. `ARG-110-FE-003` |
+| ✅ **Candidato vivo — Veracruz, Jalapilla, Rafael Delgado** | **CERRADO, fuera de ventana.** Anclado al **martes 25-ago** por `golpepolitico.com/2026/08/25/`. `ARG-110-FE-004` |
+| ✅ **Contradicción — Guanajuato, «ocho homicidios en cinco horas»** | **CERRADA SIN ARBITRAR, y correctamente.** El hecho es del **martes 25-ago** (7 hombres y 2 mujeres, `redmetropolitana.com.mx/2026/08/26/`): **fuera de ventana**, de modo que la contradicción de cifra ya no afecta a ningún corte abierto. `ARG-110-FE-005` |
+| ✅ **Boletín federal del 26-ago — corrección a ARGOS 109** | **EXISTE.** ARGOS 109 lo declaró inexistente y lo contabilizó como cuarto falso positivo del resumidor. Se alcanza **por republicadores**: el fallo era **de indexación de `gob.mx`**, no del documento. Es el supuesto exacto que la **tercera forma de la triple consulta** fue escrita para cubrir. `ARG-110-FE-001`. **Se confirma que no existe boletín del 27-ago** |
+| ✅ **Michoacán — Morelia (`ARG-106-REC-002`)** | **CERRADO POR AGOTAMIENTO.** Gastada la única búsqueda autorizada, sin novedad. Décima edición sin moverse. **No volver a listarlo** |
+| ✅ **Deuda de portal — SSP de Tabasco** | **SALDADA, y la deuda era en parte inexistente**: **no tiene subdominio propio**; publica bajo `tabasco.gob.mx/seguridad` |
+| ✅ **Deuda de portal — SSP de Tamaulipas** | **SALDADA por el mismo motivo**: integrada en `tamaulipas.gob.mx/seguridadpublica/`, sin subdominio propio |
+| ✅ **Dominios de SSP de Coahuila, SLP y Durango** | **CONFIRMADOS**: `sspcoahuila.gob.mx` (sin punto), `seguridad.slp.gob.mx`, `seguridad.durango.gob.mx/seccion/boletines/` |
+
+## ARGOS 110 — lo que abre esta edición
+
+### Seguimientos nuevos
+
+| Desde | Caso | Qué falta | Qué lo cierra |
+|---|---|---|---|
+| ARGOS 110 | ⚠️ **Zacatecas — los seis artefactos de la carretera 54** (`ARG-110-001`) | *Seguimiento de mayor prioridad del próximo corte.* **Dos AEI detonados y cuatro más sembrados** no son una emboscada: son una **posición preparada** sobre eje carretero federal. Exige tiempo de colocación, conocimiento del patrón de patrullaje y **capacidad de fabricación o adquisición sostenida** | **Peritaje comparado de iniciadores, contenedores y carga** frente a los AEI empleados el **1 de agosto** en la misma entidad: establece si hay **un único taller abasteciendo el corredor** —objetivo físico localizable— o varios armadores. Falta además **tipo de artefacto, sistema de iniciación, carga y si hubo detenidos**: sin eso no se distingue **fabricación de adquisición** |
+| ARGOS 110 | ⚠️ **Nacional — el blanco se desplaza a procuración de justicia** | **Dos agresiones con explosivos contra fiscalías el 26 y el 27 de agosto**, en entidades sin relación: amenaza contra sedes de la **FGR en Mexicali** y ataque efectivo contra personal de la **FGJEZ en Zacatecas**. En ninguna el blanco fue Ejército, Marina ni GN: **fueron las corporaciones que integran carpetas**. Es coacción sobre expedientes | **Medir la coincidencia entre agresión y fase procesal**: qué carpetas sobre cada plaza llegaron a etapa crítica en los quince días previos. Si el patrón se confirma, la contramedida es **protección de sedes y de personal ministerial**, no despliegue de calle |
+| ARGOS 110 | ⚠️ **Sinaloa — el equipo balístico de Escuinapa** (`ARG-110-002`) | **Cuatro cuerpos con chalecos tácticos**, más **5 chalecos y 7 placas balísticas** asegurados: las dos partes en el mismo escalón de equipamiento. **El equipo de protección no se improvisa y deja factura** | Las placas son **mercancía trazable** —marca, nivel NIJ, lote—: **identificar proveedor y vía de entrada** llega antes al abastecedor que el rastreo balístico. Falta además **identidad y adscripción de los cinco muertos**, y **si los 7 detenidos del Ejército y los 5 de la fiscalía son las mismas personas** — de ello depende cerrar el conteo |
+| ARGOS 110 | ⚠️ **Sinaloa — Escuinapa como plaza de escalamiento de medio** | El municipio acumula en 2026 **fusil, AEI (`ARG-103-REC-001`), coche bomba (junio) y drones armados (julio)**, y esta jornada se libró **dentro del casco urbano**. La progresión de medio es documentada, no hipotética | **Anticipar, no reaccionar**: protocolo antiexplosivos y ruta de evacuación en la cabecera. **El indicador es si el siguiente hecho de Escuinapa incluye AEI en zona habitada** |
+| ARGOS 110 | **Chiapas — el reporte al C5 como posible señuelo** (`ARG-110-003`) | Agresores **ocultos entre la vegetación** esperando a una fuerza que **acudía a un reporte del C5 Escudo Pakal**: espera preparada, no encuentro fortuito | **Trazabilidad de esa llamada —origen, hora, contenido—**: diligencia de coste cero que discrimina denuncia de cebo. Si se confirma el uso del número de emergencia como herramienta de emboscada, **afecta al protocolo de despacho de todas las fuerzas de reacción del país** |
+| ARGOS 110 | **Chiapas — el calibre único de Cintalapa** (`ARG-110-003`) | **Tres armas largas del mismo calibre 7.62 y nueve cargadores abastecidos**: dotación de estructura, no aprovisionamiento local. Se opone al arsenal heterogéneo de Tacámbaro | **Cotejo balístico de los dos AK-47** contra carpetas del corredor Cintalapa–frontera, y **comparación de lote de munición con el «operativo Cuauhtémoc»**, que reporta el mismo calibre en el mismo municipio. Falta identidad del abatido y del detenido, y **origen de los fusiles**: tráfico transfronterizo sur o desvío interno son respuestas distintas |
+| ARGOS 110 | ⚠️ **Michoacán y Guerrero — la disputa forestal es una sola línea** | Se incendia un **tractocamión cargado de madera** en el eje de salida forestal de Opopeo (`ARG-109-001`) y se aniquila a una familia que **se negaba a ceder tierras para explotación forestal** en Totolapan (`ARG-110-REC-001`). **Se ataca el transporte en una entidad y la tenencia de la tierra en la contigua** | **Permisos de aprovechamiento forestal** vigentes o solicitados sobre ambos polígonos en los doce meses previos, **padrón de transportistas del ramo**, y **situación registral y comunal de los predios del Cerro de las Lumbreras**. El despojo deja rastro documental donde el homicidio no lo deja |
+| ARGOS 110 | **Michoacán — Tacámbaro secciona sus accesos** (`ARG-110-004`) | Dos días consecutivos cerrando la vía con fuego, en dos localidades distintas del mismo corredor: **El Pedregoso (26) y Pedernales (27)**. Cambia el blanco, no el método | **Cartografiar los bloqueos por tenencia, no por municipio**: es lo que permite ver si la estructura **secciona el municipio por accesos**, fase previa al control territorial. Falta identidad de la víctima, propiedad de la camioneta y **si la motocicleta asegurada tiene reporte de robo** — única pieza con trazabilidad registral |
+| ARGOS 110 | ⚠️ **Michoacán — reserva de saldo en Pedernales** (`ARG-110-004`) | La SSP confirmó **un muerto**; dos medios regionales elevaron después a **tres**, sin confirmación institucional y **sin precisar dónde aparecieron los otros dos cuerpos** | **Si la FGE confirma tres, el hecho pasa de 🟡 a 🔴 por víctimas múltiples** y el semáforo del corte cambia. Fe de erratas y recuento en ese caso |
+| ARGOS 110 | ⚠️ **Guerrero — El Arenal: sitio de tratamiento, no fosa** (`ARG-110-REC-002`) | **Tambos metálicos y llantas quemadas junto a restos fragmentados** describen destrucción, no enterramiento: implica **uso repetido, permanencia y aprovisionamiento de combustible**. Sin confirmación oficial de que los restos sean humanos | **Titularidad y uso declarado del predio**; **consumo de combustible y de llantas de desecho** en la zona; número mínimo de individuos y cotejo con el banco de perfiles genéticos. Y **si el predio estaba ya señalado por denuncia previa**: un sitio señalado y no procesado es un problema distinto de uno desconocido |
+| ARGOS 110 | ⚠️ **Nacional — la información llega por canales que no son la corporación competente** | **Segundo caso consecutivo.** En Mexicali la amenaza llegó por **alerta consular extranjera**; en El Arenal el sitio lo localizó un **colectivo de búsqueda a partir de una llamada anónima**, seis días después de una reunión con la CIDH | **El indicador a vigilar es el canal, no el hallazgo.** Qué órgano mexicano recibió cada aviso y cuándo. Se corrige sin gasto |
+
+### Seguimientos que ARGOS 110 NO pudo avanzar — se mantienen con su prioridad
+
+| Desde | Caso | Estado tras esta edición |
+|---|---|---|
+| ARGOS 109 | ⚠️ **Puebla/Sinaloa — la red que alojaba a «El Dron»** (`ARG-109-004`) | **SIN AVANCE, por los dos lados, con 11 búsquedas gastadas.** Ninguna fuente publica **cotejo balístico, número de serie ni procedencia** de las tres armas; tampoco arrendamiento, titular del servicio eléctrico ni padrón vehicular. Del lado Sinaloa, ni la fiscalía ni la SSP publicaron carpeta ni novedad sobre el **segundo tirador, que sigue prófugo**. **La pregunta no la contesta el buscador: la contesta un oficio.** ⚠️ **Dos contradicciones nuevas, sin arbitrar**: (a) un resumen afirma que «otro sospechoso referido como El Dron sigue prófugo», lo que choca con la identificación del detenido; (b) `diariocambio.com.mx` atribuye un operativo en Cholula a **«la Tripa», del «comando Tlahuica»**, objetivo distinto — **posible confusión de dos operativos**. **Mantiene su prioridad** |
+| ARGOS 109 | ⚠️ **Tamaulipas — el rancho de Altamira** (`ARG-109-006`) | **SIN AVANCE.** La nota de La Jornada del 28-ago —dentro de ventana— **reitera los datos del 27 sin aportar novedad**. No se localizó **titularidad registral, cruce con ANAM, permisos SEMARNAT/UMA, destino del diésel ni detenidos adicionales**. Los ejemplares quedaron bajo resguardo de **PROFEPA**, dato nuevo menor. **Mantiene su prioridad**: la vía patrimonial de la fauna sigue siendo la más directa al propietario real del predio |
+| ARGOS 109 | ⚠️ **Oaxaca — Loxicha: ¿criminal o agrario?** (`ARG-109-002`) | **SIN AVANCE, y con un señuelo descartado.** La búsqueda devolvió mayoritariamente la emboscada de **Santiago Mitlatongo / Magdalena Jaltepec de noviembre de 2023** —otra región, otro año, otras cifras (9 muertos/4 heridos frente a 2/3)—, **caso homónimo por tema** que se descarta expresamente. Sin pronunciamiento de la FGE Oaxaca, sin carpeta, detenidos ni casquillos |
+| ARGOS 109 | **Querétaro — los dos terminales** (`ARG-109-005`) | **VACÍO ACREDITADO, no de búsqueda.** El boletín de la FGE (`/portal/2026/08/26/`) es el mismo ya fichado: las **tres armas siguen sin clasificación publicada** y el efectivo sigue como «importante cantidad» **sin cifra**. No gastar más presupuesto salvo boletín nuevo |
+| ARGOS 109 | **Michoacán — el revólver .32 de Tacámbaro** (`ARG-109-001`) | **SIN AVANCE.** No se localizó identidad ni plaza de los tres detenidos, cotejo por número de serie ni número de carpeta |
+| ARGOS 109 | **Baja California — el canal del aviso de Mexicali** (`ARG-109-003`) | **SIN AVANCE.** Las fuentes solo repiten que la alerta llegó primero por canal consular/DEA y que la confirmación mexicana fue posterior. **La pregunta de qué órgano mexicano recibió el aviso sigue sin respuesta** |
+| ARGOS 109 | **Zacatecas — corredor Juchipila–Tlaltenango–Tepechitlán** | **SIN NOVEDAD de la coordinación SAGAZ en ventana.** ⚠️ **Pero el ataque de esta edición ocurre en Tabasco, Zacatecas, en el mismo corredor**: el seguimiento se refuerza, no se debilita |
+| ARGOS 109 | **Coahuila — Piedras Negras** | **SIN AVANCE.** Segunda edición sin URL con fecha en la ruta, pese a cuatro fuentes nacionales. ⚠️ **Advertencia nueva de homónimo**: existe otro caso del mismo delito en Coahuila con pena de **12 años**; no se funden |
+
+### Deuda de método abierta por ARGOS 110
+
+| Desde | Asunto | Acción pendiente |
+|---|---|---|
+| ARGOS 110 | ✅ **El recall nacional sigue siendo obligatorio, y esta edición lo demuestra por lo que impidió** | Aportó **2 de los 4 hechos** —**Escuinapa no lo vio el barrido del Noroeste**, que declaró su región sin hallazgos— e **interceptó tres falsos positivos**, el más grave un comunicado **del 17 de marzo de 2023** con dos policías muertos que el barrido del Centro traía como candidato de alto impacto. **Mantener el reparto ~60-65 % genérico y el recall antes de cerrar ningún barrido** |
+| ARGOS 110 | ⚠️ **La deuda de los once portales de SSP: 5 resueltos, y parte de la deuda no existía** | **Al menos dos de los once —Tabasco y Tamaulipas— no tienen subdominio propio**: tres ediciones cargaron con una deuda que en su caso no podía saldarse. **Quedan cuatro con dominio precisado pero no interrogado** (Chihuahua `sspe.`, Nayarit `ssypc.`, más Puebla que solo publica acumulados) y **dos con ambigüedad de dominio abierta**: **Baja California** (`seguridadbc.gob.mx` vs `sspbc.gob.mx`) y **BCS** (`sspbcs.gob.mx` vs `ssbcs.gob.mx`). **También Tlaxcala** (`ssc.tlaxcala.gob.mx` vs `ssctlaxcala.gob.mx`) y **SLP** (`seguridad.slp.gob.mx` vs `sspslp.mx` vs `sitio.sanluis.gob.mx/SSPC/`). **Encabezan el triaje de ARGOS 111 por prioridad sobre el ciclo**: resolver ambigüedad, no redescubrir dominio |
+| ARGOS 110 | ⚠️ **`fecc.fgjtlaxcala.gob.mx`: `NO REVISADA`** | Segunda edición consecutiva con Tlaxcala en cobertura débil. Quedó sin consultar por agotamiento tras el eje de «El Dron» |
+| ARGOS 110 | ⚠️ **Tercera reincidencia: distancias y magnitudes estimadas por el redactor** | `procedencia-cifras` las retiró en ARGOS 108, en 109 y ahora en 110 («a unos quince minutos del poblado»). **Deja de ser descuido.** Causa identificada: el redactor arrastra el detalle de color de la fuente sin filtrarlo. **Regla operativa para el próximo corte: toda expresión de distancia o duración que no proceda de una medición publicada se retira en la primera pasada, no en el control** |
+| ARGOS 110 | ⚠️ **La hora del hecho es el campo que más veces solo existe en el resumidor** | En esta edición, `procedencia-cifras` retiró **la hora «10:00 h» y la ubicación de Escuinapa** por proceder únicamente del resumen del buscador. **La marca de frontera se conserva sin la hora**: es la solución correcta y conviene generalizarla — *una hora sin fragmento citable no fija nada, pero tampoco desfija la frontera* |
+| ARGOS 110 | ⚠️ **El Ciclo C rindió negativamente, y el dato es estructural** | Doce fiscalías recorridas entre Occidente y Sureste, **más de veinte resoluciones condenatorias localizadas, ninguna en ventana**. **Con ventanas de ~20 horas la probabilidad de que una fiscalía publique en esa franja es baja**: el triaje judicial encabezado sigue siendo necesario para que el `SIN DATO` sea demostrable, pero **su rendimiento en sentencias integrables está limitado por la duración de la ventana, no por el orden de búsqueda**. El Ciclo A de ARGOS 108 enmascaró esto al producir una sentencia. **A ARGOS 111 le toca el Ciclo A — Noroeste + Centro**, salvo que la deuda de SSP mande otra cosa |
+| ARGOS 110 | ⚠️ **Veracruz: tercer agregado consecutivo sin desglose del mismo emisor** | 36, luego 46, ahora **55 resoluciones con 16 condenatorias**, todas inservibles: **sin individualización y mezclando sentencias con vinculaciones a proceso e imputaciones**. **Es el defecto de publicación mejor documentado del archivo.** Nunca se ha alcanzado la fuente primaria: solo republicadores con texto idéntico |
+| ARGOS 110 | ⚠️ **Primera edición reciente sin un solo portal institucional publicando en ventana** | ARGOS 109 tuvo al menos la FGE de Querétaro. **Las cuatro fichas de ARGOS 110 se sostienen en fuente institucional por cita más corroboración de medios.** Si se repite, es indicio de que la ventana corta —no el bloqueo— es lo que impide alcanzar boletín |
+| ARGOS 110 | **La frontera de ventana cortó en los dos sentidos, y eso valida la regla** | Cintalapa **entró** porque «media tarde» es posterior a las 10:00; **Totolapan quedó fuera por seis horas** —04:00 h— pese a ser, con **seis muertos**, el hecho de mayor saldo humano de las dos ventanas. **Si se hubiera integrado, el semáforo mostraría cuatro rojos y el nivel de riesgo sería otro.** Se publica como `-REC-`, fuera de todos los totales |
+| ARGOS 110 | ✅ **Los dos controles editoriales a mano, quinta edición consecutiva con hallazgos** | `editor-duplicidad`: tres hallazgos, incluido el deslinde **El Pedregoso / Pedernales**, que iban camino de publicarse como un solo hecho. `procedencia-cifras`: **cuatro cifras retiradas**. La autorización de subagentes cubrió solo los seis barridos, y así se declara |
+| ARGOS 110 | ✅ **Se cumplió la instrucción de no llevar fes de erratas al cartelón** | **Cinco ARG-ID `-FE-` asignados y registrados en `indice-arg-id.md`; ninguno aparece en el cartelón.** El cartelón salió en **seis páginas**, como se ordenó |
+| ARGOS 110 | ⚠️ **`gabinetedeseguridad.gob.mx/resultados/` — quedan cuatro días** | Obligatorio desde el **1 de septiembre**. **Si el corte de ARGOS 111 cae en septiembre, su ausencia es un vacío exigible**, no una limitación heredada |
+
+---
 
 ## ⚠ ARGOS 106 — DOS HALLAZGOS QUE CAMBIAN LA SERIE
 
@@ -380,13 +445,45 @@ antes de cerrarla. Es lo que hizo aparecer estos cuatro hechos.
 
 ## Cómo arrancar la edición siguiente
 
-**No se transcribe aquí.** La orden de arranque vive en **`reports/_arranque-ARGOS-110.md`**, que se
+**No se transcribe aquí.** La orden de arranque vive en **`reports/_arranque-ARGOS-111.md`**, que se
 escribe al cierre de cada edición y la consume la siguiente. Ese archivo lleva la verificación de
 base previa a numerar, la ventana, la deuda heredada, las trampas ya verificadas y los comandos de
 construcción.
 
-Una sesión nueva arranca leyendo, en este orden: **`_arranque-ARGOS-110.md`** → **`CLAUDE.md`** →
-**este archivo** → **`reports/argos-2026-08-27-fuentes.md`** → **`reports/indice-arg-id.md`**.
+Una sesión nueva arranca leyendo, en este orden: **`_arranque-ARGOS-111.md`** → **`CLAUDE.md`** →
+**este archivo** → **`reports/argos-2026-08-28-fuentes.md`** → **`reports/indice-arg-id.md`**.
+
+### Lo que funcionó en ARGOS 110 y conviene repetir
+
+1. **`git merge --ff-only origin/main` como primer comando, antes de leer nada.** **Cuarta edición
+   consecutiva con la rama desactualizada**: mostraba `argos-2026-08-24` y **no traía su propio
+   archivo de arranque**. Tras el *fast-forward*, el estado coincidió **exactamente** con el que el
+   arranque predecía. **El patrón no ha fallado ni una vez en favor del producto.**
+2. **Mantener el reparto ~60-65 % genérico / ~25 % `site:` / ~10 % judicial.** Los cuatro hechos se
+   repartieron **2 barridos / 2 recall**, y **los cuatro llegaron por consulta genérica**.
+3. **El recall nacional, antes de cerrar ningún barrido.** Esta vez su mayor valor fue negativo:
+   **interceptó tres falsos positivos**, el más grave un comunicado **del 17 de marzo de 2023** con
+   dos policías muertos que un barrido traía como candidato de alto impacto. Y **vio Escuinapa, que
+   el barrido de su propia región no vio**.
+4. **`grep` al índice antes de fichar, y leer lo que devuelve.** **Tercera edición consecutiva
+   resolviendo lo que la web no**: interceptó que la detención de «El Dron» publicada el 27-ago
+   **es `ARG-109-004`**, ya fichada.
+5. **Ante dos hechos «parecidos» en el mismo municipio, comparar localidad, fecha y saldo antes de
+   fundirlos.** El Pedregoso (26-ago, 3 detenidos, 0 muertos) y Pedernales (27-ago, 1 muerto, 0
+   detenidos) son **dos hechos**, y una fuente con día en la ruta lo demuestra.
+6. **La fecha en la ruta vence al resumidor, siempre.** Cerró Cintalapa —el resumidor insistió en
+   «26 de agosto» **en tres consultas**, sin ancla— y cerró cuatro candidatos vivos heredados.
+7. **La tercera forma de la triple consulta —título sin `site:`— sigue siendo la que rescata
+   boletines.** Recuperó el boletín federal del 26-ago que ARGOS 109 había dado por inexistente:
+   **el fallo era de indexación, no del documento**.
+8. **Ante dos desgloses del mismo hecho que no cuadran, no elegir el mayor ni promediar.** En
+   Escuinapa se integró el parte con corporación y autoridad receptora nombradas, y el segundo quedó
+   en `POSIBLE DUPLICIDAD`. **Integrar ambos duplicaba el conteo; elegir el mayor lo inflaba.**
+9. **Declarar la desviación de presupuesto.** Cinco regiones alcanzaron el techo y una gastó el doble
+   de lo previsto en el eje prioritario. **Las seis lo dijeron.**
+10. **Cuando una cifra correcta puede leerse como un error, explicarla en el cartelón.** Cero armas
+    cortas con ocho largas, y 22 cartuchos para 38 cargadores: **ambas correctas, ambas explicadas en
+    recuadro**. El verde en cero llevó el suyo en la portada.
 
 ### Lo que funcionó en ARGOS 109 y conviene repetir
 
