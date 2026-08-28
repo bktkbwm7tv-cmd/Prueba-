@@ -250,6 +250,15 @@ Instrucción editorial permanente del destinatario, vigente:
 
 - **Solo el día.** El cartelón publica hechos de su propia ventana. Las recuperaciones van con
   ARG-ID `-REC-`, **ventana de origen declarada** y **fuera de todos los totales**.
+- ⚠️ **SIN FE DE ERRATAS EN EL CARTELÓN. Instrucción del destinatario, reiterada al cierre de
+  ARGOS 109.** No se abre página, sección ni ficha de fe de erratas. **Las correcciones a ediciones
+  anteriores van al archivo de fuentes y a `reports/_pendientes.md`**, que es donde se auditan.
+  No es regla nueva: ya estaba en la instrucción editorial permanente de `_pendientes.md`
+  —«las fes de erratas […] nunca al cartelón»— y **ARGOS 109 la incumplió** dedicándole su
+  página 2. **No lo repita.** Si una corrección es imprescindible para leer una cifra del corte
+  en curso, se resuelve **en una línea dentro de la ficha o de la nota al pie que la use**, nunca
+  como bloque propio. El ARG-ID `-FE-` **se sigue asignando y se sigue registrando en
+  `indice-arg-id.md`**: lo que se retira es su presencia en el cartelón, no su trazabilidad.
 - **Sin «Ejes del día» y sin resumen ejecutivo.** Cada hecho aparece **una sola vez**, en su ficha.
 - **Ningún hecho con ficha propia entra además en una tabla resumen.** La tabla **remite a la ficha**
   —con enlace `#ARG-ID`, como en ARGOS 109—, no repite sus cifras.
@@ -272,6 +281,15 @@ Instrucción editorial permanente del destinatario, vigente:
   use `<div class="alerta contexto"><span class="flag">NIVEL: …</span><p>…</p></div>`.
 - **Los `id` de las fichas** solo deben tener forma de ARG-ID si son un ARG-ID real: el generador
   móvil recoge `<div class="nota" id="…">` como anclas enlazables.
+
+---
+
+### Estructura de páginas que hereda ARGOS 110
+
+ARGOS 109 salió con siete páginas porque la 2 era la fe de erratas. **Al retirarla, el cartelón
+queda en seis**: portada · crimen organizado (I), hechos de alto impacto · crimen organizado (II),
+respuesta institucional · armamento · sentencias · valoración y conclusiones. Si el volumen de
+fichas lo pide, **se reparte entre más páginas: nunca se comprime una tarjeta para que quepa**.
 
 ---
 
@@ -358,9 +376,11 @@ no corregir, la razón se deja escrita en el archivo de fuentes.
 > Conserva el reparto de presupuesto que funcionó: ~60-65 % consulta genérica sin `site:`, y el
 > recall nacional del coordinador **antes** de cerrar ningún barrido.
 >
-> Respeta el Bloque 6: sin resumen ejecutivo; ningún hecho con ficha propia se repite en una tabla
-> resumen; y toda cifra en cero lleva al lado el dato que la explica —las tarjetas de armamento van
-> con doble cifra rotulada—.
+> Respeta el Bloque 6: **sin fe de erratas en el cartelón** —las correcciones a ediciones anteriores
+> van al archivo de fuentes y a `_pendientes.md`, y el ARG-ID `-FE-` se sigue registrando en el
+> índice—; sin resumen ejecutivo; ningún hecho con ficha propia se repite en una tabla resumen; y
+> toda cifra en cero lleva al lado el dato que la explica —las tarjetas de armamento van con doble
+> cifra rotulada—.
 >
 > Genera cartelón **y** versión móvil —esta última con `tools/gen-movil.py`, nunca a mano—,
 > actualiza `_pendientes.md` e `indice-arg-id.md`, escribe el arranque de ARGOS 111, y al cerrar
