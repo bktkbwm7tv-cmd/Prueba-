@@ -1,0 +1,15 @@
+# Base de datos y evidencia: son datos de la instalación, no del repositorio.
+# Ancladas a la raíz: app/datos/ SÍ va al repositorio, ahí viven los catálogos
+# y la geometría de las 32 entidades.
+/datos/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+.ruff_cache/

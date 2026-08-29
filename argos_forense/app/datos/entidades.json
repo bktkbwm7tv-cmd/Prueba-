@@ -1,0 +1,882 @@
+{
+ "fuente_geometria": "angelnmara/geojson (mexicoHigh) — polígonos de las 32 entidades, CRS84",
+ "nota": "centroide y bbox derivados por cálculo propio a partir de esa geometría",
+ "entidades": [
+  {
+   "iso": "MX-AGU",
+   "clave_folio": "AGU",
+   "cve_inegi": "01",
+   "nombre": "Aguascalientes",
+   "nombre_oficial": "Aguascalientes",
+   "capital": "Aguascalientes",
+   "region": "Occidente",
+   "centroide": [
+    21.9776,
+    -102.3839
+   ],
+   "bbox": [
+    21.6245,
+    -102.8714,
+    22.4178,
+    -101.896
+   ],
+   "alias": [
+    "aguascalientes"
+   ]
+  },
+  {
+   "iso": "MX-BCN",
+   "clave_folio": "BCN",
+   "cve_inegi": "02",
+   "nombre": "Baja California",
+   "nombre_oficial": "Baja California",
+   "capital": "Mexicali",
+   "region": "Noroeste",
+   "centroide": [
+    30.559,
+    -115.0934
+   ],
+   "bbox": [
+    27.8791,
+    -118.366,
+    32.7182,
+    -112.5414
+   ],
+   "alias": [
+    "baja california",
+    "bc norte",
+    "mexicali",
+    "tijuana",
+    "ensenada",
+    "tecate",
+    "rosarito"
+   ]
+  },
+  {
+   "iso": "MX-BCS",
+   "clave_folio": "BCS",
+   "cve_inegi": "03",
+   "nombre": "Baja California Sur",
+   "nombre_oficial": "Baja California Sur",
+   "capital": "La Paz",
+   "region": "Noroeste",
+   "centroide": [
+    25.908,
+    -112.04
+   ],
+   "bbox": [
+    18.3381,
+    -115.2162,
+    27.9525,
+    -109.4153
+   ],
+   "alias": [
+    "baja california sur",
+    "bcs",
+    "los cabos",
+    "la paz bcs",
+    "cabo san lucas",
+    "comondu",
+    "loreto",
+    "mulege"
+   ]
+  },
+  {
+   "iso": "MX-CAM",
+   "clave_folio": "CAM",
+   "cve_inegi": "04",
+   "nombre": "Campeche",
+   "nombre_oficial": "Campeche",
+   "capital": "San Francisco de Campeche",
+   "region": "Sureste",
+   "centroide": [
+    18.8294,
+    -90.3042
+   ],
+   "bbox": [
+    17.8144,
+    -92.4681,
+    20.8008,
+    -89.0121
+   ],
+   "alias": [
+    "campeche",
+    "ciudad del carmen",
+    "escarcega"
+   ]
+  },
+  {
+   "iso": "MX-COA",
+   "clave_folio": "COA",
+   "cve_inegi": "05",
+   "nombre": "Coahuila",
+   "nombre_oficial": "Coahuila de Zaragoza",
+   "capital": "Saltillo",
+   "region": "Noreste",
+   "centroide": [
+    27.2854,
+    -102.0965
+   ],
+   "bbox": [
+    24.5182,
+    -104.0313,
+    29.8781,
+    -99.8434
+   ],
+   "alias": [
+    "coahuila",
+    "saltillo",
+    "torreon",
+    "piedras negras",
+    "monclova",
+    "acuna"
+   ]
+  },
+  {
+   "iso": "MX-COL",
+   "clave_folio": "COL",
+   "cve_inegi": "06",
+   "nombre": "Colima",
+   "nombre_oficial": "Colima",
+   "capital": "Colima",
+   "region": "Occidente",
+   "centroide": [
+    19.1409,
+    -103.9217
+   ],
+   "bbox": [
+    18.697,
+    -104.7013,
+    19.5608,
+    -103.4878
+   ],
+   "alias": [
+    "colima",
+    "manzanillo",
+    "tecoman",
+    "villa de alvarez"
+   ]
+  },
+  {
+   "iso": "MX-CHP",
+   "clave_folio": "CHP",
+   "cve_inegi": "07",
+   "nombre": "Chiapas",
+   "nombre_oficial": "Chiapas",
+   "capital": "Tuxtla Gutiérrez",
+   "region": "Pacífico Sur",
+   "centroide": [
+    16.4909,
+    -92.4754
+   ],
+   "bbox": [
+    14.5347,
+    -94.157,
+    17.9738,
+    -90.3932
+   ],
+   "alias": [
+    "chiapas",
+    "tuxtla",
+    "tapachula",
+    "san cristobal de las casas",
+    "comitan",
+    "palenque"
+   ]
+  },
+  {
+   "iso": "MX-CHH",
+   "clave_folio": "CHH",
+   "cve_inegi": "08",
+   "nombre": "Chihuahua",
+   "nombre_oficial": "Chihuahua",
+   "capital": "Chihuahua",
+   "region": "Noroeste",
+   "centroide": [
+    28.8183,
+    -106.4541
+   ],
+   "bbox": [
+    25.5946,
+    -109.0308,
+    31.7844,
+    -103.3854
+   ],
+   "alias": [
+    "chihuahua",
+    "ciudad juarez",
+    "cd juarez",
+    "juarez chihuahua",
+    "parral",
+    "cuauhtemoc chihuahua"
+   ]
+  },
+  {
+   "iso": "MX-CMX",
+   "clave_folio": "CMX",
+   "cve_inegi": "09",
+   "nombre": "Ciudad de México",
+   "nombre_oficial": "Ciudad de México",
+   "capital": "Ciudad de México",
+   "region": "Centro",
+   "centroide": [
+    19.2378,
+    -99.0876
+   ],
+   "bbox": [
+    19.0284,
+    -99.3255,
+    19.5293,
+    -98.854
+   ],
+   "alias": [
+    "ciudad de mexico",
+    "cdmx",
+    "distrito federal",
+    "iztapalapa",
+    "gustavo a madero",
+    "tlahuac",
+    "xochimilco",
+    "alvaro obregon"
+   ]
+  },
+  {
+   "iso": "MX-DUR",
+   "clave_folio": "DUR",
+   "cve_inegi": "10",
+   "nombre": "Durango",
+   "nombre_oficial": "Durango",
+   "capital": "Victoria de Durango",
+   "region": "Noroeste",
+   "centroide": [
+    24.9019,
+    -104.9855
+   ],
+   "bbox": [
+    22.3023,
+    -107.2694,
+    26.8395,
+    -102.5385
+   ],
+   "alias": [
+    "durango",
+    "gomez palacio",
+    "lerdo",
+    "el mezquital"
+   ]
+  },
+  {
+   "iso": "MX-GUA",
+   "clave_folio": "GUA",
+   "cve_inegi": "11",
+   "nombre": "Guanajuato",
+   "nombre_oficial": "Guanajuato",
+   "capital": "Guanajuato",
+   "region": "Occidente",
+   "centroide": [
+    20.8984,
+    -101.0372
+   ],
+   "bbox": [
+    19.9192,
+    -102.1342,
+    21.8569,
+    -99.713
+   ],
+   "alias": [
+    "guanajuato",
+    "leon guanajuato",
+    "irapuato",
+    "celaya",
+    "salamanca",
+    "silao",
+    "apaseo"
+   ]
+  },
+  {
+   "iso": "MX-GRO",
+   "clave_folio": "GRO",
+   "cve_inegi": "12",
+   "nombre": "Guerrero",
+   "nombre_oficial": "Guerrero",
+   "capital": "Chilpancingo",
+   "region": "Pacífico Sur",
+   "centroide": [
+    17.6658,
+    -99.8787
+   ],
+   "bbox": [
+    16.3192,
+    -102.1859,
+    19.0603,
+    -98.0217
+   ],
+   "alias": [
+    "guerrero",
+    "acapulco",
+    "chilpancingo",
+    "iguala",
+    "zihuatanejo",
+    "tierra caliente guerrero",
+    "chilapa"
+   ]
+  },
+  {
+   "iso": "MX-HID",
+   "clave_folio": "HID",
+   "cve_inegi": "13",
+   "nombre": "Hidalgo",
+   "nombre_oficial": "Hidalgo",
+   "capital": "Pachuca",
+   "region": "Centro",
+   "centroide": [
+    20.4834,
+    -98.8577
+   ],
+   "bbox": [
+    19.5501,
+    -99.8622,
+    21.412,
+    -97.9352
+   ],
+   "alias": [
+    "hidalgo",
+    "pachuca",
+    "tula",
+    "tulancingo",
+    "huejutla"
+   ]
+  },
+  {
+   "iso": "MX-JAL",
+   "clave_folio": "JAL",
+   "cve_inegi": "14",
+   "nombre": "Jalisco",
+   "nombre_oficial": "Jalisco",
+   "capital": "Guadalajara",
+   "region": "Occidente",
+   "centroide": [
+    20.5577,
+    -103.6277
+   ],
+   "bbox": [
+    18.9569,
+    -105.695,
+    22.6675,
+    -101.5473
+   ],
+   "alias": [
+    "jalisco",
+    "guadalajara",
+    "zapopan",
+    "tlaquepaque",
+    "tonala",
+    "tlajomulco",
+    "puerto vallarta",
+    "lagos de moreno",
+    "el salto jalisco"
+   ]
+  },
+  {
+   "iso": "MX-MEX",
+   "clave_folio": "MEX",
+   "cve_inegi": "15",
+   "nombre": "Estado de México",
+   "nombre_oficial": "México",
+   "capital": "Toluca",
+   "region": "Centro",
+   "centroide": [
+    19.3405,
+    -99.6273
+   ],
+   "bbox": [
+    18.3468,
+    -100.4791,
+    20.3071,
+    -98.5468
+   ],
+   "alias": [
+    "estado de mexico",
+    "edomex",
+    "edo de mexico",
+    "edo mex",
+    "toluca",
+    "ecatepec",
+    "nezahualcoyotl",
+    "naucalpan",
+    "tlalnepantla",
+    "chalco",
+    "tecamac"
+   ]
+  },
+  {
+   "iso": "MX-MIC",
+   "clave_folio": "MIC",
+   "cve_inegi": "16",
+   "nombre": "Michoacán",
+   "nombre_oficial": "Michoacán de Ocampo",
+   "capital": "Morelia",
+   "region": "Occidente",
+   "centroide": [
+    19.1999,
+    -101.8846
+   ],
+   "bbox": [
+    17.9144,
+    -103.7473,
+    20.3724,
+    -100.0936
+   ],
+   "alias": [
+    "michoacan",
+    "morelia",
+    "uruapan",
+    "zamora michoacan",
+    "apatzingan",
+    "lazaro cardenas michoacan",
+    "zitacuaro",
+    "aguililla"
+   ]
+  },
+  {
+   "iso": "MX-MOR",
+   "clave_folio": "MOR",
+   "cve_inegi": "17",
+   "nombre": "Morelos",
+   "nombre_oficial": "Morelos",
+   "capital": "Cuernavaca",
+   "region": "Centro",
+   "centroide": [
+    18.7326,
+    -99.007
+   ],
+   "bbox": [
+    18.3472,
+    -99.4704,
+    19.0743,
+    -98.5468
+   ],
+   "alias": [
+    "morelos",
+    "cuernavaca",
+    "cuautla",
+    "jiutepec",
+    "temixco",
+    "yautepec"
+   ]
+  },
+  {
+   "iso": "MX-NAY",
+   "clave_folio": "NAY",
+   "cve_inegi": "18",
+   "nombre": "Nayarit",
+   "nombre_oficial": "Nayarit",
+   "capital": "Tepic",
+   "region": "Occidente",
+   "centroide": [
+    21.7805,
+    -104.8368
+   ],
+   "bbox": [
+    20.5907,
+    -106.6883,
+    23.0453,
+    -103.8009
+   ],
+   "alias": [
+    "nayarit",
+    "tepic",
+    "bahia de banderas",
+    "santiago ixcuintla",
+    "huajicori",
+    "acaponeta"
+   ]
+  },
+  {
+   "iso": "MX-NLE",
+   "clave_folio": "NLE",
+   "cve_inegi": "19",
+   "nombre": "Nuevo León",
+   "nombre_oficial": "Nuevo León",
+   "capital": "Monterrey",
+   "region": "Noreste",
+   "centroide": [
+    25.5802,
+    -99.9971
+   ],
+   "bbox": [
+    23.1723,
+    -101.2608,
+    27.7713,
+    -98.4149
+   ],
+   "alias": [
+    "nuevo leon",
+    "monterrey",
+    "guadalupe nuevo leon",
+    "apodaca",
+    "escobedo",
+    "juarez nuevo leon",
+    "cadereyta",
+    "garcia nuevo leon"
+   ]
+  },
+  {
+   "iso": "MX-OAX",
+   "clave_folio": "OAX",
+   "cve_inegi": "20",
+   "nombre": "Oaxaca",
+   "nombre_oficial": "Oaxaca",
+   "capital": "Oaxaca de Juárez",
+   "region": "Pacífico Sur",
+   "centroide": [
+    16.9556,
+    -96.4386
+   ],
+   "bbox": [
+    15.6579,
+    -98.5559,
+    18.6332,
+    -93.8739
+   ],
+   "alias": [
+    "oaxaca",
+    "salina cruz",
+    "juchitan",
+    "tuxtepec",
+    "huatulco",
+    "istmo de tehuantepec"
+   ]
+  },
+  {
+   "iso": "MX-PUE",
+   "clave_folio": "PUE",
+   "cve_inegi": "21",
+   "nombre": "Puebla",
+   "nombre_oficial": "Puebla",
+   "capital": "Puebla de Zaragoza",
+   "region": "Centro",
+   "centroide": [
+    19.0375,
+    -97.8161
+   ],
+   "bbox": [
+    17.9101,
+    -98.9743,
+    20.852,
+    -96.6487
+   ],
+   "alias": [
+    "puebla",
+    "tehuacan",
+    "san martin texmelucan",
+    "atlixco",
+    "coronango",
+    "amozoc"
+   ]
+  },
+  {
+   "iso": "MX-QUE",
+   "clave_folio": "QUE",
+   "cve_inegi": "22",
+   "nombre": "Querétaro",
+   "nombre_oficial": "Querétaro",
+   "capital": "Santiago de Querétaro",
+   "region": "Occidente",
+   "centroide": [
+    20.8409,
+    -99.8777
+   ],
+   "bbox": [
+    20.0438,
+    -100.584,
+    21.5849,
+    -99.0424
+   ],
+   "alias": [
+    "queretaro",
+    "san juan del rio",
+    "el marques",
+    "corregidora"
+   ]
+  },
+  {
+   "iso": "MX-ROO",
+   "clave_folio": "ROO",
+   "cve_inegi": "23",
+   "nombre": "Quintana Roo",
+   "nombre_oficial": "Quintana Roo",
+   "capital": "Chetumal",
+   "region": "Sureste",
+   "centroide": [
+    19.6602,
+    -88.1328
+   ],
+   "bbox": [
+    17.867,
+    -89.4154,
+    21.5902,
+    -86.7237
+   ],
+   "alias": [
+    "quintana roo",
+    "cancun",
+    "chetumal",
+    "playa del carmen",
+    "solidaridad quintana roo",
+    "tulum",
+    "cozumel",
+    "benito juarez quintana roo"
+   ]
+  },
+  {
+   "iso": "MX-SLP",
+   "clave_folio": "SLP",
+   "cve_inegi": "24",
+   "nombre": "San Luis Potosí",
+   "nombre_oficial": "San Luis Potosí",
+   "capital": "San Luis Potosí",
+   "region": "Noreste",
+   "centroide": [
+    22.6058,
+    -100.4516
+   ],
+   "bbox": [
+    21.1907,
+    -102.2893,
+    24.5395,
+    -98.3332
+   ],
+   "alias": [
+    "san luis potosi",
+    "slp",
+    "ciudad valles",
+    "matehuala",
+    "soledad de graciano"
+   ]
+  },
+  {
+   "iso": "MX-SIN",
+   "clave_folio": "SIN",
+   "cve_inegi": "25",
+   "nombre": "Sinaloa",
+   "nombre_oficial": "Sinaloa",
+   "capital": "Culiacán",
+   "region": "Noroeste",
+   "centroide": [
+    24.9927,
+    -107.489
+   ],
+   "bbox": [
+    22.4733,
+    -109.4443,
+    27.0409,
+    -105.3975
+   ],
+   "alias": [
+    "sinaloa",
+    "culiacan",
+    "mazatlan",
+    "los mochis",
+    "ahome",
+    "guasave",
+    "navolato",
+    "badiraguato"
+   ]
+  },
+  {
+   "iso": "MX-SON",
+   "clave_folio": "SON",
+   "cve_inegi": "26",
+   "nombre": "Sonora",
+   "nombre_oficial": "Sonora",
+   "capital": "Hermosillo",
+   "region": "Noroeste",
+   "centroide": [
+    29.6871,
+    -110.7482
+   ],
+   "bbox": [
+    26.3008,
+    -115.038,
+    32.4955,
+    -108.3289
+   ],
+   "alias": [
+    "sonora",
+    "hermosillo",
+    "cajeme",
+    "ciudad obregon",
+    "nogales",
+    "caborca",
+    "guaymas",
+    "san luis rio colorado",
+    "empalme"
+   ]
+  },
+  {
+   "iso": "MX-TAB",
+   "clave_folio": "TAB",
+   "cve_inegi": "27",
+   "nombre": "Tabasco",
+   "nombre_oficial": "Tabasco",
+   "capital": "Villahermosa",
+   "region": "Golfo",
+   "centroide": [
+    17.932,
+    -92.6179
+   ],
+   "bbox": [
+    17.2526,
+    -94.1284,
+    18.6497,
+    -90.9806
+   ],
+   "alias": [
+    "tabasco",
+    "villahermosa",
+    "cardenas tabasco",
+    "comalcalco",
+    "macuspana"
+   ]
+  },
+  {
+   "iso": "MX-TAM",
+   "clave_folio": "TAM",
+   "cve_inegi": "28",
+   "nombre": "Tamaulipas",
+   "nombre_oficial": "Tamaulipas",
+   "capital": "Ciudad Victoria",
+   "region": "Noreste",
+   "centroide": [
+    24.3001,
+    -98.6757
+   ],
+   "bbox": [
+    22.1975,
+    -100.1217,
+    27.668,
+    -97.1439
+   ],
+   "alias": [
+    "tamaulipas",
+    "reynosa",
+    "matamoros",
+    "nuevo laredo",
+    "tampico",
+    "ciudad victoria",
+    "altamira",
+    "san fernando tamaulipas"
+   ]
+  },
+  {
+   "iso": "MX-TLA",
+   "clave_folio": "TLA",
+   "cve_inegi": "29",
+   "nombre": "Tlaxcala",
+   "nombre_oficial": "Tlaxcala",
+   "capital": "Tlaxcala de Xicohténcatl",
+   "region": "Centro",
+   "centroide": [
+    19.4526,
+    -98.0835
+   ],
+   "bbox": [
+    19.1376,
+    -98.6747,
+    19.7632,
+    -97.5468
+   ],
+   "alias": [
+    "tlaxcala",
+    "apizaco",
+    "huamantla",
+    "san pablo del monte"
+   ]
+  },
+  {
+   "iso": "MX-VER",
+   "clave_folio": "VER",
+   "cve_inegi": "30",
+   "nombre": "Veracruz",
+   "nombre_oficial": "Veracruz de Ignacio de la Llave",
+   "capital": "Xalapa",
+   "region": "Golfo",
+   "centroide": [
+    19.3402,
+    -96.3724
+   ],
+   "bbox": [
+    17.1516,
+    -98.7115,
+    22.4535,
+    -93.6096
+   ],
+   "alias": [
+    "veracruz",
+    "xalapa",
+    "jalapa",
+    "coatzacoalcos",
+    "poza rica",
+    "cordoba veracruz",
+    "orizaba",
+    "minatitlan",
+    "tuxpan",
+    "boca del rio"
+   ]
+  },
+  {
+   "iso": "MX-YUC",
+   "clave_folio": "YUC",
+   "cve_inegi": "31",
+   "nombre": "Yucatán",
+   "nombre_oficial": "Yucatán",
+   "capital": "Mérida",
+   "region": "Sureste",
+   "centroide": [
+    20.7798,
+    -88.9272
+   ],
+   "bbox": [
+    19.6511,
+    -90.4159,
+    21.6245,
+    -87.5256
+   ],
+   "alias": [
+    "yucatan",
+    "merida",
+    "progreso yucatan",
+    "valladolid yucatan",
+    "tizimin"
+   ]
+  },
+  {
+   "iso": "MX-ZAC",
+   "clave_folio": "ZAC",
+   "cve_inegi": "32",
+   "nombre": "Zacatecas",
+   "nombre_oficial": "Zacatecas",
+   "capital": "Zacatecas",
+   "region": "Occidente",
+   "centroide": [
+    23.2664,
+    -102.7088
+   ],
+   "bbox": [
+    20.9994,
+    -104.3632,
+    25.1477,
+    -100.8323
+   ],
+   "alias": [
+    "zacatecas",
+    "fresnillo",
+    "guadalupe zacatecas",
+    "jerez",
+    "sombrerete",
+    "pinos zacatecas"
+   ]
+  }
+ ]
+}

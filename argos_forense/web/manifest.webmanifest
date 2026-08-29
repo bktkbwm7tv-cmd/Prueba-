@@ -1,0 +1,12 @@
+{
+  "name": "ARGOS FORENSE",
+  "short_name": "ARGOS F",
+  "description": "Rastreo nacional OSINT de fosas clandestinas, campamentos y casas de seguridad.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#070d12",
+  "theme_color": "#070d12",
+  "lang": "es-MX",
+  "categories": ["utilities", "productivity"]
+}

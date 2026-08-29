@@ -1,0 +1,20 @@
+{
+ "nota": "Semilla del módulo COLECTIVOS (§7, nivel 5). Todos los registros nacen con estatus SIN VERIFICAR y sin páginas públicas: el sistema no inventa URLs de redes sociales. El analista captura y confirma nombre, entidad, municipio base y páginas desde el módulo Colectivos o por POST /api/collectives, y ese acto queda en la bitácora. Conforme a §20, este catálogo NUNCA almacena domicilios ni teléfonos de colectivos ni de familias: sólo páginas públicas.",
+ "advertencia_operativa": "Un reporte de colectivo es un REPORTE DE COLECTIVO y no una CONFIRMACIÓN INSTITUCIONAL. El sistema mantiene esa distinción en cada fuente ligada a un evento y en el cálculo del nivel de corroboración (§11): un evento sostenido sólo por colectivos queda en nivel D.",
+ "colectivos": [
+  {"nombre": "Madres Buscadoras de Sonora", "entidad_iso": "MX-SON", "municipio_base": "Hermosillo"},
+  {"nombre": "Guerreras Buscadoras de Sonora", "entidad_iso": "MX-SON", "municipio_base": null},
+  {"nombre": "Rastreadoras de El Fuerte", "entidad_iso": "MX-SIN", "municipio_base": "El Fuerte"},
+  {"nombre": "Sabuesos Guerreras", "entidad_iso": "MX-SIN", "municipio_base": "Culiacán"},
+  {"nombre": "Colectivo Solecito de Veracruz", "entidad_iso": "MX-VER", "municipio_base": "Veracruz"},
+  {"nombre": "Fuerzas Unidas por Nuestros Desaparecidos en Nuevo León (FUNDENL)", "entidad_iso": "MX-NLE", "municipio_base": "Monterrey"},
+  {"nombre": "Fuerzas Unidas por Nuestros Desaparecidos en Coahuila (FUUNDEC)", "entidad_iso": "MX-COA", "municipio_base": "Torreón"},
+  {"nombre": "Familias Unidas por Nuestros Desaparecidos Jalisco (FUNDEJ)", "entidad_iso": "MX-JAL", "municipio_base": "Guadalajara"},
+  {"nombre": "Por Amor a Ellxs", "entidad_iso": "MX-JAL", "municipio_base": "Guadalajara"},
+  {"nombre": "Hasta Encontrarte", "entidad_iso": "MX-GUA", "municipio_base": "Irapuato"},
+  {"nombre": "Regresando a Casa Morelos", "entidad_iso": "MX-MOR", "municipio_base": "Cuernavaca"},
+  {"nombre": "Voz de los Desaparecidos en Puebla", "entidad_iso": "MX-PUE", "municipio_base": "Puebla"},
+  {"nombre": "Movimiento por Nuestros Desaparecidos en México", "entidad_iso": null, "municipio_base": null},
+  {"nombre": "Red de Enlaces Nacionales", "entidad_iso": null, "municipio_base": null}
+ ]
+}

@@ -1,0 +1,13 @@
+# ARGOS FORENSE — dependencias
+fastapi>=0.110
+uvicorn[standard]>=0.27
+apscheduler>=3.10
+requests>=2.31
+beautifulsoup4>=4.12
+feedparser>=6.0
+reportlab>=4.0
+# Opcional: captura de página para evidencia digital (§15).
+# Si no está instalado, el sistema registra CAPTURA_NO_DISPONIBLE y sigue.
+# playwright>=1.40
+# Opcional: sólo para la migración a PostgreSQL/PostGIS (§1).
+# psycopg[binary]>=3.1
