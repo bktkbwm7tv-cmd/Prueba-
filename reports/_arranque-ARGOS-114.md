@@ -299,6 +299,17 @@ resultado indexado + 1 vacío acreditado (Tlaxcala) + 0 no revisadas = 32**.
 
 Instrucción editorial permanente del destinatario, vigente:
 
+- ⚠️ **CINCO LÍNEAS. ES LA INSTRUCCIÓN MÁS RECIENTE Y LA MÁS ESTRICTA.** Dada por el destinatario
+  tras revisar ARGOS 113 **en teléfono**: *«hay mucho texto, quita todo eso; los análisis ARGOS
+  redúcelos a 5 líneas; recuerda que es para mandos»*. **Máximo cinco líneas** en cada **Explotación
+  ARGOS** (numeradas 1. a 5.), en cada **recuadro `alerta contexto`** y en la **Valoración**. La
+  portada lleva **UN SOLO recuadro**, «LO QUE DEBE SABER EL MANDO», con los cinco puntos del corte.
+  **«Hecho confirmado» va en registro telegráfico** —fecha · lugar · corporación · cifras · reservas,
+  separado por `·`—, no en prosa. **«Corroboración» es una lista de emisores por tipo.**
+  ⚠️ **Nunca se recortan cifras, fechas, municipios, corporaciones, ARG-ID, confianza, fuentes,
+  deslindes ni marcas de reserva. Se recorta la prosa, no el dato.** Está fijado en `CLAUDE.md`.
+  **Compruébelo con un contador de `<br>` antes de publicar.** ARGOS 113 pasó de 146 KB a 111 KB de
+  escritorio aplicándolo, sin perder un solo dato.
 - **Solo el día.** El cartelón publica hechos de su propia ventana. Las recuperaciones van con
   ARG-ID `-REC-`, **ventana de origen declarada** y **fuera de todos los totales** — incluido el
   semáforo, el radar y el mapa. **ARGOS 113 lo aplicó**: `ARG-113-REC-001` **no figura en el arreglo

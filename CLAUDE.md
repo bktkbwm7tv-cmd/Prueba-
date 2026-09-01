@@ -928,6 +928,37 @@ Excepciones, que son de trazabilidad y no de opinión, y deben ser breves: la **
 ventana** de cada ficha, la **advertencia de comparabilidad**, la **limitación por bloqueo de
 egreso**, las **tres casillas de cobertura**, los **deslindes de duplicidad** y la **fe de erratas**.
 
+## Límite de extensión — el cartelón es telegráfico
+
+Versión 1.0 — instrucción editorial directa del destinatario, dada tras revisar ARGOS 113 en teléfono.
+**Rige por encima de cualquier otra consideración de redacción.**
+
+**El destinatario es un mando. Lee en el teléfono y decide con lo que ve en pantalla.** Un párrafo de
+quince líneas no se lee: se salta. **Un dato que no se lee no existe.**
+
+Reglas duras:
+
+1. **Todo apartado «Explotación ARGOS» tiene un máximo de CINCO líneas**, numeradas `1.` a `5.`
+   Una idea por línea. Si sobra algo, va al archivo de fuentes.
+2. **Todo recuadro `alerta contexto` tiene un máximo de CINCO líneas.** La portada lleva **un solo
+   recuadro**, titulado «LO QUE DEBE SABER EL MANDO», con los cinco puntos del corte. No tres
+   recuadros con el mismo argumento reescrito.
+3. **La Valoración ARGOS son CINCO líneas numeradas.** Aplica la metodología de riesgo y remite; no
+   narra.
+4. **«Hecho confirmado» se escribe en registro telegráfico**: fecha · lugar · corporación · cifras ·
+   marcas de reserva. Datos separados por `·`, no prosa. **Los datos no se recortan; la prosa sí.**
+5. **«Corroboración» es una lista de emisores por tipo**, más las marcas de reserva. Sin explicación
+   de por qué se buscó.
+6. **Cada celda de las tablas de conclusiones y candidatos: una o dos frases.** La columna de línea
+   accionable es la que importa.
+
+**Lo que nunca se recorta**: cifras, fechas, municipios, corporaciones, ARG-ID, nivel de confianza,
+fuentes, deslindes y marcas de reserva. **Lo que siempre se recorta**: la explicación de la
+explicación, la justificación del método y toda frase que no aporte un dato o una acción.
+
+**Comprobación antes de publicar**: ningún apartado de explotación, recuadro ni valoración supera las
+cinco líneas. Es verificable con un contador de `<br>` y debe pasar en las dos versiones.
+
 ## Estilo de redacción
 
 Escribir como analista criminal, nunca como periodista, comentarista o editorialista. Sin

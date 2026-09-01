@@ -427,3 +427,31 @@ del coordinador.** **Ni obedecer ni descartar por precaución: arbitrar.**
   el título del boletín contenedor sí es citable, la cifra en sí no. **La ficha ya lleva la confianza
   más baja del corte (★★☆☆☆) y la marca `PENDIENTE DE CORROBORACIÓN INDEPENDIENTE`**; se deja
   constancia expresa de que **el número no tiene fragmento propio**.
+
+---
+
+## 16. Instrucción editorial del destinatario, recibida tras la primera publicación
+
+**Revisada la edición en teléfono, el destinatario ordenó**: *«hay mucho texto, quita todo eso; los
+análisis ARGOS redúcelos a 5 líneas; recuerda que es para mandos»*.
+
+**Se aplicó a ARGOS 113 y se fijó como regla permanente** en `CLAUDE.md` («Límite de extensión — el
+cartelón es telegráfico»), en `_pendientes.md` y en el arranque de ARGOS 114.
+
+| Antes | Después |
+|---|---|
+| **Tres recuadros** en portada, de 12 a 18 líneas cada uno, con el mismo argumento reescrito | **Un solo recuadro**, «LO QUE DEBE SABER EL MANDO», **cinco líneas numeradas** |
+| «Explotación ARGOS» de 10 a 14 líneas en prosa | **Cinco líneas numeradas, una idea por línea** — verificado por contador en las seis fichas |
+| «Hecho confirmado» en párrafos corridos | **Registro telegráfico**: fecha · lugar · corporación · cifras · reservas |
+| Valoración de tres párrafos | **Cinco líneas numeradas** |
+| Escritorio **146 KB**, móvil **178 KB** | Escritorio **111 KB** (−24 %), móvil **142 KB** (−20 %) |
+
+**Ningún dato se perdió en el recorte**: se conservan íntegras todas las cifras, fechas, municipios,
+corporaciones, ARG-ID, niveles de confianza, fuentes, deslindes y marcas de reserva. **La validación
+de coherencia volvió a pasar en verde** —semáforo, totales de armamento, casillas de cobertura
+sumando 32, cero `-FE-`— y la móvil se regeneró con la herramienta.
+
+⚠️ **Lección de método, y conviene que la herede el arranque**: la extensión no era un defecto de
+estilo sino **de destinatario**. El producto se estaba escribiendo para un lector que dispone de
+tiempo y pantalla grande, y **el mando lee en el teléfono y decide con lo que ve**. **Un dato que no
+se lee no existe**, y por eso el recorte no reduce el valor del producto: lo aumenta.
