@@ -8,13 +8,13 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 113 (corte 2026-09-01).
+**Última actualización**: ARGOS 114 (corte 2026-09-02).
 
 ---
 
 ## Arranque de la edición siguiente
 
-**`reports/_arranque-ARGOS-114.md`** contiene la orden de arranque para una sesión nueva: verificación
+**`reports/_arranque-ARGOS-115.md`** contiene la orden de arranque para una sesión nueva: verificación
 de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y comandos de construcción.
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
@@ -433,6 +433,83 @@ cualquier otra consideración de formato.**
 | ARGOS 113 | ✅ **La protección balística deja de ser línea de búsqueda y pasa a conclusión permanente** | **31 placas en tres semanas** (25 previas + 6 de Matamoros, cálculo propio) y **de ninguna se ha publicado marca, nivel NIJ ni lote**. Preguntado en **las seis regiones en tres cortes consecutivos** con resultado idéntico. **No se le asignan más búsquedas.** Lo accionable **no es otra consulta: es que la autoridad consigne el campo en el acta de aseguramiento**, como ya consigna el calibre. `ARG-113-FE-004` |
 
 ---
+
+---
+
+## ARGOS 114 — lo que cierra esta edición
+
+| Cerrado | Cómo |
+|---|---|
+| ✅ **BAJA CALIFORNIA · Tijuana — Emilio Valdez Mainero** *(candidato prioritario heredado)* | **VERIFICADO Y PUBLICADO** como `ARG-114-REC-001`. **62 años**, señalado exjefe del brazo armado del CAF. Último contacto la **tarde del viernes 28-ago** (día verificado contra calendario): restaurante de la **Zona Río** y después cerca del **Estadio Caliente** tras el partido Xolos-Pumas. **La familia** acudió a la **Unidad de Personas Desaparecidas de la FGE de BC**. Publicación 1-sep. **Sin boletín institucional, sin carpeta y sin ficha de búsqueda publicadas** |
+| ✅ **DURANGO o SINALOA · «16 detenidos y 22 armas»** | **CERRADO, y el planteamiento heredado era erróneo.** No es una cifra atribuida a dos entidades: son **dos eventos distintos con cifras coincidentes** —Durango (SSP estatal) y Sinaloa (agregado de 20 municipios, 23-30 ago)—, **ambos publicados el 31-ago**, antes de la ventana. `ARG-114-FE-005`. **No reabrir** |
+| ✅ **SINALOA · el municipio de Agua Verde** (`ARG-112-005`, `ARG-113-FE-006`) | **RESERVA DE TOPÓNIMO CERRADA a la tercera edición.** **Agua Verde es localidad del municipio de ROSARIO**, acreditado por las fuentes del hecho del 1-sep y **concordante con `ARG-102-REC-001`**. Se retira la reserva contra `ARG-102-REC-001` y `ARG-106-004`. `ARG-114-FE-003` |
+| ✅ **MICHOACÁN · abatimiento de «El Wicho»/«R5»** (`ARG-113-REC-001`) | **CONFIRMADO INSTITUCIONALMENTE.** El titular de la SSPC lo confirmó el **1-sep**; hay **parte atribuido a la SEDENA por republicador** —corroboración débil por construcción—: **2 fusiles automáticos**, munición «de varios calibres» **sin cifra**, **1 cuatrimoto**, **2 muertos**, **0 detenidos**. `ARG-114-FE-002` |
+| ✅ **MICHOACÁN · el municipio del operativo** | **CORREGIDO**: fue en **Rodeo del Pinal, municipio de TOCUMBO**, no en Los Reyes. Tocumbo colinda con Los Reyes y la organización se llama «Cártel de Los Reyes»: de ahí la confusión. `ARG-114-FE-001` |
+| ✅ **TABASCO · «operativos coordinados, 26 detenidos»** | **FECHADO Y CERRADO POR OBSOLETO**: es la **FIRT Olmeca del 22 al 25 de JUNIO de 2026**. `ARG-114-FE-006`. **No volver a listarlo** |
+| ✅ **VERACRUZ/TABASCO · carretera Coatzacoalcos–Villahermosa** | **UBICADO, FECHADO Y DISCREPANCIA RESUELTA**: **Huimanguillo, Tabasco**, publicación **31-ago**. **Las cuatro fuentes dan 81 kg de metanfetamina; ninguna sostiene 87.** Cifra: **1,822 kg de mariguana + 81 kg de metanfetamina**. **Fuera de ventana.** `ARG-114-FE-007` |
+| ✅ **ZACATECAS · ¿hubo un quinto ataque?** | **NO.** Ningún ataque con explosivos en las 21 h del corte |
+| ✅ **`gabinetedeseguridad.gob.mx/resultados/`** | **Verificado en esta edición**: migración acreditada, **ningún reporte del 1 ni del 2-sep alcanzable**, rutas sin fecha, trampa de año persistente. **Ninguna cifra suya se usa.** Sigue como vacío recurrente por verificar cada corte |
+
+## ARGOS 114 — lo que abre esta edición
+
+### Seguimientos nuevos
+
+| Desde | Caso | Qué falta | Qué lo cierra |
+|---|---|---|---|
+| ARGOS 114 | ⚠️ **ZACATECAS — LUIS MOYA NO ES UN ATAQUE, SON DOS, Y UNO DEJÓ UN POLICÍA MUERTO.** *Sustituye al seguimiento «fechar Luis Moya», que queda resuelto de más.* | El archivo de ARGOS **no tenía ninguno**. Localizados **dos ataques con explosivo contra la policía de Luis Moya en 2026**, ambos con fecha en la ruta: **5-mar-2026** (~18:00, Comandancia, **3 uniformados heridos**; Proceso e Infobae) y **31-jul/1-ago-2026** (noche, comunidad de **Barranquilla**, **1 policía municipal MUERTO** y 2 heridos; La Jornada y El Financiero). **No consta cuál cuenta en el «cuatro del año» oficial.** `NO SE ARBITRA` | **Un corte de la FGJEZ con criterio de conteo explícito.** Es lo único que reconcilia además las cuatro cifras de balance en circulación. ⚠️ **La serie incluye un policía muerto que no figuraba en ningún balance de ARGOS** |
+| ARGOS 114 | ⚠️ **EL ARTEFACTO DE PIEDRA GORDA SIGUE SIN PERITAR — segunda edición** (`ARG-113-ARM-003`) | `SIN AVANCE`, **con un deslinde que importa**: lo peritado y publicado es el **coche bomba EMPLEADO en Ojocaliente** («los peritajes determinaron que se trató de un coche bomba»). **El niple ASEGURADO e íntegro NO tiene dictamen publicado.** Son dos objetos y el resumidor los devuelve juntos | **Peritarlo antes de destruirlo.** Sigue siendo **la única línea de la serie que no depende de que la autoridad publique nada**, sino de que perite lo que ya tiene. Precedente en contra vigente: 55 artefactos destruidos *in situ* en el sur de Sinaloa sin caracterizar |
+| ARGOS 114 | ⚠️ **AGUASCALIENTES ES ORIGEN DE OPERADORES, NO ESCENARIO** *(reserva RESUELTA e integrada)* | **Los DOS detenidos de la serie son originarios de Aguascalientes**: Juan Pedro «N» (29) con **fuente institucional** `zacatecas.gob.mx`, y William Ariel «N» (18) con **tres nacionales y una regional**. Cumple el estándar institucional + nacional. **Uno tenía boletín de búsqueda vigente desde el 10-jun** | **Cruzar los reportes de no localización de jóvenes de Aguascalientes contra detenidos por alto impacto en Zacatecas.** Un desaparecido que reaparece como operador **no es un caso resuelto de búsqueda: es un indicador de reclutamiento**. Es consulta documental a las comisiones de búsqueda, no búsqueda web |
+| ARGOS 114 | ⚠️ **NINGUNO DE LOS DOS DETENIDOS TIENE VINCULACIÓN A PROCESO — tercera edición** | `SIN AVANCE` en ambos. **Dato nuevo: William Ariel «N» fue ENTREGADO A LA FGR** —cambio de fuero—, sin causa penal difundida. Juan Pedro «N», sin novedad | Las dos causas penales. **El cruce de los dos detenidos** —telefonía, contactos, ubicaciones— **antes de que las carpetas separadas lo hagan improbable** |
+| ARGOS 114 | **El accionador de Villa García — tercera edición sin avance** | **Mecanismo confirmado**: motocicleta interceptada por civiles armados y **explosivo detonado a distancia por los propios sospechosos**. **Sin identificadores de fábrica, marca ni tipo** (radiofrecuencia o telefonía) | El peritaje del medio de accionamiento. **Sigue siendo la única pieza capaz de identificar al operador sin testigo.** **Una búsqueda por edición como máximo** |
+| ARGOS 114 | ⚠️ **SINALOA — componente extranjero en la célula de Rosario** (`ARG-114-002`) | **4 colombianos y 1 cubano** de 9 detenidos, más **2 mujeres, una menor de edad**. **Es dotación importada de personal, no de armamento** | **Situación migratoria y ruta de entrada** de los cinco extranjeros · **protocolo por la menor**, que es víctima potencial de reclutamiento antes que imputada · **cotejo de las nueve series** contra tráfico transfronterizo |
+| ARGOS 114 | **SINALOA — la proporción munición/arma como discriminante operativo** | **Rosario: 291 cartuchos y 6 cargadores por fusil** (cálculo propio) = célula de combate sostenido. **Matamoros: 9,5 cargadores por arma sin munición proporcional** = depósito. **Es un discriminante directo sobre qué se acaba de encontrar** | Aplicarlo sistemáticamente a cada aseguramiento y ver si separa consistentemente célula de almacén |
+| ARGOS 114 | **SAN LUIS POTOSÍ — Villa de La Paz, sin calibres** (`ARG-114-003`) | **2 armas largas sin calibre, sin cartuchos y sin cargadores publicados.** **Sin calibre no hay cotejo balístico posible.** Detenidos **de Tamaulipas y Guerrero** | Serie y calibre de las dos armas · **carpetas de origen en Tamaulipas y Guerrero** a nombre de los tres detenidos · el campamento como punto fijo reutilizable |
+| ARGOS 114 | ⚠️ **TRES DE TRES CÉLULAS DEL CORTE SON FORÁNEAS** | Colombianos y un cubano en Rosario · tamaulipecos y guerrerenses en Villa de La Paz · aguascalentenses en Zacatecas. **El operador ya no es local en ninguno de los tres casos** | Medir si el patrón se sostiene en las siguientes ediciones. Si se sostiene, **el control de plaza se ejecuta con personal importado** y eso cambia dónde se busca |
+| ARGOS 114 | **BAJA CALIFORNIA — la brecha de detección de Valdez Mainero** (`ARG-114-REC-001`) | **Cuatro días entre el último contacto y la difusión**, y **la denuncia la impulsa la familia, no la autoridad**. Sin carpeta ni ficha de búsqueda publicadas | Última georreferencia telefónica y videovigilancia del corredor **Zona Río–Estadio Caliente** · número de carpeta y si se activó ficha de búsqueda · **situación jurídica vigente del propio Valdez Mainero**, que fija quién tenía interés en localizarlo |
+| ARGOS 114 | **MICHOACÁN — la sucesión del Cártel de Los Reyes sigue abierta** | **Segunda descabezada en un mes** y **sin sucesor confirmado**; la cobertura señala expresamente la incertidumbre. **No se localizó ningún hecho de disputa ya materializado** | **La ventana inmediata sigue siendo la de mayor probabilidad de repunte.** Vigilar Tocumbo, Los Reyes, Peribán y los municipios colindantes |
+| ARGOS 114 | **NACIONAL — la brecha entre detención y condena** | **12 detenidos y 4 sentenciados** en el corte, y **ninguno de los dos detenidos de la serie de explosivos judicializado**. **La captura no está convirtiéndose en proceso** | Medirlo por edición como indicador estable, no como observación aislada |
+
+### Candidatos vivos que ARGOS 115 debe cerrar
+
+| Candidato | Estado |
+|---|---|
+| ⚠️ **Sinaloa · TRES SENTENCIAS DE LA FGR RETRACTADAS ANTES DE PUBLICAR** | `SIN FRAGMENTO CITABLE — NO SE INTEGRA`. Comunicados atribuidos **DPE/3852, DPE/3849 y DPE/3850 de 2026** (4 personas sentenciadas). **La búsqueda con cadena exacta no devuelve el número de comunicado en ningún titular ni URL**; solo páginas índice de portales espejo de la FGR sin fecha propia, y el dato vive **únicamente en el resumen del buscador**. **El único titular real con esa redacción es de BAJA CALIFORNIA.** Es el patrón Huajicori. **Lo cierra un titular, encabezado o URL que contenga el número de comunicado.** `ARG-114-FE-008` |
+| ⚠️ **Estado de México · San Juan Teotihuacán — 4 sentenciados, 50 años, secuestro agravado** | `PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL`. **Arbitrado por el coordinador y el descarte SE SOSTUVO**: dos medios nacionales (Infobae con fecha en la ruta, Excélsior) y **ningún comunicado de la FGR localizado**. Además `PENA COMPUESTA`: **la multa se publica «cada uno» ($292,160); la prisión, no**. **Si es por persona el acumulado nacional sube 200 años; si conjunta, 50.** Campos individualizadores disponibles: cuatro nombres, multa exacta, hecho de **diciembre de 2016**, CEFERESO N.º 1 «El Altiplano». **Lo cierra el comunicado de la FGR** |
+| **FGR Toluca · comunicados DPE/3855, DPE/3856 y DPE/3857 de 2026** | `FECHA NO FIJADA` — atribuidos por el resumidor al 1-sep (Metepec, Chalco, arma de uso exclusivo), pero **todas las URL son portales espejo sin fecha propia**. Baja prioridad |
+| **Tamaulipas · operativo anterior en la periferia de Matamoros** | `FECHA NO FIJADA` — 4 armas largas, 19 cargadores, 306 cartuchos, 15 kg de mariguana, 3 chalecos. **Evento DISTINTO del 31-ago (`ARG-113-002`), no se fundió.** Lo cierra una fecha |
+| **San Luis Potosí · Tamuín, comunicado de la Guardia Nacional** | `FECHA NO FIJADA` — 4 detenidos con arma larga en una camioneta. **No se fundió con Villa de La Paz**: municipio y cifra distintos |
+| **Puebla · San Martín Texmelucan** | `FECHA NO FIJADA`, *slug* sin fecha. Sin cambio |
+| **Hidalgo · Huichapan** | Dos operativos distintos (5 detenidos con granadas, ~27-jul; 6 detenidos con armas largas y cortas, fecha atribuida por el resumidor a «finales de agosto» **sin URL que la sostenga**). `FECHA NO FIJADA` |
+| **Puebla · «El Comandante RH», Coronango** | `FECHA NO FIJADA`, indicios de agosto. ⚠️ **Coronango es el municipio del fallo de homonimia de ARGOS 98**: exigir **dos campos individualizadores** antes de integrar |
+
+### Seguimientos que ARGOS 114 NO pudo avanzar
+
+| Desde | Caso | Estado |
+|---|---|---|
+| ARGOS 113 | **TAMAULIPAS — serie y marcaje de las 4 armas largas de Matamoros** (`ARG-113-002`) | **`SIN AVANCE`.** Ninguna fuente publica números de serie. **El cotejo con las 210 armas de Texas sigue sin poder practicarse** |
+| ARGOS 112 | **NUEVO LEÓN — calibres y rastreo de las 210 armas** (`ARG-112-004`) | **`SIN AVANCE`** en esta edición; no se le asignó búsqueda |
+| ARGOS 110 | **ZACATECAS — contradicción de lesionados de `ARG-110-001`** | **`SIN AVANCE`, quinta edición.** No se gastó búsqueda |
+| ARGOS 111 | **OAXACA — el homónimo de Loxicha** (`ARG-109-002`) | **`SIN AVANCE`.** El presupuesto de Sureste se agotó sin llegar |
+| ARGOS 112 | **GUERRERO — la munición sin su arma, Acapulco** (`ARG-112-006`) | **`SIN AVANCE`** |
+| ARGOS 111 | **CHIHUAHUA — el dato que mueve el color** (`ARG-111-004`) | **`SIN AVANCE`.** Se mantiene 🟡 |
+| ARGOS 113 | **PUEBLA — el inhibidor como tipo penal federal** (`ARG-113-SEN-001`) | **`SIN AVANCE`.** La pena de 50 años sigue sin desagregar por persona |
+
+### Deuda de método abierta por ARGOS 114
+
+| Desde | Asunto | Acción pendiente |
+|---|---|---|
+| ARGOS 114 | ⚠️ **MODO DE FALLO NUEVO: una instrucción de «no gastar búsqueda en X» puede suprimir un hecho NUEVO en X** | **Es el fallo evitado más importante de esta edición.** La instrucción sobre «Agua Verde» —dirigida a un **pendiente de topónimo**— hizo que el barrido del Noroeste excluyera, correctamente según su encargo, **el mayor aseguramiento del corte**: 9 fusiles AK-47, 54 cargadores, 2,620 cartuchos, 10 placas y 9 detenidos, ocurrido **en ese mismo lugar**. **Lo recuperó el arbitraje del coordinador.** **REGLA DERIVADA: las prohibiciones de gasto se redactan contra el PENDIENTE, no contra el TOPÓNIMO** —«no reinsistir en el municipio administrativo de Agua Verde», nunca «no gastar en Agua Verde»—. **Y el coordinador debe revisar toda exclusión que un barrido atribuya a una instrucción suya** |
+| ARGOS 114 | ✅ **La regla nueva de `site:` funciona y el objetivo porcentual queda retirado definitivamente** | **Primera edición aplicándola.** Las **4 consultas `site:` de 76** fueron **todas contra dominios con fecha en la ruta**, y una produjo un **descarte firme** (Querétaro, boletín más reciente del 26-ago). La genérica subió al **95 %** y **eso es el comportamiento correcto, no una desviación**. **NO reintroducir objetivos porcentuales en ARGOS 115** |
+| ARGOS 114 | ✅ **La asignación explícita de deuda regional rinde, pero conviene rotarla** | **SEDENA/SEMAR/FGR/ANAM → Noroeste produjo el aseguramiento de Rosario** —el mayor del corte— **y los tres candidatos judiciales, que no superaron el umbral de fuente**. **Mesas de Construcción de la Paz → Occidente dio resultado NEGATIVO declarado**: ninguna de las seis entidades tiene portal de mesa con desglose equivalente al de Morelos. **A ARGOS 115: SEDENA/SEMAR/FGR/ANAM → CENTRO · Mesas → GOLFO** |
+| ARGOS 114 | ⚠️ **Cuarta edición seguida en que la producción judicial integrable del país es FEDERAL** | FGR Papantla (112) · FECOR Puebla (113) · **ARGOS 114: cero integrables tras la retractación**. **Las 32 fiscalías estatales dieron cero por tercer corte.** **Mantener el triaje judicial dirigido a las delegaciones de la FGR antes que a las fiscalías estatales**: es lo que produjo las tres sentencias |
+| ARGOS 114 | ⚠️ **Tres ventanas consecutivas decrecientes: 48 h → 27 h → 21 h** | **Los totales no son comparables sin normalizar por duración**, y así se declara en el cartelón. **Conviene fijar horas de arranque más estables** para que la serie recupere comparabilidad |
+| ARGOS 114 | **Dominio fechado nuevo sin explotar: `fiscaliaguerrero.gob.mx/index.php/AAAA/MM/DD/`** | **Lleva fecha en la ruta**, contra lo que suponía el encargo. **Asignar a Sureste en ARGOS 115** como candidato a `site:` |
+| ARGOS 114 | **Dominios institucionales de Hidalgo y Puebla sin confirmar por `site:`** | Verificar en la próxima edición que Centro encabece |
+| ARGOS 114 | **`fgjsonora.gob.mx`: quinta edición sin resultado, ni confirmado ni descartado** | Decidir si se declara vacío acreditado o se le asigna una consulta dedicada de una vez |
+| ARGOS 114 | ⚠️ **«VERIFICADO EN DOS CONSULTAS INDEPENDIENTES» NO SIGNIFICA NADA SI LAS DOS SON AL MISMO BUSCADOR** | **Es la lección de la retractación de las tres sentencias, y la más importante de esta edición.** El borrador afirmaba haber verificado los títulos «en dos consultas independientes»: **no lo eran**, eran dos preguntas al mismo resumidor sobre el mismo índice, y **repetir la pregunta confirma al resumidor, no al hecho**. **REGLA: una verificación cuenta solo si devuelve un TITULAR, ENCABEZADO o URL que contenga el dato.** Si el dato vive únicamente en el párrafo de respuesta del motor, **no existe**. **Añadir a las trampas verificadas del arranque** |
+| ARGOS 114 | ⚠️ **El arbitraje del coordinador también se equivoca, y para eso están los controles** | **Por primera vez en la serie el arbitraje integró algo que un control tumbó con razón.** El coordinador arbitró los tres candidatos judiciales y los dio por buenos; **`procedencia-cifras` demostró que no había fragmento citable** y una tercera búsqueda le dio la razón. **La regla «arbitrar antes de obedecer» se mantiene —salvó el aseguramiento de Rosario en esta misma edición—, pero el arbitraje NO es la última palabra: es una búsqueda más, y puede fallar como cualquier otra.** |
+| ARGOS 114 | ⚠️ **Un indicador de cobertura del CARTELÓN no puede contar lo que el cartelón no publica** | Detectado por `editor-duplicidad`: el cartelón declaraba **«6 con hallazgo»** incluyendo **Michoacán**, cuyo trabajo se resolvió por **fe de erratas** y no por ficha. **Contabilizar una entidad que el lector no puede verificar dentro del propio cartelón viola la auditabilidad.** Corregido a **5 + 26 + 1 + 0 = 32**. **El archivo de fuentes sí conserva las 6, y la diferencia entre ambos cuadres se declara.** `ARG-114-FE-009` |
+| ARGOS 114 | **La protección balística sigue siendo conclusión permanente, no línea de búsqueda** | **41 placas acumuladas** (cálculo propio) y **ninguna con marca, nivel NIJ ni lote**. **No se le asigna búsqueda.** Lo accionable es que **la autoridad consigne el campo en el acta de aseguramiento** |
 
 ## ⚠ ARGOS 106 — DOS HALLAZGOS QUE CAMBIAN LA SERIE
 
