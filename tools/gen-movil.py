@@ -370,8 +370,11 @@ def titulo_de(pagina, indice):
             # "CRIMEN ORGANIZADO (I)" / "(II)". Cualquier otra cola es la
             # enumeración descriptiva del masthead, que no cabe en la barra
             # de navegación de un teléfono y se descarta.
+            # El patrón acepta CUALQUIER numeral romano, no solo I/II/III: con
+            # "\(I+\)" la página (IV) de ARGOS 115 perdía su numeral y dos
+            # secciones distintas aparecían como "CRIMEN ORGANIZADO" en la barra.
             sufijo = corto[len(clave):].strip()
-            if re.fullmatch(r"\(I+\)", sufijo):
+            if re.fullmatch(r"\((?=[IVXLC])[IVXLC]+\)", sufijo):
                 return f"{abrev} {sufijo}"
             return abrev
     return corto
@@ -383,14 +386,19 @@ TOTAL = len(TITULOS)
 # La barra de navegación se hereda del shell de la edición anterior y llevaba tantos
 # enlaces como secciones tuviera aquella. Se reconstruye a partir de TITULOS para que
 # no queden anclas muertas ni falten secciones cuando la estructura cambie.
+# Las entradas de "CRIMEN ORGANIZADO (N)" se generan para cualquier numeral en vez
+# de enumerarse a mano: fijarlas obligaba a tocar el script cada vez que una edición
+# añadía una página de crimen organizado, que es justo lo que este archivo evita.
 NAV_ABREV = {
-    "CRIMEN ORGANIZADO (I)": "C. ORGANIZADO I",
-    "CRIMEN ORGANIZADO (II)": "C. ORGANIZADO II",
+    f"CRIMEN ORGANIZADO ({r})": f"C. ORGANIZADO {r}"
+    for r in ("I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X")
+}
+NAV_ABREV.update({
     "ARMAMENTO Y EXPLOSIVOS": "ARMAMENTO",
     "RASTREO DE SENTENCIAS": "SENTENCIAS",
     "AUDITORÍA RETROACTIVA": "AUDITORÍA",
     "TABLERO EJECUTIVO": "TABLERO",
-}
+})
 nav_links = "\n".join(
     f'    <a href="#s{n}">{NAV_ABREV.get(t, t)}</a>' for t, n in TITULOS)
 m_nav = re.search(r'( *<a href="#s\d+">.*?</a>\n?)+', shell, re.S)
