@@ -437,9 +437,14 @@ for i, (titulo, n) in enumerate(TITULOS):
         # qué venga detrás.
         cuerpo = _sustituye_div(cuerpo, 'class="semaforo"', SEM + "\n\n  ")
     if tiene_mapa_arm:
+        # El patrón tolera atributos extra en `panel` y en `map-box` (p. ej. `style=`).
+        # Exigir `<div class="panel">` exacto hacía que un solo atributo dejara el mapa de
+        # aseguramientos VACÍO EN SILENCIO: la sustitución no casaba y el div hueco del
+        # escritorio pasaba tal cual a la móvil. Lo detectó el validador en ARGOS 117.
         cuerpo = re.sub(
-            r'<div class="panel">\s*<div class="panel-title">.*?</div>\s*'
-            r'<div class="map-box" id="argos-map-arm"></div>\s*<div class="map-caption">(.*?)</div>\s*</div>',
+            r'<div class="panel"[^>]*>\s*<div class="panel-title">.*?</div>\s*'
+            r'<div class="map-box"[^>]*id="argos-map-arm"[^>]*></div>\s*'
+            r'<div class="map-caption">(.*?)</div>\s*</div>',
             lambda m: f'''<div class="viz">
     <div class="viz-title"><span>MAPA DE ASEGURAMIENTOS</span><span>SEMÁFORO ARGOS</span></div>
     <div class="map-box">{svg_arm}</div>

@@ -262,6 +262,86 @@ como pendiente activo. **Lo resolvió el dominio correcto** —`procuraduria.hid
 inexistente «Fiscalía General del Estado de Hidalgo»—, que ARGOS 116 había fijado.
 **Ninguna cifra se integra. NO PUBLICADA EN EL CARTELÓN.**
 
+### `ARG-117-FE-005` — un candidato «de fecha no fijada» era, en realidad, un hecho de diciembre de 2025
+
+**Lo detectó `procedencia-cifras`; el arbitraje del coordinador con búsqueda propia le dio la razón.**
+El candidato **«Michoacán · diez municipios»** —**9 detenidos, 10 armas, 459 cartuchos, 18 cargadores y
+3 vehículos**, con **Buenavista Tomatlán** entre los municipios— iba a arrastrarse como
+`FECHA NO FIJADA` y `POSIBLE DUPLICIDAD PARCIAL` con `ARG-117-ARM-002`. **No es un candidato de fecha
+incierta**: es el **cierre del «Plan Michoacán por la Paz y la Justicia»**, con detenciones del
+**31-dic-2025** y titular fechado —*«Plan Michoacán cierra el 2025 con nueve detenidos en aguacatero,
+armas, cartuchos y cargadores decomisados»*, Infobae, **1-ene-2026**—, reproducido por López-Dóriga,
+Latinus, El Informador y La Voz de Michoacán con **las cinco cifras idénticas** y **la misma lista de
+diez municipios** (Uruapan, Nuevo San Juan Parangaricutiro, Villa Madero, Zitácuaro, Apatzingán,
+Buenavista Tomatlán, Parácuaro, Múgica, Lázaro Cárdenas y Chinicuila).
+**El resumidor lo había refechado al corte.** Es el **tercer refechado neutralizado en esta edición** y
+el más peligroso, porque **no habría sido descartado nunca**: se habría heredado de corte en corte como
+candidato vivo, igual que Tihuatlán durante cuatro.
+**Efecto**: se **retira su fila** de la tabla de armamento —quedaba como candidato declarado— y **el
+deslinde se reescribe dentro de la ficha de Buenavista**: ya no es «posible duplicidad pendiente de
+validación», es **un hecho de otra anualidad**. **Se cierra con negativo declarado y no pasa a
+`_pendientes.md`.** **Ninguna cifra se integra ni se retira del total.**
+**REGLA REFORZADA**: cuando un candidato no tenga fecha en ruta ni titular, **el `grep` por cifras
+distintivas debe completarse con una búsqueda del titular por sus cifras**: aquí «459 cartuchos» y
+«18 cargadores» devolvieron el titular fechado en una sola consulta. **NO PUBLICADA EN EL CARTELÓN.**
+
+### `ARG-117-FE-006` — la sentencia de Durango llevaba dos montos distintos y el borrador publicaba uno
+
+**Lo detectó `procedencia-cifras` declarando que no podía fijarlo; el arbitraje del coordinador lo
+confirmó.** El borrador publicaba **«$56,460»** en una sola tarjeta rotulada «Reparación y multa» y en
+el cuerpo de la ficha, **fundiendo dos campos que `CLAUDE.md` exige mantener separados**. La sentencia
+impone **multa de $56,460 Y reparación del daño de $26,000**, dos cifras distintas.
+**Efecto**: la tarjeta se **desdobla** en «Multa: $56,460» y «Reparación del daño: $26,000», la ficha
+declara expresamente que **son campos distintos y no se suman entre sí**, y la línea de explotación deja
+de preguntar «si el monto es multa o reparación» —resuelto— y pasa a la **ejecución efectiva de la
+reparación**, que es lo único que llega a la víctima.
+**Es la tercera vez en la serie que un control obliga a INTEGRAR, no a retirar.** **NO PUBLICADA EN EL
+CARTELÓN.**
+
+### `ARG-117-FE-007` — las 12 armas de Acapulco no están fijadas en titular y la fila baja a Bajo
+
+**Lo detectó `procedencia-cifras`.** Del aseguramiento de Acapulco, **solo los 16 detenidos y las
+10 tragamonedas están fijados en titular** —*«Entre armas, cristal y 10 tragamonedas: detienen a 16 de
+Los Ardillos en Guerrero»*—. **Las 12 armas, las 17 dosis de cristal y los vehículos viven únicamente en
+el cuerpo de las notas**, atribuidos a SEDENA.
+**Decisión razonada, caso por caso, como exige el bloqueo de egreso**: **se integran las 12 armas** —hay
+convergencia de una decena de coberturas atribuidas a la misma fuente institucional— **con reserva
+expresa `SIN FIJAR EN TITULAR`**, y **la fila baja de Medio a Bajo** por corroboración asimétrica: el
+nivel lo fija el campo peor sostenido y la marca se aplica al renglón completo.
+**A diferencia del desglose de Ciudad Juárez del corte anterior, aquí NO hay anclaje aritmético**: no
+existe una cifra de armas en titular con la que las 12 cuadren. **Por eso la reserva es más fuerte y se
+declara también en portada y en la página de armamento.**
+**El total nacional no cambia** (18 armas), **pero su lectura sí**: **12 de las 18 descansan en
+convergencia de fuentes, no en titular.** **NO PUBLICADA EN EL CARTELÓN.**
+
+### `ARG-117-FE-008` — «más de ocho minutos» era «ocho minutos»
+
+El borrador escribía **«video de más de ocho minutos»**. El titular que sí fija la cifra dice
+**«ocho minutos»** —*«El video de ocho minutos que Eduardo Bustos dejó antes de aparecer muerto en
+Guerrero»*—. **«Más de» no es cifra y aquí ni siquiera hacía falta**: la cifra exacta estaba en titular.
+Corregido a **«ocho minutos»**, con la fuente declarada. **NO PUBLICADA EN EL CARTELÓN.**
+
+### `ARG-117-FE-009` — dos defectos de herramienta, corregidos en la herramienta y no en su salida
+
+**Uno lo detectó `editor-duplicidad`; el otro, el validador del propio generador móvil.** Son dos
+manifestaciones de la misma fragilidad y **ninguno lo habría visto una revisión visual**.
+
+1. **El mapa de aseguramientos tenía el clic roto, y venía roto de antes.** `EVENTOS_ARM` fija
+   `location.hash` con el **id de la fila** (`ARG-117-ARM-001` / `-002`), y **el documento no tenía
+   ningún ancla con ese id**: los ARG-ID solo existían como texto dentro de la tabla. **Pulsar Guerrero
+   o Michoacán en el mapa no llevaba a ninguna parte.** **Defecto heredado**: el mismo patrón está en
+   ARGOS 116 y anteriores. **Corregido** añadiendo `id=` a las dos filas; **verificado que los diez
+   ARG-ID de `EVENTOS` y `EVENTOS_ARM` resuelven a un ancla existente**.
+2. **El generador móvil dejaba el mapa de aseguramientos vacío en silencio.** Su expresión regular
+   exigía `<div class="panel">` **exacto**, y **un solo atributo `style=` bastaba** para que la
+   sustitución no casara y **el div hueco del escritorio pasara tal cual a la móvil**. Es el mismo tipo
+   de fallo que en ARGOS 116 dejó los dos mapas vacíos: **silencioso, y solo detectable por validación
+   automática**. **Se corrigió la regex** —tolera atributos en `panel` y en `map-box`—, **no la salida**,
+   conforme al Bloque 8 del arranque. **Lo atrapó el validador del propio generador**
+   («se esperaban 3 SVG de radar/mapa, hay 2»), **no la inspección visual**.
+
+**NO PUBLICADA EN EL CARTELÓN.**
+
 ---
 
 ## 7. Candidatos declarados y no integrados
@@ -270,7 +350,6 @@ inexistente «Fiscalía General del Estado de Hidalgo»—, que ARGOS 116 había
 |---|---|---|
 | **CHIAPAS · La Trinitaria** (91.º Batallón de Infantería, sede San Juan Copalar) | 2 largas · 920 cartuchos · 34 cargadores | `FECHA NO FIJADA`, **tercera vez**. Fuente reconfirmada (Diario de Chiapas) y **sigue sin fecha en URL ni titular** |
 | **AGUASCALIENTES · Cosío, com. El Salero** | **17 largas, 1 rifle cal. .50** · «más de 1,500» cartuchos · 3 detenidos | `FECHA NO FIJADA`, **nuevo**. *Slug* de `gob.mx/guardianacional/prensa` **sin fecha en ruta**. **Mayor volumen pendiente del archivo** |
-| **MICHOACÁN · diez municipios** (Buenavista Tomatlán entre ellos) | 10 armas · 459 cartuchos · 18 cargadores · 9 detenidos | `FECHA NO FIJADA` **y `POSIBLE DUPLICIDAD PARCIAL`** con `ARG-117-ARM-002`. Las cifras no coinciden |
 | **NAYARIT · Acaponeta, loc. El Tacote — Manuel «N»** | 5a2m7d · multa $21,350 · 3 cargadores, 112 cartuchos, 56.2 g | **Doble motivo**: su URL fechada es del **4-sep, ahora fuera de ventana**, y lo sostiene **un solo medio regional**. **Se cierra por ventana** |
 | **AGUASCALIENTES · Rincón de Romos, col. El Chaveño — Jorge, Yafte, Jairo y Pablo «N»** | 7a10m · 4a3m · 4a2m · 4a2m · multas $18,036 a $9,775 | Término literal **reconfirmado con tres fuentes nuevas**; **ninguna URL trae el DÍA**. Sigue abierto |
 | **CHIAPAS · Tapachula y San Cristóbal** (causas 293/2025, 265/2025, 24/2025) | 3 abreviados | **Año de la sentencia no verificable**: las causas son de 2025 |
@@ -297,14 +376,70 @@ ataque y por tanto no pueden ser su consecuencia**; el del 4-sep **ya está publ
 ## 9. Controles editoriales
 
 Ejecutados **con subagentes autorizados por el destinatario**: `barrido-regional` ×6,
-`editor-duplicidad` y `procedencia-cifras`. **Sus hallazgos y el arbitraje del coordinador se anotan en
-la §10.**
+`editor-duplicidad` y `procedencia-cifras`.
+
+⚠️ **DUODÉCIMA EDICIÓN CONSECUTIVA CON HALLAZGOS REALES DE LOS DOS CONTROLES, y los dos volvieron a
+tener razón.** `procedencia-cifras` devolvió **`PUBLICAR` condicionado a tres correcciones** y
+`editor-duplicidad`, **`CORREGIR ANTES DE PUBLICAR`**.
+
+**Qué encontró `editor-duplicidad`** —y qué no—:
+
+- ✅ **Cero duplicidad interna, cero hechos ya publicados presentados como nuevos, cero descuadres
+  aritméticos.** Cruzó **los 21 topónimos y los 9 nombres/alias** contra el índice y **recalculó a mano
+  el total de armamento en sus tres ubicaciones** —tarjetas, tabla y párrafo de total—: **coinciden**.
+  Confirmó los dos cuadres de cobertura y que **`ARG-117-REC-001` no está en `EVENTOS`**.
+- ✅ **Ratificó los dos deslindes que más riesgo tenían**: Guerrero 🔴/🟢 en fichas separadas
+  —«consistente con la regla de que un delito y su detención son dos eventos»— y Michoacán
+  `ARG-117-004` frente a `ARG-117-REC-001`.
+- ⚠️ **Hallazgo real y aceptado: el clic del mapa de aseguramientos estaba roto**, y **venía roto de
+  ediciones anteriores**. Ver `ARG-117-FE-009`. **Es el hallazgo más valioso del control**, porque
+  ninguna revisión de contenido lo habría encontrado.
+- ⚠️ **Hallazgo aceptado: tres candidatos de `_pendientes.md` sin disposición registrada** —Chinicuila,
+  Tabasco y Nuevo León—. **Se les da disposición expresa en `_pendientes.md`**, para que ningún barrido
+  futuro los redescubra sin saber que ya se evaluaron.
+- **Señaló el deslinde de Cosío frente a `ARG-115-007` como ausente**: **ya estaba escrito** cuando el
+  control leyó el borrador es anterior a esa corrección. **Verificado presente.** No procede.
+- **Pidió ratificar una asimetría**: por qué el rescate de Omealca (`ARG-117-FE-001`) va solo a fe de
+  erratas y Zinapécuaro sí recibe ficha `-REC-`. **Se ratifica expresamente** en la §10.
+- **No pudo auditar la paridad móvil** porque la móvil aún no existía al lanzarse el control.
+  **Comprobada después por el coordinador**: ver §10.
 
 ---
 
 ## 10. Arbitraje del coordinador
 
-*Se completa al cierre, tras los dos controles.*
+⚠️ **`procedencia-cifras` devolvió `PUBLICAR` condicionado a tres correcciones, declaró expresamente que
+NO podía fijar dos de sus hallazgos a un titular, y el coordinador lo arbitró con búsqueda propia.
+**Tenía razón las dos veces.** Es la **duodécima edición consecutiva con hallazgos reales de los
+controles**, y la **tercera en que un control obliga a INTEGRAR y no solo a retirar**.
+
+| Hallazgo del control | Arbitraje | Resultado |
+|---|---|---|
+| **Faltaba la reparación del daño de $26,000 en Durango**, y el borrador fundía multa y reparación | **Búsqueda propia con las dos cifras entre comillas**: confirmado, la sentencia impone **multa de $56,460 Y reparación de $26,000** | ✅ **El control tenía razón.** Tarjeta desdoblada, ficha corregida. `ARG-117-FE-006` |
+| **El candidato «Michoacán · diez municipios» no es de fecha incierta: es de dic-2025** | **Búsqueda propia por sus cifras distintivas**: titular fechado **1-ene-2026**, detenciones del **31-dic-2025**, cinco cifras y diez municipios idénticos | ✅ **El control tenía razón.** Fila retirada, candidato cerrado. `ARG-117-FE-005` |
+| **Las 12 armas de Acapulco, las 17 dosis y los vehículos no están en titular** | Verificado contra los titulares disponibles: **solo los 16 detenidos y las 10 tragamonedas lo están** | ✅ **Aceptado.** Integradas con reserva; fila de Medio a **Bajo**. `ARG-117-FE-007` |
+| **«Más de ocho minutos» frente a «ocho minutos»** | El titular fija **«ocho minutos»** | ✅ **Aceptado.** Corregido. `ARG-117-FE-008` |
+| **Las dos contradicciones (3/4 víctimas, 3/4 heridos) son reales y no arbitrables** | Ambas **están en titular en direcciones opuestas** | ✅ **Confirmado**: `NO SE ARBITRA` era el tratamiento correcto. No se fuerza una elección |
+| **«Detenidos: no publicados» en Buenavista no era descarte por precaución** | Verificado: **ninguna de las seis coberturas publica cifra de detenidos** | ✅ **Confirmado.** No se infiere ninguna |
+
+**Arbitraje sobre los dos puntos que `editor-duplicidad` dejó a decisión del coordinador**:
+
+- ⚠️ **Se RATIFICA la asimetría entre `ARG-117-FE-001` (Omealca) y `ARG-117-REC-001` (Zinapécuaro).**
+  **No es incoherencia, es la regla aplicada.** El rescate de las dos personas secuestradas **forma
+  parte de un operativo YA PUBLICADO** como `ARG-116-001`; la regla dice que **un hecho ya publicado no
+  vuelve como `-REC-`, porque eso es duplicación**. Zinapécuaro, en cambio, **no está publicado en
+  ninguna edición**: es un hecho entero e inédito, y por eso lleva ficha. **El criterio que separa los
+  dos casos no es la gravedad ni el color: es si el hecho ya existe en el archivo.**
+- ✅ **Paridad escritorio ↔ móvil comprobada por el coordinador tras generar la móvil**: **los diez
+  ARG-ID son idénticos en las dos versiones**, 8 secciones en ambas, **cero `-FE-`**, **cero clases de
+  escritorio** (`sem-item`, `stat-tile`, `cover-visuals`, `masthead`), **cero tarjetas `.reg` vacías**,
+  **un solo pie** y **cero `<script>`**. El generador declaró **`validación OK`** y sus contadores
+  —🔴 1 · 🟡 2 · 🟢 4— **coinciden con el semáforo del escritorio**.
+
+**Recálculo independiente del total nacional desde las filas integradas**: 0 cortas · 6 largas ·
+12 sin categoría · **18 armas** · 342 cartuchos · 47 cargadores · 0 granadas · 0 AEI · 0 explosivos ·
+16 detenidos · 2 entidades · 2 eventos. **Cuadra con el borrador y con las dos filas.**
+**Cartuchos y cargadores nunca sumados entre sí; «más de» excluido en los dos casos.**
 
 ---
 
