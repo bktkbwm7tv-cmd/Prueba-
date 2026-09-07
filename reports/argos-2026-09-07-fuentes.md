@@ -342,6 +342,37 @@ manifestaciones de la misma fragilidad y **ninguno lo habría visto una revisió
 
 **NO PUBLICADA EN EL CARTELÓN.**
 
+### `ARG-117-FE-010` — instrucción editorial del destinatario: fuera los recuadros de método y de color
+
+**Instrucción directa tras revisar la móvil en teléfono**: *«no debes explicar los colores; reduce más
+el texto y no repitas varias veces la misma noticia»*. **Rige sobre cualquier consideración de
+redacción y se aplica desde esta edición.**
+
+**Se retiran cinco recuadros `alerta contexto` completos**, de ocho a **tres**:
+
+| Recuadro retirado | Por qué |
+|---|---|
+| «POR QUÉ ESTE HECHO ES ROJO Y POR QUÉ SU DETENCIÓN VA APARTE» | **Explicaba el color al mando.** El color ya está en la etiqueta de la ficha |
+| «QUÉ SIGNIFICA QUE ESTE HECHO SE PUBLIQUE AQUÍ Y NO CUENTE» | **ARGOS hablando de ARGOS**: explicaba el mecanismo del `-REC-`. La ficha ya declara su ventana de origen |
+| «DIECIOCHO ARMAS Y NINGUNA PIEZA COTEJABLE» | **Repetía por tercera vez** lo que ya decían las tarjetas de conteo y las conclusiones |
+| «UNA SENTENCIA INTEGRADA Y TRES CANDIDATOS QUE CAEN» | **Narraba la tabla que iba justo debajo**, cuyas columnas «Qué falta» y «Estatus» lo dicen |
+| «CINCO RESERVAS VIVAS» | **Repetía marcas de reserva ya declaradas en cada ficha**, y dos de ellas eran de cortes anteriores: van a `_pendientes.md` |
+
+**Quedan tres, y cada uno dice algo distinto**: **portada** —los hechos—, **Valoración** —el nivel de
+riesgo en cifras— y **Conclusiones** —lo accionable—. **Se reescribieron los tres para que no se
+solapen**: antes los tres abrían con el mismo hecho de Guerrero.
+
+**Además se recortó la prosa, no el dato**: las ocho «Explotación ARGOS» bajaron de ~1.100 a ~700
+caracteres, cuatro «Hecho confirmado» pasaron a registro telegráfico puro, y se retiró de la página de
+armamento la lista «rubro aparte», que repetía íntegra la de las fichas.
+
+**Resultado: 51,164 → 37,7xx caracteres de texto visible, un 26 % menos**, con **cero cifras, fechas,
+municipios, corporaciones, ARG-ID, confianzas, fuentes, deslindes ni marcas de reserva perdidos** —
+verificado con el contador de apartados y con la paridad de los diez ARG-ID en las dos versiones.
+**Es menos texto que ARGOS 116 (42,025) pese a tener dos hechos más.**
+
+**NO PUBLICADA EN EL CARTELÓN.**
+
 ---
 
 ## 7. Candidatos declarados y no integrados

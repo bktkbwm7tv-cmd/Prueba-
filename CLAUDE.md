@@ -943,6 +943,14 @@ Reglas duras:
 2. **Todo recuadro `alerta contexto` tiene un máximo de CINCO líneas.** La portada lleva **un solo
    recuadro**, titulado «LO QUE DEBE SABER EL MANDO», con los cinco puntos del corte. No tres
    recuadros con el mismo argumento reescrito.
+   ⚠️ **Y el cartelón entero lleva TRES recuadros como máximo** —portada, Valoración y Conclusiones—,
+   **y ninguno repite el hecho de otro**. Instrucción directa del destinatario tras revisar ARGOS 117
+   en teléfono: *«no debes explicar los colores; reduce más el texto y no repitas varias veces la misma
+   noticia»*. **NINGÚN RECUADRO EXPLICA UN COLOR NI UN MECANISMO DEL MÉTODO**: por qué un hecho es rojo
+   y no amarillo, por qué una recuperación no cuenta, o qué significa una casilla **no son inteligencia
+   criminal y no van al cartelón** — el color ya está en la etiqueta de la ficha y la ventana de origen
+   ya está en su trazabilidad. Esa clase de explicación va al **archivo de fuentes**. En ARGOS 117 se
+   retiraron **cinco de ocho recuadros** por esta regla.
 3. **La Valoración ARGOS son CINCO líneas numeradas.** Aplica la metodología de riesgo y remite; no
    narra.
 4. **«Hecho confirmado» se escribe en registro telegráfico**: fecha · lugar · corporación · cifras ·

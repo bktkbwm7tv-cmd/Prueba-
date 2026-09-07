@@ -322,6 +322,15 @@ Instrucción editorial permanente del destinatario, vigente:
   SABER EL MANDO». **«Hecho confirmado» va en registro telegráfico**, no en prosa.
   ⚠️ **Nunca se recortan cifras, fechas, municipios, corporaciones, ARG-ID, confianza, fuentes, deslindes
   ni marcas de reserva. Se recorta la prosa, no el dato.** **ARGOS 117 lo cumplió en los 16 bloques.**
+- ⚠️ **TRES RECUADROS COMO MÁXIMO EN TODO EL CARTELÓN** —portada, Valoración y Conclusiones—, **y
+  ninguno repite el hecho de otro.** Instrucción directa del destinatario tras revisar ARGOS 117 en
+  teléfono: *«no debes explicar los colores; reduce más el texto y no repitas varias veces la misma
+  noticia»*. ⚠️ **NINGÚN RECUADRO EXPLICA UN COLOR NI UN MECANISMO DEL MÉTODO**: «por qué este hecho es
+  rojo y no amarillo» o «qué significa que esto se publique aquí y no cuente» **no son inteligencia
+  criminal** — el color ya está en la etiqueta de la ficha y la ventana de origen en su trazabilidad.
+  **Van al archivo de fuentes.** ARGOS 117 retiró **cinco de ocho** por esta regla y bajó **un 26 % el
+  texto visible** sin perder **una sola cifra, fecha, municipio, corporación, ARG-ID, confianza, fuente,
+  deslinde ni marca de reserva**. **Referencia de volumen: ~38.000 caracteres visibles.**
 - **Solo el día.** Las recuperaciones van con ARG-ID `-REC-`, **ventana de origen declarada** y **fuera
   de todos los totales**. ⚠️ **Y un hecho YA PUBLICADO no vuelve como `-REC-`: eso es duplicación.**
   **Es el criterio que separó, en ARGOS 117, a Zinapécuaro —inédito, lleva ficha— del rescate de Omealca
