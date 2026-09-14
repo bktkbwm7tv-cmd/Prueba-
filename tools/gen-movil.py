@@ -365,7 +365,11 @@ def titulo_de(pagina, indice):
             # enumeración descriptiva del masthead, que no cabe en la barra
             # de navegación de un teléfono y se descarta.
             sufijo = corto[len(clave):].strip()
-            if re.fullmatch(r"\(I+\)", sufijo):
+            # Numeral romano de "CRIMEN ORGANIZADO (I)" … "(VI)". La expresión
+            # anterior solo aceptaba I, II y III: a partir de ARGOS 119 el bloque
+            # se reparte en seis páginas y (IV), (V) y (VI) caían al caso general,
+            # de modo que seis entradas de la navegación móvil se llamaban igual.
+            if re.fullmatch(r"\([IVX]+\)", sufijo):
                 return f"{abrev} {sufijo}"
             return abrev
     return corto
@@ -385,8 +389,20 @@ NAV_ABREV = {
     "AUDITORÍA RETROACTIVA": "AUDITORÍA",
     "TABLERO EJECUTIVO": "TABLERO",
 }
+def nav_txt(t):
+    """Etiqueta de la barra de navegación: tabla primero, abreviatura genérica
+    después. Sin la segunda, cada numeral romano nuevo exigía una entrada más en
+    NAV_ABREV y, mientras no se añadía, el enlace salía con el título largo."""
+    if t in NAV_ABREV:
+        return NAV_ABREV[t]
+    t = t.replace("CRIMEN ORGANIZADO", "C. ORGANIZADO")
+    # El numeral va sin paréntesis en la barra, como en las dos entradas que ya
+    # figuraban a mano en NAV_ABREV; si no, (III) en adelante se veían distintas.
+    return re.sub(r"\(([IVX]+)\)$", r"\1", t)
+
+
 nav_links = "\n".join(
-    f'    <a href="#s{n}">{NAV_ABREV.get(t, t)}</a>' for t, n in TITULOS)
+    f'    <a href="#s{n}">{nav_txt(t)}</a>' for t, n in TITULOS)
 m_nav = re.search(r'( *<a href="#s\d+">.*?</a>\n?)+', shell, re.S)
 if not m_nav:
     sys.exit("No se localizó la barra de navegación en el shell de la móvil anterior.")

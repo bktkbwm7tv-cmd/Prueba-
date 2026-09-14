@@ -234,7 +234,7 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-105-FE-003` | 105 | 2026-08-23 | ARG-105-FE-003 — FE DE ERRATAS: ARGOS 95 pasa de 3 a 5 🟡 y de 8 a 10 🟢 |
 | `ARG-105-FE-004` | 105 | 2026-08-23 | ARG-105-FE-004 — CONSTANCIA: ARG-105-REC-001 (Saltillo) cae en un intervalo que ninguna edición cubre; la serie no tiene ARGOS 89. Ningún conteo se rectifica |
 | `ARG-105-FE-005` | 105 | 2026-08-23 | ARG-105-FE-005 — FE DE ERRATAS: se retira el detalle de ARG-104-SEN-001 (Durango). Pena queda en «más de 7 años», no sumable; multa y reparación CANTIDAD NO DETERMINADA. La sentencia se conserva |
-**Total de ARG-ID indexados: 216** · Ediciones cubiertas: 19 archivos de fuentes.
+**Total de ARG-ID indexados: 262** · Ediciones cubiertas: 21 archivos de fuentes (ARGOS 88-106 y 119; las ediciones 107-118 no están en el repositorio).
 
 > Los `ARG-105-REC-*` y `ARG-105-FE-*` son **registros de archivo**: quedan documentados en
 > `reports/argos-2026-08-23-fuentes.md`, no en el cartelón, que publica únicamente los hechos
@@ -254,3 +254,41 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-106-REC-004` | 106 | 2026-08-24 | ARG-106-REC-004 — Predio "El Willy", Casas Grandes, Chihuahua: nuevos restos óseos y osamenta incompleta; acumulado en conflicto entre 56 y ~100 (🔴). Ventana de origen: ARGOS 105 |
 | `ARG-106-SEN-REC-001` | 106 | 2026-08-24 | ARG-106-SEN-REC-001 — FGJE Sonora, Hermosillo: 28a 3d por homicidio y lesiones a 2 personas, juicio oral. PENA COMPUESTA — no sumable. Ventana de origen: ARGOS 105 |
 | `ARG-106-SEN-REC-002` | 106 | 2026-08-24 | ARG-106-SEN-REC-002 — FGE Guanajuato, León: 27a 11m a Christian Gustavo "N" por el feminicidio de su madre. Ventana de origen: ARGOS 105 |
+
+> **Salto de numeración en el índice: de ARGOS 106 a ARGOS 119.** No es un hueco de la serie: las
+> ediciones **107 a 118 existen y no están en este repositorio**. Mientras no se integren, ningún
+> cruce automático puede alcanzarlas y los deslindes que las citan se publican tal como los trae el
+> corte. Deuda anotada en `reports/_pendientes.md`.
+
+| `ARG-119-001` | 119 | 2026-09-13 | ARG-119-001 — Chilpancingo de los Bravo (Tlahuizapa y Coacoyulillo), Guerrero: grupo armado agrede a militares en patrullaje de la Operación Xaltianguis; 2 detenidos de "Los Ardillos", 2 largas, 304 cartuchos. Pobladores de Coacoyulillo confrontan a la tropa (🔴) |
+| `ARG-119-002` | 119 | 2026-09-13 | ARG-119-002 — Apatzingán (Centro), Michoacán: cuatro personas asesinadas dentro del Hotel Chula Vista, calle Heriberto Jara 52. Sin detenidos y sin víctimas identificadas (🔴) |
+| `ARG-119-003` | 119 | 2026-09-13 | ARG-119-003 — Mazatlán (col. Palos Prietos), Sinaloa: asesinan a un elemento ACTIVO de la Guardia Nacional comisionado en Oaxaca y a su acompañante en una habitación de hotel. Sin detenidos (🔴) |
+| `ARG-119-004` | 119 | 2026-09-13 | ARG-119-004 — Elota (Emiliano Zapata), Sinaloa: civiles armados disparan contra el GOES de la PEP; 2 detenidos, 3 armas con calibre publicado, 466 cartuchos, 8 cargadores y 2 camionetas con reporte de robo (🔴) |
+| `ARG-119-005` | 119 | 2026-09-13 | ARG-119-005 — Amecameca (San Pedro Nexapa), Estado de México: policías de investigación de la FGJEM repelidos al cumplimentar una orden por secuestro; 1 mujer abatida, 1 elemento herido, 4 detenidos (🟡) |
+| `ARG-119-006` | 119 | 2026-09-13 | ARG-119-006 — San Martín Texmelucan (col. Ojo de Agua), Puebla: SEMAR y Policía Municipal repelidas a tiros al seguir un vehículo con tanques de gas LP; 1 muerto, 1 herido. Detenidos contradichos (1 o 2), no arbitrado (🟡) |
+| `ARG-119-007` | 119 | 2026-09-13 | ARG-119-007 — Ciudad Obregón, Cajeme (col. Reforma), Sonora: asesinan de dos disparos a José Luis Esparza "El Piturris" en una taquería. Sin detenidos. Reserva expresa sobre la condición de la víctima (🟡) |
+| `ARG-119-008` | 119 | 2026-09-13 | ARG-119-008 — Escuinapa (La Campana y Palmillas), Sinaloa: dos camionetas abandonadas con 10 armas largas, 1,900 cartuchos, 44 cargadores y 20 AEI. Sin detenidos (🟢) |
+| `ARG-119-009` | 119 | 2026-09-13 | ARG-119-009 — Ahuacatlán (loc. La Gloria), Nayarit: fusil Barrett cal. .50, 3 largas y 1 corta, 530 cartuchos, 20 cargadores, 5 granadas de 40 mm, 1 lanzagranadas y 5 AEI; 1 detenido. EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE, hecho del 5-sep (🟢) |
+| `ARG-119-010` | 119 | 2026-09-13 | ARG-119-010 — Tamazula, Durango: 1 ametralladora, 1 fusil, 2 cargadores, 145 cartuchos y 1 AEI. Sin detenidos publicados (🟢) |
+| `ARG-119-011` | 119 | 2026-09-13 | ARG-119-011 — Límite municipal León - San Felipe, Guanajuato: cateo de la FSPE con 3 detenidos, 1 pistola cal. .380 ACP, 2 cargadores y 753 cartuchos. Boletín oficial con fecha en la ruta, sin réplica de medios (🟢) |
+| `ARG-119-012` | 119 | 2026-09-13 | ARG-119-012 — Ajacuba (San Nicolás Tecomatlán), Hidalgo: cateo por narcomenudeo de la AIC de la PGJEH; 5 detenidos y 10 armas de fuego (2 cortas y 8 largas) (🟢) |
+| `ARG-119-013` | 119 | 2026-09-13 | ARG-119-013 — Querétaro y Corregidora, Querétaro: Operativo Sinergia, 8 cateos simultáneos y 9 detenidos. Sin armamento publicado (🟢) |
+| `ARG-119-014` | 119 | 2026-09-13 | ARG-119-014 — Chilpancingo de los Bravo (El Ocotito), Guerrero: 4 detenidos más de "Los Ardillos" con 75 dosis de cristal, prendas de camuflaje y 1 motocicleta. Sin armamento (🟢) |
+| `ARG-119-015` | 119 | 2026-09-13 | ARG-119-015 — Tijuana (col. Granjas Familiares), Baja California: la FESC detiene por denuncia ciudadana a 2 personas originarias de Sinaloa con 2 cortas y 3 largas de grueso calibre (🟢) |
+| `ARG-119-016` | 119 | 2026-09-13 | ARG-119-016 — Veracruz, municipio no individualizado: 6 detenidos, 8 armas cortas, 1 hechiza sin categoría y 40 vehículos recuperados. FRONTERA DE VENTANA — HORA NO FIJADA (🟢) |
+| `ARG-119-017` | 119 | 2026-09-13 | ARG-119-017 — Veracruz, cateos en once municipios: 30 detenciones, 3 por portación, con 1 arma corta y 2 largas. Solo se integran los 3 detenidos del aseguramiento (🟢) |
+| `ARG-119-018` | 119 | 2026-09-13 | ARG-119-018 — Benemérito de las Américas, Chiapas: 2 armas cortas, 2 cargadores, 1 chaleco táctico y 1 vehículo; 1 detenido. No es el acervo NO FECHABLE de ARGOS 88-89 (🟢) |
+| `ARG-119-019` | 119 | 2026-09-13 | ARG-119-019 — Parras (ejido Paila), Coahuila: la Guardia Nacional intercepta un tractocamión con 50,000 litros de hidrocarburo. Sin detenidos publicados (🟢) |
+| `ARG-119-ARM-001` | 119 | 2026-09-13 | ARG-119-ARM-001 — Escuinapa (La Campana y Palmillas), Sinaloa: 10 largas, 1,900 cartuchos, 44 cargadores, 20 AEI, 0 detenidos (🟢) |
+| `ARG-119-ARM-002` | 119 | 2026-09-13 | ARG-119-ARM-002 — Ahuacatlán (loc. La Gloria), Nayarit: 1 corta, 3 largas —una el Barrett cal. .50—, 530 cartuchos, 20 cargadores, 5 granadas, 5 AEI, 1 detenido (🟢) |
+| `ARG-119-ARM-003` | 119 | 2026-09-13 | ARG-119-ARM-003 — Ajacuba (San Nicolás Tecomatlán), Hidalgo: 2 cortas y 8 largas, 5 detenidos. Cartuchos y cargadores no publicados (🟢) |
+| `ARG-119-ARM-004` | 119 | 2026-09-13 | ARG-119-ARM-004 — Chilpancingo (Tlahuizapa y Coacoyulillo), Guerrero: 2 largas, 304 cartuchos, 3 cargadores, 2 detenidos (🔴, armamento vinculado a evento de alto impacto) |
+| `ARG-119-ARM-005` | 119 | 2026-09-13 | ARG-119-ARM-005 — Veracruz, municipio no individualizado: 8 cortas, 1 hechiza sin categoría, 6 detenidos. Cartuchos y cargadores sin cifra (🟢) |
+| `ARG-119-ARM-006` | 119 | 2026-09-13 | ARG-119-ARM-006 — Tijuana (col. Granjas Familiares), Baja California: 2 cortas y 3 largas, 2 detenidos. Cargadores sin cifra, no integrados (🟢) |
+| `ARG-119-ARM-007` | 119 | 2026-09-13 | ARG-119-ARM-007 — Tamazula, Durango: 2 largas —1 ametralladora y 1 fusil—, 145 cartuchos, 2 cargadores, 1 AEI, 0 detenidos (🟢) |
+| `ARG-119-ARM-008` | 119 | 2026-09-13 | ARG-119-ARM-008 — Elota (Emiliano Zapata), Sinaloa: 2 cortas, 1 larga, 466 cartuchos y 8 cargadores con calibre publicado, 2 detenidos (🔴, armamento vinculado a evento de alto impacto) |
+| `ARG-119-ARM-009` | 119 | 2026-09-13 | ARG-119-ARM-009 — Límite León - San Felipe, Guanajuato: 1 corta cal. .380 ACP, 753 cartuchos, 2 cargadores, 3 detenidos (🟢) |
+| `ARG-119-ARM-010` | 119 | 2026-09-13 | ARG-119-ARM-010 — Veracruz, cateos en once municipios: 1 corta y 2 largas, 3 detenidos por portación. Municiones sin cifra (🟢) |
+| `ARG-119-ARM-011` | 119 | 2026-09-13 | ARG-119-ARM-011 — Benemérito de las Américas, Chiapas: 2 cortas, 2 cargadores, 1 detenido (🟢) |
+| `ARG-119-SEN-001` | 119 | 2026-09-13 | ARG-119-SEN-001 — FGR, costas de Lázaro Cárdenas, Michoacán: 19a 6m 20d y $1,115,827.44 de multa a 4 tripulantes por contra la salud (650 kg de cocaína) e hidrocarburo. PENA COMPUESTA — no se suma al acumulado nacional |
+| `ARG-119-SEN-002` | 119 | 2026-09-13 | ARG-119-SEN-002 — FGE Michoacán, Región Zamora: 3a 3m a Oscar "N", exservidor público, por cohecho y delitos contra la administración de justicia. Abreviado con sentencia; reparación de $20,000 cubierta |

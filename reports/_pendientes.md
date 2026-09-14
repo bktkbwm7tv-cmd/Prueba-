@@ -8,7 +8,7 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 106 (corte 2026-08-24).
+**Última actualización**: ARGOS 119 (corte 2026-09-13).
 
 ---
 
@@ -26,6 +26,61 @@ cualquier otra consideración de formato.**
 | **Explicación al mínimo** | Es un análisis para un mando: hecho, entidad, municipio, fecha, cifras con su desglose, fuente, confianza y ARG-ID. Lo demás sobra |
 
 ---
+
+## ⚠ ARGOS 119 — LA DEUDA DE INFRAESTRUCTURA YA SE COBRA EN EL CONTROL DE DUPLICIDAD
+
+**El repositorio salta de ARGOS 106 a ARGOS 119.** Las ediciones **107 a 118 existen** —el corte de
+la 119 cita doce de sus fichas— **y no están aquí**. La rama de trabajo conserva hasta
+`argos-2026-08-24.html`.
+
+Consecuencia medible, no teórica: **`editor-duplicidad` solo pudo cruzarse contra ARGOS 88-106**.
+Los **nueve deslindes** de la edición que citan ese tramo —`ARG-107-002`, `ARG-110-002`,
+`ARG-111-002`, `ARG-112-004`, `ARG-115-007`, `ARG-117-001/002/004`, `ARG-118-001` a `-005`,
+`ARG-118-REC-001`— **se publican tal como los trae el corte, sin verificación independiente**. No es
+una omisión del corte: es la deuda «Mergear las ramas de edición a `main`», abierta desde ARGOS 102,
+cobrándose por segunda vez y ahora **sobre un control editorial obligatorio**.
+
+**Qué lo cierra**: integrar las ramas de las ediciones 107 a 118 en la rama de trabajo. Mientras no
+ocurra, **ninguna edición posterior puede declarar que ejecutó el control de duplicidad completo**, y
+debe decir contra qué tramo lo ejecutó.
+
+### El ciclo de rotación declarado no coincide con el que toca por tabla
+
+ARGOS 119 declara **Ciclo C** (Occidente + Sureste). Por la tabla de `CLAUDE.md` le correspondería
+**Ciclo A** (Noroeste + Centro). La desviación **puede ser legítima** —la regla de prioridad sobre el
+ciclo manda saldar entidades `NO REVISADA` antes que mantener el turno—, pero **no es comprobable sin
+las ediciones 107 a 118**. Queda abierto: **la edición 120 debe declarar si reanuda en A o continúa
+tras C**, y por qué.
+
+## Seguimientos abiertos por los hechos de ARGOS 119
+
+| Desde | Caso | Qué falta | Qué lo cierra |
+|---|---|---|---|
+| ARGOS 119 | **Los 26 AEI de la sierra Sinaloa-Nayarit-Durango** (`ARG-119-008/009/010`) | **Ninguno de los 26 tiene tipo, carga ni sistema de iniciación publicados**, igual que los 22 de Guerrero del corte anterior: el archivo acumula **50 piezas explosivas sin caracterizar**. Escuinapa suma **47 AEI** con los 27 de ARGOS 103 (`HEREDADO — NO REVERIFICADO`) | El **peritaje comparado** de iniciadores, contenedores y carga entre Escuinapa, Ahuacatlán, Tamazula y Guerrero. Es lo que localiza el taller, y es la línea de mayor rendimiento abierta |
+| ARGOS 119 | **Apatzingán — Hotel Chula Vista** (`ARG-119-002`) | **Cuatro víctimas sin identificar**, móvil no publicado, cero detenidos y **ninguna fuente institucional**: es el hecho con más víctimas del corte y el peor sostenido | Un boletín de la FGE de Michoacán y la identificación forense de los cuatro |
+| ARGOS 119 | **Mazatlán — el elemento activo de la GN** (`ARG-119-003`) | **Por qué un elemento comisionado en Oaxaca estaba en Sinaloa**: permiso, adscripción y quién lo sabía. Identidad y vínculo de la segunda víctima. Ninguna fuente publica móvil, y **no se infiere** | Un pronunciamiento de la Guardia Nacional sobre su situación administrativa y el boletín de la FGE de Sinaloa |
+| ARGOS 119 | **San Martín Texmelucan — detenidos contradichos** (`ARG-119-006`) | **1 o 2 detenidos**, `CONTRADICHA — NO ARBITRADA`. Determina si hay un **tercer implicado en fuga**. Sin comunicado oficial de SEMAR ni del municipio | El **registro de puesta a disposición**. No más notas: tres coberturas regionales ya discrepan entre sí |
+| ARGOS 119 | **Ciudad Obregón — la condición de la víctima** (`ARG-119-007`) | «El Piturris» participaba en un pódcast; **ninguna fuente lo acredita como periodista o persona defensora**. Si una lo hace, **el hecho sube a 🔴 por fe de erratas de color** | Una fuente que acredite la condición, o el cierre expreso de la línea. Pendiente aparte: el **cotejo balístico** Ciudad Obregón-El Conti, atribuido y no acreditado |
+| ARGOS 119 | **Ahuacatlán — el Barrett, las granadas y el lanzagranadas** (`ARG-119-009`) | **Tercer Barrett cal. .50 del archivo en seis días** (dos en Esperanza, Puebla). Lote y procedencia de las **5 granadas de 40 mm**, que es donde deja rastro documental | Números de serie del Barrett y de los dos de Esperanza, y el cotejo del lote de granadas contra existencias militares |
+| ARGOS 119 | **Tamazula — la ametralladora sin calificar** (`ARG-119-010`) | Ninguna fuente la califica de **pesada**, de modo que **no se integra a armamento especial**. Falta **una palabra del boletín** y su ausencia degrada la lectura de capacidad de fuego | Calibre, calificación y serie en el boletín federal |
+| ARGOS 119 | **Amecameca — la víctima de secuestro sigue sin localizar** (`ARG-119-005`) | **Seis personas aseguradas (2 el 24-ago y 4 el 9-sep) y cero localizaciones.** Armamento asegurado **no publicado**, por lo que el hecho no alimenta el conteo | La carpeta y la causa penal de la FGJEM, y si las dos detenciones están en el mismo expediente |
+| ARGOS 119 | **Guanajuato y Querétaro — boletín primario sin réplica** (`ARG-119-011`, `ARG-119-013`) | Ambas filas quedan `PENDIENTE DE CORROBORACIÓN INDEPENDIENTE`: **ningún medio replicó el boletín**. En Guanajuato falta además **la categoría del arma** —una palabra— para poder contarla en cortas o largas | Una segunda fuente, o el desglose ampliado del propio emisor |
+| ARGOS 119 | **Veracruz — dos filas sin municipio individualizado** (`ARG-119-016`, `ARG-119-017`) | El emisor publica **agregados**: 43 detenciones en 36 municipios y 30 en once. Sin municipio por hecho, las cifras de armas no son explotables y las de detenidos **no se integran salvo las de portación** | El desglose por municipio. **La FGE de Veracruz es vacío acreditado**: la vía es el portal del Gobierno del Estado |
+| ARGOS 119 | **Tijuana — cargadores sin cifra** (`ARG-119-015`) | `CANTIDAD NO DETERMINADA`: cinco armas cuya autonomía de fuego **no se puede comparar** con Escuinapa ni Ajacuba. Cartuchos tampoco publicados | El boletín de la FESC con desglose numérico |
+| ARGOS 119 | **`ARG-119-SEN-001` — pena compuesta** | «19 años, 6 meses y 20 días **en contra de 4 personas**», sin decir «a cada uno», y la multa tratada como cantidad única. **Los años no se integran al acumulado nacional** | Lectura directa del **comunicado 612/26 de la FGR**. Si la pena es por persona, el acumulado sube en cerca de **59 años** |
+| ARGOS 119 | **`ARG-119-016` — frontera de ventana** | `FRONTERA DE VENTANA — HORA NO FIJADA`, marca **permanente**. El boletín se publicó el mismo día en que cerró ARGOS 118 (10:38) | Un ancla horaria. Si resulta anterior a las 10:38, **fe de erratas y retiro del total de esta edición** |
+| ARGOS 119 | **Doce candidatos judiciales no integrados** | Ocho por `FECHA NO FIJADA`, tres por `PENDIENTE DE CONFIRMACIÓN OFICIAL`, uno por fuera de ventana. Entre ellos, **50 años en Toluca**, **50 años en Comalcalco**, **33a 4m en Sinaloa** y **21a 10m 15d en Hueypoxtla** | El boletín primario de cada fiscalía. **El umbral asimétrico no se relaja**: una sentencia inexistente atribuida a una persona con nombre no se corrige con una fe de erratas |
+| ARGOS 119 | **Cuatro eventos de armamento no integrados** | **Los Amates** (6 largas, 1,374 cartuchos, 43 cargadores) y **Huehuetán** por fuente única; **Cosío** (17 largas, 1 rifle cal. .50) por `FECHA NO FIJADA`, **tercera vez**; **Sonora** por fuente única y porque «más de 5,400» no es cifra | Una segunda fuente o una URL fechada. ⚠️ **Cosío entra en el umbral de fe de erratas**: una edición más sin respaldo y se retira formalmente |
+
+## Deuda de método abierta por ARGOS 119
+
+| Desde | Asunto | Acción pendiente |
+|---|---|---|
+| ARGOS 119 | **El control de duplicidad se ejecutó contra un archivo incompleto** | Ver el bloque de cabecera. **Toda edición posterior debe declarar contra qué tramo del archivo cruzó**, mientras las ramas 107-118 no estén integradas |
+| ARGOS 119 | **La ventana de casi cinco días es una anomalía, no una mejora** | 117 h 50 min frente a 26 h 22 min: **4,5 veces**. Más hechos absolutos y **menos densidad** (0,16 frente a 0,19 hechos/hora). Obligó a advertir la incomparabilidad en tres lugares del producto. **Mientras el hueco entre ediciones persista, los totales de la serie no son comparables entre sí** |
+| ARGOS 119 | **El calibre se publica cuando la corporación quiere** | De **51 armas integradas, 4 llevan calibre** —3 de la SSP de Sinaloa y 1 de la FSPE de Guanajuato— y **ninguna número de serie**. Campo de coste cero para el emisor; sin él **ningún aseguramiento es cotejable**. Tercer corte consecutivo pidiéndolo |
+| ARGOS 119 | **El arbitraje puede reforzar una fila, no solo retirarla** | `ARG-119-009` entró en el borrador con confianza **Bajo** y salió con **Medio** al localizarse el comunicado militar, que además **corrigió el desglose**: el Barrett era pieza **adicional** a las dos largas y el borrador habría perdido un arma larga del total nacional. **Registrar los arbitrajes al alza, no solo los que retiran** |
+| ARGOS 119 | **El generador móvil volvió a suponer una estructura fija** | La navegación solo reconocía los numerales romanos **I, II y III**: con seis páginas de Crimen Organizado, `(IV)`, `(V)` y `(VI)` caían al caso general y **seis entradas de la barra se llamaban igual**. Corregido en `tools/gen-movil.py` —numeral romano genérico y abreviatura por defecto—, **en la herramienta, no en su salida**. Es el mismo modo de fallo que la serie lleva registrando desde ARGOS 97 |
 
 ## ⚠ ARGOS 106 — DOS HALLAZGOS QUE CAMBIAN LA SERIE
 
