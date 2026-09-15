@@ -138,7 +138,7 @@
   .biblio li{margin-left:16px;}
 
   .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-  .toolbar{position:fixed;top:14px;right:14px;z-index:90;display:flex;gap:8px;}
+  .toolbar{position:fixed;top:14px;right:14px;z-index:90;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;max-width:96vw;}
   .toolbar button{font-family:var(--mono);font-size:10px;letter-spacing:1px;background:var(--panel-2);color:var(--cyan);border:1px solid var(--border);padding:8px 12px;cursor:pointer;border-radius:2px;}
   .toolbar button:hover{border-color:var(--cyan);}
 
@@ -180,11 +180,11 @@
     .page{padding:14px 14px 60px;min-height:0;gap:12px;}
     .toolbar{
       position:sticky; top:0; right:auto; left:0;
-      width:100%; justify-content:center;
+      width:100%; justify-content:center; flex-wrap:wrap; row-gap:6px;
       background:var(--bg-navy); border-bottom:1px solid var(--border);
-      padding:8px 0; margin-bottom:0; z-index:100;
+      padding:8px 10px; margin-bottom:0; z-index:100;
     }
-    .toolbar button{padding:10px 16px;font-size:10px;}
+    .toolbar button{padding:9px 12px;font-size:9.5px;}
 
     .masthead{grid-template-columns:1fr;text-align:center;gap:8px;padding-bottom:10px;}
     .masthead .corte{text-align:center;}
@@ -275,6 +275,37 @@
   #manual-save-btn:hover{border-color:var(--green);}
   #manual-save-btn.just-saved{background:rgba(51,209,122,.18);color:var(--green);border-color:var(--green);}
   #index-btn{position:relative;}
+  #send-case-btn{color:var(--yellow);border-color:rgba(255,210,63,.4);}
+  #send-case-btn:hover{border-color:var(--yellow);}
+  .case-active-label{font-family:var(--mono);font-size:10px;color:var(--white);align-self:center;white-space:nowrap;max-width:180px;overflow:hidden;text-overflow:ellipsis;}
+
+  /* ---------- PANTALLA DE CASOS ---------- */
+  .case-box{width:480px;}
+  .case-list{display:flex;flex-direction:column;gap:8px;max-height:50vh;overflow-y:auto;}
+  .case-item{
+    display:flex;align-items:center;justify-content:space-between;gap:10px;
+    border:1px solid var(--border);background:var(--panel-2);padding:10px 12px;
+  }
+  .case-item-info{display:flex;flex-direction:column;gap:2px;font-size:12.5px;color:var(--white);}
+  .case-item-info span{font-family:var(--mono);font-size:9.5px;color:var(--cyan-dim);}
+  .case-item-actions{display:flex;gap:6px;flex-shrink:0;}
+  .case-item-actions button{
+    font-family:var(--mono);font-size:10px;letter-spacing:1px;cursor:pointer;border-radius:2px;
+    background:var(--panel);color:var(--cyan);border:1px solid var(--border);padding:7px 10px;
+  }
+  .case-item-actions button:hover{border-color:var(--cyan);}
+  .case-item-actions .delete-case-btn{color:var(--red);border-color:rgba(255,59,59,.4);}
+  .case-item-actions .delete-case-btn:hover{border-color:var(--red);}
+  #new-case-btn{
+    font-family:var(--mono);font-size:11px;letter-spacing:1px;background:var(--panel-2);
+    color:var(--green);border:1px solid rgba(51,209,122,.4);padding:11px 12px;cursor:pointer;
+    border-radius:2px;
+  }
+  #new-case-btn:hover{border-color:var(--green);}
+  @media (max-width:640px){
+    .case-box{width:100%;}
+    .case-active-label{max-width:120px;}
+  }
   .index-panel{
     position:fixed;top:52px;right:14px;z-index:150;
     width:280px;max-width:88vw;max-height:min(70vh,520px);overflow-y:auto;
@@ -331,8 +362,11 @@
 
 <div class="toolbar no-print">
   <span id="save-status" class="save-status"></span>
-  <button type="button" id="index-btn">📑 ÍNDICE</button>
-  <button type="button" id="manual-save-btn">💾 GUARDAR</button>
+  <span id="case-active-label" class="case-active-label"></span>
+  <button type="button" id="case-nav-btn" style="display:none;">🗂 CASOS</button>
+  <button type="button" id="index-btn" style="display:none;">📑 ÍNDICE</button>
+  <button type="button" id="manual-save-btn" style="display:none;">💾 GUARDAR</button>
+  <button type="button" id="send-case-btn" style="display:none;">📤 ENVIAR</button>
   <button type="button" id="lock-again-btn" style="display:none;">🔒 BLOQUEAR</button>
   <button onclick="window.print()">IMPRIMIR / PDF</button>
 </div>
@@ -366,8 +400,9 @@
 
     <div id="lock-create" class="lock-panel">
       <p class="lock-note">
-        Este dispositivo no tiene un caso guardado todavía. Crea una contraseña para cifrar lo que
-        se guarde aquí — contiene datos de una persona no localizada.
+        Este dispositivo no tiene casos guardados todavía. Crea una contraseña para cifrar lo que
+        se guarde aquí — vas a poder guardar varios casos de personas no localizadas en este mismo
+        dispositivo, todos protegidos con esta misma contraseña.
       </p>
       <label for="lock-pass-new">Nueva contraseña</label>
       <input type="password" id="lock-pass-new" autocomplete="new-password">
@@ -378,20 +413,33 @@
     </div>
 
     <div id="lock-unlock" class="lock-panel" style="display:none;">
-      <p class="lock-note">Hay un caso guardado en este dispositivo, cifrado. Ingresa la contraseña para abrirlo.</p>
+      <p class="lock-note">Hay casos guardados en este dispositivo, cifrados. Ingresa la contraseña para abrirlos.</p>
       <label for="lock-pass-unlock">Contraseña</label>
       <input type="password" id="lock-pass-unlock" autocomplete="current-password">
       <div class="lock-error" id="lock-unlock-error"></div>
       <button type="button" id="lock-unlock-btn">DESBLOQUEAR</button>
-      <button type="button" id="lock-wipe-btn" class="lock-danger">BORRAR DATOS GUARDADOS (si se olvidó la contraseña)</button>
+      <button type="button" id="lock-wipe-btn" class="lock-danger">BORRAR TODOS LOS CASOS (si se olvidó la contraseña)</button>
     </div>
 
     <div class="lock-disclaimer">
       Esto cifra (AES-256) lo que se guarda en el almacenamiento de este navegador con la
       contraseña que ingreses. No es un sistema de cuentas por persona, no distingue quién accedió
-      ni cuándo, y cualquiera que conozca esta contraseña puede desbloquear. La contraseña no se
-      guarda en ningún lado: si se olvida, los datos guardados no se pueden recuperar.
+      ni cuándo, y cualquiera que conozca esta contraseña puede desbloquear y ver todos los casos
+      guardados en este dispositivo. La contraseña no se guarda en ningún lado: si se olvida, los
+      datos guardados no se pueden recuperar.
     </div>
+  </div>
+</div>
+
+<div id="case-screen" class="lock-screen no-print" hidden>
+  <div class="lock-box case-box">
+    <div class="lock-title">ARGOS-TURVEY<br>CASOS EN ESTE DISPOSITIVO</div>
+    <p class="lock-note">
+      Cada caso corresponde a una persona no localizada. Ábrelo para seguir llenándolo, o crea uno
+      nuevo. Todos comparten la contraseña de este dispositivo.
+    </p>
+    <div id="case-list" class="case-list"></div>
+    <button type="button" id="new-case-btn">＋ NUEVO CASO</button>
   </div>
 </div>
 
@@ -1167,7 +1215,8 @@ function renderOpenTable(containerId, columns, initialRows){
   if (!el) return;
   const tableId = containerId + "-table";
   let rowIndex = 0;
-  function addRow(tbody){
+  let tbody = null;
+  function addRow(){
     const tr = document.createElement("tr");
     const ri = rowIndex++;
     columns.forEach(function(c, ci){
@@ -1177,16 +1226,21 @@ function renderOpenTable(containerId, columns, initialRows){
     });
     tbody.appendChild(tr);
   }
-  let html = '<div class="table-scroll"><table class="exec" id="' + tableId + '"><thead><tr>' +
-    columns.map(function(c){ return "<th>" + c + "</th>"; }).join("") +
-    '</tr></thead><tbody></tbody></table></div>' +
-    '<button type="button" class="add-row-btn no-print">+ AGREGAR FILA</button>';
-  el.innerHTML = html;
-  const tbody = el.querySelector("tbody");
-  for (let i = 0; i < (initialRows || 4); i++) addRow(tbody);
-  el.querySelector(".add-row-btn").addEventListener("click", function(){ addRow(tbody); onFormChanged(); });
+  function build(){
+    let html = '<div class="table-scroll"><table class="exec" id="' + tableId + '"><thead><tr>' +
+      columns.map(function(c){ return "<th>" + c + "</th>"; }).join("") +
+      '</tr></thead><tbody></tbody></table></div>' +
+      '<button type="button" class="add-row-btn no-print">+ AGREGAR FILA</button>';
+    el.innerHTML = html;
+    tbody = el.querySelector("tbody");
+    rowIndex = 0;
+    for (let i = 0; i < (initialRows || 4); i++) addRow();
+    el.querySelector(".add-row-btn").addEventListener("click", function(){ addRow(); onFormChanged(); });
+  }
+  build();
   OPEN_TABLES[containerId] = {
-    ensureRows: function(minRows){ while (rowIndex < minRows) addRow(tbody); }
+    ensureRows: function(minRows){ while (rowIndex < minRows) addRow(); },
+    reset: function(){ build(); }
   };
 }
 renderOpenTable("tbl-entrevistas",
@@ -1234,9 +1288,11 @@ renderFreeGrid("grid-cierre", CIERRE_VALIDACION_PAIRS);
    del dato en reposo en este dispositivo, no un sistema de acceso por
    persona.
 =================================================================== */
-const STORAGE_KEY = "argos_turvey_case_v1";
+const STORAGE_KEY = "argos_turvey_vault_v1";
 let sessionKey = null;
 let saveTimer = null;
+let VAULT = null;          // { cases: { <caseId>: { label, createdAt, updatedAt, data } } }
+let currentCaseId = null;
 
 function b64FromBytes(bytes){
   let bin = "";
@@ -1304,36 +1360,134 @@ function applyFormData(data){
   });
 }
 
+function resetFormToBlank(){
+  document.querySelectorAll('#app-content input[type=radio]:checked').forEach(function(r){ r.checked = false; });
+  document.querySelectorAll('#app-content input[type=text][data-key]').forEach(function(i){ i.value = ""; });
+  document.querySelectorAll('#app-content textarea[data-key]').forEach(function(t){ t.value = ""; });
+  Object.keys(OPEN_TABLES).forEach(function(id){ OPEN_TABLES[id].reset(); });
+}
+
 function setStatus(text){
   const el = document.getElementById("save-status");
   if (el) el.textContent = text;
 }
 
+function caseLabelFromData(data){
+  const name = data && data.texts && data.texts["ctrl-caso:0"];
+  return (name && name.trim()) ? name.trim() : "Caso sin nombre";
+}
+
+async function persistVault(){
+  if (!sessionKey || !VAULT) return;
+  const enc = await encryptJSON(sessionKey, VAULT);
+  const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null") || {};
+  localStorage.setItem(STORAGE_KEY, JSON.stringify({
+    salt: stored.salt, iv: enc.iv, ct: enc.ct, savedAt: new Date().toISOString()
+  }));
+}
+
 async function saveNow(){
-  if (!sessionKey) return;
+  if (!sessionKey || !currentCaseId || !VAULT) return;
   try {
-    const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
-    if (!stored || !stored.salt) return;
-    const enc = await encryptJSON(sessionKey, collectFormData());
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({
-      salt: stored.salt, iv: enc.iv, ct: enc.ct, savedAt: new Date().toISOString()
-    }));
+    const data = collectFormData();
+    const c = VAULT.cases[currentCaseId];
+    c.data = data;
+    c.label = caseLabelFromData(data);
+    c.updatedAt = new Date().toISOString();
+    await persistVault();
     setStatus("🔒 Guardado " + new Date().toLocaleTimeString("es-MX", { hour: "2-digit", minute: "2-digit" }));
   } catch (e) {
     setStatus("⚠ Error al guardar");
   }
 }
 function onFormChanged(){
-  if (!sessionKey) return;
+  if (!sessionKey || !currentCaseId) return;
   setStatus("Guardando…");
   clearTimeout(saveTimer);
   saveTimer = setTimeout(saveNow, 700);
+}
+
+/* ---------- PANTALLA DE CASOS (varios casos por dispositivo) ---------- */
+function renderCaseList(){
+  const list = document.getElementById("case-list");
+  const ids = Object.keys(VAULT.cases).sort(function(a, b){
+    return (VAULT.cases[b].updatedAt || "").localeCompare(VAULT.cases[a].updatedAt || "");
+  });
+  if (!ids.length) {
+    list.innerHTML = '<p class="lock-note">Todavía no hay casos guardados en este dispositivo. Crea el primero abajo.</p>';
+    return;
+  }
+  list.innerHTML = ids.map(function(id){
+    const c = VAULT.cases[id];
+    const when = c.updatedAt ? new Date(c.updatedAt).toLocaleString("es-MX") : "—";
+    return '<div class="case-item">' +
+      '<div class="case-item-info"><b>' + (c.label || "Caso sin nombre").replace(/</g, "&lt;") + '</b>' +
+      '<span>Última edición: ' + when + '</span></div>' +
+      '<div class="case-item-actions">' +
+        '<button type="button" class="open-case-btn" data-id="' + id + '">ABRIR</button>' +
+        '<button type="button" class="delete-case-btn" data-id="' + id + '" title="Eliminar este caso">🗑</button>' +
+      '</div></div>';
+  }).join("");
+  list.querySelectorAll(".open-case-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){ openCase(btn.dataset.id); });
+  });
+  list.querySelectorAll(".delete-case-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      const c = VAULT.cases[btn.dataset.id];
+      const ok = confirm('¿Eliminar el caso "' + (c.label || "Caso sin nombre") + '"? Esta acción no se puede deshacer.');
+      if (!ok) return;
+      delete VAULT.cases[btn.dataset.id];
+      persistVault();
+      renderCaseList();
+    });
+  });
+}
+
+function showCaseScreen(){
+  document.getElementById("case-screen").removeAttribute("hidden");
+  document.getElementById("app-content").setAttribute("hidden", "");
+  document.getElementById("case-active-label").textContent = "";
+  document.getElementById("send-case-btn").style.display = "none";
+  document.getElementById("case-nav-btn").style.display = "none";
+  document.getElementById("index-btn").style.display = "none";
+  document.getElementById("manual-save-btn").style.display = "none";
+  currentCaseId = null;
+  renderCaseList();
+}
+
+function openCase(id){
+  currentCaseId = id;
+  resetFormToBlank();
+  applyFormData(VAULT.cases[id].data);
+  document.getElementById("case-screen").setAttribute("hidden", "");
+  document.getElementById("app-content").removeAttribute("hidden");
+  document.getElementById("case-active-label").textContent = "📁 " + (VAULT.cases[id].label || "Caso sin nombre");
+  document.getElementById("send-case-btn").style.display = "";
+  document.getElementById("case-nav-btn").style.display = "";
+  document.getElementById("index-btn").style.display = "";
+  document.getElementById("manual-save-btn").style.display = "";
+  setStatus("");
+}
+
+async function newCase(){
+  const id = "case-" + Date.now();
+  const now = new Date().toISOString();
+  VAULT.cases[id] = { label: "Caso nuevo", createdAt: now, updatedAt: now, data: { radios: {}, texts: {} } };
+  await persistVault();
+  openCase(id);
+}
+
+async function backToCaseList(){
+  if (currentCaseId) await saveNow();
+  showCaseScreen();
 }
 
 function unlockUI(){
   document.getElementById("lock-screen").setAttribute("hidden", "");
   document.getElementById("app-content").classList.remove("locked");
   document.getElementById("lock-again-btn").style.display = "";
+  document.getElementById("case-nav-btn").style.display = "";
+  showCaseScreen();
 }
 
 function cryptoAvailable(){
@@ -1379,7 +1533,8 @@ function initLock(){
     try {
       const salt = crypto.getRandomValues(new Uint8Array(16));
       sessionKey = await deriveKey(p1, salt);
-      const enc = await encryptJSON(sessionKey, { radios: {}, texts: {} });
+      VAULT = { cases: {} };
+      const enc = await encryptJSON(sessionKey, VAULT);
       localStorage.setItem(STORAGE_KEY, JSON.stringify({
         salt: b64FromBytes(salt), iv: enc.iv, ct: enc.ct, savedAt: new Date().toISOString()
       }));
@@ -1402,7 +1557,11 @@ function initLock(){
       const key = await deriveKey(pass, bytesFromB64(stored.salt));
       const data = await decryptJSON(key, stored.iv, stored.ct);
       sessionKey = key;
-      applyFormData(data);
+      // Compatibilidad: bóvedas viejas de un solo caso (antes de esta versión) se migran a un caso único.
+      VAULT = (data && data.cases) ? data : { cases: { "case-migrado": {
+        label: caseLabelFromData(data || {}), createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(), data: data || { radios: {}, texts: {} }
+      } } };
       unlockUI();
       setStatus("🔒 Desbloqueado");
     } catch (e) {
@@ -1411,14 +1570,17 @@ function initLock(){
   });
 
   document.getElementById("lock-wipe-btn").addEventListener("click", function(){
-    const ok = confirm("¿Borrar TODOS los datos guardados de este caso en este dispositivo? Esta acción no se puede deshacer.");
+    const ok = confirm("¿Borrar TODOS los casos guardados en este dispositivo? Esta acción no se puede deshacer.");
     if (ok) { localStorage.removeItem(STORAGE_KEY); location.reload(); }
   });
 
   document.getElementById("lock-again-btn").addEventListener("click", async function(){
-    await saveNow();
+    if (currentCaseId) await saveNow();
     location.reload();
   });
+
+  document.getElementById("case-nav-btn").addEventListener("click", backToCaseList);
+  document.getElementById("new-case-btn").addEventListener("click", newCase);
 
   document.getElementById("app-content").addEventListener("input", onFormChanged);
   document.getElementById("app-content").addEventListener("change", onFormChanged);
@@ -1443,8 +1605,8 @@ initLock();
 
   const saveBtn = document.getElementById("manual-save-btn");
   saveBtn.addEventListener("click", async function(){
-    if (!sessionKey) {
-      alert("Primero desbloquea con la contraseña del caso para poder guardar.");
+    if (!sessionKey || !currentCaseId) {
+      alert("Primero abre un caso para poder guardar.");
       return;
     }
     await saveNow();
@@ -1457,6 +1619,109 @@ initLock();
     }, 1500);
   });
 })();
+
+/* ===================== ENVIAR CASO (Web Share API con archivo adjunto) ===================== */
+function buildCaseTextReport(label){
+  const MARC_LABEL = { si: "Sí", no: "No", pend: "Pendiente", na: "N/A" };
+  const NIVEL_LABEL = { bajo: "Bajo", medio: "Medio", alto: "Alto" };
+  const out = [];
+  out.push("BITÁCORA ARGOS-TURVEY");
+  out.push("Caso: " + label);
+  out.push("Exportado: " + new Date().toLocaleString("es-MX"));
+  out.push("=".repeat(64));
+
+  const seenTables = new Set();
+  const nodes = document.querySelectorAll(
+    "#app-content .section-head, #app-content .subsection-head, #app-content .ctrl-field, " +
+    "#app-content .chk-row, #app-content .matriz-row, #app-content .free-field, #app-content table.exec"
+  );
+  nodes.forEach(function(el){
+    if (el.classList.contains("section-head")) {
+      if (el.textContent.trim() === "ÍNDICE") return;
+      out.push(""); out.push("## " + el.textContent.trim());
+    } else if (el.classList.contains("subsection-head")) {
+      out.push(""); out.push("--- " + el.textContent.trim() + " ---");
+    } else if (el.classList.contains("ctrl-field")) {
+      const lbl = el.querySelector("label").textContent.trim();
+      const val = el.querySelector("input").value.trim();
+      if (val) out.push(lbl + ": " + val);
+    } else if (el.classList.contains("chk-row")) {
+      if (el.classList.contains("head")) return;
+      const checked = el.querySelector("input[type=radio]:checked");
+      const obs = el.querySelector("textarea").value.trim();
+      if (!checked && !obs) return;
+      const no = el.querySelector(".chk-no").textContent.trim();
+      const lbl = el.querySelector(".chk-label").textContent.trim();
+      const marc = checked ? MARC_LABEL[checked.value] : "(sin marcar)";
+      out.push(no + ". " + lbl + " — " + marc + (obs ? " | " + obs : ""));
+    } else if (el.classList.contains("matriz-row")) {
+      if (el.classList.contains("head")) return;
+      const checked = el.querySelector("input[type=radio]:checked");
+      const tas = el.querySelectorAll("textarea");
+      const evid = tas[0].value.trim(), acc = tas[1].value.trim();
+      if (!checked && !evid && !acc) return;
+      const factor = el.querySelector(".matriz-factor").textContent.trim();
+      const nivel = checked ? NIVEL_LABEL[checked.value] : "(sin marcar)";
+      out.push(factor + " — Nivel: " + nivel + (evid ? " | Evidencia: " + evid : "") + (acc ? " | Acción: " + acc : ""));
+    } else if (el.classList.contains("free-field")) {
+      const lbl = el.querySelector("label").textContent.trim();
+      const val = el.querySelector("textarea").value.trim();
+      if (val) out.push(lbl + ": " + val);
+    } else if (el.tagName === "TABLE") {
+      if (seenTables.has(el)) return;
+      seenTables.add(el);
+      const heads = Array.from(el.querySelectorAll("thead th")).map(function(th){ return th.textContent.trim(); });
+      const rows = Array.from(el.querySelectorAll("tbody tr"));
+      rows.forEach(function(tr, ri){
+        const cells = Array.from(tr.querySelectorAll("textarea, input")).map(function(c){ return c.value.trim(); });
+        if (cells.some(function(c){ return c; })) {
+          out.push("Fila " + (ri + 1) + ": " + heads.map(function(h, i){ return h + "=" + (cells[i] || "—"); }).join(" | "));
+        }
+      });
+    }
+  });
+  return out.join("\n");
+}
+
+async function shareCase(){
+  if (!currentCaseId || !VAULT || !VAULT.cases[currentCaseId]) return;
+  await saveNow();
+  const label = VAULT.cases[currentCaseId].label || "caso";
+  const text = buildCaseTextReport(label);
+  const safeName = label.replace(/[^a-z0-9áéíóúñ]+/gi, "_").slice(0, 40) || "caso";
+  const filename = "ARGOS-TURVEY_" + safeName + "_" + new Date().toISOString().slice(0, 10) + ".txt";
+  let file;
+  try {
+    file = new File([text], filename, { type: "text/plain" });
+  } catch (e) {
+    file = new Blob([text], { type: "text/plain" });
+  }
+  if (navigator.canShare && navigator.canShare({ files: [file] })) {
+    try {
+      await navigator.share({
+        files: [file],
+        title: "Bitácora ARGOS-TURVEY — " + label,
+        text: "Bitácora de campo de victimología forense — " + label
+      });
+      return;
+    } catch (e) {
+      if (e && e.name === "AbortError") return; // el usuario canceló el panel de compartir
+      // si falla por otra razón, cae al respaldo de descarga de abajo
+    }
+  }
+  try {
+    const url = URL.createObjectURL(file);
+    const a = document.createElement("a");
+    a.href = url; a.download = filename;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 4000);
+    alert('Este navegador no admite enviar directo. Se descargó "' + filename + '" — adjúntalo manualmente a tu correo o mensaje a la cadena de mando.');
+  } catch (e) {
+    alert("No se pudo generar el archivo para enviar en este navegador (" + (e && e.message ? e.message : e) + ").");
+  }
+}
+
+document.getElementById("send-case-btn").addEventListener("click", shareCase);
 </script>
 
 </body>
