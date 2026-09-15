@@ -271,9 +271,31 @@
   }
   .save-status{font-family:var(--mono);font-size:9.5px;color:var(--cyan-dim);align-self:center;white-space:nowrap;}
   #lock-again-btn{color:var(--yellow);}
+  #manual-save-btn{color:var(--green);border-color:rgba(51,209,122,.4);}
+  #manual-save-btn:hover{border-color:var(--green);}
+  #manual-save-btn.just-saved{background:rgba(51,209,122,.18);color:var(--green);border-color:var(--green);}
+  #index-btn{position:relative;}
+  .index-panel{
+    position:fixed;top:52px;right:14px;z-index:150;
+    width:280px;max-width:88vw;max-height:min(70vh,520px);overflow-y:auto;
+    background:var(--panel);border:1px solid var(--border);border-radius:2px;
+    box-shadow:0 12px 40px rgba(0,0,0,.6);padding:10px 0;
+  }
+  .index-panel[hidden]{display:none;}
+  .index-panel .idx-group-title{
+    font-family:var(--mono);font-size:9px;letter-spacing:1.5px;color:var(--cyan-dim);
+    padding:8px 14px 4px;
+  }
+  .index-panel a{
+    display:block;padding:7px 14px 7px 22px;font-size:12.5px;color:var(--white);
+    text-decoration:none;border-left:2px solid transparent;
+  }
+  .index-panel a.idx-top{padding-left:14px;font-family:var(--mono);font-size:10.5px;color:var(--cyan);letter-spacing:.5px;}
+  .index-panel a:hover, .index-panel a:active{background:var(--panel-2);border-left-color:var(--cyan);}
   @media (max-width:640px){
     .lock-box{padding:18px 16px;}
-    .save-status{display:none;} /* no cabe junto a los botones en móvil; el estado se ve igual */
+    .save-status{display:none;} /* el botón GUARDAR ya da confirmación visible en móvil */
+    .index-panel{top:48px;right:8px;left:8px;width:auto;max-width:none;}
   }
   .fatal-error-banner{
     position:fixed;top:0;left:0;right:0;z-index:999;
@@ -309,8 +331,33 @@
 
 <div class="toolbar no-print">
   <span id="save-status" class="save-status"></span>
+  <button type="button" id="index-btn">📑 ÍNDICE</button>
+  <button type="button" id="manual-save-btn">💾 GUARDAR</button>
   <button type="button" id="lock-again-btn" style="display:none;">🔒 BLOQUEAR</button>
   <button onclick="window.print()">IMPRIMIR / PDF</button>
+</div>
+
+<div id="index-panel" class="index-panel no-print" hidden>
+  <a class="idx-top" href="#s1">1. Datos de control</a>
+  <a class="idx-top" href="#s3">3. Riesgo inmediato</a>
+  <div class="idx-group-title">4. PAQUETES DE VICTIMOLOGÍA FORENSE</div>
+  <a href="#s4-1">4.1 Personal</a>
+  <a href="#s4-2">4.2 Digital</a>
+  <a href="#s4-3">4.3 Residencial</a>
+  <a href="#s4-4">4.4 Relacional</a>
+  <a href="#s4-5">4.5 Laboral o escolar</a>
+  <a href="#s4-6">4.6 Financiero</a>
+  <a href="#s4-7">4.7 Médico</a>
+  <a href="#s4-8">4.8 Judicial</a>
+  <a href="#s4-9">4.9 Ideológico</a>
+  <a class="idx-top" href="#s5">5. Reconstrucción temporal 24/48/72h</a>
+  <a class="idx-top" href="#s6">6. Punto probable de adquisición</a>
+  <a class="idx-top" href="#s7">7. Matriz de exposición</a>
+  <a class="idx-top" href="#s8">8. Entrevistas y testigos</a>
+  <a class="idx-top" href="#s9">9. Bitácora de campo</a>
+  <a class="idx-top" href="#s10">10. Productos de cierre</a>
+  <a class="idx-top" href="#s11">11. Bibliografía</a>
+  <a class="idx-top" href="#s12">12. Glosario operativo</a>
 </div>
 
 <div id="lock-screen" class="lock-screen no-print">
@@ -1378,6 +1425,38 @@ function initLock(){
 }
 
 initLock();
+
+/* ===================== ÍNDICE RÁPIDO Y BOTÓN DE GUARDAR MANUAL ===================== */
+(function(){
+  const idxBtn = document.getElementById("index-btn");
+  const idxPanel = document.getElementById("index-panel");
+  idxBtn.addEventListener("click", function(e){
+    e.stopPropagation();
+    idxPanel.hidden = !idxPanel.hidden;
+  });
+  idxPanel.addEventListener("click", function(e){
+    if (e.target.tagName === "A") idxPanel.hidden = true;
+  });
+  document.addEventListener("click", function(e){
+    if (!idxPanel.hidden && !idxPanel.contains(e.target) && e.target !== idxBtn) idxPanel.hidden = true;
+  });
+
+  const saveBtn = document.getElementById("manual-save-btn");
+  saveBtn.addEventListener("click", async function(){
+    if (!sessionKey) {
+      alert("Primero desbloquea con la contraseña del caso para poder guardar.");
+      return;
+    }
+    await saveNow();
+    const original = "💾 GUARDAR";
+    saveBtn.textContent = "✓ GUARDADO";
+    saveBtn.classList.add("just-saved");
+    setTimeout(function(){
+      saveBtn.textContent = original;
+      saveBtn.classList.remove("just-saved");
+    }, 1500);
+  });
+})();
 </script>
 
 </body>
