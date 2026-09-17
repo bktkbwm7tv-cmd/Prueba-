@@ -8,13 +8,13 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 119 (corte 2026-09-13).
+**Última actualización**: ARGOS 120 (corte 2026-09-16).
 
 ---
 
 ## Arranque de la edición siguiente
 
-**`reports/_arranque-ARGOS-120.md`** contiene la orden de arranque para una sesión nueva: verificación
+**`reports/_arranque-ARGOS-121.md`** contiene la orden de arranque para una sesión nueva: verificación
 de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y comandos de construcción.
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
@@ -1208,3 +1208,58 @@ Una sesión nueva arranca leyendo, en este orden: **`_arranque-ARGOS-111.md`** �
 | ARGOS 119 | ⚠️ **`indice-arg-id.md` NO CUBRE LAS EDICIONES 88, 89 Y 90: EMPIEZA EN `ARG-91-001`** | **Hallazgo estructural de `editor-duplicidad`, y el más valioso de los dos controles.** **Dos deslindes de este corte fallaron por esa causa** —«Corregidora» figura en `ARG-90-ARM-006` y «Benemérito de las Américas» en el acervo de ARGOS 88-89—. ⚠️ **Consecuencia que rige desde ahora: ninguna ficha puede afirmar «no aparece en ningún corte anterior del archivo», porque el `grep` no alcanza ese tramo.** La fórmula correcta es **«no aparece en el índice, que cubre de ARGOS 91 en adelante»**. **Acción**: extender el índice hacia atrás hasta la edición más antigua conservada, o **declarar en su cabecera el rango que cubre**, que cuesta una línea |
 | ARGOS 119 | ⚠️ **CITAR UN BOLETÍN NO EQUIVALE A HABERLO EXPLOTADO** | **Regla nueva, y es la lección central del corte.** **`procedencia-cifras` encontró que DOS fichas daban por «no publicado» un desglose que la fuente primaria que ellas mismas citaban SÍ publicaba**: **Elota** —1 larga, 2 cortas, 8 cargadores, todos con calibre— y **León-San Felipe** —tipo de arma y 2 cargadores—. **El saldo neto de los controles fue INTEGRAR: +4 armas y +10 cargadores.** ⚠️ **El control corre en las dos direcciones y esta vez corrigió hacia arriba en cuatro de sus siete hallazgos.** **Segunda vez en la serie que el saldo neto es integrar más de lo que se retira** |
 | ARGOS 119 | ⚠️ **UNA PENA PUBLICADA CONTRA VARIAS PERSONAS NO SE MULTIPLICA SI EL BOLETÍN NO DICE «A CADA UNO»** | **Regla nueva.** El **comunicado 612/26 de la FGR** dice «sentencia de 19 años, 6 meses y 20 días… **en contra de 4 personas**» y **describe la multa con la misma fórmula, tratándola como una sola cantidad**. **Multiplicar la pena por cuatro mientras la multa se cuenta una vez es una asimetría que el texto no sostiene.** **Se marca `PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA` y el acumulado nacional de años de prisión no se integra.** **Lo cierra el texto íntegro del boletín** |
+
+---
+
+## ARGOS 120 — lo que cierra esta edición
+
+| Pendiente | Cómo se cerró |
+|---|---|
+| **ESTADO DE MÉXICO · Hueypoxtla (San Francisco Zacacalco) — Domingo Cruz Trejo** (homicidio calificado, 21a 10m 15d) | **FECHA RESUELTA**: publicación del **11 y 12-sep**, dos URL fechadas en la ruta. **CORRESPONDE A LA VENTANA DE ARGOS 119, no a ésta.** Sigue `PENDIENTE DE CONFIRMACIÓN OFICIAL` por falta de boletín primario de la FGJEM: **lo que se cierra es el campo de la fecha** |
+| **SINALOA · Región Centro — Adrián «N»** (secuestro exprés agravado, 33a 4m) | **FECHA RESUELTA**: publicación del **9-sep**, URL fechada en la ruta. **CORRESPONDE A LA VENTANA DE ARGOS 119** |
+| **TABASCO · Gabino «N» y José «N»** (secuestro agravado, 50 años, FGET) | **DESCARTADO POR EVIDENCIA DE CORRELATIVO**: el boletín lleva el identificador **24406**, muy inferior al **36454** —fechado en 2025— y al **37454** —fechado ~20-ago-2026— que el archivo tiene anclados. **En un portal de identificador correlativo sin fecha, un boletín ya fechado acota a todos los de numeración inferior.** No se reabre |
+| **Ciclo de rotación: si la serie reanudaba en A o continuaba tras C** | **RESUELTO: reanuda en A.** ARGOS 120 aplicó el **Ciclo A** (Noroeste + Centro) y lo hizo constar |
+
+## ARGOS 120 — lo que abre esta edición
+
+### Seguimientos nuevos
+
+| Caso | Qué lo cierra |
+|---|---|
+| ⚠️ **CHIHUAHUA · Ciudad Juárez (Distrito Judicial Bravos) — José Manuel E. C.** (homicidio calificado y tentativa, hecho del 1-sep-2025, **juicio oral con «fallo condenatorio»**) | **PERECEDERO Y FECHADO: la individualización de la pena se fijó para el JUEVES 17-SEP.** El término jurídico es expreso y basta para clasificar, pero **no hay pena que reportar**. **ARGOS 121 debe buscarlo expresamente**: si la audiencia se celebró, es una sentencia integrable de su ventana |
+| **SINALOA · El Rosario — cifra de detenidos del arsenal de los cinco tambos** | `ARG-120-010` integró **CERO** por cifra mayoritaria; **una cobertura aislada consigna 9**. **CONTRADICHA, NO ARBITRADA.** Lo cierra un comunicado que individualice detenidos, o su ausencia confirmada |
+| **SINALOA · «La Noria de San Antonio» — 84 AEI** | `POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN`. **Mismo desglose exacto en dos publicaciones**: una atribuida al **7-sep en San Ignacio**, otra a **Mazatlán en el rango 11-13-sep**. Lo cierra un boletín que fije municipio y fecha. ⚠️ **Habría sido el mayor volumen de AEI del archivo** |
+| **GUERRERO · Eduardo Neri — Vidal «N», 66 años** | **PERSONA NO LOCALIZADA.** Su hijo apareció asesinado (`ARG-120-008`). **Ninguna autoridad ha planteado públicamente la hipótesis de privación conjunta**, y mientras no se plantee **no hay búsqueda activa**. Lo cierra su localización o un boletín de la Comisión de Búsqueda |
+| **GUERRERO · Xaltianguis — Said Sánchez Sandoval**, comisario municipal detenido | Lo cierra su **situación jurídica y número de carpeta**, y **si su cargo sigue vigente o hubo separación**. ⚠️ **Verificar también la cifra de «24 detenidos acumulados»**, declarada y NO adoptada |
+| **ESTADO DE MÉXICO · Tecámac — ataque contra el vehículo del ayuntamiento** | **Cero detenidos y móvil no divulgado.** Lo cierra la identificación del objetivo real —**si era la alcaldesa o el jefe de gabinete**, campo que decide la lectura y que nadie ha resuelto— |
+| **TABASCO · las seis ejecuciones del 15-sep** | **CONTRADICCIÓN DE MUNICIPIOS, NO ARBITRADA**: Centro/Cárdenas/Macuspana/Nacajuca frente a Villahermosa/Comalcalco. Lo cierra un boletín de la FGET con municipio y hora por víctima |
+| **GUANAJUATO · San Francisco del Rincón — heridos del ataque a la cancha** | **CONTRADICHOS: 5, 6 o 7.** Lo cierra el **parte médico**, no más notas. ⚠️ **Y verificar si existe la «serie de ataques a partidos»** que un titular sugiere y ninguna fuente documenta |
+| **BAJA CALIFORNIA · Tijuana — Luis Martín «N»** (feminicidio, 26a 8m, FGE BC) | `PENDIENTE DE CONFIRMACIÓN OFICIAL`: fuente única regional, **sin boletín de fgebc.gob.mx** |
+| **ESTADO DE MÉXICO · Coacalco — Israel Cruz Luna, «El Maca»** (homicidio, 36a 3m, FGJEM) | `PENDIENTE DE CONFIRMACIÓN OFICIAL`: dos fuentes fechadas y tres réplicas, **sin boletín de la FGJEM** |
+| **TAMAULIPAS · Nuevo Laredo — Carlos, Adrián, Luis y José «N»** (8a a 15a 6m, FGR) | `FECHA NO FIJADA`: la URL lleva **mes pero no día**. Lo cierra una URL con día o un titular fechado |
+
+### Renglones del boletín federal 11-13-sep que ARGOS 121 NO debe recontar
+
+⚠️ **Se listan porque el emisor no desglosa qué renglón corresponde a qué día y solo se integró El
+Rosario.** Los demás quedaron `FECHA NO FIJADA DENTRO DEL RANGO`: **Baja California / Tijuana** (3
+cortas, 3 largas, 132 cartuchos, 22 cargadores, 2 detenidos) · **Jalisco / Zapopan** (1 corta, 6
+cartuchos, 1 detenido) · **Sonora**, dos inmuebles sin municipio (2 cortas —una es **réplica, no es
+arma**—, 10 cartuchos) · **Zacatecas** (3 cortas, ~44 largas en tres boletines, 549+ cartuchos, 11+
+cargadores) · **Coahuila / Torreón** (1 corta, 6 cargadores, 4 detenidos, **dos exfuncionarios
+municipales**) · **San Luis Potosí**, agregado de cuatro regiones (1 arma sin tipo, 30 cartuchos, 2
+cargadores; **los 29 detenidos son del agregado de 24 h, no de un evento**) · **Escuinapa** (12 largas,
+45 cargadores, 1,800 cartuchos, 11 detenidos) · **Aeropuerto de Toluca** (10 kg de metanfetamina) ·
+**Ensenada** (120 kg de marihuana).
+
+### Deuda de método abierta por ARGOS 120
+
+| Desde | Asunto | Acción pendiente |
+|---|---|---|
+| ARGOS 120 | ⚠️⚠️ **LA RAMA DEL ENTORNO LLEGÓ DESACTUALIZADA POR DECIMOCUARTA VEZ, Y ESTA VEZ CON UNA VARIANTE NUEVA: EL BORRADOR TAMBIÉN** | El contenedor asignó una rama en `a1cb1d5` —**trece ediciones por detrás, 62 archivos**— y **el borrador de ARGOS 120 se había redactado en una rama hermana que nunca vio las ediciones 107 a 118**. **`git merge --ff-only origin/main` lo resolvió**, pero **el borrador ya traía tres afirmaciones de ausencia imposibles de sostener**. ⚠️ **Regla que queda: un deslinde escrito sin el archivo completo a la vista NO es un deslinde verificado, y hay que rehacerlo tras restituir la base** |
+| ARGOS 120 | ⚠️⚠️ **ESTA EDICIÓN NO PASÓ `editor-duplicidad` NI `procedencia-cifras` COMO SUBAGENTES** | **Se declara sin atenuar.** En su lugar se hizo el `grep` por topónimo contra el índice restituido —que produjo **cuatro cruces reales**— y el **cuadre aritmético** de los totales. **Lo que NO se hizo es verificar cada cifra contra su fragmento citable.** ⚠️ **ARGOS 121 debe tratar las cifras de ARGOS 120 como `HEREDADO — NO REVERIFICADO` si las cita** |
+| ARGOS 120 | ⚠️ **EL `.txt` Y EL CARTELÓN DIVERGEN SI EL TEXTO SE CONSERVA DEL BORRADOR** | **Fallo real**: el `.txt` del repositorio seguía siendo el borrador previo —hora 10:04, ventana 73 h 36 min, densidad 0,26, **sin los cuatro deslindes**—. **Resuelto con `tools/gen-texto.py`**, que deriva el texto del cartelón publicado. **Lo que no se deriva, diverge**: mismo criterio que `gen-movil.py` |
+| ARGOS 120 | ⚠️ **SELLAR LA HORA REAL CAMBIA LA DURACIÓN Y LA DENSIDAD, Y ES FÁCIL HEREDARLAS DEL BORRADOR** | El borrador traía **73 h 36 min y 0,26**; al sellar 11:34 quedaron **75 h 06 min y 0,25**. **Los dos cocientes se recalculan al sellar, no antes.** Afecta portada, Valoración y el bloque de explosivos |
+| ARGOS 120 | ⚠️ **EL BLOQUEO DE EGRESO ALCANZÓ TAMBIÉN A LOS MEDIOS, NO SOLO A `*.gob.mx`** | **Incidencia NUEVA.** En la sesión del borrador, la lectura directa devolvió bloqueo **en todos los dominios probados**, comprobado sobre una URL de medio nacional. **Ninguna página se leyó íntegra** y **el techo de esta edición bajó a ★★★☆☆**. ⚠️ **ARGOS 121 debe volver a comprobarlo**: si la lectura de medios funciona, el techo recupera ★★★★☆ y se hace constar |
+| ARGOS 120 | ⚠️ **CERO ARMAS CON CALIBRE Y CERO CON SERIE, FRENTE A CUATRO CON CALIBRE EN EL CORTE ANTERIOR** | **19 de 92 armas (20,7 %) se publicaron SIN CATEGORÍA** y **ninguna con número de serie**. **Es un retroceso de un campo que no cuesta nada al emisor** y sin el cual ningún aseguramiento se cruza con las armas rastreadas desde el norte. **Seguir midiéndolo corte a corte** |
+| ARGOS 120 | **El Ciclo A rindió, y la prioridad de cobertura coincide con el ciclo siguiente** | El triaje judicial del **Noroeste** produjo la sentencia de Salgueiro y fechó el candidato de Sinaloa; el del **Centro** fechó Hueypoxtla y localizó Coacalco. **Pero la segunda sentencia la encontró el Noreste, que encabezaba con armamento**: el ciclo mejoró el rendimiento, no lo determinó. ⚠️ **Las cuatro entidades `NO REVISADA` son todas del Noreste y a ARGOS 121 le toca el Ciclo B (Noreste + Golfo): prioridad y ciclo COINCIDEN, no hay conflicto** |
+| ARGOS 120 | **El cartelón creció a trece páginas** | ARGOS 119 salió en once con 19 hechos; ARGOS 120 salió en **trece con los mismos 19**, repartiendo Crimen Organizado en **ocho bloques** en vez de seis. **Ninguna tarjeta se comprimió**, que es la regla |
