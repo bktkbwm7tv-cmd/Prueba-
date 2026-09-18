@@ -472,10 +472,13 @@ NOTA = f'''
   </p>'''
 partes[-1] = partes[-1].replace("</section>", NOTA + "\n</section>")
 
+_mt = re.search(r"<span>Corte:\s*([^<]+?)\s*</span>", open(DESK, encoding="utf-8").read())
+CORTE_TURNO = _mt.group(1) if _mt else "No declarado"
+
 FOOTER = f'''
 <footer class="footbar">
   <div>Versión 3.0 · Edición móvil</div>
-  <div>Fecha: {FECHA} · Hora: {HORA} (CDMX) · Corte: Matutino</div>
+  <div>Fecha: {FECHA} · Hora: {HORA} (CDMX) · Corte: {CORTE_TURNO}</div>
   <div>ARGOS N.° {NUM} · <span class="uso">USO INSTITUCIONAL</span></div>
 </footer>
 

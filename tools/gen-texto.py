@@ -49,6 +49,10 @@ out = []
 num = re.search(r'<span class="n">(\d+)</span>', s).group(1)
 fecha = re.search(r"<b>Fecha:</b>\s*([\d-]+)", s).group(1)
 hora = re.search(r"<b>Hora:</b>\s*([\d:]+)", s).group(1)
+# El turno del corte se DERIVA del pie del cartelón, nunca se fija:
+# ARGOS 120 publicó un .txt que decía "matutino" sobre un corte vespertino.
+_m = re.search(r"<span>Corte:\s*([^<]+?)\s*</span>", s)
+corte_turno = _m.group(1) if _m else "No declarado"
 vent = limpia(re.search(r"Ventana <b>(.*?)</b> \(<b>(.*?)</b>\)", s).group(0), False)
 out += [
     f"ARGOS {num} — REPORTE NACIONAL DE SEGURIDAD",
@@ -57,7 +61,7 @@ out += [
     "",
     f"Corte informativo: {fecha} · {hora} (CDMX)",
     vent.replace("Ventana ", "Ventana: "),
-    "Versión 3.0 · Corte matutino · USO INSTITUCIONAL",
+    f"Versión 3.0 · Corte {corte_turno.lower()} · USO INSTITUCIONAL",
     "",
 ]
 
@@ -137,7 +141,7 @@ for pag in re.findall(r'<section class="page">(.*?)</section>', s, re.S):
             out += plegar(txt) + [""]
 
     out += [RAYA,
-            f"  · Versión 3.0 · Fecha: {fecha} · Hora: {hora} (CDMX) · Corte: Matutino · "
+            f"  · Versión 3.0 · Fecha: {fecha} · Hora: {hora} (CDMX) · Corte: {corte_turno} · "
             f"ARGOS N.° {num} · USO INSTITUCIONAL",
             ""]
 
