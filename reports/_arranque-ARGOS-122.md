@@ -209,9 +209,22 @@ la FGET. **Declárelo igual: el rendimiento del ciclo se mide, no se supone.**
 
 Instrucción editorial permanente del destinatario, vigente:
 
-- ⚠️ **CINCO LÍNEAS. ES LA INSTRUCCIÓN MÁS ESTRICTA.** *«Poco texto, muy ejecutivo. Es para mandos.»*
-  Máximo cinco líneas en cada **Explotación ARGOS**, en cada recuadro `alerta contexto` y en la
-  **Valoración**, numeradas `<b>N. ` **con espacio**.
+- ⚠️⚠️ **DOS APARTADOS POR FICHA: «HECHO» Y «TRAZABILIDAD». NADA MÁS.** Instrucción editorial directa
+  del destinatario, dada tras revisar ARGOS 121: *«quita la corroboración y explotación ARGOS; es un
+  reporte para mandos; hay que reducir los textos y no repetir las noticias en los diferentes
+  secciones»*. **`CLAUDE.md` la recoge en «Regla de las dos secciones por nota», que DEROGA la de las
+  cuatro.** ⚠️ **Las fuentes, los deslindes y las marcas de reserva NO se suprimen: son dato, no prosa,
+  y van comprimidos en Trazabilidad** —recuento por tipo, nombrados solo los que llevan fecha en la
+  ruta, lista íntegra al archivo de fuentes—.
+- ⚠️ **EL ANÁLISIS VIVE UNA SOLA VEZ, AL CIERRE**: Valoración (5 líneas) y Conclusiones de inteligencia
+  criminal (5 líneas). **No ficha por ficha.**
+- ⚠️ **CADA HECHO EN DOS LUGARES COMO MÁXIMO**: un renglón en la tabla **«PANORAMA DEL CORTE»**
+  (página 2, **único listado resumido**) y su **ficha**. **Prohibida una tercera aparición.**
+  ⚠️ **El recuadro de portada NO repite titulares**: se titula **«LO QUE DEBE HACER EL MANDO»** y lleva
+  **cinco líneas de ACCIÓN** —qué auditar, cotejar, vigilar o exigir—. **Los totales tampoco se
+  repiten**: van en la página de panorama y los módulos remiten a ella.
+- ⚠️ **CINCO LÍNEAS.** Máximo cinco en cada recuadro `alerta contexto` y en la **Valoración**,
+  numeradas `<b>N. ` **con espacio**.
   ⚠️ **Nunca se recortan cifras, fechas, municipios, corporaciones, ARG-ID, confianza, fuentes,
   deslindes ni marcas de reserva. Se recorta la prosa, no el dato.**
 - ⚠️ **TRES RECUADROS COMO MÁXIMO EN TODO EL CARTELÓN** —portada, Valoración y Conclusiones—, **y ninguno
@@ -232,9 +245,11 @@ Instrucción editorial permanente del destinatario, vigente:
 
 ### Estructura de páginas que hereda ARGOS 122
 
-**ARGOS 121 salió en NUEVE páginas** con 4 hechos, 4 recuperaciones y 1 sentencia: portada · crimen
-organizado (I) a (IV) · armamento · sentencias · tabla judicial y cobertura · valoración y conclusiones.
-**ARGOS 120 salió en trece con 19 hechos.** **El número de páginas lo fija el volumen, no la costumbre:
+**ARGOS 121 salió en NUEVE páginas** con 3 hechos, 5 recuperaciones y 1 sentencia: portada ·
+**panorama del corte** · crimen organizado (I) a (III) · armamento · sentencias · candidatos y
+cobertura · valoración y conclusiones. **ARGOS 120 salió en trece con 19 hechos.**
+⚠️ **La reestructuración a dos apartados recortó un 33 % del texto del cuerpo** sin perder una sola
+cifra, fecha, fuente ni deslinde. **El número de páginas lo fija el volumen, no la costumbre:
 si un bloque crece se reparte entre más páginas, nunca se comprime una tarjeta.**
 
 ---
@@ -279,7 +294,9 @@ entidades**, que **cada `estado:` existe**, que **cada `region:` coincide con `S
 un ancla**, que **el semáforo derivado coincide con la portada y con `radar-stats`**, que **hay
 exactamente un `<body>`**, que **toda tabla está envuelta exactamente una vez**, que **hay cero `-FE-`**,
 que **`sem-item` solo aparece en portada**, que **ningún bloque supera las cinco líneas**, que **hay como
-máximo 3 recuadros** y que **el pie aparece en todas las páginas**.
+máximo 3 recuadros**, que **el pie aparece en todas las páginas** y —⚠️ **comprobación nueva de
+ARGOS 121**— que **NO existe ningún apartado «Corroboración» ni «Explotación ARGOS»** y que **cada ficha
+tiene exactamente dos apartados, uno de ellos «TRAZABILIDAD»**.
 
 ⚠️ **RECALCULE EL TOTAL NACIONAL DESDE LAS FILAS INTEGRADAS**, y **vuelva a recalcularlo DESPUÉS de las
 correcciones de los controles**.

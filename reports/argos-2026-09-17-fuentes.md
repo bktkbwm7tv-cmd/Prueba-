@@ -426,3 +426,61 @@ periodo ocurrieron; lo que no había ocurrido todavía, cuando ARGOS 120 cerró,
 Es exactamente el fenómeno inverso al que documentó el arranque —*una ventana larga no produce
 recuperaciones: las absorbe*—. **Queda la regla simétrica: una ventana corta no produce hechos propios,
 produce recuperaciones. Ni la una ni la otra es indicador de cobertura.**
+
+
+---
+
+## 15. Reestructuración editorial de esta edición
+
+**Instrucción directa del destinatario, recibida tras la primera entrega del corte**: *«Quita la
+corroboración y explotación ARGOS. Recuerda, es un reporte para mandos. Hay que reducir los textos y no
+repetir las noticias en los diferentes secciones.»*
+
+**Aplicada, y consagrada en `CLAUDE.md`** como **«Regla de las dos secciones por nota»**, que **deroga
+la de las cuatro**. Las ediciones siguientes la heredan del repositorio, no de esta conversación.
+
+### Qué se retiró
+
+- **El apartado «Corroboración»** como bloque narrativo, en las **9 fichas**.
+- **El apartado «Explotación ARGOS»** ficha por ficha, también en las 9 — **45 líneas de análisis
+  repartidas** que ahora se concentran en **10**: cinco en la Valoración y cinco en las Conclusiones.
+- **La tabla «Distribución del corte»** de la última página y **la tabla jurídica de una sola fila**,
+  que **repetían** lo que ya estaba en la ficha.
+- **El total nacional de armamento** dejó de imprimirse dos veces: vive en la página de panorama y el
+  módulo **remite** a ella.
+- **Los titulares del recuadro de portada**: era la **tercera** aparición de cada hecho.
+
+### Qué NO se retiró, y por qué
+
+⚠️ **Las fuentes, los deslindes y las marcas de reserva se conservaron íntegras en cuanto a contenido**,
+trasladadas al bloque de **Trazabilidad**. **Son dato, no prosa**, y `CLAUDE.md` prohíbe recortarlos:
+sin ellos el producto deja de ser auditable, que es la razón de ser de ARGOS.
+
+**Lo que sí se comprimió es su forma**: las listas de emisores pasaron de enumerar los catorce nombres a
+dar el **recuento por tipo** con los **fechados en la ruta nombrados**. **La lista íntegra sigue
+publicada en la sección 12 de este archivo**, que es donde se audita.
+
+### Qué cambió la portada
+
+El recuadro dejó de ser **«LO QUE DEBE SABER EL MANDO»** —un resumen de titulares— y pasó a ser
+**«LO QUE DEBE HACER EL MANDO»**: cinco líneas de **acción accionable** —auditar los retenes municipales
+de la costa de Guerrero, cotejo balístico contra el armamento de cargo, vigilar el nivel municipal como
+unidad de riesgo, exigir calibre y serie en los boletines, cotejar los dos depósitos de AEI de
+Mazatlán—. **Un mando que ya vio el panorama y la ficha no necesita el titular una tercera vez.**
+
+### Resultado medido
+
+| Medida | Antes | Después | Reducción |
+|---|---|---|---|
+| **Palabras del cuerpo del cartelón** | 9,708 | **6,435** | **33 %** |
+| **Palabras de la versión en texto** | 9,565 | **6,482** | **32 %** |
+| **Líneas de la versión en texto** | 812 | **543** | **33 %** |
+| **Apartados por ficha** | 4 | **2** | — |
+| **Apariciones máximas de un hecho** | 3 | **2** | — |
+| **Páginas** | 9 | **9** | sin cambio |
+| **Cifras, fechas, fuentes o deslindes perdidos** | — | **0** | — |
+
+**Las nueve páginas se mantienen porque ninguna tarjeta se comprimió**: lo que se recortó fue prosa, y
+el espacio liberado se repartió en vez de apretar el contenido. **La validación con `node:vm` incorpora
+dos comprobaciones nuevas**: que **no exista ningún apartado «Corroboración» ni «Explotación ARGOS»**, y
+que **cada ficha tenga exactamente dos apartados, uno de ellos «Trazabilidad»**.
