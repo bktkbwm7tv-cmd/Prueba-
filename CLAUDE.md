@@ -408,7 +408,7 @@ De cada comunicado institucional se extrae, cuando exista:
 Estos cuatro rubros alimentan el **conteo diario del corte**. Los eventos de alto impacto
 detectados en el mismo barrido (ataques a autoridades, enfrentamientos, narcobloqueos, hallazgos de
 fosas, uso de AEI contra personal o población) no son línea de conteo: se clasifican con el
-semáforo ARGOS y se documentan como tarjeta propia con sus cuatro apartados.
+semáforo ARGOS y se documentan como tarjeta propia con sus **dos apartados**.
 
 ### Registro del barrido
 
@@ -953,7 +953,7 @@ Regla operativa:
    detención y condena, líneas a explotar. Si una conclusión no le dice a un mando algo que pueda
    accionar o vigilar, no es una conclusión de ARGOS.
 3. **Un hecho de alto impacto encontrado en la ventana de una edición anterior se publica como ficha
-   de hecho, no como hallazgo de auditoría.** Lleva sus cuatro apartados, su ARG-ID `-REC-`, su
+   de hecho, no como hallazgo de auditoría.** Lleva sus **dos apartados**, su ARG-ID `-REC-`, su
    **ventana de origen declarada**, y no entra en los totales del corte que lo publica. Su efecto
    sobre el conteo de la edición de origen se registra en una **fe de erratas compacta**, que es
    trazabilidad y no narrativa.
@@ -979,8 +979,9 @@ Reglas duras:
    por nota»—. **El análisis vive una sola vez, al cierre**, en la Valoración y en las Conclusiones,
    **cinco líneas cada una**. Si sobra algo, va al archivo de fuentes.
 2. **Todo recuadro `alerta contexto` tiene un máximo de CINCO líneas.** La portada lleva **un solo
-   recuadro**, titulado «LO QUE DEBE SABER EL MANDO», con los cinco puntos del corte. No tres
-   recuadros con el mismo argumento reescrito.
+   recuadro**, titulado **«LO QUE DEBE HACER EL MANDO»**, con **cinco líneas de ACCIÓN** —qué auditar,
+   cotejar, vigilar o exigir—, **no un resumen de titulares**. No tres recuadros con el mismo argumento
+   reescrito.
    ⚠️ **Y el cartelón entero lleva TRES recuadros como máximo** —portada, Valoración y Conclusiones—,
    **y ninguno repite el hecho de otro**. Instrucción directa del destinatario tras revisar ARGOS 117
    en teléfono: *«no debes explicar los colores; reduce más el texto y no repitas varias veces la misma
