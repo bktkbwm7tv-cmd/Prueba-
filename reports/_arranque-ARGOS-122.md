@@ -7,6 +7,9 @@ en el repositorio**: una sesión nueva debe poder arrancar leyendo este archivo,
 
 **Escrito al cierre de ARGOS 121** (corte 2026-09-17).
 
+⚠️ **El mensaje de arranque listo para pegar en una sesión nueva está en
+`reports/_ordenes-ARGOS-122.txt`.** Este archivo es el detalle; aquél es la orden.
+
 ---
 
 ## BLOQUE 0 — VERIFICACIÓN DE BASE · ANTES DE NUMERAR NADA
