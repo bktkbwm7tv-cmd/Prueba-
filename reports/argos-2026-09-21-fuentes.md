@@ -517,3 +517,38 @@ reedición.** La validación y los dos generadores se volvieron a pasar después
 **Lección para ARGOS 123**: cuando una instrucción editorial, leída al pie de la letra, **vaciaría el
 producto**, lo correcto no es obedecerla ni descartarla, sino **poner el dato delante del
 destinatario y dejar que decida**. Aquí el dato era que **hoy no había hechos**, y bastó decirlo.
+
+---
+
+## 17. Defecto del generador móvil corregido — encabezados duplicados
+
+**Instrucción recibida**: *«Es muchísima información y se repite dos veces en los reportes de
+criminalistas 1 y 2; hay que dejar solo uno y la fecha de la nota.»*
+
+**Diagnóstico**: no era duplicación de contenido, era **un defecto de `tools/gen-movil.py`**.
+La herramienta escribía **su propia cabecera corta** (`CRIMEN ORGANIZADO (I)`) y, pegada, **dejaba
+intacta la cabecera larga del escritorio** (`CRIMEN ORGANIZADO (I) — LO MÁS RECIENTE DEL CORTE:
+DOMINGO 20 Y LUNES 21 DE SEPTIEMBRE`). **Veinte títulos para diez secciones**, dos seguidos en cada
+una.
+
+⚠️ **Se corrigió LA HERRAMIENTA, no su salida**, conforme a la regla del archivo. Cuatro cambios:
+
+1. **`limpia()` retira el encabezado de página que duplica el título.** Solo el que usa
+   `<h2 style="font-size:14px;">`, que es **exactamente el que `titulo_de()` lee**. Los
+   `section-head` internos —«TOTALES DEL CORTE», «INDICADORES OFICIALES», «SEMÁFORO ARGOS»— **no
+   llevan ese `h2` y se conservan**: son subtítulos legítimos, no duplicados.
+2. **Cada ficha muestra su fecha** en la cabecera, junto a la etiqueta de color: `20-SEP`, `19-SEP`…
+   **Se deriva del propio apartado TRAZABILIDAD de la ficha** (`<b>Hecho</b>: 2026-MM-DD`); si una
+   ficha no publica fecha, **no se inventa ninguna**.
+3. **Cada sección muestra el rango de fechas de sus fichas** junto al número de página.
+4. **Dos títulos que desbordaban** la cabecera y la barra de navegación del teléfono se abrevian:
+   «CANDIDATOS JUDICIALES NO INTEGRADOS E INDICADOR DE COBERTURA» → **«CANDIDATOS Y COBERTURA»**, y
+   «PANORAMA DEL CORTE» → **«PANORAMA»** en la barra.
+
+**Resultado medido**: **de 20 encabezados a 12, uno por sección**, y **19 fichas con su fecha
+visible**. **El cartelón de escritorio y el `.txt` no se tocaron**; la validación, la paridad de
+29 ARG-ID y los contadores del generador se repasaron después.
+
+**Lección de método**: el destinatario reportó «se repite dos veces» y la lectura literal apuntaba
+al contenido. **No era el contenido: era el generador.** Antes de recortar un producto por
+duplicación, **comprobar si la duplicación la introduce la herramienta**.

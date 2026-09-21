@@ -148,6 +148,15 @@ if _faltan:
     # Se retiran del shell las reglas parciales que sí estuvieran, para no duplicarlas,
     # y se inyecta el bloque completo y actual.
     shell = shell.replace("</style>", CSS_TABLA + "</style>", 1)
+
+CSS_FECHA = """
+  .fch{font-family:var(--mono);font-size:8.5px;letter-spacing:.8px;color:var(--cyan-dim);
+       border:1px solid var(--border);padding:2px 6px;white-space:nowrap;align-self:flex-start;}
+  .sec-head .fch{border:0;padding:0;color:var(--cyan-dim);}
+  .sec-head .meta{display:flex;align-items:baseline;gap:8px;white-space:nowrap;}
+"""
+if ".fch{" not in shell:
+    shell = shell.replace("</style>", CSS_FECHA + "</style>", 1)
     print(f"CSS de tabla/tarjeta inyectado ({len(_faltan)} selector(es) ausente(s) en el shell heredado)")
 
 # Anclas realmente existentes en el escritorio: solo estas pueden enlazarse.
@@ -163,6 +172,17 @@ def limpia(p):
     """Quita masthead y footbar; aplica el mapeo de clases escritorio -> móvil."""
     p = re.sub(r'<header class="masthead">.*?</header>', "", p, flags=re.S)
     p = re.sub(r'<footer class="footbar">.*?</footer>', "", p, flags=re.S)
+    # ⚠️ El encabezado de PÁGINA del escritorio duplicaba el título que esta
+    # herramienta ya escribe en `.sec-head`: la móvil salía con DOS títulos
+    # seguidos por sección —veinte para diez secciones— y el destinatario lo
+    # reportó como "se repite dos veces". Se retira aquí, en el generador, no
+    # en su salida.
+    # Solo se retira el que usa `<h2 style="font-size:14px;">`, que es
+    # EXACTAMENTE el que `titulo_de()` lee. Los `section-head` internos
+    # —"TOTALES DEL CORTE", "INDICADORES OFICIALES", "SEMÁFORO ARGOS"— no llevan
+    # ese `h2` y se conservan: son subtítulos legítimos, no duplicados.
+    p = re.sub(r'<div class="section-head">\s*<h2 style="font-size:14px;">.*?</h2>\s*</div>\s*',
+               "", p, count=1, flags=re.S)
     p = p.replace('class="section-head"', 'class="block-head"')
     p = p.replace('<div class="stat-grid">', '<div class="stats">')
     p = p.replace('<div class="stat-tile">', '<div class="stat">')
@@ -345,12 +365,68 @@ SEM = f'''<div class="semaforo">
 # masthead y que la portada es la primera.
 TITULOS_CORTOS = {
     "CRIMEN ORGANIZADO": "CRIMEN ORGANIZADO",
+    # El título del escritorio —"CANDIDATOS JUDICIALES NO INTEGRADOS E INDICADOR
+    # DE COBERTURA"— desbordaba la cabecera y la barra de navegación del teléfono.
+    "CANDIDATOS JUDICIALES": "CANDIDATOS Y COBERTURA",
+    "PANORAMA DEL CORTE": "PANORAMA DEL CORTE",
     "CONTEO NACIONAL DE ARMAMENTO": "ARMAMENTO Y EXPLOSIVOS",
     "RASTREO NACIONAL DE SENTENCIAS": "RASTREO DE SENTENCIAS",
     "AUDITORÍA RETROACTIVA": "AUDITORÍA RETROACTIVA",
     "VALORACIÓN": "VALORACIÓN",
     "TABLERO EJECUTIVO": "TABLERO EJECUTIVO",
 }
+
+
+MESES = {"01":"ENE","02":"FEB","03":"MAR","04":"ABR","05":"MAY","06":"JUN",
+         "07":"JUL","08":"AGO","09":"SEP","10":"OCT","11":"NOV","12":"DIC"}
+
+
+def _dia_mes(iso):
+    """'2026-09-20' -> ('20', 'SEP')."""
+    _, mm, dd = iso.split("-")
+    return dd.lstrip("0"), MESES[mm]
+
+
+def fecha_de_nota(bloque):
+    """Fecha del hecho de una ficha, leída de su propio apartado TRAZABILIDAD.
+
+    La móvil se lee en el teléfono y el mando necesita saber DE QUÉ DÍA es cada
+    nota sin bajar hasta la trazabilidad. Se deriva del cartelón, nunca se fija
+    aquí: si la ficha no publica fecha, no se inventa ninguna.
+    """
+    m = re.search(r"<b>Hecho</b>:\s*(\d{4}-\d{2}-\d{2})", bloque)
+    if not m:
+        return ""
+    d, mes = _dia_mes(m.group(1))
+    return f"{d}-{mes}"
+
+
+def fechas_de_pagina(pagina):
+    """Rango de fechas de las fichas de una página, para su encabezado."""
+    isos = sorted(set(re.findall(r"<b>Hecho</b>:\s*(\d{4}-\d{2}-\d{2})", pagina)))
+    if not isos:
+        return ""
+    d0, m0 = _dia_mes(isos[0])
+    d1, m1 = _dia_mes(isos[-1])
+    if isos[0] == isos[-1]:
+        return f"{d0}-{m0}"
+    if m0 == m1:
+        return f"{d0} A {d1}-{m0}"
+    return f"{d0}-{m0} A {d1}-{m1}"
+
+
+def inyecta_fecha_notas(cuerpo):
+    """Pone la fecha del hecho en la cabecera de cada ficha, junto al color."""
+    def _una(m):
+        bloque = m.group(0)
+        f = fecha_de_nota(bloque)
+        if not f or 'class="fch"' in bloque:
+            return bloque
+        return bloque.replace(
+            '<div class="nota-header">',
+            f'<div class="nota-header"><span class="fch">{f}</span>', 1)
+    return re.sub(r'<div class="nota" id="[^"]+"[^>]*>.*?\n  </div>\n',
+                  _una, cuerpo, flags=re.S)
 
 
 def titulo_de(pagina, indice):
@@ -398,6 +474,8 @@ NAV_ABREV.update({
     "RASTREO DE SENTENCIAS": "SENTENCIAS",
     "AUDITORÍA RETROACTIVA": "AUDITORÍA",
     "TABLERO EJECUTIVO": "TABLERO",
+    "CANDIDATOS Y COBERTURA": "CANDIDATOS",
+    "PANORAMA DEL CORTE": "PANORAMA",
 })
 nav_links = "\n".join(
     f'    <a href="#s{n}">{NAV_ABREV.get(t, t)}</a>' for t, n in TITULOS)
@@ -411,6 +489,7 @@ for i, (titulo, n) in enumerate(TITULOS):
     es_sentencias = "RASTREO NACIONAL DE SENTENCIAS" in paginas[i]
     tiene_mapa_arm = 'id="argos-map-arm"' in paginas[i]
     cuerpo = tabla_a_ficha(lista_a_reg(limpia(paginas[i]), ANCLAS), con_tarjetas=es_sentencias)
+    cuerpo = inyecta_fecha_notas(cuerpo)
 
     if n == 1:
         # Consumir TODO el bloque de visuales hasta el semáforo: un .*? no
@@ -451,11 +530,14 @@ for i, (titulo, n) in enumerate(TITULOS):
     <div class="map-caption">{m.group(1)}</div>
   </div>''', cuerpo, flags=re.S)
 
+    rango = fechas_de_pagina(paginas[i])
+    meta = (f'<span class="fch">{rango}</span><span class="pg">PÁG. {n} / {TOTAL}</span>'
+            if rango else f'<span class="pg">PÁG. {n} / {TOTAL}</span>')
     partes.append(f'''<!-- ===================== {n} — {titulo} ===================== -->
 <section class="seccion" id="s{n}">
   <div class="sec-head">
     <h2>{titulo}</h2>
-    <span class="pg">PÁG. {n} / {TOTAL}</span>
+    <span class="meta">{meta}</span>
   </div>
 {cuerpo}
 </section>''')

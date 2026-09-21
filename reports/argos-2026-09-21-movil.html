@@ -296,6 +296,11 @@
   /* Categoría en cero: se muestra igual, atenuada. La ausencia es dato. */
   .conteo .tile.cero{opacity:.45;}
   .conteo .tile.cero .num{color:var(--muted);font-weight:600;}
+
+  .fch{font-family:var(--mono);font-size:8.5px;letter-spacing:.8px;color:var(--cyan-dim);
+       border:1px solid var(--border);padding:2px 6px;white-space:nowrap;align-self:flex-start;}
+  .sec-head .fch{border:0;padding:0;color:var(--cyan-dim);}
+  .sec-head .meta{display:flex;align-items:baseline;gap:8px;white-space:nowrap;}
 </style>
 </head>
 <body>
@@ -314,7 +319,7 @@
   </div>
   <nav class="nav">
     <a href="#s1">PORTADA</a>
-    <a href="#s2">PANORAMA DEL CORTE</a>
+    <a href="#s2">PANORAMA</a>
     <a href="#s3">C. ORGANIZADO I</a>
     <a href="#s4">C. ORGANIZADO II</a>
     <a href="#s5">C. ORGANIZADO III</a>
@@ -323,7 +328,7 @@
     <a href="#s8">C. ORGANIZADO VI</a>
     <a href="#s9">ARMAMENTO</a>
     <a href="#s10">SENTENCIAS</a>
-    <a href="#s11">CANDIDATOS JUDICIALES NO INTEGRADOS E INDICADOR DE COBERTURA</a>
+    <a href="#s11">CANDIDATOS</a>
     <a href="#s12">VALORACIÓN</a>
   </nav>
 </header>
@@ -332,7 +337,7 @@
 <section class="seccion" id="s1">
   <div class="sec-head">
     <h2>PORTADA</h2>
-    <span class="pg">PÁG. 1 / 12</span>
+    <span class="meta"><span class="pg">PÁG. 1 / 12</span></span>
   </div>
 
   
@@ -397,10 +402,9 @@
 <section class="seccion" id="s2">
   <div class="sec-head">
     <h2>PANORAMA DEL CORTE</h2>
-    <span class="pg">PÁG. 2 / 12</span>
+    <span class="meta"><span class="pg">PÁG. 2 / 12</span></span>
   </div>
 
-  <div class="block-head"><h2 style="font-size:14px;">PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD</h2></div>
   <p class="muted-note" style="margin-bottom:8px;">
     <b>Único listado resumido del cartelón.</b> <b>Ordenado de lo más reciente a lo más antiguo</b>:
     abre en el <b>20-sep</b> y cierra en los renglones del <b>17-sep</b>. Cada renglón remite por
@@ -432,13 +436,11 @@
 <section class="seccion" id="s3">
   <div class="sec-head">
     <h2>CRIMEN ORGANIZADO (I)</h2>
-    <span class="pg">PÁG. 3 / 12</span>
+    <span class="meta"><span class="fch">20-SEP</span><span class="pg">PÁG. 3 / 12</span></span>
   </div>
 
-  <div class="block-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (I) — LO MÁS RECIENTE DEL CORTE: DOMINGO 20 Y LUNES 21 DE SEPTIEMBRE</h2></div>
-
   <div class="nota" id="ARG-122-003">
-    <div class="nota-header"><h3>GUANAJUATO · VALLE DE SANTIAGO — DOS SUJETOS EN MOTOCICLETA DISPARAN CONTRA UN CAMPO DE BÉISBOL EN DURANES DE ARRIBA: CIFRA DE MUERTOS CONTRADICHA Y SIN EMISOR INSTITUCIONAL</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-header"><span class="fch">20-SEP</span><h3>GUANAJUATO · VALLE DE SANTIAGO — DOS SUJETOS EN MOTOCICLETA DISPARAN CONTRA UN CAMPO DE BÉISBOL EN DURANES DE ARRIBA: CIFRA DE MUERTOS CONTRADICHA Y SIN EMISOR INSTITUCIONAL</h3><span class="risk-flag alto">ROJO</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Domingo 20-sep, ~16:00</b> · <b>campo de béisbol de la comunidad DURANES DE ARRIBA, Valle de
@@ -472,7 +474,7 @@
   </div>
 
   <div class="nota" id="ARG-122-011">
-    <div class="nota-header"><h3>VERACRUZ · TEMPOAL — CASA DE SEGURIDAD SOBRE LA CARRETERA A HUEJUTLA CON 59,400 BOLSAS DE DROGA, ARMAS Y GRANADAS, Y CERO DETENIDOS</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-header"><span class="fch">20-SEP</span><h3>VERACRUZ · TEMPOAL — CASA DE SEGURIDAD SOBRE LA CARRETERA A HUEJUTLA CON 59,400 BOLSAS DE DROGA, ARMAS Y GRANADAS, Y CERO DETENIDOS</h3><span class="risk-flag bajo">VERDE</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Domingo 20-sep</b> · <b>carretera Tempoal-Huejutla de Reyes, Tempoal, Veracruz</b>, en el
@@ -506,7 +508,7 @@
   </div>
 
   <div class="nota" id="ARG-122-008">
-    <div class="nota-header"><h3>CHIAPAS · TUXTLA GUTIÉRREZ — QUINCE DETENIDOS POR EL ATAQUE DE LAS GRANJAS: LA ORDEN SE HABRÍA GIRADO DESDE EL PENAL DE OCOSINGO POR UN SENTENCIADO POR HOMICIDIO</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-header"><span class="fch">20-SEP</span><h3>CHIAPAS · TUXTLA GUTIÉRREZ — QUINCE DETENIDOS POR EL ATAQUE DE LAS GRANJAS: LA ORDEN SE HABRÍA GIRADO DESDE EL PENAL DE OCOSINGO POR UN SENTENCIADO POR HOMICIDIO</h3><span class="risk-flag bajo">VERDE</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>20 y 21-sep</b> · <b>Tuxtla Gutiérrez, Chiapas</b> · <b>FGE Chiapas</b> ·
@@ -546,13 +548,11 @@
 <section class="seccion" id="s4">
   <div class="sec-head">
     <h2>CRIMEN ORGANIZADO (II)</h2>
-    <span class="pg">PÁG. 4 / 12</span>
+    <span class="meta"><span class="fch">19-SEP</span><span class="pg">PÁG. 4 / 12</span></span>
   </div>
 
-  <div class="block-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (II) — SÁBADO 19 DE SEPTIEMBRE: DOS AGRESIONES CONTRA PERSONAL EN PATRULLAJE</h2></div>
-
   <div class="nota" id="ARG-122-004">
-    <div class="nota-header"><h3>NUEVO LEÓN · LOS ALDAMAS — SUJETOS ARMADOS DISPARAN CONTRA FUERZA CIVIL EN PATRULLAJE DEL OPERATIVO MURALLA: CUATRO ABATIDOS Y UN FUSIL BARRETT CAL. .50 ASEGURADO</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-header"><span class="fch">19-SEP</span><h3>NUEVO LEÓN · LOS ALDAMAS — SUJETOS ARMADOS DISPARAN CONTRA FUERZA CIVIL EN PATRULLAJE DEL OPERATIVO MURALLA: CUATRO ABATIDOS Y UN FUSIL BARRETT CAL. .50 ASEGURADO</h3><span class="risk-flag alto">ROJO</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Sábado 19-sep</b> · <b>Los Aldamas, Nuevo León</b> · <b>Fuerza Civil</b>,
@@ -586,7 +586,7 @@
   </div>
 
   <div class="nota" id="ARG-122-005">
-    <div class="nota-header"><h3>SINALOA · SIERRA EN LÍMITES CON DURANGO — CIVILES ARMADOS EN SEIS CAMIONETAS AGREDEN A PERSONAL DE LA SEMAR Y DE LA SSPC FEDERAL EN RECORRIDO DE VIGILANCIA</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-header"><span class="fch">19-SEP</span><h3>SINALOA · SIERRA EN LÍMITES CON DURANGO — CIVILES ARMADOS EN SEIS CAMIONETAS AGREDEN A PERSONAL DE LA SEMAR Y DE LA SSPC FEDERAL EN RECORRIDO DE VIGILANCIA</h3><span class="risk-flag alto">ROJO</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Sábado 19-sep</b> · <b>zona serrana de Sinaloa, en los límites con Durango</b> ·
@@ -621,7 +621,7 @@
   </div>
 
   <div class="nota" id="ARG-122-009">
-    <div class="nota-header"><h3>SINALOA · SIERRA EN LÍMITES CON DURANGO — NUEVE DETENIDOS, 17 ARMAS LARGAS CON UNA AMETRALLADORA, 127 CARGADORES Y 40 ARTEFACTOS EXPLOSIVOS IMPROVISADOS</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-header"><span class="fch">19-SEP</span><h3>SINALOA · SIERRA EN LÍMITES CON DURANGO — NUEVE DETENIDOS, 17 ARMAS LARGAS CON UNA AMETRALLADORA, 127 CARGADORES Y 40 ARTEFACTOS EXPLOSIVOS IMPROVISADOS</h3><span class="risk-flag bajo">VERDE</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Sábado 19-sep</b> · <b>zona serrana de Sinaloa, límites con Durango</b> ·
@@ -662,13 +662,11 @@
 <section class="seccion" id="s5">
   <div class="sec-head">
     <h2>CRIMEN ORGANIZADO (III)</h2>
-    <span class="pg">PÁG. 5 / 12</span>
+    <span class="meta"><span class="fch">18-SEP</span><span class="pg">PÁG. 5 / 12</span></span>
   </div>
 
-  <div class="block-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (III) — VIERNES 18 Y SÁBADO 19: OPERATIVO DE DOS DÍAS EN SONORA Y LOS ATAQUES DE GUANAJUATO Y CHIAPAS</h2></div>
-
   <div class="nota" id="ARG-122-007">
-    <div class="nota-header"><h3>SONORA · PUERTO PEÑASCO — CASA DE SEGURIDAD EN CERRADA DEL SOL: SIETE DETENIDOS Y TRES SECUESTRADOS RESCATADOS EL 18, Y UN ARSENAL CON TRES AMETRALLADORAS EN EL CATEO DEL 19</h3><span class="risk-flag medio">AMARILLO</span></div>
+    <div class="nota-header"><span class="fch">18-SEP</span><h3>SONORA · PUERTO PEÑASCO — CASA DE SEGURIDAD EN CERRADA DEL SOL: SIETE DETENIDOS Y TRES SECUESTRADOS RESCATADOS EL 18, Y UN ARSENAL CON TRES AMETRALLADORAS EN EL CATEO DEL 19</h3><span class="risk-flag medio">AMARILLO</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Viernes 18-sep</b> · <b>Puerto Peñasco, Sonora</b> · elementos <b>estatales y federales</b>
@@ -716,7 +714,7 @@
   </div>
 
   <div class="nota" id="ARG-122-002">
-    <div class="nota-header"><h3>GUANAJUATO · CELAYA — DOS ATAQUES ARMADOS EN DOCE HORAS DEJAN TRES MUERTOS Y CINCO HERIDOS, ENTRE ELLOS UN NIÑO DE 13 AÑOS Y UN POLICÍA MUNICIPAL</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-header"><span class="fch">18-SEP</span><h3>GUANAJUATO · CELAYA — DOS ATAQUES ARMADOS EN DOCE HORAS DEJAN TRES MUERTOS Y CINCO HERIDOS, ENTRE ELLOS UN NIÑO DE 13 AÑOS Y UN POLICÍA MUNICIPAL</h3><span class="risk-flag alto">ROJO</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Viernes 18-sep, noche</b> · <b>calle Francisco Villa, comunidad de MANCERA, Celaya,
@@ -751,7 +749,7 @@
   </div>
 
   <div class="nota" id="ARG-122-001">
-    <div class="nota-header"><h3>CHIAPAS · TUXTLA GUTIÉRREZ — AGRESORES EN MOTOCICLETA DISPARAN CONTRA UNA CANCHA DE FUTBOL EN LAS GRANJAS: TRES MUERTOS Y UN NIÑO DE 10 AÑOS HERIDO EN LA CABEZA</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-header"><span class="fch">18-SEP</span><h3>CHIAPAS · TUXTLA GUTIÉRREZ — AGRESORES EN MOTOCICLETA DISPARAN CONTRA UNA CANCHA DE FUTBOL EN LAS GRANJAS: TRES MUERTOS Y UN NIÑO DE 10 AÑOS HERIDO EN LA CABEZA</h3><span class="risk-flag alto">ROJO</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Viernes 18-sep, noche</b> · <b>colonia LAS GRANJAS, Tuxtla Gutiérrez, Chiapas</b> ·
@@ -794,13 +792,11 @@
 <section class="seccion" id="s6">
   <div class="sec-head">
     <h2>CRIMEN ORGANIZADO (IV)</h2>
-    <span class="pg">PÁG. 6 / 12</span>
+    <span class="meta"><span class="fch">18-SEP</span><span class="pg">PÁG. 6 / 12</span></span>
   </div>
 
-  <div class="block-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (IV) — VIERNES 18 DE SEPTIEMBRE: OAXACA, CIUDAD DE MÉXICO Y SAN LUIS POTOSÍ</h2></div>
-
   <div class="nota" id="ARG-122-006">
-    <div class="nota-header"><h3>OAXACA · JUCHITÁN DE ZARAGOZA — DISPAROS CONTRA LA FACHADA DE LA VIVIENDA Y TALLER DE UN ARTISTA MUXE: LA FGE LO ATRIBUYE A UN INTENTO DE EXTORSIÓN PREVIO</h3><span class="risk-flag medio">AMARILLO</span></div>
+    <div class="nota-header"><span class="fch">18-SEP</span><h3>OAXACA · JUCHITÁN DE ZARAGOZA — DISPAROS CONTRA LA FACHADA DE LA VIVIENDA Y TALLER DE UN ARTISTA MUXE: LA FGE LO ATRIBUYE A UN INTENTO DE EXTORSIÓN PREVIO</h3><span class="risk-flag medio">AMARILLO</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Viernes 18-sep, noche</b> · <b>Juchitán de Zaragoza, Oaxaca</b> · <b>un hombre y una mujer a
@@ -833,7 +829,7 @@
   </div>
 
   <div class="nota" id="ARG-122-010">
-    <div class="nota-header"><h3>CIUDAD DE MÉXICO · IZTAPALAPA — DOS CATEOS VINCULADOS A «LA UNIÓN TEPITO» CON TRES DETENIDOS, DOS ARMAS CORTAS Y CUATRO LARGAS</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-header"><span class="fch">18-SEP</span><h3>CIUDAD DE MÉXICO · IZTAPALAPA — DOS CATEOS VINCULADOS A «LA UNIÓN TEPITO» CON TRES DETENIDOS, DOS ARMAS CORTAS Y CUATRO LARGAS</h3><span class="risk-flag bajo">VERDE</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Viernes 18-sep</b> · <b>Iztapalapa, Ciudad de México</b> · <b>SSC capitalina</b> y
@@ -864,7 +860,7 @@
   </div>
 
   <div class="nota" id="ARG-122-012">
-    <div class="nota-header"><h3>SAN LUIS POTOSÍ · CUATRO REGIONES DEL ESTADO — 22 DETENIDOS, UN ARMA SIN CATEGORÍA Y DOS INHIBIDORES DE SEÑAL, CON UN SEGUNDO BOLETÍN DE CIFRA IDÉNTICA</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-header"><span class="fch">18-SEP</span><h3>SAN LUIS POTOSÍ · CUATRO REGIONES DEL ESTADO — 22 DETENIDOS, UN ARMA SIN CATEGORÍA Y DOS INHIBIDORES DE SEÑAL, CON UN SEGUNDO BOLETÍN DE CIFRA IDÉNTICA</h3><span class="risk-flag bajo">VERDE</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Viernes 18-sep</b> · <b>operativos en las CUATRO REGIONES de San Luis Potosí</b> ·
@@ -904,13 +900,11 @@
 <section class="seccion" id="s7">
   <div class="sec-head">
     <h2>CRIMEN ORGANIZADO (V)</h2>
-    <span class="pg">PÁG. 7 / 12</span>
+    <span class="meta"><span class="fch">17-SEP</span><span class="pg">PÁG. 7 / 12</span></span>
   </div>
 
-  <div class="block-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (V) — JUEVES 17 DE SEPTIEMBRE: RENGLONES DEL BOLETÍN FEDERAL, TODOS CON FRONTERA DE VENTANA</h2></div>
-
   <div class="nota" id="ARG-122-013">
-    <div class="nota-header"><h3>GUANAJUATO · SAN JOSÉ ITURBIDE — 59 MILLONES DE LITROS DE HIDROCARBURO ILÍCITO EN UN SOLO INMUEBLE: EL MAYOR DECOMISO DE COMBUSTIBLE ROBADO DE LA ADMINISTRACIÓN</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-header"><span class="fch">17-SEP</span><h3>GUANAJUATO · SAN JOSÉ ITURBIDE — 59 MILLONES DE LITROS DE HIDROCARBURO ILÍCITO EN UN SOLO INMUEBLE: EL MAYOR DECOMISO DE COMBUSTIBLE ROBADO DE LA ADMINISTRACIÓN</h3><span class="risk-flag bajo">VERDE</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Jueves 17-sep</b> · <b>San José Iturbide, Guanajuato</b> · <b>cateo por orden de juez
@@ -950,7 +944,7 @@
   </div>
 
   <div class="nota" id="ARG-122-015">
-    <div class="nota-header"><h3>MICHOACÁN · LA PIEDAD — DETENCIÓN DE UN COORDINADOR REGIONAL CON ÓRDENES DE APREHENSIÓN POR HOMICIDIO Y DESAPARICIÓN FORZADA COMETIDA POR PARTICULARES</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-header"><span class="fch">17-SEP</span><h3>MICHOACÁN · LA PIEDAD — DETENCIÓN DE UN COORDINADOR REGIONAL CON ÓRDENES DE APREHENSIÓN POR HOMICIDIO Y DESAPARICIÓN FORZADA COMETIDA POR PARTICULARES</h3><span class="risk-flag bajo">VERDE</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Jueves 17-sep</b> · <b>La Piedad, Michoacán</b> · <b>SSPC federal</b>, <b>Ejército
@@ -982,7 +976,7 @@
   </div>
 
   <div class="nota" id="ARG-122-016">
-    <div class="nota-header"><h3>TABASCO · CENTRO, COLONIA JOSÉ MARÍA PINO SUÁREZ — SEIS DETENIDOS, TRES ARMAS Y UN ACCESORIO LANZAGRANADAS</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-header"><span class="fch">17-SEP</span><h3>TABASCO · CENTRO, COLONIA JOSÉ MARÍA PINO SUÁREZ — SEIS DETENIDOS, TRES ARMAS Y UN ACCESORIO LANZAGRANADAS</h3><span class="risk-flag bajo">VERDE</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Jueves 17-sep</b> · <b>colonia José María Pino Suárez, municipio de Centro, Tabasco</b> ·
@@ -1016,7 +1010,7 @@
   </div>
 
   <div class="nota" id="ARG-122-017">
-    <div class="nota-header"><h3>TABASCO · CENTRO, RANCHO PLÁTANO Y CACAO — 150,000 LITROS DE HIDROCARBUROS, SUSTANCIAS QUÍMICAS Y MAQUINARIA INDUSTRIAL, SIN DETENIDOS</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-header"><span class="fch">17-SEP</span><h3>TABASCO · CENTRO, RANCHO PLÁTANO Y CACAO — 150,000 LITROS DE HIDROCARBUROS, SUSTANCIAS QUÍMICAS Y MAQUINARIA INDUSTRIAL, SIN DETENIDOS</h3><span class="risk-flag bajo">VERDE</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Jueves 17-sep</b> · <b>rancho Plátano y Cacao, municipio de Centro, Tabasco</b> ·
@@ -1053,13 +1047,11 @@
 <section class="seccion" id="s8">
   <div class="sec-head">
     <h2>CRIMEN ORGANIZADO (VI)</h2>
-    <span class="pg">PÁG. 8 / 12</span>
+    <span class="meta"><span class="fch">17-SEP</span><span class="pg">PÁG. 8 / 12</span></span>
   </div>
 
-  <div class="block-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (VI) — JUEVES 17 DE SEPTIEMBRE: ÚLTIMO RENGLÓN FEDERAL Y LAS DOS RECUPERACIONES DE LA VENTANA DE ARGOS 121</h2></div>
-
   <div class="nota" id="ARG-122-018">
-    <div class="nota-header"><h3>BAJA CALIFORNIA SUR · LA PAZ — DOS DETENIDOS, 109 CARTUCHOS Y 197 DOSIS DE FENTANILO: LA MUNICIÓN SE PUBLICA Y EL ARMA NO</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-header"><span class="fch">17-SEP</span><h3>BAJA CALIFORNIA SUR · LA PAZ — DOS DETENIDOS, 109 CARTUCHOS Y 197 DOSIS DE FENTANILO: LA MUNICIÓN SE PUBLICA Y EL ARMA NO</h3><span class="risk-flag bajo">VERDE</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Jueves 17-sep</b> · <b>La Paz, Baja California Sur</b> · <b>FGR</b>, <b>SSPC federal</b> y
@@ -1088,7 +1080,7 @@
   </div>
 
   <div class="nota" id="ARG-122-REC-002" style="opacity:.78;">
-    <div class="nota-header"><h3>MICHOACÁN · ANGAMACUTIRO Y PURUÁNDIRO — 28 INMUEBLES INTERVENIDOS Y 18 DETENIDOS, ENTRE ELLOS EL DIRECTOR DE LA POLICÍA MUNICIPAL DE ANGAMACUTIRO Y TRES AGENTES</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-header"><span class="fch">17-SEP</span><h3>MICHOACÁN · ANGAMACUTIRO Y PURUÁNDIRO — 28 INMUEBLES INTERVENIDOS Y 18 DETENIDOS, ENTRE ELLOS EL DIRECTOR DE LA POLICÍA MUNICIPAL DE ANGAMACUTIRO Y TRES AGENTES</h3><span class="risk-flag bajo">VERDE</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Jueves 17-sep</b> · <b>Angamacutiro y Puruándiro, Michoacán</b> · <b>FGE Michoacán</b> con
@@ -1127,7 +1119,7 @@
   </div>
 
   <div class="nota" id="ARG-122-REC-001" style="opacity:.78;">
-    <div class="nota-header"><h3>GUERRERO · MOCHITLÁN Y QUECHULTENANGO — VEINTINUEVE MILITARES Y POLICÍAS DESARMADOS Y RETENIDOS DURANTE HORAS, DOS PATRULLAS INCENDIADAS Y TRES VEHÍCULOS OFICIALES CON IMPACTOS DE BALA</h3><span class="risk-flag medio">AMARILLO</span></div>
+    <div class="nota-header"><span class="fch">17-SEP</span><h3>GUERRERO · MOCHITLÁN Y QUECHULTENANGO — VEINTINUEVE MILITARES Y POLICÍAS DESARMADOS Y RETENIDOS DURANTE HORAS, DOS PATRULLAS INCENDIADAS Y TRES VEHÍCULOS OFICIALES CON IMPACTOS DE BALA</h3><span class="risk-flag medio">AMARILLO</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
         <b>Jueves 17-sep</b> · <b>Mochitlán y Quechultenango, Guerrero</b> · <b>CIRCUITO RÍO AZUL</b>
@@ -1187,10 +1179,8 @@
 <section class="seccion" id="s9">
   <div class="sec-head">
     <h2>ARMAMENTO Y EXPLOSIVOS</h2>
-    <span class="pg">PÁG. 9 / 12</span>
+    <span class="meta"><span class="pg">PÁG. 9 / 12</span></span>
   </div>
-
-  <div class="block-head"><h2 style="font-size:14px;">CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS</h2></div>
 
   <p class="muted-note" style="margin-bottom:8px;">
     <b>Cifra grande</b> = asegurado en los <b>hechos integrados de este corte</b>. <b>Línea inferior</b> =
@@ -1237,10 +1227,8 @@
 <section class="seccion" id="s10">
   <div class="sec-head">
     <h2>RASTREO DE SENTENCIAS</h2>
-    <span class="pg">PÁG. 10 / 12</span>
+    <span class="meta"><span class="pg">PÁG. 10 / 12</span></span>
   </div>
-
-  <div class="block-head"><h2 style="font-size:14px;">RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES</h2></div>
 
   <p class="muted-note" style="margin-bottom:8px;">
     <b>Una sentencia integrada y tres declaradas.</b> La integrada <b>descansa en comunicado de la FGR
@@ -1312,14 +1300,12 @@
   
 
 </section>
-<!-- ===================== 11 — CANDIDATOS JUDICIALES NO INTEGRADOS E INDICADOR DE COBERTURA ===================== -->
+<!-- ===================== 11 — CANDIDATOS Y COBERTURA ===================== -->
 <section class="seccion" id="s11">
   <div class="sec-head">
-    <h2>CANDIDATOS JUDICIALES NO INTEGRADOS E INDICADOR DE COBERTURA</h2>
-    <span class="pg">PÁG. 11 / 12</span>
+    <h2>CANDIDATOS Y COBERTURA</h2>
+    <span class="meta"><span class="pg">PÁG. 11 / 12</span></span>
   </div>
-
-  <div class="block-head"><h2 style="font-size:14px;">CANDIDATOS JUDICIALES NO INTEGRADOS E INDICADOR DE COBERTURA</h2></div>
 
   <div class="tabla-scroll"><table class="exec">
     <thead><tr><th>Entidad · municipio</th><th>Caso y pena declarada</th><th>Por qué no se integra</th><th>Qué lo cerraría</th></tr></thead>
@@ -1357,10 +1343,8 @@
 <section class="seccion" id="s12">
   <div class="sec-head">
     <h2>VALORACIÓN</h2>
-    <span class="pg">PÁG. 12 / 12</span>
+    <span class="meta"><span class="pg">PÁG. 12 / 12</span></span>
   </div>
-
-  <div class="block-head"><h2 style="font-size:14px;">VALORACIÓN ARGOS, CONCLUSIONES E INDICADORES</h2></div>
 
   <div class="alerta contexto">
     <span class="flag">VALORACIÓN — NIVEL DE RIESGO NACIONAL</span>
