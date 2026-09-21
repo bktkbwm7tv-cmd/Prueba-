@@ -552,3 +552,39 @@ visible**. **El cartelón de escritorio y el `.txt` no se tocaron**; la validaci
 **Lección de método**: el destinatario reportó «se repite dos veces» y la lectura literal apuntaba
 al contenido. **No era el contenido: era el generador.** Antes de recortar un producto por
 duplicación, **comprobar si la duplicación la introduce la herramienta**.
+
+---
+
+## 18. El panorama dejaba de ser un índice en el teléfono
+
+**Instrucción recibida**, con captura de la versión móvil: *«Estos saturan más de información.»*
+
+**Diagnóstico**: la tabla **«Panorama del corte»** tiene **siete columnas**. El generador reflúa toda
+tabla de más de cuatro a **tarjetas apiladas con el nombre de cada columna delante de su valor** —regla
+correcta, nacida en ARGOS 102 para no perder datos—. Aplicada al panorama producía **veinte tarjetas de
+siete campos cada una**: `ENTIDAD · MUNICIPIO`, `HECHO`, `NIVEL DE RIESGO`, `FUENTE INSTITUCIONAL`,
+`FUENTE NACIONAL`, `CONFIANZA`, `ARG-ID`.
+
+⚠️ **El panorama dejaba de ser un índice y se convertía en un segundo reporte completo, colocado
+delante del reporte de verdad.** En el escritorio no se nota —cada hecho ocupa **una línea**—; en un
+teléfono, **ciento cuarenta bloques etiquetados antes de la primera ficha**.
+
+**Corregido en la herramienta**: `tools/gen-movil.py` reconoce el panorama por su firma —**es la única
+tabla del cartelón que lleva a la vez «Nivel de riesgo» y «ARG-ID»**; la de armamento tiene ARG-ID pero
+no nivel— y lo reflúa a **modo índice**: un renglón compacto por hecho con **entidad y municipio, qué
+pasó, su color y su ARG-ID**.
+
+**Los tres campos de procedencia salen del índice móvil, y no se pierde nada**: fuente institucional,
+fuente nacional y nivel de confianza viven **íntegros, con su recuento por tipo y sus emisores
+nombrados, en el apartado TRAZABILIDAD de la ficha a la que el propio ARG-ID enlaza**, y la tabla de
+siete columnas **sigue completa en el cartelón de escritorio**. La nota del bloque lo dice al lector:
+*«Toque un ARG-ID para ir a su ficha, donde están las fuentes, el nivel de confianza y los deslindes.»*
+
+**Resultado medido**: **20 renglones de índice**, **cero campos de fuente o confianza** en la sección de
+panorama de la móvil, y el archivo baja de **221,022 a 212,625 bytes**. **Escritorio y `.txt`
+intactos**; paridad de **29 ARG-ID** y validación repasadas.
+
+**Lección de método, que vale para todo generador**: una regla puede ser correcta en general y **errónea
+para un caso concreto**. «Ninguna tabla se pierde, las anchas se reflúan a tarjetas» salvó el módulo de
+armamento en ARGOS 102 y **arruinó el índice en ARGOS 122**. La tabla que es un **índice** no se trata
+como la tabla que es un **registro**.

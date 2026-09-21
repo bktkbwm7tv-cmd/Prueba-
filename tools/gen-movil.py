@@ -149,6 +149,21 @@ if _faltan:
     # y se inyecta el bloque completo y actual.
     shell = shell.replace("</style>", CSS_TABLA + "</style>", 1)
 
+CSS_INDICE = """
+  .tabla-indice{margin:10px 0;}
+  .fila-indice{border:1px solid var(--border);border-left:2px solid var(--cyan-dim);
+       padding:8px 10px;margin-bottom:6px;background:rgba(10,20,40,.35);}
+  .idx-ent{font-size:12px;color:var(--white);font-weight:700;line-height:1.3;}
+  .idx-ent .muted-note{font-weight:400;}
+  .idx-hecho{font-size:11.5px;color:var(--cyan);line-height:1.4;margin-top:3px;}
+  .idx-pie{font-family:var(--mono);font-size:9px;letter-spacing:.6px;
+       color:var(--cyan-dim);margin-top:5px;}
+  .idx-pie a{color:var(--cyan-dim);}
+  .fila-indice .muted-note{display:inline;font-size:9.5px;}
+"""
+if ".fila-indice{" not in shell:
+    shell = shell.replace("</style>", CSS_INDICE + "</style>", 1)
+
 CSS_FECHA = """
   .fch{font-family:var(--mono);font-size:8.5px;letter-spacing:.8px;color:var(--cyan-dim);
        border:1px solid var(--border);padding:2px 6px;white-space:nowrap;align-self:flex-start;}
@@ -257,6 +272,52 @@ def _sustituye_div(html, marca, reemplazo):
     return html
 
 
+# La tabla «Panorama del corte» es un ÍNDICE: en el escritorio ocupa una línea
+# por hecho y sus siete columnas se leen de un vistazo. En un teléfono cada fila
+# se reflúa a una tarjeta y esas siete etiquetas la convierten en un segundo
+# reporte completo, delante del reporte de verdad. Instrucción editorial del
+# destinatario tras revisar ARGOS 122: «estos saturan más de información».
+#
+# En la móvil el índice conserva lo que sirve para LOCALIZAR un hecho —entidad y
+# municipio, qué pasó, su color y su ARG-ID— y deja fuera los tres campos de
+# procedencia. No se pierde nada: los tres viven, con su recuento por tipo y sus
+# fuentes nombradas, en el apartado TRAZABILIDAD de la ficha a la que el propio
+# ARG-ID enlaza, y la tabla íntegra sigue en el cartelón de escritorio.
+COLS_INDICE_FUERA = {"fuente institucional", "fuente nacional", "confianza"}
+
+
+def _texto(celda):
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", celda)).strip()
+
+
+def _fila_a_indice(fila_html, cabeceras):
+    """Convierte un <tr> del panorama en un renglón de índice compacto."""
+    celdas = re.findall(r"(<t[dh][^>]*>)(.*?)</t[dh]>", fila_html, re.S)
+    if not celdas:
+        return ""
+    if len(celdas) == 1:
+        return f'<div class="fila-total">{celdas[0][1].strip()}</div>'
+    valores, col = {}, 0
+    for apertura, celda in celdas:
+        m = re.search(r'colspan\s*=\s*["\']?(\d+)', apertura, re.I)
+        span = int(m.group(1)) if m else 1
+        if col < len(cabeceras):
+            valores[cabeceras[col].strip().lower()] = celda.strip()
+        col += span
+    entidad = next((v for k, v in valores.items() if k.startswith("entidad")), "")
+    hecho = valores.get("hecho", "")
+    nivel = _texto(valores.get("nivel de riesgo", ""))
+    argid = valores.get("arg-id", "")
+    if not (entidad or hecho):
+        return _celdas_a_tarjeta(fila_html, cabeceras)
+    pie = " · ".join(x for x in (nivel, argid) if x)
+    return ('<div class="fila-indice">'
+            + (f'<div class="idx-ent">{entidad}</div>' if entidad else "")
+            + (f'<div class="idx-hecho">{hecho}</div>' if hecho else "")
+            + (f'<div class="idx-pie">{pie}</div>' if pie else "")
+            + "</div>")
+
+
 def _celdas_a_tarjeta(fila_html, cabeceras):
     """Convierte un <tr> del escritorio en una tarjeta apilada de la móvil."""
     celdas = re.findall(r"(<t[dh][^>]*>)(.*?)</t[dh]>", fila_html, re.S)
@@ -324,6 +385,17 @@ def tabla_a_ficha(p, con_tarjetas):
             return '<div class="tabla-scroll">' + interior + "</div>"
         cuerpo = bloque.split("</thead>")[-1] if "</thead>" in bloque else bloque
         filas = re.findall(r"<tr\b[^>]*>(.*?)</tr>", cuerpo, re.S)
+        cab_lower = {c.strip().lower() for c in cabeceras}
+        # Firma del panorama: es la única tabla del cartelón que lleva a la vez
+        # «Nivel de riesgo» y «ARG-ID». La de armamento tiene ARG-ID pero no nivel.
+        es_indice = {"nivel de riesgo", "arg-id"} <= cab_lower
+        if es_indice:
+            renglones = "".join(_fila_a_indice(f, cabeceras) for f in filas)
+            if renglones:
+                return ('<div class="tabla-indice"><p class="muted-note">'
+                        "<b>Índice del corte.</b> Toque un <b>ARG-ID</b> para ir a su ficha, "
+                        "donde están <b>las fuentes, el nivel de confianza y los deslindes</b>."
+                        "</p>" + renglones + "</div>")
         tarjetas = "".join(_celdas_a_tarjeta(f, cabeceras) for f in filas)
         if not tarjetas:
             return '<div class="tabla-scroll">' + interior + "</div>"
