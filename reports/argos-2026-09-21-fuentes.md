@@ -480,3 +480,40 @@ accionable y no depende de la cifra corregida.
 superó, 7 detenidos atribuidos al evento equivocado, un hecho ya citado por ARGOS 121 como hecho
 nuevo, un deslinde con una afirmación falsa y un agregado de víctimas que arbitraba en silencio una
 contradicción declarada. Los dos controles son obligatorios y esta edición lo confirma.**
+
+---
+
+## 16. Reordenación cronológica — instrucción editorial del destinatario, posterior a la publicación
+
+**Instrucción recibida tras revisar la versión móvil**: *«Solo pon del día de hoy información.»*
+
+**Comprobación previa a ejecutarla, que cambió la decisión**: el corte **no tiene un solo hecho
+fechado el 21-sep**. El desglose es **5 hechos del 17 · 6 del 18 · 3 del 19 · 3 del 20 · 0 del 21**,
+y la ventana del día de hoy solo abarca de **00:00 a 08:57**. Aplicada al pie de la letra, la
+instrucción habría dejado el cartelón **con cero hechos propios**, y los **17 hechos del 17 al 20
+—los cinco rojos incluidos— se habrían perdido del archivo**, porque ARGOS 123 abre donde éste cierra
+y nadie habría vuelto a mirar ese tramo.
+
+**Decisión del destinatario, consultado con el dato delante**: **conservar la ventana íntegra y
+reordenar el cartelón de lo más reciente a lo más antiguo.**
+
+**Lo aplicado**, sin tocar un solo dato, cifra, fuente, deslinde ni clasificación:
+
+| Antes | Ahora |
+|---|---|
+| Fichas agrupadas **por entidad y región** | Fichas ordenadas **por fecha, de la más reciente a la más antigua** |
+| Página 3 abría con **Celaya (18-sep)** | Página 3 abre con **Valle de Santiago (20-sep)** |
+| Los renglones del boletín federal del **17-sep** quedaban intercalados | Quedan **agrupados al final**, en las páginas V y VI, con su marca `FRONTERA DE VENTANA` |
+| Tabla «Panorama del corte» en orden temático | **Ordenada 20 → 17-sep**, con el orden declarado en su encabezado |
+| Las dos recuperaciones, dispersas | **Juntas al cierre del bloque de crimen organizado**, atenuadas |
+
+**Añadido al encabezado del panorama**, porque es dato de trazabilidad y no opinión:
+`NINGÚN HECHO DEL CORTE ESTÁ FECHADO EL 21-SEP: LA VENTANA SOLO ALCANZA HASTA LAS 08:57 DE HOY.`
+
+⚠️ **Los totales, el semáforo, la densidad y los ARG-ID no cambian**: 17 hechos, 5/2/10, 0,19
+hechos/hora, 29 ARG-ID en las tres versiones. **Es una reordenación de presentación, no una
+reedición.** La validación y los dos generadores se volvieron a pasar después.
+
+**Lección para ARGOS 123**: cuando una instrucción editorial, leída al pie de la letra, **vaciaría el
+producto**, lo correcto no es obedecerla ni descartarla, sino **poner el dato delante del
+destinatario y dejar que decida**. Aquí el dato era que **hoy no había hechos**, y bastó decirlo.
