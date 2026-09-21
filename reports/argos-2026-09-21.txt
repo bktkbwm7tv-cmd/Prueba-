@@ -1,0 +1,861 @@
+ARGOS 122 — REPORTE NACIONAL DE SEGURIDAD
+REPORTE DIARIO DE INTELIGENCIA CRIMINAL
+«INVESTIGACIONES, BÚSQUEDA Y VERDAD»
+
+Corte informativo: 2026-09-21 · 08:57 (CDMX)
+Ventana: 17-sep 17:36 → 21-sep 08:57 CDMX (87 h 21 min)
+Versión 3.0 · Corte matutino · USO INSTITUCIONAL
+
+============================================================================
+
+[ RADAR CENTRAL — EN VIVO ]
+
+  · 🔴 Alto impacto · 5
+  · 🟡 Violencia operativa · 2
+  · 🟢 Acciones institucionales · 10
+
+[ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
+
+Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
+
+## SEMÁFORO ARGOS
+
+  · 🔴 ROJO — ALTO IMPACTO — 5 eventos
+
+  · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 2 eventos
+
+  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 10 eventos
+
+── LO QUE DEBE HACER EL MANDO
+
+1. AUDITAR EL ARMAMENTO DE CARGO DE LAS POLICÍAS MUNICIPALES DE LA COSTA DE GUERRERO Y DEL BAJÍO
+MICHOACANO, arma por arma y contra inventario, con cotejo balístico. DOS CORPORACIONES
+MUNICIPALES INTERVENIDAS EN DOS ENTIDADES: EN ANGAMACUTIRO CAYERON SU DIRECTOR DE POLICÍA Y TRES
+AGENTES.
+2. VIGILAR LOS ESPACIOS DEPORTIVOS COMUNITARIOS EN HORARIO VESPERTINO Y NOCTURNO, con agresores
+en motocicleta y tiro dirigido: dos ataques en dos entidades y tres días, con SEIS O SIETE
+MUERTOS Y OCHO HERIDOS. EL RANGO LO IMPONE LA CIFRA CONTRADICHA DE VALLE DE SANTIAGO. LA
+VINCULACIÓN ENTRE AMBOS NO ESTÁ ACREDITADA Y NO SE AFIRMA.
+3. EXIGIR A LA FGE DE GUANAJUATO LA CIFRA OFICIAL DE VÍCTIMAS DE VALLE DE SANTIAGO: CIRCULAN 3 Y
+4 MUERTOS Y NINGÚN EMISOR INSTITUCIONAL HA PUBLICADO EL DATO.
+4. COTEJAR EL ORIGEN DE LAS DOS PIEZAS CAL. .50 Y DE LAS TRES AMETRALLADORAS DEL CORTE —Barrett
+de Los Aldamas, Browning M-2 y dos Minimi de Puerto Peñasco, una ametralladora en la sierra de
+Sinaloa—. NINGUNA LLEVA NÚMERO DE SERIE PUBLICADO Y SIN ÉL NO SE CRUZAN CON LAS RASTREADAS DESDE
+EL NORTE.
+5. PERITAR Y COTEJAR LOS 40 AEI DE LA SIERRA CONTRA LOS 53 DE MAZATLÁN Y LOS 84 DE LA NORIA: 177
+artefactos en trece días en un mismo corredor. FIJARÍA SI HAY UN MISMO FABRICANTE. REQUIERE
+VALIDACIÓN.
+
+Ventana 17-sep 17:36 → 21-sep 08:57 CDMX (87 h 21 min) · la segunda más larga de las cinco
+últimas, frente a 30 h 02 min del corte anterior · 17 hechos en 12 entidades · 20 entidades sin
+hecho integrado · 5 hechos rojos, todos dentro de ventana · 2 recuperaciones -REC- de la ventana
+de ARGOS 121, atenuadas y fuera de todos los totales · 5 hechos con FRONTERA DE VENTANA, todos
+del boletín federal del 17-sep · 6 cifras contradichas, 4 arbitradas por procedencia y 2 no
+arbitradas · 1 sentencia integrada y 3 declaradas · densidad 0,19 hechos/hora frente a 0,10 ·
+techo de confianza ★★★☆☆ por bloqueo de egreso: ninguna página se leyó íntegra, tercera edición
+consecutiva.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-21 · Hora: 08:57 (CDMX) · Corte: Matutino · ARGOS N.° 122 · USO INSTITUCIONAL
+
+============================================================================
+
+## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
+
+  Entidad · municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
+  Chiapas · Tuxtla Gutiérrez · col. Las Granjas | 3 muertos y 3 heridos —entre ellos un niño de 10 años— en un ataque a una cancha de futbol | 🔴 Rojo | FGE Chiapas (por cita del Fiscal General) | Infobae · El Universal · Proceso | ★★★☆☆ | ARG-122-001
+  Guanajuato · Celaya · Mancera y mercado del centro | 2 ataques, 3 muertos y 5 heridos · entre las víctimas, un niño de 13 años y un policía municipal herido | 🔴 Rojo | FGE Guanajuato (por cita) | El Universal · Vanguardia | ★★★☆☆ | ARG-122-002
+  Guanajuato · Valle de Santiago · Duranes de Arriba | Ataque a un campo de béisbol · MUERTOS CONTRADICHOS: 3 O 4, 5 heridos | 🔴 Rojo | ninguna · FGE sin cifra publicada | El Financiero · Milenio · La Silla Rota | ★★☆☆☆ | ARG-122-003
+  Nuevo León · Los Aldamas | Agresión a personal de Fuerza Civil en patrullaje · 4 abatidos, 4 largas y un fusil Barrett cal. .50 | 🔴 Rojo | Fuerza Civil NL (por cita) | El Universal · Milenio · MVS | ★★★☆☆ | ARG-122-004
+  Sinaloa · sierra, límites con Durango · municipio no especificado | Agresión armada contra SEMAR y SSPC federal desde seis camionetas | 🔴 Rojo | SSPC federal y SEMAR (por cita) | Proceso · Excélsior · El Heraldo | ★★★☆☆ | ARG-122-005
+  Oaxaca · Juchitán de Zaragoza | Disparos contra la vivienda y taller de un artista muxe · sin heridos · la FGE lo atribuye a extorsión | 🟡 Amarillo | FGE Oaxaca (por cita) | Infobae · El Heraldo | ★★★☆☆ | ARG-122-006
+  Sonora · Puerto Peñasco · fracc. Cerrada del Sol | Topón el 18 y cateo el 19 · 7 detenidos, 3 víctimas de secuestro rescatadas, 5 cortas, 2 Minimi y una Browning M-2 cal. .50 · «MÁS DE 40» LARGAS, NO INTEGRADAS | 🟡 Amarillo | SSPC federal (por cita del titular) | UnoTV · La Silla Rota · El Heraldo | ★★★☆☆ | ARG-122-007
+  Chiapas · Tuxtla Gutiérrez | 15 detenidos por el ataque de Las Granjas · orden girada desde el penal de Ocosingo | 🟢 Verde | FGE Chiapas (por cita del Fiscal General) | Infobae · El Universal · SinEmbargo | ★★★☆☆ | ARG-122-008
+  Sinaloa · sierra, límites con Durango | 9 detenidos —uno menor—, 17 largas con una ametralladora, 127 cargadores y 40 AEI | 🟢 Verde | SSPC federal y SEMAR (por cita) | Proceso · Excélsior · El Heraldo | ★★★☆☆ | ARG-122-009
+  Ciudad de México · Iztapalapa | 2 cateos vinculados a «La Unión Tepito» · 3 detenidos, 2 cortas y 4 largas | 🟢 Verde | SSC y FGJ CDMX (por cita, sin boletín) | El Heraldo · El Financiero · La Razón | ★★★☆☆ | ARG-122-010
+  Veracruz · Tempoal | 59,400 bolsas de droga, armas y granadas en una casa de seguridad · cero detenidos | 🟢 Verde | FGE Veracruz (por cita) | N+ · Infobae | ★★★☆☆ | ARG-122-011
+  San Luis Potosí · cuatro regiones del estado | 22 detenidos en agregado de 24 h · 1 arma sin categoría y 2 inhibidores de señal | 🟢 Verde | Guardia Civil Estatal (por cita) | ninguna | ★★★☆☆ | ARG-122-012
+  Guanajuato · San José Iturbide · FRONTERA DE VENTANA | 59 millones de litros de hidrocarburo ilícito y 10 tanques · el mayor decomiso de la administración | 🟢 Verde | FGR y Gabinete de Seguridad (boletín 17-sep, vía republicadores) | La Jornada · Infobae · Milenio | ★★★☆☆ | ARG-122-013
+  Michoacán · La Piedad · FRONTERA DE VENTANA | Detención de un coordinador regional con órdenes por homicidio y desaparición forzada | 🟢 Verde | Gabinete de Seguridad (boletín 17-sep, vía republicadores) | Milenio | ★★☆☆☆ | ARG-122-015
+  Tabasco · Centro · col. Pino Suárez · FRONTERA DE VENTANA | 6 detenidos, 2 cortas, 1 larga, 15 cartuchos, 3 cargadores y un accesorio lanzagranadas | 🟢 Verde | Gabinete de Seguridad (boletín 17-sep, vía republicadores) | ninguna independiente | ★★★☆☆ | ARG-122-016
+  Tabasco · Centro · rancho Plátano y Cacao · FRONTERA DE VENTANA | 150,000 litros de hidrocarburos, sustancias químicas y maquinaria industrial · sin detenidos | 🟢 Verde | Gabinete de Seguridad (boletín 17-sep, vía republicadores) | ninguna independiente | ★★☆☆☆ | ARG-122-017
+  Baja California Sur · La Paz · FRONTERA DE VENTANA | 2 detenidos, 109 cartuchos y 197 dosis de fentanilo · armas no publicadas | 🟢 Verde | Gabinete de Seguridad (boletín 17-sep, vía republicadores) | Milenio | ★★☆☆☆ | ARG-122-018
+  Michoacán · Angamacutiro y Puruándiro · VENTANA ARGOS 121 | 28 inmuebles y 18 detenidos, entre ellos el director de la Policía Municipal de Angamacutiro y tres agentes | 🟢 Verde | FGE Michoacán (por cita, sin boletín) | Infobae · Quadratín | ★★★☆☆ | ARG-122-REC-002
+  Guerrero · Mochitlán y Quechultenango · VENTANA ARGOS 121 | 29 militares y policías desarmados y retenidos, 2 patrullas incendiadas y 3 vehículos oficiales con impactos de bala en el Circuito Río Azul | 🟡 Amarillo | FGE Guerrero y SEDENA (por cita) | Proceso · Infobae · Milenio | ★★★☆☆ | ARG-122-REC-001
+  Tamaulipas · Nuevo Laredo | Sentencia de 332 años 6 meses contra «El Cholo» por privación ilegal de la libertad y acopio de armas · INTEGRADA | no aplica | FGR FEMDO y FECOR · comunicado citado | La Jornada · Infobae · MVS | ★★★☆☆ | ARG-122-SEN-001
+
+  Armas cortas | Armas largas | Sin categoría | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Arm. especial | Detenidos | Entidades | Sentencias
+  10 | 28 | 1 | 124 | 131 | 0 · SIN CIFRA | 40 | 0 · SIN CIFRA | 4 | 20 | 9 | 1 · 3 declaradas
+
+Único listado resumido del cartelón. Cada renglón remite por ARG-ID a su ficha, que es donde
+está el detalle. Las dos filas atenuadas son de la ventana de ARGOS 121 y NO INTEGRAN NINGÚN
+TOTAL DE ESTE CORTE.
+
+Ninguna autoridad publicó un agregado nacional del corte. Granadas y explosivos en cero por
+falta de cifra, no por ausencia: Tempoal asegura granadas y Puerto Peñasco artefactos explosivos
+improvisados, ninguno con cantidad publicada. Armas largas: DE PUERTO PEÑASCO SOLO SE INTEGRAN
+LAS DOS AMETRALLADORAS MINIMI, ÚNICA CIFRA EXPRESA; «MÁS DE 40» NO ES CIFRA Y LA PRELIMINAR DE
+33 QUEDÓ SUPERADA. Detenidos: solo los de eventos con aseguramiento de armamento — no entran los
+7 de Puerto Peñasco, detenidos el 18-sep mientras el arsenal se aseguró en el cateo del 19; ni
+los 22 de San Luis Potosí ni los 15 de Chiapas, agregados sin desglose por sub-evento. Armamento
+especial: 1 ametralladora, 2 piezas cal. .50 —Barrett y Browning M-2— y 1 accesorio
+lanzagranadas; los lanzagranadas de la sierra de Sinaloa no llevan cifra. NINGÚN TOTAL ABSOLUTO
+ES COMPARABLE CON UN CORTE DE 30 HORAS SIN NORMALIZAR POR DURACIÓN.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-21 · Hora: 08:57 (CDMX) · Corte: Matutino · ARGOS N.° 122 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (I) — GUANAJUATO: DOS ATAQUES A ESPACIOS DEPORTIVOS Y EL MAYOR DECOMISO DE HUACHICOL DE LA ADMINISTRACIÓN
+
+### GUANAJUATO · CELAYA — DOS ATAQUES ARMADOS EN DOCE HORAS DEJAN TRES MUERTOS Y CINCO HERIDOS, ENTRE ELLOS UN NIÑO DE 13 AÑOS Y UN POLICÍA MUNICIPAL [ROJO]
+
+── HECHO
+
+Viernes 18-sep, noche · calle Francisco Villa, comunidad de MANCERA, Celaya, Guanajuato · un
+grupo armado irrumpe en un domicilio. Muertos: JORGE, 28 años, y CRISTIAN, 13 años. Heridas:
+MARLÉN, CARMEN y MARÍA, esta última de 80 años.
+Sábado 19-sep, ~09:00 · mercado de la zona centro · sujetos armados disparan contra
+comerciantes. Muerto: RAÚL, presunto propietario de una carnicería, abatido en la entrada de su
+negocio. Heridos: un empleado y UN POLICÍA MUNICIPAL.
+Saldo conjunto: 3 muertos · 5 heridos. Cero detenidos al cierre. Armamento: NO PUBLICADO. NO
+ALIMENTA EL CONTEO Y NO SE INFIERE.
+CIFRA DE TERCERO NO ADOPTADA: los «15 homicidios dolosos con arma de fuego entre viernes y
+sábado» en Celaya, Salamanca, Irapuato, León y Valle de Santiago son un agregado de medios sin
+emisor institucional.
+
+── TRAZABILIDAD
+
+ARG-122-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —sin comunicado propio
+de la FGE— · Hecho: 2026-09-18 noche y 2026-09-19 ~09:00 · Publicación: 2026-09-19 y 2026-09-20
+· Consulta: 2026-09-21, 08:57 CDMX · Estatus: Parcialmente corroborado.
+Fuentes — Institucional (1, por cita, sin comunicado): FGE Guanajuato. Nacional (4), 2 con fecha
+en la ruta: Diario de Yucatán · El Tiempo Monclova. Regional (2). Lista íntegra en el archivo de
+fuentes.
+DESLINDE OBLIGATORIO: Celaya SÍ figura en el índice, que cubre de ARGOS 91 en adelante —
+ARG-95-002 (enfrentamiento Celaya-Cortazar), ARG-98-003 (agresión a la GN en la autopista Apaseo
+el Grande-Celaya) y ARG-103-REC-006 (cuerpo semienterrado, 17-ago)—. Ninguno es este hecho:
+otras fechas y otro tipo de evento.
+Calendario verificado: 18-sep viernes · 19-sep sábado.
+
+### GUANAJUATO · VALLE DE SANTIAGO — DOS SUJETOS EN MOTOCICLETA DISPARAN CONTRA UN CAMPO DE BÉISBOL EN DURANES DE ARRIBA: CIFRA DE MUERTOS CONTRADICHA Y SIN EMISOR INSTITUCIONAL [ROJO]
+
+── HECHO
+
+Domingo 20-sep, ~16:00 · campo de béisbol de la comunidad DURANES DE ARRIBA, Valle de Santiago,
+Guanajuato, cerca del límite municipal con Pueblo Nuevo · dos sujetos en motocicleta irrumpen y
+disparan de forma directa y repetida contra varias personas reunidas.
+CIFRA DE VÍCTIMAS CONTRADICHA Y NO ARBITRADA: 4 MUERTOS y 5 HERIDOS según La Silla Rota, El
+Financiero y Periódico AM; 3 MUERTOS y 5 HERIDOS según Periódico Correo y Guanajuato Informa. LA
+FGE DE GUANAJUATO NO HA PUBLICADO CIFRA: SIN EMISOR INSTITUCIONAL NO SE ARBITRA POR MAYORÍA.
+Guardia Nacional y Ejército acordonaron el sitio a la espera de la Fiscalía. Cero detenidos al
+cierre. Armamento: NO PUBLICADO.
+Segundo ataque del corte contra un espacio deportivo comunitario, tras Las Granjas. LA
+VINCULACIÓN ENTRE AMBOS NO ESTÁ ACREDITADA Y NO SE AFIRMA.
+
+── TRAZABILIDAD
+
+ARG-122-003 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido —cifra de muertos
+contradicha y sin ninguna fuente institucional— · Hecho: 2026-09-20, ~16:00 · Publicación:
+2026-09-20 y 2026-09-21 · Consulta: 2026-09-21, 08:57 CDMX · Estatus: Pendiente de corroboración
+institucional.
+Fuentes — Institucional (0). LA FGE DE GUANAJUATO NO PUBLICÓ CIFRA EXACTA. Nacional (4), 3 con
+fecha en la ruta: La Silla Rota · El Financiero · Periódico AM. Regional (3), 1 con fecha en la
+ruta: Periódico Correo. Lista íntegra en el archivo de fuentes.
+DESLINDE: ni «Valle de Santiago» ni «Duranes» figuran en el índice, que cubre de ARGOS 91 en
+adelante.
+Calendario verificado: 20-sep domingo.
+
+### GUANAJUATO · SAN JOSÉ ITURBIDE — 59 MILLONES DE LITROS DE HIDROCARBURO ILÍCITO EN UN SOLO INMUEBLE: EL MAYOR DECOMISO DE COMBUSTIBLE ROBADO DE LA ADMINISTRACIÓN [VERDE]
+
+── HECHO
+
+Jueves 17-sep · San José Iturbide, Guanajuato · cateo por orden de juez federal en un inmueble.
+Asegurado: gasolina Magna 33,504,067.406 L · Premium 7,266,813.6174 L · diésel 18,265,989.504 L.
+Suma: 59,036,870.527 litros — CÁLCULO PROPIO DE ARGOS: EL EMISOR PUBLICA EL DESGLOSE, NO EL
+TOTAL.
+También: 10 tanques de almacenamiento · 3 unidades de carga · contenedores · documentación ·
+vehículos. Sin detenidos publicados. Armamento: NO PUBLICADO. NO ALIMENTA EL CONTEO.
+Origen de la investigación: 3-jul, detención de una persona que descargaba combustible en una
+gasolinera de San Luis de la Paz.
+Es 35 veces el récord estatal anterior: 1.65 millones de litros, carretera Silao-San Felipe,
+octubre de 2025. ATRIBUCIÓN NO ADOPTADA: la titularidad de la planta y los permisos que la
+ampararon, publicados por una cobertura y no acreditados por el emisor.
+FRONTERA DE VENTANA — HORA NO FIJADA: el hecho es del 17-sep y esta ventana abre ese día a las
+17:36. Se integra a la edición que lo ve primero, con la marca, que es PERMANENTE.
+
+── TRAZABILIDAD
+
+ARG-122-013 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —ninguna página se
+leyó íntegra— · Hecho: 2026-09-17, hora no fijada · Publicación: 2026-09-17 y 2026-09-18 ·
+Consulta: 2026-09-21, 08:57 CDMX · Estatus: Confirmado por fuente institucional citada.
+Fuentes — Institucional (2, por cita): FGR · Gabinete de Seguridad (BOLETÍN DEL 17-SEP;
+gob.mx/sspc NO INDEXADO, SUSTITUCIÓN POR REPUBLICADORES, ANOTADA). Nacional (5), 4 con fecha en
+la ruta: La Jornada · Infobae · El Informador · Diario de Yucatán. Regional (2). Lista íntegra
+en el archivo de fuentes.
+DESLINDE: «San José Iturbide» no figura en el índice, que cubre de ARGOS 91 en adelante. No es
+el aseguramiento de 150,000 litros de Centro, Tabasco (ARG-122-017), del mismo boletín y del
+mismo día: otra entidad y otro volumen; no se suman.
+Calendario verificado: 17-sep jueves.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-21 · Hora: 08:57 (CDMX) · Corte: Matutino · ARGOS N.° 122 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (II) — CHIAPAS Y OAXACA: UN ATAQUE ORDENADO DESDE PRISIÓN Y SUS QUINCE DETENIDOS
+
+### CHIAPAS · TUXTLA GUTIÉRREZ — AGRESORES EN MOTOCICLETA DISPARAN CONTRA UNA CANCHA DE FUTBOL EN LAS GRANJAS: TRES MUERTOS Y UN NIÑO DE 10 AÑOS HERIDO EN LA CABEZA [ROJO]
+
+── HECHO
+
+Viernes 18-sep, noche · colonia LAS GRANJAS, Tuxtla Gutiérrez, Chiapas · cancha de futbol ·
+agresores a bordo de una motocicleta disparan contra un grupo reunido.
+Muertos: DOS HOMBRES Y UNA MUJER. Heridos: TRES, entre ellos un niño con disparo en la cabeza.
+EDAD DEL MENOR CONTRADICHA Y ARBITRADA POR PROCEDENCIA: se adopta 10 años, la cifra atribuida
+expresamente al Fiscal General de Chiapas, frente a los 12 de otra cobertura.
+Móvil publicado por la FGE: disputa por el control de puntos de venta de droga al menudeo en la
+zona norte-oriente de la ciudad.
+Armamento del hecho: NO PUBLICADO. El arma corta asegurada corresponde a las detenciones
+posteriores y va en ARG-122-ARM-006.
+UN DELITO Y SU DETENCIÓN SON DOS EVENTOS: las quince detenciones son ARG-122-008, en verde, y no
+se suman a éste.
+
+── TRAZABILIDAD
+
+ARG-122-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —edad del menor
+contradicha, sin boletín propio de la FGE— · Hecho: 2026-09-18, noche sin minuto fijado ·
+Publicación: 2026-09-19 al 2026-09-21 · Consulta: 2026-09-21, 08:57 CDMX · Estatus: Parcialmente
+corroborado.
+Fuentes — Institucional (1, por cita del Fiscal General, sin comunicado indexado): FGE Chiapas.
+fge.chiapas.gob.mx SIN RESULTADO INDEXADO EN VENTANA; SUSTITUCIÓN POR BÚSQUEDA DIRIGIDA,
+ANOTADA. Nacional (5), 3 con fecha en la ruta: Infobae · El Heraldo de México · La Silla Rota.
+Regional (3), 2 con fecha en la ruta: Alerta Chiapas · ZOLO Noticias. Lista íntegra en el
+archivo de fuentes.
+DESLINDE: «Las Granjas» no figura en el índice, que cubre de ARGOS 91 en adelante. No es
+ARG-120-016 (Tapachula, 15-sep) ni el hecho de Tuxtla Gutiérrez del 7-sep citado en su deslinde.
+UN TITULAR HABLA DE «DOS ATAQUES EN CANCHAS EN MENOS DE DOS SEMANAS»: EL SEGUNDO HECHO NO SE
+FUSIONA NI SE DA POR VERIFICADO.
+Calendario verificado: 18-sep viernes.
+
+### CHIAPAS · TUXTLA GUTIÉRREZ — QUINCE DETENIDOS POR EL ATAQUE DE LAS GRANJAS: LA ORDEN SE HABRÍA GIRADO DESDE EL PENAL DE OCOSINGO POR UN SENTENCIADO POR HOMICIDIO [VERDE]
+
+── HECHO
+
+20 y 21-sep · Tuxtla Gutiérrez, Chiapas · FGE Chiapas · 15 PERSONAS DETENIDAS por el ataque de
+Las Granjas.
+Autores materiales señalados: JESÚS «N», 21 años, que habría conducido la motocicleta, y UN
+ADOLESCENTE DE 17 AÑOS, que habría accionado el arma.
+Autores intelectuales señalados: JOSÉ LUIS «N», «EL BEBÉ», 32 años, descrito como líder de la
+célula que controla los puntos de venta al menudeo de la zona; y LIMBERG «N», «EL HUESO», que ya
+cumple sentencia por homicidio calificado en el PENAL DE OCOSINGO y habría ordenado el ataque
+desde prisión.
+Asegurado: 1 ARMA CORTA · 1 motocicleta · cascos.
+LOS QUINCE DETENIDOS NO SE INTEGRAN AL CONTEO DE ARMAMENTO: el emisor no desglosa cuántos fueron
+detenidos en el mismo evento de aseguramiento, y un agregado de capturas no atribuye detenidos a
+un aseguramiento concreto.
+
+── TRAZABILIDAD
+
+ARG-122-008 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —sin boletín propio
+indexado de la FGE— · Hecho: 2026-09-20 y 2026-09-21, hora no fijada · Publicación: 2026-09-20 y
+2026-09-21 · Consulta: 2026-09-21, 08:57 CDMX · Estatus: Parcialmente corroborado.
+Fuentes — Institucional (1, por cita del Fiscal General JORGE LUIS LLAVEN ABARCA): FGE Chiapas.
+Nacional (4), 1 con fecha en la ruta: Infobae. Regional (4), 3 con fecha en la ruta: Alerta
+Chiapas · El Sol del Soconusco · KCH Comunicación. Lista íntegra en el archivo de fuentes.
+UN DELITO Y SU DETENCIÓN SON DOS EVENTOS: el ataque es ARG-122-001, en rojo, y no se suma a
+éste. ATRIBUCIONES DE AUTORÍA NO ADOPTADAS COMO HECHO PROBADO: la calidad de autor material o
+intelectual la señala la Fiscalía y no hay resolución judicial.
+Calendario verificado: 20-sep domingo · 21-sep lunes.
+
+### OAXACA · JUCHITÁN DE ZARAGOZA — DISPAROS CONTRA LA FACHADA DE LA VIVIENDA Y TALLER DE UN ARTISTA MUXE: LA FGE LO ATRIBUYE A UN INTENTO DE EXTORSIÓN PREVIO [AMARILLO]
+
+── HECHO
+
+Viernes 18-sep, noche · Juchitán de Zaragoza, Oaxaca · un hombre y una mujer a bordo de una
+motocicleta disparan contra la fachada de la vivienda y taller de ELVIS GUERRA, diseñador y
+artista muxe.
+Sin heridos ni muertos · daño material.
+La FGE de Oaxaca atribuye el ataque a un INTENTO DE EXTORSIÓN PREVIO e informa haber
+identificado a presuntos responsables. Cero detenidos al cierre. Armamento: NO PUBLICADO.
+CONTEXTO PUBLICADO Y NO ADOPTADO COMO MÓVIL: la víctima vistió a la Presidenta para el Grito de
+Independencia; ninguna autoridad vincula ese hecho con el ataque y ARGOS tampoco lo vincula.
+Amarillo: agresión armada focalizada sin víctimas. NO CONCURRE NINGUNA AGRAVANTE DE LA LISTA
+ROJA.
+
+── TRAZABILIDAD
+
+ARG-122-006 · Confianza: 🟡 Medio (★★★☆☆) · Hecho: 2026-09-18, noche sin minuto fijado ·
+Publicación: 2026-09-19 · Consulta: 2026-09-21, 08:57 CDMX · Estatus: Parcialmente corroborado.
+Fuentes — Institucional (1, por cita): FGE Oaxaca. EL DOMINIO CORRECTO ES fge.oaxaca.gob.mx;
+fiscaliaoaxaca.gob.mx, USADO EN CORTES ANTERIORES, NO INDEXA. CORRECCIÓN ANOTADA. Nacional (1),
+con fecha en la ruta: Infobae. Regional (2), 1 con fecha en la ruta: El Heraldo de México —
+Oaxaca. Lista íntegra en el archivo de fuentes.
+DESLINDE: «Juchitán» no figura en el índice, que cubre de ARGOS 91 en adelante.
+Calendario verificado: 18-sep viernes.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-21 · Hora: 08:57 (CDMX) · Corte: Matutino · ARGOS N.° 122 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (III) — NOROESTE: AGRESIÓN A PERSONAL FEDERAL EN LA SIERRA Y ARSENAL EN UNA CASA DE SEGURIDAD DE PUERTO PEÑASCO
+
+### SINALOA · SIERRA EN LÍMITES CON DURANGO — CIVILES ARMADOS EN SEIS CAMIONETAS AGREDEN A PERSONAL DE LA SEMAR Y DE LA SSPC FEDERAL EN RECORRIDO DE VIGILANCIA [ROJO]
+
+── HECHO
+
+Sábado 19-sep · zona serrana de Sinaloa, en los límites con Durango · civiles armados a bordo de
+SEIS CAMIONETAS agreden con armas de fuego a personal de la SEMAR y de la SSPC federal que
+realizaba recorridos de vigilancia.
+Sin bajas publicadas del lado institucional.
+MUNICIPIO NO ESPECIFICADO POR NINGUNA FUENTE: el dato no es explotable para patrullaje sin él y
+no se infiere.
+Rojo por quién inicia: el grupo criminal agrede a personal en patrullaje; es la fila roja de la
+tabla, no un operativo repelido.
+UN DELITO Y SU RESPUESTA SON DOS EVENTOS: el aseguramiento y las nueve detenciones son
+ARG-122-009, en verde, y no se suman a éste.
+ATRIBUCIÓN NO ADOPTADA: la adscripción de los agresores a una facción del Cártel de Sinaloa la
+publican los medios, no un comunicado.
+
+── TRAZABILIDAD
+
+ARG-122-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —municipio no
+especificado— · Hecho: 2026-09-19, hora no fijada · Publicación: 2026-09-19 y 2026-09-20 ·
+Consulta: 2026-09-21, 08:57 CDMX · Estatus: Parcialmente corroborado.
+Fuentes — Institucional (2, por cita): SSPC federal · SEMAR. SIN BOLETÍN PROPIO INDEXADO EN
+gob.mx PARA ESTA FECHA. Nacional (4), 3 con fecha en la ruta: Proceso · El Heraldo de México ·
+La Silla Rota. Regional (3), 2 con fecha en la ruta: Tribuna · En Blanco y Negro. Lista íntegra
+en el archivo de fuentes.
+DESLINDE: la sierra de Sinaloa sí figura en el índice por municipio — ARG-119-010 y
+ARG-119-ARM-007 (Tamazula)—, pero aquí el municipio no está publicado: no se identifica caso por
+región compartida.
+Calendario verificado: 19-sep sábado.
+
+### SINALOA · SIERRA EN LÍMITES CON DURANGO — NUEVE DETENIDOS, 17 ARMAS LARGAS CON UNA AMETRALLADORA, 127 CARGADORES Y 40 ARTEFACTOS EXPLOSIVOS IMPROVISADOS [VERDE]
+
+── HECHO
+
+Sábado 19-sep · zona serrana de Sinaloa, límites con Durango · SEMAR y SSPC federal, repelida la
+agresión, detienen a 9 PERSONAS, ENTRE ELLAS UN MENOR DE EDAD.
+Asegurado: 17 ARMAS LARGAS, incluida UNA AMETRALLADORA · 127 CARGADORES · LANZAGRANADAS,
+CANTIDAD NO DETERMINADA · 40 ARTEFACTOS EXPLOSIVOS IMPROVISADOS · cartuchos, SIN CIFRA PUBLICADA
+· equipo táctico.
+Es el mayor volumen de armas largas, de cargadores y de AEI del corte. CARGADORES Y CARTUCHOS
+NUNCA SE SUMAN ENTRE SÍ.
+Acción inserta en el refuerzo de seguridad desplegado en Mazatlán y otras regiones por el
+Gabinete de Seguridad.
+DESLINDE OBLIGATORIO POR CATEGORÍA RECURRENTE: NO son los 53 AEI de MAZATLÁN del 15-sep
+(ARG-121-REC-003, SEDENA, dos contenedores abandonados, sin detenidos) ni los 84 de LA NORIA DE
+SAN ANTONIO del 8-sep (SEMAR, Operación Sable): otra fecha, otra cifra, otra corporación y otra
+modalidad.
+
+── TRAZABILIDAD
+
+ARG-122-009 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —municipio no
+especificado y cartuchos sin cifra— · Hecho: 2026-09-19, hora no fijada · Publicación:
+2026-09-19 y 2026-09-20 · Consulta: 2026-09-21, 08:57 CDMX · Estatus: Parcialmente corroborado.
+Fuentes — Institucional (2, por cita): SSPC federal · SEMAR. Nacional (4), 3 con fecha en la
+ruta: Proceso · El Heraldo de México · La Silla Rota. Regional (4), 2 con fecha en la ruta: En
+Blanco y Negro · Los Noticieristas. Lista íntegra en el archivo de fuentes.
+UN DELITO Y SU RESPUESTA SON DOS EVENTOS: la agresión es ARG-122-005, en rojo. Conteo de
+armamento: ARG-122-ARM-001.
+Calendario verificado: 19-sep sábado.
+
+### SONORA · PUERTO PEÑASCO — CASA DE SEGURIDAD EN CERRADA DEL SOL: SIETE DETENIDOS Y TRES SECUESTRADOS RESCATADOS EL 18, Y UN ARSENAL CON TRES AMETRALLADORAS EN EL CATEO DEL 19 [AMARILLO]
+
+── HECHO
+
+Viernes 18-sep · Puerto Peñasco, Sonora · elementos estatales y federales despliegan un
+operativo con tiroteo y persecución a pie y aseguran una CASA DE SEGURIDAD en el fraccionamiento
+CERRADA DEL SOL.
+TRES PERSONAS PRIVADAS DE LA LIBERTAD, RESCATADAS CON VIDA, de OCHO SECUESTRADAS DEDICADAS A LA
+MINERÍA ARTESANAL EN LA REGIÓN DE SIERRA PINTA, cuya investigación originó el operativo. Las
+otras cinco: SIN PARADERO PUBLICADO.
+DETENIDOS CONTRADICHOS Y ARBITRADOS POR PROCEDENCIA: se adoptan 7, la cifra atribuida
+expresamente al titular de la SSPC federal, frente a los 10 de la cobertura regional.
+Sábado 19-sep · SEGUNDA INTERVENCIÓN CON ORDEN DE CATEO de un Juez de Control Penal Oral del
+Primer Distrito Judicial del Estado. Asegurado: «MÁS DE 40 ARMAS LARGAS», incluidas DOS
+AMETRALLADORAS MINIMI · CINCO ARMAS CORTAS · UNA AMETRALLADORA BROWNING M-2 CAL. .50 · calibres
+5.56, .223 y 7.62×39 · «casi cuatro mil» cartuchos · ARTEFACTOS EXPLOSIVOS IMPROVISADOS, sin
+cifra · equipo táctico · heroína · vehículos de gama alta con reporte de robo en Estados Unidos.
+La noche del 19 y la madrugada del 20 se ejecutaron DOS CATEOS MÁS.
+ARMAS LARGAS: SOLO SE INTEGRAN LAS DOS MINIMI, ÚNICA CANTIDAD EXPRESA. «MÁS DE 40» NO ES CIFRA,
+Y LA CIFRA PRELIMINAR DE 33 QUEDÓ SUPERADA POR EL RELATO POSTERIOR DE LA AUTORIDAD. Cartuchos y
+AEI: CANTIDAD NO DETERMINADA.
+LOS SIETE DETENIDOS SON DEL OPERATIVO DEL 18 Y EL ARSENAL DEL CATEO DEL 19: NO SE INTEGRAN AL
+CONTEO DE ARMAMENTO, QUE SOLO CUENTA DETENIDOS DEL MISMO EVENTO DE ASEGURAMIENTO.
+Amarillo: confrontación derivada de un operativo que inició la autoridad. EL NÚMERO DE DETENIDOS
+NO MUEVE EL COLOR.
+
+── TRAZABILIDAD
+
+ARG-122-007 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —el grueso de las
+armas largas y los cartuchos publicados con «más de» y «casi»— · Hecho: 2026-09-18 (operativo y
+detenciones) y 2026-09-19 (cateo y arsenal), horas no fijadas · Publicación: 2026-09-20 y
+2026-09-21 · Consulta: 2026-09-21, 08:57 CDMX · Estatus: Parcialmente corroborado.
+Fuentes — Institucional (2, por cita): titular de la SSPC federal · Juzgado de Control Penal
+Oral del Primer Distrito Judicial. SIN BOLETÍN PROPIO DE ssp.sonora.gob.mx NI DE gob.mx INDEXADO
+EN VENTANA. Nacional (4), 2 con fecha en la ruta: La Silla Rota · El Heraldo de México. Regional
+(6), 4 con fecha en la ruta: El Imparcial · Proyecto Puente · RED Michoacán · En Blanco y Negro.
+Lista íntegra en el archivo de fuentes.
+DESLINDE: «Puerto Peñasco» no figura en el índice, que cubre de ARGOS 91 en adelante. Conteo de
+armamento: ARG-122-ARM-002, fechado el 19-sep.
+Calendario verificado: 18-sep viernes · 19-sep sábado · 20-sep domingo.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-21 · Hora: 08:57 (CDMX) · Corte: Matutino · ARGOS N.° 122 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (IV) — NORESTE, CENTRO Y GOLFO: UN BARRETT CAL. .50, DOS CATEOS URBANOS Y UNA CASA DE SEGURIDAD CON GRANADAS
+
+### NUEVO LEÓN · LOS ALDAMAS — SUJETOS ARMADOS DISPARAN CONTRA FUERZA CIVIL EN PATRULLAJE DEL OPERATIVO MURALLA: CUATRO ABATIDOS Y UN FUSIL BARRETT CAL. .50 ASEGURADO [ROJO]
+
+── HECHO
+
+Sábado 19-sep · Los Aldamas, Nuevo León · Fuerza Civil, OPERATIVO MURALLA · sujetos armados
+disparan contra el personal al ser detectados durante el patrullaje.
+4 AGRESORES ABATIDOS · cero detenidos · cero policías heridos.
+Asegurado: 4 ARMAS LARGAS, una identificada como FUSIL BARRETT CAL. .50 · 1 vehículo · equipo
+táctico · cargadores y cartuchos, SIN CIFRA PUBLICADA EN NINGUNA COBERTURA: NO SE INTEGRAN Y NO
+SE INFIEREN.
+Rojo por quién inicia: agresión contra personal en patrullaje. EL NÚMERO DE ABATIDOS NO MUEVE EL
+COLOR, NI AL ALZA NI A LA BAJA.
+Sin comunicado propio de Fuerza Civil ni del gobierno de Nuevo León.
+
+── TRAZABILIDAD
+
+ARG-122-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —munición sin cifra y
+sin comunicado propio— · Hecho: 2026-09-19, hora no fijada · Publicación: 2026-09-19 · Consulta:
+2026-09-21, 08:57 CDMX · Estatus: Parcialmente corroborado.
+Fuentes — Institucional (1, por cita, sin comunicado): Fuerza Civil NL. Nacional (4), 2 con
+fecha en la ruta: El Universal · MVS Noticias. Regional (3). Lista íntegra en el archivo de
+fuentes.
+DESLINDE OBLIGATORIO POR OPERATIVO RECURRENTE: NO es ARG-120-002 ni ARG-120-ARM-003 (General
+Treviño, 14-sep, 7 armas, 2 detenidos, siete abatidos, mismo Operativo Muralla): otro municipio,
+otra fecha y otro desglose. «LOS ALDAMAS» NO FIGURA EN EL ÍNDICE, QUE CUBRE DE ARGOS 91 EN
+ADELANTE. LAS TRES VINCULACIONES A PROCESO DEL 15-SEP POR EL HECHO DE GENERAL TREVIÑO SON
+SEGUIMIENTO JUDICIAL DE AQUÉL, NO UN ASEGURAMIENTO NUEVO: NO SE INTEGRAN.
+Calendario verificado: 19-sep sábado.
+
+### CIUDAD DE MÉXICO · IZTAPALAPA — DOS CATEOS VINCULADOS A «LA UNIÓN TEPITO» CON TRES DETENIDOS, DOS ARMAS CORTAS Y CUATRO LARGAS [VERDE]
+
+── HECHO
+
+Viernes 18-sep · Iztapalapa, Ciudad de México · SSC capitalina y FGJ CDMX, con apoyo de Guardia
+Nacional y SEMAR · cateo de DOS INMUEBLES vinculados a «LA UNIÓN TEPITO».
+3 DETENIDOS: una mujer de 61 años y dos hombres, de 63 y 41.
+Asegurado: 2 ARMAS CORTAS · 4 ARMAS LARGAS · cartuchos y cargadores, NO PUBLICADOS.
+En rubro aparte: 4 kg de marihuana y metanfetamina a granel.
+NINGUNA DE LAS SEIS ARMAS LLEVA CALIBRE NI NÚMERO DE SERIE PUBLICADOS.
+
+── TRAZABILIDAD
+
+ARG-122-010 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —sin boletín
+institucional indexado— · Hecho: 2026-09-18, hora no fijada · Publicación: 2026-09-18 ·
+Consulta: 2026-09-21, 08:57 CDMX · Estatus: Parcialmente corroborado.
+Fuentes — Institucional (2, por cita): SSC CDMX · FGJ CDMX. site:ssc.cdmx.gob.mx SIN RESULTADO
+INDEXADO EN VENTANA PARA ESTE EVENTO; SUSTITUCIÓN ANOTADA. Nacional (4), todas con fecha en la
+ruta: El Heraldo de México · El Financiero · La Razón · La Silla Rota. Regional (1), con fecha
+en la ruta: Central Municipal. Lista íntegra en el archivo de fuentes.
+DESLINDE: NO es el doble homicidio del mercado 14 de TEPITO del 16-sep, que es de la ventana
+anterior y sigue sin boletín de la SSC ni de la FGJ CDMX, con edades de las víctimas
+contradichas en tres versiones.
+Calendario verificado: 18-sep viernes.
+
+### VERACRUZ · TEMPOAL — CASA DE SEGURIDAD SOBRE LA CARRETERA A HUEJUTLA CON 59,400 BOLSAS DE DROGA, ARMAS Y GRANADAS, Y CERO DETENIDOS [VERDE]
+
+── HECHO
+
+Domingo 20-sep · carretera Tempoal-Huejutla de Reyes, Tempoal, Veracruz, en el límite con
+Hidalgo · FGE de Veracruz —trilogía investigadora: fiscales, peritos y policías ministeriales—
+con SEDENA, Guardia Nacional y SSP estatal · cateo por orden judicial en un inmueble descrito
+como casa de seguridad.
+Asegurado: 69 BOLSAS EMPAQUETADAS que contenían 59,400 BOLSAS HERMÉTICAS de sustancias
+prohibidas · ARMAS DE FUEGO · MATERIAL BALÍSTICO · GRANADAS.
+CERO DETENIDOS, expreso en el boletín.
+ARMAS, MATERIAL BALÍSTICO Y GRANADAS SIN CIFRA NI CALIBRE: CANTIDAD NO DETERMINADA, NO SE
+INTEGRA AL TOTAL NUMÉRICO. La presencia de granadas sí se registra: es la única del corte.
+La FGR anunció que atraerá el caso por volumen y calibre.
+
+── TRAZABILIDAD
+
+ARG-122-011 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —ninguna categoría de
+armamento lleva cifra— · Hecho: 2026-09-20, hora no fijada · Publicación: 2026-09-20 y
+2026-09-21 · Consulta: 2026-09-21, 08:57 CDMX · Estatus: Parcialmente corroborado.
+Fuentes — Institucional (2, por cita): FGE Veracruz · FGR. Nacional (2), 1 con fecha en la ruta:
+Infobae. Regional (6), 1 con fecha en la ruta: La Clave Online. Lista íntegra en el archivo de
+fuentes.
+DESLINDE OBLIGATORIO: Tempoal SÍ figura en el índice, que cubre de ARGOS 91 en adelante —
+ARG-116-005 y ARG-116-ARM-004, cateo del 4-sep con 3 detenidos y más de 15 millones de pesos en
+efectivo—. No es ese hecho: otra fecha, otros detenidos —cero frente a tres— y otro objeto
+asegurado.
+Calendario verificado: 20-sep domingo.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-21 · Hora: 08:57 (CDMX) · Corte: Matutino · ARGOS N.° 122 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (V) — MICHOACÁN Y TABASCO: EL BOLETÍN FEDERAL DEL 17-SEP Y UNA RECUPERACIÓN DE LA VENTANA ANTERIOR
+
+### MICHOACÁN · LA PIEDAD — DETENCIÓN DE UN COORDINADOR REGIONAL CON ÓRDENES DE APREHENSIÓN POR HOMICIDIO Y DESAPARICIÓN FORZADA COMETIDA POR PARTICULARES [VERDE]
+
+── HECHO
+
+Jueves 17-sep · La Piedad, Michoacán · SSPC federal, Ejército Mexicano, SEMAR, FGR y Fiscalía
+estatal.
+Un hombre detenido, señalado como COORDINADOR REGIONAL DE UN GRUPO CRIMINAL, con órdenes de
+aprehensión vigentes por HOMICIDIO y DESAPARICIÓN FORZADA COMETIDA POR PARTICULARES.
+NOMBRE NO PUBLICADO POR EL EMISOR: NO SE INFIERE.
+Armamento: NO PUBLICADO. NO ALIMENTA EL CONTEO.
+Renglón del boletín federal del 17-sep. FRONTERA DE VENTANA — HORA NO FIJADA.
+
+── TRAZABILIDAD
+
+ARG-122-015 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido —sin nombre, sin cifras
+y con corroboración solo por republicadores— · Hecho: 2026-09-17, hora no fijada · Publicación:
+2026-09-17 y 2026-09-18 · Consulta: 2026-09-21, 08:57 CDMX · Estatus: Pendiente de corroboración
+independiente.
+Fuentes — Institucional (1): Gabinete de Seguridad, boletín del 17-sep. gob.mx/sspc NO INDEXÓ EL
+DOCUMENTO; SE ALCANZA SOLO POR REPUBLICADORES Y LA SUSTITUCIÓN SE ANOTA. Nacional (1): Milenio.
+Regional (4), 1 con fecha en la ruta: Eleese Noticias. CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN:
+CUATRO REPUBLICADORES DEL MISMO BOLETÍN NO SON FUENTES INDEPENDIENTES.
+DESLINDE: NO es ARG-121-REC-005: otra persona, otro municipio y otra fecha. «La Piedad» no
+figura en el índice, que cubre de ARGOS 91 en adelante.
+Calendario verificado: 17-sep jueves.
+
+### TABASCO · CENTRO, COLONIA JOSÉ MARÍA PINO SUÁREZ — SEIS DETENIDOS, TRES ARMAS Y UN ACCESORIO LANZAGRANADAS [VERDE]
+
+── HECHO
+
+Jueves 17-sep · colonia José María Pino Suárez, municipio de Centro, Tabasco · SEMAR, SEDENA,
+SSPC federal, FGR, Fiscalía estatal y Policía Estatal.
+6 DETENIDOS.
+Asegurado: 2 ARMAS CORTAS · 1 ARMA LARGA · 15 CARTUCHOS · 3 CARGADORES · 1 ACCESORIO
+LANZAGRANADAS —armamento especial—.
+En rubro aparte: 25 dosis de cocaína, 50 de mariguana, 40 de metanfetaminas, 9 celulares,
+efectivo y 1 vehículo.
+CARGADORES Y CARTUCHOS NUNCA SE SUMAN ENTRE SÍ.
+Renglón del boletín federal del 17-sep. FRONTERA DE VENTANA — HORA NO FIJADA.
+
+── TRAZABILIDAD
+
+ARG-122-016 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —fuente institucional
+única sin corroboración independiente— · Hecho: 2026-09-17, hora no fijada · Publicación:
+2026-09-17 y 2026-09-18 · Consulta: 2026-09-21, 08:57 CDMX · Estatus: Confirmado por fuente
+institucional, sin corroboración independiente.
+Fuentes — Institucional (1): Gabinete de Seguridad, boletín del 17-sep. Nacional (0). Regional
+(4), 1 con fecha en la ruta: Eleese Noticias. CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN: LOS CUATRO
+REPUBLICAN EL MISMO TEXTO. Lista íntegra en el archivo de fuentes.
+DESLINDE: NO es ARG-120-ARM-005 (Huimanguillo, 13-sep, 1 corta, 188 cartuchos, 2 cargadores, 6
+detenidos): otro municipio, otra fecha y otro desglose. Conteo de armamento: ARG-122-ARM-005.
+Calendario verificado: 17-sep jueves.
+
+### TABASCO · CENTRO, RANCHO PLÁTANO Y CACAO — 150,000 LITROS DE HIDROCARBUROS, SUSTANCIAS QUÍMICAS Y MAQUINARIA INDUSTRIAL, SIN DETENIDOS [VERDE]
+
+── HECHO
+
+Jueves 17-sep · rancho Plátano y Cacao, municipio de Centro, Tabasco · SSPC federal, SEDENA,
+SEMAR y FGR · cateo de un predio.
+Asegurado: 150,000 LITROS DE HIDROCARBUROS · sustancias químicas · vehículos · maquinaria
+industrial.
+Sin detenidos publicados. Armamento: NO PUBLICADO. NO ALIMENTA EL CONTEO.
+Segundo aseguramiento de hidrocarburo del mismo boletín y del mismo día, tras los 59 millones de
+litros de San José Iturbide (ARG-122-013): SON EVENTOS DISTINTOS Y NO SE SUMAN.
+Renglón del boletín federal del 17-sep. FRONTERA DE VENTANA — HORA NO FIJADA.
+
+── TRAZABILIDAD
+
+ARG-122-017 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido —fuente institucional
+única, sin corroboración independiente y sin detenidos ni carpeta publicados— · Hecho:
+2026-09-17, hora no fijada · Publicación: 2026-09-17 y 2026-09-18 · Consulta: 2026-09-21, 08:57
+CDMX · Estatus: Pendiente de corroboración independiente.
+Fuentes — Institucional (1): Gabinete de Seguridad, boletín del 17-sep. Nacional (0). Regional
+(4), 1 con fecha en la ruta: Eleese Noticias. CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN.
+DESLINDE: NO es ARG-120-015 ni el renglón de Huimanguillo del boletín 14-16-sep, ya listado como
+no recontable.
+Calendario verificado: 17-sep jueves.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-21 · Hora: 08:57 (CDMX) · Corte: Matutino · ARGOS N.° 122 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (VI) — BAJA CALIFORNIA SUR, SAN LUIS POTOSÍ Y LA RECUPERACIÓN DE GUERRERO
+
+### BAJA CALIFORNIA SUR · LA PAZ — DOS DETENIDOS, 109 CARTUCHOS Y 197 DOSIS DE FENTANILO: LA MUNICIÓN SE PUBLICA Y EL ARMA NO [VERDE]
+
+── HECHO
+
+Jueves 17-sep · La Paz, Baja California Sur · FGR, SSPC federal y SEMAR.
+2 DETENIDOS.
+Asegurado: 109 CARTUCHOS · 197 DOSIS DE FENTANILO · 70 sacos de almeja chocolata · 1 vehículo ·
+2 celulares.
+ARMAS DE FUEGO NO PUBLICADAS Y NO INFERIDAS pese a la munición asegurada. Cargadores: NO
+PUBLICADOS.
+Renglón del boletín federal del 17-sep. FRONTERA DE VENTANA — HORA NO FIJADA.
+
+── TRAZABILIDAD
+
+ARG-122-018 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido —munición sin arma que
+la explique y corroboración solo por republicadores— · Hecho: 2026-09-17, hora no fijada ·
+Publicación: 2026-09-17 y 2026-09-18 · Consulta: 2026-09-21, 08:57 CDMX · Estatus: Pendiente de
+corroboración independiente.
+Fuentes — Institucional (1): Gabinete de Seguridad, boletín del 17-sep. Nacional (1): Milenio.
+Regional (2), 1 con fecha en la ruta: Eleese Noticias.
+DESLINDE: NO es el renglón de COMONDÚ, BCS (1 detenido, 145 kg de cocaína, 1 tractocamión) del
+boletín 14-16-sep, ya listado como no recontable: otro municipio, otra fecha y otro objeto.
+Calendario verificado: 17-sep jueves.
+
+### SAN LUIS POTOSÍ · CUATRO REGIONES DEL ESTADO — 22 DETENIDOS, UN ARMA SIN CATEGORÍA Y DOS INHIBIDORES DE SEÑAL, CON UN SEGUNDO BOLETÍN DE CIFRA IDÉNTICA [VERDE]
+
+── HECHO
+
+Viernes 18-sep · operativos en las CUATRO REGIONES de San Luis Potosí · Guardia Civil Estatal ·
+agregado de 24 horas.
+22 PERSONAS DETENIDAS.
+Asegurado: 1 ARMA DE FUEGO, SIN TIPO PUBLICADO: VA COMO «SIN CATEGORÍA», NO SE INFIERE SI ES
+CORTA O LARGA · 1 CARGADOR · cartuchos útiles, SIN CIFRA · 198 gramos de marihuana · 19 dosis ·
+2 INHIBIDORES DE SEÑAL · 7 vehículos, dos con reporte de robo.
+LOS 22 DETENIDOS NO SE INTEGRAN AL CONTEO DE ARMAMENTO: el emisor no desglosa cuántos
+corresponden al evento con arma asegurada.
+POSIBLE DUPLICIDAD DECLARADA: un segundo boletín del mismo emisor, del 19-sep, publica la misma
+cifra de 22 detenidos con un arma y cartuchos. NO SE INTEGRA AL TOTAL HASTA VALIDACIÓN: NO PUEDE
+DESCARTARSE QUE SEA EL MISMO CORTE DE 24 HORAS REPUBLICADO.
+
+── TRAZABILIDAD
+
+ARG-122-012 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —arma sin categoría y
+posible duplicidad abierta— · Hecho: 2026-09-18, hora no fijada · Publicación: 2026-09-18 ·
+Consulta: 2026-09-21, 08:57 CDMX · Estatus: Parcialmente corroborado.
+Fuentes — Institucional (1, por cita): Guardia Civil Estatal de San Luis Potosí.
+fiscaliaslp.gob.mx NO SE CONSULTÓ CON site: DIRIGIDO; SUSTITUCIÓN ANOTADA. Nacional (0).
+Regional (2), ambas con fecha en la ruta: Potosí Noticias · El Heraldo de San Luis Potosí.
+DESLINDE: San Luis Potosí SÍ figura en el índice — ARG-114-003 (Villa de La Paz) y dos fichas de
+sentencia—: ninguna es este hecho. Conteo de armamento: ARG-122-ARM-007.
+Calendario verificado: 18-sep viernes · 19-sep sábado.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-21 · Hora: 08:57 (CDMX) · Corte: Matutino · ARGOS N.° 122 · USO INSTITUCIONAL
+
+============================================================================
+
+## CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS
+
+  · Armas cortas: 10 — 5 de Puerto Peñasco, 2 de Iztapalapa, 2 de Centro, Tabasco y 1 de Tuxtla Gutiérrez · cinco veces las 2 del corte anterior · NINGUNA CON NÚMERO DE SERIE PUBLICADO
+
+  · Armas largas: 28 — 17 de la sierra de Sinaloa, 4 de Los Aldamas, 4 de Iztapalapa, 2 de Puerto Peñasco y 1 de Centro, Tabasco · 14 veces el corte anterior · DE PUERTO PEÑASCO SOLO SE INTEGRAN LAS DOS AMETRALLADORAS MINIMI: «MÁS DE 40» NO ES CIFRA Y LA PRELIMINAR DE 33 QUEDÓ SUPERADA. ES EL MAYOR VOLUMEN NO INTEGRADO DEL CORTE
+
+  · Sin categoría: 1 — la de San Luis Potosí: la Guardia Civil Estatal no publicó si es corta o larga · 1 de 39 armas integradas, el 2,6 %, frente al 20,7 % de ARGOS 120 · no se infiere
+
+  · Cartuchos: 124 — 109 de La Paz y 15 de Centro, Tabasco · CIFRA ANORMALMENTE BAJA PARA 28 ARMAS LARGAS Y 10 CORTAS: los cuatro mayores aseguramientos publicaron las armas y NO la munición con cifra —sierra de Sinaloa, Puerto Peñasco («casi cuatro mil»), Los Aldamas e Iztapalapa—
+
+  · Cargadores: 131 — 127 de la sierra de Sinaloa, 3 de Centro, Tabasco y 1 de San Luis Potosí · NUNCA SE SUMAN CON LOS CARTUCHOS · hay más cargadores que cartuchos en el corte, y eso describe un déficit de publicación, no un depósito
+
+  · Granadas: 0 — CERO POR FALTA DE CIFRA, NO POR AUSENCIA: la FGE de Veracruz asegura GRANADAS en Tempoal y no publica cuántas · la presencia se registra y la cantidad no se infiere
+
+  · AEI: 40 — los 40 de la sierra de Sinaloa, límites con Durango · tras dos ediciones en cero · TERCER DEPÓSITO DEL MISMO CORREDOR EN TRECE DÍAS: 84 en La Noria (8-sep), 53 en Mazatlán (15-sep) y 40 ahora · 177 artefactos, cálculo propio · PUERTO PEÑASCO SUMA AEI SIN CIFRA: NO SE INTEGRAN
+
+  · Explosivos: 0 — ningún volumen de explosivo, componente, precursor, detonador ni cordón se publicó por separado en las 87 h 21 min · LOS ARTEFACTOS DE PUERTO PEÑASCO SON AEI SIN CIFRA Y VAN EN ESA CATEGORÍA, NO AQUÍ
+
+  · Armamento especial: 4 — 2 piezas cal. .50: el fusil Barrett de Los Aldamas y la ametralladora Browning M-2 de Puerto Peñasco · 1 ametralladora (sierra de Sinaloa) · 1 accesorio lanzagranadas (Tabasco) · las 2 Minimi de Puerto Peñasco van en ARMAS LARGAS, no aquí · los lanzagranadas de la sierra NO llevan cifra · 0 drones armados
+
+  · Detenidos: 20 — 9 sierra de Sinaloa · 6 Centro, Tabasco · 3 Iztapalapa · 2 La Paz · SOLO EN EVENTOS CON ASEGURAMIENTO DE ARMAMENTO · NO entran: los 7 de Puerto Peñasco, detenidos el 18 mientras el arsenal se aseguró en el cateo del 19; ni los 22 de San Luis Potosí ni los 15 de Chiapas, agregados sin desglose
+
+  ARG-ID | Entidad | Municipio | Fecha hecho | Cortas | Largas | Sin categoría | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Fuente primaria | Corrob. | Confianza
+  ARG-122-ARM-001 | Sinaloa | sierra, · límites con · Durango · MUNICIPIO NO · ESPECIFICADO | 2026-09-19 | 0 | 17 · 1 AMETRALLADORA · sin calibre ni serie | 0 | 0 · sin cifra | 127 | 0 | 40 | 0 | 9 · uno menor · de edad | SEMAR · + SSPC federal | ninguna · institucional propia | 4 nacionales + 4 regionales · 5 con fecha en la ruta | Medio
+  ARG-122-ARM-002 | Sonora | Puerto Peñasco · fracc. Cerrada · del Sol | 2026-09-19 · CATEO, no el · topón del 18 | 5 | 2 · las 2 MINIMI · RESTO NO DETERMINADO: · «más de 40»; · la preliminar de 33 · quedó superada | 0 | 0 · «casi cuatro mil» · NO DETERMINADA | 0 · no publicados | 0 | 0 · PRESENCIA · SIN CIFRA | 0 | 0 · los 7 son del · operativo del 18, · NO del cateo | Estatales · + federales · orden de cateo de · Juez de Control Penal · Oral del 1.er Distrito | ninguna · institucional propia | 4 nacionales + 6 regionales · 6 con fecha en la ruta | Medio · 1 BROWNING M-2 · CAL. .50
+  ARG-122-ARM-003 | Nuevo León | Los Aldamas | 2026-09-19 | 0 | 4 · 1 FUSIL BARRETT · CAL. .50 · sin serie | 0 | 0 · sin cifra | 0 · sin cifra | 0 | 0 | 0 | 0 · 4 abatidos | Fuerza Civil NL · Operativo Muralla | ninguna · institucional propia | 4 nacionales + 3 regionales · 2 con fecha en la ruta | Medio
+  ARG-122-ARM-004 | Ciudad de México | Iztapalapa | 2026-09-18 | 2 | 4 · sin calibre · ni serie | 0 | 0 · no publicados | 0 · no publicados | 0 | 0 | 0 | 3 | SSC CDMX y FGJ CDMX · apoyo GN y SEMAR | ninguna · sin boletín indexado | 4 nacionales + 1 regional · todas con fecha · en la ruta | Medio
+  ARG-122-ARM-005 | Tabasco | Centro · col. José María · Pino Suárez | 2026-09-17 · FRONTERA DE · VENTANA | 2 | 1 | 0 | 15 | 3 | 0 | 0 | 0 | 6 | SEMAR, SEDENA, · SSPC, FGR, · Fiscalía y Policía · estatales | Boletín federal 17-sep · vía republicadores | ninguna · independiente | Medio · 1 accesorio · lanzagranadas
+  ARG-122-ARM-006 | Chiapas | Tuxtla Gutiérrez · col. Las Granjas | 2026-09-20 | 1 | 0 | 0 | 0 · no publicados | 0 · no publicados | 0 | 0 | 0 | 0 · los 15 detenidos · NO SE INTEGRAN: · sin desglose | FGE Chiapas | ninguna · sin boletín indexado | 4 nacionales + 4 regionales · 4 con fecha en la ruta | Medio
+  ARG-122-ARM-007 | San Luis Potosí | cuatro regiones · del estado | 2026-09-18 | 0 | 0 | 1 · tipo no publicado | 0 · «útiles» · NO DETERMINADA | 1 | 0 | 0 | 0 | 0 · los 22 del agregado · NO SE INTEGRAN | Guardia Civil Estatal | ninguna · institucional propia | 2 regionales · ambas con fecha · en la ruta | Medio · POSIBLE DUPLICIDAD · con boletín del 19
+  ARG-122-ARM-008 | Veracruz | Tempoal · carretera a · Huejutla de Reyes | 2026-09-20 | 0 · SIN CIFRA | 0 · SIN CIFRA | 0 · «armas de fuego» · NO DETERMINADA | 0 · «material balístico» · NO DETERMINADA | 0 · sin cifra | 0 · PRESENCIA · CONFIRMADA · SIN CIFRA | 0 | 0 | 0 · expreso | FGE Veracruz · + SEDENA, GN · y SSP estatal | ninguna · institucional propia | 2 nacionales + 6 regionales · 2 con fecha en la ruta | Medio · EVENTO CUALITATIVO · NO INTEGRA EL TOTAL
+  ARG-122-ARM-009 | Baja California Sur | La Paz | 2026-09-17 · FRONTERA DE · VENTANA | 0 · no publicadas | 0 · no publicadas | 0 | 109 | 0 · no publicados | 0 | 0 | 0 | 2 | FGR, SSPC federal · y SEMAR | Boletín federal 17-sep · vía republicadores | 1 nacional · no independiente | Bajo
+
+Cifra grande = asegurado en los hechos integrados de este corte. Línea inferior = publicado
+durante el corte pero sin cantidad determinada, sin fecha fijada o no atribuible a un evento de
+aseguramiento; no se suma. Cálculo propio de ARGOS. Las categorías en cero se muestran
+atenuadas: la ausencia es dato.
+
+Totales en la página 2. Lectura regional: Noroeste 3 —Sinaloa, Sonora y Baja California Sur— ·
+Noreste 2 · Golfo 2 · Centro 1 · Sureste 1 · Occidente y Pacífico Sur en cero. El Noroeste
+concentra el 68 % de las armas largas integradas y el 100 % de los AEI del corte, y concentraría
+mucho más si Puerto Peñasco hubiera publicado una cifra. NINGUNA DE LAS 39 ARMAS INTEGRADAS
+LLEVA NÚMERO DE SERIE PUBLICADO. SOLO PUERTO PEÑASCO PUBLICÓ CALIBRES —5.56, .223, 7.62×39 Y
+.50—, Y LO HIZO PARA EL CONJUNTO, NO POR ARMA; EL BARRETT DE LOS ALDAMAS ES LA ÚNICA PIEZA CON
+CALIBRE INDIVIDUAL.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-21 · Hora: 08:57 (CDMX) · Corte: Matutino · ARGOS N.° 122 · USO INSTITUCIONAL
+
+============================================================================
+
+## RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES
+
+  · Sentencias condenatorias: 1 — FGR, Nuevo Laredo, Tamaulipas · 3 declaradas y no integradas: Morelia, La Pila y el agregado de Veracruz
+
+  · Personas sentenciadas: 1 — Francisco Javier Chapa Maldonado, «El Cholo» · presunto integrante del Cártel del Golfo
+
+  · Años de prisión: 332 — 332 años 6 meses · la pena más alta del archivo reciente, por encima de los 156 años acumulados de ARGOS 120 y de los 125 de Temoaya, no integrados
+
+  · Multa impuesta: $1.6M — 1,626,813 pesos · reparación del daño: NO PUBLICADA · decomiso e inhabilitación: NO PUBLICADOS
+
+  · Sentencias firmes: 0 — la firmeza NO fue informada por el emisor y NUNCA SE ASUME · ninguna edición del archivo reciente ha integrado una sentencia declarada firme
+
+  · Fiscalías con resultado: 1 — FGR —FEMDO en coordinación con FECOR— · de 33 universos revisados: 32 fiscalías estatales y la FGR
+
+### TAMAULIPAS · NUEVO LAREDO — 332 AÑOS 6 MESES CONTRA FRANCISCO JAVIER CHAPA MALDONADO, «EL CHOLO», POR LA PRIVACIÓN DE LA LIBERTAD DE TRECE PERSONAS Y ACOPIO DE ARMAS: CATORCE AÑOS ENTRE LA DETENCIÓN Y LA CONDENA [INTEGRADA]
+
+── HECHO
+
+Autoridad: FGR — Fiscalía Especializada en materia de Delincuencia Organizada (FEMDO) en
+coordinación con la FECOR, ante juez federal. Entidad y municipio: Nuevo Laredo, Tamaulipas,
+colonia Sector Centro.
+Sentenciado: FRANCISCO JAVIER CHAPA MALDONADO, alias «EL CHOLO», señalado como integrante del
+Cártel del Golfo.
+Delitos: privación ilegal de la libertad · acopio de armas de fuego · posesión de cartuchos de
+uso exclusivo de las Fuerzas Armadas.
+Pena: 332 AÑOS Y 6 MESES DE PRISIÓN. Multa: 1,626,813 pesos. Reparación del daño, decomiso e
+inhabilitación: NO PUBLICADOS. Firmeza: NO INFORMADA. NUNCA SE ASUME.
+Origen: detención en mayo de 2012 por elementos de la SEMAR; en el operativo se aseguraron armas
+de fuego y se RESCATÓ A TRECE PERSONAS PRIVADAS DE LA LIBERTAD.
+CATORCE AÑOS ENTRE LA DETENCIÓN Y LA SENTENCIA.
+FECHA DE LA SENTENCIA NO PUBLICADA: el emisor difunde la resolución, no el día en que se dictó.
+Se integra por su fecha de PUBLICACIÓN, que sí cae en ventana, y FECHA DEL HECHO, DE LA
+SENTENCIA Y DE PUBLICACIÓN SON TRES CAMPOS DISTINTOS.
+CIFRA CONTRADICHA Y ARBITRADA POR PRECISIÓN Y PROCEDENCIA: dos titulares dan «300 años» y «más
+de 300»; el cuerpo de ocho coberturas y la atribución expresa a la FGR sostienen 332 AÑOS 6
+MESES.
+
+── TRAZABILIDAD
+
+ARG-122-SEN-001 · Confianza: 🟡 Medio (★★★☆☆) —fuente oficial única con datos suficientes— ·
+Hecho: 2012-05 (detención) · Sentencia: fecha no publicada · Publicación: 2026-09-20 y
+2026-09-21 · Consulta: 2026-09-21, 08:57 CDMX · Estatus: Confirmado por comunicado institucional
+citado, no leído íntegro.
+Fuentes — Institucional (1): FGR, comunicado citado expresamente por ocho coberturas, con la
+unidad emisora identificada (FEMDO y FECOR). fgr.org.mx NO PUDO LEERSE POR BLOQUEO DE EGRESO;
+NINGUNA URL PROPIA DEL DOMINIO APARECIÓ INDEXADA. SUSTITUCIÓN ANOTADA. Nacional (6): La Jornada
+· Infobae · MVS Noticias · El Heraldo de México · SDP Noticias · N+. Regional (2): Zócalo · NX
+Noticias. Lista íntegra en el archivo de fuentes.
+CINCO CAMPOS INDIVIDUALIZADORES COINCIDENTES —nombre completo, alias, mes y colonia de la
+detención, corporación aprehensora y número de víctimas rescatadas—: NO PROCEDE CASO HOMÓNIMO.
+DESLINDE OBLIGATORIO: NO es ARG-120-SEN-002 —52 años a cada una de tres personas por secuestro
+agravado en el ejido San Francisco, Hidalgo, Tamaulipas, publicada el 14-sep—: otro sentenciado,
+otra pena, otro municipio y otra fecha. Tampoco es el caso pendiente de Carlos, Adrián, Luis y
+José «N» (15a 6m, 15a 6m, 11a 6m y 8 años), también de Nuevo Laredo y también de la FGR, cuya
+fecha sigue sin fijarse tras tres intentos: otros sentenciados y otras penas. LOS AÑOS NO SE
+ACUMULAN ENTRE CASOS.
+
+Una sentencia integrada y tres declaradas. La integrada descansa en comunicado de la FGR citado
+por ocho coberturas nacionales, con cinco campos individualizadores; las tres declaradas no
+tienen boletín primario localizable y quedan PENDIENTES DE CONFIRMACIÓN OFICIAL. Nunca se cuenta
+como sentencia una vinculación a proceso, una orden de aprehensión ni una judicialización.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-21 · Hora: 08:57 (CDMX) · Corte: Matutino · ARGOS N.° 122 · USO INSTITUCIONAL
+
+============================================================================
+
+## CANDIDATOS JUDICIALES NO INTEGRADOS E INDICADOR DE COBERTURA
+
+  Entidad · municipio | Caso y pena declarada | Por qué no se integra | Qué lo cerraría
+  Michoacán · Morelia | Francisco Javier T. · secuestro y homicidio agravado · 93 años 9 meses · publicado 17-sep con fecha en la ruta | PENDIENTE DE CONFIRMACIÓN OFICIAL. Cuatro republicadores del mismo boletín, ninguno del dominio de la FGE · FRONTERA DE VENTANA | El boletín primario de fge.michoacan.gob.mx, con número de causa penal y estatus de firmeza
+  San Luis Potosí · La Pila | Norma «N» · introducción de objeto prohibido (clonazepam) a centro penitenciario · 4 años 2 meses y multa de 84 UMA (9,503.76 pesos) · publicado 19-sep | PENDIENTE DE CONFIRMACIÓN OFICIAL. Fuente única regional, sin boletín de la FGR ni de la FGE | El comunicado de la delegación de la FGR en San Luis Potosí con fecha de la resolución
+  Veracruz · agregado estatal | 16 sentencias condenatorias y 1 fallo condenatorio en 24 horas, publicado el 18-sep · delitos citados: pederastia agravada, homicidio, feminicidio en grado de tentativa | Sin sentenciado, delito individual ni pena por caso · CIFRA DEL EMISOR EN CONFLICTO CON SU CORROBORANTE: «37 resoluciones» frente a «50 resoluciones / 16 sentencias». Un agregado sin desglose no es una sentencia integrable | El desglose caso por caso de la FGE de Veracruz, con nombre o alias, delito y pena
+  Chihuahua · Ciudad Juárez · Distrito Judicial Bravos | José Manuel E. C. · homicidio calificado y homicidio calificado en grado de tentativa · hecho del 1-sep-2025, cruce de Cordillera de los Andes y avenida Juan Gabriel · FALLO CONDENATORIO YA DICTADO | SIN RESULTADO INDEXADO EN VENTANA, SEGUNDA EDICIÓN. La audiencia de individualización de la pena estaba fijada para el jueves 17-sep a las 09:00; cinco formulaciones de búsqueda no localizaron el resultado. NO SE AFIRMA QUE SE POSPUSIERA: ESO NO ESTÁ ACREDITADO. | La pena impuesta, publicada por la Fiscalía de Distrito Zona Norte o por el Tribunal de Juicio Oral
+  Baja California · Tijuana | Luis Martín «N» · feminicidio de Tiffany Gabriela García Rivera · 26 años 8 meses, 500 UMA y 874,680 pesos de reparación, según seis medios regionales; 23 años y sin nombre según el boletín fgebc.gob.mx/boletines/12722 | POSIBLE CASO HOMÓNIMO — NO INTEGRAR HASTA VALIDACIÓN. Dos campos individualizadores nuevos —hecho del 1-abr-2025 entre 00:22 y 07:12 en avenida Revolución, Zona Centro, y captura el 13-jul-2025 en Monterrey— refuerzan que sea el mismo caso, pero no cierran la discrepancia de pena | La lectura directa del boletín 12722, imposible bajo bloqueo de egreso, o un segundo boletín con el nombre y la pena
+  Estado de México · Temoaya · Coacalco · Hueypoxtla | Tres resoluciones de la misma fiscalía: 125 años a «El Henry», 36 años 3 meses a «El Maca» y 21 años 10 meses 15 días en Hueypoxtla | PENDIENTES DE CONFIRMACIÓN OFICIAL. Ninguna tiene boletín primario de fgjem.edomex.gob.mx · las tres son de ventanas anteriores y NO SE REPUBLICAN COMO HECHO NUEVO | Un boletín de la FGJEM para cualquiera de las tres · es el vacío judicial más persistente del archivo
+  Tamaulipas · Nuevo Laredo | Carlos, Adrián, Luis y José «N» · 15a 6m, 15a 6m, 11a 6m y 8 años, FGR | FECHA NO FIJADA, TERCER INTENTO FALLIDO. La URL lleva año y mes pero no día; el «hace seis días» solo lo afirma el resumidor · los republicadores confirman mes y año, no el día | Un boletín de la FGR o del Poder Judicial Federal en Tamaulipas con día exacto
+
+  Concepto | Valor | Detalle
+  Universo de revisión | 33 | 32 fiscalías estatales + FGR. LAS FILAS SIGUIENTES SUMAN 33, NO 32: 4 + 28 + 1 + 0.
+  Fiscalías revisadas | 32 de 32 | Todas recibieron al menos una consulta dirigida. Ninguna queda NO REVISADA · Yucatán, que ARGOS 121 dejó sin revisar en los dos módulos, encabezó el triaje y queda saldada
+  FGR revisada | Sí | FEMDO, FECOR y delegaciones estatales de Tamaulipas y San Luis Potosí
+  Fiscalías con sentencia publicada | 4 | FGR (integrada) · FGE Michoacán, FGR-SLP y FGE Veracruz (declaradas, no integradas)
+  SIN RESULTADO INDEXADO EN VENTANA | 28 entidades | Se buscó dirigido y el buscador no devolvió boletín del periodo. Con el egreso bloqueado es la casilla correcta en casi todos los casos
+  SIN ACTUALIZACIÓN CONSTATADA | 1 | ssp.zacatecas.gob.mx: se vio el listado de publicaciones del 17 y 20-sep —seguridad en desfiles y prevención de extorsión—, sin aseguramiento en la ventana
+  NO REVISADA | 0 entidades | La profundidad fue desigual y se declara: Tamaulipas y Coahuila quedaron por debajo del estándar en armamento, y Campeche solo recibió consulta general. Encabezan el triaje de ARGOS 123 por la regla de prioridad sobre el ciclo
+  Portales leídos por acceso directo | 0 de 32 | BLOQUEO DE EGRESO REVERIFICADO, TERCERA EDICIÓN: gob.mx/sspc, fiscaliachihuahua.gob.mx, infobae.com y milenio.com DEVUELVEN 000. Ninguna página de este corte se leyó íntegra · techo de confianza ★★★☆☆
+  Boletín federal de acciones relevantes | 1 de 5 tramos | Existe el del 17-sep, alcanzado solo por republicadores · TRIPLE CONSULTA APLICADA A LOS TRAMOS 18, 19, 20 Y 21-SEP —DÍA SUELTO, RANGO Y TÍTULO SIN RESTRICCIÓN DE DOMINIO—: NINGUNO DEVOLVIÓ BOLETÍN. Cuatro días de la ventana sin agregado federal
+  gabinetedeseguridad.gob.mx/resultados/ | Sin cifra utilizable | Duodécima verificación consecutiva · ninguna cifra suya se usa
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-21 · Hora: 08:57 (CDMX) · Corte: Matutino · ARGOS N.° 122 · USO INSTITUCIONAL
+
+============================================================================
+
+## VALORACIÓN ARGOS, CONCLUSIONES E INDICADORES
+
+── VALORACIÓN — NIVEL DE RIESGO NACIONAL
+
+1. CINCO EVENTOS ROJOS DENTRO DE VENTANA, frente a cero del corte anterior, y el nivel se valora
+sobre ellos. Los cinco ocurrieron y se publicaron dentro del periodo: ESTE CORTE MIDE VIOLENCIA,
+NO SOLO PUBLICACIÓN.
+2. El eje del riesgo es civil y comunitario: dos ataques a espacios deportivos de barrio —Tuxtla
+Gutiérrez y Valle de Santiago— más los dos de Celaya suman NUEVE O DIEZ MUERTOS Y TRECE HERIDOS
+—cálculo propio, EL RANGO LO IMPONE LA CIFRA CONTRADICHA Y NO ARBITRADA DE VALLE DE SANTIAGO—,
+con dos menores entre las víctimas y un policía municipal herido. NINGUNO TUVO DETENIDOS SALVO
+EL DE CHIAPAS.
+3. Dos de los cinco rojos son agresiones iniciadas contra fuerzas en patrullaje —SEMAR y SSPC en
+la sierra de Sinaloa, Fuerza Civil en Los Aldamas—: proyección de fuerza contra el Estado, no
+resistencia a un operativo. En los dos casos el Estado conservó la iniciativa y aseguró el
+arsenal.
+4. La densidad sube a 0,19 hechos por hora frente a 0,10 del corte anterior (17 ÷ 87,35 y 3 ÷
+30,03, cálculo propio). LOS TOTALES ABSOLUTOS NO SON COMPARABLES —87 h 21 min FRENTE A 30 h 02
+min—; LA DENSIDAD SÍ, Y CASI SE DUPLICA.
+5. Una sentencia integrada frente a 20 personas detenidas con armamento, y la integrada tardó
+catorce años. LA CAPACIDAD DE CAPTURA DEL ESTADO ES VISIBLE EN CADA CORTE; LA DE CONDENA, NO.
+
+── CONCLUSIONES DE INTELIGENCIA CRIMINAL
+
+1. EL ESPACIO DEPORTIVO COMUNITARIO APARECE COMO ESCENARIO REPETIDO, CON UN MODUS OPERANDI
+ESTABLE: agresores en motocicleta, tiro dirigido sobre un grupo reunido, horario vespertino o
+nocturno y víctimas colaterales menores de edad. Dos hechos en tres días, en Chiapas y
+Guanajuato, sin vínculo acreditado entre ambos. La contramedida es de presencia en horario y
+punto fijo, no de refuerzo genérico: procede inventariar canchas y campos con reunión habitual
+en municipios con disputa de narcomenudeo.
+2. EL CENTRO PENITENCIARIO APARECE COMO PUESTO DE MANDO, NO COMO DESTINO: la Fiscalía de Chiapas
+señala que la orden del ataque de Las Granjas la giró desde el PENAL DE OCOSINGO un sentenciado
+por homicidio calificado. Procede auditar comunicaciones, visitas y bloqueo de señal en ese
+penal, y cruzarlo con los dos inhibidores de señal asegurados en San Luis Potosí: el mismo
+problema visto desde los dos lados.
+3. EL CORREDOR SIERRA DE SINALOA-DURANGO SE COMPORTA COMO ZONA DE PRODUCCIÓN DE AEI, NO DE
+TRÁNSITO: 177 artefactos en trece días —84 en La Noria de San Antonio el 8-sep, 53 en Mazatlán
+el 15 y 40 ahora, cálculo propio—, dos de ellos abandonados y uno en poder de un grupo armado.
+Es consistente con manufactura local y requiere validación: procede peritaje comparado de
+iniciador, carga y contenedor de los tres depósitos.
+4. EL ARSENAL MÁS GRANDE DEL CORTE ES EL QUE MENOS SE PUEDE CONTAR: Puerto Peñasco publica «más
+de 40» armas largas, «casi cuatro mil» cartuchos y artefactos explosivos sin cifra, de modo que
+de su arsenal solo entran al conteo nacional las dos Minimi y las cinco cortas. La munición
+desaparece de los boletines justo cuando el arsenal es grande: 39 armas integradas y solo 124
+cartuchos. Sin esa razón no se estima capacidad de fuego ni autonomía de combate, y sin número
+de serie —cero en 39 armas— ninguna se cruza con las rastreadas desde el norte.
+5. EL NIVEL MUNICIPAL SIGUE SIENDO LA UNIDAD CAPTURADA, Y LA VÍCTIMA DEL CORTE ES EL TRABAJADOR
+DEL CAMPO Y DE LA MINA: en Angamacutiro cayeron el director de la Policía Municipal y tres
+agentes, y en Guerrero una corporación municipal entera sigue intervenida. En paralelo, ocho
+mineros artesanales de Sierra Pinta fueron secuestrados y solo tres aparecieron con vida.
+Procede auditoría de inventario y cotejo balístico del armamento de cargo municipal en ambos
+corredores, y rastrear a los cinco mineros no localizados, antes que refuerzo de efectivos.
+
+SIN ACTUALIZACIÓN OFICIAL UTILIZABLE DURANTE EL CORTE. SESNSP, INEGI, SSPC y el portal
+gabinetedeseguridad.gob.mx/resultados/ no publicaron dentro de la ventana ninguna cifra
+integrable: duodécima verificación consecutiva sin dato utilizable de ese portal —dominio
+indexado, rutas sin fecha y acceso directo bloqueado—. Ninguna cifra suya se usa.
+CIFRA INSTITUCIONAL PUBLICADA FUERA DE VENTANA, DECLARADA Y NO INTEGRADA: la SEMAR difundió el
+15-sep un acumulado de 37 toneladas 855 kg de cocaína asegurada entre el 1-ene y el 10-sep, con
+26 embarcaciones, 1 sumergible y 54 motores fuera de borda. Es anterior al 17-sep 17:36: no es
+indicador de este corte y se cita solo como contexto.
+Único agregado federal del periodo: el boletín de acciones relevantes del 17-sep, de un solo
+día, no indexado por su emisor y alcanzado solo por republicadores. LOS TRAMOS DEL 18, 19, 20 Y
+21-SEP NO DEVOLVIERON BOLETÍN EN NINGUNA DE LAS TRES FORMAS DE CONSULTA: CUATRO DE LOS CINCO
+DÍAS DE LA VENTANA QUEDAN SIN AGREGADO FEDERAL.
+Todas las cifras de este cartelón que no lleven emisor son cálculo propio de ARGOS: ninguna
+autoridad publicó un agregado nacional del corte.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-21 · Hora: 08:57 (CDMX) · Corte: Matutino · ARGOS N.° 122 · USO INSTITUCIONAL

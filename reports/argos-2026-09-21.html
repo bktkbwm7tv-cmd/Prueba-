@@ -1,0 +1,2033 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>ARGOS 122 — Reporte Nacional de Seguridad — 2026-09-21</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --bg-navy:#040814;
+    --panel:#0a1230;
+    --panel-2:#0d1638;
+    --grid-line: rgba(76,230,255,0.08);
+    --border: rgba(76,230,255,0.28);
+    --cyan:#4ce6ff;
+    --cyan-dim:#8fb8c8;
+    --white:#eef6fb;
+    --red:#ff3b3b;
+    --yellow:#ffd23f;
+    --green:#33d17a;
+    --mono: "Consolas","SFMono-Regular","Courier New",monospace;
+    --sans: "Segoe UI","Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:#000;}
+  body{
+    font-family:var(--sans);
+    color:var(--white);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:24px;
+    padding:24px 0 60px;
+  }
+
+  /* ---------- PAGE SHELL ---------- */
+  .page{
+    width:1000px;
+    max-width:96vw;
+    min-height:1360px;
+    background:
+      linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0/40px 40px,
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0/40px 40px,
+      radial-gradient(ellipse at 50% -10%, #0c1a3d 0%, var(--bg-navy) 55%);
+    background-color:var(--bg-navy);
+    border:1px solid var(--border);
+    position:relative;
+    padding:22px 30px 70px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    box-shadow:0 0 0 1px #000, 0 20px 60px rgba(0,0,0,.6);
+    overflow-x:auto;
+  }
+  table.exec{ min-width:600px; }
+  .table-wrap{overflow-x:auto;width:100%;}
+
+  /* ---------- ICONOGRAFÍA DE ARMAMENTO ----------
+     Trazo monocromo que hereda el color del texto. Cada icono identifica una
+     categoría de la taxonomía de CLAUDE.md y va SIEMPRE con etiqueta y cifra:
+     nunca identifica por color ni por forma en solitario. */
+  .ico{width:15px;height:15px;vertical-align:-3px;margin-right:5px;flex:none;
+    stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;
+    stroke-linejoin:round;opacity:.92;}
+  .ico-lg{width:22px;height:22px;margin:0 0 6px 0;vertical-align:0;}
+
+  /* Tarjetas de conteo del módulo de armamento (Bloque 1 de CLAUDE.md). */
+  .conteo{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));
+    gap:6px;margin:10px 0 4px;}
+  .conteo .tile{border:1px solid var(--border);background:var(--panel);
+    padding:9px 8px;display:flex;flex-direction:column;align-items:flex-start;}
+  .conteo .tile .lbl{font-family:var(--mono);font-size:8.5px;letter-spacing:1px;
+    text-transform:uppercase;color:var(--cyan);line-height:1.3;}
+  .conteo .tile .num{font-size:19px;font-weight:700;color:var(--white);
+    line-height:1.15;margin-top:3px;}
+  .conteo .tile .sub{font-size:8.5px;color:var(--muted);margin-top:2px;}
+  /* Categoría en cero: se muestra igual, atenuada. La ausencia es dato. */
+  .conteo .tile.cero{opacity:.45;}
+  .conteo .tile.cero .num{color:var(--muted);font-weight:600;}
+
+  @media print{
+    body{background:#000;padding:0;gap:0;}
+    .page{box-shadow:none;break-after:page; max-width:none; width:210mm; min-height:297mm;}
+  }
+  @media (max-width:480px){
+    .panel-title{flex-direction:column;align-items:flex-start;gap:2px;}
+  }
+
+  /* ---------- HEADER ---------- */
+  .masthead{
+    display:grid;
+    grid-template-columns:150px 1fr 150px;
+    align-items:center;
+    gap:14px;
+    border-bottom:1px solid var(--border);
+    padding-bottom:12px;
+  }
+  .masthead .brand{
+    font-family:var(--mono);
+    font-weight:700;
+    letter-spacing:2px;
+  }
+  .brand .argos-num{
+    font-size:34px;
+    line-height:1;
+    display:flex;
+    align-items:baseline;
+    gap:.22em;
+  }
+  .brand .argos-num .w{
+    font-size:1.14em;
+    font-weight:900;
+    letter-spacing:.14em;
+    color:var(--cyan);
+    -webkit-text-stroke:.7px var(--cyan);
+    text-shadow:0 0 12px rgba(76,230,255,.40);
+  }
+  .brand .argos-num .n{
+    font-size:.86em;
+    font-weight:800;
+    letter-spacing:.04em;
+    color:var(--white);
+    border:1px solid var(--cyan-dim);
+    padding:.06em .3em;
+    line-height:1;
+    background:rgba(76,230,255,.07);
+  }
+  .brand .sub{
+    font-size:10px;
+    color:var(--cyan-dim);
+    margin-top:4px;
+  }
+  .masthead .titles{
+    text-align:center;
+  }
+  .titles h1{
+    margin:0;
+    font-size:20px;
+    letter-spacing:4px;
+    color:var(--white);
+  }
+  .titles h2{
+    margin:2px 0 0;
+    font-size:12px;
+    letter-spacing:2px;
+    color:var(--cyan);
+    font-weight:600;
+  }
+  .titles .motto{
+    margin-top:6px;
+    font-family:var(--mono);
+    font-size:10px;
+    color:var(--cyan-dim);
+    letter-spacing:2px;
+  }
+  .masthead .corte{
+    text-align:right;
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--cyan-dim);
+    line-height:1.6;
+  }
+  .masthead .corte b{color:var(--white);}
+
+  /* ---------- RADAR + MAP (PORTADA) ---------- */
+  .cover-visuals{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    min-width:0;
+  }
+  .panel{
+    min-width:0;
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:2px;
+    padding:14px 16px;
+  }
+  .panel-title{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:2px;
+    color:var(--cyan);
+    border-bottom:1px solid var(--border);
+    padding-bottom:6px;
+    margin-bottom:10px;
+    display:flex;
+    justify-content:space-between;
+  }
+  .radar-box, .map-box{
+    height:220px;
+    display:flex;align-items:center;justify-content:center;
+    position:relative;
+    min-width:0;
+    overflow:hidden;
+  }
+  .radar-box svg, .map-box svg{width:100%;height:100%;display:block;}
+  .estado-path{stroke:var(--bg-navy);stroke-width:0.6;cursor:pointer;transition:filter .15s;}
+  .estado-path:hover{filter:brightness(1.4);}
+  .radar-ring{fill:none;stroke:var(--border);stroke-width:1;}
+  .radar-cross{stroke:var(--border);stroke-width:1;}
+  .radar-sweep-path{fill:rgba(76,230,255,.35);}
+  .eco{stroke:#04101f;stroke-width:0.7;cursor:pointer;}
+  .eco.pulse{animation:ecoPulse 1.6s ease-in-out infinite;}
+  @keyframes ecoPulse{ 0%,100%{opacity:1;} 50%{opacity:.4;} }
+  .map-caption{
+    position:absolute;bottom:2px;left:0;right:0;text-align:center;
+    font-family:var(--mono);font-size:9px;color:var(--cyan-dim);
+  }
+  .radar-stats{
+    display:flex;justify-content:space-between;gap:6px;margin-top:8px;
+    font-family:var(--mono);font-size:9px;color:var(--cyan-dim);
+    border-top:1px dashed var(--border);padding-top:6px;text-align:center;
+  }
+  .radar-stats b{color:var(--white);display:block;font-size:14px;margin-top:2px;}
+  .argos-tooltip{
+    position:fixed;z-index:80;max-width:260px;
+    background:var(--panel-2);border:1px solid var(--border);
+    padding:8px 10px;font-family:var(--mono);font-size:10px;color:var(--white);
+    line-height:1.5;pointer-events:none;opacity:0;transition:opacity .1s;
+    box-shadow:0 6px 18px rgba(0,0,0,.5);
+  }
+  .argos-tooltip.show{opacity:1;}
+  .argos-tooltip b{color:var(--cyan);}
+  .nota{scroll-margin-top:16px;}
+
+  /* ---------- SEMAFORO ---------- */
+  .semaforo{
+    display:flex;gap:10px;
+  }
+  .sem-item{
+    flex:1;
+    border:1px solid var(--border);
+    background:var(--panel);
+    padding:10px 12px;
+    font-family:var(--mono);
+  }
+  .sem-item .dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:8px;}
+  .sem-item.alto .dot{background:var(--red);box-shadow:0 0 8px var(--red);}
+  .sem-item.medio .dot{background:var(--yellow);box-shadow:0 0 8px var(--yellow);}
+  .sem-item.bajo .dot{background:var(--green);box-shadow:0 0 8px var(--green);}
+  .sem-item .lbl{font-size:11px;letter-spacing:1px;color:var(--cyan-dim);}
+  .sem-item .val{font-size:20px;color:var(--white);margin-top:4px;}
+
+  /* ---------- SECTION HEADS ---------- */
+  .section-head{
+    font-family:var(--mono);
+    font-size:13px;
+    letter-spacing:3px;
+    color:var(--cyan);
+    border-left:3px solid var(--cyan);
+    padding:4px 10px;
+    background:linear-gradient(90deg, rgba(76,230,255,.08), transparent);
+  }
+
+  /* ---------- EXEC LIST ---------- */
+  .list{
+    display:flex;flex-direction:column;gap:8px;
+  }
+  .list-item{
+    display:grid;
+    grid-template-columns:70px 1fr 110px;
+    gap:10px;
+    border:1px solid var(--border);
+    background:var(--panel);
+    padding:8px 12px;
+    font-size:12px;
+    align-items:center;
+  }
+  .tag{
+    font-family:var(--mono);
+    font-size:9px;
+    padding:2px 6px;
+    text-align:center;
+    border-radius:2px;
+    letter-spacing:1px;
+  }
+  .tag.alto{background:rgba(255,59,59,.15);color:var(--red);border:1px solid var(--red);}
+  .tag.medio{background:rgba(255,210,63,.15);color:var(--yellow);border:1px solid var(--yellow);}
+  .tag.bajo{background:rgba(51,209,122,.15);color:var(--green);border:1px solid var(--green);}
+  .tag.sindato{background:rgba(143,184,200,.12);color:var(--cyan-dim);border:1px solid var(--cyan-dim);}
+  .placeholder{color:var(--cyan-dim);font-style:italic;}
+
+  /* ---------- ALERTA ---------- */
+  .alerta{
+    border:1px solid var(--red);
+    background:rgba(255,59,59,.08);
+    padding:10px 14px;
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+  }
+  .alerta .flag{
+    font-family:var(--mono);color:var(--red);font-weight:700;font-size:12px;letter-spacing:2px;
+    white-space:nowrap;
+  }
+  .alerta p{margin:0;font-size:12px;color:var(--white);}
+  .alerta.contexto{border-color:var(--cyan);background:rgba(76,230,255,.06);}
+  .alerta.contexto .flag{color:var(--cyan);}
+
+  /* ---------- TABLE ---------- */
+  table.exec{
+    width:100%;
+    border-collapse:collapse;
+    font-size:11.5px;
+  }
+  table.exec th, table.exec td{
+    border:1px solid var(--border);
+    padding:6px 8px;
+    text-align:left;
+  }
+  table.exec th{
+    background:var(--panel-2);
+    color:var(--cyan);
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:1px;
+  }
+  table.exec td{background:var(--panel);}
+
+  /* ---------- NOTA CARD (4 apartados) ---------- */
+  .nota{
+    border:1px solid var(--border);
+    background:var(--panel);
+  }
+  .nota-header{
+    display:flex;justify-content:space-between;align-items:center;
+    background:var(--panel-2);
+    padding:8px 12px;
+    border-bottom:1px solid var(--border);
+  }
+  .nota-header h3{
+    margin:0;font-size:13px;color:var(--white);letter-spacing:.5px;
+  }
+  .nota-header .risk-flag{
+    font-family:var(--mono);font-size:9px;
+    border:1px solid; padding:2px 6px;letter-spacing:1px;
+  }
+  .nota-header .risk-flag.alto{color:var(--red);border-color:var(--red);}
+  .nota-header .risk-flag.medio{color:var(--yellow);border-color:var(--yellow);}
+  .nota-header .risk-flag.bajo{color:var(--green);border-color:var(--green);}
+  .nota-header .risk-flag.sindato{color:var(--cyan-dim);border-color:var(--cyan-dim);}
+  .nota-body{padding:10px 14px;display:flex;flex-direction:column;gap:8px;}
+  .apartado{font-size:12px;line-height:1.5;}
+  .apartado .k{
+    display:block;
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:1.5px;
+    color:var(--cyan);
+    margin-bottom:2px;
+  }
+  .nota-footer{
+    border-top:1px solid var(--border);
+    padding:8px 14px;
+    font-family:var(--mono);
+    font-size:10px;
+    color:var(--cyan-dim);
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    align-items:center;
+  }
+  .nota-footer b{color:var(--white);}
+  .stars{color:var(--yellow);letter-spacing:1px;}
+  .src-tag{
+    border:1px solid var(--border);
+    padding:1px 6px;
+    border-radius:2px;
+  }
+
+  /* ---------- PHOTO SLOT ---------- */
+  .photo-slot{
+    border:1px dashed var(--cyan-dim);
+    background:repeating-linear-gradient(45deg, rgba(76,230,255,.03) 0 10px, transparent 10px 20px);
+    min-height:110px;
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;
+    font-family:var(--mono);
+    font-size:10px;
+    color:var(--cyan-dim);
+    padding:8px;
+  }
+
+  /* ---------- FOOTER BAR ---------- */
+  .footbar{
+    position:absolute;
+    left:0;right:0;bottom:0;
+    display:flex;
+    justify-content:space-between;
+    padding:8px 30px;
+    border-top:1px solid var(--border);
+    font-family:var(--mono);
+    font-size:9.5px;
+    color:var(--cyan-dim);
+    background:rgba(4,8,20,.9);
+  }
+  .footbar .uso{color:var(--yellow);letter-spacing:1px;}
+
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;}
+  .muted-note{
+    font-family:var(--mono);font-size:9.5px;color:var(--cyan-dim);
+    border:1px dashed var(--border); padding:6px 10px;
+  }
+  .src-list{font-size:11px;line-height:1.7;}
+  .src-list .grp{color:var(--cyan-dim);font-family:var(--mono);font-size:9px;letter-spacing:1px;display:block;margin-top:6px;}
+
+  /* ---------- STAT TILES (Bloques 1 y 4) ---------- */
+  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+  .stat-tile{
+    border:1px solid var(--border);background:var(--panel);
+    padding:8px 10px;text-align:center;
+  }
+  .stat-tile .lbl{font-family:var(--mono);font-size:8.5px;color:var(--cyan-dim);letter-spacing:.5px;}
+  .stat-tile .val{font-size:19px;color:var(--white);margin-top:3px;font-weight:600;}
+  .stat-tile .icon{font-size:15px;}
+
+  /* ---------- COVERAGE INDICATOR ---------- */
+  .coverage{
+    font-family:var(--mono);font-size:9.5px;color:var(--cyan-dim);
+    border:1px dashed var(--border);padding:8px 10px;
+    display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px 14px;
+  }
+  .coverage b{color:var(--white);}
+
+  table.exec.wide{min-width:920px;}
+</style>
+</head>
+<body>
+
+<!-- ============ PÁGINA 1 — PORTADA ============ -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand">
+      <div class="argos-num"><span class="w">ARGOS</span><span class="n">122</span></div>
+      <div class="sub">SISTEMA DE INTELIGENCIA CRIMINAL TRAZABLE</div>
+    </div>
+    <div class="titles">
+      <h1>REPORTE NACIONAL DE SEGURIDAD</h1>
+      <h2>REPORTE DIARIO DE INTELIGENCIA CRIMINAL</h2>
+      <div class="motto">INVESTIGACIONES, BÚSQUEDA Y VERDAD</div>
+    </div>
+    <div class="corte">
+      CORTE INFORMATIVO<br>
+      <b>Fecha:</b> 2026-09-21<br>
+      <b>Hora:</b> 08:57 (CDMX)
+    </div>
+  </header>
+
+  <div class="cover-visuals">
+    <div class="panel">
+      <div class="panel-title"><span>RADAR CENTRAL</span><span>EN VIVO</span></div>
+      <div class="radar-box" id="argos-radar"></div>
+      <div class="radar-stats" id="argos-radar-stats"><div>🔴 Alto impacto<br><b>5</b></div><div>🟡 Violencia operativa<br><b>2</b></div><div>🟢 Acciones institucionales<br><b>10</b></div></div>
+    </div>
+    <div class="panel">
+      <div class="panel-title"><span>MAPA NACIONAL — FOCOS DEL CORTE</span><span>GIS POR ENTIDAD</span></div>
+      <div class="map-box" id="argos-map"></div>
+      <div class="map-caption">Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.</div>
+    </div>
+  </div>
+
+  <div class="section-head">SEMÁFORO ARGOS</div>
+  <div class="semaforo">
+    <div class="sem-item alto"><span class="dot"></span><span class="lbl">🔴 ROJO — ALTO IMPACTO</span><div class="val">5 eventos</div></div>
+    <div class="sem-item medio"><span class="dot"></span><span class="lbl">🟡 AMARILLO — VIOLENCIA OPERATIVA</span><div class="val">2 eventos</div></div>
+    <div class="sem-item bajo"><span class="dot"></span><span class="lbl">🟢 VERDE — ACCIONES INSTITUCIONALES</span><div class="val">10 eventos</div></div>
+  </div>
+
+  <div class="alerta contexto">
+    <span class="flag">LO QUE DEBE HACER EL MANDO</span>
+    <p><b>1. AUDITAR EL ARMAMENTO DE CARGO DE LAS POLICÍAS MUNICIPALES DE LA COSTA DE GUERRERO Y DEL
+    BAJÍO MICHOACANO</b>, arma por arma y contra inventario, con <b>cotejo balístico</b>.
+    <code>DOS CORPORACIONES MUNICIPALES INTERVENIDAS EN DOS ENTIDADES: EN ANGAMACUTIRO CAYERON SU
+    DIRECTOR DE POLICÍA Y TRES AGENTES.</code>
+    <br><b>2. VIGILAR LOS ESPACIOS DEPORTIVOS COMUNITARIOS EN HORARIO VESPERTINO Y NOCTURNO</b>, con
+    agresores en motocicleta y tiro dirigido: <b>dos ataques en dos entidades y tres días</b>, con
+    <b>SEIS O SIETE MUERTOS Y OCHO HERIDOS</b>. <code>EL RANGO LO IMPONE LA CIFRA CONTRADICHA DE VALLE
+    DE SANTIAGO. LA VINCULACIÓN ENTRE AMBOS NO ESTÁ ACREDITADA Y NO SE AFIRMA.</code>
+    <br><b>3. EXIGIR A LA FGE DE GUANAJUATO LA CIFRA OFICIAL DE VÍCTIMAS DE VALLE DE SANTIAGO</b>:
+    <code>CIRCULAN 3 Y 4 MUERTOS Y NINGÚN EMISOR INSTITUCIONAL HA PUBLICADO EL DATO.</code>
+    <br><b>4. COTEJAR EL ORIGEN DE LAS DOS PIEZAS CAL. .50 Y DE LAS TRES AMETRALLADORAS DEL CORTE</b>
+    —<b>Barrett</b> de Los Aldamas, <b>Browning M-2</b> y <b>dos Minimi</b> de Puerto Peñasco,
+    <b>una ametralladora</b> en la sierra de Sinaloa—.
+    <code>NINGUNA LLEVA NÚMERO DE SERIE PUBLICADO Y SIN ÉL NO SE CRUZAN CON LAS RASTREADAS DESDE EL NORTE.</code>
+    <br><b>5. PERITAR Y COTEJAR LOS 40 AEI DE LA SIERRA CONTRA LOS 53 DE MAZATLÁN Y LOS 84 DE LA NORIA</b>:
+    <b>177 artefactos en trece días en un mismo corredor</b>. <code>FIJARÍA SI HAY UN MISMO FABRICANTE.
+    REQUIERE VALIDACIÓN.</code></p>
+  </div>
+
+  <p class="muted-note">
+    Ventana <b>17-sep 17:36 → 21-sep 08:57 CDMX</b> (<b>87 h 21 min</b>) · <b>la segunda más larga de
+    las cinco últimas</b>, frente a 30 h 02 min del corte anterior · <b>17 hechos en 12 entidades</b> ·
+    <b>20 entidades sin hecho integrado</b> · <b>5 hechos rojos, todos dentro de ventana</b> ·
+    <b>2 recuperaciones <code>-REC-</code></b> de la ventana de ARGOS 121, <b>atenuadas y fuera de todos
+    los totales</b> · <b>5 hechos con <code>FRONTERA DE VENTANA</code></b>, todos del boletín federal del
+    17-sep · <b>6 cifras contradichas, 4 arbitradas por procedencia y 2 no arbitradas</b> ·
+    <b>1 sentencia integrada y 3 declaradas</b> · <b>densidad 0,19 hechos/hora</b> frente a 0,10 ·
+    techo de confianza <b>★★★☆☆</b> por bloqueo de egreso: <b>ninguna página se leyó íntegra</b>,
+    tercera edición consecutiva.
+  </p>
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-09-21 · Hora: 08:57 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 122</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- ============ PÁGINA 2 — PANORAMA ============ -->
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD</h2></div>
+  <p class="muted-note" style="margin-bottom:8px;">
+    <b>Único listado resumido del cartelón.</b> Cada renglón remite por <b>ARG-ID</b> a su ficha, que es
+    donde está el detalle. <b>Las dos filas atenuadas son de la ventana de ARGOS 121</b> y
+    <code>NO INTEGRAN NINGÚN TOTAL DE ESTE CORTE.</code>
+  </p>
+  <div class="table-wrap"><table class="exec">
+    <thead><tr><th>Entidad · municipio</th><th>Hecho</th><th>Nivel de riesgo</th><th>Fuente institucional</th><th>Fuente nacional</th><th>Confianza</th><th>ARG-ID</th></tr></thead>
+    <tbody>
+      <tr><td><b>Chiapas</b><br>Tuxtla Gutiérrez<br><span class="muted-note">col. Las Granjas</span></td><td><b>3 muertos y 3 heridos</b> —entre ellos <b>un niño de 10 años</b>— en un <b>ataque a una cancha de futbol</b></td><td>🔴 Rojo</td><td>FGE Chiapas <span class="muted-note">(por cita del Fiscal General)</span></td><td>Infobae · El Universal · Proceso</td><td>★★★☆☆</td><td><a href="#ARG-122-001"><code>ARG-122-001</code></a></td></tr>
+      <tr><td><b>Guanajuato</b><br>Celaya<br><span class="muted-note">Mancera y mercado del centro</span></td><td><b>2 ataques, 3 muertos y 5 heridos</b> · entre las víctimas, <b>un niño de 13 años</b> y <b>un policía municipal herido</b></td><td>🔴 Rojo</td><td>FGE Guanajuato <span class="muted-note">(por cita)</span></td><td>El Universal · Vanguardia</td><td>★★★☆☆</td><td><a href="#ARG-122-002"><code>ARG-122-002</code></a></td></tr>
+      <tr><td><b>Guanajuato</b><br>Valle de Santiago<br><span class="muted-note">Duranes de Arriba</span></td><td><b>Ataque a un campo de béisbol</b> · <code>MUERTOS CONTRADICHOS: 3 O 4</code>, <b>5 heridos</b></td><td>🔴 Rojo</td><td><span class="muted-note">ninguna<br>FGE sin cifra publicada</span></td><td>El Financiero · Milenio · La Silla Rota</td><td>★★☆☆☆</td><td><a href="#ARG-122-003"><code>ARG-122-003</code></a></td></tr>
+      <tr><td><b>Nuevo León</b><br>Los Aldamas</td><td><b>Agresión a personal de Fuerza Civil en patrullaje</b> · <b>4 abatidos</b>, <b>4 largas y un fusil Barrett cal. .50</b></td><td>🔴 Rojo</td><td>Fuerza Civil NL <span class="muted-note">(por cita)</span></td><td>El Universal · Milenio · MVS</td><td>★★★☆☆</td><td><a href="#ARG-122-004"><code>ARG-122-004</code></a></td></tr>
+      <tr><td><b>Sinaloa</b><br>sierra, límites con Durango<br><span class="muted-note">municipio no especificado</span></td><td><b>Agresión armada contra SEMAR y SSPC federal</b> desde <b>seis camionetas</b></td><td>🔴 Rojo</td><td>SSPC federal y SEMAR <span class="muted-note">(por cita)</span></td><td>Proceso · Excélsior · El Heraldo</td><td>★★★☆☆</td><td><a href="#ARG-122-005"><code>ARG-122-005</code></a></td></tr>
+      <tr><td><b>Oaxaca</b><br>Juchitán de Zaragoza</td><td><b>Disparos contra la vivienda y taller</b> de un artista muxe · <b>sin heridos</b> · la FGE lo atribuye a <b>extorsión</b></td><td>🟡 Amarillo</td><td>FGE Oaxaca <span class="muted-note">(por cita)</span></td><td>Infobae · El Heraldo</td><td>★★★☆☆</td><td><a href="#ARG-122-006"><code>ARG-122-006</code></a></td></tr>
+      <tr><td><b>Sonora</b><br>Puerto Peñasco<br><span class="muted-note">fracc. Cerrada del Sol</span></td><td><b>Topón el 18 y cateo el 19</b> · <b>7 detenidos</b>, <b>3 víctimas de secuestro rescatadas</b>, <b>5 cortas</b>, <b>2 Minimi</b> y <b>una Browning M-2 cal. .50</b> · <code>«MÁS DE 40» LARGAS, NO INTEGRADAS</code></td><td>🟡 Amarillo</td><td>SSPC federal <span class="muted-note">(por cita del titular)</span></td><td>UnoTV · La Silla Rota · El Heraldo</td><td>★★★☆☆</td><td><a href="#ARG-122-007"><code>ARG-122-007</code></a></td></tr>
+      <tr><td><b>Chiapas</b><br>Tuxtla Gutiérrez</td><td><b>15 detenidos</b> por el ataque de Las Granjas · <b>orden girada desde el penal de Ocosingo</b></td><td>🟢 Verde</td><td>FGE Chiapas <span class="muted-note">(por cita del Fiscal General)</span></td><td>Infobae · El Universal · SinEmbargo</td><td>★★★☆☆</td><td><a href="#ARG-122-008"><code>ARG-122-008</code></a></td></tr>
+      <tr><td><b>Sinaloa</b><br>sierra, límites con Durango</td><td><b>9 detenidos</b> —uno menor—, <b>17 largas con una ametralladora</b>, <b>127 cargadores</b> y <b>40 AEI</b></td><td>🟢 Verde</td><td>SSPC federal y SEMAR <span class="muted-note">(por cita)</span></td><td>Proceso · Excélsior · El Heraldo</td><td>★★★☆☆</td><td><a href="#ARG-122-009"><code>ARG-122-009</code></a></td></tr>
+      <tr><td><b>Ciudad de México</b><br>Iztapalapa</td><td><b>2 cateos</b> vinculados a «La Unión Tepito» · <b>3 detenidos</b>, <b>2 cortas y 4 largas</b></td><td>🟢 Verde</td><td>SSC y FGJ CDMX <span class="muted-note">(por cita, sin boletín)</span></td><td>El Heraldo · El Financiero · La Razón</td><td>★★★☆☆</td><td><a href="#ARG-122-010"><code>ARG-122-010</code></a></td></tr>
+      <tr><td><b>Veracruz</b><br>Tempoal</td><td><b>59,400 bolsas de droga, armas y granadas</b> en una casa de seguridad · <b>cero detenidos</b></td><td>🟢 Verde</td><td>FGE Veracruz <span class="muted-note">(por cita)</span></td><td>N+ · Infobae</td><td>★★★☆☆</td><td><a href="#ARG-122-011"><code>ARG-122-011</code></a></td></tr>
+      <tr><td><b>San Luis Potosí</b><br>cuatro regiones del estado</td><td><b>22 detenidos</b> en agregado de 24 h · <b>1 arma sin categoría</b> y <b>2 inhibidores de señal</b></td><td>🟢 Verde</td><td>Guardia Civil Estatal <span class="muted-note">(por cita)</span></td><td><span class="muted-note">ninguna</span></td><td>★★★☆☆</td><td><a href="#ARG-122-012"><code>ARG-122-012</code></a></td></tr>
+      <tr><td><b>Guanajuato</b><br>San José Iturbide<br><span class="muted-note">FRONTERA DE VENTANA</span></td><td><b>59 millones de litros de hidrocarburo ilícito</b> y <b>10 tanques</b> · <b>el mayor decomiso de la administración</b></td><td>🟢 Verde</td><td>FGR y Gabinete de Seguridad <span class="muted-note">(boletín 17-sep, vía republicadores)</span></td><td>La Jornada · Infobae · Milenio</td><td>★★★☆☆</td><td><a href="#ARG-122-013"><code>ARG-122-013</code></a></td></tr>
+      <tr><td><b>Michoacán</b><br>La Piedad<br><span class="muted-note">FRONTERA DE VENTANA</span></td><td>Detención de un <b>coordinador regional</b> con órdenes por <b>homicidio y desaparición forzada</b></td><td>🟢 Verde</td><td>Gabinete de Seguridad <span class="muted-note">(boletín 17-sep, vía republicadores)</span></td><td>Milenio</td><td>★★☆☆☆</td><td><a href="#ARG-122-015"><code>ARG-122-015</code></a></td></tr>
+      <tr><td><b>Tabasco</b><br>Centro · col. Pino Suárez<br><span class="muted-note">FRONTERA DE VENTANA</span></td><td><b>6 detenidos</b>, <b>2 cortas, 1 larga, 15 cartuchos, 3 cargadores</b> y <b>un accesorio lanzagranadas</b></td><td>🟢 Verde</td><td>Gabinete de Seguridad <span class="muted-note">(boletín 17-sep, vía republicadores)</span></td><td><span class="muted-note">ninguna independiente</span></td><td>★★★☆☆</td><td><a href="#ARG-122-016"><code>ARG-122-016</code></a></td></tr>
+      <tr><td><b>Tabasco</b><br>Centro · rancho Plátano y Cacao<br><span class="muted-note">FRONTERA DE VENTANA</span></td><td><b>150,000 litros de hidrocarburos</b>, sustancias químicas y maquinaria industrial · <b>sin detenidos</b></td><td>🟢 Verde</td><td>Gabinete de Seguridad <span class="muted-note">(boletín 17-sep, vía republicadores)</span></td><td><span class="muted-note">ninguna independiente</span></td><td>★★☆☆☆</td><td><a href="#ARG-122-017"><code>ARG-122-017</code></a></td></tr>
+      <tr><td><b>Baja California Sur</b><br>La Paz<br><span class="muted-note">FRONTERA DE VENTANA</span></td><td><b>2 detenidos</b>, <b>109 cartuchos</b> y <b>197 dosis de fentanilo</b> · <b>armas no publicadas</b></td><td>🟢 Verde</td><td>Gabinete de Seguridad <span class="muted-note">(boletín 17-sep, vía republicadores)</span></td><td>Milenio</td><td>★★☆☆☆</td><td><a href="#ARG-122-018"><code>ARG-122-018</code></a></td></tr>
+      <tr style="opacity:.72;"><td><b>Michoacán</b><br>Angamacutiro y Puruándiro<br><span class="muted-note">VENTANA ARGOS 121</span></td><td><b>28 inmuebles y 18 detenidos</b>, entre ellos <b>el director de la Policía Municipal de Angamacutiro y tres agentes</b></td><td>🟢 Verde</td><td>FGE Michoacán <span class="muted-note">(por cita, sin boletín)</span></td><td>Infobae · Quadratín</td><td>★★★☆☆</td><td><a href="#ARG-122-REC-002"><code>ARG-122-REC-002</code></a></td></tr>
+      <tr style="opacity:.72;"><td><b>Guerrero</b><br>Mochitlán y Quechultenango<br><span class="muted-note">VENTANA ARGOS 121</span></td><td><b>29 militares y policías desarmados y retenidos</b>, <b>2 patrullas incendiadas</b> y <b>3 vehículos oficiales con impactos de bala</b> en el Circuito Río Azul</td><td>🟡 Amarillo</td><td>FGE Guerrero y SEDENA <span class="muted-note">(por cita)</span></td><td>Proceso · Infobae · Milenio</td><td>★★★☆☆</td><td><a href="#ARG-122-REC-001"><code>ARG-122-REC-001</code></a></td></tr>
+      <tr><td><b>Tamaulipas</b><br>Nuevo Laredo</td><td><b>Sentencia de 332 años 6 meses</b> contra «El Cholo» por privación ilegal de la libertad y acopio de armas · <code>INTEGRADA</code></td><td><span class="muted-note">no aplica</span></td><td><b>FGR</b> <span class="muted-note">FEMDO y FECOR<br>comunicado citado</span></td><td>La Jornada · Infobae · MVS</td><td>★★★☆☆</td><td><a href="#ARG-122-SEN-001"><code>ARG-122-SEN-001</code></a></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="section-head" style="margin-top:10px;">TOTALES DEL CORTE — CÁLCULO PROPIO DE ARGOS</div>
+  <div class="table-wrap"><table class="exec">
+    <thead><tr><th>Armas cortas</th><th>Armas largas</th><th>Sin categoría</th><th>Cartuchos</th><th>Cargadores</th><th>Granadas</th><th>AEI</th><th>Explosivos</th><th>Arm. especial</th><th>Detenidos</th><th>Entidades</th><th>Sentencias</th></tr></thead>
+    <tbody>
+      <tr><td><b>10</b></td><td><b>28</b></td><td>1</td><td><b>124</b></td><td><b>131</b></td><td>0<br><span class="muted-note">SIN CIFRA</span></td><td><b>40</b></td><td>0<br><span class="muted-note">SIN CIFRA</span></td><td><b>4</b></td><td><b>20</b></td><td><b>9</b></td><td><b>1</b><br><span class="muted-note">3 declaradas</span></td></tr>
+    </tbody>
+  </table></div>
+  <p class="muted-note" style="margin-top:6px;">
+    <b>Ninguna autoridad publicó un agregado nacional del corte.</b> <b>Granadas y explosivos en cero
+    por falta de cifra, no por ausencia</b>: Tempoal asegura <b>granadas</b> y Puerto Peñasco
+    <b>artefactos explosivos improvisados</b>, ninguno con cantidad publicada.
+    <b>Armas largas</b>: <code>DE PUERTO PEÑASCO SOLO SE INTEGRAN LAS DOS AMETRALLADORAS MINIMI, ÚNICA
+    CIFRA EXPRESA; «MÁS DE 40» NO ES CIFRA Y LA PRELIMINAR DE 33 QUEDÓ SUPERADA.</b>
+    <b>Detenidos</b>: solo los de eventos con aseguramiento de armamento — <b>no entran los 7 de
+    Puerto Peñasco</b>, detenidos el <b>18-sep</b> mientras el arsenal se aseguró en el <b>cateo del
+    19</b>; ni los <b>22 de San Luis Potosí</b> ni los <b>15 de Chiapas</b>, agregados sin desglose por
+    sub-evento. <b>Armamento especial</b>: 1 ametralladora, 2 piezas cal. .50 —Barrett y Browning M-2—
+    y 1 accesorio lanzagranadas; <b>los lanzagranadas de la sierra de Sinaloa no llevan cifra</b>.
+    <code>NINGÚN TOTAL ABSOLUTO ES COMPARABLE CON UN CORTE DE 30 HORAS SIN NORMALIZAR POR DURACIÓN.</code>
+  </p>
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-09-21 · Hora: 08:57 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 122</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- ============ PÁGINA 3 — CRIMEN ORGANIZADO (I) ============ -->
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (I) — GUANAJUATO: DOS ATAQUES A ESPACIOS DEPORTIVOS Y EL MAYOR DECOMISO DE HUACHICOL DE LA ADMINISTRACIÓN</h2></div>
+
+  <div class="nota" id="ARG-122-002">
+    <div class="nota-header"><h3>GUANAJUATO · CELAYA — DOS ATAQUES ARMADOS EN DOCE HORAS DEJAN TRES MUERTOS Y CINCO HERIDOS, ENTRE ELLOS UN NIÑO DE 13 AÑOS Y UN POLICÍA MUNICIPAL</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Viernes 18-sep, noche</b> · <b>calle Francisco Villa, comunidad de MANCERA, Celaya,
+        Guanajuato</b> · un <b>grupo armado</b> irrumpe en un domicilio.
+        <b>Muertos: JORGE, 28 años</b>, y <b>CRISTIAN, 13 años</b>.
+        <b>Heridas: MARLÉN, CARMEN y MARÍA</b>, esta última de <b>80 años</b>.
+        <br><b>Sábado 19-sep, ~09:00</b> · <b>mercado de la zona centro</b> · sujetos armados disparan
+        contra comerciantes. <b>Muerto: RAÚL</b>, presunto propietario de una carnicería, abatido
+        <b>en la entrada de su negocio</b>. <b>Heridos: un empleado y UN POLICÍA MUNICIPAL.</b>
+        <br><b>Saldo conjunto</b>: <b>3 muertos · 5 heridos</b>. <b>Cero detenidos</b> al cierre.
+        <b>Armamento</b>: <code>NO PUBLICADO. NO ALIMENTA EL CONTEO Y NO SE INFIERE.</code>
+        <br><code>CIFRA DE TERCERO NO ADOPTADA:</code> los <b>«15 homicidios dolosos con arma de fuego
+        entre viernes y sábado» en Celaya, Salamanca, Irapuato, León y Valle de Santiago</b> son un
+        <b>agregado de medios sin emisor institucional</b>.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-002</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —sin comunicado propio de la FGE— · <b>Hecho</b>: 2026-09-18 noche y 2026-09-19
+        ~09:00 · <b>Publicación</b>: 2026-09-19 y 2026-09-20 · <b>Consulta</b>: 2026-09-21, 08:57 CDMX ·
+        <b>Estatus</b>: Parcialmente corroborado.
+        <br><b>Fuentes — Institucional (1, por cita, sin comunicado)</b>: FGE Guanajuato.
+        <b>Nacional (4)</b>, <b>2 con fecha en la ruta</b>: Diario de Yucatán · El Tiempo Monclova.
+        <b>Regional (2)</b>. <b>Lista íntegra en el archivo de fuentes.</b>
+        <br><code>DESLINDE OBLIGATORIO:</code> <b>Celaya SÍ figura en el índice</b>, que cubre de
+        ARGOS 91 en adelante — <code>ARG-95-002</code> (enfrentamiento Celaya-Cortazar),
+        <code>ARG-98-003</code> (agresión a la GN en la autopista Apaseo el Grande-Celaya) y
+        <code>ARG-103-REC-006</code> (cuerpo semienterrado, 17-ago)—. <b>Ninguno es este hecho</b>:
+        otras fechas y otro tipo de evento.
+        <br><b>Calendario verificado</b>: 18-sep viernes · 19-sep sábado.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-122-003">
+    <div class="nota-header"><h3>GUANAJUATO · VALLE DE SANTIAGO — DOS SUJETOS EN MOTOCICLETA DISPARAN CONTRA UN CAMPO DE BÉISBOL EN DURANES DE ARRIBA: CIFRA DE MUERTOS CONTRADICHA Y SIN EMISOR INSTITUCIONAL</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Domingo 20-sep, ~16:00</b> · <b>campo de béisbol de la comunidad DURANES DE ARRIBA, Valle de
+        Santiago, Guanajuato</b>, cerca del <b>límite municipal con Pueblo Nuevo</b> ·
+        <b>dos sujetos en motocicleta</b> irrumpen y disparan <b>de forma directa y repetida</b> contra
+        varias personas reunidas.
+        <br><code>CIFRA DE VÍCTIMAS CONTRADICHA Y NO ARBITRADA:</code>
+        <b>4 MUERTOS y 5 HERIDOS</b> según <b>La Silla Rota, El Financiero y Periódico AM</b>;
+        <b>3 MUERTOS y 5 HERIDOS</b> según <b>Periódico Correo y Guanajuato Informa</b>.
+        <code>LA FGE DE GUANAJUATO NO HA PUBLICADO CIFRA: SIN EMISOR INSTITUCIONAL NO SE ARBITRA POR
+        MAYORÍA.</code>
+        <br><b>Guardia Nacional y Ejército</b> acordonaron el sitio a la espera de la Fiscalía.
+        <b>Cero detenidos</b> al cierre. <b>Armamento</b>: <code>NO PUBLICADO.</code>
+        <br><b>Segundo ataque del corte contra un espacio deportivo comunitario</b>, tras Las Granjas.
+        <code>LA VINCULACIÓN ENTRE AMBOS NO ESTÁ ACREDITADA Y NO SE AFIRMA.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-003</code> · <b>Confianza</b>: 🟠 Bajo (★★☆☆☆), <b>la fija el campo peor
+        sostenido</b> —cifra de muertos contradicha y sin ninguna fuente institucional— ·
+        <b>Hecho</b>: 2026-09-20, ~16:00 · <b>Publicación</b>: 2026-09-20 y 2026-09-21 ·
+        <b>Consulta</b>: 2026-09-21, 08:57 CDMX · <b>Estatus</b>: Pendiente de corroboración institucional.
+        <br><b>Fuentes — Institucional (0)</b>. <code>LA FGE DE GUANAJUATO NO PUBLICÓ CIFRA EXACTA.</code>
+        <b>Nacional (4)</b>, <b>3 con fecha en la ruta</b>: La Silla Rota · El Financiero · Periódico AM.
+        <b>Regional (3)</b>, <b>1 con fecha en la ruta</b>: Periódico Correo.
+        <b>Lista íntegra en el archivo de fuentes.</b>
+        <br><code>DESLINDE:</code> <b>ni «Valle de Santiago» ni «Duranes» figuran en el índice</b>, que
+        cubre de <b>ARGOS 91 en adelante</b>.
+        <br><b>Calendario verificado</b>: 20-sep domingo.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-122-013">
+    <div class="nota-header"><h3>GUANAJUATO · SAN JOSÉ ITURBIDE — 59 MILLONES DE LITROS DE HIDROCARBURO ILÍCITO EN UN SOLO INMUEBLE: EL MAYOR DECOMISO DE COMBUSTIBLE ROBADO DE LA ADMINISTRACIÓN</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Jueves 17-sep</b> · <b>San José Iturbide, Guanajuato</b> · <b>cateo por orden de juez
+        federal</b> en un inmueble.
+        <br><b>Asegurado</b>: <b>gasolina Magna 33,504,067.406 L</b> · <b>Premium 7,266,813.6174 L</b> ·
+        <b>diésel 18,265,989.504 L</b>. <b>Suma: 59,036,870.527 litros</b> —
+        <code>CÁLCULO PROPIO DE ARGOS: EL EMISOR PUBLICA EL DESGLOSE, NO EL TOTAL.</code>
+        <br>También: <b>10 tanques de almacenamiento</b> · <b>3 unidades de carga</b> · contenedores ·
+        documentación · vehículos. <b>Sin detenidos publicados.</b>
+        <b>Armamento</b>: <code>NO PUBLICADO. NO ALIMENTA EL CONTEO.</code>
+        <br><b>Origen de la investigación</b>: <b>3-jul</b>, detención de una persona que descargaba
+        combustible en una gasolinera de <b>San Luis de la Paz</b>.
+        <br><b>Es 35 veces el récord estatal anterior</b>: <b>1.65 millones de litros</b>, carretera
+        Silao-San Felipe, <b>octubre de 2025</b>.
+        <code>ATRIBUCIÓN NO ADOPTADA:</code> la <b>titularidad de la planta</b> y <b>los permisos que la
+        ampararon</b>, publicados por una cobertura y no acreditados por el emisor.
+        <br><code>FRONTERA DE VENTANA — HORA NO FIJADA:</code> el hecho es del <b>17-sep</b> y esta
+        ventana abre ese día a las <b>17:36</b>. <b>Se integra a la edición que lo ve primero, con la
+        marca, que es PERMANENTE.</b>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-013</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —ninguna página se leyó íntegra— · <b>Hecho</b>: 2026-09-17, hora no fijada ·
+        <b>Publicación</b>: 2026-09-17 y 2026-09-18 · <b>Consulta</b>: 2026-09-21, 08:57 CDMX ·
+        <b>Estatus</b>: Confirmado por fuente institucional citada.
+        <br><b>Fuentes — Institucional (2, por cita)</b>: FGR · Gabinete de Seguridad
+        <code>(BOLETÍN DEL 17-SEP; gob.mx/sspc NO INDEXADO, SUSTITUCIÓN POR REPUBLICADORES, ANOTADA).</code>
+        <b>Nacional (5)</b>, <b>4 con fecha en la ruta</b>: La Jornada · Infobae · El Informador ·
+        Diario de Yucatán. <b>Regional (2)</b>. <b>Lista íntegra en el archivo de fuentes.</b>
+        <br><code>DESLINDE:</code> <b>«San José Iturbide» no figura en el índice</b>, que cubre de
+        ARGOS 91 en adelante. <b>No es</b> el aseguramiento de <b>150,000 litros de Centro, Tabasco</b>
+        (<code>ARG-122-017</code>), del mismo boletín y del mismo día: <b>otra entidad y otro volumen;
+        no se suman.</b>
+        <br><b>Calendario verificado</b>: 17-sep jueves.
+      </div>
+    </div>
+  </div>
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-09-21 · Hora: 08:57 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 122</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- ============ PÁGINA 4 — CRIMEN ORGANIZADO (II) ============ -->
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (II) — CHIAPAS Y OAXACA: UN ATAQUE ORDENADO DESDE PRISIÓN Y SUS QUINCE DETENIDOS</h2></div>
+
+  <div class="nota" id="ARG-122-001">
+    <div class="nota-header"><h3>CHIAPAS · TUXTLA GUTIÉRREZ — AGRESORES EN MOTOCICLETA DISPARAN CONTRA UNA CANCHA DE FUTBOL EN LAS GRANJAS: TRES MUERTOS Y UN NIÑO DE 10 AÑOS HERIDO EN LA CABEZA</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Viernes 18-sep, noche</b> · <b>colonia LAS GRANJAS, Tuxtla Gutiérrez, Chiapas</b> ·
+        <b>cancha de futbol</b> · agresores <b>a bordo de una motocicleta</b> disparan contra un grupo
+        reunido.
+        <br><b>Muertos: DOS HOMBRES Y UNA MUJER.</b> <b>Heridos: TRES</b>, entre ellos <b>un niño con
+        disparo en la cabeza</b>.
+        <br><code>EDAD DEL MENOR CONTRADICHA Y ARBITRADA POR PROCEDENCIA:</code> se adopta <b>10 años</b>,
+        la cifra <b>atribuida expresamente al Fiscal General de Chiapas</b>, frente a los <b>12</b> de
+        otra cobertura.
+        <br><b>Móvil publicado por la FGE</b>: <b>disputa por el control de puntos de venta de droga al
+        menudeo en la zona norte-oriente de la ciudad</b>.
+        <br><b>Armamento del hecho</b>: <code>NO PUBLICADO.</code> El <b>arma corta asegurada</b>
+        corresponde a las detenciones posteriores y va en <code>ARG-122-ARM-006</code>.
+        <br><code>UN DELITO Y SU DETENCIÓN SON DOS EVENTOS:</code> las <b>quince detenciones</b> son
+        <code>ARG-122-008</code>, en verde, y <b>no se suman a éste</b>.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-001</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —edad del menor contradicha, sin boletín propio de la FGE— ·
+        <b>Hecho</b>: 2026-09-18, noche sin minuto fijado · <b>Publicación</b>: 2026-09-19 al 2026-09-21 ·
+        <b>Consulta</b>: 2026-09-21, 08:57 CDMX · <b>Estatus</b>: Parcialmente corroborado.
+        <br><b>Fuentes — Institucional (1, por cita del Fiscal General, sin comunicado indexado)</b>:
+        FGE Chiapas. <code>fge.chiapas.gob.mx SIN RESULTADO INDEXADO EN VENTANA; SUSTITUCIÓN POR
+        BÚSQUEDA DIRIGIDA, ANOTADA.</code> <b>Nacional (5)</b>, <b>3 con fecha en la ruta</b>:
+        Infobae · El Heraldo de México · La Silla Rota. <b>Regional (3)</b>, <b>2 con fecha en la
+        ruta</b>: Alerta Chiapas · ZOLO Noticias. <b>Lista íntegra en el archivo de fuentes.</b>
+        <br><code>DESLINDE:</code> <b>«Las Granjas» no figura en el índice</b>, que cubre de ARGOS 91 en
+        adelante. <b>No es</b> <code>ARG-120-016</code> (Tapachula, 15-sep) ni el hecho de
+        <b>Tuxtla Gutiérrez del 7-sep</b> citado en su deslinde. <code>UN TITULAR HABLA DE «DOS ATAQUES
+        EN CANCHAS EN MENOS DE DOS SEMANAS»: EL SEGUNDO HECHO NO SE FUSIONA NI SE DA POR VERIFICADO.</code>
+        <br><b>Calendario verificado</b>: 18-sep viernes.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-122-008">
+    <div class="nota-header"><h3>CHIAPAS · TUXTLA GUTIÉRREZ — QUINCE DETENIDOS POR EL ATAQUE DE LAS GRANJAS: LA ORDEN SE HABRÍA GIRADO DESDE EL PENAL DE OCOSINGO POR UN SENTENCIADO POR HOMICIDIO</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>20 y 21-sep</b> · <b>Tuxtla Gutiérrez, Chiapas</b> · <b>FGE Chiapas</b> ·
+        <b>15 PERSONAS DETENIDAS</b> por el ataque de Las Granjas.
+        <br><b>Autores materiales señalados</b>: <b>JESÚS «N», 21 años</b>, que habría conducido la
+        motocicleta, y <b>UN ADOLESCENTE DE 17 AÑOS</b>, que habría accionado el arma.
+        <br><b>Autores intelectuales señalados</b>: <b>JOSÉ LUIS «N», «EL BEBÉ», 32 años</b>, descrito
+        como <b>líder de la célula que controla los puntos de venta al menudeo de la zona</b>; y
+        <b>LIMBERG «N», «EL HUESO»</b>, <b>que ya cumple sentencia por homicidio calificado en el
+        PENAL DE OCOSINGO</b> y <b>habría ordenado el ataque desde prisión</b>.
+        <br><b>Asegurado</b>: <b>1 ARMA CORTA</b> · 1 motocicleta · cascos.
+        <br><code>LOS QUINCE DETENIDOS NO SE INTEGRAN AL CONTEO DE ARMAMENTO:</code> el emisor <b>no
+        desglosa cuántos fueron detenidos en el mismo evento de aseguramiento</b>, y un agregado de
+        capturas no atribuye detenidos a un aseguramiento concreto.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-008</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —sin boletín propio indexado de la FGE— · <b>Hecho</b>: 2026-09-20 y 2026-09-21,
+        hora no fijada · <b>Publicación</b>: 2026-09-20 y 2026-09-21 · <b>Consulta</b>: 2026-09-21,
+        08:57 CDMX · <b>Estatus</b>: Parcialmente corroborado.
+        <br><b>Fuentes — Institucional (1, por cita del Fiscal General JORGE LUIS LLAVEN ABARCA)</b>:
+        FGE Chiapas. <b>Nacional (4)</b>, <b>1 con fecha en la ruta</b>: Infobae.
+        <b>Regional (4)</b>, <b>3 con fecha en la ruta</b>: Alerta Chiapas · El Sol del Soconusco ·
+        KCH Comunicación. <b>Lista íntegra en el archivo de fuentes.</b>
+        <br><code>UN DELITO Y SU DETENCIÓN SON DOS EVENTOS:</code> el ataque es
+        <code>ARG-122-001</code>, en rojo, y <b>no se suma a éste</b>.
+        <code>ATRIBUCIONES DE AUTORÍA NO ADOPTADAS COMO HECHO PROBADO:</code> la calidad de autor
+        material o intelectual la <b>señala la Fiscalía</b> y <b>no hay resolución judicial</b>.
+        <br><b>Calendario verificado</b>: 20-sep domingo · 21-sep lunes.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-122-006">
+    <div class="nota-header"><h3>OAXACA · JUCHITÁN DE ZARAGOZA — DISPAROS CONTRA LA FACHADA DE LA VIVIENDA Y TALLER DE UN ARTISTA MUXE: LA FGE LO ATRIBUYE A UN INTENTO DE EXTORSIÓN PREVIO</h3><span class="risk-flag medio">AMARILLO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Viernes 18-sep, noche</b> · <b>Juchitán de Zaragoza, Oaxaca</b> · <b>un hombre y una mujer a
+        bordo de una motocicleta</b> disparan contra la <b>fachada de la vivienda y taller de ELVIS
+        GUERRA, diseñador y artista muxe</b>.
+        <br><b>Sin heridos ni muertos</b> · <b>daño material</b>.
+        <br><b>La FGE de Oaxaca atribuye el ataque a un INTENTO DE EXTORSIÓN PREVIO</b> e informa haber
+        <b>identificado a presuntos responsables</b>. <b>Cero detenidos</b> al cierre.
+        <b>Armamento</b>: <code>NO PUBLICADO.</code>
+        <br><code>CONTEXTO PUBLICADO Y NO ADOPTADO COMO MÓVIL:</code> la víctima <b>vistió a la
+        Presidenta para el Grito de Independencia</b>; <b>ninguna autoridad vincula ese hecho con el
+        ataque y ARGOS tampoco lo vincula</b>.
+        <br><b>Amarillo</b>: agresión armada focalizada <b>sin víctimas</b>.
+        <code>NO CONCURRE NINGUNA AGRAVANTE DE LA LISTA ROJA.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-006</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆) · <b>Hecho</b>: 2026-09-18,
+        noche sin minuto fijado · <b>Publicación</b>: 2026-09-19 · <b>Consulta</b>: 2026-09-21,
+        08:57 CDMX · <b>Estatus</b>: Parcialmente corroborado.
+        <br><b>Fuentes — Institucional (1, por cita)</b>: FGE Oaxaca.
+        <code>EL DOMINIO CORRECTO ES fge.oaxaca.gob.mx; fiscaliaoaxaca.gob.mx, USADO EN CORTES
+        ANTERIORES, NO INDEXA. CORRECCIÓN ANOTADA.</code> <b>Nacional (1)</b>, <b>con fecha en la
+        ruta</b>: Infobae. <b>Regional (2)</b>, <b>1 con fecha en la ruta</b>: El Heraldo de México —
+        Oaxaca. <b>Lista íntegra en el archivo de fuentes.</b>
+        <br><code>DESLINDE:</code> <b>«Juchitán» no figura en el índice</b>, que cubre de ARGOS 91 en
+        adelante.
+        <br><b>Calendario verificado</b>: 18-sep viernes.
+      </div>
+    </div>
+  </div>
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-09-21 · Hora: 08:57 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 122</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- ============ PÁGINA 5 — CRIMEN ORGANIZADO (III) ============ -->
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (III) — NOROESTE: AGRESIÓN A PERSONAL FEDERAL EN LA SIERRA Y ARSENAL EN UNA CASA DE SEGURIDAD DE PUERTO PEÑASCO</h2></div>
+
+  <div class="nota" id="ARG-122-005">
+    <div class="nota-header"><h3>SINALOA · SIERRA EN LÍMITES CON DURANGO — CIVILES ARMADOS EN SEIS CAMIONETAS AGREDEN A PERSONAL DE LA SEMAR Y DE LA SSPC FEDERAL EN RECORRIDO DE VIGILANCIA</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Sábado 19-sep</b> · <b>zona serrana de Sinaloa, en los límites con Durango</b> ·
+        <b>civiles armados a bordo de SEIS CAMIONETAS</b> <b>agreden con armas de fuego</b> a personal
+        de la <b>SEMAR</b> y de la <b>SSPC federal</b> que realizaba <b>recorridos de vigilancia</b>.
+        <br><b>Sin bajas publicadas del lado institucional.</b>
+        <br><code>MUNICIPIO NO ESPECIFICADO POR NINGUNA FUENTE:</code> el dato <b>no es explotable para
+        patrullaje sin él</b> y <b>no se infiere</b>.
+        <br><b>Rojo por quién inicia</b>: <b>el grupo criminal agrede a personal en patrullaje</b>; es la
+        fila roja de la tabla, <b>no un operativo repelido</b>.
+        <br><code>UN DELITO Y SU RESPUESTA SON DOS EVENTOS:</code> el aseguramiento y las nueve
+        detenciones son <code>ARG-122-009</code>, en verde, y <b>no se suman a éste</b>.
+        <br><code>ATRIBUCIÓN NO ADOPTADA:</code> la adscripción de los agresores a <b>una facción del
+        Cártel de Sinaloa</b> la publican los medios, <b>no un comunicado</b>.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-005</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —municipio no especificado— · <b>Hecho</b>: 2026-09-19, hora no fijada ·
+        <b>Publicación</b>: 2026-09-19 y 2026-09-20 · <b>Consulta</b>: 2026-09-21, 08:57 CDMX ·
+        <b>Estatus</b>: Parcialmente corroborado.
+        <br><b>Fuentes — Institucional (2, por cita)</b>: SSPC federal · SEMAR.
+        <code>SIN BOLETÍN PROPIO INDEXADO EN gob.mx PARA ESTA FECHA.</code>
+        <b>Nacional (4)</b>, <b>3 con fecha en la ruta</b>: Proceso · El Heraldo de México · La Silla
+        Rota. <b>Regional (3)</b>, <b>2 con fecha en la ruta</b>: Tribuna · En Blanco y Negro.
+        <b>Lista íntegra en el archivo de fuentes.</b>
+        <br><code>DESLINDE:</code> la sierra de Sinaloa <b>sí figura en el índice por municipio</b> —
+        <code>ARG-119-010</code> y <code>ARG-119-ARM-007</code> (Tamazula)—, pero
+        <b>aquí el municipio no está publicado</b>: <b>no se identifica caso por región compartida</b>.
+        <br><b>Calendario verificado</b>: 19-sep sábado.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-122-009">
+    <div class="nota-header"><h3>SINALOA · SIERRA EN LÍMITES CON DURANGO — NUEVE DETENIDOS, 17 ARMAS LARGAS CON UNA AMETRALLADORA, 127 CARGADORES Y 40 ARTEFACTOS EXPLOSIVOS IMPROVISADOS</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Sábado 19-sep</b> · <b>zona serrana de Sinaloa, límites con Durango</b> ·
+        <b>SEMAR y SSPC federal</b>, <b>repelida la agresión</b>, detienen a <b>9 PERSONAS, ENTRE ELLAS
+        UN MENOR DE EDAD</b>.
+        <br><b>Asegurado</b>: <b>17 ARMAS LARGAS</b>, <b>incluida UNA AMETRALLADORA</b> ·
+        <b>127 CARGADORES</b> · <b>LANZAGRANADAS</b>, <code>CANTIDAD NO DETERMINADA</code> ·
+        <b>40 ARTEFACTOS EXPLOSIVOS IMPROVISADOS</b> · <b>cartuchos</b>,
+        <code>SIN CIFRA PUBLICADA</code> · equipo táctico.
+        <br><b>Es el mayor volumen de armas largas, de cargadores y de AEI del corte.</b>
+        <code>CARGADORES Y CARTUCHOS NUNCA SE SUMAN ENTRE SÍ.</code>
+        <br>Acción inserta en el <b>refuerzo de seguridad desplegado en Mazatlán y otras regiones</b> por
+        el Gabinete de Seguridad.
+        <br><code>DESLINDE OBLIGATORIO POR CATEGORÍA RECURRENTE:</code> <b>NO son los 53 AEI de
+        MAZATLÁN</b> del <b>15-sep</b> (<code>ARG-121-REC-003</code>, SEDENA, dos contenedores
+        abandonados, sin detenidos) <b>ni los 84 de LA NORIA DE SAN ANTONIO</b> del <b>8-sep</b>
+        (SEMAR, Operación Sable): <b>otra fecha, otra cifra, otra corporación y otra modalidad</b>.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-009</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —municipio no especificado y cartuchos sin cifra— · <b>Hecho</b>: 2026-09-19,
+        hora no fijada · <b>Publicación</b>: 2026-09-19 y 2026-09-20 · <b>Consulta</b>: 2026-09-21,
+        08:57 CDMX · <b>Estatus</b>: Parcialmente corroborado.
+        <br><b>Fuentes — Institucional (2, por cita)</b>: SSPC federal · SEMAR.
+        <b>Nacional (4)</b>, <b>3 con fecha en la ruta</b>: Proceso · El Heraldo de México · La Silla
+        Rota. <b>Regional (4)</b>, <b>2 con fecha en la ruta</b>: En Blanco y Negro · Los Noticieristas.
+        <b>Lista íntegra en el archivo de fuentes.</b>
+        <br><code>UN DELITO Y SU RESPUESTA SON DOS EVENTOS:</code> la agresión es
+        <code>ARG-122-005</code>, en rojo. <b>Conteo de armamento</b>: <code>ARG-122-ARM-001</code>.
+        <br><b>Calendario verificado</b>: 19-sep sábado.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-122-007">
+    <div class="nota-header"><h3>SONORA · PUERTO PEÑASCO — CASA DE SEGURIDAD EN CERRADA DEL SOL: SIETE DETENIDOS Y TRES SECUESTRADOS RESCATADOS EL 18, Y UN ARSENAL CON TRES AMETRALLADORAS EN EL CATEO DEL 19</h3><span class="risk-flag medio">AMARILLO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Viernes 18-sep</b> · <b>Puerto Peñasco, Sonora</b> · elementos <b>estatales y federales</b>
+        despliegan un operativo con <b>tiroteo y persecución a pie</b> y aseguran una
+        <b>CASA DE SEGURIDAD</b> en el <b>fraccionamiento CERRADA DEL SOL</b>.
+        <br><b>TRES PERSONAS PRIVADAS DE LA LIBERTAD, RESCATADAS CON VIDA</b>, de <b>OCHO SECUESTRADAS
+        DEDICADAS A LA MINERÍA ARTESANAL EN LA REGIÓN DE SIERRA PINTA</b>, cuya investigación originó
+        el operativo. <b>Las otras cinco: <code>SIN PARADERO PUBLICADO.</code></b>
+        <br><code>DETENIDOS CONTRADICHOS Y ARBITRADOS POR PROCEDENCIA:</code> se adoptan <b>7</b>, la
+        cifra <b>atribuida expresamente al titular de la SSPC federal</b>, frente a los <b>10</b> de la
+        cobertura regional.
+        <br><b>Sábado 19-sep</b> · <b>SEGUNDA INTERVENCIÓN CON ORDEN DE CATEO</b> de un <b>Juez de
+        Control Penal Oral del Primer Distrito Judicial del Estado</b>. <b>Asegurado</b>:
+        <b>«MÁS DE 40 ARMAS LARGAS»</b>, incluidas <b>DOS AMETRALLADORAS MINIMI</b> ·
+        <b>CINCO ARMAS CORTAS</b> · <b>UNA AMETRALLADORA BROWNING M-2 CAL. .50</b> ·
+        <b>calibres 5.56, .223 y 7.62×39</b> · <b>«casi cuatro mil» cartuchos</b> ·
+        <b>ARTEFACTOS EXPLOSIVOS IMPROVISADOS</b>, sin cifra · equipo táctico · heroína ·
+        <b>vehículos de gama alta con reporte de robo en Estados Unidos</b>.
+        <br><b>La noche del 19 y la madrugada del 20 se ejecutaron DOS CATEOS MÁS.</b>
+        <br><code>ARMAS LARGAS: SOLO SE INTEGRAN LAS DOS MINIMI, ÚNICA CANTIDAD EXPRESA. «MÁS DE 40»
+        NO ES CIFRA, Y LA CIFRA PRELIMINAR DE 33 QUEDÓ SUPERADA POR EL RELATO POSTERIOR DE LA
+        AUTORIDAD.</code> <b>Cartuchos y AEI</b>: <code>CANTIDAD NO DETERMINADA.</code>
+        <br><code>LOS SIETE DETENIDOS SON DEL OPERATIVO DEL 18 Y EL ARSENAL DEL CATEO DEL 19: NO SE
+        INTEGRAN AL CONTEO DE ARMAMENTO, QUE SOLO CUENTA DETENIDOS DEL MISMO EVENTO DE ASEGURAMIENTO.</code>
+        <br><b>Amarillo</b>: <b>confrontación derivada de un operativo que inició la autoridad</b>.
+        <code>EL NÚMERO DE DETENIDOS NO MUEVE EL COLOR.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-007</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —el grueso de las armas largas y los cartuchos publicados con «más de» y «casi»— ·
+        <b>Hecho</b>: 2026-09-18 (operativo y detenciones) y <b>2026-09-19</b> (cateo y arsenal), horas
+        no fijadas · <b>Publicación</b>: 2026-09-20 y 2026-09-21 · <b>Consulta</b>: 2026-09-21,
+        08:57 CDMX · <b>Estatus</b>: Parcialmente corroborado.
+        <br><b>Fuentes — Institucional (2, por cita)</b>: titular de la SSPC federal · Juzgado de
+        Control Penal Oral del Primer Distrito Judicial.
+        <code>SIN BOLETÍN PROPIO DE ssp.sonora.gob.mx NI DE gob.mx INDEXADO EN VENTANA.</code>
+        <b>Nacional (4)</b>, <b>2 con fecha en la ruta</b>: La Silla Rota · El Heraldo de México.
+        <b>Regional (6)</b>, <b>4 con fecha en la ruta</b>: El Imparcial · Proyecto Puente ·
+        RED Michoacán · En Blanco y Negro. <b>Lista íntegra en el archivo de fuentes.</b>
+        <br><code>DESLINDE:</code> <b>«Puerto Peñasco» no figura en el índice</b>, que cubre de ARGOS 91
+        en adelante. <b>Conteo de armamento</b>: <code>ARG-122-ARM-002</code>, <b>fechado el 19-sep</b>.
+        <br><b>Calendario verificado</b>: 18-sep viernes · 19-sep sábado · 20-sep domingo.
+      </div>
+    </div>
+  </div>
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-09-21 · Hora: 08:57 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 122</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- ============ PÁGINA 6 — CRIMEN ORGANIZADO (IV) ============ -->
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (IV) — NORESTE, CENTRO Y GOLFO: UN BARRETT CAL. .50, DOS CATEOS URBANOS Y UNA CASA DE SEGURIDAD CON GRANADAS</h2></div>
+
+  <div class="nota" id="ARG-122-004">
+    <div class="nota-header"><h3>NUEVO LEÓN · LOS ALDAMAS — SUJETOS ARMADOS DISPARAN CONTRA FUERZA CIVIL EN PATRULLAJE DEL OPERATIVO MURALLA: CUATRO ABATIDOS Y UN FUSIL BARRETT CAL. .50 ASEGURADO</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Sábado 19-sep</b> · <b>Los Aldamas, Nuevo León</b> · <b>Fuerza Civil</b>,
+        <b>OPERATIVO MURALLA</b> · sujetos armados <b>disparan contra el personal al ser detectados
+        durante el patrullaje</b>.
+        <br><b>4 AGRESORES ABATIDOS</b> · <b>cero detenidos</b> · <b>cero policías heridos</b>.
+        <br><b>Asegurado</b>: <b>4 ARMAS LARGAS</b>, una identificada como <b>FUSIL BARRETT CAL. .50</b> ·
+        <b>1 vehículo</b> · <b>equipo táctico</b> · <b>cargadores y cartuchos</b>,
+        <code>SIN CIFRA PUBLICADA EN NINGUNA COBERTURA: NO SE INTEGRAN Y NO SE INFIEREN.</code>
+        <br><b>Rojo por quién inicia</b>: <b>agresión contra personal en patrullaje</b>.
+        <code>EL NÚMERO DE ABATIDOS NO MUEVE EL COLOR, NI AL ALZA NI A LA BAJA.</code>
+        <br><b>Sin comunicado propio</b> de Fuerza Civil ni del gobierno de Nuevo León.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-004</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —munición sin cifra y sin comunicado propio— · <b>Hecho</b>: 2026-09-19, hora no
+        fijada · <b>Publicación</b>: 2026-09-19 · <b>Consulta</b>: 2026-09-21, 08:57 CDMX ·
+        <b>Estatus</b>: Parcialmente corroborado.
+        <br><b>Fuentes — Institucional (1, por cita, sin comunicado)</b>: Fuerza Civil NL.
+        <b>Nacional (4)</b>, <b>2 con fecha en la ruta</b>: El Universal · MVS Noticias.
+        <b>Regional (3)</b>. <b>Lista íntegra en el archivo de fuentes.</b>
+        <br><code>DESLINDE OBLIGATORIO POR OPERATIVO RECURRENTE:</code> <b>NO es</b>
+        <code>ARG-120-002</code> ni <code>ARG-120-ARM-003</code> (<b>General Treviño, 14-sep, 7 armas,
+        2 detenidos, siete abatidos, mismo Operativo Muralla</b>): <b>otro municipio, otra fecha y otro
+        desglose</b>. <code>«LOS ALDAMAS» NO FIGURA EN EL ÍNDICE, QUE CUBRE DE ARGOS 91 EN ADELANTE.</code>
+        <code>LAS TRES VINCULACIONES A PROCESO DEL 15-SEP POR EL HECHO DE GENERAL TREVIÑO SON
+        SEGUIMIENTO JUDICIAL DE AQUÉL, NO UN ASEGURAMIENTO NUEVO: NO SE INTEGRAN.</code>
+        <br><b>Calendario verificado</b>: 19-sep sábado.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-122-010">
+    <div class="nota-header"><h3>CIUDAD DE MÉXICO · IZTAPALAPA — DOS CATEOS VINCULADOS A «LA UNIÓN TEPITO» CON TRES DETENIDOS, DOS ARMAS CORTAS Y CUATRO LARGAS</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Viernes 18-sep</b> · <b>Iztapalapa, Ciudad de México</b> · <b>SSC capitalina</b> y
+        <b>FGJ CDMX</b>, con apoyo de <b>Guardia Nacional</b> y <b>SEMAR</b> · <b>cateo de DOS
+        INMUEBLES</b> vinculados a <b>«LA UNIÓN TEPITO»</b>.
+        <br><b>3 DETENIDOS</b>: <b>una mujer de 61 años</b> y <b>dos hombres, de 63 y 41</b>.
+        <br><b>Asegurado</b>: <b>2 ARMAS CORTAS</b> · <b>4 ARMAS LARGAS</b> ·
+        <b>cartuchos y cargadores</b>, <code>NO PUBLICADOS.</code>
+        <br>En rubro aparte: <b>4 kg de marihuana</b> y <b>metanfetamina a granel</b>.
+        <br><code>NINGUNA DE LAS SEIS ARMAS LLEVA CALIBRE NI NÚMERO DE SERIE PUBLICADOS.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-010</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —sin boletín institucional indexado— · <b>Hecho</b>: 2026-09-18, hora no fijada ·
+        <b>Publicación</b>: 2026-09-18 · <b>Consulta</b>: 2026-09-21, 08:57 CDMX ·
+        <b>Estatus</b>: Parcialmente corroborado.
+        <br><b>Fuentes — Institucional (2, por cita)</b>: SSC CDMX · FGJ CDMX.
+        <code>site:ssc.cdmx.gob.mx SIN RESULTADO INDEXADO EN VENTANA PARA ESTE EVENTO; SUSTITUCIÓN
+        ANOTADA.</code> <b>Nacional (4)</b>, <b>todas con fecha en la ruta</b>: El Heraldo de México ·
+        El Financiero · La Razón · La Silla Rota. <b>Regional (1)</b>, <b>con fecha en la ruta</b>:
+        Central Municipal. <b>Lista íntegra en el archivo de fuentes.</b>
+        <br><code>DESLINDE:</code> <b>NO es el doble homicidio del mercado 14 de TEPITO del 16-sep</b>,
+        que es de <b>la ventana anterior</b> y <b>sigue sin boletín</b> de la SSC ni de la FGJ CDMX,
+        con <b>edades de las víctimas contradichas en tres versiones</b>.
+        <br><b>Calendario verificado</b>: 18-sep viernes.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-122-011">
+    <div class="nota-header"><h3>VERACRUZ · TEMPOAL — CASA DE SEGURIDAD SOBRE LA CARRETERA A HUEJUTLA CON 59,400 BOLSAS DE DROGA, ARMAS Y GRANADAS, Y CERO DETENIDOS</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Domingo 20-sep</b> · <b>carretera Tempoal-Huejutla de Reyes, Tempoal, Veracruz</b>, en el
+        <b>límite con Hidalgo</b> · <b>FGE de Veracruz —trilogía investigadora: fiscales, peritos y
+        policías ministeriales—</b> con <b>SEDENA</b>, <b>Guardia Nacional</b> y <b>SSP estatal</b> ·
+        <b>cateo por orden judicial</b> en un inmueble descrito como <b>casa de seguridad</b>.
+        <br><b>Asegurado</b>: <b>69 BOLSAS EMPAQUETADAS</b> que contenían <b>59,400 BOLSAS HERMÉTICAS
+        de sustancias prohibidas</b> · <b>ARMAS DE FUEGO</b> · <b>MATERIAL BALÍSTICO</b> ·
+        <b>GRANADAS</b>.
+        <br><b>CERO DETENIDOS</b>, <b>expreso en el boletín</b>.
+        <br><code>ARMAS, MATERIAL BALÍSTICO Y GRANADAS SIN CIFRA NI CALIBRE: CANTIDAD NO DETERMINADA,
+        NO SE INTEGRA AL TOTAL NUMÉRICO.</code> <b>La presencia de granadas sí se registra: es la única
+        del corte.</b>
+        <br><b>La FGR anunció que atraerá el caso</b> por volumen y calibre.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-011</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —ninguna categoría de armamento lleva cifra— · <b>Hecho</b>: 2026-09-20, hora no
+        fijada · <b>Publicación</b>: 2026-09-20 y 2026-09-21 · <b>Consulta</b>: 2026-09-21, 08:57 CDMX ·
+        <b>Estatus</b>: Parcialmente corroborado.
+        <br><b>Fuentes — Institucional (2, por cita)</b>: FGE Veracruz · FGR.
+        <b>Nacional (2)</b>, <b>1 con fecha en la ruta</b>: Infobae. <b>Regional (6)</b>, <b>1 con
+        fecha en la ruta</b>: La Clave Online. <b>Lista íntegra en el archivo de fuentes.</b>
+        <br><code>DESLINDE OBLIGATORIO:</code> <b>Tempoal SÍ figura en el índice</b>, que cubre de
+        ARGOS 91 en adelante — <code>ARG-116-005</code> y <code>ARG-116-ARM-004</code>, <b>cateo del
+        4-sep con 3 detenidos y más de 15 millones de pesos en efectivo</b>—. <b>No es ese hecho</b>:
+        <b>otra fecha, otros detenidos —cero frente a tres— y otro objeto asegurado</b>.
+        <br><b>Calendario verificado</b>: 20-sep domingo.
+      </div>
+    </div>
+  </div>
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-09-21 · Hora: 08:57 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 122</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- ============ PÁGINA 7 — CRIMEN ORGANIZADO (V) ============ -->
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (V) — MICHOACÁN Y TABASCO: EL BOLETÍN FEDERAL DEL 17-SEP Y UNA RECUPERACIÓN DE LA VENTANA ANTERIOR</h2></div>
+
+  <div class="nota" id="ARG-122-REC-002" style="opacity:.78;">
+    <div class="nota-header"><h3>MICHOACÁN · ANGAMACUTIRO Y PURUÁNDIRO — 28 INMUEBLES INTERVENIDOS Y 18 DETENIDOS, ENTRE ELLOS EL DIRECTOR DE LA POLICÍA MUNICIPAL DE ANGAMACUTIRO Y TRES AGENTES</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Jueves 17-sep</b> · <b>Angamacutiro y Puruándiro, Michoacán</b> · <b>FGE Michoacán</b> con
+        la <b>Guardia Civil</b> y <b>fuerzas federales</b>.
+        <br><b>28 INMUEBLES INTERVENIDOS</b> · <b>18 PERSONAS DETENIDAS</b>, entre ellas el
+        <b>DIRECTOR DE LA POLICÍA MUNICIPAL DE ANGAMACUTIRO</b> y <b>TRES POLICÍAS MÁS</b>.
+        <br><b>Asegurado</b>: <b>armas cortas y largas</b> y <b>cartuchos útiles</b>,
+        <code>TODOS SIN CANTIDAD PUBLICADA: EVENTO CUALITATIVO, NO SE INTEGRA AL TOTAL NUMÉRICO.</code>
+        <br><code>CIFRA ANTES DECLARADA Y NO ADOPTADA, QUE AHORA SE ADOPTA:</code> ARGOS 121 registró
+        los <b>18 detenidos</b> como <b>atribución de tercero</b> dentro de <code>ARG-121-REC-005</code>.
+        <b>Cuatro coberturas coincidentes la sostienen</b> y <b>precisan el cargo de uno de ellos</b>:
+        <b>queda adoptada</b>. <b>Lo que esta edición añade y no constaba: el cargo de los cuatro
+        policías detenidos.</b>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-REC-002</code> · <b>VENTANA DE ORIGEN: ARGOS 121</b> —<b>el hecho es del 17-sep
+        y <code>ARG-121-REC-005</code> YA CITÓ los 28 cateos y los 18 detenidos, como cifra declarada y
+        no adoptada</b>—. <code>FUERA DEL SEMÁFORO, DEL MAPA, DEL RADAR Y DE TODOS LOS TOTALES DE ESTE
+        CORTE.</code>
+        <br><b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —armamento sin cantidad y sin boletín propio— · <b>Hecho</b>: 2026-09-17, hora no
+        fijada · <b>Publicación</b>: 2026-09-17 y 2026-09-18 · <b>Consulta</b>: 2026-09-21, 08:57 CDMX ·
+        <b>Estatus</b>: Parcialmente corroborado.
+        <br><b>Fuentes — Institucional (1, por cita, sin boletín indexado)</b>: FGE Michoacán.
+        <code>site:fge.michoacan.gob.mx SIN RESULTADO INDEXADO EN VENTANA; SUSTITUCIÓN ANOTADA.</code>
+        <b>Nacional (1)</b>, <b>con fecha en la ruta</b>: Infobae. <b>Regional (3)</b>, <b>2 con fecha
+        en la ruta</b>: Esfera Noticias · RED Michoacán. <b>Lista íntegra en el archivo de fuentes.</b>
+        <br><code>DESLINDE OBLIGATORIO:</code> <b>NO es</b> <code>ARG-121-REC-005</code> —la captura de
+        <b>MANUEL ALEJANDRO RENDÓN AGUILAR, «EL SEÑOR DE LA T», en Morelia el 15-sep</b>, con
+        <b>1 fusil cal. .223 y 4 cargadores</b>—: <b>es el operativo de seguimiento</b>, con
+        <b>otra fecha y otros detenidos</b> —<b>los municipios SÍ son los mismos</b>, y por eso el
+        deslinde es obligatorio—; <b>y su fusil cal. .223 no se recuenta aquí</b>.
+        <br><b>Calendario verificado</b>: 17-sep jueves.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-122-015">
+    <div class="nota-header"><h3>MICHOACÁN · LA PIEDAD — DETENCIÓN DE UN COORDINADOR REGIONAL CON ÓRDENES DE APREHENSIÓN POR HOMICIDIO Y DESAPARICIÓN FORZADA COMETIDA POR PARTICULARES</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Jueves 17-sep</b> · <b>La Piedad, Michoacán</b> · <b>SSPC federal</b>, <b>Ejército
+        Mexicano</b>, <b>SEMAR</b>, <b>FGR</b> y <b>Fiscalía estatal</b>.
+        <br><b>Un hombre detenido</b>, señalado como <b>COORDINADOR REGIONAL DE UN GRUPO CRIMINAL</b>,
+        con <b>órdenes de aprehensión vigentes por HOMICIDIO y DESAPARICIÓN FORZADA COMETIDA POR
+        PARTICULARES</b>.
+        <br><code>NOMBRE NO PUBLICADO POR EL EMISOR: NO SE INFIERE.</code>
+        <br><b>Armamento</b>: <code>NO PUBLICADO. NO ALIMENTA EL CONTEO.</code>
+        <br><b>Renglón del boletín federal del 17-sep.</b>
+        <code>FRONTERA DE VENTANA — HORA NO FIJADA.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-015</code> · <b>Confianza</b>: 🟠 Bajo (★★☆☆☆), <b>la fija el campo peor
+        sostenido</b> —sin nombre, sin cifras y con corroboración solo por republicadores— ·
+        <b>Hecho</b>: 2026-09-17, hora no fijada · <b>Publicación</b>: 2026-09-17 y 2026-09-18 ·
+        <b>Consulta</b>: 2026-09-21, 08:57 CDMX · <b>Estatus</b>: Pendiente de corroboración independiente.
+        <br><b>Fuentes — Institucional (1)</b>: Gabinete de Seguridad, <b>boletín del 17-sep</b>.
+        <code>gob.mx/sspc NO INDEXÓ EL DOCUMENTO; SE ALCANZA SOLO POR REPUBLICADORES Y LA SUSTITUCIÓN
+        SE ANOTA.</code> <b>Nacional (1)</b>: Milenio. <b>Regional (4)</b>, <b>1 con fecha en la
+        ruta</b>: Eleese Noticias. <code>CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN: CUATRO REPUBLICADORES
+        DEL MISMO BOLETÍN NO SON FUENTES INDEPENDIENTES.</code>
+        <br><code>DESLINDE:</code> <b>NO es</b> <code>ARG-121-REC-005</code>: <b>otra persona, otro
+        municipio y otra fecha</b>. <b>«La Piedad» no figura en el índice</b>, que cubre de ARGOS 91 en
+        adelante.
+        <br><b>Calendario verificado</b>: 17-sep jueves.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-122-016">
+    <div class="nota-header"><h3>TABASCO · CENTRO, COLONIA JOSÉ MARÍA PINO SUÁREZ — SEIS DETENIDOS, TRES ARMAS Y UN ACCESORIO LANZAGRANADAS</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Jueves 17-sep</b> · <b>colonia José María Pino Suárez, municipio de Centro, Tabasco</b> ·
+        <b>SEMAR</b>, <b>SEDENA</b>, <b>SSPC federal</b>, <b>FGR</b>, <b>Fiscalía estatal</b> y
+        <b>Policía Estatal</b>.
+        <br><b>6 DETENIDOS.</b>
+        <br><b>Asegurado</b>: <b>2 ARMAS CORTAS</b> · <b>1 ARMA LARGA</b> · <b>15 CARTUCHOS</b> ·
+        <b>3 CARGADORES</b> · <b>1 ACCESORIO LANZAGRANADAS</b> —<b>armamento especial</b>—.
+        <br>En rubro aparte: <b>25 dosis de cocaína</b>, <b>50 de mariguana</b>, <b>40 de
+        metanfetaminas</b>, <b>9 celulares</b>, efectivo y <b>1 vehículo</b>.
+        <br><code>CARGADORES Y CARTUCHOS NUNCA SE SUMAN ENTRE SÍ.</code>
+        <br><b>Renglón del boletín federal del 17-sep.</b>
+        <code>FRONTERA DE VENTANA — HORA NO FIJADA.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-016</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —fuente institucional única sin corroboración independiente— ·
+        <b>Hecho</b>: 2026-09-17, hora no fijada · <b>Publicación</b>: 2026-09-17 y 2026-09-18 ·
+        <b>Consulta</b>: 2026-09-21, 08:57 CDMX · <b>Estatus</b>: Confirmado por fuente institucional,
+        sin corroboración independiente.
+        <br><b>Fuentes — Institucional (1)</b>: Gabinete de Seguridad, <b>boletín del 17-sep</b>.
+        <b>Nacional (0)</b>. <b>Regional (4)</b>, <b>1 con fecha en la ruta</b>: Eleese Noticias.
+        <code>CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN: LOS CUATRO REPUBLICAN EL MISMO TEXTO.</code>
+        <b>Lista íntegra en el archivo de fuentes.</b>
+        <br><code>DESLINDE:</code> <b>NO es</b> <code>ARG-120-ARM-005</code> (<b>Huimanguillo, 13-sep,
+        1 corta, 188 cartuchos, 2 cargadores, 6 detenidos</b>): <b>otro municipio, otra fecha y otro
+        desglose</b>. <b>Conteo de armamento</b>: <code>ARG-122-ARM-005</code>.
+        <br><b>Calendario verificado</b>: 17-sep jueves.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-122-017">
+    <div class="nota-header"><h3>TABASCO · CENTRO, RANCHO PLÁTANO Y CACAO — 150,000 LITROS DE HIDROCARBUROS, SUSTANCIAS QUÍMICAS Y MAQUINARIA INDUSTRIAL, SIN DETENIDOS</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Jueves 17-sep</b> · <b>rancho Plátano y Cacao, municipio de Centro, Tabasco</b> ·
+        <b>SSPC federal</b>, <b>SEDENA</b>, <b>SEMAR</b> y <b>FGR</b> · <b>cateo de un predio</b>.
+        <br><b>Asegurado</b>: <b>150,000 LITROS DE HIDROCARBUROS</b> · <b>sustancias químicas</b> ·
+        <b>vehículos</b> · <b>maquinaria industrial</b>.
+        <br><b>Sin detenidos publicados.</b> <b>Armamento</b>: <code>NO PUBLICADO. NO ALIMENTA EL
+        CONTEO.</code>
+        <br><b>Segundo aseguramiento de hidrocarburo del mismo boletín y del mismo día</b>, tras los
+        <b>59 millones de litros de San José Iturbide</b> (<code>ARG-122-013</code>):
+        <code>SON EVENTOS DISTINTOS Y NO SE SUMAN.</code>
+        <br><b>Renglón del boletín federal del 17-sep.</b>
+        <code>FRONTERA DE VENTANA — HORA NO FIJADA.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-017</code> · <b>Confianza</b>: 🟠 Bajo (★★☆☆☆), <b>la fija el campo peor
+        sostenido</b> —fuente institucional única, sin corroboración independiente y sin detenidos ni
+        carpeta publicados— · <b>Hecho</b>: 2026-09-17, hora no fijada ·
+        <b>Publicación</b>: 2026-09-17 y 2026-09-18 · <b>Consulta</b>: 2026-09-21, 08:57 CDMX ·
+        <b>Estatus</b>: Pendiente de corroboración independiente.
+        <br><b>Fuentes — Institucional (1)</b>: Gabinete de Seguridad, <b>boletín del 17-sep</b>.
+        <b>Nacional (0)</b>. <b>Regional (4)</b>, <b>1 con fecha en la ruta</b>: Eleese Noticias.
+        <code>CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN.</code>
+        <br><code>DESLINDE:</code> <b>NO es</b> <code>ARG-120-015</code> ni el renglón de
+        <b>Huimanguillo</b> del boletín 14-16-sep, <b>ya listado como no recontable</b>.
+        <br><b>Calendario verificado</b>: 17-sep jueves.
+      </div>
+    </div>
+  </div>
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-09-21 · Hora: 08:57 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 122</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- ============ PÁGINA 8 — CRIMEN ORGANIZADO (VI) ============ -->
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (VI) — BAJA CALIFORNIA SUR, SAN LUIS POTOSÍ Y LA RECUPERACIÓN DE GUERRERO</h2></div>
+
+  <div class="nota" id="ARG-122-018">
+    <div class="nota-header"><h3>BAJA CALIFORNIA SUR · LA PAZ — DOS DETENIDOS, 109 CARTUCHOS Y 197 DOSIS DE FENTANILO: LA MUNICIÓN SE PUBLICA Y EL ARMA NO</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Jueves 17-sep</b> · <b>La Paz, Baja California Sur</b> · <b>FGR</b>, <b>SSPC federal</b> y
+        <b>SEMAR</b>.
+        <br><b>2 DETENIDOS.</b>
+        <br><b>Asegurado</b>: <b>109 CARTUCHOS</b> · <b>197 DOSIS DE FENTANILO</b> ·
+        <b>70 sacos de almeja chocolata</b> · <b>1 vehículo</b> · <b>2 celulares</b>.
+        <br><code>ARMAS DE FUEGO NO PUBLICADAS Y NO INFERIDAS pese a la munición asegurada.</code>
+        <b>Cargadores</b>: <code>NO PUBLICADOS.</code>
+        <br><b>Renglón del boletín federal del 17-sep.</b>
+        <code>FRONTERA DE VENTANA — HORA NO FIJADA.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-018</code> · <b>Confianza</b>: 🟠 Bajo (★★☆☆☆), <b>la fija el campo peor
+        sostenido</b> —munición sin arma que la explique y corroboración solo por republicadores— ·
+        <b>Hecho</b>: 2026-09-17, hora no fijada · <b>Publicación</b>: 2026-09-17 y 2026-09-18 ·
+        <b>Consulta</b>: 2026-09-21, 08:57 CDMX · <b>Estatus</b>: Pendiente de corroboración independiente.
+        <br><b>Fuentes — Institucional (1)</b>: Gabinete de Seguridad, <b>boletín del 17-sep</b>.
+        <b>Nacional (1)</b>: Milenio. <b>Regional (2)</b>, <b>1 con fecha en la ruta</b>: Eleese Noticias.
+        <br><code>DESLINDE:</code> <b>NO es el renglón de COMONDÚ, BCS</b> (<b>1 detenido, 145 kg de
+        cocaína, 1 tractocamión</b>) del <b>boletín 14-16-sep</b>, <b>ya listado como no recontable</b>:
+        <b>otro municipio, otra fecha y otro objeto</b>.
+        <br><b>Calendario verificado</b>: 17-sep jueves.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-122-012">
+    <div class="nota-header"><h3>SAN LUIS POTOSÍ · CUATRO REGIONES DEL ESTADO — 22 DETENIDOS, UN ARMA SIN CATEGORÍA Y DOS INHIBIDORES DE SEÑAL, CON UN SEGUNDO BOLETÍN DE CIFRA IDÉNTICA</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Viernes 18-sep</b> · <b>operativos en las CUATRO REGIONES de San Luis Potosí</b> ·
+        <b>Guardia Civil Estatal</b> · <b>agregado de 24 horas</b>.
+        <br><b>22 PERSONAS DETENIDAS.</b>
+        <br><b>Asegurado</b>: <b>1 ARMA DE FUEGO</b>, <code>SIN TIPO PUBLICADO: VA COMO «SIN
+        CATEGORÍA», NO SE INFIERE SI ES CORTA O LARGA</code> · <b>1 CARGADOR</b> · <b>cartuchos
+        útiles</b>, <code>SIN CIFRA</code> · <b>198 gramos de marihuana</b> · <b>19 dosis</b> ·
+        <b>2 INHIBIDORES DE SEÑAL</b> · <b>7 vehículos</b>, dos con reporte de robo.
+        <br><code>LOS 22 DETENIDOS NO SE INTEGRAN AL CONTEO DE ARMAMENTO:</code> el emisor <b>no
+        desglosa cuántos corresponden al evento con arma asegurada</b>.
+        <br><code>POSIBLE DUPLICIDAD DECLARADA:</code> un <b>segundo boletín del mismo emisor, del
+        19-sep</b>, publica <b>la misma cifra de 22 detenidos</b> con <b>un arma y cartuchos</b>.
+        <code>NO SE INTEGRA AL TOTAL HASTA VALIDACIÓN: NO PUEDE DESCARTARSE QUE SEA EL MISMO CORTE DE
+        24 HORAS REPUBLICADO.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-012</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —arma sin categoría y posible duplicidad abierta— · <b>Hecho</b>: 2026-09-18,
+        hora no fijada · <b>Publicación</b>: 2026-09-18 · <b>Consulta</b>: 2026-09-21, 08:57 CDMX ·
+        <b>Estatus</b>: Parcialmente corroborado.
+        <br><b>Fuentes — Institucional (1, por cita)</b>: Guardia Civil Estatal de San Luis Potosí.
+        <code>fiscaliaslp.gob.mx NO SE CONSULTÓ CON site: DIRIGIDO; SUSTITUCIÓN ANOTADA.</code>
+        <b>Nacional (0)</b>. <b>Regional (2)</b>, <b>ambas con fecha en la ruta</b>: Potosí Noticias ·
+        El Heraldo de San Luis Potosí.
+        <br><code>DESLINDE:</code> <b>San Luis Potosí SÍ figura en el índice</b> —
+        <code>ARG-114-003</code> (Villa de La Paz) y dos fichas de sentencia—: <b>ninguna es este
+        hecho</b>. <b>Conteo de armamento</b>: <code>ARG-122-ARM-007</code>.
+        <br><b>Calendario verificado</b>: 18-sep viernes · 19-sep sábado.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-122-REC-001" style="opacity:.78;">
+    <div class="nota-header"><h3>GUERRERO · MOCHITLÁN Y QUECHULTENANGO — VEINTINUEVE MILITARES Y POLICÍAS DESARMADOS Y RETENIDOS DURANTE HORAS, DOS PATRULLAS INCENDIADAS Y TRES VEHÍCULOS OFICIALES CON IMPACTOS DE BALA</h3><span class="risk-flag medio">AMARILLO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Jueves 17-sep</b> · <b>Mochitlán y Quechultenango, Guerrero</b> · <b>CIRCUITO RÍO AZUL</b>
+        —desde <b>Chilpancingo</b>, por <b>Petaquillas</b>, <b>Mochitlán</b> y <b>Quechultenango</b>—.
+        <br><b>Cronología publicada</b>: <b>12:00-13:00</b> despliegue de <b>Policía Estatal, Ejército y
+        Guardia Nacional</b> · <b>15:00</b> entrada al circuito · <b>bloqueos con camiones de carga y
+        maquinaria pesada</b> · <b>grupos armados con palos y machetes desarman y retienen a los
+        uniformados</b>, concentrados <b>en un gimnasio</b> · <b>18:00</b> liberación tras negociación
+        con las presidencias municipales.
+        <br><b>Retenidos</b>: <b>29</b> —<b>16 militares y 13 policías estatales</b>—.
+        <code>CIFRA CONTRADICHA: OTRA COBERTURA DA 19. NO SE ARBITRA: NINGUNA LA ATRIBUYE A UN EMISOR.</code>
+        <br><b>Daños</b>: <b>2 patrullas incendiadas</b>, <b>una de la Guardia Nacional</b> ·
+        <b>3 vehículos oficiales con impactos de bala</b> · <b>4 patrullas estatales dañadas</b>.
+        <br><b>FGE Guerrero, 18-sep: CUATRO CARPETAS DE INVESTIGACIÓN</b> — (1) <b>Mochitlán, contra la
+        GN</b>: tentativa de homicidio, daños, robo, ataques a vías de comunicación y lesiones, por
+        <b>3 elementos</b>; (2) <b>Quechultenango, contra la Policía Estatal</b>: daños, ataques a vías
+        de comunicación y lesiones, por <b>5 elementos</b>; (3) y (4) <b>lesiones de dos civiles</b>.
+        <br><code>SALDO DE MUERTOS CONTRADICHO ENTRE CUATRO VERSIONES Y NO ARBITRADO:</code> el
+        <b>alcalde de Quechultenango</b> reporta <b>1 muerto y 10 heridos de bala</b>; la <b>SEDENA</b>
+        reporta <b>5 heridos —3 de seguridad y 2 civiles— y DESCARTA MUERTOS</b>, y precisa que el
+        herido de mayor rango es <b>un teniente con machetazo en la mano, no por arma de fuego</b>; la
+        <b>FGE</b> declara que <b>no hay denuncias por personas fallecidas</b>; una cobertura regional
+        da <b>2 fallecidos</b> y otra <b>4 muertos y 8 heridos</b>.
+        <code>NO EXISTE CONCILIACIÓN PÚBLICA DE LAS CIFRAS.</code>
+        <br><b>Amarillo por quién inicia</b>: <b>la fuerza pública ejecuta la acción y es repelida</b>.
+        <code>EL NÚMERO DE RETENIDOS, DE HERIDOS O DE VEHÍCULOS NO MUEVE EL COLOR.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-REC-001</code> · <b>VENTANA DE ORIGEN: ARGOS 121</b> —<b>la hora está publicada
+        (15:00 el contacto, 18:00 la liberación) y es anterior al cierre de aquella ventana, 17-sep
+        17:36</b>—. <code>FUERA DEL SEMÁFORO, DEL MAPA, DEL RADAR Y DE TODOS LOS TOTALES DE ESTE
+        CORTE.</code>
+        <br><b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b> —saldo de
+        muertos contradicho entre cuatro versiones— · <b>Hecho</b>: 2026-09-17, 12:00-18:00 ·
+        <b>Publicación</b>: 2026-09-18 y 2026-09-19 · <b>Consulta</b>: 2026-09-21, 08:57 CDMX ·
+        <b>Estatus</b>: Parcialmente corroborado, con cifras en conflicto.
+        <br><b>Fuentes — Institucional (3, por cita)</b>: FGE Guerrero · SEDENA · Gabinete de Seguridad.
+        <b>Nacional (6)</b>, <b>4 con fecha en la ruta</b>: Proceso · Infobae · La Crónica de Hoy ·
+        El Heraldo de México. <b>Regional (6)</b>. <b>Lista íntegra en el archivo de fuentes.</b>
+        <br><code>ATRIBUCIONES PUBLICADAS Y NO ADOPTADAS:</code> la calificación de <b>«narcobloqueo»</b>;
+        la <b>infiltración del crimen organizado entre los pobladores</b>; la <b>adscripción de la zona
+        a un grupo criminal</b>; el <b>objeto del despliegue —la detención de policías municipales—</b>,
+        que <b>el gobierno estatal NIEGA</b>, describiéndolo como <b>patrullaje interinstitucional de
+        rutina solicitado por los ayuntamientos</b>; y el <b>uso de explosivos contra el personal</b>,
+        <code>ALEGADO POR VARIAS COBERTURAS Y SIN CONFIRMACIÓN OFICIAL DE TIPO, CANTIDAD NI LESIONES:
+        NO SE INTEGRA COMO AEI.</code>
+        <br><code>DESLINDE:</code> <b>ni «Mochitlán» ni «Quechultenango» figuran en el índice</b>, que
+        cubre de ARGOS 91 en adelante.
+        <br><b>Calendario verificado</b>: 17-sep jueves · 18-sep viernes.
+      </div>
+    </div>
+  </div>
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-09-21 · Hora: 08:57 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 122</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- ============ PÁGINA 9 — ARMAMENTO ============ -->
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS</h2></div>
+
+  <p class="muted-note" style="margin-bottom:8px;">
+    <b>Cifra grande</b> = asegurado en los <b>hechos integrados de este corte</b>. <b>Línea inferior</b> =
+    publicado durante el corte pero <b>sin cantidad determinada, sin fecha fijada o no atribuible a un
+    evento de aseguramiento</b>; no se suma. <b>Cálculo propio de ARGOS.</b> <b>Las categorías en cero se
+    muestran atenuadas: la ausencia es dato.</b>
+  </p>
+
+  <div class="conteo">
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h15v4h-4l-1 2h-2l-2 8H6l2-10H3z"/><path d="M9 13a3 3 0 0 0 3 2"/><path d="M18 9h3"/></svg><span class="lbl">Armas cortas</span><span class="num">10</span><span class="sub"><b>5 de Puerto Peñasco</b>, <b>2 de Iztapalapa</b>, <b>2 de Centro, Tabasco</b> y <b>1 de Tuxtla Gutiérrez</b> · <b>cinco veces las 2 del corte anterior</b> · <code>NINGUNA CON NÚMERO DE SERIE PUBLICADO</code></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9h19v3h-5l-1 2h-2l-1 5h-2l1-5H2z"/><path d="M16 14l5 5"/><path d="M6 9V7"/></svg><span class="lbl">Armas largas</span><span class="num">28</span><span class="sub"><b>17 de la sierra de Sinaloa</b>, <b>4 de Los Aldamas</b>, <b>4 de Iztapalapa</b>, <b>2 de Puerto Peñasco</b> y <b>1 de Centro, Tabasco</b> · <b>14 veces el corte anterior</b> · <code>DE PUERTO PEÑASCO SOLO SE INTEGRAN LAS DOS AMETRALLADORAS MINIMI: «MÁS DE 40» NO ES CIFRA Y LA PRELIMINAR DE 33 QUEDÓ SUPERADA. ES EL MAYOR VOLUMEN NO INTEGRADO DEL CORTE</code></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v6H4z"/><path d="M8 10v10"/><path d="M16 10v10"/><path d="M12 10v6"/></svg><span class="lbl">Sin categoría</span><span class="num">1</span><span class="sub"><b>la de San Luis Potosí</b>: la Guardia Civil Estatal <b>no publicó si es corta o larga</b> · <b>1 de 39 armas integradas, el 2,6 %</b>, frente al <b>20,7 % de ARGOS 120</b> · <b>no se infiere</b></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 6c2-2 4-3 5-3s3 1 5 3v12c-2 2-3 3-5 3s-3-1-5-3z"/><path d="M7 11h10"/><path d="M7 18h10"/></svg><span class="lbl">Cartuchos</span><span class="num">124</span><span class="sub"><b>109 de La Paz</b> y <b>15 de Centro, Tabasco</b> · <code>CIFRA ANORMALMENTE BAJA PARA 28 ARMAS LARGAS Y 10 CORTAS:</code> <b>los cuatro mayores aseguramientos publicaron las armas y NO la munición con cifra</b> —sierra de Sinaloa, Puerto Peñasco («casi cuatro mil»), Los Aldamas e Iztapalapa—</span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h9l-1 15-3 3H9L7 18z"/><path d="M8 8h8"/><path d="M8 12h8"/><path d="M8 16h7"/></svg><span class="lbl">Cargadores</span><span class="num">131</span><span class="sub"><b>127 de la sierra de Sinaloa</b>, <b>3 de Centro, Tabasco</b> y <b>1 de San Luis Potosí</b> · <code>NUNCA SE SUMAN CON LOS CARTUCHOS</code> · <b>hay más cargadores que cartuchos en el corte</b>, y eso <b>describe un déficit de publicación, no un depósito</b></span></div>
+    <div class="tile cero"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="14" r="6"/><path d="M10 8V5h4v3"/><path d="M14 6h4l1 3"/></svg><span class="lbl">Granadas</span><span class="num">0</span><span class="sub"><code>CERO POR FALTA DE CIFRA, NO POR AUSENCIA:</code> la <b>FGE de Veracruz asegura GRANADAS en Tempoal</b> y <b>no publica cuántas</b> · <b>la presencia se registra y la cantidad no se infiere</b></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="10" width="13" height="10" rx="1"/><path d="M16 13h3a2 2 0 0 0 2-2V8"/><circle cx="21" cy="6" r="2"/><path d="M7 14v3"/><path d="M11 14v3"/></svg><span class="lbl">AEI</span><span class="num">40</span><span class="sub"><b>los 40 de la sierra de Sinaloa</b>, límites con Durango · <b>tras dos ediciones en cero</b> · <code>TERCER DEPÓSITO DEL MISMO CORREDOR EN TRECE DÍAS:</code> <b>84 en La Noria (8-sep)</b>, <b>53 en Mazatlán (15-sep)</b> y <b>40 ahora</b> · <b>177 artefactos</b>, <b>cálculo propio</b> · <code>PUERTO PEÑASCO SUMA AEI SIN CIFRA: NO SE INTEGRAN</code></span></div>
+    <div class="tile cero"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="9" width="5" height="12" rx="1"/><rect x="11" y="9" width="5" height="12" rx="1"/><path d="M13 9V6c0-2 2-2 3-3"/></svg><span class="lbl">Explosivos</span><span class="num">0</span><span class="sub"><b>ningún volumen de explosivo, componente, precursor, detonador ni cordón se publicó por separado</b> en las <b>87 h 21 min</b> · <code>LOS ARTEFACTOS DE PUERTO PEÑASCO SON AEI SIN CIFRA Y VAN EN ESA CATEGORÍA, NO AQUÍ</code></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12h16l4-3v7l-4-2H2z"/><path d="M7 15v4h4"/><circle cx="18" cy="12" r="1"/></svg><span class="lbl">Armamento especial</span><span class="num">4</span><span class="sub"><b>2 piezas cal. .50</b>: el <b>fusil Barrett de Los Aldamas</b> y la <b>ametralladora Browning M-2 de Puerto Peñasco</b> · <b>1 ametralladora</b> (sierra de Sinaloa) · <b>1 accesorio lanzagranadas</b> (Tabasco) · <b>las 2 Minimi de Puerto Peñasco van en ARMAS LARGAS</b>, no aquí · <b>los lanzagranadas de la sierra NO llevan cifra</b> · <b>0 drones armados</b></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/><path d="M8 15h8"/></svg><span class="lbl">Detenidos</span><span class="num">20</span><span class="sub"><b>9 sierra de Sinaloa</b> · <b>6 Centro, Tabasco</b> · <b>3 Iztapalapa</b> · <b>2 La Paz</b> · <code>SOLO EN EVENTOS CON ASEGURAMIENTO DE ARMAMENTO</code> · <b>NO entran</b>: los <b>7 de Puerto Peñasco</b>, <b>detenidos el 18 mientras el arsenal se aseguró en el cateo del 19</b>; ni los <b>22 de San Luis Potosí</b> ni los <b>15 de Chiapas</b>, <b>agregados sin desglose</b></span></div>
+  </div>
+
+  <div class="panel" style="margin-top:8px;">
+    <div class="panel-title"><span>MAPA DE ASEGURAMIENTOS — SEMÁFORO ARGOS</span><span>GIS POR ENTIDAD</span></div>
+    <div class="map-box" id="argos-map-arm"></div>
+    <div class="map-caption">Verde = aseguramiento sin enfrentamiento. Amarillo = derivado de confrontación. Rojo = armamento vinculado a un evento de alto impacto. La sola presencia de armas no vuelve roja a una entidad.</div>
+  </div>
+
+  <div class="table-wrap"><table class="exec wide">
+    <thead><tr>
+      <th>ARG-ID</th><th>Entidad</th><th>Municipio</th><th>Fecha hecho</th><th>Cortas</th><th>Largas</th>
+      <th>Sin categoría</th><th>Cartuchos</th><th>Cargadores</th><th>Granadas</th><th>AEI</th><th>Explosivos</th>
+      <th>Detenidos</th><th>Corporación</th><th>Fuente primaria</th><th>Corrob.</th><th>Confianza</th>
+    </tr></thead>
+    <tbody>
+      <tr id="ARG-122-ARM-001">
+        <td><a href="#ARG-122-009"><code>ARG-122-ARM-001</code></a></td><td>Sinaloa</td><td>sierra,<br>límites con<br>Durango<br><span class="muted-note">MUNICIPIO NO<br>ESPECIFICADO</span></td>
+        <td>2026-09-19</td>
+        <td>0</td><td><b>17</b><br><span class="muted-note">1 AMETRALLADORA<br>sin calibre ni serie</span></td><td>0</td>
+        <td>0<br><span class="muted-note">sin cifra</span></td>
+        <td><b>127</b></td><td>0</td><td><b>40</b></td><td>0</td>
+        <td><b>9</b><br><span class="muted-note">uno menor<br>de edad</span></td>
+        <td>SEMAR<br>+ SSPC federal</td>
+        <td><span class="muted-note">ninguna<br>institucional propia</span></td>
+        <td>4 nacionales + 4 regionales<br><span class="muted-note">5 con fecha en la ruta</span></td>
+        <td><b>Medio</b></td>
+      </tr>
+      <tr id="ARG-122-ARM-002">
+        <td><a href="#ARG-122-007"><code>ARG-122-ARM-002</code></a></td><td>Sonora</td><td>Puerto Peñasco<br><span class="muted-note">fracc. Cerrada<br>del Sol</span></td>
+        <td>2026-09-19<br><span class="muted-note">CATEO, no el<br>topón del 18</span></td>
+        <td><b>5</b></td><td><b>2</b><br><span class="muted-note">las 2 MINIMI<br>RESTO NO DETERMINADO:<br>«más de 40»;<br>la preliminar de 33<br>quedó superada</span></td><td>0</td>
+        <td>0<br><span class="muted-note">«casi cuatro mil»<br>NO DETERMINADA</span></td>
+        <td>0<br><span class="muted-note">no publicados</span></td><td>0</td><td>0<br><span class="muted-note">PRESENCIA<br>SIN CIFRA</span></td><td>0</td>
+        <td>0<br><span class="muted-note">los 7 son del<br>operativo del 18,<br>NO del cateo</span></td>
+        <td>Estatales<br>+ federales<br><span class="muted-note">orden de cateo de<br>Juez de Control Penal<br>Oral del 1.er Distrito</span></td>
+        <td><span class="muted-note">ninguna<br>institucional propia</span></td>
+        <td>4 nacionales + 6 regionales<br><span class="muted-note">6 con fecha en la ruta</span></td>
+        <td><b>Medio</b><br><span class="muted-note">1 BROWNING M-2<br>CAL. .50</span></td>
+      </tr>
+      <tr id="ARG-122-ARM-003">
+        <td><a href="#ARG-122-004"><code>ARG-122-ARM-003</code></a></td><td>Nuevo León</td><td>Los Aldamas</td>
+        <td>2026-09-19</td>
+        <td>0</td><td><b>4</b><br><span class="muted-note">1 FUSIL BARRETT<br>CAL. .50<br>sin serie</span></td><td>0</td>
+        <td>0<br><span class="muted-note">sin cifra</span></td>
+        <td>0<br><span class="muted-note">sin cifra</span></td><td>0</td><td>0</td><td>0</td>
+        <td>0<br><span class="muted-note">4 abatidos</span></td>
+        <td>Fuerza Civil NL<br><span class="muted-note">Operativo Muralla</span></td>
+        <td><span class="muted-note">ninguna<br>institucional propia</span></td>
+        <td>4 nacionales + 3 regionales<br><span class="muted-note">2 con fecha en la ruta</span></td>
+        <td><b>Medio</b></td>
+      </tr>
+      <tr id="ARG-122-ARM-004">
+        <td><a href="#ARG-122-010"><code>ARG-122-ARM-004</code></a></td><td>Ciudad de México</td><td>Iztapalapa</td>
+        <td>2026-09-18</td>
+        <td><b>2</b></td><td><b>4</b><br><span class="muted-note">sin calibre<br>ni serie</span></td><td>0</td>
+        <td>0<br><span class="muted-note">no publicados</span></td>
+        <td>0<br><span class="muted-note">no publicados</span></td><td>0</td><td>0</td><td>0</td>
+        <td><b>3</b></td>
+        <td>SSC CDMX y FGJ CDMX<br><span class="muted-note">apoyo GN y SEMAR</span></td>
+        <td><span class="muted-note">ninguna<br>sin boletín indexado</span></td>
+        <td>4 nacionales + 1 regional<br><span class="muted-note">todas con fecha<br>en la ruta</span></td>
+        <td><b>Medio</b></td>
+      </tr>
+      <tr id="ARG-122-ARM-005">
+        <td><a href="#ARG-122-016"><code>ARG-122-ARM-005</code></a></td><td>Tabasco</td><td>Centro<br><span class="muted-note">col. José María<br>Pino Suárez</span></td>
+        <td>2026-09-17<br><span class="muted-note">FRONTERA DE<br>VENTANA</span></td>
+        <td><b>2</b></td><td><b>1</b></td><td>0</td>
+        <td><b>15</b></td>
+        <td><b>3</b></td><td>0</td><td>0</td><td>0</td>
+        <td><b>6</b></td>
+        <td>SEMAR, SEDENA,<br>SSPC, FGR,<br>Fiscalía y Policía<br>estatales</td>
+        <td><b>Boletín federal 17-sep</b><br><span class="muted-note">vía republicadores</span></td>
+        <td><span class="muted-note">ninguna<br>independiente</span></td>
+        <td><b>Medio</b><br><span class="muted-note">1 accesorio<br>lanzagranadas</span></td>
+      </tr>
+      <tr id="ARG-122-ARM-006">
+        <td><a href="#ARG-122-008"><code>ARG-122-ARM-006</code></a></td><td>Chiapas</td><td>Tuxtla Gutiérrez<br><span class="muted-note">col. Las Granjas</span></td>
+        <td>2026-09-20</td>
+        <td><b>1</b></td><td>0</td><td>0</td>
+        <td>0<br><span class="muted-note">no publicados</span></td>
+        <td>0<br><span class="muted-note">no publicados</span></td><td>0</td><td>0</td><td>0</td>
+        <td>0<br><span class="muted-note">los 15 detenidos<br>NO SE INTEGRAN:<br>sin desglose</span></td>
+        <td>FGE Chiapas</td>
+        <td><span class="muted-note">ninguna<br>sin boletín indexado</span></td>
+        <td>4 nacionales + 4 regionales<br><span class="muted-note">4 con fecha en la ruta</span></td>
+        <td><b>Medio</b></td>
+      </tr>
+      <tr id="ARG-122-ARM-007">
+        <td><a href="#ARG-122-012"><code>ARG-122-ARM-007</code></a></td><td>San Luis Potosí</td><td>cuatro regiones<br>del estado</td>
+        <td>2026-09-18</td>
+        <td>0</td><td>0</td><td><b>1</b><br><span class="muted-note">tipo no publicado</span></td>
+        <td>0<br><span class="muted-note">«útiles»<br>NO DETERMINADA</span></td>
+        <td><b>1</b></td><td>0</td><td>0</td><td>0</td>
+        <td>0<br><span class="muted-note">los 22 del agregado<br>NO SE INTEGRAN</span></td>
+        <td>Guardia Civil Estatal</td>
+        <td><span class="muted-note">ninguna<br>institucional propia</span></td>
+        <td>2 regionales<br><span class="muted-note">ambas con fecha<br>en la ruta</span></td>
+        <td><b>Medio</b><br><span class="muted-note">POSIBLE DUPLICIDAD<br>con boletín del 19</span></td>
+      </tr>
+      <tr id="ARG-122-ARM-008">
+        <td><a href="#ARG-122-011"><code>ARG-122-ARM-008</code></a></td><td>Veracruz</td><td>Tempoal<br><span class="muted-note">carretera a<br>Huejutla de Reyes</span></td>
+        <td>2026-09-20</td>
+        <td>0<br><span class="muted-note">SIN CIFRA</span></td><td>0<br><span class="muted-note">SIN CIFRA</span></td><td>0<br><span class="muted-note">«armas de fuego»<br>NO DETERMINADA</span></td>
+        <td>0<br><span class="muted-note">«material balístico»<br>NO DETERMINADA</span></td>
+        <td>0<br><span class="muted-note">sin cifra</span></td><td>0<br><span class="muted-note">PRESENCIA<br>CONFIRMADA<br>SIN CIFRA</span></td><td>0</td><td>0</td>
+        <td>0<br><span class="muted-note">expreso</span></td>
+        <td>FGE Veracruz<br>+ SEDENA, GN<br>y SSP estatal</td>
+        <td><span class="muted-note">ninguna<br>institucional propia</span></td>
+        <td>2 nacionales + 6 regionales<br><span class="muted-note">2 con fecha en la ruta</span></td>
+        <td><b>Medio</b><br><span class="muted-note">EVENTO CUALITATIVO<br>NO INTEGRA EL TOTAL</span></td>
+      </tr>
+      <tr id="ARG-122-ARM-009">
+        <td><a href="#ARG-122-018"><code>ARG-122-ARM-009</code></a></td><td>Baja California Sur</td><td>La Paz</td>
+        <td>2026-09-17<br><span class="muted-note">FRONTERA DE<br>VENTANA</span></td>
+        <td>0<br><span class="muted-note">no publicadas</span></td><td>0<br><span class="muted-note">no publicadas</span></td><td>0</td>
+        <td><b>109</b></td>
+        <td>0<br><span class="muted-note">no publicados</span></td><td>0</td><td>0</td><td>0</td>
+        <td><b>2</b></td>
+        <td>FGR, SSPC federal<br>y SEMAR</td>
+        <td><b>Boletín federal 17-sep</b><br><span class="muted-note">vía republicadores</span></td>
+        <td>1 nacional<br><span class="muted-note">no independiente</span></td>
+        <td>Bajo</td>
+      </tr>
+    </tbody>
+  </table></div>
+
+  <p class="muted-note" style="margin-top:6px;">
+    <b>Totales en la página 2.</b> <b>Lectura regional</b>: <b>Noroeste 3</b> —Sinaloa, Sonora y Baja
+    California Sur— · <b>Noreste 2</b> · <b>Golfo 2</b> · <b>Centro 1</b> · <b>Sureste 1</b> ·
+    <b>Occidente y Pacífico Sur en cero</b>. <b>El Noroeste concentra el 68 % de las armas largas
+    integradas y el 100 % de los AEI del corte</b>, y <b>concentraría mucho más si Puerto Peñasco
+    hubiera publicado una cifra</b>.
+    <code>NINGUNA DE LAS 39 ARMAS INTEGRADAS LLEVA NÚMERO DE SERIE PUBLICADO. SOLO PUERTO PEÑASCO
+    PUBLICÓ CALIBRES —5.56, .223, 7.62×39 Y .50—, Y LO HIZO PARA EL CONJUNTO, NO POR ARMA; EL BARRETT
+    DE LOS ALDAMAS ES LA ÚNICA PIEZA CON CALIBRE INDIVIDUAL.</code>
+  </p>
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-09-21 · Hora: 08:57 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 122</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- ============ PÁGINA 10 — SENTENCIAS ============ -->
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES</h2></div>
+
+  <p class="muted-note" style="margin-bottom:8px;">
+    <b>Una sentencia integrada y tres declaradas.</b> La integrada <b>descansa en comunicado de la FGR
+    citado por ocho coberturas nacionales</b>, con <b>cinco campos individualizadores</b>; las tres
+    declaradas <b>no tienen boletín primario localizable</b> y quedan
+    <code>PENDIENTES DE CONFIRMACIÓN OFICIAL.</code> <b>Nunca se cuenta como sentencia una vinculación a
+    proceso, una orden de aprehensión ni una judicialización.</b>
+  </p>
+
+  <div class="conteo">
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18"/><path d="M5 7h14"/><path d="M5 7l-3 6h6z"/><path d="M19 7l3 6h-6z"/><path d="M8 21h8"/></svg><span class="lbl">Sentencias condenatorias</span><span class="num">1</span><span class="sub"><b>FGR, Nuevo Laredo, Tamaulipas</b> · <b>3 declaradas y no integradas</b>: Morelia, La Pila y el agregado de Veracruz</span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/><path d="M8 15h8"/></svg><span class="lbl">Personas sentenciadas</span><span class="num">1</span><span class="sub"><b>Francisco Javier Chapa Maldonado, «El Cholo»</b> · <b>presunto integrante del Cártel del Golfo</b></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span class="lbl">Años de prisión</span><span class="num">332</span><span class="sub"><b>332 años 6 meses</b> · <b>la pena más alta del archivo reciente</b>, por encima de los <b>156 años acumulados de ARGOS 120</b> y de los <b>125 de Temoaya</b>, no integrados</span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><circle cx="12" cy="12" r="2.5"/><path d="M7 9v6"/><path d="M17 9v6"/></svg><span class="lbl">Multa impuesta</span><span class="num">$1.6M</span><span class="sub"><b>1,626,813 pesos</b> · <b>reparación del daño</b>: <code>NO PUBLICADA</code> · <b>decomiso e inhabilitación</b>: <code>NO PUBLICADOS</code></span></div>
+    <div class="tile cero"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5z"/><path d="M9 9h6"/><path d="M9 13h6"/><path d="M9 17h4"/></svg><span class="lbl">Sentencias firmes</span><span class="num">0</span><span class="sub"><b>la firmeza NO fue informada por el emisor</b> y <code>NUNCA SE ASUME</code> · <b>ninguna edición del archivo reciente ha integrado una sentencia declarada firme</b></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V8l8-4 8 4v12z"/><path d="M9 20v-6h6v6"/></svg><span class="lbl">Fiscalías con resultado</span><span class="num">1</span><span class="sub"><b>FGR</b> —FEMDO en coordinación con FECOR— · <b>de 33 universos revisados</b>: <b>32 fiscalías estatales y la FGR</b></span></div>
+  </div>
+
+  <div class="nota" id="ARG-122-SEN-001">
+    <div class="nota-header"><h3>TAMAULIPAS · NUEVO LAREDO — 332 AÑOS 6 MESES CONTRA FRANCISCO JAVIER CHAPA MALDONADO, «EL CHOLO», POR LA PRIVACIÓN DE LA LIBERTAD DE TRECE PERSONAS Y ACOPIO DE ARMAS: CATORCE AÑOS ENTRE LA DETENCIÓN Y LA CONDENA</h3><span class="risk-flag bajo">INTEGRADA</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Autoridad</b>: <b>FGR</b> — <b>Fiscalía Especializada en materia de Delincuencia Organizada
+        (FEMDO)</b> en coordinación con la <b>FECOR</b>, ante <b>juez federal</b>.
+        <b>Entidad y municipio</b>: <b>Nuevo Laredo, Tamaulipas</b>, <b>colonia Sector Centro</b>.
+        <br><b>Sentenciado</b>: <b>FRANCISCO JAVIER CHAPA MALDONADO, alias «EL CHOLO»</b>, señalado como
+        <b>integrante del Cártel del Golfo</b>.
+        <br><b>Delitos</b>: <b>privación ilegal de la libertad</b> · <b>acopio de armas de fuego</b> ·
+        <b>posesión de cartuchos de uso exclusivo de las Fuerzas Armadas</b>.
+        <br><b>Pena</b>: <b>332 AÑOS Y 6 MESES DE PRISIÓN</b>. <b>Multa</b>: <b>1,626,813 pesos</b>.
+        <b>Reparación del daño, decomiso e inhabilitación</b>: <code>NO PUBLICADOS.</code>
+        <b>Firmeza</b>: <code>NO INFORMADA. NUNCA SE ASUME.</code>
+        <br><b>Origen</b>: detención en <b>mayo de 2012</b> por elementos de la <b>SEMAR</b>; en el
+        operativo se <b>aseguraron armas de fuego</b> y se <b>RESCATÓ A TRECE PERSONAS PRIVADAS DE LA
+        LIBERTAD</b>.
+        <br><code>CATORCE AÑOS ENTRE LA DETENCIÓN Y LA SENTENCIA.</code>
+        <br><code>FECHA DE LA SENTENCIA NO PUBLICADA:</code> el emisor difunde la resolución, no el día
+        en que se dictó. <b>Se integra por su fecha de PUBLICACIÓN, que sí cae en ventana</b>, y
+        <code>FECHA DEL HECHO, DE LA SENTENCIA Y DE PUBLICACIÓN SON TRES CAMPOS DISTINTOS.</code>
+        <br><code>CIFRA CONTRADICHA Y ARBITRADA POR PRECISIÓN Y PROCEDENCIA:</code> dos titulares dan
+        <b>«300 años»</b> y <b>«más de 300»</b>; <b>el cuerpo de ocho coberturas y la atribución expresa
+        a la FGR sostienen 332 AÑOS 6 MESES</b>.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-122-SEN-001</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆) —<b>fuente oficial única con
+        datos suficientes</b>— · <b>Hecho</b>: 2012-05 (detención) · <b>Sentencia</b>: fecha no
+        publicada · <b>Publicación</b>: 2026-09-20 y 2026-09-21 · <b>Consulta</b>: 2026-09-21,
+        08:57 CDMX · <b>Estatus</b>: Confirmado por comunicado institucional citado, <b>no leído
+        íntegro</b>.
+        <br><b>Fuentes — Institucional (1)</b>: <b>FGR, comunicado citado expresamente por ocho
+        coberturas, con la unidad emisora identificada (FEMDO y FECOR)</b>.
+        <code>fgr.org.mx NO PUDO LEERSE POR BLOQUEO DE EGRESO; NINGUNA URL PROPIA DEL DOMINIO APARECIÓ
+        INDEXADA. SUSTITUCIÓN ANOTADA.</code> <b>Nacional (6)</b>: La Jornada · Infobae · MVS Noticias ·
+        El Heraldo de México · SDP Noticias · N+. <b>Regional (2)</b>: Zócalo · NX Noticias.
+        <b>Lista íntegra en el archivo de fuentes.</b>
+        <br><code>CINCO CAMPOS INDIVIDUALIZADORES COINCIDENTES —nombre completo, alias, mes y colonia de
+        la detención, corporación aprehensora y número de víctimas rescatadas—: NO PROCEDE CASO
+        HOMÓNIMO.</code>
+        <br><code>DESLINDE OBLIGATORIO:</code> <b>NO es</b> <code>ARG-120-SEN-002</code> —<b>52 años a
+        cada una de tres personas por secuestro agravado en el ejido San Francisco, Hidalgo,
+        Tamaulipas, publicada el 14-sep</b>—: <b>otro sentenciado, otra pena, otro municipio y otra
+        fecha</b>. <b>Tampoco es</b> el caso pendiente de <b>Carlos, Adrián, Luis y José «N»</b>
+        (15a 6m, 15a 6m, 11a 6m y 8 años), <b>también de Nuevo Laredo y también de la FGR</b>, cuya
+        <b>fecha sigue sin fijarse tras tres intentos</b>: <b>otros sentenciados y otras penas</b>.
+        <code>LOS AÑOS NO SE ACUMULAN ENTRE CASOS.</code>
+      </div>
+    </div>
+  </div>
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-09-21 · Hora: 08:57 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 122</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- ============ PÁGINA 11 — CANDIDATOS JUDICIALES Y COBERTURA ============ -->
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">CANDIDATOS JUDICIALES NO INTEGRADOS E INDICADOR DE COBERTURA</h2></div>
+
+  <div class="table-wrap"><table class="exec">
+    <thead><tr><th>Entidad · municipio</th><th>Caso y pena declarada</th><th>Por qué no se integra</th><th>Qué lo cerraría</th></tr></thead>
+    <tbody>
+      <tr><td><b>Michoacán</b><br>Morelia</td><td><b>Francisco Javier T.</b> · secuestro y homicidio agravado · <b>93 años 9 meses</b> · publicado 17-sep con fecha en la ruta</td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL.</code> Cuatro <b>republicadores del mismo boletín</b>, ninguno del dominio de la FGE · <code>FRONTERA DE VENTANA</code></td><td>El <b>boletín primario de fge.michoacan.gob.mx</b>, con <b>número de causa penal</b> y <b>estatus de firmeza</b></td></tr>
+      <tr><td><b>San Luis Potosí</b><br>La Pila</td><td><b>Norma «N»</b> · introducción de objeto prohibido (clonazepam) a centro penitenciario · <b>4 años 2 meses</b> y multa de <b>84 UMA (9,503.76 pesos)</b> · publicado 19-sep</td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL.</code> <b>Fuente única regional</b>, sin boletín de la FGR ni de la FGE</td><td>El <b>comunicado de la delegación de la FGR en San Luis Potosí</b> con <b>fecha de la resolución</b></td></tr>
+      <tr><td><b>Veracruz</b><br>agregado estatal</td><td><b>16 sentencias condenatorias y 1 fallo condenatorio</b> en 24 horas, publicado el 18-sep · delitos citados: pederastia agravada, homicidio, feminicidio en grado de tentativa</td><td><b>Sin sentenciado, delito individual ni pena por caso</b> · <code>CIFRA DEL EMISOR EN CONFLICTO CON SU CORROBORANTE: «37 resoluciones» frente a «50 resoluciones / 16 sentencias».</code> <b>Un agregado sin desglose no es una sentencia integrable</b></td><td>El <b>desglose caso por caso</b> de la FGE de Veracruz, con <b>nombre o alias, delito y pena</b></td></tr>
+      <tr><td><b>Chihuahua</b><br>Ciudad Juárez<br><span class="muted-note">Distrito Judicial Bravos</span></td><td><b>José Manuel E. C.</b> · homicidio calificado y homicidio calificado en grado de tentativa · hecho del <b>1-sep-2025</b>, cruce de Cordillera de los Andes y avenida Juan Gabriel · <b>FALLO CONDENATORIO YA DICTADO</b></td><td><code>SIN RESULTADO INDEXADO EN VENTANA, SEGUNDA EDICIÓN.</code> La <b>audiencia de individualización de la pena</b> estaba fijada para el <b>jueves 17-sep a las 09:00</b>; <b>cinco formulaciones de búsqueda no localizaron el resultado</b>. <code>NO SE AFIRMA QUE SE POSPUSIERA: ESO NO ESTÁ ACREDITADO.</code></td><td><b>La pena impuesta</b>, publicada por la <b>Fiscalía de Distrito Zona Norte</b> o por el <b>Tribunal de Juicio Oral</b></td></tr>
+      <tr><td><b>Baja California</b><br>Tijuana</td><td><b>Luis Martín «N»</b> · feminicidio de <b>Tiffany Gabriela García Rivera</b> · <b>26 años 8 meses</b>, <b>500 UMA</b> y <b>874,680 pesos</b> de reparación, según seis medios regionales; <b>23 años y sin nombre</b> según el boletín <b>fgebc.gob.mx/boletines/12722</b></td><td><code>POSIBLE CASO HOMÓNIMO — NO INTEGRAR HASTA VALIDACIÓN.</code> <b>Dos campos individualizadores nuevos</b> —hecho del <b>1-abr-2025</b> entre 00:22 y 07:12 en <b>avenida Revolución, Zona Centro</b>, y captura el <b>13-jul-2025 en Monterrey</b>— <b>refuerzan que sea el mismo caso, pero no cierran la discrepancia de pena</b></td><td>La <b>lectura directa del boletín 12722</b>, imposible bajo bloqueo de egreso, o un <b>segundo boletín con el nombre y la pena</b></td></tr>
+      <tr><td><b>Estado de México</b><br>Temoaya · Coacalco · Hueypoxtla</td><td><b>Tres resoluciones de la misma fiscalía</b>: <b>125 años</b> a «El Henry», <b>36 años 3 meses</b> a «El Maca» y <b>21 años 10 meses 15 días</b> en Hueypoxtla</td><td><code>PENDIENTES DE CONFIRMACIÓN OFICIAL.</code> <b>Ninguna tiene boletín primario de fgjem.edomex.gob.mx</b> · <b>las tres son de ventanas anteriores</b> y <code>NO SE REPUBLICAN COMO HECHO NUEVO</code></td><td>Un <b>boletín de la FGJEM</b> para cualquiera de las tres · <b>es el vacío judicial más persistente del archivo</b></td></tr>
+      <tr><td><b>Tamaulipas</b><br>Nuevo Laredo</td><td><b>Carlos, Adrián, Luis y José «N»</b> · <b>15a 6m, 15a 6m, 11a 6m y 8 años</b>, FGR</td><td><code>FECHA NO FIJADA, TERCER INTENTO FALLIDO.</code> La URL lleva <b>año y mes pero no día</b>; el «hace seis días» <b>solo lo afirma el resumidor</b> · <b>los republicadores confirman mes y año, no el día</b></td><td>Un <b>boletín de la FGR o del Poder Judicial Federal en Tamaulipas con día exacto</b></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="section-head" style="margin-top:10px;">INDICADOR DE COBERTURA — CICLO C APLICADO Y DECLARADO</div>
+  <div class="table-wrap"><table class="exec">
+    <thead><tr><th>Concepto</th><th>Valor</th><th>Detalle</th></tr></thead>
+    <tbody>
+      <tr><td><b>Universo de revisión</b></td><td><b>33</b></td><td><b>32 fiscalías estatales + FGR</b>. <code>LAS FILAS SIGUIENTES SUMAN 33, NO 32: 4 + 28 + 1 + 0.</code></td></tr>
+      <tr><td><b>Fiscalías revisadas</b></td><td><b>32 de 32</b></td><td>Todas recibieron al menos una consulta dirigida. <b>Ninguna queda <code>NO REVISADA</code></b> · <b>Yucatán, que ARGOS 121 dejó sin revisar en los dos módulos, encabezó el triaje y queda saldada</b></td></tr>
+      <tr><td><b>FGR revisada</b></td><td><b>Sí</b></td><td>FEMDO, FECOR y delegaciones estatales de Tamaulipas y San Luis Potosí</td></tr>
+      <tr><td><b>Fiscalías con sentencia publicada</b></td><td><b>4</b></td><td><b>FGR</b> (integrada) · <b>FGE Michoacán</b>, <b>FGR-SLP</b> y <b>FGE Veracruz</b> (declaradas, no integradas)</td></tr>
+      <tr><td><b><code>SIN RESULTADO INDEXADO EN VENTANA</code></b></td><td><b>28 entidades</b></td><td>Se buscó dirigido y el buscador no devolvió boletín del periodo. <b>Con el egreso bloqueado es la casilla correcta en casi todos los casos</b></td></tr>
+      <tr><td><b><code>SIN ACTUALIZACIÓN CONSTATADA</code></b></td><td><b>1</b></td><td><b>ssp.zacatecas.gob.mx</b>: se vio el listado de publicaciones del 17 y 20-sep —seguridad en desfiles y prevención de extorsión—, <b>sin aseguramiento en la ventana</b></td></tr>
+      <tr><td><b><code>NO REVISADA</code></b></td><td><b>0 entidades</b></td><td>La profundidad <b>fue desigual</b> y se declara: <b>Tamaulipas y Coahuila</b> quedaron <b>por debajo del estándar en armamento</b>, y <b>Campeche</b> solo recibió consulta general. <b>Encabezan el triaje de ARGOS 123 por la regla de prioridad sobre el ciclo</b></td></tr>
+      <tr><td><b>Portales leídos por acceso directo</b></td><td><b>0 de 32</b></td><td><code>BLOQUEO DE EGRESO REVERIFICADO, TERCERA EDICIÓN: gob.mx/sspc, fiscaliachihuahua.gob.mx, infobae.com y milenio.com DEVUELVEN 000.</code> <b>Ninguna página de este corte se leyó íntegra</b> · <b>techo de confianza ★★★☆☆</b></td></tr>
+      <tr><td><b>Boletín federal de acciones relevantes</b></td><td><b>1 de 5 tramos</b></td><td><b>Existe el del 17-sep</b>, alcanzado <b>solo por republicadores</b> · <code>TRIPLE CONSULTA APLICADA A LOS TRAMOS 18, 19, 20 Y 21-SEP —DÍA SUELTO, RANGO Y TÍTULO SIN RESTRICCIÓN DE DOMINIO—: NINGUNO DEVOLVIÓ BOLETÍN.</code> <b>Cuatro días de la ventana sin agregado federal</b></td></tr>
+      <tr><td><b><code>gabinetedeseguridad.gob.mx/resultados/</code></b></td><td><b>Sin cifra utilizable</b></td><td><b>Duodécima verificación consecutiva</b> · <b>ninguna cifra suya se usa</b></td></tr>
+    </tbody>
+  </table></div>
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-09-21 · Hora: 08:57 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 122</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<!-- ============ PÁGINA 12 — VALORACIÓN Y CONCLUSIONES ============ -->
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">VALORACIÓN ARGOS, CONCLUSIONES E INDICADORES</h2></div>
+
+  <div class="alerta contexto">
+    <span class="flag">VALORACIÓN — NIVEL DE RIESGO NACIONAL</span>
+    <p><b>1. </b><b>CINCO EVENTOS ROJOS DENTRO DE VENTANA</b>, frente a <b>cero</b> del corte anterior, y
+    el nivel se valora sobre ellos. <b>Los cinco ocurrieron y se publicaron dentro del periodo</b>:
+    <code>ESTE CORTE MIDE VIOLENCIA, NO SOLO PUBLICACIÓN.</code>
+    <br><b>2. </b><b>El eje del riesgo es civil y comunitario</b>: <b>dos ataques a espacios deportivos
+    de barrio</b> —Tuxtla Gutiérrez y Valle de Santiago— más los <b>dos de Celaya</b> suman
+    <b>NUEVE O DIEZ MUERTOS Y TRECE HERIDOS</b> —<b>cálculo propio</b>, <code>EL RANGO LO IMPONE LA
+    CIFRA CONTRADICHA Y NO ARBITRADA DE VALLE DE SANTIAGO</code>—, con <b>dos menores entre las
+    víctimas</b> y <b>un policía municipal herido</b>.
+    <code>NINGUNO TUVO DETENIDOS SALVO EL DE CHIAPAS.</code>
+    <br><b>3. </b><b>Dos de los cinco rojos son agresiones iniciadas contra fuerzas en patrullaje</b>
+    —<b>SEMAR y SSPC en la sierra de Sinaloa</b>, <b>Fuerza Civil en Los Aldamas</b>—:
+    <b>proyección de fuerza contra el Estado</b>, no resistencia a un operativo. <b>En los dos casos el
+    Estado conservó la iniciativa y aseguró el arsenal.</b>
+    <br><b>4. </b><b>La densidad sube a 0,19 hechos por hora</b> frente a <b>0,10</b> del corte anterior
+    (17 ÷ 87,35 y 3 ÷ 30,03, <b>cálculo propio</b>). <code>LOS TOTALES ABSOLUTOS NO SON COMPARABLES —87 h
+    21 min FRENTE A 30 h 02 min—; LA DENSIDAD SÍ, Y CASI SE DUPLICA.</code>
+    <br><b>5. </b><b>Una sentencia integrada frente a 20 personas detenidas con armamento</b>, y la
+    integrada <b>tardó catorce años</b>. <code>LA CAPACIDAD DE CAPTURA DEL ESTADO ES VISIBLE EN CADA
+    CORTE; LA DE CONDENA, NO.</code></p>
+  </div>
+
+  <div class="alerta contexto" style="margin-top:10px;">
+    <span class="flag">CONCLUSIONES DE INTELIGENCIA CRIMINAL</span>
+    <p><b>1. EL ESPACIO DEPORTIVO COMUNITARIO APARECE COMO ESCENARIO REPETIDO, CON UN MODUS OPERANDI
+    ESTABLE</b>: <b>agresores en motocicleta</b>, <b>tiro dirigido sobre un grupo reunido</b>,
+    <b>horario vespertino o nocturno</b> y <b>víctimas colaterales menores de edad</b>. <b>Dos hechos en
+    tres días, en Chiapas y Guanajuato</b>, <b>sin vínculo acreditado entre ambos</b>. <b>La contramedida
+    es de presencia en horario y punto fijo, no de refuerzo genérico</b>: <b>procede inventariar canchas
+    y campos con reunión habitual en municipios con disputa de narcomenudeo</b>.
+    <br><b>2. EL CENTRO PENITENCIARIO APARECE COMO PUESTO DE MANDO, NO COMO DESTINO</b>: la Fiscalía de
+    Chiapas señala que <b>la orden del ataque de Las Granjas la giró desde el PENAL DE OCOSINGO un
+    sentenciado por homicidio calificado</b>. <b>Procede auditar comunicaciones, visitas y bloqueo de
+    señal en ese penal</b>, y <b>cruzarlo con los dos inhibidores de señal asegurados en San Luis
+    Potosí</b>: <b>el mismo problema visto desde los dos lados</b>.
+    <br><b>3. EL CORREDOR SIERRA DE SINALOA-DURANGO SE COMPORTA COMO ZONA DE PRODUCCIÓN DE AEI, NO DE
+    TRÁNSITO</b>: <b>177 artefactos en trece días</b> —<b>84 en La Noria de San Antonio el 8-sep</b>,
+    <b>53 en Mazatlán el 15</b> y <b>40 ahora</b>, <b>cálculo propio</b>—, <b>dos de ellos abandonados y
+    uno en poder de un grupo armado</b>. <b>Es consistente con manufactura local y requiere validación</b>:
+    <b>procede peritaje comparado de iniciador, carga y contenedor de los tres depósitos</b>.
+    <br><b>4. EL ARSENAL MÁS GRANDE DEL CORTE ES EL QUE MENOS SE PUEDE CONTAR</b>: Puerto Peñasco
+    publica <b>«más de 40» armas largas</b>, <b>«casi cuatro mil» cartuchos</b> y <b>artefactos
+    explosivos sin cifra</b>, de modo que <b>de su arsenal solo entran al conteo nacional las dos
+    Minimi y las cinco cortas</b>. <b>La munición desaparece de los boletines justo cuando el arsenal
+    es grande</b>: <b>39 armas integradas y solo 124 cartuchos</b>. <b>Sin esa razón no se estima
+    capacidad de fuego ni autonomía de combate</b>, y <b>sin número de serie —cero en 39 armas—
+    ninguna se cruza con las rastreadas desde el norte</b>.
+    <br><b>5. EL NIVEL MUNICIPAL SIGUE SIENDO LA UNIDAD CAPTURADA, Y LA VÍCTIMA DEL CORTE ES EL
+    TRABAJADOR DEL CAMPO Y DE LA MINA</b>: en <b>Angamacutiro</b> cayeron <b>el director de la Policía
+    Municipal y tres agentes</b>, y en <b>Guerrero</b> una corporación municipal entera sigue
+    intervenida. <b>En paralelo, ocho mineros artesanales de Sierra Pinta fueron secuestrados y solo
+    tres aparecieron con vida</b>. <b>Procede auditoría de inventario y cotejo balístico del armamento
+    de cargo municipal</b> en ambos corredores, y <b>rastrear a los cinco mineros no localizados</b>,
+    <b>antes que refuerzo de efectivos</b>.</p>
+  </div>
+
+  <div class="section-head" style="margin-top:10px;">INDICADORES OFICIALES</div>
+  <p class="muted-note">
+    <code>SIN ACTUALIZACIÓN OFICIAL UTILIZABLE DURANTE EL CORTE.</code> <b>SESNSP, INEGI, SSPC y el
+    portal <code>gabinetedeseguridad.gob.mx/resultados/</code></b> no publicaron dentro de la ventana
+    ninguna cifra integrable: <b>duodécima verificación consecutiva sin dato utilizable</b> de ese
+    portal —<b>dominio indexado, rutas sin fecha y acceso directo bloqueado</b>—.
+    <b>Ninguna cifra suya se usa.</b>
+    <br><code>CIFRA INSTITUCIONAL PUBLICADA FUERA DE VENTANA, DECLARADA Y NO INTEGRADA:</code> la
+    <b>SEMAR</b> difundió el <b>15-sep</b> un acumulado de <b>37 toneladas 855 kg de cocaína asegurada
+    entre el 1-ene y el 10-sep</b>, con <b>26 embarcaciones</b>, <b>1 sumergible</b> y <b>54 motores
+    fuera de borda</b>. <b>Es anterior al 17-sep 17:36</b>: <b>no es indicador de este corte</b> y
+    <b>se cita solo como contexto</b>.
+    <br><b>Único agregado federal del periodo</b>: el <b>boletín de acciones relevantes del 17-sep</b>,
+    <b>de un solo día</b>, <b>no indexado por su emisor</b> y alcanzado <b>solo por republicadores</b>.
+    <code>LOS TRAMOS DEL 18, 19, 20 Y 21-SEP NO DEVOLVIERON BOLETÍN EN NINGUNA DE LAS TRES FORMAS DE
+    CONSULTA: CUATRO DE LOS CINCO DÍAS DE LA VENTANA QUEDAN SIN AGREGADO FEDERAL.</code>
+    <br><b>Todas las cifras de este cartelón que no lleven emisor son cálculo propio de ARGOS</b>:
+    <b>ninguna autoridad publicó un agregado nacional del corte</b>.
+  </p>
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-09-21 · Hora: 08:57 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 122</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+
+<script>
+const MEXICO_VIEWBOX = "0 0 900 520";
+const MEXICO_PATHS = {
+  "MX-ZAC": { name: "Zacatecas", d: "M452 234L451 235L448 240L445 241L444 244L440 245L439 247L439 250L440 251L439 254L438 255L433 257L432 258L429 263L424 265L422 268L419 268L416 267L415 269L416 271L415 272L416 275L415 280L416 283L420 285L422 287L425 288L427 291L428 292L432 291L436 286L439 285L441 288L440 290L437 296L437 298L438 301L437 305L435 309L434 309L431 308L429 305L426 304L423 303L421 300L421 299L418 297L415 295L415 293L412 296L409 298L406 299L404 303L402 307L400 310L400 311L403 313L403 316L403 317L406 319L406 322L405 323L402 325L399 328L397 327L395 328L395 330L393 331L392 331L388 332L385 331L382 330L380 328L378 327L378 326L383 324L383 322L382 322L380 322L379 319L381 319L383 317L383 312L386 310L388 308L393 306L394 304L395 300L394 299L392 299L392 296L390 296L388 296L388 298L389 299L386 301L385 304L383 303L382 304L380 304L380 302L383 296L383 293L380 291L376 292L376 300L375 301L374 300L373 298L373 295L374 292L376 289L377 288L377 287L375 286L373 287L371 288L371 289L372 293L373 295L372 296L370 296L371 293L370 293L367 294L367 296L365 297L364 298L363 296L363 294L364 291L365 289L368 288L369 283L369 281L368 278L368 277L370 274L371 268L371 266L374 263L376 260L375 256L376 255L376 251L375 248L377 247L380 245L382 242L384 240L386 238L390 238L392 239L395 238L400 239L400 238L402 239L408 238L409 236L408 232L406 232L407 227L405 225L404 223L403 221L403 220L410 218L419 219L422 221L424 222L426 223L428 226L431 226L431 229L434 230L435 229L438 228L441 229L442 230L444 233L445 235L447 235L450 234L452 234Z" },
+  "MX-YUC": { name: "Yucatán", d: "M787 319L787 324L786 326L785 329L787 333L787 334L784 339L784 341L783 342L777 347L775 348L772 348L771 347L770 348L768 350L766 351L765 354L761 356L759 356L755 359L754 360L752 361L748 362L746 363L745 364L740 365L740 367L739 369L738 365L735 362L734 359L730 357L728 352L726 351L726 349L724 347L722 349L721 348L720 348L718 346L715 345L715 338L714 337L716 333L717 332L722 328L725 327L729 325L733 324L740 323L747 322L754 321L759 319L759 318L765 317L767 317L770 317L772 315L774 316L776 317L779 317L781 318L785 319L787 319Z" },
+  "MX-VER": { name: "Veracruz", d: "M528 298L529 303L531 308L530 309L531 311L531 314L534 319L535 319L536 323L537 324L538 328L542 336L543 337L544 341L545 343L549 347L549 348L555 355L559 360L560 361L562 364L563 367L564 372L566 374L565 376L566 379L569 380L571 383L571 385L572 386L574 386L575 390L577 392L577 394L580 394L584 395L594 395L599 399L603 400L606 404L608 407L609 409L610 410L612 411L615 410L622 408L621 409L621 414L622 415L622 418L624 420L626 422L630 424L632 427L631 430L632 432L634 433L630 436L628 437L627 438L609 437L598 436L599 435L597 432L595 431L593 429L591 426L591 424L593 423L591 422L590 423L586 424L583 426L580 426L579 427L577 427L575 422L575 420L576 419L578 414L577 411L576 410L573 409L571 409L569 409L567 408L566 406L565 405L564 406L561 403L560 400L561 399L559 397L559 400L557 403L555 401L553 400L550 402L548 401L547 398L543 396L542 394L542 391L544 389L544 388L544 381L549 381L549 378L546 377L542 376L540 375L541 374L539 370L540 369L542 364L542 363L544 358L546 355L539 352L536 356L535 356L534 354L531 354L530 351L530 347L532 346L533 347L535 345L534 344L531 341L531 339L531 336L528 336L526 339L525 340L525 343L522 342L520 344L519 345L517 347L514 349L512 350L510 347L511 343L511 339L512 338L515 336L517 337L518 337L518 335L518 333L520 331L518 327L516 326L515 327L512 326L510 325L511 323L510 321L509 317L508 317L507 316L507 313L510 312L511 310L509 308L509 306L511 306L511 305L511 302L512 301L515 301L513 298L512 297L508 296L506 296L505 294L507 293L511 293L514 294L516 294L516 293L518 292L519 294L522 295L523 295L526 299L528 298ZM533 309L534 311L537 314L540 316L540 318L538 323L537 323L539 319L539 318L537 316L536 314L533 311L533 309Z" },
+  "MX-TLA": { name: "Tlaxcala", d: "M508 374L507 374L506 372L511 370L514 370L517 367L519 368L522 368L523 366L529 371L529 373L531 372L533 374L533 375L534 376L533 378L530 378L528 381L526 381L524 380L521 383L520 383L516 381L515 378L510 374L508 374Z" },
+  "MX-TAM": { name: "Tamaulipas", d: "M528 298L526 299L523 295L522 295L519 294L518 292L516 293L516 294L514 294L511 293L507 293L505 294L502 295L500 294L499 294L495 294L493 294L491 291L490 289L488 286L486 286L485 284L483 286L481 286L478 285L473 284L472 283L472 279L472 276L471 274L471 271L470 270L470 268L474 268L473 264L474 262L475 261L476 258L478 256L481 257L483 256L484 254L486 255L485 252L484 252L483 248L481 245L482 240L481 237L478 236L479 234L481 233L484 231L486 229L487 229L488 228L492 227L492 226L494 225L494 223L493 221L496 218L497 219L500 219L502 216L506 215L509 213L511 212L513 209L510 208L509 204L510 202L509 200L509 197L508 194L503 194L501 196L500 195L498 192L494 192L493 188L491 189L489 186L487 184L486 179L484 179L483 177L481 177L481 172L478 170L479 167L481 166L480 163L479 162L479 158L478 157L479 155L477 155L474 154L475 152L478 151L480 149L483 150L485 152L485 153L486 154L485 158L486 160L487 162L487 167L488 168L491 171L493 178L494 180L496 182L495 183L499 184L502 185L504 186L506 188L508 188L514 191L517 193L519 193L521 193L524 193L526 193L529 194L530 194L532 195L535 198L537 199L539 198L540 197L543 196L545 196L545 198L544 203L543 205L539 212L538 211L535 210L535 212L535 214L533 214L533 212L531 212L530 216L531 217L529 223L531 224L529 227L530 229L530 231L530 232L529 234L527 235L528 239L529 238L530 241L529 246L529 255L530 259L529 266L529 277L529 281L528 283L527 285L526 288L527 289L526 293L527 295L528 298Z" },
+  "MX-TAB": { name: "Tabasco", d: "M662 397L664 401L667 404L668 404L669 405L669 407L672 412L676 415L676 416L679 417L681 418L684 417L685 413L688 413L691 414L693 415L700 418L700 420L700 435L689 435L690 434L689 432L686 430L684 430L683 429L684 427L683 423L680 422L680 420L679 418L677 418L674 418L674 419L670 419L669 420L669 422L667 423L662 428L660 429L656 432L654 432L653 429L650 428L650 426L648 423L649 420L649 418L647 418L645 417L642 415L640 416L640 419L640 422L639 425L636 428L636 430L634 433L632 432L631 430L632 427L630 424L626 422L624 420L622 418L622 415L621 414L621 409L622 408L627 407L627 408L630 408L630 406L634 406L635 404L639 403L644 403L645 405L647 404L648 403L652 403L655 401L657 398L662 397Z" },
+  "MX-SON": { name: "Sonora", d: "M163 106L163 108L165 112L164 116L163 119L156 116L158 114L158 112L158 108L161 106L163 106ZM252 48L253 49L252 50L254 54L254 56L254 59L253 61L255 62L255 65L256 66L255 67L256 69L258 76L257 79L259 82L257 85L257 90L259 90L259 97L259 99L258 101L259 107L257 107L257 110L256 111L256 114L255 115L256 117L254 120L254 122L255 124L254 125L256 128L258 129L256 131L253 132L250 131L249 132L246 132L245 133L247 135L246 138L249 139L251 142L251 144L250 146L254 148L257 156L257 157L256 161L256 164L255 165L259 167L261 166L263 166L263 168L259 172L260 174L258 175L256 179L252 180L251 183L249 184L245 186L244 185L242 184L240 183L240 182L239 180L235 176L235 175L233 174L232 176L229 176L227 175L224 173L223 169L223 165L221 164L219 165L218 164L213 163L209 159L209 157L207 156L206 154L206 152L205 150L206 148L205 146L206 143L204 143L199 141L197 143L196 141L194 141L189 138L187 135L184 131L183 129L178 127L176 123L172 120L173 118L170 116L168 114L166 113L166 109L165 106L164 103L162 104L160 103L160 102L161 100L161 98L158 96L157 93L156 93L154 89L154 88L152 87L152 85L151 83L151 80L151 79L149 77L149 74L148 72L145 70L143 66L142 62L143 57L144 55L143 52L140 51L136 50L131 49L129 48L130 47L129 44L123 41L119 44L116 44L113 42L112 41L107 38L105 36L103 36L102 36L101 35L100 35L94 31L95 28L95 26L95 24L94 22L96 20L97 16L99 16L121 23L147 32L165 38L180 43L194 48L209 48L227 48L252 48ZM100 35L103 37L102 39L100 37L100 36L100 35Z" },
+  "MX-SIN": { name: "Sinaloa", d: "M268 221L270 224L270 226L268 224L268 221ZM263 219L264 220L269 225L268 226L266 222L263 219ZM241 186L242 186L242 184L244 185L245 186L249 184L251 183L252 180L256 179L258 175L260 174L259 172L263 168L263 166L268 166L269 167L269 169L270 169L271 172L271 177L272 178L273 181L275 184L276 186L278 190L281 191L284 192L287 192L290 197L290 200L292 203L292 205L290 207L291 209L290 212L290 217L290 219L291 219L293 224L294 227L297 227L298 229L299 229L300 234L302 234L302 238L304 242L305 242L310 239L311 238L315 239L317 240L320 245L320 247L322 252L323 253L323 256L325 259L327 261L328 264L329 266L328 267L330 270L331 274L335 274L337 276L336 277L335 280L334 282L334 285L335 286L336 290L335 291L332 290L330 289L329 289L329 291L325 286L322 283L321 282L316 276L310 271L309 268L308 266L306 264L302 259L299 255L299 254L297 251L292 247L290 245L287 243L286 243L282 240L284 239L284 237L282 235L281 237L277 236L276 234L272 232L271 230L271 228L270 221L269 219L267 219L265 217L262 215L261 217L260 215L254 212L252 211L251 209L252 208L250 207L248 207L249 208L248 210L247 208L245 209L243 207L245 206L247 206L248 205L248 204L245 204L245 206L242 205L239 202L235 200L236 198L235 196L235 195L237 191L239 190L240 187L241 186Z" },
+  "MX-SLP": { name: "San Luis Potosí", d: "M470 270L471 271L471 274L472 276L472 279L472 283L473 284L478 285L481 286L483 286L485 284L486 286L488 286L490 289L491 291L493 294L495 294L499 294L500 294L502 295L505 294L506 296L508 296L512 297L513 298L515 301L512 301L511 302L511 305L511 306L509 306L509 308L511 310L510 312L507 313L507 316L508 317L509 317L510 321L508 321L506 323L505 326L504 325L503 327L500 326L499 323L497 324L492 319L491 317L489 317L488 320L483 320L482 317L480 316L478 318L476 319L471 319L469 317L465 314L461 313L460 314L460 317L458 317L456 318L451 315L449 313L446 312L441 310L440 310L437 309L435 309L437 305L438 301L437 298L437 296L440 290L441 288L439 285L436 286L432 291L428 292L427 291L425 288L422 287L420 285L416 283L415 280L416 275L415 272L416 271L415 269L416 267L419 268L422 268L424 265L429 263L432 258L433 257L438 255L439 254L440 251L439 250L439 247L440 245L444 244L445 241L448 240L451 235L452 237L455 238L456 240L454 241L456 244L456 245L459 248L460 251L459 255L460 257L460 260L459 263L460 264L460 269L462 272L463 272L466 270L470 270Z" },
+  "MX-ROO": { name: "Quintana Roo", d: "M807 343L806 346L802 351L800 352L800 350L800 348L802 345L804 345L807 343ZM746 416L746 414L748 411L749 408L749 404L748 403L749 401L748 399L747 397L747 395L748 391L748 388L749 387L749 381L747 377L744 374L741 371L739 369L740 367L740 365L745 364L746 363L748 362L752 361L754 360L755 359L759 356L761 356L765 354L766 351L768 350L770 348L771 347L772 348L775 348L777 347L783 342L784 341L784 339L787 334L787 333L785 329L786 326L787 324L787 319L791 320L795 320L797 319L798 316L800 317L803 321L804 325L805 326L805 328L806 329L805 332L803 336L800 340L798 343L794 347L792 349L791 352L790 353L788 358L789 362L788 365L786 365L784 368L782 369L781 371L784 373L785 372L789 371L790 372L789 374L787 376L786 376L784 377L783 382L784 381L786 379L787 378L789 379L787 382L786 385L784 389L783 394L782 395L781 403L779 406L779 409L778 408L778 405L777 404L777 403L773 401L775 396L775 393L773 391L768 400L768 401L763 401L762 402L761 405L760 406L760 409L758 410L757 413L756 414L755 415L753 417L749 415L747 415L746 416Z" },
+  "MX-QUE": { name: "Querétaro", d: "M497 324L496 327L491 329L490 328L488 329L489 331L487 334L485 336L484 339L485 341L483 343L477 344L476 351L475 352L474 354L474 356L472 358L469 359L466 355L466 354L464 352L463 350L461 348L460 346L460 344L458 340L458 338L459 335L464 335L465 334L468 334L470 333L470 330L473 327L474 326L476 328L479 326L480 323L477 323L479 321L478 318L480 316L482 317L483 320L488 320L489 317L491 317L492 319L497 324Z" },
+  "MX-PUE": { name: "Puebla", d: "M557 403L554 407L552 408L548 411L545 410L543 411L541 413L540 415L538 415L538 413L535 409L534 408L535 407L535 405L532 406L530 410L532 413L531 415L529 415L527 413L525 414L522 414L520 414L518 416L517 417L515 416L514 414L509 415L509 414L505 412L505 410L502 411L501 408L499 406L499 405L501 403L502 402L504 400L507 403L508 402L506 395L508 388L509 386L509 382L508 379L509 376L508 374L510 374L515 378L516 381L520 383L521 383L524 380L526 381L528 381L530 378L533 378L534 376L533 375L533 374L531 372L529 373L529 371L523 366L522 368L519 368L518 363L520 360L521 355L520 353L518 353L517 351L521 350L522 348L525 346L525 343L525 340L526 339L528 336L531 336L531 339L531 341L534 344L535 345L533 347L532 346L530 347L530 351L531 354L534 354L535 356L536 356L539 352L546 355L544 358L542 363L542 364L540 369L539 370L541 374L540 375L542 376L546 377L549 378L549 381L544 381L544 388L544 389L542 391L542 394L543 396L547 398L548 401L550 402L553 400L555 401L557 403Z" },
+  "MX-OAX": { name: "Oaxaca", d: "M627 438L627 441L626 442L625 446L622 448L620 455L620 456L621 459L621 461L621 464L619 465L615 463L614 462L613 462L613 464L614 465L618 465L621 468L616 466L613 465L606 464L608 462L609 461L607 460L605 461L602 458L600 458L599 461L598 461L596 463L601 463L601 464L592 466L590 467L589 469L588 470L584 471L582 472L580 472L578 473L574 474L570 476L567 478L563 478L561 479L559 479L556 477L552 477L548 475L547 474L543 472L540 471L538 471L535 471L529 470L525 467L518 463L513 462L509 461L514 457L514 455L517 453L518 451L519 450L521 449L522 447L523 445L522 443L520 442L520 438L517 437L517 435L518 434L518 429L515 424L515 421L517 417L518 416L520 414L522 414L525 414L527 413L529 415L531 415L532 413L530 410L532 406L535 405L535 407L534 408L535 409L538 413L538 415L540 415L541 413L543 411L545 410L548 411L552 408L554 407L557 403L559 400L559 397L561 399L560 400L561 403L564 406L565 405L566 406L567 408L569 409L571 409L573 409L576 410L577 411L578 414L576 419L575 420L575 422L577 427L579 427L580 426L583 426L586 424L590 423L591 422L593 423L591 424L591 426L593 429L595 431L597 432L599 435L598 436L609 437L627 438Z" },
+  "MX-NLE": { name: "Nuevo León", d: "M480 149L478 151L475 152L474 154L477 155L479 155L478 157L479 158L479 162L480 163L481 166L479 167L478 170L481 172L481 177L483 177L484 179L486 179L487 184L489 186L491 189L493 188L494 192L498 192L500 195L501 196L503 194L508 194L509 197L509 200L510 202L509 204L510 208L513 209L511 212L509 213L506 215L502 216L500 219L497 219L496 218L493 221L494 223L494 225L492 226L492 227L488 228L487 229L486 229L484 231L481 233L479 234L478 236L481 237L482 240L481 245L483 248L484 252L485 252L486 255L484 254L483 256L481 257L478 256L476 258L475 261L474 262L473 264L474 268L470 268L470 270L466 270L463 272L462 272L460 269L460 264L459 263L460 260L460 257L459 255L460 251L459 248L456 245L456 244L454 241L456 240L455 238L452 237L451 235L452 234L453 231L452 229L451 227L451 224L453 225L453 222L452 219L454 216L456 215L457 214L458 214L460 216L463 217L465 217L466 215L464 212L461 212L461 211L457 208L456 204L454 204L452 203L451 202L451 199L452 196L449 194L448 191L446 189L441 184L442 183L444 181L445 178L446 177L449 177L451 176L455 175L456 173L457 173L458 170L457 165L455 164L454 165L453 167L451 165L450 162L451 160L453 158L455 158L457 157L459 157L460 156L459 154L461 151L462 149L463 148L467 148L472 149L475 148L477 146L478 147L480 149Z" },
+  "MX-NAY": { name: "Nayarit", d: "M305 313L308 314L309 316L308 317L306 316L305 313ZM363 294L363 296L364 298L363 303L364 306L365 306L368 308L368 309L369 312L373 313L374 314L375 317L377 318L377 320L377 324L376 325L374 326L372 327L371 328L366 328L366 332L365 337L363 338L364 342L361 339L360 338L358 335L354 334L353 333L350 332L347 335L345 334L343 335L342 338L339 341L338 339L337 340L334 338L335 336L339 332L340 332L341 330L341 327L341 323L342 320L341 318L340 318L336 316L335 314L334 311L331 306L330 303L330 300L333 302L335 303L335 301L331 298L331 297L331 292L330 289L332 290L335 291L336 290L335 286L334 285L334 282L335 280L336 277L337 276L339 279L341 278L342 277L344 279L347 279L348 282L349 282L349 285L346 287L345 288L347 291L348 292L351 288L352 290L354 291L356 293L357 295L359 296L360 295L363 294ZM310 319L312 319L312 321L309 319L310 319Z" },
+  "MX-MOR": { name: "Morelos", d: "M501 385L503 388L506 389L508 387L509 386L508 388L506 395L508 402L507 403L504 400L502 402L501 403L499 405L496 403L491 402L489 399L486 399L486 397L488 394L491 388L492 385L494 385L495 386L497 385L498 386L501 385Z" },
+  "MX-MIC": { name: "Michoacán", d: "M464 352L466 354L466 355L469 359L469 361L470 363L469 364L468 367L466 368L467 371L467 374L467 376L466 377L466 380L464 382L462 386L460 387L459 389L457 391L455 393L455 392L453 393L454 398L454 401L457 405L456 406L451 403L449 404L447 401L445 401L440 400L438 401L434 401L433 401L432 399L430 398L427 400L426 399L425 401L425 404L425 405L425 407L422 409L421 409L419 410L418 411L418 415L419 416L417 417L415 416L410 414L402 412L397 410L394 409L391 408L385 406L384 404L382 401L379 398L380 398L378 396L379 394L381 393L381 390L382 391L385 388L388 388L390 386L392 388L394 386L396 385L400 381L402 381L404 381L405 379L406 377L407 376L406 374L403 374L404 371L402 367L403 365L402 362L398 361L395 361L396 359L396 357L397 356L400 356L401 357L405 356L405 354L407 353L408 353L411 351L416 351L418 350L421 350L422 350L423 354L425 355L428 354L429 354L431 352L433 351L436 351L436 353L437 359L442 360L443 358L445 359L447 358L448 361L452 362L456 362L457 361L463 359L464 358L463 357L464 355L463 353L464 352Z" },
+  "MX-MEX": { name: "México", d: "M506 372L507 374L508 374L509 376L508 379L509 382L509 386L508 387L506 389L503 388L501 385L502 383L501 380L498 378L497 375L495 373L493 375L493 377L490 379L490 381L492 385L491 388L488 394L486 397L485 397L483 396L479 397L477 400L473 400L471 401L472 402L470 403L467 405L466 405L464 402L461 401L463 400L462 397L461 397L461 395L461 391L462 389L462 386L464 382L466 380L466 377L467 376L467 374L467 371L466 368L468 367L469 364L470 363L469 361L469 359L472 358L474 356L474 354L475 352L476 351L477 353L481 355L485 355L487 359L486 360L487 361L490 367L490 364L492 365L493 364L493 361L494 360L497 359L501 358L501 359L500 364L498 365L500 368L502 365L508 364L508 366L506 371L506 372Z" },
+  "MX-JAL": { name: "Jalisco", d: "M403 313L405 312L409 313L411 314L413 315L414 315L418 313L421 310L425 308L423 306L423 303L426 304L429 305L431 308L434 309L433 311L432 313L431 319L432 322L430 324L429 323L427 328L425 330L424 333L419 339L421 340L423 343L421 347L421 350L418 350L416 351L411 351L408 353L407 353L405 354L405 356L401 357L400 356L397 356L396 357L396 359L395 361L398 361L402 362L403 365L402 367L404 371L403 374L406 374L407 376L406 377L405 379L404 381L402 381L400 381L396 385L394 386L392 388L390 386L388 388L385 388L385 386L384 385L384 383L384 379L383 376L382 372L379 374L376 376L372 376L370 377L368 378L366 378L364 379L361 379L360 380L358 380L357 382L355 382L352 381L352 379L350 379L348 378L346 376L344 372L340 368L338 365L334 359L333 357L333 353L330 351L329 348L331 347L333 346L339 346L340 344L341 343L339 341L342 338L343 335L345 334L347 335L350 332L353 333L354 334L358 335L360 338L361 339L364 342L363 338L365 337L366 332L366 328L371 328L372 327L374 326L376 325L377 324L377 320L377 318L375 317L374 314L373 313L369 312L368 309L368 308L365 306L364 306L363 303L364 298L365 297L367 296L367 294L370 293L371 293L370 296L372 296L373 295L372 293L371 289L371 288L373 287L375 286L377 287L377 288L376 289L374 292L373 295L373 298L374 300L375 301L376 300L376 292L380 291L383 293L383 296L380 302L380 304L382 304L383 303L385 304L386 301L389 299L388 298L388 296L390 296L392 296L392 299L394 299L395 300L394 304L393 306L388 308L386 310L383 312L383 317L381 319L379 319L380 322L382 322L383 322L383 324L378 326L378 327L380 328L382 330L385 331L388 332L392 331L393 331L395 330L395 328L397 327L399 328L402 325L405 323L406 322L406 319L403 317L403 316L403 313Z" },
+  "MX-HID": { name: "Hidalgo", d: "M510 321L511 323L510 325L512 326L515 327L516 326L518 327L520 331L518 333L518 335L518 337L517 337L515 336L512 338L511 339L511 343L510 347L512 350L514 349L517 347L519 345L520 344L522 342L525 343L525 346L522 348L521 350L517 351L518 353L520 353L521 355L520 360L518 363L519 368L517 367L514 370L511 370L506 372L506 371L508 366L508 364L502 365L500 368L498 365L500 364L501 359L501 358L497 359L494 360L493 361L493 364L492 365L490 364L490 367L487 361L486 360L487 359L485 355L481 355L477 353L476 351L477 344L483 343L485 341L484 339L485 336L487 334L489 331L488 329L490 328L491 329L496 327L497 324L499 323L500 326L503 327L504 325L505 326L506 323L508 321L510 321Z" },
+  "MX-GRO": { name: "Guerrero", d: "M486 397L486 399L489 399L491 402L496 403L499 405L499 406L501 408L502 411L505 410L505 412L509 414L509 415L514 414L515 416L517 417L515 421L515 424L518 429L518 434L517 435L517 437L520 438L520 442L522 443L523 445L522 447L521 449L519 450L518 451L517 453L514 455L514 457L509 461L504 454L500 455L493 453L486 451L482 451L479 449L477 448L475 447L474 445L463 441L456 438L446 435L446 433L442 430L436 428L436 427L435 425L433 425L431 424L431 422L429 420L427 418L423 416L421 415L419 416L418 415L418 411L419 410L421 409L422 409L425 407L425 405L425 404L425 401L426 399L427 400L430 398L432 399L433 401L434 401L438 401L440 400L445 401L447 401L449 404L451 403L456 406L457 405L454 401L454 398L453 393L455 392L455 393L457 391L459 389L460 387L462 386L462 389L461 391L461 395L461 397L462 397L463 400L461 401L464 402L466 405L467 405L470 403L472 402L471 401L473 400L477 400L479 397L483 396L485 397L486 397Z" },
+  "MX-GUA": { name: "Guanajuato", d: "M478 318L479 321L477 323L480 323L479 326L476 328L474 326L473 327L470 330L470 333L468 334L465 334L464 335L459 335L458 338L458 340L460 344L460 346L461 348L463 350L464 352L463 353L464 355L463 357L464 358L463 359L457 361L456 362L452 362L448 361L447 358L445 359L443 358L442 360L437 359L436 353L436 351L433 351L431 352L429 354L428 354L425 355L423 354L422 350L421 350L421 347L423 343L421 340L419 339L424 333L425 330L427 328L429 323L430 324L432 322L431 319L432 313L433 311L434 309L435 309L437 309L440 310L441 310L446 312L449 313L451 315L456 318L458 317L460 317L460 314L461 313L465 314L469 317L471 319L476 319L478 318Z" },
+  "MX-DUR": { name: "Durango", d: "M375 174L379 176L383 180L385 184L384 188L386 192L386 196L387 200L386 204L383 207L384 209L386 210L384 211L383 212L383 215L385 217L386 219L388 221L389 224L390 226L394 228L397 228L399 229L400 228L399 227L400 224L403 221L404 223L405 225L407 227L406 232L408 232L409 236L408 238L402 239L400 238L400 239L395 238L392 239L390 238L386 238L384 240L382 242L380 245L377 247L375 248L376 251L376 255L375 256L376 260L374 263L371 266L371 268L370 274L368 277L368 278L369 281L369 283L368 288L365 289L364 291L363 294L360 295L359 296L357 295L356 293L354 291L352 290L351 288L348 292L347 291L345 288L346 287L349 285L349 282L348 282L347 279L344 279L342 277L341 278L339 279L337 276L335 274L331 274L330 270L328 267L329 266L328 264L327 261L325 259L323 256L323 253L322 252L320 247L320 245L317 240L315 239L311 238L310 239L305 242L304 242L302 238L302 234L300 234L299 229L298 229L297 227L294 227L293 224L291 219L290 219L290 217L290 212L291 209L290 207L292 205L292 203L295 202L296 204L301 205L302 206L303 204L307 202L309 199L308 196L307 195L309 191L309 189L311 187L313 186L314 184L314 182L314 180L315 174L317 173L317 172L320 173L323 174L324 176L326 178L327 177L331 180L333 180L333 181L335 181L337 182L341 180L346 180L348 182L351 183L353 183L355 183L355 180L357 177L358 177L361 174L361 172L366 175L373 173L375 174Z" },
+  "MX-CMX": { name: "Ciudad de México", d: "M501 385L498 386L497 385L495 386L494 385L492 385L490 381L490 379L493 377L493 375L495 373L497 375L498 378L501 380L502 383L501 385Z" },
+  "MX-COL": { name: "Colima", d: "M385 388L382 391L381 390L381 393L379 394L378 396L377 394L373 391L368 388L364 387L364 385L363 384L361 384L355 382L357 382L358 380L360 380L361 379L364 379L366 378L368 378L370 377L372 376L376 376L379 374L382 372L383 376L384 379L384 383L384 385L385 386L385 388Z" },
+  "MX-COA": { name: "Coahuila", d: "M477 146L475 148L472 149L467 148L463 148L462 149L461 151L459 154L460 156L459 157L457 157L455 158L453 158L451 160L450 162L451 165L453 167L454 165L455 164L457 165L458 170L457 173L456 173L455 175L451 176L449 177L446 177L445 178L444 181L442 183L441 184L446 189L448 191L449 194L452 196L451 199L451 202L452 203L454 204L456 204L457 208L461 211L461 212L464 212L466 215L465 217L463 217L460 216L458 214L457 214L456 215L454 216L452 219L453 222L453 225L451 224L451 227L452 229L453 231L452 234L450 234L447 235L445 235L444 233L442 230L441 229L438 228L435 229L434 230L431 229L431 226L428 226L426 223L424 222L422 221L419 219L410 218L403 220L403 221L400 224L399 227L400 228L399 229L397 228L394 228L390 226L389 224L388 221L386 219L385 217L383 215L383 212L384 211L386 210L384 209L383 207L386 204L387 200L386 196L386 192L384 188L385 184L383 180L379 176L375 174L374 172L372 171L372 168L376 167L376 165L374 164L374 159L373 155L373 152L372 152L371 147L372 146L371 145L372 143L371 142L373 141L374 138L378 130L377 129L380 124L383 122L385 118L386 118L387 117L385 116L387 112L391 113L394 113L395 110L396 110L397 107L399 107L400 106L400 103L402 101L401 100L404 95L405 92L410 91L412 91L414 88L418 89L419 90L421 91L422 90L425 90L427 90L431 91L434 91L436 91L438 93L441 95L441 98L443 98L444 99L446 100L447 102L450 104L453 105L454 108L456 110L456 114L459 118L460 122L463 124L462 125L464 127L464 129L465 131L465 132L467 134L471 136L472 138L473 140L475 142L476 145L477 146Z" },
+  "MX-CHH": { name: "Chihuahua", d: "M387 112L385 116L387 117L386 118L385 118L383 122L380 124L377 129L378 130L374 138L373 141L371 142L372 143L371 145L372 146L371 147L372 152L373 152L373 155L374 159L374 164L376 165L376 167L372 168L372 171L374 172L375 174L373 173L366 175L361 172L361 174L358 177L357 177L355 180L355 183L353 183L351 183L348 182L346 180L341 180L337 182L335 181L333 181L333 180L331 180L327 177L326 178L324 176L323 174L320 173L317 172L317 173L315 174L314 180L314 182L314 184L313 186L311 187L309 189L309 191L307 195L308 196L309 199L307 202L303 204L302 206L301 205L296 204L295 202L292 203L290 200L290 197L287 192L284 192L281 191L278 190L276 186L275 184L273 181L272 178L271 177L271 172L270 169L269 169L269 167L268 166L263 166L261 166L259 167L255 165L256 164L256 161L257 157L257 156L254 148L250 146L251 144L251 142L249 139L246 138L247 135L245 133L246 132L249 132L250 131L253 132L256 131L258 129L256 128L254 125L255 124L254 122L254 120L256 117L255 115L256 114L256 111L257 110L257 107L259 107L258 101L259 99L259 97L259 90L257 90L257 85L259 82L257 79L258 76L256 69L255 67L256 66L255 65L255 62L253 61L254 59L254 56L254 54L252 50L253 49L252 48L266 48L266 36L285 36L308 36L309 37L312 37L314 40L314 42L316 44L320 46L321 46L323 48L325 49L327 53L332 55L333 58L336 60L337 61L340 63L341 63L345 65L346 66L347 68L349 69L350 71L350 74L354 78L355 80L354 84L355 87L356 88L358 92L358 94L363 98L365 98L367 99L368 101L373 104L376 104L378 105L379 107L381 108L383 108L387 112Z" },
+  "MX-CHP": { name: "Chiapas", d: "M621 464L621 461L621 459L620 456L620 455L622 448L625 446L626 442L627 441L627 438L628 437L630 436L634 433L636 430L636 428L639 425L640 422L640 419L640 416L642 415L645 417L647 418L649 418L649 420L648 423L650 426L650 428L653 429L654 432L656 432L660 429L662 428L667 423L669 422L669 420L670 419L674 419L674 418L677 418L679 418L680 420L680 422L683 423L684 427L683 429L684 430L686 430L689 432L690 434L689 435L691 438L694 439L695 442L698 445L701 446L703 448L707 450L708 452L708 456L710 457L712 457L712 458L714 458L715 460L713 464L714 468L698 468L681 467L672 484L669 490L673 495L672 497L671 498L671 500L670 502L671 506L669 509L669 510L664 506L653 493L648 488L641 481L635 476L632 474L626 470L628 469L626 467L622 466L621 464Z" },
+  "MX-CAM": { name: "Campeche", d: "M686 393L683 396L681 397L679 397L678 396L681 396L686 393ZM715 338L715 345L718 346L720 348L721 348L722 349L724 347L726 349L726 351L728 352L730 357L734 359L735 362L738 365L739 369L741 371L744 374L747 377L749 381L749 387L748 388L748 391L747 395L747 397L748 399L749 401L748 403L749 404L749 408L748 411L746 414L746 416L746 420L731 420L714 420L700 420L700 418L693 415L691 414L688 413L685 413L684 417L681 418L679 417L676 416L676 415L672 412L669 407L669 405L668 404L667 404L664 401L662 397L664 396L674 395L675 396L676 397L678 398L677 399L676 398L675 399L678 401L685 403L686 402L687 401L692 399L692 396L693 395L692 393L691 394L690 392L689 390L696 386L697 385L701 383L705 379L706 377L707 374L707 372L707 370L707 369L708 366L712 363L713 361L712 358L713 357L712 349L712 346L713 342L714 339L715 338Z" },
+  "MX-BCS": { name: "Baja California Sur", d: "M167 215L167 216L166 219L166 223L166 225L165 228L163 228L165 222L167 215ZM116 141L117 141L150 141L151 143L153 146L155 149L160 151L162 153L163 157L164 158L165 161L168 163L172 165L170 166L170 168L172 170L174 172L174 173L173 175L174 176L176 179L177 180L179 179L175 175L174 171L175 170L177 171L179 174L181 176L181 179L184 180L184 183L186 185L186 188L188 193L187 196L188 201L190 203L191 205L193 208L195 208L195 210L196 213L197 214L198 218L202 223L204 227L203 230L202 233L202 236L203 237L204 240L205 243L207 244L210 245L210 247L213 245L212 242L213 240L215 240L216 243L219 244L221 245L221 248L223 249L225 248L226 249L225 252L228 255L228 257L229 259L233 261L235 265L235 271L232 274L229 275L228 277L226 278L225 279L223 281L222 281L219 279L218 276L217 269L213 263L211 261L207 259L204 257L200 251L194 247L189 243L183 240L182 239L180 238L179 234L178 235L176 235L174 232L172 230L170 229L168 228L166 226L166 225L167 221L166 220L167 218L168 215L168 209L169 208L169 204L165 195L165 194L163 193L162 190L160 188L158 188L152 185L143 178L143 177L140 173L142 170L140 168L140 171L139 172L138 174L137 173L133 172L131 175L129 175L128 173L127 173L125 169L123 168L121 167L120 168L118 165L115 163L111 163L108 161L108 157L107 156L105 154L101 153L100 151L97 149L96 148L95 147L93 145L97 144L102 145L105 146L107 146L113 143L112 146L113 147L116 149L118 150L119 148L121 149L123 152L124 151L122 149L123 148L123 145L121 144L120 146L120 147L117 148L115 147L115 145L117 143L116 141ZM212 235L213 237L213 239L211 237L212 235ZM171 235L174 235L175 237L177 238L178 240L178 241L171 235ZM223 239L226 245L224 246L223 243L223 239ZM194 193L193 195L191 197L190 197L191 195L191 194L194 193ZM203 219L204 221L206 221L207 226L204 224L203 221L203 219ZM196 391L198 393L198 395L195 394L194 393L196 391Z" },
+  "MX-BCN": { name: "Baja California", d: "M131 97L133 98L135 100L136 102L136 104L141 104L141 109L141 110L143 111L142 113L139 110L138 108L135 106L134 105L132 103L130 100L131 97ZM89 129L91 133L91 136L90 139L89 139L87 137L87 136L89 134L88 132L89 129ZM117 141L116 141L115 142L113 141L116 138L116 140L117 141ZM99 16L97 16L96 20L94 22L95 24L95 26L95 28L94 31L100 35L99 36L100 40L99 41L98 44L98 47L98 50L98 53L98 55L100 56L99 57L102 59L102 62L102 67L104 71L104 77L103 79L105 83L107 86L110 88L110 90L111 92L113 91L115 92L116 93L120 97L124 100L126 101L129 104L129 107L131 109L132 111L131 114L132 115L133 114L136 115L136 118L139 117L140 118L141 122L142 122L143 126L145 127L148 127L149 128L148 132L150 135L150 136L150 139L151 141L151 143L150 141L118 141L119 139L117 138L117 137L118 135L118 133L117 133L119 128L118 126L115 122L114 121L111 119L110 116L108 114L106 114L105 113L104 110L102 109L101 107L99 106L95 102L93 101L90 100L88 98L85 97L83 95L82 95L80 93L79 93L77 91L77 88L76 86L74 86L75 82L75 81L75 77L74 75L72 74L68 72L69 67L68 63L65 61L63 58L61 58L62 53L60 49L58 48L56 45L53 43L52 42L53 39L53 37L54 37L54 34L51 32L50 31L47 29L47 26L46 23L43 22L41 16L41 15L63 13L78 12L102 10L100 13L99 16ZM13 107L12 109L13 110L13 114L12 115L11 111L10 110L10 108L13 107Z" },
+  "MX-AGU": { name: "Aguascalientes", d: "M403 313L400 311L400 310L402 307L404 303L406 299L409 298L412 296L415 293L415 295L418 297L421 299L421 300L423 303L423 306L425 308L421 310L418 313L414 315L413 315L411 314L409 313L405 312L403 313Z" },
+};
+
+
+const CORTE_FECHA = "2026-09-21";
+
+const EVENTOS = [
+  { id:"ARG-122-001", estado:"MX-CHP", region:"Sureste", color:"rojo", impacto:"grande",
+    hecho:"Tuxtla Gutiérrez, Chiapas, colonia LAS GRANJAS, NOCHE DEL VIERNES 18-SEP: agresores en motocicleta disparan contra un grupo reunido en una CANCHA DE FUTBOL (🔴). DOS HOMBRES Y UNA MUJER MUERTOS y TRES HERIDOS, entre ellos UN NIÑO con disparo en la cabeza. ROJO POR TRES AGRAVANTES CONCURRENTES: víctimas múltiples, menor de edad entre las víctimas y ejecución pública. EDAD DEL MENOR CONTRADICHA Y ARBITRADA POR PROCEDENCIA: se adopta 10 AÑOS, la cifra atribuida expresamente al Fiscal General de Chiapas, frente a los 12 de otra cobertura. MÓVIL PUBLICADO POR LA FGE: disputa por el control del narcomenudeo en la zona norte-oriente. UN DELITO Y SU DETENCIÓN SON DOS EVENTOS: las quince detenciones son ARG-122-008, en verde, y NO SE SUMAN. DESLINDE: «Las Granjas» no figura en el índice, que cubre de ARGOS 91 en adelante",
+    fuentes:["FGE Chiapas (por cita del Fiscal General)","Infobae (fecha en la ruta)","El Universal","Proceso","El Heraldo de México (fecha en la ruta)","SinEmbargo","La Silla Rota (fecha en la ruta)","Alerta Chiapas (fecha en la ruta)","ZOLO Noticias (fecha en la ruta)"], confianza:"★★★☆☆", fecha:"2026-09-18", hora:"noche, sin minuto fijado" },
+
+  { id:"ARG-122-002", estado:"MX-GUA", region:"Occidente", color:"rojo", impacto:"grande",
+    hecho:"Celaya, Guanajuato, DOS ATAQUES ARMADOS entre la NOCHE DEL VIERNES 18-SEP y la MAÑANA DEL SÁBADO 19-SEP (🔴). (a) Calle Francisco Villa, comunidad de MANCERA: un grupo armado asesina a JORGE, 28 AÑOS, y a CRISTIAN, 13 AÑOS, e hiere a TRES MUJERES —Marlén, Carmen y María, esta última de 80 AÑOS—. (b) Mercado de la zona centro, sábado ~09:00: sujetos armados disparan contra comerciantes; muere RAÚL, presunto propietario de una carnicería, y resultan heridos UN EMPLEADO y UN POLICÍA MUNICIPAL. TOTAL: 3 MUERTOS Y 5 HERIDOS. ROJO POR CUATRO AGRAVANTES CONCURRENTES: víctimas múltiples, menor de 13 años entre las víctimas, policía municipal herido y ejecución pública en un mercado. CIFRA DE TERCERO NO ADOPTADA: «15 homicidios dolosos con arma de fuego entre viernes y sábado en Celaya, Salamanca, Irapuato, León y Valle de Santiago» es un agregado de medios, sin emisor institucional. DESLINDE: Celaya SÍ figura en el índice —ARG-95-002, ARG-98-003 y ARG-103-REC-006—; otras fechas y otro tipo de evento",
+    fuentes:["FGE Guanajuato (por cita)","El Universal","Vanguardia","Diario de Yucatán (fecha en la ruta)","UnoTV","Azteca Bajío","El Tiempo Monclova"], confianza:"★★★☆☆", fecha:"2026-09-18", hora:"noche del 18 y ~09:00 del 19" },
+
+  { id:"ARG-122-003", estado:"MX-GUA", region:"Occidente", color:"rojo", impacto:"grande",
+    hecho:"Valle de Santiago, Guanajuato, comunidad DURANES DE ARRIBA, cerca del límite municipal con PUEBLO NUEVO, DOMINGO 20-SEP ~16:00: DOS SUJETOS EN MOTOCICLETA irrumpen en un CAMPO DE BÉISBOL y disparan de forma directa y repetida contra varias personas (🔴). CIFRA DE VÍCTIMAS CONTRADICHA Y NO ARBITRADA: CUATRO MUERTOS Y CINCO HERIDOS según La Silla Rota, El Financiero y Periódico AM; TRES MUERTOS Y CINCO HERIDOS según Periódico Correo y Guanajuato Informa. LA FGE DE GUANAJUATO NO PUBLICÓ CIFRA: sin emisor institucional no se arbitra por mayoría. GN y Ejército acordonaron el sitio. ROJO POR VÍCTIMAS MÚLTIPLES Y EJECUCIÓN PÚBLICA. SEGUNDO ATAQUE DEL CORTE CONTRA UN ESPACIO DEPORTIVO COMUNITARIO, tras Las Granjas: el patrón se registra, la vinculación NO se afirma. DESLINDE: ni «Valle de Santiago» ni «Duranes» figuran en el índice, que cubre de ARGOS 91 en adelante",
+    fuentes:["FGE Guanajuato (SIN CIFRA PUBLICADA)","La Silla Rota (fecha en la ruta)","El Financiero (fecha en la ruta)","Periódico AM (fecha en la ruta)","Milenio","Periódico Correo (fecha en la ruta)","Guanajuato Informa","Notus"], confianza:"★★☆☆☆", fecha:"2026-09-20", hora:"~16:00" },
+
+  { id:"ARG-122-004", estado:"MX-NLE", region:"Noreste", color:"rojo", impacto:"grande",
+    hecho:"Los Aldamas, Nuevo León, SÁBADO 19-SEP: sujetos armados DISPARAN CONTRA PERSONAL DE FUERZA CIVIL AL SER DETECTADOS EN PATRULLAJE del OPERATIVO MURALLA (🔴). CUATRO AGRESORES ABATIDOS, CERO DETENIDOS, CERO POLICÍAS HERIDOS. Asegurado: 4 ARMAS LARGAS —una identificada como FUSIL BARRETT CAL. .50—, 1 vehículo, cargadores y cartuchos SIN CIFRA PUBLICADA. ROJO POR QUIÉN INICIA: el grupo criminal agrede a personal en patrullaje; es la fila roja de la tabla, no un operativo repelido. EL NÚMERO DE ABATIDOS NO MUEVE EL COLOR, NI AL ALZA NI A LA BAJA. SIN COMUNICADO PROPIO DE FUERZA CIVIL NI DEL GOBIERNO DE NUEVO LEÓN. DESLINDE OBLIGATORIO: NO es ARG-120-ARM-003 (General Treviño, 14-sep, 7 armas, 2 detenidos, mismo Operativo Muralla): otro municipio, otra fecha y otro desglose",
+    fuentes:["Fuerza Civil NL (por cita, sin comunicado)","El Universal","Milenio","MVS Noticias (fecha en la ruta)","Vanguardia","ABC Noticias","Posta"], confianza:"★★★☆☆", fecha:"2026-09-19", hora:"no fijada" },
+
+  { id:"ARG-122-005", estado:"MX-SIN", region:"Noroeste", color:"rojo", impacto:"grande",
+    hecho:"Sierra de Sinaloa, EN LOS LÍMITES CON DURANGO, SÁBADO 19-SEP: CIVILES ARMADOS A BORDO DE SEIS CAMIONETAS AGREDEN CON ARMAS DE FUEGO A PERSONAL DE LA SEMAR Y DE LA SSPC FEDERAL que realizaba recorridos de vigilancia (🔴). ROJO POR QUIÉN INICIA: la agresión la inicia el grupo criminal contra personal en patrullaje. SIN BAJAS PUBLICADAS DEL LADO INSTITUCIONAL. MUNICIPIO NO ESPECIFICADO POR NINGUNA FUENTE: el dato no es explotable para patrullaje sin él. UN DELITO Y SU RESPUESTA SON DOS EVENTOS: el aseguramiento y las nueve detenciones son ARG-122-009, en verde, y NO SE SUMAN. ATRIBUCIÓN NO ADOPTADA: la adscripción de los agresores a una facción del Cártel de Sinaloa la publican los medios, no un comunicado",
+    fuentes:["SSPC federal y SEMAR (por cita)","Proceso (fecha en la ruta)","Excélsior","El Heraldo de México (fecha en la ruta)","La Silla Rota (fecha en la ruta)","Tribuna (fecha en la ruta)","En Blanco y Negro (fecha en la ruta)","Diario de Juárez (fecha en la ruta)"], confianza:"★★★☆☆", fecha:"2026-09-19", hora:"no fijada" },
+
+  { id:"ARG-122-006", estado:"MX-OAX", region:"Sureste", color:"amarillo", impacto:"mediano",
+    hecho:"Juchitán de Zaragoza, Oaxaca, NOCHE DEL VIERNES 18-SEP: UN HOMBRE Y UNA MUJER EN MOTOCICLETA DISPARAN CONTRA LA FACHADA DE LA VIVIENDA Y TALLER DE ELVIS GUERRA, DISEÑADOR Y ARTISTA MUXE (🟡). SIN HERIDOS NI MUERTOS; DAÑO MATERIAL. LA FGE DE OAXACA ATRIBUYE EL ATAQUE A UN INTENTO DE EXTORSIÓN PREVIO e informa haber identificado a presuntos responsables. AMARILLO: agresión armada focalizada sin víctimas; NO CONCURRE NINGUNA AGRAVANTE DE LA LISTA ROJA. CONTEXTO PUBLICADO Y NO ADOPTADO COMO MÓVIL: la víctima vistió a la Presidenta para el Grito de Independencia. DESLINDE: «Juchitán» no figura en el índice, que cubre de ARGOS 91 en adelante",
+    fuentes:["FGE Oaxaca (por cita)","Infobae (fecha en la ruta)","El Heraldo de México — Oaxaca (fecha en la ruta)","Sinaloa Hoy"], confianza:"★★★☆☆", fecha:"2026-09-18", hora:"noche, sin minuto fijado" },
+
+  { id:"ARG-122-007", estado:"MX-SON", region:"Noroeste", color:"amarillo", impacto:"grande",
+    hecho:"Puerto Peñasco, Sonora, VIERNES 18-SEP: elementos estatales y federales despliegan un operativo con TIROTEO Y PERSECUCIÓN A PIE y aseguran una CASA DE SEGURIDAD en el fraccionamiento CERRADA DEL SOL (🟡). TRES PERSONAS PRIVADAS DE LA LIBERTAD, RESCATADAS CON VIDA, de OCHO SECUESTRADAS dedicadas a la minería artesanal en la región de SIERRA PINTA. DETENIDOS CONTRADICHOS Y ARBITRADOS POR PROCEDENCIA: se adoptan SIETE, la cifra atribuida expresamente al titular de la SSPC federal, frente a los DIEZ de la cobertura regional. EL SÁBADO 19-SEP, SEGUNDA INTERVENCIÓN CON ORDEN DE CATEO de un Juez de Control Penal Oral del Primer Distrito Judicial: «MÁS DE 40 ARMAS LARGAS» —incluidas DOS AMETRALLADORAS MINIMI—, CINCO ARMAS CORTAS, UNA AMETRALLADORA BROWNING M-2 CAL. .50, calibres 5.56, .223 y 7.62×39, «casi cuatro mil» cartuchos, ARTEFACTOS EXPLOSIVOS IMPROVISADOS SIN CIFRA, equipo táctico, heroína y vehículos de gama alta con reporte de robo en Estados Unidos. LA NOCHE DEL 19 Y LA MADRUGADA DEL 20 SE EJECUTARON DOS CATEOS MÁS. CIFRA DE LARGAS: se integran solo LAS DOS MINIMI, única cantidad expresa; «MÁS DE 40» NO ES CIFRA Y NO SE INTEGRA; LA CIFRA PRELIMINAR DE 33 QUEDÓ SUPERADA POR EL RELATO POSTERIOR DE LA AUTORIDAD. LOS SIETE DETENIDOS SON DEL 18-SEP Y EL ARSENAL DEL CATEO DEL 19: NO SE INTEGRAN AL CONTEO DE ARMAMENTO. AMARILLO: confrontación derivada de un operativo que inició la autoridad",
+    fuentes:["SSPC federal (por cita del titular)","El Imparcial (fecha en la ruta)","UnoTV","La Silla Rota (fecha en la ruta)","El Heraldo de México (fecha en la ruta)","Proyecto Puente (fecha en la ruta)","TV Azteca","Expreso","RED Michoacán (fecha en la ruta)","En Blanco y Negro (fecha en la ruta)"], confianza:"★★★☆☆", fecha:"2026-09-18", hora:"no fijada" },
+
+  { id:"ARG-122-008", estado:"MX-CHP", region:"Sureste", color:"verde", impacto:"grande",
+    hecho:"Tuxtla Gutiérrez, Chiapas, 20 Y 21-SEP: LA FGE DE CHIAPAS DETIENE A QUINCE PERSONAS por el ataque de Las Granjas (🟢). AUTORES MATERIALES SEÑALADOS: JESÚS «N», 21 AÑOS, conductor de la motocicleta, y UN ADOLESCENTE DE 17 AÑOS, que habría disparado. AUTORES INTELECTUALES SEÑALADOS: JOSÉ LUIS «N», «EL BEBÉ», 32 AÑOS, líder de la célula que controla puntos de venta al menudeo en la zona, y LIMBERG «N», «EL HUESO», QUE YA CUMPLE SENTENCIA POR HOMICIDIO CALIFICADO EN EL PENAL DE OCOSINGO Y HABRÍA ORDENADO EL ATAQUE DESDE PRISIÓN. Asegurado: 1 ARMA CORTA, 1 motocicleta y cascos. LOS QUINCE DETENIDOS NO SE INTEGRAN AL CONTEO DE ARMAMENTO: la autoridad no desglosa cuántos fueron detenidos en el mismo evento de aseguramiento. UN DELITO Y SU DETENCIÓN SON DOS EVENTOS: el ataque es ARG-122-001, en rojo, y NO SE SUMA",
+    fuentes:["FGE Chiapas (por cita del Fiscal General Jorge Luis Llaven Abarca)","Infobae (fecha en la ruta)","El Universal","SinEmbargo","Alerta Chiapas (fecha en la ruta)","El Sol del Soconusco (fecha en la ruta)","El Heraldo de San Luis Potosí (fecha en la ruta)","KCH Comunicación (fecha en la ruta)","El Congresista"], confianza:"★★★☆☆", fecha:"2026-09-20", hora:"no fijada" },
+
+  { id:"ARG-122-009", estado:"MX-SIN", region:"Noroeste", color:"verde", impacto:"grande",
+    hecho:"Sierra de Sinaloa, EN LOS LÍMITES CON DURANGO, SÁBADO 19-SEP: repelida la agresión, SEMAR y SSPC federal DETIENEN A NUEVE PERSONAS, ENTRE ELLAS UN MENOR DE EDAD (🟢). Asegurado: 17 ARMAS LARGAS —INCLUIDA UNA AMETRALLADORA—, 127 CARGADORES, LANZAGRANADAS de cantidad NO DETERMINADA, 40 ARTEFACTOS EXPLOSIVOS IMPROVISADOS, cartuchos SIN CIFRA y equipo táctico. ES EL MAYOR VOLUMEN DE ARMAS LARGAS, DE CARGADORES Y DE AEI DEL CORTE. CARGADORES Y CARTUCHOS NUNCA SE SUMAN ENTRE SÍ. ACCIÓN INSERTA EN EL REFUERZO DE SEGURIDAD DESPLEGADO EN MAZATLÁN Y OTRAS REGIONES. DESLINDE OBLIGATORIO: NO son los 53 AEI de MAZATLÁN del 15-sep (ARG-121-REC-003, SEDENA, sin detenidos) ni los 84 de LA NORIA DE SAN ANTONIO del 8-sep (SEMAR, Operación Sable): otra fecha, otra cifra, otra corporación y otra modalidad. MUNICIPIO NO ESPECIFICADO POR NINGUNA FUENTE",
+    fuentes:["SSPC federal y SEMAR (por cita)","Proceso (fecha en la ruta)","Excélsior","El Heraldo de México (fecha en la ruta)","La Silla Rota (fecha en la ruta)","En Blanco y Negro (fecha en la ruta)","Tribuna (fecha en la ruta)","Los Noticieristas (fecha en la ruta)","Azteca Sinaloa"], confianza:"★★★☆☆", fecha:"2026-09-19", hora:"no fijada" },
+
+  { id:"ARG-122-010", estado:"MX-CMX", region:"Centro", color:"verde", impacto:"mediano",
+    hecho:"Iztapalapa, Ciudad de México, VIERNES 18-SEP: LA SSC CAPITALINA Y LA FGJ CDMX, CON APOYO DE GUARDIA NACIONAL Y SEMAR, CATEAN DOS INMUEBLES vinculados a «LA UNIÓN TEPITO» (🟢). 3 DETENIDOS: una mujer de 61 años y dos hombres, de 63 y 41. Asegurado: 2 ARMAS CORTAS y 4 ARMAS LARGAS; cartuchos y cargadores NO PUBLICADOS. 4 kg de marihuana y metanfetamina a granel en rubro aparte. SIN BOLETÍN PROPIO DE ssc.cdmx.gob.mx INDEXADO EN LA VENTANA: la búsqueda dirigida no devolvió comunicado institucional. DESLINDE: NO es el doble homicidio del mercado 14 de TEPITO del 16-sep, que es de la ventana anterior y sigue SIN BOLETÍN de la SSC ni de la FGJ CDMX",
+    fuentes:["SSC CDMX y FGJ CDMX (por cita, sin boletín indexado)","El Heraldo de México (fecha en la ruta)","El Financiero (fecha en la ruta)","La Razón (fecha en la ruta)","La Silla Rota (fecha en la ruta)","Central Municipal (fecha en la ruta)"], confianza:"★★★☆☆", fecha:"2026-09-18", hora:"no fijada" },
+
+  { id:"ARG-122-011", estado:"MX-VER", region:"Golfo", color:"verde", impacto:"grande",
+    hecho:"Tempoal, Veracruz, CARRETERA TEMPOAL-HUEJUTLA DE REYES, límite con Hidalgo, DOMINGO 20-SEP: LA FGE DE VERACRUZ —trilogía investigadora— CON SEDENA, GUARDIA NACIONAL Y SSP ESTATAL EJECUTA UN CATEO POR ORDEN JUDICIAL en un inmueble descrito como casa de seguridad (🟢). Asegurado: 69 BOLSAS EMPAQUETADAS CON 59,400 BOLSAS HERMÉTICAS DE SUSTANCIAS PROHIBIDAS, ARMAS DE FUEGO, MATERIAL BALÍSTICO y GRANADAS. CERO DETENIDOS, expreso. ARMAS Y GRANADAS SIN CIFRA NI CALIBRE: CANTIDAD NO DETERMINADA, NO SE INTEGRA AL TOTAL NUMÉRICO; LA PRESENCIA DE GRANADAS SÍ SE REGISTRA. LA FGR ANUNCIÓ QUE ATRAERÁ EL CASO. DESLINDE OBLIGATORIO: Tempoal SÍ figura en el índice —ARG-116-005 y ARG-116-ARM-004, cateo del 4-sep con 3 detenidos y más de 15 millones de pesos en efectivo—: otra fecha, otros detenidos y otro objeto asegurado",
+    fuentes:["FGE Veracruz (por cita)","N+","Infobae (fecha en la ruta)","La Opinión","La Clave Online (fecha en la ruta)","XEU Noticias","Zócalo","Veracruz en Red","La Nigua"], confianza:"★★★☆☆", fecha:"2026-09-20", hora:"no fijada" },
+
+  { id:"ARG-122-012", estado:"MX-SLP", region:"Noreste", color:"verde", impacto:"mediano",
+    hecho:"San Luis Potosí, OPERATIVOS EN LAS CUATRO REGIONES DEL ESTADO, VIERNES 18-SEP: LA GUARDIA CIVIL ESTATAL DETIENE A 22 PERSONAS en un agregado de 24 horas (🟢). Asegurado: 1 ARMA DE FUEGO SIN TIPO PUBLICADO, 1 CARGADOR, cartuchos útiles SIN CIFRA, 198 gramos de marihuana, 19 dosis, 2 INHIBIDORES DE SEÑAL y 7 vehículos, dos con reporte de robo. LOS 22 DETENIDOS NO SE INTEGRAN AL CONTEO DE ARMAMENTO: el emisor NO desglosa cuántos corresponden al evento con arma asegurada, y un agregado de sub-eventos no atribuye detenidos a un aseguramiento concreto. EL ARMA VA COMO «SIN CATEGORÍA»: el boletín no dice si es corta o larga y no se infiere. POSIBLE DUPLICIDAD DECLARADA: un segundo boletín del mismo emisor, del 19-SEP, publica LA MISMA CIFRA DE 22 DETENIDOS con 1 arma y cartuchos; NO SE INTEGRA AL TOTAL HASTA VALIDACIÓN",
+    fuentes:["Guardia Civil Estatal SLP (por cita)","Potosí Noticias (fecha en la ruta)","El Heraldo de San Luis Potosí (fecha en la ruta)"], confianza:"★★★☆☆", fecha:"2026-09-18", hora:"no fijada" },
+
+  { id:"ARG-122-013", estado:"MX-GUA", region:"Occidente", color:"verde", impacto:"grande",
+    hecho:"San José Iturbide, Guanajuato, JUEVES 17-SEP: CATEO POR ORDEN DE JUEZ FEDERAL EN UN INMUEBLE Y ASEGURAMIENTO DE 59 MILLONES DE LITROS DE HIDROCARBURO DE PROCEDENCIA ILÍCITA — EL MAYOR DECOMISO DE COMBUSTIBLE ROBADO DE LA ADMINISTRACIÓN (🟢). DESGLOSE PUBLICADO: 33,504,067.406 L DE GASOLINA MAGNA, 7,266,813.6174 L DE PREMIUM y 18,265,989.504 L DE DIÉSEL; LA SUMA, 59,036,870.527 L, ES CÁLCULO PROPIO DE ARGOS. También: 10 TANQUES DE ALMACENAMIENTO, 3 UNIDADES DE CARGA, contenedores, documentación y vehículos. SIN DETENIDOS PUBLICADOS. SIN ARMAMENTO: no alimenta el conteo. ORIGEN DE LA INVESTIGACIÓN: 3-JUL, detención de una persona que descargaba combustible en una gasolinera de SAN LUIS DE LA PAZ. ES 35 VECES EL RÉCORD ESTATAL ANTERIOR: 1.65 MILLONES DE LITROS, carretera Silao-San Felipe, octubre de 2025. ATRIBUCIÓN NO ADOPTADA: la titularidad de la planta y los permisos que la ampararon. FRONTERA DE VENTANA — HORA NO FIJADA: el hecho es del 17-sep y esta ventana abre ese día a las 17:36; se integra a la edición que lo ve primero, con la marca, que es PERMANENTE",
+    fuentes:["FGR (por cita)","Gabinete de Seguridad (boletín del 17-sep, vía republicadores)","La Jornada (fecha en la ruta)","Infobae (fecha en la ruta)","Milenio","El Informador (fecha en la ruta)","Diario de Yucatán (fecha en la ruta)","El Sol del Bajío","Rotativo"], confianza:"★★★☆☆", fecha:"2026-09-17", hora:"no fijada" },
+
+
+  { id:"ARG-122-015", estado:"MX-MIC", region:"Occidente", color:"verde", impacto:"mediano",
+    hecho:"La Piedad, Michoacán, JUEVES 17-SEP: LA SSPC FEDERAL, EL EJÉRCITO, LA SEMAR, LA FGR Y LA FISCALÍA ESTATAL DETIENEN A UN HOMBRE SEÑALADO COMO COORDINADOR REGIONAL DE UN GRUPO CRIMINAL, CON ÓRDENES DE APREHENSIÓN VIGENTES POR HOMICIDIO Y DESAPARICIÓN FORZADA COMETIDA POR PARTICULARES (🟢). NOMBRE NO PUBLICADO POR EL EMISOR. SIN ARMAMENTO PUBLICADO: no alimenta el conteo y no se infiere. RENGLÓN DEL BOLETÍN FEDERAL DEL 17-SEP. FRONTERA DE VENTANA — HORA NO FIJADA. DESLINDE: NO es ARG-121-REC-005, otra persona, otro municipio y otra fecha",
+    fuentes:["Gabinete de Seguridad (boletín del 17-sep, vía republicadores)","Milenio","SICOM Noticias","Eleese Noticias (fecha en la ruta)","Talla Política","Certeza Diario"], confianza:"★★☆☆☆", fecha:"2026-09-17", hora:"no fijada" },
+
+  { id:"ARG-122-016", estado:"MX-TAB", region:"Golfo", color:"verde", impacto:"mediano",
+    hecho:"Centro, Tabasco, COLONIA JOSÉ MARÍA PINO SUÁREZ, JUEVES 17-SEP: SEMAR, SEDENA, SSPC FEDERAL, FGR, FISCALÍA ESTATAL Y POLICÍA ESTATAL DETIENEN A 6 PERSONAS (🟢). Asegurado: 2 ARMAS CORTAS, 1 ARMA LARGA, 15 CARTUCHOS, 3 CARGADORES y UN ACCESORIO LANZAGRANADAS —armamento especial—. En rubro aparte: 25 dosis de cocaína, 50 de mariguana, 40 de metanfetaminas, 9 celulares, efectivo y 1 vehículo. RENGLÓN DEL BOLETÍN FEDERAL DEL 17-SEP. CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN: cuatro republicadores del mismo boletín NO son fuentes independientes. FRONTERA DE VENTANA — HORA NO FIJADA. DESLINDE: NO es ARG-120-ARM-005 (Huimanguillo, 13-sep): otro municipio, otra fecha y otro desglose",
+    fuentes:["Gabinete de Seguridad (boletín del 17-sep, vía republicadores)","SICOM Noticias","Eleese Noticias (fecha en la ruta)","Certeza Diario","Talla Política"], confianza:"★★★☆☆", fecha:"2026-09-17", hora:"no fijada" },
+
+  { id:"ARG-122-017", estado:"MX-TAB", region:"Golfo", color:"verde", impacto:"mediano",
+    hecho:"Centro, Tabasco, RANCHO PLÁTANO Y CACAO, JUEVES 17-SEP: LA SSPC FEDERAL, SEDENA, SEMAR Y FGR CATEAN UN PREDIO Y ASEGURAN 150,000 LITROS DE HIDROCARBUROS, sustancias químicas, vehículos y maquinaria industrial (🟢). SIN ARMAMENTO Y SIN DETENIDOS PUBLICADOS: no alimenta el conteo de armamento. SEGUNDO ASEGURAMIENTO DE HIDROCARBURO DEL MISMO DÍA EN EL BOLETÍN FEDERAL, tras los 59 MILLONES DE LITROS de San José Iturbide: son EVENTOS DISTINTOS y no se suman. RENGLÓN DEL BOLETÍN FEDERAL DEL 17-SEP. FRONTERA DE VENTANA — HORA NO FIJADA",
+    fuentes:["Gabinete de Seguridad (boletín del 17-sep, vía republicadores)","SICOM Noticias","Eleese Noticias (fecha en la ruta)","Certeza Diario","Talla Política"], confianza:"★★☆☆☆", fecha:"2026-09-17", hora:"no fijada" },
+
+  { id:"ARG-122-018", estado:"MX-BCS", region:"Noroeste", color:"verde", impacto:"pequeno",
+    hecho:"La Paz, Baja California Sur, JUEVES 17-SEP: LA FGR, LA SSPC FEDERAL Y LA SEMAR DETIENEN A 2 PERSONAS Y ASEGURAN 109 CARTUCHOS, 197 DOSIS DE FENTANILO, 70 SACOS DE ALMEJA CHOCOLATA, 1 vehículo y 2 celulares (🟢). SIN ARMAS DE FUEGO PUBLICADAS: los 109 cartuchos se integran al conteo de munición, las armas NO se infieren. CARGADORES NO PUBLICADOS. RENGLÓN DEL BOLETÍN FEDERAL DEL 17-SEP, vía republicadores. FRONTERA DE VENTANA — HORA NO FIJADA. DESLINDE: NO es el renglón de COMONDÚ, BCS (145 kg de cocaína) del boletín 14-16-sep, ya listado como no recontable",
+    fuentes:["Gabinete de Seguridad (boletín del 17-sep, vía republicadores)","Milenio","Eleese Noticias (fecha en la ruta)","SICOM Noticias"], confianza:"★★☆☆☆", fecha:"2026-09-17", hora:"no fijada" }
+];
+
+const EVENTOS_ARM = [
+  { id:"ARG-122-ARM-001", estado:"MX-SIN", region:"Noroeste", color:"rojo", impacto:"grande",
+    hecho:"Sierra de Sinaloa, límites con Durango —MUNICIPIO NO ESPECIFICADO—: 0 cortas, 17 LARGAS —incluida UNA AMETRALLADORA—, 0 sin categoría, cartuchos CANTIDAD NO DETERMINADA, 127 CARGADORES, 0 granadas, 40 AEI, 0 explosivos, 9 DETENIDOS —uno de ellos menor de edad—. LANZAGRANADAS EN ARMAMENTO ESPECIAL, CANTIDAD NO DETERMINADA. ROJO: armamento vinculado a una agresión contra personal en patrullaje (ARG-122-005). MAYOR VOLUMEN DE LARGAS, CARGADORES Y AEI DEL CORTE. Confianza Medio",
+    fuentes:["SSPC federal y SEMAR (por cita)","En Blanco y Negro (fecha en la ruta)","Proceso (fecha en la ruta)","Excélsior"], confianza:"Medio", fecha:"2026-09-19", hora:"no fijada" },
+
+  { id:"ARG-122-ARM-002", estado:"MX-SON", region:"Noroeste", color:"amarillo", impacto:"grande",
+    hecho:"Puerto Peñasco, Sonora —fraccionamiento CERRADA DEL SOL—, CATEO DEL 19-SEP: 5 CORTAS, 2 LARGAS INTEGRADAS —las DOS AMETRALLADORAS MINIMI, única cifra expresa de la categoría—, resto de largas CANTIDAD NO DETERMINADA («MÁS DE 40», Y «MÁS DE» NO ES CIFRA), 0 sin categoría, cartuchos CANTIDAD NO DETERMINADA («casi cuatro mil»), cargadores NO PUBLICADOS, 0 granadas, AEI PRESENCIA CONFIRMADA SIN CIFRA, 0 explosivos, 0 DETENIDOS INTEGRADOS. 1 AMETRALLADORA BROWNING M-2 CAL. .50 en armamento especial. CALIBRES PUBLICADOS PARA EL CONJUNTO: 5.56, .223 y 7.62×39. LOS 7 DETENIDOS SON DEL OPERATIVO DEL 18-SEP, NO DEL CATEO DEL 19: NO SE INTEGRAN AL CONTEO DE ARMAMENTO. LA CIFRA DE 33 LARGAS ERA PRELIMINAR Y QUEDÓ SUPERADA. AMARILLO: aseguramiento derivado de un topón. Confianza Medio",
+    fuentes:["SSPC federal (por cita del titular)","El Imparcial (fecha en la ruta)","UnoTV","Proyecto Puente (fecha en la ruta)","RED Michoacán (fecha en la ruta)"], confianza:"Medio", fecha:"2026-09-19", hora:"no fijada" },
+
+  { id:"ARG-122-ARM-003", estado:"MX-NLE", region:"Noreste", color:"rojo", impacto:"grande",
+    hecho:"Los Aldamas, Nuevo León: 0 cortas, 4 LARGAS —una identificada como FUSIL BARRETT CAL. .50, armamento especial—, 0 sin categoría, cartuchos SIN CIFRA, cargadores SIN CIFRA, 0 granadas, 0 AEI, 0 explosivos, 0 DETENIDOS —4 agresores abatidos—. 1 vehículo y equipo táctico en rubro aparte. ROJO: armamento vinculado a una agresión contra personal en patrullaje del Operativo Muralla. DESLINDE: no es ARG-120-ARM-003 (General Treviño, 14-sep). Confianza Medio",
+    fuentes:["Fuerza Civil NL (por cita)","MVS Noticias (fecha en la ruta)","El Universal","Milenio"], confianza:"Medio", fecha:"2026-09-19", hora:"no fijada" },
+
+  { id:"ARG-122-ARM-004", estado:"MX-CMX", region:"Centro", color:"verde", impacto:"mediano",
+    hecho:"Iztapalapa, Ciudad de México: 2 CORTAS, 4 LARGAS sin calibre ni serie, 0 sin categoría, cartuchos NO PUBLICADOS, cargadores NO PUBLICADOS, 0 granadas, 0 AEI, 0 explosivos, 3 DETENIDOS. 4 kg de marihuana y metanfetamina a granel en rubro aparte. Cateo de dos inmuebles vinculados a «La Unión Tepito». SIN BOLETÍN PROPIO DE LA SSC CAPITALINA INDEXADO. Confianza Medio",
+    fuentes:["SSC CDMX y FGJ CDMX (por cita)","El Heraldo de México (fecha en la ruta)","El Financiero (fecha en la ruta)","La Razón (fecha en la ruta)"], confianza:"Medio", fecha:"2026-09-18", hora:"no fijada" },
+
+  { id:"ARG-122-ARM-005", estado:"MX-TAB", region:"Golfo", color:"verde", impacto:"mediano",
+    hecho:"Centro (col. José María Pino Suárez), Tabasco: 2 CORTAS, 1 LARGA, 0 sin categoría, 15 CARTUCHOS, 3 CARGADORES, 0 granadas, 0 AEI, 0 explosivos, 6 DETENIDOS. 1 ACCESORIO LANZAGRANADAS en armamento especial. FRONTERA DE VENTANA — HORA NO FIJADA. Boletín federal del 17-sep, vía republicadores: corroboración débil por construcción. Confianza Medio",
+    fuentes:["Gabinete de Seguridad (boletín del 17-sep)","SICOM Noticias","Eleese Noticias (fecha en la ruta)","Certeza Diario"], confianza:"Medio", fecha:"2026-09-17", hora:"no fijada" },
+
+  { id:"ARG-122-ARM-006", estado:"MX-CHP", region:"Sureste", color:"verde", impacto:"pequeno",
+    hecho:"Tuxtla Gutiérrez (col. Las Granjas), Chiapas: 1 CORTA, 0 largas, 0 sin categoría, cartuchos NO PUBLICADOS, cargadores NO PUBLICADOS, 0 granadas, 0 AEI, 0 explosivos, 0 DETENIDOS INTEGRADOS. LOS 15 DETENIDOS DE LA FGE NO SE INTEGRAN: el emisor no desglosa cuántos corresponden al evento de aseguramiento. 1 motocicleta y cascos en rubro aparte. Confianza Medio",
+    fuentes:["FGE Chiapas (por cita del Fiscal General)","Infobae (fecha en la ruta)","El Universal","SinEmbargo"], confianza:"Medio", fecha:"2026-09-20", hora:"no fijada" },
+
+  { id:"ARG-122-ARM-007", estado:"MX-SLP", region:"Noreste", color:"verde", impacto:"pequeno",
+    hecho:"San Luis Potosí, cuatro regiones del estado: 0 cortas, 0 largas, 1 ARMA SIN CATEGORÍA PUBLICADA, cartuchos CANTIDAD NO DETERMINADA, 1 CARGADOR, 0 granadas, 0 AEI, 0 explosivos, 0 DETENIDOS INTEGRADOS. LOS 22 DETENIDOS DEL AGREGADO NO SE INTEGRAN: sin desglose por sub-evento. 2 inhibidores de señal y 7 vehículos en rubro aparte. POSIBLE DUPLICIDAD DECLARADA con un segundo boletín del 19-sep de idéntica cifra. Confianza Medio",
+    fuentes:["Guardia Civil Estatal SLP (por cita)","Potosí Noticias (fecha en la ruta)","El Heraldo de SLP (fecha en la ruta)"], confianza:"Medio", fecha:"2026-09-18", hora:"no fijada" },
+
+  { id:"ARG-122-ARM-008", estado:"MX-VER", region:"Golfo", color:"verde", impacto:"mediano",
+    hecho:"Tempoal (carretera Tempoal-Huejutla de Reyes), Veracruz: 0 cortas, 0 largas, ARMAS DE FUEGO SIN CIFRA NI CATEGORÍA, cartuchos —«material balístico»— SIN CIFRA, cargadores SIN CIFRA, GRANADAS SIN CIFRA —PRESENCIA CONFIRMADA—, 0 AEI, 0 explosivos, 0 DETENIDOS, expreso. 59,400 bolsas herméticas de sustancias prohibidas en rubro aparte. CANTIDAD NO DETERMINADA EN TODAS LAS CATEGORÍAS: NO SE INTEGRA AL TOTAL NUMÉRICO, se registra como evento cualitativo. DESLINDE: no es ARG-116-ARM-004 (Tempoal, 4-sep). Confianza Medio",
+    fuentes:["FGE Veracruz (por cita)","N+","Infobae (fecha en la ruta)","La Clave Online (fecha en la ruta)"], confianza:"Medio", fecha:"2026-09-20", hora:"no fijada" },
+
+  { id:"ARG-122-ARM-009", estado:"MX-BCS", region:"Noroeste", color:"verde", impacto:"pequeno",
+    hecho:"La Paz, Baja California Sur: 0 cortas, 0 largas, 0 sin categoría, 109 CARTUCHOS, cargadores NO PUBLICADOS, 0 granadas, 0 AEI, 0 explosivos, 2 DETENIDOS. ARMAS NO PUBLICADAS Y NO INFERIDAS pese a la munición. 197 dosis de fentanilo y 70 sacos de almeja chocolata en rubro aparte. FRONTERA DE VENTANA — HORA NO FIJADA. Confianza Bajo",
+    fuentes:["Gabinete de Seguridad (boletín del 17-sep)","Milenio","Eleese Noticias (fecha en la ruta)"], confianza:"Bajo", fecha:"2026-09-17", hora:"no fijada" }
+];
+const REGION_ORDER = ["Noroeste","Noreste","Occidente","Centro","Golfo","Sureste","Pacífico"];
+const STATE_REGION = {
+  "MX-BCN":"Noroeste","MX-BCS":"Noroeste","MX-SON":"Noroeste","MX-CHH":"Noroeste","MX-SIN":"Noroeste","MX-DUR":"Noroeste",
+  "MX-COA":"Noreste","MX-NLE":"Noreste","MX-TAM":"Noreste","MX-SLP":"Noreste","MX-ZAC":"Noreste",
+  "MX-JAL":"Occidente","MX-COL":"Occidente","MX-NAY":"Occidente","MX-AGU":"Occidente","MX-MIC":"Occidente","MX-GUA":"Occidente",
+  "MX-CMX":"Centro","MX-MEX":"Centro","MX-MOR":"Centro","MX-PUE":"Centro","MX-TLA":"Centro","MX-HID":"Centro","MX-QUE":"Centro",
+  "MX-VER":"Golfo","MX-TAB":"Golfo",
+  "MX-CHP":"Sureste","MX-OAX":"Sureste","MX-GRO":"Sureste","MX-CAM":"Sureste","MX-YUC":"Sureste","MX-ROO":"Sureste"
+};
+const SEVERITY_RANK = { rojo:3, amarillo:2, verde:1 };
+const SEVERITY_COLOR = { rojo:"#ff3b3b", amarillo:"#ffd23f", verde:"#33d17a" };
+const SEVERITY_LABEL = { rojo:"🔴 Alto impacto", amarillo:"🟡 Violencia operativa", verde:"🟢 Acción institucional" };
+const GRIS = "#26314a";
+const SIZE_R = { grande:11, mediano:7.5, pequeno:5 };
+
+function argosHash(s){
+  let h = 0;
+  for (let i = 0; i < s.length; i++) { h = (h * 31 + s.charCodeAt(i)) | 0; }
+  return Math.abs(h);
+}
+
+function argosPolarPoint(cx, cy, r, angDeg){
+  const a = (angDeg * Math.PI) / 180;
+  return [cx + r * Math.cos(a), cy + r * Math.sin(a)];
+}
+
+function argosTopEventFor(evs){
+  return evs.slice().sort(function (a, b) {
+    const r = SEVERITY_RANK[b.color] - SEVERITY_RANK[a.color];
+    if (r !== 0) return r;
+    return (b.fecha || "").localeCompare(a.fecha || "");
+  })[0];
+}
+
+function argosBuildStateTooltip(sid, evs){
+  const name = (MEXICO_PATHS[sid] && MEXICO_PATHS[sid].name) || sid;
+  if (!evs || !evs.length) {
+    return "<b>" + name + "</b><br>Nivel: ⚪ Sin datos<br>Sin eventos relevantes durante el corte.";
+  }
+  const top = argosTopEventFor(evs);
+  let html = "<b>" + name + "</b>" +
+    "<br>Nivel: " + SEVERITY_LABEL[top.color] +
+    "<br>Evento: " + top.hecho +
+    "<br>ARG-ID: " + top.id +
+    "<br>Fuentes: " + (top.fuentes || []).join(", ") +
+    "<br>Confianza: " + (top.confianza || "—") +
+    "<br>Consulta: " + (top.fecha || "—") + " " + (top.hora || "");
+  if (evs.length > 1) {
+    html += "<br><i>+" + (evs.length - 1) + " evento(s) adicional(es) en esta entidad</i>";
+  }
+  return html;
+}
+
+function argosShowTooltip(e, html){
+  const tt = document.getElementById("argos-tooltip");
+  if (!tt) return;
+  tt.innerHTML = html;
+  const pad = 14;
+  let x = e.clientX + pad, y = e.clientY + pad;
+  tt.style.left = x + "px";
+  tt.style.top = y + "px";
+  tt.classList.add("show");
+}
+function argosHideTooltip(){
+  const tt = document.getElementById("argos-tooltip");
+  if (tt) tt.classList.remove("show");
+}
+
+function argosRenderMap(containerId, eventos){
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  const byState = {};
+  eventos.forEach(function (ev) {
+    if (!ev.estado) return;
+    (byState[ev.estado] = byState[ev.estado] || []).push(ev);
+  });
+  let svg = '<svg viewBox="' + MEXICO_VIEWBOX + '" preserveAspectRatio="xMidYMid meet">';
+  Object.keys(MEXICO_PATHS).forEach(function (sid) {
+    const st = MEXICO_PATHS[sid];
+    const evs = byState[sid];
+    const top = evs ? argosTopEventFor(evs) : null;
+    const fill = top ? SEVERITY_COLOR[top.color] : GRIS;
+    svg += '<path class="estado-path" data-sid="' + sid + '" d="' + st.d + '" fill="' + fill + '" fill-opacity="' + (top ? "0.88" : "0.55") + '"></path>';
+  });
+  svg += "</svg>";
+  el.innerHTML = svg;
+  el.querySelectorAll(".estado-path").forEach(function (path) {
+    const sid = path.dataset.sid;
+    path.addEventListener("mousemove", function (e) {
+      argosShowTooltip(e, argosBuildStateTooltip(sid, byState[sid]));
+    });
+    path.addEventListener("mouseleave", argosHideTooltip);
+    path.addEventListener("click", function () {
+      const evs = byState[sid];
+      if (evs && evs.length) { location.hash = argosTopEventFor(evs).id; }
+    });
+  });
+}
+
+function argosRenderRadar(containerId, statsId, eventos, corteFechaStr){
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  const W = 220, H = 220, CX = 110, CY = 110, RMAX = 98, RMIN = 20, WINDOW_DAYS = 10;
+  const sector = 360 / REGION_ORDER.length;
+  const corte = corteFechaStr ? new Date(corteFechaStr) : new Date();
+
+  let svg = '<svg viewBox="0 0 ' + W + ' ' + H + '">';
+  svg += '<defs><radialGradient id="rgrad-' + containerId + '" cx="50%" cy="50%" r="50%">' +
+    '<stop offset="0%" stop-color="rgba(76,230,255,.10)"/><stop offset="100%" stop-color="rgba(76,230,255,0)"/></radialGradient></defs>';
+  svg += '<circle cx="' + CX + '" cy="' + CY + '" r="' + RMAX + '" fill="url(#rgrad-' + containerId + ')"/>';
+  [1, 2, 3, 4].forEach(function (i) {
+    svg += '<circle class="radar-ring" cx="' + CX + '" cy="' + CY + '" r="' + (RMAX * i / 4) + '"/>';
+  });
+  svg += '<line class="radar-cross" x1="' + (CX - RMAX) + '" y1="' + CY + '" x2="' + (CX + RMAX) + '" y2="' + CY + '"/>';
+  svg += '<line class="radar-cross" x1="' + CX + '" y1="' + (CY - RMAX) + '" x2="' + CX + '" y2="' + (CY + RMAX) + '"/>';
+
+  const sweepAngle = 42;
+  const p0 = argosPolarPoint(CX, CY, RMAX, -90);
+  const p1 = argosPolarPoint(CX, CY, RMAX, -90 + sweepAngle);
+  const sweepPath = "M" + CX + " " + CY + " L" + p0[0].toFixed(1) + " " + p0[1].toFixed(1) +
+    " A" + RMAX + " " + RMAX + " 0 0 1 " + p1[0].toFixed(1) + " " + p1[1].toFixed(1) + " Z";
+  svg += '<g><path class="radar-sweep-path" d="' + sweepPath + '">' +
+    '<animateTransform attributeName="transform" type="rotate" from="0 ' + CX + ' ' + CY + '" to="360 ' + CX + ' ' + CY + '" dur="9s" repeatCount="indefinite"/>' +
+    "</path></g>";
+
+  const counts = { rojo: 0, amarillo: 0, verde: 0 };
+  const countedIds = {};
+  eventos.forEach(function (ev, idx) {
+    if (!countedIds[ev.id]) { counts[ev.color] = (counts[ev.color] || 0) + 1; countedIds[ev.id] = true; }
+    const ri = REGION_ORDER.indexOf(ev.region);
+    const baseAngle = (ri >= 0 ? ri * sector + sector / 2 : 0) - 90;
+    const jitterSeed = argosHash(ev.id + "-" + idx) % 100;
+    const jitter = (jitterSeed / 100 - 0.5) * (sector * 0.7);
+    const angle = baseAngle + jitter;
+    let daysAgo = WINDOW_DAYS;
+    if (ev.fecha) {
+      const d = new Date(ev.fecha);
+      daysAgo = Math.max(0, Math.round((corte - d) / 86400000));
+    }
+    const t = Math.min(1, daysAgo / WINDOW_DAYS);
+    const r = RMAX - t * (RMAX - RMIN);
+    const p = argosPolarPoint(CX, CY, r, angle);
+    const rad = SIZE_R[ev.impacto] || SIZE_R.pequeno;
+    const color = SEVERITY_COLOR[ev.color] || "#8fb8c8";
+    const cls = "eco" + (ev.color === "rojo" ? " pulse" : "");
+    svg += '<a href="#' + ev.id + '"><circle class="' + cls + '" cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) +
+      '" r="' + rad + '" fill="' + color + '"><title>' + ev.id + " — " + ev.hecho + " (" + (ev.fecha || "") + ")</title></circle></a>";
+  });
+
+  svg += "</svg>";
+  el.innerHTML = svg;
+
+  if (statsId) {
+    const st = document.getElementById(statsId);
+    if (st) {
+      st.innerHTML =
+        "<div>🔴 Alto impacto<br><b>" + (counts.rojo || 0) + "</b></div>" +
+        "<div>🟡 Violencia operativa<br><b>" + (counts.amarillo || 0) + "</b></div>" +
+        "<div>🟢 Acciones institucionales<br><b>" + (counts.verde || 0) + "</b></div>";
+    }
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  argosRenderMap("argos-map", EVENTOS);
+  argosRenderRadar("argos-radar", "argos-radar-stats", EVENTOS, CORTE_FECHA);
+  argosRenderMap("argos-map-arm", EVENTOS_ARM);
+});
+
+</script>
+</body>
+</html>
