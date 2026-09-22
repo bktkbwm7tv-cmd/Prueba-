@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>ARGOS 123 — Reporte Nacional de Seguridad (2026-09-22) · Móvil</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#040814">
+<style>
+  :root{
+    --bg-navy:#040814;
+    --panel:#0a1230;
+    --panel-2:#0d1638;
+    --grid-line: rgba(76,230,255,0.08);
+    --border: rgba(76,230,255,0.28);
+    --cyan:#4ce6ff;
+    --cyan-dim:#8fb8c8;
+    --white:#eef6fb;
+    --red:#ff3b3b;
+    --yellow:#ffd23f;
+    --green:#33d17a;
+    --mono: "Consolas","SFMono-Regular","Menlo","Courier New",monospace;
+    --sans: -apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:var(--sans);
+    color:var(--white);
+    font-size:14px;
+    line-height:1.55;
+    background:
+      linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0/28px 28px,
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0/28px 28px,
+      radial-gradient(ellipse at 50% -4%, #0c1a3d 0%, var(--bg-navy) 58%);
+    background-color:var(--bg-navy);
+    background-attachment:fixed;
+    -webkit-text-size-adjust:100%;
+    overflow-x:hidden;
+  }
+
+  /* ---------- BARRA SUPERIOR FIJA ---------- */
+  .topbar{
+    position:sticky; top:0; z-index:50;
+    background:var(--bg-navy);
+    box-shadow:0 4px 14px rgba(4,8,20,.85);
+    border-bottom:1px solid var(--border);
+    padding-top:env(safe-area-inset-top);
+  }
+  .topbar .row1{
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+    padding:9px 12px 7px;
+  }
+  .topbar .num{
+    font-family:var(--mono); font-size:21px; font-weight:700;
+    color:var(--cyan); letter-spacing:2px; line-height:1;
+    display:flex; align-items:baseline; gap:.22em;
+    text-shadow:0 0 10px rgba(76,230,255,.3);
+  }
+  .topbar .num .w{
+    font-size:1.14em; font-weight:900; letter-spacing:.14em;
+    -webkit-text-stroke:.6px var(--cyan);
+  }
+  .topbar .num .n{
+    font-size:.86em; font-weight:800; letter-spacing:.04em;
+    color:var(--white); border:1px solid var(--cyan-dim);
+    padding:.06em .3em; line-height:1; background:rgba(76,230,255,.07);
+    text-shadow:none;
+  }
+  .topbar .sub{font-family:var(--mono);font-size:8px;color:var(--cyan-dim);letter-spacing:1px;margin-top:3px;}
+  .topbar .corte{font-family:var(--mono);font-size:9px;color:var(--cyan-dim);text-align:right;line-height:1.5;}
+  .topbar .corte b{color:var(--white);}
+  .nav{display:flex;gap:5px;overflow-x:auto;padding:0 12px 8px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+  .nav::-webkit-scrollbar{display:none;}
+  .nav a{
+    flex:0 0 auto; font-family:var(--mono); font-size:9px; letter-spacing:1px;
+    color:var(--cyan-dim); border:1px solid var(--border); padding:4px 9px;
+    text-decoration:none; white-space:nowrap; border-radius:2px;
+  }
+  .nav a:active{color:var(--cyan);border-color:var(--cyan);background:rgba(76,230,255,.08);}
+
+  /* ---------- SECCIONES ---------- */
+  .seccion{padding:14px 12px 20px;scroll-margin-top:92px;}
+  .seccion + .seccion{border-top:1px solid rgba(76,230,255,.16);}
+  .sec-head{
+    display:flex;align-items:baseline;justify-content:space-between;gap:8px;
+    border-bottom:1px solid var(--border); padding-bottom:7px; margin-bottom:12px;
+  }
+  .sec-head h2{margin:0;font-family:var(--mono);font-size:12.5px;letter-spacing:1.5px;color:var(--cyan);font-weight:700;}
+  .sec-head .pg{font-family:var(--mono);font-size:8.5px;color:var(--cyan-dim);white-space:nowrap;}
+
+  .block-head{
+    font-family:var(--mono); font-size:10.5px; letter-spacing:2px; color:var(--cyan);
+    border-left:3px solid var(--cyan); padding:5px 9px; margin:16px 0 9px;
+    background:linear-gradient(90deg, rgba(76,230,255,.09), transparent);
+  }
+
+  p{margin:0 0 9px;}
+  .cuerpo{font-size:13px;line-height:1.6;}
+  .placeholder{color:var(--cyan-dim);font-style:italic;}
+  .muted-note{
+    font-family:var(--mono);font-size:9.5px;line-height:1.55;color:var(--cyan-dim);
+    border:1px dashed var(--border);padding:7px 9px;margin:9px 0;
+  }
+  code{font-family:var(--mono);font-size:9px;color:var(--cyan-dim);word-break:break-all;}
+
+  /* ---------- VISUALES (RADAR / MAPA) ---------- */
+  .viz{border:1px solid var(--border);background:var(--panel);padding:10px;margin-bottom:11px;}
+  .viz-title{
+    display:flex;justify-content:space-between;gap:8px;
+    font-family:var(--mono);font-size:9.5px;letter-spacing:1.5px;color:var(--cyan);
+    border-bottom:1px solid var(--border);padding-bottom:5px;margin-bottom:8px;
+  }
+  .radar-box{width:100%;max-width:340px;margin:0 auto;aspect-ratio:1/1;}
+  .map-box{width:100%;aspect-ratio:900/520;}
+  .viz svg{width:100%;height:100%;display:block;}
+  .estado-path{stroke:var(--bg-navy);stroke-width:0.6;}
+  .radar-ring{fill:none;stroke:var(--border);stroke-width:1;}
+  .radar-cross{stroke:var(--border);stroke-width:1;}
+  .radar-sweep-path{fill:rgba(76,230,255,.35);}
+  .eco{stroke:#04101f;stroke-width:0.7;}
+  .eco.pulse{animation:ecoPulse 1.6s ease-in-out infinite;}
+  @keyframes ecoPulse{0%,100%{opacity:1;}50%{opacity:.4;}}
+  .radar-stats{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:9px;
+    border-top:1px dashed var(--border);padding-top:8px;
+    font-family:var(--mono);font-size:8.5px;color:var(--cyan-dim);text-align:center;line-height:1.35;
+  }
+  .radar-stats > div{
+    display:flex;flex-direction:column;justify-content:space-between;
+    min-height:42px;
+  }
+  .radar-stats b{color:var(--white);display:block;font-size:16px;margin-top:4px;}
+  .map-caption{font-family:var(--mono);font-size:8.5px;color:var(--cyan-dim);text-align:center;margin-top:6px;line-height:1.4;}
+
+  /* ---------- SEMÁFORO ---------- */
+  .semaforo{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;}
+  .sem{border:1px solid var(--border);background:var(--panel);padding:9px 5px;text-align:center;font-family:var(--mono);}
+  .sem .dot{width:9px;height:9px;border-radius:50%;display:inline-block;}
+  .sem.alto .dot{background:var(--red);box-shadow:0 0 8px var(--red);}
+  .sem.medio .dot{background:var(--yellow);box-shadow:0 0 8px var(--yellow);}
+  .sem.bajo .dot{background:var(--green);box-shadow:0 0 8px var(--green);}
+  .sem .lbl{display:block;font-size:8px;letter-spacing:.3px;color:var(--cyan-dim);margin-top:5px;line-height:1.3;}
+  .sem .val{display:block;font-size:17px;color:var(--white);margin-top:4px;}
+
+  /* ---------- ETIQUETAS DE RIESGO ---------- */
+  .tag{
+    font-family:var(--mono);font-size:8.5px;letter-spacing:.8px;
+    padding:2px 6px;border-radius:2px;white-space:nowrap;
+  }
+  .tag.alto{background:rgba(255,59,59,.15);color:var(--red);border:1px solid var(--red);}
+  .tag.medio{background:rgba(255,210,63,.15);color:var(--yellow);border:1px solid var(--yellow);}
+  .tag.bajo{background:rgba(51,209,122,.15);color:var(--green);border:1px solid var(--green);}
+  .tag.sindato{background:rgba(143,184,200,.12);color:var(--cyan-dim);border:1px solid var(--cyan-dim);}
+  .stars{color:var(--yellow);letter-spacing:1px;}
+
+  /* ---------- TARJETA DE REGISTRO (sustituye tablas) ---------- */
+  .reg{border:1px solid var(--border);background:var(--panel);padding:9px 10px;margin-bottom:8px;}
+  .reg-top{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:6px;}
+  .reg-top .argid{font-family:var(--mono);font-size:9.5px;color:var(--cyan-dim);text-decoration:none;}
+  a.argid{
+    color:var(--cyan);border:1px solid var(--border);
+    padding:2px 6px;border-radius:2px;white-space:nowrap;
+  }
+  a.argid::after{content:" ›";}
+  a.argid:active{background:rgba(76,230,255,.12);border-color:var(--cyan);}
+  .reg-txt{font-size:12.5px;line-height:1.5;margin-bottom:6px;}
+  .reg dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:3px 8px;align-items:baseline;}
+  .reg dt{font-family:var(--mono);font-size:8.5px;letter-spacing:.5px;color:var(--cyan-dim);text-transform:uppercase;}
+  .reg dd{margin:0;font-size:11.5px;line-height:1.45;}
+
+  /* ---------- ALERTA ---------- */
+  .alerta{border:1px solid var(--red);background:rgba(255,59,59,.08);padding:10px 11px;}
+  .alerta .flag{font-family:var(--mono);color:var(--red);font-weight:700;font-size:10.5px;letter-spacing:1.5px;display:block;margin-bottom:5px;}
+  .alerta p{margin:0;font-size:12.5px;}
+
+  /* ---------- TARJETA DE NOTA (4 apartados) ---------- */
+  .nota{border:1px solid var(--border);background:var(--panel);margin-bottom:12px;scroll-margin-top:96px;}
+  .nota-header{
+    display:flex;justify-content:space-between;align-items:flex-start;gap:8px;
+    background:var(--panel-2);padding:9px 11px;border-bottom:1px solid var(--border);
+  }
+  .nota-header h3{margin:0;font-size:12.5px;line-height:1.35;color:var(--white);}
+  .risk-flag{font-family:var(--mono);font-size:8.5px;border:1px solid;padding:2px 6px;letter-spacing:.8px;white-space:nowrap;}
+  .risk-flag.alto{color:var(--red);border-color:var(--red);}
+  .risk-flag.medio{color:var(--yellow);border-color:var(--yellow);}
+  .risk-flag.bajo{color:var(--green);border-color:var(--green);}
+  .risk-flag.sindato{color:var(--cyan-dim);border-color:var(--cyan-dim);}
+  .nota-body{padding:10px 11px;display:flex;flex-direction:column;gap:9px;}
+  .apartado{font-size:12.5px;line-height:1.55;}
+  .apartado .k{
+    display:block;font-family:var(--mono);font-size:9px;letter-spacing:1.2px;
+    color:var(--cyan);margin-bottom:3px;
+  }
+  .photo-slot{
+    border:1px dashed var(--cyan-dim);
+    background:repeating-linear-gradient(45deg, rgba(76,230,255,.03) 0 10px, transparent 10px 20px);
+    min-height:74px;display:flex;align-items:center;justify-content:center;text-align:center;
+    font-family:var(--mono);font-size:9px;color:var(--cyan-dim);padding:8px;line-height:1.4;
+  }
+  .nota-footer{
+    border-top:1px solid var(--border);padding:8px 11px;
+    font-family:var(--mono);font-size:9px;color:var(--cyan-dim);
+    display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;
+  }
+  .nota-footer b{color:var(--white);}
+  .src-tag{border:1px solid var(--border);padding:1px 5px;border-radius:2px;}
+
+  /* ---------- TARJETAS DE CONTEO ---------- */
+  .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;}
+  .stat{border:1px solid var(--border);background:var(--panel);padding:10px 7px;text-align:center;}
+  .stat .icon{font-size:16px;line-height:1;}
+  .stat .lbl{font-family:var(--mono);font-size:8px;letter-spacing:.4px;color:var(--cyan-dim);margin-top:4px;line-height:1.3;}
+  .stat .val{font-family:var(--mono);font-size:18px;color:var(--white);margin-top:4px;}
+  .stat .val.placeholder{font-size:15px;}
+
+  /* ---------- COBERTURA / FUENTES ---------- */
+  .coverage{
+    display:grid;gap:5px;border:1px dashed var(--border);padding:9px 10px;
+    font-family:var(--mono);font-size:10px;color:var(--cyan-dim);line-height:1.45;
+  }
+  .coverage b{color:var(--white);}
+  .panel{border:1px solid var(--border);background:var(--panel);padding:10px 11px;margin-bottom:9px;}
+  .panel-title{
+    font-family:var(--mono);font-size:9.5px;letter-spacing:1.5px;color:var(--cyan);
+    border-bottom:1px solid var(--border);padding-bottom:5px;margin-bottom:7px;
+  }
+  .src-list{font-size:11.5px;line-height:1.7;}
+  .src-list .grp{display:block;margin-top:7px;font-family:var(--mono);font-size:8.5px;letter-spacing:1px;color:var(--cyan-dim);}
+
+  /* ---------- PIE ---------- */
+  .footbar{
+    border-top:1px solid var(--border);background:rgba(4,8,20,.9);
+    padding:12px 12px calc(14px + env(safe-area-inset-bottom));
+    display:grid;gap:4px;
+    font-family:var(--mono);font-size:9px;color:var(--cyan-dim);line-height:1.5;
+  }
+  .footbar .uso{color:var(--yellow);letter-spacing:1px;}
+
+  .tabla-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;
+    border:1px solid var(--border);border-radius:6px;margin:8px 0;}
+  .tabla-scroll table{border-collapse:collapse;font-size:11px;min-width:max-content;}
+  .tabla-scroll th,.tabla-scroll td{border:1px solid var(--border);padding:5px 7px;
+    text-align:left;white-space:nowrap;}
+  .tabla-scroll th{background:var(--panel-2);color:var(--cyan);font-family:var(--mono);
+    font-size:9.5px;letter-spacing:1px;}
+  .tabla-scroll td{background:var(--panel);}
+  /* Segunda causa previsible de desborde en esta serie: una URL o un ARG-ID
+     largo sin espacios. Se parte en vez de empujar el ancho de la página. */
+  .seccion code, .seccion a, .reg-txt, .nota-body{overflow-wrap:anywhere;}
+  .seccion img, .seccion svg{max-width:100%;height:auto;}
+
+  .tabla-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;
+    border:1px solid var(--border);border-radius:6px;margin:8px 0;}
+  .tabla-scroll table{border-collapse:collapse;font-size:11px;min-width:max-content;}
+  .tabla-scroll th,.tabla-scroll td{border:1px solid var(--border);padding:5px 7px;
+    text-align:left;white-space:nowrap;}
+  .tabla-scroll th{background:var(--panel-2);color:var(--cyan);font-family:var(--mono);
+    font-size:9.5px;letter-spacing:1px;}
+  .tabla-scroll td{background:var(--panel);}
+  /* Segunda causa previsible de desborde en esta serie: una URL o un ARG-ID
+     largo sin espacios. Se parte en vez de empujar el ancho de la página. */
+  .seccion code, .seccion a, .reg-txt, .nota-body{overflow-wrap:anywhere;}
+  .seccion img, .seccion svg{max-width:100%;height:auto;}
+  /* Tablas anchas reflujadas a tarjetas (ARGOS 102): una tarjeta por fila, con el
+     nombre de la columna delante del valor. Sustituye a la regla que las retiraba. */
+  .tabla-tarjetas{margin:8px 0;}
+  .fila-tarjeta{border:1px solid var(--border);border-radius:6px;background:var(--panel);
+    padding:8px 10px;margin:6px 0;}
+  .fila-tarjeta .campo{font-size:11.5px;line-height:1.5;padding:2px 0;
+    border-bottom:1px dotted rgba(76,230,255,0.14);}
+  .fila-tarjeta .campo:last-child{border-bottom:none;}
+  .fila-tarjeta .campo .k{display:block;font-family:var(--mono);font-size:9px;
+    letter-spacing:1px;color:var(--cyan);text-transform:uppercase;}
+  .fila-total{border:1px solid var(--border);border-radius:6px;background:var(--panel-2);
+    padding:8px 10px;margin:6px 0;font-size:11.5px;line-height:1.5;}
+
+  /* ---------- ICONOGRAFÍA DE ARMAMENTO ----------
+     Trazo monocromo que hereda el color del texto. Cada icono identifica una
+     categoría de la taxonomía de CLAUDE.md y va SIEMPRE con etiqueta y cifra:
+     nunca identifica por color ni por forma en solitario. */
+  .ico{width:15px;height:15px;vertical-align:-3px;margin-right:5px;flex:none;
+    stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;
+    stroke-linejoin:round;opacity:.92;}
+  .ico-lg{width:22px;height:22px;margin:0 0 6px 0;vertical-align:0;}
+
+  /* Tarjetas de conteo del módulo de armamento (Bloque 1 de CLAUDE.md). */
+  .conteo{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));
+    gap:6px;margin:10px 0 4px;}
+  .conteo .tile{border:1px solid var(--border);background:var(--panel);
+    padding:9px 8px;display:flex;flex-direction:column;align-items:flex-start;}
+  .conteo .tile .lbl{font-family:var(--mono);font-size:8.5px;letter-spacing:1px;
+    text-transform:uppercase;color:var(--cyan);line-height:1.3;}
+  .conteo .tile .num{font-size:19px;font-weight:700;color:var(--white);
+    line-height:1.15;margin-top:3px;}
+  .conteo .tile .sub{font-size:8.5px;color:var(--muted);margin-top:2px;}
+  /* Categoría en cero: se muestra igual, atenuada. La ausencia es dato. */
+  .conteo .tile.cero{opacity:.45;}
+  .conteo .tile.cero .num{color:var(--muted);font-weight:600;}
+
+  .tabla-indice{margin:10px 0;}
+  .fila-indice{border:1px solid var(--border);border-left:2px solid var(--cyan-dim);
+       padding:8px 10px;margin-bottom:6px;background:rgba(10,20,40,.35);}
+  .idx-ent{font-size:12px;color:var(--white);font-weight:700;line-height:1.3;}
+  .idx-ent .muted-note{font-weight:400;}
+  .idx-hecho{font-size:11.5px;color:var(--cyan);line-height:1.4;margin-top:3px;}
+  .idx-pie{font-family:var(--mono);font-size:9px;letter-spacing:.6px;
+       color:var(--cyan-dim);margin-top:5px;}
+  .idx-pie a{color:var(--cyan-dim);}
+  .fila-indice .muted-note{display:inline;font-size:9.5px;}
+
+  .fch{font-family:var(--mono);font-size:8.5px;letter-spacing:.8px;color:var(--cyan-dim);
+       border:1px solid var(--border);padding:2px 6px;white-space:nowrap;align-self:flex-start;}
+  .sec-head .fch{border:0;padding:0;color:var(--cyan-dim);}
+  .sec-head .meta{display:flex;align-items:baseline;gap:8px;white-space:nowrap;}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="row1">
+    <div>
+      <div class="num"><span class="w">ARGOS</span><span class="n">123</span></div>
+      <div class="sub">INVESTIGACIONES, BÚSQUEDA Y VERDAD</div>
+    </div>
+    <div class="corte">
+      CORTE INFORMATIVO<br>
+      <b>2026-09-22</b><br>
+      08:22 (CDMX)
+    </div>
+  </div>
+  <nav class="nav">
+    <a href="#s1">PORTADA</a>
+    <a href="#s2">PANORAMA</a>
+    <a href="#s3">C. ORGANIZADO I</a>
+    <a href="#s4">C. ORGANIZADO II</a>
+    <a href="#s5">C. ORGANIZADO III</a>
+    <a href="#s6">C. ORGANIZADO IV</a>
+    <a href="#s7">ARMAMENTO</a>
+    <a href="#s8">ARMAMENTO POR EVENTO</a>
+    <a href="#s9">SENTENCIAS</a>
+    <a href="#s10">CANDIDATOS</a>
+    <a href="#s11">VALORACIÓN</a>
+  </nav>
+</header>
+
+<!-- ===================== 1 — PORTADA ===================== -->
+<section class="seccion" id="s1">
+  <div class="sec-head">
+    <h2>PORTADA</h2>
+    <span class="meta"><span class="pg">PÁG. 1 / 11</span></span>
+  </div>
+
+  
+
+  <div class="viz">
+    <div class="viz-title"><span>RADAR CENTRAL</span><span>EN VIVO</span></div>
+    <div class="radar-box"><svg viewBox="0 0 220 220"><defs><radialGradient id="rgrad-argos-radar" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(76,230,255,.10)"/><stop offset="100%" stop-color="rgba(76,230,255,0)"/></radialGradient></defs><circle cx="110" cy="110" r="98" fill="url(#rgrad-argos-radar)"/><circle class="radar-ring" cx="110" cy="110" r="24.5"/><circle class="radar-ring" cx="110" cy="110" r="49"/><circle class="radar-ring" cx="110" cy="110" r="73.5"/><circle class="radar-ring" cx="110" cy="110" r="98"/><line class="radar-cross" x1="12" y1="110" x2="208" y2="110"/><line class="radar-cross" x1="110" y1="12" x2="110" y2="208"/><g><path class="radar-sweep-path" d="M110 110 L110.0 12.0 A98 98 0 0 1 175.6 37.2 Z"><animateTransform attributeName="transform" type="rotate" from="0 110 110" to="360 110 110" dur="9s" repeatCount="indefinite"/></path></g><a href="#ARG-123-001"><circle class="eco pulse" cx="134.6" cy="196.8" r="11" fill="#ff3b3b"><title>ARG-123-001 — Valle de Chalco Solidaridad, Estado de México, CARRETERA FEDERAL MÉXICO-PUEBLA en dirección a IXTAPALUCA, a la altura del paradero de autobuses conocido como EL TUBO AZUL, LUNES 21-SEP «ANTES DE LAS 09:00»: sujetos armados persiguen y disparan contra un automóvil negro tipo CHARGER, que recibe AL MENOS TRES IMPACTOS (🔴). DOS MUERTOS: el conductor del vehículo agredido y UN REPARTIDOR DE UNA EMPRESA DE BEBIDAS ALCANZADO POR UNA BALA PERDIDA, que avanzó unos metros hasta una gasolinera, pidió auxilio y murió en el lugar. Una cobertura describe ARMA LARGA SACADA POR LA VENTANILLA. CIERRE DE LA CARRETERA con retrasos de hasta media hora. CERO DETENIDOS y ARMAMENTO NO ASEGURADO al cierre. ROJO POR DOS AGRAVANTES CONCURRENTES: VÍCTIMAS MÚLTIPLES y VÍCTIMA CIVIL AJENA AL HECHO. FRONTERA DE VENTANA — HORA NO FIJADA: la ventana abre el 21-sep a las 08:57 y la fuente solo publica «antes de las 09:00»; se integra a la edición que lo ve primero y LA MARCA ES PERMANENTE. CIFRA CONTRADICHA Y NO ARBITRADA: un portal titula CUATRO MUERTOS EN DOS ATAQUES en el mismo municipio; ninguna fuente institucional publicó cifra y NO SE ARBITRA POR MAYORÍA. DESLINDE: ni Valle de Chalco ni El Tubo Azul figuran en el índice, que cubre de ARGOS 91 en adelante. ES EL ÚNICO HECHO DEL CORTE FECHADO EL 21-SEP. Lo aportó el recall nacional del coordinador (2026-09-21)</title></circle></a><a href="#ARG-123-002"><circle class="eco" cx="142.9" cy="34.5" r="11" fill="#33d17a"><title>ARG-123-002 — Ciudad Juárez, Chihuahua, PUENTE INTERNACIONAL LIBRE–CÓRDOVA: la GUARDIA NACIONAL detiene al CONDUCTOR DE UN AUTOBÚS DE PASAJEROS y asegura 4 ARMAS LARGAS, 7 ARMAS CORTAS, CARGADORES SIN CIFRA y 9,287 CARTUCHOS (🟢). ES EL MAYOR VOLUMEN DE MUNICIÓN DEL CORTE y se asegura en un CRUCE FRONTERIZO DE SALIDA, sobre transporte público de pasajeros. EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: el hecho es del tramo 18-20-SEP y el boletín federal que lo publica es del 21-SEP, dentro de ventana. Conteo de armamento: ARG-123-ARM-001 (2026-09-20)</title></circle></a><a href="#ARG-123-003"><circle class="eco" cx="162.9" cy="173.2" r="11" fill="#33d17a"><title>ARG-123-003 — Zapopan, Jalisco: el EJÉRCITO MEXICANO localiza e inhabilita un CAMPAMENTO CLANDESTINO y asegura 6 ARMAS LARGAS, 20 ARTEFACTOS EXPLOSIVOS IMPROVISADOS, 25 ESPOLETAS PARA ARTEFACTO EXPLOSIVO IMPROVISADO, cargadores y cartuchos SIN CIFRA, equipo táctico, 3 radios de comunicación, 4 vehículos y 5 motocicletas (🟢). DETENIDOS NO PUBLICADOS: el emisor no consigna ninguno y NO SE INFIERE. ES EL MAYOR VOLUMEN DE AEI DEL CORTE y el único hallazgo con COMPONENTES DE INICIACIÓN —las espoletas— del archivo reciente: indica MANUFACTURA, no solo posesión. EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: hecho del tramo 18-20-SEP, boletín del 21-SEP. Conteo de armamento: ARG-123-ARM-002 (2026-09-20)</title></circle></a><a href="#ARG-123-004"><circle class="eco" cx="131.2" cy="30.4" r="7.5" fill="#33d17a"><title>ARG-123-004 — San Quintín, Baja California: el EJÉRCITO MEXICANO detiene a UNA PERSONA y asegura 4 ARMAS LARGAS, 2 ARMAS CORTAS, 16 CARGADORES, 366 CARTUCHOS, UNA GRANADA, 5 chalecos tácticos y 2 vehículos (🟢). ES LA ÚNICA GRANADA DEL CORTE. EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: hecho del tramo 18-20-SEP, boletín del 21-SEP. DESLINDE: San Quintín NO figura en el índice, que cubre de ARGOS 91 en adelante. Conteo de armamento: ARG-123-ARM-003 (2026-09-20)</title></circle></a><a href="#ARG-123-005"><circle class="eco" cx="191.2" cy="95.7" r="7.5" fill="#33d17a"><title>ARG-123-005 — Reynosa, Tamaulipas: el EJÉRCITO MEXICANO y la FISCALÍA ESTATAL, en operación conjunta, detienen a SIETE PERSONAS y aseguran 7 ARMAS LARGAS, 4 CARGADORES, 100 CARTUCHOS, 2 vehículos y 2 MIRAS TELESCÓPICAS (🟢). LAS MIRAS TELESCÓPICAS NO SON CATEGORÍA DE LA TAXONOMÍA y se registran en rubro aparte, sin integrarse al conteo. EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: hecho del tramo 18-20-SEP, boletín del 21-SEP. DESLINDE: Reynosa SÍ figura en el índice —ARG-108-008, destrucción de vehículos blindados el 26-ago, y ARG-117-005, homicidio doloso del 5-sep—: otra fecha, otro hecho y otra corporación. Conteo de armamento: ARG-123-ARM-004 (2026-09-20)</title></circle></a><a href="#ARG-123-006"><circle class="eco" cx="165.4" cy="49.0" r="7.5" fill="#33d17a"><title>ARG-123-006 — Durango —MUNICIPIO NO ESPECIFICADO POR EL EMISOR—: la SSPC, la GUARDIA NACIONAL, el EJÉRCITO MEXICANO y la FGR CATEAN SEIS INMUEBLES, detienen a CUATRO PERSONAS y aseguran 2 ARMAS LARGAS, 1 ARMA CORTA, 2 CARGADORES, 40 CARTUCHOS, dosis de metanfetamina y diversas drogas, 2 DRONES, una cuatrimoto y 11 vehículos (🟢). LOS DRONES NO ESTÁN ACREDITADOS COMO ARMADOS y NO entran en armamento especial. MUNICIPIO NO VERIFICADO: el emisor no lo consigna y NO SE INFIERE. EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: hecho del tramo 18-20-SEP, boletín del 21-SEP. Conteo de armamento: ARG-123-ARM-005 (2026-09-20)</title></circle></a><a href="#ARG-123-007"><circle class="eco" cx="28.2" cy="99.8" r="11" fill="#33d17a"><title>ARG-123-007 — ZIRÁNDARO, GUERRERO y CARÁCUARO, MICHOACÁN —UN SOLO EVENTO EN DOS ENTIDADES, en el corredor de TIERRA CALIENTE—: el EJÉRCITO MEXICANO, la SSPC y la GUARDIA NACIONAL aseguran MÁS DE 10 TONELADAS DE PRECURSORES Y SUSTANCIAS QUÍMICAS, 27 REACTORES, 54 TANQUES DE GAS y demás equipo de producción de droga sintética (🟢). CERO ARMAMENTO: no alimenta el conteo nacional y se registra como EVENTO CUALITATIVO. «MÁS DE 10 TONELADAS» NO ES CIFRA y no se integra a ningún total numérico. DETENIDOS NO PUBLICADOS. LOS 27 REACTORES SON INFRAESTRUCTURA DE PRODUCCIÓN A ESCALA INDUSTRIAL, no equipo de laboratorio artesanal. EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: hecho del tramo 18-20-SEP, boletín del 21-SEP. EL EVENTO SE ASIGNA A GUERRERO EN EL MAPA Y EN EL RADAR POR CONVENCIÓN DE ENTIDAD ÚNICA; Michoacán queda declarado en el hecho y NO se colorea, para no contar dos veces un solo evento (2026-09-20)</title></circle></a><a href="#ARG-123-008"><circle class="eco" cx="98.6" cy="191.6" r="5" fill="#33d17a"><title>ARG-123-008 — Puebla, CARRETERA MÉXICO-PUEBLA: la SECRETARÍA DE MARINA y la POLICÍA ESTATAL detienen a UNA PERSONA y le aseguran CARTUCHOS SIN CIFRA, 1 CARGADOR, dosis de metanfetaminas, cocaína, marihuana y piedra, un vehículo y dinero en efectivo (🟢). SIN ARMA DE FUEGO ASEGURADA: cartuchos y cargador sin arma. CARTUCHOS SIN CIFRA: CANTIDAD NO DETERMINADA, no se integra al total numérico. MUNICIPIO NO ESPECIFICADO POR EL EMISOR. EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: hecho del tramo 18-20-SEP, boletín del 21-SEP. DESLINDE OBLIGATORIO: NO es ARG-123-001, el ataque armado del 21-sep en la MISMA CARRETERA MÉXICO-PUEBLA pero del lado del ESTADO DE MÉXICO —otra entidad, otra fecha, otro hecho y otra corporación—; NI es ARG-121-004, el aseguramiento de 48,600 litros de gas LP del 16-sep en el tramo El Caracol. Conteo de armamento: ARG-123-ARM-006 (2026-09-20)</title></circle></a><a href="#ARG-123-REC-001"><circle class="eco" cx="96.2" cy="175.4" r="11" fill="#8fb8c8"><title>ARG-123-REC-001 — Tetecala, Morelos, DOMICILIO DE UNA COLONIA CÉNTRICA, VIERNES 18-SEP A LAS 20:40: UN GRUPO ARMADO IRRUMPE EN LA VIVIENDA Y ACRIBILLA A ZENÓN JUÁREZ HERNÁNDEZ, DIRIGENTE DEL COMITÉ MUNICIPAL DEL PRI EN TETECALA, EXTITULAR DE AGUA POTABLE DEL AYUNTAMIENTO y coordinador de la reorganización del partido en la REGIÓN PONIENTE DE MORELOS (🔴). DOS MUERTOS: su acompañante falleció en el lugar y él murió en el Hospital General de Tetecala. La FGE de Morelos reconoce NO TENER PISTAS sobre los responsables. CERO DETENIDOS. ROJO POR DOS AGRAVANTES CONCURRENTES: víctimas múltiples y víctima con responsabilidad política local. CONTEXTO ELECTORAL DECLARADO POR LAS FUENTES: Morelos renueva 33 alcaldías en 2027 y el proceso ya inició. COHERENCIA INTERNA VERIFICADA CONTRA CALENDARIO: las fuentes dicen «la noche del viernes» y publican el 19-sep; el viernes fue el 18, de modo que LA FECHA DEL HECHO ES EL 18-SEP Y LA DE PUBLICACIÓN EL 19 — cuatro campos distintos que no se sustituyen entre sí. LA HORA ESTÁ FIJADA (20:40) Y ES ANTERIOR AL CIERRE DE LA VENTANA DE ARGOS 122: NO ES FRONTERA DE VENTANA, ES INEQUÍVOCAMENTE DEL CORTE ANTERIOR. VENTANA DE ORIGEN: ARGOS 122 (17-sep 17:36 → 21-sep 08:57). FUERA DEL SEMÁFORO, DEL MAPA, DEL RADAR Y DE TODOS LOS TOTALES. DESLINDE: Tetecala NO figura en el índice; SÍ figura ARG-108-REC-001, Mazatepec, Morelos, excandidato a la alcaldía de Coatlán del Río y coordinador municipal del partido PAZ: OTRO MUNICIPIO, OTRA FECHA, OTRO PARTIDO Y OTRA VÍCTIMA — la coincidencia de región y de perfil se registra, la vinculación NO se afirma. Lo aportó el recall nacional del coordinador (2026-09-18)</title></circle></a><a href="#ARG-123-REC-002"><circle class="eco" cx="35.5" cy="106.9" r="11" fill="#8fb8c8"><title>ARG-123-REC-002 — Santo Domingo Tehuantepec, Oaxaca, BARRIO DE SANTA CRUZ TAGOLABA, calle GENERAL DE HOMBRES ILUSTRES, SÁBADO 19-SEP POCO DESPUÉS DE LAS 21:00: SUJETOS ARMADOS ENTRAN A UN TALLER DE MOTOTAXIS Y DISPARAN CONTRA LAS PERSONAS PRESENTES (🔴). TRES MUERTOS: CÉSAR R. C., dueño del establecimiento, fallecido en el hospital; MARIO ALBERTO L. P. y LUZ ANDREA S. M., DOS HOMBRES Y UNA MUJER. Dos murieron de inmediato —uno dentro del taller y otro en la calle— y el tercero durante la atención médica. CIFRA PRELIMINAR SUPERADA: una cobertura regional publicó «2 MUERTOS Y UN HERIDO», cifra del primer momento que el desenlace posterior dejó atrás; SE ADOPTA TRES, sostenida por La Jornada, El Universal Oaxaca, Meganoticias, Diario Marca y El Imparcial de Oaxaca. OPERATIVO POSTERIOR SIN LOCALIZAR A LOS AGRESORES; refuerzo de seguridad en la zona del Istmo. CERO DETENIDOS. LÍNEA DE INVESTIGACIÓN PUBLICADA Y NO ACREDITADA: disputa por el control de agrupaciones o sindicatos de MOTOTAXIS en Santa Cruz Tagolaba; ninguna autoridad la ha confirmado. ROJO POR VÍCTIMAS MÚLTIPLES. VENTANA DE ORIGEN: ARGOS 122 (17-sep 17:36 → 21-sep 08:57) — la hora está fijada y es anterior a su cierre. FUERA DEL SEMÁFORO, DEL MAPA, DEL RADAR Y DE TODOS LOS TOTALES. DESLINDE: ni Santo Domingo Tehuantepec ni Tagolaba figuran en el índice; NO es ARG-98-001, el ataque al salón «Baby O» de Santo Domingo Zanatepec, ni ARG-99-003, los tres ejecutados de San Pedro Amuzgos: otros municipios y otras fechas. Lo aportó el recall nacional del coordinador (2026-09-19)</title></circle></a></svg></div>
+    <div class="radar-stats"><div>🔴 Alto impacto<br><b>1</b></div><div>🟡 Violencia operativa<br><b>0</b></div><div>🟢 Acciones institucionales<br><b>7</b></div></div>
+  </div>
+
+  <div class="viz">
+    <div class="viz-title"><span>MAPA NACIONAL</span><span>FOCOS DEL CORTE</span></div>
+    <div class="map-box"><svg viewBox="0 0 900 520" preserveAspectRatio="xMidYMid meet"><path class="estado-path" data-sid="MX-ZAC" d="M452 234L451 235L448 240L445 241L444 244L440 245L439 247L439 250L440 251L439 254L438 255L433 257L432 258L429 263L424 265L422 268L419 268L416 267L415 269L416 271L415 272L416 275L415 280L416 283L420 285L422 287L425 288L427 291L428 292L432 291L436 286L439 285L441 288L440 290L437 296L437 298L438 301L437 305L435 309L434 309L431 308L429 305L426 304L423 303L421 300L421 299L418 297L415 295L415 293L412 296L409 298L406 299L404 303L402 307L400 310L400 311L403 313L403 316L403 317L406 319L406 322L405 323L402 325L399 328L397 327L395 328L395 330L393 331L392 331L388 332L385 331L382 330L380 328L378 327L378 326L383 324L383 322L382 322L380 322L379 319L381 319L383 317L383 312L386 310L388 308L393 306L394 304L395 300L394 299L392 299L392 296L390 296L388 296L388 298L389 299L386 301L385 304L383 303L382 304L380 304L380 302L383 296L383 293L380 291L376 292L376 300L375 301L374 300L373 298L373 295L374 292L376 289L377 288L377 287L375 286L373 287L371 288L371 289L372 293L373 295L372 296L370 296L371 293L370 293L367 294L367 296L365 297L364 298L363 296L363 294L364 291L365 289L368 288L369 283L369 281L368 278L368 277L370 274L371 268L371 266L374 263L376 260L375 256L376 255L376 251L375 248L377 247L380 245L382 242L384 240L386 238L390 238L392 239L395 238L400 239L400 238L402 239L408 238L409 236L408 232L406 232L407 227L405 225L404 223L403 221L403 220L410 218L419 219L422 221L424 222L426 223L428 226L431 226L431 229L434 230L435 229L438 228L441 229L442 230L444 233L445 235L447 235L450 234L452 234Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-YUC" d="M787 319L787 324L786 326L785 329L787 333L787 334L784 339L784 341L783 342L777 347L775 348L772 348L771 347L770 348L768 350L766 351L765 354L761 356L759 356L755 359L754 360L752 361L748 362L746 363L745 364L740 365L740 367L739 369L738 365L735 362L734 359L730 357L728 352L726 351L726 349L724 347L722 349L721 348L720 348L718 346L715 345L715 338L714 337L716 333L717 332L722 328L725 327L729 325L733 324L740 323L747 322L754 321L759 319L759 318L765 317L767 317L770 317L772 315L774 316L776 317L779 317L781 318L785 319L787 319Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-VER" d="M528 298L529 303L531 308L530 309L531 311L531 314L534 319L535 319L536 323L537 324L538 328L542 336L543 337L544 341L545 343L549 347L549 348L555 355L559 360L560 361L562 364L563 367L564 372L566 374L565 376L566 379L569 380L571 383L571 385L572 386L574 386L575 390L577 392L577 394L580 394L584 395L594 395L599 399L603 400L606 404L608 407L609 409L610 410L612 411L615 410L622 408L621 409L621 414L622 415L622 418L624 420L626 422L630 424L632 427L631 430L632 432L634 433L630 436L628 437L627 438L609 437L598 436L599 435L597 432L595 431L593 429L591 426L591 424L593 423L591 422L590 423L586 424L583 426L580 426L579 427L577 427L575 422L575 420L576 419L578 414L577 411L576 410L573 409L571 409L569 409L567 408L566 406L565 405L564 406L561 403L560 400L561 399L559 397L559 400L557 403L555 401L553 400L550 402L548 401L547 398L543 396L542 394L542 391L544 389L544 388L544 381L549 381L549 378L546 377L542 376L540 375L541 374L539 370L540 369L542 364L542 363L544 358L546 355L539 352L536 356L535 356L534 354L531 354L530 351L530 347L532 346L533 347L535 345L534 344L531 341L531 339L531 336L528 336L526 339L525 340L525 343L522 342L520 344L519 345L517 347L514 349L512 350L510 347L511 343L511 339L512 338L515 336L517 337L518 337L518 335L518 333L520 331L518 327L516 326L515 327L512 326L510 325L511 323L510 321L509 317L508 317L507 316L507 313L510 312L511 310L509 308L509 306L511 306L511 305L511 302L512 301L515 301L513 298L512 297L508 296L506 296L505 294L507 293L511 293L514 294L516 294L516 293L518 292L519 294L522 295L523 295L526 299L528 298ZM533 309L534 311L537 314L540 316L540 318L538 323L537 323L539 319L539 318L537 316L536 314L533 311L533 309Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-TLA" d="M508 374L507 374L506 372L511 370L514 370L517 367L519 368L522 368L523 366L529 371L529 373L531 372L533 374L533 375L534 376L533 378L530 378L528 381L526 381L524 380L521 383L520 383L516 381L515 378L510 374L508 374Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-TAM" d="M528 298L526 299L523 295L522 295L519 294L518 292L516 293L516 294L514 294L511 293L507 293L505 294L502 295L500 294L499 294L495 294L493 294L491 291L490 289L488 286L486 286L485 284L483 286L481 286L478 285L473 284L472 283L472 279L472 276L471 274L471 271L470 270L470 268L474 268L473 264L474 262L475 261L476 258L478 256L481 257L483 256L484 254L486 255L485 252L484 252L483 248L481 245L482 240L481 237L478 236L479 234L481 233L484 231L486 229L487 229L488 228L492 227L492 226L494 225L494 223L493 221L496 218L497 219L500 219L502 216L506 215L509 213L511 212L513 209L510 208L509 204L510 202L509 200L509 197L508 194L503 194L501 196L500 195L498 192L494 192L493 188L491 189L489 186L487 184L486 179L484 179L483 177L481 177L481 172L478 170L479 167L481 166L480 163L479 162L479 158L478 157L479 155L477 155L474 154L475 152L478 151L480 149L483 150L485 152L485 153L486 154L485 158L486 160L487 162L487 167L488 168L491 171L493 178L494 180L496 182L495 183L499 184L502 185L504 186L506 188L508 188L514 191L517 193L519 193L521 193L524 193L526 193L529 194L530 194L532 195L535 198L537 199L539 198L540 197L543 196L545 196L545 198L544 203L543 205L539 212L538 211L535 210L535 212L535 214L533 214L533 212L531 212L530 216L531 217L529 223L531 224L529 227L530 229L530 231L530 232L529 234L527 235L528 239L529 238L530 241L529 246L529 255L530 259L529 266L529 277L529 281L528 283L527 285L526 288L527 289L526 293L527 295L528 298Z" fill="#33d17a" fill-opacity="0.88"></path><path class="estado-path" data-sid="MX-TAB" d="M662 397L664 401L667 404L668 404L669 405L669 407L672 412L676 415L676 416L679 417L681 418L684 417L685 413L688 413L691 414L693 415L700 418L700 420L700 435L689 435L690 434L689 432L686 430L684 430L683 429L684 427L683 423L680 422L680 420L679 418L677 418L674 418L674 419L670 419L669 420L669 422L667 423L662 428L660 429L656 432L654 432L653 429L650 428L650 426L648 423L649 420L649 418L647 418L645 417L642 415L640 416L640 419L640 422L639 425L636 428L636 430L634 433L632 432L631 430L632 427L630 424L626 422L624 420L622 418L622 415L621 414L621 409L622 408L627 407L627 408L630 408L630 406L634 406L635 404L639 403L644 403L645 405L647 404L648 403L652 403L655 401L657 398L662 397Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-SON" d="M163 106L163 108L165 112L164 116L163 119L156 116L158 114L158 112L158 108L161 106L163 106ZM252 48L253 49L252 50L254 54L254 56L254 59L253 61L255 62L255 65L256 66L255 67L256 69L258 76L257 79L259 82L257 85L257 90L259 90L259 97L259 99L258 101L259 107L257 107L257 110L256 111L256 114L255 115L256 117L254 120L254 122L255 124L254 125L256 128L258 129L256 131L253 132L250 131L249 132L246 132L245 133L247 135L246 138L249 139L251 142L251 144L250 146L254 148L257 156L257 157L256 161L256 164L255 165L259 167L261 166L263 166L263 168L259 172L260 174L258 175L256 179L252 180L251 183L249 184L245 186L244 185L242 184L240 183L240 182L239 180L235 176L235 175L233 174L232 176L229 176L227 175L224 173L223 169L223 165L221 164L219 165L218 164L213 163L209 159L209 157L207 156L206 154L206 152L205 150L206 148L205 146L206 143L204 143L199 141L197 143L196 141L194 141L189 138L187 135L184 131L183 129L178 127L176 123L172 120L173 118L170 116L168 114L166 113L166 109L165 106L164 103L162 104L160 103L160 102L161 100L161 98L158 96L157 93L156 93L154 89L154 88L152 87L152 85L151 83L151 80L151 79L149 77L149 74L148 72L145 70L143 66L142 62L143 57L144 55L143 52L140 51L136 50L131 49L129 48L130 47L129 44L123 41L119 44L116 44L113 42L112 41L107 38L105 36L103 36L102 36L101 35L100 35L94 31L95 28L95 26L95 24L94 22L96 20L97 16L99 16L121 23L147 32L165 38L180 43L194 48L209 48L227 48L252 48ZM100 35L103 37L102 39L100 37L100 36L100 35Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-SIN" d="M268 221L270 224L270 226L268 224L268 221ZM263 219L264 220L269 225L268 226L266 222L263 219ZM241 186L242 186L242 184L244 185L245 186L249 184L251 183L252 180L256 179L258 175L260 174L259 172L263 168L263 166L268 166L269 167L269 169L270 169L271 172L271 177L272 178L273 181L275 184L276 186L278 190L281 191L284 192L287 192L290 197L290 200L292 203L292 205L290 207L291 209L290 212L290 217L290 219L291 219L293 224L294 227L297 227L298 229L299 229L300 234L302 234L302 238L304 242L305 242L310 239L311 238L315 239L317 240L320 245L320 247L322 252L323 253L323 256L325 259L327 261L328 264L329 266L328 267L330 270L331 274L335 274L337 276L336 277L335 280L334 282L334 285L335 286L336 290L335 291L332 290L330 289L329 289L329 291L325 286L322 283L321 282L316 276L310 271L309 268L308 266L306 264L302 259L299 255L299 254L297 251L292 247L290 245L287 243L286 243L282 240L284 239L284 237L282 235L281 237L277 236L276 234L272 232L271 230L271 228L270 221L269 219L267 219L265 217L262 215L261 217L260 215L254 212L252 211L251 209L252 208L250 207L248 207L249 208L248 210L247 208L245 209L243 207L245 206L247 206L248 205L248 204L245 204L245 206L242 205L239 202L235 200L236 198L235 196L235 195L237 191L239 190L240 187L241 186Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-SLP" d="M470 270L471 271L471 274L472 276L472 279L472 283L473 284L478 285L481 286L483 286L485 284L486 286L488 286L490 289L491 291L493 294L495 294L499 294L500 294L502 295L505 294L506 296L508 296L512 297L513 298L515 301L512 301L511 302L511 305L511 306L509 306L509 308L511 310L510 312L507 313L507 316L508 317L509 317L510 321L508 321L506 323L505 326L504 325L503 327L500 326L499 323L497 324L492 319L491 317L489 317L488 320L483 320L482 317L480 316L478 318L476 319L471 319L469 317L465 314L461 313L460 314L460 317L458 317L456 318L451 315L449 313L446 312L441 310L440 310L437 309L435 309L437 305L438 301L437 298L437 296L440 290L441 288L439 285L436 286L432 291L428 292L427 291L425 288L422 287L420 285L416 283L415 280L416 275L415 272L416 271L415 269L416 267L419 268L422 268L424 265L429 263L432 258L433 257L438 255L439 254L440 251L439 250L439 247L440 245L444 244L445 241L448 240L451 235L452 237L455 238L456 240L454 241L456 244L456 245L459 248L460 251L459 255L460 257L460 260L459 263L460 264L460 269L462 272L463 272L466 270L470 270Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-ROO" d="M807 343L806 346L802 351L800 352L800 350L800 348L802 345L804 345L807 343ZM746 416L746 414L748 411L749 408L749 404L748 403L749 401L748 399L747 397L747 395L748 391L748 388L749 387L749 381L747 377L744 374L741 371L739 369L740 367L740 365L745 364L746 363L748 362L752 361L754 360L755 359L759 356L761 356L765 354L766 351L768 350L770 348L771 347L772 348L775 348L777 347L783 342L784 341L784 339L787 334L787 333L785 329L786 326L787 324L787 319L791 320L795 320L797 319L798 316L800 317L803 321L804 325L805 326L805 328L806 329L805 332L803 336L800 340L798 343L794 347L792 349L791 352L790 353L788 358L789 362L788 365L786 365L784 368L782 369L781 371L784 373L785 372L789 371L790 372L789 374L787 376L786 376L784 377L783 382L784 381L786 379L787 378L789 379L787 382L786 385L784 389L783 394L782 395L781 403L779 406L779 409L778 408L778 405L777 404L777 403L773 401L775 396L775 393L773 391L768 400L768 401L763 401L762 402L761 405L760 406L760 409L758 410L757 413L756 414L755 415L753 417L749 415L747 415L746 416Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-QUE" d="M497 324L496 327L491 329L490 328L488 329L489 331L487 334L485 336L484 339L485 341L483 343L477 344L476 351L475 352L474 354L474 356L472 358L469 359L466 355L466 354L464 352L463 350L461 348L460 346L460 344L458 340L458 338L459 335L464 335L465 334L468 334L470 333L470 330L473 327L474 326L476 328L479 326L480 323L477 323L479 321L478 318L480 316L482 317L483 320L488 320L489 317L491 317L492 319L497 324Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-PUE" d="M557 403L554 407L552 408L548 411L545 410L543 411L541 413L540 415L538 415L538 413L535 409L534 408L535 407L535 405L532 406L530 410L532 413L531 415L529 415L527 413L525 414L522 414L520 414L518 416L517 417L515 416L514 414L509 415L509 414L505 412L505 410L502 411L501 408L499 406L499 405L501 403L502 402L504 400L507 403L508 402L506 395L508 388L509 386L509 382L508 379L509 376L508 374L510 374L515 378L516 381L520 383L521 383L524 380L526 381L528 381L530 378L533 378L534 376L533 375L533 374L531 372L529 373L529 371L523 366L522 368L519 368L518 363L520 360L521 355L520 353L518 353L517 351L521 350L522 348L525 346L525 343L525 340L526 339L528 336L531 336L531 339L531 341L534 344L535 345L533 347L532 346L530 347L530 351L531 354L534 354L535 356L536 356L539 352L546 355L544 358L542 363L542 364L540 369L539 370L541 374L540 375L542 376L546 377L549 378L549 381L544 381L544 388L544 389L542 391L542 394L543 396L547 398L548 401L550 402L553 400L555 401L557 403Z" fill="#33d17a" fill-opacity="0.88"></path><path class="estado-path" data-sid="MX-OAX" d="M627 438L627 441L626 442L625 446L622 448L620 455L620 456L621 459L621 461L621 464L619 465L615 463L614 462L613 462L613 464L614 465L618 465L621 468L616 466L613 465L606 464L608 462L609 461L607 460L605 461L602 458L600 458L599 461L598 461L596 463L601 463L601 464L592 466L590 467L589 469L588 470L584 471L582 472L580 472L578 473L574 474L570 476L567 478L563 478L561 479L559 479L556 477L552 477L548 475L547 474L543 472L540 471L538 471L535 471L529 470L525 467L518 463L513 462L509 461L514 457L514 455L517 453L518 451L519 450L521 449L522 447L523 445L522 443L520 442L520 438L517 437L517 435L518 434L518 429L515 424L515 421L517 417L518 416L520 414L522 414L525 414L527 413L529 415L531 415L532 413L530 410L532 406L535 405L535 407L534 408L535 409L538 413L538 415L540 415L541 413L543 411L545 410L548 411L552 408L554 407L557 403L559 400L559 397L561 399L560 400L561 403L564 406L565 405L566 406L567 408L569 409L571 409L573 409L576 410L577 411L578 414L576 419L575 420L575 422L577 427L579 427L580 426L583 426L586 424L590 423L591 422L593 423L591 424L591 426L593 429L595 431L597 432L599 435L598 436L609 437L627 438Z" fill="undefined" fill-opacity="0.88"></path><path class="estado-path" data-sid="MX-NLE" d="M480 149L478 151L475 152L474 154L477 155L479 155L478 157L479 158L479 162L480 163L481 166L479 167L478 170L481 172L481 177L483 177L484 179L486 179L487 184L489 186L491 189L493 188L494 192L498 192L500 195L501 196L503 194L508 194L509 197L509 200L510 202L509 204L510 208L513 209L511 212L509 213L506 215L502 216L500 219L497 219L496 218L493 221L494 223L494 225L492 226L492 227L488 228L487 229L486 229L484 231L481 233L479 234L478 236L481 237L482 240L481 245L483 248L484 252L485 252L486 255L484 254L483 256L481 257L478 256L476 258L475 261L474 262L473 264L474 268L470 268L470 270L466 270L463 272L462 272L460 269L460 264L459 263L460 260L460 257L459 255L460 251L459 248L456 245L456 244L454 241L456 240L455 238L452 237L451 235L452 234L453 231L452 229L451 227L451 224L453 225L453 222L452 219L454 216L456 215L457 214L458 214L460 216L463 217L465 217L466 215L464 212L461 212L461 211L457 208L456 204L454 204L452 203L451 202L451 199L452 196L449 194L448 191L446 189L441 184L442 183L444 181L445 178L446 177L449 177L451 176L455 175L456 173L457 173L458 170L457 165L455 164L454 165L453 167L451 165L450 162L451 160L453 158L455 158L457 157L459 157L460 156L459 154L461 151L462 149L463 148L467 148L472 149L475 148L477 146L478 147L480 149Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-NAY" d="M305 313L308 314L309 316L308 317L306 316L305 313ZM363 294L363 296L364 298L363 303L364 306L365 306L368 308L368 309L369 312L373 313L374 314L375 317L377 318L377 320L377 324L376 325L374 326L372 327L371 328L366 328L366 332L365 337L363 338L364 342L361 339L360 338L358 335L354 334L353 333L350 332L347 335L345 334L343 335L342 338L339 341L338 339L337 340L334 338L335 336L339 332L340 332L341 330L341 327L341 323L342 320L341 318L340 318L336 316L335 314L334 311L331 306L330 303L330 300L333 302L335 303L335 301L331 298L331 297L331 292L330 289L332 290L335 291L336 290L335 286L334 285L334 282L335 280L336 277L337 276L339 279L341 278L342 277L344 279L347 279L348 282L349 282L349 285L346 287L345 288L347 291L348 292L351 288L352 290L354 291L356 293L357 295L359 296L360 295L363 294ZM310 319L312 319L312 321L309 319L310 319Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-MOR" d="M501 385L503 388L506 389L508 387L509 386L508 388L506 395L508 402L507 403L504 400L502 402L501 403L499 405L496 403L491 402L489 399L486 399L486 397L488 394L491 388L492 385L494 385L495 386L497 385L498 386L501 385Z" fill="undefined" fill-opacity="0.88"></path><path class="estado-path" data-sid="MX-MIC" d="M464 352L466 354L466 355L469 359L469 361L470 363L469 364L468 367L466 368L467 371L467 374L467 376L466 377L466 380L464 382L462 386L460 387L459 389L457 391L455 393L455 392L453 393L454 398L454 401L457 405L456 406L451 403L449 404L447 401L445 401L440 400L438 401L434 401L433 401L432 399L430 398L427 400L426 399L425 401L425 404L425 405L425 407L422 409L421 409L419 410L418 411L418 415L419 416L417 417L415 416L410 414L402 412L397 410L394 409L391 408L385 406L384 404L382 401L379 398L380 398L378 396L379 394L381 393L381 390L382 391L385 388L388 388L390 386L392 388L394 386L396 385L400 381L402 381L404 381L405 379L406 377L407 376L406 374L403 374L404 371L402 367L403 365L402 362L398 361L395 361L396 359L396 357L397 356L400 356L401 357L405 356L405 354L407 353L408 353L411 351L416 351L418 350L421 350L422 350L423 354L425 355L428 354L429 354L431 352L433 351L436 351L436 353L437 359L442 360L443 358L445 359L447 358L448 361L452 362L456 362L457 361L463 359L464 358L463 357L464 355L463 353L464 352Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-MEX" d="M506 372L507 374L508 374L509 376L508 379L509 382L509 386L508 387L506 389L503 388L501 385L502 383L501 380L498 378L497 375L495 373L493 375L493 377L490 379L490 381L492 385L491 388L488 394L486 397L485 397L483 396L479 397L477 400L473 400L471 401L472 402L470 403L467 405L466 405L464 402L461 401L463 400L462 397L461 397L461 395L461 391L462 389L462 386L464 382L466 380L466 377L467 376L467 374L467 371L466 368L468 367L469 364L470 363L469 361L469 359L472 358L474 356L474 354L475 352L476 351L477 353L481 355L485 355L487 359L486 360L487 361L490 367L490 364L492 365L493 364L493 361L494 360L497 359L501 358L501 359L500 364L498 365L500 368L502 365L508 364L508 366L506 371L506 372Z" fill="#ff3b3b" fill-opacity="0.88"></path><path class="estado-path" data-sid="MX-JAL" d="M403 313L405 312L409 313L411 314L413 315L414 315L418 313L421 310L425 308L423 306L423 303L426 304L429 305L431 308L434 309L433 311L432 313L431 319L432 322L430 324L429 323L427 328L425 330L424 333L419 339L421 340L423 343L421 347L421 350L418 350L416 351L411 351L408 353L407 353L405 354L405 356L401 357L400 356L397 356L396 357L396 359L395 361L398 361L402 362L403 365L402 367L404 371L403 374L406 374L407 376L406 377L405 379L404 381L402 381L400 381L396 385L394 386L392 388L390 386L388 388L385 388L385 386L384 385L384 383L384 379L383 376L382 372L379 374L376 376L372 376L370 377L368 378L366 378L364 379L361 379L360 380L358 380L357 382L355 382L352 381L352 379L350 379L348 378L346 376L344 372L340 368L338 365L334 359L333 357L333 353L330 351L329 348L331 347L333 346L339 346L340 344L341 343L339 341L342 338L343 335L345 334L347 335L350 332L353 333L354 334L358 335L360 338L361 339L364 342L363 338L365 337L366 332L366 328L371 328L372 327L374 326L376 325L377 324L377 320L377 318L375 317L374 314L373 313L369 312L368 309L368 308L365 306L364 306L363 303L364 298L365 297L367 296L367 294L370 293L371 293L370 296L372 296L373 295L372 293L371 289L371 288L373 287L375 286L377 287L377 288L376 289L374 292L373 295L373 298L374 300L375 301L376 300L376 292L380 291L383 293L383 296L380 302L380 304L382 304L383 303L385 304L386 301L389 299L388 298L388 296L390 296L392 296L392 299L394 299L395 300L394 304L393 306L388 308L386 310L383 312L383 317L381 319L379 319L380 322L382 322L383 322L383 324L378 326L378 327L380 328L382 330L385 331L388 332L392 331L393 331L395 330L395 328L397 327L399 328L402 325L405 323L406 322L406 319L403 317L403 316L403 313Z" fill="#33d17a" fill-opacity="0.88"></path><path class="estado-path" data-sid="MX-HID" d="M510 321L511 323L510 325L512 326L515 327L516 326L518 327L520 331L518 333L518 335L518 337L517 337L515 336L512 338L511 339L511 343L510 347L512 350L514 349L517 347L519 345L520 344L522 342L525 343L525 346L522 348L521 350L517 351L518 353L520 353L521 355L520 360L518 363L519 368L517 367L514 370L511 370L506 372L506 371L508 366L508 364L502 365L500 368L498 365L500 364L501 359L501 358L497 359L494 360L493 361L493 364L492 365L490 364L490 367L487 361L486 360L487 359L485 355L481 355L477 353L476 351L477 344L483 343L485 341L484 339L485 336L487 334L489 331L488 329L490 328L491 329L496 327L497 324L499 323L500 326L503 327L504 325L505 326L506 323L508 321L510 321Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-GRO" d="M486 397L486 399L489 399L491 402L496 403L499 405L499 406L501 408L502 411L505 410L505 412L509 414L509 415L514 414L515 416L517 417L515 421L515 424L518 429L518 434L517 435L517 437L520 438L520 442L522 443L523 445L522 447L521 449L519 450L518 451L517 453L514 455L514 457L509 461L504 454L500 455L493 453L486 451L482 451L479 449L477 448L475 447L474 445L463 441L456 438L446 435L446 433L442 430L436 428L436 427L435 425L433 425L431 424L431 422L429 420L427 418L423 416L421 415L419 416L418 415L418 411L419 410L421 409L422 409L425 407L425 405L425 404L425 401L426 399L427 400L430 398L432 399L433 401L434 401L438 401L440 400L445 401L447 401L449 404L451 403L456 406L457 405L454 401L454 398L453 393L455 392L455 393L457 391L459 389L460 387L462 386L462 389L461 391L461 395L461 397L462 397L463 400L461 401L464 402L466 405L467 405L470 403L472 402L471 401L473 400L477 400L479 397L483 396L485 397L486 397Z" fill="#33d17a" fill-opacity="0.88"></path><path class="estado-path" data-sid="MX-GUA" d="M478 318L479 321L477 323L480 323L479 326L476 328L474 326L473 327L470 330L470 333L468 334L465 334L464 335L459 335L458 338L458 340L460 344L460 346L461 348L463 350L464 352L463 353L464 355L463 357L464 358L463 359L457 361L456 362L452 362L448 361L447 358L445 359L443 358L442 360L437 359L436 353L436 351L433 351L431 352L429 354L428 354L425 355L423 354L422 350L421 350L421 347L423 343L421 340L419 339L424 333L425 330L427 328L429 323L430 324L432 322L431 319L432 313L433 311L434 309L435 309L437 309L440 310L441 310L446 312L449 313L451 315L456 318L458 317L460 317L460 314L461 313L465 314L469 317L471 319L476 319L478 318Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-DUR" d="M375 174L379 176L383 180L385 184L384 188L386 192L386 196L387 200L386 204L383 207L384 209L386 210L384 211L383 212L383 215L385 217L386 219L388 221L389 224L390 226L394 228L397 228L399 229L400 228L399 227L400 224L403 221L404 223L405 225L407 227L406 232L408 232L409 236L408 238L402 239L400 238L400 239L395 238L392 239L390 238L386 238L384 240L382 242L380 245L377 247L375 248L376 251L376 255L375 256L376 260L374 263L371 266L371 268L370 274L368 277L368 278L369 281L369 283L368 288L365 289L364 291L363 294L360 295L359 296L357 295L356 293L354 291L352 290L351 288L348 292L347 291L345 288L346 287L349 285L349 282L348 282L347 279L344 279L342 277L341 278L339 279L337 276L335 274L331 274L330 270L328 267L329 266L328 264L327 261L325 259L323 256L323 253L322 252L320 247L320 245L317 240L315 239L311 238L310 239L305 242L304 242L302 238L302 234L300 234L299 229L298 229L297 227L294 227L293 224L291 219L290 219L290 217L290 212L291 209L290 207L292 205L292 203L295 202L296 204L301 205L302 206L303 204L307 202L309 199L308 196L307 195L309 191L309 189L311 187L313 186L314 184L314 182L314 180L315 174L317 173L317 172L320 173L323 174L324 176L326 178L327 177L331 180L333 180L333 181L335 181L337 182L341 180L346 180L348 182L351 183L353 183L355 183L355 180L357 177L358 177L361 174L361 172L366 175L373 173L375 174Z" fill="#33d17a" fill-opacity="0.88"></path><path class="estado-path" data-sid="MX-CMX" d="M501 385L498 386L497 385L495 386L494 385L492 385L490 381L490 379L493 377L493 375L495 373L497 375L498 378L501 380L502 383L501 385Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-COL" d="M385 388L382 391L381 390L381 393L379 394L378 396L377 394L373 391L368 388L364 387L364 385L363 384L361 384L355 382L357 382L358 380L360 380L361 379L364 379L366 378L368 378L370 377L372 376L376 376L379 374L382 372L383 376L384 379L384 383L384 385L385 386L385 388Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-COA" d="M477 146L475 148L472 149L467 148L463 148L462 149L461 151L459 154L460 156L459 157L457 157L455 158L453 158L451 160L450 162L451 165L453 167L454 165L455 164L457 165L458 170L457 173L456 173L455 175L451 176L449 177L446 177L445 178L444 181L442 183L441 184L446 189L448 191L449 194L452 196L451 199L451 202L452 203L454 204L456 204L457 208L461 211L461 212L464 212L466 215L465 217L463 217L460 216L458 214L457 214L456 215L454 216L452 219L453 222L453 225L451 224L451 227L452 229L453 231L452 234L450 234L447 235L445 235L444 233L442 230L441 229L438 228L435 229L434 230L431 229L431 226L428 226L426 223L424 222L422 221L419 219L410 218L403 220L403 221L400 224L399 227L400 228L399 229L397 228L394 228L390 226L389 224L388 221L386 219L385 217L383 215L383 212L384 211L386 210L384 209L383 207L386 204L387 200L386 196L386 192L384 188L385 184L383 180L379 176L375 174L374 172L372 171L372 168L376 167L376 165L374 164L374 159L373 155L373 152L372 152L371 147L372 146L371 145L372 143L371 142L373 141L374 138L378 130L377 129L380 124L383 122L385 118L386 118L387 117L385 116L387 112L391 113L394 113L395 110L396 110L397 107L399 107L400 106L400 103L402 101L401 100L404 95L405 92L410 91L412 91L414 88L418 89L419 90L421 91L422 90L425 90L427 90L431 91L434 91L436 91L438 93L441 95L441 98L443 98L444 99L446 100L447 102L450 104L453 105L454 108L456 110L456 114L459 118L460 122L463 124L462 125L464 127L464 129L465 131L465 132L467 134L471 136L472 138L473 140L475 142L476 145L477 146Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-CHH" d="M387 112L385 116L387 117L386 118L385 118L383 122L380 124L377 129L378 130L374 138L373 141L371 142L372 143L371 145L372 146L371 147L372 152L373 152L373 155L374 159L374 164L376 165L376 167L372 168L372 171L374 172L375 174L373 173L366 175L361 172L361 174L358 177L357 177L355 180L355 183L353 183L351 183L348 182L346 180L341 180L337 182L335 181L333 181L333 180L331 180L327 177L326 178L324 176L323 174L320 173L317 172L317 173L315 174L314 180L314 182L314 184L313 186L311 187L309 189L309 191L307 195L308 196L309 199L307 202L303 204L302 206L301 205L296 204L295 202L292 203L290 200L290 197L287 192L284 192L281 191L278 190L276 186L275 184L273 181L272 178L271 177L271 172L270 169L269 169L269 167L268 166L263 166L261 166L259 167L255 165L256 164L256 161L257 157L257 156L254 148L250 146L251 144L251 142L249 139L246 138L247 135L245 133L246 132L249 132L250 131L253 132L256 131L258 129L256 128L254 125L255 124L254 122L254 120L256 117L255 115L256 114L256 111L257 110L257 107L259 107L258 101L259 99L259 97L259 90L257 90L257 85L259 82L257 79L258 76L256 69L255 67L256 66L255 65L255 62L253 61L254 59L254 56L254 54L252 50L253 49L252 48L266 48L266 36L285 36L308 36L309 37L312 37L314 40L314 42L316 44L320 46L321 46L323 48L325 49L327 53L332 55L333 58L336 60L337 61L340 63L341 63L345 65L346 66L347 68L349 69L350 71L350 74L354 78L355 80L354 84L355 87L356 88L358 92L358 94L363 98L365 98L367 99L368 101L373 104L376 104L378 105L379 107L381 108L383 108L387 112Z" fill="#33d17a" fill-opacity="0.88"></path><path class="estado-path" data-sid="MX-CHP" d="M621 464L621 461L621 459L620 456L620 455L622 448L625 446L626 442L627 441L627 438L628 437L630 436L634 433L636 430L636 428L639 425L640 422L640 419L640 416L642 415L645 417L647 418L649 418L649 420L648 423L650 426L650 428L653 429L654 432L656 432L660 429L662 428L667 423L669 422L669 420L670 419L674 419L674 418L677 418L679 418L680 420L680 422L683 423L684 427L683 429L684 430L686 430L689 432L690 434L689 435L691 438L694 439L695 442L698 445L701 446L703 448L707 450L708 452L708 456L710 457L712 457L712 458L714 458L715 460L713 464L714 468L698 468L681 467L672 484L669 490L673 495L672 497L671 498L671 500L670 502L671 506L669 509L669 510L664 506L653 493L648 488L641 481L635 476L632 474L626 470L628 469L626 467L622 466L621 464Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-CAM" d="M686 393L683 396L681 397L679 397L678 396L681 396L686 393ZM715 338L715 345L718 346L720 348L721 348L722 349L724 347L726 349L726 351L728 352L730 357L734 359L735 362L738 365L739 369L741 371L744 374L747 377L749 381L749 387L748 388L748 391L747 395L747 397L748 399L749 401L748 403L749 404L749 408L748 411L746 414L746 416L746 420L731 420L714 420L700 420L700 418L693 415L691 414L688 413L685 413L684 417L681 418L679 417L676 416L676 415L672 412L669 407L669 405L668 404L667 404L664 401L662 397L664 396L674 395L675 396L676 397L678 398L677 399L676 398L675 399L678 401L685 403L686 402L687 401L692 399L692 396L693 395L692 393L691 394L690 392L689 390L696 386L697 385L701 383L705 379L706 377L707 374L707 372L707 370L707 369L708 366L712 363L713 361L712 358L713 357L712 349L712 346L713 342L714 339L715 338Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-BCS" d="M167 215L167 216L166 219L166 223L166 225L165 228L163 228L165 222L167 215ZM116 141L117 141L150 141L151 143L153 146L155 149L160 151L162 153L163 157L164 158L165 161L168 163L172 165L170 166L170 168L172 170L174 172L174 173L173 175L174 176L176 179L177 180L179 179L175 175L174 171L175 170L177 171L179 174L181 176L181 179L184 180L184 183L186 185L186 188L188 193L187 196L188 201L190 203L191 205L193 208L195 208L195 210L196 213L197 214L198 218L202 223L204 227L203 230L202 233L202 236L203 237L204 240L205 243L207 244L210 245L210 247L213 245L212 242L213 240L215 240L216 243L219 244L221 245L221 248L223 249L225 248L226 249L225 252L228 255L228 257L229 259L233 261L235 265L235 271L232 274L229 275L228 277L226 278L225 279L223 281L222 281L219 279L218 276L217 269L213 263L211 261L207 259L204 257L200 251L194 247L189 243L183 240L182 239L180 238L179 234L178 235L176 235L174 232L172 230L170 229L168 228L166 226L166 225L167 221L166 220L167 218L168 215L168 209L169 208L169 204L165 195L165 194L163 193L162 190L160 188L158 188L152 185L143 178L143 177L140 173L142 170L140 168L140 171L139 172L138 174L137 173L133 172L131 175L129 175L128 173L127 173L125 169L123 168L121 167L120 168L118 165L115 163L111 163L108 161L108 157L107 156L105 154L101 153L100 151L97 149L96 148L95 147L93 145L97 144L102 145L105 146L107 146L113 143L112 146L113 147L116 149L118 150L119 148L121 149L123 152L124 151L122 149L123 148L123 145L121 144L120 146L120 147L117 148L115 147L115 145L117 143L116 141ZM212 235L213 237L213 239L211 237L212 235ZM171 235L174 235L175 237L177 238L178 240L178 241L171 235ZM223 239L226 245L224 246L223 243L223 239ZM194 193L193 195L191 197L190 197L191 195L191 194L194 193ZM203 219L204 221L206 221L207 226L204 224L203 221L203 219ZM196 391L198 393L198 395L195 394L194 393L196 391Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-BCN" d="M131 97L133 98L135 100L136 102L136 104L141 104L141 109L141 110L143 111L142 113L139 110L138 108L135 106L134 105L132 103L130 100L131 97ZM89 129L91 133L91 136L90 139L89 139L87 137L87 136L89 134L88 132L89 129ZM117 141L116 141L115 142L113 141L116 138L116 140L117 141ZM99 16L97 16L96 20L94 22L95 24L95 26L95 28L94 31L100 35L99 36L100 40L99 41L98 44L98 47L98 50L98 53L98 55L100 56L99 57L102 59L102 62L102 67L104 71L104 77L103 79L105 83L107 86L110 88L110 90L111 92L113 91L115 92L116 93L120 97L124 100L126 101L129 104L129 107L131 109L132 111L131 114L132 115L133 114L136 115L136 118L139 117L140 118L141 122L142 122L143 126L145 127L148 127L149 128L148 132L150 135L150 136L150 139L151 141L151 143L150 141L118 141L119 139L117 138L117 137L118 135L118 133L117 133L119 128L118 126L115 122L114 121L111 119L110 116L108 114L106 114L105 113L104 110L102 109L101 107L99 106L95 102L93 101L90 100L88 98L85 97L83 95L82 95L80 93L79 93L77 91L77 88L76 86L74 86L75 82L75 81L75 77L74 75L72 74L68 72L69 67L68 63L65 61L63 58L61 58L62 53L60 49L58 48L56 45L53 43L52 42L53 39L53 37L54 37L54 34L51 32L50 31L47 29L47 26L46 23L43 22L41 16L41 15L63 13L78 12L102 10L100 13L99 16ZM13 107L12 109L13 110L13 114L12 115L11 111L10 110L10 108L13 107Z" fill="#33d17a" fill-opacity="0.88"></path><path class="estado-path" data-sid="MX-AGU" d="M403 313L400 311L400 310L402 307L404 303L406 299L409 298L412 296L415 293L415 295L418 297L421 299L421 300L423 303L423 306L425 308L421 310L418 313L414 315L413 315L411 314L409 313L405 312L403 313Z" fill="#26314a" fill-opacity="0.55"></path></svg></div>
+    <div class="map-caption">Color = evento de mayor impacto por entidad.</div>
+  </div>
+
+  <div class="block-head">SEMÁFORO ARGOS</div>
+  <div class="semaforo">
+    <div class="sem alto"><span class="dot"></span><span class="lbl">🔴 ROJO<br>ALTO IMPACTO</span><span class="val">1</span></div>
+    <div class="sem medio"><span class="dot"></span><span class="lbl">🟡 AMARILLO<br>VIOL. OPERATIVA</span><span class="val">0</span></div>
+    <div class="sem bajo"><span class="dot"></span><span class="lbl">🟢 VERDE<br>ACC. INSTITUC.</span><span class="val">7</span></div>
+  </div>
+
+  
+
+  <div class="alerta contexto">
+    <div class="flag">LO QUE DEBE HACER EL MANDO</div>
+    <p>
+      <b>1. AUDITE EL CRUCE LIBRE–CÓRDOVA.</b> 9,287 cartuchos y 11 armas salieron en un <b>autobús de
+      pasajeros</b>: revise el protocolo de inspección de transporte público en los puentes de Juárez.
+      <br><b>2. EXIJA LA TRAZA DE LAS 25 ESPOLETAS DE ZAPOPAN.</b> Con 20 AEI, son <b>iniciadores</b>:
+      acredite si el campamento fabricaba o solo almacenaba, y de dónde vino el componente.
+      <br><b>3. VIGILE EL PONIENTE DE MORELOS.</b> Segundo dirigente político local asesinado de la
+      serie en esa franja, con el proceso de 2027 abierto: evalúe protección a cuadros municipales.
+      <br><b>4. COTEJE ZIRÁNDARO CON CARÁCUARO.</b> 27 reactores en dos entidades y un solo evento:
+      pida el desglose por predio y la titularidad, que el emisor no publicó.
+      <br><b>5. RECLAME EL DESGLOSE A LA FGE DE VERACRUZ.</b> 26 condenas anunciadas en bloque y
+      <b>ningún nombre, pena ni causa penal</b>: sin caso por caso, no son auditables ni contables.
+    </p>
+  </div>
+
+  
+
+</section>
+<!-- ===================== 2 — PANORAMA DEL CORTE ===================== -->
+<section class="seccion" id="s2">
+  <div class="sec-head">
+    <h2>PANORAMA DEL CORTE</h2>
+    <span class="meta"><span class="pg">PÁG. 2 / 11</span></span>
+  </div>
+
+  <p class="muted-note" style="margin:0 0 6px 0;">
+    Ventana <b>21-sep 08:57 → 22-sep 08:22 CDMX</b> (<b>23 h 25 min</b>) · <b>8 hechos
+    propios</b> · <b>densidad 0,34 hechos/hora</b>, <b>cálculo propio</b>. <b>Orden: del más reciente
+    al más antiguo.</b>
+    <br><code>UN SOLO HECHO DEL CORTE ESTÁ FECHADO EL 21-SEP Y NINGUNO EL 22: LOS OTROS SIETE SON
+    RENGLONES DE UN ÚNICO BOLETÍN FEDERAL DE LOS DÍAS 18, 19 Y 20, PUBLICADO EL 21 DENTRO DE VENTANA.
+    SUS TOTALES NO SON COMPARABLES SIN MÁS CON LOS DE EDICIONES CUYOS HECHOS SÍ OCURRIERON EN VENTANA.</code>
+    <br>Las <b>dos recuperaciones</b> del final <b>no entran en el semáforo, el mapa, el radar ni
+    ningún total</b>. <b>Toque un ARG-ID para ir a su ficha</b>, donde están las fuentes, el nivel de
+    confianza y los deslindes.
+  </p>
+
+  <p class="muted-note"><b>Índice por entidad: solo en la versión de cartelón.</b> Cada hecho está en su ficha, más abajo.</p>
+
+  <div class="block-head" style="margin-top:10px;">TOTALES DEL CORTE — CÁLCULO PROPIO DE ARGOS</div>
+  <p class="muted-note" style="margin:0 0 6px 0;">
+    <code>NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA: TODA CIFRA DE ESTE BLOQUE ES
+    CÁLCULO PROPIO DE ARGOS SOBRE LAS FILAS INTEGRADAS.</code> El boletín federal declara <b>48 personas
+    detenidas en 15 entidades</b> en su propio tramo del 18 al 20: <b>ese agregado es del emisor</b> y
+    <b>no se suma</b> a las cifras de ARGOS. <b>Estos totales no se reimprimen en ningún otro sitio
+    del cartelón.</b>
+  </p>
+  <div class="tabla-tarjetas"><p class="muted-note"><b>Tabla ejecutiva de 15 columnas</b>, reflujada a tarjetas para esta versión. <b>No se omitió ningún dato</b>; la tabla en su forma original está en <code>reports/argos-2026-09-22.html</code>.</p><div class="fila-tarjeta"><div class="campo"><span class="k">Hechos propios</span><b>8</b></div><div class="campo"><span class="k">🔴</span><b>1</b></div><div class="campo"><span class="k">🟡</span><b>0</b></div><div class="campo"><span class="k">🟢</span><b>7</b></div><div class="campo"><span class="k">Recup.</span><b>2</b></div><div class="campo"><span class="k">Armas cortas</span><b>10</b></div><div class="campo"><span class="k">Armas largas</span><b>23</b></div><div class="campo"><span class="k">Cartuchos</span><b>9,793</b></div><div class="campo"><span class="k">Cargadores</span><b>23</b></div><div class="campo"><span class="k">Granadas</span><b>1</b></div><div class="campo"><span class="k">AEI</span><b>20</b></div><div class="campo"><span class="k">Explosivos</span><b>25</b></div><div class="campo"><span class="k">Arm. especial</span><b>0</b></div><div class="campo"><span class="k">Detenidos</span><b>14</b></div><div class="campo"><span class="k">Entidades</span><b>6</b></div></div></div>
+  <p class="muted-note" style="margin:6px 0 0 0;">
+    <b>Cartuchos y cargadores nunca se suman entre sí.</b> <b>Explosivos</b> = las <b>25 espoletas</b>
+    de Zapopan, que son <b>componentes de iniciación</b>. <b>Detenidos</b> = solo los del <b>mismo
+    evento de aseguramiento</b>. <b>Total de armas integradas: 33.</b>
+  </p>
+
+  
+
+</section>
+<!-- ===================== 3 — CRIMEN ORGANIZADO (I) ===================== -->
+<section class="seccion" id="s3">
+  <div class="sec-head">
+    <h2>CRIMEN ORGANIZADO (I)</h2>
+    <span class="meta"><span class="fch">21-SEP</span><span class="pg">PÁG. 3 / 11</span></span>
+  </div>
+
+  <div class="nota" id="ARG-123-001">
+    <div class="nota-header"><span class="fch">21-SEP</span><h3>ESTADO DE MÉXICO · VALLE DE CHALCO — ATAQUE ARMADO EN LA CARRETERA MÉXICO-PUEBLA: DOS MUERTOS, UNO DE ELLOS UN REPARTIDOR ALCANZADO POR UNA BALA PERDIDA</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Lunes 21-sep</b>, <code>«ANTES DE LAS 09:00» — HORA NO FIJADA</code> · <b>carretera federal
+        México-Puebla en dirección a Ixtapaluca</b>, a la altura del paradero de autobuses <b>El Tubo
+        Azul</b>, <b>Valle de Chalco Solidaridad, Estado de México</b>.
+        <br>Sujetos armados <b>persiguen y disparan</b> contra un <b>automóvil negro tipo Charger</b>,
+        que recibe <b>al menos tres impactos</b>. Una cobertura describe <b>arma larga sacada por la
+        ventanilla</b>.
+        <br><b>DOS MUERTOS</b>: el <b>conductor del vehículo agredido</b> y <b>un repartidor de una
+        empresa de bebidas</b>, <b>ajeno al hecho</b>, alcanzado por <b>una bala perdida</b>; avanzó
+        unos metros hasta <b>una gasolinera</b>, pidió auxilio y <b>murió en el lugar</b>.
+        <br><b>Cierre de la carretera</b> con retrasos de hasta media hora · <b>Cero detenidos</b> ·
+        <b>Armamento</b>: <code>NO ASEGURADO.</code>
+        <br><code>CIFRA CONTRADICHA Y NO ARBITRADA:</code> un portal titula <b>cuatro muertos en dos
+        ataques</b> en el mismo municipio. <code>NINGUNA FUENTE INSTITUCIONAL PUBLICÓ CIFRA: NO SE
+        ARBITRA POR MAYORÍA.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-123-001</code> · <b>Confianza</b>: 🟠 Bajo (★★☆☆☆), <b>la fija el campo peor
+        sostenido</b> —cifra de muertos contradicha y <b>cero fuentes institucionales</b>—
+        · <b>Fuentes</b>: <b>Institucional 0</b> · <b>Nacional 4</b> · <b>Regional 4</b> ·
+        <b>Abierta 1</b> · con fecha en la ruta: <b>Heraldo Estado de México</b>, <b>El Mañana</b>,
+        <b>El Gráfico</b>, <b>Seuno Noticias</b>, <b>Reporteros en Movimiento</b>
+        · <b>Hecho</b>: 2026-09-21 · <b>Publicación</b>: 2026-09-21 · <b>Consulta</b>: 2026-09-22
+        · <b>Estatus</b>: Parcialmente corroborado.
+        <br><code>FRONTERA DE VENTANA — HORA NO FIJADA:</code> la ventana abre el <b>21-sep a las
+        08:57</b> y la fuente solo publica <b>«antes de las 09:00»</b>. <b>Se integra a la edición que
+        lo ve primero y la marca es permanente.</b>
+        <br><code>DESLINDE:</code> ni <b>Valle de Chalco</b> ni <b>El Tubo Azul</b> figuran en el
+        índice, <b>que cubre de ARGOS 91 en adelante</b>. <b>No es ARG-123-008</b>, el aseguramiento de
+        Puebla en la misma carretera: <b>otra entidad, otra fecha y otra corporación</b>.
+        <br><code>ARMAMENTO: NO ALIMENTA EL CONTEO NACIONAL — NADA FUE ASEGURADO.</code>
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-123-002">
+    <div class="nota-header"><h3>CHIHUAHUA · CIUDAD JUÁREZ — 9,287 CARTUCHOS Y ONCE ARMAS EN UN AUTOBÚS DE PASAJEROS EN EL PUENTE INTERNACIONAL LIBRE–CÓRDOVA</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Tramo 18 al 20-sep</b> · <b>Puente Internacional Libre–Córdova, Ciudad Juárez,
+        Chihuahua</b> · <b>Guardia Nacional</b>.
+        <br>Detenido <b>el conductor de un autobús de pasajeros</b> · <b>1 DETENIDO</b>.
+        <br>Asegurado: <b>4 ARMAS LARGAS</b> · <b>7 ARMAS CORTAS</b> · <b>9,287 CARTUCHOS</b> ·
+        <b>cargadores</b> <code>SIN CIFRA.</code>
+        <br><b>Mayor volumen de munición del corte</b>, en un <b>cruce fronterizo</b> y sobre
+        <b>transporte público de pasajeros</b>.
+        <br><code>EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: EL HECHO ES DEL TRAMO 18-20-SEP Y EL
+        BOLETÍN FEDERAL QUE LO PUBLICA ES DEL 21-SEP, DENTRO DE VENTANA.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-123-002</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —<b>el emisor no indexó su propio boletín</b> y se alcanzó <b>solo por
+        republicadores</b>— · <b>Fuentes</b>: <b>Institucional 1</b> (Gabinete de Seguridad) ·
+        <b>Nacional 1</b> · <b>Regional 3</b> · con fecha en la ruta: <b>Eleese Noticias</b>
+        · <b>Hecho</b>: tramo 2026-09-18/20 · <b>Publicación</b>: 2026-09-21 · <b>Consulta</b>:
+        2026-09-22 · <b>Estatus</b>: Parcialmente corroborado.
+        <br><code>SUSTITUCIÓN ANOTADA: gob.mx NO INDEXÓ EL BOLETÍN. LA CORROBORACIÓN ES DÉBIL POR
+        CONSTRUCCIÓN — VARIOS REPUBLICADORES DEL MISMO BOLETÍN NO SON FUENTES INDEPENDIENTES.</code>
+        <br><code>DESLINDE:</code> <b>Ciudad Juárez figura en el índice</b> por el <b>fallo
+        condenatorio pendiente de pena de José Manuel E. C.</b>: <b>otro expediente, otra materia</b>.
+        <br><b>Conteo de armamento</b>: <a href="#ARG-123-ARM-001"><code>ARG-123-ARM-001</code></a>.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-123-003">
+    <div class="nota-header"><h3>JALISCO · ZAPOPAN — CAMPAMENTO CLANDESTINO CON 20 ARTEFACTOS EXPLOSIVOS IMPROVISADOS Y 25 ESPOLETAS: EL ÚNICO HALLAZGO CON INICIADORES DEL ARCHIVO RECIENTE</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Tramo 18 al 20-sep</b> · <b>Zapopan, Jalisco</b> · <b>Ejército Mexicano</b>.
+        <br><b>Campamento clandestino localizado e inhabilitado.</b>
+        <br>Asegurado: <b>6 ARMAS LARGAS</b> · <b>20 ARTEFACTOS EXPLOSIVOS IMPROVISADOS</b> ·
+        <b>25 ESPOLETAS PARA AEI</b> · <b>cargadores y cartuchos</b> <code>SIN CIFRA</code> ·
+        equipo táctico · <b>3 radios de comunicación</b> · <b>4 vehículos</b> · <b>5 motocicletas</b>.
+        <br><code>DETENIDOS NO PUBLICADOS: EL EMISOR NO CONSIGNA NINGUNO Y NO SE INFIERE.</code>
+        <br><b>Mayor volumen de AEI del corte.</b> Las <b>espoletas son componentes de iniciación</b> y
+        van en <b>explosivos y componentes</b>, no en AEI.
+        <br><code>EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: HECHO DEL TRAMO 18-20-SEP, BOLETÍN DEL
+        21-SEP.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-123-003</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —<b>boletín alcanzado solo por republicadores</b>— · <b>Fuentes</b>:
+        <b>Institucional 1</b> (Gabinete de Seguridad) · <b>Regional 4</b> · con fecha en la ruta:
+        <b>Eleese Noticias</b> · <b>Hecho</b>: tramo 2026-09-18/20 · <b>Publicación</b>: 2026-09-21
+        · <b>Consulta</b>: 2026-09-22 · <b>Estatus</b>: Parcialmente corroborado.
+        <br><code>SUSTITUCIÓN ANOTADA: CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN.</code>
+        <br><code>DESLINDE:</code> <b>Zapopan SÍ figura en el índice</b> —<b>ARG-91-006</b> (detención
+        de «Lurch»), <b>ARG-101-010</b> y <b>ARG-105-001</b>—: <b>otras fechas, otros hechos y ninguno
+        con AEI</b>.
+        <br><b>Conteo de armamento</b>: <a href="#ARG-123-ARM-002"><code>ARG-123-ARM-002</code></a>.
+      </div>
+    </div>
+  </div>
+
+  
+
+</section>
+<!-- ===================== 4 — CRIMEN ORGANIZADO (II) ===================== -->
+<section class="seccion" id="s4">
+  <div class="sec-head">
+    <h2>CRIMEN ORGANIZADO (II)</h2>
+    <span class="meta"><span class="pg">PÁG. 4 / 11</span></span>
+  </div>
+
+  <div class="nota" id="ARG-123-004">
+    <div class="nota-header"><h3>BAJA CALIFORNIA · SAN QUINTÍN — SEIS ARMAS, 366 CARTUCHOS Y LA ÚNICA GRANADA DEL CORTE</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Tramo 18 al 20-sep</b> · <b>San Quintín, Baja California</b> · <b>Ejército Mexicano</b> ·
+        <b>1 DETENIDO</b>.
+        <br>Asegurado: <b>4 ARMAS LARGAS</b> · <b>2 ARMAS CORTAS</b> · <b>16 CARGADORES</b> ·
+        <b>366 CARTUCHOS</b> · <b>UNA GRANADA</b> · <b>5 chalecos tácticos</b> · <b>2 vehículos</b>.
+        <br><code>GRANADA SIN CLASIFICAR: LA AUTORIDAD SOLO DICE «UNA GRANADA» Y NO SE INFIERE EL
+        TIPO.</code> <b>Es la única granada del corte.</b>
+        <br><code>EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: HECHO DEL TRAMO 18-20-SEP, BOLETÍN DEL
+        21-SEP.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-123-004</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —<b>boletín alcanzado solo por republicadores</b>— · <b>Fuentes</b>:
+        <b>Institucional 1</b> (Gabinete de Seguridad) · <b>Regional 3</b> · con fecha en la ruta:
+        <b>Eleese Noticias</b> · <b>Hecho</b>: tramo 2026-09-18/20 · <b>Publicación</b>: 2026-09-21
+        · <b>Consulta</b>: 2026-09-22 · <b>Estatus</b>: Parcialmente corroborado.
+        <br><code>SUSTITUCIÓN ANOTADA: CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN.</code>
+        <br><code>DESLINDE:</code> <b>San Quintín NO figura en el índice</b>, <b>que cubre de ARGOS 91
+        en adelante</b>.
+        <br><b>Conteo de armamento</b>: <a href="#ARG-123-ARM-003"><code>ARG-123-ARM-003</code></a>.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-123-005">
+    <div class="nota-header"><h3>TAMAULIPAS · REYNOSA — SIETE DETENIDOS, SIETE ARMAS LARGAS Y DOS MIRAS TELESCÓPICAS EN OPERACIÓN CONJUNTA DE EJÉRCITO Y FISCALÍA ESTATAL</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Tramo 18 al 20-sep</b> · <b>Reynosa, Tamaulipas</b> · <b>Ejército Mexicano y Fiscalía
+        Estatal</b>, en operación conjunta · <b>7 DETENIDOS</b>.
+        <br>Asegurado: <b>7 ARMAS LARGAS</b> · <b>4 CARGADORES</b> · <b>100 CARTUCHOS</b> ·
+        <b>2 vehículos</b> · <b>2 MIRAS TELESCÓPICAS</b>.
+        <br><code>LAS MIRAS TELESCÓPICAS NO SON CATEGORÍA DE LA TAXONOMÍA: SE REGISTRAN EN RUBRO
+        APARTE Y NO SE INTEGRAN AL CONTEO.</code>
+        <br><b>Mayor número de detenidos del corte en un solo evento de aseguramiento.</b>
+        <br><code>EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: HECHO DEL TRAMO 18-20-SEP, BOLETÍN DEL
+        21-SEP.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-123-005</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —<b>boletín alcanzado solo por republicadores</b>, aunque <b>dos coberturas
+        independientes confirman las cifras</b>— · <b>Fuentes</b>: <b>Institucional 1</b> (Gabinete de
+        Seguridad) · <b>Nacional 1</b> · <b>Regional 3</b> · con fecha en la ruta: <b>Eleese
+        Noticias</b>, <b>La Región Tamaulipas</b> · <b>Hecho</b>: tramo 2026-09-18/20 ·
+        <b>Publicación</b>: 2026-09-21 · <b>Consulta</b>: 2026-09-22 · <b>Estatus</b>: Parcialmente
+        corroborado.
+        <br><code>SUSTITUCIÓN ANOTADA: CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN.</code>
+        <br><code>DESLINDE OBLIGATORIO:</code> <b>Reynosa SÍ figura en el índice</b> —<b>ARG-108-008</b>
+        (destrucción de 25 vehículos blindados, 26-ago) y <b>ARG-117-005</b> (homicidio doloso en Plaza
+        Sendero, 5-sep)—: <b>otras fechas, otros hechos y otras corporaciones</b>.
+        <br><b>Conteo de armamento</b>: <a href="#ARG-123-ARM-004"><code>ARG-123-ARM-004</code></a>.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-123-006">
+    <div class="nota-header"><h3>DURANGO · MUNICIPIO NO ESPECIFICADO — SEIS INMUEBLES CATEADOS, CUATRO DETENIDOS Y DOS DRONES NO ACREDITADOS COMO ARMADOS</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Tramo 18 al 20-sep</b> · <b>Durango</b>, <code>MUNICIPIO NO ESPECIFICADO POR EL
+        EMISOR</code> · <b>SSPC, Guardia Nacional, Ejército Mexicano y FGR</b> · <b>4 DETENIDOS</b>.
+        <br><b>Seis inmuebles cateados.</b>
+        <br>Asegurado: <b>2 ARMAS LARGAS</b> · <b>1 ARMA CORTA</b> · <b>2 CARGADORES</b> ·
+        <b>40 CARTUCHOS</b> · dosis de <b>metanfetamina</b> y diversas drogas · <b>2 DRONES</b> ·
+        <b>una cuatrimoto</b> · <b>11 vehículos</b>.
+        <br><code>LOS DOS DRONES NO ESTÁN ACREDITADOS COMO ARMADOS: NO ENTRAN EN ARMAMENTO
+        ESPECIAL.</code>
+        <br><code>MUNICIPIO NO VERIFICADO: EL EMISOR NO LO CONSIGNA Y NO SE INFIERE.</code>
+        <br><code>EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: HECHO DEL TRAMO 18-20-SEP, BOLETÍN DEL
+        21-SEP.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-123-006</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —<b>municipio no publicado</b> y <b>boletín alcanzado solo por
+        republicadores</b>— · <b>Fuentes</b>: <b>Institucional 1</b> (Gabinete de Seguridad) ·
+        <b>Regional 4</b> · con fecha en la ruta: <b>Eleese Noticias</b> · <b>Hecho</b>: tramo
+        2026-09-18/20 · <b>Publicación</b>: 2026-09-21 · <b>Consulta</b>: 2026-09-22 ·
+        <b>Estatus</b>: Parcialmente corroborado.
+        <br><code>SUSTITUCIÓN ANOTADA: CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN.</code>
+        <br><b>Conteo de armamento</b>: <a href="#ARG-123-ARM-005"><code>ARG-123-ARM-005</code></a>.
+      </div>
+    </div>
+  </div>
+
+  
+
+</section>
+<!-- ===================== 5 — CRIMEN ORGANIZADO (III) ===================== -->
+<section class="seccion" id="s5">
+  <div class="sec-head">
+    <h2>CRIMEN ORGANIZADO (III)</h2>
+    <span class="meta"><span class="fch">19-SEP</span><span class="pg">PÁG. 5 / 11</span></span>
+  </div>
+
+  <div class="nota" id="ARG-123-007">
+    <div class="nota-header"><h3>GUERRERO Y MICHOACÁN · ZIRÁNDARO Y CARÁCUARO — 27 REACTORES, 54 TANQUES DE GAS Y MÁS DE DIEZ TONELADAS DE PRECURSORES EN UN SOLO EVENTO EN DOS ENTIDADES</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Tramo 18 al 20-sep</b> · <b>Zirándaro, Guerrero</b> y <b>Carácuaro, Michoacán</b>,
+        <b>corredor de Tierra Caliente</b> · <b>Ejército Mexicano, SSPC y Guardia Nacional</b>.
+        <br>Asegurado: <b>MÁS DE 10 TONELADAS DE PRECURSORES Y SUSTANCIAS QUÍMICAS</b> ·
+        <b>27 REACTORES</b> · <b>54 TANQUES DE GAS</b> · demás equipo de producción de droga sintética.
+        <br><code>«MÁS DE 10 TONELADAS» NO ES CIFRA: NO SE INTEGRA A NINGÚN TOTAL NUMÉRICO.</code>
+        <br><code>CERO ARMAMENTO: NO ALIMENTA EL CONTEO NACIONAL. SE REGISTRA COMO EVENTO
+        CUALITATIVO.</code> · <code>DETENIDOS NO PUBLICADOS.</code>
+        <br><b>Los 27 reactores son infraestructura de producción a escala industrial</b>, no equipo de
+        laboratorio artesanal.
+        <br><code>EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: HECHO DEL TRAMO 18-20-SEP, BOLETÍN DEL
+        21-SEP.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-123-007</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —<b>tonelaje sin cifra exacta</b> y <b>boletín alcanzado solo por
+        republicadores</b>— · <b>Fuentes</b>: <b>Institucional 1</b> (Gabinete de Seguridad) ·
+        <b>Nacional 1</b> · <b>Regional 3</b> · con fecha en la ruta: <b>Eleese Noticias</b>
+        · <b>Hecho</b>: tramo 2026-09-18/20 · <b>Publicación</b>: 2026-09-21 · <b>Consulta</b>:
+        2026-09-22 · <b>Estatus</b>: Parcialmente corroborado.
+        <br><code>UN SOLO EVENTO EN DOS ENTIDADES: SE ASIGNA A GUERRERO EN EL MAPA Y EL RADAR POR
+        CONVENCIÓN DE ENTIDAD ÚNICA. MICHOACÁN QUEDA DECLARADO EN EL HECHO Y NO SE COLOREA, PARA NO
+        CONTAR DOS VECES UN SOLO EVENTO.</code>
+        <br><code>SUSTITUCIÓN ANOTADA: CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN.</code>
+        <br><code>DESLINDE:</code> ni <b>Zirándaro</b> ni <b>Carácuaro</b> figuran en el índice,
+        <b>que cubre de ARGOS 91 en adelante</b>.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-123-008">
+    <div class="nota-header"><h3>PUEBLA · CARRETERA MÉXICO-PUEBLA — CARTUCHOS Y UN CARGADOR SIN ARMA DE FUEGO: MARINA Y POLICÍA ESTATAL</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Tramo 18 al 20-sep</b> · <b>carretera México-Puebla, Puebla</b>,
+        <code>MUNICIPIO NO ESPECIFICADO POR EL EMISOR</code> · <b>Secretaría de Marina y Policía
+        Estatal</b> · <b>1 DETENIDO</b>.
+        <br>Asegurado: <b>cartuchos</b> <code>SIN CIFRA</code> · <b>1 CARGADOR</b> · dosis de
+        <b>metanfetaminas, cocaína, marihuana y piedra</b> · <b>un vehículo</b> · <b>dinero en
+        efectivo</b>, sin monto.
+        <br><code>SIN ARMA DE FUEGO ASEGURADA: MUNICIÓN Y CARGADOR SIN ARMA.</code>
+        <br><code>CARTUCHOS SIN CIFRA: CANTIDAD NO DETERMINADA, NO SE INTEGRA AL TOTAL
+        NUMÉRICO.</code>
+        <br><code>EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: HECHO DEL TRAMO 18-20-SEP, BOLETÍN DEL
+        21-SEP.</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-123-008</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —<b>municipio no publicado, cartuchos sin cifra</b> y <b>boletín alcanzado solo
+        por republicadores</b>— · <b>Fuentes</b>: <b>Institucional 1</b> (Gabinete de Seguridad) ·
+        <b>Regional 3</b> · con fecha en la ruta: <b>Eleese Noticias</b> · <b>Hecho</b>: tramo
+        2026-09-18/20 · <b>Publicación</b>: 2026-09-21 · <b>Consulta</b>: 2026-09-22 ·
+        <b>Estatus</b>: Parcialmente corroborado.
+        <br><code>DESLINDE OBLIGATORIO:</code> <b>NO es ARG-123-001</b>, el ataque armado del 21-sep en
+        <b>la misma carretera México-Puebla</b> pero del lado del <b>Estado de México</b> —<b>otra
+        entidad, otra fecha, otro hecho y otra corporación</b>—; <b>NI es ARG-121-004</b>, los 48,600
+        litros de gas LP del 16-sep en el tramo El Caracol.
+        <br><b>Conteo de armamento</b>: <a href="#ARG-123-ARM-006"><code>ARG-123-ARM-006</code></a>.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-123-REC-002" style="opacity:.78;">
+    <div class="nota-header"><span class="fch">19-SEP</span><h3>OAXACA · SANTO DOMINGO TEHUANTEPEC — TRES MUERTOS EN UN TALLER DE MOTOTAXIS DEL BARRIO SANTA CRUZ TAGOLABA</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Sábado 19-sep, poco después de las 21:00</b> · <b>taller de mototaxis</b>, calle <b>General
+        de Hombres Ilustres</b>, <b>barrio de Santa Cruz Tagolaba</b>, <b>Santo Domingo Tehuantepec,
+        Oaxaca</b>.
+        <br>Sujetos armados <b>entran al establecimiento y disparan</b> contra las personas presentes.
+        <br><b>TRES MUERTOS</b>: <b>César R. C.</b>, dueño del establecimiento, fallecido en el
+        hospital; <b>Mario Alberto L. P.</b> y <b>Luz Andrea S. M.</b> · <b>dos hombres y una
+        mujer</b>. Dos murieron de inmediato —uno dentro del taller y otro en la calle— y el tercero
+        durante la atención médica.
+        <br><code>CIFRA PRELIMINAR SUPERADA:</code> una cobertura regional publicó <b>«2 muertos y un
+        herido»</b>, cifra del primer momento. <b>Se adopta TRES</b>, sostenida por cinco coberturas.
+        <br><b>Operativo posterior sin localizar a los agresores</b>; refuerzo de seguridad en el
+        Istmo · <b>Cero detenidos</b> · <b>Armamento</b>: <code>NO ASEGURADO.</code>
+        <br><code>LÍNEA DE INVESTIGACIÓN PUBLICADA Y NO ACREDITADA:</code> disputa por el control de
+        <b>agrupaciones o sindicatos de mototaxis</b> en Santa Cruz Tagolaba. <b>Ninguna autoridad la
+        ha confirmado.</b>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-123-REC-002</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —<b>cero fuentes institucionales</b>— · <b>Fuentes</b>: <b>Institucional 0</b> ·
+        <b>Nacional 2</b> · <b>Regional 4</b> · con fecha en la ruta: <b>La Jornada</b>, <b>Diario
+        Marca</b> · <b>Hecho</b>: 2026-09-19 · <b>Publicación</b>: 2026-09-21 · <b>Consulta</b>:
+        2026-09-22 · <b>Estatus</b>: Parcialmente corroborado.
+        <br><code>VENTANA DE ORIGEN: ARGOS 122 (17-SEP 17:36 → 21-SEP 08:57). LA HORA ESTÁ FIJADA Y ES
+        ANTERIOR A SU CIERRE: NO ES FRONTERA DE VENTANA. FUERA DEL SEMÁFORO, DEL MAPA, DEL RADAR Y DE
+        TODOS LOS TOTALES.</code>
+        <br><code>DESLINDE:</code> ni <b>Santo Domingo Tehuantepec</b> ni <b>Tagolaba</b> figuran en el
+        índice. <b>NO es ARG-98-001</b> (salón «Baby O», Santo Domingo Zanatepec) <b>ni ARG-99-003</b>
+        (tres ejecutados en San Pedro Amuzgos): <b>otros municipios y otras fechas</b>.
+      </div>
+    </div>
+  </div>
+
+  
+
+</section>
+<!-- ===================== 6 — CRIMEN ORGANIZADO (IV) ===================== -->
+<section class="seccion" id="s6">
+  <div class="sec-head">
+    <h2>CRIMEN ORGANIZADO (IV)</h2>
+    <span class="meta"><span class="fch">18-SEP</span><span class="pg">PÁG. 6 / 11</span></span>
+  </div>
+
+  <div class="nota" id="ARG-123-REC-001" style="opacity:.78;">
+    <div class="nota-header"><span class="fch">18-SEP</span><h3>MORELOS · TETECALA — ASESINADO EN SU VIVIENDA EL DIRIGENTE MUNICIPAL DEL PRI, ZENÓN JUÁREZ HERNÁNDEZ, Y SU ACOMPAÑANTE</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <b>Viernes 18-sep a las 20:40</b> · <b>domicilio de una colonia céntrica</b>, <b>Tetecala,
+        Morelos</b>.
+        <br><b>Un grupo armado irrumpe en la vivienda y acribilla</b> a <b>ZENÓN JUÁREZ HERNÁNDEZ</b>,
+        <b>dirigente del Comité Municipal del PRI en Tetecala</b>, <b>extitular de Agua Potable del
+        ayuntamiento</b> y <b>coordinador de la reorganización del partido en la región poniente de
+        Morelos</b>.
+        <br><b>DOS MUERTOS</b>: su <b>acompañante falleció en el lugar</b> y él <b>murió en el Hospital
+        General de Tetecala</b>.
+        <br><b>La FGE de Morelos reconoce NO TENER PISTAS</b> sobre los responsables ·
+        <b>Cero detenidos</b> · <b>Armamento</b>: <code>NO ASEGURADO.</code>
+        <br><b>Contexto electoral declarado por las fuentes</b>: <b>Morelos renueva 33 alcaldías en
+        2027</b>, Tetecala entre ellas, y <b>el proceso ya inició</b>.
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-123-REC-001</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor
+        sostenido</b> —<b>la FGE confirma la investigación pero no publica cifras ni detalles</b>— ·
+        <b>Fuentes</b>: <b>Institucional 1</b> (FGE Morelos, por cita) · <b>Nacional 6</b> ·
+        <b>Regional 3</b> · con fecha en la ruta: <b>Expansión Política</b>, <b>El Financiero</b>,
+        <b>La Crónica de Hoy</b>, <b>El Imparcial</b>, <b>Infobae</b>, <b>El Heraldo de México</b>
+        · <b>Hecho</b>: 2026-09-18 · <b>Publicación</b>: 2026-09-19 · <b>Consulta</b>: 2026-09-22
+        · <b>Estatus</b>: Parcialmente corroborado.
+        <br><code>COHERENCIA INTERNA VERIFICADA CONTRA CALENDARIO: LAS FUENTES DICEN «LA NOCHE DEL
+        VIERNES» Y PUBLICAN EL 19-SEP; EL VIERNES FUE EL 18. LA FECHA DEL HECHO ES EL 18-SEP Y LA DE
+        PUBLICACIÓN EL 19: CUATRO CAMPOS DISTINTOS QUE NUNCA SE SUSTITUYEN ENTRE SÍ.</code>
+        <br><code>VENTANA DE ORIGEN: ARGOS 122 (17-SEP 17:36 → 21-SEP 08:57). LA HORA ESTÁ FIJADA
+        (20:40) Y ES ANTERIOR A SU CIERRE: NO ES FRONTERA DE VENTANA. FUERA DEL SEMÁFORO, DEL MAPA,
+        DEL RADAR Y DE TODOS LOS TOTALES.</code>
+        <br><code>DESLINDE:</code> <b>Tetecala NO figura en el índice.</b> <b>SÍ figura
+        ARG-108-REC-001</b>: <b>Mazatepec, Morelos</b>, excandidato a la alcaldía de <b>Coatlán del
+        Río</b> y coordinador municipal del partido <b>PAZ</b> —<b>otro municipio, otra fecha, otro
+        partido y otra víctima</b>—. <code>LA COINCIDENCIA DE REGIÓN Y DE PERFIL SE REGISTRA; LA
+        VINCULACIÓN NO SE AFIRMA.</code>
+      </div>
+    </div>
+  </div>
+
+  
+
+</section>
+<!-- ===================== 7 — ARMAMENTO Y EXPLOSIVOS ===================== -->
+<section class="seccion" id="s7">
+  <div class="sec-head">
+    <h2>ARMAMENTO Y EXPLOSIVOS</h2>
+    <span class="meta"><span class="pg">PÁG. 7 / 11</span></span>
+  </div>
+
+  <p class="muted-note" style="margin:0 0 6px 0;">
+    <b>Seis eventos contabilizados</b> en <b>seis entidades</b> · <b>un evento cualitativo sin
+    cantidad</b> —Zirándaro y Carácuaro, sin armamento—. <b>El total nacional del corte está en la
+    página de panorama y no se reimprime aquí.</b>
+    <code>LOS SEIS EVENTOS PROCEDEN DEL MISMO BOLETÍN FEDERAL DEL 18, 19 Y 20-SEP, PUBLICADO EL 21
+    DENTRO DE VENTANA, Y VAN MARCADOS «EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE».</code>
+    <b>Todas las cifras de este bloque son cálculo propio de ARGOS</b> sobre las filas integradas.
+  </p>
+  <div class="conteo">
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h15v4h-4l-1 2h-2l-2 8H6l2-10H3z"/><path d="M9 13a3 3 0 0 0 3 2"/><path d="M18 9h3"/></svg><span class="lbl">Armas cortas</span><span class="num">10</span><span class="sub"><b>7 de Ciudad Juárez</b>, <b>2 de San Quintín</b> y <b>1 de Durango</b> · <b>igual que las 10 del corte anterior</b> · <code>NINGUNA CON CALIBRE NI NÚMERO DE SERIE PUBLICADO</code></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9h19v3h-5l-1 2h-2l-1 5h-2l1-5H2z"/><path d="M16 14l5 5"/><path d="M6 9V7"/></svg><span class="lbl">Armas largas</span><span class="num">23</span><span class="sub"><b>7 de Reynosa</b>, <b>6 de Zapopan</b>, <b>4 de Ciudad Juárez</b>, <b>4 de San Quintín</b> y <b>2 de Durango</b> · frente a <b>28 del corte anterior</b> · <code>NINGUNA CON CALIBRE NI SERIE</code> · <b>total de armas integradas: 33</b></span></div>
+    <div class="tile cero"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v6H4z"/><path d="M8 10v10"/><path d="M16 10v10"/><path d="M12 10v6"/></svg><span class="lbl">Sin categoría</span><span class="num">0</span><span class="sub"><b>el emisor federal clasificó como corta o larga todas las armas del corte</b> · frente a <b>1 de 39 en ARGOS 122</b> · <b>un boletín con desglose por categoría elimina esta casilla</b></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 6c2-2 4-3 5-3s3 1 5 3v12c-2 2-3 3-5 3s-3-1-5-3z"/><path d="M7 11h10"/><path d="M7 18h10"/></svg><span class="lbl">Cartuchos</span><span class="num">9,793</span><span class="sub"><b>9,287 de Ciudad Juárez</b>, <b>366 de San Quintín</b>, <b>100 de Reynosa</b> y <b>40 de Durango</b> · <code>SETENTA Y NUEVE VECES LOS 124 DEL CORTE ANTERIOR</code> · <b>el 94,8 % procede de un solo aseguramiento en un cruce fronterizo</b>, <b>cálculo propio</b> · <code>ZAPOPAN Y PUEBLA PUBLICAN CARTUCHOS SIN CIFRA: NO SE INTEGRAN</code></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h9l-1 15-3 3H9L7 18z"/><path d="M8 8h8"/><path d="M8 12h8"/><path d="M8 16h7"/></svg><span class="lbl">Cargadores</span><span class="num">23</span><span class="sub"><b>16 de San Quintín</b>, <b>4 de Reynosa</b>, <b>2 de Durango</b> y <b>1 de Puebla</b> · <code>NUNCA SE SUMAN CON LOS CARTUCHOS</code> · <b>frente a 131 del corte anterior</b> · <code>CIUDAD JUÁREZ Y ZAPOPAN PUBLICAN CARGADORES SIN CIFRA</code></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="14" r="6"/><path d="M10 8V5h4v3"/><path d="M14 6h4l1 3"/></svg><span class="lbl">Granadas</span><span class="num">1</span><span class="sub"><b>la de San Quintín</b>, <b>Baja California</b> · <code>SIN CLASIFICAR: LA AUTORIDAD SOLO DICE «UNA GRANADA» Y NO SE INFIERE EL TIPO</code> · <b>frente a 0 en el corte anterior</b></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="10" width="13" height="10" rx="1"/><path d="M16 13h3a2 2 0 0 0 2-2V8"/><circle cx="21" cy="6" r="2"/><path d="M7 14v3"/><path d="M11 14v3"/></svg><span class="lbl">AEI</span><span class="num">20</span><span class="sub"><b>los 20 de Zapopan</b>, <b>Jalisco</b>, en un <b>campamento clandestino</b> · frente a <b>40 del corte anterior</b> · <code>PRIMER DEPÓSITO DE AEI DEL ARCHIVO RECIENTE FUERA DEL CORREDOR SINALOA-DURANGO</code></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="9" width="5" height="12" rx="1"/><rect x="11" y="9" width="5" height="12" rx="1"/><path d="M13 9V6c0-2 2-2 3-3"/></svg><span class="lbl">Explosivos</span><span class="num">25</span><span class="sub"><b>las 25 ESPOLETAS de Zapopan</b>, que son <b>componentes de iniciación</b> · <b>frente a 0 en el corte anterior</b> · <code>PRIMERA CIFRA DE ESTA CATEGORÍA EN VARIAS EDICIONES: 25 INICIADORES PARA 20 ARTEFACTOS SUGIERE MANUFACTURA, NO SOLO POSESIÓN — REQUIERE VALIDACIÓN</code></span></div>
+    <div class="tile cero"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12h16l4-3v7l-4-2H2z"/><path d="M7 15v4h4"/><circle cx="18" cy="12" r="1"/></svg><span class="lbl">Armamento especial</span><span class="num">0</span><span class="sub"><code>NINGUNA PIEZA CAL. .50, LANZAGRANADAS, AMETRALLADORA PESADA NI DRON ARMADO EN LAS 23 H 25 MIN</code> · <b>frente a 4 del corte anterior</b> · <b>los 2 drones de Durango NO están acreditados como armados y no entran aquí</b></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/><path d="M8 15h8"/></svg><span class="lbl">Detenidos</span><span class="num">14</span><span class="sub"><b>7 de Reynosa</b>, <b>4 de Durango</b>, <b>1 de Ciudad Juárez</b>, <b>1 de San Quintín</b> y <b>1 de Puebla</b> · <code>SOLO EN EVENTOS CON ASEGURAMIENTO DE ARMAMENTO</code> · <code>ZAPOPAN NO PUBLICA DETENIDOS: NO SE INFIEREN</code> · <b>el emisor declara 48 detenidos en 15 entidades en su propio tramo: ese agregado es suyo y NO se suma</b></span></div>
+  </div>
+  <div class="viz">
+    <div class="viz-title"><span>MAPA DE ASEGURAMIENTOS</span><span>SEMÁFORO ARGOS</span></div>
+    <div class="map-box"><svg viewBox="0 0 900 520" preserveAspectRatio="xMidYMid meet"><path class="estado-path" data-sid="MX-ZAC" d="M452 234L451 235L448 240L445 241L444 244L440 245L439 247L439 250L440 251L439 254L438 255L433 257L432 258L429 263L424 265L422 268L419 268L416 267L415 269L416 271L415 272L416 275L415 280L416 283L420 285L422 287L425 288L427 291L428 292L432 291L436 286L439 285L441 288L440 290L437 296L437 298L438 301L437 305L435 309L434 309L431 308L429 305L426 304L423 303L421 300L421 299L418 297L415 295L415 293L412 296L409 298L406 299L404 303L402 307L400 310L400 311L403 313L403 316L403 317L406 319L406 322L405 323L402 325L399 328L397 327L395 328L395 330L393 331L392 331L388 332L385 331L382 330L380 328L378 327L378 326L383 324L383 322L382 322L380 322L379 319L381 319L383 317L383 312L386 310L388 308L393 306L394 304L395 300L394 299L392 299L392 296L390 296L388 296L388 298L389 299L386 301L385 304L383 303L382 304L380 304L380 302L383 296L383 293L380 291L376 292L376 300L375 301L374 300L373 298L373 295L374 292L376 289L377 288L377 287L375 286L373 287L371 288L371 289L372 293L373 295L372 296L370 296L371 293L370 293L367 294L367 296L365 297L364 298L363 296L363 294L364 291L365 289L368 288L369 283L369 281L368 278L368 277L370 274L371 268L371 266L374 263L376 260L375 256L376 255L376 251L375 248L377 247L380 245L382 242L384 240L386 238L390 238L392 239L395 238L400 239L400 238L402 239L408 238L409 236L408 232L406 232L407 227L405 225L404 223L403 221L403 220L410 218L419 219L422 221L424 222L426 223L428 226L431 226L431 229L434 230L435 229L438 228L441 229L442 230L444 233L445 235L447 235L450 234L452 234Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-YUC" d="M787 319L787 324L786 326L785 329L787 333L787 334L784 339L784 341L783 342L777 347L775 348L772 348L771 347L770 348L768 350L766 351L765 354L761 356L759 356L755 359L754 360L752 361L748 362L746 363L745 364L740 365L740 367L739 369L738 365L735 362L734 359L730 357L728 352L726 351L726 349L724 347L722 349L721 348L720 348L718 346L715 345L715 338L714 337L716 333L717 332L722 328L725 327L729 325L733 324L740 323L747 322L754 321L759 319L759 318L765 317L767 317L770 317L772 315L774 316L776 317L779 317L781 318L785 319L787 319Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-VER" d="M528 298L529 303L531 308L530 309L531 311L531 314L534 319L535 319L536 323L537 324L538 328L542 336L543 337L544 341L545 343L549 347L549 348L555 355L559 360L560 361L562 364L563 367L564 372L566 374L565 376L566 379L569 380L571 383L571 385L572 386L574 386L575 390L577 392L577 394L580 394L584 395L594 395L599 399L603 400L606 404L608 407L609 409L610 410L612 411L615 410L622 408L621 409L621 414L622 415L622 418L624 420L626 422L630 424L632 427L631 430L632 432L634 433L630 436L628 437L627 438L609 437L598 436L599 435L597 432L595 431L593 429L591 426L591 424L593 423L591 422L590 423L586 424L583 426L580 426L579 427L577 427L575 422L575 420L576 419L578 414L577 411L576 410L573 409L571 409L569 409L567 408L566 406L565 405L564 406L561 403L560 400L561 399L559 397L559 400L557 403L555 401L553 400L550 402L548 401L547 398L543 396L542 394L542 391L544 389L544 388L544 381L549 381L549 378L546 377L542 376L540 375L541 374L539 370L540 369L542 364L542 363L544 358L546 355L539 352L536 356L535 356L534 354L531 354L530 351L530 347L532 346L533 347L535 345L534 344L531 341L531 339L531 336L528 336L526 339L525 340L525 343L522 342L520 344L519 345L517 347L514 349L512 350L510 347L511 343L511 339L512 338L515 336L517 337L518 337L518 335L518 333L520 331L518 327L516 326L515 327L512 326L510 325L511 323L510 321L509 317L508 317L507 316L507 313L510 312L511 310L509 308L509 306L511 306L511 305L511 302L512 301L515 301L513 298L512 297L508 296L506 296L505 294L507 293L511 293L514 294L516 294L516 293L518 292L519 294L522 295L523 295L526 299L528 298ZM533 309L534 311L537 314L540 316L540 318L538 323L537 323L539 319L539 318L537 316L536 314L533 311L533 309Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-TLA" d="M508 374L507 374L506 372L511 370L514 370L517 367L519 368L522 368L523 366L529 371L529 373L531 372L533 374L533 375L534 376L533 378L530 378L528 381L526 381L524 380L521 383L520 383L516 381L515 378L510 374L508 374Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-TAM" d="M528 298L526 299L523 295L522 295L519 294L518 292L516 293L516 294L514 294L511 293L507 293L505 294L502 295L500 294L499 294L495 294L493 294L491 291L490 289L488 286L486 286L485 284L483 286L481 286L478 285L473 284L472 283L472 279L472 276L471 274L471 271L470 270L470 268L474 268L473 264L474 262L475 261L476 258L478 256L481 257L483 256L484 254L486 255L485 252L484 252L483 248L481 245L482 240L481 237L478 236L479 234L481 233L484 231L486 229L487 229L488 228L492 227L492 226L494 225L494 223L493 221L496 218L497 219L500 219L502 216L506 215L509 213L511 212L513 209L510 208L509 204L510 202L509 200L509 197L508 194L503 194L501 196L500 195L498 192L494 192L493 188L491 189L489 186L487 184L486 179L484 179L483 177L481 177L481 172L478 170L479 167L481 166L480 163L479 162L479 158L478 157L479 155L477 155L474 154L475 152L478 151L480 149L483 150L485 152L485 153L486 154L485 158L486 160L487 162L487 167L488 168L491 171L493 178L494 180L496 182L495 183L499 184L502 185L504 186L506 188L508 188L514 191L517 193L519 193L521 193L524 193L526 193L529 194L530 194L532 195L535 198L537 199L539 198L540 197L543 196L545 196L545 198L544 203L543 205L539 212L538 211L535 210L535 212L535 214L533 214L533 212L531 212L530 216L531 217L529 223L531 224L529 227L530 229L530 231L530 232L529 234L527 235L528 239L529 238L530 241L529 246L529 255L530 259L529 266L529 277L529 281L528 283L527 285L526 288L527 289L526 293L527 295L528 298Z" fill="#33d17a" fill-opacity="0.88"></path><path class="estado-path" data-sid="MX-TAB" d="M662 397L664 401L667 404L668 404L669 405L669 407L672 412L676 415L676 416L679 417L681 418L684 417L685 413L688 413L691 414L693 415L700 418L700 420L700 435L689 435L690 434L689 432L686 430L684 430L683 429L684 427L683 423L680 422L680 420L679 418L677 418L674 418L674 419L670 419L669 420L669 422L667 423L662 428L660 429L656 432L654 432L653 429L650 428L650 426L648 423L649 420L649 418L647 418L645 417L642 415L640 416L640 419L640 422L639 425L636 428L636 430L634 433L632 432L631 430L632 427L630 424L626 422L624 420L622 418L622 415L621 414L621 409L622 408L627 407L627 408L630 408L630 406L634 406L635 404L639 403L644 403L645 405L647 404L648 403L652 403L655 401L657 398L662 397Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-SON" d="M163 106L163 108L165 112L164 116L163 119L156 116L158 114L158 112L158 108L161 106L163 106ZM252 48L253 49L252 50L254 54L254 56L254 59L253 61L255 62L255 65L256 66L255 67L256 69L258 76L257 79L259 82L257 85L257 90L259 90L259 97L259 99L258 101L259 107L257 107L257 110L256 111L256 114L255 115L256 117L254 120L254 122L255 124L254 125L256 128L258 129L256 131L253 132L250 131L249 132L246 132L245 133L247 135L246 138L249 139L251 142L251 144L250 146L254 148L257 156L257 157L256 161L256 164L255 165L259 167L261 166L263 166L263 168L259 172L260 174L258 175L256 179L252 180L251 183L249 184L245 186L244 185L242 184L240 183L240 182L239 180L235 176L235 175L233 174L232 176L229 176L227 175L224 173L223 169L223 165L221 164L219 165L218 164L213 163L209 159L209 157L207 156L206 154L206 152L205 150L206 148L205 146L206 143L204 143L199 141L197 143L196 141L194 141L189 138L187 135L184 131L183 129L178 127L176 123L172 120L173 118L170 116L168 114L166 113L166 109L165 106L164 103L162 104L160 103L160 102L161 100L161 98L158 96L157 93L156 93L154 89L154 88L152 87L152 85L151 83L151 80L151 79L149 77L149 74L148 72L145 70L143 66L142 62L143 57L144 55L143 52L140 51L136 50L131 49L129 48L130 47L129 44L123 41L119 44L116 44L113 42L112 41L107 38L105 36L103 36L102 36L101 35L100 35L94 31L95 28L95 26L95 24L94 22L96 20L97 16L99 16L121 23L147 32L165 38L180 43L194 48L209 48L227 48L252 48ZM100 35L103 37L102 39L100 37L100 36L100 35Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-SIN" d="M268 221L270 224L270 226L268 224L268 221ZM263 219L264 220L269 225L268 226L266 222L263 219ZM241 186L242 186L242 184L244 185L245 186L249 184L251 183L252 180L256 179L258 175L260 174L259 172L263 168L263 166L268 166L269 167L269 169L270 169L271 172L271 177L272 178L273 181L275 184L276 186L278 190L281 191L284 192L287 192L290 197L290 200L292 203L292 205L290 207L291 209L290 212L290 217L290 219L291 219L293 224L294 227L297 227L298 229L299 229L300 234L302 234L302 238L304 242L305 242L310 239L311 238L315 239L317 240L320 245L320 247L322 252L323 253L323 256L325 259L327 261L328 264L329 266L328 267L330 270L331 274L335 274L337 276L336 277L335 280L334 282L334 285L335 286L336 290L335 291L332 290L330 289L329 289L329 291L325 286L322 283L321 282L316 276L310 271L309 268L308 266L306 264L302 259L299 255L299 254L297 251L292 247L290 245L287 243L286 243L282 240L284 239L284 237L282 235L281 237L277 236L276 234L272 232L271 230L271 228L270 221L269 219L267 219L265 217L262 215L261 217L260 215L254 212L252 211L251 209L252 208L250 207L248 207L249 208L248 210L247 208L245 209L243 207L245 206L247 206L248 205L248 204L245 204L245 206L242 205L239 202L235 200L236 198L235 196L235 195L237 191L239 190L240 187L241 186Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-SLP" d="M470 270L471 271L471 274L472 276L472 279L472 283L473 284L478 285L481 286L483 286L485 284L486 286L488 286L490 289L491 291L493 294L495 294L499 294L500 294L502 295L505 294L506 296L508 296L512 297L513 298L515 301L512 301L511 302L511 305L511 306L509 306L509 308L511 310L510 312L507 313L507 316L508 317L509 317L510 321L508 321L506 323L505 326L504 325L503 327L500 326L499 323L497 324L492 319L491 317L489 317L488 320L483 320L482 317L480 316L478 318L476 319L471 319L469 317L465 314L461 313L460 314L460 317L458 317L456 318L451 315L449 313L446 312L441 310L440 310L437 309L435 309L437 305L438 301L437 298L437 296L440 290L441 288L439 285L436 286L432 291L428 292L427 291L425 288L422 287L420 285L416 283L415 280L416 275L415 272L416 271L415 269L416 267L419 268L422 268L424 265L429 263L432 258L433 257L438 255L439 254L440 251L439 250L439 247L440 245L444 244L445 241L448 240L451 235L452 237L455 238L456 240L454 241L456 244L456 245L459 248L460 251L459 255L460 257L460 260L459 263L460 264L460 269L462 272L463 272L466 270L470 270Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-ROO" d="M807 343L806 346L802 351L800 352L800 350L800 348L802 345L804 345L807 343ZM746 416L746 414L748 411L749 408L749 404L748 403L749 401L748 399L747 397L747 395L748 391L748 388L749 387L749 381L747 377L744 374L741 371L739 369L740 367L740 365L745 364L746 363L748 362L752 361L754 360L755 359L759 356L761 356L765 354L766 351L768 350L770 348L771 347L772 348L775 348L777 347L783 342L784 341L784 339L787 334L787 333L785 329L786 326L787 324L787 319L791 320L795 320L797 319L798 316L800 317L803 321L804 325L805 326L805 328L806 329L805 332L803 336L800 340L798 343L794 347L792 349L791 352L790 353L788 358L789 362L788 365L786 365L784 368L782 369L781 371L784 373L785 372L789 371L790 372L789 374L787 376L786 376L784 377L783 382L784 381L786 379L787 378L789 379L787 382L786 385L784 389L783 394L782 395L781 403L779 406L779 409L778 408L778 405L777 404L777 403L773 401L775 396L775 393L773 391L768 400L768 401L763 401L762 402L761 405L760 406L760 409L758 410L757 413L756 414L755 415L753 417L749 415L747 415L746 416Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-QUE" d="M497 324L496 327L491 329L490 328L488 329L489 331L487 334L485 336L484 339L485 341L483 343L477 344L476 351L475 352L474 354L474 356L472 358L469 359L466 355L466 354L464 352L463 350L461 348L460 346L460 344L458 340L458 338L459 335L464 335L465 334L468 334L470 333L470 330L473 327L474 326L476 328L479 326L480 323L477 323L479 321L478 318L480 316L482 317L483 320L488 320L489 317L491 317L492 319L497 324Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-PUE" d="M557 403L554 407L552 408L548 411L545 410L543 411L541 413L540 415L538 415L538 413L535 409L534 408L535 407L535 405L532 406L530 410L532 413L531 415L529 415L527 413L525 414L522 414L520 414L518 416L517 417L515 416L514 414L509 415L509 414L505 412L505 410L502 411L501 408L499 406L499 405L501 403L502 402L504 400L507 403L508 402L506 395L508 388L509 386L509 382L508 379L509 376L508 374L510 374L515 378L516 381L520 383L521 383L524 380L526 381L528 381L530 378L533 378L534 376L533 375L533 374L531 372L529 373L529 371L523 366L522 368L519 368L518 363L520 360L521 355L520 353L518 353L517 351L521 350L522 348L525 346L525 343L525 340L526 339L528 336L531 336L531 339L531 341L534 344L535 345L533 347L532 346L530 347L530 351L531 354L534 354L535 356L536 356L539 352L546 355L544 358L542 363L542 364L540 369L539 370L541 374L540 375L542 376L546 377L549 378L549 381L544 381L544 388L544 389L542 391L542 394L543 396L547 398L548 401L550 402L553 400L555 401L557 403Z" fill="#33d17a" fill-opacity="0.88"></path><path class="estado-path" data-sid="MX-OAX" d="M627 438L627 441L626 442L625 446L622 448L620 455L620 456L621 459L621 461L621 464L619 465L615 463L614 462L613 462L613 464L614 465L618 465L621 468L616 466L613 465L606 464L608 462L609 461L607 460L605 461L602 458L600 458L599 461L598 461L596 463L601 463L601 464L592 466L590 467L589 469L588 470L584 471L582 472L580 472L578 473L574 474L570 476L567 478L563 478L561 479L559 479L556 477L552 477L548 475L547 474L543 472L540 471L538 471L535 471L529 470L525 467L518 463L513 462L509 461L514 457L514 455L517 453L518 451L519 450L521 449L522 447L523 445L522 443L520 442L520 438L517 437L517 435L518 434L518 429L515 424L515 421L517 417L518 416L520 414L522 414L525 414L527 413L529 415L531 415L532 413L530 410L532 406L535 405L535 407L534 408L535 409L538 413L538 415L540 415L541 413L543 411L545 410L548 411L552 408L554 407L557 403L559 400L559 397L561 399L560 400L561 403L564 406L565 405L566 406L567 408L569 409L571 409L573 409L576 410L577 411L578 414L576 419L575 420L575 422L577 427L579 427L580 426L583 426L586 424L590 423L591 422L593 423L591 424L591 426L593 429L595 431L597 432L599 435L598 436L609 437L627 438Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-NLE" d="M480 149L478 151L475 152L474 154L477 155L479 155L478 157L479 158L479 162L480 163L481 166L479 167L478 170L481 172L481 177L483 177L484 179L486 179L487 184L489 186L491 189L493 188L494 192L498 192L500 195L501 196L503 194L508 194L509 197L509 200L510 202L509 204L510 208L513 209L511 212L509 213L506 215L502 216L500 219L497 219L496 218L493 221L494 223L494 225L492 226L492 227L488 228L487 229L486 229L484 231L481 233L479 234L478 236L481 237L482 240L481 245L483 248L484 252L485 252L486 255L484 254L483 256L481 257L478 256L476 258L475 261L474 262L473 264L474 268L470 268L470 270L466 270L463 272L462 272L460 269L460 264L459 263L460 260L460 257L459 255L460 251L459 248L456 245L456 244L454 241L456 240L455 238L452 237L451 235L452 234L453 231L452 229L451 227L451 224L453 225L453 222L452 219L454 216L456 215L457 214L458 214L460 216L463 217L465 217L466 215L464 212L461 212L461 211L457 208L456 204L454 204L452 203L451 202L451 199L452 196L449 194L448 191L446 189L441 184L442 183L444 181L445 178L446 177L449 177L451 176L455 175L456 173L457 173L458 170L457 165L455 164L454 165L453 167L451 165L450 162L451 160L453 158L455 158L457 157L459 157L460 156L459 154L461 151L462 149L463 148L467 148L472 149L475 148L477 146L478 147L480 149Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-NAY" d="M305 313L308 314L309 316L308 317L306 316L305 313ZM363 294L363 296L364 298L363 303L364 306L365 306L368 308L368 309L369 312L373 313L374 314L375 317L377 318L377 320L377 324L376 325L374 326L372 327L371 328L366 328L366 332L365 337L363 338L364 342L361 339L360 338L358 335L354 334L353 333L350 332L347 335L345 334L343 335L342 338L339 341L338 339L337 340L334 338L335 336L339 332L340 332L341 330L341 327L341 323L342 320L341 318L340 318L336 316L335 314L334 311L331 306L330 303L330 300L333 302L335 303L335 301L331 298L331 297L331 292L330 289L332 290L335 291L336 290L335 286L334 285L334 282L335 280L336 277L337 276L339 279L341 278L342 277L344 279L347 279L348 282L349 282L349 285L346 287L345 288L347 291L348 292L351 288L352 290L354 291L356 293L357 295L359 296L360 295L363 294ZM310 319L312 319L312 321L309 319L310 319Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-MOR" d="M501 385L503 388L506 389L508 387L509 386L508 388L506 395L508 402L507 403L504 400L502 402L501 403L499 405L496 403L491 402L489 399L486 399L486 397L488 394L491 388L492 385L494 385L495 386L497 385L498 386L501 385Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-MIC" d="M464 352L466 354L466 355L469 359L469 361L470 363L469 364L468 367L466 368L467 371L467 374L467 376L466 377L466 380L464 382L462 386L460 387L459 389L457 391L455 393L455 392L453 393L454 398L454 401L457 405L456 406L451 403L449 404L447 401L445 401L440 400L438 401L434 401L433 401L432 399L430 398L427 400L426 399L425 401L425 404L425 405L425 407L422 409L421 409L419 410L418 411L418 415L419 416L417 417L415 416L410 414L402 412L397 410L394 409L391 408L385 406L384 404L382 401L379 398L380 398L378 396L379 394L381 393L381 390L382 391L385 388L388 388L390 386L392 388L394 386L396 385L400 381L402 381L404 381L405 379L406 377L407 376L406 374L403 374L404 371L402 367L403 365L402 362L398 361L395 361L396 359L396 357L397 356L400 356L401 357L405 356L405 354L407 353L408 353L411 351L416 351L418 350L421 350L422 350L423 354L425 355L428 354L429 354L431 352L433 351L436 351L436 353L437 359L442 360L443 358L445 359L447 358L448 361L452 362L456 362L457 361L463 359L464 358L463 357L464 355L463 353L464 352Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-MEX" d="M506 372L507 374L508 374L509 376L508 379L509 382L509 386L508 387L506 389L503 388L501 385L502 383L501 380L498 378L497 375L495 373L493 375L493 377L490 379L490 381L492 385L491 388L488 394L486 397L485 397L483 396L479 397L477 400L473 400L471 401L472 402L470 403L467 405L466 405L464 402L461 401L463 400L462 397L461 397L461 395L461 391L462 389L462 386L464 382L466 380L466 377L467 376L467 374L467 371L466 368L468 367L469 364L470 363L469 361L469 359L472 358L474 356L474 354L475 352L476 351L477 353L481 355L485 355L487 359L486 360L487 361L490 367L490 364L492 365L493 364L493 361L494 360L497 359L501 358L501 359L500 364L498 365L500 368L502 365L508 364L508 366L506 371L506 372Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-JAL" d="M403 313L405 312L409 313L411 314L413 315L414 315L418 313L421 310L425 308L423 306L423 303L426 304L429 305L431 308L434 309L433 311L432 313L431 319L432 322L430 324L429 323L427 328L425 330L424 333L419 339L421 340L423 343L421 347L421 350L418 350L416 351L411 351L408 353L407 353L405 354L405 356L401 357L400 356L397 356L396 357L396 359L395 361L398 361L402 362L403 365L402 367L404 371L403 374L406 374L407 376L406 377L405 379L404 381L402 381L400 381L396 385L394 386L392 388L390 386L388 388L385 388L385 386L384 385L384 383L384 379L383 376L382 372L379 374L376 376L372 376L370 377L368 378L366 378L364 379L361 379L360 380L358 380L357 382L355 382L352 381L352 379L350 379L348 378L346 376L344 372L340 368L338 365L334 359L333 357L333 353L330 351L329 348L331 347L333 346L339 346L340 344L341 343L339 341L342 338L343 335L345 334L347 335L350 332L353 333L354 334L358 335L360 338L361 339L364 342L363 338L365 337L366 332L366 328L371 328L372 327L374 326L376 325L377 324L377 320L377 318L375 317L374 314L373 313L369 312L368 309L368 308L365 306L364 306L363 303L364 298L365 297L367 296L367 294L370 293L371 293L370 296L372 296L373 295L372 293L371 289L371 288L373 287L375 286L377 287L377 288L376 289L374 292L373 295L373 298L374 300L375 301L376 300L376 292L380 291L383 293L383 296L380 302L380 304L382 304L383 303L385 304L386 301L389 299L388 298L388 296L390 296L392 296L392 299L394 299L395 300L394 304L393 306L388 308L386 310L383 312L383 317L381 319L379 319L380 322L382 322L383 322L383 324L378 326L378 327L380 328L382 330L385 331L388 332L392 331L393 331L395 330L395 328L397 327L399 328L402 325L405 323L406 322L406 319L403 317L403 316L403 313Z" fill="#33d17a" fill-opacity="0.88"></path><path class="estado-path" data-sid="MX-HID" d="M510 321L511 323L510 325L512 326L515 327L516 326L518 327L520 331L518 333L518 335L518 337L517 337L515 336L512 338L511 339L511 343L510 347L512 350L514 349L517 347L519 345L520 344L522 342L525 343L525 346L522 348L521 350L517 351L518 353L520 353L521 355L520 360L518 363L519 368L517 367L514 370L511 370L506 372L506 371L508 366L508 364L502 365L500 368L498 365L500 364L501 359L501 358L497 359L494 360L493 361L493 364L492 365L490 364L490 367L487 361L486 360L487 359L485 355L481 355L477 353L476 351L477 344L483 343L485 341L484 339L485 336L487 334L489 331L488 329L490 328L491 329L496 327L497 324L499 323L500 326L503 327L504 325L505 326L506 323L508 321L510 321Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-GRO" d="M486 397L486 399L489 399L491 402L496 403L499 405L499 406L501 408L502 411L505 410L505 412L509 414L509 415L514 414L515 416L517 417L515 421L515 424L518 429L518 434L517 435L517 437L520 438L520 442L522 443L523 445L522 447L521 449L519 450L518 451L517 453L514 455L514 457L509 461L504 454L500 455L493 453L486 451L482 451L479 449L477 448L475 447L474 445L463 441L456 438L446 435L446 433L442 430L436 428L436 427L435 425L433 425L431 424L431 422L429 420L427 418L423 416L421 415L419 416L418 415L418 411L419 410L421 409L422 409L425 407L425 405L425 404L425 401L426 399L427 400L430 398L432 399L433 401L434 401L438 401L440 400L445 401L447 401L449 404L451 403L456 406L457 405L454 401L454 398L453 393L455 392L455 393L457 391L459 389L460 387L462 386L462 389L461 391L461 395L461 397L462 397L463 400L461 401L464 402L466 405L467 405L470 403L472 402L471 401L473 400L477 400L479 397L483 396L485 397L486 397Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-GUA" d="M478 318L479 321L477 323L480 323L479 326L476 328L474 326L473 327L470 330L470 333L468 334L465 334L464 335L459 335L458 338L458 340L460 344L460 346L461 348L463 350L464 352L463 353L464 355L463 357L464 358L463 359L457 361L456 362L452 362L448 361L447 358L445 359L443 358L442 360L437 359L436 353L436 351L433 351L431 352L429 354L428 354L425 355L423 354L422 350L421 350L421 347L423 343L421 340L419 339L424 333L425 330L427 328L429 323L430 324L432 322L431 319L432 313L433 311L434 309L435 309L437 309L440 310L441 310L446 312L449 313L451 315L456 318L458 317L460 317L460 314L461 313L465 314L469 317L471 319L476 319L478 318Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-DUR" d="M375 174L379 176L383 180L385 184L384 188L386 192L386 196L387 200L386 204L383 207L384 209L386 210L384 211L383 212L383 215L385 217L386 219L388 221L389 224L390 226L394 228L397 228L399 229L400 228L399 227L400 224L403 221L404 223L405 225L407 227L406 232L408 232L409 236L408 238L402 239L400 238L400 239L395 238L392 239L390 238L386 238L384 240L382 242L380 245L377 247L375 248L376 251L376 255L375 256L376 260L374 263L371 266L371 268L370 274L368 277L368 278L369 281L369 283L368 288L365 289L364 291L363 294L360 295L359 296L357 295L356 293L354 291L352 290L351 288L348 292L347 291L345 288L346 287L349 285L349 282L348 282L347 279L344 279L342 277L341 278L339 279L337 276L335 274L331 274L330 270L328 267L329 266L328 264L327 261L325 259L323 256L323 253L322 252L320 247L320 245L317 240L315 239L311 238L310 239L305 242L304 242L302 238L302 234L300 234L299 229L298 229L297 227L294 227L293 224L291 219L290 219L290 217L290 212L291 209L290 207L292 205L292 203L295 202L296 204L301 205L302 206L303 204L307 202L309 199L308 196L307 195L309 191L309 189L311 187L313 186L314 184L314 182L314 180L315 174L317 173L317 172L320 173L323 174L324 176L326 178L327 177L331 180L333 180L333 181L335 181L337 182L341 180L346 180L348 182L351 183L353 183L355 183L355 180L357 177L358 177L361 174L361 172L366 175L373 173L375 174Z" fill="#33d17a" fill-opacity="0.88"></path><path class="estado-path" data-sid="MX-CMX" d="M501 385L498 386L497 385L495 386L494 385L492 385L490 381L490 379L493 377L493 375L495 373L497 375L498 378L501 380L502 383L501 385Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-COL" d="M385 388L382 391L381 390L381 393L379 394L378 396L377 394L373 391L368 388L364 387L364 385L363 384L361 384L355 382L357 382L358 380L360 380L361 379L364 379L366 378L368 378L370 377L372 376L376 376L379 374L382 372L383 376L384 379L384 383L384 385L385 386L385 388Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-COA" d="M477 146L475 148L472 149L467 148L463 148L462 149L461 151L459 154L460 156L459 157L457 157L455 158L453 158L451 160L450 162L451 165L453 167L454 165L455 164L457 165L458 170L457 173L456 173L455 175L451 176L449 177L446 177L445 178L444 181L442 183L441 184L446 189L448 191L449 194L452 196L451 199L451 202L452 203L454 204L456 204L457 208L461 211L461 212L464 212L466 215L465 217L463 217L460 216L458 214L457 214L456 215L454 216L452 219L453 222L453 225L451 224L451 227L452 229L453 231L452 234L450 234L447 235L445 235L444 233L442 230L441 229L438 228L435 229L434 230L431 229L431 226L428 226L426 223L424 222L422 221L419 219L410 218L403 220L403 221L400 224L399 227L400 228L399 229L397 228L394 228L390 226L389 224L388 221L386 219L385 217L383 215L383 212L384 211L386 210L384 209L383 207L386 204L387 200L386 196L386 192L384 188L385 184L383 180L379 176L375 174L374 172L372 171L372 168L376 167L376 165L374 164L374 159L373 155L373 152L372 152L371 147L372 146L371 145L372 143L371 142L373 141L374 138L378 130L377 129L380 124L383 122L385 118L386 118L387 117L385 116L387 112L391 113L394 113L395 110L396 110L397 107L399 107L400 106L400 103L402 101L401 100L404 95L405 92L410 91L412 91L414 88L418 89L419 90L421 91L422 90L425 90L427 90L431 91L434 91L436 91L438 93L441 95L441 98L443 98L444 99L446 100L447 102L450 104L453 105L454 108L456 110L456 114L459 118L460 122L463 124L462 125L464 127L464 129L465 131L465 132L467 134L471 136L472 138L473 140L475 142L476 145L477 146Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-CHH" d="M387 112L385 116L387 117L386 118L385 118L383 122L380 124L377 129L378 130L374 138L373 141L371 142L372 143L371 145L372 146L371 147L372 152L373 152L373 155L374 159L374 164L376 165L376 167L372 168L372 171L374 172L375 174L373 173L366 175L361 172L361 174L358 177L357 177L355 180L355 183L353 183L351 183L348 182L346 180L341 180L337 182L335 181L333 181L333 180L331 180L327 177L326 178L324 176L323 174L320 173L317 172L317 173L315 174L314 180L314 182L314 184L313 186L311 187L309 189L309 191L307 195L308 196L309 199L307 202L303 204L302 206L301 205L296 204L295 202L292 203L290 200L290 197L287 192L284 192L281 191L278 190L276 186L275 184L273 181L272 178L271 177L271 172L270 169L269 169L269 167L268 166L263 166L261 166L259 167L255 165L256 164L256 161L257 157L257 156L254 148L250 146L251 144L251 142L249 139L246 138L247 135L245 133L246 132L249 132L250 131L253 132L256 131L258 129L256 128L254 125L255 124L254 122L254 120L256 117L255 115L256 114L256 111L257 110L257 107L259 107L258 101L259 99L259 97L259 90L257 90L257 85L259 82L257 79L258 76L256 69L255 67L256 66L255 65L255 62L253 61L254 59L254 56L254 54L252 50L253 49L252 48L266 48L266 36L285 36L308 36L309 37L312 37L314 40L314 42L316 44L320 46L321 46L323 48L325 49L327 53L332 55L333 58L336 60L337 61L340 63L341 63L345 65L346 66L347 68L349 69L350 71L350 74L354 78L355 80L354 84L355 87L356 88L358 92L358 94L363 98L365 98L367 99L368 101L373 104L376 104L378 105L379 107L381 108L383 108L387 112Z" fill="#33d17a" fill-opacity="0.88"></path><path class="estado-path" data-sid="MX-CHP" d="M621 464L621 461L621 459L620 456L620 455L622 448L625 446L626 442L627 441L627 438L628 437L630 436L634 433L636 430L636 428L639 425L640 422L640 419L640 416L642 415L645 417L647 418L649 418L649 420L648 423L650 426L650 428L653 429L654 432L656 432L660 429L662 428L667 423L669 422L669 420L670 419L674 419L674 418L677 418L679 418L680 420L680 422L683 423L684 427L683 429L684 430L686 430L689 432L690 434L689 435L691 438L694 439L695 442L698 445L701 446L703 448L707 450L708 452L708 456L710 457L712 457L712 458L714 458L715 460L713 464L714 468L698 468L681 467L672 484L669 490L673 495L672 497L671 498L671 500L670 502L671 506L669 509L669 510L664 506L653 493L648 488L641 481L635 476L632 474L626 470L628 469L626 467L622 466L621 464Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-CAM" d="M686 393L683 396L681 397L679 397L678 396L681 396L686 393ZM715 338L715 345L718 346L720 348L721 348L722 349L724 347L726 349L726 351L728 352L730 357L734 359L735 362L738 365L739 369L741 371L744 374L747 377L749 381L749 387L748 388L748 391L747 395L747 397L748 399L749 401L748 403L749 404L749 408L748 411L746 414L746 416L746 420L731 420L714 420L700 420L700 418L693 415L691 414L688 413L685 413L684 417L681 418L679 417L676 416L676 415L672 412L669 407L669 405L668 404L667 404L664 401L662 397L664 396L674 395L675 396L676 397L678 398L677 399L676 398L675 399L678 401L685 403L686 402L687 401L692 399L692 396L693 395L692 393L691 394L690 392L689 390L696 386L697 385L701 383L705 379L706 377L707 374L707 372L707 370L707 369L708 366L712 363L713 361L712 358L713 357L712 349L712 346L713 342L714 339L715 338Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-BCS" d="M167 215L167 216L166 219L166 223L166 225L165 228L163 228L165 222L167 215ZM116 141L117 141L150 141L151 143L153 146L155 149L160 151L162 153L163 157L164 158L165 161L168 163L172 165L170 166L170 168L172 170L174 172L174 173L173 175L174 176L176 179L177 180L179 179L175 175L174 171L175 170L177 171L179 174L181 176L181 179L184 180L184 183L186 185L186 188L188 193L187 196L188 201L190 203L191 205L193 208L195 208L195 210L196 213L197 214L198 218L202 223L204 227L203 230L202 233L202 236L203 237L204 240L205 243L207 244L210 245L210 247L213 245L212 242L213 240L215 240L216 243L219 244L221 245L221 248L223 249L225 248L226 249L225 252L228 255L228 257L229 259L233 261L235 265L235 271L232 274L229 275L228 277L226 278L225 279L223 281L222 281L219 279L218 276L217 269L213 263L211 261L207 259L204 257L200 251L194 247L189 243L183 240L182 239L180 238L179 234L178 235L176 235L174 232L172 230L170 229L168 228L166 226L166 225L167 221L166 220L167 218L168 215L168 209L169 208L169 204L165 195L165 194L163 193L162 190L160 188L158 188L152 185L143 178L143 177L140 173L142 170L140 168L140 171L139 172L138 174L137 173L133 172L131 175L129 175L128 173L127 173L125 169L123 168L121 167L120 168L118 165L115 163L111 163L108 161L108 157L107 156L105 154L101 153L100 151L97 149L96 148L95 147L93 145L97 144L102 145L105 146L107 146L113 143L112 146L113 147L116 149L118 150L119 148L121 149L123 152L124 151L122 149L123 148L123 145L121 144L120 146L120 147L117 148L115 147L115 145L117 143L116 141ZM212 235L213 237L213 239L211 237L212 235ZM171 235L174 235L175 237L177 238L178 240L178 241L171 235ZM223 239L226 245L224 246L223 243L223 239ZM194 193L193 195L191 197L190 197L191 195L191 194L194 193ZM203 219L204 221L206 221L207 226L204 224L203 221L203 219ZM196 391L198 393L198 395L195 394L194 393L196 391Z" fill="#26314a" fill-opacity="0.55"></path><path class="estado-path" data-sid="MX-BCN" d="M131 97L133 98L135 100L136 102L136 104L141 104L141 109L141 110L143 111L142 113L139 110L138 108L135 106L134 105L132 103L130 100L131 97ZM89 129L91 133L91 136L90 139L89 139L87 137L87 136L89 134L88 132L89 129ZM117 141L116 141L115 142L113 141L116 138L116 140L117 141ZM99 16L97 16L96 20L94 22L95 24L95 26L95 28L94 31L100 35L99 36L100 40L99 41L98 44L98 47L98 50L98 53L98 55L100 56L99 57L102 59L102 62L102 67L104 71L104 77L103 79L105 83L107 86L110 88L110 90L111 92L113 91L115 92L116 93L120 97L124 100L126 101L129 104L129 107L131 109L132 111L131 114L132 115L133 114L136 115L136 118L139 117L140 118L141 122L142 122L143 126L145 127L148 127L149 128L148 132L150 135L150 136L150 139L151 141L151 143L150 141L118 141L119 139L117 138L117 137L118 135L118 133L117 133L119 128L118 126L115 122L114 121L111 119L110 116L108 114L106 114L105 113L104 110L102 109L101 107L99 106L95 102L93 101L90 100L88 98L85 97L83 95L82 95L80 93L79 93L77 91L77 88L76 86L74 86L75 82L75 81L75 77L74 75L72 74L68 72L69 67L68 63L65 61L63 58L61 58L62 53L60 49L58 48L56 45L53 43L52 42L53 39L53 37L54 37L54 34L51 32L50 31L47 29L47 26L46 23L43 22L41 16L41 15L63 13L78 12L102 10L100 13L99 16ZM13 107L12 109L13 110L13 114L12 115L11 111L10 110L10 108L13 107Z" fill="#33d17a" fill-opacity="0.88"></path><path class="estado-path" data-sid="MX-AGU" d="M403 313L400 311L400 310L402 307L404 303L406 299L409 298L412 296L415 293L415 295L418 297L421 299L421 300L423 303L423 306L425 308L421 310L418 313L414 315L413 315L411 314L409 313L405 312L403 313Z" fill="#26314a" fill-opacity="0.55"></path></svg></div>
+    <div class="map-caption">Verde = aseguramiento sin enfrentamiento. Amarillo = derivado de confrontación. Rojo = armamento vinculado a un evento de alto impacto. La sola presencia de armas no vuelve roja a una entidad.</div>
+  </div>
+
+  
+
+</section>
+<!-- ===================== 8 — ARMAMENTO POR EVENTO ===================== -->
+<section class="seccion" id="s8">
+  <div class="sec-head">
+    <h2>ARMAMENTO POR EVENTO</h2>
+    <span class="meta"><span class="pg">PÁG. 8 / 11</span></span>
+  </div>
+
+  <p class="muted-note"><b>Desglose por evento: solo en la versión de cartelón.</b> Los totales nacionales están en las tarjetas de arriba y el armamento de cada hecho, en su ficha.</p>
+  <p class="muted-note" style="margin:6px 0 0 0;">
+    <b>Lectura regional</b> —<b>cálculo propio</b>—: <b>Noroeste 3 eventos</b> (Ciudad Juárez, San
+    Quintín, Durango) · <b>Noreste 1</b> (Reynosa) · <b>Occidente 1</b> (Zapopan) · <b>Centro 1</b>
+    (Puebla) · <b>Golfo 0</b> · <b>Sureste 0</b>, <b>salvo el evento cualitativo de Zirándaro</b>.
+  </p>
+
+  
+
+</section>
+<!-- ===================== 9 — RASTREO DE SENTENCIAS ===================== -->
+<section class="seccion" id="s9">
+  <div class="sec-head">
+    <h2>RASTREO DE SENTENCIAS</h2>
+    <span class="meta"><span class="pg">PÁG. 9 / 11</span></span>
+  </div>
+
+  <div class="conteo">
+    <div class="tile cero"><span class="lbl">Sentencias condenatorias</span><span class="num">0</span><span class="sub"><code>SIN SENTENCIA INTEGRABLE DURANTE EL CORTE</code> · <b>ninguna fiscalía publicó una resolución con fecha dentro de la ventana</b> tras barrer <b>31 de 32 entidades y la FGR</b></span></div>
+    <div class="tile cero"><span class="lbl">Personas sentenciadas</span><span class="num">0</span><span class="sub"><b>consecuencia directa del renglón anterior</b> · <b>no hay persona con nombre a la que atribuir una condena en esta ventana</b></span></div>
+    <div class="tile cero"><span class="lbl">Años acumulados</span><span class="num">0</span><span class="sub"><code>NADA QUE ACUMULAR</code> · <b>los años nunca se suman entre casos</b> y <b>ningún caso integrado aporta pena</b></span></div>
+    <div class="tile cero"><span class="lbl">Reparación del daño</span><span class="num">0</span><span class="sub"><b>ningún monto de reparación, multa ni decomiso</b> fue ordenado y publicado dentro de la ventana</span></div>
+    <div class="tile cero"><span class="lbl">Fiscalías con resultado</span><span class="num">0</span><span class="sub"><b>de 31 revisadas más la FGR</b> · <code>SEIS CANDIDATOS QUEDAN EN PENDIENTE DE CONFIRMACIÓN OFICIAL Y NO INTEGRAN</code></span></div>
+  </div>
+
+  <p class="muted-note" style="margin:8px 0 0 0;">
+    <code>SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE.</code>
+    <b>El módulo se cierra en cero tras el barrido obligatorio de las 32 entidades y la FGR</b>, no por
+    falta de búsqueda. <b>La ventana de 23 h 25 min es la más corta de la serie reciente</b> y
+    <b>ninguna fiscalía publicó resolución con fecha fijada en ella</b>.
+    <code>EL UMBRAL ES ASIMÉTRICO: EN SENTENCIAS LA CONFIANZA «BAJO» NO BASTA. UNA SENTENCIA SIN
+    FUENTE OFICIAL NO SE INTEGRA AL CONTEO NACIONAL.</code>
+    <br><b>Los seis candidatos vivos están en la página siguiente</b>, con su pena literal, su estatus
+    y el motivo por el que no se integran.
+  </p>
+
+  
+
+</section>
+<!-- ===================== 10 — CANDIDATOS Y COBERTURA ===================== -->
+<section class="seccion" id="s10">
+  <div class="sec-head">
+    <h2>CANDIDATOS Y COBERTURA</h2>
+    <span class="meta"><span class="pg">PÁG. 10 / 11</span></span>
+  </div>
+
+  <div class="tabla-tarjetas"><p class="muted-note"><b>Tabla ejecutiva de 6 columnas</b>, reflujada a tarjetas para esta versión. <b>No se omitió ningún dato</b>; la tabla en su forma original está en <code>reports/argos-2026-09-22.html</code>.</p><div class="fila-tarjeta"><div class="campo"><span class="k">Entidad · Municipio</span><b>Tamaulipas</b><br>Nuevo Laredo</div><div class="campo"><span class="k">Caso</span>Carlos, Adrián, Luis y José «N» · <span class="muted-note">portación de arma y cartuchos de uso exclusivo</span></div><div class="campo"><span class="k">Pena publicada</span><b>15 a 6 m</b> y <b>15 a 6 m</b>; <b>11 a 6 m</b>; <b>8 años</b></div><div class="campo"><span class="k">Autoridad</span>FGR</div><div class="campo"><span class="k">Por qué NO se integra</span><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · sin boletín de la FGR y <b>sin día fijado en ruta ni titular</b>, solo mes</div><div class="campo"><span class="k">Confianza</span>No confirmado</div></div><div class="fila-tarjeta"><div class="campo"><span class="k">Entidad · Municipio</span><b>Veracruz</b><br>agregado estatal</div><div class="campo"><span class="k">Caso</span>Boletín del <b>21-sep</b>: <b>«26 sentencias condenatorias y 41 vinculaciones a proceso»</b> en un fin de semana</div><div class="campo"><span class="k">Pena publicada</span><span class="muted-note">no desglosada</span></div><div class="campo"><span class="k">Autoridad</span>FGE Veracruz</div><div class="campo"><span class="k">Por qué NO se integra</span><code>AGREGADO SIN DESGLOSE INDIVIDUAL</code> · sin nombre, delito, pena ni causa penal caso por caso <b>no es contable ni auditable</b></div><div class="campo"><span class="k">Confianza</span>No confirmado</div></div><div class="fila-tarjeta"><div class="campo"><span class="k">Entidad · Municipio</span><b>Michoacán</b><br>Morelia</div><div class="campo"><span class="k">Caso</span>Francisco Javier T. · <span class="muted-note">secuestro y homicidio agravado, hecho del 5-jun-2023</span></div><div class="campo"><span class="k">Pena publicada</span><b>93 años 9 meses</b></div><div class="campo"><span class="k">Autoridad</span>FGE Michoacán</div><div class="campo"><span class="k">Por qué NO se integra</span><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · seis republicadores del <b>17-sep</b>, <b>ninguno del dominio de la FGE</b>; <b>fuera de ventana</b></div><div class="campo"><span class="k">Confianza</span>Bajo</div></div><div class="fila-tarjeta"><div class="campo"><span class="k">Entidad · Municipio</span><b>Estado de México</b><br>Temoaya · Coacalco · Hueypoxtla</div><div class="campo"><span class="k">Caso</span>Tres casos distintos · <span class="muted-note">homicidio</span></div><div class="campo"><span class="k">Pena publicada</span><b>125 años</b> · <b>36 a 3 m</b> · <b>21 a 10 m 15 d</b></div><div class="campo"><span class="k">Autoridad</span>FGJEM</div><div class="campo"><span class="k">Por qué NO se integra</span><code>SEXTA VERIFICACIÓN SIN BOLETÍN PRIMARIO</code> · publicaciones del <b>11 al 17-sep</b>, <b>todas fuera de ventana</b> · Coacalco además <code>POSIBLE CASO HOMÓNIMO</code></div><div class="campo"><span class="k">Confianza</span>Bajo</div></div><div class="fila-tarjeta"><div class="campo"><span class="k">Entidad · Municipio</span><b>San Luis Potosí</b><br>La Pila</div><div class="campo"><span class="k">Caso</span>Norma «N» · <span class="muted-note">ingreso de 60 tabletas de clonazepam a un penal</span></div><div class="campo"><span class="k">Pena publicada</span><b>4 años</b> y multa de <b>84 UMA</b> (9,503.76 pesos)</div><div class="campo"><span class="k">Autoridad</span>FGR · FECOR</div><div class="campo"><span class="k">Por qué NO se integra</span><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · dos fuentes regionales, <b>ninguna institucional</b>; publicación del <b>19-sep</b>, fuera de ventana</div><div class="campo"><span class="k">Confianza</span>Bajo</div></div><div class="fila-tarjeta"><div class="campo"><span class="k">Entidad · Municipio</span><b>Chihuahua</b><br>Ciudad Juárez</div><div class="campo"><span class="k">Caso</span>José Manuel E. C. · <span class="muted-note">homicidio calificado y tentativa, hecho del 1-sep-2025</span></div><div class="campo"><span class="k">Pena publicada</span><span class="muted-note">FALLO DICTADO, PENA NO PUBLICADA</span></div><div class="campo"><span class="k">Autoridad</span>FGE Chihuahua</div><div class="campo"><span class="k">Por qué NO se integra</span><code>SIN RESULTADO INDEXADO EN VENTANA — TERCERA EDICIÓN</code> · audiencia de individualización fijada para el 17-sep <b>sin resultado publicado</b>. <code>NO SE AFIRMA QUE SE POSPUSIERA</code></div><div class="campo"><span class="k">Confianza</span>No confirmado</div></div></div>
+
+  <div class="block-head" style="margin-top:10px;">INDICADOR DE COBERTURA — CICLO A APLICADO Y DECLARADO</div>
+  <div class="tabla-scroll"><table class="exec">
+    <thead><tr><th>Renglón</th><th>Resultado</th></tr></thead>
+    <tbody>
+      <tr><td><b>Universo de revisión</b></td><td><b>33 = 32 fiscalías estatales + FGR</b></td></tr>
+      <tr><td><b>Fiscalías revisadas</b></td><td><b>31 de 32</b> · <b>FGR revisada: Sí</b></td></tr>
+      <tr><td><b>Fiscalías con sentencia publicada en ventana</b></td><td><b>0</b></td></tr>
+      <tr><td><code>SIN RESULTADO INDEXADO EN VENTANA</code></td><td><b>31</b> · <b>es la casilla correcta bajo bloqueo de egreso</b></td></tr>
+      <tr><td><code>SIN ACTUALIZACIÓN CONSTATADA</code></td><td><b>0</b> · <b>exige lectura directa del portal, imposible con el egreso bloqueado</b></td></tr>
+      <tr><td><code>NO REVISADA</code></td><td><b>1 — Baja California Sur</b> · presupuesto agotado en la deuda heredada del Noroeste</td></tr>
+      <tr><td><b>Ciclo de rotación aplicado</b></td><td><b>CICLO A</b> — Noroeste y Centro encabezaron el triaje judicial</td></tr>
+      <tr><td><b>Prioridad sobre el ciclo</b></td><td><b>Tamaulipas, Coahuila y Campeche encabezaron sus barridos</b> pese a no tocarles por ciclo · <b>las tres quedaron saldadas</b></td></tr>
+      <tr><td><b>Techo de confianza del producto</b></td><td><b>★★★☆☆</b> · <code>BLOQUEO DE EGRESO REVERIFICADO, CUARTA EDICIÓN: ALCANZA TAMBIÉN A LOS MEDIOS. NINGÚN DOCUMENTO PRIMARIO PUDO LEERSE ÍNTEGRO</code></td></tr>
+    </tbody>
+  </table></div>
+
+  
+
+</section>
+<!-- ===================== 11 — VALORACIÓN ===================== -->
+<section class="seccion" id="s11">
+  <div class="sec-head">
+    <h2>VALORACIÓN</h2>
+    <span class="meta"><span class="pg">PÁG. 11 / 11</span></span>
+  </div>
+
+  <div class="alerta contexto">
+    <div class="flag">VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL</div>
+    <p>
+      <b>1.</b> <b>UN SOLO EVENTO ROJO EN VENTANA</b> —Valle de Chalco, <b>2 muertos</b>— y
+      <b>cero amarillos</b>: el nivel de riesgo nacional lo fija ese hecho y <b>nada más</b>.
+      <br><b>2.</b> <b>Una ventana de 23 h 25 min mide publicación, no violencia.</b> Los <b>siete
+      verdes</b> son renglones de <b>un único boletín federal de días anteriores</b>: <b>los totales
+      no son comparables</b> con los de ediciones cuyos hechos sí ocurrieron en ventana.
+      <br><b>3.</b> <b>Las dos recuperaciones son las de mayor gravedad del documento</b> —<b>5
+      muertos entre las dos</b>— y <b>quedan fuera de todo total</b>: pertenecen a la ventana anterior.
+      <br><b>4.</b> <b>Capacidad de respuesta sin capacidad de condena</b>: <b>14 detenidos</b> y
+      <b>33 armas</b> frente a <b>cero sentencias integrables</b> en <b>31 fiscalías más la FGR</b>.
+      <br><b>5.</b> <b>Cero armamento especial</b> en todo el corte, frente a <b>4 piezas</b> en el
+      anterior: <b>no hay proyección de fuego pesado documentada en esta ventana</b>.
+    </p>
+  </div>
+
+  <div class="alerta contexto" style="margin-top:8px;">
+    <div class="flag">CONCLUSIONES DE INTELIGENCIA CRIMINAL</div>
+    <p>
+      <b>1. LA MUNICIÓN VIAJA EN TRANSPORTE PÚBLICO DE PASAJEROS.</b> <b>9,287 cartuchos</b> y
+      <b>11 armas</b> en <b>un autobús</b> en el Libre–Córdova: <b>el 94,8 % de la munición del
+      corte en un solo vehículo</b>. Línea: inspección de autobuses de línea en cruces de salida.
+      <br><b>2. ZAPOPAN APUNTA A MANUFACTURA, NO A ALMACENAJE.</b> <b>25 espoletas para 20
+      artefactos</b> es <b>excedente de iniciadores</b>. <b>Primer depósito de AEI del archivo
+      reciente fuera del corredor Sinaloa-Durango</b>: sugiere <b>segundo foco</b>, requiere validación.
+      <br><b>3. PERFIL DE VÍCTIMA: EL CUADRO POLÍTICO MUNICIPAL DEL PONIENTE DE MORELOS.</b> Segundo
+      dirigente local asesinado de la serie en esa franja —Mazatepec y ahora Tetecala—, <b>ambos con
+      el proceso de 2027 abierto</b>. <b>El patrón se registra; la vinculación no se afirma.</b>
+      <br><b>4. LA BALA PERDIDA ES EL RIESGO CIVIL DOMINANTE.</b> En Valle de Chalco murió <b>un
+      trabajador ajeno al hecho</b>, en una <b>federal a hora punta</b>. <b>Agresión en movimiento
+      sobre vía primaria</b>: el daño colateral es estructural, no accidental.
+      <br><b>5. TIERRA CALIENTE PRODUCE A ESCALA INDUSTRIAL Y A CABALLO DE DOS ENTIDADES.</b>
+      <b>27 reactores</b> entre <b>Zirándaro y Carácuaro</b>, <b>sin un arma y sin un detenido
+      publicados</b>: la infraestructura se pierde, la estructura que la opera no.
+    </p>
+  </div>
+
+  <div class="block-head" style="margin-top:10px;">INDICADORES OFICIALES</div>
+  <p class="muted-note" style="margin:0;">
+    <code>SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE.</code>
+    <b>gabinetedeseguridad.gob.mx/resultados/</b> — <b>decimotercera verificación consecutiva sin
+    cifra utilizable</b>: <b>ninguna cifra suya se usa en este cartelón</b>.
+    <b>SESNSP, INEGI y FGR</b>: <b>sin publicación nueva dentro de la ventana</b>.
+    <br><b>El único agregado federal del periodo</b> es el <b>boletín de acciones relevantes del 18,
+    19 y 20-sep</b>, <b>publicado el 21</b>, <b>en formato de tres días</b> y
+    <code>NO INDEXADO POR SU EMISOR: ALCANZADO SOLO POR REPUBLICADORES.</code> Declara
+    <b>48 personas detenidas en 15 entidades</b> en su propio tramo —<b>agregado del emisor, no de
+    ARGOS</b>—.
+    <br><b>Toda cifra de este cartelón sin emisor nombrado es cálculo propio de ARGOS.</b>
+  </p>
+
+  
+
+
+  <p class="muted-note">
+    Esta es la <b>versión móvil</b> de ARGOS 123, con el mismo contenido verificado que la versión de
+    cartelón (<code>reports/argos-2026-09-22.html</code>), reflujada a una sola columna. Las tablas
+    ejecutivas se presentan como fichas para evitar desplazamiento horizontal.
+    <b>Dos tablas no se publican aquí, por instrucción editorial</b>: el <b>índice por entidad</b> y el
+    <b>desglose de armamento por evento</b>. <b>Ningún dato se pierde</b> —el índice repite titulares de
+    las fichas y el desglose repite el apartado HECHO de cada una—, pero <b>los 9 ARG-ID del módulo de
+    armamento solo constan en el cartelón</b>. <b>Ninguna ficha se omitió ni se resumió.</b> El radar, el mapa de portada y el mapa de aseguramientos se generan de los mismos
+    arreglos <code>EVENTOS</code> y <code>EVENTOS_ARM</code> que la versión de escritorio mediante
+    <code>tools/gen-movil-svg.js</code>, y <b>los contadores del radar se toman del propio generador</b>,
+    no se escriben a mano: es el origen del error corregido en ARGOS 97.
+  </p>
+</section>
+<footer class="footbar">
+  <div>Versión 3.0 · Edición móvil</div>
+  <div>Fecha: 2026-09-22 · Hora: 08:22 (CDMX) · Corte: Matutino</div>
+  <div>ARGOS N.° 123 · <span class="uso">USO INSTITUCIONAL</span></div>
+</footer>
+
+</body>
+</html>

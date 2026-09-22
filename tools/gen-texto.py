@@ -53,7 +53,14 @@ hora = re.search(r"<b>Hora:</b>\s*([\d:]+)", s).group(1)
 # ARGOS 120 publicó un .txt que decía "matutino" sobre un corte vespertino.
 _m = re.search(r"<span>Corte:\s*([^<]+?)\s*</span>", s)
 corte_turno = _m.group(1) if _m else "No declarado"
-vent = limpia(re.search(r"Ventana <b>(.*?)</b> \(<b>(.*?)</b>\)", s).group(0), False)
+_v = re.search(r"Ventana <b>(.*?)</b> \(<b>(.*?)</b>\)", s)
+if _v is None:
+    raise SystemExit(
+        "gen-texto: el cartelón no declara la ventana en el formato canónico.\n"
+        "  Esperado, literal:  Ventana <b>DD-mes HH:MM \u2192 DD-mes HH:MM CDMX</b> (<b>N h N min</b>)\n"
+        "  Corrija el CARTELÓN, no esta herramienta: la ventana es dato obligatorio del producto."
+    )
+vent = limpia(_v.group(0), False)
 out += [
     f"ARGOS {num} — REPORTE NACIONAL DE SEGURIDAD",
     "REPORTE DIARIO DE INTELIGENCIA CRIMINAL",
