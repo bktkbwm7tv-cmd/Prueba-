@@ -1456,3 +1456,65 @@ hallazgos reales. Tercera edición consecutiva con la racha intacta. No la rompa
 | ARGOS 122 | ⚠️ **EL GENERADOR MÓVIL DUPLICABA EL ENCABEZADO DE CADA SECCIÓN** | Escribía su cabecera corta y dejaba **además** la larga del escritorio: **20 títulos para 10 secciones**. El destinatario lo reportó como *«se repite dos veces»*. ⚠️ **La lectura literal apuntaba al contenido; no era el contenido, era la herramienta.** **Se corrigió `tools/gen-movil.py`, no su salida**: `limpia()` retira el encabezado que duplica el título —solo el que usa `<h2 style="font-size:14px;">`, que es el que `titulo_de()` lee, de modo que los subtítulos internos se conservan—. **Además, cada ficha muestra ahora su fecha**, derivada de su propio apartado TRAZABILIDAD, y cada sección su rango. **De 20 encabezados a 12; 19 fichas con fecha visible. Escritorio y `.txt` intactos** |
 | ARGOS 122 | ⚠️ **EL PANORAMA DEJABA DE SER UN ÍNDICE EN EL TELÉFONO** | Sus **7 columnas** se reflúan a tarjetas por la regla de ARGOS 102 —correcta para el módulo de armamento—, y producían **20 tarjetas de 7 campos, 140 bloques etiquetados antes de la primera ficha**. El destinatario: *«estos saturan más de información»*. **Corregido en `tools/gen-movil.py`**: reconoce el panorama por su firma —única tabla con «Nivel de riesgo» **y** «ARG-ID»— y lo reflúa a **modo índice**: entidad, hecho, color y ARG-ID. **Los tres campos de procedencia salen del índice móvil y no se pierden**: están en la TRAZABILIDAD de cada ficha y en la tabla del escritorio. **De 221,022 a 212,625 bytes.** ⚠️ **Lección: una regla correcta en general puede ser errónea en un caso. La tabla que es ÍNDICE no se trata como la tabla que es REGISTRO** |
 | ARGOS 122 | ⚠️ **DOS TABLAS SALEN DE LA VERSIÓN MÓVIL POR INSTRUCCIÓN EDITORIAL** | *«Estas quítalas, es demasiada información»*: el **índice de panorama** (7 col, 20 filas) y el **armamento por evento** (17 col, 9 filas). **Las dos repetían lo que la móvil ya traía**: el índice, los titulares de las fichas; el armamento, el apartado HECHO de cada una, con siete líneas de ceros por tarjeta. **NO se retiraron los totales nacionales** —12 columnas pero UNA fila, agregado obligatorio— ni candidatos ni cobertura. ⚠️ **El coste se midió y se ELIMINÓ**: retirarlas dejaba fuera 4 ARG-ID de armamento —los únicos que ninguna ficha citaba—, que es el fallo que `editor-duplicidad` midió en ARGOS 102 (13 de 27 ARG-ID en la móvil). **Se añadió la referencia cruzada que faltaba a esas 4 fichas**, y la paridad queda en **29 ARG-ID idénticos**. **La trazabilidad no dependía de la tabla: dependía de que cada ficha citara su fila.** Móvil de 223,909 a 193,603 bytes, **13 % menos, sin perder ficha ni ARG-ID** |
+
+---
+
+# ARGOS 123 — lo que esta edición cierra, abre y traspasa
+
+**Corte 2026-09-22** · Ventana **21-sep 08:57 → 22-sep 08:22 CDMX** (**23 h 25 min**, la más corta de
+la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
+
+## Cerrados por ARGOS 123
+
+| Pendiente | Disposición |
+|---|---|
+| ⚠️⚠️ **SONORA · las «cinco personas sin paradero» de Sierra Pinta** | **CERRADO — LA PREMISA ERA FALSA.** `ARG-123-FE-001`. Las ocho personas **ya estaban liberadas** y su testimonio permitió rescatar a **tres personas distintas**. **Son dos grupos.** **Retirado como pendiente de vidas.** Reserva: sin boletín de `fgjesonora.gob.mx` |
+| **SONORA · cifra exacta del arsenal de Cerrada del Sol** | **SIN AVANCE.** «Más de 40 largas» y «casi cuatro mil» cartuchos siguen sin cifra. **Sigue siendo el mayor volumen no integrado del archivo** |
+| ⚠️ **AGUASCALIENTES · Cosío, El Salero** | **CERRADO POR UMBRAL DE AGOTAMIENTO — QUINTO INTENTO.** El boletín existe pero **ninguna ruta lleva fecha**. ⚠️ **Corrección al retirarlo: el Barrett cal. .50 está DENTRO de las 17 largas, no es adicional** |
+| ⚠️ **MICHOACÁN · el municipio «MAZATLÁN»** | **CERRADO — RETIRADO.** Obra del resumidor. No existe ese municipio en Michoacán |
+| ⚠️ **BAJA CALIFORNIA · boletín 12722 de Tijuana** | **CERRADO — NO ERA CASO HOMÓNIMO, ERA FUENTE MAL ATRIBUIDA.** Es de Carlos Josué Gómez Martínez, 23 a 4 m, víctima su concubina, hecho de dic-2023. **Ni un campo coincide** con Luis Martín «N» |
+| **TAMAULIPAS · Nuevo Laredo, Carlos/Adrián/Luis/José «N»** | **RECLASIFICADO**: deja de ser aseguramiento sin fecha y pasa a **sentencia pendiente de confirmación oficial** (15 a 6 m, 15 a 6 m, 11 a 6 m y 8 años, FGR) |
+| **VERACRUZ · las «tres cifras» del 18-sep** | **ACLARADO**: el «37 resoluciones» es de **otro boletín, del 7-sep**. Las cifras propias del 18 son **16 sentencias, 1 fallo y 50 resoluciones**. **Sigue sin desglose individual: no integrable** |
+| **Dominios sin verificar** | **CERRADOS**: Querétaro, Hidalgo y Tlaxcala **confirmados**. ⚠️ **Michoacán y Campeche CORREGIDOS** (ver abajo) |
+
+## Abiertos que ARGOS 124 hereda
+
+| Pendiente | Estado |
+|---|---|
+| ⚠️⚠️ **GUANAJUATO · corredor Laja-Bajío** | **EL VACÍO MÁS GRANDE DEL CORTE.** `periodicocorreo.com.mx` (21-sep) atribuye a la FGE **«23 muertos y 11 heridos del 18 al 20-sep»** y **«14 muertos en Valle de Santiago en ocho días»**. **FUENTE ÚNICA REGIONAL, SIN BOLETÍN. NO INTEGRADO NI CITADO EN EL CARTELÓN.** **Si la cifra es cierta, un solo corredor supera todos los muertos del documento.** **Es el primer encargo de ARGOS 124** |
+| ⚠️ **CHIHUAHUA · Cd. Juárez, José Manuel E. C.** | **TERCERA edición `SIN RESULTADO INDEXADO EN VENTANA`.** ⚠️ **NO se afirma que se pospusiera.** **Sugerencia del barrido**: buscar «individualización de sanciones» **sin restricción de fecha** — el boletín de la pena usaría **otro slug** que el del fallo |
+| ⚠️ **ESTADO DE MÉXICO · `fgjem.edomex.gob.mx`** | **SEXTA verificación sin boletín primario.** Temoaya (125 a), Coacalco (36 a 3 m, ⚠️ **posible homónimo con un post de junio**) y Hueypoxtla (21 a 10 m 15 d). **Ninguna edición ha integrado una** |
+| ⚠️ **GUERRERO · Quechultenango y Mochitlán** | **LA CONTRADICCIÓN EMPEORÓ: ahora SEIS versiones numéricas.** 10 heridos (alcalde) · 5 heridos y 0 muertos (SEDENA) · **8 heridos** (5 policías estatales + 3 GN, carpetas de la FGE) · **19, 22 y 29 retenidos**. ⚠️ **Explosivos SIGUEN SIN CONFIRMAR: se mantiene 🟡.** **Dato nuevo: el armamento de cargo SÍ fue devuelto** tras ~6,5 h, **sin inventario institucional** |
+| ⚠️ **CDMX · Tepito** | **CUARTA edición sin boletín** de SSC ni FGJ. **Tres versiones de edades**: 25-30 · 18-19 (Abigail Herrera, 19, y Odette Rosas, 18) · 15-20 |
+| **MICHOACÁN · Morelia, Francisco Javier T.** | **93 a 9 m.** `PENDIENTE DE CONFIRMACIÓN OFICIAL`. ⚠️ **Usar el dominio correcto: `comunicacion.fiscaliamichoacan.gob.mx`** |
+| **SAN LUIS POTOSÍ · La Pila, Norma «N»** | **4 años + 84 UMA.** Dos fuentes regionales, ninguna institucional. ⚠️ **La conversión a pesos de la fuente usa la UMA de 2025, no la vigente: no la reproduzca ARGOS** |
+| **TAMAULIPAS · «El Cholo»** | `ARG-122-SEN-001` **se mantiene integrada con confianza Medio**. Corroboración periodística **ampliada a siete medios**; **el folio de la FGR sigue sin localizarse** |
+| **VERACRUZ · agregado del 21-sep** | **«26 sentencias condenatorias y 41 vinculaciones»**. **Sin desglose individual: NO INTEGRABLE** |
+| **TABASCO · FGET** | Sin boletín de las ejecuciones del 15-sep. ⚠️ **La cifra misma está en disputa: 6 según La Silla Rota, 4 según El Universal y otros** |
+| **CHIAPAS · penal de Ocosingo** | **Dato nuevo**: la FGE vinculó **la misma arma a otros dos hechos** (16-ago en Vida Mejor y 6-sep en 27 de Febrero). **Auditoría del penal sin resultado publicado** |
+| **QUINTANA ROO · Cancún** | **Cuarto intento sin fijar fecha.** ⚠️ **Precisión nueva: no es un aseguramiento de campo, es una ENTREGA DE ARSENAL de 11 carpetas de la FGR a SEDENA** — por eso ninguna fuente ancla una fecha de hecho |
+| **NUEVO LEÓN · Los Aldamas** | Serie y origen del Barrett **sin localizar**; munición `CANTIDAD NO DETERMINADA`. ⚠️ **Nuevo: fijar la fecha del hecho de «4 sujetos abatidos»** |
+
+## Deuda de método
+
+1. ⚠️⚠️ **EL PRECEDENTE SE BUSCA, NO SE ELIGE.** El coordinador defendió integrar un boletín de la
+   ventana anterior citando **el precedente que le favorecía** y sin buscar **el que le contradecía**
+   —ARGOS 121 frente al boletín del 14-16-sep, y `ARG-122-REC-002`—. **`editor-duplicidad` los
+   encontró y el arbitraje se revirtió entero.** **Cuando tres de seis barridos coinciden contra el
+   criterio del coordinador, eso es dato.**
+2. ⚠️ **UNA FICHA QUE NO PUEDE FECHAR SU HECHO NO PUEDE CONTARLO.** «Tramo 18/20» no es una fecha:
+   es la confesión de que no se sabe. **Si el emisor no desglosa por día, ningún renglón entra en los
+   totales de una ventana.**
+3. ⚠️ **EL CARTELÓN NO PUEDE CONTRADECIR A SU PROPIO ARCHIVO DE FUENTES.** Las tarjetas comparaban
+   contra cifras de ARGOS 122 **que esta misma edición había corregido**. **Toda comparación con la
+   edición anterior debe releer las fes de erratas propias antes de publicarse** — o retirarse.
+4. ⚠️ **UN COLOR SIN ENTRADA EN `SEVERITY_COLOR` PINTA `fill="undefined"` EN SILENCIO.** Ocurrió con
+   `rec`. **Corregido de raíz y el validador lo comprueba desde ahora**, junto con que mapa y radar
+   usen `EVENTOS_CORTE`.
+5. ⚠️ **Los barridos regionales llevan catorce ediciones sin producir un solo hecho rojo.** Todos los
+   de esta edición los trajo **el recall del coordinador** o **un control**. **Pregunta abierta: ¿debe
+   el barrido incluir recall de sucesos, o su función es solo cobertura institucional?**
+6. ⚠️ **El techo de confianza es ★★★☆☆, cuarta edición.** El bloqueo de egreso **alcanza también a los
+   medios**. `docs/solicitud-lista-blanca-egreso.md` **sigue sin tramitar**.
+7. **ARGOS 124 aplica el CICLO B** — Noreste + Golfo encabezan el triaje judicial. ⚠️ **Pero
+   BAJA CALIFORNIA SUR quedó `NO REVISADA` y encabeza, aunque no le toque.**

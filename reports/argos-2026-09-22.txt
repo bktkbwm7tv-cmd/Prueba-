@@ -12,7 +12,7 @@ Versión 3.0 · Corte matutino · USO INSTITUCIONAL
 
   · 🔴 Alto impacto · 1
   · 🟡 Violencia operativa · 0
-  · 🟢 Acciones institucionales · 7
+  · 🟢 Acciones institucionales · 0
 
 [ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
 
@@ -24,7 +24,7 @@ Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
 
   · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 0 eventos
 
-  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 7 eventos
+  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 0 eventos
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-09-22 · Hora: 08:22 (CDMX) · Corte: Matutino · ARGOS N.° 123 · USO INSTITUCIONAL
@@ -34,268 +34,91 @@ Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
 ## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
 
   Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
-  Estado de México · Valle de Chalco Solidaridad · 21-SEP | Ataque armado en la carretera México-Puebla, paradero El Tubo Azul: 2 muertos, uno de ellos un repartidor alcanzado por una bala perdida | 🔴 Rojo | NINGUNA | N+ · El Universal Edomex · El Gráfico | ★★☆☆☆ | ARG-123-001
-  Chihuahua · Ciudad Juárez · 18-20-SEP | 9,287 cartuchos, 4 largas y 7 cortas en un autobús de pasajeros en el Puente Libre–Córdova; 1 detenido | 🟢 Verde | Gabinete de Seguridad (por republicador) | La Capital · RED113 | ★★★☆☆ | ARG-123-002
-  Jalisco · Zapopan · 18-20-SEP | Campamento clandestino inhabilitado: 6 largas, 20 AEI y 25 espoletas | 🟢 Verde | Gabinete de Seguridad (por republicador) | Talla Política · RED113 | ★★★☆☆ | ARG-123-003
-  Guerrero y Michoacán · Zirándaro y Carácuaro · 18-20-SEP | 27 reactores, 54 tanques de gas y más de 10 toneladas de precursores en Tierra Caliente. Sin armamento | 🟢 Verde | Gabinete de Seguridad (por republicador) | Excélsior · RED113 | ★★★☆☆ | ARG-123-007
-  Baja California · San Quintín · 18-20-SEP | 4 largas, 2 cortas, 16 cargadores, 366 cartuchos y una granada; 1 detenido | 🟢 Verde | Gabinete de Seguridad (por republicador) | RED113 · Certeza Diario | ★★★☆☆ | ARG-123-004
-  Tamaulipas · Reynosa · 18-20-SEP | 7 detenidos y 7 armas largas con 2 miras telescópicas, Ejército y Fiscalía Estatal | 🟢 Verde | Gabinete de Seguridad (por republicador) | N+ · La Región Tamaulipas | ★★★☆☆ | ARG-123-005
-  Durango · MUNICIPIO NO ESPECIFICADO · 18-20-SEP | Seis inmuebles cateados, 4 detenidos, 3 armas, 2 drones no acreditados como armados | 🟢 Verde | Gabinete de Seguridad (por republicador) | Talla Política · RED113 | ★★★☆☆ | ARG-123-006
-  Puebla · Carretera México-Puebla · 18-20-SEP | Cartuchos y un cargador SIN ARMA, droga y efectivo; 1 detenido. Marina y Policía Estatal | 🟢 Verde | Gabinete de Seguridad (por republicador) | RED113 · Certeza Diario | ★★★☆☆ | ARG-123-008
+  Estado de México · Valle de Chalco · 21-SEP | Ataque armado en la carretera México-Puebla, paradero El Tubo Azul: 2 muertos, uno un repartidor alcanzado por una bala perdida | 🔴 Rojo | NINGUNA | N+ · El Universal Edomex · El Gráfico | ★★★☆☆ | ARG-123-001
+  Estado de México · Valle de Chalco · VENTANA ARGOS 122 | Dos comerciantes ejecutados en la entrada del tianguis de la colonia Santa Cruz | 🔴 Rojo | NINGUNA | López-Dóriga · Quadratin Edomex | ★★☆☆☆ | ARG-123-REC-003
   Oaxaca · Santo Domingo Tehuantepec · VENTANA ARGOS 122 | Tres muertos en un taller de mototaxis del barrio Santa Cruz Tagolaba | 🔴 Rojo | NINGUNA | La Jornada · El Universal Oaxaca | ★★★☆☆ | ARG-123-REC-002
   Morelos · Tetecala · VENTANA ARGOS 122 | Asesinado en su vivienda el dirigente municipal del PRI, Zenón Juárez Hernández, y su acompañante | 🔴 Rojo | FGE Morelos (por cita: sin pistas) | Reforma · El Financiero · Infobae | ★★★☆☆ | ARG-123-REC-001
+  Guerrero y Michoacán · Zirándaro, Coahuayutla y Carácuaro · VENTANA ARGOS 122 | Cuatro narcolaboratorios con 27 reactores inhabilitados bajo agresión armada contra el personal federal | 🟡 Amarillo | SSPC federal (por declaración) | Infobae · Milenio · El Universal | ★★★☆☆ | ARG-123-REC-010
+  Chihuahua · Ciudad Juárez · VENTANA ARGOS 122 | 9,287 cartuchos, 4 largas y 7 cortas en un autobús de pasajeros; 1 detenido | 🟢 Verde | Gabinete de Seguridad (por republicador) | El Diario de Chihuahua | ★★★☆☆ | ARG-123-REC-004
+  Jalisco · Zapopan · VENTANA ARGOS 122 | Campamento clandestino: 6 largas, 20 AEI y 25 espoletas | 🟢 Verde | Gabinete de Seguridad (por republicador) | ninguna | ★★★☆☆ | ARG-123-REC-005
+  Baja California · San Quintín · VENTANA ARGOS 122 | 4 largas, 2 cortas, 16 cargadores, 366 cartuchos y una granada; 1 detenido | 🟢 Verde | Gabinete de Seguridad (por republicador) | ninguna | ★★★☆☆ | ARG-123-REC-006
+  Tamaulipas · Reynosa · VENTANA ARGOS 122 | 7 detenidos y 7 armas largas con 2 miras telescópicas | 🟢 Verde | Gabinete de Seguridad (por republicador) | N+ | ★★★☆☆ | ARG-123-REC-007
+  Durango · MUNICIPIO NO ESPECIFICADO · VENTANA ARGOS 122 | Seis inmuebles cateados, 4 detenidos, 3 armas, 2 drones no acreditados como armados | 🟢 Verde | Gabinete de Seguridad (por republicador) | ninguna | ★★★☆☆ | ARG-123-REC-008
+  Durango · Tamazula · VENTANA ARGOS 122 | 3 detenidos y 3 armas. Renglón omitido en el borrador y recuperado por control | 🟢 Verde | Gabinete de Seguridad (por republicador) | El Financiero | ★★★☆☆ | ARG-123-REC-009
+  Puebla · Carretera México-Puebla · VENTANA ARGOS 122 | Cartuchos y un cargador SIN ARMA, droga y efectivo; 1 detenido | 🟢 Verde | Gabinete de Seguridad (por republicador) | ninguna | ★★★☆☆ | ARG-123-REC-011
 
   Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Armas cortas | Armas largas | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Arm. especial | Detenidos | Entidades
-  8 | 1 | 0 | 7 | 2 | 10 | 23 | 9,793 | 23 | 1 | 20 | 25 | 0 | 14 | 6
+  1 | 1 | 0 | 0 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1
 
-Ventana 21-sep 08:57 → 22-sep 08:22 CDMX (23 h 25 min) · 8 hechos propios · densidad 0,34
+Ventana 21-sep 08:57 → 22-sep 08:22 CDMX (23 h 25 min) · 1 hecho propio · densidad 0,04
 hechos/hora, cálculo propio. Orden: del más reciente al más antiguo.
-UN SOLO HECHO DEL CORTE ESTÁ FECHADO EL 21-SEP Y NINGUNO EL 22: LOS OTROS SIETE SON RENGLONES DE
-UN ÚNICO BOLETÍN FEDERAL DE LOS DÍAS 18, 19 Y 20, PUBLICADO EL 21 DENTRO DE VENTANA. SUS TOTALES
-NO SON COMPARABLES SIN MÁS CON LOS DE EDICIONES CUYOS HECHOS SÍ OCURRIERON EN VENTANA.
-Las dos recuperaciones del final no entran en el semáforo, el mapa, el radar ni ningún total.
+UN SOLO HECHO DEL CORTE ESTÁ FECHADO EN VENTANA Y NINGUNO EL 22-SEP. LAS ONCE RECUPERACIONES
+PERTENECEN A LA VENTANA DE ARGOS 122 Y QUEDAN FUERA DEL SEMÁFORO, DEL MAPA, DEL RADAR Y DE TODOS
+LOS TOTALES.
 Toque un ARG-ID para ir a su ficha, donde están las fuentes, el nivel de confianza y los
 deslindes.
 
-NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA: TODA CIFRA DE ESTE BLOQUE ES
-CÁLCULO PROPIO DE ARGOS SOBRE LAS FILAS INTEGRADAS. El boletín federal declara 48 personas
-detenidas en 15 entidades en su propio tramo del 18 al 20: ese agregado es del emisor y no se
-suma a las cifras de ARGOS. Estos totales no se reimprimen en ningún otro sitio del cartelón.
+NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA. Un solo hecho propio y ningún
+aseguramiento de armamento atribuible al corte: las once recuperaciones no suman. Estos totales
+no se reimprimen en ningún otro sitio del cartelón.
 
-Cartuchos y cargadores nunca se suman entre sí. Explosivos = las 25 espoletas de Zapopan, que
-son componentes de iniciación. Detenidos = solo los del mismo evento de aseguramiento. Total de
-armas integradas: 33.
+Muertos del único hecho del corte: 2. Muertos de las recuperaciones, que no suman al corte: 7 —2
+en el tianguis de Valle de Chalco, 3 en Tehuantepec y 2 en Tetecala—, cálculo propio.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-09-22 · Hora: 08:22 (CDMX) · Corte: Matutino · ARGOS N.° 123 · USO INSTITUCIONAL
 
 ============================================================================
 
-## CRIMEN ORGANIZADO (I) — LUNES 21 DE SEPTIEMBRE, EL ÚNICO HECHO FECHADO EN VENTANA, Y LOS DOS MAYORES ASEGURAMIENTOS DEL BOLETÍN FEDERAL
+## CRIMEN ORGANIZADO (I) — EL ÚNICO HECHO PROPIO DEL CORTE, Y LOS TRES HOMICIDIOS MÚLTIPLES RECUPERADOS DE LA VENTANA ANTERIOR
 
 ### ESTADO DE MÉXICO · VALLE DE CHALCO — ATAQUE ARMADO EN LA CARRETERA MÉXICO-PUEBLA: DOS MUERTOS, UNO DE ELLOS UN REPARTIDOR ALCANZADO POR UNA BALA PERDIDA [ROJO]
 
 ── HECHO
 
-Lunes 21-sep, «ANTES DE LAS 09:00» — HORA NO FIJADA · carretera federal México-Puebla en
-dirección a Ixtapaluca, a la altura del paradero de autobuses El Tubo Azul, Valle de Chalco
-Solidaridad, Estado de México.
-Sujetos armados persiguen y disparan contra un automóvil negro tipo Charger, que recibe al menos
-tres impactos. Una cobertura describe arma larga sacada por la ventanilla.
-DOS MUERTOS: el conductor del vehículo agredido y un repartidor de una empresa de bebidas, ajeno
-al hecho, alcanzado por una bala perdida; avanzó unos metros hasta una gasolinera, pidió auxilio
-y murió en el lugar.
-Cierre de la carretera con retrasos de hasta media hora · Cero detenidos · Armamento: NO
-ASEGURADO.
-CIFRA CONTRADICHA Y NO ARBITRADA: un portal titula cuatro muertos en dos ataques en el mismo
-municipio. NINGUNA FUENTE INSTITUCIONAL PUBLICÓ CIFRA: NO SE ARBITRA POR MAYORÍA.
+Valle de Chalco Solidaridad, Estado de México, CARRETERA FEDERAL MÉXICO-PUEBLA en dirección a
+IXTAPALUCA, a la altura del paradero de autobuses EL TUBO AZUL, LUNES 21-SEP «ANTES DE LAS
+09:00»: sujetos armados persiguen y disparan contra un automóvil negro tipo CHARGER, que recibe
+AL MENOS TRES IMPACTOS (🔴). DOS MUERTOS: el conductor del vehículo agredido y UN REPARTIDOR DE
+UNA EMPRESA DE BEBIDAS ALCANZADO POR UNA BALA PERDIDA, que avanzó unos metros hasta una
+gasolinera, pidió auxilio y murió en el lugar. Una cobertura describe ARMA LARGA SACADA POR LA
+VENTANILLA. CIERRE DE LA CARRETERA con retrasos de hasta media hora. CERO DETENIDOS y ARMAMENTO
+NO ASEGURADO. ROJO POR DOS AGRAVANTES CONCURRENTES: VÍCTIMAS MÚLTIPLES y VÍCTIMA CIVIL AJENA AL
+HECHO. FRONTERA DE VENTANA — HORA NO FIJADA: la ventana abre el 21-sep a las 08:57 y la fuente
+solo publica «antes de las 09:00»; se integra a la edición que lo ve primero y LA MARCA ES
+PERMANENTE. ES EL ÚNICO HECHO PROPIO DEL CORTE. DESLINDE OBLIGATORIO: NO es ARG-123-REC-003, el
+ataque del DOMINGO 20 en el tianguis de la colonia Santa Cruz del MISMO MUNICIPIO —otro día,
+otro punto y otras víctimas—; los portales que titulan «cuatro muertos» SUMAN LOS DOS HECHOS y
+NO dan una cifra alternativa para éste. Lo aportó el recall nacional del coordinador
 
 ── TRAZABILIDAD
 
-ARG-123-001 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido —cifra de muertos
-contradicha y cero fuentes institucionales— · Fuentes: Institucional 0 · Nacional 4 · Regional 4
-· Abierta 1 · con fecha en la ruta: Heraldo Estado de México, El Mañana, El Gráfico, Seuno
-Noticias, Reporteros en Movimiento · Hecho: 2026-09-21 · Publicación: 2026-09-21 · Consulta:
-2026-09-22 · Estatus: Parcialmente corroborado.
-FRONTERA DE VENTANA — HORA NO FIJADA: la ventana abre el 21-sep a las 08:57 y la fuente solo
-publica «antes de las 09:00». Se integra a la edición que lo ve primero y la marca es
-permanente.
-DESLINDE: ni Valle de Chalco ni El Tubo Azul figuran en el índice, que cubre de ARGOS 91 en
-adelante. No es ARG-123-008, el aseguramiento de Puebla en la misma carretera: otra entidad,
-otra fecha y otra corporación.
-ARMAMENTO: NO ALIMENTA EL CONTEO NACIONAL — NADA FUE ASEGURADO.
-
-### CHIHUAHUA · CIUDAD JUÁREZ — 9,287 CARTUCHOS Y ONCE ARMAS EN UN AUTOBÚS DE PASAJEROS EN EL PUENTE INTERNACIONAL LIBRE–CÓRDOVA [VERDE]
-
-── HECHO
-
-Tramo 18 al 20-sep · Puente Internacional Libre–Córdova, Ciudad Juárez, Chihuahua · Guardia
-Nacional.
-Detenido el conductor de un autobús de pasajeros · 1 DETENIDO.
-Asegurado: 4 ARMAS LARGAS · 7 ARMAS CORTAS · 9,287 CARTUCHOS · cargadores SIN CIFRA.
-Mayor volumen de munición del corte, en un cruce fronterizo y sobre transporte público de
-pasajeros.
-EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: EL HECHO ES DEL TRAMO 18-20-SEP Y EL BOLETÍN FEDERAL
-QUE LO PUBLICA ES DEL 21-SEP, DENTRO DE VENTANA.
-
-── TRAZABILIDAD
-
-ARG-123-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —el emisor no indexó
-su propio boletín y se alcanzó solo por republicadores— · Fuentes: Institucional 1 (Gabinete de
-Seguridad) · Nacional 1 · Regional 3 · con fecha en la ruta: Eleese Noticias · Hecho: tramo
-2026-09-18/20 · Publicación: 2026-09-21 · Consulta: 2026-09-22 · Estatus: Parcialmente
+ARG-123-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido · Fuentes:
+Institucional 0 · Nacional 2 · Regional 7 · Abierta 0 · con fecha en la ruta: Heraldo Estado de
+México · El Mañana · El Gráfico · Seuno Noticias · Reporteros en Movimiento · Hecho: 2026-09-21
+· Hora: antes de las 09:00 — NO FIJADA · Consulta: 2026-09-22 · Estatus: Parcialmente
 corroborado.
-SUSTITUCIÓN ANOTADA: gob.mx NO INDEXÓ EL BOLETÍN. LA CORROBORACIÓN ES DÉBIL POR CONSTRUCCIÓN —
-VARIOS REPUBLICADORES DEL MISMO BOLETÍN NO SON FUENTES INDEPENDIENTES.
-DESLINDE: Ciudad Juárez figura en el índice por el fallo condenatorio pendiente de pena de José
-Manuel E. C.: otro expediente, otra materia.
-Conteo de armamento: ARG-123-ARM-001.
-
-### JALISCO · ZAPOPAN — CAMPAMENTO CLANDESTINO CON 20 ARTEFACTOS EXPLOSIVOS IMPROVISADOS Y 25 ESPOLETAS: EL ÚNICO HALLAZGO CON INICIADORES DEL ARCHIVO RECIENTE [VERDE]
-
-── HECHO
-
-Tramo 18 al 20-sep · Zapopan, Jalisco · Ejército Mexicano.
-Campamento clandestino localizado e inhabilitado.
-Asegurado: 6 ARMAS LARGAS · 20 ARTEFACTOS EXPLOSIVOS IMPROVISADOS · 25 ESPOLETAS PARA AEI ·
-cargadores y cartuchos SIN CIFRA · equipo táctico · 3 radios de comunicación · 4 vehículos · 5
-motocicletas.
-DETENIDOS NO PUBLICADOS: EL EMISOR NO CONSIGNA NINGUNO Y NO SE INFIERE.
-Mayor volumen de AEI del corte. Las espoletas son componentes de iniciación y van en explosivos
-y componentes, no en AEI.
-EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: HECHO DEL TRAMO 18-20-SEP, BOLETÍN DEL 21-SEP.
-
-── TRAZABILIDAD
-
-ARG-123-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —boletín alcanzado
-solo por republicadores— · Fuentes: Institucional 1 (Gabinete de Seguridad) · Regional 4 · con
-fecha en la ruta: Eleese Noticias · Hecho: tramo 2026-09-18/20 · Publicación: 2026-09-21 ·
-Consulta: 2026-09-22 · Estatus: Parcialmente corroborado.
-SUSTITUCIÓN ANOTADA: CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN.
-DESLINDE: Zapopan SÍ figura en el índice —ARG-91-006 (detención de «Lurch»), ARG-101-010 y
-ARG-105-001—: otras fechas, otros hechos y ninguno con AEI.
-Conteo de armamento: ARG-123-ARM-002.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-09-22 · Hora: 08:22 (CDMX) · Corte: Matutino · ARGOS N.° 123 · USO INSTITUCIONAL
 
 ============================================================================
 
-## CRIMEN ORGANIZADO (II) — BOLETÍN FEDERAL DEL 18 AL 20 DE SEPTIEMBRE: BAJA CALIFORNIA, TAMAULIPAS Y DURANGO
-
-### BAJA CALIFORNIA · SAN QUINTÍN — SEIS ARMAS, 366 CARTUCHOS Y LA ÚNICA GRANADA DEL CORTE [VERDE]
-
-── HECHO
-
-Tramo 18 al 20-sep · San Quintín, Baja California · Ejército Mexicano · 1 DETENIDO.
-Asegurado: 4 ARMAS LARGAS · 2 ARMAS CORTAS · 16 CARGADORES · 366 CARTUCHOS · UNA GRANADA · 5
-chalecos tácticos · 2 vehículos.
-GRANADA SIN CLASIFICAR: LA AUTORIDAD SOLO DICE «UNA GRANADA» Y NO SE INFIERE EL TIPO. Es la
-única granada del corte.
-EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: HECHO DEL TRAMO 18-20-SEP, BOLETÍN DEL 21-SEP.
-
-── TRAZABILIDAD
-
-ARG-123-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —boletín alcanzado
-solo por republicadores— · Fuentes: Institucional 1 (Gabinete de Seguridad) · Regional 3 · con
-fecha en la ruta: Eleese Noticias · Hecho: tramo 2026-09-18/20 · Publicación: 2026-09-21 ·
-Consulta: 2026-09-22 · Estatus: Parcialmente corroborado.
-SUSTITUCIÓN ANOTADA: CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN.
-DESLINDE: San Quintín NO figura en el índice, que cubre de ARGOS 91 en adelante.
-Conteo de armamento: ARG-123-ARM-003.
-
-### TAMAULIPAS · REYNOSA — SIETE DETENIDOS, SIETE ARMAS LARGAS Y DOS MIRAS TELESCÓPICAS EN OPERACIÓN CONJUNTA DE EJÉRCITO Y FISCALÍA ESTATAL [VERDE]
-
-── HECHO
-
-Tramo 18 al 20-sep · Reynosa, Tamaulipas · Ejército Mexicano y Fiscalía Estatal, en operación
-conjunta · 7 DETENIDOS.
-Asegurado: 7 ARMAS LARGAS · 4 CARGADORES · 100 CARTUCHOS · 2 vehículos · 2 MIRAS TELESCÓPICAS.
-LAS MIRAS TELESCÓPICAS NO SON CATEGORÍA DE LA TAXONOMÍA: SE REGISTRAN EN RUBRO APARTE Y NO SE
-INTEGRAN AL CONTEO.
-Mayor número de detenidos del corte en un solo evento de aseguramiento.
-EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: HECHO DEL TRAMO 18-20-SEP, BOLETÍN DEL 21-SEP.
-
-── TRAZABILIDAD
-
-ARG-123-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —boletín alcanzado
-solo por republicadores, aunque dos coberturas independientes confirman las cifras— · Fuentes:
-Institucional 1 (Gabinete de Seguridad) · Nacional 1 · Regional 3 · con fecha en la ruta: Eleese
-Noticias, La Región Tamaulipas · Hecho: tramo 2026-09-18/20 · Publicación: 2026-09-21 ·
-Consulta: 2026-09-22 · Estatus: Parcialmente corroborado.
-SUSTITUCIÓN ANOTADA: CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN.
-DESLINDE OBLIGATORIO: Reynosa SÍ figura en el índice —ARG-108-008 (destrucción de 25 vehículos
-blindados, 26-ago) y ARG-117-005 (homicidio doloso en Plaza Sendero, 5-sep)—: otras fechas,
-otros hechos y otras corporaciones.
-Conteo de armamento: ARG-123-ARM-004.
-
-### DURANGO · MUNICIPIO NO ESPECIFICADO — SEIS INMUEBLES CATEADOS, CUATRO DETENIDOS Y DOS DRONES NO ACREDITADOS COMO ARMADOS [VERDE]
-
-── HECHO
-
-Tramo 18 al 20-sep · Durango, MUNICIPIO NO ESPECIFICADO POR EL EMISOR · SSPC, Guardia Nacional,
-Ejército Mexicano y FGR · 4 DETENIDOS.
-Seis inmuebles cateados.
-Asegurado: 2 ARMAS LARGAS · 1 ARMA CORTA · 2 CARGADORES · 40 CARTUCHOS · dosis de metanfetamina
-y diversas drogas · 2 DRONES · una cuatrimoto · 11 vehículos.
-LOS DOS DRONES NO ESTÁN ACREDITADOS COMO ARMADOS: NO ENTRAN EN ARMAMENTO ESPECIAL.
-MUNICIPIO NO VERIFICADO: EL EMISOR NO LO CONSIGNA Y NO SE INFIERE.
-EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: HECHO DEL TRAMO 18-20-SEP, BOLETÍN DEL 21-SEP.
-
-── TRAZABILIDAD
-
-ARG-123-006 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —municipio no
-publicado y boletín alcanzado solo por republicadores— · Fuentes: Institucional 1 (Gabinete de
-Seguridad) · Regional 4 · con fecha en la ruta: Eleese Noticias · Hecho: tramo 2026-09-18/20 ·
-Publicación: 2026-09-21 · Consulta: 2026-09-22 · Estatus: Parcialmente corroborado.
-SUSTITUCIÓN ANOTADA: CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN.
-Conteo de armamento: ARG-123-ARM-005.
+## CRIMEN ORGANIZADO (II) — TETECALA Y LOS CUATRO NARCOLABORATORIOS DE TIERRA CALIENTE
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-09-22 · Hora: 08:22 (CDMX) · Corte: Matutino · ARGOS N.° 123 · USO INSTITUCIONAL
 
 ============================================================================
 
-## CRIMEN ORGANIZADO (III) — TIERRA CALIENTE Y PUEBLA, Y LAS DOS RECUPERACIONES DE LA VENTANA DE ARGOS 122
-
-### GUERRERO Y MICHOACÁN · ZIRÁNDARO Y CARÁCUARO — 27 REACTORES, 54 TANQUES DE GAS Y MÁS DE DIEZ TONELADAS DE PRECURSORES EN UN SOLO EVENTO EN DOS ENTIDADES [VERDE]
-
-── HECHO
-
-Tramo 18 al 20-sep · Zirándaro, Guerrero y Carácuaro, Michoacán, corredor de Tierra Caliente ·
-Ejército Mexicano, SSPC y Guardia Nacional.
-Asegurado: MÁS DE 10 TONELADAS DE PRECURSORES Y SUSTANCIAS QUÍMICAS · 27 REACTORES · 54 TANQUES
-DE GAS · demás equipo de producción de droga sintética.
-«MÁS DE 10 TONELADAS» NO ES CIFRA: NO SE INTEGRA A NINGÚN TOTAL NUMÉRICO.
-CERO ARMAMENTO: NO ALIMENTA EL CONTEO NACIONAL. SE REGISTRA COMO EVENTO CUALITATIVO. · DETENIDOS
-NO PUBLICADOS.
-Los 27 reactores son infraestructura de producción a escala industrial, no equipo de laboratorio
-artesanal.
-EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: HECHO DEL TRAMO 18-20-SEP, BOLETÍN DEL 21-SEP.
-
-── TRAZABILIDAD
-
-ARG-123-007 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —tonelaje sin cifra
-exacta y boletín alcanzado solo por republicadores— · Fuentes: Institucional 1 (Gabinete de
-Seguridad) · Nacional 1 · Regional 3 · con fecha en la ruta: Eleese Noticias · Hecho: tramo
-2026-09-18/20 · Publicación: 2026-09-21 · Consulta: 2026-09-22 · Estatus: Parcialmente
-corroborado.
-UN SOLO EVENTO EN DOS ENTIDADES: SE ASIGNA A GUERRERO EN EL MAPA Y EL RADAR POR CONVENCIÓN DE
-ENTIDAD ÚNICA. MICHOACÁN QUEDA DECLARADO EN EL HECHO Y NO SE COLOREA, PARA NO CONTAR DOS VECES
-UN SOLO EVENTO.
-SUSTITUCIÓN ANOTADA: CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN.
-DESLINDE: ni Zirándaro ni Carácuaro figuran en el índice, que cubre de ARGOS 91 en adelante.
-
-### PUEBLA · CARRETERA MÉXICO-PUEBLA — CARTUCHOS Y UN CARGADOR SIN ARMA DE FUEGO: MARINA Y POLICÍA ESTATAL [VERDE]
-
-── HECHO
-
-Tramo 18 al 20-sep · carretera México-Puebla, Puebla, MUNICIPIO NO ESPECIFICADO POR EL EMISOR ·
-Secretaría de Marina y Policía Estatal · 1 DETENIDO.
-Asegurado: cartuchos SIN CIFRA · 1 CARGADOR · dosis de metanfetaminas, cocaína, marihuana y
-piedra · un vehículo · dinero en efectivo, sin monto.
-SIN ARMA DE FUEGO ASEGURADA: MUNICIÓN Y CARGADOR SIN ARMA.
-CARTUCHOS SIN CIFRA: CANTIDAD NO DETERMINADA, NO SE INTEGRA AL TOTAL NUMÉRICO.
-EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: HECHO DEL TRAMO 18-20-SEP, BOLETÍN DEL 21-SEP.
-
-── TRAZABILIDAD
-
-ARG-123-008 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —municipio no
-publicado, cartuchos sin cifra y boletín alcanzado solo por republicadores— · Fuentes:
-Institucional 1 (Gabinete de Seguridad) · Regional 3 · con fecha en la ruta: Eleese Noticias ·
-Hecho: tramo 2026-09-18/20 · Publicación: 2026-09-21 · Consulta: 2026-09-22 · Estatus:
-Parcialmente corroborado.
-DESLINDE OBLIGATORIO: NO es ARG-123-001, el ataque armado del 21-sep en la misma carretera
-México-Puebla pero del lado del Estado de México —otra entidad, otra fecha, otro hecho y otra
-corporación—; NI es ARG-121-004, los 48,600 litros de gas LP del 16-sep en el tramo El Caracol.
-Conteo de armamento: ARG-123-ARM-006.
+## CRIMEN ORGANIZADO (III) — RENGLONES DEL BOLETÍN FEDERAL DEL 18, 19 Y 20: CHIHUAHUA, JALISCO Y BAJA CALIFORNIA
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-09-22 · Hora: 08:22 (CDMX) · Corte: Matutino · ARGOS N.° 123 · USO INSTITUCIONAL
 
 ============================================================================
 
-## CRIMEN ORGANIZADO (IV) — SEGUNDA RECUPERACIÓN DE LA VENTANA DE ARGOS 122
+## CRIMEN ORGANIZADO (IV) — RENGLONES DEL BOLETÍN FEDERAL: TAMAULIPAS, DURANGO Y PUEBLA
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-09-22 · Hora: 08:22 (CDMX) · Corte: Matutino · ARGOS N.° 123 · USO INSTITUCIONAL
@@ -304,50 +127,53 @@ Conteo de armamento: ARG-123-ARM-006.
 
 ## CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS
 
-  · Armas cortas: 10 — 7 de Ciudad Juárez, 2 de San Quintín y 1 de Durango · igual que las 10 del corte anterior · NINGUNA CON CALIBRE NI NÚMERO DE SERIE PUBLICADO
+  · Armas cortas: 0 — NINGÚN ARMA CORTA ASEGURADA DENTRO DE LA VENTANA · las 10 del registro —7 de Ciudad Juárez, 2 de San Quintín, 1 de Durango— son de la ventana de ARGOS 122 y no suman
 
-  · Armas largas: 23 — 7 de Reynosa, 6 de Zapopan, 4 de Ciudad Juárez, 4 de San Quintín y 2 de Durango · frente a 28 del corte anterior · NINGUNA CON CALIBRE NI SERIE · total de armas integradas: 33
+  · Armas largas: 0 — NINGÚN ARMA LARGA ASEGURADA DENTRO DE LA VENTANA · las 25 del registro —7 de Reynosa, 6 de Zapopan, 4 de Ciudad Juárez, 4 de San Quintín, 2 de Durango y 2 de Tamazula— son de la ventana anterior
 
-  · Sin categoría: 0 — el emisor federal clasificó como corta o larga todas las armas del corte · frente a 1 de 39 en ARGOS 122 · un boletín con desglose por categoría elimina esta casilla
+  · Sin categoría: 0 — el emisor federal clasificó como corta o larga todas las armas del registro · un boletín con desglose por categoría elimina esta casilla
 
-  · Cartuchos: 9,793 — 9,287 de Ciudad Juárez, 366 de San Quintín, 100 de Reynosa y 40 de Durango · SETENTA Y NUEVE VECES LOS 124 DEL CORTE ANTERIOR · el 94,8 % procede de un solo aseguramiento en un cruce fronterizo, cálculo propio · ZAPOPAN Y PUEBLA PUBLICAN CARTUCHOS SIN CIFRA: NO SE INTEGRAN
+  · Cartuchos: 0 — NINGÚN CARTUCHO ASEGURADO DENTRO DE LA VENTANA · los 9,793 del registro son de la ventana anterior, y el 94,8 % de ellos procede de un solo autobús de pasajeros en Ciudad Juárez, cálculo propio
 
-  · Cargadores: 23 — 16 de San Quintín, 4 de Reynosa, 2 de Durango y 1 de Puebla · NUNCA SE SUMAN CON LOS CARTUCHOS · frente a 131 del corte anterior · CIUDAD JUÁREZ Y ZAPOPAN PUBLICAN CARGADORES SIN CIFRA
+  · Cargadores: 0 — NINGÚN CARGADOR ASEGURADO DENTRO DE LA VENTANA · los 23 del registro son de la ventana anterior · NUNCA SE SUMAN CON LOS CARTUCHOS
 
-  · Granadas: 1 — la de San Quintín, Baja California · SIN CLASIFICAR: LA AUTORIDAD SOLO DICE «UNA GRANADA» Y NO SE INFIERE EL TIPO · frente a 0 en el corte anterior
+  · Granadas: 0 — NINGUNA GRANADA DENTRO DE LA VENTANA · la única del registro es la de San Quintín, sin clasificar, de la ventana anterior
 
-  · AEI: 20 — los 20 de Zapopan, Jalisco, en un campamento clandestino · frente a 40 del corte anterior · PRIMER DEPÓSITO DE AEI DEL ARCHIVO RECIENTE FUERA DEL CORREDOR SINALOA-DURANGO
+  · AEI: 0 — NINGÚN ARTEFACTO EXPLOSIVO IMPROVISADO DENTRO DE LA VENTANA · los 20 del registro son los de Zapopan, primer depósito del archivo reciente fuera del corredor Sinaloa-Durango, de la ventana anterior
 
-  · Explosivos: 25 — las 25 ESPOLETAS de Zapopan, que son componentes de iniciación · frente a 0 en el corte anterior · PRIMERA CIFRA DE ESTA CATEGORÍA EN VARIAS EDICIONES: 25 INICIADORES PARA 20 ARTEFACTOS SUGIERE MANUFACTURA, NO SOLO POSESIÓN — REQUIERE VALIDACIÓN
+  · Explosivos: 0 — NINGÚN EXPLOSIVO NI COMPONENTE DENTRO DE LA VENTANA · las 25 espoletas del registro son de Zapopan · 25 iniciadores para 20 artefactos sugiere manufactura y no solo posesión, hipótesis que requiere validación
 
-  · Armamento especial: 0 — NINGUNA PIEZA CAL. .50, LANZAGRANADAS, AMETRALLADORA PESADA NI DRON ARMADO EN LAS 23 H 25 MIN · frente a 4 del corte anterior · los 2 drones de Durango NO están acreditados como armados y no entran aquí
+  · Armamento especial: 0 — NINGUNA PIEZA CAL. .50, LANZAGRANADAS, AMETRALLADORA PESADA NI DRON ARMADO, ni en la ventana ni en el registro · los 2 drones de Durango NO están acreditados como armados
 
-  · Detenidos: 14 — 7 de Reynosa, 4 de Durango, 1 de Ciudad Juárez, 1 de San Quintín y 1 de Puebla · SOLO EN EVENTOS CON ASEGURAMIENTO DE ARMAMENTO · ZAPOPAN NO PUBLICA DETENIDOS: NO SE INFIEREN · el emisor declara 48 detenidos en 15 entidades en su propio tramo: ese agregado es suyo y NO se suma
+  · Detenidos: 0 — NINGUNA DETENCIÓN CON ASEGURAMIENTO DE ARMAMENTO DENTRO DE LA VENTANA · los 17 del registro —7 Reynosa, 4 Durango, 3 Tamazula, 1 Ciudad Juárez, 1 San Quintín, 1 Puebla— son de la ventana anterior · Zapopan no publica detenidos y no se infieren
 
-Seis eventos contabilizados en seis entidades · un evento cualitativo sin cantidad —Zirándaro y
-Carácuaro, sin armamento—. El total nacional del corte está en la página de panorama y no se
-reimprime aquí. LOS SEIS EVENTOS PROCEDEN DEL MISMO BOLETÍN FEDERAL DEL 18, 19 Y 20-SEP,
-PUBLICADO EL 21 DENTRO DE VENTANA, Y VAN MARCADOS «EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE».
-Todas las cifras de este bloque son cálculo propio de ARGOS sobre las filas integradas.
+SIN ASEGURAMIENTO INTEGRABLE DURANTE EL CORTE. Cero eventos contabilizados y cero entidades con
+aseguramiento dentro de la ventana. Los siete eventos del registro pertenecen a la ventana de
+ARGOS 122 —boletín federal del 18, 19 y 20-sep publicado el 21, que no desglosa qué renglón
+corresponde a qué día— y por esa razón se documentan con su ARG-ID y su desglose, pero no suman
+a ningún total del corte. El total nacional está en la página de panorama y no se reimprime
+aquí. Las categorías en cero se muestran igualmente: la ausencia es dato.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-09-22 · Hora: 08:22 (CDMX) · Corte: Matutino · ARGOS N.° 123 · USO INSTITUCIONAL
 
 ============================================================================
 
-## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
+## REGISTRO DE ARMAMENTO POR EVENTO — VENTANA DE ARGOS 122, FUERA DE LOS TOTALES DEL CORTE
 
   ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Fuente primaria | Corrob. | Confianza
-  ARG-123-ARM-001 | Chihuahua | Ciudad Juárez · Puente Int. · Libre–Córdova | tramo · 2026-09-18/20 · EVENTO ANTERIOR · PUBLICADO EN CORTE | 7 | 4 · sin calibre · ni serie | 0 | 9,287 | 0 · sin cifra | 0 | 0 | 0 | 1 · conductor de · autobús de · pasajeros | Guardia · Nacional | Gabinete de Seguridad · por republicador: · gob.mx no indexó | 1 nacional + 3 regionales · 1 con fecha en la ruta | Medio
-  ARG-123-ARM-002 | Jalisco | Zapopan · campamento · clandestino | tramo · 2026-09-18/20 · EVENTO ANTERIOR · PUBLICADO EN CORTE | 0 | 6 · sin calibre · ni serie | 0 | 0 · sin cifra | 0 · sin cifra | 0 | 20 | 25 · ESPOLETAS · para AEI | 0 · NO PUBLICADOS | Ejército · Mexicano | Gabinete de Seguridad · por republicador | 4 regionales · 1 con fecha en la ruta | Medio
-  ARG-123-ARM-003 | Baja California | San Quintín | tramo · 2026-09-18/20 · EVENTO ANTERIOR · PUBLICADO EN CORTE | 2 | 4 · sin calibre · ni serie | 0 | 366 | 16 | 1 · SIN CLASIFICAR: · no se infiere · el tipo | 0 | 0 | 1 | Ejército · Mexicano | Gabinete de Seguridad · por republicador | 3 regionales · 1 con fecha en la ruta | Medio
-  ARG-123-ARM-004 | Tamaulipas | Reynosa | tramo · 2026-09-18/20 · EVENTO ANTERIOR · PUBLICADO EN CORTE | 0 | 7 · sin calibre · ni serie | 0 | 100 | 4 | 0 | 0 | 0 | 7 | Ejército Mexicano · + Fiscalía Estatal | Gabinete de Seguridad · por republicador | 1 nacional + 3 regionales · 2 con fecha en la ruta | Medio · 2 MIRAS · TELESCÓPICAS · en rubro aparte
-  ARG-123-ARM-005 | Durango | MUNICIPIO NO · ESPECIFICADO | tramo · 2026-09-18/20 · EVENTO ANTERIOR · PUBLICADO EN CORTE | 1 | 2 · sin calibre · ni serie | 0 | 40 | 2 | 0 | 0 | 0 | 4 · seis inmuebles · cateados | SSPC + GN · + Ejército + FGR | Gabinete de Seguridad · por republicador | 4 regionales · 1 con fecha en la ruta | Medio · 2 DRONES NO · ACREDITADOS · COMO ARMADOS
-  ARG-123-ARM-006 | Puebla | carretera · México-Puebla · MUNICIPIO NO · ESPECIFICADO | tramo · 2026-09-18/20 · EVENTO ANTERIOR · PUBLICADO EN CORTE | 0 | 0 · NINGÚN ARMA · ASEGURADA | 0 | 0 · sin cifra | 1 | 0 | 0 | 0 | 1 | SEMAR · + Policía Estatal | Gabinete de Seguridad · por republicador | 3 regionales · 1 con fecha en la ruta | Medio · MUNICIÓN Y · CARGADOR · SIN ARMA
+  ARG-123-ARM-001 | Chihuahua | Ciudad Juárez · Puente Int. · Libre–Córdova | tramo · 2026-09-18/20 · VENTANA ARGOS 122 · NO INTEGRA | 7 | 4 | 0 | 9,287 | 0 · sin cifra | 0 | 0 | 0 | 1 | Guardia · Nacional | Gabinete de Seguridad · por republicador: · gob.mx no indexó | 1 nacional + 4 regionales | Medio
+  ARG-123-ARM-002 | Jalisco | Zapopan · campamento · clandestino | tramo · 2026-09-18/20 · VENTANA ARGOS 122 · NO INTEGRA | 0 | 6 | 0 | 0 · sin cifra | 0 · sin cifra | 0 | 20 | 25 · ESPOLETAS | 0 · NO PUBLICADOS | Ejército · Mexicano | Gabinete de Seguridad · por republicador: · gob.mx no indexó | 4 regionales | Medio
+  ARG-123-ARM-003 | Baja California | San Quintín | tramo · 2026-09-18/20 · VENTANA ARGOS 122 · NO INTEGRA | 2 | 4 | 0 | 366 | 16 | 1 · SIN CLASIFICAR | 0 | 0 | 1 | Ejército · Mexicano | Gabinete de Seguridad · por republicador: · gob.mx no indexó | 4 regionales | Medio
+  ARG-123-ARM-004 | Tamaulipas | Reynosa | tramo · 2026-09-18/20 · VENTANA ARGOS 122 · NO INTEGRA | 0 | 7 | 0 | 100 | 4 | 0 | 0 | 0 | 7 | Ejército · + Fiscalía Estatal | Gabinete de Seguridad · por republicador: · gob.mx no indexó | 1 nacional + 4 regionales | Medio
+  ARG-123-ARM-005 | Durango | MUNICIPIO NO · ESPECIFICADO | tramo · 2026-09-18/20 · VENTANA ARGOS 122 · NO INTEGRA | 1 | 2 | 0 | 40 | 2 | 0 | 0 | 0 | 4 | SSPC + GN · + Ejército + FGR | Gabinete de Seguridad · por republicador: · gob.mx no indexó | 4 regionales | Medio
+  ARG-123-ARM-006 | Durango | Tamazula | tramo · 2026-09-18/20 · VENTANA ARGOS 122 · NO INTEGRA | 1 | 2 | 0 | 0 · no publicados | 0 · sin cifra | 0 | 0 | 0 | 3 | Ejército + GN · + SSPC | Gabinete de Seguridad · por republicador: · gob.mx no indexó | 1 nacional + 3 regionales | Medio
+  ARG-123-ARM-007 | Puebla | carretera · México-Puebla · MUNICIPIO NO · ESPECIFICADO | tramo · 2026-09-18/20 · VENTANA ARGOS 122 · NO INTEGRA | 0 | 0 · NINGÚN ARMA | 0 | 0 · sin cifra | 1 | 0 | 0 | 0 | 1 | SEMAR · + Policía Estatal | Gabinete de Seguridad · por republicador: · gob.mx no indexó | 3 regionales | Medio
 
-Lectura regional —cálculo propio—: Noroeste 3 eventos (Ciudad Juárez, San Quintín, Durango) ·
-Noreste 1 (Reynosa) · Occidente 1 (Zapopan) · Centro 1 (Puebla) · Golfo 0 · Sureste 0, salvo el
-evento cualitativo de Zirándaro.
+Suma del registro, que NO es total del corte —cálculo propio—: 10 cortas · 25 largas · 9,793
+cartuchos · 23 cargadores · 1 granada · 20 AEI · 25 espoletas · 0 armamento especial · 17
+detenidos en 6 entidades. ESTAS CIFRAS PERTENECEN A LA VENTANA DE ARGOS 122 Y NO SE SUMAN A LAS
+DE NINGUNA EDICIÓN.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-09-22 · Hora: 08:22 (CDMX) · Corte: Matutino · ARGOS N.° 123 · USO INSTITUCIONAL
@@ -386,7 +212,7 @@ motivo por el que no se integran.
   Veracruz · agregado estatal | Boletín del 21-sep: «26 sentencias condenatorias y 41 vinculaciones a proceso» en un fin de semana | no desglosada | FGE Veracruz | AGREGADO SIN DESGLOSE INDIVIDUAL · sin nombre, delito, pena ni causa penal caso por caso no es contable ni auditable | No confirmado
   Michoacán · Morelia | Francisco Javier T. · secuestro y homicidio agravado, hecho del 5-jun-2023 | 93 años 9 meses | FGE Michoacán | PENDIENTE DE CONFIRMACIÓN OFICIAL · seis republicadores del 17-sep, ninguno del dominio de la FGE; fuera de ventana | Bajo
   Estado de México · Temoaya · Coacalco · Hueypoxtla | Tres casos distintos · homicidio | 125 años · 36 a 3 m · 21 a 10 m 15 d | FGJEM | SEXTA VERIFICACIÓN SIN BOLETÍN PRIMARIO · publicaciones del 11 al 17-sep, todas fuera de ventana · Coacalco además POSIBLE CASO HOMÓNIMO | Bajo
-  San Luis Potosí · La Pila | Norma «N» · ingreso de 60 tabletas de clonazepam a un penal | 4 años y multa de 84 UMA (9,503.76 pesos) | FGR · FECOR | PENDIENTE DE CONFIRMACIÓN OFICIAL · dos fuentes regionales, ninguna institucional; publicación del 19-sep, fuera de ventana | Bajo
+  San Luis Potosí · La Pila | Norma «N» · ingreso de 60 tabletas de clonazepam a un penal | 4 años y multa de 84 UMA · CONVERSIÓN A PESOS RETIRADA: la fuente la calcula con el valor de UMA de 2025, no el vigente | FGR · FECOR | PENDIENTE DE CONFIRMACIÓN OFICIAL · dos fuentes regionales, ninguna institucional; publicación del 19-sep, fuera de ventana | Bajo
   Chihuahua · Ciudad Juárez | José Manuel E. C. · homicidio calificado y tentativa, hecho del 1-sep-2025 | FALLO DICTADO, PENA NO PUBLICADA | FGE Chihuahua | SIN RESULTADO INDEXADO EN VENTANA — TERCERA EDICIÓN · audiencia de individualización fijada para el 17-sep sin resultado publicado. NO SE AFIRMA QUE SE POSPUSIERA | No confirmado
 
   Renglón | Resultado
@@ -408,12 +234,13 @@ motivo por el que no se integran.
 ## VALORACIÓN ARGOS, CONCLUSIONES E INDICADORES
 
 SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE. gabinetedeseguridad.gob.mx/resultados/ —
-decimotercera verificación consecutiva sin cifra utilizable: ninguna cifra suya se usa en este
-cartelón. SESNSP, INEGI y FGR: sin publicación nueva dentro de la ventana.
+decimotercera verificación consecutiva sin cifra utilizable. SESNSP, INEGI y FGR: sin
+publicación nueva dentro de la ventana.
 El único agregado federal del periodo es el boletín de acciones relevantes del 18, 19 y 20-sep,
-publicado el 21, en formato de tres días y NO INDEXADO POR SU EMISOR: ALCANZADO SOLO POR
-REPUBLICADORES. Declara 48 personas detenidas en 15 entidades en su propio tramo —agregado del
-emisor, no de ARGOS—.
+publicado el 21, en formato de tres días, NO INDEXADO POR SU EMISOR Y ALCANZADO SOLO POR
+REPUBLICADORES, y SIN DESGLOSE DE QUÉ RENGLÓN CORRESPONDE A QUÉ DÍA: por eso ninguno de sus
+renglones se integra a los totales de este corte. Declara 48 personas detenidas en 15 entidades
+en su propio tramo —agregado del emisor, no de ARGOS—.
 Toda cifra de este cartelón sin emisor nombrado es cálculo propio de ARGOS.
 
 ----------------------------------------------------------------------------

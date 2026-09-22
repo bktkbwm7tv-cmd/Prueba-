@@ -84,40 +84,71 @@ por "boletín del 21" es **la fecha de publicación del agregado**, no un bolet�
 
 ---
 
-## 5. ⚠️ EL ARBITRAJE ESTRUCTURAL DE ESTA EDICIÓN: qué hacer con un boletín de días anteriores publicado en ventana
+## 5. ⚠️ EL ARBITRAJE ESTRUCTURAL: el coordinador se equivocó y `editor-duplicidad` lo corrigió
 
-**Es la decisión más discutible del corte y se declara expresamente.**
+**Es la decisión que más cambió en esta edición, y el coordinador la perdió. Se declara entera.**
 
-Los hechos del boletín son del **18, 19 y 20-sep** —dentro de la ventana de ARGOS 122—. Su
-**publicación** es del **21-sep**, dentro de la mía. **ARGOS 122 cerró sin él** (documentado: su
-archivo de fuentes registra que su único agregado fue el del 17-sep, de un solo día).
+### 5.1 Lo que el borrador hizo
 
-**Tres de los seis barridos —Centro, Noreste y Golfo— recomendaron independientemente NO integrarlo**,
-por fecha de hecho fuera de ventana. **El coordinador decidió lo contrario**, por cuatro razones:
+Los hechos del boletín federal son del **18, 19 y 20-sep** —dentro de la ventana de ARGOS 122—; su
+**publicación** es del **21**, dentro de la mía. **ARGOS 122 cerró sin él.** El coordinador los integró
+**como siete hechos propios verdes**, alimentando semáforo, mapa, radar y todos los totales, invocando
+la regla «Periodo de corte» del módulo de armamento y un precedente: que ARGOS 122 integró los
+renglones de su boletín del 17-sep.
 
-1. `CLAUDE.md`, módulo de armamento, «Periodo de corte», **prevé expresamente este caso y manda
-   registrarlo marcado**: *«Un decomiso ocurrido antes pero publicado hoy se marca `Evento anterior
-   publicado durante el corte`, sin mezclarlo con hechos de las últimas 48 horas»*. **La regla no dice
-   descartar: dice marcar.**
-2. **ARGOS 122 cerró sin estos datos.** Si no se integran, **quince entidades de armamento se pierden
-   del archivo para siempre**, porque ARGOS 124 abre donde éste cierra.
-3. **Son verdes.** No inflan el nivel de riesgo nacional, que es lo que la metodología del semáforo
-   protege. La regla `-REC-` está escrita para **hechos de alto impacto** que distorsionarían el
-   semáforo.
-4. **Precedente del archivo**: ARGOS 122 integró como hechos propios los renglones de su boletín
-   federal del 17-sep, con marca de reserva.
+**Tres de los seis barridos —Centro, Noreste y Golfo— recomendaron independientemente NO integrarlo.**
+El coordinador decidió en contra.
 
-**Pero la asimetría se declara y es deliberada:**
+### 5.2 Por qué el coordinador se equivocó
 
-| Tipo de hecho de la ventana anterior | Tratamiento | Por qué |
+`editor-duplicidad` opuso **dos precedentes del propio archivo que el coordinador no había citado**, y
+**los dos se verificaron ciertos**:
+
+1. ⚠️ **ARGOS 121 frente al boletín federal del 14, 15 y 16-sep.** `reports/_pendientes.md` lo registra
+   literalmente: ese boletín *«apareció dentro de esta ventana»*, *«cubre tres días que pertenecen casi
+   enteros a la ventana de ARGOS 120»*, **el emisor no desglosa qué renglón es de qué día**, y por eso
+   **«ningún renglón se integró a los totales de ARGOS 121»**. **Es el mismo supuesto de hecho,
+   resuelto en sentido contrario.**
+2. ⚠️ **`ARG-122-REC-002` (Angamacutiro).** Un hecho **VERDE** que el `editor-duplicidad` de ARGOS 122
+   reclasificó a `-REC-` **por el solo criterio de ventana de origen**. **Derriba la tercera razón del
+   coordinador**, que sostenía que el mecanismo `-REC-` está reservado a hechos rojos. **No lo está.**
+
+Y el precedente que el coordinador **sí** citó —el boletín del 17-sep en ARGOS 122— **es distinguible
+y no sostiene lo que se le hizo decir**: el 17-sep es **el primer día de la propia ventana de ARGOS
+122**, que abre a las 17:36 de ese mismo día, y sus renglones llevan `FRONTERA DE VENTANA`, no
+«evento anterior publicado durante el corte». **Es un caso de frontera, no de hecho íntegramente
+anterior.** El coordinador citó el precedente que le favorecía y no buscó el que le contradecía.
+
+⚠️ **Y la razón decisiva estaba en el propio borrador, confesada sin verla**: cada ficha fechaba su
+hecho como **«tramo 2026-09-18/20»**. **Eso no es una fecha: es la declaración de que no se sabe cuál
+es.** El emisor no desglosa por día, exactamente como en el caso de ARGOS 121. **Un hecho cuya fecha no
+puede fijarse dentro de la ventana no puede contarse en los totales de la ventana.**
+
+### 5.3 Lo aplicado
+
+**`ARG-123-002` a `ARG-123-008` se reclasifican a `-REC-`**, con ventana de origen ARGOS 122, **fuera
+del semáforo, del mapa, del radar y de todos los totales**. Efecto:
+
+| Renglón | Borrador | Publicado |
 |---|---|---|
-| **Verde institucional publicado en ventana** | **Hecho del corte**, marcado `EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE`, **alimenta los totales** | No altera el riesgo nacional; perderlo vacía el módulo |
-| **Rojo de alto impacto ocurrido en ventana anterior** | **`-REC-`**, fuera del semáforo, del mapa, del radar y de **todos** los totales | Contaminaría la medición del riesgo |
+| **Hechos propios** | 8 | **1** |
+| **Semáforo** | 1🔴 / 0🟡 / 7🟢 | **1🔴 / 0🟡 / 0🟢** |
+| **Recuperaciones** | 2 | **11** |
+| **Densidad** | 0,34 | **0,04** |
+| **Armas cortas / largas** | 10 / 23 | **0 / 0** |
+| **Cartuchos / cargadores** | 9,793 / 23 | **0 / 0** |
+| **Granadas / AEI / explosivos** | 1 / 20 / 25 | **0 / 0 / 0** |
+| **Detenidos** | 14 | **0** |
+| **Entidades con aseguramiento** | 6 | **0** |
 
-⚠️ **Consecuencia que el cartelón declara en su panorama y en su Valoración**: **siete de los ocho
-hechos propios proceden de un solo boletín de días anteriores**, y por tanto **los totales de ARGOS 123
-no son comparables sin más con los de ediciones cuyos hechos sí ocurrieron en ventana**. La densidad de
-**0,34 hechos/hora** —la más alta de la serie— **mide publicación, no violencia**.
+**El módulo de armamento se cierra en `SIN ASEGURAMIENTO INTEGRABLE DURANTE EL CORTE`**, y las cifras
+**no se pierden**: viven en el **registro de armamento por evento**, con su ARG-ID, su desglose y la
+marca expresa de que pertenecen a la ventana de ARGOS 122 y no suman.
+
+**Lección de método, que es la que vale para ARGOS 124**: el coordinador debe **buscar el precedente
+que le contradice, no solo el que le respalda**. Cuando tres de seis equipos coinciden en contra de su
+criterio, **eso es dato**, no ruido. Y **un control con mejor argumento se acata**: un arbitraje que no
+puede perderse no es arbitraje.
 
 ---
 
@@ -331,6 +362,83 @@ resumen del buscador.
 
 ---
 
-## 15. Los dos controles editoriales
+## 15. Los dos controles editoriales — ejecutados, y los dos devolvieron hallazgos reales
 
-*(Se completa tras su ejecución — ver apartado siguiente.)*
+⚠️ **ARGOS 121, 122 y 123 los ejecutaron y los seis pases devolvieron `CORREGIR ANTES DE PUBLICAR`
+con hallazgos reales. La racha se mantiene, y esta vez uno de ellos cambió la edición entera.**
+
+### 15.1 `editor-duplicidad` — el hallazgo estructural
+
+- ⚠️ **Reclasificación de siete hechos a `-REC-`** — ver apartado 5. **El hallazgo más grande que un
+  control ha producido en la serie.**
+- ⚠️ **DESLINDE FALSO en `ARG-123-002`**: afirmaba que *«Ciudad Juárez figura en el índice por el
+  fallo condenatorio de José Manuel E. C.»*. **Falso: ese caso NO está en el índice**, es un
+  **candidato no integrado** del propio corte. **Es el mismo tipo de error que este control detuvo en
+  ARGOS 122.** Corregido en la ficha, ahora `ARG-123-REC-004`.
+- **Reimpresión de «total de armas integradas: 33»** en la tarjeta de armas largas, pese a que el
+  propio módulo declaraba no reimprimir totales. **Resuelto al vaciar los totales.**
+- **Falta de línea de deslinde en la ficha de Durango.** **Corregido**: ahora deslinda expresamente
+  contra Tamazula, contra `ARG-119-010` y contra `ARG-122-005`/`-009`.
+- ⚠️ **DEFECTO TÉCNICO REAL — el mapa pintaba `fill="undefined"`.** `SEVERITY_COLOR["rec"]` no existía,
+  de modo que **Morelos y Oaxaca se pintaban con un valor SVG inválido** y su tooltip decía
+  «Nivel: undefined» — **violando literalmente el texto de sus propias fichas** («fuera del mapa») y la
+  regla de `CLAUDE.md` de que el mapa nunca se genera con colores ficticios. El radar, además,
+  **dibujaba las recuperaciones como ecos clicables**.
+  **Corregido de raíz, no parcheado**: se definieron `SEVERITY_COLOR.rec` y `SEVERITY_LABEL.rec`, y
+  mapa y radar del corte reciben ahora `EVENTOS_CORTE`, un arreglo derivado que excluye las
+  recuperaciones. **Y el validador comprueba las dos cosas a partir de ahora.**
+- ✅ Verificó que **Iztapalapa, Tempoal y Puerto Peñasco** —los tres que el coordinador ya había
+  retirado— **no reaparecen** en ninguna de las tres versiones.
+- ✅ Verificó **ciertos** los deslindes de Tetecala/Mazatepec, Tehuantepec/Zanatepec y Amuzgos,
+  Zapopan, Reynosa y Puebla/El Caracol.
+
+### 15.2 `procedencia-cifras` — cifras, y dos eventos que faltaban
+
+- ⚠️ **COMPARACIONES CONSTRUIDAS SOBRE CIFRAS QUE LA PROPIA EDICIÓN YA HABÍA CORREGIDO.** Las tarjetas
+  decían «igual que las 10 del corte anterior», «frente a 28», «79 veces los 124», «frente a 0
+  granadas», «frente a 4» — **cuando este mismo archivo de fuentes documenta que esos valores son 9,
+  35, 424, 8 y 5**. **El cartelón se contradecía con su propio archivo de fuentes.**
+  **Corregido retirando las comparaciones**, no actualizándolas: la edición ya declara que sus totales
+  no son comparables, y publicar comparaciones lo contradecía.
+- ⚠️⚠️ **UN EVENTO ENTERO FALTABA: TAMAZULA, DURANGO.** El mismo boletín traía **un segundo renglón de
+  Durango** —**3 detenidos, 2 armas largas, 1 corta, cargadores sin cifra, equipo táctico**— que el
+  borrador **no había fichado**. **Verificado por el coordinador**: existe, es distinto del cateo de
+  seis inmuebles, y la cobertura regional suma los dos (4 + 3 = «siete detenidos el fin de semana»),
+  **suma que es de la fuente y no de ARGOS**. Añadido como `ARG-123-REC-009` / `ARG-123-ARM-006`.
+- ⚠️⚠️ **ZIRÁNDARO ERA AMARILLO, NO VERDE, Y TENÍA TRES MUNICIPIOS, NO DOS.** **Verificado por el
+  coordinador**: son **cuatro laboratorios** en **Zirándaro y Coahuayutla de José María Izazaga
+  (Guerrero) y Carácuaro (Michoacán)**, y **durante los trabajos el personal federal fue agredido con
+  disparos**. Por la regla de **quién inicia** —el Estado ejecuta y es repelido— **el hecho es 🟡**.
+  Y aparecieron **cifras que el borrador no tenía**: **45 ollas, 57 tinas, 6 contenedores de 1,000
+  litros y un procesador industrial**.
+- ⚠️ **«CIFRA CONTRADICHA» MAL PLANTEADA EN VALLE DE CHALCO.** No eran dos cifras del mismo hecho:
+  eran **dos ataques distintos** —el **domingo 20** en el tianguis de la colonia Santa Cruz (2 muertos)
+  y el **lunes 21** en la carretera (2 muertos)—, y los portales que titulan «cuatro muertos» **suman
+  ambos**. **Corregido**: la etiqueta de contradicción se retira y se sustituye por un **deslinde entre
+  los dos hechos**. ⚠️ **Y el del domingo resultó ser un hecho que ARGOS 122 no publicó**: se añade
+  como `ARG-123-REC-003`, **un cuarto homicidio múltiple recuperado**.
+- ⚠️ **UMA mal convertida.** «84 UMA (9,503.76 pesos)» corresponde a la **UMA de 2025** (113.14), no a
+  la vigente en septiembre de 2026 (117.31 → 9,854.04). **Corregido retirando la conversión y dejando
+  «84 UMA»**: la cifra en pesos es de la fuente, no de ARGOS, y el caso **no se integra** de todos
+  modos. **No procede que ARGOS recalcule una cifra ajena.**
+- ✅ **La aritmética del registro de armamento cuadra fila por fila**, recalculada de forma
+  independiente por el control y por el coordinador.
+
+### 15.3 Totales antes y después de los controles
+
+| Renglón | Borrador | Publicado | Motivo |
+|---|---|---|---|
+| **Hechos propios** | 8 | **1** | Reclasificación a `-REC-` |
+| **Semáforo** | 1/0/7 | **1/0/0** | ídem |
+| **Recuperaciones** | 2 | **11** | ídem, más Tamazula y el tianguis |
+| **Fichas totales** | 10 | **12** | dos eventos que faltaban |
+| **Densidad** | 0,34 | **0,04** | 1 ÷ 23,4167 |
+| **Todos los totales de armamento** | 33 armas, 14 detenidos | **0** | ninguno es del corte |
+| **Color de Zirándaro** | 🟢 | **🟡** | agresión armada durante el operativo |
+| **ARG-ID publicados** | 16 | **19** | dos eventos nuevos y su fila de armamento |
+
+⚠️ **Sin los dos controles, esta edición habría publicado siete hechos ajenos a su ventana como
+propios, un módulo de armamento con 33 armas que no le correspondían, un deslinde falso, un mapa con
+dos estados pintados de `undefined`, comparaciones contra cifras que ella misma había corregido, un
+evento entero omitido y un hecho amarillo clasificado como verde. Los dos son obligatorios y esta
+edición es la prueba más clara de la serie.**
