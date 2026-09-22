@@ -26,7 +26,7 @@ ls reports/ | wc -l
 ```
 
 **Estado que debe encontrar ARGOS 123**: última edición `argos-2026-09-21` (ARGOS 122) y
-**114 archivos** en `reports/` —contados tras el cierre de ARGOS 122, este archivo incluido—. **Si lo que encuentra está por detrás, algo se rompió: pare y avísele
+**115 archivos** en `reports/` —contados tras el cierre de ARGOS 122, este archivo y la orden de arranque incluidos—. **Si lo que encuentra está por detrás, algo se rompió: pare y avísele
 al destinatario antes de escribir una línea.**
 
 > ⚠️⚠️ **ESTO YA FALLÓ DIECISIETE EDICIONES SEGUIDAS Y VOLVERÁ A FALLAR.** La rama que asigna el

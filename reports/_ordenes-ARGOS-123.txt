@@ -10,7 +10,7 @@ PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
     ls reports/ | grep '^argos-' | tail -6
     ls reports/ | wc -l
 
-DEBES ENCONTRAR: última edición argos-2026-09-21 (ARGOS 122) y 114 archivos en
+DEBES ENCONTRAR: última edición argos-2026-09-21 (ARGOS 122) y 115 archivos en
 reports/. Si encuentras algo por detrás, PARA Y AVÍSAME antes de escribir una línea.
 
 NOVEDAD QUE TE AHORRA TRABAJO: main YA ESTÁ A LA CABEZA (ARGOS 122 mergeado). Por
