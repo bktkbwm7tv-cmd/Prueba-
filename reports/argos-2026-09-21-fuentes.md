@@ -588,3 +588,45 @@ intactos**; paridad de **29 ARG-ID** y validación repasadas.
 para un caso concreto**. «Ninguna tabla se pierde, las anchas se reflúan a tarjetas» salvó el módulo de
 armamento en ARGOS 102 y **arruinó el índice en ARGOS 122**. La tabla que es un **índice** no se trata
 como la tabla que es un **registro**.
+
+---
+
+## 19. Dos tablas salen de la versión móvil, y la paridad se conserva
+
+**Instrucción editorial del destinatario**, con dos capturas: *«Estas quítalas, es demasiada
+información.»* Señaló el **índice de panorama** y la **tabla de armamento por evento**.
+
+**Retiradas de la móvil**, en el generador:
+
+| Tabla | Por qué sale | Dónde sigue estando |
+|---|---|---|
+| **Panorama del corte** — 7 columnas, 20 filas | Cada fila **repite el titular de una ficha** que está unos centímetros más abajo | Íntegra en el **cartelón de escritorio**; cada hecho, en su ficha |
+| **Armamento por evento** — 17 columnas, 9 filas | Cada fila **repite el apartado HECHO de su propia ficha** y gasta **siete líneas en categorías con valor cero** | Íntegra en el **cartelón**; los **totales nacionales**, en las tarjetas de conteo de la propia móvil; el desglose de cada hecho, en su ficha |
+
+**NO se retiraron**: la tabla de **totales nacionales del corte** —12 columnas pero **una sola fila**,
+y es el agregado que `CLAUDE.md` exige publicar—, ni las de **candidatos** y **cobertura**, que caben
+a lo ancho de un teléfono.
+
+### El coste se midió y se eliminó, no se aceptó
+
+Retirar el módulo de armamento del teléfono **costaba cuatro ARG-ID** —`ARG-122-ARM-003`, `-004`,
+`-008` y `-009`—, los únicos que **ninguna ficha citaba**. Los otros cinco sobrevivían porque sus
+fichas los referencian en TRAZABILIDAD.
+
+⚠️ **Es el fallo que `editor-duplicidad` midió en ARGOS 102**, cuando la móvil reproducía 13 de 27
+ARG-ID por retirar tablas anchas. **No se repite aquí**: en vez de aceptar la pérdida, **se añadió la
+referencia cruzada que faltaba** a las cuatro fichas —`ARG-122-004` (Los Aldamas), `ARG-122-010`
+(Iztapalapa), `ARG-122-011` (Tempoal) y `ARG-122-018` (La Paz)—, en el apartado TRAZABILIDAD, que es
+donde viven los enlaces entre fichas.
+
+**Resultado**: **29 ARG-ID en las dos versiones, conjuntos idénticos**, con las tablas fuera del
+teléfono. **La trazabilidad no dependía de la tabla: dependía de que cada ficha citara su fila.**
+Ahora todas lo hacen, y eso **mejora también el cartelón de escritorio**.
+
+**Peso de la móvil a lo largo de las tres correcciones**: **223,909 → 221,022 → 212,625 → 193,603
+bytes**, un **13 % menos** que al publicarse, **sin perder una sola ficha ni un solo ARG-ID**.
+
+⚠️ **La nota de cierre de la móvil se corrigió**: afirmaba *«no se omitió ni resumió ninguna
+tarjeta»*, que tras esta retirada **habría sido falso sobre las tablas**. Ahora declara qué dos no se
+publican, por qué no se pierde nada y que **ninguna ficha se omitió**. **Un producto que se describe
+mal a sí mismo no es auditable.**

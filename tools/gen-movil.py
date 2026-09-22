@@ -386,16 +386,39 @@ def tabla_a_ficha(p, con_tarjetas):
         cuerpo = bloque.split("</thead>")[-1] if "</thead>" in bloque else bloque
         filas = re.findall(r"<tr\b[^>]*>(.*?)</tr>", cuerpo, re.S)
         cab_lower = {c.strip().lower() for c in cabeceras}
-        # Firma del panorama: es la única tabla del cartelón que lleva a la vez
-        # «Nivel de riesgo» y «ARG-ID». La de armamento tiene ARG-ID pero no nivel.
-        es_indice = {"nivel de riesgo", "arg-id"} <= cab_lower
-        if es_indice:
-            renglones = "".join(_fila_a_indice(f, cabeceras) for f in filas)
-            if renglones:
-                return ('<div class="tabla-indice"><p class="muted-note">'
-                        "<b>Índice del corte.</b> Toque un <b>ARG-ID</b> para ir a su ficha, "
-                        "donde están <b>las fuentes, el nivel de confianza y los deslindes</b>."
-                        "</p>" + renglones + "</div>")
+        # ── Tablas que NO se publican en la versión de teléfono ──────────────
+        # Instrucción editorial directa del destinatario tras revisar ARGOS 122
+        # en pantalla: «estas quítalas, es demasiada información».
+        #
+        # Las dos repiten, fila por fila, datos que la móvil ya trae en otro
+        # sitio, y al refluirse a tarjetas ocupan más que el contenido original:
+        #
+        #   · PANORAMA (7 columnas, una fila por hecho) — cada fila reproduce el
+        #     titular de una ficha que está unos centímetros más abajo. Firma:
+        #     única tabla que lleva a la vez «Nivel de riesgo» y «ARG-ID».
+        #   · ARMAMENTO POR EVENTO (17 columnas) — cada fila reproduce el
+        #     desglose que ya está en el apartado HECHO de su propia ficha, y
+        #     gasta siete líneas en categorías con valor cero. Firma: «ARG-ID»
+        #     junto a «Cortas» y «Largas».
+        #
+        # NO se retira la tabla de TOTALES NACIONALES —12 columnas pero UNA sola
+        # fila—, que es el agregado del corte y `CLAUDE.md` exige publicar; ni
+        # las de candidatos y cobertura, que caben a lo ancho.
+        #
+        # ⚠️ Esto tiene un coste declarado: los 9 ARG-ID del módulo de armamento
+        # dejan de aparecer en el teléfono y la paridad con el escritorio baja de
+        # 29 a 20. Es una decisión editorial, no una pérdida silenciosa: el
+        # cartelón de escritorio conserva las dos tablas íntegras y la nota de
+        # cierre de la móvil lo declara.
+        es_panorama = {"nivel de riesgo", "arg-id"} <= cab_lower
+        es_arm_evento = {"arg-id", "cortas", "largas"} <= cab_lower
+        if es_panorama:
+            return ('<p class="muted-note"><b>Índice por entidad: solo en la versión de '
+                    'cartelón.</b> Cada hecho está en su ficha, más abajo.</p>')
+        if es_arm_evento:
+            return ('<p class="muted-note"><b>Desglose por evento: solo en la versión de '
+                    'cartelón.</b> Los totales nacionales están en las tarjetas de arriba y '
+                    'el armamento de cada hecho, en su ficha.</p>')
         tarjetas = "".join(_celdas_a_tarjeta(f, cabeceras) for f in filas)
         if not tarjetas:
             return '<div class="tabla-scroll">' + interior + "</div>"
@@ -618,8 +641,11 @@ NOTA = f'''
   <p class="muted-note">
     Esta es la <b>versión móvil</b> de ARGOS {NUM}, con el mismo contenido verificado que la versión de
     cartelón (<code>reports/argos-{FECHA}.html</code>), reflujada a una sola columna. Las tablas
-    ejecutivas se presentan como fichas para evitar desplazamiento horizontal; no se omitió ni resumió
-    ninguna tarjeta. El radar, el mapa de portada y el mapa de aseguramientos se generan de los mismos
+    ejecutivas se presentan como fichas para evitar desplazamiento horizontal.
+    <b>Dos tablas no se publican aquí, por instrucción editorial</b>: el <b>índice por entidad</b> y el
+    <b>desglose de armamento por evento</b>. <b>Ningún dato se pierde</b> —el índice repite titulares de
+    las fichas y el desglose repite el apartado HECHO de cada una—, pero <b>los 9 ARG-ID del módulo de
+    armamento solo constan en el cartelón</b>. <b>Ninguna ficha se omitió ni se resumió.</b> El radar, el mapa de portada y el mapa de aseguramientos se generan de los mismos
     arreglos <code>EVENTOS</code> y <code>EVENTOS_ARM</code> que la versión de escritorio mediante
     <code>tools/gen-movil-svg.js</code>, y <b>los contadores del radar se toman del propio generador</b>,
     no se escriben a mano: es el origen del error corregido en ARGOS 97.
