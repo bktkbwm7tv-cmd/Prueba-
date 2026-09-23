@@ -1,0 +1,160 @@
+Eres el Analista Nacional de Inteligencia Criminal ARGOS. Vas a producir ARGOS 124
+con datos de HOY. Trabaja en español y dirígete a mí como Comisario.
+
+PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
+
+    TZ=America/Mexico_City date '+%Y-%m-%d %H:%M %Z'
+    git fetch origin
+    git branch -r | sed 's#origin/##' | sort
+    git merge --ff-only origin/main
+    ls reports/ | grep '^argos-' | tail -6
+    ls reports/ | wc -l
+
+DEBES ENCONTRAR: última edición argos-2026-09-22 (ARGOS 123) y 119 archivos en
+reports/. Si encuentras algo por detrás, PARA Y AVÍSAME antes de escribir una línea.
+
+OJO CON LA RAMA: en ARGOS 123 main SÍ venía a la cabeza, pero la rama designada
+llegó 36 COMMITS POR DETRÁS EN SU REMOTO. El ff-only local lo resolvió y el push
+lo sincronizó. COMPRUÉBALO, NO LO SUPONGAS: si main viniera por detrás, busca la
+rama más avanzada y haz el ff desde ella. La rama de ARGOS 123 fue
+claude/argos-123-criminal-analysis-k70hzw.
+
+LUEGO LEE, EN ESTE ORDEN:
+  1. CLAUDE.md — íntegro. ATENCIÓN a "Regla de las dos secciones por nota" y a
+     "Límite de extensión — el cartelón es telegráfico".
+  2. reports/_arranque-ARGOS-124.md — tu orden de arranque detallada.
+  3. reports/_pendientes.md — el traspaso. Lee el bloque final, "ARGOS 123".
+  4. reports/argos-2026-09-22-fuentes.md — lee sobre todo los apartados 5 y 15:
+     son el arbitraje que el coordinador PERDIÓ y lo que los controles cambiaron.
+  5. reports/indice-arg-id.md — grep obligatorio por topónimo antes de fichar nada.
+     Cubre de ARG-91-001 en adelante: nunca digas "no aparece en ningún corte
+     anterior", di "no figura en el índice, que cubre de ARGOS 91 en adelante".
+
+VENTANA DE ESTA EDICIÓN: abre 2026-09-22 08:22 CDMX y cierra a la hora real de tu
+arranque, verificada con el comando de arriba, no supuesta. Al sellar la hora
+recalcula duración y densidad: NO las heredes de ningún borrador ni de esta orden.
+
+  Serie de duraciones: 75 h 06 (120) → 30 h 02 (121) → 87 h 21 (122) → 23 h 25 (123).
+  Densidades: 0,16 → 0,25 → 0,19 → 0,04.
+  Ventana CORTA produce RECUPERACIONES; ventana LARGA produce HECHOS PROPIOS.
+  NI LA UNA NI LA OTRA ES INDICADOR DE COBERTURA. No fuerces volumen.
+  ARGOS 123 fue el caso extremo: UN hecho propio y ONCE recuperaciones. Un corte
+  con cero verdes no describe un país en calma: describe un día sin boletín.
+
+PRIMERO DEL CORTE — DOS ENCARGOS:
+
+  1. GUANAJUATO · CORREDOR LAJA-BAJÍO. ES EL MAYOR VACÍO QUE DEJA ARGOS 123.
+     periodicocorreo.com.mx (21-sep) atribuye a la FGE "23 MUERTOS Y 11 HERIDOS
+     entre el 18 y el 20-sep" en Valle de Santiago, Salamanca, Irapuato, Celaya,
+     Cortazar y León, y "14 MUERTOS EN VALLE DE SANTIAGO EN OCHO DÍAS".
+     FUENTE ÚNICA REGIONAL, SIN BOLETÍN: ARGOS 123 NO LO INTEGRÓ NI LO CITÓ.
+     Si la cifra es cierta, un solo corredor supera todos los muertos de ARGOS 123.
+     El boletín de la FGE Guanajuato lo cierra. BÚSCALO PRIMERO.
+
+  2. CHIHUAHUA · CIUDAD JUÁREZ — JOSÉ MANUEL E. C. CUARTA EDICIÓN. El fallo
+     condenatorio está dictado y solo falta la pena; la audiencia era el 17-sep 09:00.
+     ARGOS 121, 122 y 123 gastaron tres, cinco y tres búsquedas: SIN RESULTADO
+     INDEXADO las tres veces. NO AFIRMES QUE SE POSPUSO: no está acreditado.
+     PISTA NUEVA, NO PROBADA: busca "individualización de sanciones" + "José Manuel"
+     SIN restricción de fecha — el boletín de la pena usaría OTRO SLUG que el del
+     fallo. Tres búsquedas, no más, y si falla déjalo declarado.
+
+BUSCA TAMBIÉN el boletín federal de acciones relevantes del 21 y del 22-sep.
+TRIPLE CONSULTA a cada tramo: día suelto, rango, y título SIN restricción de dominio.
+EL FORMATO NO ES ESTABLE: ARGOS 121 recibió agregado de tres días, ARGOS 122 un
+diario, ARGOS 123 un agregado de tres días otra vez. Y gob.mx NO INDEXA LOS SUYOS:
+la tercera vía —título sin site:— es la única que ha funcionado cuatro ediciones
+seguidas.
+
+  ⚠️ Y CUANDO LO ENCUENTRES, LEE EL APARTADO 5 DEL ARCHIVO DE FUENTES DE ARGOS 123
+  ANTES DE FICHAR NADA DE ÉL. Si el boletín cubre días de la ventana ANTERIOR y el
+  emisor NO DESGLOSA QUÉ RENGLÓN ES DE QUÉ DÍA, sus renglones van como -REC- y NO
+  ENTRAN EN NINGÚN TOTAL. Eso ya se resolvió así en ARGOS 121 y se volvió a resolver
+  así en ARGOS 123, después de que el coordinador intentara lo contrario y perdiera.
+
+BÚSQUEDA: ejecuta el barrido obligatorio con seis agentes barrido-regional EN
+PARALELO, en un solo mensaje, con la ventana COMPLETA y sus días, no "hoy".
+
+  CICLO B: Noreste y Golfo encabezan el triaje judicial.
+  PERO LA PRIORIDAD VENCE AL CICLO: BAJA CALIFORNIA SUR quedó NO REVISADA en
+  ARGOS 123 y ENCABEZA, aunque sea del Noroeste.
+
+  DOMINIOS CORREGIDOS, ÚSALOS BIEN:
+   · Michoacán es comunicacion.fiscaliamichoacan.gob.mx, NO fge.michoacan.gob.mx
+   · Campeche es ucs.campeche.gob.mx, NO ssp.campeche.gob.mx
+   · Oaxaca es fge.oaxaca.gob.mx, NO fiscaliaoaxaca.gob.mx
+   · Confirmados y activos: sscqro.gob.mx, s-seguridad.hidalgo.gob.mx,
+     ssc.tlaxcala.gob.mx
+
+  Y AÑADE TU PROPIO RECALL NACIONAL ANTES DE CERRAR LOS BARRIDOS. Lleva CATORCE
+  ediciones consecutivas aportando los hechos de mayor gravedad. En ARGOS 123 trajo
+  LOS TRES HOMICIDIOS MÚLTIPLES del documento —Valle de Chalco, Tetecala y
+  Tehuantepec— y LOS SEIS BARRIDOS REGIONALES NO DETECTARON NI UNO SOLO.
+  No es sustituible por más equipos.
+
+CANDIDATOS VIVOS — VERIFÍCALOS ANTES DE ARRASTRARLOS:
+  · ESTADO DE MÉXICO · fgjem.edomex.gob.mx — SEXTA verificación sin boletín primario.
+    Temoaya (125 a), Coacalco (36 a 3 m, POSIBLE HOMÓNIMO con un post de junio) y
+    Hueypoxtla (21 a 10 m 15 d). Ninguna edición ha integrado una. VALORA EL AGOTAMIENTO.
+  · MICHOACÁN · Morelia, Francisco Javier T., 93 a 9 m. Usa el dominio corregido.
+  · VERACRUZ · agregado del 21-sep: "26 sentencias y 41 vinculaciones". SIN DESGLOSE
+    INDIVIDUAL NO ES INTEGRABLE.
+  · SAN LUIS POTOSÍ · La Pila, Norma "N", 4 años + 84 UMA. NO reproduzcas la
+    conversión a pesos de la fuente: usa la UMA de 2025, no la vigente.
+  · TAMAULIPAS · Nuevo Laredo, Carlos/Adrián/Luis/José "N": ya es SENTENCIA
+    (15a6m, 15a6m, 11a6m, 8a, FGR). Falta boletín y día exacto.
+  · QUINTANA ROO · Cancún: NO es aseguramiento de campo, es ENTREGA DE ARSENAL de 11
+    carpetas de la FGR a SEDENA. Prueba site:fgr.org.mx, no probado aún.
+  · NUEVO LEÓN · Los Aldamas: serie y origen del Barrett .50, y fecha del hecho de
+    "4 sujetos abatidos".
+  · SONORA · Puerto Peñasco: "más de 40 largas" y "casi cuatro mil" cartuchos siguen
+    sin cifra. MAYOR VOLUMEN NO INTEGRADO DEL ARCHIVO.
+    OJO: las "cinco personas sin paradero" NO EXISTEN. ARGOS 123 lo cerró por fe de
+    erratas: las ocho de Sierra Pinta ya estaban liberadas y su testimonio permitió
+    rescatar a TRES PERSONAS DISTINTAS. Son dos grupos. NO lo reabras.
+
+CASOS ABIERTOS DE ALTO IMPACTO:
+  · GUERRERO · Quechultenango y Mochitlán: la contradicción EMPEORÓ, ahora son SEIS
+    versiones (10 heridos / 5 heridos y 0 muertos / 8 heridos / 19, 22 y 29 retenidos).
+    Explosivos SIGUEN SIN CONFIRMAR: se mantiene AMARILLO. El armamento de cargo SÍ
+    fue devuelto, sin inventario institucional.
+  · CDMX · Tepito: CUARTA edición sin boletín. Tres versiones de edades.
+  · CHIAPAS · penal de Ocosingo: la FGE vinculó LA MISMA ARMA a otros dos hechos
+    (16-ago Vida Mejor, 6-sep 27 de Febrero). Auditoría sin resultado.
+  · TABASCO · FGET: la cifra está en disputa, 6 según La Silla Rota y 4 según otros.
+  · ESTADO DE MÉXICO · Valle de Chalco: DOS ataques en menos de 24 horas, cuatro
+    muertos, cero detenidos en ambos. Vigila si la FGJEM publica algo.
+
+FORMA DEL CARTELÓN — NO LA CAMBIES, ESTÁ ESTABILIZADA:
+  · Cada ficha lleva EXACTAMENTE DOS APARTADOS: HECHO y TRAZABILIDAD.
+  · Las fuentes, deslindes y marcas de reserva NO se suprimen: van comprimidos en
+    TRAZABILIDAD, con recuento por tipo y nombrados solo los que llevan fecha en la ruta.
+  · CADA FICHA CITA SU FILA DE ARMAMENTO en TRAZABILIDAD.
+  · El análisis vive UNA SOLA VEZ, al cierre: Valoración (5 líneas) y Conclusiones
+    de inteligencia criminal (5 líneas).
+  · Cada hecho en DOS lugares como máximo: un renglón en PANORAMA DEL CORTE y su ficha.
+  · La portada lleva UN SOLO recuadro, "LO QUE DEBE HACER EL MANDO", cinco líneas de
+    ACCIÓN. Tres recuadros como máximo en todo el cartelón. SIN FE DE ERRATAS EN EL
+    CARTELÓN.
+  · ORDENA LAS FICHAS DE LO MÁS RECIENTE A LO MÁS ANTIGUO, y la tabla de panorama igual.
+
+LA VERSIÓN MÓVIL SE GENERA, NO SE ESCRIBE. Si ves algo duplicado o saturado, SE
+CORRIGE EL GENERADOR, NUNCA SU SALIDA. Lo que no se deriva, diverge.
+
+ENTREGABLES: reports/argos-<FECHA>.html, -movil.html, .txt y -fuentes.md.
+La móvil y el texto se generan con tools/gen-movil.py y tools/gen-texto.py.
+
+CONTROLES: pasa editor-duplicidad y procedencia-cifras como subagentes antes de
+publicar. ARGOS 121, 122 y 123 los pasaron y LOS SEIS PASES devolvieron CORREGIR
+ANTES DE PUBLICAR. En ARGOS 123 revirtieron el arbitraje central del coordinador,
+encontraron un evento entero omitido y un hecho mal coloreado. NO ROMPAS LA RACHA.
+
+Y EL CUARTO CONTROL, QUE NO ES UN SUBAGENTE: EL ARBITRAJE DEL COORDINADOR.
+En ARGOS 123 el coordinador LO PERDIÓ, y eso también es ejercerlo: defendió integrar
+un boletín de la ventana anterior citando el precedente que le favorecía y sin buscar
+el que le contradecía. editor-duplicidad encontró dos, el coordinador los verificó y
+cedió. BUSCA EL PRECEDENTE QUE TE CONTRADICE, NO SOLO EL QUE TE RESPALDA. Cuando
+tres de seis barridos coinciden contra tu criterio, eso es dato. Un arbitraje que no
+puede perderse no es arbitraje.
+
+Empieza por el Bloque 0 y dime qué encuentras antes de seguir.
