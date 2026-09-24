@@ -1518,3 +1518,57 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
    medios**. `docs/solicitud-lista-blanca-egreso.md` **sigue sin tramitar**.
 7. **ARGOS 124 aplica el CICLO B** — Noreste + Golfo encabezan el triaje judicial. ⚠️ **Pero
    BAJA CALIFORNIA SUR quedó `NO REVISADA` y encabeza, aunque no le toque.**
+
+---
+
+# ARGOS 124 — lo que esta edición cierra, abre y traspasa
+
+**Corte 2026-09-24** · Ventana **22-sep 08:22 → 24-sep 06:41 CDMX** (**46 h 19 min**) ·
+**15 hechos propios · 3 recuperaciones · densidad 0,32 · 4 muertos en ventana**.
+
+## Cerrados por ARGOS 124
+
+| Pendiente | Disposición |
+|---|---|
+| ⚠️⚠️ **CHIHUAHUA · Cd. Juárez — JOSÉ MANUEL E. C.** | **LA PENA APARECIÓ tras CUATRO ediciones: 37 AÑOS Y 6 MESES**, Fiscalía de Distrito Zona Norte. **Tres campos individualizadores coinciden: NO hay homónimo.** ⚠️ **NO INTEGRADA**: ninguna URL lleva fecha en la ruta y no hay boletín oficial. **La pista que funcionó**: buscar «individualización de sanciones» **sin restricción de fecha** —el boletín de la pena usa otro *slug* que el del fallo— |
+| ⚠️ **BAJA CALIFORNIA SUR** | **SALDADA.** Encabezó el barrido por prioridad sobre el ciclo. Cinco búsquedas dedicadas. **El hueco era real, no de método**: un solo hecho, sin armamento |
+| ⚠️ **CDMX · Tepito — las tres versiones de edades** | **CERRADA POR CONVERGENCIA**: cuatro fuentes independientes coinciden en **Abigail Herrera, 19, y Odette Rosas, 18**. Las versiones «25-30» y «15-20» **no tienen respaldo**. ⚠️ **Sigue sin boletín: quinta edición** |
+| **SAN LUIS POTOSÍ · Norma «N»** | **CORREGIDA LA PENA**: son **4 años y 2 meses**, no 4 años |
+| **MICHOACÁN · Morelia, Francisco Javier T.** | **DESCARTADO EL HOMÓNIMO**: ocho republicadores coinciden en **tres campos individualizadores**. Sigue `PENDIENTE DE CONFIRMACIÓN OFICIAL`: ninguno es del dominio de la FGE |
+| **TABASCO · las ejecuciones** | **CORRECCIÓN DE CALENDARIO**: el «lunes violento» es el **14-sep**, no el 15. **La cifra sigue en disputa: 4 frente a 6** |
+
+## Abiertos que ARGOS 125 hereda
+
+| Pendiente | Estado |
+|---|---|
+| ⚠️⚠️ **GUANAJUATO · corredor Laja-Bajío** | **SIGUE SIENDO EL MAYOR VACÍO DEL ARCHIVO, SEGUNDA EDICIÓN.** Tres búsquedas dedicadas: **NO EXISTE BOLETÍN DE LA FGE** que sostenga los «23 muertos y 11 heridos». Ocho medios lo republicaron **atribuyéndolo a «registros de la Fiscalía», ninguno enlazando documento**. `NO INTEGRADO NI CITADO EN EL CARTELÓN` |
+| ⚠️⚠️ **GUANAJUATO · COMONFORT — SEGUIMIENTO NUEVO Y PRIORITARIO** | **Tres policías estatales muertos el 23-sep.** ¿Hay detenidos? ¿Confirmó la autoridad los **dos civiles abatidos** que publicó un titular nacional y que ARGOS **no integró**? ¿Inventario del armamento empleado? |
+| ⚠️⚠️ **VERACRUZ · COATZACOALCOS — SEGUIMIENTO NUEVO Y PRIORITARIO** | **Guillermo Pamuce Yep**, coordinador regional del partido PAZ, ejecutado el 23-sep. **Cero detenidos, móvil no establecido.** ⚠️ **Y la línea de archivo: es el SEGUNDO cuadro del MISMO partido asesinado** —el primero, Mazatepec (`ARG-108-REC-001`)—. **Vigilar si hay un tercero** |
+| ⚠️ **VERACRUZ · los agregados de la FGE** | **PATRÓN ESTRUCTURAL DEL EMISOR, no vacío de búsqueda. Cuarta edición.** Tres boletines en esta ventana —11 sentencias (22-sep), 21 y 1 fallo (23-sep), **75 en una semana** (23-sep, desglosado solo por región)—. **Ninguno identifica un caso.** ⚠️ **Existen boletines individuales con nombre y pena, pero sus rutas NO llevan fecha**: no pueden atarse a ninguna ventana |
+| ⚠️ **ESTADO DE MÉXICO · FGJEM** | **SEXTA verificación sin boletín primario.** ⚠️ **Coacalco se individualiza ahora**: Israel Cruz Luna «El Maca», líder de «Los Macas». **Sigue `POSIBLE CASO HOMÓNIMO`: nadie ha cotejado el post de junio-2026** |
+| ⚠️ **GUERRERO · Quechultenango y Mochitlán** | **Sin arbitraje institucional**, sin confirmar ni descartar explosivos, sin inventario del armamento devuelto. **Se mantiene 🟡** |
+| ⚠️ **CHIAPAS · Ocosingo** | **Discrepancia NUEVA sin arbitrar**: la deuda citaba «16-ago en **Vida Mejor**»; una fuente del 21-sep cita «**Patria Nueva**». **¿Mismo barrio con otro nombre o dos hechos?** Sin resultado de auditoría del penal |
+| **TAMAULIPAS · Nuevo Laredo, los cuatro «N»** | Sentencias dictadas (15a6m ×2, 11a6m, 8a). **Falta boletín de la FGR y el día exacto** |
+| **QUINTANA ROO · Cancún** | **Sentencia NUEVA no integrada**: **80 años** a tres personas por secuestro agravado, publicada el 22-sep **dentro de ventana**, sin boletín de la fiscalía |
+| **NUEVO LEÓN · Los Aldamas** | ⚠️ **RIESGO DE CONFLACIÓN DECLARADO: cuatro incidentes distintos en el mismo municipio en años diferentes.** Ninguna cifra de los anteriores debe atribuirse al de septiembre |
+| **SONORA · Puerto Peñasco** | «Más de 40 largas» y «casi cuatro mil» cartuchos **siguen sin cifra**. ⚠️ **NO reabrir las «cinco personas sin paradero»: `ARG-123-FE-001` las cerró** |
+| **COAHUILA y ZACATECAS** | **Cobertura débil dos ediciones seguidas.** Ninguna alcanzó `site:` dedicado a su SSP estatal |
+
+## Deuda de método
+
+1. ⚠️⚠️ **QUINCE EDICIONES CONSECUTIVAS: LOS BARRIDOS REGIONALES NO PRODUCEN UN SOLO HECHO ROJO.**
+   Los dos de esta edición los trajo el recall del coordinador. **Es un patrón, no una casualidad.**
+   **ARGOS 125 debería decidir si el barrido incorpora recall de sucesos por región, en vez de heredar
+   la pregunta otra vez.**
+2. ⚠️ **El techo de confianza es ★★★☆☆, quinta edición.** El bloqueo alcanza también a los medios.
+   `docs/solicitud-lista-blanca-egreso.md` **sigue sin tramitar**.
+3. ⚠️ **El formato del boletín federal cambió por tercera edición consecutiva** —diario, agregado,
+   diario—. **No se puede anticipar: la triple consulta es obligatoria cada vez.**
+4. ⚠️ **El resumidor devolvió listas contradictorias del MISMO boletín** (Comitán y Chilpancingo
+   frente a diez entidades sin ellos). **No se integró nada de lo contradicho.**
+5. **El validador ya recibe la ventana por argumento**, en vez de tenerla fija: antes había que
+   editarlo cada edición y era fuente de error silencioso.
+6. ⚠️ **ARGOS 123 y 124 se mergearon a `main`** por instrucción del destinatario, en fast-forward
+   puro. **Por primera vez en la serie, la edición siguiente arranca con `main` en la cabeza.**
+   **La advertencia «la rama llega desactualizada» debe reescribirse, no repetirse por inercia.**
+7. **ARGOS 125 aplica el CICLO C** — Occidente + Sureste encabezan el triaje judicial.

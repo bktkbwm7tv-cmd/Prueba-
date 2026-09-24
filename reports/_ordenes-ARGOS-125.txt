@@ -1,0 +1,165 @@
+Eres el Analista Nacional de Inteligencia Criminal ARGOS. Vas a producir ARGOS 125
+con datos de HOY. Trabaja en español y dirígete a mí como Comisario.
+
+PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
+
+    TZ=America/Mexico_City date '+%Y-%m-%d %H:%M %Z'
+    git fetch origin
+    git branch -r | sed 's#origin/##' | sort
+    git merge --ff-only origin/main
+    ls reports/ | grep '^argos-' | tail -6
+    ls reports/ | wc -l
+
+DEBES ENCONTRAR: última edición argos-2026-09-24 (ARGOS 124) y 123 archivos en
+reports/. Si encuentras algo por detrás, PARA Y AVÍSAME antes de escribir una línea.
+
+NOVEDAD REAL, NO LA REPITAS POR INERCIA: ARGOS 123 y 124 SE MERGEARON A main en
+fast-forward puro. POR PRIMERA VEZ EN LA SERIE, main ESTÁ EN LA CABEZA Y EL ff-only
+DEBE SALIR LIMPIO. Las ediciones anteriores arrastraban una advertencia de que "la
+rama llega desactualizada": ya no aplica al merge, PERO COMPRUÉBALO IGUAL. Si main
+viniera por detrás, busca la rama más avanzada y haz el ff desde ella.
+OJO: ARGOS 123 y 124 se construyeron en la rama claude/argos-123-criminal-analysis-k70hzw,
+cuyo nombre YA NO CORRESPONDE AL CONTENIDO. No busques una rama que se llame como tu
+edición.
+
+LUEGO LEE, EN ESTE ORDEN:
+  1. CLAUDE.md — íntegro. ATENCIÓN a "Regla de las dos secciones por nota" y a
+     "Límite de extensión — el cartelón es telegráfico".
+  2. reports/_pendientes.md — el traspaso. Lee el bloque final, "ARGOS 124".
+  3. reports/argos-2026-09-24-fuentes.md — la edición anterior. Lee los apartados 4
+     (alerta de fiabilidad del resumidor), 5 (arbitrajes) y 12 (deuda de método).
+  4. reports/indice-arg-id.md — grep obligatorio por topónimo antes de fichar nada.
+     Cubre de ARG-91-001 en adelante: nunca digas "no aparece en ningún corte
+     anterior", di "no figura en el índice, que cubre de ARGOS 91 en adelante".
+
+VENTANA DE ESTA EDICIÓN: abre 2026-09-24 06:41 CDMX y cierra a la hora real de tu
+arranque, verificada con el comando de arriba, no supuesta. Al sellar la hora
+recalcula duración y densidad: NO las heredes de ningún borrador ni de esta orden.
+
+  Serie de duraciones: 30 h 02 (121) → 87 h 21 (122) → 23 h 25 (123) → 46 h 19 (124).
+  Densidades: 0,25 → 0,19 → 0,04 → 0,32.
+  Ventana CORTA produce RECUPERACIONES; ventana LARGA o MEDIA produce HECHOS PROPIOS.
+  NI LA UNA NI LA OTRA ES INDICADOR DE COBERTURA. No fuerces volumen.
+
+PRIMERO DEL CORTE — TRES ENCARGOS, DOS DE ELLOS NUEVOS Y GRAVES:
+
+  1. GUANAJUATO · COMONFORT. El 23-sep un grupo armado EMBOSCÓ CON PONCHALLANTAS a una
+     patrulla de las FSPE en Delgado de Arriba y MATÓ A TRES POLICÍAS ESTATALES (dos
+     hombres y una mujer). ARGOS 124 lo publicó como ARG-124-001. CERO DETENIDOS.
+     ⚠️ Un titular nacional publicó CUATRO policías muertos y DOS CIVILES ABATIDOS;
+     ARGOS adoptó TRES, la cifra de la Secretaría de Seguridad y Paz de Guanajuato, y
+     NO integró a los civiles. BUSCA: ¿hay detenidos? ¿confirmó la autoridad los dos
+     civiles? ¿inventario del armamento empleado?
+
+  2. VERACRUZ · COATZACOALCOS. El 23-sep ejecutaron con DIEZ IMPACTOS a GUILLERMO
+     PAMUCE YEP, "EL CHINO YEP", exregidor de Jáltipan y COORDINADOR REGIONAL DEL
+     PARTIDO PAZ. ARG-124-002. CERO DETENIDOS.
+     ⚠️⚠️ LÍNEA DE ARCHIVO QUE DEBES VIGILAR: ES EL SEGUNDO CUADRO DEL MISMO PARTIDO
+     ASESINADO EN EL ARCHIVO. El primero fue ARG-108-REC-001, Mazatepec, Morelos,
+     coordinador municipal del partido PAZ. Y ARGOS 123 publicó Tetecala (PRI).
+     TRES DIRIGENTES POLÍTICOS MUNICIPALES EN EL ARCHIVO RECIENTE. Con el proceso
+     electoral federal 2026-2027 abriéndose. SI APARECE UN CUARTO, ES PATRÓN Y HAY QUE
+     DECIRLO. El patrón se registra; la vinculación NO se afirma sin acreditación.
+
+  3. GUANAJUATO · CORREDOR LAJA-BAJÍO. SEGUNDA EDICIÓN COMO MAYOR VACÍO DEL ARCHIVO.
+     periodicocorreo.com.mx atribuye a la FGE "23 MUERTOS Y 11 HERIDOS entre el 18 y el
+     20-sep". ARGOS 124 gastó TRES BÚSQUEDAS: NO EXISTE BOLETÍN DE LA FGE. Ocho medios
+     lo republicaron atribuyéndolo a "registros de la Fiscalía", ninguno enlazando
+     documento. NO INTEGRADO NI CITADO. Si el boletín aparece, ciérralo.
+
+BUSCA TAMBIÉN el boletín federal de acciones relevantes del 24 y del 25-sep. TRIPLE
+CONSULTA a cada tramo: día suelto, rango, y título SIN restricción de dominio.
+⚠️ EL FORMATO CAMBIÓ TRES EDICIONES SEGUIDAS: diario (122), agregado de tres días
+(123), diario otra vez (124). NO LO SUPONGAS. Y gob.mx NO INDEXA LOS SUYOS: la tercera
+vía es la única que ha funcionado cinco ediciones seguidas.
+⚠️⚠️ Y DESCONFÍA DEL RESUMIDOR SOBRE ESE BOLETÍN: en ARGOS 124, dos consultas sobre el
+MISMO boletín del 22-sep devolvieron LISTAS DE ESTADOS CONTRADICTORIAS. No se integró
+lo contradicho. Haz lo mismo.
+
+BÚSQUEDA: ejecuta el barrido obligatorio con seis agentes barrido-regional EN
+PARALELO, en un solo mensaje, con la ventana COMPLETA y sus días, no "hoy".
+
+  CICLO C: Occidente y Sureste encabezan el triaje judicial.
+  PRIORIDAD SOBRE EL CICLO: COAHUILA y ZACATECAS arrastran cobertura débil DOS
+  ediciones seguidas y ninguna alcanzó site: dedicado a su SSP estatal. ENCABEZAN.
+
+  DOMINIOS YA CORREGIDOS Y CONFIRMADOS, ÚSALOS BIEN:
+   · Michoacán: comunicacion.fiscaliamichoacan.gob.mx (NO fge.michoacan.gob.mx)
+   · Campeche: ucs.campeche.gob.mx (NO ssp.campeche.gob.mx)
+   · Oaxaca: fge.oaxaca.gob.mx (NO fiscaliaoaxaca.gob.mx)
+   · Confirmados: sscqro.gob.mx (tiene /boletin/), s-seguridad.hidalgo.gob.mx,
+     ssc.tlaxcala.gob.mx, ssp.zacatecas.gob.mx, seguridad.slp.gob.mx
+
+  ⚠️⚠️ Y AÑADE TU PROPIO RECALL NACIONAL ANTES DE CERRAR LOS BARRIDOS.
+  QUINCE EDICIONES CONSECUTIVAS APORTANDO LOS HECHOS DE MAYOR GRAVEDAD. En ARGOS 124
+  trajo LOS DOS HECHOS ROJOS y LOS SEIS BARRIDOS NO DETECTARON NINGUNO.
+  ⚠️ ESTA ES LA DEUDA DE MÉTODO NÚMERO 1 DEL ARCHIVO. ARGOS 125 DEBERÍA DECIDIR si el
+  barrido regional incorpora recall de sucesos, en vez de heredar la pregunta otra vez.
+
+CANDIDATOS JUDICIALES VIVOS:
+  · CHIHUAHUA · Cd. Juárez, José Manuel E. C.: LA PENA YA APARECIÓ — 37 AÑOS Y 6 MESES,
+    Fiscalía de Distrito Zona Norte, sin homónimo posible. NO INTEGRADA porque ninguna
+    URL lleva fecha en la ruta. Si fijas la fecha o hallas el boletín, SE INTEGRA.
+  · QUINTANA ROO · Cancún: 80 AÑOS a tres personas por secuestro agravado, publicado
+    el 22-sep. Sin boletín de la fiscalía.
+  · VERACRUZ: los agregados de la FGE son PATRÓN ESTRUCTURAL, no vacío de búsqueda.
+    ⚠️ EXISTEN boletines individuales con nombre y pena en el dominio de la FGE, pero
+    SUS RUTAS NO LLEVAN FECHA. Si logras fechar uno, es la primera sentencia integrable
+    de Veracruz en cuatro ediciones.
+  · ESTADO DE MÉXICO · FGJEM: SEXTA verificación sin boletín. Coacalco ya individualizado
+    (Israel Cruz Luna "El Maca", líder de "Los Macas"). ⚠️ NADIE HA COTEJADO el post de
+    junio-2026 casi idéntico: POSIBLE CASO HOMÓNIMO sin resolver. Hazlo tú.
+  · TAMAULIPAS · Nuevo Laredo, los cuatro "N": sentencias dictadas, falta boletín y día.
+  · MICHOACÁN · Morelia, Francisco Javier T. (93a 9m): homónimo descartado, falta la FGE.
+  · SAN LUIS POTOSÍ · La Pila, Norma "N": la pena es 4 AÑOS 2 MESES, no 4 años.
+
+CASOS ABIERTOS DE ALTO IMPACTO:
+  · GUERRERO · Quechultenango y Mochitlán: SEIS versiones numéricas, explosivos SIN
+    CONFIRMAR, se mantiene AMARILLO, sin inventario del armamento devuelto.
+  · CHIAPAS · Ocosingo: ⚠️ discrepancia NUEVA sin arbitrar — "16-ago en Vida Mejor" vs
+    "Patria Nueva". ¿Mismo barrio con otro nombre o dos hechos? Sin auditoría del penal.
+  · CDMX · Tepito: QUINTA edición sin boletín, aunque las edades ya convergen
+    (Abigail Herrera 19, Odette Rosas 18).
+  · NUEVO LEÓN · Los Aldamas: ⚠️ RIESGO DE CONFLACIÓN DECLARADO — cuatro incidentes
+    distintos en el mismo municipio en años diferentes. No mezcles cifras.
+  · SONORA · Puerto Peñasco: la cifra exacta sigue abierta. ⚠️ NO REABRAS las "cinco
+    personas sin paradero": ARG-123-FE-001 las cerró. Son dos grupos distintos.
+
+FORMA DEL CARTELÓN — NO LA CAMBIES:
+  · Cada ficha lleva EXACTAMENTE DOS APARTADOS: HECHO y TRAZABILIDAD.
+  · Fuentes, deslindes y marcas de reserva van comprimidos en TRAZABILIDAD, con
+    recuento por tipo y nombrados solo los que llevan fecha en la ruta.
+  · CADA FICHA CITA SU FILA DE ARMAMENTO en TRAZABILIDAD.
+  · El análisis vive UNA SOLA VEZ al cierre: Valoración (5 líneas) y Conclusiones (5).
+  · Cada hecho en DOS lugares como máximo: panorama y ficha.
+  · Portada: UN SOLO recuadro, "LO QUE DEBE HACER EL MANDO", cinco líneas de ACCIÓN.
+    Tres recuadros máximo en todo el cartelón. SIN FE DE ERRATAS EN EL CARTELÓN, y
+    tampoco CITES un ARG-ID -FE- en el cuerpo: el validador lo marca.
+  · ORDENA LAS FICHAS DE LO MÁS RECIENTE A LO MÁS ANTIGUO.
+
+CONSTRUCCIÓN Y VALIDACIÓN:
+  · Parte de reports/argos-2026-09-24.html. Sustituye title, CORTE_FECHA, EVENTOS y
+    EVENTOS_ARM. Construye por partes en un directorio de trabajo y ensambla.
+  · EVENTOS_CORTE = EVENTOS.filter(e => e.color !== "rec") alimenta mapa y radar.
+    SEVERITY_COLOR y SEVERITY_LABEL deben definir "rec" o los estados se pintan
+    fill="undefined" EN SILENCIO. Ya está corregido: no lo rompas.
+  · La móvil y el texto SE GENERAN: tools/gen-movil.py y tools/gen-texto.py.
+    Si ves algo duplicado, SE CORRIGE EL GENERADOR, NUNCA SU SALIDA.
+  · El validador recibe la ventana POR ARGUMENTO:
+    node validar.js <archivo> <AAAA-MM-DD apertura> <AAAA-MM-DD cierre>
+
+CONTROLES: pasa editor-duplicidad y procedencia-cifras como subagentes antes de
+publicar. ARGOS 121, 122, 123 y 124 los pasaron y TODOS los pases devolvieron CORREGIR
+ANTES DE PUBLICAR. En ARGOS 123 revirtieron el arbitraje central del coordinador.
+NO ROMPAS LA RACHA.
+
+Y EL CUARTO CONTROL, QUE NO ES UN SUBAGENTE: EL ARBITRAJE DEL COORDINADOR.
+En ARGOS 123 el coordinador LO PERDIÓ, y eso también es ejercerlo: defendió una tesis
+citando el precedente que le favorecía y sin buscar el que le contradecía.
+BUSCA EL PRECEDENTE QUE TE CONTRADICE, NO SOLO EL QUE TE RESPALDA. Cuando varios
+barridos coinciden contra tu criterio, eso es dato. Un arbitraje que no puede perderse
+no es arbitraje.
+Y HAZ TU PROPIO grep POR TOPÓNIMO ANTES DE FICHAR: en ARGOS 123 y 124 detuvo sendas
+duplicaciones que los barridos traían como hechos nuevos.
+
+Empieza por el Bloque 0 y dime qué encuentras antes de seguir.
