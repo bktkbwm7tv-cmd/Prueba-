@@ -1572,3 +1572,11 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
    puro. **Por primera vez en la serie, la edición siguiente arranca con `main` en la cabeza.**
    **La advertencia «la rama llega desactualizada» debe reescribirse, no repetirse por inercia.**
 7. **ARGOS 125 aplica el CICLO C** — Occidente + Sureste encabezan el triaje judicial.
+8. ⚠️⚠️ **DEFECTO DE HERRAMIENTA CORREGIDO, DETECTADO POR `editor-duplicidad`**: `gen-movil-svg.js`
+   alimentaba mapa y radar de la móvil con **`EVENTOS`** —el arreglo completo— mientras el escritorio
+   usaba **`EVENTOS_CORTE`**. **Las recuperaciones se pintaban en el mapa y eran ecos clicables en el
+   radar de la móvil**, contradiciendo literalmente sus propias fichas. **Corregido el generador**: usa
+   `EVENTOS_CORTE` si existe, filtra por `color !== "rec"` si no, y **el mapa de armamento filtra
+   también**. **Un generador que no deriva del cartelón, diverge de él.**
+9. ⚠️ **NO «CORRIJA» EL `table-wrap` DE LA MÓVIL**: el generador lo **renombra a `tabla-scroll` por
+   diseño**, y está documentado. `editor-duplicidad` lo tomó por defecto y **no lo es**.

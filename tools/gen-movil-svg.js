@@ -46,13 +46,28 @@ const sandbox = { document, console, Math, Date, Object, Array, String, Number, 
 vm.createContext(sandbox);
 vm.runInContext(code, sandbox);
 
-// Renderiza con el mismo arreglo EVENTOS y la misma fecha de corte del escritorio.
+// Renderiza con EXACTAMENTE el mismo arreglo que el escritorio, y con la misma fecha
+// de corte. Si el cartelón define EVENTOS_CORTE —el arreglo ya filtrado de
+// recuperaciones—, se usa ese; si no, se filtra aquí por color !== "rec".
+//
+// ⚠️ Defecto corregido en ARGOS 124, detectado por editor-duplicidad: este generador
+// pasaba EVENTOS (el arreglo completo) mientras el escritorio pasaba EVENTOS_CORTE.
+// Resultado: las recuperaciones se pintaban en el mapa y aparecían como ecos clicables
+// en el radar de la versión móvil, rompiendo la paridad con el escritorio y
+// contradiciendo la propia trazabilidad de sus fichas, que declara "FUERA DEL MAPA Y
+// DEL RADAR". Un generador que no deriva del cartelón, diverge de él.
 vm.runInContext(
-  'argosRenderMap("argos-map", EVENTOS);' +
-  'argosRenderRadar("argos-radar", "argos-radar-stats", EVENTOS, CORTE_FECHA);' +
+  'var __corte = (typeof EVENTOS_CORTE !== "undefined")' +
+  '  ? EVENTOS_CORTE' +
+  '  : EVENTOS.filter(function(e){ return e.color !== "rec"; });' +
+  'argosRenderMap("argos-map", __corte);' +
+  'argosRenderRadar("argos-radar", "argos-radar-stats", __corte, CORTE_FECHA);' +
   // El módulo de armamento usa su propio arreglo cuando existe: solo eventos con
   // aseguramiento contabilizado. Si la edición no lo define, cae a EVENTOS.
-  'argosRenderMap("argos-map-arm", typeof EVENTOS_ARM !== "undefined" ? EVENTOS_ARM : EVENTOS);',
+  // Las filas marcadas "rec" no integran a los totales del corte y tampoco se pintan.
+  'var __arm = (typeof EVENTOS_ARM !== "undefined" ? EVENTOS_ARM : EVENTOS)' +
+  '  .filter(function(e){ return e.color !== "rec"; });' +
+  'argosRenderMap("argos-map-arm", __arm);',
   sandbox
 );
 

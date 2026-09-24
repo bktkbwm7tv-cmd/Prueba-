@@ -12,7 +12,7 @@ Versión 3.0 · Corte matutino · USO INSTITUCIONAL
 
   · 🔴 Alto impacto · 2
   · 🟡 Violencia operativa · 0
-  · 🟢 Acciones institucionales · 13
+  · 🟢 Acciones institucionales · 12
 
 [ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
 
@@ -24,7 +24,7 @@ Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
 
   · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 0 eventos
 
-  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 13 eventos
+  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 12 eventos
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-09-24 · Hora: 06:41 (CDMX) · Corte: Matutino · ARGOS N.° 124 · USO INSTITUCIONAL
@@ -40,7 +40,6 @@ Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
   Tabasco · Villahermosa (Centro) · 23-SEP | 8 detenidos y 5 armas largas en el Periférico; célula con integrantes de Jalisco y Veracruz | 🟢 Verde | SSPC Tabasco (por cita) | ninguna | ★★★☆☆ | ARG-124-010
   Sinaloa · Concordia · 22-SEP | 75 artefactos explosivos tipo mina y dos AK-47; 2 detenidos, uno colombiano | 🟢 Verde | Gabinete de Seguridad (por republicador) | Hoy Tamaulipas | ★★★☆☆ | ARG-124-003
   Baja California · Valle de la Trinidad · 22-SEP | Célula de extorsión con retenes clonados: 3 detenidos, 2 largas, 509 cartuchos | 🟢 Verde | FESC BC (por cita) | Publimetro | ★★★☆☆ | ARG-124-004
-  Chihuahua · Ojinaga · 22-SEP | 11 armas largas y 2 detenidos en la franja fronteriza con Texas | 🟢 Verde | FGR (por cita) | ninguna | ★★☆☆☆ | ARG-124-005
   Sinaloa · Escuinapa · 22-SEP | 9 armas largas y 3 detenidos, uno de ellos menor de edad | 🟢 Verde | Gabinete de Seguridad (por republicador) | ninguna | ★★★☆☆ | ARG-124-006
   Sonora · NO ESPECIFICADO · 22-SEP | Cateo conjunto: 3 largas, 330 cartuchos, 7 cargadores y 4 vehículos robados | 🟢 Verde | Gabinete de Seguridad (por republicador) | ninguna | ★★★☆☆ | ARG-124-007
   Morelos · Cuautla · 22-SEP | Compartimento oculto en el tablero: 3 armas, 131 cartuchos y 127,933 pesos | 🟢 Verde | SSPC federal (por cita) | Infobae | ★★★★☆ | ARG-124-008
@@ -52,13 +51,14 @@ Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
   Aguascalientes · NO ESPECIFICADO · VENTANA ARGOS 123 | 187,710 cartuchos y 11 armas en un remolque con un caballo; 1 detenido | 🟢 Verde | FGR y SSPC (por cita) | ninguna | ★★★☆☆ | ARG-124-REC-001
   Estado de México · Ecatepec · VENTANA ARGOS 123 | 7 detenidos por el ataque al tianguis de Valle de Chalco del 20-sep | 🟢 Verde | FGJEM (por cita) | Infobae · Milenio | ★★★☆☆ | ARG-124-REC-002
   Veracruz · varios municipios · VENTANA ARGOS 123 | 35,000 litros de hidrocarburo y 48 detenidos en cuatro días | 🟢 Verde | Gobierno de Veracruz (por cita) | ninguna | ★★★☆☆ | ARG-124-REC-003
+  Chihuahua · Loma de Juárez (Ojinaga) · VENTANA ARGOS 123 | 11 armas largas con calibre y modelo, 19,400 dólares y 2 detenidos, presuntos jefes de plaza | 🟢 Verde | SSPE Chihuahua (por cita) | Infobae | ★★★☆☆ | ARG-124-REC-004
 
   Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Armas cortas | Armas largas | Sin categoría | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Entidades
-  15 | 2 | 0 | 13 | 3 | 2 | 34 | 4 | 1,016 | 28 | 0 | 75 | 0 | 25 | 9
+  14 | 2 | 0 | 12 | 4 | 2 | 23 | 4 | 1,616 | 38 | 0 | 75 | 0 | 23 | 8
 
-Ventana 22-sep 08:22 → 24-sep 06:41 CDMX (46 h 19 min) · 15 hechos propios · densidad 0,32
+Ventana 22-sep 08:22 → 24-sep 06:41 CDMX (46 h 19 min) · 14 hechos propios · densidad 0,30
 hechos/hora, cálculo propio. Orden: del más reciente al más antiguo.
-LAS TRES RECUPERACIONES DEL FINAL PERTENECEN A LA VENTANA DE ARGOS 123 Y QUEDAN FUERA DEL
+LAS CUATRO RECUPERACIONES DEL FINAL PERTENECEN A LA VENTANA DE ARGOS 123 Y QUEDAN FUERA DEL
 SEMÁFORO, DEL MAPA, DEL RADAR Y DE TODOS LOS TOTALES.
 Toque un ARG-ID para ir a su ficha, donde están las fuentes, el nivel de confianza y los
 deslindes.
@@ -67,7 +67,7 @@ NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA. El boletín fed
 personas detenidas en diez entidades en su propio tramo: agregado del emisor, no de ARGOS, y no
 se suma. Estos totales no se reimprimen en ningún otro sitio.
 
-Total de armas integradas: 40. Cartuchos y cargadores nunca se suman entre sí. Detenidos = solo
+Total de armas integradas: 29. Cartuchos y cargadores nunca se suman entre sí. Detenidos = solo
 los del mismo evento de aseguramiento. Muertos del corte: 4 —3 policías estatales en Comonfort y
 1 en Coatzacoalcos—, cálculo propio.
 
@@ -92,10 +92,12 @@ y GUARDIA NACIONAL en la zona. CERO DETENIDOS y ARMAMENTO DE LOS AGRESORES NO AS
 cierre. ROJO POR QUIÉN INICIA: el grupo criminal agredió a personal en patrullaje, que es lo que
 la lista roja nombra como ATAQUE CONTRA AUTORIDADES; concurren además DOS AGRAVANTES TASADAS:
 víctimas múltiples y MUERTE DE PERSONAL DE LAS FUERZAS DE SEGURIDAD. CIFRA CONTRADICHA Y
-ARBITRADA POR PROCEDENCIA: un titular nacional publica CUATRO policías muertos y DOS CIVILES
-ABATIDOS; SE ADOPTAN TRES, la cifra que confirmó expresamente la SECRETARÍA DE SEGURIDAD Y PAZ
-DE GUANAJUATO. LOS DOS CIVILES ABATIDOS NO ESTÁN CONFIRMADOS POR NINGÚN EMISOR INSTITUCIONAL Y
-NO SE INTEGRAN. DESLINDE OBLIGATORIO: Comonfort SÍ figura en el índice, pero como TLAPA DE
+ARBITRADA POR PROCEDENCIA: CUATRO MEDIOS —La Silla Rota, El Sol del Bajío, Azteca Bajío y
+Guanajuato Informa— publican CUATRO policías muertos y DOS AGRESORES ABATIDOS; SE ADOPTAN TRES,
+la cifra que confirmó expresamente la SECRETARÍA DE SEGURIDAD Y PAZ DE GUANAJUATO. LOS DOS
+ABATIDOS NO ESTÁN CONFIRMADOS POR NINGÚN EMISOR INSTITUCIONAL Y NO SE INTEGRAN. LA CIFRA DE
+CUATRO LA SOSTIENEN CUATRO MEDIOS, NO UN TITULAR AISLADO: EL ARBITRAJE ES POR PROCEDENCIA, NO
+POR MAYORÍA. DESLINDE OBLIGATORIO: Comonfort SÍ figura en el índice, pero como TLAPA DE
 COMONFORT, GUERRERO: otro estado, otro municipio y otro hecho. ES EL HECHO MÁS GRAVE DEL CORTE.
 Lo aportó el recall nacional del coordinador
 
@@ -192,28 +194,32 @@ corroborado.
 
 ## CRIMEN ORGANIZADO (III) — MARTES 22: EL NOROESTE, CON EL MAYOR DEPÓSITO DE ARTEFACTOS DEL ARCHIVO
 
-### SINALOA · CONCORDIA — SETENTA Y CINCO ARTEFACTOS EXPLOSIVOS TIPO MINA: EL MAYOR VOLUMEN DE AEI DEL ARCHIVO [VERDE]
+### SINALOA · CONCORDIA — SETENTA Y CINCO MINAS DE DOBLE PROPÓSITO, 600 CARTUCHOS Y UN DETENIDO COLOMBIANO: EL MAYOR VOLUMEN DE AEI DEL ARCHIVO [VERDE]
 
 ── HECHO
 
-Concordia, Sinaloa, MARTES 22-SEP: el EJÉRCITO MEXICANO y la POLICÍA ESTATAL detienen a DOS
-PERSONAS, UNA DE ELLAS DE NACIONALIDAD COLOMBIANA, y aseguran DOS FUSILES TIPO AK-47 CALIBRE
-7.62×39 MM, cargadores y cartuchos SIN CIFRA, SETENTA Y CINCO ARTEFACTOS EXPLOSIVOS IMPROVISADOS
-TIPO MINA, chalecos tácticos, placas balísticas y 60 envoltorios con sustancia sintética con
-características de cocaína (🟢). ES EL MAYOR VOLUMEN DE AEI DEL ARCHIVO: supera los 75 a 40 el
-récord anterior, de la sierra de Sinaloa en ARGOS 122. LA TIPOLOGÍA ES MINA IMPROVISADA,
-categoría expresa de la taxonomía, y se registra como tal. Forma parte de un despliegue federal
-y estatal que el emisor declara con 28 DETENIDOS EN DIEZ ENTIDADES —AGREGADO DEL EMISOR, NO DE
-ARGOS—. DESLINDE OBLIGATORIO: Concordia SÍ figura en el índice —ARG-111-003 y ARG-111-ARM-002,
-«Operación Sable» del 29-ago, con 49 AEI destruidos por detonación controlada—: OTRA FECHA, OTRA
-CORPORACIÓN, OTRAS CIFRAS Y OTRA MODALIDAD. EL PATRÓN TERRITORIAL SÍ SE REGISTRA: ES EL SEGUNDO
-DEPÓSITO DE ARTEFACTOS DEL MISMO MUNICIPIO EN EL ARCHIVO Y LA CIFRA CRECIÓ DE 49 A 75. Conteo de
-armamento: ARG-124-ARM-001
+Concordia, Sinaloa, MARTES 22-SEP: el GRUPO DE OPERACIONES ESPECIALES SINALOA (GOES) de la
+POLICÍA ESTATAL, en vigilancia rumbo a la comunidad de EL MAGISTRAL, detiene a DOS PERSONAS —UNA
+DE NACIONALIDAD COLOMBIANA— que descendieron de una KIA SORENTO con equipo táctico y armas
+largas e intentaron huir a pie, y asegura DOS FUSILES AK-47 CALIBRE 7.62×39 MM, DIEZ CARGADORES,
+SEISCIENTOS CARTUCHOS ÚTILES, SETENTA Y CINCO ARTEFACTOS EXPLOSIVOS TIPO MINA DE DOBLE
+PROPÓSITO, 2 chalecos tácticos, 2 placas balísticas, 60 envoltorios con características de
+cocaína y la camioneta, equipada con PONCHALLANTAS (🟢). ES EL MAYOR VOLUMEN DE AEI DEL ARCHIVO:
+supera los 75 a 40 el récord anterior, de la sierra de Sinaloa en ARGOS 122. LA TIPOLOGÍA ES
+MINA IMPROVISADA, categoría expresa de la taxonomía, y se registra como tal. LAS CIFRAS DE
+MUNICIÓN LAS PUBLICA EL PORTAL INSTITUCIONAL DE LA SSP DE SINALOA: el borrador las declaraba SIN
+CIFRA y procedencia-cifras las recuperó. Forma parte de un despliegue que el emisor federal
+declara con 28 DETENIDOS EN DIEZ ENTIDADES —AGREGADO DEL EMISOR, NO DE ARGOS—. DESLINDE
+OBLIGATORIO: Concordia SÍ figura en el índice —ARG-111-003 y ARG-111-ARM-002, «Operación Sable»
+del 29-ago, con 49 AEI destruidos por detonación controlada—: OTRA FECHA, OTRA CORPORACIÓN,
+OTRAS CIFRAS Y OTRA MODALIDAD. EL PATRÓN TERRITORIAL SÍ SE REGISTRA: ES EL SEGUNDO DEPÓSITO DE
+ARTEFACTOS DEL MISMO MUNICIPIO EN EL ARCHIVO Y LA CIFRA CRECIÓ DE 49 A 75. Conteo de armamento:
+ARG-124-ARM-001
 
 ── TRAZABILIDAD
 
-ARG-124-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido · Fuentes:
-Institucional 1 · Nacional 1 · Regional 5 · con fecha en la ruta: La Prensa de Coahuila · Hecho:
+ARG-124-003 · Confianza: 🟢 Alto (★★★★☆), la fija el campo peor sostenido · Fuentes:
+Institucional 2 · Nacional 2 · Regional 6 · con fecha en la ruta: La Prensa de Coahuila · Hecho:
 2026-09-22 · Hora: no fijada · Consulta: 2026-09-24 · Estatus: Parcialmente corroborado.
 
 ### BAJA CALIFORNIA · VALLE DE LA TRINIDAD — CÉLULA DE EXTORSIÓN CON RETENES CLONADOS: TRES DETENIDOS, DOS ARMAS LARGAS Y 509 CARTUCHOS [VERDE]
@@ -239,32 +245,6 @@ ARG-124-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 Institucional 1 · Nacional 1 · Regional 5 · con fecha en la ruta: El Vigía · Hecho: 2026-09-22 ·
 Hora: por la tarde — NO FIJADA · Consulta: 2026-09-24 · Estatus: Parcialmente corroborado.
 
-### CHIHUAHUA · OJINAGA — ONCE ARMAS LARGAS Y DOS DETENIDOS EN LA FRANJA FRONTERIZA CON TEXAS [VERDE]
-
-── HECHO
-
-Ojinaga, Chihuahua —con traslado a las oficinas de la FGR en la capital del estado—, MARTES
-22-SEP: la FGR detiene a DOS PERSONAS y asegura ONCE ARMAS LARGAS (🟢). DETENIDOS CON INICIAL Y
-EDAD: OCTAVIO V. L., 32 AÑOS, y AXEL A. A., 30. Cargadores y cartuchos mencionados SIN CIFRA
-EXACTA: CANTIDAD NO DETERMINADA, no se integran al total numérico. ONCE ARMAS LARGAS EN UN SOLO
-EVENTO ES EL SEGUNDO MAYOR VOLUMEN DE LA CATEGORÍA EN EL CORTE, en un municipio de la FRONTERA
-CON TEXAS. RESERVA DECLARADA: FUENTE REGIONAL ÚNICA, sin corroboración institucional propia ni
-segundo medio; la fila baja a Bajo por corroboración asimétrica. DESLINDE: Ojinaga NO figura en
-el índice, que cubre de ARGOS 91 en adelante. Conteo de armamento: ARG-124-ARM-003
-
-── TRAZABILIDAD
-
-ARG-124-005 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido · Fuentes:
-Institucional 1 · Nacional 0 · Regional 1 · con fecha en la ruta: ninguna con fecha en la ruta ·
-Hecho: 2026-09-22 · Hora: no fijada · Consulta: 2026-09-24 · Estatus: Parcialmente corroborado.
-
-----------------------------------------------------------------------------
-  · Versión 3.0 · Fecha: 2026-09-24 · Hora: 06:41 (CDMX) · Corte: Matutino · ARGOS N.° 124 · USO INSTITUCIONAL
-
-============================================================================
-
-## CRIMEN ORGANIZADO (IV) — MARTES 22: SINALOA, SONORA Y MORELOS
-
 ### SINALOA · ESCUINAPA — NUEVE ARMAS LARGAS Y TRES DETENIDOS, UNO DE ELLOS MENOR DE EDAD [VERDE]
 
 ── HECHO
@@ -281,6 +261,13 @@ armamento: ARG-124-ARM-004
 ARG-124-006 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido · Fuentes:
 Institucional 1 · Nacional 0 · Regional 4 · con fecha en la ruta: ninguna con fecha en la ruta ·
 Hecho: 2026-09-22 · Hora: no fijada · Consulta: 2026-09-24 · Estatus: Parcialmente corroborado.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-24 · Hora: 06:41 (CDMX) · Corte: Matutino · ARGOS N.° 124 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (IV) — MARTES 22: SONORA, MORELOS, CHIAPAS Y MICHOACÁN
 
 ### SONORA · MUNICIPIO NO ESPECIFICADO — CATEO CONJUNTO CON TRES ARMAS LARGAS, 330 CARTUCHOS Y CUATRO VEHÍCULOS ROBADOS [VERDE]
 
@@ -318,13 +305,6 @@ ARG-124-008 · Confianza: 🟢 Alto (★★★★☆), la fija el campo peor sos
 Institucional 2 · Nacional 1 · Regional 2 · con fecha en la ruta: Infobae · Hecho: 2026-09-22 ·
 Hora: no fijada · Consulta: 2026-09-24 · Estatus: Parcialmente corroborado.
 
-----------------------------------------------------------------------------
-  · Versión 3.0 · Fecha: 2026-09-24 · Hora: 06:41 (CDMX) · Corte: Matutino · ARGOS N.° 124 · USO INSTITUCIONAL
-
-============================================================================
-
-## CRIMEN ORGANIZADO (V) — MARTES 22: CHIAPAS, MICHOACÁN, BAJA CALIFORNIA SUR, NAYARIT Y COAHUILA
-
 ### CHIAPAS · TAPACHULA — DETENIDO EN LA FRANJA FRONTERIZA SUR UN PRESUNTO INTEGRANTE DEL «CÁRTEL CHIAPAS Y GUATEMALA» [VERDE]
 
 ── HECHO
@@ -342,21 +322,28 @@ ARG-124-011 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sos
 Institucional 1 · Nacional 0 · Regional 1 · con fecha en la ruta: El Sol del Soconusco · Hecho:
 2026-09-22 · Hora: no fijada · Consulta: 2026-09-24 · Estatus: Parcialmente corroborado.
 
-### MICHOACÁN · MUNICIPIO NO ESPECIFICADO — DOS ARMAS LARGAS EN UNA MOTOCICLETA ABANDONADA EN TERRACERÍA [VERDE]
+### MICHOACÁN · TINGÜINDÍN — DOS ARMAS LARGAS EN UNA MOTOCICLETA ABANDONADA EN TERRACERÍA [VERDE]
 
 ── HECHO
 
-Michoacán —MUNICIPIO NO ESPECIFICADO POR EL EMISOR—, MARTES 22-SEP: la GUARDIA NACIONAL, el
-EJÉRCITO MEXICANO y la POLICÍA ESTATAL localizan UNA MOTOCICLETA EN UN CAMINO DE TERRACERÍA y
-aseguran DOS ARMAS LARGAS, cargadores y cartuchos (🟢). CARGADORES Y CARTUCHOS SIN CIFRA:
-CANTIDAD NO DETERMINADA, no se integran al total numérico. DETENIDOS NO PUBLICADOS. MUNICIPIO NO
-VERIFICADO. Conteo de armamento: ARG-124-ARM-010
+Michoacán —TINGÜINDÍN según la cobertura regional; EL EMISOR FEDERAL NO LO CONSIGNA—, MARTES
+22-SEP: la GUARDIA NACIONAL, el EJÉRCITO MEXICANO y la POLICÍA ESTATAL localizan UNA MOTOCICLETA
+EN UN CAMINO DE TERRACERÍA y aseguran DOS ARMAS LARGAS, cargadores y cartuchos (🟢). CARGADORES Y
+CARTUCHOS SIN CIFRA: CANTIDAD NO DETERMINADA, no se integran al total numérico. DETENIDOS NO
+PUBLICADOS. MUNICIPIO NO VERIFICADO. Conteo de armamento: ARG-124-ARM-010
 
 ── TRAZABILIDAD
 
 ARG-124-012 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido · Fuentes:
 Institucional 1 · Nacional 0 · Regional 3 · con fecha en la ruta: ninguna con fecha en la ruta ·
 Hecho: 2026-09-22 · Hora: no fijada · Consulta: 2026-09-24 · Estatus: Parcialmente corroborado.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-24 · Hora: 06:41 (CDMX) · Corte: Matutino · ARGOS N.° 124 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (V) — MARTES 22: BAJA CALIFORNIA SUR, NAYARIT Y COAHUILA
 
 ### BAJA CALIFORNIA SUR · COMONDÚ — DOS DETENIDOS EN LA TRANSPENINSULAR, SIN ARMAMENTO: EL ÚNICO HECHO DE LA ENTIDAD EN LA VENTANA [VERDE]
 
@@ -376,16 +363,16 @@ ARG-124-013 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 Institucional 1 · Nacional 0 · Regional 3 · con fecha en la ruta: ninguna con fecha en la ruta ·
 Hecho: 2026-09-22 · Hora: no fijada · Consulta: 2026-09-24 · Estatus: Parcialmente corroborado.
 
-### NAYARIT · MUNICIPIO NO ESPECIFICADO — ERRADICACIÓN DE 24,000 PLANTAS DE MARIHUANA Y UN SECADERO CON 320 KILOS [VERDE]
+### NAYARIT · LA YESCA — ERRADICACIÓN DE 24,000 PLANTAS DE MARIHUANA Y UN SECADERO CON 320 KILOS [VERDE]
 
 ── HECHO
 
-Nayarit —MUNICIPIO NO ESPECIFICADO POR EL EMISOR—, MARTES 22-SEP: fuerzas federales ERRADICAN
-24,000 PLANTAS DE MARIHUANA y localizan un SECADERO CON 320 KILOS del mismo producto (🟢). SIN
-ARMAMENTO Y SIN DETENIDOS PUBLICADOS: EVENTO CUALITATIVO, no alimenta el conteo nacional de
-armamento. LAS 24,000 PLANTAS Y LOS 320 KG SON CIFRAS EXPRESAS DEL EMISOR y se registran como
-tales, en rubro de narcóticos, NO en ninguna categoría de la taxonomía de armamento. MUNICIPIO
-NO VERIFICADO
+Nayarit —LA YESCA, comunidad de PUENTE DE CAMOTLÁN según la cobertura regional; EL EMISOR
+FEDERAL NO LO CONSIGNA—, MARTES 22-SEP: fuerzas federales ERRADICAN 24,000 PLANTAS DE MARIHUANA
+y localizan un SECADERO CON 320 KILOS del mismo producto (🟢). SIN ARMAMENTO Y SIN DETENIDOS
+PUBLICADOS: EVENTO CUALITATIVO, no alimenta el conteo nacional de armamento. LAS 24,000 PLANTAS
+Y LOS 320 KG SON CIFRAS EXPRESAS DEL EMISOR y se registran como tales, en rubro de narcóticos,
+NO en ninguna categoría de la taxonomía de armamento. MUNICIPIO NO VERIFICADO
 
 ── TRAZABILIDAD
 
@@ -393,15 +380,16 @@ ARG-124-014 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 Institucional 1 · Nacional 0 · Regional 3 · con fecha en la ruta: ninguna con fecha en la ruta ·
 Hecho: 2026-09-22 · Hora: no fijada · Consulta: 2026-09-24 · Estatus: Parcialmente corroborado.
 
-### COAHUILA · MUNICIPIO NO ESPECIFICADO — 823 KILOS DE MARIHUANA ASEGURADOS, SIN ARMAMENTO NI DETENIDOS PUBLICADOS [VERDE]
+### COAHUILA · SALTILLO — 823 KILOS DE MARIHUANA ASEGURADOS EN LA CARRETERA FEDERAL 54 [VERDE]
 
 ── HECHO
 
-Coahuila —MUNICIPIO NO ESPECIFICADO POR EL EMISOR—, MARTES 22-SEP: fuerzas federales aseguran
-823 KILOS DE MARIHUANA (🟢). SIN ARMAMENTO Y SIN DETENIDOS PUBLICADOS: EVENTO CUALITATIVO, no
-alimenta el conteo nacional de armamento. LOS 823 KG SON CIFRA EXPRESA DEL EMISOR, en rubro de
-narcóticos. MUNICIPIO NO VERIFICADO. COAHUILA ARRASTRA COBERTURA DÉBIL DESDE ARGOS 123 y este es
-el único renglón de la entidad localizado en la ventana
+Coahuila —SALTILLO, carretera federal 54, según la cobertura; EL EMISOR FEDERAL NO LO CONSIGNA—,
+MARTES 22-SEP: fuerzas federales aseguran 823 KILOS DE MARIHUANA (🟢). SIN ARMAMENTO Y SIN
+DETENIDOS PUBLICADOS: EVENTO CUALITATIVO, no alimenta el conteo nacional de armamento. LOS 823
+KG SON CIFRA EXPRESA DEL EMISOR, en rubro de narcóticos. MUNICIPIO NO VERIFICADO. COAHUILA
+ARRASTRA COBERTURA DÉBIL DESDE ARGOS 123 y este es el único renglón de la entidad localizado en
+la ventana
 
 ── TRAZABILIDAD
 
@@ -414,7 +402,7 @@ Hecho: 2026-09-22 · Hora: no fijada · Consulta: 2026-09-24 · Estatus: Parcial
 
 ============================================================================
 
-## CRIMEN ORGANIZADO (VI) — LAS TRES RECUPERACIONES DE LA VENTANA DE ARGOS 123
+## CRIMEN ORGANIZADO (VI) — LAS CUATRO RECUPERACIONES DE LA VENTANA DE ARGOS 123
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-09-24 · Hora: 06:41 (CDMX) · Corte: Matutino · ARGOS N.° 124 · USO INSTITUCIONAL
@@ -425,13 +413,13 @@ Hecho: 2026-09-22 · Hora: no fijada · Consulta: 2026-09-24 · Estatus: Parcial
 
   · Armas cortas: 2 — 1 de Cuauhtémoc (CDMX) —un revólver— y 1 de Tapachula · NINGUNA CON CALIBRE NI NÚMERO DE SERIE PUBLICADO · los 187,710 cartuchos del corte no tienen casi armas cortas detrás: la munición viaja sola
 
-  · Armas largas: 34 — 11 de Ojinaga, 9 de Escuinapa, 5 de Villahermosa, 3 de Sonora, 2 de Concordia, 2 de Valle de la Trinidad y 2 de Michoacán · NINGUNA CON CALIBRE NI SERIE, SALVO LOS DOS AK-47 DE CONCORDIA Y EL AK-47 DE ENSENADA
+  · Armas largas: 23 — 9 de Escuinapa, 5 de Villahermosa, 3 de Sonora, 2 de Concordia, 2 de Valle de la Trinidad y 2 de Michoacán · LAS 11 DE OJINAGA NO SUMAN: SU HECHO ES DEL 21-SEP · NINGUNA CON CALIBRE NI SERIE, SALVO LOS DOS AK-47 DE CONCORDIA Y EL AK-47 DE ENSENADA
 
-  · Sin categoría: 4 — 3 de Cuautla —el emisor no publica si son cortas o largas— y 1 de Cuauhtémoc —una subametralladora que la autoridad no clasifica— · 4 de 40 armas integradas, el 10 %, cálculo propio · NO SE INFIERE LA CATEGORÍA
+  · Sin categoría: 4 — 3 de Cuautla —el emisor no publica si son cortas o largas— y 1 de Cuauhtémoc —una subametralladora que la autoridad no clasifica— · 4 de 29 armas integradas, el 14 %, cálculo propio · NO SE INFIERE LA CATEGORÍA
 
-  · Cartuchos: 1,016 — 509 de Valle de la Trinidad —cálculo propio sobre un desglose publicado por partes—, 330 de Sonora, 131 de Cuautla y 46 de Cuauhtémoc · CIFRA MODESTA QUE NO DESCRIBE EL CORTE: LOS 187,710 DE AGUASCALIENTES SON DE LA VENTANA ANTERIOR Y NO SUMAN AQUÍ
+  · Cartuchos: 1,616 — 600 de Concordia, 509 de Valle de la Trinidad —cálculo propio sobre un desglose publicado por partes—, 330 de Sonora, 131 de Cuautla y 46 de Cuauhtémoc · LOS 187,710 DE AGUASCALIENTES SON DE LA VENTANA ANTERIOR Y NO SUMAN AQUÍ: SON CIENTO DIECISÉIS VECES EL TOTAL INTEGRADO DE ESTE CORTE
 
-  · Cargadores: 28 — 16 de Valle de la Trinidad, 7 de Sonora y 5 de Cuautla · NUNCA SE SUMAN CON LOS CARTUCHOS · seis de los diez eventos no publicaron cargadores
+  · Cargadores: 38 — 16 de Valle de la Trinidad, 10 de Concordia, 7 de Sonora y 5 de Cuautla · NUNCA SE SUMAN CON LOS CARTUCHOS · cinco de los nueve eventos no publicaron cargadores
 
   · Granadas: 0 — NINGUNA GRANADA EN LAS 46 H 19 MIN · frente a la única de San Quintín del corte anterior · la ausencia es dato y se publica
 
@@ -441,12 +429,12 @@ Hecho: 2026-09-22 · Hora: no fijada · Consulta: 2026-09-24 · Estatus: Parcial
 
   · Armamento especial: 0 — NINGUNA PIEZA CAL. .50, LANZAGRANADAS, AMETRALLADORA PESADA NI DRON ARMADO · la subametralladora de Cuauhtémoc va en SIN CATEGORÍA, porque la autoridad no la clasifica
 
-  · Detenidos: 25 — 8 de Villahermosa · 4 de Cuauhtémoc · 3 de Valle de la Trinidad · 3 de Escuinapa · 2 de Concordia · 2 de Ojinaga · 2 de Cuautla · 1 de Tapachula · SOLO EN EVENTOS CON ASEGURAMIENTO DE ARMAMENTO · NO entran los 2 de Comondú ni los de Sonora y Michoacán, no publicados
+  · Detenidos: 23 — 8 de Villahermosa · 4 de Cuauhtémoc · 3 de Valle de la Trinidad · 3 de Escuinapa · 2 de Concordia · 2 de Cuautla · 1 de Tapachula · SOLO EN EVENTOS CON ASEGURAMIENTO DE ARMAMENTO · NO entran los 2 de Comondú ni los de Sonora y Michoacán, no publicados
 
-Diez eventos contabilizados en nueve entidades · tres eventos cualitativos sin armamento
+Nueve eventos contabilizados en ocho entidades · tres eventos cualitativos sin armamento
 —Comondú, Nayarit y Coahuila—. El total nacional está en la página de panorama y no se reimprime
-aquí. Las categorías en cero se muestran igualmente: la ausencia es dato. LA FILA DE
-AGUASCALIENTES SE REGISTRA PERO NO SUMA: SU VENTANA DE ORIGEN ES ARGOS 123.
+aquí. Las categorías en cero se muestran igualmente: la ausencia es dato. LAS FILAS DE
+AGUASCALIENTES Y OJINAGA SE REGISTRAN PERO NO SUMAN: SU VENTANA DE ORIGEN ES ARGOS 123.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-09-24 · Hora: 06:41 (CDMX) · Corte: Matutino · ARGOS N.° 124 · USO INSTITUCIONAL
@@ -456,9 +444,9 @@ AGUASCALIENTES SE REGISTRA PERO NO SUMA: SU VENTANA DE ORIGEN ES ARGOS 123.
 ## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
 
   ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
-  ARG-124-ARM-001 | Sinaloa | Concordia | 2026-09-22 | 0 | 2 · dos AK-47 · cal. 7.62×39 | 0 | 0 · sin cifra | 0 · sin cifra | 0 | 75 · TIPO MINA | 0 | 2 · uno colombiano | Ejército · + Policía Estatal | Medio
+  ARG-124-ARM-001 | Sinaloa | Concordia · rumbo a · El Magistral | 2026-09-22 | 0 | 2 · dos AK-47 · cal. 7.62×39 | 0 | 600 | 10 | 0 | 75 · TIPO MINA · DE DOBLE · PROPÓSITO | 0 | 2 · uno colombiano | GOES · Policía Estatal | Alto · portal institucional · de la SSP Sinaloa
   ARG-124-ARM-002 | Baja California | Valle de la Trinidad · (Ensenada) | 2026-09-22 | 0 | 2 · rifle con tambor · y AK-47 | 0 | 509 · CÁLCULO PROPIO · sobre desglose · por partes | 16 · CÁLCULO PROPIO | 0 | 0 | 0 | 3 · con nombre · y edad | FESC · Baja California | Medio
-  ARG-124-ARM-003 | Chihuahua | Ojinaga | 2026-09-22 | 0 | 11 · sin calibre · ni serie | 0 | 0 · NO DETERMINADA | 0 · NO DETERMINADA | 0 | 0 | 0 | 2 | FGR | Bajo · FUENTE · REGIONAL ÚNICA
+  ARG-124-ARM-003 | Chihuahua | Loma de Juárez · (Ojinaga) | 2026-09-21 · VENTANA ARGOS 123 · NO INTEGRA | 0 | 11 · AR-15, 7.62×39, · .223, FN SCAR · y FN P90 | 0 | 0 · sin cifra | 0 · sin cifra | 0 | 0 | 0 | 2 | SSPE Chihuahua · NO la FGR | Medio · 19,400 dólares · en rubro aparte
   ARG-124-ARM-004 | Sinaloa | Escuinapa | 2026-09-22 | 0 | 9 · sin calibre · ni serie | 0 | 0 · sin cifra | 0 · sin cifra | 0 | 0 | 0 | 3 · uno menor · de edad | Guardia · Nacional | Medio
   ARG-124-ARM-005 | Sonora | NO ESPECIFICADO | 2026-09-22 | 0 | 3 · sin calibre · ni serie | 0 | 330 | 7 | 0 | 0 | 0 | 0 · NO ESPECIFICADOS | SEMAR + Ejército · + GN + Fiscalía | Medio
   ARG-124-ARM-006 | Morelos | Cuautla · carr. libre · Yautepec-Cuautla | 2026-09-22 | 0 | 0 | 3 · el emisor no · publica el tipo | 131 | 5 | 0 | 0 | 0 | 2 | SSPC | Alto · compartimento · oculto en tablero
@@ -468,10 +456,10 @@ AGUASCALIENTES SE REGISTRA PERO NO SUMA: SU VENTANA DE ORIGEN ES ARGOS 123.
   ARG-124-ARM-010 | Michoacán | NO ESPECIFICADO | 2026-09-22 | 0 | 2 · sin calibre · ni serie | 0 | 0 · sin cifra | 0 · sin cifra | 0 | 0 | 0 | 0 · no publicados | GN + Ejército · + Policía Estatal | Medio
   ARG-124-ARM-011 | Aguascalientes | NO ESPECIFICADO | 2026-09-21 · VENTANA ARGOS 123 · NO INTEGRA | 8 | 3 | 0 | 187,710 | 0 · no publicados | 0 | 0 | 0 | 1 | FGR + SSPC | Medio · remolque con · un caballo
 
-Lectura regional —cálculo propio—: Noroeste 5 eventos (Concordia, Valle de la Trinidad, Ojinaga,
+Lectura regional —cálculo propio—: Noroeste 4 eventos (Concordia, Valle de la Trinidad,
 Escuinapa, Sonora) · Centro 2 (Cuautla, Cuauhtémoc) · Golfo 1 (Villahermosa) · Sureste 1
-(Tapachula) · Occidente 1 (Michoacán) · Noreste 0. EL NOROESTE CONCENTRA LA MITAD DE LOS EVENTOS
-Y EL 76 % DE LAS ARMAS LARGAS INTEGRADAS.
+(Tapachula) · Occidente 1 (Michoacán) · Noreste 0. EL NOROESTE CONCENTRA CASI LA MITAD DE LOS
+EVENTOS Y EL 70 % DE LAS ARMAS LARGAS INTEGRADAS — 16 DE 23, CÁLCULO PROPIO.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-09-24 · Hora: 06:41 (CDMX) · Corte: Matutino · ARGOS N.° 124 · USO INSTITUCIONAL

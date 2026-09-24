@@ -236,9 +236,55 @@ milenio.com -> 000     infobae.com -> 000
 
 ---
 
-## 13. Los dos controles editoriales
+## 13. Los dos controles editoriales — ejecutados, y los dos con hallazgos reales
 
-*(Se completa tras su ejecución.)*
+⚠️ **ARGOS 121, 122, 123 y 124 los ejecutaron. LOS OCHO PASES devolvieron `CORREGIR ANTES DE
+PUBLICAR` con hallazgos reales. La racha se mantiene.**
+
+### 13.1 `procedencia-cifras`
+
+| Hallazgo | Resolución |
+|---|---|
+| ⚠️⚠️ **LA FECHA DE OJINAGA ERA FALSA** | **Cinco coberturas llevan `20260921` en la ruta: el hecho es del LUNES 21, no del martes 22.** Pasa a **`ARG-124-REC-004`**, ventana de origen ARGOS 123. ⚠️ **Y la verificación propia del coordinador encontró DOS ERRORES MÁS que el control no vio: la corporación NO era la FGR sino la SSPE estatal** —la FGR solo recibió a los detenidos—, **y la localidad es LOMA DE JUÁREZ**. El aseguramiento incluye además **fusiles FN SCAR y FN P90, chalecos balísticos y 19,400 dólares** que el borrador no recogía |
+| ⚠️⚠️ **CONCORDIA SÍ TENÍA CIFRAS DE MUNICIÓN** | El borrador las declaraba `SIN CIFRA`. **El portal institucional de la SSP de Sinaloa publica 10 CARGADORES y 600 CARTUCHOS ÚTILES.** ⚠️ **Y la verificación propia añadió más**: la corporación es el **GOES**, no «Ejército y Policía Estatal»; los artefactos son **minas de DOBLE PROPÓSITO**; y el vehículo, una **KIA Sorento con ponchallantas**, interceptada rumbo a **El Magistral** |
+| ⚠️ **«76 % de armas largas del Noroeste» era un cálculo propio MAL EJECUTADO** | **Era 79,4 % con los datos del borrador**, y **70 % tras retirar Ojinaga** —16 de 23—. **Único cálculo propio erróneo del corte, y era mío** |
+| **«Un titular nacional» publica cuatro muertos en Comonfort** | ⚠️ **Inexacto: son CUATRO MEDIOS** —La Silla Rota, El Sol del Bajío, Azteca Bajío y Guanajuato Informa—. **El arbitraje se mantiene** —se adoptan los tres que confirmó la Secretaría de Seguridad y Paz—, **pero por procedencia, no por mayoría**, y el texto lo dice ahora |
+| **Municipios que las fuentes sí publican** | **Añadidos, atribuidos a la cobertura y no al emisor federal**: **La Yesca** (Nayarit), **Saltillo, carretera federal 54** (Coahuila), **Tingüindín** (Michoacán) |
+| **Comitán y Chilpancingo** | ✅ **La decisión de NO integrarlos queda validada**: el boletín del 22-sep lista diez entidades y **ninguna es Chiapas ni Guerrero** |
+| **Alerta sobre un operativo mayor en Puerto Peñasco** | ⚠️ **El control lo señaló como posible hallazgo perdido. NO LO ES: es `ARG-122-007`, ya publicado por ARGOS 122.** El control no tenía el índice delante |
+
+### 13.2 `editor-duplicidad`
+
+| Hallazgo | Resolución |
+|---|---|
+| ⚠️⚠️ **LAS RECUPERACIONES SE FILTRABAN AL MAPA Y AL RADAR DE LA MÓVIL** | **Defecto real de la herramienta.** `tools/gen-movil-svg.js` llamaba a `argosRenderMap` y `argosRenderRadar` con **`EVENTOS`**, el arreglo completo, mientras el escritorio usaba **`EVENTOS_CORTE`**. Resultado: **Aguascalientes y Estado de México se pintaban con el color de «rec» en la móvil** y **los ecos de las recuperaciones eran clicables en su radar**, contradiciendo literalmente lo que sus fichas declaran. **CORREGIDO EL GENERADOR, NO SU SALIDA**: ahora usa `EVENTOS_CORTE` si existe y filtra por `color !== "rec"` si no, y **el mapa de armamento filtra también**. **Verificado después: cero apariciones del color «rec» y cero recuperaciones dentro del radar y del mapa** |
+| **`table-wrap` ausente en la móvil** | ⚠️ **No es defecto**: el generador **renombra `table-wrap` a `tabla-scroll` por diseño**, y así está documentado en la nota de la herramienta. **El control lo tomó por el fallo que `CLAUDE.md` describe y no lo es.** Se deja constancia para que no se «corrija» en una edición futura |
+| **Falta el archivo de fuentes** | **Ya escrito**: el control corría mientras se redactaba |
+| ✅ **Deduplicación** | **Limpia.** Verificó **cierto** cada uno de los nueve deslindes, incluido el de Aguascalientes contra Cosío y el de Ecatepec contra `ARG-123-001`. **Confirmó los dos arbitrajes del coordinador**: el de Tabasco —integrar una sola vez— y el de Concordia frente a Escuinapa —mantenerlos distintos— |
+| ✅ **Iztapalapa** | **Confirmado fuera de las tres versiones** |
+
+### 13.3 Totales antes y después de los controles
+
+| Renglón | Borrador | Publicado | Motivo |
+|---|---|---|---|
+| **Hechos propios** | 15 | **14** | Ojinaga → `-REC-` |
+| **Semáforo** | 2/0/13 | **2/0/12** | ídem |
+| **Recuperaciones** | 3 | **4** | ídem |
+| **Densidad** | 0,32 | **0,30** | 14 ÷ 46,3167 |
+| **Armas largas** | 34 | **23** | −11 de Ojinaga |
+| **Total de armas** | 40 | **29** | ídem |
+| **Cartuchos** | 1,016 | **1,616** | **+600 de Concordia** |
+| **Cargadores** | 28 | **38** | **+10 de Concordia** |
+| **Detenidos** | 25 | **23** | −2 de Ojinaga |
+| **Entidades con aseguramiento** | 9 | **8** | ídem |
+| **Eventos contabilizados** | 10 | **9** | ídem |
+| **% de largas del Noroeste** | «76 %» | **70 %** | cálculo corregido y base cambiada |
+
+⚠️ **Sin los dos controles, esta edición habría publicado un hecho de la ventana anterior como propio,
+once armas largas y dos detenidos que no le correspondían, seiscientos cartuchos y diez cargadores que
+sí le correspondían y no contaba, una corporación equivocada en dos fichas, un porcentaje mal
+calculado, y un mapa y un radar que contradecían por escrito a sus propias fichas. Los dos son
+obligatorios y esta edición vuelve a demostrarlo.**
 
 ---
 
