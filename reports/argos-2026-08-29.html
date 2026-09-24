@@ -1,0 +1,1486 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>ARGOS 111 — Reporte Nacional de Seguridad (2026-08-29)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --bg-navy:#040814;
+    --panel:#0a1230;
+    --panel-2:#0d1638;
+    --grid-line: rgba(76,230,255,0.08);
+    --border: rgba(76,230,255,0.28);
+    --cyan:#4ce6ff;
+    --cyan-dim:#8fb8c8;
+    --white:#eef6fb;
+    --red:#ff3b3b;
+    --yellow:#ffd23f;
+    --green:#33d17a;
+    --mono: "Consolas","SFMono-Regular","Courier New",monospace;
+    --sans: "Segoe UI","Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:#000;}
+  body{
+    font-family:var(--sans);
+    color:var(--white);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:24px;
+    padding:24px 0 60px;
+  }
+
+  /* ---------- PAGE SHELL ---------- */
+  .page{
+    width:1000px;
+    max-width:96vw;
+    min-height:1360px;
+    background:
+      linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0/40px 40px,
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0/40px 40px,
+      radial-gradient(ellipse at 50% -10%, #0c1a3d 0%, var(--bg-navy) 55%);
+    background-color:var(--bg-navy);
+    border:1px solid var(--border);
+    position:relative;
+    padding:22px 30px 70px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    box-shadow:0 0 0 1px #000, 0 20px 60px rgba(0,0,0,.6);
+    overflow-x:auto;
+  }
+  table.exec{ min-width:600px; }
+  .table-wrap{overflow-x:auto;width:100%;}
+
+  /* ---------- ICONOGRAFÍA DE ARMAMENTO ----------
+     Trazo monocromo que hereda el color del texto. Cada icono identifica una
+     categoría de la taxonomía de CLAUDE.md y va SIEMPRE con etiqueta y cifra:
+     nunca identifica por color ni por forma en solitario. */
+  .ico{width:15px;height:15px;vertical-align:-3px;margin-right:5px;flex:none;
+    stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;
+    stroke-linejoin:round;opacity:.92;}
+  .ico-lg{width:22px;height:22px;margin:0 0 6px 0;vertical-align:0;}
+
+  /* Tarjetas de conteo del módulo de armamento (Bloque 1 de CLAUDE.md). */
+  .conteo{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));
+    gap:6px;margin:10px 0 4px;}
+  .conteo .tile{border:1px solid var(--border);background:var(--panel);
+    padding:9px 8px;display:flex;flex-direction:column;align-items:flex-start;}
+  .conteo .tile .lbl{font-family:var(--mono);font-size:8.5px;letter-spacing:1px;
+    text-transform:uppercase;color:var(--cyan);line-height:1.3;}
+  .conteo .tile .num{font-size:19px;font-weight:700;color:var(--white);
+    line-height:1.15;margin-top:3px;}
+  .conteo .tile .sub{font-size:8.5px;color:var(--muted);margin-top:2px;}
+  /* Categoría en cero: se muestra igual, atenuada. La ausencia es dato. */
+  .conteo .tile.cero{opacity:.45;}
+  .conteo .tile.cero .num{color:var(--muted);font-weight:600;}
+
+  @media print{
+    body{background:#000;padding:0;gap:0;}
+    .page{box-shadow:none;break-after:page; max-width:none; width:210mm; min-height:297mm;}
+  }
+  @media (max-width:480px){
+    .panel-title{flex-direction:column;align-items:flex-start;gap:2px;}
+  }
+
+  /* ---------- HEADER ---------- */
+  .masthead{
+    display:grid;
+    grid-template-columns:150px 1fr 150px;
+    align-items:center;
+    gap:14px;
+    border-bottom:1px solid var(--border);
+    padding-bottom:12px;
+  }
+  .masthead .brand{
+    font-family:var(--mono);
+    font-weight:700;
+    letter-spacing:2px;
+  }
+  .brand .argos-num{
+    font-size:34px;
+    line-height:1;
+    display:flex;
+    align-items:baseline;
+    gap:.22em;
+  }
+  .brand .argos-num .w{
+    font-size:1.14em;
+    font-weight:900;
+    letter-spacing:.14em;
+    color:var(--cyan);
+    -webkit-text-stroke:.7px var(--cyan);
+    text-shadow:0 0 12px rgba(76,230,255,.40);
+  }
+  .brand .argos-num .n{
+    font-size:.86em;
+    font-weight:800;
+    letter-spacing:.04em;
+    color:var(--white);
+    border:1px solid var(--cyan-dim);
+    padding:.06em .3em;
+    line-height:1;
+    background:rgba(76,230,255,.07);
+  }
+  .brand .sub{
+    font-size:10px;
+    color:var(--cyan-dim);
+    margin-top:4px;
+  }
+  .masthead .titles{
+    text-align:center;
+  }
+  .titles h1{
+    margin:0;
+    font-size:20px;
+    letter-spacing:4px;
+    color:var(--white);
+  }
+  .titles h2{
+    margin:2px 0 0;
+    font-size:12px;
+    letter-spacing:2px;
+    color:var(--cyan);
+    font-weight:600;
+  }
+  .titles .motto{
+    margin-top:6px;
+    font-family:var(--mono);
+    font-size:10px;
+    color:var(--cyan-dim);
+    letter-spacing:2px;
+  }
+  .masthead .corte{
+    text-align:right;
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--cyan-dim);
+    line-height:1.6;
+  }
+  .masthead .corte b{color:var(--white);}
+
+  /* ---------- RADAR + MAP (PORTADA) ---------- */
+  .cover-visuals{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    min-width:0;
+  }
+  .panel{
+    min-width:0;
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:2px;
+    padding:14px 16px;
+  }
+  .panel-title{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:2px;
+    color:var(--cyan);
+    border-bottom:1px solid var(--border);
+    padding-bottom:6px;
+    margin-bottom:10px;
+    display:flex;
+    justify-content:space-between;
+  }
+  .radar-box, .map-box{
+    height:220px;
+    display:flex;align-items:center;justify-content:center;
+    position:relative;
+    min-width:0;
+    overflow:hidden;
+  }
+  .radar-box svg, .map-box svg{width:100%;height:100%;display:block;}
+  .estado-path{stroke:var(--bg-navy);stroke-width:0.6;cursor:pointer;transition:filter .15s;}
+  .estado-path:hover{filter:brightness(1.4);}
+  .radar-ring{fill:none;stroke:var(--border);stroke-width:1;}
+  .radar-cross{stroke:var(--border);stroke-width:1;}
+  .radar-sweep-path{fill:rgba(76,230,255,.35);}
+  .eco{stroke:#04101f;stroke-width:0.7;cursor:pointer;}
+  .eco.pulse{animation:ecoPulse 1.6s ease-in-out infinite;}
+  @keyframes ecoPulse{ 0%,100%{opacity:1;} 50%{opacity:.4;} }
+  .map-caption{
+    position:absolute;bottom:2px;left:0;right:0;text-align:center;
+    font-family:var(--mono);font-size:9px;color:var(--cyan-dim);
+  }
+  .radar-stats{
+    display:flex;justify-content:space-between;gap:6px;margin-top:8px;
+    font-family:var(--mono);font-size:9px;color:var(--cyan-dim);
+    border-top:1px dashed var(--border);padding-top:6px;text-align:center;
+  }
+  .radar-stats b{color:var(--white);display:block;font-size:14px;margin-top:2px;}
+  .argos-tooltip{
+    position:fixed;z-index:80;max-width:260px;
+    background:var(--panel-2);border:1px solid var(--border);
+    padding:8px 10px;font-family:var(--mono);font-size:10px;color:var(--white);
+    line-height:1.5;pointer-events:none;opacity:0;transition:opacity .1s;
+    box-shadow:0 6px 18px rgba(0,0,0,.5);
+  }
+  .argos-tooltip.show{opacity:1;}
+  .argos-tooltip b{color:var(--cyan);}
+  .nota{scroll-margin-top:16px;}
+
+  /* ---------- SEMAFORO ---------- */
+  .semaforo{
+    display:flex;gap:10px;
+  }
+  .sem-item{
+    flex:1;
+    border:1px solid var(--border);
+    background:var(--panel);
+    padding:10px 12px;
+    font-family:var(--mono);
+  }
+  .sem-item .dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:8px;}
+  .sem-item.alto .dot{background:var(--red);box-shadow:0 0 8px var(--red);}
+  .sem-item.medio .dot{background:var(--yellow);box-shadow:0 0 8px var(--yellow);}
+  .sem-item.bajo .dot{background:var(--green);box-shadow:0 0 8px var(--green);}
+  .sem-item .lbl{font-size:11px;letter-spacing:1px;color:var(--cyan-dim);}
+  .sem-item .val{font-size:20px;color:var(--white);margin-top:4px;}
+
+  /* ---------- SECTION HEADS ---------- */
+  .section-head{
+    font-family:var(--mono);
+    font-size:13px;
+    letter-spacing:3px;
+    color:var(--cyan);
+    border-left:3px solid var(--cyan);
+    padding:4px 10px;
+    background:linear-gradient(90deg, rgba(76,230,255,.08), transparent);
+  }
+
+  /* ---------- EXEC LIST ---------- */
+  .list{
+    display:flex;flex-direction:column;gap:8px;
+  }
+  .list-item{
+    display:grid;
+    grid-template-columns:70px 1fr 110px;
+    gap:10px;
+    border:1px solid var(--border);
+    background:var(--panel);
+    padding:8px 12px;
+    font-size:12px;
+    align-items:center;
+  }
+  .tag{
+    font-family:var(--mono);
+    font-size:9px;
+    padding:2px 6px;
+    text-align:center;
+    border-radius:2px;
+    letter-spacing:1px;
+  }
+  .tag.alto{background:rgba(255,59,59,.15);color:var(--red);border:1px solid var(--red);}
+  .tag.medio{background:rgba(255,210,63,.15);color:var(--yellow);border:1px solid var(--yellow);}
+  .tag.bajo{background:rgba(51,209,122,.15);color:var(--green);border:1px solid var(--green);}
+  .tag.sindato{background:rgba(143,184,200,.12);color:var(--cyan-dim);border:1px solid var(--cyan-dim);}
+  .placeholder{color:var(--cyan-dim);font-style:italic;}
+
+  /* ---------- ALERTA ---------- */
+  .alerta{
+    border:1px solid var(--red);
+    background:rgba(255,59,59,.08);
+    padding:10px 14px;
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+  }
+  .alerta .flag{
+    font-family:var(--mono);color:var(--red);font-weight:700;font-size:12px;letter-spacing:2px;
+    white-space:nowrap;
+  }
+  .alerta p{margin:0;font-size:12px;color:var(--white);}
+  .alerta.contexto{border-color:var(--cyan);background:rgba(76,230,255,.06);}
+  .alerta.contexto .flag{color:var(--cyan);}
+
+  /* ---------- TABLE ---------- */
+  table.exec{
+    width:100%;
+    border-collapse:collapse;
+    font-size:11.5px;
+  }
+  table.exec th, table.exec td{
+    border:1px solid var(--border);
+    padding:6px 8px;
+    text-align:left;
+  }
+  table.exec th{
+    background:var(--panel-2);
+    color:var(--cyan);
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:1px;
+  }
+  table.exec td{background:var(--panel);}
+
+  /* ---------- NOTA CARD (4 apartados) ---------- */
+  .nota{
+    border:1px solid var(--border);
+    background:var(--panel);
+  }
+  .nota-header{
+    display:flex;justify-content:space-between;align-items:center;
+    background:var(--panel-2);
+    padding:8px 12px;
+    border-bottom:1px solid var(--border);
+  }
+  .nota-header h3{
+    margin:0;font-size:13px;color:var(--white);letter-spacing:.5px;
+  }
+  .nota-header .risk-flag{
+    font-family:var(--mono);font-size:9px;
+    border:1px solid; padding:2px 6px;letter-spacing:1px;
+  }
+  .nota-header .risk-flag.alto{color:var(--red);border-color:var(--red);}
+  .nota-header .risk-flag.medio{color:var(--yellow);border-color:var(--yellow);}
+  .nota-header .risk-flag.bajo{color:var(--green);border-color:var(--green);}
+  .nota-header .risk-flag.sindato{color:var(--cyan-dim);border-color:var(--cyan-dim);}
+  .nota-body{padding:10px 14px;display:flex;flex-direction:column;gap:8px;}
+  .apartado{font-size:12px;line-height:1.5;}
+  .apartado .k{
+    display:block;
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:1.5px;
+    color:var(--cyan);
+    margin-bottom:2px;
+  }
+  .nota-footer{
+    border-top:1px solid var(--border);
+    padding:8px 14px;
+    font-family:var(--mono);
+    font-size:10px;
+    color:var(--cyan-dim);
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    align-items:center;
+  }
+  .nota-footer b{color:var(--white);}
+  .stars{color:var(--yellow);letter-spacing:1px;}
+  .src-tag{
+    border:1px solid var(--border);
+    padding:1px 6px;
+    border-radius:2px;
+  }
+
+  /* ---------- PHOTO SLOT ---------- */
+  .photo-slot{
+    border:1px dashed var(--cyan-dim);
+    background:repeating-linear-gradient(45deg, rgba(76,230,255,.03) 0 10px, transparent 10px 20px);
+    min-height:110px;
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;
+    font-family:var(--mono);
+    font-size:10px;
+    color:var(--cyan-dim);
+    padding:8px;
+  }
+
+  /* ---------- FOOTER BAR ---------- */
+  .footbar{
+    position:absolute;
+    left:0;right:0;bottom:0;
+    display:flex;
+    justify-content:space-between;
+    padding:8px 30px;
+    border-top:1px solid var(--border);
+    font-family:var(--mono);
+    font-size:9.5px;
+    color:var(--cyan-dim);
+    background:rgba(4,8,20,.9);
+  }
+  .footbar .uso{color:var(--yellow);letter-spacing:1px;}
+
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;}
+  .muted-note{
+    font-family:var(--mono);font-size:9.5px;color:var(--cyan-dim);
+    border:1px dashed var(--border); padding:6px 10px;
+  }
+  .src-list{font-size:11px;line-height:1.7;}
+  .src-list .grp{color:var(--cyan-dim);font-family:var(--mono);font-size:9px;letter-spacing:1px;display:block;margin-top:6px;}
+
+  /* ---------- STAT TILES (Bloques 1 y 4) ---------- */
+  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+  .stat-tile{
+    border:1px solid var(--border);background:var(--panel);
+    padding:8px 10px;text-align:center;
+  }
+  .stat-tile .lbl{font-family:var(--mono);font-size:8.5px;color:var(--cyan-dim);letter-spacing:.5px;}
+  .stat-tile .val{font-size:19px;color:var(--white);margin-top:3px;font-weight:600;}
+  .stat-tile .icon{font-size:15px;}
+
+  /* ---------- COVERAGE INDICATOR ---------- */
+  .coverage{
+    font-family:var(--mono);font-size:9.5px;color:var(--cyan-dim);
+    border:1px dashed var(--border);padding:8px 10px;
+    display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px 14px;
+  }
+  .coverage b{color:var(--white);}
+
+  table.exec.wide{min-width:920px;}
+</style>
+</head>
+<body>
+<!-- ============ PÁGINA 1 — PORTADA ============ -->
+<section class="page">
+  <header class="masthead">
+    <div class="brand">
+      <div class="argos-num"><span class="w">ARGOS</span><span class="n">111</span></div>
+      <div class="sub">SISTEMA DE INTELIGENCIA CRIMINAL TRAZABLE</div>
+    </div>
+    <div class="titles">
+      <h1>REPORTE NACIONAL DE SEGURIDAD</h1>
+      <h2>REPORTE DIARIO DE INTELIGENCIA CRIMINAL</h2>
+      <div class="motto">INVESTIGACIONES, BÚSQUEDA Y VERDAD</div>
+    </div>
+    <div class="corte">
+      CORTE INFORMATIVO<br>
+      <b>Fecha:</b> 2026-08-29<br>
+      <b>Hora:</b> 09:05 (CDMX)
+    </div>
+  </header>
+
+  <div class="cover-visuals">
+    <div class="panel">
+      <div class="panel-title"><span>RADAR CENTRAL</span><span>EN VIVO</span></div>
+      <div class="radar-box" id="argos-radar"></div>
+      <div class="radar-stats" id="argos-radar-stats"><div>🔴 Alto impacto<br><b>1</b></div><div>🟡 Violencia operativa<br><b>1</b></div><div>🟢 Acciones institucionales<br><b>3</b></div></div>
+    </div>
+    <div class="panel">
+      <div class="panel-title"><span>MAPA NACIONAL — FOCOS DEL CORTE</span><span>GIS POR ENTIDAD</span></div>
+      <div class="map-box" id="argos-map"></div>
+      <div class="map-caption">Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.</div>
+    </div>
+  </div>
+
+  <div class="section-head">SEMÁFORO ARGOS</div>
+  <div class="semaforo">
+    <div class="sem-item alto"><span class="dot"></span><span class="lbl">🔴 ROJO — ALTO IMPACTO</span><div class="val">1 evento</div></div>
+    <div class="sem-item medio"><span class="dot"></span><span class="lbl">🟡 AMARILLO — VIOLENCIA OPERATIVA</span><div class="val">1 evento</div></div>
+    <div class="sem-item bajo"><span class="dot"></span><span class="lbl">🟢 VERDE — ACCIONES INSTITUCIONALES</span><div class="val">3 eventos</div></div>
+  </div>
+
+  <div class="alerta contexto">
+    <span class="flag">POR QUÉ HAY UN SOLO EVENTO ROJO Y POR QUÉ CUATRO DE LOS CINCO ESTÁN EN SINALOA</span>
+    <p><b>Un rojo no es una ventana tranquila: es una ventana estrecha y un país mal publicado.</b>
+    Las 26 horas de este corte contienen <b>un ataque incendiario contra un edificio habitado</b> y
+    poco más que se haya publicado con fecha anclada. El semáforo <b>no cuenta lo que ocurrió, cuenta
+    lo que quedó documentado</b>, y esa distancia es hoy mayor de lo normal por dos razones que
+    conviene tener a la vista al leer estas cifras.
+    <br><b>Primera: el índice de las fuentes va por detrás del corte.</b> La ventana cierra a las
+    09:05 del sábado 29 y las consultas devuelven de forma consistente material del 24 al 28. Parte
+    de este vacío es de reloj.
+    <br><b>Segunda: el hecho de mayor volumen del corte quedó fuera por un campo que la autoridad no
+    publica.</b> El Gobierno de Zacatecas difundió <b>once detenidos y diez armas largas</b> en el
+    municipio de Tabasco —operativos derivados del ataque con explosivos contra la fiscalía del día
+    27—, pero <b>sin fecha en la ruta del boletín</b>. Es fuente institucional y no entra:
+    <code>SIN ANCLA FECHADA</code>. Si se anclara, este corte tendría otro rostro.
+    <br><b>La concentración en Sinaloa es real, no un sesgo de búsqueda</b>: se barrieron las 32
+    entidades y cuatro de los cinco eventos con fecha anclada están en esa entidad, tres de ellos en
+    tres municipios distintos —Culiacán, Escuinapa y Concordia— en un mismo día.</p>
+  </div>
+
+  <p class="muted-note">
+    Ventana: <b>28-ago 06:25 → 29-ago 09:05 CDMX</b> (26 h 40 min). Continuación estricta de ARGOS 110.
+    <b>Cinco eventos en tres entidades</b> —Sinaloa, Chihuahua y Durango—. El semáforo cuenta
+    <b>solo hechos de esta ventana</b>; la <b>recuperación</b> de la página 3, de ventana anterior
+    declarada, <b>no entra en estos totales</b> ni colorea el mapa ni el radar.
+    <b>El hecho rojo lleva la marca <code>FRONTERA DE VENTANA — HORA NO FIJADA</code></b>: sus fuentes
+    lo sitúan «la mañana del viernes» sin hora citable, y la ventana abre a las 06:25 de ese viernes.
+    Se integra a la edición que lo ve primero. <b>Techo de confianza del producto: ★★★★☆</b>, por
+    bloqueo de acceso directo a portales oficiales.
+  </p>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-08-29 · Hora: 09:05 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 111</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+<!-- ============ PÁGINA 2 — CRIMEN ORGANIZADO (I) ============ -->
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (I) — HECHOS DE ALTO IMPACTO DEL CORTE</h2></div>
+
+  <div class="nota" id="ARG-111-001">
+    <div class="nota-header"><h3>SINALOA — CULIACÁN, FRACCIONAMIENTO MONTEBELLO: ATAQUE ARMADO E INCENDIO CONTRA UN EDIFICIO DE DEPARTAMENTOS HABITADO; CINCO PERSONAS RESCATADAS, TRES DE ELLAS MENORES</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+        La <b>mañana del viernes 28 de agosto</b>, en el <b>fraccionamiento Montebello</b>, al sur de
+        <b>Culiacán</b>, sujetos armados a bordo de <b>dos vehículos</b> dispararon con <b>armas
+        largas contra la fachada</b> de un <b>edificio de departamentos de cuatro niveles</b>.
+        <br>Los agresores <b>embistieron y derribaron el portón principal</b> con un <b>vehículo con
+        reporte de robo</b>, que quedó <b>encajado en el acceso</b>, e <b>incendiaron el inmueble con
+        residentes dentro</b>.
+        <br>El <b>Cuerpo de Bomberos de Culiacán rescató a cinco personas, tres de ellas menores de
+        edad</b> —los dos adultos restantes no llevan sexo especificado en ningún fragmento
+        citable—, empleando <b>escala telescópica</b> para extraer a una mujer y dos menores que no
+        podían salir de su departamento por el fuego. <b>Paramédicos confirmaron que todos los
+        residentes resultaron ilesos.</b> Peritos de la <b>Fiscalía General del Estado de Sinaloa</b>
+        acordonaron el sitio y recolectaron casquillos.
+        <br><b>«Más de cien casquillos» NO es cifra y no se contabiliza.</b> Ninguna fuente publica un
+        número exacto. Tampoco se publicó calibre. <b>Se retiró de esta ficha la ubicación
+        «junto a una escuela primaria»</b>: solo constaba en el resumen del buscador, que además
+        escribió el nombre del plantel de dos formas distintas en dos consultas.
+        <br><code>FRONTERA DE VENTANA — HORA NO FIJADA</code>. Las fuentes sitúan el ataque «la mañana
+        del viernes»; <b>ninguna publica la hora con fragmento citable</b>. La ventana abre a las
+        <b>06:25 de ese mismo viernes</b>, de modo que el hecho no puede asignarse con certeza a esta
+        edición ni a la anterior. Se integra aquí <b>por ser la primera que lo ve</b>, y la marca es
+        permanente.
+        <br><b>Deslinde verificado</b>: <b>no es</b> la nota «ataque a balazos deja dos heridos y casa
+        quemada en Montebello», que corresponde a un hecho de <b>diciembre de 2025</b> —otra fecha,
+        otro inmueble y otro saldo—. <b>Son dos hechos y no se funden.</b> Reserva menor declarada:
+        una fuente regional titula «atacan y queman <b>dos viviendas</b>» donde las demás describen un
+        edificio de departamentos; <b>no se arbitra sin lectura directa</b> y no altera el saldo.
+      </div>
+      <div class="apartado"><span class="k">CORROBORACIÓN</span>
+        Institucional por cita: <b>FGE Sinaloa</b> (procesamiento del sitio) y <b>Bomberos de
+        Culiacán</b> (rescate). <b>Sin boletín propio localizado</b> —
+        <code>SIN RESULTADO INDEXADO EN VENTANA</code>.
+        Nacional: <a href="https://www.capitalmexico.com.mx/estados/atacan-e-incendian-edificio-en-montebello-culiacan/">Capital México</a>,
+        <a href="https://www.nmas.com.mx/seguridad/balaceras/video-causa-panico-balacera-departamentos-en-montebello-culiacan/">N+</a>,
+        <a href="https://www.quadratin.com.mx/nacionales/balean-y-queman-departamentos-en-culiacan-sinaloa/">Quadratín</a>.
+        Regional: <a href="https://www.redmetropolitana.com.mx/2026/08/28/rescatan-a-cinco-personas-tres-de-ellas-menores-de-edad-atrapadas-en-edificio-incendiado-por-sujetos-armados-en-culiacan/">Red Metropolitana <code>/2026/08/28/</code></a>,
+        <a href="https://oem.com.mx/elsoldesinaloa/policiaca/atacan-y-queman-dos-viviendas-en-el-fraccionamiento-montebello-al-sur-de-culiacan-27368306">El Sol de Sinaloa</a>,
+        <a href="https://acontecersanluis.wordpress.com/2026/08/28/rafaguean-edificio-y-lo-dejan-ardiendo-en-culiacan/">Acontecer <code>/2026/08/28/</code></a>.
+      </div>
+      <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+        <b>Clasificado 🔴 por terror contra población civil.</b> El color lo fija el <b>tipo de
+        evento</b>, no el saldo: que no haya muertos <b>no lo baja de categoría</b>. Disparar contra
+        la fachada de un edificio habitado y prenderle fuego con familias dentro es una acción cuyo
+        efecto buscado es el terror, no la eliminación de un objetivo.
+        <br><b>El método describe preparación, no impulso.</b> Tres elementos lo acreditan: <b>dos
+        vehículos</b>, un <b>tercero robado empleado como ariete</b> contra el portón, y <b>fuego
+        aplicado después de forzar el acceso</b>. Derribar la puerta antes de incendiar indica que el
+        objetivo era <b>impedir la salida</b>, no solo dañar el inmueble. <b>El vehículo robado que
+        quedó encajado es la única pieza con trazabilidad registral del hecho</b>: su número de serie
+        contra el reporte de robo da fecha, lugar y víctima del despojo previo, y es la línea más
+        barata del corte.
+        <br><b>El blanco es un domicilio colectivo, y eso cambia el perfil de riesgo.</b> Un edificio
+        de cuatro niveles concentra a familias que no eligen a sus vecinos: <b>la agresión dirigida
+        contra un residente pone en riesgo a todos los demás</b>, que fue exactamente lo que ocurrió.
+        <b>Tres menores atrapados por el fuego es el saldo que no hubo por minutos.</b>
+        <br><b>Vacío a cubrir</b>: no se ha publicado <b>a qué departamento se dirigía el ataque</b>,
+        ni si el inmueble tenía denuncia o antecedente previo, ni el <b>calibre</b> de los casquillos
+        recolectados —el único dato que permitiría cotejo balístico con las carpetas abiertas del
+        municipio—. <b>Sin número de casquillos ni calibre, el sitio no alimenta ninguna línea de
+        cotejo</b>, y esa es una pérdida evitable de coste cero.
+      </div>
+      <div class="trazo">
+        <span><b>ARG-111-001</b></span>
+        <span>Nivel de confianza: ★★★★☆</span>
+        <span>Fuentes: Institucional por cita / Nacional / Regional</span>
+        <span>Consulta: 2026-08-29 09:05 CDMX</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-111-004">
+    <div class="nota-header"><h3>CHIHUAHUA — CAPITAL, CALLE ALTOS DE LA PARRA: DISPAROS DESDE MOTOCICLETA CONTRA UN DOMICILIO; SIN LESIONADOS Y CON LA ADSCRIPCIÓN DEL OCUPANTE SIN ACREDITAR</h3><span class="risk-flag medio">AMARILLO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+        La <b>noche del viernes 28 de agosto</b>, en la <b>calle Altos de la Parra</b> de la ciudad de
+        <b>Chihuahua</b>, sujetos a bordo de una <b>motocicleta</b> dispararon <b>varias veces</b>
+        contra un domicilio. <b>No hubo lesionados</b>; el resultado fueron <b>daños materiales</b>. En el sitio se
+        localizaron <b>casquillos calibre 9 mm</b>.
+        <br><b>La fuente describe el inmueble como «presuntamente habitado por un agente estatal».</b>
+        <b>«Presuntamente» no acredita adscripción</b>, y ninguna corporación lo ha confirmado.
+        <br>No se publicó número de disparos ni de casquillos, ni si el ocupante se encontraba en el
+        domicilio. <b>Reserva de ubicación declarada</b>: otras coberturas del mismo ataque lo sitúan
+        en <b>«Cerro Coronel»</b> y en la <b>«colonia Lealtad»</b>. <b>No se funden ni se arbitran</b>
+        sin verificar que se trata del mismo domicilio.
+      </div>
+      <div class="apartado"><span class="k">CORROBORACIÓN</span>
+        Institucional: <b>ninguna</b>. Ni la Fiscalía de Chihuahua ni
+        <code>sspe.chihuahua.gob.mx</code> publicaron sobre el hecho —
+        <code>SIN RESULTADO INDEXADO EN VENTANA</code>, con el portal <b>interrogado al periodo</b>.
+        Regional: <a href="https://eldiariochihuahua.mx/">El Diario de Chihuahua <code>/2026/aug/28/</code></a>.
+        <br><b>Pendiente de corroboración independiente.</b> Fuente única.
+      </div>
+      <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+        <b>Clasificado 🟡, y el color depende de un solo dato no acreditado.</b> Si se confirmara que
+        el ocupante es personal de seguridad, el hecho sería un <b>ataque contra autoridad</b> y
+        pasaría a <b>🔴</b> conforme a la metodología. <b>Mientras la adscripción no esté acreditada
+        no se sube de color</b>: hacerlo inflaría el nivel de riesgo nacional con un hecho no probado,
+        que es precisamente lo que la regla de reserva prohíbe.
+        <br><b>El modo importa más que el saldo.</b> Disparos desde motocicleta contra un domicilio,
+        de noche y sin lesionados, describen un <b>acto de intimidación dirigida</b>, no un intento de
+        homicidio: quien busca matar no dispara contra una fachada. <b>La ausencia de víctimas es
+        parte del mensaje, no un fallo de puntería.</b>
+        <br><b>Qué lo resuelve, y es de coste cero</b>: la <b>confirmación o el desmentido de la
+        adscripción del ocupante</b> por parte de la corporación. Un solo dato mueve el hecho entre
+        dos categorías del semáforo, y <b>mientras no se publique, el nivel de riesgo de Chihuahua en
+        este corte está declarado por defecto a la baja</b>. Si se acredita, corresponde además
+        revisar si el domicilio contaba con medidas de protección.
+      </div>
+      <div class="trazo">
+        <span><b>ARG-111-004</b></span>
+        <span>Nivel de confianza: ★★☆☆☆</span>
+        <span>Fuentes: Regional — Pendiente de corroboración</span>
+        <span>Consulta: 2026-08-29 09:05 CDMX</span>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-08-29 · Hora: 09:05 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 111</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+<!-- ============ PÁGINA 3 — CRIMEN ORGANIZADO (II) ============ -->
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (II) — ACCIONES INSTITUCIONALES DEL CORTE Y RECUPERACIÓN DE VENTANA ANTERIOR</h2></div>
+
+  <div class="nota" id="ARG-111-003">
+    <div class="nota-header"><h3>SINALOA — CONCORDIA, «OPERACIÓN SABLE»: LA MARINA LOCALIZA Y DESTRUYE 49 ARTEFACTOS EXPLOSIVOS IMPROVISADOS, EL SEGUNDO HALLAZGO MASIVO EN EL MISMO MUNICIPIO EN DIEZ DÍAS</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+        El <b>viernes 28 de agosto</b>, en el municipio de <b>Concordia</b>, la <b>Secretaría de
+        Marina</b>, en coordinación con la <b>FGR</b> y la <b>SSPC</b>, <b>localizó y destruyó
+        mediante detonación controlada 49 artefactos explosivos improvisados</b>, en el marco de la
+        <b>«Operación Sable»</b> y a partir de trabajo de inteligencia, patrullaje terrestre y
+        reconocimiento aéreo.
+        <br>Aseguró además <b>cuatro armas largas y un arma corta</b>, <b>55 cargadores</b>,
+        <b>2,825 cartuchos</b>, <b>tres vehículos</b>, droga y equipo táctico sin cifra publicada.
+        <br><b>Sin detenidos.</b> Ninguna cobertura reporta persona detenida: <b>es una ausencia
+        real, no un dato que falte</b>, y define la naturaleza del hallazgo —un depósito, no una
+        captura—.
+        <br><b>Reserva de cifra declarada</b>: la cantidad exacta de <b>2,825 cartuchos</b> procede de
+        <b>una sola fuente</b>; las demás publican «más de 2,800», que <b>no es cifra</b>. Se integra
+        la exacta y se declara que descansa en una fuente única.
+      </div>
+      <div class="apartado"><span class="k">CORROBORACIÓN</span>
+        Institucional por cita: <b>SEMAR</b>, <b>FGR</b> y <b>SSPC</b>. <b>Sin comunicado propio
+        alcanzable</b> — <code>SIN RESULTADO INDEXADO EN VENTANA</code> por bloqueo de egreso.
+        Nacional: <a href="https://www.razon.com.mx/mexico/2026/08/28/desmantelan-arsenal-y-destruyen-49-explosivos-en-sinaloa/">La Razón <code>/2026/08/28/</code></a>,
+        <a href="https://www.publimetro.com.mx/noticias/2026/08/28/sinaloa-desactiva-una-amenaza-destruyen-49-explosivos-y-decomisan-un-arsenal/">Publimetro <code>/2026/08/28/</code></a>,
+        <a href="https://www.cronica.com.mx/nacional/2026/08/28/realizan-aseguramiento-de-drogas-y-armamento-en-concordia-sinaloa/">La Crónica de Hoy <code>/2026/08/28/</code></a>,
+        <a href="https://lopezdoriga.com/nacional/operacion-sable-sinaloa-marina-destruye-49-artefactos-explosivos/">López-Dóriga</a>.
+        Regional: <a href="https://eldiariodechihuahua.mx/nacional/2026/aug/28/hallan-49-explosivos-y-arsenal-en-concordia-sinaloa-832209.html">El Diario de Chihuahua <code>/2026/aug/28/</code></a>,
+        <a href="https://www.elmanana.com/noticias/nacional/explosivos-improvisados-y-armas-asegurados-en-sinaloa/6179156">El Mañana</a> (única fuente del desglose exacto de cartuchos).
+      </div>
+      <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+        <b>Clasificado 🟢: es una operación programada, no una respuesta a una agresión.</b> Ni
+        enfrentamiento, ni detenidos, ni personal herido. <b>El Estado inició y encontró un depósito
+        vacío de custodios</b>, que es el mejor resultado posible en este tipo de intervención.
+        <br><b>Cuarenta y nueve artefactos en un solo municipio no son un alijo: son inventario.</b>
+        Y no es el primero. <b>El 18 de agosto se localizaron 172 artefactos en La Guásima, del mismo
+        municipio de Concordia</b>, con seis placas balísticas y cuatro chalecos —hecho de ventana
+        muy anterior, <b>fuera de todo total de este corte</b>, citado solo como antecedente—. Las
+        fuentes periodísticas suman <b>221 artefactos en diez días</b> en el municipio; <b>la suma es
+        de ellas, no de ARGOS</b>, y ningún comunicado oficial la sostiene.
+        <br><b>Lo que ese volumen implica es producción, no compra.</b> Doscientos artefactos no se
+        adquieren: se fabrican por lotes, y fabricarlos exige local, precursores, iniciadores,
+        contenedores y personal con oficio. <b>Concordia deja de ser un lugar donde aparecen
+        artefactos y pasa a ser un lugar donde probablemente se hacen.</b>
+        <br><b>Y el hallazgo llega sin la pieza que lo haría explotable.</b> La autoridad <b>destruyó
+        los 49 in situ por detonación controlada</b> —decisión correcta de seguridad— pero <b>no
+        publicó tipo de artefacto, sistema de iniciación, carga ni contenedor</b>. Sin esa
+        caracterización <b>no puede cotejarse este lote con el del 18 de agosto</b>, ni con los
+        artefactos empleados contra la fiscalía en Zacatecas el día 27. <b>La destrucción resuelve el
+        riesgo inmediato y cierra la línea de inteligencia</b>: la contramedida es <b>peritar antes de
+        detonar</b> y publicar la ficha técnica, aunque sea sin fotografía.
+        <br><b>Línea a explotar</b>: <b>precursores y componentes comerciales</b> —mecha, fulminantes
+        eléctricos, tubería, temporizadores— <b>tienen cadena de venta rastreable</b> en un municipio
+        de la dimensión de Concordia. Es una vía documental, y no depende de una captura.
+      </div>
+      <div class="trazo">
+        <span><b>ARG-111-003</b></span>
+        <span>Nivel de confianza: ★★★★☆</span>
+        <span>Fuentes: Institucional por cita / Nacional ×4 / Regional</span>
+        <span>Consulta: 2026-08-29 09:05 CDMX</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-111-002">
+    <div class="nota-header"><h3>SINALOA — ESCUINAPA: TRES DETENIDOS EN DOS INTERVENCIONES RURALES, UNO DE NACIONALIDAD ESTADOUNIDENSE; DIEZ PLACAS BALÍSTICAS ASEGURADAS AL DÍA SIGUIENTE DE LA JORNADA DE CINCO MUERTOS</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+        El <b>28 de agosto</b>, en zona rural de <b>Escuinapa</b>, el <b>Grupo Interinstitucional</b>
+        —Policía Municipal de Escuinapa, Policía Estatal y Fuerzas Armadas— realizó <b>dos
+        intervenciones</b> derivadas de reportes de detonaciones.
+        <br><b>Primera intervención (Huerta Quevedo)</b>: <b>un detenido de nacionalidad
+        estadounidense</b>; asegurados <b>un fusil cal. 7.62 × 39 mm</b>, <b>un cargador</b>, <b>tres
+        cartuchos</b> y <b>un chaleco con dos placas balísticas</b>.
+        <br><b>Segunda intervención (otra zona rural)</b>: la <b>Policía Estatal</b> localizó y detuvo
+        a <b>dos personas</b> sobre un camino; asegurados <b>cuatro armas largas cal. 7.62 × 39 mm</b>,
+        <b>700 cartuchos</b>, <b>26 cargadores</b>, <b>cuatro chalecos tácticos</b> y <b>ocho placas
+        balísticas</b>.
+        <br><b>Suma del operativo, declarada como agregación de ARGOS sobre dos intervenciones</b>:
+        <b>3 detenidos · 5 armas largas · 703 cartuchos · 27 cargadores · 5 chalecos · 10 placas
+        balísticas</b>. Los tres detenidos y lo asegurado quedaron a disposición de la <b>FGR,
+        delegación Mazatlán</b>.
+        <br><b>Deslinde obligatorio</b>: <b>no es <a href="#">ARG-110-002</a></b>, la jornada de
+        enfrentamientos del <b>27 de agosto</b> en la cabecera municipal y El Camarón, con <b>cinco
+        muertos y siete detenidos por el Ejército</b>. Son <b>dos hechos</b>: día distinto,
+        corporación distinta, localidad distinta y saldo distinto. <b>Una fuente los totaliza
+        expresamente en «diez detenidos» para el municipio</b> —siete el día 27 y tres el día 28—,
+        lo que acredita que <b>se suman y no se sustituyen</b>.
+      </div>
+      <div class="apartado"><span class="k">CORROBORACIÓN</span>
+        Institucional por cita: <b>Grupo Interinstitucional</b> y <b>FGR delegación Mazatlán</b> como
+        autoridad receptora. <b>Sin comunicado oficial leído.</b>
+        Regional: <a href="https://vivalanoticia.mx/grupo-interinstitucional-detiene-a-tres-personas-y-asegura-armas-municiones-y-equipo-tactico-en-escuinapa/">Viva la Noticia</a>,
+        <a href="https://fuentesfidedignas.com.mx/index.php/2026/08/28/detienen-a-tres-personas-y-aseguran-armas-municiones-y-equipo-tactico-en-escuinapa/">Fuentes Fidedignas <code>/2026/08/28/</code></a>,
+        <a href="https://www.puntualizando.com/autoridades-detienen-a-tres-personas-y-aseguran-armas-municiones-y-equipo-tactico-en-escuinapa/">Puntualizando</a>.
+        Nacional: <a href="https://julioastillero.com/suman-10-detenidos-en-escuinapa-tras-jornada-violenta-uno-de-ellos-es-estadounidense/">OEM-Informex vía Julio Astillero</a> (fuente del deslinde de conteo).
+        <br><b>Las tres fuentes regionales coinciden en las cifras exactas</b>, sin divergencia.
+        <b>Pendiente de corroboración institucional directa.</b>
+      </div>
+      <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+        <b>Clasificado 🟢: intervenciones derivadas de reportes ciudadanos, sin enfrentamiento ni
+        bajas.</b>
+        <br><b>El dato del corte no son las armas: son las placas balísticas.</b> En <b>48 horas</b>,
+        el municipio de Escuinapa entregó <b>diecisiete placas balísticas</b> —siete el día 27 y diez
+        el día 28— y <b>diez chalecos</b>. Sumado a las <b>dos de Tepic</b> del mismo periodo y a las
+        <b>seis de La Guásima</b> del 18 de agosto, <b>el archivo acumula veinticinco placas en cuatro
+        eventos y dos entidades —Sinaloa y Nayarit— en menos de dos semanas</b>.
+        <br><b>Eso ya no es equipamiento individual: es abastecimiento, y el abastecimiento deja
+        factura.</b> Una placa balística <b>lleva marca, nivel NIJ y lote</b>, se importa por
+        <b>fracción arancelaria identificable</b> y su venta está regulada. <b>Es la pieza más
+        trazable de todo el material asegurado</b>, muy por delante del rastreo balístico de los
+        fusiles, que exige cotejo y depende de que el arma haya sido usada antes.
+        <br><b>La línea a explotar es el importador, no el portador.</b> Con marca y lote de las
+        diecisiete placas de Escuinapa se llega al distribuidor autorizado y al punto de desvío en
+        <b>una diligencia documental</b>, sin necesidad de una captura más. <b>Ninguna autoridad ha
+        publicado marca ni nivel de una sola placa</b>, y ese es el vacío que mantiene cerrada la
+        línea.
+        <br><b>El detenido estadounidense abre una segunda vía</b>: su ingreso al país tiene registro
+        migratorio con fecha y punto de entrada. <b>Cruzar esa fecha con la de adquisición del
+        equipo</b> distingue si el material entró con él o ya estaba en la plaza — la misma pregunta
+        de traslado frente a acogida que sigue abierta en el expediente de Puebla.
+        <br><b>Vacío persistente</b>: sigue sin publicarse la <b>identidad y adscripción de los cinco
+        muertos del día 27</b>, y sigue sin poder determinarse si los <b>siete detenidos por el
+        Ejército</b> y los <b>cinco reportados por la vocería estatal</b> son las mismas personas.
+        <b>El conteo del municipio no se puede cerrar mientras eso no se publique.</b>
+      </div>
+      <div class="trazo">
+        <span><b>ARG-111-002</b></span>
+        <span>Nivel de confianza: ★★★☆☆</span>
+        <span>Fuentes: Institucional por cita / Nacional / Regional ×3</span>
+        <span>Consulta: 2026-08-29 09:05 CDMX</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-111-REC-001">
+    <div class="nota-header"><h3>GUERRERO — PETATLÁN, LAS MESAS DEL PAROTAL: POBLADORES ENFRENTAN A UN GRUPO ARMADO Y MATAN A CUATRO AGRESORES</h3><span class="risk-flag alto">ROJO · VENTANA ANTERIOR</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO CONFIRMADO</span>
+        Presuntos integrantes de <b>La Familia Michoacana</b> irrumpieron en la localidad de <b>Las
+        Mesas del Parotal</b>, municipio de <b>Petatlán</b>, Guerrero. <b>Los pobladores los
+        enfrentaron y mataron a cuatro.</b> El enfrentamiento comenzó la <b>tarde del miércoles 26 de
+        agosto</b> y se prolongó durante horas, <b>hasta la madrugada del jueves 27</b>.
+        <br><code>VENTANA DE ORIGEN: ARGOS 109</code> (26-ago 14:21 → 27-ago 10:00 CDMX).
+        <b>Este hecho NO entra en ningún total de ARGOS 111</b>: ni en el semáforo, ni en el radar, ni
+        en el mapa, ni en el conteo de armamento.
+        <br><b>Se publica aquí porque ninguna edición de la serie lo registra.</b>
+        <br><b>Anclaje de fecha</b>: verificado contra calendario — <b>el 26 de agosto de 2026 es
+        miércoles y el 27 es jueves</b>. La atribución de la fuente es coherente consigo misma y con
+        el calendario.
+        <br>No se publicó <b>identidad de los cuatro abatidos</b>, ni <b>saldo entre los pobladores</b>,
+        ni <b>armamento asegurado</b>, ni si hubo intervención posterior de la autoridad.
+        <br><b>Deslinde</b>: <b>no es <a href="#">ARG-110-REC-001</a></b> (Cerro de las Lumbreras,
+        San Miguel Totolapan, seis muertos de una familia, atribuido a «Los Tlacos»). Otro municipio,
+        otra organización, otro saldo y otra naturaleza.
+      </div>
+      <div class="apartado"><span class="k">CORROBORACIÓN</span>
+        Institucional: <b>ninguna</b>. Ni la FGE de Guerrero ni la SSP estatal publicaron —
+        <code>SIN RESULTADO INDEXADO EN VENTANA</code>.
+        Regional: <a href="https://guerrero.quadratin.com.mx/enfrentan-pobladores-al-narco-y-matan-a-4-sicarios-en-petatlan/">Quadratín Guerrero</a>,
+        <a href="https://www.quadratin.com.mx/nacionales/enfrentan-pobladores-a-sicarios-y-matan-a-4-en-guerrero/">Quadratín Nacional</a>.
+        <br><b>Pendiente de confirmación oficial.</b> Que un hecho con cuatro muertos <b>no tenga
+        pronunciamiento institucional tres días después</b> es, en sí mismo, un dato.
+      </div>
+      <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+        <b>Es el reverso exacto de Totolapan, y por eso los dos hechos deben leerse juntos.</b> En
+        Cerro de las Lumbreras una familia <b>no pudo defenderse</b> y perdió seis miembros; en Las
+        Mesas del Parotal la comunidad <b>sí pudo</b> y causó cuatro bajas al agresor. <b>Dos
+        incursiones armadas contra población rural de Guerrero en la misma semana, con resultados
+        opuestos.</b>
+        <br><b>Que los pobladores ganen un enfrentamiento contra un grupo armado no es una buena
+        noticia: es la medida de un vacío.</b> Implica <b>capacidad de fuego y organización
+        comunitaria previa</b>, y sobre todo implica que <b>la respuesta del Estado no llegó en
+        horas</b> — el enfrentamiento duró desde la tarde hasta la madrugada. <b>Donde la autoridad
+        no llega, la autodefensa no es una elección sino un sustituto</b>, y un sustituto que produce
+        homicidios sin proceso.
+        <br><b>La Familia Michoacana operando en Petatlán amplía el mapa.</b> El municipio está en la
+        <b>Costa Grande</b>, no en Tierra Caliente, que es donde esa organización tiene su base
+        histórica. <b>Sumado a Totolapan, describe presión simultánea sobre dos regiones distintas de
+        Guerrero</b> en la misma semana.
+        <br><b>Líneas a explotar</b>: <b>identificación de los cuatro abatidos y su plaza de origen</b>
+        —determinaría si el grupo se desplazó desde Tierra Caliente o se reclutó localmente—;
+        <b>situación de las armas empleadas por los pobladores</b>, y <b>tiempo de respuesta de la
+        fuerza pública</b> desde el primer reporte, que es el indicador que explica el resultado.
+      </div>
+      <div class="trazo">
+        <span><b>ARG-111-REC-001</b></span>
+        <span>Nivel de confianza: ★★★☆☆</span>
+        <span>Fuentes: Regional ×2 — Pendiente de confirmación oficial</span>
+        <span>Ventana de origen: ARGOS 109 · Fuera de todos los totales</span>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-08-29 · Hora: 09:05 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 111</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+<!-- ============ PÁGINA 4 — ARMAMENTO ============ -->
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS</h2></div>
+
+  <p class="muted-note" style="margin-bottom:8px;">
+    <b>Cada tarjeta lleva dos cifras y no significan lo mismo.</b> La <b>cifra grande</b> es lo
+    asegurado en <b>hechos ocurridos dentro de esta ventana</b>, y es la única que alimenta el total
+    nacional del corte. La <b>línea inferior</b> es lo <b>publicado durante el corte pero
+    correspondiente a hechos anteriores</b>: existe, se desglosa abajo y <b>no se suma arriba</b>,
+    porque no pertenece a esta ventana. <b>Ambas líneas son cálculo propio de ARGOS</b> sobre cifras
+    publicadas evento por evento: ninguna autoridad publicó un agregado nacional de este corte.
+  </p>
+
+  <div class="conteo">
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h15v4h-4l-1 2h-2l-2 8H6l2-10H3z"/><path d="M9 13a3 3 0 0 0 3 2"/><path d="M18 9h3"/></svg><span class="lbl">Armas cortas</span><span class="num">1</span><span class="sub">1 Concordia · <b>Escuinapa no aportó ninguna</b>: sus dos intervenciones describen solo armas largas · <b>11 en lo publicado</b></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9h19v3h-5l-1 2h-2l-1 5h-2l1-5H2z"/><path d="M16 14l5 5"/><path d="M6 9V7"/></svg><span class="lbl">Armas largas</span><span class="num">9</span><span class="sub">5 Escuinapa (todas cal. 7.62×39) · 4 Concordia · <b>12 en lo publicado</b></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 6c2-2 4-3 5-3s3 1 5 3v12c-2 2-3 3-5 3s-3-1-5-3z"/><path d="M7 11h10"/><path d="M7 18h10"/></svg><span class="lbl">Cartuchos</span><span class="num">3,528</span><span class="sub">703 Escuinapa · 2,825 Concordia <b>de fuente única</b> (las demás dicen «más de 2,800», que no es cifra) · <b>1,072 en lo publicado</b></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h9l-1 15-3 3H9L7 18z"/><path d="M8 8h8"/><path d="M8 12h8"/><path d="M8 16h7"/></svg><span class="lbl">Cargadores</span><span class="num">82</span><span class="sub">27 Escuinapa · 55 Concordia · <b>54 en lo publicado</b> · <b>nunca se suman con los cartuchos</b></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="10" width="13" height="10" rx="1"/><path d="M16 13h3a2 2 0 0 0 2-2V8"/><circle cx="21" cy="6" r="2"/><path d="M7 14v3"/><path d="M11 14v3"/></svg><span class="lbl">AEI</span><span class="num">49</span><span class="sub"><b>todos de Concordia y todos destruidos in situ</b> por detonación controlada; ninguno trasladado ni peritado públicamente · <b>4 en lo publicado</b> (Aldama, Chihuahua)</span></div>
+    <div class="tile cero"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="14" r="6"/><path d="M10 8V5h4v3"/><path d="M14 6h4l1 3"/></svg><span class="lbl">Granadas</span><span class="num">0</span><span class="sub">ninguna en la ventana: <b>los dos partes con desglose no mencionan granadas</b> · <b>7 en lo publicado</b> (5 Tepic + 2 Cd. Madero) — es el rubro donde más pesa la línea inferior</span></div>
+    <div class="tile cero"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="9" width="5" height="12" rx="1"/><rect x="11" y="9" width="5" height="12" rx="1"/><path d="M13 9V6c0-2 2-2 3-3"/></svg><span class="lbl">Explosivos</span><span class="num">0</span><span class="sub"><b>cero pese a 49 artefactos</b>: la autoridad los destruyó <i>in situ</i> y <b>no publicó qué componentes, precursores ni iniciadores se recuperaron</b> · <b>0 en lo publicado</b></span></div>
+    <div class="tile cero"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12h16l4-3v7l-4-2H2z"/><path d="M7 15v4h4"/><circle cx="18" cy="12" r="1"/></svg><span class="lbl">Armamento especial</span><span class="num">0</span><span class="sub">ningún calibre .50, dron armado ni vehículo blindado artesanal en la ventana · <b>1 en lo publicado</b>: un <b>lanzagranadas acoplado</b> en Tepic</span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/><path d="M8 15h8"/></svg><span class="lbl">Detenidos</span><span class="num">3</span><span class="sub">los 3 de Escuinapa, uno de nacionalidad estadounidense · <b>Concordia no produjo ninguno</b>: era un depósito sin custodios · <b>28 en lo publicado</b></span></div>
+  </div>
+
+  <div class="alerta contexto">
+    <span class="flag">POR QUÉ HAY CERO EXPLOSIVOS EN UN CORTE CON CUARENTA Y NUEVE ARTEFACTOS, Y POR QUÉ EL DETENIDO ESTÁ EN CERO EN EL HALLAZGO MAYOR</span>
+    <p><b>Las dos cifras son correctas y las dos parecen errores. Se explican aquí porque, cuando una
+    cifra correcta puede leerse como un error, el defecto es del producto.</b>
+    <br><b>Cero explosivos junto a 49 AEI</b> no es una contradicción: son <b>dos categorías
+    distintas de la taxonomía</b>. «AEI» cuenta <b>artefactos terminados</b>; «Explosivos y
+    componentes» cuenta <b>carga, precursores, fulminantes, mecha, temporizadores e iniciadores</b>.
+    La Marina <b>destruyó los 49 artefactos por detonación controlada en el lugar</b> y <b>no publicó
+    qué componentes se recuperaron</b>, si es que se recuperó alguno. <b>El cero mide lo que la
+    autoridad publicó sobre la composición del lote, no lo que había.</b> Y esa ausencia tiene un
+    coste operativo concreto: <b>sin caracterización del artefacto no hay cotejo posible</b> con el
+    hallazgo de 172 artefactos del 18 de agosto en el mismo municipio, ni con los empleados contra la
+    fiscalía de Zacatecas.
+    <br><b>Cero detenidos en el hallazgo mayor del corte</b> tampoco es un vacío de información: la
+    Marina localizó <b>un depósito, no un campamento</b>. Ninguna cobertura reporta persona detenida y
+    <b>la ausencia está confirmada, no supuesta</b>. Los 3 detenidos del corte son todos de Escuinapa.
+    <br><b>Y hay seis artefactos explosivos recientes que no aparecen en ninguna tarjeta</b>: los
+    empleados el 27 de agosto contra personal de la fiscalía en Zacatecas fueron <b>usados contra la
+    autoridad, no asegurados</b>. Un AEI detonado no es un aseguramiento; entra en el semáforo de su
+    propia edición, no en este conteo.</p>
+  </div>
+
+  <div class="section-head">DESGLOSE POR EVENTO — HECHOS DE ESTA VENTANA</div>
+  <div class="table-wrap"><table class="exec wide">
+    <thead><tr><th>ARG-ID</th><th>ENTIDAD · MUNICIPIO</th><th>FECHA DEL HECHO</th><th>CORTAS</th><th>LARGAS</th><th>CARTUCHOS</th><th>CARGADORES</th><th>GRANADAS</th><th>AEI</th><th>OTROS</th><th>DETENIDOS</th><th>CORPORACIÓN</th><th>FUENTE PRIMARIA</th><th>CONFIANZA</th></tr></thead>
+    <tbody>
+      <tr><td><code>ARG-111-ARM-001</code></td><td>Sinaloa · Escuinapa</td><td>28-ago — <code>hora no publicada</code></td><td>0</td><td><b>5</b><br><small>todas cal. 7.62×39</small></td><td><b>703</b><br><small>3 + 700, dos intervenciones</small></td><td><b>27</b><br><small>1 + 26</small></td><td>0</td><td>0</td><td>5 chalecos tácticos · <b>10 placas balísticas</b></td><td><b>3</b><br><small>1 estadounidense</small></td><td>Grupo Interinstitucional: Policía Municipal · Policía Estatal · FF.AA. — a disposición de FGR Mazatlán</td><td>Tres medios regionales coincidentes · ver <a href="#ARG-111-002">ficha</a></td><td>Bajo</td></tr>
+      <tr><td><code>ARG-111-ARM-002</code></td><td>Sinaloa · Concordia</td><td>28-ago — <code>hora no publicada</code></td><td><b>1</b></td><td><b>4</b></td><td><b>2,825</b><br><small>fuente única</small></td><td><b>55</b></td><td>0</td><td><b>49</b><br><small>destruidos <i>in situ</i></small></td><td>3 vehículos · droga y equipo táctico sin cifra</td><td><b>0</b></td><td>SEMAR con FGR y SSPC — «Operación Sable»</td><td>SEMAR por cita, 4 medios nacionales · ver <a href="#ARG-111-003">ficha</a></td><td>Medio</td></tr>
+      <tr style="font-weight:700;"><td colspan="3">TOTAL NACIONAL DEL CORTE — 2 eventos · 1 entidad · <b>cálculo propio de ARGOS</b></td><td><b>1</b></td><td><b>9</b></td><td><b>3,528</b></td><td><b>82</b></td><td><b>0</b></td><td><b>49</b></td><td>5 chalecos · <b>10 placas</b> · 3 vehículos</td><td><b>3</b></td><td colspan="3">Explosivos y componentes 0 · Armamento especial 0 · Drones armados 0 · Eventos cualitativos sin cantidad 0</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="section-head">LÍNEA INFERIOR — PUBLICADO DURANTE EL CORTE, HECHOS DE VENTANA ANTERIOR</div>
+  <p class="muted-note" style="margin-bottom:6px;">
+    Boletín del Gabinete de Seguridad «acciones relevantes del <b>27 de agosto</b>», <b>publicado el
+    28</b> y por tanto dentro de este corte. <b>Sustitución anotada</b>: el portal emisor no lo
+    indexa; solo se alcanza por <b>republicadores</b>, que <b>no son fuentes independientes entre
+    sí</b> — la corroboración es <b>débil por construcción</b>. <b>Nada de esta tabla se suma al
+    total del corte.</b>
+  </p>
+  <div class="table-wrap"><table class="exec wide">
+    <thead><tr><th>ENTIDAD · MUNICIPIO</th><th>CORTAS</th><th>LARGAS</th><th>CARTUCHOS</th><th>CARGADORES</th><th>GRANADAS</th><th>AEI</th><th>OTROS</th><th>DETENIDOS</th><th>OBSERVACIÓN</th></tr></thead>
+    <tbody>
+      <tr><td>Chiapas · Mapastepec</td><td>3</td><td>1</td><td>70</td><td>3</td><td>0</td><td>0</td><td>8 motocicletas · 1 vehículo</td><td><b>9</b></td><td>Ejército y FGE Chiapas. <b>1 persona liberada</b> de privación de la libertad</td></tr>
+      <tr><td>Nayarit · Tepic</td><td>2</td><td>4</td><td>825</td><td>28</td><td><b>5</b></td><td>0</td><td><b>1 lanzagranadas acoplado</b> · 4 chalecos · <b>2 placas balísticas</b> · 1 vehículo con reporte de robo</td><td>—</td><td>GN, Ejército y FGE. <b>El único armamento especial de todo el corte</b></td></tr>
+      <tr><td>Tamaulipas · Ciudad Madero</td><td>3</td><td>3</td><td>171</td><td>23</td><td><b>2</b></td><td>0</td><td>4 chalecos · 1 equipo de radiocomunicación</td><td><b>3</b></td><td>Ejército, SSPC y Policía Estatal</td></tr>
+      <tr><td>Veracruz · Coatzacoalcos, col. Emiliano Zapata</td><td>1</td><td>0</td><td>6</td><td>—</td><td>0</td><td>0</td><td>—</td><td><b>6</b></td><td>SEMAR, Fiscalía y Policía Estatal</td></tr>
+      <tr><td>Oaxaca · 21 cateos</td><td>2</td><td>4</td><td>sin cifra</td><td>sin cifra</td><td>0</td><td>0</td><td>—</td><td><b>10</b></td><td><code>CIFRA DE ARMAMENTO CONTRADICHA</code>: tres fuentes dan <b>4 largas y 2 cortas</b>; una nacional titula <b>«4 armas de fuego»</b> en total. <b>No se arbitra.</b> Célula de extorsión, cobro de piso e invasión de predios</td></tr>
+      <tr><td>Chihuahua · Aldama</td><td>0</td><td>0</td><td>—</td><td>—</td><td>0</td><td><b>4</b></td><td><b>101,790 L de hidrocarburo</b> · 6 vehículos · 6 remolques · 1 tanque estacionario</td><td>—</td><td>FGR, SSPC, Ejército, GN y Seguridad Física de PEMEX</td></tr>
+      <tr style="font-weight:700;"><td>TOTAL LÍNEA INFERIOR — <b>cálculo propio de ARGOS</b></td><td><b>11</b></td><td><b>12</b></td><td><b>1,072</b></td><td><b>54</b></td><td><b>7</b></td><td><b>4</b></td><td>8 chalecos · 2 placas · 1 lanzagranadas</td><td><b>28</b></td><td>No se suma al total del corte</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="section-head">CANDIDATOS NO INTEGRADOS — Y POR QUÉ</div>
+  <div class="table-wrap"><table class="exec wide">
+    <thead><tr><th>CANDIDATO</th><th>CIFRAS QUE APORTABA</th><th>MOTIVO DE NO INTEGRACIÓN</th></tr></thead>
+    <tbody>
+      <tr><td><b>Zacatecas · municipio de Tabasco</b> — operativos posteriores al ataque con explosivos contra la fiscalía, difundidos por el <b>Gobierno del Estado</b></td><td><b>11 detenidos</b> · <b>10 armas largas</b> · «más de 20 cargadores» · chalecos y placas tácticas · uniformes falsos · 1 vehículo con reporte de robo · droga</td><td><code>SIN ANCLA FECHADA — NO INTEGRAR AL TOTAL</code>. <b>Es fuente institucional y aun así queda fuera</b>: el boletín <b>no lleva fecha en la ruta</b> y el resumidor llegó a situarlo en <b>octubre de 2025</b>, lo que descarta fiarse de él. <b>Es el candidato de mayor volumen del corte.</b> «Más de 20 cargadores» tampoco es cifra</td></tr>
+      <tr><td><b>Veracruz · San Andrés Tuxtla</b>, col. 1° de Mayo — del mismo boletín federal</td><td>3 cortas · 1 larga · 43 cartuchos · 7 cargadores · <b>6 detenidos</b> · 2 personas liberadas</td><td><code>EXCLUIDO POR DUPLICIDAD</code>. Es <b>el mismo hecho ya publicado</b> en una edición anterior —seis detenidos y rescate de persona privada de la libertad—, llegando por segunda vía. <b>Integrarlo contaría dos veces a las mismas seis personas.</b> El desglose de armas es dato nuevo y se registra en el archivo de fuentes, no en este conteo</td></tr>
+      <tr><td><b>Tabasco · Villahermosa</b> — 2 armas largas, 6 detenidos</td><td>2 largas · 6 detenidos</td><td><code>FUERA DE VENTANA — ATRIBUCIÓN DE FECHA CORREGIDA</code>. Verificado en dos consultas: pertenece al boletín de <b>acciones relevantes del 26 de agosto</b>, no al del 27. <b>Se retiró de la línea inferior antes de publicar</b></td></tr>
+      <tr><td><b>Oaxaca</b> — «14 cateos ASAEO, 9 detenidos», mismo 27-ago</td><td>14 cateos · 9 detenidos</td><td><code>POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN</code>. Mismo día, mismo delito, mismo tipo de operativo y cifras demasiado próximas a las «21 cateos, 10 detenidos» del boletín federal. <b>Ninguna fuente los distingue.</b> Se conserva la versión institucional</td></tr>
+      <tr><td><b>Sinaloa · Concordia, La Guásima</b> — hallazgo de 172 artefactos explosivos</td><td>172 AEI · 6 placas balísticas · 4 chalecos</td><td><code>FUERA DE VENTANA</code>. Hecho del <b>18 de agosto</b>, con boletín federal propio. <b>Se cita como antecedente en la ficha de Concordia y no entra en ningún total de este corte.</b> La suma de «221 artefactos en diez días» es <b>de las fuentes periodísticas, no de ARGOS</b></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="panel">
+    <div class="panel-title"><span>MAPA DE ASEGURAMIENTOS</span><span>SEMÁFORO ARGOS</span></div>
+    <div class="map-box" id="argos-map-arm"></div>
+    <div class="map-caption">Verde = aseguramiento sin enfrentamiento. Amarillo = derivado de enfrentamiento. Rojo = armamento vinculado a un evento de alto impacto. Gris = sin aseguramiento en la ventana.</div>
+  </div>
+
+  <div class="section-head">LECTURA REGIONAL</div>
+  <div class="table-wrap"><table class="exec">
+    <thead><tr><th>REGIÓN</th><th>EVENTOS</th><th>ARMAS LARGAS</th><th>CARGADORES</th><th>AEI</th><th>DETENIDOS</th></tr></thead>
+    <tbody>
+      <tr><td>Noroeste</td><td>2 — Sinaloa (Escuinapa y Concordia)</td><td><b>9</b></td><td><b>82</b></td><td><b>49</b></td><td><b>3</b></td></tr>
+      <tr><td>Noreste · Occidente · Centro · Golfo · Sureste · Pacífico Sur</td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td></tr>
+    </tbody>
+  </table></div>
+  <p class="muted-note">
+    <b>Cinco regiones en cero con barrido declarado, no por falta de consulta.</b> Las 32 entidades
+    recibieron al menos una consulta y <b>ninguna otra publicó un aseguramiento con cifra y fecha
+    ancladas dentro de la ventana</b>. La concentración de todo el conteo nacional en <b>un solo
+    estado y dos municipios</b> es el hallazgo, no un defecto de cobertura: <b>un total nacional
+    construido sobre dos eventos mide lo que se publicó, no lo que ocurrió en el país.</b>
+  </p>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-08-29 · Hora: 09:05 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 111</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+<!-- ============ PÁGINA 5 — SENTENCIAS ============ -->
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES</h2></div>
+
+  <div class="conteo">
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18"/><path d="M6 7h12"/><path d="M6 7l-3 6h6z"/><path d="M18 7l-3 6h6z"/><path d="M8 21h8"/></svg><span class="lbl">Sentencias condenatorias</span><span class="num">1</span><span class="sub">FGE Durango, Región Laguna · <b>única de 32 fiscalías</b></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/><path d="M8 15h8"/></svg><span class="lbl">Personas sentenciadas</span><span class="num">1</span><span class="sub">Víctor Hugo Camacho Vázquez · robo agravado y daños</span></div>
+    <div class="tile cero"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4"/><path d="M16 3v4"/><path d="M4 11h16"/></svg><span class="lbl">Años acumulados</span><span class="num">0</span><span class="sub"><b>no sumables</b>: la única pena consta como <b>10 años 8 meses</b> en el cuerpo del boletín, pero su titular la publica como «más de 10 años». Se registra la pena y <b>no se abre acumulado con un solo caso</b></span></div>
+    <div class="tile cero"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="M4 10h16"/><path d="M9 14h6"/></svg><span class="lbl">Sentencias firmes</span><span class="num">0</span><span class="sub"><b>la firmeza no se informa y nunca se asume</b>: la resolución existe, su carácter definitivo no está declarado por la autoridad</span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg><span class="lbl">Reparación del daño</span><span class="num">$44,010</span><span class="sub">ordenada en el único caso · más multa de <b>$34,199</b></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V8l8-5 8 5v12z"/><path d="M9 20v-6h6v6"/></svg><span class="lbl">Fiscalías con resultado</span><span class="num">1</span><span class="sub">de <b>32 revisadas</b> más la FGR · <b>31 sin resultado indexado en ventana</b></span></div>
+  </div>
+
+  <div class="alerta contexto">
+    <span class="flag">POR QUÉ TREINTA Y DOS FISCALÍAS PRODUCEN UNA SOLA SENTENCIA, Y POR QUÉ EL ACUMULADO DE AÑOS ESTÁ EN CERO</span>
+    <p><b>Ninguna de las dos cifras mide la capacidad judicial del país. Miden la ventana.</b>
+    <br><b>Una sentencia de treinta y dos fiscalías no significa que solo se dictara una.</b> Las
+    fiscalías <b>publican por lotes y en horario de oficina</b>; esta ventana abre un viernes por la
+    mañana y cierra un sábado, de modo que <b>contiene menos de una jornada hábil de publicación</b>.
+    El barrido localizó <b>más de veinte resoluciones condenatorias reales</b> —siete en Querétaro,
+    cuatro en el Sureste, ocho previas en la propia Durango— y <b>todas quedaron fuera por fecha, no
+    por calidad</b>. Se descartan por disciplina de ventana, que es lo correcto, pero el lector debe
+    saber que el uno no es un uno del sistema: <b>es un uno del calendario</b>.
+    <br><b>El acumulado de años en cero no contradice una pena de más de diez años.</b> Un acumulado
+    nacional con <b>un solo caso</b> no es un acumulado: es el mismo dato repetido en otra casilla, y
+    publicarlo como total sugeriría una serie que no existe. Además, <b>el titular del boletín
+    institucional redondea a «más de 10 años» y la cifra exacta —10 años 8 meses— solo consta en el
+    cuerpo</b>; ARGOS publica la exacta y <b>declara de dónde sale</b>, sin abrir sobre ella una suma
+    nacional.
+    <br><b>El dato que sí es del sistema está en la otra columna</b>: en esta ventana hubo <b>tres
+    personas detenidas</b> y <b>una persona sentenciada</b>, y no son las mismas —la sentencia
+    resuelve un hecho de <b>marzo de 2024</b>—. <b>Entre la detención y la condena median años, y esa
+    distancia es el indicador, no las cifras de la jornada.</b></p>
+  </div>
+
+  <div class="nota" id="ARG-111-SEN-001">
+    <div class="nota-header"><h3>DURANGO — FGED, REGIÓN LAGUNA: SENTENCIA CONDENATORIA DE 10 AÑOS 8 MESES POR ROBO AGRAVADO Y DAÑOS EN LERDO</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO PROCESAL CONFIRMADO</span>
+        El <b>28 de agosto</b>, la <b>Fiscalía General del Estado de Durango</b> informó haber
+        obtenido <b>sentencia condenatoria</b> contra <b>Víctor Hugo Camacho Vázquez</b> por los
+        delitos de <b>robo agravado y daños</b>.
+        <br><b>Pena impuesta</b>: <b>10 años y 8 meses de prisión</b>. <b>Multa</b>: <b>$34,199</b>.
+        <b>Reparación del daño</b>: <b>$44,010</b>.
+        <br><b>Hecho juzgado</b>: <b>7 de marzo de 2024</b>, en la calle Eustaquio Echeverría de la
+        localidad <b>Juan E. García</b>, municipio de <b>Lerdo</b>. Objetos sustraídos: una batería
+        marca LTH y un autoestéreo Pioneer, con incendio del vehículo.
+        <br><b>Firmeza: NO INFORMADA.</b> La autoridad no la declara y <b>ARGOS no la asume</b>.
+        <br><b>Nota de procedencia de la pena</b>: el <b>titular</b> del boletín institucional publica
+        «más de 10 años»; la cifra exacta de <b>10 años 8 meses</b> consta en el <b>cuerpo</b> del
+        comunicado y está corroborada de forma independiente. <b>No es una precisión inferida por
+        ARGOS.</b>
+      </div>
+      <div class="apartado"><span class="k">CORROBORACIÓN</span>
+        Oficial: <a href="https://fiscalia.durango.gob.mx/2026/08/28/fged-obtiene-sentencia-condenatoria-por-mas-de-10-anos-para-responsable-de-robo-agravado-y-danos-en-la-region-laguna/">FGE Durango <code>/2026/08/28/</code></a>
+        — <b><i>slug</i> institucional con el término jurídico literal «sentencia condenatoria» y fecha
+        en la ruta</b>, el respaldo más fuerte de la escala.
+        Secundaria: <a href="https://www.elsiglodetorreon.com.mx/noticia/2026/condenan-a-mas-de-10-anos-de-prision-a-responsable-de-robo-e-incendio-de-camioneta-en-lerdo.html">El Siglo de Torreón</a>.
+        <br><b>Identificación del caso acreditada con cinco campos individualizadores coincidentes</b>
+        —nombre completo, pena exacta, fecha del hecho, localidad y objetos sustraídos—, muy por
+        encima del mínimo de dos que exige la regla de caso homónimo. <b>No hay riesgo de confusión.</b>
+      </div>
+      <div class="apartado"><span class="k">EXPLOTACIÓN ARGOS</span>
+        <b>El valor de este caso no está en la pena, está en el reloj.</b> El hecho es del <b>7 de
+        marzo de 2024</b> y la sentencia del <b>28 de agosto de 2026</b>: <b>dos años y casi seis
+        meses</b> entre el delito y la condena, <b>por un robo con objetos identificados y un
+        responsable individualizado</b>. Es el caso judicialmente más sencillo posible, y es el tiempo
+        que tarda. <b>Ese intervalo es la medida realista contra la que deben leerse las expectativas
+        de resolución de los delitos de alto impacto de este mismo corte.</b>
+        <br><b>Segundo dato aprovechable: la reparación ordenada supera a la multa</b> —$44,010 frente
+        a $34,199—, lo que indica <b>daño patrimonial acreditado por encima del valor de lo
+        sustraído</b>, coherente con el incendio del vehículo. <b>La reparación del daño efectivamente
+        ordenada, y no solo la pena, es el indicador de si la víctima obtuvo algo.</b> Queda abierto
+        si se ha cobrado.
+        <br><b>Tercero, y es un dato de método con valor operativo</b>: la única fiscalía de 32 que
+        publicó dentro de la ventana es <b>la misma que ya había sido la única en un corte anterior</b>.
+        <b>Durango publica sus sentencias con fecha en la ruta y de forma sostenida</b> —ocho
+        resoluciones distintas solo en agosto—. <b>Es un emisor de alto volumen y formato auditable</b>,
+        y como tal debe consultarse de primero en el triaje judicial, junto con Querétaro.
+        <br><b>Vacío</b>: no se publica <b>número de causa penal</b> ni <b>tribunal</b>, que son los
+        dos campos que permitirían seguir el caso en apelación y verificar la firmeza más adelante.
+      </div>
+      <div class="trazo">
+        <span><b>ARG-111-SEN-001</b></span>
+        <span>Nivel de confianza: 🟡 Medio · ★★★★☆</span>
+        <span>Fuentes: Oficial (<i>slug</i> fechado) / Regional</span>
+        <span>Consulta: 2026-08-29 09:05 CDMX</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-head">TABLA JURÍDICA NACIONAL DEL CORTE</div>
+  <div class="table-wrap"><table class="exec wide">
+    <thead><tr><th>ARG-ID</th><th>FISCALÍA</th><th>ENTIDAD</th><th>DELITO</th><th>SENTENCIADOS</th><th>PENA</th><th>MULTA</th><th>REPARACIÓN</th><th>TIPO</th><th>FIRMEZA</th><th>FUENTE OFICIAL</th><th>CONFIANZA</th></tr></thead>
+    <tbody>
+      <tr><td><code>ARG-111-SEN-001</code></td><td>FGE Durango</td><td>Durango · Lerdo</td><td>Robo agravado y daños</td><td><b>1</b></td><td><b>10 a 8 m</b></td><td>$34,199</td><td>$44,010</td><td>Condenatoria</td><td><b>No informada</b></td><td><i>Slug</i> con fecha en la ruta · ver <a href="#ARG-111-SEN-001">ficha</a></td><td>Medio</td></tr>
+      <tr><td><code>ARG-111-SEN-C01</code></td><td>FGE Veracruz</td><td>Veracruz</td><td>Agregado sin individualizar</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Agregado de resoluciones «en 24 horas»</td><td>—</td><td>Republicador con <code>/2026/08/28/</code>; dominio primario alcanzado <b>sin fecha en la ruta</b></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL</code></td></tr>
+    </tbody>
+  </table></div>
+  <p class="muted-note">
+    <b><code>ARG-111-SEN-C01</code> es el cuarto agregado consecutivo del mismo emisor sin desglose
+    utilizable.</b> Mezcla sentencias con vinculaciones a proceso e imputaciones y <b>no individualiza
+    ningún caso</b>: sin nombre o alias, pena exacta, delito y tribunal, <b>una resolución no puede
+    contarse</b>. Esta edición alcanzó por primera vez el dominio primario del emisor, pero el
+    documento <b>tampoco lleva fecha en la ruta</b>. Se registra para dejar constancia del vacío de
+    publicación, no como resultado judicial.
+  </p>
+
+  <div class="section-head">INDICADOR DE COBERTURA — MÓDULO JUDICIAL</div>
+  <div class="table-wrap"><table class="exec">
+    <thead><tr><th>INDICADOR</th><th>VALOR</th><th>OBSERVACIÓN</th></tr></thead>
+    <tbody>
+      <tr><td>Fiscalías revisadas</td><td><b>32 de 32</b></td><td>Al menos una consulta por entidad</td></tr>
+      <tr><td>FGR revisada</td><td><b>Sí</b></td><td>Incluidas delegaciones estatales alcanzables</td></tr>
+      <tr><td>Fiscalías con sentencia publicada en ventana</td><td><b>1</b></td><td>Durango</td></tr>
+      <tr><td>Fiscalías <code>SIN RESULTADO INDEXADO EN VENTANA</code></td><td><b>31</b></td><td>Casilla correcta bajo bloqueo de egreso</td></tr>
+      <tr><td>Fiscalías <code>SIN ACTUALIZACIÓN CONSTATADA</code></td><td><b>0</b></td><td><b>Requiere lectura directa del portal, imposible con el acceso bloqueado.</b> Ninguna se declara así</td></tr>
+      <tr><td>Páginas no disponibles</td><td><b>1</b></td><td>Un portal estatal de seguridad devuelve <b>contenido ajeno a la institución</b> en el índice: se registra como <code>PORTAL NO DISPONIBLE</code>, <b>no</b> como «sin actualización». Ninguna cifra suya se usó</td></tr>
+      <tr><td>Fuentes con error de acceso</td><td><b>Todas las oficiales</b></td><td>Bloqueo de egreso: cero portales leídos por acceso directo</td></tr>
+      <tr><td>Casos retirados por umbral</td><td><b>1</b></td><td>Un caso arrastrado <b>tres ediciones</b> sin una sola URL con fecha en la ruta se retira del acumulado: <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code></td></tr>
+    </tbody>
+  </table></div>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-08-29 · Hora: 09:05 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 111</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+<!-- ============ PÁGINA 6 — VALORACIÓN Y CONCLUSIONES ============ -->
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">VALORACIÓN Y NIVEL DE RIESGO NACIONAL ARGOS</h2></div>
+
+  <div class="alerta contexto">
+    <span class="flag">NIVEL: MEDIO — UN SOLO EVENTO ROJO, PERO EN UNA VENTANA DE COBERTURA ESTRECHA Y CON EL HECHO DE MAYOR VOLUMEN SIN ANCLAR</span>
+    <p>El Nivel de Riesgo Nacional se deriva <b>de los eventos rojos observados</b>, con el contexto
+    de los amarillos y la capacidad de respuesta que reflejan los verdes. Esta ventana registra
+    <b>un evento rojo</b>: el ataque armado e incendio contra un edificio habitado en Culiacán.
+    <b>Es un hecho de terror contra población civil, no un enfrentamiento</b>, y por sí solo no
+    describe un incremento del riesgo estratégico nacional.
+    <br><b>La valoración se emite MEDIA y no BAJA por tres razones que no son del hecho, sino de lo
+    que rodea al hecho.</b> Primera: <b>los tres eventos verdes del corte están construidos sobre
+    material de guerra</b> —cuarenta y nueve artefactos explosivos, nueve armas largas, diez placas
+    balísticas—, de modo que <b>la capacidad instalada que la respuesta institucional descubre es
+    alta aunque la violencia registrada sea baja</b>. Segunda: <b>el hecho de mayor volumen del corte
+    quedó fuera del conteo por falta de fecha en la ruta</b>, y era una acción institucional contra
+    once personas con diez armas largas. Tercera: <b>la ventana es de cobertura estrecha</b> —cierra
+    la mañana del sábado y el índice de las fuentes va por detrás—.
+    <br><b>Las tres acciones institucionales del corte no elevan el nivel de riesgo</b>: lo
+    fortalecen. Se registran como capacidad de respuesta y, en el caso de Concordia, como
+    <b>capacidad de anticipación</b> — un depósito neutralizado antes de ser empleado.</p>
+  </div>
+
+  <div class="section-head">CONCLUSIONES DE INTELIGENCIA CRIMINAL</div>
+
+  <div class="nota">
+    <div class="nota-body">
+      <div class="apartado"><span class="k">1 · LA PROTECCIÓN BALÍSTICA SE HA VUELTO LA PIEZA MÁS TRAZABLE Y NADIE LA ESTÁ RASTREANDO</span>
+        En dos días, <b>Escuinapa entregó diecisiete placas balísticas y diez chalecos</b>; en el
+        mismo periodo, <b>Tepic entregó dos placas y cuatro chalecos</b>; el 18 de agosto, <b>La
+        Guásima entregó seis placas</b>. <b>Cuatro eventos, dos entidades —Sinaloa y Nayarit—, menos de dos semanas.</b>
+        <br>Una placa balística no es un arma: <b>es mercancía regulada con marca, nivel NIJ, lote y
+        fracción arancelaria</b>. Se importa, se factura y se distribuye por canales autorizados.
+        <b>Ninguna autoridad ha publicado marca ni nivel de una sola de las veinticinco placas.</b>
+        <br><b>Recomendación operativa</b>: exigir <b>marca, nivel y lote en todo aseguramiento de
+        equipo de protección</b>, igual que se exige calibre en las armas. Es el mismo criterio que ya
+        se aplicó a los inhibidores de señal y por la misma razón: <b>es el único campo que permite
+        cruzar casos entre entidades y llegar al importador</b>. El rastreo del equipo de protección
+        llega al abastecedor <b>antes</b> que el rastreo balístico de los fusiles, porque no depende
+        de que el arma haya sido disparada antes.
+      </div>
+      <div class="apartado"><span class="k">2 · CONCORDIA NO ES UN LUGAR DONDE APARECEN ARTEFACTOS: ES UN LUGAR DONDE SE FABRICAN</span>
+        <b>Cuarenta y nueve artefactos el 28 de agosto y ciento setenta y dos el 18, en el mismo
+        municipio.</b> Ese volumen <b>no se adquiere: se produce por lotes</b>, y producir exige local,
+        precursores, iniciadores, contenedores y personal con oficio.
+        <br>El patrón <b>no es exclusivo de Sinaloa</b>: en Zacatecas, el aseguramiento de <b>veintidós
+        explosivos artesanales, cinco fulminantes eléctricos y material explosivo a granel</b> el 20 de
+        agosto acredita <b>capacidad de manufactura local en esa entidad también</b>. <b>La pregunta
+        útil ya no es de dónde vienen los artefactos, sino cuántos talleres hay y dónde están.</b>
+        <br><b>Recomendación operativa</b>: <b>peritar antes de detonar</b>. La destrucción <i>in
+        situ</i> resuelve el riesgo inmediato y <b>cierra la línea de inteligencia</b>: sin tipo de
+        artefacto, sistema de iniciación, carga y contenedor <b>no hay cotejo posible entre lotes</b>,
+        ni dentro del mismo municipio ni entre entidades. Y perseguir <b>la cadena comercial de
+        precursores</b> —mecha, fulminantes eléctricos, tubería, temporizadores— es una vía documental
+        que no depende de una captura.
+      </div>
+      <div class="apartado"><span class="k">3 · EL BLANCO CIVIL SE DESPLAZA DEL INDIVIDUO AL DOMICILIO COLECTIVO</span>
+        En Culiacán se atacó <b>un edificio de departamentos de cuatro niveles</b>: se derribó el
+        portón con un vehículo robado <b>antes</b> de prender fuego, con familias dentro. <b>Derribar
+        el acceso antes de incendiar indica intención de impedir la salida</b>, no solo de dañar el
+        inmueble. En Chihuahua se disparó contra <b>un domicilio</b>, de noche, sin lesionados.
+        <br><b>Los dos hechos comparten lógica: el blanco es la vivienda, y el efecto buscado es el
+        terror sobre quien la habita y sobre quienes viven al lado.</b> En un edificio, la agresión
+        dirigida a un residente <b>pone en riesgo a todos los demás</b>, que no eligen a sus vecinos.
+        <b>Tres menores atrapados por el fuego es el saldo que no hubo por minutos.</b>
+        <br><b>Recomendación operativa</b>: tratar los ataques contra <b>inmuebles multifamiliares</b>
+        como categoría propia en el análisis de incidencia —hoy se diluyen entre «daños» e
+        «incendio»— y <b>cruzar el vehículo empleado como ariete</b>, que tiene reporte de robo y por
+        tanto <b>número de serie, fecha, lugar y víctima del despojo previo</b>. Es la única pieza con
+        trazabilidad registral del hecho y la línea más barata del corte.
+      </div>
+      <div class="apartado"><span class="k">4 · GUERRERO: DOS INCURSIONES EN LA MISMA SEMANA, RESULTADOS OPUESTOS, UN SOLO VACÍO</span>
+        En <b>San Miguel Totolapan</b> una familia no pudo defenderse y perdió seis miembros; en
+        <b>Petatlán</b> la comunidad sí pudo y causó cuatro bajas al agresor. <b>Que los pobladores
+        ganen un enfrentamiento no es una buena noticia: es la medida de un vacío.</b> El
+        enfrentamiento de Las Mesas del Parotal <b>duró desde la tarde hasta la madrugada</b> — la
+        fuerza pública no llegó en ese lapso.
+        <br><b>Y las dos regiones son distintas</b>: Totolapan está en Tierra Caliente y Petatlán en
+        la Costa Grande. <b>La Familia Michoacana presionando ambas en la misma semana describe
+        expansión, no disputa local.</b>
+        <br><b>Recomendación operativa</b>: medir el <b>tiempo de respuesta desde el primer
+        reporte</b> en ambos casos —es el indicador que explica los dos resultados—, e
+        <b>identificar la plaza de origen de los cuatro abatidos</b>, que determina si el grupo se
+        desplazó desde Tierra Caliente o se reclutó localmente.
+      </div>
+      <div class="apartado"><span class="k">5 · LA BRECHA ENTRE DETENCIÓN Y CONDENA, MEDIDA EN EL CASO MÁS SENCILLO POSIBLE</span>
+        La única sentencia del corte resuelve un <b>robo de una batería y un autoestéreo con incendio
+        de vehículo, cometido el 7 de marzo de 2024</b>, con responsable individualizado y objetos
+        identificados. <b>Tardó dos años y casi seis meses.</b>
+        <br><b>Ese es el suelo, no el techo.</b> Si el caso judicialmente más simple tarda eso, los
+        hechos de alto impacto de este mismo corte —un incendio contra un edificio habitado, un
+        depósito de cuarenta y nueve artefactos— <b>no deben esperarse resueltos en el horizonte de
+        meses</b>. Frente a ello, la jornada produjo <b>tres personas detenidas y una sentenciada</b>,
+        y no son las mismas personas ni el mismo expediente.
+        <br><b>Recomendación operativa</b>: exigir <b>número de causa penal y tribunal</b> en todo
+        comunicado de sentencia —ninguno de los dos se publicó aquí—, que son los campos que permiten
+        <b>seguir el caso en apelación y verificar la firmeza</b>. Sin ellos, una condena publicada
+        <b>no es seguible</b>.
+      </div>
+      <div class="apartado"><span class="k">6 · UN DATO NO PUBLICADO PUEDE VALER MÁS QUE EL HECHO PUBLICADO</span>
+        Este corte deja fuera <b>once detenidos y diez armas largas</b> —el mayor volumen de la
+        ventana— porque el boletín que los difunde, siendo de un gobierno estatal, <b>no lleva fecha
+        en la ruta</b>. Deja también sin resolver el color de un hecho de Chihuahua porque nadie
+        confirma <b>si el ocupante del domicilio atacado es o no personal de seguridad</b>: un solo
+        dato que mueve el evento entre dos categorías del semáforo.
+        <br><b>La consecuencia es concreta y corregible sin coste</b>: <b>fecha en la ruta del
+        comunicado</b> y <b>adscripción de la víctima cuando se conozca</b>. Sin lo primero, una
+        acción institucional real no puede contarse; sin lo segundo, un ataque contra autoridad se
+        registra por defecto a la baja. <b>La calidad de la publicación oficial está determinando el
+        nivel de riesgo medido, y esa es una variable que la autoridad controla.</b>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-head">DECLARACIONES DE TRAZABILIDAD</div>
+  <p class="muted-note">
+    <b>Ventana</b>: 28-ago 06:25 → 29-ago 09:05 CDMX; continuación estricta de la edición anterior.
+    <b>Comparabilidad</b>: los totales de este corte <b>no son comparables sin más</b> — el módulo de
+    armamento descansa en <b>una entidad y dos eventos</b>, el hecho rojo lleva
+    <code>FRONTERA DE VENTANA — HORA NO FIJADA</code>, y el candidato de mayor volumen quedó fuera por
+    <code>SIN ANCLA FECHADA</code>.
+    <b>Bloqueo de egreso</b>: cero portales oficiales leídos por acceso directo; techo de confianza
+    <b>★★★★☆</b> para todo el producto.
+    <b>Cobertura</b>: 32 de 32 entidades con al menos una consulta; <b>ninguna con cobertura de portal
+    completa</b>; <code>SIN ACTUALIZACIÓN CONSTATADA</code> no se usa en ninguna casilla, por requerir
+    lectura directa.
+    <b>Deslindes</b>: Escuinapa 28-ago no es la jornada del 27; Petatlán no es Totolapan; el ataque a
+    un domicilio de Montebello con dos heridos es un hecho de <b>diciembre de 2025</b>.
+    <b>Recuperación</b>: <code>ARG-111-REC-001</code>, ventana de origen declarada, <b>fuera de todos
+    los totales</b>.
+    <b>Cálculo propio</b>: todos los totales nacionales de armamento y judiciales son <b>agregaciones
+    de ARGOS</b> sobre cifras publicadas evento por evento; la suma de «221 artefactos en diez días»
+    es <b>de las fuentes periodísticas</b>, no de ARGOS.
+  </p>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-08-29 · Hora: 09:05 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 111</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<script>
+const MEXICO_VIEWBOX = "0 0 900 520";
+const MEXICO_PATHS = {
+  "MX-ZAC": { name: "Zacatecas", d: "M452 234L451 235L448 240L445 241L444 244L440 245L439 247L439 250L440 251L439 254L438 255L433 257L432 258L429 263L424 265L422 268L419 268L416 267L415 269L416 271L415 272L416 275L415 280L416 283L420 285L422 287L425 288L427 291L428 292L432 291L436 286L439 285L441 288L440 290L437 296L437 298L438 301L437 305L435 309L434 309L431 308L429 305L426 304L423 303L421 300L421 299L418 297L415 295L415 293L412 296L409 298L406 299L404 303L402 307L400 310L400 311L403 313L403 316L403 317L406 319L406 322L405 323L402 325L399 328L397 327L395 328L395 330L393 331L392 331L388 332L385 331L382 330L380 328L378 327L378 326L383 324L383 322L382 322L380 322L379 319L381 319L383 317L383 312L386 310L388 308L393 306L394 304L395 300L394 299L392 299L392 296L390 296L388 296L388 298L389 299L386 301L385 304L383 303L382 304L380 304L380 302L383 296L383 293L380 291L376 292L376 300L375 301L374 300L373 298L373 295L374 292L376 289L377 288L377 287L375 286L373 287L371 288L371 289L372 293L373 295L372 296L370 296L371 293L370 293L367 294L367 296L365 297L364 298L363 296L363 294L364 291L365 289L368 288L369 283L369 281L368 278L368 277L370 274L371 268L371 266L374 263L376 260L375 256L376 255L376 251L375 248L377 247L380 245L382 242L384 240L386 238L390 238L392 239L395 238L400 239L400 238L402 239L408 238L409 236L408 232L406 232L407 227L405 225L404 223L403 221L403 220L410 218L419 219L422 221L424 222L426 223L428 226L431 226L431 229L434 230L435 229L438 228L441 229L442 230L444 233L445 235L447 235L450 234L452 234Z" },
+  "MX-YUC": { name: "Yucatán", d: "M787 319L787 324L786 326L785 329L787 333L787 334L784 339L784 341L783 342L777 347L775 348L772 348L771 347L770 348L768 350L766 351L765 354L761 356L759 356L755 359L754 360L752 361L748 362L746 363L745 364L740 365L740 367L739 369L738 365L735 362L734 359L730 357L728 352L726 351L726 349L724 347L722 349L721 348L720 348L718 346L715 345L715 338L714 337L716 333L717 332L722 328L725 327L729 325L733 324L740 323L747 322L754 321L759 319L759 318L765 317L767 317L770 317L772 315L774 316L776 317L779 317L781 318L785 319L787 319Z" },
+  "MX-VER": { name: "Veracruz", d: "M528 298L529 303L531 308L530 309L531 311L531 314L534 319L535 319L536 323L537 324L538 328L542 336L543 337L544 341L545 343L549 347L549 348L555 355L559 360L560 361L562 364L563 367L564 372L566 374L565 376L566 379L569 380L571 383L571 385L572 386L574 386L575 390L577 392L577 394L580 394L584 395L594 395L599 399L603 400L606 404L608 407L609 409L610 410L612 411L615 410L622 408L621 409L621 414L622 415L622 418L624 420L626 422L630 424L632 427L631 430L632 432L634 433L630 436L628 437L627 438L609 437L598 436L599 435L597 432L595 431L593 429L591 426L591 424L593 423L591 422L590 423L586 424L583 426L580 426L579 427L577 427L575 422L575 420L576 419L578 414L577 411L576 410L573 409L571 409L569 409L567 408L566 406L565 405L564 406L561 403L560 400L561 399L559 397L559 400L557 403L555 401L553 400L550 402L548 401L547 398L543 396L542 394L542 391L544 389L544 388L544 381L549 381L549 378L546 377L542 376L540 375L541 374L539 370L540 369L542 364L542 363L544 358L546 355L539 352L536 356L535 356L534 354L531 354L530 351L530 347L532 346L533 347L535 345L534 344L531 341L531 339L531 336L528 336L526 339L525 340L525 343L522 342L520 344L519 345L517 347L514 349L512 350L510 347L511 343L511 339L512 338L515 336L517 337L518 337L518 335L518 333L520 331L518 327L516 326L515 327L512 326L510 325L511 323L510 321L509 317L508 317L507 316L507 313L510 312L511 310L509 308L509 306L511 306L511 305L511 302L512 301L515 301L513 298L512 297L508 296L506 296L505 294L507 293L511 293L514 294L516 294L516 293L518 292L519 294L522 295L523 295L526 299L528 298ZM533 309L534 311L537 314L540 316L540 318L538 323L537 323L539 319L539 318L537 316L536 314L533 311L533 309Z" },
+  "MX-TLA": { name: "Tlaxcala", d: "M508 374L507 374L506 372L511 370L514 370L517 367L519 368L522 368L523 366L529 371L529 373L531 372L533 374L533 375L534 376L533 378L530 378L528 381L526 381L524 380L521 383L520 383L516 381L515 378L510 374L508 374Z" },
+  "MX-TAM": { name: "Tamaulipas", d: "M528 298L526 299L523 295L522 295L519 294L518 292L516 293L516 294L514 294L511 293L507 293L505 294L502 295L500 294L499 294L495 294L493 294L491 291L490 289L488 286L486 286L485 284L483 286L481 286L478 285L473 284L472 283L472 279L472 276L471 274L471 271L470 270L470 268L474 268L473 264L474 262L475 261L476 258L478 256L481 257L483 256L484 254L486 255L485 252L484 252L483 248L481 245L482 240L481 237L478 236L479 234L481 233L484 231L486 229L487 229L488 228L492 227L492 226L494 225L494 223L493 221L496 218L497 219L500 219L502 216L506 215L509 213L511 212L513 209L510 208L509 204L510 202L509 200L509 197L508 194L503 194L501 196L500 195L498 192L494 192L493 188L491 189L489 186L487 184L486 179L484 179L483 177L481 177L481 172L478 170L479 167L481 166L480 163L479 162L479 158L478 157L479 155L477 155L474 154L475 152L478 151L480 149L483 150L485 152L485 153L486 154L485 158L486 160L487 162L487 167L488 168L491 171L493 178L494 180L496 182L495 183L499 184L502 185L504 186L506 188L508 188L514 191L517 193L519 193L521 193L524 193L526 193L529 194L530 194L532 195L535 198L537 199L539 198L540 197L543 196L545 196L545 198L544 203L543 205L539 212L538 211L535 210L535 212L535 214L533 214L533 212L531 212L530 216L531 217L529 223L531 224L529 227L530 229L530 231L530 232L529 234L527 235L528 239L529 238L530 241L529 246L529 255L530 259L529 266L529 277L529 281L528 283L527 285L526 288L527 289L526 293L527 295L528 298Z" },
+  "MX-TAB": { name: "Tabasco", d: "M662 397L664 401L667 404L668 404L669 405L669 407L672 412L676 415L676 416L679 417L681 418L684 417L685 413L688 413L691 414L693 415L700 418L700 420L700 435L689 435L690 434L689 432L686 430L684 430L683 429L684 427L683 423L680 422L680 420L679 418L677 418L674 418L674 419L670 419L669 420L669 422L667 423L662 428L660 429L656 432L654 432L653 429L650 428L650 426L648 423L649 420L649 418L647 418L645 417L642 415L640 416L640 419L640 422L639 425L636 428L636 430L634 433L632 432L631 430L632 427L630 424L626 422L624 420L622 418L622 415L621 414L621 409L622 408L627 407L627 408L630 408L630 406L634 406L635 404L639 403L644 403L645 405L647 404L648 403L652 403L655 401L657 398L662 397Z" },
+  "MX-SON": { name: "Sonora", d: "M163 106L163 108L165 112L164 116L163 119L156 116L158 114L158 112L158 108L161 106L163 106ZM252 48L253 49L252 50L254 54L254 56L254 59L253 61L255 62L255 65L256 66L255 67L256 69L258 76L257 79L259 82L257 85L257 90L259 90L259 97L259 99L258 101L259 107L257 107L257 110L256 111L256 114L255 115L256 117L254 120L254 122L255 124L254 125L256 128L258 129L256 131L253 132L250 131L249 132L246 132L245 133L247 135L246 138L249 139L251 142L251 144L250 146L254 148L257 156L257 157L256 161L256 164L255 165L259 167L261 166L263 166L263 168L259 172L260 174L258 175L256 179L252 180L251 183L249 184L245 186L244 185L242 184L240 183L240 182L239 180L235 176L235 175L233 174L232 176L229 176L227 175L224 173L223 169L223 165L221 164L219 165L218 164L213 163L209 159L209 157L207 156L206 154L206 152L205 150L206 148L205 146L206 143L204 143L199 141L197 143L196 141L194 141L189 138L187 135L184 131L183 129L178 127L176 123L172 120L173 118L170 116L168 114L166 113L166 109L165 106L164 103L162 104L160 103L160 102L161 100L161 98L158 96L157 93L156 93L154 89L154 88L152 87L152 85L151 83L151 80L151 79L149 77L149 74L148 72L145 70L143 66L142 62L143 57L144 55L143 52L140 51L136 50L131 49L129 48L130 47L129 44L123 41L119 44L116 44L113 42L112 41L107 38L105 36L103 36L102 36L101 35L100 35L94 31L95 28L95 26L95 24L94 22L96 20L97 16L99 16L121 23L147 32L165 38L180 43L194 48L209 48L227 48L252 48ZM100 35L103 37L102 39L100 37L100 36L100 35Z" },
+  "MX-SIN": { name: "Sinaloa", d: "M268 221L270 224L270 226L268 224L268 221ZM263 219L264 220L269 225L268 226L266 222L263 219ZM241 186L242 186L242 184L244 185L245 186L249 184L251 183L252 180L256 179L258 175L260 174L259 172L263 168L263 166L268 166L269 167L269 169L270 169L271 172L271 177L272 178L273 181L275 184L276 186L278 190L281 191L284 192L287 192L290 197L290 200L292 203L292 205L290 207L291 209L290 212L290 217L290 219L291 219L293 224L294 227L297 227L298 229L299 229L300 234L302 234L302 238L304 242L305 242L310 239L311 238L315 239L317 240L320 245L320 247L322 252L323 253L323 256L325 259L327 261L328 264L329 266L328 267L330 270L331 274L335 274L337 276L336 277L335 280L334 282L334 285L335 286L336 290L335 291L332 290L330 289L329 289L329 291L325 286L322 283L321 282L316 276L310 271L309 268L308 266L306 264L302 259L299 255L299 254L297 251L292 247L290 245L287 243L286 243L282 240L284 239L284 237L282 235L281 237L277 236L276 234L272 232L271 230L271 228L270 221L269 219L267 219L265 217L262 215L261 217L260 215L254 212L252 211L251 209L252 208L250 207L248 207L249 208L248 210L247 208L245 209L243 207L245 206L247 206L248 205L248 204L245 204L245 206L242 205L239 202L235 200L236 198L235 196L235 195L237 191L239 190L240 187L241 186Z" },
+  "MX-SLP": { name: "San Luis Potosí", d: "M470 270L471 271L471 274L472 276L472 279L472 283L473 284L478 285L481 286L483 286L485 284L486 286L488 286L490 289L491 291L493 294L495 294L499 294L500 294L502 295L505 294L506 296L508 296L512 297L513 298L515 301L512 301L511 302L511 305L511 306L509 306L509 308L511 310L510 312L507 313L507 316L508 317L509 317L510 321L508 321L506 323L505 326L504 325L503 327L500 326L499 323L497 324L492 319L491 317L489 317L488 320L483 320L482 317L480 316L478 318L476 319L471 319L469 317L465 314L461 313L460 314L460 317L458 317L456 318L451 315L449 313L446 312L441 310L440 310L437 309L435 309L437 305L438 301L437 298L437 296L440 290L441 288L439 285L436 286L432 291L428 292L427 291L425 288L422 287L420 285L416 283L415 280L416 275L415 272L416 271L415 269L416 267L419 268L422 268L424 265L429 263L432 258L433 257L438 255L439 254L440 251L439 250L439 247L440 245L444 244L445 241L448 240L451 235L452 237L455 238L456 240L454 241L456 244L456 245L459 248L460 251L459 255L460 257L460 260L459 263L460 264L460 269L462 272L463 272L466 270L470 270Z" },
+  "MX-ROO": { name: "Quintana Roo", d: "M807 343L806 346L802 351L800 352L800 350L800 348L802 345L804 345L807 343ZM746 416L746 414L748 411L749 408L749 404L748 403L749 401L748 399L747 397L747 395L748 391L748 388L749 387L749 381L747 377L744 374L741 371L739 369L740 367L740 365L745 364L746 363L748 362L752 361L754 360L755 359L759 356L761 356L765 354L766 351L768 350L770 348L771 347L772 348L775 348L777 347L783 342L784 341L784 339L787 334L787 333L785 329L786 326L787 324L787 319L791 320L795 320L797 319L798 316L800 317L803 321L804 325L805 326L805 328L806 329L805 332L803 336L800 340L798 343L794 347L792 349L791 352L790 353L788 358L789 362L788 365L786 365L784 368L782 369L781 371L784 373L785 372L789 371L790 372L789 374L787 376L786 376L784 377L783 382L784 381L786 379L787 378L789 379L787 382L786 385L784 389L783 394L782 395L781 403L779 406L779 409L778 408L778 405L777 404L777 403L773 401L775 396L775 393L773 391L768 400L768 401L763 401L762 402L761 405L760 406L760 409L758 410L757 413L756 414L755 415L753 417L749 415L747 415L746 416Z" },
+  "MX-QUE": { name: "Querétaro", d: "M497 324L496 327L491 329L490 328L488 329L489 331L487 334L485 336L484 339L485 341L483 343L477 344L476 351L475 352L474 354L474 356L472 358L469 359L466 355L466 354L464 352L463 350L461 348L460 346L460 344L458 340L458 338L459 335L464 335L465 334L468 334L470 333L470 330L473 327L474 326L476 328L479 326L480 323L477 323L479 321L478 318L480 316L482 317L483 320L488 320L489 317L491 317L492 319L497 324Z" },
+  "MX-PUE": { name: "Puebla", d: "M557 403L554 407L552 408L548 411L545 410L543 411L541 413L540 415L538 415L538 413L535 409L534 408L535 407L535 405L532 406L530 410L532 413L531 415L529 415L527 413L525 414L522 414L520 414L518 416L517 417L515 416L514 414L509 415L509 414L505 412L505 410L502 411L501 408L499 406L499 405L501 403L502 402L504 400L507 403L508 402L506 395L508 388L509 386L509 382L508 379L509 376L508 374L510 374L515 378L516 381L520 383L521 383L524 380L526 381L528 381L530 378L533 378L534 376L533 375L533 374L531 372L529 373L529 371L523 366L522 368L519 368L518 363L520 360L521 355L520 353L518 353L517 351L521 350L522 348L525 346L525 343L525 340L526 339L528 336L531 336L531 339L531 341L534 344L535 345L533 347L532 346L530 347L530 351L531 354L534 354L535 356L536 356L539 352L546 355L544 358L542 363L542 364L540 369L539 370L541 374L540 375L542 376L546 377L549 378L549 381L544 381L544 388L544 389L542 391L542 394L543 396L547 398L548 401L550 402L553 400L555 401L557 403Z" },
+  "MX-OAX": { name: "Oaxaca", d: "M627 438L627 441L626 442L625 446L622 448L620 455L620 456L621 459L621 461L621 464L619 465L615 463L614 462L613 462L613 464L614 465L618 465L621 468L616 466L613 465L606 464L608 462L609 461L607 460L605 461L602 458L600 458L599 461L598 461L596 463L601 463L601 464L592 466L590 467L589 469L588 470L584 471L582 472L580 472L578 473L574 474L570 476L567 478L563 478L561 479L559 479L556 477L552 477L548 475L547 474L543 472L540 471L538 471L535 471L529 470L525 467L518 463L513 462L509 461L514 457L514 455L517 453L518 451L519 450L521 449L522 447L523 445L522 443L520 442L520 438L517 437L517 435L518 434L518 429L515 424L515 421L517 417L518 416L520 414L522 414L525 414L527 413L529 415L531 415L532 413L530 410L532 406L535 405L535 407L534 408L535 409L538 413L538 415L540 415L541 413L543 411L545 410L548 411L552 408L554 407L557 403L559 400L559 397L561 399L560 400L561 403L564 406L565 405L566 406L567 408L569 409L571 409L573 409L576 410L577 411L578 414L576 419L575 420L575 422L577 427L579 427L580 426L583 426L586 424L590 423L591 422L593 423L591 424L591 426L593 429L595 431L597 432L599 435L598 436L609 437L627 438Z" },
+  "MX-NLE": { name: "Nuevo León", d: "M480 149L478 151L475 152L474 154L477 155L479 155L478 157L479 158L479 162L480 163L481 166L479 167L478 170L481 172L481 177L483 177L484 179L486 179L487 184L489 186L491 189L493 188L494 192L498 192L500 195L501 196L503 194L508 194L509 197L509 200L510 202L509 204L510 208L513 209L511 212L509 213L506 215L502 216L500 219L497 219L496 218L493 221L494 223L494 225L492 226L492 227L488 228L487 229L486 229L484 231L481 233L479 234L478 236L481 237L482 240L481 245L483 248L484 252L485 252L486 255L484 254L483 256L481 257L478 256L476 258L475 261L474 262L473 264L474 268L470 268L470 270L466 270L463 272L462 272L460 269L460 264L459 263L460 260L460 257L459 255L460 251L459 248L456 245L456 244L454 241L456 240L455 238L452 237L451 235L452 234L453 231L452 229L451 227L451 224L453 225L453 222L452 219L454 216L456 215L457 214L458 214L460 216L463 217L465 217L466 215L464 212L461 212L461 211L457 208L456 204L454 204L452 203L451 202L451 199L452 196L449 194L448 191L446 189L441 184L442 183L444 181L445 178L446 177L449 177L451 176L455 175L456 173L457 173L458 170L457 165L455 164L454 165L453 167L451 165L450 162L451 160L453 158L455 158L457 157L459 157L460 156L459 154L461 151L462 149L463 148L467 148L472 149L475 148L477 146L478 147L480 149Z" },
+  "MX-NAY": { name: "Nayarit", d: "M305 313L308 314L309 316L308 317L306 316L305 313ZM363 294L363 296L364 298L363 303L364 306L365 306L368 308L368 309L369 312L373 313L374 314L375 317L377 318L377 320L377 324L376 325L374 326L372 327L371 328L366 328L366 332L365 337L363 338L364 342L361 339L360 338L358 335L354 334L353 333L350 332L347 335L345 334L343 335L342 338L339 341L338 339L337 340L334 338L335 336L339 332L340 332L341 330L341 327L341 323L342 320L341 318L340 318L336 316L335 314L334 311L331 306L330 303L330 300L333 302L335 303L335 301L331 298L331 297L331 292L330 289L332 290L335 291L336 290L335 286L334 285L334 282L335 280L336 277L337 276L339 279L341 278L342 277L344 279L347 279L348 282L349 282L349 285L346 287L345 288L347 291L348 292L351 288L352 290L354 291L356 293L357 295L359 296L360 295L363 294ZM310 319L312 319L312 321L309 319L310 319Z" },
+  "MX-MOR": { name: "Morelos", d: "M501 385L503 388L506 389L508 387L509 386L508 388L506 395L508 402L507 403L504 400L502 402L501 403L499 405L496 403L491 402L489 399L486 399L486 397L488 394L491 388L492 385L494 385L495 386L497 385L498 386L501 385Z" },
+  "MX-MIC": { name: "Michoacán", d: "M464 352L466 354L466 355L469 359L469 361L470 363L469 364L468 367L466 368L467 371L467 374L467 376L466 377L466 380L464 382L462 386L460 387L459 389L457 391L455 393L455 392L453 393L454 398L454 401L457 405L456 406L451 403L449 404L447 401L445 401L440 400L438 401L434 401L433 401L432 399L430 398L427 400L426 399L425 401L425 404L425 405L425 407L422 409L421 409L419 410L418 411L418 415L419 416L417 417L415 416L410 414L402 412L397 410L394 409L391 408L385 406L384 404L382 401L379 398L380 398L378 396L379 394L381 393L381 390L382 391L385 388L388 388L390 386L392 388L394 386L396 385L400 381L402 381L404 381L405 379L406 377L407 376L406 374L403 374L404 371L402 367L403 365L402 362L398 361L395 361L396 359L396 357L397 356L400 356L401 357L405 356L405 354L407 353L408 353L411 351L416 351L418 350L421 350L422 350L423 354L425 355L428 354L429 354L431 352L433 351L436 351L436 353L437 359L442 360L443 358L445 359L447 358L448 361L452 362L456 362L457 361L463 359L464 358L463 357L464 355L463 353L464 352Z" },
+  "MX-MEX": { name: "México", d: "M506 372L507 374L508 374L509 376L508 379L509 382L509 386L508 387L506 389L503 388L501 385L502 383L501 380L498 378L497 375L495 373L493 375L493 377L490 379L490 381L492 385L491 388L488 394L486 397L485 397L483 396L479 397L477 400L473 400L471 401L472 402L470 403L467 405L466 405L464 402L461 401L463 400L462 397L461 397L461 395L461 391L462 389L462 386L464 382L466 380L466 377L467 376L467 374L467 371L466 368L468 367L469 364L470 363L469 361L469 359L472 358L474 356L474 354L475 352L476 351L477 353L481 355L485 355L487 359L486 360L487 361L490 367L490 364L492 365L493 364L493 361L494 360L497 359L501 358L501 359L500 364L498 365L500 368L502 365L508 364L508 366L506 371L506 372Z" },
+  "MX-JAL": { name: "Jalisco", d: "M403 313L405 312L409 313L411 314L413 315L414 315L418 313L421 310L425 308L423 306L423 303L426 304L429 305L431 308L434 309L433 311L432 313L431 319L432 322L430 324L429 323L427 328L425 330L424 333L419 339L421 340L423 343L421 347L421 350L418 350L416 351L411 351L408 353L407 353L405 354L405 356L401 357L400 356L397 356L396 357L396 359L395 361L398 361L402 362L403 365L402 367L404 371L403 374L406 374L407 376L406 377L405 379L404 381L402 381L400 381L396 385L394 386L392 388L390 386L388 388L385 388L385 386L384 385L384 383L384 379L383 376L382 372L379 374L376 376L372 376L370 377L368 378L366 378L364 379L361 379L360 380L358 380L357 382L355 382L352 381L352 379L350 379L348 378L346 376L344 372L340 368L338 365L334 359L333 357L333 353L330 351L329 348L331 347L333 346L339 346L340 344L341 343L339 341L342 338L343 335L345 334L347 335L350 332L353 333L354 334L358 335L360 338L361 339L364 342L363 338L365 337L366 332L366 328L371 328L372 327L374 326L376 325L377 324L377 320L377 318L375 317L374 314L373 313L369 312L368 309L368 308L365 306L364 306L363 303L364 298L365 297L367 296L367 294L370 293L371 293L370 296L372 296L373 295L372 293L371 289L371 288L373 287L375 286L377 287L377 288L376 289L374 292L373 295L373 298L374 300L375 301L376 300L376 292L380 291L383 293L383 296L380 302L380 304L382 304L383 303L385 304L386 301L389 299L388 298L388 296L390 296L392 296L392 299L394 299L395 300L394 304L393 306L388 308L386 310L383 312L383 317L381 319L379 319L380 322L382 322L383 322L383 324L378 326L378 327L380 328L382 330L385 331L388 332L392 331L393 331L395 330L395 328L397 327L399 328L402 325L405 323L406 322L406 319L403 317L403 316L403 313Z" },
+  "MX-HID": { name: "Hidalgo", d: "M510 321L511 323L510 325L512 326L515 327L516 326L518 327L520 331L518 333L518 335L518 337L517 337L515 336L512 338L511 339L511 343L510 347L512 350L514 349L517 347L519 345L520 344L522 342L525 343L525 346L522 348L521 350L517 351L518 353L520 353L521 355L520 360L518 363L519 368L517 367L514 370L511 370L506 372L506 371L508 366L508 364L502 365L500 368L498 365L500 364L501 359L501 358L497 359L494 360L493 361L493 364L492 365L490 364L490 367L487 361L486 360L487 359L485 355L481 355L477 353L476 351L477 344L483 343L485 341L484 339L485 336L487 334L489 331L488 329L490 328L491 329L496 327L497 324L499 323L500 326L503 327L504 325L505 326L506 323L508 321L510 321Z" },
+  "MX-GRO": { name: "Guerrero", d: "M486 397L486 399L489 399L491 402L496 403L499 405L499 406L501 408L502 411L505 410L505 412L509 414L509 415L514 414L515 416L517 417L515 421L515 424L518 429L518 434L517 435L517 437L520 438L520 442L522 443L523 445L522 447L521 449L519 450L518 451L517 453L514 455L514 457L509 461L504 454L500 455L493 453L486 451L482 451L479 449L477 448L475 447L474 445L463 441L456 438L446 435L446 433L442 430L436 428L436 427L435 425L433 425L431 424L431 422L429 420L427 418L423 416L421 415L419 416L418 415L418 411L419 410L421 409L422 409L425 407L425 405L425 404L425 401L426 399L427 400L430 398L432 399L433 401L434 401L438 401L440 400L445 401L447 401L449 404L451 403L456 406L457 405L454 401L454 398L453 393L455 392L455 393L457 391L459 389L460 387L462 386L462 389L461 391L461 395L461 397L462 397L463 400L461 401L464 402L466 405L467 405L470 403L472 402L471 401L473 400L477 400L479 397L483 396L485 397L486 397Z" },
+  "MX-GUA": { name: "Guanajuato", d: "M478 318L479 321L477 323L480 323L479 326L476 328L474 326L473 327L470 330L470 333L468 334L465 334L464 335L459 335L458 338L458 340L460 344L460 346L461 348L463 350L464 352L463 353L464 355L463 357L464 358L463 359L457 361L456 362L452 362L448 361L447 358L445 359L443 358L442 360L437 359L436 353L436 351L433 351L431 352L429 354L428 354L425 355L423 354L422 350L421 350L421 347L423 343L421 340L419 339L424 333L425 330L427 328L429 323L430 324L432 322L431 319L432 313L433 311L434 309L435 309L437 309L440 310L441 310L446 312L449 313L451 315L456 318L458 317L460 317L460 314L461 313L465 314L469 317L471 319L476 319L478 318Z" },
+  "MX-DUR": { name: "Durango", d: "M375 174L379 176L383 180L385 184L384 188L386 192L386 196L387 200L386 204L383 207L384 209L386 210L384 211L383 212L383 215L385 217L386 219L388 221L389 224L390 226L394 228L397 228L399 229L400 228L399 227L400 224L403 221L404 223L405 225L407 227L406 232L408 232L409 236L408 238L402 239L400 238L400 239L395 238L392 239L390 238L386 238L384 240L382 242L380 245L377 247L375 248L376 251L376 255L375 256L376 260L374 263L371 266L371 268L370 274L368 277L368 278L369 281L369 283L368 288L365 289L364 291L363 294L360 295L359 296L357 295L356 293L354 291L352 290L351 288L348 292L347 291L345 288L346 287L349 285L349 282L348 282L347 279L344 279L342 277L341 278L339 279L337 276L335 274L331 274L330 270L328 267L329 266L328 264L327 261L325 259L323 256L323 253L322 252L320 247L320 245L317 240L315 239L311 238L310 239L305 242L304 242L302 238L302 234L300 234L299 229L298 229L297 227L294 227L293 224L291 219L290 219L290 217L290 212L291 209L290 207L292 205L292 203L295 202L296 204L301 205L302 206L303 204L307 202L309 199L308 196L307 195L309 191L309 189L311 187L313 186L314 184L314 182L314 180L315 174L317 173L317 172L320 173L323 174L324 176L326 178L327 177L331 180L333 180L333 181L335 181L337 182L341 180L346 180L348 182L351 183L353 183L355 183L355 180L357 177L358 177L361 174L361 172L366 175L373 173L375 174Z" },
+  "MX-CMX": { name: "Ciudad de México", d: "M501 385L498 386L497 385L495 386L494 385L492 385L490 381L490 379L493 377L493 375L495 373L497 375L498 378L501 380L502 383L501 385Z" },
+  "MX-COL": { name: "Colima", d: "M385 388L382 391L381 390L381 393L379 394L378 396L377 394L373 391L368 388L364 387L364 385L363 384L361 384L355 382L357 382L358 380L360 380L361 379L364 379L366 378L368 378L370 377L372 376L376 376L379 374L382 372L383 376L384 379L384 383L384 385L385 386L385 388Z" },
+  "MX-COA": { name: "Coahuila", d: "M477 146L475 148L472 149L467 148L463 148L462 149L461 151L459 154L460 156L459 157L457 157L455 158L453 158L451 160L450 162L451 165L453 167L454 165L455 164L457 165L458 170L457 173L456 173L455 175L451 176L449 177L446 177L445 178L444 181L442 183L441 184L446 189L448 191L449 194L452 196L451 199L451 202L452 203L454 204L456 204L457 208L461 211L461 212L464 212L466 215L465 217L463 217L460 216L458 214L457 214L456 215L454 216L452 219L453 222L453 225L451 224L451 227L452 229L453 231L452 234L450 234L447 235L445 235L444 233L442 230L441 229L438 228L435 229L434 230L431 229L431 226L428 226L426 223L424 222L422 221L419 219L410 218L403 220L403 221L400 224L399 227L400 228L399 229L397 228L394 228L390 226L389 224L388 221L386 219L385 217L383 215L383 212L384 211L386 210L384 209L383 207L386 204L387 200L386 196L386 192L384 188L385 184L383 180L379 176L375 174L374 172L372 171L372 168L376 167L376 165L374 164L374 159L373 155L373 152L372 152L371 147L372 146L371 145L372 143L371 142L373 141L374 138L378 130L377 129L380 124L383 122L385 118L386 118L387 117L385 116L387 112L391 113L394 113L395 110L396 110L397 107L399 107L400 106L400 103L402 101L401 100L404 95L405 92L410 91L412 91L414 88L418 89L419 90L421 91L422 90L425 90L427 90L431 91L434 91L436 91L438 93L441 95L441 98L443 98L444 99L446 100L447 102L450 104L453 105L454 108L456 110L456 114L459 118L460 122L463 124L462 125L464 127L464 129L465 131L465 132L467 134L471 136L472 138L473 140L475 142L476 145L477 146Z" },
+  "MX-CHH": { name: "Chihuahua", d: "M387 112L385 116L387 117L386 118L385 118L383 122L380 124L377 129L378 130L374 138L373 141L371 142L372 143L371 145L372 146L371 147L372 152L373 152L373 155L374 159L374 164L376 165L376 167L372 168L372 171L374 172L375 174L373 173L366 175L361 172L361 174L358 177L357 177L355 180L355 183L353 183L351 183L348 182L346 180L341 180L337 182L335 181L333 181L333 180L331 180L327 177L326 178L324 176L323 174L320 173L317 172L317 173L315 174L314 180L314 182L314 184L313 186L311 187L309 189L309 191L307 195L308 196L309 199L307 202L303 204L302 206L301 205L296 204L295 202L292 203L290 200L290 197L287 192L284 192L281 191L278 190L276 186L275 184L273 181L272 178L271 177L271 172L270 169L269 169L269 167L268 166L263 166L261 166L259 167L255 165L256 164L256 161L257 157L257 156L254 148L250 146L251 144L251 142L249 139L246 138L247 135L245 133L246 132L249 132L250 131L253 132L256 131L258 129L256 128L254 125L255 124L254 122L254 120L256 117L255 115L256 114L256 111L257 110L257 107L259 107L258 101L259 99L259 97L259 90L257 90L257 85L259 82L257 79L258 76L256 69L255 67L256 66L255 65L255 62L253 61L254 59L254 56L254 54L252 50L253 49L252 48L266 48L266 36L285 36L308 36L309 37L312 37L314 40L314 42L316 44L320 46L321 46L323 48L325 49L327 53L332 55L333 58L336 60L337 61L340 63L341 63L345 65L346 66L347 68L349 69L350 71L350 74L354 78L355 80L354 84L355 87L356 88L358 92L358 94L363 98L365 98L367 99L368 101L373 104L376 104L378 105L379 107L381 108L383 108L387 112Z" },
+  "MX-CHP": { name: "Chiapas", d: "M621 464L621 461L621 459L620 456L620 455L622 448L625 446L626 442L627 441L627 438L628 437L630 436L634 433L636 430L636 428L639 425L640 422L640 419L640 416L642 415L645 417L647 418L649 418L649 420L648 423L650 426L650 428L653 429L654 432L656 432L660 429L662 428L667 423L669 422L669 420L670 419L674 419L674 418L677 418L679 418L680 420L680 422L683 423L684 427L683 429L684 430L686 430L689 432L690 434L689 435L691 438L694 439L695 442L698 445L701 446L703 448L707 450L708 452L708 456L710 457L712 457L712 458L714 458L715 460L713 464L714 468L698 468L681 467L672 484L669 490L673 495L672 497L671 498L671 500L670 502L671 506L669 509L669 510L664 506L653 493L648 488L641 481L635 476L632 474L626 470L628 469L626 467L622 466L621 464Z" },
+  "MX-CAM": { name: "Campeche", d: "M686 393L683 396L681 397L679 397L678 396L681 396L686 393ZM715 338L715 345L718 346L720 348L721 348L722 349L724 347L726 349L726 351L728 352L730 357L734 359L735 362L738 365L739 369L741 371L744 374L747 377L749 381L749 387L748 388L748 391L747 395L747 397L748 399L749 401L748 403L749 404L749 408L748 411L746 414L746 416L746 420L731 420L714 420L700 420L700 418L693 415L691 414L688 413L685 413L684 417L681 418L679 417L676 416L676 415L672 412L669 407L669 405L668 404L667 404L664 401L662 397L664 396L674 395L675 396L676 397L678 398L677 399L676 398L675 399L678 401L685 403L686 402L687 401L692 399L692 396L693 395L692 393L691 394L690 392L689 390L696 386L697 385L701 383L705 379L706 377L707 374L707 372L707 370L707 369L708 366L712 363L713 361L712 358L713 357L712 349L712 346L713 342L714 339L715 338Z" },
+  "MX-BCS": { name: "Baja California Sur", d: "M167 215L167 216L166 219L166 223L166 225L165 228L163 228L165 222L167 215ZM116 141L117 141L150 141L151 143L153 146L155 149L160 151L162 153L163 157L164 158L165 161L168 163L172 165L170 166L170 168L172 170L174 172L174 173L173 175L174 176L176 179L177 180L179 179L175 175L174 171L175 170L177 171L179 174L181 176L181 179L184 180L184 183L186 185L186 188L188 193L187 196L188 201L190 203L191 205L193 208L195 208L195 210L196 213L197 214L198 218L202 223L204 227L203 230L202 233L202 236L203 237L204 240L205 243L207 244L210 245L210 247L213 245L212 242L213 240L215 240L216 243L219 244L221 245L221 248L223 249L225 248L226 249L225 252L228 255L228 257L229 259L233 261L235 265L235 271L232 274L229 275L228 277L226 278L225 279L223 281L222 281L219 279L218 276L217 269L213 263L211 261L207 259L204 257L200 251L194 247L189 243L183 240L182 239L180 238L179 234L178 235L176 235L174 232L172 230L170 229L168 228L166 226L166 225L167 221L166 220L167 218L168 215L168 209L169 208L169 204L165 195L165 194L163 193L162 190L160 188L158 188L152 185L143 178L143 177L140 173L142 170L140 168L140 171L139 172L138 174L137 173L133 172L131 175L129 175L128 173L127 173L125 169L123 168L121 167L120 168L118 165L115 163L111 163L108 161L108 157L107 156L105 154L101 153L100 151L97 149L96 148L95 147L93 145L97 144L102 145L105 146L107 146L113 143L112 146L113 147L116 149L118 150L119 148L121 149L123 152L124 151L122 149L123 148L123 145L121 144L120 146L120 147L117 148L115 147L115 145L117 143L116 141ZM212 235L213 237L213 239L211 237L212 235ZM171 235L174 235L175 237L177 238L178 240L178 241L171 235ZM223 239L226 245L224 246L223 243L223 239ZM194 193L193 195L191 197L190 197L191 195L191 194L194 193ZM203 219L204 221L206 221L207 226L204 224L203 221L203 219ZM196 391L198 393L198 395L195 394L194 393L196 391Z" },
+  "MX-BCN": { name: "Baja California", d: "M131 97L133 98L135 100L136 102L136 104L141 104L141 109L141 110L143 111L142 113L139 110L138 108L135 106L134 105L132 103L130 100L131 97ZM89 129L91 133L91 136L90 139L89 139L87 137L87 136L89 134L88 132L89 129ZM117 141L116 141L115 142L113 141L116 138L116 140L117 141ZM99 16L97 16L96 20L94 22L95 24L95 26L95 28L94 31L100 35L99 36L100 40L99 41L98 44L98 47L98 50L98 53L98 55L100 56L99 57L102 59L102 62L102 67L104 71L104 77L103 79L105 83L107 86L110 88L110 90L111 92L113 91L115 92L116 93L120 97L124 100L126 101L129 104L129 107L131 109L132 111L131 114L132 115L133 114L136 115L136 118L139 117L140 118L141 122L142 122L143 126L145 127L148 127L149 128L148 132L150 135L150 136L150 139L151 141L151 143L150 141L118 141L119 139L117 138L117 137L118 135L118 133L117 133L119 128L118 126L115 122L114 121L111 119L110 116L108 114L106 114L105 113L104 110L102 109L101 107L99 106L95 102L93 101L90 100L88 98L85 97L83 95L82 95L80 93L79 93L77 91L77 88L76 86L74 86L75 82L75 81L75 77L74 75L72 74L68 72L69 67L68 63L65 61L63 58L61 58L62 53L60 49L58 48L56 45L53 43L52 42L53 39L53 37L54 37L54 34L51 32L50 31L47 29L47 26L46 23L43 22L41 16L41 15L63 13L78 12L102 10L100 13L99 16ZM13 107L12 109L13 110L13 114L12 115L11 111L10 110L10 108L13 107Z" },
+  "MX-AGU": { name: "Aguascalientes", d: "M403 313L400 311L400 310L402 307L404 303L406 299L409 298L412 296L415 293L415 295L418 297L421 299L421 300L423 303L423 306L425 308L421 310L418 313L414 315L413 315L411 314L409 313L405 312L403 313Z" },
+};
+const CORTE_FECHA = "2026-08-29";
+
+// Solo los hechos de la ventana propia (28-ago 06:25 → 29-ago 09:05 CDMX).
+// La recuperación de la pág. 3 (ARG-111-REC-001, Petatlán) pertenece a la
+// ventana de ARGOS 109 y NO figura aquí: no entra en el semáforo, ni en el
+// radar, ni en el mapa, ni en ningún total del corte (CLAUDE.md).
+const EVENTOS = [
+  { id:"ARG-111-001", estado:"MX-SIN", region:"Noroeste", color:"rojo", impacto:"grande",
+    hecho:"Culiacán, fraccionamiento Montebello: la mañana del 28-ago, sujetos a bordo de dos vehículos dispararon con armas largas contra la fachada de un edificio de departamentos de cuatro niveles, embistieron el portón principal con un vehículo con reporte de robo e incendiaron el inmueble con residentes dentro. Bomberos de Culiacán rescataron con escala telescópica a cinco personas: tres menores de edad y dos mujeres, todas ilesas. Clasificado rojo por terror contra población civil. Hora sin fragmento citable: FRONTERA DE VENTANA",
+    fuentes:["FGE Sinaloa","Bomberos de Culiacán","Red Metropolitana","Capital México","N+"], confianza:"★★★★☆", fecha:"2026-08-28", hora:"no fijada" },
+
+  { id:"ARG-111-002", estado:"MX-SIN", region:"Noroeste", color:"verde", impacto:"mediano",
+    hecho:"Escuinapa, zona rural de Huerta Quevedo: el 28-ago, el Grupo Interinstitucional formado por la Policía Municipal, la Policía Estatal y las Fuerzas Armadas detuvo a tres personas —una de nacionalidad estadounidense— en dos intervenciones derivadas de reportes de detonaciones. Aseguró, sumando las dos intervenciones, cinco armas largas cal. 7.62x39, 703 cartuchos, 27 cargadores, cinco chalecos tácticos y diez placas balísticas. Puestos a disposición de la FGR, delegación Mazatlán",
+    fuentes:["Grupo Interinstitucional Escuinapa","Viva la Noticia","Fuentes Fidedignas","Puntualizando"], confianza:"★★★☆☆", fecha:"2026-08-28", hora:"no publicada" },
+
+  { id:"ARG-111-003", estado:"MX-SIN", region:"Noroeste", color:"verde", impacto:"grande",
+    hecho:"Concordia, Operación Sable: el 28-ago, la Secretaría de Marina, en coordinación con la FGR y la SSPC, localizó y destruyó por detonación controlada 49 artefactos explosivos improvisados, mediante trabajo de inteligencia, patrullaje terrestre y reconocimiento aéreo. Aseguró además cuatro armas largas y un arma corta, 55 cargadores, 2,825 cartuchos y tres vehículos. Sin detenidos publicados",
+    fuentes:["SEMAR","FGR","SSPC","La Razón","Publimetro","La Crónica de Hoy"], confianza:"★★★★☆", fecha:"2026-08-28", hora:"no publicada" },
+
+  { id:"ARG-111-004", estado:"MX-CHH", region:"Noroeste", color:"amarillo", impacto:"pequeno",
+    hecho:"Chihuahua capital, calle Altos de la Parra: la noche del 28-ago, sujetos a bordo de una motocicleta dispararon varias veces contra un domicilio. Sin lesionados; solo daños materiales. La fuente describe el inmueble como presuntamente habitado por un agente estatal: la adscripción NO está acreditada y por eso el hecho se clasifica amarillo y no rojo. Fuente única",
+    fuentes:["El Diario de Chihuahua"], confianza:"★★☆☆☆", fecha:"2026-08-28", hora:"noche" },
+
+  { id:"ARG-111-SEN-001", estado:"MX-DUR", region:"Noroeste", color:"verde", impacto:"pequeno",
+    hecho:"Región Laguna: el 28-ago, la Fiscalía General del Estado de Durango obtuvo sentencia condenatoria contra Víctor Hugo Camacho Vázquez por robo agravado y daños, con una pena de más de 10 años y 8 meses de prisión. Único portal institucional de las 32 entidades que publicó dentro de la ventana, con fecha en la ruta. Firmeza no informada",
+    fuentes:["FGE Durango"], confianza:"★★★★☆", fecha:"2026-08-28", hora:"no publicada" },
+];
+
+// Aseguramientos con cifra publicada dentro de la ventana. El color sigue el
+// semáforo ARGOS del hecho asociado, no la sola presencia de armas.
+const EVENTOS_ARM = [
+  { id:"ARG-111-ARM-001", estado:"MX-SIN", region:"Noroeste", color:"verde", impacto:"mediano",
+    hecho:"Escuinapa, Sinaloa: 5 armas largas cal. 7.62x39, 703 cartuchos, 27 cargadores, 5 chalecos tácticos, 10 placas balísticas, 3 detenidos. Aseguramiento derivado de intervenciones por reportes de detonaciones, sin enfrentamiento reportado",
+    fuentes:["Grupo Interinstitucional Escuinapa","Viva la Noticia"], confianza:"Bajo", fecha:"2026-08-28", hora:"no publicada" },
+
+  { id:"ARG-111-ARM-002", estado:"MX-SIN", region:"Noroeste", color:"verde", impacto:"grande",
+    hecho:"Concordia, Sinaloa: 49 artefactos explosivos improvisados destruidos por detonación controlada, 4 armas largas, 1 arma corta, 2,825 cartuchos, 55 cargadores, 3 vehículos. Sin detenidos publicados. Operación programada de la SEMAR, sin enfrentamiento",
+    fuentes:["SEMAR","La Razón","Publimetro"], confianza:"Medio", fecha:"2026-08-28", hora:"no publicada" },
+];
+const REGION_ORDER = ["Noroeste","Noreste","Occidente","Centro","Golfo","Sureste","Pacífico"];
+const STATE_REGION = {
+  "MX-BCN":"Noroeste","MX-BCS":"Noroeste","MX-SON":"Noroeste","MX-CHH":"Noroeste","MX-SIN":"Noroeste","MX-DUR":"Noroeste",
+  "MX-COA":"Noreste","MX-NLE":"Noreste","MX-TAM":"Noreste","MX-SLP":"Noreste","MX-ZAC":"Noreste",
+  "MX-JAL":"Occidente","MX-COL":"Occidente","MX-NAY":"Occidente","MX-AGU":"Occidente","MX-MIC":"Occidente","MX-GUA":"Occidente",
+  "MX-CMX":"Centro","MX-MEX":"Centro","MX-MOR":"Centro","MX-PUE":"Centro","MX-TLA":"Centro","MX-HID":"Centro","MX-QUE":"Centro",
+  "MX-VER":"Golfo","MX-TAB":"Golfo",
+  "MX-CHP":"Sureste","MX-OAX":"Sureste","MX-GRO":"Sureste","MX-CAM":"Sureste","MX-YUC":"Sureste","MX-ROO":"Sureste"
+};
+const SEVERITY_RANK = { rojo:3, amarillo:2, verde:1 };
+const SEVERITY_COLOR = { rojo:"#ff3b3b", amarillo:"#ffd23f", verde:"#33d17a" };
+const SEVERITY_LABEL = { rojo:"🔴 Alto impacto", amarillo:"🟡 Violencia operativa", verde:"🟢 Acción institucional" };
+const GRIS = "#26314a";
+const SIZE_R = { grande:11, mediano:7.5, pequeno:5 };
+
+function argosHash(s){
+  let h = 0;
+  for (let i = 0; i < s.length; i++) { h = (h * 31 + s.charCodeAt(i)) | 0; }
+  return Math.abs(h);
+}
+
+function argosPolarPoint(cx, cy, r, angDeg){
+  const a = (angDeg * Math.PI) / 180;
+  return [cx + r * Math.cos(a), cy + r * Math.sin(a)];
+}
+
+function argosTopEventFor(evs){
+  return evs.slice().sort(function (a, b) {
+    const r = SEVERITY_RANK[b.color] - SEVERITY_RANK[a.color];
+    if (r !== 0) return r;
+    return (b.fecha || "").localeCompare(a.fecha || "");
+  })[0];
+}
+
+function argosBuildStateTooltip(sid, evs){
+  const name = (MEXICO_PATHS[sid] && MEXICO_PATHS[sid].name) || sid;
+  if (!evs || !evs.length) {
+    return "<b>" + name + "</b><br>Nivel: ⚪ Sin datos<br>Sin eventos relevantes durante el corte.";
+  }
+  const top = argosTopEventFor(evs);
+  let html = "<b>" + name + "</b>" +
+    "<br>Nivel: " + SEVERITY_LABEL[top.color] +
+    "<br>Evento: " + top.hecho +
+    "<br>ARG-ID: " + top.id +
+    "<br>Fuentes: " + (top.fuentes || []).join(", ") +
+    "<br>Confianza: " + (top.confianza || "—") +
+    "<br>Consulta: " + (top.fecha || "—") + " " + (top.hora || "");
+  if (evs.length > 1) {
+    html += "<br><i>+" + (evs.length - 1) + " evento(s) adicional(es) en esta entidad</i>";
+  }
+  return html;
+}
+
+function argosShowTooltip(e, html){
+  const tt = document.getElementById("argos-tooltip");
+  if (!tt) return;
+  tt.innerHTML = html;
+  const pad = 14;
+  let x = e.clientX + pad, y = e.clientY + pad;
+  tt.style.left = x + "px";
+  tt.style.top = y + "px";
+  tt.classList.add("show");
+}
+function argosHideTooltip(){
+  const tt = document.getElementById("argos-tooltip");
+  if (tt) tt.classList.remove("show");
+}
+
+function argosRenderMap(containerId, eventos){
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  const byState = {};
+  eventos.forEach(function (ev) {
+    if (!ev.estado) return;
+    (byState[ev.estado] = byState[ev.estado] || []).push(ev);
+  });
+  let svg = '<svg viewBox="' + MEXICO_VIEWBOX + '" preserveAspectRatio="xMidYMid meet">';
+  Object.keys(MEXICO_PATHS).forEach(function (sid) {
+    const st = MEXICO_PATHS[sid];
+    const evs = byState[sid];
+    const top = evs ? argosTopEventFor(evs) : null;
+    const fill = top ? SEVERITY_COLOR[top.color] : GRIS;
+    svg += '<path class="estado-path" data-sid="' + sid + '" d="' + st.d + '" fill="' + fill + '" fill-opacity="' + (top ? "0.88" : "0.55") + '"></path>';
+  });
+  svg += "</svg>";
+  el.innerHTML = svg;
+  el.querySelectorAll(".estado-path").forEach(function (path) {
+    const sid = path.dataset.sid;
+    path.addEventListener("mousemove", function (e) {
+      argosShowTooltip(e, argosBuildStateTooltip(sid, byState[sid]));
+    });
+    path.addEventListener("mouseleave", argosHideTooltip);
+    path.addEventListener("click", function () {
+      const evs = byState[sid];
+      if (evs && evs.length) { location.hash = argosTopEventFor(evs).id; }
+    });
+  });
+}
+
+function argosRenderRadar(containerId, statsId, eventos, corteFechaStr){
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  const W = 220, H = 220, CX = 110, CY = 110, RMAX = 98, RMIN = 20, WINDOW_DAYS = 10;
+  const sector = 360 / REGION_ORDER.length;
+  const corte = corteFechaStr ? new Date(corteFechaStr) : new Date();
+
+  let svg = '<svg viewBox="0 0 ' + W + ' ' + H + '">';
+  svg += '<defs><radialGradient id="rgrad-' + containerId + '" cx="50%" cy="50%" r="50%">' +
+    '<stop offset="0%" stop-color="rgba(76,230,255,.10)"/><stop offset="100%" stop-color="rgba(76,230,255,0)"/></radialGradient></defs>';
+  svg += '<circle cx="' + CX + '" cy="' + CY + '" r="' + RMAX + '" fill="url(#rgrad-' + containerId + ')"/>';
+  [1, 2, 3, 4].forEach(function (i) {
+    svg += '<circle class="radar-ring" cx="' + CX + '" cy="' + CY + '" r="' + (RMAX * i / 4) + '"/>';
+  });
+  svg += '<line class="radar-cross" x1="' + (CX - RMAX) + '" y1="' + CY + '" x2="' + (CX + RMAX) + '" y2="' + CY + '"/>';
+  svg += '<line class="radar-cross" x1="' + CX + '" y1="' + (CY - RMAX) + '" x2="' + CX + '" y2="' + (CY + RMAX) + '"/>';
+
+  const sweepAngle = 42;
+  const p0 = argosPolarPoint(CX, CY, RMAX, -90);
+  const p1 = argosPolarPoint(CX, CY, RMAX, -90 + sweepAngle);
+  const sweepPath = "M" + CX + " " + CY + " L" + p0[0].toFixed(1) + " " + p0[1].toFixed(1) +
+    " A" + RMAX + " " + RMAX + " 0 0 1 " + p1[0].toFixed(1) + " " + p1[1].toFixed(1) + " Z";
+  svg += '<g><path class="radar-sweep-path" d="' + sweepPath + '">' +
+    '<animateTransform attributeName="transform" type="rotate" from="0 ' + CX + ' ' + CY + '" to="360 ' + CX + ' ' + CY + '" dur="9s" repeatCount="indefinite"/>' +
+    "</path></g>";
+
+  const counts = { rojo: 0, amarillo: 0, verde: 0 };
+  const countedIds = {};
+  eventos.forEach(function (ev, idx) {
+    if (!countedIds[ev.id]) { counts[ev.color] = (counts[ev.color] || 0) + 1; countedIds[ev.id] = true; }
+    const ri = REGION_ORDER.indexOf(ev.region);
+    const baseAngle = (ri >= 0 ? ri * sector + sector / 2 : 0) - 90;
+    const jitterSeed = argosHash(ev.id + "-" + idx) % 100;
+    const jitter = (jitterSeed / 100 - 0.5) * (sector * 0.7);
+    const angle = baseAngle + jitter;
+    let daysAgo = WINDOW_DAYS;
+    if (ev.fecha) {
+      const d = new Date(ev.fecha);
+      daysAgo = Math.max(0, Math.round((corte - d) / 86400000));
+    }
+    const t = Math.min(1, daysAgo / WINDOW_DAYS);
+    const r = RMAX - t * (RMAX - RMIN);
+    const p = argosPolarPoint(CX, CY, r, angle);
+    const rad = SIZE_R[ev.impacto] || SIZE_R.pequeno;
+    const color = SEVERITY_COLOR[ev.color] || "#8fb8c8";
+    const cls = "eco" + (ev.color === "rojo" ? " pulse" : "");
+    svg += '<a href="#' + ev.id + '"><circle class="' + cls + '" cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) +
+      '" r="' + rad + '" fill="' + color + '"><title>' + ev.id + " — " + ev.hecho + " (" + (ev.fecha || "") + ")</title></circle></a>";
+  });
+
+  svg += "</svg>";
+  el.innerHTML = svg;
+
+  if (statsId) {
+    const st = document.getElementById(statsId);
+    if (st) {
+      st.innerHTML =
+        "<div>🔴 Alto impacto<br><b>" + (counts.rojo || 0) + "</b></div>" +
+        "<div>🟡 Violencia operativa<br><b>" + (counts.amarillo || 0) + "</b></div>" +
+        "<div>🟢 Acciones institucionales<br><b>" + (counts.verde || 0) + "</b></div>";
+    }
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  argosRenderMap("argos-map", EVENTOS);
+  argosRenderRadar("argos-radar", "argos-radar-stats", EVENTOS, CORTE_FECHA);
+  argosRenderMap("argos-map-arm", EVENTOS_ARM);
+});
+
+</script>
+</body>
+</html>

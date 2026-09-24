@@ -148,6 +148,30 @@ if _faltan:
     # Se retiran del shell las reglas parciales que sí estuvieran, para no duplicarlas,
     # y se inyecta el bloque completo y actual.
     shell = shell.replace("</style>", CSS_TABLA + "</style>", 1)
+
+CSS_INDICE = """
+  .tabla-indice{margin:10px 0;}
+  .fila-indice{border:1px solid var(--border);border-left:2px solid var(--cyan-dim);
+       padding:8px 10px;margin-bottom:6px;background:rgba(10,20,40,.35);}
+  .idx-ent{font-size:12px;color:var(--white);font-weight:700;line-height:1.3;}
+  .idx-ent .muted-note{font-weight:400;}
+  .idx-hecho{font-size:11.5px;color:var(--cyan);line-height:1.4;margin-top:3px;}
+  .idx-pie{font-family:var(--mono);font-size:9px;letter-spacing:.6px;
+       color:var(--cyan-dim);margin-top:5px;}
+  .idx-pie a{color:var(--cyan-dim);}
+  .fila-indice .muted-note{display:inline;font-size:9.5px;}
+"""
+if ".fila-indice{" not in shell:
+    shell = shell.replace("</style>", CSS_INDICE + "</style>", 1)
+
+CSS_FECHA = """
+  .fch{font-family:var(--mono);font-size:8.5px;letter-spacing:.8px;color:var(--cyan-dim);
+       border:1px solid var(--border);padding:2px 6px;white-space:nowrap;align-self:flex-start;}
+  .sec-head .fch{border:0;padding:0;color:var(--cyan-dim);}
+  .sec-head .meta{display:flex;align-items:baseline;gap:8px;white-space:nowrap;}
+"""
+if ".fch{" not in shell:
+    shell = shell.replace("</style>", CSS_FECHA + "</style>", 1)
     print(f"CSS de tabla/tarjeta inyectado ({len(_faltan)} selector(es) ausente(s) en el shell heredado)")
 
 # Anclas realmente existentes en el escritorio: solo estas pueden enlazarse.
@@ -163,6 +187,17 @@ def limpia(p):
     """Quita masthead y footbar; aplica el mapeo de clases escritorio -> móvil."""
     p = re.sub(r'<header class="masthead">.*?</header>', "", p, flags=re.S)
     p = re.sub(r'<footer class="footbar">.*?</footer>', "", p, flags=re.S)
+    # ⚠️ El encabezado de PÁGINA del escritorio duplicaba el título que esta
+    # herramienta ya escribe en `.sec-head`: la móvil salía con DOS títulos
+    # seguidos por sección —veinte para diez secciones— y el destinatario lo
+    # reportó como "se repite dos veces". Se retira aquí, en el generador, no
+    # en su salida.
+    # Solo se retira el que usa `<h2 style="font-size:14px;">`, que es
+    # EXACTAMENTE el que `titulo_de()` lee. Los `section-head` internos
+    # —"TOTALES DEL CORTE", "INDICADORES OFICIALES", "SEMÁFORO ARGOS"— no llevan
+    # ese `h2` y se conservan: son subtítulos legítimos, no duplicados.
+    p = re.sub(r'<div class="section-head">\s*<h2 style="font-size:14px;">.*?</h2>\s*</div>\s*',
+               "", p, count=1, flags=re.S)
     p = p.replace('class="section-head"', 'class="block-head"')
     p = p.replace('<div class="stat-grid">', '<div class="stats">')
     p = p.replace('<div class="stat-tile">', '<div class="stat">')
@@ -237,6 +272,52 @@ def _sustituye_div(html, marca, reemplazo):
     return html
 
 
+# La tabla «Panorama del corte» es un ÍNDICE: en el escritorio ocupa una línea
+# por hecho y sus siete columnas se leen de un vistazo. En un teléfono cada fila
+# se reflúa a una tarjeta y esas siete etiquetas la convierten en un segundo
+# reporte completo, delante del reporte de verdad. Instrucción editorial del
+# destinatario tras revisar ARGOS 122: «estos saturan más de información».
+#
+# En la móvil el índice conserva lo que sirve para LOCALIZAR un hecho —entidad y
+# municipio, qué pasó, su color y su ARG-ID— y deja fuera los tres campos de
+# procedencia. No se pierde nada: los tres viven, con su recuento por tipo y sus
+# fuentes nombradas, en el apartado TRAZABILIDAD de la ficha a la que el propio
+# ARG-ID enlaza, y la tabla íntegra sigue en el cartelón de escritorio.
+COLS_INDICE_FUERA = {"fuente institucional", "fuente nacional", "confianza"}
+
+
+def _texto(celda):
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", celda)).strip()
+
+
+def _fila_a_indice(fila_html, cabeceras):
+    """Convierte un <tr> del panorama en un renglón de índice compacto."""
+    celdas = re.findall(r"(<t[dh][^>]*>)(.*?)</t[dh]>", fila_html, re.S)
+    if not celdas:
+        return ""
+    if len(celdas) == 1:
+        return f'<div class="fila-total">{celdas[0][1].strip()}</div>'
+    valores, col = {}, 0
+    for apertura, celda in celdas:
+        m = re.search(r'colspan\s*=\s*["\']?(\d+)', apertura, re.I)
+        span = int(m.group(1)) if m else 1
+        if col < len(cabeceras):
+            valores[cabeceras[col].strip().lower()] = celda.strip()
+        col += span
+    entidad = next((v for k, v in valores.items() if k.startswith("entidad")), "")
+    hecho = valores.get("hecho", "")
+    nivel = _texto(valores.get("nivel de riesgo", ""))
+    argid = valores.get("arg-id", "")
+    if not (entidad or hecho):
+        return _celdas_a_tarjeta(fila_html, cabeceras)
+    pie = " · ".join(x for x in (nivel, argid) if x)
+    return ('<div class="fila-indice">'
+            + (f'<div class="idx-ent">{entidad}</div>' if entidad else "")
+            + (f'<div class="idx-hecho">{hecho}</div>' if hecho else "")
+            + (f'<div class="idx-pie">{pie}</div>' if pie else "")
+            + "</div>")
+
+
 def _celdas_a_tarjeta(fila_html, cabeceras):
     """Convierte un <tr> del escritorio en una tarjeta apilada de la móvil."""
     celdas = re.findall(r"(<t[dh][^>]*>)(.*?)</t[dh]>", fila_html, re.S)
@@ -304,6 +385,40 @@ def tabla_a_ficha(p, con_tarjetas):
             return '<div class="tabla-scroll">' + interior + "</div>"
         cuerpo = bloque.split("</thead>")[-1] if "</thead>" in bloque else bloque
         filas = re.findall(r"<tr\b[^>]*>(.*?)</tr>", cuerpo, re.S)
+        cab_lower = {c.strip().lower() for c in cabeceras}
+        # ── Tablas que NO se publican en la versión de teléfono ──────────────
+        # Instrucción editorial directa del destinatario tras revisar ARGOS 122
+        # en pantalla: «estas quítalas, es demasiada información».
+        #
+        # Las dos repiten, fila por fila, datos que la móvil ya trae en otro
+        # sitio, y al refluirse a tarjetas ocupan más que el contenido original:
+        #
+        #   · PANORAMA (7 columnas, una fila por hecho) — cada fila reproduce el
+        #     titular de una ficha que está unos centímetros más abajo. Firma:
+        #     única tabla que lleva a la vez «Nivel de riesgo» y «ARG-ID».
+        #   · ARMAMENTO POR EVENTO (17 columnas) — cada fila reproduce el
+        #     desglose que ya está en el apartado HECHO de su propia ficha, y
+        #     gasta siete líneas en categorías con valor cero. Firma: «ARG-ID»
+        #     junto a «Cortas» y «Largas».
+        #
+        # NO se retira la tabla de TOTALES NACIONALES —12 columnas pero UNA sola
+        # fila—, que es el agregado del corte y `CLAUDE.md` exige publicar; ni
+        # las de candidatos y cobertura, que caben a lo ancho.
+        #
+        # ⚠️ Esto tiene un coste declarado: los 9 ARG-ID del módulo de armamento
+        # dejan de aparecer en el teléfono y la paridad con el escritorio baja de
+        # 29 a 20. Es una decisión editorial, no una pérdida silenciosa: el
+        # cartelón de escritorio conserva las dos tablas íntegras y la nota de
+        # cierre de la móvil lo declara.
+        es_panorama = {"nivel de riesgo", "arg-id"} <= cab_lower
+        es_arm_evento = {"arg-id", "cortas", "largas"} <= cab_lower
+        if es_panorama:
+            return ('<p class="muted-note"><b>Índice por entidad: solo en la versión de '
+                    'cartelón.</b> Cada hecho está en su ficha, más abajo.</p>')
+        if es_arm_evento:
+            return ('<p class="muted-note"><b>Desglose por evento: solo en la versión de '
+                    'cartelón.</b> Los totales nacionales están en las tarjetas de arriba y '
+                    'el armamento de cada hecho, en su ficha.</p>')
         tarjetas = "".join(_celdas_a_tarjeta(f, cabeceras) for f in filas)
         if not tarjetas:
             return '<div class="tabla-scroll">' + interior + "</div>"
@@ -320,7 +435,13 @@ def tabla_a_ficha(p, con_tarjetas):
     # es una convención del escritorio y es fácil olvidarlo al redactar, así que
     # aquí se atrapa: lo que sobreviva se hace desplazable dentro de su propio
     # contenedor, nunca a costa del cuerpo del documento.
-    p = re.sub(r"<table\b.*?</table>",
+    # La red se aplica SOLO a lo que no envolvió ya la regla anterior. Sin este
+    # deslinde, una tabla que sí traía `table-wrap` acababa con dos
+    # `tabla-scroll` anidados —defecto real, presente en la móvil de ARGOS 107 en
+    # cuatro tablas—: dos contenedores desplazables uno dentro de otro atrapan el
+    # gesto de arrastre en pantalla táctil. El lookbehind descarta la tabla que
+    # ya abre inmediatamente después de su envoltorio.
+    p = re.sub(r'(?<!<div class="tabla-scroll">)<table\b.*?</table>',
                lambda m: '<div class="tabla-scroll">' + m.group(0) + "</div>",
                p, flags=re.S)
     return p
@@ -339,12 +460,68 @@ SEM = f'''<div class="semaforo">
 # masthead y que la portada es la primera.
 TITULOS_CORTOS = {
     "CRIMEN ORGANIZADO": "CRIMEN ORGANIZADO",
+    # El título del escritorio —"CANDIDATOS JUDICIALES NO INTEGRADOS E INDICADOR
+    # DE COBERTURA"— desbordaba la cabecera y la barra de navegación del teléfono.
+    "CANDIDATOS JUDICIALES": "CANDIDATOS Y COBERTURA",
+    "PANORAMA DEL CORTE": "PANORAMA DEL CORTE",
     "CONTEO NACIONAL DE ARMAMENTO": "ARMAMENTO Y EXPLOSIVOS",
     "RASTREO NACIONAL DE SENTENCIAS": "RASTREO DE SENTENCIAS",
     "AUDITORÍA RETROACTIVA": "AUDITORÍA RETROACTIVA",
     "VALORACIÓN": "VALORACIÓN",
     "TABLERO EJECUTIVO": "TABLERO EJECUTIVO",
 }
+
+
+MESES = {"01":"ENE","02":"FEB","03":"MAR","04":"ABR","05":"MAY","06":"JUN",
+         "07":"JUL","08":"AGO","09":"SEP","10":"OCT","11":"NOV","12":"DIC"}
+
+
+def _dia_mes(iso):
+    """'2026-09-20' -> ('20', 'SEP')."""
+    _, mm, dd = iso.split("-")
+    return dd.lstrip("0"), MESES[mm]
+
+
+def fecha_de_nota(bloque):
+    """Fecha del hecho de una ficha, leída de su propio apartado TRAZABILIDAD.
+
+    La móvil se lee en el teléfono y el mando necesita saber DE QUÉ DÍA es cada
+    nota sin bajar hasta la trazabilidad. Se deriva del cartelón, nunca se fija
+    aquí: si la ficha no publica fecha, no se inventa ninguna.
+    """
+    m = re.search(r"<b>Hecho</b>:\s*(\d{4}-\d{2}-\d{2})", bloque)
+    if not m:
+        return ""
+    d, mes = _dia_mes(m.group(1))
+    return f"{d}-{mes}"
+
+
+def fechas_de_pagina(pagina):
+    """Rango de fechas de las fichas de una página, para su encabezado."""
+    isos = sorted(set(re.findall(r"<b>Hecho</b>:\s*(\d{4}-\d{2}-\d{2})", pagina)))
+    if not isos:
+        return ""
+    d0, m0 = _dia_mes(isos[0])
+    d1, m1 = _dia_mes(isos[-1])
+    if isos[0] == isos[-1]:
+        return f"{d0}-{m0}"
+    if m0 == m1:
+        return f"{d0} A {d1}-{m0}"
+    return f"{d0}-{m0} A {d1}-{m1}"
+
+
+def inyecta_fecha_notas(cuerpo):
+    """Pone la fecha del hecho en la cabecera de cada ficha, junto al color."""
+    def _una(m):
+        bloque = m.group(0)
+        f = fecha_de_nota(bloque)
+        if not f or 'class="fch"' in bloque:
+            return bloque
+        return bloque.replace(
+            '<div class="nota-header">',
+            f'<div class="nota-header"><span class="fch">{f}</span>', 1)
+    return re.sub(r'<div class="nota" id="[^"]+"[^>]*>.*?\n  </div>\n',
+                  _una, cuerpo, flags=re.S)
 
 
 def titulo_de(pagina, indice):
@@ -364,8 +541,11 @@ def titulo_de(pagina, indice):
             # "CRIMEN ORGANIZADO (I)" / "(II)". Cualquier otra cola es la
             # enumeración descriptiva del masthead, que no cabe en la barra
             # de navegación de un teléfono y se descarta.
+            # El patrón acepta CUALQUIER numeral romano, no solo I/II/III: con
+            # "\(I+\)" la página (IV) de ARGOS 115 perdía su numeral y dos
+            # secciones distintas aparecían como "CRIMEN ORGANIZADO" en la barra.
             sufijo = corto[len(clave):].strip()
-            if re.fullmatch(r"\(I+\)", sufijo):
+            if re.fullmatch(r"\((?=[IVXLC])[IVXLC]+\)", sufijo):
                 return f"{abrev} {sufijo}"
             return abrev
     return corto
@@ -377,14 +557,21 @@ TOTAL = len(TITULOS)
 # La barra de navegación se hereda del shell de la edición anterior y llevaba tantos
 # enlaces como secciones tuviera aquella. Se reconstruye a partir de TITULOS para que
 # no queden anclas muertas ni falten secciones cuando la estructura cambie.
+# Las entradas de "CRIMEN ORGANIZADO (N)" se generan para cualquier numeral en vez
+# de enumerarse a mano: fijarlas obligaba a tocar el script cada vez que una edición
+# añadía una página de crimen organizado, que es justo lo que este archivo evita.
 NAV_ABREV = {
-    "CRIMEN ORGANIZADO (I)": "C. ORGANIZADO I",
-    "CRIMEN ORGANIZADO (II)": "C. ORGANIZADO II",
+    f"CRIMEN ORGANIZADO ({r})": f"C. ORGANIZADO {r}"
+    for r in ("I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X")
+}
+NAV_ABREV.update({
     "ARMAMENTO Y EXPLOSIVOS": "ARMAMENTO",
     "RASTREO DE SENTENCIAS": "SENTENCIAS",
     "AUDITORÍA RETROACTIVA": "AUDITORÍA",
     "TABLERO EJECUTIVO": "TABLERO",
-}
+    "CANDIDATOS Y COBERTURA": "CANDIDATOS",
+    "PANORAMA DEL CORTE": "PANORAMA",
+})
 nav_links = "\n".join(
     f'    <a href="#s{n}">{NAV_ABREV.get(t, t)}</a>' for t, n in TITULOS)
 m_nav = re.search(r'( *<a href="#s\d+">.*?</a>\n?)+', shell, re.S)
@@ -397,6 +584,7 @@ for i, (titulo, n) in enumerate(TITULOS):
     es_sentencias = "RASTREO NACIONAL DE SENTENCIAS" in paginas[i]
     tiene_mapa_arm = 'id="argos-map-arm"' in paginas[i]
     cuerpo = tabla_a_ficha(lista_a_reg(limpia(paginas[i]), ANCLAS), con_tarjetas=es_sentencias)
+    cuerpo = inyecta_fecha_notas(cuerpo)
 
     if n == 1:
         # Consumir TODO el bloque de visuales hasta el semáforo: un .*? no
@@ -423,20 +611,28 @@ for i, (titulo, n) in enumerate(TITULOS):
         # qué venga detrás.
         cuerpo = _sustituye_div(cuerpo, 'class="semaforo"', SEM + "\n\n  ")
     if tiene_mapa_arm:
+        # El patrón tolera atributos extra en `panel` y en `map-box` (p. ej. `style=`).
+        # Exigir `<div class="panel">` exacto hacía que un solo atributo dejara el mapa de
+        # aseguramientos VACÍO EN SILENCIO: la sustitución no casaba y el div hueco del
+        # escritorio pasaba tal cual a la móvil. Lo detectó el validador en ARGOS 117.
         cuerpo = re.sub(
-            r'<div class="panel">\s*<div class="panel-title">.*?</div>\s*'
-            r'<div class="map-box" id="argos-map-arm"></div>\s*<div class="map-caption">(.*?)</div>\s*</div>',
+            r'<div class="panel"[^>]*>\s*<div class="panel-title">.*?</div>\s*'
+            r'<div class="map-box"[^>]*id="argos-map-arm"[^>]*></div>\s*'
+            r'<div class="map-caption">(.*?)</div>\s*</div>',
             lambda m: f'''<div class="viz">
     <div class="viz-title"><span>MAPA DE ASEGURAMIENTOS</span><span>SEMÁFORO ARGOS</span></div>
     <div class="map-box">{svg_arm}</div>
     <div class="map-caption">{m.group(1)}</div>
   </div>''', cuerpo, flags=re.S)
 
+    rango = fechas_de_pagina(paginas[i])
+    meta = (f'<span class="fch">{rango}</span><span class="pg">PÁG. {n} / {TOTAL}</span>'
+            if rango else f'<span class="pg">PÁG. {n} / {TOTAL}</span>')
     partes.append(f'''<!-- ===================== {n} — {titulo} ===================== -->
 <section class="seccion" id="s{n}">
   <div class="sec-head">
     <h2>{titulo}</h2>
-    <span class="pg">PÁG. {n} / {TOTAL}</span>
+    <span class="meta">{meta}</span>
   </div>
 {cuerpo}
 </section>''')
@@ -445,18 +641,24 @@ NOTA = f'''
   <p class="muted-note">
     Esta es la <b>versión móvil</b> de ARGOS {NUM}, con el mismo contenido verificado que la versión de
     cartelón (<code>reports/argos-{FECHA}.html</code>), reflujada a una sola columna. Las tablas
-    ejecutivas se presentan como fichas para evitar desplazamiento horizontal; no se omitió ni resumió
-    ninguna tarjeta. El radar, el mapa de portada y el mapa de aseguramientos se generan de los mismos
+    ejecutivas se presentan como fichas para evitar desplazamiento horizontal.
+    <b>Dos tablas no se publican aquí, por instrucción editorial</b>: el <b>índice por entidad</b> y el
+    <b>desglose de armamento por evento</b>. <b>Ningún dato se pierde</b> —el índice repite titulares de
+    las fichas y el desglose repite el apartado HECHO de cada una—, pero <b>los 9 ARG-ID del módulo de
+    armamento solo constan en el cartelón</b>. <b>Ninguna ficha se omitió ni se resumió.</b> El radar, el mapa de portada y el mapa de aseguramientos se generan de los mismos
     arreglos <code>EVENTOS</code> y <code>EVENTOS_ARM</code> que la versión de escritorio mediante
     <code>tools/gen-movil-svg.js</code>, y <b>los contadores del radar se toman del propio generador</b>,
     no se escriben a mano: es el origen del error corregido en ARGOS 97.
   </p>'''
 partes[-1] = partes[-1].replace("</section>", NOTA + "\n</section>")
 
+_mt = re.search(r"<span>Corte:\s*([^<]+?)\s*</span>", open(DESK, encoding="utf-8").read())
+CORTE_TURNO = _mt.group(1) if _mt else "No declarado"
+
 FOOTER = f'''
 <footer class="footbar">
   <div>Versión 3.0 · Edición móvil</div>
-  <div>Fecha: {FECHA} · Hora: {HORA} (CDMX) · Corte: Matutino</div>
+  <div>Fecha: {FECHA} · Hora: {HORA} (CDMX) · Corte: {CORTE_TURNO}</div>
   <div>ARGOS N.° {NUM} · <span class="uso">USO INSTITUCIONAL</span></div>
 </footer>
 

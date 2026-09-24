@@ -95,15 +95,14 @@ inteligencia, no debe existir en ARGOS.
 Versión 5 páginas — el reporte se dividió en cinco páginas (antes cuatro) para dar más espacio a
 las tarjetas de Crimen Organizado, que no deben comprimirse para caber en una sola página.
 
-1. **Portada**: ARGOS + número consecutivo, corte informativo, radar, mapa, ejes del día, semáforo
-   ARGOS. "Ejes del día" es el único listado resumido de hechos en esta página — no debe
-   duplicarse con una segunda tabla tipo "noticias de ayer y hoy" que repita los mismos hechos.
-2. **Página 2 — Tablero ejecutivo**: resumen ejecutivo, detenciones relevantes. No incluye un
-   bloque "ARGOS ALERTA" ni una tabla adicional de "eventos prioritarios": ambos repetían el mismo
-   hecho de mayor gravedad ya resumido en "Ejes del día" (portada) y desarrollado en su ficha
-   completa de Crimen Organizado — si se necesita mostrar fuente institucional/nacional y confianza
-   por evento, esos datos van en la ficha completa de cuatro apartados de cada nota (Crimen
-   Organizado, Armamento, Sentencias), no en un bloque o tabla resumen adicional en esta página.
+1. **Portada**: ARGOS + número consecutivo, corte informativo, radar, mapa, semáforo ARGOS y **un
+   solo recuadro, «LO QUE DEBE HACER EL MANDO», con cinco líneas de acción**. ⚠️ **Sin «Ejes del
+   día», sin resumen ejecutivo y sin titulares de los hechos**: el panorama va en la página 2 y el
+   detalle en las fichas.
+2. **Página 2 — Panorama del corte**: **tabla índice ejecutivo por entidad**, que es el **único
+   listado resumido del cartelón**, con las columnas obligatorias y remitiendo por ARG-ID a cada
+   ficha; más el **total nacional del corte**, que **no se reimprime en ningún otro sitio**. ⚠️ **Sin
+   bloque "ARGOS ALERTA" ni tabla adicional de "eventos prioritarios".**
 3. **Página 3 — Crimen organizado (I)**: ataques a autoridades, desapariciones, fosas.
 4. **Página 4 — Crimen organizado (II)**: laboratorios, huachicol, narcotráfico marítimo, redes
    financieras, extorsión, Análisis ARGOS.
@@ -120,30 +119,68 @@ cada tarjeta.
 
 ## Regla de no duplicación
 
-Cada hecho del corte aparece en como máximo dos lugares: (1) un resumen breve en "Ejes del día"
-(portada) y (2) su ficha completa de cuatro apartados en Crimen Organizado, Armamento o
+Cada hecho del corte aparece en como máximo dos lugares: (1) **un renglón en la tabla «Panorama del
+corte»** (página 2) y (2) su **ficha de dos apartados** en Crimen Organizado, Armamento o
 Sentencias — nunca una tercera tabla o listado intermedio que repita el mismo titular sin aportar
 fuente, confianza o análisis adicional sustancial. Antes de publicar, revisar que ninguna sección
 resumida repita íntegramente el contenido de otra sección resumida de la misma edición (mismo
 titular, mismos datos). Si dos secciones tienden a coincidir en contenido, fusionarlas en una sola
 en vez de mantener ambas.
 
-## Regla de las cuatro secciones por nota
+## Regla de las dos secciones por nota
 
-Cada nota se divide exactamente en cuatro apartados:
+Versión 2.0 — **instrucción editorial directa del destinatario, dada tras revisar ARGOS 121.**
+**Sustituye a la regla de las cuatro secciones, que queda derogada.**
 
-1. **Hecho confirmado** — únicamente hechos publicados oficialmente; sin interpretaciones ni
-   hipótesis.
-2. **Corroboración** — cruzar como mínimo una fuente institucional + una fuente nacional, más una
-   fuente regional cuando exista. Si solo hay una fuente, escribir literalmente
-   `Pendiente de corroboración independiente.`
-3. **Explotación ARGOS** — no repetir la noticia; debe responder: ¿qué significa?, ¿qué riesgo
-   implica?, ¿qué objetivos interesan?, ¿qué vacíos existen?, ¿qué líneas deben explotarse?
-4. **Trazabilidad** — cierre obligatorio de cada tarjeta:
+*«Quita la corroboración y explotación ARGOS. Recuerda, es un reporte para mandos. Hay que reducir los
+textos y no repetir las noticias en los diferentes secciones.»*
+
+Cada nota se divide **exactamente en dos apartados**:
+
+1. **Hecho** — registro telegráfico: fecha · lugar · corporación · cifras · marcas de reserva. Datos
+   separados por `·`, no prosa. **Los datos no se recortan; la prosa sí.**
+2. **Trazabilidad** — cierre obligatorio, y **el único lugar donde viven las fuentes y los deslindes**:
    - `ARG-XX-001`
-   - Nivel de confianza: 🟢 Alto / 🟡 Medio / 🟠 Bajo / 🔴 No corroborado
-   - Fuentes: Institucional / Nacional / Regional / Abierta
-   - Consulta: fecha y hora
+   - Nivel de confianza: 🟢 Alto / 🟡 Medio / 🟠 Bajo / 🔴 No corroborado, **con el campo peor sostenido
+     que lo fija**
+   - **Fuentes por tipo** —Institucional / Nacional / Regional / Abierta—, con **el recuento de cada
+     tipo** y **nombrados solo los que llevan fecha en la ruta**. **La lista íntegra de emisores va al
+     archivo de fuentes de la edición**, no al cartelón.
+   - Fecha del hecho · de publicación · de consulta · estatus
+   - **Deslindes de duplicidad y marcas de reserva**, en una línea cada uno
+
+### Qué desaparece y qué no
+
+**Desaparecen del cartelón**: el apartado «Corroboración» como bloque narrativo y el apartado
+«Explotación ARGOS» ficha por ficha.
+
+⚠️ **NO desaparecen las fuentes, los deslindes ni las marcas de reserva**: son **dato, no prosa**, y
+suprimirlos dejaría de hacer auditable el producto, que es la razón de ser de ARGOS. **Pasan al bloque
+de Trazabilidad, comprimidos.**
+
+### Dónde vive ahora el análisis
+
+**Una sola vez, al cierre**: en la **Valoración ARGOS** (cinco líneas) y en las **Conclusiones de
+inteligencia criminal** (cinco líneas). **No repetido ficha por ficha.** Lo que antes eran cinco líneas
+de explotación en cada nota —y por tanto cuarenta y cinco líneas en un corte de nueve fichas— se
+concentra en diez, y **lo que no quepa va al archivo de fuentes**.
+
+### Regla de no repetición entre secciones
+
+**Cada hecho aparece en DOS lugares como máximo**:
+
+1. **Un renglón en la tabla «PANORAMA DEL CORTE»** —índice ejecutivo por entidad, en la página 2—, que
+   es **el único listado resumido del cartelón**.
+2. **Su ficha propia**, con los dos apartados.
+
+**Prohibida una tercera aparición.** En concreto: **el recuadro de portada NO repite los titulares** de
+los hechos. La portada lleva **un solo recuadro**, titulado **«LO QUE DEBE HACER EL MANDO»**, con
+**cinco líneas de acción** —qué auditar, qué cotejar, qué vigilar, qué exigir—, **no un resumen de las
+noticias**. Un mando que ya vio el panorama y la ficha no necesita leer el mismo titular una tercera vez:
+necesita saber qué hacer con él.
+
+**Tampoco se repiten los totales**: el **total nacional del corte** va en la página de panorama, y los
+módulos de armamento y sentencias **remiten a ella** en vez de reimprimirlo.
 
 ## Metodología del nivel de riesgo nacional (semáforo ARGOS)
 
@@ -371,7 +408,7 @@ De cada comunicado institucional se extrae, cuando exista:
 Estos cuatro rubros alimentan el **conteo diario del corte**. Los eventos de alto impacto
 detectados en el mismo barrido (ataques a autoridades, enfrentamientos, narcobloqueos, hallazgos de
 fosas, uso de AEI contra personal o población) no son línea de conteo: se clasifican con el
-semáforo ARGOS y se documentan como tarjeta propia con sus cuatro apartados.
+semáforo ARGOS y se documentan como tarjeta propia con sus **dos apartados**.
 
 ### Registro del barrido
 
@@ -808,9 +845,9 @@ definitiva/firme" o "procedimiento abreviado/juicio oral con sentencia". Si solo
 proceso", "imputado", "detenido", "procesado", "ingresado a prisión" o "sujeto a medida
 cautelar": **no se incluye** en la sección de sentencias.
 
-Cada caso separa: hecho procesal confirmado (qué resolvió el tribunal), pena, estatus (firme /
-primera instancia / apelable / no informado), reparación del daño, trazabilidad y Explotación
-ARGOS (relevancia jurídica y criminal).
+Cada caso separa: **hecho procesal** (qué resolvió el tribunal, pena, estatus —firme / primera
+instancia / apelable / no informado—, reparación del daño) y **trazabilidad**. ⚠️ **Sin apartado de
+explotación**: la relevancia jurídica y criminal va a las Conclusiones del cierre.
 
 **Conteo nacional**: sentencias condenatorias, absolutorias, procedimientos abreviados con
 sentencia, sentencias en juicio oral, sentencias firmes, sentencias de primera instancia,
@@ -916,7 +953,7 @@ Regla operativa:
    detención y condena, líneas a explotar. Si una conclusión no le dice a un mando algo que pueda
    accionar o vigilar, no es una conclusión de ARGOS.
 3. **Un hecho de alto impacto encontrado en la ventana de una edición anterior se publica como ficha
-   de hecho, no como hallazgo de auditoría.** Lleva sus cuatro apartados, su ARG-ID `-REC-`, su
+   de hecho, no como hallazgo de auditoría.** Lleva sus **dos apartados**, su ARG-ID `-REC-`, su
    **ventana de origen declarada**, y no entra en los totales del corte que lo publica. Su efecto
    sobre el conteo de la edición de origen se registra en una **fe de erratas compacta**, que es
    trazabilidad y no narrativa.
@@ -927,6 +964,50 @@ Regla operativa:
 Excepciones, que son de trazabilidad y no de opinión, y deben ser breves: la **declaración de
 ventana** de cada ficha, la **advertencia de comparabilidad**, la **limitación por bloqueo de
 egreso**, las **tres casillas de cobertura**, los **deslindes de duplicidad** y la **fe de erratas**.
+
+## Límite de extensión — el cartelón es telegráfico
+
+Versión 1.0 — instrucción editorial directa del destinatario, dada tras revisar ARGOS 113 en teléfono.
+**Rige por encima de cualquier otra consideración de redacción.**
+
+**El destinatario es un mando. Lee en el teléfono y decide con lo que ve en pantalla.** Un párrafo de
+quince líneas no se lee: se salta. **Un dato que no se lee no existe.**
+
+Reglas duras:
+
+1. ⚠️ **El apartado «Explotación ARGOS» YA NO EXISTE en las fichas** —ver «Regla de las dos secciones
+   por nota»—. **El análisis vive una sola vez, al cierre**, en la Valoración y en las Conclusiones,
+   **cinco líneas cada una**. Si sobra algo, va al archivo de fuentes.
+2. **Todo recuadro `alerta contexto` tiene un máximo de CINCO líneas.** La portada lleva **un solo
+   recuadro**, titulado **«LO QUE DEBE HACER EL MANDO»**, con **cinco líneas de ACCIÓN** —qué auditar,
+   cotejar, vigilar o exigir—, **no un resumen de titulares**. No tres recuadros con el mismo argumento
+   reescrito.
+   ⚠️ **Y el cartelón entero lleva TRES recuadros como máximo** —portada, Valoración y Conclusiones—,
+   **y ninguno repite el hecho de otro**. Instrucción directa del destinatario tras revisar ARGOS 117
+   en teléfono: *«no debes explicar los colores; reduce más el texto y no repitas varias veces la misma
+   noticia»*. **NINGÚN RECUADRO EXPLICA UN COLOR NI UN MECANISMO DEL MÉTODO**: por qué un hecho es rojo
+   y no amarillo, por qué una recuperación no cuenta, o qué significa una casilla **no son inteligencia
+   criminal y no van al cartelón** — el color ya está en la etiqueta de la ficha y la ventana de origen
+   ya está en su trazabilidad. Esa clase de explicación va al **archivo de fuentes**. En ARGOS 117 se
+   retiraron **cinco de ocho recuadros** por esta regla.
+3. **La Valoración ARGOS son CINCO líneas numeradas.** Aplica la metodología de riesgo y remite; no
+   narra.
+4. **«Hecho confirmado» se escribe en registro telegráfico**: fecha · lugar · corporación · cifras ·
+   marcas de reserva. Datos separados por `·`, no prosa. **Los datos no se recortan; la prosa sí.**
+5. ⚠️ **El apartado «Corroboración» YA NO EXISTE.** Las fuentes van **en Trazabilidad**, como
+   **recuento por tipo** y con **nombrados solo los que llevan fecha en la ruta**. **Sin explicación de
+   por qué se buscó.** La lista íntegra, al archivo de fuentes.
+6. **Cada celda de las tablas de conclusiones y candidatos: una o dos frases.** La columna de línea
+   accionable es la que importa.
+
+**Lo que nunca se recorta**: cifras, fechas, municipios, corporaciones, ARG-ID, nivel de confianza,
+fuentes, deslindes y marcas de reserva. **Lo que siempre se recorta**: la explicación de la
+explicación, la justificación del método y toda frase que no aporte un dato o una acción.
+
+**Comprobación antes de publicar**: **ninguna ficha tiene apartados distintos de «Hecho» y
+«Trazabilidad»**; **ningún recuadro ni la Valoración supera las cinco líneas**; **ningún titular aparece
+tres veces**. Es verificable con `node:vm` sobre el `<script>` del cartelón y debe pasar en las dos
+versiones.
 
 ## Estilo de redacción
 

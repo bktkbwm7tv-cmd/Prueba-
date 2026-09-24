@@ -1,0 +1,543 @@
+ARGOS 121 — REPORTE NACIONAL DE SEGURIDAD
+REPORTE DIARIO DE INTELIGENCIA CRIMINAL
+«INVESTIGACIONES, BÚSQUEDA Y VERDAD»
+
+Corte informativo: 2026-09-17 · 17:36 (CDMX)
+Ventana: 16-sep 11:34 → 17-sep 17:36 CDMX (30 h 02 min)
+Versión 3.0 · Corte vespertino · USO INSTITUCIONAL
+
+============================================================================
+
+[ RADAR CENTRAL — EN VIVO ]
+
+  · 🔴 Alto impacto · 0
+  · 🟡 Violencia operativa · 0
+  · 🟢 Acciones institucionales · 3
+
+[ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
+
+Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
+
+## SEMÁFORO ARGOS
+
+  · 🔴 ROJO — ALTO IMPACTO — 0 eventos
+
+  · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 0 eventos
+
+  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 3 eventos
+
+── LO QUE DEBE HACER EL MANDO
+
+1. AUDITAR LOS RETENES MUNICIPALES DE LA COSTA DE GUERRERO: cuáles están autorizados, quién los
+ordena, bitácoras y GPS de unidad. EN COYUCA DE BENÍTEZ UN RETÉN OFICIAL FUE EL INSTRUMENTO DE
+UNA DESAPARICIÓN FORZADA.
+2. COTEJO BALÍSTICO CONTRA EL ARMAMENTO DE CARGO de la policía municipal de Coyuca. NINGUNA
+FUENTE PUBLICA SI SE HIZO.
+3. VIGILAR EL NIVEL MUNICIPAL COMO UNIDAD DE RIESGO, no la célula: cuatro ataques a autoridad
+municipal en tres cortes —comisario de Xaltianguis, corporación de Coyuca, síndico de Penjamillo
+y expresidenta de Angamacutiro—.
+4. EXIGIR CALIBRE Y NÚMERO DE SERIE en todo boletín de aseguramiento: NINGUNA DE LAS CUATRO
+ARMAS DEL CORTE LOS LLEVA, Y SIN ELLOS NO SE CRUZAN CON LAS RASTREADAS DESDE EL NORTE.
+5. COTEJAR TÉCNICAMENTE LOS DOS DEPÓSITOS DE AEI DE MAZATLÁN —53 y 84 artefactos en ocho días—:
+fijaría si hay un mismo fabricante. REQUIERE VALIDACIÓN.
+
+Ventana 16-sep 11:34 → 17-sep 17:36 CDMX (30 h 02 min) · la más corta de las siete últimas,
+frente a 75 h 06 min del corte anterior · 3 hechos en 3 entidades · 29 entidades sin hecho
+integrado · 5 recuperaciones -REC- de la ventana de ARGOS 120, atenuadas y fuera de todos los
+totales · 1 hecho con FRONTERA DE VENTANA · 2 cifras contradichas · 1 sentencia declarada y NO
+integrada · densidad 0,10 hechos/hora frente a 0,25 · techo de confianza ★★★☆☆ por bloqueo de
+egreso: ninguna página se leyó íntegra. CERO EVENTOS ROJOS EN VENTANA; LOS DOS DEL PERIODO SON
+DE LA VENTANA ANTERIOR.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-17 · Hora: 17:36 (CDMX) · Corte: Vespertino · ARGOS N.° 121 · USO INSTITUCIONAL
+
+============================================================================
+
+## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
+
+  Entidad · municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
+  Guerrero · Coyuca de Benítez | Cateo de la Secretaría de Seguridad Pública municipal y detención de 7 policías, incluido su jefe, por desaparición forzada | 🟢 Verde | FGE Guerrero (por cita) | La Razón · El Heraldo · Infobae | ★★★☆☆ | ARG-121-001
+  Querétaro · Colón · capital · San Juan del Río | 7 cateos de «Sinergia», 6 detenidos, 2 cortas y 2 largas | 🟢 Verde | FGE Querétaro · comunicado propio · con fecha en la ruta | ninguna | ★★★★☆ | ARG-121-003
+  Puebla · Tepeaca-Amozoc | 48,600 litros de gas LP en 3 pipas y 6 detenidos · autopista Puebla-Orizaba, tramo El Caracol | 🟢 Verde | SSP Puebla y SEMAR (por cita) | ninguna | ★★☆☆☆ | ARG-121-004
+  Guerrero · Coyuca de Benítez · VENTANA ARGOS 119-120 | Desaparición forzada y homicidio con tortura de José Ángel López Girón, interceptado en un retén municipal | 🔴 Rojo | FGE Guerrero (por cita) | Infobae · La Razón · El Heraldo | ★★★☆☆ | ARG-121-REC-001
+  Oaxaca · Putla Villa de Guerrero · VENTANA ARGOS 120 | Profesor y promotor de la lengua triqui y su hija de 3 años, baleados al volver del Grito · San Andrés Chicahuaxtla | 🔴 Rojo | FGE Oaxaca (por cita) | El Imparcial · Infobae | ★★★☆☆ | ARG-121-REC-002
+  Michoacán · Morelia · VENTANA ARGOS 120 | Captura de «El Señor de la T», presunto coordinador regional del CJNG en el Bajío, vinculado al homicidio de un síndico y a la desaparición de una expresidenta municipal | 🟢 Verde | SSPC, SEDENA, SEMAR, FGR y FGE Michoacán (por cita) | MVS · Infobae · Diario de Yucatán | ★★★☆☆ | ARG-121-REC-005
+  Sinaloa · Mazatlán · VENTANA ARGOS 120 | 53 artefactos explosivos improvisados en dos contenedores abandonados · sin detenidos | 🟢 Verde | Gabinete de Seguridad (boletín 14-16-sep, vía republicadores) | Quadratín México | ★★★☆☆ | ARG-121-REC-003
+  Chihuahua · Coyame del Sotol · VENTANA ARGOS 120 | 3,358 cartuchos, 22 cargadores, 2 armas largas y 1 detenido · mayor volumen de munición del periodo | 🟢 Verde | Gabinete de Seguridad (boletín 14-16-sep, vía republicadores) | ninguna | ★★★☆☆ | ARG-121-REC-004
+  Estado de México · Temoaya | Sentencia de 125 años contra «El Henry» por el homicidio de cinco hombres · NO INTEGRADA | no aplica | ninguna · sin boletín FGJEM | Infobae | ★★☆☆☆ | ARG-121-SEN-001
+
+  Armas cortas | Armas largas | Sin categoría | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Entidades | Sentencias
+  2 | 2 | 0 | NO DETERMINADA | 0 | 0 | 0 | 0 | 6 | 1 | 0 · 1 declarada
+
+Único listado resumido del cartelón. Cada renglón remite por ARG-ID a su ficha, que es donde
+está el detalle. Las filas atenuadas son de la ventana de ARGOS 120 y NO INTEGRAN NINGÚN TOTAL
+DE ESTE CORTE.
+
+Ninguna autoridad publicó un agregado nacional del corte. Detenidos: solo los de eventos con
+aseguramiento de armamento — no entran los 7 policías de Coyuca ni los 6 de Tepeaca, sin armas
+aseguradas. Un solo emisor —la FGE de Querétaro— sostiene el conteo nacional de este corte.
+NINGÚN TOTAL ABSOLUTO ES COMPARABLE CON UN CORTE DE 75 HORAS SIN NORMALIZAR POR DURACIÓN.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-17 · Hora: 17:36 (CDMX) · Corte: Vespertino · ARGOS N.° 121 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (I) — GUERRERO Y OAXACA
+
+### GUERRERO · COYUCA DE BENÍTEZ — LA FGE CATEA LA SECRETARÍA DE SEGURIDAD PÚBLICA MUNICIPAL Y DETIENE A SIETE POLICÍAS, INCLUIDO SU JEFE, POR DESAPARICIÓN FORZADA [VERDE]
+
+── HECHO
+
+Jueves 17-sep · Coyuca de Benítez, Guerrero · FGE Guerrero con SEDENA, Guardia Nacional, SSPC y
+Policía Estatal.
+Orden de cateo sobre las instalaciones de la Secretaría de Seguridad Pública Municipal, junto al
+mercado municipal · 7 policías detenidos, incluido su jefe · Mario Arturo Castillo Ramos,
+secretario de Seguridad Pública municipal · delito: desaparición forzada.
+Armamento: NO PUBLICADO. NO ALIMENTA EL CONTEO Y NO SE INFIERE.
+DETENIDOS CONTRADICHOS ENTRE TRES VALORES —7, 8 Y 10—, ARBITRADO POR PROCEDENCIA: se adopta 7,
+la cifra atribuida expresamente a la FGE; 8 y 10 son agregaciones de medios. NO ADOPTADAS: la
+inscripción en el «Operativo Enjambre» y la atribución al titular de la SSPC federal.
+
+── TRAZABILIDAD
+
+ARG-121-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —cifra de detenidos
+contradicha, sin comunicado propio— · Hecho: 2026-09-17, hora no fijada · Publicación:
+2026-09-17 · Consulta: 2026-09-17, 17:36 CDMX · Estatus: Parcialmente corroborado.
+Fuentes — Institucional (1, por cita, sin comunicado): FGE Guerrero. fiscaliaguerrero.gob.mx SIN
+PUBLICAR INDEXABLE, CUARTA EDICIÓN; SUSTITUCIÓN POR BÚSQUEDA DIRIGIDA, ANOTADA. Nacional (7), 4
+con fecha en la ruta: La Razón · El Heraldo · Infobae · La Silla Rota. Regional (6). Lista
+íntegra en el archivo de fuentes.
+DESLINDE: Coyuca de Benítez SÍ figura en el índice, que cubre de ARGOS 91 en adelante —
+ARG-118-REC-001, cartulinas y veto territorial del 7-sep—. No es ese hecho. UN DELITO Y SU
+DETENCIÓN SON DOS EVENTOS: el homicidio de origen es ARG-121-REC-001 y no se suma a éste.
+Calendario verificado: 17-sep jueves · 11-sep viernes · 13-sep domingo.
+
+### GUERRERO · COYUCA DE BENÍTEZ — DESAPARICIÓN FORZADA Y HOMICIDIO CON TORTURA DE JOSÉ ÁNGEL LÓPEZ GIRÓN, INTERCEPTADO EN UN RETÉN DE LA POLICÍA MUNICIPAL [ROJO]
+
+── HECHO
+
+Viernes 11-sep · avenida Paseo de la Palmera, Coyuca de Benítez, Guerrero · policías municipales
+de Coyuca.
+José Ángel López Girón, 37 años, viajaba con su esposa y su madre · detenido en un retén ·
+trasladado en patrulla a lugar no determinado.
+Domingo 13-sep: cuerpo hallado a un costado de la carretera federal Acapulco-Zihuatanejo, a la
+altura de El Papayo · huellas de tortura · disparos de arma de grueso calibre en la cabeza.
+Los familiares denunciaron por desaparición forzada y homicidio, pidieron investigar a la
+policía municipal y filtraron el video de la detención.
+ROJO POR AGRAVANTE EXPRESA: DESAPARICIÓN FORZADA POR SERVIDORES PÚBLICOS, CON TORTURA Y
+HOMICIDIO CONSUMADO.
+
+── TRAZABILIDAD
+
+ARG-121-REC-001 · Confianza: 🟡 Medio (★★★☆☆) · Hecho: 2026-09-11 (detención) y 2026-09-13
+(hallazgo) · Publicación: 2026-09-17 · Consulta: 2026-09-17, 17:36 CDMX · Estatus: Parcialmente
+corroborado.
+VENTANA DE ORIGEN: ARGOS 119 Y 120. NINGUNA DE LAS DOS LO PUBLICÓ. FUERA DEL SEMÁFORO, DEL MAPA,
+DEL RADAR Y DE TODOS LOS TOTALES DE ESTE CORTE.
+Fuentes — Institucional (1, por cita): FGE Guerrero, sin comunicado indexado. Nacional (6), 3
+con fecha en la ruta: Infobae · La Razón · El Heraldo. Regional (4). Lista íntegra en el archivo
+de fuentes.
+CONTRADICCIÓN ARBITRADA: «dos días» frente a «tres días» desde la detención; varias coberturas
+dan el 13-sep de forma expresa y es la única fecha compatible con el 11-sep. Se adopta el
+13-sep.
+DESLINDE: el nombre de la víctima no figura en el índice, que cubre de ARGOS 91 en adelante. No
+es ARG-120-008 —Eduardo Neri, Gregorio «N» y su padre Vidal «N»—: otro municipio, otras
+víctimas, otro hecho.
+
+### OAXACA · PUTLA VILLA DE GUERRERO — HOMBRES ARMADOS INTERCEPTAN Y BALEAN A UN PROFESOR Y PROMOTOR DE LA LENGUA TRIQUI Y A SU HIJA DE TRES AÑOS AL REGRESAR DEL GRITO [ROJO]
+
+── HECHO
+
+Miércoles 16-sep, 01:30 · calle El Calvario, centro de San Andrés Chicahuaxtla, municipio de
+Putla Villa de Guerrero, región Mixteca, Oaxaca.
+Misael Hernández Mendoza, 41 años, profesor de educación primaria y promotor de la lengua triqui
+desde hace más de quince años, y su hija de tres años · camioneta blanca de doble cabina ·
+regresaban de los festejos del Grito · sujetos armados interceptaron el vehículo y dispararon.
+Estado de salud: ambos quedaron graves. CONTRADICCIÓN NO ARBITRADA: unas coberturas mantienen
+«ambos graves»; otras atribuyen a la FGE de Oaxaca que el profesor está estable y la menor sigue
+grave.
+Cero detenidos · sin armamento · sin responsables identificados · MÓVIL NO DIVULGADO.
+ROJO POR TRES AGRAVANTES CONCURRENTES: VÍCTIMAS MÚLTIPLES · VÍCTIMA QUE ES PERSONA DEFENSORA ·
+MENOR DE EDAD ENTRE LAS VÍCTIMAS.
+
+── TRAZABILIDAD
+
+ARG-121-REC-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —hay cita
+institucional solo sobre el estado de salud— · Hecho: 2026-09-16, 01:30 · Publicación:
+2026-09-17 · Consulta: 2026-09-17, 17:36 CDMX · Estatus: Parcialmente corroborado.
+VENTANA DE ORIGEN: ARGOS 120. LA HORA ESTÁ FIJADA Y ES ANTERIOR AL CIERRE DE AQUELLA VENTANA
+(16-SEP 11:34): NO ES FRONTERA DE VENTANA. FUERA DE TODOS LOS TOTALES DE ESTE CORTE.
+Fuentes — Institucional (1, por cita): FGE Oaxaca. sspo.gob.mx SIN RESULTADO INDEXADO EN
+VENTANA; SUSTITUCIÓN ANOTADA. Nacional (4), 3 con fecha en la ruta: El Imparcial · Infobae · La
+Prensa de Coahuila. Regional (5). Lista íntegra en el archivo de fuentes.
+Calendario verificado: 16-sep-2026 fue miércoles; la hora publicada es compatible con el regreso
+del Grito.
+DESLINDE: ni «San Andrés Chicahuaxtla» ni «Putla Villa de Guerrero» figuran en el índice, que
+cubre de ARGOS 91 en adelante.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-17 · Hora: 17:36 (CDMX) · Corte: Vespertino · ARGOS N.° 121 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (II) — QUERÉTARO, PUEBLA Y MICHOACÁN
+
+### QUERÉTARO · COLÓN, CAPITAL Y SAN JUAN DEL RÍO — SIETE CATEOS DE «SINERGIA» CON SEIS DETENIDOS, DOS ARMAS CORTAS Y DOS LARGAS: ÚNICA FILA DEL CORTE CON COMUNICADO INSTITUCIONAL PROPIO [VERDE]
+
+── HECHO
+
+Jueves 17-sep · Colón, Querétaro capital y San Juan del Río, Querétaro · FGE Querétaro ·
+operativo «SINERGIA POR QUERÉTARO».
+7 cateos · 6 detenidos: 2 en Colón, 2 en la capital, 2 en San Juan del Río · uno por orden de
+aprehensión por abigeato.
+Asegurado: 2 armas cortas · 2 armas largas, ambas en San Juan del Río · «diversos cartuchos y
+municiones», CANTIDAD NO DETERMINADA · cargadores SIN DATO.
+En rubro aparte: 2 rifles de municiones —aire comprimido—, NO SON ARMA DE FUEGO Y NO SE SUMAN A
+CORTAS NI A LARGAS.
+VERDE: LA AUTORIDAD EJECUTA Y NO ENCUENTRA RESISTENCIA. SIN REPLIEGUE ARMADO.
+
+── TRAZABILIDAD
+
+ARG-121-003 · Confianza: 🟢 Alto (★★★★☆), techo de la edición por el bloqueo de egreso: hay
+boletín oficial fechado, pero no se pudo leer íntegro · Hecho: 2026-09-17 · Publicación:
+2026-09-17 · Consulta: 2026-09-17, 17:36 CDMX · Estatus: Confirmado.
+Fuentes — Institucional (1, COMUNICADO PROPIO CON FECHA EN LA RUTA):
+fiscaliageneralqro.gob.mx/portal/2026/09/17/. ÚNICA FUENTE PRIMARIA INSTITUCIONAL Y ÚNICA URL
+OFICIAL FECHADA DEL CORTE. Regional (2): Código QRO (fecha en la ruta) · Críptica —
+REPUBLICADORES DEL MISMO BOLETÍN: CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN. Nacional: ninguna.
+DESLINDE OBLIGATORIO, POR OPERATIVO RECURRENTE: el mismo operativo «Sinergia» figura en
+ARG-109-005 y ARG-109-ARM-003 —27-ago— y en ARG-119-013 —Corregidora, 11-sep—. No es ninguno:
+otra fecha, otras cifras y añade Colón. TERCER EPISODIO EN EL ARCHIVO: EL DESLINDE ES
+PERMANENTE.
+
+### PUEBLA · TEPEACA-AMOZOC — SEIS DETENIDOS Y 48,600 LITROS DE GAS LP EN TRES PIPAS SOBRE LA AUTOPISTA PUEBLA-ORIZABA, TRAMO EL CARACOL [VERDE]
+
+── HECHO
+
+Miércoles 16-sep · autopista Puebla-Orizaba, tramo «El Caracol», entre Tepeaca y Amozoc, Puebla
+· SSP Puebla y SEMAR.
+Asegurado: 48,600 litros de gas LP de posible procedencia ilícita · 3 vehículos tipo pipa con
+razones sociales «Vela-Gas» y «Global Gas».
+6 detenidos: José Luis N. (43) · Ariel N. (30) · Óscar N. (34) · Joel N. (37) · Adán Israel N.
+(41) · Alejandro N. (37).
+Armamento: NINGUNO. NO ALIMENTA EL CONTEO Y LOS SEIS DETENIDOS NO ENTRAN EN ÉL.
+CIFRA AGREGADA DECLARADA Y NO ADOPTADA: varias coberturas dan 58,600 litros, que suman 2
+camiones más de San Salvador El Verde. Se integra solo el hecho publicado de las tres pipas.
+
+── TRAZABILIDAD
+
+ARG-121-004 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido —sin comunicado
+institucional, una sola fuente fechada y frontera de ventana— · Hecho: 2026-09-16, hora no
+fijada · Publicación: 2026-09-17 · Consulta: 2026-09-17, 17:36 CDMX · Estatus: Pendiente de
+corroboración institucional.
+FRONTERA DE VENTANA — HORA NO FIJADA: el hecho es del 16-sep y esta ventana abre ese día a las
+11:34. Se integra a la edición que lo ve primero, con la marca, que es PERMANENTE: si aparece un
+ancla horaria y resulta de la ventana anterior, se corrige por fe de erratas y se retira del
+total.
+Fuentes — Institucional (2, por cita): SSP Puebla · SEMAR. ssp.puebla.gob.mx SIN COMUNICADO
+INDEXADO; SUSTITUCIÓN ANOTADA. Regional (3): Tepeaca Noticias (fecha en la ruta) · Diario Cambio
+· La Jornada de Oriente —las dos últimas sin fecha en la ruta—. Nacional: ninguna.
+DESLINDE: ni «Tepeaca» ni «Amozoc» figuran en el índice, que cubre de ARGOS 91 en adelante. No
+es el punto de carga de Tecámac —ARGOS 93—: otro estado, otro producto, otra fecha.
+
+### MICHOACÁN · MORELIA — CAPTURA DE «EL SEÑOR DE LA T», PRESUNTO COORDINADOR REGIONAL DEL CJNG EN EL BAJÍO, VINCULADO AL HOMICIDIO DE UN SÍNDICO Y A LA DESAPARICIÓN DE UNA EXPRESIDENTA MUNICIPAL [VERDE]
+
+── HECHO
+
+Martes 15-sep · Morelia, Michoacán, Boulevard Juan Pablo II · SSPC federal, SEDENA, SEMAR, FGR y
+FGE Michoacán.
+Manuel Alejandro Rendón Aguilar, «EL SEÑOR DE LA T», 51 años, presunto coordinador regional del
+CJNG · circulaba en camioneta con reporte de robo.
+Zona de operación acreditada: Angamacutiro, Penjamillo, Panindícuaro, José Sixto Verduzco y
+Puruándiro — Bajío michoacano, frontera con Guanajuato.
+Órdenes de aprehensión vigentes por homicidio y desaparición forzada · vinculado al homicidio
+del síndico de Penjamillo, ROBERTO RAMÍREZ ZÁRATE (2025), y a la desaparición de la expresidenta
+municipal de Angamacutiro, MARIBEL JUÁREZ BLANQUET.
+Asegurado: 1 fusil cal. .223 · 4 cargadores · «un centenar» de cartuchos, NO SE INTEGRA · 33
+envoltorios de metanfetamina · 4 teléfonos. Después: 28 inmuebles cateados en Angamacutiro y
+Puruándiro, sin cifras. CIFRA DE TERCERO NO ADOPTADA: «suman 18 detenidos», sin desglose.
+
+── TRAZABILIDAD
+
+ARG-121-REC-005 · Confianza: 🟡 Medio (★★★☆☆) · Hecho: 2026-09-15, hora no fijada · Publicación:
+2026-09-17 · Consulta: 2026-09-17, 17:36 CDMX · Estatus: Parcialmente corroborado.
+VENTANA DE ORIGEN: ARGOS 120. FUERA DE TODOS LOS TOTALES DE ESTE CORTE.
+LA FECHA DE LA URL FIJA LA PUBLICACIÓN, NO EL HECHO — Y AQUÍ FUE DECISIVO: las once coberturas
+llevan 17-sep en la ruta, pero el cuerpo sitúa la detención el 15; el 17 es el día del anuncio.
+Fuentes — Institucional (5, por cita): SSPC · SEDENA · SEMAR · FGR · FGE Michoacán, sin
+comunicado propio indexado. Nacional (6), 3 con fecha en la ruta: MVS · Infobae · Diario de
+Yucatán. Regional (4). Lista íntegra en el archivo de fuentes.
+DESLINDE POR MUNICIPIO, TRES REGISTROS PREVIOS: Morelia SÍ figura en el índice —ARG-106-REC-002,
+ARG-120-018 y ARG-120-ARM-008—. No es ninguno: otra vialidad, otra fecha, otro evento.
+DESLINDE DE VÍCTIMA: el síndico de Penjamillo, Roberto Ramírez Zárate, no es el de
+ARG-116-REC-001 —David Guadalupe Ramírez González, Tepuche, Culiacán, Sinaloa—, pese al apellido
+coincidente.
+Calendario verificado: 15-sep-2026 fue martes.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-17 · Hora: 17:36 (CDMX) · Corte: Vespertino · ARGOS N.° 121 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (III) — SINALOA Y CHIHUAHUA: DOS ASEGURAMIENTOS DE LA VENTANA ANTERIOR QUE NINGUNA EDICIÓN VIO
+
+### SINALOA · MAZATLÁN — EL EJÉRCITO LOCALIZA 53 ARTEFACTOS EXPLOSIVOS IMPROVISADOS EN DOS CONTENEDORES DE PLÁSTICO ABANDONADOS, SIN DETENIDOS [VERDE]
+
+── HECHO
+
+Martes 15-sep · Mazatlán, Sinaloa, ZONA DEL MUNICIPIO NO ESPECIFICADA POR EL EMISOR · SEDENA, en
+despliegue.
+Dos contenedores de plástico abandonados con 53 artefactos explosivos improvisados.
+Sin detenidos · sin armas · sin cartuchos ni cargadores · CARACTERÍSTICAS NO DETALLADAS: NO SE
+ATRIBUYE CAPACIDAD EXPLOSIVA NO CONFIRMADA.
+VERDE: ASEGURAMIENTO SIN ENFRENTAMIENTO. LA SOLA PRESENCIA DE EXPLOSIVOS NO VUELVE ROJO A UN
+ESTADO.
+
+── TRAZABILIDAD
+
+ARG-121-REC-003 · Confianza: 🟡 Medio (★★★☆☆) · Hecho: 2026-09-15 · Publicación: 2026-09-17 ·
+Consulta: 2026-09-17, 17:36 CDMX · Estatus: Parcialmente corroborado.
+VENTANA DE ORIGEN: ARGOS 120. FUERA DE TODOS LOS TOTALES DE ESTE CORTE.
+Fuentes — Institucional (1, vía republicadores): Gabinete de Seguridad federal, boletín de
+acciones relevantes del 14, 15 y 16-sep. EL PORTAL EMISOR NO LO INDEXA CON FECHA EN LA RUTA.
+VARIOS REPUBLICADORES DEL MISMO BOLETÍN NO SON FUENTES INDEPENDIENTES: CORROBORACIÓN DÉBIL POR
+CONSTRUCCIÓN. Nacional (1): Quadratín México. Regional (5), 1 con fecha en la ruta: Línea
+Directa. Lista íntegra en el archivo de fuentes.
+Calendario verificado: 15-sep-2026 fue martes. La fecha del hecho queda fijada por cobertura
+independiente, que es lo que permite sacarlo del rango del agregado.
+DESLINDE OBLIGATORIO: NO son los 84 AEI de «La Noria de San Antonio» —8-sep, SEMAR, con
+detenido—: CIFRA, FECHA, CORPORACIÓN Y MODALIDAD DISTINTAS.
+
+### CHIHUAHUA · COYAME DEL SOTOL — GUARDIA NACIONAL, EJÉRCITO Y POLICÍA ESTATAL ASEGURAN 3,358 CARTUCHOS, 22 CARGADORES Y DOS ARMAS LARGAS, CON UN DETENIDO [VERDE]
+
+── HECHO
+
+Rango del 14 al 16-sep · Coyame del Sotol, Chihuahua —municipio fronterizo, ruta a Ojinaga— ·
+Guardia Nacional, Ejército Mexicano y Policía Estatal.
+1 detenido · 2 armas largas · 22 cargadores · 3,358 cartuchos · 2 chalecos tácticos · medio kilo
+de semilla de marihuana · 2 vehículos.
+CARGADORES Y CARTUCHOS NO SE SUMAN ENTRE SÍ.
+Es el mayor volumen de munición del periodo: 1,679 cartuchos y 11 cargadores por arma larga
+(cálculo propio) — proporción de depósito, no de dotación.
+
+── TRAZABILIDAD
+
+ARG-121-REC-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido —fecha no fijada y
+sin cobertura independiente— · Hecho: FECHA NO FIJADA DENTRO DEL RANGO 14-16-SEP · Publicación:
+2026-09-17 · Consulta: 2026-09-17, 17:36 CDMX · Estatus: Parcialmente corroborado.
+UN BOLETÍN DE RANGO NO SE REPARTE POR DÍAS: el emisor no desglosa qué renglón corresponde a qué
+día y ninguna cobertura independiente lo fecha. VENTANA DE ORIGEN: ARGOS 120. FUERA DE TODOS LOS
+TOTALES DE ESTE CORTE.
+Fuentes — Institucional (1, vía republicadores): Gabinete de Seguridad federal, boletín del
+14-16-sep, vía SICOM Noticias · Certeza Diario · Talla Política · Consulta Monterrey. NINGUNO
+CON FECHA EN LA RUTA. CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN. Nacional y regional: ninguna con
+cobertura propia del renglón.
+DESLINDE OBLIGATORIO: «Coyame del Sotol» no figura en el índice, que cubre de ARGOS 91 en
+adelante. NO ES ARG-120-002 NI ARG-120-ARM-002 —Nonoava, 14-sep, ataque contra militares en
+patrullaje—: otro municipio, otro desglose y otro tipo de evento.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-17 · Hora: 17:36 (CDMX) · Corte: Vespertino · ARGOS N.° 121 · USO INSTITUCIONAL
+
+============================================================================
+
+## CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS
+
+  · Armas cortas: 2 — las 2 de Querétaro, en los siete cateos de «Sinergia» · única entidad del corte con armas cortas
+
+  · Armas largas: 2 — las 2 de San Juan del Río, Querétaro · NINGUNA CON CALIBRE NI SERIE PUBLICADOS · fuera del total, por ser de ventana anterior: 2 largas de Coyame del Sotol y el fusil cal. .223 de Morelia, que es la única arma del periodo con calibre publicado
+
+  · Sin categoría: 0 — cero, frente a 19 —el 20,7 %— en el corte anterior · LAS CUATRO ARMAS DEL CORTE ESTÁN CLASIFICADAS COMO CORTA O LARGA · es el mejor registro de clasificación del archivo reciente, y lo sostiene un solo emisor: la FGE de Querétaro
+
+  · Cartuchos: 0 — CANTIDAD NO DETERMINADA EN EL ÚNICO EVENTO DEL CORTE: Querétaro publicó «diversos cartuchos y municiones», sin cifra · ninguna se infiere · fuera del total, por ser de ventana anterior: 3,358 de Coyame del Sotol y «un centenar» de Morelia, también aproximado
+
+  · Cargadores: 0 — cero: la FGE de Querétaro no los publicó, pese a desglosar las armas · NUNCA SE SUMAN CON LOS CARTUCHOS · fuera del total, por ser de ventana anterior: 22 de Coyame del Sotol y 4 de Morelia
+
+  · Granadas: 0 — ninguna en las 30 h 02 min de la ventana · tras 1 de fragmentación en Quintana Roo el corte anterior · la ausencia es dato y por eso la categoría se muestra
+
+  · AEI: 0 — cero integrados, segunda edición consecutiva. NO SIGNIFICA AUSENCIA: los 53 artefactos de Mazatlán son de ventana anterior (ARG-121-REC-003) y los 84 de La Noria de San Antonio siguen con el municipio contradicho
+
+  · Explosivos: 0 — ningún volumen de explosivo, componente, precursor, detonador ni cordón se publicó por separado en las 30 h 02 min de la ventana
+
+  · Armamento especial: 0 — 0 lanzagranadas, 0 cal. .50, 0 ametralladoras y 0 drones armados · tras 3 piezas en el corte anterior, todas de El Rosario · los 2 rifles de municiones de Querétaro NO son arma de fuego y van en rubro aparte
+
+  · Detenidos: 6 — los 6 de Querétaro · SOLO EN EVENTOS CON ASEGURAMIENTO DE ARMAMENTO · NO entran: los 7 policías de Coyuca ni los 6 de Tepeaca, sin armas aseguradas; ni el 1 de Morelia ni los 18 atribuidos a sus cateos derivados, de ventana anterior
+
+  ARG-ID | Entidad | Municipio | Fecha hecho | Cortas | Largas | Sin categoría | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Fuente primaria | Corrob. | Confianza
+  ARG-121-ARM-001 | Querétaro | Colón, · Querétaro y · San Juan del Río | 2026-09-17 | 2 | 2 · sin calibre · ni serie | 0 | 0 · «diversos» · NO DETERMINADA | 0 · no publicados | 0 | 0 | 0 | 6 | FGE Querétaro · «Sinergia por · Querétaro» | Comunicado propio · URL con fecha · en la ruta | 2 regionales · republicadores del · mismo boletín | Alto · única fuente primaria · del corte
+  ARG-121-ARM-REC-003 | Michoacán | Morelia · Bulevar · Juan Pablo II | 2026-09-15 · VENTANA ARGOS 120 | 0 | 1 · fusil cal. .223 · ÚNICO CALIBRE · DEL PERIODO | 0 | 0 · «un centenar» · NO DETERMINADA | 4 | 0 | 0 | 0 | 1 · los 18 de los cateos · derivados NO SE SUMAN | SSPC, SEDENA, · SEMAR, FGR · y FGE Michoacán | ninguna · institucional propia | 6 nacionales + 4 regionales · fecha del hecho fijada · por el cuerpo, no por la ruta | Medio · NO INTEGRA · EL TOTAL
+  ARG-121-ARM-REC-001 | Chihuahua | Coyame · del Sotol | FECHA NO FIJADA · rango 14-16-sep · VENTANA ARGOS 120 | 0 | 2 | 0 | 3,358 | 22 | 0 | 0 | 0 | 1 | GN + Ejército · + Policía Estatal | Boletín federal 14-16-sep · vía republicadores | ninguna · independiente | Medio · NO INTEGRA · EL TOTAL
+  ARG-121-ARM-REC-002 | Sinaloa | Mazatlán · zona no · especificada | 2026-09-15 · VENTANA ARGOS 120 | 0 | 0 | 0 | 0 | 0 | 0 | 53 | 0 | 0 | SEDENA | Boletín federal 14-16-sep · vía republicadores | 1 nacional + 5 regionales · fecha fijada por · cobertura independiente | Medio · NO INTEGRA · EL TOTAL
+
+Cifra grande = asegurado en los hechos integrados de este corte. Línea inferior = publicado
+durante el corte pero de ventana anterior, sin fecha fijada o sin cantidad determinada; no se
+suma. Cálculo propio de ARGOS. Las categorías en cero se muestran atenuadas: la ausencia es
+dato.
+
+Totales en la página 2. Lectura regional: Centro 1; Noroeste, Noreste, Occidente, Golfo,
+Pacífico Sur y Sureste en cero. UN SOLO EMISOR SOSTIENE EL CONTEO NACIONAL DE ARMAMENTO DE ESTE
+CORTE. Las tres filas atenuadas son de la ventana de ARGOS 120 y NO SE SUMAN.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-17 · Hora: 17:36 (CDMX) · Corte: Vespertino · ARGOS N.° 121 · USO INSTITUCIONAL
+
+============================================================================
+
+## RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES
+
+### ESTADO DE MÉXICO · TEMOAYA — 125 AÑOS CONTRA IRVING ADÁN ALTAMIRANO MORENO, «EL HENRY», POR EL HOMICIDIO DE CINCO HOMBRES: SEGUNDA CONDENA DEL MISMO SENTENCIADO EN TRES MESES [NO INTEGRADA]
+
+── HECHO PROCESAL
+
+Publicación: jueves 17-sep-2026 · FGJEM · Temoaya, Estado de México.
+SENTENCIA CONDENATORIA de 125 AÑOS DE PRISIÓN contra Irving Adán Altamirano Moreno, «EL HENRY»,
+por el homicidio de cinco hombres.
+Estructura de la pena, publicada por el emisor: 25 años por cada una de las cinco víctimas. LOS
+AÑOS SE ACUMULAN PORQUE EL EMISOR PUBLICA EL DESGLOSE POR VÍCTIMA, NO PORQUE ARGOS LOS
+MULTIPLIQUE.
+Multa: 395,990 pesos · Reparación del daño: 247,776 pesos por cada víctima — 1,238,880 en total
+(cálculo propio).
+Hecho de origen: 23-sep-2025, comunidad de San Lucas, Temoaya · víctimas dentro de un Chevrolet
+gris · «El Henry» ordenó el ataque · cuatro murieron en el lugar y una en el hospital · once
+meses y 25 días hasta la sentencia (cálculo propio) · Firmeza: NO INFORMADA. NO SE ASUME.
+
+── TRAZABILIDAD
+
+ARG-121-SEN-001 · Confianza: 🟠 Bajo, la fija el campo peor sostenido —seis coberturas fechadas y
+coincidentes, ninguna oficial— · Hecho: 2025-09-23 · Sentencia: fecha de audiencia no publicada
+· Publicación: 2026-09-17 · Consulta: 2026-09-17, 17:36 CDMX.
+ESTATUS: PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRA EL CONTEO NACIONAL. No se localizó
+boletín primario de fgjem.edomex.gob.mx. Es lo único que falta para integrarla.
+Fuentes — Institucional (1, por cita en las seis coberturas, SIN BOLETÍN): FGJEM. Nacional (1):
+Infobae (fecha en la ruta). Regional (5), 2 con fecha en la ruta: Argón México · Reporteros en
+Movimiento. Lista íntegra en el archivo de fuentes.
+CAMPOS INDIVIDUALIZADORES: CINCO —nombre completo y alias, pena exacta, fecha del hecho,
+comunidad y número de víctimas—. No procede caso homónimo.
+DESLINDE CONTRA DOS CONDENAS PREVIAS DEL MISMO SENTENCIADO: 150 años (julio-2026, «Los Jockes»,
+secuestro exprés en Toluca) y 70 años (agosto-2026, misma célula). SON TRES SENTENCIAS
+DISTINTAS. NO SE SUMAN.
+DESLINDE DE ÍNDICE: ni «Temoaya», ni «Los Jockes», ni el nombre del sentenciado figuran en el
+índice, que cubre de ARGOS 91 en adelante.
+Calendario verificado: 17-sep-2026 jueves · 23-sep-2025 martes.
+
+Umbral asimétrico: en armamento, la confianza Bajo integra; en sentencias, no basta. UNA
+SENTENCIA SIN FUENTE OFICIAL QUEDA EN «PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO
+NACIONAL». Un aseguramiento mal contado se corrige en la edición siguiente; una sentencia
+inexistente atribuida a una persona con nombre, no.
+
+CONTEO NACIONAL JUDICIAL — cálculo propio: 0 sentencias integradas · 0 absolutorias · 0
+procedimientos abreviados · 0 firmes · 0 personas sentenciadas · 0 años acumulados · 0 multas ·
+0 reparación integrada · 0 fiscalías con resultado. SIN SENTENCIA INTEGRABLE DURANTE EL CORTE. 1
+declarada y no integrada —125 años, FGJEM, Temoaya—, que de haber contado con boletín primario
+habría sido la pena más alta del archivo reciente. EL CERO ES DE PUBLICACIÓN OFICIAL, NO DE
+ACTIVIDAD JUDICIAL.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-17 · Hora: 17:36 (CDMX) · Corte: Vespertino · ARGOS N.° 121 · USO INSTITUCIONAL
+
+============================================================================
+
+## CANDIDATOS JUDICIALES NO INTEGRADOS E INDICADOR DE COBERTURA
+
+## CANDIDATOS JUDICIALES DECLARADOS Y NO INTEGRADOS
+
+  Entidad · municipio | Caso | Qué lo excluye | Qué lo cerraría
+  Chihuahua · Ciudad Juárez · Distrito Judicial Bravos | José Manuel E. C. · homicidio calificado y tentativa · hecho del 1-sep-2025 · «fallo condenatorio» ya dictado por Tribunal de Juicio Oral | La audiencia de individualización de la pena estaba fijada para HOY, «el próximo jueves 17 de septiembre a las 09:00 horas», cadena literal del boletín del 14-sep. NO SE LOCALIZÓ PUBLICACIÓN INDEXADA DE SU RESULTADO EN LAS 8 h 36 min TRANSCURRIDAS HASTA EL CIERRE. NO SE AFIRMA QUE SE POSPUSIERA: ESO SERÍA UN HECHO NO ACREDITADO. Sin pena, no hay sentencia que reportar | La publicación de la pena impuesta, con años y meses
+  Estado de México · Coacalco | Israel Cruz Luna, «El Maca» · homicidio · 36 años 3 meses · FGJEM | FUERA DE VENTANA: todas las fuentes que sostienen la cifra llevan fecha en la ruta del 14-sep, anterior a la apertura de este corte. Sigue sin boletín de la FGJEM | El boletín primario; y la edición que lo integre debe ser la que corresponda a su fecha, no ésta
+  Baja California · Tijuana | Luis Martín «N» · feminicidio de Tiffany Gabriela García Rivera · hecho del 1-abr-2025 · procedimiento abreviado del 9-sep · 26 años 8 meses, 500 UMA y 874,680 pesos de reparación | DISCREPANCIA NUEVA Y GRAVE: el único boletín oficial localizado —fgebc.gob.mx/boletines/12722— dice 23 años, no 26 años 8 meses, y no publica nombre. Solo coinciden municipio y delito: dos campos insuficientes. POSIBLE CASO HOMÓNIMO — NO INTEGRAR HASTA VALIDACIÓN | Un boletín que ate el nombre a la pena, o la versión pública de la sentencia
+  Tamaulipas · Nuevo Laredo | Carlos, Adrián, Luis y José «N» · portación y posesión de uso exclusivo · 15a 6m, 15a 6m, 11a 6m y 8 años · FGR | FECHA NO FIJADA, SEGUNDO INTENTO FALLIDO: la URL lleva año y mes pero no día. El «hace seis días» solo lo afirma el resumidor y no vale. NO PUEDE ACREDITARSE QUE CAIGA EN ESTA VENTANA | Una URL con día o un titular fechado. Agotadas dos vías; procede intentar la cuenta oficial de la FGR
+  Zacatecas · Villa González Ortega | Seis personas · secuestro agravado · 100 años · FGJ Zacatecas | ALERTA DE AÑO, NUEVA: el boletín tiene slug sin fecha y el caso que describe —seis nombres, hechos de agosto de 2021 en Villa González Ortega— coincide con uno que otras fuentes fechan en 2023. POSIBLE CASO HOMÓNIMO / FUENTE NO FECHADA | RETIRADO POR AGOTAMIENTO EN ESTE CORTE. El historial real es de TRES apariciones —ARGOS 118, 119 y 121; en ARGOS 120 desapareció sin cierre documentado—, no de dos. El umbral de la regla de cifras arrastradas se cumplió en ARGOS 119: CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO. No se reabre sin URL fechada en 2026
+
+  Módulo | Revisadas | Con resultado integrado | Sin resultado indexado en ventana | Sin actualización constatada | No revisada | Cuadre
+  Armamento | 31 de 32 · + FGR: Sí | 1 · Querétaro | 30 | 0 · exige lectura directa, · imposible con el egreso · bloqueado | 1 · Yucatán | 1 + 30 + 0 + 1 = 32 ✔
+  Judicial | 31 de 32 · + FGR: Sí | 0 · 1 declarada, · no integrada | 26 | 0 | 1 · Yucatán | 0 integradas + 5 entidades con candidato declarado + 26 + 1 = 32 ✔
+
+COBERTURA DESIGUAL, DECLARADA: Yucatán no recibió búsqueda dedicada y se reporta NO REVISADA,
+nunca como «sin actualización» · SSP Chiapas y FGE Chiapas se cubrieron por mención general, sin
+consulta dirigida a su dominio · las Mesas de Construcción de la Paz de las 32 entidades
+quedaron NO REVISADAS, sin hecho de alto impacto en ventana que lo justificara · Colima,
+Nayarit, Aguascalientes, Hidalgo y Tlaxcala —deuda declarada por ARGOS 120— SÍ recibieron
+consulta dirigida propia en este corte y la deuda queda saldada · Coahuila, Nuevo León, San Luis
+Potosí y Zacatecas, las cuatro que ARGOS 120 dejó NO REVISADA en judicial, encabezaron el triaje
+y quedan revisadas. SIN ACTUALIZACIÓN CONSTATADA QUEDA EN 0 EN LOS DOS MÓDULOS: ESA CASILLA
+EXIGE LECTURA DIRECTA DEL LISTADO DE BOLETINES Y EL EGRESO ESTÁ BLOQUEADO.
+Criterio del cuadre judicial, declarado para que reconcilie con la tabla de arriba: las 5
+entidades con candidato declarado son Chihuahua, Estado de México, Baja California, Tamaulipas y
+Zacatecas. El Estado de México se cuenta UNA sola vez, aunque aporte además la sentencia
+declarada y no integrada de Temoaya (ARG-121-SEN-001): EL CUADRE ES POR ENTIDAD, NO POR CASO.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-17 · Hora: 17:36 (CDMX) · Corte: Vespertino · ARGOS N.° 121 · USO INSTITUCIONAL
+
+============================================================================
+
+## VALORACIÓN ARGOS, CONCLUSIONES E INDICADORES
+
+── VALORACIÓN — NIVEL DE RIESGO NACIONAL
+
+1. CERO EVENTOS ROJOS DENTRO DE VENTANA, y el nivel se valora sobre los rojos observados en el
+corte. NO SIGNIFICA RIESGO BAJO: los dos hechos rojos del periodo —Coyuca de Benítez y San
+Andrés Chicahuaxtla— ocurrieron en la ventana anterior y solo se publicaron hoy. Una ventana de
+30 horas mide publicación, no violencia.
+2. El hecho de mayor gravedad del periodo es la captura del Estado a nivel municipal: una
+corporación completa detenida por desaparición forzada, con su jefe incluido y un retén oficial
+como instrumento del delito. ES EL SEGUNDO CASO DE AUTORIDAD MUNICIPAL DE GUERRERO IMPLICADA EN
+TRES CORTES.
+3. Las tres acciones institucionales del corte son de cateo y captura, ninguna de reacción:
+Coyuca, Querétaro y Tepeaca. Ninguna derivó de agresión y en ninguna hubo repliegue armado. Es
+un corte de iniciativa estatal sin contacto.
+4. La densidad cae a 0,10 hechos por hora frente a 0,25 del corte anterior (3 ÷ 30,03 y 19 ÷
+75,10, cálculo propio). LOS TOTALES ABSOLUTOS NO SON COMPARABLES —30 h 02 min FRENTE A 75 h 06
+min—; LA DENSIDAD SÍ, Y BAJA A LA MITAD.
+5. Cero sentencias integradas y seis detenidos en aseguramientos: la brecha entre captura y
+condena no se pudo medir en este corte. La única resolución del periodo —125 años en Temoaya—
+existe y no se integra por falta de boletín. EL CERO JUDICIAL ES DE PUBLICACIÓN, NO DE
+ACTIVIDAD.
+
+── CONCLUSIONES DE INTELIGENCIA CRIMINAL
+
+1. EL PUNTO DE CONTROL OFICIAL APARECE COMO INSTRUMENTO DE DESAPARICIÓN FORZADA, NO COMO
+ESCENARIO DE AGRESIÓN. En Coyuca de Benítez la víctima fue detenida en un retén, con su esposa y
+su madre delante, y trasladada en patrulla. La contramedida es de control de autorizaciones,
+bitácoras y GPS de unidad, no de refuerzo de fuerza. Procede auditar qué retenes municipales
+están autorizados en la costa de Guerrero y quién los ordena.
+2. GUERRERO ACUMULA DOS CASOS DE AUTORIDAD MUNICIPAL IMPLICADA EN TRES CORTES: el comisario de
+Xaltianguis (ARG-120-012) y ahora la corporación completa de Coyuca. No hay vínculo acreditado
+entre ambos y no se afirma ninguno; lo que se repite es el nivel capturado. La unidad de riesgo
+en esa entidad es el ayuntamiento, no la célula criminal. Y el patrón no es solo de Guerrero: el
+detenido de Morelia está vinculado al homicidio del síndico de Penjamillo y a la desaparición de
+la expresidenta de Angamacutiro, dos ataques más contra el nivel municipal, en municipios
+contiguos.
+3. EL PERFIL DE VÍCTIMA DE CHICAHUAXTLA ES NUEVO EN EL ARCHIVO: un promotor de lengua indígena
+baleado con su hija de tres años, en una interceptación nocturna que supone conocimiento del
+trayecto. Procede verificar amenaza previa y conflicto de representación comunitaria antes que
+hipótesis de delincuencia común.
+4. EL CAMPO QUE DECIDE SI UN ASEGURAMIENTO ES INTELIGENCIA O SOLO CIFRA ES EL CALIBRE, Y NINGUNA
+DE LAS CUATRO ARMAS INTEGRADAS LO LLEVA. Cero series en las cuatro. La única arma del periodo
+con calibre publicado —el fusil .223 de Morelia— es de la ventana anterior. Sin calibre ni
+marcaje, ningún arma de este corte se puede cruzar con las rastreadas desde el norte, y los
+3,358 cartuchos de Coyame del Sotol no se pueden atribuir a ningún sistema de armas.
+5. LA PROPORCIÓN MUNICIÓN-ARMA DE COYAME DEL SOTOL DESCRIBE DEPÓSITO, NO DOTACIÓN: 1,679
+cartuchos y 11 cargadores por arma larga (cálculo propio), en un municipio fronterizo sobre la
+ruta a Ojinaga. Es consistente con abastecimiento de entrada y requiere validación: procede
+cotejar el calibre contra los cruces internacionales de ese eje.
+
+Publicado dentro de esta ventana (17-sep), informe de estrategia nacional de seguridad del
+Gabinete de Seguridad: 351 objetivos prioritarios detenidos en diez meses · «más de 346
+toneladas» de droga asegurada en la administración. RESERVA DE FECHA, DECLARADA: no pudo
+acreditarse que la publicación caiga dentro de esta ventana y no en el informe de gobierno de
+principios de septiembre. Se citan como contexto, no como indicador del corte.
+CIFRA DE ARMAMENTO NO ADOPTADA, POR DOS MOTIVOS DISTINTOS: una cobertura consigna «24 mil armas»
+y un segundo equipo trajo 14,787; la primera está sostenida por un titular citable y la segunda
+NO PUDO LOCALIZARSE en ninguna búsqueda. No se integra ninguna de las dos: la una por estar
+contradicha, la otra por no haberse podido verificar siquiera su existencia.
+SESNSP, INEGI y el portal gabinetedeseguridad.gob.mx/resultados/: SIN ACTUALIZACIÓN OFICIAL
+UTILIZABLE DURANTE EL CORTE. Undécima verificación consecutiva sin cifra utilizable de ese
+portal: dominio indexado, rutas sin fecha y acceso directo bloqueado. Ninguna cifra suya se usa.
+Todas las cifras de este cartelón que no lleven emisor son cálculo propio de ARGOS: ninguna
+autoridad publicó un agregado nacional del corte.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-09-17 · Hora: 17:36 (CDMX) · Corte: Vespertino · ARGOS N.° 121 · USO INSTITUCIONAL
