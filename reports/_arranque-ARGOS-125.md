@@ -5,10 +5,14 @@ siguiente. Existe porque la continuidad de ARGOS **no vive en la conversación q
 en el repositorio**: una sesión nueva debe poder arrancar leyendo este archivo, `CLAUDE.md` y
 `reports/_pendientes.md`, sin que nadie recuerde ni transcriba nada.
 
-**Escrito al cierre de ARGOS 124** (corte 2026-09-24).
+**Escrito al cierre de ARGOS 124** (corte 2026-09-24) y ⚠️ **REVISADO EL 2026-10-07**, al comprobarse
+que la ventana de ARGOS 125 no es de dos días sino de **TRECE** —`2026-09-24 06:41 → hora real de
+arranque`—. **Las premisas de la versión anterior de este archivo eran falsas y se han reescrito:
+ventana, presupuesto de búsqueda, ciclo de rotación y seguimientos.** **Una orden con premisas falsas
+es peor que no tenerla.**
 
 ⚠️ **El mensaje de arranque listo para pegar en una sesión nueva está en
-`reports/_ordenes-ARGOS-124.txt`.** Este archivo es el detalle; aquél es la orden.
+`reports/_ordenes-ARGOS-125.txt`.** Este archivo es el detalle; aquél es la orden.
 
 ---
 
@@ -48,9 +52,9 @@ absorbió**; si no, trabaje sobre la rama más avanzada, no sobre `main`.
 | Campo | Valor |
 |---|---|
 | **Número** | **ARGOS 125** (se confirma con el Bloque 0) |
-| **Ventana** | **abre 2026-09-24 08:57 CDMX**, cierra a la **hora real de arranque**, verificada con `TZ=America/Mexico_City date` |
+| **Ventana** | **abre 2026-09-24 06:41 CDMX** —donde cerró ARGOS 124—, cierra a la **hora real de arranque**, verificada con `TZ=America/Mexico_City date`. ⚠️ **Al escribirse este archivo eran 312 h 19 min: 13,0 DÍAS** |
 | **Archivos a crear** | `reports/argos-<FECHA>.html` · `-movil.html` · `.txt` · `-fuentes.md` |
-| **Archivos a actualizar** | `reports/_pendientes.md` · `reports/indice-arg-id.md` · este archivo, renombrado a `_arranque-ARGOS-124.md` |
+| **Archivos a actualizar** | `reports/_pendientes.md` · `reports/indice-arg-id.md` · este archivo, reescrito como `_arranque-ARGOS-126.md`, y su orden `_ordenes-ARGOS-126.txt` |
 
 **Continuidad de ventana**: abre exactamente donde cerró la anterior. **Ni un minuto de hueco ni de
 solape. Verifique la hora, no la suponga.**
@@ -58,16 +62,54 @@ solape. Verifique la hora, no la suponga.**
 ⚠️ **SELLAR LA HORA CAMBIA LA DURACIÓN Y LA DENSIDAD.** **Los dos cocientes se recalculan AL SELLAR**,
 y aparecen en portada, en la Valoración y en el bloque de armamento.
 
-**Serie de duraciones**: 30 h 02 (121) → 87 h 21 (122) → 23 h 25 (123) → **46 h 19 (124)**.
-**Densidades**: 0,25 → 0,19 → 0,04 → **0,32**.
-**Ningún total absoluto es comparable sin normalizar por duración; la densidad sí.**
+**Serie de duraciones**: 117 h 50 (119) · 75 h 06 (120) · 30 h 02 (121) · 87 h 21 (122) ·
+23 h 25 (123) · **46 h 19 (124)** → **~312 h (125)**.
+**Densidades**: 0,25 (121) · 0,19 (122) · 0,04 (123) · **0,30 (124)**.
+**Ningún total absoluto es comparable sin normalizar por duración; la densidad sí** — ⚠️ **y en
+ARGOS 125 tampoco del todo, porque el presupuesto de búsqueda no escala con la ventana.**
 
 ⚠️ **REGLA SIMÉTRICA, CONFIRMADA TRES VECES**: una ventana **corta** produce **recuperaciones**
 (30 h → 3 hechos y 5 `-REC-`; **23 h → 1 hecho y 11 `-REC-`**); una ventana **larga** produce **hechos
 propios** (87 h → 17 y 2). **Ni la una ni la otra es indicador de cobertura.**
 
-⚠️⚠️ **ARGOS 124 ES EL CASO EXTREMO: UN SOLO HECHO PROPIO Y ONCE RECUPERACIONES.** Un corte con
-cero verdes **no describe un país en calma: describe un día sin boletín.**
+⚠️⚠️ **ARGOS 123 ES EL CASO EXTREMO DE VENTANA CORTA: UN SOLO HECHO PROPIO Y ONCE RECUPERACIONES.**
+Un corte con cero verdes **no describe un país en calma: describe un día sin boletín.**
+
+---
+
+### 1-bis — VENTANA EXTRAORDINARIA DE TRECE DÍAS · SIN PRECEDENTE EN LA SERIE
+
+**Trece días sin publicar.** La ventana de ARGOS 125 es **2,65 veces la más larga de la serie**
+(117 h 50, ARGOS 119) y **6,7 veces la de ARGOS 124**. Tres consecuencias, y las tres se olvidan si
+no se fijan antes de la primera búsqueda:
+
+1. **EL NÚMERO ES 125, NO 137.** La numeración cuenta **ediciones, no días**. Trece días sin publicar
+   son un hueco de **ventana**, no de numeración. **No existen las ediciones 125 a 136**: no hay que
+   recuperarlas, ni renumerar, ni fingir que existieron. El archivo de fuentes lo dice **en una
+   línea** y nada más: **es trazabilidad, no narrativa.**
+2. ⚠️⚠️ **CASI NADA ES RECUPERACIÓN.** El `-REC-` es para hechos de la ventana de una **edición
+   anterior**. Todo lo ocurrido **entre el 24-sep 06:41 y la hora de cierre es de ESTA ventana**: es
+   **hecho propio con su fecha**, por antiguo que parezca. **Un hecho del 25 de septiembre no es una
+   recuperación: entra en los totales del corte.** Solo es `-REC-` lo fechado **antes** del
+   24-sep 06:41. Por la regla simétrica, **espere el mayor volumen de hechos propios del archivo.**
+3. **ADVERTENCIA DE COMPARABILIDAD, OBLIGATORIA Y EN UNA LÍNEA**, en la Valoración y en el panorama:
+   los totales absolutos de este corte **no son comparables** con los de ninguna edición anterior.
+   **Una línea, no un recuadro**: el límite de tres recuadros no se toca.
+
+**El presupuesto de búsqueda no escala a trece días.** Trece días × 32 entidades × dos módulos **no
+es ejecutable**, y trece días de boletín federal **no se consultan día por día**. Orden de gasto:
+(1) los tres encargos del Bloque 3.1; (2) **recall nacional en dos tramos** —24-30 sep y 1-7 oct—,
+**por gravedad, no por cronología**; (3) los seis barridos, con la ventana completa y sus días;
+(4) boletín federal **por rango y por título sin `site:`**, reservando el día suelto para los días
+que el recall señale.
+
+⚠️⚠️ **PRECIO DE ADMISIÓN PARA PUBLICAR UN CORTE DE TRECE DÍAS: EL `NO REVISADA` SE DECLARA POR DÍA
+Y POR ENTIDAD** en el archivo de fuentes. **Un barrido de trece días declarado como completo sería la
+afirmación más falsa de la serie.** Declarar el hueco es dato, y es lo que hace auditable el corte.
+
+⚠️ **Ninguna ficha se comprime para caber.** Si el volumen crece, **crecen las páginas** —`CLAUDE.md`
+es explícito—. ARGOS 124 cerró en 13 páginas; esta edición puede necesitar más y **eso no es un
+defecto.**
 
 ---
 
@@ -90,39 +132,73 @@ cero verdes **no describe un país en calma: describe un día sin boletín.**
 
 ## BLOQUE 3 — DEUDA QUE ARGOS 125 HEREDA
 
-### 3.1 Lo primero del corte
+### 3.1 Lo primero del corte — TRES ENCARGOS. TRECE DÍAS LES HAN DADO TIEMPO DE MOVERSE.
 
-⚠️⚠️ **GUANAJUATO · CORREDOR LAJA-BAJÍO — EL VACÍO MÁS GRANDE QUE DEJA ARGOS 124.**
+⚠️⚠️ **1. GUANAJUATO · COMONFORT — SEGUIMIENTO NUEVO Y PRIORITARIO.**
+El **23-sep** un grupo armado **emboscó con ponchallantas** a una patrulla de las **FSPE** en
+**Delgado de Arriba** y **mató a TRES POLICÍAS ESTATALES** (dos hombres y una mujer). `ARG-124-001`.
+**CERO DETENIDOS** entonces. ⚠️ Un titular nacional publicó **cuatro** policías muertos y **dos civiles
+abatidos**; ARGOS adoptó **tres**, la cifra de la **Secretaría de Seguridad y Paz de Guanajuato**, y
+**no integró a los civiles**. **Busque: ¿detenidos en trece días? ¿confirmó la autoridad a los dos
+civiles? ¿inventario del armamento empleado?** ⚠️ **Si hay detención, es un HECHO NUEVO EN VERDE con su
+propio ARG-ID**, no una corrección del rojo: **un delito y su detención son dos eventos.**
+
+⚠️⚠️ **2. VERACRUZ · COATZACOALCOS — SEGUIMIENTO NUEVO Y PRIORITARIO, CON LÍNEA DE ARCHIVO.**
+El **23-sep** ejecutaron con **diez impactos** a **GUILLERMO PAMUCE YEP**, «El Chino Yep», exregidor de
+Jáltipan y **coordinador regional del partido PAZ**. `ARG-124-002`. **Cero detenidos, móvil no
+establecido.**
+⚠️⚠️ **ES EL SEGUNDO CUADRO DEL MISMO PARTIDO ASESINADO EN EL ARCHIVO.** El primero fue
+`ARG-108-REC-001`, **Mazatepec, Morelos**, coordinador municipal del partido PAZ. Y **ARGOS 123
+publicó Tetecala (PRI)**. **Tres dirigentes políticos municipales en el archivo reciente**, con el
+proceso electoral federal 2026-2027 abriéndose. **SI APARECE UN CUARTO, ES PATRÓN Y HAY QUE DECIRLO.**
+**El patrón se registra; la vinculación NO se afirma sin acreditación.** ⚠️ **Una ventana de trece días
+es la primera que puede ver el patrón de verdad: búsquelo expresamente, no espere a que caiga.**
+
+⚠️⚠️ **3. GUANAJUATO · CORREDOR LAJA-BAJÍO — TERCERA EDICIÓN COMO MAYOR VACÍO DEL ARCHIVO.**
 `periodicocorreo.com.mx` (21-sep) atribuye a la FGE **«23 MUERTOS Y 11 HERIDOS entre el 18 y el
 20-sep»** en Valle de Santiago, Salamanca, Irapuato, Celaya, Cortazar y León, y **«14 MUERTOS EN VALLE
-DE SANTIAGO EN OCHO DÍAS»**. ⚠️ **FUENTE ÚNICA REGIONAL, SIN BOLETÍN DE LA FGE: NO SE INTEGRÓ NI SE
-CITÓ EN EL CARTELÓN.** **Si la cifra es cierta, un solo corredor supera todos los muertos del
-documento de ARGOS 124.** **Búsquelo primero: el boletín de la FGE Guanajuato lo cierra.**
+DE SANTIAGO EN OCHO DÍAS»**. **ARGOS 124 gastó tres búsquedas: NO EXISTE BOLETÍN DE LA FGE.** Ocho
+medios lo republicaron **atribuyéndolo a «registros de la Fiscalía», ninguno enlazando documento**.
+`NO INTEGRADO NI CITADO`. **Si el boletín aparece, ciérrelo; si no aparece en esta tercera, DECIDA**:
+o se cierra por **agotamiento declarado**, o se dice **por qué sigue abierto**. **No lo herede una
+cuarta vez sin disposición.**
 
-⚠️⚠️ **CHIHUAHUA · Cd. Juárez — JOSÉ MANUEL E. C. CUARTA EDICIÓN.**
-El fallo condenatorio está dictado y **solo falta la pena**; la audiencia era el 17-sep 09:00.
-**ARGOS 121, 122 y 123 gastaron tres, cinco y tres búsquedas: `SIN RESULTADO INDEXADO` las tres.**
-⚠️ **NO se afirma que se pospusiera.** **Sugerencia del barrido del Noroeste, no probada aún**: buscar
-**«individualización de sanciones» + «José Manuel» SIN restricción de fecha**, porque el boletín de la
-pena, si existe, **usaría un slug distinto al del fallo**. **Tres búsquedas, no más.**
+### 3.2 Candidatos judiciales vivos — trece días dan tiempo a que aparezca el boletín
 
-### 3.2 Candidatos judiciales vivos
-
-- ⚠️ **ESTADO DE MÉXICO · `fgjem.edomex.gob.mx`** — **SEXTA verificación sin boletín primario.**
-  Temoaya (125 a), Coacalco (36 a 3 m, ⚠️ **POSIBLE HOMÓNIMO** con un post de junio-2026) y Hueypoxtla
-  (21 a 10 m 15 d). **Ninguna edición ha integrado una sola.** **Valore el agotamiento.**
-- ⚠️ **MICHOACÁN · Morelia — FRANCISCO JAVIER T., 93 a 9 m.** ⚠️ **DOMINIO CORREGIDO:
-  `comunicacion.fiscaliamichoacan.gob.mx`, NO `fge.michoacan.gob.mx`** — las ediciones anteriores
-  intentaron el equivocado.
-- ⚠️ **VERACRUZ · agregado del 21-sep**: «26 sentencias condenatorias y 41 vinculaciones».
-  **Sin desglose individual no es integrable.** Aclarado en ARGOS 124: el «37 resoluciones» era de
-  **otro boletín, del 7-sep**.
-- **SAN LUIS POTOSÍ · La Pila — NORMA «N», 4 años + 84 UMA.** Dos fuentes regionales, **ninguna
-  institucional**. ⚠️ **NO reproduzca la conversión a pesos de la fuente: usa la UMA de 2025.**
-- **TAMAULIPAS · Nuevo Laredo — Carlos, Adrián, Luis y José «N»**: **reclasificado a sentencia**
-  (15 a 6 m, 15 a 6 m, 11 a 6 m y 8 años, FGR). **Falta el boletín y el día exacto.**
+- ⚠️⚠️ **CHIHUAHUA · Cd. Juárez — JOSÉ MANUEL E. C.: LA PENA YA APARECIÓ.** **37 AÑOS Y 6 MESES**,
+  **Fiscalía de Distrito Zona Norte**, **tres campos individualizadores coincidentes: SIN HOMÓNIMO
+  POSIBLE.** ⚠️ **NO INTEGRADA**: ninguna URL lleva **fecha en la ruta** y no hay boletín oficial.
+  **Si fija la fecha o halla el boletín, SE INTEGRA.** **La pista que funcionó**: buscar
+  **«individualización de sanciones» sin restricción de fecha** — el boletín de la pena usa **otro
+  *slug*** que el del fallo.
+- **QUINTANA ROO · Cancún** — **sentencia nueva no integrada: 80 AÑOS** a tres personas por
+  **secuestro agravado**, publicada el **22-sep dentro de la ventana de ARGOS 124**, **sin boletín de
+  la fiscalía**.
+- ⚠️ **VERACRUZ · los agregados de la FGE** — **PATRÓN ESTRUCTURAL DEL EMISOR, no vacío de búsqueda:
+  quinta edición.** Tres boletines solo en la ventana de ARGOS 124 —11 sentencias (22-sep), 21 y un
+  fallo (23-sep), **75 en una semana** (23-sep, desglosado solo por región)—. **Ninguno identifica un
+  caso.** ⚠️ **Existen boletines individuales con nombre y pena en el dominio de la FGE, pero sus rutas
+  NO llevan fecha**: no pueden atarse a ninguna ventana. **Si logra fechar uno, es la primera sentencia
+  integrable de Veracruz en cinco ediciones.**
+- ⚠️ **ESTADO DE MÉXICO · `fgjem.edomex.gob.mx`** — **SÉPTIMA verificación sin boletín primario.**
+  Temoaya (125 a), **Coacalco ya individualizado** —**Israel Cruz Luna «El Maca», líder de «Los
+  Macas»**, 36 a 3 m— y Hueypoxtla (21 a 10 m 15 d). ⚠️ **Sigue `POSIBLE CASO HOMÓNIMO`: NADIE HA
+  COTEJADO el post de junio-2026 casi idéntico. Hágalo: es una búsqueda, no un proyecto.**
+- **MICHOACÁN · Morelia — FRANCISCO JAVIER T., 93 a 9 m.** **Homónimo DESCARTADO**: ocho
+  republicadores coinciden en tres campos individualizadores. Sigue `PENDIENTE DE CONFIRMACIÓN
+  OFICIAL`. ⚠️ **DOMINIO CORREGIDO: `comunicacion.fiscaliamichoacan.gob.mx`, NO
+  `fge.michoacan.gob.mx`.**
+- **SAN LUIS POTOSÍ · La Pila — NORMA «N»**: **la pena es 4 AÑOS 2 MESES, no 4 años** (corregida en
+  ARGOS 124), + 84 UMA. Dos fuentes regionales, **ninguna institucional**. ⚠️ **NO reproduzca la
+  conversión a pesos de la fuente: usa la UMA de 2025, no la vigente.**
+- **TAMAULIPAS · Nuevo Laredo — Carlos, Adrián, Luis y José «N»**: sentencias dictadas
+  (15 a 6 m ×2, 11 a 6 m y 8 años, FGR). **Falta el boletín y el día exacto.**
 - **TAMAULIPAS · «El Cholo»**, `ARG-122-SEN-001`: **se mantiene integrada con Medio**. **El folio de
   la FGR sigue sin localizarse** pese a siete medios convergentes.
+
+⚠️ **UMBRAL ASIMÉTRICO**: armamento integra con confianza **Bajo**; **sentencias NO**. Una sentencia
+sin fuente oficial queda `PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL`. **Una
+sentencia inexistente atribuida a una persona con nombre no se corrige con una fe de erratas.**
 
 ### 3.3 Armamento
 
@@ -140,10 +216,21 @@ pena, si existe, **usaría un slug distinto al del fallo**. **Tres búsquedas, n
   10 heridos (alcalde) · 5 heridos y 0 muertos (SEDENA) · **8 heridos** (5 policías estatales + 3 GN,
   carpetas de la FGE) · **19, 22 y 29 retenidos**. ⚠️ **Explosivos SIGUEN SIN CONFIRMAR: 🟡 se
   mantiene.** **Dato nuevo: el armamento de cargo SÍ fue devuelto, sin inventario institucional.**
-- ⚠️ **CDMX · Tepito** — **CUARTA edición sin boletín.** Tres versiones de edades.
-- ⚠️ **CHIAPAS · penal de Ocosingo** — **dato nuevo: la FGE vinculó la MISMA ARMA a otros dos hechos**
-  (16-ago en Vida Mejor, 6-sep en 27 de Febrero). **Auditoría sin resultado publicado.**
-- **TABASCO · FGET** — ⚠️ **la cifra misma está en disputa: 6 según La Silla Rota, 4 según El Universal.**
+- ⚠️ **CDMX · Tepito** — **SEXTA edición sin boletín** de SSC ni FGJ. **Las edades ya convergen**:
+  **Abigail Herrera, 19, y Odette Rosas, 18**, por cuatro fuentes independientes; las versiones
+  «25-30» y «15-20» **no tienen respaldo**.
+- ⚠️ **CHIAPAS · penal de Ocosingo** — la FGE vinculó la **misma arma a otros dos hechos** (16-ago y
+  6-sep). ⚠️ **DISCREPANCIA SIN ARBITRAR**: la deuda citaba «16-ago en **Vida Mejor**»; una fuente del
+  21-sep cita «**Patria Nueva**». **¿Mismo barrio con otro nombre o dos hechos?** **Auditoría del penal
+  sin resultado publicado.**
+- **TABASCO · FGET** — ⚠️ **corrección de calendario de ARGOS 124: el «lunes violento» es el 14-sep,
+  no el 15.** **La cifra sigue en disputa: 4 frente a 6.**
+- ⚠️ **NUEVO LEÓN · Los Aldamas — RIESGO DE CONFLACIÓN DECLARADO**: **cuatro incidentes distintos en el
+  mismo municipio en años diferentes.** **Ninguna cifra de los anteriores debe atribuirse al de
+  septiembre.**
+- ⚠️ **SONORA · Puerto Peñasco** — la cifra exacta sigue abierta: **«más de 40» y «casi cuatro mil» NO
+  SON CIFRAS.** ⚠️⚠️ **NO REABRA las «cinco personas sin paradero»: `ARG-123-FE-001` las cerró. Son dos
+  grupos distintos.**
 - **ESTADO DE MÉXICO · Valle de Chalco** — **dos ataques en menos de 24 horas, cuatro muertos, cero
   detenidos en ambos.** **Vigile si la FGJEM publica algo.**
 
@@ -151,41 +238,60 @@ pena, si existe, **usaría un slug distinto al del fallo**. **Tres búsquedas, n
 
 ## BLOQUE 4 — LO QUE HAY QUE VOLVER A COMPROBAR EN CADA CORTE
 
-| Qué | Estado al cierre de ARGOS 124 |
+| Qué | Estado al cierre de ARGOS 124, revisado para ARGOS 125 |
 |---|---|
-| ⚠️ **El bloqueo de egreso alcanza también a los MEDIOS** | **REVERIFICADO Y PERSISTE, TERCERA EDICIÓN.** Cuatro dominios, todos `000`. **Techo ★★★☆☆.** ⚠️ **COMPRUÉBELO DE NUEVO: si la lectura funciona, el techo recupera ★★★★☆ y debe hacerse constar** |
+| ⚠️ **El bloqueo de egreso alcanza también a los MEDIOS** | **REVERIFICADO Y PERSISTE, QUINTA EDICIÓN.** Cuatro dominios, todos `000`. **Techo ★★★☆☆, sexta edición.** ⚠️ **COMPRUÉBELO DE NUEVO: si la lectura funciona, el techo recupera ★★★★☆ y debe hacerse constar** |
 | `docs/solicitud-lista-blanca-egreso.md` | **Sigue sin tramitar. Es la única solución real** |
 | `gabinetedeseguridad.gob.mx/resultados/` | **Duodécima verificación consecutiva sin cifra utilizable.** Ninguna cifra suya se usa |
-| **Boletín federal de acciones relevantes** | ⚠️ **EL FORMATO VOLVIÓ A CAMBIAR: ARGOS 121 recibió un agregado de tres días; ARGOS 124, un diario, y solo uno.** **Cuatro de los cinco días de su ventana quedaron sin boletín**, verificados con **triple consulta en los cuatro tramos**. ⚠️ **Y `gob.mx/sspc` NO INDEXÓ EL SUYO: solo se alcanzó por republicadores.** **La tercera consulta —título sin `site:`— es la que funciona** |
-| ⚠️ **Dominios oficiales mal referenciados** | **Corregido**: Oaxaca es `fge.oaxaca.gob.mx`, **no** `fiscaliaoaxaca.gob.mx`. ⚠️ **SIN VERIFICAR, compruébelos**: Querétaro (`sscqro.gob.mx`), Hidalgo (`s-seguridad.hidalgo.gob.mx`), Tlaxcala (`ssc.tlaxcala.gob.mx`) |
+| **Boletín federal de acciones relevantes** | ⚠️⚠️ **EL FORMATO CAMBIÓ TRES EDICIONES SEGUIDAS: diario (122), agregado de tres días (123), diario otra vez (124). NO SE PUEDE ANTICIPAR: la triple consulta es obligatoria cada vez.** ⚠️ **Y `gob.mx/sspc` NO INDEXA LOS SUYOS: la tercera consulta —título SIN `site:`— es la única que ha funcionado cinco ediciones seguidas.** ⚠️⚠️ **CON TRECE DÍAS DE VENTANA, NO SE CONSULTA DÍA POR DÍA: rango y título primero, día suelto solo donde el recall señale, y los días no consultados se declaran `NO REVISADA` uno a uno** |
+| ⚠️ **El resumidor del buscador sobre el boletín federal** | **En ARGOS 124 dos consultas sobre el MISMO boletín del 22-sep devolvieron LISTAS DE ESTADOS CONTRADICTORIAS. No se integró nada de lo contradicho. Haga lo mismo** |
+| ⚠️ **Dominios oficiales mal referenciados** | **Corregidos y confirmados**: Michoacán `comunicacion.fiscaliamichoacan.gob.mx` (**no** `fge.michoacan.gob.mx`) · Campeche `ucs.campeche.gob.mx` (**no** `ssp.campeche.gob.mx`) · Oaxaca `fge.oaxaca.gob.mx` (**no** `fiscaliaoaxaca.gob.mx`). **Confirmados**: `sscqro.gob.mx` (tiene `/boletin/`), `s-seguridad.hidalgo.gob.mx`, `ssc.tlaxcala.gob.mx`, `ssp.zacatecas.gob.mx`, `seguridad.slp.gob.mx` |
 | `fiscaliaguerrero.gob.mx` | **Quinta edición sin publicar indexable.** **La vía que funciona es el republicador, no el dominio** |
-| **SSC y FGJ de la Ciudad de México** | **Cero boletín sobre Tepito, TERCERA edición.** ⚠️ **Y ahora hay TRES versiones de edades**: 25-30, 18-19 y 15-20 |
-| **FGET Tabasco** | **Sin boletín de las seis ejecuciones del 15-sep.** Nueva información parcial: **3 de las 6 ubicadas** —Centro (2) y Cárdenas (1)—; **las otras tres sin aclarar** |
+| **SSC y FGJ de la Ciudad de México** | **Cero boletín sobre Tepito, QUINTA edición.** **Las edades ya convergen por cuatro fuentes: Abigail Herrera, 19, y Odette Rosas, 18** |
+| **FGET Tabasco** | **Sin boletín.** ⚠️ **Corrección de calendario de ARGOS 124: el «lunes violento» es el 14-sep, no el 15.** **La cifra sigue en disputa: 4 frente a 6** |
+| ⚠️⚠️ **COAHUILA y ZACATECAS** | **Cobertura débil DOS ediciones seguidas: ninguna alcanzó `site:` dedicado a su SSP estatal. ENCABEZAN el triaje de ARGOS 125 por prioridad sobre el ciclo** |
 
 ---
 
 ## BLOQUE 5 — BARRIDO REGIONAL Y ROTACIÓN
 
 `CLAUDE.md` exige **seis agentes `barrido-regional` en paralelo**. **Lánzelos en un solo mensaje**, con
-la deuda del Bloque 3 al frente y **tope duro de 2-3 búsquedas por eje**.
-⚠️ **Dé a cada agente la ventana COMPLETA con sus días, no «hoy».**
+la deuda del Bloque 3 al frente y **tope duro de búsquedas por eje**.
+⚠️⚠️ **Dé a cada agente la ventana COMPLETA CON SUS TRECE DÍAS, no «hoy» ni «esta semana».** Una
+ventana mal transmitida al agente produce cobertura de dos días declarada como de trece.
 
-⚠️ **CICLO QUE TOCA: CICLO B — Noreste + Golfo encabezan el triaje judicial.**
-⚠️⚠️ **PERO LA PRIORIDAD VENCE AL CICLO: BAJA CALIFORNIA SUR quedó `NO REVISADA` en ARGOS 124 y
-ENCABEZA, aunque sea del Noroeste.** **Saldar cobertura vence a mantener el turno.**
+⚠️ **CICLO QUE TOCA: CICLO C — Occidente + Sureste encabezan el triaje judicial.**
+⚠️⚠️ **PERO LA PRIORIDAD VENCE AL CICLO: COAHUILA y ZACATECAS arrastran cobertura débil DOS ediciones
+seguidas y ninguna alcanzó `site:` dedicado a su SSP estatal. ENCABEZAN.** **Saldar cobertura vence a
+mantener el turno.**
 
-⚠️ **El Ciclo C de ARGOS 124 SÍ produjo candidato judicial** —Morelia, 93 años 9 meses— **y saldó
-Yucatán en los dos módulos**, a diferencia del Ciclo B de ARGOS 121, que no produjo ninguno.
+**Rendimiento histórico de la rotación**: Ciclo B (121) **no** produjo candidato · Ciclo C (122)
+**sí** —Morelia, 93 a 9 m— · Ciclo A (123) **no**, dos correcciones de archivo · Ciclo B (124)
+**no**, dos correcciones. **Dos de cuatro ciclos producen candidato; los cuatro producen corrección.**
 **Declare el ciclo y su rendimiento: se mide, no se supone.**
+
+### ⚠️⚠️ DECISIÓN DE MÉTODO QUE LLEVA DOS EDICIONES HEREDÁNDOSE — ARGOS 125 LA RESUELVE
+
+**Quince ediciones consecutivas: los seis barridos regionales no han producido un solo hecho rojo.**
+Los dos de ARGOS 124 los trajo **el recall del coordinador**, y los seis barridos **no detectaron
+ninguno**. Es un patrón, no una casualidad, y **con trece días de ventana el recall de una sola
+persona no puede cubrir el país**.
+
+**ORDEN**: cada agente `barrido-regional` incorpora, **además** de la cobertura institucional,
+**recall de sucesos de alto impacto de su región** en la ventana. Se declara en el archivo de fuentes
+como **cambio de método**, con su rendimiento **región por región**: qué trajo el recall regional que
+la cobertura institucional no habría traído. **Si no aporta nada, eso también se escribe y la pregunta
+queda cerrada por fin, en un sentido o en otro.**
 
 **Tres controles que hay que repetir:**
 
 - **Recall genérico por región**: cuando una entidad quede «sin hallazgos», contrastar con consulta
   **sin restricción de dominio** antes de cerrarla.
-- ⚠️⚠️ **RECALL NACIONAL DEL COORDINADOR, ANTES DE CERRAR LOS BARRIDOS. DECIMOCUARTA EDICIÓN
-CONSECUTIVA APORTANDO LOS HECHOS DE MAYOR GRAVEDAD.** En ARGOS 124 trajo **los tres homicidios
-múltiples del documento** —Valle de Chalco, Tetecala y Tehuantepec— y ⚠️ **los seis barridos
-regionales no detectaron ni uno solo**. **No es sustituible por más equipos.**
+- ⚠️⚠️ **RECALL NACIONAL DEL COORDINADOR, ANTES DE CERRAR LOS BARRIDOS. DECIMOQUINTA EDICIÓN
+CONSECUTIVA APORTANDO LOS HECHOS DE MAYOR GRAVEDAD.** En ARGOS 124 trajo **LOS DOS HECHOS ROJOS del
+documento** —Comonfort y Coatzacoalcos— y ⚠️ **los seis barridos regionales no detectaron ninguno**.
+**No es sustituible por más equipos.** ⚠️⚠️ **Pero con trece días de ventana tampoco basta por sí
+solo: de ahí la orden de recall regional del apartado siguiente.**
 - ⚠️ **Arbitraje del coordinador sobre las clasificaciones, EN LAS DOS DIRECCIONES.** En ARGOS 124
   se ejerció **al alza** (sierra de Sinaloa, de 🟡 a 🔴, porque quién inició **sí** estaba determinado)
   y **a la baja** (Quechultenango **se mantuvo 🟡** pese a la tentación de subirlo, porque **ninguna
@@ -267,7 +373,8 @@ páginas, nunca se comprime una tarjeta.**
 #    ⚠️ CONSTRUIR POR PARTES EN UN DIRECTORIO DE TRABAJO Y ENSAMBLAR FUNCIONA BIEN Y ES REPETIBLE.
 
 # 2. Móvil: NO se escribe, se genera.
-python3 tools/gen-movil.py 123 <FECHA> 122 2026-09-24 <HORA>
+python3 tools/gen-movil.py 125 <FECHA> 124 2026-09-24 <HORA>
+#    (argumentos: NUM · FECHA · NUM_ANT · FECHA_ANT · HORA real CDMX)
 
 # 3. Texto: NO se escribe, se genera. Deriva el turno del corte del pie del cartelón.
 python3 tools/gen-texto.py reports/argos-<FECHA>.html reports/argos-<FECHA>.txt
@@ -285,7 +392,15 @@ y Guanajuato son «Occidente»**; **Zacatecas y San Luis Potosí son «Noreste»
 ⚠️ **CADA ARG-ID DE `EVENTOS` Y DE `EVENTOS_ARM` DEBE TENER UN ANCLA `id=` EN EL DOCUMENTO**, y también
 los `-REC-` y `-SEN-` citados.
 
-**ARGOS 124 dejó el validador escrito y funcionando.** Comprueba con `node:vm` sobre el `<script>`:
+⚠️⚠️ **NOVEDAD: EL VALIDADOR YA ESTÁ EN EL REPOSITORIO, en `tools/validar.js`. NO LO REESCRIBA.**
+Hasta ARGOS 124 vivía en el directorio de trabajo de la sesión y **cada edición nueva lo rehacía desde
+cero**, perdiendo comprobaciones ganadas una por una. **Recibe la ventana por argumento**:
+
+```bash
+node tools/validar.js reports/argos-2026-10-07.html 2026-09-24 2026-10-07
+```
+
+Comprueba con `node:vm` sobre el `<script>`:
 **32 entidades en `MEXICO_PATHS`**, **cada `estado:` existe**, **cada `region:` coincide con
 `STATE_REGION`**, **ninguna fecha cae fuera de la ventana**, **ningún ARG-ID duplicado**, **cada ARG-ID
 resuelve a un ancla**, **cada enlace `href="#ARG-…"` resuelve**, **el semáforo derivado coincide con la
@@ -296,6 +411,9 @@ apartados, «HECHO» y «TRAZABILIDAD»**, **no existe «Corroboración» ni «E
 páginas**.
 ⚠️ **Las `const` NO se exponen como propiedades del contexto**: hay que devolverlas con una expresión
 final, `vm.runInContext(code + '\n;({EVENTOS,EVENTOS_ARM,MEXICO_PATHS,STATE_REGION,CORTE_FECHA})', ctx)`.
+⚠️ **Y desde ARGOS 124 comprueba dos cosas más**: que **todo `color` tenga entrada en `SEVERITY_COLOR`
+y `SEVERITY_LABEL`** —`rec` no la tenía y los estados se pintaban `fill="undefined"` en silencio— y que
+**mapa y radar del corte usen `EVENTOS_CORTE`**, no `EVENTOS`.
 
 ⚠️ **RECALCULE EL TOTAL NACIONAL DESDE LAS FILAS INTEGRADAS**, y **vuelva a recalcularlo DESPUÉS de las
 correcciones de los controles**. **En ARGOS 124 los controles cambiaron seis totales de golpe.**
@@ -314,9 +432,13 @@ cero** —se renombra a `tabla-scroll`— · **una tabla de más de cuatro colum
 | `procedencia-cifras` | Que una cifra sin fragmento citable llegue al cartelón, **que una cifra preliminar superada se publique como definitiva**, y **que un agregado cierre en silencio una contradicción declarada** |
 | `barrido-regional` ×6 | Que se declare `SIN ACTUALIZACIÓN` sin haber barrido |
 
-⚠️ **ARGOS 121 y ARGOS 124 los ejecutaron y los dos devolvieron `CORREGIR ANTES DE PUBLICAR` con
-hallazgos reales las dos veces. NO ROMPA LA RACHA.**
-⚠️ **En ARGOS 124 cambiaron SEIS totales nacionales y reclasificaron un hecho.**
+⚠️⚠️ **ARGOS 121, 122, 123 y 124 los ejecutaron y LOS OCHO PASES DEVOLVIERON `CORREGIR ANTES DE
+PUBLICAR`, con hallazgos reales las ocho veces. NO ROMPA LA RACHA.**
+⚠️ **En ARGOS 123 revirtieron el arbitraje central del coordinador; en ARGOS 124 cambiaron SEIS totales
+nacionales, reclasificaron un hecho y encontraron un defecto de herramienta que contradecía al propio
+cartelón.**
+⚠️⚠️ **Y con trece días de ventana, el riesgo de duplicación contra el archivo es el más alto de la
+serie: `editor-duplicidad` es más necesario aquí que en ninguna edición anterior.**
 
 ⚠️ **Lance `editor-duplicidad` DESPUÉS de generar la móvil**, para que pueda auditar la paridad.
 
@@ -324,6 +446,17 @@ hallazgos reales las dos veces. NO ROMPA LA RACHA.**
 sobre los controles y sobre sus propias instrucciones. ⚠️ **En ARGOS 124 el coordinador verificó por su
 cuenta el hallazgo de Puerto Peñasco y lo encontró MAYOR de lo que el control apuntaba.**
 **Un control acierta en la dirección; el coordinador fija la magnitud.**
+
+⚠️⚠️ **PERO EN ARGOS 123 EL COORDINADOR PERDIÓ EL ARBITRAJE CENTRAL, Y ESO TAMBIÉN ES EJERCERLO**:
+defendió integrar siete renglones de un boletín **citando el precedente que le favorecía y sin buscar
+el que le contradecía** —ARGOS 121 frente al boletín del 14-16-sep, y `ARG-122-REC-002`—.
+**`editor-duplicidad` los encontró, eran ciertos y el arbitraje se revirtió entero.**
+**BUSQUE EL PRECEDENTE QUE LE CONTRADICE, NO SOLO EL QUE LE RESPALDA. Cuando varios barridos coinciden
+contra el criterio del coordinador, eso es dato. Un arbitraje que no puede perderse no es arbitraje.**
+
+⚠️ **Y EL `grep` POR TOPÓNIMO SOBRE `reports/indice-arg-id.md` ES DEL COORDINADOR Y SE HACE
+INMEDIATAMENTE ANTES DE FICHAR**: en ARGOS 123 y 124 detuvo sendas duplicaciones —Iztapalapa y
+Tempoal— que los barridos traían como hechos nuevos.
 
 ---
 
@@ -335,5 +468,8 @@ cuenta el hallazgo de Puerto Peñasco y lo encontró MAYOR de lo que el control 
 2. Añadir los ARG-ID nuevos a `reports/indice-arg-id.md` —**incluidos los `-FE-` y los `-REC-`**—.
 3. Escribir `reports/argos-<FECHA>-fuentes.md` con el registro del barrido, el ciclo aplicado, los
    arbitrajes en las dos direcciones, los hallazgos de los controles y las limitaciones de herramienta.
-4. **Escribir `reports/_arranque-ARGOS-124.md`** y borrar este archivo.
+4. **Escribir `reports/_arranque-ARGOS-126.md` y `reports/_ordenes-ARGOS-126.txt`** y borrar este
+   archivo y su orden. ⚠️ **No los herede por inercia: ARGOS 125 reescribió los de la 125 porque
+   declaraban una ventana corta que no existió.** **Una orden con premisas falsas es peor que no
+   tenerla.**
 5. **Empujar a la rama designada** y **mergear a `main`**, verificando que quedó.

@@ -1524,7 +1524,7 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 # ARGOS 124 — lo que esta edición cierra, abre y traspasa
 
 **Corte 2026-09-24** · Ventana **22-sep 08:22 → 24-sep 06:41 CDMX** (**46 h 19 min**) ·
-**15 hechos propios · 3 recuperaciones · densidad 0,32 · 4 muertos en ventana**.
+**14 hechos propios · 4 recuperaciones · densidad 0,30 · 4 muertos en ventana**.
 
 ## Cerrados por ARGOS 124
 
