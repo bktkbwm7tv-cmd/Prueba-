@@ -37,6 +37,8 @@ if(R){
   const OPEN=process.argv[3], CLOSE=process.argv[4];
   if(!OPEN||!CLOSE){ console.log('USO: node validar.js <archivo> <AAAA-MM-DD apertura> <AAAA-MM-DD cierre>'); process.exit(2); }
   for(const e of E){ if(e.color!=='rec' && e.fecha>CLOSE) err.push(e.id+': fecha '+e.fecha+' fuera de ventana'); }
+  // NUEVO (ARGOS 125): un hecho propio tampoco puede ser anterior a la apertura, y una recuperación no puede caer dentro de la ventana
+  for(const e of E){ if(e.color!=='rec' && e.fecha<OPEN) err.push(e.id+': fecha '+e.fecha+' anterior a la apertura '+OPEN+' — es -REC-'); if(e.color==='rec' && e.fecha>OPEN) err.push(e.id+': recuperación con fecha '+e.fecha+' posterior a la apertura'); }
   // semaforo
   const c={rojo:0,amarillo:0,verde:0,rec:0}; E.forEach(e=>c[e.color]++);
   const port=html.match(/🔴 ROJO — ALTO IMPACTO<\/span><div class="val">(\d+)/);

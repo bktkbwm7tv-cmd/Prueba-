@@ -562,7 +562,8 @@ TOTAL = len(TITULOS)
 # añadía una página de crimen organizado, que es justo lo que este archivo evita.
 NAV_ABREV = {
     f"CRIMEN ORGANIZADO ({r})": f"C. ORGANIZADO {r}"
-    for r in ("I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X")
+    for r in ("I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",
+              "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX")
 }
 NAV_ABREV.update({
     "ARMAMENTO Y EXPLOSIVOS": "ARMAMENTO",
