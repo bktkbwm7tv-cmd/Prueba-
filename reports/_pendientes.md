@@ -8,13 +8,13 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 121 (corte 2026-09-17).
+**Última actualización**: ARGOS 125 (corte 2026-10-07).
 
 ---
 
 ## Arranque de la edición siguiente
 
-**`reports/_arranque-ARGOS-121.md`** contiene la orden de arranque para una sesión nueva: verificación
+**`reports/_arranque-ARGOS-126.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-126.txt`) contiene la orden de arranque para una sesión nueva: verificación
 de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y comandos de construcción.
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
@@ -1503,8 +1503,10 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
    encontró y el arbitraje se revirtió entero.** **Cuando tres de seis barridos coinciden contra el
    criterio del coordinador, eso es dato.**
 2. ⚠️ **UNA FICHA QUE NO PUEDE FECHAR SU HECHO NO PUEDE CONTARLO.** «Tramo 18/20» no es una fecha:
-   es la confesión de que no se sabe. **Si el emisor no desglosa por día, ningún renglón entra en los
-   totales de una ventana.**
+   es la confesión de que no se sabe. **Si el emisor no desglosa por día y el tramo NO está íntegro dentro
+   de la ventana, ningún renglón entra en sus totales.** ⚠️ *Reescrita en ARGOS 125 (`ARG-125-FE-002`)*:
+   un tramo que cae entero dentro de la ventana —25-27 sep y 2-4 oct en ARGOS 125— sí se integra, con
+   «tramo» en el campo Hecho y sin inferir el día.
 3. ⚠️ **EL CARTELÓN NO PUEDE CONTRADECIR A SU PROPIO ARCHIVO DE FUENTES.** Las tarjetas comparaban
    contra cifras de ARGOS 122 **que esta misma edición había corregido**. **Toda comparación con la
    edición anterior debe releer las fes de erratas propias antes de publicarse** — o retirarse.
@@ -1580,3 +1582,63 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
    también**. **Un generador que no deriva del cartelón, diverge de él.**
 9. ⚠️ **NO «CORRIJA» EL `table-wrap` DE LA MÓVIL**: el generador lo **renombra a `tabla-scroll` por
    diseño**, y está documentado. `editor-duplicidad` lo tomó por defecto y **no lo es**.
+
+
+---
+
+# ARGOS 125 — corte 2026-10-07
+
+**Ventana 24-sep 06:41 → 7-oct 15:15 CDMX (320 h 34 min, trece días sin publicar)** · **51 hechos propios (16 🔴 · 3 🟡 · 32 🟢) ·
+1 recuperación · densidad 0,16 · 30 muertos y cuerpos hallados en hechos rojos · 125 armas · 67,692 cartuchos · 85 AEI · 0 sentencias.**
+
+## Cerrados por ARGOS 125
+
+| Pendiente | Disposición |
+|---|---|
+| **GUANAJUATO · Comonfort** | **Dos detenidos anunciados el 24-sep** (`ARG-125-050`). Ninguna autoridad confirmó a los dos civiles abatidos ni a un cuarto policía: **se mantienen los tres de `ARG-124-001`**. Abierto solo el vínculo de los detenidos con la emboscada (ver abajo) |
+| **VERACRUZ · Coatzacoalcos — Pamuce Yep** | **Cateo de la FGE** (`ARG-125-049`) y **«La Princess» + dos detenidos el 1-oct; cinco en prisión preventiva al 5-oct** (`ARG-125-021`). Abierto el proceso (ver abajo) |
+| ⚠️⚠️ **GUANAJUATO · corredor Laja-Bajío** | **CERRADO POR AGOTAMIENTO DECLARADO** tras tres ediciones y once búsquedas: no existe documento de la FGE. **No se hereda una cuarta vez.** Si apareciera, `-REC-` de la ventana de ARGOS 123 |
+| **Patrón de dirigentes políticos** | **Buscado expresamente en trece días: ningún cuarto dirigente asesinado localizado en ventana.** Se mantiene la vigilancia, no la búsqueda dedicada |
+| **COAHUILA y ZACATECAS** | **Saldada la prioridad en alto impacto y armamento**: dos consultas `extended` dedicadas a cada una; Coahuila aporta `ARG-125-029`. **Sentencias de ambas siguen NO REVISADAS** |
+| **Cambio de método: recall regional** | **Resuelto a favor**: con búsqueda `extended`, los barridos regionales aportaron hechos rojos propios por primera vez en dieciséis ediciones (El Balcón, Valle de Santiago-Yuriria, La Resurrección). Se mantiene como parte fija del barrido |
+| **Cancún 80 años · Coacalco «El Maca» · Morelia 93 a 9 m · Norma «N»** | **Fechados FUERA de ventana** (21, 14, 17 y 19-sep). Siguen sin boletín oficial; **no volver a buscarlos sin pista nueva** |
+| **SONORA · Puerto Peñasco** | Sin cifra exacta. **Dato nuevo**: varias fuentes aluden a una Browning M2 cal. .50, solo por resumen |
+
+## Abiertos que ARGOS 126 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️⚠️ **GUERRERO · Ajuchitlán, El Balcón** (`ARG-125-051`) | **Siete pobladores desaparecidos**, liberación condicionada a la cesión de tierras, amparo 412/2026, marcha a Palacio Nacional anunciada el 7-oct. ¿Localizados? ¿Detenidos? ¿Cifra inicial 8 o 13? **¿Hora del 24-sep anterior a las 06:41?** — si lo fuera, pasa a `-REC-` |
+| ⚠️⚠️ **NAYARIT · Xalisco, La Curva** (`ARG-125-003`) | **Cifra de víctimas e identificaciones genéticas.** Comunicado de la FGE de Nayarit |
+| ⚠️ **JALISCO · Guadalajara, Clemente Orozco** (`ARG-125-002`) | Comunicado de la Fiscalía o de la Comisión de Búsqueda; búsqueda con georradar en curso |
+| ⚠️ **SINALOA · AEI del sur** | Tipología de los 42 de El Rosario, los 23 de Escuinapa-Mazatlán y los 14 de Mazatlán; **¿los 15 drones son de ataque?** La cifra de «60 artefactos para drones» de Mazatlán, sin fuente localizable |
+| **CHIAPAS · Suchiapa** (`ARG-125-014`) | Vinculaciones; **15 o 19 policías**; móvil (entregar detenidos a grupos o cobrar); relación con la fuga del 25-sep |
+| **GUANAJUATO · Comonfort** | ¿La FGE vinculó a los dos detenidos por la emboscada? ¿Armamento de los agresores? |
+| **VERACRUZ · Coatzacoalcos** | Proceso de los cinco; ¿los tres del 1-oct están entre los cinco? Móvil |
+| **SONORA · Hermosillo** (`-001` / `-009`) | Orden de aprehensión por el doble homicidio contra Cristian Rubén «N» |
+| **SINALOA · Culiacán, Parque Alamedas y Corolla abandonado** | **Fijar el día del hecho**: el primero viene del portal de la SSP Sinaloa (1 AK-47, 2 AR-15, 16 cargadores, 555 cartuchos). Si se fija en ventana, se publica como `-REC-` de ARGOS 125 |
+| **Candidatos a `-REC-` de la ventana de ARGOS 123** | Valle de Chalco–Ixtapaluca 3 muertos (21-sep) — cotejar con `ARG-123-001`; León, pozo con 5 cuerpos en Arroyo Hondo (21-sep) |
+| **Violencia política de agosto sin indexar** | Regidor de Texistepec, Veracruz; dirigente de MC en Tlapehuala, Guerrero (23-ago). **Grep en el índice pendiente** |
+| **Sentencias candidatas** | **Ciudad Juárez, 58 a 4 m** a tres por secuestro (26-sep) · **Lagos de Moreno, más de 11 años** por desaparición (26-sep) · **José Manuel E. C., 37 a 6 m** (sin fecha) · Nuevo Laredo, cuatro «N» (sin día) · Feliciano «N», Las Choapas, 51 a 3 m (sin fecha). **Todas: falta boletín del dominio oficial** |
+| **Renglones federales en `POSIBLE DUPLICIDAD`** | SLP 5-oct (1 larga, 1 corta, 55 cartuchos) frente a `ARG-125-015`; Huajicori-Cerro Bola (6 largas, 37 cargadores, 919 cartuchos, 5 AEI) frente a `ARG-125-017` |
+| **Michoacán · camión con compartimento** (`ARG-125-041`) | Municipio contradicho: **Contepec o Morelia** |
+| **Casos viejos sin novedad** | Quechultenango (fecha 17 o 18-sep) · Ocosingo (Vida Mejor / Patria Nueva) · Tepito (Odet Rosa / Odette Rosas) · Tabasco 14-sep (4 o 6) · Los Aldamas · FGE Veracruz (agregados) |
+
+## Deuda de método
+
+1. ⚠️⚠️⚠️ **TODA BÚSQUEDA EN MODO `extended`.** El modo `standard` tuvo el índice congelado hacia el 19-sep-2026: **doce equipos y
+   unas 210 búsquedas no fijaron un solo hecho de la ventana.** Un `SIN RESULTADO INDEXADO` obtenido en `standard` **es
+   `NO REVISADA`**. Comprobar en cada corte con una consulta de control sobre un hecho conocido de las últimas 48 horas.
+2. ⚠️⚠️ **TOPE DE 200 BÚSQUEDAS POR TURNO, COMPARTIDO ENTRE AGENTES.** Doce agentes con 20-25 búsquedas cada uno lo agotan. **Repartir
+   el presupuesto ANTES de lanzar** y no lanzar una ola entera en el mismo turno si va a superar el tope.
+3. ⚠️ **Las cifras del boletín federal llegan casi siempre por el resumen del buscador**, no por fragmento literal. Pedir el literal
+   para los renglones de mayor peso —una consulta con la cifra entre comillas lo devuelve—; el resto se integra marcado.
+4. **El boletín federal cambió de formato dos veces dentro de la ventana** (diario y agregado de tres días). Triple consulta siempre.
+5. **Radar**: `WINDOW_DAYS` quedó en **14** en el renderizador de ARGOS 125. **Ajustarlo a la duración de cada ventana**; para una de
+   dos días, devolverlo a 10 o derivarlo de la ventana.
+6. **Sentencias: 18 fiscalías NO REVISADAS** en ARGOS 125. **Encabezan el triaje judicial de ARGOS 126 por prioridad sobre el ciclo**:
+   BC, BCS, Son, Sin, Dgo, Coah, NL, Zac, CDMX, Mor, Pue, Tlax, Hgo, Qro, Ver, Tab, Gro, Yuc.
+7. **Alto impacto y armamento NO REVISADOS**: BCS, Hidalgo, Querétaro; Durango y SLP en alto impacto. Encabezan su barrido.
+8. **ARGOS 126 aplica el CICLO A** — Noroeste + Centro —, subordinado a la prioridad de las 18 fiscalías.
+9. `ARG-125-FE-001` (Tecamachalco, efecto sobre ARGOS 124: rojos 2 → 3, muertos 4 → 5) y `ARG-125-FE-002` (regla de agregados
+   reescrita) están en el índice y en el archivo de fuentes; **no van al cartelón**.

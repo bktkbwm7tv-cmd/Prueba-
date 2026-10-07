@@ -596,3 +596,87 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-124-ARM-009` | 124 | 2026-09-22 | ARG-124-ARM-009 — Tapachula (El Lagartero — fracc. San Nicolás), Chiapas: 1 CORTA, 0 largas, 0 sin categoría, cartuchos y cargadores NO REPORTADOS, 0 granadas, 0 AEI, 0 explosivos, 1 DETENIDO. SSP Chiapas con FRIP y GEPF. Ficha: ARG-124-011. Confianza Bajo |
 | `ARG-124-ARM-010` | 124 | 2026-09-22 | ARG-124-ARM-010 — Michoacán, MUNICIPIO NO ESPECIFICADO: 0 cortas, 2 LARGAS, 0 sin categoría, cartuchos y cargadores SIN CIFRA, 0 granadas, 0 AEI, 0 explosivos, 0 DETENIDOS (no publicados). GN, Ejército y Policía Estatal. Ficha: ARG-124-012. Confianza Medio |
 | `ARG-124-ARM-011` | 124 | 2026-09-21 | ARG-124-ARM-011 — Aguascalientes, MUNICIPIO NO ESPECIFICADO: 8 CORTAS, 3 LARGAS, 0 sin categoría, 187,710 CARTUCHOS ÚTILES, cargadores NO PUBLICADOS, 0 granadas, 0 AEI, 0 explosivos, 1 DETENIDO. FGR y SSPC. Camioneta con remolque y un caballo como medio de ocultación. MAYOR VOLUMEN DE MUNICIÓN DEL ARCHIVO. NO INTEGRA A LOS TOTALES DEL CORTE: ventana de origen ARGOS 123. Ficha: ARG-124-REC-001. Confianza Medio |
+| `ARG-125-001` | 125 | 2026-10-06 | ARG-125-001 — 3 detenidos, uno señalado en el doble homicidio de Fuente de Piedra; 1 AK-47 — Sonora, Hermosillo (🟢 VERDE) |
+| `ARG-125-002` | 125 | 2026-10-06 | ARG-125-002 — Fosa clandestina con 4 cuerpos localizada por un colectivo; búsqueda en curso — Jalisco, Guadalajara (🔴 ROJO) |
+| `ARG-125-003` | 125 | 2026-10-06 | ARG-125-003 — Presunto centro de exterminio y fosa: restos calcinados, tambos para disolver cuerpos. Sin cifra de víctimas — Nayarit, Xalisco (🔴 ROJO) |
+| `ARG-125-004` | 125 | 2026-10-06 | ARG-125-004 — Ejecutado un exelemento de la Guardia Nacional en un autolavado — Chihuahua, Cuauhtémoc (🟡 AMARILLO) |
+| `ARG-125-005` | 125 | 2026-10-06 | ARG-125-005 — 23 AEI: 16 asegurados en Escuinapa y 7 destruidos en Mazatlán — Sinaloa, Escuinapa y Mazatlán (🟢 VERDE) |
+| `ARG-125-006` | 125 | 2026-10-06 | ARG-125-006 — 819 cartuchos, 4 cargadores y 1,410 kg de químicos en un inmueble — Sinaloa, Culiacán (Carboneras) (🟢 VERDE) |
+| `ARG-125-007` | 125 | 2026-10-06 | ARG-125-007 — 8 armas, 2 ametralladoras — Jalisco, Ixtlahuacán de los Membrillos (🟢 VERDE) |
+| `ARG-125-008` | 125 | 2026-10-06 | ARG-125-008 — 1 detenido, 4 largas, 1 corta, 21 cargadores y 3 inhibidores — Veracruz, Omealca (🟢 VERDE) |
+| `ARG-125-009` | 125 | 2026-10-05 | ARG-125-009 — Ataque en punto de narcomenudeo: 2 muertos, uno de 13 años, y 1 herido — Sonora, Hermosillo (🔴 ROJO) |
+| `ARG-125-010` | 125 | 2026-10-05 | ARG-125-010 — 42 explosivos y 15 drones, con 15 rollos de fibra óptica, en un campamento — Sinaloa, El Rosario (🟢 VERDE) |
+| `ARG-125-011` | 125 | 2026-10-05 | ARG-125-011 — Detenido un presunto líder regional, identificado por los medios como «El Tanque» (CJNG) — Jalisco, Zapopan (🟢 VERDE) |
+| `ARG-125-012` | 125 | 2026-10-03 | ARG-125-012 — Emboscada a una patrulla rumbo al aeropuerto: 2 policías municipales heridos — Sinaloa, Mazatlán (🔴 ROJO) |
+| `ARG-125-013` | 125 | 2026-10-03 | ARG-125-013 — Restos desmembrados de 2 personas en bolsas, con cartulina — Guanajuato, Valle de Santiago (salida a Yuriria) (🔴 ROJO) |
+| `ARG-125-014` | 125 | 2026-10-03 | ARG-125-014 — Operación Enjambre: 21 detenidos, entre ellos el alcalde y policías en activo — Chiapas, Suchiapa (🟢 VERDE) |
+| `ARG-125-015` | 125 | 2026-10-02 | ARG-125-015 — 9 detenidos de una banda de robo a transportistas; armas sin cifra — San Luis Potosí, no especificado (🟢 VERDE) |
+| `ARG-125-016` | 125 | 2026-10-02 | ARG-125-016 — 37 armas largas, 86 cargadores y 55,960 cartuchos en 2 inmuebles; 1 detenido — Chihuahua, no especificado (🟢 VERDE) |
+| `ARG-125-017` | 125 | 2026-10-02 | ARG-125-017 — 1 detenido, 3 armas, 50 cargadores, 2,183 cartuchos y 5 AEI — Nayarit, Huajicori (🟢 VERDE) |
+| `ARG-125-018` | 125 | 2026-10-02 | ARG-125-018 — 9 armas y 9 cargadores — Oaxaca, Juchitán de Zaragoza (🟢 VERDE) |
+| `ARG-125-019` | 125 | 2026-10-02 | ARG-125-019 — Camioneta blindada, 1 arma, 16 cargadores y 475 cartuchos — Sinaloa, Mazatlán (🟢 VERDE) |
+| `ARG-125-020` | 125 | 2026-10-02 | ARG-125-020 — 2 hombres asesinados en su auto en el centro, con remate — Guanajuato, Valle de Santiago (🔴 ROJO) |
+| `ARG-125-021` | 125 | 2026-10-01 | ARG-125-021 — 3 detenidos el 1-oct y 5 en prisión preventiva al 5-oct por el asesinato del coordinador del partido PAZ — Veracruz, Coatzacoalcos (🟢 VERDE) |
+| `ARG-125-022` | 125 | 2026-10-01 | ARG-125-022 — 5 cuerpos —3 hombres y 2 mujeres— maniatados y con disparos — Morelos, Tlalnepantla (🔴 ROJO) |
+| `ARG-125-023` | 125 | 2026-10-01 | ARG-125-023 — 2 hombres maniatados con cartulina de amenaza — Morelos, Yecapixtla (🔴 ROJO) |
+| `ARG-125-024` | 125 | 2026-10-01 | ARG-125-024 — 2 ametralladoras, 1 fusil, 1 lanzagranadas y 11 granadas; 1 detenido — Nayarit, Santa María del Oro (🟢 VERDE) |
+| `ARG-125-025` | 125 | 2026-10-01 | ARG-125-025 — 900 cartuchos y 4 granadas en una maleta, en un autobús de pasajeros — Sinaloa, Mazatlán (🟢 VERDE) |
+| `ARG-125-026` | 125 | 2026-10-01 | ARG-125-026 — 1,320 kg de metanfetamina en un vehículo de redilas — Sinaloa, Culiacán (🟢 VERDE) |
+| `ARG-125-027` | 125 | 2026-09-30 | ARG-125-027 — Fosa en un inmueble: 1 cuerpo, identidad no confirmada — Puebla, Puebla (La Resurrección) (🔴 ROJO) |
+| `ARG-125-028` | 125 | 2026-09-30 | ARG-125-028 — Baleado y muerto un expolicía federal en el centro — Tlaxcala, Tlaxcala (🟡 AMARILLO) |
+| `ARG-125-029` | 125 | 2026-09-30 | ARG-125-029 — 4 armas largas, 4 cargadores y 63 cartuchos — Coahuila, Guerrero (ejido San Vicente) (🟢 VERDE) |
+| `ARG-125-030` | 125 | 2026-09-30 | ARG-125-030 — 3 detenidos, 1 corta, 16 cartuchos y 4 kg de cocaína — Chihuahua, Ciudad Juárez (🟢 VERDE) |
+| `ARG-125-031` | 125 | 2026-09-30 | ARG-125-031 — 6 armas, 7 cargadores, 210 cartuchos y 1 persona liberada — Sinaloa, Culiacán (🟢 VERDE) |
+| `ARG-125-032` | 125 | 2026-09-29 | ARG-125-032 — 1 detenida: 5 largas, 2 cortas, 14 cargadores y 5,093 cartuchos — Nuevo León, García (🟢 VERDE) |
+| `ARG-125-033` | 125 | 2026-09-29 | ARG-125-033 — 3 detenidos, uno menor; armas sin cifra — Baja California, Tecate (🟢 VERDE) |
+| `ARG-125-034` | 125 | 2026-09-29 | ARG-125-034 — 5 detenidos con armas y chalecos; sin cifra — Sinaloa, no especificado (🟢 VERDE) |
+| `ARG-125-035` | 125 | 2026-09-28 | ARG-125-035 — Agresión armada: 3 muertos y un menor de 15 años herido — Michoacán, Uruapan (🔴 ROJO) |
+| `ARG-125-036` | 125 | 2026-09-28 | ARG-125-036 — Fosa clandestina con 1 cadáver, localizada por Madres Buscadoras — Michoacán, Uruapan (Cutzato) (🔴 ROJO) |
+| `ARG-125-037` | 125 | 2026-09-28 | ARG-125-037 — 6 detenidos con armas largas; sin cifra — Sinaloa, no especificado (🟢 VERDE) |
+| `ARG-125-038` | 125 | 2026-09-27 | ARG-125-038 — Ataque en un convivio: 2 muertos y 1 herido grave — Sinaloa, Culiacán (🔴 ROJO) |
+| `ARG-125-039` | 125 | 2026-09-26 | ARG-125-039 — Agresores de una extorsión disparan contra agentes que los seguían: 1 abatido, 1 detenido — Michoacán, Morelia (🟡 AMARILLO) |
+| `ARG-125-040` | 125 | 2026-09-26 | ARG-125-040 — Ataque contra un expendio de cerveza: 2 muertos — Guanajuato, San Luis de la Paz (🔴 ROJO) |
+| `ARG-125-041` | 125 | 2026-09-25 | ARG-125-041 — Camión con compartimento oculto: 7 largas, 2 cortas, 14 cargadores y 1 artefacto tipo mortero — Michoacán, no especificado (🟢 VERDE) |
+| `ARG-125-042` | 125 | 2026-09-25 | ARG-125-042 — 5 detenidos, 5 armas y 235 cartuchos — Oaxaca, no especificado (🟢 VERDE) |
+| `ARG-125-043` | 125 | 2026-09-25 | ARG-125-043 — 4 detenidos y 1 arma corta — Chihuahua, no especificado (🟢 VERDE) |
+| `ARG-125-044` | 125 | 2026-09-25 | ARG-125-044 — Asesinado en su casa un policía municipal en su día de descanso; cuarto agente en tres días — Guanajuato, Salamanca (🔴 ROJO) |
+| `ARG-125-045` | 125 | 2026-09-25 | ARG-125-045 — Grupo armado irrumpe en una vivienda: 3 hombres muertos — Sinaloa, Culiacán (🔴 ROJO) |
+| `ARG-125-046` | 125 | 2026-09-24 | ARG-125-046 — 7 operativos: 8 detenidos, 19 armas y 14 explosivos artesanales — Sinaloa, Mazatlán (🟢 VERDE) |
+| `ARG-125-047` | 125 | 2026-09-24 | ARG-125-047 — Cateo: 481 cartuchos y 2 contadoras de billetes — Sonora, no verificado (🟢 VERDE) |
+| `ARG-125-048` | 125 | 2026-09-24 | ARG-125-048 — 1 detenido, armas sin cifra y 16 motocicletas — Baja California, Mexicali (🟢 VERDE) |
+| `ARG-125-049` | 125 | 2026-09-24 | ARG-125-049 — Cateo del domicilio del coordinador asesinado: droga, armas sin cifra e inhibidor — Veracruz, Coatzacoalcos (🟢 VERDE) |
+| `ARG-125-050` | 125 | 2026-09-24 | ARG-125-050 — 2 detenidos tras la emboscada a la FSPE; participación no establecida — Guanajuato, Comonfort (🟢 VERDE) |
+| `ARG-125-051` | 125 | 2026-09-24 | ARG-125-051 — 8 pobladores privados de la libertad (13 según otra versión); 7 siguen desaparecidos — Guerrero, Ajuchitlán del Progreso (🔴 ROJO) |
+| `ARG-125-REC-001` | 125 | 2026-09-23 | ARG-125-REC-001 — Hijo adolescente del alcalde, hallado encobijado; se había pedido rescate — Puebla, Tecamachalco (Nicolás Bravo) (🔴 ROJO en su ventana — RECUPERACIÓN, ventana de origen ARGOS 124) |
+| `ARG-125-ARM-001` | 125 | 2026-10-06 | ARG-125-ARM-001 — Hermosillo, Sonora: 1 largas, 3 detenidos. FGJES. AK-47 Ficha ARG-125-001. Confianza Medio |
+| `ARG-125-ARM-002` | 125 | 2026-10-06 | ARG-125-ARM-002 — Escuinapa y Mazatlán, Sinaloa: 16 AEI. Fuerzas federales. Escuinapa Ficha ARG-125-005. Confianza Medio |
+| `ARG-125-ARM-003` | 125 | 2026-10-06 | ARG-125-ARM-003 — Escuinapa y Mazatlán, Sinaloa: 7 AEI. Fuerzas federales. Mazatlán, destruidos Ficha ARG-125-005. Confianza Medio |
+| `ARG-125-ARM-004` | 125 | 2026-10-06 | ARG-125-ARM-004 — Culiacán (Carboneras), Sinaloa: 819 cartuchos, 4 cargadores. Fuerzas federales.  Ficha ARG-125-006. Confianza Medio |
+| `ARG-125-ARM-005` | 125 | 2026-10-06 | ARG-125-ARM-005 — Ixtlahuacán de los Membrillos, Jalisco: 2 largas, 6 sin categoría. Fuerzas federales. 2 ametralladoras Ficha ARG-125-007. Confianza Medio |
+| `ARG-125-ARM-006` | 125 | 2026-10-06 | ARG-125-ARM-006 — Omealca, Veracruz: 1 cortas, 4 largas, 21 cargadores, 1 detenidos. Marina + Policía Estatal. 3 inhibidores aparte Ficha ARG-125-008. Confianza Medio |
+| `ARG-125-ARM-007` | 125 | 2026-10-05 | ARG-125-ARM-007 — El Rosario, Sinaloa: 3 largas, 155 cartuchos, 6 cargadores, 42 AEI. Ejército. 15 drones, armados NO confirmado Ficha ARG-125-010. Confianza Medio |
+| `ARG-125-ARM-008` | 125 | 2026-10-05 | ARG-125-ARM-008 — Zapopan, Jalisco: 1 sin categoría, 1 detenidos. Gabinete de Seguridad.  Ficha ARG-125-011. Confianza Medio |
+| `ARG-125-ARM-009` | 125 | 2026-10-02 | ARG-125-ARM-009 — no especificado, San Luis Potosí: 9 detenidos. Gabinete de Seguridad. armas sin cifra Ficha ARG-125-015. Confianza Medio |
+| `ARG-125-ARM-010` | 125 | 2026-10-02 | ARG-125-ARM-010 — no especificado, Chihuahua: 37 largas, 55960 cartuchos, 86 cargadores, 1 detenidos. Defensa + FGR. dos inmuebles Ficha ARG-125-016. Confianza Medio |
+| `ARG-125-ARM-011` | 125 | 2026-10-02 | ARG-125-ARM-011 — Huajicori, Nayarit: 3 sin categoría, 2183 cartuchos, 50 cargadores, 5 AEI, 1 detenidos. Fuerzas federales.  Ficha ARG-125-017. Confianza Medio |
+| `ARG-125-ARM-012` | 125 | 2026-10-02 | ARG-125-ARM-012 — Juchitán de Zaragoza, Oaxaca: 9 sin categoría, 9 cargadores. Fuerzas federales.  Ficha ARG-125-018. Confianza Medio |
+| `ARG-125-ARM-013` | 125 | 2026-10-02 | ARG-125-ARM-013 — Mazatlán, Sinaloa: 1 sin categoría, 475 cartuchos, 16 cargadores. Fuerzas federales. camioneta blindada Ficha ARG-125-019. Confianza Medio |
+| `ARG-125-ARM-014` | 125 | 2026-10-01 | ARG-125-ARM-014 — Santa María del Oro, Nayarit: 3 largas, 1 especial, 1102 cartuchos, 11 granadas, 1 detenidos. GN + Ejército + FGE. 2 ametralladoras + 1 fusil; lanzagranadas 40 mm; cargadores 9 o 6: no se integran Ficha ARG-125-024. Confianza Medio |
+| `ARG-125-ARM-015` | 125 | 2026-10-01 | ARG-125-ARM-015 — Mazatlán, Sinaloa: 900 cartuchos, 4 granadas. FGR + SSPC. autobús de pasajeros Ficha ARG-125-025. Confianza Medio |
+| `ARG-125-ARM-016` | 125 | 2026-09-30 | ARG-125-ARM-016 — Guerrero (ejido San Vicente), Coahuila: 4 largas, 63 cartuchos, 4 cargadores. Fuerzas federales.  Ficha ARG-125-029. Confianza Medio |
+| `ARG-125-ARM-017` | 125 | 2026-09-30 | ARG-125-ARM-017 — Ciudad Juárez, Chihuahua: 1 cortas, 16 cartuchos, 3 detenidos. Fuerzas federales.  Ficha ARG-125-030. Confianza Medio |
+| `ARG-125-ARM-018` | 125 | 2026-09-30 | ARG-125-ARM-018 — Culiacán, Sinaloa: 6 sin categoría, 210 cartuchos, 7 cargadores. Fuerzas federales. 1 persona liberada Ficha ARG-125-031. Confianza Medio |
+| `ARG-125-ARM-019` | 125 | 2026-09-29 | ARG-125-ARM-019 — García, Nuevo León: 2 cortas, 5 largas, 5093 cartuchos, 14 cargadores, 1 detenidos. FGR. 5 miras telescópicas Ficha ARG-125-032. Confianza Medio |
+| `ARG-125-ARM-020` | 125 | 2026-09-29 | ARG-125-ARM-020 — Tecate, Baja California: 3 detenidos. Fuerzas federales. armas sin cifra Ficha ARG-125-033. Confianza Medio |
+| `ARG-125-ARM-021` | 125 | 2026-09-29 | ARG-125-ARM-021 — no especificado, Sinaloa: 5 detenidos. Fuerzas federales. armas sin cifra Ficha ARG-125-034. Confianza Medio |
+| `ARG-125-ARM-022` | 125 | 2026-09-28 | ARG-125-ARM-022 — no especificado, Sinaloa: 6 detenidos. Fuerzas federales. armas sin cifra Ficha ARG-125-037. Confianza Bajo |
+| `ARG-125-ARM-023` | 125 | 2026-09-26 | ARG-125-ARM-023 — Morelia, Michoacán: 1 cortas, 1 detenidos. SSP Michoacán. derivado de enfrentamiento Ficha ARG-125-039. Confianza Medio |
+| `ARG-125-ARM-024` | 125 | 2026-09-25 | ARG-125-ARM-024 — no especificado, Michoacán: 2 cortas, 7 largas, 14 cargadores, 1 AEI, 1 detenidos. Fuerzas federales. tipo mortero; compartimento oculto Ficha ARG-125-041. Confianza Medio |
+| `ARG-125-ARM-025` | 125 | 2026-09-25 | ARG-125-ARM-025 — no especificado, Oaxaca: 5 sin categoría, 235 cartuchos, 5 detenidos. Fuerzas federales.  Ficha ARG-125-042. Confianza Medio |
+| `ARG-125-ARM-026` | 125 | 2026-09-25 | ARG-125-ARM-026 — no especificado, Chihuahua: 1 cortas, 4 detenidos. Fuerzas federales.  Ficha ARG-125-043. Confianza Medio |
+| `ARG-125-ARM-027` | 125 | 2026-09-24 | ARG-125-ARM-027 — Mazatlán, Sinaloa: 19 sin categoría, 14 AEI, 8 detenidos. SSPC + Defensa + Marina + GN. «más de 2 mil» cartuchos: no cifra Ficha ARG-125-046. Confianza Medio |
+| `ARG-125-ARM-028` | 125 | 2026-09-24 | ARG-125-ARM-028 — no verificado, Sonora: 481 cartuchos. Fuerzas federales. municipio no verificado Ficha ARG-125-047. Confianza Bajo |
+| `ARG-125-ARM-029` | 125 | 2026-09-24 | ARG-125-ARM-029 — Mexicali, Baja California: 1 detenidos. Fuerzas federales. armas sin cifra Ficha ARG-125-048. Confianza Medio |
+| `ARG-125-ARM-030` | 125 | 2026-09-24 | ARG-125-ARM-030 — Coatzacoalcos, Veracruz: EVENTO CUALITATIVO — armamento sin cifra. FGE Veracruz. armas y cartuchos sin cifra Ficha ARG-125-049. Confianza Medio |
+| `ARG-125-FE-001` | 125 | 2026-09-23 | ARG-125-FE-001 — FE DE ERRATAS sobre ARGOS 124: su ventana contuvo un hecho rojo no publicado, el hijo del alcalde de Tecamachalco hallado el 23-sep (ARG-125-REC-001). Efecto sobre ARGOS 124: rojos 2 → 3, muertos en ventana 4 → 5 |
+| `ARG-125-FE-002` | 125 | 2026-10-07 | ARG-125-FE-002 — CORRECCIÓN DE REGLA (ARGOS 123): «si el emisor no desglosa por día, ningún renglón entra en los totales» se reescribe como «…y el tramo no está íntegro dentro de la ventana». Los agregados federales 25-27 sep y 2-4 oct de ARGOS 125 se integran con «tramo» en el campo Hecho |
