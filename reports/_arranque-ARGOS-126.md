@@ -76,9 +76,8 @@ Juárez 58 a 4 m (26-sep) · Lagos de Moreno más de 11 años (26-sep) · José 
 
 ## BLOQUE 5 — BARRIDO Y ROTACIÓN
 
-- ⚠️⚠️ **PRIORIDAD SOBRE EL CICLO: las 18 fiscalías NO REVISADAS en sentencias** en ARGOS 125 encabezan el triaje judicial: BC, BCS,
-  Son, Sin, Dgo, Coah, NL, Zac, CDMX, Mor, Pue, Tlax, Hgo, Qro, Ver, Tab, Gro, Yuc. **Y en alto impacto/armamento**: BCS, Hidalgo,
-  Querétaro; Durango y SLP en alto impacto.
+- ✅ **Las 18 fiscalías que ARGOS 125 dejó sin revisar se barrieron en el alcance del 7-oct** (32 de 32; una sentencia integrable,
+  Querétaro). **Prioridad que queda**: alto impacto/armamento en BCS, Hidalgo y Querétaro; Durango y SLP en alto impacto.
 - **CICLO A** (Noroeste + Centro) se reanuda después.
 - **El recall regional queda fijo dentro de cada barrido** (resuelto en ARGOS 125).
 - **Boletín federal**: triple consulta; en 125 alternó **diario y agregado de tres días dos veces**. Un agregado cuyo tramo cae

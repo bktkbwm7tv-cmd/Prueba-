@@ -1589,7 +1589,7 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 # ARGOS 125 — corte 2026-10-07
 
 **Ventana 24-sep 06:41 → 7-oct 15:15 CDMX (320 h 34 min, trece días sin publicar)** · **51 hechos propios (16 🔴 · 3 🟡 · 32 🟢) ·
-1 recuperación · densidad 0,16 · 30 muertos y cuerpos hallados en hechos rojos · 125 armas · 67,692 cartuchos · 85 AEI · 0 sentencias.**
+1 recuperación · densidad 0,16 · 30 muertos y cuerpos hallados en hechos rojos · 125 armas · 67,692 cartuchos · 85 AEI · 1 sentencia integrable (alcance del 7-oct: Querétaro, `ARG-125-SEN-001`).**
 
 ## Cerrados por ARGOS 125
 
@@ -1619,7 +1619,8 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 | **SINALOA · Culiacán, Parque Alamedas y Corolla abandonado** | **Fijar el día del hecho**: el primero viene del portal de la SSP Sinaloa (1 AK-47, 2 AR-15, 16 cargadores, 555 cartuchos). Si se fija en ventana, se publica como `-REC-` de ARGOS 125 |
 | **Candidatos a `-REC-` de la ventana de ARGOS 123** | Valle de Chalco–Ixtapaluca 3 muertos (21-sep) — cotejar con `ARG-123-001`; León, pozo con 5 cuerpos en Arroyo Hondo (21-sep) |
 | **Violencia política de agosto sin indexar** | Regidor de Texistepec, Veracruz; dirigente de MC en Tlapehuala, Guerrero (23-ago). **Grep en el índice pendiente** |
-| **Sentencias candidatas** | **Ciudad Juárez, 58 a 4 m** a tres por secuestro (26-sep) · **Lagos de Moreno, más de 11 años** por desaparición (26-sep) · **José Manuel E. C., 37 a 6 m** (sin fecha) · Nuevo Laredo, cuatro «N» (sin día) · Feliciano «N», Las Choapas, 51 a 3 m (sin fecha). **Todas: falta boletín del dominio oficial** |
+| **Sentencias candidatas del alcance del 7-oct** | **San Andrés Tuxtla, más de 58 años** (2-oct) · **Nuevo León, cuatro casos** (MVS, 1-6 oct) · **Nogales, 50 años** (5-oct) · **Hidalgo, 50 años ×2** (24-sep, ¿alzada?) · **Tijuana FGR, 29 años ×2** (6-oct) · **Puebla, 36 a 6 m y 32 a 3 m** (6-oct) · Puebla 13 años: **lectura el 8-oct** · Bahía Tortugas 10 años · Sonora FGR 15 años ×3. **Falta boletín oficial en todas** |
+| **Sentencias candidatas** | **Ciudad Juárez, 58 a 4 m** a tres por secuestro (26-sep) · **Lagos de Moreno, más de 11 años** por desaparición (26-sep) · **José Manuel E. C., 37 a 6 m** (sin fecha) · Nuevo Laredo, cuatro «N» (sin día). Feliciano «N», Las Choapas: **fechado fuera de ventana (2-sep)**, cerrar. **Todas: falta boletín del dominio oficial** |
 | **Renglones federales en `POSIBLE DUPLICIDAD`** | SLP 5-oct (1 larga, 1 corta, 55 cartuchos) frente a `ARG-125-015`; Huajicori-Cerro Bola (6 largas, 37 cargadores, 919 cartuchos, 5 AEI) frente a `ARG-125-017` |
 | **Michoacán · camión con compartimento** (`ARG-125-041`) | Municipio contradicho: **Contepec o Morelia** |
 | **Casos viejos sin novedad** | Quechultenango (fecha 17 o 18-sep) · Ocosingo (Vida Mejor / Patria Nueva) · Tepito (Odet Rosa / Odette Rosas) · Tabasco 14-sep (4 o 6) · Los Aldamas · FGE Veracruz (agregados) |
@@ -1636,8 +1637,7 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 4. **El boletín federal cambió de formato dos veces dentro de la ventana** (diario y agregado de tres días). Triple consulta siempre.
 5. **Radar**: `WINDOW_DAYS` quedó en **14** en el renderizador de ARGOS 125. **Ajustarlo a la duración de cada ventana**; para una de
    dos días, devolverlo a 10 o derivarlo de la ventana.
-6. **Sentencias: 18 fiscalías NO REVISADAS** en ARGOS 125. **Encabezan el triaje judicial de ARGOS 126 por prioridad sobre el ciclo**:
-   BC, BCS, Son, Sin, Dgo, Coah, NL, Zac, CDMX, Mor, Pue, Tlax, Hgo, Qro, Ver, Tab, Gro, Yuc.
+6. **Sentencias: las 18 fiscalías NO REVISADAS se barrieron en el alcance del 7-oct** (40 búsquedas `extended`): **32 de 32 revisadas**, con profundidad de una a cuatro consultas. **Ya no hay prioridad por cobertura en sentencias**: ARGOS 126 aplica el CICLO A sin desvío judicial.
 7. **Alto impacto y armamento NO REVISADOS**: BCS, Hidalgo, Querétaro; Durango y SLP en alto impacto. Encabezan su barrido.
 8. **ARGOS 126 aplica el CICLO A** — Noroeste + Centro —, subordinado a la prioridad de las 18 fiscalías.
 9. `ARG-125-FE-001` (Tecamachalco, efecto sobre ARGOS 124: rojos 2 → 3, muertos 4 → 5) y `ARG-125-FE-002` (regla de agregados

@@ -48,9 +48,10 @@ procesados) · Suchiapa (15 o 19 policías) · Hermosillo · Culiacán Parque Al
 ================================================================================
 BARRIDO
 ================================================================================
- PRIORIDAD SOBRE EL CICLO: las 18 fiscalías NO REVISADAS en sentencias en ARGOS 125
- encabezan el triaje judicial (BC, BCS, Son, Sin, Dgo, Coah, NL, Zac, CDMX, Mor, Pue,
- Tlax, Hgo, Qro, Ver, Tab, Gro, Yuc). En alto impacto: BCS, Hgo, Qro, Dgo, SLP.
+ Las 32 fiscalías quedaron revisadas en el alcance del 7-oct (una sentencia integrable,
+ Querétaro, ARG-125-SEN-001). PRIORIDAD SOBRE EL CICLO solo en alto impacto: BCS, Hgo,
+ Qro, Dgo, SLP. Candidatas sin boletín oficial: San Andrés Tuxtla, Nuevo León (4),
+ Nogales, Hidalgo, Tijuana FGR, Puebla (2) — búscales el boletín.
  Después, CICLO A (Noroeste + Centro). El recall regional va DENTRO de cada barrido:
  en 125 trajo El Balcón, que no trajo nadie más.
  Agregado federal con tramo ÍNTEGRO en la ventana: se integra, con «tramo» en el campo

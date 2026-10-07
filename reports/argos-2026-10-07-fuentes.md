@@ -323,3 +323,27 @@ ventana. **Esta edición NO declara cobertura total en ningún módulo.**
   el centro. **Debe devolverse a la duración real de cada ventana** (ver orden de ARGOS 126).
 - El cartelón se construyó con un generador de datos único (`datos.py` → fichas, panorama, `EVENTOS`, `EVENTOS_ARM`, totales); la
   móvil y el texto se generaron con `tools/gen-movil.py` y `tools/gen-texto.py`.
+
+## 15. Alcance judicial del 7-oct — barrido de las 18 fiscalías NO REVISADAS
+
+Ejecutado tras el cierre, a instrucción del destinatario, mientras se tramita la apertura de la red del entorno. Egreso
+**reverificado: sigue bloqueado** (`gob.mx/fgr`, `fiscaliaveracruz.gob.mx`, `milenio.com` → `000`). Tres equipos, **40 búsquedas
+`extended`** (12 + 14 + 14), sin `WebFetch`. **Las 32 fiscalías quedan revisadas al menos una vez; profundidad de una a cuatro
+consultas por fiscalía.**
+
+**Resultado: UNA sentencia integrable** — `ARG-125-SEN-001`, **FGE Querétaro, Tequisquiapan, Óscar Eduardo «N», 11 años 10 meses 6
+días por abuso sexual equiparado agravado contra una menor**. Boletín del dominio oficial **con fecha en la ruta**
+(`fiscaliageneralqro.gob.mx/portal/2026/10/06/oscar-eduardo-n-sentenciado-por-abuso-sexual-equiparado-agravado-contra-una-menor-de-edad/`),
+snippet «sentencia condenatoria de 11 años, 10 meses y 6 días de prisión», corroborado por N+ y ocho medios regionales (verificado
+por el coordinador). **Fecha de la sentencia no publicada**: se integra por la publicación oficial del 6-oct. Confianza **Medio**:
+fuente oficial indexada, no leída íntegra. **Primera sentencia integrable desde `ARG-122-SEN-001`.**
+
+| Grupo | Fiscalías | Candidatos en ventana (todos `PENDIENTE DE CONFIRMACIÓN OFICIAL`) | SRIV |
+|---|---|---|---|
+| A | BC, BCS, Son, Sin, Dgo, Coah | Nogales 50 años (FGJES, 5-oct) · Bahía Tortugas 10 años (PGJE BCS, 4-oct) · Culiacán 5 años (5-oct) · Tijuana 29 años ×2 (FGR, 6-oct) · Sonora 15 años ×3 (FGR, 6-oct) · FGR Culiacán y Durango DPE/4453 y 4445 (solo resumen) | Dgo, Coah |
+| B | NL, Zac, Ver, Tab, Gro, Yuc | NL: 50, 53, 25 y hasta 100 años (MVS, 1-6 oct) · San Andrés Tuxtla, más de 58 años (2-oct) · agregados de Veracruz de 24 h (1, 2 y 6-oct) · Acapulco 42 a 6 m (solo resumen) · FGR Tabasco (solo resumen) | Zac, Tab, Gro, Yuc |
+| C | CDMX, Mor, Pue, Tlax, Hgo, Qro | **Querétaro — INTEGRADA** · Puebla 36 a 6 m y 32 a 3 m (6-oct) · Puebla 13 años (lectura 8-oct: no integrar) · Hidalgo 50 años ×2 (24-sep, «reafirman») · FGR Morelos y Puebla (solo resumen) | CDMX, Mor, Tlax |
+
+**Correcciones al archivo**: Feliciano «N», Las Choapas, **queda fechado FUERA de ventana** (agregado semanal del 2-sep); el «51»
+es la pena. Tehuacán (periodista Marco Aurelio «N», 46 a 5 m) es **ratificación en alzada**, sin fecha: no es sentencia nueva.
+Durango FGED: último boletín indexado, 5-sep. Puebla FGE: el dominio indexa solo hasta marzo de 2026. FGE Tabasco: hasta abril.

@@ -1259,21 +1259,46 @@ asegurado sin cifra publicada.
 
 ## RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES
 
-  · Sentencias condenatorias: 0 — SIN SENTENCIA INTEGRABLE DURANTE EL CORTE · ninguna resolución con boletín oficial y fecha fijada dentro de la ventana
+  · Sentencias condenatorias: 1 — Querétaro · Tequisquiapan — boletín del dominio de la FGE con fecha en la ruta (6-oct) · la única integrable de 32 fiscalías y la FGR
 
-  · Personas sentenciadas: 0 — consecuencia del renglón anterior · nueve candidatos quedan en PENDIENTE DE CONFIRMACIÓN OFICIAL
+  · Personas sentenciadas: 1 — Óscar Eduardo «N» · más de 30 candidatos con pena publicada quedan en PENDIENTE DE CONFIRMACIÓN OFICIAL
 
-  · Años acumulados: 0 — NADA QUE ACUMULAR · los años nunca se suman entre casos
+  · Pena acumulada: 11 a 10 m 6 d — un solo caso: no hay acumulación · los años nunca se suman entre casos
 
-  · Reparación del daño: 0 — ningún monto ordenado y publicado por fuente oficial dentro de la ventana
+  · Reparación del daño: 0 — se cuantificará en la etapa de ejecución, según la cobertura · ningún monto ordenado y publicado
 
-  · Fiscalías con resultado: 0 — de 14 revisadas más la FGR · 18 fiscalías NO REVISADAS en este módulo
+  · Fiscalías con resultado: 1 — de 32 revisadas más la FGR · ninguna NO REVISADA tras el alcance del 7-oct
 
-SIN SENTENCIA INTEGRABLE EN LAS 14 FISCALÍAS REVISADAS NI EN LA FGR; 18 NO REVISADAS. EL UMBRAL
-ES ASIMÉTRICO: EN SENTENCIAS LA CONFIANZA «BAJO» NO BASTA, Y UNA SENTENCIA SIN FUENTE OFICIAL NO
-SE INTEGRA AL CONTEO NACIONAL.
+### QUERÉTARO · TEQUISQUIAPAN — ONCE AÑOS, DIEZ MESES Y SEIS DÍAS DE PRISIÓN POR ABUSO SEXUAL EQUIPARADO AGRAVADO CONTRA UNA NIÑA [SENTENCIA]
+
+── HECHO
+
+Tequisquiapan · COLONIA VILLAS DEL SOL · hechos reiterados de marzo de 2020 a abril de 2024 en
+un domicilio · Fiscalía General del Estado de Querétaro · sentencia condenatoria contra ÓSCAR
+EDUARDO «N» · 11 años, 10 meses y 6 días de prisión · multa, suspensión de derechos políticos y
+civiles, amonestación y negativa de sustitutivos · reparación del daño a cuantificar en la etapa
+de ejecución · FECHA DE LA SENTENCIA NO PUBLICADA: se integra por la publicación oficial del
+6-oct, dentro de la ventana · firmeza no informada · un titular regional habla de «violación»;
+se adopta la calificación de la Fiscalía
+
+── TRAZABILIDAD
+
+ARG-125-SEN-001 · Confianza: 🟡 Medio, la fija el campo peor sostenido: boletín oficial indexado,
+no leído íntegro por el bloqueo de egreso · Fuentes: Institucional 1 · Nacional 1 · Regional 8 ·
+Abierta 0 · con fecha en la ruta: FGE Querétaro (2026/10/06) · Código QRO (2026/10/06) · Expreso
+Querétaro (2026/10/06) · Sentencia: no publicada · Publicación: 2026-10-06 · Consulta:
+2026-10-07 · Estatus: Confirmado por fuente oficial indexada
+Deslindes y reservas: Tequisquiapan y Villas del Sol no figuran en el índice. Integrada en el
+alcance judicial del 7-oct, tras el barrido de las 18 fiscalías no revisadas
+
+  ARG-ID | Fiscalía | Entidad | Delito | Sentenciados | Pena | Multa | Reparación del daño | Tipo de sentencia | Firmeza | Fuente oficial | Corroboración | Confianza
+  ARG-125-SEN-001 | FGE Querétaro | Querétaro · Tequisquiapan | Abuso sexual equiparado agravado contra menor | 1 · Óscar Eduardo «N» | 11 años 10 meses 6 días | Sí, sin monto publicado | a cuantificar en ejecución | Condenatoria · proceso no informado | no informada | fiscaliageneralqro.gob.mx (2026/10/06, indexado) | N+ · 8 regionales | Medio
+
+EL UMBRAL ES ASIMÉTRICO: EN SENTENCIAS LA CONFIANZA «BAJO» NO BASTA, Y UNA SENTENCIA SIN FUENTE
+OFICIAL NO SE INTEGRA AL CONTEO NACIONAL.
 La brecha entre detención y condena es dato: 55 detenidos en eventos de armamento, más 21 en
-Suchiapa, 2 en Comonfort y 5 procesados en Coatzacoalcos, frente a cero sentencias integrables.
+Suchiapa, 2 en Comonfort y 5 procesados en Coatzacoalcos, frente a una sola sentencia integrable
+en catorce días naturales.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-07 · Hora: 15:15 (CDMX) · Corte: Vespertino · ARGOS N.° 125 · USO INSTITUCIONAL
@@ -1283,31 +1308,38 @@ Suchiapa, 2 en Comonfort y 5 procesados en Coatzacoalcos, frente a cero sentenci
 ## CANDIDATOS Y COBERTURA
 
   Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
-  Chihuahua · Ciudad Juárez | Tres sentenciados · secuestro agravado y homicidio en tentativa | 58 años 4 meses | Fiscalía de Distrito Zona Norte | PENDIENTE DE CONFIRMACIÓN OFICIAL · publicado el 26-sep, dentro de la ventana, por tres medios con fecha en la ruta, sin boletín del dominio oficial | Bajo
-  Jalisco · Lagos de Moreno | Moisés «N» y Liliana María «N» · desaparición cometida por particulares, procedimiento abreviado | más de 11 años | Fiscalía del Estado de Jalisco | PENDIENTE DE CONFIRMACIÓN OFICIAL · publicado el 26-sep; la sentencia sería del 17-sep: EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE. Sin comunicado de la Fiscalía | No confirmado
-  Chihuahua · Ciudad Juárez | José Manuel E. C. · homicidio calificado y tentativa, hecho del 1-sep-2025 | 37 años 6 meses | Fiscalía Zona Norte · Tribunal Oral Distrito Bravos | NINGUNA URL CON FECHA EN LA RUTA NI BOLETÍN OFICIAL: publicación sin fijar | No confirmado
-  Tamaulipas · Nuevo Laredo | Carlos, Adrián, Luis y José «N» · armas y cartuchos de uso exclusivo, juicio oral | 15 a 6 m ×2 · 11 a 6 m · 8 años | FGR · FECOR Reynosa | SIN DÍA FIJADO —solo «2026/09» en la ruta— y sin boletín de la FGR | No confirmado
-  Veracruz · Las Choapas | Feliciano «N» · homicidio doloso, juicio oral J-5/2026 | 51 años 3 meses | FGE Veracruz | URL SIN FECHA y sin boletín: no puede atarse a ninguna ventana | No confirmado
+  Veracruz · San Andrés Tuxtla | Seis hombres · secuestro agravado | más de 58 años | FGE · Fiscalía Regional Cosamaloapan | PENDIENTE DE CONFIRMACIÓN OFICIAL · publicado el 2-oct por dos medios con fecha en la ruta; boletín de la FGE sin fecha legible | Bajo
+  Chihuahua · Ciudad Juárez | Tres sentenciados · secuestro agravado y homicidio en tentativa | 58 años 4 meses | Fiscalía de Distrito Zona Norte | PENDIENTE DE CONFIRMACIÓN OFICIAL · publicado el 26-sep por tres medios con fecha en la ruta, sin boletín del dominio oficial | Bajo
+  Nuevo León · Monterrey · Las Sabinitas · Juárez | Cuatro casos: dos hombres por homicidio y robo · dos por doble homicidio · un atropello intencional · tres acusados por homicidios | 50 · 53 · 25 · hasta 100 años | FGJ Nuevo León | PENDIENTE DE CONFIRMACIÓN OFICIAL · publicados del 1 al 6-oct por un medio nacional con fecha en la ruta; el dominio de la FGJ no los indexa | Bajo
+  Sonora · Nogales | Fabián «N», 25 años · secuestro agravado de un taxista | 50 años y 4,000 UMA | FGJES | PENDIENTE DE CONFIRMACIÓN OFICIAL · publicado el 5-oct por dos medios con fecha en la ruta que citan el comunicado; sin URL oficial | Bajo
+  Hidalgo · Progreso de Obregón | Dos hombres · secuestro agravado | 50 años c/u | PGJEH · Unidad contra el Secuestro | PENDIENTE DE CONFIRMACIÓN OFICIAL · publicado el 24-sep, FRONTERA DE VENTANA; un titular dice «reafirman»: posible confirmación en alzada | Bajo
+  Baja California · Tijuana | Luis Gerardo Lara Vidrio y Jesús Ángel Rodríguez Clemente · ataque a la sede de la FGR, armas de uso exclusivo | 29 años c/u | FGR · FECOR | PENDIENTE DE CONFIRMACIÓN OFICIAL · publicado el 6-oct por dos medios nacionales con fecha en la ruta; sin comunicado de la FGR | Bajo
+  Puebla · municipio no publicado | Dos casos de violencia contra mujeres · feminicidio en tentativa y aborto; violación equiparada agravada contra su hija | 36 a 6 m · 32 a 3 m | FGE Puebla | PENDIENTE DE CONFIRMACIÓN OFICIAL · publicado el 6-oct por un medio con fecha en la ruta; el dominio de la FGE indexa solo hasta marzo | Bajo
+  Jalisco · Lagos de Moreno | Moisés «N» y Liliana María «N» · desaparición cometida por particulares | más de 11 años | FGE Jalisco | PENDIENTE DE CONFIRMACIÓN OFICIAL · publicado el 26-sep; sentencia del 17-sep: EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE | No confirmado
 
   Renglón | Resultado
   Universo de revisión | 33 = 32 fiscalías estatales + FGR · ventana de 14 días naturales
-  Fiscalías revisadas en sentencias | 14 de 32 · FGR revisada: Sí · por consulta de tramo, no día por día
-  Fiscalías con sentencia integrable | 0
-  SIN RESULTADO INDEXADO EN VENTANA | 14 en sentencias · es la casilla correcta bajo bloqueo de egreso
+  Fiscalías revisadas en sentencias | 32 de 32 · FGR revisada: Sí · 18 de ellas en el alcance del 7-oct · de una a cuatro consultas de tramo por fiscalía, no día por día
+  Fiscalías con sentencia integrable | 1 — Querétaro
+  Con sentencias publicadas en ventana solo por medios | 9: Chih, Jal, Ver, NL, Son, Hgo, Pue, BCS y Sin
+  SIN RESULTADO INDEXADO EN VENTANA | 22 · es la casilla correcta bajo bloqueo de egreso
   SIN ACTUALIZACIÓN CONSTATADA | 0 · exige lectura directa del portal, imposible con el egreso bloqueado
-  NO REVISADA — sentencias | 18: BC, BCS, Son, Sin, Dgo, Coah, NL, Zac, CDMX, Mor, Pue, Tlax, Hgo, Qro, Ver, Tab, Gro, Yuc
+  NO REVISADA — sentencias | 0
   NO REVISADA — alto impacto y armamento | Baja California Sur, Hidalgo y Querétaro en los dos módulos; Durango y San Luis Potosí en alto impacto · salvo los renglones del boletín federal
   Boletín federal | 13 de 14 días localizados · 7-oct: SIN RESULTADO INDEXADO EN VENTANA
   Desglose por día y por entidad | En el archivo de fuentes de la edición
   Techo de confianza del producto | ★★★☆☆ · BLOQUEO DE EGRESO REVERIFICADO, SÉPTIMA EDICIÓN: ALCANZA A GOB.MX Y A LOS MEDIOS
 
-Candidatos heredados sin novedad, publicados ANTES de la ventana: Cancún, 80 años (21-sep) ·
-Coacalco, «El Maca», 36 años (14-sep) · Morelia, 93 años 9 meses (17-sep) · Norma «N», La Pila,
-4 años 2 meses (19-sep). NO SE INTEGRAN.
-Publicados dentro de la ventana y solo por titular, sin autoridad ni fecha de sentencia: Sonora,
-15 años a tres personas por transporte de armas y drogas (6-oct) · Ciudad Juárez, 12 años por
-ataque armado (2-oct) · Chihuahua, 36 años por violación y violencia familiar (1-oct) · San Luis
-Potosí, 4 años por portación de arma (3-oct). NO SE INTEGRAN.
+Otros publicados en ventana, sin fuente oficial: Sonora, 15 años a tres personas por armas y
+drogas (FGR, 6-oct) · BCS, Bahía Tortugas, 10 años por violación de una adolescente (4-oct) ·
+Culiacán, 5 años por tentativa de homicidio (5-oct) · Puebla, 13 años por homicidio, lectura
+programada el 8-oct · Querétaro, ocho personas por narcomenudeo, POSIBLE DUPLICIDAD ·
+comunicados FGR de Morelos, Puebla, Sinaloa y Durango del 2 y 6-oct, sin pena ni URL propia ·
+Veracruz, agregados de 24 h con 29, 24 y 22 sentencias, sin casos individuales. NO SE INTEGRAN.
+Candidatos heredados, fechados FUERA de ventana o sin fecha: Cancún 80 años (21-sep) · Coacalco
+«El Maca» (14-sep) · Morelia 93 a 9 m (17-sep) · Norma «N», La Pila (19-sep) · Feliciano «N»,
+Las Choapas (2-sep) · José Manuel E. C., Juárez, 37 a 6 m (sin fecha) · Nuevo Laredo, cuatro «N»
+(sin día). NO SE INTEGRAN.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-07 · Hora: 15:15 (CDMX) · Corte: Vespertino · ARGOS N.° 125 · USO INSTITUCIONAL
