@@ -7,12 +7,19 @@ PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
     git fetch origin
     git branch -r | sed 's#origin/##' | sort
     git merge --ff-only origin/main
+    git merge --ff-only origin/claude/argos-criminal-intelligence-otiawj
     ls reports/ | grep '^argos-' | tail -6
     ls reports/ | wc -l
 
 DEBES ENCONTRAR: última edición argos-2026-10-07 (ARGOS 125) y 129 archivos en
-reports/. Si encuentras algo por detrás, PARA Y AVÍSAME. ARGOS 125 se construyó en
-claude/argos-criminal-intelligence-otiawj: si main no la absorbió, haz el ff desde ella.
+reports/. Si encuentras algo por detrás, PARA Y AVÍSAME. ⚠️ main SIGUE EN ARGOS 124
+(dbbab71): ARGOS 125 vive en claude/argos-criminal-intelligence-otiawj (7457082 o
+posterior). El segundo merge --ff-only del Bloque 0 la trae; si falla, PARA Y AVÍSAME.
+
+RED: comprueba primero si el egreso se abrió —
+    curl -s -o /dev/null -m 12 -w '%{http_code}\n' https://www.gob.mx/fgr
+Si NO devuelve 000, DILO: el techo de confianza sube a ★★★★☆ y lee los boletines
+directamente (WebFetch). Si devuelve 000, sigue bloqueado: solo WebSearch.
 
 VENTANA: abre 2026-10-07 15:15 CDMX —donde cerró ARGOS 125— y cierra a la HORA REAL
 de tu arranque. Recalcula duración y densidad al sellar. NO COMPARES TOTALES CON 125:
