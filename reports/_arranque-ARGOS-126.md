@@ -20,8 +20,8 @@ ls reports/ | wc -l
 
 **Estado que debe encontrar ARGOS 126**: última edición `argos-2026-10-07` (ARGOS 125) y **129 archivos** en `reports/`
 (123 + cuatro de la edición + `_arranque-ARGOS-126.md` + `_ordenes-ARGOS-126.txt`).
-⚠️ **ARGOS 125 se construyó en `claude/argos-criminal-intelligence-otiawj`.** Compruebe si `main` ya la absorbió; si no, haga el
-`ff-only` desde esa rama. **No busque una rama que se llame como su edición.**
+✅ **ARGOS 125 se mergeó a `main` en fast-forward puro el 8-oct**, por instrucción del destinatario. Se construyó en
+`claude/argos-criminal-intelligence-otiawj`. **Compruébelo igual**: si `main` viniera por detrás, haga el `ff-only` desde esa rama.
 
 ## BLOQUE 1 — IDENTIDAD
 
