@@ -1,0 +1,391 @@
+ARGOS 126 — REPORTE NACIONAL DE SEGURIDAD
+REPORTE DIARIO DE INTELIGENCIA CRIMINAL
+«INVESTIGACIONES, BÚSQUEDA Y VERDAD»
+
+Corte informativo: 2026-10-08 · 08:56 (CDMX)
+Ventana: 7-oct 15:15 → 8-oct 08:56 CDMX (17 h 41 min)
+Versión 3.0 · Corte matutino · USO INSTITUCIONAL
+
+============================================================================
+
+[ RADAR CENTRAL — EN VIVO ]
+
+  · 🔴 Alto impacto · 1
+  · 🟡 Violencia operativa · 1
+  · 🟢 Acciones institucionales · 7
+
+[ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
+
+Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
+
+## SEMÁFORO ARGOS
+
+  · 🔴 ROJO — ALTO IMPACTO — 1 eventos
+
+  · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 1 eventos
+
+  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 7 eventos
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-08 · Hora: 08:56 (CDMX) · Corte: Matutino · ARGOS N.° 126 · USO INSTITUCIONAL
+
+============================================================================
+
+## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
+
+  Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
+  Sonora · Cajeme (Cócorit) · 7-OCT | Ataque a un grupo de jóvenes: 1 muerto de 15 años y 3 heridos | 🔴 Rojo | FGJES (por cita) | ninguna | ★★★☆☆ | ARG-126-001
+  Guanajuato · Salamanca (col. San Isidro) · 7-OCT | 1 hombre asesinado a balazos en un domicilio | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-126-002
+  Hidalgo · Tlaxcoapan · 7-OCT | Cateo: 4 fusiles, 3 cortas, 11 cargadores, 47 cartuchos y 279 dosis; sin detenidos | 🟢 Verde | SSPH (por cita) | Milenio · La Silla Rota | ★★★☆☆ | ARG-126-003
+  Sinaloa · Concordia (Pánuco) · 7-OCT | 82 AEI, 1 arma larga, 5 cargadores y 670 cartuchos | 🟢 Verde | Gabinete de Seguridad (por republicador) | ninguna | ★★★☆☆ | ARG-126-004
+  Sinaloa · El Rosario · 7-OCT | 1,198 cartuchos, 3 cargadores y 12 kg de metanfetamina | 🟢 Verde | Gabinete de Seguridad (por republicador) | ninguna | ★★☆☆☆ | ARG-126-005
+  Chihuahua · Balleza (Pinalejo) · 7-OCT | 3 armas largas, 11 cargadores, 231 cartuchos y 87 kg de marihuana | 🟢 Verde | Gabinete de Seguridad (por republicador) | ninguna | ★★☆☆☆ | ARG-126-006
+  Nuevo León · Apodaca · 7-OCT | 2 detenidos, 1 arma corta, 13 cartuchos y 2 kg de metanfetamina | 🟢 Verde | Gabinete de Seguridad (por republicador) | ninguna | ★★☆☆☆ | ARG-126-007
+  Chihuahua · Ciudad Juárez · 7-OCT | 26 extranjeros rescatados, 2 menores; 1 detenido | 🟢 Verde | Gabinete de Seguridad (por republicador) | ninguna | ★★☆☆☆ | ARG-126-008
+  Sinaloa · Cosalá · 7-OCT | 5 laboratorios inhabilitados | 🟢 Verde | Gabinete de Seguridad (por republicador) | ninguna | ★★☆☆☆ | ARG-126-009
+  Puebla · Eloxochitlán (Ojo de Agua) · VENTANA ARGOS 125 | Comando de ~20 en 8 camionetas: 1 muerto | 🟡 Amarillo (en su ventana) | FGE Puebla (por cita) | ninguna | ★★☆☆☆ | ARG-126-REC-001
+  Michoacán · Tarímbaro · VENTANA ARGOS 125 | Disparos contra una patrulla municipal; sin heridos | 🟡 Amarillo (en su ventana) | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-126-REC-002
+  Chihuahua · Ciudad Juárez (Infonavit Casas Grandes) · VENTANA ARGOS 125 | Balacera entre presuntos secuestradores: 1 muerto, 2 heridos detenidos, 1 mujer liberada | 🟡 Amarillo (en su ventana) | SSPM · FGE (por cita) | Infobae | ★★★☆☆ | ARG-126-REC-003
+  Michoacán · Salvador Escalante (El Querendal) · VENTANA ARGOS 125 | Ataque en un acopio de aguacate: 3 muertos, uno de 15 años | 🔴 Rojo (en su ventana) | FGE Michoacán (por cita) | Excélsior · Meganoticias | ★★★☆☆ | ARG-126-REC-004
+  Sinaloa · Culiacán (Parque Alamedas) · VENTANA ARGOS 125 | 3 fusiles, 16 cargadores y 555 cartuchos en un vehículo | 🟢 Verde (en su ventana) | SSP Sinaloa (por cita) | ninguna | ★★★☆☆ | ARG-126-REC-005
+  Oaxaca · Santa María Mixtequilla · VENTANA ARGOS 125 | Ataque a balazos contra el palacio municipal y una patrulla; sin heridos | 🔴 Rojo (en su ventana) | SSPC Oaxaca (por cita) | Infobae · El Universal | ★★★☆☆ | ARG-126-REC-006
+  Guerrero · Zihuatanejo (sierra, San Ignacio) · VENTANA ARGOS 125 | Ataques con drones explosivos: 1 muerto, 1 herido y ~150 desplazados | 🔴 Rojo (en su ventana) | Ayuntamiento (por cita) | Infobae · Meganoticias | ★★★☆☆ | ARG-126-REC-007
+  Yucatán · Mérida · VENTANA ARGOS 125 | 4 detenidos por el atentado del 2-oct | 🟢 Verde (en su ventana) | SSP Yucatán (por cita) | ninguna | ★★☆☆☆ | ARG-126-REC-008
+  Yucatán · Mérida (Montes de Amé) · VENTANA ARGOS 125 | Atentado contra «El Marce»: 1 herido | 🟡 Amarillo (en su ventana) | SIN BOLETÍN | Proceso · La Silla Rota | ★★★☆☆ | ARG-126-REC-009
+  Sinaloa · Culiacán (Centro) · VENTANA ARGOS 125 | Vehículo robado con 2 fusiles —uno con lanzagranadas— y 1 granada | 🟢 Verde (en su ventana) | SSPyTM (por cita) | ninguna | ★★★☆☆ | ARG-126-REC-010
+  Guanajuato · León (Arroyo Hondo) · VENTANA ARGOS 123 | Pozo con restos de 5 personas | 🔴 Rojo (en su ventana) | FGE Guanajuato (por cita) | El Universal · Uno TV | ★★★☆☆ | ARG-126-REC-011
+  Guerrero · Tlapehuala · VENTANA ARGOS 105 | Asesinada la dirigente municipal de MC | 🔴 Rojo (en su ventana) | FGE Guerrero (por cita) | ADN40 · Infobae | ★★★☆☆ | ARG-126-REC-012
+
+  Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Armas cortas | Armas largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Entidades
+  9 | 1 | 1 | 7 | 12 | 4 | 8 | 0 | 0 | 2,159 | 32 | 0 | 82 | 0 | 2 | 6
+
+Ventana 7-oct 15:15 → 8-oct 08:56 CDMX (17 h 41 min) · 9 hechos propios en 6 entidades ·
+densidad 0,51 hechos/hora, cálculo propio. Orden: del más reciente al más antiguo.
+OCHO DE LOS NUEVE HECHOS PROPIOS LLEVAN FRONTERA DE VENTANA — HORA NO FIJADA: LOS TOTALES NO SON
+COMPARABLES CON LOS DE NINGUNA EDICIÓN ANTERIOR.
+LAS 12 RECUPERACIONES DEL FINAL PERTENECEN A VENTANAS ANTERIORES Y QUEDAN FUERA DEL SEMÁFORO,
+DEL MAPA, DEL RADAR Y DE TODOS LOS TOTALES.
+Toque un ARG-ID para ir a su ficha, donde están las fuentes, el nivel de confianza y los
+deslindes.
+
+NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA. Cuatro de las cinco filas de
+armamento proceden del boletín federal del 7-oct, alcanzado solo por republicadores.
+
+Total de armas integradas: 12 —4 cortas y 8 largas—. Cartuchos y cargadores nunca se suman entre
+sí. Detenidos = solo los del mismo evento de aseguramiento; fuera de ese conteo, 1 detenido en
+Ciudad Juárez (ARG-126-008). Entidades = con al menos un hecho propio. Muertos en hechos
+propios: 2 —1 en el rojo de Cócorit y 1 en el amarillo de Salamanca—, más 3 heridos en Cócorit
+—cálculo propio—.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-08 · Hora: 08:56 (CDMX) · Corte: Matutino · ARGOS N.° 126 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (I) — MIÉRCOLES 7-OCT
+
+### SONORA · CAJEME — ATAQUE ARMADO CONTRA JÓVENES EN EL BARRIO EL CONTI DE CÓCORIT: MUERE UN ADOLESCENTE DE QUINCE AÑOS Y TRES QUEDAN HERIDOS [ROJO]
+
+── HECHO
+
+Cócorit · BARRIO EL CONTI, CAMINO CARRETERO Y CUAUHTÉMOC · MIÉRCOLES 7-OCT ~17:40 · dos sujetos
+en un automóvil disparan contra jóvenes frente a una tienda, junto a un punto señalado por
+vecinos como de venta de droga · 1 muerto, de 15 años · 3 heridos, de 21, 18 y 17 años, uno
+grave (🔴) · casquillos 9 mm · FGJES procesa la escena · cero detenidos · HORA CONTRADICHA: 17:40
+FRENTE A 18:00 · UNA NOTA SIN FECHA REPORTA CUATRO HERIDOS Y NINGÚN MUERTO: NO FIJADA AL MISMO
+HECHO · casquillos y hora SOLO POR RESUMEN
+
+── TRAZABILIDAD
+
+ARG-126-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora y saldo
+contradichos; sin fuente nacional · Fuentes: Institucional 1 · Nacional 0 · Regional 4 · Abierta
+0 · con fecha en la ruta: Proyecto Puente (2026/10/07) · Medios Obson (2026/10/07) · Hecho:
+2026-10-07 · Hora: 17:40 (una fuente; otra, 18:00) · Consulta: 2026-10-08 09:05 · Estatus:
+Parcialmente corroborado · Conteo de armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: Cócorit no figura en el índice; Cajeme, solo por ARG-119-007 (taquería de
+Ciudad Obregón, 10-sep): otro hecho. NO es ARG-125-009 (Hermosillo, Fuente de Piedra, 5-oct). 🔴
+por víctimas múltiples
+
+### GUANAJUATO · SALAMANCA — ASESINADO A BALAZOS UN HOMBRE DENTRO DE UN DOMICILIO DE LA COLONIA SAN ISIDRO [AMARILLO]
+
+── HECHO
+
+Salamanca · COLONIA SAN ISIDRO · publicado MIÉRCOLES 7-OCT · 1 hombre muerto a balazos dentro de
+un domicilio; sin signos vitales a la llegada de paramédicos (🟡) · cero detenidos · identidad no
+publicada · FRONTERA DE VENTANA — HORA NO FIJADA · FUENTE ÚNICA
+
+── TRAZABILIDAD
+
+ARG-126-002 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: fuente única; día y
+hora del hecho · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con fecha en
+la ruta: Periódico Correo (2026/oct/07) · Hecho: 2026-10-07 · Hora: no fijada · Consulta:
+2026-10-08 09:05 · Estatus: Pendiente de corroboración · Conteo de armamento: sin fila — no hubo
+armamento asegurado
+Deslindes y reservas: Salamanca figura en el índice como ARG-125-044 (policía municipal,
+25-sep): otro hecho. 🟡 por homicidio doloso único sin agravantes de la lista roja
+
+### HIDALGO · TLAXCOAPAN — CATEO EN LA COLONIA CENTRO: CUATRO FUSILES DE ASALTO, TRES ARMAS CORTAS Y 279 DOSIS [VERDE]
+
+── HECHO
+
+Tlaxcoapan · COLONIA CENTRO · cateo publicado MIÉRCOLES 7-OCT · SSPH con Defensa y PGJEH · 4
+fusiles de asalto y 3 armas cortas —descritos por la SSPH como de uso exclusivo de las Fuerzas
+Armadas— · 11 cargadores · 47 cartuchos · 133 dosis de hierba y 146 de granulado tipo cristal ·
+4 chalecos balísticos, 2 cascos, 1 báscula (🟢) · cero detenidos publicados: lo asegurado, a
+disposición del MP · FRONTERA DE VENTANA — HORA NO FIJADA · desglose SOLO POR RESUMEN
+
+── TRAZABILIDAD
+
+ARG-126-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: desglose de armas por
+resumen; sin detenidos publicados · Fuentes: Institucional 1 · Nacional 2 · Regional 5 · Abierta
+0 · con fecha en la ruta: Zunoticia (2026/10/07) · La Silla Rota (2026/10/8) · Hecho: 2026-10-07
+· Hora: no fijada · Consulta: 2026-10-08 09:05 · Estatus: Parcialmente corroborado · Conteo de
+armamento: ARG-126-ARM-001
+Deslindes y reservas: Tlaxcoapan no figura en el índice. Primer hecho propio de Hidalgo tras su
+NO REVISADA de ARGOS 125
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-08 · Hora: 08:56 (CDMX) · Corte: Matutino · ARGOS N.° 126 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (II) — MIÉRCOLES 7-OCT, BOLETÍN FEDERAL
+
+### SINALOA · CONCORDIA — OCHENTA Y DOS ARTEFACTOS EXPLOSIVOS IMPROVISADOS, UN ARMA LARGA Y 670 CARTUCHOS EN PÁNUCO [VERDE]
+
+── HECHO
+
+Pánuco, Concordia · acciones del MIÉRCOLES 7-OCT · Ejército y Policía Estatal · 82 AEI · 1 arma
+larga · 5 cargadores · 670 cartuchos · 1 chaleco, 2 placas balísticas, 1 vehículo (🟢) · cero
+detenidos · LUGAR DEL HALLAZGO NO PUBLICADO · TIPO DE ARTEFACTO NO PUBLICADO · literal parcial:
+«un arma larga, cinco cargadores, 670 cartuchos, 82 artefactos explosivos improvisados» ·
+FRONTERA DE VENTANA — HORA NO FIJADA · BOLETÍN FEDERAL DEL 7-OCT, DIARIO, ALCANZADO SOLO POR
+REPUBLICADORES: CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN
+
+── TRAZABILIDAD
+
+ARG-126-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: lugar y tipo de
+artefacto no publicados; boletín por republicador · Fuentes: Institucional 1 · Nacional 0 ·
+Regional 2 · Abierta 0 · con fecha en la ruta: Los Noticieristas (2026/10) · Hecho: 2026-10-07 ·
+Hora: no fijada · Consulta: 2026-10-08 09:05 · Estatus: Parcialmente corroborado · Conteo de
+armamento: ARG-126-ARM-002
+Deslindes y reservas: Concordia figura en el índice (ARG-95-005, ARG-106-003 y otros): otros
+hechos. Pánuco no figura. NO es el hallazgo de 49 AEI del 28-ago en el mismo municipio
+
+### SINALOA · EL ROSARIO — 1,198 CARTUCHOS, TRES CARGADORES Y DOCE KILOS DE METANFETAMINA [VERDE]
+
+── HECHO
+
+El Rosario · COLONIA LUIS DONALDO COLOSIO Y ANONAL · acciones del MIÉRCOLES 7-OCT · Ejército ·
+1,198 cartuchos · 3 cargadores · 12 kg de metanfetamina, 2,867 dosis de cocaína y 1 kg de
+marihuana (🟢) · sin armas ni detenidos publicados · literal: «mil 198 cartuchos» · FRONTERA DE
+VENTANA — HORA NO FIJADA · BOLETÍN FEDERAL DEL 7-OCT, DIARIO, ALCANZADO SOLO POR REPUBLICADORES:
+CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN · UN SOLO REPUBLICADOR
+
+── TRAZABILIDAD
+
+ARG-126-005 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: un solo republicador,
+sin fecha en la ruta · Fuentes: Institucional 1 · Nacional 0 · Regional 1 · Abierta 0 · con
+fecha en la ruta: ninguna con fecha en la ruta · Hecho: 2026-10-07 · Hora: no fijada · Consulta:
+2026-10-08 09:05 · Estatus: Pendiente de corroboración · Conteo de armamento: ARG-126-ARM-003
+Deslindes y reservas: NO es ARG-125-010 (campamento con 42 AEI y 15 drones, 5-oct): otra fecha,
+otra colonia, otro desglose. El Rosario figura en el índice en otros cortes
+
+### CHIHUAHUA · BALLEZA — TRES ARMAS LARGAS, ONCE CARGADORES, 231 CARTUCHOS Y 87 KILOS DE MARIHUANA EN PINALEJO [VERDE]
+
+── HECHO
+
+Balleza · LOCALIDAD DE PINALEJO · acciones del MIÉRCOLES 7-OCT · Ejército · 3 armas largas · 11
+cargadores · 231 cartuchos · 87 kg de marihuana · 5 vehículos (🟢) · detenidos no publicados ·
+FRONTERA DE VENTANA — HORA NO FIJADA · BOLETÍN FEDERAL DEL 7-OCT, DIARIO, ALCANZADO SOLO POR
+REPUBLICADORES: CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN · UNA MENCIÓN SIN ENLACE ALUDE A DOS
+CIVILES ABATIDOS EN BALLEZA: NO VERIFICADA — SI SE CONFIRMA, EL COLOR SE REVISA
+
+── TRAZABILIDAD
+
+ARG-126-006 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: un solo republicador;
+posible enfrentamiento no verificado · Fuentes: Institucional 1 · Nacional 0 · Regional 1 ·
+Abierta 0 · con fecha en la ruta: ninguna con fecha en la ruta · Hecho: 2026-10-07 · Hora: no
+fijada · Consulta: 2026-10-08 09:05 · Estatus: Pendiente de corroboración · Conteo de armamento:
+ARG-126-ARM-004
+Deslindes y reservas: Balleza y Pinalejo no figuran en el índice
+
+### NUEVO LEÓN · APODACA — CATEO DE LA FGR Y LA SSPC: DOS DETENIDOS, UN ARMA CORTA Y DOS KILOS DE METANFETAMINA [VERDE]
+
+── HECHO
+
+Apodaca · cateo en un inmueble, acciones del MIÉRCOLES 7-OCT · FGR y SSPC · 2 detenidos · 1 arma
+corta y 1 réplica (no se cuenta) · 2 cargadores · 13 cartuchos · 2 kg de metanfetamina,
+medicamento controlado, efectivo sin cifra, 1 vehículo, 4 celulares (🟢) · FRONTERA DE VENTANA —
+HORA NO FIJADA · BOLETÍN FEDERAL DEL 7-OCT, DIARIO, ALCANZADO SOLO POR REPUBLICADORES:
+CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN
+
+── TRAZABILIDAD
+
+ARG-126-007 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: un solo republicador,
+sin fecha en la ruta · Fuentes: Institucional 1 · Nacional 0 · Regional 1 · Abierta 0 · con
+fecha en la ruta: ninguna con fecha en la ruta · Hecho: 2026-10-07 · Hora: no fijada · Consulta:
+2026-10-08 09:05 · Estatus: Pendiente de corroboración · Conteo de armamento: ARG-126-ARM-005
+Deslindes y reservas: Apodaca no figura en el índice
+
+### CHIHUAHUA · CIUDAD JUÁREZ — VEINTISÉIS PERSONAS EXTRANJERAS RESCATADAS, DOS DE ELLAS MENORES; UN DETENIDO [VERDE]
+
+── HECHO
+
+Ciudad Juárez · acciones del MIÉRCOLES 7-OCT · SSPC y Guardia Nacional · 1 hombre detenido · 26
+personas de nacionalidad extranjera rescatadas, 2 menores (🟢) · sin armamento publicado ·
+nacionalidades no publicadas · FRONTERA DE VENTANA — HORA NO FIJADA · BOLETÍN FEDERAL DEL 7-OCT,
+DIARIO, ALCANZADO SOLO POR REPUBLICADORES: CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN
+
+── TRAZABILIDAD
+
+ARG-126-008 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: un solo republicador,
+sin fecha en la ruta · Fuentes: Institucional 1 · Nacional 0 · Regional 1 · Abierta 0 · con
+fecha en la ruta: ninguna con fecha en la ruta · Hecho: 2026-10-07 · Hora: no fijada · Consulta:
+2026-10-08 09:05 · Estatus: Pendiente de corroboración · Conteo de armamento: sin fila — no hubo
+armamento asegurado
+Deslindes y reservas: Ciudad Juárez figura en el índice en otros cortes: otros hechos. NO es la
+balacera de Infonavit Casas Grandes (ARG-126-REC-003)
+
+### SINALOA · COSALÁ — CINCO LABORATORIOS CLANDESTINOS INHABILITADOS [VERDE]
+
+── HECHO
+
+Cosalá · acciones del MIÉRCOLES 7-OCT · SSPC y FGR · 5 laboratorios clandestinos inhabilitados
+(🟢) · sin detenidos ni armamento publicados · LITERAL TRUNCADO: INSUMOS SIN CIFRA · FRONTERA DE
+VENTANA — HORA NO FIJADA · BOLETÍN FEDERAL DEL 7-OCT, DIARIO, ALCANZADO SOLO POR REPUBLICADORES:
+CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN
+
+── TRAZABILIDAD
+
+ARG-126-009 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: literal truncado; un
+solo republicador · Fuentes: Institucional 1 · Nacional 0 · Regional 1 · Abierta 0 · con fecha
+en la ruta: ninguna con fecha en la ruta · Hecho: 2026-10-07 · Hora: no fijada · Consulta:
+2026-10-08 09:05 · Estatus: Pendiente de corroboración · Conteo de armamento: sin fila — no hubo
+armamento asegurado
+Deslindes y reservas: Cosalá no figura en el índice
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-08 · Hora: 08:56 (CDMX) · Corte: Matutino · ARGOS N.° 126 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (III) — RECUPERACIONES DE LA VENTANA DE ARGOS 125: 7 A 5-OCT
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-08 · Hora: 08:56 (CDMX) · Corte: Matutino · ARGOS N.° 126 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (IV) — RECUPERACIONES: 3 Y 2-OCT, Y VENTANAS DE ARGOS 123 Y 105
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-08 · Hora: 08:56 (CDMX) · Corte: Matutino · ARGOS N.° 126 · USO INSTITUCIONAL
+
+============================================================================
+
+## CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS
+
+  · Armas cortas: 4 — 3 de Tlaxcoapan · 1 de Apodaca · NINGUNA CON CALIBRE NI SERIE PUBLICADO
+
+  · Armas largas: 8 — 4 de Tlaxcoapan · 3 de Balleza · 1 de Pánuco · LOS 4 FUSILES DE TLAXCOAPAN, DESCRITOS COMO DE USO EXCLUSIVO
+
+  · Sin categoría: 0 — NINGUNA ARMA SIN CLASIFICAR EN ESTA VENTANA · la ausencia es dato
+
+  · Cartuchos: 2,159 — 1,198 de El Rosario · 670 de Pánuco · 231 de Balleza · 47 de Tlaxcoapan · 13 de Apodaca
+
+  · Cargadores: 32 — 11 de Tlaxcoapan · 11 de Balleza · 5 de Pánuco · 3 de El Rosario · 2 de Apodaca · NUNCA SE SUMAN CON LOS CARTUCHOS
+
+  · Granadas: 0 — NINGUNA GRANADA PUBLICADA EN LA VENTANA · la ausencia es dato
+
+  · AEI: 82 — 82 de Pánuco, Concordia · un solo evento · TIPO DE ARTEFACTO NO PUBLICADO
+
+  · Explosivos: 0 — NINGÚN EXPLOSIVO, DETONADOR NI INICIADOR PUBLICADO POR SEPARADO · la ausencia es dato
+
+  · Armamento especial: 0 — NINGUNA PIEZA CAL. .50 NI DRON ARMADO ASEGURADO EN HECHO PROPIO
+
+  · Detenidos: 2 — 2 de Apodaca · SOLO EN EVENTOS CON ASEGURAMIENTO DE ARMAMENTO · no entra el detenido de Ciudad Juárez · Tlaxcoapan y Pánuco: cero detenidos
+
+5 filas de armamento de 5 hechos en 4 entidades: todos con cifra, ninguno cualitativo. Las
+categorías en cero se muestran igualmente: la ausencia es dato. CUATRO FILAS PROCEDEN DEL
+BOLETÍN FEDERAL DEL 7-OCT, CON FRONTERA DE VENTANA.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-08 · Hora: 08:56 (CDMX) · Corte: Matutino · ARGOS N.° 126 · USO INSTITUCIONAL
+
+============================================================================
+
+## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
+
+  ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
+  ARG-126-ARM-001 | Hidalgo | Tlaxcoapan | 2026-10-07 | 3 | 4 | 0 | 0 | 47 | 11 | 0 | 0 | 0 | 0 | SSPH + Defensa + PGJEH | Medio · «uso exclusivo», según la SSPH
+  ARG-126-ARM-002 | Sinaloa | Concordia (Pánuco) | 2026-10-07 | 0 | 1 | 0 | 0 | 670 | 5 | 0 | 82 | 0 | 0 | Ejército + Policía Estatal | Medio · tipo de AEI no publicado
+  ARG-126-ARM-003 | Sinaloa | El Rosario | 2026-10-07 | 0 | 0 | 0 | 0 | 1,198 | 3 | 0 | 0 | 0 | 0 | Ejército | Bajo · un solo republicador
+  ARG-126-ARM-004 | Chihuahua | Balleza (Pinalejo) | 2026-10-07 | 0 | 3 | 0 | 0 | 231 | 11 | 0 | 0 | 0 | 0 | Ejército | Bajo · detenidos no publicados
+  ARG-126-ARM-005 | Nuevo León | Apodaca | 2026-10-07 | 1 | 0 | 0 | 0 | 13 | 2 | 0 | 0 | 0 | 2 | FGR + SSPC | Bajo · 1 réplica, no se cuenta
+
+Lectura regional —5 filas, cálculo propio—: Noroeste 3 · Noreste 1 · Occidente 0 · Centro 1 ·
+Golfo 0 · Sureste 0. SINALOA APORTA LOS 82 AEI Y 1,868 DE LOS 2,159 CARTUCHOS, CÁLCULO PROPIO.
+El armamento de las recuperaciones —Culiacán, Parque Alamedas y Centro— va en su ficha y no
+entra en esta tabla.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-08 · Hora: 08:56 (CDMX) · Corte: Matutino · ARGOS N.° 126 · USO INSTITUCIONAL
+
+============================================================================
+
+## RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES
+
+  · Sentencias condenatorias: 0 — NINGUNA CON BOLETÍN DEL DOMINIO OFICIAL EN LA VENTANA · dos publicadas por medios el 7-oct, abajo
+
+  · Personas sentenciadas: 0 — 5 personas en dos candidatas con pena publicada quedan en PENDIENTE DE CONFIRMACIÓN OFICIAL
+
+  · Pena acumulada: 0 — los años nunca se suman entre casos
+
+  · Reparación del daño: 0 — ningún monto ordenado y publicado en la ventana
+
+  · Fiscalías con resultado: 0 — de 16 revisadas más la FGR · 16 NO REVISADA
+
+  Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
+  Chihuahua · Ciudad Juárez (col. Acequias) | Cristian «N», Jesús «N», Isaac «N» y Gerson «N» · portación de arma de uso exclusivo, abreviado | 6 a 11 m 9 d (dos) · 6 a 5 m 20 d (dos) | FGR · FECOR | PENDIENTE DE CONFIRMACIÓN OFICIAL · publicado el 7-oct por tres medios, uno con fecha en la ruta; FRONTERA DE VENTANA; la segunda pena, solo por resumen | Bajo
+  Nuevo León · municipio no publicado | Laurentino «N» · delitos sexuales contra una adolescente de 13 años | 44 años | FGJ Nuevo León | PENDIENTE DE CONFIRMACIÓN OFICIAL · publicado el 7-oct por un medio nacional con fecha en la ruta; FRONTERA DE VENTANA | Bajo
+
+  Renglón | Resultado
+  Fiscalías revisadas en sentencias | 16 de 32 · FGR revisada: Sí · BC, Son, Chih, Dgo · CDMX, Edomex, Mor, Pue, Tlax, Hgo, Qro · NL · Ver, Tab · Jal, Gto
+  Fiscalías con sentencia integrable | 0
+  Con sentencias publicadas en ventana solo por medios | 2: FGR en Chihuahua · Nuevo León
+  SIN RESULTADO INDEXADO EN VENTANA | 14 · es la casilla correcta bajo bloqueo de egreso
+  SIN ACTUALIZACIÓN CONSTATADA | 0 · exige lectura directa del portal
+  NO REVISADA — sentencias | 16: BCS, Sin · Coah, Tamps, SLP, Zac · Col, Nay, Ags, Mich · Chis, Oax, Gro, Camp, Yuc, QRoo
+  Alto impacto y armamento | 32 de 32 consultadas por búsqueda genérica; ningún portal por site: · GN, SEDENA y SEMAR regionales: NO REVISADA
+  Boletín federal | 7-oct: localizado, diario, por republicadores · 8-oct: SIN RESULTADO INDEXADO EN VENTANA
+  Techo de confianza del producto | ★★★☆☆ · BLOQUEO DE EGRESO REVERIFICADO EL 8-OCT: GOB.MX Y MEDIOS
+
+EL UMBRAL ES ASIMÉTRICO: EN SENTENCIAS LA CONFIANZA «BAJO» NO BASTA, Y UNA SENTENCIA SIN FUENTE
+OFICIAL NO SE INTEGRA AL CONTEO NACIONAL.
+
+Vistas por primera vez, publicadas antes de la apertura y sin boletín oficial: Santa Catarina,
+NL, 25 años a dos (6-oct) · Edomex: Cuautitlán Izcalli 58 a 9 m (3-oct), Ecatepec 30 a 7 m
+(5-oct), Ocoyoacac 48 a 9 m (1-oct), Soyaniquilpan 50 años (29-sep) · Cárdenas, Tab., FGR, 4 a 8
+m (sin fecha fijada). NO SE INTEGRAN.
+Candidatos heredados, siguen sin boletín oficial: San Andrés Tuxtla 58 a 4 m · Nogales 50 años ·
+Tijuana FGR 29 años ×2 · Puebla 36 a 6 m y 32 a 3 m · Puebla 13 años (lectura del 8-oct: sin
+resultado) · Hidalgo 50 años ×2 · Nuevo León, cuatro casos · Juárez 58 a 4 m · Lagos de Moreno
+11 años 40 días. NO SE INTEGRAN.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-08 · Hora: 08:56 (CDMX) · Corte: Matutino · ARGOS N.° 126 · USO INSTITUCIONAL
+
+============================================================================
+
+## VALORACIÓN ARGOS, CONCLUSIONES E INDICADORES
+
+gabinetedeseguridad.gob.mx/resultados/ — SIN RESULTADO INDEXADO EN VENTANA. SESNSP, INEGI y FGR:
+sin publicación nueva localizada dentro de la ventana.
+El agregado federal del periodo es el boletín de acciones relevantes del Gabinete de Seguridad
+del 7-oct, diario, alcanzado por dos republicadores. NO INDEXADO POR SU EMISOR: SUS
+REPUBLICADORES NO SON FUENTES INDEPENDIENTES ENTRE SÍ.
+Toda cifra de este cartelón sin emisor nombrado es cálculo propio de ARGOS.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-08 · Hora: 08:56 (CDMX) · Corte: Matutino · ARGOS N.° 126 · USO INSTITUCIONAL
