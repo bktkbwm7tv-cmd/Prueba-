@@ -8,13 +8,13 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 125 (corte 2026-10-07).
+**Última actualización**: ARGOS 126 (corte 2026-10-08).
 
 ---
 
 ## Arranque de la edición siguiente
 
-**`reports/_arranque-ARGOS-126.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-126.txt`) contiene la orden de arranque para una sesión nueva: verificación
+**`reports/_arranque-ARGOS-127.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-127.txt`) contiene la orden de arranque para una sesión nueva: verificación
 de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y comandos de construcción.
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
@@ -1642,3 +1642,50 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 8. **ARGOS 126 aplica el CICLO A** — Noroeste + Centro —, subordinado a la prioridad de las 18 fiscalías.
 9. `ARG-125-FE-001` (Tecamachalco, efecto sobre ARGOS 124: rojos 2 → 3, muertos 4 → 5) y `ARG-125-FE-002` (regla de agregados
    reescrita) están en el índice y en el archivo de fuentes; **no van al cartelón**.
+
+## Cerrados por ARGOS 126
+
+| Pendiente | Disposición |
+|---|---|
+| **GUERRERO · El Balcón — hora del 24-sep** | **Hacia las 09:00**, por dos testimonios citados por resumen: posterior a las 06:41 → **no procede `-REC-` ni fe de erratas**. Cifra inicial: **8** (Proceso, Infobae, El Universal); 13 solo en una fuente regional. El caso sigue abierto (abajo) |
+| **SINALOA · Culiacán, Parque Alamedas y Corolla** | **Fijados** (≤6-oct y 2-oct) → `ARG-126-REC-006` y `-011`. Alamedas: desglose sin respaldo citable en segunda edición → `CANTIDAD NO DETERMINADA` |
+| **Valle de Chalco «3 muertos»** | **CERRADO**: es `ARG-123-001` (2 muertos) + `ARG-123-REC-003` (tianguis). No existe tercer hecho |
+| **León, pozo de Arroyo Hondo** | **Fijado 21-sep** → `ARG-126-REC-012` (ventana 123, frontera 122) |
+| **Tlapehuala, dirigente de MC** | **Fijado 21-ago** → `ARG-126-REC-013` (ventana 105). Texistepec: sin novedad para 2026; solo un caso de 2022 (señuelo) |
+| **CHIAPAS · Suchiapa — 15 o 19** | **Resuelto**: 21 = alcalde + exalcalde + 19, de ellos **15 policías en activo**; «19 policías» cuenta mandos. Relación con la fuga de «La Gretel» (25-sep): sí |
+| **Radar `WINDOW_DAYS`** | Devuelto a **2** (una ventana de 17 h toca dos fechas de calendario). Regla: **derivarlo del número de fechas de calendario de la ventana** |
+
+## Abiertos que ARGOS 127 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️⚠️ **GUERRERO · El Balcón** (`ARG-125-051`) | **Siete desaparecidos**, cero detenidos, sin carpeta indexada. **Video del 8-oct** con cinco de ellos esposados y ropa táctica: **no autenticado; NO difundir su contenido como dato**. ¿Peritaje? ¿Marcha a Palacio Nacional realizada? ¿Cumplimiento del amparo 412/2026? |
+| ⚠️⚠️ **CHIHUAHUA · Balleza** (`ARG-126-REC-004`) | Identidad de los **2 abatidos**; hora (noche del 6 o mañana del 7-oct); **231 o 230 cartuchos, 5 o 2 vehículos**; boletín de la FGE Chihuahua |
+| ⚠️ **SINALOA · Pánuco, 82 AEI** (`ARG-126-004`) | Tipología, lugar exacto del hallazgo y literal del desglose (arma, cargadores, cartuchos, hoy solo por resumen). Cotejo con `ARG-124-003` (75 AEI tipo mina) |
+| ⚠️ **NAYARIT · Xalisco** (`ARG-125-003`) | Cifra de víctimas e identificaciones; **seis detenidos del cateo de Ópalo, Xalisco**: ¿vínculo con La Curva? «9 cuerpos en fosa de Nayarit» (La Prensa, sin fecha): atar o descartar |
+| **JALISCO · Guadalajara** (`ARG-125-002`) | Comunicado oficial; resultado del georradar |
+| **GUERRERO · Zihuatanejo** (`ARG-126-REC-008`) | Retorno de desplazados; peritaje de drones y blindado; cifra (≈150 personas o ≥30 familias) |
+| **OAXACA · Mixtequilla** (`ARG-126-REC-007`) | Detenidos; fecha (4 o 5-oct) |
+| **CHIHUAHUA · Juárez, Casas Grandes** (`ARG-126-REC-003`) | Heridos (2 o 3), detenidos, cateos anunciados, móvil (rescate o deuda de drogas) |
+| **CHIHUAHUA · 26 extranjeros** (`ARG-126-007`) | Nacionalidades; literal del boletín |
+| **SONORA · Cócorit** (`ARG-126-001`) | Saldo (¿1 muerto y 3 heridos, o 4 heridos?), edades; **si se desmiente el muerto, el único rojo de 126 pasa a 🟡** |
+| **VERACRUZ · Coatzacoalcos** (`ARG-126-FE-004`) | Resultado de la audiencia de vinculación del 8-oct (causa 540/2026). **«3 detenidos el 1-oct» de `ARG-125-021` no se sostiene**: corregir por fe de erratas si no aparece fuente |
+| **Comonfort · Hermosillo** | Vinculación de los 2 detenidos; orden por el doble homicidio contra Cristian Rubén «N» |
+| **Candidatos `-REC-` de la ventana de 125, sin fecha o sin fuente bastante** | Durango, Nuevo Garabitos (FGR); Oaxaca, El Espinal (5-oct); Mexicali 232 cartuchos (5-oct); Michoacán, cateo con ametralladora (28-sep); Zamora, masacre en bar; **Valle de Santiago, convivio con 3 muertos y 5 heridos (sin fecha)** |
+| **Sentencias candidatas** | **En ventana, solo medios**: FGR Juárez (Acequias, 4 sentenciados) · NL, Laurentino «N», 44 años. **Previas, nunca vistas**: Edomex ×4 (Cuautitlán Izcalli, Ecatepec, Ocoyoacac, Soyaniquilpan), Santa Catarina 25 años ×2, Cárdenas FGR. **Heredadas**: San Andrés Tuxtla, Nogales, Tijuana FGR, Puebla ×3, Hidalgo, NL ×4, Juárez, Lagos de Moreno. **Falta boletín oficial en todas** |
+| **Casos viejos sin novedad** | Michoacán `ARG-125-041` (Contepec o Morelia) · Quechultenango · Ocosingo · Tepito · Tabasco 14-sep · Los Aldamas |
+
+## Deuda de método
+
+1. **`extended` se mantiene obligatorio.** En 126 el `standard` ya no estaba congelado pero solo llegó al 6-oct. Repetir la consulta de control.
+2. ⚠️ **El boletín federal del día de apertura cae casi entero en FRONTERA.** En 126 aportó cuatro de siete hechos propios, y uno (Balleza)
+   resultó ser **anterior a la apertura y un enfrentamiento**. **Todo renglón del boletín con armamento y sin hora debe buscarse por su
+   topónimo antes de fichar**: el boletín resume como aseguramiento lo que a veces fue un combate.
+3. ⚠️ **Umbral de «víctimas múltiples» con un solo muerto.** `ARG-120-009` (🟡) frente a `ARG-107-002` y `ARG-120-007` (🔴); 126 aplicó rojo a
+   Cócorit (1 muerto, 3 heridos). **Fijarlo en `CLAUDE.md`**: ¿cuentan los heridos como víctimas múltiples?
+4. **Sentencias: 16 de 32 revisadas; 16 `NO REVISADA`** (BCS, Sin · Coah, Tamps, SLP, Zac · Col, Nay, Ags, Mich · Chis, Oax, Gro, Camp, Yuc,
+   QRoo) → **encabezan el triaje judicial de ARGOS 127 por prioridad sobre el ciclo.** Después, **CICLO B** (Noreste + Golfo).
+5. **Armamento `NO REVISADA`**: Morelos y Tlaxcala. Ningún portal por `site:` en toda la edición.
+6. **Portada y conclusiones deben cubrir hechos distintos**: en el borrador de 126 la portada reescribía cuatro de las cinco conclusiones.
+7. **El generador de datos queda en el repositorio** (`tools/datos-argos-126.py`): copiarlo, cambiar los bloques `E`, `R` y `ARM`.
+8. `ARG-126-FE-001` a `-004` están en el índice y en el archivo de fuentes; **no van al cartelón**.
