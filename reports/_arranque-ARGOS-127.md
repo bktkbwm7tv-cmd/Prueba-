@@ -21,8 +21,8 @@ ls reports/ | wc -l
 
 **Estado que debe encontrar ARGOS 127**: última edición `argos-2026-10-08` (ARGOS 126) y **135 archivos** en `reports/`
 (129 + cuatro de la edición + `_arranque-ARGOS-127.md` + `_ordenes-ARGOS-127.txt`).
-⚠️ **ARGOS 126 vive en `claude/argos-126`**; `main` quedó en ARGOS 125 (`60f2777`) salvo que el destinatario la haya mergeado. El segundo
-`ff-only` la trae; si falla, parar y avisar.
+✅ **ARGOS 126 se mergeó a `main` en fast-forward puro el 8-oct** (`31763f1`), por instrucción del destinatario. Se construyó en
+`claude/argos-126`: el segundo `ff-only` debe decir «Already up to date». Si `main` viniera por detrás, parar y avisar.
 
 ## BLOQUE 1 — IDENTIDAD
 
