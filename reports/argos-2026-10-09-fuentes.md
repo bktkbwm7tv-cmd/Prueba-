@@ -36,7 +36,7 @@ comprueba con `assert` en vez de sustituirlo.
 | Renglón | Resultado |
 |---|---|
 | Prioridad sobre el ciclo — sentencias | **Las 16 fiscalías `NO REVISADA` de 126 revisadas**: BCS, Sin · Coah, Tamps, SLP, Zac · Col, Nay, Ags, Mich · Chis, Oax, Gro, Camp, Yuc, QRoo. Las 16, `SIN RESULTADO INDEXADO EN VENTANA` por `site:` dirigido o búsqueda de medios |
-| Prioridad sobre el ciclo — armamento | **Morelos** (`site:` a CES, SSC y Fiscalía: sin boletín de ventana) y **Tlaxcala** (búsqueda genérica; `site:pgjtlaxcala.gob.mx` no se intentó): `SIN RESULTADO INDEXADO EN VENTANA` |
+| Prioridad sobre el ciclo — armamento | **Morelos** (`site:` a CES, SSC y Fiscalía: sin boletín de ventana) y **Tlaxcala** (búsqueda genérica; `site:pgjtlaxcala.gob.mx` no se intentó): **`NO REVISADA`** —corregido por `editor-duplicidad`; vuelve a encabezar en 128— |
 | Ciclo | **B** — Noreste + Golfo encabezaron el triaje judicial |
 | Rendimiento | **Ninguna sentencia integrable.** El ciclo B halló **Matamoros, 6 sentenciados a 25 años 3 días** (publicado 6-oct, previo) y el **agregado de la FGE Veracruz del 8-oct** (17 sentencias, sin individualizar). La prioridad halló **Campeche, FGR** (frontera, solo medios) y casos previos de Nayarit, Michoacán y QRoo nunca vistos |
 
@@ -85,8 +85,8 @@ enfrentamiento. Pánuco: los civiles armados **huyeron al monte**, sin combate.
 
 | Caso | Arbitraje |
 |---|---|
-| **Penal El Castillo** (`ARG-127-003`) | Inicio ~10:00 del 8-oct (La Silla Rota, **por resumen**): dentro de ventana. Aun sin hora, el hecho cae el día de apertura y ninguna edición lo publicó: 127 es la primera que lo ve. **🔴 por motín con víctimas**, que la lista roja nombra. Edad del menor contradicha (11, 3 o 2 años): **no se publica** |
-| **Autolavado de Flores Magón** (`ARG-127-001`) | ~14:20 por resumen; **3 muertos** por titular (Luz Noticias 2026-10-08 «Aumentan a tres»; Línea Directa 2026-10-08 «Muere en hospital joven herido»). La Jornada 2026/10/09 da 2 muertos y 3 lesionados (anterior al tercer deceso). 🔴 por homicidio múltiple |
+| **Penal El Castillo** (`ARG-127-004`) | Inicio ~10:00 del 8-oct (La Silla Rota, **por resumen**): dentro de ventana. Aun sin hora, el hecho cae el día de apertura y ninguna edición lo publicó: 127 es la primera que lo ve. **🔴 por motín con víctimas**, que la lista roja nombra. Edad del menor contradicha (11, 3 o 2 años): **no se publica** |
+| **Autolavado de Flores Magón** (`ARG-127-002`) | ~14:20 por resumen; **3 muertos** por titular (Luz Noticias 2026-10-08 «Aumentan a tres»; Línea Directa 2026-10-08 «Muere en hospital joven herido»). La Jornada 2026/10/09 da 2 muertos y 3 lesionados (anterior al tercer deceso). 🔴 por homicidio múltiple |
 | **Uruapan, Sol Naciente** | Hora del hecho ~03:30-05:00 del 8-oct por resumen de tres medios: **anterior a la apertura** → `ARG-127-REC-001`, ventana de origen ARGOS 126, 🟡 (el Estado inicia y es repelido; heridos no mueven el color) |
 | **San Francisco de Borja–Nonoava** (El Diario de Chihuahua 2026/oct/08, «Dejan dos enfrentamientos cuatro muertos») | El resumen copia rasgos de Balleza (edades, ropa táctica, tres fusiles, cinco camionetas) y sitúa el hecho «en la madrugada» sin día: **`POSIBLE DUPLICIDAD` con `ARG-126-REC-004` y fecha no fijada. No fichado** |
 | **Penjamillo, emboscada a Guardia Civil** | ~7-oct («segunda agresión en 24 h», Quadratín, sin fecha en la ruta): ventana 125 o 126 sin fijar. **No fichado**; pasa a pendientes como candidato `-REC-` 🔴 |
@@ -96,9 +96,16 @@ enfrentamiento. Pánuco: los civiles armados **huyeron al monte**, sin combate.
 ## 8. Fe de erratas (no va al cartelón)
 
 - **`ARG-127-FE-001`** — sobre **ARGOS 126**: cuatro hechos de su ventana no publicados (`ARG-127-REC-001` a `-004`). Efecto: rojos 1 → 1,
-  amarillos 1 → 2, verdes 5 → 8. Armamento de la ventana de 126, **cálculo propio**: cortas 4 → 7, largas 5 → 14, cartuchos 1,928 → 3,561,
-  cargadores 21 → 75, detenidos 2 → 4 (Ojocaliente: 5 largas, 1,093 cartuchos, 47 cargadores; Centro: 3 cortas, 4 largas, 540 cartuchos,
-  7 cargadores, 2 detenidos). **Cosalá reintegrado** tras su retiro en 126.
+  amarillos 1 → 2, verdes 5 → 8. **Cosalá reintegrado** tras su retiro en 126. Armamento: **se integra solo Ojocaliente** (5 largas, 1,093
+  cartuchos, 47 cargadores, **solo por resumen**). **Centro, Tabasco** (3 cortas, 4 largas, 540 cartuchos, 7 cargadores, 2 detenidos) queda
+  `POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN` (hallazgo de los dos controles).
+- **`ARG-127-FE-003`** — sobre **`ARG-126-004` / `ARG-126-ARM-002` (Pánuco)** y **`ARG-126-005` / `ARG-126-ARM-003` (El Rosario)**: los
+  **670 cartuchos y 5 cargadores** de Pánuco y los **1,198 cartuchos y 3 cargadores** de El Rosario llegan a **dos ediciones consecutivas
+  solo por resumen**. Por el umbral de fe de erratas se retiran del acumulado: `CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO`.
+  **Se mantienen** los 82 AEI y el fusil de Pánuco (titular y *slug* de Rotativo, «aseguran-82-explosivos-dron-fusil») y los 12 kg de El Rosario
+  (titular). Si se lee el post de sspsinaloa.gob.mx, la cifra se reinstala como citable.
+- **Armamento de la ventana de 126 tras FE-001 y FE-003, cálculo propio**: cortas **4**; largas 5 + 5 = **10**; cartuchos 1,928 − 670 − 1,198
+  + 1,093 = **1,153**; cargadores 21 − 5 − 3 + 47 = **60**; AEI **82**; detenidos **2**.
 - **`ARG-127-FE-002`** — sobre **`ARG-125-021`**: «3 detenidos el 1-oct» llega a **dos ediciones consecutivas sin respaldo citable**
   (`ARG-126-FE-004`). Por el umbral de fe de erratas, **se retira la cifra**: `CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO`.
   Las fuentes indexadas dan **5 detenidos informados el 5-oct**.
@@ -130,7 +137,7 @@ SRIV = `SIN RESULTADO INDEXADO EN VENTANA`. `SIN ACTUALIZACIÓN CONSTATADA`: **0
 | Estado de México | SRIV (Otomí, acumulado) | SRIV | SRIV |
 | Morelos | SRIV (persecución sin fecha fijada) | SRIV (`site:`) | NO REVISADA |
 | Puebla | **hecho** (Fuentes de San Bartolo) | SRIV | NO REVISADA |
-| Tlaxcala | SRIV | SRIV | NO REVISADA |
+| Tlaxcala | SRIV | NO REVISADA (genérica, sin `site:`) | NO REVISADA |
 | Hidalgo | SRIV | SRIV | NO REVISADA |
 | Querétaro | SRIV | SRIV (vinculación de 3 con armas, cateo sin fecha) | NO REVISADA |
 | Veracruz | SRIV | SRIV | **solo medios** (agregado FGE 8-oct) |
@@ -142,8 +149,8 @@ SRIV = `SIN RESULTADO INDEXADO EN VENTANA`. `SIN ACTUALIZACIÓN CONSTATADA`: **0
 | Yucatán | SRIV (cobertura mínima) | SRIV | SRIV |
 | Quintana Roo | SRIV (Cancún, fecha sin fijar) | SRIV | SRIV (50 años, 7-oct, previa) |
 
-**Sentencias: 24 de 32 + FGR; 8 `NO REVISADA`** (BC · Jal, Gto · Mor, Pue, Hgo, Qro, Tlax). **Armamento: 27 de 32** (NO REVISADA: BCS, Son,
-Dgo, CDMX, Ags). **Alto impacto: 31 de 32** (Ags NO REVISADA).
+**Sentencias: 24 de 32 + FGR; 8 `NO REVISADA`** (BC · Jal, Gto · Mor, Pue, Hgo, Qro, Tlax). **Armamento: 26 de 32** (NO REVISADA: BCS, Son,
+Dgo, CDMX, Ags, Tlax —la búsqueda de Tlaxcala fue genérica, sin `site:`, y no basta para la casilla SRIV—). **Alto impacto: 31 de 32** (Ags NO REVISADA).
 
 ## 10. Hechos vistos y NO fichados, con motivo
 
@@ -164,15 +171,16 @@ Dgo, CDMX, Ags). **Alto impacto: 31 de 32** (Ags NO REVISADA).
 
 - Densidad: 6 / 22,4 h = **0,27**. Duración: 8-oct 08:56 → 9-oct 07:20 = **22 h 24 min**.
 - Armamento: cortas 1 + 1 = **2**; cartuchos 30 + 29 + 6 = **65**; cargadores **2**; detenidos en evento de aseguramiento **2**.
-- Muertos en hechos propios: 10 + 3 + 1 + 1 = **15** (13 en rojos). Heridos: 16 + 3 (mínimo) = **al menos 19**.
+- Muertos en hechos propios: 1 + 3 + 1 + 10 = **15** (13 en rojos). Heridos: **16 en el penal**; autolavado **2 / 3 / 4 según la fuente, no se suman**.
+- San Luis Potosí: 29 + 6 = **35 cartuchos** de dos intervenciones. Personas en sentencias candidatas: 1 + 5 = **6**. Pánuco–tipo mina: 22-sep → 7-oct = **15 días**.
 - Pánuco: 450 + 220 = 670.
 
 ## 12. Fuentes por ficha
 
-- **`ARG-127-001`** — Luz Noticias 2026-10-08 (dos notas, una «Aumentan a tres»); Línea Directa 2026-10-08; Los Noticieristas 2026/10; Sinaloahoy (s/f); La Jornada 2026/10/09.
-- **`ARG-127-002`** — Noticias Manzanillo («este jueves»); AFmedios (dos notas); Vadenuez; Colima al Día 37939; El Noticiero en Línea; Colima Noticias. Ninguna con fecha en la ruta.
-- **`ARG-127-003`** — Proceso 2026/10/8; Expansión 2026/10/08; La Silla Rota 2026/10/8; El Heraldo de México 2026/10/8; El Financiero 2026/10/08; Informador 20261008; El Mañana 2026/10/8; Infobae 2026/10/09; La Jornada 2026/10/09; Noroeste, Reforma, UnoTV, Azteca Sinaloa, El Siglo de Torreón (s/f).
-- **`ARG-127-004`** — Diario Puntual 2026/10/08; Curul (s/f).
+- **`ARG-127-002`** — Luz Noticias 2026-10-08 (dos notas, una «Aumentan a tres»); Línea Directa 2026-10-08; Los Noticieristas 2026/10 (4 heridos); Noroeste (3 muertos y **2 heridos**; «muere tercera víctima»); Reporte18 (3 heridos); Sinaloahoy (s/f); La Jornada 2026/10/09.
+- **`ARG-127-003`** — Noticias Manzanillo («este jueves»); AFmedios (dos notas); Vadenuez; Colima al Día 37939; El Noticiero en Línea; Colima Noticias. Ninguna con fecha en la ruta.
+- **`ARG-127-004`** — Proceso 2026/10/8; Expansión 2026/10/08; La Silla Rota 2026/10/8; El Heraldo de México 2026/10/8; El Financiero 2026/10/08; Informador 20261008; El Mañana 2026/10/8; Infobae 2026/10/09; La Jornada 2026/10/09; Noroeste, Reforma, UnoTV, Azteca Sinaloa, El Siglo de Torreón (s/f).
+- **`ARG-127-001`** — Diario Puntual 2026/10/08; Síntesis 2026/10/08; Reto Diario 2026/10/08 (nombra a la víctima, no oficial: no se reproduce); Curul y Alcance Diario (s/f). Hora ~19:00 solo por resumen: retirada la marca de frontera.
 - **`ARG-127-005`** — sspsinaloa.gob.mx (post, s/f, no leído); Línea Directa 2026-10-08; Luz Noticias 2026-10-08; Tus Buenas Noticias 2026/10/08; Los Noticieristas y Rotativo (s/f).
 - **`ARG-127-006`** — El Heraldo de SLP 2026/10/08; Potosí Noticias 2026/10/08; Plano Informativo 1174385, Frontal Noticias, San Luis Hoy (s/f).
 - **`ARG-127-REC-001`** — La Voz de Michoacán, Meganoticias 777096, Quadratín (s/f).
@@ -181,9 +189,55 @@ Dgo, CDMX, Ags). **Alto impacto: 31 de 32** (Ags NO REVISADA).
 - **`ARG-127-REC-004`** — Milenio (acciones del 7-oct); Noroeste (CE26333320, *slug*); Línea Directa 2026-10-08.
 - **Sentencias candidatas** — Tribuna 2026/10/08, Expreso, Uniradio, Entorno Informativo (Cajeme); Por Esto 2026/10/8, Tribuna Campeche (Lerma); Hora Cero 2026/10/08 (agregado FGE Veracruz).
 
-## 13. Los dos controles editoriales
+## 13. Los dos controles editoriales — ejecutados sobre la versión estable, los dos con «CORREGIR»
 
-*(se completa tras su ejecución)*
+Racha: **trece pases consecutivos, trece «CORREGIR»** (doce hasta 126 + este). Lanzados en paralelo sobre el borrador ya validado y
+commiteado (`claude/argos-127`, primer commit); **el borrador no se tocó mientras corrían**. Los dos informes citan la **numeración del
+borrador** (ver «Renumeración», al final de esta sección).
+
+**`editor-duplicidad`** — ningún hecho duplicado, ningún falso vacío, ningún descuadre aritmético. Hallazgos y disposición:
+
+| # | Hallazgo | Disposición |
+|---|---|---|
+| H1 | FE-001 integraba Centro, Tabasco, con posible duplicidad | **Corregido**: Centro fuera del recálculo |
+| H2 | Acción 5 de portada usaba «seis detenidos de Ópalo», sin ficha | **Corregido**: acción sobre la cifra e identificaciones de La Curva |
+| H3 | Conclusión 3 generalizaba «el boletín asegura sin detener» | **Corregido**: solo Ojocaliente y Cosalá; Pánuco ya no se repite en el recuadro |
+| H4 | «Cero detenidos por los cuatro violentos» sin respaldo en la ficha del penal | **Corregido**: ficha con «detenidos: no informados»; la Valoración lo declara |
+| H5 | Hechos en tres o más lugares por la Valoración | **Corregido**: la Valoración remite por ARG-ID sin titulares ni cifras de hecho; la advertencia de comparabilidad, solo en la Valoración |
+| H6 | Índice, §13 y `_pendientes.md` | **Corregido** al cierre |
+| H7 | Fecha del hecho = publicación en hechos sin hora | **Corregido**: «Hecho: no fijada (publicado 2026-10-08)» en `-005` y `-006`. El campo `fecha` de `EVENTOS` sigue en 2026-10-08 porque el validador lo exige ≥ apertura |
+| H8 | Razón de asignar REC-002 a 004 a la ventana de 126 | Escrita en §4: 126 reclamó el boletín del 7-oct; hechos del 7-oct, anteriores a la apertura |
+| H9 | Recuento de fuentes del penal | **Corregido**: Nacional 9 · Regional 5 |
+| H10 | Deslindes incompletos (Uruapan, Mazatlán, Colima) | **Corregido** |
+| H11 | Tlaxcala armamento como SRIV sin `site:`; Culiacán 22 años sin fecha | **Corregido**: Tlaxcala `NO REVISADA` (armamento 26 de 32); Culiacán a «sin fecha fijada» |
+| H12 | Acciones 1 y 2 presuponían casquillos y un hecho no fichado | **Corregido**: dictamen balístico y localización del vehículo |
+| — | Totales del panorama repetidos en las tarjetas del módulo | **No se corrige**: precedente de 126; las tarjetas son el bloque obligatorio de iconografía |
+| — | `.txt` omite las fichas `-REC-` y los recuadros; `validar.js` no aplica al móvil | **No se corrige en esta edición**: limitación de `gen-texto.py` y del validador, igual en 126. Pasa a deuda de método |
+
+**`procedencia-cifras`** (12 búsquedas): citables por titular los 10 muertos y 16 heridos del penal, 9 internos y 1 menor, los 3 muertos del
+autolavado, los 3 detenidos de SLP, los 5 laboratorios de Cosalá, los 82 AEI de Pánuco y el muerto de Puebla. Hallazgos y disposición:
+
+| # | Hallazgo | Disposición |
+|---|---|---|
+| 1 | Heridos del autolavado 2 / 3 / 4; «al menos 19» | **Corregido**: contradicción declarada, sin sumar; título sin cifra de heridos |
+| 2 | Culiacán: 30 y 2 solo por resumen; «cargadores por titular» inexacto | **Corregido** en ficha, panel, fila y tarjetas |
+| 3 | SLP: 35 sin declarar como suma; revólveres por resumen | **Corregido**: suma propia declarada; la fila marca dos intervenciones |
+| 4 | Ojocaliente sin marca de resumen | **Corregido** |
+| 5 | Tabasco en FE-001 | **Corregido** (= H1) |
+| 6 | Cosalá: 2.6 t por titular frente a 2,693 kg por resumen; titular de Capital México | **Corregido**: 2.6 t como cifra visible; 2,693 kg marcado; discrepancia declarada |
+| 7 | Conclusión 1: cita de la SSPE entre comillas sin marca; 16 días | **Corregido**: «explosivos para dron» por titular, listado por resumen; 15 días, cálculo propio; 75 AEI como heredada |
+| 8 | Pánuco, 670 cartuchos, segunda edición solo por resumen | **Corregido**: `ARG-127-FE-003`, extendida a El Rosario por la misma regla |
+| 9 | Penal: atribuciones a la SSP no verificadas | **Corregido**: «descarta grupo armado» marcado por resumen; «Grupo Interinstitucional controla» retirado |
+| 10 | Colima: «FGE procesa la escena» sin respaldo | **Corregido**: retirado; institucional 0 |
+| 11 | Puebla: más fuentes fechadas; hora ~19:00; identidad | **Corregido**: Regional 5, tres fechadas; hora por resumen; renumeración |
+| 12 | «6 personas» sin marca | **Corregido** |
+
+**Renumeración antes de publicar** (la hora de Puebla obliga a reordenar del más reciente al más antiguo): Puebla `-004` del borrador →
+**`-001`**; autolavado `-001` → **`-002`**; Colima `-002` → **`-003`**; penal `-003` → **`-004`**. `-005`, `-006` y las `-REC-` no cambian.
+Ningún ARG-ID del borrador llegó a publicarse.
+
+**Segundo pase** — tras las correcciones, `validar.js` → **validación OK** (escritorio) y `gen-movil.py` → **validación OK** (móvil). No hay
+presupuesto de búsqueda para un segundo pase de `procedencia-cifras` (200 de 200); `editor-duplicidad` se relanzó sin búsquedas (abajo).
 
 ## 14. Herramientas
 

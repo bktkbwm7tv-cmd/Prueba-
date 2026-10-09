@@ -8,13 +8,13 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 126 (corte 2026-10-08).
+**Última actualización**: ARGOS 127 (corte 2026-10-09).
 
 ---
 
 ## Arranque de la edición siguiente
 
-**`reports/_arranque-ARGOS-127.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-127.txt`) contiene la orden de arranque para una sesión nueva: verificación
+**`reports/_arranque-ARGOS-128.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-128.txt`) contiene la orden de arranque para una sesión nueva: verificación
 de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y comandos de construcción.
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
@@ -1689,3 +1689,59 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 6. **Portada y conclusiones deben cubrir hechos distintos**: en el borrador de 126 la portada reescribía cuatro de las cinco conclusiones.
 7. **El generador de datos queda en el repositorio** (`tools/datos-argos-126.py`): copiarlo, cambiar los bloques `E`, `R` y `ARM`.
 8. `ARG-126-FE-001` a `-004` están en el índice y en el archivo de fuentes; **no van al cartelón**.
+
+---
+
+## Cerrados por ARGOS 127
+
+| Pendiente | Disposición |
+|---|---|
+| **SONORA · Cócorit** (`ARG-126-001`) | **El muerto se confirma** (15 años) y 3 heridos; «4 heridos, ningún muerto» era la nota preliminar del mismo medio. **El rojo de 126 se mantiene** |
+| **OAXACA · Mixtequilla — fecha** | **Noche del lunes 5-oct** (Infobae, La Silla Rota, MVS 2026/10/6). Detenidos: ninguno publicado (sigue abierto abajo) |
+| **SINALOA · Pánuco — tipología y lugar** | «Explosivos para dron» por titular; listado de la SSPE («para lanzarse por medio de dron») solo por resumen; camino de terracería cerca de Pánuco. **No es «tipo mina»** |
+| **«9 cuerpos en fosa de Nayarit» (La Prensa)** | **DESCARTADO**: junio de 2020, El Valle del Avión |
+| **Ópalo ↔ La Curva** | Vínculo **sí**, por Reforma, fuente única, por resumen. Queda abierto el respaldo oficial |
+| **Coatzacoalcos «3 detenidos el 1-oct»** | **Retirado por fe de erratas** (`ARG-127-FE-002`): segunda edición sin respaldo |
+| **Pánuco 670 cartuchos · El Rosario 1,198 cartuchos** | **Retirados del acumulado de 126** (`ARG-127-FE-003`): segunda edición solo por resumen |
+| **Cosalá, 5 laboratorios** | **Reintegrado** como `ARG-127-REC-004` (titulares de Noroeste y Línea Directa) |
+| **Sentencias: 16 fiscalías `NO REVISADA` de 126** | **Las 16 revisadas** en 127: `SIN RESULTADO INDEXADO EN VENTANA` |
+
+## Abiertos que ARGOS 128 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️⚠️ **SINALOA · Mazatlán, penal El Castillo** (`ARG-127-004`) | Hora de inicio con fuente propia (~10:00, solo por resumen); **edad del menor** (11, 3 o 2 años); **cómo entraron las armas**; tipo de armas; detenidos o responsables; comunicado de la SSP y de la FGE Sinaloa con literal |
+| ⚠️ **SINALOA · Mazatlán, autolavado de Flores Magón** (`ARG-127-002`) | Heridos (2, 3 o 4); detenidos; vehículo; vínculo con el doble homicidio del 6-oct en la misma colonia |
+| ⚠️ **MICHOACÁN · Uruapan, Sol Naciente** (`ARG-127-REC-001`) | Corporación; **detenidos: 1 o 10**; estado de los dos agentes; hora del hecho con fuente propia |
+| **SINALOA · Culiacán, Montecarlo** (`ARG-127-005`) | Literal del post de sspsinaloa.gob.mx: 30 cartuchos .50 y 2 cargadores (hoy solo por resumen). **Si no aparece en 128, fe de erratas** |
+| **SAN LUIS POTOSÍ · capital** (`ARG-127-006`) | Literal de revólveres y cartuchos (29 + 6). **Si no aparece en 128, fe de erratas** |
+| **ZACATECAS · Ojocaliente** (`ARG-127-REC-002`) | Literal de 5 largas, 1,093 cartuchos, 47 cargadores. **Si no aparece en 128, fe de erratas** |
+| **TABASCO · Centro, La Huerta** (`ARG-127-REC-003`) | Arbitrar la **posible duplicidad** con la detención de dos personas de la SSPC (Diario de Tabasco 2026/10/08); literal del desglose |
+| **SINALOA · Cosalá** (`ARG-127-REC-004`) | 2.6 t frente a 2,693 kg; titular de Capital México con 5 laboratorios en tres estados |
+| ⚠️⚠️ **GUERRERO · El Balcón** (`ARG-125-051`) | Peritaje oficial del video del 8-oct (**no difundir su contenido**); cumplimiento del amparo 412/2026 (suspensión del 5-oct, Juzgado Noveno de Distrito, Iguala); marcha; carpeta; El Independiente 2026/10/09 sin leer |
+| ⚠️ **CHIHUAHUA · Balleza** (`ARG-126-REC-004`) | Identidad de los 2 abatidos; hora (noche del 6 o madrugada del 7); 231/230 cartuchos; 5/4/2 vehículos; boletín de la FGE Zona Sur |
+| **CHIHUAHUA · San Francisco de Borja–Nonoava** | El Diario de Chihuahua 2026/oct/08: «dos enfrentamientos, cuatro muertos». **¿Hecho distinto de Balleza o duplicado?** Fecha y lugar |
+| **MICHOACÁN · Penjamillo** | Emboscada a la Guardia Civil ~7-oct, sin heridos: fijar día y hora → `-REC-` 🔴 de 125 o 126 |
+| **NAYARIT · Xalisco** (`ARG-125-003`) | Cifra e identificaciones de la FGE; respaldo oficial del vínculo Ópalo–La Curva |
+| **JALISCO · Guadalajara** (`ARG-125-002`) y **Ixtlahuacán** (`ARG-125-ARM-005`) | Georradar y comunicado; Ixtlahuacán: desglose del 8-oct (2 Browning, 2 .50, 3 largas, 1 corta) frente al del 6-oct |
+| **CHIHUAHUA · Casas Grandes** (`ARG-126-REC-003`) | **Móvil**: un comandante de la AEI dice deuda de drogas, no secuestro; si se confirma, corregir el titular de 126 |
+| **Coatzacoalcos · Zihuatanejo · Mixtequilla · 26 extranjeros · Comonfort · Hermosillo** | Audiencia del 8-oct (causa 540/2026) y contradicción «vinculados» / «prisión preventiva»; retorno y cifra de desplazados; detenidos; nacionalidades; vinculación; orden por el doble homicidio |
+| **Sentencias candidatas** | **En ventana, solo medios**: Cajeme, Luis Carlos «N», 25 años · Campeche (Lerma), FGR, 5 personas · agregado FGE Veracruz del 8-oct. **Previas, nunca vistas**: Matamoros 6 × 25 años 3 días · QRoo hasta 50 años · Buenavista 28 años · Nayarit 240 y 40 años · Culiacán 22 años · FGR Juárez (Senderos), Hermosillo–Sahuaripa, Colima · BCS 21 años. **Heredadas**: las de 126. **Falta boletín oficial en todas** |
+| **Pistas sin leer** | NTR Zacatecas 8-oct, «muere padre de alcaldesa tras ataque armado»; Cancún, mototaxistas (fecha); Morelos, Úrsula Camila Osorio localizada |
+
+## Deuda de método (ARGOS 127)
+
+1. **`extended` se mantiene obligatorio**: en la consulta de control, `standard` dio una nota útil y `extended` llegó al 8-oct.
+2. **Presupuesto**: 200 de 200. La ola (181) dejó **12 búsquedas** a `procedencia-cifras`, que confirmó las cifras críticas pero **no permitió un
+   segundo pase con búsqueda**. Para 128: **ola de ~165** y 25 para el control.
+3. **`SOLO POR RESUMEN` domina el armamento**: las dos filas de 127 y las tres `-REC-` del boletín. **Tres umbrales de fe de erratas vencen
+   en 128** (Montecarlo, SLP, Ojocaliente): buscar el literal **antes** de fichar nada nuevo.
+4. **Casilla SRIV exige búsqueda dirigida** (`site:`): Tlaxcala armamento pasó a `NO REVISADA`. **Prioridad sobre el ciclo en 128**:
+   **sentencias** BC · Jal, Gto · Mor, Pue, Hgo, Qro, Tlax; **armamento** BCS, Son, Dgo, CDMX, Ags, Tlax; **alto impacto** Ags. Después,
+   **CICLO C** (Occidente + Sureste).
+5. **`gen-texto.py` omite las fichas `-REC-` y los tres recuadros** (también en 126), y **`validar.js` no aplica al móvil** (sin `<script>`).
+   Corregir las herramientas.
+6. **Umbral de «víctimas múltiples» con un solo muerto** (`ARG-120-009` frente a Cócorit): sigue sin fijarse en `CLAUDE.md`.
+7. **La renumeración tras el control** se hizo antes de publicar y está declarada en §13 del archivo de fuentes; los informes de control citan
+   la numeración del borrador.
+8. El generador queda en `tools/datos-argos-127.py`; `ARG-127-FE-001` a `-003` están en el índice y en el archivo de fuentes, **no en el cartelón**.

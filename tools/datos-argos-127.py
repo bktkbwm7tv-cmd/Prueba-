@@ -13,60 +13,60 @@ FR = "<code>FRONTERA DE VENTANA — HORA NO FIJADA</code>"
 BOL = "<code>BOLETÍN FEDERAL DEL 7-OCT, PUBLICADO EL 8-OCT, ALCANZADO SOLO POR REPUBLICADORES: CORROBORACIÓN DÉBIL POR CONSTRUCCIÓN</code>"
 # ---------------------------------------------------------------- HECHOS PROPIOS
 E = [
- dict(id="ARG-127-001", estado="MX-SIN", region="Noroeste", color="rojo", impacto="grande", fecha="2026-10-08", hora="~14:20 (solo por resumen)",
-  ent="Sinaloa", mun="Mazatlán (col. Ricardo Flores Magón)", dia="8-OCT ~14:20",
-  title="SINALOA · MAZATLÁN — ATAQUE ARMADO EN UN AUTOLAVADO DE LA COLONIA FLORES MAGÓN: TRES MUERTOS Y AL MENOS TRES HERIDOS",
-  hecho="Mazatlán · <code>AV. DE LAS TORRES Y BAHÍA SANTA MARÍA, COL. RICARDO FLORES MAGÓN</code> · JUEVES 8-OCT ~14:20 · sujetos armados en un Nissan March rojo disparan contra quienes estaban dentro de un autolavado · <b>3 muertos</b>: 2 en el lugar y <b>1 joven de 24 años</b> en el hospital · <b>3 a 4 heridos</b> (🔴) · FGE Sinaloa a cargo · <b>cero detenidos</b> · <code>HERIDOS CONTRADICHOS: 4 FRENTE A 3</code> · hora, vehículo y edad <code>SOLO POR RESUMEN</code> · el tercer muerto, por titular",
-  panel="Ataque en un autolavado: <b>3 muertos</b> y 3 a 4 heridos",
-  inst="<span class=\"muted-note\">SIN BOLETÍN</span>", nac="La Jornada", conf="★★★☆☆",
-  campo="número de heridos y hora", I=0, N=1, R=4, A=0,
-  fechadas=["Luz Noticias (2026-10-08)", "Línea Directa (2026-10-08)", "La Jornada (2026/10/09)"], estatus="Parcialmente corroborado", arm=None,
-  desl="Flores Magón y el autolavado no figuran en el índice. NO es ARG-127-003 (penal El Castillo, mismo municipio y día): otro lugar, otra hora, otras víctimas. Una fuente regional liga la colonia a un doble homicidio del martes 6-oct —otro hecho, no fichado—. 🔴 por homicidio múltiple"),
- dict(id="ARG-127-002", estado="MX-COL", region="Occidente", color="amarillo", impacto="pequeno", fecha="2026-10-08", hora="~12:43, aviso a emergencias (solo por resumen)",
-  ent="Colima", mun="Colima (col. Moctezuma)", dia="8-OCT ~12:43",
-  title="COLIMA · COLIMA — ASESINADO A BALAZOS UN HOMBRE DENTRO DE UN NEGOCIO DE LA COLONIA MOCTEZUMA",
-  hecho="Colima capital · <code>COL. MOCTEZUMA, CALLE MEXICALI</code> · JUEVES 8-OCT, aviso a emergencias ~12:43 · sujetos armados entran a un negocio y disparan contra un hombre; huyen en un vehículo · <b>1 hombre muerto</b> (🟡) · FGE Colima procesa la escena · <b>cero detenidos</b> · identidad no publicada · <code>LUGAR CONTRADICHO: BARBERÍA O ESTÉTICA; MEXICALI Y TAMAULIPAS O MEXICALI Y SONORA</code> · <code>NINGUNA FUENTE CON FECHA EN LA RUTA: EL DÍA, POR TITULAR («ESTE JUEVES»)</code>",
-  panel="<b>1 hombre asesinado</b> a balazos dentro de un negocio",
-  inst="FGE Colima <span class=\"muted-note\">(por cita)</span>", nac="<span class=\"muted-note\">ninguna</span>", conf="★★☆☆☆",
-  campo="ninguna fuente con fecha en la ruta; lugar contradicho", I=1, N=0, R=6, A=0,
-  fechadas=[], estatus="Parcialmente corroborado", arm=None,
-  desl="Colima figura en el índice (ARG-101-002, ARG-104-005, ARG-105-006, ARG-106-002): otros hechos, de agosto. Homicidios en la misma colonia de 2022, 2023 y 2024: otros hechos. 🟡 por homicidio doloso único sin agravantes de la lista roja"),
- dict(id="ARG-127-003", estado="MX-SIN", region="Noroeste", color="rojo", impacto="grande", fecha="2026-10-08", hora="~10:00, petición de apoyo de custodios (solo por resumen)",
-  ent="Sinaloa", mun="Mazatlán (penal El Castillo)", dia="8-OCT ~10:00",
-  title="SINALOA · MAZATLÁN — RIÑA CON DISPAROS EN EL PENAL DE EL CASTILLO: DIEZ MUERTOS, UNO DE ELLOS UN MENOR DE VISITA, Y DIECISÉIS INTERNOS HERIDOS",
-  hecho="Centro Penitenciario <code>EL CASTILLO</code>, Mazatlán · JUEVES 8-OCT, día de visita familiar · riña con disparos entre internos; los custodios piden apoyo ~10:00 · <b>10 muertos</b>: <b>9 internos</b> y <b>1 menor de edad que estaba de visita</b> · <b>16 internos heridos</b>, trasladados a hospitales (🔴) · <b>SSP Sinaloa</b> confirma la cifra; su titular descarta el ingreso de un grupo armado · Grupo Interinstitucional controla el penal · visitas suspendidas · FGE Sinaloa investiga · <code>CIFRA INICIAL: 6 MUERTOS Y 15 HERIDOS</code> · <code>EDAD DEL MENOR CONTRADICHA: NO SE PUBLICA</code> · <code>INGRESO DE LAS ARMAS AL PENAL: SIN EXPLICACIÓN OFICIAL</code> · hora <code>SOLO POR RESUMEN</code>",
-  panel="Riña con disparos en el <b>penal El Castillo</b>: <b>10 muertos</b> —un menor de visita— y <b>16 heridos</b>",
-  inst="SSP Sinaloa <span class=\"muted-note\">(por cita)</span>", nac="Proceso · Expansión · La Silla Rota · El Financiero · Infobae", conf="★★★☆☆",
-  campo="hora del inicio y edad del menor", I=1, N=7, R=4, A=0,
-  fechadas=["Proceso (2026/10/8)", "Expansión (2026/10/08)", "La Silla Rota (2026/10/8)", "El Financiero (2026/10/08)", "Informador (20261008)", "Infobae (2026/10/09)", "La Jornada (2026/10/09)"], estatus="Parcialmente corroborado", arm=None,
-  desl="El Castillo no figura en el índice; Mazatlán figura en cortes de agosto: otros hechos. NO es ARG-127-001 (autolavado de Flores Magón). 🔴 por motín con víctimas, que la lista roja nombra"),
- dict(id="ARG-127-004", estado="MX-PUE", region="Centro", color="amarillo", impacto="pequeno", fecha="2026-10-08", hora="no fijada",
-  ent="Puebla", mun="Puebla (Fuentes de San Bartolo)", dia="8-OCT",
+ dict(id="ARG-127-001", estado="MX-PUE", region="Centro", color="amarillo", impacto="pequeno", fecha="2026-10-08", hora="~19:00 (solo por resumen)",
+  ent="Puebla", mun="Puebla (Fuentes de San Bartolo)", dia="8-OCT ~19:00",
   title="PUEBLA · PUEBLA — ASESINADO A BALAZOS UN HOMBRE DENTRO DE UN AUTOMÓVIL EN FUENTES DE SAN BARTOLO",
-  hecho="Puebla capital · <code>FUENTES DE SAN BARTOLO, 123 PONIENTE Y 11 SUR</code> · publicado JUEVES 8-OCT · <b>1 hombre muerto</b> a balazos dentro de un Mercedes-Benz (🟡) · <b>cero detenidos</b> · identidad no publicada · <code>UN AGRESOR LESIONADO, SOLO POR RESUMEN: NO SE INTEGRA</code> · " + FR,
+  hecho="Puebla capital · <code>FUENTES DE SAN BARTOLO, 123 PONIENTE</code> · JUEVES 8-OCT, ~19:00 (<code>SOLO POR RESUMEN</code>) · <b>1 hombre muerto</b> a balazos dentro de un Mercedes-Benz (🟡) · <b>cero detenidos</b> · identidad publicada por un solo medio, no oficial: no se reproduce · <code>UN AGRESOR LESIONADO, SOLO POR RESUMEN: NO SE INTEGRA</code>",
   panel="<b>1 hombre asesinado</b> a balazos dentro de un automóvil",
   inst="<span class=\"muted-note\">SIN BOLETÍN</span>", nac="<span class=\"muted-note\">ninguna</span>", conf="★★☆☆☆",
-  campo="dos fuentes regionales; hora del hecho", I=0, N=0, R=2, A=0,
-  fechadas=["Diario Puntual (2026/10/08)"], estatus="Pendiente de corroboración", arm=None,
+  campo="sin fuente institucional ni nacional; hora por resumen", I=0, N=0, R=5, A=0,
+  fechadas=["Diario Puntual (2026/10/08)", "Síntesis (2026/10/08)", "Reto Diario (2026/10/08)"], estatus="Pendiente de corroboración", arm=None,
   desl="Fuentes de San Bartolo no figura en el índice; Puebla capital figura en otros cortes: otros hechos. 🟡 por homicidio doloso único sin agravantes de la lista roja"),
+ dict(id="ARG-127-002", estado="MX-SIN", region="Noroeste", color="rojo", impacto="grande", fecha="2026-10-08", hora="~14:20 (solo por resumen)",
+  ent="Sinaloa", mun="Mazatlán (col. Ricardo Flores Magón)", dia="8-OCT ~14:20",
+  title="SINALOA · MAZATLÁN — ATAQUE ARMADO EN UN AUTOLAVADO DE LA COLONIA FLORES MAGÓN: TRES MUERTOS; HERIDOS, DE 2 A 4 SEGÚN LA FUENTE",
+  hecho="Mazatlán · <code>COL. RICARDO FLORES MAGÓN</code> · JUEVES 8-OCT ~14:20 · sujetos armados en un Nissan March rojo disparan contra quienes estaban dentro de un autolavado · <b>3 muertos</b>: 2 en el lugar y <b>1 joven de 24 años</b> en el hospital · <b>heridos</b>: <code>CONTRADICHOS: 2 / 3 / 4 SEGÚN LA FUENTE — NO SE SUMAN</code> (🔴) · FGE Sinaloa a cargo · <b>cero detenidos</b> · los 3 muertos, por titular; hora, calles, vehículo y edad <code>SOLO POR RESUMEN</code>",
+  panel="Ataque en un autolavado: <b>3 muertos</b>; heridos contradichos (2 a 4)",
+  inst="<span class=\"muted-note\">SIN BOLETÍN</span>", nac="La Jornada", conf="★★★☆☆",
+  campo="número de heridos y hora", I=0, N=1, R=6, A=0,
+  fechadas=["Luz Noticias (2026-10-08)", "Línea Directa (2026-10-08)", "La Jornada (2026/10/09)"], estatus="Parcialmente corroborado", arm=None,
+  desl="Flores Magón y el autolavado no figuran en el índice. NO es ARG-127-004 (penal El Castillo, mismo municipio y día): otro lugar, otra hora, otras víctimas. 🔴 por homicidio múltiple"),
+ dict(id="ARG-127-003", estado="MX-COL", region="Occidente", color="amarillo", impacto="pequeno", fecha="2026-10-08", hora="~12:43, aviso a emergencias (solo por resumen)",
+  ent="Colima", mun="Colima (col. Moctezuma)", dia="8-OCT ~12:43",
+  title="COLIMA · COLIMA — ASESINADO A BALAZOS UN HOMBRE DENTRO DE UN NEGOCIO DE LA COLONIA MOCTEZUMA",
+  hecho="Colima capital · <code>COL. MOCTEZUMA, CALLE MEXICALI</code> · JUEVES 8-OCT, aviso a emergencias ~12:43 (<code>SOLO POR RESUMEN</code>) · sujetos armados entran a un negocio y disparan contra un hombre; huyen en un vehículo · <b>1 hombre muerto</b> (🟡) · <b>cero detenidos</b> · identidad no publicada · <code>LUGAR CONTRADICHO: BARBERÍA O ESTÉTICA; MEXICALI Y TAMAULIPAS O MEXICALI Y SONORA</code> · <code>NINGUNA FUENTE CON FECHA EN LA RUTA: EL DÍA, POR TITULAR («ESTE JUEVES»)</code>",
+  panel="<b>1 hombre asesinado</b> a balazos dentro de un negocio",
+  inst="<span class=\"muted-note\">SIN BOLETÍN</span>", nac="<span class=\"muted-note\">ninguna</span>", conf="★★☆☆☆",
+  campo="ninguna fuente con fecha en la ruta; lugar contradicho", I=0, N=0, R=6, A=0,
+  fechadas=[], estatus="Parcialmente corroborado", arm=None,
+  desl="Colima figura en el índice (ARG-101-002, ARG-104-005, ARG-105-006, ARG-106-002, de agosto; ARG-117-003, de septiembre): otros hechos. Homicidios en la misma colonia de 2022, 2023 y 2024: otros hechos. 🟡 por homicidio doloso único sin agravantes de la lista roja"),
+ dict(id="ARG-127-004", estado="MX-SIN", region="Noroeste", color="rojo", impacto="grande", fecha="2026-10-08", hora="~10:00, petición de apoyo de custodios (solo por resumen)",
+  ent="Sinaloa", mun="Mazatlán (penal El Castillo)", dia="8-OCT ~10:00",
+  title="SINALOA · MAZATLÁN — RIÑA CON DISPAROS EN EL PENAL DE EL CASTILLO: DIEZ MUERTOS, UNO DE ELLOS UN MENOR DE VISITA, Y DIECISÉIS INTERNOS HERIDOS",
+  hecho="Centro Penitenciario <code>EL CASTILLO</code>, Mazatlán · JUEVES 8-OCT, día de visita familiar · riña con disparos entre internos; los custodios piden apoyo ~10:00 · <b>10 muertos</b>: <b>9 internos</b> y <b>1 menor de edad que estaba de visita</b> · <b>16 internos heridos</b>, trasladados a hospitales (🔴) · <b>SSP Sinaloa</b> confirma la cifra, por titular · <b>detenidos: no informados</b> · visitas suspendidas · FGE Sinaloa investiga · que el titular de la SSP descarte el ingreso de un grupo armado, <code>SOLO POR RESUMEN</code> · <code>CIFRA INICIAL: 6 MUERTOS Y 15 HERIDOS</code> · <code>EDAD DEL MENOR CONTRADICHA: NO SE PUBLICA</code> · <code>INGRESO DE LAS ARMAS AL PENAL: SIN EXPLICACIÓN OFICIAL</code> · hora <code>SOLO POR RESUMEN</code>",
+  panel="Riña con disparos en el <b>penal El Castillo</b>: <b>10 muertos</b> —un menor de visita— y <b>16 heridos</b>",
+  inst="SSP Sinaloa <span class=\"muted-note\">(por cita)</span>", nac="Proceso · La Jornada · Infobae · El Financiero · Reforma", conf="★★★☆☆",
+  campo="hora del inicio y edad del menor", I=1, N=9, R=5, A=0,
+  fechadas=["Proceso (2026/10/8)", "Expansión (2026/10/08)", "La Silla Rota (2026/10/8)", "El Financiero (2026/10/08)", "Informador (20261008)", "Infobae (2026/10/09)", "La Jornada (2026/10/09)"], estatus="Parcialmente corroborado", arm=None,
+  desl="El Castillo no figura en el índice; Mazatlán figura en 33 ARG-ID, el último ARG-125-046 (24-sep): otros hechos. NO es ARG-127-003 (autolavado de Flores Magón). 🔴 por motín con víctimas, que la lista roja nombra"),
  dict(id="ARG-127-005", estado="MX-SIN", region="Noroeste", color="verde", impacto="mediano", fecha="2026-10-08", hora="no fijada",
   ent="Sinaloa", mun="Culiacán (privada Montecarlo)", dia="8-OCT",
   title="SINALOA · CULIACÁN — CAMIONETA CON BLINDAJE ARTESANAL, TREINTA CARTUCHOS CALIBRE .50 Y DOS CARGADORES PARA FUSIL BARRETT",
-  hecho="Culiacán · <code>PRIVADA MONTECARLO</code> · publicado JUEVES 8-OCT · <b>GOES de la Policía Estatal</b> con el Grupo Interinstitucional, en patrullaje · Chevrolet Cheyenne con <b>blindaje artesanal</b> y sistema ponchallantas · <b>30 cartuchos cal. .50</b> · <b>2 cargadores para fusil tipo Barrett</b> (🟢) · <b>sin arma</b> asegurada · <b>cero detenidos</b> · cifras <code>SOLO POR RESUMEN</code>; cargadores y camioneta, por titular · " + FR,
-  panel="Camioneta blindada: <b>30 cartuchos .50</b> y <b>2 cargadores Barrett</b>; sin arma ni detenidos",
+  hecho="Culiacán · <code>PRIVADA MONTECARLO</code> · publicado JUEVES 8-OCT · <b>GOES de la Policía Estatal</b> con el Grupo Interinstitucional, en patrullaje · Chevrolet Cheyenne con <b>blindaje artesanal</b> y sistema ponchallantas · <b>30 cartuchos cal. .50</b> · <b>2 cargadores para fusil tipo Barrett</b> (🟢) · <b>sin arma</b> asegurada · <b>cero detenidos</b> · <code>30 Y 2: SOLO POR RESUMEN</code>; por titular solo «cargadores» en plural, «municiones calibre 50» y la camioneta · " + FR,
+  panel="Camioneta blindada: <b>30 cartuchos .50</b> y <b>2 cargadores Barrett</b> (solo por resumen); sin arma ni detenidos",
   inst="SSP Sinaloa <span class=\"muted-note\">(post indexado, no leído)</span>", nac="<span class=\"muted-note\">ninguna</span>", conf="★★★☆☆",
   campo="30 y 2, solo por resumen", I=1, N=0, R=5, A=0,
-  fechadas=["Línea Directa (2026-10-08)", "Luz Noticias (2026-10-08)", "Tus Buenas Noticias (2026/10/08)"], estatus="Parcialmente corroborado", arm="ARG-127-ARM-001",
+  fechadas=["Línea Directa (2026-10-08)", "Luz Noticias (2026-10-08)", "Tus Buenas Noticias (2026/10/08)"], estatus="Parcialmente corroborado", arm="ARG-127-ARM-001", fecha_txt="no fijada (publicado 2026-10-08)",
   desl="Montecarlo no figura en el índice. NO es ARG-126-REC-011 (Corolla con lanzagranadas, Centro, 2-oct) ni ARG-126-REC-006 (Parque Alamedas, 6-oct)"),
  dict(id="ARG-127-006", estado="MX-SLP", region="Noreste", color="verde", impacto="pequeno", fecha="2026-10-08", hora="no fijada",
   ent="San Luis Potosí", mun="San Luis Potosí (Real de Peñasco, Rural Atlas, Papagayos)", dia="8-OCT",
-  title="SAN LUIS POTOSÍ · SAN LUIS POTOSÍ — LA GUARDIA CIVIL ESTATAL DETIENE A TRES PERSONAS: DOS REVÓLVERES Y TREINTA Y CINCO CARTUCHOS",
-  hecho="San Luis Potosí capital · tres intervenciones publicadas el JUEVES 8-OCT · <b>Guardia Civil Estatal</b> · <code>REAL DE PEÑASCO</code>: José «N», 29 años, <b>1 revólver</b> y <b>29 cartuchos</b> · <code>RURAL ATLAS</code>: Francisco «N», 47 años, <b>1 revólver</b>, <b>6 cartuchos</b> y 1 vehículo · <code>PAPAGAYOS</code>: Eder «N», 43 años, solo presunta droga (🟢) · <b>3 detenidos</b>, 2 de ellos con arma · desglose <code>SOLO POR RESUMEN</code> · " + FR,
-  panel="<b>3 detenidos</b>, <b>2 revólveres</b> y 35 cartuchos",
+  title="SAN LUIS POTOSÍ · SAN LUIS POTOSÍ — LA GUARDIA CIVIL ESTATAL DETIENE A TRES PERSONAS: DOS REVÓLVERES Y CARTUCHOS",
+  hecho="San Luis Potosí capital · tres intervenciones publicadas el JUEVES 8-OCT · <b>Guardia Civil Estatal</b> · <code>REAL DE PEÑASCO</code>: José «N», 29 años, <b>1 revólver</b> y <b>29 cartuchos</b> · <code>RURAL ATLAS</code>: Francisco «N», 47 años, <b>1 revólver</b>, <b>6 cartuchos</b> y 1 vehículo · <code>PAPAGAYOS</code>: Eder «N», 43 años, solo presunta droga (🟢) · <b>3 detenidos</b>, por titular; 2 de ellos con arma · revólveres, cartuchos, nombres y edades <code>SOLO POR RESUMEN</code> · <b>35 cartuchos</b> = 29 + 6 de dos intervenciones distintas, <b>cálculo propio</b> · " + FR,
+  panel="<b>3 detenidos</b>; 2 revólveres y 35 cartuchos (suma propia, por resumen)",
   inst="SSPC SLP <span class=\"muted-note\">(por cita)</span>", nac="<span class=\"muted-note\">ninguna</span>", conf="★★★☆☆",
   campo="desglose por persona, solo por resumen", I=1, N=0, R=5, A=0,
-  fechadas=["El Heraldo de SLP (2026/10/08)", "Potosí Noticias (2026/10/08)"], estatus="Parcialmente corroborado", arm="ARG-127-ARM-002",
-  desl="Real de Peñasco, Rural Atlas y Papagayos no figuran en el índice. El detenido de Papagayos no entra en el conteo de armamento"),
+  fechadas=["El Heraldo de SLP (2026/10/08)", "Potosí Noticias (2026/10/08)"], estatus="Parcialmente corroborado", arm="ARG-127-ARM-002", fecha_txt="no fijada (publicado 2026-10-08)",
+  desl="Real de Peñasco, Rural Atlas y Papagayos no figuran en el índice. El detenido de Papagayos no entra en el conteo de armamento")
 ]
 
 # ---------------------------------------------------------------- RECUPERACIONES
@@ -77,11 +77,11 @@ R = [
   hecho="<code>VENTANA DE ORIGEN: ARGOS 126</code> · <code>COL. SOL NACIENTE, ORIENTE DE URUAPAN</code> · madrugada del JUEVES 8-OCT, ~03:30-05:00 · agentes federales ejecutan un cateo y son recibidos a balazos · <b>2 agentes heridos</b> (🟡 en su ventana) · <code>DETENIDOS CONTRADICHOS: 1 FRENTE A 10, «SALDO PRELIMINAR»</code> · <code>CORPORACIÓN FEDERAL NO PRECISADA</code> · sin comunicado oficial localizado",
   panel="Cateo federal repelido: <b>2 agentes heridos</b>; detenidos, 1 o 10", inst="<span class=\"muted-note\">SIN BOLETÍN</span>", nac="Meganoticias",
   conf="★★★☆☆", campo="número de detenidos y hora", I=0, N=1, R=2, A=0,
-  fechadas=[], desl="Uruapan figura en el índice (ARG-95-004, ARG-105-004): otros hechos. 🟡: el Estado inicia y es repelido; los heridos no mueven el color"),
+  fechadas=[], desl="Uruapan figura en el índice (ARG-95-004, ARG-105-004, ARG-125-035, ARG-125-036): otros hechos, otras colonias. 🟡: el Estado inicia y es repelido; los heridos no mueven el color"),
  dict(id="ARG-127-REC-002", estado="MX-ZAC", region="Noreste", fecha="2026-10-07", hora="no fijada", orig="ARGOS 126", col_orig="verde",
   ent="Zacatecas", mun="Ojocaliente (Las Coloradas)", dia="7-OCT",
   title="ZACATECAS · OJOCALIENTE — CINCO ARMAS LARGAS, 1,093 CARTUCHOS Y 47 CARGADORES EN LAS COLORADAS",
-  hecho="<code>VENTANA DE ORIGEN: ARGOS 126</code> · <code>LAS COLORADAS</code> · acciones del MIÉRCOLES 7-OCT · <b>Ejército</b> · <b>5 armas largas</b> · <b>1,093 cartuchos</b> · <b>47 cargadores</b> · 7 chalecos tácticos, 12 placas balísticas, 2 vehículos (🟢 en su ventana) · <b>sin detenidos publicados</b> · ninguna nota reporta agresión ni enfrentamiento · " + BOL,
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 126</code> · <code>LAS COLORADAS</code> · acciones del MIÉRCOLES 7-OCT · <b>Ejército</b> · <b>5 armas largas</b> · <b>1,093 cartuchos</b> · <b>47 cargadores</b> · 7 chalecos tácticos, 12 placas balísticas, 2 vehículos (🟢 en su ventana) · <b>sin detenidos publicados</b> · desglose <code>SOLO POR RESUMEN</code> · ninguna nota reporta agresión ni enfrentamiento · " + BOL,
   panel="<b>5 armas largas</b>, <b>1,093 cartuchos</b> y 47 cargadores; sin detenidos", inst="Gabinete de Seguridad <span class=\"muted-note\">(por republicador)</span>", nac="Milenio",
   conf="★★★☆☆", campo="republicadores de un mismo boletín", I=1, N=1, R=3, A=0,
   fechadas=["Milenio (acciones del 7-oct en la ruta)"], desl="Ojocaliente figura en el índice (ARG-112-001, coche bomba del 30-ago; ARG-114-001): otros hechos. Las Coloradas no figura"),
@@ -94,9 +94,9 @@ R = [
   fechadas=["Milenio (acciones del 7-oct en la ruta)", "El Independiente (2026/10/08)"], desl="La Huerta no figura en el índice. NO es ARG-124-ARM-008 (Centro, 23-sep)"),
  dict(id="ARG-127-REC-004", estado="MX-SIN", region="Noroeste", fecha="2026-10-07", hora="no fijada", orig="ARGOS 126", col_orig="verde",
   ent="Sinaloa", mun="Cosalá", dia="7-OCT",
-  title="SINALOA · COSALÁ — CINCO LABORATORIOS CLANDESTINOS INHABILITADOS Y 2,693 KILOS DE METANFETAMINA DESTRUIDOS",
-  hecho="<code>VENTANA DE ORIGEN: ARGOS 126</code> · acciones del MIÉRCOLES 7-OCT · <b>SSPC y FGR</b> · <b>5 laboratorios</b> inhabilitados, por <i>slug</i> de un medio regional · <b>2,693 kg de metanfetamina</b> destruidos · 450 kg de sólido blanco y 450 kg de sosa cáustica (🟢 en su ventana) · <b>sin armamento</b> · detenidos no informados · cifras de sustancias <code>SOLO POR RESUMEN</code> · " + BOL,
-  panel="<b>5 laboratorios</b> inhabilitados y <b>2,693 kg de metanfetamina</b> destruidos", inst="Gabinete de Seguridad <span class=\"muted-note\">(por republicador)</span>", nac="Milenio",
+  title="SINALOA · COSALÁ — CINCO LABORATORIOS CLANDESTINOS INHABILITADOS Y 2.6 TONELADAS DE METANFETAMINA DESTRUIDAS",
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 126</code> · acciones del MIÉRCOLES 7-OCT · <b>SSPC y FGR</b> · <b>5 laboratorios</b> inhabilitados, por titular de dos medios regionales · <b>2.6 toneladas de metanfetamina</b> destruidas, por titular; <code>2,693 KG, 450 KG DE SÓLIDO BLANCO Y 450 KG DE SOSA: SOLO POR RESUMEN</code> (🟢 en su ventana) · <b>sin armamento</b> · detenidos no informados · <code>UN TITULAR NACIONAL SITÚA CINCO LABORATORIOS EN JALISCO, NAYARIT Y SINALOA: NO ARBITRADO</code> · " + BOL,
+  panel="<b>5 laboratorios</b> inhabilitados y <b>2.6 t de metanfetamina</b> destruidas", inst="Gabinete de Seguridad <span class=\"muted-note\">(por republicador)</span>", nac="Milenio",
   conf="★★★☆☆", campo="cifras de sustancias solo por resumen", I=1, N=1, R=2, A=0,
   fechadas=["Línea Directa (2026-10-08)"], desl="Cosalá no figura en el índice en octubre. ARGOS 126 lo retiró por falta de fragmento; la cifra de laboratorios ya se sostiene en el slug de Noroeste"),
 ]
@@ -106,8 +106,8 @@ for r in R:
 # ---------------------------------------------------------------- ARMAMENTO (solo hechos propios)
 # cortas, largas, sincat, especial, cartuchos, cargadores, granadas, aei, explosivos, detenidos
 ARM = [
- dict(id="ARG-127-ARM-001", ficha="ARG-127-005", estado="MX-SIN", region="Noroeste", ent="Sinaloa", mun="Culiacán (privada Montecarlo)", c=[0,0,0,0,30,2,0,0,0,0], corp="GOES + Grupo Interinstitucional", conf="Bajo", nota="cartuchos cal. .50 y cargadores para Barrett, sin arma", fuentes=["Línea Directa (2026-10-08)", "Luz Noticias (2026-10-08)"]),
- dict(id="ARG-127-ARM-002", ficha="ARG-127-006", estado="MX-SLP", region="Noreste", ent="San Luis Potosí", mun="San Luis Potosí", c=[2,0,0,0,35,0,0,0,0,2], corp="Guardia Civil Estatal", conf="Bajo", nota="dos revólveres; 1 detenido más, sin arma, fuera del conteo", fuentes=["El Heraldo de SLP (2026/10/08)", "Potosí Noticias (2026/10/08)"]),
+ dict(id="ARG-127-ARM-001", ficha="ARG-127-005", estado="MX-SIN", region="Noroeste", ent="Sinaloa", mun="Culiacán (privada Montecarlo)", c=[0,0,0,0,30,2,0,0,0,0], corp="GOES + Grupo Interinstitucional", conf="Bajo", nota="cartuchos cal. .50 y cargadores para Barrett, sin arma; 30 y 2 solo por resumen", fuentes=["Línea Directa (2026-10-08)", "Luz Noticias (2026-10-08)"]),
+ dict(id="ARG-127-ARM-002", ficha="ARG-127-006", estado="MX-SLP", region="Noreste", ent="San Luis Potosí", mun="San Luis Potosí", c=[2,0,0,0,35,0,0,0,0,2], corp="Guardia Civil Estatal", conf="Bajo", nota="dos intervenciones (29 + 6 cartuchos, suma propia); cifras solo por resumen; 1 detenido más, sin arma, fuera del conteo", fuentes=["El Heraldo de SLP (2026/10/08)", "Potosí Noticias (2026/10/08)"]),
 ]
 TOT = [sum(a["c"][i] for a in ARM) for i in range(10)]
 ARMAS = TOT[0] + TOT[1] + TOT[2] + TOT[3]
@@ -138,7 +138,7 @@ def ficha(e, rec=False):
         <code>{e["id"]}</code> · <b>Confianza</b>: {nivel} ({e["conf"]}), <b>la fija el campo peor sostenido</b>: {e["campo"]} ·
         <b>Fuentes</b>: <b>Institucional {e["I"]}</b> · <b>Nacional {e["N"]}</b> · <b>Regional {e["R"]}</b> · <b>Abierta {e["A"]}</b> ·
         con fecha en la ruta: {fech}
-        · <b>Hecho</b>: {e["fecha"]} · <b>Hora</b>: {e["hora"]} · <b>Consulta</b>: {CONSULTA} ·
+        · <b>Hecho</b>: {e.get("fecha_txt", e["fecha"])} · <b>Hora</b>: {e["hora"]} · <b>Consulta</b>: {CONSULTA} ·
         <b>Estatus</b>: {e.get("estatus", "Parcialmente corroborado")} · {armtxt}<br><b>Deslindes y reservas</b>: {e["desl"]}
       </div>
     </div>
@@ -226,16 +226,16 @@ port = f'''<section class="page">
   <div class="alerta contexto">
     <div class="flag">LO QUE DEBE HACER EL MANDO</div>
     <p>
-      <b>1. AUDITE EL INGRESO DE ARMAS AL PENAL EL CASTILLO</b> (ARG-127-003): registros de aduana, custodios de turno y control de la
-      visita familiar del 8-oct; balística de las armas y casquillos recuperados.
-      <br><b>2. COTEJE LOS CASQUILLOS DEL AUTOLAVADO DE FLORES MAGÓN</b> (ARG-127-001) con los homicidios recientes de la misma colonia
-      de Mazatlán, y localice el Nissan March rojo.
+      <b>1. EXIJA EL DICTAMEN BALÍSTICO Y EL ORIGEN DE LAS ARMAS DEL PENAL EL CASTILLO</b> (ARG-127-004): cómo entraron, quién custodiaba
+      y cómo se controló la visita familiar del 8-oct.
+      <br><b>2. LOCALICE EL VEHÍCULO DE LOS ATACANTES DEL AUTOLAVADO DE FLORES MAGÓN</b> (ARG-127-002) —un Nissan March rojo, solo por
+      resumen— con cámaras y lectores de placas de Mazatlán.
       <br><b>3. EXIJA EL PARTE DEL CATEO DE SOL NACIENTE, URUAPAN</b> (ARG-127-REC-001): corporación, número real de detenidos —1 o 10—
       y estado de los dos agentes heridos.
       <br><b>4. VIGILE EL CUMPLIMIENTO DEL AMPARO 412/2026</b> para los siete desaparecidos de El Balcón (ARG-125-051) y exija el peritaje
       oficial del video del 8-oct antes de usarlo como dato.
-      <br><b>5. COTEJE A LOS SEIS DETENIDOS DE ÓPALO CON EL PREDIO DE LA CURVA</b>, Xalisco (ARG-125-003): vínculo publicado por un solo
-      medio; carpeta, cadena de custodia e identificaciones de la Fiscalía de Nayarit.
+      <br><b>5. EXIJA A LA FISCALÍA DE NAYARIT LA CIFRA E IDENTIFICACIONES DE LA CURVA</b>, Xalisco (ARG-125-003): la Presidencia y la
+      CNB remiten a ella y no hay comunicado indexado.
     </p>
   </div>
 
@@ -246,8 +246,7 @@ rows_own = "\n".join(prow(e) for e in E)
 rows_rec = "\n".join(prow(r, True) for r in R)
 panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
     Ventana <b>8-oct 08:56 → 9-oct 07:20 CDMX</b> (<b>{DUR}</b>) · <b>{len(E)} hechos propios</b> en <b>{len(ENT)} entidades</b> ·
-    <b>densidad 0,27 hechos/hora</b>, <b>cálculo propio</b>. <b>Orden: del más reciente al más antiguo</b>; al final, los de hora no fijada.
-    <br><code>TRES DE LOS SEIS HECHOS PROPIOS LLEVAN FRONTERA DE VENTANA — HORA NO FIJADA, Y LAS HORAS DE LOS OTROS TRES SOLO SE SOSTIENEN POR RESUMEN.</code>
+    <b>densidad 0,27 hechos/hora</b>, <b>cálculo propio</b>. <b>Orden: del más reciente al más antiguo</b>; al final, los dos de hora no fijada.
     <br><code>LAS {len(R)} RECUPERACIONES DEL FINAL PERTENECEN A LA VENTANA DE ARGOS 126 Y QUEDAN FUERA DEL SEMÁFORO, DEL MAPA, DEL RADAR Y DE TODOS LOS TOTALES.</code>
     <br><b>Toque un ARG-ID para ir a su ficha</b>, donde están las fuentes, el nivel de confianza y los deslindes.
   </p>
@@ -269,8 +268,8 @@ panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
     <b>Total de armas integradas: {ARMAS}</b> —{TOT[0]} cortas, <b>cálculo propio</b>—. <b>Cartuchos y cargadores nunca se suman entre sí.</b>
-    <b>Detenidos</b> = solo los del <b>mismo evento de aseguramiento</b>; fuera de ese conteo, <b>1 detenido</b> sin arma en San Luis Potosí (ARG-127-006). <b>Entidades</b> = con al menos un hecho propio.
-    <b>Muertos en hechos propios: 15</b> —<b>13 en los dos rojos de Mazatlán</b> y 2 en los amarillos de Colima y Puebla—, más <b>al menos 19 heridos</b> —16 en el penal y 3 a 4 en el autolavado—: <b>cálculo propio</b>.
+    <b>Detenidos</b> = solo los del <b>mismo evento de aseguramiento</b>; fuera de ese conteo, <b>1 detenido</b> sin arma en San Luis Potosí (ARG-127-006). Cifras de armamento <b>solo por resumen</b> en las dos filas. <b>Entidades</b> = con al menos un hecho propio.
+    <b>Muertos en hechos propios: 15</b> —<b>13 en los dos rojos de Mazatlán</b> y 2 en los amarillos de Colima y Puebla—, más <b>16 heridos en el penal</b> y, en el autolavado, <b>de 2 a 4 según la fuente, sin sumar</b>: <b>cálculo propio</b>.
   </p>
 '''
 
@@ -287,8 +286,8 @@ tiles = "\n".join([
  tile(0, "Armas cortas", TOT[0], "<code>DOS REVÓLVERES, SIN CALIBRE PUBLICADO</code>"),
  tile(1, "Armas largas", TOT[1], "<code>NINGUNA ARMA LARGA EN HECHO PROPIO</code>"),
  tile(2, "Sin categoría", TOT[2], "<code>NINGUNA ARMA SIN CLASIFICAR</code>"),
- tile(3, "Cartuchos", fmt(TOT[4]), "<code>30 DE ELLOS, CAL. .50</code>"),
- tile(4, "Cargadores", TOT[5], "<code>LOS DOS, PARA FUSIL TIPO BARRETT</code>"),
+ tile(3, "Cartuchos", fmt(TOT[4]), "<code>30 DE ELLOS, CAL. .50 · TODOS SOLO POR RESUMEN</code>"),
+ tile(4, "Cargadores", TOT[5], "<code>LOS DOS, PARA FUSIL TIPO BARRETT · SOLO POR RESUMEN</code>"),
  tile(5, "Granadas", TOT[6], "<code>NINGUNA GRANADA PUBLICADA</code>"),
  tile(6, "AEI", TOT[7], "<code>NINGÚN AEI EN HECHO PROPIO</code>"),
  tile(7, "Explosivos", TOT[8], "<code>NINGÚN EXPLOSIVO, DETONADOR NI INICIADOR PUBLICADO</code>"),
@@ -336,7 +335,7 @@ arm2 = f'''  <div class="table-wrap"><table class="exec wide">
 
 sent = f'''  <div class="conteo">
     <div class="tile cero"><span class="lbl">Sentencias condenatorias</span><span class="num">0</span><span class="sub"><code>NINGUNA CON BOLETÍN DEL DOMINIO OFICIAL EN LA VENTANA</code> · dos publicadas por medios el 8-oct, abajo</span></div>
-    <div class="tile cero"><span class="lbl">Personas sentenciadas</span><span class="num">0</span><span class="sub"><b>6 personas</b> en dos candidatas con pena publicada quedan en <code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code></span></div>
+    <div class="tile cero"><span class="lbl">Personas sentenciadas</span><span class="num">0</span><span class="sub"><b>6 personas</b> —1 + 5, <b>suma propia</b>— en dos candidatas con pena publicada quedan en <code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code></span></div>
     <div class="tile cero"><span class="lbl">Pena acumulada</span><span class="num">0</span><span class="sub"><b>los años nunca se suman entre casos</b></span></div>
     <div class="tile cero"><span class="lbl">Reparación del daño</span><span class="num">0</span><span class="sub"><b>ningún monto ordenado y publicado</b> en la ventana</span></div>
     <div class="tile cero"><span class="lbl">Fiscalías con resultado</span><span class="num">0</span><span class="sub"><b>de 24 revisadas más la FGR</b> · 8 <code>NO REVISADA</code></span></div>
@@ -352,7 +351,7 @@ sent = f'''  <div class="conteo">
     </tbody>
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
-    <b>Vistas por primera vez, publicadas antes de la apertura y sin boletín oficial</b>: Matamoros, Tamps., 6 sentenciados a 25 años 3 días por la desaparición de cuatro estadounidenses (6-oct) · Quintana Roo, FGE, hasta 50 años (7-oct) · Buenavista, Mich., 28 años a dos (~7-oct) · Nayarit, 240 años por secuestro (3-oct) y 40 años (6-oct) · Culiacán, 22 años (oct., día no fijado) · FGR: Juárez, Senderos de San Isidro, 6 a 8 m a tres (6-oct); Hermosillo–Sahuaripa, 15 años a tres (6-oct); Colima, 4 años a tres · BCS, La Paz, 21 años (1-oct). <code>NO SE INTEGRAN.</code>
+    <b>Vistas por primera vez, publicadas antes de la apertura y sin boletín oficial</b>: Matamoros, Tamps., 6 sentenciados a 25 años 3 días por la desaparición de cuatro estadounidenses (6-oct) · Quintana Roo, FGE, hasta 50 años (7-oct) · Buenavista, Mich., 28 años a dos (~7-oct) · Nayarit, 240 años por secuestro (3-oct) y 40 años (6-oct) · FGR: Juárez, Senderos de San Isidro, 6 a 8 m a tres (6-oct); Hermosillo–Sahuaripa, 15 años a tres (6-oct); Colima, 4 años a tres · BCS, La Paz, 21 años (1-oct). <b>Sin fecha fijada</b>: Culiacán, 22 años (ruta solo con mes). <code>NO SE INTEGRAN.</code>
     <br><b>Candidatos heredados, siguen sin boletín oficial</b>: Juárez FGR (Acequias) · NL, Laurentino «N», 44 años · Edomex ×4 · Santa Catarina · Cárdenas FGR · San Andrés Tuxtla · Nogales · Tijuana FGR · Puebla · Hidalgo · Lagos de Moreno. <code>NO SE INTEGRAN.</code>
   </p>
   <div class="section-head" style="margin-top:10px;">INDICADOR DE COBERTURA</div>
@@ -365,7 +364,7 @@ sent = f'''  <div class="conteo">
       <tr><td><code>SIN RESULTADO INDEXADO EN VENTANA</code></td><td><b>22</b> fiscalías estatales</td></tr>
       <tr><td><code>SIN ACTUALIZACIÓN CONSTATADA</code></td><td><b>0</b> · exige lectura directa del portal</td></tr>
       <tr><td><code>NO REVISADA</code> — sentencias</td><td><b>8</b>: BC · Jal, Gto · Mor, Pue, Hgo, Qro, Tlax</td></tr>
-      <tr><td><b>Alto impacto y armamento</b></td><td><b>Alto impacto: 31 de 32</b> —Aguascalientes, <code>NO REVISADA</code>— · <b>armamento: 27 de 32</b> —BCS, Son, Dgo, CDMX y Ags, <code>NO REVISADA</code>— · Morelos y Tlaxcala, <code>SIN RESULTADO INDEXADO EN VENTANA</code> · GN, SEDENA y SEMAR regionales: <code>NO REVISADA</code></td></tr>
+      <tr><td><b>Alto impacto y armamento</b></td><td><b>Alto impacto: 31 de 32</b> —Aguascalientes, <code>NO REVISADA</code>— · <b>armamento: 26 de 32</b> —BCS, Son, Dgo, CDMX, Ags y Tlaxcala, <code>NO REVISADA</code>— · Morelos, <code>SIN RESULTADO INDEXADO EN VENTANA</code> por <code>site:</code> · GN, SEDENA y SEMAR regionales: <code>NO REVISADA</code></td></tr>
       <tr><td><b>Boletín federal</b></td><td><b>Acciones del 7-oct</b>: publicado el 8-oct, diario, por republicadores · <b>acciones del 8-oct</b>: <code>SIN RESULTADO INDEXADO EN VENTANA</code> en las tres formas</td></tr>
       <tr><td><b>Techo de confianza del producto</b></td><td><b>★★★☆☆</b> · <code>BLOQUEO DE EGRESO REVERIFICADO EL 9-OCT: GOB.MX</code></td></tr>
     </tbody>
@@ -375,27 +374,27 @@ sent = f'''  <div class="conteo">
 cierre = f'''  <div class="alerta contexto">
     <div class="flag">VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL</div>
     <p>
-      <b>1.</b> <b>DOS ROJOS FIJAN EL NIVEL, LOS DOS EN MAZATLÁN Y EL MISMO DÍA</b>: riña con disparos en el penal El Castillo —<b>10 muertos</b>, un menor de visita, y <b>16 heridos</b>— y ataque en un autolavado —<b>3 muertos</b>—.
-      <br><b>2.</b> <b>Dos amarillos</b> —homicidios únicos en Colima y Puebla— y <b>dos verdes</b>: munición .50 en Culiacán y tres detenidos en San Luis Potosí.
-      <br><b>3.</b> <b>15 muertos</b> en hechos propios, 13 en rojos, y <b>cero detenidos por los cuatro hechos violentos</b> —<b>cálculo propio</b>—.
-      <br><b>4.</b> Las recuperaciones de la ventana de ARGOS 126 añaden <b>un cateo federal repelido en Uruapan</b>, con dos agentes heridos, y tres verdes del boletín del 7-oct.
-      <br><b>5.</b> <code>22 H 24 MIN, TRES DE SEIS HECHOS CON FRONTERA DE VENTANA Y EL BOLETÍN FEDERAL DEL 8-OCT SIN INDEXAR: LOS TOTALES NO SON COMPARABLES SIN MÁS.</code>
+      <b>1.</b> <b>NIVEL FIJADO POR DOS ROJOS EN EL MISMO MUNICIPIO Y EL MISMO DÍA</b>: motín con víctimas (ARG-127-004) y homicidio múltiple (ARG-127-002), Mazatlán.
+      <br><b>2.</b> <b>Dos amarillos</b> por homicidio doloso único (ARG-127-001, ARG-127-003) y <b>dos verdes</b> de aseguramiento (ARG-127-005, ARG-127-006).
+      <br><b>3.</b> <b>15 muertos</b> en hechos propios, 13 en rojos; <b>ningún detenido publicado</b> por los cuatro hechos violentos —en el penal, no informados—: <b>cálculo propio</b>.
+      <br><b>4.</b> Las cuatro recuperaciones de la ventana de ARGOS 126 —un amarillo y tres verdes— quedan fuera del nivel y de los totales.
+      <br><b>5.</b> <code>22 H 24 MIN; DOS DE SEIS HECHOS CON FRONTERA DE VENTANA Y LAS HORAS DE LOS OTROS CUATRO SOLO POR RESUMEN; BOLETÍN FEDERAL DEL 8-OCT SIN INDEXAR: TOTALES NO COMPARABLES SIN MÁS.</code>
     </p>
   </div>
 
   <div class="alerta contexto" style="margin-top:8px;">
     <div class="flag">CONCLUSIONES DE INTELIGENCIA CRIMINAL</div>
     <p>
-      <b>1. EN CONCORDIA EL AEI SE CARGA EN DRON.</b> La SSPE describe los 82 artefactos de Pánuco «para lanzarse por medio de dron» (ARG-126-004), tras 75 «tipo mina» en el mismo
-      municipio el 22-sep (ARG-124-003): dos tipologías en 16 días. Línea: <b>taller y operadores de dron</b> en la sierra de Concordia — hipótesis, requiere validación.
-      <br><b>2. EL CALIBRE .50 CIRCULA EN CULIACÁN.</b> Cargadores Barrett y 30 cartuchos .50 en una camioneta con blindaje artesanal, sin el fusil (ARG-127-005), tras el fusil
-      con lanzagranadas del 2-oct (ARG-126-REC-011). Línea: <b>rastreo del fusil .50</b> y de los talleres de blindaje.
-      <br><b>3. EL BOLETÍN FEDERAL ASEGURA SIN DETENER.</b> 5 largas y 1,093 cartuchos en Ojocaliente (ARG-127-REC-002), 82 AEI en Pánuco y 5 laboratorios en Cosalá (ARG-127-REC-004):
-      ninguna detención publicada. Línea: <b>exigir detenidos y carpeta</b> por cada aseguramiento mayor.
-      <br><b>4. EJECUCIÓN URBANA DE DÍA, SIN DETENIDOS.</b> Colima dentro de un negocio a mediodía (ARG-127-002) y Puebla dentro de un automóvil (ARG-127-004): atacantes en
-      vehículo y huida limpia. Línea: <b>videovigilancia y placas</b> de los vehículos de huida.
-      <br><b>5. LA BRECHA ENTRE DETENCIÓN Y CONDENA SIGUE ABIERTA.</b> 24 fiscalías revisadas y <b>ninguna sentencia con boletín oficial</b>; las dos candidatas del 8-oct —Cajeme, 25 años,
-      y Campeche, FGR— solo existen en medios. Línea: <b>exigir el boletín</b> de cada sentencia anunciada.
+      <b>1. EN CONCORDIA EL AEI SE CARGA EN DRON.</b> Los titulares describen «explosivos para dron» en Pánuco (ARG-126-004) —el listado de la SSPE, solo por resumen—, 15 días
+      después de los «tipo mina» del mismo municipio (ARG-124-003, cifra heredada): dos tipologías, <b>cálculo propio de fechas</b>. Línea: <b>taller y operadores de dron</b> — hipótesis.
+      <br><b>2. EL CALIBRE .50 CIRCULA EN CULIACÁN SIN SU FUSIL.</b> Munición .50 y cargadores Barrett en una camioneta con blindaje artesanal (ARG-127-005), tras el fusil con
+      lanzagranadas del 2-oct (ARG-126-REC-011). Línea: <b>rastreo del fusil .50</b> y de los talleres de blindaje.
+      <br><b>3. DOS RENGLONES MAYORES DEL BOLETÍN DEL 7-OCT, SIN DETENIDOS.</b> Ojocaliente (ARG-127-REC-002) y Cosalá (ARG-127-REC-004) aseguran y destruyen sin detención publicada.
+      Línea: <b>exigir detenidos y carpeta</b> por cada aseguramiento mayor.
+      <br><b>4. EJECUCIÓN URBANA DENTRO DE NEGOCIOS Y VEHÍCULOS.</b> Colima (ARG-127-003) y Puebla (ARG-127-001): atacantes que llegan en vehículo y huyen sin detenidos.
+      Línea: <b>videovigilancia y placas</b> de los vehículos de huida.
+      <br><b>5. LA BRECHA ENTRE DETENCIÓN Y CONDENA SIGUE ABIERTA.</b> Ninguna sentencia con boletín oficial en la ventana; las dos candidatas —Cajeme y Campeche, FGR— solo
+      existen en medios. Línea: <b>exigir el boletín</b> de cada sentencia anunciada.
     </p>
   </div>
 
@@ -410,8 +409,8 @@ cierre = f'''  <div class="alerta contexto">
 
 body = (port
  + page("PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD", panorama_body)
- + page("CRIMEN ORGANIZADO (I) — JUEVES 8-OCT: MAZATLÁN Y COLIMA", co1)
- + page("CRIMEN ORGANIZADO (II) — JUEVES 8-OCT, HORA NO FIJADA", co2)
+ + page("CRIMEN ORGANIZADO (I) — JUEVES 8-OCT: PUEBLA, MAZATLÁN Y COLIMA", co1)
+ + page("CRIMEN ORGANIZADO (II) — JUEVES 8-OCT: PENAL EL CASTILLO Y HECHOS DE HORA NO FIJADA", co2)
  + page("CRIMEN ORGANIZADO (III) — RECUPERACIONES DE LA VENTANA DE ARGOS 126: 8 Y 7-OCT", rec1)
  + page("CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS", arm1)
  + page("ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD", arm2)
