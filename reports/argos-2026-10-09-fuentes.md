@@ -96,7 +96,7 @@ enfrentamiento. Pánuco: los civiles armados **huyeron al monte**, sin combate.
 ## 8. Fe de erratas (no va al cartelón)
 
 - **`ARG-127-FE-001`** — sobre **ARGOS 126**: cuatro hechos de su ventana no publicados (`ARG-127-REC-001` a `-004`). Efecto: rojos 1 → 1,
-  amarillos 1 → 2, verdes 5 → 8. **Cosalá reintegrado** tras su retiro en 126. Armamento: **se integra solo Ojocaliente** (5 largas, 1,093
+  amarillos 1 → 2, **verdes 5 → 7** —Ojocaliente y Cosalá—; **Centro, Tabasco, sería el octavo** y queda con la misma reserva de duplicidad que su armamento. **Cosalá reintegrado** tras su retiro en 126. Armamento: **se integra solo Ojocaliente** (5 largas, 1,093
   cartuchos, 47 cargadores, **solo por resumen**). **Centro, Tabasco** (3 cortas, 4 largas, 540 cartuchos, 7 cargadores, 2 detenidos) queda
   `POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN` (hallazgo de los dos controles).
 - **`ARG-127-FE-003`** — sobre **`ARG-126-004` / `ARG-126-ARM-002` (Pánuco)** y **`ARG-126-005` / `ARG-126-ARM-003` (El Rosario)**: los
@@ -238,6 +238,25 @@ Ningún ARG-ID del borrador llegó a publicarse.
 
 **Segundo pase** — tras las correcciones, `validar.js` → **validación OK** (escritorio) y `gen-movil.py` → **validación OK** (móvil). No hay
 presupuesto de búsqueda para un segundo pase de `procedencia-cifras` (200 de 200); `editor-duplicidad` se relanzó sin búsquedas (abajo).
+
+**Segundo pase de `editor-duplicidad`** (sin búsquedas) — **CORREGIR**. Verificó aplicadas H2, H3, H4, H8-H12, la renumeración en todas las
+zonas salvo una, y todos los cálculos de §8 y §11. Hallazgos y disposición:
+
+| # | Hallazgo | Disposición |
+|---|---|---|
+| 1 | Deslinde del penal apuntaba a `-003` como autolavado | **Corregido**: `-002` |
+| 2 | FE-001 contaba Centro en el semáforo de 126 | **Corregido**: verdes 5 → 7, Centro con reserva |
+| 3 | Fecha del hecho en la tabla ARM y en el panorama de `-005`/`-006` | **Corregido**: «no fijada · pub. 2026-10-08» y «PUB. 8-OCT, HORA NO FIJADA» |
+| 4 | La Valoración reimprimía muertos y conteos | **Corregido**: las cifras quedan solo en el panorama |
+| 5 | Advertencia del boletín sin indexar en el panorama | **Corregido**: retirada del panorama; queda en Valoración y cobertura |
+| 6 | Lista de fuentes fechadas del penal incompleta | **Corregido**: El Heraldo de México y El Mañana |
+| 7 | «El último ARG-125-046» inexacto | **Corregido**: el más reciente es `ARG-125-ARM-013` (2-oct) |
+| 8 | Móvil: «los 9 ARG-ID del módulo de armamento», texto fijo | **Corregido en la herramienta**: `gen-movil.py` cuenta las filas `-ARM-` del escritorio |
+| 9 | Conclusiones 2-4 y acción 2 reescribían el hecho | **Corregido**: solo patrón y línea; acción 2 sin el vehículo |
+| 10 | `_pendientes.md` afirmaba FE en el índice antes de tiempo | **Corregido**: índice actualizado con los 15 ARG-ID de 127 |
+
+Tras este pase, `validar.js` y `gen-movil.py` → **validación OK**. **No se lanzó un tercer pase**: los diez hallazgos eran de redacción y
+referencia, ninguno de hecho ni de cifra, y el presupuesto de búsqueda estaba agotado.
 
 ## 14. Herramientas
 
