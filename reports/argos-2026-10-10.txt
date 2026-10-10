@@ -1,0 +1,369 @@
+ARGOS 128 — REPORTE NACIONAL DE SEGURIDAD
+REPORTE DIARIO DE INTELIGENCIA CRIMINAL
+«INVESTIGACIONES, BÚSQUEDA Y VERDAD»
+
+Corte informativo: 2026-10-10 · 09:08 (CDMX)
+Ventana: 9-oct 07:20 → 10-oct 09:08 CDMX (25 h 48 min)
+Versión 3.0 · Corte matutino · USO INSTITUCIONAL
+
+============================================================================
+
+[ RADAR CENTRAL — EN VIVO ]
+
+  · 🔴 Alto impacto · 3
+  · 🟡 Violencia operativa · 3
+  · 🟢 Acciones institucionales · 1
+
+[ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
+
+Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
+
+## SEMÁFORO ARGOS
+
+  · 🔴 ROJO — ALTO IMPACTO — 3 eventos
+
+  · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 3 eventos
+
+  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 1 eventos
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-10 · Hora: 09:08 (CDMX) · Corte: Matutino · ARGOS N.° 128 · USO INSTITUCIONAL
+
+============================================================================
+
+## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
+
+  Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
+  Oaxaca · Santiago Pinotepa Nacional (barrio La Planta) · 9-OCT, TARDE | Asesinado el periodista Hamurabi Huesca en un ataque armado; 3 muertos, solo por resumen | 🔴 Rojo | FGE Oaxaca (por cita) | El Universal · Infobae · La Razón · El Siglo de Torreón | ★★★☆☆ | ARG-128-001
+  Guanajuato · Celaya (Eje Clouthier y camino a San José de Guanajuato, col. Álamos) · 9-OCT ~13:00 | Persecución con detonaciones: 2 detenidos, 1 arma de fuego y 1 vehículo | 🟡 Amarillo | Seguridad y Paz Gto. (por cita) | ninguna | ★★★☆☆ | ARG-128-002
+  Estado de México · San José del Rincón (San Joaquín Lamillas) · 9-OCT ~09:30 | Ataque a una camioneta: 2 muertos y 1 herido grave | 🔴 Rojo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-128-003
+  Sinaloa · Mazatlán (penal El Castillo) · 9-OCT, MAÑANA | Segunda riña en el penal El Castillo: 2 internos muertos | 🔴 Rojo | SSP Sinaloa (por cita) | Proceso · El Financiero · La Silla Rota · Reforma · Excélsior | ★★★☆☆ | ARG-128-004
+  Estado de México · Naucalpan (col. Valle Dorado) · PUB. 9-OCT, HORA NO FIJADA | 1 muerto y 1 lesionado a balazos (reparto por hecho, solo por resumen) | 🟡 Amarillo | SIN BOLETÍN | Infobae | ★★☆☆☆ | ARG-128-005
+  Estado de México · Naucalpan (col. Minas Palacio) · PUB. 9-OCT, HORA NO FIJADA | 1 hombre asesinado a balazos (solo por resumen) | 🟡 Amarillo | SIN BOLETÍN | Infobae | ★★☆☆☆ | ARG-128-006
+  Veracruz · Coatzacoalcos (causa penal 540/2026) · PUB. 9-OCT, HORA NO FIJADA | 5 vinculados a proceso por el homicidio del dirigente del partido PAZ | 🟢 Verde | FGE Veracruz (por cita) | ninguna | ★★☆☆☆ | ARG-128-007
+  Veracruz · Papantla (tramo Miguel Hidalgo–El Porvenir) · VENTANA ARGOS 127 | Asesinados una mujer y su hijo de 14 años | 🔴 Rojo (en su ventana) | SIN BOLETÍN | N+ | ★★☆☆☆ | ARG-128-REC-001
+  Zacatecas · Huanusco (carretera federal 54) · VENTANA ARGOS 127 | Asesinado el padre de la presidenta municipal | 🟡 Amarillo (en su ventana) | FGE Zacatecas (por cita) | Reforma · El Universal | ★★★☆☆ | ARG-128-REC-002
+  Tamaulipas · Río Bravo (canal Anzaldúas) · VENTANA ARGOS 127 | 2 largas, 225 cartuchos, 8 cargadores y 48 ponchallantas; sin detenidos | 🟢 Verde (en su ventana) | Gabinete de Seguridad (por republicador) | Milenio | ★★★☆☆ | ARG-128-REC-003
+  Chihuahua · Ciudad Juárez · VENTANA ARGOS 127 | 2 detenidos, 81 cartuchos y 4 cargadores; sin armas | 🟢 Verde (en su ventana) | Gabinete de Seguridad (por republicador) | Milenio | ★★★☆☆ | ARG-128-REC-004
+  Guanajuato · Valle de Santiago (La Isla) · VENTANA ARGOS 127 | 2 detenidos y 55 cartuchos; sin armas | 🟢 Verde (en su ventana) | Gabinete de Seguridad (por republicador) | Milenio | ★★★☆☆ | ARG-128-REC-005
+  Puebla · Zacatlán (Tomatlán) · VENTANA ARGOS 127 | Detenido «El Moco», objetivo prioritario; 1 arma y 3 millones de pesos | 🟢 Verde (en su ventana) | Gabinete de Seguridad (por republicador) | Milenio · Infobae · UnoTV | ★★★☆☆ | ARG-128-REC-006
+  Chihuahua · Cuauhtémoc · VENTANA ARGOS 127 | 30 kg de cocaína; sin detenidos ni armas | 🟢 Verde (en su ventana) | Gabinete de Seguridad (por republicador) | Milenio | ★★☆☆☆ | ARG-128-REC-007
+  Michoacán · Uruapan, Pátzcuaro y Morelia · VENTANA ARGOS 126 | 12 cateos, 10 detenidos y 4 armas sin desglose | 🟢 Verde (en su ventana) | SIN BOLETÍN | Crónica · Infobae · Milenio · MVS | ★★★☆☆ | ARG-128-REC-008
+  Michoacán · Penjamillo · VENTANA ARGOS 126 o 125 | Agresión armada a la Guardia Civil; sin lesionados | 🔴 Rojo (en su ventana) | SSP Michoacán (por cita) | ninguna | ★★☆☆☆ | ARG-128-REC-009
+  Zacatecas · Sombrerete · VENTANA ARGOS 126 | 22 explosivos y detonadores (185 o 39, contradichos) | 🟢 Verde (en su ventana) | FGR (por cita) | Milenio | ★★☆☆☆ | ARG-128-REC-010
+  Chihuahua · San Francisco de Borja–Nonoava · VENTANA ARGOS 126 o 125 | Enfrentamiento con el Ejército: 2 civiles armados muertos | 🟡 Amarillo (en su ventana) | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-128-REC-011
+
+  Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Armas cortas | Armas largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Entidades
+  7 | 3 | 3 | 1 | 11 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 5
+
+Ventana 9-oct 07:20 → 10-oct 09:08 CDMX (25 h 48 min) · 7 hechos propios en 5 entidades ·
+densidad 0,27 hechos/hora, cálculo propio. Orden: del más reciente al más antiguo; al final, los
+tres de hora no fijada.
+LAS 11 RECUPERACIONES DEL FINAL PERTENECEN A LAS VENTANAS DE ARGOS 127 Y 126 Y QUEDAN FUERA DEL
+SEMÁFORO, DEL MAPA, DEL RADAR Y DE TODOS LOS TOTALES.
+Toque un ARG-ID para ir a su ficha, donde están las fuentes, el nivel de confianza y los
+deslindes.
+
+NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
+
+Total de armas integradas: 1 —un arma de fuego sin clasificar, Celaya—. Detenidos = solo los del
+mismo evento de aseguramiento; fuera de ese conteo, 5 vinculados a proceso en Coatzacoalcos
+(ARG-128-007), que no son nuevos detenidos. Entidades = con al menos un hecho propio. Muertos en
+hechos propios: 9 —7 en los tres rojos, de ellos 3 de Pinotepa solo por resumen, y 2 en los
+amarillos de Naucalpan, reparto solo por resumen—; heridos: 2, San José del Rincón y Naucalpan:
+cálculo propio.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-10 · Hora: 09:08 (CDMX) · Corte: Matutino · ARGOS N.° 128 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (I) — VIERNES 9-OCT: PINOTEPA NACIONAL, CELAYA, SAN JOSÉ DEL RINCÓN Y PENAL EL CASTILLO
+
+### OAXACA · PINOTEPA NACIONAL — ASESINADO EN UN ATAQUE ARMADO EL PERIODISTA HAMURABI HUESCA, DIRECTOR DE PINOTEPA COMUNICA [ROJO]
+
+── HECHO
+
+Santiago Pinotepa Nacional · BARRIO LA PLANTA, 9a. PONIENTE Y 15a. SUR · VIERNES 9-OCT, por la
+tarde (SOLO POR RESUMEN) · ataque armado · muere el periodista Hamurabi Huesca Manzano, director
+del portal Pinotepa Comunica, que también trabajaba como taxista, por titular de seis medios (🔴)
+· 3 hombres muertos SOLO POR RESUMEN; uno de ellos, señalado como el blanco, muere horas después
+en el hospital · CIFRA CONTRADICHA: 3 MUERTOS, O 2 MUERTOS Y UNA MUJER LESIONADA · FGE Oaxaca:
+el blanco era otro hombre y el móvil, una disputa entre células; no descarta el vínculo con la
+actividad periodística — SOLO POR RESUMEN · cero detenidos · identidades de las otras víctimas,
+solo por iniciales: no se reproducen
+
+── TRAZABILIDAD
+
+ARG-128-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: número de víctimas y
+hora, solo por resumen · Fuentes: Institucional 1 · Nacional 5 · Regional 5 · Abierta 0 · con
+fecha en la ruta: La Razón (2026/10/10) · Infobae (2026/10/10) · El Mañana (2026/10/9) · Primera
+Línea (2026/10/09) · Hecho: 2026-10-09 · Hora: por la tarde (solo por resumen) · Consulta:
+2026-10-10 09:08-09:20 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — no
+hubo armamento asegurado
+Deslindes y reservas: Pinotepa Nacional figura en el índice (ARG-100-004, cateo de agosto): otro
+hecho. Barrio La Planta no figura. 🔴 por víctima periodista y víctimas múltiples
+
+### GUANAJUATO · CELAYA — PERSECUCIÓN CON DETONACIONES DE LAS FUERZAS ESTATALES: DOS DETENIDOS, UN ARMA DE FUEGO Y UN VEHÍCULO [AMARILLO]
+
+── HECHO
+
+Celaya · EJE CLOUTHIER Y CAMINO A SAN JOSÉ DE GUANAJUATO, A LA ALTURA DE LA COL. ÁLAMOS ·
+VIERNES 9-OCT ~13:00 (SOLO POR RESUMEN) · Fuerzas de Seguridad Pública del Estado persiguen a
+hombres presuntamente armados en una camioneta · detonaciones durante el seguimiento, SIN
+PRECISAR QUIÉN DISPARÓ · 2 detenidos, por titular · 1 arma de fuego y 1 vehículo asegurados, por
+titular (🟡) · sin lesionados publicados · COLOR DE LA CAMIONETA CONTRADICHO · antecedentes de
+los detenidos en Guanajuato y Querétaro, SOLO POR RESUMEN
+
+── TRAZABILIDAD
+
+ARG-128-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora y origen de los
+disparos, solo por resumen · Fuentes: Institucional 1 · Nacional 0 · Regional 5 · Abierta 0 ·
+con fecha en la ruta: AM (2026/10/09) · Noticieros en Línea (2026/oct/09) · Primer Plano
+Irapuato (2026/10/10) · Hecho: 2026-10-09 · Hora: ~13:00 (solo por resumen) · Consulta:
+2026-10-10 09:08-09:20 · Estatus: Parcialmente corroborado · Conteo de armamento:
+ARG-128-ARM-001
+Deslindes y reservas: Celaya figura en el índice (ARG-98-003, ARG-103-REC-006, ARG-122-002):
+otros hechos. NO es la detención de Celaya y Villagrán del 6-oct (3 armas): otra fecha. 🟡 por
+persecución con detonaciones
+
+### ESTADO DE MÉXICO · SAN JOSÉ DEL RINCÓN — ATAQUE ARMADO CONTRA LOS OCUPANTES DE UNA CAMIONETA: DOS MUERTOS Y UN HERIDO GRAVE [ROJO]
+
+── HECHO
+
+San José del Rincón · COMUNIDAD SAN JOAQUÍN LAMILLAS · VIERNES 9-OCT ~09:30, llamada al 911 por
+detonaciones (SOLO POR RESUMEN) · hombres armados disparan contra los ocupantes de una camioneta
+Jeep Cherokee negra · 2 hombres muertos y 1 herido grave, por titular (🔴) · FGJ del Estado de
+México investiga · cero detenidos · móvil no establecido · persecución previa y cierre del paso,
+versión preliminar, SOLO POR RESUMEN · NINGUNA FUENTE CON FECHA EN LA RUTA: EL DÍA, SOLO POR
+RESUMEN
+
+── TRAZABILIDAD
+
+ARG-128-003 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: fecha y hora solo por
+resumen; ninguna fuente con fecha en la ruta · Fuentes: Institucional 0 · Nacional 0 · Regional
+2 · Abierta 0 · con fecha en la ruta: ninguna con fecha en la ruta · Hecho: 2026-10-09 · Hora:
+~09:30, llamada al 911 (solo por resumen) · Consulta: 2026-10-10 09:08-09:20 · Estatus:
+Pendiente de corroboración · Conteo de armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: San José del Rincón y San Joaquín Lamillas no figuran en el índice. 🔴 por
+homicidio múltiple
+
+### SINALOA · MAZATLÁN — SEGUNDA RIÑA EN EL PENAL DE EL CASTILLO EN VEINTICUATRO HORAS: DOS INTERNOS MUERTOS [ROJO]
+
+── HECHO
+
+Centro Penitenciario EL CASTILLO, Mazatlán · VIERNES 9-OCT, por la mañana; la SSP lo informa
+~09:25 (SOLO POR RESUMEN) · nueva riña en uno de los módulos · 2 internos muertos, por titular
+de cinco medios nacionales (🔴) · arma punzocortante, según la FGE, SOLO POR RESUMEN · sin
+heridos publicados · Grupo Interinstitucional controla · FGE Sinaloa investiga · detenidos: no
+informados · la SSP, por cita de medios: «una nueva riña al interior de uno de sus módulos, en
+la que murieron dos personas privadas de la libertad» · vínculo con la riña del 8-oct, NO
+CONFIRMADO POR LA FGE · identidades, sin verificar: no se reproducen · FRONTERA DE VENTANA —
+HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-128-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora del hecho; tipo
+de arma, solo por resumen · Fuentes: Institucional 1 · Nacional 6 · Regional 1 · Abierta 0 · con
+fecha en la ruta: Proceso (2026/10/9) · El Financiero (2026/10/09) · La Silla Rota (2026/10/9) ·
+Hecho: 2026-10-09 · Hora: por la mañana; la SSP informa ~09:25 (solo por resumen) · Consulta:
+2026-10-10 09:08-09:20 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — no
+hubo armamento asegurado
+Deslindes y reservas: NO es ARG-127-004 (riña del 8-oct, ventana de ARGOS 127): otro día, otro
+saldo. NO es la riña del 24-sep en talleres. Sobre ARG-127-004: el menor tenía 2 años por
+titular de dos medios que citan a la SSPE (un titular previo daba 11); pistolas cal. 9 mm
+aseguradas, por titular; la FGE, por titular, «disparos con arma corta y larga»; ingreso de las
+armas, sin explicación oficial; detenidos, ninguno. 🔴 por motín con víctimas
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-10 · Hora: 09:08 (CDMX) · Corte: Matutino · ARGOS N.° 128 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (II) — HECHOS DE HORA NO FIJADA: NAUCALPAN Y COATZACOALCOS
+
+### ESTADO DE MÉXICO · NAUCALPAN — AGRESIÓN A BALAZOS EN VALLE DORADO: UN MUERTO Y UN LESIONADO [AMARILLO]
+
+── HECHO
+
+Naucalpan · COL. VALLE DORADO, GUADALUPE VICTORIA Y 5 DE FEBRERO · «por la noche»; publicado el
+VIERNES 9-OCT · agresión a balazos · 1 muerto y 1 lesionado, SOLO POR RESUMEN (🟡) · el total de
+los dos hechos de Naucalpan —2 muertos y 1 lesionado— y cero detenidos, por titular · NOCHE DEL
+8 O DEL 9-OCT: NO FIJADA · FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-128-005 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: reparto de víctimas
+entre los dos hechos y hora, solo por resumen · Fuentes: Institucional 0 · Nacional 1 · Regional
+2 · Abierta 0 · con fecha en la ruta: Infobae (2026/10/09) · Seunonoticias (2026/10/09) · Hecho:
+no fijada (publicado 2026-10-09) · Hora: no fijada («por la noche») · Consulta: 2026-10-10
+09:08-09:20 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — no hubo
+armamento asegurado
+Deslindes y reservas: Naucalpan no figura en el índice. NO es ARG-128-006 (Minas Palacio): dos
+hechos según el titular, vínculo no establecido. Una nota de Milenio sobre un cuerpo abandonado
+y 2 lesionados en Naucalpan puede ser otro hecho: no se vincula. 🟡 por homicidio doloso único
+
+### ESTADO DE MÉXICO · NAUCALPAN — ASESINADO A BALAZOS UN HOMBRE EN MINAS PALACIO [AMARILLO]
+
+── HECHO
+
+Naucalpan · COL. MINAS PALACIO · «por la noche»; publicado el VIERNES 9-OCT · agresión a balazos
+· 1 hombre muerto, SOLO POR RESUMEN (🟡) · cero detenidos, por titular · alias preliminar de la
+víctima y venta de sustancias, versiones sin confirmar: no se reproducen · NOCHE DEL 8 O DEL
+9-OCT: NO FIJADA · FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-128-006 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: reparto de víctimas
+entre los dos hechos y hora, solo por resumen · Fuentes: Institucional 0 · Nacional 1 · Regional
+2 · Abierta 0 · con fecha en la ruta: Infobae (2026/10/09) · Seunonoticias (2026/10/09) · Hecho:
+no fijada (publicado 2026-10-09) · Hora: no fijada («por la noche») · Consulta: 2026-10-10
+09:08-09:20 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — no hubo
+armamento asegurado
+Deslindes y reservas: Minas Palacio no figura en el índice. NO es ARG-128-005 (Valle Dorado). 🟡
+por homicidio doloso único
+
+### VERACRUZ · COATZACOALCOS — VINCULADAS A PROCESO CINCO PERSONAS POR EL HOMICIDIO DEL EXREGIDOR Y DIRIGENTE DEL PARTIDO PAZ [VERDE]
+
+── HECHO
+
+Coatzacoalcos · CAUSA PENAL 540/2026 · publicado el VIERNES 9-OCT · tras la continuación de la
+audiencia, el juez vincula a proceso a 5 personas por el homicidio del exregidor de Jáltipan y
+coordinador regional del partido PAZ, por titular de un medio (🟢) · prisión preventiva oficiosa
+ratificada, SOLO POR RESUMEN · 1 señalada como autora material y 4 por planeación y vigilancia,
+SOLO POR RESUMEN · FECHA DE LA AUDIENCIA, 8 O 9-OCT: NO FIJADA · NO ES SENTENCIA · nombres no
+reproducidos · FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-128-007 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: vinculación por
+titular de un solo medio con fecha · Fuentes: Institucional 1 · Nacional 0 · Regional 2 ·
+Abierta 0 · con fecha en la ruta: Golpe Político (2026/10/09) · Hecho: no fijada (publicado
+2026-10-09) · Hora: no fijada · Consulta: 2026-10-10 09:08-09:20 · Estatus: Parcialmente
+corroborado · Conteo de armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: Seguimiento de ARG-124-002 (homicidio, 23-sep) y ARG-125-021
+(detenciones): acto procesal nuevo, no nuevos detenidos. Los 5 son los informados el 5-oct. No
+entra en sentencias ni en armamento
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-10 · Hora: 09:08 (CDMX) · Corte: Matutino · ARGOS N.° 128 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (III) — RECUPERACIONES DE LA VENTANA DE ARGOS 127: 8-OCT
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-10 · Hora: 09:08 (CDMX) · Corte: Matutino · ARGOS N.° 128 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (IV) — RECUPERACIONES DE LAS VENTANAS DE ARGOS 126 Y 125: 7 Y 8-OCT
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-10 · Hora: 09:08 (CDMX) · Corte: Matutino · ARGOS N.° 128 · USO INSTITUCIONAL
+
+============================================================================
+
+## CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS
+
+  · Armas cortas: 0 — NINGUNA ARMA CORTA CLASIFICADA EN HECHO PROPIO
+
+  · Armas largas: 0 — NINGUNA ARMA LARGA EN HECHO PROPIO
+
+  · Sin categoría: 1 — «UN ARMA DE FUEGO», SIN CLASIFICAR · CELAYA
+
+  · Cartuchos: 0 — NINGÚN CARTUCHO PUBLICADO EN HECHO PROPIO
+
+  · Cargadores: 0 — NINGÚN CARGADOR PUBLICADO EN HECHO PROPIO
+
+  · Granadas: 0 — NINGUNA GRANADA PUBLICADA
+
+  · AEI: 0 — NINGÚN AEI EN HECHO PROPIO
+
+  · Explosivos: 0 — NINGÚN EXPLOSIVO, DETONADOR NI INICIADOR EN HECHO PROPIO
+
+  · Armamento especial: 0 — NINGÚN ARMAMENTO ESPECIAL PUBLICADO
+
+  · Detenidos: 2 — SOLO EN EVENTOS CON ASEGURAMIENTO DE ARMAMENTO
+
+1 fila de armamento de 1 hecho en 1 entidad, con cifra por titular. Totales por categoría:
+cálculo propio. NINGÚN HECHO PROPIO DE ALTO IMPACTO DEJÓ ARMAMENTO ASEGURADO PUBLICADO.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-10 · Hora: 09:08 (CDMX) · Corte: Matutino · ARGOS N.° 128 · USO INSTITUCIONAL
+
+============================================================================
+
+## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
+
+  ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
+  ARG-128-ARM-001 | Guanajuato | Celaya (camino a San José de Guanajuato) | 9-oct ~13:00 · hora solo por resumen | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | Fuerzas de Seguridad Pública del Estado | Bajo · 1 arma de fuego sin clasificar y 2 detenidos, por titular; derivado de una persecución con detonaciones
+
+Lectura regional —1 fila, cálculo propio—: Noroeste 0 · Noreste 0 · Occidente 1 · Centro 0 ·
+Golfo 0 · Sureste 0. El armamento de las recuperaciones —Río Bravo, Ciudad Juárez, Valle de
+Santiago, Zacatlán, Michoacán y Sombrerete— va en su ficha y no entra en esta tabla.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-10 · Hora: 09:08 (CDMX) · Corte: Matutino · ARGOS N.° 128 · USO INSTITUCIONAL
+
+============================================================================
+
+## RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES
+
+  · Sentencias condenatorias: 0 — NINGUNA INTEGRABLE · dos titulares oficiales de la FGR del 9-oct sin caso individualizado, abajo
+
+  · Personas sentenciadas: 0 — las candidatas del 9-oct quedan en PENDIENTE DE CONFIRMACIÓN OFICIAL
+
+  · Pena acumulada: 0 — los años nunca se suman entre casos
+
+  · Reparación del daño: 0 — ningún monto ordenado y publicado en la ventana
+
+  · Fiscalías con resultado: 0 — de 21 revisadas más la FGR · 11 NO REVISADA
+
+  Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
+  Chihuahua · municipio no publicado | Comunicado DPE/4566/2026 · portación de arma de fuego y metanfetamina | 7 años, por titular | FGR | Titular oficial en el listado de la FGR del 9-oct; SIN SENTENCIADO, MUNICIPIO NI FIRMEZA: CASO NO INDIVIDUALIZADO · FRONTERA DE VENTANA | Medio
+  Sinaloa · municipio no publicado | Comunicado DPE/4574/2026 · tres personas, portación de arma, cartuchos y cargadores | hasta 11 años, por titular | FGR | Titular oficial del 9-oct; PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA; caso no individualizado · FRONTERA DE VENTANA | Medio
+  Guanajuato · León (San Pedro Plus) | Lázaro Alan Emmanuel «N» · feminicidio, procedimiento abreviado; hecho del 30-oct-2025 | 26 años 8 meses | FGE Guanajuato | PENDIENTE DE CONFIRMACIÓN OFICIAL · publicado el 9-oct por dos medios con fecha en la ruta; sin boletín por site: | Bajo
+  Nuevo León · Monterrey (Condominios Constitución) | Dos hombres · homicidio | 28 años | FGE Nuevo León | PENDIENTE DE CONFIRMACIÓN OFICIAL · un medio nacional, 9-oct en la ruta; FRONTERA DE VENTANA | Bajo
+  Chihuahua · municipio no publicado | Un hombre · abuso sexual agravado, procedimiento abreviado | 8 años | FGE Chihuahua | PENDIENTE DE CONFIRMACIÓN OFICIAL · un medio regional, 9-oct en la ruta | Bajo
+  Veracruz · varios distritos | Agregado de 24 h · «20 sentencias condenatorias» con vinculaciones e imputaciones | no individualizada | FGE Veracruz | Agregado publicado el 9-oct por republicadores; sin penas por caso · NO INTEGRAR | No confirmado
+
+  Renglón | Resultado
+  Fiscalías revisadas en sentencias | 21 de 32 · FGR revisada: Sí · BC, BCS, Chih, Dgo · NL, Tamps · Jal, Gto, Ags, Mich · CDMX, Mor, Pue, Tlax, Hgo, Qro · Ver, Tab · Gro, Oax, QRoo
+  Fiscalías con sentencia integrable | 0
+  Con sentencias publicadas en ventana solo por medios o sin individualizar | 4 fiscalías estatales: Guanajuato, Nuevo León, Chihuahua y Veracruz (agregado) · y la FGR, en Chihuahua y Sinaloa
+  SIN RESULTADO INDEXADO EN VENTANA | 17 fiscalías estatales
+  SIN ACTUALIZACIÓN CONSTATADA | 0 · exige lectura directa del portal
+  NO REVISADA — sentencias | 11: Son, Sin · Coah, SLP, Zac · Col, Nay · Edomex · Chis, Camp, Yuc
+  Alto impacto y armamento | Alto impacto: 29 de 32 —BCS, Querétaro y Yucatán, NO REVISADA— · armamento: 23 de 32 —BC, Coah, Col, Nay, Edomex, Tlax, Qro, Camp y Yuc, NO REVISADA— · GN, SEDENA y SEMAR regionales: NO REVISADA
+  Boletín federal | Acciones del 8-oct: publicado el 9-oct, diario, por republicadores · acciones del 9-oct: SIN RESULTADO INDEXADO EN VENTANA
+  Techo de confianza del producto | ★★★☆☆ · BLOQUEO DE EGRESO REVERIFICADO EL 10-OCT: GOB.MX Y FGR.ORG.MX
+
+Vistas por primera vez, publicadas antes de la apertura: Querétaro, FGE, con boletín oficial y
+fecha en la ruta —Manuel «N», amenazas y daños dolosos, Corregidora, 3 años (8-oct); Óscar
+Eduardo «N», abuso sexual equiparado agravado, Tequisquiapan, 11 años 10 meses 6 días (6-oct);
+Juan Diego «N», robo a comercio (5-oct)— · Guerrero, FGE, Tlapehuala, 60 años (titular del
+portal, 8-oct, solo por resumen) · Veracruz, 80 y 70 años por secuestro agravado (8-oct, un
+medio) · Nuevo León, Las Sabinitas, 53 años a dos (5-oct) · FGR Chihuahua, DPE/4537/2026 (8-oct)
+· Ciudad Juárez, de 6 a 7 años a dos por portación (7-oct). NO SE INTEGRAN: FUERA DE VENTANA.
+Candidatos heredados, siguen sin boletín oficial: Cajeme, 25 años · Campeche (Lerma), FGR ·
+Matamoros ×6 · NL, Laurentino «N» · QRoo · Buenavista · Nayarit ×2 · Culiacán · BCS. NO SE
+INTEGRAN.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-10 · Hora: 09:08 (CDMX) · Corte: Matutino · ARGOS N.° 128 · USO INSTITUCIONAL
+
+============================================================================
+
+## VALORACIÓN ARGOS, CONCLUSIONES E INDICADORES
+
+gabinetedeseguridad.gob.mx/resultados/ — SIN RESULTADO INDEXADO EN VENTANA: ningún informe
+diario de octubre indexado. SESNSP, INEGI y FGR: sin publicación estadística nueva localizada
+dentro de la ventana.
+El agregado federal del periodo es el boletín de las acciones del 8-oct, publicado el 9-oct,
+diario, alcanzado por republicadores. NO INDEXADO POR SU EMISOR: SUS REPUBLICADORES NO SON
+FUENTES INDEPENDIENTES ENTRE SÍ.
+Toda cifra de este cartelón sin emisor nombrado es cálculo propio de ARGOS.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-10 · Hora: 09:08 (CDMX) · Corte: Matutino · ARGOS N.° 128 · USO INSTITUCIONAL
