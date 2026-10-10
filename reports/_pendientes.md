@@ -8,13 +8,13 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 127 (corte 2026-10-09).
+**Última actualización**: ARGOS 128 (corte 2026-10-10).
 
 ---
 
 ## Arranque de la edición siguiente
 
-**`reports/_arranque-ARGOS-128.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-128.txt`) contiene la orden de arranque para una sesión nueva: verificación
+**`reports/_arranque-ARGOS-129.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-129.txt`) contiene la orden de arranque para una sesión nueva: verificación
 de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y comandos de construcción.
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
@@ -1745,3 +1745,59 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 7. **La renumeración tras el control** se hizo antes de publicar y está declarada en §13 del archivo de fuentes; los informes de control citan
    la numeración del borrador.
 8. El generador queda en `tools/datos-argos-127.py`; `ARG-127-FE-001` a `-003` están en el índice y en el archivo de fuentes, **no en el cartelón**.
+
+## Cerrados por ARGOS 128
+
+| Pendiente | Disposición |
+|---|---|
+| **Penal El Castillo, edad del menor** (`ARG-127-004`) | **2 años**, por dos titulares que citan a la SSPE; 11 (titular de El Financiero) y 1 (CEDH, por resumen) quedan como versiones previas. Sigue sin publicarse en el cartelón por la contradicción |
+| **Literales de Montecarlo, SLP y Ojocaliente** | **Retirados por fe de erratas** (`ARG-128-FE-004`): segunda edición solo por resumen |
+| **Uruapan, Sol Naciente — corporación y detenidos** | FGR con Marina, GN y SSPC (por resumen); **1 detenido en Sol Naciente** (dos titulares) y **10 en los 12 cateos** (`ARG-128-REC-008`), relación no arbitrada |
+| **Penjamillo — fecha** | **Tarde del 7-oct** → `ARG-128-REC-009` 🔴 |
+| **Cosalá — 2.6 t / 2,693 kg; titular de tres estados** | Misma cifra truncada; el titular de tres estados es de **mayo de 2026**: no aplica |
+| **Casas Grandes — móvil** | Deuda de drogas, secuestro descartado → `ARG-128-FE-003` |
+| **Coatzacoalcos — vinculación** | **Vinculados los 5** (cuatro titulares); fecha del acto contradicha (6 o 9-oct) |
+| **Zacatecas, pista NTR del padre de la alcaldesa** | Huanusco, 8-oct → `ARG-128-REC-002` |
+| **Boletín federal de las acciones del 8-oct** | Localizado, publicado el 9-oct → `ARG-128-REC-003` a `-007` |
+| **`gen-texto.py` omitía recuadros y `-REC-`** | **Reparado** |
+| **Prioridad sobre el ciclo — sentencias (BC · Jal, Gto · Mor, Pue, Hgo, Qro, Tlax)** | **Las ocho revisadas** por `site:` |
+
+## Abiertos que ARGOS 129 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️⚠️ **OAXACA · Pinotepa Nacional** (`ARG-128-001`) | Cifra de víctimas (3, o 2 y una mujer lesionada); hora; comunicado de la FGEO con literal; detenidos; protección del medio |
+| ⚠️⚠️ **SINALOA · penal El Castillo** (`ARG-128-004`, `ARG-127-004`) | Hora de la segunda riña con fuente propia; detenidos; ingreso de armas; traslados; comunicado SSP/FGE |
+| ⚠️ **EDOMEX · San José del Rincón** (`ARG-128-003`) | **Una fuente con fecha** que fije el día (si es 8-oct, pasa a 127 por fe de erratas); identidades; FGJEM |
+| **EDOMEX · Naucalpan** (`ARG-128-005`, `-006`) | Noche del 8 o del 9-oct; reparto de víctimas por colonia |
+| **GUANAJUATO · Celaya** (`ARG-128-002`) | Cifra de armas de la Secretaría de Seguridad y Paz; quién disparó |
+| **Boletín del 8-oct** (`-REC-003` a `-007`) | Literal de Río Bravo, Juárez y Valle de Santiago: **si siguen solo por resumen en 129, fe de erratas**. Fecha de la detención de «El Moco» (8 o 9-oct) |
+| **MICHOACÁN · 12 cateos** (`-REC-008`) | Comunicado oficial; fecha; desglose de las 4 armas; relación con Sol Naciente |
+| **ZACATECAS · Sombrerete** (`-REC-010`) | 185 o 39 detonadores; ¿uno o dos operativos? detenidos |
+| **CHIHUAHUA · Borja** | `POSIBLE DUPLICIDAD` con `ARG-126-REC-004`: segunda fuente que separe o funda los hechos |
+| **Boletín federal de las acciones del 9-oct** | Triple consulta completa (incluidos «9 y 10» y «9, 10 y 11») |
+| ⚠️⚠️ **GUERRERO · El Balcón** (`ARG-125-051`) | Peritaje oficial del video (**no difundir su contenido**); informe de cumplimiento del amparo 412/2026; carpeta |
+| **Sentencias candidatas** | **En ventana, sin boletín**: FGR Chihuahua (7 años) y FGR Sinaloa (hasta 11 años, tres personas) —titulares del listado, sin individualizar—; León, 26 años 8 meses; NL, 28 años a dos; Chihuahua, 8 años. **Querétaro, Corregidora, 3 años**: boletín oficial del 8-oct, posible sentencia de la ventana de 127. **Heredadas**: Cajeme, Lerma, Matamoros, Laurentino, QRoo, Buenavista, Nayarit, Culiacán, BCS |
+| **Seguimientos no revisados en 128** | Zihuatanejo (desplazados) · Mixtequilla (detenidos) · 26 extranjeros (nacionalidades) · Comonfort · Hermosillo · Xalisco/La Curva (cifra e identificaciones) · Ixtlahuacán · Guadalajara |
+| **SLP, 9 detenidos por robo al autotransporte** (`ARG-125-015`) | Cifras de armas discrepantes entre medios |
+
+## Deuda de método (ARGOS 128)
+
+1. **El barrido regional no trajo los dos rojos más graves fuera de Sinaloa** (Pinotepa, San José del Rincón): los halló una búsqueda
+   nacional del coordinador por día de la semana. **Para 129: cada equipo abre con una búsqueda por día de la semana y por sus entidades, y el
+   coordinador reserva una búsqueda nacional por día de la ventana.**
+2. **Presupuesto**: 2 de control + 165 de ola + 8 del coordinador + 25 de `procedencia-cifras` = **200**. El control tuvo por fin su cuota y
+   dictaminó las tres fes de erratas; no quedó presupuesto para un segundo pase con búsqueda.
+3. **Criterio único de cobertura**, fijado en 128: `REVISADA` exige búsqueda dirigida que devuelva páginas del dominio oficial. Con él,
+   **armamento baja a 20 de 32**. Dominios por confirmar en 129: SSC Tlaxcala, FGE Edomex, SSP Veracruz, SSP SLP, Fiscalía Chiapas,
+   Campeche, Yucatán, Colima, Nayarit.
+4. **Prioridad sobre el ciclo en 129**: **Yucatán** (los tres módulos) · **armamento** Tlax (tercera vez), BC, Sin, Coah, SLP, Col, Nay,
+   Edomex, Qro, Ver, Camp · **sentencias** Son, Sin, Coah, SLP, Zac, Col, Nay, Edomex, Chis, Camp · **alto impacto** BCS, Qro, Chis. Después,
+   **CICLO A** (Noroeste + Centro).
+5. **Folios DPE de la FGR**: aparecen solo en el resumen del buscador; **no se publican** sin titular o URL que los contenga (regla de
+   `ARG-115-FE-005`).
+6. **`validar.js` no aplica al móvil** (sigue abierta). `gen-texto.py`, reparado.
+7. **Umbral de «víctimas múltiples» con un solo muerto** (`ARG-120-009` frente a Cócorit): sigue sin fijarse en `CLAUDE.md`.
+8. **ARG-ID retirados antes de publicar**: `ARG-128-007` (Coatzacoalcos) y `ARG-128-REC-011` (Borja). No se reutilizan; constan en §13 del
+   archivo de fuentes.
+

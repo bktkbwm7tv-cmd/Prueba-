@@ -96,15 +96,13 @@ for pag in re.findall(r'<section class="page">(.*?)</section>', s, re.S):
             out += [f"## {t}", ""]
 
     # Recuadros (portada, valoración, conclusiones).
-    for al in re.findall(r'<div class="alerta contexto"[^>]*>(.*?)</div>', pag, re.S):
-        flag = re.search(r'class="flag">(.*?)</span>', al, re.S)
-        if flag:
-            out += ["── " + limpia(flag.group(1)), ""]
-        cuerpo = re.search(r"<p>(.*?)</p>", al, re.S)
-        if cuerpo:
-            for ln in plegar(limpia(cuerpo.group(1))):
-                out.append(ln)
-            out.append("")
+    # La bandera es un <div>, no un <span>: el patrón anterior cortaba en su
+    # cierre y el recuadro salía vacío (fallo de 126 y 127).
+    for flag, cuerpo in re.findall(r'<div class="alerta contexto"[^>]*>\s*<div class="flag">(.*?)</div>\s*<p>(.*?)</p>', pag, re.S):
+        out += ["── " + limpia(flag), ""]
+        for ln in plegar(limpia(cuerpo)):
+            out.append(ln)
+        out.append("")
 
     # Tarjetas de conteo.
     for tile in re.findall(r'<div class="tile[^"]*">(.*?)</div>\s*(?=<div class="tile|</div>)', pag, re.S):
@@ -117,8 +115,8 @@ for pag in re.findall(r'<section class="page">(.*?)</section>', s, re.S):
                 linea += " — " + limpia(sub.group(1), False)
             out += [linea, ""]
 
-    # Fichas.
-    for nota in re.findall(r'<div class="nota" id="([^"]+)">(.*?)(?=<div class="nota" id=|<footer)', pag, re.S):
+    # Fichas (las -REC- llevan atributo style: el patrón lo admite).
+    for nota in re.findall(r'<div class="nota" id="([^"]+)"[^>]*>(.*?)(?=<div class="nota" id=|<footer)', pag, re.S):
         _, cuerpo = nota
         h3 = limpia(re.search(r"<h3>(.*?)</h3>", cuerpo, re.S).group(1), False)
         flag = re.search(r'class="risk-flag [^"]*">(.*?)</span>', cuerpo, re.S)
