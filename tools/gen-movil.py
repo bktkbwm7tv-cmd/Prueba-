@@ -638,6 +638,8 @@ for i, (titulo, n) in enumerate(TITULOS):
 {cuerpo}
 </section>''')
 
+_ESC = open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "reports", f"argos-{FECHA}.html"), encoding="utf-8").read()
+N_ARM = len(set(re.findall(r'<tr id="(ARG-\d+-ARM-\d+)"', _ESC)))  # antes fijo en 9: desfasado en cada edición
 NOTA = f'''
   <p class="muted-note">
     Esta es la <b>versión móvil</b> de ARGOS {NUM}, con el mismo contenido verificado que la versión de
@@ -645,7 +647,7 @@ NOTA = f'''
     ejecutivas se presentan como fichas para evitar desplazamiento horizontal.
     <b>Dos tablas no se publican aquí, por instrucción editorial</b>: el <b>índice por entidad</b> y el
     <b>desglose de armamento por evento</b>. <b>Ningún dato se pierde</b> —el índice repite titulares de
-    las fichas y el desglose repite el apartado HECHO de cada una—, pero <b>los 9 ARG-ID del módulo de
+    las fichas y el desglose repite el apartado HECHO de cada una—, pero <b>los {N_ARM} ARG-ID del módulo de
     armamento solo constan en el cartelón</b>. <b>Ninguna ficha se omitió ni se resumió.</b> El radar, el mapa de portada y el mapa de aseguramientos se generan de los mismos
     arreglos <code>EVENTOS</code> y <code>EVENTOS_ARM</code> que la versión de escritorio mediante
     <code>tools/gen-movil-svg.js</code>, y <b>los contadores del radar se toman del propio generador</b>,
