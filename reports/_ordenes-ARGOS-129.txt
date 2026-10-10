@@ -13,8 +13,8 @@ PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
     ls reports/ | wc -l
 
 DEBES ENCONTRAR: última edición argos-2026-10-10 (ARGOS 128) y 147 archivos en
-reports/. NI 127 NI 128 SE MERGEARON A main: 128 se construyó en claude/argos-128
-sobre claude/argos-127. Los tres merges deben ser fast-forward o «Already up to
+reports/. 127 Y 128 YA ESTÁN EN main (PR de claude/argos-128 mergeado al cierre de
+128): el primer merge trae todo; los dos siguientes deben decir «Already up to
 date». El clon puede arrancar por detrás de origin/main (en 128 arrancó en 60f2777):
 dilo, pero no es fallo si origin/main está donde se espera. Si algún merge NO es
 fast-forward, PARA Y AVÍSAME.

@@ -22,8 +22,8 @@ ls reports/ | wc -l
 
 **Estado que debe encontrar ARGOS 129**: última edición `argos-2026-10-10` (ARGOS 128) y **147 archivos** en `reports/`
 (141 + cuatro de la edición + `_arranque-ARGOS-129.md` + `_ordenes-ARGOS-129.txt`).
-⚠️ **Ni ARGOS 127 ni ARGOS 128 se mergearon a `main`** al cierre: 128 se construyó en `claude/argos-128` sobre `claude/argos-127`. Los
-merges `ff-only` traen las dos ediciones. ⚠️ **El clon puede arrancar por detrás de `origin/main`** (en 128 arrancó en `60f2777`): eso no es
+✅ **ARGOS 127 y 128 están en `main`**: al cierre de 128 se abrió y mergeó el PR de `claude/argos-128` (que contiene 127). El primer `ff-only`
+trae todo; los de `argos-127` y `argos-128` deben responder «Already up to date». ⚠️ **El clon puede arrancar por detrás de `origin/main`** (en 128 arrancó en `60f2777`): eso no es
 un fallo de la base si `origin/main` está donde se espera y todos los merges son fast-forward. Si alguno no lo es, parar y avisar.
 
 ## BLOQUE 1 — IDENTIDAD
