@@ -112,7 +112,7 @@ por topónimo (sin agresión); Juárez, Valle de Santiago y Zacatlán por grep d
   para Papantla (~21:00); **127 o 126, hora no fijada**, para Huanusco y los cinco renglones del boletín del 8-oct. Efecto sobre el semáforo
   de 127, si todos son suyos: rojos 2 → **3** (Papantla), amarillos 2 → **3** (Huanusco), verdes 2 → **7** (Río Bravo, Juárez, Valle de
   Santiago, Zacatlán, Cuauhtémoc).
-- **`ARG-128-FE-002`** — sobre **ARGOS 126** (o 125/127, hora no fijada): tres hechos no publicados (`ARG-128-REC-008` a `-010`). Efecto
+- **`ARG-128-FE-002`** — sobre **ARGOS 126** (o 125/127, hora no fijada): tres hechos no publicados (`ARG-128-REC-008` a `-010`; Penjamillo y Sombrerete, 126 o 125). Efecto
   sobre el semáforo de 126 tras `ARG-127-FE-001`: rojos 1 → **2** (Penjamillo), amarillos **2**, verdes 7 → **9** (Michoacán, Sombrerete).
   Si Penjamillo resulta de la ventana de 125, o Michoacán de la de 127, se trasladan allí.
 - **`ARG-128-FE-003`** — sobre **`ARG-126-REC-003`** (Casas Grandes): el titular «presuntos secuestradores» queda **contradicho**; el
@@ -125,9 +125,9 @@ por topónimo (sin agresión); Juárez, Valle de Santiago y Zacatlán por grep d
   titulares—; **Ojocaliente** (`ARG-127-REC-002`) 5 largas, 1,093 cartuchos, 47 cargadores. Todos: `CANTIDAD NO DETERMINADA — NO SE
   INTEGRA AL TOTAL NUMÉRICO`.
 - **Armamento recalculado, cálculo propio** —
-  **ventana de 127** tras FE-004 y FE-001: hechos propios de 127 → **0** en todas las categorías (detenidos en evento de aseguramiento:
-  no determinados); con las recuperaciones del boletín del 8-oct, todas **solo por resumen** (primera edición): largas **2** · sin categoría
-  **1** (Zacatlán) · cartuchos 225 + 81 + 55 = **361** · cargadores 8 + 4 = **12** · detenidos 2 + 2 + 1 = **5**.
+  **ventana de 127** tras FE-004 y FE-001: hechos propios de 127 → **0** en todas las categorías de armamento; **detenidos en evento de aseguramiento: 3** (SLP, por titular:
+  «detiene a tres personas con armas y presunta droga»; arma sin cantidad); con las recuperaciones del boletín del 8-oct, todas **solo por resumen** (primera edición): largas **2** · sin categoría
+  **1** (Zacatlán) · cartuchos 225 + 81 + 55 = **361** · cargadores 8 + 4 = **12** · detenidos 2 + 2 + 1 = **5**; con SLP, **8**.
   **Ventana de 126** tras `ARG-127-FE-001`, `-FE-003` y FE-004: cortas **4** · largas 10 − 5 = **5** · cartuchos 1,153 − 1,093 = **60** ·
   cargadores 60 − 47 = **13** · AEI **82** · detenidos **2**; Michoacán (`-REC-008`) añade **10 detenidos** por titular y **4 armas sin
   desglose solo por resumen** si se confirma su ventana; Sombrerete, contradicho, no se integra.
@@ -207,9 +207,9 @@ impacto, búsqueda dirigida en medios de la entidad); dominio no devuelto o bús
 ## 12. Fuentes por ficha
 
 - **`ARG-128-001`** — La Razón 2026/10/10; Infobae 2026/10/10; El Mañana 2026/10/9; Primera Línea 2026/10/09; Noticierog y La Onda Oaxaca 2026/10 (titulares con «tres muertos»); El Universal y El Universal Oaxaca, El Siglo de Torreón, El Sol de Chiapas, Billie Parker, MexNoticias, Noventagrados, Milenio (video) (s/f).
-- **`ARG-128-002`** — AM 2026/10/09; Noticieros en Línea 2026/oct/09; Primer Plano Irapuato 2026/10/10; NPI, Ágora (s/f).
+- **`ARG-128-002`** — AM 2026/10/09; Noticieros en Línea 2026/oct/09; Primer Plano Irapuato 2026/10/10; NPI, Ágora (s/f). Deslinde: Crónica 2026/10/06, «Detienen a 2 personas y aseguran 3 armas de fuego en Celaya y Villagrán» (otro hecho).
 - **`ARG-128-003`** — Quadratín Edomex; Cuestión de Polémica (s/f).
-- **`ARG-128-004`** — Proceso 2026/10/9; El Financiero 2026/10/09; La Silla Rota 2026/10/9; Reforma, Excélsior, N+ (s/f); Los Noticieristas 2026/10; Infobae 2026/10/09 (crisis penitenciaria).
+- **`ARG-128-004`** — deslinde: La Silla Rota 2026/9/24, «Riña en penal El Castillo de Mazatlán deja dos muertos» (otro hecho). Fuentes: Proceso 2026/10/9; El Financiero 2026/10/09; La Silla Rota 2026/10/9; Reforma, Excélsior, N+ (s/f); Los Noticieristas 2026/10; Infobae 2026/10/09 (crisis penitenciaria).
 - **`ARG-128-005` / `-006`** — Infobae 2026/10/09; Seunonoticias 2026/10/09; La Nigua (s/f). Infobae «EN VIVO» 9-oct: *liveblog*, no fecha el hecho.
 - **`ARG-128-REC-001`** — N+; XEU 1436162; La Nigua; Veracruz Informa; Veracruz en Red (s/f).
 - **`ARG-128-REC-002`** — Reforma ar3291046; El Universal; Diario.mx 2026/oct/08; Quinto Poder 2026/10/08; El Vigía 2026/10/09.
@@ -283,6 +283,26 @@ commiteado (`7810da0`); **el borrador no se tocó mientras corrían**. Los infor
 
 **Segundo pase** — `validar.js` → **validación OK** (escritorio); `gen-movil.py` → **validación OK** (móvil); `.txt` con las 16 fichas y los
 tres recuadros. Sin presupuesto de búsqueda para un segundo pase de `procedencia-cifras` (200 de 200).
+
+**Segundo pase de `editor-duplicidad`** (sin búsquedas, sobre `8f99170`) — **CORREGIR**, hallazgos menores; ninguna duplicidad ni rastro de
+lo retirado; aritmética de §8 y del cartelón verificada.
+
+| # | Hallazgo | Disposición |
+|---|---|---|
+| H1 | Heridos si Pinotepa son 2 muertos | **Corregido**: «8 muertos y 3 heridos» |
+| H2 | Conclusión 1 atribuía a Celaya disparos de autor no determinado | **Corregido** |
+| H3 | Deslindes de la riña del 24-sep y de Celaya–Villagrán sin fuente en el archivo | **Corregido**: fuentes fechadas en §12; «(3 armas)» retirado del cartelón |
+| H4 | Pinotepa: cuatro titulares y recuento de fuentes | **Corregido**: Regional 10 (Noticierog, La Onda Oaxaca, MexNoticias y Noventagrados con «tres» en titular, según `procedencia-cifras`); «disputa entre células» ya marcada por resumen |
+| H5, H12 | Indicadores contradecían el panorama y repetían el renglón de cobertura | **Corregido**: el boletín queda solo en el indicador de cobertura |
+| H6 | Fe de erratas en el cartelón | **No se corrige**: instrucción permanente del destinatario (ARGOS 109), «sin fe de erratas en el cartelón»; quedan en §8 y en el índice |
+| H7 | Detenidos de SLP en el recálculo | **Corregido**: 3 por titular |
+| H8 | Conclusiones 2 y 3 | **Corregido** |
+| H9 | Ventana de Sombrerete | **Corregido**: 126 o 125 |
+| H10, H11 | Pendientes sin disposición; Coatzacoalcos cerrado con fecha sin arbitrar | **Corregido** en `_pendientes.md` |
+| H13 | Valoración 3 repetía la función de la portada; totales en tres sitios | **Corregido** lo primero; lo segundo, **no**: precedente de 126 y 127 y bloque obligatorio de iconografía |
+| H14 | Texto fijo del generador móvil («ARGOS 97», «los 1 ARG-ID») | **No se corrige en esta edición**: pasa a deuda de método |
+
+Tras este pase: `validar.js` y `gen-movil.py` → **validación OK**. No se lanzó un tercer pase: los hallazgos eran de redacción y referencia.
 
 ## 14. Herramientas
 

@@ -20,7 +20,7 @@ E = [
   hecho="Santiago Pinotepa Nacional · <code>BARRIO LA PLANTA, 9a. PONIENTE Y 13a. O 15a. SUR — CRUCE CONTRADICHO</code> · VIERNES 9-OCT, por la tarde (" + RES + ") · ataque armado · <b>muere el periodista Hamurabi Huesca Manzano</b>, director del portal Pinotepa Comunica, que también trabajaba como taxista, por titular (🔴) · <b>3 muertos</b>, por titular de cuatro medios regionales; uno de ellos, señalado como el blanco, muere horas después en el hospital · <code>CIFRA CONTRADICHA: 3 MUERTOS, O 2 MUERTOS Y UNA MUJER LESIONADA</code> · <b>FGE Oaxaca</b>: el blanco era otro hombre y el móvil, una disputa entre células; no descarta el vínculo con la actividad periodística — " + RES + " · <b>cero detenidos</b> · identidades de las otras víctimas, solo por iniciales: no se reproducen",
   panel="Asesinado el <b>periodista Hamurabi Huesca</b> en un ataque armado; <b>3 muertos</b>, cifra contradicha",
   inst="FGE Oaxaca <span class=\"muted-note\">(por cita)</span>", nac="El Universal · Infobae · La Razón · Milenio", conf="★★★☆☆",
-  campo="cifra de víctimas contradicha; hora, solo por resumen", I=1, N=4, R=8, A=0,
+  campo="cifra de víctimas contradicha; hora, solo por resumen", I=1, N=4, R=10, A=0,
   fechadas=["La Razón (2026/10/10)", "Infobae (2026/10/10)", "El Mañana (2026/10/9)", "Primera Línea (2026/10/09)"], estatus="Parcialmente corroborado", arm=None,
   desl="Pinotepa Nacional figura en el índice (ARG-100-004, cateo de agosto): otro hecho. Barrio La Planta no figura. 🔴 por víctima periodista y víctimas múltiples"),
  dict(id="ARG-128-002", estado="MX-GUA", region="Occidente", color="amarillo", impacto="pequeno", fecha="2026-10-09", hora="~13:00 (solo por resumen)",
@@ -31,7 +31,7 @@ E = [
   inst="Seguridad y Paz Gto. <span class=\"muted-note\">(por cita)</span>", nac="<span class=\"muted-note\">ninguna</span>", conf="★★★☆☆",
   campo="cantidad de armas contradicha; hora y origen de los disparos, solo por resumen", I=1, N=0, R=5, A=0,
   fechadas=["AM (2026/10/09)", "Noticieros en Línea (2026/oct/09)", "Primer Plano Irapuato (2026/10/10)"], estatus="Parcialmente corroborado", arm="ARG-128-ARM-001",
-  desl="Celaya figura en el índice (ARG-98-003, ARG-103-REC-006, ARG-122-002): otros hechos. NO es la detención de Celaya y Villagrán del 6-oct (3 armas): otra fecha. 🟡 por persecución con detonaciones"),
+  desl="Celaya figura en el índice (ARG-98-003, ARG-103-REC-006, ARG-122-002): otros hechos. NO es la detención de Celaya y Villagrán publicada el 6-oct: otra fecha. 🟡 por persecución con detonaciones"),
  dict(id="ARG-128-003", estado="MX-MEX", region="Centro", color="rojo", impacto="mediano", fecha="2026-10-09", hora="~09:30, llamada al 911 (solo por resumen)",
   ent="Estado de México", mun="San José del Rincón (San Joaquín Lamillas)", dia="9-OCT ~09:30",
   title="ESTADO DE MÉXICO · SAN JOSÉ DEL RINCÓN — ATAQUE ARMADO CONTRA LOS OCUPANTES DE UNA CAMIONETA: DOS MUERTOS Y UN HERIDO GRAVE",
@@ -49,7 +49,7 @@ E = [
   inst="SSP Sinaloa <span class=\"muted-note\">(por cita)</span>", nac="Proceso · El Financiero · La Silla Rota · Reforma · Excélsior", conf="★★★☆☆",
   campo="hora del hecho, solo por resumen", I=1, N=7, R=1, A=0,
   fechadas=["Proceso (2026/10/9)", "El Financiero (2026/10/09)", "La Silla Rota (2026/10/9)"], estatus="Parcialmente corroborado", arm=None,
-  desl="NO es ARG-127-004 (riña del 8-oct, ventana de ARGOS 127): otro día, otro saldo; la FGE no confirma el vínculo. NO es la riña del 24-sep en talleres. 🔴 por motín con víctimas"),
+  desl="NO es ARG-127-004 (riña del 8-oct, ventana de ARGOS 127): otro día, otro saldo; la FGE no confirma el vínculo. NO es la riña del 24-sep en el área de talleres, publicada en su día. 🔴 por motín con víctimas"),
  dict(id="ARG-128-005", estado="MX-MEX", region="Centro", color="amarillo", impacto="pequeno", fecha="2026-10-09", hora="no fijada («por la noche»)",
   ent="Estado de México", mun="Naucalpan (col. Valle Dorado)", dia="PUB. 9-OCT, HORA NO FIJADA",
   title="ESTADO DE MÉXICO · NAUCALPAN — AGRESIÓN A BALAZOS EN VALLE DORADO: UN MUERTO Y UN LESIONADO",
@@ -135,10 +135,10 @@ R = [
   panel="Agresión armada a la <b>Guardia Civil</b>; sin lesionados", inst="SSP Michoacán <span class=\"muted-note\">(por cita)</span>", nac="<span class=\"muted-note\">ninguna</span>",
   conf="★★☆☆☆", campo="hora del hecho; ninguna fuente con fecha en la ruta", I=1, N=0, R=3, A=0,
   fechadas=[], desl="Penjamillo figura en el índice solo por mención (ARG-121-REC-005): otro hecho. NO es el tiroteo del 18-sep en Penjamillo. 🔴 por ataque contra autoridades"),
- dict(id="ARG-128-REC-010", estado="MX-ZAC", region="Noreste", fecha="2026-10-07", hora="no fijada", orig="ARGOS 126", col_orig="verde",
+ dict(id="ARG-128-REC-010", estado="MX-ZAC", region="Noreste", fecha="2026-10-07", hora="no fijada", orig="ARGOS 126 o 125", col_orig="verde",
   ent="Zacatecas", mun="Sombrerete", dia="7-OCT",
   title="ZACATECAS · SOMBRERETE — CATEO FEDERAL CON EXPLOSIVOS DE EMULSIÓN Y DETONADORES; CIFRAS CONTRADICHAS",
-  hecho="<code>VENTANA DE ORIGEN: ARGOS 126</code> · acciones del MIÉRCOLES 7-OCT, informadas por la FGR el 8-OCT · <b>FGR y SSPC</b>, con Defensa y GN · cateo · <b>22 explosivos</b> y <b>185 detonadores</b>, por titular de un medio regional · 16.42 m de mecha, 37 kg de fertilizante y 2 generadores, " + RES + " (🟢 en su ventana) · <code>DETENIDOS NO ATRIBUIDOS: UN TITULAR SOBRE CATEOS EN ZACATECAS Y NUEVO LEÓN DA DOS, SIN PRECISAR DÓNDE</code> · <code>CIFRAS CONTRADICHAS: OTRO MEDIO DA 22 «SALCHICHAS», 39 DETONADORES, 146 CONECTORES Y 16.72 M EN SAN JOSÉ DE LOS RANCHOS — POSIBLE DUPLICIDAD U OPERATIVO DISTINTO, NO ARBITRADO</code>",
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 126 O 125 — HORA NO FIJADA</code> · acciones del MIÉRCOLES 7-OCT, informadas por la FGR el 8-OCT · <b>FGR y SSPC</b>, con Defensa y GN · cateo · <b>22 explosivos</b> y <b>185 detonadores</b>, por titular de un medio regional · 16.42 m de mecha, 37 kg de fertilizante y 2 generadores, " + RES + " (🟢 en su ventana) · <code>DETENIDOS NO ATRIBUIDOS: UN TITULAR SOBRE CATEOS EN ZACATECAS Y NUEVO LEÓN DA DOS, SIN PRECISAR DÓNDE</code> · <code>CIFRAS CONTRADICHAS: OTRO MEDIO DA 22 «SALCHICHAS», 39 DETONADORES, 146 CONECTORES Y 16.72 M EN SAN JOSÉ DE LOS RANCHOS — POSIBLE DUPLICIDAD U OPERATIVO DISTINTO, NO ARBITRADO</code>",
   panel="<b>22 explosivos</b> y detonadores (185 o 39, contradichos)", inst="FGR <span class=\"muted-note\">(por cita)</span>", nac="Milenio",
   conf="★★☆☆☆", campo="cifras contradichas entre medios", I=1, N=1, R=4, A=0,
   fechadas=[], desl="Sombrerete figura en el índice (ARG-93-003, laboratorio, agosto): otro hecho. NO es ARG-127-REC-002 (Ojocaliente, mismo boletín del 7-oct): otro municipio")
@@ -312,7 +312,7 @@ panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
     <b>Total de armas integradas: {ARMAS}</b> —Celaya, «armas aseguradas» sin cifra: <code>CANTIDAD NO DETERMINADA</code>—. <b>Detenidos</b> = solo los del <b>mismo evento de aseguramiento</b>. <b>Entidades</b> = con al menos un hecho propio.
-    <b>Muertos en hechos propios: 9</b> —<b>7 en los tres rojos</b> y <b>2 en los amarillos de Naucalpan</b>, reparto solo por resumen—; <b>8 si en Pinotepa son 2</b>, versión contradicha; <b>heridos: 2</b>, San José del Rincón y Naucalpan: <b>cálculo propio</b>.
+    <b>Muertos en hechos propios: 9</b> —<b>7 en los tres rojos</b> y <b>2 en los amarillos de Naucalpan</b>, reparto solo por resumen—; <b>heridos: 2</b>, San José del Rincón y Naucalpan; <b>8 muertos y 3 heridos</b> si en Pinotepa son 2 muertos y una lesionada, versión contradicha: <b>cálculo propio</b>.
   </p>
 '''
 
@@ -422,7 +422,7 @@ cierre = f'''  <div class="alerta contexto">
     <p>
       <b>1.</b> <b>NIVEL FIJADO POR TRES ROJOS</b>: ARG-128-001 (Oaxaca), ARG-128-003 (Estado de México) y ARG-128-004 (Sinaloa).
       <br><b>2.</b> <b>Contexto operativo</b>: tres amarillos (ARG-128-002, ARG-128-005, ARG-128-006); <b>ninguna acción institucional propia</b> en la ventana.
-      <br><b>3.</b> <b>Ningún detenido publicado</b> por los tres rojos. Vigilancia prioritaria: Costa de Oaxaca, sur mexiquense y penal de Mazatlán.
+      <br><b>3.</b> <b>Ningún detenido publicado</b> por los tres rojos (ARG-128-001, ARG-128-003, ARG-128-004).
       <br><b>4.</b> La respuesta institucional del periodo aparece solo en recuperaciones (ARG-128-REC-003 a ARG-128-REC-008, ARG-128-REC-010), fuera del nivel.
       <br><b>5.</b> <code>25 H 48 MIN; CUATRO DE SEIS HECHOS CON FRONTERA DE VENTANA Y LAS HORAS DE LOS OTROS DOS SOLO POR RESUMEN; BOLETÍN FEDERAL DEL 9-OCT SIN INDEXAR: TOTALES NO COMPARABLES SIN MÁS.</code>
     </p>
@@ -431,11 +431,11 @@ cierre = f'''  <div class="alerta contexto">
   <div class="alerta contexto" style="margin-top:8px;">
     <div class="flag">CONCLUSIONES DE INTELIGENCIA CRIMINAL</div>
     <p>
-      <b>1. EN EL BAJÍO LOS CIVILES ARMADOS ABREN FUEGO DESDE VEHÍCULOS AL CONTACTO CON LA FUERZA ESTATAL.</b> Celaya (ARG-128-002) y Penjamillo (ARG-128-REC-009),
-      sin bajas oficiales. Línea: <b>rutas de huida y vehículos</b> de las células — hipótesis.
-      <br><b>2. ATAQUES CONTRA OCUPANTES DE VEHÍCULOS QUE ALCANZAN A FAMILIARES.</b> San José del Rincón (ARG-128-003), Huanusco (ARG-128-REC-002) y Papantla (ARG-128-REC-001),
-      con un menor entre las víctimas. Línea: <b>perfil del blanco</b> y tramos carreteros de riesgo.
-      <br><b>3. LA MUNICIÓN CIRCULA SEPARADA DEL ARMA.</b> Cateos federales con cartuchos y cargadores sin arma asegurada (ARG-128-REC-004, ARG-128-REC-005) — consistente con
+      <b>1. EN EL BAJÍO, CÉLULAS ARMADAS EN VEHÍCULOS FRENTE A LA FUERZA ESTATAL.</b> Disparos contra la Guardia Civil en Penjamillo (ARG-128-REC-009) y persecución
+      con detonaciones de autor no determinado en Celaya (ARG-128-002). Línea: <b>rutas de huida y vehículos</b> — hipótesis.
+      <br><b>2. ATAQUES ARMADOS CONTRA OCUPANTES DE VEHÍCULOS EN CARRETERAS Y CAMINOS RURALES.</b> San José del Rincón (ARG-128-003) y Huanusco (ARG-128-REC-002), este contra
+      el familiar de una autoridad; en Papantla muere un menor (ARG-128-REC-001). Línea: <b>tramos de riesgo y perfil del blanco</b>.
+      <br><b>3. LA MUNICIÓN CIRCULA SEPARADA DEL ARMA.</b> Cateos federales con cartuchos (ARG-128-REC-004, ARG-128-REC-005) y cargadores (ARG-128-REC-004) sin arma asegurada — consistente con
       acopio logístico, requiere validación. Línea: <b>rastreo de lotes</b> de munición.
       <br><b>4. EXPLOSIVO COMERCIAL EN EL NORTE DE ZACATECAS.</b> Emulsión y detonadores en Sombrerete (ARG-128-REC-010), con cifras contradichas. Línea: <b>control de
       polvorines y minas</b> como fuente de AEI — hipótesis.
@@ -447,8 +447,6 @@ cierre = f'''  <div class="alerta contexto">
   <div class="section-head" style="margin-top:10px;">INDICADORES OFICIALES</div>
   <p class="muted-note" style="margin:0;">
     <b>gabinetedeseguridad.gob.mx/resultados/</b> — <code>SIN RESULTADO INDEXADO EN VENTANA</code>: ningún informe diario de octubre indexado. <b>SESNSP, INEGI y FGR</b>: <b>sin publicación estadística nueva localizada dentro de la ventana</b>.
-    <br><b>El agregado federal del periodo</b> es el <b>boletín de las acciones del 8-oct, publicado el 9-oct</b>, diario, alcanzado por republicadores.
-    <code>NO INDEXADO POR SU EMISOR: SUS REPUBLICADORES NO SON FUENTES INDEPENDIENTES ENTRE SÍ.</code>
     <br><b>Toda cifra de este cartelón sin emisor nombrado es cálculo propio de ARGOS.</b>
   </p>
 '''

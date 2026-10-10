@@ -1756,7 +1756,6 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 | **Penjamillo — fecha** | **Tarde del 7-oct** → `ARG-128-REC-009` 🔴 |
 | **Cosalá — 2.6 t / 2,693 kg; titular de tres estados** | Misma cifra truncada; el titular de tres estados es de **mayo de 2026**: no aplica |
 | **Casas Grandes — móvil** | Deuda de drogas, secuestro descartado → `ARG-128-FE-003` |
-| **Coatzacoalcos — vinculación** | **Vinculados los 5** (cuatro titulares); fecha del acto contradicha (6 o 9-oct) |
 | **Zacatecas, pista NTR del padre de la alcaldesa** | Huanusco, 8-oct → `ARG-128-REC-002` |
 | **Boletín federal de las acciones del 8-oct** | Localizado, publicado el 9-oct → `ARG-128-REC-003` a `-007` |
 | **`gen-texto.py` omitía recuadros y `-REC-`** | **Reparado** |
@@ -1780,6 +1779,11 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 | **Sentencias candidatas** | **En ventana, sin boletín**: FGR Chihuahua (7 años) y FGR Sinaloa (hasta 11 años, tres personas) —titulares del listado, sin individualizar—; León, 26 años 8 meses; NL, 28 años a dos; Chihuahua, 8 años. **Querétaro, Corregidora, 3 años**: boletín oficial del 8-oct, posible sentencia de la ventana de 127. **Heredadas**: Cajeme, Lerma, Matamoros, Laurentino, QRoo, Buenavista, Nayarit, Culiacán, BCS |
 | **Seguimientos no revisados en 128** | Zihuatanejo (desplazados) · Mixtequilla (detenidos) · 26 extranjeros (nacionalidades) · Comonfort · Hermosillo · Xalisco/La Curva (cifra e identificaciones) · Ixtlahuacán · Guadalajara |
 | **SLP, 9 detenidos por robo al autotransporte** (`ARG-125-015`) | Cifras de armas discrepantes entre medios |
+| **VERACRUZ · Coatzacoalcos** (`ARG-124-002`, `ARG-125-021`) | Vinculación de los 5 por cuatro titulares; **fecha del acto contradicha (6 o 9-oct)**: arbitrar con boletín de la FGE; no se fichó en 128 |
+| **SINALOA · autolavado de Flores Magón** (`ARG-127-002`) | Heridos 3 / 4 / 5, cada cifra por titular: no se suman; detenidos; vehículo |
+| **TABASCO · La Huerta** (`ARG-127-REC-003`) | **Duplicidad probable** con la detención de «La Flaca» y «El Titi» (Diario de Tabasco y Quadratín, 8-oct): sigue fuera de totales; literal del desglose |
+| **CHIHUAHUA · Balleza** (`ARG-126-REC-004`) | Identidad de los abatidos; hora (noche del 6 o madrugada del 7); 230/231 cartuchos; vehículos |
+| **Pistas sin leer** | Cancún, mototaxistas (fecha); Morelos, Úrsula Camila Osorio localizada |
 
 ## Deuda de método (ARGOS 128)
 
@@ -1796,7 +1800,8 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
    **CICLO A** (Noroeste + Centro).
 5. **Folios DPE de la FGR**: aparecen solo en el resumen del buscador; **no se publican** sin titular o URL que los contenga (regla de
    `ARG-115-FE-005`).
-6. **`validar.js` no aplica al móvil** (sigue abierta). `gen-texto.py`, reparado.
+6. **`validar.js` no aplica al móvil** (sigue abierta). `gen-texto.py`, reparado. **`gen-movil.py` arrastra texto fijo de método** («origen del error
+   corregido en ARGOS 97», «los 1 ARG-ID», «no se omitió ningún dato» frente a «índice solo en el cartelón»): corregir la plantilla.
 7. **Umbral de «víctimas múltiples» con un solo muerto** (`ARG-120-009` frente a Cócorit): sigue sin fijarse en `CLAUDE.md`.
 8. **ARG-ID retirados antes de publicar**: `ARG-128-007` (Coatzacoalcos) y `ARG-128-REC-011` (Borja). No se reutilizan; constan en §13 del
    archivo de fuentes.

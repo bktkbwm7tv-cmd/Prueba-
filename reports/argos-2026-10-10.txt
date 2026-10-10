@@ -64,7 +64,7 @@ desaparecidos.
   Chihuahua · Cuauhtémoc · VENTANA ARGOS 127 o 126 | 30 kg de cocaína; sin detenidos ni armas | 🟢 Verde (en su ventana) | Gabinete de Seguridad (por republicador) | Milenio | ★★☆☆☆ | ARG-128-REC-007
   Michoacán · Uruapan, Pátzcuaro y Morelia · VENTANA ARGOS 126 o 127 | 12 cateos, 10 detenidos y 4 armas sin desglose | 🟢 Verde (en su ventana) | SIN BOLETÍN | Crónica · Infobae · Milenio · MVS | ★★★☆☆ | ARG-128-REC-008
   Michoacán · Penjamillo · VENTANA ARGOS 126 o 125 | Agresión armada a la Guardia Civil; sin lesionados | 🔴 Rojo (en su ventana) | SSP Michoacán (por cita) | ninguna | ★★☆☆☆ | ARG-128-REC-009
-  Zacatecas · Sombrerete · VENTANA ARGOS 126 | 22 explosivos y detonadores (185 o 39, contradichos) | 🟢 Verde (en su ventana) | FGR (por cita) | Milenio | ★★☆☆☆ | ARG-128-REC-010
+  Zacatecas · Sombrerete · VENTANA ARGOS 126 o 125 | 22 explosivos y detonadores (185 o 39, contradichos) | 🟢 Verde (en su ventana) | FGR (por cita) | Milenio | ★★☆☆☆ | ARG-128-REC-010
 
   Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Armas cortas | Armas largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Entidades
   6 | 3 | 3 | 0 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 4
@@ -82,8 +82,8 @@ NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
 Total de armas integradas: 0 —Celaya, «armas aseguradas» sin cifra: CANTIDAD NO DETERMINADA—.
 Detenidos = solo los del mismo evento de aseguramiento. Entidades = con al menos un hecho
 propio. Muertos en hechos propios: 9 —7 en los tres rojos y 2 en los amarillos de Naucalpan,
-reparto solo por resumen—; 8 si en Pinotepa son 2, versión contradicha; heridos: 2, San José del
-Rincón y Naucalpan: cálculo propio.
+reparto solo por resumen—; heridos: 2, San José del Rincón y Naucalpan; 8 muertos y 3 heridos si
+en Pinotepa son 2 muertos y una lesionada, versión contradicha: cálculo propio.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-10 · Hora: 09:08 (CDMX) · Corte: Matutino · ARGOS N.° 128 · USO INSTITUCIONAL
@@ -109,7 +109,7 @@ reproducen
 ── TRAZABILIDAD
 
 ARG-128-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: cifra de víctimas
-contradicha; hora, solo por resumen · Fuentes: Institucional 1 · Nacional 4 · Regional 8 ·
+contradicha; hora, solo por resumen · Fuentes: Institucional 1 · Nacional 4 · Regional 10 ·
 Abierta 0 · con fecha en la ruta: La Razón (2026/10/10) · Infobae (2026/10/10) · El Mañana
 (2026/10/9) · Primera Línea (2026/10/09) · Hecho: 2026-10-09 · Hora: por la tarde (solo por
 resumen) · Consulta: 2026-10-10 09:08-09:20 · Estatus: Parcialmente corroborado · Conteo de
@@ -138,7 +138,7 @@ Línea (2026/oct/09) · Primer Plano Irapuato (2026/10/10) · Hecho: 2026-10-09 
 (solo por resumen) · Consulta: 2026-10-10 09:08-09:20 · Estatus: Parcialmente corroborado ·
 Conteo de armamento: ARG-128-ARM-001
 Deslindes y reservas: Celaya figura en el índice (ARG-98-003, ARG-103-REC-006, ARG-122-002):
-otros hechos. NO es la detención de Celaya y Villagrán del 6-oct (3 armas): otra fecha. 🟡 por
+otros hechos. NO es la detención de Celaya y Villagrán publicada el 6-oct: otra fecha. 🟡 por
 persecución con detonaciones
 
 ### ESTADO DE MÉXICO · SAN JOSÉ DEL RINCÓN — ATAQUE ARMADO CONTRA LOS OCUPANTES DE UNA CAMIONETA: DOS MUERTOS Y UN HERIDO GRAVE [ROJO]
@@ -184,8 +184,8 @@ ruta: Proceso (2026/10/9) · El Financiero (2026/10/09) · La Silla Rota (2026/1
 2026-10-10 09:08-09:20 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — no
 hubo armamento asegurado
 Deslindes y reservas: NO es ARG-127-004 (riña del 8-oct, ventana de ARGOS 127): otro día, otro
-saldo; la FGE no confirma el vínculo. NO es la riña del 24-sep en talleres. 🔴 por motín con
-víctimas
+saldo; la FGE no confirma el vínculo. NO es la riña del 24-sep en el área de talleres, publicada
+en su día. 🔴 por motín con víctimas
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-10 · Hora: 09:08 (CDMX) · Corte: Matutino · ARGOS N.° 128 · USO INSTITUCIONAL
@@ -443,21 +443,21 @@ hecho. NO es el tiroteo del 18-sep en Penjamillo. 🔴 por ataque contra autorid
 
 ── HECHO
 
-VENTANA DE ORIGEN: ARGOS 126 · acciones del MIÉRCOLES 7-OCT, informadas por la FGR el 8-OCT ·
-FGR y SSPC, con Defensa y GN · cateo · 22 explosivos y 185 detonadores, por titular de un medio
-regional · 16.42 m de mecha, 37 kg de fertilizante y 2 generadores, SOLO POR RESUMEN (🟢 en su
-ventana) · DETENIDOS NO ATRIBUIDOS: UN TITULAR SOBRE CATEOS EN ZACATECAS Y NUEVO LEÓN DA DOS,
-SIN PRECISAR DÓNDE · CIFRAS CONTRADICHAS: OTRO MEDIO DA 22 «SALCHICHAS», 39 DETONADORES, 146
-CONECTORES Y 16.72 M EN SAN JOSÉ DE LOS RANCHOS — POSIBLE DUPLICIDAD U OPERATIVO DISTINTO, NO
-ARBITRADO
+VENTANA DE ORIGEN: ARGOS 126 O 125 — HORA NO FIJADA · acciones del MIÉRCOLES 7-OCT, informadas
+por la FGR el 8-OCT · FGR y SSPC, con Defensa y GN · cateo · 22 explosivos y 185 detonadores,
+por titular de un medio regional · 16.42 m de mecha, 37 kg de fertilizante y 2 generadores, SOLO
+POR RESUMEN (🟢 en su ventana) · DETENIDOS NO ATRIBUIDOS: UN TITULAR SOBRE CATEOS EN ZACATECAS Y
+NUEVO LEÓN DA DOS, SIN PRECISAR DÓNDE · CIFRAS CONTRADICHAS: OTRO MEDIO DA 22 «SALCHICHAS», 39
+DETONADORES, 146 CONECTORES Y 16.72 M EN SAN JOSÉ DE LOS RANCHOS — POSIBLE DUPLICIDAD U
+OPERATIVO DISTINTO, NO ARBITRADO
 
 ── TRAZABILIDAD
 
 ARG-128-REC-010 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: cifras
 contradichas entre medios · Fuentes: Institucional 1 · Nacional 1 · Regional 4 · Abierta 0 · con
 fecha en la ruta: ninguna con fecha en la ruta · Hecho: 2026-10-07 · Hora: no fijada · Consulta:
-2026-10-10 09:08-09:20 · Estatus: Parcialmente corroborado · Ventana de origen: ARGOS 126 —
-fuera de todos los totales
+2026-10-10 09:08-09:20 · Estatus: Parcialmente corroborado · Ventana de origen: ARGOS 126 o 125
+— fuera de todos los totales
 Deslindes y reservas: Sombrerete figura en el índice (ARG-93-003, laboratorio, agosto): otro
 hecho. NO es ARG-127-REC-002 (Ojocaliente, mismo boletín del 7-oct): otro municipio
 
@@ -563,8 +563,7 @@ INTEGRAN.
 ARG-128-004 (Sinaloa).
 2. Contexto operativo: tres amarillos (ARG-128-002, ARG-128-005, ARG-128-006); ninguna acción
 institucional propia en la ventana.
-3. Ningún detenido publicado por los tres rojos. Vigilancia prioritaria: Costa de Oaxaca, sur
-mexiquense y penal de Mazatlán.
+3. Ningún detenido publicado por los tres rojos (ARG-128-001, ARG-128-003, ARG-128-004).
 4. La respuesta institucional del periodo aparece solo en recuperaciones (ARG-128-REC-003 a
 ARG-128-REC-008, ARG-128-REC-010), fuera del nivel.
 5. 25 H 48 MIN; CUATRO DE SEIS HECHOS CON FRONTERA DE VENTANA Y LAS HORAS DE LOS OTROS DOS SOLO
@@ -572,15 +571,15 @@ POR RESUMEN; BOLETÍN FEDERAL DEL 9-OCT SIN INDEXAR: TOTALES NO COMPARABLES SIN 
 
 ── CONCLUSIONES DE INTELIGENCIA CRIMINAL
 
-1. EN EL BAJÍO LOS CIVILES ARMADOS ABREN FUEGO DESDE VEHÍCULOS AL CONTACTO CON LA FUERZA
-ESTATAL. Celaya (ARG-128-002) y Penjamillo (ARG-128-REC-009), sin bajas oficiales. Línea: rutas
-de huida y vehículos de las células — hipótesis.
-2. ATAQUES CONTRA OCUPANTES DE VEHÍCULOS QUE ALCANZAN A FAMILIARES. San José del Rincón
-(ARG-128-003), Huanusco (ARG-128-REC-002) y Papantla (ARG-128-REC-001), con un menor entre las
-víctimas. Línea: perfil del blanco y tramos carreteros de riesgo.
-3. LA MUNICIÓN CIRCULA SEPARADA DEL ARMA. Cateos federales con cartuchos y cargadores sin arma
-asegurada (ARG-128-REC-004, ARG-128-REC-005) — consistente con acopio logístico, requiere
-validación. Línea: rastreo de lotes de munición.
+1. EN EL BAJÍO, CÉLULAS ARMADAS EN VEHÍCULOS FRENTE A LA FUERZA ESTATAL. Disparos contra la
+Guardia Civil en Penjamillo (ARG-128-REC-009) y persecución con detonaciones de autor no
+determinado en Celaya (ARG-128-002). Línea: rutas de huida y vehículos — hipótesis.
+2. ATAQUES ARMADOS CONTRA OCUPANTES DE VEHÍCULOS EN CARRETERAS Y CAMINOS RURALES. San José del
+Rincón (ARG-128-003) y Huanusco (ARG-128-REC-002), este contra el familiar de una autoridad; en
+Papantla muere un menor (ARG-128-REC-001). Línea: tramos de riesgo y perfil del blanco.
+3. LA MUNICIÓN CIRCULA SEPARADA DEL ARMA. Cateos federales con cartuchos (ARG-128-REC-004,
+ARG-128-REC-005) y cargadores (ARG-128-REC-004) sin arma asegurada — consistente con acopio
+logístico, requiere validación. Línea: rastreo de lotes de munición.
 4. EXPLOSIVO COMERCIAL EN EL NORTE DE ZACATECAS. Emulsión y detonadores en Sombrerete
 (ARG-128-REC-010), con cifras contradichas. Línea: control de polvorines y minas como fuente de
 AEI — hipótesis.
@@ -591,9 +590,6 @@ anunciada.
 gabinetedeseguridad.gob.mx/resultados/ — SIN RESULTADO INDEXADO EN VENTANA: ningún informe
 diario de octubre indexado. SESNSP, INEGI y FGR: sin publicación estadística nueva localizada
 dentro de la ventana.
-El agregado federal del periodo es el boletín de las acciones del 8-oct, publicado el 9-oct,
-diario, alcanzado por republicadores. NO INDEXADO POR SU EMISOR: SUS REPUBLICADORES NO SON
-FUENTES INDEPENDIENTES ENTRE SÍ.
 Toda cifra de este cartelón sin emisor nombrado es cálculo propio de ARGOS.
 
 ----------------------------------------------------------------------------
