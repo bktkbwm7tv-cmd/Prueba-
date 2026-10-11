@@ -16,7 +16,7 @@ repetido (sin cambios). HEAD suelto: se abrió `claude/argos-129`.
 | Serie | 124 | 125 | 126 | 127 | 128 | **129** |
 |---|---|---|---|---|---|---|
 | Duración | 46 h 19 | 320 h 34 | 17 h 41 | 22 h 24 | 25 h 48 | **23 h 50** |
-| Densidad (hechos/h) | 0,30 | 0,16 | 0,40 | 0,27 | 0,23 | **0,29** (7 / 23,83, cálculo propio) |
+| Densidad (hechos/h) | 0,30 | 0,16 | 0,40 | 0,27 | 0,23 | **0,25** (6 / 23,83, cálculo propio) |
 
 `WINDOW_DAYS = 2`: la ventana toca dos fechas de calendario (10 y 11-oct). El generador lo comprueba con `assert`.
 
@@ -29,7 +29,7 @@ repetido (sin cambios). HEAD suelto: se abrió `claude/argos-129`.
   a otro periodista de Pinotepa en marzo—; `extended` trajo la cobertura del 9-10 oct con la línea de la FGEO. **Se mantuvo `extended`
   obligatorio.**
 - **Presupuesto**: control 2 + una ola de **nueve equipos** (encargos 18, boletín federal 18, seguimientos 18, Noroeste 20, Noreste 18,
-  Occidente 18, Centro 20, Golfo 14, Sureste 20 = **164**) + **8 del coordinador** = **174**; `procedencia-cifras` con tope de **25** → techo **199**.
+  Occidente 18, Centro 20, Golfo 14, Sureste 20 = **164**) + **8 del coordinador** = **174**; `procedencia-cifras` **23** (de 25) → **197 de 200**. `editor-duplicidad` no busca en la web. `procedencia-cifras` hizo **2** `WebFetch` (uno más del permitido), ambos `ENOTFOUND`.
 - **Rendimiento del coordinador**: las dos búsquedas nacionales por día («sábado 10 de octubre», «domingo 11 de octubre») hallaron
   **Minatitlán** y **Chipilo**, que después confirmaron los equipos del Golfo y del Centro. Las otras seis: afinado de Minatitlán, Chipilo,
   comunicado de la SEMAR, Escuinapa, Zamora y Las Porras.
@@ -100,12 +100,12 @@ GN, Defensa y Marina: consulta agrupada → `NO REVISADA`. **El comunicado de la
 | **Minatitlán** (`ARG-129-001`) | 🔴 por **ataque a infraestructura crítica**: agresión armada contra el personal de vigilancia en el acceso de una refinería. El saldo (1 muerto y 1 herido, seis titulares, frente a «dos lesionados» de Pemex, dos titulares) **no mueve el color**; sí fija la confianza |
 | **Chipilo** (`ARG-129-002`) | 🟡 por **quién inicia**: la policía intenta una revisión y es repelida. Sin muertos del personal. Si se acredita emboscada, sube |
 | **Escuinapa** (`-003`, `-004`) | Dos fichas: el titular de Línea Directa 2026-10-10 los da como **«dos ataques»**. 🟡 cada uno por homicidio doloso único. `FRONTERA`: publicados el 10-oct sin hora del hecho —el «tarde» del primero es solo por resumen— |
-| **Comunicado de la SEMAR del 10-oct** (`-005`, `-006`) | Cinco eventos sin fecha publicada. **Las Porras** (agresión a marinos, 1 detenido, 1 larga, 29 cartuchos, por resumen): 🟡, porque «fueron agredidos» no acredita emboscada ni patrullaje; la regla manda amarillo cuando no se determina quién inició. **Varados y Siqueros** (7 AEI inhabilitados): 🟢. **Rincón de Higueras, El Rosario** (103 mil dosis): 4-oct, ya publicado el 5-oct → `EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE`, no fichado. **Infonavit Playas** (1 detenido, dosis): sin armamento, mencionado en `-006`. El agregado de 8 largas, 67 cargadores y 215 cartuchos **no se atribuye por evento** y no se integra salvo Las Porras. Todo `FRONTERA` |
-| **Pachuca, Las Lajas** (`-007`) | 🟢; fuente única con fecha; sin armamento: no entra en la tabla de armamento |
-| **Zamora** (`ARG-129-REC-001`) | Bar El Nuevo Quijote, **viernes 2-oct ~23:00**: dentro de la ventana de **ARGOS 125** (24-sep → 7-oct), que no lo publicó; no figura en el índice. `-REC-` 🔴. Fe de erratas en §8 |
+| **Comunicado de la SEMAR del 10-oct** (`-005`; `-006` **retirado**) | Cinco eventos sin fecha publicada («en días pasados», por resumen). **Las Porras** (agresión a marinos, 1 detenido, 1 larga, 29 cartuchos, por resumen): 🟡, porque «fueron agredidos» no acredita emboscada ni patrullaje; la regla manda amarillo cuando no se determina quién inició. **Varados y Siqueros** (7 AEI inhabilitados): fichado en el borrador como `ARG-129-006` 🟢; **retirado** por `editor-duplicidad` #1: `POSIBLE DUPLICIDAD CON ARG-125-005` (7 AEI destruidos en Mazatlán, 6-oct, poblado no localizado) y con `ARG-125-046` (cuyo hecho nombra Siqueros). El ARG-ID no se reutiliza. **Rincón de Higueras, El Rosario** (103 mil dosis): 4-oct, ya publicado el 5-oct → `EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE`, no fichado. **Infonavit Playas** (1 detenido, dosis): sin armamento, mencionado en el deslinde de `-005`. El agregado de 8 largas, 67 cargadores y 215 cartuchos **no se atribuye por evento** y no se integra salvo Las Porras. Todo `FRONTERA` |
+| **Pachuca, Las Lajas** (`-007`) | 🟢; **boletín de la SSPH** alcanzado por republicadores (Zunoticia, Agenda Hidalguense, 2026/10/10); **630 dosis** (titular de cuatro medios) frente a **640** (titular del boletín): no arbitrado; sin armamento: no entra en la tabla de armamento |
+| **Zamora** (`ARG-129-REC-001`) | Bar El Nuevo Quijote, **viernes 2-oct ~23:00**: dentro de la ventana de **ARGOS 125** (24-sep → 7-oct), que no lo publicó; no figura en el índice. ARGOS 126 lo registró como candidato (`argos-2026-10-08-fuentes.md` §10, «anterior a la ventana de 125»: **error de asignación**, el 2-oct cae dentro de 125). **4 policías detenidos por robar pertenencias de las víctimas** (titular de Infobae 2026/10/06): no son detenidos por el ataque. `-REC-` 🔴. Fe de erratas en §8 |
 | **Culiacán, Los Pinos** (`-REC-002`) | El operativo **inicia la noche del 9-oct** (ventana de 128) y sigue la mañana del 10; no se acredita que el aseguramiento terminara después de las 09:08. `-REC-` con origen 128, cualitativo |
-| **Escobedo** (`-REC-003`) | «Madrugada de este sábado» 10-oct: anterior a la apertura. `-REC-` con origen 128; fuentes sin fecha en la ruta |
-| **Navolato, 80 años** | Sentencia publicada el 10-oct; el *slug* «obtiene-fiscalia-de-sinaloa-sentencia-condenatoria…» está en un **medio** (Noticiero Altavoz), no en el dominio oficial → `PENDIENTE DE CONFIRMACIÓN OFICIAL` (umbral asimétrico) |
+| **Escobedo** (borrador: `-REC-003`, **retirado**) | «Madrugada de este sábado» 10-oct, solo por resumen; **ninguna fuente con fecha en la ruta**. Retirado por `editor-duplicidad` #3 con el mismo criterio que Tetlatlahuca. El ARG-ID no se reutiliza |
+| **Navolato, 80 años** | Tope de cumplimiento **70 o 60 años, contradicho** (Línea Directa y Azteca Sinaloa frente a El Universal y El Congresista, por resumen); Café Negro titula «70 años». Sentencia publicada el 10-oct; el *slug* «obtiene-fiscalia-de-sinaloa-sentencia-condenatoria…» está en un **medio** (Noticiero Altavoz), no en el dominio oficial → `PENDIENTE DE CONFIRMACIÓN OFICIAL` (umbral asimétrico) |
 | **Ensenada** | **Veredicto de culpabilidad** del 9-oct; individualización de sanciones el 16-oct: **no es sentencia** |
 | **Papantla** (equipo del Golfo) | Ya publicado como `ARG-128-REC-001`: el equipo no lo cotejó. Infobae y Plumas Libres 2026/10/10 añaden «posible cobro de piso» (resumen): sin cambio |
 
@@ -120,9 +120,11 @@ GN, Defensa y Marina: consulta agrupada → `NO REVISADA`. **El comunicado de la
   · cartuchos **0** · cargadores **0** · detenidos en evento de aseguramiento **6** (SLP 3, por titular; Juárez 2, por *slug*; Zacatlán 1).
 - **`ARG-129-FE-002`** — sobre **ARGOS 125**: un hecho no publicado, `ARG-129-REC-001` (Zamora, 2-oct). Efecto sobre el semáforo de 125: rojos
   **+1**; muertos **+4**, heridos **+3**.
-- **`ARG-129-FE-003`** — sobre **ARGOS 128**: dos hechos no publicados, `ARG-129-REC-002` (Culiacán, Los Pinos) y `-REC-003` (Escobedo). Efecto
-  sobre el semáforo de 128: verdes 0 → **2**. Armamento de 128: Escobedo añadiría 1 corta, 1 cargador, 15 cartuchos y 2 detenidos, **solo por
-  resumen**; Los Pinos, cualitativo.
+- **`ARG-129-FE-003`** — sobre **ARGOS 128**: un hecho no publicado, `ARG-129-REC-002` (Culiacán, Los Pinos; inicio la noche del 9 o la
+  madrugada del 10, contradicho, ambos en 128). Efecto sobre el semáforo de 128: verdes 0 → **1**; armamento, cualitativo.
+- **Supuesto del recálculo de 127**: las recuperaciones `ARG-128-REC-003` a `-007` se asignan a la ventana de **127** (no a 126). Las 2 cortas de
+  SLP (`ARG-127-006`) ya se retiraron por `ARG-128-FE-004`; los 3 detenidos de SLP se sostienen por titular. Si la ventana fuese 126, el recálculo
+  pasa a esa edición.
 
 ## 9. Registro del barrido — por entidad
 
@@ -134,10 +136,10 @@ SRIV = `SIN RESULTADO INDEXADO EN VENTANA`. `SIN ACTUALIZACIÓN CONSTATADA`: **0
 | Baja California Sur | NO REVISADA (segunda edición) | NO REVISADA | NO REVISADA |
 | Sonora | NO REVISADA (Palo Fierro sin URL) | NO REVISADA | NO REVISADA (dominio no devuelto) |
 | Chihuahua | NO REVISADA | NO REVISADA | NO REVISADA (sin `site:`) |
-| Sinaloa | **hechos** (Escuinapa ×2, Las Porras, Varados) · REC Los Pinos | SRIV (`sspsinaloa.gob.mx`) · **hechos SEMAR** | NO REVISADA (dominio no devuelto) · Navolato, solo medios |
+| Sinaloa | **hechos** (Escuinapa ×2, Las Porras) · REC Los Pinos · Varados, posible duplicidad | SRIV (`sspsinaloa.gob.mx`) · **hechos SEMAR** | NO REVISADA (dominio no devuelto) · Navolato, solo medios |
 | Durango | NO REVISADA | NO REVISADA | SRIV (`fiscalia.durango.gob.mx`; 5 y 7-oct) |
 | Coahuila | NO REVISADA | NO REVISADA | SRIV débil (PDF) |
-| Nuevo León | SRIV · REC Escobedo | NO REVISADA | NO REVISADA · candidato del 10-oct, solo medios |
+| Nuevo León | SRIV · Escobedo, sin fecha (no fichado) | NO REVISADA | NO REVISADA · candidato del 10-oct, solo medios |
 | Tamaulipas | SRIV | NO REVISADA | SRIV (`fgjtam.gob.mx`; FGJE-381 del 10-oct, Matamoros, **sin leer**) |
 | San Luis Potosí | SRIV | NO REVISADA (dominio SSP no confirmado) | SRIV (`fiscaliaslp.gob.mx`) |
 | Zacatecas | SRIV | SRIV (`ssp.zacatecas.gob.mx`) | SRIV (`fiscaliazacatecas.gob.mx`) |
@@ -171,6 +173,9 @@ los equipos del Centro, Noroeste y Noreste no hicieron `site:` de armamento en l
 | Hecho | Motivo |
 |---|---|
 | Sinaloa, El Rosario, 103 mil dosis | 4-oct, publicado el 5-oct (Línea Directa 2026-10-05) |
+| Sinaloa, Varados y Siqueros, 7 AEI (borrador `ARG-129-006`) | `POSIBLE DUPLICIDAD CON ARG-125-005 / ARG-125-046 — NO INTEGRAR HASTA VALIDACIÓN` |
+| Nuevo León, Escobedo, riña con arma corta (borrador `ARG-129-REC-003`) | Ninguna fuente con fecha en la ruta; cifras solo por resumen |
+| Edomex, Operación Enjambre, 27 personas, 1,208 años (titulares de La Jornada y Crónica 2026/10/09; *slug* en `gob.mx/sspc`) frente a 1,153 años 5 meses (resumen) | Publicado el **9-oct** (ventana 128), acumulado de resoluciones anteriores; el 10-oct es la republicación de El Vigía |
 | Sinaloa, Culiacán col. Independencia, mujer baleada; Sonora, Hermosillo, Palo Fierro | Sin URL de nota; solo por resumen |
 | Sinaloa, Concordia, más de 80 AEI (8-oct) | `POSIBLE DUPLICIDAD` con `ARG-126-004` (Pánuco) |
 | Sinaloa, La Costerita, vinculación de 4 | Seguimiento procesal |
@@ -185,29 +190,71 @@ los equipos del Centro, Noroeste y Noreste no hicieron `site:` de armamento en l
 
 ## 11. Desglose de cálculos propios
 
-- Duración: 10-oct 09:08 → 11-oct 08:58 = **23 h 50 min** = 23,83 h. Densidad: 7 / 23,83 = **0,29**.
+- Duración: 10-oct 09:08 → 11-oct 08:58 = **23 h 50 min** = 23,83 h. Densidad: 6 / 23,83 = **0,25**.
 - Muertos en hechos propios: 1 (Minatitlán, contradicho) + 1 + 1 (Escuinapa) = **3**. Heridos: 1 (Minatitlán) + 1 (Chipilo) = **2**; con la versión de
   Pemex, **2 muertos y 3 heridos**.
-- Armamento propio: largas 1, cartuchos 29, AEI 7, detenidos 1 — todas solo por resumen.
-- Recuperaciones por color de origen: 🔴 1 (Zamora) · 🟢 2 = **3**.
-- Frontera: 5 de 7 (`-003` a `-007`).
+- Armamento propio: largas 1, cartuchos 29, detenidos 1 — todas solo por resumen.
+- Recuperaciones por color de origen: 🔴 1 (Zamora) · 🟢 1 (Los Pinos) = **2**.
+- Frontera: 4 de 6 (`-003`, `-004`, `-005`, `-007`).
 
 ## 12. Fuentes por ficha
 
-- **`ARG-129-001`** — La Silla Rota 2026/10/10 (532488); Infobae 2026/10/11; Milenio (dos notas); López-Dóriga; Expreso 266224; Azteca Veracruz; Tiempo; El Universal («dos lesionados»); SDP («Pemex confirma dos trabajadores lesionados»). Infobae «EN VIVO» 11-oct: *liveblog*.
-- **`ARG-129-002`** — Síntesis 2026/10/10; Infobae 2026/10/11; Puebla Online 166599; Quadratín Puebla; El Universal Puebla; Meganoticias 778011; N+ (Foro TV); Ambas Manos 354674; Curul; Quince Minutos; Oronoticias; El Congresista («11 de octubre»).
-- **`ARG-129-003`** — Línea Directa 2026-10-10__1718001; Los Noticieristas 2026/10 (1146166); Azteca Sinaloa.
-- **`ARG-129-004`** — Línea Directa 2026-10-10__1718001 (titular «En dos ataques privan de la vida a vendedora de birria y a joven en un taller en Escuinapa»).
-- **`ARG-129-005` / `-006`** — La Razón 2026/10/10; Línea Directa 2026-10-10__1717862; Noroeste JC26245851 y BP26384621; N+; Extraoficial; Los Noticieristas 1142362; Sinaloahoy; Noticiero Altavoz.
-- **`ARG-129-007`** — La Silla Rota 2026/10/10 (532437).
-- **`ARG-129-REC-001`** — Latinus 2026/10/3 (185995); El Financiero 2026/10/04; PorEsto 2026/10/3; Diario de Yucatán 2026/10/03; ABC Noticias 2026/10/3; Correo 2026/oct/04; Grupo Marmor 2026/10/03; Síntesis 2026/10/03; Tiempo.
+- **`ARG-129-001`** — Nacional 7: La Silla Rota 2026/10/10 (532488); Infobae 2026/10/11; Milenio (dos notas); López-Dóriga; El Universal («dos lesionados»); SDP («Pemex confirma dos trabajadores lesionados»); Uno TV («Dos trabajadores de Pemex resultan heridos»). Regional 4: Expreso 266224; Azteca Veracruz; Tiempo; Palabras Claras («dos lesionados»). Infobae «EN VIVO» 11-oct: *liveblog*.
+- **`ARG-129-002`** — Institucional 1 (SSP Puebla, por cita); Nacional 2 (Infobae, N+); Regional 10: Síntesis 2026/10/10; Infobae 2026/10/11; Puebla Online 166599; Quadratín Puebla; El Universal Puebla; Meganoticias 778011; N+ (Foro TV); Ambas Manos 354674; Curul; Quince Minutos; Oronoticias; El Congresista («11 de octubre»).
+- **`ARG-129-003`** — Línea Directa 2026-10-10__1718001; Los Noticieristas 2026/10 (1146166); Azteca Sinaloa. Deslinde (Pueblo Nuevo, 18-sep): Los Noticieristas 2026/09 (1131569), Luz Noticias 2026-09-18 (305728).
+- **`ARG-129-004`** — Línea Directa 2026-10-10__1718001 (titular «En dos ataques privan de la vida a vendedora de birria y a joven en un taller en Escuinapa»); Luz Noticias 2026-10-10 (309197); Meganoticias 777969; Sinaloahoy; Los Noticieristas 1146125.
+- **`ARG-129-005`** — La Razón 2026/10/10; Línea Directa 2026-10-10__1717862; Noroeste JC26245851 y BP26384621; N+; Extraoficial; Los Noticieristas 1142362; Sinaloahoy; Noticiero Altavoz. Deslindes (julio y agosto, Mazatlán): Síntesis 2026/07/05, Tribuna 2026/07/06, Latinus 2026/8/20.
+- **`ARG-129-007`** — Institucional 1 (SSPH, por republicador: Zunoticia 2026/10/10, Agenda Hidalguense 2026/10); Nacional 1: La Silla Rota 2026/10/10 (532437); Regional 5: Síntesis 2026/10/10, El Universal Hidalgo, Criterio, Zunoticia, Agenda Hidalguense.
+- **`ARG-129-REC-001`** — Institucional 1 (SSP Michoacán, por cita). Nacional 3: Latinus 2026/10/3 (185995); El Financiero 2026/10/04; Infobae 2026/10/03 y 2026/10/06 (policías detenidos por robo). Regional 7: PorEsto 2026/10/3; Diario de Yucatán 2026/10/03; ABC Noticias 2026/10/3; Correo 2026/oct/04; Grupo Marmor 2026/10/03; Síntesis 2026/10/03; Tiempo.
 - **`ARG-129-REC-002`** — Línea Directa 2026-10-10__1717866; Los Noticieristas 1146043; N+; El Universal; Sinaloahoy; Blog del Narco (`NO OFICIAL`).
-- **`ARG-129-REC-003`** — Consulta Monterrey; Hora Cero; Telediario.
-- **Sentencias** — Navolato: Noticiero Altavoz (*slug* institucional reproducido), Línea Directa 2026-10-10__1717897, Los Noticieristas 1146008, Azteca Sinaloa, Extraoficial; NL: MVS 2026/10/10 (749349); Enjambre: El Vigía 2026/10/10 (514524), AD Noticias; Ensenada: El Imparcial 2026/10/09, Infobae 2026/10/10, El Financiero 2026/10/10, En Línea BC 2026/10/09, La Silla Rota 2026/10/10.
+- **Escobedo (no fichado)** — Consulta Monterrey; Hora Cero («Caen 2 en Escobedo tras riña»); Telediario. Sin fecha en la ruta.
+- **Sentencias** — Navolato: Noticiero Altavoz (*slug* institucional reproducido), Línea Directa 2026-10-10__1717897, Los Noticieristas 1146008, Azteca Sinaloa, Extraoficial; NL: MVS 2026/10/10 (749349), Enfoque Monterrey 2026/10/10 (*slug*: García y Santa Catarina); Enjambre: La Jornada 2026/10/09, Crónica 2026/10/09, Once Noticias, El Vigía 2026/10/10 (514524), AD Noticias; Ensenada: El Imparcial 2026/10/09, Infobae 2026/10/10, El Financiero 2026/10/10, En Línea BC 2026/10/09, La Silla Rota 2026/10/10.
 
-## 13. Los dos controles editoriales
+## 13. Los dos controles editoriales — ejecutados sobre la versión estable, los dos con «CORREGIR»
 
-*(Se completa tras su ejecución sobre la versión estable.)*
+Racha: **quince pases consecutivos, quince «CORREGIR»** (catorce hasta 128 + este). Lanzados en paralelo sobre el borrador validado y
+commiteado (`5583fb6`), **con las notas de la ola**; el borrador no se tocó mientras corrían. Tras ellos se retiraron `ARG-129-006` y
+`ARG-129-REC-003` **sin renumerar**.
+
+**`procedencia-cifras`** (23 búsquedas) — **CORREGIR**. Obligatorias y disposición:
+
+| # | Hallazgo | Disposición |
+|---|---|---|
+| 2 | Pemex «dos lesionados» en cuatro titulares, no dos | **Corregido** |
+| 3-4 | Hora de Minatitlán contradicha; «FGE investiga» sin marca; agresores y acceso contradichos | **Corregido** |
+| 5, 8 | Fuentes de Las Porras no independientes; «arma» en singular | **Corregido** |
+| 10 | Zamora: composición de víctimas citable (Infobae 2026/10/03) | **Corregido**: marca retirada |
+| 12 | Zamora: 4 policías detenidos por robo a las víctimas | **Corregido**: ficha y acción 3 de portada |
+| 18-19 | Escuinapa 004: más fuentes con fecha; «por la mañana» | **Corregido**: ★★★☆☆, hora por resumen, posible ventana 128 declarada |
+| 21-22 | Pachuca: 630 frente a 640; boletín de la SSPH existe | **Corregido** |
+| 27-28 | Navolato: tope 70 o 60; «octubre de 2023» por resumen | **Corregido** |
+| 29 | NL: García y Santa Catarina por *slug* | **Corregido** |
+| 30-32 | Enjambre publicado el 9-oct | **Corregido**: pasa a «vistas antes de la apertura»; indicador 3 → 2 |
+| 33-35 | FE-001 | **Procede**: ninguna cifra en titular o *slug*; el cuerpo de Milenio («acciones-relevantes-gabinete-de-seguridad-8-de-octubre-2026») es la vía si hay lectura directa |
+| 36 | Recálculo de 127 no reproducible | **Corregido**: supuesto declarado en §8 |
+| 42-43 | Conclusiones 3 y 4 | **Corregido** |
+
+**`editor-duplicidad`** (sin búsquedas) — **CORREGIR**. Hallazgos y disposición:
+
+| # | Hallazgo | Disposición |
+|---|---|---|
+| 1 | 7 AEI de Varados y Siqueros: posible duplicado de `ARG-125-005` / `ARG-125-046` | **Corregido**: `ARG-129-006` retirado; AEI 7 → **0**; propios 7 → **6**, 🟢 2 → **1** |
+| 2 | Zamora: candidato de 126 y policías detenidos | **Corregido** (ver §7) |
+| 3 | Escobedo sin fuente fechada | **Corregido**: `ARG-129-REC-003` retirado |
+| 4, 7 | Conclusiones re-narran hechos; portada repite titulares | **Corregido**: conclusiones con patrón, ARG-ID y línea; acciones de portada sin titular |
+| 5 | Zamora: emisor y medios desalineados | **Corregido** |
+| 6 | Deslindes sin rastro en el archivo | **Corregido**: fuentes de los deslindes en §12 |
+| 8 | Valoración 5 repetía cobertura | **Corregido**: solo comparabilidad |
+| 9 | Navolato «sin boletín» | **Corregido**: «dominio no devuelto» |
+| 10 | Coahuila y Tlaxcala débiles | **Corregido**: marcadas «débil» en el indicador |
+| 11 | Fe de erratas fuera del cartelón; índice | **No se corrige en el cartelón**: instrucción permanente del destinatario (ARGOS 109); índice actualizado al cierre |
+| 12 | Chipilo: jerarquía | **Corregido** |
+| 13 | Recuentos de fuentes | **Corregido** (001, 002, 007, REC-001) |
+| 14 | Móvil: enlaces a filas de armamento sin destino y texto de método | **Corregido en `gen-movil.py`** (deuda de 128) |
+| 15-16 | §13 y pendientes | **Corregido** al cierre |
+
+**Segundo pase** — `validar.js` → **validación OK** (escritorio); `gen-movil.py` → **validación OK** (móvil); `.txt` regenerado. Sin
+presupuesto de búsqueda para un segundo pase de `procedencia-cifras` (197 de 200).
 
 ## 14. Herramientas
 
@@ -224,3 +271,5 @@ ahora `hora` propia (128 la tenía fija en el JSON del mapa).
    el dominio real por otra vía (p. ej., «Secretaría de Seguridad Ciudadana Tlaxcala boletín» sin `site:`).
 4. **Los equipos regionales no cotejaron con el HTML de la edición anterior** (Papantla traído como nuevo). Debe exigirse en el encargo.
 5. **El comunicado de la SEMAR sin fecha por evento** obliga a declarar `FRONTERA` en cadena: pedir el comunicado íntegro en 130.
+6. **Un comunicado agregado sin fecha por evento puede duplicar lo ya publicado** (Varados y Siqueros frente a `ARG-125-005`): cotejar cada renglón
+   con las ediciones de la última semana antes de fichar.

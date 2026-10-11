@@ -745,3 +745,17 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-128-FE-002` | 128 | 2026-10-10 | ARG-128-FE-002 — FE DE ERRATAS sobre ARGOS 126: tres hechos no publicados (REC-008 a -010). NO PUBLICADA EN EL CARTELÓN |
 | `ARG-128-FE-003` | 128 | 2026-10-10 | ARG-128-FE-003 — FE DE ERRATAS sobre ARG-126-REC-003 (Casas Grandes): móvil por deuda de drogas, secuestro descartado; col. Infonavit Casas Grandes, Ciudad Juárez. NO PUBLICADA EN EL CARTELÓN |
 | `ARG-128-FE-004` | 128 | 2026-10-10 | ARG-128-FE-004 — FE DE ERRATAS por umbral: retiradas las cifras de Montecarlo (ARG-127-005), SLP (ARG-127-006) y Ojocaliente (ARG-127-REC-002), dos ediciones solo por resumen. NO PUBLICADA EN EL CARTELÓN |
+| `ARG-129-001` | 129 | 2026-10-10 | ARG-129-001 — Ataque armado en el acceso norte de la refinería Lázaro Cárdenas de Pemex: 1 vigilante muerto y 1 herido, saldo contradicho — Veracruz, Minatitlán (🔴 ROJO) |
+| `ARG-129-002` | 129 | 2026-10-10 | ARG-129-002 — Disparan contra policías en una revisión: 1 policía estatal herido; Tiguan asegurada — Puebla, Chipilo (San Gregorio Atzompa) (🟡 AMARILLO) |
+| `ARG-129-003` | 129 | 2026-10-10 | ARG-129-003 — Joven de 25 años asesinado en un taller mecánico — Sinaloa, Escuinapa (col. Insurgentes) (🟡 AMARILLO) |
+| `ARG-129-004` | 129 | 2026-10-10 | ARG-129-004 — Vendedora de birria asesinada — Sinaloa, Escuinapa (zona centro) (🟡 AMARILLO) |
+| `ARG-129-005` | 129 | 2026-10-10 | ARG-129-005 — Agresión a elementos de la Marina: 1 detenido, 1 larga, 29 cartuchos, solo por resumen; fecha no publicada — Sinaloa, Mazatlán (Las Porras) (🟡 AMARILLO) |
+| `ARG-129-006` | 129 | — | ARG-129-006 — RETIRADO ANTES DE PUBLICAR: 7 AEI en Varados y Siqueros, posible duplicidad con ARG-125-005 / ARG-125-046. No se reutiliza |
+| `ARG-129-007` | 129 | 2026-10-10 | ARG-129-007 — Cateo de la SSPH: 2 detenidos, 630 o 640 dosis — Hidalgo, Pachuca (Las Lajas) (🟢 VERDE) |
+| `ARG-129-ARM-001` | 129 | 2026-10-10 | ARG-129-ARM-001 — Mazatlán (Las Porras), Sinaloa: 1 larga, 29 cartuchos, 1 detenido. Marina. Solo por resumen. Ficha ARG-129-005 |
+| `ARG-129-REC-001` | 129 | 2026-10-02 | ARG-129-REC-001 — Zamora, Michoacán: ataque al bar El Nuevo Quijote (col. Las Fuentes), 4 muertos y 3 heridos. Ventana de origen ARGOS 125 (🔴) |
+| `ARG-129-REC-002` | 129 | 2026-10-09 | ARG-129-REC-002 — Culiacán (col. Los Pinos), Sinaloa: cateo federal con armas y explosivos, sin cifra. Ventana de origen ARGOS 128 (🟢) |
+| `ARG-129-REC-003` | 129 | — | ARG-129-REC-003 — RETIRADO ANTES DE PUBLICAR: Escobedo, NL, riña con arma corta; sin fuente con fecha. No se reutiliza |
+| `ARG-129-FE-001` | 129 | 2026-10-11 | ARG-129-FE-001 — FE DE ERRATAS por umbral: retiradas las cifras de Río Bravo, Ciudad Juárez y Valle de Santiago (ARG-128-REC-003 a -005), dos ediciones solo por resumen. NO PUBLICADA EN EL CARTELÓN |
+| `ARG-129-FE-002` | 129 | 2026-10-11 | ARG-129-FE-002 — FE DE ERRATAS sobre ARGOS 125: Zamora (REC-001) no publicado. NO PUBLICADA EN EL CARTELÓN |
+| `ARG-129-FE-003` | 129 | 2026-10-11 | ARG-129-FE-003 — FE DE ERRATAS sobre ARGOS 128: Culiacán, Los Pinos (REC-002) no publicado. NO PUBLICADA EN EL CARTELÓN |
