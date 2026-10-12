@@ -1871,7 +1871,8 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 | **San José del Rincón** (`ARG-128-003`) | Tercera edición sin fecha del hecho: **`FECHA NO ANCLADA`**, se mantiene en 128; pasa a seguimiento de baja prioridad |
 | **Tlaxcala armamento — dominio** | **`ssc.tlaxcala.gob.mx` y `ssctlaxcala.gob.mx` devueltos** buscando sin `site:` (quinta edición) |
 | **Dominios confirmados** | `seguridad.slp.gob.mx` (SSP SLP), `portal.fgeo.gob.mx` (FGEO), `fgeqroo.gob.mx` (FGE QRoo), `pgjebcs.gob.mx`, `seguridad.sonora.gob.mx`, `sseguridad.edomex.gob.mx`, `ssc.cdmx.gob.mx` |
-| **Armamento revisado** | **9 → 18 de 32** con la cuota `site:` por entidad |
+| **Armamento revisado** | **9 → 17 de 32** con la cuota `site:` por entidad |
+| **Controles** | Dieciséis pases consecutivos, dieciséis «CORREGIR»; `ARG-130-FE-002` retirada antes de publicar |
 
 ## Abiertos que ARGOS 131 hereda
 
@@ -1884,7 +1885,9 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 | **GUERRERO · Acapulco, «El Junior»** (`-007`) | Inventario oficial (2 armas o 1 larga + 1 corta + 2 cargadores); lugar de la captura; agresión al personal (si se acredita, ficha 🟡) |
 | **SINALOA · Navolato, San Pedro** (`-005`) | ¿Uno o dos cuerpos? (Luz Noticias frente a Línea Directa) |
 | **SINALOA · SEMAR 10-oct** | 7 AEI de Varados y Siqueros frente a `ARG-125-005` («Veranos»): sigue `POSIBLE DUPLICIDAD`; 12 o 13 largas |
-| **Zamora** (`ARG-129-REC-001`) | **5 muertos** (`ARG-130-FE-002`, con reserva): fuente citable; detenidos por el ataque |
+| **Zamora** (`ARG-129-REC-001`) | **4 por titular frente a 5 solo por resumen** (`ARG-130-FE-002` retirada): fuente citable de la quinta muerte; detenidos por el ataque |
+| ⚠️ **SINALOA · Escuinapa, coordinador de Protección Civil** (`ARG-130-009`) | Hora y lugar citables; comunicado de la FGE Sinaloa o del Ayuntamiento; detenidos; deslinde con El Roblito (`-006`) |
+| **CHIHUAHUA · Ciudad Juárez** (`ARG-130-008`) | Fecha del hecho (10 u 11-oct): si fue el 10, fe de erratas y sale de la ventana |
 | **Candidatos sin URL con fecha** | **Tijuana, llantera col. Los Altos** (2 muertos, madrugada del 11-oct: posible 129) · Mazatlán ×2 (11-oct) · Ciudad Hidalgo, decapitado · Juchitán, La Ventosa (sábado 10-oct, agente municipal) · Huejotzingo (10-oct, 1 pistola, 13 cartuchos, 3 detenidos) · Cancún SM 225 (8-oct, 5 largas, >1,000 cartuchos) |
 | **Sentencias candidatas** | **Zacatecas**, José «N» (11-oct) frente a Juan «N» (8-oct), misma pena: `POSIBLE CASO HOMÓNIMO` · **NL**, tres personas (105 a 10 m, 80, 25 a 10 m; 10-oct) · **Navolato**, 80 años (boletín en dominio oficial) · **Ensenada**: pena el **16-oct** · **Hidalgo, Santiago Tulantepec**: pena el **14-oct** · Tamaulipas **FGJE-381 a 384** (ilegibles) · León, 26 años 8 meses |
 | **Seguimientos sin avance** | Pinotepa (comunicado FGEO; 3 por titular) · El Castillo (ingreso de armas) · Los Pinos (inventario) · Chipilo · Pachuca (630/640 por titular) · Sombrerete (185/39) · Borja · Celaya · Michoacán 12 cateos · El Balcón (peritaje; marcha) · Zihuatanejo |
@@ -1892,11 +1895,14 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 
 ## Deuda de método (ARGOS 130)
 
-1. **Ocho de ocho hechos con `FRONTERA`**: el cierre de 129 a las 08:58 deja el día 11 entero en frontera; Nacajuca y Morelia pueden pertenecer a 129.
+1. **Nueve de nueve hechos con `FRONTERA`**: el cierre de 129 a las 08:58 deja el día 11 entero en frontera; Nacajuca y Morelia pueden pertenecer a 129.
 2. **Sentencias: Sonora y Sinaloa, tercera edición `NO REVISADA`** (dominio no devuelto). Probar `fge.sonora.gob.mx`, `fiscalia.sinaloa.gob.mx` y título sin `site:`.
    Guanajuato, Hidalgo, Campeche y Baja California: dominio de fiscalía sin confirmar.
-3. **Armamento `NO REVISADA` (14)**: BCS, Dgo, Coah, Tamps, Jal, Col, Nay, Ags, Hgo, Qro, Chis, Camp, Yuc, QRoo. **Aguascalientes, sin revisar en los tres módulos.**
-4. **Federales GN, Defensa y Marina**: `NO REVISADA` otra vez; ningún equipo tuvo cuota federal salvo el boletín del Gabinete.
-5. **Presupuesto**: 2 de control + 160 de ola + 7 del coordinador + `procedencia-cifras` (ver §13 del archivo de fuentes).
-6. **`validar.js` sigue sin aplicar al móvil**; el móvil se valida con `gen-movil.py`.
-7. **Umbral de «víctimas múltiples» con un solo muerto** (`ARG-120-009` frente a Cócorit): sigue sin fijarse en `CLAUDE.md`.
+3. **Armamento `NO REVISADA` (15)**: BC, BCS, Dgo, Coah, Tamps, Jal, Col, Nay, Ags, Hgo, Qro, Chis, Camp, Yuc, QRoo. **Aguascalientes, sin revisar en los tres módulos.**
+4. **Regresión por rotación**: armamento de Col, Ags, Camp y Yuc (revisadas en 129) y sentencias de BC, Zac, Col, Ags, Mich, Edomex, Mor, Pue, Tlax, Gro,
+   Chis y Yuc vuelven a `NO REVISADA`. **Prioridad sobre el ciclo en 131: encabezan el triaje.**
+5. **Federales GN, Defensa y Marina**: `NO REVISADA` otra vez; ningún equipo tuvo cuota federal salvo el boletín del Gabinete.
+6. **Presupuesto**: 2 de control + 160 de ola + 7 del coordinador + 25 de `procedencia-cifras` = **194**.
+9. **La ola omitió un rojo** (Escuinapa, servidor público) que halló `procedencia-cifras`. En 131, cada equipo hace una búsqueda de «funcionario / director / servidor público asesinado» por sus entidades.
+7. **`validar.js` sigue sin aplicar al móvil**; el móvil se valida con `gen-movil.py`.
+8. **Umbral de «víctimas múltiples» con un solo muerto** (`ARG-120-009` frente a Cócorit): sigue sin fijarse en `CLAUDE.md`.

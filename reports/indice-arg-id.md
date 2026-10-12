@@ -766,7 +766,8 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-130-005` | 130 | 2026-10-11 | ARG-130-005 — Navolato (San Pedro), Sinaloa: hombre asesinado hallado envuelto en plástico junto a la autopista; FRONTERA (🟡) |
 | `ARG-130-006` | 130 | 2026-10-11 | ARG-130-006 — Escuinapa (col. El Roblito), Sinaloa: hombre asesinado a balazos en su domicilio; FRONTERA (🟡) |
 | `ARG-130-007` | 130 | 2026-10-11 | ARG-130-007 — Acapulco, Guerrero: SSPC y Semar detienen a Eliceo «N», «El Junior», célula vinculada a «Los Rusos»; armamento contradicho, cualitativo; FRONTERA (🟢) |
-| `ARG-130-008` | 130 | 2026-10-11 | ARG-130-008 — Ciudad Juárez (col. Francisco I. Madero), Chihuahua: SSPM detiene a 3 con 1 revólver .38 y 34 cartuchos, por titular; FRONTERA (🟢) |
+| `ARG-130-008` | 130 | 2026-10-11 | ARG-130-008 — Ciudad Juárez (col. Francisco I. Madero), Chihuahua: SSPM detiene a 3 con 1 revólver .38 y 34 cartuchos, por titular; fecha del hecho 10 u 11-oct, solo por resumen; FRONTERA (🟢) |
+| `ARG-130-009` | 130 | 2026-10-11 | ARG-130-009 — Escuinapa (zona centro), Sinaloa: asesinado a balazos el coordinador municipal de Protección Civil; tarde, solo por resumen; FRONTERA (🔴) |
 | `ARG-130-ARM-001` | 130 | 2026-10-11 | ARG-130-ARM-001 — Ciudad Juárez: 1 corta, 34 cartuchos, 3 detenidos (ficha ARG-130-008). Confianza Bajo |
 | `ARG-130-FE-001` | 130 | 2026-10-12 | ARG-130-FE-001 — FE DE ERRATAS por umbral: retiradas las cifras de Las Porras (ARG-129-005 / ARG-129-ARM-001: 1 larga, 29 cartuchos, 1 detenido), dos ediciones solo por resumen. NO PUBLICADA EN EL CARTELÓN |
-| `ARG-130-FE-002` | 130 | 2026-10-12 | ARG-130-FE-002 — FE DE ERRATAS sobre ARG-129-REC-001 (Zamora): 5 muertos, no 4 (un herido murió el 5-oct), con reserva. NO PUBLICADA EN EL CARTELÓN |
+| `ARG-130-FE-002` | 130 | — | ARG-130-FE-002 — RETIRADA ANTES DE PUBLICAR: Zamora 5 muertos solo por resumen, contradicho por titular (4). No se reutiliza |
