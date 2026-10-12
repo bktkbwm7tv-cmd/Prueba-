@@ -8,13 +8,13 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 129 (corte 2026-10-11).
+**Última actualización**: ARGOS 130 (corte 2026-10-12).
 
 ---
 
 ## Arranque de la edición siguiente
 
-**`reports/_arranque-ARGOS-130.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-130.txt`) contiene la orden de arranque para una sesión nueva: verificación
+**`reports/_arranque-ARGOS-131.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-131.txt`) contiene la orden de arranque para una sesión nueva: verificación
 de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y comandos de construcción.
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
@@ -1858,3 +1858,45 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 8. **Umbral de «víctimas múltiples» con un solo muerto** (`ARG-120-009` frente a Cócorit): sigue sin fijarse en `CLAUDE.md`.
 9. **ARG-ID retirados antes de publicar**: `ARG-129-006` (Varados y Siqueros) y `ARG-129-REC-003` (Escobedo). No se reutilizan; constan en §13 del
    archivo de fuentes y en el índice.
+
+## Cerrados por ARGOS 130
+
+| Pendiente | Disposición |
+|---|---|
+| **Las Porras — literal** (`ARG-129-005`) | **Retirado por fe de erratas** (`ARG-130-FE-001`): segunda edición solo por resumen. Armamento de 129 → 0 |
+| **Naucalpan — noche** (`ARG-128-005`, `-006`) | **Noche del 8 al 9-oct** (Infobae y Seuno 2026/10/09) |
+| **Querétaro, Corregidora — boletín** | Oficial, `fiscaliageneralqro.gob.mx/portal/2026/10/08/…` (jueves 8-oct): ventana de 127; hora no fijada. Cierra como seguimiento |
+| **Mixtequilla** | Es **Santa María Mixtequilla, Oaxaca** (Infobae 2026/10/06), no Veracruz |
+| **La Huerta frente a «La Flaca» y «El Titi»** (`ARG-127-REC-003`) | **Mismo hecho** (Quadratín Tabasco). Queda abierta solo la cifra de cartuchos (540 frente a 317) |
+| **San José del Rincón** (`ARG-128-003`) | Tercera edición sin fecha del hecho: **`FECHA NO ANCLADA`**, se mantiene en 128; pasa a seguimiento de baja prioridad |
+| **Tlaxcala armamento — dominio** | **`ssc.tlaxcala.gob.mx` y `ssctlaxcala.gob.mx` devueltos** buscando sin `site:` (quinta edición) |
+| **Dominios confirmados** | `seguridad.slp.gob.mx` (SSP SLP), `portal.fgeo.gob.mx` (FGEO), `fgeqroo.gob.mx` (FGE QRoo), `pgjebcs.gob.mx`, `seguridad.sonora.gob.mx`, `sseguridad.edomex.gob.mx`, `ssc.cdmx.gob.mx` |
+| **Armamento revisado** | **9 → 18 de 32** con la cuota `site:` por entidad |
+
+## Abiertos que ARGOS 131 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️⚠️ **MICHOACÁN · Jacona** (`ARG-130-001`) | **Saldo oficial** (6 por la FGE o 8 por Quadratín; heridos 3 o 6); **hora** citable (~12:30 por resumen); inventario de armas largas y camioneta; detenidos; comunicado de SSP / Guardia Civil / FGE; ¿vínculo con Atecucario? |
+| ⚠️⚠️ **TABASCO · Nacajuca** (`-003`) y **MICHOACÁN · Morelia** (`-004`) | **Hora citable**: si es madrugada del 11-oct antes de las 08:58 (≈03:00 y ≈05:00 por resumen), **fe de erratas: pasan a 129** y salen de los totales de 130; detenidos; FGE |
+| ⚠️ **QUINTANA ROO · Cancún, Los Corales** (`-002`) | Fuente institucional (FGE QRoo, `fgeqroo.gob.mx`); hora; detenidos; móvil |
+| ⚠️ **VERACRUZ · Minatitlán** (`ARG-129-001`) | **Segundo comunicado de Pemex** o boletín de la FGE con el saldo (2 muertos por medios); detenidos |
+| **GUERRERO · Acapulco, «El Junior»** (`-007`) | Inventario oficial (2 armas o 1 larga + 1 corta + 2 cargadores); lugar de la captura; agresión al personal (si se acredita, ficha 🟡) |
+| **SINALOA · Navolato, San Pedro** (`-005`) | ¿Uno o dos cuerpos? (Luz Noticias frente a Línea Directa) |
+| **SINALOA · SEMAR 10-oct** | 7 AEI de Varados y Siqueros frente a `ARG-125-005` («Veranos»): sigue `POSIBLE DUPLICIDAD`; 12 o 13 largas |
+| **Zamora** (`ARG-129-REC-001`) | **5 muertos** (`ARG-130-FE-002`, con reserva): fuente citable; detenidos por el ataque |
+| **Candidatos sin URL con fecha** | **Tijuana, llantera col. Los Altos** (2 muertos, madrugada del 11-oct: posible 129) · Mazatlán ×2 (11-oct) · Ciudad Hidalgo, decapitado · Juchitán, La Ventosa (sábado 10-oct, agente municipal) · Huejotzingo (10-oct, 1 pistola, 13 cartuchos, 3 detenidos) · Cancún SM 225 (8-oct, 5 largas, >1,000 cartuchos) |
+| **Sentencias candidatas** | **Zacatecas**, José «N» (11-oct) frente a Juan «N» (8-oct), misma pena: `POSIBLE CASO HOMÓNIMO` · **NL**, tres personas (105 a 10 m, 80, 25 a 10 m; 10-oct) · **Navolato**, 80 años (boletín en dominio oficial) · **Ensenada**: pena el **16-oct** · **Hidalgo, Santiago Tulantepec**: pena el **14-oct** · Tamaulipas **FGJE-381 a 384** (ilegibles) · León, 26 años 8 meses |
+| **Seguimientos sin avance** | Pinotepa (comunicado FGEO; 3 por titular) · El Castillo (ingreso de armas) · Los Pinos (inventario) · Chipilo · Pachuca (630/640 por titular) · Sombrerete (185/39) · Borja · Celaya · Michoacán 12 cateos · El Balcón (peritaje; marcha) · Zihuatanejo |
+| **Boletín federal de las acciones del 9, 10, 11 y 12-oct** | Triple consulta; posible agregado de varios días |
+
+## Deuda de método (ARGOS 130)
+
+1. **Ocho de ocho hechos con `FRONTERA`**: el cierre de 129 a las 08:58 deja el día 11 entero en frontera; Nacajuca y Morelia pueden pertenecer a 129.
+2. **Sentencias: Sonora y Sinaloa, tercera edición `NO REVISADA`** (dominio no devuelto). Probar `fge.sonora.gob.mx`, `fiscalia.sinaloa.gob.mx` y título sin `site:`.
+   Guanajuato, Hidalgo, Campeche y Baja California: dominio de fiscalía sin confirmar.
+3. **Armamento `NO REVISADA` (14)**: BCS, Dgo, Coah, Tamps, Jal, Col, Nay, Ags, Hgo, Qro, Chis, Camp, Yuc, QRoo. **Aguascalientes, sin revisar en los tres módulos.**
+4. **Federales GN, Defensa y Marina**: `NO REVISADA` otra vez; ningún equipo tuvo cuota federal salvo el boletín del Gabinete.
+5. **Presupuesto**: 2 de control + 160 de ola + 7 del coordinador + `procedencia-cifras` (ver §13 del archivo de fuentes).
+6. **`validar.js` sigue sin aplicar al móvil**; el móvil se valida con `gen-movil.py`.
+7. **Umbral de «víctimas múltiples» con un solo muerto** (`ARG-120-009` frente a Cócorit): sigue sin fijarse en `CLAUDE.md`.
