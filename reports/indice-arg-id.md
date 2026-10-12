@@ -759,3 +759,14 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-129-FE-001` | 129 | 2026-10-11 | ARG-129-FE-001 — FE DE ERRATAS por umbral: retiradas las cifras de Río Bravo, Ciudad Juárez y Valle de Santiago (ARG-128-REC-003 a -005), dos ediciones solo por resumen. NO PUBLICADA EN EL CARTELÓN |
 | `ARG-129-FE-002` | 129 | 2026-10-11 | ARG-129-FE-002 — FE DE ERRATAS sobre ARGOS 125: Zamora (REC-001) no publicado. NO PUBLICADA EN EL CARTELÓN |
 | `ARG-129-FE-003` | 129 | 2026-10-11 | ARG-129-FE-003 — FE DE ERRATAS sobre ARGOS 128: Culiacán, Los Pinos (REC-002) no publicado. NO PUBLICADA EN EL CARTELÓN |
+| `ARG-130-001` | 130 | 2026-10-11 | ARG-130-001 — Jacona, Michoacán: comando ataca la base de Bomberos y a policías municipales; 2 policías muertos, 3 agresores abatidos por GN y Guardia Civil; saldo 6 (FGE, por titular) u 8 muertos, contradicho; ~12:30 solo por resumen; FRONTERA (🔴) |
+| `ARG-130-002` | 130 | 2026-10-11 | ARG-130-002 — Cancún (fracc. Los Corales, SM 77), Quintana Roo: 2 muertos por disparos de dos motociclistas; ~20:30 solo por resumen; FRONTERA (🔴) |
+| `ARG-130-003` | 130 | 2026-10-11 | ARG-130-003 — Nacajuca (ranchería Taxco), Tabasco: matrimonio y su hija de 13 años asesinados en su vivienda; madrugada (~03:00 solo por resumen): posible ventana de 129; FRONTERA (🔴) |
+| `ARG-130-004` | 130 | 2026-10-11 | ARG-130-004 — Morelia (col. Solidaridad), Michoacán: ataque a negocio de micheladas, 2 muertos y 1 herido; madrugada (~05:00 solo por resumen): posible ventana de 129; FRONTERA (🔴) |
+| `ARG-130-005` | 130 | 2026-10-11 | ARG-130-005 — Navolato (San Pedro), Sinaloa: hombre asesinado hallado envuelto en plástico junto a la autopista; FRONTERA (🟡) |
+| `ARG-130-006` | 130 | 2026-10-11 | ARG-130-006 — Escuinapa (col. El Roblito), Sinaloa: hombre asesinado a balazos en su domicilio; FRONTERA (🟡) |
+| `ARG-130-007` | 130 | 2026-10-11 | ARG-130-007 — Acapulco, Guerrero: SSPC y Semar detienen a Eliceo «N», «El Junior», célula vinculada a «Los Rusos»; armamento contradicho, cualitativo; FRONTERA (🟢) |
+| `ARG-130-008` | 130 | 2026-10-11 | ARG-130-008 — Ciudad Juárez (col. Francisco I. Madero), Chihuahua: SSPM detiene a 3 con 1 revólver .38 y 34 cartuchos, por titular; FRONTERA (🟢) |
+| `ARG-130-ARM-001` | 130 | 2026-10-11 | ARG-130-ARM-001 — Ciudad Juárez: 1 corta, 34 cartuchos, 3 detenidos (ficha ARG-130-008). Confianza Bajo |
+| `ARG-130-FE-001` | 130 | 2026-10-12 | ARG-130-FE-001 — FE DE ERRATAS por umbral: retiradas las cifras de Las Porras (ARG-129-005 / ARG-129-ARM-001: 1 larga, 29 cartuchos, 1 detenido), dos ediciones solo por resumen. NO PUBLICADA EN EL CARTELÓN |
+| `ARG-130-FE-002` | 130 | 2026-10-12 | ARG-130-FE-002 — FE DE ERRATAS sobre ARG-129-REC-001 (Zamora): 5 muertos, no 4 (un herido murió el 5-oct), con reserva. NO PUBLICADA EN EL CARTELÓN |

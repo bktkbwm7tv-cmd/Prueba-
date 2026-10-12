@@ -1,0 +1,392 @@
+ARGOS 130 — REPORTE NACIONAL DE SEGURIDAD
+REPORTE DIARIO DE INTELIGENCIA CRIMINAL
+«INVESTIGACIONES, BÚSQUEDA Y VERDAD»
+
+Corte informativo: 2026-10-12 · 08:19 (CDMX)
+Ventana: 11-oct 08:58 → 12-oct 08:19 CDMX (23 h 21 min)
+Versión 3.0 · Corte matutino · USO INSTITUCIONAL
+
+============================================================================
+
+[ RADAR CENTRAL — EN VIVO ]
+
+  · 🔴 Alto impacto · 4
+  · 🟡 Violencia operativa · 2
+  · 🟢 Acciones institucionales · 2
+
+[ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
+
+Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
+
+## SEMÁFORO ARGOS
+
+  · 🔴 ROJO — ALTO IMPACTO — 4 eventos
+
+  · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 2 eventos
+
+  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 2 eventos
+
+── LO QUE DEBE HACER EL MANDO
+
+1. EXIJA A LA FISCALÍA DE MICHOACÁN EL SALDO OFICIAL DE JACONA (ARG-130-001) —6 u 8 muertos— y
+el inventario de las armas aseguradas a los agresores; refuerce la custodia de las bases de
+Bomberos y Protección Civil del corredor Zamora–Jacona.
+2. EXIJA A PEMEX Y A LA FISCALÍA DE VERACRUZ EL SALDO OFICIAL DE MINATITLÁN (ARG-129-001) y
+audite la seguridad física de los accesos de la refinería.
+3. PIDA A LA SEMAR EL COMUNICADO ÍNTEGRO DEL 10-OCT (ARG-129-005): fecha y lugar de cada evento,
+y cotejo de sus siete artefactos explosivos con ARG-125-005.
+4. EXIJA A LA SSPC EL INVENTARIO DE LO ASEGURADO A «EL JUNIOR» (ARG-130-007): número y tipo de
+armas, cartuchos y lugar de la captura.
+5. EXIJA A LA FISCALÍA DE OAXACA EL COMUNICADO DE PINOTEPA (ARG-128-001): cifra oficial de
+víctimas, detenidos y constancia del Mecanismo de Protección.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-12 · Hora: 08:19 (CDMX) · Corte: Matutino · ARGOS N.° 130 · USO INSTITUCIONAL
+
+============================================================================
+
+## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
+
+  Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
+  Michoacán · Jacona (base de Bomberos y Protección Civil) · 11-OCT ~12:30 | Ataque a la base de Bomberos y a policías: 2 policías muertos, 3 agresores abatidos; saldo total 6 u 8, contradicho | 🔴 Rojo | SSP Michoacán · FGE Michoacán (por cita) | El Heraldo de México · Excélsior · 24 Horas · Telediario · En Blanco y Negro | ★★★☆☆ | ARG-130-001
+  Quintana Roo · Cancún (fracc. Los Corales, SM 77) · 11-OCT ~20:30 | 2 muertos por disparos de dos motociclistas | 🔴 Rojo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-130-002
+  Tabasco · Nacajuca (ranchería Taxco) · 11-OCT, MADRUGADA | 3 muertos en una vivienda: un matrimonio y su hija de 13 años | 🔴 Rojo | FGE Tabasco (por titular de medios) | El Universal · Excélsior · N+ | ★★★☆☆ | ARG-130-003
+  Michoacán · Morelia (col. Solidaridad) · 11-OCT, MADRUGADA | 2 muertos y 1 herido en un negocio de micheladas | 🔴 Rojo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-130-004
+  Sinaloa · Navolato (San Pedro) · 11-OCT ~11:00 | 1 hombre asesinado, hallado envuelto en plástico | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-130-005
+  Sinaloa · Escuinapa (col. El Roblito) · PUB. 11-OCT, HORA NO FIJADA | 1 hombre asesinado en su domicilio | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-130-006
+  Guerrero · Acapulco · PUB. 11-OCT, HORA NO FIJADA | Detenido «El Junior», célula vinculada a «Los Rusos»; armamento sin cifra fijada | 🟢 Verde | SSPC (anuncio en redes, por cita) | El Financiero · Proceso · Infobae · La Razón · El Universal · Aristegui | ★★★☆☆ | ARG-130-007
+  Chihuahua · Ciudad Juárez (col. Francisco I. Madero) · PUB. 11-OCT, HORA NO FIJADA | 3 detenidos con 1 revólver y 34 cartuchos | 🟢 Verde | SIN BOLETÍN · SSPM Juárez (por cita) | ninguna | ★★★☆☆ | ARG-130-008
+
+  Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Armas cortas | Armas largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Entidades
+  8 | 4 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | 34 | 0 | 0 | 0 | 0 | 3 | 6
+
+Ventana 11-oct 08:58 → 12-oct 08:19 CDMX (23 h 21 min) · 8 hechos propios en 6 entidades ·
+densidad 0,34 hechos/hora, cálculo propio. Orden: rojos, amarillos, verdes. Los ocho llevan
+FRONTERA DE VENTANA; dos, con indicio de madrugada.
+SIN RECUPERACIONES DE VENTANAS ANTERIORES EN ESTA EDICIÓN.
+Toque un ARG-ID para ir a su ficha, donde están las fuentes, el nivel de confianza y los
+deslindes.
+
+NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
+
+Total de armas integradas: 1, por titular. Detenidos = solo los del mismo evento de
+aseguramiento; el de Acapulco, con armamento sin cifra fijada, no entra. Entidades = con al
+menos un hecho propio. Muertos en hechos propios: 15 —6 en Jacona, cifra atribuida a la FGE, 3
+en Nacajuca, 2 en Cancún, 2 en Morelia y 2 en Sinaloa—; 17 con la cifra de 8 en Jacona. Heridos:
+4 o 7. Incluye 3 agresores abatidos: cálculo propio.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-12 · Hora: 08:19 (CDMX) · Corte: Matutino · ARGOS N.° 130 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (I) — ALTO IMPACTO: JACONA, CANCÚN, NACAJUCA Y MORELIA
+
+### MICHOACÁN · JACONA — COMANDO ATACA LA BASE DE BOMBEROS Y A POLICÍAS MUNICIPALES: DOS POLICÍAS MUERTOS; TRES AGRESORES ABATIDOS EN LA HUIDA [ROJO]
+
+── HECHO
+
+Jacona · BASE DE BOMBEROS Y PROTECCIÓN CIVIL; LIBRAMIENTO Y CARRETERA JACONA–JIQUILPAN —
+VIALIDAD CONTRADICHA · DOMINGO 11-OCT, ~12:30 (SOLO POR RESUMEN, atribuida a la SSP) · comando
+armado en camionetas dispara contra la base y contra policías municipales · 2 policías
+municipales muertos, por titular (🔴) · en la huida, GN y Guardia Civil enfrentan a los agresores
+cuando colocaban ponchallantas: 3 agresores abatidos, por titular · SALDO CONTRADICHO: «6
+MUERTOS Y 3 HERIDOS», TITULAR ATRIBUIDO A LA FGE, FRENTE A «8 MUERTOS Y 6 HERIDOS», TITULAR DE
+QUADRATÍN Y OTROS MEDIOS · al menos 1 civil muerto y una paramédica herida, SOLO POR RESUMEN ·
+cero detenidos · armas largas y una camioneta aseguradas, SIN CIFRA PUBLICADA — CANTIDAD NO
+DETERMINADA · despliegue de GN, Guardia Civil, Defensa y FGE en Jacona y Zamora · identidades:
+no se reproducen · FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-130-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: saldo total
+contradicho (6 u 8 muertos); hora solo por resumen · Fuentes: Institucional 1 · Nacional 5 ·
+Regional 9 · Abierta 1 · con fecha en la ruta: El Heraldo de México (2026/10/11) · En Blanco y
+Negro (2026/10/11) · La Prensa de Coahuila (2026/10/11) · Quinto Poder (2026/10/12) · Hecho:
+2026-10-11 · Hora: ~12:30 (solo por resumen, atribuida a la SSP) · Consulta: 2026-10-12
+08:19-08:50 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — no hubo
+armamento asegurado
+Deslindes y reservas: Jacona no figura en el índice ni en las tres ediciones previas. NO es
+Zamora, bar El Nuevo Quijote (ARG-129-REC-001). «3 policías y 4 agresores»: un solo medio.
+Aseguramiento del mismo día en Atecucario, Zamora: sin cifras ni vínculo acreditado, no se
+ficha. Blog del Narco: NO OFICIAL. 🔴 por ataque contra autoridades con muerte de personal
+
+### QUINTANA ROO · CANCÚN — DOS MOTOCICLISTAS ASESINAN A UNA MUJER Y A UN INSTRUCTOR DE BAILE EN LOS CORALES [ROJO]
+
+── HECHO
+
+Cancún · FRACC. LOS CORALES, SM 77, ESTACIONAMIENTO DE UN EDIFICIO · DOMINGO 11-OCT, noche,
+~20:30 (SOLO POR RESUMEN) · dos hombres en motocicleta disparan contra una mujer y un instructor
+de baile · 2 muertos —una mujer de ~50 años y un hombre de ~35—, por titular (🔴) · MÓVIL:
+CONFUSIÓN DE OBJETIVO, HIPÓTESIS NO CONFIRMADA · cero detenidos · Servicios Periciales del
+estado procesa el lugar, SOLO POR RESUMEN · identidades: no se reproducen · FRONTERA DE VENTANA
+— HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-130-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 5 · Abierta
+0 · con fecha en la ruta: Noticaribe (2026/10/11) · Hecho: 2026-10-11 · Hora: ~20:30 (solo por
+resumen) · Consulta: 2026-10-12 08:19-08:50 · Estatus: Parcialmente corroborado · Conteo de
+armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: Los Corales y la SM 77 no figuran en el índice. NO son los ataques a
+mototaxistas del 7-oct ni la doble ejecución del Polígono Sur del 25-sep (fuentes en el
+archivo). 🔴 por homicidio múltiple
+
+### TABASCO · NACAJUCA — ASESINAN EN SU VIVIENDA A UN MATRIMONIO Y A SU HIJA DE 13 AÑOS [ROJO]
+
+── HECHO
+
+Nacajuca · RANCHERÍA TAXCO, VIVIENDA · madrugada del DOMINGO 11-OCT, ~03:00 (SOLO POR RESUMEN) ·
+dos hombres armados irrumpen en la vivienda · 3 muertos —un hombre de 46 años, una mujer de 42 y
+su hija de 13—, por titular (🔴) · FGE Tabasco confirma el ataque y abre carpeta, por titular ·
+cero detenidos · operativo estatal y federal, SOLO POR RESUMEN · identidades: no se reproducen ·
+SI FUE ANTES DE LAS 08:58 DEL 11-OCT, PERTENECE A LA VENTANA DE ARGOS 129 · FRONTERA DE VENTANA
+— HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-130-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por resumen
+· Fuentes: Institucional 1 · Nacional 3 · Regional 9 · Abierta 0 · con fecha en la ruta: Diario
+de Tabasco (2026/10/11) · El Heraldo de San Luis Potosí (2026/10/11) · La Prensa de Coahuila
+(2026/10/11) · El Mañana (2026/10/12) · Hecho: 2026-10-11 · Hora: madrugada, ~03:00 (solo por
+resumen) · Consulta: 2026-10-12 08:19-08:50 · Estatus: Parcialmente corroborado · Conteo de
+armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: Taxco (Nacajuca) no figura en el índice; Nacajuca figura (ARG-108-007):
+otro hecho. Azteca Chiapas «hoy-11-de-octubre»: forma de liveblog, no fecha el hecho. 🔴 por
+homicidio múltiple con una menor
+
+### MICHOACÁN · MORELIA — ATAQUE ARMADO EN UN NEGOCIO DE MICHELADAS DE LA COLONIA SOLIDARIDAD: DOS MUERTOS Y UN HERIDO [ROJO]
+
+── HECHO
+
+Morelia · COL. SOLIDARIDAD, NEGOCIO DE MICHELADAS · madrugada del DOMINGO 11-OCT, ~05:00 (SOLO
+POR RESUMEN) · hombres armados disparan contra el negocio · 2 muertos y 1 herido, por titular
+(🔴) · 17 casquillos, SOLO POR RESUMEN · cero detenidos · identidades: no se reproducen · SI FUE
+ANTES DE LAS 08:58 DEL 11-OCT, PERTENECE A LA VENTANA DE ARGOS 129 · FRONTERA DE VENTANA — HORA
+NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-130-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 3 · Abierta
+0 · con fecha en la ruta: Changoonga (2026/10/11) · Hecho: 2026-10-11 · Hora: madrugada, ~05:00
+(solo por resumen) · Consulta: 2026-10-12 08:19-08:50 · Estatus: Parcialmente corroborado ·
+Conteo de armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: Col. Solidaridad (Morelia) no figura en el índice; Morelia figura: otros
+hechos. Un segundo ataque en Ilustres Novohispanos, citado solo por un resumen, sin nota
+localizada: no se ficha. 🔴 por homicidio múltiple
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-12 · Hora: 08:19 (CDMX) · Corte: Matutino · ARGOS N.° 130 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (II) — SINALOA, ACAPULCO Y CIUDAD JUÁREZ
+
+### SINALOA · NAVOLATO — HALLAN A UN HOMBRE ASESINADO Y ENVUELTO EN PLÁSTICO JUNTO A LA AUTOPISTA, EN SAN PEDRO [AMARILLO]
+
+── HECHO
+
+Navolato · SAN PEDRO, JUNTO A LA AUTOPISTA BENITO JUÁREZ · DOMINGO 11-OCT, aviso ~11:00 (SOLO
+POR RESUMEN) · hallazgo · 1 hombre asesinado, envuelto en plástico, por titular (🟡) · DOS
+TITULARES DEL MISMO DÍA; QUE SEAN UN SOLO HALLAZGO NO ESTÁ ACREDITADO: SE CUENTA UNO · cero
+detenidos · identidad: no se reproduce · FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-130-005 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: hora solo por resumen;
+un solo hallazgo no acreditado; sin fuente institucional · Fuentes: Institucional 0 · Nacional 0
+· Regional 3 · Abierta 0 · con fecha en la ruta: Luz Noticias (2026-10-11) · Línea Directa
+(2026-10-11) · Hecho: 2026-10-11 · Hora: aviso ~11:00 (solo por resumen) · Consulta: 2026-10-12
+08:19-08:50 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — no hubo
+armamento asegurado
+Deslindes y reservas: San Pedro (Navolato) no figura en el índice. 🟡 por homicidio doloso único;
+si son dos cuerpos, sube a rojo
+
+### SINALOA · ESCUINAPA — ASESINAN A BALAZOS A UN HOMBRE DENTRO DE SU DOMICILIO EN LA COLONIA EL ROBLITO [AMARILLO]
+
+── HECHO
+
+Escuinapa · COL. EL ROBLITO, DOMICILIO · publicado el DOMINGO 11-OCT; hora no publicada · 1
+hombre asesinado a balazos dentro de su domicilio, por titular (🟡) · cero detenidos publicados ·
+identidad: no se reproduce · FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-130-006 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: una sola fuente; hora
+no publicada · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con fecha en la
+ruta: Línea Directa (2026-10-11) · Hecho: 2026-10-11 · Hora: no publicada · Consulta: 2026-10-12
+08:19-08:50 · Estatus: Pendiente de corroboración · Conteo de armamento: sin fila — no hubo
+armamento asegurado
+Deslindes y reservas: El Roblito no figura en el índice. NO es ARG-129-003 (col. Insurgentes) ni
+ARG-129-004 (zona centro). 🟡 por homicidio doloso único
+
+### GUERRERO · ACAPULCO — DETIENEN A «EL JUNIOR», SEÑALADO LÍDER DE UNA CÉLULA VINCULADA A «LOS RUSOS» [VERDE]
+
+── HECHO
+
+Acapulco · LUGAR DE LA CAPTURA CONTRADICHO · anunciada el DOMINGO 11-OCT por el titular de la
+SSPC; hora no publicada · SSPC y Semar, con Policía Estatal y FGE Guerrero (SOLO POR RESUMEN) ·
+detención de Eliceo «N», «El Junior» · 1 detenido (🟢) · señalado por el ataque a agentes
+federales de octubre de 2025, por titular · ASEGURAMIENTO CONTRADICHO: «DOS ARMAS DE FUEGO,
+CARTUCHOS, 300 DOSIS Y UNA CAMIONETA» FRENTE A «1 LARGA, 1 CORTA Y 2 CARGADORES», SOLO POR
+RESUMEN — CANTIDAD NO DETERMINADA · FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-130-007 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora no publicada;
+aseguramiento contradicho, solo por resumen · Fuentes: Institucional 1 · Nacional 8 · Regional 6
+· Abierta 0 · con fecha en la ruta: El Financiero (2026/10/11) · Proceso (2026/10/11) · Infobae
+(2026/10/11) · La Razón (2026/10/12) · Hecho: 2026-10-11 (anuncio), hora no publicada · Hora: no
+publicada · Consulta: 2026-10-12 08:19-08:50 · Estatus: Parcialmente corroborado · Conteo de
+armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: «El Junior» no figura en el índice; «Los Rusos» figura (ARG-115-002,
+ARG-118-REC-001): otros hechos. El ataque de octubre de 2025 no se recalifica. Agresión al
+personal en la captura: una nota, no acreditada. Armamento: evento cualitativo, fuera del conteo
+
+### CHIHUAHUA · CIUDAD JUÁREZ — DETIENEN A TRES HOMBRES CON UN REVÓLVER Y 34 CARTUCHOS [VERDE]
+
+── HECHO
+
+Ciudad Juárez · COL. FRANCISCO I. MADERO · publicado el DOMINGO 11-OCT; hora no publicada · SSP
+Municipal de Juárez · 3 detenidos, por titular (🟢) · 1 revólver calibre .38, por titular · 34
+cartuchos, por titular · sin enfrentamiento publicado · FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-130-008 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora no publicada;
+sin boletín institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 3 · Abierta 0 · con
+fecha en la ruta: Diario de Juárez (2026/oct/11) · El Diario de Chihuahua (2026/oct/11) · La
+Opción (20261011) · Hecho: 2026-10-11, hora no publicada · Hora: no publicada · Consulta:
+2026-10-12 08:19-08:50 · Estatus: Parcialmente corroborado · Conteo de armamento:
+ARG-130-ARM-001
+Deslindes y reservas: Col. Francisco I. Madero (Ciudad Juárez) no figura en el índice; la
+homónima de Colima (ARG-106-002) es otro hecho
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-12 · Hora: 08:19 (CDMX) · Corte: Matutino · ARGOS N.° 130 · USO INSTITUCIONAL
+
+============================================================================
+
+## CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS
+
+  · Armas cortas: 1 — Ciudad Juárez · revólver .38 · por titular
+
+  · Armas largas: 0 — NINGUNA ARMA LARGA CON CIFRA · Jacona, sin cifra
+
+  · Sin categoría: 0 — NINGUNA ARMA SIN CLASIFICAR INTEGRADA · Acapulco, contradicho
+
+  · Cartuchos: 34 — Ciudad Juárez · por titular
+
+  · Cargadores: 0 — NINGÚN CARGADOR CON CIFRA FIJADA
+
+  · Granadas: 0 — NINGUNA GRANADA PUBLICADA
+
+  · AEI: 0 — NINGÚN AEI EN HECHO PROPIO
+
+  · Explosivos: 0 — NINGÚN EXPLOSIVO, DETONADOR NI INICIADOR EN HECHO PROPIO
+
+  · Armamento especial: 0 — NINGÚN ARMAMENTO ESPECIAL PUBLICADO
+
+  · Detenidos: 3 — SOLO EN EVENTOS CON ASEGURAMIENTO DE ARMAMENTO
+
+1 fila de armamento de 1 hecho en 1 entidad, cifras por titular. Totales por categoría: cálculo
+propio. NINGUNO DE LOS CUATRO ROJOS DEJÓ ARMAMENTO CON CIFRA PUBLICADA: JACONA, «ARMAS LARGAS»
+SIN NÚMERO.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-12 · Hora: 08:19 (CDMX) · Corte: Matutino · ARGOS N.° 130 · USO INSTITUCIONAL
+
+============================================================================
+
+## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
+
+  ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
+  ARG-130-ARM-001 | Chihuahua | Ciudad Juárez (col. Francisco I. Madero) | 2026-10-11 · hora no publicada | 1 | 0 | 0 | 0 | 34 | 0 | 0 | 0 | 0 | 3 | SSP Municipal de Juárez | Bajo · Aseguramiento sin enfrentamiento; cifras por titular de tres medios regionales; sin comunicado oficial
+
+Lectura regional —1 fila, cálculo propio—: Noroeste 1 · Noreste 0 · Occidente 0 · Centro 0 ·
+Golfo 0 · Sureste 0. Eventos cualitativos sin cantidad: Jacona (ARG-130-001) y Acapulco
+(ARG-130-007), en su ficha, fuera de esta tabla.
+EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE — FUERA DEL TOTAL: Guanajuato, boletín estatal del
+11-oct (boletines.guanajuato.gob.mx, 2026/10/11) sobre aseguramientos del 25 y 26-sep en
+Santiago Maravatío y Valle de Santiago: 1 arma corta, 1 cargador, 2 cartuchos y 3 detenidos,
+solo por resumen.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-12 · Hora: 08:19 (CDMX) · Corte: Matutino · ARGOS N.° 130 · USO INSTITUCIONAL
+
+============================================================================
+
+## RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES
+
+  · Sentencias condenatorias: 0 — NINGUNA INTEGRABLE · candidatas solo por medios, abajo
+
+  · Personas sentenciadas: 0 — las candidatas quedan en PENDIENTE DE CONFIRMACIÓN OFICIAL
+
+  · Pena acumulada: 0 — los años nunca se suman entre casos
+
+  · Reparación del daño: 0 — ningún monto ordenado y publicado por fuente oficial en la ventana
+
+  · Fiscalías con resultado: 0 — de 15 revisadas · FGR no revisada · 17 NO REVISADA
+
+  Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
+  Zacatecas | José «N» · violencia familiar agravada y lesiones; procedimiento abreviado | 3 años, 2 meses y 28 días, solo por resumen | FGJ Zacatecas (por cita) | POSIBLE CASO HOMÓNIMO — NO INTEGRAR HASTA VALIDACIÓN: misma pena exacta que Juan «N», publicado el 8-oct · publicado el 11-oct · FRONTERA DE VENTANA | Bajo
+  Nuevo León · García y Santa Catarina | Tres personas · secuestro agravado y homicidio calificado, enero de 2022 | 105 años 10 meses; 80 años; 25 años 10 meses, solo por resumen | FGE Nuevo León (por cita) | PENDIENTE DE CONFIRMACIÓN OFICIAL · publicado el 10-oct (MVS, Enfoque) · ventana de ARGOS 129 | Bajo
+  Sinaloa · Navolato (Villa Juárez) | Manuel Antonio «N» · feminicidio agravado de una menor | 80 años, por titular · TOPE DE 70 O 60 AÑOS, CONTRADICHO | FGE Sinaloa (slug de un republicador) | PENDIENTE DE CONFIRMACIÓN OFICIAL · el término «sentencia condenatoria» solo en el slug de un republicador, no en el dominio oficial · ventana de ARGOS 129 | Bajo
+  Hidalgo · Santiago Tulantepec | Tres personas · feminicidio y homicidio | SIN PENA: VEREDICTO; INDIVIDUALIZACIÓN DE SANCIONES, 14-OCT | PGJ Hidalgo (por cita) | No es sentencia hasta la audiencia de individualización · fecha del veredicto no fijada | Bajo
+
+  Renglón | Resultado
+  Fiscalías revisadas en sentencias | 15 de 32 · FGR revisada: No · BCS, Chih, Dgo · Coah, NL, Tamps, SLP · Jal, Nay · CDMX, Qro · Ver, Tab · Oax, QRoo
+  Fiscalías con sentencia integrable | 0
+  Con sentencia publicada en ventana solo por medios | 1: Zacatecas, posible caso homónimo
+  SIN RESULTADO INDEXADO EN VENTANA | 15 fiscalías estatales
+  SIN ACTUALIZACIÓN CONSTATADA | 0 · exige lectura directa del portal
+  NO REVISADA — sentencias | 17: BC, Son, Sin · Zac · Col, Ags, Mich, Gto · Edomex, Mor, Pue, Tlax, Hgo · Gro, Chis, Camp, Yuc
+  Alto impacto y armamento | Alto impacto: 31 de 32 —Ags, NO REVISADA— · armamento: 18 de 32 —BC, Son, Chih, Sin · NL, SLP, Zac · Mich, Gto · CDMX, Edomex, Mor, Pue, Tlax · Ver, Tab · Gro, Oax; las otras 14, NO REVISADA— · REVISADA = BÚSQUEDA DIRIGIDA QUE DEVOLVIÓ EL DOMINIO OFICIAL · GN, SEDENA y SEMAR: NO REVISADA
+  Boletín federal | Acciones del 9, 10 y 11-oct: SIN RESULTADO INDEXADO EN VENTANA en las tres formas de consulta; último indexado, acciones del 8-oct
+  Techo de confianza del producto | ★★★☆☆ · BLOQUEO DE EGRESO REVERIFICADO EL 12-OCT: GOB.MX
+
+Baja California, Ensenada: veredicto del 9-oct; individualización de sanciones el 16-oct, sin
+pena. Vistas, publicadas antes de la apertura: Tamaulipas FGJE-370 (6-oct), Querétaro,
+Corregidora (8-oct), FGR Campeche y Quintana Roo (7 y 9-oct), Oaxaca, Magdalena Teitipac
+(9-oct), Guanajuato, León (9-oct). NO SE INTEGRAN: FUERA DE VENTANA O SIN BOLETÍN OFICIAL.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-12 · Hora: 08:19 (CDMX) · Corte: Matutino · ARGOS N.° 130 · USO INSTITUCIONAL
+
+============================================================================
+
+## VALORACIÓN ARGOS, CONCLUSIONES E INDICADORES
+
+── VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL
+
+1. NIVEL FIJADO POR CUATRO ROJOS: ARG-130-001 a ARG-130-004 (Michoacán, Quintana Roo y Tabasco).
+2. Contexto operativo: dos amarillos en Sinaloa (ARG-130-005, ARG-130-006).
+3. Respuesta institucional propia: ARG-130-007 y ARG-130-008; ningún detenido publicado por los
+cuatro rojos.
+4. Seguimiento: en ARG-129-001 muere el segundo trabajador, por titular de cuatro medios; sin
+saldo oficial. Sin acto nuevo en ARG-128-001, ARG-128-003 y ARG-125-051.
+5. 23 H 21 MIN; LOS OCHO HECHOS CON FRONTERA DE VENTANA: TOTALES NO COMPARABLES SIN MÁS.
+
+── CONCLUSIONES DE INTELIGENCIA CRIMINAL
+
+1. HOMICIDIO MÚLTIPLE NOCTURNO EN VIVIENDAS Y NEGOCIOS. ARG-130-003, ARG-130-004. Línea: hora
+exacta y peritaje balístico de cada ataque — patrón por validar.
+2. SICARIATO EN MOTOCICLETA CON POSIBLE ERROR DE OBJETIVO EN CANCÚN. ARG-130-002. Línea:
+videovigilancia de la ruta de huida y cotejo con ataques recientes en la ciudad — hipótesis.
+3. HOMICIDIO SELECTIVO SOSTENIDO EN SINALOA. ARG-130-005, ARG-130-006, tras ARG-129-003 y
+ARG-129-004. Línea: cotejo balístico entre los cuatro hechos — hipótesis.
+4. ARMA CORTA DE CALIBRE .38 EN DETENCIÓN MUNICIPAL DE CIUDAD JUÁREZ. ARG-130-008. Línea:
+rastreo de origen del revólver — no confirmado.
+5. LA BRECHA ENTRE DETENCIÓN Y CONDENA SIGUE ABIERTA. Ninguna sentencia integrable; las de Nuevo
+León y Sinaloa solo existen en medios. Línea: exigir el boletín oficial de cada sentencia
+anunciada.
+
+gabinetedeseguridad.gob.mx — el buscador devolvió la portada, con el informe del 5-oct; SIN
+RESULTADO INDEXADO EN VENTANA. SESNSP, INEGI y FGR: sin publicación estadística nueva localizada
+dentro de la ventana.
+Toda cifra de este cartelón sin emisor nombrado es cálculo propio de ARGOS.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-12 · Hora: 08:19 (CDMX) · Corte: Matutino · ARGOS N.° 130 · USO INSTITUCIONAL
