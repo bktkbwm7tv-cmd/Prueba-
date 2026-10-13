@@ -263,3 +263,4 @@ Racha: **diecisiete pases consecutivos, diecisiete «CORREGIR»**. Lanzados en p
    como dominio el que devuelvan los republicadores con el título del boletín, o dejar de contarlas como deuda de rotación.
 5. **Ninguna fila de armamento propia** pese a 23 entidades revisadas: los aseguramientos con cifra de la semana se publicaron el 9-11 oct en el agregado federal,
    fuera de ventana.
+- **Registro de las acciones**: «EXIJA» → «SOLICITE», por instrucción del destinatario tras revisar la móvil (también en Conclusión 5).

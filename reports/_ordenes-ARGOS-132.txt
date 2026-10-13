@@ -80,6 +80,7 @@ FORMA, CONSTRUCCIÓN Y CONTROLES
  · Dos apartados por ficha; panorama + ficha, nunca tercera aparición. Portada con
    UN recuadro de cinco ACCIONES sin cifras ni titulares, sobre hechos distintos de
    las conclusiones; la Valoración solo con ARG-ID, sin reescribir hechos.
+   Acciones redactadas como SOLICITUD («SOLICITE A…»), NUNCA «EXIJA».
  · Un seguimiento NO es un hecho nuevo; una inferencia del coordinador se declara.
    Las identidades no se reproducen en titulares (tampoco exautoridades).
  · Parte de tools/datos-argos-131.py (cópialo a datos-argos-132.py) y de

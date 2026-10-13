@@ -81,6 +81,7 @@ Ver `_pendientes.md`, «Abiertos que ARGOS 132 hereda». Encargos prioritarios: 
 - **Parta de `tools/datos-argos-131.py`**: copie y cambie los bloques `E`, `R` y `ARM`, las constantes y los textos de portada, Valoración, Conclusiones,
   sentencias y cobertura. Plantilla: `reports/argos-2026-10-13.html`. Cambie la línea de `<title>` que reemplaza el generador (ARGOS 131 — 2026-10-13).
   Si no hay recuperaciones, retire su página (ver `datos-argos-130.py`). `ARM = []` funciona (tabla «SIN FILAS»). `WINDOW_DAYS = 2;` con `assert`.
+- ⚠️ **Acciones de portada y líneas de las Conclusiones como solicitud** («SOLICITE A…»), **nunca «EXIJA»** (instrucción del destinatario tras ARGOS 131).
 - Móvil y texto: `python3 tools/gen-movil.py 132 <FECHA> 131 2026-10-13 <HORA>` y `python3 tools/gen-texto.py reports/argos-<FECHA>.html reports/argos-<FECHA>.txt`.
 - Validador: `node tools/validar.js reports/argos-<FECHA>.html 2026-10-13 <FECHA>` → «validación OK».
 - **Controles**: `editor-duplicidad` y `procedencia-cifras` como subagentes, en paralelo, sobre una versión estable y commiteada, **con las notas de

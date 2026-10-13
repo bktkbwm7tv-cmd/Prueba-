@@ -175,9 +175,13 @@ concentra en diez, y **lo que no quepa va al archivo de fuentes**.
 
 **Prohibida una tercera aparición.** En concreto: **el recuadro de portada NO repite los titulares** de
 los hechos. La portada lleva **un solo recuadro**, titulado **«LO QUE DEBE HACER EL MANDO»**, con
-**cinco líneas de acción** —qué auditar, qué cotejar, qué vigilar, qué exigir—, **no un resumen de las
+**cinco líneas de acción** —qué auditar, qué cotejar, qué vigilar, qué solicitar—, **no un resumen de las
 noticias**. Un mando que ya vio el panorama y la ficha no necesita leer el mismo titular una tercera vez:
 necesita saber qué hacer con él.
+
+⚠️ **Registro de las acciones — instrucción directa del destinatario tras revisar ARGOS 131 en teléfono:** *«No se utilice exigencias a las
+fiscalías, ponga mejor solicitud.»* Las líneas de acción hacia fiscalías y demás autoridades se redactan como **solicitud**
+(«SOLICITE A LA FISCALÍA…»), **nunca como exigencia** («EXIJA…»). Vale también para las líneas accionables de las Conclusiones.
 
 **Tampoco se repiten los totales**: el **total nacional del corte** va en la página de panorama, y los
 módulos de armamento y sentencias **remiten a ella** en vez de reimprimirlo.
@@ -980,7 +984,7 @@ Reglas duras:
    **cinco líneas cada una**. Si sobra algo, va al archivo de fuentes.
 2. **Todo recuadro `alerta contexto` tiene un máximo de CINCO líneas.** La portada lleva **un solo
    recuadro**, titulado **«LO QUE DEBE HACER EL MANDO»**, con **cinco líneas de ACCIÓN** —qué auditar,
-   cotejar, vigilar o exigir—, **no un resumen de titulares**. No tres recuadros con el mismo argumento
+   cotejar, vigilar o solicitar—, **no un resumen de titulares**. No tres recuadros con el mismo argumento
    reescrito.
    ⚠️ **Y el cartelón entero lleva TRES recuadros como máximo** —portada, Valoración y Conclusiones—,
    **y ninguno repite el hecho de otro**. Instrucción directa del destinatario tras revisar ARGOS 117

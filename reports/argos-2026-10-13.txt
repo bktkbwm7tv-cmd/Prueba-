@@ -28,15 +28,15 @@ Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
 
 ── LO QUE DEBE HACER EL MANDO
 
-1. EXIJA A LA FISCALÍA DE MICHOACÁN EL SALDO OFICIAL Y EL INVENTARIO DE JACONA (ARG-130-001).
-2. EXIJA A PEMEX Y A LA FISCALÍA DE VERACRUZ EL SALDO OFICIAL Y EL MÓVIL DEL ATAQUE DE
+1. SOLICITE A LA FISCALÍA DE MICHOACÁN EL SALDO OFICIAL Y EL INVENTARIO DE JACONA (ARG-130-001).
+2. SOLICITE A PEMEX Y A LA FISCALÍA DE VERACRUZ EL SALDO OFICIAL Y EL MÓVIL DEL ATAQUE DE
 MINATITLÁN (ARG-129-001).
-3. PIDA A LA FISCALÍA DE VERACRUZ LAS LÍNEAS DE INVESTIGACIÓN DE OTATITLÁN (ARG-131-REC-001) y
-evalúe la protección de exautoridades y excandidatos de la cuenca del Papaloapan.
-4. EXIJA A LAS FISCALÍAS DE TABASCO, MICHOACÁN Y CHIHUAHUA LA HORA DE LOS ATAQUES DEL 11-OCT
+3. SOLICITE A LA FISCALÍA DE VERACRUZ LAS LÍNEAS DE INVESTIGACIÓN DE OTATITLÁN (ARG-131-REC-001)
+y evalúe la protección de exautoridades y excandidatos de la cuenca del Papaloapan.
+4. SOLICITE A LAS FISCALÍAS DE TABASCO, MICHOACÁN Y CHIHUAHUA LA HORA DE LOS ATAQUES DEL 11-OCT
 (ARG-130-003, ARG-130-004, ARG-131-REC-003, ARG-131-REC-004) y el saldo oficial de Parral.
-5. PIDA A LA SSPC EL BOLETÍN DE ACCIONES DEL 12-OCT y el comunicado íntegro del cateo de Ciudad
-Isla, Veracruz.
+5. SOLICITE A LA SSPC EL BOLETÍN DE ACCIONES DEL 12-OCT y el comunicado íntegro del cateo de
+Ciudad Isla, Veracruz.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-13 · Hora: 07:23 (CDMX) · Corte: Matutino · ARGOS N.° 131 · USO INSTITUCIONAL
@@ -477,7 +477,7 @@ no confirmado.
 apoyo local y corredor de ingreso — requiere validación.
 5. BRECHA ENTRE DETENCIÓN Y CONDENA. ARG-131-SEN-001: unos quince meses entre la detención y la
 publicación de la pena, cálculo propio; las sentencias estatales de Sonora y Chihuahua solo
-existen en medios. Línea: exigir el boletín oficial de cada sentencia anunciada.
+existen en medios. Línea: solicitar el boletín oficial de cada sentencia anunciada.
 
 gabinetedeseguridad.gob.mx/resultados — SIN RESULTADO INDEXADO EN VENTANA. SESNSP, INEGI y FGR:
 sin publicación estadística nueva localizada dentro de la ventana.
