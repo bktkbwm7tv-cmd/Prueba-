@@ -16,25 +16,25 @@ E = [
  dict(id="ARG-131-001", estado="MX-SIN", region="Noroeste", color="rojo", impacto="grande", fecha="2026-10-12", hora="noche, ~20:15–20:40 (solo por resumen)",
   ent="Sinaloa", mun="Culiacán (col. Vallado Viejo)", dia="12-OCT, NOCHE",
   title="SINALOA · CULIACÁN — COMANDO ATACA UNA VIVIENDA EN VALLADO VIEJO: CUATRO MUERTOS",
-  hecho="Culiacán · <code>COL. VALLADO VIEJO, CALLE SEGUNDA, VIVIENDA</code> · noche del LUNES 12-OCT, ~20:15–20:40 (" + RES + ") · hombres armados disparan contra las personas reunidas en la vivienda · <b>3 muertos y 1 herido</b>, por titular; <b>el herido muere en el hospital: 4 muertos</b>, por titular (🔴) · dos mujeres y dos hombres, entre ellos una madre y su hijo, " + RES + " · agresores huyen en motocicleta, " + RES + " · <b>ningún detenido publicado</b> · identidades: no se reproducen · " + FR,
+  hecho="Culiacán · <code>COL. VALLADO VIEJO, CALLE SEGUNDA, VIVIENDA</code> · noche del LUNES 12-OCT, ~20:15–20:40 (" + RES + ") · hombres armados disparan contra las personas reunidas en la vivienda · <b>3 muertos y 1 herido</b>, por titular; <b>el herido muere en el hospital: 4 muertos</b>, por titular (🔴) · <b>dos mujeres y dos hombres</b>, entre ellos una madre y su hijo, por titular · <b>ningún detenido publicado</b> · identidades: no se reproducen · " + FR,
   panel="Ataque a una vivienda: <b>4 muertos</b>",
   inst="<span class=\"muted-note\">SIN BOLETÍN</span>", nac="López-Dóriga · El Universal", conf="★★★☆☆",
-  campo="hora solo por resumen; sin fuente institucional", I=0, N=2, R=7, A=0,
+  campo="hora solo por resumen; sin fuente institucional", I=0, N=2, R=9, A=0,
   fechadas=["Línea Directa (2026-10-12, dos notas)"], estatus="Parcialmente corroborado", arm=None,
   desl="Vallado Viejo no figura en el índice ni en las tres ediciones previas. NO es el cateo de la col. Industrial Bravo / La Popular (9 y 10-oct) ni ARG-129-REC-002 (Los Pinos). Los Noticieristas 2026/10 (sin día) «asciende a cuatro muertos». 🔴 por homicidio múltiple"),
  dict(id="ARG-131-002", estado="MX-MOR", region="Centro", color="rojo", impacto="grande", fecha="2026-10-12", hora="tarde (solo por resumen)",
   ent="Morelos", mun="Totolapan, Tlayacapan, Atlatlahucan y Oaxtepec", dia="12-OCT, TARDE",
   title="MORELOS · TOTOLAPAN — TRAS LA CAPTURA DE «EL GÜERO GYM», BLOQUEOS, QUEMA DE VEHÍCULOS Y RETENCIÓN DE PERSONAL DE LA FISCALÍA: EL DETENIDO ES LIBERADO A CAMBIO",
-  hecho="Totolapan, Oaxtepec, Tlayacapan y Atlatlahucan · LUNES 12-OCT, por la tarde (" + RES + ") · <b>FIDAI de la Fiscalía de Morelos</b> y fuerzas federales detienen a José David «N», «El Güero Gym» · enfrentamiento, <b>quema de vehículos y bloqueos carreteros</b>, por titular (🔴) · <b>3 colaboradores de la Fiscalía Regional Oriente retenidos</b> y liberados <b>a cambio del detenido</b>, por titular («lo canjeó») · 3 policías heridos y liberación ~19:35, " + RES + " · <code>«DOS ELEMENTOS FALLECIDOS»: UN SOLO MEDIO, SOLO POR RESUMEN — NO SE INTEGRA</code> · <b>la detención quedó revertida</b>: no se abre ficha verde · <b>ningún detenido publicado</b> por los bloqueos · " + FR,
+  hecho="Totolapan, Oaxtepec, Tlayacapan y Atlatlahucan · LUNES 12-OCT, por la tarde (" + RES + ") · <b>FIDAI de la Fiscalía de Morelos</b> y fuerzas federales detienen a José David «N», «El Güero Gym» · enfrentamiento, <b>quema de vehículos y bloqueos carreteros</b>, por titular (🔴) · <b>3 colaboradores de la Fiscalía Regional Oriente retenidos</b> y liberados <b>a cambio del detenido</b>, por titular («lo canjeó») · 3 policías heridos y liberación ~19:35, " + RES + " · <b>2 policías de la SSPC Morelos muertos en un accidente de patrulla</b> en la autopista La Pera–Cuautla cuando acudían al apoyo, por titular · <code>POLICÍAS MUERTOS CONTRADICHO: 2 O 4, POR TITULAR; VÍNCULO CON EL OPERATIVO NO ACLARADO POR LA AUTORIDAD — ACCIDENTE, NO AGRESIÓN</code> · <code>LIBERADOS: 3 O 4, CONTRADICHO</code> · <b>la detención quedó revertida</b>: no se abre ficha verde · <b>ningún detenido publicado</b> por los bloqueos · " + FR,
   panel="<b>Narcobloqueos y quema de vehículos</b>; 3 colaboradores de la Fiscalía retenidos y canjeados por el detenido",
   inst="<span class=\"muted-note\">SIN BOLETÍN</span> · Fiscalía de Morelos <span class=\"muted-note\">(por cita)</span>", nac="El Financiero · ADN40 · Infobae · Publimetro", conf="★★★☆☆",
-  campo="hora y heridos solo por resumen; sin boletín institucional", I=0, N=5, R=7, A=0,
+  campo="hora y heridos solo por resumen; policías muertos contradichos (2 o 4); sin boletín institucional", I=0, N=6, R=11, A=0,
   fechadas=["El Financiero (2026/10/12)", "ADN40 (2026-10-12)", "El Informador (20261012)", "El Diario de Chihuahua (2026/oct/12)", "Infobae (2026/10/13)", "Publimetro (2026/10/13)"], estatus="Parcialmente corroborado", arm=None,
-  desl="«El Güero Gym» no figura en el índice. Totolapan figura (ARG-110-REC-001): es San Miguel Totolapan, Guerrero, otro hecho. Liveblog de Infobae del 13-oct: no fecha el hecho. Vinculación con el Cártel del Pacífico: solo por resumen. 🔴 por narcobloqueos y quema de vehículos con retención de servidores públicos"),
+  desl="«El Güero Gym» no figura en el índice. Totolapan figura (ARG-110-REC-001): es San Miguel Totolapan, Guerrero, otro hecho. Liveblog de Infobae del 13-oct: no fecha el hecho. Vinculación con el Cártel del Pacífico: solo por resumen. Los policías muertos en el accidente vial no se suman a los muertos por agresión. 🔴 por narcobloqueos y quema de vehículos con retención de servidores públicos"),
  dict(id="ARG-131-003", estado="MX-PUE", region="Centro", color="rojo", impacto="mediano", fecha="2026-10-12", hora="~22:30 o antes de medianoche (solo por resumen)",
   ent="Puebla", mun="Puebla (11 Sur y Cuauhtémoc)", dia="12-OCT, NOCHE",
   title="PUEBLA · PUEBLA — RAFAGUEAN CON ARMAS LARGAS LA CAMIONETA DE LA COORDINACIÓN DE HOMICIDIOS DE LA FISCALÍA: UN AGENTE HERIDO",
-  hecho="Puebla · <code>AV. 11 SUR Y CUAUHTÉMOC — COLONIA CONTRADICHA: LOMAS DE CASTILLOTLA O GUADALUPE HIDALGO</code> · noche del LUNES 12-OCT, ~22:30 (" + RES + ") · agresores en motocicleta disparan con <b>armas largas</b> contra una camioneta de la <b>Coordinación de Homicidios de la FGE Puebla</b>, por titular (🔴) · <b>1 agente ministerial o auxiliar del MP herido</b>, por titular · <code>OBJETIVO CONTRADICHO: EL COORDINADOR GENERAL DE HOMICIDIOS O UN AGENTE DEL MINISTERIO PÚBLICO</code>, que no viajaba en la unidad · <b>ningún detenido publicado</b> · la FGE no emitió información · identidades: no se reproducen · " + FR,
+  hecho="Puebla · <code>AV. 11 SUR Y CUAUHTÉMOC, SOLO POR RESUMEN — COLONIA CONTRADICHA: LOMAS DE CASTILLOTLA O GUADALUPE HIDALGO</code> · noche del LUNES 12-OCT, ~22:30 —día y hora " + RES + "— · agresores disparan con <b>armas largas</b>, por titular, contra una camioneta de la <b>Coordinación de Homicidios de la FGE Puebla</b> (🔴) · <b>1 agente ministerial o auxiliar del MP herido</b>, por titular · ataque desde motocicleta, " + RES + ", contradicho · <code>OBJETIVO CONTRADICHO: EL COORDINADOR GENERAL DE HOMICIDIOS O UN AGENTE DEL MINISTERIO PÚBLICO</code>, que no viajaba en la unidad · <b>ningún detenido publicado</b> · la FGE no emitió información · identidades: no se reproducen · " + FR,
   panel="Ataque con armas largas a la <b>Coordinación de Homicidios de la FGE</b>: <b>1 agente herido</b>",
   inst="<span class=\"muted-note\">SIN BOLETÍN</span>", nac="<span class=\"muted-note\">ninguna</span>", conf="★★★☆☆",
   campo="hora y colonia solo por resumen; sin fuente institucional ni nacional", I=0, N=0, R=6, A=0,
@@ -61,12 +61,12 @@ E = [
  dict(id="ARG-131-006", estado="MX-TAB", region="Golfo", color="verde", impacto="mediano", fecha="2026-10-12", hora="no publicada",
   ent="Tabasco", mun="Villahermosa", dia="PUB. 12-OCT, HORA NO FIJADA",
   title="TABASCO · VILLAHERMOSA — DETIENEN A «EL CABRA», SEÑALADO LÍDER DE LA MARA 18 BUSCADO POR EL SALVADOR",
-  hecho="Villahermosa · publicado el LUNES 12-OCT · <code>FECHA DEL HECHO NO FIJADA: 11 O 12-OCT — EL BOLETÍN FEDERAL DEL 9 AL 11-OCT LA RECOGE, SOLO POR RESUMEN</code> · Semar, Defensa, GN, SSPC y corporaciones estatales, " + RES + " · detención de Óscar Ariel «N», «El Cabra», señalado líder de la <b>Mara 18</b> · <b>1 detenido</b>, por titular (🟢) · orden internacional; <b>buscado por El Salvador por 15 homicidios</b>, por titular · acusaciones, no condena · dosis de marihuana sin cifra · sin armamento publicado · " + FR,
+  hecho="Villahermosa · publicado el LUNES 12-OCT · <code>FECHA DEL HECHO NO FIJADA: 9, 11 O 12-OCT, SOLO POR RESUMEN</code> · <b>anunciada por el titular de la SSPC</b>, por titular · Semar, Defensa, GN y corporaciones estatales, " + RES + " · detención de Óscar Ariel «N», «El Cabra», señalado líder de la <b>Mara 18</b> · <b>1 detenido</b>, por titular (🟢) · orden internacional; <b>buscado por El Salvador por 15 homicidios</b>, por titular · acusaciones, no condena · dosis de marihuana sin cifra · sin armamento publicado · " + FR,
   panel="Detenido <b>«El Cabra»</b>, señalado líder de la Mara 18",
-  inst="Gabinete de Seguridad <span class=\"muted-note\">(boletín por resumen)</span>", nac="Proceso", conf="★★★☆☆",
-  campo="fecha del hecho no fijada; boletín solo por resumen", I=1, N=1, R=3, A=0,
-  fechadas=["Proceso (2026/10/12)", "Central Municipal (2026/10/12)", "Lo de Hoy (2026/10/13)"], estatus="Parcialmente corroborado", arm=None, fecha_txt="no fijada (11 o 12-oct); publicado el 2026-10-12",
-  desl="«El Cabra» y Mara 18 no figuran en el índice. Liveblog de Infobae del 12-oct: no fecha el hecho. Si la captura fue el 11-oct antes de las 08:19 del 12, pertenecía a la ventana de ARGOS 130, que no la publicó. Sin armamento: fuera del conteo"),
+  inst="SSPC <span class=\"muted-note\">(anuncio, por titular de medios)</span>", nac="Proceso · El Informador · El Financiero · La Jornada", conf="★★★☆☆",
+  campo="fecha del hecho no fijada (9, 11 o 12-oct)", I=1, N=4, R=4, A=0,
+  fechadas=["Proceso (2026/10/12)", "El Informador (20261012)", "El Financiero (2026/10/12)", "La Jornada (2026/10/13)", "Central Municipal (2026/10/12)", "Lo de Hoy (2026/10/13)"], estatus="Parcialmente corroborado", arm=None, fecha_txt="no fijada (11 o 12-oct); publicado el 2026-10-12",
+  desl="«El Cabra» y Mara 18 no figuran en el índice. Liveblog de Infobae del 12-oct: no fecha el hecho. Si la captura fue el 11-oct antes de las 08:19 del 12, pertenecía a la ventana de ARGOS 130; si fue el 9-oct (un medio, solo por resumen), es evento anterior publicado durante el corte y sale de los totales. Sin armamento: fuera del conteo"),
 ]
 
 # ---------------------------------------------------------------- RECUPERACIONES
@@ -75,26 +75,26 @@ R = [
   ent="Veracruz", mun="Otatitlán (restaurante El Cedral)", dia="11-OCT, NOCHE",
   title="VERACRUZ · OTATITLÁN — ASESINAN EN SU RESTAURANTE AL EXALCALDE JORGE GUERRERO GARCÍA",
   hecho="<code>VENTANA DE ORIGEN: ARGOS 130</code> · <code>RESTAURANTE EL CEDRAL, JUNTO AL PASO DE LA PANGA DEL PAPALOAPAN — SOLO POR RESUMEN</code> · noche del DOMINGO 11-OCT, ~18:30–19:00 (" + RES + ") · hombres armados disparan contra el exalcalde de Otatitlán (2014-2017) y excandidato en 2025 · <b>1 muerto</b>, por titular (🟡 en su ventana) · <b>FGE Veracruz</b> sigue varias líneas de investigación, por titular · <b>ningún detenido publicado</b>",
-  panel="Asesinado el <b>exalcalde de Otatitlán</b> en su restaurante", inst="FGE Veracruz <span class=\"muted-note\">(por titular de medios)</span>", nac="Infobae · El Heraldo de México · MVS · Latinus",
-  conf="★★★☆☆", campo="hora solo por resumen; sin boletín institucional", I=1, N=6, R=4, A=0,
-  fechadas=["Infobae (2026/10/12)", "El Heraldo de México (2026/10/12)", "MVS (2026/10/12)", "Latinus (2026/10/12)", "Intolerancia (2026/10/12)"],
+  panel="Asesinado el <b>exalcalde de Otatitlán</b> en su restaurante", inst="FGE Veracruz <span class=\"muted-note\">(por titular de medios)</span>", nac="Proceso · Infobae · El Heraldo de México · MVS · Latinus",
+  conf="★★★☆☆", campo="hora solo por resumen; sin boletín institucional", I=1, N=7, R=6, A=0,
+  fechadas=["Proceso (2026/10/12)", "Infobae (2026/10/12)", "El Heraldo de México (2026/10/12)", "MVS (2026/10/12)", "Latinus (2026/10/12)", "Intolerancia (2026/10/12)"],
   desl="Otatitlán no figura en el índice. 🟡 por homicidio doloso único: un exalcalde no es servidor público en funciones; Latinus lo titula «violencia política». Dentro de la ventana de ARGOS 130, que no lo publicó"),
  dict(id="ARG-131-REC-002", estado="MX-SIN", region="Noroeste", fecha="2026-10-11", hora="tarde (solo por resumen)", orig="ARGOS 130", col_orig="rojo",
   ent="Sinaloa", mun="Mazatlán (col. Klein, cancha de futbol)", dia="11-OCT, TARDE",
   title="SINALOA · MAZATLÁN — ASESINAN A DOS JUGADORES DE FUTBOL EN UNA CANCHA DE LA COLONIA KLEIN",
   hecho="<code>VENTANA DE ORIGEN: ARGOS 130</code> · <code>COL. KLEIN, CANCHA DE FUTBOL — SOLO POR RESUMEN</code> · tarde del DOMINGO 11-OCT (" + RES + ") · ataque armado contra los jugadores · <b>2 muertos</b>, por titular (🔴 en su ventana) · <b>ningún detenido publicado</b> · identidades: no se reproducen",
-  panel="<b>2 muertos</b> en una cancha de futbol", inst="<span class=\"muted-note\">SIN BOLETÍN</span>", nac="El Informador",
-  conf="★★★☆☆", campo="hora y colonia solo por resumen; sin fuente institucional", I=0, N=1, R=2, A=0,
-  fechadas=["El Informador (20261011)"],
+  panel="<b>2 muertos</b> en una cancha de futbol", inst="<span class=\"muted-note\">SIN BOLETÍN</span>", nac="El Informador · El Universal · Posta",
+  conf="★★★☆☆", campo="hora y colonia solo por resumen; sin fuente institucional", I=0, N=3, R=3, A=0,
+  fechadas=["El Informador (20261011)", "Luz Noticias (2026-10-11)", "El Heraldo de San Luis Potosí (2026/10/11)"],
   desl="ARGOS 130 lo dejó como candidato sin URL con fecha («Mazatlán ×2»); la nota de El Informador lo ancla al 11-oct. La mujer asesinada en Villa Unión el mismo día sigue sin URL con fecha: no se ficha"),
  dict(id="ARG-131-REC-003", estado="MX-MIC", region="Occidente", fecha="2026-10-11", hora="mañana (por titular)", orig="ARGOS 129 o ARGOS 130 — HORA NO FIJADA", col_orig="rojo",
   ent="Michoacán", mun="Morelia (col. Ilustres Novohispanos)", dia="11-OCT, MAÑANA",
   title="MICHOACÁN · MORELIA — ASESINAN A DOS HOMBRES DENTRO DE UNA VIVIENDA EN ILUSTRES NOVOHISPANOS",
-  hecho="<code>VENTANA DE ORIGEN: ARGOS 129 O ARGOS 130 — HORA NO FIJADA</code> · <code>COL. ILUSTRES NOVOHISPANOS, VIVIENDA</code> · mañana del DOMINGO 11-OCT, por titular · hombres armados disparan dentro de la casa · <b>2 muertos</b>, por titular (🔴 en su ventana) · <code>PRIMERAS VERSIONES: «UN HERIDO», DESCARTADO</code>, " + RES + " · FGE Michoacán procesa la escena, " + RES + " · <b>ningún detenido publicado</b> · identidades: no se reproducen",
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 129 O ARGOS 130 — HORA NO FIJADA</code> · <code>COL. ILUSTRES NOVOHISPANOS, VIVIENDA</code> · mañana del DOMINGO 11-OCT, por titular · hombres armados disparan dentro de la casa · <b>2 muertos</b>, por titular (🔴 en su ventana) · <code>HERIDO CONTRADICHO: «UN HERIDO» (SOLO POR RESUMEN) FRENTE A «NO HUBO TERCER LESIONADO» (POR TITULAR)</code> · FGE Michoacán procesa la escena, " + RES + " · <b>ningún detenido publicado</b> · identidades: no se reproducen",
   panel="<b>2 muertos</b> dentro de una vivienda", inst="<span class=\"muted-note\">SIN BOLETÍN</span>", nac="<span class=\"muted-note\">ninguna</span>",
-  conf="★★☆☆☆", campo="una sola fuente; hora no fijada", I=0, N=0, R=1, A=0,
-  fechadas=["Changoonga (2026/10/11)"],
-  desl="NO es ARG-130-004 (col. Solidaridad, negocio de micheladas). ARGOS 130 lo descartó por no tener nota localizada; Changoonga lo ancla al 11-oct. Si fue antes de las 08:58, su ventana es la de ARGOS 129"),
+  conf="★★★☆☆", campo="hora no fijada; sin fuente institucional", I=0, N=0, R=7, A=0,
+  fechadas=["Changoonga (2026/10/11)", "Grupo Marmor (2026/10/11)"],
+  desl="NO es ARG-130-004 (col. Solidaridad, negocio de micheladas). ARGOS 130 lo descartó por no tener nota localizada; Changoonga y Grupo Marmor lo anclan al 11-oct. Si fue antes de las 08:58, su ventana es la de ARGOS 129"),
 ]
 for r in R:
     r["color"] = "rec"; r["impacto"] = "grande" if r["col_orig"] == "rojo" else "mediano"
@@ -263,7 +263,7 @@ panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
     <b>Ningún aseguramiento de armamento con cifra en hechos propios</b>. <b>Detenidos</b> = solo los del <b>mismo evento de aseguramiento de armamento</b>; los 6 de ARG-131-005 y el de ARG-131-006, sin armas, no entran. <b>Entidades</b> = con al menos un hecho propio.
-    <b>Muertos en hechos propios: 5</b> —4 en Culiacán y 1 en Escuinapa—. <b>Heridos: 1</b> por titular (Puebla); 3 en Totolapan, solo por resumen. <b>Cálculo propio</b>.
+    <b>Muertos por agresión en hechos propios: 5</b> —4 en Culiacán y 1 en Escuinapa—; no incluye los 2 o 4 policías muertos en el accidente vial de ARG-131-002. <b>Heridos: 1</b> por titular (Puebla); 3 en Totolapan, solo por resumen. <b>Cálculo propio</b>.
   </p>
 '''
 
@@ -316,7 +316,7 @@ arm2 = f'''  <div class="table-wrap"><table class="exec wide">
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
     <b>Lectura regional</b>: <b>0 filas</b> en las seis regiones. <b>Eventos cualitativos</b>: ARG-131-003 (armas largas usadas en el ataque, no aseguradas).
-    <br><code>EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE — FUERA DEL TOTAL</code>: boletín del Gabinete de Seguridad de las acciones del <b>9, 10 y 11-oct</b>, publicado el 12-oct y localizado solo por republicadores (Línea Directa 2026-10-12, Argon México 2026/10/12) —22 detenidos y 35 armas en 12 entidades, por titular de Excélsior; desglose solo por resumen, no cuadra—, con el cateo de Ciudad Isla, Veracruz (10-oct: 8 armas sin desglose, 41 cargadores, 34 cartuchos, solo por resumen).
+    <br><code>EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE — FUERA DEL TOTAL</code>: boletín del Gabinete de Seguridad de las acciones del <b>9, 10 y 11-oct</b>, publicado el 12-oct y localizado solo por republicadores (Línea Directa 2026-10-12, Argon México 2026/10/12) —«22 sospechosos y 35 armas en 12 estados», por titular de Excélsior; desglose solo por resumen, no cuadra—, con el cateo de Ciudad Isla, Veracruz (10-oct: 8 armas sin desglose, 41 cargadores, 34 cartuchos, solo por resumen).
   </p>
 '''
 
@@ -331,7 +331,7 @@ sent = f'''  <div class="conteo">
   <div class="table-wrap"><table class="exec wide">
     <thead><tr><th>ARG-ID</th><th>Fiscalía</th><th>Entidad</th><th>Delito</th><th>Sentenciados</th><th>Pena</th><th>Multa</th><th>Reparación del daño</th><th>Tipo de sentencia</th><th>Firmeza</th><th>Fuente oficial</th><th>Corroboración</th><th>Confianza</th></tr></thead>
     <tbody>
-      <tr id="ARG-131-SEN-001"><td><a href="#ARG-131-SEN-001-F"><code>ARG-131-SEN-001</code></a></td><td>FGR · Fiscalía Federal en BCS</td><td>Baja California Sur · La Paz (Pichilingue)</td><td>Contra la salud, transporte de metanfetamina</td><td><b>1</b> · Óscar «N»</td><td><b>8 años</b>, por titular</td><td><span class="muted-note">no publicada</span></td><td><span class="muted-note">no publicada</span></td><td>Condenatoria · procedimiento abreviado <span class="muted-note">(solo por resumen)</span></td><td><span class="muted-note">no informada</span></td><td>gabinetedeseguridad.gob.mx <span class="muted-note">(slug indexado, sin fecha)</span></td><td>Tijuana Última Hora (12/10/2026) · Zócalo · Uniradio</td><td><b>Medio</b></td></tr>
+      <tr id="ARG-131-SEN-001"><td><a href="#ARG-131-SEN-001-F"><code>ARG-131-SEN-001</code></a></td><td>FGR · Fiscalía Federal en BCS</td><td>Baja California Sur · La Paz (Pichilingue)</td><td>Contra la salud, transporte de metanfetamina</td><td><b>1</b> · Óscar «N»</td><td><b>8 años</b>, por titular sin fecha</td><td><span class="muted-note">no publicada</span></td><td><span class="muted-note">no publicada</span></td><td>Condenatoria · procedimiento abreviado <span class="muted-note">(solo por resumen)</span></td><td><span class="muted-note">no informada</span></td><td>gabinetedeseguridad.gob.mx <span class="muted-note">(slug indexado, sin fecha)</span></td><td>Tijuana Última Hora (12/10/2026) · Zócalo · Uniradio</td><td><b>Medio</b></td></tr>
     </tbody>
   </table></div>
 
@@ -339,7 +339,7 @@ sent = f'''  <div class="conteo">
     <div class="nota-header"><h3>BAJA CALIFORNIA SUR · LA PAZ — OCHO AÑOS DE PRISIÓN POR TRANSPORTAR MÁS DE UNA TONELADA DE METANFETAMINA</h3><span class="risk-flag bajo">SENTENCIA</span></div>
     <div class="nota-body">
       <div class="apartado"><span class="k">HECHO</span>
-        La Paz · <code>RECINTO PORTUARIO DE PICHILINGUE, PUESTO MILITAR DE SEGURIDAD</code> · detención en <b>julio de 2025</b> por Defensa y GN en un tractocamión, {RES} · <b>FGR</b> · <b>sentencia condenatoria</b>, por titular del boletín · contra <b>ÓSCAR «N»</b> · <b>8 años de prisión</b>, por titular · <b>1,020.80 kg</b> de clorhidrato de metanfetamina y procedimiento abreviado, {RES} · decomiso del narcótico, {RES} · <code>FECHA DE LA SENTENCIA NO PUBLICADA</code>: se integra por su publicación del 12-oct · firmeza no informada · {FR}
+        La Paz · <code>RECINTO PORTUARIO DE PICHILINGUE, PUESTO MILITAR DE SEGURIDAD</code> · detención en <b>julio de 2025</b> por Defensa y GN en un tractocamión, {RES} · <b>FGR</b> · <b>sentencia condenatoria</b>, por titular del boletín · contra <b>ÓSCAR «N»</b> · <b>8 años de prisión</b>, por titular sin fecha en la ruta · <b>1,020.80 kg</b> de clorhidrato de metanfetamina y procedimiento abreviado, {RES} · decomiso del narcótico, {RES} · <code>FECHA DE LA SENTENCIA NO PUBLICADA</code>: se integra por su publicación del 12-oct · firmeza no informada · {FR}
       </div>
       <div class="apartado"><span class="k">TRAZABILIDAD</span>
         <code>ARG-131-SEN-001</code> · <b>Confianza</b>: 🟡 Medio, <b>la fija el campo peor sostenido</b>: boletín oficial indexado por su <i>slug</i>, no leído íntegro por el bloqueo de egreso ·
@@ -347,7 +347,7 @@ sent = f'''  <div class="conteo">
         con fecha en la ruta: <b>Tijuana Última Hora (12/10/2026)</b>
         · <b>Sentencia</b>: no publicada · <b>Publicación</b>: 2026-10-12 · <b>Consulta</b>: {CONSULTA} ·
         <b>Estatus</b>: Confirmado por fuente oficial indexada
-        <br><b>Deslindes y reservas</b>: Pichilingue no figura en el índice. Campos individualizadores coincidentes: nombre, peso, lugar y procedimiento. NO es Rafael «N», 7 años 6 meses, 337 litros (Noticias La Paz 2026/10/10, fuera de ventana), ni Amílcar «C», Sonora, 831.51 kg. Excélsior titula «9 años» sobre una transportista: <code>POSIBLE CASO HOMÓNIMO</code>, no se integra. Republicadores del mismo boletín: no independientes
+        <br><b>Deslindes y reservas</b>: Pichilingue no figura en el índice. Campos individualizadores coincidentes —nombre, peso, lugar y procedimiento—, <b>solo por resumen</b>; la pena, por titular sin fecha (Zócalo); la publicación, por la fecha en la ruta de otro medio. NO es Rafael «N», 7 años 6 meses, 337 litros (Noticias La Paz 2026/10/10, fuera de ventana), ni Amílcar «C», Sonora, 831.51 kg. Excélsior titula «9 años» sobre una transportista: <code>POSIBLE CASO HOMÓNIMO</code>, no se integra. Republicadores del mismo boletín: no independientes
       </div>
     </div>
   </div>
@@ -402,7 +402,7 @@ cierre = f'''  <div class="alerta contexto">
       <br><b>3. RUTA MARÍTIMA DE COCAÍNA EN EL PACÍFICO SUR, LEJOS DE COSTA.</b> ARG-131-005. Línea: <b>origen y destino de la embarcación</b> y nacionalidad de la
       tripulación — consistente con tránsito sur–norte, no confirmado.
       <br><b>4. LIDERAZGO DE PANDILLA CENTROAMERICANA ASENTADO EN VILLAHERMOSA.</b> ARG-131-006. Línea: <b>red de apoyo local</b> y corredor de ingreso — requiere validación.
-      <br><b>5. BRECHA ENTRE DETENCIÓN Y CONDENA.</b> ARG-131-SEN-001: quince meses entre la detención y la pena; las sentencias estatales de Sonora y Chihuahua solo
+      <br><b>5. BRECHA ENTRE DETENCIÓN Y CONDENA.</b> ARG-131-SEN-001: unos quince meses entre la detención y la publicación de la pena, <b>cálculo propio</b>; las sentencias estatales de Sonora y Chihuahua solo
       existen en medios. Línea: <b>exigir el boletín oficial</b> de cada sentencia anunciada.
     </p>
   </div>

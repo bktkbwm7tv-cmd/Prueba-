@@ -52,10 +52,10 @@ Cabra» (ARG-131-006).
   Puebla · Puebla (11 Sur y Cuauhtémoc) · 12-OCT, NOCHE | Ataque con armas largas a la Coordinación de Homicidios de la FGE: 1 agente herido | 🔴 Rojo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-131-003
   Sinaloa · Escuinapa (zona centro, estética) · 12-OCT ~10:00 | 1 mujer asesinada dentro de una estética | 🟡 Amarillo | FGE Sinaloa (por titular de medios) | El Universal · Posta | ★★★☆☆ | ARG-131-004
   Oaxaca · Océano Pacífico, frente a Huatulco · PUB. 12-OCT, HORA NO FIJADA | 1.2 t de cocaína y 6 detenidos en altamar | 🟢 Verde | Semar · SSPC (por cita) | La Razón · El Imparcial · Infobae | ★★★☆☆ | ARG-131-005
-  Tabasco · Villahermosa · PUB. 12-OCT, HORA NO FIJADA | Detenido «El Cabra», señalado líder de la Mara 18 | 🟢 Verde | Gabinete de Seguridad (boletín por resumen) | Proceso | ★★★☆☆ | ARG-131-006
-  Veracruz · Otatitlán (restaurante El Cedral) · VENTANA ARGOS 130 | Asesinado el exalcalde de Otatitlán en su restaurante | 🟡 Amarillo (en su ventana) | FGE Veracruz (por titular de medios) | Infobae · El Heraldo de México · MVS · Latinus | ★★★☆☆ | ARG-131-REC-001
-  Sinaloa · Mazatlán (col. Klein, cancha de futbol) · VENTANA ARGOS 130 | 2 muertos en una cancha de futbol | 🔴 Rojo (en su ventana) | SIN BOLETÍN | El Informador | ★★★☆☆ | ARG-131-REC-002
-  Michoacán · Morelia (col. Ilustres Novohispanos) · VENTANA ARGOS 129 o ARGOS 130 — HORA NO FIJADA | 2 muertos dentro de una vivienda | 🔴 Rojo (en su ventana) | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-131-REC-003
+  Tabasco · Villahermosa · PUB. 12-OCT, HORA NO FIJADA | Detenido «El Cabra», señalado líder de la Mara 18 | 🟢 Verde | SSPC (anuncio, por titular de medios) | Proceso · El Informador · El Financiero · La Jornada | ★★★☆☆ | ARG-131-006
+  Veracruz · Otatitlán (restaurante El Cedral) · VENTANA ARGOS 130 | Asesinado el exalcalde de Otatitlán en su restaurante | 🟡 Amarillo (en su ventana) | FGE Veracruz (por titular de medios) | Proceso · Infobae · El Heraldo de México · MVS · Latinus | ★★★☆☆ | ARG-131-REC-001
+  Sinaloa · Mazatlán (col. Klein, cancha de futbol) · VENTANA ARGOS 130 | 2 muertos en una cancha de futbol | 🔴 Rojo (en su ventana) | SIN BOLETÍN | El Informador · El Universal · Posta | ★★★☆☆ | ARG-131-REC-002
+  Michoacán · Morelia (col. Ilustres Novohispanos) · VENTANA ARGOS 129 o ARGOS 130 — HORA NO FIJADA | 2 muertos dentro de una vivienda | 🔴 Rojo (en su ventana) | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-131-REC-003
 
   Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Armas cortas | Armas largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Entidades
   6 | 3 | 1 | 2 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5
@@ -72,9 +72,9 @@ NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
 
 Ningún aseguramiento de armamento con cifra en hechos propios. Detenidos = solo los del mismo
 evento de aseguramiento de armamento; los 6 de ARG-131-005 y el de ARG-131-006, sin armas, no
-entran. Entidades = con al menos un hecho propio. Muertos en hechos propios: 5 —4 en Culiacán y
-1 en Escuinapa—. Heridos: 1 por titular (Puebla); 3 en Totolapan, solo por resumen. Cálculo
-propio.
+entran. Entidades = con al menos un hecho propio. Muertos por agresión en hechos propios: 5 —4
+en Culiacán y 1 en Escuinapa—; no incluye los 2 o 4 policías muertos en el accidente vial de
+ARG-131-002. Heridos: 1 por titular (Puebla); 3 en Totolapan, solo por resumen. Cálculo propio.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-13 · Hora: 07:23 (CDMX) · Corte: Matutino · ARGOS N.° 131 · USO INSTITUCIONAL
@@ -90,14 +90,13 @@ propio.
 Culiacán · COL. VALLADO VIEJO, CALLE SEGUNDA, VIVIENDA · noche del LUNES 12-OCT, ~20:15–20:40
 (SOLO POR RESUMEN) · hombres armados disparan contra las personas reunidas en la vivienda · 3
 muertos y 1 herido, por titular; el herido muere en el hospital: 4 muertos, por titular (🔴) ·
-dos mujeres y dos hombres, entre ellos una madre y su hijo, SOLO POR RESUMEN · agresores huyen
-en motocicleta, SOLO POR RESUMEN · ningún detenido publicado · identidades: no se reproducen ·
-FRONTERA DE VENTANA — HORA NO FIJADA
+dos mujeres y dos hombres, entre ellos una madre y su hijo, por titular · ningún detenido
+publicado · identidades: no se reproducen · FRONTERA DE VENTANA — HORA NO FIJADA
 
 ── TRAZABILIDAD
 
 ARG-131-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
-resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 2 · Regional 7 · Abierta
+resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 2 · Regional 9 · Abierta
 0 · con fecha en la ruta: Línea Directa (2026-10-12, dos notas) · Hecho: 2026-10-12 · Hora:
 noche, ~20:15–20:40 (solo por resumen) · Consulta: 2026-10-13 07:23-08:30 · Estatus:
 Parcialmente corroborado · Conteo de armamento: sin fila — no hubo armamento asegurado
@@ -114,36 +113,40 @@ Totolapan, Oaxtepec, Tlayacapan y Atlatlahucan · LUNES 12-OCT, por la tarde (SO
 FIDAI de la Fiscalía de Morelos y fuerzas federales detienen a José David «N», «El Güero Gym» ·
 enfrentamiento, quema de vehículos y bloqueos carreteros, por titular (🔴) · 3 colaboradores de
 la Fiscalía Regional Oriente retenidos y liberados a cambio del detenido, por titular («lo
-canjeó») · 3 policías heridos y liberación ~19:35, SOLO POR RESUMEN · «DOS ELEMENTOS
-FALLECIDOS»: UN SOLO MEDIO, SOLO POR RESUMEN — NO SE INTEGRA · la detención quedó revertida: no
-se abre ficha verde · ningún detenido publicado por los bloqueos · FRONTERA DE VENTANA — HORA NO
-FIJADA
+canjeó») · 3 policías heridos y liberación ~19:35, SOLO POR RESUMEN · 2 policías de la SSPC
+Morelos muertos en un accidente de patrulla en la autopista La Pera–Cuautla cuando acudían al
+apoyo, por titular · POLICÍAS MUERTOS CONTRADICHO: 2 O 4, POR TITULAR; VÍNCULO CON EL OPERATIVO
+NO ACLARADO POR LA AUTORIDAD — ACCIDENTE, NO AGRESIÓN · LIBERADOS: 3 O 4, CONTRADICHO · la
+detención quedó revertida: no se abre ficha verde · ningún detenido publicado por los bloqueos ·
+FRONTERA DE VENTANA — HORA NO FIJADA
 
 ── TRAZABILIDAD
 
 ARG-131-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora y heridos solo
-por resumen; sin boletín institucional · Fuentes: Institucional 0 · Nacional 5 · Regional 7 ·
-Abierta 0 · con fecha en la ruta: El Financiero (2026/10/12) · ADN40 (2026-10-12) · El
-Informador (20261012) · El Diario de Chihuahua (2026/oct/12) · Infobae (2026/10/13) · Publimetro
-(2026/10/13) · Hecho: 2026-10-12 · Hora: tarde (solo por resumen) · Consulta: 2026-10-13
-07:23-08:30 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — no hubo
-armamento asegurado
+por resumen; policías muertos contradichos (2 o 4); sin boletín institucional · Fuentes:
+Institucional 0 · Nacional 6 · Regional 11 · Abierta 0 · con fecha en la ruta: El Financiero
+(2026/10/12) · ADN40 (2026-10-12) · El Informador (20261012) · El Diario de Chihuahua
+(2026/oct/12) · Infobae (2026/10/13) · Publimetro (2026/10/13) · Hecho: 2026-10-12 · Hora: tarde
+(solo por resumen) · Consulta: 2026-10-13 07:23-08:30 · Estatus: Parcialmente corroborado ·
+Conteo de armamento: sin fila — no hubo armamento asegurado
 Deslindes y reservas: «El Güero Gym» no figura en el índice. Totolapan figura (ARG-110-REC-001):
 es San Miguel Totolapan, Guerrero, otro hecho. Liveblog de Infobae del 13-oct: no fecha el
-hecho. Vinculación con el Cártel del Pacífico: solo por resumen. 🔴 por narcobloqueos y quema de
-vehículos con retención de servidores públicos
+hecho. Vinculación con el Cártel del Pacífico: solo por resumen. Los policías muertos en el
+accidente vial no se suman a los muertos por agresión. 🔴 por narcobloqueos y quema de vehículos
+con retención de servidores públicos
 
 ### PUEBLA · PUEBLA — RAFAGUEAN CON ARMAS LARGAS LA CAMIONETA DE LA COORDINACIÓN DE HOMICIDIOS DE LA FISCALÍA: UN AGENTE HERIDO [ROJO]
 
 ── HECHO
 
-Puebla · AV. 11 SUR Y CUAUHTÉMOC — COLONIA CONTRADICHA: LOMAS DE CASTILLOTLA O GUADALUPE HIDALGO
-· noche del LUNES 12-OCT, ~22:30 (SOLO POR RESUMEN) · agresores en motocicleta disparan con
-armas largas contra una camioneta de la Coordinación de Homicidios de la FGE Puebla, por titular
-(🔴) · 1 agente ministerial o auxiliar del MP herido, por titular · OBJETIVO CONTRADICHO: EL
-COORDINADOR GENERAL DE HOMICIDIOS O UN AGENTE DEL MINISTERIO PÚBLICO, que no viajaba en la
-unidad · ningún detenido publicado · la FGE no emitió información · identidades: no se
-reproducen · FRONTERA DE VENTANA — HORA NO FIJADA
+Puebla · AV. 11 SUR Y CUAUHTÉMOC, SOLO POR RESUMEN — COLONIA CONTRADICHA: LOMAS DE CASTILLOTLA O
+GUADALUPE HIDALGO · noche del LUNES 12-OCT, ~22:30 —día y hora SOLO POR RESUMEN— · agresores
+disparan con armas largas, por titular, contra una camioneta de la Coordinación de Homicidios de
+la FGE Puebla (🔴) · 1 agente ministerial o auxiliar del MP herido, por titular · ataque desde
+motocicleta, SOLO POR RESUMEN, contradicho · OBJETIVO CONTRADICHO: EL COORDINADOR GENERAL DE
+HOMICIDIOS O UN AGENTE DEL MINISTERIO PÚBLICO, que no viajaba en la unidad · ningún detenido
+publicado · la FGE no emitió información · identidades: no se reproducen · FRONTERA DE VENTANA —
+HORA NO FIJADA
 
 ── TRAZABILIDAD
 
@@ -212,8 +215,8 @@ declarada. Sin armamento: fuera del conteo
 
 ── HECHO
 
-Villahermosa · publicado el LUNES 12-OCT · FECHA DEL HECHO NO FIJADA: 11 O 12-OCT — EL BOLETÍN
-FEDERAL DEL 9 AL 11-OCT LA RECOGE, SOLO POR RESUMEN · Semar, Defensa, GN, SSPC y corporaciones
+Villahermosa · publicado el LUNES 12-OCT · FECHA DEL HECHO NO FIJADA: 9, 11 O 12-OCT, SOLO POR
+RESUMEN · anunciada por el titular de la SSPC, por titular · Semar, Defensa, GN y corporaciones
 estatales, SOLO POR RESUMEN · detención de Óscar Ariel «N», «El Cabra», señalado líder de la
 Mara 18 · 1 detenido, por titular (🟢) · orden internacional; buscado por El Salvador por 15
 homicidios, por titular · acusaciones, no condena · dosis de marihuana sin cifra · sin armamento
@@ -222,14 +225,16 @@ publicado · FRONTERA DE VENTANA — HORA NO FIJADA
 ── TRAZABILIDAD
 
 ARG-131-006 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: fecha del hecho no
-fijada; boletín solo por resumen · Fuentes: Institucional 1 · Nacional 1 · Regional 3 · Abierta
-0 · con fecha en la ruta: Proceso (2026/10/12) · Central Municipal (2026/10/12) · Lo de Hoy
-(2026/10/13) · Hecho: no fijada (11 o 12-oct); publicado el 2026-10-12 · Hora: no publicada ·
-Consulta: 2026-10-13 07:23-08:30 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
-fila — no hubo armamento asegurado
+fijada (9, 11 o 12-oct) · Fuentes: Institucional 1 · Nacional 4 · Regional 4 · Abierta 0 · con
+fecha en la ruta: Proceso (2026/10/12) · El Informador (20261012) · El Financiero (2026/10/12) ·
+La Jornada (2026/10/13) · Central Municipal (2026/10/12) · Lo de Hoy (2026/10/13) · Hecho: no
+fijada (11 o 12-oct); publicado el 2026-10-12 · Hora: no publicada · Consulta: 2026-10-13
+07:23-08:30 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — no hubo
+armamento asegurado
 Deslindes y reservas: «El Cabra» y Mara 18 no figuran en el índice. Liveblog de Infobae del
 12-oct: no fecha el hecho. Si la captura fue el 11-oct antes de las 08:19 del 12, pertenecía a
-la ventana de ARGOS 130, que no la publicó. Sin armamento: fuera del conteo
+la ventana de ARGOS 130; si fue el 9-oct (un medio, solo por resumen), es evento anterior
+publicado durante el corte y sale de los totales. Sin armamento: fuera del conteo
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-13 · Hora: 07:23 (CDMX) · Corte: Matutino · ARGOS N.° 131 · USO INSTITUCIONAL
@@ -251,11 +256,11 @@ ningún detenido publicado
 ── TRAZABILIDAD
 
 ARG-131-REC-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
-resumen; sin boletín institucional · Fuentes: Institucional 1 · Nacional 6 · Regional 4 ·
-Abierta 0 · con fecha en la ruta: Infobae (2026/10/12) · El Heraldo de México (2026/10/12) · MVS
-(2026/10/12) · Latinus (2026/10/12) · Intolerancia (2026/10/12) · Hecho: 2026-10-11 · Hora:
-~18:30–19:00 (solo por resumen) · Consulta: 2026-10-13 07:23-08:30 · Estatus: Parcialmente
-corroborado · Ventana de origen: ARGOS 130 — fuera de todos los totales
+resumen; sin boletín institucional · Fuentes: Institucional 1 · Nacional 7 · Regional 6 ·
+Abierta 0 · con fecha en la ruta: Proceso (2026/10/12) · Infobae (2026/10/12) · El Heraldo de
+México (2026/10/12) · MVS (2026/10/12) · Latinus (2026/10/12) · Intolerancia (2026/10/12) ·
+Hecho: 2026-10-11 · Hora: ~18:30–19:00 (solo por resumen) · Consulta: 2026-10-13 07:23-08:30 ·
+Estatus: Parcialmente corroborado · Ventana de origen: ARGOS 130 — fuera de todos los totales
 Deslindes y reservas: Otatitlán no figura en el índice. 🟡 por homicidio doloso único: un
 exalcalde no es servidor público en funciones; Latinus lo titula «violencia política». Dentro de
 la ventana de ARGOS 130, que no lo publicó
@@ -271,10 +276,11 @@ DOMINGO 11-OCT (SOLO POR RESUMEN) · ataque armado contra los jugadores · 2 mue
 ── TRAZABILIDAD
 
 ARG-131-REC-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora y colonia
-solo por resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 1 · Regional 2
-· Abierta 0 · con fecha en la ruta: El Informador (20261011) · Hecho: 2026-10-11 · Hora: tarde
-(solo por resumen) · Consulta: 2026-10-13 07:23-08:30 · Estatus: Parcialmente corroborado ·
-Ventana de origen: ARGOS 130 — fuera de todos los totales
+solo por resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 3 · Regional 3
+· Abierta 0 · con fecha en la ruta: El Informador (20261011) · Luz Noticias (2026-10-11) · El
+Heraldo de San Luis Potosí (2026/10/11) · Hecho: 2026-10-11 · Hora: tarde (solo por resumen) ·
+Consulta: 2026-10-13 07:23-08:30 · Estatus: Parcialmente corroborado · Ventana de origen: ARGOS
+130 — fuera de todos los totales
 Deslindes y reservas: ARGOS 130 lo dejó como candidato sin URL con fecha («Mazatlán ×2»); la
 nota de El Informador lo ancla al 11-oct. La mujer asesinada en Villa Unión el mismo día sigue
 sin URL con fecha: no se ficha
@@ -285,20 +291,21 @@ sin URL con fecha: no se ficha
 
 VENTANA DE ORIGEN: ARGOS 129 O ARGOS 130 — HORA NO FIJADA · COL. ILUSTRES NOVOHISPANOS, VIVIENDA
 · mañana del DOMINGO 11-OCT, por titular · hombres armados disparan dentro de la casa · 2
-muertos, por titular (🔴 en su ventana) · PRIMERAS VERSIONES: «UN HERIDO», DESCARTADO, SOLO POR
-RESUMEN · FGE Michoacán procesa la escena, SOLO POR RESUMEN · ningún detenido publicado ·
-identidades: no se reproducen
+muertos, por titular (🔴 en su ventana) · HERIDO CONTRADICHO: «UN HERIDO» (SOLO POR RESUMEN)
+FRENTE A «NO HUBO TERCER LESIONADO» (POR TITULAR) · FGE Michoacán procesa la escena, SOLO POR
+RESUMEN · ningún detenido publicado · identidades: no se reproducen
 
 ── TRAZABILIDAD
 
-ARG-131-REC-003 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: una sola fuente;
-hora no fijada · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con fecha en
-la ruta: Changoonga (2026/10/11) · Hecho: 2026-10-11 · Hora: mañana (por titular) · Consulta:
-2026-10-13 07:23-08:30 · Estatus: Parcialmente corroborado · Ventana de origen: ARGOS 129 o
-ARGOS 130 — HORA NO FIJADA — fuera de todos los totales
+ARG-131-REC-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora no fijada;
+sin fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 7 · Abierta 0 · con
+fecha en la ruta: Changoonga (2026/10/11) · Grupo Marmor (2026/10/11) · Hecho: 2026-10-11 ·
+Hora: mañana (por titular) · Consulta: 2026-10-13 07:23-08:30 · Estatus: Parcialmente
+corroborado · Ventana de origen: ARGOS 129 o ARGOS 130 — HORA NO FIJADA — fuera de todos los
+totales
 Deslindes y reservas: NO es ARG-130-004 (col. Solidaridad, negocio de micheladas). ARGOS 130 lo
-descartó por no tener nota localizada; Changoonga lo ancla al 11-oct. Si fue antes de las 08:58,
-su ventana es la de ARGOS 129
+descartó por no tener nota localizada; Changoonga y Grupo Marmor lo anclan al 11-oct. Si fue
+antes de las 08:58, su ventana es la de ARGOS 129
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-13 · Hora: 07:23 (CDMX) · Corte: Matutino · ARGOS N.° 131 · USO INSTITUCIONAL
@@ -344,7 +351,7 @@ Lectura regional: 0 filas en las seis regiones. Eventos cualitativos: ARG-131-00
 usadas en el ataque, no aseguradas).
 EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE — FUERA DEL TOTAL: boletín del Gabinete de Seguridad
 de las acciones del 9, 10 y 11-oct, publicado el 12-oct y localizado solo por republicadores
-(Línea Directa 2026-10-12, Argon México 2026/10/12) —22 detenidos y 35 armas en 12 entidades,
+(Línea Directa 2026-10-12, Argon México 2026/10/12) —«22 sospechosos y 35 armas en 12 estados»,
 por titular de Excélsior; desglose solo por resumen, no cuadra—, con el cateo de Ciudad Isla,
 Veracruz (10-oct: 8 armas sin desglose, 41 cargadores, 34 cartuchos, solo por resumen).
 
@@ -371,10 +378,10 @@ Veracruz (10-oct: 8 armas sin desglose, 41 cargadores, 34 cartuchos, solo por re
 
 La Paz · RECINTO PORTUARIO DE PICHILINGUE, PUESTO MILITAR DE SEGURIDAD · detención en julio de
 2025 por Defensa y GN en un tractocamión, SOLO POR RESUMEN · FGR · sentencia condenatoria, por
-titular del boletín · contra ÓSCAR «N» · 8 años de prisión, por titular · 1,020.80 kg de
-clorhidrato de metanfetamina y procedimiento abreviado, SOLO POR RESUMEN · decomiso del
-narcótico, SOLO POR RESUMEN · FECHA DE LA SENTENCIA NO PUBLICADA: se integra por su publicación
-del 12-oct · firmeza no informada · FRONTERA DE VENTANA — HORA NO FIJADA
+titular del boletín · contra ÓSCAR «N» · 8 años de prisión, por titular sin fecha en la ruta ·
+1,020.80 kg de clorhidrato de metanfetamina y procedimiento abreviado, SOLO POR RESUMEN ·
+decomiso del narcótico, SOLO POR RESUMEN · FECHA DE LA SENTENCIA NO PUBLICADA: se integra por su
+publicación del 12-oct · firmeza no informada · FRONTERA DE VENTANA — HORA NO FIJADA
 
 ── TRAZABILIDAD
 
@@ -383,14 +390,15 @@ por su slug, no leído íntegro por el bloqueo de egreso · Fuentes: Institucion
 Regional 4 · Abierta 0 · con fecha en la ruta: Tijuana Última Hora (12/10/2026) · Sentencia: no
 publicada · Publicación: 2026-10-12 · Consulta: 2026-10-13 07:23-08:30 · Estatus: Confirmado por
 fuente oficial indexada
-Deslindes y reservas: Pichilingue no figura en el índice. Campos individualizadores
-coincidentes: nombre, peso, lugar y procedimiento. NO es Rafael «N», 7 años 6 meses, 337 litros
-(Noticias La Paz 2026/10/10, fuera de ventana), ni Amílcar «C», Sonora, 831.51 kg. Excélsior
-titula «9 años» sobre una transportista: POSIBLE CASO HOMÓNIMO, no se integra. Republicadores
-del mismo boletín: no independientes
+Deslindes y reservas: Pichilingue no figura en el índice. Campos individualizadores coincidentes
+—nombre, peso, lugar y procedimiento—, solo por resumen; la pena, por titular sin fecha
+(Zócalo); la publicación, por la fecha en la ruta de otro medio. NO es Rafael «N», 7 años 6
+meses, 337 litros (Noticias La Paz 2026/10/10, fuera de ventana), ni Amílcar «C», Sonora, 831.51
+kg. Excélsior titula «9 años» sobre una transportista: POSIBLE CASO HOMÓNIMO, no se integra.
+Republicadores del mismo boletín: no independientes
 
   ARG-ID | Fiscalía | Entidad | Delito | Sentenciados | Pena | Multa | Reparación del daño | Tipo de sentencia | Firmeza | Fuente oficial | Corroboración | Confianza
-  ARG-131-SEN-001 | FGR · Fiscalía Federal en BCS | Baja California Sur · La Paz (Pichilingue) | Contra la salud, transporte de metanfetamina | 1 · Óscar «N» | 8 años, por titular | no publicada | no publicada | Condenatoria · procedimiento abreviado (solo por resumen) | no informada | gabinetedeseguridad.gob.mx (slug indexado, sin fecha) | Tijuana Última Hora (12/10/2026) · Zócalo · Uniradio | Medio
+  ARG-131-SEN-001 | FGR · Fiscalía Federal en BCS | Baja California Sur · La Paz (Pichilingue) | Contra la salud, transporte de metanfetamina | 1 · Óscar «N» | 8 años, por titular sin fecha | no publicada | no publicada | Condenatoria · procedimiento abreviado (solo por resumen) | no informada | gabinetedeseguridad.gob.mx (slug indexado, sin fecha) | Tijuana Última Hora (12/10/2026) · Zócalo · Uniradio | Medio
 
   Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
   Sonora · Nogales | Mateo «N» · tentativa de feminicidio; procedimiento abreviado | 15 años, por titular | FGJE Sonora (titular de republicadores) | PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL · publicado el 12-oct (El Diario de Sonora) · dominio de la fiscalía no devuelto | Bajo
@@ -443,9 +451,9 @@ destino de la embarcación y nacionalidad de la tripulación — consistente con
 no confirmado.
 4. LIDERAZGO DE PANDILLA CENTROAMERICANA ASENTADO EN VILLAHERMOSA. ARG-131-006. Línea: red de
 apoyo local y corredor de ingreso — requiere validación.
-5. BRECHA ENTRE DETENCIÓN Y CONDENA. ARG-131-SEN-001: quince meses entre la detención y la pena;
-las sentencias estatales de Sonora y Chihuahua solo existen en medios. Línea: exigir el boletín
-oficial de cada sentencia anunciada.
+5. BRECHA ENTRE DETENCIÓN Y CONDENA. ARG-131-SEN-001: unos quince meses entre la detención y la
+publicación de la pena, cálculo propio; las sentencias estatales de Sonora y Chihuahua solo
+existen en medios. Línea: exigir el boletín oficial de cada sentencia anunciada.
 
 gabinetedeseguridad.gob.mx/resultados — SIN RESULTADO INDEXADO EN VENTANA. SESNSP, INEGI y FGR:
 sin publicación estadística nueva localizada dentro de la ventana.
