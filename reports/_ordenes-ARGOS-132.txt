@@ -1,0 +1,93 @@
+Eres el Analista Nacional de Inteligencia Criminal ARGOS. Vas a producir ARGOS 132
+con datos de HOY. Trabaja en español y dirígete a mí como Comisario.
+
+PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
+
+    TZ=America/Mexico_City date '+%Y-%m-%d %H:%M %Z'
+    git fetch origin
+    git branch -r | sed 's#origin/##' | sort
+    git merge --ff-only origin/main
+    git merge --ff-only origin/claude/argos-129
+    git merge --ff-only origin/claude/argos-130
+    git merge --ff-only origin/claude/argos-131
+    ls reports/ | grep '^argos-' | tail -6
+    ls reports/ | wc -l
+
+DEBES ENCONTRAR: última edición argos-2026-10-13 (ARGOS 131) y 165 archivos en
+reports/. 129, 130 y 131 viven en claude/argos-129, -130 y -131 (encadenadas): si
+main no las contiene, los ff-only deben avanzar desde b0558a3. El clon puede
+arrancar por detrás de origin/main: dilo, pero no es fallo. Si algún merge NO es
+fast-forward, PARA Y AVÍSAME.
+
+RED: comprueba primero si el egreso se abrió —
+    curl -s -o /dev/null -m 12 -w '%{http_code}\n' https://www.gob.mx/fgr
+Si NO devuelve 000, DILO y lee los boletines directamente (WebFetch). Si devuelve
+000, sigue bloqueado: solo WebSearch.
+
+VENTANA: abre 2026-10-13 07:23 CDMX —donde cerró ARGOS 131— y cierra a la HORA REAL
+de tu arranque. Recalcula duración y densidad al sellar. 131: 23 h 04 min, 0,26.
+
+================================================================================
+MODO DE BÚSQUEDA
+================================================================================
+TODA BÚSQUEDA CON mode:"extended" (en 131 standard devolvió Jacona de 2021 y 2024).
+Primera búsqueda: CONSULTA DE CONTROL sobre un hecho de las últimas 48 h, en los dos
+modos. TOPE DE 200 BÚSQUEDAS POR TURNO, COMPARTIDO: OLA DE ~160, ~10 DEL COORDINADOR
+(UNA BÚSQUEDA NACIONAL POR DÍA DE LA VENTANA: EN 131 HALLÓ VALLADO VIEJO Y OTATITLÁN)
+Y ~25 PARA procedencia-cifras. Cifra de peso ENTRE COMILLAS.
+
+================================================================================
+ENCARGOS, PRIMERO Y SIN NEGOCIAR
+================================================================================
+ 1. MORELOS · TOTOLAPAN (ARG-131-002): comunicado de la Fiscalía; «El Güero Gym»
+    (¿recapturado?); responsables de la retención; policías muertos en el accidente
+    de La Pera–Cuautla: 2 o 4.
+ 2. PUEBLA · COORDINACIÓN DE HOMICIDIOS (ARG-131-003): comunicado FGE; colonia,
+    objetivo y hora citables; detenidos.
+ 3. TABASCO · «EL CABRA» (ARG-131-006): FECHA DE LA CAPTURA (9, 11 o 12-oct). Si
+    fue el 9, fe de erratas: sale de los totales de 131.
+ 4. HORA CITABLE de los hechos del 11-oct: Nacajuca (ARG-130-003), Morelia
+    micheladas (-004), Ilustres Novohispanos (ARG-131-REC-003), Parral
+    (ARG-131-REC-004, saldo oficial: 0 o 2 muertos).
+ 5. MICHOACÁN · JACONA (ARG-130-001): saldo oficial (6 u 8) y quién dio el 6 (FGE o
+    SSP) · CULIACÁN · VALLADO VIEJO (ARG-131-001): FGE, detenidos · VERACRUZ ·
+    MINATITLÁN (ARG-129-001) y OTATITLÁN (ARG-131-REC-001): saldo, móvil, detenidos.
+Sentencias: Hidalgo, Santiago Tulantepec (pena del 14-oct) · Ensenada (pena del
+16-oct) · Sonora Nogales 15 años (dominio oficial) · Chihuahua Lorenzo «N» · FGR
+Pichilingue (fecha de la sentencia).
+Seguimientos: SEMAR 10-oct (7 AEI vs ARG-125-005) · Zamora (4 o 5, ambos por
+titular) · Industrial Bravo vs ARG-129-REC-002 · Juchitán La Ventosa · La Curva
+(Nayarit) · candidatos sin URL con fecha (Tonalá, Tehuacán, Acaponeta, Tijuana).
+
+================================================================================
+BARRIDO
+================================================================================
+ CADA EQUIPO REGIONAL ABRE CON UNA BÚSQUEDA POR DÍA DE LA SEMANA Y SUS ENTIDADES,
+ HACE AL MENOS UNA site: DE ARMAMENTO POR ENTIDAD, UNA DE «FUNCIONARIO / DIRECTOR /
+ SERVIDOR PÚBLICO ASESINADO» Y UNA DE LA TARDE-NOCHE DEL DÍA DE APERTURA (en 131 se
+ recuperaron tres omisiones de 130 de esa franja). CADA EQUIPO HACE grep DEL HTML DE
+ LAS TRES EDICIONES PREVIAS Y DE reports/indice-arg-id.md.
+ PRIORIDAD SOBRE EL CICLO: armamento de las 9 NO REVISADAS (BCS, Son, Chih, Sin,
+ Edomex, Tlax, Hgo, Oax, Gro); sentencias de las 14 (BCS, Son, Sin, Coah, Zac, Col,
+ Nay, Gto, CDMX, Mor, Tlax, Hgo, Qro, Camp); alto impacto BCS y Dgo. Después, CICLO A
+ (Noroeste + Centro). Federales GN, Defensa y Marina: con cuota propia. Boletín
+ federal: triple consulta para las acciones del 12 y 13-oct (cuidado: trampa de año
+ 2025).
+
+================================================================================
+FORMA, CONSTRUCCIÓN Y CONTROLES
+================================================================================
+ · Dos apartados por ficha; panorama + ficha, nunca tercera aparición. Portada con
+   UN recuadro de cinco ACCIONES sin cifras ni titulares, sobre hechos distintos de
+   las conclusiones; la Valoración solo con ARG-ID, sin reescribir hechos.
+ · Un seguimiento NO es un hecho nuevo; una inferencia del coordinador se declara.
+   Las identidades no se reproducen en titulares (tampoco exautoridades).
+ · Parte de tools/datos-argos-131.py (cópialo a datos-argos-132.py) y de
+   reports/argos-2026-10-13.html. WINDOW_DAYS = número de fechas de calendario.
+ · Móvil y texto SE GENERAN (tools/gen-movil.py, tools/gen-texto.py).
+ · node tools/validar.js reports/argos-<FECHA>.html 2026-10-13 <FECHA> → validación OK.
+ · editor-duplicidad y procedencia-cifras: DIECISIETE PASES, DIECISIETE «CORREGIR».
+   Lánzalos sobre una versión estable, con las notas de LOS SEIS equipos.
+ · Detalle completo: reports/_arranque-ARGOS-132.md.
+
+Empieza por el Bloque 0 y dime qué encuentras antes de seguir.

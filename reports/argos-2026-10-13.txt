@@ -28,16 +28,15 @@ Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
 
 ── LO QUE DEBE HACER EL MANDO
 
-1. EXIJA A LA FISCALÍA DE MORELOS EL PARTE DEL OPERATIVO DE TOTOLAPAN (ARG-131-002): situación
-jurídica del detenido liberado, identificación de quienes retuvieron a su personal y protocolo
-de traslado de detenidos de alto valor.
-2. REFUERCE LA PROTECCIÓN DE LA COORDINACIÓN DE HOMICIDIOS DE LA FGE PUEBLA (ARG-131-003) y
-exija el peritaje balístico de la camioneta atacada.
-3. EXIJA A LA FISCALÍA DE SINALOA LAS CARPETAS DE VALLADO VIEJO Y ESCUINAPA (ARG-131-001,
-ARG-131-004) y el cotejo de casquillos con los homicidios previos de Escuinapa.
-4. EXIJA A LA FISCALÍA DE MICHOACÁN EL SALDO OFICIAL Y EL INVENTARIO DE JACONA (ARG-130-001).
-5. PIDA A LA SSPC EL BOLETÍN DE ACCIONES DEL 12-OCT y la fecha y lugar de la captura de «El
-Cabra» (ARG-131-006).
+1. EXIJA A LA FISCALÍA DE MICHOACÁN EL SALDO OFICIAL Y EL INVENTARIO DE JACONA (ARG-130-001).
+2. EXIJA A PEMEX Y A LA FISCALÍA DE VERACRUZ EL SALDO OFICIAL Y EL MÓVIL DEL ATAQUE DE
+MINATITLÁN (ARG-129-001).
+3. PIDA A LA FISCALÍA DE VERACRUZ LAS LÍNEAS DE INVESTIGACIÓN DE OTATITLÁN (ARG-131-REC-001) y
+evalúe la protección de exautoridades y excandidatos de la cuenca del Papaloapan.
+4. EXIJA A LAS FISCALÍAS DE TABASCO, MICHOACÁN Y CHIHUAHUA LA HORA DE LOS ATAQUES DEL 11-OCT
+(ARG-130-003, ARG-130-004, ARG-131-REC-003, ARG-131-REC-004) y el saldo oficial de Parral.
+5. PIDA A LA SSPC EL BOLETÍN DE ACCIONES DEL 12-OCT y el comunicado íntegro del cateo de Ciudad
+Isla, Veracruz.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-13 · Hora: 07:23 (CDMX) · Corte: Matutino · ARGOS N.° 131 · USO INSTITUCIONAL
@@ -56,14 +55,15 @@ Cabra» (ARG-131-006).
   Veracruz · Otatitlán (restaurante El Cedral) · VENTANA ARGOS 130 | Asesinado el exalcalde de Otatitlán en su restaurante | 🟡 Amarillo (en su ventana) | FGE Veracruz (por titular de medios) | Proceso · Infobae · El Heraldo de México · MVS · Latinus | ★★★☆☆ | ARG-131-REC-001
   Sinaloa · Mazatlán (col. Klein, cancha de futbol) · VENTANA ARGOS 130 | 2 muertos en una cancha de futbol | 🔴 Rojo (en su ventana) | SIN BOLETÍN | El Informador · El Universal · Posta | ★★★☆☆ | ARG-131-REC-002
   Michoacán · Morelia (col. Ilustres Novohispanos) · VENTANA ARGOS 129 o ARGOS 130 — HORA NO FIJADA | 2 muertos dentro de una vivienda | 🔴 Rojo (en su ventana) | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-131-REC-003
+  Chihuahua · Hidalgo del Parral (Santa Rosa) · VENTANA ARGOS 129 o ARGOS 130 — HORA NO FIJADA | Ataque armado: 2 muertos por titular; saldo contradicho con la Fiscalía | 🔴 Rojo (en su ventana) | SIN BOLETÍN · FGE Zona Sur (por resumen) | ninguna | ★★☆☆☆ | ARG-131-REC-004
 
   Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Armas cortas | Armas largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Entidades
-  6 | 3 | 1 | 2 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5
+  6 | 3 | 1 | 2 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5
 
 Ventana 12-oct 08:19 → 13-oct 07:23 CDMX (23 h 04 min) · 6 hechos propios en 5 entidades ·
 densidad 0,26 hechos/hora, cálculo propio. Orden: rojos, amarillos, verdes. Los seis llevan
 FRONTERA DE VENTANA.
-LAS 3 RECUPERACIONES DEL FINAL PERTENECEN A VENTANAS ANTERIORES Y QUEDAN FUERA DEL SEMÁFORO, DEL
+LAS 4 RECUPERACIONES DEL FINAL PERTENECEN A VENTANAS ANTERIORES Y QUEDAN FUERA DEL SEMÁFORO, DEL
 MAPA, DEL RADAR Y DE TODOS LOS TOTALES.
 Toque un ARG-ID para ir a su ficha, donde están las fuentes, el nivel de confianza y los
 deslindes.
@@ -184,8 +184,9 @@ Abierta 0 · con fecha en la ruta: Línea Directa (2026-10-12) · La Prensa de C
 (2026/10/12) · Hecho: 2026-10-12 · Hora: ~10:00 (solo por resumen) · Consulta: 2026-10-13
 07:23-08:30 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — no hubo
 armamento asegurado
-Deslindes y reservas: NO es la mujer asesinada en una taquería el sábado 10-oct (otro hecho,
-anterior) ni ARG-130-006 / -009. «19 en el año» y «ocho mujeres en Sinaloa en doce días»:
+Deslindes y reservas: NO es ARG-129-004 (vendedora de birria, Madero entre Libertad y Belisario
+Domínguez, sábado 10-oct) ni ARG-130-006 / -009. Si ocurrió antes de las 08:19 del 12-oct,
+pertenece a la ventana de ARGOS 130. «19 en el año» y «ocho mujeres en Sinaloa en doce días»:
 recuentos de medios, no oficiales. 🟡 por homicidio doloso único
 
 ### OAXACA · PACÍFICO — LA MARINA ASEGURA 1.2 TONELADAS DE COCAÍNA FRENTE A HUATULCO Y DETIENE A SEIS PERSONAS [VERDE]
@@ -243,7 +244,7 @@ publicado durante el corte y sale de los totales. Sin armamento: fuera del conte
 
 ## CRIMEN ORGANIZADO (III) — RECUPERACIONES: VENTANAS DE ARGOS 129 Y 130
 
-### VERACRUZ · OTATITLÁN — ASESINAN EN SU RESTAURANTE AL EXALCALDE JORGE GUERRERO GARCÍA [RECUPERACIÓN]
+### VERACRUZ · OTATITLÁN — ASESINAN EN SU RESTAURANTE AL EXALCALDE DEL MUNICIPIO [RECUPERACIÓN]
 
 ── HECHO
 
@@ -251,7 +252,7 @@ VENTANA DE ORIGEN: ARGOS 130 · RESTAURANTE EL CEDRAL, JUNTO AL PASO DE LA PANGA
 SOLO POR RESUMEN · noche del DOMINGO 11-OCT, ~18:30–19:00 (SOLO POR RESUMEN) · hombres armados
 disparan contra el exalcalde de Otatitlán (2014-2017) y excandidato en 2025 · 1 muerto, por
 titular (🟡 en su ventana) · FGE Veracruz sigue varias líneas de investigación, por titular ·
-ningún detenido publicado
+ningún detenido publicado · identidad: no se reproduce
 
 ── TRAZABILIDAD
 
@@ -281,9 +282,10 @@ solo por resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacion
 Heraldo de San Luis Potosí (2026/10/11) · Hecho: 2026-10-11 · Hora: tarde (solo por resumen) ·
 Consulta: 2026-10-13 07:23-08:30 · Estatus: Parcialmente corroborado · Ventana de origen: ARGOS
 130 — fuera de todos los totales
-Deslindes y reservas: ARGOS 130 lo dejó como candidato sin URL con fecha («Mazatlán ×2»); la
-nota de El Informador lo ancla al 11-oct. La mujer asesinada en Villa Unión el mismo día sigue
-sin URL con fecha: no se ficha
+Deslindes y reservas: Col. Klein no figura en el índice ni en 128-130; ARGOS 130 vio en Mazatlán
+otros dos hechos (centro comercial; Puesta del Sol), que siguen sin URL con fecha. El
+Informador, Luz Noticias y El Heraldo de San Luis Potosí lo anclan al 11-oct. La mujer asesinada
+en Villa Unión el mismo día sigue sin URL con fecha: no se ficha
 
 ### MICHOACÁN · MORELIA — ASESINAN A DOS HOMBRES DENTRO DE UNA VIVIENDA EN ILUSTRES NOVOHISPANOS [RECUPERACIÓN]
 
@@ -303,9 +305,32 @@ fecha en la ruta: Changoonga (2026/10/11) · Grupo Marmor (2026/10/11) · Hecho:
 Hora: mañana (por titular) · Consulta: 2026-10-13 07:23-08:30 · Estatus: Parcialmente
 corroborado · Ventana de origen: ARGOS 129 o ARGOS 130 — HORA NO FIJADA — fuera de todos los
 totales
-Deslindes y reservas: NO es ARG-130-004 (col. Solidaridad, negocio de micheladas). ARGOS 130 lo
-descartó por no tener nota localizada; Changoonga y Grupo Marmor lo anclan al 11-oct. Si fue
-antes de las 08:58, su ventana es la de ARGOS 129
+Deslindes y reservas: NO es ARG-130-004: otra colonia (Solidaridad), otro lugar (negocio de
+micheladas) y otra nota de Changoonga («Balean negocio de micheladas en la colonia
+Solidaridad…»); Grupo Marmor y MiMorelia titulan Ilustres Novohispanos. ARGOS 130 lo descartó
+por no tener nota localizada; Changoonga y Grupo Marmor lo anclan al 11-oct. Si fue antes de las
+08:58, su ventana es la de ARGOS 129
+
+### CHIHUAHUA · PARRAL — ATAQUE ARMADO EN SANTA ROSA: UNO Y LUEGO DOS MUERTOS Y CUATRO HERIDOS, SALDO CONTRADICHO CON LA FISCALÍA [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 129 O ARGOS 130 — HORA NO FIJADA · SANTA ROSA · madrugada del DOMINGO
+11-OCT, ~03:00 (SOLO POR RESUMEN) · ataque armado · 1 muerto y 4 heridos, por titular del
+11-oct; asciende a 2 muertos, por titular del 12-oct (🔴 en su ventana) · SALDO CONTRADICHO: LA
+FISCALÍA ZONA SUR, 3 HERIDOS Y NINGÚN MUERTO, SOLO POR RESUMEN · calibres 9 mm, 7.62×39 y .223
+en la escena, SOLO POR RESUMEN · ningún detenido publicado · identidades: no se reproducen
+
+── TRAZABILIDAD
+
+ARG-131-REC-004 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: saldo contradicho
+con la autoridad; hora solo por resumen · Fuentes: Institucional 0 · Nacional 0 · Regional 2 ·
+Abierta 0 · con fecha en la ruta: El Diario de Chihuahua (2026/oct/11) · El Diario de Chihuahua
+(2026/oct/12) · Hecho: 2026-10-11 · Hora: ~03:00 (solo por resumen) · Consulta: 2026-10-13
+07:23-08:30 · Estatus: Parcialmente corroborado · Ventana de origen: ARGOS 129 o ARGOS 130 —
+HORA NO FIJADA — fuera de todos los totales
+Deslindes y reservas: Santa Rosa (Parral) no figura en el índice ni en 128-130. Si fue antes de
+las 08:58 del 11-oct, su ventana es la de ARGOS 129
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-13 · Hora: 07:23 (CDMX) · Corte: Matutino · ARGOS N.° 131 · USO INSTITUCIONAL
@@ -430,12 +455,11 @@ FUERA DE VENTANA O SIN BOLETÍN OFICIAL.
 
 ── VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL
 
-1. NIVEL FIJADO POR TRES ROJOS: ARG-131-001 a ARG-131-003 (Sinaloa, Morelos y Puebla); dos de
-ellos, contra personal de fiscalías.
+1. NIVEL FIJADO POR TRES ROJOS: ARG-131-001 a ARG-131-003 (Sinaloa, Morelos y Puebla).
 2. Contexto operativo: un amarillo en Escuinapa (ARG-131-004).
 3. Respuesta institucional propia: ARG-131-005 y ARG-131-006; ningún detenido publicado por los
-tres rojos; en Totolapan, la detención quedó revertida.
-4. Recuperaciones: ARG-131-REC-001 a ARG-131-REC-003, de las ventanas de ARGOS 129 y 130, fuera
+tres rojos.
+4. Recuperaciones: ARG-131-REC-001 a ARG-131-REC-004, de las ventanas de ARGOS 129 y 130, fuera
 de los totales.
 5. 23 H 04 MIN; LOS SEIS HECHOS CON FRONTERA DE VENTANA: TOTALES NO COMPARABLES SIN MÁS.
 

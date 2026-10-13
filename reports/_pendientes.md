@@ -8,13 +8,13 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 130 (corte 2026-10-12).
+**Última actualización**: ARGOS 131 (corte 2026-10-13).
 
 ---
 
 ## Arranque de la edición siguiente
 
-**`reports/_arranque-ARGOS-131.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-131.txt`) contiene la orden de arranque para una sesión nueva: verificación
+**`reports/_arranque-ARGOS-132.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-132.txt`) contiene la orden de arranque para una sesión nueva: verificación
 de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y comandos de construcción.
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
@@ -1906,3 +1906,58 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 9. **La ola omitió un rojo** (Escuinapa, servidor público) que halló `procedencia-cifras`. En 131, cada equipo hace una búsqueda de «funcionario / director / servidor público asesinado» por sus entidades.
 7. **`validar.js` sigue sin aplicar al móvil**; el móvil se valida con `gen-movil.py`.
 8. **Umbral de «víctimas múltiples» con un solo muerto** (`ARG-120-009` frente a Cócorit): sigue sin fijarse en `CLAUDE.md`.
+
+## Cerrados por ARGOS 131
+
+| Pendiente | Disposición |
+|---|---|
+| **Boletín federal del 9, 10 y 11-oct** | **Existe**: agregado publicado el 12-oct, hallado solo por la tercera forma (título sin `site:`) — `ARG-131-FE-001` |
+| **Navolato, San Pedro** (`ARG-130-005`) | **Un solo cuerpo** (seis medios). Sigue 🟡 |
+| **Escuinapa: ¿mezcla `-009` / `-006`?** | **No es mezcla** (por resumen): calle Francisco Pérez frente a Aldama y Usumacinta; distinta hora |
+| **Mazatlán ×2 de 130** | Siguen sin URL con fecha (centro comercial; Puesta del Sol). Aparte, **col. Klein** recuperada como `ARG-131-REC-002` |
+| **Sombrerete, 185 frente a 39** | **185 por titular** (La Nigua, sin fecha); 39 solo por resumen |
+| **Huejotzingo** | retodiario 2026/10/09: hecho del 8-9 oct, fuera de ventana. Cierra |
+| **Zacatecas José «N»** | ≥6 José «N» distintos en NTR con URL sin día: `POSIBLE CASO HOMÓNIMO` permanente; se deja de buscar |
+| **Tamaulipas FGJE-381 a 384** | 10 y 11-oct, sin sentencia aparente. Cierra como no integrable |
+| **NL, tres sentenciados** | Publicado el 10-oct: fuera de ventana; sin boletín oficial. Cierra |
+| **Huanusco** | Ya publicado como `ARG-128-REC-002` |
+| **Armamento revisado** | **17 → 23 de 32**; Aguascalientes revisada en los tres módulos; dominio `spsc.campeche.gob.mx` y `fiscalia-aguascalientes.gob.mx` confirmados |
+| **Federales GN, Defensa, Marina** | Revisadas con cuota propia: SRIV |
+| **Controles** | Diecisiete pases consecutivos, diecisiete «CORREGIR» |
+
+## Abiertos que ARGOS 132 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️⚠️ **MORELOS · Totolapan** (`ARG-131-002`) | Comunicado de la Fiscalía de Morelos; situación de José David «N», «El Güero Gym» (¿recapturado?); responsables de la retención; **policías muertos en el accidente: 2 o 4**; vínculo del accidente con el operativo |
+| ⚠️⚠️ **PUEBLA · Coordinación de Homicidios** (`ARG-131-003`) | Comunicado de la FGE; colonia y objetivo (coordinador o MP); hora citable; detenidos |
+| ⚠️ **SINALOA · Culiacán, Vallado Viejo** (`ARG-131-001`) | FGE Sinaloa; detenidos; hora citable |
+| ⚠️ **TABASCO · «El Cabra»** (`ARG-131-006`) | **Fecha de la captura (9, 11 o 12-oct)**: si fue el 9, sale de los totales de 131 por fe de erratas; si fue el 11 antes de las 08:19 del 12, pertenecía a 130 |
+| **SINALOA · Escuinapa, estética** (`ARG-131-004`) | Hora citable (~10:00 solo por resumen) |
+| **BCS · FGR Pichilingue** (`ARG-131-SEN-001`) | Fecha de la sentencia; boletín FGR legible; Excélsior «9 años» (¿homónimo?) |
+| ⚠️⚠️ **MICHOACÁN · Jacona** (`ARG-130-001`) | Saldo oficial (6 u 8); **¿el 6 es de la FGE (atiempo.mx) o de la SSP (La Jornada)?**; inventario; detenidos |
+| **TABASCO · Nacajuca** (`ARG-130-003`), **MICHOACÁN · Morelia, micheladas** (`-004`), **Ilustres Novohispanos** (`ARG-131-REC-003`), **CHIHUAHUA · Parral** (`ARG-131-REC-004`) | **Hora citable** de los cuatro hechos del 11-oct; Parral: saldo oficial (Fiscalía Zona Sur, 0 muertos por resumen, frente a 2 por titular) |
+| **VERACRUZ · Minatitlán** (`ARG-129-001`) | Saldo oficial; «móvil personal» (El Imparcial): si se acredita, revisar color |
+| **VERACRUZ · Otatitlán** (`ARG-131-REC-001`) | Detenidos; móvil; **color 🟡 revisable** por el destinatario |
+| **CHIHUAHUA · Ciudad Juárez** (`ARG-130-008`) | Fecha del hecho (10 u 11-oct) |
+| **SEMAR 10-oct** | 7 AEI frente a `ARG-125-005`: `POSIBLE DUPLICIDAD`; 12 o 13 largas |
+| **Zamora** (`ARG-129-REC-001`) | **4 por titular frente a 5 por titular de RED113 (URL sin día)**; sin arbitrar |
+| **Culiacán, Industrial Bravo / La Popular** | `POSIBLE DUPLICIDAD CON ARG-129-REC-002` (Los Pinos); no promover a `-REC-` sin validar |
+| **Juchitán, La Ventosa** | ¿Ataque contra el agente municipal (autoridad auxiliar, ventana 129)? Fuente con titular |
+| **Nayarit · La Curva** (`ARG-125-003`) | Cifra oficial de víctimas; «seis puntos de interés», no «seis fosas» |
+| **Candidatos sin URL con fecha** | Tonalá, Jal. (noche del 12) · Tehuacán, San Marcos Necoxtla (noche del 12) · Acaponeta, Nay. (tres cuerpos) · Tijuana llantera · Villa Unión · Ciudad Hidalgo |
+| **Sentencias candidatas** | **Sonora, Nogales, 15 años** (FGJES, 12-oct; dominio no devuelto) · **Chihuahua, Lorenzo «N», 7 años** (12-oct) · **Zacatecas, FGR, Nayeli y Elizandro, 4 años** (URL sin día) · **Hidalgo, Santiago Tulantepec: pena el 14-oct** · **Ensenada: pena el 16-oct** |
+| **Boletín federal de las acciones del 12 y 13-oct** | Triple consulta; comunicado íntegro del cateo de Ciudad Isla |
+| **Seguimientos sin avance** | Pinotepa · El Castillo · Los Pinos · Chipilo · Pachuca · Borja · Celaya · El Balcón · Zihuatanejo · Acapulco («El Junior», inventario) · Cancún (FGE QRoo) |
+
+## Deuda de método (ARGOS 131)
+
+1. **Seis de seis hechos con `FRONTERA`**; tres omisiones de 130 recuperadas (tarde y noche del domingo, indexadas después del cierre de las 08:19).
+2. **Sentencias: Sonora y Sinaloa, cuarta edición `NO REVISADA`** (`fge.sonora.gob.mx` devolvió 0; Sinaloa sin dominio devuelto). Propuesta: aceptar el dominio
+   que devuelvan los republicadores con el título del boletín o retirarlas de la deuda de rotación. **14 `NO REVISADA`**: BCS, Son, Sin, Coah, Zac, Col, Nay, Gto,
+   CDMX, Mor, Tlax, Hgo, Qro, Camp.
+3. **Armamento `NO REVISADA` (9)**: BCS, Son, Chih, Sin, Edomex, Tlax, Hgo, Oax, Gro. **Alto impacto**: BCS y Dgo sin búsqueda propia.
+4. **Ciclo siguiente: A** (Noroeste + Centro), tras la prioridad de las `NO REVISADA`.
+5. **Presupuesto**: 2 de control + 158 de ola + 7 del coordinador + 25 de `procedencia-cifras` = **192**.
+6. **`validar.js` sigue sin aplicar al móvil**; el móvil se valida con `gen-movil.py`.
+7. **Umbral de «víctimas múltiples» con un solo muerto** (`ARG-120-009`) y **exautoridades como víctima** (`ARG-131-REC-001`): sin fijar en `CLAUDE.md`.

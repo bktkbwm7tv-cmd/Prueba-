@@ -46,7 +46,7 @@ Serie: C (125) sí · A (126) no · B (127) no · C (128) no · A (129) no · B 
 
 | Acciones de | Estado |
 |---|---|
-| **9, 10 y 11-oct** | **EXISTE: agregado de tres días, publicado el 12-oct**, localizado solo por la **tercera forma** (título sin `site:`): Irradia, RED113, Talla Política, Certeza Diario, Milenio (`…9-10-y-11-de-octubre-2026`); fecha de publicación fijada por Línea Directa 2026-10-12__1718779 y Argon México 2026/10/12. **Corrige el `SIN RESULTADO INDEXADO` de ARGOS 130 §4** (cuarto falso vacío del emisor por formato/indexación). Republicadores: no independientes. Totales, Excélsior por titular: «22 sospechosos y 35 armas en 12 estados»; 788 cartuchos, 119 cargadores, 64 AEI y 6 minas, **solo por resumen, no cuadran con el desglose**. Acciones anteriores a la apertura: `EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE`, fuera del total |
+| **9, 10 y 11-oct** | **EXISTE: agregado de tres días, publicado el 12-oct**, localizado solo por la **tercera forma** (título sin `site:`): Irradia, RED113, Talla Política, Certeza Diario, Milenio (`…9-10-y-11-de-octubre-2026`); fecha de publicación fijada por Línea Directa 2026-10-12__1718779 y Argon México 2026/10/12. **Completa el `SIN RESULTADO INDEXADO` de ARGOS 130 §4**: la hora de publicación no se conoce, así que no se acredita que existiera antes del cierre de 130 (08:19 del 12-oct); no se cuenta como falso vacío. Republicadores: no independientes. Totales, Excélsior por titular: «22 sospechosos y 35 armas en 12 estados»; 788 cartuchos, 119 cargadores, 64 AEI y 6 minas, **solo por resumen, no cuadran con el desglose**. Acciones anteriores a la apertura: `EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE`, fuera del total |
 | **12-oct** | `SIN RESULTADO INDEXADO EN VENTANA` en las tres formas. **Trampa de año** de nuevo: el rango «10, 11 y 12» devolvió `gob.mx/sspc/prensa/…-de-octubre-de-2025` |
 
 `gabinetedeseguridad.gob.mx/resultados/`: SRIV; el dominio indexa `contenido/7391/fgr-obtiene-sentencia-condenatoria-…` (base de `ARG-131-SEN-001`).
@@ -79,7 +79,7 @@ Cotija 9 armas, 3 cargadores, 55 cartuchos, **28 AEI** · Sinaloa, Culiacán col
 | Zamora (`ARG-129-REC-001`) | **RED113 2026/10 (sin día) titula «… ataque ya suma 5 muertos»**: la quinta muerte tiene ahora un titular, sin día en la ruta. **4 frente a 5, por titular en los dos lados: sigue sin arbitrar**; la FE no se reabre |
 | Sombrerete (`-REC-010`) | **La Nigua titula «Aseguran 185 detonadores y 22 explosivos»** (sin fecha): **185 queda sostenido por titular**; 39 solo por resumen. Caso FGR 691/26, por resumen |
 | Pinotepa (`ARG-128-001`) | Sin acto nuevo; sin comunicado FGEO; sin detenidos |
-| Juchitán, La Ventosa | **Corrección del pendiente**: la víctima no es el agente municipal sino un hombre de 56 años asesinado frente a su casa, cuya vivienda fue baleada (Oaxaca Capital 2026/10/12, por resumen). Sábado 10-oct: ventana de 129. No se ficha |
+| Juchitán, La Ventosa | **Precisión del pendiente, solo por resumen**: la víctima es un hombre de 56 años asesinado **frente al domicilio del agente municipal**, domicilio que fue baleado (Oaxaca Capital 2026/10/12). Si se acredita que el ataque iba contra el agente, es **agresión a autoridad auxiliar en la ventana de 129**, no publicada. Sigue pendiente; no se ficha sin fuente con titular |
 | El Balcón | Sin novedad posterior al 9-oct. No se describe el video |
 | Chipilo, Pachuca | Sin avance |
 | Huejotzingo | **Cierra**: retodiario 2026/10/09, hecho del 8-9 oct, fuera |
@@ -93,20 +93,20 @@ Cotija 9 armas, 3 cargadores, 55 cartuchos, **28 AEI** · Sinaloa, Culiacán col
 | Caso | Arbitraje |
 |---|---|
 | **Culiacán, Vallado Viejo** (`ARG-131-001`) | 🔴 por homicidio múltiple. **4 muertos por titular** (Línea Directa 2026-10-12__1719289 «Muere en el hospital la cuarta víctima…»; Noticieristas «asciende a cuatro muertos»). Hora ~20:15–20:40 solo por resumen. Publicado el 12-oct, día de cierre de 130: `FRONTERA`; la noche del lunes, por resumen, la sitúa en 131 |
-| **Totolapan** (`-002`) | 🔴: la operación la inicia la autoridad (amarillo por la regla de quién inicia), **pero los narcobloqueos y la quema de vehículos están en la lista roja** y se suma la retención de tres servidores públicos. **La detención quedó revertida por el canje: no se abre ficha verde**. «Dos elementos fallecidos» (Zócalo, solo resumen): no se integra; si se confirma, sube el saldo, no el color |
+| **Totolapan** (`-002`) | 🔴: la operación la inicia la autoridad (amarillo por la regla de quién inicia), **pero los narcobloqueos y la quema de vehículos están en la lista roja** y se suma la retención de tres servidores públicos. **La detención quedó revertida por el canje: no se abre ficha verde**. **Corrección de `procedencia-cifras`**: los «policías muertos» existen por titular de varios medios (Bajo Palabra, El Buen Tono, Noventa Grados, Diario de Morelos, Vanguardia, UnoTV; Telediario «…la-pera-cuautla-hoy-12-octubre-2026»), pero son **2 o 4 policías de la SSPC Morelos muertos en un accidente de patrulla** en la autopista La Pera–Cuautla cuando acudían al apoyo: **accidente, no agresión**; no se suman a los muertos por agresión ni activan el agravante de «muerte de personal». Liberados: 3 (Infobae, XEU) o 4 (El Diario de Chihuahua, resumen) |
 | **Puebla, FGE** (`-003`) | 🔴 por ataque del grupo criminal contra servidores públicos (personal de la Coordinación de Homicidios). Herido por titular (Puebla Roja «hay un lesionado»; Cinco Radio «Balean a agente ministerial…»). ~22:30 del lunes, solo por resumen; publicado el 13-oct: frontera del lado del cierre declarada en la ficha |
 | **Escuinapa, estética** (`-004`) | 🟡 por homicidio doloso único. ~10:00, solo por resumen |
 | **Semar, Huatulco** (`-005`) | 🟢. 1.2 t y 6 detenidos por titular (La Razón 2026/10/12). Sin armas: fuera del conteo de armamento |
 | **«El Cabra»** (`-006`) | 🟢. Fecha del hecho 11 o 12-oct: el boletín del 9 al 11 la recogería (solo por resumen). Se integra en 131 con `FRONTERA` (criterio de `ARG-130-008`) |
-| **Otatitlán** (`ARG-131-REC-001`) | **Ventana de 130** (domingo 11, 18:30–19:00 por resumen; 130 cerró el 12 a las 08:19 sin publicarlo). **🟡**: un exalcalde no es servidor público en funciones; la regla de agravantes no incluye «figura política». **Decisión que el destinatario puede revisar** |
+| **Otatitlán** (`ARG-131-REC-001`) | **Ventana de 130** (domingo 11, 18:30–19:00 por resumen; 130 cerró el 12 a las 08:19 sin publicarlo). **🟡**: un exalcalde no es servidor público en funciones; la regla de agravantes no incluye «figura política». **Decisión que el destinatario puede revisar.** El nombre no se reproduce en el cartelón (criterio de `ARG-130-009`) |
 | **Mazatlán, col. Klein** (`-REC-002`) | 130 lo dejó sin URL con fecha; El Informador `20261011-0084` lo ancla. 🔴 en su ventana |
-| **Morelia, Ilustres Novohispanos** (`-REC-003`) | 130 lo descartó «sin nota localizada»; Changoonga 2026/10/11 titula «Mañana violenta al oriente de Morelia: asesinan a dos hombres…». Mañana del domingo: ventana de 129 o 130, **hora no fijada**. Una sola fuente: ★★☆☆☆ |
+| **Morelia, Ilustres Novohispanos** (`-REC-003`) | 130 lo descartó «sin nota localizada»; Changoonga 2026/10/11 («Mañana violenta al oriente de Morelia…») y Grupo Marmor 2026/10/11 («asesinan-a-dos-hombres-en-la-ilustres-novohispanos»); MiMorelia titula «No hubo tercer lesionado en ataque en Ilustres Novohispanos». Mañana del domingo: ventana de 129 o 130, **hora no fijada**. **Deslinde con `ARG-130-004`** (pedido por `editor-duplicidad`): otra nota de Changoonga («Balean negocio de micheladas en la colonia Solidaridad…»), otra colonia, otro lugar: **dos hechos** |
+| **Parral, Santa Rosa** (`-REC-004`) | **Fichado tras `editor-duplicidad`** (el saldo contradicho no es motivo para no fichar). El Diario de Chihuahua 2026/oct/11 («deja un muerto y cuatro heridos») y 2026/oct/12 («asciende a dos»); Fiscalía Zona Sur, 0 muertos solo por resumen. ~03:00 por resumen: ventana de 129 o 130. ★★☆☆☆ |
 | **FGR, Pichilingue** (`ARG-131-SEN-001`) | Integrada con **Medio**, precedente `ARG-122-SEN-001`: *slug* institucional en `gabinetedeseguridad.gob.mx` («fgr-obtiene-sentencia-condenatoria…») + publicación anclada por Tijuana Última Hora `/12/10/2026/` + **8 años por titular** (Zócalo «Sentencian a 8 años de prisión a sujeto por transportar más de una tonelada metanfetamina en BCS»). Cuatro campos individualizadores. `FRONTERA` (publicación del 12-oct sin hora) |
 | **Sonora, Nogales, 15 años** | `PENDIENTE DE CONFIRMACIÓN OFICIAL`: titular «FGJES obtiene sentencia…» en republicadores sin fecha; El Diario de Sonora 2026/10/12; dominio de la fiscalía no devuelto |
 | **Tonalá, Jalisco** (1 muerto, 1 herido, «noche del lunes» por resumen) | Ninguna URL con fecha → **no se ficha**; candidato para 132 |
 | **Tehuacán, San Marcos Necoxtla** (1 muerto, noche del lunes) | Sin URL con fecha → no se ficha |
 | **CDMX, Azcapotzalco e Iztacalco** (madrugada del lunes) | Titular «madrugada»: probable anterior a las 08:19; sin URL con fecha → no se ficha |
-| **Parral, Chihuahua** (11-oct ~03:00; 1 o 2 muertos y 4 heridos por titular de El Diario de Chihuahua 2026/oct/11 y /12; la Fiscalía Zona Sur, 0 muertos por resumen) | Ventana de 129 por hora (resumen); saldo contradicho con la autoridad → **no se ficha**; pendiente |
 | **Ciudad Isla, Veracruz** | Evento anterior (10-oct) publicado durante el corte: una línea en el módulo de armamento, fuera del total |
 
 ## 8. Fe de erratas (no va al cartelón)
@@ -116,7 +116,7 @@ Cotija 9 armas, 3 cargadores, 55 cartuchos, **28 AEI** · Sinaloa, Culiacán col
   formalmente correcta para lo indexado a esa hora; se registra la existencia del boletín. **No cambia ningún total de 130.**
 - **`ARG-131-FE-002`** — **Omisiones de ARGOS 130**: Otatitlán (`-REC-001`), Mazatlán col. Klein (`-REC-002`) y, con hora no fijada, Morelia Ilustres
   Novohispanos (`-REC-003`). **Conteo de 130 recalculado, cálculo propio**: con las dos primeras, rojos 5 → **6**, amarillos 2 → **3**, muertos 16 → **19**
-  (18 → 21 con la cifra de 8 en Jacona); `-REC-003` se asigna a 129 o 130 cuando se fije la hora.
+  (18 → 21 con la cifra de 8 en Jacona); `-REC-003` y `-REC-004` se asignan a 129 o 130 cuando se fije la hora.
 
 ## 9. Registro del barrido — por entidad
 
@@ -127,7 +127,7 @@ SRIV = `SIN RESULTADO INDEXADO EN VENTANA`. `SIN ACTUALIZACIÓN CONSTATADA`: **0
 | Baja California | SRIV (Tijuana llantera, sin URL con fecha) | SRIV (`seguridadbc.gob.mx`) | SRIV (`fgebc.gob.mx`) · Ensenada sin pena |
 | Baja California Sur | NO REVISADA | NO REVISADA | NO REVISADA (solo FGR) |
 | Sonora | SRIV | NO REVISADA | NO REVISADA (`fge.sonora.gob.mx`: 0) · Nogales, candidato |
-| Chihuahua | SRIV (Parral, fuera) | NO REVISADA (solo agregado federal) | SRIV (`fiscalia.chihuahua.gob.mx`) · 166 años, fuera |
+| Chihuahua | SRIV · `-REC-004` (Parral) | NO REVISADA (solo agregado federal) | SRIV (`fiscalia.chihuahua.gob.mx`) · 166 años, fuera |
 | Sinaloa | **hechos** (Vallado Viejo, Escuinapa) | NO REVISADA (sin dominio devuelto) | NO REVISADA (cuarta edición) |
 | Durango | NO REVISADA | SRIV (`fiscalia.durango.gob.mx`) | SRIV (5-oct, fuera) |
 | Coahuila | SRIV | SRIV (`sspcoahuila.gob.mx`) | NO REVISADA (dominio no devuelto) |
@@ -137,7 +137,7 @@ SRIV = `SIN RESULTADO INDEXADO EN VENTANA`. `SIN ACTUALIZACIÓN CONSTATADA`: **0
 | Zacatecas | SRIV (Huanusco, 8-oct, fuera) | SRIV (`ssp.zacatecas.gob.mx`, acumulado del 3-oct) | NO REVISADA (dominio no devuelto) |
 | Jalisco | SRIV (Tonalá sin URL con fecha) | SRIV (`secretariadeseguridad.jalisco.gob.mx`) | SRIV (`fge.jalisco.gob.mx`) |
 | Colima | SRIV | SRIV (`col.gob.mx`) | NO REVISADA (por medios: 27 años, 9-oct) |
-| Nayarit | SRIV | SRIV (`nayarit.gob.mx`) | NO REVISADA (solo FGR) |
+| Nayarit | SRIV · seguimiento `ARG-125-003` (La Curva: MVS 2026/10/12, la fiscal habla de un centro de exterminio; «seis puntos de interés», no «seis fosas»; sin cifra oficial) | SRIV (`nayarit.gob.mx`) | NO REVISADA (solo FGR) |
 | Aguascalientes | SRIV | SRIV (`aguascalientes.gob.mx`) | SRIV (`fiscalia-aguascalientes.gob.mx`) |
 | Michoacán | SRIV · seguimiento Jacona · `-REC-003` | SRIV (`ssp.michoacan.gob.mx`) | SRIV (`fiscaliamichoacan.gob.mx`) |
 | Guanajuato | SRIV | SRIV (`boletines.guanajuato.gob.mx`, 6 y 11-oct, anteriores) | NO REVISADA (dominio no confirmado) |
@@ -165,11 +165,11 @@ en medios** (BCS y Dgo `NO REVISADA`: el equipo Noroeste no les dedicó búsqued
 - **Tonalá, Jalisco** (1 muerto, 1 herido; «noche del lunes 12» por resumen): Telediario, N+, NTR, Azteca Jalisco, **ninguna URL con fecha** → candidato de 132.
 - **Tehuacán, San Marcos Necoxtla** (1 muerto, noche del lunes): La Jornada de Oriente, Meganoticias, Puebla Roja, sin fecha en la ruta.
 - **CDMX, Azcapotzalco (1 muerto) e Iztacalco (2 heridos)**: «madrugada» del lunes por titular de TV Azteca → probable anterior a las 08:19; sin URL con fecha.
-- **Parral, Chihuahua**: ver §7.
 - **Tijuana llantera**, **Villa Unión** (mujer, 11-oct), **Ciudad Hidalgo** (decapitado, 11-oct): siguen sin URL con fecha.
-- **Culiacán, col. Industrial Bravo / La Popular** (9 largas, 22 cargadores, 173 cartuchos, 7 AEI; Luz Noticias 2026-10-10): hecho del 9-10 oct; **no figura en
-  129 ni 130** → candidato a `-REC-` en 132 si se ancla la fecha del hecho (posible ventana de 128 o 129).
-- **Huanusco, Zacatecas** (padre de la alcaldesa, 8-oct; Diario de Juárez 2026/oct/08): fuera de ventana; no figura en ediciones previas → revisar 127.
+- **Culiacán, col. Industrial Bravo / La Popular** (9 largas, 22 cargadores, 173 cartuchos, 7 AEI, solo por resumen; Luz Noticias 2026-10-10): hecho del 9-10 oct.
+  `POSIBLE DUPLICIDAD CON ARG-129-REC-002` (Los Pinos: misma noche, mismo municipio, corporaciones federales, armas y explosivos, sin detenidos; distinta colonia) —
+  **no promover a `-REC-` sin validar**; si es el mismo hecho, es desarrollo con cifras.
+- **Huanusco, Zacatecas** (padre de la alcaldesa, 8-oct): **ya publicado como `ARG-128-REC-002`**; no es candidato.
 - **SLP capital** (2 detenidos con armas, potosinoticias 2026/10/11): publicado antes de la apertura.
 - **Monclova** (hallazgo y detención): sin fecha ni URL citable.
 - **Comalcalco y Villahermosa, Casa Blanca**: Azteca Chiapas los fecha «domingo 12 de octubre» —el 12-oct-2026 es lunes; el 12-oct-2025 fue domingo—: **incoherencia
@@ -178,7 +178,8 @@ en medios** (BCS y Dgo `NO REVISADA`: el equipo Noroeste no les dedicó búsqued
 ## 11. Desglose de cálculos propios
 
 - Duración: 12-oct 08:19 → 13-oct 07:23 = **23 h 04 min** = 23,07 h. Densidad: 6 / 23,07 = **0,26**.
-- Muertos en hechos propios: 4 (Culiacán) + 1 (Escuinapa) = **5**. Heridos por titular: **1** (Puebla); 3 en Totolapan solo por resumen.
+- Muertos por agresión en hechos propios: 4 (Culiacán) + 1 (Escuinapa) = **5**; aparte, 2 o 4 policías muertos en el accidente vial ligado a `-002`. Heridos por titular: **1** (Puebla); 3 en Totolapan solo por resumen.
+- Quince meses (Conclusión 5): julio de 2025 → publicación del 12-oct-2026; fecha de la sentencia no publicada.
 - Armamento propio: **0** en todas las categorías. Detenidos en evento de aseguramiento de armamento: **0** (los 6 de Huatulco y «El Cabra», sin armas).
 - Frontera: **6 de 6**.
 - Sentencias: 1 integrable, 8 años; no se acumula con ningún otro caso.
@@ -200,18 +201,57 @@ en medios** (BCS y Dgo `NO REVISADA`: el equipo Noroeste no les dedicó búsqued
 - **`ARG-131-REC-001`** — Institucional 1 (FGE Veracruz, por titular de El Heraldo). Nacional 6: Infobae 2026/10/12; El Heraldo de México 2026/10/12 (906875);
   MVS 2026/10/12 (749497); Latinus 2026/10/12 (186785); TV Azteca; Eje Central. Regional 4: Intolerancia 2026/10/12; Tabasco Hoy; El Buen Tono; Cúspide México 2026/10/13.
 - **`ARG-131-REC-002`** — Nacional 1: El Informador 20261011-0084. Regional 2: Entre Veredas 2026/10; Los Noticieristas 2026/10.
-- **`ARG-131-REC-003`** — Regional 1: Changoonga 2026/10/11.
+- **`ARG-131-REC-003`** — Regional 7: Changoonga 2026/10/11; Grupo Marmor 2026/10/11; La Voz de Michoacán; Respuesta; Monitor Expresso; IMN; MiMorelia.
+- **`ARG-131-REC-004`** — Regional 2: El Diario de Chihuahua 2026/oct/11 y 2026/oct/12; Chihuahua Aldía (resumen).
 - **`ARG-131-SEN-001`** — Institucional 1: `gabinetedeseguridad.gob.mx/contenido/7391/…` (sin fecha). Nacional 1: Zócalo. Regional 4: Tijuana Última Hora
   `/12/10/2026/`; Uniradio Informa (n857566); Cuestión Chronos; Mi Diario Nayarit.
 
 ## 13. Los dos controles editoriales
 
-*(Se completa tras los pases.)*
+Racha: **diecisiete pases consecutivos, diecisiete «CORREGIR»**. Lanzados en paralelo sobre la versión estable `1a93ad5`, con las notas de **los seis equipos**.
+
+**`procedencia-cifras`** (25 búsquedas, 0 `WebFetch`) — **CORREGIR**. Ningún rojo omitido nuevo.
+
+| # | Hallazgo | Disposición |
+|---|---|---|
+| 1 | Totolapan: «dos elementos fallecidos» existe por titular de varios medios; es **accidente de patrulla** (2 o 4 policías) | **Corregido** en ficha y §7; no se suman a muertos por agresión |
+| 2 | Totolapan: liberados 3 o 4 | **Corregido**: contradicción declarada |
+| 3 | Culiacán: «dos mujeres y dos hombres» y «madre e hijo» por titular (Noroeste, Noticieristas) | **Corregido** hacia arriba; motocicleta retirada (no hallada) |
+| 4 | Puebla: día solo por resumen; motocicleta contradicha; cruce solo por resumen | **Corregido** |
+| 5 | Semar: cifras sostenidas | Sin cambio |
+| 6 | «El Cabra»: posible 9-oct; institucional = anuncio de la SSPC por titular de El Informador; nacionales subestimadas | **Corregido** |
+| 7 | Pichilingue: «8 años» por titular sin fecha; campos individualizadores por resumen; «quince meses» sin marca | **Corregido** |
+| 8-9 | Otatitlán (Proceso 2026/10/12) y Mazatlán (Luz Noticias, El Heraldo SLP): fuentes subestimadas | **Corregido** |
+| 10 | Morelia `-REC-003`: no es fuente única; herido contradicho, no «descartado» | **Corregido**: ★★★☆☆ |
+| 11 | Nayarit, La Curva: publicación del 12-oct sobre `ARG-125-003` | **Anotado** en §9 como seguimiento; no se ficha. Acaponeta (tres cuerpos, Meganoticias sin fecha): candidato de 132 |
+| 12 | Agregado federal: «22 sospechosos», no «22 detenidos» | **Corregido** |
+
+**`editor-duplicidad`** (sin búsquedas) — **CORREGIR**. Ningún duplicado real con 128-130.
+
+| # | Hallazgo | Disposición |
+|---|---|---|
+| 1 | `-REC-003` posible duplicado de `ARG-130-004` | **Verificado: dos hechos** (dos notas distintas de Changoonga, otra colonia, otro lugar); deslinde reforzado |
+| 2 | `-REC-002`: «Mazatlán ×2» de 130 eran otros dos hechos | **Corregido** el deslinde |
+| 3 | Nombre del exalcalde en el titular de `-REC-001` | **Corregido**: retirado |
+| 4 | Huanusco ya publicado (`ARG-128-REC-002`) | **Corregido** §10 |
+| 5 | Industrial Bravo frente a `ARG-129-REC-002` | **Corregido**: `POSIBLE DUPLICIDAD` |
+| 6 | Deslinde de `-004` contra una «taquería» inexistente | **Corregido**: cita `ARG-129-004` |
+| 7 | §4 «cuarto falso vacío» contradice §8 | **Corregido** |
+| 8 | Portada y Conclusiones sobre los mismos hechos; Valoración reescribe hechos | **Corregido**: la portada pasa a Jacona, Minatitlán, Otatitlán, horas del 11-oct y boletín federal; Valoración solo con ARG-ID |
+| 9-10 | Sentencia y totales repetidos en módulos | **No se corrige**: tabla obligatoria e iconografía de conteo por `CLAUDE.md` |
+| 11-12 | §13, índice y pendientes | **Corregido** al cierre |
+| 13 | Alto impacto 30/32 no verificable entidad por entidad; Chihuahua armamento | **No se corrige el número**: cada equipo abrió con una búsqueda por día con todas sus entidades; Chihuahua armamento sigue `NO REVISADA` (ningún dominio oficial devuelto) |
+| 14 | Juchitán: «corrección» no respaldada | **Corregido** §6: posible agresión a autoridad auxiliar, pendiente |
+| 15 | Parral sin fichar con criterio dispar | **Corregido**: `ARG-131-REC-004` |
+| 16 | «Quince meses» | **Corregido** (ver `procedencia-cifras` 7) |
+| — | Móvil: «los 0 ARG-ID» | **Corregido** en `gen-movil.py` |
+
+**Segundo pase** — `validar.js` → **validación OK** (escritorio); `gen-movil.py` → **validación OK** (móvil); `.txt` regenerado. Sin presupuesto de búsqueda para un segundo pase con web (192 de 200).
 
 ## 14. Herramientas
 
 `tools/datos-argos-131.py` (desde 130; restituida la página de recuperaciones; `ARM = []` con tabla de desglose «SIN FILAS»; sentencia integrada con su ficha
-`-SEN-001-F`). `gen-movil.py` y `gen-texto.py` sin cambios. `validar.js`: OK.
+`-SEN-001-F`). `gen-movil.py`: aviso de la móvil sin «los 0 ARG-ID» cuando el módulo de armamento no tiene filas. `gen-texto.py` sin cambios. `validar.js`: OK.
 
 ## 15. Lecciones de método (no van al cartelón)
 

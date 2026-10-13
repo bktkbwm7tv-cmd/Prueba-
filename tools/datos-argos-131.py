@@ -48,7 +48,7 @@ E = [
   inst="FGE Sinaloa <span class=\"muted-note\">(por titular de medios)</span>", nac="El Universal · Posta", conf="★★★☆☆",
   campo="hora solo por resumen; sin boletín institucional", I=1, N=2, R=5, A=0,
   fechadas=["Línea Directa (2026-10-12)", "La Prensa de Coahuila (2026/10/12)"], estatus="Parcialmente corroborado", arm=None,
-  desl="NO es la mujer asesinada en una taquería el sábado 10-oct (otro hecho, anterior) ni ARG-130-006 / -009. «19 en el año» y «ocho mujeres en Sinaloa en doce días»: recuentos de medios, no oficiales. 🟡 por homicidio doloso único"),
+  desl="NO es ARG-129-004 (vendedora de birria, Madero entre Libertad y Belisario Domínguez, sábado 10-oct) ni ARG-130-006 / -009. Si ocurrió antes de las 08:19 del 12-oct, pertenece a la ventana de ARGOS 130. «19 en el año» y «ocho mujeres en Sinaloa en doce días»: recuentos de medios, no oficiales. 🟡 por homicidio doloso único"),
  dict(id="ARG-131-005", estado="MX-OAX", region="Sureste", color="verde", impacto="grande", fecha="2026-10-12", hora="no publicada",
   ent="Oaxaca", mun="Océano Pacífico, frente a Huatulco", dia="PUB. 12-OCT, HORA NO FIJADA",
   title="OAXACA · PACÍFICO — LA MARINA ASEGURA 1.2 TONELADAS DE COCAÍNA FRENTE A HUATULCO Y DETIENE A SEIS PERSONAS",
@@ -73,8 +73,8 @@ E = [
 R = [
  dict(id="ARG-131-REC-001", estado="MX-VER", region="Golfo", fecha="2026-10-11", hora="~18:30–19:00 (solo por resumen)", orig="ARGOS 130", col_orig="amarillo",
   ent="Veracruz", mun="Otatitlán (restaurante El Cedral)", dia="11-OCT, NOCHE",
-  title="VERACRUZ · OTATITLÁN — ASESINAN EN SU RESTAURANTE AL EXALCALDE JORGE GUERRERO GARCÍA",
-  hecho="<code>VENTANA DE ORIGEN: ARGOS 130</code> · <code>RESTAURANTE EL CEDRAL, JUNTO AL PASO DE LA PANGA DEL PAPALOAPAN — SOLO POR RESUMEN</code> · noche del DOMINGO 11-OCT, ~18:30–19:00 (" + RES + ") · hombres armados disparan contra el exalcalde de Otatitlán (2014-2017) y excandidato en 2025 · <b>1 muerto</b>, por titular (🟡 en su ventana) · <b>FGE Veracruz</b> sigue varias líneas de investigación, por titular · <b>ningún detenido publicado</b>",
+  title="VERACRUZ · OTATITLÁN — ASESINAN EN SU RESTAURANTE AL EXALCALDE DEL MUNICIPIO",
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 130</code> · <code>RESTAURANTE EL CEDRAL, JUNTO AL PASO DE LA PANGA DEL PAPALOAPAN — SOLO POR RESUMEN</code> · noche del DOMINGO 11-OCT, ~18:30–19:00 (" + RES + ") · hombres armados disparan contra el exalcalde de Otatitlán (2014-2017) y excandidato en 2025 · <b>1 muerto</b>, por titular (🟡 en su ventana) · <b>FGE Veracruz</b> sigue varias líneas de investigación, por titular · <b>ningún detenido publicado</b> · identidad: no se reproduce",
   panel="Asesinado el <b>exalcalde de Otatitlán</b> en su restaurante", inst="FGE Veracruz <span class=\"muted-note\">(por titular de medios)</span>", nac="Proceso · Infobae · El Heraldo de México · MVS · Latinus",
   conf="★★★☆☆", campo="hora solo por resumen; sin boletín institucional", I=1, N=7, R=6, A=0,
   fechadas=["Proceso (2026/10/12)", "Infobae (2026/10/12)", "El Heraldo de México (2026/10/12)", "MVS (2026/10/12)", "Latinus (2026/10/12)", "Intolerancia (2026/10/12)"],
@@ -86,7 +86,7 @@ R = [
   panel="<b>2 muertos</b> en una cancha de futbol", inst="<span class=\"muted-note\">SIN BOLETÍN</span>", nac="El Informador · El Universal · Posta",
   conf="★★★☆☆", campo="hora y colonia solo por resumen; sin fuente institucional", I=0, N=3, R=3, A=0,
   fechadas=["El Informador (20261011)", "Luz Noticias (2026-10-11)", "El Heraldo de San Luis Potosí (2026/10/11)"],
-  desl="ARGOS 130 lo dejó como candidato sin URL con fecha («Mazatlán ×2»); la nota de El Informador lo ancla al 11-oct. La mujer asesinada en Villa Unión el mismo día sigue sin URL con fecha: no se ficha"),
+  desl="Col. Klein no figura en el índice ni en 128-130; ARGOS 130 vio en Mazatlán otros dos hechos (centro comercial; Puesta del Sol), que siguen sin URL con fecha. El Informador, Luz Noticias y El Heraldo de San Luis Potosí lo anclan al 11-oct. La mujer asesinada en Villa Unión el mismo día sigue sin URL con fecha: no se ficha"),
  dict(id="ARG-131-REC-003", estado="MX-MIC", region="Occidente", fecha="2026-10-11", hora="mañana (por titular)", orig="ARGOS 129 o ARGOS 130 — HORA NO FIJADA", col_orig="rojo",
   ent="Michoacán", mun="Morelia (col. Ilustres Novohispanos)", dia="11-OCT, MAÑANA",
   title="MICHOACÁN · MORELIA — ASESINAN A DOS HOMBRES DENTRO DE UNA VIVIENDA EN ILUSTRES NOVOHISPANOS",
@@ -94,7 +94,15 @@ R = [
   panel="<b>2 muertos</b> dentro de una vivienda", inst="<span class=\"muted-note\">SIN BOLETÍN</span>", nac="<span class=\"muted-note\">ninguna</span>",
   conf="★★★☆☆", campo="hora no fijada; sin fuente institucional", I=0, N=0, R=7, A=0,
   fechadas=["Changoonga (2026/10/11)", "Grupo Marmor (2026/10/11)"],
-  desl="NO es ARG-130-004 (col. Solidaridad, negocio de micheladas). ARGOS 130 lo descartó por no tener nota localizada; Changoonga y Grupo Marmor lo anclan al 11-oct. Si fue antes de las 08:58, su ventana es la de ARGOS 129"),
+  desl="NO es ARG-130-004: otra colonia (Solidaridad), otro lugar (negocio de micheladas) y otra nota de Changoonga («Balean negocio de micheladas en la colonia Solidaridad…»); Grupo Marmor y MiMorelia titulan Ilustres Novohispanos. ARGOS 130 lo descartó por no tener nota localizada; Changoonga y Grupo Marmor lo anclan al 11-oct. Si fue antes de las 08:58, su ventana es la de ARGOS 129"),
+ dict(id="ARG-131-REC-004", estado="MX-CHH", region="Noroeste", fecha="2026-10-11", hora="~03:00 (solo por resumen)", orig="ARGOS 129 o ARGOS 130 — HORA NO FIJADA", col_orig="rojo",
+  ent="Chihuahua", mun="Hidalgo del Parral (Santa Rosa)", dia="11-OCT, MADRUGADA",
+  title="CHIHUAHUA · PARRAL — ATAQUE ARMADO EN SANTA ROSA: UNO Y LUEGO DOS MUERTOS Y CUATRO HERIDOS, SALDO CONTRADICHO CON LA FISCALÍA",
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 129 O ARGOS 130 — HORA NO FIJADA</code> · <code>SANTA ROSA</code> · madrugada del DOMINGO 11-OCT, ~03:00 (" + RES + ") · ataque armado · <b>1 muerto y 4 heridos</b>, por titular del 11-oct; <b>asciende a 2 muertos</b>, por titular del 12-oct (🔴 en su ventana) · <code>SALDO CONTRADICHO: LA FISCALÍA ZONA SUR, 3 HERIDOS Y NINGÚN MUERTO, SOLO POR RESUMEN</code> · calibres 9 mm, 7.62×39 y .223 en la escena, " + RES + " · <b>ningún detenido publicado</b> · identidades: no se reproducen",
+  panel="Ataque armado: <b>2 muertos</b> por titular; saldo contradicho con la Fiscalía", inst="<span class=\"muted-note\">SIN BOLETÍN</span> · FGE Zona Sur <span class=\"muted-note\">(por resumen)</span>", nac="<span class=\"muted-note\">ninguna</span>",
+  conf="★★☆☆☆", campo="saldo contradicho con la autoridad; hora solo por resumen", I=0, N=0, R=2, A=0,
+  fechadas=["El Diario de Chihuahua (2026/oct/11)", "El Diario de Chihuahua (2026/oct/12)"],
+  desl="Santa Rosa (Parral) no figura en el índice ni en 128-130. Si fue antes de las 08:58 del 11-oct, su ventana es la de ARGOS 129"),
 ]
 for r in R:
     r["color"] = "rec"; r["impacto"] = "grande" if r["col_orig"] == "rojo" else "mediano"
@@ -110,7 +118,7 @@ ENT = sorted(set(e["ent"] for e in E))
 ENT_ARM = sorted(set(a["ent"] for a in ARM))
 assert TOT == [0] * 10, TOT
 assert cnt == {"rojo": 3, "amarillo": 1, "verde": 2}, cnt
-assert cnt_rec == {"rojo": 2, "amarillo": 1, "verde": 0}, cnt_rec
+assert cnt_rec == {"rojo": 3, "amarillo": 1, "verde": 0}, cnt_rec
 assert len(ENT) == 5, ENT
 
 def fmt(n): return f"{n:,}"
@@ -223,14 +231,13 @@ port = f'''<section class="page">
   <div class="alerta contexto">
     <div class="flag">LO QUE DEBE HACER EL MANDO</div>
     <p>
-      <b>1. EXIJA A LA FISCALÍA DE MORELOS EL PARTE DEL OPERATIVO DE TOTOLAPAN</b> (ARG-131-002): situación jurídica del detenido liberado,
-      identificación de quienes retuvieron a su personal y protocolo de traslado de detenidos de alto valor.
-      <br><b>2. REFUERCE LA PROTECCIÓN DE LA COORDINACIÓN DE HOMICIDIOS DE LA FGE PUEBLA</b> (ARG-131-003) y exija el peritaje balístico
-      de la camioneta atacada.
-      <br><b>3. EXIJA A LA FISCALÍA DE SINALOA LAS CARPETAS DE VALLADO VIEJO Y ESCUINAPA</b> (ARG-131-001, ARG-131-004) y el cotejo de
-      casquillos con los homicidios previos de Escuinapa.
-      <br><b>4. EXIJA A LA FISCALÍA DE MICHOACÁN EL SALDO OFICIAL Y EL INVENTARIO DE JACONA</b> (ARG-130-001).
-      <br><b>5. PIDA A LA SSPC EL BOLETÍN DE ACCIONES DEL 12-OCT</b> y la fecha y lugar de la captura de «El Cabra» (ARG-131-006).
+      <b>1. EXIJA A LA FISCALÍA DE MICHOACÁN EL SALDO OFICIAL Y EL INVENTARIO DE JACONA</b> (ARG-130-001).
+      <br><b>2. EXIJA A PEMEX Y A LA FISCALÍA DE VERACRUZ EL SALDO OFICIAL Y EL MÓVIL DEL ATAQUE DE MINATITLÁN</b> (ARG-129-001).
+      <br><b>3. PIDA A LA FISCALÍA DE VERACRUZ LAS LÍNEAS DE INVESTIGACIÓN DE OTATITLÁN</b> (ARG-131-REC-001) y evalúe la protección de exautoridades
+      y excandidatos de la cuenca del Papaloapan.
+      <br><b>4. EXIJA A LAS FISCALÍAS DE TABASCO, MICHOACÁN Y CHIHUAHUA LA HORA DE LOS ATAQUES DEL 11-OCT</b> (ARG-130-003, ARG-130-004,
+      ARG-131-REC-003, ARG-131-REC-004) y el saldo oficial de Parral.
+      <br><b>5. PIDA A LA SSPC EL BOLETÍN DE ACCIONES DEL 12-OCT</b> y el comunicado íntegro del cateo de Ciudad Isla, Veracruz.
     </p>
   </div>
 
@@ -384,10 +391,10 @@ sent = f'''  <div class="conteo">
 cierre = f'''  <div class="alerta contexto">
     <div class="flag">VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL</div>
     <p>
-      <b>1.</b> <b>NIVEL FIJADO POR TRES ROJOS</b>: ARG-131-001 a ARG-131-003 (Sinaloa, Morelos y Puebla); dos de ellos, contra personal de fiscalías.
+      <b>1.</b> <b>NIVEL FIJADO POR TRES ROJOS</b>: ARG-131-001 a ARG-131-003 (Sinaloa, Morelos y Puebla).
       <br><b>2.</b> <b>Contexto operativo</b>: un amarillo en Escuinapa (ARG-131-004).
-      <br><b>3.</b> <b>Respuesta institucional propia</b>: ARG-131-005 y ARG-131-006; <b>ningún detenido publicado</b> por los tres rojos; en Totolapan, la detención quedó revertida.
-      <br><b>4.</b> <b>Recuperaciones</b>: ARG-131-REC-001 a ARG-131-REC-003, de las ventanas de ARGOS 129 y 130, fuera de los totales.
+      <br><b>3.</b> <b>Respuesta institucional propia</b>: ARG-131-005 y ARG-131-006; <b>ningún detenido publicado</b> por los tres rojos.
+      <br><b>4.</b> <b>Recuperaciones</b>: ARG-131-REC-001 a ARG-131-REC-004, de las ventanas de ARGOS 129 y 130, fuera de los totales.
       <br><b>5.</b> <code>23 H 04 MIN; LOS SEIS HECHOS CON FRONTERA DE VENTANA: TOTALES NO COMPARABLES SIN MÁS.</code>
     </p>
   </div>

@@ -643,8 +643,7 @@ N_ARM = len(set(re.findall(r'<tr id="(ARG-\d+-ARM-\d+)"', _ESC)))  # antes fijo 
 NOTA = f'''
   <p class="muted-note">
     <b>Versión móvil</b> de ARGOS {NUM}: mismo contenido verificado que el cartelón (<code>reports/argos-{FECHA}.html</code>), en una columna.
-    <b>No se publican aquí</b> el índice por entidad ni el desglose de armamento por evento: <b>{("el ARG-ID" if N_ARM == 1 else f"los {N_ARM} ARG-ID")} del módulo de armamento
-    {("consta" if N_ARM == 1 else "constan")} solo en el cartelón</b>. <b>Ninguna ficha se omitió ni se resumió.</b>
+    <b>No se publican aquí</b> el índice por entidad ni el desglose de armamento por evento{(": <b>" + ("el ARG-ID" if N_ARM == 1 else f"los {N_ARM} ARG-ID") + " del módulo de armamento " + ("consta" if N_ARM == 1 else "constan") + " solo en el cartelón</b>") if N_ARM else ", que en esta edición no tiene filas"}. <b>Ninguna ficha se omitió ni se resumió.</b>
   </p>'''
 # los enlaces a filas de armamento no tienen destino en la móvil: se dejan como texto
 partes = [re.sub(r'<a href="#(ARG-\d+-ARM-\d+)"><code>\1</code></a>', r'<code>\1</code>', x) for x in partes]
