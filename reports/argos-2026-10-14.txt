@@ -28,13 +28,11 @@ Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
 
 ── LO QUE DEBE HACER EL MANDO
 
-1. SOLICITE A LA FISCALÍA DE SINALOA LA CIFRA OFICIAL Y LA IDENTIFICACIÓN DE LOS RESTOS DE LA
-FOSA DE CAMPO ROMERO (ARG-132-001).
-2. SOLICITE A LA FISCALÍA DE VERACRUZ LA IDENTIDAD DEL FALLECIDO Y EL PARTE DEL CATEO DE ORIZABA
-(ARG-132-002).
+1. SOLICITE A LA FISCALÍA DE SINALOA LA IDENTIFICACIÓN DE LOS RESTOS DE LA FOSA DE CAMPO ROMERO
+(ARG-132-001).
+2. SOLICITE A LA FISCALÍA DE VERACRUZ EL PARTE DEL CATEO DE ORIZABA (ARG-132-002).
 3. SOLICITE A LA FGEO EL MÓVIL DEL ATAQUE EN LA SECUNDARIA DE SAN BLAS ATEMPA (ARG-132-003).
-4. SOLICITE A LA FISCALÍA DE MORELOS EL PARTE DE LA RETENCIÓN DE TOTOLAPAN Y LA SITUACIÓN DEL
-LIBERADO (ARG-131-002).
+4. SOLICITE A LA FISCALÍA DE MORELOS EL PARTE DE LA RETENCIÓN DE TOTOLAPAN (ARG-131-002).
 5. SOLICITE A LA FISCALÍA DE NAYARIT EL COMUNICADO DEL HALLAZGO DE ACAPONETA (ARG-132-REC-004).
 
 ----------------------------------------------------------------------------
@@ -468,16 +466,17 @@ OFICIAL.
 1. HOMICIDIOS POR ARMA DE FUEGO EN NAUCALPAN. ARG-132-004: tercero en el municipio desde el 8-9
 oct, con ARG-128-005 y ARG-128-006, cálculo propio; el modus operandi de los dos anteriores no
 se publicó. Línea: solicitar a la FGJEM el cotejo balístico de los tres casos — hipótesis.
-2. MANDO DE UNA CÉLULA DEL CJNG EN OAXACA, CAPTURADO EN GUADALAJARA. ARG-132-006. Línea:
-solicitar a la SSPC la red de apoyo de la célula en el Istmo — requiere validación.
+2. RED DE APOYO DE LOS CROMOS EN EL ISTMO. ARG-132-006. Línea: solicitar a la SSPC la red de
+apoyo de la célula en el Istmo — requiere validación.
 3. ENFRENTAMIENTOS CON ABATIDOS Y ARMAS LARGAS. ARG-132-005 y ARG-132-REC-003: cinco abatidos,
 cálculo propio. Línea: solicitar a la Defensa el parte de Cotija con iniciador y armamento.
 4. ATAQUES ARMADOS DENTRO DE COMERCIOS. ARG-132-REC-001 y ARG-132-REC-002 (una tienda y una
 estética). Línea: solicitar a las fiscalías de Puebla y Sinaloa las denuncias previas de
 extorsión — hipótesis.
 5. BRECHA ENTRE HECHO Y CONDENA EN VIOLENCIA CONTRA MUJERES. Tres de las seis condenas
-candidatas —Oaxaca, Zacatecas, Sonora— son por hechos de 2018 a 2025. Línea: solicitar a las
-fiscalías los tiempos procesales de cada caso.
+candidatas —Oaxaca, Zacatecas, Sonora— son por hechos de 2018 a 2025, años solo por resumen;
+ninguna es sentencia integrable. Línea: solicitar a las fiscalías los tiempos procesales de cada
+caso.
 
 gabinetedeseguridad.gob.mx/resultados — SIN RESULTADO INDEXADO EN VENTANA. SESNSP, INEGI y FGR:
 sin publicación estadística nueva localizada dentro de la ventana; el balance de detenciones del

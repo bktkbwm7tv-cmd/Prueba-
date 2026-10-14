@@ -38,7 +38,7 @@ Bloque 0 a las **08:19 CST** del 14-oct. El clon arrancó en `60f2777` (13 commi
 | Prioridad — alto impacto | **BCS y Dgo revisadas por búsqueda propia** (SRIV): alto impacto 32 de 32 |
 | Ciclo | **A** — Noroeste + Centro encabezaron el triaje judicial tras la prioridad |
 | Rendimiento | **Ninguna sentencia integrable.** El ciclo A halló Sonora (Nogales, republicadores), FGR Chihuahua (dos, republicador) y Querétaro (tres, `fiscaliageneralqro.gob.mx` con fecha en la ruta, 5 a 8-oct: **fuera de ventana**). Fuera del ciclo: Oaxaca (FGEO, 80 años), Nuevo León (155 años) y Zacatecas (10 años) |
-| Regresión por rotación | Armamento: BC, Coah, NL, Tamps, SLP, Ags, CDMX, Mor, Qro, Chis, Camp, Yuc, QRoo vuelven a `NO REVISADA` (sin `site:` devuelto). Sentencias: BC, NL, SLP, Edomex, Pue, Gro, Chis, Yuc. **Prioridad sobre el ciclo en 133** |
+| Regresión por rotación | Armamento: BC, Coah, NL, Tamps, SLP, Ags, CDMX, Mor, Qro, Chis, Camp, Yuc, QRoo vuelven a `NO REVISADA` (sin `site:` devuelto). Con Edomex (heredada) y Gro y Oax (rebajadas por `editor-duplicidad`): **16**. Sentencias: BC, NL, SLP, Edomex, Pue, Gro, Chis, Yuc. **Prioridad sobre el ciclo en 133** |
 
 Serie: C (125) sí · A (126) no · B (127) no · C (128) no · A (129) no · B (130) no · C (131) no · **A (132) no.**
 
@@ -272,7 +272,9 @@ Racha: **dieciocho pases consecutivos, dieciocho «CORREGIR»**. Lanzados en par
 | 20 | Móvil: IDs de armamento inexistentes | **Resuelto**: ya no hay filas |
 
 **Segundo pase** — `validar.js` → **validación OK** (escritorio); `gen-movil.py` → **validación OK** (móvil); `.txt` regenerado. Segundo `editor-duplicidad` sin web
-sobre la versión corregida: ver al pie.
+sobre `70b294a` — **CORREGIR, ajustes menores**: ninguna referencia antigua viva, ningún duplicado nuevo (Navolato verificado), IDs y totales coherentes en las
+cinco superficies. Corregidos: acciones 1, 2 y 4 de la portada con una sola solicitud; Conclusión 5 con «años solo por resumen»; título de la Conclusión 2 como
+patrón; uso del generador; fila de regresión de §3. Tras ello, **PUBLICAR**.
 
 ## 14. Herramientas
 
