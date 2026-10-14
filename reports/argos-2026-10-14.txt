@@ -1,0 +1,473 @@
+ARGOS 132 — REPORTE NACIONAL DE SEGURIDAD
+REPORTE DIARIO DE INTELIGENCIA CRIMINAL
+«INVESTIGACIONES, BÚSQUEDA Y VERDAD»
+
+Corte informativo: 2026-10-14 · 08:19 (CDMX)
+Ventana: 13-oct 07:23 → 14-oct 08:19 CDMX (24 h 56 min)
+Versión 3.0 · Corte matutino · USO INSTITUCIONAL
+
+============================================================================
+
+[ RADAR CENTRAL — EN VIVO ]
+
+  · 🔴 Alto impacto · 0
+  · 🟡 Violencia operativa · 3
+  · 🟢 Acciones institucionales · 3
+
+[ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
+
+Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
+
+## SEMÁFORO ARGOS
+
+  · 🔴 ROJO — ALTO IMPACTO — 0 eventos
+
+  · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 3 eventos
+
+  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 3 eventos
+
+── LO QUE DEBE HACER EL MANDO
+
+1. SOLICITE A LA FISCALÍA DE VERACRUZ LA IDENTIDAD DEL FALLECIDO Y EL PARTE DEL CATEO DE ORIZABA
+(ARG-132-001).
+2. SOLICITE A LA FGEO EL MÓVIL DEL ATAQUE EN LA SECUNDARIA DE SAN BLAS ATEMPA (ARG-132-002) y
+evalúe el resguardo de planteles del Istmo.
+3. SOLICITE A LA FISCALÍA DE MORELOS EL PARTE DE LA RETENCIÓN DE TOTOLAPAN Y LA SITUACIÓN DEL
+LIBERADO (ARG-131-002), y a la SSPC Morelos el informe del accidente de la autopista La
+Pera–Cuautla.
+4. SOLICITE A LA FISCALÍA DE SINALOA EL PARTE DEL ATAQUE DE VALLADO VIEJO (ARG-131-001), que los
+medios también sitúan en Recursos Hidráulicos.
+5. SOLICITE A LA SSPC EL BOLETÍN DE ACCIONES DEL 13-OCT Y A LA FISCALÍA DE NAYARIT EL COMUNICADO
+DEL HALLAZGO DE ACAPONETA (ARG-132-REC-005).
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-14 · Hora: 08:19 (CDMX) · Corte: Matutino · ARGOS N.° 132 · USO INSTITUCIONAL
+
+============================================================================
+
+## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
+
+  Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
+  Veracruz · Orizaba (col. El Espinal Bajo) · 13-OCT, NOCHE | Cateo repelido: 3 ministeriales heridos, 1 muerto y 2 personas rescatadas | 🟡 Amarillo | SIN BOLETÍN | La Silla Rota · Meganoticias · TV Azteca | ★★★☆☆ | ARG-132-001
+  Oaxaca · San Blas Atempa (Secundaria Técnica 69) · 13-OCT, MAÑANA | Profesor asesinado dentro de una secundaria | 🟡 Amarillo | FGEO (por cita) | El Financiero · Infobae · La Jornada · El Informador | ★★★☆☆ | ARG-132-002
+  Estado de México · Naucalpan (col. La Mancha 1) · 13-OCT, MAÑANA | 1 mujer asesinada dentro de su vehículo | 🟡 Amarillo | SIN BOLETÍN | El Heraldo de México · El Universal | ★★★☆☆ | ARG-132-003
+  Jalisco · Guadalajara · ANUNCIO 14-OCT, HECHO NO FIJADO | Detenido el señalado líder de Los Cromos | 🟢 Verde | SSPC (anuncio, por titular de medios) | La Razón · La Silla Rota · El Heraldo de México | ★★★☆☆ | ARG-132-004
+  Sinaloa · Escuinapa (col. Pueblo Nuevo) · PUB. 13-OCT, HORA NO FIJADA | Persecución: 3 detenidos y 2 pistolas | 🟢 Verde | SSP Sinaloa (slug indexado, sin fecha) | ninguna | ★★★☆☆ | ARG-132-005
+  Guanajuato · León (Rancho Nuevo de la Venta) · BOLETÍN 13-OCT, HORA NO FIJADA | 1 detenido con 1 revólver y 49 cartuchos | 🟢 Verde | Gobierno de Guanajuato (boletín, slug con fecha) | ninguna | ★★☆☆☆ | ARG-132-006
+  Puebla · Tehuacán (San Marcos Necoxtla) · VENTANA ARGOS 131 | 1 hombre asesinado dentro de una tienda | 🟡 Amarillo (en su ventana) | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-132-REC-001
+  Michoacán · Cotija (El Metidero) · VENTANA ARGOS 131 | Enfrentamiento: 3 agresores abatidos por el Ejército | 🟡 Amarillo (en su ventana) | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-132-REC-002
+  Sinaloa · Mazatlán (Villa Unión, col. Toledo Corro) · VENTANA ARGOS 131 | Ataque a una estética: 1 muerto y 1 herida | 🟡 Amarillo (en su ventana) | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-132-REC-003
+  Nuevo León · Doctor Coss · VENTANA ARGOS 130 o ARGOS 131 — HORA NO FIJADA | Enfrentamiento: 2 abatidos por Fuerza Civil | 🟡 Amarillo (en su ventana) | Fuerza Civil (por cita) | MVS | ★★★☆☆ | ARG-132-REC-004
+  Nayarit · Acaponeta (carretera Tepic–Mazatlán) · VENTANA ARGOS 129 o ARGOS 130 — HORA NO FIJADA | Hallazgo de 3 cuerpos junto a la carretera | 🔴 Rojo (en su ventana) | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-132-REC-005
+
+  Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Armas cortas | Armas largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Entidades
+  6 | 0 | 3 | 3 | 5 | 3 | 0 | 0 | 0 | 67 | 2 | 0 | 0 | 0 | 4 | 6
+
+Ventana 13-oct 07:23 → 14-oct 08:19 CDMX (24 h 56 min) · 6 hechos propios en 6 entidades ·
+densidad 0,24 hechos/hora, cálculo propio. Orden: amarillos, verdes; ningún rojo propio. Cinco
+de seis llevan FRONTERA DE VENTANA.
+LAS 5 RECUPERACIONES DEL FINAL PERTENECEN A VENTANAS ANTERIORES Y QUEDAN FUERA DEL SEMÁFORO, DEL
+MAPA, DEL RADAR Y DE TODOS LOS TOTALES.
+Toque un ARG-ID para ir a su ficha, donde están las fuentes, el nivel de confianza y los
+deslindes.
+
+NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
+
+Detenidos = solo los del mismo evento de aseguramiento de armamento; el de ARG-132-004, sin
+armas, no entra. Entidades = con al menos un hecho propio. Muertos en hechos propios: 3
+—Orizaba, San Blas Atempa y Naucalpan—. Heridos: 3 policías ministeriales (Orizaba). Rescatados:
+2. Cálculo propio.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-14 · Hora: 08:19 (CDMX) · Corte: Matutino · ARGOS N.° 132 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (I) — VIOLENCIA OPERATIVA: ORIZABA, SAN BLAS ATEMPA Y NAUCALPAN
+
+### VERACRUZ · ORIZABA — RECIBEN A TIROS UN CATEO DE LA POLICÍA MINISTERIAL: TRES AGENTES HERIDOS, UN MUERTO Y DOS PERSONAS RESCATADAS [AMARILLO]
+
+── HECHO
+
+Orizaba · COL. EL ESPINAL BAJO, AV. DE LA FUENTE ENTRE GÓMEZ FARÍAS Y 5 DE MAYO — SOLO POR
+RESUMEN · noche del MARTES 13-OCT, ~19:30–20:00 (SOLO POR RESUMEN) · la Policía Ministerial, con
+apoyo estatal y federal, ejecuta un cateo y es repelida a tiros, por titular (🟡) · 3 policías
+ministeriales heridos, por titular; uno grave, SOLO POR RESUMEN · 1 persona muerta, por titular
+· IDENTIDAD DEL MUERTO NO DETERMINADA: «UN CIVIL» POR TITULAR DE UN SOLO MEDIO; SI FUERA
+PERSONAL O VÍCTIMA AJENA, SUBE A 🔴 · 2 personas presuntamente privadas de la libertad,
+rescatadas, por titular · ningún detenido publicado · armamento asegurado: no publicado
+
+── TRAZABILIDAD
+
+ARG-132-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora e identidad del
+muerto no fijadas; sin boletín institucional · Fuentes: Institucional 0 · Nacional 3 · Regional
+5 · Abierta 0 · con fecha en la ruta: La Silla Rota (2026/10/13) · Golpe Político (2026/10/13,
+dos notas) · Hecho: 2026-10-13 · Hora: noche, ~19:30–20:00 (solo por resumen) · Consulta:
+2026-10-14 08:19-10:30 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila —
+evento cualitativo, cantidad no determinada
+Deslindes y reservas: Orizaba no figura en el índice ni en las tres ediciones previas; «cinco
+presuntos secuestradores muertos en Orizaba» (El Universal) es de 2025. 🟡 por confrontación
+derivada de un operativo. El rescate es resultado del mismo cateo: no se abre ficha verde aparte
+
+### OAXACA · SAN BLAS ATEMPA — HOMBRES ARMADOS ENTRAN A UNA SECUNDARIA Y ASESINAN A UN PROFESOR FRENTE A LOS ALUMNOS [AMARILLO]
+
+── HECHO
+
+San Blas Atempa · ESCUELA SECUNDARIA TÉCNICA N.° 69 · mañana del MARTES 13-OCT, al inicio de
+clases (SOLO POR RESUMEN) · hombres armados entran al plantel y disparan contra un profesor
+frente a alumnos, por titular · 1 muerto, por titular (🟡): fallece en el ISSSTE de Tehuantepec,
+SOLO POR RESUMEN · FGEO: carpeta por homicidio calificado y despliegue de la Agencia Estatal de
+Investigaciones, SOLO POR RESUMEN · ningún detenido publicado · móvil no publicado · identidad:
+no se reproduce · FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-132-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; sin boletín institucional · Fuentes: Institucional 1 · Nacional 4 · Regional 6 ·
+Abierta 0 · con fecha en la ruta: El Financiero (2026/10/13) · Infobae (2026/10/13) · La Jornada
+(2026/10/13) · El Informador (20261013) · Proyecto Puente (2026/10/13) · Sociedad Noticias
+(2026/10/13) · Hecho: 2026-10-13 · Hora: mañana, antes de las 10:45 (solo por resumen) ·
+Consulta: 2026-10-14 08:19-10:30 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
+fila — no hubo armamento asegurado
+Deslindes y reservas: San Blas Atempa no figura en el índice ni en las tres ediciones previas;
+el boletín FGEO 2,685 (5-ago) es otro caso. SI OCURRIÓ ANTES DE LAS 07:23 DEL 13-OCT, SU VENTANA
+ES LA DE ARGOS 131. Uniformes que simulaban ser de la Fiscalía: un solo medio, no se integra.
+Vínculo con las agresiones del Istmo: no acreditado. 🟡 por homicidio doloso único
+
+### ESTADO DE MÉXICO · NAUCALPAN — DESDE UNA MOTOCICLETA ASESINAN A BALAZOS A UNA MUJER QUE CONDUCÍA SU VEHÍCULO [AMARILLO]
+
+── HECHO
+
+Naucalpan · COL. LA MANCHA 1, AV. MOLINOS DE VIENTO — SOLO POR RESUMEN · mañana del MARTES
+13-OCT (SOLO POR RESUMEN) · agresores en motocicleta disparan contra una mujer que conducía, por
+titular · 1 mujer asesinada, por titular (🟡) · al menos 2 impactos, SOLO POR RESUMEN · VEHÍCULO
+CONTRADICHO: CAMIONETA O AUTOMÓVIL · FGJEM investiga, SOLO POR RESUMEN · ningún detenido
+publicado · identidad: no se reproduce · FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-132-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 2 · Regional 3 · Abierta
+0 · con fecha en la ruta: El Heraldo de México (2026/10/13) · Cúspide México (2026/10/14) ·
+Hecho: 2026-10-13 · Hora: mañana (solo por resumen) · Consulta: 2026-10-14 08:19-10:30 ·
+Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: La Mancha no figura en el índice; NO es ARG-128-005 (Valle Dorado) ni
+ARG-128-006 (Minas Palacio). SI OCURRIÓ ANTES DE LAS 07:23 DEL 13-OCT, SU VENTANA ES LA DE ARGOS
+131. 🟡 por homicidio doloso único
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-14 · Hora: 08:19 (CDMX) · Corte: Matutino · ARGOS N.° 132 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (II) — ACCIONES INSTITUCIONALES: GUADALAJARA, ESCUINAPA Y LEÓN
+
+### JALISCO · GUADALAJARA — DETIENEN AL SEÑALADO LÍDER DE «LOS CROMOS», CÉLULA VINCULADA AL CJNG CON RECOMPENSA DE DOS MILLONES [VERDE]
+
+── HECHO
+
+Guadalajara · anunciada el MIÉRCOLES 14-OCT por el titular de la SSPC, por titular · FECHA DE LA
+CAPTURA NO PUBLICADA · Semar y CNI, SOLO POR RESUMEN · detención de Iván «N», «El Cromo»,
+señalado líder de Los Cromos, vinculados al CJNG, por titular · 1 detenido (🟢) · recompensa de 2
+millones de pesos, por titular · ÓRDENES DE APREHENSIÓN POR HOMICIDIO: 2 O 3, CONTRADICHO ·
+acusaciones, no condena · sin armamento publicado · FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-132-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: fecha de la captura
+no publicada; anuncio sin boletín leído · Fuentes: Institucional 1 · Nacional 3 · Regional 1 ·
+Abierta 0 · con fecha en la ruta: La Razón (2026/10/14) · La Silla Rota (2026/10/14) · El
+Heraldo de México (2026/10/14) · El Imparcial (2026/10/14) · Hecho: no publicada; anunciada el
+2026-10-14 · Hora: no publicada · Consulta: 2026-10-14 08:19-10:30 · Estatus: Parcialmente
+corroborado · Conteo de armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: «El Cromo» y Los Cromos no figuran en el índice ni en las tres ediciones
+previas. Operación en el Istmo de Oaxaca: solo por resumen; vínculo con ARG-132-002 no
+acreditado. Si la captura fue anterior a las 07:23 del 13-oct, es evento anterior publicado
+durante el corte y sale de los totales. Sin armamento: fuera del conteo
+
+### SINALOA · ESCUINAPA — UNA PERSECUCIÓN EN PUEBLO NUEVO TERMINA CON TRES DETENIDOS Y DOS PISTOLAS ASEGURADAS [VERDE]
+
+── HECHO
+
+Escuinapa · COL. PUEBLO NUEVO · publicado el MARTES 13-OCT · FECHA DEL HECHO NO FIJADA: 12 O
+13-OCT, SOLO POR RESUMEN · Grupo Interinstitucional —policía municipal y Ejército—, por la SSP
+Sinaloa · persecución, por titular · 3 detenidos, por titular (🟢) · 2 armas cortas 9 mm, 2
+cargadores y 18 cartuchos, SOLO POR RESUMEN · 2 motocicletas, una con reporte de robo, SOLO POR
+RESUMEN · sin disparos publicados · FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-132-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: fecha del hecho y
+desglose solo por resumen · Fuentes: Institucional 1 · Nacional 0 · Regional 1 · Abierta 0 · con
+fecha en la ruta: Tus Buenas Noticias (2026/10/13) · Hecho: no fijada (12 o 13-oct); publicado
+el 2026-10-13 · Hora: no publicada · Consulta: 2026-10-14 08:19-10:30 · Estatus: Parcialmente
+corroborado · Conteo de armamento: ARG-132-ARM-001
+Deslindes y reservas: Pueblo Nuevo no figura en el índice; NO es ARG-124-006 (22-sep) ni
+ARG-131-004 (estética del centro). Si ocurrió antes de las 07:23 del 13-oct, su ventana es la de
+ARGOS 131
+
+### GUANAJUATO · LEÓN — LAS FUERZAS DE SEGURIDAD DEL ESTADO DETIENEN A UN HOMBRE CON UN REVÓLVER Y 49 CARTUCHOS [VERDE]
+
+── HECHO
+
+León · RANCHO NUEVO DE LA VENTA — SOLO POR RESUMEN · boletín del MARTES 13-OCT; fecha y hora del
+hecho no publicadas · FSPE · 1 detenido, 1 revólver y 49 cartuchos útiles, por el slug del
+boletín oficial (🟢) · puesto a disposición de la autoridad federal, SOLO POR RESUMEN · FRONTERA
+DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-132-006 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: una sola fuente;
+boletín no leído íntegro por el bloqueo de egreso · Fuentes: Institucional 1 · Nacional 0 ·
+Regional 0 · Abierta 0 · con fecha en la ruta: boletines.guanajuato.gob.mx (2026/10/13) · Hecho:
+no publicada; boletín del 2026-10-13 · Hora: no publicada · Consulta: 2026-10-14 08:19-10:30 ·
+Estatus: Confirmado por fuente oficial indexada · Conteo de armamento: ARG-132-ARM-002
+Deslindes y reservas: Rancho Nuevo de la Venta no figura en el índice. El acumulado del mismo
+boletín (desde 2024) no es de la ventana y no se integra
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-14 · Hora: 08:19 (CDMX) · Corte: Matutino · ARGOS N.° 132 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (III) — RECUPERACIONES: VENTANAS DE ARGOS 129 A 131
+
+### PUEBLA · TEHUACÁN — ASESINAN A BALAZOS A UN HOMBRE DENTRO DE UNA TIENDA EN SAN MARCOS NECOXTLA [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 131 · SAN MARCOS NECOXTLA, TIENDA · noche del LUNES 12-OCT (SOLO POR
+RESUMEN) · agresores huyen en un sedán y una motocicleta, SOLO POR RESUMEN · 1 hombre asesinado,
+por titular (🟡 en su ventana) · FGE Puebla: carpeta por homicidio calificado, SOLO POR RESUMEN ·
+ningún detenido publicado · identidad: no se reproduce
+
+── TRAZABILIDAD
+
+ARG-132-REC-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; sin fuente institucional ni nacional · Fuentes: Institucional 0 · Nacional 0 · Regional
+9 · Abierta 0 · con fecha en la ruta: Síntesis (2026/10/13) · Reto Diario (2026/10/13) ·
+Intolerancia (2026/10/13) · Hecho: 2026-10-12 · Hora: noche (solo por resumen) · Consulta:
+2026-10-14 08:19-10:30 · Estatus: Parcialmente corroborado · Ventana de origen: ARGOS 131 —
+fuera de todos los totales
+Deslindes y reservas: Necoxtla no figura en el índice. ARGOS 131 lo vio y no lo fichó por falta
+de URL con fecha; Síntesis, Reto Diario e Intolerancia lo anclan. Nombre y edad discrepan entre
+medios
+
+### MICHOACÁN · COTIJA — EL EJÉRCITO ABATE A TRES HOMBRES ARMADOS EN UN ENFRENTAMIENTO EN EL METIDERO [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 131 · EL METIDERO, HUERTA LA HACIENDA — SOLO POR RESUMEN · LUNES
+12-OCT, ~12:00 (SOLO POR RESUMEN) · enfrentamiento entre el Ejército y hombres armados, por
+titular · 3 agresores abatidos, por titular (🟡 en su ventana) · QUIÉN INICIÓ: NO DETERMINADO —
+VERSIONES CONTRADICHAS · 3 fusiles AK-47 asegurados, SOLO POR RESUMEN · ningún detenido
+publicado · sin comunicado de la Defensa
+
+── TRAZABILIDAD
+
+ARG-132-REC-002 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: fecha, hora e
+iniciador solo por resumen; dos medios con el mismo titular · Fuentes: Institucional 0 ·
+Nacional 0 · Regional 7 · Abierta 1 · con fecha en la ruta: Grupo Marmor (2026/10/13) · Red
+Michoacán (2026/10/13) · Hecho: 2026-10-12 · Hora: ~12:00 (solo por resumen) · Consulta:
+2026-10-14 08:19-10:30 · Estatus: Parcialmente corroborado · Ventana de origen: ARGOS 131 —
+fuera de todos los totales
+Deslindes y reservas: Cotija figura solo en el agregado federal del 9 al 11-oct (otra acción).
+El boletín federal del 12-oct da 122 AEI, 4 largas, 4 cargadores y 45 cartuchos en Plan del
+Cerro, Cotija, solo por resumen: relación con este enfrentamiento NO DETERMINADA. Blog del
+Narco: NO OFICIAL. Publicado el 13-oct: si ocurrió después de las 07:23 del 13, pertenece a
+ARGOS 132
+
+### SINALOA · MAZATLÁN — ATACAN A BALAZOS UNA ESTÉTICA EN VILLA UNIÓN: UN HOMBRE MUERTO Y UNA MUJER HERIDA [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 131 · VILLA UNIÓN, COL. TOLEDO CORRO, ESTÉTICA · LUNES 12-OCT, aviso
+~12:15 (SOLO POR RESUMEN) · ataque armado · 1 hombre muerto y 1 mujer herida, por titular (🟡 en
+su ventana) · ningún detenido publicado · identidades: no se reproducen
+
+── TRAZABILIDAD
+
+ARG-132-REC-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 3 · Abierta
+0 · con fecha en la ruta: Luz Noticias (2026-10-12) · Línea Directa (2026-10-12) · Hecho:
+2026-10-12 · Hora: ~12:15 (solo por resumen) · Consulta: 2026-10-14 08:19-10:30 · Estatus:
+Parcialmente corroborado · Ventana de origen: ARGOS 131 — fuera de todos los totales
+Deslindes y reservas: Toledo Corro no figura en el índice. NO es la llantera de Villa Unión
+(1-oct), ni la mujer asesinada en Villa Unión el 11-oct que ARGOS 131 dejó sin URL con fecha, ni
+ARG-131-004 (estética de Escuinapa)
+
+### NUEVO LEÓN · DOCTOR COSS — FUERZA CIVIL ABATE A DOS HOMBRES ARMADOS AL ACTIVAR EL OPERATIVO MURALLA [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 130 O ARGOS 131 — HORA NO FIJADA · publicado el LUNES 12-OCT · Fuerza
+Civil, Operativo Muralla, por titular · enfrentamiento con civiles armados · 2 abatidos, por
+titular (🟡 en su ventana) · QUIÉN INICIÓ: NO DETERMINADO · 2 armas largas aseguradas, ningún
+agente herido y otros agresores en fuga, SOLO POR RESUMEN · ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-132-REC-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora y quién
+inició no fijados; desglose solo por resumen · Fuentes: Institucional 0 · Nacional 1 · Regional
+1 · Abierta 0 · con fecha en la ruta: MVS Noticias (2026/10/12) · Hecho: 2026-10-12 · Hora: no
+publicada · Consulta: 2026-10-14 08:19-10:30 · Estatus: Parcialmente corroborado · Ventana de
+origen: ARGOS 130 o ARGOS 131 — HORA NO FIJADA — fuera de todos los totales
+Deslindes y reservas: NO ES EL HECHO DEL 22-AGO-2025 (12 abatidos, mismo municipio): trampa de
+año. Doctor Coss no figura en el índice de 2026
+
+### NAYARIT · ACAPONETA — HALLAN TRES CUERPOS ENVUELTOS EN COBIJAS JUNTO A LA CARRETERA TEPIC–MAZATLÁN [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 129 O ARGOS 130 — HORA NO FIJADA · KM 112+600, ACCESO A LAS GUÁSIMAS —
+KILÓMETRO CONTRADICHO (111), SOLO POR RESUMEN · DOMINGO 11-OCT · hallazgo de 3 cuerpos envueltos
+en cobijas, por titular (🔴 en su ventana) · cartulinas con mensajes, contenido no publicado,
+SOLO POR RESUMEN · causa de muerte e identidades: no publicadas · FGE Nayarit sin comunicado,
+SOLO POR RESUMEN
+
+── TRAZABILIDAD
+
+ARG-132-REC-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora no fijada;
+sin fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 4 · Abierta 0 · con
+fecha en la ruta: NTV (2026/10/11) · Nayarit Noticias (2026/10/11) · Hecho: 2026-10-11 · Hora:
+no publicada · Consulta: 2026-10-14 08:19-10:30 · Estatus: Parcialmente corroborado · Ventana de
+origen: ARGOS 129 o ARGOS 130 — HORA NO FIJADA — fuera de todos los totales
+Deslindes y reservas: NO es el hallazgo de La Higuerita, km 126 (9-sep). ARGOS 131 lo dejó como
+candidato sin URL con fecha; NTV y Nayarit Noticias lo anclan al 11-oct. Si fue antes de las
+08:58 del 11-oct, su ventana es la de ARGOS 129. 🔴 por homicidio múltiple
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-14 · Hora: 08:19 (CDMX) · Corte: Matutino · ARGOS N.° 132 · USO INSTITUCIONAL
+
+============================================================================
+
+## CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS
+
+  · Armas cortas: 3 — Escuinapa 2 · León 1 · ESCUINAPA, SOLO POR RESUMEN
+
+  · Armas largas: 0 — NINGUNA ARMA LARGA CON CIFRA EN HECHO PROPIO
+
+  · Sin categoría: 0 — NINGUNA ARMA SIN CLASIFICAR INTEGRADA
+
+  · Cartuchos: 67 — León 49 · Escuinapa 18
+
+  · Cargadores: 2 — Escuinapa · SOLO POR RESUMEN
+
+  · Granadas: 0 — NINGUNA GRANADA PUBLICADA
+
+  · AEI: 0 — NINGÚN AEI EN HECHO PROPIO · los 122 de Cotija son de una acción anterior
+
+  · Explosivos: 0 — NINGÚN EXPLOSIVO, DETONADOR NI INICIADOR EN HECHO PROPIO
+
+  · Armamento especial: 0 — NINGÚN ARMAMENTO ESPECIAL PUBLICADO
+
+  · Detenidos: 4 — SOLO EN EVENTOS CON ASEGURAMIENTO DE ARMAMENTO
+
+2 filas de armamento de 2 hechos verdes en 2 entidades; ambas con FRONTERA DE VENTANA. Totales
+por categoría: cálculo propio. NINGÚN HECHO AMARILLO PUBLICÓ ARMAMENTO ASEGURADO CON CIFRA.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-14 · Hora: 08:19 (CDMX) · Corte: Matutino · ARGOS N.° 132 · USO INSTITUCIONAL
+
+============================================================================
+
+## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
+
+  ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
+  ARG-132-ARM-001 | Sinaloa | Escuinapa (Pueblo Nuevo) | 12 o 13-oct, no fijada · publicado el 13-oct | 2 | 0 | 0 | 0 | 18 | 2 | 0 | 0 | 0 | 3 | Grupo Interinstitucional (municipal y Ejército) | Bajo · Desglose SOLO POR RESUMEN del boletín de la SSP Sinaloa; FRONTERA DE VENTANA
+  ARG-132-ARM-002 | Guanajuato | León (Rancho Nuevo de la Venta) | no publicada · boletín del 13-oct | 1 | 0 | 0 | 0 | 49 | 0 | 0 | 0 | 0 | 1 | FSPE | Medio · Cifras por el slug del boletín oficial; FRONTERA DE VENTANA
+
+Lectura regional —2 filas, cálculo propio—: Noroeste 1 · Noreste 0 · Occidente 1 · Centro 0 ·
+Golfo 0 · Sureste 0. Evento cualitativo: ARG-132-001 (cateo de Orizaba, armamento no publicado).
+VISTOS, NO INTEGRADOS: Monterrey, col. Nueva Topo Chico (1 larga, 1 corta, 1 cargador, 1
+detenido: una sola fuente, MVS 2026/10/13) · San Luis Potosí, Zona Industrial (1 arma sin tipo,
+3 detenidos) · Oxkutzcab, Yucatán (armas sin cifra, 2 detenidos) · Cancún, dos cateos publicados
+el 12-oct (CIFRAS CONTRADICHAS ENTRE MEDIOS: 16, 24 O 25 ARMAS).
+EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE — FUERA DEL TOTAL: boletín del Gabinete de Seguridad
+de las acciones del 12-oct, localizado por republicadores (Milenio, RED113, Argon México
+2026/10/13): Cotija, Plan del Cerro, 122 AEI, 4 largas, 4 cargadores y 45 cartuchos;
+Zinacantepec, 2 largas, 1 corta y 3 detenidos; Matamoros, 4 largas; Concordia, 1 larga, 1
+cargador y 23 cartuchos — todo solo por resumen.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-14 · Hora: 08:19 (CDMX) · Corte: Matutino · ARGOS N.° 132 · USO INSTITUCIONAL
+
+============================================================================
+
+## RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES
+
+  · Sentencias condenatorias: 0 — NINGUNA SENTENCIA INTEGRABLE EN LA VENTANA
+
+  · Personas sentenciadas: 0 — las candidatas, abajo, no se integran
+
+  · Pena acumulada: 0 — los años nunca se suman entre casos
+
+  · Reparación del daño: 0 — ningún monto integrable
+
+  · Fiscalías con resultado: 0 — 17 estatales revisadas · 15 NO REVISADA
+
+  Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
+  Oaxaca · San Antonio de la Cal | A.J.B. · feminicidio agravado (8-ene-2021) | 80 años, por titular | FGEO (boletín 2,889, título solo por resumen) | FECHA DE PUBLICACIÓN NO ANCLADA: URL 2026/10 SIN DÍA · el 13-oct, solo por resumen | Bajo
+  Nuevo León · Monterrey | Cuatro sentenciados · secuestro agravado y homicidio calificado (2019-2023) | 155 años a uno y 80 a cada uno de tres, por titular y resumen | FGJ Nuevo León (por cita) | PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL · MVS 2026/10/13 · PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA | Bajo
+  Zacatecas · Guadalupe | Juan «N» · violación equiparada agravada; abreviado | 10 años, por titular | FGJEZ (titular de republicador) | PENDIENTE DE CONFIRMACIÓN OFICIAL · LJZ 13/10/2026 · boletín no indexado en el dominio | Bajo
+  Sonora · Nogales | Mateo «N» · tentativa de feminicidio; abreviado | 15 años, por titular | FGJE Sonora (titular de republicadores) | PENDIENTE DE CONFIRMACIÓN OFICIAL · El Vigía 2026/10/13 · dominio de la fiscalía no devuelto | Bajo
+  Chihuahua · Ciudad Juárez | Lorenzo «N» · Jaqueline y Francisco «N» · armas y droga | 7 años 1 mes · 7 años 6 meses, por titular y resumen | FGR (titular de republicador) | PENDIENTE DE CONFIRMACIÓN OFICIAL · 860 Líder Informativo 2026/10/13 · Lorenzo «N», publicado ya el 12-oct | Bajo
+  Hidalgo · Santiago Tulantepec | Tres culpables · feminicidio y homicidio | SIN PENA INDEXADA: INDIVIDUALIZACIÓN EL 14-OCT | PGJ Hidalgo (por cita) | Fallo del 8-9 oct; no es sentencia hasta la individualización | Bajo
+
+  Renglón | Resultado
+  Fiscalías revisadas en sentencias | 17 de 32 · FGR revisada: Sí, por búsqueda · Chih, Dgo · Coah, Tamps, Zac · Jal, Col, Ags, Mich · CDMX, Mor, Qro · Ver, Tab · Gro, Oax, QRoo
+  Fiscalías con sentencia integrable | 0
+  SIN RESULTADO INDEXADO EN VENTANA | 17 fiscalías estatales
+  SIN ACTUALIZACIÓN CONSTATADA | 0 · exige lectura directa del portal
+  NO REVISADA — sentencias | 15: BC, BCS, Son, Sin · NL, SLP · Nay, Gto · Edomex, Pue, Tlax, Hgo · Chis, Camp, Yuc
+  Alto impacto y armamento | Alto impacto: 32 de 32 por búsqueda dirigida en medios · armamento: 19 de 32; NO REVISADA: BC, Coah, NL, Tamps, SLP, Ags, CDMX, Edomex, Mor, Qro, Camp, Yuc, QRoo · ARMAMENTO Y SENTENCIAS: REVISADA = BÚSQUEDA DIRIGIDA QUE DEVOLVIÓ EL DOMINIO OFICIAL · GN, Defensa, Marina y FGR: SIN RESULTADO INDEXADO EN VENTANA
+  Boletín federal | Acciones del 12-oct: existe, solo por republicadores · acciones del 13-oct: SIN RESULTADO INDEXADO EN VENTANA en las tres formas de consulta
+  Techo de confianza del producto | ★★★☆☆ · BLOQUEO DE EGRESO REVERIFICADO EL 14-OCT: GOB.MX
+
+Vistas, publicadas antes de la apertura: Sinaloa, Navolato, 40 años (12-oct) · Sinaloa,
+Navolato, 80 años (10-oct) · Colima, 27 años (9-oct) · Guanajuato, León, 26 años 8 meses (9-oct)
+· Querétaro, tres sentencias (5 a 8-oct). NO SE INTEGRAN: FUERA DE VENTANA O SIN BOLETÍN
+OFICIAL.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-14 · Hora: 08:19 (CDMX) · Corte: Matutino · ARGOS N.° 132 · USO INSTITUCIONAL
+
+============================================================================
+
+## VALORACIÓN ARGOS, CONCLUSIONES E INDICADORES
+
+── VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL
+
+1. NINGÚN EVENTO ROJO PROPIO EN LA VENTANA.
+2. Contexto operativo: tres amarillos, ARG-132-001 a ARG-132-003 (Veracruz, Oaxaca y Estado de
+México).
+3. Respuesta institucional propia: ARG-132-004 a ARG-132-006.
+4. Recuperaciones: ARG-132-REC-001 a ARG-132-REC-005, de las ventanas de ARGOS 129 a 131, fuera
+de los totales; ARG-132-REC-005, rojo en su ventana.
+5. 24 H 56 MIN; CINCO DE SEIS HECHOS CON FRONTERA DE VENTANA: TOTALES NO COMPARABLES SIN MÁS.
+
+── CONCLUSIONES DE INTELIGENCIA CRIMINAL
+
+1. ATAQUE DESDE MOTOCICLETA CONTRA CONDUCTORES EN NAUCALPAN. ARG-132-003, tercer homicidio en el
+municipio en cinco días con ARG-128-005 y ARG-128-006, cálculo propio. Línea: solicitar a la
+FGJEM el cotejo balístico de los tres casos — patrón por validar.
+2. MANDO DE CÉLULAS AFINES AL CJNG FUERA DE SU ZONA DE OPERACIÓN. ARG-132-004: captura en
+Guadalajara de una célula que operaría en el Istmo, solo por resumen. Línea: solicitar a la SSPC
+la red de apoyo de la célula — requiere validación.
+3. ARMA CORTA Y MOTOCICLETA EN EL SUR DE SINALOA. ARG-132-005 y ARG-132-REC-003 (Escuinapa y
+Villa Unión). Línea: solicitar el cruce de motocicletas con reporte de robo y casquillos 9 mm —
+hipótesis.
+4. ENFRENTAMIENTOS CON ABATIDOS SIN PARTE OFICIAL. ARG-132-REC-002 y ARG-132-REC-004: cinco
+abatidos y armas largas sin comunicado. Línea: solicitar a la Defensa y a Fuerza Civil el parte
+de cada hecho.
+5. BRECHA ENTRE CONDENA ANUNCIADA Y BOLETÍN OFICIAL. Seis sentencias de Oaxaca, Nuevo León,
+Zacatecas, Sonora y la FGR solo existen en medios en esta ventana. Línea: solicitar el boletín
+oficial de cada una.
+
+gabinetedeseguridad.gob.mx/resultados — SIN RESULTADO INDEXADO EN VENTANA. SESNSP, INEGI y FGR:
+sin publicación estadística nueva localizada dentro de la ventana; el balance de detenciones del
+14-oct es un acumulado de dos años, no del corte.
+Toda cifra de este cartelón sin emisor nombrado es cálculo propio de ARGOS.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-14 · Hora: 08:19 (CDMX) · Corte: Matutino · ARGOS N.° 132 · USO INSTITUCIONAL
