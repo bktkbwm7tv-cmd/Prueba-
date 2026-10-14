@@ -8,13 +8,13 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 131 (corte 2026-10-13).
+**Última actualización**: ARGOS 132 (corte 2026-10-14).
 
 ---
 
 ## Arranque de la edición siguiente
 
-**`reports/_arranque-ARGOS-132.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-132.txt`) contiene la orden de arranque para una sesión nueva: verificación
+**`reports/_arranque-ARGOS-133.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-133.txt`) contiene la orden de arranque para una sesión nueva: verificación
 de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y comandos de construcción.
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
@@ -1962,3 +1962,50 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 5. **Presupuesto**: 2 de control + 158 de ola + 7 del coordinador + 25 de `procedencia-cifras` = **192**.
 6. **`validar.js` sigue sin aplicar al móvil**; el móvil se valida con `gen-movil.py`.
 7. **Umbral de «víctimas múltiples» con un solo muerto** (`ARG-120-009`) y **exautoridades como víctima** (`ARG-131-REC-001`): sin fijar en `CLAUDE.md`.
+
+## Cerrados por ARGOS 132
+
+| Pendiente | Disposición |
+|---|---|
+| **Totolapan: policías muertos en el accidente** | **4 por titular** (El Heraldo de México 2026/10/12), cifra actualizada; 2 era la inicial. Accidente, no agresión |
+| **Puebla, FGE: colonia** | **Guadalupe Hidalgo** (Síntesis 2026/10/13); objetivo NO DETERMINADO; herido estable; cero detenidos |
+| **Jacona: ¿quién dio el 6?** | **La FGE** (atiempo.mx, por resumen); no consta que la SSP lo diera. El 8 sigue solo en medios |
+| **Vallado Viejo frente a Recursos Hidráulicos** | **Mismo hecho** (`ARG-131-001`) |
+| **SEMAR 10-oct, 12 o 13 largas** | **12** del comunicado; 13 sumando Las Porras, ya `ARG-129-ARM-001`. Los 7 AEI siguen `POSIBLE DUPLICIDAD` con `ARG-125-005` |
+| **Tehuacán, Acaponeta, Villa Unión** | Fichados como `ARG-132-REC-001`, `-REC-004` y `-REC-002` |
+| **Ciudad Hidalgo, decapitado** | Es Ciudad Hidalgo, **Michoacán** (11-oct); sigue sin URL con fecha |
+| **Boletín federal del 12-oct** | **Existe** (republicadores, publicado el 13-oct); evento anterior, fuera del total |
+| **Alto impacto BCS y Dgo** | Revisados por búsqueda propia: 32 de 32 |
+| **Sentencias Coah, Zac, Col, CDMX, Mor, Qro** | Revisadas; `sitio.fgecoahuila.gob.mx` y `fiscaliazacatecas.gob.mx`, dominios confirmados |
+| **Controles** | Dieciocho pases consecutivos, dieciocho «CORREGIR» |
+
+## Abiertos que ARGOS 133 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️⚠️ **SINALOA · Navolato, fosa de Campo Romero** (`ARG-132-001`) | Cifra oficial de la FGE (3 o ~5); identificaciones; continuidad de la excavación; fecha de inicio del hallazgo |
+| ⚠️⚠️ **VERACRUZ · Orizaba** (`ARG-132-002`) | **Identidad del muerto** (si es agente o víctima ajena, sube a 🔴); comunicado de la FGE; detenidos; armamento del cateo |
+| ⚠️ **OAXACA · San Blas Atempa** (`ARG-132-003`) | Hora; móvil; detenidos; comunicado FGEO; **decisión del destinatario sobre el color** (docente) |
+| ⚠️ **MICHOACÁN · Cotija** (`ARG-132-005`) | **Fecha del hecho (12 o 13)**: si fue el 12, fe de erratas y pasa a 131; parte de la Defensa (iniciador); relación con Plan del Cerro (122 AEI, 4 largas) |
+| **ESTADO DE MÉXICO · Naucalpan** (`ARG-132-004`) | Hora; detenidos; FGJEM |
+| **JALISCO · «El Cromo»** (`ARG-132-006`) | **Fecha de la captura**; órdenes 2 o 3; red en el Istmo |
+| **NUEVO LEÓN · Doctor Coss** (`-REC-003`) | Hora citable (asigna 130 o 131); comunicado de Fuerza Civil |
+| **SINALOA · Escuinapa, Pueblo Nuevo** (`-REC-005`) | Hora (130 o 131); desglose oficial |
+| **NAYARIT · Acaponeta** (`-REC-004`) | Hora (129 o 130); FGE; ¿la nota de Meganoticias 778257 («fosa clandestina en zona norte») es el mismo hecho? |
+| **Seguimientos de 131 sin cerrar** | Totolapan (recaptura; responsables de la retención) · «El Cabra» (fecha de captura) · horas del 11-oct (Nacajuca, Morelia ×2, Parral) · Parral (saldo oficial) · Minatitlán (FGE 1 muerto frente a 2) · Otatitlán · Ciudad Juárez (`ARG-130-008`) · Zamora (4 o 5) |
+| **Candidatos sin URL con fecha o sin municipio** | Escuinapa, Malecón Siglo XXI (noche del 13) · Veracruz, Abdón «N» · **Sonora, operación citada el 14-oct** (7 detenidos, 3 víctimas, «más de 40 largas») · Istmo: Mixtequilla y Petapa (5-12 oct; posible ataque a autoridad) · Tonalá · Mazatlán, llanteras · Zihuatanejo · CDMX Azcapotzalco |
+| **Sentencias candidatas** | **Oaxaca, FGEO 80 años** (anclar el día de publicación) · **NL, 155 años** · **Zacatecas, Juan «N», 10 años** · **Sonora, Nogales, 15 años** · **FGR Chihuahua** (dos) · **Hidalgo, Santiago Tulantepec: resultado de la audiencia del 14-oct** · **Ensenada: pena el 16-oct** · FGR Sonora 706/26 · Zacatecas, Nayeli y Elizandro (sin día) |
+| **Boletín federal de las acciones del 13 y 14-oct** | Triple consulta |
+| **Seguimientos sin avance** | Pinotepa · El Castillo · Industrial Bravo / La Popular (relación con Los Pinos) · Chipilo · Pachuca · Sombrerete (185/39, sexta edición) · El Balcón · Juchitán, La Ventosa · La Curva · Cancún (SM 225) · Acapulco «El Junior» |
+
+## Deuda de método (ARGOS 132)
+
+1. **Seis de seis hechos con `FRONTERA`.** Cuatro omisiones de 131 recuperadas y una de 129-130.
+2. **La ola omitió el único rojo propio** (fosa de Navolato), hallado por `procedencia-cifras`. En 133, cada equipo hace una búsqueda de «fosa / colectivo / restos».
+3. **Dos fichas de otra ventana llegaron al borrador** (Escuinapa, León): buscar la primera publicación antes de fichar.
+4. **Sentencias: Sonora y Sinaloa, quinta edición `NO REVISADA`.** **16 `NO REVISADA`**: BC, BCS, Son, Sin, NL, SLP, Nay, Gto, Edomex, Pue, Tlax, Hgo, Gro, Chis, Camp, Yuc.
+5. **Armamento `NO REVISADA` (16)**: BC, Coah, NL, Tamps, SLP, Ags, CDMX, Edomex, Mor, Qro, Gro, Oax, Chis, Camp, Yuc, QRoo. Los equipos deben **anotar el dominio devuelto** por entidad.
+6. **Ciclo siguiente: B** (Noreste + Golfo), tras la prioridad de las `NO REVISADA`.
+7. **Presupuesto**: 2 de control + 158 de ola + 10 del coordinador + 25 de `procedencia-cifras` = **195**.
+8. **`validar.js` sigue sin aplicar al móvil**; el móvil se valida con `gen-movil.py`.
+9. **Escala de agravantes sin fijar**: «víctimas múltiples» con un solo muerto (`ARG-120-009`), exautoridad (`ARG-131-REC-001`) y **docente** (`ARG-132-003`).
