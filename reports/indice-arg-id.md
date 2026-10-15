@@ -807,7 +807,7 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-133-008` | 133 | 2026-10-14 | ARG-133-008 — Iztapalapa, CDMX: la SSC detiene a 1 presunto responsable de ARG-133-004; arma sin tipo solo por resumen; cualitativo (🟢) |
 | `ARG-133-009` | 133 | 2026-10-14 | ARG-133-009 — Ciudad del Carmen, Campeche: detenida «La Patrona», señalada operadora de una célula de extorsión y secuestro ligada a Jalpa de Méndez; NO es ARG-96-003; FRONTERA (🟢) |
 | `ARG-133-010` | 133 | 2026-10-14 | ARG-133-010 — Irapuato (bar Continental, col. San Vicente), Guanajuato: 2 muertos y 4 lesionados, noche del 14; hallado por procedencia-cifras; ★★☆☆☆ (🔴) |
-| `ARG-133-011` | 133 | 2026-10-14 | ARG-133-011 — Escuinapa (Centro y col. Pueblo Nuevo), Sinaloa: doble ataque nocturno, 1 muerto y 1 herido grave; ★★☆☆☆ (🟡) |
+| `ARG-133-011` | 133 | 2026-10-14 | ARG-133-011 — Escuinapa (Centro y col. Pueblo Nuevo), Sinaloa: doble ataque nocturno, 1 muerto y 1 herido grave; ★★☆☆☆; FRONTERA (🟡) |
 | `ARG-133-REC-001` | 133 | 2026-10-14 | ARG-133-REC-001 — Pénjamo (col. San Miguel), Guanajuato: 3 muertos, vivienda incendiada, intento de quemar un tráiler; ~05:35 solo por resumen; ventana de 132; fuera de totales; 🔴 en su ventana |
 | `ARG-133-REC-002` | 133 | 2026-10-14 | ARG-133-REC-002 — Silao (Veta de Ramales, rancho El Vergel), Guanajuato: 2 hombres asesinados; hora contradicha (~07:20 / reporte ~08:00); ventana de 132 con reserva; 🔴 en su ventana |
 | `ARG-133-REC-003` | 133 | 2026-10-14 | ARG-133-REC-003 — Silao (col. Sopeña), Guanajuato: 1 asesinado y 1 privado de la libertad; hora contradicha; ventana de 132 con reserva; NO es ARG-118-ARM-003; 🟡 en su ventana |

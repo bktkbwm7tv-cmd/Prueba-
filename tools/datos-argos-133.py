@@ -64,8 +64,8 @@ E = [
   hecho="Escuinapa · <code>CALLE SEVERIANO MORENO ENTRE FRANCISCO PÉREZ Y CENTENARIO, CERCA DEL DIF MUNICIPAL</code> · MIÉRCOLES 14-OCT, ~11:00 (" + RES + ") · hombres armados interceptan y disparan contra un <b>exdirigente de la Asociación Ganadera Local</b>, por titular · <b>1 muerto</b>, por titular (🟡) · una menor que lo acompañaba resulta ilesa, " + RES + " · <b>ningún detenido publicado</b> · móvil no publicado · identidad: no se reproduce · " + FR,
   panel="<b>Exdirigente ganadero asesinado</b> frente a un negocio familiar",
   inst="<span class=\"muted-note\">SIN BOLETÍN</span>", nac="MVS · Infobae · Excélsior · TV Azteca", conf="★★★☆☆",
-  campo="hora solo por resumen; sin fuente institucional", I=0, N=4, R=6, A=0,
-  fechadas=["MVS Noticias (2026/10/14)", "El Diario de Juárez (2026/oct/14)", "Tribuna (2026/10/14)", "Infobae (2026/10/14)"], estatus="Parcialmente corroborado", arm=None,
+  campo="hora solo por resumen; sin fuente institucional", I=0, N=4, R=7, A=0,
+  fechadas=["MVS Noticias (2026/10/14)", "Luz Noticias (2026-10-14)", "El Diario de Juárez (2026/oct/14)", "Tribuna (2026/10/14)", "Infobae (2026/10/14)"], estatus="Parcialmente corroborado", arm=None,
   desl="NO es el coordinador municipal de Protección Civil (ARG-130-009), ni ARG-131-004 (estética), ni ARG-129-004 (vendedora), ni ARG-130-006 (El Roblito), ni el homicidio del Malecón Siglo XXI (ARG-133-REC-004). Cargo gremial, no servidor público. 🟡 por homicidio doloso único"),
  dict(id="ARG-133-006", estado="MX-BCN", region="Noroeste", color="amarillo", impacto="pequeno", fecha="2026-10-14", hora="no publicada",
   ent="Baja California", mun="Tijuana (Zona Industrial Pacífico)", dia="PUB. 14-OCT, HORA NO FIJADA",
@@ -88,7 +88,7 @@ E = [
  dict(id="ARG-133-011", estado="MX-SIN", region="Noroeste", color="amarillo", impacto="pequeno", fecha="2026-10-14", hora="noche (solo por resumen)",
   ent="Sinaloa", mun="Escuinapa (Centro y col. Pueblo Nuevo)", dia="14-OCT, NOCHE",
   title="SINALOA · ESCUINAPA — DOBLE ATAQUE ARMADO EN LA NOCHE: UN HOMBRE MUERTO Y OTRO HERIDO",
-  hecho="Escuinapa · <code>CENTRO Y COL. PUEBLO NUEVO</code> · noche del MIÉRCOLES 14-OCT (" + RES + ") · doble ataque armado, por titular · <b>1 hombre muerto</b> —falleció en el hospital— y <b>1 hombre herido grave</b>, por titular (🟡) · <b>ningún detenido publicado</b> · identidades: no se reproducen",
+  hecho="Escuinapa · <code>CENTRO Y COL. PUEBLO NUEVO</code> · noche del MIÉRCOLES 14-OCT (" + RES + ") · doble ataque armado, por titular · <b>1 hombre muerto</b> —falleció en el hospital— y <b>1 hombre herido grave</b>, por titular (🟡) · <b>ningún detenido publicado</b> · identidades: no se reproducen · " + FR,
   panel="Doble ataque: <b>1 muerto</b> y <b>1 herido</b>",
   inst="<span class=\"muted-note\">SIN BOLETÍN</span>", nac="<span class=\"muted-note\">ninguna</span>", conf="★★☆☆☆",
   campo="hora solo por resumen; una sola fuente con fecha", I=0, N=0, R=1, A=0,
@@ -169,7 +169,7 @@ R = [
   title="NAYARIT · TECUALA — HALLAN UNA FOSA CLANDESTINA CON RESTOS HUMANOS: AL MENOS CUATRO CUERPOS",
   hecho="<code>VENTANA DE ORIGEN: ARGOS 128 —127 SI FUE ANTES DE LAS 07:20— HORA NO FIJADA</code> · <code>LA PRESA</code> · VIERNES 9-OCT · <b>fosa clandestina con restos humanos</b>, por titular (🔴 en su ventana) · número de cuerpos no publicado por NTV; <b>al menos 4</b>, " + RES + " · hallazgos que siguen el 11-oct, por titular · <b>FGE Nayarit sin comunicado</b>, " + RES,
   panel="<b>Fosa clandestina</b>: al menos 4 cuerpos", inst="<span class=\"muted-note\">SIN BOLETÍN</span>", nac="<span class=\"muted-note\">ninguna</span>",
-  conf="★★☆☆☆", campo="cifra solo por resumen; sin fuente institucional", I=0, N=0, R=3, A=0,
+  conf="★★☆☆☆", campo="cifra solo por resumen; sin fuente institucional", I=0, N=0, R=2, A=0,
   fechadas=["NTV (2026/10/09)", "Nayarit Noticias (2026/10/10)", "NTV (2026/10/11)"],
   desl="Tecuala no figura en el índice. Es la «fosa clandestina en zona norte» de Meganoticias 778257, que la agrupó con ARG-132-REC-004 (Acaponeta, sin fosa). NO es La Curva, Xalisco (ARG-125-003). 🔴 en su ventana por hallazgo de fosa"),
 ]
@@ -315,7 +315,7 @@ rows_own = "\n".join(prow(e) for e in E)
 rows_rec = "\n".join(prow(r, True) for r in R)
 panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
     Ventana <b>14-oct 08:19 → 15-oct 07:16 CDMX</b> (<b>{DUR}</b>) · <b>{len(E)} hechos propios</b> en <b>{len(ENT)} entidades</b> ·
-    <b>densidad 0,48 hechos/hora</b>, <b>cálculo propio</b>. <b>Orden: rojos, amarillos, verdes</b>. <b>Seis de once</b> llevan <code>FRONTERA DE VENTANA</code>.
+    <b>densidad 0,48 hechos/hora</b>, <b>cálculo propio</b>. <b>Orden: rojos, amarillos, verdes</b>. <b>Siete de once</b> llevan <code>FRONTERA DE VENTANA</code>.
     <br><code>LAS {len(R)} RECUPERACIONES DEL FINAL PERTENECEN A VENTANAS ANTERIORES Y QUEDAN FUERA DEL SEMÁFORO, DEL MAPA, DEL RADAR Y DE TODOS LOS TOTALES.</code>
     <br><b>Toque un ARG-ID para ir a su ficha</b>, donde están las fuentes, el nivel de confianza y los deslindes.
   </p>
@@ -341,8 +341,8 @@ panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
   </p>
 '''
 
-co1 = "\n".join(ficha(e) for e in E[:4])
-co2 = "\n".join(ficha(e) for e in E[4:])
+co1 = "\n".join(ficha(e) for e in E[:5])
+co2 = "\n".join(ficha(e) for e in E[5:])
 rec1 = "\n".join(ficha(r, True) for r in R)
 
 ico = re.findall(r'<div class="tile[^"]*"><svg class="ico ico-lg"[^>]*>.*?</svg>', tpl)
@@ -439,7 +439,7 @@ cierre = f'''  <div class="alerta contexto">
       <br><b>2.</b> <b>Contexto operativo</b>: ARG-133-005 a ARG-133-007 y ARG-133-011.
       <br><b>3.</b> <b>Respuesta institucional propia</b>: ARG-133-008 y ARG-133-009.
       <br><b>4.</b> <b>Recuperaciones</b>: ARG-133-REC-001 a ARG-133-REC-007.
-      <br><b>5.</b> <code>22 H 57 MIN; SEIS DE ONCE HECHOS CON FRONTERA DE VENTANA: TOTALES NO COMPARABLES SIN MÁS.</code>
+      <br><b>5.</b> <code>22 H 57 MIN; SIETE DE ONCE HECHOS CON FRONTERA DE VENTANA: TOTALES NO COMPARABLES SIN MÁS.</code>
     </p>
   </div>
 
@@ -448,7 +448,7 @@ cierre = f'''  <div class="alerta contexto">
     <p>
       <b>1. HOMICIDIOS MÚLTIPLES EN EL BAJÍO GUANAJUATENSE.</b> ARG-133-002, ARG-133-003, ARG-133-010 y ARG-133-REC-001: cuatro ataques con dos o más muertos en cuatro municipios en menos de 24 horas, <b>cálculo propio</b>; vínculo no acreditado. Silao (ARG-133-REC-002 y -REC-003): sin vínculo apreciable.
       Línea: <b>solicitar a la FGE Guanajuato el cotejo de casquillos</b> de los cuatro — hipótesis.
-      <br><b>2. FOSAS HALLADAS POR COLECTIVOS.</b> ARG-133-REC-006 (Jerez) y ARG-133-REC-007 (Tecuala), con ARG-132-001 (Navolato): tres hallazgos de buscadoras en una semana, ninguno con víctimas identificadas. Línea: <b>solicitar a las fiscalías de Zacatecas y Nayarit</b> el número de víctimas y la toma de muestras genéticas.
+      <br><b>2. FOSAS EN EL CORREDOR DEL PACÍFICO NORTE Y ZACATECAS.</b> ARG-133-REC-006 (Jerez) y ARG-133-REC-007 (Tecuala), con ARG-132-001 (Navolato): tres hallazgos en cinco días, dos por colectivos, ninguno con víctimas identificadas. Línea: <b>solicitar a las fiscalías de Zacatecas y Nayarit</b> el número de víctimas y la toma de muestras genéticas.
       <br><b>3. VIOLENCIA SOSTENIDA EN ESCUINAPA.</b> ARG-133-005, ARG-133-011 y ARG-133-REC-004, con ARG-129-004, ARG-130-006, ARG-130-009 y ARG-131-004: siete homicidios del 10 al 14-oct, <b>cálculo propio</b>. Línea: <b>solicitar a la Fiscalía de Sinaloa</b> si las siete carpetas comparten indicios — hipótesis.
       <br><b>4. CÉLULAS DE EXTORSIÓN Y SECUESTRO EN EL SURESTE.</b> ARG-133-009 (Ciudad del Carmen, célula ligada a Jalpa de Méndez). Línea: <b>solicitar a la SSPC</b> los integrantes pendientes de captura — requiere validación.
       <br><b>5. BRECHA ENTRE FALLO Y PENA.</b> Santiago Tulantepec: culpables desde el 8-9 oct; individualización de la pena aplazada al 21-oct, solo por resumen. Línea: <b>solicitar a la Procuraduría de Hidalgo el calendario de la audiencia</b>.
@@ -464,7 +464,7 @@ cierre = f'''  <div class="alerta contexto">
 
 body = (port
  + page("PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD", panorama_body)
- + page("CRIMEN ORGANIZADO (I) — ALTO IMPACTO: ATOTONILCO DE TULA, SALAMANCA, ROMITA E IZTAPALAPA", co1)
+ + page("CRIMEN ORGANIZADO (I) — ALTO IMPACTO: ATOTONILCO DE TULA, SALAMANCA, ROMITA, IZTAPALAPA E IRAPUATO", co1)
  + page("CRIMEN ORGANIZADO (II) — ESCUINAPA, TIJUANA, CANCÚN, IZTAPALAPA Y CIUDAD DEL CARMEN", co2)
  + page("CRIMEN ORGANIZADO (III) — RECUPERACIONES: VENTANAS DE ARGOS 128 A 132", rec1)
  + page("CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS", arm1)

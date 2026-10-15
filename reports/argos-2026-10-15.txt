@@ -69,7 +69,7 @@ EL SALADO (ARG-133-008).
   11 | 5 | 4 | 2 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7
 
 Ventana 14-oct 08:19 → 15-oct 07:16 CDMX (22 h 57 min) · 11 hechos propios en 7 entidades ·
-densidad 0,48 hechos/hora, cálculo propio. Orden: rojos, amarillos, verdes. Seis de once llevan
+densidad 0,48 hechos/hora, cálculo propio. Orden: rojos, amarillos, verdes. Siete de once llevan
 FRONTERA DE VENTANA.
 LAS 7 RECUPERACIONES DEL FINAL PERTENECEN A VENTANAS ANTERIORES Y QUEDAN FUERA DEL SEMÁFORO, DEL
 MAPA, DEL RADAR Y DE TODOS LOS TOTALES.
@@ -90,7 +90,7 @@ Romita 1, Escuinapa 1, Iztapalapa 1 a 3 (contradicho) y 1 policía en Tijuana—
 
 ============================================================================
 
-## CRIMEN ORGANIZADO (I) — ALTO IMPACTO: ATOTONILCO DE TULA, SALAMANCA, ROMITA E IZTAPALAPA
+## CRIMEN ORGANIZADO (I) — ALTO IMPACTO: ATOTONILCO DE TULA, SALAMANCA, ROMITA, IZTAPALAPA E IRAPUATO
 
 ### HIDALGO · ATOTONILCO DE TULA — LA COMISIÓN DE BÚSQUEDA LOCALIZA UNA FOSA CLANDESTINA CON CINCO CUERPOS EN LA LOCALIDAD TEXAS [ROJO]
 
@@ -184,13 +184,6 @@ Deslindes y reservas: El Salado no figura en el índice; las fichas previas de I
 (ARG-97-ARM-001, ARG-98-006, ARG-99-007, ARG-122-ARM-004) son otros hechos. Detención en
 ARG-133-008. 🔴 por víctimas múltiples
 
-----------------------------------------------------------------------------
-  · Versión 3.0 · Fecha: 2026-10-15 · Hora: 07:16 (CDMX) · Corte: Matutino · ARGOS N.° 133 · USO INSTITUCIONAL
-
-============================================================================
-
-## CRIMEN ORGANIZADO (II) — ESCUINAPA, TIJUANA, CANCÚN, IZTAPALAPA Y CIUDAD DEL CARMEN
-
 ### GUANAJUATO · IRAPUATO — ATAQUE ARMADO EN EL BAR CONTINENTAL: DOS MUERTOS Y CUATRO LESIONADOS [ROJO]
 
 ── HECHO
@@ -211,6 +204,13 @@ de armamento: sin fila — no hubo armamento asegurado
 Deslindes y reservas: El bar Continental no figura en el índice ni en las tres ediciones
 previas. Distinto de ARG-133-002 (Salamanca) y ARG-133-003 (Romita). 🔴 por homicidio múltiple
 
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-15 · Hora: 07:16 (CDMX) · Corte: Matutino · ARGOS N.° 133 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (II) — ESCUINAPA, TIJUANA, CANCÚN, IZTAPALAPA Y CIUDAD DEL CARMEN
+
 ### SINALOA · ESCUINAPA — ASESINAN A BALAZOS A UN EXDIRIGENTE GANADERO FRENTE A UN NEGOCIO FAMILIAR [AMARILLO]
 
 ── HECHO
@@ -224,11 +224,11 @@ publicado · identidad: no se reproduce · FRONTERA DE VENTANA — HORA NO FIJAD
 ── TRAZABILIDAD
 
 ARG-133-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
-resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 4 · Regional 6 · Abierta
-0 · con fecha en la ruta: MVS Noticias (2026/10/14) · El Diario de Juárez (2026/oct/14) ·
-Tribuna (2026/10/14) · Infobae (2026/10/14) · Hecho: 2026-10-14 · Hora: ~11:00 (solo por
-resumen) · Consulta: 2026-10-15 07:16-07:45 · Estatus: Parcialmente corroborado · Conteo de
-armamento: sin fila — no hubo armamento asegurado
+resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 4 · Regional 7 · Abierta
+0 · con fecha en la ruta: MVS Noticias (2026/10/14) · Luz Noticias (2026-10-14) · El Diario de
+Juárez (2026/oct/14) · Tribuna (2026/10/14) · Infobae (2026/10/14) · Hecho: 2026-10-14 · Hora:
+~11:00 (solo por resumen) · Consulta: 2026-10-15 07:16-07:45 · Estatus: Parcialmente corroborado
+· Conteo de armamento: sin fila — no hubo armamento asegurado
 Deslindes y reservas: NO es el coordinador municipal de Protección Civil (ARG-130-009), ni
 ARG-131-004 (estética), ni ARG-129-004 (vendedora), ni ARG-130-006 (El Roblito), ni el homicidio
 del Malecón Siglo XXI (ARG-133-REC-004). Cargo gremial, no servidor público. 🟡 por homicidio
@@ -281,7 +281,8 @@ candidato). 🟡 por homicidio doloso único
 
 Escuinapa · CENTRO Y COL. PUEBLO NUEVO · noche del MIÉRCOLES 14-OCT (SOLO POR RESUMEN) · doble
 ataque armado, por titular · 1 hombre muerto —falleció en el hospital— y 1 hombre herido grave,
-por titular (🟡) · ningún detenido publicado · identidades: no se reproducen
+por titular (🟡) · ningún detenido publicado · identidades: no se reproducen · FRONTERA DE
+VENTANA — HORA NO FIJADA
 
 ── TRAZABILIDAD
 
@@ -484,7 +485,7 @@ no publicado por NTV; al menos 4, SOLO POR RESUMEN · hallazgos que siguen el 11
 ── TRAZABILIDAD
 
 ARG-133-REC-007 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: cifra solo por
-resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 3 · Abierta
+resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 2 · Abierta
 0 · con fecha en la ruta: NTV (2026/10/09) · Nayarit Noticias (2026/10/10) · NTV (2026/10/11) ·
 Hecho: 2026-10-09 · Hora: no publicada · Consulta: 2026-10-15 07:16-07:45 · Estatus:
 Parcialmente corroborado · Ventana de origen: ARGOS 128 (127 si fue antes de las 07:20) — HORA
@@ -604,7 +605,7 @@ INTEGRAN: FUERA DE VENTANA O SIN BOLETÍN OFICIAL.
 2. Contexto operativo: ARG-133-005 a ARG-133-007 y ARG-133-011.
 3. Respuesta institucional propia: ARG-133-008 y ARG-133-009.
 4. Recuperaciones: ARG-133-REC-001 a ARG-133-REC-007.
-5. 22 H 57 MIN; SEIS DE ONCE HECHOS CON FRONTERA DE VENTANA: TOTALES NO COMPARABLES SIN MÁS.
+5. 22 H 57 MIN; SIETE DE ONCE HECHOS CON FRONTERA DE VENTANA: TOTALES NO COMPARABLES SIN MÁS.
 
 ── CONCLUSIONES DE INTELIGENCIA CRIMINAL
 
@@ -613,10 +614,10 @@ ARG-133-REC-001: cuatro ataques con dos o más muertos en cuatro municipios en m
 cálculo propio; vínculo no acreditado. Silao (ARG-133-REC-002 y -REC-003): sin vínculo
 apreciable. Línea: solicitar a la FGE Guanajuato el cotejo de casquillos de los cuatro —
 hipótesis.
-2. FOSAS HALLADAS POR COLECTIVOS. ARG-133-REC-006 (Jerez) y ARG-133-REC-007 (Tecuala), con
-ARG-132-001 (Navolato): tres hallazgos de buscadoras en una semana, ninguno con víctimas
-identificadas. Línea: solicitar a las fiscalías de Zacatecas y Nayarit el número de víctimas y
-la toma de muestras genéticas.
+2. FOSAS EN EL CORREDOR DEL PACÍFICO NORTE Y ZACATECAS. ARG-133-REC-006 (Jerez) y
+ARG-133-REC-007 (Tecuala), con ARG-132-001 (Navolato): tres hallazgos en cinco días, dos por
+colectivos, ninguno con víctimas identificadas. Línea: solicitar a las fiscalías de Zacatecas y
+Nayarit el número de víctimas y la toma de muestras genéticas.
 3. VIOLENCIA SOSTENIDA EN ESCUINAPA. ARG-133-005, ARG-133-011 y ARG-133-REC-004, con
 ARG-129-004, ARG-130-006, ARG-130-009 y ARG-131-004: siete homicidios del 10 al 14-oct, cálculo
 propio. Línea: solicitar a la Fiscalía de Sinaloa si las siete carpetas comparten indicios —

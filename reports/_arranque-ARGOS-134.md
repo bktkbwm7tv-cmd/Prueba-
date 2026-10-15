@@ -36,7 +36,7 @@ fast-forward desde `b0558a3`. **Si algún merge no es fast-forward, parar y avis
 | Número | **ARGOS 134** |
 | Ventana | **abre 2026-10-15 07:16 CDMX** —donde cerró ARGOS 133— y cierra a la **hora real de arranque** |
 | Serie | 23 h 50 (129) · 23 h 21 (130) · 23 h 04 (131) · 24 h 56 (132) · **22 h 57 (133)** |
-| Densidad | 0,25 · 0,39 · 0,26 · 0,24 · **0,48** — 133: **6 de 11 hechos en `FRONTERA`** |
+| Densidad | 0,25 · 0,39 · 0,26 · 0,24 · **0,48** — 133: **7 de 11 hechos en `FRONTERA`** |
 
 ## BLOQUE 2 — LECTURA OBLIGATORIA
 
@@ -91,4 +91,4 @@ Ver `_pendientes.md`, «Abiertos que ARGOS 134 hereda». Encargos prioritarios: 
 - Móvil y texto: `python3 tools/gen-movil.py 134 <FECHA> 133 2026-10-15 <HORA>` y `python3 tools/gen-texto.py reports/argos-<FECHA>.html reports/argos-<FECHA>.txt`.
 - Validador: `node tools/validar.js reports/argos-<FECHA>.html 2026-10-15 <FECHA>` → «validación OK».
 - **Controles**: `editor-duplicidad` y `procedencia-cifras` como subagentes, en paralelo, sobre una versión estable y commiteada, **con las notas íntegras de
-  los seis equipos**. **Diecinueve pases consecutivos, diecinueve «CORREGIR».**
+  los seis equipos**. **Veinte pases consecutivos, veinte «CORREGIR».**

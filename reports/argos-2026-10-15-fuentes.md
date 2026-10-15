@@ -188,10 +188,10 @@ SRIV = `SIN RESULTADO INDEXADO EN VENTANA`. `SIN ACTUALIZACIÓN CONSTATADA`: **0
 - Duración: 14-oct 08:19 → 15-oct 07:16 = **22 h 57 min** = 22,95 h. Densidad: 11 / 22,95 = **0,48**.
 - Muertos en hechos propios: Salamanca 2 + Romita 2 + Irapuato 2 + Iztapalapa 1 + Escuinapa 2 (`-005`, `-011`) + Cancún 1 = **10**; cuerpos en fosa, Atotonilco **5**.
   Heridos: Irapuato 4 + Salamanca 1 + Romita 1 + Escuinapa 1 + Iztapalapa 1 a 3 (contradicho) + Tijuana 1 = **9 a 11**.
-- Frontera: **6 de 11** (`ARG-133-001`, `-002`, `-005`, `-006`, `-007`, `-009`).
+- Frontera: **7 de 11** (`ARG-133-001`, `-002`, `-005`, `-006`, `-007`, `-009`, `-011`).
 - Armamento propio integrable: **0** en todas las categorías.
 - Conclusión 1: Pénjamo (~05:35 del 14), Salamanca, Romita, Irapuato (antes de las 00:21 del 15) = **4 ataques con dos o más muertos en 4 municipios, en menos de 24 h**.
-- Conclusión 2: Tecuala (9-oct), Jerez (11-oct), Navolato (13-oct) = **3 hallazgos** en cinco días.
+- Conclusión 2: Tecuala (9-oct), Jerez (11-oct), Navolato (13-oct) = **3 hallazgos** en cinco días; dos por colectivos (Jerez, Navolato).
 - Conclusión 3: `ARG-129-004` (10-oct), `ARG-130-006` y `-009` (11-oct; `-009` podría ser del 12, Infobae por resumen: heredado, no reverificado), `ARG-131-004` (12-oct), `ARG-133-REC-004` (13-oct), `ARG-133-005` y `-011` (14-oct) = **7 homicidios**.
 - Fes de erratas: §8.
 
@@ -202,7 +202,7 @@ SRIV = `SIN RESULTADO INDEXADO EN VENTANA`. `SIN ACTUALIZACIÓN CONSTATADA`: **0
 - **`ARG-133-002`** — Nacional 1: El Universal. Regional 6: Periódico AM 2026/10/14 (1854996); Periódico Correo 2026/oct/14 (169080); Meganoticias (779060); Azteca Bajío; Cancha Política; agoragto.
 - **`ARG-133-003`** — Regional 2: Periódico Correo 2026/oct/14 (169158); Azteca Bajío (sin fecha).
 - **`ARG-133-004`** — Nacional 6: Infobae 2026/10/14; La Razón 2026/10/14; La Jornada 2026/10/14; Crónica 2026/10/14; El Universal; N+. Regional 3: Sociedad Noticias 2026/10/14; Ejecentral; Canal 44.
-- **`ARG-133-005`** — Nacional 4: MVS Noticias 2026/10/14 (749836); Infobae 2026/10/14; Excélsior; TV Azteca. Luz Noticias 2026-10-14 («Ejecutan a balazos frente a su hija…»). Regional 6: El Diario de Juárez 2026/oct/14; Tribuna 2026/10/14; Noroeste (IB26502318);
+- **`ARG-133-005`** — Nacional 4: MVS Noticias 2026/10/14 (749836); Infobae 2026/10/14; Excélsior; TV Azteca. Regional 7: Luz Noticias 2026-10-14 («Ejecutan a balazos frente a su hija…»); El Diario de Juárez 2026/oct/14; Tribuna 2026/10/14; Noroeste (IB26502318);
   Quadratín; Meganoticias; Los Noticieristas.
 - **`ARG-133-010`** — Nacional 1: Milenio (sello 00:21 del 15-oct, por resumen). Regional 1: Periódico Correo 2026/oct/15 (169164).
 - **`ARG-133-011`** — Regional 1: Luz Noticias 2026-10-15 (309946).
@@ -217,11 +217,11 @@ SRIV = `SIN RESULTADO INDEXADO EN VENTANA`. `SIN ACTUALIZACIÓN CONSTATADA`: **0
 - **`ARG-133-REC-004`** — Regional 5: Luz Noticias 2026-10-13 (309730); Línea Directa 2026-10-13__1720084; Noroeste (FI26489682); Los Noticieristas; Sinaloahoy.
 - **`ARG-133-REC-005`** — Nacional 1: Infobae 2026/10/15. Regional 3: Proyecto Puente 2026/10/14; El Imparcial 2026/10/14; Infoson 2026/10/14 (Crítica, sin fecha).
 - **`ARG-133-REC-006`** — Nacional 1: ABC Noticias 2026/10/14 (292453). Regional 1: ECOdiario (sin fecha).
-- **`ARG-133-REC-007`** — Regional 3: NTV 2026/10/09; Nayarit Noticias 2026/10/10; NTV 2026/10/11. Meganoticias Tepic 778257 (sin fecha, agrupa dos hechos).
+- **`ARG-133-REC-007`** — Regional 2: NTV 2026/10/09; Nayarit Noticias 2026/10/10; NTV 2026/10/11. Meganoticias Tepic 778257 (sin fecha, agrupa dos hechos).
 
 ## 13. Los dos controles editoriales
 
-Racha: **diecinueve pases consecutivos, diecinueve «CORREGIR»**. Lanzados en paralelo sobre la versión estable `ed80848`, con las **notas íntegras de los seis equipos**
+Racha: **veinte pases consecutivos, veinte «CORREGIR»** (dos en el primer pase, uno en el segundo). Lanzados en paralelo sobre la versión estable `ed80848`, con las **notas íntegras de los seis equipos**
 (extraídas al *scratchpad*: `informe-{noroeste,noreste,occidente,centro,golfo-federal,sureste}.md`).
 
 **`procedencia-cifras`** (25 búsquedas, 4 `WebFetch` a medios fallidos por DNS) — **CORREGIR**. **Un rojo y un amarillo omitidos** (Irapuato, Escuinapa nocturno).
@@ -264,6 +264,11 @@ Racha: **diecinueve pases consecutivos, diecinueve «CORREGIR»**. Lanzados en p
 | 13 | Cajeme: alternativa de ventana y muertos de 131 | **Corregido** |
 | 14 | Tres nombres para la SSPCM | **Corregido** |
 | 15 | Índice, pendientes y §13 | **Corregido** al cierre |
+
+**Segundo pase de `editor-duplicidad`** sobre `07c36f0` (sin web) — **CORREGIR, ajustes menores**: correcciones de §13 verificadas en las cinco superficies; Irapuato y Escuinapa
+nocturno sin duplicidad. Corregidos: (1) Conclusión 2, Tecuala sin colectivo acreditado, «cinco días»; (2) `ARG-133-011` con `FRONTERA` (publicado el día de cierre): **7 de 11**;
+(3) `ARG-133-005` Regional 7 con Luz Noticias; (4) `ARG-133-REC-007` Regional 2 (NTV es un emisor); (5) Irapuato pasa a la página I. Observación: «Ensenada, pena el 16-oct» sin
+respaldo en 132-133: reverificar o cerrar en 134. Tras ello, **PUBLICAR**.
 
 
 ## 14. Herramientas

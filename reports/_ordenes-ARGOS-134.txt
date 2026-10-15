@@ -91,7 +91,7 @@ FORMA, CONSTRUCCIÓN Y CONTROLES
    reports/argos-2026-10-15.html. WINDOW_DAYS = número de fechas de calendario.
  · Móvil y texto SE GENERAN (tools/gen-movil.py, tools/gen-texto.py).
  · node tools/validar.js reports/argos-<FECHA>.html 2026-10-15 <FECHA> → validación OK.
- · editor-duplicidad y procedencia-cifras: DIECINUEVE PASES, DIECINUEVE «CORREGIR».
+ · editor-duplicidad y procedencia-cifras: VEINTE PASES, VEINTE «CORREGIR».
    Lánzalos sobre una versión estable, con las notas ÍNTEGRAS de LOS SEIS equipos.
  · Detalle completo: reports/_arranque-ARGOS-134.md.
 

@@ -2021,7 +2021,7 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 | **Escuinapa, Malecón Siglo XXI** | `ARG-133-REC-004` (13-oct ~19:20, ventana de 132) |
 | **Tulantepec, audiencia del 14-oct** | **Aplazada al 21-oct** (sin pena) |
 | **Boletín federal del 13-oct** | Existe por republicadores; evento anterior, fuera del total |
-| **Controles** | Diecinueve pases consecutivos, diecinueve «CORREGIR» |
+| **Controles** | Veinte pases consecutivos, veinte «CORREGIR» |
 
 ## Abiertos que ARGOS 134 hereda
 
@@ -2038,7 +2038,7 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 | **Heredados de 132** | **Cotija** (`ARG-132-005`): el 12-oct solo por resumen, contradicho; si aparece fragmento citable, pasa a 131 · Navolato (identificación) · San Blas Atempa (detenidos; color: decisión del destinatario) · «El Cromo» (fecha de captura: 13-oct o antes por el boletín federal) · Doctor Coss (hora) · Escuinapa Pueblo Nuevo (hora) · Acaponeta (hora) |
 | **«El Wicho», Villa Unión** | Fecha de la captura (13 o 14-oct): asigna 132 o 133 |
 | **Candidatos sin URL con fecha** | Zihuatanejo (13-oct) · Cancún SM 254 (conductor de plataforma, madrugada del 14) · Reynosa, Actrices Mexicanas (fosa) · Edomex, Almoloya (agente de la FGR) · Ixtepec y Juchitán (El Universal Oaxaca) · **El Guayabo, Michoacán** (padre muerto, niña herida) · Chalchicomula · Tlaxco |
-| **Sentencias candidatas** | **FGR Chihuahua, Daniel «N», 8 años** (860 2026/10/14) · **FGR Sinaloa, más de 8 años** (Línea Directa 2026-10-14) · Oaxaca FGEO 80 años · **Tulantepec: pena el 21-oct** · **Ensenada: pena el 16-oct** · NL 155 años (MVS 12-oct «desaparición»: cotejar) · Nayarit, 53 años (sin fecha) |
+| **Sentencias candidatas** | **FGR Chihuahua, Daniel «N», 8 años** (860 2026/10/14) · **FGR Sinaloa, más de 8 años** (Línea Directa 2026-10-14) · Oaxaca FGEO 80 años · **Tulantepec: pena el 21-oct** · Ensenada (pena el 16-oct: sin respaldo en 132-133, reverificar o cerrar) · NL 155 años (MVS 12-oct «desaparición»: cotejar) · Nayarit, 53 años (sin fecha) |
 | **Boletín federal de las acciones del 14 y 15-oct** | Triple consulta |
 | **Seguimientos sin avance** | Totolapan (recaptura; 10 investigados) · Minatitlán (Pemex 2 lesionados frente a 1-2 muertos) · Parral · Zamora (4 o 5) · «El Cabra» · Abdón «N» (posible homónimo) · Sombrerete (185/39) · Cancún SM 225 / «Gota a Gota» · Acapulco «El Junior» · La Curva |
 
