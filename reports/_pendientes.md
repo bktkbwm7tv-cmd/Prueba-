@@ -8,13 +8,13 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 132 (corte 2026-10-14).
+**Última actualización**: ARGOS 133 (corte 2026-10-15).
 
 ---
 
 ## Arranque de la edición siguiente
 
-**`reports/_arranque-ARGOS-133.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-133.txt`) contiene la orden de arranque para una sesión nueva: verificación
+**`reports/_arranque-ARGOS-134.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-134.txt`) contiene la orden de arranque para una sesión nueva: verificación
 de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y comandos de construcción.
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
@@ -2009,3 +2009,46 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 7. **Presupuesto**: 2 de control + 158 de ola + 10 del coordinador + 25 de `procedencia-cifras` = **195**.
 8. **`validar.js` sigue sin aplicar al móvil**; el móvil se valida con `gen-movil.py`.
 9. **Escala de agravantes sin fijar**: «víctimas múltiples» con un solo muerto (`ARG-120-009`), exautoridad (`ARG-131-REC-001`) y **docente** (`ARG-132-003`).
+
+## Cerrados por ARGOS 133
+
+| Pendiente | Disposición |
+|---|---|
+| **Navolato: fecha de inicio** | **Martes 13-oct** (Línea Directa, Luz Noticias 2026-10-13); FGE: 3 personas «de manera preliminar». Queda la identificación |
+| **Orizaba: identidad del muerto** | «Presunto agresor» según la FGE (por cita); **sigue 🟡**. 4 detenidos por titular; 3 largas y 2 cortas solo por resumen |
+| **Acaponeta: ¿Meganoticias 778257?** | Agrupa Acaponeta (sin fosa) y **la fosa de Tecuala** (9-oct) → `ARG-133-REC-007` |
+| **Sonora, operación citada el 14-oct** | **Puerto Peñasco, 21-sep**: evento anterior |
+| **Escuinapa, Malecón Siglo XXI** | `ARG-133-REC-004` (13-oct ~19:20, ventana de 132) |
+| **Tulantepec, audiencia del 14-oct** | **Aplazada al 21-oct** (sin pena) |
+| **Boletín federal del 13-oct** | Existe por republicadores; evento anterior, fuera del total |
+| **Controles** | Diecinueve pases consecutivos, diecinueve «CORREGIR» |
+
+## Abiertos que ARGOS 134 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️⚠️ **HIDALGO · Atotonilco de Tula** (`ARG-133-001`) | Identificaciones; fecha de inicio de la excavación; boletín de la Comisión de Búsqueda; coincidencia con la mujer desaparecida el 5-oct |
+| ⚠️⚠️ **GUANAJUATO · Irapuato, bar Continental** (`ARG-133-010`) | **Segunda fuente** y hora citable; detenidos; FGE |
+| ⚠️ **GUANAJUATO · Salamanca y Romita** (`-002`, `-003`) | Detenidos (Salamanca contradicho); muerte del herido de Romita; segunda fuente con fecha de Romita |
+| ⚠️ **CDMX · Iztapalapa** (`-004`, `-008`) | Número de heridos (3, 2 o 1); tipo de arma; vinculación del detenido; **decisión del destinatario sobre el color** (víctimas múltiples con un muerto) |
+| **SINALOA · Escuinapa** (`-005`, `-011`) | Hora citable; detenidos; segunda fuente de `-011`; fecha de `ARG-130-009` (11 o 12-oct) |
+| **BC · Tijuana** (`-006`) · **QRoo · Cancún** (`-007`) | Detención del agresor; cotejo con la mujer hallada en la Región 201 |
+| **CAMPECHE · «La Patrona»** (`-009`) | Fecha de la detención; corporación; vínculo con Jalpa de Méndez |
+| **Recuperaciones** | Horas de Pénjamo y Silao ×2 (si alguno fue después de las 08:19 del 14, pasa a 133) · Cajeme (131 o 132) · Jerez (129 o 130; número de víctimas) · Tecuala (128 o 127; número de cuerpos) |
+| **Heredados de 132** | **Cotija** (`ARG-132-005`): el 12-oct solo por resumen, contradicho; si aparece fragmento citable, pasa a 131 · Navolato (identificación) · San Blas Atempa (detenidos; color: decisión del destinatario) · «El Cromo» (fecha de captura: 13-oct o antes por el boletín federal) · Doctor Coss (hora) · Escuinapa Pueblo Nuevo (hora) · Acaponeta (hora) |
+| **«El Wicho», Villa Unión** | Fecha de la captura (13 o 14-oct): asigna 132 o 133 |
+| **Candidatos sin URL con fecha** | Zihuatanejo (13-oct) · Cancún SM 254 (conductor de plataforma, madrugada del 14) · Reynosa, Actrices Mexicanas (fosa) · Edomex, Almoloya (agente de la FGR) · Ixtepec y Juchitán (El Universal Oaxaca) · **El Guayabo, Michoacán** (padre muerto, niña herida) · Chalchicomula · Tlaxco |
+| **Sentencias candidatas** | **FGR Chihuahua, Daniel «N», 8 años** (860 2026/10/14) · **FGR Sinaloa, más de 8 años** (Línea Directa 2026-10-14) · Oaxaca FGEO 80 años · **Tulantepec: pena el 21-oct** · **Ensenada: pena el 16-oct** · NL 155 años (MVS 12-oct «desaparición»: cotejar) · Nayarit, 53 años (sin fecha) |
+| **Boletín federal de las acciones del 14 y 15-oct** | Triple consulta |
+| **Seguimientos sin avance** | Totolapan (recaptura; 10 investigados) · Minatitlán (Pemex 2 lesionados frente a 1-2 muertos) · Parral · Zamora (4 o 5) · «El Cabra» · Abdón «N» (posible homónimo) · Sombrerete (185/39) · Cancún SM 225 / «Gota a Gota» · Acapulco «El Junior» · La Curva |
+
+## Deuda de método (ARGOS 133)
+
+1. **`procedencia-cifras` halló el rojo que la ola no traía por tercera edición seguida** (Irapuato; antes Navolato y Escuinapa). Las búsquedas de «madrugada del jueves» de cinco equipos fueron vacías: en 134, una búsqueda por equipo con la **fecha de cierre en la ruta**.
+2. **Siete de dieciocho fichas son recuperaciones**: la madrugada del día de cierre se publica después del cierre. En 134, una búsqueda expresa de la **madrugada del día de apertura**.
+3. **Sentencias: Sonora y Sinaloa, sexta edición `NO REVISADA`.** **17 `NO REVISADA`**: BCS, Son, Chih, Sin, Coah, Tamps, SLP, Jal, Col, Nay, Ags, Mich, CDMX, Tlax, Hgo, Camp, QRoo.
+4. **Armamento `NO REVISADA` (12)**: BC, BCS, Son, SLP, Jal, Col, Nay, Mich, Pue, Tlax, Hgo, Tab. Federales **GN y Defensa `NO REVISADA`** (dominio no devuelto).
+5. **Ciclo siguiente: C** (Occidente + Sureste), tras la prioridad de las `NO REVISADA`.
+6. **Presupuesto**: 2 + 159 + 9 + 25 = **195**.
+7. **`validar.js` sigue sin aplicar al móvil**; el móvil se valida con `gen-movil.py`.
+8. **Escala de agravantes sin fijar**: víctimas múltiples con un solo muerto (`ARG-133-004` frente a `ARG-120-009`), exautoridad y docente.
