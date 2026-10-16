@@ -2068,7 +2068,7 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 | **Almoloya, agente de la FGR** | `ARG-134-REC-004` (130, 131 con reserva) |
 | **El Guayabo** | `ARG-134-REC-003` (132 o 133) |
 | **Oaxaca FGEO 80 años** | Boletín 2,889 del 13-oct; El Heraldo de México 2026/10/14 → fuera de 133 y 134 |
-| **Controles** | Primera ronda: `procedencia-cifras` 20 «CORREGIR», `editor-duplicidad` 17 de 20; segunda ronda: ver `argos-2026-10-16-fuentes.md` §13 |
+| **Controles** | Primera ronda: `procedencia-cifras` 20 «CORREGIR», `editor-duplicidad` 17 de 20; segunda ronda: 20 y 14. Ver `argos-2026-10-16-fuentes.md` §13 |
 
 ## Abiertos que ARGOS 135 hereda
 
@@ -2097,7 +2097,7 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 3. **Sentencias: Sonora y Sinaloa, séptima edición `NO REVISADA`.** **17 `NO REVISADA`**: BCS, Son, Sin, Dgo, NL, SLP, Zac, Jal, Col, Nay, Gto, Edomex, Mor, Pue, Tlax, Qro, Camp.
 4. **Armamento `NO REVISADA` (15)**: BCS, Chih, Sin, Dgo, Coah, Col, Nay, Ags, Edomex, Mor, Pue, Qro, Ver, Tab, Yuc. Defensa y Marina `NO REVISADA`.
 5. **Ciclo siguiente: A** (Noroeste + Centro), tras la prioridad de las `NO REVISADA`.
-6. **Presupuesto**: 2 + 157 + 7 + 30 = **196**.
+6. **Presupuesto**: 2 + 157 + 7 + 30 + 4 (segunda ronda) = **200**.
 7. **Criterio de fuente institucional fijado en 134**: declaración o comunicado citado de una autoridad nombrada; «investiga» no cuenta. Meganoticias y Por Esto, regionales.
 8. **Escala de agravantes sin fijar**: persona defensora no acreditada (Patamban), servidora pública por empleo (Coatzacoalcos), docente (`ARG-132-003`), exautoridad (Monterrey), víctimas múltiples con un muerto (`ARG-133-004`).
 

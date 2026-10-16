@@ -16,7 +16,7 @@ Informes íntegros de los seis equipos: extraídos al *scratchpad* de la sesión
 - **Consulta de control** («ataque armado muertos "15 de octubre" 2026 México», en los dos modos): `standard` **no devolvió ningún hecho del 15-oct**; `extended` trajo Monterrey (Gómez Morín), Hermosillo, Coquimatlán (que el resumidor situó en Jalisco: **error del resumidor**, es Colima) e Irapuato. **Se mantuvo `extended` obligatorio.**
 - **Presupuesto**: control 2 + ola (Noroeste 26, Noreste 24, Occidente 31, Centro 26, Golfo y federal 26, Sureste 24 = **157**) + **7 del coordinador** = **166**; `procedencia-cifras` **30** → **196 de 200**. `editor-duplicidad` no busca en la web.
 - Occidente excedió su cuota en **una** búsqueda (31 de 30), declarado por el propio equipo.
-- **Rendimiento del coordinador** (7): policías emboscados (sin hecho en México; Monterrey «ex policías»), madrugada del viernes (**Puebla, Tres Cerritos** y Atoyac), fosas del 15 (solo Atotonilco y Navolato, ya publicados), abatidos del 15 (sin resultado en ventana), Puebla FGE (**ARG-134-REC-005**), Silao Barrio Nuevo ×2 (**ARG-134-001**: día jueves 15, solo por resumen).
+- **Rendimiento del coordinador** (7): policías emboscados (sin hecho en México; Monterrey «ex policías»), madrugada del viernes (**Puebla, Tres Cerritos** y Atoyac), fosas del 15 (solo Atotonilco y Navolato, ya publicados), abatidos del 15 (sin resultado en ventana), Puebla FGE (resultado: es `ARG-131-003`, ya publicado; no se ficha), Silao Barrio Nuevo ×2 (**ARG-134-001**: día jueves 15, solo por resumen).
 
 ## 3. Rotación — prioridad sobre el ciclo y CICLO C, declarados
 
@@ -26,7 +26,7 @@ Informes íntegros de los seis equipos: extraídos al *scratchpad* de la sesión
 | Prioridad — sentencias (17 `NO REVISADA` en 133) | **Revisadas (8)**: Chih (`fiscalia.chihuahua.gob.mx`, último jun-2026), Coah (`fgecoahuila.gob.mx`, índice hasta 31-ago), Tamps (`fgjtam.gob.mx`, FGJE-370-2026 del 6-oct), Ags (`fiscalia-aguascalientes.gob.mx`, 2-oct), Mich (`comunicacion.fiscaliamichoacan.gob.mx`, índice rezagado), CDMX (`fgjcdmx.gob.mx`, 7-9 oct), Hgo (`procuraduria.hidalgo.gob.mx`), QRoo (`fgeqroo.gob.mx`, 16-ago). **Siguen `NO REVISADA`**: BCS (`procuraduriabcs.gob.mx` no devuelto), **Son (séptima edición sin dominio de fiscalía devuelto)**, **Sin (`fiscaliasinaloa.gob.mx` no devuelto)**, SLP, Jal, Col, Nay (0 resultados del dominio), Tlax, Camp (el buscador ignoró el `site:`) |
 | Ciclo | **C** — Occidente y Sureste encabezaron el triaje judicial tras la prioridad |
 | Rendimiento del ciclo | **Ninguna sentencia integrable.** Occidente: Nayarit 53 años (publicada el 14), Colima asistencia familiar (sin fecha en ruta), FGR Vallarta (posible homónimo). Sureste: Oaxaca 80 años anclada al boletín 2,889 del 13-oct (fuera); FGEO publicó en ventana los boletines 2,895 y 2,897, sin sentencia |
-| Regresión por rotación | Sentencias: NL, Zac, Edomex, Mor, Pue, Qro, Dgo pasan a `NO REVISADA` (sin dominio devuelto). Armamento: Chih, Dgo, Coah, Ags, Edomex, Mor, Qro, Ver, Yuc. **Prioridad sobre el ciclo en 135** |
+| Regresión por rotación | Sentencias: NL, Zac, Edomex, Mor, Pue, Qro, Dgo y **Gto** (dominio de la fiscalía sin resultados) pasan a `NO REVISADA`. Armamento: Chih, Dgo, Coah, Ags, Edomex, Mor, Qro, Ver, Yuc y **Sin** (hecho por medios, sin dominio oficial). **Prioridad sobre el ciclo en 135** |
 
 Serie: … · B (133) no · **C (134) no.**
 
@@ -76,13 +76,13 @@ Serie: … · B (133) no · **C (134) no.**
 
 | Caso | Arbitraje |
 |---|---|
-| **Silao, Barrio Nuevo** (`ARG-134-001`) | Hallado por el coordinador; el equipo de Occidente lo traía como hecho del 14-oct. Dos consultas: el resumen lo fija el **jueves 15** ~15:30; tres URL del 15-oct (AM 1855473, Correo 169211, Noticieros en Línea). **Día solo por resumen**. 🔴 por homicidio múltiple |
+| **Silao, Barrio Nuevo** (`ARG-134-001`) | Hallado por el coordinador; el equipo de Occidente lo traía como hecho del 14-oct. El resumen lo fija el **jueves 15** ~15:30; rutas del 15-oct: AM `…/2026/10/15/matan-a-tres-hombres-a-balazos-afuera-de-una-tienda-en-silao-1855473.html`, Correo `…/2026/oct/15/asesinan-a-tiros-a-tres-hombres-en-barrio-nuevo-de-silao-169211.html`, Noticieros en Línea `…/2026/oct/15/triple-homicidio-en-silao…-55372.html`. **Día por rutas y por secuencia de ID (AM 1855198 Romita < 1855473 < 1855587; Correo 169176 «Miércoles violento» < 169211): inferencia, no fragmento; el 14 sigue abierto.** `FRONTERA` por publicación el día de cierre de 133. 🔴 por homicidio múltiple |
 | **Monterrey, Gómez Morín** (`-002`) | 🔴 por homicidio múltiple. **Exautoridad: reserva, no mueve el color** (la escala no fija exautoridades). Identidades no reproducidas |
 | **Coquimatlán** (`-003`) | 🔴 con 2 o 3 muertos. Fecha solo por la página de archivo de vadenuez (2026/10/15): ★★☆☆☆ |
 | **Tlalnepantla** (`-004`) | 🔴 por hallazgo de dos cuerpos con huellas de violencia (homicidio múltiple). Toluca y Ecatepec del mismo titular de Infobae: no fichados |
-| **Puebla, Tres Cerritos** (`-005`) | 🔴 por víctima policía. **Condición solo por titulares** («presunto», «en activo»). Viernes 16 por la mañana, antes del cierre por cualquiera de las dos horas; `FRONTERA` por la regla (día de cierre, hora no fijada) |
-| **Patamban** (`-006`) | **🟡**, no 🔴 como proponía el equipo: representante de bienes comunales = autoridad agraria del núcleo, no servidor público; mismo criterio que el exdirigente ganadero de `ARG-133-005`. Revisable por el destinatario |
-| **Coatzacoalcos** (`-011`) | 🟡 con reserva: médica del IMSS-Bienestar (servidora pública por empleo); feminicidio con móvil de pareja; agravante sin fijar, como el docente de `ARG-132-003` |
+| **Puebla, Tres Cerritos** (`-005`) | 🔴 por víctima policía con reserva: «policía estatal» en titulares de varios medios (Retodiario, Síntesis 2026/10/16, Telediario, Puebla Online), sin comunicado de SSP ni FGE; «en activo» o «de descanso» contradicho. Horas 08:00 / alerta 09:27 / ~10:00, todas antes del cierre; `FRONTERA` por la regla (día de cierre, hora no fijada) |
+| **Patamban** (`-006`) | **🟡 con reserva**: MVS titula «líder indígena purépecha»; la Fiscalía no descarta la defensa del territorio (solo por resumen); persona defensora **no acreditada**. **Decisión del destinatario pendiente** |
+| **Coatzacoalcos** (`-011`) | 🟡 con reserva: médica de un hospital público (titulares); línea de investigación: expareja. **Decisión del destinatario pendiente**, como el docente de `ARG-132-003` |
 | **Coacalco** (`-010`) | 🟡: sin muertos; menor herida, reserva. «Rumbo a la escuela» puede ser antes de las 07:16 → `FRONTERA` |
 | **Hermosillo** (`-012`) | 🟡. Hora «noche del jueves» solo por resumen; publicación 15-oct → `FRONTERA` |
 | **Culiacán, Barrancos** (`-013`) | 🟡, ★★☆☆☆: «este jueves» por titular, sin URL con fecha |
@@ -97,7 +97,7 @@ Serie: … · B (133) no · **C (134) no.**
 
 ## 8. Fe de erratas (no va al cartelón)
 
-- **`ARG-134-FE-001`** — **Asignación con reserva a ARGOS 133**: Irapuato, pastor y esposa (🔴, 2 muertos; 134 si fue después de las 07:16) y Chiapa de Corzo (🔴 con dos o más muertos; 132 si fue el 13 o antes de las 08:19 del 14). El Guayabo (🔴, 2 muertos) a 132 o 133. **Conteo de 133 recalculado, cálculo propio**: rojos 5 → **6 o 7**; muertos por agresión 10 → **13 a 15**.
+- **`ARG-134-FE-001`** — **Asignación con reserva a ARGOS 133**: Irapuato, pastor y esposa (🔴, 2 muertos; 134 si fue después de las 07:16) y Chiapa de Corzo (🔴 con dos o más muertos; 132 si fue el 13 o antes de las 08:19 del 14). El Guayabo (🔴, 2 muertos) a 132 o 133. **Conteo de 133 recalculado, cálculo propio, condicionado a la ventana de cada recuperación**: rojos 5 → **5 a 8**; muertos por agresión 10 → **10 a 17**.
 - **`ARG-134-FE-002`** — **Asignación con reserva a ARGOS 130** (131 si fue después de las 08:19 del 12): Almoloya de Juárez (🔴, 1 agente de la FGR muerto). **Puebla, camioneta de la FGE, retirada: no es omisión, es `ARG-131-003`.**
 - **Actualización de dato, no fe de erratas**: Atotonilco (3 de 5 identificados; sexo contradicho) · Iztapalapa (3 heridos por mayoría de fuentes) · `ARG-133-011` (noche del 14 por fragmento: la marca `FRONTERA` sobraba) · Tijuana (detenida la acompañante) · Cajeme (posible agresión iniciada por los ocupantes, color en revisión).
 
@@ -181,7 +181,14 @@ Ver §7, último renglón. Además: Escuinapa, `ARG-133-005` y `-011` (seguimien
 
 ## 15. Lecciones de método (no van al cartelón)
 
-1. **El coordinador volvió a hallar el rojo con más muertos** (Silao, Barrio Nuevo): el equipo lo traía con fecha equivocada (14-oct). Una segunda consulta por «este jueves / miércoles» lo fijó.
+1. **El coordinador volvió a hallar el rojo con más muertos** (Silao, Barrio Nuevo). El equipo lo fechó el 14 por un agregado; la fecha del 15 se sostiene por rutas e IDs, no por fragmento: el 14 sigue abierto.
 2. **Las búsquedas de la madrugada del día de apertura sí rindieron**: Irapuato (pastor) y Chiapa de Corzo, ambos de la ventana de 133.
 3. **Los pendientes «sin URL con fecha» rinden recuperaciones cuando se buscan expresamente**: Almoloya y El Guayabo.
 4. **Sinaloa y Sonora: séptima edición sin dominio de fiscalía devuelto.**
+
+**Segunda ronda** (sobre `9622592`):
+
+- **`editor-duplicidad`**: veinte pases, catorce con «CORREGIR» (2, 7, 12, 13, 14 sin hallazgo). **`procedencia-cifras`**: veinte hallazgos «CORREGIR»; 4 búsquedas (acumulado **200 de 200**).
+- **Aplicados**: desglose de Laguna Colorada retirado de las tres versiones; «4 armas» por resumen de Por Esto y SDP; armamento marcado **PROVISIONAL**; Silao sin narración de método; Valoración con reserva en `-001`, `-003`, `-005`; Monterrey territorio y recuento de fuentes (N 6, R 3); Puebla con Síntesis; Barrancos «día por inferencia», confluencia con Nakayama y conteo provisional; `-014` motivo de exclusión (fuente única); `-018` panorama sin vínculo; `-019` deslinde de `ARG-120-007`; Chiapa de Corzo «uno a tres» y 🟡 si 1; deslindes de detenciones sin mecanismo; Ensenada (tres culpables, veredicto del 9-oct por resumen); marcas de resumen en sentencias; Banderilla (cifra por *slug* de La Opinión); cobertura de alto impacto **19 de 32 con consulta propia, 12 regional, Ags NO REVISADA**; conclusiones 1-5 reformuladas (la 5 pasa a agresores en motocicleta; ya no usa el cargo como patrón); **seguimientos de 133 en una línea del panorama, fuera del semáforo**; FE-001 con rangos condicionados.
+- **No aplicados, con motivo**: (1) campo `fecha` de `EVENTOS` para detenciones y recuperaciones sin fecha del hecho: `validar.js` exige fecha ISO dentro de ventana; se mantiene la fecha de publicación y **el campo `hora` del tooltip dice «detención no fechada; publicada el …» / «hecho no fijado»**. (2) Criterio institucional: se mantiene el fijado en §7 («la Fiscalía investiga» no cuenta; «la Fiscalía identifica/declara» sí); aplicado uniformemente. (3) Colores de Patamban y Coatzacoalcos: decisión del destinatario; ya no se describen como autoridad o servidora pública en este archivo. (4) Pie del móvil: convención del generador.
+
