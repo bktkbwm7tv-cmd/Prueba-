@@ -818,3 +818,29 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-133-FE-001` | 133 | 2026-10-15 | ARG-133-FE-001 — Omisiones de ARGOS 132: Pénjamo, Silao ×2, Escuinapa Malecón; verde Querétaro (Sinergia); 132 recalculado: rojos 3, amarillos 6, verdes 2, muertos 10. Cotija SIN fe de erratas. NO PUBLICADA EN EL CARTELÓN |
 | `ARG-133-FE-002` | 133 | 2026-10-15 | ARG-133-FE-002 — Omisión de ARGOS 131 (o 132): Cajeme; 131 amarillos 4. NO PUBLICADA EN EL CARTELÓN |
 | `ARG-133-FE-003` | 133 | 2026-10-15 | ARG-133-FE-003 — Omisiones de 129-130 (Jerez) y 127-128 (Tecuala), por asignar. NO PUBLICADA EN EL CARTELÓN |
+| `ARG-134-001` | 134 | 2026-10-15 | ARG-134-001 — Silao (Barrio Nuevo), Guanajuato: Ataque armado: 3 hombres muertos; 15-oct, tarde (🔴) |
+| `ARG-134-002` | 134 | 2026-10-15 | ARG-134-002 — Monterrey / San Pedro Garza García (Gómez Morín), Nuevo León: Ataque a un automóvil: 2 hombres muertos; 15-oct, ~12:10 (🔴) |
+| `ARG-134-003` | 134 | 2026-10-15 | ARG-134-003 — Coquimatlán (centro, calle Hidalgo), Colima: Ataque armado: 2 a 3 muertos, una de ellas menor (contradicho); 15-oct, tarde (🔴) |
+| `ARG-134-004` | 134 | 2026-10-15 | ARG-134-004 — Tlalnepantla de Baz (San Lucas Patoni), Estado de México: Hallazgo de 2 cuerpos emplayados; 15-oct, hora no fijada (🔴) |
+| `ARG-134-005` | 134 | 2026-10-16 | ARG-134-005 — Puebla (col. Tres Cerritos, bulevar Carmelitas), Puebla: Policía estatal asesinado en su día de descanso; 16-oct, mañana (🔴) |
+| `ARG-134-006` | 134 | 2026-10-15 | ARG-134-006 — Tangancícuaro (Patamban), Michoacán: Representante comunal asesinado; 15-oct, mañana (🟡) |
+| `ARG-134-007` | 134 | 2026-10-15 | ARG-134-007 — Santa Catarina (Rincón de las Mitras), Nuevo León: Ataque armado: 1 muerto y 1 herido; 15-oct, ~18:45 (🟡) |
+| `ARG-134-008` | 134 | 2026-10-15 | ARG-134-008 — Yautepec (Oaxtepec, av. La Nacional), Morelos: Comerciante asesinada a balazos; 15-oct, mediodía (🟡) |
+| `ARG-134-009` | 134 | 2026-10-15 | ARG-134-009 — Azcapotzalco (col. Pasteros), Ciudad de México: Ataque a un automóvil: 2 heridos; 15-oct, tarde (🟡) |
+| `ARG-134-010` | 134 | 2026-10-15 | ARG-134-010 — Coacalco (col. Zacuauhtitla), Estado de México: Ataque armado: 2 heridos, una de ellas menor; 15-oct, mañana (🟡) |
+| `ARG-134-011` | 134 | 2026-10-15 | ARG-134-011 — Coatzacoalcos (fracc. Santa Cecilia), Veracruz: Médica asesinada: feminicidio en investigación; 15-oct, tarde (🟡) |
+| `ARG-134-012` | 134 | 2026-10-15 | ARG-134-012 — Hermosillo (col. Villa de Seris), Sonora: 1 joven asesinado a balazos; pub. 15-oct, hora no fijada (🟡) |
+| `ARG-134-013` | 134 | 2026-10-15 | ARG-134-013 — Culiacán (Infonavit Barrancos), Sinaloa: 1 hombre asesinado a balazos; 15-oct, hora no fijada (🟡) |
+| `ARG-134-014` | 134 | 2026-10-16 | ARG-134-014 — Azcapotzalco, Ciudad de México: 1 detenido por el ataque de la col. Pasteros; pub. 16-oct, hora no fijada (🟢) |
+| `ARG-134-015` | 134 | 2026-10-15 | ARG-134-015 — Puerto Aventuras, Quintana Roo: Detenido el presidente municipal por extorsión agravada; 15-oct, hora no fijada (🟢) |
+| `ARG-134-016` | 134 | 2026-10-15 | ARG-134-016 — Culiacán (Laguna Colorada, Los Becos y Costa Rica), Sinaloa: Cinco cateos: 7 detenidos y 4 armas; 15-oct, hora no fijada (🟢) |
+| `ARG-134-017` | 134 | 2026-10-15 | ARG-134-017 — Chiapa de Corzo, Chiapas: 1 detenido por la balacera de un bar clandestino; pub. 15-oct, hora no fijada (🟢) |
+| `ARG-134-018` | 134 | 2026-10-16 | ARG-134-018 — Irapuato (col. Las Rosas), Guanajuato: 1 detenido por el doble homicidio de Villas de El Dorado; pub. 16-oct, hora no fijada (🟢) |
+| `ARG-134-REC-001` | 134 | 2026-10-15 | ARG-134-REC-001 — Irapuato (Villas de El Dorado), Guanajuato: Pastor y su esposa asesinados; ventana de ARGOS 133; fuera de totales; 🔴 en su ventana |
+| `ARG-134-REC-002` | 134 | 2026-10-14 | ARG-134-REC-002 — Chiapa de Corzo (col. Ribera Las Flechas), Chiapas: Balacera en un bar: 2 a 3 muertos (contradicho); ventana de ARGOS 133 (132 SI FUE ANTES DE LAS 08:19) — HORA NO FIJADA; fuera de totales; 🔴 en su ventana |
+| `ARG-134-REC-003` | 134 | 2026-10-14 | ARG-134-REC-003 — Apatzingán (El Guayabo), Michoacán: Ataque a una vivienda: un hombre y su hija muertos; ventana de ARGOS 132 O ARGOS 133 — FECHA NO FIJADA; fuera de totales; 🔴 en su ventana |
+| `ARG-134-REC-004` | 134 | 2026-10-11 | ARG-134-REC-004 — Almoloya de Juárez (San Agustín Altamirano), Estado de México: Agente de la FGR muerto y otro herido; ventana de ARGOS 130; fuera de totales; 🔴 en su ventana |
+| `ARG-134-REC-005` | 134 | 2026-10-12 | ARG-134-REC-005 — Puebla (av. 11 Sur, col. Guadalupe Hidalgo), Puebla: Ataque a personal de la Fiscalía: 1 herido; ventana de ARGOS 131 (132 SI FUE DESPUÉS DE LAS 07:23 DEL 13); fuera de totales; 🔴 en su ventana |
+| `ARG-134-ARM-001` | 134 | 2026-10-15 | ARG-134-ARM-001 — Culiacán (Laguna Colorada), Sinaloa: 1 corta, 3 largas, 8 cargadores, 7 detenidos; desglose solo por resumen; confianza Bajo |
+| `ARG-134-FE-001` | 134 | 2026-10-16 | ARG-134-FE-001 — Omisiones de ARGOS 133: Irapuato (pastor), Chiapa de Corzo; El Guayabo (132 o 133); 133 recalculado: rojos 7, muertos 14 a 15. NO PUBLICADA EN EL CARTELÓN |
+| `ARG-134-FE-002` | 134 | 2026-10-16 | ARG-134-FE-002 — Omisiones de ARGOS 130 (Almoloya de Juárez, agente FGR) y 131 (Puebla, personal de Homicidios de la FGE). NO PUBLICADA EN EL CARTELÓN |
