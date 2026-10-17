@@ -2133,7 +2133,7 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 | **SONORA · Hermosillo** (`-005`, `-006`) | Segunda fuente; hora de `-006` |
 | **SINALOA · La Costerita** (`-007`) | Ruta con día; identificación |
 | **CDMX** (`-012`) | Comunicado de la SSC; alcaldía; fecha de la detención |
-| **COLIMA · El Tívoli** | `SIN FECHA FIJADA` de 135: ruta con día (si se fija dentro de 16-oct 11:34 → 17-oct 09:28, recuperación 🟡 no fichable; registrar) |
+| **COLIMA · El Tívoli** (`-013`) | Ruta con día; identificación |
 | **GUERRERO · Taxco** | Detención publicada el 16-oct por el asesinato de 6 policías (2020): 🟢 candidato no examinado |
 | **«El Tripa»** | Fecha de la detención (9 o 16-oct) |
 | **Colores pendientes del destinatario** | Patamban (persona defensora no acreditada), Coatzacoalcos (servidora pública), San Blas Atempa (docente), Iztapalapa (víctimas múltiples), **Cajeme** (agresión de los ocupantes durante una persecución iniciada por la autoridad) |
@@ -2147,7 +2147,7 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 2. **El coordinador fijó los dos rojos con dos muertos** (Culiacán, Tijuana) que la ola trajo sin ruta fechada.
 3. **Armamento sin total verificable**: las dos filas del corte quedaron en ceros por posible duplicidad (Pokémon ↔ Laguna Colorada) y posible evento anterior (cateos ↔ boletín del 15-oct).
 4. **Sentencias: Sonora y Sinaloa, octava edición `NO REVISADA`.** **14 `NO REVISADA`**: BC, Son, Chih, Sin · Coah · Mich, Nay, Ags · CDMX, Tlax, Hgo · Gro, Camp, Yuc.
-5. **Armamento `NO REVISADA` (21)**: BC, BCS, Son, Sin, Dgo · NL, SLP · Jal, Mich, Gto · CDMX, Edomex, Mor, Pue, Tlax, Hgo, Qro · Gro, Chis, Camp, QRoo; **6 solo por portal del gobierno estatal** (Coah, Tamps, Zac, Nay, Ags, Tab). **El `site:` encadenado con `OR` hace que el buscador ignore el operador: un dominio por consulta.**
+5. **Armamento `NO REVISADA` (21)**: BC, BCS, Son, Sin, Dgo · NL, SLP · Jal, Mich, Gto · CDMX, Edomex, Mor, Pue, Tlax, Hgo, Qro · Gro, Chis, Camp, QRoo; **8 por portal o subsitio del gobierno estatal** (Coah, Tamps, Zac, Col, Nay, Ags, Ver, Tab); solo 3 por dominio propio (Chih, Oax, Yuc). **El `site:` encadenado con `OR` hace que el buscador ignore el operador: un dominio por consulta.**
 6. **Ciclo siguiente: B** (Noreste + Golfo), tras la prioridad de las `NO REVISADA`.
 7. **Presupuesto**: 2 + 159 + 8 + 30 = **199**; segunda ronda sin búsquedas.
 8. **El índice del buscador casi no llega a la noche del viernes ni al sábado** en Golfo, Centro y Noreste: buscar por fecha de cierre en la ruta al final de la ola, no al principio.

@@ -1,6 +1,6 @@
 # ARGOS 135 — Archivo de fuentes
 
-**Corte**: 2026-10-17 · **Ventana**: 16-oct 11:34 → 17-oct 09:28 CDMX (**21 h 54 min**; `WINDOW_DAYS = 2`) · **Densidad**: 12 hechos propios / 21,9 h = **0,55 hechos/hora**, cálculo propio.
+**Corte**: 2026-10-17 · **Ventana**: 16-oct 11:34 → 17-oct 09:28 CDMX (**21 h 54 min**; `WINDOW_DAYS = 2`) · **Densidad**: 13 hechos propios / 21,9 h = **0,59 hechos/hora**, cálculo propio.
 **Hora de cierre**: hora real de arranque de la sesión (Bloque 0, 09:28 CDMX). Las consultas continuaron hasta las **10:40 CDMX** (marca «Consulta» del cartelón); los hechos posteriores a las 09:28 pertenecen a ARGOS 136.
 
 Informes íntegros de los seis equipos: extraídos al *scratchpad* de la sesión (`informe-<región>.md`) y entregados a los controles.
@@ -12,10 +12,10 @@ Informes íntegros de los seis equipos: extraídos al *scratchpad* de la sesión
 
 ## 2. Red y modo de búsqueda
 
-- **Egreso**: `curl https://www.gob.mx/fgr` → **`000`**, 09:28. **Ningún documento oficial leído íntegro.** Techo **★★★☆☆**.
+- **Egreso**: `curl https://www.gob.mx/fgr` → **`000`**, 09:28. **Ningún documento oficial leído íntegro.** Techo de política **★★★★☆**; esta edición no supera **★★★☆☆**.
 - **Consulta de control** («ataque armado muertos "16 de octubre" 2026 México», en los dos modos): `standard` **ningún hecho mexicano del 16-oct**; `extended`, tampoco del 16, pero sí hechos del 15 y anteriores (Irapuato, Valle de Santiago). **Se mantuvo `extended` obligatorio.**
 - **Presupuesto**: control 2 + ola (Noroeste 26, Noreste 24, Occidente 28, Centro 30, Golfo y federal 27, Sureste 24 = **159**) + **8 del coordinador** (6 en la ola, 2 tras la primera ronda: CDMX motociclista, La Costerita) = **169**; `procedencia-cifras` **30** → **199 de 200**. `editor-duplicidad` no busca en la web; la segunda ronda de controles se hace **sin búsquedas**.
-- **Rendimiento del coordinador** (6): Culiacán, Gran Vía (**ruta fechada**: Línea Directa 2026-10-16; hora 14:40-15:00 → `ARG-135-001`) · Tijuana, Divina Providencia (titular «la tarde del 16 de octubre», ~19:00 → `ARG-135-002`) · Apatzingán, tres cuerpos (Quadratín + El Congresista + Respuesta; el resultado «heridas por explosivos» es de junio: **no se mezcla**) · «Pokémon» (confirma 4 detenidos, ametralladora y 417 cartuchos en titular de La Nigua; fecha del operativo no publicada) · «madrugada de este sábado» (sin hecho mexicano con muertos; Apatzingán, joven atropellado tras disparar, sin muertos, visto) · boletín federal «16 de octubre de 2026» (no hallado: tercera forma de la triple consulta).
+- **Rendimiento del coordinador** (6): Culiacán, Gran Vía (**ruta fechada**: Línea Directa 2026-10-16; hora 14:40-15:00 → `ARG-135-001`) · Tijuana, Divina Providencia (titular «la tarde del 16 de octubre», ~19:00 → `ARG-135-002`) · Apatzingán, tres cuerpos (Quadratín + El Congresista + Respuesta; el resultado «heridas por explosivos» es de junio: **no se mezcla**) · «Pokémon» (confirma 4 detenidos; «ametralladora y 417 cartuchos» en el *slug* de La Nigua, `lanigua.com.mx/caen-cuatro-ligados-a-los-chapitos-les-aseguran-ametralladora-y-417-cartuchos/`, sin fecha en la ruta; fecha del operativo no publicada) · «madrugada de este sábado» (sin hecho mexicano con muertos; Apatzingán, joven atropellado tras disparar, sin muertos, visto) · boletín federal «16 de octubre de 2026» (no hallado: tercera forma de la triple consulta).
 
 ## 3. Rotación — prioridad sobre el ciclo y CICLO A, declarados
 
@@ -33,7 +33,7 @@ Serie: … · C (134) no · **A (135) no.**
 
 | Acciones de | Estado |
 |---|---|
-| **15-oct** | **EXISTE**, formato diario, publicado el **16-oct**: Milenio (`acciones-relevantes-gabinete-de-seguridad-15-de-octubre-2026`), Talla Política, RED113, Emsavalles (republicadores, **no independientes**). Entidades, por resumen: BC, Col, Chih, Gro, Jal, Qro, QRoo, Sin, Son. Acciones del 15-oct: ventana de 134 → `EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE`, fuera del total. **Cifras solo por resumen: no se imprimen** (Ensenada 5 armas; Manzanillo 15 detenidos; Zapopan 1 larga; Atoyac de Álvarez, laboratorio) |
+| **15-oct** | **EXISTE**, formato diario, publicado el **16-oct solo por resumen** (la ruta de Milenio dice «15 de octubre»; Emsavalles, titular 15 y cuerpo 16): Milenio (`acciones-relevantes-gabinete-de-seguridad-15-de-octubre-2026`), Talla Política, RED113, Emsavalles (republicadores, **no independientes**). Entidades, por resumen: BC, Col, Chih, Gro, Jal, Qro, QRoo, Sin, Son. Acciones del 15-oct: ventana de 134 → `EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE`, fuera del total. **Cifras solo por resumen: no se imprimen** (Ensenada 5 armas; Manzanillo 15 detenidos; Zapopan 1 larga; Atoyac de Álvarez, laboratorio) |
 | **16-oct** | `SIN RESULTADO INDEXADO EN VENTANA` en las tres formas (día suelto; agregado «16 y 17»; título entre comillas sin `site:`, por Golfo y por el coordinador). Una página regional con titular «15» y cuerpo «16» (Chiapas, 171 kg de cocaína) tiene **fecha incoherente**: no se fecha |
 
 **Defensa**: `gob.mx/defensa/archivo/prensa` devuelto, último ítem 14-oct → SRIV. **Marina**: `gob.mx/semar` devuelto, índice hasta septiembre → SRIV. **GN**: SRIV (lo más reciente, oct-2025). **FGR**: `gob.mx/fgr` devuelto con páginas 2018-2022 → SRIV. `gabinetedeseguridad.gob.mx/resultados`: no devuelto → `NO REVISADA`.
@@ -94,17 +94,17 @@ Serie: … · C (134) no · **A (135) no.**
 | **Tepic** (`-011`) | 🟢: orden de aprehensión cumplida contra un policía estatal por el homicidio de un adolescente del 3-oct (homicidio del 3-oct no publicado en su ventana; no se recupera como `-REC-`: es anterior a las cinco ediciones previas) |
 | **Linares** (`-REC-001`) | 🔴 en su ventana por homicidio múltiple. Día contradicho: Fiscalía «jueves» (por resumen), Milenio y Telediario «miércoles». Primera publicación: El Mañana 2026/10/15. **134 si fue el 15; 133 si fue el 14** |
 | **Tezontepec de Aldama** (`-REC-002`) | 🔴 en su ventana por ataque contra autoridades: el grupo dispara contra policías que acuden a un reporte. Una sola fuente con ruta fechada (La Silla Rota 2026/10/13) |
-| **Colima, El Tívoli** | Mujer asesinada el 16 ~14:20 **solo por resumen**, AFmedios, Meganoticias y Vadenuez sin fecha en ruta: **no se ficha; `SIN FECHA FIJADA` de la ventana de 135** (no de 136) |
+| **Colima, El Tívoli** (`-013`) | Mujer asesinada el 16 ~14:20 **solo por resumen**; AFmedios (titular «Asesinan a balazos a mujer en la colonia El Tívoli, en Colima»), Meganoticias y Vadenuez, sin fecha en ruta. **Fichado en la segunda ronda** por coherencia con La Costerita (mismo defecto: día solo por resumen), 🟡 ★★☆☆☆ con `FRONTERA` |
 | **Edomex, Marina y FGR** | 7 detenidos y armas; publicación del 17 solo por resumen, rutas sin fecha, desgloses contradictorios → visto, `POSIBLE DUPLICIDAD` |
 | **Villahermosa, FGR procesa a 8 con arsenal** | Vinculación del 14-oct (Diario de Tabasco 2026/10/14): fuera de ventana; aseguramiento sin cifra |
-| **CDMX, seis detenidos por balear a un motociclista** (`-012`) | Búsqueda del coordinador: Infobae 2026/10/17, Milenio; SSC por resumen, sin comunicado; ataque del miércoles 14 → 🟢 con `FRONTERA` |
-| **La Costerita** (`-007`) | Hallado por `procedencia-cifras`; búsqueda del coordinador: Noroeste, Sinaloahoy, Extraoficial, Noticiero Altavoz, Los Noticieristas (ruta `2026/10`); sábado 17 ~07:15 solo por resumen → 🟡 con `FRONTERA` |
+| **CDMX, seis detenidos por balear a un motociclista** (`-012`) | Búsqueda del coordinador: Infobae `infobae.com/mexico/2026/10/17/detienen-a-seis-hombres-por-balear-a-un-motociclista-y-robarle-su-moto-en-cdmx/` (titular «Detienen a seis hombres por balear a un motociclista y robarle su moto en CDMX»), Milenio `milenio.com/policia/caen-seis-por-balear-a-un-joven-para-robarle-su-moto-en-cdmx`; SSC por resumen, sin comunicado; ataque del miércoles 14 → 🟢 con `FRONTERA` |
+| **La Costerita** (`-007`) | Hallado por `procedencia-cifras`; búsqueda del coordinador, titulares: Noroeste «Hallan a un hombre ejecutado y maniatado a orillas de La Costerita en Culiacán» · Sinaloahoy «Fiscalía General del Estado investiga hallazgo de hombre maniatado sobre el Libramiento La Costerita» · Noticiero Altavoz «¡Atado de pies y manos! Localizan un ejecutado en La Costerita» · Los Noticieristas (ruta `2026/10`) «Ejecutado a balazos y atado de las manos y pies encuentran a un hombre en El Ranchito» · Extraoficial; sábado 17 ~07:15 solo por resumen → 🟡 con `FRONTERA` |
 | **Cachanillas y Nogales** (`-REC-003`, `-REC-004`) | Hallados por `procedencia-cifras`: fosas del 15-oct publicadas el 16 → 🔴 en la ventana de 134 (133 si antes de las 07:16) |
 | **Criterio de fuente institucional** | El de 134: declaración o comunicado citado de una autoridad nombrada; «la Fiscalía investiga / realiza diligencias» no cuenta. Meganoticias, Por Esto y medios estatales, regionales |
 
 ## 8. Fe de erratas (no va al cartelón)
 
-- **`ARG-135-FE-001`** — **Asignaciones de 134 resueltas**: Irapuato, pastor y esposa (`ARG-134-REC-001`) → **ARGOS 133** («madrugada de este 15»). Almoloya (`ARG-134-REC-004`) → **ARGOS 130** (domingo 11 por la noche): **+1 rojo, +1 muerto a 130**. Chiapa de Corzo (`-REC-002`): 2 muertos, 🔴 sostenido, ventana 132 o 133 sin fijar. El Guayabo (`-REC-003`): 13 o 14, sin fijar. **133 recalculado, cálculo propio**: rojos **6 a 8**, muertos por agresión **12 a 16** (antes 5 a 8 y 10 a 17). `ARG-134-017` y `-REC-002`: un hecho y su detención, sin doble cómputo; arma asegurada sin cifra.
+- **`ARG-135-FE-001`** — **Asignaciones de 134 resueltas**: Irapuato, pastor y esposa (`ARG-134-REC-001`) → **ARGOS 133** («madrugada de este 15»). Almoloya (`ARG-134-REC-004`) → **ARGOS 130** (domingo 11 por la noche): **+1 rojo, +1 muerto a 130**. Chiapa de Corzo (`-REC-002`): 2 muertos, 🔴 sostenido, ventana 132 o 133 sin fijar. El Guayabo (`-REC-003`): 13 o 14, sin fijar. **133 recalculado, cálculo propio**: rojos **6 a 8**, muertos por agresión **12 a 16** (antes 5 a 8 y 10 a 17); **6 a 11 y 12 a 18** si `ARG-135-REC-001`, `-003` y `-004` resultan de 133. `ARG-134-017` y `-REC-002`: un hecho y su detención, sin doble cómputo; arma asegurada sin cifra.
 - **`ARG-135-FE-002`** — **Recuperaciones de este corte**: Linares (`ARG-135-REC-001`) añade **1 rojo y 2 muertos** a ARGOS 134 (o a 133 si fue el 14). Cachanillas (`-REC-003`) y Nogales (`-REC-004`) añaden **1 rojo cada una** a ARGOS 134 (o a 133 si antes de las 07:16 del 15). Tezontepec de Aldama (`-REC-002`) añade **1 rojo y 1 muerto** a ARGOS 131. **134: 5 rojos → hasta 8.** Cálculo propio.
 - **Actualización de dato, no fe de erratas**: Tres Cerritos (día de descanso) · Barrancos (adolescente herido) · Atotonilco (2 mujeres y 3 hombres) · Laguna Colorada (desglose de 134 no localizado en ninguna fuente).
 
@@ -126,7 +126,7 @@ SRIV = `SIN RESULTADO INDEXADO EN VENTANA`. `SIN ACTUALIZACIÓN CONSTATADA`: **0
 | San Luis Potosí | regional | NO REVISADA (dominio no devuelto) | SRIV (`fiscaliaslp.gob.mx`) |
 | Zacatecas | SRIV · seguimiento Jerez | SRIV (`zacatecas.gob.mx`) | SRIV (`fiscaliazacatecas.gob.mx`) |
 | Jalisco | regional | NO REVISADA | SRIV (`fiscalia.jalisco.gob.mx`) |
-| Colima | regional · El Tívoli (visto) | SRIV (`col.gob.mx`) | SRIV (`fgecolima.mx`) |
+| Colima | regional · **hecho** (`-013`) | SRIV (`col.gob.mx`) | SRIV (`fgecolima.mx`) |
 | Nayarit | regional · **`-011`** | SRIV (`nayarit.gob.mx`) | NO REVISADA |
 | Aguascalientes | SRIV (consulta propia) | SRIV (`aguascalientes.gob.mx`) | NO REVISADA |
 | Michoacán | **hechos** (`-003`, `-004`) | NO REVISADA | NO REVISADA |
@@ -147,11 +147,11 @@ SRIV = `SIN RESULTADO INDEXADO EN VENTANA`. `SIN ACTUALIZACIÓN CONSTATADA`: **0
 | Yucatán | regional | SRIV (`ssp.yucatan.gob.mx`) | NO REVISADA |
 | Quintana Roo | SRIV | NO REVISADA | SRIV (`fgeqroo.gob.mx`, 16-ago) |
 
-**Sentencias: 18 de 32**; FGR revisada por búsqueda; **14 `NO REVISADA`**. **Armamento: 5 de 32 por dominio de seguridad o fiscalía** (Chih, Col, Ver, Oax, Yuc) y **6 solo por portal del gobierno estatal** (Coah, Tamps, Zac, Nay, Ags, Tab); 21 `NO REVISADA`. **Alto impacto: 20 de 32 con consulta propia**, 11 regional, **BCS `NO REVISADA`**.
+**Sentencias: 18 de 32**; FGR revisada por búsqueda; **14 `NO REVISADA`**. **Armamento: 3 de 32 por dominio propio de seguridad o fiscalía** (Chih, Oax, Yuc) y **8 por portal o subsitio del gobierno estatal** (Coah, Tamps, Zac, Col, Nay, Ags, Ver, Tab); 21 `NO REVISADA`. Oaxaca: `portal.fgeo.gob.mx` **publicó en el periodo** (boletín 2,897 del 16-oct, cateo sin armas, hora no fijada). **Alto impacto: 20 de 32 con consulta propia**, 11 regional, **BCS `NO REVISADA`**.
 
 ## 10. Hechos vistos y NO fichados
 
-Tula de Allende (🟡 de 130) · **Taxco**: detención publicada el 16-oct por el asesinato de 6 policías en 2020 (Sureste, sin examinar: 🟢 candidato, a 136) · **Manzanillo**: policía municipal asesinado, cuerpo en Tecomán (Nuevo Caxitlán) y ejecutado en Valle de las Garzas (15-oct, sin fecha verificable) · Colima: armamento de Tecomán y Coquimatlán sin fecha · TV Azteca BC «5 muertos en Tijuana y Ensenada» (agregado) · Escuinapa, exlíder ganadero asesinado (Infobae 2026/10/14, ventana de 132-133, 🟡) · Durango, FGR, rifle y 8 cargadores (6-oct) · Toluca, cuerpo junto a zona militar (15-oct, fuente única) · Tlaxcala, 20 años en Tepeyanco (14-oct, sin fecha en ruta) · Valle de Bravo, 2 largas y 5 detenidos (11-oct) · Veracruz, operativos del 14-15 oct (46 detenidos, sin armas) · Tizayuca, Los Héroes y SADASI (🟡 de 130, sin fecha en ruta) · Colima, El Tívoli (`SIN FECHA FIJADA` de 135) · Edomex, Marina/FGR · Apatzingán, joven atropellado tras disparar (madrugada del 17, sin muertos) · Ciudad Juárez, dos hombres en brecha de Santa Teresa (hallazgo del 11-oct, solo por resumen; fuera) · Chihuahua, ejecutado en un Fusion (sin fecha) · Mazatlán, mujer envuelta; Villa Unión, 2 muertos y 4 heridos (sin fecha) · Culiacán, Maxipista, 5 muertos: **hecho de 15-oct-2024** (año equivocado) · Quintana Roo, dos prófugos del Barrio 18 (Noticaribe 2026/10/16, sin examinar) · Cancún, 12-oct, cateos con armas (anterior) · Villahermosa, FGR procesa a 8 (vinculación del 14).
+Tula de Allende (🟡 de 130) · **Taxco**: detención publicada el 16-oct por el asesinato de 6 policías en 2020 (Sureste, sin examinar: 🟢 candidato, a 136) · **Manzanillo**: policía municipal asesinado, cuerpo en Tecomán (Nuevo Caxitlán) y ejecutado en Valle de las Garzas (15-oct, sin fecha verificable) · Colima: armamento de Tecomán y Coquimatlán sin fecha · TV Azteca BC «5 muertos en Tijuana y Ensenada» (agregado) · Escuinapa, exlíder ganadero asesinado (Infobae 2026/10/14, ventana de 132-133, 🟡) · Durango, FGR, rifle y 8 cargadores (6-oct) · Toluca, cuerpo junto a zona militar (15-oct, fuente única) · Tlaxcala, 20 años en Tepeyanco (14-oct, sin fecha en ruta) · Valle de Bravo, 2 largas y 5 detenidos (11-oct) · Veracruz, operativos del 14-15 oct (46 detenidos, sin armas) · Tizayuca, Los Héroes y SADASI (🟡 de 130, sin fecha en ruta) · Edomex, Marina/FGR · Apatzingán, joven atropellado tras disparar (madrugada del 17, sin muertos) · Ciudad Juárez, dos hombres en brecha de Santa Teresa (hallazgo del 11-oct, solo por resumen; fuera) · Chihuahua, ejecutado en un Fusion (sin fecha) · Mazatlán, mujer envuelta; Villa Unión, 2 muertos y 4 heridos (sin fecha) · Culiacán, Maxipista, 5 muertos: **hecho de 15-oct-2024** (año equivocado) · Quintana Roo, dos prófugos del Barrio 18 (Noticaribe 2026/10/16, sin examinar) · Cancún, 12-oct, cateos con armas (anterior) · Villahermosa, FGR procesa a 8 (vinculación del 14).
 
 ## 11. Sentencias — candidatas y vistas
 
@@ -169,10 +169,10 @@ Tula de Allende (🟡 de 130) · **Taxco**: detención publicada el 16-oct por e
 
 ## 12. Desglose de cálculos propios
 
-- **Muertos en hechos propios**: Culiacán 2 + Culiacán 1 + Tijuana 2 + Apatzingán 3 + Apatzingán 1 + Hermosillo 1 + Hermosillo 1 = **11**. Heridos integrados: **0**. Localizados con vida: **6**.
+- **Muertos en hechos propios**: Culiacán 2 + Culiacán 1 + Tijuana 2 + Apatzingán 3 + Apatzingán 1 + Hermosillo 1 + Hermosillo 1 + Colima 1 = **12**. Heridos integrados: **0**. Localizados con vida: **6**.
 - **Armamento**: **sin total nacional verificable**. ARM-001 (publicado: 3 cortas, 1 ametralladora, 16 cargadores, 417 cartuchos, 4 detenidos) y ARM-002 (1 larga) **en ceros hasta validación**.
-- **Duración**: 16-oct 11:34 → 17-oct 09:28 = 21 h 54 min. **Densidad**: 12 / 21,9 h = 0,548 → **0,55**.
-- **FRONTERA**: 10 de 12 (`-003` a `-012`).
+- **Duración**: 16-oct 11:34 → 17-oct 09:28 = 21 h 54 min. **Densidad**: 13 / 21,9 h = 0,594 → **0,59**.
+- **FRONTERA**: 11 de 13 (`-003` a `-013`).
 
 ## 13. Los dos controles editoriales
 
@@ -192,23 +192,29 @@ Tula de Allende (🟡 de 130) · **Taxco**: detención publicada el 16-oct por e
 3. **Los encargos de 134 se resolvieron casi todos por exclusión o por mayoría**, no por fragmento: Silao (el 14 era otro hecho), Tres Cerritos (hora antes de las 11:34), Almoloya (domingo), Irapuato (madrugada).
 4. **Sonora y Sinaloa: octava edición sin dominio de fiscalía devuelto.** El `site:` encadenado con `OR` hace que el buscador ignore el operador: consultar cada dominio por separado.
 
+
+**Segunda ronda** (sobre `1feb68e`, sin búsquedas; informes `control-procedencia-r2.md`, `control-duplicidad-r2.md`):
+
+- **`procedencia-cifras`**: veinte hallazgos, diecinueve «CORREGIR» (4 sin hallazgo). **Aplicados**: 2 (paneles y tarjetas de armamento: «publicado, fuera del total»), 5, 6, 7 (`-002` a ★★☆☆☆ y R 4; TV Azteca BC, agregado), 8 (La Costerita con titulares), 9 (**El Tívoli fichado** como `-013`), 11 (recuentos de las recuperaciones), 12 (22 o 23 días, contradicho), 13 (Tepic: identidad del caso por resumen), 14 (topónimos de resumen marcados), 15 (Ensenada «asesinato» por titular), 16 (índice con sufijo «pub.»), 17, 18 (armamento 3 + 8 + 21; Oaxaca publicó), 19, 20 (rango condicionado de 133). **No aplicados, con motivo**: 1 y 10 (el control no vio las búsquedas del coordinador: el *slug* de La Nigua y el titular de Infobae de la CDMX existen; URL añadidas en §2 y §7); 3 (la fila de totales conserva los ceros: la leyenda `SIN TOTAL NACIONAL VERIFICABLE DURANTE EL CORTE` va en la nota inmediata y la regla de iconografía exige mostrar los ceros).
+
 ## 16. Emisores por ficha (lista íntegra)
 
 - `ARG-135-001` — Institucional: SIN BOLETÍN · Nacional: ninguna · Con fecha en la ruta: Línea Directa (2026-10-16), Luz Noticias (2026-10-16) · Recuento I 0 / N 0 / R 7 / A 0
-- `ARG-135-002` — Institucional: SIN BOLETÍN · Nacional: ninguna · Con fecha en la ruta: ninguna · Recuento I 0 / N 0 / R 5 / A 0
+- `ARG-135-002` — Institucional: SIN BOLETÍN · Nacional: ninguna · Con fecha en la ruta: ninguna · Recuento I 0 / N 0 / R 4 / A 0
 - `ARG-135-003` — Institucional: SIN BOLETÍN · Nacional: ninguna · Con fecha en la ruta: ninguna · Recuento I 0 / N 0 / R 4 / A 0
 - `ARG-135-004` — Institucional: SIN BOLETÍN · Nacional: ninguna · Con fecha en la ruta: Red Michoacán (2026/10/17), Grupo Marmor (2026/10/17) · Recuento I 0 / N 0 / R 4 / A 0
 - `ARG-135-005` — Institucional: SIN BOLETÍN · Nacional: ninguna · Con fecha en la ruta: Proyecto Puente (2026/10/17) · Recuento I 0 / N 0 / R 1 / A 0
 - `ARG-135-006` — Institucional: SIN BOLETÍN · Nacional: ninguna · Con fecha en la ruta: Proyecto Puente (2026/10/16) · Recuento I 0 / N 0 / R 1 / A 0
 - `ARG-135-007` — Institucional: SIN BOLETÍN · Nacional: ninguna · Con fecha en la ruta: ninguna · Recuento I 0 / N 0 / R 5 / A 0
-- `ARG-135-008` — Institucional: Gabinete de Seguridad (comunicado por cita) · Nacional: Infobae · El Financiero · MVS · Publimetro · Crónica · Con fecha en la ruta: Infobae (2026/10/16), El Financiero (2026/10/16), MVS Noticias (2026/10/16), Tribuna (2026/10/16), Publimetro (2026/10/16), Crónica (2026/10/16) · Recuento I 1 / N 5 / R 4 / A 0
-- `ARG-135-009` — Institucional: Gabinete de Seguridad (por cita) · Nacional: El Heraldo de México · El Universal · López-Dóriga · diario.mx · Con fecha en la ruta: El Heraldo de México (2026/10/16), diario.mx (2026/oct/16), El Diario de Chihuahua (2026/oct/16), Línea Directa (2026-10-16) · Recuento I 0 / N 4 / R 2 / A 0
+- `ARG-135-013` — Institucional: SIN BOLETÍN · Nacional: ninguna · Con fecha en la ruta: ninguna · Recuento I 0 / N 0 / R 3 / A 0
+- `ARG-135-008` — Institucional: Gabinete de Seguridad (comunicado por cita) · Nacional: Infobae · El Financiero · MVS · Publimetro · Crónica · Con fecha en la ruta: Infobae (2026/10/16), El Financiero (2026/10/16), MVS Noticias (2026/10/16), Tribuna (2026/10/16), Publimetro (2026/10/16), Crónica (2026/10/16) · Recuento I 1 / N 5 / R 5 / A 0
+- `ARG-135-009` — Institucional: Gabinete de Seguridad (por cita) · Nacional: El Heraldo de México · El Universal · López-Dóriga · Con fecha en la ruta: El Heraldo de México (2026/10/16), El Diario de Chihuahua / diario.mx (2026/oct/16), Línea Directa (2026-10-16) · Recuento I 0 / N 3 / R 2 / A 0
 - `ARG-135-010` — Institucional: Defensa (por cita) · Nacional: El Heraldo de México · Proceso · Infobae · Con fecha en la ruta: El Heraldo de México (2026/10/16), Proceso (2026/10/16), Tribuna (2026/10/16), Quinto Poder (2026/10/16), Infobae (2026/10/17) · Recuento I 1 / N 3 / R 2 / A 0
 - `ARG-135-011` — Institucional: Gobierno de Nayarit (comunicado por cita) · Nacional: Infobae · Con fecha en la ruta: Infobae (2026/10/16), Meridiano (2026/10/17), Relatos Nayarit (2026/10/17) · Recuento I 1 / N 1 / R 2 / A 0
 - `ARG-135-012` — Institucional: SIN BOLETÍN · Nacional: Infobae · Milenio · Con fecha en la ruta: Infobae (2026/10/17) · Recuento I 0 / N 2 / R 0 / A 0
-- `ARG-135-REC-001` — Institucional: FGJ Nuevo León (por cita) · Nacional: MVS · Milenio · Con fecha en la ruta: El Mañana (2026/10/15), MVS Noticias (2026/10/16), Punto x Punto (2026/10/16), Enfoque Monterrey (2026/10/17) · Recuento I 1 / N 2 / R 4 / A 0
-- `ARG-135-REC-002` — Institucional: SIN BOLETÍN · Nacional: ninguna · Con fecha en la ruta: La Silla Rota (2026/10/13) · Recuento I 0 / N 0 / R 4 / A 0
-- `ARG-135-REC-003` — Institucional: SIN BOLETÍN · Nacional: ninguna · Con fecha en la ruta: Tijuana en Línea (2026/10/16), El Imparcial (2026/10/16), Opinia (2026/10/16), Lindero Norte (2026/10/16) · Recuento I 0 / N 0 / R 4 / A 0
+- `ARG-135-REC-001` — Institucional: FGJ Nuevo León (por cita) · Nacional: MVS · Milenio · Con fecha en la ruta: El Mañana (2026/10/15), MVS Noticias (2026/10/16), Punto x Punto (2026/10/16), Enfoque Monterrey (2026/10/17) · Recuento I 1 / N 2 / R 5 / A 0
+- `ARG-135-REC-002` — Institucional: SIN BOLETÍN · Nacional: La Silla Rota · Con fecha en la ruta: La Silla Rota (2026/10/13) · Recuento I 0 / N 1 / R 4 / A 0
+- `ARG-135-REC-003` — Institucional: SIN BOLETÍN · Nacional: N+ · Con fecha en la ruta: Tijuana en Línea (2026/10/16), El Imparcial (2026/10/16), Opinia (2026/10/16), Lindero Norte (2026/10/16) · Recuento I 0 / N 1 / R 5 / A 0
 - `ARG-135-REC-004` — Institucional: SIN BOLETÍN · Nacional: ninguna · Con fecha en la ruta: El Imparcial (2026/10/16) · Recuento I 0 / N 0 / R 1 / A 0
 
-Regionales sin fecha en la ruta, por ficha: `-001` Azteca Sinaloa, Meganoticias, Sinaloahoy, Noroeste, Los Noticieristas (2026/10) · `-002` Zeta (2026/10), Diario Tijuana (2026/10), Alfredo Álvarez, TV Azteca BC, El Congresista · `-003` Quadratín, El Congresista, Respuesta Michoacán, La Primera de AM · `-004` La Voz de Michoacán, Meganoticias · `-007` Noroeste, Sinaloahoy, Extraoficial, Noticiero Altavoz, Los Noticieristas (2026/10) · `-008` La Nigua, Maya Comunicación, Quadratín México, Posta · `-009` El Universal, López-Dóriga · `-010` Récord · `-012` Milenio · `-REC-001` Milenio, Telediario, El Porvenir · `-REC-002` News Hidalgo, Énfasis, Criterio Hidalgo, Quadratín Hidalgo · `-REC-003` N+, Infobaja.
+Regionales sin fecha en la ruta, por ficha: `-001` Azteca Sinaloa, Meganoticias, Sinaloahoy, Noroeste, Los Noticieristas (2026/10) · `-002` Zeta (2026/10), Diario Tijuana (2026/10), Alfredo Álvarez, El Congresista (TV Azteca BC: agregado, solo corrobora) · `-003` Quadratín, El Congresista, Respuesta Michoacán, La Primera de AM · `-004` La Voz de Michoacán, Meganoticias · `-007` Noroeste, Sinaloahoy, Noticiero Altavoz, Los Noticieristas (2026/10), Extraoficial · `-013` AFmedios, Meganoticias, Vadenuez · `-008` La Nigua (*slug* con «ametralladora y 417 cartuchos»), Maya Comunicación, Quadratín México, Posta, Tribuna (2026/10/16) · `-009` El Diario de Chihuahua/diario.mx, Línea Directa · `-010` Tribuna, Quinto Poder (Récord 2026/10/17, no contado) · `-012` Milenio · `-REC-001` El Porvenir, Telediario · `-REC-002` News Hidalgo, Énfasis, Criterio Hidalgo, Quadratín Hidalgo · `-REC-003` Infobaja.

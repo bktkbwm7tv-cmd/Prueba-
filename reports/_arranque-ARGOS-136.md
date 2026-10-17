@@ -38,7 +38,7 @@ abrir `claude/argos-136` antes de fusionar; no es fallo.
 | Número | **ARGOS 136** |
 | Ventana | **abre 2026-10-17 09:28 CDMX** —donde cerró ARGOS 135— y cierra a la **hora real de arranque de la producción** |
 | Serie | 23 h 04 (131) · 24 h 56 (132) · 22 h 57 (133) · 28 h 18 (134) · **21 h 54 (135)** |
-| Densidad | 0,26 · 0,24 · 0,48 · 0,67 · **0,55** — 135: **10 de 12 hechos en `FRONTERA`** |
+| Densidad | 0,26 · 0,24 · 0,48 · 0,67 · **0,59** — 135: **11 de 13 hechos en `FRONTERA`** |
 
 ## BLOQUE 2 — LECTURA OBLIGATORIA
 
@@ -60,7 +60,7 @@ Ver `_pendientes.md`, «Abiertos que ARGOS 136 hereda». Prioridad: **Pokémon �
 
 ## BLOQUE 5 — BARRIDO Y ROTACIÓN
 
-- **PRIORIDAD SOBRE EL CICLO**: armamento 21 `NO REVISADA` + 6 solo por portal estatal; sentencias 14 `NO REVISADA` (ver pendientes). Después, **CICLO B** (Noreste + Golfo).
+- **PRIORIDAD SOBRE EL CICLO**: armamento 21 `NO REVISADA` + 8 solo por portal estatal; sentencias 14 `NO REVISADA` (ver pendientes). Después, **CICLO B** (Noreste + Golfo).
 - **Criterio de cobertura**: armamento y sentencias, `REVISADA` = búsqueda dirigida que devolvió páginas del **dominio oficial de esa institución**; **el portal genérico del gobierno estatal se declara aparte** («solo por portal del gobierno estatal»).
 - **Fosas por entidad fronteriza** (BC, Son, Chih, Tamps): en 135 la búsqueda regional no las trajo.
 

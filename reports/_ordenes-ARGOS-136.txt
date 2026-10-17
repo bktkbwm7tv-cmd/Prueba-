@@ -30,7 +30,7 @@ Si NO devuelve 000, DILO y lee los boletines directamente (WebFetch). Si devuelv
 000, sigue bloqueado: solo WebSearch.
 
 VENTANA: abre 2026-10-17 09:28 CDMX —donde cerró ARGOS 135— y cierra a la HORA REAL
-de tu arranque. Recalcula duración y densidad al sellar. 135: 21 h 54 min, 0,55.
+de tu arranque. Recalcula duración y densidad al sellar. 135: 21 h 54 min, 0,59.
 
 ================================================================================
 MODO DE BÚSQUEDA
@@ -73,7 +73,7 @@ BARRIDO
  EN LAS CINCO EDICIONES PREVIAS Y EN reports/indice-arg-id.md, TAMBIÉN PARA -REC-.
  PRIORIDAD SOBRE EL CICLO: armamento de las 21 NO REVISADAS (BC, BCS, Son, Sin, Dgo,
  NL, SLP, Jal, Mich, Gto, CDMX, Edomex, Mor, Pue, Tlax, Hgo, Qro, Gro, Chis, Camp,
- QRoo) y las 6 solo por portal estatal (Coah, Tamps, Zac, Nay, Ags, Tab); sentencias
+ QRoo) y las 8 solo por portal estatal (Coah, Tamps, Zac, Col, Nay, Ags, Ver, Tab); sentencias
  de las 14 (BC, Son, Chih, Sin, Coah, Mich, Nay, Ags, CDMX, Tlax, Hgo, Gro, Camp,
  Yuc). Después, CICLO B (Noreste + Golfo). Boletín federal: triple consulta para
  el 16 y 17-oct.
