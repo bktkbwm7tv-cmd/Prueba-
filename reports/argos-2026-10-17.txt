@@ -57,7 +57,7 @@ Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
   Colima · Colima (col. El Tívoli) · 16-OCT, DÍA SOLO POR RESUMEN | Mujer asesinada a balazos | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-135-013
   Sinaloa · Culiacán · PUB. 16-OCT, HORA NO FIJADA | 4 detenidos, por titular; armamento publicado, fuera del total | 🟢 Verde | Gabinete de Seguridad (comunicado por cita) | Infobae · El Financiero · MVS · Publimetro · Crónica | ★★☆☆☆ | ARG-135-008
   Sinaloa · Mazatlán (Mangle Marina y Golf) y Culiacán (El Carrizal) · PUB. 16-OCT, HORA NO FIJADA | Cateos: 1 detenido y 8 vehículos, por titular; arma larga solo por resumen | 🟢 Verde | Gabinete de Seguridad (por cita) | El Heraldo de México · El Universal · López-Dóriga | ★★☆☆☆ | ARG-135-009
-  Guerrero · Ajuchitlán del Progreso (sierra; Puerto Grande o El Balcón) · PUB. 16-OCT, HORA NO FIJADA | 6 campesinos localizados con vida; 1 sigue desaparecido | 🟢 Verde | Defensa (por cita) | El Heraldo de México · Proceso · Infobae | ★★★☆☆ | ARG-135-010
+  Guerrero · Ajuchitlán del Progreso (sierra; Puerto Grande o El Balcón) · PUB. 16-OCT, HORA NO FIJADA | 6 campesinos localizados con vida; 1 sigue desaparecido | 🟢 Verde | Defensa (por cita) | El Heraldo de México · Proceso · Infobae | ★★☆☆☆ | ARG-135-010
   Nayarit · Tepic · PUB. 16-OCT, HORA NO FIJADA | 1 policía estatal detenido por la muerte de un adolescente | 🟢 Verde | Gobierno de Nayarit (comunicado por cita) | Infobae | ★★☆☆☆ | ARG-135-011
   Ciudad de México · zona norte (alcaldía no publicada) · PUB. 17-OCT, HORA NO FIJADA | 6 detenidos por el ataque a un motociclista | 🟢 Verde | SIN BOLETÍN | Infobae · Milenio | ★★☆☆☆ | ARG-135-012
   Nuevo León · Linares (col. Provileón) · VENTANA ARGOS 134 (133 SI FUE LA NOCHE DEL MIÉRCOLES 14) — DÍA CONTRADICHO | Ataque armado: 2 muertos y 1 herido | 🔴 Rojo (en su ventana) | FGJ Nuevo León (por cita) | MVS · Milenio | ★★★☆☆ | ARG-135-REC-001
@@ -70,7 +70,6 @@ Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
 
 Ventana 16-oct 11:34 → 17-oct 09:28 CDMX (21 h 54 min) · 13 hechos propios en 8 entidades ·
 densidad 0,59 hechos/hora; duración y densidad, cálculo propio. Orden: rojos, amarillos, verdes.
-Once de trece llevan FRONTERA DE VENTANA.
 Toque un ARG-ID para ir a su ficha, donde están las fuentes, el nivel de confianza y los
 deslindes.
 
@@ -78,9 +77,8 @@ NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
 
 Armamento: SIN TOTAL NACIONAL VERIFICABLE DURANTE EL CORTE · 2 filas en Sinaloa fuera del total
 hasta validación (ARG-135-ARM-001, posible duplicidad; ARG-135-ARM-002, posible evento
-anterior). Detenidos = solo los del mismo evento de aseguramiento de armamento. Entidades = con
-al menos un hecho propio. Muertos en hechos propios: 12 —Culiacán 2 + 1, Tijuana 2, Apatzingán 3
-+ 1, Hermosillo 1 + 1 y Colima 1—. Heridos: 0 integrados. Personas localizadas con vida: 6
+anterior). Muertos en hechos propios: 12 —Culiacán 2 + 1, Tijuana 2, Apatzingán 3 + 1,
+Hermosillo 1 + 1 y Colima 1—. Heridos: 0 integrados. Personas localizadas con vida: 6
 (ARG-135-010). Cálculo propio.
 Seguimientos de ediciones previas, fuera del semáforo: ARG-134-013, un adolescente herido leve
 por esquirla, solo por resumen (Línea Directa 2026-10-15) · ARG-134-005, «en su día de descanso»
@@ -109,12 +107,12 @@ detenido publicado · FGE Sinaloa a cargo, SOLO POR RESUMEN · identidades: no s
 
 ── TRAZABILIDAD
 
-ARG-135-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora y tipo de arma
-solo por resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 7
-· Abierta 0 · con fecha en la ruta: Línea Directa (2026-10-16) · Luz Noticias (2026-10-16) ·
-Hecho: 2026-10-16 · Hora: ~14:40 (llamada al 911) y ~15:00 (solo por resumen; versiones
-distintas) · Consulta: 2026-10-17 09:28-10:40 · Estatus: Parcialmente corroborado · Conteo de
-armamento: sin fila — no hubo armamento asegurado
+ARG-135-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día del hecho por
+ruta de publicación (2026-10-16); hora y tipo de arma solo por resumen; sin fuente institucional
+· Fuentes: Institucional 0 · Nacional 0 · Regional 7 · Abierta 0 · con fecha en la ruta: Línea
+Directa (2026-10-16) · Luz Noticias (2026-10-16) · Hecho: 2026-10-16 · Hora: ~14:40 (llamada al
+911) y ~15:00 (solo por resumen; versiones distintas) · Consulta: 2026-10-17 09:28-10:40 ·
+Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — no hubo armamento asegurado
 Deslindes y reservas: Gran Vía, Valle del Agua e Imala no figuran en las cinco ediciones previas
 ni en el índice. El liveblog de Noroeste («este viernes») no fecha el hecho.
 
@@ -127,8 +125,8 @@ POR RESUMEN · VIERNES 16-OCT, «la tarde del 16 de octubre», por titular de El
 Y DIARIO TIJUANA: RUTA SOLO CON AÑO Y MES · ~19:00, SOLO POR RESUMEN · disparos contra un hombre
 dentro de un vehículo; la mujer huye y es alcanzada, SOLO POR RESUMEN · 2 muertos —un hombre,
 bombero voluntario, y una mujer—, por titular (🔴) · 4 CASQUILLOS 9 MM, SOLO POR RESUMEN ·
-peritos y AEI de la FGE Baja California en la escena, SOLO POR RESUMEN · ningún detenido
-publicado · móvil no publicado · identidades: no se reproducen
+peritos y Agencia Estatal de Investigación de la FGE Baja California en la escena, SOLO POR
+RESUMEN · ningún detenido publicado · móvil no publicado · identidades: no se reproducen
 
 ── TRAZABILIDAD
 
@@ -138,8 +136,7 @@ de un medio sin fecha en la ruta; hora y casquillos solo por resumen · Fuentes:
 Hecho: 2026-10-16 · Hora: ~19:00 (solo por resumen) · Consulta: 2026-10-17 09:28-10:40 ·
 Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — no hubo armamento asegurado
 Deslindes y reservas: Divina Providencia no figura en las cinco ediciones previas ni en el
-índice. NO es ARG-133-006 (policía herido, Zona Industrial Pacífico). Bombero voluntario: no es
-servidor público acreditado.
+índice. NO es ARG-133-006 (policía herido, Zona Industrial Pacífico).
 
 ### MICHOACÁN · APATZINGÁN — HALLAN A TRES HOMBRES TORTURADOS Y ASESINADOS EN DOS PUNTOS [ROJO]
 
@@ -345,14 +342,15 @@ ANTERIOR A LAS 11:34 DEL 16 · FRONTERA DE VENTANA — HORA NO FIJADA
 
 ── TRAZABILIDAD
 
-ARG-135-010 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: declaración de
-Defensa solo por resumen; hora no publicada · Fuentes: Institucional 1 · Nacional 3 · Regional 2
-· Abierta 0 · con fecha en la ruta: El Heraldo de México (2026/10/16) · Proceso (2026/10/16) ·
-Tribuna (2026/10/16) · Quinto Poder (2026/10/16) · Infobae (2026/10/17) · Hecho: no publicada;
-publicado el 2026-10-16 · Hora: no publicada · Consulta: 2026-10-17 09:28-10:40 · Estatus:
-Parcialmente corroborado · Conteo de armamento: sin fila — no hubo armamento asegurado
-Deslindes y reservas: Seguimiento de ARG-125-051 (privación de la libertad del 24-sep, 🔴 en su
-ventana): el rescate es un hecho distinto. Sin armamento
+ARG-135-010 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: fecha del rescate no
+publicada; declaración de Defensa solo por resumen · Fuentes: Institucional 1 · Nacional 3 ·
+Regional 3 · Abierta 0 · con fecha en la ruta: El Heraldo de México (2026/10/16) · Proceso
+(2026/10/16) · Tribuna (2026/10/16) · Quinto Poder (2026/10/16) · Infobae (2026/10/17) · Récord
+(2026/10/17) · Hecho: no publicada; publicado el 2026-10-16 · Hora: no publicada · Consulta:
+2026-10-17 09:28-10:40 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — no
+hubo armamento asegurado
+Deslindes y reservas: Seguimiento de ARG-125-051 (privación de la libertad del 24-sep): el
+rescate es un hecho distinto. Sin armamento
 
 ### NAYARIT · TEPIC — CUMPLEN ORDEN DE APREHENSIÓN CONTRA UN POLICÍA ESTATAL POR LOS DISPAROS QUE MATARON A UN ADOLESCENTE [VERDE]
 
@@ -374,8 +372,8 @@ resumen; fecha de la detención no publicada · Fuentes: Institucional 1 · Naci
 Nayarit (2026/10/17) · Hecho: no publicada; publicada el 2026-10-16 · Hora: detención no
 fechada; publicada el 2026-10-16 · Consulta: 2026-10-17 09:28-10:40 · Estatus: Pendiente de
 corroboración · Conteo de armamento: sin fila — no hubo armamento asegurado
-Deslindes y reservas: Hecho de origen del 3-oct, fuera de las cinco ediciones previas. Servidor
-público como imputado, no como víctima. Sin armamento
+Deslindes y reservas: Hecho de origen del 3-oct, fuera de las cinco ediciones previas. Sin
+armamento
 
 ### CIUDAD DE MÉXICO — DETIENEN A SEIS HOMBRES SEÑALADOS POR BALEAR A UN MOTOCICLISTA PARA ROBARLE SU MOTO [VERDE]
 
@@ -447,8 +445,8 @@ resumen; una sola fuente con fecha en la ruta · Fuentes: Institucional 0 · Nac
 4 · Abierta 0 · con fecha en la ruta: La Silla Rota (2026/10/13) · Hecho: 2026-10-12 · Hora:
 ~19:40 (solo por resumen) · Consulta: 2026-10-17 09:28-10:40 · Estatus: Parcialmente corroborado
 · Ventana de origen: ARGOS 131 — HORA NO FIJADA — fuera de todos los totales
-Deslindes y reservas: Tezontepec no figura en las cinco ediciones previas ni en el índice. NO es
-la balacera de Tula del 11-oct (otro hecho, ventana de 130).
+Deslindes y reservas: Tezontepec figura solo como encargo en el archivo de fuentes de 134; no
+publicado. NO es la balacera de Tula del 11-oct (otro hecho, ventana de 130).
 
 ### BAJA CALIFORNIA · TIJUANA — UN COLECTIVO HALLA CUATRO CUERPOS Y RESTOS HUMANOS EN UNA FOSA CLANDESTINA DE INFONAVIT CACHANILLAS [RECUPERACIÓN]
 
@@ -498,15 +496,15 @@ Deslindes y reservas: Mariposa no figura en las cinco ediciones previas ni en el
 
 ## CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS
 
-  · Armas cortas: 0 — NINGUNA INTEGRADA: 3 PUBLICADAS, FUERA DEL TOTAL
+  · Armas cortas: 0 — SIN TOTAL VERIFICABLE: FILAS EN CEROS HASTA VALIDACIÓN
 
-  · Armas largas: 0 — NINGUNA INTEGRADA: 1 PUBLICADA, FUERA DEL TOTAL
+  · Armas largas: 0 — SIN TOTAL VERIFICABLE: FILAS EN CEROS HASTA VALIDACIÓN
 
-  · Sin categoría: 0 — NINGUNA INTEGRADA: 1 AMETRALLADORA PUBLICADA, FUERA DEL TOTAL
+  · Sin categoría: 0 — SIN TOTAL VERIFICABLE: FILAS EN CEROS HASTA VALIDACIÓN
 
-  · Cartuchos: 0 — NINGUNO INTEGRADO: 417 PUBLICADOS, FUERA DEL TOTAL
+  · Cartuchos: 0 — SIN TOTAL VERIFICABLE: FILAS EN CEROS HASTA VALIDACIÓN
 
-  · Cargadores: 0 — NINGUNO INTEGRADO: 16 PUBLICADOS, FUERA DEL TOTAL
+  · Cargadores: 0 — SIN TOTAL VERIFICABLE: FILAS EN CEROS HASTA VALIDACIÓN
 
   · Granadas: 0 — NINGUNA GRANADA EN HECHO PROPIO
 
@@ -516,9 +514,8 @@ Deslindes y reservas: Mariposa no figura en las cinco ediciones previas ni en el
 
   · Armamento especial: 0 — NINGÚN ARMAMENTO ESPECIAL PUBLICADO
 
-  · Detenidos: 0 — SOLO EN EVENTOS CON ASEGURAMIENTO DE ARMAMENTO
+  · Detenidos: 0 — SIN ASEGURAMIENTO INTEGRABLE
 
-Dos filas de armamento en la ventana, las dos en Sinaloa y fuera del total hasta validación.
 Total nacional del corte: en la página de panorama.
 
 ----------------------------------------------------------------------------
@@ -530,13 +527,12 @@ Total nacional del corte: en la página de panorama.
 
   ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
   ARG-135-ARM-001 | Sinaloa | Culiacán | no publicada · publicado 16-oct · FRONTERA DE VENTANA | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Gabinete de Seguridad (por cita) | Bajo · POSIBLE DUPLICIDAD CON ARG-134-ARM-001 — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN · publicado: 1 ametralladora sin especificar y 417 cartuchos (slug de La Nigua), 3 cortas y 16 cargadores (solo por resumen), 4 detenidos (titular)
-  ARG-135-ARM-002 | Sinaloa | Culiacán (El Carrizal) | no publicada · publicado 16-oct · FRONTERA DE VENTANA | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Gabinete de Seguridad (por cita); Marina, solo por resumen | Bajo · POSIBLE EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE (BOLETÍN DE LAS ACCIONES DEL 15-OCT) — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN · publicado: 1 arma larga en El Carrizal, sin detenidos (solo por resumen) · cartuchos sin cifra
+  ARG-135-ARM-002 | Sinaloa | Culiacán (El Carrizal) | no publicada · publicado 16-oct · FRONTERA DE VENTANA | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Marina (solo por resumen) | Bajo · POSIBLE EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE (BOLETÍN DE LAS ACCIONES DEL 15-OCT) — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN · publicado: 1 arma larga en El Carrizal, sin detenidos (solo por resumen) · cartuchos sin cifra
 
-Lectura regional —2 filas sin validar, cálculo propio—: Noroeste 2 · Noreste 0 · Occidente 0 ·
-Centro 0 · Golfo 0 · Sureste 0.
-VISTOS, NO INTEGRADOS: Estado de México, Marina y FGR, 7 detenidos y armas en dos puntos
-(publicación del 17 solo por resumen; desgloses contradictorios: POSIBLE DUPLICIDAD — NO
-INTEGRAR AL TOTAL HASTA VALIDACIÓN).
+Lectura regional: sin lectura (ninguna fila integrada).
+VISTOS, NO INTEGRADOS: Colima (Tecomán y Coquimatlán), sin fecha fijada · Estado de México,
+Marina y FGR, 7 detenidos y armas en dos puntos (publicación del 17 solo por resumen; desgloses
+contradictorios: POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN).
 EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE — FUERA DEL TOTAL: boletín federal de las acciones
 del 15-oct, publicado el 16-oct (fecha de publicación solo por resumen): Baja California,
 Colima, Chihuahua, Guerrero, Jalisco, Querétaro, Quintana Roo, Sinaloa y Sonora. CANTIDADES SOLO
@@ -564,7 +560,7 @@ POR RESUMEN, SIN FRAGMENTO: NO SE PUBLICAN.
   · Fiscalías con resultado: 0 — 18 estatales revisadas · 14 NO REVISADA
 
   Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
-  Baja California · Ensenada | Tres sentenciados, nombres no reproducidos · «asesinato» de tres surfistas, por titular; homicidio calificado y robos con violencia, sentencia del 16-oct y veredicto del 9-oct, solo por resumen | 158 años a cada uno, por titular; 9 meses adicionales solo por resumen · PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA | FGE Baja California (por titulares de medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · Infobae 2026/10/17 · crprensa 2026/10/17 · En Línea BC 2026/10/17 · Diario Tijuana (ruta 2026/10, «FGE logra sentencia») · boletín no localizado · FRONTERA DE VENTANA — HORA NO FIJADA | Bajo
+  Baja California · Ensenada | Tres sentenciados, nombres no reproducidos · «asesinato» de tres surfistas, por titular; homicidio calificado y robos con violencia, sentencia del 16-oct y veredicto del 9-oct, solo por resumen | 158 años a cada uno, por titular; 9 meses adicionales solo por resumen · PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA | FGE Baja California (por titulares de medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · Infobae 2026/10/17 · crprensa 2026/10/17 · En Línea BC 2026/10/17 · Diario Tijuana (ruta 2026/10, «FGE logra sentencia») · boletín no localizado · desarrollo del veredicto del 9-oct listado sin pena en ARGOS 131 y 134 · FRONTERA DE VENTANA — HORA NO FIJADA | Bajo
   Sonora · Hermosillo | Un sentenciado, nombre no reproducido · «asesinato», por titular; homicidio calificado y fecha del hecho solo por resumen | 25 años, por titular | Fiscalía de Sonora (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · Tribuna 2026/10/16 · FRONTERA DE VENTANA — HORA NO FIJADA · Diario del Yaqui sin fecha en la ruta · boletín no localizado · NO ES ninguno de los dos casos de 25 años de agosto en Hermosillo | Bajo
 
   Renglón | Resultado
@@ -573,6 +569,7 @@ POR RESUMEN, SIN FRAGMENTO: NO SE PUBLICAN.
   SIN RESULTADO INDEXADO EN VENTANA | 18 fiscalías estatales
   SIN ACTUALIZACIÓN CONSTATADA | 0
   NO REVISADA — sentencias | 14: BC, Son, Chih, Sin · Coah · Mich, Nay, Ags · CDMX, Tlax, Hgo · Gro, Camp, Yuc
+  Páginas no disponibles · errores de acceso | 0 errores de acceso registrados (egreso bloqueado: ninguna lectura directa) · 5 fiscalías con dominio no devuelto, dentro de las 14 NO REVISADA: Son, Sin, Nay, Tlax, Camp
   Alto impacto y armamento | Alto impacto: 20 de 32 con consulta propia por entidad · 11 solo por consulta regional amplia: Dgo · Coah, SLP · Jal, Col, Nay · CDMX, Mor, Tlax · Camp, Yuc · NO REVISADA: BCS · armamento: 3 de 32 por dominio propio de seguridad o fiscalía —Chih · Oax · Yuc—; 8 por portal o subsitio del gobierno estatal —Coah, Tamps, Zac · Col, Nay, Ags · Ver, Tab—; NO REVISADA: BC, BCS, Son, Sin, Dgo · NL, SLP · Jal, Mich, Gto · CDMX, Edomex, Mor, Pue, Tlax, Hgo, Qro · Gro, Chis, Camp, QRoo (Sinaloa: hechos por medios, sin dominio oficial)
   Boletín federal | Acciones del 15-oct: existe (Milenio y republicadores; publicación del 16-oct solo por resumen) · acciones del 16-oct: SIN RESULTADO INDEXADO EN VENTANA en las tres formas de consulta · Defensa, Marina, Guardia Nacional y FGR: SRIV · gabinetedeseguridad.gob.mx: NO REVISADA, dominio no devuelto
   Techo de confianza del producto | ★★★★☆ (techo de política) · esta edición no supera ★★★☆☆: sin lectura directa de documento oficial · BLOQUEO DE EGRESO REVERIFICADO EL 17-OCT: GOB.MX
@@ -599,24 +596,25 @@ FGJE-370-2026 (6-oct).
 2. Contexto operativo: ARG-135-004 a ARG-135-007 y ARG-135-013.
 3. Respuesta institucional propia: ARG-135-008 a ARG-135-012.
 4. Recuperaciones: ARG-135-REC-001 a ARG-135-REC-004.
-5. 21 H 54 MIN; ONCE DE TRECE HECHOS CON FRONTERA DE VENTANA: TOTALES NO COMPARABLES SIN MÁS.
+5. 21 H 54 MIN; ONCE DE TRECE CON FRONTERA; ARG-135-008 Y ARG-135-009, VERDES CON RESERVA:
+TOTALES NO COMPARABLES SIN MÁS.
 
 ── CONCLUSIONES DE INTELIGENCIA CRIMINAL
 
 1. CULIACÁN, DOS HECHOS CON MUERTOS EN MENOS DE 24 HORAS (horas solo por resumen; cálculo
 propio). ARG-135-001 y ARG-135-007. Línea: solicitar a la FGE Sinaloa el cotejo de casquillos y
 heridas con hechos previos del sector — hipótesis.
-2. SINALOA, ABASTECIMIENTO Y MANTENIMIENTO DE ARMAMENTO. ARG-135-008: célula de tráfico y
-reparación de armas; información de HSI, por cita y solo por resumen. Línea: solicitar a la FGR
-el rastreo de origen de la ametralladora — requiere validación.
+2. SINALOA, TRES OPERATIVOS FEDERALES CON ARMAMENTO. ARG-135-008 y ARG-135-009 con ARG-134-016,
+sin validar entre sí. Línea: solicitar a la FGR si los tres comparten domicilios o detenidos —
+hipótesis.
 3. APATZINGÁN, AGRESIÓN DENTRO DE VIVIENDAS. ARG-135-004 (frente a sus hijos) y ARG-134-REC-003
 (una niña muerta). Línea: solicitar a la FGE Michoacán si las carpetas comparten indicios —
 vínculo no acreditado.
 4. HERMOSILLO, ZONA SUR. ARG-135-005, ARG-135-006 y ARG-134-012 en dos días. Línea: solicitar a
-la Fiscalía de Sonora la identificación de las víctimas y la hora de ARG-135-006 — hipótesis.
+la Fiscalía de Sonora la hora de ARG-135-006 y si hay vínculo entre las víctimas — hipótesis.
 5. POLICÍAS AGREDIDOS AL ACUDIR A UN REPORTE. ARG-135-REC-002 y ARG-133-REC-005. Línea:
-solicitar a la PGJ Hidalgo y a la Fiscalía de Sonora el peritaje de las patrullas con impactos —
-vínculo no acreditado.
+solicitar a la PGJ Hidalgo y a la Fiscalía de Sonora el peritaje de las patrullas dañadas o con
+impactos — vínculo no acreditado.
 
 gabinetedeseguridad.gob.mx/resultados — NO REVISADA: dominio no devuelto por el buscador.
 SESNSP, INEGI y FGR: sin publicación estadística nueva localizada dentro de la ventana.

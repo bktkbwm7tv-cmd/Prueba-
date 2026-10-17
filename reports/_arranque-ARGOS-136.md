@@ -51,8 +51,8 @@ abrir `claude/argos-136` antes de fusionar; no es fallo.
 
 - **Toda búsqueda con `mode:"extended"`.** Consulta de control en los dos modos.
 - **Tope de 200 por turno, compartido**: ola **~160**, **~10 del coordinador** y **~30 para `procedencia-cifras`**. 135 gastó **199** (2 + 159 + 8 + 30); la segunda ronda de controles, sin búsquedas.
-- Plantilla común de los equipos: escribirla en el *scratchpad* (ventana, reglas, cotejo `grep`, formato) y hacer que cada equipo la lea primero; funcionó en 135.
-- Informes de los equipos: llegan por `SubagentHandback`; se extraen íntegros con un script que busca la cabecera `REGIÓN:` en el archivo de salida y los guarda en el *scratchpad*.
+- Plantilla común de los equipos: `tools/plantilla-equipos-135.md` → copiarla al *scratchpad* como la de 136, cambiar ventana y calendario, y hacer que cada equipo la lea primero; funcionó en 135.
+- Informes de los equipos: llegan por `SubagentHandback`; se extraen íntegros con `python3 -I tools/extrae-informe.py <archivo de salida> 'REGIÓN: <NOMBRE>' <destino en el scratchpad>`.
 
 ## BLOQUE 4 — DEUDA QUE ARGOS 136 HEREDA
 
@@ -76,7 +76,7 @@ Ver `_pendientes.md`, «Abiertos que ARGOS 136 hereda». Prioridad: **Pokémon �
 
 ## BLOQUE 7 — FORMA Y CONSTRUCCIÓN
 
-- **Parta de `tools/datos-argos-135.py`**: copie y cambie `E`, `R`, `ARM`, las constantes (`CONSULTA` con la hora real de fin de consultas), los `assert` y los textos. Plantilla: `reports/argos-2026-10-17.html`; cambie la línea de `<title>` que reemplaza el generador (ARGOS 135 — 2026-10-17). El generador ya inyecta `CONSULTA_TXT` en el tooltip.
+- **Parta de `tools/datos-argos-135.py`**: copie y cambie `E`, `R`, `ARM`, las constantes (`CONSULTA` con la hora real de fin de consultas), los `assert` y los textos. Plantilla: `reports/argos-2026-10-17.html`; cambie la línea de `<title>` que reemplaza el generador (ARGOS 135 — 2026-10-17). El generador ya inyecta `CONSULTA_TXT` en el tooltip y **lo reemplaza** si la plantilla (135) ya lo trae. `EVENTOS_ARM` solo lleva filas con cifra integrada.
 - ⚠️ **Portada**: cinco «SOLICITE A…», solo ARG-ID, sobre hechos distintos de las conclusiones. **Valoración solo con ARG-ID.** **Deslindes sin color.**
 - Móvil y texto: `python3 tools/gen-movil.py 136 <FECHA> 135 2026-10-17 <HORA>` y `python3 tools/gen-texto.py reports/argos-<FECHA>.html reports/argos-<FECHA>.txt`.
 - Validador: `node tools/validar.js reports/argos-<FECHA>.html 2026-10-17 <FECHA>` → «validación OK» (solo escritorio; el móvil lo valida su generador).

@@ -2116,7 +2116,8 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 | **Laguna Colorada, desglose** | El 3/1/8 no aparece en ninguna fuente: retirada de 134 confirmada |
 | **Escuinapa «un muerto y cinco heridos»** | Es de julio de 2026 |
 | **Atotonilco, sexo** | 2 mujeres y 3 hombres (PGJEH, por cita) |
-| **Controles** | Primera ronda: `procedencia-cifras` 17 de 20 «CORREGIR», `editor-duplicidad` 16 de 20. Ver `argos-2026-10-17-fuentes.md` §13 |
+| **Sin novedad fechable en 135 (se cierran salvo dato nuevo)** | Uruapan base de taxis · Tonalá/Zapopan · Morelia Abastos · Tecuala · Salamanca · Romita · Cotija · Jerez · «La Patrona» · Tijuana (agresor de `ARG-133-006`) · Puerto Aventuras · Nayarit 53 años · Tijuana El Lago · Colima asistencia familiar · Xochimilco Tierra Nueva |
+| **Controles** | Primera ronda: `procedencia-cifras` 17 de 20 «CORREGIR», `editor-duplicidad` 16 de 20; segunda ronda: 19 y 18. Ver `argos-2026-10-17-fuentes.md` §13 |
 
 ## Abiertos que ARGOS 136 hereda
 
@@ -2134,11 +2135,13 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 | **SINALOA · La Costerita** (`-007`) | Ruta con día; identificación |
 | **CDMX** (`-012`) | Comunicado de la SSC; alcaldía; fecha de la detención |
 | **COLIMA · El Tívoli** (`-013`) | Ruta con día; identificación |
-| **GUERRERO · Taxco** | Detención publicada el 16-oct por el asesinato de 6 policías (2020): 🟢 candidato no examinado |
+| **GUERRERO · Taxco** | Descartado en 135 sin URL ni hora (solo titular por resumen): buscar la nota de la detención publicada el 16-oct por el asesinato de 6 policías (2020); si se fija en la ventana de 135, 🟢 `SIN FECHA FIJADA` |
+| **HIDALGO · Tezontepec** (`-REC-002`) | Hora del ataque; segunda fuente con fecha; PGJEH |
 | **«El Tripa»** | Fecha de la detención (9 o 16-oct) |
 | **Colores pendientes del destinatario** | Patamban (persona defensora no acreditada), Coatzacoalcos (servidora pública), San Blas Atempa (docente), Iztapalapa (víctimas múltiples), **Cajeme** (agresión de los ocupantes durante una persecución iniciada por la autoridad) |
 | **Heredados de 134 sin avance** | Coquimatlán (FGE, 2 o 3) · Tlalnepantla (hora, identidad) · Monterrey/Santa Catarina (vínculo no confirmado; herido) · Coatzacoalcos (expareja) · El Guayabo (13 o 14) · Chiapa de Corzo (fecha) · Laguna Colorada (hora ~03:00; situación de los 7) · Atotonilco (2 sin identificar) · Orizaba · Navolato · «El Wicho» · Iztapalapa, Xochimilco, Mazatepec, Toluca, Ecatepec (no consultados) |
 | **Sentencias candidatas** | **Ensenada, 158 años** (boletín FGE BC; desglose; firmeza) · **Hermosillo, 25 años** (boletín) · Veracruz, periodista 21 años · FGR Cosoleacaque y Banderilla · CDMX Diego y Abdiel · **Tulantepec (21-oct)** |
+| **Vistos de 135 sin fichar** | Edomex, Marina/FGR, 7 detenidos (desgloses contradictorios) · Colima, armamento de Tecomán y Coquimatlán (sin fecha) · Escuinapa, exlíder ganadero (14-oct) · Toluca, cuerpo junto a zona militar · Valle de Bravo, 2 largas (11-oct) · Tlaxcala, 20 años (Tepeyanco) · Quintana Roo, Barrio 18 |
 | **Boletín federal de las acciones del 16 y 17-oct** | Triple consulta |
 
 ## Deuda de método (ARGOS 135)
@@ -2151,3 +2154,5 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 6. **Ciclo siguiente: B** (Noreste + Golfo), tras la prioridad de las `NO REVISADA`.
 7. **Presupuesto**: 2 + 159 + 8 + 30 = **199**; segunda ronda sin búsquedas.
 8. **El índice del buscador casi no llega a la noche del viernes ni al sábado** en Golfo, Centro y Noreste: buscar por fecha de cierre en la ruta al final de la ola, no al principio.
+9. **Herramientas (deuda)**: `gen-texto.py` emite los subtítulos antes del contenido equivocado (orden de documento) y `gen-movil.py` conserva frases que no aplican al móvil («Toque un ARG-ID», «mismo contenido verificado», «totales en las tarjetas de arriba»). Corregir en 136.
+10. **Extractor de informes y plantilla de equipos**: `tools/extrae-informe.py` y `tools/plantilla-equipos-135.md` (copiar a la de 136 y cambiar ventana).

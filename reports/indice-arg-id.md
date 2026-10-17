@@ -851,8 +851,8 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-135-005` | 135 | 2026-10-17 (pub.) | ARG-135-005 — Hermosillo (zona sur), Sonora: 1 hombre asesinado en una vivienda (🟡) |
 | `ARG-135-006` | 135 | 2026-10-16 | ARG-135-006 — Hermosillo (zona sur), Sonora: 1 hombre asesinado al sur de la ciudad (🟡) |
 | `ARG-135-007` | 135 | 2026-10-17 (pub., por resumen) | ARG-135-007 — Culiacán (libramiento La Costerita, retorno a El Ranchito), Sinaloa: Hallazgo de 1 hombre ejecutado y maniatado (🟡) |
-| `ARG-135-008` | 135 | 2026-10-16 | ARG-135-008 — Culiacán, Sinaloa: 4 detenidos, por titular; armamento publicado, fuera del total (🟢) |
-| `ARG-135-009` | 135 | 2026-10-16 | ARG-135-009 — Mazatlán (Mangle Marina y Golf) y Culiacán (El Carrizal), Sinaloa: Cateos: 1 detenido y 8 vehículos, por titular; arma larga solo por resumen (🟢) |
+| `ARG-135-008` | 135 | 2026-10-16 (pub.) | ARG-135-008 — POSIBLE DUPLICIDAD con ARG-134-016 / ARG-134-ARM-001 — Culiacán, Sinaloa: 4 detenidos, por titular; armamento publicado, fuera del total (🟢) |
+| `ARG-135-009` | 135 | 2026-10-16 (pub.) | ARG-135-009 — POSIBLE EVENTO ANTERIOR (boletín 15-oct) — Mazatlán (Mangle Marina y Golf) y Culiacán (El Carrizal), Sinaloa: Cateos: 1 detenido y 8 vehículos, por titular; arma larga solo por resumen (🟢) |
 | `ARG-135-010` | 135 | 2026-10-16 | ARG-135-010 — Ajuchitlán del Progreso (sierra; Puerto Grande o El Balcón), Guerrero: 6 campesinos localizados con vida; 1 sigue desaparecido (🟢) |
 | `ARG-135-011` | 135 | 2026-10-16 | ARG-135-011 — Tepic, Nayarit: 1 policía estatal detenido por la muerte de un adolescente (🟢) |
 | `ARG-135-012` | 135 | 2026-10-17 | ARG-135-012 — zona norte (alcaldía no publicada), Ciudad de México: 6 detenidos por el ataque a un motociclista (🟢) |
@@ -861,7 +861,7 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-135-REC-002` | 135 | 2026-10-13 (pub.) | ARG-135-REC-002 — Tezontepec de Aldama (San Gabriel), Hidalgo: 1 automovilista asesinado; disparos contra policías municipales; ventana de ARGOS 131 — HORA NO FIJADA; fuera de totales; 🔴 en su ventana |
 | `ARG-135-REC-003` | 135 | 2026-10-16 (pub.) | ARG-135-REC-003 — Tijuana (Infonavit Cachanillas), Baja California: Fosa: 4 cuerpos y restos humanos; ventana de ARGOS 134 (133 SI FUE ANTES DE LAS 07:16 DEL 15) — HORA NO FIJADA; fuera de totales; 🔴 en su ventana |
 | `ARG-135-REC-004` | 135 | 2026-10-16 (pub.) | ARG-135-REC-004 — Nogales (zona de Mariposa), Sonora: 3 fosas con 5 osamentas; ventana de ARGOS 134 (133 SI FUE ANTES DE LAS 07:16 DEL 15) — HORA NO FIJADA; fuera de totales; 🔴 en su ventana |
-| `ARG-135-ARM-001` | 135 | 2026-10-16 (pub.) | ARG-135-ARM-001 — Culiacán, Sinaloa: fila en ceros, fuera del total hasta validación (ficha ARG-135-008) |
-| `ARG-135-ARM-002` | 135 | 2026-10-16 (pub.) | ARG-135-ARM-002 — Culiacán (El Carrizal), Sinaloa: fila en ceros, fuera del total hasta validación (ficha ARG-135-009) |
+| `ARG-135-ARM-001` | 135 | 2026-10-16 (pub.) | ARG-135-ARM-001 — Culiacán, Sinaloa: POSIBLE DUPLICIDAD con ARG-134-ARM-001; fila en ceros, fuera del total hasta validación (ficha ARG-135-008) |
+| `ARG-135-ARM-002` | 135 | 2026-10-16 (pub.) | ARG-135-ARM-002 — Culiacán (El Carrizal), Sinaloa: POSIBLE EVENTO ANTERIOR (boletín 15-oct); fila en ceros, fuera del total hasta validación (ficha ARG-135-009) |
 | `ARG-135-FE-001` | 135 | 2026-10-17 | ARG-135-FE-001 — Irapuato (ARG-134-REC-001) → ARGOS 133; Almoloya (ARG-134-REC-004) → ARGOS 130; 133 recalculado: rojos 6 a 8, muertos 12 a 16 (6 a 11 y 12 a 18 si REC-001, -003 y -004 son de 133). NO PUBLICADA EN EL CARTELÓN |
 | `ARG-135-FE-002` | 135 | 2026-10-17 | ARG-135-FE-002 — Linares, Cachanillas y Nogales: +3 rojos a ARGOS 134 (133 con reserva); Tezontepec: +1 rojo a ARGOS 131. NO PUBLICADA EN EL CARTELÓN |
