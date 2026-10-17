@@ -844,3 +844,23 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-134-ARM-001` | 134 | 2026-10-15 | ARG-134-ARM-001 — Culiacán (Laguna Colorada), Sinaloa: 4 armas sin categoría (por resumen), 7 detenidos; PROVISIONAL; confianza Bajo |
 | `ARG-134-FE-001` | 134 | 2026-10-16 | ARG-134-FE-001 — Asignación con reserva a ARGOS 133: Irapuato (pastor), Chiapa de Corzo; El Guayabo (132 o 133); 133 recalculado según la ventana de cada recuperación: rojos 5 a 8, muertos 10 a 17. NO PUBLICADA EN EL CARTELÓN |
 | `ARG-134-FE-002` | 134 | 2026-10-16 | ARG-134-FE-002 — Asignación con reserva a ARGOS 130 (131): Almoloya de Juárez, agente de la FGR. La camioneta de la FGE Puebla es ARG-131-003, no omisión. NO PUBLICADA EN EL CARTELÓN |
+| `ARG-135-001` | 135 | 2026-10-16 | ARG-135-001 — Culiacán (bulevar Gran Vía, Valle del Agua), Sinaloa: Ataque armado: 2 hombres muertos (🔴) |
+| `ARG-135-002` | 135 | 2026-10-16 | ARG-135-002 — Tijuana (col. Divina Providencia, delegación Playas), Baja California: Ataque armado: 2 muertos, uno de ellos bombero voluntario (🔴) |
+| `ARG-135-003` | 135 | 2026-10-16 | ARG-135-003 — Apatzingán (Las Cahuingas y col. El Varillero), Michoacán: Hallazgo de 3 hombres torturados y asesinados (🔴) |
+| `ARG-135-004` | 135 | 2026-10-16 | ARG-135-004 — Apatzingán (col. Generalísimo Morelos), Michoacán: Mujer asesinada en su vivienda (🟡) |
+| `ARG-135-005` | 135 | 2026-10-16 | ARG-135-005 — Hermosillo (zona sur), Sonora: 1 hombre asesinado en una vivienda (🟡) |
+| `ARG-135-006` | 135 | 2026-10-16 | ARG-135-006 — Hermosillo (zona sur, col. Adolfo López Mateos), Sonora: 1 hombre asesinado al sur de la ciudad (🟡) |
+| `ARG-135-007` | 135 | 2026-10-17 | ARG-135-007 — Culiacán (libramiento La Costerita, retorno a El Ranchito), Sinaloa: Hallazgo de 1 hombre ejecutado y maniatado (🟡) |
+| `ARG-135-008` | 135 | 2026-10-16 | ARG-135-008 — Culiacán, Sinaloa: 4 detenidos; 1 ametralladora, 3 cortas y 417 cartuchos (🟢) |
+| `ARG-135-009` | 135 | 2026-10-16 | ARG-135-009 — Mazatlán (Mangle Marina y Golf) y Culiacán (El Carrizal), Sinaloa: Cateos: 1 detenido, 8 vehículos y 1 arma larga (🟢) |
+| `ARG-135-010` | 135 | 2026-10-16 | ARG-135-010 — Ajuchitlán del Progreso (sierra; Puerto Grande o El Balcón), Guerrero: 6 campesinos localizados con vida; 1 sigue desaparecido (🟢) |
+| `ARG-135-011` | 135 | 2026-10-16 | ARG-135-011 — Tepic, Nayarit: 1 policía estatal detenido por la muerte de un adolescente (🟢) |
+| `ARG-135-012` | 135 | 2026-10-17 | ARG-135-012 — zona norte (alcaldía no publicada), Ciudad de México: 6 detenidos por el ataque a un motociclista (🟢) |
+| `ARG-135-REC-001` | 135 | 2026-10-15 | ARG-135-REC-001 — Linares (col. Provileón), Nuevo León: Ataque armado: 2 muertos y 1 herido; ventana de ARGOS 134 (133 SI FUE LA NOCHE DEL MIÉRCOLES 14) — DÍA CONTRADICHO; fuera de totales; 🔴 en su ventana |
+| `ARG-135-REC-002` | 135 | 2026-10-12 | ARG-135-REC-002 — Tezontepec de Aldama (San Gabriel), Hidalgo: 1 automovilista asesinado; disparos contra policías municipales; ventana de ARGOS 131 — HORA NO FIJADA; fuera de totales; 🔴 en su ventana |
+| `ARG-135-REC-003` | 135 | 2026-10-15 | ARG-135-REC-003 — Tijuana (Infonavit Cachanillas), Baja California: Fosa: 4 cuerpos y restos humanos; ventana de ARGOS 134 (133 SI FUE ANTES DE LAS 07:16 DEL 15) — HORA NO FIJADA; fuera de totales; 🔴 en su ventana |
+| `ARG-135-REC-004` | 135 | 2026-10-15 | ARG-135-REC-004 — Nogales (zona de Mariposa), Sonora: 3 fosas con 5 osamentas; ventana de ARGOS 134 (133 SI FUE ANTES DE LAS 07:16 DEL 15) — HORA NO FIJADA; fuera de totales; 🔴 en su ventana |
+| `ARG-135-ARM-001` | 135 | 2026-10-16 | ARG-135-ARM-001 — Culiacán, Sinaloa: fila en ceros, fuera del total hasta validación (ficha ARG-135-008) |
+| `ARG-135-ARM-002` | 135 | 2026-10-16 | ARG-135-ARM-002 — Culiacán (El Carrizal), Sinaloa: fila en ceros, fuera del total hasta validación (ficha ARG-135-009) |
+| `ARG-135-FE-001` | 135 | 2026-10-17 | ARG-135-FE-001 — Irapuato (ARG-134-REC-001) → ARGOS 133; Almoloya (ARG-134-REC-004) → ARGOS 130; 133 recalculado: rojos 6 a 8, muertos 12 a 16. NO PUBLICADA EN EL CARTELÓN |
+| `ARG-135-FE-002` | 135 | 2026-10-17 | ARG-135-FE-002 — Linares, Cachanillas y Nogales: +3 rojos a ARGOS 134 (133 con reserva); Tezontepec: +1 rojo a ARGOS 131. NO PUBLICADA EN EL CARTELÓN |

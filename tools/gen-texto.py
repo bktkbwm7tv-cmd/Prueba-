@@ -90,7 +90,7 @@ for pag in re.findall(r'<section class="page">(.*?)</section>', s, re.S):
             out += [f"  · {lbl} — {val}", ""]
 
     # Títulos de sección.
-    for t in re.findall(r'<div class="section-head">(?:<h2[^>]*>)?(.*?)(?:</h2>)?</div>', pag, re.S):
+    for t in re.findall(r'<div class="section-head"[^>]*>(?:<h2[^>]*>)?(.*?)(?:</h2>)?</div>', pag, re.S):
         t = limpia(t)
         if t and "SEMÁFORO ARGOS" not in t:
             out += [f"## {t}", ""]

@@ -8,13 +8,13 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 134 (corte 2026-10-16).
+**Última actualización**: ARGOS 135 (corte 2026-10-17).
 
 ---
 
 ## Arranque de la edición siguiente
 
-**`reports/_arranque-ARGOS-135.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-135.txt`) contiene la orden de arranque para una sesión nueva: verificación
+**`reports/_arranque-ARGOS-136.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-136.txt`) contiene la orden de arranque para una sesión nueva: verificación
 de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y comandos de construcción.
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
@@ -2101,3 +2101,53 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 7. **Criterio de fuente institucional fijado en 134**: declaración o comunicado citado de una autoridad nombrada; «investiga» no cuenta. Meganoticias y Por Esto, regionales.
 8. **Escala de agravantes sin fijar**: persona defensora no acreditada (Patamban), servidora pública por empleo (Coatzacoalcos), docente (`ARG-132-003`), exautoridad (Monterrey), víctimas múltiples con un muerto (`ARG-133-004`).
 
+
+## Cerrados por ARGOS 135
+
+| Pendiente | Disposición |
+|---|---|
+| **Silao, Barrio Nuevo** (`ARG-134-001`) | Jueves 15 sostenido por cuatro rutas del 15; el 14 en Silao es **otro hecho** (doble ataque, AM 2026/10/14). Sin fe de erratas |
+| **Puebla, Tres Cerritos** (`-005`) | Horas 08:00-10:00, antes de las 11:34 → **134 confirmado**; «día de descanso» en la mayoría; SSP solo por resumen |
+| **Irapuato, pastor** (`ARG-134-REC-001`) | «Madrugada de este 15» → **ARGOS 133** (`ARG-135-FE-001`) |
+| **Almoloya** (`ARG-134-REC-004`) | Domingo 11 por la noche → **ARGOS 130** |
+| **Chiapa de Corzo** (`ARG-134-REC-002`) | **2 muertos** por la SSP de Chiapas, por cita; ventana 132 o 133 sigue abierta |
+| **Tezontepec y Tula** | Dos hechos: Tezontepec (12-oct, policías agredidos) → `ARG-135-REC-002` 🔴 de 131; Tula (11-oct) 🟡 de 130, no recuperable |
+| **Barrancos** (`-013`) | Mismo hecho que Nakayama; adolescente herido leve, por resumen |
+| **Laguna Colorada, desglose** | El 3/1/8 no aparece en ninguna fuente: retirada de 134 confirmada |
+| **Escuinapa «un muerto y cinco heridos»** | Es de julio de 2026 |
+| **Atotonilco, sexo** | 2 mujeres y 3 hombres (PGJEH, por cita) |
+| **Controles** | Primera ronda: `procedencia-cifras` 17 de 20 «CORREGIR», `editor-duplicidad` 16 de 20. Ver `argos-2026-10-17-fuentes.md` §13 |
+
+## Abiertos que ARGOS 136 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️⚠️ **SINALOA · «Pokémon»** (`ARG-135-008`, `ARM-001`) | **¿Mismo operativo que Laguna Colorada (`ARG-134-016`)?** Fecha del operativo; domicilios; si es el mismo, `-008` pasa a seguimiento y el desglose (1 ametralladora, 3 cortas, 16 cargadores, 417 cartuchos) sustituye a «4 armas» de `ARG-134-ARM-001`; si no, se integra |
+| ⚠️⚠️ **SINALOA · cateos Mazatlán y El Carrizal** (`-009`, `ARM-002`) | ¿Son el renglón de Sinaloa del boletín de las acciones del 15-oct? Fecha de los cateos |
+| ⚠️ **MICHOACÁN · Apatzingán** (`-003`) | Hora del hallazgo (¿antes de las 11:34 del 16?); identificación; FGE |
+| ⚠️ **NUEVO LEÓN · Linares** (`-REC-001`) | **Miércoles 14 o jueves 15**; detenidos |
+| **BC · Tijuana, Divina Providencia** (`-002`) | Ruta con día; identificación oficial; móvil |
+| **BC · Cachanillas** y **SONORA · Nogales** (`-REC-003`, `-004`) | Fecha y hora del hallazgo; número oficial; identificaciones; Comisión de Búsqueda |
+| **GUERRERO · Ajuchitlán** (`-010`) | La persona que sigue desaparecida; hora del rescate |
+| **NAYARIT · Tepic** (`-011`) | Vinculación del policía |
+| **SONORA · Hermosillo** (`-005`, `-006`) | Segunda fuente; hora de `-006` |
+| **SINALOA · La Costerita** (`-007`) | Ruta con día; identificación |
+| **CDMX** (`-012`) | Comunicado de la SSC; alcaldía; fecha de la detención |
+| **COLIMA · El Tívoli** | `SIN FECHA FIJADA` de 135: ruta con día (si se fija dentro de 16-oct 11:34 → 17-oct 09:28, recuperación 🟡 no fichable; registrar) |
+| **GUERRERO · Taxco** | Detención publicada el 16-oct por el asesinato de 6 policías (2020): 🟢 candidato no examinado |
+| **«El Tripa»** | Fecha de la detención (9 o 16-oct) |
+| **Colores pendientes del destinatario** | Patamban (persona defensora no acreditada), Coatzacoalcos (servidora pública), San Blas Atempa (docente), Iztapalapa (víctimas múltiples), **Cajeme** (agresión de los ocupantes durante una persecución iniciada por la autoridad) |
+| **Heredados de 134 sin avance** | Coquimatlán (FGE, 2 o 3) · Tlalnepantla (hora, identidad) · Monterrey/Santa Catarina (vínculo no confirmado; herido) · Coatzacoalcos (expareja) · El Guayabo (13 o 14) · Chiapa de Corzo (fecha) · Laguna Colorada (hora ~03:00; situación de los 7) · Atotonilco (2 sin identificar) · Orizaba · Navolato · «El Wicho» · Iztapalapa, Xochimilco, Mazatepec, Toluca, Ecatepec (no consultados) |
+| **Sentencias candidatas** | **Ensenada, 158 años** (boletín FGE BC; desglose; firmeza) · **Hermosillo, 25 años** (boletín) · Veracruz, periodista 21 años · FGR Cosoleacaque y Banderilla · CDMX Diego y Abdiel · **Tulantepec (21-oct)** |
+| **Boletín federal de las acciones del 16 y 17-oct** | Triple consulta |
+
+## Deuda de método (ARGOS 135)
+
+1. **`procedencia-cifras` volvió a hallar hechos que la ola no traía**: La Costerita (🟡 del corte) y **dos fosas de la ventana de 134** (Cachanillas, Nogales). Las fosas no salieron en la búsqueda «fosa / colectivo» de Noroeste: **en 136, búsqueda de fosas por entidad fronteriza** (BC, Son, Chih, Tamps).
+2. **El coordinador fijó los dos rojos con dos muertos** (Culiacán, Tijuana) que la ola trajo sin ruta fechada.
+3. **Armamento sin total verificable**: las dos filas del corte quedaron en ceros por posible duplicidad (Pokémon ↔ Laguna Colorada) y posible evento anterior (cateos ↔ boletín del 15-oct).
+4. **Sentencias: Sonora y Sinaloa, octava edición `NO REVISADA`.** **14 `NO REVISADA`**: BC, Son, Chih, Sin · Coah · Mich, Nay, Ags · CDMX, Tlax, Hgo · Gro, Camp, Yuc.
+5. **Armamento `NO REVISADA` (21)**: BC, BCS, Son, Sin, Dgo · NL, SLP · Jal, Mich, Gto · CDMX, Edomex, Mor, Pue, Tlax, Hgo, Qro · Gro, Chis, Camp, QRoo; **6 solo por portal del gobierno estatal** (Coah, Tamps, Zac, Nay, Ags, Tab). **El `site:` encadenado con `OR` hace que el buscador ignore el operador: un dominio por consulta.**
+6. **Ciclo siguiente: B** (Noreste + Golfo), tras la prioridad de las `NO REVISADA`.
+7. **Presupuesto**: 2 + 159 + 8 + 30 = **199**; segunda ronda sin búsquedas.
+8. **El índice del buscador casi no llega a la noche del viernes ni al sábado** en Golfo, Centro y Noreste: buscar por fecha de cierre en la ruta al final de la ola, no al principio.
