@@ -91,7 +91,7 @@ Serie: … · C (134) no · **A (135) no.**
 | **«Pokémon»** (`-007`, `ARM-001`) | 🟢. Ametralladora sin especificar → **arma larga** por la taxonomía; si la autoridad la clasifica como pesada, pasa a especial. Cortas y cargadores solo por resumen; ametralladora y 417 cartuchos por titular (La Nigua). Confianza del módulo **Medio** |
 | **Cateos Mazatlán/Culiacán** (`-008`, `ARM-002`) | 🟢, confianza **Bajo**: 1 larga y 1 detenido solo por resumen |
 | **Ajuchitlán** (`-009`) | 🟢 rescate. Seguimiento de `ARG-125-051`; el hecho del corte es la localización con vida |
-| **Tepic** (`-010`) | 🟢: orden de aprehensión cumplida contra un policía estatal por el homicidio de un adolescente del 3-oct (no publicado en su ventana; no se recupera: hecho de la ventana de ARGOS 121-122, fuera del alcance de cinco ediciones) |
+| **Tepic** (`-010`) | 🟢: orden de aprehensión cumplida contra un policía estatal por el homicidio de un adolescente del 3-oct (homicidio del 3-oct no publicado en su ventana; no se recupera como `-REC-`: es anterior a las cinco ediciones previas) |
 | **Linares** (`-REC-001`) | 🔴 en su ventana por homicidio múltiple. Día contradicho: Fiscalía «jueves» (por resumen), Milenio y Telediario «miércoles». Primera publicación: El Mañana 2026/10/15. **134 si fue el 15; 133 si fue el 14** |
 | **Tezontepec de Aldama** (`-REC-002`) | 🔴 en su ventana por ataque contra autoridades: el grupo dispara contra policías que acuden a un reporte. Una sola fuente con ruta fechada (La Silla Rota 2026/10/13) |
 | **Colima, El Tívoli** | Mujer asesinada el 16 ~14:20 **solo por resumen**, AFmedios sin fecha en ruta: **no se ficha**, a 136 |
