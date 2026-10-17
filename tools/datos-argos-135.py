@@ -16,33 +16,33 @@ NIN = "<span class=\"muted-note\">ninguna</span>"
 AP = "<code>PUBLICADO EL DÍA DE APERTURA SIN HORA: PUEDE SER ANTERIOR A LAS 11:34 DEL 16</code>"
 # ---------------------------------------------------------------- HECHOS PROPIOS
 E = [
- dict(id="ARG-135-001", estado="MX-SIN", region="Noroeste", color="rojo", impacto="mediano", fecha="2026-10-16", hora="~14:40–15:00 (solo por resumen)",
+ dict(id="ARG-135-001", estado="MX-SIN", region="Noroeste", color="rojo", impacto="mediano", fecha="2026-10-16", hora="~14:40 (llamada al 911) y ~15:00 (solo por resumen; versiones distintas)",
   ent="Sinaloa", mun="Culiacán (bulevar Gran Vía, Valle del Agua)", dia="16-OCT, TARDE",
   title="SINALOA · CULIACÁN — ASESINAN A DOS PRIMOS FRENTE A UN RESIDENCIAL DEL BULEVAR GRAN VÍA, RUMBO A IMALA",
-  hecho="Culiacán · <code>BULEVAR GRAN VÍA, FRENTE AL RESIDENCIAL VILLA SAN JOSÉ, SECTOR VALLE DEL AGUA (LOS ÁNGELES, SEGÚN OTROS MEDIOS), JUNTO A LA CARRETERA A IMALA</code> · VIERNES 16-OCT, por ruta · ~14:40–15:00, " + RES + " · disparos contra dos hombres que conversaban junto a dos vehículos, por titular · <b>2 hombres muertos</b>, primos, por titular (🔴) · <code>ARMA LARGA O DE ALTO CALIBRE, SOLO POR RESUMEN</code> · <b>ningún detenido publicado</b> · FGE Sinaloa a cargo, " + RES + " · identidades: no se reproducen",
+  hecho="Culiacán · <code>BULEVAR GRAN VÍA, FRENTE AL RESIDENCIAL VILLA SAN JOSÉ (VÍA SAN JOSÉ, SEGÚN OTROS MEDIOS), SECTOR VALLE DEL AGUA (LOS ÁNGELES, SEGÚN OTROS MEDIOS), JUNTO A LA CARRETERA A IMALA</code> · VIERNES 16-OCT, por ruta · ~14:40 (llamada al 911) y ~15:00, " + RES + ", versiones distintas · disparos contra dos hombres junto a dos vehículos, por titular · <b>2 hombres muertos</b>, primos, por titular (🔴) · <code>ARMA LARGA O DE ALTO CALIBRE, SOLO POR RESUMEN</code> · <b>ningún detenido publicado</b> · FGE Sinaloa a cargo, " + RES + " · identidades: no se reproducen",
   panel="Ataque armado: <b>2 hombres muertos</b>",
   inst=SB, nac=NIN, conf="★★★☆☆",
   campo="hora y tipo de arma solo por resumen; sin fuente institucional", I=0, N=0, R=6, A=0,
-  fechadas=["Línea Directa (2026-10-16)"], estatus="Parcialmente corroborado", arm=None,
+  fechadas=["Línea Directa (2026-10-16)", "Luz Noticias (2026-10-16)"], estatus="Parcialmente corroborado", arm=None,
   desl="Gran Vía, Valle del Agua e Imala no figuran en las cinco ediciones previas ni en el índice. El liveblog de Noroeste («este viernes») no fecha el hecho. 🔴 por homicidio múltiple"),
  dict(id="ARG-135-002", estado="MX-BCN", region="Noroeste", color="rojo", impacto="mediano", fecha="2026-10-16", hora="~19:00 (solo por resumen)",
   ent="Baja California", mun="Tijuana (col. Divina Providencia, delegación Playas)", dia="16-OCT, TARDE-NOCHE",
   title="BAJA CALIFORNIA · TIJUANA — ASESINAN A UN BOMBERO VOLUNTARIO Y A UNA MUJER EN LA COLONIA DIVINA PROVIDENCIA",
-  hecho="Tijuana · <code>CALLE CARRILLO PUERTO, COL. DIVINA PROVIDENCIA, DELEGACIÓN PLAYAS DE TIJUANA</code> · VIERNES 16-OCT, «la tarde del 16 de octubre», por titular · ~19:00, " + RES + " · disparos contra un hombre dentro de un vehículo; la mujer huye y es alcanzada, " + RES + " · <b>2 muertos</b> —un hombre, <b>bombero voluntario</b>, y una mujer—, por titular (🔴) · <code>4 CASQUILLOS 9 MM, SOLO POR RESUMEN</code> · peritos y AEI de la FGE Baja California en la escena, " + RES + " · <b>ningún detenido publicado</b> · móvil no publicado · identidades: no se reproducen",
+  hecho="Tijuana · <code>CALLE CARRILLO PUERTO, COL. DIVINA PROVIDENCIA, DELEGACIÓN PLAYAS DE TIJUANA</code> · VIERNES 16-OCT, «la tarde del 16 de octubre», por titular de El Congresista · <code>ZETA Y DIARIO TIJUANA: RUTA SOLO CON AÑO Y MES</code> · ~19:00, " + RES + " · disparos contra un hombre dentro de un vehículo; la mujer huye y es alcanzada, " + RES + " · <b>2 muertos</b> —un hombre, <b>bombero voluntario</b>, y una mujer—, por titular (🔴) · <code>4 CASQUILLOS 9 MM, SOLO POR RESUMEN</code> · peritos y AEI de la FGE Baja California en la escena, " + RES + " · <b>ningún detenido publicado</b> · móvil no publicado · identidades: no se reproducen",
   panel="Ataque armado: <b>2 muertos</b>, uno de ellos bombero voluntario",
   inst=SB, nac=NIN, conf="★★★☆☆",
-  campo="hora y casquillos solo por resumen; sin fuente institucional", I=0, N=0, R=5, A=0,
-  fechadas=["Zeta Tijuana (2026/10)", "Diario Tijuana (2026/10)"], estatus="Parcialmente corroborado", arm=None,
+  campo="día solo por titular de un medio sin fecha en la ruta; hora y casquillos solo por resumen", I=0, N=0, R=5, A=0,
+  fechadas=[], estatus="Parcialmente corroborado", arm=None,
   desl="Divina Providencia no figura en las cinco ediciones previas ni en el índice. NO es ARG-133-006 (policía herido, Zona Industrial Pacífico). Bombero voluntario: no es servidor público acreditado. 🔴 por homicidio múltiple"),
  dict(id="ARG-135-003", estado="MX-MIC", region="Occidente", color="rojo", impacto="mediano", fecha="2026-10-16", hora="no publicada",
   ent="Michoacán", mun="Apatzingán (Las Cahuingas y col. El Varillero)", dia="PUB. 16-OCT, HORA NO FIJADA",
-  title="MICHOACÁN · APATZINGÁN — HALLAN A TRES HOMBRES TORTURADOS Y ASESINADOS, ENCOBIJADOS, EN DOS PUNTOS",
-  hecho="Apatzingán · <code>LAS CAHUINGAS (1 CUERPO) Y COL. EL VARILLERO, CALLE MARIANO JIMÉNEZ (2 CUERPOS)</code> · VIERNES 16-OCT, por titular · hallazgo de <b>3 hombres muertos</b>, envueltos en cobijas, con impactos de bala y <b>huellas de tortura</b>, por titular (🔴) · el primero, de unos 35 años, hallado por campesinos; los otros dos, minutos después, por vecinos, " + RES + " · Fiscalía Regional de Apatzingán en diligencias, " + RES + " · <b>ningún detenido publicado</b> · identidades: no publicadas · " + AP + " · " + FR,
+  title="MICHOACÁN · APATZINGÁN — HALLAN A TRES HOMBRES TORTURADOS Y ASESINADOS EN DOS PUNTOS",
+  hecho="Apatzingán · <code>LAS CAHUINGAS (1 CUERPO) Y COL. EL VARILLERO, CALLE MARIANO JIMÉNEZ (2 CUERPOS)</code> · VIERNES 16-OCT, por titular · hallazgo de <b>3 hombres muertos</b> con <b>huellas de tortura</b>, por titular (🔴) · <b>2 de ellos baleados y encobijados</b> en El Varillero, por titular de Respuesta Michoacán · el de Las Cahuingas, de unos 35 años, hallado por campesinos, " + RES + " · Fiscalía Regional de Apatzingán (FGE, según otro medio) en diligencias, " + RES + " · <b>ningún detenido publicado</b> · identidades: no publicadas · " + AP + " · " + FR,
   panel="Hallazgo de <b>3 hombres torturados y asesinados</b>",
   inst=SB, nac=NIN, conf="★★☆☆☆",
   campo="fecha solo por titular de un medio sin fecha en la ruta; hora no publicada", I=0, N=0, R=3, A=0,
   fechadas=[], estatus="Pendiente de corroboración", arm=None,
-  desl="Las Cahuingas y El Varillero no figuran en las cinco ediciones previas. NO es ARG-134-REC-003 (El Guayabo) ni el hallazgo de junio con lesiones por explosivos (RED113 2026/06). 🔴 por homicidio múltiple con tortura"),
+  desl="Las Cahuingas y El Varillero no figuran en las cinco ediciones previas. NO es ARG-134-REC-003 (El Guayabo) ni el hallazgo anterior con lesiones por explosivos (La Voz de Michoacán, sin fecha en la ruta). 🔴 por homicidio múltiple con tortura"),
  dict(id="ARG-135-004", estado="MX-MIC", region="Occidente", color="amarillo", impacto="pequeno", fecha="2026-10-16", hora="«esta noche» del viernes (solo por resumen)",
   ent="Michoacán", mun="Apatzingán (col. Generalísimo Morelos)", dia="16-OCT, NOCHE · PUB. 17-OCT",
   title="MICHOACÁN · APATZINGÁN — HOMBRES ARMADOS IRRUMPEN EN UNA VIVIENDA Y ASESINAN A UNA MUJER FRENTE A SUS HIJOS",
@@ -53,59 +53,77 @@ E = [
   fechadas=["Red Michoacán (2026/10/17)", "Grupo Marmor (2026/10/17)"], estatus="Parcialmente corroborado", arm=None,
   desl="Generalísimo Morelos no figura en las cinco ediciones previas. NO es ARG-135-003. 🟡 por homicidio doloso único"),
  dict(id="ARG-135-005", estado="MX-SON", region="Noroeste", color="amarillo", impacto="pequeno", fecha="2026-10-16", hora="noche del viernes (solo por resumen)",
-  ent="Sonora", mun="Hermosillo (Gala Residencial, zona sur)", dia="16-OCT, NOCHE · PUB. 17-OCT",
-  title="SONORA · HERMOSILLO — HALLAN A UN HOMBRE ASESINADO A BALAZOS DENTRO DE UNA VIVIENDA DE GALA RESIDENCIAL",
-  hecho="Hermosillo · <code>GALA RESIDENCIAL, ZONA SUR</code> · noche del VIERNES 16-OCT, " + RES + "; publicado el SÁBADO 17-OCT, por ruta · <b>1 hombre muerto</b> con impactos de bala dentro de una vivienda, por titular (🟡) · <b>ningún detenido publicado</b> · identidad: no publicada · " + FR,
+  ent="Sonora", mun="Hermosillo (zona sur)", dia="16-OCT, NOCHE · PUB. 17-OCT",
+  title="SONORA · HERMOSILLO — ASESINAN A UN HOMBRE DENTRO DE UNA VIVIENDA AL SUR DE LA CIUDAD",
+  hecho="Hermosillo · <code>ZONA SUR (GALA RESIDENCIAL, SOLO POR RESUMEN)</code> · noche del VIERNES 16-OCT, " + RES + "; publicado el SÁBADO 17-OCT, por ruta · <b>1 hombre asesinado</b> dentro de una vivienda, por <i>slug</i> (🟡) · impactos de bala, " + RES + " · <b>ningún detenido publicado</b> · identidad: no publicada · " + FR,
   panel="<b>1 hombre asesinado</b> en una vivienda",
   inst=SB, nac=NIN, conf="★★☆☆☆",
   campo="una sola fuente; hora solo por resumen", I=0, N=0, R=1, A=0,
   fechadas=["Proyecto Puente (2026/10/17)"], estatus="Pendiente de corroboración", arm=None,
   desl="Gala Residencial no figura en las cinco ediciones previas. NO es ARG-134-012 (Villas del Seris). 🟡 por homicidio doloso único"),
  dict(id="ARG-135-006", estado="MX-SON", region="Noroeste", color="amarillo", impacto="pequeno", fecha="2026-10-16", hora="no publicada",
-  ent="Sonora", mun="Hermosillo (zona sur, bulevar López Mateos)", dia="PUB. 16-OCT, HORA NO FIJADA",
+  ent="Sonora", mun="Hermosillo (zona sur, col. Adolfo López Mateos)", dia="PUB. 16-OCT, HORA NO FIJADA",
   title="SONORA · HERMOSILLO — AGRESIÓN ARMADA DEJA SIN VIDA A UN HOMBRE AL SUR DE LA CIUDAD",
-  hecho="Hermosillo · <code>ZONA SUR, BULEVAR LÓPEZ MATEOS, SEGÚN EL RESUMEN</code> · publicado el VIERNES 16-OCT, por ruta · agresión armada, por titular · <b>1 hombre muerto</b>, de unos 50 años, " + RES + " (🟡) · <b>ningún detenido publicado</b> · identidad: no se reproduce · " + AP + " · " + FR,
+  hecho="Hermosillo · <code>ZONA SUR, COL. ADOLFO LÓPEZ MATEOS, LOTE BALDÍO, SOLO POR RESUMEN</code> · publicado el VIERNES 16-OCT, por ruta · agresión armada, por titular · <b>1 hombre muerto</b>, por titular · de 50 a 55 años, " + RES + " (🟡) · <b>ningún detenido publicado</b> · identidad: no se reproduce · " + AP + " · " + FR,
   panel="<b>1 hombre asesinado</b> al sur de la ciudad",
   inst=SB, nac=NIN, conf="★★☆☆☆",
   campo="una sola fuente; hora no publicada", I=0, N=0, R=1, A=0,
   fechadas=["Proyecto Puente (2026/10/16)"], estatus="Pendiente de corroboración", arm=None,
   desl="NO es ARG-134-012 (Villas del Seris, noche del 15) ni ARG-135-005. 🟡 por homicidio doloso único"),
- dict(id="ARG-135-007", estado="MX-SIN", region="Noroeste", color="verde", impacto="grande", fecha="2026-10-16", hora="operativo no fechado; publicado el 2026-10-16",
+ dict(id="ARG-135-007", estado="MX-SIN", region="Noroeste", color="amarillo", impacto="pequeno", fecha="2026-10-17", hora="aviso al 911 poco después de las 07:15 (solo por resumen)",
+  ent="Sinaloa", mun="Culiacán (libramiento La Costerita, retorno a El Ranchito)", dia="17-OCT, MAÑANA, DÍA SOLO POR RESUMEN",
+  title="SINALOA · CULIACÁN — HALLAN A UN HOMBRE EJECUTADO Y MANIATADO A ORILLAS DE LA COSTERITA",
+  hecho="Culiacán · <code>LIBRAMIENTO BENITO JUÁREZ (LA COSTERITA), CERCA DEL RETORNO A EL RANCHITO</code> · SÁBADO 17-OCT, aviso poco después de las 07:15, " + RES + " · <code>NINGUNA RUTA CON DÍA: LOS NOTICIERISTAS 2026/10, SOLO MES</code> · hallazgo de <b>1 hombre ejecutado y maniatado</b>, por titular (🟡) · heridas de bala y manos y pies atados, por titular · peritos de la FGE Sinaloa, " + RES + " · <b>ningún detenido publicado</b> · edad contradicha · sin identificar · " + FR,
+  panel="Hallazgo de <b>1 hombre ejecutado y maniatado</b>",
+  inst=SB, nac=NIN, conf="★★☆☆☆",
+  campo="día y hora solo por resumen; ninguna ruta con día", I=0, N=0, R=5, A=0,
+  fechadas=[], estatus="Pendiente de corroboración", arm=None,
+  desl="La Costerita no figura en las cinco ediciones previas. NO es el hallazgo de junio ni el de septiembre en el mismo tramo. 🟡 por homicidio doloso único"),
+ dict(id="ARG-135-008", estado="MX-SIN", region="Noroeste", color="verde", impacto="grande", fecha="2026-10-16", hora="operativo no fechado; publicado el 2026-10-16",
   ent="Sinaloa", mun="Culiacán", dia="PUB. 16-OCT, HORA NO FIJADA",
-  title="SINALOA · CULIACÁN — CAEN CUATRO INTEGRANTES DE UNA CÉLULA DEDICADA A TRAFICAR Y REPARAR ARMAMENTO; ASEGURAN UNA AMETRALLADORA Y 417 CARTUCHOS",
-  hecho="Culiacán · domicilios ubicados por trabajo de inteligencia e intercambio de información con HSI (EE. UU.), según el <b>Gabinete de Seguridad</b>, por cita · publicado el VIERNES 16-OCT · fecha del operativo: no publicada · <b>4 detenidos</b>, por titular; <b>dos con orden de aprehensión por delincuencia organizada y tráfico de armas</b>, " + RES + " (🟢) · <b>1 ametralladora</b> y <b>417 cartuchos</b>, por titular · <code>3 ARMAS CORTAS Y 16 CARGADORES, SOLO POR RESUMEN</code> · 200 dosis de droga y 1 vehículo, " + RES + " · situación jurídica: a determinar por el MP · identidades: no se reproducen · " + AP + " · " + FR,
+  title="SINALOA · CULIACÁN — CAEN CUATRO INTEGRANTES DE UNA CÉLULA DEDICADA A TRAFICAR Y REPARAR ARMAMENTO",
+  hecho="Culiacán · domicilios ubicados por trabajo de inteligencia e intercambio de información con HSI (EE. UU.), según el <b>Gabinete de Seguridad</b>, por cita · publicado el VIERNES 16-OCT · fecha del operativo: no publicada · <b>4 detenidos</b>, por titular; <b>dos con orden de aprehensión por delincuencia organizada y tráfico de armas</b>, " + RES + " (🟢) · <b>1 ametralladora</b> y <b>417 cartuchos</b>, por <i>slug</i> de La Nigua (sin fecha en la ruta) y en el texto de Crónica 2026/10/16 · <code>3 ARMAS CORTAS Y 16 CARGADORES, SOLO POR RESUMEN; «MÁS DE 400 CARTUCHOS» EN POSTA</code> · 200 dosis de droga y 1 vehículo, " + RES + " · situación jurídica: a determinar por el MP · identidades: no se reproducen · " + AP + " · " + FR,
   panel="<b>4 detenidos</b>; <b>1 ametralladora</b>, <b>3 cortas</b> y <b>417 cartuchos</b>",
   inst="Gabinete de Seguridad <span class=\"muted-note\">(comunicado por cita)</span>", nac="Infobae · El Financiero · MVS · Publimetro · Crónica", conf="★★★☆☆",
-  campo="armas cortas y cargadores solo por resumen; fecha del operativo no publicada", I=1, N=5, R=4, A=0,
+  campo="armas cortas y cargadores solo por resumen; fecha del operativo no publicada; las 5 nacionales republican un solo comunicado", I=1, N=5, R=4, A=0,
   fechadas=["Infobae (2026/10/16)", "El Financiero (2026/10/16)", "MVS Noticias (2026/10/16)", "Tribuna (2026/10/16)", "Publimetro (2026/10/16)", "Crónica (2026/10/16)"], estatus="Parcialmente corroborado", arm="ARG-135-ARM-001", fecha_txt="no publicada; publicado el 2026-10-16",
   desl="No figura en las cinco ediciones previas ni en el índice. NO es ARG-134-016 (Laguna Colorada). Las notas republican un mismo comunicado: no son fuentes independientes"),
- dict(id="ARG-135-008", estado="MX-SIN", region="Noroeste", color="verde", impacto="pequeno", fecha="2026-10-16", hora="cateos no fechados; publicados el 2026-10-16",
+ dict(id="ARG-135-009", estado="MX-SIN", region="Noroeste", color="verde", impacto="pequeno", fecha="2026-10-16", hora="cateos no fechados; publicados el 2026-10-16",
   ent="Sinaloa", mun="Mazatlán (Mangle Marina y Golf) y Culiacán (El Carrizal)", dia="PUB. 16-OCT, HORA NO FIJADA",
-  title="SINALOA · MAZATLÁN Y CULIACÁN — CATEOS FEDERALES: UN DETENIDO, UN ARMA LARGA, OCHO VEHÍCULOS Y DROGA",
-  hecho="Mazatlán · <code>RESIDENCIAL MANGLE MARINA Y GOLF</code> y Culiacán · <code>EL CARRIZAL</code> · cateos de Marina, SSPC y FGR, por cita en medios · publicado el VIERNES 16-OCT, por ruta · fecha de los cateos: no publicada · <b>1 detenido</b>, " + RES + " (🟢) · <b>1 arma larga</b>, " + RES + " · <code>CARTUCHOS SIN CIFRA: CUALITATIVO</code> · 8 vehículos y droga, " + RES + " · " + AP + " · " + FR,
-  panel="Cateos: <b>1 detenido</b> y <b>1 arma larga</b>",
-  inst="Gabinete de Seguridad <span class=\"muted-note\">(por cita)</span>", nac="El Diario de Chihuahua · diario.mx", conf="★★☆☆☆",
-  campo="detenido y arma solo por resumen; fecha de los cateos no publicada", I=1, N=2, R=1, A=0,
-  fechadas=["diario.mx (2026/oct/16)", "El Diario de Chihuahua (2026/oct/16)", "Línea Directa (2026-10-16)"], estatus="Pendiente de corroboración", arm="ARG-135-ARM-002", fecha_txt="no publicada; publicado el 2026-10-16",
-  desl="Mangle Marina y El Carrizal no figuran en las cinco ediciones previas. NO es ARG-135-007 ni ARG-134-016"),
- dict(id="ARG-135-009", estado="MX-GRO", region="Sureste", color="verde", impacto="grande", fecha="2026-10-16", hora="no publicada",
+  title="SINALOA · MAZATLÁN Y CULIACÁN — CATEOS FEDERALES EN TRES INMUEBLES: UN DETENIDO Y OCHO VEHÍCULOS",
+  hecho="Mazatlán · <code>RESIDENCIAL MANGLE MARINA Y GOLF</code> y Culiacán · <code>EL CARRIZAL</code> · cateos en <b>3 inmuebles</b> de fuerzas federales, por titular; Marina informó, " + RES + " · publicado el VIERNES 16-OCT, por ruta · fecha de los cateos: no publicada · <b>1 detenido</b> y <b>8 vehículos</b> en Mazatlán, por titular (🟢) · efectivo y droga, " + RES + " · <b>1 arma larga</b> en El Carrizal, sin detenidos, " + RES + " · <code>CARTUCHOS SIN CIFRA: CUALITATIVO</code>" + " · " + AP + " · " + FR,
+  panel="Cateos: <b>1 detenido</b>, <b>8 vehículos</b> y <b>1 arma larga</b>",
+  inst="Gabinete de Seguridad <span class=\"muted-note\">(por cita)</span>", nac="El Heraldo de México · El Universal · López-Dóriga · diario.mx", conf="★★☆☆☆",
+  campo="arma larga solo por resumen; fecha de los cateos no publicada", I=0, N=4, R=2, A=0,
+  fechadas=["El Heraldo de México (2026/10/16)", "diario.mx (2026/oct/16)", "El Diario de Chihuahua (2026/oct/16)", "Línea Directa (2026-10-16)"], estatus="Pendiente de corroboración", arm="ARG-135-ARM-002", fecha_txt="no publicada; publicado el 2026-10-16",
+  desl="Mangle Marina y El Carrizal no figuran en las cinco ediciones previas. NO es ARG-135-008 ni ARG-134-016"),
+ dict(id="ARG-135-010", estado="MX-GRO", region="Sureste", color="verde", impacto="grande", fecha="2026-10-16", hora="no publicada",
   ent="Guerrero", mun="Ajuchitlán del Progreso (sierra; Puerto Grande o El Balcón)", dia="PUB. 16-OCT, HORA NO FIJADA",
-  title="GUERRERO · AJUCHITLÁN DEL PROGRESO — EJÉRCITO Y GUARDIA NACIONAL LOCALIZAN CON VIDA A SEIS CAMPESINOS PRIVADOS DE LA LIBERTAD; UNO SIGUE DESAPARECIDO",
-  hecho="Ajuchitlán del Progreso · <code>SIERRA; PUERTO GRANDE O EL BALCÓN, VERSIONES DISTINTAS</code> · publicado el VIERNES 16-OCT, por ruta · <b>Defensa</b> y <b>Guardia Nacional</b> localizan con vida a <b>6 de 7 campesinos</b> desaparecidos desde el 24-sep, por titular (🟢) · buen estado de salud y traslado a la Fiscalía estatal, según Defensa, " + RES + " · <b>1 persona sigue sin localizar</b>, por titular · <code>ATRIBUCIÓN A UN GRUPO CRIMINAL: SOLO HABITANTES Y MEDIOS, NO SE INTEGRA</code> · ningún detenido publicado · identidades: no se reproducen · " + AP + " · " + FR,
+  title="GUERRERO · AJUCHITLÁN DEL PROGRESO — EL EJÉRCITO LOCALIZA CON VIDA A SEIS CAMPESINOS PRIVADOS DE LA LIBERTAD; UNO SIGUE DESAPARECIDO",
+  hecho="Ajuchitlán del Progreso · <code>SIERRA; PUERTO GRANDE O EL BALCÓN, VERSIONES DISTINTAS</code> · publicado el VIERNES 16-OCT, por ruta · el <b>Ejército</b> localiza con vida a <b>6 de 7 campesinos</b> desaparecidos, por titular (🟢); Guardia Nacional, " + RES + " · privados de la libertad desde el 24-sep, <code>HEREDADO</code> de ARG-125-051; «tras 23 días», por titular de Proceso · buen estado de salud y traslado a la Fiscalía estatal, según Defensa, " + RES + " · <b>1 persona sigue sin localizar</b>, por titular · <code>ATRIBUCIÓN A UN GRUPO CRIMINAL: SOLO HABITANTES Y MEDIOS, NO SE INTEGRA</code> · ningún detenido publicado · identidades: no se reproducen · " + AP + " · " + FR,
   panel="<b>6 campesinos localizados con vida</b>; 1 sigue desaparecido",
-  inst="Defensa <span class=\"muted-note\">(por cita)</span>", nac="El Heraldo de México · Proceso · Infobae · Tribuna · Quinto Poder", conf="★★★☆☆",
-  campo="declaración de Defensa solo por resumen; hora no publicada", I=1, N=5, R=0, A=0,
+  inst="Defensa <span class=\"muted-note\">(por cita)</span>", nac="El Heraldo de México · Proceso · Infobae", conf="★★★☆☆",
+  campo="declaración de Defensa solo por resumen; hora no publicada", I=1, N=3, R=2, A=0,
   fechadas=["El Heraldo de México (2026/10/16)", "Proceso (2026/10/16)", "Tribuna (2026/10/16)", "Quinto Poder (2026/10/16)", "Infobae (2026/10/17)"], estatus="Parcialmente corroborado", arm=None, fecha_txt="no publicada; publicado el 2026-10-16",
   desl="Seguimiento de ARG-125-051 (privación de la libertad del 24-sep, 🔴 en su ventana): el rescate es un hecho distinto. Sin armamento"),
- dict(id="ARG-135-010", estado="MX-NAY", region="Occidente", color="verde", impacto="pequeno", fecha="2026-10-16", hora="detención no fechada; publicada el 2026-10-16",
+ dict(id="ARG-135-011", estado="MX-NAY", region="Occidente", color="verde", impacto="pequeno", fecha="2026-10-16", hora="detención no fechada; publicada el 2026-10-16",
   ent="Nayarit", mun="Tepic", dia="PUB. 16-OCT, HORA NO FIJADA",
   title="NAYARIT · TEPIC — CUMPLEN ORDEN DE APREHENSIÓN CONTRA UN POLICÍA ESTATAL POR LOS DISPAROS QUE MATARON A UN ADOLESCENTE",
-  hecho="Tepic · publicado el VIERNES 16-OCT, por ruta · se cumple <b>orden de aprehensión</b> contra <b>1 policía estatal</b> por los disparos que mataron a un adolescente de 16 años durante una persecución del 3-oct, por titular (🟢) · comunicado del gobierno de Nayarit, " + RES + " · acusación, no condena · identidad: no se reproduce · " + AP + " · " + FR,
+  hecho="Tepic · publicado el VIERNES 16-OCT, por ruta · se cumple <b>orden de aprehensión</b> contra <b>1 policía estatal</b> por los disparos que mataron a un adolescente, por titular (🟢) · 16 años, por titular (Sergio Robles 2026/10/08) · disparos del 3-oct en una persecución y muerte el 8-oct, " + RES + " · imputado, por titular (Meridiano 2026/10/17) · comunicado del gobierno de Nayarit, " + RES + " · acusación, no condena · identidad: no se reproduce · " + AP + " · " + FR,
   panel="<b>1 policía estatal detenido</b> por la muerte de un adolescente",
   inst="Gobierno de Nayarit <span class=\"muted-note\">(comunicado por cita)</span>", nac="Infobae", conf="★★☆☆☆",
-  campo="una sola fuente; fecha de la detención no publicada", I=1, N=1, R=0, A=0,
-  fechadas=["Infobae (2026/10/16)"], estatus="Pendiente de corroboración", arm=None, fecha_txt="no publicada; publicada el 2026-10-16",
-  desl="El homicidio del 3-oct no figura en las ediciones de su ventana ni en el índice. Servidor público como imputado, no como víctima. Sin armamento"),
+  campo="comunicado solo por resumen; fecha de la detención no publicada", I=1, N=1, R=2, A=0,
+  fechadas=["Infobae (2026/10/16)", "Meridiano (2026/10/17)", "Relatos Nayarit (2026/10/17)"], estatus="Pendiente de corroboración", arm=None, fecha_txt="no publicada; publicada el 2026-10-16",
+  desl="Los disparos del 3-oct y la muerte del 8-oct son anteriores a las cinco ediciones previas; sin ficha previa. Servidor público como imputado, no como víctima. Sin armamento"),
+ dict(id="ARG-135-012", estado="MX-CMX", region="Centro", color="verde", impacto="pequeno", fecha="2026-10-17", hora="detención no fechada; publicada el 2026-10-17",
+  ent="Ciudad de México", mun="zona norte (alcaldía no publicada)", dia="PUB. 17-OCT, HORA NO FIJADA",
+  title="CIUDAD DE MÉXICO — DETIENEN A SEIS HOMBRES SEÑALADOS POR BALEAR A UN MOTOCICLISTA PARA ROBARLE SU MOTO",
+  hecho="Ciudad de México · zona norte, alcaldía no publicada · publicado el SÁBADO 17-OCT, por ruta · <b>6 detenidos</b>, por titular (🟢) · señalados por herir con arma de fuego a un joven para robarle su motocicleta el miércoles 14-oct, " + RES + " · <b>SSC</b>, " + RES + " · <code>SIN COMUNICADO OFICIAL; DIFUSIÓN DE UN PERIODISTA</code>, " + RES + " · puestos a disposición del MP, " + RES + " · sin armamento con cifra · identidades: no se reproducen · " + FR,
+  panel="<b>6 detenidos</b> por el ataque a un motociclista",
+  inst=SB, nac="Infobae · Milenio", conf="★★☆☆☆",
+  campo="corporación y fecha del ataque solo por resumen; sin comunicado oficial", I=0, N=2, R=0, A=0,
+  fechadas=["Infobae (2026/10/17)"], estatus="Pendiente de corroboración", arm=None, fecha_txt="no publicada; publicada el 2026-10-17",
+  desl="NO es ARG-134-014 (Azcapotzalco). El ataque del 14-oct (un herido, 🟡) no figura en las cinco ediciones previas y no es recuperable. Sin armamento"),
 ]
 
 # ---------------------------------------------------------------- RECUPERACIONES
@@ -126,6 +144,22 @@ R = [
   conf="★★☆☆☆", campo="hora solo por resumen; una sola fuente con fecha en la ruta", I=0, N=0, R=4, A=0,
   fechadas=["La Silla Rota (2026/10/13)"],
   desl="Tezontepec no figura en las cinco ediciones previas ni en el índice. NO es la balacera de Tula del 11-oct (🟡, ventana de 130, no recuperable). 🔴 en su ventana por ataque contra autoridades"),
+ dict(id="ARG-135-REC-003", estado="MX-BCN", region="Noroeste", fecha="2026-10-15", hora="hallazgo del jueves (solo por resumen)", orig="ARGOS 134 (133 SI FUE ANTES DE LAS 07:16 DEL 15) — HORA NO FIJADA", col_orig="rojo",
+  ent="Baja California", mun="Tijuana (Infonavit Cachanillas)", dia="15-OCT, HORA NO FIJADA",
+  title="BAJA CALIFORNIA · TIJUANA — UN COLECTIVO HALLA CUATRO CUERPOS Y RESTOS HUMANOS EN UNA FOSA CLANDESTINA DE INFONAVIT CACHANILLAS",
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 134 —133 SI FUE ANTES DE LAS 07:16 DEL 15— HORA NO FIJADA</code> · <code>INFONAVIT CACHANILLAS</code> · hallazgo del JUEVES 15-OCT, " + RES + "; publicado el 16-OCT, por ruta · <b>4 cuerpos y restos humanos</b> en fosa clandestina, por titular (🔴 en su ventana) · <code>«CINCO FOSAS» EN OTRO MEDIO: CONTRADICHO</code> · colectivo de búsqueda, por titular; trabajos continuaron el 16, " + RES + " · mismo predio de un hallazgo previo de 12 cuerpos, por titular · sin identificaciones",
+  panel="Fosa: <b>4 cuerpos y restos humanos</b>", inst=SB, nac=NIN,
+  conf="★★☆☆☆", campo="día del hallazgo solo por resumen; sin fuente institucional", I=0, N=0, R=4, A=0,
+  fechadas=["Tijuana en Línea (2026/10/16)", "El Imparcial (2026/10/16)", "Opinia (2026/10/16)", "Lindero Norte (2026/10/16)"],
+  desl="Cachanillas no figura en las cinco ediciones previas ni en el índice. 🔴 en su ventana por hallazgo de fosa"),
+ dict(id="ARG-135-REC-004", estado="MX-SON", region="Noroeste", fecha="2026-10-15", hora="hallazgo del 15-oct (solo por resumen)", orig="ARGOS 134 (133 SI FUE ANTES DE LAS 07:16 DEL 15) — HORA NO FIJADA", col_orig="rojo",
+  ent="Sonora", mun="Nogales (zona de Mariposa)", dia="15-OCT, HORA NO FIJADA",
+  title="SONORA · NOGALES — HALLAN TRES FOSAS CLANDESTINAS CON CINCO OSAMENTAS EN LA ZONA DE MARIPOSA",
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 134 —133 SI FUE ANTES DE LAS 07:16 DEL 15— HORA NO FIJADA</code> · <code>ZONA DE MARIPOSA</code> · hallazgo del 15-OCT, " + RES + "; publicado el 16-OCT, por ruta · <b>3 fosas clandestinas con 5 osamentas</b>, por titular (🔴 en su ventana) · colectivos de búsqueda, " + RES + " · sin identificación oficial",
+  panel="<b>3 fosas con 5 osamentas</b>", inst=SB, nac=NIN,
+  conf="★★☆☆☆", campo="una sola fuente con fecha en la ruta; día del hallazgo solo por resumen", I=0, N=0, R=1, A=0,
+  fechadas=["El Imparcial (2026/10/16)"],
+  desl="Mariposa no figura en las cinco ediciones previas ni en el índice. 🔴 en su ventana por hallazgo de fosa"),
 ]
 for r in R:
     r["color"] = "rec"; r["impacto"] = "grande" if r["col_orig"] == "rojo" else "mediano"
@@ -133,15 +167,15 @@ for r in R:
 # ---------------------------------------------------------------- ARMAMENTO (solo hechos propios)
 # cortas, largas, sincat, especial, cartuchos, cargadores, granadas, aei, explosivos, detenidos
 ARM = [
- dict(id="ARG-135-ARM-001", ficha="ARG-135-007", estado="MX-SIN", region="Noroeste", ent="Sinaloa", mun="Culiacán", c=[3,1,0,0,417,16,0,0,0,4],
+ dict(id="ARG-135-ARM-001", ficha="ARG-135-008", estado="MX-SIN", region="Noroeste", ent="Sinaloa", mun="Culiacán", c=[3,0,1,0,417,16,0,0,0,4],
   corp="Gabinete de Seguridad (por cita)", conf="Medio", color="verde", fecha="2026-10-16", hora="operativo no fechado",
   fecha_txt="no publicada<br><span class=\"muted-note\">publicado 16-oct · FRONTERA DE VENTANA</span>",
-  nota="ametralladora y 417 cartuchos por titular; 3 cortas y 16 cargadores solo por resumen · ametralladora sin especificar: se integra como arma larga por la taxonomía; si la autoridad la clasifica como pesada, pasa a especial · 4 detenidos por titular",
+  nota="ametralladora y 417 cartuchos por <i>slug</i> de La Nigua; 3 cortas y 16 cargadores solo por resumen · ametralladora sin especificar: sin categoría · «más de 400 cartuchos» en Posta · 4 detenidos por titular",
   fuentes=["Infobae (2026/10/16)", "MVS Noticias (2026/10/16)", "Tribuna (2026/10/16)"]),
- dict(id="ARG-135-ARM-002", ficha="ARG-135-008", estado="MX-SIN", region="Noroeste", ent="Sinaloa", mun="Mazatlán y Culiacán", c=[0,1,0,0,0,0,0,0,0,1],
+ dict(id="ARG-135-ARM-002", ficha="ARG-135-009", estado="MX-SIN", region="Noroeste", ent="Sinaloa", mun="Culiacán (El Carrizal)", c=[0,1,0,0,0,0,0,0,0,0],
   corp="Marina · SSPC · FGR (por cita)", conf="Bajo", color="verde", fecha="2026-10-16", hora="cateos no fechados",
   fecha_txt="no publicada<br><span class=\"muted-note\">publicado 16-oct · FRONTERA DE VENTANA</span>",
-  nota="1 arma larga y 1 detenido solo por resumen · cartuchos sin cifra: cualitativo",
+  nota="1 arma larga solo por resumen, en El Carrizal, sin detenidos · cartuchos sin cifra: cualitativo · el detenido de Mazatlán (cateo sin armas) no entra en este conteo",
   fuentes=["diario.mx (2026/oct/16)", "El Diario de Chihuahua (2026/oct/16)"]),
 ]
 TOT = [sum(a["c"][i] for a in ARM) for i in range(10)]
@@ -151,11 +185,11 @@ cnt_rec = {k: sum(1 for r in R if r["col_orig"] == k) for k in ("rojo", "amarill
 ENT = sorted(set(e["ent"] for e in E))
 ENT_ARM = sorted(set(a["ent"] for a in ARM))
 NFR = sum(1 for e in E if "FRONTERA DE VENTANA" in e["hecho"])
-assert TOT == [3, 2, 0, 0, 417, 16, 0, 0, 0, 5], TOT
-assert cnt == {"rojo": 3, "amarillo": 3, "verde": 4}, cnt
-assert cnt_rec == {"rojo": 2, "amarillo": 0, "verde": 0}, cnt_rec
-assert len(ENT) == 6, ENT
-assert NFR == 8, NFR
+assert TOT == [3, 1, 1, 0, 417, 16, 0, 0, 0, 4], TOT
+assert cnt == {"rojo": 3, "amarillo": 4, "verde": 5}, cnt
+assert cnt_rec == {"rojo": 4, "amarillo": 0, "verde": 0}, cnt_rec
+assert len(ENT) == 7, ENT
+assert NFR == 10, NFR
 
 def fmt(n): return f"{n:,}"
 
@@ -269,8 +303,8 @@ port = f'''<section class="page">
     <p>
       <b>1. SOLICITE A LA FISCALÍA DE BAJA CALIFORNIA EL DICTAMEN BALÍSTICO DE LOS CASQUILLOS</b> (ARG-135-002).
       <br><b>2. SOLICITE A LA FISCALÍA DE MICHOACÁN LA IDENTIFICACIÓN DE LAS VÍCTIMAS Y LA HORA DEL HALLAZGO</b> (ARG-135-003).
-      <br><b>3. SOLICITE A LA FISCALÍA DE GUERRERO LA SITUACIÓN DE LA PERSONA AÚN NO LOCALIZADA</b> (ARG-135-009).
-      <br><b>4. SOLICITE A LA FISCALÍA DE NAYARIT LA SITUACIÓN JURÍDICA DEL AGENTE DETENIDO</b> (ARG-135-010).
+      <br><b>3. SOLICITE A LA FISCALÍA DE GUERRERO LA SITUACIÓN DE LA PERSONA AÚN NO LOCALIZADA</b> (ARG-135-010).
+      <br><b>4. SOLICITE A LA FISCALÍA DE NAYARIT LA SITUACIÓN JURÍDICA DEL AGENTE DETENIDO</b> (ARG-135-011).
       <br><b>5. SOLICITE A LA FISCALÍA DE NUEVO LEÓN EL DÍA DEL ATAQUE</b> (ARG-135-REC-001).
     </p>
   </div>
@@ -282,7 +316,7 @@ rows_own = "\n".join(prow(e) for e in E)
 rows_rec = "\n".join(prow(r, True) for r in R)
 panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
     Ventana <b>16-oct 11:34 → 17-oct 09:28 CDMX</b> (<b>{DUR}</b>) · <b>{len(E)} hechos propios</b> en <b>{len(ENT)} entidades</b> ·
-    <b>densidad 0,46 hechos/hora</b>; duración y densidad, <b>cálculo propio</b>. <b>Orden: rojos, amarillos, verdes</b>. <b>Ocho de diez</b> llevan <code>FRONTERA DE VENTANA</code>.
+    <b>densidad 0,55 hechos/hora</b>; duración y densidad, <b>cálculo propio</b>. <b>Orden: rojos, amarillos, verdes</b>. <b>Diez de doce</b> llevan <code>FRONTERA DE VENTANA</code>.
     <br><code>LAS {len(R)} RECUPERACIONES DEL FINAL PERTENECEN A VENTANAS ANTERIORES Y QUEDAN FUERA DEL SEMÁFORO, DEL MAPA, DEL RADAR Y DE TODOS LOS TOTALES.</code>
     <br><b>Toque un ARG-ID para ir a su ficha</b>, donde están las fuentes, el nivel de confianza y los deslindes.
   </p>
@@ -303,15 +337,15 @@ panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
     <tbody><tr><td><b>{len(E)}</b></td><td><b>{cnt["rojo"]}</b></td><td><b>{cnt["amarillo"]}</b></td><td><b>{cnt["verde"]}</b></td><td><b>{len(R)}</b></td><td><b>{TOT[0]}</b></td><td><b>{TOT[1]}</b></td><td><b>{TOT[2]}</b></td><td><b>{TOT[3]}</b></td><td><b>{fmt(TOT[4])}</b></td><td><b>{TOT[5]}</b></td><td><b>{TOT[6]}</b></td><td><b>{TOT[7]}</b></td><td><b>{TOT[8]}</b></td><td><b>{TOT[9]}</b></td><td><b>{len(ENT)}</b></td></tr></tbody>
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
-    <b>Armamento</b>: <b>2 eventos integrados</b>, los dos en Sinaloa (ARG-135-ARM-001, confianza Medio; ARG-135-ARM-002, confianza Bajo). <b>Detenidos</b> = solo los del <b>mismo evento de aseguramiento de armamento</b>; el de ARG-135-010 no entra. <b>Entidades</b> = con al menos un hecho propio.
-    <b>Muertos en hechos propios</b>: <b>10</b> —Culiacán 2, Tijuana 2, Apatzingán 3 + 1 y Hermosillo 1 + 1—. <b>Heridos: 0</b> integrados. <b>Personas localizadas con vida: 6</b> (ARG-135-009). <b>Cálculo propio</b>.
+    <b>Armamento</b>: <b>2 eventos integrados</b>, los dos en Sinaloa (ARG-135-ARM-001, confianza Medio; ARG-135-ARM-002, confianza Bajo). <b>Detenidos</b> = solo los del <b>mismo evento de aseguramiento de armamento</b>; los de ARG-135-009 (Mazatlán), ARG-135-011 y ARG-135-012 no entran. <b>Entidades</b> = con al menos un hecho propio.
+    <b>Muertos en hechos propios</b>: <b>11</b> —Culiacán 2 + 1, Tijuana 2, Apatzingán 3 + 1 y Hermosillo 1 + 1—. <b>Heridos: 0</b> integrados. <b>Personas localizadas con vida: 6</b> (ARG-135-010). <b>Cálculo propio</b>.
     <br><b>Seguimientos de ediciones previas, fuera del semáforo</b>: ARG-134-013, un adolescente herido leve por esquirla, solo por resumen (Línea Directa 2026-10-15) · ARG-134-005, «en su día de descanso» en la mayoría de los medios · ARG-133-001, sexo de los cinco cuerpos según la PGJEH: 2 mujeres y 3 hombres, por cita.
   </p>
 '''
 
 co1 = "\n".join(ficha(e) for e in E[:3])
-co2 = "\n".join(ficha(e) for e in E[3:6])
-co3 = "\n".join(ficha(e) for e in E[6:])
+co2 = "\n".join(ficha(e) for e in E[3:7])
+co3 = "\n".join(ficha(e) for e in E[7:])
 rec1 = "\n".join(ficha(r, True) for r in R)
 
 ico = re.findall(r'<div class="tile[^"]*"><svg class="ico ico-lg"[^>]*>.*?</svg>', tpl)
@@ -321,8 +355,8 @@ def tile(i, lbl, num, sub):
     return f'    <div class="tile{cero}">{icos[i]}<span class="lbl">{lbl}</span><span class="num">{num}</span><span class="sub">{sub}</span></div>'
 tiles = "\n".join([
  tile(0, "Armas cortas", TOT[0], "Culiacán · <b>solo por resumen</b>"),
- tile(1, "Armas largas", TOT[1], "Culiacán (ametralladora) y Mazatlán/Culiacán"),
- tile(2, "Sin categoría", TOT[2], "<code>NINGUNA ARMA SIN CATEGORÍA</code>"),
+ tile(1, "Armas largas", TOT[1], "Culiacán, El Carrizal · <b>solo por resumen</b>"),
+ tile(2, "Sin categoría", TOT[2], "1 ametralladora sin especificar (ARG-135-ARM-001)"),
  tile(3, "Cartuchos", fmt(TOT[4]), "Culiacán · <b>por titular</b>"),
  tile(4, "Cargadores", TOT[5], "Culiacán · <b>solo por resumen</b>"),
  tile(5, "Granadas", TOT[6], "<code>NINGUNA GRANADA EN HECHO PROPIO</code>"),
@@ -366,7 +400,7 @@ arm2 = f'''  <div class="table-wrap"><table class="exec wide">
   <p class="muted-note" style="margin:6px 0 0 0;">
     <b>Lectura regional</b> —2 filas, <b>cálculo propio</b>—: <b>Noroeste 2</b> · <b>Noreste 0</b> · <b>Occidente 0</b> · <b>Centro 0</b> · <b>Golfo 0</b> · <b>Sureste 0</b>.
     <br><code>VISTOS, NO INTEGRADOS</code>: Estado de México, Marina y FGR, 7 detenidos y armas en dos puntos (publicación del 17 solo por resumen; desgloses contradictorios: <code>POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN</code>).
-    <br><code>EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE — FUERA DEL TOTAL</code>: boletín federal de las <b>acciones del 15-oct</b>, publicado el 16-oct: Baja California, Colima, Chihuahua, Guerrero, Jalisco, Querétaro, Quintana Roo, Sinaloa y Sonora. <code>CANTIDADES SOLO POR RESUMEN, SIN FRAGMENTO: NO SE PUBLICAN</code>.
+    <br><code>EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE — FUERA DEL TOTAL</code>: boletín federal de las <b>acciones del 15-oct</b>, publicado el 16-oct (fecha de publicación solo por resumen): Baja California, Colima, Chihuahua, Guerrero, Jalisco, Querétaro, Quintana Roo, Sinaloa y Sonora. <code>CANTIDADES SOLO POR RESUMEN, SIN FRAGMENTO: NO SE PUBLICAN</code>.
   </p>
 '''
 
@@ -382,8 +416,8 @@ sent = f'''  <div class="conteo">
   <div class="table-wrap"><table class="exec wide">
     <thead><tr><th>Entidad · Municipio</th><th>Caso</th><th>Pena publicada</th><th>Autoridad</th><th>Por qué NO se integra</th><th>Confianza</th></tr></thead>
     <tbody>
-      <tr><td><b>Baja California</b><br>Ensenada</td><td>Tres sentenciados, nombres no reproducidos · <span class="muted-note">homicidio calificado de tres surfistas, robo calificado y robo de vehículo con violencia; fecha de la sentencia (16-oct) solo por resumen</span></td><td><b>158 años 9 meses</b> a cada uno, por titular · <code>PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA</code></td><td>FGE Baja California <span class="muted-note">(por titulares de medios)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · Infobae 2026/10/17 · crprensa 2026/10/17 · boletín no localizado · <code>FRONTERA DE VENTANA — HORA NO FIJADA</code></td><td>Bajo</td></tr>
-      <tr><td><b>Sonora</b><br>Hermosillo</td><td>Un sentenciado, nombre no reproducido · <span class="muted-note">homicidio calificado; fecha de la sentencia no publicada</span></td><td><b>25 años</b>, por titular</td><td>Fiscalía de Sonora <span class="muted-note">(solo por resumen)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · Tribuna 2026/10/16 (hora no fijada) · fuente única · boletín no localizado</td><td>No confirmado</td></tr>
+      <tr><td><b>Baja California</b><br>Ensenada</td><td>Tres sentenciados, nombres no reproducidos · <span class="muted-note">homicidio calificado de tres surfistas, robo calificado y robo de vehículo con violencia; fecha de la sentencia (16-oct) solo por resumen</span></td><td><b>158 años</b> a cada uno, por titular; <b>9 meses</b> adicionales solo por resumen · <code>PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA</code></td><td>FGE Baja California <span class="muted-note">(por titulares de medios)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · Infobae 2026/10/17 · crprensa 2026/10/17 · En Línea BC 2026/10/17 · boletín no localizado · <code>FRONTERA DE VENTANA — HORA NO FIJADA</code></td><td>Bajo</td></tr>
+      <tr><td><b>Sonora</b><br>Hermosillo</td><td>Un sentenciado, nombre no reproducido · <span class="muted-note">«asesinato», por titular; homicidio calificado y fecha del hecho solo por resumen</span></td><td><b>25 años</b>, por titular</td><td>Fiscalía de Sonora <span class="muted-note">(solo por resumen)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · Tribuna 2026/10/16 (hora no fijada) · Diario del Yaqui sin fecha en la ruta · boletín no localizado · <code>NO ES</code> ninguno de los dos casos de 25 años de agosto en Hermosillo</td><td>Bajo</td></tr>
     </tbody>
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
@@ -399,8 +433,8 @@ sent = f'''  <div class="conteo">
       <tr><td><code>SIN ACTUALIZACIÓN CONSTATADA</code></td><td><b>0</b> · exige lectura directa del portal</td></tr>
       <tr><td><code>NO REVISADA</code> — sentencias</td><td><b>14</b>: BC, Son, Chih, Sin · Coah · Mich, Nay, Ags · CDMX, Tlax, Hgo · Gro, Camp, Yuc</td></tr>
       <tr><td><b>Alto impacto y armamento</b></td><td><b>Alto impacto: 20 de 32 con consulta propia por entidad</b> · <b>11 solo por consulta regional amplia</b>: Dgo · Coah, SLP · Jal, Col, Nay · CDMX, Mor, Tlax · Camp, Yuc · <code>NO REVISADA</code>: BCS · <b>armamento: 11 de 32</b> —Chih · Coah, Tamps, Zac · Col, Nay, Ags · Ver, Tab · Oax, Yuc—; <code>NO REVISADA</code>: BC, BCS, Son, Sin, Dgo · NL, SLP · Jal, Mich, Gto · CDMX, Edomex, Mor, Pue, Tlax, Hgo, Qro · Gro, Chis, Camp, QRoo (Sinaloa: hechos por medios, sin dominio oficial) · <code>REVISADA = BÚSQUEDA DIRIGIDA QUE DEVOLVIÓ EL DOMINIO OFICIAL</code></td></tr>
-      <tr><td><b>Boletín federal</b></td><td><b>Acciones del 15-oct</b>: existe, publicado el 16-oct (Milenio y republicadores) · <b>acciones del 16-oct</b>: <code>SIN RESULTADO INDEXADO EN VENTANA</code> en las tres formas de consulta · <b>Defensa, Marina, Guardia Nacional y FGR</b>: SRIV · <b>gabinetedeseguridad.gob.mx</b>: <code>NO REVISADA</code>, dominio no devuelto</td></tr>
-      <tr><td><b>Techo de confianza del producto</b></td><td><b>★★★☆☆</b> · <code>BLOQUEO DE EGRESO REVERIFICADO EL 17-OCT: GOB.MX</code></td></tr>
+      <tr><td><b>Boletín federal</b></td><td><b>Acciones del 15-oct</b>: existe (Milenio y republicadores; publicación del 16-oct solo por resumen) · <b>acciones del 16-oct</b>: <code>SIN RESULTADO INDEXADO EN VENTANA</code> en las tres formas de consulta · <b>Defensa, Marina, Guardia Nacional y FGR</b>: SRIV · <b>gabinetedeseguridad.gob.mx</b>: <code>NO REVISADA</code>, dominio no devuelto</td></tr>
+      <tr><td><b>Techo de confianza del producto</b></td><td><b>★★★★☆</b> (techo de política) · esta edición no supera <b>★★★☆☆</b>: sin lectura directa de documento oficial · <code>BLOQUEO DE EGRESO REVERIFICADO EL 17-OCT: GOB.MX</code></td></tr>
     </tbody>
   </table></div>
 '''
@@ -409,18 +443,18 @@ cierre = f'''  <div class="alerta contexto">
     <div class="flag">VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL</div>
     <p>
       <b>1.</b> <b>NIVEL FIJADO POR TRES ROJOS</b>: ARG-135-001 a ARG-135-003 · <b>reserva</b> en ARG-135-003.
-      <br><b>2.</b> <b>Contexto operativo</b>: ARG-135-004 a ARG-135-006.
-      <br><b>3.</b> <b>Respuesta institucional propia</b>: ARG-135-007 a ARG-135-010.
-      <br><b>4.</b> <b>Recuperaciones</b>: ARG-135-REC-001 y ARG-135-REC-002.
-      <br><b>5.</b> <code>21 H 54 MIN; OCHO DE DIEZ HECHOS CON FRONTERA DE VENTANA: TOTALES NO COMPARABLES SIN MÁS.</code>
+      <br><b>2.</b> <b>Contexto operativo</b>: ARG-135-004 a ARG-135-007.
+      <br><b>3.</b> <b>Respuesta institucional propia</b>: ARG-135-008 a ARG-135-012.
+      <br><b>4.</b> <b>Recuperaciones</b>: ARG-135-REC-001 a ARG-135-REC-004.
+      <br><b>5.</b> <code>21 H 54 MIN; DIEZ DE DOCE HECHOS CON FRONTERA DE VENTANA: TOTALES NO COMPARABLES SIN MÁS.</code>
     </p>
   </div>
 
   <div class="alerta contexto" style="margin-top:8px;">
     <div class="flag">CONCLUSIONES DE INTELIGENCIA CRIMINAL</div>
     <p>
-      <b>1. CULIACÁN, ATAQUE CON ARMA LARGA EN ZONA RESIDENCIAL.</b> ARG-135-001, a plena tarde; tipo de arma solo por resumen. Línea: <b>solicitar a la FGE Sinaloa el cotejo de los casquillos</b> con hechos previos del sector — hipótesis.
-      <br><b>2. SINALOA, ABASTECIMIENTO Y MANTENIMIENTO DE ARMAMENTO.</b> ARG-135-007 y ARG-135-008, tras ARG-134-016: tres operativos federales en dos días. Línea: <b>solicitar a la FGR el rastreo de origen de la ametralladora</b> — requiere validación.
+      <b>1. CULIACÁN, DOS HOMICIDIOS EN DIECISIETE HORAS.</b> ARG-135-001 (arma larga, solo por resumen) y ARG-135-007 (víctima maniatada). Línea: <b>solicitar a la FGE Sinaloa el cotejo de los casquillos</b> con hechos previos del sector — hipótesis.
+      <br><b>2. SINALOA, ABASTECIMIENTO Y MANTENIMIENTO DE ARMAMENTO.</b> ARG-135-008, tras ARG-134-016: célula de tráfico y reparación de armas, con apoyo de información de EE. UU. Línea: <b>solicitar a la FGR el rastreo de origen de la ametralladora</b> — requiere validación.
       <br><b>3. APATZINGÁN, AGRESIÓN DENTRO DE VIVIENDAS.</b> ARG-135-004 y ARG-134-REC-003, con víctimas menores o frente a menores. Línea: <b>solicitar a la FGE Michoacán si las carpetas comparten indicios</b> — vínculo no acreditado.
       <br><b>4. HERMOSILLO, ZONA SUR.</b> ARG-135-005, ARG-135-006 y ARG-134-012 en dos días. Línea: <b>solicitar a la Fiscalía de Sonora el cotejo balístico</b> — hipótesis.
       <br><b>5. POLICÍAS MUNICIPALES AGREDIDOS AL ACUDIR A UN REPORTE.</b> ARG-135-REC-002. Línea: <b>solicitar a la PGJ Hidalgo el peritaje de la patrulla</b> — sin heridos ni detenidos publicados.
