@@ -8,13 +8,13 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 135 (corte 2026-10-17).
+**Última actualización**: ARGOS 136 (corte 2026-10-18).
 
 ---
 
 ## Arranque de la edición siguiente
 
-**`reports/_arranque-ARGOS-136.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-136.txt`) contiene la orden de arranque para una sesión nueva: verificación
+**`reports/_arranque-ARGOS-137.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-137.txt`) contiene la orden de arranque para una sesión nueva: verificación
 de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y comandos de construcción.
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
@@ -2156,3 +2156,58 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 8. **El índice del buscador casi no llega a la noche del viernes ni al sábado** en Golfo, Centro y Noreste: buscar por fecha de cierre en la ruta al final de la ola, no al principio.
 9. **Herramientas (deuda)**: `gen-texto.py` emite los subtítulos antes del contenido equivocado (orden de documento) y `gen-movil.py` conserva frases que no aplican al móvil («Toque un ARG-ID», «mismo contenido verificado», «totales en las tarjetas de arriba»). Corregir en 136.
 10. **Extractor de informes y plantilla de equipos**: `tools/extrae-informe.py` y `tools/plantilla-equipos-135.md` (copiar a la de 136 y cambiar ventana).
+
+## Cerrados por ARGOS 136
+
+| Pendiente | Disposición |
+|---|---|
+| **«Pokémon» ↔ Laguna Colorada** (`ARG-135-008` ↔ `ARG-134-016`) | **Distintos, con reserva** (4 frente a 7 detenidos; HSI frente a 5 cateos; 16 frente a 15-oct; Ahora Noticias, por resumen: «dos operativos, 11 detenidos» en Culiacán). Nueva duplicidad abierta: SSP Sinaloa (ver abajo) |
+| **Cateos de Mazatlán y El Carrizal** (`-009`, `ARM-002`) | Comunicado Semar–SSPC–FEMDO del **16-oct**, no el boletín del 15. Sigue fuera del total: cantidad solo por resumen |
+| **Taxco, 6 policías (2020)** | Fichado como **`ARG-136-008`** (día de apertura sin hora) |
+| **La Costerita** (`-007`) | 135 sostenido (ninguna ruta con día; ~07:15 por resumen) |
+| **Pinotepa Nacional, periodista (9-oct)** | Ya publicado: `ARG-128-001` |
+| **Ajuchitlán, ubicación** | Ejido **El Balcón** (gobernadora, por resumen) |
+| **Tepic, vinculación** | **Imputado, no vinculado** (Meridiano 2026/10/17); la audiencia sigue abierta, ver abajo |
+| **El Guayabo** (`ARG-134-REC-003`) | Martes 13 → **ventana de 132** (por resumen), `ARG-136-FE-001` |
+| **Chiapa de Corzo, día** (`ARG-134-REC-002`) | **14-oct por ruta**; la hora sigue abierta |
+| **Silao «mañana del sábado 17»** (pista de control) | `ARG-136-REC-001` (ventana de 135) |
+| **Deuda 9 de 135 (herramientas)** | `gen-texto.py` en orden de documento; `gen-movil.py` sin «Toque un ARG-ID», «mismo contenido verificado» ni «tarjetas de arriba» (commit `8a99ea8`) |
+| **Deuda 10 de 135 (plantilla)** | `tools/plantilla-equipos-136.md`; los informes de los equipos y de los controles, por primera vez en el repositorio: `reports/argos-2026-10-18-equipos.md` |
+| **Controles** | Primera ronda: `procedencia-cifras` 19 de 20 «CORREGIR», `editor-duplicidad` 15 de 20; segunda ronda: 15 y 11. Ver `argos-2026-10-18-fuentes.md` §13 |
+
+## Abiertos que ARGOS 137 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️⚠️ **CICLO DE ROTACIÓN** | La tabla de `CLAUDE.md` da **A (Noroeste + Centro) para 137**; la serie declarada (C 134 · A 135 · B 136, desfasada desde 134) daría **C**. 136 aplicó B por orden expresa del destinatario. **Decisión del destinatario antes de la ola** |
+| ⚠️ **Colores pendientes del destinatario** | **San Baltazar Tetela** (ataque de la madrugada del 17, un niño muerto y su padre herido; 🟡 por lectura literal; **si 🔴, se recupera en 137** y 135 pasa a 6 rojos y 17 muertos) · **Tanquián** (`ARG-136-REC-002`: 🔴 si la víctima era de la GN; si no, 🟡 y 134 «hasta 8») · Patamban, Coatzacoalcos, San Blas Atempa, Iztapalapa, Cajeme |
+| ⚠️ **SINALOA · SSP, «Cuatro civiles armados»** ↔ `ARG-135-ARM-001` | Fecha del boletín (13-16 oct por resumen), colonia (Industrial Bravo, por resumen), cartuchos (385 frente a 417); **no es** La Popular del 9-10 oct |
+| **GUERRERO · Acapulco** (`-002`, `-003`) | Ruta con día; lesionados oficiales de `-002` (3 o 4); segunda fuente e identificación de `-003` |
+| **GUERRERO · Taxco** (`-008`, `-009`) | Fecha de cada detención (16 o 17); atribución a La Familia Michoacana de `-009` (solo por resumen); el policía detenido con él |
+| **CHIHUAHUA · exfiscal** (`-006`) | Hora (RND ~10:20, por resumen); audiencia inicial; acusación de la FGR |
+| **CHIHUAHUA · Cuauhtémoc** (`-REC-003`) | Hora (¿antes de las 09:28 del 17?); «viernes» en un medio; identificaciones |
+| **PUEBLA · San Baltazar Tetela** (`-007`) | 1 o 2 detenidos; corporación; situación jurídica; hora del ataque |
+| **BC · Maneadero** (`-005`) | Causa de muerte; identificación; hora |
+| **SINALOA · Culiacán** (`-004`) | Colonia (Estela Ortiz o Ruiz Cortines) |
+| **NUEVO LEÓN · Linares** (`ARG-135-REC-001`) | Fragmento literal con día; si el herido murió |
+| **CHIAPAS · Chiapa de Corzo** (`ARG-134-REC-002`) | Hora del 14-oct (132 si antes de las 08:19) |
+| **Recalcular 133** | Rango de rojos y muertos contra `argos-2026-10-15-fuentes.md` tras FE-001 de 136 |
+| **MICHOACÁN · Apatzingán** (`ARG-135-003`) | Hora del hallazgo; identificación |
+| **Heredados sin avance** | Divina Providencia (2 o 3) · Cachanillas (4 o 6, sin cifra oficial) · Nogales (cifra oficial) · Ajuchitlán (séptima persona) · Tepic (vinculación) · Hermosillo · CDMX (comunicado SSC) · El Tívoli · Tezontepec · «El Tripa» · Coquimatlán · Tlalnepantla · Monterrey/Santa Catarina |
+| **Sentencias candidatas** | **Ensenada, 158 años 9 meses** (boletín FGE BC) · Hermosillo, 25 años · Veracruz, comunicador, 21 años · FGR Cosoleacaque y Banderilla · **Tulantepec (21-oct, miércoles)** |
+| **Vistos de 136 sin fichar** | Xalapa, El Moral (probablemente 3-oct) · Temixco, Lomas del Carril (día no fijado; posible homónimo) · León, Valle Hermoso (🟡 de 135) · Juchitán (16-oct) · Chignahuapan (sin fecha) · Radio Hoy, Caribe Verde (entidad no determinada) |
+| **Boletín federal de las acciones del 17 y 18-oct** | Triple consulta; `gabinetedeseguridad.gob.mx/resultados` |
+| **Cobertura con prioridad sobre el ciclo en 137** | **Sentencias `NO REVISADA` (15)**: BCS, Sin, Dgo · Jal, Col, Gto · Edomex, Mor, Pue, Hgo, Qro · Oax, Chis, Camp, QRoo. **Armamento `NO REVISADA` (18)**: Chih, Dgo · Coah, SLP, Tamps · Jal, Col, Nay, Ags · Mor, Tlax, Hgo, Qro · Ver, Tab · Oax, Camp, Yuc. SSP de Nayarit (`ssypc.nayarit.gob.mx`) sin consultar. Alto impacto: Aguascalientes `NO REVISADA` |
+| **Dominios corregidos para la plantilla** | Nayarit `fgenay.gob.mx` · Michoacán `comunicacion.fiscaliamichoacan.gob.mx` · Veracruz `comunicacion.fiscaliaveracruz.gob.mx` · Zacatecas SSP `ssp.zacatecas.gob.mx` · Sonora fiscalía `fiscalia.sonora.gob.mx` · Coahuila `sitio.fgecoahuila.gob.mx` · Aguascalientes `fiscalia-aguascalientes.gob.mx` |
+
+## Deuda de método (ARGOS 136)
+
+1. **Rotación desfasada desde 134** respecto de la tabla de `CLAUDE.md`: ver «CICLO» arriba.
+2. **`procedencia-cifras` volvió a hallar tres hechos** que la ola no traía (Acapulco, Vicente Guerrero; Maneadero; Cuauhtémoc, Chih.). Tercera edición seguida: **reservar al menos 30 búsquedas para ese control es parte del método, no holgura**.
+3. **La búsqueda del coordinador «madrugada de este domingo» trajo tres candidatos; dos eran falsos** (Xalapa, de otra fecha; Temixco, sin día). Un resumen con «este domingo» no fecha el hecho.
+4. **El índice del buscador no llega a la noche del sábado** en Noreste, Golfo ni Centro.
+5. **`validar.js` no evalúa el móvil** (falla por estructura: sin `<script>` propio, sin `table-wrap`, sin pies): `CLAUDE.md` exige la comprobación en las dos versiones. El móvil lo valida su generador; falta un validador común.
+6. **Informes de equipo en el repositorio** (`argos-AAAA-MM-DD-equipos.md`): mantener desde 137; las notas del coordinador deben registrar **todas** las URL que respaldan una ficha (en 136, las de Taxco y del exfiscal se añadieron en la segunda ronda).
+7. **Presupuesto**: 2 + 159 + 7 + 30 = **198**; segunda ronda sin búsquedas.
+8. **Sonora y Sinaloa**: por primera vez se devolvieron `fiscalia.sonora.gob.mx` y `sspsinaloa.gob.mx`; **`fiscaliasinaloa.gob.mx` sigue sin devolver (novena edición)**.
+
