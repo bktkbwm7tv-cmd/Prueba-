@@ -1,0 +1,458 @@
+ARGOS 136 — REPORTE NACIONAL DE SEGURIDAD
+REPORTE DIARIO DE INTELIGENCIA CRIMINAL
+«INVESTIGACIONES, BÚSQUEDA Y VERDAD»
+
+Corte informativo: 2026-10-18 · 08:34 (CDMX)
+Ventana: 17-oct 09:28 → 18-oct 08:34 CDMX (23 h 06 min)
+Versión 3.0 · Corte matutino · USO INSTITUCIONAL
+
+============================================================================
+
+[ RADAR CENTRAL — EN VIVO ]
+
+  · 🔴 Alto impacto · 2
+  · 🟡 Violencia operativa · 3
+  · 🟢 Acciones institucionales · 2
+
+[ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
+
+Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
+
+## SEMÁFORO ARGOS
+
+  · 🔴 ROJO — ALTO IMPACTO — 2 eventos
+
+  · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 3 eventos
+
+  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 2 eventos
+
+── LO QUE DEBE HACER EL MANDO
+
+1. SOLICITE A LA FISCALÍA DE GUANAJUATO LA IDENTIFICACIÓN DE LAS VÍCTIMAS Y LA HORA DEL ATAQUE
+(ARG-136-001).
+2. SOLICITE A LA FISCALÍA DE GUERRERO EL NÚMERO OFICIAL DE LESIONADOS Y EL DÍA DEL ATAQUE
+(ARG-136-002).
+3. SOLICITE A LA FISCALÍA DE PUEBLA LA SITUACIÓN JURÍDICA DE LOS DETENIDOS Y LA CORPORACIÓN QUE
+LOS DETUVO (ARG-136-007).
+4. SOLICITE A LA FISCALÍA DE CHIHUAHUA LA HORA DE LA DETENCIÓN Y LA FECHA DE LA AUDIENCIA
+INICIAL (ARG-136-006).
+5. SOLICITE A LA FISCALÍA DE SAN LUIS POTOSÍ LA ADSCRIPCIÓN DE LA VÍCTIMA (ARG-136-REC-003).
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-18 · Hora: 08:34 (CDMX) · Corte: Matutino · ARGOS N.° 136 · USO INSTITUCIONAL
+
+============================================================================
+
+## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
+
+Ventana 17-oct 09:28 → 18-oct 08:34 CDMX (23 h 06 min) · 7 hechos propios en 7 entidades ·
+densidad 0,30 hechos/hora; duración y densidad, cálculo propio. Orden: rojos, amarillos, verdes.
+Toque un ARG-ID para ir a su ficha, donde están las fuentes, el nivel de confianza y los
+deslindes.
+
+  Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
+  Guanajuato · Salamanca (col. Guanajuato) · 17-OCT, TARDE | Ataque armado: 2 hombres muertos | 🔴 Rojo | SIN BOLETÍN | Milenio | ★★★☆☆ | ARG-136-001
+  Guerrero · Acapulco (col. Cuauhtémoc, parte alta) · 17-OCT, TARDE, DÍA SOLO POR RESUMEN | Ataque armado: 2 muertos y 3 heridos | 🔴 Rojo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-136-002
+  Sinaloa · Culiacán (col. Estela Ortiz) · 17-OCT, NOCHE · PUB. 18-OCT | 1 joven asesinado dentro de una tienda | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-136-003
+  Veracruz · Xalapa (col. El Moral) · 18-OCT, MADRUGADA, DÍA SOLO POR RESUMEN | 1 hombre asesinado en la vía pública | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-136-004
+  Morelos · Temixco · 17-OCT, TARDE, DÍA SOLO POR RESUMEN | 1 hombre asesinado; cuerpo en una cajuela | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-136-005
+  Chihuahua · Chihuahua · 17-OCT, MAÑANA, HORA NO FIJADA | Exfiscal general del estado detenido | 🟢 Verde | Fiscalía de Chihuahua (por cita) | El Financiero · La Jornada · CNN en Español · Expansión · Reforma · Excélsior · El Universal | ★★★☆☆ | ARG-136-006
+  Puebla · Puebla (San Pedro Zacachimalpa) · PUB. 17-OCT, HORA NO FIJADA | 2 detenidos por el ataque de San Baltazar Tetela | 🟢 Verde | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-136-007
+  Guanajuato · Silao (Baños de Agua Caliente) · VENTANA ARGOS 135 — HORA SOLO POR RESUMEN | Hombre y mujer asesinados en su vivienda | 🔴 Rojo (en su ventana) | SIN BOLETÍN | Milenio | ★★★☆☆ | ARG-136-REC-001
+  Puebla · Puebla (junta auxiliar San Baltazar Tetela) · VENTANA ARGOS 135 — HORA SOLO POR RESUMEN | Niño de 2 años muerto; su padre, herido | 🔴 Rojo (en su ventana) | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-136-REC-002
+  San Luis Potosí · Tanquián de Escobedo (centro) · VENTANA ARGOS 134 — HORA SOLO POR RESUMEN | Elemento de la Guardia Nacional asesinado | 🔴 Rojo (en su ventana) | SIN BOLETÍN | N+ · Milenio | ★★☆☆☆ | ARG-136-REC-003
+
+## TOTALES DEL CORTE — CÁLCULO PROPIO DE ARGOS
+
+NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
+
+  Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Armas cortas | Armas largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Entidades
+  7 | 2 | 3 | 2 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7
+
+Armamento: SIN TOTAL NACIONAL VERIFICABLE DURANTE EL CORTE · ningún aseguramiento con cantidad
+publicada y fecha dentro de la ventana. Muertos en hechos propios: 7 —Salamanca 2, Acapulco 2,
+Culiacán 1, Xalapa 1 y Temixco 1—. Heridos: 3 en ARG-136-002, por titular (4 en el cuerpo de una
+nota: contradicho). Detenidos sin aseguramiento: 3 (ARG-136-006 y ARG-136-007). Cálculo propio.
+Seguimientos de ediciones previas, fuera del semáforo: ARG-135-REC-004, 7 osamentas en 5 fosas
+en dos jornadas, por titular (El Imparcial 2026/10/17) · ARG-135-REC-003, «6 cuerpos y
+osamentas» en un medio (Punto Norte 2026/10/17), contradicho con 4 · ARG-135-010, la séptima
+persona sigue sin localizarse (Infobae 2026/10/18) · ARG-135-011, el policía está imputado y la
+audiencia de vinculación sigue pendiente (Meridiano 2026/10/17) · ARG-134-REC-002, el ataque fue
+el 14-oct, por ruta (El Sol del Soconusco 2026/10/14); hora no fijada.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-18 · Hora: 08:34 (CDMX) · Corte: Matutino · ARGOS N.° 136 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (I) — ALTO IMPACTO: SALAMANCA Y ACAPULCO
+
+### GUANAJUATO · SALAMANCA — ASESINAN A BALAZOS A DOS HOMBRES EN LA COLONIA GUANAJUATO [ROJO]
+
+── HECHO
+
+Salamanca · COL. GUANAJUATO, POR TITULAR; CALLE DOLORES HIDALGO CASI ESQUINA COMONFORT, SOLO POR
+RESUMEN · SÁBADO 17-OCT, por ruta de publicación · ~17:30, SOLO POR RESUMEN · varios hombres
+armados disparan y huyen, SOLO POR RESUMEN · 2 hombres muertos a balazos, por titular (🔴) · uno
+muere en el sitio pese a la atención de paramédicos, SOLO POR RESUMEN · Agencia de Investigación
+Criminal de la FGE Guanajuato en la escena, SOLO POR RESUMEN · ningún detenido publicado ·
+armamento no publicado · identidades: no publicadas
+
+── TRAZABILIDAD
+
+ARG-136-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 1 · Regional 3 · Abierta
+0 · con fecha en la ruta: AM (2026/10/17) · Hecho: 2026-10-17 · Hora: ~17:30 (solo por resumen)
+· Consulta: 2026-10-18 08:34-09:45 · Estatus: Parcialmente corroborado · Conteo de armamento:
+sin fila — no hubo armamento asegurado
+Deslindes y reservas: La colonia Guanajuato no figura en las cinco ediciones previas ni en el
+índice. NO es ARG-133-002 (bulevar Valle de Santiago, 14-oct) ni ARG-136-REC-001 (Silao).
+
+### GUERRERO · ACAPULCO — DESDE UN TAXI DISPARAN CONTRA UN NEGOCIO DE COMIDA EN LA COLONIA CUAUHTÉMOC: DOS MUERTOS Y TRES HERIDOS [ROJO]
+
+── HECHO
+
+Acapulco · COL. CUAUHTÉMOC, POR TITULAR; PARTE ALTA, CALLE 10 CERCA DE VICENTE GUERRERO, SOLO
+POR RESUMEN · SÁBADO 17-OCT, SOLO POR RESUMEN · NINGUNA RUTA CON FECHA · ~17:30 o ~18:00, SOLO
+POR RESUMEN, versiones distintas · hombres a bordo de un taxi disparan al menos 20 veces contra
+personas en un negocio de comida, SOLO POR RESUMEN · 2 hombres muertos —uno en el lugar y otro
+durante el traslado— y 3 heridos, por titular (🔴) · 4 HERIDOS EN EL CUERPO DE UNA NOTA:
+CONTRADICHO · FGE Guerrero, Semefo, Policía Estatal y Guardia Nacional en la escena, SOLO POR
+RESUMEN · los agresores huyen · ningún detenido publicado · identidades: no se reproducen
+
+── TRAZABILIDAD
+
+ARG-136-002 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: día y hora solo por
+resumen; ninguna ruta con fecha · Fuentes: Institucional 0 · Nacional 0 · Regional 2 · Abierta 0
+· con fecha en la ruta: ninguna con fecha en la ruta · Hecho: 2026-10-17 · Hora: ~17:30 o ~18:00
+(solo por resumen; versiones distintas) · Consulta: 2026-10-18 08:34-09:45 · Estatus: Pendiente
+de corroboración · Conteo de armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: La colonia Cuauhtémoc de Acapulco no figura en las cinco ediciones
+previas. NO ES el ataque homónimo en la misma colonia con 3 muertos y 2 heridos (noviembre de
+2025, solo por resumen).
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-18 · Hora: 08:34 (CDMX) · Corte: Matutino · ARGOS N.° 136 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (II) — VIOLENCIA OPERATIVA
+
+### SINALOA · CULIACÁN — ASESINAN A BALAZOS A UN JOVEN DENTRO DE UNA TIENDA DE CONVENIENCIA EN LA COLONIA ESTELA ORTIZ [AMARILLO]
+
+── HECHO
+
+Culiacán · COL. ESTELA ORTIZ (ESTHELA ORTIZ, SEGÚN OTRO MEDIO), POR TITULAR · noche del SÁBADO
+17-OCT, minutos antes de la medianoche, SOLO POR RESUMEN; «madrugada de este domingo», SOLO POR
+RESUMEN; publicado el DOMINGO 18-OCT, por ruta · 1 hombre muerto a balazos dentro de una tienda
+de conveniencia, por titular (🟡) · dependiente de la tienda, por titular de Noroeste; 20 años,
+por titular de Café Negro · agentes ministeriales en la escena, SOLO POR RESUMEN · asalto o
+ataque directo: no determinado, SOLO POR RESUMEN · ningún detenido publicado · identidad: no se
+reproduce · FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-136-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 3 · Abierta
+0 · con fecha en la ruta: Luz Noticias (2026-10-18) · Hecho: 2026-10-17 · Hora: minutos antes de
+la medianoche del sábado (solo por resumen) · Consulta: 2026-10-18 08:34-09:45 · Estatus:
+Parcialmente corroborado · Conteo de armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: Estela Ortiz no figura en las cinco ediciones previas ni en el índice.
+
+### VERACRUZ · XALAPA — ASESINAN A BALAZOS A UN HOMBRE EN LA VÍA PÚBLICA [AMARILLO]
+
+── HECHO
+
+Xalapa · COL. EL MORAL, SOLO POR RESUMEN · madrugada del DOMINGO 18-OCT, SOLO POR RESUMEN ·
+NINGUNA RUTA CON FECHA · 1 hombre muerto a balazos en plena vía pública, por titular (🟡) · sin
+signos vitales a la llegada de los paramédicos, SOLO POR RESUMEN · FGE Veracruz en la escena,
+SOLO POR RESUMEN · ningún detenido publicado · identidad: no publicada · FRONTERA DE VENTANA —
+HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-136-004 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: una sola fuente; día,
+hora y colonia solo por resumen · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0
+· con fecha en la ruta: ninguna con fecha en la ruta · Hecho: 2026-10-18 · Hora: madrugada del
+domingo (solo por resumen) · Consulta: 2026-10-18 08:34-09:45 · Estatus: Pendiente de
+corroboración · Conteo de armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: El Moral no figura en las cinco ediciones previas ni en el índice.
+
+### MORELOS · TEMIXCO — HALLAN EL CUERPO DE UN HOMBRE EN LA CAJUELA DE UN AUTO TRAS UN ATAQUE ARMADO [AMARILLO]
+
+── HECHO
+
+Temixco · SÁBADO 17-OCT por la tarde, SOLO POR RESUMEN · NINGUNA RUTA CON FECHA · 1 hombre
+muerto, por titular (🟡) · cuerpo hallado en la cajuela de un automóvil tras un ataque, SOLO POR
+RESUMEN · ningún detenido publicado · identidad: no publicada
+
+── TRAZABILIDAD
+
+ARG-136-005 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: una sola fuente; día y
+circunstancias solo por resumen · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0
+· con fecha en la ruta: ninguna con fecha en la ruta · Hecho: 2026-10-17 · Hora: tarde del
+sábado (solo por resumen) · Consulta: 2026-10-18 08:34-09:45 · Estatus: Pendiente de
+corroboración · Conteo de armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: Temixco no figura en las cinco ediciones previas ni en el índice.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-18 · Hora: 08:34 (CDMX) · Corte: Matutino · ARGOS N.° 136 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (III) — ACCIONES INSTITUCIONALES
+
+### CHIHUAHUA · CHIHUAHUA — DETIENEN AL EXFISCAL GENERAL DEL ESTADO POR EL OPERATIVO DE ABRIL CON PARTICIPACIÓN DE AGENTES DE LA CIA [VERDE]
+
+── HECHO
+
+Chihuahua capital · AV. CANTERA, SOLO POR RESUMEN · SÁBADO 17-OCT, por ruta · «esta mañana»,
+SOLO POR RESUMEN · 1 detenido: el exfiscal general del estado, por titular (🟢) · orden de
+aprehensión de un juez de control por ejercicio ilegal del servicio público y coalición, según
+el fiscal general del estado, por cita · causa penal 3055/2026 y orden del 16-oct, SOLO POR
+RESUMEN · ministeriales y policías estatales, SOLO POR RESUMEN · investigación por el operativo
+de abril en El Pinal con participación de agentes de la CIA, por titular · la FGR le atribuye
+posible traición a la patria, por titular de Expansión · orden también contra un exfiscal
+especial, SOLO POR RESUMEN · acusación, no condena · PUBLICADO EL DÍA DE APERTURA SIN HORA:
+PUEDE SER ANTERIOR A LAS 09:28 DEL 17
+
+── TRAZABILIDAD
+
+ARG-136-006 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora de la detención
+no fijada; declaración de la Fiscalía solo por cita · Fuentes: Institucional 1 · Nacional 7 ·
+Regional 2 · Abierta 0 · con fecha en la ruta: El Financiero (2026/10/17) · La Jornada
+(2026/10/17) · CNN en Español (2026/10/17) · Expansión (2026/10/17) · Hecho: 2026-10-17, hora no
+fijada · Hora: «esta mañana» del sábado (solo por resumen) · Consulta: 2026-10-18 08:34-09:45 ·
+Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: Hecho de origen de abril de 2026, fuera de las cinco ediciones previas.
+Sin armamento
+
+### PUEBLA · PUEBLA — DETIENEN A DOS HOMBRES POR EL ATAQUE EN SAN BALTAZAR TETELA EN EL QUE MURIÓ UN NIÑO [VERDE]
+
+── HECHO
+
+Puebla capital · SAN PEDRO ZACACHIMALPA, CALLE HERMANOS SERDÁN, SOLO POR RESUMEN · publicado el
+SÁBADO 17-OCT, por ruta · 2 detenidos, por titular (🟢) · de 18 y 22 años, SOLO POR RESUMEN ·
+Policía Estatal (SSC Puebla), SOLO POR RESUMEN; policía municipal, según otro medio: CONTRADICHO
+· señalados por el ataque de ARG-136-REC-002 · en videovigilancia, uno entrega un arma a un
+tercero, SOLO POR RESUMEN · armamento asegurado: no publicado · móvil: no aclarado, SOLO POR
+RESUMEN · identidades: no se reproducen · PUBLICADO EL DÍA DE APERTURA SIN HORA: PUEDE SER
+ANTERIOR A LAS 09:28 DEL 17
+
+── TRAZABILIDAD
+
+ARG-136-007 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: hora de la detención
+no fijada; corporación contradicha; sin fuente institucional · Fuentes: Institucional 0 ·
+Nacional 0 · Regional 7 · Abierta 0 · con fecha en la ruta: Paralelo19 (2026/10/17) · Hecho: no
+publicada; publicada el 2026-10-17 · Hora: detención no fechada; publicada el 2026-10-17 ·
+Consulta: 2026-10-18 08:34-09:45 · Estatus: Pendiente de corroboración · Conteo de armamento:
+sin fila — no hubo armamento asegurado
+Deslindes y reservas: San Pedro Zacachimalpa no figura en las cinco ediciones previas ni en el
+índice. El ataque es ARG-136-REC-002: un hecho y su detención, dos fichas. Sin armamento con
+cifra
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-18 · Hora: 08:34 (CDMX) · Corte: Matutino · ARGOS N.° 136 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (IV) — RECUPERACIONES: VENTANAS DE ARGOS 134 Y 135
+
+### GUANAJUATO · SILAO — ASESINAN A UN HOMBRE Y A UNA MUJER DENTRO DE UNA VIVIENDA EN BAÑOS DE AGUA CALIENTE [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 135 — HORA SOLO POR RESUMEN · COMUNIDAD BAÑOS DE AGUA CALIENTE, POR
+TITULAR; CALLE LA LUZ, CERCA DE COMANJILLA, SOLO POR RESUMEN · mañana del SÁBADO 17-OCT, SOLO
+POR RESUMEN; publicado el 17-OCT, por ruta · ~06:30 (aviso al 911) o ~07:20, SOLO POR RESUMEN,
+versiones distintas · 1 hombre y 1 mujer muertos a balazos dentro de una vivienda, por titular
+(🔴 en su ventana) · el agresor huye en un vehículo, SOLO POR RESUMEN · Unidad de Homicidios de
+la FGE Guanajuato a cargo, SOLO POR RESUMEN · ningún detenido publicado · identidades: no se
+reproducen
+
+── TRAZABILIDAD
+
+ARG-136-REC-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 1 · Regional 4 · Abierta
+0 · con fecha en la ruta: AM (2026/10/17) · Hecho: 2026-10-17 · Hora: ~06:30 (aviso al 911) o
+~07:20 (solo por resumen; versiones distintas) · Consulta: 2026-10-18 08:34-09:45 · Estatus:
+Parcialmente corroborado · Ventana de origen: ARGOS 135 — HORA SOLO POR RESUMEN — fuera de todos
+los totales
+Deslindes y reservas: Baños de Agua Caliente y Comanjilla no figuran en las cinco ediciones
+previas ni en el índice. NO es ARG-134-001 (Barrio Nuevo).
+
+### PUEBLA · PUEBLA — ATACAN A BALAZOS A UN HOMBRE QUE LLEVABA A SU HIJO EN BRAZOS EN SAN BALTAZAR TETELA: MUERE EL NIÑO DE DOS AÑOS [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 135 — HORA SOLO POR RESUMEN · JUNTA AUXILIAR SAN BALTAZAR TETELA, POR
+TITULAR · madrugada del SÁBADO 17-OCT, SOLO POR RESUMEN; «noche del viernes», según otra
+versión, SOLO POR RESUMEN; publicado el 17-OCT, por ruta · dos hombres en motocicleta disparan
+contra un hombre que llevaba a su hijo en brazos, SOLO POR RESUMEN · 1 niño de 2 años muerto en
+el Hospital General del Sur, por titular · 1 herido, el padre, por titular (🔴 en su ventana) ·
+edad del niño: 2 años 8 meses o 2 años 10 meses, SOLO POR RESUMEN, CONTRADICHO · móvil no
+aclarado · detenidos: ver ARG-136-007 · identidades: no se reproducen
+
+── TRAZABILIDAD
+
+ARG-136-REC-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 7 · Abierta
+0 · con fecha en la ruta: Paralelo19 (2026/10/17) · Hecho: 2026-10-17 · Hora: madrugada del
+sábado (solo por resumen); «noche del viernes» en otra versión · Consulta: 2026-10-18
+08:34-09:45 · Estatus: Parcialmente corroborado · Ventana de origen: ARGOS 135 — HORA SOLO POR
+RESUMEN — fuera de todos los totales
+Deslindes y reservas: San Baltazar Tetela no figura en las cinco ediciones previas ni en el
+índice.
+
+### SAN LUIS POTOSÍ · TANQUIÁN DE ESCOBEDO — ASESINAN CON ARMAS LARGAS A UN ELEMENTO DE LA GUARDIA NACIONAL EN EL CENTRO [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 134 — HORA SOLO POR RESUMEN · CENTRO, CALLE VICENTE GUERRERO, SOLO POR
+RESUMEN · noche del JUEVES 15-OCT, SOLO POR RESUMEN; publicado el 16-OCT, por ruta · 1 hombre
+muerto a balazos, elemento de la Guardia Nacional, por titulares (🔴 en su ventana) · ADSCRIPCIÓN
+CONTRADICHA: GUARDIA NACIONAL EN DÍAS DE DESCANSO O EXAGENTE DE LA GUARDIA CIVIL ESTATAL, SOLO
+POR RESUMEN; «INVESTIGAN SI PERTENECÍA», POR TITULAR DE LA OPINIÓN · circulaba en motocicleta;
+agresores con armas largas, por titular de Pulso · originario de Tempoal, Veracruz, por titular
+· FGE San Luis Potosí a cargo, SOLO POR RESUMEN · ningún detenido publicado, SOLO POR RESUMEN ·
+identidad: no se reproduce
+
+── TRAZABILIDAD
+
+ARG-136-REC-003 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: adscripción de la
+víctima contradicha; hora solo por resumen · Fuentes: Institucional 0 · Nacional 2 · Regional 7
+· Abierta 0 · con fecha en la ruta: Potosinoticias (2026/10/16) · Hecho: 2026-10-15 · Hora:
+noche del jueves (solo por resumen) · Consulta: 2026-10-18 08:34-09:45 · Estatus: Parcialmente
+corroborado · Ventana de origen: ARGOS 134 — HORA SOLO POR RESUMEN — fuera de todos los totales
+Deslindes y reservas: Tanquián no figura en las cinco ediciones previas ni en el índice.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-18 · Hora: 08:34 (CDMX) · Corte: Matutino · ARGOS N.° 136 · USO INSTITUCIONAL
+
+============================================================================
+
+## CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS
+
+Total nacional del corte: en la página de panorama.
+
+  · Armas cortas: 0 — NINGÚN ASEGURAMIENTO INTEGRABLE EN LA VENTANA
+
+  · Armas largas: 0 — NINGÚN ASEGURAMIENTO INTEGRABLE EN LA VENTANA
+
+  · Sin categoría: 0 — NINGÚN ASEGURAMIENTO INTEGRABLE EN LA VENTANA
+
+  · Cartuchos: 0 — NINGÚN ASEGURAMIENTO INTEGRABLE EN LA VENTANA
+
+  · Cargadores: 0 — NINGÚN ASEGURAMIENTO INTEGRABLE EN LA VENTANA
+
+  · Granadas: 0 — NINGUNA GRANADA EN HECHO PROPIO
+
+  · AEI: 0 — NINGÚN AEI EN HECHO PROPIO
+
+  · Explosivos: 0 — NINGÚN EXPLOSIVO, DETONADOR NI INICIADOR EN HECHO PROPIO
+
+  · Armamento especial: 0 — NINGÚN ARMAMENTO ESPECIAL PUBLICADO
+
+  · Detenidos: 0 — NINGÚN DETENIDO EN EVENTO DE ASEGURAMIENTO
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-18 · Hora: 08:34 (CDMX) · Corte: Matutino · ARGOS N.° 136 · USO INSTITUCIONAL
+
+============================================================================
+
+## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
+
+  ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
+  SIN ARMAMENTO INTEGRABLE EN LA VENTANA — ningún aseguramiento con cantidad publicada y fecha del hecho o de publicación dentro de la ventana
+
+Lectura regional: sin lectura (ninguna fila integrada).
+VISTOS, NO INTEGRADOS: Sinaloa, SSP, col. Industrial Bravo, Culiacán: 4 detenidos y 1
+ametralladora 7.62, fecha no fijada — POSIBLE DUPLICIDAD CON ARG-135-ARM-001 — NO INTEGRAR AL
+TOTAL HASTA VALIDACIÓN · Puebla, Chignahuapan, seis cateos con Marina y Defensa, sin fecha
+fijada (Excélsior, ruta sin fecha) · Sinaloa, SSP, ejido Canán, 1 fusil, publicado el 16-oct,
+solo por resumen.
+ARG-135-ARM-001 y ARG-135-ARM-002 siguen fuera del total de su edición: el primero por la
+posible duplicidad de arriba; el segundo, con cifra solo por resumen.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-18 · Hora: 08:34 (CDMX) · Corte: Matutino · ARGOS N.° 136 · USO INSTITUCIONAL
+
+============================================================================
+
+## RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES
+
+  · Sentencias condenatorias: 0 — NINGUNA SENTENCIA INTEGRABLE EN LA VENTANA
+
+  · Personas sentenciadas: 0 — la candidata, abajo, no se integra
+
+  · Pena acumulada: 0 — ningún caso integrable
+
+  · Reparación del daño: 0 — ningún monto integrable
+
+  · Fiscalías con resultado: 0 — 17 estatales revisadas · 15 NO REVISADA
+
+## CANDIDATOS Y COBERTURA
+
+  Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
+  Baja California · Ensenada | Tres sentenciados, nombres no reproducidos · homicidio calificado de tres surfistas (abril de 2024), robo calificado con violencia y robo de vehículo con violencia, solo por resumen | 158 años 9 meses a cada uno: 135 años + 10 años 9 meses + 13 años, solo por resumen · reparación: 1,628,550 pesos y 19,542 por gastos funerarios, solo por resumen · PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA | FGE Baja California (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · boletín no localizado en fgebc.gob.mx · Infobae 2026/10/17 · miled 2026/10/17 · seguimiento de la candidata de ARGOS 135 · firmeza no informada | Bajo
+
+Vistas, publicadas antes de la apertura: Veracruz, 21 años por el homicidio de un comunicador
+(J-10/2026; 15-oct, sin boletín) · FGR Cosoleacaque, 4 años, y Banderilla, 2 años 6 meses
+(15-oct, sin boletín) · FGE Guerrero, cinco sentencias —Acapulco, Huitzuco, Iguala dos y
+Tlapehuala— (15-oct, solo por resumen) · Hermosillo, 25 años (16-oct) · Mesa de Coordinación de
+Guerrero, 11 sentencias en la semana del 5 al 11-oct (agregado, sin caso) · Hidalgo, Tulantepec:
+individualización de la pena el 21-oct.
+
+## INDICADOR DE COBERTURA
+
+  Renglón | Resultado
+  Fiscalías revisadas en sentencias | 17 de 32 · FGR revisada: Sí, por búsqueda · BC, Son, Chih · Coah, NL, Tamps, SLP, Zac · Mich, Nay, Ags · CDMX, Tlax · Ver, Tab · Gro, Yuc
+  Fiscalías con sentencia publicada en la ventana | 0 por boletín leído · ninguna candidata nueva de la ventana
+  SIN RESULTADO INDEXADO EN VENTANA | 17 fiscalías estatales
+  SIN ACTUALIZACIÓN CONSTATADA | 0
+  NO REVISADA — sentencias | 15: BCS, Sin, Dgo · Jal, Col, Gto · Edomex, Mor, Pue, Hgo, Qro · Oax, Chis, Camp, QRoo
+  Páginas no disponibles · errores de acceso | 0 errores de acceso registrados (egreso bloqueado: ninguna lectura directa) · 3 fiscalías con dominio no devuelto, dentro de las 15 NO REVISADA: Sin, Hgo, Camp
+  Alto impacto y armamento | Alto impacto: 20 de 32 con consulta propia por entidad · 11 solo por consulta regional amplia: BCS, Dgo · Coah · Jal · CDMX, Edomex, Tlax, Qro · Camp, Yuc, QRoo · NO REVISADA: Ags · armamento: 13 de 32 por dominio propio de seguridad o fiscalía —BC, BCS, Son, Sin · Zac · Nay, Mich, Gto · CDMX, Edomex, Pue · Chis, QRoo—; 3 por portal del gobierno estatal —NL, Mor, Gro—; NO REVISADA: Chih, Dgo · Coah, SLP, Tamps · Jal, Col, Ags · Tlax, Hgo, Qro · Ver, Tab · Oax, Camp, Yuc
+  Boletín federal | Acciones del 15-oct: existe (Milenio y republicadores) · acciones del 16 y del 17-oct: SIN RESULTADO INDEXADO EN VENTANA en las tres formas de consulta · Defensa, Marina, Guardia Nacional y FGR: SRIV · gabinetedeseguridad.gob.mx: SRIV (solo contenido de 2025)
+  Techo de confianza del producto | ★★★★☆ (techo de política) · esta edición no supera ★★★☆☆: sin lectura directa de documento oficial · BLOQUEO DE EGRESO REVERIFICADO EL 18-OCT: GOB.MX
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-18 · Hora: 08:34 (CDMX) · Corte: Matutino · ARGOS N.° 136 · USO INSTITUCIONAL
+
+============================================================================
+
+## VALORACIÓN ARGOS, CONCLUSIONES E INDICADORES
+
+── VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL
+
+1. NIVEL FIJADO POR DOS ROJOS: ARG-136-001 y ARG-136-002 · reserva en ARG-136-002.
+2. Contexto operativo: ARG-136-003 a ARG-136-005.
+3. Respuesta institucional propia: ARG-136-006 y ARG-136-007.
+4. Recuperaciones: ARG-136-REC-001 a ARG-136-REC-003.
+5. 23 H 06 MIN; CUATRO DE SIETE CON FRONTERA O PUBLICADOS EL DÍA DE APERTURA SIN HORA: TOTALES
+NO COMPARABLES SIN MÁS.
+
+── CONCLUSIONES DE INTELIGENCIA CRIMINAL
+
+1. CULIACÁN, TRES HECHOS CON MUERTOS EN DOS EDICIONES (cálculo propio). ARG-136-003, ARG-135-001
+y ARG-135-007. Línea: solicitar a la FGE Sinaloa el cotejo balístico entre los tres — hipótesis.
+2. SILAO, ATAQUES CON MUERTOS EN VIVIENDA Y VÍA PÚBLICA EN CUATRO DÍAS. ARG-136-REC-001 y
+ARG-134-001. Línea: solicitar a la FGE Guanajuato si las carpetas comparten indicios o vehículos
+— vínculo no acreditado.
+3. ATAQUES DIRIGIDOS A UN ADULTO CON UN MENOR MUERTO. ARG-136-REC-002 y ARG-134-REC-003. Línea:
+solicitar a la Fiscalía de Puebla el aseguramiento y peritaje del arma vista en videovigilancia
+— hipótesis.
+4. TEMIXCO, CUERPO OCULTO EN UNA CAJUELA TRAS EL ATAQUE. ARG-136-005. Línea: solicitar a la FGE
+Morelos el registro del vehículo y su reporte de robo — hipótesis.
+5. CULIACÁN, AMETRALLADORAS EN DOS OPERATIVOS SIN VALIDAR ENTRE SÍ. ARG-135-008 y el
+aseguramiento de la SSP en Industrial Bravo. Línea: solicitar a la SSP Sinaloa y a la FGR si es
+la misma arma — hipótesis.
+
+## INDICADORES OFICIALES
+
+gabinetedeseguridad.gob.mx/resultados — NO REVISADA: dominio no devuelto por el buscador.
+SESNSP, INEGI y FGR: sin publicación estadística nueva localizada dentro de la ventana.
+Toda cifra de este cartelón sin emisor nombrado es cálculo propio de ARGOS.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-18 · Hora: 08:34 (CDMX) · Corte: Matutino · ARGOS N.° 136 · USO INSTITUCIONAL
