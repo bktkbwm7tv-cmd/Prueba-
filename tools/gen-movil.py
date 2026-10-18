@@ -417,8 +417,7 @@ def tabla_a_ficha(p, con_tarjetas):
                     'cartelón.</b> Cada hecho está en su ficha, más abajo.</p>')
         if es_arm_evento:
             return ('<p class="muted-note"><b>Desglose por evento: solo en la versión de '
-                    'cartelón.</b> Los totales nacionales están en las tarjetas de arriba y '
-                    'el armamento de cada hecho, en su ficha.</p>')
+                    'cartelón.</b> El armamento de cada hecho está en su ficha.</p>')
         tarjetas = "".join(_celdas_a_tarjeta(f, cabeceras) for f in filas)
         if not tarjetas:
             return '<div class="tabla-scroll">' + interior + "</div>"
@@ -428,6 +427,8 @@ def tabla_a_ficha(p, con_tarjetas):
                 f"<code>reports/argos-{FECHA}.html</code>.</p>" + tarjetas + "</div>")
 
     p = re.sub(r'<div class="table-wrap">.*?</table>\s*</div>', sustituir, p, flags=re.S)
+    # La invitación a tocar un ARG-ID del índice no aplica: el índice no se publica en el teléfono (deuda de 135).
+    p = re.sub(r'\s*<br><b>Toque un ARG-ID para ir a su ficha</b>[^<]*', '', p)
 
     # Red de seguridad: una tabla escrita sin el envoltorio `table-wrap` no la
     # detectaba la regla de arriba y llegaba entera a la móvil, desbordando el
@@ -642,7 +643,7 @@ _ESC = open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file_
 N_ARM = len(set(re.findall(r'<tr id="(ARG-\d+-ARM-\d+)"', _ESC)))  # antes fijo en 9: desfasado en cada edición
 NOTA = f'''
   <p class="muted-note">
-    <b>Versión móvil</b> de ARGOS {NUM}: mismo contenido verificado que el cartelón (<code>reports/argos-{FECHA}.html</code>), en una columna.
+    <b>Versión móvil</b> de ARGOS {NUM}, derivada del cartelón (<code>reports/argos-{FECHA}.html</code>), en una columna.
     <b>No se publican aquí</b> el índice por entidad ni el desglose de armamento por evento{(": <b>" + ("el ARG-ID" if N_ARM == 1 else f"los {N_ARM} ARG-ID") + " del módulo de armamento " + ("consta" if N_ARM == 1 else "constan") + " solo en el cartelón</b>") if N_ARM else ", que en esta edición no tiene filas"}. <b>Ninguna ficha se omitió ni se resumió.</b>
   </p>'''
 # los enlaces a filas de armamento no tienen destino en la móvil: se dejan como texto

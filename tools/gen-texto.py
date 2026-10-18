@@ -74,38 +74,48 @@ out += [
 
 for pag in re.findall(r'<section class="page">(.*?)</section>', s, re.S):
     out += [SEP, ""]
+    # Cada bloque se guarda con su posición en la página y se emite en ORDEN DE
+    # DOCUMENTO: extraer por tipo (todos los títulos, luego los recuadros, luego
+    # las fichas…) dejaba cada subtítulo lejos de su contenido (deuda de 135).
+    bloques = []
+
+    def pon(pos, lineas):
+        bloques.append((pos, len(bloques), lineas))
 
     # Portada: radar, mapa y semáforo.
     if 'id="argos-radar"' in pag:
-        st = re.search(r'id="argos-radar-stats">((?:<div>.*?</div>)+)</div>', pag, re.S).group(1)
-        out += ["[ RADAR CENTRAL — EN VIVO ]", ""]
-        for d in re.findall(r"<div>(.*?)</div>", st, re.S):
-            out.append("  · " + limpia(d, False))
-        out += ["", "[ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]", ""]
-        out += [limpia(re.search(r'<div class="map-caption">(.*?)</div>', pag, re.S).group(1)), ""]
-        out += ["## SEMÁFORO ARGOS", ""]
-        for it in re.findall(r'<div class="sem-item .*?</div>\s*</div>', pag, re.S):
-            lbl = limpia(re.search(r'class="lbl">(.*?)</span>', it, re.S).group(1))
-            val = limpia(re.search(r'class="val">(.*?)</div>', it, re.S).group(1))
-            out += [f"  · {lbl} — {val}", ""]
+        m = re.search(r'id="argos-radar-stats">((?:<div>.*?</div>)+)</div>', pag, re.S)
+        ls = ["[ RADAR CENTRAL — EN VIVO ]", ""]
+        for d in re.findall(r"<div>(.*?)</div>", m.group(1), re.S):
+            ls.append("  · " + limpia(d, False))
+        mc = re.search(r'<div class="map-caption">(.*?)</div>', pag, re.S)
+        ls += ["", "[ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]", "", limpia(mc.group(1)), ""]
+        pon(m.start(), ls)
+        sem = list(re.finditer(r'<div class="sem-item .*?</div>\s*</div>', pag, re.S))
+        if sem:
+            ls = ["## SEMÁFORO ARGOS", ""]
+            for it in sem:
+                it = it.group(0)
+                lbl = limpia(re.search(r'class="lbl">(.*?)</span>', it, re.S).group(1))
+                val = limpia(re.search(r'class="val">(.*?)</div>', it, re.S).group(1))
+                ls += [f"  · {lbl} — {val}", ""]
+            pon(max(sem[0].start(), m.start() + 1), ls)
 
     # Títulos de sección.
-    for t in re.findall(r'<div class="section-head"[^>]*>(?:<h2[^>]*>)?(.*?)(?:</h2>)?</div>', pag, re.S):
-        t = limpia(t)
+    for m in re.finditer(r'<div class="section-head"[^>]*>(?:<h2[^>]*>)?(.*?)(?:</h2>)?</div>', pag, re.S):
+        t = limpia(m.group(1))
         if t and "SEMÁFORO ARGOS" not in t:
-            out += [f"## {t}", ""]
+            pon(m.start(), [f"## {t}", ""])
 
     # Recuadros (portada, valoración, conclusiones).
     # La bandera es un <div>, no un <span>: el patrón anterior cortaba en su
     # cierre y el recuadro salía vacío (fallo de 126 y 127).
-    for flag, cuerpo in re.findall(r'<div class="alerta contexto"[^>]*>\s*<div class="flag">(.*?)</div>\s*<p>(.*?)</p>', pag, re.S):
-        out += ["── " + limpia(flag), ""]
-        for ln in plegar(limpia(cuerpo)):
-            out.append(ln)
-        out.append("")
+    for m in re.finditer(r'<div class="alerta contexto"[^>]*>\s*<div class="flag">(.*?)</div>\s*<p>(.*?)</p>', pag, re.S):
+        pon(m.start(), ["── " + limpia(m.group(1)), ""] + plegar(limpia(m.group(2))) + [""])
 
     # Tarjetas de conteo.
-    for tile in re.findall(r'<div class="tile[^"]*">(.*?)</div>\s*(?=<div class="tile|</div>)', pag, re.S):
+    for m in re.finditer(r'<div class="tile[^"]*">(.*?)</div>\s*(?=<div class="tile|</div>)', pag, re.S):
+        tile = m.group(1)
         lbl = re.search(r'class="lbl">(.*?)</span>', tile, re.S)
         num_ = re.search(r'class="num">(.*?)</span>', tile, re.S)
         sub = re.search(r'class="sub">(.*?)</span>', tile, re.S)
@@ -113,37 +123,42 @@ for pag in re.findall(r'<section class="page">(.*?)</section>', s, re.S):
             linea = f"  · {limpia(lbl.group(1))}: {limpia(num_.group(1))}"
             if sub:
                 linea += " — " + limpia(sub.group(1), False)
-            out += [linea, ""]
+            pon(m.start(), [linea, ""])
 
     # Fichas (las -REC- llevan atributo style: el patrón lo admite).
-    for nota in re.findall(r'<div class="nota" id="([^"]+)"[^>]*>(.*?)(?=<div class="nota" id=|<footer)', pag, re.S):
-        _, cuerpo = nota
-        h3 = limpia(re.search(r"<h3>(.*?)</h3>", cuerpo, re.S).group(1), False)
+    for m in re.finditer(r'<div class="nota" id="([^"]+)"[^>]*>(.*?)(?=<div class="nota" id=|<div class="section-head"|<div class="alerta contexto"|<div class="table-wrap"|<footer|$)', pag, re.S):
+        cuerpo = m.group(2)
+        h3m = re.search(r"<h3>(.*?)</h3>", cuerpo, re.S)
+        if not h3m:
+            continue
+        h3 = limpia(h3m.group(1), False)
         flag = re.search(r'class="risk-flag [^"]*">(.*?)</span>', cuerpo, re.S)
-        out += [f"### {h3}" + (f" [{limpia(flag.group(1))}]" if flag else ""), ""]
+        ls = [f"### {h3}" + (f" [{limpia(flag.group(1))}]" if flag else ""), ""]
         for ap in re.findall(r'<div class="apartado"><span class="k">(.*?)</span>(.*?)</div>', cuerpo, re.S):
-            out += [f"── {limpia(ap[0])}", ""]
-            for ln in plegar(limpia(ap[1])):
-                out.append(ln)
-            out.append("")
+            ls += [f"── {limpia(ap[0])}", ""] + plegar(limpia(ap[1])) + [""]
+        pon(m.start(), ls)
 
     # Tablas.
-    for tab in re.findall(r'<div class="table-wrap"><table[^>]*>(.*?)</table></div>', pag, re.S):
+    for m in re.finditer(r'<div class="table-wrap"><table[^>]*>(.*?)</table></div>', pag, re.S):
+        tab = m.group(1)
+        ls = []
         ths = [limpia(c, False) for c in re.findall(r"<th\b[^>]*>(.*?)</th>", tab, re.S)]
         if ths:
-            out += ["  " + " | ".join(ths)]
-        cuerpo = tab.split("</thead>")[-1]
-        for tr in re.findall(r"<tr\b[^>]*>(.*?)</tr>", cuerpo, re.S):
+            ls += ["  " + " | ".join(ths)]
+        for tr in re.findall(r"<tr\b[^>]*>(.*?)</tr>", tab.split("</thead>")[-1], re.S):
             tds = [limpia(c, False) for c in re.findall(r"<td\b[^>]*>(.*?)</td>", tr, re.S)]
             if tds:
-                out += ["  " + " | ".join(tds)]
-        out += [""]
+                ls += ["  " + " | ".join(tds)]
+        pon(m.start(), ls + [""])
 
     # Notas al pie de la página (muted-note fuera de tablas).
-    for nt in re.findall(r'<p class="muted-note"[^>]*>(.*?)</p>', pag, re.S):
-        txt = limpia(nt)
+    for m in re.finditer(r'<p class="muted-note"[^>]*>(.*?)</p>', pag, re.S):
+        txt = limpia(m.group(1))
         if txt:
-            out += plegar(txt) + [""]
+            pon(m.start(), plegar(txt) + [""])
+
+    for _, _, ls in sorted(bloques):
+        out += ls
 
     out += [RAYA,
             f"  · Versión 3.0 · Fecha: {fecha} · Hora: {hora} (CDMX) · Corte: {corte_turno} · "
