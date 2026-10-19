@@ -8,7 +8,7 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 136 (corte 2026-10-18).
+**Última actualización**: ARGOS 137 (corte 2026-10-19).
 
 ---
 
@@ -2211,3 +2211,53 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 7. **Presupuesto**: 2 + 159 + 7 + 30 = **198**; segunda ronda sin búsquedas.
 8. **Sonora y Sinaloa**: por primera vez se devolvieron `fiscalia.sonora.gob.mx` y `sspsinaloa.gob.mx`; **`fiscaliasinaloa.gob.mx` sigue sin devolver (novena edición)**.
 
+
+## Cerrados por ARGOS 137
+
+| Pendiente | Disposición |
+|---|---|
+| **Ciclo de rotación** | **A** aplicado por decisión del destinatario: la serie vuelve a la tabla de `CLAUDE.md` (**138 = B, 139 = C**) |
+| **San Baltazar Tetela** | **🟡, decidido por el destinatario**; no se recupera. `ARG-136-007`: 2 detenidos, a disposición de la Fiscalía por homicidio, sin vinculación publicada |
+| **Tanquián** (`ARG-136-REC-002`) | Ninguna autoridad nombrada acredita la GN → **🟡** (`ARG-137-FE-001`; 134: 8 rojos). Enfrentamientos de la noche del 17 (1 abatido, 2 detenidos): ventana de 136, no recuperables |
+| **Recalcular 133** | `ARG-137-FE-003`: Chiapa de Corzo → 133; **133: 6 a 10 rojos, 12 a 17 muertos por agresión** |
+| **«417 cartuchos»** (`ARG-135-ARM-001`) | Retirada, sin fragmento citable: `ARG-137-FE-004`, publicada en el cartelón. Industrial Bravo: 420 (385 + 25 + 10), solo por resumen |
+| **Acapulco** (`-002`, `-003`) | 3 heridos en todas las notas; `-003` con segunda fuente; sin ruta con día ni identificación |
+| **Taxco** (`-008`, `-009`) | `-008`: fecha de la detención no publicada (el 16 es el anuncio). `-009`: vinculado a proceso (titular «procesan», 18-oct); el policía detenido es de otro caso (Paintla) |
+| **Exfiscal** (`ARG-136-006`) | Audiencia estatal el 18: proceso en libertad; vinculación el **jueves 22-oct 10:00**; FGR lo detuvo por traición a la patria y lo trasladó al Altiplano (seguimiento en el cartelón de 137) |
+| **Cuauhtémoc** (`-REC-003`) | ~09:00 es la hora del hallazgo; víctimas desaparecidas desde el 15 → ventana de 135 o anterior, sostenida |
+| **Chiapa de Corzo** (`ARG-134-REC-002`) | «Tarde noche» del 14 (por resumen) → **133** |
+| **Divina Providencia** | 2 en cuatro de cuatro medios; el 3 de Milenio no se corrobora |
+| **Dominios** | Oaxaca `portal.fgeo.gob.mx` · SLP `seguridad.slp.gob.mx` · BCS `pgjebcs.gob.mx` · Colima `fgecolima.mx` · Edomex `fgjem.edomex.gob.mx` · Campeche `spsc.campeche.gob.mx` · Yucatán `ssp.yucatan.gob.mx` |
+| **Controles** | Ronda 1: `procedencia-cifras` 17 de 20 «CORREGIR», `editor-duplicidad` 14 de 20; ronda 2: 14 y 12. Ver `argos-2026-10-19-fuentes.md` §13 |
+| **Deuda 5 de 136 (móvil)** | Parcial: `gen-movil.py` emite las filas de armamento sin ficha propia; el validador común sigue pendiente |
+
+## Abiertos que ARGOS 138 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️ **COLOR DE CUAJINICUILAPA** | Arturo Marín, aspirante de Morena, asesinado la tarde del sábado 17 (ventana de 136); esposa lesionada; FGE Guerrero, carpeta por homicidio calificado. **Preguntado al destinatario en 137, sin respuesta al cierre: quedó 🟡 literal.** Si lo fija en 🔴 → `-REC-` en 138 (136: +1 rojo, +1 muerto). Precedentes: `ARG-108-REC-001`, `ARG-124-002` (🔴), `ARG-131-REC-001` (🟡) |
+| ⚠️ **Pistas sin fecha, posibles rojos** | **Copanatoyac, coordinador del PT y cuatro familiares** (Quadratín, sin fecha) · **Zacatecas, policías municipales atacados en los límites con Aguascalientes** (El Universal, sin fecha; 1 muerto, 2 heridos) · Colima, «muerte de funcionario» (Telediario) · **Juchitán, panteón** (domingo ~18:30 por resumen; GN herido; entidad Gro./Oax. contradicha) |
+| **Fichas de 137 con día solo por resumen** | `-001` Copanatoyac, `-002` Tlajomulco, `-009` Culiacán, `-012` Zapopan, `-013` Acapulco, `-015` Salamanca, `-016` Apatzingán: ruta o titular con día |
+| **Tabasco** (`-005`) | Municipio (Teapa o Jalapa); destinatario de las cartulinas; identificación |
+| **Tulancingo** (`-006`) | Hora y línea de investigación de la PGJEH |
+| **Coatzacoalcos** (`-003`) | Versión del agresor (moto, agresión mutua o tercera persona) |
+| **Colima** (`-007`) | Día (18 o 19); armamento asegurado; comunicado de la Mesa de Seguridad |
+| **Tijuana** (`-011`, `-017`) | ¿Hubo detenido? (Opinia no lo informa) |
+| **«El Talibán»** (`-REC-002`) | Fecha de cada captura (16, 17 o 18); fecha del secuestro y homicidio de los 10 mineros; ¿está en el agregado del Gabinete 16-18? |
+| **Agregado federal 16-18 oct** (`ARM-001`, `-002`) | Desglose citable y fecha de Tecuala y Lerdo de Tejada; Mahahual; Mazatlán (1.5 t) |
+| **Exfiscal** (`ARG-136-006`) | Vinculación estatal **jueves 22-oct 10:00**; audiencia federal (martes 20, por resumen); comunicado de la FGR |
+| **Sentencias** | **Tulantepec, miércoles 21-oct** · Ensenada (boletín FGE BC) · Tamaulipas FGJE-370-2026 (fecha y caso) |
+| **Heredados sin avance** | Cachanillas («10 cuerpos en tres días», mismo predio no verificado) · Nogales (cifra oficial) · Ajuchitlán (séptima persona) · Tepic (vinculación) · Apatzingán `ARG-135-003` (hora) · El Tívoli · «El Tripa» (9 o 16-oct) · Coquimatlán · Tlalnepantla (¿Morelos?) · Linares (`DÍA CONTRADICHO`, miércoles por fragmento) · Industrial Bravo ↔ `ARG-135-ARM-001` · Patamban (¿persona defensora?: decisión del destinatario) |
+| **Boletín federal del 19 y 20-oct** | Triple consulta; `gabinetedeseguridad.gob.mx/resultados` (indexado hasta marzo) |
+| **Cobertura con prioridad sobre el ciclo en 138** | **Sentencias `NO REVISADA` (9)**: Son, Sin · Zac · Gto · Mor, Hgo · Gro, Camp, Yuc. **Armamento `NO REVISADA` (18)**: BC, BCS, Son, Chih, Dgo · NL · Jal, Col, Ags · CDMX, Edomex, Mor, Pue, Tlax, Hgo, Qro · Gro, Chis. **Alto impacto `NO REVISADA`**: Camp, Yuc. Después, **CICLO B** (Noreste + Golfo) |
+
+## Deuda de método (ARGOS 137)
+
+1. **`validar.js` sigue sin evaluar el móvil**; los controles comprobaron la paridad a mano.
+2. **Los equipos no hicieron `grep` en los HTML** (Noroeste, Sureste): la plantilla de 138 debe llevar el comando literal y exigir pegar su salida.
+3. **Criterio de inclusión por ruta fechada** y de filas ARM atenuadas: escrito en `argos-2026-10-19-fuentes.md` §15; llevarlo a la plantilla.
+4. **Conclusiones**: cotejar el patrón previo contra todo el índice (Salamanca omitió `ARG-133-002`).
+5. **«Vistas» de sentencias repetidas** entre ediciones (Querétaro): cotejar antes de imprimir.
+6. **`procedencia-cifras` volvió a hallar hechos**; mantener las 30 búsquedas reservadas.
+7. **Presupuesto**: 2 + 159 + 10 + 29 = **200**; segunda ronda sin búsquedas.
+8. **Dominios sin devolver**: `fiscaliasinaloa.gob.mx` (décima edición), `fiscalia.guanajuato.gob.mx`, `fiscalia.morelos.gob.mx`, `pgjhidalgo.gob.mx`, `ssp.chihuahua.gob.mx`, `ssp.durango.gob.mx`, `ssp.jalisco.gob.mx`, `ssp.col.gob.mx`, `ssp.aguascalientes.gob.mx`, `ssp.morelos.gob.mx`, `ssc.tlaxcala.gob.mx`, `seguridad.hidalgo.gob.mx`, `ssc.queretaro.gob.mx`: probar variantes en 138.

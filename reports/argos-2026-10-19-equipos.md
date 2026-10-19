@@ -1712,3 +1712,689 @@ Archivos relevantes:
 - /home/user/Prueba-/reports/argos-2026-10-19-equipos.md
 - /home/user/Prueba-/reports/indice-arg-id.md
 - /home/user/Prueba-/reports/_pendientes.md
+---
+
+## control-procedencia-r2
+
+CONTROL PROCEDENCIA-CIFRAS — ARGOS 137 — RONDA 2
+
+Alcance: trabajo solo con archivos, sin búsquedas web (0 de 0; el presupuesto de 200 quedó agotado en la ronda 1). No pude ejecutar `node:vm` ni el validador: no dispongo de Bash. La paridad de las tres versiones la comprobé por lectura y Grep.
+Archivos leídos: tools/datos-argos-137.py, reports/argos-2026-10-19.txt, reports/argos-2026-10-19.html (fichas, EVENTOS y tabla ARM), reports/argos-2026-10-19-movil.html (por Grep y lectura parcial), reports/argos-2026-10-19-fuentes.md y reports/argos-2026-10-19-equipos.md (notas, informes de ronda 1 y duplicidad). Cotejé también reports/indice-arg-id.md y _pendientes.md.
+Criterio: "citable" es lo que aparece en titular, slug o ruta. Lo que solo dijo el resumen del buscador va como "RES".
+
+Resultado: 14 CORREGIR y 6 SIN HALLAZGO. Las cifras de los totales son aritméticamente correctas. Los problemas están en tres sitios:
+1. Marcas de procedencia que faltan en algunas frases.
+2. Dos paridades rotas: el móvil no contiene Tecuala ni Lerdo de Tejada, y el JSON del mapa imprime fecha firme.
+3. El archivo de fuentes entero sigue con la numeración y los cálculos de antes de la renumeración.
+
+---
+
+PASE 1 — Ronda 1 pases 1 y 15 (fecha_txt "DÍA SOLO POR RESUMEN") y JSON del mapa. CORREGIR (parcial)
+- Aplicado en la trazabilidad de las 7 fichas con día solo por resumen: 001, 002, 009, 012, 013, 015, 016 (.py líneas 27, 36, 99, 126, 135, 153, 162; el .txt las imprime igual). Cuadra con lo que imprime el panorama.
+- Residual: `ev_json()` sigue emitiendo `"fecha": "2026-10-18"` limpio, y la hora, para las mismas siete. Verifiqué en EVENTOS del HTML, líneas 1123, 1126, 1127, 1129, 1130, 1131 y 1132. El tooltip del mapa y del radar muestra "Fecha y hora (hecho o publicación): 2026-10-18 …" como si fuera firme.
+- Propuesto en `ev_json`: añadir el campo `"fecha_nota": "día solo por resumen"` cuando `"DÍA SOLO POR RESUMEN" in e["dia"]`, y mostrarlo en el tooltip. No cambiar el valor de `fecha`: no leí el script del radar y puede parsearlo para la distancia radial.
+- Mismo caso en ARG-137-017: `fecha` "2026-10-19" para una detención de fecha no fijada (ver pase 4).
+
+PASE 2 — Torso de Tabasco, Tlajomulco, Tulancingo (ronda 1 pases 2 a 4). CORREGIR (menor)
+- Tlajomulco: aplicado (el deslinde incluye lo de 2020 y la herida contradicha). Tulancingo: SIN HALLAZGO. Torso: aplicados los dos puntos de la ronda 1.
+- Residual 1 (ARG-137-005): "torso humano en una bolsa negra con manchas de sangre, por titulares (rojo)".
+  - El slug de El Universal sostiene "bolsa negra". "Manchas de sangre" es RES.
+  - Propuesto: "torso humano en una bolsa negra, por titulares; manchas de sangre, SOLO POR RESUMEN".
+- Residual 2 (línea de totales): "restos humanos: 1 torso y restos en otros dos puntos (ARG-137-005)".
+  - Lo citable es el slug "restos humanos con amenazas en 3 municipios" (El Universal). Astapa y Nacajuca son RES, y el texto no lo marca.
+  - Propuesto: "restos humanos: 1 torso y restos en tres municipios, por titular de El Universal (ARG-137-005)".
+
+PASE 3 — Coatzacoalcos (ARG-137-003). CORREGIR
+- Ronda 1 pase 5: aplicado (versiones alternas del agresor, `campo` con N+ y regionales).
+- Nuevo: "la mujer murió en el traslado, por titulares regionales («suman dos fallecidos»)".
+  - Los titulares citables (Diario Acayucan, Vanguardia Veracruz, N+) dicen que murió o "dos fallecidos".
+  - "En el traslado al hospital" viene de la nota del equipo Golfo (equipos.md línea 746), no de un titular.
+- Propuesto: "la mujer murió, por titulares regionales («suman dos fallecidos»); «en el traslado», SOLO POR RESUMEN".
+- La cifra de 2 muertos queda sostenida por titular (N+, Diario Acayucan, Vanguardia).
+
+PASE 4 — Colima (ARG-137-007) y Tijuana (-011 y -017). CORREGIR (-017 solamente)
+- Colima: SIN HALLAZGO. Los cuatro puntos de la ronda 1 están aplicados:
+  - "Mesa de Seguridad";
+  - título "CON LA MARINA";
+  - día 18 o 19 contradicho;
+  - lugar sostenido por los titulares de UnoTV y Meganoticias (equipos.md línea 352).
+- Tijuana: título y contradicción de la ronda 1 aplicados. En -011, Regional 4. En -017, Regional 1 (solo alfredoalvarez.mx).
+- Residual en -017: el Hecho dice "FECHA DE LA DETENCIÓN NO FIJADA", pero la trazabilidad imprime "Hecho: 2026-10-19, hora no fijada" (.py línea 171) y el JSON lleva `fecha` 2026-10-19. Es la fecha del homicidio, no de la detención.
+- Propuesto: `fecha_txt="no fijada (homicidio: 2026-10-19; titular sin fecha en la ruta)"`.
+
+PASE 5 — Seguimiento del exfiscal (ARG-136-006). CORREGIR
+- Aplicado: salió del semáforo, no se recuenta, y se retiró "ejercicio ilegal… y coalición".
+- Citable: La Razón ruta 2026/10/18 (proceso en libertad, vinculación el 22); Infobae ruta 2026/10/19 ("traslada… al Altiplano").
+- Falta: el slug de La Jornada 2026/10/18 dice "vinculan a proceso" y contradice a La Razón. El cartelón cita La Jornada solo como sostén de la detención y no declara la contradicción. Faltan también las rutas del 17-oct (La Jornada, Proceso, Diario.mx) que anuncian la orden.
+- Texto actual: "…lo trasladó al Altiplano, por titulares (La Jornada 2026/10/18, Infobae 2026/10/19); hora de la detención federal contradicha (sábado 17 o cerca de la medianoche del domingo), solo por resumen".
+- Propuesto: "…por titulares (La Jornada 2026/10/18, titular del buscador; Infobae 2026/10/19); el slug de La Jornada 2026/10/18 dice «vinculan a proceso» y contradice a La Razón (vinculación el 22): no se usa «vinculado»; rutas del 17-oct (La Jornada, Proceso, Diario.mx) anuncian la orden; hora de la detención federal no fijada («cerca de la medianoche del domingo», Excélsior; o sábado 17 en un receso, Pie de Página), solo por resumen".
+
+PASE 6 — Celaya (ARG-137-REC-001). CORREGIR (menor)
+- Aplicado: título sin "motociclistas", ventana de origen condicional, calle "Francisco o Manuel Bocanegra o Anastasio Bustamante" como RES contradicho.
+- Residual 1: "26 o 27 años: contradicho" sin marca RES. Es RES (notas: 26 en una fuente, 27 en otra).
+  - Propuesto: "26 o 27 años, SOLO POR RESUMEN: contradicho".
+- Residual 2: "agente de Tránsito y Policía Vial de Celaya, por titulares". "Policía Vial" aparece en la nota del equipo (equipos.md línea 451), no en un titular citado.
+  - Propuesto: "agente de Tránsito (Policía Vial, solo por resumen), por titulares".
+- Cifras (1 muerta, 1 conductor herido, día 17 por ruta de cuatro medios): citables.
+
+PASE 7 — ARG-137-018 «El Talibán» y cuatro más (cifra nueva). CORREGIR
+- Citable: "Detienen a «El Talibán» y a cuatro de Los Chapitos por secuestro y homicidio de 10 mineros" (Proceso, ruta 2026/10/18). Sostiene 5 detenidos (1 + 4) y 10 mineros. Respaldo: Infobae y Político.mx con ruta 2026/10/19.
+- RES, bien marcado: capturas del 16 (El Rosario) y 17 (Mazatlán), "Gabinete y Defensa informan", "a disposición de la FGR".
+- (a) Fecha contradicha y no declarada. La nota del equipo Golfo (equipos.md línea 846) da la captura de El Talibán el 18-oct (news.jointly.mx, sin fecha en la ruta, por resumen). El cartelón da el 17.
+  - Propuesto en Hecho: "…«El Talibán» en Mazatlán el 17-oct, SOLO POR RESUMEN; otro resumen (news.jointly.mx, ruta sin fecha) da el 18-oct: CONTRADICHO".
+  - Propuesto en trazabilidad: "Hecho: 16 a 18-oct, contradicho, solo por resumen; publicado el 2026-10-18".
+- (b) Criterio asimétrico. ARM-001 y ARM-002 (fechas 16 a 18, no fijadas) quedaron como "EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE — FUERA DEL TOTAL". -018 también data de 16 y 17-oct (RES), pero cuenta como hecho propio y aporta 5 detenidos al total.
+  - No arbitro. Propongo declararlo: añadir en el Hecho "si las capturas fueron el 16 y 17-oct (RES): EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE".
+  - La línea de detenidos debe llevar la reserva (ver pase 13).
+
+PASE 8 — ARG-137-019 Hermosillo y ARM-003 (cifra nueva). SIN HALLAZGO
+- Citable (slug de El Imparcial, ruta 2026/10/18): "detienen-en-hermosillo-a-dos-objetivos-prioritarios-con-una-pistola-9-mm-y-40-envoltorios-de-presunto-crystal". Sostiene 2 detenidos, 1 pistola 9 mm y 40 envoltorios.
+- RES y marcado: ~01:30, colonia Villa de Seris, edades 32 y 23, Policía Preventiva.
+- La fila ARM-003 (1 corta, 2 detenidos, "No confirmado", fuera del total) es coherente con una sola fuente regional.
+- Los 2 detenidos no entran en "Detenidos sin aseguramiento" ni en el total de aseguramiento, y está bien.
+- Observación opcional: el deslinde dice "Villa de Seris figura en ARGOS 134". El índice trae ARG-134-012 (col. "Villas del Seris", joven, 15-oct).
+  - Podría citarse: "NO es ARG-134-012".
+- Observación: -019 es el único hecho que aporta Sonora a las 12 entidades (ver pase 14).
+
+PASE 9 — ARM-001 Tecuala y ARM-002 Lerdo de Tejada (cifras nuevas). CORREGIR
+- Citable para Tecuala (NTV, ruta 2026/10/19): "Aseguran ametralladora, granada y más de 11 mil cartuchos en Tecuala; hay un detenido". Sostiene 1 ametralladora, 1 granada y 1 detenido. "Más de 11 mil" no es cifra exacta.
+- RES para Tecuala: 2 largas, 54 cargadores, 10,775 cartuchos (marcado en la nota de la fila).
+- Citable para Lerdo (La Nigua): "Cateo en Lerdo de Tejada deja dos detenidos y armas aseguradas". Sostiene 2 detenidos y armas aseguradas (cualitativo).
+- RES para Lerdo: 2 largas, 1 corta, 3 cargadores, 21 cartuchos.
+- Los aciertos de la ronda 1 están aplicados:
+  - la ametralladora está en largas;
+  - 1 granada;
+  - la fila quedó fuera del total;
+  - se retiró el "CONTRADICHO" aritmético;
+  - el deslinde de Tecuala con ARG-133-REC-007 es correcto (índice líneas 817 y 820).
+- Residual 1 — celdas en cero que dicen más de lo que se sabe (tabla de escritorio, líneas 971 y 972; el .txt las imprime igual):
+  - ARM-001, cartuchos "0": el titular dice "más de 11 mil". Propuesto: "n/d" con la leyenda exacta "CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO". Hoy la nota dice solo "(CANTIDAD NO DETERMINADA)".
+  - ARM-001, cargadores "0": hay 54 por resumen. Propuesto: "n/d (RES)".
+  - ARM-002, cortas, largas, cargadores y cartuchos "0": la fuente dice "armas aseguradas". Propuesto: "n/d" y evento cualitativo en la nota.
+  - El criterio de CLAUDE.md es que un 0 afirma ausencia y "n/d" afirma cantidad no determinada.
+- Residual 2: ARM-001 dice "Gabinete de Seguridad (corporación no precisada)". El Gabinete solo consta por el resumen del agregado de los republicadores; el titular de NTV no lo nombra.
+  - Propuesto: "corporación no publicada en el titular; Gabinete de Seguridad, solo por resumen del agregado".
+- Los "Detenidos" 1 (Tecuala) y 2 (Lerdo) son citables por titular. Su suma al total sigue siendo 0 por estar fuera del total, y es correcta.
+
+PASE 10 — "Vistos, no integrados" y fe de erratas de «417 cartuchos». CORREGIR
+- Aplicados de la ronda 1 pase 16: puntos 1 y 2. Quintana Roo ya lleva RES. Hermosillo ya no se asigna a 136. Mazatlán lleva "3 detenidos y más de 1.5 toneladas, por titular (Línea Directa 2026-10-19), armas y cartuchos contradichos".
+- (a) Texto actual: "FGE Veracruz, 33 cateos y 29 detenidos del 12 al 18-oct, por titular (Hora Cero 2026/10/19)".
+  - El titular dice "33 cateos en 28 municipios de Veracruz dejan 29 detenidos". "Del 12 al 18-oct" y "FGE" vienen de la nota del equipo Golfo (equipos.md línea 796, "semana 12-18 oct"), RES.
+  - Propuesto: "33 cateos y 29 detenidos, por titular (Hora Cero 2026/10/19); «del 12 al 18-oct» y la atribución a la FGE, solo por resumen".
+- (b) Industrial Bravo (4 detenidos, 420 cartuchos, 385 de 7.62): bien marcado como RES, con "POSIBLE DUPLICIDAD".
+  - Propuesto en "publicado el 16-oct": añadir "por ruta (Línea Directa, Tus Buenas Noticias)".
+- (c) Punto 3 de la ronda 1 NO aplicado en el cartelón. No hay "417" ni fe de erratas en el .html, el móvil ni el .txt.
+  - La cifra "417 cartuchos" de ARG-135-ARM-001 lleva dos ediciones sin fragmento citable (135 y 136). Aplica el umbral de fe de erratas de CLAUDE.md.
+  - Propuesto (añadir a "Vistos"): "ARG-135-ARM-001: «417 cartuchos» RETIRADA — sin fragmento citable en ARGOS 135 ni 136; CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO (420, con 385 de 7.62, solo por resumen)".
+  - El texto vigente de FE-004 (pase 19) no cumple esto.
+
+PASE 11 — Total de muertos (16) y abatidos (2). SIN HALLAZGO
+- Operación: 2 (Copanatoyac) + 2 (Tlajomulco) + 2 (Coatzacoalcos) + 2 (Mazatlán) + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 (Tulancingo, Monterrey, Culiacán, Escuinapa, Tijuana, Zapopan, Acapulco, San Juan Nuevo) = 16. Coincide con lo publicado.
+- Con el día solo por resumen: 001 (2) + 002 (2) + 009 (1) + 012 (1) + 013 (1) = 7. Coincide con "7 de ellos".
+- Con día fijado por ruta: 003 (2), 004 (2), 006, 008, 010, 011, 014 = 9. 7 + 9 = 16.
+- Citable por titular: 2 muertos de Copanatoyac (Quadratín); 2 de Tlajomulco (Telediario, Milenio, N+); 2 de Coatzacoalcos (N+, Diario Acayucan, Vanguardia); 2 de Mazatlán (slug de Luz Noticias); Escuinapa (slug de Yucatán.com.mx); San Juan Nuevo (slugs de tres medios); Tijuana (Opinia, Blanco y Negro).
+- 2 abatidos de -007: titulares de Portal Colima, AFmedios, Vadenuez y Proyecto Puente.
+
+PASE 12 — Total de heridos (8). CORREGIR
+- Operación: 2 + 1 + 3 + 2 = 8. Es correcta y todos tienen el día solo por resumen, como dice el texto.
+- Procedencia por componente:
+  - Copanatoyac 2: citable (titular de Quadratín).
+  - Tlajomulco 1: citable (titulares de Telediario y N+).
+  - Salamanca 3: RES. Ya está marcado.
+  - Apatzingán 2: el titular dice "pareja" (Contramuro, IMN, Quadratín). Que ambos estén heridos y hospitalizados es RES (nota del equipo, equipos.md línea 430). El slug de Quadratín dice "…queda herida" en singular.
+- Falta marca en -016. Actual: "2 heridos —un hombre y una mujer de 25 años— dentro de un domicilio, por titulares (amarillo)".
+  - Propuesto: "una pareja baleada dentro de un domicilio, por titulares; 2 heridos —un hombre y una mujer, 25 años—, SOLO POR RESUMEN (slug de Quadratín: «queda herida»)".
+- Propuesto en la línea de totales: "Heridos: 8 —por titular: Copanatoyac 2 y Tlajomulco 1; solo por resumen: Salamanca 3 y Apatzingán 2—".
+
+PASE 13 — Detenidos sin aseguramiento (6). CORREGIR
+- Operación: 1 (-017) + 5 (-018) = 6. Es correcta.
+- Citable: "hay un detenido" (alfredoalvarez.mx) y "5 detenidos" (Proceso).
+- Reservas ausentes en la línea de totales:
+  - El 1 de -017 está contradicho (Opinia no informa detenidos). La ficha lo dice; la línea de totales no.
+  - Los 5 de -018 tienen fecha de captura solo por resumen y posiblemente anterior a la ventana (pase 7).
+- Actual: "Detenidos sin aseguramiento: 6 —ARG-137-017, 1; ARG-137-018, 5—."
+- Propuesto: "Detenidos sin aseguramiento: 6 —ARG-137-017, 1 (contradicho: Opinia no informa detenidos); ARG-137-018, 5 (capturas del 16 al 18-oct, solo por resumen)—; no incluye los 2 de ARG-137-019 (ARM-003, fuera del total)".
+
+PASE 14 — Contadores del panorama: 19 hechos, 12 entidades, 0,72, 6 / 10 / 3 / 1. SIN HALLAZGO
+- Colores: rojos 001 a 006 = 6; amarillos 007 a 016 = 10; verdes 017 a 019 = 3; 6 + 10 + 3 = 19, más 1 recuperación. EVENTOS del HTML (líneas 1118 a 1137) coincide: 3 verdes, 10 amarillos, 6 rojos, 1 `rec`. El radar y el semáforo salen del mismo arreglo.
+- Entidades: Guerrero, Jalisco, Veracruz, Sinaloa, Tabasco, Hidalgo, Colima, Nuevo León, Baja California, Michoacán, Guanajuato, Sonora = 12. Coincide con el `assert`.
+- Ventana: 18-oct 08:34 → 19-oct 11:05 = 24 h + 2 h 31 min = 26 h 31 min = 26,5167 h. Densidad: 19 / 26,5167 = 0,7165, que redondea a 0,72. El 0,72 está escrito a mano en el .py; el número coincide.
+- Cobertura: 23 + 9 = 32; 22 + 8 + 2 = 32; 9 + 5 + 18 = 32. Las listas del cartelón suman esas cifras. Que los cuatro o seis de lectura parcial sean los que dicen no es reverificable sin las notas de los equipos.
+- Observación sin corrección obligatoria: Sonora entra en las 12 entidades solo por -019. Sin -019 serían 11 entidades y 18 hechos. Es consecuencia de la marca de día de apertura y está declarada en la ficha.
+
+PASE 15 — Valoración, línea 5: "doce de diecinueve… y seis sin ruta con fecha". CORREGIR (redacción)
+- "Doce de diecinueve": 5 de cierre (002, 006, 011, 014, 017) + 7 de apertura (004, 005, 007, 008, 010, 018, 019) = 12. Coincide con los `assert` del .py.
+- "Seis sin ruta con fecha": las fichas sin ninguna ruta fechada son 001, 002, 009, 012, 013, 015, 016, 017 = 8.
+  - Dos de ellas (002 y 017) ya están en las 12 con marca de frontera.
+  - Quedan 6 sin marca de frontera y sin ruta fechada: 001, 009, 012, 013, 015, 016.
+- Hoy el "seis" solo es correcto leído como "otros seis" (12 + 6 = 18; solo ARG-137-003 queda sin ninguna marca). Un lector que lo lea como total subestima en dos.
+- Propuesto: "26 H 31 MIN; DOCE DE DIECINUEVE CON MARCA DE FRONTERA (5 DE CIERRE, 7 DE APERTURA) Y OTROS SEIS SIN RUTA CON FECHA (OCHO EN TOTAL CON ARG-137-002 Y -017): TOTALES NO COMPARABLES SIN MÁS."
+- Impacto en las tres versiones: la misma cadena sale del .py (escritorio línea 1044, móvil línea 899, .txt línea 692).
+
+PASE 16 — Conclusiones de inteligencia. CORREGIR
+- Aplicadas de la ronda 1 pase 18: C1 sin el hecho duplicado, C3 con "un presunto sicario y un segundo al mando" (índice: ARG-104-005 "El Pirul", ARG-105-003 "El Abulón"), "(cálculo propio)" en C4.
+- C2 y C5 se verifican contra el índice (ARG-136-002 y -003; ARG-135-003, -004, ARG-134-REC-003 del 13-oct): SIN HALLAZGO. Mantienen su aritmética con la numeración nueva.
+- (a) C1: "TRES HECHOS CON MUERTOS PUBLICADOS EL 18-OCT".
+  - ARG-137-009 no tiene ninguna ruta con fecha, así que no se puede decir "publicado el 18". El paréntesis lo corrige a medias ("día de ARG-137-009 solo por resumen").
+  - Propuesto: "TRES HECHOS CON MUERTOS EL 18-OCT (DOS PUBLICADOS EL 18 POR RUTA; ARG-137-009, DÍA SOLO POR RESUMEN)".
+- (b) C3 no lleva "(cálculo propio)", pese a que la ronda 1 lo pidió para C3 y C4. Solo se aplicó a C4.
+  - Propuesto: añadir "(cálculo propio)" tras el título de C3.
+
+PASE 17 — Paridad escritorio ↔ móvil ↔ texto. CORREGIR
+- Paridad correcta:
+  - Los 20 ID de fichas están en el escritorio y en el móvil: 001 a 019 y REC-001. El .txt tiene 20 encabezados "###".
+  - Los contadores (19, 6, 10, 3, 1, 12), la línea de muertos, heridos y detenidos (16, 8, 6) y la Valoración 5 son idénticos en las tres versiones.
+  - Radar y semáforo: 6 / 10 / 3.
+- FALLO: el móvil no contiene a Tecuala ni a Lerdo de Tejada (0 coincidencias).
+  - El móvil dice, en la página de armamento, "Desglose por evento: solo en la versión de cartelón. El armamento de cada hecho está en su ficha".
+  - Eso es falso para ARM-001 y ARM-002, que ya no tienen ficha.
+  - Pero el móvil cita ambas: en la línea 5 de la portada y en el panorama ("ARG-137-ARM-001 a -003"). No hay dónde resolver esos ID.
+  - La cifra citable de Tecuala (1 ametralladora, 1 granada, 1 detenido) y la de Lerdo (2 detenidos) es el dato que el mando pide en la línea 5 de la portada.
+- Propuesto (en `gen-movil.py` o en el bloque "Vistos" del móvil):
+  - "ARG-137-ARM-001 · Nayarit, Tecuala (San Felipe Aztatán y El Arrayán): 1 arma larga (ametralladora), 1 granada y 1 detenido, por titular (NTV 2026/10/19); cartuchos: CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO; FUERA DEL TOTAL. ARG-137-ARM-002 · Veracruz, Lerdo de Tejada: 2 detenidos y «armas aseguradas», por titular (La Nigua); FUERA DEL TOTAL. ARG-137-ARM-003: ver ficha ARG-137-019."
+  - Cambiar la frase del móvil a "El armamento de cada hecho está en su ficha, salvo ARM-001 y ARM-002".
+- Observación: el panorama del móvil dice "Índice por entidad: solo en la versión de cartelón". Es diseño del generador, no un descuadre de cifras.
+
+PASE 18 — Archivo de fuentes: renumeración (§2, §4, §5, §7, §9, §16). CORREGIR
+El archivo no refleja la renumeración. Equivalencias de la renumeración:
+- Los -010 a -017 antiguos (tarde violenta, Escuinapa, Tijuana, Zapopan, Acapulco, San Juan Nuevo, Salamanca, Apatzingán) son hoy -010 a -016, sin la ficha de Mazatlán "tarde violenta".
+- El -018 antiguo (exfiscal) es hoy seguimiento de ARG-136-006.
+- El -019 antiguo (Tijuana, detenido) es hoy -017.
+- El -020 y el -021 antiguos son hoy ARM-001 y ARM-002.
+- -018 (Talibán) y -019 (Hermosillo) son nuevos.
+Correcciones, apartado por apartado:
+- §2: "Acapulco → `-014`" → "`-013`".
+- §4: "renglones de Nayarit (Tecuala) y Veracruz (Lerdo de Tejada) fichados como `-020`/`-021` con cifras solo por resumen" → "…filas ARM atenuadas `ARG-137-ARM-001` y `-002`, sin ficha, fuera del total; Tecuala: 1 ametralladora, 1 granada y 1 detenido por titular (NTV); el resto, por resumen".
+- §5, fila Acapulco: "Héroes de Guerrero (`ARG-137-014`)" → "(`ARG-137-013`)".
+- §5, fila Exfiscal: "→ `ARG-137-018`" → "→ seguimiento de `ARG-136-006`, fuera del semáforo".
+- §7, Copanatoyac y Tlajomulco: sin cambio.
+- §7, Colima: "operativo repelido según la Mesa de Coordinación" → "según la «Mesa de Seguridad» (titulares de Portal Colima, AFmedios y Vadenuez)".
+- §7, "Mazatlán, tarde violenta (`-010`)": "retirada del semáforo, a vistos; posible solapamiento con `-004`; no se cuenta".
+- §7, Tijuana: "(`-012`, `-019`)" → "(`-011`, `-017`)".
+- §7, Tecuala y Lerdo: "(`-020`, `-021`)… se fichan con la marca" → "`ARM-001` y `ARM-002`; filas atenuadas fuera del total".
+- §7, Hermosillo: en "Vistos de la ventana de 136, no recuperables", retirar "Hermosillo, Villa de Seris (~01:30 del domingo, verde)". Ahora es `ARG-137-019` / `ARM-003` (publicado el 18-oct por ruta; hora ~01:30 solo por resumen; ARGOS 136 no lo publicó).
+- §9: filas con hechos propios por entidad, a sustituir:
+  - Baja California: `-011`, `-017`.
+  - Sonora: `-019`.
+  - Chihuahua: seguimiento de ARG-136-006 (sin hecho propio).
+  - Sinaloa: `-004`, `-009`, `-010`, `-018`.
+  - Jalisco: `-002`, `-012`.
+  - Nayarit: sin hecho propio (ARM-001 fuera del total).
+  - Michoacán: `-014`, `-016`.
+  - Guanajuato: `-015` y `-REC-001`.
+  - Veracruz: `-003` (ARM-002 fuera del total).
+  - Guerrero: `-001`, `-013`.
+- §9, nota inferior: "Sentencias: 23 de 32 (4 de lectura parcial)" → "(6 de lectura parcial: Coah, SLP, Edomex, Tlax, Mich, Chis)", como en el cartelón.
+- §16, recuentos por ficha:
+  - Eliminar la fila antigua `-010` (tarde violenta).
+  - Eliminar la fila antigua `-018` (exfiscal).
+  - Desplazar las demás: antigua -011 → `-010`, -012 → `-011`, -013 → `-012`, -014 → `-013`, -015 → `-014`, -016 → `-015`, -017 → `-016`, -019 → `-017` con "Recuento I 0 / N 0 / R 1 / A 0", porque Opinia ya no cuenta (.py línea 170).
+  - Sustituir -020 y -021 por ARM-001 y ARM-002.
+  - `-004`: "Con fecha: Luz Noticias, Línea Directa · Regionales: Luz Noticias, Línea Directa, Los Noticieristas · R 3" (hoy dice R 2).
+  - `-007`: "Institucional: Mesa de Seguridad de Colima" (hoy "Mesa de Coordinación Estatal").
+  - Añadir `-018`: "Institucional: SIN BOLETÍN (Gabinete y Defensa, RES) · Nacional: Proceso, Infobae, Político.mx · Con fecha: Proceso (2026/10/18), Infobae y Político.mx (2026/10/19) · I 0 / N 3 / R 0 / A 0".
+  - Añadir `-019`: "Institucional: SIN BOLETÍN · Regional: El Imparcial · Con fecha: El Imparcial (2026/10/18) · I 0 / N 0 / R 1 / A 0".
+
+PASE 19 — Archivo de fuentes: fe de erratas (§8), cálculos propios (§12) y §13. CORREGIR
+- §8, FE-001, FE-002, FE-003: sin cambio de numeración. La aritmética interna de FE-002 cuadra: 135 pasa a 6 rojos y 17 muertos (5 + 1 y 16 + 1). La de FE-003 cuadra internamente (6 a 10 rojos; 12 a 17 muertos con Chiapa de Corzo en 3). No pude reverificar la base de 133 sin su HTML.
+- §8, FE-004 («417 cartuchos»).
+  - Actual: "…la fila sigue fuera del total; si se acredita que es el mismo aseguramiento, la cifra correcta es 420 y no 417".
+  - Problema: afirma que 420 es la cifra correcta, y 420 también es solo por resumen.
+  - Propuesto: "La cifra «417 cartuchos» no tiene fragmento citable en ninguna fuente ni en ARGOS 135 ni en 136: se retira. ARG-135-ARM-001: CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO. El aseguramiento de Industrial Bravo publicado el 16-oct suma 420 (385 de 7.62), solo por resumen; si se confirma que es el mismo hecho, 420 sigue sin ser citable. Sin cambio en los totales de 135. Publicada además en el cartelón, en «Vistos»."
+- §12, líneas a reemplazar:
+  - Entidades: "13, por la entidad del hecho…" → "12: Gro, Jal, Ver, Sin, Tab, Hgo, Col, NL, BC, Mich, Gto, Son. Chihuahua (seguimiento de ARG-136-006) y Nayarit (ARM-001, fuera del total) ya no aportan hecho propio".
+  - Muertos: borrar "**18** con `-010` si no se solapa con `-004`". Queda 16 con 7 de día RES (001 ×2, 002 ×2, 009, 012, 013).
+  - Heridos: borrar "(11 con `-010`)". Queda 2 + 1 + 3 + 2 = 8.
+  - Detenidos sin aseguramiento: "**2** (`-018`, `-019`)" → "6: 1 (`-017`) + 5 (`-018`) = 6; no incluye los 2 de `-019` (ARM-003, fuera del total)".
+  - Armamento: "dos filas fuera del total" → "tres filas (ARM-001, -002, -003)".
+  - Densidad: "21 / 26,52 = 0,792 → **0,79**" → "19 / 26,5167 = 0,7165 → **0,72**".
+  - Encabezado (línea 3): "21 hechos propios / 26,52 h = 0,79" → "19 hechos propios / 26,52 h = 0,72".
+  - FRONTERA: "6 de 21 (`-002`, `-006`, `-012`, `-015`, `-018`, `-019`); … 5 (`-004`, `-005`, `-007`, `-008`, `-011`); … 2 (`-020`, `-021`) → 13 de 21" → "FR 5 de 19 (`-002`, `-006`, `-011`, `-014`, `-017`) + AP 7 (`-004`, `-005`, `-007`, `-008`, `-010`, `-018`, `-019`) + FNF 0 = 12 de 19. Sin ruta con fecha: 8 (`-001`, `-002`, `-009`, `-012`, `-013`, `-015`, `-016`, `-017`); 6 de ellos sin otra marca. 12 + 6 = 18; solo `-003` queda sin marca".
+- §13 sigue vacío. Debe registrar:
+  - ronda 1 de `procedencia-cifras`: 29 búsquedas, 20 pases, 3 correcciones de fondo (Tecuala, Conclusión 3, Ensenada);
+  - ronda 1 de `editor-duplicidad`: 20 pases, 14 CORREGIR y 6 SIN HALLAZGO;
+  - ronda 2 de `procedencia-cifras`: 0 búsquedas, estos 20 pases;
+  - qué hallazgos no se corrigen y por qué.
+
+PASE 20 — Hallazgos de la ronda 1 sin aplicar en el cartelón, y pendientes de cierre. CORREGIR
+- Juchitán (panteón): la ronda 1 (pase 20) pidió una línea en el cartelón con entidad y día no fijados. Está en el archivo de fuentes §7 (línea 79), no en el cartelón.
+  - Citables: Azteca Guerrero ("Balacera en panteón de Juchitán deja dos fallecidos y un lesionado") e Interacción ("Agresión armada deja un efectivo de Guardia Nacional lesionado de gravedad").
+  - Propuesto (añadir a "Seguimientos… fuera del semáforo", o a un bloque "Vistos"): "Juchitán (Guerrero u Oaxaca, entidad contradicha), panteón, domingo 18 ~18:30 solo por resumen: dos fallecidos y 1 efectivo de la GN lesionado, por titulares (Azteca Guerrero, Interacción); ENTIDAD Y DÍA NO FIJADOS; no integrado".
+  - Si se decide mantenerlo fuera del cartelón, escribir la razón en §13.
+- Cuajinicuilapa (aspirante de Morena): sin línea en el cartelón. §7 dice "si lo fija en rojo, se recupera en 138", pero el hecho es de la ventana de 136 y el control de duplicidad (ronda 1, pase 9) pidió resolverlo en 137.
+  - Propuesto en §7: "se recupera en esta edición como ARG-137-REC-002 si el destinatario lo fija en rojo (136: +1 rojo, +1 muerto); si no, queda amarillo y visto".
+  - Sigue siendo decisión del destinatario.
+- Agua Prieta, Sonora (ronda 1, pase 19B): ausente del cartelón y de §7 (0 coincidencias).
+  - Citable: "Confirma FGJE baja del responsable de homicidio de dentista en Nogales" (El Imparcial, ruta 2026/10/17) y el titular de Meganoticias "Abaten en Agua Prieta…".
+  - Propuesto en §7: "Agua Prieta, Son.: abatido el presunto homicida de un dentista de Nogales (El Imparcial 2026/10/17, Meganoticias); sábado 17 por la mañana, solo por resumen; 2 agentes lesionados, por resumen; amarillo; ventana de 136, no recuperable".
+- Pistas de la duplicidad de la ronda 1 (pase 11) sin destino en §7: Zacatecas (ataque a policías municipales, 1 muerto y 2 heridos, sin fecha) y Colima ("muerte de funcionario", Telediario). Faltan también Zapopan (cancha de Arcos de Guadalupe, ~17-oct) y el Zacatecas "policías", que aparece solo como entidad en §9.
+  - Propuesto: añadir a "Vistos, no fijados", con la etiqueta `FECHA NO FIJADA — SIN VERIFICAR`.
+- Cierre de edición pendiente: `indice-arg-id.md` no contiene ARG-137 (0 coincidencias) y `_pendientes.md` no tiene entradas de 137, salvo la que hereda ("Abiertos que ARGOS 137 hereda", 1 coincidencia).
+  - Registrar ARG-137-001 a -019, REC-001, ARM-001 a -003 y FE-001 a FE-004.
+
+---
+
+VEREDICTO POR CIFRA CRÍTICA
+
+- 16 muertos: INTEGRAR (aritmética verificada; 7 con día solo por resumen, ya declarado).
+- 2 abatidos (-007): INTEGRAR.
+- 8 heridos: INTEGRAR MARCADA CON RESERVA. Salamanca 3 y la condición de heridos de Apatzingán son RES (pase 12).
+- 6 detenidos sin aseguramiento: INTEGRAR MARCADA CON RESERVA. El 1 de -017 está contradicho. Los 5 de -018 tienen fecha de captura RES y posiblemente previa a la ventana (pases 7 y 13).
+- 19 hechos, 12 entidades, 0,72, 6 / 10 / 3: INTEGRAR (aritmética verificada).
+- Valoración 5, "seis sin ruta con fecha": INTEGRAR MARCADA CON RESERVA. Corregir a "otros seis" (pase 15).
+- ARM-001 (1 larga, 1 granada, 1 detenido) y ARM-002 (2 detenidos): NO INTEGRAR AL TOTAL NUMÉRICO (ya fuera del total). Las celdas de cartuchos, cargadores y armas deben decir "n/d", no "0" (pase 9).
+- ARM-003 (1 corta, 2 detenidos): NO INTEGRAR AL TOTAL NUMÉRICO (ya fuera del total; una sola fuente).
+- «417 cartuchos» de ARG-135-ARM-001: RETIRAR Y PUBLICAR FE DE ERRATAS. Dos ediciones sin respaldo; falta publicarla en el cartelón y corregir FE-004 (pases 10 y 19).
+
+No hay cifra del cartelón que lleve dos o más ediciones sin respaldo citable aparte de la de 135.
+
+Archivos relevantes (absolutos):
+- /home/user/Prueba-/tools/datos-argos-137.py
+- /home/user/Prueba-/reports/argos-2026-10-19.html
+- /home/user/Prueba-/reports/argos-2026-10-19-movil.html
+- /home/user/Prueba-/reports/argos-2026-10-19.txt
+- /home/user/Prueba-/reports/argos-2026-10-19-fuentes.md
+- /home/user/Prueba-/reports/argos-2026-10-19-equipos.md
+- /home/user/Prueba-/reports/indice-arg-id.md
+- /home/user/Prueba-/reports/_pendientes.md
+
+Sources: ninguna búsqueda web. Todo el material proviene de los archivos del repositorio listados arriba.
+---
+
+## control-duplicidad-r2
+
+CONTROL EDITOR-DUPLICIDAD — ARGOS 137 — RONDA 2
+
+Material auditado
+- Commit 58a5834 (rama claude/argos-137). Revisé el .py, el HTML de escritorio, el móvil, el .txt, el archivo de fuentes (borrador), el de equipos y el índice. Cotejé contra los HTML del 14 al 18-oct y contra indice-arg-id.md y _pendientes.md.
+- Pruebas ejecutadas:
+  - `node tools/validar.js reports/argos-2026-10-19.html 2026-10-18 2026-10-19` da «validación OK» (semáforo 6/10/3, 19 propios + 1 REC, 5 tablas con table-wrap).
+  - El mismo validador sobre el móvil falla por estructura (sin `<script>`, sin table-wrap). Es la deuda 5 de 136 y no un defecto de esta edición. La paridad del móvil la comprobé con scripts propios.
+- La edición es la del día en curso y no está distribuida. Todo se corrige en sitio, en `tools/datos-argos-137.py`, y se regenera. La constancia va al archivo de fuentes.
+- Resultado: 20 pases. 12 con CORREGIR y 8 con SIN HALLAZGO. Veredicto al final: CORREGIR ANTES DE PUBLICAR.
+
+Equivalencia de numeración (para leer los informes de ronda 1 en equipos.md)
+- Las IDs 001 a 009 no cambian.
+- Antigua 010 (Mazatlán, «tarde violenta») queda retirada.
+- Antigua 011 pasa a 010 (Escuinapa).
+- Antigua 012 pasa a 011 (Tijuana, homicidio).
+- Antiguas 013, 014, 015, 016 y 017 pasan a 012 (Zapopan), 013 (Acapulco), 014 (San Juan Nuevo), 015 (Salamanca) y 016 (Apatzingán).
+- Antigua 018 (exfiscal) pasa a seguimiento de ARG-136-006.
+- Antigua 019 pasa a 017 (Tijuana, detención).
+- Antiguas 020 y 021 pasan a ARM-001 (Tecuala) y ARM-002 (Lerdo de Tejada).
+- Nuevas: 018 («El Talibán» y cuatro) y 019 (Hermosillo, Villa de Seris), esta con ARM-003.
+
+----------------------------------------------------------------
+PASES (por severidad: primero lo que altera cifras o afirma algo falso)
+----------------------------------------------------------------
+
+PASE 1 — ARG-137-018 («El Talibán» y cuatro) frente al archivo: SIN HALLAZGO de duplicado real
+- Busqué «Talib», «mineros», «Concordia», «El Rosario» y «Chapitos» en los HTML y fuentes del 14 al 18, en el índice y en _pendientes.md.
+- «Talibán»: ninguna coincidencia. «Chapitos» solo en ARG-97-002 y ARG-97-006 (agosto).
+- Concordia (Sinaloa):
+  - ARG-95-005, ARG-106-003, ARG-111-003, ARG-124-003 y ARG-126-004.
+  - Todos son aseguramientos o detenciones de otras fechas. Ninguno es un secuestro de mineros.
+- El Rosario (Sinaloa): ARG-120-010, ARG-125-010 y ARG-126-005 (aseguramientos).
+- «Mineros»: únicamente los ocho mineros artesanales de Sierra Pinta (Sonora), que son ARG-122-007 y ARGOS 121. Son otro hecho: Sonora, 8 víctimas, 5 sin paradero.
+- CORREGIR (deslinde de 018, que hoy solo dice «no figuran en las cinco ediciones previas»):
+  - Actual: «“El Talibán” y los 10 mineros de La Concordia no figuran en las cinco ediciones previas. Puede figurar en el agregado del Gabinete del 16 al 18-oct: no verificado. Armamento asegurado: no publicado»
+  - Propuesto: «“El Talibán” y los 10 mineros no figuran en el índice. El Rosario figura en ARG-120-010, ARG-125-010 y ARG-126-005, y Concordia en ARG-126-004: otros hechos. NO es ARG-122-007 (ocho mineros, Sierra Pinta, Sonora). Fecha del secuestro y de los homicidios: no publicada.»
+  - La última frase evita que el lector lea una violación de la regla «delito y detención dentro de la ventana, dos fichas». Hoy la ficha no dice cuándo ocurrió el delito.
+
+PASE 2 — ARG-137-018: categoría del evento y recuento: CORREGIR (requiere decisión del coordinador)
+- La propia ficha fecha las detenciones antes de la apertura (18-oct 08:34): «cuatro detenidos en El Rosario el 16-oct y “El Talibán” en Mazatlán el 17-oct, SOLO POR RESUMEN». Aun así cuenta como 🟢 del corte, entra a EVENTOS_CORTE, suma 5 a «Detenidos sin aseguramiento» y lleva la marca «PUBLICADO EL DÍA DE APERTURA SIN HORA».
+- Tecuala y Lerdo (rango 16 a 18-oct) sí salieron del semáforo como «EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE». El criterio es asimétrico. Para 018 las fechas son más precisas y caen enteras antes de la ventana.
+- EVENTOS fija `fecha` 2026-10-18 (la de publicación), no la del hecho.
+- Una discrepancia que la ficha no declara: jointly.mx (equipos.md, línea 846, sin fecha en ruta) sitúa la detención de «El Talibán» el 18-oct. Proceso, por resumen, dice 17.
+- Opción A (recomendada): tratarlo como evento anterior publicado durante el corte.
+  - Pasa a ficha `ARG-137-REC-002`, con ventana de origen «ARGOS 135 (16-oct, cuatro) y 136 (17-oct, Talibán)». Queda fuera de semáforo, mapa, radar, totales y EVENTOS_CORTE.
+  - Recuentos resultantes:
+
+| Concepto | Hoy | Opción A |
+|---|---|---|
+| Hechos propios | 19 | 18 |
+| 🔴 / 🟡 / 🟢 | 6/10/3 | 6/10/2 |
+| Recuperaciones | 1 | 2 |
+| Entidades | 12 | 12 (Sinaloa sigue por 004) |
+| Densidad | 0,72 | 0,68 (18 / 26,52 = 0,679) |
+| Detenidos sin aseguramiento | 6 | 1 (solo 017) |
+| Marcas de frontera | 12 de 19 (5 de cierre, 7 de apertura) | 11 de 18 (5 de cierre, 6 de apertura) |
+
+  - Valoración, línea 3: «ARG-137-017 y ARG-137-019». Línea 4: «ARG-137-REC-001 y ARG-137-REC-002».
+  - Muertos y heridos no cambian.
+  - Registrar en fuentes el efecto sobre 135 y 136 como cifra de recuperación verde. Sin recalificación retroactiva.
+- Opción B (mantenerlo en el semáforo):
+  - Fijar el criterio por escrito en fuentes: «el día del hecho solo por resumen no es ancla».
+  - Reescribir el Hecho: quitar «16-oct» y «17-oct» como datos y dejarlos «fechas de captura contradichas o solo por resumen».
+  - Poner `fecha` 2026-10-18 como fecha de publicación, no del hecho.
+- No se pierde ninguna cifra con A. Solo se reparte entre ventanas.
+
+PASE 3 — ARG-137-019 (Hermosillo, Villa de Seris) frente al archivo: SIN HALLAZGO de duplicado; CORREGIR el deslinde
+- «Villa de Seris» solo figura en argos-2026-10-16.html (ARGOS 134). Es ARG-134-012: Hermosillo, «col. Villas del Seris», joven muerto, jueves 15-oct ~20:30, 🟡. Otro hecho: distinta fecha, resultado y tipo.
+- «Objetivos prioritarios» solo aparece en agregados de agosto y septiembre sobre cifras nacionales. «Policía Preventiva» y «40 envoltorios» no aparecen.
+- Actual: «Villa de Seris figura en ARGOS 134 por otro hecho. No publicado por ARGOS 136.»
+- Propuesto: «Villas del Seris figura en ARG-134-012 (joven muerto, 15-oct): otro hecho.»
+- «No publicado por ARGOS 136» es una acusación de omisión a una edición anterior. Va al archivo de fuentes, no al cartelón.
+- Criterio de inclusión, que fuentes debe escribir:
+  - Hermosillo entra porque lleva ruta fechada del 18 (El Imparcial).
+  - Irapuato (~02:30 del domingo) queda «visto» porque no tiene ruta fechada.
+  - Con esto el tratamiento de 019 es coherente con las marcas de apertura de 004, 005, 007, 008 y 010.
+- La hora «~01:30» procede del resumen y no es ancla. La ficha ya lo marca.
+
+PASE 4 — Detenidos de las filas de armamento fuera del total: CORREGIR
+- ARM-001 tiene 1 detenido, ARM-002 tiene 2 y ARM-003 (019) tiene 2. Son 5 personas.
+- No están en «Detenidos en aseguramiento: 0», porque las filas están fuera del total. Tampoco están en «Detenidos sin aseguramiento: 6», porque son eventos con aseguramiento.
+- Quedan sin lugar en el recuento. Una omisión silenciosa baja las cifras sin motivo escrito.
+- Actual: «Armamento: SIN TOTAL NACIONAL VERIFICABLE DURANTE EL CORTE · tres filas fuera del total (ARG-137-ARM-001 a -003).»
+- Propuesto: «… tres filas fuera del total (ARG-137-ARM-001 a -003), con 5 detenidos que no se suman a ningún total (1, 2 y 2).»
+- Aplica tanto en Panorama como en el móvil. En el móvil es el mismo párrafo.
+
+PASE 5 — Celdas en cero que contradicen la nota de la misma fila (ARM-001 y ARM-002): CORREGIR
+- ARM-001 imprime Cartuchos 0 y Cargadores 0, pero su nota dice «más de 11 mil cartuchos (CANTIDAD NO DETERMINADA)» y «54 cargadores y 10,775 cartuchos en el boletín, solo por resumen».
+- ARM-002 imprime Cortas 0, Largas 0, Cartuchos 0 y Cargadores 0, pero su nota dice «2 largas, 1 corta, 3 cargadores y 21 cartuchos, solo por resumen».
+- Un mando que lee la columna ve «0» donde la fila misma declara munición.
+- Propuesto: «n.d.» en esas celdas, con la nota actual. Dejar 0 solo donde no hay dato en ninguna fuente.
+- Largas = 1 en ARM-001 es correcto por el titular («ametralladora» como arma larga; mi corrección de la ronda 1 está aplicada).
+- Aplicación de la ronda 1 que sigue incompleta: no se añadió «“Sebastián Lerdo de Tejada” es una calle de Cd. Obregón (ARG-119-007): otro hecho» a ARM-002. Tampoco «San Felipe Aztatán y El Arrayán no figuran; republicadores no independientes» a ARM-001.
+
+PASE 6 — Conclusión 4 (Salamanca) omite ARG-133-002: CORREGIR
+- Actual: «4. SALAMANCA, SEGUNDO ATAQUE ARMADO EN DOS EDICIONES … ARG-137-015 se suma a ARG-136-001.»
+- ARGOS 133 (argos-2026-10-15.html, línea 564) publicó ARG-133-002: Salamanca, bulevar Valle de Santiago frente a la Central Camionera, miércoles 14-oct ~mediodía, 2 muertos y 1 herido, 🔴.
+- Con 136-001 (17-oct) y 137-015 (18-oct) son tres ataques en cinco días. La conclusión afirma menos de lo que el archivo sostiene.
+- Propuesto: «4. SALAMANCA, TERCER ATAQUE ARMADO EN CINCO DÍAS (14, 17 y 18-OCT; cálculo propio; día de ARG-137-015 solo por resumen). ARG-137-015 se suma a ARG-133-002 y ARG-136-001. Línea: solicitar a la FGE Guanajuato el cotejo de casquillos entre los tres ataques — hipótesis.»
+- Deslinde de 015: añadir «NO es ARG-133-002 (bulevar Valle de Santiago, 14-oct)».
+- Las demás conclusiones las verifiqué contra el índice, en el Pase 7.
+
+PASE 7 — Conclusiones 1, 2, 3 y 5: verificadas; CORREGIR solo el titular de la 3
+- Conclusión 1:
+  - 136-004 es Culiacán, 135-001 es Culiacán (Valle del Agua) y 135-007 es Culiacán (La Costerita).
+  - La cuenta «tres hechos con muertos publicados el 18-oct» (004, 009, 010) es correcta.
+  - Fue la corrección de la ronda 1, y está aplicada.
+- Conclusión 2:
+  - 136-002 y 136-003 son Acapulco, 17-oct; 137-013 es Acapulco, 18-oct. Correcta.
+- Conclusión 5:
+  - 134-REC-003 (El Guayabo, 13-oct), 135-003 (16-oct), 135-004 (17-oct pub.) y 137-016 (18-oct).
+  - Cuatro hechos entre el 13 y el 18. Correcta.
+  - Apatzingán no aparece en ningún otro hecho de 14-18.
+- Conclusión 3 (Colima, Los Mezcales): la corrección de la ronda 1 sobre «un presunto sicario y un segundo al mando» está aplicada. ARG-104-005 es «El Pirul», presunto sicario; ARG-105-003 es «El Abulón», segundo al mando.
+  - El titular afirma «DOS OPERADORES ABATIDOS»; la ficha 007 dice que son «presuntos generadores de violencia» y que lo de operadores de Los Mezcales lo atribuyen los medios.
+  - Actual: «COLIMA, LOS MEZCALES: DOS OPERADORES ABATIDOS TRAS DOS DETENCIONES DE AGOSTO …»
+  - Propuesto: «COLIMA, LOS MEZCALES: DOS PRESUNTOS OPERADORES (ATRIBUCIÓN DE MEDIOS) ABATIDOS TRAS DOS DETENCIONES DE AGOSTO …»
+- Portada frente a conclusiones: no comparten ningún hecho.
+  - La portada cita 001, 005, 006, ARG-136-006, ARM-001 y ARM-002.
+  - Las conclusiones citan 004, 007, 009, 010, 013, 015 y 016.
+  - La Valoración solo remite por rangos de ARG-ID.
+
+PASE 8 — Sentencias: «Vistas» que repiten ediciones anteriores: CORREGIR
+- Aplicado: Ensenada ya no es fila propia, y Veracruz 21 años, Cosoleacaque, Banderilla y Hermosillo 25 años salieron de las vistas.
+- Persiste un duplicado: «Querétaro, tres sentencias del 5, 6 y 8-oct» ya figura en ARGOS 132, argos-2026-10-14.html línea 828 («Querétaro, tres sentencias (5 a 8-oct)»). Es el mismo conjunto de tres sentencias y no aporta dato nuevo.
+- Propuesto: quitarla del cartelón, o escribir «Querétaro, tres sentencias del 5 a 8-oct: sin novedad respecto de ARGOS 132».
+- Las demás vistas son nuevas frente a 14 a 18:
+  - Tamaulipas FGJE-370-2026: sin coincidencias.
+  - Nayarit 40 años por violación equiparada (8-oct): ARGOS 134 trae «Nayarit, 53 años por desaparición (14-oct)», que es otro caso.
+  - FGR Campeche, portación de arma: sin coincidencias.
+  - Tulantepec (21-oct): es seguimiento del candidato de ARGOS 132/133 («tres culpables, individualización aplazada»), no un caso nuevo. Para no perder el vínculo, escribir «Hidalgo, Tulantepec (tres culpables, fallo del 8-9 oct): individualización el miércoles 21-oct».
+- Las cifras de sentencias son cero y cuadran: ningún boletín leído en ventana.
+
+PASE 9 — Títulos más firmes que la ficha: CORREGIR (tres)
+- ARG-137-003 (Coatzacoalcos).
+  - Título actual: «MATAN A BALAZOS A UN HOMBRE Y A UNA MUJER EN UNA CUARTERÍA DE SANTA ISABEL».
+  - La ficha declara «agresión mutua de la pareja o tercera persona que huyó: CONTRADICHO» y «móvil no confirmado por autoridad». No dice «a balazos» en ningún apartado.
+  - Propuesto: «DOS MUERTOS —UN HOMBRE Y UNA MUJER— EN UNA CUARTERÍA DE SANTA ISABEL: MÓVIL NO CONFIRMADO».
+- ARG-137-014 (San Juan Nuevo).
+  - Título actual: «… A UN CAMIONERO EN LA COCHERA DE SU CASA».
+  - La ficha marca «25 años, en la cochera de su casa, SOLO POR RESUMEN». Los titulares fechados dicen solo «asesinan a balazos a camionero».
+  - Propuesto: «ASESINAN A BALAZOS A UN CAMIONERO EN SAN JUAN NUEVO».
+- ARG-137-017 (Tijuana, detención).
+  - Título actual: «HAY UN DETENIDO TRAS EL HOMICIDIO DEL ADOLESCENTE DE GENARO VÁZQUEZ».
+  - La ronda 1 pidió «(POR TITULAR)». El título quedó sin la atribución. La ficha es ★★☆☆☆, con una sola fuente regional y contradicción de Opinia.
+  - Propuesto: «SEGÚN UN MEDIO, HAY UN DETENIDO TRAS EL HOMICIDIO DEL ADOLESCENTE DE GENARO VÁZQUEZ».
+- Los demás títulos están sostenidos por titulares:
+  - 001 «familia de comerciantes»: Unomásuno e IRZA.
+  - 002 «irrumpen»: Zócalo.
+  - 016 «pareja»: Contramuro, Quadratín e IMN.
+  - 007 «con la Marina»: aplicado desde la ronda 1.
+  - 018 «Chapitos» y «10 mineros»: titular de Proceso.
+
+PASE 10 — Texto de método, acusaciones de omisión y redundancias dentro de las fichas: CORREGIR
+- Aplicado: ya no hay «(🟡: homicidios únicos…)», «(🟡: agresión sin muertos)», «dos fichas», «AGREGADO MUNICIPAL DE MEDIOS, NO UN HECHO» ni ARG-137-010 antiguo.
+- Persisten:
+  - 019: «No publicado por ARGOS 136.» Es una acusación de omisión. Quitar (Pase 3).
+  - 018: «Puede figurar en el agregado del Gabinete del 16 al 18-oct: no verificado.» Es especulación sobre el método. Pasar a fuentes (Pase 1).
+  - La cola «Armamento asegurado: no publicado» está duplicada al final de los deslindes de 007, 017 y 018. Ya figura en «Conteo de armamento: sin fila — armamento asegurado: no publicado» y, en 018, también en el Hecho. Quitarla de los tres deslindes.
+  - La ficha 011 repite en su Hecho «1 detenido, por titular de un medio; Opinia no informa detenidos: CONTRADICHO». Es el mismo dato que 017. El detenido aparece así en dos fichas, más fila y semáforo. Ver Pase 11.
+- Las excepciones de trazabilidad (ventana de origen, frontera, bloqueo de egreso, casillas de cobertura, deslindes) están bien.
+
+PASE 11 — Fichas 011 y 017 (Tijuana, delito y detención): CORREGIR (menor)
+- Son dos hechos distintos y deben seguir en dos fichas. Delito 🟡 y detención 🟢, ambos dentro de la ventana. La regla de «un delito y su detención son dos eventos» está bien aplicada.
+- Coinciden en criterios de contexto (colonia Genaro Vázquez, 19-oct, mismo caso), no en hecho:
+  - 011 es el homicidio del adolescente (17 años, ~02:38).
+  - 017 es la detención de 1 persona.
+  - Los detenidos del total no se doblan: solo 017 suma 1.
+- En 011, sustituir en el Hecho «1 detenido, por titular de un medio; Opinia (2026/10/19) no informa detenidos: CONTRADICHO» por «Detención: ARG-137-017». Con esto la contradicción vive solo en 017.
+- Fecha de 017. El Hecho dice «FECHA DE LA DETENCIÓN NO FIJADA» y la Trazabilidad dice «Hecho: 2026-10-19, hora no fijada». EVENTOS y Panorama usan 19-OCT.
+  - La fecha 19-oct es derivable, porque la detención es posterior al homicidio de las ~02:38 del 19-oct. Pero la ficha no lo dice.
+  - Propuesto: «Fecha: 19-oct, posterior al homicidio de ~02:38 (ARG-137-011); hora no fijada».
+
+PASE 12 — Duplicidad interna, todos los pares: SIN HALLAZGO
+- Revisé cada par de las 19 fichas más REC-001 y ARM-001 a -003, por fecha, entidad, municipio, colonia o localidad, corporación, cifras, detenidos, nombres y alias. Los descartes están en «CRUCES VERIFICADOS» más abajo.
+- Retiros confirmados de la ronda 1: ARG-137-010 (Mazatlán, «tarde violenta») ya no existe como ficha. Su contenido queda como deslinde de 004: «Agregados de medios de la tarde en Mazatlán (2 o 3 muertos, 3 o 4 heridos): posible solapamiento, no integrados».
+- Exfiscal de Chihuahua: ya es seguimiento de ARG-136-006, con la leyenda «fuera del semáforo» y sin ficha propia.
+- La suma Sinaloa en la Conclusión 1 (004, 009, 010) no contiene ningún par que coincida en tres criterios.
+
+PASE 13 — Aritmética del semáforo, radar, mapa y totales: SIN HALLAZGO (salvo lo que cambie el Pase 2)
+- EVENTOS = 20 entradas (19 propias + REC-001). EVENTOS_CORTE = 19 (6 rojo, 10 amarillo, 3 verde).
+- Semáforo, contadores del radar y panel móvil: 6/10/3 en escritorio y móvil. Concuerdan.
+- Mapa del móvil: 12 estados coloreados (6 rojo: VER, TAB, SIN, JAL, HID, GRO; 5 amarillo: NLE, MIC, GUA, COL, BCN; 1 verde: SON). Es el color de mayor gravedad por entidad, con REC excluida. Coincide con EVENTOS_CORTE.
+- 12 entidades: Guerrero, Jalisco, Veracruz, Sinaloa, Tabasco, Hidalgo, Colima, Nuevo León, Baja California, Michoacán, Guanajuato, Sonora.
+- Densidad: 19 / 26,52 h = 0,7164, es decir 0,72.
+- Muertos 16: 2+2+2+2+1+1+1+1+1+1+1+1. Con día solo por resumen: 7 (Copanatoyac 2, Tlajomulco 2, Culiacán 1, Zapopan 1, Acapulco 1). Correcto.
+- Heridos 8: 2+1+3+2. Todos con día solo por resumen. Correcto.
+- Abatidos 2 (007). Restos: torso (005).
+- Detenidos sin aseguramiento 6 (017: 1; 018: 5). La suma es correcta; cambia con el Pase 2.
+- Armamento: 3 filas fuera del total, totales en cero. Coherente con las 10 tarjetas del bloque de armamento.
+- Todo concuerda con el .txt (100 ID en .txt y en escritorio).
+
+PASE 14 — Valoración, línea 5, y marcas de frontera: SIN HALLAZGO; redacción mejorable
+- Verificado:
+  - Cierre del 19 (FRONTERA): 002, 006, 011, 014 y 017, es decir 5.
+  - Apertura sin hora: 004, 005, 007, 008, 010, 018 y 019, es decir 7.
+  - Total 12 de 19.
+  - Sin ruta con fecha y sin marca de frontera: 001, 009, 012, 013, 015 y 016, es decir 6.
+  - Sin ruta con fecha en total son 8 (con 002 y 017, que ya están en la frontera).
+  - La única ficha con ruta fechada y anclada es 003.
+- La frase actual «DOCE DE DIECINUEVE CON MARCA DE FRONTERA (5 DE CIERRE, 7 DE APERTURA) Y SEIS SIN RUTA CON FECHA» se puede leer como que 12 + 6 = 18.
+- Propuesto: «… Y OTROS SEIS SIN RUTA CON FECHA».
+- Si prospera la Opción A del Pase 2: «ONCE DE DIECIOCHO (5 DE CIERRE, 6 DE APERTURA) Y OTROS SEIS …».
+
+PASE 15 — Indicador de cobertura: SIN HALLAZGO en aritmética; CORREGIR una frase
+- Sumas verificadas contra las listas de entidades:
+  - Sentencias: 23 revisadas + 9 NO REVISADA = 32, sin repeticiones.
+  - Alto impacto: 22 + 8 + 2 = 32.
+  - Armamento: 9 + 5 + 18 = 32.
+- Aplicado de la ronda 1:
+  - 6 de lectura parcial en sentencias.
+  - 4 de lectura parcial en armamento.
+  - Código «000» en vez de «403».
+  - SESNSP e INEGI como NO REVISADOS.
+- Contradicciones entre renglones: ninguna. La edición no declara «sin actualización» de una entidad que ella misma documenta.
+- Falta una precisión de la ronda 1:
+  - Actual: «Guardia Nacional y FGR: SRIV (con site:) · Defensa y Marina: SRIV (consulta sin site:)».
+  - La búsqueda federal la hizo solo el equipo Golfo. Noroeste y Occidente la declararon no hecha.
+  - Propuesto: añadir «(equipo Golfo; búsqueda federal de Noroeste y Occidente NO REALIZADA)».
+
+PASE 16 — Tratamiento desigual dentro del mismo agregado federal 16-18-oct: SIN HALLAZGO; fijar criterio por escrito
+- ARM-001 (Tecuala) y ARM-002 (Lerdo) son filas atenuadas con la etiqueta literal «EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE».
+- Mahahual (QRoo: 2 detenidos, 324 cartuchos), Mazatlán (marihuana) y Cotija siguen como «vistos».
+- Es defendible si el criterio es «existe titular de medio con el dato». Tecuala (NTV) y Lerdo (La Nigua) tienen titular. Mahahual está solo por resumen.
+- Ese criterio no está escrito. Va a fuentes: «fila ARM atenuada solo si hay titular fechado; el resto, visto».
+- El deslinde ya explica las duplicidades, incluida la de ARM-002 con el agregado semanal de la FGE de Veracruz, que está declarada y fuera del total.
+
+PASE 17 — Paridad escritorio, móvil y texto: SIN HALLAZGO de contenido; observaciones de presentación
+- Fichas: las 19 más REC-001 son idénticas en escritorio y móvil. La única diferencia es la etiqueta de fecha de la cabecera. Todas tienen exactamente los apartados HECHO y TRAZABILIDAD.
+- Conteo de ID por documento: escritorio 100, móvil 77, texto 100.
+  - La diferencia de 23 entre escritorio y móvil es exactamente 20 renglones del Panorama más 3 filas de la tabla de armamento. Se explica por diseño, sin pérdidas.
+- Recuadros: 3 en total (portada, Valoración, Conclusiones), en escritorio y móvil, con 5 líneas cada uno. Contadores 6/10/3 y 12 estados coloreados iguales.
+- Observaciones de presentación:
+  - El móvil omite el índice por entidad y la tabla de armamento por evento, y lo declara.
+  - La línea 5 de la portada cita ARM-001 y ARM-002 y la línea de Totales cita ARM-001 a -003. En el móvil esas IDs no se pueden resolver.
+  - Propuesto: que el generador añada en el móvil una nota de tres líneas con las filas ARM, o que la portada móvil diga «solo en el cartelón».
+  - El validador no cubre el móvil (deuda 5 de 136). Los resultados de este pase son de comprobación manual.
+
+PASE 18 — Portada, recuadros, titulares repetidos y apartados: SIN HALLAZGO
+- Portada: un solo recuadro «LO QUE DEBE HACER EL MANDO», 5 líneas «SOLICITE …», sin titulares ni cifras, sin «EXIJA».
+  - La línea 4 cita ARG-136-006 y la 5 cita ARM-001 y ARM-002. Corresponde a los cambios de la ronda 1.
+- Tres recuadros como máximo. Ninguno explica un color ni un mecanismo. La Valoración tiene 5 líneas numeradas.
+- Ninguna ficha lleva apartados distintos de HECHO y TRAZABILIDAD. No hay «Corroboración» ni «Explotación».
+- Ningún titular aparece tres veces: Panorama, ficha y, en los casos de Tijuana, la ficha de la detención, que es otro hecho. La mención de la detención dentro de 011 se corrige en el Pase 11.
+- Los textos de seguimiento y portada no repiten un mismo hecho: la portada solo cita ARG-136-006.
+- Lo único que supera el límite es la densidad de cada línea de las Conclusiones. Son cinco ítems numerados, pero los ítems 1 y 5 tienen tres o cuatro frases. No viola la regla de las cinco líneas.
+
+PASE 19 — Seguimientos y decisiones heredadas: CORREGIR (registrar) y una decisión pendiente
+- Aplicado y verificado contra el índice:
+  - ARG-136-006 (audiencia estatal el domingo 18 y vinculación el jueves 22-oct; sábado 17 o domingo ~medianoche, contradicho).
+  - ARG-136-REC-002 (Tanquián): ninguna autoridad nombrada confirma la GN; 🟡 en su ventana.
+  - ARG-136-009 (vinculación en Iguala, solo por resumen).
+  - ARG-136-007 (Puebla, a disposición de la Fiscalía).
+  - ARG-135-REC-003 (Cachanillas, «MISMO PREDIO NO VERIFICADO»).
+  - ARG-135-010 (la séptima persona sigue sin localizarse).
+  - ARG-135-011 (sin vinculación).
+- Decisión pendiente del destinatario: color de Cuajinicuilapa (aspirante de Morena, sábado 17, ventana de 136).
+  - Fuentes §7 dice «si lo fija en 🔴, se recupera en 138». Debe decir «en 137»: un hecho de alto impacto de una ventana anterior se publica como ficha -REC- en la primera edición que lo encuentra. Dejarlo para 138 es perder la recuperación.
+  - Efecto si 🔴: ficha ARG-137-REC-002 (o REC-003 si se aplica la Opción A del Pase 2), «Recup.» sube, y fe de erratas a 136 de +1 rojo y +1 muerto.
+  - Precedentes del archivo, para el destinatario:
+    - ARG-108-REC-001: excandidato y coordinador del partido PAZ, 🔴, con amenazas documentadas.
+    - ARG-124-002: exregidor y coordinador regional del PAZ, 🔴.
+    - ARG-131-REC-001: exalcalde, 🟡.
+  - La lectura literal de la metodología (víctima que no es autoridad ni servidor público) es 🟡.
+- Hechos que el cartelón no ficha y que fuentes tampoco registra (el archivo de fuentes no los menciona):
+  - Copanatoyac: Quadratín «Matan a coordinador del PT de Copanatoyac y 4 integrantes de su familia» (5 muertos, fecha no fijada). Si cae en la ventana, sería 🔴 por víctimas múltiples y servidor o dirigente. Pasa a pendientes.
+  - Zacatecas: ataque a policías municipales en límites con Aguascalientes (1 muerto, 2 heridos; El Universal, sin fecha). No figura en el archivo. Si fue en la ventana, es 🔴 por muerte de policía.
+  - Colima: Telediario «muerte de funcionario».
+  - Zapopan: cancha de Arcos de Guadalupe (1 muerto y 1 herido, ~17-oct).
+  - Mazatlán: 3 detenidos y 1.5 t de marihuana (Extraoficial / Línea Directa, ya en «vistos» del cartelón).
+- Estas pistas son lo que pedí en la ronda 1 (Pase 11). Persisten sin destino en fuentes.
+
+PASE 20 — Lo que el archivo de fuentes, el índice y _pendientes.md deben registrar al cierre: CORREGIR
+- Archivo de fuentes (`reports/argos-2026-10-19-fuentes.md`, hoy con numeración antigua):
+  1. Renumerar todo con la equivalencia del encabezado.
+  2. §3 y §5: «Acapulco → -014» pasa a -013. La fila del exfiscal debe decir «seguimiento de ARG-136-006, fuera del semáforo», no «→ ARG-137-018».
+  3. §4: «renglones … fichados como -020/-021» pasa a ARM-001 y ARM-002.
+  4. §6: «Tres Cerritos figura en ARGOS 134» debe citar ARG-134-005.
+  5. §7:
+     - Quitar «Mazatlán, tarde violenta (-010)» como arbitraje y dejarlo como «visto, posible solapamiento con -004».
+     - Tijuana pasa de (-012, -019) a (-011, -017).
+     - Tecuala y Lerdo se describen como ARM-001 y ARM-002.
+     - Mover Hermosillo (Villa de Seris) de «vistos» a la ficha 019 y ARM-003.
+     - Irapuato queda como «visto, sin ruta fechada».
+     - Añadir las pistas del Pase 19.
+     - Corregir Cuajinicuilapa de «138» a «137» y dejarlo marcado como decisión del destinatario.
+  6. §8: mantener FE-001 a FE-004. Si se acepta la Opción A, añadir FE-005 con el efecto verde sobre 135 y 136.
+  7. §9: actualizar el registro por entidad: Chihuahua deja de tener hecho; Nayarit y Veracruz tienen fila ARM, no hecho; Sonora tiene hecho 019; Sinaloa tiene 004, 009, 010 y 018; Jalisco 002 y 012; Michoacán 014 y 016; Guerrero 001 y 013; BC 011 y 017; Guanajuato 015 y REC-001. En el resumen: «4 de lectura parcial» pasa a 6 en sentencias.
+  8. §12:
+     - 19 hechos, 12 entidades, 0,72.
+     - Quitar «18 con -010», «11 con -010» y «13 entidades».
+     - FRONTERA: 5 de cierre + 7 de apertura = 12 de 19; sin ruta con fecha: 8, de ellos 6 sin marca.
+     - Detenidos sin aseguramiento: 6. Si prospera el Pase 2, los números del Pase 2.
+  9. §13 (vacío): registrar las rondas 1 y 2 de ambos controles, con los CORREGIR no aplicados y su motivo.
+  10. §14: nada. §15: añadir «Querétaro vistas repetidas», «ARG-133-002 omitida en una conclusión» y «el criterio de inclusión por ruta fechada».
+  11. §16: reescribir con IDs nuevas. Quitar -020 y -021 y pasarlos a ARM. Dar de alta 018 (Proceso, Infobae, Político.mx; I 0 / N 3 / R 0), 019 (alfredoalvarez no; El Imparcial; I 0 / N 0 / R 1) y ARM-003. Corregir la ficha 017 (Regional 1).
+- Índice (`reports/indice-arg-id.md`): hoy tiene 0 coincidencias con ARG-137. Dar de alta:
+  - ARG-137-001 a -019.
+  - ARG-137-REC-001 (y -REC-002 si procede).
+  - ARG-137-ARM-001 a -003.
+  - ARG-137-FE-001 a -004 (-FE-005 si procede).
+  - Anotar en cada línea de ARM el estatus «EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE — fuera del total».
+  - Anotar en ARG-136-REC-002 el cambio de color (🟡) y su FE-001.
+  - No crear ID para el exfiscal, que sigue siendo ARG-136-006.
+- `_pendientes.md`:
+  - Actualizar «Última actualización» a ARGOS 137 (2026-10-19).
+  - «Cerrados por ARGOS 137»: San Baltazar Tetela (🟡 decidido), Tanquián (🟡, FE-001), la cifra 417 de ARG-135-ARM-001 (420, FE-004), Recalcular 133 (FE-003), Acapulco (3 heridos), Taxco -009 (vinculación), ciclo A aplicado, dominios corregidos y controles.
+  - «Abiertos que ARGOS 138 hereda»:
+    - Cuajinicuilapa (color) y el coordinador del PT de Copanatoyac (fecha).
+    - Zacatecas (policías), Colima (funcionario), Zapopan (Arcos de Guadalupe y restaurante de mariscos), Juchitán (entidad), Patamban (persona defensora) y Culiacán Laureles Pinos (lunes por la tarde).
+    - Exfiscal: vinculación el jueves 22-oct 10:00, audiencia federal y fecha de la orden.
+    - Tulantepec (miércoles 21-oct).
+    - Cachanillas (10 cuerpos, predio no verificado), Ajuchitlán (séptima persona) y Tepic (vinculación).
+    - «El Talibán» (fecha de la captura, 17 o 18; fecha del delito; agregado del Gabinete 16-18).
+    - ARM-001 y ARM-002 (desglose y fecha) y Mahahual.
+    - Industrial Bravo (duplicidad con 135-ARM-001) y Ensenada (boletín).
+    - Ciclo: 138 = B, 139 = C. Prioridad sobre el ciclo: sentencias NO REVISADA 9 (Son, Sin, Zac, Gto, Mor, Hgo, Gro, Camp, Yuc) y armamento NO REVISADA 18.
+  - Deuda de método:
+    - Validador común para el móvil.
+    - Los equipos no hicieron grep (plantilla con el comando literal).
+    - Criterio de inclusión por ruta fechada.
+    - Querétaro y otras «vistas» repetidas entre ediciones.
+    - Conclusión sin cotejo contra todo el archivo (Salamanca).
+  - Arranque: escribir `reports/_arranque-ARGOS-138.md` y `reports/_ordenes-ARGOS-138.txt`. Es el último paso obligatorio.
+
+----------------------------------------------------------------
+INFORME EN FORMATO DEL CONTROL
+----------------------------------------------------------------
+
+DUPLICIDAD INTERNA
+- Ninguna entre las fichas actuales. El retiro de la antigua 010 (Mazatlán) y del exfiscal (018 antigua) de la ronda 1 está aplicado. Detalles en el Pase 12.
+- Auditoría posterior a la fusión de 004/010: ya no hay rastro de la duplicidad. Solo puedo confirmar que quedó limpia y que el deslinde de 004 conserva el solapamiento posible.
+
+YA PUBLICADO EN EDICIÓN ANTERIOR
+- «Querétaro, tres sentencias (5 a 8-oct)» ya aparece en argos-2026-10-14.html, línea 828 (ARGOS 132) — categoría: duplicado. Quitar o marcar «sin novedad respecto de ARGOS 132».
+- Conclusión 4 (Salamanca): omite ARG-133-002 (argos-2026-10-15.html) — no es duplicado del hecho, sino una cuenta incompleta.
+- ARG-137-018 (detenciones del 16 y 17-oct) — evento anterior publicado durante el corte, según la propia ficha. Pendiente de decisión (Pase 2).
+- ARG-137-019 — Villa de Seris no repite a ARG-134-012 (otro hecho). Sin hallazgo.
+- Falso vacío: ninguno. Los vacíos declarados de SESNSP e INEGI quedaron como NO REVISADOS. Las cifras no están en totales de ninguna edición.
+
+CRUCES VERIFICADOS SIN DUPLICIDAD
+- 018 (Talibán + 4, Sinaloa, 16-17-oct) y ARG-135-ARM-001 / Industrial Bravo (SSP Sinaloa, 4 detenidos, ametralladora, publicado el 16-oct): coincide el número 4 y la fecha de publicación. Difieren en municipio (Culiacán frente a El Rosario y Mazatlán), corporación, tipo de acto (aseguramiento frente a secuestro y homicidio de mineros) y cifras. Distintos.
+- 018 y los ocho mineros de Sierra Pinta, Sonora (ARG-122-007): 10 frente a 8 víctimas, Sinaloa frente a Sonora. Distintos.
+- 018 y las detenciones de Concordia/El Rosario de septiembre-octubre (ARG-124-003, ARG-126-004, ARG-120-010): fechas, cifras y delitos distintos.
+- 019 (Hermosillo, Villa de Seris, 2 detenidos, 1 pistola) y ARG-134-012 (Villas del Seris, joven muerto, 15-oct): distinto día, resultado y tipo.
+- 004 (Fovissste Esperanza) y el agregado «tarde violenta» de Mazatlán: posible solapamiento declarado, no integrado.
+- 009 (Culiacán, heladería, bulevar Emiliano Zapata) y ARG-136-004 (tienda de conveniencia, colonia Estela Ortiz o Ruiz Cortines): colonia, víctima y fecha distintas.
+- 010 (Escuinapa, mujer) y Macoyahui (hombre, sin fecha): sexo, tipo y localidad.
+- 011/017 (Tijuana): delito y detención, dos fichas por regla.
+- 013 (Acapulco, Héroes de Guerrero) y ARG-136-002 / ARG-136-003: colonia y día. «Cinco muertos y tres heridos» es 2 + 2 + 1.
+- 015 (Salamanca, Los Hernández, 18-oct) y ARG-136-001 (col. Guanajuato, 17-oct) / ARG-133-002 (bulevar Valle de Santiago, 14-oct): colonia, fecha y resultado.
+- 016 (Apatzingán, col. Buenos Aires) y ARG-135-003 / ARG-135-004 / ARG-134-REC-003: colonia, víctimas y fecha.
+- 007 (tramo Coquimatlán–Villa de Álvarez, 18-oct) y ARG-134-003 (centro de Coquimatlán, 15-oct): lugar, víctimas y fecha. Los Mezcales figuran en ARG-104-005 y ARG-105-003 (detenciones de agosto): otros hechos.
+- 005 (torso, km 27 Villahermosa–Teapa) y ARG-120-005 / ARG-130-003 / ARG-105-REC-004 / ARG-120-008: fecha, lugar y víctimas.
+- 003 (Santa Isabel) y ARG-134-011 (fracc. Santa Cecilia, 15-oct): colonia, víctima y fecha.
+- 001 (Copanatoyac, Oztocingo) y el coordinador del PT del mismo municipio: cifras y perfil distintos; fecha del segundo sin fijar. No se integra y no se descarta relación.
+- REC-001 (Celaya, col. Gobernadores) y ARG-136-001: Celaya figura solo como nombre de calle en Salamanca.
+- ARM-001 (Tecuala) y ARG-133-REC-007 (fosa de La Presa): otro hecho.
+- ARM-002 (Lerdo de Tejada) y ARG-119-007 (calle Sebastián Lerdo de Tejada, Cd. Obregón): otro hecho.
+
+REPETICIÓN ENTRE SECCIONES
+- Portada, Valoración y Conclusiones reparten bien las funciones. No comparten hechos (Pase 7).
+- El detenido de Tijuana aparece en dos fichas (011 y 017): quitarlo de 011 (Pase 11).
+- Texto de método dentro de las fichas: queda «No publicado por ARGOS 136» y la cola «Armamento asegurado: no publicado» triplicada (Pase 10).
+
+DESCUADRES ARITMÉTICOS Y DE COBERTURA
+- Ningún descuadre en lo publicado (Pases 13, 14 y 15).
+- 5 detenidos de las filas ARM fuera de total que no figuran en ninguna línea de recuento (Pase 4).
+- Celdas «0» en ARM-001 y ARM-002 con munición declarada en la nota de la misma fila (Pase 5).
+- Si se acepta la Opción A (Pase 2): 19 a 18 hechos, 🟢 3 a 2, Recup. 1 a 2, densidad 0,72 a 0,68, detenidos sin aseguramiento 6 a 1, frontera 12 de 19 a 11 de 18.
+
+VEREDICTO: CORREGIR ANTES DE PUBLICAR
+
+Bloqueos, en orden:
+1. Decidir el tratamiento de ARG-137-018 (Pase 2).
+2. Cuenta de detenidos fuera de total (Pase 4).
+3. Celdas en cero de ARM-001 y ARM-002 (Pase 5).
+4. Conclusión 4 con ARG-133-002 (Pase 6).
+5. Quitar la fila de Querétaro repetida de ARGOS 132 (Pase 8).
+6. Tres titulares más firmes que su ficha: 003, 014 y 017 (Pase 9).
+7. Texto de método y acusación de omisión (Pase 10).
+8. Registro en fuentes, índice y _pendientes.md (Pase 20).
+
+Archivos relevantes (rutas absolutas)
+- /home/user/Prueba-/tools/datos-argos-137.py (donde se corrige y se regenera)
+- /home/user/Prueba-/reports/argos-2026-10-19.html
+- /home/user/Prueba-/reports/argos-2026-10-19-movil.html
+- /home/user/Prueba-/reports/argos-2026-10-19.txt
+- /home/user/Prueba-/reports/argos-2026-10-19-fuentes.md
+- /home/user/Prueba-/reports/argos-2026-10-19-equipos.md
+- /home/user/Prueba-/reports/indice-arg-id.md
+- /home/user/Prueba-/reports/_pendientes.md
+- /home/user/Prueba-/reports/argos-2026-10-14.html (línea 828: Querétaro, ARGOS 132)
+- /home/user/Prueba-/reports/argos-2026-10-15.html (línea 564: ARG-133-002, Salamanca)
+- /home/user/Prueba-/reports/argos-2026-10-16.html (ARG-134-012, Villas del Seris)

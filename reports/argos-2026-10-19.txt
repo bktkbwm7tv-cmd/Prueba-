@@ -12,7 +12,7 @@ Versión 3.0 · Corte matutino · USO INSTITUCIONAL
 
   · 🔴 Alto impacto · 6
   · 🟡 Violencia operativa · 10
-  · 🟢 Acciones institucionales · 3
+  · 🟢 Acciones institucionales · 2
 
 [ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
 
@@ -24,7 +24,7 @@ Pase el cursor sobre un estado.
 
   · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 10 eventos
 
-  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 3 eventos
+  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 2 eventos
 
 ── LO QUE DEBE HACER EL MANDO
 
@@ -44,8 +44,8 @@ Pase el cursor sobre un estado.
 
 ## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
 
-Ventana 18-oct 08:34 → 19-oct 11:05 CDMX (26 h 31 min) · 19 hechos propios en 12 entidades ·
-densidad 0,72 hechos/hora; duración y densidad, cálculo propio.
+Ventana 18-oct 08:34 → 19-oct 11:05 CDMX (26 h 31 min) · 18 hechos propios en 12 entidades ·
+densidad 0,68 hechos/hora; duración y densidad, cálculo propio.
 
   Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
   Guerrero · Copanatoyac (Crucero de Oztocingo) · 18-OCT, TARDE, DÍA SOLO POR RESUMEN | Ataque armado: 2 muertos y 2 heridos | 🔴 Rojo | SIN BOLETÍN | Unomásuno | ★★☆☆☆ | ARG-137-001
@@ -65,26 +65,26 @@ densidad 0,72 hechos/hora; duración y densidad, cálculo propio.
   Guanajuato · Salamanca (Los Hernández) · 18-OCT, NOCHE, DÍA SOLO POR RESUMEN | Ataque a una camioneta: heridos (3, solo por resumen) | 🟡 Amarillo | SIN BOLETÍN | Milenio | ★★☆☆☆ | ARG-137-015
   Michoacán · Apatzingán (col. Buenos Aires) · 18-OCT, TARDE, DÍA SOLO POR RESUMEN | Ataque a una vivienda: pareja baleada | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-137-016
   Baja California · Tijuana (col. Genaro Vázquez) · 19-OCT, HORA NO FIJADA | 1 detenido por el homicidio del adolescente | 🟢 Verde | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-137-017
-  Sinaloa · Mazatlán y El Rosario · PUB. 18-OCT, HORA NO FIJADA | 5 detenidos por el secuestro y homicidio de 10 mineros | 🟢 Verde | SIN BOLETÍN | Proceso · Infobae · Político.mx | ★★★☆☆ | ARG-137-018
-  Sonora · Hermosillo (col. Villa de Seris) · PUB. 18-OCT, HORA NO FIJADA | 2 detenidos con 1 pistola | 🟢 Verde | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-137-019
+  Sonora · Hermosillo (col. Villa de Seris) · PUB. 18-OCT, HORA NO FIJADA | 2 detenidos con 1 pistola | 🟢 Verde | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-137-018
   Guanajuato · Celaya (col. Gobernadores) · VENTANA ARGOS 135 SI FUE ANTES DE LAS 09:28 DEL 17 (HORA SOLO POR RESUMEN); SI NO, ARGOS 136 | Agente de Tránsito asesinada; 1 conductor herido | 🔴 Rojo (en su ventana) | Gobierno municipal de Celaya (por titular) | La Silla Rota · Milenio | ★★★☆☆ | ARG-137-REC-001
+  Sinaloa · Mazatlán y El Rosario · VENTANA ARGOS 135 (16-OCT) Y 136 (17-OCT) — FECHAS SOLO POR RESUMEN; 18-OCT EN OTRO RESUMEN | 5 detenidos por el secuestro y homicidio de 10 mineros | 🟢 Verde (en su ventana) | SIN BOLETÍN | Proceso · Infobae · Político.mx | ★★★☆☆ | ARG-137-REC-002
 
 ## TOTALES DEL CORTE — CÁLCULO PROPIO DE ARGOS
 
 NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
 
   Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Armas cortas | Armas largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos en aseguramiento | Entidades
-  19 | 6 | 10 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 12
+  18 | 6 | 10 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 12
 
 Armamento: SIN TOTAL NACIONAL VERIFICABLE DURANTE EL CORTE · tres filas fuera del total
-(ARG-137-ARM-001 a -003). Muertos en hechos propios: 16 —Copanatoyac 2, Tlajomulco 2,
-Coatzacoalcos 2, Mazatlán 2, Tulancingo 1, Monterrey 1, Culiacán 1, Escuinapa 1, Tijuana 1,
-Zapopan 1, Acapulco 1 y San Juan Nuevo 1—; 7 de ellos con el día solo por resumen · abatidos: 2
-(ARG-137-007) · restos humanos: 1 torso y restos en tres municipios, por titular de El Universal
-(ARG-137-005). Heridos: 8, todos con el día solo por resumen —por titular: Copanatoyac 2 y
-Tlajomulco 1; solo por resumen: Salamanca 3 y Apatzingán 2—. Detenidos sin aseguramiento: 6
-—ARG-137-017, 1 (contradicho); ARG-137-018, 5 (capturas del 16 al 18-oct, solo por resumen)—; no
-incluye los 2 de ARG-137-019 (fuera del total). Cálculo propio.
+(ARG-137-ARM-001 a -003), con 5 detenidos que no se suman a ningún total (1, 2 y 2). Muertos en
+hechos propios: 16 —Copanatoyac 2, Tlajomulco 2, Coatzacoalcos 2, Mazatlán 2, Tulancingo 1,
+Monterrey 1, Culiacán 1, Escuinapa 1, Tijuana 1, Zapopan 1, Acapulco 1 y San Juan Nuevo 1—; 7 de
+ellos con el día solo por resumen · abatidos: 2 (ARG-137-007) · restos humanos: 1 torso y restos
+en tres municipios, por titular de El Universal (ARG-137-005). Heridos: 8, todos con el día solo
+por resumen —por titular: Copanatoyac 2 y Tlajomulco 1; solo por resumen: Salamanca 3 y
+Apatzingán 2—. Detenidos sin aseguramiento: 1 —ARG-137-017, contradicho—; los 5 de
+ARG-137-REC-002 no se recuentan. Cálculo propio.
 Seguimientos de ediciones previas, fuera del semáforo: ARG-136-006, audiencia estatal el domingo
 18: proceso en libertad y vinculación el jueves 22, por titular (La Razón 2026/10/18); la FGR lo
 detuvo con una orden federal por traición a la patria y lo trasladó al Altiplano, por titulares
@@ -159,7 +159,7 @@ con este hecho no verificada; «Asesinan a tres personas en Hacienda Santa Fe» 
 2020. Llegada de la herida contradicha (vehículo de plataforma o por sus medios), solo por
 resumen.
 
-### VERACRUZ · COATZACOALCOS — MATAN A BALAZOS A UN HOMBRE Y A UNA MUJER EN UNA CUARTERÍA DE SANTA ISABEL [ROJO]
+### VERACRUZ · COATZACOALCOS — DOS MUERTOS, UN HOMBRE Y UNA MUJER, EN UNA CUARTERÍA DE SANTA ISABEL: MÓVIL NO CONFIRMADO [ROJO]
 
 ── HECHO
 
@@ -294,7 +294,7 @@ Jornada (2026/10/19) · Publimetro (2026/10/19) · Hecho: 2026-10-18 · Hora: no
 armamento asegurado: no publicado
 Deslindes y reservas: Los Mezcales figuran en el índice por ARG-104-005 y ARG-105-003
 (detenciones de agosto): otros hechos. Vínculos con homicidios atribuidos por medios, no por
-autoridad. NO es ARG-134-003 (Coquimatlán, 15-oct). Armamento asegurado: no publicado
+autoridad. NO es ARG-134-003 (Coquimatlán, 15-oct).
 
 ### NUEVO LEÓN · MONTERREY — ASESINAN A BALAZOS A UN HOMBRE EN NOGALES DE LA SIERRA [AMARILLO]
 
@@ -362,8 +362,8 @@ y en el índice por ARG-110-002, ARG-111-002 y ARG-119-008.
 Tijuana · COL. GENARO VÁZQUEZ, POR TITULAR; CALLE JAZMÍN ESQUINA GERANIO, SOLO POR RESUMEN ·
 LUNES 19-OCT, por ruta (Opinia) · ~02:38, SOLO POR RESUMEN · 1 adolescente de 17 años muerto a
 balazos, por titulares (🟡) · tres hombres tocan a la puerta y uno dispara, por titular de Blanco
-y Negro y SOLO POR RESUMEN · 1 detenido, por titular de un medio; Opinia (2026/10/19) no informa
-detenidos: CONTRADICHO · identidad: no se reproduce · FRONTERA DE VENTANA — HORA NO FIJADA
+y Negro y SOLO POR RESUMEN · detención: ARG-137-017 · identidad: no se reproduce · FRONTERA DE
+VENTANA — HORA NO FIJADA
 
 ── TRAZABILIDAD
 
@@ -422,7 +422,7 @@ Deslindes y reservas: Héroes de Guerrero no figura en las cinco ediciones previ
 índice. NO es ARG-136-002 ni ARG-136-003 (sábado 17); las notas de «cinco muertos y tres
 heridos» suman estos tres hechos.
 
-### MICHOACÁN · SAN JUAN NUEVO — ASESINAN A BALAZOS A UN CAMIONERO EN LA COCHERA DE SU CASA [AMARILLO]
+### MICHOACÁN · SAN JUAN NUEVO — ASESINAN A BALAZOS A UN CAMIONERO EN SAN JUAN NUEVO [AMARILLO]
 
 ── HECHO
 
@@ -457,7 +457,7 @@ Abierta 0 · con fecha en la ruta: ninguna con fecha en la ruta · Hecho: 2026-1
 RESUMEN · Hora: ~21:00 (solo por resumen) · Consulta: 2026-10-19 11:05-16:55 · Estatus:
 Pendiente de corroboración · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Los Hernández no figura en las cinco ediciones previas ni en el índice. NO
-es ARG-136-001 (col. Guanajuato, 17-oct).
+es ARG-136-001 (col. Guanajuato, 17-oct) ni ARG-133-002 (bulevar Valle de Santiago, 14-oct).
 
 ### MICHOACÁN · APATZINGÁN — BALEAN A UNA PAREJA DENTRO DE UNA VIVIENDA DE LA COLONIA BUENOS AIRES [AMARILLO]
 
@@ -487,7 +487,7 @@ previas ni en el índice. NO es ARG-135-003 (El Varillero y Las Cahuingas).
 
 ## CRIMEN ORGANIZADO (V) — ACCIONES INSTITUCIONALES
 
-### BAJA CALIFORNIA · TIJUANA — HAY UN DETENIDO TRAS EL HOMICIDIO DEL ADOLESCENTE DE GENARO VÁZQUEZ [VERDE]
+### BAJA CALIFORNIA · TIJUANA — SEGÚN UN MEDIO, HAY UN DETENIDO TRAS EL HOMICIDIO DEL ADOLESCENTE DE GENARO VÁZQUEZ [VERDE]
 
 ── HECHO
 
@@ -500,36 +500,11 @@ RESUMEN · acusación, no condena · FRONTERA DE VENTANA — HORA NO FIJADA
 
 ARG-137-017 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: detención sostenida
 por un titular; corporación no publicada · Fuentes: Institucional 0 · Nacional 0 · Regional 1 ·
-Abierta 0 · con fecha en la ruta: ninguna con fecha en la ruta · Hecho: no fijada (homicidio:
-2026-10-19; titular sin fecha en la ruta) · Hora: no fijada · Consulta: 2026-10-19 11:05-16:55 ·
-Estatus: Pendiente de corroboración · Conteo de armamento: sin fila — armamento asegurado: no
-publicado
-Deslindes y reservas: Delito: ARG-137-011. Armamento asegurado: no publicado
-
-### SINALOA · MAZATLÁN Y EL ROSARIO — DETIENEN A «EL TALIBÁN» Y A CUATRO PRESUNTOS INTEGRANTES DE LOS CHAPITOS POR EL CASO DE LOS 10 MINEROS [VERDE]
-
-── HECHO
-
-publicado el DOMINGO 18-OCT, por ruta (Proceso) · 5 detenidos —«El Talibán» y cuatro presuntos
-integrantes de Los Chapitos—, por titular (🟢) · por secuestro y homicidio de 10 mineros, por
-titular · cuatro detenidos en El Rosario el 16-oct y «El Talibán» en Mazatlán el 17-oct, SOLO
-POR RESUMEN; el 18-oct en otro resumen: CONTRADICHO; si las capturas fueron del 16 al 18: EVENTO
-ANTERIOR PUBLICADO DURANTE EL CORTE · Gabinete de Seguridad y Defensa informan; a disposición de
-la FGR, SOLO POR RESUMEN · armamento asegurado: no publicado · acusación, no condena ·
-identidades: no se reproducen · PUBLICADO EL DÍA DE APERTURA SIN HORA: PUEDE SER ANTERIOR A LAS
-08:34 DEL 18
-
-── TRAZABILIDAD
-
-ARG-137-018 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: fecha de cada
-detención solo por resumen; sin comunicado oficial localizado · Fuentes: Institucional 0 ·
-Nacional 3 · Regional 0 · Abierta 0 · con fecha en la ruta: Proceso (2026/10/18) · Infobae
-(2026/10/19) · Político.mx (2026/10/19) · Hecho: 16 a 18-oct, contradicho, solo por resumen;
-publicado el 2026-10-18 · Hora: no fijada · Consulta: 2026-10-19 11:05-16:55 · Estatus:
-Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
-Deslindes y reservas: «El Talibán» y los 10 mineros de La Concordia no figuran en las cinco
-ediciones previas. Puede figurar en el agregado del Gabinete del 16 al 18-oct: no verificado.
-Armamento asegurado: no publicado
+Abierta 0 · con fecha en la ruta: ninguna con fecha en la ruta · Hecho: 19-oct, posterior al
+homicidio de ~02:38 (ARG-137-011, hora solo por resumen); hora no fijada · Hora: no fijada ·
+Consulta: 2026-10-19 11:05-16:55 · Estatus: Pendiente de corroboración · Conteo de armamento:
+sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Delito: ARG-137-011.
 
 ### SONORA · HERMOSILLO — DETIENEN A DOS «OBJETIVOS PRIORITARIOS» CON UNA PISTOLA 9 MM [VERDE]
 
@@ -543,20 +518,19 @@ SIN HORA: PUEDE SER ANTERIOR A LAS 08:34 DEL 18
 
 ── TRAZABILIDAD
 
-ARG-137-019 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: una sola fuente; hora
+ARG-137-018 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: una sola fuente; hora
 solo por resumen · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con fecha en
 la ruta: El Imparcial (2026/10/18) · Hecho: 2026-10-18, hora no fijada · Hora: ~01:30 (solo por
 resumen) · Consulta: 2026-10-19 11:05-16:55 · Estatus: Pendiente de corroboración · Conteo de
 armamento: ARG-137-ARM-003
-Deslindes y reservas: NO es ARG-134-012 (col. Villas del Seris, 15-oct). No publicado por ARGOS
-136.
+Deslindes y reservas: Villas del Seris figura en ARG-134-012 (joven muerto, 15-oct): otro hecho.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-19 · Hora: 11:05 (CDMX) · Corte: Matutino · ARGOS N.° 137 · USO INSTITUCIONAL
 
 ============================================================================
 
-## CRIMEN ORGANIZADO (VI) — RECUPERACIÓN: VENTANA DE ARGOS 135
+## CRIMEN ORGANIZADO (VI) — VENTANAS ANTERIORES: ARGOS 135 Y 136
 
 ### GUANAJUATO · CELAYA — ASESINAN A BALAZOS A UNA AGENTE DE TRÁNSITO; UN CONDUCTOR HERIDO [RECUPERACIÓN]
 
@@ -585,6 +559,32 @@ ARGOS 136 — fuera de todos los totales
 Deslindes y reservas: La colonia Gobernadores y la víctima no figuran en las cinco ediciones
 previas ni en el índice; Celaya figura en ARG-136-001 solo como nombre de una calle de
 Salamanca.
+
+### SINALOA · MAZATLÁN Y EL ROSARIO — DETIENEN A «EL TALIBÁN» Y A CUATRO PRESUNTOS INTEGRANTES DE LOS CHAPITOS POR EL CASO DE LOS 10 MINEROS [RECUPERACIÓN]
+
+── HECHO
+
+EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE — VENTANAS DE ORIGEN: ARGOS 135 Y 136, FECHAS SOLO
+POR RESUMEN · publicado el DOMINGO 18-OCT, por ruta (Proceso) · 5 detenidos —«El Talibán» y
+cuatro presuntos integrantes de Los Chapitos—, por titular (🟢) · por secuestro y homicidio de 10
+mineros, por titular · cuatro detenidos en El Rosario el 16-oct y «El Talibán» en Mazatlán el
+17-oct, SOLO POR RESUMEN; el 18-oct en otro resumen: CONTRADICHO · Gabinete de Seguridad y
+Defensa informan; a disposición de la FGR, SOLO POR RESUMEN · armamento asegurado: no publicado
+· acusación, no condena · identidades: no se reproducen
+
+── TRAZABILIDAD
+
+ARG-137-REC-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: fecha de cada
+detención solo por resumen; sin comunicado oficial localizado · Fuentes: Institucional 0 ·
+Nacional 3 · Regional 0 · Abierta 0 · con fecha en la ruta: Proceso (2026/10/18) · Infobae
+(2026/10/19) · Político.mx (2026/10/19) · Hecho: 2026-10-17 · Hora: no fijada (16 a 18-oct, solo
+por resumen) · Consulta: 2026-10-19 11:05-16:55 · Estatus: Parcialmente corroborado · Ventana de
+origen: ARGOS 135 (16-OCT) Y 136 (17-OCT) — FECHAS SOLO POR RESUMEN; 18-OCT EN OTRO RESUMEN —
+fuera de todos los totales
+Deslindes y reservas: «El Talibán» y los 10 mineros no figuran en el índice. El Rosario figura
+en ARG-120-010, ARG-125-010 y ARG-126-005, y Concordia en ARG-126-004: otros hechos. NO es
+ARG-122-007 (ocho mineros, Sierra Pinta, Sonora). Fecha del secuestro y de los homicidios: no
+publicada.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-19 · Hora: 11:05 (CDMX) · Corte: Matutino · ARGOS N.° 137 · USO INSTITUCIONAL
@@ -623,8 +623,8 @@ Total nacional del corte: en la página de panorama.
 ## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
 
   ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
-  ARG-137-ARM-001 | Nayarit | Tecuala (San Felipe Aztatán y El Arrayán) | 16 a 18-oct, no fijada | 0 | 1 | 0 | 0 | n/d | n/d | 1 | 0 | 0 | 1 | no publicada en el titular; Gabinete de Seguridad, solo por resumen del agregado | Bajo · EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE — FUERA DEL TOTAL · por titular (NTV 2026/10/19): ametralladora, granada, «más de 11 mil cartuchos»: CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO y 1 detenido · 2 armas largas, 54 cargadores y 10,775 cartuchos en el boletín, solo por resumen · Tecuala figura en ARG-133-REC-007 (fosa de La Presa): otro hecho
-  ARG-137-ARM-002 | Veracruz | Lerdo de Tejada (col. José María Martínez Ruiz) | 16 a 18-oct, no fijada | n/d | n/d | 0 | 0 | n/d | n/d | 0 | 0 | 0 | 2 | Marina, Fiscalía y Policía Estatal (solo por resumen) | Bajo · EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE — FUERA DEL TOTAL · 2 detenidos y «armas aseguradas», por titular (La Nigua) · 2 largas, 1 corta, 3 cargadores y 21 cartuchos, solo por resumen · POSIBLE DUPLICIDAD con el agregado semanal de cateos de la FGE Veracruz
+  ARG-137-ARM-001 | Nayarit | Tecuala (San Felipe Aztatán y El Arrayán) | 16 a 18-oct, no fijada | 0 | 1 | 0 | 0 | n/d | n/d | 1 | 0 | 0 | 1 | no publicada en el titular; Gabinete de Seguridad, solo por resumen del agregado | Bajo · EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE — FUERA DEL TOTAL · por titular (NTV 2026/10/19): ametralladora, granada, «más de 11 mil cartuchos»: CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO y 1 detenido · 2 armas largas, 54 cargadores y 10,775 cartuchos en el boletín, solo por resumen · San Felipe Aztatán y El Arrayán no figuran; Tecuala figura en ARG-133-REC-007 (fosa de La Presa): otro hecho · republicadores no independientes
+  ARG-137-ARM-002 | Veracruz | Lerdo de Tejada (col. José María Martínez Ruiz) | 16 a 18-oct, no fijada | n/d | n/d | 0 | 0 | n/d | n/d | 0 | 0 | 0 | 2 | Marina, Fiscalía y Policía Estatal (solo por resumen) | Bajo · EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE — FUERA DEL TOTAL · 2 detenidos y «armas aseguradas», por titular (La Nigua) · 2 largas, 1 corta, 3 cargadores y 21 cartuchos, solo por resumen · POSIBLE DUPLICIDAD con el agregado semanal de cateos de Veracruz · «Sebastián Lerdo de Tejada» es una calle de Cd. Obregón (ARG-119-007): otro hecho
   ARG-137-ARM-003 | Sonora | Hermosillo (col. Villa de Seris) | publicado el 18-oct, hora no fijada | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | Policía Preventiva (solo por resumen) | No confirmado · FUERA DEL TOTAL: una sola fuente (El Imparcial 2026/10/18, por titular)
 
 Lectura regional: sin lectura (ninguna fila integrada). Filas atenuadas: FUERA DEL TOTAL.
@@ -666,11 +666,10 @@ Fe de erratas: ARG-135-ARM-001, «417 cartuchos» retirada — sin fragmento cit
 
 Vistas, publicadas antes de la apertura: Tamaulipas, Tribunal de Enjuiciamiento, sentencia por
 desaparición cometida por particulares, comunicado FGJE-370-2026 (ruta sin fecha; seis
-sentenciados y ~6-oct, solo por resumen) · Querétaro, tres sentencias del 5, 6 y 8-oct
-(fiscaliageneralqro.gob.mx, fecha en la ruta; penas solo por resumen) · Nayarit, 40 años por
-violación equiparada (8-oct, solo por resumen) · FGR Campeche, dos sentenciados por portación de
-arma (7-oct, solo por resumen) · Hidalgo, Tulantepec: individualización de la pena el miércoles
-21-oct, solo por resumen.
+sentenciados y ~6-oct, solo por resumen) · Nayarit, 40 años por violación equiparada (8-oct,
+solo por resumen) · FGR Campeche, dos sentenciados por portación de arma (7-oct, solo por
+resumen) · Hidalgo, Tulantepec (tres culpables, fallo del 8-9 oct): individualización de la pena
+el miércoles 21-oct, solo por resumen.
 
 ## INDICADOR DE COBERTURA
 
@@ -682,7 +681,7 @@ arma (7-oct, solo por resumen) · Hidalgo, Tulantepec: individualización de la 
   NO REVISADA — sentencias | 9: Son, Sin · Zac · Gto · Mor, Hgo · Gro, Camp, Yuc
   Páginas no disponibles · errores de acceso | Fuentes con error de acceso: bloqueo de egreso: curl a gob.mx/fgr devolvió 000 a las 11:05 del 19-oct; 0 errores en los demás dominios consultados · dominios no devueltos por el buscador, dentro de las 9 NO REVISADA: Sin, Mor, Hgo, Gto, Camp
   Alto impacto y armamento | Alto impacto: 22 de 32 con consulta propia por entidad · 8 solo por consulta regional amplia: BCS, Dgo · Coah · Edomex, Tlax, Qro · Chis, Oax · NO REVISADA: Camp, Yuc · armamento: 9 de 32 por dominio propio de seguridad —Sin · SLP, Zac · Nay, Mich, Gto · Camp, Yuc, QRoo—, de ellas 4 de lectura parcial (Nay, solo organigrama; Gto, una página; QRoo, solo informes; Yuc, sin fecha clara); 5 por portal del gobierno estatal —Coah, Tamps, Ver, Tab, Oax—; NO REVISADA (18): BC, BCS, Son, Chih, Dgo · NL · Jal, Col, Ags · CDMX, Edomex, Mor, Pue, Tlax, Hgo, Qro · Gro, Chis
-  Boletín federal | Acciones del 16, 17 y 18-oct: agregado de tres días, solo por republicadores (consulta por título, sin site:); por día suelto y por rango en el dominio: SIN RESULTADO INDEXADO EN VENTANA · acciones del 19-oct: SIN RESULTADO INDEXADO EN VENTANA · Guardia Nacional y FGR: SRIV (con site:) · Defensa y Marina: SRIV (consulta sin site:) · gabinetedeseguridad.gob.mx: SRIV (indexado hasta marzo de 2026)
+  Boletín federal | Acciones del 16, 17 y 18-oct: agregado de tres días, solo por republicadores (consulta por título, sin site:); por día suelto y por rango en el dominio: SIN RESULTADO INDEXADO EN VENTANA · acciones del 19-oct: SIN RESULTADO INDEXADO EN VENTANA · Guardia Nacional y FGR: SRIV (con site:) · Defensa y Marina: SRIV (consulta sin site:); búsqueda federal del equipo Golfo; Noroeste y Occidente: NO REALIZADA · gabinetedeseguridad.gob.mx: SRIV (indexado hasta marzo de 2026)
   Techo de confianza del producto | ★★★★☆ (techo de política) · esta edición no supera ★★★☆☆: sin lectura directa de documento oficial · BLOQUEO DE EGRESO REVERIFICADO EL 19-OCT: GOB.MX
 
 ----------------------------------------------------------------------------
@@ -697,9 +696,9 @@ arma (7-oct, solo por resumen) · Hidalgo, Tulantepec: individualización de la 
 1. NIVEL FIJADO POR SEIS ROJOS: ARG-137-001 a ARG-137-006 · reserva en ARG-137-001, ARG-137-002
 y ARG-137-005.
 2. Contexto operativo: ARG-137-007 a ARG-137-016.
-3. Respuesta institucional propia: ARG-137-017 a ARG-137-019.
-4. Recuperación: ARG-137-REC-001.
-5. 26 H 31 MIN; DOCE DE DIECINUEVE CON MARCA DE FRONTERA (5 DE CIERRE, 7 DE APERTURA) Y OTROS
+3. Respuesta institucional propia: ARG-137-017 y ARG-137-018.
+4. Ventanas anteriores: ARG-137-REC-001 y ARG-137-REC-002.
+5. 26 H 31 MIN; ONCE DE DIECIOCHO CON MARCA DE FRONTERA (5 DE CIERRE, 6 DE APERTURA) Y OTROS
 SEIS SIN RUTA CON FECHA: TOTALES NO COMPARABLES SIN MÁS.
 
 ── CONCLUSIONES DE INTELIGENCIA CRIMINAL
@@ -711,13 +710,13 @@ Culiacán, Mazatlán y Escuinapa — hipótesis; vínculo no acreditado.
 2. ACAPULCO, TERCER HECHO CON MUERTOS EN DOS DÍAS (cálculo propio; días solo por resumen).
 ARG-137-013 se suma a ARG-136-002 y ARG-136-003. Línea: solicitar a la FGE Guerrero si las tres
 carpetas comparten indicios — vínculo no acreditado.
-3. COLIMA, LOS MEZCALES: DOS OPERADORES ABATIDOS TRAS DOS DETENCIONES DE AGOSTO (UN PRESUNTO
-SICARIO Y UN SEGUNDO AL MANDO) (cálculo propio). ARG-137-007 se suma a ARG-104-005 y
-ARG-105-003; atribución de operadores por medios. Línea: solicitar a la Mesa de Seguridad de
-Colima el armamento asegurado y los peritajes.
-4. SALAMANCA, SEGUNDO ATAQUE ARMADO EN DOS EDICIONES (cálculo propio; día de ARG-137-015 solo
-por resumen). ARG-137-015 se suma a ARG-136-001. Línea: solicitar a la FGE Guanajuato el cotejo
-de casquillos — hipótesis.
+3. COLIMA, LOS MEZCALES: DOS PRESUNTOS OPERADORES (ATRIBUCIÓN DE MEDIOS) ABATIDOS TRAS DOS
+DETENCIONES DE AGOSTO (UN PRESUNTO SICARIO Y UN SEGUNDO AL MANDO) (cálculo propio). ARG-137-007
+se suma a ARG-104-005 y ARG-105-003; atribución de operadores por medios. Línea: solicitar a la
+Mesa de Seguridad de Colima el armamento asegurado y los peritajes.
+4. SALAMANCA, TERCER ATAQUE ARMADO EN CINCO DÍAS (14, 17 Y 18-OCT) (cálculo propio; día de
+ARG-137-015 solo por resumen). ARG-137-015 se suma a ARG-133-002 y ARG-136-001. Línea: solicitar
+a la FGE Guanajuato el cotejo de casquillos entre los tres ataques — hipótesis.
 5. APATZINGÁN, CUARTO HECHO VIOLENTO ENTRE EL 13 Y EL 18-OCT (cálculo propio; día de ARG-137-016
 solo por resumen). ARG-137-016 se suma a ARG-135-003, ARG-135-004 y ARG-134-REC-003. Línea:
 solicitar a la Fiscalía Regional de Apatzingán el cotejo de indicios — hipótesis.
