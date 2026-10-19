@@ -416,8 +416,14 @@ def tabla_a_ficha(p, con_tarjetas):
             return ('<p class="muted-note"><b>Índice por entidad: solo en la versión de '
                     'cartelón.</b> Cada hecho está en su ficha, más abajo.</p>')
         if es_arm_evento:
+            # ARGOS 137: una fila sin ficha propia (evento anterior publicado durante el
+            # corte) no tiene dónde leerse en el teléfono; se emite como tarjeta.
+            sin_ficha = [f for f in filas if "<a " not in (re.findall(r"<td[^>]*>(.*?)</td>", f, re.S) or [""])[0]]
+            extra = "".join(_celdas_a_tarjeta(f, cabeceras) for f in sin_ficha)
             return ('<p class="muted-note"><b>Desglose por evento: solo en la versión de '
-                    'cartelón.</b> El armamento de cada hecho está en su ficha.</p>')
+                    'cartelón.</b> El armamento de cada hecho está en su ficha'
+                    + (', salvo las filas sin ficha propia, que siguen.</p><div class="tabla-tarjetas">'
+                       + extra + '</div>' if extra else '.</p>'))
         tarjetas = "".join(_celdas_a_tarjeta(f, cabeceras) for f in filas)
         if not tarjetas:
             return '<div class="tabla-scroll">' + interior + "</div>"
