@@ -8,19 +8,19 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 138 (corte 2026-10-20).
+**Última actualización**: ARGOS 139 (corte 2026-10-20, segundo del día; archivos `argos-2026-10-20b.*`).
 
 ---
 
 ## Arranque de la edición siguiente
 
-**`reports/_arranque-ARGOS-139.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-139.txt`) contiene la orden de arranque para una sesión nueva: verificación
+**`reports/_arranque-ARGOS-140.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-140.txt`) contiene la orden de arranque para una sesión nueva: verificación
 de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y comandos de construcción.
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
 
-**ARGOS 139 aplazado al 21-oct** (decisión del destinatario, 20-oct 07:49 CDMX: la ventana habría sido de 43 min). **Río Bravo**, diputada
-federal agredida el sábado 17 (ventana de 136): **color fijado 🔴, ficha `-REC-`**, fuente única con marca; ya no es «visto».
+**ARGOS 139 se produjo el mismo 20-oct** (el destinatario revocó el aplazamiento a las 07:58): ventana 07:06 → 07:49 (43 min), 0 hechos
+propios, `ARG-139-REC-001` (Río Bravo). La orden de arranque vigente es **`reports/_arranque-ARGOS-140.md`** (y `_ordenes-ARGOS-140.txt`).
 
 ## Instrucción editorial permanente — la forma del cartelón
 
@@ -2309,3 +2309,55 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 5. **Recuentos I/N/R/A**: la lista de emisores por tipo debe quedar en el archivo de fuentes **antes** de los controles; MVS se cuenta Nacional.
 6. **Presupuesto**: 2 + 158 + 8 + 30 = **198**; segunda ronda sin búsquedas.
 7. **Dominios sin devolver**: `fiscaliasinaloa.gob.mx` (undécima), `sspguerrero.gob.mx`, `ssp.nl.gob.mx`, `ssp.morelos.gob.mx`, `ces.morelos.gob.mx`, `sspc.tlaxcala.gob.mx`, `ssp.hidalgo.gob.mx`, `ssc.queretaro.gob.mx`, `seguridad.jalisco.gob.mx`, `fgecam.gob.mx`, `gabinetedeseguridad.gob.mx`.
+
+## Cerrados por ARGOS 139
+
+| Pendiente | Disposición |
+|---|---|
+| **Color de Río Bravo** | **🔴 por decisión del destinatario (20-oct 07:58)** → `ARG-139-REC-001`. **Día corregido: sábado 10-oct** (no el 17, que es la denuncia), ventana de **ARGOS 129** → `ARG-139-FE-001` (129: +1 rojo, +1 herida) y `ARG-139-FE-002` (sobre 138) |
+| **Ecatepec, col. Luis Donaldo Colosio** | **No se ficha**: fuente única agregada que recicla hechos del 13-oct; titular de La Prensa con antigüedad de ~32 días por metadato → posible hecho de septiembre. Visto sin fijar; se reabre solo con nota propia fechada o comunicado de la FGJEM |
+| **«El Charro»** | Guerrero (FGE, Iguala; desaparición de un menor en Taxco), **no es `ARG-136-008`** |
+| **Narcomanta de Chihuahua** | Es de Ciudad Juárez: 4 narcomenudistas del domingo 18 (🟢, ventana de 137) |
+| **Puerto Morelos** | Cateo de la FGR en la vivienda que renta la alcaldesa (madrugada del 19, 🟢 de 138); la alcaldesa no fue detenida |
+| **Laureles Pinos** | Buscado: sin hecho de octubre de 2026 |
+| **Palmanova** | Lunes 19, 18:00-18:45, 🟡 de 138: visto |
+| **Tlalnepantla** | Dos homónimos: Edomex (2 cuerpos emplayados, 15-oct) y Morelos (5 cuerpos, 1-oct) |
+| **Cotija (Atiempo)** | Es Lourdes, del agregado federal del 16-18 oct: ya vista en 138 |
+| **Dolores Hidalgo** | No fechable: descartado |
+| **Ensenada** | «158 años 9 meses **a cada uno**» confirmado (135 + 10 años 9 meses + 13 años por sentenciado): ARGOS 135 y 136 estaban bien; sin fe de erratas |
+| **Tulantepec** | Fallo condenatorio del **9-oct**; la audiencia del 21-oct es de individualización de la pena |
+| **Controles** | Ronda 1: procedencia y duplicidad «CORREGIR», todo aplicado salvo bajar REC-001 a ★★☆; ronda 2: ver `argos-2026-10-20b-fuentes.md` §10 |
+
+## Abiertos que ARGOS 140 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️ **Tulantepec, miércoles 21-oct** | Pena impuesta y reparación del daño (individualización); boletín de la PGJ Hidalgo. Es sentencia integrable si la pena se publica en la ventana |
+| ⚠️ **Exfiscal (`ARG-136-006`)** | Vinculación estatal **jueves 22-oct** (10:00 solo por resumen; La Parada Digital: «pausan audiencia por albazo ministerial», la fecha puede moverse); medida cautelar federal; comunicado de la FGR |
+| **Río Bravo (`ARG-139-REC-001`)** | Fragmento literal con el día (Animal Político, «noche del 10 de octubre», sin URL); carpeta FGR; detenidos |
+| **Juchitán** (`ARG-138-001`) | Ruta con fecha; heridos (2 o 3); edad del menor (2 o 3); comunicado de la FGEO |
+| **Cárdenas** (`ARG-138-002`) | Día (19 o 20); identificación genética; ¿los dos jóvenes desaparecidos? |
+| **Navolato** (`-007`) | Parte de la Defensa: quién inició; armamento con cifra |
+| **Mazatlán, plaza de La Marina** (`-006`) | Día contradicho (lunes / «este martes»); homicidio en estacionamiento de plaza de La Marina publicado por Noroeste (¿11-oct?): **posible duplicidad o antecedente** |
+| **Cadereyta** (`-011`) | Desglose con cifra; 2 o 4 operativos; comunicado de Fuerza Civil |
+| **Ciudad Juárez** (`-009/-010`) | Salud de la víctima; situación jurídica de los 3 |
+| **Monterrey** (`-008`) | Hora con fragmento literal |
+| **Pénjamo** (`-013`) | Segunda fuente |
+| **Cuautla, checador de la Ruta 8** (domingo 18) | 🔴 solo si una autoridad lo vincula al ataque coordinado; Reforma / El Diario de Juárez 2026/oct/19 |
+| **Sonoyta–Puerto Peñasco** | Restos «posiblemente humanos» del 18-oct (El Imparcial 2026/10/19): confirmación de la Fiscalía de Sonora → `-REC-` 🔴 si se confirman humanos |
+| **Chietla** | «Otro ataque» (mujer de 45 años): buscar el primero |
+| **Sentencias candidatas** | Culiacán 18 años (desde 138) · General Cepeda, FGR, más de 13 años · Caborca, FGR, 8 años · Ensenada (desde 135): boletines |
+| **Heredados sin avance** | Nogales y Cachanillas (cifra oficial) · Ajuchitlán · Tepic (vinculación, causa 2679/2026) · Apatzingán · El Tívoli · Coquimatlán · Linares · Patamban (¿persona defensora?: decisión del destinatario; la FGE solo «no descarta») · `ARG-137-007` (la Mesa de Colima atribuye la agresión a los abatidos: ¿🔴? decisión) · `ARG-137-012` (¿anterior a la apertura de 137?) · Taxco, 4 servidores públicos detenidos por desaparición forzada (La Razón 2026/10/19) |
+| **Boletín federal del 19, 20 y 21-oct** | Triple consulta |
+| **Cobertura con prioridad sobre el ciclo en 140** | **Sentencias `NO REVISADA` (14)**: Sin, Son, Dgo · Coah, NL, SLP, Zac · Gto · Mor, Tlax, Hgo · Chis, Camp, Yuc. **Armamento `NO REVISADA` (19)**: BC, BCS, Son, Dgo · NL · Jal, Nay, Ags, Col, Gto · CDMX, Edomex, Mor, Pue, Tlax, Hgo, Qro · Gro, Chis. **Alto impacto solo regional amplia (11)**: BCS, Dgo, Coah, SLP, Zac, CDMX, Pue, Tlax, Qro, Camp, Yuc. Después, **CICLO A** (Noroeste + Centro: 140 = A según la tabla) |
+
+## Deuda de método (ARGOS 139)
+
+1. **Dos cortes el mismo día**: ARGOS 139 se produjo 43 min después del cierre de 138; ningún hecho del 20-oct había llegado al índice. Archivos con sufijo `b`; `tools/gen-movil.py` muestra la fecha sin sufijo. **Una ventana menor de unas 12 h no tiene materia propia.**
+2. **Día de la denuncia ≠ día del hecho**: Río Bravo pasó una edición mal fechado. Ante «el sábado» en un resumen, fijar cuál.
+3. **Agregados de medios** (El Independiente 2026/10/19) reciclan hechos de días anteriores: nunca fechan un hecho.
+4. **Marca «Consulta»** de 138 (07:06-09:30) incompatible con su commit (07:45): la marca se escribe con la hora real de la última búsqueda, no con una estimación.
+5. **Dominios**: `fiscaliaguerrero.gob.mx` confirmado; `fiscaliasinaloa.mx` responde sin boletines (`.gob.mx`, duodécima edición sin devolver); `ssp.chihuahua.gob.mx` no existe; sin dominio de fiscalía confirmado: Chis (`fiscaliachiapas.gob.mx`, `fiscalia.chiapas.gob.mx`), Camp (`fgecam.gob.mx`, `fgecampeche.gob.mx`), Yuc (`fiscalia.yucatan.gob.mx`); `ssp.tabasco.gob.mx`, `seguridad.jalisco.gob.mx`, `fiscalia.guanajuato.gob.mx`, `ssp.nl.gob.mx`: no devuelven.
+6. **`tools/validar.js`**: la regla de recuadros no contaba los que llevan `style`; corregida en 139 (la de 138 sigue validando).
+7. **Presupuesto**: 2 + 156 + 7 + 30 = **195**; segunda ronda sin búsquedas.
+

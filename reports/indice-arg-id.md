@@ -923,3 +923,6 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-138-REC-001` | 138 | 2026-10-17 | ARG-138-REC-001 — Cuajinicuilapa, Guerrero: aspirante de Morena asesinado, esposa herida; FGE Guerrero abre investigación, por titular; ventana de ARGOS 136; 🔴 en su ventana por decisión del destinatario; fuera de totales |
 | `ARG-138-ARM-001` | 138 | 2026-10-19 | ARG-138-ARM-001 — Cadereyta Jiménez, Nuevo León: 9 detenidos; armamento todo n/d (3 cortas solo por resumen) — fuera del total |
 | `ARG-138-FE-001` | 138 | 2026-10-20 | ARG-138-FE-001 — Cuajinicuilapa (ARG-138-REC-001): +1 rojo, +1 muerto y +1 herido a ARGOS 136 (4 rojos). NO PUBLICADA EN EL CARTELÓN |
+| `ARG-139-REC-001` | 139 | 2026-10-10 | ARG-139-REC-001 — Río Bravo, Tamaulipas: diputada federal del PVEM herida con arma blanca (15 cm, por titular); noche del sábado 10-oct, solo por resumen; denuncia pública desde el 17-oct; ventana de ARGOS 129; 🔴 en su ventana por decisión del destinatario; fuera de totales |
+| `ARG-139-FE-001` | 139 | 2026-10-20 | ARG-139-FE-001 — Río Bravo (ARG-139-REC-001): +1 rojo y +1 herida a ARGOS 129. NO PUBLICADA EN EL CARTELÓN |
+| `ARG-139-FE-002` | 139 | 2026-10-20 | ARG-139-FE-002 — ARGOS 138: Río Bravo fechado el sábado 17 (día de la denuncia) → 10-oct; marca «Consulta 07:06-09:30» incompatible con su último commit (07:45). NO PUBLICADA EN EL CARTELÓN |
