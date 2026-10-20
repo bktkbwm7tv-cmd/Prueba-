@@ -64,7 +64,7 @@ if(hechos!==traz) err.push('HECHO '+hechos+' != TRAZABILIDAD '+traz);
 const notas=(html.match(/<div class="nota"/g)||[]).length;
 if(notas!==hechos) err.push('notas '+notas+' != apartados HECHO '+hechos);
 if(/class="k">(CORROBORACI|EXPLOTACI)/.test(html)) err.push('existe Corroboracion o Explotacion ARGOS');
-const rec=(html.match(/<div class="alerta contexto">/g)||[]).length;
+const rec=(html.match(/<div class="alerta contexto"[^>]*>/g)||[]).length;
 if(rec>3) err.push('recuadros='+rec+' (max 3)');
 const sem=(html.match(/sem-item/g)||[]).length;
 const fe=(html.match(/ARG-\d+-FE-/g)||[]).length; if(fe) err.push('hay '+fe+' referencias -FE- en el cartelon');

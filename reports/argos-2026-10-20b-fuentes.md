@@ -1,7 +1,7 @@
 # ARGOS 139 — Archivo de fuentes
 
 **Corte**: 2026-10-20 (segundo corte del día; archivos `argos-2026-10-20b.*`) · **Ventana**: 20-oct 07:06 → 20-oct 07:49 CDMX (**43 min**; `WINDOW_DAYS = 2` sin cambio: el radar no tiene ecos propios) · **Densidad**: 0 hechos propios / 0,72 h = **0,00 hechos/hora**, cálculo propio.
-**Hora de cierre**: hora real del Bloque 0 de la sesión (07:49 CDMX). El destinatario ordenó primero aplazar ARGOS 139 al 21-oct y, a las 07:58, producirlo con datos de hoy. Consultas de 07:58 a 08:40 CDMX (marca «Consulta» del cartelón).
+**Hora de cierre**: hora real del Bloque 0 de la sesión (07:49 CDMX). El destinatario ordenó primero aplazar ARGOS 139 al 21-oct y, a las 07:58, producirlo con datos de hoy. Consultas de 07:58 a 08:20 CDMX (marca «Consulta» del cartelón; la última búsqueda, de `procedencia-cifras` R1, terminó antes de las 08:20; la segunda ronda no busca).
 
 Informes íntegros de los seis equipos, notas del coordinador y controles: `reports/argos-2026-10-20b-equipos.md`. Plantilla de los equipos: `tools/plantilla-equipos-139.md`.
 
@@ -56,7 +56,7 @@ Informes íntegros de los seis equipos, notas del coordinador y controles: `repo
 | Asunto | Decisión |
 |---|---|
 | **Hechos propios** | **Ninguno.** Las seis regiones buscaron por fecha de cierre al final del presupuesto: ninguna publicación del 20-oct que 138 no tuviera (solo seguimientos de `-007`, `-010`, `-011`, `ARG-136-006` y Puerto Morelos). El índice no había cargado la mañana del 20 |
-| **Río Bravo** | `ARG-139-REC-001`, ventana de origen ARGOS 129. Confianza ★★★☆☆: dos medios nacionales, sin fuente institucional; la fija el día, solo por resumen. Recuento de fuentes: Institucional 0 · Nacional 2 (Infobae, El Universal) · Regional 9 (El Diario de Chihuahua, Expreso, ABC Noticias, En Línea Directa, Hoy Tamaulipas, El Mercurio de Tamaulipas, Horacero, Noroeste, Vanguardia) · Abierta 0. Estrella Digital, El Congresista, Posta y Más Información: vistas, no contadas |
+| **Río Bravo** | `ARG-139-REC-001`, ventana de origen ARGOS 129. Confianza ★★★☆☆: dos medios nacionales, sin fuente institucional; la fija el día, solo por resumen. Recuento de fuentes: Institucional 0 · Nacional 2 (Infobae, El Universal) · Regional 11 (El Diario de Chihuahua, Expreso, ABC Noticias, En Línea Directa, CN Tamaulipas, Elefante Blanco, Hoy Tamaulipas, El Mercurio de Tamaulipas, Horacero, Noroeste, Vanguardia) · Abierta 0. Estrella Digital, El Congresista, Posta, La Verdad y Más Información: vistas, no contadas. «15 cm», por titular de El Universal; «FGR investiga», por titulares de Elefante Blanco 2026/10/19 (https://elefanteblanco.mx/2026/10/19/fgr-investiga-agresion-denunciada-por-casandra-de-los-santos/) y La Verdad; la Fiscalía de Tamaulipas «desconoce detalles», por titular de CN Tamaulipas 2026/10/19 (https://cntamaulipas.mx/2026/10/19/desconoce-fiscalia-detalles-sobre-agresion-a-diputada-federal-casandra-de-los-santos/), que no es confirmación institucional del hecho. ★★★☆☆ por la regla «dos medios sin fuente institucional» |
 | **Sonoyta–Puerto Peñasco** | Visto, no `-REC-`: restos «posiblemente humanos», fuente única, sin autoridad |
 | **Cuautla, checador de la Ruta 8** (domingo 18) | 🟡 de la ventana de 137 → visto. Sube a 🔴 solo si una autoridad lo vincula al ataque coordinado de Cuautla |
 | **San Juan Nuevo, camionero** (madrugada del 19) · **Chietla, mujer** («otro ataque»; el primero no se buscó) · **Coatzacoalcos, taxista** (19, ~06:00) · **Tanquián** (17) · **Taxco, 4 servidores públicos detenidos** (La Razón 2026/10/19) | Vistos de ventanas anteriores, 🟡 o 🟢 |
@@ -91,7 +91,12 @@ Casillas: todas las revisadas, `SIN RESULTADO INDEXADO EN VENTANA`; `SIN ACTUALI
 
 ## 10. Los dos controles editoriales
 
-(Se completa al cierre de las dos rondas.)
+| Ronda | Control | Resultado | Disposición |
+|---|---|---|---|
+| 1 | `procedencia-cifras` (30 búsquedas, `extended`) | **CORREGIR**: 1 de fondo (Ensenada) y 9 de redacción | Aplicados: 15 cm por titular; «FGR investiga» y «desconoce detalles» por titular; distrito 3 por resumen; Cadereyta 2 o 4 operativos; Colima «dispararon contra los elementos»; Tulantepec «triple feminicidio»; General Cepeda «más de 13 años»; Caborca sin FECOR; Industrial Bravo 420 = 385 + 25 + 10, sin contradicción; Conclusión de fosas con 7 + 1 y cifras de colectivo; audiencia del exfiscal «jueves» por titular y 22-oct por calendario |
+| 1 | `editor-duplicidad` | **CORREGIR**: 3 duplicados en vistos y candidatos, Valoración 5 falsa, marca de consulta, repetición entre secciones | Aplicados: Villa de Seris retirada (es `ARG-137-018`); Cotija e Industrial Bravo marcados «ya vista» (138 y 137), con `POSIBLE DUPLICIDAD CON ARG-135-ARM-001`; Culiacán «candidata desde 138» y Ensenada «desde 135»; Tulantepec en un solo lugar; Valoración 5 → «ningún hecho propio con ruta del 20-oct»; Consulta 07:58-08:20; deslinde de Río Bravo → `ARG-128-REC-003`; `ssp.chihuahua.gob.mx` «dominio inexistente»; conclusiones reescritas: fuera las que repetían el panorama o la edición 138 (enfrentamientos, plaza de La Marina, condenas arrastradas); dentro agresiones a actores políticos y Morelos oriente. Portada: `ARG-139-REC-001` pasa a conclusiones y la línea 1 es `ARG-138-006`. `tools/validar.js`: la regla de recuadros admite atributos (antes no contaba el que lleva `style`) |
+| 1 | Arbitraje Ensenada | Los controles discreparon: procedencia «por cada sentenciado», duplicidad «en conjunto» | **Por cada sentenciado**: 135 + 10 años 9 meses + 13 años = 158 años 9 meses es la suma de tres penas de un mismo sentenciado, coherente con «a cada uno» de dos resúmenes y con ARGOS 135 y 136. **No hay fe de erratas** sobre 135 y 136 |
+| 1 | No aplicado | Bajar `ARG-139-REC-001` a ★★☆☆☆ (duplicidad, sugerencia 14) | Se mantiene ★★★☆☆: cumple la regla de la escala (dos medios nacionales, sin institucional); el campo peor sostenido queda declarado |
 
 ## 11. Herramientas
 
