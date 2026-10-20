@@ -39,6 +39,8 @@ if len(sys.argv) != 6:
     sys.exit(__doc__)
 
 NUM, FECHA, NUM_ANT, FECHA_ANT, HORA = sys.argv[1:6]
+# FECHA puede llevar sufijo de archivo («2026-10-20b») cuando dos ediciones comparten corte; se muestra solo la fecha
+FECHA_TXT, FECHA_ANT_TXT = FECHA[:10], FECHA_ANT[:10]
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DESK = f"{RAIZ}/reports/argos-{FECHA}.html"
@@ -74,10 +76,10 @@ if MARCA not in base:
     sys.exit("La móvil anterior no tiene el marcador de la sección 1; revisa el shell a mano.")
 shell = base[: base.index(MARCA)]
 shell = (shell
-         .replace(f"ARGOS {NUM_ANT} — Reporte Nacional de Seguridad ({FECHA_ANT}) · Móvil",
-                  f"ARGOS {NUM} — Reporte Nacional de Seguridad ({FECHA}) · Móvil")
+         .replace(f"ARGOS {NUM_ANT} — Reporte Nacional de Seguridad ({FECHA_ANT_TXT}) · Móvil",
+                  f"ARGOS {NUM} — Reporte Nacional de Seguridad ({FECHA_TXT}) · Móvil")
          .replace(f'<span class="n">{NUM_ANT}</span>', f'<span class="n">{NUM}</span>')
-         .replace(f"<b>{FECHA_ANT}</b>", f"<b>{FECHA}</b>"))
+         .replace(f"<b>{FECHA_ANT_TXT}</b>", f"<b>{FECHA_TXT}</b>"))
 shell = re.sub(r"\d{2}:\d{2} \(CDMX\)", f"{HORA} (CDMX)", shell)
 
 # CSS de la red de seguridad de tablas. Se inyecta aquí y no se hereda del shell
@@ -662,7 +664,7 @@ CORTE_TURNO = _mt.group(1) if _mt else "No declarado"
 FOOTER = f'''
 <footer class="footbar">
   <div>Versión 3.0 · Edición móvil</div>
-  <div>Fecha: {FECHA} · Hora: {HORA} (CDMX) · Corte: {CORTE_TURNO}</div>
+  <div>Fecha: {FECHA_TXT} · Hora: {HORA} (CDMX) · Corte: {CORTE_TURNO}</div>
   <div>ARGOS N.° {NUM} · <span class="uso">USO INSTITUCIONAL</span></div>
 </footer>
 
