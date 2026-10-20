@@ -8,13 +8,13 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 137 (corte 2026-10-19).
+**Última actualización**: ARGOS 138 (corte 2026-10-20).
 
 ---
 
 ## Arranque de la edición siguiente
 
-**`reports/_arranque-ARGOS-137.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-137.txt`) contiene la orden de arranque para una sesión nueva: verificación
+**`reports/_arranque-ARGOS-139.md`** (y su orden lista para pegar, `reports/_ordenes-ARGOS-139.txt`) contiene la orden de arranque para una sesión nueva: verificación
 de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y comandos de construcción.
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
@@ -2261,3 +2261,48 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 6. **`procedencia-cifras` volvió a hallar hechos**; mantener las 30 búsquedas reservadas.
 7. **Presupuesto**: 2 + 159 + 10 + 29 = **200**; segunda ronda sin búsquedas.
 8. **Dominios sin devolver**: `fiscaliasinaloa.gob.mx` (décima edición), `fiscalia.guanajuato.gob.mx`, `fiscalia.morelos.gob.mx`, `pgjhidalgo.gob.mx`, `ssp.chihuahua.gob.mx`, `ssp.durango.gob.mx`, `ssp.jalisco.gob.mx`, `ssp.col.gob.mx`, `ssp.aguascalientes.gob.mx`, `ssp.morelos.gob.mx`, `ssc.tlaxcala.gob.mx`, `seguridad.hidalgo.gob.mx`, `ssc.queretaro.gob.mx`: probar variantes en 138.
+
+## Cerrados por ARGOS 138
+
+| Pendiente | Disposición |
+|---|---|
+| **Color de Cuajinicuilapa** | **🔴 por decisión del destinatario (20-oct 07:10)** → `ARG-138-REC-001`; `ARG-138-FE-001`: 136 +1 rojo, +1 muerto, +1 herido (4 rojos) |
+| **Copanatoyac, coordinador del PT** | Marzo de 2025: señuelo de año |
+| **Zacatecas, policías en los límites con Ags** | Luis Moya, 1-ago-2026: fuera |
+| **Colima, «muerte de funcionario»** | Agosto, ahogamiento: no es homicidio |
+| **Juchitán, panteón** (137) | Sin avance; **Tomás Aquino (lunes 19) es otro hecho** → `ARG-138-001` |
+| **«El Tripa»** | Detenido el 16-oct (Código QRO 2026/10/16); boletín del 19: fuera |
+| **Fichas de 137 con día por resumen** | `-009`, `-015`, `-016`, `-014`: publicación con ruta fechada; el día del hecho sigue por resumen |
+| **Coatzacoalcos** (`-003`) | Ya de 2 muertos y 🔴 en 137: sin cambio |
+| **Controles** | Ronda 1: `procedencia-cifras` 15 de 20 «CORREGIR», `editor-duplicidad` 13 de 20; ronda 2: ver `argos-2026-10-20-fuentes.md` §10 |
+
+## Abiertos que ARGOS 139 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️ **COLOR DE RÍO BRAVO** | Diputada federal agredida con arma punzocortante el sábado 17 (ventana de 136; enlineadirecta.info 2026/10/19, denuncia propia, una fuente). **Preguntado al destinatario en 138.** Si 🔴 → `-REC-` (136: +1 rojo). Buscar segunda fuente y denuncia ante la FGR o la FGJE |
+| ⚠️ **Ecatepec, col. Luis Donaldo Colosio** | Mecánico de 46 y su hijo de 17 (El Independiente 2026/10/19, nota agregada, fuente única). 🔴 potencial: día y hora, segunda fuente, comunicado de la FGJEM |
+| **Juchitán** (`ARG-138-001`) | Día (lunes 19 / «miércoles»), heridos (2 o 3), edad del menor; comunicado de la Fiscalía de Oaxaca; ruta con fecha |
+| **Cárdenas** (`-002`) | Día del hallazgo (19 o 20); identificación genética; ¿personas desaparecidas? |
+| **Navolato** (`-007`) | Parte de la Defensa: quién inició (🔴 si la patrulla fue agredida), armamento con cifra |
+| **Monterrey** (`-008`) | Hora (11:00 → ventana de 137, fe de erratas) |
+| **Cadereyta** (`-011`) | Desglose de armamento con cifra, fecha de los operativos, composición de los 9 |
+| **Ciudad Juárez** (`-009`, `-010`) | Estado de salud de la víctima; situación jurídica de los 3 |
+| **Mazatlán** (`-005`, `-006`, `-012`) y **Pénjamo** (`-013`) | Segunda fuente para `-006` y `-013`; horas |
+| **Vistos de la ventana** | Acapulco ×2, Cuernavaca (sin ruta fechada) · Culiacán, Laureles Pinos (**heredado de 137, no buscado en 138**), Palmanova · policía municipal de Culiacán «saliendo de su turno» (🔴 si se fecha) · narcomanta de Chihuahua (4 detenidos) · Puerto Morelos (cateo FGR) · «El Charro» (¿`ARG-136-008`?) |
+| **Exfiscal** (`ARG-136-006`) | Resultado de la audiencia federal del 20; vinculación estatal **jueves 22-oct 10:00**; comunicado de la FGR |
+| **Fichas de 137** | `-007` Colima: color si una autoridad acredita que los abatidos iniciaron · `-012` Zapopan: posiblemente anterior a la apertura de 137 · `-011`/`-017` Tijuana: ¿detenido? |
+| **Sentencias** | **Tulantepec, miércoles 21-oct** · Culiacán, 18 años por feminicidio en tentativa (Luz Noticias 2026-10-19): boletín de la FGE Sinaloa (dominio sin devolver por undécima edición) · Ensenada |
+| **Heredados sin avance** | Nogales (8 osamentas según colectivos, El Imparcial 2026/10/19; cifra oficial) · Cachanillas · Ajuchitlán · Tepic · Apatzingán `ARG-135-003` · El Tívoli · Coquimatlán · Tlalnepantla · Linares · Industrial Bravo · Patamban (¿persona defensora?: decisión del destinatario) |
+| **Boletín federal del 20 y 21-oct** | Triple consulta; `gabinetedeseguridad.gob.mx/resultados` |
+| **Cobertura con prioridad sobre el ciclo en 139** | **Sentencias `NO REVISADA` (17)**: BC, BCS, Chih, Sin · Jal, Nay, Ags, Mich · CDMX, Edomex, Pue, Tlax, Qro · Oax, Chis, Camp, QRoo. **Armamento `NO REVISADA` (13)**: Chih, Sin · Coah, Tamps · Jal, Mich, Gto · Ver, Tab · Oax, Camp, Yuc, QRoo. **Alto impacto `NO REVISADA`**: Ags. Después, **CICLO C** (Occidente + Sureste) |
+
+## Deuda de método (ARGOS 138)
+
+1. **Ningún equipo tuvo Bash**: la plantilla debe pedir la herramienta Grep con el patrón literal y pegar la salida, no un comando `grep`.
+2. **Totales escritos a mano**: el borrador sumó 6 muertos con 7 en fichas. Generar el desglose de muertos y heridos desde el arreglo `E` en `datos-argos-139.py`.
+3. **Ordinales en titulares** («segundo homicidio… este lunes»): buscar siempre el primero (Lomas del Ébano lo trajo procedencia).
+4. **Criterio de lectura parcial** sin definir: propuesta — parcial si el último ítem indexado del dominio es anterior al 1-sep-2026 o la ruta es opaca sin fecha.
+5. **Recuentos I/N/R/A**: la lista de emisores por tipo debe quedar en el archivo de fuentes **antes** de los controles; MVS se cuenta Nacional.
+6. **Presupuesto**: 2 + 158 + 8 + 30 = **198**; segunda ronda sin búsquedas.
+7. **Dominios sin devolver**: `fiscaliasinaloa.gob.mx` (undécima), `sspguerrero.gob.mx`, `ssp.nl.gob.mx`, `ssp.morelos.gob.mx`, `ces.morelos.gob.mx`, `sspc.tlaxcala.gob.mx`, `ssp.hidalgo.gob.mx`, `ssc.queretaro.gob.mx`, `seguridad.jalisco.gob.mx`, `fgecam.gob.mx`, `gabinetedeseguridad.gob.mx`.

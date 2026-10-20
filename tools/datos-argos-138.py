@@ -124,7 +124,7 @@ E = [
   inst=SB, nac=NIN, conf="★★★☆☆",
   campo="hora solo por resumen (puede ser anterior a las 11:05); sin fuente institucional", I=0, N=0, R=3, A=0,
   fechadas=["Luz Noticias (2026-10-19)"], estatus="Parcialmente corroborado", arm=None,
-  desl="Lomas del Ébano no figura en las cinco ediciones previas. NO es ARG-137-004 (Fovissste Esperanza, 18-oct) ni ARG-138-005 (San Joaquín, tarde)."),
+  desl="Lomas del Ébano no figura en las cinco ediciones previas. NO es ARG-137-004 (Fovissste Esperanza, 18-oct) ni ARG-138-005 (San Joaquín, tarde). Los Ébanos (ARG-104-006, agosto, aseguramiento): otro hecho."),
  dict(id="ARG-138-013", estado="MX-GUA", region="Occidente", color="amarillo", impacto="pequeno", fecha="2026-10-19", hora="no publicada",
   ent="Guanajuato", mun="Pénjamo (zona centro)", dia="PUB. 19-OCT, HORA NO FIJADA",
   title="GUANAJUATO · PÉNJAMO — BALEAN A UN ABUELO Y A SU NIETO EN EL CENTRO; QUEDAN GRAVES",
@@ -133,7 +133,7 @@ E = [
   inst=SB, nac=NIN, conf="★★☆☆☆",
   campo="una sola fuente; hora no publicada", I=0, N=0, R=1, A=0,
   fechadas=["Periódico Correo (2026/oct/19)"], estatus="Pendiente de corroboración", arm=None, fecha_txt="no publicada; publicado el 2026-10-19",
-  desl="El centro de Pénjamo no figura en las cinco ediciones previas; Pénjamo figura en ARG-113-003 (aseguramiento): otro hecho. NO es ARG-137-015 (Salamanca)."),
+  desl="El centro de Pénjamo no figura en las cinco ediciones previas; Pénjamo figura en ARG-113-003 (aseguramiento) y ARG-133-REC-001 (col. San Miguel, 14-oct, 3 muertos): otro lugar y otro día. NO es ARG-137-015 (Salamanca)."),
 ]
 
 # ---------------------------------------------------------------- RECUPERACIONES (ventanas anteriores, también verdes)
@@ -440,11 +440,11 @@ cierre = f'''  <div class="alerta contexto">
   <div class="alerta contexto" style="margin-top:8px;">
     <div class="flag">CONCLUSIONES DE INTELIGENCIA CRIMINAL</div>
     <p>
-      <b>1. CULIACÁN, SIETE HOMICIDIOS DEL 15 AL 19-OCT</b> (cálculo propio; horas solo por resumen). ARG-138-003 y ARG-138-004 se suman a ARG-137-009, ARG-136-004, ARG-135-001, ARG-135-007 y ARG-134-013. Línea: <b>solicitar a la FGE Sinaloa el cotejo balístico entre los siete hechos</b> — hipótesis; vínculo no acreditado.
+      <b>1. CULIACÁN, SIETE HECHOS CON MUERTOS (OCHO VÍCTIMAS) DEL 15 AL 19-OCT</b> (cálculo propio; horas solo por resumen). ARG-138-003 y ARG-138-004 se suman a ARG-137-009, ARG-136-004, ARG-135-001, ARG-135-007 y ARG-134-013. Línea: <b>solicitar a la FGE Sinaloa el cotejo balístico entre los siete hechos</b> — hipótesis; vínculo no acreditado.
       <br><b>2. MAZATLÁN, TRES HOMICIDIOS EL LUNES TRAS ARG-137-004 (DOMINGO)</b> (cálculo propio; horas solo por resumen). ARG-138-012, ARG-138-005 y ARG-138-006; dos víctimas mujeres. Línea: <b>solicitar a la FGE Sinaloa si las carpetas comparten casquillos o vehículos</b> — hipótesis.
-      <br><b>3. DOS ENFRENTAMIENTOS CON PERSONAL MILITAR EN 24 HORAS, SIN PARTE PUBLICADO.</b> ARG-138-007 se suma a ARG-137-007 (Colima, mismo tipo de hecho). Línea: <b>solicitar a la Defensa y a la Marina el parte, quién inició y el armamento asegurado</b>.
-      <br><b>4. MONTERREY, CUARTO HECHO CON MUERTOS EN EL ÁREA METROPOLITANA EN CINCO DÍAS</b> (cálculo propio). ARG-138-008 se suma a ARG-137-008, ARG-134-002 y ARG-134-007; ARG-138-011 sin antecedente de detenidos en el índice. Línea: <b>solicitar a Fuerza Civil el desglose del armamento y si los detenidos se vinculan con los homicidios</b> — hipótesis; vínculo no acreditado.
-      <br><b>5. GUANAJUATO, MENOR HERIDO EN ATAQUE A FAMILIARES EN VÍA PÚBLICA.</b> ARG-138-013 se suma a ARG-137-015 (Salamanca, tres baleados). Línea: <b>solicitar a la FGE Guanajuato el estado de los lesionados y si los casquillos coinciden</b> — hipótesis.
+      <br><b>3. DOS ENFRENTAMIENTOS CON PERSONAL MILITAR EN DOS DÍAS (18/19 Y 19-OCT, DÍAS SOLO POR RESUMEN), SIN PARTE PUBLICADO.</b> ARG-138-007 se suma a ARG-137-007 (Colima, mismo tipo de hecho). Línea: <b>solicitar a la Defensa y a la Marina el parte, quién inició y el armamento asegurado</b>.
+      <br><b>4. MONTERREY, CUARTO HECHO CON MUERTOS EN EL ÁREA METROPOLITANA EN CINCO DÍAS</b> (cálculo propio). ARG-138-008 se suma a ARG-137-008, ARG-134-002 y ARG-134-007; ARG-138-011: Cadereyta sin antecedente en el índice. Línea: <b>solicitar a Fuerza Civil el desglose del armamento y si los detenidos se vinculan con los homicidios</b> — hipótesis; vínculo no acreditado.
+      <br><b>5. GUANAJUATO, DOS ATAQUES CON HERIDOS EN DOS DÍAS.</b> ARG-138-013 se suma a ARG-137-015 (Salamanca, tres baleados). Línea: <b>solicitar a la FGE Guanajuato el estado de los lesionados y si los casquillos coinciden</b> — hipótesis.
     </p>
   </div>
 
