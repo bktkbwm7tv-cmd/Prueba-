@@ -17,6 +17,7 @@ PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
     git merge --ff-only origin/claude/argos-136
     git merge --ff-only origin/claude/argos-137
     git merge --ff-only origin/claude/argos-138
+    git merge --ff-only origin/claude/argos-139-9anrf5
     ls reports/ | grep '^argos-' | tail -6
     ls reports/ | wc -l
 
@@ -32,6 +33,8 @@ RED: comprueba primero si el egreso se abrió —
 Si NO devuelve 000, DILO y lee los boletines directamente (WebFetch). Si devuelve
 000, sigue bloqueado: solo WebSearch.
 
+APLAZADA: la sesión del 20-oct 07:49 CDMX (ventana de 43 min) aplazó 139 al 21-oct
+por orden del destinatario; sus decisiones viven en origin/claude/argos-139-9anrf5.
 VENTANA: abre 2026-10-20 07:06 CDMX —donde cerró ARGOS 138— y cierra a la HORA REAL
 de tu arranque. Recalcula duración y densidad al sellar. 138: 20 h 01 min, 0,65.
 
@@ -49,8 +52,9 @@ COORDINADOR REGISTRAN TODA URL QUE RESPALDE UNA FICHA.
 ENCARGOS, PRIMERO Y SIN NEGOCIAR
 ================================================================================
  0. CICLO: C (Occidente + Sureste), por la tabla de CLAUDE.md.
-    COLOR PENDIENTE: RÍO BRAVO (diputada federal agredida con arma punzocortante el
-    sábado 17, ventana de 136; una fuente). PREGÚNTAME ANTES DE LA OLA.
+    RÍO BRAVO: COLOR FIJADO POR EL DESTINATARIO EL 20-OCT 07:49 → 🔴 CON -REC-
+    (diputada federal agredida con arma punzocortante el sábado 17, ventana de 136;
+    una fuente: marca de fuente única, buscar segunda; fuera de los totales de 139).
  1. ECATEPEC, col. Luis Donaldo Colosio (mecánico y su hijo de 17): 🔴 potencial;
     día, segunda fuente, FGJEM.
  2. FICHAS DE 138: Juchitán (-001) día, heridos, edad del menor, ruta fechada ·

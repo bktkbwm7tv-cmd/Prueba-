@@ -19,6 +19,9 @@ de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y coma
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
 
+**ARGOS 139 aplazado al 21-oct** (decisión del destinatario, 20-oct 07:49 CDMX: la ventana habría sido de 43 min). **Río Bravo**, diputada
+federal agredida el sábado 17 (ventana de 136): **color fijado 🔴, ficha `-REC-`**, fuente única con marca; ya no es «visto».
+
 ## Instrucción editorial permanente — la forma del cartelón
 
 Fijada por el destinatario en ARGOS 105, tras revisar la edición en teléfono. **Rige por encima de

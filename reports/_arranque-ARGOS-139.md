@@ -7,6 +7,10 @@ repositorio: esta orden, `CLAUDE.md`, `reports/_pendientes.md` y `reports/argos-
 
 ## BLOQUE 0 — VERIFICACIÓN DE BASE
 
+> **Aplazamiento (20-oct 07:49 CDMX).** Una sesión arrancó 43 min después del cierre de 138; el destinatario **aplazó ARGOS 139 al 21-oct**
+> (la ventana sigue abriendo el 20-oct 07:06) y **fijó Río Bravo en 🔴 con `-REC-`** (fuente única: marca y segunda fuente; fuera de los totales).
+> Fusionar también `origin/claude/argos-139-9anrf5` (fast-forward sobre `-138`; solo estas notas).
+
 Los comandos del mensaje de órdenes. **Estado esperado**: última edición `argos-2026-10-20` (ARGOS 138) y **210 archivos** en `reports/`
 (203 + cinco de la edición + `_arranque-ARGOS-139.md` + `_ordenes-ARGOS-139.txt`). ARGOS 129 a 138 viven en `claude/argos-129` … `-138`,
 encadenadas; fast-forward desde `b0558a3`. Abrir `claude/argos-139` antes de fusionar; si un merge no es fast-forward, parar y avisar.
