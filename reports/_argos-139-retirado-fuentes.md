@@ -1,3 +1,5 @@
+> ⚠️ **VERSIÓN RETIRADA** — ARGOS 139 producido el 20-oct con ventana de 43 min (07:06 → 07:49) y retirado por el destinatario el mismo día por falta de materia. **No es una edición publicada**: sus ARG-ID no existen. Se conserva como **insumo** del nuevo ARGOS 139 (encargos respondidos, Río Bravo con el día corregido, vistos, cobertura), que debe reverificar lo que use.
+
 # ARGOS 139 — Archivo de fuentes
 
 **Corte**: 2026-10-20 (segundo corte del día; archivos `argos-2026-10-20b.*`) · **Ventana**: 20-oct 07:06 → 20-oct 07:49 CDMX (**43 min**; `WINDOW_DAYS = 2` sin cambio: el radar no tiene ecos propios) · **Densidad**: 0 hechos propios / 0,72 h = **0,00 hechos/hora**, cálculo propio.

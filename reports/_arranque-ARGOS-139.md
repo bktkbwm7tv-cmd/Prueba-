@@ -1,56 +1,50 @@
-# ORDEN DE ARRANQUE — ARGOS 139
+# ORDEN DE ARRANQUE — ARGOS 139 (rehecha tras la versión retirada)
 
-Documento de arranque para una **sesión nueva**, escrito al cierre de ARGOS 138 (corte 2026-10-20 07:06). La continuidad vive en el
-repositorio: esta orden, `CLAUDE.md`, `reports/_pendientes.md` y `reports/argos-2026-10-20-fuentes.md` bastan para arrancar.
+Escrita el 20-oct, después de que el destinatario **retirara la versión de 43 min de ARGOS 139** (ventana 07:06 → 07:49, sin hechos propios)
+y ordenara rehacerla el **21-oct a las 07:00**. La continuidad vive en el repositorio: esta orden, `CLAUDE.md`, `reports/_pendientes.md`,
+`reports/argos-2026-10-20-fuentes.md` (ARGOS 138) y los insumos `reports/_argos-139-retirado-fuentes.md` y `-equipos.md`.
 
 ⚠️ **El mensaje listo para pegar está en `reports/_ordenes-ARGOS-139.txt`.** Este archivo es el detalle.
 
 ## BLOQUE 0 — VERIFICACIÓN DE BASE
 
-> **Aplazamiento (20-oct 07:49 CDMX).** Una sesión arrancó 43 min después del cierre de 138; el destinatario **aplazó ARGOS 139 al 21-oct**
-> (la ventana sigue abriendo el 20-oct 07:06) y **fijó Río Bravo en 🔴 con `-REC-`** (fuente única: marca y segunda fuente; fuera de los totales).
-> Fusionar también `origin/claude/argos-139-9anrf5` (fast-forward sobre `-138`; solo estas notas).
-
-Los comandos del mensaje de órdenes. **Estado esperado**: última edición `argos-2026-10-20` (ARGOS 138) y **210 archivos** en `reports/`
-(203 + cinco de la edición + `_arranque-ARGOS-139.md` + `_ordenes-ARGOS-139.txt`). ARGOS 129 a 138 viven en `claude/argos-129` … `-138`,
-encadenadas; fast-forward desde `b0558a3`. Abrir `claude/argos-139` antes de fusionar; si un merge no es fast-forward, parar y avisar.
+Los comandos del mensaje de órdenes. **Estado esperado**: última edición `argos-2026-10-20` (ARGOS 138) y **212 archivos** en `reports/`
+(210 + los dos insumos retirados). Ramas `claude/argos-129` … `-138` y `claude/argos-139-9anrf5`, encadenadas; o `main` si el PR #15 ya se fusionó.
 
 ## BLOQUE 1 — IDENTIDAD
 
 | Campo | Valor |
 |---|---|
 | Número | **ARGOS 139** |
-| Ventana | **abre 2026-10-20 07:06 CDMX** y cierra a la hora real de arranque |
-| Serie | 28 h 18 (134) · 21 h 54 (135) · 23 h 06 (136) · 26 h 31 (137) · **20 h 01 (138)** |
-| Densidad | 0,67 · 0,59 · 0,39 · 0,68 · **0,65** — 138: **11 de 13 con marca de frontera** y 2 sin ruta con fecha |
+| Ventana | **abre 2026-10-20 07:06 CDMX** y cierra a la hora real de arranque del 21-oct (~24 h) |
+| Serie | 21 h 54 (135) · 23 h 06 (136) · 26 h 31 (137) · **20 h 01 (138)** |
 | Ciclo | **C** (Occidente + Sureste), tras la prioridad sobre el ciclo |
+| Archivo | `argos-2026-10-21.html` (sin sufijo) |
 
 ## BLOQUE 2 — LECTURA OBLIGATORIA
 
-1. `CLAUDE.md` íntegro.
-2. `reports/_pendientes.md` — **Cerrados por ARGOS 138**, **Abiertos que ARGOS 139 hereda**, **Deuda de método (ARGOS 138)**.
-3. `reports/argos-2026-10-20-fuentes.md` — §3, §5, §6, §7, §8, §9, §10, §12.
-4. `reports/indice-arg-id.md` y el HTML de las cinco ediciones previas — cotejo por topónimo antes de fichar, también cada `-REC-`.
+1. `CLAUDE.md` íntegro (nueva regla: las acciones se redactan como **solicitud**, nunca exigencia).
+2. `reports/_pendientes.md` — **Abiertos que ARGOS 139 hereda** (de 138) y **Versión retirada de ARGOS 139**.
+3. `reports/_argos-139-retirado-fuentes.md` — §3 (cobertura), §5 (encargos), §6 (arbitrajes), §10 (controles): **insumo, no fuente**.
+4. `reports/indice-arg-id.md` y el HTML de las cinco ediciones previas.
 
 ## BLOQUE 3 — PRESUPUESTO
 
-Tope de 200 por turno: control 2 · ola ~160 · coordinador ~10 · `procedencia-cifras` ~30 (segunda ronda sin búsquedas). 138 gastó 2 + 158 + 8 + 30 = 198.
+Tope de 200 por turno: control 2 · ola ~160 · coordinador ~10 · `procedencia-cifras` ~30. Los encargos ya resueltos en la versión retirada no se repiten.
 
-## BLOQUE 4 — TRAMPAS VERIFICADAS EN ARGOS 138
+## BLOQUE 4 — TRAMPAS VERIFICADAS
 
 | Trampa | Control |
 |---|---|
-| **Pistas heredadas sin fecha** | Copanatoyac era de 2025 y Luis Moya de agosto: fechar la pista antes de buscar el hecho |
-| **Ordinal en un titular** | «Segundo homicidio de una mujer este lunes» anunciaba otro hecho que la ola no trajo: buscar siempre el primero |
-| **Títulos de otro hecho en el mismo municipio** | Juchitán: «menor de 12 años» era de julio; no contar fuentes que no se han atado al hecho |
-| **Hora por resumen en la apertura** | Monterrey ~11:00 con apertura 11:05: marca, no exclusión; taxista ~06:00: ventana anterior |
-| **Recuperar verdes de ventana anterior** | Solo el alto impacto se recupera con ficha; el resto, vistos (Jiquilpan) |
-| **Totales escritos a mano** | 6 muertos con 7 en fichas: derivar del arreglo |
+| **Día de la denuncia ≠ día del hecho** | Río Bravo: «el sábado» era el 10, no el 17 |
+| **Agregados de medios** | El Independiente 2026/10/19 recicla hechos del 13-oct |
+| **Vistos ya publicados** | Villa de Seris era `ARG-137-018`; Cotija, ya en 138 |
+| **Conclusiones** | No repetir la de la edición anterior ni el panorama; declarar el criterio del patrón y todo conteo como cálculo propio |
+| **Marca «Consulta»** | Hora real de la última búsqueda |
+| **Ventana corta** | 43 min = 0 hechos: avisar antes de la ola si dura menos de ~12 h |
 
 ## BLOQUE 5 — FORMA Y CONSTRUCCIÓN
 
-- Parta de `tools/datos-argos-138.py` (páginas por ARG-ID con `pg(...)`; panorama ordenado por color; `cual=True` para armamento cualitativo; `fecha_txt` cuando la ruta solo fija la publicación) y de `reports/argos-2026-10-20.html` (cambiar la línea de `<title>` que reemplaza el generador: ARGOS 138 — 2026-10-20).
-- Móvil: `python3 tools/gen-movil.py 139 <FECHA> 138 2026-10-20 <HORA>`. Texto: `gen-texto.py`.
-- Validador: `node tools/validar.js reports/argos-<FECHA>.html 2026-10-20 <FECHA>`.
-- Portada: cinco «SOLICITE A…», solo ARG-ID, sobre hechos distintos de las conclusiones. Valoración solo con ARG-ID. Ningún texto explica un color.
-- Controles: dos rondas, veinte pases cada una; informes íntegros en `reports/argos-<FECHA>-equipos.md`.
+- Parta de `tools/datos-argos-139.py`: cambie `FECHA`, `HORA`, `CONSULTA`, `DUR`, la ventana del panorama, las aserciones y el `<title>` que reemplaza; el archivo de salida es `argos-2026-10-21.html`. La ficha de Río Bravo ya pasó dos rondas de control: reverifique y renumere.
+- Móvil: `python3 tools/gen-movil.py 139 2026-10-21 138 2026-10-20 <HORA>`. Texto: `gen-texto.py`. Validador: `node tools/validar.js reports/argos-2026-10-21.html 2026-10-20 2026-10-21`.
+- Controles: dos rondas, veinte pases cada una; informes íntegros en `reports/argos-2026-10-21-equipos.md`.

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Generador de datos único de ARGOS 139: fichas, panorama, EVENTOS, EVENTOS_ARM y totales derivados.
+"""Generador de datos de ARGOS 139. ⚠️ Versión de 43 min RETIRADA el 20-oct; base para rehacer 139 el 21-oct (ver reports/_arranque-ARGOS-139.md).
 Uso: python3 tools/datos-argos-139.py <plantilla ARGOS 138> <salida>
 ARGOS 139 comparte fecha de corte con ARGOS 138 (2026-10-20): sus archivos llevan el sufijo «b» (argos-2026-10-20b.*)."""
 import sys, re, json, html as H

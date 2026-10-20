@@ -3,10 +3,10 @@
 Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 
 ## Ventana
-- ABRE: **martes 20-oct-2026 07:06 CDMX** (donde cerró ARGOS 138). CIERRA: **martes 20-oct-2026 07:49 CDMX** (hora real de arranque de la sesión). Duración **43 min**: el destinatario ordenó producir 139 el mismo día que 138.
-- Calendario: domingo 18 · lunes 19 · **martes 20**. Comprueba siempre el día de la semana que dice la fuente contra este calendario.
+- ABRE: **martes 20-oct-2026 07:06 CDMX** (donde cerró ARGOS 138). CIERRA: **miércoles 21-oct-2026, hora real de arranque de la sesión** (el coordinador la escribe aquí al copiar la plantilla). Una versión de 43 min se retiró por falta de materia: sus hallazgos están en `reports/_argos-139-retirado-*.md`.
+- Calendario: domingo 18 · lunes 19 · **martes 20 · miércoles 21**. Comprueba siempre el día de la semana que dice la fuente contra este calendario.
 - **ARGOS 138 (ventana 19-oct 11:05 → 20-oct 07:06) ya publicó 13 hechos**: Juchitán (-001), Cárdenas (-002), Culiacán Prados del Sol (-003) y 21 de Marzo (-004), Mazatlán San Joaquín (-005), plaza de La Marina (-006) y Lomas del Ébano (-012), Navolato La Palma (-007), Monterrey col. Hidalgo (-008), Juárez Los Alcaldes (-009/-010), Cadereyta (-011), Pénjamo (-013). Un hecho del lunes 19 tras las 11:05 o de la madrugada del martes 20 antes de las 07:06 que 138 NO publicó es de la ventana de 138: candidato `-REC-` **solo si es de alto impacto (🔴)**; si es 🟡 o 🟢, va a «VISTOS».
-- **Núcleo del corte**: hechos **publicados el martes 20-oct** (ruta con fecha del 20) que ARGOS 138 no publicó, y cuya hora no esté fijada → `FRONTERA DE VENTANA — HORA NO FIJADA` (la edición que lo ve primero lo integra). Hechos con hora fijada por titular o fragmento **después de las 07:49 del 20** son de ARGOS 140: descártalos por ventana. Hechos con día del hecho (por resumen) lunes 19 publicados el 20: repórtalos con la marca, el coordinador decide (precedente de 138: Navolato).
+- **Núcleo del corte**: hechos del **martes 20-oct** (tras las 07:06) y de la **madrugada del miércoles 21** hasta el cierre, que ARGOS 138 no publicó. Publicación del 20 sin hora fijada y hecho no fechado → marca `PUBLICADO EL DÍA DE APERTURA SIN HORA`; publicación del 21 sin hora → `FRONTERA DE VENTANA — HORA NO FIJADA`. Hechos posteriores al cierre son de ARGOS 140. Hechos con día del hecho (por resumen) lunes 19 publicados el 20: repórtalos con la marca, el coordinador decide (precedente de 138: Navolato).
 - Nunca infieras la hora. «Madrugada de este martes» o «esta mañana» en un resumen NO fecha un hecho.
 - Criterio de inclusión: entra con marca el hecho con **ruta fechada o titular con día**; el que solo tiene día por resumen se reporta igual, marcado, para que el coordinador decida (excepción declarada para rojos).
 
@@ -18,7 +18,7 @@ Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 
 ## Barrido obligatorio por equipo (además de los encargos)
 1. Búsqueda por día de la semana: «este lunes» / «la noche del lunes» / «madrugada de este martes» + entidades.
-2. Fecha de cierre en la ruta: «2026/10/20», «20 de octubre», «este martes» — HAZLA AL FINAL de tu presupuesto (el índice tarda en llegar a la mañana).
+2. Fecha en la ruta: «2026/10/20», «20 de octubre», «este martes», «la noche del martes», «2026/10/21», «madrugada de este miércoles» — HAZLA AL FINAL de tu presupuesto.
 3. «funcionario / director / servidor público / policía asesinado» en tu región.
 4. «fosa / colectivo / restos / cuerpos» en tu región, **UNA CONSULTA POR ENTIDAD FRONTERIZA** (BC, Son, Chih, Tamps) — en 135 la consulta regional no trajo Cachanillas ni Nogales.
 5b. `site:` con UN SOLO DOMINIO por consulta: con `OR` el buscador ignora el operador.
@@ -63,6 +63,6 @@ Entrega el informe ÍNTEGRO en tu mensaje final: el coordinador lo pasará tal c
 - Dominios que NO devolvieron en 138 (prueba una variante): `fiscaliasinaloa.gob.mx` (undécima edición; prueba `fge.sinaloa.gob.mx`, `fiscaliasinaloa.mx`), `sspguerrero.gob.mx`, `ssp.nl.gob.mx`, `ssp.morelos.gob.mx`, `ces.morelos.gob.mx`, `sspc.tlaxcala.gob.mx`, `ssp.hidalgo.gob.mx`, `ssc.queretaro.gob.mx`, `seguridad.jalisco.gob.mx`, `fgecam.gob.mx`, `gabinetedeseguridad.gob.mx`.
 - Dominios que sí devolvieron antes: `portal.fgeo.gob.mx`, `seguridad.slp.gob.mx`, `pgjebcs.gob.mx`, `fgecolima.mx`, `fgjem.edomex.gob.mx`, `spsc.campeche.gob.mx`, `ssp.yucatan.gob.mx`, `fgenay.gob.mx`, `ssypc.nayarit.gob.mx`, `comunicacion.fiscaliamichoacan.gob.mx`, `comunicacion.fiscaliaveracruz.gob.mx`, `ssp.zacatecas.gob.mx`, `fiscalia.sonora.gob.mx`, `sitio.fgecoahuila.gob.mx`, `fiscalia-aguascalientes.gob.mx`.
 - **Criterio de lectura parcial**: parcial si el último ítem indexado del dominio es anterior al 1-sep-2026 o la ruta es opaca sin fecha.
-- Color decidido por el destinatario para 139: **Río Bravo (diputada federal agredida con arma punzocortante, sábado 17) = 🔴 `-REC-`**: lo ficha el coordinador; no gastes búsquedas salvo dato nuevo.
+- Color decidido por el destinatario para 139: **Río Bravo (diputada federal herida con arma blanca; noche del sábado 10-oct por resumen, ventana de ARGOS 129) = 🔴 `-REC-`**: lo ficha el coordinador; no gastes búsquedas salvo dato nuevo.
 - Ciclo de 139: **C** (Occidente + Sureste encabezan el triaje judicial DESPUÉS de la prioridad sobre el ciclo).
 - **Prioridad sobre el ciclo**: sentencias `NO REVISADA` en 138 (17): BC, BCS, Chih, Sin · Jal, Nay, Ags, Mich · CDMX, Edomex, Pue, Tlax, Qro · Oax, Chis, Camp, QRoo. Armamento `NO REVISADA` (13): Chih, Sin · Coah, Tamps · Jal, Mich, Gto · Ver, Tab · Oax, Camp, Yuc, QRoo. Alto impacto `NO REVISADA`: Ags.

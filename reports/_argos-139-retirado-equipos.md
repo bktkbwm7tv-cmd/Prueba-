@@ -1,3 +1,5 @@
+> ⚠️ **VERSIÓN RETIRADA** — ARGOS 139 producido el 20-oct con ventana de 43 min (07:06 → 07:49) y retirado por el destinatario el mismo día por falta de materia. **No es una edición publicada**: sus ARG-ID no existen. Se conserva como **insumo** del nuevo ARGOS 139 (encargos respondidos, Río Bravo con el día corregido, vistos, cobertura), que debe reverificar lo que use.
+
 # ARGOS 139 — Informes íntegros de los equipos, notas del coordinador y controles
 
 Corte 2026-10-20 (segundo corte del día; archivos con sufijo «b»). Ventana 20-oct 07:06 → 07:49 CDMX (43 min).
