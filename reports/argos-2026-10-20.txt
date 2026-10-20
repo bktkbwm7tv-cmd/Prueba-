@@ -1,0 +1,578 @@
+ARGOS 138 — REPORTE NACIONAL DE SEGURIDAD
+REPORTE DIARIO DE INTELIGENCIA CRIMINAL
+«INVESTIGACIONES, BÚSQUEDA Y VERDAD»
+
+Corte informativo: 2026-10-20 · 07:06 (CDMX)
+Ventana: 19-oct 11:05 → 20-oct 07:06 CDMX (20 h 01 min)
+Versión 3.0 · Corte matutino · USO INSTITUCIONAL
+
+============================================================================
+
+[ RADAR CENTRAL — EN VIVO ]
+
+  · 🔴 Alto impacto · 2
+  · 🟡 Violencia operativa · 9
+  · 🟢 Acciones institucionales · 2
+
+[ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
+
+Pase el cursor sobre un estado.
+
+## SEMÁFORO ARGOS
+
+  · 🔴 ROJO — ALTO IMPACTO — 2 eventos
+
+  · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 9 eventos
+
+  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 2 eventos
+
+── LO QUE DEBE HACER EL MANDO
+
+1. SOLICITE A LA FISCALÍA DE OAXACA LAS CIFRAS OFICIALES DE MUERTOS Y LESIONADOS Y EL DÍA DEL
+ATAQUE (ARG-138-001).
+2. SOLICITE A LA FISCALÍA DE TABASCO LA IDENTIFICACIÓN GENÉTICA DE LOS CUERPOS Y LA FECHA DEL
+HALLAZGO (ARG-138-002).
+3. SOLICITE A LA FISCALÍA DE CHIHUAHUA EL ESTADO DE SALUD DE LA VÍCTIMA Y LA SITUACIÓN JURÍDICA
+DE LOS DETENIDOS (ARG-138-009 y ARG-138-010).
+4. SOLICITE A LA FISCALÍA DE GUERRERO EL AVANCE DE LA INVESTIGACIÓN Y SI HAY DETENIDOS
+(ARG-138-REC-001).
+5. SOLICITE A LA FGR EL RESULTADO DE LA AUDIENCIA FEDERAL Y SU COMUNICADO (ARG-136-006).
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-20 · Hora: 07:06 (CDMX) · Corte: Matutino · ARGOS N.° 138 · USO INSTITUCIONAL
+
+============================================================================
+
+## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
+
+Ventana 19-oct 11:05 → 20-oct 07:06 CDMX (20 h 01 min) · 13 hechos propios en 6 entidades ·
+densidad 0,65 hechos/hora; duración y densidad, cálculo propio.
+
+  Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
+  Oaxaca · Juchitán de Zaragoza (colonia solo por resumen) · 19-OCT, NOCHE, DÍA SOLO POR RESUMEN | Ataque armado: 2 muertos y un niño herido | 🔴 Rojo | SIN BOLETÍN | El Universal | ★★☆☆☆ | ARG-138-001
+  Tabasco · Cárdenas (predio junto a la carretera federal Huimanguillo–Cárdenas) · 19-OCT, HORA NO FIJADA | Fosa clandestina: 2 cuerpos | 🔴 Rojo | FGE Tabasco (por titular) | ninguna | ★★☆☆☆ | ARG-138-002
+  Sinaloa · Culiacán (fracc. Prados del Sol) · 19-OCT, NOCHE | Ataque armado: 1 muerto y 1 herido | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-138-003
+  Sinaloa · Culiacán (sector 21 de Marzo) · 19-OCT, NOCHE | 1 hombre asesinado afuera de un expendio | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-138-004
+  Sinaloa · Mazatlán (fracc. San Joaquín) · 19-OCT, TARDE | Mujer motociclista asesinada | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-138-005
+  Sinaloa · Mazatlán (plaza comercial, La Marina) · PUB. 19-OCT, HORA NO FIJADA | 1 hombre asesinado en una plaza comercial | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-138-006
+  Sinaloa · Navolato (La Palma) · 19-OCT, NOCHE, SOLO POR RESUMEN · PUB. 20-OCT | Enfrentamiento entre civiles y militares: 2 civiles abatidos | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-138-007
+  Nuevo León · Monterrey (col. Hidalgo) · 19-OCT, ~11:00-12:00 | Comerciante asesinado afuera de su casa | 🟡 Amarillo | SIN BOLETÍN | MVS · Milenio · Excélsior | ★★★☆☆ | ARG-138-008
+  Chihuahua · Ciudad Juárez (col. Los Alcaldes) · 19-OCT, NOCHE | Mujer herida a balazos | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-138-009
+  Sinaloa · Mazatlán (col. Lomas del Ébano) · 19-OCT, MEDIODÍA, SOLO POR RESUMEN | Mujer asesinada afuera de su casa | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-138-012
+  Guanajuato · Pénjamo (zona centro) · PUB. 19-OCT, HORA NO FIJADA | Ataque armado: 2 heridos graves (abuelo y nieto) | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-138-013
+  Chihuahua · Ciudad Juárez · 19-OCT, NOCHE · PUB. 20-OCT | 3 detenidos por el ataque a una mujer | 🟢 Verde | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-138-010
+  Nuevo León · Cadereyta Jiménez · PUB. 19-OCT, HORA NO FIJADA | 9 detenidos en cuatro operativos de Fuerza Civil | 🟢 Verde | SIN BOLETÍN | MVS | ★★☆☆☆ | ARG-138-011
+  Guerrero · Cuajinicuilapa (cabecera) · VENTANA ARGOS 136 — HORA SOLO POR RESUMEN | Aspirante de Morena asesinado; su esposa, herida | 🔴 Rojo (en su ventana) | FGE Guerrero (por titular) | Expansión · La Razón · Infobae · MVS | ★★★☆☆ | ARG-138-REC-001
+
+## TOTALES DEL CORTE — CÁLCULO PROPIO DE ARGOS
+
+NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
+
+  Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Armas cortas | Armas largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos en aseguramiento | Entidades
+  13 | 2 | 9 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6
+
+Armamento: SIN TOTAL NACIONAL VERIFICABLE DURANTE EL CORTE · una fila fuera del total
+(ARG-138-ARM-001), con 9 detenidos que no se suman a ningún total. Muertos en hechos propios: 8
+por agresión —Juchitán 2, Culiacán 1 + 1, Mazatlán 1 + 1 + 1, Monterrey 1—; 2 de ellos con el
+día solo por resumen · cuerpos en fosa: 2 (ARG-138-002) · abatidos: 2 (ARG-138-007) · Heridos: 6
+a 7 —Juchitán 2 a 3 (contradicho), Culiacán 1, Ciudad Juárez 1 y Pénjamo 2—. Detenidos sin
+aseguramiento: 3 (ARG-138-010). Cálculo propio.
+Seguimientos de ediciones previas, fuera del semáforo: ARG-136-006, audiencia inicial federal el
+martes 20, solo por resumen; resultado no publicado; comunicado de la FGR no localizado
+(traslado y vinculación estatal del jueves 22, ya en ARGOS 137) · ARG-137-REC-002, capturas del
+16-oct (El Rosario) y del 17-oct (Mazatlán) según la Defensa, solo por resumen; primera
+publicación del 18-oct, por ruta (El Financiero, Tribuna) · ARG-137-009, publicado el 18-oct por
+ruta (Línea Directa 2026-10-18); día del hecho (domingo 18, ~15:00) solo por resumen ·
+ARG-137-015, «balean a 3 personas», por titular (Periódico Correo 2026/oct/18) · ARG-137-016,
+publicado el 18-oct por ruta (Grupo Marmor, Red Michoacán 2026/10/18); día del hecho (domingo)
+solo por resumen · ARG-137-011, «hay un detenido» en cinco medios, ninguno atribuido a una
+autoridad nombrada: sigue contradicho · ARG-135-REC-004, Nogales: colectivos reportan 8
+osamentas en 3 días, por titular (El Imparcial 2026/10/19); cifra de colectivo, no oficial.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-20 · Hora: 07:06 (CDMX) · Corte: Matutino · ARGOS N.° 138 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (I) — ALTO IMPACTO: OAXACA Y TABASCO
+
+### OAXACA · JUCHITÁN — ATAQUE ARMADO: DOS MUERTOS Y UN NIÑO HERIDO [ROJO]
+
+── HECHO
+
+Juchitán de Zaragoza · COL. TOMÁS AQUINO, CALLE 12 DE OCTUBRE, SOLO POR RESUMEN · noche del
+LUNES 19-OCT, ~21:00, SOLO POR RESUMEN · NINGUNA RUTA CON FECHA · DÍA: UNA SOLA FUENTE (ADN
+SURESTE), SOLO POR RESUMEN; titular de ADN Sureste con hora de actualización «23:10 h», sin día
+· 2 muertos, por titulares (🔴) · heridos: 2 a 3, por titulares (ADN Sureste 23:10 h y El
+Universal), CONTRADICHO; entre ellos un niño de 2 o 3 años, por titulares · un hombre que
+viajaba en motocicleta con su hijo, agredido, SOLO POR RESUMEN · trasladados al Hospital General
+Macedonio Benítez Fuentes, SOLO POR RESUMEN · «MENOR DE 12 AÑOS» Y «NOCHE DEL MIÉRCOLES» EN
+OTRAS NOTAS DE JUCHITÁN: OTRO HECHO O DATO CONTRADICHO, NO SE INTEGRA · sin comunicado de la
+Fiscalía de Oaxaca ni de la SSPC estatal, SOLO POR RESUMEN · ningún detenido publicado ·
+identidades: no se reproducen
+
+── TRAZABILIDAD
+
+ARG-138-001 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: día de una sola fuente
+y hora, solo por resumen; ninguna ruta con fecha; heridos contradichos · Fuentes: Institucional
+0 · Nacional 1 · Regional 1 · Abierta 0 · con fecha en la ruta: ninguna con fecha en la ruta ·
+Hecho: 2026-10-19 · Hora: ~21:00 (solo por resumen) · Consulta: 2026-10-20 07:06-09:30 ·
+Estatus: Pendiente de corroboración · Conteo de armamento: sin fila — armamento asegurado: no
+publicado
+Deslindes y reservas: Tomás Aquino no figura en las cinco ediciones previas ni en el índice.
+Títulos de Juchitán con «un menor gravemente herido» (Imparcial de Oaxaca, Vanguardia, ADN 23:00
+h) no se cuentan: el del Imparcial de Oaxaca es del 3-jul-2026 según resumen del buscador, no
+leído: probable otro hecho. NO es el «panteón de Juchitán» visto en ARGOS 137 (domingo 18,
+Guardia Nacional herida, entidad contradicha) ni ARG-125-018 (aseguramiento del 2-oct). Comparte
+municipio y 2 muertos con el panteón; los separan día (domingo 18), hora (~18:30), lugar
+(panteón) y lesionado (Guardia Nacional).
+
+### TABASCO · CÁRDENAS — LA FISCALÍA CONFIRMA UNA FOSA CLANDESTINA CON DOS CUERPOS [ROJO]
+
+── HECHO
+
+Cárdenas · PREDIO JUNTO A LA CARRETERA FEDERAL HUIMANGUILLO–CÁRDENAS, SOLO POR RESUMEN ·
+hallazgo el LUNES 19-OCT, tarde, por texto de Posta (URL sin fecha); otra nota de Tabasco Hoy lo
+da el 20, SOLO POR RESUMEN: DÍA CONTRADICHO · NINGUNA RUTA CON FECHA · fosa clandestina con 2
+cuerpos, por titulares (🔴) · la FGE Tabasco confirma el hallazgo, por titular de Tabasco Hoy ·
+Policía de Investigación y peritos levantan indicios y muestras genéticas, SOLO POR RESUMEN ·
+dos jóvenes, por titular de Posta; sexo y nombres solo en un medio regional no oficial: NO SE
+REPRODUCEN · ningún detenido publicado · PUBLICACIÓN DEL 19-OCT SOLO POR RESUMEN; NINGUNA RUTA
+CON FECHA
+
+── TRAZABILIDAD
+
+ARG-138-002 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: día del hallazgo por
+texto de una fuente sin fecha en la ruta; ninguna ruta con fecha · Fuentes: Institucional 1 ·
+Nacional 0 · Regional 5 · Abierta 0 · con fecha en la ruta: ninguna con fecha en la ruta ·
+Hecho: 2026-10-19, tarde, por texto de Posta (URL sin fecha) · Hora: tarde del lunes (texto de
+Posta, URL sin fecha) · Consulta: 2026-10-20 07:06-09:30 · Estatus: Parcialmente corroborado ·
+Conteo de armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: La fosa de Cárdenas no figura en las cinco ediciones previas; Huimanguillo
+figura en ARG-120-015 (operativo de septiembre): otro hecho. NO es ARG-137-005 (restos con
+cartulinas en la carretera Villahermosa–Teapa).
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-20 · Hora: 07:06 (CDMX) · Corte: Matutino · ARGOS N.° 138 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (II) — VIOLENCIA OPERATIVA: SINALOA
+
+### SINALOA · CULIACÁN — ATAQUE ARMADO EN PRADOS DEL SOL: UN MUERTO Y UN HERIDO [AMARILLO]
+
+── HECHO
+
+Culiacán · FRACC. PRADOS DEL SOL, POR TITULAR; CALLE MANUEL PAYNO, SOLO POR RESUMEN · publicado
+el LUNES 19-OCT, por ruta · ~20:30, SOLO POR RESUMEN · atacantes en motocicleta, SOLO POR
+RESUMEN · 1 muerto y 1 herido, por titulares (🟡) · el muerto, de 20 años, por titular · herido
+hospitalizado o leve y sin traslado, SOLO POR RESUMEN: CONTRADICHO · ningún detenido publicado ·
+identidad: no se reproduce · PUBLICADO EL DÍA DE APERTURA SIN HORA: PUEDE SER ANTERIOR A LAS
+11:05 DEL 19
+
+── TRAZABILIDAD
+
+ARG-138-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 5 · Abierta
+0 · con fecha en la ruta: Línea Directa (2026-10-19) · Hecho: 2026-10-19 · Hora: ~20:30 (solo
+por resumen) · Consulta: 2026-10-20 07:06-09:30 · Estatus: Parcialmente corroborado · Conteo de
+armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Prados del Sol no figura en las cinco ediciones previas ni en el índice.
+
+### SINALOA · CULIACÁN — ASESINAN A BALAZOS A UN HOMBRE AFUERA DE UN EXPENDIO EN EL SECTOR 21 DE MARZO [AMARILLO]
+
+── HECHO
+
+Culiacán · SECTOR 21 DE MARZO, POR TITULAR · publicado el LUNES 19-OCT, por ruta · noche del
+lunes, ~22:00, SOLO POR RESUMEN · 1 hombre muerto a balazos afuera de un expendio de cerveza,
+por titulares (🟡) · 25 o 27 años, SOLO POR RESUMEN: CONTRADICHO · disparos desde una camioneta
+gris, según testigos, SOLO POR RESUMEN · ningún detenido publicado · identidad: no se reproduce
+· PUBLICADO EL DÍA DE APERTURA SIN HORA: PUEDE SER ANTERIOR A LAS 11:05 DEL 19
+
+── TRAZABILIDAD
+
+ARG-138-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 4 · Abierta
+0 · con fecha en la ruta: Luz Noticias (2026-10-19) · Línea Directa (2026-10-19) · Hecho:
+2026-10-19 · Hora: ~22:00 (solo por resumen) · Consulta: 2026-10-20 07:06-09:30 · Estatus:
+Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: «21 de Marzo» figura en ARG-135-013 (Colima, col. El Tívoli, calle 21 de
+Marzo, 16-oct): otra entidad y otro día. Sin coincidencia en el sector 21 de Marzo de Culiacán.
+
+### SINALOA · MAZATLÁN — EJECUTAN A BALAZOS A UNA MUJER MOTOCICLISTA EN EL FRACCIONAMIENTO SAN JOAQUÍN [AMARILLO]
+
+── HECHO
+
+Mazatlán · FRACC. SAN JOAQUÍN, POR TITULAR; AV. WALAMO, SOLO POR RESUMEN · publicado el LUNES
+19-OCT, por ruta; «este lunes», por titular de Sinaloahoy · tarde del lunes, SOLO POR RESUMEN ·
+1 mujer muerta a balazos mientras viajaba en motocicleta, por titular (🟡) · «segundo homicidio
+de una mujer en Mazatlán este lunes», por titular; el primero, probablemente ARG-138-012
+(identificación propia, no publicada) · unos 25 años y al menos 8 impactos, SOLO POR RESUMEN ·
+ningún detenido publicado · identidad: no publicada · PUBLICADO EL DÍA DE APERTURA SIN HORA:
+PUEDE SER ANTERIOR A LAS 11:05 DEL 19
+
+── TRAZABILIDAD
+
+ARG-138-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 5 · Abierta
+0 · con fecha en la ruta: Luz Noticias (2026-10-19) · Hecho: 2026-10-19 · Hora: tarde del lunes
+(solo por resumen) · Consulta: 2026-10-20 07:06-09:30 · Estatus: Parcialmente corroborado ·
+Conteo de armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: San Joaquín de Mazatlán no figura en las cinco ediciones previas; San
+Joaquín figura en ARG-128-003 (Edomex): otro hecho. NO es ARG-137-004 (Fovissste Esperanza,
+18-oct).
+
+### SINALOA · MAZATLÁN — EJECUTAN A UNA MUJER AFUERA DE SU CASA EN LA COLONIA LOMAS DEL ÉBANO [AMARILLO]
+
+── HECHO
+
+Mazatlán · COL. LOMAS DEL ÉBANO, POR TITULAR; CALLE AGUSTÍN ANGULO MACHADO, SOLO POR RESUMEN ·
+publicado el LUNES 19-OCT, por ruta · «al mediodía de este lunes», SOLO POR RESUMEN; LA VENTANA
+ABRE A LAS 11:05 · 1 mujer muerta a balazos, por titulares (🟡) · afuera de su domicilio, cerca
+de un jardín de niños y una primaria; Cruz Roja confirma la muerte, SOLO POR RESUMEN · ningún
+detenido publicado · identidad: no publicada · PUBLICADO EL DÍA DE APERTURA SIN HORA: PUEDE SER
+ANTERIOR A LAS 11:05 DEL 19
+
+── TRAZABILIDAD
+
+ARG-138-012 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por resumen
+(puede ser anterior a las 11:05); sin fuente institucional · Fuentes: Institucional 0 · Nacional
+0 · Regional 3 · Abierta 0 · con fecha en la ruta: Luz Noticias (2026-10-19) · Hecho: 2026-10-19
+· Hora: «mediodía» (solo por resumen) · Consulta: 2026-10-20 07:06-09:30 · Estatus: Parcialmente
+corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Lomas del Ébano no figura en las cinco ediciones previas. NO es
+ARG-137-004 (Fovissste Esperanza, 18-oct) ni ARG-138-005 (San Joaquín, tarde). Los Ébanos
+(ARG-104-006, agosto, aseguramiento): otro hecho.
+
+### SINALOA · MAZATLÁN — ASESINAN A BALAZOS A UN HOMBRE EN UNA PLAZA COMERCIAL DE LA MARINA [AMARILLO]
+
+── HECHO
+
+Mazatlán · PLAZA COMERCIAL DE LA ZONA DE LA MARINA, POR TITULAR · publicado el LUNES 19-OCT, por
+ruta · 1 hombre muerto a balazos, por titular (🟡) · baleado en el estacionamiento; murió al
+llegar al hospital, SOLO POR RESUMEN · Marina y Ejército acordonan, SOLO POR RESUMEN · ningún
+detenido publicado · identidad: no publicada · PUBLICADO EL DÍA DE APERTURA SIN HORA: PUEDE SER
+ANTERIOR A LAS 11:05 DEL 19
+
+── TRAZABILIDAD
+
+ARG-138-006 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: una sola fuente; hora
+no publicada · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con fecha en la
+ruta: Luz Noticias (2026-10-19) · Hecho: no publicada; publicado el 2026-10-19 · Hora: no
+publicada · Consulta: 2026-10-20 07:06-09:30 · Estatus: Pendiente de corroboración · Conteo de
+armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: La plaza no figura en las cinco ediciones previas. NO es ARG-138-005.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-20 · Hora: 07:06 (CDMX) · Corte: Matutino · ARGOS N.° 138 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (III) — VIOLENCIA OPERATIVA: SINALOA, NUEVO LEÓN, CHIHUAHUA Y GUANAJUATO
+
+### SINALOA · NAVOLATO — ENFRENTAMIENTO ENTRE CIVILES Y MILITARES EN LA PALMA: DOS ABATIDOS [AMARILLO]
+
+── HECHO
+
+Navolato · LA PALMA, POR TITULAR · publicado el MARTES 20-OCT, por ruta · noche del LUNES
+19-OCT, ~23:00, SOLO POR RESUMEN · enfrentamiento entre civiles armados y personal del Ejército,
+por titulares (🟡) · 2 civiles abatidos, por titulares · QUIÉN INICIÓ: UN MEDIO REGIONAL DICE QUE
+LA PATRULLA FUE AGREDIDA, SOLO POR RESUMEN; NO ACREDITADO POR AUTORIDAD · camioneta con placas
+de Estados Unidos; FGR en el lugar, SOLO POR RESUMEN · bajas militares: no publicadas · armas de
+fuego y equipo táctico asegurados, sin cantidad, SOLO POR RESUMEN: evento cualitativo ·
+identidades: no publicadas · FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-138-007 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: quién inició solo por
+resumen; hora no fijada · Fuentes: Institucional 0 · Nacional 0 · Regional 2 · Abierta 0 · con
+fecha en la ruta: Luz Noticias (2026-10-20) · Hecho: 2026-10-19, noche, solo por resumen;
+publicado el 2026-10-20 · Hora: ~23:00 del lunes (solo por resumen) · Consulta: 2026-10-20
+07:06-09:30 · Estatus: Pendiente de corroboración · Conteo de armamento: sin fila — evento
+cualitativo, cantidad no determinada
+Deslindes y reservas: La Palma no figura en las cinco ediciones previas; Navolato figura en
+ARG-130-005 y ARG-132-001: otros hechos.
+
+### NUEVO LEÓN · MONTERREY — ASESINAN A UN COMERCIANTE AFUERA DE SU CASA EN LA COLONIA HIDALGO [AMARILLO]
+
+── HECHO
+
+Monterrey · COL. HIDALGO, POR RUTA; CALLE SENDERO DE LOS LIRIOS O CRUCE CON RODRIGO ZURIAGA,
+SOLO POR RESUMEN: CONTRADICHO · publicado el LUNES 19-OCT, por ruta · «alrededor de las 11:00»
+(El Porvenir), «poco antes del mediodía» (Posta) o «mañana» (Excélsior), SOLO POR RESUMEN; LA
+VENTANA ABRE A LAS 11:05 · 1 hombre muerto, comerciante, baleado afuera de su casa, por titular
+(🟡) · 43 años, por titular de Excélsior · llevado a la Cruz Roja, donde llegó sin vida, por su
+pareja o por un sobrino, SOLO POR RESUMEN: CONTRADICHO · Policía de Monterrey, ministeriales y
+Ejército, SOLO POR RESUMEN · ningún detenido publicado · identidad: no se reproduce · PUBLICADO
+EL DÍA DE APERTURA SIN HORA: PUEDE SER ANTERIOR A LAS 11:05 DEL 19
+
+── TRAZABILIDAD
+
+ARG-138-008 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por resumen
+(puede ser anterior a las 11:05); sin fuente institucional · Fuentes: Institucional 0 · Nacional
+3 · Regional 8 · Abierta 0 · con fecha en la ruta: MVS Noticias (2026/10/19) · Enfoque Monterrey
+(2026/10/19) · ABC Noticias (2026/10/19) · Hecho: 2026-10-19 · Hora: «alrededor de las 11:00»
+(El Porvenir) o «poco antes del mediodía» (Posta), solo por resumen · Consulta: 2026-10-20
+07:06-09:30 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
+asegurado: no publicado
+Deslindes y reservas: La colonia Hidalgo de Monterrey no figura en las cinco ediciones previas
+ni en el índice. NO es ARG-137-008 (Nogales de la Sierra, 18-oct).
+
+### CHIHUAHUA · CIUDAD JUÁREZ — BALEAN A UNA MUJER AFUERA DE UNA VIVIENDA EN LA COLONIA LOS ALCALDES [AMARILLO]
+
+── HECHO
+
+Ciudad Juárez · COL. LOS ALCALDES, POR TITULAR; CALLE ALBERTO ALMEIDA, SOLO POR RESUMEN; SEGUNDA
+CALLE CONTRADICHA ENTRE RESÚMENES · publicado el LUNES 19-OCT, por ruta (El Bordo); «la noche
+del lunes», SOLO POR RESUMEN · ~21:47, SOLO POR RESUMEN · 1 mujer herida a balazos afuera de una
+vivienda, por titular (🟡) · llevada a una clínica del IMSS; estado de salud no publicado, SOLO
+POR RESUMEN · casquillos .223 y 9 mm e impactos en un muro, SOLO POR RESUMEN · detenidos: ver
+ARG-138-010 · identidad: no publicada · PUBLICADO EL DÍA DE APERTURA SIN HORA: PUEDE SER
+ANTERIOR A LAS 11:05 DEL 19
+
+── TRAZABILIDAD
+
+ARG-138-009 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora y estado de
+salud solo por resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 0 ·
+Regional 2 · Abierta 0 · con fecha en la ruta: El Bordo (2026-10-19) · El Diario de Juárez
+(2026/oct/20) · Hecho: 2026-10-19 · Hora: ~21:47 (solo por resumen) · Consulta: 2026-10-20
+07:06-09:30 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
+asegurado: no publicado
+Deslindes y reservas: Los Alcaldes no figura en las cinco ediciones previas ni en el índice. El
+ataque y su detención: dos fichas.
+
+### GUANAJUATO · PÉNJAMO — BALEAN A UN ABUELO Y A SU NIETO EN EL CENTRO; QUEDAN GRAVES [AMARILLO]
+
+── HECHO
+
+Pénjamo · ZONA CENTRO, POR TITULAR; CALLE NEZAHUALCÓYOTL, SOLO POR RESUMEN · publicado el LUNES
+19-OCT, por ruta · 2 heridos graves: un abuelo y su nieto, por titular (🟡) · hombre de unos 65
+años y un adolescente, SOLO POR RESUMEN · ningún detenido publicado · identidades: no publicadas
+· PUBLICADO EL DÍA DE APERTURA SIN HORA: PUEDE SER ANTERIOR A LAS 11:05 DEL 19
+
+── TRAZABILIDAD
+
+ARG-138-013 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: una sola fuente; hora
+no publicada · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con fecha en la
+ruta: Periódico Correo (2026/oct/19) · Hecho: no publicada; publicado el 2026-10-19 · Hora: no
+publicada · Consulta: 2026-10-20 07:06-09:30 · Estatus: Pendiente de corroboración · Conteo de
+armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: El centro de Pénjamo no figura en las cinco ediciones previas; Pénjamo
+figura en ARG-113-003 (aseguramiento) y ARG-133-REC-001 (col. San Miguel, 14-oct, 3 muertos):
+otro lugar y otro día. NO es ARG-137-015 (Salamanca).
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-20 · Hora: 07:06 (CDMX) · Corte: Matutino · ARGOS N.° 138 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (IV) — ACCIONES INSTITUCIONALES
+
+### CHIHUAHUA · CIUDAD JUÁREZ — ARRESTAN A TRES POR EL ATAQUE A TIROS CONTRA UNA MUJER [VERDE]
+
+── HECHO
+
+Ciudad Juárez · publicado el MARTES 20-OCT, por ruta · 3 detenidos, por titular (🟢) · policías
+municipales y estatales los persiguen y arrestan la noche del lunes, SOLO POR RESUMEN · huyen en
+un vehículo; punto de la detención contradicho entre medios, SOLO POR RESUMEN · por el ataque de
+ARG-138-009 · cargos: no publicados · acusación, no condena · identidades: no publicadas ·
+FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-138-010 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: corporación y hora
+solo por resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 2
+· Abierta 0 · con fecha en la ruta: El Diario de Juárez (2026/oct/20) · El Bordo (2026-10-19) ·
+Hecho: 2026-10-19, solo por resumen; publicado el 2026-10-20 · Hora: noche del lunes (solo por
+resumen) · Consulta: 2026-10-20 07:06-09:30 · Estatus: Pendiente de corroboración · Conteo de
+armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Detención ligada a ARG-138-009 por titular. Armamento asegurado: no
+publicado
+
+### NUEVO LEÓN · CADEREYTA — FUERZA CIVIL CAPTURA A UN PRESUNTO LÍDER CRIMINAL Y A OCHO «GENERADORES DE VIOLENCIA» [VERDE]
+
+── HECHO
+
+Cadereyta Jiménez · publicado el LUNES 19-OCT, por ruta (ABC Noticias) y el 20-OCT (MVS) ·
+Fuerza Civil, por titular · 9 detenidos, por titulares (🟢): un presunto líder y 8 «generadores
+de violencia» (ABC) o 9 en cuatro operativos (MVS); el desglose de MVS incluye un adolescente de
+17 años, SOLO POR RESUMEN: COMPOSICIÓN CONTRADICHA · 3 armas cortas, vehículos, motocicletas y
+narcóticos sin cantidad, SOLO POR RESUMEN (El Porvenir, URL sin fecha); sin atribución por
+operativo · Allende y Montemorelos como zona de influencia, SOLO POR RESUMEN · acusación, no
+condena · identidades: no se reproducen · PUBLICADO EL DÍA DE APERTURA SIN HORA: PUEDE SER
+ANTERIOR A LAS 11:05 DEL 19
+
+── TRAZABILIDAD
+
+ARG-138-011 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: armamento solo por
+resumen; sin comunicado oficial localizado; fecha de los operativos no publicada · Fuentes:
+Institucional 0 · Nacional 1 · Regional 2 · Abierta 0 · con fecha en la ruta: ABC Noticias
+(2026/10/19) · MVS Noticias (2026/10/20) · Hecho: no publicada; publicado el 2026-10-19 · Hora:
+no publicada · Consulta: 2026-10-20 07:06-09:30 · Estatus: Parcialmente corroborado · Conteo de
+armamento: ARG-138-ARM-001
+Deslindes y reservas: Cadereyta no figura en las cinco ediciones previas ni en el índice.
+Posible relación con el balance semanal de la coordinación metropolitana (16-oct): no integrado
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-20 · Hora: 07:06 (CDMX) · Corte: Matutino · ARGOS N.° 138 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (V) — VENTANA ANTERIOR: ARGOS 136
+
+### GUERRERO · CUAJINICUILAPA — ASESINAN A UN ASPIRANTE DE MORENA; SU ESPOSA, HERIDA [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 136 — HORA SOLO POR RESUMEN · CABECERA MUNICIPAL, FRENTE AL TEMPLO
+PARROQUIAL, SOLO POR RESUMEN · tarde o noche del SÁBADO 17-OCT, SOLO POR RESUMEN; publicado el
+18-OCT, por ruta · 1 hombre muerto: aspirante de Morena a la alcaldía o coordinación municipal,
+por titulares (🔴 en su ventana) · su esposa, herida, por titular · al menos tres agresores
+disparan contra su camioneta, SOLO POR RESUMEN · la FGE Guerrero abre investigación por su
+homicidio, por titular de La Razón; carpeta por homicidio calificado y lesiones calificadas,
+SOLO POR RESUMEN · ningún detenido publicado · segundo apellido contradicho entre medios ·
+identidad pública por su aspiración política; nombre no reproducido
+
+── TRAZABILIDAD
+
+ARG-138-REC-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen · Fuentes: Institucional 1 · Nacional 4 · Regional 4 · Abierta 0 · con fecha en la ruta:
+Expansión (2026/10/18) · La Razón (2026/10/18) · Infobae (2026/10/18) · El Mañana (2026/10/18) ·
+La Razón (2026/10/19) · MVS Noticias (2026/10/19) · Hecho: 2026-10-17 · Hora: ~18:20 o ~19:00
+(solo por resumen) · Consulta: 2026-10-20 07:06-09:30 · Estatus: Parcialmente corroborado ·
+Ventana de origen: ARGOS 136 — HORA SOLO POR RESUMEN — fuera de todos los totales
+Deslindes y reservas: Cuajinicuilapa no figura en las cinco ediciones previas como hecho
+fichado; visto sin ficha en ARGOS 137 (color pendiente).
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-20 · Hora: 07:06 (CDMX) · Corte: Matutino · ARGOS N.° 138 · USO INSTITUCIONAL
+
+============================================================================
+
+## CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS
+
+Total nacional del corte: en la página de panorama.
+
+  · Armas cortas: 0 — NINGÚN ASEGURAMIENTO INTEGRABLE EN LA VENTANA · 1 fila fuera del total
+
+  · Armas largas: 0 — NINGÚN ASEGURAMIENTO INTEGRABLE EN LA VENTANA
+
+  · Sin categoría: 0 — NINGÚN ASEGURAMIENTO INTEGRABLE EN LA VENTANA
+
+  · Cartuchos: 0 — NINGÚN ASEGURAMIENTO INTEGRABLE EN LA VENTANA
+
+  · Cargadores: 0 — NINGÚN ASEGURAMIENTO INTEGRABLE EN LA VENTANA
+
+  · Granadas: 0 — NINGUNA GRANADA EN HECHO PROPIO
+
+  · AEI: 0 — NINGÚN AEI EN HECHO PROPIO
+
+  · Explosivos: 0 — NINGÚN EXPLOSIVO, DETONADOR NI INICIADOR EN HECHO PROPIO
+
+  · Armamento especial: 0 — NINGÚN ARMAMENTO ESPECIAL PUBLICADO
+
+  · Detenidos: 0 — NINGÚN DETENIDO EN EVENTO DE ASEGURAMIENTO
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-20 · Hora: 07:06 (CDMX) · Corte: Matutino · ARGOS N.° 138 · USO INSTITUCIONAL
+
+============================================================================
+
+## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
+
+  ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
+  ARG-138-ARM-001 | Nuevo León | Cadereyta Jiménez | no publicada · publicado 19-oct · día de apertura | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 9 | Fuerza Civil (por titular) | Bajo · FUERA DEL TOTAL · 9 detenidos, por titular (ABC Noticias 2026/10/19); 3 armas cortas, solo por resumen; largas, cartuchos y cargadores no publicados
+
+Lectura regional: sin lectura (ninguna fila integrada). Filas atenuadas: FUERA DEL TOTAL.
+VISTOS, NO INTEGRADOS: San Luis Potosí, Guardia Civil Estatal, 32 detenidos, por titular (El
+Heraldo de SLP 2026/10/19): agregado de 24 h sin municipio ni hora; 4 armas de fuego, 252
+cartuchos y 16 cargadores, solo por resumen · Michoacán, Jiquilpan, SSP y Defensa, 3 detenidos,
+por titulares (Esfera Noticias, Red Michoacán, Changoonga 2026/10/18); 31 cartuchos (23 de
+7.62×39 mm y 8 de .223), solo por resumen; publicado el 18-oct, ventana de ARGOS 136 o 137 ·
+Tamaulipas, Reynosa, Guardia Estatal, vehículo, municiones y artefactos metálicos tras repeler
+una agresión, por titular (La Región 2026/10/18); ponchallantas y cifras solo por resumen; quién
+inició, sin examinar; ventana de ARGOS 136 o 137, hora no fijada · Michoacán, Cotija, Ejército,
+un arma larga, un cargador y 25 cartuchos, solo por resumen; URL sin fecha.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-20 · Hora: 07:06 (CDMX) · Corte: Matutino · ARGOS N.° 138 · USO INSTITUCIONAL
+
+============================================================================
+
+## RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES
+
+  · Sentencias condenatorias: 0 — NINGUNA SENTENCIA INTEGRABLE EN LA VENTANA
+
+  · Personas sentenciadas: 0 — 1 candidata sin confirmar (Culiacán)
+
+  · Pena acumulada: 0 — ningún caso integrable
+
+  · Reparación del daño: 0 — ningún monto integrable
+
+  · Fiscalías con resultado: 0 — 15 estatales revisadas, 5 de lectura parcial · 17 NO REVISADA
+
+## CANDIDATOS Y COBERTURA
+
+  Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
+  Sinaloa · Culiacán | Un sentenciado, nombre no reproducido · feminicidio en grado de tentativa, por titular; hechos de abril de 2025 en la col. Libertad, solo por resumen | 18 años, por titular | FGE Sinaloa, Agencia del MP especializada en homicidio doloso (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · Luz Noticias 2026-10-19 · boletín no localizado; fiscaliasinaloa.gob.mx no devuelto · firmeza no informada · publicado el día de apertura sin hora | Bajo
+
+Sin vistas nuevas: los boletines de sentencia devueltos por los dominios (Durango, Colima, San
+Luis Potosí, Morelos, Tabasco, Yucatán) son anteriores a octubre o no tienen fecha en la ruta.
+
+## INDICADOR DE COBERTURA
+
+  Renglón | Resultado
+  Fiscalías revisadas en sentencias | 15 de 32, de ellas 5 de lectura parcial (Son, solo una convocatoria; NL, una página ajena a prensa; SLP, boletines sin fecha; Hgo, solo documentos legales; Yuc, nada posterior a 2025) · FGR revisada: lectura parcial, solo comunicados de 2019-2022 · Son, Dgo · Coah, NL, Tamps, SLP, Zac · Col, Gto · Mor, Hgo · Ver, Tab · Gro, Yuc
+  Fiscalías con sentencia publicada en la ventana | 0 por boletín leído · candidata solo por medios: Sinaloa
+  SIN RESULTADO INDEXADO EN VENTANA | 15 fiscalías estatales, 5 de lectura parcial
+  SIN ACTUALIZACIÓN CONSTATADA | 0
+  NO REVISADA — sentencias | 17: BC, BCS, Chih, Sin · Jal, Nay, Ags, Mich · CDMX, Edomex, Pue, Tlax, Qro · Oax, Chis, Camp, QRoo
+  Páginas no disponibles · errores de acceso | Fuentes con error de acceso: bloqueo de egreso: curl a www.gob.mx/fgr y fiscaliasinaloa.gob.mx, 07:39 del 20-oct: CONNECT tunnel failed, response 403; 0 errores medidos en los demás dominios: no se probaron por curl · dominios no devueltos por el buscador, dentro de las 17 NO REVISADA: Sin, Camp
+  Alto impacto y armamento | Alto impacto: 20 de 32 con consulta propia por entidad · 11 solo por consulta regional amplia: BCS, Dgo · SLP · Nay · CDMX, Mor, Tlax, Qro · Ver, Tab · Chis · NO REVISADA: Ags · armamento: 14 de 32 por dominio propio de seguridad —BC, BCS, Son, Dgo · NL, SLP, Zac · Nay · CDMX, Edomex, Pue, Hgo, Qro · Chis—, de ellas 7 de lectura parcial (Son y Dgo, solo portada; NL, una página; Nay, organigrama; Hgo, solo PDF institucionales; Qro, notas de 2019-2022; Chis, rutas opacas sin fecha); 5 por portal del gobierno estatal —Col, Ags, Mor, Tlax, Gro—; NO REVISADA (13): Chih, Sin · Coah, Tamps · Jal, Mich, Gto · Ver, Tab · Oax, Camp, Yuc, QRoo
+  Boletín federal | Acciones del 16, 17 y 18-oct: agregado publicado el 19-oct, ya registrado en ARGOS 137 · acciones del 19 y del 20-oct: SIN RESULTADO INDEXADO EN VENTANA en las tres formas de consulta · Defensa, Marina, Guardia Nacional y FGR: SRIV · gabinetedeseguridad.gob.mx: dominio no devuelto
+  Techo de confianza del producto | ★★★★☆ (techo de política) · esta edición no supera ★★★☆☆: sin lectura directa de documento oficial · BLOQUEO DE EGRESO REVERIFICADO EL 20-OCT: GOB.MX
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-20 · Hora: 07:06 (CDMX) · Corte: Matutino · ARGOS N.° 138 · USO INSTITUCIONAL
+
+============================================================================
+
+## VALORACIÓN ARGOS, CONCLUSIONES E INDICADORES
+
+── VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL
+
+1. NIVEL FIJADO POR DOS ROJOS: ARG-138-001 y ARG-138-002 · reserva en los dos.
+2. Contexto operativo: ARG-138-003 a ARG-138-009, ARG-138-012 y ARG-138-013.
+3. Respuesta institucional propia: ARG-138-010 y ARG-138-011.
+4. Ventana anterior: ARG-138-REC-001.
+5. 20 H 01 MIN; ONCE DE TRECE CON RUTA FECHADA Y MARCA DE FRONTERA (2 DE CIERRE, 9 DE APERTURA);
+ARG-138-001 Y ARG-138-002 SIN RUTA CON FECHA: TOTALES NO COMPARABLES SIN MÁS.
+
+── CONCLUSIONES DE INTELIGENCIA CRIMINAL
+
+1. CULIACÁN, SIETE HECHOS CON MUERTOS (OCHO VÍCTIMAS) DEL 15 AL 19-OCT (cálculo propio; horas
+solo por resumen). ARG-138-003 y ARG-138-004 se suman a ARG-137-009, ARG-136-004, ARG-135-001,
+ARG-135-007 y ARG-134-013. Línea: solicitar a la FGE Sinaloa el cotejo balístico entre los siete
+hechos — hipótesis; vínculo no acreditado.
+2. MAZATLÁN, TRES HOMICIDIOS PUBLICADOS EL LUNES TRAS ARG-137-004 (DOMINGO) (cálculo propio;
+horas solo por resumen). ARG-138-012, ARG-138-005 y ARG-138-006; dos víctimas mujeres. Línea:
+solicitar a la FGE Sinaloa si las carpetas comparten casquillos o vehículos — hipótesis.
+3. DOS ENFRENTAMIENTOS CON PERSONAL MILITAR EN DOS DÍAS (18/19 Y 19-OCT, DÍAS SOLO POR RESUMEN),
+SIN PARTE PUBLICADO. ARG-138-007 se suma a ARG-137-007 (Colima, mismo tipo de hecho). Línea:
+solicitar a la Defensa y a la Marina el parte, quién inició y el armamento asegurado.
+4. MONTERREY, CUARTO HECHO CON MUERTOS EN EL ÁREA METROPOLITANA EN CINCO DÍAS (cálculo propio).
+ARG-138-008 se suma a ARG-137-008, ARG-134-002 y ARG-134-007; ARG-138-011: Cadereyta sin
+antecedente en el índice. Línea: solicitar a Fuerza Civil el desglose del armamento y si los
+detenidos se vinculan con los homicidios — hipótesis; vínculo no acreditado.
+5. GUANAJUATO, DOS ATAQUES CON HERIDOS EN DOS DÍAS. ARG-138-013 se suma a ARG-137-015
+(Salamanca, tres baleados). Línea: solicitar a la FGE Guanajuato el estado de los lesionados y
+si los casquillos coinciden — hipótesis.
+
+## INDICADORES OFICIALES
+
+gabinetedeseguridad.gob.mx/resultados — dominio no devuelto por el buscador; lectura directa no
+disponible. SESNSP e INEGI: NO REVISADOS en esta edición · FGR: SRIV (gob.mx/fgr).
+Toda cifra de este cartelón sin emisor nombrado es cálculo propio de ARGOS.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-20 · Hora: 07:06 (CDMX) · Corte: Matutino · ARGOS N.° 138 · USO INSTITUCIONAL

@@ -1,0 +1,109 @@
+Eres el Analista Nacional de Inteligencia Criminal ARGOS. Vas a producir ARGOS 139
+con datos de HOY. Trabaja en español y dirígete a mí como Comisario.
+
+PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
+
+    TZ=America/Mexico_City date '+%Y-%m-%d %H:%M %Z'
+    git fetch origin
+    git branch -r | sed 's#origin/##' | sort
+    git merge --ff-only origin/main
+    git merge --ff-only origin/claude/argos-129
+    git merge --ff-only origin/claude/argos-130
+    git merge --ff-only origin/claude/argos-131
+    git merge --ff-only origin/claude/argos-132
+    git merge --ff-only origin/claude/argos-133
+    git merge --ff-only origin/claude/argos-134
+    git merge --ff-only origin/claude/argos-135
+    git merge --ff-only origin/claude/argos-136
+    git merge --ff-only origin/claude/argos-137
+    git merge --ff-only origin/claude/argos-138
+    git merge --ff-only origin/claude/argos-139-9anrf5
+    ls reports/ | grep '^argos-' | tail -6
+    ls reports/ | wc -l
+
+DEBES ENCONTRAR: última edición argos-2026-10-20 (ARGOS 138) y 212 archivos en
+reports/ (incluye _argos-139-retirado-fuentes.md y -equipos.md: versión de 43 min de
+ARGOS 139, RETIRADA por el destinatario el 20-oct; sus ARG-ID no existen; úsala solo
+como insumo y reverifica lo que tomes). 129 a 138 viven en claude/argos-129 … -138 y
+claude/argos-139-9anrf5 (encadenadas): si main no las contiene, los ff-only deben
+avanzar desde b0558a3 (o el PR #15 ya las fusionó). Si algún merge NO es
+fast-forward, PARA Y AVÍSAME.
+
+RED: comprueba primero si el egreso se abrió —
+    curl -s -o /dev/null -m 12 -w '%{http_code}\n' https://www.gob.mx/fgr
+Si NO devuelve 000, DILO y lee los boletines directamente (WebFetch). Si devuelve
+000, sigue bloqueado: solo WebSearch.
+
+VENTANA: abre 2026-10-20 07:06 CDMX —donde cerró ARGOS 138— y cierra a la HORA REAL
+de tu arranque (21-oct). Si dura menos de ~12 h, AVÍSAME ANTES DE LA OLA. Recalcula
+duración y densidad al sellar. 138: 20 h 01 min, 0,65.
+FECHA DEL ARCHIVO: argos-2026-10-21.html (sin sufijo).
+
+================================================================================
+MODO DE BÚSQUEDA
+================================================================================
+TODA BÚSQUEDA CON mode:"extended". Primera búsqueda: CONSULTA DE CONTROL en los dos
+modos. TOPE DE 200 BÚSQUEDAS POR TURNO, COMPARTIDO: OLA DE ~160, ~10 DEL COORDINADOR
+Y 30 PARA procedencia-cifras. Cifra de peso ENTRE COMILLAS. UN DOMINIO POR CONSULTA
+site:. LAS NOTAS DEL COORDINADOR REGISTRAN TODA URL QUE RESPALDE UNA FICHA.
+
+================================================================================
+ENCARGOS, PRIMERO Y SIN NEGOCIAR
+================================================================================
+ 0. CICLO: C (Occidente + Sureste), por la tabla de CLAUDE.md.
+    RÍO BRAVO: 🔴 CON -REC- (decisión del destinatario). Hecho: noche del SÁBADO 10-OCT
+    (dos resúmenes; buscar fragmento literal, p. ej. Animal Político) → VENTANA DE
+    ARGOS 129, no 136; fe de erratas a 129 (+1 rojo, +1 herida) y a 138. Fuentes y
+    clases ya verificadas en _argos-139-retirado-fuentes.md §5-§6 y §10.
+ 1. TULANTEPEC (Hidalgo), MIÉRCOLES 21-OCT: pena y reparación (fallo del 9-oct).
+ 2. EXFISCAL (ARG-136-006): resultado de la audiencia federal del 20; vinculación
+    estatal JUEVES 22-OCT (10:00 solo por resumen; puede moverse).
+ 3. FICHAS DE 138: Juchitán (-001) ruta fechada, heridos, edad · Cárdenas (-002) día e
+    identificación · Navolato (-007) quién inició · Mazatlán (-006) día y POSIBLE
+    DUPLICIDAD con el homicidio de plaza de La Marina de Noroeste (¿11-oct?) ·
+    Cadereyta (-011) desglose · Juárez (-009/-010) · Monterrey (-008) hora.
+ 4. YA RESUELTOS EN LA VERSIÓN RETIRADA (no repetir búsqueda salvo dato nuevo):
+    Ecatepec Colosio (no fichar sin nota propia fechada) · «El Charro» (Guerrero, no es
+    ARG-136-008) · narcomanta (Ciudad Juárez) · Puerto Morelos · Laureles Pinos ·
+    Palmanova · Cotija · Tlalnepantla (dos homónimos) · Ensenada («a cada uno»).
+ 5. VISTOS CON POTENCIAL ROJO: Cuautla, checador Ruta 8 (domingo 18) · Sonoyta–Puerto
+    Peñasco, restos «posiblemente humanos» (18-oct) · Chietla, «otro ataque».
+ 6. SENTENCIAS CANDIDATAS: Culiacán 18 años · General Cepeda (FGR) · Caborca (FGR) ·
+    Ensenada: boletines.
+Heredados: Nogales · Cachanillas · Ajuchitlán · Tepic · Apatzingán · El Tívoli ·
+Coquimatlán · Linares · Patamban (¿persona defensora?) · ARG-137-007 (¿color?) ·
+ARG-137-012 · Taxco (4 servidores públicos detenidos). Ecatepec Colosio: solo con
+nota propia fechada.
+
+================================================================================
+BARRIDO
+================================================================================
+ Plantilla: tools/plantilla-equipos-139.md (ya preparada; escribe la hora de cierre). Los equipos NO TIENEN BASH: cotejo con la herramienta Grep y su salida
+ pegada. Sección «AJENOS» obligatoria. ORDINALES EN TITULARES: buscar el primero.
+ Búsqueda por fecha de cierre AL FINAL DE LA OLA.
+ PRIORIDAD SOBRE EL CICLO: sentencias de las 14 NO REVISADA (Sin, Son, Dgo, Coah,
+ NL, SLP, Zac, Gto, Mor, Tlax, Hgo, Chis, Camp, Yuc); armamento de las 19 (BC, BCS,
+ Son, Dgo, NL, Jal, Nay, Ags, Col, Gto, CDMX, Edomex, Mor, Pue, Tlax, Hgo, Qro, Gro,
+ Chis) — cobertura de la versión retirada, prioridad sobre el ciclo; alto impacto con consulta propia para las 11 de solo regional amplia (BCS,
+ Dgo, Coah, SLP, Zac, CDMX, Pue, Tlax, Qro, Camp, Yuc). Variantes de dominio: ver
+ _pendientes.md, «Deuda de método (ARGOS 139)». Boletín federal: triple consulta
+ para el 19, 20 y 21-oct.
+
+================================================================================
+FORMA, CONSTRUCCIÓN Y CONTROLES
+================================================================================
+ · Parte de tools/datos-argos-139.py (ficha de Río Bravo ya redactada y controlada;
+   admite E vacío; totales derivados con mu/he) y de reports/argos-2026-10-20.html.
+ · Criterio: entra con marca el hecho con ruta fechada; queda visto el que solo tiene
+   día por resumen (excepción declarada para rojos). Solo el ALTO IMPACTO de una
+   ventana anterior se recupera con -REC-.
+ · Totales de muertos y heridos: derivados del arreglo (campos mu/he), nunca a mano.
+ · Conclusiones: patrón contra TODO el índice; ningún ARG-ID compartido con la
+   portada; ninguna repite una conclusión de la edición anterior ni el panorama.
+ · Móvil y texto SE GENERAN. node tools/validar.js … → validación OK.
+ · editor-duplicidad y procedencia-cifras: VEINTE PASES, dos rondas, informes en
+   reports/argos-<FECHA>-equipos.md.
+ · Marca «Consulta»: hora real de la última búsqueda, no una estimación.
+ · Detalle completo: reports/_arranque-ARGOS-139.md.
+
+Empieza por el Bloque 0 y dime qué encuentras antes de seguir.

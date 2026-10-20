@@ -39,6 +39,8 @@ if len(sys.argv) != 6:
     sys.exit(__doc__)
 
 NUM, FECHA, NUM_ANT, FECHA_ANT, HORA = sys.argv[1:6]
+# FECHA puede llevar sufijo de archivo («2026-10-20b») cuando dos ediciones comparten corte; se muestra solo la fecha
+FECHA_TXT, FECHA_ANT_TXT = FECHA[:10], FECHA_ANT[:10]
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DESK = f"{RAIZ}/reports/argos-{FECHA}.html"
@@ -74,10 +76,10 @@ if MARCA not in base:
     sys.exit("La móvil anterior no tiene el marcador de la sección 1; revisa el shell a mano.")
 shell = base[: base.index(MARCA)]
 shell = (shell
-         .replace(f"ARGOS {NUM_ANT} — Reporte Nacional de Seguridad ({FECHA_ANT}) · Móvil",
-                  f"ARGOS {NUM} — Reporte Nacional de Seguridad ({FECHA}) · Móvil")
+         .replace(f"ARGOS {NUM_ANT} — Reporte Nacional de Seguridad ({FECHA_ANT_TXT}) · Móvil",
+                  f"ARGOS {NUM} — Reporte Nacional de Seguridad ({FECHA_TXT}) · Móvil")
          .replace(f'<span class="n">{NUM_ANT}</span>', f'<span class="n">{NUM}</span>')
-         .replace(f"<b>{FECHA_ANT}</b>", f"<b>{FECHA}</b>"))
+         .replace(f"<b>{FECHA_ANT_TXT}</b>", f"<b>{FECHA_TXT}</b>"))
 shell = re.sub(r"\d{2}:\d{2} \(CDMX\)", f"{HORA} (CDMX)", shell)
 
 # CSS de la red de seguridad de tablas. Se inyecta aquí y no se hereda del shell
@@ -416,9 +418,14 @@ def tabla_a_ficha(p, con_tarjetas):
             return ('<p class="muted-note"><b>Índice por entidad: solo en la versión de '
                     'cartelón.</b> Cada hecho está en su ficha, más abajo.</p>')
         if es_arm_evento:
+            # ARGOS 137: una fila sin ficha propia (evento anterior publicado durante el
+            # corte) no tiene dónde leerse en el teléfono; se emite como tarjeta.
+            sin_ficha = [f for f in filas if "<a " not in (re.findall(r"<td[^>]*>(.*?)</td>", f, re.S) or [""])[0]]
+            extra = "".join(_celdas_a_tarjeta(f, cabeceras) for f in sin_ficha)
             return ('<p class="muted-note"><b>Desglose por evento: solo en la versión de '
-                    'cartelón.</b> Los totales nacionales están en las tarjetas de arriba y '
-                    'el armamento de cada hecho, en su ficha.</p>')
+                    'cartelón.</b> El armamento de cada hecho está en su ficha'
+                    + (', salvo las filas sin ficha propia, que siguen.</p><div class="tabla-tarjetas">'
+                       + extra + '</div>' if extra else '.</p>'))
         tarjetas = "".join(_celdas_a_tarjeta(f, cabeceras) for f in filas)
         if not tarjetas:
             return '<div class="tabla-scroll">' + interior + "</div>"
@@ -428,6 +435,8 @@ def tabla_a_ficha(p, con_tarjetas):
                 f"<code>reports/argos-{FECHA}.html</code>.</p>" + tarjetas + "</div>")
 
     p = re.sub(r'<div class="table-wrap">.*?</table>\s*</div>', sustituir, p, flags=re.S)
+    # La invitación a tocar un ARG-ID del índice no aplica: el índice no se publica en el teléfono (deuda de 135).
+    p = re.sub(r'\s*<br><b>Toque un ARG-ID para ir a su ficha</b>[^<]*', '', p)
 
     # Red de seguridad: una tabla escrita sin el envoltorio `table-wrap` no la
     # detectaba la regla de arriba y llegaba entera a la móvil, desbordando el
@@ -642,17 +651,11 @@ _ESC = open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file_
 N_ARM = len(set(re.findall(r'<tr id="(ARG-\d+-ARM-\d+)"', _ESC)))  # antes fijo en 9: desfasado en cada edición
 NOTA = f'''
   <p class="muted-note">
-    Esta es la <b>versión móvil</b> de ARGOS {NUM}, con el mismo contenido verificado que la versión de
-    cartelón (<code>reports/argos-{FECHA}.html</code>), reflujada a una sola columna. Las tablas
-    ejecutivas se presentan como fichas para evitar desplazamiento horizontal.
-    <b>Dos tablas no se publican aquí, por instrucción editorial</b>: el <b>índice por entidad</b> y el
-    <b>desglose de armamento por evento</b>. <b>Ningún dato se pierde</b> —el índice repite titulares de
-    las fichas y el desglose repite el apartado HECHO de cada una—, pero <b>los {N_ARM} ARG-ID del módulo de
-    armamento solo constan en el cartelón</b>. <b>Ninguna ficha se omitió ni se resumió.</b> El radar, el mapa de portada y el mapa de aseguramientos se generan de los mismos
-    arreglos <code>EVENTOS</code> y <code>EVENTOS_ARM</code> que la versión de escritorio mediante
-    <code>tools/gen-movil-svg.js</code>, y <b>los contadores del radar se toman del propio generador</b>,
-    no se escriben a mano: es el origen del error corregido en ARGOS 97.
+    <b>Versión móvil</b> de ARGOS {NUM}, derivada del cartelón (<code>reports/argos-{FECHA}.html</code>), en una columna.
+    <b>No se publican aquí</b> el índice por entidad ni el desglose de armamento por evento{(": <b>" + ("el ARG-ID" if N_ARM == 1 else f"los {N_ARM} ARG-ID") + " del módulo de armamento " + ("consta" if N_ARM == 1 else "constan") + " solo en el cartelón</b>") if N_ARM else ", que en esta edición no tiene filas"}. <b>Ninguna ficha se omitió ni se resumió.</b>
   </p>'''
+# los enlaces a filas de armamento no tienen destino en la móvil: se dejan como texto
+partes = [re.sub(r'<a href="#(ARG-\d+-ARM-\d+)"><code>\1</code></a>', r'<code>\1</code>', x) for x in partes]
 partes[-1] = partes[-1].replace("</section>", NOTA + "\n</section>")
 
 _mt = re.search(r"<span>Corte:\s*([^<]+?)\s*</span>", open(DESK, encoding="utf-8").read())
@@ -661,7 +664,7 @@ CORTE_TURNO = _mt.group(1) if _mt else "No declarado"
 FOOTER = f'''
 <footer class="footbar">
   <div>Versión 3.0 · Edición móvil</div>
-  <div>Fecha: {FECHA} · Hora: {HORA} (CDMX) · Corte: {CORTE_TURNO}</div>
+  <div>Fecha: {FECHA_TXT} · Hora: {HORA} (CDMX) · Corte: {CORTE_TURNO}</div>
   <div>ARGOS N.° {NUM} · <span class="uso">USO INSTITUCIONAL</span></div>
 </footer>
 

@@ -1,0 +1,395 @@
+ARGOS 129 — REPORTE NACIONAL DE SEGURIDAD
+REPORTE DIARIO DE INTELIGENCIA CRIMINAL
+«INVESTIGACIONES, BÚSQUEDA Y VERDAD»
+
+Corte informativo: 2026-10-11 · 08:58 (CDMX)
+Ventana: 10-oct 09:08 → 11-oct 08:58 CDMX (23 h 50 min)
+Versión 3.0 · Corte matutino · USO INSTITUCIONAL
+
+============================================================================
+
+[ RADAR CENTRAL — EN VIVO ]
+
+  · 🔴 Alto impacto · 1
+  · 🟡 Violencia operativa · 4
+  · 🟢 Acciones institucionales · 1
+
+[ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
+
+Color = evento de mayor impacto por entidad. Pase el cursor sobre un estado.
+
+## SEMÁFORO ARGOS
+
+  · 🔴 ROJO — ALTO IMPACTO — 1 evento
+
+  · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 4 eventos
+
+  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 1 eventos
+
+── LO QUE DEBE HACER EL MANDO
+
+1. EXIJA A PEMEX Y A LA FISCALÍA DE VERACRUZ EL SALDO OFICIAL (ARG-129-001) y revise la
+seguridad física de los accesos de las refinerías e instalaciones del sur de Veracruz.
+2. PIDA A LA SEMAR EL COMUNICADO ÍNTEGRO DEL 10-OCT (ARG-129-005): fecha y lugar de cada evento,
+y cotejo de sus artefactos explosivos con ARG-125-005.
+3. EXIJA A LA FISCALÍA DE MICHOACÁN LA CARPETA DE ZAMORA (ARG-129-REC-001): responsables del
+ataque y deslinde de los policías detenidos por robo a las víctimas.
+4. EXIJA A LA FISCALÍA DE OAXACA LA CIFRA OFICIAL DE VÍCTIMAS (ARG-128-001) y la constancia de
+intervención del Mecanismo de Protección.
+5. AUDITE EL CONTROL DE INGRESO DEL PENAL DE MAZATLÁN (ARG-127-004, ARG-128-004): personal de
+aduana, custodios de los módulos y registro de visitas.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-11 · Hora: 08:58 (CDMX) · Corte: Matutino · ARGOS N.° 129 · USO INSTITUCIONAL
+
+============================================================================
+
+## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
+
+  Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
+  Veracruz · Minatitlán (refinería Lázaro Cárdenas, portada norte) · 10-OCT ~22:00 | Ataque armado en el acceso de la refinería de Pemex: 1 vigilante muerto y 1 herido, saldo contradicho | 🔴 Rojo | SIN BOLETÍN · Pemex (por cita) | Infobae · La Silla Rota · Milenio · El Universal · López-Dóriga | ★★★☆☆ | ARG-129-001
+  Puebla · Chipilo (San Gregorio Atzompa) · 10-OCT ~14:00 | Disparan contra policías en una revisión: 1 policía estatal herido; camioneta asegurada, sin detenidos | 🟡 Amarillo | SSP Puebla (por cita) | Infobae · N+ | ★★★☆☆ | ARG-129-002
+  Sinaloa · Escuinapa (col. Insurgentes) · 10-OCT, TARDE | 1 joven asesinado a balazos en un taller mecánico | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-129-003
+  Sinaloa · Escuinapa (zona centro) · 10-OCT, MAÑANA | 1 mujer asesinada, vendedora de birria | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-129-004
+  Sinaloa · Mazatlán (inmediaciones de Las Porras) · PUB. 10-OCT, HORA NO FIJADA | Agresión a marinos: 1 detenido, 1 arma larga y 29 cartuchos, solo por resumen | 🟡 Amarillo | SEMAR (por cita) | La Razón · N+ | ★★☆☆☆ | ARG-129-005
+  Hidalgo · Pachuca (Las Lajas) · PUB. 10-OCT, HORA NO FIJADA | Cateo: 2 detenidos y 630 o 640 dosis; sin armamento | 🟢 Verde | SSP Hidalgo (por republicador) | La Silla Rota | ★★★☆☆ | ARG-129-007
+  Michoacán · Zamora (bar El Nuevo Quijote, col. Las Fuentes) · VENTANA ARGOS 125 | Ataque a un bar: 4 muertos y 3 heridos | 🔴 Rojo (en su ventana) | SSP Michoacán (por cita) | El Financiero · Latinus · Infobae | ★★★☆☆ | ARG-129-REC-001
+  Sinaloa · Culiacán (col. Los Pinos) · VENTANA ARGOS 128 | Cateo con armas y explosivos, sin cifra; sin detenidos | 🟢 Verde (en su ventana) | SIN BOLETÍN | El Universal · N+ | ★★★☆☆ | ARG-129-REC-002
+
+  Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Armas cortas | Armas largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Entidades
+  6 | 1 | 4 | 1 | 2 | 0 | 1 | 0 | 0 | 29 | 0 | 0 | 0 | 0 | 1 | 4
+
+Ventana 10-oct 09:08 → 11-oct 08:58 CDMX (23 h 50 min) · 6 hechos propios en 4 entidades ·
+densidad 0,25 hechos/hora, cálculo propio. Orden: los dos de hora publicada primero; después,
+los de hora no fijada. Cuatro de seis llevan FRONTERA DE VENTANA.
+LAS 2 RECUPERACIONES DEL FINAL PERTENECEN A VENTANAS ANTERIORES Y QUEDAN FUERA DEL SEMÁFORO, DEL
+MAPA, DEL RADAR Y DE TODOS LOS TOTALES.
+Toque un ARG-ID para ir a su ficha, donde están las fuentes, el nivel de confianza y los
+deslindes.
+
+NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
+
+Total de armas integradas: 1, solo por resumen. Detenidos = solo los del mismo evento de
+aseguramiento; los 2 de Pachuca, sin armamento, no entran. Entidades = con al menos un hecho
+propio. Muertos en hechos propios: 3 —1 en el rojo, saldo contradicho, y 2 en los amarillos de
+Escuinapa—; heridos: 2, Minatitlán y Chipilo; 2 muertos y 3 heridos si en Minatitlán son dos
+lesionados, versión de Pemex: cálculo propio.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-11 · Hora: 08:58 (CDMX) · Corte: Matutino · ARGOS N.° 129 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (I) — SÁBADO 10-OCT: MINATITLÁN, CHIPILO Y ESCUINAPA
+
+### VERACRUZ · MINATITLÁN — ATAQUE ARMADO EN EL ACCESO NORTE DE LA REFINERÍA DE PEMEX: UN VIGILANTE MUERTO Y UN HERIDO [ROJO]
+
+── HECHO
+
+Minatitlán · REFINERÍA LÁZARO CÁRDENAS, PORTADA NORTE · SÁBADO 10-OCT, noche, ~22:00 o poco
+antes de la medianoche (SOLO POR RESUMEN) · agresores disparan contra personal de vigilancia en
+el acceso y huyen · UN AGRESOR O VARIOS EN MOTOCICLETA; PORTADA NORTE O PUERTA 2: CONTRADICHO
+(SOLO POR RESUMEN) · 1 vigilante muerto y 1 herido, por titular de seis medios (🔴) · SALDO
+CONTRADICHO: PEMEX, POR TITULAR DE CUATRO MEDIOS, INFORMA «DOS LESIONADOS» Y NINGÚN FALLECIDO ·
+FGE Veracruz investiga, SOLO POR RESUMEN · despliegue de Policía Estatal, Marina, Defensa y GN,
+SOLO POR RESUMEN · cero detenidos · móvil no establecido · identidades no publicadas
+
+── TRAZABILIDAD
+
+ARG-129-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: saldo contradicho (un
+muerto o dos lesionados); hora contradicha, solo por resumen · Fuentes: Institucional 0 ·
+Nacional 7 · Regional 4 · Abierta 0 · con fecha en la ruta: La Silla Rota (2026/10/10) · Infobae
+(2026/10/11) · Hecho: 2026-10-10 · Hora: ~22:00 o poco antes de la medianoche, contradicha (solo
+por resumen) · Consulta: 2026-10-11 08:58-09:40 · Estatus: Parcialmente corroborado · Conteo de
+armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: Minatitlán y la refinería Lázaro Cárdenas no figuran en el índice. Infobae
+«EN VIVO» del 11-oct: liveblog, no fecha el hecho. 🔴 por ataque a infraestructura crítica
+
+### PUEBLA · CHIPILO — DISPARAN CONTRA POLICÍAS QUE INTENTABAN REVISAR UNA CAMIONETA: UN POLICÍA ESTATAL HERIDO [AMARILLO]
+
+── HECHO
+
+Chipilo de Francisco Javier Mina, San Gregorio Atzompa · SÁBADO 10-OCT, tarde, ~14:00 (SOLO POR
+RESUMEN) · los ocupantes de una camioneta disparan contra policías estatales y municipales que
+intentan detenerla para revisión, y huyen a pie · 1 policía estatal herido por arma de fuego,
+por titular; estable, SOLO POR RESUMEN (🟡) · camioneta Volkswagen Tiguan gris sin placas
+asegurada, por titular · cero detenidos · sin armas aseguradas publicadas · operativo con
+Marina, GN, Defensa, FGE y FGR, SOLO POR RESUMEN · ORIGEN DE LA PERSECUCIÓN CONTRADICHO: ROBO DE
+VEHÍCULO O VIGILANCIA · UN MEDIO LO FECHA EL «11 DE OCTUBRE»: EL RESTO, SÁBADO 10
+
+── TRAZABILIDAD
+
+ARG-129-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora y origen de la
+persecución, solo por resumen · Fuentes: Institucional 1 · Nacional 2 · Regional 10 · Abierta 0
+· con fecha en la ruta: Síntesis (2026/10/10) · Infobae (2026/10/11) · Hecho: 2026-10-10 · Hora:
+~14:00 (solo por resumen) · Consulta: 2026-10-11 08:58-09:40 · Estatus: Parcialmente corroborado
+· Conteo de armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: Chipilo y San Gregorio Atzompa no figuran en el índice. 🟡: la autoridad
+intenta la revisión y es repelida; sin muertos del personal. Si se acredita emboscada, sube a
+rojo
+
+### SINALOA · ESCUINAPA — ASESINADO A BALAZOS UN JOVEN EN UN TALLER MECÁNICO DE LA COLONIA INSURGENTES [AMARILLO]
+
+── HECHO
+
+Escuinapa · COL. INSURGENTES, TALLER MECÁNICO · SÁBADO 10-OCT, por la tarde (SOLO POR RESUMEN) ·
+hombres armados disparan contra un joven que reparaba una camioneta · 1 hombre de 25 años
+muerto, por titular (🟡) · FGE Sinaloa procesa el lugar, SOLO POR RESUMEN · cero detenidos ·
+móvil no establecido · identidad: no se reproduce · FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-129-003 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: hora, solo por
+resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 3 · Abierta
+0 · con fecha en la ruta: Línea Directa (2026-10-10) · Hecho: 2026-10-10 · Hora: tarde (solo por
+resumen) · Consulta: 2026-10-11 08:58-09:40 · Estatus: Parcialmente corroborado · Conteo de
+armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: Escuinapa figura en el índice: otros hechos. NO es el homicidio en un
+taller de motocicletas de la col. Pueblo Nuevo del 18-sep (fuentes en el archivo). NO es
+ARG-129-004 (zona centro). 🟡 por homicidio doloso único
+
+### SINALOA · ESCUINAPA — ASESINADA EN UN ATAQUE ARMADO UNA VENDEDORA DE BIRRIA EN LA ZONA CENTRO [AMARILLO]
+
+── HECHO
+
+Escuinapa · ZONA CENTRO · SÁBADO 10-OCT, por la mañana (SOLO POR RESUMEN) · ataque armado en su
+negocio · 1 mujer muerta, vendedora de birria, por titular (🟡) · SI FUE ANTES DE LAS 09:08,
+PERTENECE A LA VENTANA DE ARGOS 128 · cero detenidos · móvil no establecido · identidad: no se
+reproduce · FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-129-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; sin fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 5 · Abierta
+0 · con fecha en la ruta: Línea Directa (2026-10-10) · Luz Noticias (2026-10-10) · Hecho:
+2026-10-10 · Hora: por la mañana (solo por resumen) · Consulta: 2026-10-11 08:58-09:40 ·
+Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: NO es ARG-129-003 (taller de la col. Insurgentes): dos ataques según el
+titular. Hora de la mañana, solo por resumen: posible ventana de ARGOS 128. 🟡 por homicidio
+doloso único
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-11 · Hora: 08:58 (CDMX) · Corte: Matutino · ARGOS N.° 129 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (II) — HECHOS DE HORA NO FIJADA: MAZATLÁN Y PACHUCA
+
+### SINALOA · MAZATLÁN — AGREDEN A ELEMENTOS DE LA MARINA CERCA DE LAS PORRAS: UN DETENIDO CON UN ARMA LARGA [AMARILLO]
+
+── HECHO
+
+Mazatlán · INMEDIACIONES DEL POBLADO LAS PORRAS · fecha del hecho no publicada; comunicado del
+SÁBADO 10-OCT · elementos navales agredidos por presuntos integrantes de la delincuencia
+organizada; la Marina repele · CONTEXTO DEL DESPLIEGUE NO PUBLICADO: QUIÉN INICIÓ, NO
+DETERMINADO (🟡) · 1 detenido · 1 arma larga · 29 cartuchos — cifras SOLO POR RESUMEN; el titular
+nacional dice «arma», en singular · sin bajas publicadas · LAS DOS FUENTES DE LA CIFRA
+REPRODUCEN EL MISMO COMUNICADO: NO SON INDEPENDIENTES · COMUNICADO DE LA SEMAR DEL 10-OCT CON
+CINCO EVENTOS DE FECHA NO PUBLICADA, ALCANZADO SOLO POR MEDIOS · FRONTERA DE VENTANA — HORA NO
+FIJADA
+
+── TRAZABILIDAD
+
+ARG-129-005 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: fecha del hecho no
+publicada; cifras solo por resumen · Fuentes: Institucional 1 · Nacional 2 · Regional 3 ·
+Abierta 0 · con fecha en la ruta: La Razón (2026/10/10) · Línea Directa (2026-10-10) · Hecho: no
+publicada (comunicado del 2026-10-10) · Hora: no fijada · Consulta: 2026-10-11 08:58-09:40 ·
+Estatus: Parcialmente corroborado · Conteo de armamento: ARG-129-ARM-001
+Deslindes y reservas: Las Porras no figura en el índice. NO son los ataques a marinos de julio y
+agosto en Mazatlán (fuentes en el archivo). Otros eventos del mismo comunicado, no fichados: 7
+AEI EN VARADOS Y SIQUEROS — POSIBLE DUPLICIDAD CON ARG-125-005, NO INTEGRAR HASTA VALIDACIÓN; 1
+detenido con dosis en la col. Infonavit Playas, sin armamento; 103 mil dosis de El Rosario,
+4-oct, publicadas el 5-oct. 🟡: sin bajas del personal y sin contexto que acredite emboscada; si
+se acredita, sube a rojo
+
+### HIDALGO · PACHUCA — CATEO EN LAS LAJAS: DOS DETENIDOS Y DOSIS DE DROGA ASEGURADAS [VERDE]
+
+── HECHO
+
+Pachuca · LAS LAJAS · publicado el SÁBADO 10-OCT · SSP Hidalgo, con PGJEH, Defensa y GN (SOLO
+POR RESUMEN) · cateo · 2 detenidos, por titular (🟢) · DOSIS CONTRADICHAS: 630, POR TITULAR DE
+CUATRO MEDIOS, FRENTE A 640, POR TITULAR DEL BOLETÍN DE LA SSPH REPLICADO · sin armamento
+publicado · FRONTERA DE VENTANA — HORA NO FIJADA
+
+── TRAZABILIDAD
+
+ARG-129-007 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: dosis contradichas;
+hora no fijada · Fuentes: Institucional 1 · Nacional 1 · Regional 5 · Abierta 0 · con fecha en
+la ruta: La Silla Rota (2026/10/10) · Síntesis (2026/10/10) · Zunoticia (2026/10/10) · Hecho:
+2026-10-10, hora no fijada · Hora: no fijada · Consulta: 2026-10-11 08:58-09:40 · Estatus:
+Parcialmente corroborado · Conteo de armamento: sin fila — no hubo armamento asegurado
+Deslindes y reservas: Las Lajas no figura en el índice; Pachuca figura (ARG-95-001,
+ARG-108-007): otros hechos
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-11 · Hora: 08:58 (CDMX) · Corte: Matutino · ARGOS N.° 129 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (III) — RECUPERACIONES: VENTANAS DE ARGOS 125 Y 128
+
+### MICHOACÁN · ZAMORA — ATAQUE ARMADO EN UN BAR: CUATRO MUERTOS Y TRES HERIDOS [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 125 · BAR EL NUEVO QUIJOTE, COL. LAS FUENTES · noche del VIERNES 2-OCT,
+~23:00 (SOLO POR RESUMEN) · hombres armados irrumpen y disparan contra los clientes · 4 muertos
+—tres hombres y una mujer— y 3 heridos, por titular (🔴 en su ventana) · más de 30 casquillos de
+varios calibres, SOLO POR RESUMEN · ningún detenido por el ataque · 4 policías detenidos por
+robar pertenencias de las víctimas, por titular del 6-oct · SSP Michoacán: ataque directo entre
+células; FGE investiga — SOLO POR RESUMEN
+
+── TRAZABILIDAD
+
+ARG-129-REC-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora, solo por
+resumen · Fuentes: Institucional 1 · Nacional 3 · Regional 7 · Abierta 0 · con fecha en la ruta:
+Latinus (2026/10/3) · El Financiero (2026/10/04) · PorEsto (2026/10/3) · Diario de Yucatán
+(2026/10/03) · Correo (2026/oct/04) · Infobae (2026/10/03) · Infobae (2026/10/06) · Hecho:
+2026-10-02 · Hora: ~23:00 (solo por resumen) · Consulta: 2026-10-11 08:58-09:40 · Estatus:
+Parcialmente corroborado · Ventana de origen: ARGOS 125 — fuera de todos los totales
+Deslindes y reservas: Zamora no figura en el índice: ARGOS 125, cuya ventana contenía el 2-oct,
+no lo publicó. 🔴 por homicidio múltiple
+
+### SINALOA · CULIACÁN — CATEO FEDERAL EN LOS PINOS: ARMAS Y ARTEFACTOS EXPLOSIVOS RETIRADOS POR EL GRUPO ANTIBOMBAS [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 128 · COL. LOS PINOS, CALLE RÍO PAPALOAPAN · el operativo inicia la
+noche del VIERNES 9-OCT y se prolonga hasta la mañana del sábado 10 (SOLO POR RESUMEN) ·
+Ejército, FGR y GN aseguran una vivienda · armas y artefactos explosivos, retirados por el grupo
+antibombas de la GN, por titular · SIN CIFRA PUBLICADA — CANTIDAD NO DETERMINADA (🟢 en su
+ventana) · sin detenidos publicados · un ataque previo a la vivienda, SOLO POR RESUMEN, NO
+ACREDITADO
+
+── TRAZABILIDAD
+
+ARG-129-REC-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: armamento sin
+cifra; hora solo por resumen · Fuentes: Institucional 0 · Nacional 2 · Regional 3 · Abierta 1 ·
+con fecha en la ruta: Línea Directa (2026-10-10) · Hecho: 2026-10-09 · Hora: noche del 9-oct a
+la mañana del 10 (solo por resumen) · Consulta: 2026-10-11 08:58-09:40 · Estatus: Parcialmente
+corroborado · Ventana de origen: ARGOS 128 — fuera de todos los totales
+Deslindes y reservas: Los Pinos no figura en el índice. Inicio dentro de la ventana de ARGOS
+128, que no lo publicó. Blog del Narco: NO OFICIAL
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-11 · Hora: 08:58 (CDMX) · Corte: Matutino · ARGOS N.° 129 · USO INSTITUCIONAL
+
+============================================================================
+
+## CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS
+
+  · Armas cortas: 0 — NINGUNA ARMA CORTA EN HECHO PROPIO
+
+  · Armas largas: 1 — Las Porras, Mazatlán · SOLO POR RESUMEN
+
+  · Sin categoría: 0 — NINGUNA ARMA SIN CLASIFICAR INTEGRADA
+
+  · Cartuchos: 29 — Las Porras, Mazatlán · SOLO POR RESUMEN
+
+  · Cargadores: 0 — NINGÚN CARGADOR ATRIBUIBLE POR EVENTO
+
+  · Granadas: 0 — NINGUNA GRANADA PUBLICADA
+
+  · AEI: 0 — NINGÚN AEI INTEGRADO · los del comunicado de la SEMAR, POSIBLE DUPLICIDAD
+
+  · Explosivos: 0 — NINGÚN EXPLOSIVO, DETONADOR NI INICIADOR EN HECHO PROPIO
+
+  · Armamento especial: 0 — NINGÚN ARMAMENTO ESPECIAL PUBLICADO
+
+  · Detenidos: 1 — SOLO EN EVENTOS CON ASEGURAMIENTO DE ARMAMENTO
+
+1 fila de armamento de 1 hecho en 1 entidad, del comunicado de la SEMAR del 10-oct, cifras solo
+por resumen. Totales por categoría: cálculo propio. EL ÚNICO HECHO ROJO DEL CORTE NO DEJÓ
+ARMAMENTO ASEGURADO PUBLICADO.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-11 · Hora: 08:58 (CDMX) · Corte: Matutino · ARGOS N.° 129 · USO INSTITUCIONAL
+
+============================================================================
+
+## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
+
+  ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
+  ARG-129-ARM-001 | Sinaloa | Mazatlán (Las Porras) | no publicada · comunicado del 10-oct | 0 | 1 | 0 | 0 | 29 | 0 | 0 | 0 | 0 | 1 | Marina | Bajo · Aseguramiento derivado de una agresión a personal naval; cifras SOLO POR RESUMEN de dos medios que reproducen el mismo comunicado
+
+Lectura regional —1 fila, cálculo propio—: Noroeste 1 · Noreste 0 · Occidente 0 · Centro 0 ·
+Golfo 0 · Sureste 0. Sin evento cualitativo propio. El armamento de la recuperación de Culiacán,
+sin cifra, va en su ficha y no entra en esta tabla.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-11 · Hora: 08:58 (CDMX) · Corte: Matutino · ARGOS N.° 129 · USO INSTITUCIONAL
+
+============================================================================
+
+## RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES
+
+  · Sentencias condenatorias: 0 — NINGUNA INTEGRABLE · las candidatas del 10-oct, solo por medios, abajo
+
+  · Personas sentenciadas: 0 — las candidatas quedan en PENDIENTE DE CONFIRMACIÓN OFICIAL
+
+  · Pena acumulada: 0 — los años nunca se suman entre casos
+
+  · Reparación del daño: 0 — ningún monto ordenado y publicado por fuente oficial en la ventana
+
+  · Fiscalías con resultado: 0 — de 21 revisadas más la FGR · 11 NO REVISADA
+
+  Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
+  Sinaloa · Navolato (Villa Juárez) | Manuel Antonio «N» · feminicidio agravado de una menor; hecho de octubre de 2023, solo por resumen | 80 años, por titular de varios medios · TOPE DE CUMPLIMIENTO DE 70 O 60 AÑOS, CONTRADICHO, SOLO POR RESUMEN | FGE Sinaloa | PENDIENTE DE CONFIRMACIÓN OFICIAL · publicado el 10-oct; el título de la Fiscalía solo reproducido por un medio; el dominio oficial no fue devuelto por el buscador · FRONTERA DE VENTANA | Bajo
+  Nuevo León · García y Santa Catarina (por slug de un medio) | Tres personas · secuestro y homicidios | PENAS SOLO POR RESUMEN | FGE Nuevo León (por cita) | PENDIENTE DE CONFIRMACIÓN OFICIAL · un medio nacional, 10-oct en la ruta; contenido no verificado · FRONTERA DE VENTANA | Bajo
+  Baja California · Ensenada | Tres hombres · homicidio de tres turistas extranjeros, mayo de 2024 | SIN PENA: VEREDICTO DE CULPABILIDAD DEL 9-OCT; INDIVIDUALIZACIÓN DE SANCIONES, 16-OCT | FGE Baja California | No es sentencia hasta la audiencia de individualización · fuera de ventana | Medio
+
+  Renglón | Resultado
+  Fiscalías revisadas en sentencias | 21 de 32 · FGR revisada: Sí · BC, Dgo · Coah (débil), Tamps, SLP, Zac · Jal, Col, Nay, Ags, Mich · Pue, Qro, Edomex, Mor, Tlax (débil) · Ver, Tab · Gro, Chis, Yuc
+  Fiscalías con sentencia integrable | 0
+  Con sentencias publicadas en ventana solo por medios | 2 fiscalías estatales: Sinaloa y Nuevo León
+  SIN RESULTADO INDEXADO EN VENTANA | 21 fiscalías estatales
+  SIN ACTUALIZACIÓN CONSTATADA | 0 · exige lectura directa del portal
+  NO REVISADA — sentencias | 11: BCS, Son, Chih, Sin · NL · Gto · CDMX, Hgo · Camp, Oax, QRoo
+  Alto impacto y armamento | Alto impacto: 23 de 32 —BC, BCS, Son, Chih, Dgo, Coah, CDMX, Tlax y Camp, NO REVISADA— · armamento: 9 de 32 —Sin, Zac, Col, Gto, Ags, Ver, Tab, Yuc y Camp; las otras 23, NO REVISADA— · REVISADA = BÚSQUEDA DIRIGIDA QUE DEVOLVIÓ EL DOMINIO OFICIAL · GN, SEDENA y SEMAR: NO REVISADA
+  Boletín federal | Acciones del 9 y del 10-oct: SIN RESULTADO INDEXADO EN VENTANA en las tres formas de consulta
+  Techo de confianza del producto | ★★★☆☆ · BLOQUEO DE EGRESO REVERIFICADO EL 11-OCT: GOB.MX
+
+Vistas por primera vez, publicadas antes de la apertura: Estado de México, Operación Enjambre,
+27 personas (9-oct) · FGR, nueve personas por secuestro en CDMX y Edomex · Tamaulipas, El Mante
+· Zacatecas, violencia familiar · Baja California, robo con violencia. NO SE INTEGRAN: FUERA DE
+VENTANA.
+Candidatos heredados, siguen sin boletín oficial: FGR Chihuahua y Sinaloa (9-oct) · León, 26
+años 8 meses · NL, Condominios Constitución · Chihuahua, 8 años · Querétaro, Corregidora
+(boletín del 8-oct, hora no fijada). NO SE INTEGRAN.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-11 · Hora: 08:58 (CDMX) · Corte: Matutino · ARGOS N.° 129 · USO INSTITUCIONAL
+
+============================================================================
+
+## VALORACIÓN ARGOS, CONCLUSIONES E INDICADORES
+
+── VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL
+
+1. NIVEL FIJADO POR UN ROJO: ARG-129-001 (Veracruz).
+2. Contexto operativo: cuatro amarillos (ARG-129-002 a ARG-129-005).
+3. Respuesta institucional propia: ARG-129-007; ningún detenido publicado por ARG-129-001,
+ARG-129-003 y ARG-129-004.
+4. Sin acto nuevo en los seguimientos abiertos: ARG-128-001, ARG-128-003, ARG-128-004 y
+ARG-125-051.
+5. 23 H 50 MIN; CUATRO DE SEIS HECHOS CON FRONTERA DE VENTANA: TOTALES NO COMPARABLES SIN MÁS.
+
+── CONCLUSIONES DE INTELIGENCIA CRIMINAL
+
+1. HOMICIDIO SELECTIVO SOSTENIDO EN EL SUR DE SINALOA. Dos víctimas en Escuinapa en un día
+(ARG-129-003, ARG-129-004). Línea: cotejo balístico entre ambos hechos — hipótesis.
+2. FUEGO CONTRA LA POLICÍA PARA EVADIR REVISIONES VEHICULARES. ARG-129-002. Línea: origen del
+vehículo asegurado y su vínculo con robo de unidades.
+3. ALMACENAMIENTO DE ARMAS Y EXPLOSIVOS EN VIVIENDA URBANA DE CULIACÁN. ARG-129-REC-002. Línea:
+exigir el inventario — consistente con acopio logístico, requiere validación.
+4. VENTA AL MENUDEO EN COLONIAS DE PACHUCA. ARG-129-007. Línea: origen del abasto y cifra
+oficial de lo asegurado.
+5. LA BRECHA ENTRE DETENCIÓN Y CONDENA SIGUE ABIERTA. Ninguna sentencia integrable; las del
+10-oct solo existen en medios. Línea: exigir el boletín oficial de cada sentencia anunciada.
+
+gabinetedeseguridad.gob.mx/resultados/ — NO REVISADA: el buscador no devolvió páginas del
+dominio. SESNSP, INEGI y FGR: sin publicación estadística nueva localizada dentro de la ventana.
+Toda cifra de este cartelón sin emisor nombrado es cálculo propio de ARGOS.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-11 · Hora: 08:58 (CDMX) · Corte: Matutino · ARGOS N.° 129 · USO INSTITUCIONAL
