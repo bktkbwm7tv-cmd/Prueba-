@@ -2360,4 +2360,6 @@ la serie) · **1 hecho propio · 11 recuperaciones · densidad 0,04**.
 5. **Dominios**: `fiscaliaguerrero.gob.mx` confirmado; `fiscaliasinaloa.mx` responde sin boletines (`.gob.mx`, duodécima edición sin devolver); `ssp.chihuahua.gob.mx` no existe; sin dominio de fiscalía confirmado: Chis (`fiscaliachiapas.gob.mx`, `fiscalia.chiapas.gob.mx`), Camp (`fgecam.gob.mx`, `fgecampeche.gob.mx`), Yuc (`fiscalia.yucatan.gob.mx`); `ssp.tabasco.gob.mx`, `seguridad.jalisco.gob.mx`, `fiscalia.guanajuato.gob.mx`, `ssp.nl.gob.mx`: no devuelven.
 6. **`tools/validar.js`**: la regla de recuadros no contaba los que llevan `style`; corregida en 139 (la de 138 sigue validando).
 7. **Presupuesto**: 2 + 156 + 7 + 30 = **195**; segunda ronda sin búsquedas.
+8. **`tools/validar.js` no valida la versión móvil** (falla igual con la de 138: busca `<script>` y `table-wrap` del escritorio). `CLAUDE.md` pide la comprobación en las dos versiones: hoy la cubre la validación interna de `gen-movil.py`. Adaptar el validador.
+9. **Criterio de «actor político»** en conclusiones: declararlo (139: cargos de elección, excargos y aspirantes; quedó fuera `ARG-130-009`, servidor público designado).
 

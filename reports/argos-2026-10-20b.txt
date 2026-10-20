@@ -67,12 +67,12 @@ Seguimientos de ediciones previas, fuera del semáforo: ARG-138-007, segunda rut
 publicado el 20-oct por ruta (El Diario de Chihuahua 2026/oct/20); SSPE como emisora, solo por
 resumen; situación jurídica no publicada · ARG-138-006, víctima de nombre Daniel, solo por
 resumen; un medio lo sitúa «este martes»: DÍA CONTRADICHO · ARG-138-011, primera publicación el
-19-oct por ruta (ABC Noticias 2026/10/19); 2 operativos (Posta) o 4 (MVS, ABC), solo por
-resumen: CONTRADICHO · ARG-138-001, «noche del miércoles» incompatible con el calendario;
-heridos 2 a 3 y menor de 2 o 3 años: sin resolver · ARG-138-REC-001, ningún detenido publicado
-al 20-oct · ARG-137-007, la Mesa de Coordinación de Colima atribuye la agresión a los abatidos
-(«dispararon contra los elementos, quienes respondieron»), solo por resumen (Infobae, La Jornada
-2026/10/19); sin parte de la Marina.
+19-oct por ruta (ABC Noticias 2026/10/19); 4 operativos, por titular (MVS 2026/10/20); 2
+(Posta), solo por resumen: CONTRADICHO · ARG-138-001, «noche del miércoles» incompatible con el
+calendario; heridos 2 a 3 y menor de 2 o 3 años: sin resolver · ARG-138-REC-001, ningún detenido
+publicado al 20-oct · ARG-137-007, la Mesa de Coordinación de Colima atribuye la agresión a los
+abatidos («dispararon contra los elementos, quienes respondieron»), solo por resumen (Infobae,
+La Jornada 2026/10/19); sin parte de la Marina.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-20 · Hora: 07:49 (CDMX) · Corte: Matutino · ARGOS N.° 139 · USO INSTITUCIONAL
@@ -87,15 +87,16 @@ al 20-oct · ARG-137-007, la Mesa de Coordinación de Colima atribuye la agresi�
 
 VENTANA DE ORIGEN: ARGOS 129 — DÍA SOLO POR RESUMEN · Río Bravo · COLONIA IRREGULAR, AL SALIR
 DEL DOMICILIO DE UNA COLABORADORA, SOLO POR RESUMEN · noche del SÁBADO 10-OCT, por dos resúmenes
-coincidentes; NINGÚN FRAGMENTO LITERAL CON EL DÍA · denuncia pública desde el 17-OCT, por ruta ·
-diputada federal del PVEM, por titular; distrito 3, SOLO POR RESUMEN · herida con arma blanca,
-por titulares (🔴 en su ventana) · herida de 15 cm en el costado, por titular (El Universal); en
-el abdomen, SOLO POR RESUMEN; lado derecho o izquierdo: CONTRADICHO · agresor encapuchado salido
-de un terreno baldío, SOLO POR RESUMEN · hospitalizada, SOLO POR RESUMEN · «FGR investiga», por
-titulares (Elefante Blanco 2026/10/19, La Verdad); fiscalía local, SOLO POR RESUMEN: CONTRADICHO
-· la Fiscalía de Tamaulipas «desconoce detalles» de la agresión, por titular (CN Tamaulipas
-2026/10/19) · pide protección federal; solicitó apoyo de la Guardia Nacional desde marzo, SOLO
-POR RESUMEN · ningún detenido publicado · CIRCUNSTANCIAS SOLO POR RELATO DE LA VÍCTIMA; NINGUNA
+coincidentes; NINGÚN FRAGMENTO LITERAL CON EL DÍA · primera ruta fechada: 17-OCT · diputada
+federal del PVEM, por titular; distrito 3, SOLO POR RESUMEN · herida con arma blanca, por
+titulares (🔴 en su ventana) · herida de 15 cm en el costado, por titular (El Universal); en el
+abdomen, SOLO POR RESUMEN; lado derecho o izquierdo: CONTRADICHO · agresor encapuchado, por
+titular (Hoy Tamaulipas, ruta sin fecha); salido de un terreno baldío, SOLO POR RESUMEN ·
+hospitalizada, SOLO POR RESUMEN · «FGR investiga», por titulares (Elefante Blanco 2026/10/19, La
+Verdad); fiscalía local, SOLO POR RESUMEN: CONTRADICHO · «Desconoce Fiscalía detalles sobre
+agresión a diputada federal», por titular (CN Tamaulipas 2026/10/19); fiscalía estatal, SOLO POR
+RESUMEN · pide protección federal; solicitó apoyo de la Guardia Nacional desde marzo, SOLO POR
+RESUMEN · ningún detenido publicado · CIRCUNSTANCIAS SOLO POR RELATO DE LA VÍCTIMA; NINGUNA
 AUTORIDAD LAS CONFIRMA · identidad pública por su cargo; nombre no reproducido
 
 ── TRAZABILIDAD
@@ -155,13 +156,15 @@ Total nacional del corte: en la página de panorama.
 
 Lectura regional: sin lectura (ninguna fila integrada).
 VISTOS, NO INTEGRADOS — VENTANAS ANTERIORES: Michoacán, Cotija (Lourdes), ya vista en ARGOS 138:
-Ejército, 1 arma larga, 1 cargador y 25 cartuchos, ahora por fragmento del agregado federal del
-16, 17 y 18-oct (Milenio, publicado el 19) · Baja California, La Rumorosa, 2 detenidos, 5 armas
-y 17 cargadores, solo por resumen (En Línea BC 2026/10/19) · Puebla, Chietla y Tehuacán, Marina,
-4 detenidos y un arma de fuego, cartuchos sin cifra (Tus Buenas Noticias 2026/10/19) · Sinaloa,
-Culiacán (Industrial Bravo), ya vista en ARGOS 137: 16-oct, 4 detenidos, una ametralladora 7.62
-y 3 pistolas; 420 cartuchos —385 de 7.62 mm, 25 de 9 mm y 10 de .45—, solo por resumen · POSIBLE
-DUPLICIDAD CON ARG-135-ARM-001 — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN.
+1 arma larga, 1 cargador y 25 cartuchos, por fragmento del agregado federal del 16, 17 y 18-oct
+con reserva de extracto corrupto (Milenio, publicado el 19); Ejército, solo por resumen · Baja
+California, La Rumorosa, 2 detenidos, por titular (En Línea BC 2026/10/19); 5 armas, por titular
+(NDT, ruta sin fecha); 17 cargadores, solo por resumen · Puebla, Chietla y Tehuacán, 4
+detenidos, por titular (Tus Buenas Noticias 2026/10/19); Marina y un arma de fuego, solo por
+resumen; cartuchos sin cifra · Sinaloa, Culiacán (Industrial Bravo), ya vista en ARGOS 137:
+16-oct, 4 detenidos, una ametralladora 7.62 y 3 pistolas; 420 cartuchos —385 de 7.62 mm, 25 de 9
+mm y 10 de .45—, solo por resumen · POSIBLE DUPLICIDAD CON ARG-135-ARM-001 — NO INTEGRAR AL
+TOTAL HASTA VALIDACIÓN.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-20 · Hora: 07:49 (CDMX) · Corte: Matutino · ARGOS N.° 139 · USO INSTITUCIONAL
@@ -184,19 +187,20 @@ DUPLICIDAD CON ARG-135-ARM-001 — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN.
 
   Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
   Sinaloa · Culiacán | Un sentenciado, nombre no reproducido · feminicidio en grado de tentativa, por titular; hechos de abril de 2025, col. Libertad, solo por resumen | 18 años, por titular | FGE Sinaloa (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · candidata desde ARGOS 138, sin novedad · Luz Noticias y Línea Directa 2026-10-19 · boletín no localizado · firmeza no informada | Bajo
-  Coahuila · General Cepeda | Un sentenciado, nombre no reproducido · sustracción ilícita de hidrocarburo, por titular; procedimiento abreviado, solo por resumen | más de 13 años, por titular; 13 años 4 meses, solo por resumen; multa sin monto | FGR (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · Miled 2026/10/19 · boletín no localizado · publicado el 19-oct · firmeza no informada | Bajo
+  Coahuila · General Cepeda | Un sentenciado, nombre no reproducido · huachicol, por titular (Miled 2026/10/19); General Cepeda, «sustracción ilícita de hidrocarburo» y procedimiento abreviado, solo por resumen | más de 13 años, por titular; 13 años 4 meses, solo por resumen; multa sin monto | FGR (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · Miled 2026/10/19, única con fecha en la ruta; Capital México sin fecha · boletín no localizado · publicado el 19-oct · firmeza no informada | Bajo
   Sonora · Caborca | Un sentenciado, nombre no reproducido · transporte de casi 100 kg de metanfetamina, por titular | 8 años, solo por resumen | FGR (por titular de Telemax) | PENDIENTE DE CONFIRMACIÓN OFICIAL · Telemax, Infobae y El Heraldo de México 2026/10/19 · boletín no leído · publicado el 19-oct · firmeza no informada | Bajo
-  Baja California · Ensenada | Tres sentenciados, nombres no reproducidos · homicidio calificado de tres surfistas extranjeros (2024), robo con violencia y robo de vehículo, por titulares | 158 años, por titular (El Financiero 2026/10/17); 9 meses adicionales, por titular de Sin Embargo (ruta sin fecha); a cada uno, en tres penas (135 años + 10 años 9 meses + 13 años), solo por resumen de dos medios · no se suma entre sentenciados · PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA | FGE Baja California (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · candidata desde ARGOS 135 · El Financiero y CR Prensa 2026/10/17 · boletín no localizado en fgebc.gob.mx · individualización del 16-oct, solo por resumen | Bajo
+  Baja California · Ensenada | Tres sentenciados, nombres no reproducidos · multihomicidio de tres surfistas extranjeros, por titulares; homicidio calificado, robo con violencia, robo de vehículo y año 2024, solo por resumen | 158 años, por titular (El Financiero 2026/10/17); 9 meses adicionales, por titular de Sin Embargo (ruta sin fecha); ningún titular precisa si es por sentenciado; a cada uno, en tres penas (135 años + 10 años 9 meses + 13 años), solo por resumen de dos medios · no se suma entre sentenciados · PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA | FGE Baja California (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · candidata desde ARGOS 135 · El Financiero y CR Prensa 2026/10/17 · boletín no localizado en fgebc.gob.mx · individualización del 16-oct, solo por resumen | Bajo
 
 Fuera de ventana, sin integrar: Oaxaca, 80 años por feminicidio agravado (FGEO, boletín 2889,
-13-oct, fecha por listado) · Tamaulipas, FGJE-370-2026 (6-oct) · Santiago Tulantepec, Hidalgo:
-fallo condenatorio del 9-oct por la muerte de tres mujeres, «triple feminicidio» por titular (La
-Silla Rota 2026/10/9), sin pena; individualización el miércoles 21-oct, solo por resumen.
+13-oct, fecha por listado) · Tamaulipas, FGJE-370-2026 (6-oct, solo por resumen) · Santiago
+Tulantepec, Hidalgo: fallo condenatorio del 9-oct por la muerte de tres mujeres, «triple
+feminicidio» por titular (La Silla Rota 2026/10/9), sin pena; individualización el miércoles
+21-oct, solo por resumen.
 
 ## INDICADOR DE COBERTURA
 
   Renglón | Resultado
-  Fiscalías revisadas en sentencias | 18 de 32, de ellas 15 de lectura parcial · lectura no parcial: Tamps, Oax, Gro · parcial: BC, BCS, Chih · Jal, Nay, Ags, Mich, Col · CDMX, Edomex, Pue, Qro · Ver, Tab · QRoo · FGR revisada: no (solo por medios)
+  Fiscalías revisadas en sentencias | 18 de 32, por búsqueda dirigida; acceso directo: 0; de ellas 15 de lectura parcial · lectura no parcial: Tamps, Oax, Gro · parcial: BC, BCS, Chih · Jal, Nay, Ags, Mich, Col · CDMX, Edomex, Pue, Qro · Ver, Tab · QRoo · FGR revisada: no (solo por medios)
   Fiscalías con sentencia publicada en la ventana | 0 · candidatas solo por medios, publicadas antes de la ventana: Sinaloa, Baja California, FGR (Coahuila y Sonora)
   SIN RESULTADO INDEXADO EN VENTANA | 18 fiscalías estatales, 15 de lectura parcial
   SIN ACTUALIZACIÓN CONSTATADA | 0
@@ -224,29 +228,32 @@ reserva.
 
 ── CONCLUSIONES DE INTELIGENCIA CRIMINAL
 
-1. AGRESIONES A ACTORES POLÍTICOS, TRES EN OCHO DÍAS (cálculo propio). ARG-139-REC-001 (diputada
-federal, Río Bravo, 10-oct, arma blanca), ARG-131-REC-001 (exalcalde, Otatitlán, 11-oct) y
-ARG-138-REC-001 (aspirante de Morena, Cuajinicuilapa, 17-oct): ningún detenido publicado
-(Otatitlán: HEREDADO — NO REVERIFICADO, último cotejo 16-oct). Línea: solicitar a la FGR y a las
-fiscalías de Tamaulipas, Veracruz y Guerrero carpetas, detenidos y medidas de protección —
-vínculo no acreditado.
+1. AL MENOS TRES AGRESIONES A CARGOS DE ELECCIÓN, EXCARGOS O ASPIRANTES ENTRE EL 10 Y EL 17-OCT
+(8 días naturales; cálculo propio). ARG-139-REC-001 (diputada federal, Río Bravo, 10-oct solo
+por resumen, arma blanca), ARG-131-REC-001 (exalcalde, Otatitlán, 11-oct solo por resumen) y
+ARG-138-REC-001 (aspirante de Morena, Cuajinicuilapa, 17-oct): sin detenido publicado en Río
+Bravo y Cuajinicuilapa al 20-oct; Otatitlán, al 15-oct (HEREDADO — NO REVERIFICADO). Línea:
+solicitar a la FGR y a las fiscalías de Tamaulipas, Veracruz y Guerrero carpetas, detenidos y
+medidas de protección — vínculo no acreditado.
 2. FOSAS EN LA FRONTERA NORTE: CIFRAS DE COLECTIVOS SIN DATO OFICIAL (desarrollo de ARGOS 136).
 ARG-135-REC-003 (Tijuana): «10 cuerpos en tres días», por titular (Punto Norte 2026/10/18),
 mismo predio no verificado · ARG-135-REC-004 (Nogales) y Sonoyta: «8 osamentas en 3 días», por
 titular (El Imparcial 2026/10/19); 7 y 1, solo por resumen. Línea: solicitar a las fiscalías de
 Baja California y Sonora la cifra oficial.
-3. EXFISCAL DE CHIHUAHUA: DOS PROCESOS EN CURSO. ARG-136-006: ingreso al Altiplano por traición
-a la patria, por titular (El Financiero 2026/10/20); audiencia federal sin resultado publicado;
-vinculación estatal el jueves 22-oct, por titular (Excélsior). Línea: vigilar la audiencia
-estatal y la medida cautelar federal.
-4. MORELOS ORIENTE: HECHOS POSTERIORES A LA CAPTURA REVERTIDA DE ARG-131-002. Checador de la
-Ruta 8 asesinado en Cuautla con cartulina (domingo 18, solo por resumen; sin ARG-ID, 🟡 de la
-ventana de ARGOS 137) y narcomantas contra el fiscal estatal: «Escala violencia en Morelos tras
-operativo fallido», por titular (El Diario de Juárez 2026/oct/19). Línea: solicitar a la
-Fiscalía de Morelos si el homicidio se vincula con el operativo de Totolapan — hipótesis.
-5. SENTENCIAS FEDERALES PUBLICADAS SOLO POR MEDIOS. Huachicol en General Cepeda (más de 13 años)
-y metanfetamina en Caborca (casi 100 kg), FGR, 19-oct, por titular. Línea: solicitar a la FGR
-firmeza, decomiso y reparación del daño.
+3. EXFISCAL DE CHIHUAHUA: UN PROCESO FEDERAL Y UNO ESTATAL. ARG-136-006: en el Altiplano por
+traición a la patria, por titular (El Financiero 2026/10/20; traslado ya en ARGOS 137 con rutas
+del 18 y 19-oct: fecha CONTRADICHA); audiencia federal sin resultado publicado; vinculación
+estatal el jueves 22-oct, por titular (Excélsior). Línea: vigilar la audiencia estatal y la
+medida cautelar federal.
+4. MORELOS ORIENTE: HECHOS POSTERIORES A LA CAPTURA REVERTIDA DE ARG-131-002. Checador asesinado
+en Cuautla, por titular (Potosinoticias 2026/10/19); Ruta 8, domingo 18 y cartulina, solo por
+resumen; sin ARG-ID, 🟡 de la ventana de ARGOS 137 · narcomantas contra el fiscal estatal, solo
+por resumen · «Escala violencia en Morelos tras operativo fallido», por titular (El Diario de
+Juárez 2026/oct/19). Línea: solicitar a la Fiscalía de Morelos si el homicidio se vincula con el
+operativo de Totolapan — hipótesis: el titular no nombra el operativo.
+5. SENTENCIAS FEDERALES PUBLICADAS SOLO POR MEDIOS. Huachicol en Coahuila (más de 13 años, por
+titular de Miled; FGR solo por resumen) y metanfetamina en Caborca (casi 100 kg; FGR, por
+titular de Telemax), 19-oct. Línea: solicitar a la FGR firmeza, decomiso y reparación del daño.
 
 ## INDICADORES OFICIALES
 

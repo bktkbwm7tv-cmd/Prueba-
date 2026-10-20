@@ -942,3 +942,292 @@ Ninguno en cifras. Contradicciones internas: Valoración 5 vs panorama (pase 20a
 ## VEREDICTO: CORREGIR ANTES DE PUBLICAR
 
 Rutas: /home/user/Prueba-/reports/argos-2026-10-20b.html, -movil.html, .txt, -fuentes.md, -equipos.md; /home/user/Prueba-/tools/datos-argos-139.py; /home/user/Prueba-/reports/indice-arg-id.md. Antecedentes de los duplicados: /home/user/Prueba-/reports/argos-2026-10-19.html (Villa de Seris, Industrial Bravo), /home/user/Prueba-/reports/argos-2026-10-20.html (Cotija, candidato Culiacán), /home/user/Prueba-/reports/argos-2026-10-17.html y -18.html (Ensenada).
+
+## control-duplicidad-r2
+
+CONTROL editor-duplicidad, RONDA 2: ARGOS 139 (reports/argos-2026-10-20b.*)
+
+Veredicto global: CORREGIR ANTES DE PUBLICAR. Los cuatro hallazgos son de redacción y trazabilidad; ninguno toca cifras ni totales.
+
+Alcance y método
+- No edité nada ni hice búsquedas web.
+- Leí el borrador completo (escritorio, móvil y txt), el generador `tools/datos-argos-139.py`, fuentes §1-12, mi informe de la ronda 1 y los cartelones 15-20 de octubre.
+- Regeneré el escritorio con `python3 tools/datos-argos-139.py reports/argos-2026-10-20.html <scratchpad>/regen.html`. El resultado es idéntico a `reports/argos-2026-10-20b.html`, así que el generador y el HTML no divergen.
+- Comparé escritorio y móvil frase por frase. Solo difieren elementos de maquetación y lo que el móvil omite por diseño: índice por entidad y desglose ARM. Es el mismo aviso que en 137 y 138.
+- Reloj real al auditar: 08:21 CDMX. El último commit es de las 08:20.
+- Ejecuté `node tools/validar.js reports/argos-2026-10-20b.html 2026-10-20 2026-10-20`. Resultado: «validación OK», con 7 páginas, 1 ficha, 5 tablas, 3 recuadros (la regex ya admite `style`), 10 `sem-item` y semáforo 0/0/0 + rec 1.
+- El mismo validador sobre el móvil falla con «sin `<script>`» y «tablas 1 != table-wrap 0». Falla igual sobre `argos-2026-10-20-movil.html` (138), así que es una limitación de la herramienta y no del borrador. CLAUDE.md pide la comprobación «en las dos versiones»; queda como deuda de `tools/validar.js`.
+- Esta ronda no es el límite de «ya fusionado»: ARGOS 139 tiene una sola ficha, así que audité antes de cualquier fusión.
+
+TABLA DE 20 PASES
+
+| # | Comprobación | Veredicto | Evidencia |
+|---|---|---|---|
+| 1 | R1: vistos de armamento (Villa de Seris retirada; Cotija e Industrial Bravo marcados «ya vista» con `POSIBLE DUPLICIDAD CON ARG-135-ARM-001`) en las 3 versiones | OK | Escritorio `argos-2026-10-20b.html:598`, móvil `-movil.html:480`, txt `.txt:157-164`. «Villa de Seris» da 0 en las 3 y en el `.py`. Industrial Bravo: 420 = 385 + 25 + 10 (cuadra). Cotija: «ya vista en ARGOS 138», cifras iguales a `argos-2026-10-20.html:863`. En el txt la marca aparece partida en dos renglones (`.txt:162-164`). |
+| 2 | R1: candidatos de sentencias (Culiacán «desde ARGOS 138»; Ensenada «desde ARGOS 135»; Tulantepec en un solo lugar y «triple feminicidio») | OK | Escritorio `:624,:627,:631`; móvil `:502-504`; txt `:189,:192`. «triple homicidio» da 0 en las 3. Tulantepec ya no está en el panorama (`:512`). El 21-oct 2026 es miércoles. |
+| 3 | R1: Valoración 5 y hora de consulta | OK | Escritorio `:667` «NINGÚN HECHO PROPIO CON RUTA DEL 20-OCT»; móvil `:539`; txt `:223`; «NINGUNA PUBLICACIÓN» da 0. Consulta «07:58-08:20» en `:536`, `:737` (`CONSULTA_TXT`), móvil `:429`, txt `:109` y `.py`; «08:40» da 0. Es coherente con el reloj (08:21) y con fuentes §1. |
+| 4 | R1: deslinde de Río Bravo, `ssp.chihuahua`, costado/abdomen | OK | `:537` cita ARG-128-REC-003 y su retiro; «128-129» y «ponchallantas» dan 0. `:642` dice «dominio inexistente». `:530` pone «15 cm en el costado, por titular» y «abdomen» solo por resumen. Igual en móvil y txt. |
+| 5 | R1: portada | OK | Escritorio `:471-475`. REC-001 salió de la portada. La línea 1 es ARG-138-006 y las demás son 138-001/002/009/010/011. |
+| 6 | R1: conclusiones viejas retiradas (enfrentamientos, plaza de La Marina, condenas arrastradas) | OK | No quedan ARG-138-007, ARG-137-007 ni ARG-138-006 en `:674-678`. El seguimiento de 136-006 salió del panorama (`:512`) y vive solo en la conclusión 3. |
+| 7 | R1: índice, pendientes, fuentes §10 y regex del validador | OK | `indice-arg-id.md:926-928` tiene REC-001, FE-001 y FE-002. `_pendientes.md:11,22,2313-2317,2354-2361` actualizado. `tools/validar.js:67` ya admite `[^>]*`. Fuentes §10 registra la ronda 1. |
+| 8 | Paridad escritorio ↔ móvil ↔ txt | OK | Recuadros idénticos tras normalizar texto (portada, Valoración, Conclusiones). Mismas tarjetas, 4 candidatos, indicador y ficha. Divergencia de presentación, no grave: el móvil no lleva el índice por entidad, pero la ficha, los totales y los seguimientos son los mismos. |
+| 9 | Aritmética y cobertura | OK | Sentencias: 18 revisadas (3 + 15 parciales) + 14 NO REVISADA = 32, sin repeticiones. Armamento: 13 (9 parciales) + 19 = 32. Alto impacto: 21 + 11 = 32. EVENTOS = 1 (rec); semáforo 0/0/0; totales 0 con Recup. 1, fuera de total. |
+| 10 | Validador (escritorio) | OK | «validación OK». Ver nota de limitación del móvil arriba. |
+| 11 | Conclusión 1 (actores políticos): ¿ID correctos? | OK en IDs, CORREGIR en afirmaciones | ARG-139-REC-001 (10-oct, `indice:926`), ARG-131-REC-001 (Otatitlán, 11-oct, `indice:780`) y ARG-138-REC-001 (Cuajinicuilapa, 17-oct, `indice:923`) existen y coinciden. Dos defectos: (a) «ninguna con detenido publicado» no se reverificó para Otatitlán. Los últimos cotejos son de `argos-2026-10-15-fuentes.md:80` y `-16-fuentes.md:71`; `-19-fuentes.md:64` dice «no cotejado», y ARGOS 139 no lo buscó (0 menciones en equipos y fuentes 139). Es un dato `HEREDADO — NO REVERIFICADO`. (b) «tres en ocho días» es cálculo propio y no lo declara, a diferencia de las conclusiones de 135-138. |
+| 12 | Conclusión 1: ¿repite otra sección o una conclusión de 135-138? | OK | Ninguna conclusión de 135-138 trata agresiones a actores políticos. En el panorama, 138-REC-001 tiene un seguimiento (`:512`) y REC-001 tiene fila y ficha; la conclusión aporta el patrón, no el dato. Coinciden en «ningún detenido» (panorama, ficha y conclusión), lo que es tolerable porque la conclusión cambia de nivel. |
+| 13 | Conclusión 2 (fosas) | CORREGIR | Repite la conclusión 5 de ARGOS 136 (`argos-2026-10-18.html:895`): mismos ARG-135-REC-003 y -004, misma Línea (cifra oficial e identificación). Su título dice «CIFRAS EN AUMENTO», pero el propio texto dice «mismo predio no verificado» (135 publicó 4 cuerpos y restos frente a 10 ahora): el aumento no está acreditado. Tiene 539 caracteres. |
+| 14 | Conclusión 3 (exfiscal, ARG-136-006) | OK (observación) | ID correcto (`indice:873`). Hechos sostenidos en equipos:49-51 y 690: slug de El Financiero 2026/10/20 para el Altiplano, titular de Excélsior para «jueves», 22-oct por calendario, 10:00 solo por resumen. No repite 135-138. Observación: es un seguimiento procesal y, según la ronda 1, los seguimientos van al panorama. Se aceptaría en conclusiones si se acorta. |
+| 15 | Conclusión 4 (Morelos oriente, ARG-131-002) | CORREGIR | ID correcto (`argos-2026-10-13.html:554`, Totolapan, detención revertida; `indice:775`). No repite conclusión de 135-138 (0 menciones de Cuautla/checador/Ruta 8 en 15-20.html). Defectos: (a) el checador de la Ruta 8 es un 🟡 de la ventana de 137 «visto, sin ficha» (fuentes §6): aparece solo en la conclusión, sin ARG-ID, sin fila y sin ficha. (b) la quema de combis del 13-oct: equipos:396 la anota como «ya es ARG-131-002 (contexto)», y 131-002 reporta «quema de vehículos» del 12-oct. Fecha y municipios difieren, pero hay `POSIBLE DUPLICIDAD` no declarada. (c) «violencia sostenida» como título descansa en un titular. (d) 510 caracteres. |
+| 16 | Conclusión 5 (condenas federales por medios) | CORREGIR (menor) | General Cepeda y Caborca ya están en la tabla de candidatos (`:625-626`); es la segunda aparición, permitida. Pero «sin boletín leído» es hallazgo de método (ya consta en la tabla) y la Línea apenas pide el documento. Sustituye a la conclusión de 138-006, que se retiró bien. |
+| 17 | ¿La portada comparte ARG-ID con las conclusiones? | OK | Calculado sobre el HTML. Portada: 138-001, 138-002, 138-006, 138-009, 138-010, 138-011. Conclusiones: 131-002, 131-REC-001, 135-REC-003, 135-REC-004, 136-006, 138-REC-001, 139-REC-001. Intersección vacía, en escritorio y en móvil. La Valoración comparte 139-REC-001 con la conclusión 1, y 138-001/002 con la portada; no es infracción. |
+| 18 | ¿≤5 líneas y 3 recuadros? ¿Telegráfico? | CORREGIR | Cumple el conteo: 3 `alerta contexto` (`:468,:660,:671`; móvil `:372,:532,:543`), 5 ítems cada uno, y el validador cuenta 3. Falla el espíritu del límite: las conclusiones suman 2,149 caracteres frente a 1,392-1,477 en 136-138 (ítems de 454, 539, 375, 510 y 271), es decir, cerca de 50% más largas. Los ítems 2 y 4 ocupan unas 6 líneas en teléfono. |
+| 19 | ¿Algún recuadro explica un color o un mecanismo del método? | OK (reserva) | Portada: acciones. Valoración 1-4: aplicación de la metodología sin explicarla. Valoración 5: advertencia de comparabilidad (excepción permitida). Conclusiones 1-4: sin explicación de color. Reserva: la conclusión 5 («sin boletín leído») y el «mismo predio no verificado» rozan método; ver pases 16 y 13. |
+| 20 | Arbitraje de Ensenada («a cada uno») frente a 135 y 136 | OK | 135 (`argos-2026-10-17.html:932`): «158 años a cada uno, por titular; 9 meses adicionales solo por resumen». 136 (`argos-2026-10-18.html:844`): «158 años 9 meses a cada uno: 135 + 10 años 9 meses + 13 años». 139 (`:627`): «158 años 9 meses… a cada uno, en tres penas (135 + 10 años 9 meses + 13 años), solo por resumen de dos medios · no se suma entre sentenciados». Las tres coinciden: 135 + 10,75 + 13 = 158,75 años. La interpretación «a cada uno» tiene respaldo en dos resúmenes (equipos:699: Sin Embargo «por persona», El Financiero «a cada uno de los tres»), y ninguna fuente suma un total combinado. Por tanto no hay fe de erratas sobre 135 ni 136, y mi sugerencia R1 de ARG-139-FE-003 queda sin efecto. Fuentes §10 documenta el arbitraje. |
+
+Verificación de la ronda 1: todas las correcciones (puntos 1 a 13 y 15 de mi lista) están aplicadas en las tres versiones. El punto 14 (bajar REC-001 a ★★☆☆☆) lo declinó el coordinador (fuentes §10) con base en la escala: dos medios nacionales sin fuente institucional equivalen a ★★★. La decisión es defendible y queda registrada; yo la dejo así.
+
+DUPLICIDAD INTERNA
+- Ninguna. ARG-139-REC-001 es el único ID del cartelón. Los seguimientos del panorama (`:512`) remiten cada uno a su ARG-ID original y no abren ficha.
+
+YA PUBLICADO EN EDICIÓN ANTERIOR
+- Conclusión 2 (fosas, ARG-135-REC-003/004): ya aparece en la conclusión 5 de `argos-2026-10-18.html:895` con los mismos IDs y la misma Línea. Categoría: desarrollo nuevo (cifras de colectivos nuevas), pero la conclusión no lo declara como seguimiento.
+- Combis de Cuautla (13-oct) frente a «quema de vehículos» de ARG-131-002 (12-oct, `argos-2026-10-13.html:558`): `POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN` (aquí no hay totales).
+- Falsos vacíos: ninguno. El borrador no declara vacíos de ediciones anteriores.
+
+CRUCES VERIFICADOS SIN DUPLICIDAD
+- ARG-139-REC-001 frente a ARG-128-REC-003 (Río Bravo): fecha (10-oct frente a 8-oct), lugar (colonia frente a canal Anzaldúas), tipo (agresión frente a aseguramiento) y corporación.
+- ARG-131-REC-001, ARG-138-REC-001 y ARG-139-REC-001: tres entidades, tres fechas y tres víctimas distintas. La pertenencia al patrón «actores políticos» es de ARGOS y se declara «vínculo no acreditado».
+- Checador de Cuautla frente a ARG-131-002 (Totolapan): municipio, fecha (18-oct frente a 12-oct) y tipo (homicidio único frente a retención y bloqueos) los separan.
+- Ensenada: 135, 136 y 139 describen la misma sentencia con la misma pena (pase 20).
+- Tulantepec: ahora en un solo lugar (`:631`).
+
+REPETICIÓN ENTRE SECCIONES
+- Conclusión 2 repite la conclusión 5 de ARGOS 136 (pase 13).
+- Panorama (`:512`) y conclusión 1: ambos dicen «sin detenido» para ARG-138-REC-001; es aceptable.
+- Conclusión 5 repite la tabla de candidatos (`:625-626`) sin aportar fuente ni análisis: se resuelve con la corrección C5.
+- El resto de las funciones queda repartido: nota del semáforo no aparece, Valoración aplica la metodología y las conclusiones miran al corte siguiente.
+
+DESCUADRES ARITMÉTICOS Y DE COBERTURA
+- Ninguno en cifras: 18 + 14 = 32, 13 + 19 = 32, 21 + 11 = 32, EVENTOS = 1 y semáforo 0/0/0 (escritorio y móvil).
+- Observación de método, no bloqueante: el encabezado y los pies dicen «Hora: 07:49» (cierre de ventana) y la marca «Consulta» dice 07:58-08:20. Fuentes §1 lo explica (la orden de producir el corte llegó a las 07:58). Conviene que el archivo de fuentes recuerde que los hechos publicados después de las 07:49 no se asignan a esta ventana.
+
+CORRECCIONES CONCRETAS (texto exacto)
+
+La edición es del día en curso y no ha sido distribuida: corregir en sitio y dejar constancia en `argos-2026-10-20b-fuentes.md §10`. Hay que editar el generador `tools/datos-argos-139.py` y regenerar escritorio, móvil y txt. Referencias del escritorio: `:674`, `:675`, `:677`, `:678`; móvil `:546-550`; txt `:227-250`.
+
+C1. Conclusión 1 (`:674`):
+`<b>1. AGRESIONES A ACTORES POLÍTICOS, TRES EN OCHO DÍAS</b> (cálculo propio). ARG-139-REC-001 (diputada federal, Río Bravo, 10-oct, arma blanca), ARG-131-REC-001 (exalcalde, Otatitlán, 11-oct) y ARG-138-REC-001 (aspirante de Morena, Cuajinicuilapa, 17-oct): ningún detenido publicado (Otatitlán, <code>HEREDADO — NO REVERIFICADO</code>, último cotejo 16-oct). Línea: <b>solicitar a la FGR y a las fiscalías de Tamaulipas, Veracruz y Guerrero carpetas, detenidos y medidas de protección</b> — vínculo no acreditado.`
+
+C2. Conclusión 2 (`:675`), acortada y sin «aumento». Si el coordinador prefiere no repetir la de 136, borrarla y renumerar:
+`<b>2. FOSAS EN LA FRONTERA NORTE: CIFRAS DE COLECTIVOS SIN DATO OFICIAL</b> (desarrollo de ARGOS 136). ARG-135-REC-003 (Tijuana): «10 cuerpos en tres días», por titular (Punto Norte 2026/10/18), mismo predio no verificado · ARG-135-REC-004 (Nogales) y Sonoyta: «8 osamentas en 3 días», por titular (El Imparcial 2026/10/19); 7 y 1, solo por resumen. Línea: <b>solicitar a las fiscalías de Baja California y Sonora la cifra oficial</b>.`
+
+C3. Conclusión 3 (`:676`), opcional pero recomendada, para bajar longitud:
+`<b>3. EXFISCAL DE CHIHUAHUA: DOS PROCESOS EN CURSO.</b> ARG-136-006: ingreso al Altiplano por traición a la patria, por titular (El Financiero 2026/10/20); audiencia federal sin resultado publicado; vinculación estatal el jueves 22-oct, por titular (Excélsior). Línea: <b>vigilar la audiencia estatal y la medida cautelar federal</b>.`
+
+C4. Conclusión 4 (`:677`): retira las combis (posible duplicidad con 131-002) y declara que el checador no tiene ARG-ID:
+`<b>4. MORELOS ORIENTE: HECHOS POSTERIORES A LA CAPTURA REVERTIDA DE ARG-131-002.</b> Checador de la Ruta 8 asesinado en Cuautla con cartulina (domingo 18, solo por resumen; sin ARG-ID, 🟡 de la ventana de ARGOS 137) y narcomantas contra el fiscal estatal: «Escala violencia en Morelos tras operativo fallido», por titular (El Diario de Juárez 2026/oct/19). Línea: <b>solicitar a la Fiscalía de Morelos si el homicidio se vincula con el operativo de Totolapan</b> — hipótesis.`
+Si se quiere conservar la quema de combis, añadir «combis de Cuautla, 13-oct solo por resumen; <code>POSIBLE DUPLICIDAD CON LA QUEMA DE VEHÍCULOS DE ARG-131-002 (12-oct)</code>».
+
+C5. Conclusión 5 (`:678`):
+`<b>5. SENTENCIAS FEDERALES PUBLICADAS SOLO POR MEDIOS.</b> Huachicol en General Cepeda (más de 13 años) y metanfetamina en Caborca (casi 100 kg), FGR, 19-oct, por titular. Línea: <b>solicitar a la FGR firmeza, decomiso y reparación del daño</b>.`
+
+Con C1-C5 las conclusiones bajan a unos 1,600 caracteres, en línea con 136-138.
+
+Menor, no bloqueante (procedencia, fuera de mi mandato): la fila de Ensenada (`:627`) pone «158 años 9 meses, por titular» con las fuentes El Financiero y CR Prensa. Según equipos:699, el titular de El Financiero dice solo «158 años»; el «9 meses» sale del titular de Sin Embargo (ruta sin fecha, no listado en la fila). Sugerencia: «158 años, por titular (El Financiero 2026/10/17); 9 meses adicionales, por titular de Sin Embargo (ruta sin fecha)».
+
+Para el archivo de fuentes §7: añadir una línea «Ensenada: sin fe de erratas; el “a cada uno” de 135 y 136 se confirma (135 + 10 años 9 meses + 13 años por sentenciado)», para que el siguiente editor no reabra el tema. Falta una línea equivalente para la limitación de `validar.js` sobre el móvil, que va a `_pendientes.md` (deuda de método).
+
+Índice ARG-ID: existe (`reports/indice-arg-id.md`) y ya incluye las tres entradas de 139.
+
+VEREDICTO: CORREGIR ANTES DE PUBLICAR (C1 a C5; tras aplicarlas, regenerar las tres versiones y volver a ejecutar `node tools/validar.js`).
+
+Archivos revisados (rutas absolutas):
+- /home/user/Prueba-/reports/argos-2026-10-20b.html
+- /home/user/Prueba-/reports/argos-2026-10-20b-movil.html
+- /home/user/Prueba-/reports/argos-2026-10-20b.txt
+- /home/user/Prueba-/reports/argos-2026-10-20b-fuentes.md
+- /home/user/Prueba-/reports/argos-2026-10-20b-equipos.md
+- /home/user/Prueba-/reports/indice-arg-id.md
+- /home/user/Prueba-/reports/_pendientes.md
+- /home/user/Prueba-/tools/datos-argos-139.py
+- /home/user/Prueba-/tools/validar.js
+
+## control-procedencia-r2
+
+CONTROL PROCEDENCIA-CIFRAS, RONDA 2 — ARGOS 139
+Borrador auditado: /home/user/Prueba-/reports/argos-2026-10-20b.html (leído vía generador /home/user/Prueba-/tools/datos-argos-139.py y /home/user/Prueba-/reports/argos-2026-10-20b.txt; cotejados con grep html y móvil).
+Contraste: /home/user/Prueba-/reports/argos-2026-10-20b-equipos.md (sección «control-procedencia-r1» y los seis informes), /home/user/Prueba-/reports/argos-2026-10-20b-fuentes.md (§§4-10), cartelones previos 128-138 y .git/logs/HEAD.
+No edité ningún archivo. Búsquedas utilizadas: 0 de 0. Sin WebSearch ni WebFetch.
+Límite: no pude reabrir ninguna URL. «Citable» significa que el titular o slug consta en un informe de equipo o en mi informe R1. No lo verifiqué yo en esta ronda.
+
+VEREDICTO GLOBAL: CORREGIR ANTES DE PUBLICAR.
+- Las correcciones de R1 están aplicadas, con matices (pase 19).
+- Lo nuevo de R2 no llega al umbral de fe de erratas, salvo un caso (Ensenada, «a cada uno»; ver Correcciones, punto 2).
+- Hay 2 hallazgos de fondo y 10 de clase o redacción.
+- Fondo 1: la Conclusión 5 atribuye a la FGR «por titular» una condena (Cepeda) cuyo titular no nombra a la FGR.
+- Fondo 2: la Conclusión 1 («tres en ocho días», «ninguna con detenido») es un conteo propio sin declarar, con un detenido no reverificado y una exclusión no explicada.
+- Ninguna cifra del total numérico está en riesgo: todos los totales son 0, y la aritmética verificada cuadra.
+
+A. TABLA DE 20 PASES
+
+| # | Dato o cifra | Respaldo localizado (informe / fragmento) | Clase | Veredicto |
+|---|---|---|---|---|
+| 1 | REC-001: ataque la noche del sábado 10-oct; denuncia desde el 17-oct | R1 pase 1: ningún titular ni ruta trae el día; dos resúmenes («noche del 10 de octubre»). Ruta Diario de Chihuahua oct/17, Infobae 2026/10/18. Calendario: 10-oct-2026 es sábado, coherente. Ventana de ARGOS 129: 10-oct 09:08 → 11-oct 08:58 (11.txt:6) | Día: SOLO POR RESUMEN. 17-oct: POR RUTA | OK, marcado como tal. Matiz: «desde el 17-oct» es «primera ruta fechada» (R1 pase 6: Hoy Tamaulipas y Noroeste no llevan fecha, no se puede excluir algo anterior). «NINGÚN FRAGMENTO LITERAL CON EL DÍA» choca con el fragmento de Animal Político sin URL que cita R1 (pase 1): anotarlo en fuentes |
+| 2 | REC-001: herida de 15 cm; abdomen; lado; encapuchado | Slug El Universal «…herida-de-15-cm-en-el-costado». Abdomen: solo resumen Infobae. Lado: Diario de Chihuahua e Infobae (derecho) vs El Universal, Expreso, Mercurio (izquierdo). Titular Hoy Tamaulipas 630159 «Encapuchado apuñala a diputada…» (notas coordinador, línea 10) | 15 cm: POR TITULAR. Abdomen: RESUMEN. Lado: CONTRADICHO. Encapuchado: titular sin fecha | OK, R1 aplicado. «Encapuchado» podría subir a titular (Hoy Tamaulipas, sin fecha en ruta). «Baldío» sigue en resumen |
+| 3 | REC-001: «FGR investiga»; la Fiscalía «desconoce detalles»; PVEM; distrito 3 | Elefante Blanco 2026/10/19 y La Verdad (titulares FGR). CN Tamaulipas 2026/10/19: «Desconoce Fiscalía detalles sobre agresión a diputada federal…». ABC 2026/10/19 «Diputada federal del PVEM…». Distrito 3: resumen Infobae | Titular. «Tamaulipas» y el nombre del fiscal: RESUMEN | CORREGIR (menor): el cartelón cita «desconoce detalles» entre comillas; el titular dice «Desconoce Fiscalía detalles». «De Tamaulipas» es resumen (R1 pase 5) |
+| 4 | REC-001: recuento I0 N2 R11 y 7 rutas fechadas | Fuentes §6 desglosa R11: Diario de Chihuahua, Expreso, ABC, En Línea Directa, CN Tamaulipas, Elefante Blanco, Hoy Tamaulipas, Mercurio, Horacero, Noroeste, Vanguardia (=11). N2: Infobae, El Universal. Las 7 rutas fechadas coinciden con notas del coordinador y R1 | La aritmética cuadra y es rastreable. El criterio de inclusión no | CORREGIR (menor): «vistas, no contadas» deja fuera a La Verdad (citada en el HECHO como respaldo de «FGR investiga»), El Congresista (titular «15 cm», R1 pase 2), Posta, Estrella Digital y Más Información. Se cuentan cinco regionales sin fecha en ruta y se excluyen otros sin fecha. Declarar el criterio, o contar La Verdad (R=12). Además, Noroeste y Vanguardia no son tamaulipecos y Posta es de alcance nacional: la tipología no está justificada. Hay un cálculo no declarado: 9 + 2 + CN Tamaulipas y Elefante Blanco, que viene de R1 punto 8 |
+| 5 | «Consulta 07:58-08:20» | Git (hora CDMX = UTC−6, conversión mía): checkout 07:47:56; commit «aplazado al 21-oct; Río Bravo fijado en rojo» 07:53:31; plantilla de equipos 08:02:05; borrador estable 08:10:27; correcciones R1 procedencia 08:17:51; ronda 1 de controles 08:20:31; índice y pendientes 08:22:14. Fuentes §«Hora de cierre»: la última búsqueda (R1) terminó antes de las 08:20 | Fin 08:20: COMPATIBLE (última búsqueda < 08:17:51). Inicio 07:58: NO CONCLUYENTE | Observación: el commit de las 07:53:31 ya dice «Río Bravo fijado en rojo con -REC-» y fuentes §5 dice «decisión del destinatario 07:58». Además, el curl del §2 es de las 07:49 y la consulta de control va antes de la orden de las 07:58. Si «Consulta» es el intervalo de consulta de fuentes, el inicio podría ser anterior. Conciliar o ampliar a «07:49-08:20». Ya no hay «08:40» en html, móvil ni txt |
+| 6 | Semáforo 0/0/0, Recup. 1, 43 min, 0,00 h⁻¹, muertos 0, heridos 0 (+1 en la recuperación) | Derivados del arreglo (py: MU, HE, MU_REC, HE_REC). Ventana de 138 cerró 07:06 (20.txt:5-6); 07:06→07:49 = 43 min = 0,717 h; 0/0,717 = 0,00 | CÁLCULO PROPIO, declarado en el panorama y fuentes §9 | OK |
+| 7 | Seguimientos del panorama (138-007, 138-010, 138-006, 138-011, 138-001, 138-REC-001, 137-007) | Luz Noticias 2026-10-20 (Navolato). El Diario de Chihuahua oct/20 «Arrestan a tres» (R1 pase 8). Sinaloahoy «este martes» (resumen, R1 pase 10). ABC 2026/10/19 «líder criminal y 8 generadores» (R1 pase 9). Infobae 2026/10/19 y La Jornada 2026/10/19 (Colima). Sureste: sin detenidos al 20 | Titular, salvo lo indicado | CORREGIR (menor): Cadereyta pone «4 (MVS, ABC), solo por resumen». El slug de MVS 2026/10/20 es «…detienen-a-nueve-personas-tras-cuatro-operativos-de-fuerza-civil…» (Noreste, línea 158). Es TITULAR, no resumen. El «3 armas cortas» fue retirado, bien. Colima: «dispararon contra los elementos, quienes respondieron» (resumen) correcto. Fuentes §5 aún dice «primer disparo» |
+| 8 | Conclusión 1: «tres en ocho días», 10 / 11 / 17-oct, «ninguna con detenido» | Diputada: 10-oct (resumen). Otatitlán: 13.txt:252 «noche del DOMINGO 11-OCT… SOLO POR RESUMEN»; rutas 2026/10/12. Cuajinicuilapa: sábado 17 (Equipos, línea 555). Detenidos: Cuajinicuilapa «sin detenidos al 20» (línea 638); Río Bravo «ningún detenido publicado»; Otatitlán: 15-fuentes «sin detenidos» al 15-oct; en 20b-equipos no aparece Otatitlán | INFERIDA (conteo y ventana) + HEREDADA (Otatitlán) | CORREGIR (fondo). Ver Inferidas. «Ocho días» no está en fuentes §9 ni en el cartelón como cálculo. Otatitlán «11-oct» es resumen sin marca; las dos otras fechas tampoco se marcan. «Ninguna con detenido» no se reverificó para Otatitlán. Falta ARG-130-009 (Escuinapa, coordinador municipal de Protección Civil asesinado el 11-oct, 🔴, 12.txt:55), dentro del mismo intervalo |
+| 9 | Conclusión 2: «van 10 cuerpos en tres días», «8 osamentas en 3 días», 7+1, «cifras en aumento» | Punto Norte 2026/10/18 (titular). El Imparcial 2026/10/19 (titular). R1 pase 18: el «10» mezcla cuerpos, osamentas y restos, y choca con «10 cadáveres» de 2024. 7+1: resumen. Fichas de origen: 4 cuerpos (16-oct) y 3 fosas con 5 osamentas (17.txt:65-66) | Cifras: POR TITULAR (colectivo). Composición y 7+1: RESUMEN. «En aumento»: INFERIDA | CORREGIR. «Cuerpos, osamentas y restos, por titular» atribuye al titular la composición, que es de resumen. «Cifras en aumento» compara 4→10 y 5→8, no comparables, sin que el cartelón muestre las cifras de origen ni declare el cálculo |
+| 10 | Conclusión 3: exfiscal, Altiplano, «jueves», 22-oct, 10:00, «dos procesos» | El Financiero 2026/10/20 «ingresa al penal del Altiplano…». Excélsior «Jueves audiencia…» (sin fecha en ruta). 10:00 solo en La Parada Digital (resumen). 22 = calendario, declarado «por calendario». ARGOS 137 (19.txt:88-91) ya publicó «lo trasladó al Altiplano» por La Jornada 2026/10/18 e Infobae 2026/10/19 | Altiplano: TITULAR. 22-oct: CÁLCULO DE CALENDARIO declarado. 10:00: RESUMEN. «Dos»: conteo propio | CORREGIR (menor): fecha del ingreso al Altiplano discrepante entre ediciones (18-19 vs 20-oct): no citada ni resuelta. «Dos procesos» (federal + estatal) es conteo propio no declarado. R1 punto 10 aplicado |
+| 11 | Conclusión 4: Morelos (quema de combis 13-oct, checador domingo 18, narcomantas, título de El Diario de Juárez, «captura revertida») | Centro (líneas 371 y 396): slug La Silla Rota 2026/10/15 «frenan-servicio-5-rutas…-incendian-6-combis»; «13-oct según La Silla Rota». Checador: Potosinoticias 2026/10/19 («asesinan a checador»), Enboga («…checador-de-la-ruta-8…»); domingo 18 y cartulina por resumen. Narcomantas contra el fiscal Blumenkron: resumen. Diario.mx oct/19/1144227 slug «escala-violencia-en-morelos-tras-operativo-fallido» (réplica de Reforma). 13.txt:119-120 «la detención quedó revertida» | Combis: TITULAR (slug). 13-oct: RESUMEN, marcado. Checador: homicidio por titular; día, cartulina: RESUMEN. Narcomantas: RESUMEN, sin marca. Título: citable. «Tras la captura revertida de ARG-131-002»: lectura propia | CORREGIR. Detalles en Inferidas e Informe. El rótulo «por titular» queda pegado a la cita pero las narcomantas están antes de los dos puntos sin marca de resumen. Nada del titular ata «operativo fallido» a ARG-131-002 |
+| 12 | Conclusión 5 y fila Cepeda: «más de 13 años», FGR, 19-oct | Miled 2026/10/19 «Dan Más De 13 Años De Cárcel Por Huachicol En Coahuila» (R1 pase 14). FGR, «sustracción ilícita», General Cepeda, 13a4m, abreviado: Noreste línea 210 (resumen). Slug Capital México «sentencian-a-13-anos…robo-de-diesel-en-coahuila» sin fecha, sin FGR | «Más de 13 años», «huachicol», «Coahuila»: TITULAR. FGR, General Cepeda, «sustracción ilícita», abreviado: RESUMEN | CORREGIR (fondo). La Conclusión 5 dice «ambas de la FGR por titular»: falso para Cepeda. La tabla dice «sustracción ilícita de hidrocarburo, por titular» (el titular dice «huachicol») y no marca General Cepeda como resumen. Fuente fechada única: Miled. Capital México es la segunda, sin fecha |
+| 13 | Caborca: «casi 100 kg», 8 años, FGR | Telemax 2026/10/19 «Obtiene FGR sentencia… casi 100 kilos de metanfetamina; fue detenido en carretera Caborca-Sonoyta». Infobae y Heraldo 2026/10/19 (slugs: «casi 100 kilos» y «100 kilos»). 8 años y 96.986 kg: resumen | «Casi 100 kg», FGR: TITULAR. «8 años»: RESUMEN (marcado). 96.986 kg: no aparece, bien | OK. R1 punto 4 aplicado (sin FECOR). Infobae y Heraldo: URLs de equipos, no reabiertas por R1 |
+| 14 | Culiacán: 18 años por feminicidio en grado de tentativa | Luz Noticias 2026-10-19 (titular y ruta), Línea Directa 2026-10-19. Hecho de abril 2025, col. Libertad, multa: resumen. Homónimo Daniel «N» descartado (R1 pase 13) | Pena y delito: TITULAR. Resto: RESUMEN | OK. Candidata desde 138 declarada |
+| 15 | Ensenada: 158 años 9 meses; «a cada uno»; 135 + 10a9m + 13a | R1 pase 16: titular Sin Embargo «158 años y 9 meses» (ruta sin fecha). El Financiero y CR Prensa 2026/10/17 titulan «158 años». CR Prensa: «…a tres hombres». Desglose y «a cada uno»: resumen de dos medios. 17.txt:563: 135 decía «158 años a cada uno, por titular; 9 meses solo por resumen». 18.txt:474: 136 «158 años 9 meses a cada uno… solo por resumen» | 158a9m: TITULAR (solo Sin Embargo, sin fecha). «Tres sentenciados»: TITULAR (CR Prensa). «A cada uno» y desglose: RESUMEN. Delitos: ver Correcciones | CORREGIR (fondo moderado). Ver Correcciones, punto 2. Aritmética: 135 + 10a9m + 13a = 158a9m (cuadra) |
+| 16 | Tulantepec y «fuera de ventana» | La Silla Rota 2026/10/9 «Dictan fallo condenatorio…triple feminicidio…» y «crimen de 3 mujeres». Individualización 21-oct: resumen (título del 14-oct «Otro retraso…»). Oaxaca boletín 2889 (R1 pase 17). Tamaulipas FGJE-370-2026: Noreste línea 212, fecha «6-oct» sin respaldo en ruta | Fallo, 9-oct, «triple feminicidio»: TITULAR. 21-oct: RESUMEN (marcado). FGJE-370 «6-oct»: RESUMEN sin marca | OK. R1 punto 2 aplicado (se omite la calificación por víctima contradicha, aceptable). Marcar la fecha de FGJE-370 |
+| 17 | Vistos de armamento: Cotija 1/1/25; La Rumorosa 2 det., 5 armas, 17 cargadores; Chietla/Tehuacán 4 det.; Industrial Bravo 420 = 385+25+10 | Milenio, fragmento «aseguraron un arma larga, un cargador y 25 cartuchos…» (R1 sección C, con reserva «extracto corrupto»). «Ejército»: Occidente línea 295 (resumen). NDT: titular «cinco armas». En Línea BC slug «caen-dos-presuntos…». TBN 2026/10/19 slug «detienen-a-4-personas…». Industrial Bravo: R1 sección C | Cotija: FRAGMENTO con reserva. «Ejército»: RESUMEN. 5 armas y «2 det.»: TITULAR. 17 cargadores: RESUMEN (eco de consulta de R1). «4 personas»: TITULAR | CORREGIR (menor). Ver Correcciones, punto 8. Aritmética 385+25+10 = 420 cuadra y cartuchos/cargadores no se suman. Marca de duplicidad con ARG-135-ARM-001 presente |
+| 18 | Indicador de cobertura: 18+14=32, 3+15=18, 13+19=32, 9 parciales, 21+11=32 | Recalculado entidad por entidad con las listas del propio cartelón (32 entidades distintas, sin repetidas ni faltantes). Alto impacto por región: propia 4+2+6+3+2+4 = 21; amplia 2+3+0+4+0+2 = 11. Armamento: 2+4+1+2+4 = 13; NO REVISADA: 4+1+5+7+2 = 19. Sentencias NO REVISADA: 3+4+1+3+3 = 14 | CÁLCULO PROPIO (declarado en la nota final) | OK en aritmética. CORREGIR (menor): R1 observó que las 18 son «búsqueda dirigida, ninguna por acceso directo»; el renglón «Fiscalías revisadas» no lo dice (solo la última fila habla de «sin lectura directa»). La regla de CLAUDE.md prohíbe fundirlas: añadir «por búsqueda dirigida; acceso directo: 0» |
+| 19 | Aplicación literal de las 10 correcciones de R1 | Ver Sección F | — | Aplicadas 10 de 10; 3 con matiz (Ensenada, Cadereyta, Río Bravo) |
+| 20 | Reglas de conteo de CLAUDE.md | Cartuchos/cargadores nunca sumados (Cotija, Rumorosa, Industrial Bravo: separados). «Diverso armamento»: no hay renglón numérico. Penas concurrentes: Ensenada con `PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA` y «no se suma entre sentenciados». Años acumulados: 0. Cartuchos fragmentados de Industrial Bravo: publicados desglosados, fuera de total y con duplicidad marcada | — | OK en reglas de conteo. Una cifra con más de dos ediciones sin titular de alcance («a cada uno», Ensenada): ver Correcciones, punto 2 |
+
+B. CIFRAS CITABLES (según informes; no reabiertas por mí)
+- 15 cm — slug El Universal: «…le-provocaron-una-herida-de-15-cm-en-el-costado» — https://www.eluniversal.com.mx/estados/diputada-denuncia-ataque-con-arma-blanca-en-rio-bravo-tamaulipas-le-provocaron-una-herida-de-15-cm-en-el-costado/
+- «FGR investiga» — «FGR investiga agresión denunciada por Casandra de los Santos» — https://elefanteblanco.mx/2026/10/19/fgr-investiga-agresion-denunciada-por-casandra-de-los-santos/
+- «Desconoce Fiscalía detalles sobre agresión a diputada federal Casandra de los Santos» — https://cntamaulipas.mx/2026/10/19/desconoce-fiscalia-detalles-sobre-agresion-a-diputada-federal-casandra-de-los-santos/
+- PVEM — «Diputada federal del PVEM denuncia apuñalamiento; pide protección» — https://abcnoticias.mx/tamaulipas/2026/10/19/diputada-federal-de-rio-bravo-denuncia-apunalamiento-pide-proteccion-292812.html
+- 17-oct (primera ruta fechada) — https://eldiariodechihuahua.mx/nacional/2026/oct/17/denuncia-diputada-ataque-en-tamaulipas-pide-proteccion-848836.html
+- «Van 10 cuerpos en tres días de búsqueda» — https://puntonorte.info/2026/10/18/colectivos-vuelven-a-encontrar-restos-oseos-apilados-en-fosa-clandestina-van-10-cuerpos-en-tres-dias-de-busqueda/
+- «Colectivos sonorenses encuentran 8 osamentas en 3 días» — https://www.elimparcial.com/son/sonora/2026/10/19/colectivos-sonorenses-encuentran-8-osamentas-en-3-dias/
+- Altiplano — https://www.elfinanciero.com.mx/estados/2026/10/20/cesar-jauregui-exfiscal-de-chihuahua-ingresa-al-penal-del-altiplano-por-traicion-a-la-patria/
+- «Dan Más De 13 Años De Cárcel Por Huachicol En Coahuila» — https://miled.com/2026/10/19/13-anos-de-carcel-por-huachicol-en-coahuila/
+- «Obtiene FGR sentencia contra persona por transportar casi 100 kilos de metanfetamina…» — https://telemax.com.mx/blog/2026/10/19/obtiene-fgr-sentencia-contra-persona-por-transportar-casi-100-kilos-de-metanfetamina-fue-detenido-en-carretera-caborca-sonoyta/
+- 18 años, Culiacán — https://www.luznoticias.mx/2026-10-19/policiaca/sentencian-a-sujeto-a-18-anos-de-prision-por-feminicidio-en-grado-de-tentativa-/310742
+- «Un Juez da 158 años y 9 meses de prisión a asesinos de 3 surfistas extranjeros…» — https://www.sinembargo.mx/4889564/un-juez-da-158-anos-y-9-meses-de-prision-a-asesinos-de-3-surfistas-extranjeros-en-bc/ (sin fecha en ruta). Con fecha en ruta, solo «158 años»: https://www.elfinanciero.com.mx/estados/2026/10/17/surfistas-australianos-asesinados-en-ensenada-dan-158-anos-de-prision-a-implicados-en-multihomicidio/
+- «Tres hombres» (Ensenada) — slug CR Prensa: https://crprensa.com/2026/10/17/condenan-a-158-anos-de-prision-a-tres-hombres-por-el-asesinato-de-surfistas-en-baja-california/
+- Combis (Cuautla) — https://lasillarota.com/estados/2026/10/15/frenan-servicio-5-rutas-de-transporte-en-cuautla-incendian-6-combis-533191.html
+- Checador — https://potosinoticias.com/2026/10/19/escala-violencia-en-cuautla-incendian-dos-negocios-reportan-balaceras-y-asesinan-a-checador/
+- «Escala violencia en Morelos tras operativo fallido» — https://diario.mx/nacional/2026/oct/19/escala-violencia-en-morelos-tras-operativo-fallido-1144227.html
+- Tulantepec — https://lasillarota.com/hidalgo/estado/2026/10/9/dictan-fallo-condenatorio-contra-responsables-del-triple-feminicidio-de-santiago-tulantepec-532299.html
+- 4 operativos (Cadereyta) — slug MVS 2026/10/20: https://mvsnoticias.com/nuevo-leon/2026/10/20/detienen-a-nueve-personas-tras-cuatro-operativos-de-fuerza-civil-en-cadereyta-750448.html
+- 80 años, boletín 2889 — https://portal.fgeo.gob.mx/index.php/comunicados
+
+C. CIFRAS SOLO EN RESUMEN GENERADO (todas con marca excepto las señaladas SIN MARCA)
+- Día 10-oct y «sábado» (REC-001): marcado.
+- Abdomen, distrito 3, hospitalizada, baldío, «Guardia Nacional desde marzo» (REC-001): marcado.
+- «Tamaulipas» como fiscalía que desconoce detalles: SIN MARCA.
+- 22-oct (declarado «por calendario») y 10:00 (marcado).
+- Cepeda: General Cepeda, FGR, «sustracción ilícita de hidrocarburo», procedimiento abreviado, 13a4m (la tabla lo marca solo en parte; la Conclusión 5 afirma lo contrario).
+- Caborca 8 años: marcado.
+- Ensenada: «a cada uno», 135+10a9m+13, robo con violencia y robo de vehículo (la tabla los atribuye «a titulares»), «2024», fallo 9-oct, individualización 16-oct (esta última, marcada).
+- Composición «cuerpos, osamentas y restos» y 7+1 de la Conclusión 2: la composición va SIN MARCA.
+- Combis 13-oct (marcado); domingo 18 y cartulina del checador (marcado); narcomantas y «fiscal estatal» (SIN MARCA).
+- Cotija «Ejército»; Chietla/Tehuacán «un arma de fuego», «Marina» (SIN MARCA); La Rumorosa 17 cargadores y 4 largas+1 corta (marcado, y es eco de la propia consulta de R1).
+- Fecha «6-oct» de FGJE-370-2026 (SIN MARCA).
+
+D. CIFRAS HEREDADAS SIN REVERIFICAR
+- «Ninguna con detenido» de Otatitlán (ARG-131-REC-001): entró en ARGOS 131 (13.txt:255) y se revalidó en 15-fuentes («sin detenidos», 15-oct). No hay búsqueda en 20b-equipos (grep «Otatitl» y «exalcalde» sin resultados). Respaldo original: ausencia en búsquedas, no fragmento. Debe marcarse «sin detenido publicado al 15-oct».
+- Fechas 11-oct (Otatitlán, solo por resumen en 13.txt) frente a 12-oct en 19-fuentes: contradictorias entre ediciones (la segunda parece fecha de publicación).
+- ARG-135-REC-003 (4 cuerpos, 16-oct) y ARG-135-REC-004 (5 osamentas en 3 fosas): fichas de origen con titular. La Conclusión 2 les cuelga 10 y 8 de titulares posteriores sin mostrar los originales.
+- ARG-136-006 «traslado al Altiplano» (La Jornada 2026/10/18, Infobae 2026/10/19): citado por ARGOS 137 y reciclado en la Conclusión 3 con fuente del 20-oct.
+- «Aspirante de Morena» (Cuajinicuilapa): ARG-138-REC-001 tiene titular de Bajo Palabra (sin fecha) y fuentes del 18 y 20-oct.
+- Ninguna cifra llega a dos ediciones consecutivas sin respaldo citable, salvo «a cada uno» (ver Correcciones, punto 2).
+
+E. CIFRAS INFERIDAS (cálculo propio) — ¿declaradas?
+- «Tres en ocho días» (Conclusión 1): el cálculo es 10-oct→17-oct inclusive = 8 días naturales (7 días transcurridos); «tres» es conteo propio de la serie ARGOS; el criterio de «actor político» incluye un exalcalde clasificado 🟡 por «no servidor público en funciones» (13.txt:265) y excluye a ARG-130-009 (coordinador municipal de Protección Civil, servidor público en funciones, 🔴, 11-oct, ningún detenido publicado). ¿Declarado? No. Solo rige la nota general «Toda cifra sin emisor nombrado es cálculo propio», que no muestra la aritmética.
+- «Cifras en aumento» (Conclusión 2): 4→10 y 5→8 son datos de fuentes distintas, tipos de resto distintos y fechas distintas. ¿Declarado? No.
+- «Dos procesos en curso» (Conclusión 3): federal + estatal. ¿Declarado? No.
+- «22-oct» por calendario: declarado en el cartelón («por calendario»). Verificado: el 20-oct-2026 es martes, así que el jueves es el 22.
+- «21-oct» miércoles (Tulantepec): fecha de resumen, día coherente con el calendario.
+- «Vínculo con ARG-131-002» (Conclusión 4): lectura propia (ver informe de pase 11). ¿Declarado? No; solo «hipótesis» al final.
+- «4 casos candidatos sin boletín» (tile de sentencias): conteo de filas propias; cubierto por la nota general.
+- Duración 43 min, densidad 0,00, muertos 0, heridos 0, herida 1 en recuperación: declarados como cálculo propio.
+
+F. CORRECCIONES DE R1: aplicación literal
+| R1 | Aplicada | Observación |
+|---|---|---|
+| 1 Ensenada | Sí, con matices | La palabra «en conjunto» desapareció. Se escribe «a cada uno» en negrita, con el desglose y «solo por resumen de dos medios». La negrita sobrerrepresenta un dato de resumen. Falta explicitar que los titulares no precisan alcance |
+| 2 Tulantepec | Sí | «La muerte de tres mujeres» + «triple feminicidio» por titular |
+| 3 Cepeda | Sí | Pero la Conclusión 5 reintroduce un «por titular» sobre la FGR |
+| 4 Caborca | Sí | FECOR retirado |
+| 5 Cadereyta | Sí | «2 (Posta) o 4 (MVS, ABC)». El «4» de MVS es titular (slug), no resumen |
+| 6 Industrial Bravo | Sí | 420 = 385+25+10, sin CONTRADICHO, con POSIBLE DUPLICIDAD |
+| 7 Fosas | Sí | 10 y 8 con 7+1; falta mostrar 4 y 5 de origen; «en aumento» sigue |
+| 8 Río Bravo | Sí | 15 cm por titular, FGR, CN Tamaulipas, distrito 3. Cita «desconoce detalles» no literal |
+| 9 Colima | Sí | «Atribuye la agresión a los abatidos…», resumen |
+| 10 Audiencia | Sí | «22-oct por calendario; 10:00 solo por resumen» |
+
+G. CIFRAS CONTRADICHAS (sin arbitrar)
+- Ensenada: «158 años 9 meses por sentenciado» (resúmenes de Sin Embargo y El Financiero, según R1) frente a titulares que no precisan alcance (El Financiero: «a implicados»; CR Prensa: «a tres hombres»; Sin Embargo: «a asesinos»). Si fuera por persona, el agregado no se calcula (476 años 3 meses sería cálculo propio no publicado, no se hace).
+- Otatitlán: hecho del 11-oct (ARGOS 131, resumen) frente a 12-oct (19-fuentes).
+- Altiplano: traslado/ingreso el 18-19-oct (La Jornada, Infobae, vía ARGOS 137) frente a «ingresa» en El Financiero 2026/10/20.
+- Cadereyta: 2 operativos (Posta, resumen) frente a 4 (MVS, titular; ABC, resumen).
+- Mazatlán 138-006: lunes (Luz Noticias) frente a martes (Sinaloahoy). Río Bravo: lado de la herida y quién recibe la denuncia (derecho vs izquierdo; FGR vs fiscalía local).
+- Cachanillas: 12 cuerpos / 10 cadáveres (2024) / 4 cuerpos / 10 cuerpos (R1 sección B).
+
+H. DESCUADRES ARITMÉTICOS
+- Ninguno.
+- Sentencias: 3 + 15 = 18 revisadas; 18 + 14 = 32.
+- Armamento: 2 + 4 + 1 + 2 + 4 = 13 por dominio; 4 + 1 + 5 + 7 + 2 = 19 NO REVISADA; 13 + 19 = 32; los 9 parciales están dentro de los 13.
+- Alto impacto: 4 + 2 + 6 + 3 + 2 + 4 = 21; 2 + 3 + 0 + 4 + 0 + 2 = 11; 21 + 11 = 32.
+- Ensenada: 135 + 10a9m + 13 = 158a9m. Industrial Bravo: 385 + 25 + 10 = 420. REC-001: N 2 + R 11 = 13 fuentes contadas.
+- Duración: 07:06 → 07:49 = 43 min = 0,717 h; 0/0,717 = 0,00.
+
+I. CORRECCIONES CONCRETAS (texto a cambiar)
+1. Conclusión 5 y fila Cepeda
+- Texto actual: «ambas de la FGR por titular».
+- Propuesto: «Caborca: FGR por titular de Telemax; Cepeda: FGR solo por resumen (el titular de Miled no nombra a la FGR)».
+- Fila Cepeda, caso: «huachicol, por titular (Miled 2026/10/19); General Cepeda, “sustracción ilícita de hidrocarburo” y procedimiento abreviado, solo por resumen».
+- Confianza: Miled es la única fuente fechada; Capital México no lleva fecha. «Bajo» (dos coincidentes) requiere declarar que la segunda carece de fecha en ruta.
+2. Ensenada
+- Pena, texto propuesto: «158 años 9 meses, por titular (Sin Embargo, ruta sin fecha; El Financiero y CR Prensa 2026/10/17 titulan “158 años”); el titular no precisa si es por sentenciado o total; “a cada uno”, en tres penas (135 años + 10 años 9 meses + 13 años), solo por resumen de dos medios · no se suma entre sentenciados · CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO · PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA». Quitar la negrita de «a cada uno».
+- Caso, texto propuesto: «multihomicidio de tres surfistas extranjeros, por titulares; homicidio calificado, robo con violencia y robo de vehículo, y el año 2024, solo por resumen».
+- Umbral de fe de erratas: «a cada uno» está en 135 (como «por titular», sin titular que lo diga), 136 y 139 (resumen). Son tres ediciones sin titular de alcance. Registrar en fuentes §7 una fe de erratas compacta sobre la etiqueta «por titular» de 135. Esto no cambia ningún total (pena acumulada 0).
+3. Conclusión 1
+- Titular propuesto: «AL MENOS TRES AGRESIONES A ACTORES POLÍTICOS ENTRE EL 10 Y EL 17-OCT».
+- Añadir «(8 días naturales, 10→17-oct inclusive; cálculo propio)».
+- Fechas: «Otatitlán 11-oct (solo por resumen; rutas del 12)» y «Río Bravo 10-oct (solo por resumen)».
+- Detenidos: «sin detenido publicado: Cuajinicuilapa y Río Bravo al 20-oct; Otatitlán al 15-oct (última verificación)».
+- Criterio: declarar la definición de «actor político» (exalcalde, aspirante, diputada). Si se incluye a servidores públicos, ARG-130-009 (Escuinapa, 11-oct) pasa a ser cuarto; si no, explicarlo en fuentes.
+4. Conclusión 2
+- Retirar «CIFRAS EN AUMENTO» o declarar «cálculo propio: ficha de origen 4 cuerpos (ARG-135-REC-003) → 10 en titular del 18-oct; 5 osamentas (ARG-135-REC-004) → 8 en titular del 19-oct; no comparables».
+- Marcar «cuerpos, osamentas y restos» como resumen.
+5. Conclusión 3
+- Añadir que el traslado al Altiplano ya constaba en ARGOS 137 por La Jornada 2026/10/18 e Infobae 2026/10/19.
+- Declarar «dos procesos» como conteo propio. Fuentes: apuntar la discrepancia de fecha.
+6. Conclusión 4
+- «Narcomantas contra el fiscal estatal, solo por resumen».
+- «Checador asesinado: titular (Potosinoticias 2026/10/19); domingo 18 y cartulina, solo por resumen».
+- Título: añadir «lectura de ARGOS: el titular no nombra el operativo; vínculo con ARG-131-002 no acreditado — hipótesis».
+- En fuentes: Centro rotula las combis «ya es ARG-131-002» y el ARG-131-002 publicado (13.txt:112) no las contiene (Totolapan, Tlayacapan, Atlatlahucan y Oaxtepec, 12-oct). Aclarar.
+7. REC-001
+- Cita literal «Desconoce Fiscalía detalles»; «de Tamaulipas», resumen.
+- «Denuncia pública desde el 17-oct» → «primera ruta fechada: 17-oct».
+- «Encapuchado» → titular (Hoy Tamaulipas 630159, sin fecha en ruta).
+- Fuentes: documentar en el archivo de fuentes el criterio del recuento (por qué La Verdad, El Congresista, Posta, Estrella Digital y Más Información quedan fuera) o contarlas.
+8. Vistos y panorama
+- Cotija: «Ejército, solo por resumen; cifras por fragmento con reserva: extracto corrupto».
+- Chietla/Tehuacán: «4 personas, por titular; un arma de fuego y Marina, solo por resumen».
+- La Rumorosa: «5 armas, por titular (NDT, sin fecha en ruta); 2 detenidos, por slug (En Línea BC 2026/10/19); 17 cargadores, solo por resumen».
+- Cadereyta: «4 operativos, por titular (MVS 2026/10/20); 2 (Posta), solo por resumen».
+- FGJE-370-2026: «6-oct, solo por resumen».
+9. Cobertura: primera fila «18 de 32 por búsqueda dirigida; acceso directo: 0».
+10. Consulta: ampliar a «07:49-08:20» o documentar en fuentes por qué la primera consulta de fuentes es posterior a las 07:58 (commit 07:53:31 y curl 07:49).
+11. Fuentes §5 (no cartelón): líneas desactualizadas respecto a lo aplicado («primer disparo», «420 o 385», «2, 3 o 4 operativos; 3 armas cortas»).
+
+J. VEREDICTO POR CIFRA CRÍTICA
+- Ensenada 158 años 9 meses: NO INTEGRAR AL TOTAL NUMÉRICO (candidata; alcance «a cada uno» no determinado).
+- Cepeda «más de 13 años», Caborca «casi 100 kg», Culiacán 18 años: NO INTEGRAR (PENDIENTE DE CONFIRMACIÓN OFICIAL). Correcto como está.
+- Conclusión 1, «tres en ocho días»: INTEGRAR MARCADA CON RESERVA tras declarar cálculo propio y retirar «ninguna con detenido» para Otatitlán.
+- Conclusión 2, «10 cuerpos» y «8 osamentas» (cifras de colectivo): INTEGRAR MARCADA CON RESERVA; retirar «en aumento» o declararlo.
+- Conclusión 4, vínculo con ARG-131-002: INTEGRAR MARCADA CON RESERVA (hipótesis).
+- Conclusión 5, «FGR por titular» sobre Cepeda: RETIRAR esa atribución (corregir el texto).
+- REC-001 (recuento I0 N2 R11): INTEGRAR MARCADA CON RESERVA; documentar el criterio.
+- Consulta 07:58-08:20: INTEGRAR MARCADA CON RESERVA (fin compatible con git; inicio por conciliar).
+- Vistos de armamento: no entran en el total (todos fuera de ventana); no requieren veredicto numérico.
+
+Archivos consultados: /home/user/Prueba-/CLAUDE.md, /home/user/Prueba-/tools/datos-argos-139.py, /home/user/Prueba-/reports/argos-2026-10-20b.html, /home/user/Prueba-/reports/argos-2026-10-20b-movil.html, /home/user/Prueba-/reports/argos-2026-10-20b.txt, /home/user/Prueba-/reports/argos-2026-10-20b-equipos.md, /home/user/Prueba-/reports/argos-2026-10-20b-fuentes.md, /home/user/Prueba-/reports/argos-2026-10-13.txt, /home/user/Prueba-/reports/argos-2026-10-12.txt, /home/user/Prueba-/reports/argos-2026-10-17.txt, /home/user/Prueba-/reports/argos-2026-10-18.txt, /home/user/Prueba-/reports/argos-2026-10-19.txt, /home/user/Prueba-/reports/argos-2026-10-20.txt, /home/user/Prueba-/reports/argos-2026-10-20-fuentes.md, /home/user/Prueba-/reports/argos-2026-10-19-fuentes.md, /home/user/Prueba-/reports/argos-2026-10-15-fuentes.md, /home/user/Prueba-/reports/indice-arg-id.md, /home/user/Prueba-/.git/logs/HEAD.
+
+Búsquedas utilizadas: 0 de 0.
