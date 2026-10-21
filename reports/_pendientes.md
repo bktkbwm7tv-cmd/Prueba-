@@ -8,7 +8,7 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 138 (corte 2026-10-20), más la versión retirada de ARGOS 139 (ver abajo).
+**Última actualización**: ARGOS 139 (corte 2026-10-21; rehecho tras la versión retirada del 20-oct).
 
 ---
 
@@ -19,9 +19,7 @@ de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y coma
 **Escribirlo es el último paso obligatorio de cada corte**, junto con la actualización de este archivo:
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
 
-**ARGOS 139 APLAZADO AL 21-OCT 07:00.** El 20-oct se produjo una versión con ventana de 43 min (07:06 → 07:49), sin hechos propios; el
-destinatario **la retiró** el mismo día. Sus archivos de trabajo quedan como insumo en `reports/_argos-139-retirado-fuentes.md` y
-`-equipos.md`; **sus ARG-ID no existen**. La orden vigente es **`reports/_arranque-ARGOS-139.md`** (y `_ordenes-ARGOS-139.txt`).
+**ARGOS 139 publicado el 21-oct** (ventana 20-oct 07:06 → 21-oct 10:23). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-140.md`** (y `_ordenes-ARGOS-140.txt`).
 
 ## Instrucción editorial permanente — la forma del cartelón
 
@@ -2368,3 +2366,49 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 8. **`tools/validar.js` no valida la versión móvil** (falla igual con la de 138: busca `<script>` y `table-wrap` del escritorio). `CLAUDE.md` pide la comprobación en las dos versiones: hoy la cubre la validación interna de `gen-movil.py`. Adaptar el validador.
 9. **Criterio de «actor político»** en conclusiones: declararlo (139: cargos de elección, excargos y aspirantes; quedó fuera `ARG-130-009`, servidor público designado).
 
+
+## ARGOS 139 — lo que cierra esta edición
+
+| Pendiente | Disposición |
+|---|---|
+| **Río Bravo** | `ARG-139-REC-001` (🔴, ventana de 129); fe de erratas a 129 **condicionada** (día solo por resumen) |
+| **Exfiscal (`ARG-136-006`)** | Prisión preventiva federal (21-oct); quedan las audiencias del 22 y del 24 |
+| **Juchitán (`ARG-138-001`)** | Eran dos ataques el lunes 19; el segundo (🟡) va a fe de erratas sobre 138 |
+| **Plaza de La Marina (`ARG-138-006`)** | El homicidio del 11-oct es otro hecho: sin duplicidad |
+| **Chietla** | Los dos ataques son del domingo 18: vistos de 137 |
+| **Cuautla, checador** | Ninguna autoridad lo vincula: 🟡 de 137, cerrado |
+| **`ARG-137-012`** | Dentro de la ventana de 137: cerrado |
+| **Boletín federal del 19-oct** | Existe (publicado el 20); cerrado el falso vacío de la versión retirada |
+| **«17 cargadores» de La Rumorosa** | Nunca tuvo respaldo: retirado |
+| **Dominios** | Confirmados `fge.chiapas.gob.mx`, `fge.yucatan.gob.mx`, `ssp.chiapas.gob.mx` |
+
+## Abiertos que ARGOS 140 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️ **Tulantepec** | Pena y reparación de la audiencia del **21-oct 17:45** (posterior al cierre de 139); fecha límite de la sentencia, 28-nov (resumen). Sentencia integrable si la pena se publica en la ventana de 140 |
+| ⚠️ **Exfiscal (`ARG-136-006`)** | Audiencia estatal **jueves 22-oct** y vinculación federal **sábado 24-oct 15:00** (resumen); comunicado de la FGR |
+| ⚠️ **El Terrero (`ARG-139-REC-002`)** | «Reanudan ataques» (El Diario de Chihuahua 2026/oct/20): ¿nueva agresión con fecha en ventana de 139 o 140? Parte de la Defensa; drones con explosivos confirmados por autoridad |
+| **Juchitán** | Desglose oficial de la serie del 19-21 oct; calidad laboral de la víctima de `ARG-139-003`; mototaxistas de la Novena (19) y la Primera Sección (20) y estudiante: rutas fechadas |
+| **Jalpa y Moyahua (`ARG-139-002`)** | Causa de muerte e identificación; si la Fiscalía la clasifica como muerte no violenta, baja a 🟡 (fe de erratas) |
+| **Villa Unión (`ARG-139-001`)** | Parentesco («madre e hijo» / «pareja»); hora |
+| **Miahuatlán (`ARG-139-REC-003`)** | Cargo y gravedad contradichos; detenidos |
+| **Uruapan (`ARG-139-008`)** | Hora (~06:00 → ventana de 138, 🟡: fe de erratas y retiro) |
+| **Xalapa (`ARG-139-005`)** | ¿Docente de escuela pública? (sube a 🔴) |
+| **Juárez (`ARG-139-007`)** | Portales de San Pedro y el ataque del 21-oct 07:04: ¿mismo hecho? |
+| **Xalisco (`ARG-125-003`)** | «Tres fosas más en Tecuala» y diez detenidos: ¿duplica `ARG-133-REC-007`? |
+| **Cachanillas** | Nuevos restos del 20-oct; cifra oficial |
+| **Sentencias candidatas** | Culiacán (desde 138) · Ensenada (desde 135) · General Cepeda y Caborca (FGR, 19-oct): boletines |
+| **Heredados sin avance** | Nogales · Ajuchitlán · Apatzingán · El Tívoli · Coquimatlán · Linares · Tepic (vinculación; detención contradicha) · Patamban y `ARG-137-007` (color: decisión del destinatario) · Taxco (vinculación de los 4 del C2) |
+| **Boletín federal del 20 y 21-oct** | Triple consulta (el 21 solo se buscó por rango) |
+| **Cobertura con prioridad sobre el ciclo en 140** | **Sentencias `NO REVISADA` (11)**: BC, BCS, Chih, Sin · Tamps · CDMX, Pue, Tlax, Hgo, Qro · Camp. **Armamento `NO REVISADA` (19)**: BC, Son, Dgo, Chih, Sin · Coah, NL, Tamps, SLP · Mich, Gto · Mor, Tlax, Hgo · Gro, Oax, Camp, Yuc, QRoo. **Alto impacto solo amplia (7)**: BC, Chih, Coah, NL, Ags, Gto, Edomex. Después, **CICLO A** (Noroeste + Centro: 140 = A) |
+
+## Deuda de método (ARGOS 139)
+
+1. **Republicaciones** contadas como fuentes independientes (mismo título y *slug*): contar una vez. La plantilla de 140 debe pedirlo.
+2. **Eco de consulta**: una cifra puesta entre comillas en la consulta puede volver en el resumen sin respaldo («17 cargadores»). La cifra solo vale si aparece en un titular o *slug*.
+3. **Boletín federal**: la triple consulta del día de cierre debe repetirse al final de la ola; el del 19-oct se indexó con un día de retraso.
+4. **Presupuesto**: 2 + 156 + 7 + 30 = **195**; segunda ronda sin búsquedas.
+5. **Dominios sin páginas** (13): `fge.sinaloa.gob.mx`, `pgjhidalgo.gob.mx`, `fiscalia.tlaxcala.gob.mx` (probar `pgjtlaxcala.gob.mx`), `fiscalia.campeche.gob.mx`, `ssp.guerrero.gob.mx`, `seguridad.nl.gob.mx`, `ssp.durango.gob.mx`, `ssp.bajacalifornia.gob.mx`, `sspes.sonora.gob.mx`, `ssp.hidalgo.gob.mx`, `ssp.morelos.gob.mx`, `ssc.queretaro.gob.mx`, `seguridadypaz.guanajuato.gob.mx`.
+6. **Columna «cuerpos hallados»** introducida en 139: cuerpos sin causa de muerte informada no entran en «muertos por agresión».
+7. **`tools/validar.js` sigue sin validar el móvil** (la cubre la validación interna de `gen-movil.py`).
