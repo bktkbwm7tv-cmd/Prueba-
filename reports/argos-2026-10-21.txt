@@ -35,8 +35,8 @@ ENTRE LOS HALLAZGOS (ARG-139-002).
 3. SOLICITE AL GOBIERNO DE GUERRERO Y A LA DEFENSA EL PARTE, SI HUBO UNA NUEVA AGRESIÓN Y SU
 FECHA, Y LA PERMANENCIA DEL DESPLIEGUE (ARG-139-REC-002).
 4. SOLICITE A LA FISCALÍA DE OAXACA LA CARPETA Y LAS MEDIDAS DE PROTECCIÓN (ARG-139-REC-003).
-5. SOLICITE A LA PGJ DE HIDALGO LA PENA Y LA REPARACIÓN DEL DAÑO DEL FALLO DEL 8-OCT (Santiago
-Tulantepec; ver Rastreo de Sentencias).
+5. SOLICITE A LA PGJ DE HIDALGO LA PENA Y LA REPARACIÓN DEL DAÑO DEL FALLO CONDENATORIO
+(Santiago Tulantepec; ver Rastreo de Sentencias).
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-21 · Hora: 10:23 (CDMX) · Corte: Matutino · ARGOS N.° 139 · USO INSTITUCIONAL
@@ -167,8 +167,10 @@ Institucional 0 · Nacional 0 · Regional 3 · Abierta 0 · con fecha en la ruta
 2026-10-21 10:24-12:19 · Estatus: Pendiente de corroboración · Conteo de armamento: sin fila —
 armamento asegurado: no publicado
 Deslindes y reservas: La víctima no figura en las ediciones previas. NO es ARG-138-001 (col.
-Tomás Aquino, lunes 19). Otros homicidios de Juchitán del 19 y 20-oct: ver Conclusión 2. El rojo
-descansa en un solo titular regional (víctima servidor público).
+Tomás Aquino, lunes 19). Otros homicidios de Juchitán del 19 y 20-oct: ver Conclusión 2. Solo El
+Imparcial identifica por titular al trabajador municipal; La Onda Oaxaca y Meganoticias se
+cuentan como regionales sin que su titular acredite la identidad. El rojo descansa en un solo
+titular regional (víctima servidor público).
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-21 · Hora: 10:23 (CDMX) · Corte: Matutino · ARGOS N.° 139 · USO INSTITUCIONAL
@@ -204,12 +206,12 @@ detención sin armamento: otro hecho. No es ARG-138-005 (San Joaquín, lunes 19)
 
 Xalapa · COL. RUBÉN JARAMILLO, CALLE IGNACIO ZARAGOZA ENTRE BENITO JUÁREZ Y YUCATÁN, SOLO POR
 RESUMEN · martes 20-OCT, por ruta (Formato 7, Plumas Libres y Horacero 2026/10/20) · mañana,
-~10:39 u ~11:00, SOLO POR RESUMEN · PUBLICADO EL DÍA DE APERTURA SIN HORA · 1 muerto, hombre de
-~35 años dentro de un automóvil, por titulares (🟡) · maestro o docente, por titulares;
-«PRESUNTO» EN VARIAS NOTAS · impactos: de 2 a 8 según la nota, CONTRADICHO, NO SE INTEGRA ·
-Policía Ministerial y Servicios Periciales; paramédicos de la SSP confirmaron el deceso, SOLO
-POR RESUMEN · ningún detenido publicado · nombre: CONTRADICHO, no se reproduce · móvil en una
-sola fuente: no se integra
+~10:39 u ~11:00, SOLO POR RESUMEN · PUBLICADO EL DÍA DE APERTURA SIN HORA · 1 muerto, hombre
+dentro de un automóvil, por titulares (🟡) · de ~35 años, SOLO POR RESUMEN · maestro o docente,
+por titulares; «PRESUNTO» EN VARIAS NOTAS · impactos: de 2 a 8 según la nota, CONTRADICHO, NO SE
+INTEGRA · Policía Ministerial y Servicios Periciales; paramédicos de la SSP confirmaron el
+deceso, SOLO POR RESUMEN · ningún detenido publicado · nombre: CONTRADICHO, no se reproduce ·
+móvil en una sola fuente: no se integra
 
 ── TRAZABILIDAD
 
@@ -232,8 +234,8 @@ Tezontepec de Aldama · COMUNIDAD EL CHAMIZAL, SOLO POR RESUMEN · martes 20-OCT
 Silla Rota 2026/10/20) · ~12:30, SOLO POR RESUMEN; «esta tarde», en otra nota · PUBLICADO EL DÍA
 DE APERTURA SIN HORA · 1 muerto, hombre adulto sin identificar, por titulares (🟡) · «el segundo
 en 2 días», por titular (La Silla Rota): el primero, en Huitel el lunes 19, SOLO POR RESUMEN ·
-Seguridad Pública municipal y paramédicos; la PGJEH abrió carpeta por homicidio, SOLO POR
-RESUMEN · ningún detenido publicado
+Seguridad Pública municipal; la PGJEH abrió carpeta por homicidio, SOLO POR RESUMEN · ningún
+detenido publicado
 
 ── TRAZABILIDAD
 
@@ -261,9 +263,10 @@ Ciudad Juárez · CERRADAS DE SAN PEDRO, CALLES BASÍLICA DE SAN PEDRO Y BASÍLI
 POR RESUMEN · martes 20-OCT, por ruta (El Bordo 20261020; El Diario de Juárez y El Diario de
 Chihuahua 2026/oct/20) · PUBLICADO EL DÍA DE APERTURA SIN HORA · 1 muerto y 1 lesionado, por
 titulares (🟡) · víctima dentro de una camioneta, por titular (El Bordo) · ningún detenido
-publicado · dos publicaciones adicionales (Portales de San Pedro; 21-oct 07:04, N+ sin fecha,
-solo por resumen) con 1 muerto y 1 lesionado en camioneta: POSIBLE DUPLICIDAD CON ESTA FICHA —
-NO SE INTEGRAN HASTA VALIDACIÓN (la del 21-oct es de otro día; hora y víctima, por resumen)
+publicado · dos publicaciones adicionales, solo por resumen (Portales de San Pedro, cifras
+contradictorias; 21-oct 07:04, N+ sin fecha, 1 muerto y 1 lesionado en camioneta): POSIBLE
+DUPLICIDAD CON ESTA FICHA — NO SE INTEGRAN HASTA VALIDACIÓN (la del 21-oct es de otro día; hora
+y víctima, por resumen)
 
 ── TRAZABILIDAD
 
@@ -301,7 +304,8 @@ Hecho: 2026-10-20 · Hora: ~06:00 u ~08:00 (solo por resumen): CONTRADICHO · Co
 asegurado: no publicado
 Deslindes y reservas: El restaurante no figura en las ediciones previas ni en el índice. Grupo
 Marmor, MediaNews y Red Michoacán comparten título (un texto; se cuentan como una fuente);
-RED113 lo replica: no se cuenta. El Financiero da «cerca de las 8», solo por resumen.
+RED113 lo replica: no se cuenta. reportado ~08:00 según Quadratín y ~06:00 en una sola nota,
+ambos solo por resumen.
 
 ### SAN LUIS POTOSÍ · CAPITAL — PERSIGUEN Y ASESINAN A UN CONDUCTOR EN EL BULEVAR ROCHA CORDERO [AMARILLO]
 
@@ -383,7 +387,9 @@ RESUMEN — fuera de todos los totales
 Deslindes y reservas: La diputada no figura en ningún cartelón previo ni en el índice. Día del
 hecho: 10-oct (el 17 es la denuncia pública), ventana de ARGOS 129 (10-oct 09:08 → 11-oct
 08:58), por resumen. Río Bravo en ARG-128-REC-003 (canal Anzaldúas, aseguramiento del 8-oct):
-otro hecho.
+otro hecho. Titulares de Infobae, El Diario de Chihuahua, CN Tamaulipas, Elefante Blanco, Hoy
+Tamaulipas y La Verdad: tomados del insumo retirado, no reaparecidos el 21-oct: HEREDADO — NO
+REVERIFICADO.
 
 ### GUERRERO · EL TERRERO — ATAQUE CON DRONES EXPLOSIVOS Y DISPAROS CONTRA VIVIENDAS DE DESPLAZADOS RETORNADOS [RECUPERACIÓN]
 
@@ -397,10 +403,10 @@ agresores: más de 40 o ~60 hombres armados, SOLO POR RESUMEN: CONTRADICHO · el
 Asuntos Políticos y Sociales de Guerrero confirmó detonaciones y ningún herido ni muerto, SOLO
 POR RESUMEN · familias que habían regresado tras el desplazamiento de 2023 (50 a 61 retornados,
 SOLO POR RESUMEN) · despliegue de Ejército, Guardia Nacional y Policía Estatal tras el ataque,
-por titular (Diario Puntual 2026/10/21) · «reanudan ataques contra desplazados», por titular (El
-Diario de Chihuahua 2026/oct/20): POSIBLE NUEVA AGRESIÓN O MISMO HECHO — NO SE INTEGRA HASTA
-VALIDACIÓN · atribución a Los Ardillos: solo por habitantes, NINGUNA AUTORIDAD LA ACREDITA ·
-ningún detenido publicado
+SOLO POR RESUMEN; despliegue de militares, por titular (Diario Puntual 2026/10/21) · «reanudan
+ataques contra desplazados», por titular (El Diario de Chihuahua 2026/oct/20): POSIBLE NUEVA
+AGRESIÓN O MISMO HECHO — NO SE INTEGRA HASTA VALIDACIÓN · atribución a Los Ardillos: solo por
+habitantes, NINGUNA AUTORIDAD LA ACREDITA · ningún detenido publicado
 
 ── TRAZABILIDAD
 
@@ -412,8 +418,6 @@ Nacional 1 · Regional 5 · Abierta 0 · con fecha en la ruta: El Diario de Chih
 Consulta: 2026-10-21 10:24-12:19 · Estatus: Parcialmente corroborado · Ventana de origen: ARGOS
 138 — HORA SOLO POR RESUMEN — fuera de todos los totales
 Deslindes y reservas: El Terrero no figura en las cinco ediciones previas ni en el índice.
-Ataques con drones en la misma zona en enero de 2026 (Publimetro 2026/01/30): antecedente, otro
-hecho.
 
 ### OAXACA · MIAHUATLÁN — ATACAN A BALAZOS AL SECRETARIO MUNICIPAL; QUEDA HERIDO [RECUPERACIÓN]
 
@@ -481,14 +485,14 @@ Total nacional del corte: en la página de panorama.
 
 Lectura regional: sin lectura (ninguna fila integrada).
 EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: Baja California, Tecate (La Rumorosa), hecho del
-19-oct (En Línea BC 2026/10/19: «caen dos presuntos integrantes…», por titular): el boletín
-federal de acciones del 19-oct, publicado el 20-oct (Argonmexico 2026/10/20; Milenio), da 4
-armas largas, 1 corta, 13 cargadores, 99 cartuchos y 2 detenidos, SOLO POR RESUMEN; FUERA DEL
-TOTAL.
+19-oct (slug de En Línea BC 2026/10/19, «caen dos presuntos integrantes…», tomado del insumo
+retirado: HEREDADO — NO REVERIFICADO): el boletín federal de acciones del 19-oct, publicado el
+20-oct (Argonmexico 2026/10/20; Milenio), da 4 armas largas, 1 corta, 13 cargadores, 99
+cartuchos y 2 detenidos, SOLO POR RESUMEN; FUERA DEL TOTAL.
 VISTOS, NO INTEGRADOS: Veracruz: agregado semanal de la Fiscalía (12-18 oct, publicado el
 20-oct, SOLO POR RESUMEN): armas sin cifra, cualitativo · San Luis Potosí: balance de 24 h de la
 Guardia Civil Estatal, agregado sin evento individual · Ciudad de México: nota de la SSC con 1
-pistola y 3 cartuchos, fecha solo por resumen: FECHA NO FIJADA, NO SE INTEGRA.
+pistola y 3 cartuchos, cifras y fecha SOLO POR RESUMEN: FECHA NO FIJADA, NO SE INTEGRA.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-21 · Hora: 10:23 (CDMX) · Corte: Matutino · ARGOS N.° 139 · USO INSTITUCIONAL
@@ -513,7 +517,7 @@ pistola y 3 cartuchos, fecha solo por resumen: FECHA NO FIJADA, NO SE INTEGRA.
   Sinaloa · Culiacán | Un sentenciado, nombre no reproducido · feminicidio en grado de tentativa, por titular | 18 años, por titular | FGE Sinaloa (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · candidata desde ARGOS 138 · Luz Noticias 2026-10-19, por titular; Línea Directa 2026-10-19, HEREDADO — NO REVERIFICADO · boletín no localizado · firmeza no informada | Bajo
   Coahuila · General Cepeda | Un sentenciado, nombre no reproducido · huachicol, por titular; sustracción ilícita de hidrocarburo en procedimiento abreviado, ~48 mil litros de diésel, SOLO POR RESUMEN | 13 años, por titular (Argonmexico 2026/10/19); 13 años 4 meses, SOLO POR RESUMEN; multa sin monto | FGR (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · Argonmexico 2026/10/19; Diario de Tabasco, Red Metropolitana y Miled, no reverificados · boletín no localizado · publicada el 19-oct, ventana de ARGOS 138 · firmeza no informada | Bajo
   Sonora · Caborca | Un sentenciado, nombre no reproducido · transporte de casi 100 kg de metanfetamina, SOLO POR RESUMEN | 8 años, SOLO POR RESUMEN | FGR (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · Telemax e Infobae 2026/10/19, no reverificados · boletín no leído · publicada el 19-oct, ventana de ARGOS 138 · firmeza no informada | Bajo
-  Baja California · Ensenada | Tres sentenciados, nombres no reproducidos · multihomicidio de tres surfistas extranjeros, por titulares | 158 años, por titular (El Financiero 2026/10/17); 9 meses adicionales, por titular de Sin Embargo; a cada uno, SOLO POR RESUMEN · no se suma · PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA | FGE Baja California (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · candidata desde ARGOS 135 · boletín no localizado · firmeza no informada | Bajo
+  Baja California · Ensenada | Tres sentenciados, nombres no reproducidos · multihomicidio de tres surfistas extranjeros, por titulares | 158 años, por titular (El Financiero 2026/10/17), o 158 años y 9 meses, por titular (Sin Embargo): CONTRADICHO ENTRE TITULARES; a cada uno, SOLO POR RESUMEN · no se suma · PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA | FGE Baja California (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · candidata desde ARGOS 135 · boletín no localizado · firmeza no informada | Bajo
 
 Fuera de ventana, sin integrar: Durango, sentencia de más de 14 años por violación (portada
 indexada de la Fiscalía, boletín del 19-oct, por titular) · Jalisco, El Salto, 15 años, y
@@ -560,25 +564,26 @@ Flores Magón («la madrugada de este martes», por titular de Luz Noticias 2026
 ARGOS 138), ARG-139-004 y ARG-139-010; se suman a ARG-138-005 (mujer motociclista, 19-oct).
 RECUENTO DE MEDIOS CONTRADICHO (TRES / DOS), NO SE INTEGRA. Línea: solicitar a la FGE Sinaloa si
 las víctimas eran repartidores — hipótesis.
-2. JUCHITÁN, DOS FICHAS CON MUERTOS EN TRES DÍAS Y OTROS TRES HOMICIDIOS SIN DÍA FIJADO.
-ARG-138-001 (19-oct) y ARG-139-003 (21-oct); dos mototaxistas y un estudiante, días solo por
-resumen; La Silla Rota 2026/10/21 titula «cinco hombres en 24 horas»: composición contradicha,
-no se integra. Línea: solicitar a la FGEO el desglose oficial y si los hechos se vinculan entre
-sí — vínculo no acreditado.
-3. TEZONTEPEC DE ALDAMA, TRES HECHOS ARMADOS DESDE LA VENTANA DE ARGOS 131. ARG-135-REC-002 (San
-Gabriel, disparos contra policías municipales), Huitel (19-oct, solo por resumen; visto) y
-ARG-139-006. Línea: solicitar a la PGJEH si los tres hechos comparten agresores o vehículos —
-hipótesis.
+2. JUCHITÁN, DOS FICHAS CON MUERTOS EN TRES DÍAS Y OTROS TRES HOMICIDIOS SIN DÍA FIJADO (cálculo
+propio). ARG-138-001 (19-oct) y ARG-139-003 (21-oct); dos mototaxistas y un estudiante, días
+solo por resumen; La Silla Rota 2026/10/21 titula «cinco hombres en 24 horas»: composición
+contradicha, no se integra. Línea: solicitar a la FGEO el desglose oficial y si los hechos se
+vinculan entre sí — vínculo no acreditado.
+3. TEZONTEPEC DE ALDAMA, TRES HECHOS ARMADOS DESDE LA VENTANA DE ARGOS 131 (cálculo propio).
+ARG-135-REC-002 (San Gabriel, disparos contra policías municipales), Huitel (19-oct, solo por
+resumen; visto) y ARG-139-006. Línea: solicitar a la PGJEH si los tres hechos comparten
+agresores o vehículos — hipótesis.
 4. VÍCTIMAS A BORDO DE AUTOMÓVIL O CAMIONETA EN TRES DE LOS SEIS HOMICIDIOS ÚNICOS (cálculo
 propio; los dos motociclistas, en la 1): ARG-139-005 (Xalapa, dentro de su automóvil),
 ARG-139-007 (Ciudad Juárez, en una camioneta) y ARG-139-009 (San Luis Potosí, conductor
 perseguido). Línea: vigilar el ataque a ocupantes de vehículos en vía pública y solicitar a las
 tres fiscalías el calibre de los casquillos — sin vínculo entre entidades.
-5. AGRESORES EN MOTOCICLETA EN DOS HECHOS PROPIOS Y DOS DEL ÍNDICE. ARG-139-008 (Uruapan,
-«sujetos huyeron en moto», por titular de El Financiero), ARG-139-003 (Juchitán, solo por
-resumen), ARG-132-004 (Naucalpan) y ARG-130-002 (Cancún). Línea: solicitar a las fiscalías de
-Michoacán y Oaxaca la descripción de las motocicletas y si existen videos de vigilancia —
-hipótesis; modus operandi común, sin vínculo acreditado.
+5. AGRESORES EN MOTOCICLETA EN DOS HECHOS PROPIOS Y DOS DEL ÍNDICE (cálculo propio; los del
+índice, HEREDADO — NO REVERIFICADO). ARG-139-008 (Uruapan, «sujetos huyeron en moto», por
+titular de El Financiero), ARG-139-003 (Juchitán, solo por resumen), ARG-132-004 (Naucalpan) y
+ARG-130-002 (Cancún). Línea: solicitar a las fiscalías de Michoacán y Oaxaca la descripción de
+las motocicletas y si existen videos de vigilancia — hipótesis; modus operandi común, sin
+vínculo acreditado.
 
 ## INDICADORES OFICIALES
 
