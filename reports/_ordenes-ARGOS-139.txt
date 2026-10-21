@@ -24,10 +24,10 @@ PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
 DEBES ENCONTRAR: última edición argos-2026-10-20 (ARGOS 138) y 212 archivos en
 reports/ (incluye _argos-139-retirado-fuentes.md y -equipos.md: versión de 43 min de
 ARGOS 139, RETIRADA por el destinatario el 20-oct; sus ARG-ID no existen; úsala solo
-como insumo y reverifica lo que tomes). 129 a 138 viven en claude/argos-129 … -138 y
-claude/argos-139-9anrf5 (encadenadas): si main no las contiene, los ff-only deben
-avanzar desde b0558a3 (o el PR #15 ya las fusionó). Si algún merge NO es
-fast-forward, PARA Y AVÍSAME.
+como insumo y reverifica lo que tomes). ARGOS 129 a 138 YA ESTÁN EN main (PR #15,
+d0c6ab7): los ff-only de las ramas deben decir «Already up to date». El clon puede
+arrancar por detrás de origin/main o en una rama de sesión antigua: dilo y no es
+fallo. Si algún merge NO es fast-forward, PARA Y AVÍSAME.
 
 RED: comprueba primero si el egreso se abrió —
     curl -s -o /dev/null -m 12 -w '%{http_code}\n' https://www.gob.mx/fgr
@@ -78,7 +78,8 @@ nota propia fechada.
 ================================================================================
 BARRIDO
 ================================================================================
- Plantilla: tools/plantilla-equipos-139.md (ya preparada; escribe la hora de cierre). Los equipos NO TIENEN BASH: cotejo con la herramienta Grep y su salida
+ Plantilla: tools/plantilla-equipos-139.md (ya preparada; escribe la hora de cierre).
+ Los equipos NO TIENEN BASH: cotejo con la herramienta Grep y su salida
  pegada. Sección «AJENOS» obligatoria. ORDINALES EN TITULARES: buscar el primero.
  Búsqueda por fecha de cierre AL FINAL DE LA OLA.
  PRIORIDAD SOBRE EL CICLO: sentencias de las 14 NO REVISADA (Sin, Son, Dgo, Coah,
@@ -98,6 +99,8 @@ FORMA, CONSTRUCCIÓN Y CONTROLES
    día por resumen (excepción declarada para rojos). Solo el ALTO IMPACTO de una
    ventana anterior se recupera con -REC-.
  · Totales de muertos y heridos: derivados del arreglo (campos mu/he), nunca a mano.
+ · Acciones de portada y conclusiones redactadas como SOLICITUD («SOLICITE A…»),
+   nunca como exigencia (regla nueva de CLAUDE.md).
  · Conclusiones: patrón contra TODO el índice; ningún ARG-ID compartido con la
    portada; ninguna repite una conclusión de la edición anterior ni el panorama.
  · Móvil y texto SE GENERAN. node tools/validar.js … → validación OK.
