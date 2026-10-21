@@ -26,15 +26,15 @@ E = [
   panel="Doble homicidio: <b>2 muertos</b> en una vivienda", inst=SB, nac=NIN, conf="★★★☆☆",
   campo="hora no fijada; parentesco contradicho entre titulares; ninguna fuente institucional", I=0, N=0, R=5, A=0,
   fechadas=["Línea Directa (2026-10-20)", "Luz Noticias (2026-10-20)"], estatus="Parcialmente corroborado", arm=None,
-  desl="Flor de Mayo no figura en las cinco ediciones previas ni en el índice. Villa Unión figura en ARG-132-REC-002 (col. Toledo Corro, 12-oct): otro hecho. Uno de los seis homicidios del 20-oct en Mazatlán según el recuento de Noroeste (cobertura en vivo, no fecha hechos); los demás, en ARG-139-004 y en el archivo de fuentes. La captura de «El Wicho» en Villa Unión (ARGOS 134, fecha no fijada): otro hecho."),
+  desl="Flor de Mayo no figura en las cinco ediciones previas ni en el índice. Villa Unión figura en ARG-132-REC-002 (col. Toledo Corro, 12-oct): otro hecho. Uno de los seis homicidios del 20-oct en Mazatlán según el recuento de Noroeste (cobertura en vivo, no fecha hechos); los demás, en ARG-139-004, ARG-139-010 y en el archivo de fuentes. La captura de «El Wicho» en Villa Unión (ARGOS 134, fecha no fijada): otro hecho."),
  dict(id="ARG-139-002", estado="MX-ZAC", region="Noreste", color="rojo", impacto="mediano", fecha="2026-10-20", hora="no fijada", mu=0, he=0, cu=3,
   ent="Zacatecas", mun="Jalpa (vía pública) y Moyahua (cerca de la Unidad Deportiva)", dia="20-OCT, HORA NO FIJADA",
   title="ZACATECAS · JALPA Y MOYAHUA — HALLAN TRES CUERPOS EN DOS MUNICIPIOS",
   hecho="Jalpa y Moyahua de Estrada · <code>JALPA: VÍA PÚBLICA · MOYAHUA: CERCA DE LA UNIDAD DEPORTIVA, SOLO POR RESUMEN</code> · publicado el martes 20-OCT, por ruta (Diario de Yucatán 2026/10/20) · " + AP + " · «madrugada de este martes», " + RES + " · <b>3 cuerpos</b>, por titulares —1 en Jalpa y 2 en Moyahua, " + RES + "; una primera nota daba 2 · «Fiscalía confirma localización de tres cuerpos», por titular (Meganoticias) · Policía de Investigación y Servicios Periciales, " + RES + " · <code>CAUSA DE MUERTE NO INFORMADA</code> · <code>RELACIÓN ENTRE LOS DOS HALLAZGOS NO ACREDITADA</code> · mensaje de un grupo delictivo: solo en una fuente, <code>NO CORROBORADO, NO SE INTEGRA</code> · sexo fijado solo en Jalpa (un hombre), " + RES + " · <b>ningún detenido publicado</b>",
   panel="Hallazgo de <b>3 cuerpos</b> en dos municipios", inst="Fiscalía de Zacatecas <span class=\"muted-note\">(por titular)</span>", nac="El Universal", conf="★★★☆☆",
-  campo="causa de muerte no informada; confirmación institucional solo por titular; hora no fijada", I=1, N=1, R=3, A=0,
+  campo="causa de muerte no informada; confirmación institucional solo por titular; hora no fijada", I=1, N=1, R=2, A=0,
   fechadas=["Diario de Yucatán (2026/10/20)"], estatus="Parcialmente corroborado", arm=None,
-  desl="Moyahua no figura en las cinco ediciones previas ni en el índice. «Jalpa» en el índice es Jalpa de Méndez, Tabasco (ARG-133-009): otro lugar. Diario de Yucatán reproduce, según el resumen, la nota de El Universal: no se cuenta como independiente. La Fiscalía figura por el titular de Meganoticias, que cuenta como regional. Cuerpos fuera del recuento de muertos por agresión: van al de cuerpos hallados."),
+  desl="Moyahua no figura en las cinco ediciones previas ni en el índice. «Jalpa» en el índice es Jalpa de Méndez, Tabasco (ARG-133-009): otro lugar. Diario de Yucatán reproduce, según el resumen, la nota de El Universal: no se cuenta como independiente. La Fiscalía figura por el titular de Meganoticias, que no se cuenta además como regional. Cuerpos fuera del recuento de muertos por agresión: van al de cuerpos hallados."),
  dict(id="ARG-139-003", estado="MX-OAX", region="Sureste", color="rojo", impacto="mediano", fecha="2026-10-21", hora="mañana (solo por resumen)", mu=1, he=0, cu=0,
   ent="Oaxaca", mun="Juchitán de Zaragoza (crucero; ubicación solo por resumen)", dia="21-OCT, MAÑANA, DÍA SOLO POR RESUMEN",
   fecha_txt="2026-10-21, mañana — DÍA SOLO POR RESUMEN",
@@ -43,7 +43,7 @@ E = [
   panel="Trabajador municipal asesinado: <b>1 muerto</b>", inst=SB, nac=NIN, conf="★★☆☆☆",
   campo="día y hora solo por resumen; titular único sin fecha en la ruta; ninguna fuente institucional", I=0, N=0, R=3, A=0,
   fechadas=[], estatus="Pendiente de corroboración", arm=None,
-  desl="La víctima no figura en las ediciones previas. NO es ARG-138-001 (col. Tomás Aquino, lunes 19). Otros homicidios de Juchitán del 19 y 20-oct (mototaxistas de la Novena y la Primera Sección; estudiante en la col. 19 de Mayo): día solo por resumen, sin ruta fechada: vistos, no se fichan. El rojo descansa en un solo titular regional (víctima servidor público)."),
+  desl="La víctima no figura en las ediciones previas. NO es ARG-138-001 (col. Tomás Aquino, lunes 19). Otros homicidios de Juchitán del 19 y 20-oct: ver Conclusión 2. El rojo descansa en un solo titular regional (víctima servidor público)."),
  dict(id="ARG-139-004", estado="MX-SIN", region="Noroeste", color="amarillo", impacto="pequeno", fecha="2026-10-20", hora="~11:00 (solo por resumen)", mu=1, he=0, cu=0,
   ent="Sinaloa", mun="Mazatlán (Infonavit Playas, calle Lucio Blanco)", dia="20-OCT, ~11:00 POR RESUMEN",
   title="SINALOA · MAZATLÁN — ASESINAN A UN MOTOCICLISTA EN UN PUESTO DE TACOS DEL INFONAVIT PLAYAS",
@@ -67,11 +67,11 @@ E = [
   panel="Ataque armado: <b>1 muerto</b>", inst=SB, nac="La Silla Rota · El Universal", conf="★★★☆☆",
   campo="hora solo por resumen; ninguna fuente institucional", I=0, N=2, R=5, A=0,
   fechadas=["La Silla Rota (2026/10/20)"], estatus="Parcialmente corroborado", arm=None,
-  desl="El Chamizal no figura en las ediciones previas. Tezontepec de Aldama figura en ARG-135-REC-002 (San Gabriel, ventana de ARGOS 131): otro hecho. El homicidio de Huitel (lunes 19, solo por resumen) es de la ventana de ARGOS 138: visto, no se ficha."),
+  desl="El Chamizal no figura en las ediciones previas. Tezontepec de Aldama figura en ARG-135-REC-002 (San Gabriel, ventana de ARGOS 131): otro hecho. Huitel: ver Conclusión 3."),
  dict(id="ARG-139-007", estado="MX-CHH", region="Noroeste", color="amarillo", impacto="pequeno", fecha="2026-10-20", hora="no fijada", mu=1, he=1, cu=0,
   ent="Chihuahua", mun="Ciudad Juárez (Cerradas de San Pedro)", dia="20-OCT, HORA NO FIJADA",
   title="CHIHUAHUA · CIUDAD JUÁREZ — ATAQUE ARMADO EN LA ENTRADA DE UN FRACCIONAMIENTO: UN MUERTO Y UN HERIDO",
-  hecho="Ciudad Juárez · <code>CERRADAS DE SAN PEDRO, CALLES BASÍLICA DE SAN PEDRO Y BASÍLICA DE TORTOSA, SOLO POR RESUMEN</code> · martes 20-OCT, por ruta (El Bordo 20261020; El Diario de Juárez y El Diario de Chihuahua 2026/oct/20) · " + AP + " · <b>1 muerto</b> y <b>1 lesionado</b>, por titulares (🟡) · víctima dentro de una camioneta, por titular (El Bordo) · <b>ningún detenido publicado</b> · dos publicaciones adicionales (Portales de San Pedro; 21-oct 07:04, N+ sin fecha, solo por resumen) con 1 muerto y 1 lesionado en camioneta: <code>SE TRATAN COMO EL MISMO HECHO, NO SUMAN</code>",
+  hecho="Ciudad Juárez · <code>CERRADAS DE SAN PEDRO, CALLES BASÍLICA DE SAN PEDRO Y BASÍLICA DE TORTOSA, SOLO POR RESUMEN</code> · martes 20-OCT, por ruta (El Bordo 20261020; El Diario de Juárez y El Diario de Chihuahua 2026/oct/20) · " + AP + " · <b>1 muerto</b> y <b>1 lesionado</b>, por titulares (🟡) · víctima dentro de una camioneta, por titular (El Bordo) · <b>ningún detenido publicado</b> · dos publicaciones adicionales (Portales de San Pedro; 21-oct 07:04, N+ sin fecha, solo por resumen) con 1 muerto y 1 lesionado en camioneta: <code>POSIBLE DUPLICIDAD CON ESTA FICHA — NO SE INTEGRAN HASTA VALIDACIÓN</code> (la del 21-oct es de otro día; hora y víctima, por resumen)",
   panel="Ataque armado: <b>1 muerto</b> y 1 herido", inst=SB, nac=NIN, conf="★★★☆☆",
   campo="hora no fijada; ninguna fuente institucional", I=0, N=0, R=2, A=0,
   fechadas=["El Bordo (20261020)", "El Diario de Juárez (2026/oct/20)", "El Diario de Chihuahua (2026/oct/20)"], estatus="Parcialmente corroborado", arm=None,
@@ -93,6 +93,14 @@ E = [
   campo="día y hora solo por resumen; ninguna fuente institucional", I=0, N=0, R=3, A=0,
   fechadas=["Potosinoticias (2026/10/21)"], estatus="Parcialmente corroborado", arm=None,
   desl="Rocha Cordero no figura en las ediciones previas ni en el índice."),
+ dict(id="ARG-139-010", estado="MX-SIN", region="Noroeste", color="amarillo", impacto="pequeno", fecha="2026-10-20", hora="~13:00 (solo por resumen)", mu=1, he=0, cu=0,
+  ent="Sinaloa", mun="Mazatlán (fracc. La Foresta, av. Del Sol)", dia="20-OCT, ~13:00 POR RESUMEN",
+  title="SINALOA · MAZATLÁN — ASESINAN A OTRO MOTOCICLISTA EN LA FORESTA",
+  hecho="Mazatlán · <code>FRACC. LA FORESTA («LA FLORESTA» EN OTRAS NOTAS), AV. DEL SOL, SOLO POR RESUMEN</code> · martes 20-OCT, por titular con ruta fechada (Luz Noticias 2026-10-20: «es el tercer caso registrado este martes 20 de octubre») · ~13:00, " + RES + " · " + AP + " · <b>1 muerto</b>: motociclista, por titulares (🟡 homicidio doloso único) · repartidor; disparos desde un automóvil rojo, " + RES + " · «otro motociclista», por titular (Quadratín) · <code>RECUENTO DE CASOS DEL DÍA CONTRADICHO ENTRE MEDIOS (TRES / DOS), NO SE INTEGRA</code> · <b>ningún detenido publicado</b>",
+  panel="Motociclista asesinado: <b>1 muerto</b>", inst=SB, nac=NIN, conf="★★★☆☆",
+  campo="hora solo por resumen; ninguna fuente institucional", I=0, N=0, R=4, A=0,
+  fechadas=["Luz Noticias (2026-10-20)"], estatus="Parcialmente corroborado", arm=None,
+  desl="La Foresta no figura en las ediciones previas ni en el índice. Otro hecho que ARG-139-004 (Infonavit Playas, ~11:00): colonia, hora y vehículo de los agresores distintos."),
 ]
 
 # ---------------------------------------------------------------- RECUPERACIONES (ventanas anteriores; solo alto impacto)
@@ -141,11 +149,11 @@ NAP = sum(1 for e in E if "DÍA DE APERTURA" in e["hecho"])
 HORAS = 27 + 17 / 60
 DENS = f"{len(E) / HORAS:.2f}".replace(".", ",")
 assert TOT == [0] * 10, TOT
-assert cnt == {"rojo": 3, "amarillo": 6, "verde": 0}, cnt
+assert cnt == {"rojo": 3, "amarillo": 7, "verde": 0}, cnt
 assert cnt_rec == {"rojo": 3, "amarillo": 0, "verde": 0}, cnt_rec
-assert (MU, HE, CU, MU_REC, HE_REC) == (8, 1, 3, 0, 2), (MU, HE, CU, MU_REC, HE_REC)
-assert (NFR, NAP, len(ENT)) == (2, 7, 8), (NFR, NAP, len(ENT))
-assert DENS == "0,33", DENS
+assert (MU, HE, CU, MU_REC, HE_REC) == (9, 1, 3, 0, 2), (MU, HE, CU, MU_REC, HE_REC)
+assert (NFR, NAP, len(ENT)) == (2, 8, 8), (NFR, NAP, len(ENT))
+assert DENS == "0,37", DENS
 assert all(e["id"] == f"ARG-139-{i+1:03d}" for i, e in enumerate(E))
 assert len(set(r["id"] for r in R)) == len(R) and all(r["id"] == f"ARG-139-REC-{i+1:03d}" for i, r in enumerate(R))
 for x in E + R:
@@ -157,7 +165,7 @@ def ficha(e, rec=False):
     cls, lab = FLAG[e["color"]]
     op = ' style="opacity:.72;"' if rec else ""
     nivel = ESTR[e["conf"]]
-    fech = " · ".join(f"<b>{x}</b>" for x in e["fechadas"]) if e["fechadas"] else "<span class=\"muted-note\">ninguna con fecha en la ruta</span>"
+    fech = " · ".join(f"<b>{x}</b>" for x in e["fechadas"]) if e["fechadas"] else "<span class=\"muted-note\">ninguna</span>"
     if rec:
         armtxt = "<b>Ventana de origen</b>: " + e["orig"] + " — <b>fuera de todos los totales</b>"
     else:
@@ -265,7 +273,7 @@ port = f'''<section class="page">
       <br><b>2. SOLICITE A LA FISCALÍA DE SINALOA LA HORA, LA IDENTIFICACIÓN Y LA LÍNEA DE INVESTIGACIÓN</b> (ARG-139-001).
       <br><b>3. SOLICITE AL GOBIERNO DE GUERRERO Y A LA DEFENSA EL PARTE, SI HUBO UNA NUEVA AGRESIÓN Y SU FECHA, Y LA PERMANENCIA DEL DESPLIEGUE</b> (ARG-139-REC-002).
       <br><b>4. SOLICITE A LA FISCALÍA DE OAXACA LA CARPETA Y LAS MEDIDAS DE PROTECCIÓN</b> (ARG-139-REC-003).
-      <br><b>5. SOLICITE A LA PGJ DE HIDALGO LA PENA Y LA REPARACIÓN DEL DAÑO DEL FALLO DEL 8-OCT</b> (Santiago Tulantepec; audiencia de individualización del 21-oct, 17:45, por resumen).
+      <br><b>5. SOLICITE A LA PGJ DE HIDALGO LA PENA Y LA REPARACIÓN DEL DAÑO DEL FALLO DEL 8-OCT</b> (Santiago Tulantepec; ver Rastreo de Sentencias).
     </p>
   </div>
 
@@ -406,21 +414,21 @@ sent = f'''  <div class="conteo">
 cierre = f'''  <div class="alerta contexto">
     <div class="flag">VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL</div>
     <p>
-      <b>1.</b> <b>{cnt["rojo"]} ROJOS PROPIOS EN TRES ENTIDADES</b>: ARG-139-001 (homicidio múltiple), ARG-139-002 (tres cuerpos, causa no informada) y ARG-139-003 (víctima servidor público por titular único; día solo por resumen).
-      <br><b>2.</b> <b>{cnt["amarillo"]} amarillos</b>: cinco homicidios únicos y un ataque a un establecimiento sin víctimas.
+      <b>1.</b> <b>{cnt["rojo"]} ROJOS PROPIOS EN TRES ENTIDADES</b>: ARG-139-001, -002 y -003; el color de -002 y de -003 descansa en reserva (ver trazabilidad).
+      <br><b>2.</b> <b>{cnt["amarillo"]} amarillos</b>: seis homicidios únicos y un ataque a un establecimiento sin víctimas.
       <br><b>3.</b> <b>Respuesta institucional propia</b>: ninguna acción con hecho dentro de la ventana; el boletín federal de acciones del 19-oct, publicado el 20-oct, es evento anterior, fuera del semáforo.
       <br><b>4.</b> <b>Ventanas anteriores</b>: tres rojos recuperados (ARG-139-REC-001 a -003), fuera de los totales.
-      <br><b>5.</b> <code>NINGÚN HECHO PROPIO CON HORA FIJADA POR FUENTE: {NAP} DEL DÍA DE APERTURA Y {NFR} EN FRONTERA; TOTALES NO COMPARABLES SIN MÁS CON LA SERIE.</code>
+      <br><b>5.</b> <code>NINGÚN HECHO PROPIO CON HORA FIJADA POR FUENTE: TOTALES NO COMPARABLES SIN MÁS CON LA SERIE.</code>
     </p>
   </div>
 
   <div class="alerta contexto" style="margin-top:8px;">
     <div class="flag">CONCLUSIONES DE INTELIGENCIA CRIMINAL</div>
     <p>
-      <b>1. MAZATLÁN, TRES MOTOCICLISTAS ASESINADOS EL 20-OCT (DOS EN ESTA VENTANA)</b> (cálculo propio; continúa la conclusión 2 de ARGOS 138; elemento nuevo: víctimas en motocicleta): Flores Magón («la madrugada de este martes», por titular de Luz Noticias 2026-10-20; ventana de ARGOS 138), ARG-139-004 y La Foresta («tercer caso registrado este martes 20 de octubre», por titular de Luz Noticias 2026-10-20); Quadratín cuenta dos ataques mortales a motociclistas; ARG-138-005, mujer motociclista, 19-oct. Línea: <b>solicitar a la FGE Sinaloa si las víctimas eran repartidores</b> — hipótesis.
+      <b>1. MAZATLÁN, TRES MOTOCICLISTAS ASESINADOS EL 20-OCT (DOS EN ESTA VENTANA)</b> (cálculo propio): Flores Magón («la madrugada de este martes», por titular de Luz Noticias 2026-10-20; ventana de ARGOS 138), ARG-139-004 y ARG-139-010; se suman a ARG-138-005 (mujer motociclista, 19-oct). <code>RECUENTO DE MEDIOS CONTRADICHO (TRES / DOS), NO SE INTEGRA</code>. Línea: <b>solicitar a la FGE Sinaloa si las víctimas eran repartidores</b> — hipótesis.
       <br><b>2. JUCHITÁN, DOS FICHAS CON MUERTOS EN TRES DÍAS Y OTROS TRES HOMICIDIOS SIN DÍA FIJADO.</b> ARG-138-001 (19-oct) y ARG-139-003 (21-oct); dos mototaxistas y un estudiante, días solo por resumen; La Silla Rota 2026/10/21 titula «cinco hombres en 24 horas»: composición contradicha, no se integra. Línea: <b>solicitar a la FGEO el desglose oficial y si los hechos se vinculan entre sí</b> — vínculo no acreditado.
       <br><b>3. TEZONTEPEC DE ALDAMA, TRES HECHOS ARMADOS DESDE LA VENTANA DE ARGOS 131.</b> ARG-135-REC-002 (San Gabriel, disparos contra policías municipales), Huitel (19-oct, solo por resumen; visto) y ARG-139-006. Línea: <b>solicitar a la PGJEH si los tres hechos comparten agresores o vehículos</b> — hipótesis.
-      <br><b>4. VÍCTIMAS A BORDO DE UN VEHÍCULO EN TRES DE LOS CINCO HOMICIDIOS ÚNICOS</b> (cálculo propio): ARG-139-005 (Xalapa, dentro de su automóvil), ARG-139-007 (Ciudad Juárez, en una camioneta) y ARG-139-009 (San Luis Potosí, conductor perseguido). Línea: <b>vigilar el ataque a ocupantes de vehículos en vía pública y solicitar a las tres fiscalías el calibre de los casquillos</b> — sin vínculo entre entidades.
+      <br><b>4. VÍCTIMAS A BORDO DE AUTOMÓVIL O CAMIONETA EN TRES DE LOS SEIS HOMICIDIOS ÚNICOS</b> (cálculo propio; los dos motociclistas, en la 1): ARG-139-005 (Xalapa, dentro de su automóvil), ARG-139-007 (Ciudad Juárez, en una camioneta) y ARG-139-009 (San Luis Potosí, conductor perseguido). Línea: <b>vigilar el ataque a ocupantes de vehículos en vía pública y solicitar a las tres fiscalías el calibre de los casquillos</b> — sin vínculo entre entidades.
       <br><b>5. AGRESORES EN MOTOCICLETA EN DOS HECHOS PROPIOS Y DOS DEL ÍNDICE.</b> ARG-139-008 (Uruapan, «sujetos huyeron en moto», por titular de El Financiero), ARG-139-003 (Juchitán, solo por resumen), ARG-132-004 (Naucalpan) y ARG-130-002 (Cancún). Línea: <b>solicitar a las fiscalías de Michoacán y Oaxaca la descripción de las motocicletas y si existen videos de vigilancia</b> — hipótesis; modus operandi común, sin vínculo acreditado.
     </p>
   </div>
@@ -436,7 +444,7 @@ body = (port
  + page("PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD", panorama_body)
  + page("CRIMEN ORGANIZADO (I) — ALTO IMPACTO: SINALOA, ZACATECAS Y OAXACA", co1)
  + page("CRIMEN ORGANIZADO (II) — VIOLENCIA OPERATIVA: SINALOA, VERACRUZ E HIDALGO", co2)
- + page("CRIMEN ORGANIZADO (III) — VIOLENCIA OPERATIVA: CHIHUAHUA, MICHOACÁN Y SAN LUIS POTOSÍ", co3)
+ + page("CRIMEN ORGANIZADO (III) — VIOLENCIA OPERATIVA: CHIHUAHUA, MICHOACÁN, SAN LUIS POTOSÍ Y SINALOA", co3)
  + page("CRIMEN ORGANIZADO (IV) — VENTANAS ANTERIORES: ARGOS 129 Y 138", rec1)
  + page("CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS", arm1)
  + page("ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD", arm2)

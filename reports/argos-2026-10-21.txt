@@ -11,7 +11,7 @@ Versión 3.0 · Corte matutino · USO INSTITUCIONAL
 [ RADAR CENTRAL — EN VIVO ]
 
   · 🔴 Alto impacto · 3
-  · 🟡 Violencia operativa · 6
+  · 🟡 Violencia operativa · 7
   · 🟢 Acciones institucionales · 0
 
 [ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
@@ -22,7 +22,7 @@ Pase el cursor sobre un estado.
 
   · 🔴 ROJO — ALTO IMPACTO — 3 eventos
 
-  · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 6 eventos
+  · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 7 eventos
 
   · 🟢 VERDE — ACCIONES INSTITUCIONALES — 0 eventos
 
@@ -36,7 +36,7 @@ ENTRE LOS HALLAZGOS (ARG-139-002).
 FECHA, Y LA PERMANENCIA DEL DESPLIEGUE (ARG-139-REC-002).
 4. SOLICITE A LA FISCALÍA DE OAXACA LA CARPETA Y LAS MEDIDAS DE PROTECCIÓN (ARG-139-REC-003).
 5. SOLICITE A LA PGJ DE HIDALGO LA PENA Y LA REPARACIÓN DEL DAÑO DEL FALLO DEL 8-OCT (Santiago
-Tulantepec; audiencia de individualización del 21-oct, 17:45, por resumen).
+Tulantepec; ver Rastreo de Sentencias).
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-21 · Hora: 10:23 (CDMX) · Corte: Matutino · ARGOS N.° 139 · USO INSTITUCIONAL
@@ -45,8 +45,8 @@ Tulantepec; audiencia de individualización del 21-oct, 17:45, por resumen).
 
 ## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
 
-Ventana 20-oct 07:06 → 21-oct 10:23 CDMX (27 h 17 min) · 9 hechos propios en 8 entidades ·
-densidad 0,33 hechos/hora; duración y densidad, cálculo propio.
+Ventana 20-oct 07:06 → 21-oct 10:23 CDMX (27 h 17 min) · 10 hechos propios en 8 entidades ·
+densidad 0,37 hechos/hora; duración y densidad, cálculo propio.
 
   Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
   Sinaloa · Mazatlán (sindicatura de Villa Unión, col. Flor de Mayo) · 20-OCT, HORA NO FIJADA | Doble homicidio: 2 muertos en una vivienda | 🔴 Rojo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-139-001
@@ -58,6 +58,7 @@ densidad 0,33 hechos/hora; duración y densidad, cálculo propio.
   Chihuahua · Ciudad Juárez (Cerradas de San Pedro) · 20-OCT, HORA NO FIJADA | Ataque armado: 1 muerto y 1 herido | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-139-007
   Michoacán · Uruapan (Calzada Benito Juárez) · 20-OCT, HORA CONTRADICHA | Restaurante baleado; sin víctimas | 🟡 Amarillo | SIN BOLETÍN | El Financiero | ★★★☆☆ | ARG-139-008
   San Luis Potosí · San Luis Potosí (bulevar Rocha Cordero, a la altura de Tierra Blanca) · 20-OCT, NOCHE, DÍA SOLO POR RESUMEN | Conductor asesinado tras persecución: 1 muerto | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-139-009
+  Sinaloa · Mazatlán (fracc. La Foresta, av. Del Sol) · 20-OCT, ~13:00 POR RESUMEN | Motociclista asesinado: 1 muerto | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-139-010
   Tamaulipas · Río Bravo (colonia irregular, solo por resumen) · VENTANA ARGOS 129 — DÍA SOLO POR RESUMEN | Diputada federal herida con arma blanca | 🔴 Rojo (en su ventana) | SIN BOLETÍN | Infobae · El Universal | ★★★☆☆ | ARG-139-REC-001
   Guerrero · Juan R. Escudero (El Terrero) · VENTANA ARGOS 138 — HORA SOLO POR RESUMEN | Ataque con drones explosivos a viviendas; sin heridos según el gobierno estatal | 🔴 Rojo (en su ventana) | Gobierno de Guerrero (solo por resumen) | El Financiero | ★★★☆☆ | ARG-139-REC-002
   Oaxaca · Miahuatlán de Porfirio Díaz (col. La Merced) · VENTANA ARGOS 138 — HORA SOLO POR RESUMEN | Secretario municipal herido a balazos | 🔴 Rojo (en su ventana) | SIN BOLETÍN | Milenio (sin fecha en la ruta) | ★★★☆☆ | ARG-139-REC-003
@@ -67,10 +68,10 @@ densidad 0,33 hechos/hora; duración y densidad, cálculo propio.
 NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
 
   Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Muertos por agresión | Heridos | Cuerpos hallados | Armas cortas | Armas largas | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos en aseguramiento | Entidades
-  9 | 3 | 6 | 0 | 3 | 8 | 1 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 8
+  10 | 3 | 7 | 0 | 3 | 9 | 1 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 8
 
 Armamento: SIN TOTAL NACIONAL VERIFICABLE DURANTE EL CORTE · cuerpos hallados: causa de muerte
-no informada, fuera del recuento de muertos por agresión · marcas: 7 PUBLICADO EL DÍA DE
+no informada, fuera del recuento de muertos por agresión · marcas: 8 PUBLICADO EL DÍA DE
 APERTURA SIN HORA y 2 FRONTERA DE VENTANA — HORA NO FIJADA · en las recuperaciones, 2 heridos y
 0 muertos, fuera de todo total. Cálculo propio.
 Seguimientos de ediciones previas, fuera del semáforo: ARG-136-006, prisión preventiva por
@@ -115,8 +116,8 @@ publicado
 Deslindes y reservas: Flor de Mayo no figura en las cinco ediciones previas ni en el índice.
 Villa Unión figura en ARG-132-REC-002 (col. Toledo Corro, 12-oct): otro hecho. Uno de los seis
 homicidios del 20-oct en Mazatlán según el recuento de Noroeste (cobertura en vivo, no fecha
-hechos); los demás, en ARG-139-004 y en el archivo de fuentes. La captura de «El Wicho» en Villa
-Unión (ARGOS 134, fecha no fijada): otro hecho.
+hechos); los demás, en ARG-139-004, ARG-139-010 y en el archivo de fuentes. La captura de «El
+Wicho» en Villa Unión (ARGOS 134, fecha no fijada): otro hecho.
 
 ### ZACATECAS · JALPA Y MOYAHUA — HALLAN TRES CUERPOS EN DOS MUNICIPIOS [ROJO]
 
@@ -135,14 +136,14 @@ SE INTEGRA · sexo fijado solo en Jalpa (un hombre), SOLO POR RESUMEN · ningún
 
 ARG-139-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: causa de muerte no
 informada; confirmación institucional solo por titular; hora no fijada · Fuentes: Institucional
-1 · Nacional 1 · Regional 3 · Abierta 0 · con fecha en la ruta: Diario de Yucatán (2026/10/20) ·
+1 · Nacional 1 · Regional 2 · Abierta 0 · con fecha en la ruta: Diario de Yucatán (2026/10/20) ·
 Hecho: 2026-10-20 · Hora: no fijada · Consulta: 2026-10-21 10:24-12:19 · Estatus: Parcialmente
 corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Moyahua no figura en las cinco ediciones previas ni en el índice. «Jalpa»
 en el índice es Jalpa de Méndez, Tabasco (ARG-133-009): otro lugar. Diario de Yucatán reproduce,
 según el resumen, la nota de El Universal: no se cuenta como independiente. La Fiscalía figura
-por el titular de Meganoticias, que cuenta como regional. Cuerpos fuera del recuento de muertos
-por agresión: van al de cuerpos hallados.
+por el titular de Meganoticias, que no se cuenta además como regional. Cuerpos fuera del
+recuento de muertos por agresión: van al de cuerpos hallados.
 
 ### OAXACA · JUCHITÁN — ASESINAN A UN TRABAJADOR DEL AYUNTAMIENTO [ROJO]
 
@@ -161,14 +162,13 @@ habían informado, SOLO POR RESUMEN · ningún detenido publicado · identidad: 
 
 ARG-139-003 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: día y hora solo por
 resumen; titular único sin fecha en la ruta; ninguna fuente institucional · Fuentes:
-Institucional 0 · Nacional 0 · Regional 3 · Abierta 0 · con fecha en la ruta: ninguna con fecha
-en la ruta · Hecho: 2026-10-21, mañana — DÍA SOLO POR RESUMEN · Hora: mañana (solo por resumen)
-· Consulta: 2026-10-21 10:24-12:19 · Estatus: Pendiente de corroboración · Conteo de armamento:
-sin fila — armamento asegurado: no publicado
+Institucional 0 · Nacional 0 · Regional 3 · Abierta 0 · con fecha en la ruta: ninguna · Hecho:
+2026-10-21, mañana — DÍA SOLO POR RESUMEN · Hora: mañana (solo por resumen) · Consulta:
+2026-10-21 10:24-12:19 · Estatus: Pendiente de corroboración · Conteo de armamento: sin fila —
+armamento asegurado: no publicado
 Deslindes y reservas: La víctima no figura en las ediciones previas. NO es ARG-138-001 (col.
-Tomás Aquino, lunes 19). Otros homicidios de Juchitán del 19 y 20-oct (mototaxistas de la Novena
-y la Primera Sección; estudiante en la col. 19 de Mayo): día solo por resumen, sin ruta fechada:
-vistos, no se fichan. El rojo descansa en un solo titular regional (víctima servidor público).
+Tomás Aquino, lunes 19). Otros homicidios de Juchitán del 19 y 20-oct: ver Conclusión 2. El rojo
+descansa en un solo titular regional (víctima servidor público).
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-21 · Hora: 10:23 (CDMX) · Corte: Matutino · ARGOS N.° 139 · USO INSTITUCIONAL
@@ -243,15 +243,15 @@ Abierta 0 · con fecha en la ruta: La Silla Rota (2026/10/20) · Hecho: 2026-10-
 (solo por resumen) · Consulta: 2026-10-21 10:24-12:19 · Estatus: Parcialmente corroborado ·
 Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: El Chamizal no figura en las ediciones previas. Tezontepec de Aldama
-figura en ARG-135-REC-002 (San Gabriel, ventana de ARGOS 131): otro hecho. El homicidio de
-Huitel (lunes 19, solo por resumen) es de la ventana de ARGOS 138: visto, no se ficha.
+figura en ARG-135-REC-002 (San Gabriel, ventana de ARGOS 131): otro hecho. Huitel: ver
+Conclusión 3.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-21 · Hora: 10:23 (CDMX) · Corte: Matutino · ARGOS N.° 139 · USO INSTITUCIONAL
 
 ============================================================================
 
-## CRIMEN ORGANIZADO (III) — VIOLENCIA OPERATIVA: CHIHUAHUA, MICHOACÁN Y SAN LUIS POTOSÍ
+## CRIMEN ORGANIZADO (III) — VIOLENCIA OPERATIVA: CHIHUAHUA, MICHOACÁN, SAN LUIS POTOSÍ Y SINALOA
 
 ### CHIHUAHUA · CIUDAD JUÁREZ — ATAQUE ARMADO EN LA ENTRADA DE UN FRACCIONAMIENTO: UN MUERTO Y UN HERIDO [AMARILLO]
 
@@ -262,8 +262,8 @@ POR RESUMEN · martes 20-OCT, por ruta (El Bordo 20261020; El Diario de Juárez 
 Chihuahua 2026/oct/20) · PUBLICADO EL DÍA DE APERTURA SIN HORA · 1 muerto y 1 lesionado, por
 titulares (🟡) · víctima dentro de una camioneta, por titular (El Bordo) · ningún detenido
 publicado · dos publicaciones adicionales (Portales de San Pedro; 21-oct 07:04, N+ sin fecha,
-solo por resumen) con 1 muerto y 1 lesionado en camioneta: SE TRATAN COMO EL MISMO HECHO, NO
-SUMAN
+solo por resumen) con 1 muerto y 1 lesionado en camioneta: POSIBLE DUPLICIDAD CON ESTA FICHA —
+NO SE INTEGRAN HASTA VALIDACIÓN (la del 21-oct es de otro día; hora y víctima, por resumen)
 
 ── TRAZABILIDAD
 
@@ -321,6 +321,28 @@ Abierta 0 · con fecha en la ruta: Potosinoticias (2026/10/21) · Hecho: 2026-10
 SOLO POR RESUMEN · Hora: ~21:00 (solo por resumen) · Consulta: 2026-10-21 10:24-12:19 · Estatus:
 Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Rocha Cordero no figura en las ediciones previas ni en el índice.
+
+### SINALOA · MAZATLÁN — ASESINAN A OTRO MOTOCICLISTA EN LA FORESTA [AMARILLO]
+
+── HECHO
+
+Mazatlán · FRACC. LA FORESTA («LA FLORESTA» EN OTRAS NOTAS), AV. DEL SOL, SOLO POR RESUMEN ·
+martes 20-OCT, por titular con ruta fechada (Luz Noticias 2026-10-20: «es el tercer caso
+registrado este martes 20 de octubre») · ~13:00, SOLO POR RESUMEN · PUBLICADO EL DÍA DE APERTURA
+SIN HORA · 1 muerto: motociclista, por titulares (🟡 homicidio doloso único) · repartidor;
+disparos desde un automóvil rojo, SOLO POR RESUMEN · «otro motociclista», por titular
+(Quadratín) · RECUENTO DE CASOS DEL DÍA CONTRADICHO ENTRE MEDIOS (TRES / DOS), NO SE INTEGRA ·
+ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-139-010 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 4 ·
+Abierta 0 · con fecha en la ruta: Luz Noticias (2026-10-20) · Hecho: 2026-10-20 · Hora: ~13:00
+(solo por resumen) · Consulta: 2026-10-21 10:24-12:19 · Estatus: Parcialmente corroborado ·
+Conteo de armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: La Foresta no figura en las ediciones previas ni en el índice. Otro hecho
+que ARG-139-004 (Infonavit Playas, ~11:00): colonia, hora y vehículo de los agresores distintos.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-21 · Hora: 10:23 (CDMX) · Corte: Matutino · ARGOS N.° 139 · USO INSTITUCIONAL
@@ -523,25 +545,21 @@ después del cierre, SOLO POR RESUMEN.
 
 ── VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL
 
-1. 3 ROJOS PROPIOS EN TRES ENTIDADES: ARG-139-001 (homicidio múltiple), ARG-139-002 (tres
-cuerpos, causa no informada) y ARG-139-003 (víctima servidor público por titular único; día solo
-por resumen).
-2. 6 amarillos: cinco homicidios únicos y un ataque a un establecimiento sin víctimas.
+1. 3 ROJOS PROPIOS EN TRES ENTIDADES: ARG-139-001, -002 y -003; el color de -002 y de -003
+descansa en reserva (ver trazabilidad).
+2. 7 amarillos: seis homicidios únicos y un ataque a un establecimiento sin víctimas.
 3. Respuesta institucional propia: ninguna acción con hecho dentro de la ventana; el boletín
 federal de acciones del 19-oct, publicado el 20-oct, es evento anterior, fuera del semáforo.
 4. Ventanas anteriores: tres rojos recuperados (ARG-139-REC-001 a -003), fuera de los totales.
-5. NINGÚN HECHO PROPIO CON HORA FIJADA POR FUENTE: 7 DEL DÍA DE APERTURA Y 2 EN FRONTERA;
-TOTALES NO COMPARABLES SIN MÁS CON LA SERIE.
+5. NINGÚN HECHO PROPIO CON HORA FIJADA POR FUENTE: TOTALES NO COMPARABLES SIN MÁS CON LA SERIE.
 
 ── CONCLUSIONES DE INTELIGENCIA CRIMINAL
 
-1. MAZATLÁN, TRES MOTOCICLISTAS ASESINADOS EL 20-OCT (DOS EN ESTA VENTANA) (cálculo propio;
-continúa la conclusión 2 de ARGOS 138; elemento nuevo: víctimas en motocicleta): Flores Magón
-(«la madrugada de este martes», por titular de Luz Noticias 2026-10-20; ventana de ARGOS 138),
-ARG-139-004 y La Foresta («tercer caso registrado este martes 20 de octubre», por titular de Luz
-Noticias 2026-10-20); Quadratín cuenta dos ataques mortales a motociclistas; ARG-138-005, mujer
-motociclista, 19-oct. Línea: solicitar a la FGE Sinaloa si las víctimas eran repartidores —
-hipótesis.
+1. MAZATLÁN, TRES MOTOCICLISTAS ASESINADOS EL 20-OCT (DOS EN ESTA VENTANA) (cálculo propio):
+Flores Magón («la madrugada de este martes», por titular de Luz Noticias 2026-10-20; ventana de
+ARGOS 138), ARG-139-004 y ARG-139-010; se suman a ARG-138-005 (mujer motociclista, 19-oct).
+RECUENTO DE MEDIOS CONTRADICHO (TRES / DOS), NO SE INTEGRA. Línea: solicitar a la FGE Sinaloa si
+las víctimas eran repartidores — hipótesis.
 2. JUCHITÁN, DOS FICHAS CON MUERTOS EN TRES DÍAS Y OTROS TRES HOMICIDIOS SIN DÍA FIJADO.
 ARG-138-001 (19-oct) y ARG-139-003 (21-oct); dos mototaxistas y un estudiante, días solo por
 resumen; La Silla Rota 2026/10/21 titula «cinco hombres en 24 horas»: composición contradicha,
@@ -551,11 +569,11 @@ sí — vínculo no acreditado.
 Gabriel, disparos contra policías municipales), Huitel (19-oct, solo por resumen; visto) y
 ARG-139-006. Línea: solicitar a la PGJEH si los tres hechos comparten agresores o vehículos —
 hipótesis.
-4. VÍCTIMAS A BORDO DE UN VEHÍCULO EN TRES DE LOS CINCO HOMICIDIOS ÚNICOS (cálculo propio):
-ARG-139-005 (Xalapa, dentro de su automóvil), ARG-139-007 (Ciudad Juárez, en una camioneta) y
-ARG-139-009 (San Luis Potosí, conductor perseguido). Línea: vigilar el ataque a ocupantes de
-vehículos en vía pública y solicitar a las tres fiscalías el calibre de los casquillos — sin
-vínculo entre entidades.
+4. VÍCTIMAS A BORDO DE AUTOMÓVIL O CAMIONETA EN TRES DE LOS SEIS HOMICIDIOS ÚNICOS (cálculo
+propio; los dos motociclistas, en la 1): ARG-139-005 (Xalapa, dentro de su automóvil),
+ARG-139-007 (Ciudad Juárez, en una camioneta) y ARG-139-009 (San Luis Potosí, conductor
+perseguido). Línea: vigilar el ataque a ocupantes de vehículos en vía pública y solicitar a las
+tres fiscalías el calibre de los casquillos — sin vínculo entre entidades.
 5. AGRESORES EN MOTOCICLETA EN DOS HECHOS PROPIOS Y DOS DEL ÍNDICE. ARG-139-008 (Uruapan,
 «sujetos huyeron en moto», por titular de El Financiero), ARG-139-003 (Juchitán, solo por
 resumen), ARG-132-004 (Naucalpan) y ARG-130-002 (Cancún). Línea: solicitar a las fiscalías de

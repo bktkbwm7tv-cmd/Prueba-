@@ -1,6 +1,6 @@
 # ARGOS 139 — Archivo de fuentes
 
-**Corte**: 2026-10-21 · **Ventana**: 20-oct 07:06 → 21-oct 10:23 CDMX (**27 h 17 min**; `WINDOW_DAYS = 2`) · **Densidad**: 9 hechos propios / 27,28 h = **0,33 hechos/hora**, cálculo propio.
+**Corte**: 2026-10-21 · **Ventana**: 20-oct 07:06 → 21-oct 10:23 CDMX (**27 h 17 min**; `WINDOW_DAYS = 2`) · **Densidad**: 10 hechos propios / 27,28 h = **0,37 hechos/hora**, cálculo propio.
 **Hora de cierre**: hora real de arranque de la sesión (Bloque 0, 10:23 CDMX). Consultas de 10:24 a 12:02 CDMX en la ola y el coordinador; `procedencia-cifras` R1 terminó antes de las **12:19 CDMX** (hora real leída al recibir su informe): marca «Consulta 10:24-12:19» en el cartelón. La segunda ronda no busca. Los hechos posteriores a las 10:23 pertenecen a ARGOS 140.
 **Sustituye** a la versión de 43 min de ARGOS 139, retirada por el destinatario el 20-oct (`_argos-139-retirado-*.md`): sus ARG-ID no existen; lo que se tomó de ella se reverificó o se marca.
 
@@ -63,7 +63,9 @@ Informes íntegros de los seis equipos, notas del coordinador y controles: `repo
 | **Tlatlauquitepec** | Expresidente municipal (no servidor en funciones), ileso; noche del 19 o madrugada del 20 → 🟡 de la ventana de 138, visto |
 | **Colores arbitrados** | `-002` rojo por hallazgo de cuerpos con homicidio no acreditado; baja a 🟡 si la Fiscalía lo clasifica como muerte no violenta · `-003` sube a rojo por el titular de El Imparcial («trabajador del ayuntamiento»); `-005` no sube porque «docente» es «presunto» y no consta escuela pública |
 | **Tijuana, barbería** | Hombre de 27 años herido, «la noche del martes» solo por resumen; Blanco y Negro, ruta sin fecha → 🟡 sin ruta fechada: **visto**. Omisión de disposición detectada por `editor-duplicidad` R1 |
-| **Vistos de la ventana** | Mazatlán: La Floresta (día solo por resumen), Flores Magón y Luis Echeverría (madrugada del 20, ventana de 138) · Juchitán: mototaxistas de la Novena (19) y la Primera Sección (20), estudiante (col. 19 de Mayo), día solo por resumen · Acapulco, La Sabana (sin ruta fechada) · Puerto Vallarta, Ixtapa (sin ruta fechada) · Álamo, menor de 14 años (sin ruta fechada; nota idéntica de 2015) · Monclova (causa no informada) · Juárez, Portales de San Pedro y 21-oct 07:04 (posible duplicidad con `-007`) · Tezontepec, Huitel (19) · Cuernavaca, La Unión (19) · Izúcar (sin fecha) · Ixtayutla (19) |
+| **La Foresta (`-010`)** | Fichada en la ronda 2 (`editor-duplicidad` R2, E7): Luz Noticias 2026-10-20 titula «Ejecutan a motociclista en La Foresta… es el tercer caso registrado este martes 20 de octubre» (hallado por `procedencia-cifras` R1) → cumple el criterio de ruta fechada. Grafía de la fuente: «La Foresta»; el equipo escribió «La Floresta» |
+| **Boletín del 19-oct** | La Rumorosa va al cartelón como evento anterior porque trae desglose de armamento (módulo de armamento); Zapopan (orden de aprehensión), Culiacán (1,240 L) y Zacatecas (cateo) quedan vistos: sin armamento con cifra y hechos de ventanas anteriores |
+| **Vistos de la ventana** | Mazatlán: Flores Magón y Luis Echeverría (madrugada del 20, ventana de 138) · Juchitán: mototaxistas de la Novena (19) y la Primera Sección (20), estudiante (col. 19 de Mayo), día solo por resumen · Acapulco, La Sabana (sin ruta fechada) · Puerto Vallarta, Ixtapa (sin ruta fechada) · Álamo, menor de 14 años (sin ruta fechada; nota idéntica de 2015) · Monclova (causa no informada) · Juárez, Portales de San Pedro y 21-oct 07:04 (posible duplicidad con `-007`) · Tezontepec, Huitel (19) · Cuernavaca, La Unión (19) · Izúcar (sin fecha) · Ixtayutla (19) |
 
 ## 7. Fe de erratas (no va al cartelón)
 
@@ -92,7 +94,7 @@ Casillas: todas las revisadas, `SIN RESULTADO INDEXADO EN VENTANA`; `SIN ACTUALI
 | ARG-ID | Institucional | Nacional | Regional | Abierta |
 |---|---|---|---|---|
 | `-001` | 0 | 0 | 5: Línea Directa, Luz Noticias, Noroeste, Quadratín (Sinaloa y México, uno), Sinaloahoy | 0 |
-| `-002` | 1: Fiscalía de Zacatecas, por titular de Meganoticias | 1: El Universal | 3: Imagen Zacatecas, Ecodiario, Meganoticias (Diario de Yucatán reproduce a El Universal: fecha en la ruta, no fuente independiente) | 0 (El Congresista: visto, no contado) |
+| `-002` | 1: Fiscalía de Zacatecas, por titular de Meganoticias | 1: El Universal | 2: Imagen Zacatecas, Ecodiario (Meganoticias ya cuenta como institucional por su titular; Diario de Yucatán reproduce a El Universal: fecha en la ruta, no fuente independiente) | 0 (El Congresista: visto, no contado) |
 | `-003` | 0 | 0 (La Silla Rota: no consta que incluya a la víctima) | 3: El Imparcial de Oaxaca, La Onda Oaxaca, Meganoticias | 0 |
 | `-004` | 0 | 0 | 6: Luz Noticias, Noroeste, Meganoticias, Quadratín, Los Noticieristas, Sinaloahoy (N+, cobertura en vivo: no contada) | 0 |
 | `-005` | 0 | 0 | 9: Formato 7, Plumas Libres, Horacero, La Aldea de la Información, Meganoticias, Vanguardia Veracruz, La Opinión, El Sol de Veracruz, El Portavoz | 0 |
@@ -100,6 +102,7 @@ Casillas: todas las revisadas, `SIN RESULTADO INDEXADO EN VENTANA`; `SIN ACTUALI
 | `-007` | 0 | 0 | 2: El Bordo; El Diario de Juárez y El Diario de Chihuahua (mismo texto, una fuente) | 0 |
 | `-008` | 0 | 1: El Financiero | 5: Grupo Marmor / MediaNews / Red Michoacán (mismo texto, una), Changoonga, La Voz de Michoacán, Quadratín, Respuesta (RED113, republicador: no contado) | 0 |
 | `-009` | 0 | 0 | 3: Potosinoticias, San Luis Hoy, Pulso | 0 |
+| `-010` | 0 | 0 | 4: Luz Noticias, Noroeste, Quadratín, Sinaloahoy | 0 |
 | `-REC-001` | 0 | 2: Infobae, El Universal | 11: El Diario de Chihuahua, Expreso, ABC Noticias, En Línea Directa, CN Tamaulipas, Elefante Blanco, Hoy Tamaulipas, El Mercurio de Tamaulipas, Horacero, Noroeste, Vanguardia | 0 |
 | `-REC-002` | 1: Gobierno de Guerrero (subsecretario), solo por resumen | 1: El Financiero | 5: El Diario de Chihuahua, Diario Puntual, Lo de Hoy, Quadratín Guerrero, La Verdad | 0 |
 | `-REC-003` | 0 | 1: Milenio (ruta sin fecha) | 6: Meganoticias, El Imparcial de Oaxaca, Expresa Oaxaca, Primera Línea, Canal 13, Telediario | 0 |
@@ -108,10 +111,10 @@ URL completas: en las notas del coordinador y los informes de equipo (`argos-202
 
 ## 10. Desglose de cálculos propios
 
-- Hechos propios: 9 (`len(E)`); semáforo 3/6/0; **muertos por agresión 8** (`MU`: 2 + 1 + 1 + 1 + 1 + 1 + 1), **heridos 1** (`HE`), **cuerpos hallados 3** (`CU`), derivados del arreglo `E`; recuperaciones: 0 muertos y 2 heridos (`MU_REC`, `HE_REC`), fuera de todo total.
-- Densidad: 9 / 27,2833 h = 0,330 → **0,33**.
-- Marcas: 7 `PUBLICADO EL DÍA DE APERTURA SIN HORA` y 2 `FRONTERA DE VENTANA — HORA NO FIJADA`: **ningún hecho propio con hora fijada por fuente**.
-- Entidades: 8 (Sinaloa con dos hechos).
+- Hechos propios: 10 (`len(E)`); semáforo 3/7/0; **muertos por agresión 9** (`MU`: 2 + 1 + 1 + 1 + 1 + 1 + 1 + 1), **heridos 1** (`HE`), **cuerpos hallados 3** (`CU`), derivados del arreglo `E`; recuperaciones: 0 muertos y 2 heridos (`MU_REC`, `HE_REC`), fuera de todo total.
+- Densidad: 10 / 27,2833 h = 0,367 → **0,37**.
+- Marcas: 8 `PUBLICADO EL DÍA DE APERTURA SIN HORA` y 2 `FRONTERA DE VENTANA — HORA NO FIJADA`: **ningún hecho propio con hora fijada por fuente**.
+- Entidades: 8 (Sinaloa con tres hechos).
 - Armamento: `TOT` = 0 en las diez categorías; ninguna fila.
 
 ## 11. Los dos controles editoriales
@@ -120,7 +123,7 @@ URL completas: en las notas del coordinador y los informes de equipo (`argos-202
 |---|---|---|---|
 | 1 | `procedencia-cifras` (30 búsquedas, `extended`) | **CORREGIR**: ninguna cifra inventada; 7 fallos de procedencia | Aplicados: Villa Unión, parentesco **contradicho entre titulares** («madre e hijo» / «pareja») · `-002` R 4 → 3 (Diario de Yucatán reproduce a El Universal) · `-003` sin fuente fechada propia: La Silla Rota no consta que incluya a la víctima → N 0, sin ruta fechada, ★★☆☆☆ · Conclusión 1: «madrugada» por titular, ~01:00 por resumen; La Foresta «tercer caso… este martes 20» por titular de Luz Noticias · `-004` ubicación contradicha (Pueblo Nuevo) · `-007` R 3 → 2 y `-008` R 7 → 5 (mismo texto en varios medios) · `-REC-003` gravedad contradicha; Milenio N 1 · exfiscal: «oficiosa» y «madrugada» solo por resumen; sábado 24 y jueves 22 por titular · La Rumorosa: **«17 cargadores» retirado** (eco de la consulta de la versión retirada, nunca tuvo respaldo) · General Cepeda «13 años» por titular de Argonmexico; FGR y Caborca solo por resumen · Jalisco sin delito; Colima sin «a cada uno»; Tulantepec fallo del **8-oct** · FE-001 condicionada · criterio de lectura parcial declarado (§13) |
 | 1 | `editor-duplicidad` (sin búsquedas) | **CORREGIR**: sin duplicidad de ARG-ID; S1-S7, C1-C11, I1-I5 | Aplicados: S1 La Rumorosa como `EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE` (el «ya vista en 138» venía de la retirada) · S2 boletín del 21-oct «solo por rango» · S3 Valoración 3 reescrita · S4 criterio de armamento «cantidad por titular fechado y fecha del hecho en ventana» · S5 Tijuana, barbería: visto (§6) · S6 nueva agresión de El Terrero: `POSIBLE NUEVA AGRESIÓN O MISMO HECHO` · S7 Conclusión 2 reescrita · C1 Conclusión 1 declarada continuación de la 2 de 138 · C2 exfiscal solo como seguimiento; Conclusión 4 nueva (víctimas a bordo de vehículo) · C3 Conclusión 5 de sentencias retirada; nueva (agresores en motocicleta) · C4 portada sin nombres de hechos · C5 Valoración 2 sin totales · C6 seguimientos sin novedad retirados del cartelón (138-001, -006, -007, -008, -011; Cadereyta en armamento) · C7 deslinde de REC-001 · C8 Xalisco con `POSIBLE DUPLICIDAD CON ARG-133-REC-007` · C9 «presunto docente» · C10 `-007` mismo hecho, no suma · C11 color de `-002` arbitrado (§6) · I1 índice actualizado · I2 REC-001 con sus 11 emisores; dominios igualados; `gabinetedeseguridad.gob.mx` `NO REVISADA` · I3 IDs reutilizados declarados (§7) · I5 Nayarit retirado de fuera de ventana. **No aplicado**: I4 (fila de ceros en armamento), por precedente de 138 |
-
+| 2 | `editor-duplicidad` (sin búsquedas) | **CORREGIR**: R1 aplicada o justificada; E1-E7 | Aplicados: E1 Valoración 5 sin 7+2 · E2 `-007` «posible duplicidad, no se integran» · E3 Valoración 1 sin descriptores; Conclusión 1 sin nota de método y con el recuento contradicho; Conclusión 4 «tres de seis» (motociclistas en la 1); deslindes de `-003` y `-006` remiten a las conclusiones · E4 `-002` R 3 → 2 (Meganoticias solo como institucional) · E5 portada, ítem 5, remite a Sentencias · E6 «ninguna» · **E7 La Foresta fichada como `ARG-139-010`** (🟡): 10 hechos, 3/7/0, 9 muertos, densidad 0,37. **No aplicado**: tarjeta «Fiscalías con resultado» (precedente) y ARG-ID de seguimiento para Tulantepec (no es hecho del corte) |
 
 ## 12. Herramientas
 
@@ -131,7 +134,7 @@ URL completas: en las notas del coordinador y los informes de equipo (`argos-202
 
 1. **Un boletín federal «sin resultado» puede existir y no estar indexado todavía**: el del 19-oct no apareció la mañana del 20 y sí la del 21.
 2. **Los recuentos de medios («seis asesinados este martes», «cinco en 24 horas») vienen de coberturas en vivo o agregados**: sirven para buscar cada hecho, nunca como cifra.
-3. **Sin hora en ninguna fuente**: los nueve hechos propios tienen solo día; la frontera de las 07:06 no se puede resolver con fuentes de precisión diaria.
+3. **Sin hora en ninguna fuente**: los diez hechos propios tienen solo día; la frontera de las 07:06 no se puede resolver con fuentes de precisión diaria.
 4. **Dominios**: confirmados `fge.chiapas.gob.mx`, `fge.yucatan.gob.mx`, `ssp.chiapas.gob.mx`; sin páginas (13, igual que el cartelón) `fge.sinaloa.gob.mx`, `pgjhidalgo.gob.mx`, `fiscalia.tlaxcala.gob.mx`, `fiscalia.campeche.gob.mx`, `ssp.guerrero.gob.mx`, `seguridad.nl.gob.mx`, `ssp.durango.gob.mx`, `ssp.bajacalifornia.gob.mx`, `sspes.sonora.gob.mx`, `ssp.hidalgo.gob.mx`, `ssp.morelos.gob.mx`, `ssc.queretaro.gob.mx`, `seguridadypaz.guanajuato.gob.mx`.
 5. **Lectura parcial** (criterio del coordinador, no de los informes): parcial si el último ítem indexado es anterior al 1-sep-2026 o la ruta es opaca sin fecha. No parciales: Jal, Nay, Ags, Col, Dgo (ítems de octubre); el resto de las 21, parciales (16).
 6. **Republicaciones**: varias notas con el mismo título y *slug* son un solo texto; se cuentan una vez.

@@ -18,7 +18,7 @@ RED: curl -s -o /dev/null -m 12 -w '%{http_code}\n' https://www.gob.mx/fgr
 Si NO devuelve 000, DILO y lee los boletines directamente.
 
 VENTANA: abre 2026-10-21 10:23 CDMX —donde cerró ARGOS 139— y cierra a la HORA REAL
-de tu arranque. Si dura menos de ~12 h, AVÍSAME ANTES DE LA OLA. 139: 27 h 17 min, 0,33.
+de tu arranque. Si dura menos de ~12 h, AVÍSAME ANTES DE LA OLA. 139: 27 h 17 min, 0,37.
 
 TODA BÚSQUEDA CON mode:"extended". TOPE DE 200 POR TURNO, COMPARTIDO.
 CICLO: A (Noroeste + Centro), tras la prioridad sobre el ciclo.

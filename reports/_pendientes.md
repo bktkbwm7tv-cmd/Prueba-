@@ -2391,6 +2391,7 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 | ⚠️ **El Terrero (`ARG-139-REC-002`)** | «Reanudan ataques» (El Diario de Chihuahua 2026/oct/20): ¿nueva agresión con fecha en ventana de 139 o 140? Parte de la Defensa; drones con explosivos confirmados por autoridad |
 | **Juchitán** | Desglose oficial de la serie del 19-21 oct; calidad laboral de la víctima de `ARG-139-003`; mototaxistas de la Novena (19) y la Primera Sección (20) y estudiante: rutas fechadas |
 | **Jalpa y Moyahua (`ARG-139-002`)** | Causa de muerte e identificación; si la Fiscalía la clasifica como muerte no violenta, baja a 🟡 (fe de erratas) |
+| **Mazatlán, motociclistas (`ARG-139-004`, `-010`)** | Recuento de medios (tres / dos); ¿repartidores? |
 | **Villa Unión (`ARG-139-001`)** | Parentesco («madre e hijo» / «pareja»); hora |
 | **Miahuatlán (`ARG-139-REC-003`)** | Cargo y gravedad contradichos; detenidos |
 | **Uruapan (`ARG-139-008`)** | Hora (~06:00 → ventana de 138, 🟡: fe de erratas y retiro) |

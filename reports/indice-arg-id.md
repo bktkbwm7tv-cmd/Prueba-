@@ -932,6 +932,7 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-139-007` | 139 | 2026-10-20 | ARG-139-007 — Ciudad Juárez (Cerradas de San Pedro), Chihuahua: 1 muerto y 1 lesionado; El Bordo 20261020; Portales de San Pedro y 21-oct 07:04 tratados como el mismo hecho (🟡) |
 | `ARG-139-008` | 139 | 2026-10-20 | ARG-139-008 — Uruapan (Calzada Benito Juárez), Michoacán: restaurante baleado, sin víctimas; El Financiero 2026/10/20; hora contradicha ~06:00/~08:00 (🟡) |
 | `ARG-139-009` | 139 | 2026-10-20 | ARG-139-009 — San Luis Potosí (bulevar Rocha Cordero), SLP: conductor perseguido y asesinado; Potosinoticias 2026/10/21; FRONTERA (🟡) |
+| `ARG-139-010` | 139 | 2026-10-20 | ARG-139-010 — Mazatlán (fracc. La Foresta, av. Del Sol), Sinaloa: motociclista asesinado; Luz Noticias 2026-10-20 «tercer caso registrado este martes 20»; ~13:00 solo por resumen (🟡) |
 | `ARG-139-REC-001` | 139 | 2026-10-10 | ARG-139-REC-001 — Río Bravo, Tamaulipas: diputada federal herida con arma blanca; día solo por resumen; ventana de ARGOS 129 (🔴 por decisión del destinatario) |
 | `ARG-139-REC-002` | 139 | 2026-10-19 | ARG-139-REC-002 — Juan R. Escudero (El Terrero), Guerrero: ataque con drones explosivos y disparos a viviendas de desplazados retornados; sin heridos según el gobierno estatal, por resumen; ventana de ARGOS 138 (🔴) |
 | `ARG-139-REC-003` | 139 | 2026-10-19 | ARG-139-REC-003 — Miahuatlán de Porfirio Díaz (col. La Merced), Oaxaca: secretario municipal (o particular del edil) herido a balazos; ventana de ARGOS 138 (🔴) |
