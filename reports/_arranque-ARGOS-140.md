@@ -13,10 +13,10 @@ Los comandos del mensaje de órdenes. **Estado esperado**: última edición `arg
 | Campo | Valor |
 |---|---|
 | Número | **ARGOS 140** |
-| Ventana | **abre 2026-10-21 10:23 CDMX** (cierre de 139) y cierra a la hora real de arranque |
+| Ventana | **abre 2026-10-21 10:23 CDMX** (cierre de 139) y cierra a la hora real de arranque del 22-oct (~21-22 h) |
 | Serie | 23 h 06 (136) · 26 h 31 (137) · 20 h 01 (138) · **27 h 17 (139)** |
 | Ciclo | **A** (Noroeste + Centro), tras la prioridad sobre el ciclo |
-| Archivo | `argos-AAAA-MM-DD.html` con la fecha del corte |
+| Archivo | `argos-2026-10-22.html` (sin sufijo) |
 
 ## BLOQUE 2 — LECTURA OBLIGATORIA
 
@@ -27,7 +27,7 @@ Los comandos del mensaje de órdenes. **Estado esperado**: última edición `arg
 
 ## BLOQUE 3 — PRESUPUESTO
 
-Tope de 200 por turno: control 2 · ola ~156 · coordinador ~10 · `procedencia-cifras` ~30. Todo `extended`.
+Tope de 200 por turno: control 2 · ola ~156 · coordinador ~10 · `procedencia-cifras` ~30. Todo `extended`. Plantilla de equipos: **`tools/plantilla-equipos-140.md`** (escriba la hora de cierre).
 
 ## BLOQUE 4 — TRAMPAS VERIFICADAS EN 139
 
@@ -42,5 +42,6 @@ Tope de 200 por turno: control 2 · ola ~156 · coordinador ~10 · `procedencia-
 ## BLOQUE 5 — FORMA Y CONSTRUCCIÓN
 
 - Parta de `tools/datos-argos-139.py` (copia a `datos-argos-140.py`): cambie `NUM`, `FECHA`, `HORA`, `CONSULTA`, `DUR`, `HORAS`, la ventana del panorama, las aserciones y el `<title>` que reemplaza (plantilla: `reports/argos-2026-10-21.html`, título «ARGOS 139 — … — 2026-10-21»).
-- Móvil: `python3 tools/gen-movil.py 140 <FECHA> 139 2026-10-21 <HORA>`. Texto: `gen-texto.py`. Validador: `node tools/validar.js reports/argos-<FECHA>.html 2026-10-21 <FECHA>`.
-- Controles: dos rondas, veinte pases cada una; informes en `reports/argos-<FECHA>-equipos.md`.
+- Móvil: `python3 tools/gen-movil.py 140 2026-10-22 139 2026-10-21 <HORA>`. Texto: `gen-texto.py`. Validador: `node tools/validar.js reports/argos-2026-10-22.html 2026-10-21 2026-10-22`.
+- Controles: dos rondas, veinte pases cada una; informes en `reports/argos-2026-10-22-equipos.md`. **La ronda 2 en serie** (duplicidad, luego procedencia): en 139 corrieron en paralelo y procedencia revisó un borrador superado.
+- Encargo con fecha de hoy: **audiencia estatal del exfiscal (jueves 22-oct)**.

@@ -12,23 +12,104 @@ PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
     ls reports/ | wc -l
 
 DEBES ENCONTRAR: última edición argos-2026-10-21 (ARGOS 139) y 219 archivos en
-reports/. Si algún merge NO es fast-forward, PARA Y AVÍSAME.
+reports/. ARGOS 139 NO ESTÁ EN main (vive en claude/argos-139-qe9f01, 3c343ac): el
+ff-only de esa rama debe traerla. El clon puede arrancar por detrás de origin/main o
+en una rama de sesión antigua: dilo y no es fallo. Si algún merge NO es
+fast-forward, PARA Y AVÍSAME.
 
-RED: curl -s -o /dev/null -m 12 -w '%{http_code}\n' https://www.gob.mx/fgr
-Si NO devuelve 000, DILO y lee los boletines directamente.
+RED: comprueba primero si el egreso se abrió —
+    curl -s -o /dev/null -m 12 -w '%{http_code}\n' https://www.gob.mx/fgr
+Si NO devuelve 000, DILO y lee los boletines directamente (WebFetch). Si devuelve
+000, sigue bloqueado: solo WebSearch.
 
 VENTANA: abre 2026-10-21 10:23 CDMX —donde cerró ARGOS 139— y cierra a la HORA REAL
-de tu arranque. Si dura menos de ~12 h, AVÍSAME ANTES DE LA OLA. 139: 27 h 17 min, 0,37.
+de tu arranque (22-oct). Si dura menos de ~12 h, AVÍSAME ANTES DE LA OLA. Recalcula
+duración y densidad al sellar. 139: 27 h 17 min, 0,37.
+FECHA DEL ARCHIVO: argos-2026-10-22.html (sin sufijo).
 
-TODA BÚSQUEDA CON mode:"extended". TOPE DE 200 POR TURNO, COMPARTIDO.
-CICLO: A (Noroeste + Centro), tras la prioridad sobre el ciclo.
+================================================================================
+MODO DE BÚSQUEDA
+================================================================================
+TODA BÚSQUEDA CON mode:"extended". Primera búsqueda: CONSULTA DE CONTROL en los dos
+modos. TOPE DE 200 BÚSQUEDAS POR TURNO, COMPARTIDO: OLA DE ~156 (6 × 26), ~10 DEL
+COORDINADOR Y 30 PARA procedencia-cifras. Cifra de peso ENTRE COMILLAS. UN DOMINIO
+POR CONSULTA site:. LAS NOTAS DEL COORDINADOR REGISTRAN TODA URL QUE RESPALDE UNA
+FICHA.
 
-ENCARGOS PRIMERO: Tulantepec (pena del 21-oct 17:45) · exfiscal (22 y 24-oct) ·
-El Terrero («reanudan ataques») · Juchitán (serie 19-21 oct) · Jalpa y Moyahua
-(causa de muerte) · Villa Unión (parentesco) · Uruapan (hora) · Miahuatlán.
-Resto: reports/_pendientes.md, «Abiertos que ARGOS 140 hereda».
-REGLAS NUEVAS: republicaciones = una fuente; cifra solo en titular o slug (eco de
-consulta); recuentos de medios nunca se integran.
+================================================================================
+ENCARGOS, PRIMERO Y SIN NEGOCIAR
+================================================================================
+ 0. CICLO: A (Noroeste + Centro), por la tabla de CLAUDE.md.
+ 1. TULANTEPEC (Hidalgo): pena y reparación del daño de la audiencia de
+    individualización del MIÉRCOLES 21-OCT 17:45 (fallo condenatorio del 8-oct).
+    Sentencia integrable SOLO con término expreso y fuente oficial; sin boletín de la
+    PGJ Hidalgo = PENDIENTE DE CONFIRMACIÓN OFICIAL.
+ 2. EXFISCAL (ARG-136-006): audiencia ESTATAL del JUEVES 22-OCT y vinculación FEDERAL
+    del SÁBADO 24-OCT 15:00 (por resumen). Prisión preventiva federal ya publicada en
+    139: no repetir. Comunicado de la FGR.
+ 3. EL TERRERO (ARG-139-REC-002): «reanudan ataques contra desplazados» (El Diario de
+    Chihuahua 2026/oct/20). ¿Nueva agresión con fecha? Si cae en la ventana de 139 →
+    -REC- 🔴; si en la de 140 → ficha propia 🔴. Parte de la Defensa.
+ 4. FICHAS DE 139: Jalpa y Moyahua (-002) causa de muerte e identificación (si la
+    Fiscalía la clasifica no violenta → baja a 🟡 por fe de erratas) · Villa Unión
+    (-001) parentesco y hora · Juchitán (-003) calidad laboral de la víctima; desglose
+    oficial de la serie del 19-21 oct · Uruapan (-008) hora (~06:00 → ventana de 138,
+    se retira) · Xalapa (-005) ¿docente de escuela pública? (sube a 🔴) · Juárez
+    (-007) Portales de San Pedro y el ataque del 21-oct 07:04, ¿mismo hecho? ·
+    Miahuatlán (-REC-003) cargo y gravedad · Mazatlán (-004/-010) ¿repartidores?
+ 5. SEGUIMIENTOS: Xalisco (ARG-125-003) «tres fosas más en Tecuala»: ¿duplica
+    ARG-133-REC-007? · Cachanillas (cifra oficial de restos) · Río Bravo (fragmento
+    literal con el día; la fe de erratas a 129 está CONDICIONADA).
+ 6. SENTENCIAS CANDIDATAS: Culiacán 18 años (desde 138) · Ensenada (desde 135;
+    158 años / 158 años y 9 meses, contradicho) · General Cepeda y Caborca (FGR,
+    19-oct): boletines.
+Heredados: Nogales · Ajuchitlán · Apatzingán · El Tívoli · Coquimatlán · Linares ·
+Tepic (vinculación; detención contradicha) · Patamban y ARG-137-007 (color: decisión
+del destinatario) · Taxco (vinculación de los 4 del C2).
 
-Detalle completo: reports/_arranque-ARGOS-140.md.
+================================================================================
+BARRIDO
+================================================================================
+ Plantilla: tools/plantilla-equipos-140.md (ya preparada; escribe la hora de cierre).
+ Los equipos NO TIENEN BASH: cotejo con la herramienta Grep y su salida pegada.
+ Sección «AJENOS» obligatoria. ORDINALES EN TITULARES: buscar el primero.
+ Búsqueda por fecha de cierre AL FINAL DE LA OLA.
+ PRIORIDAD SOBRE EL CICLO: sentencias de las 11 NO REVISADA (BC, BCS, Chih, Sin,
+ Tamps, CDMX, Pue, Tlax, Hgo, Qro, Camp); armamento de las 19 (BC, Son, Dgo, Chih,
+ Sin, Coah, NL, Tamps, SLP, Mich, Gto, Mor, Tlax, Hgo, Gro, Oax, Camp, Yuc, QRoo);
+ alto impacto con consulta propia para las 7 de solo regional amplia (BC, Chih, Coah,
+ NL, Ags, Gto, Edomex). Variantes de dominio: _pendientes.md, «Deuda de método
+ (ARGOS 139)». Boletín federal: triple consulta para el 21 y 22-oct, y repetirla al
+ final de la ola.
+ REGLAS NUEVAS DE 139 (en la plantilla): REPUBLICACIONES = UNA FUENTE · la cifra
+ solo vale en titular o slug (ECO DE CONSULTA) · RECUENTOS DE MEDIOS nunca se
+ integran · cuerpos sin causa de muerte, columna aparte.
+
+================================================================================
+FORMA, CONSTRUCCIÓN Y CONTROLES
+================================================================================
+ · Parte de tools/datos-argos-139.py (copia a datos-argos-140.py) y de
+   reports/argos-2026-10-21.html como plantilla (su <title> dice «ARGOS 139 —
+   Reporte Nacional de Seguridad — 2026-10-21»).
+ · Criterio: entra con marca el hecho con ruta fechada; queda visto el que solo
+   tiene día por resumen (excepción declarada para rojos). Solo el ALTO IMPACTO de
+   una ventana anterior se recupera con -REC-.
+ · Totales de muertos, heridos y cuerpos: derivados del arreglo (mu/he/cu), nunca a
+   mano.
+ · Acciones de portada y conclusiones como SOLICITUD («SOLICITE A…»), nunca
+   exigencia. La portada NO nombra los hechos: autoridad, qué solicitar y ARG-ID.
+ · Conclusiones: patrón contra TODO el índice; todo conteo «cálculo propio»;
+   ningún ARG-ID compartido con la portada; ninguna repite una conclusión de 139 ni
+   el panorama; nada de método dentro de la conclusión.
+ · Móvil y texto SE GENERAN: gen-movil.py 140 2026-10-22 139 2026-10-21 <HORA> ·
+   gen-texto.py · node tools/validar.js reports/argos-2026-10-22.html 2026-10-21
+   2026-10-22 → validación OK.
+ · editor-duplicidad y procedencia-cifras: VEINTE PASES, dos rondas, informes en
+   reports/argos-2026-10-22-equipos.md. La ronda 2 de los dos controles va EN SERIE
+   (duplicidad y después procedencia), no en paralelo: en 139 procedencia R2 revisó
+   un borrador ya superado.
+ · Marca «Consulta»: hora real de la última búsqueda, no una estimación.
+ · Cierre: _pendientes.md, indice-arg-id.md y orden de ARGOS 141.
+ · Detalle completo: reports/_arranque-ARGOS-140.md.
+
 Empieza por el Bloque 0 y dime qué encuentras antes de seguir.
