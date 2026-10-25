@@ -21,6 +21,8 @@ sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le
 
 **ARGOS 139 publicado el 21-oct** (ventana 20-oct 07:06 → 21-oct 10:23). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-140.md`** (y `_ordenes-ARGOS-140.txt`).
 
+⚠️ **25-oct: la orden de 140 del 22-oct no se ejecutó** (la sesión se detuvo tras el Bloque 0; no hay edición del 22 al 24). **Orden rehecha el 25-oct** en la rama `claude/argos-140`: ventana larga **21-oct 10:23 → domingo 25-oct**, archivo `argos-2026-10-25.html`, `WINDOW_DAYS = 5`, recall nacional por día.
+
 ## Instrucción editorial permanente — la forma del cartelón
 
 Fijada por el destinatario en ARGOS 105, tras revisar la edición en teléfono. **Rige por encima de
