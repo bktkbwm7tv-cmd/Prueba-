@@ -48,7 +48,8 @@ PROTECCIÓN DEL PERSONAL DEL C4i (ARG-140-003).
 
 Ventana 21-oct 10:23 → 25-oct 07:45 CDMX (93 h 22 min) · 23 hechos propios en 12 entidades ·
 densidad 0,25 hechos/hora; duración y densidad, cálculo propio · dentro de cada color, del más
-reciente al más antiguo.
+reciente al más antiguo · cada hecho propio es una ficha; ARG-140-017 y -018 agrupan dos ataques
+cada una (relación no acreditada).
 
   Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
   Guanajuato · Purísima del Rincón (Libramiento Sur / bulevar Las Torres) · 24-OCT, MAÑANA POR RESUMEN | Policía municipal asesinada: 1 muerta | 🔴 Rojo | SIN BOLETÍN | Latinus · Milenio · El Universal | ★★★☆☆ | ARG-140-002
@@ -67,13 +68,13 @@ reciente al más antiguo.
   Veracruz · Cosoleacaque (camino a Temex, dos puntos) · 23-OCT, MADRUGADA POR RESUMEN | Dos homicidios en dos puntos: 2 muertos | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-140-018
   Morelos · Jiutepec (col. Lomas del Texcal) · 22-OCT, TARDE | Mujer asesinada e hija herida: 1 muerta | 🟡 Amarillo | SIN BOLETÍN | TV Azteca · La Silla Rota | ★★★☆☆ | ARG-140-010
   Sinaloa · Escuinapa (col. Francisco I. Madero) · 22-OCT, HORA NO FIJADA | Camión con estudiantes baleado: 1 herido | 🟡 Amarillo | SSP Sinaloa (solo por resumen) | Reforma · La Razón | ★★★☆☆ | ARG-140-009
-  Estado de México · Chimalhuacán (vía pública, afuera de una tienda) · PUB. 22-OCT; DÍA NO FIJADO | Ataque a cuatro hombres: 1 muerto y 2 heridos | 🟡 Amarillo | SIN BOLETÍN | El Gráfico | ★★☆☆☆ | ARG-140-011
+  Estado de México · Chimalhuacán (vía pública, afuera de una tienda) · PUB. 22-OCT; DÍA NO FIJADO | Ataque a cuatro hombres: 1 muerto y 3 heridos | 🟡 Amarillo | SIN BOLETÍN | El Gráfico | ★★☆☆☆ | ARG-140-011
   Veracruz · Álamo Temapache (domicilio) y Papantla (taquería) · 21-OCT, NOCHE POR RESUMEN | Dos ataques: 1 muerto y 2 heridos | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-140-017
   Ciudad de México · Iztacalco (calle Coruña, col. Santa Anita) · 23-OCT | Detención: 2 detenidos por el ataque de Calzada Ermita | 🟢 Verde | SSC CDMX (solo por resumen) | La Razón · Infobae · El Universal | ★★★☆☆ | ARG-140-019
   Veracruz · Xalapa · 22-OCT, DÍA SOLO POR RESUMEN | Detención: 1 detenido por el homicidio de un profesor | 🟢 Verde | FGE Veracruz (solo por resumen) | La Silla Rota | ★★★☆☆ | ARG-140-020
   Oaxaca · Juchitán de Zaragoza · PUB. 22-OCT; HECHO NO FIJADO | 7 detenidos por seis homicidios | 🟢 Verde | FGEO (por titular) | El Universal · Latinus · Imagen Radio | ★★★☆☆ | ARG-140-021
   Puebla · Puebla de Zaragoza y Amozoc; y Iztapalapa, Ciudad de México · 22-OCT, DÍA SOLO POR RESUMEN | Cinco cateos: 4 detenidos y 36 armas | 🟢 Verde | Boletín federal del 22-oct (por republicadores) | N+ | ★★☆☆☆ | ARG-140-022
-  Sinaloa · Culiacán · 21-OCT, NOCHE, DÍA SOLO POR RESUMEN | Detención de un presunto líder de Los Ranas | 🟢 Verde | Boletín federal del 22-oct (por republicadores) | Reforma · Milenio | ★★★☆☆ | ARG-140-023
+  Sinaloa · Culiacán · 21-OCT, NOCHE, DÍA SOLO POR RESUMEN | Detención de un presunto líder de Los Ranas (identidad con el boletín, posible) | 🟢 Verde | Boletín federal del 22-oct (por republicadores) | Reforma · Milenio | ★★★☆☆ | ARG-140-023
   Michoacán · Ario de Rosales (La Palma); Salvador Escalante en otra nota · VENTANA ARGOS 139 — DÍA Y HORA SOLO POR RESUMEN | Ataque armado: 3 muertos y 2 heridos | 🔴 Rojo (en su ventana) | SIN BOLETÍN | MVS | ★★★☆☆ | ARG-140-REC-001
   Estado de México · Cocotitlán (carretera México–Cuautla, cerca del acceso a San Andrés Metla) · VENTANA ARGOS 139 — HORA SOLO POR RESUMEN | Policía municipal asesinado y otro herido | 🔴 Rojo (en su ventana) | Ayuntamiento de Cocotitlán (por titular) | Excélsior · Milenio · Posta · Telediario · El Gráfico | ★★★☆☆ | ARG-140-REC-002
   Estado de México · Ecatepec (Santa María Tulpetlac, calle Oaxaca) · VENTANA ARGOS 139 — DÍA SOLO POR RESUMEN | Ataque armado: 4 muertos y 1 herida | 🔴 Rojo (en su ventana) | SIN BOLETÍN | El Universal · El Gráfico | ★★★☆☆ | ARG-140-REC-003
@@ -83,7 +84,7 @@ reciente al más antiguo.
 NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
 
   Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Muertos por agresión | Heridos | Cuerpos hallados | Armas cortas | Armas largas | Armas sin categoría | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos en aseguramiento | Entidades
-  23 | 8 | 10 | 5 | 3 | 15 | 7 | 7 | n/d | n/d | 36 | n/d | n/d | n/d | n/d | n/d | 4 | 12
+  23 | 8 | 10 | 5 | 3 | 15 | 8 | 7 | n/d | n/d | 36 | n/d | n/d | n/d | n/d | n/d | 4 | 12
 
 Armamento: un solo aseguramiento con cantidad por slug (ARG-140-ARM-001), sin desglose: n/d = no
 publicado, no ausencia · cuerpos hallados: causa de muerte no informada por autoridad, fuera del
@@ -171,10 +172,11 @@ Deslindes y reservas: Purísima del Rincón no figura en las cinco ediciones pre
 Mazatlán · FRACC. SAN FERNANDO, CALLE SAN MARCOS, SOLO POR RESUMEN · publicado el sábado 24-OCT,
 por ruta (Luz Noticias 2026-10-24) · ~07:30, SOLO POR RESUMEN · 1 muerto: conductor de una
 camioneta Ram, por slug (Luz Noticias) · trabajador del C4i, por slug (Luz Noticias, «trabajaba-
-en-el-c4i»); supervisor, por titular (Sinaloahoy) (🔴 víctima servidor público) · la gobernadora
-lamentó el homicidio de un trabajador del C4i, por slug (Luz Noticias 2026-10-24) · 20
-casquillos, por slug (Reporte 18) · la Fiscalía investiga · ningún detenido publicado ·
-identidad: no se reproduce
+en-el-c4i»); supervisor, por titular (Sinaloahoy); área administrativa de la SSP estatal, SOLO
+POR RESUMEN: EMPLEO CONTRADICHO, servidor público en ambas versiones (🔴 víctima servidor
+público) · la gobernadora lamentó el homicidio de un trabajador del C4i, por slug (Luz Noticias
+2026-10-24) · 20 casquillos, por slug (Reporte 18) · la Fiscalía investiga · ningún detenido
+publicado · identidad: no se reproduce
 
 ── TRAZABILIDAD
 
@@ -309,8 +311,8 @@ Abierta 0 · con fecha en la ruta: El Mañana (2026/10/23) · Hecho: 2026-10-23 
 Consulta: 2026-10-25 07:46-08:14 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
 fila — armamento asegurado: no publicado
 Deslindes y reservas: Puerta Sur no figura en las cinco ediciones previas ni en el índice. Fosa
-de Reynosa del 12-oct, descartada en ARGOS 139: otro hecho. Restos sin número de víctimas: fuera
-de todo recuento.
+de Reynosa del 12-oct, descartada en el archivo de equipos de ARGOS 139: otro hecho. Restos sin
+número de víctimas: fuera de todo recuento.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-25 · Hora: 07:45 (CDMX) · Corte: Matutino · ARGOS N.° 140 · USO INSTITUCIONAL
@@ -373,7 +375,7 @@ vistos, sin ruta propia.
 Chimalhuacán · VÍA PÚBLICA, AFUERA DE UNA TIENDA, SOLO POR RESUMEN · publicado el jueves 22-OCT,
 por ruta (El Gráfico 2026/10/22) · DÍA DEL HECHO NO FIJADO: SI FUE ANTES DE LAS 10:23 DEL 21, ES
 DE LA VENTANA DE ARGOS 139 · ataque contra cuatro hombres con diez disparos, por slug · 1 muerto
-y 2 heridos, SOLO POR RESUMEN; 3 heridos en otro resumen: CONTRADICHO, SE TOMA LA CIFRA MENOR (🟡
+y 3 heridos, por resumen de la misma nota, SOLO POR RESUMEN; el slug no menciona muertos (🟡
 homicidio doloso único) · agresores huyeron, SOLO POR RESUMEN · ningún detenido publicado
 
 ── TRAZABILIDAD
@@ -384,7 +386,7 @@ víctimas solo por resumen; una sola fuente · Fuentes: Institucional 0 · Nacio
 DÍA DEL HECHO NO FIJADO · Hora: no fijada · Consulta: 2026-10-25 07:46-08:14 · Estatus:
 Pendiente de corroboración · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Chimalhuacán no figura en las cinco ediciones previas. El resumen nocturno
-de N+ del 22-oct (agregado) no se cuenta como fuente.
+de N+ del 22-oct (agregado, 2 heridos) no se cuenta como fuente.
 
 ### ESTADO DE MÉXICO · OZUMBA — ASESINAN A UN OPERADOR DE TRANSPORTE PÚBLICO EN LA MÉXICO–CUAUTLA [AMARILLO]
 
@@ -506,9 +508,9 @@ efectiva; día solo por resumen · Fuentes: Institucional 0 · Nacional 0 · Reg
 resumen) · Consulta: 2026-10-25 07:46-08:14 · Estatus: Pendiente de corroboración · Conteo de
 armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Una ficha porque la única fuente agrega los dos ataques sin reparto
-acreditado de víctimas. XEU replica el título de Formato 7: una fuente. Álamo figura en ARGOS
-139 (Estero del Ídolo, martes 20, visto): otro hecho. Papantla en el índice (ARG-128-REC-001):
-otro hecho.
+acreditado de víctimas. XEU replica el título de Formato 7: una fuente. Álamo figura en el
+archivo de equipos de ARGOS 139 (Estero del Ídolo, martes 20, visto): otro hecho. Papantla en el
+índice (ARG-128-REC-001): otro hecho.
 
 ### VERACRUZ · COSOLEACAQUE — ASESINAN A DOS PERSONAS EN DOS PUNTOS DEL CAMINO A TEMEX [AMARILLO]
 
@@ -636,8 +638,9 @@ contado una vez. Iztapalapa: otro hecho que ARG-140-001 y -019.
 ── HECHO
 
 Culiacán · detención la noche del miércoles 21-OCT y anuncio el 22, SOLO POR RESUMEN · presunto
-líder de Los Ranas detenido, por titular (Reforma; Diario Puntual 2026/10/23) · incluido en el
-boletín federal de acciones del 22-OCT (Milenio, slug «22-de-octubre-2026») · 4 detenidos, armas
+líder de Los Ranas detenido, por titular (Reforma; Diario Puntual 2026/10/23) · entrada de
+Culiacán del boletín federal de acciones del 22-OCT (Milenio, slug «22-de-octubre-2026»):
+POSIBLE IDENTIDAD CON ESTA DETENCIÓN — SOLO CIUDAD, DÍA Y CARGO COINCIDEN · 4 detenidos, armas
 largas, cargadores, cartuchos, granadas y droga, SOLO POR RESUMEN: CIFRAS NO SE INTEGRAN
 
 ── TRAZABILIDAD
@@ -774,13 +777,13 @@ Total nacional del corte: en la página de panorama.
 ## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
 
   ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
-  ARG-140-ARM-001 | Puebla y Ciudad de México | Puebla de Zaragoza, Amozoc e Iztapalapa | 22-oct (solo por resumen) | n/d | n/d | 36 | n/d | n/d | n/d | n/d | n/d | n/d | 4 | SSPC, FGR y Marina (solo por resumen) | Bajo · 36 armas y 4 detenidos por slug (Diario Puntual 2026/10/24); desglose no publicado
+  ARG-140-ARM-001 | Puebla y Ciudad de México | Puebla de Zaragoza, Amozoc e Iztapalapa | 22-oct (solo por resumen) | n/d | n/d | 36 | n/d | n/d | n/d | n/d | n/d | n/d | 4 | SSPC, FGR y Marina (solo por resumen) | Bajo · 36 armas y 4 detenidos por slug (Diario Puntual 2026/10/24); 36 también en el resumen del boletín federal (Milenio); 4 detenidos por título del comunicado (SICOM); desglose no publicado
 
 Lectura regional: Centro, 1 evento (36 armas sin categoría, 4 detenidos); el resto de regiones,
 sin evento integrable. Cálculo propio.
 VISTOS, NO INTEGRADOS — CIFRAS SOLO POR RESUMEN, NO HEREDABLES: boletín federal del 22-oct:
 Sinaloa, Culiacán (ARG-140-023), Chihuahua, Ojinaga, e Hidalgo, Juárez: armas, cargadores,
-cartuchos y, en Culiacán, granadas; cifras en el archivo de fuentes · boletín federal del
+cartuchos y, en Culiacán, granadas; cifras en el archivo de equipos · boletín federal del
 21-oct: Quintana Roo y Veracruz: armas largas y cortas · cifras de fichas: Oaxaca, Juchitán
 (ARG-140-021), una arma larga; Ciudad de México, Iztacalco (ARG-140-019), una arma corta ·
 Colima: armas y un AEI de una célula, sin cifra ni fecha fijada: cualitativo.
@@ -815,11 +818,14 @@ alto impacto se recupera: FUERA DEL TOTAL.
 Candidatas heredadas, publicadas antes de la ventana y sin boletín leído: Culiacán, 18 años
 (19-oct) · Ensenada, tres sentenciados, 158 años 9 meses por titular (Sin Embargo), «158 años»
 en otro titular: redondeo, PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA (17-oct) · General
-Cepeda, 13 años 4 meses (FGR, 19-oct) · Caborca, 8 años (FGR, 19-oct). NO SE INTEGRAN.
+Cepeda, 13 años 4 meses (FGR, 19-oct) · Caborca, 8 años (FGR, 19-oct). NO SE INTEGRAN. Listados
+de la FGR del 21-oct también con Veracruz y Sonora, sin delito ni pena obtenidos: NO SE
+INTEGRAN.
 
 ## INDICADOR DE COBERTURA
 
   Renglón | Resultado
+  FGR revisada | Sí, por búsqueda dirigida: listados de fgr.org.mx del 21 y 22-oct; gob.mx/fgr sin resultado de la ventana
   Fiscalías revisadas en sentencias | 11 de 32, por búsqueda dirigida que devolvió páginas del dominio; acceso directo: 0 · BC, Chih, Dgo · CDMX, Pue, Qro, Hgo, Tlax · Ver · Chis, Yuc — todas de lectura parcial (último ítem indexado anterior a la ventana) · FGR: gob.mx/fgr solo devolvió 2019-2022; listados de fgr.org.mx del 21 y 22-oct
   Fiscalías con sentencia publicada en la ventana | 0 estatales · FGR: al menos 4 comunicados de sentencia en listados (Jalisco 3, Coahuila 1), sin texto leído
   SIN RESULTADO INDEXADO EN VENTANA | 11 fiscalías estatales revisadas
@@ -852,10 +858,11 @@ desarticulada; ninguna sentencia integrable.
 
 ── CONCLUSIONES DE INTELIGENCIA CRIMINAL
 
-1. GUANAJUATO: TERCER AGENTE ASESINADO FUERA DE UNA ACCIÓN OPERATIVA DESDE SEPTIEMBRE, SEGÚN EL
-ÍNDICE (cálculo propio): ARG-140-002 (Purísima del Rincón), ARG-137-REC-001 (Celaya, agente de
-Tránsito) y ARG-125-044 (Salamanca, en su día de descanso). Línea: solicitar a la FGE Guanajuato
-si las tres víctimas tenían amenazas previas y si comparten agresores — hipótesis.
+1. GUANAJUATO: SEXTO AGENTE ASESINADO DESDE EL 23-SEP, SEGÚN EL ÍNDICE (cálculo propio):
+ARG-124-001 (Comonfort, patrulla emboscada, tres agentes), ARG-125-044 (Salamanca),
+ARG-137-REC-001 (Celaya, agente de Tránsito) y ARG-140-002 (Purísima del Rincón); los tres
+últimos, fuera de servicio o camino a él. Línea: solicitar a la FGE Guanajuato si las víctimas
+tenían amenazas previas y si los casos comparten agresores o armas — hipótesis.
 2. CORREDOR MÉXICO–CUAUTLA, ORIENTE DEL ESTADO DE MÉXICO: DOS ATAQUES MORTALES EN TRES DÍAS
 (cálculo propio; uno, de la ventana anterior y fuera de totales): ARG-140-REC-002 (Cocotitlán) y
 ARG-140-012 (Ozumba). Línea: solicitar a la FGJEM y a la Guardia Nacional el registro de
@@ -863,9 +870,10 @@ agresiones en el tramo Cocotitlán–Ozumba — vínculo no acreditado.
 3. CUERPOS Y RESTOS SIN IDENTIFICACIÓN NI CAUSA DE MUERTE OFICIAL (cálculo propio): ARG-140-005
 (León) y ARG-140-008 (Reynosa, hallazgo de un colectivo). Línea: solicitar a las fiscalías de
 Guanajuato y Tamaulipas la identificación y si los hallazgos se cruzan con fichas de búsqueda.
-4. SINALOA: VIOLENCIA EN DOS MUNICIPIOS Y DETENCIÓN DE UN MANDO EN CULIACÁN (cálculo propio):
-ARG-140-004, ARG-140-009 y ARG-140-023. Línea: solicitar a la FGE Sinaloa si el detenido de
-Culiacán se vincula con alguno de los ataques de la ventana — vínculo no acreditado.
+4. SINALOA: ATAQUES EN CULIACÁN Y ESCUINAPA Y DETENCIÓN DE UN PRESUNTO MANDO EN CULIACÁN
+(cálculo propio): ARG-140-004, ARG-140-009 y ARG-140-023. Línea: solicitar a la FGE Sinaloa si
+el detenido de Culiacán se vincula con alguno de los ataques de la ventana — vínculo no
+acreditado.
 5. BRECHA ENTRE DETENCIÓN Y CONDENA (cálculo propio): ARG-140-019 (detención el mismo día del
 homicidio) y ARG-140-020 (detención por un homicidio de la ventana anterior) aún sin vinculación
 publicada. Línea: solicitar a la FGJCDMX y a la FGE Veracruz la audiencia de imputación y la
