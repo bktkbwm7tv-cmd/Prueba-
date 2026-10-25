@@ -9,7 +9,7 @@ Informes íntegros de los seis equipos, notas del coordinador y controles: `repo
 ## 1. La base
 
 - 22-oct 08:14: clon sin rama en `60f2777`, por detrás; *fast-forward* a `origin/main` (`d0c6ab7`) y a `origin/claude/argos-139-qe9f01` (`9712e79`, que lleva encima de `3c343ac` la orden del 22-oct). 219 archivos en `reports/`; última edición `argos-2026-10-21`.
-- 25-oct: rama `claude/argos-140` creada sobre `9712e79`; ninguna edición del 22 al 25. 219 archivos antes de esta edición.
+- 25-oct: rama `claude/argos-140` creada sobre `9712e79`; ninguna edición del 22 al 25. 219 archivos antes de esta edición; 226 después (5 de la edición y la orden de 141).
 
 ## 2. Red y modo de búsqueda
 

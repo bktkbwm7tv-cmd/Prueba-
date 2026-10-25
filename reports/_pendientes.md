@@ -8,7 +8,7 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 139 (corte 2026-10-21; rehecho tras la versión retirada del 20-oct).
+**Última actualización**: ARGOS 140 (corte 2026-10-25; ventana larga 21-oct 10:23 → 25-oct 07:45).
 
 ---
 
@@ -20,6 +20,8 @@ de base antes de numerar, ventana, deuda heredada, trampas ya verificadas y coma
 sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le pasó a ARGOS 106.
 
 **ARGOS 139 publicado el 21-oct** (ventana 20-oct 07:06 → 21-oct 10:23). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-140.md`** (y `_ordenes-ARGOS-140.txt`).
+
+**ARGOS 140 publicado el 25-oct** (ventana 21-oct 10:23 → 25-oct 07:45, 93 h 22 min). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-141.md`** (y `_ordenes-ARGOS-141.txt`).
 
 ⚠️ **25-oct: la orden de 140 del 22-oct no se ejecutó** (la sesión se detuvo tras el Bloque 0; no hay edición del 22 al 24). **Orden rehecha el 25-oct** en la rama `claude/argos-140`: ventana larga **21-oct 10:23 → domingo 25-oct**, archivo `argos-2026-10-25.html`, `WINDOW_DAYS = 5`, recall nacional por día.
 
@@ -2415,3 +2417,52 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 5. **Dominios sin páginas** (13): `fge.sinaloa.gob.mx`, `pgjhidalgo.gob.mx`, `fiscalia.tlaxcala.gob.mx` (probar `pgjtlaxcala.gob.mx`), `fiscalia.campeche.gob.mx`, `ssp.guerrero.gob.mx`, `seguridad.nl.gob.mx`, `ssp.durango.gob.mx`, `ssp.bajacalifornia.gob.mx`, `sspes.sonora.gob.mx`, `ssp.hidalgo.gob.mx`, `ssp.morelos.gob.mx`, `ssc.queretaro.gob.mx`, `seguridadypaz.guanajuato.gob.mx`.
 6. **Columna «cuerpos hallados»** introducida en 139: cuerpos sin causa de muerte informada no entran en «muertos por agresión».
 7. **`tools/validar.js` sigue sin validar el móvil** (la cubre la validación interna de `gen-movil.py`).
+
+## ARGOS 140 — lo que cierra esta edición
+
+| Pendiente | Disposición |
+|---|---|
+| **Exfiscal (`ARG-136-006`)** | Vinculado a proceso por el fuero común (22-oct, coalición descartada) y por el federal (traición a la patria; resolución en la madrugada del 25, frontera). En el bloque de seguimientos, fuera del semáforo |
+| **El Terrero (`ARG-139-REC-002`)** | «Reanudan ataques» era el mismo ataque del 19: sin nueva agresión |
+| **Jalpa y Moyahua (`ARG-139-002`)** | Sin clasificación de muerte no violenta: no baja |
+| **Xalapa (`ARG-139-005`)** | Detenido el presunto homicida (`ARG-140-020`); calidad de servidor público sin acreditar: sigue 🟡 |
+| **Juárez (`ARG-139-007`)** | «21-oct 07:04» era la hora de publicación de N+: no hay otro hecho |
+| **Uruapan (`ARG-139-008`)** | ~06:00 solo por resumen: no se retira |
+| **Cocotitlán, Ario de Rosales, Ecatepec Tulpetlac** | Recuperados como `ARG-140-REC-001` a `-003`; `ARG-140-FE-001` a 139 |
+| **Huixtla** | Omisión de 139 (🟢), no recuperable |
+| **Boletín federal del 21 y 22-oct** | Existen (republicadores); 23 y 24, sin indexar |
+
+## Abiertos que ARGOS 141 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️ **Ecatepec Tulpetlac (`ARG-140-REC-003`)** | Día del ataque con fragmento propio: si fue la noche del miércoles 21, pasa a hecho propio de 140 por fe de erratas y FE-001 deja de estar condicionada |
+| ⚠️ **Boletín federal del 23, 24 y 25-oct** | Triple consulta al arrancar (fin de semana: probable agregado «23, 24 y 25») |
+| ⚠️ **Tulantepec** | Audiencia de individualización reprogramada al **28-oct** (por resumen): pena, reparación y boletín de la PGJEH |
+| **Sonora, «abaten a presunto jefe de grupo armado»** | ntv.com.mx 2026/10/24: municipio, quién inició, detenidos; si es de la ventana de 140, ficha `-REC-` solo si es 🔴 |
+| **Coicoyán de las Flores** | Exsíndico e hijo hallados muertos en Guerrero tras un ataque en Oaxaca: fecha; si cae en 140 → `-REC-` 🔴 |
+| **Huimanguillo (`-006`, `-007`)** | Identificación genética; relación entre la fosa y la cabeza humana |
+| **León (`-005`)** | Identificación, causa de muerte y reparto oficial de los cinco cuerpos |
+| **Reynosa (`-008`)** | Intervención de la Fiscalía; número de víctimas |
+| **Purísima del Rincón (`-002`) y Mazatlán C4i (`-003`)** | Detenidos; adscripción oficial de la víctima del C4i |
+| **Juchitán (`-021`)** | Vinculación a proceso de los siete; qué detenido con qué homicidio; fechas de los cuatro homicidios sin ficha |
+| **Iztapalapa (`-019`) y Xalapa (`-020`)** | Audiencia de imputación y vinculación |
+| **Puebla/CDMX (`-022`, `ARM-001`)** | Desglose de las 36 armas (cortas, largas, artesanales), cartuchos y cargadores |
+| **Culiacán (`-023`)** | Identidad del detenido de Los Ranas con la entrada del boletín del 22-oct (dos campos individualizadores) |
+| **Chimalhuacán (`-011`)** | Día del hecho y heridos (2 o 3) |
+| **Álamo/Papantla (`-017`) y Cosoleacaque (`-018`)** | Reparto de víctimas por ataque: si una fuente lo publica, se separan las fichas |
+| **Cocotitlán (`REC-002`)** | Estado del agente herido; modalidad (emboscada o no) |
+| **Sentencias candidatas** | FGR: Saltillo (7 años, 22-oct), Guadalajara (3, 21-oct), Veracruz y Sonora (21-oct): texto de los comunicados · heredadas: Culiacán, Ensenada, General Cepeda, Caborca |
+| **Heredados sin avance** | Nogales · Ajuchitlán (séptima persona) · Apatzingán · El Tívoli · Coquimatlán (tres muertos 15-oct, ¿caso previo?) · Linares · Tepic · Patamban (decisión del destinatario) · Taxco (vinculación de los 4 del C2) · Cachanillas (cifra oficial) · Xalisco/Tecuala (`CANTIDAD NO DETERMINADA`) · Río Bravo (FE condicionada) |
+| **Cobertura con prioridad sobre el ciclo en 141** | **Sentencias `NO REVISADA` (16)**: BCS, Son · NL, SLP · Jal, Col, Nay, Ags, Mich, Gto · Edomex, Mor · Tab · Oax, Gro, QRoo; **dominio sin páginas (5)**: Sin, Tamps, Coah, Zac, Camp (probar variantes). **Armamento `NO REVISADA` (17)**: BC, BCS, Son, Chih, Sin, Dgo · Jal, Col, Nay · Edomex, Mor, Pue, Tlax, Hgo, Qro · Camp, QRoo; **sin páginas (3)**: Zac, Gto, Tab. **Alto impacto solo amplia (15)**: BCS, Son, Dgo · Jal, Col, Nay · CDMX, Mor, Pue, Tlax, Hgo, Qro · Chis, Camp, Yuc. Después, **CICLO B** (Noreste + Golfo: 141 = B) |
+
+## Deuda de método (ARGOS 140)
+
+1. **Recall nacional ANTES de la ola**: en 140 se hizo en paralelo y las pistas llegaron tarde a dos equipos que ya habían agotado su tope. Orden de 141: el coordinador hace el recall por día **primero** y lo pasa en el encargo de cada equipo.
+2. **Fecha en la ruta por día**: ningún equipo llegó a hacerla con 25 búsquedas. Reservar **4 búsquedas por equipo** para ello, fuera del resto del presupuesto.
+3. **`site:` con `OR`**: se volvió a desperdiciar en dos equipos. Repetirlo en mayúsculas en la plantilla.
+4. **Seguimientos procesales de casos ya publicados** (vinculaciones, audiencias) van al bloque de seguimientos, **no** como fichas 🟢: la orden de 140 lo pedía mal y lo corrigió `editor-duplicidad`.
+5. **Republicaciones del boletín federal**: medios que reproducen el comunicado (SICOM, RED113, Talla Política, Diario Puntual, ABC, Intolerancia, El Diario de Chihuahua) cuentan como **una** fuente.
+6. **Dominios nuevos confirmados**: `comunicacion.fiscaliaveracruz.gob.mx`, `portal.fgeo.gob.mx` (no `fiscaliaoaxaca.gob.mx`), `fiscaliageneralqro.gob.mx` (no `fgeqro`), `seguridad.slp.gob.mx`, `fgebc.gob.mx`, `fiscalia.chihuahua.gob.mx`, listados de la FGR en `fgr.org.mx`. **Sin páginas**: `fge.sinaloa.gob.mx`, `fiscalia.tamaulipas.gob.mx`, `fiscalia.coahuila.gob.mx`, `fiscalia.zacatecas.gob.mx`, `fgjez.zacatecas.gob.mx`, `fiscalia.campeche.gob.mx`, `fiscalia.tabasco.gob.mx`, `tabasco.gob.mx/ssp`, `fiscalia.guanajuato.gob.mx`, `ssc.cdmx.gob.mx` (solo 2024-2025).
+7. **Presupuesto de 140**: 2 + 150 + 16 + 30 = **198**; segunda ronda sin búsquedas.
+
