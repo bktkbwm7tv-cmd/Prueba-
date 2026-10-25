@@ -1,7 +1,7 @@
 # ARGOS 140 — Archivo de fuentes
 
-**Corte**: 2026-10-25 · **Ventana**: 21-oct 10:23 → 25-oct 07:45 CDMX (**93 h 22 min**; `WINDOW_DAYS = 5`) · **Densidad**: 23 hechos propios / 93,37 h = **0,25 hechos/hora**, cálculo propio.
-**Hora de cierre**: hora real de la orden «Procede» del destinatario (07:45 CDMX del domingo 25). Consultas de la ola y del coordinador de 07:46 a 07:57; `procedencia-cifras` R1, después: la marca «Consulta» del cartelón se fija con la hora real de su última búsqueda. Los hechos posteriores a las 07:45 pertenecen a ARGOS 141.
+**Corte**: 2026-10-25 · **Ventana**: 21-oct 10:23 → 25-oct 07:45 CDMX (**93 h 22 min**; `WINDOW_DAYS = 5`) · **Densidad**: 23 hechos propios / 93,37 h = **0,25 hechos/hora**, cálculo propio (tras la ronda 1: 8 🔴, 10 🟡, 5 🟢; 12 entidades).
+**Hora de cierre**: hora real de la orden «Procede» del destinatario (07:45 CDMX del domingo 25). Consultas de la ola y del coordinador de 07:46 a 07:57; `procedencia-cifras` R1 terminó a las **08:14 CDMX** (hora real leída al recibir su informe): marca «Consulta 07:46-08:14». La ronda 2 no busca. Los hechos posteriores a las 07:45 pertenecen a ARGOS 141.
 **Orden**: la orden de ARGOS 140 del 22-oct no se ejecutó (la sesión se detuvo tras el Bloque 0); se rehízo el 25-oct (`reports/_ordenes-ARGOS-140.txt`, commit `c0448f3`). No hay edición del 22 al 24-oct.
 
 Informes íntegros de los seis equipos, notas del coordinador y controles: `reports/argos-2026-10-25-equipos.md`. Plantilla: `tools/plantilla-equipos-140.md`. Generador: `tools/datos-argos-140.py`.
@@ -51,20 +51,23 @@ Corroboración débil por construcción: los republicadores del mismo boletín s
 
 ## 6. Arbitrajes del coordinador
 
-Ver «Arbitraje del coordinador» en `reports/argos-2026-10-25-equipos.md`. Decisiones de color con reserva:
-- `-004` Villa Bonita: rojo con el día solo por resumen (excepción declarada para rojos).
-- `-008` Escuinapa: 🟡; la SSP dice que la agresión fue contra el conductor y ningún estudiante resultó herido.
-- `-014` Indaparapeo: 🟡 porque no consta quién inició.
-- `-016` Cosoleacaque: 🟡 porque no consta que sea un solo ataque.
-- `-REC-003` Ecatepec: el resumen dice «martes»; la publicación (22-oct 03:10) es compatible con el miércoles 21. Se recupera por el texto disponible; si se fija el 21, pasa a hecho propio por fe de erratas.
+Ver «Arbitraje del coordinador» en `reports/argos-2026-10-25-equipos.md`. Tras la ronda 1:
+- **Exfiscal fuera del semáforo**: sus dos vinculaciones (22 y 24-oct) son desarrollo de un caso ya publicado (`ARG-136-006`): pasan al bloque de seguimientos del panorama, como en ARGOS 137-139. Los ARG-ID provisionales `ARG-140-022` y `-023` del borrador **no existen**.
+- **Dos fichas nuevas**: cabeza humana de Huimanguillo (`ARG-140-007`, 🔴, Diario de Yucatán 2026/10/21, hallada por `procedencia-cifras`) y Chimalhuacán (`ARG-140-011`, 🟡, El Gráfico 2026/10/22). **Renumeración**: del borrador a la edición, -007→-008, -008→-009, -009→-010, -010→-012, -011→-013, -012→-014, -013→-015, -014→-016, -015→-017, -016→-018, -017→-019, -018→-020, -019→-021, -020→-022, -021→-023.
+- **Unidad de conteo**: Álamo/Papantla (`-017`) y Cosoleacaque (`-018`) quedan en una ficha cada uno porque la fuente publica los dos ataques en una sola nota y no hay reparto acreditado de víctimas; León (`-005`), una ficha porque el titular agrega los cinco cuerpos. Criterio: **una ficha por nota fuente cuando la fuente agrega sin reparto acreditable**; se separan en cuanto una fuente reparta.
+- **Colores con reserva**: `-004` rojo con el día solo por resumen (excepción declarada) · `-009` 🟡, la SSP dice que la agresión fue contra el conductor · `-016` 🟡, quién inició no consta · `-018` 🟡, un solo ataque no consta · `-020` (Xalapa) 🟢: detención de hoy por un delito de la ventana anterior.
+- **`-REC-003` Ecatepec**: los resúmenes convergen en la noche del martes 20 o la madrugada del 21 antes de las 10:23; se retiró la hipótesis del miércoles por la noche (ninguna fuente la sostiene).
+- **Vistos, con motivo**: Sonora, «abaten a presunto jefe de grupo armado» (ntv.com.mx 2026/10/24): municipio y circunstancias solo por resumen, sin presupuesto para cotejo → ARGOS 141 · Coicoyán de las Flores (exsíndico e hijo hallados muertos): fecha sin fijar; sin precedente (grep) → ARGOS 141 · Celaya, Rancho Seco (24-oct): sin ruta fechada · Jiutepec Civac (23-oct): solo portada, sin cuerpo · Cajeme, cuatro ataques del 20-oct: ventana de 139, homicidios separados que la Fiscalía relaciona con narcomenudeo; ninguna autoridad los acredita como ataque coordinado → 🟡, no se recuperan · verdes del boletín federal sin armamento (Durango 109 kg, Colima, Monterrey 220 kg, Morelos, Chalco, Tlajomulco, Puerto Morelos): cifras solo por resumen, sin ficha.
 
 ## 7. Fe de erratas (no va al cartelón)
 
-Ninguna nueva en R1. Condicionadas: Río Bravo (129); Ecatepec (si resulta del 21, se suma a los totales de 140).
+- **`ARG-140-FE-001` — ARGOS 139**: las recuperaciones `ARG-140-REC-001` (Ario de Rosales, 3 muertos y 2 heridos) y `-REC-002` (Cocotitlán, 1 muerto y 1 herido) son rojos de su ventana; `-REC-003` (Ecatepec, 4 muertos y 1 herida), también, con el día solo por resumen. Efecto sobre ARGOS 139: **rojos de 3 a 6, muertos por agresión de 9 a 17 y heridos de 1 a 5** (cálculo propio). No se publica en el cartelón.
+- **Xalisco/Tecuala (`ARG-125-003`)**: segunda edición consecutiva sin respaldo citable de «cinco cuerpos» y «diez detenidos» → umbral de fe de erratas: el renglón pasa a `CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO`.
+- Condicionada, sin cambio: Río Bravo (129).
 
 ## 8. Registro del barrido — por entidad
 
-Ver el «Indicador de cobertura» del cartelón y los informes íntegros. Sentencias: 11 revisadas, 9 dominios sin páginas, 12 `NO REVISADA`. Armamento: 11 por dominio, 21 sin dominio. Alto impacto: 17 con consulta propia, 15 solo amplia. Dominios nuevos confirmados: `comunicacion.fiscaliaveracruz.gob.mx`, `portal.fgeo.gob.mx`, `fiscaliageneralqro.gob.mx`, `seguridad.slp.gob.mx`; listados de la FGR en `fgr.org.mx`.
+Ver el «Indicador de cobertura» del cartelón y los informes íntegros. Sentencias: 11 revisadas, 5 dominios sin páginas, 16 `NO REVISADA` (corregido en R1: Occidente y Tabasco declararon `NO REVISADA`). Armamento: 12 por dominio, 3 dominios sin páginas, 17 `NO REVISADA`. Alto impacto: 17 con consulta propia, 15 solo amplia. Dominios nuevos confirmados: `comunicacion.fiscaliaveracruz.gob.mx`, `portal.fgeo.gob.mx`, `fiscaliageneralqro.gob.mx`, `seguridad.slp.gob.mx`; listados de la FGR en `fgr.org.mx`.
 
 ## 9. Emisores por ficha
 
@@ -72,15 +75,17 @@ El recuento I/N/R/A de cada ficha está en `tools/datos-argos-140.py`; las URL, 
 
 ## 10. Desglose de cálculos propios
 
-- Muertos por agresión en hechos propios: 14 = 2 (-001) + 1 (-002) + 1 (-003) + 2 (-004) + 1 (-009) + 1 (-010) + 1 (-011) + 1 (-012) + 1 (-013) + 1 (-015) + 2 (-016).
-- Heridos: 5 = 1 (-001) + 1 (-008) + 1 (-009) + 2 (-015). Cuerpos hallados: 7 = 5 (-005) + 2 (-006).
+- Muertos por agresión en hechos propios: 15 = 2 (-001) + 1 (-002) + 1 (-003) + 2 (-004) + 1 (-010) + 1 (-011) + 1 (-012) + 1 (-013) + 1 (-014) + 1 (-015) + 1 (-017) + 2 (-018).
+- Heridos: 7 = 1 (-001) + 1 (-009) + 1 (-010) + 2 (-011) + 2 (-017). Cuerpos hallados: 7 = 5 (-005) + 2 (-006); la cabeza (-007) y los restos de Reynosa (-008), fuera.
 - Recuperaciones: 8 muertos (3 + 1 + 4) y 4 heridos (2 + 1 + 1), fuera de todo total.
-- Armamento: 36 armas sin categoría y 4 detenidos (ARM-001, único evento).
-- Entidades: 13 (CDMX, Gto, Sin, Tab, Tamps, Mor, Edomex, NL, Mich, Ver, Oax, Pue, Chih). Densidad: 23 / 93,37 = 0,25.
+- Armamento: 36 armas sin categoría y 4 detenidos (ARM-001, único evento); demás categorías `n/d`.
+- Entidades: 12 (CDMX, Gto, Sin, Tab, Tamps, Mor, Edomex, NL, Mich, Ver, Oax, Pue). Densidad: 23 / 93,37 = 0,25.
 
 ## 11. Los dos controles editoriales
 
-(pendiente)
+**Ronda 1** (en paralelo): `editor-duplicidad` — CORREGIR (21 hallazgos; sin duplicidades reales) · `procedencia-cifras` — CORREGIR (20 hallazgos; sin cifras inventadas ni descuadres; 30 de 30 búsquedas). Aplicados: exfiscal al bloque de seguimientos; FE-001 a 139; Huixtla como omisión de 139 no recuperable; «El Obraje Diamante» retirado; Juchitán como vinculación posible sin desglose; criterio de unidad de conteo escrito (§6); Valoración y Conclusiones rehechas sin repetir fichas ni totales y sin mecanismos de método; portada con acciones de cotejar, auditar y vigilar; marca de apertura de Huimanguillo corregida (fosa: día del hallazgo solo por resumen); indicador de armamento con las tres casillas separadas; cobertura de sentencias 11 + 5 + 16; recuentos I/N/R/A unificados (republicaciones una vez); vistos de armamento sin cifras («no heredables»); Tecuala sin números; `n/d` en tarjetas y totales; «37 armas», «12 estudiantes», «~06:10», «blanca» y «Los Noticieristas con fecha» retirados; «20 casquillos» respaldado por el *slug* de Reporte 18; adscripción del C4i por *slug*; líder de Los Ranas por titular; orden del panorama por fecha y hora; 17 años de Cosoleacaque y «este sábado 24» de Ozumba, solo por resumen. **No aplicado**: separar Álamo/Papantla y Cosoleacaque (§6, criterio de unidad); fichar Sonora y Coicoyán (sin presupuesto: ARGOS 141).
+
+**Ronda 2**: (pendiente)
 
 ## 12. Herramientas
 
