@@ -1,0 +1,882 @@
+ARGOS 140 — REPORTE NACIONAL DE SEGURIDAD
+REPORTE DIARIO DE INTELIGENCIA CRIMINAL
+«INVESTIGACIONES, BÚSQUEDA Y VERDAD»
+
+Corte informativo: 2026-10-25 · 07:45 (CDMX)
+Ventana: 21-oct 10:23 → 25-oct 07:45 CDMX (93 h 22 min)
+Versión 3.0 · Corte matutino · USO INSTITUCIONAL
+
+============================================================================
+
+[ RADAR CENTRAL — EN VIVO ]
+
+  · 🔴 Alto impacto · 7
+  · 🟡 Violencia operativa · 9
+  · 🟢 Acciones institucionales · 7
+
+[ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
+
+Pase el cursor sobre un estado.
+
+## SEMÁFORO ARGOS
+
+  · 🔴 ROJO — ALTO IMPACTO — 7 eventos
+
+  · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 9 eventos
+
+  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 7 eventos
+
+── LO QUE DEBE HACER EL MANDO
+
+1. SOLICITE A LA FISCALÍA DEL ESTADO DE MÉXICO LA FECHA Y LA HORA OFICIALES, LA IDENTIFICACIÓN
+DE LAS VÍCTIMAS Y LA LÍNEA DE INVESTIGACIÓN (ARG-140-REC-003).
+2. SOLICITE A LA FISCALÍA DE TABASCO LA IDENTIFICACIÓN GENÉTICA, LA CAUSA DE MUERTE Y SI EL CASO
+GUARDA RELACIÓN CON OTROS HALLAZGOS DEL MUNICIPIO (ARG-140-006).
+3. SOLICITE A LA FISCALÍA DE OAXACA EL DESGLOSE QUE VINCULE A CADA DETENIDO CON CADA HOMICIDIO Y
+LA FECHA DE LA AUDIENCIA DE IMPUTACIÓN (ARG-140-019).
+4. SOLICITE A LA FISCALÍA DE MICHOACÁN EL MUNICIPIO, LA HORA Y LA CARPETA DE INVESTIGACIÓN
+(ARG-140-REC-001).
+5. SOLICITE A LA PGJ DE HIDALGO LA NUEVA FECHA DE LA AUDIENCIA DE INDIVIDUALIZACIÓN Y LA PENA
+DEL FALLO CONDENATORIO (Santiago Tulantepec; ver Rastreo de Sentencias).
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-25 · Hora: 07:45 (CDMX) · Corte: Matutino · ARGOS N.° 140 · USO INSTITUCIONAL
+
+============================================================================
+
+## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
+
+Ventana 21-oct 10:23 → 25-oct 07:45 CDMX (93 h 22 min) · 23 hechos propios en 13 entidades ·
+densidad 0,25 hechos/hora; duración y densidad, cálculo propio · dentro de cada color, del más
+reciente al más antiguo.
+
+  Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
+  Guanajuato · Purísima del Rincón (Libramiento Sur / bulevar Las Torres) · 24-OCT, MAÑANA POR RESUMEN | Policía municipal asesinada: 1 muerta | 🔴 Rojo | SIN BOLETÍN | Latinus · Milenio · El Universal | ★★★☆☆ | ARG-140-002
+  Sinaloa · Mazatlán (fracc. San Fernando, calle San Marcos) · 24-OCT, ~07:30 POR RESUMEN | Trabajador del C4i asesinado: 1 muerto | 🔴 Rojo | FGE Sinaloa (por titular) | ninguna | ★★★☆☆ | ARG-140-003
+  Ciudad de México · Iztapalapa (Calzada Ermita Iztapalapa, col. Ampliación Ricardo Flores Magón) · 23-OCT, TARDE | Ataque armado: 2 muertos y 1 herido | 🔴 Rojo | SSC CDMX (solo por resumen) | Latinus · La Razón · Proceso · Infobae | ★★★☆☆ | ARG-140-001
+  Sinaloa · Culiacán (fracc. Villa Bonita, negocio de sushi) · 23-OCT, NOCHE, DÍA SOLO POR RESUMEN | Ataque armado: 2 muertos | 🔴 Rojo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-140-004
+  Tamaulipas · Reynosa (predio tras Puerta Sur) · 22-23-OCT, HORA NO FIJADA | Restos óseos en un nuevo punto | 🔴 Rojo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-140-007
+  Guanajuato · León (Cañada del Real, col. Brisas del Sol, La Providencia y un cuarto punto) · 21-OCT, HORA NO FIJADA | Hallazgo de 5 cuerpos en cuatro puntos | 🔴 Rojo | SIN BOLETÍN | La Silla Rota | ★★★☆☆ | ARG-140-005
+  Tabasco · Huimanguillo (Chicoacán, junto a la carretera Huimanguillo–Villa Estación Chontalpa) · 21-OCT, DÍA SOLO POR RESUMEN | Fosa clandestina: 2 cuerpos | 🔴 Rojo | SIN BOLETÍN | El Universal · TV Azteca | ★★★☆☆ | ARG-140-006
+  Estado de México · Ozumba (carretera México–Cuautla, frente a una gasolinera) · 24-OCT, MAÑANA | Operador de transporte asesinado: 1 muerto | 🟡 Amarillo | SIN BOLETÍN | Milenio | ★★★☆☆ | ARG-140-010
+  Nuevo León · Linares (col. La Petaca, depósito de cerveza) · 24-OCT, HORA NO FIJADA | Hombre asesinado: 1 muerto | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-140-011
+  Guanajuato · Irapuato (col. La Lupita) · 24-OCT, HORA NO FIJADA | Mujer asesinada: 1 muerta | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-140-012
+  Guanajuato · Valle de Santiago (col. Los Antorchistas) · 24-OCT, ~13:35 POR RESUMEN | Hombre asesinado en su casa: 1 muerto | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-140-013
+  Michoacán · Indaparapeo (base de operaciones de seguridad) · 23-OCT, NOCHE POR RESUMEN | Disparos contra policías; sin lesionados | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-140-014
+  Veracruz · Cosoleacaque (camino a Temex, dos puntos) · 23-OCT, MADRUGADA POR RESUMEN | Dos homicidios en dos puntos: 2 muertos | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-140-016
+  Sinaloa · Escuinapa (col. Francisco I. Madero) · 22-OCT, HORA NO FIJADA | Camión con estudiantes baleado: 1 herido | 🟡 Amarillo | SSP Sinaloa (solo por resumen) | Reforma · La Razón | ★★★☆☆ | ARG-140-008
+  Morelos · Jiutepec (col. Lomas del Texcal) · 22-OCT, TARDE | Mujer asesinada e hija herida: 1 muerta | 🟡 Amarillo | SIN BOLETÍN | TV Azteca · La Silla Rota | ★★★☆☆ | ARG-140-009
+  Veracruz · Álamo Temapache (domicilio) y Papantla (taquería) · 21-OCT, NOCHE POR RESUMEN | Dos ataques: 1 muerto y 2 heridos | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-140-015
+  Chihuahua · Caso Chihuahua (audiencia en el Centro de Justicia Penal Federal del Altiplano) · 24-OCT, HORA NO FIJADA | Exfiscal vinculado a proceso (federal) | 🟢 Verde | SIN BOLETÍN | La Razón · Infobae · Excélsior · Milenio | ★★★☆☆ | ARG-140-023
+  Ciudad de México · Iztacalco (calle Coruña, col. Santa Anita) · 23-OCT | Detención: 2 detenidos por el ataque de Calzada Ermita | 🟢 Verde | SSC CDMX (solo por resumen) | La Razón · Infobae | ★★★☆☆ | ARG-140-017
+  Veracruz · Xalapa · 22-OCT, DÍA SOLO POR RESUMEN | Detención: 1 detenido por el homicidio de un profesor | 🟢 Verde | FGE Veracruz (solo por resumen) | La Silla Rota | ★★★☆☆ | ARG-140-018
+  Oaxaca · Juchitán de Zaragoza · PUB. 22-OCT; HECHO NO FIJADO | 7 detenidos por seis homicidios | 🟢 Verde | FGEO (por titular) | El Universal · Latinus · Imagen Radio | ★★★☆☆ | ARG-140-019
+  Puebla · Puebla de Zaragoza y Amozoc; y Iztapalapa, Ciudad de México · 22-OCT, DÍA SOLO POR RESUMEN | Cinco cateos: 4 detenidos y 36 armas | 🟢 Verde | Boletín federal del 22-oct (por republicadores) | N+ | ★★★☆☆ | ARG-140-020
+  Sinaloa · Culiacán · 22-OCT, DÍA SOLO POR RESUMEN | 4 detenidos, uno líder de célula | 🟢 Verde | Boletín federal del 22-oct (por republicadores) | Milenio | ★★☆☆☆ | ARG-140-021
+  Chihuahua · Chihuahua (Distrito Judicial Morelos; audiencia por videoconferencia desde el Altiplano) · 22-OCT | Exfiscal vinculado a proceso (fuero común) | 🟢 Verde | SIN BOLETÍN | La Jornada · La Razón · MVS · Infobae · Proceso | ★★★☆☆ | ARG-140-022
+  Michoacán · Ario de Rosales (La Palma); Salvador Escalante en otra nota · VENTANA ARGOS 139 — DÍA Y HORA SOLO POR RESUMEN | Ataque armado: 3 muertos y 2 heridos | 🔴 Rojo (en su ventana) | SIN BOLETÍN | MVS | ★★★☆☆ | ARG-140-REC-001
+  Estado de México · Cocotitlán (carretera México–Cuautla, cerca del acceso a San Andrés Metla) · VENTANA ARGOS 139 — HORA SOLO POR RESUMEN | Policía municipal asesinado y otro herido | 🔴 Rojo (en su ventana) | Ayuntamiento de Cocotitlán (por titular) | Excélsior · Milenio · Posta · Telediario · El Gráfico | ★★★☆☆ | ARG-140-REC-002
+  Estado de México · Ecatepec (Santa María Tulpetlac, calle Oaxaca) · VENTANA ARGOS 139 — DÍA SOLO POR RESUMEN, CONTRADICHO | Ataque armado: 4 muertos y 1 herida | 🔴 Rojo (en su ventana) | SIN BOLETÍN | El Universal · El Gráfico | ★★★☆☆ | ARG-140-REC-003
+
+## TOTALES DEL CORTE — CÁLCULO PROPIO DE ARGOS
+
+NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
+
+  Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Muertos por agresión | Heridos | Cuerpos hallados | Armas cortas | Armas largas | Armas sin categoría | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos en aseguramiento | Entidades
+  23 | 7 | 9 | 7 | 3 | 14 | 5 | 7 | 0 | 0 | 36 | 0 | 0 | 0 | 0 | 0 | 4 | 13
+
+Armamento: un solo aseguramiento con cantidad por titular (ARG-140-ARM-001), sin desglose: las
+categorías en cero de esa fila son NO PUBLICADO, no ausencia · cuerpos hallados: causa de muerte
+no informada, fuera del recuento de muertos por agresión; los restos de Reynosa (ARG-140-007),
+sin número de víctimas, fuera de todo recuento · marcas: 2 PUBLICADO EL DÍA DE APERTURA SIN HORA
+y 1 FRONTERA DE VENTANA — HORA NO FIJADA · en las recuperaciones, 8 muertos y 4 heridos, fuera
+de todo total. Cálculo propio.
+Seguimientos de ediciones previas, fuera del semáforo: ARG-139-001, parentesco «madre e hijo» /
+«pareja»: CONTRADICHO · ARG-139-002, sin causa de muerte ni identificación oficial ·
+ARG-139-003, adscripción municipal por reconocimiento de compañeros, SOLO POR RESUMEN; la FGEO
+vincula a siete detenidos con seis homicidios recientes (ARG-140-019) · ARG-139-005, detenido el
+presunto homicida (ARG-140-018) · ARG-139-007, la hora «21-oct 07:04» es la de publicación de
+N+, no la del ataque · ARG-139-008, hora ~06:00 SOLO POR RESUMEN: sin fijar · ARG-139-REC-002,
+«reanudan ataques» (El Diario de Chihuahua 2026/oct/20) se refiere al ataque del 19: sin nueva
+agresión publicada · ARG-139-REC-003, herido, fuera de peligro, SOLO POR RESUMEN · ARG-125-003
+(Xalisco), tres fosas con cinco cuerpos en Tecuala y diez detenidos, SOLO POR RESUMEN: POSIBLE
+DUPLICIDAD CON ARG-133-REC-007 — NO SE INTEGRA HASTA VALIDACIÓN · ARG-135-REC-003 (Tijuana),
+cifra oficial no publicada.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-25 · Hora: 07:45 (CDMX) · Corte: Matutino · ARGOS N.° 140 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (I) — ALTO IMPACTO: CIUDAD DE MÉXICO, GUANAJUATO Y SINALOA
+
+### CIUDAD DE MÉXICO · IZTAPALAPA — ATAQUE ARMADO EN CALZADA ERMITA: DOS MUERTOS Y UN HERIDO [ROJO]
+
+── HECHO
+
+Iztapalapa · CALZADA ERMITA IZTAPALAPA, COL. AMPLIACIÓN RICARDO FLORES MAGÓN, SOLO POR RESUMEN ·
+viernes 23-OCT, por ruta (Latinus, La Razón, Proceso, Tribuna, Quinto Poder y Cúspide
+2026/10/23) · tarde, SOLO POR RESUMEN · 2 muertos y 1 herido, por titulares (🔴 homicidio
+múltiple) · ~15 detonaciones, SOLO POR RESUMEN · agresores huyeron en motocicleta, por titular
+de Infobae 2026/10/24 · la SSC informó, SOLO POR RESUMEN · detención de dos presuntos
+responsables: ficha propia, ARG-140-017 · identidades: no se reproducen
+
+── TRAZABILIDAD
+
+ARG-140-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora y detonaciones
+solo por resumen; fuente institucional solo por resumen · Fuentes: Institucional 1 · Nacional 6
+· Regional 3 · Abierta 0 · con fecha en la ruta: Latinus (2026/10/23) · La Razón (2026/10/23) ·
+Proceso (2026/10/23) · Tribuna (2026/10/23) · Quinto Poder (2026/10/23) · Cúspide (2026/10/23) ·
+Infobae (2026/10/24) · Hecho: 2026-10-23 · Hora: tarde (solo por resumen) · Consulta: 2026-10-25
+07:46-07:57 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
+asegurado: no publicado
+Deslindes y reservas: Calzada Ermita y Ricardo Flores Magón (Iztapalapa) no figuran en las cinco
+ediciones previas. Iztapalapa en el índice: ARG-133-004 y -008 (tianguis El Salado, 14-oct):
+otro hecho. Un doble homicidio «cuatro días» antes en la misma calzada, por resumen de Infobae:
+no fijado, no se integra.
+
+### GUANAJUATO · PURÍSIMA DEL RINCÓN — ASESINAN A UNA POLICÍA MUNICIPAL AL SALIR DE SU TURNO [ROJO]
+
+── HECHO
+
+Purísima del Rincón · LIBRAMIENTO SUR Y BULEVAR LAS TORRES, SOLO POR RESUMEN · sábado 24-OCT,
+por ruta (Latinus, AM, Tribuna y Miguel Ángel Luna 2026/10/24) · ~09:45-10:00, SOLO POR RESUMEN
+· 1 muerta: policía municipal, por titulares (🔴 víctima autoridad) · al salir de su turno, a
+bordo de su motocicleta, por titulares · 31 años; dos agresores en motocicleta, SOLO POR RESUMEN
+· la FGE abrió carpeta, SOLO POR RESUMEN · ningún detenido publicado · identidad: no se
+reproduce
+
+── TRAZABILIDAD
+
+ARG-140-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 4 · Regional 3 ·
+Abierta 0 · con fecha en la ruta: Latinus (2026/10/24) · AM (2026/10/24) · Tribuna (2026/10/24)
+· Miguel Ángel Luna (2026/10/24) · Hecho: 2026-10-24 · Hora: ~09:45-10:00 (solo por resumen) ·
+Consulta: 2026-10-25 07:46-07:57 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
+fila — armamento asegurado: no publicado
+Deslindes y reservas: Purísima del Rincón no figura en las cinco ediciones previas ni en el
+índice. Policía vial asesinada en Celaya el 17-oct, por resumen: ventana anterior, otro hecho.
+
+### SINALOA · MAZATLÁN — ASESINAN A UN TRABAJADOR DEL C4i A BORDO DE SU CAMIONETA [ROJO]
+
+── HECHO
+
+Mazatlán · FRACC. SAN FERNANDO, CALLE SAN MARCOS, SOLO POR RESUMEN · sábado 24-OCT, por ruta
+(Luz Noticias 2026-10-24) · ~07:30, SOLO POR RESUMEN · 1 muerto: conductor de una camioneta Ram
+blanca, por titular · trabajador del C4i, por titulares (Meganoticias, Expreso, Los
+Noticieristas); área administrativa de la SSP estatal, SOLO POR RESUMEN: ADSCRIPCIÓN
+CONTRADICHA, servidor público en ambas (🔴 víctima servidor público) · ~20 casquillos, por
+titular (Reporte 18) · la Fiscalía confirmó el homicidio, por titular (Sinaloahoy) · ningún
+detenido publicado · identidad: no se reproduce
+
+── TRAZABILIDAD
+
+ARG-140-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: adscripción
+contradicha; hora solo por resumen; confirmación institucional solo por titular regional ·
+Fuentes: Institucional 1 · Nacional 0 · Regional 7 · Abierta 0 · con fecha en la ruta: Luz
+Noticias (2026-10-24) · Los Noticieristas (2026/10) · Hecho: 2026-10-24 · Hora: ~07:30 (solo por
+resumen) · Consulta: 2026-10-25 07:46-07:57 · Estatus: Parcialmente corroborado · Conteo de
+armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: San Fernando (Mazatlán) no figura en las cinco ediciones previas ni en el
+índice. Quadratín Sinaloa y Quadratín México publican el mismo texto: una fuente. La Fiscalía
+figura por el titular de Sinaloahoy, que no se cuenta además como regional.
+
+### SINALOA · CULIACÁN — ATAQUE ARMADO EN UN NEGOCIO DE SUSHI DE VILLA BONITA: DOS MUERTOS [ROJO]
+
+── HECHO
+
+Culiacán · FRACC. VILLA BONITA, ESTACIONAMIENTO DE UN NEGOCIO DE SUSHI, SOLO POR RESUMEN · noche
+del viernes 23-OCT, SOLO POR RESUMEN; NINGUNA RUTA CON FECHA (excepción declarada para rojos) ·
+2 muertos, hombres, por titulares (🔴 homicidio múltiple) · «Fiscalía investiga», por titular
+(Sinaloahoy) · ningún detenido publicado · identidades: no se reproducen
+
+── TRAZABILIDAD
+
+ARG-140-004 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: día solo por resumen;
+ninguna ruta con fecha; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 ·
+Regional 3 · Abierta 0 · con fecha en la ruta: ninguna · Hecho: 2026-10-23, noche — DÍA SOLO POR
+RESUMEN · Hora: noche (solo por resumen) · Consulta: 2026-10-25 07:46-07:57 · Estatus: Pendiente
+de corroboración · Conteo de armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Villa Bonita figura en ARG-97-001 (14-ago): otro hecho. «Fiscalía
+investiga» no cuenta como fuente institucional.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-25 · Hora: 07:45 (CDMX) · Corte: Matutino · ARGOS N.° 140 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (II) — ALTO IMPACTO: CUERPOS, FOSA Y RESTOS EN GUANAJUATO, TABASCO Y TAMAULIPAS
+
+### GUANAJUATO · LEÓN — HALLAN CINCO CUERPOS EN CUATRO PUNTOS DE LA CIUDAD [ROJO]
+
+── HECHO
+
+León · CAÑADA DEL REAL, COL. BRISAS DEL SOL, LA PROVIDENCIA Y UN CUARTO PUNTO, SOLO POR RESUMEN
+· miércoles 21-OCT, por titulares con ruta fechada (La Silla Rota, Intolerancia y La Prensa de
+Coahuila 2026/10/21, «este miércoles») · PUBLICADO EL DÍA DE APERTURA SIN HORA · 5 cuerpos, por
+titulares (🔴 hallazgo de cuerpos) · una mujer, por titulares; cuerpo de mujer calcinado, cuerpo
+desmembrado en bolsas y hombre de ~30 años (~11:00), SOLO POR RESUMEN · CIFRA NO CONFIRMADA POR
+AUTORIDAD · CAUSA DE MUERTE NO INFORMADA · RELACIÓN ENTRE LOS HALLAZGOS NO ACREDITADA · ningún
+detenido publicado
+
+── TRAZABILIDAD
+
+ARG-140-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: cifra sin
+confirmación oficial; hora no fijada; ninguna fuente institucional · Fuentes: Institucional 0 ·
+Nacional 1 · Regional 2 · Abierta 0 · con fecha en la ruta: La Silla Rota (2026/10/21) ·
+Intolerancia (2026/10/21) · La Prensa de Coahuila (2026/10/21) · Hecho: 2026-10-21 · Hora: uno
+~11:00; los demás no fijada (solo por resumen) · Consulta: 2026-10-25 07:46-07:57 · Estatus:
+Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Cañada del Real y Brisas del Sol no figuran en las cinco ediciones previas
+ni en el índice. No es la fosa del pozo de Arroyo Hondo (21-sep): otro hecho. Cuerpos fuera del
+recuento de muertos por agresión: van al de cuerpos hallados.
+
+### TABASCO · HUIMANGUILLO — FOSA CLANDESTINA CON DOS CUERPOS EN CHICOACÁN [ROJO]
+
+── HECHO
+
+Huimanguillo · CHICOACÁN, PREDIO JUNTO A LA CARRETERA A VILLA ESTACIÓN CHONTALPA, SOLO POR
+RESUMEN · hallazgo el miércoles 21-OCT, SOLO POR RESUMEN · publicado el 22-OCT, por ruta (Diario
+de Yucatán 2026/10/22) · PUBLICADO EL DÍA DE APERTURA SIN HORA · fosa clandestina con 2 cuerpos,
+por titulares (🔴 fosa) · dos jóvenes de 18 y 19 años desaparecidos desde el 13-oct,
+identificados por familiares, SOLO POR RESUMEN; pruebas genéticas pendientes · la FGE Tabasco
+abrió carpeta y el fiscal apunta a un móvil pasional, SOLO POR RESUMEN · «investiga FGR», por
+titular (Cuarto Poder) · cabeza humana abandonada frente a una escuela de Huimanguillo, por
+titular (La Silla Rota 2026/10/22): RELACIÓN NO ACREDITADA, DÍA NO FIJADO · ningún detenido
+publicado · identidades: no se reproducen
+
+── TRAZABILIDAD
+
+ARG-140-006 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día del hallazgo solo
+por resumen; identificación no oficial; ninguna fuente institucional citada · Fuentes:
+Institucional 0 · Nacional 2 · Regional 6 · Abierta 0 · con fecha en la ruta: Diario de Yucatán
+(2026/10/22) · Entérate México (2026/10/23) · Hecho: 2026-10-21 — DÍA SOLO POR RESUMEN · Hora:
+no fijada · Consulta: 2026-10-25 07:46-07:57 · Estatus: Parcialmente corroborado · Conteo de
+armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Chicoacán no figura en las cinco ediciones previas ni en el índice. NO es
+ARG-138-002 (Cárdenas, Sección 10 Azucarero, 19-oct). Huimanguillo figura en ARG-120-015
+(septiembre): otro hecho. Entérate México agrega las dos fosas (cuatro jóvenes): el recuento no
+se integra. Cuerpos fuera del recuento de muertos por agresión.
+
+### TAMAULIPAS · REYNOSA — UN COLECTIVO HALLA RESTOS ÓSEOS EN UN NUEVO PUNTO DE PUERTA SUR [ROJO]
+
+── HECHO
+
+Reynosa · PREDIO TRAS PUERTA SUR, SOLO POR RESUMEN · publicado el viernes 23-OCT, por ruta (El
+Mañana 2026/10/23); hallazgo el 22 o el 23, SOLO POR RESUMEN · restos óseos humanos y una
+credencial, por titular (🔴 restos) · cráneo, mandíbula y fémur, SOLO POR RESUMEN · hallazgo del
+colectivo Amor por los Desaparecidos, SOLO POR RESUMEN · «nuevo punto», por titular (Hoy
+Tamaulipas) · NÚMERO DE VÍCTIMAS NO DETERMINADO · CREDENCIAL NO VINCULADA A LOS RESTOS · sin
+intervención institucional publicada · «once hallazgos en 2026», SOLO POR RESUMEN: RECUENTO NO
+SE INTEGRA
+
+── TRAZABILIDAD
+
+ARG-140-007 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: número de víctimas no
+determinado; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 2 ·
+Abierta 0 · con fecha en la ruta: El Mañana (2026/10/23) · Hecho: 2026-10-23 · Hora: no fijada ·
+Consulta: 2026-10-25 07:46-07:57 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
+fila — armamento asegurado: no publicado
+Deslindes y reservas: Puerta Sur no figura en las cinco ediciones previas ni en el índice. Fosa
+de Reynosa del 12-oct, descartada en ARGOS 139: otro hecho. Restos sin número de víctimas: fuera
+de todo recuento.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-25 · Hora: 07:45 (CDMX) · Corte: Matutino · ARGOS N.° 140 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (III) — VIOLENCIA OPERATIVA: SINALOA, MORELOS, ESTADO DE MÉXICO, NUEVO LEÓN Y GUANAJUATO
+
+### SINALOA · ESCUINAPA — ATACAN A BALAZOS UN CAMIÓN CON ESTUDIANTES; HIEREN AL CHOFER [AMARILLO]
+
+── HECHO
+
+Escuinapa · COL. FRANCISCO I. MADERO, SOLO POR RESUMEN · jueves 22-OCT, por ruta (El Diario
+2026/oct/22, ABC Noticias y Revista Espejo 2026/10/22) · camión con estudiantes atacado a
+balazos, por titulares · chofer herido, por titulares; lesión leve según la SSP de Sinaloa, SOLO
+POR RESUMEN · ningún estudiante herido, SOLO POR RESUMEN · estudiantes a bordo: 12 o ~30, por
+titulares: CONTRADICHO · agresión dirigida al conductor, según la SSP, SOLO POR RESUMEN · el
+chofer condujo hasta un retén militar, SOLO POR RESUMEN · ningún detenido publicado · (🟡
+agresión sin muertos; sube a 🔴 si se acredita ataque contra la población civil a bordo)
+
+── TRAZABILIDAD
+
+ARG-140-008 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: número de estudiantes
+contradicho; fuente institucional solo por resumen · Fuentes: Institucional 1 · Nacional 2 ·
+Regional 4 · Abierta 0 · con fecha en la ruta: El Diario (2026/oct/22) · ABC Noticias
+(2026/10/22) · Revista Espejo (2026/10/22) · La Razón (2026/10/23) · Hecho: 2026-10-22 · Hora:
+no fijada · Consulta: 2026-10-25 07:46-07:57 · Estatus: Parcialmente corroborado · Conteo de
+armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Ninguno de los hechos de Escuinapa del índice (ARG-131-004, ARG-133-005,
+ARG-133-011, ARG-137-010 y otros) es este. Reforma, El Diario y La Prensa de Coahuila publican
+el mismo título: una fuente.
+
+### MORELOS · JIUTEPEC — ASESINAN A UNA MUJER; SU HIJA QUEDA HERIDA [AMARILLO]
+
+── HECHO
+
+Jiutepec · COL. LOMAS DEL TEXCAL, SOLO POR RESUMEN · jueves 22-OCT, por titular («HOY jueves 22
+de octubre de 2026», Azteca Morelos) · tarde, SOLO POR RESUMEN · 1 muerta y 1 herida —su hija—,
+por titulares (🟡 homicidio doloso único) · «dos mujeres asesinadas y una menor herida en
+Morelos», por titular (La Silla Rota 2026/10/23): agrega tres ataques, RECUENTO NO SE INTEGRA ·
+ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-140-009 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 2 · Regional 1 ·
+Abierta 0 · con fecha en la ruta: Azteca Morelos (titular, 22-oct) · La Silla Rota (2026/10/23)
+· Hecho: 2026-10-22 · Hora: tarde (solo por resumen) · Consulta: 2026-10-25 07:46-07:57 ·
+Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no
+publicado
+Deslindes y reservas: Lomas del Texcal y Jiutepec no figuran en las cinco ediciones previas.
+
+### ESTADO DE MÉXICO · OZUMBA — ASESINAN A UN OPERADOR DE TRANSPORTE PÚBLICO EN LA MÉXICO–CUAUTLA [AMARILLO]
+
+── HECHO
+
+Ozumba · CARRETERA MÉXICO–CUAUTLA, FRENTE A UNA GASOLINERA, SOLO POR RESUMEN · mañana del sábado
+24-OCT, por titular con ruta fechada (Seuno Noticias 2026/10/24, «este sábado 24») · 1 muerto:
+operador de combi de la Ruta 85, por titulares (🟡 homicidio doloso único) · agresor en
+motocicleta, SOLO POR RESUMEN · la FGJEM, a cargo, SOLO POR RESUMEN · ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-140-010 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: ninguna fuente
+institucional · Fuentes: Institucional 0 · Nacional 1 · Regional 2 · Abierta 0 · con fecha en la
+ruta: Seuno Noticias (2026/10/24) · Hecho: 2026-10-24 · Hora: mañana (por titular) · Consulta:
+2026-10-25 07:46-07:57 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila —
+armamento asegurado: no publicado
+Deslindes y reservas: Ozumba no figura en las cinco ediciones previas ni en el índice.
+
+### NUEVO LEÓN · LINARES — ASESINAN A UN HOMBRE DENTRO DE UN DEPÓSITO [AMARILLO]
+
+── HECHO
+
+Linares · COL. LA PETACA, DEPÓSITO DE CERVEZA, SOLO POR RESUMEN · sábado 24-OCT, por ruta (Punto
+x Punto 2026/10/24) · 1 muerto, hombre, por titular (🟡 homicidio doloso único) · 55 años, SOLO
+POR RESUMEN · Seguridad Pública y Fuerza Civil acudieron, SOLO POR RESUMEN · ningún detenido
+publicado · identidad: no se reproduce
+
+── TRAZABILIDAD
+
+ARG-140-011 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: una sola fuente
+regional; hora no fijada · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con
+fecha en la ruta: Punto x Punto (2026/10/24) · Hecho: 2026-10-24 · Hora: no fijada · Consulta:
+2026-10-25 07:46-07:57 · Estatus: Pendiente de corroboración · Conteo de armamento: sin fila —
+armamento asegurado: no publicado
+Deslindes y reservas: La Petaca no figura en las cinco ediciones previas. Linares figura en
+ARG-135-REC-001 (Provileón): otro hecho.
+
+### GUANAJUATO · IRAPUATO — UN MOTOCICLISTA ARMADO MATA A UNA MUJER EN LA LUPITA [AMARILLO]
+
+── HECHO
+
+Irapuato · COL. LA LUPITA, POR TITULAR · sábado 24-OCT, por ruta (Periódico Correo 2026/oct/24)
+· 1 muerta, mujer, por titular (🟡 homicidio doloso único) · agresor en motocicleta, por titular
+· ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-140-012 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: una sola fuente
+regional; hora no fijada · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con
+fecha en la ruta: Periódico Correo (2026/oct/24) · Hecho: 2026-10-24 · Hora: no fijada ·
+Consulta: 2026-10-25 07:46-07:57 · Estatus: Pendiente de corroboración · Conteo de armamento:
+sin fila — armamento asegurado: no publicado
+Deslindes y reservas: La Lupita no figura en las cinco ediciones previas ni en el índice.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-25 · Hora: 07:45 (CDMX) · Corte: Matutino · ARGOS N.° 140 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (IV) — VIOLENCIA OPERATIVA: GUANAJUATO, MICHOACÁN Y VERACRUZ
+
+### GUANAJUATO · VALLE DE SANTIAGO — ASESINAN A UN HOMBRE DENTRO DE SU CASA [AMARILLO]
+
+── HECHO
+
+Valle de Santiago · COL. LOS ANTORCHISTAS, SOLO POR RESUMEN · sábado 24-OCT, por ruta (AM
+2026/10/24) · ~13:35, SOLO POR RESUMEN · 1 muerto, hombre, dentro de su casa, por titular (🟡
+homicidio doloso único) · ~50 años, SOLO POR RESUMEN · ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-140-013 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: una sola fuente
+regional; hora solo por resumen · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0
+· con fecha en la ruta: AM (2026/10/24) · Hecho: 2026-10-24 · Hora: ~13:35 (solo por resumen) ·
+Consulta: 2026-10-25 07:46-07:57 · Estatus: Pendiente de corroboración · Conteo de armamento:
+sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Los Antorchistas no figura en las cinco ediciones previas ni en el índice.
+Valle de Santiago, 2 a 4-oct: ventanas anteriores, otros hechos.
+
+### MICHOACÁN · INDAPARAPEO — DISPARAN CONTRA POLICÍAS EN UNA BASE DE OPERACIONES; SIN LESIONADOS [AMARILLO]
+
+── HECHO
+
+Indaparapeo · BASE DE OPERACIONES INTERINSTITUCIONAL, SOLO POR RESUMEN · publicado el viernes
+23-OCT, por ruta (Grupo Marmor 2026/10/23); noche del 23 o 24-OCT, SOLO POR RESUMEN: DÍA
+CONTRADICHO · disparos contra policías, por titulares; «durante operativo», por titular
+(Changoonga 2026/10/24) · militares y policías estatales repelieron; agresores huyeron al cerro,
+SOLO POR RESUMEN · sin lesionados, por titular · ningún detenido ni arma asegurada, SOLO POR
+RESUMEN · (🟡: QUIÉN INICIÓ, NO DETERMINADO)
+
+── TRAZABILIDAD
+
+ARG-140-014 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día contradicho;
+quién inició no determinado; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional
+0 · Regional 4 · Abierta 0 · con fecha en la ruta: Grupo Marmor (2026/10/23) · Changoonga
+(2026/10/24) · Hecho: 2026-10-23 · Hora: noche (solo por resumen) · Consulta: 2026-10-25
+07:46-07:57 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
+asegurado: no publicado
+Deslindes y reservas: Indaparapeo no figura en las cinco ediciones previas ni en el índice.
+Grupo Marmor y Red Michoacán publican el mismo título: una fuente.
+
+### VERACRUZ · ÁLAMO Y PAPANTLA — DOS ATAQUES ARMADOS: UN MUERTO Y DOS HERIDOS [AMARILLO]
+
+── HECHO
+
+Álamo Temapache y Papantla · ÁLAMO: UN DOMICILIO · PAPANTLA: UNA TAQUERÍA, SOLO POR RESUMEN ·
+noche del miércoles 21-OCT, SOLO POR RESUMEN · publicado el 22-OCT, por ruta (Formato 7
+2026/10/22) · dos ataques con 1 muerto y 2 heridos en total, por titular (🟡) · reparto de
+víctimas entre los dos municipios, SOLO POR RESUMEN · RELACIÓN ENTRE LOS DOS ATAQUES NO
+ACREDITADA · ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-140-015 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: una sola fuente
+efectiva; día solo por resumen · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0
+· con fecha en la ruta: Formato 7 (2026/10/22) · Hecho: 2026-10-21 · Hora: noche (solo por
+resumen) · Consulta: 2026-10-25 07:46-07:57 · Estatus: Pendiente de corroboración · Conteo de
+armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: XEU replica el título de Formato 7: una fuente. Álamo figura en ARGOS 139
+(Estero del Ídolo, martes 20, menor asesinado, visto): otro hecho. Papantla en el índice: otro
+hecho.
+
+### VERACRUZ · COSOLEACAQUE — ASESINAN A UN ADOLESCENTE Y A UN JOVEN EN DOS PUNTOS DEL CAMINO A TEMEX [AMARILLO]
+
+── HECHO
+
+Cosoleacaque · CAMINO A TEMEX, DOS PUNTOS DISTINTOS, SOLO POR RESUMEN · madrugada del viernes
+23-OCT, SOLO POR RESUMEN · publicado el 23-OCT, por ruta (Golpe Político 2026/10/23) · 2
+muertos, uno de 17 años, por titulares · RELACIÓN ENTRE LOS DOS HOMICIDIOS NO ACREDITADA (🟡;
+sube a 🔴 si se acredita un solo ataque) · ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-140-016 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: relación entre los
+hechos no acreditada; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 ·
+Regional 2 · Abierta 0 · con fecha en la ruta: Golpe Político (2026/10/23) · Hecho: 2026-10-23 ·
+Hora: madrugada (solo por resumen) · Consulta: 2026-10-25 07:46-07:57 · Estatus: Parcialmente
+corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Cosoleacaque figura en ARG-105-REC-004 (agosto) y en una sentencia federal
+vista en ARGOS 135-136: otros hechos.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-25 · Hora: 07:45 (CDMX) · Corte: Matutino · ARGOS N.° 140 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (V) — ACCIONES INSTITUCIONALES: DETENCIONES Y CATEOS
+
+### CIUDAD DE MÉXICO · IZTACALCO — DETIENEN A DOS JÓVENES POR EL ATAQUE DE CALZADA ERMITA [VERDE]
+
+── HECHO
+
+Iztacalco · CALLE CORUÑA, COL. SANTA ANITA, SOLO POR RESUMEN · viernes 23-OCT, por ruta (La
+Razón, Tribuna y Quinto Poder 2026/10/23; Infobae 2026/10/24) · 2 detenidos, de 22 años, por
+titulares · localizados por las cámaras del C2 Oriente, SOLO POR RESUMEN · una arma corta y la
+motocicleta aseguradas, SOLO POR RESUMEN · a disposición del MP por homicidio, SOLO POR RESUMEN
+· hecho delictivo: ARG-140-001
+
+── TRAZABILIDAD
+
+ARG-140-017 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: aseguramiento y
+fuente institucional solo por resumen · Fuentes: Institucional 1 · Nacional 2 · Regional 2 ·
+Abierta 0 · con fecha en la ruta: La Razón (2026/10/23) · Tribuna (2026/10/23) · Quinto Poder
+(2026/10/23) · Infobae (2026/10/24) · Hecho: 2026-10-23 · Hora: tarde (solo por resumen) ·
+Consulta: 2026-10-25 07:46-07:57 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
+fila — una arma corta, solo por resumen: no se integra
+Deslindes y reservas: Delito y detención en la misma ventana: dos fichas. Comunicado de la SSC
+no indexado.
+
+### VERACRUZ · XALAPA — DETIENEN AL PRESUNTO HOMICIDA DEL PROFESOR ASESINADO EN SU AUTOMÓVIL [VERDE]
+
+── HECHO
+
+Xalapa · detención el jueves 22-OCT, SOLO POR RESUMEN · publicada el 23 y el 24-OCT, por ruta
+(Golpe Político 2026/10/23; La Silla Rota 2026/10/24) · 1 detenido, por titulares · imputado por
+homicidio doloso calificado, según la FGE, SOLO POR RESUMEN · operativo con el Ejército, SOLO
+POR RESUMEN · hecho delictivo: ARG-139-005, ventana de ARGOS 139 · la víctima, profesor de una
+secundaria pública, por titulares (Gráfico al Día 2026/10/21; La Silla Rota): SIN ACREDITACIÓN
+INSTITUCIONAL DE SU CALIDAD DE SERVIDOR PÚBLICO
+
+── TRAZABILIDAD
+
+ARG-140-018 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día de la detención
+solo por resumen; fuente institucional solo por resumen · Fuentes: Institucional 1 · Nacional 1
+· Regional 1 · Abierta 0 · con fecha en la ruta: Golpe Político (2026/10/23) · La Silla Rota
+(2026/10/24) · Hecho: 2026-10-22 — DÍA SOLO POR RESUMEN · Hora: no fijada · Consulta: 2026-10-25
+07:46-07:57 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
+asegurado: no publicado
+Deslindes y reservas: ARG-139-005 conserva su color (🟡) mientras ninguna autoridad acredite la
+calidad de servidor público de la víctima.
+
+### OAXACA · JUCHITÁN — DETIENEN A SIETE PERSONAS POR SEIS HOMICIDIOS RECIENTES [VERDE]
+
+── HECHO
+
+Juchitán de Zaragoza · publicado el jueves 22-OCT (boletín de la FGEO, por título; Latinus
+2026/10/22) · FECHA DE LA DETENCIÓN NO FIJADA · 7 detenidos, por titulares —dos mujeres, cuatro
+hombres y un adolescente, SOLO POR RESUMEN— · relacionados con «seis homicidios recientes», por
+título del boletín · FGEO, Policía Estatal, Defensa y Guardia Nacional, SOLO POR RESUMEN · 1
+arma larga, cargadores y cartuchos sin cantidad, mariguana y cristal, SOLO POR RESUMEN ·
+VINCULACIÓN DE CADA DETENIDO CON CADA HOMICIDIO, PRESUNTA · iniciales publicadas: no se
+reproducen
+
+── TRAZABILIDAD
+
+ARG-140-019 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: fecha del hecho no
+fijada; aseguramiento solo por resumen · Fuentes: Institucional 1 · Nacional 3 · Regional 2 ·
+Abierta 0 · con fecha en la ruta: Latinus (2026/10/22) · Diario de Yucatán (2026/10/23) · Hecho:
+publicado el 2026-10-22 — FECHA DEL HECHO NO FIJADA (21 o 22-oct) · Hora: no fijada · Consulta:
+2026-10-25 07:46-07:57 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila —
+cantidades solo por resumen: evento cualitativo
+Deslindes y reservas: Ninguna ficha previa de estos detenidos. Diario de Yucatán reproduce la
+nota nacional: no se cuenta como independiente. Homicidios de Juchitán del 19 al 21-oct:
+ARG-138-001 y ARG-139-003, ventanas anteriores.
+
+### PUEBLA Y CIUDAD DE MÉXICO — CINCO CATEOS: CUATRO DETENIDOS Y 36 ARMAS DE UNA RED DE FABRICACIÓN [VERDE]
+
+── HECHO
+
+Puebla de Zaragoza, Amozoc e Iztapalapa · acciones del 22-OCT, por título del boletín federal,
+SOLO POR RESUMEN · publicado el 23 y el 24-OCT, por ruta (El Diario de Chihuahua 2026/oct/23,
+ABC Noticias e Intolerancia 2026/10/23, Diario Puntual 2026/10/24) · 5 cateos, 4 detenidos y 36
+armas, por titular (Diario Puntual); 37, SOLO POR RESUMEN: CONTRADICHO, SE INTEGRA LA CIFRA DEL
+TITULAR · red de fabricación de armas, por titulares; armas artesanales y un torno, SOLO POR
+RESUMEN · SSPC, FGR y Marina, SOLO POR RESUMEN · DESGLOSE CORTAS/LARGAS NO PUBLICADO
+
+── TRAZABILIDAD
+
+ARG-140-020 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: desglose no
+publicado; cifra contradicha (36/37); boletín leído por republicadores · Fuentes: Institucional
+1 · Nacional 1 · Regional 4 · Abierta 0 · con fecha en la ruta: El Diario de Chihuahua
+(2026/oct/23) · ABC Noticias (2026/10/23) · Intolerancia (2026/10/23) · Diario Puntual
+(2026/10/24) · Hecho: 2026-10-22 — DÍA SOLO POR RESUMEN (boletín federal del 22-oct) · Hora: no
+fijada · Consulta: 2026-10-25 07:46-07:57 · Estatus: Parcialmente corroborado · Conteo de
+armamento: ARG-140-ARM-001
+Deslindes y reservas: Boletín federal del 22-oct y medios: un solo aseguramiento, contado una
+vez. Iztapalapa: otro hecho que ARG-140-001 y -017.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-25 · Hora: 07:45 (CDMX) · Corte: Matutino · ARGOS N.° 140 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (VI) — ACCIONES INSTITUCIONALES: SINALOA Y PROCESOS DEL EXFISCAL
+
+### SINALOA · CULIACÁN — DETIENEN A CUATRO PERSONAS, ENTRE ELLAS UN LÍDER DE CÉLULA [VERDE]
+
+── HECHO
+
+Culiacán · acciones del 22-OCT, por título del boletín federal (Milenio, slug «22-de-
+octubre-2026»), SOLO POR RESUMEN · 4 detenidos, uno señalado como líder de una célula, SOLO POR
+RESUMEN · 4 armas largas, 25 cargadores, 1,338 cartuchos, granadas (2, en un resumen), 50
+pastillas de fentanilo y 200 dosis de cocaína, SOLO POR RESUMEN: CIFRAS NO SE INTEGRAN
+
+── TRAZABILIDAD
+
+ARG-140-021 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: todas las cifras solo
+por resumen de un boletín leído por republicadores · Fuentes: Institucional 1 · Nacional 1 ·
+Regional 0 · Abierta 0 · con fecha en la ruta: Milenio (slug, 22-oct-2026) · Hecho: 2026-10-22 —
+DÍA SOLO POR RESUMEN (boletín federal del 22-oct) · Hora: no fijada · Consulta: 2026-10-25
+07:46-07:57 · Estatus: Pendiente de corroboración · Conteo de armamento: sin fila — cifras solo
+por resumen: evento cualitativo
+Deslindes y reservas: Republicadores del boletín (SICOM, RED113, Talla Política): una fuente.
+Liveblog de Infobae del 23-oct sobre la captura del líder de «Los Ranas»: no fecha ni sostiene
+nada.
+
+### CHIHUAHUA — VINCULAN A PROCESO AL EXFISCAL POR EJERCICIO ILEGAL DEL SERVICIO PÚBLICO; DESCARTAN COALICIÓN [VERDE]
+
+── HECHO
+
+Chihuahua · jueves 22-OCT, por ruta (La Jornada, La Razón y MVS 2026/10/22) · vinculación a
+proceso estatal del exfiscal por ejercicio ilegal del servicio público, por titulares · el juez
+descartó el delito de coalición, por titular (Infobae 2026/10/23) · causa 3055/2026 y plazo de
+dos meses de investigación complementaria, SOLO POR RESUMEN · un medio atribuye la resolución a
+un juez federal: CONTRADICHO · la defensa impugnará, por titular (Aristegui) · NO ES SENTENCIA ·
+identidad pública por su cargo; nombre no reproducido
+
+── TRAZABILIDAD
+
+ARG-140-022 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: causa y plazo solo
+por resumen; comunicado de la FGE Chihuahua no localizado · Fuentes: Institucional 0 · Nacional
+7 · Regional 1 · Abierta 0 · con fecha en la ruta: La Jornada (2026/10/22) · La Razón
+(2026/10/22) · MVS (2026/10/22) · Informador (20261022) · Infobae (2026/10/23) · Proceso
+(2026/10/23) · 860 Líder Informativo (2026/10/23) · Hecho: 2026-10-22 · Hora: no fijada ·
+Consulta: 2026-10-25 07:46-07:57 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
+fila — armamento asegurado: no publicado
+Deslindes y reservas: Seguimiento de ARG-136-006; la prisión preventiva federal del 21-oct ya
+figura en ARGOS 139: no se repite. Causa distinta de la federal (ARG-140-023).
+
+### FEDERAL — VINCULAN A PROCESO AL EXFISCAL DE CHIHUAHUA POR TRAICIÓN A LA PATRIA [VERDE]
+
+── HECHO
+
+Altiplano · audiencia del sábado 24-OCT, por titular de Infobae 2026/10/23 (continuaría el
+sábado) · resolución publicada el domingo 25-OCT, por ruta (La Razón, Infobae, Zolo Noticias
+2026/10/25; El Diario 2026/oct/25; El Pueblo 20261025) · FRONTERA DE VENTANA — HORA NO FIJADA ·
+vinculación a proceso federal por traición a la patria, por titulares · sigue en el Altiplano,
+por titular (Infobae) · causa 408/2026, prisión preventiva y dos meses de investigación
+complementaria, SOLO POR RESUMEN · audiencia extendida a la madrugada del 25, SOLO POR RESUMEN ·
+comunicado de la FGR no localizado · NO ES SENTENCIA
+
+── TRAZABILIDAD
+
+ARG-140-023 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora de la resolución
+no fijada; causa y plazo solo por resumen; sin comunicado de la FGR · Fuentes: Institucional 0 ·
+Nacional 5 · Regional 3 · Abierta 0 · con fecha en la ruta: La Razón (2026/10/25) · Infobae
+(2026/10/25) · El Diario (2026/oct/25) · Zolo Noticias (2026/10/25) · El Pueblo (20261025) ·
+Hecho: 2026-10-24 · Hora: no fijada (audiencia del sábado 24; publicación del 25) · Consulta:
+2026-10-25 07:46-07:57 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila —
+armamento asegurado: no publicado
+Deslindes y reservas: Seguimiento de ARG-136-006 y de ARG-140-022 (causa estatal, otra). Si la
+resolución se dictó después de las 07:45 del 25, pertenece a ARGOS 141 (fe de erratas).
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-25 · Hora: 07:45 (CDMX) · Corte: Matutino · ARGOS N.° 140 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (VII) — VENTANA ANTERIOR: ARGOS 139
+
+### MICHOACÁN · ARIO DE ROSALES — ATAQUE ARMADO EN LA PALMA: TRES MUERTOS Y DOS HERIDOS [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 139 — DÍA Y HORA SOLO POR RESUMEN · Ario de Rosales, por titulares ·
+LOCALIDAD LA PALMA, SOLO POR RESUMEN; SALVADOR ESCALANTE, POR TITULAR DE QUADRATÍN: MUNICIPIO
+CONTRADICHO · noche del martes 20-OCT (~23:30) o madrugada del 21, SOLO POR RESUMEN; antes de
+las 10:23 en ambos casos · primera ruta fechada: 21-OCT (MVS; Grupo Marmor) · 3 muertos y 2
+heridos, por titulares (🔴 homicidio múltiple) · víctimas de 18, 19 y 24 años; heridos de 57 y de
+14 o 15 años, SOLO POR RESUMEN · ataque a una vivienda o paraje serrano, SOLO POR RESUMEN ·
+vehículo con blindaje artesanal y móvil atribuido a la Fiscalía, SOLO POR RESUMEN: NO SE INTEGRA
+· ningún detenido publicado · identidades: no se reproducen
+
+── TRAZABILIDAD
+
+ARG-140-REC-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día, hora y
+municipio contradichos; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 1 ·
+Regional 7 · Abierta 0 · con fecha en la ruta: MVS (2026/10/21) · Grupo Marmor (2026/10/21) ·
+Hecho: 2026-10-20 · Hora: ~23:30 o madrugada del 21 (solo por resumen) · Consulta: 2026-10-25
+07:46-07:57 · Estatus: Parcialmente corroborado · Ventana de origen: ARGOS 139 — DÍA Y HORA SOLO
+POR RESUMEN — fuera de todos los totales
+Deslindes y reservas: Ario de Rosales, La Palma (Michoacán) y Salvador Escalante no figuran en
+las cinco ediciones previas; «La Palma» del índice es Navolato (ARG-138-007) y «Ario» en ARGOS
+135 es una calle de Apatzingán: otros. Grupo Marmor y Red Michoacán publican el mismo título:
+una fuente.
+
+### ESTADO DE MÉXICO · COCOTITLÁN — ATACAN UNA PATRULLA EN LA MÉXICO–CUAUTLA: UN POLICÍA MUERTO Y OTRO HERIDO [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 139 — HORA SOLO POR RESUMEN · Cocotitlán · CARRETERA MÉXICO–CUAUTLA,
+CERCA DEL ACCESO A SAN ANDRÉS METLA, SOLO POR RESUMEN · madrugada del miércoles 21-OCT, ~06:10,
+SOLO POR RESUMEN · primera ruta fechada: 22-OCT (El Gráfico; Diario de Yucatán; Síntesis;
+Reporteros en Movimiento) · patrulla municipal atacada a balazos, por titulares · 1 policía
+municipal muerto y 1 herido, por titulares (🔴 muerte de personal de seguridad) · «estaba en
+servicio», confirmó el municipio, por titular (Plana Mayor) · el herido, en la cabeza y grave,
+SOLO POR RESUMEN; «dos policías» atacados, por titular de El Gráfico: NÚMERO DE HERIDOS
+CONTRADICHO · «emboscada», por titulares (Posta, Cuestión de Polémica); el municipio descarta un
+ataque directo, SOLO POR RESUMEN: MODALIDAD CONTRADICHA · la FGJEM investiga · ningún detenido
+publicado · identidades: no se reproducen
+
+── TRAZABILIDAD
+
+ARG-140-REC-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; modalidad y número de heridos contradichos · Fuentes: Institucional 1 · Nacional 5 ·
+Regional 6 · Abierta 0 · con fecha en la ruta: El Gráfico (2026/10/22) · Diario de Yucatán
+(2026/10/22) · Síntesis (2026/10/22) · Reporteros en Movimiento (2026/10/22) · Hecho: 2026-10-21
+· Hora: ~06:10 (solo por resumen) · Consulta: 2026-10-25 07:46-07:57 · Estatus: Parcialmente
+corroborado · Ventana de origen: ARGOS 139 — HORA SOLO POR RESUMEN — fuera de todos los totales
+Deslindes y reservas: Cocotitlán y San Andrés Metla no figuran en las cinco ediciones previas ni
+en el índice. El ataque a «dos policías en la México–Cuautla» (El Gráfico 2026/10/22) es este
+hecho. Choque de la La Pera–Cuautla (12-oct): otro hecho.
+
+### ESTADO DE MÉXICO · ECATEPEC — ATAQUE ARMADO EN UN INMUEBLE DE TULPETLAC: CUATRO MUERTOS Y UNA HERIDA [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 139 — DÍA SOLO POR RESUMEN, CONTRADICHO · Ecatepec · SANTA MARÍA
+TULPETLAC, CALLE OAXACA, SOLO POR RESUMEN · «la noche del martes» 20-OCT, SOLO POR RESUMEN ·
+primera ruta fechada: 22-OCT (El Gráfico); hora de publicación de El Universal, 22-oct 03:10,
+SOLO POR RESUMEN: LA PUBLICACIÓN ES COMPATIBLE CON LA NOCHE DEL MIÉRCOLES 21 — DÍA NO FIJADO · 4
+muertos dentro del inmueble —tres hombres y una mujer— y 1 mujer herida fuera, por titulares y
+resumen (🔴 homicidio múltiple) · inmueble señalado como punto de venta de droga, por titular (El
+Gráfico) · agresores en un sedán blanco, SOLO POR RESUMEN · la Fiscalía mexiquense investiga ·
+ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-140-REC-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día contradicho
+entre el resumen y la publicación; ninguna fuente institucional · Fuentes: Institucional 0 ·
+Nacional 2 · Regional 2 · Abierta 0 · con fecha en la ruta: El Gráfico (2026/10/22) · Hecho:
+2026-10-20 · Hora: noche (solo por resumen) · Consulta: 2026-10-25 07:46-07:57 · Estatus:
+Parcialmente corroborado · Ventana de origen: ARGOS 139 — DÍA SOLO POR RESUMEN, CONTRADICHO —
+fuera de todos los totales
+Deslindes y reservas: Tulpetlac no figura en las cinco ediciones previas ni en el índice. NO es
+«Ecatepec Colosio» (19-oct, visto en ARGOS 139) ni la balacera de El Obraje Diamante
+(septiembre). Si el ataque fue la noche del miércoles 21, es hecho propio de ARGOS 140 y entra
+en sus totales por fe de erratas.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-25 · Hora: 07:45 (CDMX) · Corte: Matutino · ARGOS N.° 140 · USO INSTITUCIONAL
+
+============================================================================
+
+## CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS
+
+Total nacional del corte: en la página de panorama.
+
+  · Armas cortas: 0 — NO PUBLICADO EN EL ÚNICO EVENTO CON CANTIDAD
+
+  · Armas largas: 0 — NO PUBLICADO EN EL ÚNICO EVENTO CON CANTIDAD
+
+  · Sin categoría: 36 — 1 evento (ARG-140-ARM-001), por titular; desglose no publicado
+
+  · Cartuchos: 0 — NO PUBLICADO EN EL ÚNICO EVENTO CON CANTIDAD
+
+  · Cargadores: 0 — NO PUBLICADO EN EL ÚNICO EVENTO CON CANTIDAD
+
+  · Granadas: 0 — NINGUNA GRANADA INTEGRABLE; boletín del 22-oct, solo por resumen
+
+  · AEI: 0 — NINGÚN AEI INTEGRABLE
+
+  · Explosivos: 0 — NINGÚN EXPLOSIVO, DETONADOR NI INICIADOR INTEGRABLE
+
+  · Armamento especial: 0 — NINGÚN ARMAMENTO ESPECIAL PUBLICADO
+
+  · Detenidos: 4 — en el mismo evento de aseguramiento, por titular
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-25 · Hora: 07:45 (CDMX) · Corte: Matutino · ARGOS N.° 140 · USO INSTITUCIONAL
+
+============================================================================
+
+## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
+
+  ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
+  ARG-140-ARM-001 | Puebla y Ciudad de México | Puebla de Zaragoza, Amozoc e Iztapalapa | 22-oct (solo por resumen) | n/d | n/d | 36 | n/d | n/d | n/d | n/d | n/d | n/d | 4 | SSPC, FGR y Marina (solo por resumen) | Bajo · 36 armas y 4 detenidos por titular (Diario Puntual 2026/10/24); 37, solo por resumen; desglose no publicado
+
+Lectura regional: Centro, 1 evento (36 armas sin categoría, 4 detenidos); el resto de regiones,
+sin evento integrable. Cálculo propio.
+VISTOS, NO INTEGRADOS — CIFRAS SOLO POR RESUMEN: boletín federal del 22-oct — Sinaloa, Culiacán
+(ARG-140-021): 4 largas, 25 cargadores, 1,338 cartuchos y granadas · Chihuahua, Ojinaga: 1 larga
+y 1 granada o aditamento lanzagranadas (CONTRADICHO), 1 detenido · Hidalgo, Juárez: 2 armas, 1
+cargador, 24 cartuchos, 250 L de hidrocarburo, 2 detenidos · boletín federal del 21-oct —
+Quintana Roo: 2 largas, 2 cortas, 4 cargadores · Veracruz: 2 largas, 1 corta, 4 detenidos ·
+Oaxaca, Juchitán (ARG-140-019): 1 larga · Ciudad de México, Iztacalco (ARG-140-017): 1 corta ·
+Colima: armas y un AEI de una célula, sin cifra ni fecha fijada: cualitativo.
+EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE: Chiapas, Huixtla, aduana, martes 20-oct (El Sol del
+Soconusco 2026/10/20): 4 detenidos, 1 carabina y 3 pistolas en una sola fuente; ventana de ARGOS
+139, FUERA DEL TOTAL.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-25 · Hora: 07:45 (CDMX) · Corte: Matutino · ARGOS N.° 140 · USO INSTITUCIONAL
+
+============================================================================
+
+## RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES
+
+  · Sentencias condenatorias: 0 — NINGUNA SENTENCIA INTEGRABLE EN LA VENTANA
+
+  · Personas sentenciadas: 0 — 3 candidatas en ventana, sin boletín leído
+
+  · Pena acumulada: 0 — ningún caso integrable
+
+  · Reparación del daño: 0 — ningún monto integrable
+
+  · Fiscalías con resultado: 0 — ver indicador de cobertura
+
+## CANDIDATOS EN VENTANA
+
+  Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
+  Hidalgo · Santiago Tulantepec | Tres sentenciados, nombres no reproducidos · fallo condenatorio del 8-oct por la muerte de tres mujeres (La Silla Rota 2026/10/9) | Sin pena: audiencia de individualización del 21-oct pospuesta «por falla de energía», por titular (La Jornada Hidalgo, sin fecha en la ruta); nueva fecha 28-oct, SOLO POR RESUMEN | Tribunal de Enjuiciamiento de Tulancingo (solo por resumen) | FALLO SIN PENA — PENDIENTE DE CONFIRMACIÓN OFICIAL · sin boletín de la PGJEH · «40 a 90 años» es estimación de la asesoría de las víctimas, no pena | Bajo
+  Coahuila · Saltillo | Un sentenciado · transporte de más de un kilo de metanfetamina, SOLO POR RESUMEN | 7 años, SOLO POR RESUMEN | FGR (listado de fgr.org.mx, 22-oct, por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · boletín no leído; número de comunicado ambiguo · firmeza no informada | No confirmado
+  Jalisco · Tlajomulco, Zapotlanejo y El Salto | Tres comunicados de sentencia condenatoria · portación de arma y cartuchos, SOLO POR RESUMEN | No obtenida | FGR (listado de fgr.org.mx, 21-oct, por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · PUBLICADO EL DÍA DE APERTURA SIN HORA · penas y número de personas no obtenidos | No confirmado
+
+Candidatas heredadas, publicadas antes de la ventana y sin boletín leído: Culiacán, 18 años
+(19-oct) · Ensenada, tres sentenciados, 158 años 9 meses por titular (Sin Embargo), «158 años»
+en otro titular: redondeo, PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA (17-oct) · General
+Cepeda, 13 años 4 meses (FGR, 19-oct) · Caborca, 8 años (FGR, 19-oct). NO SE INTEGRAN.
+
+## INDICADOR DE COBERTURA
+
+  Renglón | Resultado
+  Fiscalías revisadas en sentencias | 11 de 32, por búsqueda dirigida que devolvió páginas del dominio; acceso directo: 0 · BC, Chih, Dgo · CDMX, Pue, Qro, Hgo, Tlax · Ver · Chis, Yuc — todas de lectura parcial (último ítem indexado anterior a la ventana) · FGR: gob.mx/fgr solo devolvió 2019-2022; listados de fgr.org.mx del 21 y 22-oct
+  Fiscalías con sentencia publicada en la ventana | 0 estatales · FGR: 4 comunicados de sentencia en listados (Jalisco 3, Coahuila 1), sin texto leído
+  SIN RESULTADO INDEXADO EN VENTANA | 11 fiscalías estatales revisadas
+  SIN ACTUALIZACIÓN CONSTATADA | 0
+  Dominio consultado sin páginas devueltas | 9: Sin, Tamps, Coah, Zac, Camp, Tab, Gto, Jal, Col
+  NO REVISADA — sentencias | 12: BCS, Son · NL, SLP · Nay, Ags, Mich · Edomex, Mor · Oax, Gro, QRoo
+  Páginas no disponibles · errores de acceso | Fuentes con error de acceso: bloqueo de egreso: curl a www.gob.mx/fgr, 25-oct 06:52: código 000 · dominio nuevo confirmado: comunicacion.fiscaliaveracruz.gob.mx, portal.fgeo.gob.mx, fiscaliageneralqro.gob.mx, seguridad.slp.gob.mx
+  Alto impacto y armamento | Alto impacto: 17 de 32 con consulta propia por entidad (entre ellas las 7 pendientes de ARGOS 139: BC, Chih, Coah, NL, Ags, Gto, Edomex) · 15 solo por consulta regional amplia: BCS, Son, Dgo · Jal, Col, Nay · CDMX, Mor, Pue, Tlax, Hgo, Qro · Chis, Camp, Yuc · armamento: 11 de 32 por dominio oficial —NL, Tamps, SLP · Mich, Ags · CDMX · Ver · Chis, Gro, Yuc, Oax—, todas de lectura parcial salvo Oax; NO REVISADA o dominio sin páginas (21): BC, BCS, Son, Chih, Sin, Dgo · Coah, Zac · Jal, Col, Nay, Gto · Edomex, Mor, Pue, Tlax, Hgo, Qro · Tab · Camp, QRoo
+  Boletín federal | Acciones del 21 y del 22-oct: existen; consultadas por sus republicadores (Ultranoticias, RED113, Talla Política, Certeza Diario; Milenio, SICOM) · acciones del 23 y del 24-oct: SIN RESULTADO INDEXADO EN VENTANA en las tres formas, repetidas al final de la consulta · gabinetedeseguridad.gob.mx: el buscador solo devuelve el agregado del 9 al 11-oct · Guardia Nacional, Defensa y Semar: SIN RESULTADO INDEXADO EN VENTANA
+  Techo de confianza del producto | ★★★★☆ (techo de política) · esta edición no supera ★★★☆☆: sin lectura directa de documento oficial · BLOQUEO DE EGRESO REVERIFICADO EL 25-OCT 06:52: GOB.MX
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-25 · Hora: 07:45 (CDMX) · Corte: Matutino · ARGOS N.° 140 · USO INSTITUCIONAL
+
+============================================================================
+
+## VALORACIÓN ARGOS, CONCLUSIONES E INDICADORES
+
+── VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL
+
+1. 7 ROJOS PROPIOS EN 5 ENTIDADES: dos contra personal de seguridad o de monitoreo (ARG-140-002
+y -003), dos homicidios múltiples (-001 y -004) y tres hallazgos de cuerpos, fosa o restos (-005
+a -007).
+2. 9 amarillos: siete con muertos o heridos por ataque armado y dos agresiones sin muertos (-008
+y -014).
+3. 7 acciones institucionales: tres detenciones ligadas a homicidios (-017 a -019), dos cateos y
+aseguramientos (-020 y -021) y dos vinculaciones a proceso (-022 y -023).
+4. Ventana de ARGOS 139: tres rojos recuperados (ARG-140-REC-001 a -003), fuera de los totales.
+5. VENTANA DE 93 H 22 MIN: TOTALES NO COMPARABLES CON ARGOS 139 SIN NORMALIZAR POR HORA; LOS
+DÍAS 23 A 25 TIENEN INDEXACIÓN INCOMPLETA.
+
+── CONCLUSIONES DE INTELIGENCIA CRIMINAL
+
+1. PERSONAL DE SEGURIDAD Y DE MONITOREO ATACADO FUERA DE UNA ACCIÓN OPERATIVA: TRES HECHOS, TRES
+MUERTOS (cálculo propio): ARG-140-002 (policía al salir de su turno, en su motocicleta),
+ARG-140-003 (trabajador del C4i en su camioneta) y ARG-140-REC-002 (patrulla en carretera).
+Línea: solicitar a las fiscalías de Guanajuato, Sinaloa y Estado de México si las víctimas
+tenían amenazas previas y si el ataque fue dirigido — hipótesis, sin vínculo entre entidades.
+2. CORREDOR MÉXICO–CUAUTLA, ORIENTE DEL ESTADO DE MÉXICO: DOS ATAQUES MORTALES EN CUATRO DÍAS
+(cálculo propio): ARG-140-REC-002 (Cocotitlán, 21-oct) y ARG-140-010 (Ozumba, 24-oct), sobre la
+misma carretera. Línea: solicitar a la FGJEM y a la Guardia Nacional el registro de agresiones
+en el tramo Cocotitlán–Ozumba y si comparten agresores — hipótesis.
+3. DOS HALLAZGOS SIN IDENTIFICACIÓN NI CAUSA DE MUERTE OFICIAL (cálculo propio): ARG-140-005
+(León: cinco cuerpos en cuatro puntos el mismo día, uno calcinado y uno desmembrado, por
+resumen) y ARG-140-007 (Reynosa: restos óseos hallados por un colectivo, sin número de
+víctimas). Línea: solicitar a las fiscalías de Guanajuato y Tamaulipas la identificación, la
+causa de muerte y si los hallazgos se cruzan con fichas de búsqueda.
+4. SINALOA: VIOLENCIA EN TRES MUNICIPIOS Y RESPUESTA EN UNO (cálculo propio): ARG-140-003
+(Mazatlán), ARG-140-004 (Culiacán, dos muertos), ARG-140-008 (Escuinapa, transporte con
+estudiantes) y ARG-140-021 (Culiacán, cuatro detenidos, uno señalado como líder de célula).
+Línea: solicitar a la FGE Sinaloa si los detenidos de Culiacán se vinculan con alguno de los
+ataques de la ventana — vínculo no acreditado.
+5. DETENCIONES SIN CIERRE JUDICIAL: DOS DETENCIONES LIGADAS A HOMICIDIOS, NINGUNA SENTENCIA
+INTEGRABLE (cálculo propio): ARG-140-017 (dos detenidos por el ataque de Calzada Ermita, el
+mismo día), ARG-140-018 (Xalapa, dos días después del homicidio). Línea: solicitar a la FGJCDMX
+y a la FGE Veracruz la audiencia de imputación y la vinculación de los detenidos.
+
+## INDICADORES OFICIALES
+
+gabinetedeseguridad.gob.mx/resultados — NO REVISADA; lectura directa no disponible. SESNSP e
+INEGI: NO REVISADOS en esta edición · FGR: SRIV (gob.mx/fgr).
+Toda cifra de este cartelón sin emisor nombrado es cálculo propio de ARGOS.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-10-25 · Hora: 07:45 (CDMX) · Corte: Matutino · ARGOS N.° 140 · USO INSTITUCIONAL
