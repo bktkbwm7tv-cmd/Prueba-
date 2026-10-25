@@ -79,7 +79,7 @@ BARRIDO
  Los equipos NO TIENEN BASH: cotejo con la herramienta Grep y su salida pegada.
  PRIORIDAD SOBRE EL CICLO: sentencias de las 16 NO REVISADA y de los 5 dominios sin
  páginas; armamento de las 17 NO REVISADA y de los 3 sin páginas; alto impacto con
- consulta propia para las 15 de solo regional amplia (listas en la plantilla y en
+ consulta propia para las 16 de solo regional amplia (listas en la plantilla y en
  _pendientes.md, «Abiertos que ARGOS 141 hereda»). Dominios: «Deuda de método
  (ARGOS 140)».
 
