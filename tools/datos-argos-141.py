@@ -80,7 +80,7 @@ E = [
   panel="Detención de <b>3 integrantes de «Los Tlacos»</b> por extorsión", inst="Gabinete de Seguridad <span class=\"muted-note\">(por republicadores)</span>", nac=NIN, conf="★★★☆☆",
   campo="día no fijado; cifras de armamento solo por resumen", I=1, N=0, R=2, A=0,
   fechadas=["Código QRO (2026/10/25)", "Argonmexico (2026/10/26)"], estatus="Parcialmente corroborado", arm=None, cual=True,
-  desl="«Los Tlacos» en el índice: ARG-110-REC-001 (San Miguel Totolapan, agosto): otro hecho. Grupo Animal reproduce el boletín: una fuente."),
+  desl="«Los Tlacos» en el índice: ARG-110-REC-001 (San Miguel Totolapan, agosto): otro hecho; detención de seis presuntos integrantes por extorsión en Chilpancingo (12-ago, archivo de fuentes de ARGOS 96) y video atribuido al grupo (ARGOS 117): antecedentes, no fichas. Grupo Animal reproduce el boletín: una fuente."),
 ]
 
 # ---------------------------------------------------------------- RECUPERACIONES (ventana de ARGOS 140; solo alto impacto)
@@ -124,7 +124,7 @@ R = [
   panel="<b>Agresión a personal de seguridad</b>: 5 detenidos", inst="SSP Sinaloa" + PR, nac="Milenio",
   conf="★★★☆☆", campo="día solo por resumen; probable mismo operativo que el campamento", I=1, N=1, R=5, A=0,
   fechadas=["Medios OBSON (2026/10/26)"],
-  desl="Zavala no figura en las cinco ediciones previas ni en el índice; Concordia en ARGOS 137 (ARG-126-004 y otros) es otro hecho. Los heridos son agresores, solo por resumen: fuera de todo recuento."),
+  desl="Zavala no figura en las cinco ediciones previas ni en el índice; Concordia en el índice: ARG-111-ARM-002, ARG-124-003 y ARG-126-004: otros hechos. Los heridos son agresores, solo por resumen: fuera de todo recuento."),
 ]
 
 for r in R:
@@ -289,7 +289,7 @@ port = f'''<section class="page">
 
 ORD = {"rojo": 0, "amarillo": 1, "verde": 2}
 rows_own = "\n".join(prow(e) for e in sorted(E, key=lambda x: (ORD[x["color"]], [-ord(ch) for ch in x["fecha"]], -x["hk"])))
-rows_rec = "\n".join(prow(r, True) for r in R)
+rows_rec = "\n".join(prow(r, True) for r in sorted(R, key=lambda x: x["fecha"], reverse=True))
 panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
     Ventana <b>25-oct 07:45 → 26-oct 08:37 CDMX</b> (<b>{DUR}</b>) · <b>{len(E)} hechos propios</b> en <b>{len(ENT)} entidades</b> ·
     <b>densidad {DENS} hechos/hora</b>; duración y densidad, <b>cálculo propio</b> · dentro de cada color, del más reciente al más antiguo · <b>ningún rojo propio fijado en la ventana</b>.
@@ -311,7 +311,7 @@ panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
     <tbody><tr><td><b>{len(E)}</b></td><td><b>{cnt["rojo"]}</b></td><td><b>{cnt["amarillo"]}</b></td><td><b>{cnt["verde"]}</b></td><td><b>{len(R)}</b></td><td><b>{MU}</b></td><td><b>{HE}</b></td><td><b>{CU}</b></td><td><b>{tv(0)}</b></td><td><b>{tv(1)}</b></td><td><b>{tv(2)}</b></td><td><b>{tv(4, fmt)}</b></td><td><b>{tv(5)}</b></td><td><b>{tv(6)}</b></td><td><b>{tv(7)}</b></td><td><b>{tv(8)}</b></td><td><b>{TOT[9]}</b></td><td><b>{len(ENT)}</b></td></tr></tbody>
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
-    <b>Armamento</b>: 1 evento contabilizado (ARG-141-ARM-001: detenidos por <i>slug</i>, <b>desglose solo por resumen</b>; <code>n/d</code> = no publicado en fuente citable, no ausencia) y 1 evento cualitativo sin cantidad (ARG-141-007) · <b>los totales incluyen 1 muerto no confirmado por autoridad</b> (ARG-141-001) · <b>marcas</b>: {NFR} <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> y {NAP} <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code> · en las recuperaciones, <b>{MU_REC} muertos</b> y <b>{HE_REC} heridos</b>, fuera de todo total. <b>Cálculo propio</b>.
+    <b>Armamento</b>: 1 evento contabilizado (ARG-141-ARM-001: detenidos por <i>slug</i>, <b>desglose solo por resumen</b>; <code>n/d</code> = no publicado en fuente citable, no ausencia) y 1 evento cualitativo sin cantidad en el corte (ARG-141-007); otro de la ventana anterior (ARG-141-REC-005), fuera de total · <b>los totales incluyen 1 muerto no confirmado por autoridad</b> (ARG-141-001) · <b>marcas</b>: {NFR} <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> y {NAP} <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code> · en las recuperaciones, <b>{MU_REC} muertos</b> y <b>{HE_REC} herido{"s" if HE_REC != 1 else ""}</b>, fuera de todo total. <b>Cálculo propio</b>.
     <br><b>Seguimientos de ediciones previas, fuera del semáforo</b>: <b>ARG-136-006 (exfiscal)</b>: vinculación federal por traición a la patria, por titular (Tribuna 2026/10/25), ya reportada en ARGOS 140; impugnación anunciada por la defensa, {RES}; «Pelea… para salir de El Altiplano» (El Diario de Chihuahua 2026/oct/26) se refiere al penal; <code>NINGUNA ES SENTENCIA</code> · <b>ARG-140-020 (Xalapa)</b>: prisión preventiva por homicidio doloso calificado, por <i>slug</i> (Hora Cero 2026/10/24); «oficiosa», {RES}; vinculación no publicada · <b>ARG-140-005 (León)</b>: 4 cuerpos por titular (AM 2026/10/23) y 5 por <i>slug</i> (La Silla Rota y otros, 2026/10/21): <code>CIFRA CONTRADICHA</code> · <b>ARG-140-013 (Linares)</b>: la víctima era el encargado del depósito, por <i>slug</i> (MVS 2026/10/25); edad 47 o 55: <code>CONTRADICHA</code> · <b>ARG-140-017</b>: reparto por titular (La Nigua): 1 muerto en Álamo y 2 heridos en Papantla · <b>ARG-140-003</b>: «supervisor del Subcentro de Comando; SSPE confirma muerte de elemento activo del C4i», por titular (Los Noticieristas); ningún detenido · <b>ARG-140-023</b>: nombre y alias del detenido coinciden en El Financiero (2026/10/22) y Expreso (2026/10/23); boletín no leído · <b>ARG-140-REC-002 (Cocotitlán)</b>: «emboscan a policías», por titular (El Universal) · <b>ARG-140-REC-003 (Ecatepec)</b>: sin fragmento que fije el día · <b>ARG-140-021 (Juchitán)</b>: vinculación no publicada.
   </p>
 '''
@@ -424,10 +424,10 @@ sent = f'''  <div class="conteo">
 cierre = f'''  <div class="alerta contexto">
     <div class="flag">VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL</div>
     <p>
-      <b>1.</b> <b>Sin rojo propio fijado en la ventana</b>: el nivel lo fijan cinco rojos de la ventana de ARGOS 140 recuperados en esta edición (ver panorama), fuera de los totales.
-      <br><b>2.</b> <b>Violencia operativa</b>: homicidios únicos y una agresión con amenaza; dos víctimas vinculadas a instituciones de justicia o seguridad.
+      <b>1.</b> <b>Sin rojo propio fijado en la ventana</b>: riesgo nacional del corte sin incremento acreditado por hechos propios.
+      <br><b>2.</b> <b>Violencia operativa</b>: homicidios únicos y una agresión con amenaza; dos víctimas vinculadas a instituciones de justicia o seguridad, una con la calidad contradicha.
       <br><b>3.</b> <b>Respuesta institucional</b>: dos detenciones con armamento sin desglose citable; ninguna sentencia integrable.
-      <br><b>4.</b> <b>Riesgo de arrastre</b>: un ataque mortal a un agente ministerial del lunes por la mañana, posterior al cierre, pasa a ARGOS 142.
+      <br><b>4.</b> <b>Ventana de ARGOS 140</b>: cinco rojos recuperados (ARG-141-REC-001 a -005) —homicidios múltiples, fosas y una agresión a personal de seguridad—, fuera de los totales.
       <br><b>5.</b> <code>{NFR + NAP} DE {len(E)} HECHOS SIN HORA FIJADA Y VENTANA DE {DUR.upper()}: TOTALES NO COMPARABLES CON ARGOS 140 SIN NORMALIZAR POR HORA.</code>
     </p>
   </div>
@@ -436,8 +436,8 @@ cierre = f'''  <div class="alerta contexto">
     <div class="flag">CONCLUSIONES DE INTELIGENCIA CRIMINAL</div>
     <p>
       <b>1. PÉNJAMO: CUARTO ATAQUE ARMADO CON VÍCTIMAS EN DOCE DÍAS</b> (cálculo propio): ARG-133-REC-001, ARG-138-013, homicidio de la calle Marfil del 21-oct (AM 2026/10/22; ventana de ARGOS 140, sin ficha) y ARG-141-001; dos en la col. Lázaro Cárdenas. Línea: <b>solicitar a la FGE Guanajuato el cotejo balístico de los cuatro</b> — hipótesis.
-      <br><b>2. TRANSPORTE: CUATRO TRABAJADORES DEL SECTOR ASESINADOS EN SIETE DÍAS, SEGÚN EL ÍNDICE</b> (cálculo propio): ARG-137-014 (camionero), ARG-139-009 (conductor), ARG-140-012 (operador) y ARG-141-003 (checador). Línea: <b>solicitar a las fiscalías si las víctimas denunciaron extorsión o cobro de piso</b> — vínculo no acreditado.
-      <br><b>3. PERSONAL O EXPERSONAL DE INSTITUCIONES DE SEGURIDAD Y JUSTICIA COMO BLANCO: CUATRO HECHOS EN TRES DÍAS</b> (cálculo propio): ARG-140-002, ARG-140-003, ARG-141-004 y ARG-141-005. Línea: <b>solicitar a las fiscalías de Sinaloa y Quintana Roo si las víctimas tenían amenazas previas, y vigilar al personal en activo de las mismas áreas</b>.
+      <br><b>2. TRANSPORTE: TRES TRABAJADORES DEL SECTOR ASESINADOS EN SIETE DÍAS, SEGÚN EL ÍNDICE</b> (cálculo propio): ARG-137-014 (camionero), ARG-140-012 (operador) y ARG-141-003 (checador). Línea: <b>solicitar a las fiscalías si las víctimas denunciaron extorsión o cobro de piso</b> — vínculo no acreditado.
+      <br><b>3. PERSONAL O EXPERSONAL DE INSTITUCIONES DE SEGURIDAD Y JUSTICIA COMO BLANCO: CUATRO HECHOS EN TRES DÍAS</b> (cálculo propio): ARG-140-002, ARG-140-003, ARG-141-004 y ARG-141-005. Calidad contradicha en ARG-140-003 y ARG-141-005. Línea: <b>solicitar a las fiscalías de Guanajuato, Sinaloa y Quintana Roo si las víctimas tenían amenazas previas, y vigilar al personal en activo de las mismas áreas</b>.
       <br><b>4. ZAMORA–JACONA: TERCER ATAQUE ARMADO DEL ÍNDICE EN OCTUBRE</b> (cálculo propio): ARG-129-REC-001 (bar), ARG-130-001 (base de Bomberos y policías) y ARG-141-002. Línea: <b>solicitar a la FGE Michoacán si los tres comparten armas o agresores</b> — hipótesis.
       <br><b>5. «LOS TLACOS»: DETENCIÓN POR EXTORSIÓN DE UN GRUPO YA ASOCIADO A UNA INCURSIÓN CON SEIS MUERTOS</b> (ARG-110-REC-001 y ARG-141-007). Línea: <b>solicitar a la FGR y a la FGE Guerrero si los detenidos se vinculan con esa incursión y con la red de cobro</b> — vínculo no acreditado.
     </p>

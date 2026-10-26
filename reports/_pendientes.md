@@ -8,7 +8,7 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 140 (corte 2026-10-25; ventana larga 21-oct 10:23 → 25-oct 07:45).
+**Última actualización**: ARGOS 141 (corte 2026-10-26; ventana 25-oct 07:45 → 26-oct 08:37).
 
 ---
 
@@ -22,6 +22,8 @@ sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le
 **ARGOS 139 publicado el 21-oct** (ventana 20-oct 07:06 → 21-oct 10:23). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-140.md`** (y `_ordenes-ARGOS-140.txt`).
 
 **ARGOS 140 publicado el 25-oct** (ventana 21-oct 10:23 → 25-oct 07:45, 93 h 22 min). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-141.md`** (y `_ordenes-ARGOS-141.txt`).
+
+**ARGOS 141 publicado el 26-oct** (ventana 25-oct 07:45 → 26-oct 08:37, 24 h 52 min; rama `claude/argos-141-nacional-kh5fj6`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-142.md`** (y `_ordenes-ARGOS-142.txt`).
 
 ⚠️ **25-oct: la orden de 140 del 22-oct no se ejecutó** (la sesión se detuvo tras el Bloque 0; no hay edición del 22 al 24). **Orden rehecha el 25-oct** en la rama `claude/argos-140`: ventana larga **21-oct 10:23 → domingo 25-oct**, archivo `argos-2026-10-25.html`, `WINDOW_DAYS = 5`, recall nacional por día.
 
@@ -2466,3 +2468,43 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 6. **Dominios nuevos confirmados**: `comunicacion.fiscaliaveracruz.gob.mx`, `portal.fgeo.gob.mx` (no `fiscaliaoaxaca.gob.mx`), `fiscaliageneralqro.gob.mx` (no `fgeqro`), `seguridad.slp.gob.mx`, `fgebc.gob.mx`, `fiscalia.chihuahua.gob.mx`, listados de la FGR en `fgr.org.mx`. **Sin páginas**: `fge.sinaloa.gob.mx`, `fiscalia.tamaulipas.gob.mx`, `fiscalia.coahuila.gob.mx`, `fiscalia.zacatecas.gob.mx`, `fgjez.zacatecas.gob.mx`, `fiscalia.campeche.gob.mx`, `fiscalia.tabasco.gob.mx`, `tabasco.gob.mx/ssp`, `fiscalia.guanajuato.gob.mx`, `ssc.cdmx.gob.mx` (solo 2024-2025).
 7. **Presupuesto de 140**: 2 + 150 + 16 + 30 = **198**; segunda ronda sin búsquedas.
 
+## ARGOS 141 — lo que cierra esta edición
+
+| Pendiente | Disposición |
+|---|---|
+| **Sonora, «abaten a presunto jefe»** | «El Meny», Arizpe, sábado 24; quién inició no determinado → 🟡, visto de 140 (no recuperable) |
+| **Coicoyán de las Flores** | Hecho de **2025** (Diario de Yucatán 2025/09/01): descartado |
+| **Boletín federal 23, 24 y 25-oct** | Existe como **agregado** (republicadores); día de cada acción no fijado; 26-oct sin indexar |
+| **Purísima (`-002`), Mazatlán C4i (`-003`), Escuinapa (`-009`), Villa Bonita (`-004`)** | Sin detenidos; C4i: «supervisor del Subcentro de Comando, SSPE confirma», por titular |
+| **Xalapa (`-020`)** | Prisión preventiva por homicidio doloso calificado (Hora Cero 2026/10/24); vinculación pendiente |
+| **Álamo/Papantla (`-017`)** | Reparto por titular (La Nigua): 1 muerto en Álamo, 2 heridos en Papantla |
+| **Cosoleacaque (`-018`)** | «2 muertos y mujer herida» (Milenio) es probablemente de febrero: no se atribuye |
+| **Cocotitlán (`REC-002`)** | «Emboscan a policías», por titular (El Universal) |
+| **Ensenada, General Cepeda** | Sentencias del 16 y 19-oct, anteriores a la ventana; sin boletín: se archivan como candidatas no integrables |
+
+## Abiertos que ARGOS 142 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️ **Tehuacán (Puebla)** | Agente ministerial de la FGE asesinado y otro herido, **lunes 26 hacia las 9:00-10:00** (cinco resúmenes; Retodiario, Síntesis y Diario Puntual 2026/10/26): **hecho propio de 142** 🔴 + detención 🟢 (1 o 2 detenidos: contradicho) |
+| ⚠️ **FE-001 de 141 (condicionada)** | Horas de Magdalena Contreras (`REC-001`; ¿segundo herido «El Perusi»?), Acultzingo (`REC-002`), Ostuacán (`REC-003`), SLRC (`REC-004`, número de personas). **Zavala (`REC-005`)**: si la autoridad inició (mismo operativo que el campamento), baja a 🟡 y sale de la FE |
+| ⚠️ **Tuxpan** | Día del homicidio del dirigente sindical: si fue el domingo 25 tras las 07:45, omisión de 141 (🟡, registro) |
+| ⚠️ **Tulantepec** | Audiencia de individualización **28-oct 17:00** (por resumen): pena, reparación, boletín de la PGJEH |
+| **No investigados en 141** | Valle de Chalco, México–Puebla, dos muertos (N+, fecha no fijada) · Culiacán, posible segundo cuerpo cerca de la Prepa UAS · Cancún, «Las Palmas: disparan contra dos casas» (¿= `-005`?) · Cosoleacaque, «¡Asesinan al checador!» (Notiver, ¿= `-003`?) · Cutzato (¿nuevo hallazgo o `ARG-125-036`?) · Cancún, tres detenidos ligados por la Fiscalía a cinco hechos (incluido Los Corales, `ARG-130-002`) |
+| **Fichas de 141** | Pénjamo (`-001`) confirmación de la muerte · Zamora (`-002`) · Culiacán (`-004`) denuncia de desaparición · Erongarícuaro (`-006`) desglose citable · Los Tlacos (`-007`) día y vínculo con `ARG-110-REC-001` |
+| **Ecatepec Tulpetlac (`ARG-140-REC-003`)** | Sigue sin fragmento: FE-001 de 140 condicionada |
+| **Fichas de 140 sin avance** | Huimanguillo (identificación) · León (4 o 5 cuerpos) · Reynosa (Fiscalía) · Juchitán, Iztapalapa (vinculación) · Puebla/CDMX (desglose) · Los Ranas (boletín) · Chimalhuacán, Jiutepec, Ozumba (no revisados) |
+| **Seguimientos** | Exfiscal `ARG-136-006` (impugnación, solo por resumen) |
+| **Sentencias candidatas** | FGR Saltillo/Ramos Arizpe y Veracruz/Pánuco (posibles homónimos) · Guadalajara (no localizado) · Culiacán · Caborca |
+| **Heredados sin avance** | Nogales · Ajuchitlán (séptimo campesino) · Apatzingán · El Tívoli · Coquimatlán · Linares (edad 47/55) · Tepic · Patamban (decisión del destinatario) · Taxco (vinculación) · Cachanillas · Tecuala (`CANTIDAD NO DETERMINADA`) · Río Bravo (FE condicionada) |
+| **Cobertura con prioridad sobre el ciclo en 142** | **Sentencias `NO REVISADA` (9)**: BCS, Chih, Dgo · Pue, Qro, Tlax, Hgo · Chis, Yuc; **dominio sin páginas (6)**: Son, Coah, Col, Nay, Mich, Camp. **Armamento `NO REVISADA` (19)**: BC, BCS, Son, Sin · NL, Coah · Jal, Col, Nay, Ags, Gto · Edomex, Tlax · Ver · Oax, Gro, Camp, Yuc, QRoo. **Alto impacto solo amplia (9)**: Chih, Dgo · Coah, SLP · Ags · Edomex, Tlax, Hgo, Qro. Después, **CICLO C** (Occidente + Sureste: 142 = C) |
+
+## Deuda de método (ARGOS 141)
+
+1. **Cierre frente al «Procede»**: la ventana cerró a las 08:37 (Bloque 0) y la ola corrió ~8 h después; Tehuacán (lunes 9:00-10:00) ya estaba indexado y hubo que retirarlo. La orden de 142 pide avisar si el «Procede» llega más de dos horas tarde.
+2. **Convergencia de resúmenes como criterio de ventana**: aplicado a Tehuacán y Tuxpan como en `ARG-140-REC-003`. Escribirlo en `CLAUDE.md` si el destinatario lo aprueba.
+3. **Conclusiones**: contar contra el índice **y** contra los deslindes de la propia edición (Pénjamo).
+4. **Agregado federal de fin de semana**: sin día por acción; solo entra la acción con nota propia fechada.
+5. **Dominios nuevos confirmados** y **sin páginas**: ver `argos-2026-10-26-fuentes.md` §8 y la plantilla de 142.
+6. **Presupuesto de 141**: 2 + 16 + 150 + 28 (+ R2) ≤ 200.
+7. **`tools/validar.js` sigue sin validar el móvil** (la cubre la validación interna de `gen-movil.py`).

@@ -61,9 +61,9 @@ reciente al más antiguo · ningún rojo propio fijado en la ventana.
   Guerrero · Iguala y Copalillo · PUB. 25-OCT; DÍA NO FIJADO | Detención de 3 integrantes de «Los Tlacos» por extorsión | 🟢 Verde | Gabinete de Seguridad (por republicadores) | ninguna | ★★★☆☆ | ARG-141-007
   Ciudad de México · La Magdalena Contreras (col. Cuauhtémoc, Cruz Blanca y Cruz Verde) · VENTANA ARGOS 140 — HORA SOLO POR RESUMEN | Disparos en fiesta patronal: 2 muertos y 1 herido | 🔴 Rojo (en su ventana) | SSC CDMX (solo por resumen) | La Jornada · El Universal · Milenio · El Gráfico | ★★★☆☆ | ARG-141-REC-001
   Veracruz · Acultzingo (vía férrea, km 288+450, Cumbres de Acultzingo–Nogales) · VENTANA ARGOS 140 — DÍA Y HORA SOLO POR RESUMEN | Dos custodios ferroviarios asesinados en un asalto a tren | 🔴 Rojo (en su ventana) | SIN BOLETÍN | La Silla Rota | ★★★☆☆ | ARG-141-REC-002
-  Chiapas · Ostuacán · VENTANA ARGOS 140 — FECHAS DE HALLAZGO SOLO POR RESUMEN | Doble feminicidio: una mujer y su nieta de 12 años | 🔴 Rojo (en su ventana) | Fiscalía de Chiapas (por titular) | La Jornada · Latinus · La Razón · Reforma · Milenio · N+ | ★★★☆☆ | ARG-141-REC-003
   Sonora · San Luis Río Colorado (zona desértica al sur de la ciudad) · VENTANA ARGOS 140 — DÍA DEL HALLAZGO SOLO POR RESUMEN | Tres fosas con restos humanos | 🔴 Rojo (en su ventana) | SIN BOLETÍN | Milenio | ★★★☆☆ | ARG-141-REC-004
   Sinaloa · Concordia (inmediaciones del poblado Zavala) · VENTANA ARGOS 140 — DÍA SOLO POR RESUMEN | Agresión a personal de seguridad: 5 detenidos | 🔴 Rojo (en su ventana) | SSP Sinaloa (solo por resumen) | Milenio | ★★★☆☆ | ARG-141-REC-005
+  Chiapas · Ostuacán · VENTANA ARGOS 140 — FECHAS DE HALLAZGO SOLO POR RESUMEN | Doble feminicidio: una mujer y su nieta de 12 años | 🔴 Rojo (en su ventana) | Fiscalía de Chiapas (por titular) | La Jornada · Latinus · La Razón · Reforma · Milenio · N+ | ★★★☆☆ | ARG-141-REC-003
 
 ## TOTALES DEL CORTE — CÁLCULO PROPIO DE ARGOS
 
@@ -74,9 +74,10 @@ NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
 
 Armamento: 1 evento contabilizado (ARG-141-ARM-001: detenidos por slug, desglose solo por
 resumen; n/d = no publicado en fuente citable, no ausencia) y 1 evento cualitativo sin cantidad
-(ARG-141-007) · los totales incluyen 1 muerto no confirmado por autoridad (ARG-141-001) ·
-marcas: 4 FRONTERA DE VENTANA — HORA NO FIJADA y 3 PUBLICADO EL DÍA DE APERTURA SIN HORA · en
-las recuperaciones, 6 muertos y 1 heridos, fuera de todo total. Cálculo propio.
+en el corte (ARG-141-007); otro de la ventana anterior (ARG-141-REC-005), fuera de total · los
+totales incluyen 1 muerto no confirmado por autoridad (ARG-141-001) · marcas: 4 FRONTERA DE
+VENTANA — HORA NO FIJADA y 3 PUBLICADO EL DÍA DE APERTURA SIN HORA · en las recuperaciones, 6
+muertos y 1 herido, fuera de todo total. Cálculo propio.
 Seguimientos de ediciones previas, fuera del semáforo: ARG-136-006 (exfiscal): vinculación
 federal por traición a la patria, por titular (Tribuna 2026/10/25), ya reportada en ARGOS 140;
 impugnación anunciada por la defensa, SOLO POR RESUMEN; «Pelea… para salir de El Altiplano» (El
@@ -275,7 +276,9 @@ con fecha en la ruta: Código QRO (2026/10/25) · Argonmexico (2026/10/26) · He
 Consulta: 2026-10-26, última búsqueda 17:02 · Estatus: Parcialmente corroborado · Conteo de
 armamento: sin fila — evento cualitativo, cantidad no determinada
 Deslindes y reservas: «Los Tlacos» en el índice: ARG-110-REC-001 (San Miguel Totolapan, agosto):
-otro hecho. Grupo Animal reproduce el boletín: una fuente.
+otro hecho; detención de seis presuntos integrantes por extorsión en Chilpancingo (12-ago,
+archivo de fuentes de ARGOS 96) y video atribuido al grupo (ARGOS 117): antecedentes, no fichas.
+Grupo Animal reproduce el boletín: una fuente.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-26 · Hora: 08:37 (CDMX) · Corte: Matutino · ARGOS N.° 141 · USO INSTITUCIONAL
@@ -415,8 +418,8 @@ Hora: noche (solo por resumen) · Consulta: 2026-10-26, última búsqueda 17:02 
 Parcialmente corroborado · Ventana de origen: ARGOS 140 — DÍA SOLO POR RESUMEN — fuera de todos
 los totales
 Deslindes y reservas: Zavala no figura en las cinco ediciones previas ni en el índice; Concordia
-en ARGOS 137 (ARG-126-004 y otros) es otro hecho. Los heridos son agresores, solo por resumen:
-fuera de todo recuento.
+en el índice: ARG-111-ARM-002, ARG-124-003 y ARG-126-004: otros hechos. Los heridos son
+agresores, solo por resumen: fuera de todo recuento.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-26 · Hora: 08:37 (CDMX) · Corte: Matutino · ARGOS N.° 141 · USO INSTITUCIONAL
@@ -524,14 +527,14 @@ identificado · FGR Guadalajara, 3 años, no localizado. NO SE INTEGRAN.
 
 ── VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL
 
-1. Sin rojo propio fijado en la ventana: el nivel lo fijan cinco rojos de la ventana de ARGOS
-140 recuperados en esta edición (ver panorama), fuera de los totales.
+1. Sin rojo propio fijado en la ventana: riesgo nacional del corte sin incremento acreditado por
+hechos propios.
 2. Violencia operativa: homicidios únicos y una agresión con amenaza; dos víctimas vinculadas a
-instituciones de justicia o seguridad.
+instituciones de justicia o seguridad, una con la calidad contradicha.
 3. Respuesta institucional: dos detenciones con armamento sin desglose citable; ninguna
 sentencia integrable.
-4. Riesgo de arrastre: un ataque mortal a un agente ministerial del lunes por la mañana,
-posterior al cierre, pasa a ARGOS 142.
+4. Ventana de ARGOS 140: cinco rojos recuperados (ARG-141-REC-001 a -005) —homicidios múltiples,
+fosas y una agresión a personal de seguridad—, fuera de los totales.
 5. 7 DE 7 HECHOS SIN HORA FIJADA Y VENTANA DE 24 H 52 MIN: TOTALES NO COMPARABLES CON ARGOS 140
 SIN NORMALIZAR POR HORA.
 
@@ -541,14 +544,15 @@ SIN NORMALIZAR POR HORA.
 ARG-138-013, homicidio de la calle Marfil del 21-oct (AM 2026/10/22; ventana de ARGOS 140, sin
 ficha) y ARG-141-001; dos en la col. Lázaro Cárdenas. Línea: solicitar a la FGE Guanajuato el
 cotejo balístico de los cuatro — hipótesis.
-2. TRANSPORTE: CUATRO TRABAJADORES DEL SECTOR ASESINADOS EN SIETE DÍAS, SEGÚN EL ÍNDICE (cálculo
-propio): ARG-137-014 (camionero), ARG-139-009 (conductor), ARG-140-012 (operador) y ARG-141-003
-(checador). Línea: solicitar a las fiscalías si las víctimas denunciaron extorsión o cobro de
-piso — vínculo no acreditado.
+2. TRANSPORTE: TRES TRABAJADORES DEL SECTOR ASESINADOS EN SIETE DÍAS, SEGÚN EL ÍNDICE (cálculo
+propio): ARG-137-014 (camionero), ARG-140-012 (operador) y ARG-141-003 (checador). Línea:
+solicitar a las fiscalías si las víctimas denunciaron extorsión o cobro de piso — vínculo no
+acreditado.
 3. PERSONAL O EXPERSONAL DE INSTITUCIONES DE SEGURIDAD Y JUSTICIA COMO BLANCO: CUATRO HECHOS EN
-TRES DÍAS (cálculo propio): ARG-140-002, ARG-140-003, ARG-141-004 y ARG-141-005. Línea:
-solicitar a las fiscalías de Sinaloa y Quintana Roo si las víctimas tenían amenazas previas, y
-vigilar al personal en activo de las mismas áreas.
+TRES DÍAS (cálculo propio): ARG-140-002, ARG-140-003, ARG-141-004 y ARG-141-005. Calidad
+contradicha en ARG-140-003 y ARG-141-005. Línea: solicitar a las fiscalías de Guanajuato,
+Sinaloa y Quintana Roo si las víctimas tenían amenazas previas, y vigilar al personal en activo
+de las mismas áreas.
 4. ZAMORA–JACONA: TERCER ATAQUE ARMADO DEL ÍNDICE EN OCTUBRE (cálculo propio): ARG-129-REC-001
 (bar), ARG-130-001 (base de Bomberos y policías) y ARG-141-002. Línea: solicitar a la FGE
 Michoacán si los tres comparten armas o agresores — hipótesis.
