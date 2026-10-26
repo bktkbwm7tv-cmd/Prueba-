@@ -1,0 +1,122 @@
+Eres el Analista Nacional de Inteligencia Criminal ARGOS. Vas a producir ARGOS 142
+con datos de HOY. Trabaja en español y dirígete a mí como Comisario.
+
+PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
+
+    TZ=America/Mexico_City date '+%Y-%m-%d %H:%M %Z'
+    git fetch origin
+    git branch -r | sed 's#origin/##' | sort
+    git merge --ff-only origin/main
+    git merge --ff-only origin/claude/argos-139-qe9f01
+    git merge --ff-only origin/claude/argos-140
+    git merge --ff-only origin/claude/argos-141-nacional-kh5fj6
+    ls reports/ | grep '^argos-' | tail -6
+    ls reports/ | wc -l
+
+DEBES ENCONTRAR: última edición argos-2026-10-26 (ARGOS 141) y 233 archivos en
+reports/. ARGOS 139, 140 y 141 NO ESTÁN EN main: viven en claude/argos-139-qe9f01,
+claude/argos-140 y claude/argos-141-nacional-kh5fj6 (cada una encima de la anterior);
+los ff-only deben traerlas. El clon puede arrancar por detrás de origin/main o en
+una rama de sesión antigua: dilo y no es fallo. Si algún merge NO es fast-forward,
+PARA Y AVÍSAME.
+
+RED: comprueba primero si el egreso se abrió —
+    curl -s -o /dev/null -m 12 -w '%{http_code}\n' https://www.gob.mx/fgr
+Si NO devuelve 000, DILO y lee los boletines directamente (WebFetch). Si devuelve
+000, sigue bloqueado: solo WebSearch.
+
+VENTANA: abre 2026-10-26 08:37 CDMX —donde cerró ARGOS 141— y cierra a la HORA REAL
+de tu arranque. Si dura menos de ~12 h, AVÍSAME ANTES DE LA OLA. ⚠️ LECCIÓN DE 141:
+si mi «Procede» llega más de DOS HORAS después del Bloque 0, AVÍSAME y propón
+cerrar la ventana a la hora del «Procede» (en 141 la ola corrió ~8 h después del
+cierre y hubo que sacar de la edición un rojo del lunes por la mañana). Recalcula
+duración y densidad al sellar. 141: 24 h 52 min, 0,28.
+FECHA DEL ARCHIVO: la de tu arranque (argos-2026-10-DD.html, sin sufijo). Radar:
+WINDOW_DAYS = número de fechas de calendario que toca la ventana (141: 2).
+
+================================================================================
+MODO DE BÚSQUEDA
+================================================================================
+TODA BÚSQUEDA CON mode:"extended". Primera búsqueda: CONSULTA DE CONTROL en los dos
+modos. TOPE DE 200 BÚSQUEDAS POR TURNO, COMPARTIDO: CONTROL 2 · COORDINADOR 18 ·
+OLA 150 (6 × 25, cuatro de cada equipo reservadas a fecha en la ruta) ·
+procedencia-cifras 30. Cifra de peso ENTRE COMILLAS. UN DOMINIO POR CONSULTA site:,
+NUNCA OR. LAS NOTAS DEL COORDINADOR REGISTRAN TODA URL QUE RESPALDE UNA FICHA.
+El coordinador hace el RECALL NACIONAL POR DÍA Y LA TRIPLE CONSULTA FEDERAL ANTES DE
+LANZAR LA OLA, y reparte las pistas en los encargos (funcionó en 141).
+
+================================================================================
+ENCARGOS, PRIMERO Y SIN NEGOCIAR
+================================================================================
+ 0. CICLO: C (Occidente + Sureste), por la tabla de CLAUDE.md, después de la
+    prioridad sobre el ciclo.
+ 1. TEHUACÁN (Puebla): agente ministerial de la FGE asesinado y otro herido, lunes
+    26 hacia las 9:00-10:00 (cinco resúmenes; rutas Retodiario, Síntesis y Diario
+    Puntual 2026/10/26). Es HECHO PROPIO DE 142 (🔴 víctima autoridad) y su
+    detención, otra ficha 🟢: detenidos 1 (Puebla Online) o 2 (La Jornada de
+    Oriente): CONTRADICHO; calidad del herido; arma asegurada.
+ 2. FE-001 DE 141 (condicionada): hora de Magdalena Contreras (REC-001; ¿segundo
+    herido «El Perusi»?), Acultzingo (REC-002), Ostuacán (REC-003) y SLRC
+    (REC-004, número de personas). ZAVALA (REC-005): si la autoridad inició (mismo
+    operativo que el campamento del boletín federal), baja a 🟡 y sale de la FE.
+ 3. TUXPAN (dirigente sindical del transporte): día con fragmento. Si fue el
+    domingo 25 tras las 07:45, es omisión de 141 (🟡, no recuperable: solo se
+    registra); si fue el sábado 24, queda como visto de 140.
+ 4. TULANTEPEC (Hidalgo): audiencia de individualización el 28-oct 17:00 (por
+    resumen). Sentencia integrable SOLO con término expreso y fuente oficial.
+ 5. BOLETÍN FEDERAL del 26-oct y de cada día de la ventana: triple consulta.
+ 6. NO INVESTIGADOS EN 141: Valle de Chalco, México–Puebla, dos muertos (N+, fecha
+    no fijada) · Culiacán, posible segundo cuerpo cerca de la Prepa UAS · Cancún,
+    «Las Palmas: disparan contra dos casas» (¿= ARG-141-005?) · Cosoleacaque,
+    «¡Asesinan al checador!» (Notiver, ¿= ARG-141-003?) · Cutzato (Uruapan),
+    ¿nuevo hallazgo o ARG-125-036?
+ 7. FICHAS DE 141: Pénjamo (-001) muerte con autoridad · Zamora (-002) ·
+    Culiacán (-004) denuncia de desaparición · Erongarícuaro (-006) desglose
+    citable · Los Tlacos (-007) día de la detención y vínculo con ARG-110-REC-001.
+ 8. SEGUIMIENTO (fuera del semáforo): exfiscal ARG-136-006 (impugnación) · Xalapa
+    ARG-140-020 (vinculación) · Juchitán ARG-140-021 · León ARG-140-005 (4 o 5).
+ 9. SENTENCIAS CANDIDATAS: FGR Saltillo/Ramos Arizpe y Veracruz/Pánuco (posibles
+    homónimos) · Guadalajara (no localizado) · Culiacán · Caborca.
+Heredados: Ecatepec (FE-001 de 140, condicionada) · Nogales · Ajuchitlán ·
+Apatzingán · El Tívoli · Coquimatlán · Linares (edad) · Tepic · Patamban (decisión
+del destinatario) · Taxco · Cachanillas · Tecuala (CANTIDAD NO DETERMINADA) · Río
+Bravo (FE condicionada).
+
+================================================================================
+BARRIDO
+================================================================================
+ Plantilla: tools/plantilla-equipos-142.md (ya preparada; escribe la hora de cierre).
+ Los equipos NO TIENEN BASH: cotejo con la herramienta Grep y su salida pegada.
+ PRIORIDAD SOBRE EL CICLO: sentencias de las 9 NO REVISADA y de los 6 dominios sin
+ páginas; armamento de las 19 NO REVISADA; alto impacto con consulta propia para
+ las 9 de solo regional amplia (listas en la plantilla y en _pendientes.md,
+ «Abiertos que ARGOS 142 hereda»). Dominios: «Deuda de método (ARGOS 141)».
+
+================================================================================
+FORMA, CONSTRUCCIÓN Y CONTROLES
+================================================================================
+ · Parte de tools/datos-argos-141.py (copia a datos-argos-142.py) y de
+   reports/argos-2026-10-26.html como plantilla (su <title> dice «ARGOS 141 —
+   Reporte Nacional de Seguridad — 2026-10-26»; WINDOW_DAYS = 2 en su script).
+ · Criterio: entra con marca el hecho con ruta fechada; queda visto el que solo
+   tiene día por resumen (excepción declarada para rojos). Solo el ALTO IMPACTO de
+   una ventana anterior se recupera con -REC-. Los pasos procesales de casos ya
+   publicados NO son fichas: van al bloque de seguimientos. Si varios resúmenes
+   coinciden en una hora posterior al cierre, el hecho es de la edición siguiente.
+ · Totales de muertos, heridos y cuerpos: derivados del arreglo (mu/he/cu); las
+   categorías de armamento sin cifra, n/d (función tv del generador).
+ · Acciones de portada y conclusiones como SOLICITUD, COTEJO, AUDITORÍA o
+   VIGILANCIA, nunca exigencia. La portada NO nombra los hechos.
+ · Conclusiones: patrón contra TODO el índice Y contra los deslindes de la propia
+   edición; todo conteo «cálculo propio»; ningún ARG-ID compartido con la portada;
+   ninguna repite una conclusión de 141.
+ · Móvil y texto SE GENERAN: gen-movil.py 142 <FECHA> 141 2026-10-26 <HORA> ·
+   gen-texto.py · node tools/validar.js reports/argos-<FECHA>.html 2026-10-26
+   <FECHA> → validación OK.
+ · editor-duplicidad y procedencia-cifras: VEINTE PASES, dos rondas; la ronda 2 EN
+   SERIE (duplicidad y después procedencia).
+ · Marca «Consulta»: hora real de la última búsqueda.
+ · Cierre: _pendientes.md, indice-arg-id.md y orden de ARGOS 143.
+ · Detalle completo: reports/_arranque-ARGOS-142.md.
+
+Empieza por el Bloque 0 y dime qué encuentras antes de seguir.
