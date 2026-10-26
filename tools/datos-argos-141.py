@@ -5,7 +5,7 @@ Ventana: 25-oct 07:45 → 26-oct 08:37 CDMX. Archivo: argos-2026-10-26.html."""
 import sys, re, json, html as H
 
 NUM, FECHA, HORA = "141", "2026-10-26", "08:37"
-CONSULTA = "2026-10-26 16:30-16:58"
+CONSULTA = "2026-10-26, última búsqueda 17:02"
 DUR = "24 h 52 min"
 ESTR = {"★★★☆☆": "🟡 Medio", "★★☆☆☆": "🟠 Bajo", "★★★★☆": "🟢 Alto"}
 FLAG = {"rojo": ("alto", "ROJO"), "amarillo": ("medio", "AMARILLO"), "verde": ("bajo", "VERDE"), "rec": ("sindato", "RECUPERACIÓN")}
@@ -21,26 +21,16 @@ PT = " <span class=\"muted-note\">(por titular)</span>"
 # mu = muertos por agresión, he = heridos, cu = cuerpos hallados sin causa de muerte informada
 # (cálculo propio derivado del arreglo, nunca escrito a mano)
 E = [
- # ======================= ROJOS
- dict(id="ARG-141-001", estado="MX-PUE", region="Centro", color="rojo", impacto="mediano", fecha="2026-10-26", hora="no fijada", mu=1, he=1, cu=0, hk=1,
-  ent="Puebla", mun="Tehuacán (col. Tepeyac, junta auxiliar San Nicolás Tetitzintla)", dia="26-OCT POR RESUMEN; HORA NO FIJADA",
-  fecha_txt="2026-10-26 — DÍA SOLO POR RESUMEN",
-  title="PUEBLA · TEHUACÁN — ASESINAN A UN AGENTE MINISTERIAL DE LA FISCALÍA Y HIEREN A OTRO",
-  hecho="Tehuacán · <code>COL. TEPEYAC, JUNTA AUXILIAR SAN NICOLÁS TETITZINTLA, AV. JUÁREZ NORTE Y 36 ORIENTE, SOLO POR RESUMEN</code> · lunes 26-OCT, " + RES + "; <code>NINGUNA RUTA CON DÍA</code> · " + FR + " (excepción declarada para rojos) · <b>1 agente ministerial de la FGE Puebla muerto</b>, por titulares (Quadratín Puebla, Milenio, e-consulta) (🔴 víctima autoridad) · <b>1 agente herido</b>, por titular (Ambas Manos) · adscrito a Robo de Vehículos, por titular (Quadratín Puebla) · 10 a 12 disparos, " + RES + " · «durante operativo», por titular (Milenio); «lo siguieron dos hombres», " + RES + ": <code>CIRCUNSTANCIA CONTRADICHA</code>; la víctima es autoridad: el color no depende de quién inició · la FGE no publicó comunicado · detención en la misma ventana: ficha propia, ARG-141-002 · identidades: no se reproducen",
-  panel="<b>Agente ministerial asesinado</b> y otro herido", inst="Seguridad Pública de Tehuacán" + PR, nac="Milenio", conf="★★☆☆☆",
-  campo="día solo por resumen; ninguna ruta con fecha; hora no fijada", I=1, N=1, R=6, A=0,
-  fechadas=[], estatus="Pendiente de corroboración", arm=None,
-  desl="Tehuacán en el índice: ARG-132-REC-001 (San Marcos Necoxtla, 12-oct): otro hecho. Hora no fijada frente al cierre de las 08:37: si fue posterior, el hecho es de ARGOS 142 y se retira por fe de erratas. Puebla Online lleva el año en la ruta, no el día."),
  # ======================= AMARILLOS
- dict(id="ARG-141-003", estado="MX-GUA", region="Occidente", color="amarillo", impacto="pequeno", fecha="2026-10-25", hora="~22:30 (solo por resumen)", mu=1, he=2, cu=0, hk=22.5,
+ dict(id="ARG-141-001", estado="MX-GUA", region="Occidente", color="amarillo", impacto="pequeno", fecha="2026-10-25", hora="~22:30 (solo por resumen)", mu=1, he=2, cu=0, hk=22.5,
   ent="Guanajuato", mun="Pénjamo (col. Lázaro Cárdenas, calle Joaquín Pardavé)", dia="25-OCT, ~22:30 POR RESUMEN",
   title="GUANAJUATO · PÉNJAMO — ATACAN A TRES JÓVENES AFUERA DE UN DOMICILIO: UN MUERTO Y DOS HERIDOS",
   hecho="Pénjamo · <code>COL. LÁZARO CÁRDENAS, CALLE JOAQUÍN PARDAVÉ, SOLO POR RESUMEN</code> · noche del domingo 25-OCT (~22:30), " + RES + "; publicado el lunes 26, por ruta (AM 2026/10/26) · " + FR + " · <b>1 muerto</b> y <b>2 heridos graves</b>, por <i>slug</i> (AM, «un-muerto-y-dos-graves») (🟡 homicidio doloso único) · el muerto falleció en el hospital; heridos de 18 y 19 años, " + RES + " · tres lesionados y muerte extraoficial, por titular de Telediario: <code>MUERTE NO CONFIRMADA POR AUTORIDAD</code> · agresores en motocicleta, " + RES + " · <b>ningún detenido publicado</b>",
-  panel="Ataque a tres jóvenes: <b>1 muerto</b> y 2 heridos", inst=SB, nac="Milenio", conf="★★★☆☆",
-  campo="hora solo por resumen; muerte sin confirmación oficial; ninguna fuente institucional", I=0, N=1, R=2, A=0,
+  panel="Ataque a tres jóvenes: <b>1 muerto</b> y 2 heridos", inst=SB, nac=NIN, conf="★★★☆☆",
+  campo="hora solo por resumen; muerte sin confirmación oficial; ninguna fuente institucional", I=0, N=0, R=2, A=0,
   fechadas=["AM (2026/10/26)"], estatus="Parcialmente corroborado", arm=None,
-  desl="Lázaro Cárdenas (Pénjamo) no figura en las cinco ediciones previas. Pénjamo en el índice: ARG-133-REC-001 (col. San Miguel, 14-oct) y ARG-138-013 (zona centro, 19-oct): otros hechos. Homicidio en la calle Marfil de la misma colonia (AM 2026/10/22): ventana anterior, otro hecho."),
- dict(id="ARG-141-004", estado="MX-MIC", region="Occidente", color="amarillo", impacto="pequeno", fecha="2026-10-25", hora="poco antes de las 20:00 (solo por resumen)", mu=1, he=1, cu=0, hk=19.9,
+  desl="Lázaro Cárdenas (Pénjamo) no figura en las cinco ediciones previas. Pénjamo en el índice: ARG-133-REC-001 (col. San Miguel, 14-oct) y ARG-138-013 (zona centro, 19-oct): otros hechos. Homicidio en la calle Marfil de la misma colonia (AM 2026/10/22): ventana anterior, otro hecho, 🟡 no recuperable. Ataque a jóvenes en la «zona centro» (Milenio, sin fecha en la ruta): colonia distinta, <code>POSIBLE HECHO DISTINTO</code>, no se cuenta como fuente."),
+ dict(id="ARG-141-002", estado="MX-MIC", region="Occidente", color="amarillo", impacto="pequeno", fecha="2026-10-25", hora="poco antes de las 20:00 (solo por resumen)", mu=1, he=1, cu=0, hk=19.9,
   ent="Michoacán", mun="Zamora (col. La Medallita, calle Purépero)", dia="25-OCT, ~20:00 POR RESUMEN",
   title="MICHOACÁN · ZAMORA — AGRESIÓN ARMADA EN LA MEDALLITA: UN MUERTO Y UNA MUJER HERIDA",
   hecho="Zamora · <code>COL. LA MEDALLITA, CALLE PURÉPERO, SOLO POR RESUMEN</code> · domingo 25-OCT, publicado ese día, por ruta (Medianews 2026/10/25) · " + AP + " · poco antes de las 20:00, " + RES + " · <b>1 hombre muerto</b> y <b>1 mujer herida</b>, por <i>slug</i> (Medianews; Grupo Marmor) (🟡 homicidio doloso único) · edades contradichas entre medios · la Fiscalía de Michoacán procesó la escena, " + RES + " · <b>ningún detenido publicado</b> · identidades: no se reproducen",
@@ -48,50 +38,32 @@ E = [
   campo="hora solo por resumen; ninguna fuente institucional", I=0, N=0, R=5, A=0,
   fechadas=["Medianews (2026/10/25)", "Grupo Marmor (2026/10/26)"], estatus="Parcialmente corroborado", arm=None,
   desl="La Medallita y Zamora no figuran en las cinco ediciones previas. Zamora en el índice: ARG-129-REC-001 (bar El Nuevo Quijote): otro hecho. Contramuro, IMN México y Respuesta publican el mismo texto: una fuente con Medianews."),
- dict(id="ARG-141-005", estado="MX-VER", region="Golfo", color="amarillo", impacto="mediano", fecha="2026-10-25", hora="noche (día contradicho, solo por resumen)", mu=1, he=0, cu=0, hk=21,
-  ent="Veracruz", mun="Tuxpan (restaurante Wings Army, carretera a la Barra Norte, col. La Calzada)", dia="PUB. 25-OCT; DÍA CONTRADICHO",
-  fecha_txt="publicado el 2026-10-25 — DÍA DEL HECHO CONTRADICHO (SÁBADO 24 O DOMINGO 25, NOCHE)",
-  title="VERACRUZ · TUXPAN — ASESINAN A BALAZOS A UN DIRIGENTE SINDICAL DEL TRANSPORTE DENTRO DE UN RESTAURANTE",
-  hecho="Tuxpan · <code>RESTAURANTE WINGS ARMY, CARRETERA A LA BARRA NORTE, COL. LA CALZADA, SOLO POR RESUMEN</code> · publicado el domingo 25-OCT, por ruta (La Razón, La Silla Rota, Latinus, Hoy Xalapa y Sociedad Noticias 2026/10/25) · " + AP + " · noche del sábado 24 o del domingo 25, " + RES + ": <code>DÍA CONTRADICHO — SI FUE EL SÁBADO, ES DE LA VENTANA DE ARGOS 140</code> · <b>1 muerto</b>: <b>dirigente sindical</b>, por titulares (Infobae; La Silla Rota); «líder transportista», por <i>slug</i> (La Razón; Latinus) (🟡 homicidio doloso único: no consta calidad de servidor público ni de persona defensora) · un hombre le disparó a corta distancia en su mesa, " + RES + " · había denunciado amenazas, por <i>slug</i> (Luces del Siglo 2026/10/26) · sindicato contradicho entre medios · la FGE abrió carpeta, " + RES + " · <b>ningún detenido publicado</b> · identidad: no se reproduce",
-  panel="<b>Dirigente sindical del transporte</b> asesinado: 1 muerto", inst=SB, nac="La Razón · La Silla Rota · Latinus · Infobae", conf="★★★☆☆",
-  campo="día del hecho contradicho; ninguna fuente institucional", I=0, N=4, R=7, A=0,
-  fechadas=["La Razón (2026/10/25)", "La Silla Rota (2026/10/25)", "Latinus (2026/10/25)", "Hoy Xalapa (2026/10/25)", "Sociedad Noticias (2026/10/25)", "Infobae (2026/10/26)", "Luces del Siglo (2026/10/26)", "Gráfico al Día (2026/10/26)"], estatus="Parcialmente corroborado", arm=None,
-  desl="Wings Army, Barra Norte y La Calzada no figuran en las cinco ediciones previas. Tuxpan en el índice: ARG-102-REC-005 (armas) y ARG-105-REC-003 (Sabanillas): otros hechos."),
- dict(id="ARG-141-006", estado="MX-VER", region="Golfo", color="amarillo", impacto="pequeno", fecha="2026-10-25", hora="noche, ~23:15 (solo por resumen)", mu=1, he=0, cu=0, hk=23.2,
+ dict(id="ARG-141-003", estado="MX-VER", region="Golfo", color="amarillo", impacto="pequeno", fecha="2026-10-25", hora="noche, ~23:15 (solo por resumen)", mu=1, he=0, cu=0, hk=23.2,
   ent="Veracruz", mun="Cosoleacaque (barrio Primero, calle Miguel Hidalgo, junto a la Transístmica)", dia="25-OCT, NOCHE POR RESUMEN",
   title="VERACRUZ · COSOLEACAQUE — ASESINAN A BALAZOS A UN CHECADOR DE AUTOBUSES",
-  hecho="Cosoleacaque · <code>BARRIO PRIMERO, CALLE MIGUEL HIDALGO, JUNTO A LA CARRETERA TRANSÍSTMICA, SOLO POR RESUMEN</code> · noche del domingo 25-OCT, reporte poco antes de las 23:15, " + RES + "; publicado el lunes 26, por ruta (El Diario de Minatitlán y Municipio Sur 2026/10/26) · " + FR + " · <b>1 muerto</b>: <b>checador de autobuses</b>, por <i>slug</i> (El Diario de Minatitlán) (🟡 homicidio doloso único) · hombre de 33 años con tres heridas de bala, " + RES + " · cuerpo con presuntas heridas de bala, por titular (N+) · <b>ningún detenido publicado</b> · identidad: una sola fuente, no se reproduce",
-  panel="<b>Checador de autobuses</b> asesinado: 1 muerto", inst=SB, nac="N+", conf="★★★☆☆",
-  campo="hora solo por resumen; ninguna fuente institucional", I=0, N=1, R=3, A=0,
+  hecho="Cosoleacaque · <code>BARRIO PRIMERO, CALLE MIGUEL HIDALGO, JUNTO A LA CARRETERA TRANSÍSTMICA, SOLO POR RESUMEN</code> · noche del domingo 25-OCT, reporte poco antes de las 23:15, " + RES + "; publicado el lunes 26, por ruta (El Diario de Minatitlán y Municipio Sur 2026/10/26) · " + FR + " · <b>1 muerto</b>: <b>checador de autobuses</b>, por <i>slug</i> (El Diario de Minatitlán) (🟡 homicidio doloso único) · hombre de 33 años con tres heridas de bala, " + RES + " · hombre sin vida con presuntas heridas de bala, por titular (La Opinión) · un segundo lesionado no localizado, " + RES + ": <code>NO SE INTEGRA</code> · <b>ningún detenido publicado</b> · identidad: una sola fuente, no se reproduce",
+  panel="<b>Checador de autobuses</b> asesinado: 1 muerto", inst=SB, nac=NIN, conf="★★★☆☆",
+  campo="hora solo por resumen; ninguna fuente institucional", I=0, N=0, R=3, A=0,
   fechadas=["El Diario de Minatitlán (2026/10/26)", "Municipio Sur (2026/10/26)"], estatus="Parcialmente corroborado", arm=None,
-  desl="NO es ARG-140-018 (camino a Temex, 23-oct, dos muertos): otro lugar y otro día. Barrio Primero no figura en las cinco ediciones previas. ARG-105-REC-004 (Nuevo Teapa–Cosoleacaque): otro hecho."),
- dict(id="ARG-141-007", estado="MX-SIN", region="Noroeste", color="amarillo", impacto="mediano", fecha="2026-10-25", hora="~18:45 el hallazgo (solo por resumen)", mu=1, he=0, cu=0, hk=18.75,
+  desl="«¡Asesinan al checador!» (Notiver, sin fecha): posible el mismo, no cotejado. NO es ARG-140-018 (camino a Temex, 23-oct, dos muertos): otro lugar y otro día. Barrio Primero no figura en las cinco ediciones previas. ARG-105-REC-004 (Nuevo Teapa–Cosoleacaque): otro hecho."),
+ dict(id="ARG-141-004", estado="MX-SIN", region="Noroeste", color="amarillo", impacto="mediano", fecha="2026-10-25", hora="~18:45 el hallazgo (solo por resumen)", mu=1, he=0, cu=0, hk=18.75,
   ent="Sinaloa", mun="Culiacán (col. Morelos; hallado junto a Ciudad Universitaria, Malecón Nuevo)", dia="25-OCT, POR TITULAR",
   title="SINALOA · CULIACÁN — PRIVAN DE LA LIBERTAD A UN EXEMPLEADO DEL SUPREMO TRIBUNAL Y LO HALLAN EJECUTADO JUNTO A CIUDAD UNIVERSITARIA",
-  hecho="Culiacán · <code>PRIVADO DE LA LIBERTAD EN LA COL. MORELOS; HALLADO A ESPALDAS DE CIUDAD UNIVERSITARIA, BULEVAR FRANCISCO LABASTIDA, SOLO POR RESUMEN</code> · domingo 25-OCT, por titular (Extraoficial, «levantado este domingo») y por ruta (Luz Noticias 2026-10-25) · " + AP + " · hallazgo ~18:45, " + RES + " · <b>1 muerto</b>: <b>exempleado del Supremo Tribunal de Justicia del Estado</b>, por titulares (Luz Noticias; Los Noticieristas) (🟡 homicidio doloso único: exempleado, no servidor público en funciones) · privado de la libertad horas antes, por titular (Diario de Yucatán 2026/10/26) · manos atadas, rostro con cinta e impactos de bala, por titulares («encintado y amarrado», Luz Noticias; «maniatado», Extraoficial) · 38 años, " + RES + " · <b>ningún detenido publicado</b> · identidad: no se reproduce",
+  hecho="Culiacán · <code>PRIVADO DE LA LIBERTAD EN LA COL. MORELOS; HALLADO A ESPALDAS DE CIUDAD UNIVERSITARIA, BULEVAR FRANCISCO LABASTIDA, SOLO POR RESUMEN</code> · domingo 25-OCT, por titular (Extraoficial, «levantado este domingo») y por ruta (Luz Noticias 2026-10-25) · " + AP + " · hallazgo ~18:45, " + RES + " · <b>1 muerto</b>: <b>exempleado del Supremo Tribunal de Justicia del Estado</b>, por titulares (Luz Noticias; Los Noticieristas) (🟡 homicidio doloso único: exempleado, no servidor público en funciones) · privado de la libertad horas antes, por titular (Diario de Yucatán 2026/10/26) · maniatado y ejecutado a balazos, por titular (Extraoficial) · 38 años, " + RES + " · <b>ningún detenido publicado</b> · identidad: no se reproduce",
   panel="<b>Exempleado del Poder Judicial</b> privado de la libertad y ejecutado: 1 muerto", inst=SB, nac=NIN, conf="★★★☆☆",
   campo="hora solo por resumen; ninguna fuente institucional", I=0, N=0, R=6, A=0,
   fechadas=["Luz Noticias (2026-10-25, dos notas)", "Revista Espejo (2026/10/26)", "Diario de Yucatán (2026/10/26)"], estatus="Parcialmente corroborado", arm=None,
-  desl="Los hallazgos «encintado cerca de la Prepa UAS» y «maniatado en el Malecón Nuevo» son este mismo cuerpo, por titular de Extraoficial: una ficha. Ciudad Universitaria y Malecón Nuevo no figuran en las cinco ediciones previas. Cuerpo en una vivienda de la col. Jesús Valdez (Luz Noticias 2026-10-25): visto, sin causa de muerte publicada."),
- dict(id="ARG-141-008", estado="MX-ROO", region="Sureste", color="amarillo", impacto="pequeno", fecha="2026-10-26", hora="madrugada (solo por resumen)", mu=0, he=0, cu=0, hk=3,
+  desl="«Maniatado en el Malecón Nuevo» es este cuerpo, por titular de Extraoficial; «encintado cerca de la Prepa UAS» (Luz Noticias 2026-10-25): <code>UNICIDAD INFERIDA POR LUGAR Y RASGOS — POSIBLE SEGUNDO CUERPO, NO SE INTEGRA HASTA VALIDACIÓN</code>. Ciudad Universitaria y Malecón Nuevo no figuran en las cinco ediciones previas. Cuerpo en una vivienda de la col. Jesús Valdez (Luz Noticias 2026-10-25): visto, sin causa de muerte publicada."),
+ dict(id="ARG-141-005", estado="MX-ROO", region="Sureste", color="amarillo", impacto="pequeno", fecha="2026-10-26", hora="madrugada (solo por resumen)", mu=0, he=0, cu=0, hk=3,
   ent="Quintana Roo", mun="Cancún (SM 243, calle Los Zapotes)", dia="PUB. 26-OCT; MADRUGADA POR RESUMEN",
   title="QUINTANA ROO · CANCÚN — DISPARAN CONTRA LA CASA DE UNA PRESUNTA EXAGENTE DE TRÁNSITO Y DEJAN UNA AMENAZA",
-  hecho="Cancún · <code>SM 243, CALLE LOS ZAPOTES, POR TITULAR (CLIC NOTICIAS; TURQUESA NEWS); «234» EN EL CUERPO DE PORESTO, SOLO POR RESUMEN</code> · madrugada, " + RES + "; publicado el lunes 26, por ruta (PorEsto y Noticaribe 2026/10/26) · " + FR + " · disparos contra la vivienda de una <b>presunta exagente de tránsito municipal</b>, por <i>slug</i> (PorEsto) (🟡 agresión sin lesionados) · «dejan amenaza», por titular (Sol Quintana Roo); contenido no informado · tres disparos y agresores en motocicleta, " + RES + " · <b>sin lesionados</b> · <b>ningún detenido publicado</b> · identidad: no se reproduce",
+  hecho="Cancún · <code>SM 243, CALLE LOS ZAPOTES, POR TITULAR (CLIC NOTICIAS; TURQUESA NEWS); «234» EN EL CUERPO DE PORESTO, SOLO POR RESUMEN</code> · madrugada, " + RES + "; publicado el lunes 26, por ruta (PorEsto y Noticaribe 2026/10/26) · " + FR + " · disparos contra la vivienda de una <b>presunta exagente de tránsito municipal</b>, por <i>slug</i> (PorEsto); «agente» en otro resumen: <code>CALIDAD CONTRADICHA</code> (🟡 agresión sin lesionados) · «dejan amenaza», por titular (Sol Quintana Roo); contenido no informado · tres disparos y agresores en motocicleta, " + RES + " · <b>sin lesionados</b> · <b>ningún detenido publicado</b> · identidad: no se reproduce",
   panel="Disparos y amenaza contra una vivienda: <b>sin lesionados</b>", inst=SB, nac=NIN, conf="★★★☆☆",
   campo="hora solo por resumen; ninguna fuente institucional", I=0, N=0, R=6, A=0,
   fechadas=["PorEsto (2026/10/26)", "Noticaribe (2026/10/26)"], estatus="Parcialmente corroborado", arm=None,
-  desl="SM 243 y Los Zapotes no figuran en las cinco ediciones previas. Cancún en el índice: ARG-130-002 (Los Corales) y ARG-133-007 (Región 201): otros hechos."),
+  desl="«Las Palmas: disparan contra dos casas y dejan advertencia» (Quintana Roo Hoy, sin fecha): posible el mismo hecho, no cotejado. SM 243 y Los Zapotes no figuran en las cinco ediciones previas. Cancún en el índice: ARG-130-002 (Los Corales) y ARG-133-007 (Región 201): otros hechos."),
  # ======================= VERDES
- dict(id="ARG-141-002", estado="MX-PUE", region="Centro", color="verde", impacto="pequeno", fecha="2026-10-26", hora="no fijada", mu=0, he=0, cu=0, hk=0.9,
-  ent="Puebla", mun="Tehuacán", dia="26-OCT POR RESUMEN; HORA NO FIJADA",
-  fecha_txt="2026-10-26 — DÍA SOLO POR RESUMEN",
-  title="PUEBLA · TEHUACÁN — DETIENEN A UN HOMBRE TRAS EL ASESINATO DEL AGENTE MINISTERIAL",
-  hecho="Tehuacán · lunes 26-OCT, " + RES + " · " + FR + " · <b>1 detenido</b>, por titular (Puebla Online, «hay un detenido») (🟢 detención) · una mujer también detenida, por titular (Carlos Martín Huerta); <code>NO CONFIRMADA POR LA FGE</code> · un arma larga resguardada y el anuncio, atribuidos al titular de Seguridad Pública de Tehuacán, " + RES + " · <code>VÍNCULO DEL DETENIDO CON EL HOMICIDIO NO ACREDITADO POR AUTORIDAD</code> · el homicidio, ficha propia: ARG-141-001",
-  panel="Detención tras el homicidio: <b>1 detenido</b>", inst="Seguridad Pública de Tehuacán" + PR, nac=NIN, conf="★★☆☆☆",
-  campo="día solo por resumen; ninguna ruta con fecha; vínculo no acreditado", I=1, N=0, R=2, A=0,
-  fechadas=[], estatus="Pendiente de corroboración", arm=None, cual=True,
-  desl="Delito y detención en la misma ventana: dos fichas. Arma larga sin cifra publicada por autoridad: evento cualitativo, fuera del conteo de armamento."),
- dict(id="ARG-141-009", estado="MX-MIC", region="Occidente", color="verde", impacto="pequeno", fecha="2026-10-26", hora="no fijada", mu=0, he=0, cu=0, hk=2,
+ dict(id="ARG-141-006", estado="MX-MIC", region="Occidente", color="verde", impacto="pequeno", fecha="2026-10-26", hora="no fijada", mu=0, he=0, cu=0, hk=2,
   ent="Michoacán", mun="Erongarícuaro", dia="PUB. 26-OCT; HORA NO FIJADA",
   fecha_txt="publicado el 2026-10-26 — DÍA DEL HECHO NO FIJADO",
   title="MICHOACÁN · ERONGARÍCUARO — EJÉRCITO, GUARDIA NACIONAL Y GUARDIA CIVIL DETIENEN A TRES Y ASEGURAN ARMAS Y DROGA",
@@ -100,6 +72,15 @@ E = [
   campo="desglose de armamento solo por resumen; día no fijado", I=0, N=0, R=2, A=0,
   fechadas=["Medianews (2026/10/26)"], estatus="Parcialmente corroborado", arm="ARG-141-ARM-001",
   desl="Erongarícuaro no figura en las cinco ediciones previas ni en el índice. A Tiempo publica el mismo hecho: corroboración regional."),
+ dict(id="ARG-141-007", estado="MX-GRO", region="Sureste", color="verde", impacto="pequeno", fecha="2026-10-25", hora="no fijada", mu=0, he=0, cu=0, hk=1,
+  ent="Guerrero", mun="Iguala y Copalillo", dia="PUB. 25-OCT; DÍA NO FIJADO",
+  fecha_txt="publicado el 2026-10-25 — DÍA DEL HECHO NO FIJADO (BOLETÍN AGREGADO DEL 23 AL 25-OCT)",
+  title="GUERRERO · IGUALA Y COPALILLO — DETIENEN A TRES INTEGRANTES DE «LOS TLACOS» POR EXTORSIÓN",
+  hecho="Iguala y Copalillo · publicado el domingo 25-OCT, por ruta (Código QRO 2026/10/25) · " + AP + "; día de la detención no fijado: el boletín federal agrega del 23 al 25-OCT; si fue el 23 o el 24, es de la ventana de ARGOS 140 · <b>3 detenidos</b>, integrantes de «Los Tlacos», por extorsión, por <i>slug</i> (Código QRO) (🟢 detención) · órdenes de aprehensión por extorsión agravada; uno señalado como operador regional y financiero, " + RES + " · 4 armas, 1 cargador y 3 cartuchos en Copalillo, " + RES + ": <code>NO SE INTEGRA</code> · boletín del Gabinete de Seguridad, por republicadores: una fuente",
+  panel="Detención de <b>3 integrantes de «Los Tlacos»</b> por extorsión", inst="Gabinete de Seguridad <span class=\"muted-note\">(por republicadores)</span>", nac=NIN, conf="★★★☆☆",
+  campo="día no fijado; cifras de armamento solo por resumen", I=1, N=0, R=2, A=0,
+  fechadas=["Código QRO (2026/10/25)", "Argonmexico (2026/10/26)"], estatus="Parcialmente corroborado", arm=None, cual=True,
+  desl="«Los Tlacos» en el índice: ARG-110-REC-001 (San Miguel Totolapan, agosto): otro hecho. Grupo Animal reproduce el boletín: una fuente."),
 ]
 
 # ---------------------------------------------------------------- RECUPERACIONES (ventana de ARGOS 140; solo alto impacto)
@@ -107,7 +88,7 @@ R = [
  dict(id="ARG-141-REC-001", estado="MX-CMX", region="Centro", fecha="2026-10-25", hora="madrugada (solo por resumen)", orig="ARGOS 140 — HORA SOLO POR RESUMEN", col_orig="rojo", mu=2, he=1, cu=0,
   ent="Ciudad de México", mun="La Magdalena Contreras (col. Cuauhtémoc, Cruz Blanca y Cruz Verde)", dia="25-OCT, MADRUGADA",
   title="CIUDAD DE MÉXICO · MAGDALENA CONTRERAS — DISPARAN EN UNA FIESTA PATRONAL DE SAN JUDAS TADEO: DOS MUERTOS Y UN HERIDO",
-  hecho="<code>VENTANA DE ORIGEN: ARGOS 140 — HORA SOLO POR RESUMEN</code> · La Magdalena Contreras · <code>COL. CUAUHTÉMOC, CRUZ BLANCA Y CRUZ VERDE, SOLO POR RESUMEN</code> · madrugada del domingo 25-OCT, en todos los resúmenes, antes de las 07:45; primera ruta fechada: 25-OCT (La Jornada; El Independiente) · fiesta o baile patronal de San Judas Tadeo, por titulares · <b>2 hombres muertos</b> y <b>1 herido</b>, por titular (La Jornada) (🔴 homicidio múltiple) · «riña» que escaló a disparos, por titular (La Jornada) · herido: hombre de 41 años según la SSC, " + RES + "; una mujer en otros medios: <code>SEXO DEL HERIDO CONTRADICHO</code> · edades de las víctimas contradichas · el agresor huyó; alias en un solo medio · la alcaldía suspendió los festejos, " + RES + " · <b>ningún detenido publicado</b> · identidades: no se reproducen",
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 140 — HORA SOLO POR RESUMEN</code> · La Magdalena Contreras · <code>COL. CUAUHTÉMOC, CRUZ BLANCA Y CRUZ VERDE, SOLO POR RESUMEN</code> · madrugada del domingo 25-OCT, en todos los resúmenes, antes de las 07:45; primera ruta fechada: 25-OCT (La Jornada; El Independiente) · fiesta o baile patronal de San Judas Tadeo, por titulares · <b>2 hombres muertos</b> y <b>al menos 1 herido</b>, por titular (La Jornada); un lesionado «baleado cinco veces», por titular (El Gráfico 2026/10/26): <code>POSIBLE SEGUNDO HERIDO</code> (🔴 homicidio múltiple) · «riña» que escaló a disparos, por titular (La Jornada) · herido: hombre de 41 años según la SSC, " + RES + "; una mujer en otros medios: <code>SEXO DEL HERIDO CONTRADICHO</code> · edades de las víctimas contradichas · el agresor huyó; alias en un solo medio · la alcaldía suspendió los festejos, " + RES + " · <b>ningún detenido publicado</b> · identidades: no se reproducen",
   panel="Disparos en fiesta patronal: <b>2 muertos</b> y 1 herido", inst="SSC CDMX" + PR, nac="La Jornada · El Universal · Milenio · El Gráfico",
   conf="★★★☆☆", campo="hora solo por resumen; sexo del herido contradicho", I=1, N=4, R=4, A=0,
   fechadas=["La Jornada (2026/10/25)", "El Independiente (2026/10/25)", "Cúspide (2026/10/26)", "El Gráfico (2026/10/26)"],
@@ -123,27 +104,27 @@ R = [
  dict(id="ARG-141-REC-003", estado="MX-CHP", region="Sureste", fecha="2026-10-21", hora="no fijada", orig="ARGOS 140 — FECHAS DE HALLAZGO SOLO POR RESUMEN", col_orig="rojo", mu=2, he=0, cu=0,
   ent="Chiapas", mun="Ostuacán", dia="21-23-OCT",
   title="CHIAPAS · OSTUACÁN — DOBLE FEMINICIDIO DE UNA MUJER Y SU NIETA DE 12 AÑOS",
-  hecho="<code>VENTANA DE ORIGEN: ARGOS 140 — FECHAS DE HALLAZGO SOLO POR RESUMEN</code> · Ostuacán · desaparecidas el lunes 19-OCT; la mujer, hallada el miércoles 21, y la niña, el 23, " + RES + " · primera ruta fechada: 24-OCT (La Jornada) · <b>doble feminicidio</b>: <b>una mujer y su nieta de 12 años</b>, por titulares (Latinus; Quinto Poder) (🔴 homicidio múltiple) · «fue por venganza, establece la FGE», por titular (La Jornada 2026/10/25) · dos detenidos informados la tarde del sábado 24, " + RES + " · pobladores <b>lincharon a los dos detenidos: uno murió</b>, por <i>slug</i> (La Jornada 2026/10/24; La Razón 2026/10/26) · incendio de la presidencia municipal: una fuente, <code>NO CONFIRMADO</code> · identidades: no se reproducen",
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 140 — FECHAS DE HALLAZGO SOLO POR RESUMEN</code> · Ostuacán · desaparecidas el lunes 19-OCT; la mujer, hallada el miércoles 21, y la niña, el 23, " + RES + " · primera ruta fechada: 24-OCT (La Jornada) · <b>doble feminicidio</b>: <b>una mujer y su nieta de 12 años</b>, por titulares (Latinus; Quinto Poder) (🔴 homicidio múltiple) · «venganza personal», según el fiscal, por titular (La Jornada 2026/10/26) · dos detenidos informados la tarde del sábado 24, " + RES + " · pobladores <b>lincharon a los dos detenidos: uno murió</b>, por <i>slug</i> (La Jornada 2026/10/24; La Razón 2026/10/26) · incendio de la presidencia municipal: una fuente, <code>NO CONFIRMADO</code> · identidades: no se reproducen",
   panel="<b>Doble feminicidio</b>: una mujer y su nieta de 12 años", inst="Fiscalía de Chiapas" + PT, nac="La Jornada · Latinus · La Razón · Reforma · Milenio · N+",
   conf="★★★☆☆", campo="fechas de hallazgo solo por resumen", I=1, N=6, R=1, A=0,
-  fechadas=["La Jornada (2026/10/24 y 2026/10/25)", "Latinus (2026/10/25)", "Quinto Poder (2026/10/25)", "La Razón (2026/10/26)"],
-  desl="Ostuacán no figura en las cinco ediciones previas ni en el índice. El linchamiento del 24 (un muerto) y las dos detenciones son hechos distintos de la misma ventana; no se recuperan por color (🟡 y 🟢). El liveblog de Infobae del 25 no fecha nada."),
+  fechadas=["La Jornada (2026/10/24 y 2026/10/26)", "Latinus (2026/10/25)", "Quinto Poder (2026/10/25)", "La Razón (2026/10/26)"],
+  desl="Ostuacán no figura en las cinco ediciones previas ni en el índice. El linchamiento del 24 (un detenido muerto) y las dos detenciones son hechos distintos de la misma ventana, 🟡 y 🟢: no se recuperan; el incendio de la presidencia, sin confirmar, no cambia el color. El liveblog de Infobae del 25 no fecha nada."),
  dict(id="ARG-141-REC-004", estado="MX-SON", region="Noroeste", fecha="2026-10-24", hora="no fijada", orig="ARGOS 140 — DÍA DEL HALLAZGO SOLO POR RESUMEN", col_orig="rojo", mu=0, he=0, cu=0,
   ent="Sonora", mun="San Luis Río Colorado (zona desértica al sur de la ciudad)", dia="24-OCT",
   title="SONORA · SAN LUIS RÍO COLORADO — UN COLECTIVO HALLA TRES FOSAS CON RESTOS HUMANOS EN ZONA DESÉRTICA",
-  hecho="<code>VENTANA DE ORIGEN: ARGOS 140 — DÍA DEL HALLAZGO SOLO POR RESUMEN</code> · San Luis Río Colorado · <code>ZONA DESÉRTICA AL SUR DE LA CIUDAD, POR TITULAR</code> · sábado 24-OCT, jornada de búsqueda de un colectivo, " + RES + " · primera ruta fechada: 25-OCT (El Imparcial) · <b>tres fosas con restos humanos</b>, por titular (El Imparcial) (🔴 fosas) · restos de una persona por fosa, según el colectivo, " + RES + ": <code>CIFRA NO CONFIRMADA POR AUTORIDAD</code> · identificación genética pendiente, " + RES + " · sin comunicado de la Fiscalía de Sonora",
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 140 — DÍA DEL HALLAZGO SOLO POR RESUMEN</code> · San Luis Río Colorado · <code>ZONA DESÉRTICA AL SUR DE LA CIUDAD, POR TITULAR</code> · sábado 24-OCT, jornada de búsqueda de un colectivo, " + RES + " · primera ruta fechada: 25-OCT (El Imparcial) · <b>tres fosas con restos humanos</b>, por titular (El Imparcial) (🔴 fosas) · número de personas contradicho entre resúmenes y titulares: <code>NO DETERMINADO — CIFRA NO CONFIRMADA POR AUTORIDAD</code> · identificación genética pendiente, " + RES + " · sin comunicado de la Fiscalía de Sonora",
   panel="<b>Tres fosas</b> con restos humanos", inst=SB, nac="Milenio", conf="★★★☆☆",
   campo="día del hallazgo solo por resumen; ninguna fuente institucional", I=0, N=1, R=3, A=0,
   fechadas=["El Imparcial (2026/10/25)"],
   desl="San Luis Río Colorado no figura en las cinco ediciones previas ni en el índice. Restos sin número de víctimas confirmado por autoridad: fuera de todo recuento."),
- dict(id="ARG-141-REC-005", estado="MX-SIN", region="Noroeste", fecha="2026-10-23", hora="noche (solo por resumen)", orig="ARGOS 140 — DÍA SOLO POR RESUMEN", col_orig="rojo", mu=0, he=3, cu=0,
+ dict(id="ARG-141-REC-005", estado="MX-SIN", region="Noroeste", fecha="2026-10-23", hora="noche (solo por resumen)", orig="ARGOS 140 — DÍA SOLO POR RESUMEN", col_orig="rojo", mu=0, he=0, cu=0,
   ent="Sinaloa", mun="Concordia (inmediaciones del poblado Zavala)", dia="23-OCT, NOCHE",
-  title="SINALOA · CONCORDIA — CIVILES ARMADOS AGREDEN A UN PATRULLAJE CERCA DE ZAVALA: CINCO DETENIDOS",
-  hecho="<code>VENTANA DE ORIGEN: ARGOS 140 — DÍA SOLO POR RESUMEN</code> · Concordia · <code>INMEDIACIONES DEL POBLADO ZAVALA, POR TITULAR</code> · noche del viernes 23-OCT, según la SSP de Sinaloa, " + RES + " · <b>agresión armada contra personal en recorrido</b>, por titulares (Los Noticieristas; Sinaloahoy, «tras agresión armada»); los civiles dispararon al ver a los uniformados, " + RES + " (🔴 ataque contra autoridades: el grupo inició) · Policía Estatal, Grupo de Operaciones Especiales y Ejército, " + RES + " · <b>5 detenidos</b>, por titulares · 3 de ellos heridos, " + RES + " · fusiles AK-47 y equipo táctico, por titular (Sinaloahoy); cifras, " + RES + " · campamento clandestino inhabilitado en Zavala con cinco detenidos, por titular (Noroeste) y en el boletín federal del 23 al 25-oct: <code>MISMO OPERATIVO NO ACREDITADO</code> · armamento fuera de todo total",
-  panel="<b>Agresión a un patrullaje</b>: 5 detenidos, 3 heridos", inst="SSP Sinaloa" + PR, nac="Milenio",
-  conf="★★★☆☆", campo="día y quién inició solo por resumen; relación con el campamento no acreditada", I=1, N=1, R=5, A=0,
+  title="SINALOA · CONCORDIA — CIVILES ARMADOS AGREDEN A PERSONAL DE SEGURIDAD CERCA DE ZAVALA: CINCO DETENIDOS",
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 140 — DÍA SOLO POR RESUMEN</code> · Concordia · <code>INMEDIACIONES DEL POBLADO ZAVALA, POR TITULAR</code> · noche del viernes 23-OCT, según la SSP de Sinaloa, " + RES + " · <b>agresión armada contra personal de seguridad</b>, por titulares (Los Noticieristas; Sinaloahoy, «tras agresión armada») y <i>slug</i> («tras repeler agresión», Sinaloahoy; «emboscan a militares», TV Azteca) (🔴 ataque contra autoridades: el grupo inició); recorrido o patrullaje, " + RES + " · Policía Estatal, Grupo de Operaciones Especiales y Ejército, " + RES + " · <b>5 detenidos</b>, por titulares · 3 de ellos heridos, " + RES + ": <code>NO SE INTEGRA</code> · fusiles AK-47 y equipo táctico, por titular (Sinaloahoy); cifras, " + RES + " · campamento clandestino inhabilitado en Zavala con cinco detenidos, por titular (Noroeste) y en el boletín federal del 23 al 25-oct: <code>PROBABLE MISMO OPERATIVO (MUNICIPIO, LOCALIDAD, CINCO DETENIDOS, CORPORACIONES Y ARMAS LARGAS COINCIDEN) — UNA SOLA FICHA; SI LA AUTORIDAD INICIÓ, BAJA A 🟡</code> · armamento fuera de todo total",
+  panel="<b>Agresión a personal de seguridad</b>: 5 detenidos", inst="SSP Sinaloa" + PR, nac="Milenio",
+  conf="★★★☆☆", campo="día solo por resumen; probable mismo operativo que el campamento", I=1, N=1, R=5, A=0,
   fechadas=["Medios OBSON (2026/10/26)"],
-  desl="Zavala no figura en las cinco ediciones previas ni en el índice; Concordia en ARGOS 139 es otro hecho. Los heridos son agresores: fuera del criterio de color."),
+  desl="Zavala no figura en las cinco ediciones previas ni en el índice; Concordia en ARGOS 137 (ARG-126-004 y otros) es otro hecho. Los heridos son agresores, solo por resumen: fuera de todo recuento."),
 ]
 
 for r in R:
@@ -152,7 +133,7 @@ for r in R:
 # ---------------------------------------------------------------- ARMAMENTO (solo hechos propios)
 # cortas, largas, sincat, especial, cartuchos, cargadores, granadas, aei, explosivos, detenidos
 ARM = [
- dict(id="ARG-141-ARM-001", ficha="ARG-141-009", estado="MX-MIC", region="Occidente", color="verde", ent="Michoacán", mun="Erongarícuaro",
+ dict(id="ARG-141-ARM-001", ficha="ARG-141-006", estado="MX-MIC", region="Occidente", color="verde", ent="Michoacán", mun="Erongarícuaro",
   fecha="2026-10-26", fecha_txt="pub. 26-oct; día no fijado", hora="no fijada", c=[0, 0, 0, 0, 0, 0, 0, 0, 0, 3], nd=[0, 1, 2, 3, 4, 5, 6, 7, 8], integra=True,
   corp="Ejército, Guardia Nacional y Guardia Civil <span class=\"muted-note\">(por <i>slug</i>)</span>", conf="Bajo",
   nota="3 detenidos por slug (Medianews 2026/10/26); 2 fusiles, 29 cargadores y 541 cartuchos solo por resumen: no integrados",
@@ -173,11 +154,11 @@ HORAS = 24 + 52 / 60
 DENS = f"{len(E) / HORAS:.2f}".replace(".", ",")
 ENT_ROJO = sorted(set(e["estado"] for e in E if e["color"] == "rojo"))
 assert TOT == [0, 0, 0, 0, 0, 0, 0, 0, 0, 3], TOT
-assert cnt == {"rojo": 1, "amarillo": 6, "verde": 2}, cnt
+assert cnt == {"rojo": 0, "amarillo": 5, "verde": 2}, cnt
 assert cnt_rec == {"rojo": 5, "amarillo": 0, "verde": 0}, cnt_rec
-assert (MU, HE, CU, MU_REC, HE_REC) == (6, 4, 0, 6, 4), (MU, HE, CU, MU_REC, HE_REC)
-assert (NFR, NAP, len(ENT), len(ENT_ROJO)) == (6, 3, 6, 1), (NFR, NAP, len(ENT), len(ENT_ROJO))
-assert DENS == "0,36", DENS
+assert (MU, HE, CU, MU_REC, HE_REC) == (4, 3, 0, 6, 1), (MU, HE, CU, MU_REC, HE_REC)
+assert (NFR, NAP, len(ENT), len(ENT_ROJO)) == (4, 3, 6, 0), (NFR, NAP, len(ENT), len(ENT_ROJO))
+assert DENS == "0,28", DENS
 assert sorted(e["id"] for e in E) == [f"ARG-141-{i+1:03d}" for i in range(len(E))]
 assert len(set(r["id"] for r in R)) == len(R) and all(r["id"] == f"ARG-141-REC-{i+1:03d}" for i, r in enumerate(R))
 for x in E + R:
@@ -295,11 +276,11 @@ port = f'''<section class="page">
   <div class="alerta contexto">
     <div class="flag">LO QUE DEBE HACER EL MANDO</div>
     <p>
-      <b>1. SOLICITE A LA FISCALÍA DE PUEBLA LA HORA OFICIAL DEL ATAQUE, EL ESTADO DEL AGENTE HERIDO Y LA SITUACIÓN JURÍDICA DEL DETENIDO</b> (ARG-141-001 y -002).
-      <br><b>2. SOLICITE A LA SSC Y A LA FISCALÍA DE LA CIUDAD DE MÉXICO LA HORA DEL ATAQUE Y LA IDENTIDAD Y EL SEXO DE LA PERSONA LESIONADA</b> (ARG-141-REC-001).
-      <br><b>3. COTEJE CON LA SSP DE SINALOA Y EL GABINETE DE SEGURIDAD SI LA AGRESIÓN AL PATRULLAJE Y EL CAMPAMENTO INHABILITADO SON EL MISMO OPERATIVO, Y AUDITE EL DESGLOSE DEL ARMAMENTO</b> (ARG-141-REC-005).
-      <br><b>4. SOLICITE A LA FISCALÍA DE VERACRUZ LA HORA DEL ATAQUE Y VIGILE CON LA CONCESIONARIA Y LA GUARDIA NACIONAL EL TRAMO FERROVIARIO AFECTADO</b> (ARG-141-REC-002).
-      <br><b>5. SOLICITE A LA FISCALÍA DE SONORA LA IDENTIFICACIÓN GENÉTICA DE LOS RESTOS Y COTEJE LOS HALLAZGOS CON LAS FICHAS DE BÚSQUEDA DEL COLECTIVO</b> (ARG-141-REC-004).
+      <b>1. SOLICITE A LA SSC Y A LA FISCALÍA DE LA CIUDAD DE MÉXICO LA HORA DEL ATAQUE, EL NÚMERO DE LESIONADOS Y SU IDENTIDAD</b> (ARG-141-REC-001).
+      <br><b>2. COTEJE CON LA SSP DE SINALOA Y EL GABINETE DE SEGURIDAD SI LA AGRESIÓN Y EL CAMPAMENTO INHABILITADO SON EL MISMO OPERATIVO Y QUIÉN INICIÓ EL FUEGO, Y AUDITE EL DESGLOSE DEL ARMAMENTO</b> (ARG-141-REC-005).
+      <br><b>3. SOLICITE A LA FISCALÍA DE VERACRUZ LA HORA DEL ATAQUE Y VIGILE CON LA CONCESIONARIA Y LA GUARDIA NACIONAL EL TRAMO FERROVIARIO AFECTADO</b> (ARG-141-REC-002).
+      <br><b>4. SOLICITE A LA FISCALÍA DE SONORA EL NÚMERO DE PERSONAS Y LA IDENTIFICACIÓN GENÉTICA DE LOS RESTOS, Y COTÉJELOS CON LAS FICHAS DE BÚSQUEDA DEL COLECTIVO</b> (ARG-141-REC-004).
+      <br><b>5. SOLICITE A LA FISCALÍA DE CHIAPAS LA SITUACIÓN JURÍDICA DEL DETENIDO SOBREVIVIENTE Y VIGILE SU CUSTODIA</b> (ARG-141-REC-003).
     </p>
   </div>
 
@@ -311,7 +292,7 @@ rows_own = "\n".join(prow(e) for e in sorted(E, key=lambda x: (ORD[x["color"]], 
 rows_rec = "\n".join(prow(r, True) for r in R)
 panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
     Ventana <b>25-oct 07:45 → 26-oct 08:37 CDMX</b> (<b>{DUR}</b>) · <b>{len(E)} hechos propios</b> en <b>{len(ENT)} entidades</b> ·
-    <b>densidad {DENS} hechos/hora</b>; duración y densidad, <b>cálculo propio</b> · dentro de cada color, del más reciente al más antiguo.
+    <b>densidad {DENS} hechos/hora</b>; duración y densidad, <b>cálculo propio</b> · dentro de cada color, del más reciente al más antiguo · <b>ningún rojo propio fijado en la ventana</b>.
   </p>
   <div class="table-wrap"><table class="exec">
     <thead><tr><th>Entidad · Municipio</th><th>Hecho</th><th>Nivel de riesgo</th><th>Fuente institucional</th><th>Fuente nacional</th><th>Confianza</th><th>ARG-ID</th></tr></thead>
@@ -330,17 +311,16 @@ panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
     <tbody><tr><td><b>{len(E)}</b></td><td><b>{cnt["rojo"]}</b></td><td><b>{cnt["amarillo"]}</b></td><td><b>{cnt["verde"]}</b></td><td><b>{len(R)}</b></td><td><b>{MU}</b></td><td><b>{HE}</b></td><td><b>{CU}</b></td><td><b>{tv(0)}</b></td><td><b>{tv(1)}</b></td><td><b>{tv(2)}</b></td><td><b>{tv(4, fmt)}</b></td><td><b>{tv(5)}</b></td><td><b>{tv(6)}</b></td><td><b>{tv(7)}</b></td><td><b>{tv(8)}</b></td><td><b>{TOT[9]}</b></td><td><b>{len(ENT)}</b></td></tr></tbody>
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
-    <b>Armamento</b>: un aseguramiento con detenidos por <i>slug</i> (ARG-141-ARM-001), <b>desglose solo por resumen</b>: <code>n/d</code> = no publicado en fuente citable, no ausencia · <b>los totales incluyen 1 muerto no confirmado por autoridad</b> (ARG-141-003) <b>y 1 muerto con el día contradicho</b> (ARG-141-005) · <b>marcas</b>: {NFR} <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> y {NAP} <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code> · en las recuperaciones, <b>{MU_REC} muertos</b> y <b>{HE_REC} heridos</b>, fuera de todo total. <b>Cálculo propio</b>.
-    <br><b>Seguimientos de ediciones previas, fuera del semáforo</b>: <b>ARG-136-006 (exfiscal)</b>: la defensa anuncia que impugnará la vinculación federal, por titular (SDP Noticias; El Diario 2026/oct/26, «Pelea… para salir del Altiplano»); ningún amparo publicado; <code>NINGUNA ES SENTENCIA</code> · <b>ARG-140-020 (Xalapa)</b>: prisión preventiva oficiosa por homicidio doloso calificado, por <i>slug</i> (Golpe Político 2026/10/24); vinculación no publicada · <b>ARG-140-005 (León)</b>: el fiscal habla de 4 cuerpos, por titular (AM 2026/10/23), frente a 5 por <i>slug</i>: <code>CIFRA CONTRADICHA</code> · <b>ARG-140-013 (Linares)</b>: la víctima era el encargado del depósito, por <i>slug</i> (MVS 2026/10/25); edad 47 o 55: <code>CONTRADICHA</code> · <b>ARG-140-017</b>: reparto por titular (La Nigua): 1 muerto en Álamo y 2 heridos en Papantla · <b>ARG-140-018</b>: «2 muertos y mujer herida», por titular (Milenio): herida no contada en 140 · <b>ARG-140-003</b>: «adscrito a la SSP de Sinaloa», por <i>slug</i> (Prensa Mercosur 2026/10/25); ningún detenido · <b>ARG-140-023</b>: nombre y alias del detenido coinciden en El Financiero (2026/10/22) y Expreso (2026/10/23); boletín no leído · <b>ARG-140-REC-002 (Cocotitlán)</b>: «emboscan a policías», por titular (El Universal) · <b>ARG-140-REC-003 (Ecatepec)</b>: sin fragmento que fije el día · <b>ARG-140-021 (Juchitán)</b>: vinculación no publicada.
+    <b>Armamento</b>: 1 evento contabilizado (ARG-141-ARM-001: detenidos por <i>slug</i>, <b>desglose solo por resumen</b>; <code>n/d</code> = no publicado en fuente citable, no ausencia) y 1 evento cualitativo sin cantidad (ARG-141-007) · <b>los totales incluyen 1 muerto no confirmado por autoridad</b> (ARG-141-001) · <b>marcas</b>: {NFR} <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> y {NAP} <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code> · en las recuperaciones, <b>{MU_REC} muertos</b> y <b>{HE_REC} heridos</b>, fuera de todo total. <b>Cálculo propio</b>.
+    <br><b>Seguimientos de ediciones previas, fuera del semáforo</b>: <b>ARG-136-006 (exfiscal)</b>: vinculación federal por traición a la patria, por titular (Tribuna 2026/10/25), ya reportada en ARGOS 140; impugnación anunciada por la defensa, {RES}; «Pelea… para salir de El Altiplano» (El Diario de Chihuahua 2026/oct/26) se refiere al penal; <code>NINGUNA ES SENTENCIA</code> · <b>ARG-140-020 (Xalapa)</b>: prisión preventiva por homicidio doloso calificado, por <i>slug</i> (Hora Cero 2026/10/24); «oficiosa», {RES}; vinculación no publicada · <b>ARG-140-005 (León)</b>: 4 cuerpos por titular (AM 2026/10/23) y 5 por <i>slug</i> (La Silla Rota y otros, 2026/10/21): <code>CIFRA CONTRADICHA</code> · <b>ARG-140-013 (Linares)</b>: la víctima era el encargado del depósito, por <i>slug</i> (MVS 2026/10/25); edad 47 o 55: <code>CONTRADICHA</code> · <b>ARG-140-017</b>: reparto por titular (La Nigua): 1 muerto en Álamo y 2 heridos en Papantla · <b>ARG-140-003</b>: «supervisor del Subcentro de Comando; SSPE confirma muerte de elemento activo del C4i», por titular (Los Noticieristas); ningún detenido · <b>ARG-140-023</b>: nombre y alias del detenido coinciden en El Financiero (2026/10/22) y Expreso (2026/10/23); boletín no leído · <b>ARG-140-REC-002 (Cocotitlán)</b>: «emboscan a policías», por titular (El Universal) · <b>ARG-140-REC-003 (Ecatepec)</b>: sin fragmento que fije el día · <b>ARG-140-021 (Juchitán)</b>: vinculación no publicada.
   </p>
 '''
 
 rec1 = "\n".join(ficha(r, True) for r in R[0:3])
 rec2 = "\n".join(ficha(r, True) for r in R[3:])
 byid = {e["id"]: e for e in E}
-co1 = "\n".join(ficha(byid[i]) for i in ("ARG-141-001", "ARG-141-002", "ARG-141-009"))
-co2 = "\n".join(ficha(byid[i]) for i in ("ARG-141-003", "ARG-141-004", "ARG-141-005"))
-co3 = "\n".join(ficha(byid[i]) for i in ("ARG-141-006", "ARG-141-007", "ARG-141-008"))
+co1 = "\n".join(ficha(byid[i]) for i in ("ARG-141-001", "ARG-141-002", "ARG-141-003", "ARG-141-004"))
+co2 = "\n".join(ficha(byid[i]) for i in ("ARG-141-005", "ARG-141-006", "ARG-141-007"))
 
 ico = re.findall(r'<div class="tile[^"]*"><svg class="ico ico-lg"[^>]*>.*?</svg>', tpl)
 icos = [re.search(r'<svg.*</svg>', x).group(0) for x in ico]
@@ -350,7 +330,7 @@ def tile(i, lbl, num, sub):
 NI = "<code>NO PUBLICADO EN FUENTE CITABLE</code> en el único evento"
 tiles = "\n".join([
  tile(0, "Armas cortas", tv(0), NI),
- tile(1, "Armas largas", tv(1), NI + "; 2 fusiles solo por resumen"),
+ tile(1, "Armas largas", tv(1), NI),
  tile(2, "Sin categoría", tv(2), NI),
  tile(3, "Cartuchos", tv(4, fmt), NI),
  tile(4, "Cargadores", tv(5), NI),
@@ -372,7 +352,7 @@ arm1 = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
   <div class="panel" style="margin-top:8px;">
     <div class="panel-title"><span>MAPA DE ASEGURAMIENTOS — SEMÁFORO ARGOS</span><span>GIS POR ENTIDAD</span></div>
     <div class="map-box" id="argos-map-arm"></div>
-    <div class="map-caption">Un aseguramiento integrable: Michoacán.</div>
+    <div class="map-caption">Un aseguramiento contabilizado: Michoacán.</div>
   </div>
 '''
 
@@ -397,7 +377,8 @@ arm2 = f'''  <div class="table-wrap"><table class="exec wide">
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
     <b>Lectura regional</b>: Occidente, 1 evento (3 detenidos; armamento sin desglose citable); el resto de regiones, sin evento integrable. <b>Cálculo propio</b>.
-    <br><code>VISTOS, NO INTEGRADOS — BOLETÍN FEDERAL AGREGADO DEL 23, 24 Y 25-OCT, DÍA DE CADA ACCIÓN NO FIJADO, CIFRAS SOLO POR RESUMEN, NO HEREDABLES</code>: Zacatecas (Tlaltenango y Villanueva), Veracruz (Tlalixcoyan), Sinaloa (Guardia Nacional), Guerrero (Copalillo), Sonora, Colima y Tabasco; cifras en el archivo de equipos · <b>Sinaloa, Concordia</b>: armamento de ARG-141-REC-005, fuera de todo total · <b>Sonora, Arizpe</b>: aseguramiento del sábado 24 (ventana de ARGOS 140), 🟢/🟡, no recuperable.
+    <br><b>Eventos cualitativos sin cantidad</b>: Guerrero, Copalillo (ARG-141-007), armas sin cifra citable · Sinaloa, Concordia (ARG-141-REC-005), fusiles AK-47 sin cifra citable, fuera de todo total.
+    <br><code>VISTOS, NO INTEGRADOS — BOLETÍN FEDERAL AGREGADO DEL 23, 24 Y 25-OCT, DÍA DE CADA ACCIÓN NO FIJADO, CIFRAS SOLO POR RESUMEN, NO HEREDABLES</code>: Zacatecas (Tlaltenango y Villanueva), Veracruz (Tlalixcoyan), Sinaloa (Guardia Nacional), Sonora, Colima, Tabasco, Baja California (Mexicali), Ciudad de México (Gustavo A. Madero), Jalisco y Tamaulipas: sin desglose citable; cifras en el archivo de equipos · <b>Sonora, Arizpe</b>: presunto mando abatido, 4 detenidos y armas largas y cortas, sábado 24 (ventana de ARGOS 140); quién inició no determinado (🟡): no recuperable · <b>Puebla, Tehuacán</b>: detención y arma larga del lunes 26 por la mañana, posterior al cierre: ARGOS 142.
   </p>
 '''
 
@@ -443,10 +424,10 @@ sent = f'''  <div class="conteo">
 cierre = f'''  <div class="alerta contexto">
     <div class="flag">VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL</div>
     <p>
-      <b>1.</b> <b>Nivel de riesgo fijado por un solo rojo</b>: ataque mortal contra personal de procuración de justicia (ARG-141-001), con día solo por resumen y hora no fijada.
-      <br><b>2.</b> <b>Violencia operativa</b>: seis hechos en cinco entidades; cinco homicidios únicos y una agresión sin lesionados; en uno, el día está contradicho (ARG-141-005).
-      <br><b>3.</b> <b>Respuesta institucional</b>: dos acciones con detenidos; ninguna sentencia integrable.
-      <br><b>4.</b> <b>Ventana de ARGOS 140</b>: cinco rojos recuperados (ARG-141-REC-001 a -005), fuera de los totales.
+      <b>1.</b> <b>Sin rojo propio fijado en la ventana</b>: el nivel lo fijan cinco rojos de la ventana de ARGOS 140 recuperados en esta edición (ver panorama), fuera de los totales.
+      <br><b>2.</b> <b>Violencia operativa</b>: homicidios únicos y una agresión con amenaza; dos víctimas vinculadas a instituciones de justicia o seguridad.
+      <br><b>3.</b> <b>Respuesta institucional</b>: dos detenciones con armamento sin desglose citable; ninguna sentencia integrable.
+      <br><b>4.</b> <b>Riesgo de arrastre</b>: un ataque mortal a un agente ministerial del lunes por la mañana, posterior al cierre, pasa a ARGOS 142.
       <br><b>5.</b> <code>{NFR + NAP} DE {len(E)} HECHOS SIN HORA FIJADA Y VENTANA DE {DUR.upper()}: TOTALES NO COMPARABLES CON ARGOS 140 SIN NORMALIZAR POR HORA.</code>
     </p>
   </div>
@@ -454,11 +435,11 @@ cierre = f'''  <div class="alerta contexto">
   <div class="alerta contexto" style="margin-top:8px;">
     <div class="flag">CONCLUSIONES DE INTELIGENCIA CRIMINAL</div>
     <p>
-      <b>1. TRANSPORTE: TRES TRABAJADORES DEL SECTOR ASESINADOS EN UNOS DOS DÍAS, SEGÚN EL ÍNDICE</b> (cálculo propio): ARG-140-012 (operador, Estado de México), ARG-141-005 (dirigente sindical, Veracruz) y ARG-141-006 (checador, Veracruz). Línea: <b>solicitar a las fiscalías de Veracruz y del Estado de México si las víctimas denunciaron extorsión o cobro de piso</b> — vínculo no acreditado.
-      <br><b>2. PÉNJAMO: TERCER ATAQUE ARMADO CON VÍCTIMAS EN DOCE DÍAS, SEGÚN EL ÍNDICE</b> (cálculo propio): ARG-133-REC-001, ARG-138-013 y ARG-141-003. Línea: <b>solicitar a la FGE Guanajuato el cotejo balístico de los tres hechos</b> — hipótesis.
-      <br><b>3. CULIACÁN: PRIVACIÓN DE LA LIBERTAD SEGUIDA DE EJECUCIÓN Y EXHIBICIÓN DEL CUERPO ATADO EN VÍA PÚBLICA</b> (ARG-141-007). Línea: <b>solicitar a la FGE Sinaloa si hubo denuncia de desaparición y las cámaras del trayecto</b>.
-      <br><b>4. CHIAPAS: UN DETENIDO MUERTO A MANOS DE POBLADORES TRAS UN DOBLE FEMINICIDIO</b> (ARG-141-REC-003, ventana anterior). Línea: <b>vigilar la custodia de detenidos en sedes municipales ante casos de alto impacto local</b>.
-      <br><b>5. CANCÚN: TERCER HECHO DEL ÍNDICE DESDE EL 11-OCT Y PRIMERO CON MENSAJE INTIMIDATORIO</b> (cálculo propio): ARG-130-002, ARG-133-007 y ARG-141-008. Línea: <b>solicitar a la FGE Quintana Roo el contenido del mensaje y las medidas de protección</b>.
+      <b>1. PÉNJAMO: CUARTO ATAQUE ARMADO CON VÍCTIMAS EN DOCE DÍAS</b> (cálculo propio): ARG-133-REC-001, ARG-138-013, homicidio de la calle Marfil del 21-oct (AM 2026/10/22; ventana de ARGOS 140, sin ficha) y ARG-141-001; dos en la col. Lázaro Cárdenas. Línea: <b>solicitar a la FGE Guanajuato el cotejo balístico de los cuatro</b> — hipótesis.
+      <br><b>2. TRANSPORTE: CUATRO TRABAJADORES DEL SECTOR ASESINADOS EN SIETE DÍAS, SEGÚN EL ÍNDICE</b> (cálculo propio): ARG-137-014 (camionero), ARG-139-009 (conductor), ARG-140-012 (operador) y ARG-141-003 (checador). Línea: <b>solicitar a las fiscalías si las víctimas denunciaron extorsión o cobro de piso</b> — vínculo no acreditado.
+      <br><b>3. PERSONAL O EXPERSONAL DE INSTITUCIONES DE SEGURIDAD Y JUSTICIA COMO BLANCO: CUATRO HECHOS EN TRES DÍAS</b> (cálculo propio): ARG-140-002, ARG-140-003, ARG-141-004 y ARG-141-005. Línea: <b>solicitar a las fiscalías de Sinaloa y Quintana Roo si las víctimas tenían amenazas previas, y vigilar al personal en activo de las mismas áreas</b>.
+      <br><b>4. ZAMORA–JACONA: TERCER ATAQUE ARMADO DEL ÍNDICE EN OCTUBRE</b> (cálculo propio): ARG-129-REC-001 (bar), ARG-130-001 (base de Bomberos y policías) y ARG-141-002. Línea: <b>solicitar a la FGE Michoacán si los tres comparten armas o agresores</b> — hipótesis.
+      <br><b>5. «LOS TLACOS»: DETENCIÓN POR EXTORSIÓN DE UN GRUPO YA ASOCIADO A UNA INCURSIÓN CON SEIS MUERTOS</b> (ARG-110-REC-001 y ARG-141-007). Línea: <b>solicitar a la FGR y a la FGE Guerrero si los detenidos se vinculan con esa incursión y con la red de cobro</b> — vínculo no acreditado.
     </p>
   </div>
 
@@ -471,11 +452,10 @@ cierre = f'''  <div class="alerta contexto">
 
 body = (port
  + page("PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD", panorama_body)
- + page("CRIMEN ORGANIZADO (I) — ATAQUE A PERSONAL DE PROCURACIÓN Y ACCIONES INSTITUCIONALES: PUEBLA Y MICHOACÁN", co1)
- + page("CRIMEN ORGANIZADO (II) — VIOLENCIA OPERATIVA: GUANAJUATO, MICHOACÁN Y VERACRUZ", co2)
- + page("CRIMEN ORGANIZADO (III) — VIOLENCIA OPERATIVA: VERACRUZ, SINALOA Y QUINTANA ROO", co3)
- + page("CRIMEN ORGANIZADO (IV) — VENTANA ANTERIOR: ARGOS 140 (I)", rec1)
- + page("CRIMEN ORGANIZADO (V) — VENTANA ANTERIOR: ARGOS 140 (II)", rec2)
+ + page("CRIMEN ORGANIZADO (I) — VIOLENCIA OPERATIVA: GUANAJUATO, MICHOACÁN, VERACRUZ Y SINALOA", co1)
+ + page("CRIMEN ORGANIZADO (II) — VIOLENCIA OPERATIVA Y ACCIONES INSTITUCIONALES: QUINTANA ROO, MICHOACÁN Y GUERRERO", co2)
+ + page("CRIMEN ORGANIZADO (III) — VENTANA ANTERIOR: ARGOS 140 (I)", rec1)
+ + page("CRIMEN ORGANIZADO (IV) — VENTANA ANTERIOR: ARGOS 140 (II)", rec2)
  + page("CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS", arm1)
  + page("ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD", arm2)
  + page("RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES", sent)
