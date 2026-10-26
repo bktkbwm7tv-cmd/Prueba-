@@ -3,7 +3,7 @@
 Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 
 ## Ventana
-- ABRE: **domingo 25-oct-2026 07:45 CDMX** (donde cerró ARGOS 140). CIERRA: **hora real de arranque de la sesión de ARGOS 141** (el coordinador la escribe aquí al copiar la plantilla: ____).
+- ABRE: **domingo 25-oct-2026 07:45 CDMX** (donde cerró ARGOS 140). CIERRA: **hora real de arranque de la sesión de ARGOS 141** = **lunes 26-oct-2026 08:37 CDMX** (24 h 52 min).
 - Calendario: miércoles 21 · jueves 22 · viernes 23 · sábado 24 · **domingo 25 · lunes 26 · martes 27**. Comprueba siempre el día de la semana que dice la fuente contra este calendario.
 - **ARGOS 140 (ventana 21-oct 10:23 → 25-oct 07:45) ya publicó 23 hechos** —Iztapalapa (-001, -019), Purísima del Rincón (-002), Mazatlán San Fernando (-003), Culiacán Villa Bonita (-004), León cinco cuerpos (-005), Huimanguillo fosa y cabeza (-006, -007), Reynosa Puerta Sur (-008), Escuinapa camión (-009), Jiutepec (-010), Chimalhuacán (-011), Ozumba (-012), Linares La Petaca (-013), Irapuato La Lupita (-014), Valle de Santiago (-015), Indaparapeo (-016), Álamo/Papantla (-017), Cosoleacaque (-018), Xalapa detención (-020), Juchitán 7 detenidos (-021), Puebla/CDMX 36 armas (-022), Culiacán Los Ranas (-023)— y recuperó Ario de Rosales, Cocotitlán y Ecatepec Tulpetlac (-REC-001 a -003). Un hecho del 21 al 25 (antes de las 07:45) que 140 NO publicó es de la ventana de 140: candidato `-REC-` **solo si es de alto impacto (🔴)**; si es 🟡 o 🟢, va a «VISTOS».
 - **Núcleo del corte**: hechos del **domingo 25 (tras las 07:45)** en adelante. Publicación del 25 sin hora fijada → `PUBLICADO EL DÍA DE APERTURA SIN HORA`; publicación del día de cierre sin hora → `FRONTERA DE VENTANA — HORA NO FIJADA`.
