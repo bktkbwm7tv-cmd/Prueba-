@@ -58,7 +58,7 @@ Informes íntegros de los seis equipos, notas del coordinador y controles: `repo
 
 ## 7. Fe de erratas (no va al cartelón)
 
-- **`ARG-141-FE-001` — ARGOS 140**: las recuperaciones `ARG-141-REC-001` a `-005` son rojos de su ventana que 140 no publicó. Efecto sobre ARGOS 140 (cálculo propio): **rojos de 8 a 13; muertos por agresión de 15 a 21** (+2 Magdalena Contreras, +2 Acultzingo, +2 Ostuacán); **heridos de 8 a 9** (+1 Magdalena Contreras, mínimo); San Luis Río Colorado (restos sin número) y Zavala (agresores heridos, solo por resumen) no mueven cifras. **Condicionada**: el día o la hora de todas las recuperaciones son solo por resumen; Zavala, además, por el posible inicio estatal.
+- **`ARG-141-FE-001` — ARGOS 140**: las recuperaciones `ARG-141-REC-001` a `-005` son rojos de su ventana que 140 no publicó. Efecto sobre ARGOS 140 (cálculo propio): **rojos de 8 a 13; muertos por agresión de 15 a 21** (+2 Magdalena Contreras, +2 Acultzingo, +2 Ostuacán); **heridos de 8 a 9** (+1 Magdalena Contreras, mínimo); los 2 muertos de Ostuacán se cuentan como **muertos por agresión** (feminicidio con presuntos responsables detenidos), no como cuerpos hallados; San Luis Río Colorado (restos sin número) y Zavala (agresores heridos, solo por resumen) no mueven cifras. **Condicionada**: el día o la hora de todas las recuperaciones son solo por resumen; Zavala, además, por el posible inicio estatal.
 - **`ARG-140-FE-001` (a ARGOS 139)**: sigue condicionada (Ecatepec sin fragmento).
 - **Cosoleacaque (`ARG-140-018`)**: «2 muertos y mujer herida» (Milenio, sin fecha) no se atribuye: probable caso de febrero de 2026 (La Silla Rota 2026/2/24; Golpe Político 2026/02/25).
 - Condicionada, sin cambio: Río Bravo (129).
@@ -77,7 +77,7 @@ El recuento I/N/R/A de cada ficha está en `tools/datos-argos-141.py`; las URL, 
 - Recuperaciones: 6 muertos (2 + 2 + 2) y 1 herido (REC-001), fuera de todo total.
 - Armamento: 1 evento contabilizado (ARM-001: 3 detenidos; demás categorías `n/d`) y 1 cualitativo (-007).
 - Entidades: 6 (Gto, Mich, Ver, Sin, QRoo, Gro). Densidad: 7 / 24,87 = 0,28. Marcas: 4 FRONTERA, 3 APERTURA.
-- Conclusiones: Pénjamo, cuatro hechos del 14 al 25-oct (12 días contando ambos extremos) · transporte, cuatro del 19 al 25-oct (7 días) · instituciones, cuatro del 24 al 26-oct · Zamora–Jacona, tres en octubre (2, 11 y 25-oct, fechas del índice).
+- Conclusiones: Pénjamo, cuatro hechos del 14 al 25-oct (12 días contando ambos extremos) · transporte, tres del 19 al 25-oct (7 días: ARG-137-014, ARG-140-012, ARG-141-003) · instituciones, cuatro del 24 al 26-oct (3 días) · Zamora–Jacona, tres en octubre (2, 11 y 25-oct, fechas del índice).
 
 ## 11. Los dos controles editoriales
 
@@ -85,7 +85,7 @@ El recuento I/N/R/A de cada ficha está en `tools/datos-argos-141.py`; las URL, 
 **No aplicado, con motivo**: «Jalisco, consulta propia parcial» se mantiene como propia (Tlaquepaque); recuento de N+ en Tuxpan: la ficha salió.
 
 **Ronda 2** (en serie): `editor-duplicidad` R2 — CORREGIR (9 hallazgos; 0 duplicidades; aritmética, ARG-ID y renumeración limpios). Aplicados: Conclusión 2 a **tres** trabajadores (ARG-139-009 es «conductor» sin ocupación publicada: fuera); Valoración 4 sin el hecho de 142 (ahora: recuperaciones); Valoración 1 sin remisión; Valoración 2 y Conclusión 3 con la calidad contradicha y la fiscalía de Guanajuato; deslinde de Concordia con los ARG-ID del índice; razón de Zavala 🔴 frente a Arizpe 🟡 (§6); nota de eventos cualitativos armonizada; «1 herido»; antecedentes de Los Tlacos (ARGOS 96 y 117); recuperaciones del panorama ordenadas por fecha; índice y pendientes al cierre. **Decisiones escritas**: (a) las tarjetas de armamento y sentencias en `n/d` y cero se mantienen por la regla de iconografía («la ausencia es dato»); (b) la marca «Consulta» es la hora real de la última búsqueda (17:02) y el pie lleva la hora del corte (08:37): son campos distintos, como manda CLAUDE.md.
-`procedencia-cifras` R2: ver el archivo de equipos.
+`procedencia-cifras` R2 (0 de 2 búsquedas) — CORREGIR (9 hallazgos; aritmética y totales sin descuadre; ninguna cifra de Tehuacán ni de Tuxpan en totales). Aplicados todos: §10 a tres trabajadores; recuentos de emisores sin réplicas (Zamora R 2; Los Tlacos R 1); marca de heredado en la Conclusión 5 y nota de ARG-ID no reverificados; Conclusión 1 con el día de Marfil por resumen y dos reservas; hora de Tehuacán «solo por resumen» en los vistos; Ostuacán con el periodo 19-23-oct y criterio de conteo en FE-001; «sin lesionados» de Cancún por resumen y «coyote de tránsito» por *slug*; municipios de Los Tlacos por resumen; REC-001 «al menos 1 herido»; institucional 0 en REC-001 y REC-005 (autoridad solo por resumen). **Presupuesto final**: 2 + 16 + 150 + 28 + 0 = **196 de 200**. **Edición sellada.**
 
 ## 12. Herramientas
 

@@ -2486,7 +2486,7 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 
 | Pendiente | Qué buscar |
 |---|---|
-| ⚠️ **Tehuacán (Puebla)** | Agente ministerial de la FGE asesinado y otro herido, **lunes 26 hacia las 9:00-10:00** (cinco resúmenes; Retodiario, Síntesis y Diario Puntual 2026/10/26): **hecho propio de 142** 🔴 + detención 🟢 (1 o 2 detenidos: contradicho) |
+| ⚠️ **Tehuacán (Puebla)** | Agente ministerial de la FGE asesinado y otro herido, **lunes 26 hacia las 9:00-10:00** (cinco resúmenes; Retodiario, Síntesis y Diario Puntual 2026/10/26): **hecho propio de 142** 🔴 + detención 🟢 (1 o 2 detenidos: contradicho). La hora es solo por resumen: si un ancla horaria lo sitúa antes de las 08:37 del 26, se publica como `-REC-` de 141 y se emite fe de erratas (frontera de ventana, punto 3) |
 | ⚠️ **FE-001 de 141 (condicionada)** | Horas de Magdalena Contreras (`REC-001`; ¿segundo herido «El Perusi»?), Acultzingo (`REC-002`), Ostuacán (`REC-003`), SLRC (`REC-004`, número de personas). **Zavala (`REC-005`)**: si la autoridad inició (mismo operativo que el campamento), baja a 🟡 y sale de la FE |
 | ⚠️ **Tuxpan** | Día del homicidio del dirigente sindical: si fue el domingo 25 tras las 07:45, omisión de 141 (🟡, registro) |
 | ⚠️ **Tulantepec** | Audiencia de individualización **28-oct 17:00** (por resumen): pena, reparación, boletín de la PGJEH |
@@ -2506,5 +2506,5 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 3. **Conclusiones**: contar contra el índice **y** contra los deslindes de la propia edición (Pénjamo).
 4. **Agregado federal de fin de semana**: sin día por acción; solo entra la acción con nota propia fechada.
 5. **Dominios nuevos confirmados** y **sin páginas**: ver `argos-2026-10-26-fuentes.md` §8 y la plantilla de 142.
-6. **Presupuesto de 141**: 2 + 16 + 150 + 28 (+ R2) ≤ 200.
+6. **Presupuesto de 141**: 2 + 16 + 150 + 28 + 0 = 196 de 200.
 7. **`tools/validar.js` sigue sin validar el móvil** (la cubre la validación interna de `gen-movil.py`).
