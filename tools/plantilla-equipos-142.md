@@ -3,7 +3,7 @@
 Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 
 ## Ventana
-- ABRE: **lunes 26-oct-2026 08:37 CDMX** (donde cerró ARGOS 141). CIERRA: **hora real de arranque de la sesión de ARGOS 142** (el coordinador la escribe aquí al copiar la plantilla: ____).
+- ABRE: **lunes 26-oct-2026 08:37 CDMX** (donde cerró ARGOS 141). CIERRA: **hora real de arranque de la sesión de ARGOS 142** (**martes 27-oct-2026 08:45 CDMX**; duración 24 h 08 min).
 - Calendario: viernes 23 · sábado 24 · domingo 25 · **lunes 26 · martes 27 · miércoles 28 · jueves 29**. Comprueba siempre el día de la semana que dice la fuente contra este calendario.
 - **ARGOS 141 (ventana 25-oct 07:45 → 26-oct 08:37) ya publicó 7 hechos** —Pénjamo (-001), Zamora La Medallita (-002), Cosoleacaque checador (-003), Culiacán exempleado del STJE (-004), Cancún SM 243 (-005), Erongarícuaro (-006), Los Tlacos Iguala/Copalillo (-007)— y recuperó de la ventana de 140 Magdalena Contreras, Acultzingo, Ostuacán, San Luis Río Colorado y Zavala/Concordia (-REC-001 a -005). **Tehuacán (agente ministerial asesinado el lunes 26 hacia las 9:00-10:00, por resumen) NO se publicó: es hecho propio de ARGOS 142.** Un hecho del 25 (tras las 07:45) o del 26 antes de las 08:37 que 141 NO publicó es de la ventana de 141: candidato `-REC-` **solo si es de alto impacto (🔴)**; si es 🟡 o 🟢, va a «VISTOS».
 - **Núcleo del corte**: hechos del **lunes 26 (tras las 08:37)** en adelante. Publicación del 26 sin hora fijada → `PUBLICADO EL DÍA DE APERTURA SIN HORA`; publicación del día de cierre sin hora → `FRONTERA DE VENTANA — HORA NO FIJADA`.
@@ -14,7 +14,7 @@ Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 ## Red y herramientas
 - Egreso bloqueado (curl gob.mx → 000). **NO uses WebFetch.** Solo WebSearch.
 - **TODA búsqueda con mode:"extended".** Nunca "standard".
-- Respeta tu tope de búsquedas; declara al final `Búsquedas utilizadas: n de N`. Si te sobran, invierte en hechos de alto impacto del domingo 25 y del día de cierre.
+- Respeta tu tope de búsquedas; declara al final `Búsquedas utilizadas: n de N`. Si te sobran, invierte en hechos de alto impacto del lunes 26 antes de las 08:37 (solo 🔴, candidatos `-REC-`) y del martes 27 hasta las 08:45.
 - Pon la cifra de peso ENTRE COMILLAS en la consulta cuando busques una cifra concreta ("tres muertos", "21 años").
 
 ## Barrido obligatorio por equipo (además de los encargos)
