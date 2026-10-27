@@ -1,7 +1,7 @@
 # ARGOS 142 — Archivo de fuentes
 
 **Corte**: 2026-10-27 · **Ventana**: 26-oct 08:37 → 27-oct 08:45 CDMX (**24 h 08 min**; `WINDOW_DAYS = 2`) · **Densidad**: 13 hechos propios / 24,13 h = **0,54 hechos/hora**, cálculo propio (7 🔴, 3 🟡, 3 🟢; 6 entidades). Sin recuperaciones. Borrador previo a la ronda 1: 11 hechos (0,46).
-**Hora de cierre**: hora real del Bloque 0 (08:45 CDMX del martes 27), declarada al destinatario. «Procede» a las 09:06 (21 min después): sin ajuste de cierre. La ola corrió de 09:10 a 09:16 aprox.; la ronda 1 de `procedencia-cifras` siguió después (ver §11). Marca «Consulta»: hora real de la última búsqueda.
+**Hora de cierre**: hora real del Bloque 0 (08:45 CDMX del martes 27), declarada al destinatario. «Procede» a las 09:06 (21 min después): sin ajuste de cierre. La ola corrió de 09:10 a 09:16 aprox.; la ronda 1 de `procedencia-cifras` siguió después (ver §11). Marca «Consulta 2026-10-27, última búsqueda 09:56» (`procedencia-cifras` R2).
 
 Informes íntegros de los seis equipos, notas del coordinador y controles: `reports/argos-2026-10-27-equipos.md`. Plantilla: `tools/plantilla-equipos-142.md`. Generador: `tools/datos-argos-142.py`.
 
@@ -14,7 +14,7 @@ Informes íntegros de los seis equipos, notas del coordinador y controles: `repo
 
 - `curl https://www.gob.mx/fgr` → `000` (27-oct 08:45; `connect_rejected`). **Egreso bloqueado: solo WebSearch.** Techo ★★★★☆; esta edición no supera ★★★☆☆.
 - Consulta de control en los dos modos: `extended` trae hechos de la ventana (Tehuacán con horas 9:30-9:58, Apatzingán, León, Cosoleacaque); `standard`, nada de la ventana (Tehuitzingo, Juárez NL de junio, Irapuato). **Todo `extended`.**
-- Presupuesto: control 2 · coordinador 18 · ola 150 (6 × 25, agotada en los seis) · `procedencia-cifras` R1 y R2 (ver §11). Tope 200.
+- Presupuesto: control 2 · coordinador 18 · ola 150 (6 × 25, agotada en los seis) · `procedencia-cifras` R1 27 · R2 3 = **200 de 200**.
 
 ## 3. Rotación — prioridad sobre el ciclo y CICLO C, declarados
 
@@ -66,7 +66,7 @@ Informes íntegros de los seis equipos, notas del coordinador y controles: `repo
 
 - **Ninguna nueva.** `ARG-141-FE-001` (a ARGOS 140) sigue condicionada; `ARG-140-FE-001` (a ARGOS 139) sigue condicionada (Ecatepec: «noche del martes», por resumen: el 20-oct que ya figura en el índice; ningún fragmento); Río Bravo (129) condicionada.
 - Registro (sin FE): omisiones 🟡 de ventanas anteriores (§6).
-- **ARG-140-005 (León, 4 o 5 cuerpos)**: `procedencia-cifras` R1 propuso fe de erratas por umbral (el 5 solo por resumen). **No se aplica**: la ficha de origen (ARGOS 140, `argos-2026-10-25.txt`) sostiene el 5 con el *slug* de La Silla Rota 2026/10/21 («cinco-cuerpos-en-cuatro-zonas»); hay respaldo citable en origen, así que corresponde `HEREDADO — NO REVERIFICADO` + `CIFRA CONTRADICHA` (4 por titulares de AM), no fe de erratas (`editor-duplicidad` R2).
+- **ARG-140-005 (León, 4 o 5 cuerpos)**: **cerrado sin fe de erratas**. `procedencia-cifras` R2 reverificó el 5 por titular y *slug* (La Silla Rota 2026/10/21, «En León: Localizan cinco cuerpos en cuatro zonas de la ciudad»; Quadratín Michoacán y Bajío); el 4 sigue por titulares de AM (21 y 23-oct, con el fiscal): `CIFRA CONTRADICHA ENTRE TITULARES`. La fe de erratas que propuso R1 no procede.
 
 ## 8. Registro del barrido — por entidad
 
@@ -93,7 +93,7 @@ El recuento I/N/R/A de cada ficha está en `tools/datos-argos-142.py`; las URL, 
 **Ronda 2** (en serie): `editor-duplicidad` R2 — CORREGIR (14 hallazgos; 0 duplicidades; aritmética y cobertura limpias). **Aplicados**: Conclusión 5 «única con pena por titular» y detenidos contradichos · `-008` «hecho distinto por fecha» (opción a: el día «este lunes» está en la nota fechada el 26) y Conclusión 3 sin «posible seguimiento» · Piedras Negras con «3 cargadores» por resumen · compromiso de retiro escrito en `-005`, `-007` y `-011` (criterio único: todo hecho cuyo día o hora pueda caer antes de las 08:37 del 26 lleva la cláusula) · deslinde de `-005` sin «NO es» · narración de método retirada de los deslindes (`-003`, `-004`, `-005`, `-010`, `-012`, `-013`) y de la Conclusión 4 · Valoración 2 y 4 sin repetir Conclusiones · Seguimientos reducidos a los desarrollos reales (estados de reverificación: aquí, §5) · tabla de armamento remite a las fichas · reserva de heridos en el total · hora de `-010` «no fijada» · «ambos extremos» una sola vez · ARG-140-005 como `HEREDADO — NO REVERIFICADO` · Cañada Morelos y Acámbaro Ferrocarriles a pendientes.
 **No aplicado, con motivo**: la portada no se reequilibra hacia `-012`/`-013` (las cinco acciones cubren los rojos con autoridad o fosa; los dos homicidios dobles tienen línea en la Conclusión 2 y la regla impide compartir ARG-ID) · la columna «Confianza» de la tabla de armamento conserva el nivel y la remisión.
 
-`procedencia-cifras` R2: (pendiente).
+`procedencia-cifras` R2 (3 de 3 búsquedas) — CORREGIR (10 correcciones de marca; aritmética sin descuadre; ninguna fe de erratas). **Aplicados todos**: AR-15 por titular, cantidad 1 solo por resumen (integrado con reserva) · detenidos de Tehuacán contradichos en tarjeta y nota · cláusulas de retiro de -005, -007, -011 y -013 y efecto de Radar Tecate en la nota de totales · «cálculo propio» en Valoración 1, 3, 4 y 5 y Conclusión 2; Conclusión 1 «cuatro si -007 se retira» · ARG-140-005 reverificado (5 por titular de La Silla Rota; 4 por titulares de AM) · Linares 47 y 55, ambos solo por resumen · Mazatlán, Veracruz, Pánuco y Durango con marca · -007 con Grupo Marmor · Conclusión 5 con los 4 detenidos de aseguramiento. Tumbisca sigue en FRONTERA (ninguna hora); Apatzingán sigue con hora contradicha. **Edición sellada.**
 
 ## 12. Herramientas
 

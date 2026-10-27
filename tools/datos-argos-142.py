@@ -5,7 +5,7 @@ Ventana: 26-oct 08:37 → 27-oct 08:45 CDMX. Archivo: argos-2026-10-27.html."""
 import sys, re, json, html as H
 
 NUM, FECHA, HORA = "142", "2026-10-27", "08:45"
-CONSULTA = "2026-10-27, última búsqueda 09:16"
+CONSULTA = "2026-10-27, última búsqueda 09:56"
 DUR = "24 h 08 min"
 ESTR = {"★★★☆☆": "🟡 Medio", "★★☆☆☆": "🟠 Bajo", "★★★★☆": "🟢 Alto"}
 FLAG = {"rojo": ("alto", "ROJO"), "amarillo": ("medio", "AMARILLO"), "verde": ("bajo", "VERDE"), "rec": ("sindato", "RECUPERACIÓN")}
@@ -77,8 +77,8 @@ E = [
   title="MICHOACÁN · APATZINGÁN — ASESINAN A UN JOVEN DE 19 AÑOS EN UNA CARNICERÍA DEL MERCADO",
   hecho="Apatzingán · <code>CARNICERÍA DEL MERCADO IGNACIO LÓPEZ RAYÓN, ZONA CENTRO, POR TITULAR (RED MICHOACÁN)</code> · lunes 26-OCT, por ruta (Red Michoacán 2026/10/26) · " + AP + " · tarde, " + RES + " (Contramuro); ~03:30, " + RES + " (otra nota): <code>HORA CONTRADICHA — SI FUE DE MADRUGADA, ES DE LA VENTANA DE ARGOS 141 Y SE RETIRA DE ESTE TOTAL</code> · <b>1 muerto</b>: joven de 19 años, por titulares (Quadratín; Contramuro) (🟡 homicidio doloso único) · murió en el Hospital Regional, por titular (Red Michoacán) · agresores huyeron · <b>ningún detenido publicado</b> · identidad: no se reproduce",
   panel="Joven asesinado en un mercado: <b>1 muerto</b>", inst=SB, nac=NIN, conf="★★★☆☆",
-  campo="hora contradicha; ninguna fuente institucional", I=0, N=0, R=6, A=0,
-  fechadas=["Red Michoacán (2026/10/26)"], estatus="Parcialmente corroborado", arm=None,
+  campo="hora contradicha; ninguna fuente institucional", I=0, N=0, R=7, A=0,
+  fechadas=["Red Michoacán (2026/10/26)", "Grupo Marmor (2026/10/26)"], estatus="Parcialmente corroborado", arm=None,
   desl="Mercado Ignacio López Rayón no figura en las cinco ediciones previas. Apatzingán en el índice: ARG-134-REC-003, ARG-135-003, ARG-135-004 y ARG-137-016: otros hechos."),
  dict(id="ARG-142-008", estado="MX-SLP", region="Noreste", color="amarillo", impacto="pequeno", fecha="2026-10-26", hora="noche (solo por resumen)", mu=1, he=0, cu=0, hk=21,
   ent="San Luis Potosí", mun="San Luis Potosí (Anillo Periférico, a la altura de Tierra Blanca)", dia="26-OCT, POR RUTA",
@@ -99,9 +99,9 @@ E = [
   desl="Hecho distinto de ARG-142-001 (el ataque), en la misma ventana: dos fichas. NO es ARG-125-033 (Tecate, 29-sep). Detención sin armamento con cifra: fuera del conteo de armamento."),
  dict(id="ARG-142-010", estado="MX-PUE", region="Centro", color="verde", impacto="mediano", fecha="2026-10-26", hora="no fijada (tras el ataque de ARG-142-003)", mu=0, he=0, cu=0, hk=10.5,
   ent="Puebla", mun="Tehuacán", dia="26-OCT, POR RUTA",
-  title="PUEBLA · TEHUACÁN — DETIENEN A UNA MUJER Y UN HOMBRE POR EL ASESINATO DEL AGENTE Y LES ASEGURAN UN FUSIL AR-15",
-  hecho="Tehuacán · detención el lunes 26-OCT tras el ataque de ARG-142-003, " + RES + " (MTP); «investigan a dos personas», por ruta (Retodiario 2026/10/26); primera ruta fechada que nombra la detención: 27-OCT (Intolerancia) · " + AP + " · <b>2 detenidos</b> —una mujer y un hombre—, por titular y <i>slug</i> (N+) (🟢 detención) · «hay un detenido», por titular (Puebla Online, versión de la policía municipal): <code>CIFRA CONTRADICHA — SE INTEGRA 2, LA DEL COMUNICADO DE LA FGE CITADO POR SIETE MEDIOS, SOLO POR RESUMEN</code> · <b>1 fusil AR-15</b>, por titular y <i>slug</i> (MTP, un solo medio) · chaleco táctico e indicios balísticos, " + RES + " · puestos a disposición de la Fiscalía de Homicidios, sede Tehuacán, " + RES + " · identidades: no se reproducen",
-  panel="Detención de <b>2</b> y aseguramiento de <b>1 fusil AR-15</b>", inst="FGE Puebla" + PR, nac="N+ · Telediario", conf="★★★☆☆",
+  title="PUEBLA · TEHUACÁN — DETIENEN A UNA MUJER Y UN HOMBRE POR EL ASESINATO DEL AGENTE Y LES ASEGURAN UN AR-15",
+  hecho="Tehuacán · detención el lunes 26-OCT tras el ataque de ARG-142-003, " + RES + " (MTP); «investigan a dos personas», por ruta (Retodiario 2026/10/26); primera ruta fechada que nombra la detención: 27-OCT (Intolerancia) · " + AP + " · <b>2 detenidos</b> —una mujer y un hombre—, por titular y <i>slug</i> (N+) (🟢 detención) · «hay un detenido», por titular (Puebla Online, versión de la policía municipal): <code>CIFRA CONTRADICHA — SE INTEGRA 2, LA DEL COMUNICADO DE LA FGE CITADO POR SIETE MEDIOS, SOLO POR RESUMEN</code> · <b>fusil AR-15</b>, por titular y <i>slug</i> (MTP, un solo medio); cantidad 1, «un arma larga», " + RES + ": <code>INTEGRADO CON RESERVA</code> · chaleco táctico e indicios balísticos, " + RES + " · puestos a disposición de la Fiscalía de Homicidios, sede Tehuacán, " + RES + " · identidades: no se reproducen",
+  panel="Detención de <b>2</b> y aseguramiento de <b>un AR-15</b>", inst="FGE Puebla" + PR, nac="N+ · Telediario", conf="★★★☆☆",
   campo="comunicado de la FGE solo por resumen; número de detenidos contradicho", I=0, N=2, R=5, A=0,
   fechadas=["Retodiario (2026/10/26)", "Intolerancia (2026/10/27)"], estatus="Parcialmente corroborado", arm="ARG-142-ARM-001",
   desl="Hecho distinto de ARG-142-003 (el ataque), en la misma ventana: dos fichas."),
@@ -321,8 +321,8 @@ panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
     <tbody><tr><td><b>{len(E)}</b></td><td><b>{cnt["rojo"]}</b></td><td><b>{cnt["amarillo"]}</b></td><td><b>{cnt["verde"]}</b></td><td><b>{len(R)}</b></td><td><b>{MU}</b></td><td><b>{HE}</b></td><td><b>{CU}</b></td><td><b>{tv(0)}</b></td><td><b>{tv(1)}</b></td><td><b>{tv(2)}</b></td><td><b>{tv(4, fmt)}</b></td><td><b>{tv(5)}</b></td><td><b>{tv(6)}</b></td><td><b>{tv(7)}</b></td><td><b>{tv(8)}</b></td><td><b>{TOT[9]}</b></td><td><b>{len(ENT)}</b></td></tr></tbody>
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
-    <b>Armamento</b>: 2 eventos contabilizados (ARG-142-ARM-001 y -002), cifras solo por <i>slug</i>; <code>n/d</code> = no publicado en fuente citable, no ausencia · detención de ARG-142-009 sin armamento con cifra: fuera de este total · <b>detenidos en aseguramiento</b>: cifras por titulares de medios; la autoridad, solo por resumen · <b>heridos</b>: 1 contado en ARG-142-001, contradicho (2 en dos medios) · <b>cuerpos hallados</b>: restos de 1 hombre en fosa (ARG-142-005) · <b>marcas</b>: {NAP} <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code> y {NFR} <code>FRONTERA DE VENTANA — HORA NO FIJADA</code>. <b>Cálculo propio</b>.
-    <br><b>Seguimientos de ediciones previas, fuera del semáforo</b>: <b>ARG-136-006 (exfiscal)</b>: impugnación de la vinculación anunciada por la defensa, por <i>slug</i> (Proceso 2026/10/25); sin resolución publicada; <code>NINGUNA ES SENTENCIA</code> · <b>ARG-140-020 (Xalapa)</b>: prisión preventiva oficiosa, por <i>slug</i> (Golpe Político 2026/10/24); vinculación no publicada · <b>ARG-140-021 (Juchitán)</b>: vinculación no publicada · <b>ARG-140-005 (León)</b>: 4 cuerpos por titulares (AM 2026/10/21 y 2026/10/23, este con declaración del fiscal); 5 por <i>slug</i> de La Silla Rota (origen de la ficha): <code>CIFRA CONTRADICHA — HEREDADO — NO REVERIFICADO</code> · <b>ARG-140-013 (Linares)</b>: identificación publicada (MVS 2026/10/26); edad 47 {RES}, 55 en otro medio: <code>CONTRADICHA</code> · <b>ARG-141-001 (Pénjamo)</b>: muerte sin confirmación de autoridad; la confirmada por la Fiscalía, por titular (Correo 2026/oct/26), es de la calle Independencia, zona centro: otro hecho · <b>ARG-141-004 (Culiacán)</b>: un solo cuerpo, por titular (Luz Noticias 2026-10-25); denuncia previa de desaparición no publicada.
+    <b>Armamento</b>: 2 eventos contabilizados (ARG-142-ARM-001 y -002), cifras solo por <i>slug</i>; <code>n/d</code> = no publicado en fuente citable, no ausencia · detención de ARG-142-009 sin armamento con cifra: fuera de este total · <b>detenidos en aseguramiento</b>: cifras por titulares de medios; la autoridad, solo por resumen · <b>heridos</b>: 1 contado en ARG-142-001, contradicho (2 en dos medios) · <b>cuerpos hallados</b>: restos de 1 hombre en fosa (ARG-142-005) · <b>marcas</b>: {NAP} <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code> y {NFR} <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> · <b>totales sujetos a las cláusulas de retiro de las fichas</b>: ARG-142-005 (−1 rojo, −1 cuerpo), -007 (−1 amarillo, −1 muerto), -011 (−1 verde, −22 cartuchos, −2 detenidos, −1 entidad), -013 (−1 rojo, −2 muertos); detenidos de ARG-142-010 contradichos (2 o 1); si un medio abierto acierta en ARG-142-001, +1 muerto y −1 herido. <b>Cálculo propio</b>.
+    <br><b>Seguimientos de ediciones previas, fuera del semáforo</b>: <b>ARG-136-006 (exfiscal)</b>: impugnación de la vinculación anunciada por la defensa, por <i>slug</i> (Proceso 2026/10/25); sin resolución publicada; <code>NINGUNA ES SENTENCIA</code> · <b>ARG-140-020 (Xalapa)</b>: prisión preventiva oficiosa, por <i>slug</i> (Golpe Político 2026/10/24); vinculación no publicada · <b>ARG-140-021 (Juchitán)</b>: vinculación no publicada · <b>ARG-140-005 (León)</b>: 4 cuerpos por titulares (AM 2026/10/21 y 2026/10/23, este con declaración del fiscal); 5 por titular y <i>slug</i> (La Silla Rota 2026/10/21; también Quadratín Michoacán y Quadratín Bajío): <code>CIFRA CONTRADICHA ENTRE TITULARES — REVERIFICADA EL 27-OCT</code> · <b>ARG-140-013 (Linares)</b>: identificación publicada (MVS 2026/10/26); edad 47 {RES} (MVS), 55 heredado de ARGOS 140, también {RES}: <code>CONTRADICHA</code> · <b>ARG-141-001 (Pénjamo)</b>: muerte sin confirmación de autoridad; la confirmada por la Fiscalía, por titular (Correo 2026/oct/26), es de la calle Independencia, zona centro: otro hecho · <b>ARG-141-004 (Culiacán)</b>: un solo cuerpo, por titular (Luz Noticias 2026-10-25); denuncia previa de desaparición no publicada.
   </p>
 '''
 
@@ -340,7 +340,7 @@ def tile(i, lbl, num, sub):
 NI = "<code>NO PUBLICADO EN FUENTE CITABLE</code> en los dos eventos"
 tiles = "\n".join([
  tile(0, "Armas cortas", tv(0), NI + " (2 cortas en Cajeme, solo por resumen)"),
- tile(1, "Armas largas", tv(1), "1 fusil AR-15, por titular (Tehuacán)"),
+ tile(1, "Armas largas", tv(1), "AR-15 por titular (Tehuacán); cantidad solo por resumen"),
  tile(2, "Sin categoría", tv(2), NI),
  tile(3, "Cartuchos", tv(4, fmt), "por titular (Cajeme)"),
  tile(4, "Cargadores", tv(5), NI),
@@ -348,7 +348,7 @@ tiles = "\n".join([
  tile(6, "AEI", tv(7), NI),
  tile(7, "Explosivos", tv(8), NI),
  tile(8, "Armamento especial", tv(3), NI),
- tile(9, "Detenidos", tv(9), "<b>en el mismo evento de aseguramiento</b>, por titulares de medios; autoridad solo por resumen"),
+ tile(9, "Detenidos", tv(9), "<b>en el mismo evento de aseguramiento</b>, por titulares de medios; autoridad solo por resumen; Tehuacán 2 o 1: contradicho"),
 ])
 assert len(icos) == 10, len(icos)
 
@@ -388,7 +388,7 @@ arm2 = f'''  <div class="table-wrap"><table class="exec wide">
   <p class="muted-note" style="margin:6px 0 0 0;">
     <b>Lectura regional</b>: Centro, 1 evento (1 arma larga, 2 detenidos) · Noroeste, 1 evento (22 cartuchos, 2 detenidos); el resto de regiones, sin evento integrable. <b>Cálculo propio</b>.
     <br><b>Eventos cualitativos sin cantidad</b>: ninguno · armas de los agresores sin aseguramiento publicado: Tecate (ARG-142-001 y -002), fuera de esta sección.
-    <br><code>VISTOS, NO INTEGRADOS</code>: <b>boletín federal del 23 al 25-oct</b> (ventana de ARGOS 141, día de cada acción no fijado; también en Milenio): Mazatlán, 11 granadas artesanales, 1 arma larga y 8 cargadores; Zacatecas y Tamaulipas: cifras {RES} · <b>Sonora</b>: operativo con 4 detenidos y un presunto mando abatido, sábado 24 (ventana de ARGOS 140) · <b>Veracruz</b>: 27 detenidos en operativos del 24 y 25-oct (Golpe Político 2026/10/26), agregado sin desglose · <b>Coahuila, Piedras Negras</b>: 39 cartuchos por <i>slug</i>, 1 arma y 3 cargadores {RES}, en el Puente Internacional II, día no fijado · <b>Nayarit, El Jicote</b>: <code>EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE</code>, junto con la sentencia · <b>balances semanales de Sonora, Quintana Roo y Coahuila</b>: recuentos, no se integran.
+    <br><code>VISTOS, NO INTEGRADOS</code>: <b>boletín federal del 23 al 25-oct</b> (ventana de ARGOS 141, día de cada acción no fijado; también en Milenio): Mazatlán (11 granadas artesanales, 1 arma larga y 8 cargadores), Zacatecas y Tamaulipas: cifras {RES} · <b>Sonora</b>: operativo con 4 detenidos y un presunto mando abatido, sábado 24 (ventana de ARGOS 140) · <b>Veracruz</b>: 27 detenidos {RES} en operativos del 24 y 25-oct (Golpe Político 2026/10/26), agregado sin desglose · <b>Coahuila, Piedras Negras</b>: 39 cartuchos por <i>slug</i>, 1 arma y 3 cargadores {RES}, en el Puente Internacional II, día no fijado · <b>Nayarit, El Jicote</b>: <code>EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE</code>, junto con la sentencia · <b>balances semanales de Sonora, Quintana Roo y Coahuila</b>: recuentos, no se integran.
   </p>
 '''
 
@@ -410,7 +410,7 @@ sent = f'''  <div class="conteo">
     </tbody>
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
-    <b>Publicadas antes de la ventana, no integrables</b>: FGR Veracruz, Pánuco, DPE/4787/2026 (Hora Cero 2026/10/22; pena {RES}) · FGR Caborca (Dossier Político 2026/10/19; pena {RES}) · FGE Colima, más de 46 años por <i>slug</i> (22-oct) · FGE Quintana Roo, 140 años por <i>slug</i> (fecha 18-oct {RES}) · FGE Querétaro (2026/10/22) · FGE Jalisco, El Salto (comunicado 20261019; pena {RES}) · FGE Durango (15, 16 y 19-oct). <code>NO SE INTEGRAN</code>.
+    <b>Publicadas antes de la ventana, no integrables</b>: FGR Veracruz, Pánuco (Hora Cero 2026/10/22; número de comunicado, fecha 21-oct y pena {RES}) · FGR Caborca (Dossier Político 2026/10/19; pena {RES}) · FGE Colima, más de 46 años por <i>slug</i> (22-oct) · FGE Quintana Roo, 140 años por <i>slug</i> (fecha 18-oct {RES}) · FGE Querétaro (2026/10/22) · FGE Jalisco, El Salto (comunicado 20261019; pena {RES}) · FGE Durango (portada del dominio; fechas {RES}). <code>NO SE INTEGRAN</code>.
   </p>
   <div class="section-head" style="margin-top:10px;">INDICADOR DE COBERTURA</div>
   <div class="table-wrap"><table class="exec">
@@ -434,22 +434,22 @@ sent = f'''  <div class="conteo">
 cierre = f'''  <div class="alerta contexto">
     <div class="flag">VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL</div>
     <p>
-      <b>1.</b> <b>Siete rojos propios en cuatro entidades</b> —dos ataques contra personal de seguridad y procuración, cuatro homicidios múltiples y una fosa—: riesgo nacional del corte con incremento acreditado.
+      <b>1.</b> <b>Siete rojos propios en cuatro entidades</b> (cálculo propio) —dos ataques contra personal de seguridad y procuración, cuatro homicidios múltiples y una fosa—: riesgo nacional del corte con incremento acreditado.
       <br><b>2.</b> <b>Concentración</b>: Michoacán y Baja California suman cinco de los siete rojos (cálculo propio).
-      <br><b>3.</b> <b>Violencia operativa</b>: tres amarillos, todos homicidios dolosos únicos; ningún enfrentamiento derivado de operativo.
-      <br><b>4.</b> <b>Respuesta institucional</b>: tres verdes, todos detenciones, en tres entidades.
-      <br><b>5.</b> <code>{NAP + NFR} DE {len(E)} HECHOS SIN HORA FIJADA POR FRAGMENTO ({NAP} PUBLICADOS EL DÍA DE APERTURA, {NFR} EN FRONTERA) Y VENTANA DE {DUR.upper()}: TOTALES NO COMPARABLES CON ARGOS 141 SIN NORMALIZAR POR HORA.</code>
+      <br><b>3.</b> <b>Violencia operativa</b>: tres amarillos, todos homicidios dolosos únicos (cálculo propio); ningún enfrentamiento derivado de operativo.
+      <br><b>4.</b> <b>Respuesta institucional</b>: tres verdes, todos detenciones, en tres entidades (cálculo propio).
+      <br><b>5.</b> <code>{NAP + NFR} DE {len(E)} HECHOS SIN HORA FIJADA POR FRAGMENTO ({NAP} PUBLICADOS EL DÍA DE APERTURA, {NFR} EN FRONTERA) Y VENTANA DE {DUR.upper()}: TOTALES NO COMPARABLES CON ARGOS 141 SIN NORMALIZAR POR HORA. CÁLCULO PROPIO.</code>
     </p>
   </div>
 
   <div class="alerta contexto" style="margin-top:8px;">
     <div class="flag">CONCLUSIONES DE INTELIGENCIA CRIMINAL</div>
     <p>
-      <b>1. APATZINGÁN: QUINTO HECHO CON VÍCTIMAS DEL ÍNDICE EN CATORCE DÍAS</b> (cálculo propio, 13 al 26-oct, ambos extremos; desarrolla el patrón de ARGOS 135 y 137): ARG-134-REC-003, ARG-135-003, ARG-135-004, ARG-137-016 y ARG-142-007; tres sin día fijado por fragmento. Línea: <b>solicitar a la Fiscalía de Michoacán el cotejo balístico de los cinco y vigilar la zona Centro y el mercado</b> — hipótesis.
-      <br><b>2. MICHOACÁN: DOS HOMICIDIOS DOBLES EL MISMO LUNES, UNO EN UN NEGOCIO Y OTRO EN UN VEHÍCULO EN CARRETERA</b> (ARG-142-012 y ARG-142-013); el segundo, en frontera de ventana. Línea: <b>solicitar a la Fiscalía de Michoacán la identificación de las víctimas y el cotejo balístico entre ambos</b> — vínculo no acreditado.
+      <b>1. APATZINGÁN: QUINTO HECHO CON VÍCTIMAS DEL ÍNDICE EN CATORCE DÍAS</b> (cálculo propio, 13 al 26-oct, ambos extremos; desarrolla el patrón de ARGOS 135 y 137): ARG-134-REC-003, ARG-135-003, ARG-135-004, ARG-137-016 y ARG-142-007; tres sin día fijado por fragmento; cuatro si ARG-142-007 se retira. Línea: <b>solicitar a la Fiscalía de Michoacán el cotejo balístico de los cinco y vigilar la zona Centro y el mercado</b> — hipótesis.
+      <br><b>2. MICHOACÁN: DOS HOMICIDIOS DOBLES EL MISMO LUNES, UNO EN UN NEGOCIO Y OTRO EN UN VEHÍCULO EN CARRETERA</b> (cálculo propio; ARG-142-012 y ARG-142-013); el segundo, en frontera de ventana. Línea: <b>solicitar a la Fiscalía de Michoacán la identificación de las víctimas y el cotejo balístico entre ambos</b> — vínculo no acreditado.
       <br><b>3. SAN LUIS POTOSÍ: SEGUNDO CONDUCTOR ASESINADO A BALAZOS A LA ALTURA DE TIERRA BLANCA EN SIETE DÍAS</b> (cálculo propio, 20 y 26-oct): ARG-139-009 y ARG-142-008; el día de ARG-139-009, solo por resumen; ARG-142-008, de fuente única. Línea: <b>solicitar a la Fiscalía de San Luis Potosí si son dos hechos y si comparten armas</b>.
       <br><b>4. LEÓN: TRES HECHOS CON VÍCTIMAS EN SEIS DÍAS</b> (cálculo propio, 21 al 26-oct): ARG-140-005 (cuerpos), ataque de la col. Chapalita (24-oct, Correo 2026/oct/25, sin ARG-ID) y ARG-142-006; agresores en motocicleta en los dos últimos, solo por resumen. Línea: <b>solicitar a la FGE Guanajuato si comparten agresores y la situación jurídica de la víctima de ARG-142-006</b> — hipótesis.
-      <br><b>5. BRECHA DETENCIÓN–CONDENA: SIETE DETENIDOS EN TRES ACCIONES DEL CORTE —CINCO TRAS LOS DOS ATAQUES A AGENTES— Y NINGUNA SENTENCIA INTEGRABLE</b> (cálculo propio: 3 en ARG-142-009, 2 en -010 y 2 en -011); la única con pena por titular, por portación de armas exclusivas en Tepic, solo por medios; detenidos contradichos en -009 y -010. Línea: <b>solicitar a las fiscalías de Baja California y Puebla la vinculación y el registro balístico de las armas, y a la FGR el boletín de Tepic</b>.
+      <br><b>5. BRECHA DETENCIÓN–CONDENA: SIETE DETENIDOS EN TRES ACCIONES DEL CORTE —CINCO TRAS LOS DOS ATAQUES A AGENTES— Y NINGUNA SENTENCIA INTEGRABLE</b> (cálculo propio: 3 en ARG-142-009, 2 en -010 y 2 en -011; de ellos, 4 en eventos de aseguramiento); la única con pena por titular, por portación de armas exclusivas en Tepic, solo por medios; detenidos contradichos en -009 y -010. Línea: <b>solicitar a las fiscalías de Baja California y Puebla la vinculación y el registro balístico de las armas, y a la FGR el boletín de Tepic</b>.
     </p>
   </div>
 

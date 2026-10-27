@@ -1583,3 +1583,127 @@ Archivos relevantes (absolutos):
 /home/user/Prueba-/reports/argos-2026-10-07.txt (ARG-125-036, líneas 738-756)
 /home/user/Prueba-/reports/indice-arg-id.md
 /home/user/Prueba-/reports/_pendientes.md
+
+## control-procedencia-r2 (3 de 3 búsquedas)
+
+INFORME procedencia-cifras · ARGOS 142 · RONDA 2
+Borrador auditado: /home/user/Prueba-/reports/argos-2026-10-27.html (generado por /home/user/Prueba-/tools/datos-argos-142.py, leído completo). Cruzado contra /home/user/Prueba-/reports/argos-2026-10-27-fuentes.md, argos-2026-10-27-equipos.md, argos-2026-10-25.html (ARGOS 140) y reports/indice-arg-id.md.
+No leí las versiones .txt ni -movil.html en esta ronda. Solo constaté por Grep que el .txt repite el seguimiento de ARG-140-005.
+Hice 20 pases: inventario, marca por cifra, aritmética, cobertura, calendario, cifras heredadas y presupuesto.
+
+VEREDICTO: CORREGIR ANTES DE PUBLICAR
+La aritmética de totales cuadra en todos los puntos (§ DESCUADRES). No hay cifra que exija fe de erratas.
+Hay una cifra que deja de estar "heredada sin reverificar" (el 5 de ARG-140-005, ahora reverificado). Faltan marcas "cálculo propio" y "solo por resumen" en 8 puntos. Ninguno cambia un total publicado.
+
+CIFRAS CITABLES (fragmento o título/slug literal)
+- 13 hechos propios, 7/3/3 por color — conteo del arreglo E; cada ficha lleva su titular. Es cálculo propio, declarado en el panorama.
+- 4 muertos (ARG-142-002) — «deja cuatro personas sin vida» (El Imparcial 2026/10/26); El Congresista, por titular — https://www.elimparcial.com/ (ruta fechada, según equipos).
+- 1 agente muerta y 1 herido (ARG-142-001) — titulares de El Imparcial y Punto Norte (2026/10/26). Heridos contradichos y marcados: Milenio «hieren a dos agentes»; Siempre en la Noticia, «dos personas heridas».
+- 3 detenidos (ARG-142-009) — slug de The Baja Post: «…hay-tres-detenidos…» — https://thebajapost.com/2026/10/26/fallece-agente-de-la-fesc-en-enrentamiento-armado-en-tecate-hay-tres-detenidos-e-intenso-operativo-de-seguridad/
+- 2 muertos y 1 herido grave (ARG-142-004) — titular y slug de La Silla Rota 2026/10/26; AM 2026/10/27 «queda 1 grave» — https://www.am.com.mx/guanajuato-sur/2026/10/27/ataque-armado-en-acambaro-matan-a-2-hombres-y-queda-1-grave-1859412.html
+- 22 cartuchos y 2 detenidos (ARG-142-011) — «…lleva-a-la-detencion-de-dos-hombres-armados-en-cajeme-y-al-aseguramiento-de-22-cartuchos» — https://www.elimparcial.com/son/ciudad-obregon/2026/10/26/un-vehiculo-a-exceso-de-velocidad-lleva-a-la-detencion-de-dos-hombres-armados-en-cajeme-y-al-aseguramiento-de-22-cartuchos/
+- 2 muertos (ARG-142-013) — «Acribillan a dos hombres en una camioneta sobre la San Miguel del Monte-Tumbisca» — https://medianews.mx/index.php/2026/10/26/acribillan-a-dos-hombres-en-una-camioneta-sobre-la-san-miguel-del-monte-tumbisca/ . Confirmado en mi búsqueda 1 (títulos de resultados).
+- 1 muerto de 19 años (ARG-142-007) — «Asesinan a joven de 19 años en mercado de Apatzingán» (Quadratín); «Joven muere tras agresión armada en carnicería del mercado de Apatzingán» (Red Michoacán 2026/10/26; Grupo Marmor 2026/10/26) — https://www.redmichoacan.com/2026/10/26/joven-muere-tras-agresion-armada-en-carniceria-del-mercado-de-apatzingan/
+- 5 cuerpos en León (ARG-140-005) — véase la corrección 5. Ahora es CITABLE por título y slug.
+- 39 cartuchos de Piedras Negras (en "vistos") — slug de N+: «vinculan-a-mujer-por-ingresar-arma-y-39-cartuchos-en-puente-internacional-de-piedras-negras». Los «3 cargadores» no constan y el borrador ya los marca solo por resumen.
+- Colima «más de 46 años» y Quintana Roo «140 años» — por slug (portalcolima; fgeqroo.gob.mx/comunicados/detalle/obtiene-fge-quintana-roo-sentencia-de-140-anos…). Fuera de ventana, no integrados.
+
+CIFRAS SOLO EN RESUMEN GENERADO — revisar antes de publicar
+- "1 fusil" AR-15 (ARM-001, tarjeta de armas largas, panel y título de ARG-142-010) — el titular de MTP dice «…les aseguran AR-15» (slug idéntico), sin numeral. El «un arma larga» proviene del resumen de la policía municipal (equipos, líneas 452-454). El draft dice «1 fusil AR-15, por titular y slug»: el AR-15 sí es titular; el "1" no. Ver corrección 1.
+- Hora de todos los hechos (~17:47, 13:00-13:38, 9:58, 22:00, etc.) — solo por resumen; ya marcadas.
+- "Mazatlán: 11 granadas artesanales, 1 arma larga, 8 cargadores" (vistos de armamento) — equipos línea 151: «Cifra por resumen». El borrador no la marca; solo marca Zacatecas y Tamaulipas. Ver corrección 7.
+- "Veracruz: 27 detenidos" — equipos líneas 688 y 731: «(resumen)». El borrador cita Golpe Político 2026/10/26 sin marca.
+- "DPE/4787/2026" y fecha 21-oct (Pánuco) — viene del listado FGR "SOLO POR RESUMEN" (equipos, línea 220 y 644). El borrador lo atribuye a Hora Cero 2026/10/22 sin marca en el identificador.
+- Edad 47 de Linares (ARG-140-013) — el titular de MVS («Identifican a hombre asesinado en un depósito de Linares») no trae edad; el 47 sale del cuerpo (equipos, línea 221). El draft ya dice RES.
+- Intentos de respaldo hechos: 3 búsquedas (ver al final). Ninguna de las horas de Tumbisca ni de Apatzingán quedó anclada por fragmento.
+
+CIFRAS HEREDADAS SIN REVERIFICAR
+- Cuerpos ARG-140-005 (5 vs 4) — entró en ARGOS 140 (21-oct). Respaldo original: SÍ lo tuvo. El equipos de 140 (línea 104) registra la URL lasillarota.com/guanajuato/local/2026/10/21/en-leon-localizan-cinco-cuerpos-en-cuatro-zonas-de-la-ciudad-534062.html. Mi búsqueda 1 devolvió esa URL con el título literal «En León: Localizan cinco cuerpos en cuatro zonas de la ciudad». Ya no es heredada ni "solo por resumen": ver corrección 5.
+- Edad 55 de Linares — entró en ARGOS 140 como «solo por resumen». El borrador la presenta como «55 en otro medio» sin esa marca. Nunca tuvo respaldo citable: ver corrección 6.
+- Los ARG-ID y fechas de C1 (ARG-134-REC-003, 135-003, 135-004, 137-016) y C3 (ARG-139-009, 20-oct) — vienen del índice. El borrador declara en Indicadores que no se reverificaron, lo cual es correcto. En el índice, 134-REC-003 está «martes, por resumen», 135-004 «pub.», 137-016 «día solo por resumen» y 139-009 «FRONTERA»: es la base de «tres sin día fijado por fragmento».
+- FE-001 de ARGOS 140 y 141 (Ecatepec, Zavala): siguen condicionadas, sin cifra nueva en el cartelón.
+
+CIFRAS INFERIDAS (cálculo propio)
+- 15 muertos = 1(-001) + 4(-002) + 1(-003) + 2(-004) + 1(-006) + 1(-007) + 1(-008) + 2(-012) + 2(-013). Declarado, §10 y panorama: sí.
+- 5 heridos = 1(-001) + 1(-003) + 1(-004) + 1(-006) + 1(-012). Declarado: sí.
+- 1 cuerpo (-005). Declarado: sí.
+- Armamento: 1 larga, 22 cartuchos, 4 detenidos = 2+2. Declarado como cálculo propio: sí. Cargadores, cartuchos y cortas siguen n/d, bien.
+- 6 entidades (BC, Pue, Gto, Mich, SLP, Son); 4 con rojo (BC, Pue, Gto, Mich). Declarado: sí.
+- Densidad 13 / 24,1333 h = 0,5387, publicada 0,54. Declarado: sí.
+- Marcas 12 APERTURA + 1 FRONTERA = 13. Código con NAP y NFR, assert pasa. Declarado: parcial (sin "cálculo propio" en la Valoración 5).
+- Valoración 1: «Siete rojos propios en cuatro entidades», «dos ataques», «cuatro homicidios múltiples», «una fosa» = 2+4+1 = 7. NO lleva "cálculo propio".
+- Valoración 2: Michoacán 3 (-005, -012, -013) + BC 2 (-001, -002) = 5 de 7. Declarado: sí.
+- Valoración 3: «tres amarillos», todos homicidio único (-006, -007, -008). NO declarado.
+- Valoración 4: «tres verdes… en tres entidades» (BC, Pue, Son). NO declarado.
+- Conclusión 1: 5 hechos, 13 al 26-oct, 14 días con ambos extremos. Declarado: sí.
+- Conclusión 2: «dos homicidios dobles» (-012, -013). NO declarado.
+- Conclusión 3: 20 y 26-oct = 7 días inclusivos. Declarado: sí.
+- Conclusión 4: 21 al 26-oct = 6 días inclusivos; 3 hechos. Declarado: sí.
+- Conclusión 5: 3+2+2 = 7; 3+2 = 5. Declarado: sí.
+- Cobertura: 19+4+9 = 32; 11+1+20 = 32; 22+10 = 32. Conteo propio de la lista; no hay entidad repetida ni faltante (verifiqué las 32).
+
+CIFRAS CONTRADICHAS (sin arbitrar)
+- Heridos de -001: 1 (El Imparcial, Punto Norte) vs 2 (Milenio; Siempre en la Noticia). Estado del herido: grave (Zeta; NDT) / muerto (Radar Tecate, abierta NO OFICIAL). Marcado en la ficha. La nota del total solo recoge los heridos, no el efecto sobre muertos: si Radar Tecate acierta, 16 muertos y 4 heridos.
+- Detenidos de -009: 3 (titulares) vs «dos arrestados» (versión preliminar, resumen).
+- Detenidos de -010: 2 (N+ por titular y slug; FGE por resumen) vs 1 (Puebla Online, versión municipal). El total de detenidos (4) y la tarjeta no lo dicen. Ver corrección 2.
+- Cuerpos de ARG-140-005: 5 (La Silla Rota 2026/10/21; Quadratín Michoacán «Hallan 5 cuerpos en León, Guanajuato»; Quadratín Bajío «Hallan cinco cuerpos en León»; Sinaloahoy) vs 4 (AM 2026/10/21 «Hallan 4 cuerpos esta mañana…»; AM 2026/10/23 «Ve fiscal terrible hallazgo de 4 cuerpos»). Ambos por titular.
+- Hora de -007: tarde (mayoría; Contramuro) vs ~03:30 (el resumen de mi búsqueda 3 la atribuye a 1Plana, La Primera de AM, sin fragmento).
+- Edad Linares: 47 (MVS 2026/10/26, cuerpo) vs 55 (heredada de 140, solo resumen).
+- Composición de víctimas de -002, hora de -001 y otros: ya contradichos y marcados en las fichas.
+
+DESCUADRES ARITMÉTICOS
+Ninguno. Recalculado por mi cuenta:
+- Muertos: 1+4+1+2+0+1+1+1+0+0+2+2 = 15 (sin -005, -009, -010, -011). ✓
+- Heridos: 1+1+1+1+1 = 5. ✓
+- Colores: rojos 001, 002, 003, 004, 005, 012, 013 = 7; amarillos 006, 007, 008 = 3; verdes 009, 010, 011 = 3. Total 13. ✓
+- Entidades: 6, y 4 con rojo. ✓
+- Duración: 26-oct 08:37 a 27-oct 08:45 = 24 h 08 min = 24,133 h. 13/24,133 = 0,5387 ≈ 0,54. El borrador previo daba 11/24,133 = 0,4558 ≈ 0,46. ✓
+- Marcas: 12 AP (001-012, todas con AP) + 1 FR (013) = 13 de 13. ✓
+- Armamento: 1 larga (ARM-001); 22 cartuchos (ARM-002); detenidos 2+2 = 4; cargadores nunca sumados con cartuchos; ND correcto. ✓ Las cortas y cargadores de Cajeme ("NO SE INTEGRAN") no entran.
+- Conclusión 5: 3+2+2 = 7 y 3+2 = 5. ✓ Valoración 2: 3+2 = 5 de 7. ✓
+- Tabla ↔ tarjetas ↔ §10: coinciden. El HTML (línea 519) trae 13/7/3/3/0/15/5/1/n/d/1/n/d/22/n/d…/4/6, igual que el generador.
+- Presupuesto (§2 del archivo de fuentes): control 2 + coordinador 18 + ola 150 + R1 27 = 197. Mis 3 búsquedas dan 200 = tope. Consignar en §11 "Ronda 2: 3 búsquedas; 200 de 200".
+
+Ninguna cifra de ediciones previas se presenta como reverificada sin serlo, salvo lo señalado (Linares 55; Pánuco DPE/4787/2026). Indicadores declara: «Los ARG-ID de ediciones previas citados en las conclusiones no se reverificaron».
+
+REGLAS DE CONTEO DE CLAUDE.md
+- Cartuchos y cargadores: no se suman ni se funden. ✓
+- "Diverso armamento": ninguno. Cualitativos: ninguno. ✓
+- Penas compuestas / años acumulados: 0 casos integrables. Tepic, Tulantepec y Ramos Arizpe quedan como candidatos con su marca; no hay conversión de UMA a pesos. ✓
+- Desglose fragmentado: no hay.
+- Cobertura: «consultada por búsqueda dirigida» y «lectura directa» están separadas (acceso directo: 0). No declara más de lo verificado. ✓
+- "Detenidos en aseguramiento" exige cifra publicada por la autoridad; la edición lo cumple declarando «por titulares de medios; autoridad solo por resumen». Falta la contradicción de -010.
+
+CORRECCIONES NUMERADAS
+1. AR-15 "1 fusil" (ARG-142-010: título, hecho, panel; ARM-001; tarjeta de largas; mapa). El numeral "1" no está en el titular ni en el slug de MTP. Solo hay «un arma larga» por resumen (policía municipal). Redactar: «AR-15, por titular y slug (MTP, un solo medio); cantidad 1: “un arma larga”, SOLO POR RESUMEN». Quitar «UN FUSIL» del título de la ficha o sustituirlo por «UN FUSIL AR-15 (CANTIDAD POR RESUMEN)». Veredicto del renglón: INTEGRAR MARCADA CON RESERVA (umbral Bajo de armamento). Si el equipo prefiere no inferir, largas = n/d.
+2. Detenidos del total (4) y tarjeta: añadir «ARM-001: 2 contradicho (1 en Puebla Online); si 1, total 3». Mismo texto en la nota bajo la tabla de totales.
+3. Nota bajo la tabla de totales: añadir las condiciones de retiro ya declaradas en fichas.
+   - -005: cuerpos 1 → 0; rojos 7 → 6.
+   - -007: amarillos 3 → 2; muertos 15 → 14.
+   - -011: verdes 3 → 2; cartuchos 22 → n/d; detenidos 4 → 2; Sonora sale y entidades 6 → 5.
+   - -013: rojos −1; muertos −2.
+   Añadir también el efecto de Radar Tecate sobre muertos (+1) y heridos (−1). Texto sugerido: «totales sujetos a las marcas de retiro; cálculo propio».
+4. Poner "cálculo propio" en Valoración 1 (siete, cuatro entidades, dos, cuatro, una), 3 (tres), 4 (tres, tres), 5 (13 de 13, 12, 1, duración) y Conclusión 2 («dos homicidios dobles»). La frase general de Indicadores no sustituye la marca línea por línea que exige el control. Además, en Conclusión 1, añadir «(cuatro si ARG-142-007 se retira)»: el "quinto" depende de -007, que tiene hora contradicha.
+5. ARG-140-005 (Seguimientos, panorama). Sustituir «5 por slug de La Silla Rota (origen de la ficha): CIFRA CONTRADICHA — HEREDADO — NO REVERIFICADO» por: «5 por titular y slug (La Silla Rota 2026/10/21; también títulos de Quadratín Michoacán y Quadratín Bajío, sin fecha en ruta); 4 por titulares de AM (2026/10/21 y 2026/10/23, este con el fiscal): CIFRA CONTRADICHA ENTRE TITULARES — reverificado 27-oct (R2)». No procede la fe de erratas que propuso la ronda 1: el 5 sí tuvo y tiene respaldo en título. Cerrar el pendiente prioritario del §7 y de _pendientes.md. El resumen de mi búsqueda reparte los hallazgos de otro modo (dos calcinados, uno embolsado); ese reparto no debe publicarse.
+6. Linares (ARG-140-013): «edad 47 SOLO POR RESUMEN (MVS 2026/10/26), 55 heredado de ARGOS 140 también SOLO POR RESUMEN». Hoy dice «55 en otro medio».
+7. Vistos de armamento: añadir SOLO POR RESUMEN a Mazatlán (11 granadas, 1 larga, 8 cargadores) y a Veracruz (27 detenidos). Añadir «solo por resumen» a «DPE/4787/2026» y a «21-oct». Durango «15, 16 y 19-oct»: no encontré ruta citada en el material revisado; marcar «fechas sin ruta citada» o retirar.
+8. ARG-142-007: añadir a las rutas fechadas Grupo Marmor (https://grupomarmor.com.mx/2026/10/26/joven-muere-tras-agresion-armada-en-carniceria-del-mercado-de-apatzingan/) y Contramuro (ruta «-261026»). Los recuentos I/N/R/A no cambian de forma sustantiva (R sube a 7 si se cuenta Marmor); la hora sigue contradicha.
+9. Conclusión 5: aclarar la diferencia 7 vs 4 («7 detenidos en las tres fichas verdes; 4 son los de aseguramiento»). Hoy conviven 7 en C5 y 4 en el total, con universos distintos.
+10. §11 del archivo de fuentes: registrar R2 (3 búsquedas, 200 de 200) y el cierre de ARG-140-005. Mantener -013 en FRONTERA.
+
+RESULTADOS DE LAS TRES BÚSQUEDAS
+- Búsqueda 1 (slug La Silla Rota de ARG-140-005): devolvió el título literal «En León: Localizan cinco cuerpos en cuatro zonas de la ciudad» en la ruta 2026/10/21, y títulos de otros medios con "cinco". Resuelve el punto crítico.
+- Búsqueda 2 (hora de ARG-142-013 Tumbisca): ninguna nota da hora. Las notas dicen «en la mañana». La Voz de Michoacán lleva sello de página de las 17:03. No hay ancla anterior ni posterior a las 08:37. Se mantiene FRONTERA DE VENTANA — HORA NO FIJADA. Se confirman las rutas Media News 2026/10/26 y el titular «presuntamente padre e hijo» de Quadratín. Los detalles de camioneta roja y volcadura solo constan en el resumen y no se usan en la ficha.
+- Búsqueda 3 (hora de ARG-142-007): la mayoría dice tarde; el resumen atribuye ~03:30 a 1Plana sin fragmento. No resuelve. Se mantiene la contradicción y la condición de retiro.
+
+Búsquedas utilizadas: 3 de 3
+
+Sources:
+- [La Silla Rota — En León: Localizan cinco cuerpos en cuatro zonas de la ciudad](https://lasillarota.com/guanajuato/local/2026/10/21/en-leon-localizan-cinco-cuerpos-en-cuatro-zonas-de-la-ciudad-534062.html)
+- [Quadratín Michoacán — Hallan 5 cuerpos en León, Guanajuato](https://www.quadratin.com.mx/justicia/hallan-5-cuerpos-en-leon-guanajuato/)
+- [Quadratín Bajío — Hallan cinco cuerpos en León](https://bajio.quadratin.com.mx/hallan-cinco-cuerpos-en-leon/)
+- [Media News — Acribillan a dos hombres… San Miguel del Monte-Tumbisca](https://medianews.mx/index.php/2026/10/26/acribillan-a-dos-hombres-en-una-camioneta-sobre-la-san-miguel-del-monte-tumbisca/)
+- [La Voz de Michoacán — Morelia: acribillan a dos hombres](https://www.lavozdemichoacan.com.mx/seguridad/violencia/acribillan-dos-hombres-carretera-san-miguel-monte-tumbisca-morelia/)
+- [Red Michoacán — Joven muere tras agresión armada en carnicería del mercado de Apatzingán](https://www.redmichoacan.com/2026/10/26/joven-muere-tras-agresion-armada-en-carniceria-del-mercado-de-apatzingan/)
+- [Grupo Marmor — Joven muere tras agresión armada en carnicería del mercado de Apatzingán](https://grupomarmor.com.mx/2026/10/26/joven-muere-tras-agresion-armada-en-carniceria-del-mercado-de-apatzingan/)
+- [Contramuro — Asesinan a balazos a joven de 19 años en una carnicería de Apatzingán](https://www.contramuro.com/asesinan-a-balazos-a-joven-en-una-carniceria-de-apatzingan-261026/)
