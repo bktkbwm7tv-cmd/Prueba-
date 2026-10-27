@@ -908,3 +908,412 @@ Por entidad:
 Entidades NO revisadas en armamento: Chiapas, Campeche (y Oaxaca no confirmado). Entidades NO revisadas en el ENCARGO E5: Taxco y Ajuchitlán.
 Regional ampliada sin entidad propia: Campeche, Yucatán y Chiapas (salvo Ostuacán).
 Boletín federal: no consultado por este equipo (lo hace el coordinador).
+
+## control-procedencia-r1 (27 de 28)
+
+INFORME `procedencia-cifras` — ARGOS 142, RONDA 1
+Ventana: 26-oct 08:37 → 27-oct 08:45 CDMX. Borrador: /home/user/Prueba-/reports/argos-2026-10-27.html (fuente de datos: /home/user/Prueba-/tools/datos-argos-142.py).
+Método: lectura del script, del archivo de fuentes y de los informes de equipos; 27 WebSearch extended; Grep sobre `indice-arg-id.md`. Egreso bloqueado: no se leyó ningún documento primario. «Titular» y «slug» son los que devolvió el buscador en su lista de resultados. «Resumen» es el texto que sintetiza el buscador. Donde digo «slug del informe del equipo», la URL no volvió a aparecer en esta ronda.
+
+VEREDICTO: CORREGIR ANTES DE PUBLICAR
+
+Motivos principales:
+(a) La marca «tarde, por titulares» de ARG-142-001 es falsa.
+(b) La cifra de heridos de -001 está contradicha por dos titulares, uno del único medio nacional citado, y el borrador no lo declara.
+(c) Dos rojos encargados (Queréndaro y Morelia–Tumbisca) son del 26-oct y deben integrarse.
+(d) La Valoración 5 («8 DE 11 HECHOS SIN HORA FIJADA») subestima el problema.
+(e) Hay un error de cálculo en la conclusión 4 («seis días»).
+(f) El «15 años 6 meses» de Tepic se presenta con respaldo de slug que no lo contiene.
+
+---
+CIFRAS CITABLES (fragmento literal y fuente)
+
+ARG-142-001 (Tecate, FESC)
+- 1 agente muerta, 1 herido — «Una agente sin vida y a otro herido tras ataque armado contra la Fuerza Estatal en Tecate» — El Imparcial, https://www.elimparcial.com/tij/policiaca/2026/10/26/una-agente-sin-vida-y-a-otro-herido-tras-ataque-armado-contra-la-fuerza-estatal-en-tecate/ (fecha 26 en la ruta). También «Una agente muerta y uno herido…» — Punto Norte, https://puntonorte.info/2026/10/26/una-agente-muerta-y-uno-herido-deja-enfrentamiento-armado-entre-la-fesc-y-delincuentes-en-tecate/
+- Día 26-oct — «…ataque armado que dejó una agente muerta en Tecate el 26 de octubre» — El Congresista, https://elcongresista.mx/politica/baja-california/detienen-tres-responsables-ataque-agente-fesc-tecate (el titular fija el día, no la hora).
+- Segunda muerte (versión contradicha) — «TECATE: ATACAN A AGENTES DE LA FESC; 2 MUEREN» — Radar Tecate, https://radartecatenews.com/2026/10/26/tecate-atacan-a-agentes-de-la-fesc-2-mueren/ (el borrador lo marca bien).
+
+ARG-142-009 (3 detenidos)
+- «Fallece agente de la FESC en enfrentamiento armado en Tecate, hay tres detenidos…» — The Baja Post, https://thebajapost.com/2026/10/26/fallece-agente-de-la-fesc-en-enrentamiento-armado-en-tecate-hay-tres-detenidos-e-intenso-operativo-de-seguridad/ (ruta del 26).
+- «Detienen a tres hombres por ataque armado…» — El Congresista (URL anterior).
+- «Ejecutan a agente de la FESC en Tecate; detienen a tres presuntos responsables» — Zeta, https://zetatijuana.com/2026/10/ejecutan-a-agente-de-la-fesc-en-tecate-detienen-a-tres-presuntos-responsables/ (ruta solo con mes).
+
+ARG-142-002 (El Escorial)
+- 4 muertos — «Ataque armado en vivienda de Tecate deja cuatro personas sin vida» — El Imparcial, https://www.elimparcial.com/tij/policiaca/2026/10/26/ataque-armado-en-vivienda-de-tecate-deja-cuatro-personas-sin-vida/ (ruta del 26).
+- 4 muertos — «Así fue el ataque armado que dejó a 4 personas sin vida en Tecate hoy» — TV Azteca BC, https://www.tvaztecabajacalifornia.com/policiaca/asi-fue-el-ataque-armado-que-dejo-a-4-personas-sin-vida-en-tecate-hoy/
+- 4 muertos — «Asesinan a madre, hija y dos nietos en ataque armado en Tecate» — Milenio, https://www.milenio.com/estados/asesinan-madre-hija-nietos-ataque-armado-tecate (sin fecha en la ruta).
+- «FAMILIA ES ATACADA A BALAZOS. TODOS MUEREN» — Radar Tecate, https://radartecatenews.com/2026/10/26/familia-es-atacada-a-balazos-todos-mueren/
+- «Ejecutan a tres mujeres y un varón en casa de Tecate» — En Línea BC, https://www.enlineabc.com.mx/seguridad/2026/10/26/ejecutan-a-tres-mujeres-y-un-varon-en-casa-de-tecate/
+
+ARG-142-003 (Tehuacán)
+- 1 agente muerto — «Muere agente de la AEI tras ataque armado en Tehuacán» — Retodiario, https://retodiario.com/policia/2026/10/26/muere-agente-de-la-aei-tras-ataque-armado-en-tehuacan (ruta del 26). También «Asesinan a agente de la AEI en Tehuacán; suman cinco agresiones…» — Síntesis, https://sintesis.mx/2026/10/26/asesinan-a-agente-de-la-aei-en-tehuacan-suman-cinco-agresiones-contra-policias-en-17-dias/
+- 1 herido — «…hay otro hombre herido» — Curul, https://curul.com.mx/asesinan-a-agente-de-la-aei-en-tehuacan-durante-ataque-armado-hay-otro-hombre-herido/ . «Matan a agente de la AEI y hieren a otro» — Ambas Manos, https://www.ambasmanos.mx/nota-roja/matan-a-agente-de-la-aei-y-hieren-a-otro-tehuacan/357358/
+
+ARG-142-010 (Tehuacán, detención)
+- 2 detenidos — «Detienen a Dos Sujetos por Presuntamente Matar a un Agente en Tehuacán, Puebla» — N+, https://www.nmas.com.mx/puebla/seguridad/asesinatos/detenidos-lady-jazmin-n-ares-ramses-n-homicidio-baleado-agente-fiscalia-tehuacan-puebla/ . Es titular y slug, no solo slug. Sin fecha en la ruta. También «Detienen a pareja por el homicidio de un agente ministerial en Tehuacán» — Intoleranciadiario, https://intoleranciadiario.com/articles/inseguridad/2026/10/27/1059633-detienen-a-pareja-por-el-homicidio-de-un-agente-ministerial-en-tehuacan.html (ruta 2026/10/27, publicación del 27).
+- 1 AR-15 — «Caen Lady Jazmín y Ares por asesinato de ministerial en Tehuacán; les aseguran AR-15» — MTP Noticias, https://mtpnoticias.com/dolor-y-sangre/policia/caen-lady-jazmin-y-ares-por-asesinato-de-ministerial-en-tehuacan-les-aseguran-ar-15/ . Es titular, confirmado esta ronda. Sin fecha en la ruta. Es un solo medio.
+
+ARG-142-004 (Acámbaro)
+- 2 muertos y 1 herido — «En Acámbaro: Matan a dos jóvenes en las faldas del Cerro del Toro; otro más resultó herido» — La Silla Rota, https://lasillarota.com/guanajuato/estado/2026/10/26/en-acambaro-matan-a-dos-jovenes-en-las-faldas-del-cerro-del-toro-otro-mas-resulto-herido-534708.html . Es titular y slug, no solo slug.
+- 2 muertos y 1 herido grave — «Ataque armado en Acámbaro: Matan a 2 hombres y queda 1 grave» — AM, https://www.am.com.mx/guanajuato-sur/2026/10/27/ataque-armado-en-acambaro-matan-a-2-hombres-y-queda-1-grave-1859412.html . Es una segunda ruta fechada (27-oct) que el borrador no cita. Respalda «herido grave» por titular; el borrador lo marca «solo por resumen».
+
+ARG-142-005 (Cutzato)
+- Restos de un hombre — «Madres Buscadoras Localizan Restos De Un Hombre En Una Fosa Clandestina De Uruapan» — Changoonga, https://changoonga.com/2026/10/26/madres-buscadoras-localizan-restos-de-un-hombre-en-una-fosa-clandestina-de-uruapan/ . Es titular, no solo slug.
+- Cutzato y osamenta — «Localizan osamenta humana en una fosa de Cutzato, al sur de Uruapan» — Grupo Marmor, https://grupomarmor.com.mx/2026/10/26/localizan-osamenta-humana-en-una-fosa-de-cutzato-al-sur-de-uruapan/ (ruta del 26; titular).
+
+ARG-142-011 (Cajeme)
+- 22 cartuchos y 2 hombres armados detenidos — «Un vehículo a exceso de velocidad lleva a la detención de dos hombres armados en Cajeme y al aseguramiento de 22 cartuchos» — El Imparcial, https://www.elimparcial.com/son/ciudad-obregon/2026/10/26/un-vehiculo-a-exceso-de-velocidad-lleva-a-la-detencion-de-dos-hombres-armados-en-cajeme-y-al-aseguramiento-de-22-cartuchos/ . Es titular, no solo slug.
+- Corporaciones — «Detienen Policía Estatal, Marina y Policía Municipal a dos hombres armados en Cajeme» — Telemax, https://telemax.com.mx/blog/2026/10/26/detienen-policia-estatal-marina-y-policia-municipal-a-dos-hombres-armados-en-cajeme/ (ruta del 26). El borrador dice «corporación no fijada».
+
+Candidata Tepic
+- «Condenan a 15 Años de Prisión a Dos Personas por Portar Armas de uso Exclusivo del Ejército» — Argonmexico, https://argonmexico.com/2026/10/26/condenan-a-15-anos-de-prision-a-dos-personas-por-portar-armas-de-uso-exclusivo-del-ejercito/ . Respalda «15 años» y «dos personas» por titular. Otro titular: «Dan 15 años de prisión a dos personas…» — NX Noticias, https://nxnoticias.com/fgr-condena-15-anos-pareja-armas-exclusivas-ejercito-tepic-nayarit/ .
+
+---
+CIFRAS SOLO EN RESUMEN GENERADO (revisar antes de publicar)
+
+- Hora ~17:47 y «tarde» de -001. Aparecen solo en el cuerpo de Zeta, según el resumen («el reporte al 911 llegó alrededor de las 17:47»). Ningún titular contiene «tarde» ni hora. Milenio dice «noche del lunes» (resumen). El borrador afirma «tarde del lunes 26-OCT, por titulares» y «tarde por titular» (campo `dia`). Esa marca es incorrecta.
+- Hora de -009 («tarde, tras el ataque») y de -010 («mañana, tras el ataque»). Son derivadas de -001 y -003, no tienen fragmento propio.
+- Hora de -003 (~9:58, Curul; «poco antes de las 10:00», Síntesis; «antes de las 11:00», Ambas Manos/Retodiario). Todas en resumen; el borrador lo marca bien. «Ninguna fuente lo sitúa antes de 08:37» es cierto en lo consultado, pero tampoco hay fragmento que lo sitúe después.
+- «15 años 6 meses», multa y «cargadores y cartuchos» de Tepic. El slug de Nayarit Noticias dice «más de 15 años» y el titular de Argonmexico dice «15 años». «6 meses» aparece solo en el cuerpo (Capital México, NX, Notimex). El borrador dice «15 años 6 meses, por slug». Es falso.
+- 2 armas 9 mm y 2 cargadores de Cajeme (cuerpo de Telemax y Uniradio). El borrador los marca bien (RES, no integrados).
+- «Persiguen» y «perseguido varios kilómetros» de -008. El slug de El Heraldo SLP dice «asesinan-a-balazos-a-conductor-en-periferico…» y no menciona persecución. El título de la ficha («PERSIGUEN Y ASESINAN»), el panel y la conclusión 3 («conductores perseguidos») usan «perseguido» como dato firme. Es resumen, y solo para -008.
+- «Tres jóvenes afuera de una vivienda» (-004). Es resumen de La Silla Rota. Milenio y AM describen dos afuera y un tercero en la cochera. El título de la ficha («ATACAN A TRES JÓVENES AFUERA DE UNA VIVIENDA») no se sostiene en titular.
+- Fuga hacia la carretera Tecate–Tijuana (-002). Es resumen de una sola fuente. Milenio dice «terracería» (resumen). Aun así la línea 2 de «Lo que debe hacer el mando» ordena vigilar esa ruta.
+- Nota sobre 03:30 en -007. Mi consulta devolvió que la nota «Michoacán en Línea» con 03:30 está fechada «hace 52 días». Es probable contaminación del resumidor. No arbitro: el borrador conserva la contradicción, correctamente. Contramuro, atiempo y Red Michoacán dicen «tarde». «Tarde» tampoco está en titular.
+- Cifras de sentencias previas en el párrafo «Publicadas antes de la ventana», sin marca de procedencia:
+  - Pánuco, «4 años 8 meses»: solo resumen. El listado FGR no muestra la pena y el slug de Hora Cero no la trae.
+  - Colima, «46 años 2 meses»: el slug dice «más de 46 años»; los «2 meses» son resumen.
+  - Caborca, «8 años»: el slug no trae la pena.
+  - Jalisco, «15 años»: resumen. Solo la fecha 20261019 está en el slug.
+  - Quintana Roo, «140 años»: el slug la trae, pero la fecha 18-oct es resumen.
+  No afectan a ningún total. Marcar cada una «solo por resumen».
+
+---
+CIFRAS HEREDADAS SIN REVERIFICAR
+
+- ARG-140-005 (León), «5 cuerpos». Está en `indice-arg-id.md`, línea 946 (edición 140, 2026-10-21), como «Hallazgo de 5 cuerpos». El borrador ya declara 4 por titulares de AM (https://www.am.com.mx/leon/2026/10/21/leon-hallan-4-cuerpos-esta-manana-dos-en-bolsas-uno-con-huellas-de-violencia-y-otro-calcinado-1857330.html y https://www.am.com.mx/leon/2026/10/23/ve-fiscal-terrible-hallazgo-de-4-cuerpos-alcaldesa-ve-picos-normales-1858084.html). El «5» solo tiene respaldo en el resumen de El Universal y en San Luis Hoy. Respaldo original citable: no lo tiene. Lleva dos o más ediciones: aplica el umbral de fe de erratas.
+- ARG-139-009 (SLP), «20-oct». El índice lo marca FRONTERA (línea 934); la ficha de la edición 139 dice «día solo por resumen». La conclusión 3 lo usa para calcular «siete días» sin esa reserva.
+- ARG-134-REC-003: «13-oct (martes, por resumen)» en el índice (línea 842). Se usa en la conclusión 1 y la propia ficha 134 declara el día solo por resumen.
+- ARG-137-016 (Apatzingán): índice, «día solo por resumen».
+- ARG-141-006 (29 cargadores, 541 cartuchos), ARG-141-REC-005 (5 largas, 30 cargadores, 1,150 cartuchos), ARG-140-013 (edad 47 / 55), Mazatlán (11 granadas), Veracruz (27 detenidos) y Piedras Negras (3 cargadores): el borrador los marca RES o contradichos y los deja fuera de totales. La excepción es Piedras Negras: solo «39 cartuchos» está en el slug de N+. Los «3 cargadores» no, y el borrador no lo marca. No los reverifiqué (fuera de prioridad y sin presupuesto).
+- Reverificado por el índice: ARG-125-033 (Tecate, 2026-09-29, 3 detenidos), ARG-125-036 (Cutzato, 2026-09-28, 1 cadáver) y ARG-139-009 (San Luis Potosí, bulevar Rocha Cordero «a la altura de Tierra Blanca»). Los deslindes citan bien esos datos.
+
+---
+CIFRAS INFERIDAS
+
+- Muertos por agresión 11, heridos 4, cuerpos 1, 5/3/3 por color, 6 entidades, 4 con rojo, densidad 0,46: cálculo propio, declarado en el panorama y en §10. Sí está declarado.
+- Duraciones «catorce días» (Apatzingán) y «siete días» (SLP): cálculo propio declarado, pero con convención inclusiva. Ver descuadres.
+- «Dos o más ediciones sin respaldo» no aplica a estas cifras.
+- Detenidos «cinco» (3+2) y «siete» (3+2+2): cálculo propio declarado. Sí.
+
+---
+CIFRAS CONTRADICHAS (sin arbitrar)
+
+1. -001, heridos. Según titulares de El Imparcial, Punto Norte, Uniradio, TV Azteca BC y NDT: 1 herido. Según titular de Milenio, «Asesinan a mujer policía y hieren a dos agentes FESC en Tecate» (https://www.milenio.com/estados/asesinan-mujer-policia-hieren-agentes-fesc-tecate): 2 heridos. Según titular de Siempre en la Noticia, «…una agente de la FESC y dos personas heridas» (https://siempreenlanoticia.com/ataque-armado-en-tecate-deja-sin-vida-a-una-agente-de-la-fesc-y-dos-personas-heridas/): 2 heridos. El borrador declara solo la contradicción sobre el estado del herido. Milenio es la única «Fuente nacional» de -001 y de -009.
+2. -001, muertos. 1 (la mayoría de titulares y la SSC, por resumen) frente a 2 (Radar Tecate, titular). El borrador la declara.
+3. -001, hora. «Tarde» y 17:47 (Zeta, cuerpo) frente a «noche del lunes» (Milenio, resumen).
+4. -002, composición. Cuatro versiones:
+   - 3 mujeres y 1 hombre (En Línea BC, slug y titular).
+   - Madre, hija y dos nietos (Milenio, titular).
+   - Una señora y tres hijos: dos hombres y una mujer (Blog del Narco, titular, fuente abierta no oficial; https://www.blogdelnarco.org/2026/10/sicarios-ingresaron-una-casa-de-la.html).
+   - Dos hermanos, su madre y otra mujer (resumen de El Congresista y Radar Tecate).
+   El borrador cita solo dos y omite la de Milenio y la de Blog del Narco.
+5. -002, fuga y armas. Terracería, fusil .223 y pistola (Milenio, resumen) frente a carretera Tecate–Tijuana (resumen) y «fusiles de asalto» (Quinta Fuerza, titular).
+6. -010, detenidos. 2 (N+, titular y slug; MTP; Quinceminutos «hay dos detenidos») frente a 1 (Puebla Online, titular). El borrador lo declara.
+7. -007, hora. Tarde frente a ~03:30. El borrador lo declara.
+8. Queréndaro, ubicación. Avenida Álvaro Obregón (Quadratín, La Voz, Contramuro) frente a «Cerrada de Emiliano Zapata 565» y víctimas «localizadas sin vida» (Meganoticias, https://www.meganoticias.mx/morelia/noticia/matan-a-dos-hombres-en-un-taller-mec%C3%A1nico-de-quer%C3%A9ndaro/782820).
+9. -004, heridos. Milenio, «dos muertos y tres heridos» (https://www.milenio.com/comunidad/acambaro-ataque-armado-deja-muertos-heridos), es el hecho del 5-sep (Chicuacen, con una bebé). No es contradicción, pero conviene un deslinde de una línea en la ficha.
+
+---
+CLASIFICACIÓN POR CIFRA (requerida por prioridad)
+
+1. Tecate -001 y -009
+- 1 agente muerta, 1 herido: CITABLE por titular. Con contradicción de heridos, ver arriba.
+- «Tarde por titulares»: INCORRECTA. Es resumen. Marca correcta: «solo por resumen».
+- «Disparo en la cabeza (RES)»: correcta. Es cuerpo de Zeta, de Punto Norte y de Milenio.
+- ¿Segunda muerte? Solo el titular de Radar Tecate; la SSC y las demás fuentes dicen 1.
+- 3 detenidos: CITABLE por titular (Zeta, El Congresista, The Baja Post). Las rutas que el borrador cita para fechar -009 (El Imparcial y Punto Norte 2026/10/26) no mencionan detenidos en su titular. La ruta fechada que sí lo hace es The Baja Post. Corregir.
+- Preliminar de «dos arrestados» (El Imparcial): resumen, no declarado en la ficha.
+
+2. Tecate El Escorial -002
+- 4 muertos: CITABLE por titular, con varias fuentes.
+- 13:00-13:38, calle Eucalipto/Cedro: resumen. Marcado bien.
+- Composición: no fijada. Faltan dos versiones (ver contradichas).
+- «Ningún detenido»: resumen de Radar Tecate. Jornada BC, por resumen, atribuye a la SSC la captura de «tres sicarios». Esto parece la detención de -009 y no consta que sea de este hecho.
+- Fuente nacional: el borrador pone «ninguna» y N=0, pero Milenio publicó el hecho. Corregir a N=1.
+
+3. Tehuacán -003 y -010
+- Hora: resumen, marcada bien.
+- Calidad del herido: no fijada. Matiz: el titular de Ambas Manos dice «hieren a otro», sin sustantivo. El borrador atribuye «otro agente, por titular». Es lectura, no texto literal.
+- 2 detenidos: CITABLE por titular (N+). El borrador dice «por slug». Ambas son válidas.
+- AR-15: CITABLE por titular y slug (MTP).
+- Día de la detención: la ruta fechada que el borrador cita (Retodiario 2026/10/26, «investigan a dos personas») no dice «detenidos». La primera ruta fechada que nombra la detención es Intoleranciadiario 2026/10/27. Es el 26 por resumen (MTP).
+
+4. Acámbaro -004
+- 2 muertos y 1 herido: CITABLE por titular y slug de La Silla Rota. El borrador dice «por slug», que es una marca conservadora.
+- Herido grave: titular de AM 2026/10/27.
+- Hora 22:00/22:20: resumen. Marcado bien.
+
+5. Cutzato -005
+- Restos de un hombre: CITABLE por titular de Changoonga.
+- Día del hallazgo: no fijado, y no se pudo fijar. Grupo Marmor (resumen): «una jornada de búsqueda que se prolongó por varios días». La publicación es del 26, pero el hallazgo puede ser del 24, 25 o 26. Ningún fragmento permite afirmar que fue después de las 08:37 del 26, ni antes.
+- No es ARG-125-036: se confirma. Septiembre = cadáver, descomposición, fracturas; octubre = osamenta con esposas y pulsera.
+- No hay respaldo para integrar como -REC- ni para descartar.
+
+6. Cajeme -011
+- 22 cartuchos y 2 detenidos: CITABLE por titular. El borrador dice «por slug».
+- Armas y cargadores: resumen. Marcado bien.
+- Corporación: fijable por titular de Telemax. Corregir «no fijada».
+- Día: no hay evidencia del día. Publicación 26.
+
+7. Candidata FGR Tepic
+- No localicé boletín FGR con fecha. La consulta `fgr.org.mx` no devolvió ningún comunicado de Nayarit del periodo. Devolvió comunicados de abril de 2026 y de 2025, que son otros casos.
+- Notimex lleva en la ruta `20261027144220`. El equipo lo trata como «posterior al cierre 08:45». Esa hora no es CDMX: la consulta del equipo fue ~09:10 y 14:42 queda en el futuro. Si fuera UTC, equivaldría a 08:42 CDMX, dentro de la ventana. No cambia el veredicto, porque el caso no se integra.
+- Estado: PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR. «Condenan» está solo en titulares de medios. La pena «15 años» está en titular y «6 meses» en resumen. «Dos personas» está en titular. «Cada uno» o «en total» no está especificado, así que la pena no se suma ni se multiplica.
+
+8. Verificación encargada
+- Queréndaro (Quadratín, «Ataque armado en taller de Queréndaro deja 2 muertos y un herido», https://www.quadratin.com.mx/justicia/ataque-armado-en-taller-de-querendaro-deja-2-muertos-y-un-herido/ ; la ruta de Quadratín no lleva fecha). Fecha en ruta: Grupo Marmor, https://grupomarmor.com.mx/2026/10/26/matan-a-dos-hombres-en-taller-mecanico-de-querendaro-hay-un-herido/ (publicación 26). Otras fuentes: La Voz https://www.lavozdemichoacan.com.mx/seguridad/violencia/ataque-armado-taller-mecanico-querendaro-dos-muertos-herido/ , Contramuro https://www.contramuro.com/ataque-armado-refaccionaria-querendaro/ , MiMorelia https://mimorelia.com/nota-roja/matan-dos-hombres-taller-mecanico-querendaro-hay-un-herido-n5595865 . Cuerpo (resumen): «tarde de este lunes» 26 y primera nota ~20:03. El id n5595865 de MiMorelia es posterior al n5595855 de Apatzingán, fechado 26: indicio débil, no es fecha. Conclusión: hecho propio de ARGOS 142, del 26-oct, tarde (resumen), posterior a 08:37. No es -REC- ni de otro mes.
+- Morelia, San Miguel del Monte–Tumbisca (Quadratín, «Asesinan a 2 hombres al sur de Morelia; presuntamente eran padre e hijo», https://www.quadratin.com.mx/justicia/asesinan-a-2-hombres-al-sur-de-morelia-presuntamente-eran-padre-e-hijo/). Fecha en ruta: Media News, https://medianews.mx/index.php/2026/10/26/acribillan-a-dos-hombres-en-una-camioneta-sobre-la-san-miguel-del-monte-tumbisca/ . La Voz, https://www.lavozdemichoacan.com.mx/seguridad/violencia/acribillan-dos-hombres-carretera-san-miguel-monte-tumbisca-morelia/ , lleva fecha de página 26-oct 17:03 (resumen) y dice «la mañana de este lunes». Contramuro dice «mañana», no «madrugada». Ninguna fuente da hora. Conclusión: es del lunes 26. Por la mañana, la hora no está fijada. No puedo afirmar si fue antes o después de las 08:37, así que no se puede asignar con certeza a 141 o a 142. Es el único caso del corte que cumple la definición de `FRONTERA DE VENTANA — HORA NO FIJADA`. No hay evidencia de que sea de otro mes o año.
+
+---
+DESCUADRES ARITMÉTICOS
+
+- Muertos: 1 (-001) + 4 (-002) + 1 (-003) + 2 (-004) + 1 (-006) + 1 (-007) + 1 (-008) = 11. Coincide con lo publicado. Sensible a -001 (Radar Tecate) y -007 (hora).
+- Heridos: 1+1+1+1 = 4. Coincide. Sensible a -001 (Milenio y Siempre en la Noticia: dos heridos).
+- Cuerpos: 1. Coincide.
+- Colores: 🔴 -001 a -005 = 5; 🟡 -006 a -008 = 3; 🟢 -009 a -011 = 3; total 11. Coincide.
+- Entidades: BC, Pue, Gto, Mich, SLP, Son = 6; con rojo (BC, Pue, Gto, Mich) = 4. Coincide.
+- Duración 26-oct 08:37 → 27-oct 08:45 = 24 h 08 min. Densidad 11 / 24,133 = 0,4558 ≈ 0,46. Coincide.
+- Armamento: ARM-001 = 1 larga y 2 detenidos; ARM-002 = 22 cartuchos y 2 detenidos. Total 1 larga, 22 cartuchos, 4 detenidos; resto n/d. Coincide. No se suman cargadores con cartuchos.
+- Detenidos de conclusiones: 3+2 = 5 y 3+2+2 = 7. Coincide. Los «5» de la conclusión 2 y los «7» de la conclusión 5 no tienen el mismo universo: -011 no es reacción a un ataque.
+- Valoración 2: 1+4 = 5. Coincide, con la misma sensibilidad de -001 (+1 si Radar Tecate acierta).
+- **Descuadre 1.** Conclusión 4 y §10: «seis días después del hallazgo del 21-oct». De 21 a 26 hay 5 días de diferencia; seis solo contando ambos extremos. Corregir a «cinco días después» o «en seis días (cuenta inclusiva)».
+- **Descuadre 2.** Convención inconsistente. Apatzingán 13→26 = «14 días» (inclusive) y SLP 20→26 = «7 días» (inclusive), pero León usa «después». Unificar la convención o declararla.
+- **Descuadre 3.** Valoración 5, «8 DE 11 HECHOS SIN HORA FIJADA»: el recuento (`NAP`) cuenta solo las fichas con la cadena «DÍA DE APERTURA». Con hora fijada por fragmento, no hay ninguna de las 11 (-001 solo por resumen; -009 y -010 derivadas; -002 a -008 y -011 por resumen o sin hora). Corregir a 11 de 11. Si se agrega la marca en -001, -009 y -010, `NAP` pasa a 11 y se debe actualizar el `assert` del script `(NFR, NAP, …) == (0, 8, 6, 4)`.
+- Cobertura: sentencias 19 + 4 + 9 = 32. Armamento 11 + 1 + 20 = 32. Alto impacto 22 + 10 = 32. Coincide. Nota de consistencia: el informe del Noreste dice que `fiscalianl.gob.mx` y `fgjtam.gob.mx` devolvieron páginas del dominio en sentencias, y el cartelón lista NL y Tamps como `NO REVISADA` en sentencias. Es conservador, no excede lo verificado; conciliar.
+- Reglas de CLAUDE.md: «Eventos cualitativos sin cantidad: -009 (armas de los detenidos no publicadas) y -002 (fusiles de asalto por titular)». Ninguno es un aseguramiento: nadie publicó armas aseguradas en -009 y los «fusiles de asalto» de -002 son del agresor, no asegurados. Clasificarlos como cualitativos de armamento asegurado induce a leerlos como aseguramientos. Retirar de esa línea o rotular «armas del agresor, no aseguradas».
+- Regla de detenidos: el conteo de «detenidos en aseguramiento» exige cifra publicada «expresamente por la autoridad». Los 4 detenidos salen de titulares de medios; la autoridad aparece solo en resumen. Se integra por regla de Bajo en armamento, pero la tarjeta debe decirlo.
+
+---
+CORRECCIONES (lista numerada)
+
+1. -001: cambiar «tarde del lunes 26-OCT, por titulares» y `dia="26-OCT, TARDE POR TITULAR"` a «lunes 26-OCT por titular (El Congresista); tarde/~17:47 solo por resumen (Zeta); Milenio dice “noche”». Agregar `AP` (`PUBLICADO EL DÍA DE APERTURA SIN HORA`) en -001, -009 y -010. Actualizar NAP, `assert`, la Valoración 5 («11 DE 11») y las §3 y §6 del archivo de fuentes («8 de 11»). Fuente: Zeta https://zetatijuana.com/2026/10/ejecutan-a-agente-de-la-fesc-en-tecate-detienen-a-tres-presuntos-responsables/ ; Milenio https://www.milenio.com/estados/asesinan-mujer-policia-hieren-agentes-fesc-tecate
+
+2. -001 y -009: declarar `CIFRA CONTRADICHA` en heridos (Milenio y Siempre en la Noticia titulan dos heridos). Mantener 1 en el conteo con la reserva, o marcar el renglón del total de heridos como «≥4». URLs: https://www.milenio.com/estados/asesinan-mujer-policia-hieren-agentes-fesc-tecate ; https://siempreenlanoticia.com/ataque-armado-en-tecate-deja-sin-vida-a-una-agente-de-la-fesc-y-dos-personas-heridas/
+
+3. -009: sustituir las rutas «El Imparcial; Punto Norte 2026/10/26» por The Baja Post (2026/10/26) y El Congresista (titular con el día). Agregar la reserva de «dos arrestados preliminares» (El Imparcial, resumen). https://thebajapost.com/2026/10/26/fallece-agente-de-la-fesc-en-enrentamiento-armado-en-tecate-hay-tres-detenidos-e-intenso-operativo-de-seguridad/
+
+4. -002: poner `nac="Milenio"`, N=1. Añadir las versiones de composición «madre, hija y dos nietos» (Milenio, titular) y «señora y tres hijos» (Blog del Narco, titular, no oficial). Reescribir la línea 2 de «Lo que debe hacer el mando», o marcar la ruta de fuga como contradicha. https://www.milenio.com/estados/asesinan-madre-hija-nietos-ataque-armado-tecate
+
+5. -003: la fórmula «otro agente, por titular (Ambas Manos)» debe decir «“hieren a otro”, sin sustantivo (Ambas Manos)».
+
+6. -010: marcar el día de la detención como «26-oct por resumen (MTP); primera ruta fechada que la nombra: 27-oct (Intoleranciadiario)». Cambiar «por slug (N+)» a «por titular y slug (N+)». Mantener la contradicción 1/2.
+
+7. -004: cambiar el título de la ficha a «DOS MUERTOS Y UN HERIDO GRAVE». Quitar «tres jóvenes afuera de una vivienda» o marcarlo «solo por resumen, contradicho». Citar AM 2026/10/27 como segunda ruta fechada (`fechadas`). Poner «herido grave» por titular (AM). https://www.am.com.mx/guanajuato-sur/2026/10/27/ataque-armado-en-acambaro-matan-a-2-hombres-y-queda-1-grave-1859412.html
+
+8. -005: mantener `AP` y «día del hallazgo no fijado». Agregar «jornada de búsqueda de varios días (Grupo Marmor, resumen)», que hace más probable un hallazgo anterior al 26. Si el coordinador prefiere no contar 1 cuerpo en un total «del corte», el renglón debe ir con reserva visible. Veredicto: INTEGRAR MARCADA CON RESERVA.
+
+9. -011: cambiar «corporación no fijada» a «Policía Estatal, Marina y Policía Municipal, por titular (Telemax 2026/10/26)». Agregar Telemax a `fechadas`. Marcar «22 cartuchos y 2 detenidos, por titular y slug». https://telemax.com.mx/blog/2026/10/26/detienen-policia-estatal-marina-y-policia-municipal-a-dos-hombres-armados-en-cajeme/
+
+10. -008: quitar «persiguen» del título, panel, hecho y conclusión 3, o marcarlo «solo por resumen» en todos. El slug dice «asesinan-a-balazos-a-conductor-en-periferico-a-la-altura-de-tierra-blanca». https://elheraldoslp.com.mx/new/2026/10/26/asesinan-a-balazos-a-conductor-en-periferico-a-la-altura-de-tierra-blanca/
+
+11. Tepic: cambiar «15 años 6 meses, por slug» a «15 años, por titular (Argonmexico 2026/10/26; NX); “6 meses” solo por resumen; multa sin monto; 2 sentenciados por titular». No integrar, como ya está. No describir la hora de Notimex como «posterior al cierre».
+
+12. HECHOS NUEVOS A FICHAR (hechos propios, 🔴 homicidio múltiple):
+   a) Queréndaro, Mich. Taller «Pequeño Gigante», avenida Álvaro Obregón. 2 muertos y 1 herido por titular. Publicado 26 por ruta (Grupo Marmor). Tarde, solo por resumen. Marca `PUBLICADO EL DÍA DE APERTURA SIN HORA`. Reserva: Meganoticias da otra ubicación. Fuentes: Quadratín, La Voz, Contramuro, Grupo Marmor, MiMorelia, Meganoticias.
+   b) Morelia, San Miguel del Monte–Tumbisca. 2 hombres, presuntamente padre e hijo, por titular. Publicado 26 (Media News; La Voz 17:03 por resumen). «Mañana del lunes», solo por resumen. Marca `FRONTERA DE VENTANA — HORA NO FIJADA`. Declarar en la ficha que, si aparece un ancla anterior a 08:37, se corrige por fe de erratas a ARGOS 141 y se retira del total donde se contó.
+   Efecto en totales (cálculo propio): hechos propios 11→13; 🔴 5→7; muertos 11→15; heridos 4→5; entidades 6 (sin cambio); entidades con rojo 4 (sin cambio); densidad 13/24,133 = 0,54; NFR 0→1. Retirar ambos de la lista de «vistos» del §6 del archivo de fuentes. Actualizar Valoración 1 y 2 (siete rojos; Michoacán tres). Ambos son hechos distintos entre sí y de -005 y -007: otro municipio, otra hora, otras víctimas.
+
+13. Conclusión 4 y §10: «seis días después» → «cinco días después» (21→26 = 5). Unificar la convención con las conclusiones 1 y 3.
+
+14. Fe de erratas a ARG-140-005: retirar el «5» y publicar «4 cuerpos» (titulares AM 21-oct y 23-oct, este último con el fiscal), o `CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO`. El «5» solo tiene respaldo en resumen y lleva dos o más ediciones sin fragmento. Seguir señalándolo no es salida.
+
+15. Conclusión 3: marcar que el 20-oct de ARG-139-009 es «día solo por resumen» y FRONTERA según el índice (línea 934), y quitar «perseguidos» de ARG-142-008.
+
+16. Línea «Eventos cualitativos sin cantidad»: retirar -009 y -002, o rotularlos «armas del agresor, no aseguradas». Añadir a la tarjeta «Detenidos» que los 4 son por titulares de medios y no por cifra de autoridad.
+
+17. Párrafo «Publicadas antes de la ventana»: marcar «solo por resumen» las penas de Pánuco (4 años 8 meses), Colima («2 meses»), Caborca (8 años) y Jalisco (15 años). Piedras Negras: marcar «3 cargadores» como resumen.
+
+Búsquedas utilizadas: 27 de 28.
+## control-duplicidad-r1 (sin búsquedas)
+
+INFORME editor-duplicidad · ARGOS 142 · RONDA 1
+Borrador auditado: /home/user/Prueba-/reports/argos-2026-10-27.html, -movil.html y .txt. Cruzado contra las ediciones 19, 20, 21, 25 y 26-oct, el índice y los archivos de fuentes y equipos. Sin búsquedas web.
+
+VEREDICTO: CORREGIR ANTES DE PUBLICAR. No hay duplicidad real confirmada y la aritmética de totales cuadra. Hay una afirmación falsa (días), un posible duplicado sin deslindar bien, un hecho 🔴 de otra ventana sin ficha ni registro, conclusiones mal contadas, y varias repeticiones entre secciones.
+
+Aviso de límite: el borrador llega con las fusiones editoriales ya hechas. Lo de la duplicidad interna lo cruzo por criterios en las fichas y en `argos-2026-10-27-equipos.md`, y el borrador ya no conserva rastro de lo que se fusionó antes.
+
+---
+## A. HALLAZGOS (por severidad)
+
+### Primero: afirmaciones falsas o que corrompen cifras
+
+**1. Conclusión 4 (León): "seis días después" es falso.**
+- Hallazgo de cuerpos ARG-140-005: 21-oct (índice). ARG-142-006: 26-oct. La diferencia es de 5 días.
+- El §10 de `argos-2026-10-27-fuentes.md` repite el error: "León, 21 y 26-oct (seis días después)".
+- Las tres conclusiones temporales usan convenciones distintas:
+  - Apatzingán: "catorce días", contando ambos extremos (13 al 26).
+  - SLP: "siete días" (20 y 26), también inclusivo.
+  - León: "seis días después", que es transcurrido y sale 5.
+- Recomendación: "cinco días después", o "en seis días" si se cuenta inclusivo, y unificar la convención.
+
+**2. POSIBLE DUPLICIDAD no descartada: ARG-142-008 contra ARG-139-009 (SLP).** Todo el análisis viene de `argos-2026-10-21.txt` líneas 310-327 y `argos-2026-10-27-equipos.md` línea 229.
+- Coinciden en 7 criterios:
+  - entidad y municipio (SLP capital);
+  - punto geográfico: ambas dicen "a la altura de Tierra Blanca";
+  - tipo de víctima: 1 conductor;
+  - modus: perseguido y baleado, el vehículo choca contra la contención o el muro de contención;
+  - horario: noche;
+  - fuente única regional en ambos casos;
+  - titulares casi idénticos: "persiguen y asesinan a conductor a balazos en Rocha Cordero" y "asesinan a balazos a conductor en Periférico a la altura de Tierra Blanca".
+- Lo que los separa:
+  - la fecha por ruta: Potosinoticias 2026/10/21 ("noche del martes 20") contra El Heraldo SLP 2026/10/26 ("noche de este lunes");
+  - el nombre de la vialidad.
+- La fecha sí separa los casos. Lo de "otra vialidad" no está demostrado: ambas notas dan el mismo punto de referencia. El deslinde de la ficha (`NO es ARG-139-009 … otra vialidad, otro día`) y la Conclusión 3 ("vialidades distintas") lo dan por probado.
+- El propio equipo anotó el riesgo de que el hecho sea del domingo 25.
+- Recomendación:
+  - Mantener ARG-142-008 solo con deslinde reescrito: citar los dos criterios que separan y declarar que el punto "Tierra Blanca" coincide.
+  - Cotejar el texto de El Heraldo por si es seguimiento del hecho del 20.
+  - Quitar "vialidades distintas" de la Conclusión 3.
+- Si resultara el mismo hecho, caen la ficha, la Conclusión 3, 🟡 de 3 a 2 y muertos de 11 a 10.
+
+**3. Acámbaro, Campamento Ferrocarriles: hecho 🔴 de otra ventana sin ficha ni registro.**
+- El deslinde de ARG-142-004 lo cita ("19-oct, Correo 2026/oct/19: otro hecho, otra ventana"). El equipos (línea 400) dice: 2 muertos, Correo 2026/oct/19 y AM 2026/10/20.
+- No existe en ningún HTML, índice, fuentes ni `_pendientes.md` previos. Tampoco figura en el §6 (vistos) ni en el §7 (fe de erratas) del archivo de fuentes de 142.
+- Son 2 muertos, es decir homicidio múltiple 🔴, con ruta fechada. Por la regla de "El cartelón es para el mando", punto 3, corresponde ficha `-REC-` con su ventana de origen y fe de erratas compacta. Como mínimo debe quedar registrado en el §6 con su motivo.
+- Afecta además la acción 4 de la portada ("cotéjelo con los ataques armados recientes del municipio"), que hoy no tiene ningún ARG-ID previo contra el cual cotejar.
+
+**4. Tres posibles 🔴 "sin ancla" que 142 no resuelve.**
+- Los casos son Queréndaro (2 muertos y 1 herido en un taller), Morelia–Tumbisca (2 muertos) y Cañada Morelos (2 muertos, sin fecha).
+- El §6 de fuentes remite la decisión a `procedencia-cifras` R1, pero el §11 aún dice "Se completa al cierre".
+- No hay ruta fechada en ninguno, así que no pueden ser ficha. Pero un homicidio múltiple no puede quedar solo en el archivo de fuentes si luego se resuelve a 26-oct. La ronda de `procedencia-cifras` debe dejar por escrito el desenlace y su efecto en 🔴, muertos y la Conclusión 1 (Michoacán).
+- Yautepec (dirigente de taxis herido, 🟡) y Chihuahua (levantón, 🟡) quedan bien como vistos. Solo se corrige que el §6 trate distinto a Zapopan, Yecapixtla y Alpatláhuac (ver hallazgo 15).
+
+**5. Conclusión 4 cuenta mal contra los deslindes de la propia edición.**
+- El deslinde de ARG-142-006 cita dos antecedentes en León: ARG-140-005 y el ataque de la col. Chapalita (1 muerto y 1 lesionada, moto, noche del sábado 24, Correo 2026/oct/25).
+- La conclusión solo usa ARG-140-005. Omite Chapalita, que tiene el mismo modus (moto) y está a 2 días.
+- Es justo el fallo que `_pendientes.md` (Deuda de método 3) pide evitar: contar el patrón contra el índice y contra los deslindes de la edición. En cambio Apatzingán sí cuadra con su deslinde y con el índice: 134-REC-003, 135-003, 135-004, 137-016 y 142-007, y no hay más hechos de Apatzingán en 12 a 26-oct.
+- En SLP Tierra Blanca no hay más hechos que los dos citados.
+
+**6. Tulantepec (candidatos de sentencias): la fecha cambió sin aviso y no hay hecho nuevo.**
+- ARGOS 141 decía "fallo condenatorio del 8-oct". ARGOS 142 dice "del 9-oct", con la misma fuente (La Silla Rota, ruta 2026/10/9).
+- Esa ruta fecha la publicación, no el fallo. Regla de procedencia: la fecha de la URL fija la publicación, no el hecho. Las ediciones 133, 134, 135 y 136 decían "8-9 oct".
+- El renglón es el mismo de 141 (28-oct 17:00) más "reanudada". Es re-presentación de un caso en curso sin desarrollo nuevo sustancial.
+- Recomendación: dejarlo como "sin cambio desde ARGOS 141" o pasarlo a `_pendientes.md`, y no inventar fecha.
+
+**7. Conclusión 5: "la única candidata del corte" es falso.** La misma edición lista tres candidatos (Tepic, Tulantepec, Ramos Arizpe). Se corrige a "la única con pena publicada".
+
+**8. Conclusión 2: "captura en flagrancia" no está sostenida por las fichas.**
+- Ni ARG-142-009 ni ARG-142-010 dicen flagrancia. 009 habla de "operativo de reacción". 010 habla de "investigan a dos personas" y "puestos a disposición".
+- "Dos operativos de reacción" solo aparece en 009.
+- Un "patrón" con n=2, ambos del mismo día, es débil para una conclusión. Reformular sin "flagrancia".
+
+**9. Detenidos de ARG-142-010: "se integra la posterior".**
+- El criterio de que la cifra "2" es "posterior" no consta. Ninguna de las dos notas tiene hora.
+- La base real, según el equipos (línea 452), es el comunicado de la FGE por resumen que citan 7 medios, entre ellos N+ y Telediario. Reescribir con esa base.
+- Importa porque el 2 entra en el total de detenidos (4) y en las Conclusiones 2 y 5 (5 y 7).
+- Además, la ruta fechada de 010 es Retodiario ("investigan a dos personas"). Esa ruta fecha la investigación, no la detención. Las rutas que sostienen "detenidos" (N+, MTP) no tienen fecha.
+
+### Segundo: editorial y consistencia
+
+**10. Mapa de aseguramientos: Puebla en 🟢.**
+- CLAUDE.md fija 🔴 = armamento vinculado a un evento de alto impacto, 🟡 = derivado de agresión.
+- El AR-15 de ARM-001 se asegura a los detenidos por matar a un agente (ARG-142-003, 🔴). `EVENTOS_ARM` y el mapa móvil lo pintan 🟢. Debe ser 🔴, o justificarse por escrito.
+- Cajeme 🟢 está bien.
+
+**11. ARG-142-002 aparece como "evento cualitativo" de armamento sin ser aseguramiento.**
+- Los "fusiles de asalto por titular" son de los agresores, no se aseguraron. La propia ficha dice "sin fila — armamento asegurado: no publicado".
+- Quitarlo de la línea "Eventos cualitativos sin cantidad" o rotularlo "armas usadas, no aseguradas".
+- ARG-142-009 como cualitativo sí está bien.
+
+**12. Contradicción interna sobre el día de ARG-142-001.**
+- La ficha 001 dice: "«27-oct» en dos medios: ninguna ruta lo sostiene; todas las rutas fechadas son del 26".
+- La ficha 002 lista Red Metropolitana (2026/10/27) como ruta fechada, y su propio deslinde dice que Red Metropolitana agrupa ambos hechos.
+- Entonces sí hay una ruta del 27 que cubre el ataque a los agentes. Corregir la frase de la ficha 001. La hora "tarde ~17:47" sigue siendo por titulares y resumen.
+
+**13. Repetición entre secciones. Recomendación: repartir funciones, no recortar.**
+- La Valoración 4 (detenidos del mismo día, 1 fusil, 22 cartuchos, ninguna sentencia) repite Conclusión 2 + Conclusión 5.
+- ARG-142-009 y -010 entran en 3 bloques narrativos (V4, C2, C5), además de panorama, ficha, tabla de armamento y portada.
+- "Ninguna sentencia integrable" sale en V4, C5 y el módulo de sentencias.
+- La Valoración 3 ("tres homicidios únicos en Guanajuato, Michoacán y SLP") repite C1, C3 y C4, que toman uno cada una.
+- Propuesta de reparto:
+  - V3 y V4: aplicar la metodología con los números del semáforo, sin recontar hechos;
+  - C2 y C5: unificar en una sola;
+  - dejar a la C1 solo el patrón de Apatzingán.
+- Concordia (ARG-141-REC-005, 5 largas, 30 cargadores, 1,150 cartuchos) se repite en los "Seguimientos" de la página 2 y en los "Vistos" de armamento. Dejar una.
+- Tampoco repite titulares: la portada solo trae acciones con ARG-ID y 3 recuadros ≤5 ítems; no hay Ejes del día ni segunda tabla.
+
+**14. Cobertura: tensión en el renglón FGR.** "FGR revisada: Sí … sin comunicado de la ventana", mientras la tabla atribuye a la FGR las candidatas de Tepic y Ramos Arizpe (publicadas el 26-oct). Con egreso bloqueado el rótulo correcto es SIN RESULTADO INDEXADO EN VENTANA, no "sin comunicado".
+
+**15. Registro de omisiones de 141 incoherente (§6 de fuentes).**
+- Alpatláhuac se registra como omisión de 141 (🟡, 5→6 amarillos, 4→5 muertos). Zapopan "domingo 25 noche" y Yecapixtla "00:50 del 26" también caen en la ventana de 141 y no se registran.
+- El efecto "amarillos 5→6, muertos 4→5" queda subestimado. Unificar el criterio.
+
+**16. Etiqueta literal.** El caso de Tepic se rotula "aseguramiento anterior, publicado con la sentencia". El texto de CLAUDE.md exige la etiqueta literal "Evento anterior publicado durante el corte". Lo mismo aplica a otros vistos de armamento con hecho previo, p. ej. Concordia del 23-oct.
+
+**17. Deslinde de ARG-142-010 ("Retirado de ARGOS 141 junto con el ataque").**
+- El HTML de 141 solo menciona la detención y el arma larga (vistos del armamento, `argos-2026-10-26.html` línea 818). No dice nada del ataque.
+- Ajustar la frase: 141 solo recoge la detención y el arma larga; el ataque ni se menciona.
+
+**18. La ficha 009 cita en el Hecho "El Imparcial; Punto Norte 2026/10/26"** como rutas de la detención. La Trazabilidad solo nombra The Baja Post con fecha. Alinear.
+
+**19. Conclusiones repetidas de ediciones previas, para el registro.**
+- C1 (Apatzingán) ya existía en 135 (C3), 137 (C5) y 134. 142 la actualiza a cinco hechos. Citar el origen para que se lea como desarrollo.
+- C5 (brecha detención–condena) repite el tema de las conclusiones de 133, 134, 135 y 140 (C5 en cada una). Ninguna repite una conclusión de ARGOS 141.
+
+**20. Notimex Tepic.** El equipos (línea 381) descarta una ruta `…20261027144220` por "14:42 posterior al cierre". Si el sello es UTC, son las 08:42 CDMX, dentro de ventana. No cambia el resultado porque el caso no se integra. Anotarlo en el archivo de fuentes.
+
+### Tercero: cierre pendiente
+- `indice-arg-id.md` no contiene ARG-142-* (hay 0). Agregarlo al cierre; sin él el cruce depende de abrir el archivo correcto.
+- §11 del archivo de fuentes ("Los dos controles editoriales") está vacío.
+- `reports/_pendientes.md` sigue en "Abiertos que ARGOS 142 hereda". Hay que cerrar Tehuacán, Cutzato y la frontera Tuxpan, y abrir los de esta ronda.
+
+---
+## B. YA PUBLICADO EN EDICIÓN ANTERIOR
+- Tehuacán (ARG-142-003 y -010): confirmado que ARGOS 141 no tiene ficha. El HTML solo lo cita en la línea de "VISTOS, NO INTEGRADOS" del bloque de armamento ("detención y arma larga del lunes 26 … posterior al cierre: ARGOS 142"). No hay EVENTOS, ARG-141-*, índice ni totales de 141 con Tehuacán. Categoría: no es duplicado; hecho propio de 142. Los totales de 141 no incluyen sus cifras.
+- Cutzato (ARG-142-005) contra ARG-125-036: ver C.
+- Tulantepec: re-presentación de un caso en curso (hallazgo 6). Sentencia sin pena; no es duplicado de un ARG-ID.
+- Falsos vacíos: ninguno detectado. El borrador no declara vacíos de cobertura de una edición anterior. El renglón "Boletín federal 26-oct" es SIN RESULTADO INDEXADO con triple consulta.
+- Fe de erratas: ninguna nueva. Las condicionadas de ARG-140-FE-001 y ARG-141-FE-001 se heredan sin cambio.
+
+## C. CRUCES VERIFICADOS SIN DUPLICIDAD
+- **Tecate ARG-142-001 contra -002:** misma fecha, entidad y municipio; los separan colonia (Luis Alfonso Garzón contra El Escorial), hora (~17:47 contra ~13:00-13:38), corporación (FESC contra ninguna) y víctimas (agentes contra civiles). Hechos distintos.
+- **Tecate -001 contra -009:** delito y detención en la misma ventana → dos fichas (regla de ARG-101-008). Correcto.
+- **Tecate -009 contra ARG-125-033 (29-sep):** coinciden en 3 detenidos y "armas sin cifra". Los separan la fecha (29-sep contra 26-oct) y la corporación (federal contra SSC). Descartado.
+- **Tehuacán -003 contra -010:** mismo caso, dos fichas por regla. Contra ARG-132-REC-001 (San Marcos Necoxtla, 12-oct): otro hecho. `Tepeyac`, `Tetitzintla`, `Retodiario` y `Síntesis` no figuran en ediciones previas.
+- **Cutzato ARG-142-005 contra ARG-125-036 (28-sep, 1 cadáver):** coinciden entidad, municipio, localidad, colectivo, fosa y un hombre. Los separa la ruta Changoonga 2026/10/26 contra Red Michoacán 2026/09/28, y los indicios (osamenta, esposas y pulsera; la ficha de 125 no los menciona). La separación descansa en una sola ruta fechada. Se mantiene con reserva, y se acepta que 141 lo haya dejado en vistos por la misma duda.
+- **Apatzingán ARG-142-007 contra 134-REC-003, 135-003, 135-004 y 137-016:** otra colonia o lugar, otra fecha, otras víctimas. No figura "Rayón" ni "Hospital Regional" antes.
+- **León ARG-142-006 contra ARG-140-005 (cuerpos, 21-oct):** otro hecho. Contra Chapalita (24-oct): otro hecho (ver hallazgo 5).
+- **Acámbaro ARG-142-004:** ARG-101-007 (18-ago, 🟢) es otro hecho. "Velasco Ibarra", "Luis Pasteur" y "Cerro del Toro" no figuran antes.
+- **Cajeme ARG-142-011:** ARG-119-007 y ARG-133-REC-005, otros hechos. "Xochiloa" no figura. "22 cartuchos" no aparece en ninguna edición previa de octubre.
+- **Michoacán/Veracruz/Chihuahua/Yautepec (vistos):** Yautepec taxis (26-oct) es distinto del Yautepec Santa Rosa de 141 (25-oct 04:35). Ostuacán: el linchamiento ya estaba en la ficha de 141 (REC-003).
+- **Tepetzingo, "San Juanito" y "Tlahuica":** sin coincidencias con ediciones previas (los hits de "Tlahuica" son de agosto, otra cosa).
+- **Armamento ARM-001 y ARM-002 contra el índice:** sin coincidencia de cifras ni localidad.
+
+## D. ARITMÉTICA Y COBERTURA (verificada, sin descuadre salvo lo señalado)
+- Semáforo 5/3/3 = EVENTOS 11 (`node tools/validar.js` sobre el HTML: OK). Radar en escritorio y móvil: 5/3/3. Mapa móvil: SON verde, SLP amarillo, PUE, MIC, GUA y BCN rojo; el mapa de armamento solo tiene SON y PUE (ver hallazgo 10).
+- Muertos 11 = 1+4+1+2+1+1+1 (coincide con §10). Heridos 4 = 1+1+1+1. Cuerpos 1. Armas largas 1, cartuchos 22, detenidos 4 (2+2). Entidades 6; con rojo 4.
+- Valoración 2: 1+4 = 5. Densidad 11/24,13 = 0,46. Marcas: 8 PUBLICADO EL DÍA DE APERTURA SIN HORA (002, 003, 004, 005, 006, 007, 008, 011) y 0 FRONTERA.
+- Conclusión 2: 3+2 = 5 ✓. Conclusión 5: 3+2+2 = 7 ✓. Apatzingán: 5 hechos en 14 días inclusive ✓. SLP: 20 y 26 (7 días inclusive) ✓. León: falla (hallazgo 1).
+- Trazado ficha → tabla: todas las fichas con detenidos o aseguramiento llegan a `ARM` o están declaradas fuera (009 y 002). 2 cortas y 2 cargadores de Cajeme: declarados "NO SE INTEGRAN". La corporación "Seguridad Pública municipal" de ARM-001 solo aparece en la tabla, no en la ficha 010.
+- Cobertura: sentencias 19+4+9 = 32; armamento 11+1+20 = 32; alto impacto 22+10 = 32; sin entidad repetida ni faltante. Los rótulos de las tres casillas se respetan.
+- Sentencias: 0 integrables, y los tres candidatos están en la tabla con motivo.
+- Escritorio ↔ móvil ↔ texto: HTML y .txt coinciden palabra por palabra en ARG-ID y cifras. En el móvil, las 11 fichas, la portada (5 acciones), el semáforo y la Valoración/Conclusiones/Indicador son iguales. El índice por entidad y la tabla de armamento por evento aparecen solo en escritorio, con aviso expreso en el móvil (igual que 141). Consecuencia: la confianza y los deslindes de ARM-001/002 no existen en el móvil.
+- `node tools/validar.js` sobre el móvil da FALLOS (sin `<script>`, tablas 1 ≠ table-wrap 0) también con la edición 141: ya está anotado en `_pendientes.md` (Deuda 7).
+- Reglas de forma: solo 3 recuadros `alerta contexto` (portada, Valoración, Conclusiones); ninguno explica colores ni método; todas las líneas de acción de la portada y las "Línea:" de las Conclusiones son solicitud. Sin "exija". Sin "Ejes del día" ni segunda tabla de titulares.
+
+## E. QUÉ CORREGIR ANTES DE PUBLICAR (resumen)
+1. Corregir "seis días" (hallazgo 1) y la convención de días.
+2. Reescribir el deslinde de ARG-142-008 y quitar "vialidades distintas" de la Conclusión 3 (hallazgo 2).
+3. Acámbaro Ferrocarriles: fichar como `-REC-` o registrar en §6 con motivo (hallazgo 3). Cerrar la suerte de Queréndaro, Tumbisca y Cañada Morelos en el §11 (hallazgo 4).
+4. Rehacer la Conclusión 4 con Chapalita; quitar "flagrancia" de la Conclusión 2; "única candidata" de la Conclusión 5 (hallazgos 5, 7 y 8).
+5. Tulantepec: no inventar fecha; marcar sin cambio o retirar (hallazgo 6).
+6. Mapa de armamento: Puebla a 🔴 o justificar; 142-002 fuera de cualitativos (hallazgos 10 y 11).
+7. Repartir funciones entre Valoración y Conclusiones (hallazgo 13).
+8. Corregir el deslinde de 001 sobre "todas las rutas del 26" (hallazgo 12); alinear fuentes de 009; ajustar renglón FGR; unificar el registro de omisiones de 141; rótulos literales de "Evento anterior publicado durante el corte".
+9. Al cierre: actualizar `indice-arg-id.md`, §11 y `_pendientes.md`.
+
+Si se corrige en sitio (edición del día aún no distribuida), dejar constancia de cada punto en `/home/user/Prueba-/reports/argos-2026-10-27-fuentes.md`.
+
+Archivos relevantes (todos bajo /home/user/Prueba-/reports/): argos-2026-10-27.html, argos-2026-10-27-movil.html, argos-2026-10-27.txt, argos-2026-10-27-fuentes.md, argos-2026-10-27-equipos.md, argos-2026-10-26.html, argos-2026-10-26.txt, argos-2026-10-21.txt, indice-arg-id.md, _pendientes.md.
