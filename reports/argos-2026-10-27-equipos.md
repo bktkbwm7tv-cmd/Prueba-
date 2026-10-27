@@ -1317,3 +1317,269 @@ Aviso de límite: el borrador llega con las fusiones editoriales ya hechas. Lo d
 Si se corrige en sitio (edición del día aún no distribuida), dejar constancia de cada punto en `/home/user/Prueba-/reports/argos-2026-10-27-fuentes.md`.
 
 Archivos relevantes (todos bajo /home/user/Prueba-/reports/): argos-2026-10-27.html, argos-2026-10-27-movil.html, argos-2026-10-27.txt, argos-2026-10-27-fuentes.md, argos-2026-10-27-equipos.md, argos-2026-10-26.html, argos-2026-10-26.txt, argos-2026-10-21.txt, indice-arg-id.md, _pendientes.md.
+
+## control-duplicidad-r2 (sin búsquedas)
+
+INFORME editor-duplicidad · ARGOS 142 · RONDA 2
+Auditado: /home/user/Prueba-/reports/argos-2026-10-27.html, -movil.html y .txt, el archivo de fuentes (§6, §7, §10, §11) y los informes de la ronda 1 al final de argos-2026-10-27-equipos.md. Cruzado contra las ediciones de 19, 20, 21, 25 y 26-oct, contra otras de octubre (grep de Apatzingán, León, Tierra Blanca, Queréndaro, Tumbisca, Cutzato) y contra indice-arg-id.md. Sin búsquedas web.
+Límite: el borrador llega con las fusiones editoriales hechas. Solo puedo confirmar que quedaron limpias.
+
+VEREDICTO: CORREGIR ANTES DE PUBLICAR.
+No hay duplicidad real, la aritmética cuadra y las 12 correcciones de la ronda 1 que verifiqué como aplicadas están en las tres versiones. Quedan una afirmación falsa en la Conclusión 5, una clasificación contradictoria (ARG-142-008), una corrección de la ronda 1 omitida sin motivo escrito, y varios puntos editoriales y de registro. Todo se arregla en sitio, sin tocar cifras. La edición del día no está distribuida; corrección en sitio y constancia en el archivo de fuentes, no fe de erratas.
+
+========================================================
+DUPLICIDAD INTERNA
+========================================================
+Ninguna confirmada. Pares revisados, con los criterios que los separan, en la sección «Cruces verificados».
+
+========================================================
+YA PUBLICADO EN EDICIÓN ANTERIOR
+========================================================
+- Ninguna duplicidad real ni falso vacío. El borrador no declara vacíos de cobertura de ediciones anteriores. «Boletín federal 26-oct» es SIN RESULTADO INDEXADO con triple consulta.
+- Queréndaro (ARG-142-012) y Morelia–Tumbisca (ARG-142-013) no figuran en ningún HTML, .txt, índice ni archivo de fuentes previo. Solo aparecen en los archivos de 142. No duplican -005 ni -007 (ver cruces).
+- Reserva sobre ARG-142-005 (Cutzato) contra ARG-125-036 (28-sep): ver hallazgo 5.
+- Fe de erratas: ninguna nueva. Siguen condicionadas ARG-141-FE-001, ARG-140-FE-001 y Río Bravo (129).
+
+========================================================
+HALLAZGOS NUMERADOS (por severidad)
+========================================================
+
+A. AFIRMACIONES FALSAS O CONTRADICTORIAS
+
+1. Conclusión 5 afirma algo que la propia tabla desmiente.
+   - Texto: «la única candidata con pena publicada, por portación de armas exclusivas en Tepic».
+   - La tabla de candidatos (.txt 516-519) tiene una columna «Pena publicada» con Ramos Arizpe: «7 años 6 meses y 75 UMA, SOLO POR RESUMEN». Tulantepec dice «Sin pena».
+   - Tepic es la única con pena por titular. Que Ramos Arizpe quede solo por resumen no la saca de la columna.
+   - Corrección: «la única con pena por titular», o quitar la frase.
+   - Es el mismo vicio que la ronda 1 corrigió de «única candidata», cambiado de lugar.
+
+2. ARG-142-008 (SLP, Periférico/Tierra Blanca): clasificación contradictoria.
+   - El deslinde (.txt 417-421) dice «HECHO DISTINTO POR FECHA; POSIBLE SEGUIMIENTO NO DESCARTADO». Aun así la ficha cuenta como 🟡 y suma 1 muerto (en los 15).
+   - Un «seguimiento» de ARG-139-009 sería una re-presentación del mismo homicidio del 20-oct. Si es eso, no es hecho propio y no debe sumar.
+   - Si es otro homicidio, «seguimiento» no aplica.
+   - La Conclusión 3 arrastra el problema: abre con «SEGUNDO CONDUCTOR ASESINADO…» y cierra con «posible seguimiento no descartado».
+   - Coinciden: entidad, municipio, punto «a la altura de Tierra Blanca», tipo de víctima, modus, fuente regional única. Los separan la ruta (21-oct frente a 26-oct) y «martes» frente a «este lunes» (solo por resumen).
+   - Recomendación, a decidir:
+     (a) Conservar como hecho distinto, sustentado en «este lunes» con ruta del 26. Eliminar «POSIBLE SEGUIMIENTO NO DESCARTADO» de la ficha y de la Conclusión 3.
+     (b) Si se mantiene la duda, aplicar la salida de la regla dura: POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN. Eso baja 🟡 de 3 a 2 y muertos de 15 a 14, y la Conclusión 3 desaparece.
+   - Mi lectura: (a), porque el día «este lunes» está en la nota fechada el 26 y el hecho anterior es de seis días antes.
+
+3. Corrección de la ronda 1 sin aplicar y sin constar en «No aplicado» de §11.
+   - La ronda 1 de procedencia, punto 17, pedía también marcar como resumen los «3 cargadores» de Piedras Negras.
+   - El .txt (líneas 492-493, y lo mismo en el HTML y el móvil) sigue con «1 arma, 3 cargadores y 39 cartuchos en el Puente Internacional II, día no fijado», sin marca.
+   - Las penas de Pánuco, Caborca y Jalisco sí quedaron marcadas «SOLO POR RESUMEN».
+   - Aplicarla, o registrar el motivo en §11.
+
+4. Criterio asimétrico entre «PUBLICADO EL DÍA DE APERTURA SIN HORA» (12) y «FRONTERA» (1).
+   - Solo -013 lleva FRONTERA y el compromiso «se retira de este total».
+   - Pero -007 trae una hora alternativa explícita (~03:30) que, si fuera cierta, lo saca de la ventana. -005 (día del hallazgo no fijado) y -011 (día del hecho no fijado) también pueden ser anteriores al 26.
+   - Esas tres son más inciertas que -013, cuyo día (lunes 26) sí está fijado por ruta y solo falta la hora.
+   - La Valoración 5 («12 DE APERTURA, 1 EN FRONTERA») depende de esa frontera.
+   - Recomendación: criterio único y escrito. En -005 y -011 añadir «si el hecho resulta anterior al 26, se retira de este total» (o rotularlos EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE si se decide así). En -007 declarar que, si fue de madrugada, es de ARGOS 141.
+   - En -007 el cartelón atribuye el ~03:30 a «1plana», y el archivo de equipos lo atribuye a otra nota («Michoacán en Línea», «hace 52 días»). Comprobarlo en procedencia-cifras R2.
+
+5. ARG-142-005 (Cutzato) contra ARG-125-036: el deslinde es más fuerte que la evidencia.
+   - Coinciden 7 criterios: entidad, municipio, localidad (Cutzato, al sur), colectivo de Madres Buscadoras, fosa clandestina, un solo hombre o cadáver, y Fiscalía más policía municipal en el levantamiento.
+   - Los separa la fecha de publicación (Red Michoacán 2026/09/28 frente a Changoonga y Grupo Marmor 2026/10/26) y los indicios (osamenta, esposas, pulsera), que la ficha 125-036 no menciona.
+   - La propia ficha admite «búsqueda de varios días: el hallazgo puede ser anterior al 26». ARGOS 141 había anotado que el resumen del buscador «mezcla el hallazgo del 28-sep».
+   - Dos rutas fechadas del 26 separan los hechos como publicaciones, no como hechos.
+   - El deslinde dice «NO es ARG-125-036» de forma categórica. Cambiar a «distinto por fecha de publicación (dos rutas del 26-oct); hallazgo anterior no descartado».
+   - Si se prefiere cumplir la regla dura, marcar POSIBLE DUPLICIDAD. Mi recomendación es conservarlo con el deslinde reescrito. Las rutas del 26 son firmes y 125-036 era fuente única, ★★☆☆☆, con «27 o 28-sep».
+
+6. Archivo de fuentes §6, registro de omisiones de 141: dos viñetas se contradicen.
+   - La primera calcula el efecto de Alpatláhuac (amarillos 5→6, muertos 4→5). La siguiente dice «Efecto sobre 141 no calculado: ninguna hora fijada» y lista el mismo Alpatláhuac junto a Zapopan, Yecapixtla, Chapalita y Uruapan taquería.
+   - Chapalita y Uruapan taquería son del sábado 24, ventana de ARGOS 140, no de 141.
+   - Los mismos hechos reaparecen otra vez en «Vistos».
+   - Unificar: un solo criterio y un solo listado, con la ventana de origen correcta por hecho.
+   - Zapopan (domingo 25 noche) cae en la ventana de 141 (25-oct 07:45 → 26-oct 08:37) igual que Alpatláhuac. Si se calcula el efecto de uno, se calcula el de ambos.
+
+7. Archivo de fuentes §3: «la única sentencia candidata del corte (FGR, Tepic)».
+   - La edición lista tres candidatas (Tepic, Tulantepec, Ramos Arizpe). Misma falla que la Conclusión 5, no corregida en el archivo de fuentes.
+
+B. EDITORIAL
+
+8. Narración de método dentro del cartelón (CLAUDE.md, «El cartelón es para el mando»). Las excepciones son ventana, deslindes de duplicidad y fe de erratas. Esto no es ninguna de ellas.
+   - -012 y -013, deslindes: «Hallado como visto por el equipo Occidente y fijado por procedencia-cifras R1».
+   - -005: «ARGOS 141 lo dejó en vistos por esa posible duplicidad».
+   - -010: «ARGOS 141 solo citó la detención y el arma larga entre los vistos de armamento, como hecho de ARGOS 142».
+   - -004: «sin ficha en ninguna edición (candidato registrado en el archivo de fuentes)». C4: «sin ficha: ventana anterior». Son acusaciones de omisión a ediciones anteriores.
+   - Esa información va al archivo de fuentes. En el cartelón quedan los deslindes con el ARG-ID, la fecha y los criterios que separan (p. ej. «distinto de ARG-125-036 por fecha de publicación»).
+
+9. Repetición entre Valoración y Conclusiones (la ronda 1 pidió repartir funciones).
+   - V4 («tres verdes, todos detenciones; ninguna sentencia integrable») y C5 («siete detenidos en tres acciones… ninguna sentencia integrable») dicen lo mismo. Además, el encabezado del módulo de sentencias dice «NINGUNA SENTENCIA INTEGRABLE EN LA VENTANA». Son tres enunciados.
+   - V2 («Michoacán, tres rojos en tres municipios») y C2 (dos homicidios dobles en Michoacán) repiten la concentración.
+   - V1, V3 y V5 cumplen su función: metodología, números del semáforo y comparabilidad.
+   - Recomendación: quitar «ninguna sentencia integrable» de V4. Dejar V2 solo con Baja California y el conteo, o fundir la parte de Michoacán en C2. Dejar a C5 la brecha detención–condena.
+
+10. Párrafo «Seguimientos de ediciones previas» (.txt 81-98, página 2).
+    - Son 13 renglones, muchos de ellos estados de reverificación y no desarrollo (Erongarícuaro «sigue solo por resumen», Magdalena Contreras «hora no fijada», Ecatepec, SLRC).
+    - Solo exfiscal, Xalapa, Juchitán, Pénjamo, Culiacán y Linares son seguimiento real.
+    - Los estados de reverificación van al archivo de fuentes y a _pendientes.md. Conservar las marcas HEREDADO / SOLO POR RESUMEN solo donde la cifra viva en un total.
+
+11. Columna «Confianza» de ARM-001 y ARM-002 (.txt 481-482).
+    - Repite casi literal el Hecho de las fichas -010 y -011: el AR-15 por titular, 2 detenidos por N+, 1 detenido por Puebla Online, las 2 cortas y 2 cargadores solo por resumen.
+    - Reducir a «Bajo · ver ARG-142-010 / -011» más lo que sea exclusivo del módulo.
+    - En el móvil esa tabla no existe; solo hay tarjetas.
+
+12. Portada sin reequilibrar tras añadir -012 y -013.
+    - Las cinco acciones cubren -001 a -005. Michoacán, con tres rojos (V2), solo tiene la acción 5 (la fosa).
+    - Las solicitudes de identificación y cotejo balístico de los dos homicidios dobles viven solo en C2.
+    - Cumple la regla (5 líneas, solicitudes, sin ARG-ID compartido con las conclusiones). Se anota como decisión editorial.
+
+13. Reservas que faltan en los agregados.
+    - «Heridos 5» cuenta 1 en -001, con el número contradicho: Milenio y Siempre en la Noticia dicen 2 y §10 lo reconoce. La casilla del total no lleva reserva. La ronda 1 sugería «≥».
+    - C5 dice «siete detenidos» sin indicar que -009 (3 frente a «dos arrestados» preliminares) y -010 (2 frente a 1) están contradichos.
+    - La ficha -010 dice «Hora: mañana (tras el ataque)». La detención solo está fechada por resumen (MTP) y la primera ruta fechada que la nombra es del 27. «Mañana» es inferencia.
+
+14. Hechos 🔴 sin ficha y sin búsqueda.
+    - Cañada Morelos (Puebla), 2 muertos, ruta sin fecha, «no revisado» (equipos 561). Queda en «Vistos» de §6 con motivo «sin fecha», sin haber sido buscado. La ronda 1 pidió dejar por escrito el desenlace; solo se resolvieron Queréndaro y Tumbisca.
+    - Debe pasar a _pendientes.md para 143. Es un homicidio múltiple que, si resulta del 26, cambia 🔴, muertos y Puebla.
+
+C. ¿SE SOSTIENEN LOS «NO APLICADOS» DE §11?
+- Fe de erratas a ARG-140-005 (4 o 5 cuerpos): SE SOSTIENE, y mejor de lo que dice §11.
+  - La ronda 1 de procedencia afirmó que el «5» solo tiene respaldo en resumen. Es inexacto.
+  - La ficha de ARGOS 140 (argos-2026-10-25.txt 222-237) lo sostiene con el slug de La Silla Rota 2026/10/21 («cinco-cuerpos-en-cuatro-zonas»); la URL consta en equipos de 25-oct, línea 104. Esa misma ficha ya declaraba «reparto por punto NO CUADRA CON CINCO».
+  - El umbral de CLAUDE.md es «sin respaldo citable». Aquí hay respaldo, por slug de la fuente del origen; lo correcto es «HEREDADO — NO REVERIFICADO» más «CIFRA CONTRADICHA».
+  - Dos cambios menores. En el borrador, «5 en otros medios» debería decir «5 por slug de La Silla Rota (origen de ARG-140-005)». En §7, quitar «esta edición no reverificó ese slug» y citar el slug, que está en el repositorio. Aplicar la marca literal HEREDADO — NO REVERIFICADO.
+- NL y Tamps NO REVISADA en sentencias: SE SOSTIENE como criterio conservador. Una página de dominio devuelta en una consulta de armamento no equivale a revisar el boletín de sentencias. Corre el riesgo contrario si se rotula como «revisada».
+  - Dos puntos de método a pasar a _pendientes.md: Tlax y Hgo llevan dos ediciones sin revisar en sentencias y Tlax también en alto impacto (la regla de prioridad no se cumplió), y quedan NO REVISADA Gto, CDMX y Edomex.
+  - El renglón «Dominio consultado sin páginas» incluye Nay, pero §3 dice que fgenay.gob.mx apareció sin consulta site:. Es cierto solo para el dominio anterior (fiscaliageneralnayarit.gob.mx, §8). Precisar la nota.
+- Acámbaro Ferrocarriles sin ficha -REC-: NO SE SOSTIENE del todo.
+  - El motivo es «ventana de origen y cifras sin verificar». Pero hay dos rutas fechadas (Correo 2026/oct/19, AM 2026/10/20) y 2 muertos.
+  - CLAUDE.md («El cartelón es para el mando», punto 3) manda ficha -REC- con «ventana de origen declarada». El índice tiene precedentes con ventana alternativa («ventana de 131, 130 si antes de las 08:19»), por lo que «138 o 139» es declarable.
+  - Con búsqueda web vedada, aplazar a 143 es defendible como deuda de método. Pero entonces la mención «sin ficha en ninguna edición» sale del cartelón (hallazgo 8) y entra en _pendientes.md con prioridad.
+- Notimex Tepic, sello posiblemente UTC: SE SOSTIENE. El caso no se integra, no hay efecto, y consta en §11.
+
+D. VERIFICACIÓN PUNTO POR PUNTO (los 7 encargos)
+
+(1) Correcciones de la ronda 1 marcadas «aplicadas».
+Comprobé las siguientes en las tres versiones. Contraste automático de frases HTML↔móvil↔.txt: las diferencias son solo estructurales (cabeceras, índice por entidad, tabla ARM, formato de tabla de sentencias).
+- -012 y -013 presentes, con fichas y filas de tabla.
+- Marca de apertura en -001, -009 y -010. Valoración 5 con «13 DE 13».
+- Heridos contradichos en -001. -002 con Milenio y 4 versiones de composición.
+- Acción 2 de la portada sin «vigile la ruta». Acción 4 sin cotejo inexistente.
+- -003 con «hieren a otro» literal. -004 con título «dos muertos y un herido grave» y AM 2026/10/27.
+- -005 con «búsqueda de varios días» y Grupo Marmor. -008 sin «persiguen» en título ni conclusión.
+- -009 con The Baja Post y fuentes alineadas con el Hecho.
+- -010 con el día por resumen, Intolerancia 2026/10/27 y la cifra 2 con motivo.
+- -011 con Telemax. «Eventos cualitativos: ninguno». Tarjeta de detenidos con reserva.
+- Concordia solo en Seguimientos. Tepic con 15 años por titular y etiqueta literal. Tulantepec «sin cambio desde 141». FGR como SRIV.
+- Deslinde de -001 corregido: la ruta del 27 (Red Metropolitana) es posterior y agrupa los hechos.
+- ARM-001 en 🔴: en EVENTOS_ARM del HTML y en el mapa de aseguramientos del móvil (PUE rojo, SON verde).
+- Pendientes de aplicar: hallazgo 3 (Piedras Negras) y la parte de la ronda 1 sobre repartir funciones V/C (hallazgo 9), que quedó a medias.
+- Cambio de comportamiento de la ronda 1 que no es corrección: «seis días» se resolvió con convención inclusiva declarada «ambos extremos». Los tres días cuadran: Apatzingán 13→26 = 14, SLP 20→26 = 7, León 21→26 = 6.
+
+(2) Fichas -012 y -013.
+- No duplican ningún hecho previo ni del borrador (ver cruces).
+- Llegan al panorama (filas en 🔴), al EVENTOS (13 entradas) y al radar (13 ecos del escritorio y 13 enlaces #ARG-142-xxx en el móvil). El mapa móvil pinta MIC en rojo.
+- Llegan a los totales: 7 rojos, 15 muertos, 5 heridos, 13 hechos propios, densidad 0,54.
+- Los dos tienen URL propia de Grupo Marmor y Medianews (26-oct), distinta de la de Cutzato.
+- Resta: si -013 se retira por ancla horaria, los rojos bajan a 6, los muertos a 13 y V2 y C2 pierden sentido. La ficha lo declara; los bloques V2 y C2 no son condicionales.
+
+(3) Aritmética.
+- Semáforo 7/3/3 = 13 = EVENTOS = fichas. node tools/validar.js: «validación OK», 13 fichas, 5 tablas, 3 recuadros.
+- Radar escritorio y móvil: 7/3/3. Sin Ejes del día ni tabla adicional de titulares.
+- Muertos: 1+4+1+2+1+1+1+2+2 = 15 (coincide con §10 y con las fichas). Heridos: 1+1+1+1+1 = 5. Cuerpos: 1.
+- Armamento: ARM-001 (1 larga, 2 detenidos) y ARM-002 (22 cartuchos, 2 detenidos): 1 larga, 22 cartuchos, 4 detenidos. Coincide con tarjetas, tabla y totales.
+- La detención de -009 sin armamento con cifra queda explícitamente fuera del conteo. Las 2 cortas y 2 cargadores de Cajeme quedan «NO SE INTEGRAN» con motivo. No hay omisión silenciosa ficha→tabla.
+- Entidades: 6 (BC, Pue, Gto, Mich, SLP, Son). Con rojo: 4. Densidad 13/24,133 = 0,54. Marcas 12 + 1.
+- Cobertura: sentencias 19+4+9 = 32; armamento 11+1+20 = 32 (lista nominal de 32 entidades distintas, sin repetición ni faltante); alto impacto 22+10 = 32.
+- Coincide con el cierre de ARGOS 141: 5 amarillos y 4 muertos (los 5→6 y 4→5 de §6 salen de ahí).
+- Sentencias: 0 integrables, 0 sentenciados, 0 años.
+
+(4) Conclusiones contadas contra todo el índice y los deslindes.
+- C1 Apatzingán: cinco hechos con víctimas del 13 al 26-oct. Cuadra con el deslinde de -007 y con el índice (134-REC-003, 135-003, 135-004, 137-016, 142-007). Apatzingán no tiene más hechos en las ediciones del 13 al 26.
+- C2 Michoacán: -012 y -013, el mismo lunes. Cuadra.
+- C3 SLP: ARG-139-009 y -008 son los únicos «Tierra Blanca» en el índice. Ver hallazgo 2.
+- C4 León: ARG-140-005, Chapalita (24-oct) y -006. Cuadra con el deslinde y con el índice. León no tiene otro hecho del 21 al 26. Chapalita carece de ARG-ID; consta solo en el deslinde de -006.
+- C5: 3+2+2 = 7 y 3+2 = 5, correctos.
+- Ninguna conclusión comparte ARG-ID con la portada (portada: 001 a 005).
+- Ninguna repite una conclusión de ARGOS 141 (141: Pénjamo, Transporte, Personal de seguridad, Zamora–Jacona, Los Tlacos). C1 desarrolla un tema de 135/137 y C5 el de 133/134/135/140, ambos declarados.
+
+(5) Recuadros.
+- Exactamente 3 («alerta contexto») en escritorio y en móvil: portada, Valoración, Conclusiones.
+- Cinco ítems cada uno. Ninguno explica colores o método. V5 es la advertencia de comparabilidad, permitida.
+- Acciones y «Línea:» como SOLICITUD (hay AUDITE y COTEJE, aceptables). Sin «exija» en ninguna versión.
+- Reserva: C1, C3 y C4 repiten la nota «ambos extremos» tres veces. Bastaría una.
+
+(6) Titulares repetidos tres veces.
+- Ninguno. Cada hecho aparece en panorama y ficha. La portada solo lleva acciones. Las conclusiones citan ARG-ID con función de patrón.
+- Repeticiones V↔C en los hallazgos 9 y 11.
+
+(7) «No aplicados»: sección C.
+
+E. PRESENTACIÓN, ESCRITORIO ↔ MÓVIL
+- El móvil no incluye el índice por entidad ni la tabla ARM por evento, con aviso expreso (igual que 141). La confianza de ARM-001 y ARM-002 no consta allí (hallazgo 11).
+- En el móvil, validar.js da fallo conocido (Deuda 7 de _pendientes.md). Una tabla sin envoltorio table-wrap (1 tabla, 0 table-wrap).
+- Escritorio: 5 tablas, 5 envueltas.
+
+F. CIERRE PENDIENTE
+- indice-arg-id.md tiene 0 entradas ARG-142-*, aunque todos los ARG-ID previos citados en 142 sí existen en el índice. Debe actualizarse al cierre. Sin índice completo el cruce depende de abrir el archivo correcto.
+- _pendientes.md sigue en «Abiertos que ARGOS 142 hereda». Hay que cerrar Tehuacán, Cutzato y Tuxpan, y abrir:
+  - Cañada Morelos
+  - Acámbaro Ferrocarriles (-REC-, 138 o 139)
+  - ARG-140-005 (HEREDADO — NO REVERIFICADO)
+  - Tlax y Hgo, dos ediciones sin revisar
+  - NL, Tamps, Gto, CDMX y Edomex, que encabezan el triaje de 143
+- §11 del archivo de fuentes: «Ronda 2: (pendiente)». Registrar esta ronda y lo que se decida no corregir, con motivo.
+
+========================================================
+CRUCES VERIFICADOS SIN DUPLICIDAD
+========================================================
+- ARG-142-012 (Queréndaro) contra ARG-142-005 (Uruapan, Cutzato): distinto municipio, tipo (homicidio contra fosa), día (26-oct frente a día de hallazgo no fijado), víctimas (2+1 herido frente a restos de un hombre) y URL de Grupo Marmor distinta (matan-a-dos-hombres-en-taller-… frente a localizan-osamenta-…).
+- ARG-142-012 contra ARG-142-007 (Apatzingán): distinto municipio, local (taller frente a carnicería de mercado), víctimas (2+1 herido frente a 1 joven de 19) y corporación nula en ambos. Solo coinciden entidad, día y «tarde» por resumen.
+- ARG-142-013 (Morelia–Tumbisca) contra ARG-142-005: distinto municipio (Morelia frente a Uruapan), tipo, víctimas y fecha de ruta (Medianews 26-oct frente a Changoonga y Grupo Marmor 26-oct).
+- ARG-142-013 contra ARG-142-007: distinto municipio, hora («mañana» frente a «tarde» o ~03:30), víctimas (2 hombres, presunto padre e hijo, frente a 1 joven) y escenario (camioneta en carretera frente a mercado).
+- ARG-142-012 contra ARG-142-013: mismo estado y día; distinto municipio, escenario, hora y víctimas. Son los dos homicidios dobles de C2.
+- -012 y -013 contra ARG-140-016 (Indaparapeo, 23-oct), ARG-140-REC-001 (Ario de Rosales, 20-oct), ARG-141-002 (Zamora, 25-oct) y ARG-92-001 (La Maiza, Morelia, agosto): otro municipio, localidad y fecha. «Queréndaro», «Tumbisca», «San Miguel del Monte» y «padre e hijo» no figuran en ninguna edición previa.
+- ARG-142-001 contra -002 (Tecate, mismo día): distinto en colonia (Luis Alfonso Garzón / El Escorial), hora (~17:47 / ~13:00-13:38), corporación (FESC / ninguna) y víctimas (agentes / civiles).
+- ARG-142-001 contra -009 y -003 contra -010: delito y detención en la misma ventana, dos fichas, correcto.
+- -009 contra ARG-125-033 (Tecate, 29-sep, 3 detenidos): fecha y corporación distintas.
+- -003 contra ARG-132-REC-001 (Tehuacán, 12-oct): otro hecho.
+- ARGOS 141 no tiene ficha de Tehuacán (solo lo cita como «posterior al cierre: ARGOS 142»): no es duplicado.
+- -004 contra ARG-101-007 (Acámbaro, 18-ago, 🟢): otro hecho.
+- -006 contra ARG-140-005 (León, cuerpos, 21-oct): distinto tipo y fecha. Contra Chapalita (24-oct): otra colonia y otra ventana.
+- -007 contra 134-REC-003, 135-003, 135-004 y 137-016: otra colonia o lugar, otra fecha, otras víctimas.
+- -008 contra ARG-139-009: coinciden 6 criterios; los separan fecha de ruta y día. Ver hallazgo 2.
+- -011 contra ARG-119-007 y ARG-133-REC-005 (Cajeme): otras fechas y cifras. «Xochiloa» y «22 cartuchos» no figuran antes.
+- ARM-001 y ARM-002 contra el índice: sin coincidencia de cifras ni localidad.
+- Alpatláhuac, Zapopan, Yecapixtla, Chapalita y Uruapan taquería: son 🟡 de ventanas previas; no son duplicados de -001 a -013.
+
+========================================================
+REPETICIÓN ENTRE SECCIONES
+========================================================
+- V4 repite C5 y el encabezado del módulo de sentencias («ninguna sentencia integrable»): hallazgo 9. Recomendación: quitarlo de V4.
+- V2 repite C2 en la parte de Michoacán: hallazgo 9.
+- ARM-001 y ARM-002, columna «Confianza», repiten el Hecho de -010 y -011 sin fuente nueva: hallazgo 11.
+- Seguimientos (página 2) mezcla desarrollos reales con estados de reverificación: hallazgo 10.
+- Narración de método en deslindes: hallazgo 8.
+
+========================================================
+DESCUADRES ARITMÉTICOS Y DE COBERTURA
+========================================================
+- Ninguno en cifras. Ver D(3).
+- Dato mencionado en ficha y ausente de su tabla: ninguno. Todo aseguramiento o detenido de las fichas está en ARM o excluido con motivo escrito.
+- Contradicciones de cobertura: ninguna entre renglones y el resto de la edición. Nayarit figura como dominio consultado sin páginas y la edición documenta una candidata de Tepic por medios; son compatibles porque nada se declara «sin actualización». Ver la precisión sobre Nay en la sección C.
+
+========================================================
+RESUMEN DE CORRECCIONES EN SITIO (orden sugerido)
+========================================================
+1. C5: cambiar «única candidata con pena publicada» a «única con pena por titular». Igual en §3 del archivo de fuentes.
+2. ARG-142-008 y C3: decidir (a) o (b) del hallazgo 2.
+3. Piedras Negras: marcar los 3 cargadores como solo por resumen, o escribir el motivo en §11.
+4. Criterio único APERTURA/FRONTERA, con compromiso de retiro en -005 y -011 y nota en -007.
+5. Reescribir el deslinde de -005 sin «NO es».
+6. Sacar del cartelón la narración de método (hallazgo 8). Aligerar Seguimientos (hallazgo 10). Quitar de V4 la frase de sentencias.
+7. Archivo de fuentes: unificar §6, corregir §3, matizar la fe de erratas a ARG-140-005 con el slug de origen, registrar Cañada Morelos y Acámbaro Ferrocarriles, y rellenar §11 «Ronda 2».
+8. Al cierre: indice-arg-id.md con ARG-142-* y _pendientes.md.
+
+Archivos relevantes (absolutos):
+/home/user/Prueba-/reports/argos-2026-10-27.html
+/home/user/Prueba-/reports/argos-2026-10-27-movil.html
+/home/user/Prueba-/reports/argos-2026-10-27.txt
+/home/user/Prueba-/reports/argos-2026-10-27-fuentes.md
+/home/user/Prueba-/reports/argos-2026-10-27-equipos.md
+/home/user/Prueba-/reports/argos-2026-10-25.txt (ficha de origen de ARG-140-005, líneas 222-237)
+/home/user/Prueba-/reports/argos-2026-10-07.txt (ARG-125-036, líneas 738-756)
+/home/user/Prueba-/reports/indice-arg-id.md
+/home/user/Prueba-/reports/_pendientes.md

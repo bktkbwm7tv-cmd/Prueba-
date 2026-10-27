@@ -76,26 +76,20 @@ NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
 Armamento: 2 eventos contabilizados (ARG-142-ARM-001 y -002), cifras solo por slug; n/d = no
 publicado en fuente citable, no ausencia · detención de ARG-142-009 sin armamento con cifra:
 fuera de este total · detenidos en aseguramiento: cifras por titulares de medios; la autoridad,
-solo por resumen · cuerpos hallados: restos de 1 hombre en fosa (ARG-142-005) · marcas: 12
-PUBLICADO EL DÍA DE APERTURA SIN HORA y 1 FRONTERA DE VENTANA — HORA NO FIJADA. Cálculo propio.
+solo por resumen · heridos: 1 contado en ARG-142-001, contradicho (2 en dos medios) · cuerpos
+hallados: restos de 1 hombre en fosa (ARG-142-005) · marcas: 12 PUBLICADO EL DÍA DE APERTURA SIN
+HORA y 1 FRONTERA DE VENTANA — HORA NO FIJADA. Cálculo propio.
 Seguimientos de ediciones previas, fuera del semáforo: ARG-136-006 (exfiscal): impugnación de la
 vinculación anunciada por la defensa, por slug (Proceso 2026/10/25); sin resolución publicada;
 NINGUNA ES SENTENCIA · ARG-140-020 (Xalapa): prisión preventiva oficiosa, por slug (Golpe
 Político 2026/10/24); vinculación no publicada · ARG-140-021 (Juchitán): vinculación no
 publicada · ARG-140-005 (León): 4 cuerpos por titulares (AM 2026/10/21 y 2026/10/23, este con
-declaración del fiscal); 5 en otros medios: CIFRA CONTRADICHA · ARG-140-013 (Linares):
-identificación publicada (MVS 2026/10/26); edad 47 SOLO POR RESUMEN, 55 en otro medio:
-CONTRADICHA · ARG-140-REC-003 (Ecatepec): «noche del martes», SOLO POR RESUMEN; sin fragmento
-que fije el día · ARG-141-001 (Pénjamo): muerte sin confirmación de autoridad; la confirmada por
-la Fiscalía, por titular (Correo 2026/oct/26), es de la calle Independencia, zona centro: otro
-hecho · ARG-141-004 (Culiacán): un solo cuerpo, por titular (Luz Noticias 2026-10-25); denuncia
-previa de desaparición no publicada · ARG-141-006 (Erongarícuaro): desglose sigue SOLO POR
-RESUMEN · ARG-141-007 («Los Tlacos»): detención del 23-oct, SOLO POR RESUMEN; vínculo con
-ARG-110-REC-001 no publicado · ARG-141-REC-001 (Magdalena Contreras): hora no fijada; segundo
-herido no consta · ARG-141-REC-004 (San Luis Río Colorado): restos de 3 personas, SOLO POR
-RESUMEN · ARG-141-REC-005 (Concordia): «detectaron a hombres armados que, al ver su presencia,
-dispararon», SOLO POR RESUMEN; agresión y campamento, un solo aseguramiento: 5 armas largas, 30
-cargadores y 1,150 cartuchos, SOLO POR RESUMEN, fuera de todo total.
+declaración del fiscal); 5 por slug de La Silla Rota (origen de la ficha): CIFRA CONTRADICHA —
+HEREDADO — NO REVERIFICADO · ARG-140-013 (Linares): identificación publicada (MVS 2026/10/26);
+edad 47 SOLO POR RESUMEN, 55 en otro medio: CONTRADICHA · ARG-141-001 (Pénjamo): muerte sin
+confirmación de autoridad; la confirmada por la Fiscalía, por titular (Correo 2026/oct/26), es
+de la calle Independencia, zona centro: otro hecho · ARG-141-004 (Culiacán): un solo cuerpo, por
+titular (Luz Noticias 2026-10-25); denuncia previa de desaparición no publicada.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-27 · Hora: 08:45 (CDMX) · Corte: Matutino · ARGOS N.° 142 · USO INSTITUCIONAL
@@ -209,10 +203,9 @@ Institucional 0 · Nacional 2 · Regional 12 · Abierta 0 · con fecha en la rut
 (2026/10/26) · Síntesis (2026/10/26) · Diario Puntual (2026/10/26) · Hecho: 2026-10-26 · Hora:
 mañana, ~9:58 (solo por resumen) · Consulta: 2026-10-27, última búsqueda 09:16 · Estatus:
 Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
-Deslindes y reservas: Retirado de ARGOS 141 por hora posterior a su cierre (08:37): no hay ficha
-previa. Col. Tepeyac no figura en las cinco ediciones previas. Tehuacán en el índice:
-ARG-132-REC-001 (San Marcos Necoxtla, 12-oct): otro hecho. «Cinco agresiones contra policías en
-17 días» (titular de Síntesis): recuento de un medio, no se integra.
+Deslindes y reservas: Col. Tepeyac no figura en las cinco ediciones previas. Tehuacán en el
+índice: ARG-132-REC-001 (San Marcos Necoxtla, 12-oct): otro hecho. «Cinco agresiones contra
+policías en 17 días» (titular de Síntesis): recuento de un medio, no se integra.
 
 ### PUEBLA · TEHUACÁN — DETIENEN A UNA MUJER Y UN HOMBRE POR EL ASESINATO DEL AGENTE Y LES ASEGURAN UN FUSIL AR-15 [VERDE]
 
@@ -233,12 +226,11 @@ reproducen
 ARG-142-010 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: comunicado de la FGE
 solo por resumen; número de detenidos contradicho · Fuentes: Institucional 0 · Nacional 2 ·
 Regional 5 · Abierta 0 · con fecha en la ruta: Retodiario (2026/10/26) · Intolerancia
-(2026/10/27) · Hecho: 2026-10-26 · Hora: mañana (tras el ataque de ARG-142-003) · Consulta:
+(2026/10/27) · Hecho: 2026-10-26 · Hora: no fijada (tras el ataque de ARG-142-003) · Consulta:
 2026-10-27, última búsqueda 09:16 · Estatus: Parcialmente corroborado · Conteo de armamento:
 ARG-142-ARM-001
 Deslindes y reservas: Hecho distinto de ARG-142-003 (el ataque), en la misma ventana: dos
-fichas. ARGOS 141 solo citó la detención y el arma larga entre los vistos de armamento, como
-hecho de ARGOS 142.
+fichas.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-27 · Hora: 08:45 (CDMX) · Corte: Matutino · ARGOS N.° 142 · USO INSTITUCIONAL
@@ -269,9 +261,8 @@ búsqueda 09:16 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
 asegurado: no publicado
 Deslindes y reservas: Velasco Ibarra y Cerro del Toro no figuran en las cinco ediciones previas.
 Acámbaro en el índice: ARG-101-007 (18-ago, 🟢): otro hecho. Ataque del Campamento Ferrocarriles
-(19-oct, Correo 2026/oct/19): otro hecho, otra ventana, sin ficha en ninguna edición (candidato
-registrado en el archivo de fuentes). «Dos muertos y tres heridos» (Milenio, Chicuacen): hecho
-del 5-sep.
+(19-oct, Correo 2026/oct/19): otro hecho, otra ventana. «Dos muertos y tres heridos» (Milenio,
+Chicuacen): hecho del 5-sep.
 
 ### MICHOACÁN · QUERÉNDARO — ATAQUE ARMADO EN UN TALLER MECÁNICO: DOS MUERTOS Y UN HERIDO [ROJO]
 
@@ -292,7 +283,6 @@ Nacional 0 · Regional 6 · Abierta 0 · con fecha en la ruta: Grupo Marmor (202
 búsqueda 09:16 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
 asegurado: no publicado
 Deslindes y reservas: Queréndaro no figura en las cinco ediciones previas ni en el índice.
-Hallado como visto por el equipo Occidente y fijado por procedencia-cifras R1.
 
 ### MICHOACÁN · MORELIA — ACRIBILLAN A DOS HOMBRES EN UNA CAMIONETA EN LA CARRETERA SAN MIGUEL DEL MONTE–TUMBISCA [ROJO]
 
@@ -315,7 +305,7 @@ ARG-142-013 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 09:16 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado:
 no publicado
 Deslindes y reservas: San Miguel del Monte y Tumbisca no figuran en las cinco ediciones previas
-ni en el índice. Hallado como visto por el equipo Occidente y fijado por procedencia-cifras R1.
+ni en el índice.
 
 ### MICHOACÁN · URUAPAN — MADRES BUSCADORAS LOCALIZAN UNA FOSA CON RESTOS DE UN HOMBRE EN UNA HUERTA CERCA DE CUTZATO [ROJO]
 
@@ -329,7 +319,8 @@ hombre-en-una-fosa-clandestina») (🔴 fosa) · osamenta, por titular (MiMoreli
 pulsera con un nombre entre los indicios, SOLO POR RESUMEN: no identifican · Fiscalía de
 Michoacán, policía municipal y Comisión de Víctimas en el levantamiento; restos al Semefo, SOLO
 POR RESUMEN · número de cuerpos no determinado por la Fiscalía, SOLO POR RESUMEN · búsqueda de
-varios días, SOLO POR RESUMEN: el hallazgo puede ser anterior al 26
+varios días, SOLO POR RESUMEN: el hallazgo puede ser anterior al 26; SI RESULTA ANTERIOR A LAS
+08:37 DEL 26, SE RETIRA DE ESTE TOTAL
 
 ── TRAZABILIDAD
 
@@ -339,9 +330,10 @@ Abierta 0 · con fecha en la ruta: Changoonga (2026/10/26) · Grupo Marmor (2026
 publicado el 2026-10-26 — DÍA DEL HALLAZGO NO FIJADO · Hora: no fijada · Consulta: 2026-10-27,
 última búsqueda 09:16 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila —
 armamento asegurado: no publicado
-Deslindes y reservas: NO es ARG-125-036 (Cutzato, fosa con un cadáver, 28-sep): otro hallazgo
-del mismo colectivo y la misma zona. ARGOS 141 lo dejó en vistos por esa posible duplicidad.
-Respuesta e IMN publican el mismo texto: una fuente.
+Deslindes y reservas: ARG-125-036 (Cutzato, fosa con un cadáver, 28-sep, fuente única):
+coinciden localidad, colectivo, fosa y un hombre; lo separan dos rutas del 26-oct (Changoonga;
+Grupo Marmor) y los indicios (osamenta, esposas, pulsera): DISTINTO POR FECHA DE PUBLICACIÓN —
+HALLAZGO ANTERIOR NO DESCARTADO. Respuesta e IMN publican el mismo texto: una fuente.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-27 · Hora: 08:45 (CDMX) · Corte: Matutino · ARGOS N.° 142 · USO INSTITUCIONAL
@@ -380,11 +372,11 @@ Deslindes y reservas: Valle de San Bernardo no figura en las cinco ediciones pre
 
 Apatzingán · CARNICERÍA DEL MERCADO IGNACIO LÓPEZ RAYÓN, ZONA CENTRO, POR TITULAR (RED
 MICHOACÁN) · lunes 26-OCT, por ruta (Red Michoacán 2026/10/26) · PUBLICADO EL DÍA DE APERTURA
-SIN HORA · tarde, SOLO POR RESUMEN (Contramuro); ~03:30, SOLO POR RESUMEN (1plana): HORA
-CONTRADICHA — SI FUE DE MADRUGADA, ES DE LA VENTANA DE ARGOS 141 · 1 muerto: joven de 19 años,
-por titulares (Quadratín; Contramuro) (🟡 homicidio doloso único) · murió en el Hospital
-Regional, por titular (Red Michoacán) · agresores huyeron · ningún detenido publicado ·
-identidad: no se reproduce
+SIN HORA · tarde, SOLO POR RESUMEN (Contramuro); ~03:30, SOLO POR RESUMEN (otra nota): HORA
+CONTRADICHA — SI FUE DE MADRUGADA, ES DE LA VENTANA DE ARGOS 141 Y SE RETIRA DE ESTE TOTAL · 1
+muerto: joven de 19 años, por titulares (Quadratín; Contramuro) (🟡 homicidio doloso único) ·
+murió en el Hospital Regional, por titular (Red Michoacán) · agresores huyeron · ningún detenido
+publicado · identidad: no se reproduce
 
 ── TRAZABILIDAD
 
@@ -417,18 +409,19 @@ Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: ARG-139-009 (conductor perseguido y asesinado, bulevar Rocha Cordero «a la
 altura de Tierra Blanca», noche del 20-oct, Potosinoticias 2026/10/21): coinciden municipio,
 punto de referencia, víctima y modo; los separan la fecha de la ruta (21 frente a 26) y el día
-del hecho («martes» frente a «este lunes», solo por resumen): HECHO DISTINTO POR FECHA; POSIBLE
-SEGUIMIENTO NO DESCARTADO. Periférico no figura en las cinco ediciones previas.
+del hecho («martes» frente a «este lunes», solo por resumen): HECHO DISTINTO POR FECHA.
+Periférico no figura en las cinco ediciones previas.
 
 ### SONORA · CAJEME — UN VEHÍCULO A EXCESO DE VELOCIDAD LLEVA A LA DETENCIÓN DE DOS HOMBRES ARMADOS Y AL ASEGURAMIENTO DE 22 CARTUCHOS [VERDE]
 
 ── HECHO
 
 Cajeme · COL. XOCHILOA, SOLO POR RESUMEN · publicado el lunes 26-OCT, por ruta (El Imparcial
-2026/10/26) · PUBLICADO EL DÍA DE APERTURA SIN HORA; día del hecho no fijado · 2 detenidos, «dos
-hombres armados», por titular y slug (🟢 detención y aseguramiento) · 22 cartuchos, por titular y
-slug · 2 armas cortas calibre 9 mm y 2 cargadores, SOLO POR RESUMEN: NO SE INTEGRAN · Policía
-Estatal, Marina y Policía Municipal, por titular (Telemax 2026/10/26)
+2026/10/26) · PUBLICADO EL DÍA DE APERTURA SIN HORA; día del hecho no fijado: SI RESULTA
+ANTERIOR A LAS 08:37 DEL 26, SE RETIRA DE ESTE TOTAL · 2 detenidos, «dos hombres armados», por
+titular y slug (🟢 detención y aseguramiento) · 22 cartuchos, por titular y slug · 2 armas cortas
+calibre 9 mm y 2 cargadores, SOLO POR RESUMEN: NO SE INTEGRAN · Policía Estatal, Marina y
+Policía Municipal, por titular (Telemax 2026/10/26)
 
 ── TRAZABILIDAD
 
@@ -478,8 +471,8 @@ Total nacional del corte: en la página de panorama.
 ## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
 
   ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
-  ARG-142-ARM-001 | Puebla | Tehuacán | 26-oct | n/d | 1 | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 2 | FGE Puebla y Seguridad Pública municipal (solo por resumen) | Bajo · armamento vinculado al ataque de ARG-142-003 (🔴 en el mapa de aseguramientos); 1 fusil AR-15 por titular (MTP) y 2 detenidos por titular (N+); 1 detenido en la versión preliminar (Puebla Online, por titular): contradicho; demás categorías no publicadas
-  ARG-142-ARM-002 | Sonora | Cajeme (col. Xochiloa) | pub. 26-oct; día no fijado | n/d | n/d | n/d | n/d | 22 | n/d | n/d | n/d | n/d | 2 | Policía Estatal, Marina y Policía Municipal (por titular) | Bajo · 22 cartuchos y 2 detenidos por titular (El Imparcial 2026/10/26); 2 cortas 9 mm y 2 cargadores solo por resumen: no integrados
+  ARG-142-ARM-001 | Puebla | Tehuacán | 26-oct | n/d | 1 | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 2 | FGE Puebla y Seguridad Pública municipal (solo por resumen) | Bajo · vinculado a ARG-142-003 (🔴 en el mapa); ver ARG-142-010
+  ARG-142-ARM-002 | Sonora | Cajeme (col. Xochiloa) | pub. 26-oct; día no fijado | n/d | n/d | n/d | n/d | 22 | n/d | n/d | n/d | n/d | 2 | Policía Estatal, Marina y Policía Municipal (por titular) | Bajo · ver ARG-142-011
 
 Lectura regional: Centro, 1 evento (1 arma larga, 2 detenidos) · Noroeste, 1 evento (22
 cartuchos, 2 detenidos); el resto de regiones, sin evento integrable. Cálculo propio.
@@ -490,9 +483,10 @@ acción no fijado; también en Milenio): Mazatlán, 11 granadas artesanales, 1 a
 cargadores; Zacatecas y Tamaulipas: cifras SOLO POR RESUMEN · Sonora: operativo con 4 detenidos
 y un presunto mando abatido, sábado 24 (ventana de ARGOS 140) · Veracruz: 27 detenidos en
 operativos del 24 y 25-oct (Golpe Político 2026/10/26), agregado sin desglose · Coahuila,
-Piedras Negras: 1 arma, 3 cargadores y 39 cartuchos en el Puente Internacional II, día no fijado
-· Nayarit, El Jicote: EVENTO ANTERIOR PUBLICADO DURANTE EL CORTE, junto con la sentencia ·
-balances semanales de Sonora, Quintana Roo y Coahuila: recuentos, no se integran.
+Piedras Negras: 39 cartuchos por slug, 1 arma y 3 cargadores SOLO POR RESUMEN, en el Puente
+Internacional II, día no fijado · Nayarit, El Jicote: EVENTO ANTERIOR PUBLICADO DURANTE EL
+CORTE, junto con la sentencia · balances semanales de Sonora, Quintana Roo y Coahuila:
+recuentos, no se integran.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-27 · Hora: 08:45 (CDMX) · Corte: Matutino · ARGOS N.° 142 · USO INSTITUCIONAL
@@ -551,11 +545,10 @@ RESUMEN) · FGE Colima, más de 46 años por slug (22-oct) · FGE Quintana Roo, 
 1. Siete rojos propios en cuatro entidades —dos ataques contra personal de seguridad y
 procuración, cuatro homicidios múltiples y una fosa—: riesgo nacional del corte con incremento
 acreditado.
-2. Concentración: Michoacán, tres rojos en tres municipios; Baja California, dos en un municipio
-y un día (cálculo propio).
+2. Concentración: Michoacán y Baja California suman cinco de los siete rojos (cálculo propio).
 3. Violencia operativa: tres amarillos, todos homicidios dolosos únicos; ningún enfrentamiento
 derivado de operativo.
-4. Respuesta institucional: tres verdes, todos detenciones; ninguna sentencia integrable.
+4. Respuesta institucional: tres verdes, todos detenciones, en tres entidades.
 5. 13 DE 13 HECHOS SIN HORA FIJADA POR FRAGMENTO (12 PUBLICADOS EL DÍA DE APERTURA, 1 EN
 FRONTERA) Y VENTANA DE 24 H 08 MIN: TOTALES NO COMPARABLES CON ARGOS 141 SIN NORMALIZAR POR
 HORA.
@@ -572,19 +565,20 @@ CARRETERA (ARG-142-012 y ARG-142-013); el segundo, en frontera de ventana. Líne
 Fiscalía de Michoacán la identificación de las víctimas y el cotejo balístico entre ambos —
 vínculo no acreditado.
 3. SAN LUIS POTOSÍ: SEGUNDO CONDUCTOR ASESINADO A BALAZOS A LA ALTURA DE TIERRA BLANCA EN SIETE
-DÍAS (cálculo propio, 20 y 26-oct, ambos extremos): ARG-139-009 y ARG-142-008; el día de
-ARG-139-009, solo por resumen; ARG-142-008, de fuente única; posible seguimiento no descartado.
-Línea: solicitar a la Fiscalía de San Luis Potosí si son dos hechos y si comparten armas.
-4. LEÓN: TRES HECHOS CON VÍCTIMAS EN SEIS DÍAS (cálculo propio, 21 al 26-oct, ambos extremos):
-ARG-140-005 (cuerpos), ataque de la col. Chapalita (24-oct, sin ficha: ventana anterior) y
-ARG-142-006; agresores en motocicleta en los dos últimos, solo por resumen. Línea: solicitar a
-la FGE Guanajuato si comparten agresores y la situación jurídica de la víctima de ARG-142-006 —
+DÍAS (cálculo propio, 20 y 26-oct): ARG-139-009 y ARG-142-008; el día de ARG-139-009, solo por
+resumen; ARG-142-008, de fuente única. Línea: solicitar a la Fiscalía de San Luis Potosí si son
+dos hechos y si comparten armas.
+4. LEÓN: TRES HECHOS CON VÍCTIMAS EN SEIS DÍAS (cálculo propio, 21 al 26-oct): ARG-140-005
+(cuerpos), ataque de la col. Chapalita (24-oct, Correo 2026/oct/25, sin ARG-ID) y ARG-142-006;
+agresores en motocicleta en los dos últimos, solo por resumen. Línea: solicitar a la FGE
+Guanajuato si comparten agresores y la situación jurídica de la víctima de ARG-142-006 —
 hipótesis.
 5. BRECHA DETENCIÓN–CONDENA: SIETE DETENIDOS EN TRES ACCIONES DEL CORTE —CINCO TRAS LOS DOS
 ATAQUES A AGENTES— Y NINGUNA SENTENCIA INTEGRABLE (cálculo propio: 3 en ARG-142-009, 2 en -010 y
-2 en -011); la única candidata con pena publicada, por portación de armas exclusivas en Tepic,
-solo por medios. Línea: solicitar a las fiscalías de Baja California y Puebla la vinculación y
-el registro balístico de las armas, y a la FGR el boletín de Tepic.
+2 en -011); la única con pena por titular, por portación de armas exclusivas en Tepic, solo por
+medios; detenidos contradichos en -009 y -010. Línea: solicitar a las fiscalías de Baja
+California y Puebla la vinculación y el registro balístico de las armas, y a la FGR el boletín
+de Tepic.
 
 ## INDICADORES OFICIALES
 
