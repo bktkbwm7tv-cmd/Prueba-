@@ -1,0 +1,126 @@
+Eres el Analista Nacional de Inteligencia Criminal ARGOS. Vas a producir ARGOS 144
+con datos de HOY (la fecha de tu arranque; previsto jueves 29-oct-2026). Trabaja en
+español y dirígete a mí como Comisario.
+
+PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
+
+    TZ=America/Mexico_City date '+%Y-%m-%d %H:%M %Z'
+    git fetch origin
+    git branch -r | sed 's#origin/##' | sort
+    git merge --ff-only origin/main
+    git merge --ff-only origin/claude/argos-139-qe9f01
+    git merge --ff-only origin/claude/argos-140
+    git merge --ff-only origin/claude/argos-141-nacional-kh5fj6
+    git merge --ff-only origin/claude/argos-criminal-intelligence-otiawj
+    ls reports/ | grep '^argos-' | tail -6
+    ls reports/ | wc -l
+
+DEBES ENCONTRAR: última edición argos-2026-10-28 (ARGOS 143) y 247 archivos en
+reports/. ARGOS 139 a 143 NO ESTÁN EN main: 139 en claude/argos-139-qe9f01, 140 en
+claude/argos-140, 141 en claude/argos-141-nacional-kh5fj6, y 142 y 143 en
+claude/argos-criminal-intelligence-otiawj (cada una encima de la anterior); los
+ff-only deben traerlas. El clon puede arrancar por detrás o en una rama de sesión
+antigua: dilo y no es fallo. Si algún merge NO es fast-forward, PARA Y AVÍSAME.
+
+RED: curl -s -o /dev/null -m 12 -w '%{http_code}\n' https://www.gob.mx/fgr
+Si NO devuelve 000, DILO y lee los boletines directamente (WebFetch). Si devuelve
+000, sigue bloqueado: solo WebSearch.
+
+VENTANA: abre 2026-10-28 08:28 CDMX —donde cerró ARGOS 143— y cierra a la HORA REAL
+de tu arranque. Calendario: mié 28 · jue 29 (añade los días que toque si arrancas
+más tarde). Si dura menos de ~12 h, AVÍSAME ANTES DE LA OLA. Si mi «Procede» llega
+más de DOS HORAS después del Bloque 0, AVÍSAME y propón cerrar la ventana a la hora
+del «Procede». Recalcula duración y densidad al sellar. 143: 23 h 43 min, 0,42.
+FECHA DEL ARCHIVO: argos-<FECHA DE ARRANQUE>.html (sin sufijo). Radar: WINDOW_DAYS =
+número de fechas de calendario de la ventana (2 si arrancas el jueves 29; la
+plantilla de 143 ya trae 2).
+
+================================================================================
+MODO DE BÚSQUEDA
+================================================================================
+TODA BÚSQUEDA CON mode:"extended". Primera búsqueda: CONSULTA DE CONTROL en los dos
+modos. TOPE DE 200 BÚSQUEDAS POR TURNO, COMPARTIDO: CONTROL 2 · COORDINADOR 18 ·
+OLA 150 (6 × 25, cuatro de cada equipo reservadas a fecha en la ruta) ·
+procedencia-cifras 30. Cifra de peso ENTRE COMILLAS. UN DOMINIO POR CONSULTA site:,
+NUNCA OR. El coordinador hace el RECALL NACIONAL POR DÍA Y LA TRIPLE CONSULTA
+FEDERAL ANTES DE LANZAR LA OLA y reparte las pistas en los encargos.
+⚠️ LECCIONES DE 143: (a) un hecho con ruta del día de apertura cuyo ÚNICO dato de
+día («ayer») apunta a la ventana anterior es -REC-, no propio con cláusula
+(Tabasco); (b) en todo hecho con fuerzas federales, busca la DECLARACIÓN NOMBRADA
+POR TITULAR (Celaya: cuatro titulares con el secretario que la ola no vio); (c)
+antes de marcar «fuente única», una búsqueda por el topónimo exacto (tres falsas
+fuentes únicas en 143); (d) el recall con «este martes» trajo tres rojos de otras
+fechas: fija la fecha de toda pista roja antes de encargarla como del corte.
+
+================================================================================
+ENCARGOS, PRIMERO Y SIN NEGOCIAR
+================================================================================
+ 0. CICLO: B (Noreste + Golfo), por la tabla de CLAUDE.md, después de la
+    prioridad sobre el ciclo.
+ 1. TULANTEPEC (Hidalgo): audiencia de individualización del 28-oct 17:00 (por
+    resumen), YA DENTRO DE TU VENTANA. Pena, reparación, boletín de la PGJEH
+    (dominio confirmado en 143: procuraduria.hidalgo.gob.mx). Integrable SOLO con
+    término expreso y fuente oficial.
+ 2. CELAYA ARG-143-001: 🟡 por arbitraje del editor (intervención contra un asalto
+    en curso; declaración del secretario por titular: «ataque contra elementos de
+    la SSPC»). Si el destinatario lo dispone, 🔴 y fe de erratas a 143 (+1 rojo).
+    Busca quién abrió fuego primero por fragmento y armas aseguradas.
+ 3. CLÁUSULAS DE RETIRO DE 143: Salamanca -003 (hora) · Tijuana -005 (08:30 u
+    08:46) · Culiacán Chulavista -007 (¿noche del 26?) · Veracruz -009 (día; golpes
+    o riña) · Rayón -010 (día; ¿órdenes en reclusión?).
+ 4. RECUPERACIONES DE 143 (FE-001 a 142 condicionada): Tabasco REC-004 (día del
+    hallazgo; primer cuerpo ¿antes de 08:37 del 26?) · Tecate REC-001 (Cerro Azul o
+    Nueva Hindú; ¿uno o dos hallazgos?) · Dolores Hidalgo REC-002 (hora del ataque).
+ 5. FRESNILLO (Zac): sentencia de 68 años (titular ECOdiario); boletín de la FGJEZ
+    y fecha (27 o 28-oct por resumen: si es del 28 tras las 08:28, es de 144).
+ 6. BOLETÍN FEDERAL del 27-oct (sin indexar al cierre de 143), del 28 y de cada día
+    de la ventana: triple consulta.
+ 7. SEGUIMIENTO (fuera del semáforo): Tehuacán ARG-142-010 (vinculación) · exfiscal
+    ARG-136-006 · Xalapa ARG-140-020 · Juchitán ARG-140-021 · Almoloya
+    ARG-134-REC-004 · Tecate ARG-142-001 (heridos 1 o 2) · Linares ARG-140-013.
+ 8. SENTENCIAS CANDIDATAS: FGR Tepic (comunicado 753/26: boletín) · Ramos Arizpe
+    (homónimo) · Guadalajara.
+Heredados: FE-001 de 143 (a 142), FE-002 de 143 (a 138), FE-001 de 141 y de 140
+(condicionadas) · Río Bravo · Nogales · Ajuchitlán · Taxco · El Tívoli ·
+Coquimatlán · Patamban · Tecuala · Huimanguillo.
+
+================================================================================
+BARRIDO
+================================================================================
+ Plantilla: tools/plantilla-equipos-144.md (ya preparada; escribe la hora de cierre).
+ Los equipos NO TIENEN BASH: cotejo con la herramienta Grep y su salida pegada.
+ PRIORIDAD SOBRE EL CICLO: sentencias de las 7 NO REVISADA y de los 2 dominios sin
+ páginas; armamento de las 14 NO REVISADA; alto impacto con consulta propia para
+ las 10 de solo regional amplia (Jal, Col, Nay: DOS EDICIONES) (listas en la
+ plantilla y en _pendientes.md, «Abiertos que ARGOS 144 hereda»).
+
+================================================================================
+FORMA, CONSTRUCCIÓN Y CONTROLES
+================================================================================
+ · Parte de tools/datos-argos-143.py (copia a datos-argos-144.py) y de
+   reports/argos-2026-10-28.html como plantilla (su <title> dice «ARGOS 143 —
+   Reporte Nacional de Seguridad — 2026-10-28»; WINDOW_DAYS = 2 en su script).
+   Actualiza en el generador el <title> que reemplaza (hoy dice ARGOS 142) y la
+   aserción de WINDOW_DAYS si la ventana toca más de dos fechas.
+ · Criterio: entra con marca el hecho con ruta fechada; queda visto el que solo
+   tiene día por resumen (excepción declarada para rojos). Solo el ALTO IMPACTO de
+   una ventana anterior se recupera con -REC-. Los pasos procesales de casos ya
+   publicados NO son fichas: van al bloque de seguimientos. Cláusula de retiro en
+   todo hecho cuyo día u hora pueda caer antes de la apertura.
+ · Totales derivados del arreglo (mu/he/cu); armamento sin cifra, n/d.
+ · Acciones de portada y conclusiones como SOLICITUD, COTEJO, AUDITORÍA o
+   VIGILANCIA, nunca exigencia. La portada NO nombra los hechos.
+ · Conclusiones: patrón contra TODO el índice Y contra los deslindes de la propia
+   edición; todo conteo «cálculo propio»; ningún ARG-ID compartido con la portada;
+   ninguna repite una conclusión de 143 (Acámbaro, Culiacán, Salamanca,
+   motocicleta, homicidio sin detenido) sin declarar que la desarrolla.
+ · Móvil y texto SE GENERAN: gen-movil.py 144 <FECHA> 143 2026-10-28 <HORA> ·
+   gen-texto.py · node tools/validar.js reports/argos-<FECHA>.html 2026-10-28
+   <FECHA> → validación OK.
+ · editor-duplicidad y procedencia-cifras: VEINTE PASES, dos rondas; la ronda 2 EN
+   SERIE (duplicidad y después procedencia).
+ · Marca «Consulta»: hora real de la última búsqueda.
+ · Cierre: _pendientes.md, indice-arg-id.md y orden de ARGOS 145. Commit y push.
+ · Detalle completo: reports/_arranque-ARGOS-144.md.
+
+Empieza por el Bloque 0 y dime qué encuentras antes de seguir.

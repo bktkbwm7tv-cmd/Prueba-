@@ -8,7 +8,7 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 142 (corte 2026-10-27; ventana 26-oct 08:37 → 27-oct 08:45).
+**Última actualización**: ARGOS 143 (corte 2026-10-28; ventana 27-oct 08:45 → 28-oct 08:28).
 
 ---
 
@@ -26,6 +26,8 @@ sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le
 **ARGOS 141 publicado el 26-oct** (ventana 25-oct 07:45 → 26-oct 08:37, 24 h 52 min; rama `claude/argos-141-nacional-kh5fj6`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-142.md`** (y `_ordenes-ARGOS-142.txt`).
 
 **ARGOS 142 publicado el 27-oct** (ventana 26-oct 08:37 → 27-oct 08:45, 24 h 08 min; rama `claude/argos-criminal-intelligence-otiawj`, encima de `claude/argos-141-nacional-kh5fj6`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-143.md`** (y `_ordenes-ARGOS-143.txt`).
+
+**ARGOS 143 publicado el 28-oct** (ventana 27-oct 08:45 → 28-oct 08:28, 23 h 43 min; rama `claude/argos-criminal-intelligence-otiawj`, encima de 142). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-144.md`** (y `_ordenes-ARGOS-144.txt`).
 
 ⚠️ **25-oct: la orden de 140 del 22-oct no se ejecutó** (la sesión se detuvo tras el Bloque 0; no hay edición del 22 al 24). **Orden rehecha el 25-oct** en la rama `claude/argos-140`: ventana larga **21-oct 10:23 → domingo 25-oct**, archivo `argos-2026-10-25.html`, `WINDOW_DAYS = 5`, recall nacional por día.
 
@@ -2555,3 +2557,43 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 5. **Presupuesto de 142**: 2 + 18 + 150 + 27 + 3 = 200 de 200. Los controles necesitaron 30 de 30: dejar margen si la ola trae rojos sin ancla.
 6. **`tools/validar.js` sigue sin validar el móvil** (la cubre la validación interna de `gen-movil.py`).
 7. **Rama**: 142 vive en `claude/argos-criminal-intelligence-otiawj` (rama de sesión fijada), encima de `claude/argos-141-nacional-kh5fj6`; ninguna está en `main`.
+
+## ARGOS 143 — lo que cierra esta edición
+
+| Pendiente | Disposición |
+|---|---|
+| **Acámbaro, Campamento Ferrocarriles** | Publicado: `ARG-143-REC-003` (🔴, ventana de 138; 2 muertos por titular; hora por resumen). Fe de erratas `ARG-143-FE-002` a 138 (condicionada) |
+| **Cañada Morelos** | 24-jun-2026 (e-consulta 2026-06-25): descartado |
+| **Morelia–Tumbisca (`ARG-142-013`)** | Ninguna hora publicada: sigue en frontera; sin fe de erratas. Cerrado salvo ancla nueva |
+| **Cláusulas de retiro de 142** | Cutzato, Apatzingán y Cajeme: sin ancla anterior a las 08:37 del 26; ninguna se ejecuta. Cerrado |
+| **FGR Tepic** | Comunicado 753/26 del 26-oct (listado FGR, por resumen): publicada antes de la ventana de 143. Queda como candidato sin integrar |
+| **Tehuacán `ARG-142-010`** | 2 detenidos y 1 AR-15, por titular (Síntesis 2026/10/27). Queda la vinculación |
+| **Tlaxcala y Hidalgo (sentencias, dos ediciones NO REVISADA)** | Dominios confirmados: `fgjtlaxcala.gob.mx`, `procuraduria.hidalgo.gob.mx`; SRIV |
+| **Sonora y Nayarit (dominios sin páginas)** | `fiscalia.sonora.gob.mx` y `fgenay.gob.mx` confirmados |
+
+## Abiertos que ARGOS 144 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️ **Tulantepec** | Audiencia de individualización del **28-oct 17:00** (por resumen), **dentro de la ventana de 144**: pena, reparación, boletín de la PGJEH (`procuraduria.hidalgo.gob.mx`) |
+| ⚠️ **Celaya `ARG-143-001`** | 🟡 por arbitraje (intervención contra asalto en curso; declaración del secretario por titular: «ataque contra elementos de la SSPC»). **Decisión reversible por el destinatario**: si 🔴, fe de erratas a 143 (+1 rojo; Gto con rojo). Quién abrió fuego por fragmento; armas aseguradas |
+| ⚠️ **Cláusulas de retiro de 143** | `-003` Salamanca (hora) · `-005` Tijuana (08:30 / 08:46) · `-007` Chulavista (¿noche del 26?) · `-009` Veracruz (día; golpes o riña) · `-010` Rayón (día; ¿órdenes cumplimentadas en reclusión?) |
+| ⚠️ **FE-001 de 143 (a 142)** | Condicionada: día de `REC-004` Tabasco (¿primer cuerpo antes de las 08:37 del 26 → ARGOS 141?), hora de `REC-001` Tecate y `REC-002` Dolores Hidalgo; Tecate: ¿Cerro Azul y Nueva Hindú son un hallazgo o dos? |
+| **Fresnillo (Zac)** | Sentencia de 68 años (titular ECOdiario): boletín de la FGJEZ y fecha (27 o 28 por resumen; si es del 28 tras las 08:28, de 144) |
+| **Seguimientos** | Tehuacán `ARG-142-010` (vinculación) · exfiscal `ARG-136-006` · Xalapa `ARG-140-020` · Juchitán `ARG-140-021` · Almoloya `ARG-134-REC-004` · Tecate `ARG-142-001` (heridos 1 o 2; «2 mueren» solo en Radar Tecate) · Tecate `-002` (composición) · SLP `ARG-142-008` (segunda fuente) · Linares `ARG-140-013` (47/55; colonia) · Pénjamo `ARG-141-001` |
+| **Vistos de 143 por fijar** | Culiacán del 27 (Infonavit Barrancos frente a primaria, misma colonia que `ARG-134-013`; ciclista Feria Ganadera; Tierra Blanca) · Juchitán La Amistad y 10 de Mayo (¿uno o dos?) · Jalapa de Díaz · Texmelucan · Guasave («Chuy» González, 🟡, ventana de 142) |
+| **FE condicionadas** | `ARG-143-FE-001` · `ARG-143-FE-002` · `ARG-141-FE-001` · `ARG-140-FE-001` · Río Bravo (129) |
+| **Sentencias candidatas** | FGR Tepic (boletín 753/26) · Ramos Arizpe (homónimo) · Guadalajara (no localizado) · Fresnillo |
+| **Heredados sin avance** | Nogales · Ajuchitlán · Taxco · El Tívoli · Coquimatlán · Patamban (decisión del destinatario) · Tecuala (`CANTIDAD NO DETERMINADA`) · Huimanguillo (identificación: nombres contradictorios entre familiares y medios) |
+| **Cobertura con prioridad sobre el ciclo en 144** | **Sentencias `NO REVISADA` (7)**: BCS · SLP, Zac · Col, Mich · Pue, Qro; **dominio sin páginas (2)**: Coah, Camp. **Armamento `NO REVISADA` (14)**: BC, BCS, Son, Dgo · SLP · Col · Edomex, Mor, Hgo, Qro · Gro, Camp, Yuc, QRoo (Coah, Oax sin páginas). **Alto impacto solo amplia (10)**: Dgo · Jal, Col, Nay (**dos ediciones**), Ags · Edomex, Mor, Hgo, Qro · Chis. Después, **CICLO B** (Noreste + Golfo: 144 = B) |
+
+## Deuda de método (ARGOS 143)
+
+1. **Hecho propio que era de la ventana anterior**: Tabasco entró como único rojo propio con ruta del 27 y el día del hallazgo («ayer») solo en el resumen; los dos controles lo devolvieron a `-REC-`. La plantilla de 144 obliga a tratar así el «ayer».
+2. **Declaración institucional no vista**: en Celaya, la ola leyó la declaración del secretario solo en resúmenes; había cuatro titulares fechados. La plantilla de 144 añade una búsqueda de declaración nombrada en todo hecho con fuerzas de seguridad.
+3. **Falsas fuentes únicas**: tres (Mercado de Abastos, Chulavista, Aguaruto). Una búsqueda por topónimo exacto antes de marcar fuente única.
+4. **Señuelos del recall**: tres rojos de otras fechas entraron como pistas («este martes»). El coordinador fija la fecha de toda pista roja antes de encargarla.
+5. **Criterio único de `REVISADA`**: búsqueda dirigida con páginas del dominio; el subconjunto sin boletines del periodo (NL, Tamps, Son, Sin, Gto, Hgo en 143) se declara aparte.
+6. **Generador**: admite `ARM = []`; la tabla de totales sigue sin columna «Armamento especial» (heredado) y el semáforo escribe «1 eventos».
+7. **Presupuesto de 143**: 2 + 18 + 2 + 150 + 23 + R2 (ver fuentes §11) ≤ 200.
+8. **Rama**: 142 y 143 viven en `claude/argos-criminal-intelligence-otiawj`; ninguna está en `main`.
