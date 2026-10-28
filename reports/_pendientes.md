@@ -2582,7 +2582,7 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 | **Fresnillo (Zac)** | Sentencia de 68 años (titular ECOdiario): boletín de la FGJEZ y fecha (27 o 28 por resumen; si es del 28 tras las 08:28, de 144) |
 | **Seguimientos** | Tehuacán `ARG-142-010` (vinculación) · exfiscal `ARG-136-006` · Xalapa `ARG-140-020` · Juchitán `ARG-140-021` · Almoloya `ARG-134-REC-004` · Tecate `ARG-142-001` (heridos 1 o 2; «2 mueren» solo en Radar Tecate) · Tecate `-002` (composición) · SLP `ARG-142-008` (segunda fuente) · Linares `ARG-140-013` (47/55; colonia) · Pénjamo `ARG-141-001` |
 | **Vistos de 143 por fijar** | Culiacán del 27 (Infonavit Barrancos frente a primaria, misma colonia que `ARG-134-013`; ciclista Feria Ganadera; Tierra Blanca) · Juchitán La Amistad y 10 de Mayo (¿uno o dos?) · Jalapa de Díaz · Texmelucan · Guasave («Chuy» González, 🟡, ventana de 142) |
-| **FE condicionadas** | `ARG-143-FE-001` · `ARG-143-FE-002` · `ARG-141-FE-001` · `ARG-140-FE-001` · Río Bravo (129) |
+| **FE condicionadas** | `ARG-143-FE-001` · `ARG-143-FE-002` (`ARG-143-FE-003`, retirada de cifras heredadas, firme) · `ARG-141-FE-001` · `ARG-140-FE-001` · Río Bravo (129) |
 | **Sentencias candidatas** | FGR Tepic (boletín 753/26) · Ramos Arizpe (homónimo) · Guadalajara (no localizado) · Fresnillo |
 | **Heredados sin avance** | Nogales · Ajuchitlán · Taxco · El Tívoli · Coquimatlán · Patamban (decisión del destinatario) · Tecuala (`CANTIDAD NO DETERMINADA`) · Huimanguillo (identificación: nombres contradictorios entre familiares y medios) |
 | **Cobertura con prioridad sobre el ciclo en 144** | **Sentencias `NO REVISADA` (7)**: BCS · SLP, Zac · Col, Mich · Pue, Qro; **dominio sin páginas (2)**: Coah, Camp. **Armamento `NO REVISADA` (14)**: BC, BCS, Son, Dgo · SLP · Col · Edomex, Mor, Hgo, Qro · Gro, Camp, Yuc, QRoo (Coah, Oax sin páginas). **Alto impacto solo amplia (10)**: Dgo · Jal, Col, Nay (**dos ediciones**), Ags · Edomex, Mor, Hgo, Qro · Chis. Después, **CICLO B** (Noreste + Golfo: 144 = B) |
@@ -2595,5 +2595,6 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 4. **Señuelos del recall**: tres rojos de otras fechas entraron como pistas («este martes»). El coordinador fija la fecha de toda pista roja antes de encargarla.
 5. **Criterio único de `REVISADA`**: búsqueda dirigida con páginas del dominio; el subconjunto sin boletines del periodo (NL, Tamps, Son, Sin, Gto, Hgo en 143) se declara aparte.
 6. **Generador**: admite `ARM = []`; la tabla de totales sigue sin columna «Armamento especial» (heredado) y el semáforo escribe «1 eventos».
-7. **Presupuesto de 143**: 2 + 18 + 2 + 150 + 23 + R2 (ver fuentes §11) ≤ 200.
+7. **Presupuesto de 143**: 2 + 18 + 2 + 150 + 23 + 2 = 197 de 200.
+9. **Umbral de fe de erratas aplicado a candidatos de sentencias** (`ARG-143-FE-003`): Tulantepec «8-oct», «75 UMA» y «seis meses» retirados. No reintroducir sin fragmento.
 8. **Rama**: 142 y 143 viven en `claude/argos-criminal-intelligence-otiawj`; ninguna está en `main`.

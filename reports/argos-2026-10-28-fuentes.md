@@ -1,7 +1,7 @@
 # ARGOS 143 — Archivo de fuentes
 
 **Corte**: 2026-10-28 · **Ventana**: 27-oct 08:45 → 28-oct 08:28 CDMX (**23 h 43 min**; `WINDOW_DAYS = 2`) · **Densidad**: 10 hechos propios / 23,72 h = **0,42 hechos/hora**, cálculo propio (0 🔴, 9 🟡, 1 🟢; 7 entidades). **Cuatro recuperaciones de alto impacto** (tres de la ventana de 142, una de la de 138), fuera de totales. Borrador previo a la ronda 1: 11 hechos (0,46), con Tabasco como rojo propio.
-**Hora de cierre**: hora real del Bloque 0 (08:28 CDMX del miércoles 28), declarada al destinatario. «Procede» a las 08:31 (3 min después): sin ajuste de cierre. La ola corrió de 08:33 a 08:40 aprox.; la ronda 1 de controles, de 08:45 a 09:00. Marca «Consulta»: ver §11.
+**Hora de cierre**: hora real del Bloque 0 (08:28 CDMX del miércoles 28), declarada al destinatario. «Procede» a las 08:31 (3 min después): sin ajuste de cierre. La ola corrió de 08:33 a 08:40 aprox.; la ronda 1 de controles, de 08:45 a 09:00. Marca «Consulta 2026-10-28, última búsqueda 09:20» (`procedencia-cifras` R2, hora aproximada: el agente no registró la hora exacta; su ronda corrió de 09:12 a 09:21).
 
 Informes de los seis equipos (condensados por el coordinador: datos, URL y marcas íntegros), notas del coordinador y controles: `reports/argos-2026-10-28-equipos.md`. Plantilla: `tools/plantilla-equipos-143.md`. Generador: `tools/datos-argos-143.py`.
 
@@ -15,7 +15,7 @@ Informes de los seis equipos (condensados por el coordinador: datos, URL y marca
 
 - `curl https://www.gob.mx/fgr` → `000` (28-oct 08:28). **Egreso bloqueado: solo WebSearch.** Techo ★★★★☆; esta edición no supera ★★★☆☆.
 - Consulta de control en los dos modos: `extended` trae hechos de la ventana (Chihuahua Sol de Oriente, Celaya); `standard`, nada de la ventana (Tehuitzingo, bares sin fecha). **Todo `extended`.**
-- Presupuesto: control 2 · coordinador 18 + 2 (horas de dos rojos, tomadas de la cuota de controles) · ola 150 (6 × 25, agotada en los seis) · `procedencia-cifras` R1 23 · R2: ver §11.
+- Presupuesto: control 2 · coordinador 18 + 2 (horas de dos rojos, tomadas de la cuota de controles) · ola 150 (6 × 25, agotada en los seis) · `procedencia-cifras` R1 23 · R2 2 = **197 de 200**.
 
 ## 3. Rotación — prioridad sobre el ciclo y CICLO A, declarados
 
@@ -39,7 +39,7 @@ Informes de los seis equipos (condensados por el coordinador: datos, URL y marca
 | Encargo | Resultado |
 |---|---|
 | **0. Ciclo** | A, declarado (§3) |
-| **1. Tulantepec** | **Sin cambio**. Reprogramación al 28-oct 17:00, solo por resumen (La Jornada Hidalgo, sin fecha); **hora posterior al cierre**: pasa a ARGOS 144. Fallo del 8-oct (ARGOS 141), publicado el 9 |
+| **1. Tulantepec** | **Sin cambio**. Reprogramación al 28-oct 17:00, solo por resumen (La Jornada Hidalgo, sin fecha); **hora posterior al cierre**: pasa a ARGOS 144. Fecha del fallo no fijada (publicado el 9-oct por *slug*; el «8-oct» de ARGOS 141 nunca tuvo respaldo citable: `ARG-143-FE-003`) |
 | **2. Morelia–Tumbisca (`ARG-142-013`)** | Todos los medios dicen «en la mañana»; ninguna hora (Medianews, Quadratín, La Voz, MiMorelia, PCM, Noventa Grados, 1plana, MoreliActiva). **Sigue `FRONTERA`; sin fe de erratas** |
 | **3. Cláusulas de retiro de 142** | Cutzato `-005`: día del hallazgo no fijado (sin búsqueda propia). Apatzingán `-007`: mayoría «tarde del 26», solo 1plana ~03:30; sin ancla. Cajeme `-011`: día no fijado (rutas del 26). **Ninguna se ejecuta** |
 | **4. Acámbaro, Campamento Ferrocarriles** | **Recuperado: `ARG-143-REC-003`** (🔴, 2 muertos por titular; publicado el 19 por ruta; ~22:00 por resumen → ventana de ARGOS 138) |
@@ -62,8 +62,9 @@ Informes de los seis equipos (condensados por el coordinador: datos, URL y marca
 
 ## 7. Fe de erratas (no va al cartelón)
 
-- **`ARG-143-FE-001` (a ARGOS 142)**: `REC-001`, `REC-002` y `REC-004` → **rojos 7 → 10, muertos 15 → 16, cuerpos hallados 1 → 7** (cálculo propio); entidades 6 → 7 (+Tab). **Condicionada**: horas de REC-001 y REC-002 y día de REC-004, solo por resumen; si el primer cuerpo de REC-004 fue anterior a las 08:37 del 26, uno de los tres cuerpos corresponde a ARGOS 141.
-- **`ARG-143-FE-002` (a ARGOS 138)**: `REC-003` → **rojos 2 → 3, muertos 8 → 10** (cálculo propio); entidades sin cambio (Gto ya contada). Condicionada: hora solo por resumen (publicado el 19 por ruta).
+- **`ARG-143-FE-001` (a ARGOS 142)**: `REC-001`, `REC-002` y `REC-004` → **hechos 13 → 16, rojos 7 → 10, muertos 15 → 16, cuerpos hallados 1 → 7** (cálculo propio); entidades 6 → 7 (+Tab); entidades con rojo 4 → 5; la concentración de su Valoración 2 pasa a 6 de 10 (Mich 3 + BC 3). **Condicionada**: horas de REC-001 y REC-002 y día de REC-004, solo por resumen; si el primer cuerpo de REC-004 fue anterior a las 08:37 del 26, uno de los tres cuerpos corresponde a ARGOS 141.
+- **`ARG-143-FE-002` (a ARGOS 138)**: `REC-003` → **hechos 13 → 14, rojos 2 → 3, muertos 8 → 10** (cálculo propio); entidades sin cambio (Gto ya contada); entidades con rojo 2 → 3.
+- **`ARG-143-FE-003` (a ARGOS 141 y 142, candidatos de sentencias)**: se retiran por umbral de fe de erratas (dos ediciones sin respaldo citable) la **fecha del fallo de Tulantepec «8-oct»** (141), los **«75 UMA»** de Ramos Arizpe (142) y los **«seis meses»** de Tepic (142): `CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO`. Ninguno estaba integrado al conteo. Condicionada: hora solo por resumen (publicado el 19 por ruta).
 - `ARG-141-FE-001` y `ARG-140-FE-001` siguen condicionadas; Río Bravo (129) condicionada.
 
 ## 8. Registro del barrido — por entidad
@@ -92,7 +93,7 @@ El recuento I/N/R/A de cada ficha está en `tools/datos-argos-143.py`; las URL, 
 **Equivalencia de ARG-ID** (los informes de equipos y de la ronda 1 usan la numeración del borrador): borrador -001 (Tabasco) → `REC-004` · -002 → -001 · -003 → -002 · -004 → -003 · -005 → -004 · -006 → -005 · -007 → -006 · -008 → -007 · -009 → -008 · -010 → -009 · -011 → -010. REC-001 a -003 sin cambio.
 
 **Ronda 2** (en serie): `editor-duplicidad` R2 — CORREGIR (13 hallazgos menores; 0 duplicidades; aritmética, fe de erratas contra 142 y 138 y cobertura limpias; validador OK). **Aplicados**: Chulavista de Mazatlán «visto en ARGOS 132» · Conclusión 3 «cinco puntos distintos» y «cuatro si se retira -003» · Rayón con Institucional 1 (Fiscalía por titular) · Veracruz con N+ como segundo nacional · frase «no se reverificaron» sustituida por «cotejados contra el índice» · REC-004 a ★★☆☆☆ (una sola ruta fechada) · Conclusión 2 con ARG-134-013 (11 hechos, 15 al 27-oct, 13 días) y Barrancos como misma colonia · Celaya: «quién abrió fuego primero: no publicado», «🟡 por reserva», y marca en la Valoración 2 · seguimiento de Tehuacán reducido a ARG-142-010 · ARG-140-006 del 21-oct · Tulantepec «candidato de ARGOS 140 a 142» · equivalencia de ARG-ID y FE-002 con totales · índice y pendientes (cierre).
-`procedencia-cifras` R2: ver el archivo de equipos.
+`procedencia-cifras` R2 (2 de 5 búsquedas) — CORREGIR (18 correcciones; 0 descuadres; las 22 de R1 aplicadas). **Aplicados**: texto y móvil regenerados (la nº 1 ya estaba resuelta en el commit `8236e6f`; el agente leyó una versión previa) · edad de -009 por resumen · portada sin «septiembre», «9 mm» ni «dos camionetas» · Ram/Cherokee y 9 mm marcados por separado · orden del panorama «por hora estimada solo por resumen» · REC-002 sin nombre de pila · REC-003 sin Milenio (N=1) · «decapitado» con Noroeste sin fecha y «punto contradicho» en el panorama · marca «Consulta» a 09:20 · Valoración 1 sujeta al arbitraje de -001; Valoración 2 con la naturaleza contradicha de -009 · Conclusión 5 «violencia sin detenido» y «solo por resumen»; Conclusión 2 «diez si se retira -007» · exfiscal con fuentes sin fecha · Rayón «imputados con orden cumplimentada» e institucional «por titular, sin comunicado» · tortura de REC-004 «sin fecha en la ruta» · vistos y sentencias previas con marcas; QRoo `HEREDADO — NO REVERIFICADO` · `ARG-143-FE-003` (Tulantepec, 75 UMA, seis meses) · FE-001 y FE-002 completadas · herido de -001 por *slug*. **No aplicado**: «1 eventos» (heredado) · Diario de Yucatán como fuente adicional de -001 (no cambia confianza). **Edición sellada.**
 
 ## 12. Herramientas
 
