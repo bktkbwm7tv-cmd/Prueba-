@@ -3,7 +3,7 @@
 Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 
 ## Ventana
-- ABRE: **martes 27-oct-2026 08:45 CDMX** (donde cerró ARGOS 142). CIERRA: **hora real de arranque de la sesión de ARGOS 143** (el coordinador la escribe aquí al copiar la plantilla: ____).
+- ABRE: **martes 27-oct-2026 08:45 CDMX** (donde cerró ARGOS 142). CIERRA: **hora real de arranque de la sesión de ARGOS 143** (**miércoles 28-oct-2026 08:28 CDMX**).
 - Calendario: sábado 24 · domingo 25 · lunes 26 · **martes 27 · miércoles 28 · jueves 29** · viernes 30. Comprueba siempre el día de la semana que dice la fuente contra este calendario.
 - **ARGOS 142 (ventana 26-oct 08:37 → 27-oct 08:45) ya publicó 13 hechos** —Tecate FESC (-001) y su detención (-009), Tecate El Escorial (-002), Tehuacán agente de la AEI (-003) y su detención (-010), Acámbaro Velasco Ibarra (-004), Cutzato fosa (-005), León Valle de San Bernardo (-006), Apatzingán mercado (-007), SLP Periférico/Tierra Blanca (-008), Cajeme Xochiloa (-011), Queréndaro taller (-012), Morelia–Tumbisca (-013, FRONTERA)— y ninguna recuperación. Un hecho del 26 (tras las 08:37) o del 27 antes de las 08:45 que 142 NO publicó es de la ventana de 142: candidato `-REC-` **solo si es de alto impacto (🔴)**; si es 🟡 o 🟢, va a «VISTOS».
 - **Núcleo del corte**: hechos del **martes 27 (tras las 08:45)** en adelante. Publicación del 27 sin hora fijada → `PUBLICADO EL DÍA DE APERTURA SIN HORA`; publicación del día de cierre sin hora → `FRONTERA DE VENTANA — HORA NO FIJADA`.
