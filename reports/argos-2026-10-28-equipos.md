@@ -207,3 +207,30 @@ DESCARTADOS: «El Moro» Acapulco (Heraldo 2026/10/27 dice sábado 24; Tribuna 2
 CORRECCIONES: ninguna.
 COBERTURA: AI — Oax, Gro, Camp, Yuc, QRoo consulta propia; Chis solo amplia. Armamento — Chis REVISADA (SRIV); Oax dominio sin páginas; Gro, Camp, Yuc, QRoo NO REVISADA. Sentencias — Chis, Gro, Oax, Yuc, QRoo REVISADA (SRIV); Camp dominio sin páginas (fgecampeche.gob.mx, fiscaliacampeche.gob.mx).
 
+
+## controles — ronda 1
+
+## editor-duplicidad R1 — CORREGIR ANTES DE PUBLICAR (20 pases; 16 hallazgos; 0 duplicidades reales; 0 falsos vacíos)
+
+1. Conclusión 4: «33 meses» falso (13-ene-2023 → oct-2026 = 45 meses); usa una sentencia no integrada; Tulantepec cuenta desde la publicación (9-oct; 141 daba el fallo el 8-oct). Sustituir o corregir.
+2. Valoración 2: amarillos en 6 entidades, no 7.
+3. Conclusión 5: diez hechos violentos en 7 entidades, no 6.
+4. Cláusulas de retiro: -006 (única de BC), -010 (única de Ver) y -011 (única de SLP) también restan entidad; mínimo 4 si se retiran las seis.
+5. Herido que huye de -002: no está en el total ni excluido con motivo.
+6. ARG-143-001: hallazgo «el día anterior» (26) por resumen; EVENTOS con fecha 2026-10-27 como fecha del hecho; arbitraje no registrado. (a) pasar a -REC- de 142 o (b) conservar con marca de evento anterior publicado durante el corte.
+7. Cierre: falta fuentes 143, fe de erratas compacta de los -REC- (142: +2 rojos, +3 cuerpos, +1 muerto; 138: +1 rojo, +2 muertos), _pendientes.md y regenerar índice.
+8. Repetición: Valoración 1 re-titula Tabasco; Valoración 4 y Conclusión 5 repiten Rayón; Valoración 5 repite cifras de la nota.
+9. Conclusión 3 reutiliza ARG-142-006 y el rasgo de motocicleta de la Conclusión 4 de 142; Conclusión 2 comparte seis ARG-ID con la Conclusión 1 de ARGOS 138: declarar «desarrolla».
+10. Deslindes: Aguaruto no figura en índice ni 138-142; Chulavista homónimo en Mazatlán (fuentes 2026-10-14); El Novillo/El Espino sin fuente; Macultepec no está en la ficha; añadir ARG-137-005 (Villahermosa–Teapa); Chicuacen 4 o 5-sep: unificar. Opcional: ARG-95-002 (Celaya–Cortazar), Salamanca ARG-126-002, 133-002, 136-001, 137-015.
+11. Seguimientos del panorama: Tecate (heridos, composición), SLP -008, Tumbisca -013 y Linares no son pasos procesales: al archivo de fuentes.
+12. Candidatos de sentencias repetidos de 142 sin decirlo; fecha del fallo de Tulantepec (8-oct según 141).
+13. Cobertura aritméticamente correcta (23+2+7; 16+2+14; 22+10).
+14. Criterio REVISADA inestable (NL, Tamps «nominal»; Son, Sin, Hgo por PDF; Coah armamento NR o sin páginas; Chih): registrar criterio en fuentes.
+15. Tabla de totales sin columna «Armamento especial» (heredado, menor).
+16. Escritorio, móvil y texto coinciden.
+
+## procedencia-cifras R1 — CORREGIR ANTES DE PUBLICAR (20 pases; 22 correcciones; 23 de 24 búsquedas)
+
+Principales: (1) -001 Tabasco: el único dato del día («ayer», 26) apunta a la ventana de 142; ninguna ruta lo fija el 27 → -REC- o marca explícita; «lesiones por arma de fuego» es solo por resumen; titular de El Sol del Sureste dice Villa Macultepec. (2) -002 Celaya: declaración nombrada del secretario de Seguridad POR TITULAR con ruta del 27 — Heraldo de México («Harfuch informa ataque contra elementos de la SSPC en operativo en Guanajuato; abaten a presunto asaltante en Celaya»), Tribuna («Elementos de la SSPC son atacados a balazos en Celaya… anuncia García Harfuch»), La Jornada («SSPC frustra robo a transporte de carga en Celaya; abaten a un agresor y lesionan a otro»), La Silla Rota 534815 («Atacan en Celaya a elementos de la SSPC; se enfrentan a los agresores y abaten a uno»); ABC Noticias 2026/10/27 «un abatido y un herido». Retirar «no acreditado por autoridad»; revisar color. (3) -003 no es fuente única: AM 2026/10/27 («vendedor de tortas cerca del Mercado de Abastos»), Noticieros en Línea 2026/oct/27, N+; hora ~15:00/~15:30. (4) -004 título «SIGUEN» solo por resumen. (5) -005: «1 herido» en dos titulares con ruta (El Pueblo 20261027; La Gaceta 2026/10/27 «Acribillan a 2…; uno murió»); «COMANDO» sin respaldo. (6) -007: cruce contradicho (Valle Sonora/Valle Alto vs Valle Alto/Valle de México); MVS 28 hora no fijada. (7) -008: Luz Noticias 2026-10-27 (segunda ruta); «dentro / frente a» la vivienda contradicho; noche o primeras horas por resumen. (8) -009: Luz Noticias 2026-10-27 («camino de terracería entre Aguaruto y San Pedro»); ubicación contradicha. (9) -010: «asesinan a golpes» vs «presunta riña / agresión» (Meganoticias; N+; Plumas Libres 2026/10/27); ~9:00 por resumen. (10) -011: MC Noticias titula «Fiscalía cumplimenta órdenes de aprehensión contra dos imputados»; Quadratín SLP (resumen): ya presos en Rioverde por otra causa. (11) REC-001: «Cerro Azul» solo por resumen; Zeta titula Nueva Hindú → «posible mismo hallazgo»; Rancho Reynoso (resumen). (12) REC-002: muerte publicada el 27, fecha no fijada; N+ no es de este hecho. (13) REC-003: Correo en sección /opinion/; «lunes» y ~22:00 por resumen. (14) Valoración 2: 6 entidades. (15) Conclusión 4: 33 meses falso (45); «19 días» es proyección: retirar. (16) Conclusión 5: 7 entidades. (17) Conclusión 3: ARG-142-006 no fue víctima única. (18) Retiro: −1 entidad en -006, -010, -011. (19) VISTOS de armamento sin marca de resumen; Tlaltenango «más de 2 mil» por titular vs 2,116/2,117 por resumen; Ejército/GN vs Marina. (20) Cobertura: Coahuila armamento; gabinetedeseguridad.gob.mx = SRIV; separar fiscalías sin boletines (NL, Tamps, Son, Gto). (21) Fresnillo: publicación 27 o 28 por resumen; «Juan Manuel N» / «Juan N». (22) Tecate seguimiento: Zeta titula «detienen a tres» (ruta 2026/10); Punto Norte 2026/10/26 «una agente muerta y uno herido».
+
+Disposición: ver `reports/argos-2026-10-28-fuentes.md` §6 y §11.
