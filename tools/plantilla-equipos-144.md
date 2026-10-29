@@ -3,7 +3,7 @@
 Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 
 ## Ventana
-- ABRE: **miércoles 28-oct-2026 08:28 CDMX** (donde cerró ARGOS 143). CIERRA: **hora real de arranque de la sesión de ARGOS 144** (el coordinador la escribe aquí al copiar la plantilla: ____).
+- ABRE: **miércoles 28-oct-2026 08:28 CDMX** (donde cerró ARGOS 143). CIERRA: **hora real de arranque de la sesión de ARGOS 144** (**jueves 29-oct-2026 11:36 CDMX**).
 - Calendario: lunes 26 · martes 27 · **miércoles 28 · jueves 29 · viernes 30** · sábado 31. Comprueba siempre el día de la semana que dice la fuente contra este calendario.
 - **ARGOS 143 (ventana 27-oct 08:45 → 28-oct 08:28) ya publicó 10 hechos propios** —Celaya carretera Salvatierra–Celaya (-001), Celaya Mercado de Abastos (-002), Salamanca San Roque (-003), Chihuahua Sol de Oriente (-004), Tijuana Lomas de San Antonio (-005), Guadalupe Valle Soleado (-006), Culiacán Chulavista (-007), Culiacán Aguaruto (-008), Veracruz col. Centro (-009), Rayón (-010)— y **cuatro recuperaciones**: Tecate fosa (REC-001), Dolores Hidalgo florería (REC-002), Acámbaro Campamento Ferrocarrilero (REC-003), Tabasco Villahermosa–Frontera (REC-004). Un hecho del 27 (tras las 08:45) o del 28 antes de las 08:28 que 143 NO publicó es de la ventana de 143: candidato `-REC-` **solo si es de alto impacto (🔴)**; si es 🟡 o 🟢, va a «VISTOS».
 - **Núcleo del corte**: hechos del **miércoles 28 (tras las 08:28)** en adelante. Publicación del 28 sin hora fijada → `PUBLICADO EL DÍA DE APERTURA SIN HORA`; publicación del día de cierre sin hora → `FRONTERA DE VENTANA — HORA NO FIJADA`. ⚠️ **Si el único dato de día de una nota del 28 («ayer») apunta al 27, el hecho es de la ventana de 143** (lección de Tabasco).
