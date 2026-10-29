@@ -35,7 +35,7 @@ VIGILE MATAMOROS Y RÍO BRAVO (ARG-144-008 y -015).
 3. SOLICITE A LA COMISIÓN ESTATAL DE BÚSQUEDA DE SAN LUIS POTOSÍ EL NÚMERO DE VÍCTIMAS, LA
 EXTENSIÓN DEL SITIO Y EL COTEJO GENÉTICO CON LAS FICHAS DE BÚSQUEDA DE LA ZONA (ARG-144-006).
 4. SOLICITE A LA FISCALÍA DEL ESTADO DE MÉXICO LA IDENTIFICACIÓN GENÉTICA DE LOS RESTOS Y AUDITE
-SI LA DESAPARICIÓN DEL 15-OCT ACTIVÓ LA BÚSQUEDA INMEDIATA (ARG-144-007 y -019).
+SI EL REPORTE DE LA DESAPARICIÓN ACTIVÓ LA BÚSQUEDA INMEDIATA (ARG-144-007 y -019).
 5. SOLICITE A LA FISCALÍA DE SINALOA LAS CIRCUNSTANCIAS DE LA LOCALIZACIÓN Y EL REGISTRO DE LOS
 VEHÍCULOS PARTICIPANTES (ARG-144-REC-003).
 
@@ -54,7 +54,7 @@ recuperaciones de alto impacto de ventanas anteriores, atenuadas, fuera de todos
   Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
   Guerrero · Acapulco (col. Emiliano Zapata, calle 15, frente a la parroquia) · 29-OCT, POR RUTA; HORA SOLO POR RESUMEN | Restos de una persona desmembrada arrojados en bolsas | 🔴 Rojo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-144-009
   Tamaulipas · Matamoros y Río Bravo (varios puntos) · 29-OCT, POR RUTA; HORA NO FIJADA | Bloqueos con vehículos de carga en ocho puntos tras una detención | 🔴 Rojo | Vocería de Seguridad de Tamaulipas (solo por resumen) · alcalde de Matamoros (por titular) | Heraldo de México · Capital México | ★★★☆☆ | ARG-144-008
-  Michoacán · Indaparapeo (comunidad El Triunfo, calle Prolongación de Bravo) · 28-OCT, POR RUTA DEL 29 | Regidor y su esposa asesinados: 2 muertos y 1 herido | 🔴 Rojo | FGE Michoacán (solo por resumen) | La Silla Rota · TV Azteca · Noroeste · Diario de México | ★★★☆☆ | ARG-144-002
+  Michoacán · Indaparapeo (comunidad El Triunfo, calle Prolongación de Bravo) · 28-OCT, POR RESUMEN; PUB. 29 | Regidor y su esposa asesinados: 2 muertos y 1 herido | 🔴 Rojo | FGE Michoacán (solo por resumen) | La Silla Rota · TV Azteca · Noroeste · Diario de México | ★★★☆☆ | ARG-144-002
   Sonora · Magdalena de Kino (col. Centro, instalaciones de la AMIC) · 28-OCT, POR RUTA | Ataque armado contra instalaciones de la AMIC: 1 agente muerto | 🔴 Rojo | Fiscalía de Sonora (solo por resumen) | Infobae · UnoTV · El Universal | ★★★☆☆ | ARG-144-001
   Guanajuato · Acámbaro (comunidad Santiaguillo) · 28-OCT, POR RUTA | Ataque con escopeta: 3 muertos, uno de 16 años | 🔴 Rojo | SIN BOLETÍN | La Silla Rota · Meganoticias | ★★★☆☆ | ARG-144-003
   Chiapas · Chenalhó (comunidad Yabteclum) · 28-OCT, POR RUTA | Defensor de derechos humanos asesinado: 1 muerto | 🔴 Rojo | Fiscal General de Chiapas (solo por resumen) | La Jornada · La Silla Rota · Proceso · Heraldo de México · Infobae | ★★★☆☆ | ARG-144-004
@@ -84,23 +84,21 @@ NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
   Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Muertos por agresión | Heridos | Cuerpos hallados | Armas cortas | Armas largas | Armas sin categoría | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos en aseguramiento | Entidades
   20 | 9 | 5 | 6 | 4 | 12 | 4 | 2 | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 8 | 13
 
-Armamento: ninguna arma con cifra citable — dos aseguramientos cualitativos (General Bravo y
-China; Lindavista) con 8 detenidos por titular; Jaral del Progreso (3 largas, 2 detenidos),
-POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN; n/d = no publicado en fuente
-citable, no ausencia · cuerpos hallados: 2 con causa no informada por autoridad; Ciudad del Maíz
-(ARG-144-006) y Ecatepec (ARG-144-007), CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL
+Armamento: ninguna arma integrada al total; 8 detenidos en aseguramiento; desglose y reservas,
+en la página de armamento · cuerpos hallados: 2 con causa no informada por autoridad; Ciudad del
+Maíz (ARG-144-006) y Ecatepec (ARG-144-007), CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL
 NUMÉRICO · marcas: 10 de 20 PUBLICADO EL DÍA DE APERTURA SIN HORA y 4 FRONTERA DE VENTANA — HORA
-NO FIJADA · totales sujetos a las cláusulas de retiro de 10 fichas (hora o día no fijados frente
-a las 08:28 del 28): ARG-144-005, -006, -007, -010, -012, -013, -017, -018, -019 y -020 ·
-recuperaciones, fuera de totales: 2 muertos y 2 cuerpos. Cálculo propio.
+NO FIJADA · totales sujetos a las cláusulas de retiro de 12 fichas (hora o día no fijados frente
+a las 08:28 del 28): ARG-144-003, -004, -005, -006, -007, -010, -012, -013, -017, -018, -019 y
+-020 · recuperaciones, fuera de totales: 2 muertos y 2 cuerpos · si se valida la duplicidad de
+ARG-144-020: 19 hechos y 5 verdes. Cálculo propio.
 Vistos de la ventana de ARGOS 143, fuera de totales (🟢 o 🟡, no se recuperan): Irapuato, col.
 Benito Juárez (~07:15 del 28, solo por resumen) · rescate de 12 secuestrados en Matamoros y
 Nuevo Laredo (27-oct) · Culiacán: Díaz Ordaz, Infonavit Barrancos · Mazatlán, Ramón F. Iturbe ·
 Cuautla, Gabriel Tepepa · Ecatepec, Las Vegas Xalostoc · Texmelucan · Puebla, Los Encinos
 (madrugada del 28, solo por resumen); los aseguramientos vistos, en la página de armamento.
-Seguimientos procesales, fuera del semáforo: ARG-143-010 (Rayón): órdenes notificadas en
-reclusión, por titular («Ya en prisión, aprehenden a hermanos», Pulso; San Luis Hoy) ·
-ARG-140-020 (Xalapa): prisión preventiva oficiosa · NINGUNO ES SENTENCIA.
+Seguimiento procesal, fuera del semáforo: ARG-143-010 (Rayón): órdenes notificadas en reclusión,
+por titular («Ya en prisión, aprehenden a hermanos», Pulso; San Luis Hoy) · NO ES SENTENCIA.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-29 · Hora: 11:36 (CDMX) · Corte: Matutino · ARGOS N.° 144 · USO INSTITUCIONAL
@@ -166,7 +164,8 @@ policías, 23-oct): otro hecho. RED113 republica: no suma fuente independiente.
 
 Chenalhó · COMUNIDAD YABTECLUM, SOLO POR RESUMEN · miércoles 28-OCT, por ruta (La Jornada; La
 Silla Rota; Proceso; Heraldo de México 2026/10/28) · tarde, SOLO POR RESUMEN; «mañana», un medio
-local: CONTRADICHO · 1 muerto: defensor de derechos humanos y representante de familias
+local: CONTRADICHO: SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE
+RETIRA DE ESTE TOTAL · 1 muerto: defensor de derechos humanos y representante de familias
 desplazadas, por titular (La Jornada; Proceso; La Silla Rota) (🔴 víctima persona defensora) ·
 con protección federal desde 2023, por titular (Diario Puntual) · dos agresores en motocicleta,
 SOLO POR RESUMEN · el fiscal de Chiapas ordenó un grupo especial, SOLO POR RESUMEN · ningún
@@ -221,7 +220,8 @@ Acámbaro · COMUNIDAD SANTIAGUILLO, DOMICILIO, SOLO POR RESUMEN · miércoles 2
 adolescente», por titular (Noticieros en Línea) (🔴 homicidio múltiple) · escopeta, por titular;
 casquillos calibre 12, SOLO POR RESUMEN · riña, por titular (AM); «discusión entre vecinos», por
 titular (Observatorio Informativo, que sitúa el hecho el «martes», SOLO POR RESUMEN:
-CONTRADICHO) · agresor prófugo · ningún detenido publicado
+CONTRADICHO: SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA
+DE ESTE TOTAL) · agresor prófugo · ningún detenido publicado
 
 ── TRAZABILIDAD
 
@@ -242,7 +242,7 @@ Ferrocarrilero, 19-oct): otros hechos. «Guardia Nocturna» (junio): otro hecho.
 
 ## CRIMEN ORGANIZADO (II) — ALTO IMPACTO: HOMICIDIO MÚLTIPLE, FOSA Y RESTOS HUMANOS
 
-### GUANAJUATO · IRAPUATO — ATAQUE ARMADO EN LA COLONIA AZTECA: DOS MUERTOS [ROJO]
+### GUANAJUATO · IRAPUATO — ATAQUE ARMADO EN LA COLONIA AZTECA O NUEVO AMANECER: DOS MUERTOS [ROJO]
 
 ── HECHO
 
@@ -322,7 +322,7 @@ Ecatepec en el índice: ARG-140-REC-003 (Santa María Tulpetlac, 20-oct): otro h
 Xalostoc (hombre muerto y pareja baleada, noche del 27, solo por resumen): otro hecho, ventana
 de ARGOS 143, 🟡: visto. Restos sin cifra: fuera del total numérico de cuerpos.
 
-### GUERRERO · ACAPULCO — ARROJAN DESDE UN AUTO DOS BOLSAS CON LOS RESTOS DE UNA PERSONA DESMEMBRADA EN LA COLONIA EMILIANO ZAPATA [ROJO]
+### GUERRERO · ACAPULCO — DEJAN EN DOS BOLSAS LOS RESTOS DE UNA PERSONA DESMEMBRADA EN LA COLONIA EMILIANO ZAPATA [ROJO]
 
 ── HECHO
 
@@ -415,8 +415,8 @@ RESUMEN · ningún detenido publicado
 
 ARG-144-012 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día del hecho no
 fijado; declaración del fiscal solo por resumen · Fuentes: Institucional 1 · Nacional 2 ·
-Regional 4 · Abierta 0 · con fecha en la ruta: La Razón (2026/10/28) · La Razón (2026/10/29) ·
-Hecho: publicado el 2026-10-28 — DÍA DEL HECHO NO FIJADO · Hora: no fijada · Consulta:
+Regional 4 · Abierta 0 · con fecha en la ruta: La Razón (2026/10/28 y 2026/10/29; un solo medio)
+· Hecho: publicado el 2026-10-28 — DÍA DEL HECHO NO FIJADO · Hora: no fijada · Consulta:
 2026-10-29, última búsqueda 13:39 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
 fila — armamento asegurado: no publicado
 Deslindes y reservas: El Tecnológico de Cuautla y la Ruta 9 no figuran en las cinco ediciones
@@ -496,7 +496,7 @@ Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurad
 Deslindes y reservas: Detención en Reynosa de un «objetivo prioritario» (Yahoo, abril): otro
 hecho. Detención sin armamento con cifra: fuera del conteo de armamento.
 
-### QUINTANA ROO · CANCÚN — DETIENEN A TRES PERSONAS TRAS UNA PERSECUCIÓN Y ASEGURAN UN ARMA DE FUEGO, POR EL ATAQUE DE CIELO NUEVO [VERDE]
+### QUINTANA ROO · CANCÚN — DETIENEN A TRES PERSONAS TRAS UNA PERSECUCIÓN, POR EL ATAQUE DE CIELO NUEVO [VERDE]
 
 ── HECHO
 
@@ -518,7 +518,7 @@ Deslindes y reservas: Delito y detención en la misma ventana: dos fichas (ARG-1
 El arma existe solo en el resumen del buscador: sin aseguramiento citable, fuera del conteo de
 armamento.
 
-### NUEVO LEÓN · GENERAL BRAVO Y CHINA — SIETE CATEOS DEJAN DOS DETENIDOS Y ASEGURAN ARMAS, CARTUCHOS Y DROGA [VERDE]
+### NUEVO LEÓN · GENERAL BRAVO Y CHINA — SIETE CATEOS DEJAN DOS DETENIDOS Y ASEGURAN ARMAS Y DROGA [VERDE]
 
 ── HECHO
 
@@ -541,7 +541,7 @@ publicado el 2026-10-28 — DÍA DE LOS CATEOS NO FIJADO · Hora: no fijada · C
 Deslindes y reservas: General Bravo y China no figuran en las cinco ediciones previas;
 ARG-135-ARM-001 («Industrial Bravo»): otro hecho.
 
-### CIUDAD DE MÉXICO · GUSTAVO A. MADERO — CATEO EN LINDAVISTA CONTRA LA FALSIFICACIÓN DE PLACAS: SEIS DETENIDOS, DOS ARMAS Y DROGA [VERDE]
+### CIUDAD DE MÉXICO · GUSTAVO A. MADERO — CATEO EN LINDAVISTA CONTRA LA FALSIFICACIÓN DE PLACAS: SEIS DETENIDOS; ARMAS SIN CIFRA Y DROGA [VERDE]
 
 ── HECHO
 
@@ -728,10 +728,11 @@ Regional 4 · Abierta 0 · con fecha en la ruta: Central Municipal (2026/10/27) 
 (2026/10/28) · Hecho: 2026-10-27 · Hora: ~06:00-06:30 (solo por resumen) · Consulta: 2026-10-29,
 última búsqueda 13:39 · Estatus: Parcialmente corroborado · Ventana de origen: ARGOS 142 — HORA
 SOLO POR RESUMEN — fuera de todos los totales
-Deslindes y reservas: En ARGOS 143 figuró solo como visto, «día no fijado»: no tuvo ficha.
-Palacio Municipal en el índice: ARG-126-REC-007 (Santa María Mixtequilla, Oax.) y ARG-99-001
-(Palacio de Gobierno de Culiacán): otros hechos. Supervisión de tropas por el secretario de la
-Defensa en Mazatlán (Infobae 2026/10/28): contexto, no hecho.
+Deslindes y reservas: En ARGOS 143 figuró solo en el informe de equipos, como visto («día no
+fijado»); el cartelón de 143 no lo publicó. Palacio Municipal en el índice: ARG-126-REC-007
+(Santa María Mixtequilla, Oax.) y ARG-99-001 (Palacio de Gobierno de Culiacán): otros hechos.
+Supervisión de tropas por el secretario de la Defensa en Mazatlán (Infobae 2026/10/28):
+contexto, no hecho.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-29 · Hora: 11:36 (CDMX) · Corte: Matutino · ARGOS N.° 144 · USO INSTITUCIONAL
@@ -774,8 +775,8 @@ Total nacional del corte: en la página de panorama.
   ARG-144-ARM-002 | Ciudad de México | Gustavo A. Madero (col. Lindavista) | pub. 28-oct; día no fijado | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 6 | SSC, Fiscalía capitalina, SEMAR y GN (solo por resumen) | Bajo · cualitativo: «armas» por titular (NX), sin cifra citable (1 corta y 1 larga, solo por resumen); 6 detenidos por titular, con reserva; ver ARG-144-018
   ARG-144-ARM-003 | Guanajuato | Jaral del Progreso (col. Las Flores) | pub. 28-oct; día no fijado | n/d | 3 | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 2 | Seguridad y Paz de Guanajuato y Defensa (boletín estatal, por titular) | Medio · POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN (La Silla Rota 2026/10/26, misma colonia); ver ARG-144-020
 
-Lectura regional: ninguna región con arma de cifra citable; detenidos en aseguramiento: Noreste
-2 · Centro 6. Cálculo propio.
+Lectura regional: ninguna región con arma integrada al total; detenidos en aseguramiento:
+Noreste 2 · Centro 6. Cálculo propio.
 Eventos cualitativos sin cantidad: General Bravo y China (ARG-144-ARM-001) y Lindavista
 (ARG-144-ARM-002): «armas» por titular, cifras solo por resumen · Cancún (ARG-144-016): un arma
 solo por resumen, sin fila · Matamoros (ARG-144-015): armamento no publicado.
@@ -819,7 +820,7 @@ detenido).
   Estado de México · Ecatepec | Homicidio y homicidio en grado de tentativa; 1 sentenciada, por titular · nuevo en ARGOS 144 | 68 años, por titular (Línea por Línea 2026/10/28) | FGJEM (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · fuente única; no es el caso de Fresnillo | No confirmado
   Tabasco · Tenosique | Armas y granadas; 1 sentenciado, por titular · nuevo en ARGOS 144 | No publicada en titular | FGR (informado el 28, solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · comunicado no localizado; sin fecha en la ruta | No confirmado
   Baja California · Tijuana | Robo con violencia; procedimiento abreviado, por titular · nuevo en ARGOS 144 | más de 3 años, por titular (Uniradio); 3 años 6 meses, SOLO POR RESUMEN | FGE Baja California (por titular) | PENDIENTE DE CONFIRMACIÓN OFICIAL · sin fecha en la ruta; sin campos individualizadores | No confirmado
-  Zacatecas · Fresnillo | Homicidio calificado, tentativa y daño doloso; Juan Manuel «N» · candidato de ARGOS 143, sin cambio | 68 años, por titular (ECOdiario); 68 años 8 meses, SOLO POR RESUMEN | FGJ Zacatecas (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · boletín no localizado; publicación anterior a esta ventana (ya listada por ARGOS 143) | Bajo
+  Zacatecas · Fresnillo | Homicidio calificado, tentativa y daño doloso; Juan Manuel «N» · candidato de ARGOS 143, sin cambio | 68 años, por titular (ECOdiario); meses adicionales: CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO | FGJ Zacatecas (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · boletín no localizado; publicación anterior a esta ventana (ya listada por ARGOS 143) | Bajo
   Hidalgo · Santiago Tulantepec | Triple feminicidio; fallo condenatorio publicado el 9-oct · candidato de ARGOS 140 a 143 | Sin pena: la audiencia de individualización del 28-oct entró en receso por un corte de energía y continúa el 5-nov, SOLO POR RESUMEN; penas de 40 a 90 años: proyección de los abogados de las víctimas, no resolución | Tribunal de Enjuiciamiento (por medios) | FALLO SIN PENA — PENDIENTE DE CONFIRMACIÓN OFICIAL · procuraduria.hidalgo.gob.mx sin boletín indexado | Bajo
   Coahuila · Ramos Arizpe | Transporte de metanfetamina · candidato de ARGOS 141 a 143, sin cambio | «más de 7 años», por titular (El Siglo de Torreón) | FGR | POSIBLE CASO HOMÓNIMO — NO INTEGRAR HASTA VALIDACIÓN · dominio estatal sin páginas | No confirmado
 
@@ -840,7 +841,7 @@ TOTAL NUMÉRICO · FGE Querétaro (5, 6, 8 y 22-oct, por ruta) · FGE Jalisco, c
   Dominio consultado sin páginas devueltas | 2: Son · Coah · dominio de la fiscalía no confirmado: 1, Camp
   NO REVISADA — sentencias | 14: Chih, Sin · Nay, Ags, Gto · CDMX, Edomex, Mor, Tlax · Chis, Oax, Gro, Yuc, QRoo
   Páginas no disponibles · errores de acceso | Fuentes con error de acceso: bloqueo de egreso: curl a www.gob.mx/fgr, 29-oct 11:36: código 000 · dominio hallado en esta edición: spsc.campeche.gob.mx (SSP de Campeche)
-  Alto impacto y armamento | Alto impacto: 22 de 32 con consulta propia por entidad (de ellas, 5 solo por topónimo de hechos hallados: CDMX, Mor, Pue, Tlax, Gro) · 10 solo por consulta regional amplia: BCS · NL, Zac, Coah · Hgo, Qro · Oax, Camp, Yuc, QRoo · Jal, Col, Nay, Ags y Dgo, con consulta propia · armamento: 16 de 32 por dominio oficial —BC · SLP, Tamps · Col, Mich, Gto (boletín del gobierno estatal) · Edomex, Mor, Hgo, Qro · Ver, Tab · Gro, Yuc, QRoo, Chis—, todas SIN RESULTADO INDEXADO EN VENTANA salvo Gto (Jaral del Progreso) · dominio sin páginas: Son, Coah, Oax · NO REVISADA (13): BCS, Chih, Sin, Dgo · NL, Zac · Jal, Nay, Ags · CDMX, Pue, Tlax · Camp
+  Alto impacto y armamento | Alto impacto: 15 de 32 con consulta propia por entidad · 7 por topónimo de hechos hallados: CDMX, Mor, Pue, Tlax, Gro, Mich, Gto · 10 solo por consulta regional amplia: BCS · NL, Zac, Coah · Hgo, Qro · Oax, Camp, Yuc, QRoo · Jal, Col, Nay, Ags y Dgo, con consulta propia · armamento: 16 de 32 por dominio oficial —BC · SLP, Tamps · Col, Mich, Gto (boletín del gobierno estatal) · Edomex, Mor, Hgo, Qro · Ver, Tab · Gro, Yuc, QRoo, Chis—, todas SIN RESULTADO INDEXADO EN VENTANA salvo Gto (Jaral del Progreso) · dominio sin páginas: Son, Coah, Oax · NO REVISADA (13): BCS, Chih, Sin, Dgo · NL, Zac · Jal, Nay, Ags · CDMX, Pue, Tlax · Camp
   Boletín federal | Acciones del 27-oct: publicadas solo por republicadores (Milenio, RED113): misma fuente, sin indexar en gob.mx; ventana de ARGOS 143 · acciones del 28-oct: SIN RESULTADO INDEXADO EN VENTANA en día suelto, por rango y por título (al arrancar la ola y a las 13:39) · Guardia Nacional, Defensa y ANAM: NO REVISADAS · Semar: por medios
   Techo de confianza del producto | ★★★★☆ (techo de política) · esta edición no supera ★★★☆☆: sin lectura directa de documento oficial · BLOQUEO DE EGRESO REVERIFICADO EL 29-OCT 11:36: GOB.MX
 
@@ -862,7 +863,7 @@ heridos y un cuerpo hallado— en cuatro entidades (cálculo propio).
 3. Guanajuato: cuatro de los veinte hechos propios, dos de ellos rojos (cálculo propio).
 4. Respuesta institucional: seis verdes, uno con posible duplicidad (Jaral del Progreso);
 ninguna sentencia integrable (cálculo propio; totales, en el panorama).
-5. DIEZ DE VEINTE HECHOS CON CLÁUSULA DE RETIRO Y CUATRO ROJOS RECUPERADOS DE ARGOS 142 Y 143;
+5. DOCE DE VEINTE HECHOS CON CLÁUSULA DE RETIRO Y CUATRO ROJOS RECUPERADOS DE ARGOS 142 Y 143;
 VENTANA DE 27 H 08 MIN: TOTALES NO COMPARABLES CON ARGOS 143 SIN NORMALIZAR POR HORA. CÁLCULO
 PROPIO.
 
@@ -875,25 +876,24 @@ Conclusión 5 de ARGOS 142): ARG-142-001 (Tecate, agente estatal en patrullaje),
 sede); vínculo entre ellos no acreditado. Línea: solicitar a las fiscalías de Baja California,
 Puebla y Sonora el cotejo balístico entre los tres hechos y auditar la protección de las sedes
 ministeriales.
-2. INDAPARAPEO: SEGUNDO ATAQUE EN CINCO DÍAS (cálculo propio, 23 y 28-oct): ARG-140-016
-(disparos contra una base de seguridad, sin lesionados) y ARG-144-002 (regidor y su esposa
-asesinados); vínculo no acreditado. Línea: solicitar a la Fiscalía de Michoacán el cotejo de los
-casquillos de ambos hechos y vigilar la comunidad El Triunfo.
-3. RESTOS HUMANOS EXHIBIDOS ANTE SEDES DE AUTORIDAD: DOS EN VEINTICUATRO HORAS, EN DOS ESTADOS
-(cálculo propio, 27 y 28-oct): ARG-144-REC-004 (Mazatlán, Palacio Municipal; mensaje
-contradicho) y ARG-144-REC-002 (Coatzacoalcos, Poder Judicial de la Federación; mensaje de
-amenaza por titular); ARG-144-009 (Acapulco, restos arrojados en la vía pública el 29). Línea:
-solicitar a las fiscalías de Sinaloa y Veracruz el texto íntegro de los mensajes y la
-identificación genética; vigilar sedes municipales y judiciales.
+2. INDAPARAPEO: SEGUNDO ATAQUE EN SEIS DÍAS (cálculo propio, 23 al 28-oct, ambos extremos):
+ARG-140-016 (disparos contra una base de seguridad, sin lesionados) y ARG-144-002 (regidor y su
+esposa asesinados); vínculo no acreditado. Línea: solicitar a la Fiscalía de Michoacán el cotejo
+de los casquillos de ambos hechos y vigilar la comunidad El Triunfo.
+3. RESTOS HUMANOS EXHIBIDOS: DOS ANTE SEDES DE AUTORIDAD EN VEINTICUATRO HORAS Y UNO EN LA VÍA
+PÚBLICA, EN TRES ESTADOS (cálculo propio, 27 al 29-oct): ARG-144-REC-004 (Mazatlán, Palacio
+Municipal; mensaje contradicho), ARG-144-REC-002 (Coatzacoalcos, Poder Judicial de la
+Federación; mensaje de amenaza por titular) y ARG-144-009 (Acapulco, vía pública); vínculo no
+acreditado. Línea: solicitar a las fiscalías de Sinaloa y Veracruz el texto íntegro de los
+mensajes y la identificación genética; vigilar sedes municipales y judiciales.
 4. ACÁMBARO: TERCER HOMICIDIO MÚLTIPLE EN DIEZ DÍAS, SIETE MUERTOS (cálculo propio, 19 al
 28-oct; desarrolla la Conclusión 1 de ARGOS 143): ARG-143-REC-003 (2), ARG-142-004 (2) y
 ARG-144-003 (3, con escopeta; riña por titular); vínculo no acreditado. Línea: solicitar a la
 Fiscalía de Guanajuato el cotejo balístico de los tres hechos.
 5. IRAPUATO: CUATRO HECHOS CON VÍCTIMAS EN EL ÍNDICE EN QUINCE DÍAS, SIETE MUERTOS (cálculo
 propio, 14 al 28-oct): ARG-133-010, ARG-134-REC-001, ARG-140-014 y ARG-144-005 (este, con
-cláusula de retiro); más un homicidio en la col. Benito Juárez el 28, visto de la ventana de
-ARGOS 143; vínculo no acreditado. Línea: solicitar a la Fiscalía de Guanajuato el cotejo
-balístico del ataque de la col. Azteca con ARG-140-014 y con el de la col. Benito Juárez.
+cláusula de retiro); vínculo no acreditado. Línea: solicitar a la Fiscalía de Guanajuato el
+cotejo balístico del ataque del 28 (col. Azteca o Nuevo Amanecer) con ARG-140-014.
 
 ## INDICADORES OFICIALES
 
