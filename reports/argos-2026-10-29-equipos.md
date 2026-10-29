@@ -170,3 +170,23 @@ SENTENCIAS: BC Tijuana, robo con violencia, abreviado, 3 años 6 meses (Uniradio
 VISTOS/DESCARTADOS: Díaz Ordaz (27) · Barrancos, Uriel Geovanni «N» (noche del 27; Línea Directa 2026-10-28) · Aguaruto (= 143-008) · Tierra Blanca (27) · Mazatlán Ramón F. Iturbe (27 ~20:30) · Hermosillo 5 de Mayo (27 23:20; El Imparcial y Proyecto Puente 2026/10/28; no estaba en 143) · Sáric (27) · Chihuahua km 23 encobijado (El Pueblo 20261027) · La Lazada (sin fecha) · Aquiles Serdán (18) · Cajeme (13, 26) · Tijuana semanal · C4I Culiacán (26).
 CORRECCIONES: Mazatlán hielera con ruta 27 · Tijuana hora · Tecate un hallazgo · Tecate 1 herido · «Chuy» fecha en disputa.
 COBERTURA: BC propia / REVISADA SRIV / REVISADA parcial · BCS amplia / NO REVISADA / REVISADA SRIV · Son propia / NO REVISADA (sin páginas) / NO REVISADA · Chih propia / NO REVISADA / NO REVISADA · Sin propia / NO REVISADA / NO REVISADA · Dgo propia / parcial / REVISADA SRIV. Búsquedas: 25 de 25.
+
+## controles — ronda 1
+
+## procedencia-cifras R1 — CORREGIR ANTES DE PUBLICAR (20 pases; 22 de 22 búsquedas)
+
+1. **-013 Irapuato col. Benito Juárez**: segunda fuente por titular (AM 2026/10/28 «Asesinan a balazos a "El Güero" en la colonia Benito Juárez» https://www.am.com.mx/irapuato/2026/10/28/asesinan-a-balazos-a-el-guero-en-la-colonia-benito-juarez-en-irapuato-1860056.html ; Primer Plano 2026/10/29); **hora ~07:15, solo por resumen (AM)**, calle José Ortiz Rico → anterior a 08:28: la cláusula de retiro se activa. Decide el coordinador.
+2. **-015 Chetumal**: no es fuente única (Zócalo; Sol Quintana Roo «Ejecutan a balazos a ex policía estatal y luchador en Nachicocom»; Periodistas Quintana Roo); «ex policía» por titular (Por Esto); día contradicho: «noche del jueves» (Zócalo, Sol) frente a «miércoles» (Cambio22), por resumen; la noche del jueves 29 sería posterior al cierre: incoherente.
+3. **-003**: «16 años» por titular de AM («Riña en Acámbaro deja tres hombres muertos; uno tenía 16 años») y NPI, no de Noticieros en Línea («incluido un adolescente»); móvil por titular: «Riña» (AM), «Discusión entre vecinos» (Observatorio Informativo; «martes» por resumen).
+4. **-008**: «ocho puntos» por titular (ABC Noticias 2026/10/29 https://abcnoticias.mx/tamaulipas/2026/10/29/reportan-bloqueos-en-ocho-puntos-de-matamoros-piden-evitar-zonas-de-riesgo-293901.html ; Capital México «Reportan 8 bloqueos con tráileres en Matamoros»); sin vehículos incendiados; ponchallantas y choferes obligados a bajar (24 Horas, por resumen). **-016**: «objetivo prioritario» solo en el slug del Heraldo; «1 detenido» deducido del singular; Diario del Yaqui «presunto líder criminal» (resumen); El Mañana: «no se confirmaban personas detenidas» (resumen).
+5. **-007**: número de cuerpos no publicado («posibles restos»): el 1 es inferido → CANTIDAD NO DETERMINADA. «52 años» por titular de Quadratín Edomex (no de Tribuna); «15-oct» solo por resumen; TV Azteca titula «cuerpo … enterrado con cemento».
+6. **-011**: mujer herida por titular (DRV Noticias; Clic Noticias); SM 249 (ataque) y R-251 (captura) son dos lugares: falso CONTRADICHO.
+7. **-009**: ruta fechada: Sociedad Noticias 2026/10/29 «Hallan restos humanos en bolsas negras en Acapulco» → retirar la excepción; hora ~07:00 solo por resumen.
+8. **-005**: ~14:30 por resumen (AM); mantener la cláusula.
+9. **Armamento**: las 5 armas (NL 2, Lindavista 1+1, Cancún 1) solo por resumen → recomendación: n/d, eventos cualitativos; detenidos citables por titular (2, 6, 3). Cancún: el arma solo por resumen; sin arma no hay evento de aseguramiento. Jaral: 3 largas y 2 detenidos citables por el boletín estatal; reserva por duplicidad correcta.
+10. **Conclusión 1**: Tecate y Tehuacán son del 26; tres ataques en dos días de calendario, no en tres.
+11. -001: hora 19:44 solo por resumen; fuentes adicionales con ruta del 29 (Dossier Político; Miguel Ángel Luna).
+12. **-006**: «inhumación de años atrás» no está en la fuente: Plano Informativo dice que el sitio «había registrado hallazgos similares en años previos».
+13. **REC-003**: «dos menores» por titular (Café Negro Portal); «6 inicialmente» por titular (Extraoficial).
+14. Sentencias: 0 integrables (correcto). Huejotzingo 55 años por titular (Retodiario 2026/10/29); «esposa» frente a «pareja» en titulares. Doctor Arroyo: fuente única (MVS); el post de la FGJE NL es OTRO caso. NL 40 años: solo MVS. Tijuana, Tenosique, Ecatepec 68 años: no verificados.
+Contradichas además: Lindavista, Crónica lista ocho edades frente a 6 detenidos (resumen) · Indaparapeo, el resumen dice que unos medios fechan el ataque el 29. Aritmética: sin descuadres. Cobertura de alto impacto: revisar el criterio (Mor, CDMX, Gro, Mich, Pue, Tlax por hechos). Boletín federal del 28: SRIV (repetición).
