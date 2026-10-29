@@ -6,7 +6,7 @@ Edición: **ARGOS 144** · archivo `argos-2026-10-29.html` (móvil `-movil.html`
 
 - Bloque 0 a las 11:36: clon en HEAD suelto `e19b060`, igual a la punta de `otiawj`; cinco fusiones `--ff-only` «Already up to date»; 247 archivos en `reports/`; última edición `argos-2026-10-28` (ARGOS 143).
 - «Procede» a las 13:30 (1 h 54 min tras el Bloque 0; bajo el umbral de dos horas): sin ajuste de cierre.
-- Densidad: 21 hechos / 27,13 h = **0,77 hechos/hora** (143: 0,42). Cálculo propio.
+- Densidad: 20 hechos / 27,13 h = **0,74 hechos/hora** (143: 0,42). Cálculo propio (tras la ronda 1: 21 → 20).
 
 ## 2. Red y modo de búsqueda
 
@@ -46,17 +46,23 @@ Edición: **ARGOS 144** · archivo `argos-2026-10-29.html` (móvil `-movil.html`
 3. **Culiacán, Villas del Real** (4 jóvenes privados de la libertad por un convoy, noche del 27): 🔴 privación múltiple por convoy armado → **`ARG-144-REC-003`, ventana de 143**. La localización con vida no cambia el color del hecho.
 4. **Mazatlán, hielera** (~06:00 del 27, ruta del 27): en 143 fue visto «día no fijado»; ahora con ruta → **`ARG-144-REC-004`, ventana de 142**.
 5. **Matamoros**: búsqueda por topónimo exacto (lección c) → Vocería de Seguridad de Tamaulipas por resumen, ocho puntos con vehículos de carga; Diario del Yaqui como segunda fuente → **dos fichas**: bloqueos 🔴 (`-008`) y detención 🟢 (`-016`).
-6. **Acapulco** (restos en bolsas, 29-oct ~07:00, sin ruta fechada): **excepción declarada para rojos**; ★★☆☆☆.
+6. **Acapulco** (restos en bolsas, 29-oct ~07:00): el borrador usó la «excepción declarada para rojos» (sin ruta fechada); `procedencia-cifras` R1 halló ruta fechada (Sociedad Noticias 2026/10/29) → la excepción ya no se usa; `FRONTERA`; ★★★☆☆. **La excepción para rojos sin ruta queda para ratificación del destinatario** (`editor-duplicidad` R1, hallazgo 17).
 7. **«El Semáforo» (Tuxtepec)**: el boletín federal de acciones del 27 registra un cateo en Tuxtepec con 2 detenidos (Marina y FGR); los dos detenidos del 28 son dos → posible mismo operativo del 27 → **visto de la ventana de 143 (🟢), no se recupera**.
 8. **Puebla, Los Encinos** (narcomensaje): «madrugada del miércoles 28», por resumen; tres colonias distintas en los medios → 🟡 de la ventana de 143 probable: **visto**.
 9. **Jaral del Progreso**: ficha 🟢 con armamento **en reserva** (`integra=False`) por posible duplicidad con La Silla Rota 2026/10/26.
 10. **Amarillos solo con día por resumen y sin ruta fechada → vistos**: Valle de Santiago col. Morelos, La Montaña (Tlapa, Alcozauca, Malinaltepec), Pinotepa Nacional, Temixco, Tetlatlahuca (restos calcinados: rojo potencial, **fecha no fijada; ni la ruta tiene día** — se registra para 145).
+
+11. **Irapuato, col. Benito Juárez (antes `ARG-144-013`)**: ~07:15 del 28 por resumen (AM) → anterior a 08:28: **visto de la ventana de 143 (🟡)**, retirado de 144 (lección a de 143). Los ARG-ID -014 a -021 del borrador se renumeraron -013 a -020 antes de publicar.
+12. **Armamento**: las cifras de armas de General Bravo y China, Lindavista y Cancún existen solo en el resumen del buscador (patrón Huajicori) → **ninguna arma integrada**; NL y Lindavista quedan como **aseguramientos cualitativos** con sus detenidos por titular (2 + 6 = 8); Cancún, sin fila (el arma solo por resumen).
+13. **Ecatepec (`-007`)**: número de víctimas no publicado → `CANTIDAD NO DETERMINADA`, fuera del total de cuerpos (3 → 2), con el mismo criterio que Ciudad del Maíz.
+14. **Tepic**: se restituye la retirada de `ARG-143-FE-003` («meses adicionales» = `CANTIDAD NO DETERMINADA`); la cifra «15 años 6 meses» volvió a aparecer solo por resumen (NX Noticias).
 
 ## 7. Fe de erratas (no va al cartelón)
 
 - **`ARG-144-FE-001` (a ARGOS 143)**, condicionada a la hora de `REC-001` y `REC-002`: `REC-001`, `-002` y `-003` → **hechos 10 → 13, rojos 0 → 3, muertos 7 → 9, cuerpos hallados 1 → 2** (cálculo propio); entidades 7 → 8 (+CDMX); entidades con rojo 0 → 3 (CDMX, Ver, Sin). La Valoración 1 de 143 («ningún rojo propio fijado») queda sin efecto si la condición se cumple.
 - **`ARG-144-FE-002` (a ARGOS 142)**: `REC-004` → sobre las cifras ya corregidas por `ARG-143-FE-001`: **hechos 16 → 17, rojos 10 → 11, cuerpos 7 → 8**; entidades 7 → 8 (+Sin); entidades con rojo 5 → 6.
 - `ARG-143-FE-001`, `ARG-141-FE-001`, `ARG-140-FE-001` y Río Bravo (129): siguen condicionadas. `ARG-143-FE-002` (a 138): firme.
+- **Armamento de la ventana de 143 visto en 144 — no se emite fe de erratas** (`editor-duplicidad` R1, hallazgo 6): Xochitlán de las Flores (operativo del 27; desglose 1 corta, 1 larga, 1 cargador solo por resumen; «dos armas» por titular de La Silla Rota) y Hermosillo, 5 de Mayo («aseguran un arma de fuego», por titular de Proyecto Puente 2026/10/28; día y hora del 27 solo por resumen). El total de 143 («sin total nacional verificable») se mantiene: ninguna cifra por categoría tiene fragmento y día fijado a la vez. Boletín federal del 27 (Cocula, Sinaloa, Huajicori): solo por republicadores y por resumen. **Queda para 145** como pendiente de fragmento.
 - **Huimanguillo** (heredado de 140): no es una contradicción de nombres sino dos parejas en dos fosas; corrige el pendiente, no una cifra publicada.
 
 ## 8. Registro del barrido — por entidad
@@ -104,14 +110,16 @@ En `argos-2026-10-29-equipos.md` (informes de los seis equipos y notas del coord
 
 ## 10. Desglose de cálculos propios
 
-- Muertos 13 = 1 (-001) + 2 (-002) + 3 (-003) + 1 (-004) + 2 (-005) + 1 (-010) + 1 (-011) + 1 (-013) + 1 (-015). Heridos 4 = 1 (-002) + 1 (-011) + 2 (-012). Cuerpos 3 = -007, -009, -014. Ciudad del Maíz: sin cifra.
-- Armamento integrado: cortas 1 (Lindavista) · largas 1 (Lindavista) · sin categoría 3 (General Bravo 2, Cancún 1) · detenidos 11 (2 + 6 + 3). Jaral (3 largas, 2 detenidos) en reserva.
+- Muertos 12 = 1 (-001) + 2 (-002) + 3 (-003) + 1 (-004) + 2 (-005) + 1 (-010) + 1 (-011) + 1 (-014). Heridos 4 = 1 (-002) + 1 (-011) + 2 (-012). Cuerpos 2 = -009, -013. Ciudad del Maíz y Ecatepec: sin cifra.
+- Armamento: ninguna arma con cifra citable; detenidos en aseguramiento 8 (General Bravo y China 2 + Lindavista 6). Jaral (3 largas, 2 detenidos) en reserva.
 - Recuperaciones: muertos 2 (REC-001), cuerpos 2 (REC-002, REC-004).
-- Conclusión 4: 2 + 2 + 3 = 7 muertos. Conclusión 5: 2 (ARG-133-010) + 2 (ARG-134-REC-001) + 1 (ARG-140-014) + 2 (-005) + 1 (-013) = 8 muertos.
+- Conclusión 4: 2 + 2 + 3 = 7 muertos. Conclusión 5: 2 (ARG-133-010) + 2 (ARG-134-REC-001) + 1 (ARG-140-014) + 2 (-005) = 7 muertos.
 
 ## 11. Los dos controles editoriales
 
-Pendiente: ronda 1 (en paralelo) y ronda 2 (en serie), veinte pases cada una.
+**Ronda 1** (en paralelo; informes íntegros en `-equipos.md`): `editor-duplicidad` R1 — CORREGIR (21 hallazgos; 0 duplicidades; 0 hechos ya publicados; aritmética y FE limpias). `procedencia-cifras` R1 — CORREGIR (14 correcciones; 22 de 22 búsquedas). **Aplicados**: portada 1 y 4 (sin «amenazas denunciadas» ni «denuncia del 15-oct») y 2 y 5 sin sustantivos de los titulares · REC-001 (08:33 posterior al cierre) · Tepic sin «6 meses» · deslindes de Villas del Real (ARG-115-003) y Palacio Municipal (ARG-126-REC-007, ARG-99-001) · Bonfil = Guasave, ventana de 142 · Ecatepec y armamento sin cifra (§6.12-13) · Jaral marcado en el panorama y en la Valoración 4 · vistos de armamento solo en su página · seguimientos reducidos a Rayón y Xalapa · Valoración 4 sin reimprimir totales · «vínculo no acreditado» en las conclusiones; Conclusión 1 con «dos el 26» y desarrollo de 142 declarado · Conclusión 3 con el mensaje de Mazatlán contradicho · leyenda de ordenación del panorama · cualitativos de armamento · cobertura de alto impacto con las 5 por topónimo y Campeche como dominio no confirmado · retiro de Irapuato Benito Juárez (§6.11) · fuentes añadidas (AM, NPI, Observatorio Informativo en -003; ABC Noticias y Capital México en -008; Sociedad Noticias en -009; DRV y Clic en -011; Zócalo, Sol y Periodistas QRoo en Chetumal; Café Negro y Extraoficial en REC-003) · «inhumación de años atrás» retirada · Huejotzingo «esposa/pareja» · Lindavista, ocho edades frente a 6 detenidos · Matamoros: detención con reserva (★★☆☆☆; El Mañana). **No aplicados, con razón**: FE-003 de armamento a 143 (§7) · la marca «Consulta» posterior al corte es la práctica de la serie (hora de la última búsqueda).
+
+**Ronda 2**: pendiente (en serie). Presupuesto: 2 búsquedas restantes del turno (200).
 
 ## 12. Herramientas
 
