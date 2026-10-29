@@ -52,7 +52,7 @@ y después por hora estimada solo por resumen; hora no fijada, al final de cada 
 recuperaciones de alto impacto de ventanas anteriores, atenuadas, fuera de todos los totales
 
   Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
-  Guerrero · Acapulco (col. Emiliano Zapata, calle 15, frente a la parroquia) · 29-OCT, POR RUTA; HORA SOLO POR RESUMEN | Restos de una persona desmembrada arrojados en bolsas | 🔴 Rojo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-144-009
+  Guerrero · Acapulco (col. Emiliano Zapata, calle 15, frente a la parroquia) · 29-OCT, POR RUTA; HORA SOLO POR RESUMEN | Restos de una persona descuartizada dejados en bolsas | 🔴 Rojo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-144-009
   Tamaulipas · Matamoros y Río Bravo (varios puntos) · 29-OCT, POR RUTA; HORA NO FIJADA | Bloqueos con vehículos de carga en ocho puntos tras una detención | 🔴 Rojo | Vocería de Seguridad de Tamaulipas (solo por resumen) · alcalde de Matamoros (por titular) | Heraldo de México · Capital México | ★★★☆☆ | ARG-144-008
   Michoacán · Indaparapeo (comunidad El Triunfo, calle Prolongación de Bravo) · 28-OCT, POR RESUMEN; PUB. 29 | Regidor y su esposa asesinados: 2 muertos y 1 herido | 🔴 Rojo | FGE Michoacán (solo por resumen) | La Silla Rota · TV Azteca · Noroeste · Diario de México | ★★★☆☆ | ARG-144-002
   Sonora · Magdalena de Kino (col. Centro, instalaciones de la AMIC) · 28-OCT, POR RUTA | Ataque armado contra instalaciones de la AMIC: 1 agente muerto | 🔴 Rojo | Fiscalía de Sonora (solo por resumen) | Infobae · UnoTV · El Universal | ★★★☆☆ | ARG-144-001
@@ -61,13 +61,13 @@ recuperaciones de alto impacto de ventanas anteriores, atenuadas, fuera de todos
   Guanajuato · Irapuato (col. Azteca y col. Nuevo Amanecer) · 28-OCT, POR RUTA; HORA NO FIJADA | Ataque armado: 2 muertos | 🔴 Rojo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-144-005
   San Luis Potosí · Ciudad del Maíz (cerca del ejido Palomas) · PUB. 28-OCT; DÍA DEL HALLAZGO NO FIJADO | Posible fosa clandestina con restos óseos: número de víctimas no publicado | 🔴 Rojo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-144-006
   Estado de México · Ecatepec (col. Rústica Xalostoc, inmueble) · PUB. 28-OCT; DÍA DEL HALLAZGO NO FIJADO | Restos humanos bajo cemento en un inmueble: número de víctimas no publicado | 🔴 Rojo | FGJEM (solo por resumen) | Excélsior · TV Azteca | ★★★☆☆ | ARG-144-007
-  Quintana Roo · Othón P. Blanco (Chetumal, Nachicocom) · 29-OCT, POR RUTA; HORA NO FIJADA | Expolicía asesinado en su vivienda: 1 muerto | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-144-014
+  Quintana Roo · Othón P. Blanco (Chetumal, Nachicocom) · 29-OCT, POR RUTA; HORA NO FIJADA | Expolicía asesinado por un comando: 1 muerto | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-144-014
   Quintana Roo · Benito Juárez (Cancún, fracc. Cielo Nuevo) · 28-OCT, POR RUTA | Ataque armado: 1 muerto y 1 herida | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-144-011
   Veracruz · Tecolutla (Cañada Rica, límite con Papantla) · 28-OCT, POR RUTA; HORA CONTRADICHA | Comerciante asesinado en un asalto: 1 muerto | 🟡 Amarillo | SIN BOLETÍN | N+ | ★★★☆☆ | ARG-144-010
   Morelos · Cuautla (frente al Tecnológico de Cuautla, límite con Yecapixtla) · PUB. 28-OCT; DÍA NO FIJADO | Ataque a una combi: 2 heridos | 🟡 Amarillo | Fiscal de Morelos (solo por resumen) | La Razón · El Universal | ★★★☆☆ | ARG-144-012
   Guanajuato · Valle de Santiago (col. Ranchos Unidos) · 28-OCT, POR RUTA; HORA NO FIJADA | Cuerpo hallado con un disparo: 1 cuerpo | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-144-013
   Tamaulipas · Matamoros · 29-OCT, POR RUTA; HORA NO FIJADA | Detención de un objetivo prioritario: 1 detenido, con reserva | 🟢 Verde | Vocería de Seguridad de Tamaulipas (solo por resumen) | Heraldo de México | ★★☆☆☆ | ARG-144-015
-  Quintana Roo · Benito Juárez (Cancún, fracc. Cielo Nuevo) · 28-OCT, POR RUTA | 3 detenidos tras una persecución | 🟢 Verde | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-144-016
+  Quintana Roo · Benito Juárez (Cancún, fracc. Cielo Nuevo) · 28-OCT, POR RUTA | 3 detenidos por el ataque de Cielo Nuevo | 🟢 Verde | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-144-016
   Estado de México · Ecatepec (col. Rústica Xalostoc) · PUB. 28-OCT; DÍA NO FIJADO | 2 detenidos por la desaparición de una mujer | 🟢 Verde | FGJEM (solo por resumen) | Excélsior · TV Azteca | ★★★☆☆ | ARG-144-019
   Nuevo León · General Bravo y China · PUB. 28-OCT; DÍA NO FIJADO | 7 cateos: 2 detenidos; armas sin cifra y droga | 🟢 Verde | SIN BOLETÍN | MVS | ★★★☆☆ | ARG-144-017
   Ciudad de México · Gustavo A. Madero (col. Lindavista) · PUB. 28-OCT; DÍA NO FIJADO | Cateo: 6 detenidos; armas sin cifra y placas apócrifas | 🟢 Verde | SSC (solo por resumen) | La Silla Rota · Publimetro · TV Azteca | ★★★☆☆ | ARG-144-018
@@ -84,14 +84,15 @@ NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
   Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Muertos por agresión | Heridos | Cuerpos hallados | Armas cortas | Armas largas | Armas sin categoría | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos en aseguramiento | Entidades
   20 | 9 | 5 | 6 | 4 | 12 | 4 | 2 | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 8 | 13
 
-Armamento: ninguna arma integrada al total; 8 detenidos en aseguramiento; desglose y reservas,
-en la página de armamento · cuerpos hallados: 2 con causa no informada por autoridad; Ciudad del
-Maíz (ARG-144-006) y Ecatepec (ARG-144-007), CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL
-NUMÉRICO · marcas: 10 de 20 PUBLICADO EL DÍA DE APERTURA SIN HORA y 4 FRONTERA DE VENTANA — HORA
-NO FIJADA · totales sujetos a las cláusulas de retiro de 12 fichas (hora o día no fijados frente
-a las 08:28 del 28): ARG-144-003, -004, -005, -006, -007, -010, -012, -013, -017, -018, -019 y
--020 · recuperaciones, fuera de totales: 2 muertos y 2 cuerpos · si se valida la duplicidad de
-ARG-144-020: 19 hechos y 5 verdes. Cálculo propio.
+Armamento: ninguna arma integrada al total; 8 detenidos en aseguramiento, por titulares de
+medios (ninguna cifra de autoridad; sujetos a las cláusulas de ARG-144-017 y -018); desglose y
+reservas, en la página de armamento · cuerpos hallados: 2 con causa no informada por autoridad;
+Ciudad del Maíz (ARG-144-006) y Ecatepec (ARG-144-007), CANTIDAD NO DETERMINADA — NO SE INTEGRA
+AL TOTAL NUMÉRICO · marcas: 10 de 20 PUBLICADO EL DÍA DE APERTURA SIN HORA y 4 FRONTERA DE
+VENTANA — HORA NO FIJADA · totales sujetos a las cláusulas de retiro de 12 fichas (hora o día no
+fijados frente a las 08:28 del 28): ARG-144-003, -004, -005, -006, -007, -010, -012, -013, -017,
+-018, -019 y -020 · recuperaciones, fuera de totales: 2 muertos y 2 cuerpos · si se valida la
+duplicidad de ARG-144-020: 19 hechos y 5 verdes. Cálculo propio.
 Vistos de la ventana de ARGOS 143, fuera de totales (🟢 o 🟡, no se recuperan): Irapuato, col.
 Benito Juárez (~07:15 del 28, solo por resumen) · rescate de 12 secuestrados en Matamoros y
 Nuevo Laredo (27-oct) · Culiacán: Díaz Ordaz, Infonavit Barrancos · Mazatlán, Ramón F. Iturbe ·
@@ -126,7 +127,7 @@ ARG-144-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 la Fiscalía solo por resumen; sin boletín indexado · Fuentes: Institucional 1 · Nacional 3 ·
 Regional 3 · Abierta 1 · con fecha en la ruta: Proyecto Puente (2026/10/28) · Infobae
 (2026/10/29) · Diario de Tabasco (2026/10/29) · Hecho: 2026-10-28 · Hora: ~19:44, atribuida a la
-Fiscalía de Sonora (solo por resumen) · Consulta: 2026-10-29, última búsqueda 13:39 · Estatus:
+Fiscalía de Sonora (solo por resumen) · Consulta: 2026-10-29, última búsqueda 14:15 · Estatus:
 Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Magdalena de Kino no figura en las cinco ediciones previas ni en el índice
 (el patrón «AMIC» devuelve otros hechos). Sáric (incendio en Seguridad Pública, madrugada del
@@ -152,7 +153,7 @@ ARG-144-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 la Fiscalía solo por resumen; día del hecho por resumen (rutas del 29) · Fuentes: Institucional
 1 · Nacional 4 · Regional 4 · Abierta 1 · con fecha en la ruta: Grupo Marmor (2026/10/29) · La
 Silla Rota (2026/10/29) · Esfera Noticias (2026/10/29) · Hecho: 2026-10-28 · Hora: noche,
-~21:45, atribuida a la Fiscalía (solo por resumen) · Consulta: 2026-10-29, última búsqueda 13:39
+~21:45, atribuida a la Fiscalía (solo por resumen) · Consulta: 2026-10-29, última búsqueda 14:15
 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no
 publicado
 Deslindes y reservas: Indaparapeo en el índice: ARG-140-016 (disparos contra una base de
@@ -178,7 +179,7 @@ solo por resumen; declaración del fiscal solo por resumen · Fuentes: Instituci
 5 · Regional 0 · Abierta 0 · con fecha en la ruta: La Jornada (2026/10/28) · La Silla Rota
 (2026/10/28) · Proceso (2026/10/28) · Heraldo de México (2026/10/28) · Infobae (2026/10/29) ·
 Diario Puntual (2026/10/29) · Hecho: 2026-10-28 · Hora: tarde (solo por resumen; un medio local:
-mañana) · Consulta: 2026-10-29, última búsqueda 13:39 · Estatus: Parcialmente corroborado ·
+mañana) · Consulta: 2026-10-29, última búsqueda 14:15 · Estatus: Parcialmente corroborado ·
 Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Chenalhó y Yabteclum no figuran en las cinco ediciones previas ni en el
 índice. Ninguna fuente regional de Chiapas localizada. La Silla Rota contabiliza nueve
@@ -203,7 +204,7 @@ publicado · la detención que los precede es hecho aparte: ARG-144-015
 ARG-144-008 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: emisor oficial solo
 por resumen; hora no fijada · Fuentes: Institucional 1 · Nacional 2 · Regional 2 · Abierta 0 ·
 con fecha en la ruta: Heraldo de México (2026/10/29) · ABC Noticias (2026/10/29) · Hecho:
-2026-10-29 · Hora: no fijada · Consulta: 2026-10-29, última búsqueda 13:39 · Estatus:
+2026-10-29 · Hora: no fijada · Consulta: 2026-10-29, última búsqueda 14:15 · Estatus:
 Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Matamoros en el índice: hechos de otras fechas. Bloqueo de productores en
 la carretera Victoria–Matamoros (más de 30 horas) e Izúcar de Matamoros (Puebla,
@@ -229,7 +230,7 @@ ARG-144-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 2 · Regional 7 ·
 Abierta 0 · con fecha en la ruta: Correo (2026/oct/28) · La Silla Rota (2026/10/29) · AM
 (2026/10/29) · Noticieros en Línea (2026/oct/29) · Hecho: 2026-10-28 · Hora: ~19:30 (solo por
-resumen) · Consulta: 2026-10-29, última búsqueda 13:39 · Estatus: Parcialmente corroborado ·
+resumen) · Consulta: 2026-10-29, última búsqueda 14:15 · Estatus: Parcialmente corroborado ·
 Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Santiaguillo no figura en las cinco ediciones previas ni en el índice.
 Acámbaro: ARG-142-004 (col. Velasco Ibarra, 26-oct) y ARG-143-REC-003 (Campamento
@@ -260,7 +261,7 @@ ARG-144-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 resumen; colonia contradicha; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional
 0 · Regional 5 · Abierta 0 · con fecha en la ruta: Correo (2026/oct/28) · AM (2026/10/28) ·
 Primer Plano (2026/10/28) · Hecho: 2026-10-28 · Hora: ~14:30 (solo por resumen) · Consulta:
-2026-10-29, última búsqueda 13:39 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
+2026-10-29, última búsqueda 14:15 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
 fila — armamento asegurado: no publicado
 Deslindes y reservas: Col. Azteca y Nuevo Amanecer no figuran en las cinco ediciones previas ni
 en el índice. Irapuato en el índice: ARG-133-010, ARG-134-REC-001, ARG-134-018 y ARG-140-014:
@@ -287,7 +288,7 @@ ARG-144-006 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sos
 día del hallazgo y número de víctimas no publicados; ninguna fuente institucional · Fuentes:
 Institucional 0 · Nacional 0 · Regional 2 · Abierta 0 · con fecha en la ruta: Potosinoticias
 (2026/10/28) · Hecho: publicado el 2026-10-28 — DÍA DEL HALLAZGO NO FIJADO · Hora: no fijada ·
-Consulta: 2026-10-29, última búsqueda 13:39 · Estatus: Pendiente de corroboración · Conteo de
+Consulta: 2026-10-29, última búsqueda 14:15 · Estatus: Pendiente de corroboración · Conteo de
 armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Ciudad del Maíz y Palomas no figuran en las cinco ediciones previas ni en
 el índice. Cuerpos hallados: sin cifra, fuera del total numérico.
@@ -315,23 +316,24 @@ fijado; identidad no confirmada; FGJEM solo por resumen · Fuentes: Instituciona
 · Regional 5 · Abierta 0 · con fecha en la ruta: El Monitor del Edomex (2026/10/28) · Reporteros
 en Movimiento (2026/10/28) · Tribuna (2026/10/29) · La Prensa de Coahuila (2026/10/29) ·
 Sociedad Noticias (2026/10/29) · Hecho: publicado el 2026-10-28 — DÍA DEL HALLAZGO NO FIJADO ·
-Hora: no fijada · Consulta: 2026-10-29, última búsqueda 13:39 · Estatus: Parcialmente
+Hora: no fijada · Consulta: 2026-10-29, última búsqueda 14:15 · Estatus: Parcialmente
 corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Rústica Xalostoc no figura en las cinco ediciones previas ni en el índice.
 Ecatepec en el índice: ARG-140-REC-003 (Santa María Tulpetlac, 20-oct): otro hecho. Las Vegas
 Xalostoc (hombre muerto y pareja baleada, noche del 27, solo por resumen): otro hecho, ventana
 de ARGOS 143, 🟡: visto. Restos sin cifra: fuera del total numérico de cuerpos.
 
-### GUERRERO · ACAPULCO — DEJAN EN DOS BOLSAS LOS RESTOS DE UNA PERSONA DESMEMBRADA EN LA COLONIA EMILIANO ZAPATA [ROJO]
+### GUERRERO · ACAPULCO — DEJAN EN BOLSAS LOS RESTOS DE UNA PERSONA DESCUARTIZADA [ROJO]
 
 ── HECHO
 
 Acapulco · COL. EMILIANO ZAPATA, CALLE 15, FRENTE A LA PARROQUIA DEL PERPETUO SOCORRO, SOLO POR
 RESUMEN · publicado el jueves 29-OCT, por ruta (Sociedad Noticias 2026/10/29) · FRONTERA DE
 VENTANA — HORA NO FIJADA · poco después de las 07:00, SOLO POR RESUMEN · restos de una persona
-desmembrada en dos bolsas, por titular (Quadratín Guerrero; Meganoticias) (🔴 restos humanos
-exhibidos en vía pública) · arrojados desde un auto por hombres armados, SOLO POR RESUMEN ·
-víctima no identificada · ningún detenido publicado
+descuartizada en bolsas, por titular (Quadratín Guerrero; Meganoticias; Sociedad Noticias); dos
+bolsas y la colonia, SOLO POR RESUMEN (🔴 restos humanos exhibidos en vía pública) · arrojados
+desde un auto por hombres armados, SOLO POR RESUMEN · víctima no identificada · ningún detenido
+publicado
 
 ── TRAZABILIDAD
 
@@ -339,7 +341,7 @@ ARG-144-009 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 4 ·
 Abierta 0 · con fecha en la ruta: Sociedad Noticias (2026/10/29) · Hecho: 2026-10-29, por ruta
 de publicación; hora solo por resumen · Hora: poco después de las 07:00 (solo por resumen) ·
-Consulta: 2026-10-29, última búsqueda 13:39 · Estatus: Parcialmente corroborado · Conteo de
+Consulta: 2026-10-29, última búsqueda 14:15 · Estatus: Parcialmente corroborado · Conteo de
 armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Calle 15 y la parroquia del Perpetuo Socorro no figuran en las cinco
 ediciones previas ni en el índice. «Emiliano Zapata» devuelve hallazgos de 2024 y 2025 en
@@ -372,7 +374,7 @@ ARG-144-010 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 solo por resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 1 ·
 Regional 9 · Abierta 0 · con fecha en la ruta: Infoveracruz (2026/10/28) · Golpe Político
 (2026/10/28) · Gráfico al Día (2026/10/29) · Hecho: 2026-10-28 · Hora: contradicha: mañana /
-~16:00 (solo por resumen) · Consulta: 2026-10-29, última búsqueda 13:39 · Estatus: Parcialmente
+~16:00 (solo por resumen) · Consulta: 2026-10-29, última búsqueda 14:15 · Estatus: Parcialmente
 corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Tecolutla y Cañada Rica no figuran en las cinco ediciones previas ni en el
 índice.
@@ -393,7 +395,7 @@ ARG-144-016
 ARG-144-011 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 8 ·
 Abierta 0 · con fecha en la ruta: Por Esto (2026/10/28) · Noticaribe (2026/10/28) · Hecho:
-2026-10-28 · Hora: tarde (solo por resumen) · Consulta: 2026-10-29, última búsqueda 13:39 ·
+2026-10-28 · Hora: tarde (solo por resumen) · Consulta: 2026-10-29, última búsqueda 14:15 ·
 Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no
 publicado
 Deslindes y reservas: Cielo Nuevo no figura en las cinco ediciones previas ni en el índice.
@@ -417,7 +419,7 @@ ARG-144-012 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 fijado; declaración del fiscal solo por resumen · Fuentes: Institucional 1 · Nacional 2 ·
 Regional 4 · Abierta 0 · con fecha en la ruta: La Razón (2026/10/28 y 2026/10/29; un solo medio)
 · Hecho: publicado el 2026-10-28 — DÍA DEL HECHO NO FIJADO · Hora: no fijada · Consulta:
-2026-10-29, última búsqueda 13:39 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
+2026-10-29, última búsqueda 14:15 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
 fila — armamento asegurado: no publicado
 Deslindes y reservas: El Tecnológico de Cuautla y la Ruta 9 no figuran en las cinco ediciones
 previas ni en el índice. Cuautla y Yecapixtla: un solo hecho (misma unidad, mismos heridos).
@@ -439,31 +441,31 @@ publicada: CAUSA NO INFORMADA POR AUTORIDAD · FUENTE ÚNICA · ningún detenido
 ARG-144-013 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: fuente única; hora no
 informada; causa no informada por autoridad · Fuentes: Institucional 0 · Nacional 0 · Regional 1
 · Abierta 0 · con fecha en la ruta: Correo (2026/oct/28) · Hecho: 2026-10-28 · Hora: no fijada ·
-Consulta: 2026-10-29, última búsqueda 13:39 · Estatus: Pendiente de corroboración · Conteo de
+Consulta: 2026-10-29, última búsqueda 14:15 · Estatus: Pendiente de corroboración · Conteo de
 armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Ranchos Unidos no figura en las cinco ediciones previas ni en el índice.
 Valle de Santiago en el índice: ARG-125-013, ARG-125-020 y ARG-128-REC-005: otros hechos. Col.
 Morelos de Valle de Santiago (hombre muerto, «tarde del miércoles» solo por resumen, sin ruta
 fechada): visto.
 
-### QUINTANA ROO · CHETUMAL — UN COMANDO ARMADO IRRUMPE EN UNA VIVIENDA DE NACHICOCOM Y ASESINA A UN EXPOLICÍA [AMARILLO]
+### QUINTANA ROO · CHETUMAL — UN COMANDO ARMADO ASESINA A UN EXPOLICÍA EN NACHICOCOM [AMARILLO]
 
 ── HECHO
 
-Chetumal · NACHICOCOM, VIVIENDA, POR SLUG (POR ESTO) · publicado el jueves 29-OCT, por ruta (Por
-Esto 2026/10/29) · FRONTERA DE VENTANA — HORA NO FIJADA; «noche del jueves», SOLO POR RESUMEN
-(Zócalo; Sol Quintana Roo), incoherente con una publicación del 29; «miércoles», SOLO POR
-RESUMEN: DÍA CONTRADICHO · 1 muerto: expolicía estatal, por titular (Por Esto; Zócalo; Sol
-Quintana Roo) (🟡 homicidio doloso único: la víctima no era servidor público en activo) · comando
-armado, por titular · ningún detenido publicado
+Chetumal · NACHICOCOM, POR SLUG (POR ESTO); EN UNA VIVIENDA, SOLO POR RESUMEN · publicado el
+jueves 29-OCT, por ruta (Por Esto 2026/10/29) · FRONTERA DE VENTANA — HORA NO FIJADA; «noche del
+jueves», SOLO POR RESUMEN (Zócalo; Sol Quintana Roo), incoherente con una publicación del 29;
+«miércoles», SOLO POR RESUMEN: DÍA CONTRADICHO · 1 muerto: expolicía estatal, por titular (Por
+Esto; Zócalo; Sol Quintana Roo) (🟡 homicidio doloso único: la víctima no era servidor público en
+activo) · comando armado, por slug (Por Esto) · ningún detenido publicado
 
 ── TRAZABILIDAD
 
 ARG-144-014 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día contradicho; hora
 no fijada; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 4 ·
-Abierta 0 · con fecha en la ruta: Por Esto (2026/10/29) · Hecho: 2026-10-29 · Hora: no fijada ·
-Consulta: 2026-10-29, última búsqueda 13:39 · Estatus: Parcialmente corroborado · Conteo de
-armamento: sin fila — armamento asegurado: no publicado
+Abierta 0 · con fecha en la ruta: Por Esto (2026/10/29) · Hecho: 28 o 29-oct, CONTRADICHO
+(publicado el 29) · Hora: no fijada · Consulta: 2026-10-29, última búsqueda 14:15 · Estatus:
+Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Nachicocom no figura en las cinco ediciones previas ni en el índice. Si la
 autoridad acredita que la víctima era servidor público en activo, el hecho sube a 🔴.
 
@@ -479,8 +481,8 @@ autoridad acredita que la víctima era servidor público en activo, el hecho sub
 ── HECHO
 
 Matamoros · jueves 29-OCT, por ruta (Heraldo de México 2026/10/29) · FRONTERA DE VENTANA — HORA
-NO FIJADA · detención de un «objetivo prioritario», por titular (Heraldo de México: única fuente
-con esa expresión); «presunto líder criminal», atribuido a la Vocería de Seguridad de
+NO FIJADA · detención de un «objetivo prioritario», por titular (Heraldo de México; El Mañana
+2026/10/29; Hora Cero); «presunto líder criminal», atribuido a la Vocería de Seguridad de
 Tamaulipas, SOLO POR RESUMEN (Diario del Yaqui) (🟢 detención) · por fuerzas federales, SOLO POR
 RESUMEN · identidad y delitos: no publicados · 1 detenido, deducido del singular del titular;
 «no se confirmaban personas detenidas», SOLO POR RESUMEN (El Mañana): CONTRADICHO · armamento
@@ -488,15 +490,15 @@ asegurado: no publicado · los bloqueos posteriores son hecho aparte: ARG-144-00
 
 ── TRAZABILIDAD
 
-ARG-144-015 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: detención por titular
-de una sola fuente; número de detenidos deducido y contradicho · Fuentes: Institucional 1 ·
-Nacional 1 · Regional 1 · Abierta 0 · con fecha en la ruta: Heraldo de México (2026/10/29) ·
-Hecho: 2026-10-29 · Hora: no fijada · Consulta: 2026-10-29, última búsqueda 13:39 · Estatus:
+ARG-144-015 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: número de detenidos
+deducido del singular y contradicho · Fuentes: Institucional 1 · Nacional 1 · Regional 3 ·
+Abierta 0 · con fecha en la ruta: Heraldo de México (2026/10/29) · El Mañana (2026/10/29) ·
+Hecho: 2026-10-29 · Hora: no fijada · Consulta: 2026-10-29, última búsqueda 14:15 · Estatus:
 Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Detención en Reynosa de un «objetivo prioritario» (Yahoo, abril): otro
 hecho. Detención sin armamento con cifra: fuera del conteo de armamento.
 
-### QUINTANA ROO · CANCÚN — DETIENEN A TRES PERSONAS TRAS UNA PERSECUCIÓN, POR EL ATAQUE DE CIELO NUEVO [VERDE]
+### QUINTANA ROO · CANCÚN — DETIENEN A TRES PERSONAS POR EL ATAQUE DE CIELO NUEVO [VERDE]
 
 ── HECHO
 
@@ -511,7 +513,7 @@ el ataque es hecho aparte: ARG-144-011
 ARG-144-016 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: arma y corporación
 solo por resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 ·
 Regional 4 · Abierta 0 · con fecha en la ruta: Noticaribe (2026/10/28) · Por Esto (2026/10/28) ·
-Hecho: 2026-10-28 · Hora: tarde (solo por resumen) · Consulta: 2026-10-29, última búsqueda 13:39
+Hecho: 2026-10-28 · Hora: tarde (solo por resumen) · Consulta: 2026-10-29, última búsqueda 14:15
 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no
 publicado
 Deslindes y reservas: Delito y detención en la misma ventana: dos fichas (ARG-144-011 y esta).
@@ -537,11 +539,11 @@ ARG-144-017 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 fijado; ninguna declaración institucional · Fuentes: Institucional 0 · Nacional 1 · Regional 5 ·
 Abierta 0 · con fecha en la ruta: MVS (2026/10/28) · Punto x Punto (2026/10/28) · Hecho:
 publicado el 2026-10-28 — DÍA DE LOS CATEOS NO FIJADO · Hora: no fijada · Consulta: 2026-10-29,
-última búsqueda 13:39 · Estatus: Parcialmente corroborado · Conteo de armamento: ARG-144-ARM-001
+última búsqueda 14:15 · Estatus: Parcialmente corroborado · Conteo de armamento: ARG-144-ARM-001
 Deslindes y reservas: General Bravo y China no figuran en las cinco ediciones previas;
 ARG-135-ARM-001 («Industrial Bravo»): otro hecho.
 
-### CIUDAD DE MÉXICO · GUSTAVO A. MADERO — CATEO EN LINDAVISTA CONTRA LA FALSIFICACIÓN DE PLACAS: SEIS DETENIDOS; ARMAS SIN CIFRA Y DROGA [VERDE]
+### CIUDAD DE MÉXICO · GUSTAVO A. MADERO — CATEO EN LINDAVISTA CONTRA LA FALSIFICACIÓN DE PLACAS: SEIS DETENIDOS; ARMAS SIN CIFRA [VERDE]
 
 ── HECHO
 
@@ -562,13 +564,13 @@ ARG-144-018 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 solo por resumen; día no fijado; número de detenidos con reserva · Fuentes: Institucional 1 ·
 Nacional 3 · Regional 4 · Abierta 0 · con fecha en la ruta: La Silla Rota (2026/10/28) ·
 Publimetro (2026/10/28) · Hecho: publicado el 2026-10-28 — DÍA DEL CATEO NO FIJADO · Hora: no
-fijada · Consulta: 2026-10-29, última búsqueda 13:39 · Estatus: Parcialmente corroborado ·
+fijada · Consulta: 2026-10-29, última búsqueda 14:15 · Estatus: Parcialmente corroborado ·
 Conteo de armamento: ARG-144-ARM-002
 Deslindes y reservas: Lindavista no figura en las cinco ediciones previas; Gustavo A. Madero en
 ARGOS 141: otro hecho. Si la autoridad confirma restos humanos en el inmueble, el hecho abre
 ficha 🔴 aparte.
 
-### ESTADO DE MÉXICO · ECATEPEC — DETIENEN A LA SOBRINA Y A UN HOMBRE POR LA DESAPARICIÓN DE UNA MUJER DE 52 AÑOS [VERDE]
+### ESTADO DE MÉXICO · ECATEPEC — DETIENEN A LA SOBRINA Y A UN HOMBRE POR LA DESAPARICIÓN DE UNA MUJER [VERDE]
 
 ── HECHO
 
@@ -586,12 +588,12 @@ ARG-144-019 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 no fijado; FGJEM solo por resumen · Fuentes: Institucional 1 · Nacional 2 · Regional 4 · Abierta
 0 · con fecha en la ruta: El Monitor del Edomex (2026/10/28) · Tribuna (2026/10/29) · Sociedad
 Noticias (2026/10/29) · Hecho: publicado el 2026-10-28 — DÍA DE LA DETENCIÓN NO FIJADO · Hora:
-no fijada · Consulta: 2026-10-29, última búsqueda 13:39 · Estatus: Parcialmente corroborado ·
+no fijada · Consulta: 2026-10-29, última búsqueda 14:15 · Estatus: Parcialmente corroborado ·
 Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Delito y detención publicados en la misma ventana: dos fichas (ARG-144-007
 y esta). Detención sin armamento: fuera del conteo de armamento.
 
-### GUANAJUATO · JARAL DEL PROGRESO — DETIENEN A DOS HOMBRES CON TRES ARMAS LARGAS, EQUIPO TÁCTICO Y UNA CAMIONETA ROBADA [VERDE]
+### GUANAJUATO · JARAL DEL PROGRESO — DETIENEN A DOS HOMBRES CON TRES ARMAS LARGAS Y UNA CAMIONETA CON REPORTE DE ROBO [VERDE]
 
 ── HECHO
 
@@ -599,11 +601,11 @@ Jaral del Progreso · COL. LAS FLORES, SOLO POR RESUMEN · publicado el miércol
 (boletín del Gobierno de Guanajuato 2026/10/28) · PUBLICADO EL DÍA DE APERTURA SIN HORA; día del
 operativo no fijado: SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE
 RETIRA DE ESTE TOTAL · 2 detenidos y 3 armas largas, por titular del boletín y de Quadratín
-Bajío (🟢 detención y aseguramiento) · cartuchos y cargadores sin cifra, SOLO POR RESUMEN · 6
-chalecos y 6 cascos, SOLO POR RESUMEN · camioneta con reporte de robo, por titular · Seguridad y
-Paz de Guanajuato con la Defensa, SOLO POR RESUMEN · POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL
-HASTA VALIDACIÓN: La Silla Rota (2026/10/26) publicó un arsenal asegurado a dos hombres en la
-misma colonia, ya vinculados a proceso
+Bajío (🟢 detención y aseguramiento) · cartuchos y cargadores sin cifra, SOLO POR RESUMEN ·
+equipo táctico (6 chalecos y 6 cascos), SOLO POR RESUMEN · camioneta con reporte de robo, por
+titular · Seguridad y Paz de Guanajuato con la Defensa, SOLO POR RESUMEN · POSIBLE DUPLICIDAD —
+NO INTEGRAR AL TOTAL HASTA VALIDACIÓN: La Silla Rota (2026/10/26) publicó un arsenal asegurado a
+dos hombres en la misma colonia, ya vinculados a proceso
 
 ── TRAZABILIDAD
 
@@ -611,7 +613,7 @@ ARG-144-020 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 con un aseguramiento del 26-oct; día del operativo no fijado · Fuentes: Institucional 1 ·
 Nacional 1 · Regional 1 · Abierta 0 · con fecha en la ruta: Gobierno de Guanajuato (2026/10/28)
 · Hecho: publicado el 2026-10-28 — DÍA DEL OPERATIVO NO FIJADO · Hora: no fijada · Consulta:
-2026-10-29, última búsqueda 13:39 · Estatus: Parcialmente corroborado · Conteo de armamento:
+2026-10-29, última búsqueda 14:15 · Estatus: Parcialmente corroborado · Conteo de armamento:
 ARG-144-ARM-003
 Deslindes y reservas: Jaral del Progreso no figura en las cinco ediciones previas ni en el
 índice. La Silla Rota 2026/10/26 (misma colonia, dos presuntos integrantes del CSRL, 24
@@ -643,7 +645,7 @@ ARG-144-REC-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peo
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 4 · Regional 1 ·
 Abierta 0 · con fecha en la ruta: Proceso (2026/10/28) · Infobae (2026/10/28) · El Gráfico
 (2026/10/28) · Hecho: 2026-10-28 · Hora: mañana, «primeras horas» (solo por resumen); una nota
-publicada a las 08:33 (solo por resumen) · Consulta: 2026-10-29, última búsqueda 13:39 ·
+publicada a las 08:33 (solo por resumen) · Consulta: 2026-10-29, última búsqueda 14:15 ·
 Estatus: Parcialmente corroborado · Ventana de origen: ARGOS 143 — HORA SOLO POR RESUMEN — fuera
 de todos los totales
 Deslindes y reservas: República de Perú y Argentina no figuran en las cinco ediciones previas ni
@@ -670,7 +672,7 @@ ARG-144-REC-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peo
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 4 · Regional 7 ·
 Abierta 0 · con fecha en la ruta: La Silla Rota (2026/10/28) · Diario del Istmo (2026/10/28) ·
 Sociedad Noticias (2026/10/28) · Hecho: 2026-10-28 · Hora: madrugada, «primeros minutos» del
-miércoles (solo por resumen) · Consulta: 2026-10-29, última búsqueda 13:39 · Estatus:
+miércoles (solo por resumen) · Consulta: 2026-10-29, última búsqueda 14:15 · Estatus:
 Parcialmente corroborado · Ventana de origen: ARGOS 143 — HORA SOLO POR RESUMEN — fuera de todos
 los totales
 Deslindes y reservas: Av. Universidad Veracruzana y el Poder Judicial no figuran en las cinco
@@ -699,7 +701,7 @@ por resumen; cifra contradicha; Fiscalía solo por resumen · Fuentes: Instituci
 2 · Regional 5 · Abierta 0 · con fecha en la ruta: Luz Noticias (2026/10/28) · El Diario de
 Chihuahua (2026/10/28) · El Diario del Noroeste (2026/10/28) · Revista Espejo (2026/10/29) ·
 Hecho: 2026-10-27, solo por resumen (publicado el 28) · Hora: noche, ~22:00-23:00 (solo por
-resumen) · Consulta: 2026-10-29, última búsqueda 13:39 · Estatus: Parcialmente corroborado ·
+resumen) · Consulta: 2026-10-29, última búsqueda 14:15 · Estatus: Parcialmente corroborado ·
 Ventana de origen: ARGOS 143 — HORA SOLO POR RESUMEN — fuera de todos los totales
 Deslindes y reservas: Villas del Real de Chihuahua capital (ARG-115-003): otro hecho, otro
 estado. Culiacán, Villas del Real, ~12-oct (archivo de fuentes de ARGOS 129): sin ficha, otra
@@ -726,7 +728,7 @@ resumen; declaración del secretario solo por resumen · Fuentes: Institucional 
 Regional 4 · Abierta 0 · con fecha en la ruta: Central Municipal (2026/10/27) · Revista Espejo
 (2026/10/27) · La Razón (2026/10/28) · Infobae (2026/10/28) · El Diario del Noroeste
 (2026/10/28) · Hecho: 2026-10-27 · Hora: ~06:00-06:30 (solo por resumen) · Consulta: 2026-10-29,
-última búsqueda 13:39 · Estatus: Parcialmente corroborado · Ventana de origen: ARGOS 142 — HORA
+última búsqueda 14:15 · Estatus: Parcialmente corroborado · Ventana de origen: ARGOS 142 — HORA
 SOLO POR RESUMEN — fuera de todos los totales
 Deslindes y reservas: En ARGOS 143 figuró solo en el informe de equipos, como visto («día no
 fijado»); el cartelón de 143 no lo publicó. Palacio Municipal en el índice: ARG-126-REC-007
@@ -749,9 +751,9 @@ Total nacional del corte: en la página de panorama.
 
   · Sin categoría: n/d — General Bravo y China: cifra solo por resumen
 
-  · Cartuchos: n/d — publicados sin cifra en dos eventos
+  · Cartuchos: n/d — mencionados sin cifra en tres eventos (uno en reserva)
 
-  · Cargadores: n/d — SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE
+  · Cargadores: n/d — mencionados sin cifra en Jaral del Progreso (en reserva)
 
   · Granadas: n/d — SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE
 
@@ -761,7 +763,7 @@ Total nacional del corte: en la página de panorama.
 
   · Armamento especial: n/d — SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE
 
-  · Detenidos: 8 — en el mismo evento de aseguramiento: dos eventos cualitativos
+  · Detenidos: 8 — en el mismo evento de aseguramiento: por titulares de medios, ninguna cifra de autoridad; sujeto a las cláusulas de ARG-144-017 y -018
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-29 · Hora: 11:36 (CDMX) · Corte: Matutino · ARGOS N.° 144 · USO INSTITUCIONAL
@@ -814,7 +816,7 @@ detenido).
 ## CANDIDATOS
 
   Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
-  Nuevo León · Doctor Arroyo | Homicidio simple (San Ignacio de Torres, marzo de 2025, SOLO POR RESUMEN); 1 sentenciado, Edgar «N», SOLO POR RESUMEN · nuevo en ARGOS 144 | 15 años, por titular (MVS 2026/10/28); reparación sin monto: CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO | FGJE Nuevo León (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL · boletín no localizado en el dominio; firmeza no informada | Bajo
+  Nuevo León · Doctor Arroyo | Homicidio simple (San Ignacio de Torres, marzo de 2025, SOLO POR RESUMEN); 1 sentenciado, Edgar «N», SOLO POR RESUMEN · nuevo en ARGOS 144 | 15 años, por titular (MVS 2026/10/28); reparación sin monto: CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO | FGJE Nuevo León (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL · boletín no localizado en el dominio; firmeza no informada; fuente única (MVS) | No confirmado
   Nuevo León · sin municipio publicado | Abuso contra una menor; segunda instancia revoca una absolución, por titular · nuevo en ARGOS 144 | 40 años, por titular (MVS 2026/10/28) | Tribunal de alzada (por titular) | PENDIENTE DE CONFIRMACIÓN OFICIAL · solo titular; sin campos individualizadores | No confirmado
   Puebla · Huejotzingo | Feminicidio de su pareja embarazada («esposa» en otros titulares: CONTRADICHO); 1 sentenciado, expolicía, por titular · nuevo en ARGOS 144 | 55 años, por titular (Heraldo de Puebla; Retodiario 2026/10/29) | FGE Puebla (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · sin boletín en fiscalia.puebla.gob.mx; día del fallo no fijado | Bajo
   Estado de México · Ecatepec | Homicidio y homicidio en grado de tentativa; 1 sentenciada, por titular · nuevo en ARGOS 144 | 68 años, por titular (Línea por Línea 2026/10/28) | FGJEM (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · fuente única; no es el caso de Fresnillo | No confirmado
@@ -827,8 +829,9 @@ detenido).
 Publicadas antes de la ventana, no integrables: FGR Nayarit, Tepic (El Jicote), 15 años, por
 titular (Argonmexico 2026/10/26); meses adicionales: CANTIDAD NO DETERMINADA — NO SE INTEGRA AL
 TOTAL NUMÉRICO · FGE Querétaro (5, 6, 8 y 22-oct, por ruta) · FGE Jalisco, comunicado 1939
-(19-oct) · FGE Colima, boletín 4978 (15-oct) · Tamaulipas FGJE-412 (26-oct) · Ensenada, 158 años
-9 meses (individualización del 16-oct) · Nuevo León, 155 años (13-oct). NO SE INTEGRAN.
+(19-oct) · FGE Colima, boletín 4978 (15-oct) · Tamaulipas FGJE-412 (26-oct) · Ensenada, 158
+años, por titular (individualización del 16-oct); meses adicionales: CANTIDAD NO DETERMINADA —
+NO SE INTEGRA AL TOTAL NUMÉRICO · Nuevo León, 155 años (13-oct). NO SE INTEGRAN.
 
 ## INDICADOR DE COBERTURA
 

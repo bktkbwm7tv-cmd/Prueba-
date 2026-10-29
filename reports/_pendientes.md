@@ -8,7 +8,7 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 143 (corte 2026-10-28; ventana 27-oct 08:45 → 28-oct 08:28).
+**Última actualización**: ARGOS 144 (corte 2026-10-29; ventana 28-oct 08:28 → 29-oct 11:36).
 
 ---
 
@@ -28,6 +28,8 @@ sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le
 **ARGOS 142 publicado el 27-oct** (ventana 26-oct 08:37 → 27-oct 08:45, 24 h 08 min; rama `claude/argos-criminal-intelligence-otiawj`, encima de `claude/argos-141-nacional-kh5fj6`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-143.md`** (y `_ordenes-ARGOS-143.txt`).
 
 **ARGOS 143 publicado el 28-oct** (ventana 27-oct 08:45 → 28-oct 08:28, 23 h 43 min; rama `claude/argos-criminal-intelligence-otiawj`, encima de 142). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-144.md`** (y `_ordenes-ARGOS-144.txt`).
+
+**ARGOS 144 publicado el 29-oct** (ventana 28-oct 08:28 → 29-oct 11:36, 27 h 08 min; rama `claude/argos-144`, encima de `claude/argos-criminal-intelligence-otiawj`; **ninguna de 139 a 144 está en `main`**). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-145.md`** (y `_ordenes-ARGOS-145.txt`).
 
 ⚠️ **25-oct: la orden de 140 del 22-oct no se ejecutó** (la sesión se detuvo tras el Bloque 0; no hay edición del 22 al 24). **Orden rehecha el 25-oct** en la rama `claude/argos-140`: ventana larga **21-oct 10:23 → domingo 25-oct**, archivo `argos-2026-10-25.html`, `WINDOW_DAYS = 5`, recall nacional por día.
 
@@ -2598,3 +2600,50 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 7. **Presupuesto de 143**: 2 + 18 + 2 + 150 + 23 + 2 = 197 de 200.
 9. **Umbral de fe de erratas aplicado a candidatos de sentencias** (`ARG-143-FE-003`): Tulantepec «8-oct», «75 UMA» y «seis meses» retirados. No reintroducir sin fragmento.
 8. **Rama**: 142 y 143 viven en `claude/argos-criminal-intelligence-otiawj`; ninguna está en `main`.
+
+## ARGOS 144 — lo que cierra esta edición
+
+| Pendiente | Disposición |
+|---|---|
+| **Tulantepec** | Audiencia del 28-oct en receso por corte de energía; continúa el **5-nov** (por resumen). Sin pena: sigue candidato |
+| **Cláusulas de retiro de 143** | `ARG-143-003` (~19:30 del 27), `-007` (27) y `-009` (~09:00 del 27): no se ejecutan. `-010` Rayón: órdenes notificadas en reclusión (por titular); sigue verde. Cerrado salvo `-005` Tijuana |
+| **Tecate `ARG-143-REC-001`** | Un hallazgo con dos descripciones de lugar. Cerrado |
+| **Tecate `ARG-142-001`** | 1 herido según la SSC-BC (por resumen); 2 en Milenio. Cerrado como contradicho |
+| **Huimanguillo** | Dos parejas distintas en dos fosas (Entérate México 2026/10/23), no nombres contradictorios. Cerrado; identificación solo por familiares |
+| **Linares `ARG-140-013`** | Edad retirada por umbral (`ARG-144-FE-005`). Cerrado |
+| **Fresnillo** | Meses retirados por umbral (`ARG-144-FE-003`); sigue candidato sin boletín |
+| **Exfiscal `ARG-136-006`** | Vinculado el 22 y el 25-oct (fuera de ventana). Sin paso nuevo |
+| **Mazatlán, hielera (visto de 143)** | Publicado como `ARG-144-REC-004` (ventana de 142) |
+
+## Abiertos que ARGOS 145 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️ **Decisión del destinatario: Celaya `ARG-143-001`** | Sigue 🟡 (la SSPC intervino un robo en curso y fue agredida; El Universal: «agreden… tras intervenir»). Si el destinatario dispone 🔴: fe de erratas a 143 (+1 rojo; Gto con rojo) |
+| ⚠️ **Decisión del destinatario: excepción para rojos sin ruta fechada** | Usada en el borrador de 144 (Acapulco) y retirada al hallarse ruta. No está en `CLAUDE.md`: ratificar o derogar |
+| ⚠️ **Cláusulas de retiro de 144 (12)** | `-003` Acámbaro («martes» en una fuente) · `-004` Chenalhó («mañana» en un medio local) · `-005` Irapuato (~14:30 por resumen) · `-006` Ciudad del Maíz (día del hallazgo) · `-007` Ecatepec (día del hallazgo) · `-010` Tecolutla (mañana / 16:00) · `-012` Cuautla (día) · `-013` Valle de Santiago (hora) · `-017` General Bravo («la semana pasada» en un medio) · `-018` Lindavista · `-019` Ecatepec detención · `-020` Jaral |
+| ⚠️ **Recuperaciones de 144** (FE-001 a 143 y FE-002 a 142, condicionadas) | `REC-001` CDMX Centro: hora (si posterior a 08:28 del 28, hecho propio de 144) · `REC-002` Coatzacoalcos: hora · `REC-003` Villas del Real: 4 o 6; circunstancias de la localización · `REC-004` Mazatlán: mensaje |
+| **Matamoros `-008` / `-015`** | Identidad del detenido; ¿hubo detenido? (El Mañana: «no se confirmaban»); daños de los bloqueos; comunicado de la Vocería |
+| **Ciudad del Maíz `-006` y Ecatepec `-007`** | Número de víctimas e identificación genética |
+| **Jaral del Progreso `-020`** | ¿Mismo aseguramiento que La Silla Rota 2026/10/26? Si sí: 144 queda en 19 hechos y 5 verdes |
+| **Chetumal `-014`** | Día del hecho (miércoles 28 / jueves 29) |
+| **Chenalhó `-004`, Indaparapeo `-002`, Magdalena de Kino `-001`** | Detenidos; boletín de las fiscalías |
+| **Tetlatlahuca / Nativitas (Tlax)** | Restos calcinados junto al Zahuapan: **fecha no fijada** (La Prensa de Tlaxcala 2026/10, sin día). Rojo potencial |
+| **Armamento de la ventana de 143 visto en 144** | Xochitlán de las Flores (Síntesis 2026/10/27) y Hermosillo 5 de Mayo («aseguran un arma», Proyecto Puente 2026/10/28): fragmento con cifra y día → fe de erratas a 143 o cierre |
+| **Tuxtepec («El Semáforo»)** | Día del operativo (¿27, mismo cateo del boletín federal?); cifras de armas y granadas; «16 detenidos más» |
+| **Boletín federal** | Acciones del 28 y del 29: triple consulta |
+| **Sentencias candidatas** | Doctor Arroyo 15 años y NL 40 años (MVS 2026/10/28) · Huejotzingo 55 años (Retodiario, Heraldo de Puebla 2026/10/29) · Ecatepec 68 años (Línea por Línea 2026/10/28) · Tijuana robo con violencia (Uniradio) · Tenosique FGR (armas y granadas) · Tulantepec (5-nov) · Fresnillo · Ramos Arizpe (homónimo) — **boletín oficial con término expreso** |
+| **Seguimientos** | Tehuacán `ARG-142-010` (vinculación) · Juchitán `ARG-140-021` · Almoloya `ARG-134-REC-004` (vinculación por secuestro; fecha) · Xalapa `ARG-140-020` (vinculación) · Pénjamo `ARG-141-001` |
+| **FE condicionadas** | `ARG-144-FE-001` · `ARG-144-FE-002` · `ARG-143-FE-001` · `ARG-141-FE-001` · `ARG-140-FE-001` · Río Bravo (129) |
+| **Heredados sin avance** | Tijuana `ARG-143-005` (hora) · Nogales · Ajuchitlán · Taxco · El Tívoli · Coquimatlán · Patamban · Tecuala |
+| **Cobertura con prioridad sobre el ciclo en 145** | **Sentencias `NO REVISADA` (14)**: Chih, Sin · Nay, Ags, Gto · CDMX, Edomex, Mor, Tlax · Chis, Oax, Gro, Yuc, QRoo; **sin dominio**: Son, Coah (sin páginas), Camp (no confirmado). **Armamento `NO REVISADA` (13)**: BCS, Chih, Sin, Dgo · NL, Zac · Jal, Nay, Ags · CDMX, Pue, Tlax · Camp; sin páginas: Son, Coah, Oax. **Alto impacto solo amplia (10)**: BCS · NL, Zac, Coah · **Hgo, Qro (dos ediciones)** · Oax, Camp, Yuc, QRoo. Después, **CICLO C** (Occidente + Sureste: 145 = C) |
+
+## Deuda de método (ARGOS 144)
+
+1. **El recall no encontró los dos rojos que más pesaron** (Magdalena de Kino, Matamoros): ninguna consulta preguntó por «instalaciones / base / sede» ni por «bloqueos». Añadir ambas al recall de 145.
+2. **Cifras de armas solo en el resumen** (patrón Huajicori) llegaron al total del borrador en tres eventos; las retiró `procedencia-cifras` R1. Los equipos deben rotular la cifra de armas «por titular» o «solo por resumen» en el informe.
+3. **Titulares de ficha más fuertes que su trazabilidad**: dos rondas para alinearlos (`-005`, `-009`, `-014`, `-016` a `-020`). Regla para 145: el titular de ficha solo lleva lo que está por titular, *slug* o ruta.
+4. **Falsas fuentes únicas otra vez** (Irapuato Benito Juárez, Chetumal) y una falsa «única fuente con esa expresión» (Matamoros): la búsqueda por topónimo exacto debe hacerse en la ola, no en el control.
+5. **Hora por resumen anterior a la apertura** (Irapuato Benito Juárez, ~07:15): retirado en el control. La lección (a) de 143 vale para la hora, no solo para el día.
+6. **Presupuesto de 144**: 2 + 18 + 150 + 6 + 22 + 2 = **200 de 200**; la ronda 2 de procedencia trabajó con 2 búsquedas.
+7. **Rama**: 139 a 144 viven fuera de `main`; 144 en `claude/argos-144`.

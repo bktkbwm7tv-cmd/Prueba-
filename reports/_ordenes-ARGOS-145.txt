@@ -1,0 +1,119 @@
+Eres el Analista Nacional de Inteligencia Criminal ARGOS. Vas a producir ARGOS 145
+con datos de HOY. Trabaja en español y dirígete a mí como Comisario.
+
+PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
+
+    TZ=America/Mexico_City date '+%Y-%m-%d %H:%M %Z'
+    git fetch origin
+    git branch -r | sed 's#origin/##' | sort
+    git merge --ff-only origin/main
+    git merge --ff-only origin/claude/argos-139-qe9f01
+    git merge --ff-only origin/claude/argos-140
+    git merge --ff-only origin/claude/argos-141-nacional-kh5fj6
+    git merge --ff-only origin/claude/argos-criminal-intelligence-otiawj
+    git merge --ff-only origin/claude/argos-144
+    ls reports/ | grep '^argos-' | tail -6
+    ls reports/ | wc -l
+
+DEBES ENCONTRAR: última edición argos-2026-10-29 (ARGOS 144) y 254 archivos en
+reports/. ARGOS 139 a 144 NO ESTÁN EN main: 139 en claude/argos-139-qe9f01, 140 en
+claude/argos-140, 141 en claude/argos-141-nacional-kh5fj6, 142 y 143 en
+claude/argos-criminal-intelligence-otiawj y 144 en claude/argos-144 (cada una encima
+de la anterior); los ff-only deben traerlas. El clon puede arrancar por detrás o en
+una rama de sesión antigua: dilo y no es fallo. Si algún merge NO es fast-forward,
+PARA Y AVÍSAME.
+
+RED: curl -s -o /dev/null -m 12 -w '%{http_code}\n' https://www.gob.mx/fgr
+Si NO devuelve 000, DILO y lee los boletines directamente (WebFetch). Si devuelve
+000, sigue bloqueado: solo WebSearch.
+
+VENTANA: abre 2026-10-29 11:36 CDMX —donde cerró ARGOS 144— y cierra a la HORA REAL
+de tu arranque. Calendario: jue 29 · vie 30 (· sáb 31 si arrancas después). Si dura
+menos de ~12 h, AVÍSAME ANTES DE LA OLA. Si mi «Procede» llega más de DOS HORAS
+después del Bloque 0, AVÍSAME y propón cerrar la ventana a la hora del «Procede».
+Recalcula duración y densidad al sellar. 144: 27 h 08 min, 0,74.
+FECHA DEL ARCHIVO: argos-2026-10-DD.html (fecha del arranque, sin sufijo). Radar:
+WINDOW_DAYS = número de fechas de calendario de la ventana (la plantilla de 144 trae
+2; si la ventana toca tres fechas, cámbialo en el script y en la aserción).
+
+================================================================================
+MODO DE BÚSQUEDA
+================================================================================
+TODA BÚSQUEDA CON mode:"extended". Primera búsqueda: CONSULTA DE CONTROL en los dos
+modos. TOPE DE 200 BÚSQUEDAS POR TURNO, COMPARTIDO: CONTROL 2 · COORDINADOR 18 ·
+OLA 150 (6 × 25, cuatro de cada equipo reservadas a fecha en la ruta) ·
+procedencia-cifras 30 (R1 24 · R2 6: NO LA DEJES EN 2, como en 144). Cifra de peso
+ENTRE COMILLAS. UN DOMINIO POR CONSULTA site:, NUNCA OR. El coordinador hace el
+RECALL NACIONAL POR DÍA Y LA TRIPLE CONSULTA FEDERAL ANTES DE LANZAR LA OLA.
+⚠️ LECCIONES DE 144: (a) el recall debe preguntar por «ataque a instalaciones /
+base / sede» y por «bloqueos» (Magdalena de Kino y Matamoros no salieron en el
+recall); (b) la cifra de armas que solo está en el resumen NO suma (tres eventos en
+el borrador de 144): el equipo la rotula «por titular» o «solo por resumen»; (c) el
+titular de una ficha solo lleva lo que está por titular, slug o ruta; (d) la
+lección del «ayer» vale también para la HORA: una hora por resumen anterior a la
+apertura manda el hecho a la ventana anterior (Irapuato, ~07:15); (e) búsqueda por
+topónimo exacto EN LA OLA antes de «fuente única» (dos falsas en 144).
+
+================================================================================
+ENCARGOS, PRIMERO Y SIN NEGOCIAR
+================================================================================
+ 0. CICLO: C (Occidente + Sureste), por la tabla de CLAUDE.md, después de la
+    prioridad sobre el ciclo.
+ 1. DECISIONES PENDIENTES DEL DESTINATARIO: Celaya ARG-143-001 (🟡 o 🔴) y la
+    «excepción para rojos sin ruta fechada». Pregúntame en el Bloque 0 si no las
+    he dado.
+ 2. CLÁUSULAS DE RETIRO DE 144 (12): -003 Acámbaro («martes») · -004 Chenalhó
+    («mañana») · -005 Irapuato (~14:30) · -006 Ciudad del Maíz y -007 Ecatepec (día
+    del hallazgo) · -010 Tecolutla · -012 Cuautla · -013 Valle de Santiago · -017
+    General Bravo («semana pasada») · -018 Lindavista · -019 · -020 Jaral.
+ 3. RECUPERACIONES DE 144 (FE-001 a 143 y FE-002 a 142, condicionadas): REC-001
+    CDMX Centro (hora; si fue después de las 08:28 del 28, es hecho propio de 144) ·
+    REC-002 Coatzacoalcos (hora) · REC-003 Villas del Real (4 o 6) · REC-004
+    Mazatlán (mensaje).
+ 4. MATAMOROS -008/-015: identidad del detenido; ¿hubo detenido?; daños; Vocería.
+ 5. CIUDAD DEL MAÍZ -006 y ECATEPEC -007: número de víctimas, identificación.
+ 6. JARAL DEL PROGRESO -020: ¿mismo aseguramiento que La Silla Rota 2026/10/26?
+ 7. TETLATLAHUCA (Tlax): restos calcinados junto al Zahuapan, fecha no fijada.
+ 8. ARMAMENTO DE 143 VISTO EN 144: Xochitlán de las Flores y Hermosillo, cifra por
+    fragmento y día → fe de erratas a 143 o cierre. Tuxtepec («El Semáforo»): día.
+ 9. BOLETÍN FEDERAL de acciones del 28 y del 29 y de cada día de la ventana.
+10. SENTENCIAS CANDIDATAS: Doctor Arroyo, NL 40 años, Huejotzingo 55 años,
+    Ecatepec 68 años, Tijuana, Tenosique, Fresnillo, Ramos Arizpe; Tulantepec
+    (continúa el 5-nov). Integrable SOLO con boletín oficial y término expreso.
+11. SEGUIMIENTO (fuera del semáforo): Chenalhó, Indaparapeo, Magdalena de Kino
+    (detenidos) · Tehuacán ARG-142-010 · Juchitán ARG-140-021 · Almoloya
+    ARG-134-REC-004 · Xalapa ARG-140-020 · Tijuana ARG-143-005 (hora).
+
+================================================================================
+BARRIDO
+================================================================================
+ Plantilla: tools/plantilla-equipos-145.md (escribe la hora de cierre).
+ PRIORIDAD SOBRE EL CICLO: sentencias de las 14 NO REVISADA y de Son, Coah, Camp;
+ armamento de las 13 NO REVISADA; alto impacto con consulta propia para las 10 de
+ solo regional amplia (Hgo, Qro: DOS EDICIONES). Listas en la plantilla y en
+ _pendientes.md, «Abiertos que ARGOS 145 hereda».
+
+================================================================================
+FORMA, CONSTRUCCIÓN Y CONTROLES
+================================================================================
+ · Parte de tools/datos-argos-144.py (copia a datos-argos-145.py) y de
+   reports/argos-2026-10-29.html como plantilla (su <title> dice «ARGOS 144 —
+   Reporte Nacional de Seguridad — 2026-10-29»). Actualiza el <title> que
+   reemplaza (hoy dice ARGOS 143) y la aserción de WINDOW_DAYS.
+ · El generador de 144 ya admite armamento cualitativo (todas las categorías en
+   nd salvo detenidos) y páginas de Crimen Organizado por bloques (co1, co2, co2b,
+   co2c, co3).
+ · Criterio, totales, acciones como SOLICITUD, portada sin hechos, conclusiones
+   con «vínculo no acreditado» y sin repetir las de 144 (agentes estatales,
+   Indaparapeo, restos ante sedes, Acámbaro, Irapuato) sin declarar que las
+   desarrollan.
+ · Móvil y texto SE GENERAN: gen-movil.py 145 <FECHA> 144 2026-10-29 <HORA> ·
+   gen-texto.py · node tools/validar.js reports/argos-<FECHA>.html 2026-10-29
+   <FECHA> → validación OK.
+ · editor-duplicidad y procedencia-cifras: VEINTE PASES, dos rondas; la ronda 2 EN
+   SERIE.
+ · Marca «Consulta»: hora real de la última búsqueda.
+ · Cierre: _pendientes.md, indice-arg-id.md y orden de ARGOS 146. Commit y push.
+ · Detalle completo: reports/_arranque-ARGOS-145.md.
+
+Empieza por el Bloque 0 y dime qué encuentras antes de seguir.

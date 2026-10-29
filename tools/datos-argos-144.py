@@ -5,7 +5,7 @@ Ventana: 28-oct 08:28 → 29-oct 11:36 CDMX. Archivo: argos-2026-10-29.html."""
 import sys, re, json, html as H
 
 NUM, FECHA, HORA = "144", "2026-10-29", "11:36"
-CONSULTA = "2026-10-29, última búsqueda 13:39"
+CONSULTA = "2026-10-29, última búsqueda 14:15"
 DUR = "27 h 08 min"
 ESTR = {"★★★☆☆": "🟡 Medio", "★★☆☆☆": "🟠 Bajo", "★★★★☆": "🟢 Alto"}
 FLAG = {"rojo": ("alto", "ROJO"), "amarillo": ("medio", "AMARILLO"), "verde": ("bajo", "VERDE"), "rec": ("sindato", "RECUPERACIÓN")}
@@ -93,9 +93,9 @@ E = [
  dict(id="ARG-144-009", estado="MX-GRO", region="Sureste", color="rojo", impacto="mediano", fecha="2026-10-29", hora="poco después de las 07:00 (solo por resumen)", mu=0, he=0, cu=1, hk=7,
   ent="Guerrero", mun="Acapulco (col. Emiliano Zapata, calle 15, frente a la parroquia)", dia="29-OCT, POR RUTA; HORA SOLO POR RESUMEN",
   fecha_txt="2026-10-29, por ruta de publicación; hora solo por resumen",
-  title="GUERRERO · ACAPULCO — DEJAN EN DOS BOLSAS LOS RESTOS DE UNA PERSONA DESMEMBRADA EN LA COLONIA EMILIANO ZAPATA",
-  hecho="Acapulco · <code>COL. EMILIANO ZAPATA, CALLE 15, FRENTE A LA PARROQUIA DEL PERPETUO SOCORRO, SOLO POR RESUMEN</code> · publicado el jueves 29-OCT, por ruta (Sociedad Noticias 2026/10/29) · " + FR + " · poco después de las 07:00, " + RES + " · <b>restos de una persona desmembrada en dos bolsas</b>, por titular (Quadratín Guerrero; Meganoticias) (🔴 restos humanos exhibidos en vía pública) · arrojados desde un auto por hombres armados, " + RES + " · víctima no identificada · <b>ningún detenido publicado</b>",
-  panel="<b>Restos de una persona desmembrada</b> arrojados en bolsas", inst=SB, nac=NIN, conf="★★★☆☆",
+  title="GUERRERO · ACAPULCO — DEJAN EN BOLSAS LOS RESTOS DE UNA PERSONA DESCUARTIZADA",
+  hecho="Acapulco · <code>COL. EMILIANO ZAPATA, CALLE 15, FRENTE A LA PARROQUIA DEL PERPETUO SOCORRO, SOLO POR RESUMEN</code> · publicado el jueves 29-OCT, por ruta (Sociedad Noticias 2026/10/29) · " + FR + " · poco después de las 07:00, " + RES + " · <b>restos de una persona descuartizada en bolsas</b>, por titular (Quadratín Guerrero; Meganoticias; Sociedad Noticias); dos bolsas y la colonia, " + RES + " (🔴 restos humanos exhibidos en vía pública) · arrojados desde un auto por hombres armados, " + RES + " · víctima no identificada · <b>ningún detenido publicado</b>",
+  panel="<b>Restos de una persona descuartizada</b> dejados en bolsas", inst=SB, nac=NIN, conf="★★★☆☆",
   campo="hora solo por resumen; ninguna fuente institucional", I=0, N=0, R=4, A=0,
   fechadas=["Sociedad Noticias (2026/10/29)"], estatus="Parcialmente corroborado", arm=None,
   desl="Calle 15 y la parroquia del Perpetuo Socorro no figuran en las cinco ediciones previas ni en el índice. «Emiliano Zapata» devuelve hallazgos de 2024 y 2025 en Acapulco y uno de Morelos: otros hechos. Cuerpo hallado sin causa de muerte informada por autoridad: en la columna de cuerpos."),
@@ -135,9 +135,10 @@ E = [
   desl="Ranchos Unidos no figura en las cinco ediciones previas ni en el índice. Valle de Santiago en el índice: ARG-125-013, ARG-125-020 y ARG-128-REC-005: otros hechos. Col. Morelos de Valle de Santiago (hombre muerto, «tarde del miércoles» solo por resumen, sin ruta fechada): visto."),
  dict(id="ARG-144-014", estado="MX-ROO", region="Sureste", color="amarillo", impacto="pequeno", fecha="2026-10-29", hora="no fijada", mu=1, he=0, cu=0, hk=0.3,
   ent="Quintana Roo", mun="Othón P. Blanco (Chetumal, Nachicocom)", dia="29-OCT, POR RUTA; HORA NO FIJADA",
-  title="QUINTANA ROO · CHETUMAL — UN COMANDO ARMADO IRRUMPE EN UNA VIVIENDA DE NACHICOCOM Y ASESINA A UN EXPOLICÍA",
-  hecho="Chetumal · <code>NACHICOCOM, VIVIENDA, POR <i>SLUG</i> (POR ESTO)</code> · publicado el jueves 29-OCT, por ruta (Por Esto 2026/10/29) · " + FR + "; «noche del jueves», " + RES + " (Zócalo; Sol Quintana Roo), incoherente con una publicación del 29; «miércoles», " + RES + ": <code>DÍA CONTRADICHO</code> · <b>1 muerto</b>: <b>expolicía</b> estatal, por titular (Por Esto; Zócalo; Sol Quintana Roo) (🟡 homicidio doloso único: la víctima no era servidor público en activo) · comando armado, por titular · <b>ningún detenido publicado</b>",
-  panel="Expolicía asesinado en su vivienda: <b>1 muerto</b>", inst=SB, nac=NIN, conf="★★★☆☆",
+  title="QUINTANA ROO · CHETUMAL — UN COMANDO ARMADO ASESINA A UN EXPOLICÍA EN NACHICOCOM",
+  hecho="Chetumal · <code>NACHICOCOM, POR <i>SLUG</i> (POR ESTO); EN UNA VIVIENDA, SOLO POR RESUMEN</code> · publicado el jueves 29-OCT, por ruta (Por Esto 2026/10/29) · " + FR + "; «noche del jueves», " + RES + " (Zócalo; Sol Quintana Roo), incoherente con una publicación del 29; «miércoles», " + RES + ": <code>DÍA CONTRADICHO</code> · <b>1 muerto</b>: <b>expolicía</b> estatal, por titular (Por Esto; Zócalo; Sol Quintana Roo) (🟡 homicidio doloso único: la víctima no era servidor público en activo) · comando armado, por <i>slug</i> (Por Esto) · <b>ningún detenido publicado</b>",
+  fecha_txt="28 o 29-oct, CONTRADICHO (publicado el 29)",
+  panel="Expolicía asesinado por un comando: <b>1 muerto</b>", inst=SB, nac=NIN, conf="★★★☆☆",
   campo="día contradicho; hora no fijada; ninguna fuente institucional", I=0, N=0, R=4, A=0,
   fechadas=["Por Esto (2026/10/29)"], estatus="Parcialmente corroborado", arm=None,
   desl="Nachicocom no figura en las cinco ediciones previas ni en el índice. Si la autoridad acredita que la víctima era servidor público en activo, el hecho sube a 🔴."),
@@ -145,16 +146,16 @@ E = [
  dict(id="ARG-144-015", estado="MX-TAM", region="Noreste", color="verde", impacto="mediano", fecha="2026-10-29", hora="no fijada", mu=0, he=0, cu=0, hk=0.7,
   ent="Tamaulipas", mun="Matamoros", dia="29-OCT, POR RUTA; HORA NO FIJADA",
   title="TAMAULIPAS · MATAMOROS — FUERZAS FEDERALES DETIENEN A UN OBJETIVO PRIORITARIO DE LA DELINCUENCIA ORGANIZADA",
-  hecho="Matamoros · jueves 29-OCT, por ruta (Heraldo de México 2026/10/29) · " + FR + " · <b>detención de un «objetivo prioritario»</b>, por titular (Heraldo de México: única fuente con esa expresión); «presunto líder criminal», atribuido a la <b>Vocería de Seguridad de Tamaulipas</b>, " + RES + " (Diario del Yaqui) (🟢 detención) · por <b>fuerzas federales</b>, " + RES + " · identidad y delitos: no publicados · <b>1 detenido</b>, deducido del singular del titular; «no se confirmaban personas detenidas», " + RES + " (El Mañana): <code>CONTRADICHO</code> · armamento asegurado: no publicado · los bloqueos posteriores son hecho aparte: ARG-144-008",
+  hecho="Matamoros · jueves 29-OCT, por ruta (Heraldo de México 2026/10/29) · " + FR + " · <b>detención de un «objetivo prioritario»</b>, por titular (Heraldo de México; El Mañana 2026/10/29; Hora Cero); «presunto líder criminal», atribuido a la <b>Vocería de Seguridad de Tamaulipas</b>, " + RES + " (Diario del Yaqui) (🟢 detención) · por <b>fuerzas federales</b>, " + RES + " · identidad y delitos: no publicados · <b>1 detenido</b>, deducido del singular del titular; «no se confirmaban personas detenidas», " + RES + " (El Mañana): <code>CONTRADICHO</code> · armamento asegurado: no publicado · los bloqueos posteriores son hecho aparte: ARG-144-008",
   panel="<b>Detención de un objetivo prioritario</b>: 1 detenido, con reserva", inst="Vocería de Seguridad de Tamaulipas" + PR, nac="Heraldo de México", conf="★★☆☆☆",
-  campo="detención por titular de una sola fuente; número de detenidos deducido y contradicho", I=1, N=1, R=1, A=0,
-  fechadas=["Heraldo de México (2026/10/29)"], estatus="Parcialmente corroborado", arm=None,
+  campo="número de detenidos deducido del singular y contradicho", I=1, N=1, R=3, A=0,
+  fechadas=["Heraldo de México (2026/10/29)", "El Mañana (2026/10/29)"], estatus="Parcialmente corroborado", arm=None,
   desl="Detención en Reynosa de un «objetivo prioritario» (Yahoo, abril): otro hecho. Detención sin armamento con cifra: fuera del conteo de armamento."),
  dict(id="ARG-144-016", estado="MX-ROO", region="Sureste", color="verde", impacto="pequeno", fecha="2026-10-28", hora="tarde (solo por resumen)", mu=0, he=0, cu=0, hk=15,
   ent="Quintana Roo", mun="Benito Juárez (Cancún, fracc. Cielo Nuevo)", dia="28-OCT, POR RUTA",
-  title="QUINTANA ROO · CANCÚN — DETIENEN A TRES PERSONAS TRAS UNA PERSECUCIÓN, POR EL ATAQUE DE CIELO NUEVO",
+  title="QUINTANA ROO · CANCÚN — DETIENEN A TRES PERSONAS POR EL ATAQUE DE CIELO NUEVO",
   hecho="Cancún · miércoles 28-OCT, por ruta (Noticaribe 2026/10/28, «hay tres detenidos») · tarde, " + RES + " · <b>3 detenidos</b>, por <i>slug</i> (Noticaribe) y titular (Sol Quintana Roo) (🟢 detención) · tras una persecución, " + RES + " · <b>1 arma de fuego</b>, tipo no publicado, " + RES + ": sin fila de armamento · policía de Cancún; puestos a disposición de la FGE, " + RES + " · el ataque es hecho aparte: ARG-144-011",
-  panel="<b>3 detenidos</b> tras una persecución", inst=SB, nac=NIN, conf="★★★☆☆",
+  panel="<b>3 detenidos</b> por el ataque de Cielo Nuevo", inst=SB, nac=NIN, conf="★★★☆☆",
   campo="arma y corporación solo por resumen; ninguna fuente institucional", I=0, N=0, R=4, A=0,
   fechadas=["Noticaribe (2026/10/28)", "Por Esto (2026/10/28)"], estatus="Parcialmente corroborado", arm=None,
   desl="Delito y detención en la misma ventana: dos fichas (ARG-144-011 y esta). El arma existe solo en el resumen del buscador: sin aseguramiento citable, fuera del conteo de armamento."),
@@ -170,7 +171,7 @@ E = [
  dict(id="ARG-144-018", estado="MX-CMX", region="Centro", color="verde", impacto="pequeno", fecha="2026-10-28", hora="no fijada", mu=0, he=0, cu=0, hk=0.5,
   ent="Ciudad de México", mun="Gustavo A. Madero (col. Lindavista)", dia="PUB. 28-OCT; DÍA NO FIJADO",
   fecha_txt="publicado el 2026-10-28 — DÍA DEL CATEO NO FIJADO",
-  title="CIUDAD DE MÉXICO · GUSTAVO A. MADERO — CATEO EN LINDAVISTA CONTRA LA FALSIFICACIÓN DE PLACAS: SEIS DETENIDOS; ARMAS SIN CIFRA Y DROGA",
+  title="CIUDAD DE MÉXICO · GUSTAVO A. MADERO — CATEO EN LINDAVISTA CONTRA LA FALSIFICACIÓN DE PLACAS: SEIS DETENIDOS; ARMAS SIN CIFRA",
   hecho="Gustavo A. Madero · <code>COL. LINDAVISTA, POR TITULAR</code> · publicado el miércoles 28-OCT, por ruta (La Silla Rota; Publimetro 2026/10/28) · " + AP + "; día del cateo no fijado: " + RET + " · <b>6 detenidos</b>, por titular (La Silla Rota; Publimetro) (🟢 cateo y detención) · placas falsas y con reporte de robo, por titular; cifras contradichas, " + RES + " · <b>armas</b>, por titular (NX Noticias); 1 corta, 1 larga y cartuchos, " + RES + ": <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code> · ocho edades listadas en un medio (Crónica), " + RES + ", frente a 6 detenidos · droga, " + RES + " · SSC con la Fiscalía capitalina, SEMAR y GN; «la SSC informó», " + RES + " · altar con presuntos restos óseos: video de un periodista, no confirmado por la autoridad: <code>NO SE INTEGRA</code>",
   panel="<b>Cateo</b>: 6 detenidos; armas sin cifra y placas apócrifas", inst="SSC" + PR, nac="La Silla Rota · Publimetro · TV Azteca", conf="★★★☆☆",
   campo="comunicado de la SSC solo por resumen; día no fijado; número de detenidos con reserva", I=1, N=3, R=4, A=0,
@@ -179,7 +180,7 @@ E = [
  dict(id="ARG-144-019", estado="MX-MEX", region="Centro", color="verde", impacto="pequeno", fecha="2026-10-28", hora="no fijada", mu=0, he=0, cu=0, hk=0.8,
   ent="Estado de México", mun="Ecatepec (col. Rústica Xalostoc)", dia="PUB. 28-OCT; DÍA NO FIJADO",
   fecha_txt="publicado el 2026-10-28 — DÍA DE LA DETENCIÓN NO FIJADO",
-  title="ESTADO DE MÉXICO · ECATEPEC — DETIENEN A LA SOBRINA Y A UN HOMBRE POR LA DESAPARICIÓN DE UNA MUJER DE 52 AÑOS",
+  title="ESTADO DE MÉXICO · ECATEPEC — DETIENEN A LA SOBRINA Y A UN HOMBRE POR LA DESAPARICIÓN DE UNA MUJER",
   hecho="Ecatepec · publicado el miércoles 28-OCT, por ruta (El Monitor del Edomex 2026/10/28) · " + AP + "; día de la detención no fijado: " + RET + " · <b>2 detenidos</b>: sobrina de la víctima y un hombre, por titular (Tribuna; Sociedad Noticias; El Monitor) (🟢 detención) · por <b>desaparición cometida por particulares</b>, con agravantes, " + RES + " · FGJEM; órdenes de aprehensión giradas por un juez, " + RES + " · el hallazgo de los restos es hecho aparte: ARG-144-007",
   panel="<b>2 detenidos</b> por la desaparición de una mujer", inst="FGJEM" + PR, nac="Excélsior · TV Azteca", conf="★★★☆☆",
   campo="día de la detención no fijado; FGJEM solo por resumen", I=1, N=2, R=4, A=0,
@@ -188,8 +189,8 @@ E = [
  dict(id="ARG-144-020", estado="MX-GUA", region="Occidente", color="verde", impacto="pequeno", fecha="2026-10-28", hora="no fijada", mu=0, he=0, cu=0, hk=0.4,
   ent="Guanajuato", mun="Jaral del Progreso (col. Las Flores)", dia="PUB. 28-OCT; DÍA NO FIJADO",
   fecha_txt="publicado el 2026-10-28 — DÍA DEL OPERATIVO NO FIJADO",
-  title="GUANAJUATO · JARAL DEL PROGRESO — DETIENEN A DOS HOMBRES CON TRES ARMAS LARGAS, EQUIPO TÁCTICO Y UNA CAMIONETA ROBADA",
-  hecho="Jaral del Progreso · <code>COL. LAS FLORES, SOLO POR RESUMEN</code> · publicado el miércoles 28-OCT, por ruta (boletín del Gobierno de Guanajuato 2026/10/28) · " + AP + "; día del operativo no fijado: " + RET + " · <b>2 detenidos</b> y <b>3 armas largas</b>, por titular del boletín y de Quadratín Bajío (🟢 detención y aseguramiento) · cartuchos y cargadores sin cifra, " + RES + " · 6 chalecos y 6 cascos, " + RES + " · camioneta con reporte de robo, por titular · Seguridad y Paz de Guanajuato con la Defensa, " + RES + " · <code>POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN</code>: La Silla Rota (2026/10/26) publicó un arsenal asegurado a dos hombres en la misma colonia, ya vinculados a proceso",
+  title="GUANAJUATO · JARAL DEL PROGRESO — DETIENEN A DOS HOMBRES CON TRES ARMAS LARGAS Y UNA CAMIONETA CON REPORTE DE ROBO",
+  hecho="Jaral del Progreso · <code>COL. LAS FLORES, SOLO POR RESUMEN</code> · publicado el miércoles 28-OCT, por ruta (boletín del Gobierno de Guanajuato 2026/10/28) · " + AP + "; día del operativo no fijado: " + RET + " · <b>2 detenidos</b> y <b>3 armas largas</b>, por titular del boletín y de Quadratín Bajío (🟢 detención y aseguramiento) · cartuchos y cargadores sin cifra, " + RES + " · equipo táctico (6 chalecos y 6 cascos), " + RES + " · camioneta con reporte de robo, por titular · Seguridad y Paz de Guanajuato con la Defensa, " + RES + " · <code>POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN</code>: La Silla Rota (2026/10/26) publicó un arsenal asegurado a dos hombres en la misma colonia, ya vinculados a proceso",
   panel="<b>2 detenidos</b> con 3 armas largas <span class=\"muted-note\">(posible duplicidad)</span>", inst="Gobierno de Guanajuato (boletín)" + PT, nac="N+", conf="★★★☆☆",
   campo="posible duplicidad con un aseguramiento del 26-oct; día del operativo no fijado", I=1, N=1, R=1, A=0,
   fechadas=["Gobierno de Guanajuato (2026/10/28)"], estatus="Parcialmente corroborado", arm="ARG-144-ARM-003",
@@ -429,7 +430,7 @@ panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
     <tbody><tr><td><b>{len(E)}</b></td><td><b>{cnt["rojo"]}</b></td><td><b>{cnt["amarillo"]}</b></td><td><b>{cnt["verde"]}</b></td><td><b>{len(R)}</b></td><td><b>{MU}</b></td><td><b>{HE}</b></td><td><b>{CU}</b></td><td><b>{tv(0)}</b></td><td><b>{tv(1)}</b></td><td><b>{tv(2)}</b></td><td><b>{tv(4, fmt)}</b></td><td><b>{tv(5)}</b></td><td><b>{tv(6)}</b></td><td><b>{tv(7)}</b></td><td><b>{tv(8)}</b></td><td><b>{tv(9)}</b></td><td><b>{len(ENT)}</b></td></tr></tbody>
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
-    <b>Armamento</b>: ninguna arma integrada al total; <b>{DET} detenidos</b> en aseguramiento; desglose y reservas, en la página de armamento · <b>cuerpos hallados</b>: {CU} con causa no informada por autoridad; Ciudad del Maíz (ARG-144-006) y Ecatepec (ARG-144-007), <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code> · <b>marcas</b>: {NAP} de {len(E)} <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code> y {NFR} <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> · <b>totales sujetos a las cláusulas de retiro de {NRET} fichas</b> (hora o día no fijados frente a las 08:28 del 28): ARG-144-003, -004, -005, -006, -007, -010, -012, -013, -017, -018, -019 y -020 · <b>recuperaciones, fuera de totales</b>: {MU_REC} muertos y {CU_REC} cuerpos · <b>si se valida la duplicidad de ARG-144-020</b>: 19 hechos y 5 verdes. <b>Cálculo propio</b>.
+    <b>Armamento</b>: ninguna arma integrada al total; <b>{DET} detenidos</b> en aseguramiento, por titulares de medios (ninguna cifra de autoridad; sujetos a las cláusulas de ARG-144-017 y -018); desglose y reservas, en la página de armamento · <b>cuerpos hallados</b>: {CU} con causa no informada por autoridad; Ciudad del Maíz (ARG-144-006) y Ecatepec (ARG-144-007), <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code> · <b>marcas</b>: {NAP} de {len(E)} <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code> y {NFR} <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> · <b>totales sujetos a las cláusulas de retiro de {NRET} fichas</b> (hora o día no fijados frente a las 08:28 del 28): ARG-144-003, -004, -005, -006, -007, -010, -012, -013, -017, -018, -019 y -020 · <b>recuperaciones, fuera de totales</b>: {MU_REC} muertos y {CU_REC} cuerpos · <b>si se valida la duplicidad de ARG-144-020</b>: 19 hechos y 5 verdes. <b>Cálculo propio</b>.
     <br><b>Vistos de la ventana de ARGOS 143, fuera de totales</b> (🟢 o 🟡, no se recuperan): Irapuato, col. Benito Juárez (~07:15 del 28, solo por resumen) · rescate de 12 secuestrados en Matamoros y Nuevo Laredo (27-oct) · Culiacán: Díaz Ordaz, Infonavit Barrancos · Mazatlán, Ramón F. Iturbe · Cuautla, Gabriel Tepepa · Ecatepec, Las Vegas Xalostoc · Texmelucan · Puebla, Los Encinos (madrugada del 28, solo por resumen); los aseguramientos vistos, en la página de armamento.
     <br><b>Seguimiento procesal, fuera del semáforo</b>: <b>ARG-143-010 (Rayón)</b>: órdenes notificadas en reclusión, por titular («Ya en prisión, aprehenden a hermanos», Pulso; San Luis Hoy) · <code>NO ES SENTENCIA</code>.
   </p>
@@ -455,13 +456,13 @@ tiles = "\n".join([
  tile(0, "Armas cortas", tv(0), "Lindavista: cifra solo por resumen"),
  tile(1, "Armas largas", tv(1), "Lindavista, solo por resumen; Jaral del Progreso (3), en reserva por posible duplicidad"),
  tile(2, "Sin categoría", tv(2), "General Bravo y China: cifra solo por resumen"),
- tile(3, "Cartuchos", tv(4, fmt), "publicados sin cifra en dos eventos"),
- tile(4, "Cargadores", tv(5), NI),
+ tile(3, "Cartuchos", tv(4, fmt), "mencionados sin cifra en tres eventos (uno en reserva)"),
+ tile(4, "Cargadores", tv(5), "mencionados sin cifra en Jaral del Progreso (en reserva)"),
  tile(5, "Granadas", tv(6), NI),
  tile(6, "AEI", tv(7), NI),
  tile(7, "Explosivos", tv(8), NI),
  tile(8, "Armamento especial", tv(3), NI),
- tile(9, "Detenidos", tv(9), "<b>en el mismo evento de aseguramiento</b>: dos eventos cualitativos"),
+ tile(9, "Detenidos", tv(9), "<b>en el mismo evento de aseguramiento</b>: por titulares de medios, ninguna cifra de autoridad; sujeto a las cláusulas de ARG-144-017 y -018"),
 ])
 assert len(icos) == 10, len(icos)
 
@@ -517,7 +518,7 @@ sent = f'''  <div class="conteo">
   <div class="table-wrap"><table class="exec wide">
     <thead><tr><th>Entidad · Municipio</th><th>Caso</th><th>Pena publicada</th><th>Autoridad</th><th>Por qué NO se integra</th><th>Confianza</th></tr></thead>
     <tbody>
-      <tr><td><b>Nuevo León</b><br>Doctor Arroyo</td><td>Homicidio simple (San Ignacio de Torres, marzo de 2025, {RES}); <b>1 sentenciado</b>, Edgar «N», {RES} · <b>nuevo en ARGOS 144</b></td><td><b>15 años</b>, por titular (MVS 2026/10/28); reparación sin monto: <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code></td><td>FGJE Nuevo León <span class="muted-note">(solo por resumen)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL</code> · boletín no localizado en el dominio; firmeza no informada</td><td>Bajo</td></tr>
+      <tr><td><b>Nuevo León</b><br>Doctor Arroyo</td><td>Homicidio simple (San Ignacio de Torres, marzo de 2025, {RES}); <b>1 sentenciado</b>, Edgar «N», {RES} · <b>nuevo en ARGOS 144</b></td><td><b>15 años</b>, por titular (MVS 2026/10/28); reparación sin monto: <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code></td><td>FGJE Nuevo León <span class="muted-note">(solo por resumen)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL</code> · boletín no localizado en el dominio; firmeza no informada; fuente única (MVS)</td><td>No confirmado</td></tr>
       <tr><td><b>Nuevo León</b><br>sin municipio publicado</td><td>Abuso contra una menor; segunda instancia <b>revoca una absolución</b>, por titular · <b>nuevo en ARGOS 144</b></td><td><b>40 años</b>, por titular (MVS 2026/10/28)</td><td>Tribunal de alzada <span class="muted-note">(por titular)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · solo titular; sin campos individualizadores</td><td>No confirmado</td></tr>
       <tr><td><b>Puebla</b><br>Huejotzingo</td><td>Feminicidio de su pareja embarazada («esposa» en otros titulares: <code>CONTRADICHO</code>); <b>1 sentenciado</b>, expolicía, por titular · <b>nuevo en ARGOS 144</b></td><td><b>55 años</b>, por titular (Heraldo de Puebla; Retodiario 2026/10/29)</td><td>FGE Puebla <span class="muted-note">(por medios)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · sin boletín en <code>fiscalia.puebla.gob.mx</code>; día del fallo no fijado</td><td>Bajo</td></tr>
       <tr><td><b>Estado de México</b><br>Ecatepec</td><td>Homicidio y homicidio en grado de tentativa; <b>1 sentenciada</b>, por titular · <b>nuevo en ARGOS 144</b></td><td><b>68 años</b>, por titular (Línea por Línea 2026/10/28)</td><td>FGJEM <span class="muted-note">(por medios)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · fuente única; no es el caso de Fresnillo</td><td>No confirmado</td></tr>
@@ -529,7 +530,7 @@ sent = f'''  <div class="conteo">
     </tbody>
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
-    <b>Publicadas antes de la ventana, no integrables</b>: FGR Nayarit, Tepic (El Jicote), 15 años, por titular (Argonmexico 2026/10/26); meses adicionales: <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code> · FGE Querétaro (5, 6, 8 y 22-oct, por ruta) · FGE Jalisco, comunicado 1939 (19-oct) · FGE Colima, boletín 4978 (15-oct) · Tamaulipas FGJE-412 (26-oct) · Ensenada, 158 años 9 meses (individualización del 16-oct) · Nuevo León, 155 años (13-oct). <code>NO SE INTEGRAN</code>.
+    <b>Publicadas antes de la ventana, no integrables</b>: FGR Nayarit, Tepic (El Jicote), 15 años, por titular (Argonmexico 2026/10/26); meses adicionales: <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code> · FGE Querétaro (5, 6, 8 y 22-oct, por ruta) · FGE Jalisco, comunicado 1939 (19-oct) · FGE Colima, boletín 4978 (15-oct) · Tamaulipas FGJE-412 (26-oct) · Ensenada, 158 años, por titular (individualización del 16-oct); meses adicionales: <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code> · Nuevo León, 155 años (13-oct). <code>NO SE INTEGRAN</code>.
   </p>
   <div class="section-head" style="margin-top:10px;">INDICADOR DE COBERTURA</div>
   <div class="table-wrap"><table class="exec">
