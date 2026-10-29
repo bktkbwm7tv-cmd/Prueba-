@@ -1,0 +1,1407 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>ARGOS 144 — Reporte Nacional de Seguridad — 2026-10-29</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --bg-navy:#040814;
+    --panel:#0a1230;
+    --panel-2:#0d1638;
+    --grid-line: rgba(76,230,255,0.08);
+    --border: rgba(76,230,255,0.28);
+    --cyan:#4ce6ff;
+    --cyan-dim:#8fb8c8;
+    --white:#eef6fb;
+    --red:#ff3b3b;
+    --yellow:#ffd23f;
+    --green:#33d17a;
+    --mono: "Consolas","SFMono-Regular","Courier New",monospace;
+    --sans: "Segoe UI","Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:#000;}
+  body{
+    font-family:var(--sans);
+    color:var(--white);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:24px;
+    padding:24px 0 60px;
+  }
+
+  /* ---------- PAGE SHELL ---------- */
+  .page{
+    width:1000px;
+    max-width:96vw;
+    min-height:1360px;
+    background:
+      linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0/40px 40px,
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0/40px 40px,
+      radial-gradient(ellipse at 50% -10%, #0c1a3d 0%, var(--bg-navy) 55%);
+    background-color:var(--bg-navy);
+    border:1px solid var(--border);
+    position:relative;
+    padding:22px 30px 70px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    box-shadow:0 0 0 1px #000, 0 20px 60px rgba(0,0,0,.6);
+    overflow-x:auto;
+  }
+  table.exec{ min-width:600px; }
+  .table-wrap{overflow-x:auto;width:100%;}
+
+  /* ---------- ICONOGRAFÍA DE ARMAMENTO ----------
+     Trazo monocromo que hereda el color del texto. Cada icono identifica una
+     categoría de la taxonomía de CLAUDE.md y va SIEMPRE con etiqueta y cifra:
+     nunca identifica por color ni por forma en solitario. */
+  .ico{width:15px;height:15px;vertical-align:-3px;margin-right:5px;flex:none;
+    stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;
+    stroke-linejoin:round;opacity:.92;}
+  .ico-lg{width:22px;height:22px;margin:0 0 6px 0;vertical-align:0;}
+
+  /* Tarjetas de conteo del módulo de armamento (Bloque 1 de CLAUDE.md). */
+  .conteo{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));
+    gap:6px;margin:10px 0 4px;}
+  .conteo .tile{border:1px solid var(--border);background:var(--panel);
+    padding:9px 8px;display:flex;flex-direction:column;align-items:flex-start;}
+  .conteo .tile .lbl{font-family:var(--mono);font-size:8.5px;letter-spacing:1px;
+    text-transform:uppercase;color:var(--cyan);line-height:1.3;}
+  .conteo .tile .num{font-size:19px;font-weight:700;color:var(--white);
+    line-height:1.15;margin-top:3px;}
+  .conteo .tile .sub{font-size:8.5px;color:var(--muted);margin-top:2px;}
+  /* Categoría en cero: se muestra igual, atenuada. La ausencia es dato. */
+  .conteo .tile.cero{opacity:.45;}
+  .conteo .tile.cero .num{color:var(--muted);font-weight:600;}
+
+  @media print{
+    body{background:#000;padding:0;gap:0;}
+    .page{box-shadow:none;break-after:page; max-width:none; width:210mm; min-height:297mm;}
+  }
+  @media (max-width:480px){
+    .panel-title{flex-direction:column;align-items:flex-start;gap:2px;}
+  }
+
+  /* ---------- HEADER ---------- */
+  .masthead{
+    display:grid;
+    grid-template-columns:150px 1fr 150px;
+    align-items:center;
+    gap:14px;
+    border-bottom:1px solid var(--border);
+    padding-bottom:12px;
+  }
+  .masthead .brand{
+    font-family:var(--mono);
+    font-weight:700;
+    letter-spacing:2px;
+  }
+  .brand .argos-num{
+    font-size:34px;
+    line-height:1;
+    display:flex;
+    align-items:baseline;
+    gap:.22em;
+  }
+  .brand .argos-num .w{
+    font-size:1.14em;
+    font-weight:900;
+    letter-spacing:.14em;
+    color:var(--cyan);
+    -webkit-text-stroke:.7px var(--cyan);
+    text-shadow:0 0 12px rgba(76,230,255,.40);
+  }
+  .brand .argos-num .n{
+    font-size:.86em;
+    font-weight:800;
+    letter-spacing:.04em;
+    color:var(--white);
+    border:1px solid var(--cyan-dim);
+    padding:.06em .3em;
+    line-height:1;
+    background:rgba(76,230,255,.07);
+  }
+  .brand .sub{
+    font-size:10px;
+    color:var(--cyan-dim);
+    margin-top:4px;
+  }
+  .masthead .titles{
+    text-align:center;
+  }
+  .titles h1{
+    margin:0;
+    font-size:20px;
+    letter-spacing:4px;
+    color:var(--white);
+  }
+  .titles h2{
+    margin:2px 0 0;
+    font-size:12px;
+    letter-spacing:2px;
+    color:var(--cyan);
+    font-weight:600;
+  }
+  .titles .motto{
+    margin-top:6px;
+    font-family:var(--mono);
+    font-size:10px;
+    color:var(--cyan-dim);
+    letter-spacing:2px;
+  }
+  .masthead .corte{
+    text-align:right;
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--cyan-dim);
+    line-height:1.6;
+  }
+  .masthead .corte b{color:var(--white);}
+
+  /* ---------- RADAR + MAP (PORTADA) ---------- */
+  .cover-visuals{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    min-width:0;
+  }
+  .panel{
+    min-width:0;
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:2px;
+    padding:14px 16px;
+  }
+  .panel-title{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:2px;
+    color:var(--cyan);
+    border-bottom:1px solid var(--border);
+    padding-bottom:6px;
+    margin-bottom:10px;
+    display:flex;
+    justify-content:space-between;
+  }
+  .radar-box, .map-box{
+    height:220px;
+    display:flex;align-items:center;justify-content:center;
+    position:relative;
+    min-width:0;
+    overflow:hidden;
+  }
+  .radar-box svg, .map-box svg{width:100%;height:100%;display:block;}
+  .estado-path{stroke:var(--bg-navy);stroke-width:0.6;cursor:pointer;transition:filter .15s;}
+  .estado-path:hover{filter:brightness(1.4);}
+  .radar-ring{fill:none;stroke:var(--border);stroke-width:1;}
+  .radar-cross{stroke:var(--border);stroke-width:1;}
+  .radar-sweep-path{fill:rgba(76,230,255,.35);}
+  .eco{stroke:#04101f;stroke-width:0.7;cursor:pointer;}
+  .eco.pulse{animation:ecoPulse 1.6s ease-in-out infinite;}
+  @keyframes ecoPulse{ 0%,100%{opacity:1;} 50%{opacity:.4;} }
+  .map-caption{
+    position:absolute;bottom:2px;left:0;right:0;text-align:center;
+    font-family:var(--mono);font-size:9px;color:var(--cyan-dim);
+  }
+  .radar-stats{
+    display:flex;justify-content:space-between;gap:6px;margin-top:8px;
+    font-family:var(--mono);font-size:9px;color:var(--cyan-dim);
+    border-top:1px dashed var(--border);padding-top:6px;text-align:center;
+  }
+  .radar-stats b{color:var(--white);display:block;font-size:14px;margin-top:2px;}
+  .argos-tooltip{
+    position:fixed;z-index:80;max-width:260px;
+    background:var(--panel-2);border:1px solid var(--border);
+    padding:8px 10px;font-family:var(--mono);font-size:10px;color:var(--white);
+    line-height:1.5;pointer-events:none;opacity:0;transition:opacity .1s;
+    box-shadow:0 6px 18px rgba(0,0,0,.5);
+  }
+  .argos-tooltip.show{opacity:1;}
+  .argos-tooltip b{color:var(--cyan);}
+  .nota{scroll-margin-top:16px;}
+
+  /* ---------- SEMAFORO ---------- */
+  .semaforo{
+    display:flex;gap:10px;
+  }
+  .sem-item{
+    flex:1;
+    border:1px solid var(--border);
+    background:var(--panel);
+    padding:10px 12px;
+    font-family:var(--mono);
+  }
+  .sem-item .dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:8px;}
+  .sem-item.alto .dot{background:var(--red);box-shadow:0 0 8px var(--red);}
+  .sem-item.medio .dot{background:var(--yellow);box-shadow:0 0 8px var(--yellow);}
+  .sem-item.bajo .dot{background:var(--green);box-shadow:0 0 8px var(--green);}
+  .sem-item .lbl{font-size:11px;letter-spacing:1px;color:var(--cyan-dim);}
+  .sem-item .val{font-size:20px;color:var(--white);margin-top:4px;}
+
+  /* ---------- SECTION HEADS ---------- */
+  .section-head{
+    font-family:var(--mono);
+    font-size:13px;
+    letter-spacing:3px;
+    color:var(--cyan);
+    border-left:3px solid var(--cyan);
+    padding:4px 10px;
+    background:linear-gradient(90deg, rgba(76,230,255,.08), transparent);
+  }
+
+  /* ---------- EXEC LIST ---------- */
+  .list{
+    display:flex;flex-direction:column;gap:8px;
+  }
+  .list-item{
+    display:grid;
+    grid-template-columns:70px 1fr 110px;
+    gap:10px;
+    border:1px solid var(--border);
+    background:var(--panel);
+    padding:8px 12px;
+    font-size:12px;
+    align-items:center;
+  }
+  .tag{
+    font-family:var(--mono);
+    font-size:9px;
+    padding:2px 6px;
+    text-align:center;
+    border-radius:2px;
+    letter-spacing:1px;
+  }
+  .tag.alto{background:rgba(255,59,59,.15);color:var(--red);border:1px solid var(--red);}
+  .tag.medio{background:rgba(255,210,63,.15);color:var(--yellow);border:1px solid var(--yellow);}
+  .tag.bajo{background:rgba(51,209,122,.15);color:var(--green);border:1px solid var(--green);}
+  .tag.sindato{background:rgba(143,184,200,.12);color:var(--cyan-dim);border:1px solid var(--cyan-dim);}
+  .placeholder{color:var(--cyan-dim);font-style:italic;}
+
+  /* ---------- ALERTA ---------- */
+  .alerta{
+    border:1px solid var(--red);
+    background:rgba(255,59,59,.08);
+    padding:10px 14px;
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+  }
+  .alerta .flag{
+    font-family:var(--mono);color:var(--red);font-weight:700;font-size:12px;letter-spacing:2px;
+    white-space:nowrap;
+  }
+  .alerta p{margin:0;font-size:12px;color:var(--white);}
+  .alerta.contexto{border-color:var(--cyan);background:rgba(76,230,255,.06);}
+  .alerta.contexto .flag{color:var(--cyan);}
+
+  /* ---------- TABLE ---------- */
+  table.exec{
+    width:100%;
+    border-collapse:collapse;
+    font-size:11.5px;
+  }
+  table.exec th, table.exec td{
+    border:1px solid var(--border);
+    padding:6px 8px;
+    text-align:left;
+  }
+  table.exec th{
+    background:var(--panel-2);
+    color:var(--cyan);
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:1px;
+  }
+  table.exec td{background:var(--panel);}
+
+  /* ---------- NOTA CARD (4 apartados) ---------- */
+  .nota{
+    border:1px solid var(--border);
+    background:var(--panel);
+  }
+  .nota-header{
+    display:flex;justify-content:space-between;align-items:center;
+    background:var(--panel-2);
+    padding:8px 12px;
+    border-bottom:1px solid var(--border);
+  }
+  .nota-header h3{
+    margin:0;font-size:13px;color:var(--white);letter-spacing:.5px;
+  }
+  .nota-header .risk-flag{
+    font-family:var(--mono);font-size:9px;
+    border:1px solid; padding:2px 6px;letter-spacing:1px;
+  }
+  .nota-header .risk-flag.alto{color:var(--red);border-color:var(--red);}
+  .nota-header .risk-flag.medio{color:var(--yellow);border-color:var(--yellow);}
+  .nota-header .risk-flag.bajo{color:var(--green);border-color:var(--green);}
+  .nota-header .risk-flag.sindato{color:var(--cyan-dim);border-color:var(--cyan-dim);}
+  .nota-body{padding:10px 14px;display:flex;flex-direction:column;gap:8px;}
+  .apartado{font-size:12px;line-height:1.5;}
+  .apartado .k{
+    display:block;
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:1.5px;
+    color:var(--cyan);
+    margin-bottom:2px;
+  }
+  .nota-footer{
+    border-top:1px solid var(--border);
+    padding:8px 14px;
+    font-family:var(--mono);
+    font-size:10px;
+    color:var(--cyan-dim);
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    align-items:center;
+  }
+  .nota-footer b{color:var(--white);}
+  .stars{color:var(--yellow);letter-spacing:1px;}
+  .src-tag{
+    border:1px solid var(--border);
+    padding:1px 6px;
+    border-radius:2px;
+  }
+
+  /* ---------- PHOTO SLOT ---------- */
+  .photo-slot{
+    border:1px dashed var(--cyan-dim);
+    background:repeating-linear-gradient(45deg, rgba(76,230,255,.03) 0 10px, transparent 10px 20px);
+    min-height:110px;
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;
+    font-family:var(--mono);
+    font-size:10px;
+    color:var(--cyan-dim);
+    padding:8px;
+  }
+
+  /* ---------- FOOTER BAR ---------- */
+  .footbar{
+    position:absolute;
+    left:0;right:0;bottom:0;
+    display:flex;
+    justify-content:space-between;
+    padding:8px 30px;
+    border-top:1px solid var(--border);
+    font-family:var(--mono);
+    font-size:9.5px;
+    color:var(--cyan-dim);
+    background:rgba(4,8,20,.9);
+  }
+  .footbar .uso{color:var(--yellow);letter-spacing:1px;}
+
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;}
+  .muted-note{
+    font-family:var(--mono);font-size:9.5px;color:var(--cyan-dim);
+    border:1px dashed var(--border); padding:6px 10px;
+  }
+  .src-list{font-size:11px;line-height:1.7;}
+  .src-list .grp{color:var(--cyan-dim);font-family:var(--mono);font-size:9px;letter-spacing:1px;display:block;margin-top:6px;}
+
+  /* ---------- STAT TILES (Bloques 1 y 4) ---------- */
+  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+  .stat-tile{
+    border:1px solid var(--border);background:var(--panel);
+    padding:8px 10px;text-align:center;
+  }
+  .stat-tile .lbl{font-family:var(--mono);font-size:8.5px;color:var(--cyan-dim);letter-spacing:.5px;}
+  .stat-tile .val{font-size:19px;color:var(--white);margin-top:3px;font-weight:600;}
+  .stat-tile .icon{font-size:15px;}
+
+  /* ---------- COVERAGE INDICATOR ---------- */
+  .coverage{
+    font-family:var(--mono);font-size:9.5px;color:var(--cyan-dim);
+    border:1px dashed var(--border);padding:8px 10px;
+    display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px 14px;
+  }
+  .coverage b{color:var(--white);}
+
+  table.exec.wide{min-width:920px;}
+</style>
+</head>
+<body>
+<section class="page">
+  <header class="masthead">
+    <div class="brand">
+      <div class="argos-num"><span class="w">ARGOS</span><span class="n">144</span></div>
+      <div class="sub">SISTEMA DE INTELIGENCIA CRIMINAL TRAZABLE</div>
+    </div>
+    <div class="titles">
+      <h1>REPORTE NACIONAL DE SEGURIDAD</h1>
+      <h2>REPORTE DIARIO DE INTELIGENCIA CRIMINAL</h2>
+      <div class="motto">INVESTIGACIONES, BÚSQUEDA Y VERDAD</div>
+    </div>
+    <div class="corte">
+      CORTE INFORMATIVO<br>
+      <b>Fecha:</b> 2026-10-29<br>
+      <b>Hora:</b> 11:36 (CDMX)
+    </div>
+  </header>
+
+  <div class="cover-visuals">
+    <div class="panel">
+      <div class="panel-title"><span>RADAR CENTRAL</span><span>EN VIVO</span></div>
+      <div class="radar-box" id="argos-radar"></div>
+      <div class="radar-stats" id="argos-radar-stats"><div>🔴 Alto impacto<br><b>9</b></div><div>🟡 Violencia operativa<br><b>6</b></div><div>🟢 Acciones institucionales<br><b>6</b></div></div>
+    </div>
+    <div class="panel">
+      <div class="panel-title"><span>MAPA NACIONAL — FOCOS DEL CORTE</span><span>GIS POR ENTIDAD</span></div>
+      <div class="map-box" id="argos-map"></div>
+      <div class="map-caption">Pase el cursor sobre un estado.</div>
+    </div>
+  </div>
+
+  <div class="section-head">SEMÁFORO ARGOS</div>
+  <div class="semaforo">
+    <div class="sem-item alto"><span class="dot"></span><span class="lbl">🔴 ROJO — ALTO IMPACTO</span><div class="val">9 eventos</div></div>
+    <div class="sem-item medio"><span class="dot"></span><span class="lbl">🟡 AMARILLO — VIOLENCIA OPERATIVA</span><div class="val">6 eventos</div></div>
+    <div class="sem-item bajo"><span class="dot"></span><span class="lbl">🟢 VERDE — ACCIONES INSTITUCIONALES</span><div class="val">6 eventos</div></div>
+  </div>
+
+  <div class="alerta contexto">
+    <div class="flag">LO QUE DEBE HACER EL MANDO</div>
+    <p>
+      <b>1. SOLICITE A LA FISCALÍA DE CHIAPAS Y AL MECANISMO FEDERAL DE PROTECCIÓN EL ESTADO DE LAS MEDIDAS VIGENTES, LAS AMENAZAS DENUNCIADAS Y LA LÍNEA DE INVESTIGACIÓN</b> (ARG-144-004).
+      <br><b>2. SOLICITE A LA VOCERÍA DE SEGURIDAD DE TAMAULIPAS EL NÚMERO DE PUNTOS Y DE VEHÍCULOS USADOS EN LOS BLOQUEOS, LOS DAÑOS Y LA SITUACIÓN JURÍDICA DEL DETENIDO; VIGILE MATAMOROS Y RÍO BRAVO</b> (ARG-144-008 y -016).
+      <br><b>3. SOLICITE A LA COMISIÓN ESTATAL DE BÚSQUEDA DE SAN LUIS POTOSÍ EL NÚMERO DE VÍCTIMAS, LA EXTENSIÓN DEL SITIO Y EL COTEJO GENÉTICO CON LAS FICHAS DE BÚSQUEDA DE LA ZONA</b> (ARG-144-006).
+      <br><b>4. SOLICITE A LA FISCALÍA DEL ESTADO DE MÉXICO LA IDENTIFICACIÓN GENÉTICA DE LOS RESTOS Y AUDITE SI LA DENUNCIA DEL 15-OCT ACTIVÓ LA BÚSQUEDA INMEDIATA</b> (ARG-144-007 y -020).
+      <br><b>5. SOLICITE A LA FISCALÍA DE SINALOA LAS CIRCUNSTANCIAS DE LA LOCALIZACIÓN DE LOS CUATRO JÓVENES Y EL REGISTRO DE LOS VEHÍCULOS DEL CONVOY</b> (ARG-144-REC-003).
+    </p>
+  </div>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-10-29 · Hora: 11:36 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 144</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD</h2></div>
+
+  <p class="muted-note" style="margin:0 0 6px 0;">
+    Ventana <b>28-oct 08:28 → 29-oct 11:36 CDMX</b> (<b>27 h 08 min</b>) · <b>21 hechos propios</b> en <b>13 entidades</b> ·
+    <b>densidad 0,77 hechos/hora</b>; duración y densidad, <b>cálculo propio</b> · dentro de cada color, por hora estimada solo por resumen; hora no fijada, al final · <b>4 recuperaciones de alto impacto de ventanas anteriores</b>, atenuadas, <b>fuera de todos los totales</b>
+  </p>
+  <div class="table-wrap"><table class="exec">
+    <thead><tr><th>Entidad · Municipio</th><th>Hecho</th><th>Nivel de riesgo</th><th>Fuente institucional</th><th>Fuente nacional</th><th>Confianza</th><th>ARG-ID</th></tr></thead>
+    <tbody>
+      <tr><td><b>Guerrero</b><br>Acapulco (col. Emiliano Zapata, calle 15, frente a la parroquia)<br><span class="muted-note">29-OCT, SOLO POR RESUMEN</span></td><td><b>Restos de una persona desmembrada</b> arrojados en bolsas</td><td>🔴 Rojo</td><td><span class="muted-note">SIN BOLETÍN</span></td><td><span class="muted-note">ninguna</span></td><td>★★☆☆☆</td><td><a href="#ARG-144-009"><code>ARG-144-009</code></a></td></tr>
+      <tr><td><b>Tamaulipas</b><br>Matamoros y Río Bravo (varios puntos)<br><span class="muted-note">29-OCT, POR RUTA; HORA NO FIJADA</span></td><td><b>Bloqueos con vehículos de carga</b> en ocho puntos tras una detención</td><td>🔴 Rojo</td><td>Vocería de Seguridad de Tamaulipas <span class="muted-note">(solo por resumen)</span> · alcalde de Matamoros <span class="muted-note">(por titular)</span></td><td>Heraldo de México</td><td>★★★☆☆</td><td><a href="#ARG-144-008"><code>ARG-144-008</code></a></td></tr>
+      <tr><td><b>Michoacán</b><br>Indaparapeo (comunidad El Triunfo, calle Prolongación de Bravo)<br><span class="muted-note">28-OCT, POR RUTA DEL 29</span></td><td><b>Regidor y su esposa asesinados</b>: 2 muertos y 1 herido</td><td>🔴 Rojo</td><td>FGE Michoacán <span class="muted-note">(solo por resumen)</span></td><td>La Silla Rota · TV Azteca · Noroeste · Diario de México</td><td>★★★☆☆</td><td><a href="#ARG-144-002"><code>ARG-144-002</code></a></td></tr>
+      <tr><td><b>Sonora</b><br>Magdalena de Kino (col. Centro, instalaciones de la AMIC)<br><span class="muted-note">28-OCT, POR RUTA</span></td><td><b>Ataque armado contra instalaciones de la AMIC</b>: 1 agente muerto</td><td>🔴 Rojo</td><td>Fiscalía de Sonora <span class="muted-note">(solo por resumen)</span></td><td>Infobae · UnoTV · El Universal</td><td>★★★☆☆</td><td><a href="#ARG-144-001"><code>ARG-144-001</code></a></td></tr>
+      <tr><td><b>Guanajuato</b><br>Acámbaro (comunidad Santiaguillo)<br><span class="muted-note">28-OCT, POR RUTA</span></td><td><b>Ataque con escopeta: 3 muertos</b>, uno de 16 años</td><td>🔴 Rojo</td><td><span class="muted-note">SIN BOLETÍN</span></td><td>La Silla Rota · Meganoticias</td><td>★★★☆☆</td><td><a href="#ARG-144-003"><code>ARG-144-003</code></a></td></tr>
+      <tr><td><b>Chiapas</b><br>Chenalhó (comunidad Yabteclum)<br><span class="muted-note">28-OCT, POR RUTA</span></td><td><b>Defensor de derechos humanos asesinado</b>: 1 muerto</td><td>🔴 Rojo</td><td>Fiscal General de Chiapas <span class="muted-note">(solo por resumen)</span></td><td>La Jornada · La Silla Rota · Proceso · Heraldo de México · Infobae</td><td>★★★☆☆</td><td><a href="#ARG-144-004"><code>ARG-144-004</code></a></td></tr>
+      <tr><td><b>Guanajuato</b><br>Irapuato (col. Azteca y col. Nuevo Amanecer)<br><span class="muted-note">28-OCT, POR RUTA; HORA NO FIJADA</span></td><td><b>Ataque armado: 2 muertos</b></td><td>🔴 Rojo</td><td><span class="muted-note">SIN BOLETÍN</span></td><td><span class="muted-note">ninguna</span></td><td>★★★☆☆</td><td><a href="#ARG-144-005"><code>ARG-144-005</code></a></td></tr>
+      <tr><td><b>San Luis Potosí</b><br>Ciudad del Maíz (cerca del ejido Palomas)<br><span class="muted-note">PUB. 28-OCT; DÍA DEL HALLAZGO NO FIJADO</span></td><td><b>Posible fosa clandestina con restos óseos</b>: número de víctimas no publicado</td><td>🔴 Rojo</td><td><span class="muted-note">SIN BOLETÍN</span></td><td><span class="muted-note">ninguna</span></td><td>★★☆☆☆</td><td><a href="#ARG-144-006"><code>ARG-144-006</code></a></td></tr>
+      <tr><td><b>Estado de México</b><br>Ecatepec (col. Rústica Xalostoc, inmueble)<br><span class="muted-note">PUB. 28-OCT; DÍA DEL HALLAZGO NO FIJADO</span></td><td><b>Restos humanos bajo cemento</b> en un inmueble: 1 víctima posible</td><td>🔴 Rojo</td><td>FGJEM <span class="muted-note">(solo por resumen)</span></td><td>Excélsior · TV Azteca</td><td>★★★☆☆</td><td><a href="#ARG-144-007"><code>ARG-144-007</code></a></td></tr>
+      <tr><td><b>Quintana Roo</b><br>Othón P. Blanco (Chetumal, Nachicocom)<br><span class="muted-note">29-OCT, POR RUTA; HORA NO FIJADA</span></td><td>Expolicía asesinado en su vivienda: <b>1 muerto</b></td><td>🟡 Amarillo</td><td><span class="muted-note">SIN BOLETÍN</span></td><td><span class="muted-note">ninguna</span></td><td>★★☆☆☆</td><td><a href="#ARG-144-015"><code>ARG-144-015</code></a></td></tr>
+      <tr><td><b>Quintana Roo</b><br>Benito Juárez (Cancún, fracc. Cielo Nuevo)<br><span class="muted-note">28-OCT, POR RUTA</span></td><td>Ataque armado: <b>1 muerto y 1 herida</b></td><td>🟡 Amarillo</td><td><span class="muted-note">SIN BOLETÍN</span></td><td><span class="muted-note">ninguna</span></td><td>★★★☆☆</td><td><a href="#ARG-144-011"><code>ARG-144-011</code></a></td></tr>
+      <tr><td><b>Veracruz</b><br>Tecolutla (Cañada Rica, límite con Papantla)<br><span class="muted-note">28-OCT, POR RUTA; HORA CONTRADICHA</span></td><td>Comerciante asesinado en un asalto: <b>1 muerto</b></td><td>🟡 Amarillo</td><td><span class="muted-note">SIN BOLETÍN</span></td><td>N+</td><td>★★★☆☆</td><td><a href="#ARG-144-010"><code>ARG-144-010</code></a></td></tr>
+      <tr><td><b>Morelos</b><br>Cuautla (frente al Tecnológico de Cuautla, límite con Yecapixtla)<br><span class="muted-note">PUB. 28-OCT; DÍA NO FIJADO</span></td><td>Ataque a una combi: <b>2 heridos</b></td><td>🟡 Amarillo</td><td>Fiscal de Morelos <span class="muted-note">(solo por resumen)</span></td><td>La Razón · El Universal</td><td>★★★☆☆</td><td><a href="#ARG-144-012"><code>ARG-144-012</code></a></td></tr>
+      <tr><td><b>Guanajuato</b><br>Irapuato (col. Benito Juárez)<br><span class="muted-note">28-OCT, POR RUTA; HORA NO FIJADA</span></td><td>Hombre asesinado a balazos: <b>1 muerto</b></td><td>🟡 Amarillo</td><td><span class="muted-note">SIN BOLETÍN</span></td><td><span class="muted-note">ninguna</span></td><td>★★☆☆☆</td><td><a href="#ARG-144-013"><code>ARG-144-013</code></a></td></tr>
+      <tr><td><b>Guanajuato</b><br>Valle de Santiago (col. Ranchos Unidos)<br><span class="muted-note">28-OCT, POR RUTA; HORA NO FIJADA</span></td><td>Cuerpo hallado con un disparo: <b>1 cuerpo</b></td><td>🟡 Amarillo</td><td><span class="muted-note">SIN BOLETÍN</span></td><td><span class="muted-note">ninguna</span></td><td>★★☆☆☆</td><td><a href="#ARG-144-014"><code>ARG-144-014</code></a></td></tr>
+      <tr><td><b>Tamaulipas</b><br>Matamoros<br><span class="muted-note">29-OCT, POR RUTA; HORA NO FIJADA</span></td><td><b>Detención de un objetivo prioritario</b>: 1 detenido</td><td>🟢 Verde</td><td>Vocería de Seguridad de Tamaulipas <span class="muted-note">(solo por resumen)</span></td><td>Heraldo de México</td><td>★★★☆☆</td><td><a href="#ARG-144-016"><code>ARG-144-016</code></a></td></tr>
+      <tr><td><b>Quintana Roo</b><br>Benito Juárez (Cancún, fracc. Cielo Nuevo)<br><span class="muted-note">28-OCT, POR RUTA</span></td><td><b>3 detenidos</b> y 1 arma asegurada</td><td>🟢 Verde</td><td><span class="muted-note">SIN BOLETÍN</span></td><td><span class="muted-note">ninguna</span></td><td>★★★☆☆</td><td><a href="#ARG-144-017"><code>ARG-144-017</code></a></td></tr>
+      <tr><td><b>Estado de México</b><br>Ecatepec (col. Rústica Xalostoc)<br><span class="muted-note">PUB. 28-OCT; DÍA NO FIJADO</span></td><td><b>2 detenidos</b> por la desaparición de una mujer</td><td>🟢 Verde</td><td>FGJEM <span class="muted-note">(solo por resumen)</span></td><td>Excélsior · TV Azteca</td><td>★★★☆☆</td><td><a href="#ARG-144-020"><code>ARG-144-020</code></a></td></tr>
+      <tr><td><b>Nuevo León</b><br>General Bravo y China<br><span class="muted-note">PUB. 28-OCT; DÍA NO FIJADO</span></td><td><b>7 cateos</b>: 2 detenidos; armas y droga aseguradas</td><td>🟢 Verde</td><td><span class="muted-note">SIN BOLETÍN</span></td><td>MVS</td><td>★★★☆☆</td><td><a href="#ARG-144-018"><code>ARG-144-018</code></a></td></tr>
+      <tr><td><b>Ciudad de México</b><br>Gustavo A. Madero (col. Lindavista)<br><span class="muted-note">PUB. 28-OCT; DÍA NO FIJADO</span></td><td><b>Cateo</b>: 6 detenidos, 2 armas y placas apócrifas</td><td>🟢 Verde</td><td>SSC <span class="muted-note">(solo por resumen)</span></td><td>La Silla Rota · Publimetro · TV Azteca</td><td>★★★☆☆</td><td><a href="#ARG-144-019"><code>ARG-144-019</code></a></td></tr>
+      <tr><td><b>Guanajuato</b><br>Jaral del Progreso (col. Las Flores)<br><span class="muted-note">PUB. 28-OCT; DÍA NO FIJADO</span></td><td><b>2 detenidos</b> con 3 armas largas</td><td>🟢 Verde</td><td>Gobierno de Guanajuato (boletín) <span class="muted-note">(por titular)</span></td><td>N+</td><td>★★★☆☆</td><td><a href="#ARG-144-021"><code>ARG-144-021</code></a></td></tr>
+      <tr style="opacity:.72;"><td><b>Ciudad de México</b><br>Cuauhtémoc (col. Centro, República de Perú y República de Argentina)<br><span class="muted-note">VENTANA ARGOS 143 — HORA SOLO POR RESUMEN</span></td><td><b>Dos hermanos asesinados a balazos</b>: 2 muertos</td><td>🔴 Rojo <span class="muted-note">(en su ventana)</span></td><td><span class="muted-note">SIN BOLETÍN</span></td><td>Proceso · Infobae · El Universal · El Gráfico</td><td>★★★☆☆</td><td><a href="#ARG-144-REC-001"><code>ARG-144-REC-001</code></a></td></tr>
+      <tr style="opacity:.72;"><td><b>Veracruz</b><br>Coatzacoalcos (av. Universidad Veracruzana, frente al Poder Judicial de la Federación)<br><span class="muted-note">VENTANA ARGOS 143 — HORA SOLO POR RESUMEN</span></td><td><b>Cabeza humana con mensaje de amenaza</b> frente al Poder Judicial</td><td>🔴 Rojo <span class="muted-note">(en su ventana)</span></td><td><span class="muted-note">SIN BOLETÍN</span></td><td>N+ · Milenio · TV Azteca · La Silla Rota</td><td>★★★☆☆</td><td><a href="#ARG-144-REC-002"><code>ARG-144-REC-002</code></a></td></tr>
+      <tr style="opacity:.72;"><td><b>Sinaloa</b><br>Culiacán (fracc. Villas del Real)<br><span class="muted-note">VENTANA ARGOS 143 — HORA SOLO POR RESUMEN</span></td><td><b>4 jóvenes privados de la libertad</b> por un convoy armado; localizados con vida</td><td>🔴 Rojo <span class="muted-note">(en su ventana)</span></td><td>Fiscalía de Sinaloa <span class="muted-note">(solo por resumen)</span></td><td>El Diario de Chihuahua (Reforma) · Meganoticias</td><td>★★★☆☆</td><td><a href="#ARG-144-REC-003"><code>ARG-144-REC-003</code></a></td></tr>
+      <tr style="opacity:.72;"><td><b>Sinaloa</b><br>Mazatlán (Palacio Municipal)<br><span class="muted-note">VENTANA ARGOS 142 — HORA SOLO POR RESUMEN</span></td><td><b>Cabeza humana en una hielera</b> frente al Palacio Municipal</td><td>🔴 Rojo <span class="muted-note">(en su ventana)</span></td><td>Ayuntamiento de Mazatlán <span class="muted-note">(por titular)</span> · secretario de Seguridad municipal <span class="muted-note">(solo por resumen)</span></td><td>La Razón · Infobae</td><td>★★★☆☆</td><td><a href="#ARG-144-REC-004"><code>ARG-144-REC-004</code></a></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="section-head" style="margin-top:10px;">TOTALES DEL CORTE — CÁLCULO PROPIO DE ARGOS</div>
+  <p class="muted-note" style="margin:0 0 6px 0;">
+    <code>NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.</code>
+  </p>
+  <div class="table-wrap"><table class="exec wide">
+    <thead><tr><th>Hechos propios</th><th>🔴</th><th>🟡</th><th>🟢</th><th>Recup.</th><th>Muertos por agresión</th><th>Heridos</th><th>Cuerpos hallados</th><th>Armas cortas</th><th>Armas largas</th><th>Armas sin categoría</th><th>Cartuchos</th><th>Cargadores</th><th>Granadas</th><th>AEI</th><th>Explosivos</th><th>Detenidos en aseguramiento</th><th>Entidades</th></tr></thead>
+    <tbody><tr><td><b>21</b></td><td><b>9</b></td><td><b>6</b></td><td><b>6</b></td><td><b>4</b></td><td><b>13</b></td><td><b>4</b></td><td><b>3</b></td><td><b>1</b></td><td><b>1</b></td><td><b>3</b></td><td><b>n/d</b></td><td><b>n/d</b></td><td><b>n/d</b></td><td><b>n/d</b></td><td><b>n/d</b></td><td><b>11</b></td><td><b>13</b></td></tr></tbody>
+  </table></div>
+  <p class="muted-note" style="margin:6px 0 0 0;">
+    <b>Armamento</b>: 5 armas en 3 eventos integrados, todas con cifra solo por resumen o por titular de medios; Jaral del Progreso (3 largas, 2 detenidos), <code>POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN</code>; <code>n/d</code> = no publicado en fuente citable, no ausencia · <b>cuerpos hallados</b>: 3 con causa no informada por autoridad; la fosa de Ciudad del Maíz (ARG-144-006), <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code> · <b>marcas</b>: 11 de 21 <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code> y 3 <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> · <b>totales sujetos a las cláusulas de retiro de 11 fichas</b> (hora o día no fijados frente a las 08:28 del 28): ARG-144-005, -006, -007, -010, -012, -013, -014, -018, -019, -020 y -021 · <b>recuperaciones, fuera de totales</b>: 2 muertos y 2 cuerpos. <b>Cálculo propio</b>.
+    <br><b>Vistos de la ventana de ARGOS 143, fuera de totales</b> (🟢 o 🟡, no se recuperan): captura de «El Semáforo» en Tuxtepec, Oax. (Semar, SSPC y FGR; publicada el 28; el boletín federal de acciones del 27 registra un cateo en Tuxtepec con 2 detenidos: <code>POSIBLE MISMO OPERATIVO — DÍA NO FIJADO</code>) · rescate de 12 secuestrados en Matamoros y Nuevo Laredo (27-oct) · Culiacán: Díaz Ordaz, Infonavit Barrancos · Mazatlán, Ramón F. Iturbe · Hermosillo, 5 de Mayo · Cuautla, Gabriel Tepepa · Ecatepec, Las Vegas Xalostoc · Texmelucan · Puebla, Los Encinos (madrugada del 28, solo por resumen) · Xochitlán de las Flores, Hgo. · agregado de la SSP de Veracruz (38 detenidos, operativos del 26 y 27).
+    <br><b>Seguimientos procesales de ediciones previas, fuera del semáforo</b>: <b>ARG-143-010 (Rayón)</b>: órdenes notificadas en reclusión, por titular («Ya en prisión, aprehenden a hermanos», Pulso; San Luis Hoy) · <b>ARG-134-REC-004 (Almoloya)</b>: cuatro vinculados a proceso por secuestro, por titular (Milenio, sin fecha en la ruta) · <b>ARG-140-020 (Xalapa)</b>: prisión preventiva oficiosa, sin vinculación publicada · <b>ARG-142-010 (Tehuacán)</b>, <b>ARG-140-021 (Juchitán)</b> y <b>ARG-136-006 (exfiscal)</b>: sin paso procesal en la ventana · <code>NINGUNO ES SENTENCIA</code>.
+  </p>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-10-29 · Hora: 11:36 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 144</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (I) — ALTO IMPACTO: ATAQUES A AUTORIDADES, SERVIDORES PÚBLICOS Y DEFENSORES; NARCOBLOQUEO; HOMICIDIO MÚLTIPLE</h2></div>
+
+  <div class="nota" id="ARG-144-001">
+    <div class="nota-header"><h3>SONORA · MAGDALENA DE KINO — ATACAN A BALAZOS LAS INSTALACIONES DE LA AGENCIA MINISTERIAL DE INVESTIGACIÓN CRIMINAL: MUERE UN AGENTE</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Magdalena de Kino · <code>COL. CENTRO, INSTALACIONES DE LA AMIC, SOLO POR RESUMEN</code> · miércoles 28-OCT, por ruta (Proyecto Puente 2026/10/28) · ~19:44, hora atribuida a la <b>Fiscalía de Sonora</b>, <code>SOLO POR RESUMEN</code> · <b>ataque armado contra las instalaciones de la AMIC</b>, por titular (El Universal; UnoTV; Expreso) (🔴 ataque contra autoridades: el grupo agrede una sede de la corporación) · <b>1 agente ministerial muerto</b>, por titular; nombre por titular de un medio abierto (El Congresista): no se reproduce · AMIC, 45/a. Zona Militar, Policía Estatal y municipal acudieron, <code>SOLO POR RESUMEN</code> · <b>ningún detenido publicado</b> · vínculo de la víctima con narcomenudeo: hipótesis de un medio, <code>SOLO POR RESUMEN</code>, no se integra
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-001</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: hora y comunicado de la Fiscalía solo por resumen; sin boletín indexado ·
+        <b>Fuentes</b>: <b>Institucional 1</b> · <b>Nacional 3</b> · <b>Regional 3</b> · <b>Abierta 1</b> ·
+        con fecha en la ruta: <b>Proyecto Puente (2026/10/28)</b> · <b>Infobae (2026/10/29)</b> · <b>Diario de Tabasco (2026/10/29)</b>
+        · <b>Hecho</b>: 2026-10-28 · <b>Hora</b>: ~19:44, atribuida a la Fiscalía de Sonora (solo por resumen) · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Conteo de armamento</b>: sin fila — armamento asegurado: no publicado<br><b>Deslindes y reservas</b>: Magdalena de Kino no figura en las cinco ediciones previas ni en el índice (el patrón «AMIC» devuelve otros hechos). Sáric (incendio en Seguridad Pública, madrugada del 27): otro hecho, ventana de ARGOS 142, no se integra. Diario de Tabasco republica: no suma fuente independiente.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-002">
+    <div class="nota-header"><h3>MICHOACÁN · INDAPARAPEO — ASESINAN A UN REGIDOR DEL AYUNTAMIENTO Y A SU ESPOSA; SU HIJO, HERIDO</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Indaparapeo · <code>COMUNIDAD EL TRIUNFO, CALLE PROLONGACIÓN DE BRAVO, SOLO POR RESUMEN</code> · noche del miércoles 28-OCT, por resumen; publicación del 29, por ruta (Grupo Marmor; La Silla Rota; Esfera Noticias 2026/10/29) · ~21:45, <code>SOLO POR RESUMEN</code> · <b>2 muertos</b>: <b>regidor del Ayuntamiento</b> y <b>su esposa</b>, por titular (La Silla Rota; Grupo Marmor; La Voz de Michoacán) · <b>1 herido</b>: su hijo, por titular (🔴 víctima servidor público; víctimas múltiples) · la esposa murió en el lugar y el regidor en el hospital, <code>SOLO POR RESUMEN</code> · agresores en al menos tres vehículos, <code>SOLO POR RESUMEN</code> · <b>ningún detenido publicado</b> · amenazas previas a pobladores: versión de un partido político, no de autoridad: no se integra
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-002</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: hora y declaración de la Fiscalía solo por resumen; día del hecho por resumen (rutas del 29) ·
+        <b>Fuentes</b>: <b>Institucional 1</b> · <b>Nacional 4</b> · <b>Regional 4</b> · <b>Abierta 1</b> ·
+        con fecha en la ruta: <b>Grupo Marmor (2026/10/29)</b> · <b>La Silla Rota (2026/10/29)</b> · <b>Esfera Noticias (2026/10/29)</b>
+        · <b>Hecho</b>: 2026-10-28 · <b>Hora</b>: noche, ~21:45, atribuida a la Fiscalía (solo por resumen) · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Conteo de armamento</b>: sin fila — armamento asegurado: no publicado<br><b>Deslindes y reservas</b>: Indaparapeo en el índice: ARG-140-016 (disparos contra una base de policías, 23-oct): otro hecho. RED113 republica: no suma fuente independiente.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-004">
+    <div class="nota-header"><h3>CHIAPAS · CHENALHÓ — ASESINAN A BALAZOS A UN DEFENSOR DE DERECHOS HUMANOS DE FAMILIAS DESPLAZADAS, BENEFICIARIO DEL MECANISMO FEDERAL DE PROTECCIÓN</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Chenalhó · <code>COMUNIDAD YABTECLUM, SOLO POR RESUMEN</code> · miércoles 28-OCT, por ruta (La Jornada; La Silla Rota; Proceso; Heraldo de México 2026/10/28) · tarde, <code>SOLO POR RESUMEN</code>; «mañana», un medio local: <code>CONTRADICHO</code> · <b>1 muerto</b>: <b>defensor de derechos humanos</b> y representante de familias desplazadas, por titular (La Jornada; Proceso; La Silla Rota) (🔴 víctima persona defensora) · <b>con protección federal desde 2023</b>, por titular (Diario Puntual) · dos agresores en motocicleta, <code>SOLO POR RESUMEN</code> · el <b>fiscal de Chiapas</b> ordenó un grupo especial, <code>SOLO POR RESUMEN</code> · <b>ningún detenido publicado</b>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-004</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: hora contradicha y solo por resumen; declaración del fiscal solo por resumen ·
+        <b>Fuentes</b>: <b>Institucional 1</b> · <b>Nacional 5</b> · <b>Regional 0</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>La Jornada (2026/10/28)</b> · <b>La Silla Rota (2026/10/28)</b> · <b>Proceso (2026/10/28)</b> · <b>Heraldo de México (2026/10/28)</b> · <b>Infobae (2026/10/29)</b> · <b>Diario Puntual (2026/10/29)</b>
+        · <b>Hecho</b>: 2026-10-28 · <b>Hora</b>: tarde (solo por resumen; un medio local: mañana) · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Conteo de armamento</b>: sin fila — armamento asegurado: no publicado<br><b>Deslindes y reservas</b>: Chenalhó y Yabteclum no figuran en las cinco ediciones previas ni en el índice. Ninguna fuente regional de Chiapas localizada. La Silla Rota contabiliza nueve activistas asesinados desde 2019 en Chiapas: recuento de un medio, no se integra.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-008">
+    <div class="nota-header"><h3>TAMAULIPAS · MATAMOROS — BLOQUEOS CON VEHÍCULOS DE CARGA EN OCHO PUNTOS TRAS LA DETENCIÓN DE UN OBJETIVO PRIORITARIO; EL ALCALDE PIDE RESGUARDARSE</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Matamoros y Río Bravo · <code>OCHO PUNTOS DE MATAMOROS, SOLO POR RESUMEN; «DIVERSOS PUNTOS» DE RÍO BRAVO, SOLO POR RESUMEN</code> · jueves 29-OCT, por ruta (Heraldo de México 2026/10/29) · <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> · <b>bloqueos</b> en varias zonas de Matamoros, por titular (Diario del Yaqui) (🔴 narcobloqueo) · <b>con vehículos de carga en ocho puntos</b>, atribuido a la <b>Vocería de Seguridad de Tamaulipas</b>, <code>SOLO POR RESUMEN</code> · el <b>alcalde de Matamoros</b> pide a la población resguardarse, por titular (Heraldo de México) · una secundaria retuvo a sus alumnos y se suspendieron clases vespertinas, <code>SOLO POR RESUMEN</code> · vehículos incendiados, heridos o detenidos por los bloqueos: no publicados · la detención que los precede es hecho aparte: ARG-144-016
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-008</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: número de puntos y emisor oficial solo por resumen; hora no fijada ·
+        <b>Fuentes</b>: <b>Institucional 1</b> · <b>Nacional 1</b> · <b>Regional 1</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>Heraldo de México (2026/10/29)</b>
+        · <b>Hecho</b>: 2026-10-29 · <b>Hora</b>: no fijada · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Conteo de armamento</b>: sin fila — armamento asegurado: no publicado<br><b>Deslindes y reservas</b>: Matamoros en el índice: hechos de otras fechas. Bloqueo de productores en la carretera Victoria–Matamoros (más de 30 horas) e Izúcar de Matamoros (Puebla, transportistas): otros hechos, no se integran. Rescate de 12 secuestrados en Matamoros y Nuevo Laredo (27-oct, La Región): ventana de ARGOS 143, 🟢: visto.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-003">
+    <div class="nota-header"><h3>GUANAJUATO · ACÁMBARO — ATAQUE CON ESCOPETA EN LA COMUNIDAD DE SANTIAGUILLO: TRES MUERTOS, UNO DE ELLOS DE 16 AÑOS</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Acámbaro · <code>COMUNIDAD SANTIAGUILLO, DOMICILIO, SOLO POR RESUMEN</code> · miércoles 28-OCT, por ruta (Correo 2026/oct/28, primera publicación) · ~19:30, <code>SOLO POR RESUMEN</code> · <b>3 muertos</b>, por titular (Correo; La Silla Rota; AM; Noticieros en Línea), <b>uno de 16 años</b>, por titular (Noticieros en Línea) (🔴 homicidio múltiple) · <b>escopeta</b>, por titular; casquillos calibre 12, <code>SOLO POR RESUMEN</code> · conflicto entre vecinos, versión de vecinos, <code>SOLO POR RESUMEN</code> · agresor prófugo · <b>ningún detenido publicado</b>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-003</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: hora y móvil solo por resumen; ninguna fuente institucional ·
+        <b>Fuentes</b>: <b>Institucional 0</b> · <b>Nacional 2</b> · <b>Regional 5</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>Correo (2026/oct/28)</b> · <b>La Silla Rota (2026/10/29)</b> · <b>AM (2026/10/29)</b> · <b>Noticieros en Línea (2026/oct/29)</b>
+        · <b>Hecho</b>: 2026-10-28 · <b>Hora</b>: ~19:30 (solo por resumen) · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Conteo de armamento</b>: sin fila — armamento asegurado: no publicado<br><b>Deslindes y reservas</b>: Santiaguillo no figura en las cinco ediciones previas ni en el índice. Acámbaro: ARG-142-004 (col. Velasco Ibarra, 26-oct) y ARG-143-REC-003 (Campamento Ferrocarrilero, 19-oct): otros hechos. «Guardia Nocturna» (junio): otro hecho.
+      </div>
+    </div>
+  </div>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-10-29 · Hora: 11:36 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 144</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (II) — ALTO IMPACTO: HOMICIDIO MÚLTIPLE, FOSA Y RESTOS HUMANOS</h2></div>
+
+  <div class="nota" id="ARG-144-005">
+    <div class="nota-header"><h3>GUANAJUATO · IRAPUATO — ATAQUE ARMADO EN LA COLONIA AZTECA: DOS MUERTOS</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Irapuato · <code>COL. AZTECA, POR <i>SLUG</i> (CORREO); COL. NUEVO AMANECER, POR <i>SLUG</i> (AM): CONTRADICHO</code> · miércoles 28-OCT, por ruta (Correo 2026/oct/28; AM 2026/10/28; Primer Plano 2026/10/28) · <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code>; hora no informada: <code>SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL</code> · <b>2 muertos</b>, por titular (Correo; AM; Primer Plano) (🔴 homicidio múltiple) · uno murió al derrapar en motocicleta mientras era trasladado, <code>SOLO POR RESUMEN</code> · alias de una víctima: medio local, no se reproduce · <b>ningún detenido publicado</b>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-005</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: hora no informada; colonia contradicha; ninguna fuente institucional ·
+        <b>Fuentes</b>: <b>Institucional 0</b> · <b>Nacional 0</b> · <b>Regional 5</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>Correo (2026/oct/28)</b> · <b>AM (2026/10/28)</b> · <b>Primer Plano (2026/10/28)</b>
+        · <b>Hecho</b>: 2026-10-28 · <b>Hora</b>: no fijada · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Conteo de armamento</b>: sin fila — armamento asegurado: no publicado<br><b>Deslindes y reservas</b>: Col. Azteca y Nuevo Amanecer no figuran en las cinco ediciones previas ni en el índice. Irapuato en el índice: ARG-133-010, ARG-134-REC-001, ARG-134-018 y ARG-140-014: otros hechos. Mismo día y municipio que ARG-144-013 (col. Benito Juárez): hechos distintos por colonia y número de víctimas.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-006">
+    <div class="nota-header"><h3>SAN LUIS POTOSÍ · CIUDAD DEL MAÍZ — LOCALIZAN RESTOS ÓSEOS EN UN POSIBLE SITIO DE INHUMACIÓN CLANDESTINA</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Ciudad del Maíz · <code>PREDIOS CERCA DEL EJIDO PALOMAS Y DE LA COLONIA AGRÍCOLA LA LIBERTAD, SOLO POR RESUMEN</code> · publicado el miércoles 28-OCT, por ruta (Potosinoticias 2026/10/28) · <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code>; día del hallazgo no fijado: <code>SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL</code> · <b>presunta fosa clandestina con restos óseos</b>, por titular y <i>slug</i> (Potosinoticias; Plano Informativo) (🔴 hallazgo de fosa) · búsqueda de la Comisión Estatal de Búsqueda con colectivos, Guardia Civil Estatal y Guardia Nacional, <code>SOLO POR RESUMEN</code> · restos trasladados al Servicio Médico Legal de Rioverde, <code>SOLO POR RESUMEN</code> · <b>número de personas: no publicado</b> — <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code> · inhumación de años atrás, <code>SOLO POR RESUMEN</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-006</code> · <b>Confianza</b>: 🟠 Bajo (★★☆☆☆), <b>la fija el campo peor sostenido</b>: una sola ruta fechada; día del hallazgo y número de víctimas no publicados; ninguna fuente institucional ·
+        <b>Fuentes</b>: <b>Institucional 0</b> · <b>Nacional 0</b> · <b>Regional 2</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>Potosinoticias (2026/10/28)</b>
+        · <b>Hecho</b>: publicado el 2026-10-28 — DÍA DEL HALLAZGO NO FIJADO · <b>Hora</b>: no fijada · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Pendiente de corroboración · <b>Conteo de armamento</b>: sin fila — armamento asegurado: no publicado<br><b>Deslindes y reservas</b>: Ciudad del Maíz y Palomas no figuran en las cinco ediciones previas ni en el índice. Cuerpos hallados: sin cifra, fuera del total numérico.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-007">
+    <div class="nota-header"><h3>ESTADO DE MÉXICO · ECATEPEC — HALLAN RESTOS HUMANOS ENTERRADOS Y CUBIERTOS CON CEMENTO EN UN INMUEBLE, EN LA BÚSQUEDA DE UNA MUJER DESAPARECIDA</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Ecatepec · <code>COL. RÚSTICA XALOSTOC, INMUEBLE, POR TITULAR (EL MONITOR DEL EDOMEX)</code> · publicado el miércoles 28-OCT, por ruta (El Monitor del Estado de México 2026/10/28, primera publicación; Reporteros en Movimiento 2026/10/28) · <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code>; día del hallazgo no fijado: <code>SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL</code> · <b>restos humanos enterrados y cubiertos con cemento</b>, por titular (El Monitor; Excélsior; La Prensa de Coahuila) (🔴 restos humanos en inhumación clandestina) · identidad no confirmada: <b>posibles restos</b> de una mujer de 52 años desaparecida el 15-oct, por titular (Tribuna) y <code>SOLO POR RESUMEN</code> · la detención por este caso es hecho aparte: ARG-144-020
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-007</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: día del hallazgo no fijado; identidad no confirmada; FGJEM solo por resumen ·
+        <b>Fuentes</b>: <b>Institucional 1</b> · <b>Nacional 2</b> · <b>Regional 5</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>El Monitor del Edomex (2026/10/28)</b> · <b>Reporteros en Movimiento (2026/10/28)</b> · <b>Tribuna (2026/10/29)</b> · <b>La Prensa de Coahuila (2026/10/29)</b> · <b>Sociedad Noticias (2026/10/29)</b>
+        · <b>Hecho</b>: publicado el 2026-10-28 — DÍA DEL HALLAZGO NO FIJADO · <b>Hora</b>: no fijada · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Conteo de armamento</b>: sin fila — armamento asegurado: no publicado<br><b>Deslindes y reservas</b>: Rústica Xalostoc no figura en las cinco ediciones previas ni en el índice. Ecatepec en el índice: ARG-140-REC-003 (Santa María Tulpetlac, 20-oct): otro hecho. Las Vegas Xalostoc (hombre muerto y pareja baleada, noche del 27, solo por resumen): otro hecho, ventana de ARGOS 143, 🟡: visto. Cuerpo hallado sin causa de muerte informada por autoridad: en la columna de cuerpos.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-009">
+    <div class="nota-header"><h3>GUERRERO · ACAPULCO — ARROJAN DESDE UN AUTO DOS BOLSAS CON LOS RESTOS DE UNA PERSONA DESMEMBRADA EN LA COLONIA EMILIANO ZAPATA</h3><span class="risk-flag alto">ROJO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Acapulco · <code>COL. EMILIANO ZAPATA, CALLE 15, FRENTE A LA PARROQUIA DEL PERPETUO SOCORRO, SOLO POR RESUMEN</code> · jueves 29-OCT, <code>SOLO POR RESUMEN</code> (ninguna ruta con fecha: <code>EXCEPCIÓN DECLARADA PARA ROJOS</code>) · poco después de las 07:00, <code>SOLO POR RESUMEN</code> · <b>restos de una persona desmembrada en dos bolsas</b>, por titular (Quadratín Guerrero; Meganoticias) (🔴 restos humanos exhibidos en vía pública) · arrojados desde un auto por hombres armados, <code>SOLO POR RESUMEN</code> · víctima no identificada · <b>ningún detenido publicado</b>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-009</code> · <b>Confianza</b>: 🟠 Bajo (★★☆☆☆), <b>la fija el campo peor sostenido</b>: día y hora solo por resumen; ninguna ruta fechada; ninguna fuente institucional ·
+        <b>Fuentes</b>: <b>Institucional 0</b> · <b>Nacional 0</b> · <b>Regional 3</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <span class="muted-note">ninguna</span>
+        · <b>Hecho</b>: 2026-10-29, DÍA SOLO POR RESUMEN · <b>Hora</b>: poco después de las 07:00 (solo por resumen) · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Pendiente de corroboración · <b>Conteo de armamento</b>: sin fila — armamento asegurado: no publicado<br><b>Deslindes y reservas</b>: Calle 15 y la parroquia del Perpetuo Socorro no figuran en las cinco ediciones previas ni en el índice. «Emiliano Zapata» devuelve hallazgos de 2024 y 2025 en Acapulco y uno de Morelos: otros hechos. Cuerpo hallado sin causa de muerte informada por autoridad: en la columna de cuerpos.
+      </div>
+    </div>
+  </div>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-10-29 · Hora: 11:36 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 144</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (III) — VIOLENCIA OPERATIVA: VERACRUZ, QUINTANA ROO, MORELOS Y GUANAJUATO</h2></div>
+
+  <div class="nota" id="ARG-144-010">
+    <div class="nota-header"><h3>VERACRUZ · TECOLUTLA — ASESINAN A UN COMERCIANTE DE CÍTRICOS EN UN ASALTO A UNA BÁSCULA EN CAÑADA RICA</h3><span class="risk-flag medio">AMARILLO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Tecolutla · <code>CAÑADA RICA, BÁSCULA DE CÍTRICOS, POR <i>SLUG</i> (INFOVERACRUZ)</code> · miércoles 28-OCT, por ruta (Infoveracruz; Golpe Político 2026/10/28) · <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code>; «mañana» o ~16:00, <code>SOLO POR RESUMEN</code>: <code>SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL</code> · <b>1 muerto</b>: comerciante de cítricos, por <i>slug</i> (Infoveracruz) (🟡 homicidio doloso único) · intentó resguardarse en su automóvil, por titular (Gráfico al Día) · asalto, por titular · edad y origen contradichos entre medios; una acompañante herida solo en dos medios, <code>SOLO POR RESUMEN</code>: no se suma · 4 casquillos .38, <code>SOLO POR RESUMEN</code> · <b>ningún detenido publicado</b>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-010</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: hora contradicha y solo por resumen; ninguna fuente institucional ·
+        <b>Fuentes</b>: <b>Institucional 0</b> · <b>Nacional 1</b> · <b>Regional 9</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>Infoveracruz (2026/10/28)</b> · <b>Golpe Político (2026/10/28)</b> · <b>Gráfico al Día (2026/10/29)</b>
+        · <b>Hecho</b>: 2026-10-28 · <b>Hora</b>: contradicha: mañana / ~16:00 (solo por resumen) · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Conteo de armamento</b>: sin fila — armamento asegurado: no publicado<br><b>Deslindes y reservas</b>: Tecolutla y Cañada Rica no figuran en las cinco ediciones previas ni en el índice.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-011">
+    <div class="nota-header"><h3>QUINTANA ROO · CANCÚN — ATAQUE ARMADO EN EL FRACCIONAMIENTO CIELO NUEVO: UN MUERTO Y UNA MUJER HERIDA</h3><span class="risk-flag medio">AMARILLO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Cancún · <code>FRACC. CIELO NUEVO; REGIÓN 249 O 251: CONTRADICHO</code> · miércoles 28-OCT, por ruta (Por Esto; Noticaribe 2026/10/28) · tarde, <code>SOLO POR RESUMEN</code> · <b>1 muerto</b>: hombre, por titular (Por Esto; Noticaribe) (🟡 homicidio doloso único) · <b>1 mujer herida</b>, <code>SOLO POR RESUMEN</code> · nacionalidad y actividad de la víctima: versión de un medio, no de autoridad: no se reproduce · la detención de tres personas es hecho aparte: ARG-144-017
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-011</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: hora y herida solo por resumen; ninguna fuente institucional ·
+        <b>Fuentes</b>: <b>Institucional 0</b> · <b>Nacional 0</b> · <b>Regional 6</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>Por Esto (2026/10/28)</b> · <b>Noticaribe (2026/10/28)</b>
+        · <b>Hecho</b>: 2026-10-28 · <b>Hora</b>: tarde (solo por resumen) · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Conteo de armamento</b>: sin fila — armamento asegurado: no publicado<br><b>Deslindes y reservas</b>: Cielo Nuevo no figura en las cinco ediciones previas ni en el índice.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-012">
+    <div class="nota-header"><h3>MORELOS · CUAUTLA — BALEAN UNA COMBI DE PASAJEROS FRENTE AL TECNOLÓGICO DE CUAUTLA: EL CHOFER Y UN ESTUDIANTE, HERIDOS</h3><span class="risk-flag medio">AMARILLO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Cuautla · <code>FRENTE AL TECNOLÓGICO DE CUAUTLA, LÍMITE CON YECAPIXTLA; RUTA 9, SOLO POR RESUMEN</code> · publicado el miércoles 28-OCT, por ruta (La Razón 2026/10/28) · <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code>; día del hecho no fijado: <code>SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL</code> · <b>ataque a balazos contra una combi</b>, por titular (La Razón; El Universal; Diario de Morelos) · <b>2 heridos</b>: chofer y estudiante, por titular (El Universal; Diario de Morelos); 3, un medio, <code>SOLO POR RESUMEN</code>: <code>CONTRADICHO</code> (🟡 agresión sin muertos) · agresores en motocicleta, <code>SOLO POR RESUMEN</code> · el <b>fiscal de Morelos</b> confirmó los heridos, <code>SOLO POR RESUMEN</code> · <b>ningún detenido publicado</b>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-012</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: día del hecho no fijado; declaración del fiscal solo por resumen ·
+        <b>Fuentes</b>: <b>Institucional 1</b> · <b>Nacional 2</b> · <b>Regional 4</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>La Razón (2026/10/28)</b> · <b>La Razón (2026/10/29)</b>
+        · <b>Hecho</b>: publicado el 2026-10-28 — DÍA DEL HECHO NO FIJADO · <b>Hora</b>: no fijada · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Conteo de armamento</b>: sin fila — armamento asegurado: no publicado<br><b>Deslindes y reservas</b>: El Tecnológico de Cuautla y la Ruta 9 no figuran en las cinco ediciones previas ni en el índice. Cuautla y Yecapixtla: un solo hecho (misma unidad, mismos heridos). Cuautla, col. Gabriel Tepepa (hombre asesinado ~23:30 del 27, solo por resumen): otro hecho, ventana de ARGOS 143, 🟡: visto.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-013">
+    <div class="nota-header"><h3>GUANAJUATO · IRAPUATO — ASESINAN A BALAZOS A UN HOMBRE EN LA COLONIA BENITO JUÁREZ</h3><span class="risk-flag medio">AMARILLO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Irapuato · <code>COL. BENITO JUÁREZ, POR <i>SLUG</i> (CORREO)</code> · miércoles 28-OCT, por ruta (Correo 2026/oct/28) · <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code>; hora no informada: <code>SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL</code> · <b>1 muerto</b>, por <i>slug</i> (Correo) (🟡 homicidio doloso único) · agresores en motocicleta, <code>SOLO POR RESUMEN</code> · <code>FUENTE ÚNICA</code> · <b>ningún detenido publicado</b>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-013</code> · <b>Confianza</b>: 🟠 Bajo (★★☆☆☆), <b>la fija el campo peor sostenido</b>: fuente única; hora no informada ·
+        <b>Fuentes</b>: <b>Institucional 0</b> · <b>Nacional 0</b> · <b>Regional 1</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>Correo (2026/oct/28)</b>
+        · <b>Hecho</b>: 2026-10-28 · <b>Hora</b>: no fijada · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Pendiente de corroboración · <b>Conteo de armamento</b>: sin fila — armamento asegurado: no publicado<br><b>Deslindes y reservas</b>: Col. Benito Juárez de Irapuato no figura en las cinco ediciones previas ni en el índice. Mismo día y municipio que ARG-144-005: hecho distinto por colonia y víctimas.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-014">
+    <div class="nota-header"><h3>GUANAJUATO · VALLE DE SANTIAGO — DESCUBREN EL CUERPO DE UN HOMBRE CON UN DISPARO EN LA CABEZA EN LA COLONIA RANCHOS UNIDOS</h3><span class="risk-flag medio">AMARILLO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Valle de Santiago · <code>COL. RANCHOS UNIDOS, POR <i>SLUG</i> (CORREO)</code> · miércoles 28-OCT, por ruta (Correo 2026/oct/28) · <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code>; hora no informada: <code>SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL</code> · <b>1 cuerpo con un disparo en la cabeza</b>, por <i>slug</i> (Correo) (🟡 hallazgo de un cuerpo) · fecha de la muerte no publicada: <code>CAUSA NO INFORMADA POR AUTORIDAD</code> · <code>FUENTE ÚNICA</code> · <b>ningún detenido publicado</b>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-014</code> · <b>Confianza</b>: 🟠 Bajo (★★☆☆☆), <b>la fija el campo peor sostenido</b>: fuente única; hora no informada; causa no informada por autoridad ·
+        <b>Fuentes</b>: <b>Institucional 0</b> · <b>Nacional 0</b> · <b>Regional 1</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>Correo (2026/oct/28)</b>
+        · <b>Hecho</b>: 2026-10-28 · <b>Hora</b>: no fijada · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Pendiente de corroboración · <b>Conteo de armamento</b>: sin fila — armamento asegurado: no publicado<br><b>Deslindes y reservas</b>: Ranchos Unidos no figura en las cinco ediciones previas ni en el índice. Valle de Santiago en el índice: ARG-125-013, ARG-125-020 y ARG-128-REC-005: otros hechos. Col. Morelos de Valle de Santiago (hombre muerto, «tarde del miércoles» solo por resumen, sin ruta fechada): visto.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-015">
+    <div class="nota-header"><h3>QUINTANA ROO · CHETUMAL — UN COMANDO ARMADO IRRUMPE EN UNA VIVIENDA DE NACHICOCOM Y ASESINA A UN EXPOLICÍA</h3><span class="risk-flag medio">AMARILLO</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Chetumal · <code>NACHICOCOM, VIVIENDA, POR <i>SLUG</i> (POR ESTO)</code> · jueves 29-OCT, por ruta (Por Esto 2026/10/29) · <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> · <b>1 muerto</b>: <b>expolicía</b>, por <i>slug</i> (Por Esto, «comando-armado-asesina-…-policia-…») (🟡 homicidio doloso único: la víctima no era servidor público en activo, <code>SOLO POR RESUMEN</code>) · comando armado, por <i>slug</i> · <code>FUENTE ÚNICA</code> · <b>ningún detenido publicado</b>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-015</code> · <b>Confianza</b>: 🟠 Bajo (★★☆☆☆), <b>la fija el campo peor sostenido</b>: fuente única; hora no fijada; condición de expolicía solo por resumen ·
+        <b>Fuentes</b>: <b>Institucional 0</b> · <b>Nacional 0</b> · <b>Regional 1</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>Por Esto (2026/10/29)</b>
+        · <b>Hecho</b>: 2026-10-29 · <b>Hora</b>: no fijada · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Pendiente de corroboración · <b>Conteo de armamento</b>: sin fila — armamento asegurado: no publicado<br><b>Deslindes y reservas</b>: Nachicocom no figura en las cinco ediciones previas ni en el índice. Si la autoridad acredita que la víctima era servidor público en activo, el hecho sube a 🔴.
+      </div>
+    </div>
+  </div>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-10-29 · Hora: 11:36 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 144</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (IV) — ACCIONES INSTITUCIONALES</h2></div>
+
+  <div class="nota" id="ARG-144-016">
+    <div class="nota-header"><h3>TAMAULIPAS · MATAMOROS — FUERZAS FEDERALES DETIENEN A UN OBJETIVO PRIORITARIO DE LA DELINCUENCIA ORGANIZADA</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Matamoros · jueves 29-OCT, por ruta (Heraldo de México 2026/10/29) · <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> · <b>detención de un objetivo prioritario</b>, por titular (Heraldo de México) (🟢 detención) · por <b>fuerzas federales</b>, <code>SOLO POR RESUMEN</code> · vinculado a un grupo de la delincuencia organizada, atribuido a la <b>Vocería de Seguridad de Tamaulipas</b>, <code>SOLO POR RESUMEN</code> · identidad y delitos: no publicados · <b>1 detenido</b> · armamento asegurado: no publicado · los bloqueos posteriores son hecho aparte: ARG-144-008
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-016</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: corporación y comunicado solo por resumen; identidad no publicada ·
+        <b>Fuentes</b>: <b>Institucional 1</b> · <b>Nacional 1</b> · <b>Regional 1</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>Heraldo de México (2026/10/29)</b>
+        · <b>Hecho</b>: 2026-10-29 · <b>Hora</b>: no fijada · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Conteo de armamento</b>: sin fila — armamento asegurado: no publicado<br><b>Deslindes y reservas</b>: Detención en Reynosa de un «objetivo prioritario» (Yahoo, abril): otro hecho. Detención sin armamento con cifra: fuera del conteo de armamento.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-017">
+    <div class="nota-header"><h3>QUINTANA ROO · CANCÚN — DETIENEN A TRES PERSONAS TRAS UNA PERSECUCIÓN Y ASEGURAN UN ARMA DE FUEGO, POR EL ATAQUE DE CIELO NUEVO</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Cancún · miércoles 28-OCT, por ruta (Noticaribe 2026/10/28, «hay tres detenidos») · tarde, <code>SOLO POR RESUMEN</code> · <b>3 detenidos</b>, por <i>slug</i> (Noticaribe) y titular (Sol Quintana Roo) (🟢 detención) · tras una persecución, <code>SOLO POR RESUMEN</code> · <b>1 arma de fuego asegurada</b>, tipo no publicado, <code>SOLO POR RESUMEN</code> · policía de Cancún; puestos a disposición de la FGE, <code>SOLO POR RESUMEN</code> · el ataque es hecho aparte: ARG-144-011
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-017</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: arma y corporación solo por resumen; ninguna fuente institucional ·
+        <b>Fuentes</b>: <b>Institucional 0</b> · <b>Nacional 0</b> · <b>Regional 4</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>Noticaribe (2026/10/28)</b> · <b>Por Esto (2026/10/28)</b>
+        · <b>Hecho</b>: 2026-10-28 · <b>Hora</b>: tarde (solo por resumen) · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Conteo de armamento</b>: <a href="#ARG-144-ARM-003"><code>ARG-144-ARM-003</code></a><br><b>Deslindes y reservas</b>: Delito y detención en la misma ventana: dos fichas (ARG-144-011 y esta).
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-018">
+    <div class="nota-header"><h3>NUEVO LEÓN · GENERAL BRAVO Y CHINA — SIETE CATEOS DEJAN DOS DETENIDOS Y ASEGURAN ARMAS, CARTUCHOS Y DROGA</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        General Bravo y China · publicado el miércoles 28-OCT, por ruta (MVS; Punto x Punto 2026/10/28) · <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code>; «la semana pasada», un medio, <code>SOLO POR RESUMEN</code>: <code>SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL</code> · <b>7 cateos</b>, por titular (El Porvenir; Hora Cero) · <b>2 detenidos</b>, por titular (MVS; Punto x Punto) (🟢 cateos y aseguramiento) · <b>armas de fuego</b> y cartuchos, por titular (MVS); <b>2 armas</b>, sin clasificar, <code>SOLO POR RESUMEN</code>; cartuchos sin cifra · droga, básculas y teléfonos, <code>SOLO POR RESUMEN</code> · FGJE de Nuevo León, por titular de un medio (El Porvenir), sin declaración citada
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-018</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: cifra de armas solo por resumen; día de los cateos no fijado; ninguna declaración institucional ·
+        <b>Fuentes</b>: <b>Institucional 0</b> · <b>Nacional 1</b> · <b>Regional 5</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>MVS (2026/10/28)</b> · <b>Punto x Punto (2026/10/28)</b>
+        · <b>Hecho</b>: publicado el 2026-10-28 — DÍA DE LOS CATEOS NO FIJADO · <b>Hora</b>: no fijada · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Conteo de armamento</b>: <a href="#ARG-144-ARM-001"><code>ARG-144-ARM-001</code></a><br><b>Deslindes y reservas</b>: General Bravo y China no figuran en las cinco ediciones previas; ARG-135-ARM-001 («Industrial Bravo»): otro hecho.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-019">
+    <div class="nota-header"><h3>CIUDAD DE MÉXICO · GUSTAVO A. MADERO — CATEO EN LINDAVISTA CONTRA LA FALSIFICACIÓN DE PLACAS: SEIS DETENIDOS, DOS ARMAS Y DROGA</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Gustavo A. Madero · <code>COL. LINDAVISTA, POR TITULAR</code> · publicado el miércoles 28-OCT, por ruta (La Silla Rota; Publimetro 2026/10/28) · <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code>; día del cateo no fijado: <code>SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL</code> · <b>6 detenidos</b>, por titular (La Silla Rota; Publimetro) (🟢 cateo y detención) · placas falsas y con reporte de robo, por titular; cifras contradichas, <code>SOLO POR RESUMEN</code> · <b>1 arma corta y 1 arma larga</b>, cartuchos sin cifra, <code>SOLO POR RESUMEN</code> · droga, <code>SOLO POR RESUMEN</code> · SSC con la Fiscalía capitalina, SEMAR y GN; «la SSC informó», <code>SOLO POR RESUMEN</code> · altar con presuntos restos óseos: video de un periodista, no confirmado por la autoridad: <code>NO SE INTEGRA</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-019</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: armas y comunicado de la SSC solo por resumen; día no fijado ·
+        <b>Fuentes</b>: <b>Institucional 1</b> · <b>Nacional 3</b> · <b>Regional 4</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>La Silla Rota (2026/10/28)</b> · <b>Publimetro (2026/10/28)</b>
+        · <b>Hecho</b>: publicado el 2026-10-28 — DÍA DEL CATEO NO FIJADO · <b>Hora</b>: no fijada · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Conteo de armamento</b>: <a href="#ARG-144-ARM-002"><code>ARG-144-ARM-002</code></a><br><b>Deslindes y reservas</b>: Lindavista no figura en las cinco ediciones previas; Gustavo A. Madero en ARGOS 141: otro hecho. Si la autoridad confirma restos humanos en el inmueble, el hecho abre ficha 🔴 aparte.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-020">
+    <div class="nota-header"><h3>ESTADO DE MÉXICO · ECATEPEC — DETIENEN A LA SOBRINA Y A UN HOMBRE POR LA DESAPARICIÓN DE UNA MUJER DE 52 AÑOS</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Ecatepec · publicado el miércoles 28-OCT, por ruta (El Monitor del Edomex 2026/10/28) · <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code>; día de la detención no fijado: <code>SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL</code> · <b>2 detenidos</b>: sobrina de la víctima y un hombre, por titular (Tribuna; Sociedad Noticias; El Monitor) (🟢 detención) · por <b>desaparición cometida por particulares</b>, con agravantes, <code>SOLO POR RESUMEN</code> · FGJEM; órdenes de aprehensión giradas por un juez, <code>SOLO POR RESUMEN</code> · el hallazgo de los restos es hecho aparte: ARG-144-007
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-020</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: día de la detención no fijado; FGJEM solo por resumen ·
+        <b>Fuentes</b>: <b>Institucional 1</b> · <b>Nacional 2</b> · <b>Regional 4</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>El Monitor del Edomex (2026/10/28)</b> · <b>Tribuna (2026/10/29)</b> · <b>Sociedad Noticias (2026/10/29)</b>
+        · <b>Hecho</b>: publicado el 2026-10-28 — DÍA DE LA DETENCIÓN NO FIJADO · <b>Hora</b>: no fijada · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Conteo de armamento</b>: sin fila — armamento asegurado: no publicado<br><b>Deslindes y reservas</b>: Delito y detención publicados en la misma ventana: dos fichas (ARG-144-007 y esta). Detención sin armamento: fuera del conteo de armamento.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-021">
+    <div class="nota-header"><h3>GUANAJUATO · JARAL DEL PROGRESO — DETIENEN A DOS HOMBRES CON TRES ARMAS LARGAS, EQUIPO TÁCTICO Y UNA CAMIONETA ROBADA</h3><span class="risk-flag bajo">VERDE</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        Jaral del Progreso · <code>COL. LAS FLORES, SOLO POR RESUMEN</code> · publicado el miércoles 28-OCT, por ruta (boletín del Gobierno de Guanajuato 2026/10/28) · <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code>; día del operativo no fijado: <code>SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL</code> · <b>2 detenidos</b> y <b>3 armas largas</b>, por titular del boletín y de Quadratín Bajío (🟢 detención y aseguramiento) · cartuchos y cargadores sin cifra, <code>SOLO POR RESUMEN</code> · 6 chalecos y 6 cascos, <code>SOLO POR RESUMEN</code> · camioneta con reporte de robo, por titular · Seguridad y Paz de Guanajuato con la Defensa, <code>SOLO POR RESUMEN</code> · <code>POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN</code>: La Silla Rota (2026/10/26) publicó un arsenal asegurado a dos hombres en la misma colonia, ya vinculados a proceso
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-021</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: posible duplicidad con un aseguramiento del 26-oct; día del operativo no fijado ·
+        <b>Fuentes</b>: <b>Institucional 1</b> · <b>Nacional 1</b> · <b>Regional 1</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>Gobierno de Guanajuato (2026/10/28)</b>
+        · <b>Hecho</b>: publicado el 2026-10-28 — DÍA DEL OPERATIVO NO FIJADO · <b>Hora</b>: no fijada · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Conteo de armamento</b>: <a href="#ARG-144-ARM-004"><code>ARG-144-ARM-004</code></a><br><b>Deslindes y reservas</b>: Jaral del Progreso no figura en las cinco ediciones previas ni en el índice. La Silla Rota 2026/10/26 (misma colonia, dos presuntos integrantes del CSRL, 24 ponchallantas): posible mismo aseguramiento con otra cifra; no arbitrado.
+      </div>
+    </div>
+  </div>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-10-29 · Hora: 11:36 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 144</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">CRIMEN ORGANIZADO (V) — ALTO IMPACTO DE VENTANAS ANTERIORES: ARGOS 143 Y ARGOS 142</h2></div>
+
+  <div class="nota" id="ARG-144-REC-001" style="opacity:.72;">
+    <div class="nota-header"><h3>CIUDAD DE MÉXICO · CENTRO HISTÓRICO — ASESINAN A BALAZOS A DOS HERMANOS EN REPÚBLICA DE PERÚ Y ARGENTINA</h3><span class="risk-flag sindato">RECUPERACIÓN</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <code>VENTANA DE ORIGEN: ARGOS 143 — HORA SOLO POR RESUMEN</code> · Cuauhtémoc · <code>CRUCE DE REPÚBLICA DE PERÚ Y REPÚBLICA DE ARGENTINA, COL. CENTRO</code> · miércoles 28-OCT, por ruta (Proceso; Infobae; El Gráfico 2026/10/28) · mañana, «primeras horas», <code>SOLO POR RESUMEN</code>; una nota con hora de publicación 08:33, <code>SOLO POR RESUMEN</code>: anterior al cierre de ARGOS 143 (08:28) salvo un intervalo de cinco minutos · <b>2 muertos</b>: dos hermanos, por titular (Proceso) (🔴 homicidio múltiple) · 13 disparos, <code>SOLO POR RESUMEN</code> · agresores en bicicleta eléctrica, por titular (El Universal) · <b>ningún detenido publicado</b> · <code>SI RESULTA POSTERIOR A LAS 08:28 DEL 28, ES HECHO PROPIO DE ARGOS 144</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-REC-001</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: hora solo por resumen; ninguna fuente institucional ·
+        <b>Fuentes</b>: <b>Institucional 0</b> · <b>Nacional 4</b> · <b>Regional 1</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>Proceso (2026/10/28)</b> · <b>Infobae (2026/10/28)</b> · <b>El Gráfico (2026/10/28)</b>
+        · <b>Hecho</b>: 2026-10-28 · <b>Hora</b>: mañana, «primeras horas» (solo por resumen); una nota publicada a las 08:33 (solo por resumen) · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Ventana de origen</b>: ARGOS 143 — HORA SOLO POR RESUMEN — <b>fuera de todos los totales</b><br><b>Deslindes y reservas</b>: República de Perú y Argentina no figuran en las cinco ediciones previas ni en el índice. NO es el doble homicidio de dos hermanos en República de Chile (13-sep): otro hecho. Tlalpan, cuerpo calcinado (27-oct, Infobae, fuente única, sin causa informada): visto.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-REC-002" style="opacity:.72;">
+    <div class="nota-header"><h3>VERACRUZ · COATZACOALCOS — ABANDONAN UNA CABEZA HUMANA CON UN MENSAJE DE AMENAZA FRENTE AL PODER JUDICIAL DE LA FEDERACIÓN</h3><span class="risk-flag sindato">RECUPERACIÓN</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <code>VENTANA DE ORIGEN: ARGOS 143 — HORA SOLO POR RESUMEN</code> · Coatzacoalcos · <code>AV. UNIVERSIDAD VERACRUZANA, FRENTE AL PODER JUDICIAL DE LA FEDERACIÓN, POR TITULAR</code> · miércoles 28-OCT, por ruta (La Silla Rota 2026/10/28; Diario del Istmo 20261028; Sociedad Noticias 2026/10/28) · madrugada, <code>SOLO POR RESUMEN</code> (dos resúmenes independientes) · <b>cabeza humana en una mochila</b>, por titular (La Silla Rota; Quinta Fuerza; El Buen Tono); «hielera», por titular (TV Azteca; Avi Veracruz): <code>CONTRADICHO</code> · <b>con mensaje de amenaza</b>, por titular (N+; Telediario) (🔴 restos humanos exhibidos frente a una sede judicial) · contenido del mensaje: no publicado íntegro · víctima no identificada; resto del cuerpo no localizado · <b>ningún detenido publicado</b> · <code>SI RESULTA POSTERIOR A LAS 08:28 DEL 28, ES HECHO PROPIO DE ARGOS 144</code>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-REC-002</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: hora solo por resumen; ninguna fuente institucional ·
+        <b>Fuentes</b>: <b>Institucional 0</b> · <b>Nacional 4</b> · <b>Regional 7</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>La Silla Rota (2026/10/28)</b> · <b>Diario del Istmo (2026/10/28)</b> · <b>Sociedad Noticias (2026/10/28)</b>
+        · <b>Hecho</b>: 2026-10-28 · <b>Hora</b>: madrugada, «primeros minutos» del miércoles (solo por resumen) · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Ventana de origen</b>: ARGOS 143 — HORA SOLO POR RESUMEN — <b>fuera de todos los totales</b><br><b>Deslindes y reservas</b>: Av. Universidad Veracruzana y el Poder Judicial no figuran en las cinco ediciones previas. Coatzacoalcos en el índice: ARG-134-011, ARG-137-003 y otros: otros hechos. Trabajador de la CMAS (28-oct): muerte no violenta según la Fiscalía, no se integra. Cuerpo hallado sin causa de muerte informada por autoridad.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-REC-003" style="opacity:.72;">
+    <div class="nota-header"><h3>SINALOA · CULIACÁN — UN CONVOY ARMADO PRIVA DE LA LIBERTAD A CUATRO JÓVENES EN VILLAS DEL REAL; LA FISCALÍA LOS LOCALIZA CON VIDA</h3><span class="risk-flag sindato">RECUPERACIÓN</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <code>VENTANA DE ORIGEN: ARGOS 143 — HORA SOLO POR RESUMEN</code> · Culiacán · <code>FRACC. VILLAS DEL REAL, POR <i>SLUG</i> (LUZ NOTICIAS)</code> · noche del martes 27-OCT, <code>SOLO POR RESUMEN</code>; publicación del 28, por ruta (Luz Noticias 2026-10-28; El Diario de Chihuahua 2026/oct/28; El Diario del Noroeste 2026/oct/28) · <b>4 jóvenes privados de la libertad</b>, por titular (El Diario de Chihuahua; El Diario del Noroeste); <b>6</b> en la versión inicial, por titular (Julio Astillero; Azteca Sinaloa): <code>CONTRADICHO</code>; 4, precisión atribuida a la <b>Fiscalía de Sinaloa</b>, <code>SOLO POR RESUMEN</code> (🔴 privación de la libertad múltiple por un convoy armado) · dos menores de edad, <code>SOLO POR RESUMEN</code> · <b>localizados con vida</b>, por <i>slug</i> (Luz Noticias; Revista Espejo) · circunstancias de la localización: no publicadas · <b>ningún detenido publicado</b>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-REC-003</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: día y hora solo por resumen; cifra contradicha; Fiscalía solo por resumen ·
+        <b>Fuentes</b>: <b>Institucional 1</b> · <b>Nacional 2</b> · <b>Regional 5</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>Luz Noticias (2026/10/28)</b> · <b>El Diario de Chihuahua (2026/10/28)</b> · <b>El Diario del Noroeste (2026/10/28)</b> · <b>Revista Espejo (2026/10/29)</b>
+        · <b>Hecho</b>: 2026-10-27, solo por resumen (publicado el 28) · <b>Hora</b>: noche, ~22:00-23:00 (solo por resumen) · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Ventana de origen</b>: ARGOS 143 — HORA SOLO POR RESUMEN — <b>fuera de todos los totales</b><br><b>Deslindes y reservas</b>: Villas del Real no figura en las cinco ediciones previas ni en el índice. La pareja de Colinas del Rey (sin ruta propia ni día): no se integra. «8 secuestrados» (UnoTV) y «12, 14 o 15 asesinados» del 27: balances, no se integran.
+      </div>
+    </div>
+  </div>
+
+  <div class="nota" id="ARG-144-REC-004" style="opacity:.72;">
+    <div class="nota-header"><h3>SINALOA · MAZATLÁN — ABANDONAN UNA HIELERA CON UNA CABEZA HUMANA FRENTE AL PALACIO MUNICIPAL</h3><span class="risk-flag sindato">RECUPERACIÓN</span></div>
+    <div class="nota-body">
+      <div class="apartado"><span class="k">HECHO</span>
+        <code>VENTANA DE ORIGEN: ARGOS 142 — HORA SOLO POR RESUMEN</code> · Mazatlán · <code>EXTERIOR DEL PALACIO MUNICIPAL, POR TITULAR</code> · martes 27-OCT, por ruta (Central Municipal; Revista Espejo 2026/10/27) · ~06:00-06:30, <code>SOLO POR RESUMEN</code>: anterior a la apertura de ARGOS 143 (08:45 del 27) · <b>hielera con restos humanos</b>, por titular (Revista Espejo); <b>cabeza humana</b>, por titular (Central Municipal; La Razón) (🔴 restos humanos exhibidos frente a una sede de gobierno) · el Ayuntamiento <b>condena</b> el hallazgo, por titular (Revista Espejo) · dos sujetos en una camioneta, según el <b>secretario de Seguridad municipal</b>, <code>SOLO POR RESUMEN</code> · mensaje: contradicho entre medios y el secretario · <b>ningún detenido publicado</b>
+      </div>
+      <div class="apartado"><span class="k">TRAZABILIDAD</span>
+        <code>ARG-144-REC-004</code> · <b>Confianza</b>: 🟡 Medio (★★★☆☆), <b>la fija el campo peor sostenido</b>: hora solo por resumen; declaración del secretario solo por resumen ·
+        <b>Fuentes</b>: <b>Institucional 1</b> · <b>Nacional 2</b> · <b>Regional 4</b> · <b>Abierta 0</b> ·
+        con fecha en la ruta: <b>Central Municipal (2026/10/27)</b> · <b>Revista Espejo (2026/10/27)</b> · <b>La Razón (2026/10/28)</b> · <b>Infobae (2026/10/28)</b> · <b>El Diario del Noroeste (2026/10/28)</b>
+        · <b>Hecho</b>: 2026-10-27 · <b>Hora</b>: ~06:00-06:30 (solo por resumen) · <b>Consulta</b>: 2026-10-29, última búsqueda 13:39 ·
+        <b>Estatus</b>: Parcialmente corroborado · <b>Ventana de origen</b>: ARGOS 142 — HORA SOLO POR RESUMEN — <b>fuera de todos los totales</b><br><b>Deslindes y reservas</b>: En ARGOS 143 figuró solo como visto, «día no fijado»: no tuvo ficha. Palacio Municipal en el índice: otro hecho. Supervisión de tropas por el secretario de la Defensa en Mazatlán (Infobae 2026/10/28): contexto, no hecho.
+      </div>
+    </div>
+  </div>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-10-29 · Hora: 11:36 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 144</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS</h2></div>
+
+  <p class="muted-note" style="margin:0 0 6px 0;">
+    <b>Total nacional del corte</b>: en la página de panorama.
+  </p>
+  <div class="conteo">
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h15v4h-4l-1 2h-2l-2 8H6l2-10H3z"/><path d="M9 13a3 3 0 0 0 3 2"/><path d="M18 9h3"/></svg><span class="lbl">Armas cortas</span><span class="num">1</span><span class="sub">Lindavista (ARG-144-ARM-002), solo por resumen</span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9h19v3h-5l-1 2h-2l-1 5h-2l1-5H2z"/><path d="M16 14l5 5"/><path d="M6 9V7"/></svg><span class="lbl">Armas largas</span><span class="num">1</span><span class="sub">Lindavista, solo por resumen; las 3 de Jaral del Progreso, en reserva por posible duplicidad</span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v6H4z"/><path d="M8 10v10"/><path d="M16 10v10"/><path d="M12 10v6"/></svg><span class="lbl">Sin categoría</span><span class="num">3</span><span class="sub">General Bravo y China (2) y Cancún (1): tipo no publicado</span></div>
+    <div class="tile cero"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 6c2-2 4-3 5-3s3 1 5 3v12c-2 2-3 3-5 3s-3-1-5-3z"/><path d="M7 11h10"/><path d="M7 18h10"/></svg><span class="lbl">Cartuchos</span><span class="num">n/d</span><span class="sub"><code>SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE</code>; publicados sin cifra en dos eventos</span></div>
+    <div class="tile cero"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h9l-1 15-3 3H9L7 18z"/><path d="M8 8h8"/><path d="M8 12h8"/><path d="M8 16h7"/></svg><span class="lbl">Cargadores</span><span class="num">n/d</span><span class="sub"><code>SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE</code></span></div>
+    <div class="tile cero"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="14" r="6"/><path d="M10 8V5h4v3"/><path d="M14 6h4l1 3"/></svg><span class="lbl">Granadas</span><span class="num">n/d</span><span class="sub"><code>SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE</code>; las granadas de Tuxtepec (sin cifra) son de un hecho visto de la ventana de ARGOS 143</span></div>
+    <div class="tile cero"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="10" width="13" height="10" rx="1"/><path d="M16 13h3a2 2 0 0 0 2-2V8"/><circle cx="21" cy="6" r="2"/><path d="M7 14v3"/><path d="M11 14v3"/></svg><span class="lbl">AEI</span><span class="num">n/d</span><span class="sub"><code>SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE</code></span></div>
+    <div class="tile cero"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="9" width="5" height="12" rx="1"/><rect x="11" y="9" width="5" height="12" rx="1"/><path d="M13 9V6c0-2 2-2 3-3"/></svg><span class="lbl">Explosivos</span><span class="num">n/d</span><span class="sub"><code>SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE</code></span></div>
+    <div class="tile cero"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12h16l4-3v7l-4-2H2z"/><path d="M7 15v4h4"/><circle cx="18" cy="12" r="1"/></svg><span class="lbl">Armamento especial</span><span class="num">n/d</span><span class="sub"><code>SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE</code></span></div>
+    <div class="tile"><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/><path d="M8 15h16"/></svg><span class="lbl">Detenidos</span><span class="num">11</span><span class="sub"><b>en el mismo evento de aseguramiento</b>: tres eventos integrados</span></div>
+  </div>
+
+  <div class="panel" style="margin-top:8px;">
+    <div class="panel-title"><span>MAPA DE ASEGURAMIENTOS — SEMÁFORO ARGOS</span><span>GIS POR ENTIDAD</span></div>
+    <div class="map-box" id="argos-map-arm"></div>
+    <div class="map-caption">Eventos integrados: Nuevo León, Ciudad de México y Quintana Roo; Jaral del Progreso, en reserva.</div>
+  </div>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-10-29 · Hora: 11:36 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 144</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD</h2></div>
+
+  <div class="table-wrap"><table class="exec wide">
+    <thead><tr>
+      <th>ARG-ID</th><th>Entidad</th><th>Municipio</th><th>Fecha del hecho</th>
+      <th>Cortas</th><th>Largas</th><th>Sin categoría</th><th>Especial</th><th>Cartuchos</th><th>Cargadores</th><th>Granadas</th><th>AEI</th><th>Explosivos</th>
+      <th>Detenidos</th><th>Corporación</th><th>Confianza</th>
+    </tr></thead>
+    <tbody>
+      <tr id="ARG-144-ARM-001"><td><a href="#ARG-144-018"><code>ARG-144-ARM-001</code></a></td><td>Nuevo León</td><td>General Bravo y China</td><td>pub. 28-oct; día no fijado</td><td>n/d</td><td>n/d</td><td><b>2</b></td><td>n/d</td><td>n/d</td><td>n/d</td><td>n/d</td><td>n/d</td><td>n/d</td><td><b>2</b></td><td>FGJE Nuevo León <span class="muted-note">(por titular de un medio)</span></td><td><b>Bajo</b><br><span class="muted-note">2 armas sin clasificar, solo por resumen; cartuchos sin cifra; ver ARG-144-018</span></td></tr>
+      <tr id="ARG-144-ARM-002"><td><a href="#ARG-144-019"><code>ARG-144-ARM-002</code></a></td><td>Ciudad de México</td><td>Gustavo A. Madero (col. Lindavista)</td><td>pub. 28-oct; día no fijado</td><td><b>1</b></td><td><b>1</b></td><td>n/d</td><td>n/d</td><td>n/d</td><td>n/d</td><td>n/d</td><td>n/d</td><td>n/d</td><td><b>6</b></td><td>SSC, Fiscalía capitalina, SEMAR y GN <span class="muted-note">(solo por resumen)</span></td><td><b>Bajo</b><br><span class="muted-note">armas solo por resumen; cartuchos sin cifra; ver ARG-144-019</span></td></tr>
+      <tr id="ARG-144-ARM-003"><td><a href="#ARG-144-017"><code>ARG-144-ARM-003</code></a></td><td>Quintana Roo</td><td>Benito Juárez (Cancún, Cielo Nuevo)</td><td>28-oct</td><td>n/d</td><td>n/d</td><td><b>1</b></td><td>n/d</td><td>n/d</td><td>n/d</td><td>n/d</td><td>n/d</td><td>n/d</td><td><b>3</b></td><td>Policía de Cancún <span class="muted-note">(solo por resumen)</span></td><td><b>Bajo</b><br><span class="muted-note">arma sin clasificar, solo por resumen; vinculado a ARG-144-011 (🟡 en el mapa); ver ARG-144-017</span></td></tr>
+      <tr id="ARG-144-ARM-004" style="opacity:.72;"><td><a href="#ARG-144-021"><code>ARG-144-ARM-004</code></a></td><td>Guanajuato</td><td>Jaral del Progreso (col. Las Flores)</td><td>pub. 28-oct; día no fijado</td><td>n/d</td><td><b>3</b></td><td>n/d</td><td>n/d</td><td>n/d</td><td>n/d</td><td>n/d</td><td>n/d</td><td>n/d</td><td><b>2</b></td><td>Seguridad y Paz de Guanajuato y Defensa <span class="muted-note">(boletín estatal, por titular)</span></td><td><b>Medio</b><br><span class="muted-note"><code>POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN</code> (La Silla Rota 2026/10/26, misma colonia); ver ARG-144-021</span></td></tr>
+    </tbody>
+  </table></div>
+  <p class="muted-note" style="margin:6px 0 0 0;">
+    <b>Lectura regional</b>: Noreste 2 armas y 2 detenidos · Centro 2 armas y 6 detenidos · Sureste 1 arma y 3 detenidos; Noroeste, Occidente y Golfo, sin evento integrado. <b>Cálculo propio</b>.
+    <br><b>Eventos cualitativos sin cantidad</b>: ninguno en la ventana · Matamoros (ARG-144-016): armamento no publicado.
+    <br><code>VISTOS, NO INTEGRADOS</code>: <b>Tuxtepec, Oax.</b> («El Semáforo»): armas y granadas sin cifra, <code>SOLO POR RESUMEN</code>; día no fijado, posible operativo del 27 (ventana de ARGOS 143) · <b>boletín federal del 27-oct</b> (acciones del 27, ventana de ARGOS 143; solo por republicadores, misma fuente): Cocula, Gro. (4 cargadores, 115 cartuchos), Sinaloa (1 ametralladora, 530 cartuchos), Huajicori, Nay. (1 larga, cargadores y cartuchos), todo <code>SOLO POR RESUMEN</code> · <b>Alfredo V. Bonfil, Culiacán</b> (Marina; 3 largas, 3 cargadores, 46 cartuchos, <code>SOLO POR RESUMEN</code>; ventana de ARGOS 142 o 143) · <b>Xochitlán de las Flores, Hgo.</b> (27-oct, Síntesis 2026/10/27: 1 corta, 1 larga, 1 cargador, 3 detenidos) · <b>agregado de la SSP de Veracruz</b> (operativos del 26 y 27, publicado el 28: 3 largas, 1 corta, 38 detenidos, <code>SOLO POR RESUMEN</code>) · <b>Hermosillo, 5 de Mayo</b> (27-oct, 1 arma, 1 detenido).
+  </p>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-10-29 · Hora: 11:36 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 144</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES</h2></div>
+
+  <div class="conteo">
+    <div class="tile cero"><span class="lbl">Sentencias condenatorias</span><span class="num">0</span><span class="sub"><code>NINGUNA SENTENCIA INTEGRABLE EN LA VENTANA</code></span></div>
+    <div class="tile cero"><span class="lbl">Personas sentenciadas</span><span class="num">0</span><span class="sub">ningún boletín de la ventana leído</span></div>
+    <div class="tile cero"><span class="lbl">Pena acumulada</span><span class="num">0</span><span class="sub"><b>ningún caso integrable</b></span></div>
+    <div class="tile cero"><span class="lbl">Reparación del daño</span><span class="num">0</span><span class="sub"><b>ningún monto integrable</b></span></div>
+    <div class="tile cero"><span class="lbl">Fiscalías con resultado</span><span class="num">0</span><span class="sub">ver indicador de cobertura</span></div>
+  </div>
+
+  <div class="section-head" style="margin-top:10px;">CANDIDATOS</div>
+  <div class="table-wrap"><table class="exec wide">
+    <thead><tr><th>Entidad · Municipio</th><th>Caso</th><th>Pena publicada</th><th>Autoridad</th><th>Por qué NO se integra</th><th>Confianza</th></tr></thead>
+    <tbody>
+      <tr><td><b>Nuevo León</b><br>Doctor Arroyo</td><td>Homicidio simple (San Ignacio de Torres, marzo de 2025, <code>SOLO POR RESUMEN</code>); <b>1 sentenciado</b>, Edgar «N», <code>SOLO POR RESUMEN</code> · <b>nuevo en ARGOS 144</b></td><td><b>15 años</b>, por titular (MVS 2026/10/28); reparación sin monto: <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code></td><td>FGJE Nuevo León <span class="muted-note">(solo por resumen)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL</code> · boletín no localizado en el dominio; firmeza no informada</td><td>Bajo</td></tr>
+      <tr><td><b>Nuevo León</b><br>sin municipio publicado</td><td>Abuso contra una menor; segunda instancia <b>revoca una absolución</b>, por titular · <b>nuevo en ARGOS 144</b></td><td><b>40 años</b>, por titular (MVS 2026/10/28)</td><td>Tribunal de alzada <span class="muted-note">(por titular)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · solo titular; sin campos individualizadores</td><td>No confirmado</td></tr>
+      <tr><td><b>Puebla</b><br>Huejotzingo</td><td>Feminicidio de su pareja embarazada; <b>1 sentenciado</b>, expolicía, por titular · <b>nuevo en ARGOS 144</b></td><td><b>55 años</b>, por titular (Heraldo de Puebla; Retodiario 2026/10/29)</td><td>FGE Puebla <span class="muted-note">(por medios)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · sin boletín en <code>fiscalia.puebla.gob.mx</code>; día del fallo no fijado</td><td>Bajo</td></tr>
+      <tr><td><b>Estado de México</b><br>Ecatepec</td><td>Homicidio y homicidio en grado de tentativa; <b>1 sentenciada</b>, por titular · <b>nuevo en ARGOS 144</b></td><td><b>68 años</b>, por titular (Línea por Línea 2026/10/28)</td><td>FGJEM <span class="muted-note">(por medios)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · fuente única; no es el caso de Fresnillo</td><td>No confirmado</td></tr>
+      <tr><td><b>Tabasco</b><br>Tenosique</td><td>Armas y granadas; <b>1 sentenciado</b>, por titular · <b>nuevo en ARGOS 144</b></td><td>No publicada en titular</td><td>FGR <span class="muted-note">(informado el 28, solo por resumen)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · comunicado no localizado; sin fecha en la ruta</td><td>No confirmado</td></tr>
+      <tr><td><b>Baja California</b><br>Tijuana</td><td>Robo con violencia; procedimiento abreviado, por titular · <b>nuevo en ARGOS 144</b></td><td><b>más de 3 años</b>, por titular (Uniradio); 3 años 6 meses, <code>SOLO POR RESUMEN</code></td><td>FGE Baja California <span class="muted-note">(por titular)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · sin fecha en la ruta; sin campos individualizadores</td><td>No confirmado</td></tr>
+      <tr><td><b>Zacatecas</b><br>Fresnillo</td><td>Homicidio calificado, tentativa y daño doloso; Juan Manuel «N» · <b>candidato de ARGOS 143, sin cambio</b></td><td><b>68 años</b>, por titular (ECOdiario); 68 años 8 meses, <code>SOLO POR RESUMEN</code></td><td>FGJ Zacatecas <span class="muted-note">(por medios)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · boletín no localizado; publicación anterior a esta ventana (ya listada por ARGOS 143)</td><td>Bajo</td></tr>
+      <tr><td><b>Hidalgo</b><br>Santiago Tulantepec</td><td>Triple feminicidio; fallo condenatorio publicado el 9-oct · <b>candidato de ARGOS 140 a 143</b></td><td><b>Sin pena</b>: la audiencia de individualización del 28-oct entró en receso por un corte de energía y continúa el 5-nov, <code>SOLO POR RESUMEN</code>; penas de 40 a 90 años: proyección de los abogados de las víctimas, no resolución</td><td>Tribunal de Enjuiciamiento <span class="muted-note">(por medios)</span></td><td><code>FALLO SIN PENA — PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · <code>procuraduria.hidalgo.gob.mx</code> sin boletín indexado</td><td>Bajo</td></tr>
+      <tr><td><b>Coahuila</b><br>Ramos Arizpe</td><td>Transporte de metanfetamina · <b>candidato de ARGOS 141 a 143, sin cambio</b></td><td>«más de 7 años», por titular (El Siglo de Torreón)</td><td>FGR</td><td><code>POSIBLE CASO HOMÓNIMO — NO INTEGRAR HASTA VALIDACIÓN</code> · dominio estatal sin páginas</td><td>No confirmado</td></tr>
+    </tbody>
+  </table></div>
+  <p class="muted-note" style="margin:6px 0 0 0;">
+    <b>Publicadas antes de la ventana, no integrables</b>: FGR Nayarit, Tepic (El Jicote), 15 años 6 meses (26-oct, <code>SOLO POR RESUMEN</code>) · FGE Querétaro (5, 6, 8 y 22-oct, por ruta) · FGE Jalisco, comunicado 1939 (19-oct) · FGE Colima, boletín 4978 (15-oct) · Tamaulipas FGJE-412 (26-oct) · Ensenada, 158 años 9 meses (individualización del 16-oct) · Nuevo León, 155 años (13-oct). <code>NO SE INTEGRAN</code>.
+  </p>
+  <div class="section-head" style="margin-top:10px;">INDICADOR DE COBERTURA</div>
+  <div class="table-wrap"><table class="exec">
+    <thead><tr><th>Renglón</th><th>Resultado</th></tr></thead>
+    <tbody>
+      <tr><td><b>FGR revisada</b></td><td><b>Sí</b>, por búsqueda dirigida: listado de <code>fgr.org.mx</code> sin comunicado de la ventana: <code>SIN RESULTADO INDEXADO EN VENTANA</code></td></tr>
+      <tr><td><b>Fiscalías revisadas en sentencias</b></td><td><b>15 de 32</b>, por búsqueda dirigida que devolvió páginas del dominio; acceso directo: 0 · BC, BCS, Dgo · SLP, Zac, NL, Tamps · Jal, Col, Mich · Pue, Qro, Hgo · Ver, Tab · <b>de ellas, 2 solo devolvieron páginas estadísticas o normativas</b>: NL, Hgo</td></tr>
+      <tr><td><b>Fiscalías con sentencia publicada en la ventana</b></td><td><b>0</b> en dominio oficial</td></tr>
+      <tr><td><code>SIN RESULTADO INDEXADO EN VENTANA</code></td><td><b>15</b> fiscalías estatales revisadas</td></tr>
+      <tr><td><code>SIN ACTUALIZACIÓN CONSTATADA</code></td><td><b>0</b></td></tr>
+      <tr><td><b>Dominio consultado sin páginas devueltas</b></td><td><b>3</b>: Son · Coah · Camp (dominio real de la fiscalía no confirmado)</td></tr>
+      <tr><td><code>NO REVISADA</code> — sentencias</td><td><b>14</b>: Chih, Sin · Nay, Ags, Gto · CDMX, Edomex, Mor, Tlax · Chis, Oax, Gro, Yuc, QRoo</td></tr>
+      <tr><td><b>Páginas no disponibles · errores de acceso</b></td><td><b>Fuentes con error de acceso</b>: bloqueo de egreso: <code>curl</code> a <code>www.gob.mx/fgr</code>, 29-oct 11:36: código <code>000</code> · <b>dominio hallado en esta edición</b>: <code>spsc.campeche.gob.mx</code> (SSP de Campeche)</td></tr>
+      <tr><td><b>Alto impacto y armamento</b></td><td><b>Alto impacto: 22 de 32 con consulta propia por entidad</b> · <b>10 solo por consulta regional amplia</b>: BCS · NL, Zac, Coah · Hgo, Qro · Oax, Camp, Yuc, QRoo · <b>Jal, Col, Nay, Ags y Dgo, con consulta propia</b> · <b>armamento: 16 de 32 por dominio oficial</b> —BC · SLP, Tamps · Col, Mich, Gto (boletín del gobierno estatal) · Edomex, Mor, Hgo, Qro · Ver, Tab · Gro, Yuc, QRoo, Chis—, todas <code>SIN RESULTADO INDEXADO EN VENTANA</code> salvo Gto (Jaral del Progreso) · dominio sin páginas: Son, Coah, Oax · <code>NO REVISADA</code> (13): BCS, Chih, Sin, Dgo · NL, Zac · Jal, Nay, Ags · CDMX, Pue, Tlax · Camp</td></tr>
+      <tr><td><b>Boletín federal</b></td><td><b>Acciones del 27-oct</b>: publicadas solo por republicadores (Milenio, RED113): misma fuente, sin indexar en <code>gob.mx</code>; ventana de ARGOS 143 · <b>acciones del 28-oct</b>: <code>SIN RESULTADO INDEXADO EN VENTANA</code> en día suelto, por rango y por título (al arrancar la ola y a las 13:39) · Guardia Nacional, Defensa y ANAM: <code>NO REVISADAS</code> · Semar: por medios</td></tr>
+      <tr><td><b>Techo de confianza del producto</b></td><td><b>★★★★☆</b> (techo de política) · esta edición no supera <b>★★★☆☆</b>: sin lectura directa de documento oficial · <code>BLOQUEO DE EGRESO REVERIFICADO EL 29-OCT 11:36: GOB.MX</code></td></tr>
+    </tbody>
+  </table></div>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-10-29 · Hora: 11:36 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 144</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+<section class="page">
+  <div class="section-head"><h2 style="font-size:14px;">VALORACIÓN ARGOS, CONCLUSIONES E INDICADORES</h2></div>
+
+  <div class="alerta contexto">
+    <div class="flag">VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL</div>
+    <p>
+      <b>1.</b> <b>Nueve rojos propios en 8 entidades</b> (cálculo propio): tres contra una autoridad, un servidor público o una persona defensora (Son, Mich, Chis), un narcobloqueo (Tamps), dos homicidios múltiples (Gto) y tres hallazgos de fosa o restos (SLP, Edomex, Gro): <b>incremento del riesgo nacional acreditado</b> frente a ARGOS 143.
+      <br><b>2.</b> <b>Violencia operativa</b>: seis amarillos —cuatro homicidios dolosos únicos, una agresión con dos heridos y un cuerpo hallado— en cuatro entidades (cálculo propio).
+      <br><b>3.</b> <b>Guanajuato</b>: cinco de los veintiún hechos propios, dos de ellos rojos (cálculo propio).
+      <br><b>4.</b> <b>Respuesta institucional</b>: seis verdes; 5 armas y 11 detenidos en tres aseguramientos integrados, todos con cifra solo por resumen o por titular de medios; ninguna sentencia integrable (cálculo propio).
+      <br><b>5.</b> <code>ONCE DE VEINTIÚN HECHOS CON CLÁUSULA DE RETIRO Y CUATRO ROJOS RECUPERADOS DE ARGOS 142 Y 143; VENTANA DE 27 H 08 MIN: TOTALES NO COMPARABLES CON ARGOS 143 SIN NORMALIZAR POR HORA. CÁLCULO PROPIO.</code>
+    </p>
+  </div>
+
+  <div class="alerta contexto" style="margin-top:8px;">
+    <div class="flag">CONCLUSIONES DE INTELIGENCIA CRIMINAL</div>
+    <p>
+      <b>1. TRES AGENTES DE CORPORACIONES ESTATALES MUERTOS EN TRES ATAQUES, EN TRES DÍAS Y TRES ESTADOS</b> (cálculo propio, 26 al 28-oct): ARG-142-001 (Tecate, agente estatal en patrullaje), ARG-142-003 (Tehuacán, agente de la FGE) y ARG-144-001 (Magdalena de Kino, agente de la AMIC dentro de su sede). Línea: <b>solicitar a las fiscalías de Baja California, Puebla y Sonora el cotejo balístico entre los tres hechos y auditar la protección de las sedes ministeriales</b>.
+      <br><b>2. INDAPARAPEO: SEGUNDO ATAQUE EN CINCO DÍAS</b> (cálculo propio, 23 y 28-oct): ARG-140-016 (disparos contra una base de seguridad, sin lesionados) y ARG-144-002 (regidor y su esposa asesinados). Línea: <b>solicitar a la Fiscalía de Michoacán el cotejo de los casquillos de ambos hechos y vigilar la comunidad El Triunfo</b>.
+      <br><b>3. RESTOS HUMANOS EXHIBIDOS ANTE SEDES DE AUTORIDAD: DOS EN VEINTICUATRO HORAS, EN DOS ESTADOS</b> (cálculo propio, 27 y 28-oct): ARG-144-REC-004 (Mazatlán, Palacio Municipal) y ARG-144-REC-002 (Coatzacoalcos, Poder Judicial de la Federación), ambos con mensaje según medios; ARG-144-009 (Acapulco, restos arrojados en la vía pública el 29). Línea: <b>solicitar a las fiscalías de Sinaloa y Veracruz el texto íntegro de los mensajes y la identificación genética; vigilar sedes municipales y judiciales</b>.
+      <br><b>4. ACÁMBARO: TERCER HOMICIDIO MÚLTIPLE EN DIEZ DÍAS, SIETE MUERTOS</b> (cálculo propio, 19 al 28-oct; desarrolla la Conclusión 1 de ARGOS 143): ARG-143-REC-003 (2), ARG-142-004 (2) y ARG-144-003 (3, con escopeta; móvil vecinal solo por resumen). Línea: <b>solicitar a la Fiscalía de Guanajuato el cotejo balístico de los tres hechos</b>.
+      <br><b>5. IRAPUATO: CINCO HECHOS CON VÍCTIMAS EN EL ÍNDICE EN QUINCE DÍAS, OCHO MUERTOS</b> (cálculo propio, 14 al 28-oct): ARG-133-010, ARG-134-REC-001, ARG-140-014, ARG-144-005 y ARG-144-013, los dos últimos el mismo 28-oct en colonias distintas. Línea: <b>solicitar a la Fiscalía de Guanajuato el cotejo balístico de los hechos del 28 entre sí y con ARG-140-014</b>.
+    </p>
+  </div>
+
+  <div class="section-head" style="margin-top:10px;">INDICADORES OFICIALES</div>
+  <p class="muted-note" style="margin:0;">
+    <b>gabinetedeseguridad.gob.mx</b> — <code>SIN RESULTADO INDEXADO EN VENTANA</code>; lectura directa no disponible. <b>SESNSP e INEGI</b>: <code>NO REVISADOS</code> en esta edición · <b>FGR</b>: SRIV (<code>fgr.org.mx</code>).
+    <br><b>Toda cifra de este cartelón sin emisor nombrado es cálculo propio de ARGOS.</b> Los ARG-ID de ediciones previas citados en las conclusiones, cotejados contra el índice de ARG-ID.
+  </p>
+
+  <footer class="footbar">
+    <span>Versión 3.0</span>
+    <span>Fecha: 2026-10-29 · Hora: 11:36 (CDMX)</span>
+    <span>Corte: Matutino</span>
+    <span>ARGOS N.° 144</span>
+    <span class="uso">USO INSTITUCIONAL</span>
+  </footer>
+</section>
+
+<script>
+const MEXICO_VIEWBOX = "0 0 900 520";
+const MEXICO_PATHS = {
+  "MX-ZAC": { name: "Zacatecas", d: "M452 234L451 235L448 240L445 241L444 244L440 245L439 247L439 250L440 251L439 254L438 255L433 257L432 258L429 263L424 265L422 268L419 268L416 267L415 269L416 271L415 272L416 275L415 280L416 283L420 285L422 287L425 288L427 291L428 292L432 291L436 286L439 285L441 288L440 290L437 296L437 298L438 301L437 305L435 309L434 309L431 308L429 305L426 304L423 303L421 300L421 299L418 297L415 295L415 293L412 296L409 298L406 299L404 303L402 307L400 310L400 311L403 313L403 316L403 317L406 319L406 322L405 323L402 325L399 328L397 327L395 328L395 330L393 331L392 331L388 332L385 331L382 330L380 328L378 327L378 326L383 324L383 322L382 322L380 322L379 319L381 319L383 317L383 312L386 310L388 308L393 306L394 304L395 300L394 299L392 299L392 296L390 296L388 296L388 298L389 299L386 301L385 304L383 303L382 304L380 304L380 302L383 296L383 293L380 291L376 292L376 300L375 301L374 300L373 298L373 295L374 292L376 289L377 288L377 287L375 286L373 287L371 288L371 289L372 293L373 295L372 296L370 296L371 293L370 293L367 294L367 296L365 297L364 298L363 296L363 294L364 291L365 289L368 288L369 283L369 281L368 278L368 277L370 274L371 268L371 266L374 263L376 260L375 256L376 255L376 251L375 248L377 247L380 245L382 242L384 240L386 238L390 238L392 239L395 238L400 239L400 238L402 239L408 238L409 236L408 232L406 232L407 227L405 225L404 223L403 221L403 220L410 218L419 219L422 221L424 222L426 223L428 226L431 226L431 229L434 230L435 229L438 228L441 229L442 230L444 233L445 235L447 235L450 234L452 234Z" },
+  "MX-YUC": { name: "Yucatán", d: "M787 319L787 324L786 326L785 329L787 333L787 334L784 339L784 341L783 342L777 347L775 348L772 348L771 347L770 348L768 350L766 351L765 354L761 356L759 356L755 359L754 360L752 361L748 362L746 363L745 364L740 365L740 367L739 369L738 365L735 362L734 359L730 357L728 352L726 351L726 349L724 347L722 349L721 348L720 348L718 346L715 345L715 338L714 337L716 333L717 332L722 328L725 327L729 325L733 324L740 323L747 322L754 321L759 319L759 318L765 317L767 317L770 317L772 315L774 316L776 317L779 317L781 318L785 319L787 319Z" },
+  "MX-VER": { name: "Veracruz", d: "M528 298L529 303L531 308L530 309L531 311L531 314L534 319L535 319L536 323L537 324L538 328L542 336L543 337L544 341L545 343L549 347L549 348L555 355L559 360L560 361L562 364L563 367L564 372L566 374L565 376L566 379L569 380L571 383L571 385L572 386L574 386L575 390L577 392L577 394L580 394L584 395L594 395L599 399L603 400L606 404L608 407L609 409L610 410L612 411L615 410L622 408L621 409L621 414L622 415L622 418L624 420L626 422L630 424L632 427L631 430L632 432L634 433L630 436L628 437L627 438L609 437L598 436L599 435L597 432L595 431L593 429L591 426L591 424L593 423L591 422L590 423L586 424L583 426L580 426L579 427L577 427L575 422L575 420L576 419L578 414L577 411L576 410L573 409L571 409L569 409L567 408L566 406L565 405L564 406L561 403L560 400L561 399L559 397L559 400L557 403L555 401L553 400L550 402L548 401L547 398L543 396L542 394L542 391L544 389L544 388L544 381L549 381L549 378L546 377L542 376L540 375L541 374L539 370L540 369L542 364L542 363L544 358L546 355L539 352L536 356L535 356L534 354L531 354L530 351L530 347L532 346L533 347L535 345L534 344L531 341L531 339L531 336L528 336L526 339L525 340L525 343L522 342L520 344L519 345L517 347L514 349L512 350L510 347L511 343L511 339L512 338L515 336L517 337L518 337L518 335L518 333L520 331L518 327L516 326L515 327L512 326L510 325L511 323L510 321L509 317L508 317L507 316L507 313L510 312L511 310L509 308L509 306L511 306L511 305L511 302L512 301L515 301L513 298L512 297L508 296L506 296L505 294L507 293L511 293L514 294L516 294L516 293L518 292L519 294L522 295L523 295L526 299L528 298ZM533 309L534 311L537 314L540 316L540 318L538 323L537 323L539 319L539 318L537 316L536 314L533 311L533 309Z" },
+  "MX-TLA": { name: "Tlaxcala", d: "M508 374L507 374L506 372L511 370L514 370L517 367L519 368L522 368L523 366L529 371L529 373L531 372L533 374L533 375L534 376L533 378L530 378L528 381L526 381L524 380L521 383L520 383L516 381L515 378L510 374L508 374Z" },
+  "MX-TAM": { name: "Tamaulipas", d: "M528 298L526 299L523 295L522 295L519 294L518 292L516 293L516 294L514 294L511 293L507 293L505 294L502 295L500 294L499 294L495 294L493 294L491 291L490 289L488 286L486 286L485 284L483 286L481 286L478 285L473 284L472 283L472 279L472 276L471 274L471 271L470 270L470 268L474 268L473 264L474 262L475 261L476 258L478 256L481 257L483 256L484 254L486 255L485 252L484 252L483 248L481 245L482 240L481 237L478 236L479 234L481 233L484 231L486 229L487 229L488 228L492 227L492 226L494 225L494 223L493 221L496 218L497 219L500 219L502 216L506 215L509 213L511 212L513 209L510 208L509 204L510 202L509 200L509 197L508 194L503 194L501 196L500 195L498 192L494 192L493 188L491 189L489 186L487 184L486 179L484 179L483 177L481 177L481 172L478 170L479 167L481 166L480 163L479 162L479 158L478 157L479 155L477 155L474 154L475 152L478 151L480 149L483 150L485 152L485 153L486 154L485 158L486 160L487 162L487 167L488 168L491 171L493 178L494 180L496 182L495 183L499 184L502 185L504 186L506 188L508 188L514 191L517 193L519 193L521 193L524 193L526 193L529 194L530 194L532 195L535 198L537 199L539 198L540 197L543 196L545 196L545 198L544 203L543 205L539 212L538 211L535 210L535 212L535 214L533 214L533 212L531 212L530 216L531 217L529 223L531 224L529 227L530 229L530 231L530 232L529 234L527 235L528 239L529 238L530 241L529 246L529 255L530 259L529 266L529 277L529 281L528 283L527 285L526 288L527 289L526 293L527 295L528 298Z" },
+  "MX-TAB": { name: "Tabasco", d: "M662 397L664 401L667 404L668 404L669 405L669 407L672 412L676 415L676 416L679 417L681 418L684 417L685 413L688 413L691 414L693 415L700 418L700 420L700 435L689 435L690 434L689 432L686 430L684 430L683 429L684 427L683 423L680 422L680 420L679 418L677 418L674 418L674 419L670 419L669 420L669 422L667 423L662 428L660 429L656 432L654 432L653 429L650 428L650 426L648 423L649 420L649 418L647 418L645 417L642 415L640 416L640 419L640 422L639 425L636 428L636 430L634 433L632 432L631 430L632 427L630 424L626 422L624 420L622 418L622 415L621 414L621 409L622 408L627 407L627 408L630 408L630 406L634 406L635 404L639 403L644 403L645 405L647 404L648 403L652 403L655 401L657 398L662 397Z" },
+  "MX-SON": { name: "Sonora", d: "M163 106L163 108L165 112L164 116L163 119L156 116L158 114L158 112L158 108L161 106L163 106ZM252 48L253 49L252 50L254 54L254 56L254 59L253 61L255 62L255 65L256 66L255 67L256 69L258 76L257 79L259 82L257 85L257 90L259 90L259 97L259 99L258 101L259 107L257 107L257 110L256 111L256 114L255 115L256 117L254 120L254 122L255 124L254 125L256 128L258 129L256 131L253 132L250 131L249 132L246 132L245 133L247 135L246 138L249 139L251 142L251 144L250 146L254 148L257 156L257 157L256 161L256 164L255 165L259 167L261 166L263 166L263 168L259 172L260 174L258 175L256 179L252 180L251 183L249 184L245 186L244 185L242 184L240 183L240 182L239 180L235 176L235 175L233 174L232 176L229 176L227 175L224 173L223 169L223 165L221 164L219 165L218 164L213 163L209 159L209 157L207 156L206 154L206 152L205 150L206 148L205 146L206 143L204 143L199 141L197 143L196 141L194 141L189 138L187 135L184 131L183 129L178 127L176 123L172 120L173 118L170 116L168 114L166 113L166 109L165 106L164 103L162 104L160 103L160 102L161 100L161 98L158 96L157 93L156 93L154 89L154 88L152 87L152 85L151 83L151 80L151 79L149 77L149 74L148 72L145 70L143 66L142 62L143 57L144 55L143 52L140 51L136 50L131 49L129 48L130 47L129 44L123 41L119 44L116 44L113 42L112 41L107 38L105 36L103 36L102 36L101 35L100 35L94 31L95 28L95 26L95 24L94 22L96 20L97 16L99 16L121 23L147 32L165 38L180 43L194 48L209 48L227 48L252 48ZM100 35L103 37L102 39L100 37L100 36L100 35Z" },
+  "MX-SIN": { name: "Sinaloa", d: "M268 221L270 224L270 226L268 224L268 221ZM263 219L264 220L269 225L268 226L266 222L263 219ZM241 186L242 186L242 184L244 185L245 186L249 184L251 183L252 180L256 179L258 175L260 174L259 172L263 168L263 166L268 166L269 167L269 169L270 169L271 172L271 177L272 178L273 181L275 184L276 186L278 190L281 191L284 192L287 192L290 197L290 200L292 203L292 205L290 207L291 209L290 212L290 217L290 219L291 219L293 224L294 227L297 227L298 229L299 229L300 234L302 234L302 238L304 242L305 242L310 239L311 238L315 239L317 240L320 245L320 247L322 252L323 253L323 256L325 259L327 261L328 264L329 266L328 267L330 270L331 274L335 274L337 276L336 277L335 280L334 282L334 285L335 286L336 290L335 291L332 290L330 289L329 289L329 291L325 286L322 283L321 282L316 276L310 271L309 268L308 266L306 264L302 259L299 255L299 254L297 251L292 247L290 245L287 243L286 243L282 240L284 239L284 237L282 235L281 237L277 236L276 234L272 232L271 230L271 228L270 221L269 219L267 219L265 217L262 215L261 217L260 215L254 212L252 211L251 209L252 208L250 207L248 207L249 208L248 210L247 208L245 209L243 207L245 206L247 206L248 205L248 204L245 204L245 206L242 205L239 202L235 200L236 198L235 196L235 195L237 191L239 190L240 187L241 186Z" },
+  "MX-SLP": { name: "San Luis Potosí", d: "M470 270L471 271L471 274L472 276L472 279L472 283L473 284L478 285L481 286L483 286L485 284L486 286L488 286L490 289L491 291L493 294L495 294L499 294L500 294L502 295L505 294L506 296L508 296L512 297L513 298L515 301L512 301L511 302L511 305L511 306L509 306L509 308L511 310L510 312L507 313L507 316L508 317L509 317L510 321L508 321L506 323L505 326L504 325L503 327L500 326L499 323L497 324L492 319L491 317L489 317L488 320L483 320L482 317L480 316L478 318L476 319L471 319L469 317L465 314L461 313L460 314L460 317L458 317L456 318L451 315L449 313L446 312L441 310L440 310L437 309L435 309L437 305L438 301L437 298L437 296L440 290L441 288L439 285L436 286L432 291L428 292L427 291L425 288L422 287L420 285L416 283L415 280L416 275L415 272L416 271L415 269L416 267L419 268L422 268L424 265L429 263L432 258L433 257L438 255L439 254L440 251L439 250L439 247L440 245L444 244L445 241L448 240L451 235L452 237L455 238L456 240L454 241L456 244L456 245L459 248L460 251L459 255L460 257L460 260L459 263L460 264L460 269L462 272L463 272L466 270L470 270Z" },
+  "MX-ROO": { name: "Quintana Roo", d: "M807 343L806 346L802 351L800 352L800 350L800 348L802 345L804 345L807 343ZM746 416L746 414L748 411L749 408L749 404L748 403L749 401L748 399L747 397L747 395L748 391L748 388L749 387L749 381L747 377L744 374L741 371L739 369L740 367L740 365L745 364L746 363L748 362L752 361L754 360L755 359L759 356L761 356L765 354L766 351L768 350L770 348L771 347L772 348L775 348L777 347L783 342L784 341L784 339L787 334L787 333L785 329L786 326L787 324L787 319L791 320L795 320L797 319L798 316L800 317L803 321L804 325L805 326L805 328L806 329L805 332L803 336L800 340L798 343L794 347L792 349L791 352L790 353L788 358L789 362L788 365L786 365L784 368L782 369L781 371L784 373L785 372L789 371L790 372L789 374L787 376L786 376L784 377L783 382L784 381L786 379L787 378L789 379L787 382L786 385L784 389L783 394L782 395L781 403L779 406L779 409L778 408L778 405L777 404L777 403L773 401L775 396L775 393L773 391L768 400L768 401L763 401L762 402L761 405L760 406L760 409L758 410L757 413L756 414L755 415L753 417L749 415L747 415L746 416Z" },
+  "MX-QUE": { name: "Querétaro", d: "M497 324L496 327L491 329L490 328L488 329L489 331L487 334L485 336L484 339L485 341L483 343L477 344L476 351L475 352L474 354L474 356L472 358L469 359L466 355L466 354L464 352L463 350L461 348L460 346L460 344L458 340L458 338L459 335L464 335L465 334L468 334L470 333L470 330L473 327L474 326L476 328L479 326L480 323L477 323L479 321L478 318L480 316L482 317L483 320L488 320L489 317L491 317L492 319L497 324Z" },
+  "MX-PUE": { name: "Puebla", d: "M557 403L554 407L552 408L548 411L545 410L543 411L541 413L540 415L538 415L538 413L535 409L534 408L535 407L535 405L532 406L530 410L532 413L531 415L529 415L527 413L525 414L522 414L520 414L518 416L517 417L515 416L514 414L509 415L509 414L505 412L505 410L502 411L501 408L499 406L499 405L501 403L502 402L504 400L507 403L508 402L506 395L508 388L509 386L509 382L508 379L509 376L508 374L510 374L515 378L516 381L520 383L521 383L524 380L526 381L528 381L530 378L533 378L534 376L533 375L533 374L531 372L529 373L529 371L523 366L522 368L519 368L518 363L520 360L521 355L520 353L518 353L517 351L521 350L522 348L525 346L525 343L525 340L526 339L528 336L531 336L531 339L531 341L534 344L535 345L533 347L532 346L530 347L530 351L531 354L534 354L535 356L536 356L539 352L546 355L544 358L542 363L542 364L540 369L539 370L541 374L540 375L542 376L546 377L549 378L549 381L544 381L544 388L544 389L542 391L542 394L543 396L547 398L548 401L550 402L553 400L555 401L557 403Z" },
+  "MX-OAX": { name: "Oaxaca", d: "M627 438L627 441L626 442L625 446L622 448L620 455L620 456L621 459L621 461L621 464L619 465L615 463L614 462L613 462L613 464L614 465L618 465L621 468L616 466L613 465L606 464L608 462L609 461L607 460L605 461L602 458L600 458L599 461L598 461L596 463L601 463L601 464L592 466L590 467L589 469L588 470L584 471L582 472L580 472L578 473L574 474L570 476L567 478L563 478L561 479L559 479L556 477L552 477L548 475L547 474L543 472L540 471L538 471L535 471L529 470L525 467L518 463L513 462L509 461L514 457L514 455L517 453L518 451L519 450L521 449L522 447L523 445L522 443L520 442L520 438L517 437L517 435L518 434L518 429L515 424L515 421L517 417L518 416L520 414L522 414L525 414L527 413L529 415L531 415L532 413L530 410L532 406L535 405L535 407L534 408L535 409L538 413L538 415L540 415L541 413L543 411L545 410L548 411L552 408L554 407L557 403L559 400L559 397L561 399L560 400L561 403L564 406L565 405L566 406L567 408L569 409L571 409L573 409L576 410L577 411L578 414L576 419L575 420L575 422L577 427L579 427L580 426L583 426L586 424L590 423L591 422L593 423L591 424L591 426L593 429L595 431L597 432L599 435L598 436L609 437L627 438Z" },
+  "MX-NLE": { name: "Nuevo León", d: "M480 149L478 151L475 152L474 154L477 155L479 155L478 157L479 158L479 162L480 163L481 166L479 167L478 170L481 172L481 177L483 177L484 179L486 179L487 184L489 186L491 189L493 188L494 192L498 192L500 195L501 196L503 194L508 194L509 197L509 200L510 202L509 204L510 208L513 209L511 212L509 213L506 215L502 216L500 219L497 219L496 218L493 221L494 223L494 225L492 226L492 227L488 228L487 229L486 229L484 231L481 233L479 234L478 236L481 237L482 240L481 245L483 248L484 252L485 252L486 255L484 254L483 256L481 257L478 256L476 258L475 261L474 262L473 264L474 268L470 268L470 270L466 270L463 272L462 272L460 269L460 264L459 263L460 260L460 257L459 255L460 251L459 248L456 245L456 244L454 241L456 240L455 238L452 237L451 235L452 234L453 231L452 229L451 227L451 224L453 225L453 222L452 219L454 216L456 215L457 214L458 214L460 216L463 217L465 217L466 215L464 212L461 212L461 211L457 208L456 204L454 204L452 203L451 202L451 199L452 196L449 194L448 191L446 189L441 184L442 183L444 181L445 178L446 177L449 177L451 176L455 175L456 173L457 173L458 170L457 165L455 164L454 165L453 167L451 165L450 162L451 160L453 158L455 158L457 157L459 157L460 156L459 154L461 151L462 149L463 148L467 148L472 149L475 148L477 146L478 147L480 149Z" },
+  "MX-NAY": { name: "Nayarit", d: "M305 313L308 314L309 316L308 317L306 316L305 313ZM363 294L363 296L364 298L363 303L364 306L365 306L368 308L368 309L369 312L373 313L374 314L375 317L377 318L377 320L377 324L376 325L374 326L372 327L371 328L366 328L366 332L365 337L363 338L364 342L361 339L360 338L358 335L354 334L353 333L350 332L347 335L345 334L343 335L342 338L339 341L338 339L337 340L334 338L335 336L339 332L340 332L341 330L341 327L341 323L342 320L341 318L340 318L336 316L335 314L334 311L331 306L330 303L330 300L333 302L335 303L335 301L331 298L331 297L331 292L330 289L332 290L335 291L336 290L335 286L334 285L334 282L335 280L336 277L337 276L339 279L341 278L342 277L344 279L347 279L348 282L349 282L349 285L346 287L345 288L347 291L348 292L351 288L352 290L354 291L356 293L357 295L359 296L360 295L363 294ZM310 319L312 319L312 321L309 319L310 319Z" },
+  "MX-MOR": { name: "Morelos", d: "M501 385L503 388L506 389L508 387L509 386L508 388L506 395L508 402L507 403L504 400L502 402L501 403L499 405L496 403L491 402L489 399L486 399L486 397L488 394L491 388L492 385L494 385L495 386L497 385L498 386L501 385Z" },
+  "MX-MIC": { name: "Michoacán", d: "M464 352L466 354L466 355L469 359L469 361L470 363L469 364L468 367L466 368L467 371L467 374L467 376L466 377L466 380L464 382L462 386L460 387L459 389L457 391L455 393L455 392L453 393L454 398L454 401L457 405L456 406L451 403L449 404L447 401L445 401L440 400L438 401L434 401L433 401L432 399L430 398L427 400L426 399L425 401L425 404L425 405L425 407L422 409L421 409L419 410L418 411L418 415L419 416L417 417L415 416L410 414L402 412L397 410L394 409L391 408L385 406L384 404L382 401L379 398L380 398L378 396L379 394L381 393L381 390L382 391L385 388L388 388L390 386L392 388L394 386L396 385L400 381L402 381L404 381L405 379L406 377L407 376L406 374L403 374L404 371L402 367L403 365L402 362L398 361L395 361L396 359L396 357L397 356L400 356L401 357L405 356L405 354L407 353L408 353L411 351L416 351L418 350L421 350L422 350L423 354L425 355L428 354L429 354L431 352L433 351L436 351L436 353L437 359L442 360L443 358L445 359L447 358L448 361L452 362L456 362L457 361L463 359L464 358L463 357L464 355L463 353L464 352Z" },
+  "MX-MEX": { name: "México", d: "M506 372L507 374L508 374L509 376L508 379L509 382L509 386L508 387L506 389L503 388L501 385L502 383L501 380L498 378L497 375L495 373L493 375L493 377L490 379L490 381L492 385L491 388L488 394L486 397L485 397L483 396L479 397L477 400L473 400L471 401L472 402L470 403L467 405L466 405L464 402L461 401L463 400L462 397L461 397L461 395L461 391L462 389L462 386L464 382L466 380L466 377L467 376L467 374L467 371L466 368L468 367L469 364L470 363L469 361L469 359L472 358L474 356L474 354L475 352L476 351L477 353L481 355L485 355L487 359L486 360L487 361L490 367L490 364L492 365L493 364L493 361L494 360L497 359L501 358L501 359L500 364L498 365L500 368L502 365L508 364L508 366L506 371L506 372Z" },
+  "MX-JAL": { name: "Jalisco", d: "M403 313L405 312L409 313L411 314L413 315L414 315L418 313L421 310L425 308L423 306L423 303L426 304L429 305L431 308L434 309L433 311L432 313L431 319L432 322L430 324L429 323L427 328L425 330L424 333L419 339L421 340L423 343L421 347L421 350L418 350L416 351L411 351L408 353L407 353L405 354L405 356L401 357L400 356L397 356L396 357L396 359L395 361L398 361L402 362L403 365L402 367L404 371L403 374L406 374L407 376L406 377L405 379L404 381L402 381L400 381L396 385L394 386L392 388L390 386L388 388L385 388L385 386L384 385L384 383L384 379L383 376L382 372L379 374L376 376L372 376L370 377L368 378L366 378L364 379L361 379L360 380L358 380L357 382L355 382L352 381L352 379L350 379L348 378L346 376L344 372L340 368L338 365L334 359L333 357L333 353L330 351L329 348L331 347L333 346L339 346L340 344L341 343L339 341L342 338L343 335L345 334L347 335L350 332L353 333L354 334L358 335L360 338L361 339L364 342L363 338L365 337L366 332L366 328L371 328L372 327L374 326L376 325L377 324L377 320L377 318L375 317L374 314L373 313L369 312L368 309L368 308L365 306L364 306L363 303L364 298L365 297L367 296L367 294L370 293L371 293L370 296L372 296L373 295L372 293L371 289L371 288L373 287L375 286L377 287L377 288L376 289L374 292L373 295L373 298L374 300L375 301L376 300L376 292L380 291L383 293L383 296L380 302L380 304L382 304L383 303L385 304L386 301L389 299L388 298L388 296L390 296L392 296L392 299L394 299L395 300L394 304L393 306L388 308L386 310L383 312L383 317L381 319L379 319L380 322L382 322L383 322L383 324L378 326L378 327L380 328L382 330L385 331L388 332L392 331L393 331L395 330L395 328L397 327L399 328L402 325L405 323L406 322L406 319L403 317L403 316L403 313Z" },
+  "MX-HID": { name: "Hidalgo", d: "M510 321L511 323L510 325L512 326L515 327L516 326L518 327L520 331L518 333L518 335L518 337L517 337L515 336L512 338L511 339L511 343L510 347L512 350L514 349L517 347L519 345L520 344L522 342L525 343L525 346L522 348L521 350L517 351L518 353L520 353L521 355L520 360L518 363L519 368L517 367L514 370L511 370L506 372L506 371L508 366L508 364L502 365L500 368L498 365L500 364L501 359L501 358L497 359L494 360L493 361L493 364L492 365L490 364L490 367L487 361L486 360L487 359L485 355L481 355L477 353L476 351L477 344L483 343L485 341L484 339L485 336L487 334L489 331L488 329L490 328L491 329L496 327L497 324L499 323L500 326L503 327L504 325L505 326L506 323L508 321L510 321Z" },
+  "MX-GRO": { name: "Guerrero", d: "M486 397L486 399L489 399L491 402L496 403L499 405L499 406L501 408L502 411L505 410L505 412L509 414L509 415L514 414L515 416L517 417L515 421L515 424L518 429L518 434L517 435L517 437L520 438L520 442L522 443L523 445L522 447L521 449L519 450L518 451L517 453L514 455L514 457L509 461L504 454L500 455L493 453L486 451L482 451L479 449L477 448L475 447L474 445L463 441L456 438L446 435L446 433L442 430L436 428L436 427L435 425L433 425L431 424L431 422L429 420L427 418L423 416L421 415L419 416L418 415L418 411L419 410L421 409L422 409L425 407L425 405L425 404L425 401L426 399L427 400L430 398L432 399L433 401L434 401L438 401L440 400L445 401L447 401L449 404L451 403L456 406L457 405L454 401L454 398L453 393L455 392L455 393L457 391L459 389L460 387L462 386L462 389L461 391L461 395L461 397L462 397L463 400L461 401L464 402L466 405L467 405L470 403L472 402L471 401L473 400L477 400L479 397L483 396L485 397L486 397Z" },
+  "MX-GUA": { name: "Guanajuato", d: "M478 318L479 321L477 323L480 323L479 326L476 328L474 326L473 327L470 330L470 333L468 334L465 334L464 335L459 335L458 338L458 340L460 344L460 346L461 348L463 350L464 352L463 353L464 355L463 357L464 358L463 359L457 361L456 362L452 362L448 361L447 358L445 359L443 358L442 360L437 359L436 353L436 351L433 351L431 352L429 354L428 354L425 355L423 354L422 350L421 350L421 347L423 343L421 340L419 339L424 333L425 330L427 328L429 323L430 324L432 322L431 319L432 313L433 311L434 309L435 309L437 309L440 310L441 310L446 312L449 313L451 315L456 318L458 317L460 317L460 314L461 313L465 314L469 317L471 319L476 319L478 318Z" },
+  "MX-DUR": { name: "Durango", d: "M375 174L379 176L383 180L385 184L384 188L386 192L386 196L387 200L386 204L383 207L384 209L386 210L384 211L383 212L383 215L385 217L386 219L388 221L389 224L390 226L394 228L397 228L399 229L400 228L399 227L400 224L403 221L404 223L405 225L407 227L406 232L408 232L409 236L408 238L402 239L400 238L400 239L395 238L392 239L390 238L386 238L384 240L382 242L380 245L377 247L375 248L376 251L376 255L375 256L376 260L374 263L371 266L371 268L370 274L368 277L368 278L369 281L369 283L368 288L365 289L364 291L363 294L360 295L359 296L357 295L356 293L354 291L352 290L351 288L348 292L347 291L345 288L346 287L349 285L349 282L348 282L347 279L344 279L342 277L341 278L339 279L337 276L335 274L331 274L330 270L328 267L329 266L328 264L327 261L325 259L323 256L323 253L322 252L320 247L320 245L317 240L315 239L311 238L310 239L305 242L304 242L302 238L302 234L300 234L299 229L298 229L297 227L294 227L293 224L291 219L290 219L290 217L290 212L291 209L290 207L292 205L292 203L295 202L296 204L301 205L302 206L303 204L307 202L309 199L308 196L307 195L309 191L309 189L311 187L313 186L314 184L314 182L314 180L315 174L317 173L317 172L320 173L323 174L324 176L326 178L327 177L331 180L333 180L333 181L335 181L337 182L341 180L346 180L348 182L351 183L353 183L355 183L355 180L357 177L358 177L361 174L361 172L366 175L373 173L375 174Z" },
+  "MX-CMX": { name: "Ciudad de México", d: "M501 385L498 386L497 385L495 386L494 385L492 385L490 381L490 379L493 377L493 375L495 373L497 375L498 378L501 380L502 383L501 385Z" },
+  "MX-COL": { name: "Colima", d: "M385 388L382 391L381 390L381 393L379 394L378 396L377 394L373 391L368 388L364 387L364 385L363 384L361 384L355 382L357 382L358 380L360 380L361 379L364 379L366 378L368 378L370 377L372 376L376 376L379 374L382 372L383 376L384 379L384 383L384 385L385 386L385 388Z" },
+  "MX-COA": { name: "Coahuila", d: "M477 146L475 148L472 149L467 148L463 148L462 149L461 151L459 154L460 156L459 157L457 157L455 158L453 158L451 160L450 162L451 165L453 167L454 165L455 164L457 165L458 170L457 173L456 173L455 175L451 176L449 177L446 177L445 178L444 181L442 183L441 184L446 189L448 191L449 194L452 196L451 199L451 202L452 203L454 204L456 204L457 208L461 211L461 212L464 212L466 215L465 217L463 217L460 216L458 214L457 214L456 215L454 216L452 219L453 222L453 225L451 224L451 227L452 229L453 231L452 234L450 234L447 235L445 235L444 233L442 230L441 229L438 228L435 229L434 230L431 229L431 226L428 226L426 223L424 222L422 221L419 219L410 218L403 220L403 221L400 224L399 227L400 228L399 229L397 228L394 228L390 226L389 224L388 221L386 219L385 217L383 215L383 212L384 211L386 210L384 209L383 207L386 204L387 200L386 196L386 192L384 188L385 184L383 180L379 176L375 174L374 172L372 171L372 168L376 167L376 165L374 164L374 159L373 155L373 152L372 152L371 147L372 146L371 145L372 143L371 142L373 141L374 138L378 130L377 129L380 124L383 122L385 118L386 118L387 117L385 116L387 112L391 113L394 113L395 110L396 110L397 107L399 107L400 106L400 103L402 101L401 100L404 95L405 92L410 91L412 91L414 88L418 89L419 90L421 91L422 90L425 90L427 90L431 91L434 91L436 91L438 93L441 95L441 98L443 98L444 99L446 100L447 102L450 104L453 105L454 108L456 110L456 114L459 118L460 122L463 124L462 125L464 127L464 129L465 131L465 132L467 134L471 136L472 138L473 140L475 142L476 145L477 146Z" },
+  "MX-CHH": { name: "Chihuahua", d: "M387 112L385 116L387 117L386 118L385 118L383 122L380 124L377 129L378 130L374 138L373 141L371 142L372 143L371 145L372 146L371 147L372 152L373 152L373 155L374 159L374 164L376 165L376 167L372 168L372 171L374 172L375 174L373 173L366 175L361 172L361 174L358 177L357 177L355 180L355 183L353 183L351 183L348 182L346 180L341 180L337 182L335 181L333 181L333 180L331 180L327 177L326 178L324 176L323 174L320 173L317 172L317 173L315 174L314 180L314 182L314 184L313 186L311 187L309 189L309 191L307 195L308 196L309 199L307 202L303 204L302 206L301 205L296 204L295 202L292 203L290 200L290 197L287 192L284 192L281 191L278 190L276 186L275 184L273 181L272 178L271 177L271 172L270 169L269 169L269 167L268 166L263 166L261 166L259 167L255 165L256 164L256 161L257 157L257 156L254 148L250 146L251 144L251 142L249 139L246 138L247 135L245 133L246 132L249 132L250 131L253 132L256 131L258 129L256 128L254 125L255 124L254 122L254 120L256 117L255 115L256 114L256 111L257 110L257 107L259 107L258 101L259 99L259 97L259 90L257 90L257 85L259 82L257 79L258 76L256 69L255 67L256 66L255 65L255 62L253 61L254 59L254 56L254 54L252 50L253 49L252 48L266 48L266 36L285 36L308 36L309 37L312 37L314 40L314 42L316 44L320 46L321 46L323 48L325 49L327 53L332 55L333 58L336 60L337 61L340 63L341 63L345 65L346 66L347 68L349 69L350 71L350 74L354 78L355 80L354 84L355 87L356 88L358 92L358 94L363 98L365 98L367 99L368 101L373 104L376 104L378 105L379 107L381 108L383 108L387 112Z" },
+  "MX-CHP": { name: "Chiapas", d: "M621 464L621 461L621 459L620 456L620 455L622 448L625 446L626 442L627 441L627 438L628 437L630 436L634 433L636 430L636 428L639 425L640 422L640 419L640 416L642 415L645 417L647 418L649 418L649 420L648 423L650 426L650 428L653 429L654 432L656 432L660 429L662 428L667 423L669 422L669 420L670 419L674 419L674 418L677 418L679 418L680 420L680 422L683 423L684 427L683 429L684 430L686 430L689 432L690 434L689 435L691 438L694 439L695 442L698 445L701 446L703 448L707 450L708 452L708 456L710 457L712 457L712 458L714 458L715 460L713 464L714 468L698 468L681 467L672 484L669 490L673 495L672 497L671 498L671 500L670 502L671 506L669 509L669 510L664 506L653 493L648 488L641 481L635 476L632 474L626 470L628 469L626 467L622 466L621 464Z" },
+  "MX-CAM": { name: "Campeche", d: "M686 393L683 396L681 397L679 397L678 396L681 396L686 393ZM715 338L715 345L718 346L720 348L721 348L722 349L724 347L726 349L726 351L728 352L730 357L734 359L735 362L738 365L739 369L741 371L744 374L747 377L749 381L749 387L748 388L748 391L747 395L747 397L748 399L749 401L748 403L749 404L749 408L748 411L746 414L746 416L746 420L731 420L714 420L700 420L700 418L693 415L691 414L688 413L685 413L684 417L681 418L679 417L676 416L676 415L672 412L669 407L669 405L668 404L667 404L664 401L662 397L664 396L674 395L675 396L676 397L678 398L677 399L676 398L675 399L678 401L685 403L686 402L687 401L692 399L692 396L693 395L692 393L691 394L690 392L689 390L696 386L697 385L701 383L705 379L706 377L707 374L707 372L707 370L707 369L708 366L712 363L713 361L712 358L713 357L712 349L712 346L713 342L714 339L715 338Z" },
+  "MX-BCS": { name: "Baja California Sur", d: "M167 215L167 216L166 219L166 223L166 225L165 228L163 228L165 222L167 215ZM116 141L117 141L150 141L151 143L153 146L155 149L160 151L162 153L163 157L164 158L165 161L168 163L172 165L170 166L170 168L172 170L174 172L174 173L173 175L174 176L176 179L177 180L179 179L175 175L174 171L175 170L177 171L179 174L181 176L181 179L184 180L184 183L186 185L186 188L188 193L187 196L188 201L190 203L191 205L193 208L195 208L195 210L196 213L197 214L198 218L202 223L204 227L203 230L202 233L202 236L203 237L204 240L205 243L207 244L210 245L210 247L213 245L212 242L213 240L215 240L216 243L219 244L221 245L221 248L223 249L225 248L226 249L225 252L228 255L228 257L229 259L233 261L235 265L235 271L232 274L229 275L228 277L226 278L225 279L223 281L222 281L219 279L218 276L217 269L213 263L211 261L207 259L204 257L200 251L194 247L189 243L183 240L182 239L180 238L179 234L178 235L176 235L174 232L172 230L170 229L168 228L166 226L166 225L167 221L166 220L167 218L168 215L168 209L169 208L169 204L165 195L165 194L163 193L162 190L160 188L158 188L152 185L143 178L143 177L140 173L142 170L140 168L140 171L139 172L138 174L137 173L133 172L131 175L129 175L128 173L127 173L125 169L123 168L121 167L120 168L118 165L115 163L111 163L108 161L108 157L107 156L105 154L101 153L100 151L97 149L96 148L95 147L93 145L97 144L102 145L105 146L107 146L113 143L112 146L113 147L116 149L118 150L119 148L121 149L123 152L124 151L122 149L123 148L123 145L121 144L120 146L120 147L117 148L115 147L115 145L117 143L116 141ZM212 235L213 237L213 239L211 237L212 235ZM171 235L174 235L175 237L177 238L178 240L178 241L171 235ZM223 239L226 245L224 246L223 243L223 239ZM194 193L193 195L191 197L190 197L191 195L191 194L194 193ZM203 219L204 221L206 221L207 226L204 224L203 221L203 219ZM196 391L198 393L198 395L195 394L194 393L196 391Z" },
+  "MX-BCN": { name: "Baja California", d: "M131 97L133 98L135 100L136 102L136 104L141 104L141 109L141 110L143 111L142 113L139 110L138 108L135 106L134 105L132 103L130 100L131 97ZM89 129L91 133L91 136L90 139L89 139L87 137L87 136L89 134L88 132L89 129ZM117 141L116 141L115 142L113 141L116 138L116 140L117 141ZM99 16L97 16L96 20L94 22L95 24L95 26L95 28L94 31L100 35L99 36L100 40L99 41L98 44L98 47L98 50L98 53L98 55L100 56L99 57L102 59L102 62L102 67L104 71L104 77L103 79L105 83L107 86L110 88L110 90L111 92L113 91L115 92L116 93L120 97L124 100L126 101L129 104L129 107L131 109L132 111L131 114L132 115L133 114L136 115L136 118L139 117L140 118L141 122L142 122L143 126L145 127L148 127L149 128L148 132L150 135L150 136L150 139L151 141L151 143L150 141L118 141L119 139L117 138L117 137L118 135L118 133L117 133L119 128L118 126L115 122L114 121L111 119L110 116L108 114L106 114L105 113L104 110L102 109L101 107L99 106L95 102L93 101L90 100L88 98L85 97L83 95L82 95L80 93L79 93L77 91L77 88L76 86L74 86L75 82L75 81L75 77L74 75L72 74L68 72L69 67L68 63L65 61L63 58L61 58L62 53L60 49L58 48L56 45L53 43L52 42L53 39L53 37L54 37L54 34L51 32L50 31L47 29L47 26L46 23L43 22L41 16L41 15L63 13L78 12L102 10L100 13L99 16ZM13 107L12 109L13 110L13 114L12 115L11 111L10 110L10 108L13 107Z" },
+  "MX-AGU": { name: "Aguascalientes", d: "M403 313L400 311L400 310L402 307L404 303L406 299L409 298L412 296L415 293L415 295L418 297L421 299L421 300L423 303L423 306L425 308L421 310L418 313L414 315L413 315L411 314L409 313L405 312L403 313Z" },
+};
+
+
+
+
+const CONSULTA_TXT = "2026-10-29, última búsqueda 13:39";
+const CORTE_FECHA = "2026-10-29";
+
+const EVENTOS = [
+  {"id": "ARG-144-016", "estado": "MX-TAM", "region": "Noreste", "color": "verde", "impacto": "mediano", "hecho": "Matamoros · jueves 29-OCT, por ruta (Heraldo de México 2026/10/29) · FRONTERA DE VENTANA — HORA NO FIJADA · detención de un objetivo prioritario, por titular (Heraldo de México) (🟢 detención) · por fuerzas federales, SOLO POR RESUMEN · vinculado a un grupo de la delincuencia organizada, atribuido a la Vocería de Seguridad de Tamaulipas, SOLO POR RESUMEN · identidad y delitos: no publicados · 1 detenido · armamento asegurado: no publicado · los bloqueos posteriores son hecho aparte: ARG-144-008", "fuentes": ["Heraldo de México (2026/10/29)"], "confianza": "★★★☆☆", "fecha": "2026-10-29", "hora": "no fijada"},
+  {"id": "ARG-144-017", "estado": "MX-ROO", "region": "Sureste", "color": "verde", "impacto": "pequeno", "hecho": "Cancún · miércoles 28-OCT, por ruta (Noticaribe 2026/10/28, «hay tres detenidos») · tarde, SOLO POR RESUMEN · 3 detenidos, por slug (Noticaribe) y titular (Sol Quintana Roo) (🟢 detención) · tras una persecución, SOLO POR RESUMEN · 1 arma de fuego asegurada, tipo no publicado, SOLO POR RESUMEN · policía de Cancún; puestos a disposición de la FGE, SOLO POR RESUMEN · el ataque es hecho aparte: ARG-144-011", "fuentes": ["Noticaribe (2026/10/28)", "Por Esto (2026/10/28)"], "confianza": "★★★☆☆", "fecha": "2026-10-28", "hora": "tarde (solo por resumen)"},
+  {"id": "ARG-144-018", "estado": "MX-NLE", "region": "Noreste", "color": "verde", "impacto": "pequeno", "hecho": "General Bravo y China · publicado el miércoles 28-OCT, por ruta (MVS; Punto x Punto 2026/10/28) · PUBLICADO EL DÍA DE APERTURA SIN HORA; «la semana pasada», un medio, SOLO POR RESUMEN: SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL · 7 cateos, por titular (El Porvenir; Hora Cero) · 2 detenidos, por titular (MVS; Punto x Punto) (🟢 cateos y aseguramiento) · armas de fuego y cartuchos, por titular (MVS); 2 armas, sin clasificar, SOLO POR RESUMEN; cartuchos sin cifra · droga, básculas y teléfonos, SOLO POR RESUMEN · FGJE de Nuevo León, por titular de un medio (El Porvenir), sin declaración citada", "fuentes": ["MVS (2026/10/28)", "Punto x Punto (2026/10/28)"], "confianza": "★★★☆☆", "fecha": "2026-10-28", "hora": "no fijada"},
+  {"id": "ARG-144-019", "estado": "MX-CMX", "region": "Centro", "color": "verde", "impacto": "pequeno", "hecho": "Gustavo A. Madero · COL. LINDAVISTA, POR TITULAR · publicado el miércoles 28-OCT, por ruta (La Silla Rota; Publimetro 2026/10/28) · PUBLICADO EL DÍA DE APERTURA SIN HORA; día del cateo no fijado: SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL · 6 detenidos, por titular (La Silla Rota; Publimetro) (🟢 cateo y detención) · placas falsas y con reporte de robo, por titular; cifras contradichas, SOLO POR RESUMEN · 1 arma corta y 1 arma larga, cartuchos sin cifra, SOLO POR RESUMEN · droga, SOLO POR RESUMEN · SSC con la Fiscalía capitalina, SEMAR y GN; «la SSC informó», SOLO POR RESUMEN · altar con presuntos restos óseos: video de un periodista, no confirmado por la autoridad: NO SE INTEGRA", "fuentes": ["La Silla Rota (2026/10/28)", "Publimetro (2026/10/28)"], "confianza": "★★★☆☆", "fecha": "2026-10-28", "hora": "no fijada"},
+  {"id": "ARG-144-020", "estado": "MX-MEX", "region": "Centro", "color": "verde", "impacto": "pequeno", "hecho": "Ecatepec · publicado el miércoles 28-OCT, por ruta (El Monitor del Edomex 2026/10/28) · PUBLICADO EL DÍA DE APERTURA SIN HORA; día de la detención no fijado: SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL · 2 detenidos: sobrina de la víctima y un hombre, por titular (Tribuna; Sociedad Noticias; El Monitor) (🟢 detención) · por desaparición cometida por particulares, con agravantes, SOLO POR RESUMEN · FGJEM; órdenes de aprehensión giradas por un juez, SOLO POR RESUMEN · el hallazgo de los restos es hecho aparte: ARG-144-007", "fuentes": ["El Monitor del Edomex (2026/10/28)", "Tribuna (2026/10/29)", "Sociedad Noticias (2026/10/29)"], "confianza": "★★★☆☆", "fecha": "2026-10-28", "hora": "no fijada"},
+  {"id": "ARG-144-021", "estado": "MX-GUA", "region": "Occidente", "color": "verde", "impacto": "pequeno", "hecho": "Jaral del Progreso · COL. LAS FLORES, SOLO POR RESUMEN · publicado el miércoles 28-OCT, por ruta (boletín del Gobierno de Guanajuato 2026/10/28) · PUBLICADO EL DÍA DE APERTURA SIN HORA; día del operativo no fijado: SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL · 2 detenidos y 3 armas largas, por titular del boletín y de Quadratín Bajío (🟢 detención y aseguramiento) · cartuchos y cargadores sin cifra, SOLO POR RESUMEN · 6 chalecos y 6 cascos, SOLO POR RESUMEN · camioneta con reporte de robo, por titular · Seguridad y Paz de Guanajuato con la Defensa, SOLO POR RESUMEN · POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN: La Silla Rota (2026/10/26) publicó un arsenal asegurado a dos hombres en la misma colonia, ya vinculados a proceso", "fuentes": ["Gobierno de Guanajuato (2026/10/28)"], "confianza": "★★★☆☆", "fecha": "2026-10-28", "hora": "no fijada"},
+  {"id": "ARG-144-010", "estado": "MX-VER", "region": "Golfo", "color": "amarillo", "impacto": "pequeno", "hecho": "Tecolutla · CAÑADA RICA, BÁSCULA DE CÍTRICOS, POR SLUG (INFOVERACRUZ) · miércoles 28-OCT, por ruta (Infoveracruz; Golpe Político 2026/10/28) · PUBLICADO EL DÍA DE APERTURA SIN HORA; «mañana» o ~16:00, SOLO POR RESUMEN: SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL · 1 muerto: comerciante de cítricos, por slug (Infoveracruz) (🟡 homicidio doloso único) · intentó resguardarse en su automóvil, por titular (Gráfico al Día) · asalto, por titular · edad y origen contradichos entre medios; una acompañante herida solo en dos medios, SOLO POR RESUMEN: no se suma · 4 casquillos .38, SOLO POR RESUMEN · ningún detenido publicado", "fuentes": ["Infoveracruz (2026/10/28)", "Golpe Político (2026/10/28)", "Gráfico al Día (2026/10/29)"], "confianza": "★★★☆☆", "fecha": "2026-10-28", "hora": "contradicha: mañana / ~16:00 (solo por resumen)"},
+  {"id": "ARG-144-011", "estado": "MX-ROO", "region": "Sureste", "color": "amarillo", "impacto": "pequeno", "hecho": "Cancún · FRACC. CIELO NUEVO; REGIÓN 249 O 251: CONTRADICHO · miércoles 28-OCT, por ruta (Por Esto; Noticaribe 2026/10/28) · tarde, SOLO POR RESUMEN · 1 muerto: hombre, por titular (Por Esto; Noticaribe) (🟡 homicidio doloso único) · 1 mujer herida, SOLO POR RESUMEN · nacionalidad y actividad de la víctima: versión de un medio, no de autoridad: no se reproduce · la detención de tres personas es hecho aparte: ARG-144-017", "fuentes": ["Por Esto (2026/10/28)", "Noticaribe (2026/10/28)"], "confianza": "★★★☆☆", "fecha": "2026-10-28", "hora": "tarde (solo por resumen)"},
+  {"id": "ARG-144-012", "estado": "MX-MOR", "region": "Centro", "color": "amarillo", "impacto": "pequeno", "hecho": "Cuautla · FRENTE AL TECNOLÓGICO DE CUAUTLA, LÍMITE CON YECAPIXTLA; RUTA 9, SOLO POR RESUMEN · publicado el miércoles 28-OCT, por ruta (La Razón 2026/10/28) · PUBLICADO EL DÍA DE APERTURA SIN HORA; día del hecho no fijado: SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL · ataque a balazos contra una combi, por titular (La Razón; El Universal; Diario de Morelos) · 2 heridos: chofer y estudiante, por titular (El Universal; Diario de Morelos); 3, un medio, SOLO POR RESUMEN: CONTRADICHO (🟡 agresión sin muertos) · agresores en motocicleta, SOLO POR RESUMEN · el fiscal de Morelos confirmó los heridos, SOLO POR RESUMEN · ningún detenido publicado", "fuentes": ["La Razón (2026/10/28)", "La Razón (2026/10/29)"], "confianza": "★★★☆☆", "fecha": "2026-10-28", "hora": "no fijada"},
+  {"id": "ARG-144-013", "estado": "MX-GUA", "region": "Occidente", "color": "amarillo", "impacto": "pequeno", "hecho": "Irapuato · COL. BENITO JUÁREZ, POR SLUG (CORREO) · miércoles 28-OCT, por ruta (Correo 2026/oct/28) · PUBLICADO EL DÍA DE APERTURA SIN HORA; hora no informada: SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL · 1 muerto, por slug (Correo) (🟡 homicidio doloso único) · agresores en motocicleta, SOLO POR RESUMEN · FUENTE ÚNICA · ningún detenido publicado", "fuentes": ["Correo (2026/oct/28)"], "confianza": "★★☆☆☆", "fecha": "2026-10-28", "hora": "no fijada"},
+  {"id": "ARG-144-014", "estado": "MX-GUA", "region": "Occidente", "color": "amarillo", "impacto": "pequeno", "hecho": "Valle de Santiago · COL. RANCHOS UNIDOS, POR SLUG (CORREO) · miércoles 28-OCT, por ruta (Correo 2026/oct/28) · PUBLICADO EL DÍA DE APERTURA SIN HORA; hora no informada: SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL · 1 cuerpo con un disparo en la cabeza, por slug (Correo) (🟡 hallazgo de un cuerpo) · fecha de la muerte no publicada: CAUSA NO INFORMADA POR AUTORIDAD · FUENTE ÚNICA · ningún detenido publicado", "fuentes": ["Correo (2026/oct/28)"], "confianza": "★★☆☆☆", "fecha": "2026-10-28", "hora": "no fijada"},
+  {"id": "ARG-144-015", "estado": "MX-ROO", "region": "Sureste", "color": "amarillo", "impacto": "pequeno", "hecho": "Chetumal · NACHICOCOM, VIVIENDA, POR SLUG (POR ESTO) · jueves 29-OCT, por ruta (Por Esto 2026/10/29) · FRONTERA DE VENTANA — HORA NO FIJADA · 1 muerto: expolicía, por slug (Por Esto, «comando-armado-asesina-…-policia-…») (🟡 homicidio doloso único: la víctima no era servidor público en activo, SOLO POR RESUMEN) · comando armado, por slug · FUENTE ÚNICA · ningún detenido publicado", "fuentes": ["Por Esto (2026/10/29)"], "confianza": "★★☆☆☆", "fecha": "2026-10-29", "hora": "no fijada"},
+  {"id": "ARG-144-001", "estado": "MX-SON", "region": "Noroeste", "color": "rojo", "impacto": "grande", "hecho": "Magdalena de Kino · COL. CENTRO, INSTALACIONES DE LA AMIC, SOLO POR RESUMEN · miércoles 28-OCT, por ruta (Proyecto Puente 2026/10/28) · ~19:44, hora atribuida a la Fiscalía de Sonora, SOLO POR RESUMEN · ataque armado contra las instalaciones de la AMIC, por titular (El Universal; UnoTV; Expreso) (🔴 ataque contra autoridades: el grupo agrede una sede de la corporación) · 1 agente ministerial muerto, por titular; nombre por titular de un medio abierto (El Congresista): no se reproduce · AMIC, 45/a. Zona Militar, Policía Estatal y municipal acudieron, SOLO POR RESUMEN · ningún detenido publicado · vínculo de la víctima con narcomenudeo: hipótesis de un medio, SOLO POR RESUMEN, no se integra", "fuentes": ["Proyecto Puente (2026/10/28)", "Infobae (2026/10/29)", "Diario de Tabasco (2026/10/29)"], "confianza": "★★★☆☆", "fecha": "2026-10-28", "hora": "~19:44, atribuida a la Fiscalía de Sonora (solo por resumen)"},
+  {"id": "ARG-144-002", "estado": "MX-MIC", "region": "Occidente", "color": "rojo", "impacto": "grande", "hecho": "Indaparapeo · COMUNIDAD EL TRIUNFO, CALLE PROLONGACIÓN DE BRAVO, SOLO POR RESUMEN · noche del miércoles 28-OCT, por resumen; publicación del 29, por ruta (Grupo Marmor; La Silla Rota; Esfera Noticias 2026/10/29) · ~21:45, SOLO POR RESUMEN · 2 muertos: regidor del Ayuntamiento y su esposa, por titular (La Silla Rota; Grupo Marmor; La Voz de Michoacán) · 1 herido: su hijo, por titular (🔴 víctima servidor público; víctimas múltiples) · la esposa murió en el lugar y el regidor en el hospital, SOLO POR RESUMEN · agresores en al menos tres vehículos, SOLO POR RESUMEN · ningún detenido publicado · amenazas previas a pobladores: versión de un partido político, no de autoridad: no se integra", "fuentes": ["Grupo Marmor (2026/10/29)", "La Silla Rota (2026/10/29)", "Esfera Noticias (2026/10/29)"], "confianza": "★★★☆☆", "fecha": "2026-10-28", "hora": "noche, ~21:45, atribuida a la Fiscalía (solo por resumen)"},
+  {"id": "ARG-144-003", "estado": "MX-GUA", "region": "Occidente", "color": "rojo", "impacto": "mediano", "hecho": "Acámbaro · COMUNIDAD SANTIAGUILLO, DOMICILIO, SOLO POR RESUMEN · miércoles 28-OCT, por ruta (Correo 2026/oct/28, primera publicación) · ~19:30, SOLO POR RESUMEN · 3 muertos, por titular (Correo; La Silla Rota; AM; Noticieros en Línea), uno de 16 años, por titular (Noticieros en Línea) (🔴 homicidio múltiple) · escopeta, por titular; casquillos calibre 12, SOLO POR RESUMEN · conflicto entre vecinos, versión de vecinos, SOLO POR RESUMEN · agresor prófugo · ningún detenido publicado", "fuentes": ["Correo (2026/oct/28)", "La Silla Rota (2026/10/29)", "AM (2026/10/29)", "Noticieros en Línea (2026/oct/29)"], "confianza": "★★★☆☆", "fecha": "2026-10-28", "hora": "~19:30 (solo por resumen)"},
+  {"id": "ARG-144-004", "estado": "MX-CHP", "region": "Sureste", "color": "rojo", "impacto": "grande", "hecho": "Chenalhó · COMUNIDAD YABTECLUM, SOLO POR RESUMEN · miércoles 28-OCT, por ruta (La Jornada; La Silla Rota; Proceso; Heraldo de México 2026/10/28) · tarde, SOLO POR RESUMEN; «mañana», un medio local: CONTRADICHO · 1 muerto: defensor de derechos humanos y representante de familias desplazadas, por titular (La Jornada; Proceso; La Silla Rota) (🔴 víctima persona defensora) · con protección federal desde 2023, por titular (Diario Puntual) · dos agresores en motocicleta, SOLO POR RESUMEN · el fiscal de Chiapas ordenó un grupo especial, SOLO POR RESUMEN · ningún detenido publicado", "fuentes": ["La Jornada (2026/10/28)", "La Silla Rota (2026/10/28)", "Proceso (2026/10/28)", "Heraldo de México (2026/10/28)", "Infobae (2026/10/29)", "Diario Puntual (2026/10/29)"], "confianza": "★★★☆☆", "fecha": "2026-10-28", "hora": "tarde (solo por resumen; un medio local: mañana)"},
+  {"id": "ARG-144-005", "estado": "MX-GUA", "region": "Occidente", "color": "rojo", "impacto": "mediano", "hecho": "Irapuato · COL. AZTECA, POR SLUG (CORREO); COL. NUEVO AMANECER, POR SLUG (AM): CONTRADICHO · miércoles 28-OCT, por ruta (Correo 2026/oct/28; AM 2026/10/28; Primer Plano 2026/10/28) · PUBLICADO EL DÍA DE APERTURA SIN HORA; hora no informada: SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL · 2 muertos, por titular (Correo; AM; Primer Plano) (🔴 homicidio múltiple) · uno murió al derrapar en motocicleta mientras era trasladado, SOLO POR RESUMEN · alias de una víctima: medio local, no se reproduce · ningún detenido publicado", "fuentes": ["Correo (2026/oct/28)", "AM (2026/10/28)", "Primer Plano (2026/10/28)"], "confianza": "★★★☆☆", "fecha": "2026-10-28", "hora": "no fijada"},
+  {"id": "ARG-144-006", "estado": "MX-SLP", "region": "Noreste", "color": "rojo", "impacto": "mediano", "hecho": "Ciudad del Maíz · PREDIOS CERCA DEL EJIDO PALOMAS Y DE LA COLONIA AGRÍCOLA LA LIBERTAD, SOLO POR RESUMEN · publicado el miércoles 28-OCT, por ruta (Potosinoticias 2026/10/28) · PUBLICADO EL DÍA DE APERTURA SIN HORA; día del hallazgo no fijado: SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL · presunta fosa clandestina con restos óseos, por titular y slug (Potosinoticias; Plano Informativo) (🔴 hallazgo de fosa) · búsqueda de la Comisión Estatal de Búsqueda con colectivos, Guardia Civil Estatal y Guardia Nacional, SOLO POR RESUMEN · restos trasladados al Servicio Médico Legal de Rioverde, SOLO POR RESUMEN · número de personas: no publicado — CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO · inhumación de años atrás, SOLO POR RESUMEN", "fuentes": ["Potosinoticias (2026/10/28)"], "confianza": "★★☆☆☆", "fecha": "2026-10-28", "hora": "no fijada"},
+  {"id": "ARG-144-007", "estado": "MX-MEX", "region": "Centro", "color": "rojo", "impacto": "mediano", "hecho": "Ecatepec · COL. RÚSTICA XALOSTOC, INMUEBLE, POR TITULAR (EL MONITOR DEL EDOMEX) · publicado el miércoles 28-OCT, por ruta (El Monitor del Estado de México 2026/10/28, primera publicación; Reporteros en Movimiento 2026/10/28) · PUBLICADO EL DÍA DE APERTURA SIN HORA; día del hallazgo no fijado: SI RESULTA ANTERIOR A LAS 08:28 DEL 28, ES DE LA VENTANA DE ARGOS 143 Y SE RETIRA DE ESTE TOTAL · restos humanos enterrados y cubiertos con cemento, por titular (El Monitor; Excélsior; La Prensa de Coahuila) (🔴 restos humanos en inhumación clandestina) · identidad no confirmada: posibles restos de una mujer de 52 años desaparecida el 15-oct, por titular (Tribuna) y SOLO POR RESUMEN · la detención por este caso es hecho aparte: ARG-144-020", "fuentes": ["El Monitor del Edomex (2026/10/28)", "Reporteros en Movimiento (2026/10/28)", "Tribuna (2026/10/29)", "La Prensa de Coahuila (2026/10/29)", "Sociedad Noticias (2026/10/29)"], "confianza": "★★★☆☆", "fecha": "2026-10-28", "hora": "no fijada"},
+  {"id": "ARG-144-008", "estado": "MX-TAM", "region": "Noreste", "color": "rojo", "impacto": "grande", "hecho": "Matamoros y Río Bravo · OCHO PUNTOS DE MATAMOROS, SOLO POR RESUMEN; «DIVERSOS PUNTOS» DE RÍO BRAVO, SOLO POR RESUMEN · jueves 29-OCT, por ruta (Heraldo de México 2026/10/29) · FRONTERA DE VENTANA — HORA NO FIJADA · bloqueos en varias zonas de Matamoros, por titular (Diario del Yaqui) (🔴 narcobloqueo) · con vehículos de carga en ocho puntos, atribuido a la Vocería de Seguridad de Tamaulipas, SOLO POR RESUMEN · el alcalde de Matamoros pide a la población resguardarse, por titular (Heraldo de México) · una secundaria retuvo a sus alumnos y se suspendieron clases vespertinas, SOLO POR RESUMEN · vehículos incendiados, heridos o detenidos por los bloqueos: no publicados · la detención que los precede es hecho aparte: ARG-144-016", "fuentes": ["Heraldo de México (2026/10/29)"], "confianza": "★★★☆☆", "fecha": "2026-10-29", "hora": "no fijada"},
+  {"id": "ARG-144-009", "estado": "MX-GRO", "region": "Sureste", "color": "rojo", "impacto": "mediano", "hecho": "Acapulco · COL. EMILIANO ZAPATA, CALLE 15, FRENTE A LA PARROQUIA DEL PERPETUO SOCORRO, SOLO POR RESUMEN · jueves 29-OCT, SOLO POR RESUMEN (ninguna ruta con fecha: EXCEPCIÓN DECLARADA PARA ROJOS) · poco después de las 07:00, SOLO POR RESUMEN · restos de una persona desmembrada en dos bolsas, por titular (Quadratín Guerrero; Meganoticias) (🔴 restos humanos exhibidos en vía pública) · arrojados desde un auto por hombres armados, SOLO POR RESUMEN · víctima no identificada · ningún detenido publicado", "fuentes": ["Fuentes regionales sin fecha en la ruta"], "confianza": "★★☆☆☆", "fecha": "2026-10-29", "hora": "poco después de las 07:00 (solo por resumen) · día solo por resumen"},
+  {"id": "ARG-144-REC-001", "estado": "MX-CMX", "region": "Centro", "color": "rec", "impacto": "grande", "hecho": "VENTANA DE ORIGEN: ARGOS 143 — HORA SOLO POR RESUMEN · Cuauhtémoc · CRUCE DE REPÚBLICA DE PERÚ Y REPÚBLICA DE ARGENTINA, COL. CENTRO · miércoles 28-OCT, por ruta (Proceso; Infobae; El Gráfico 2026/10/28) · mañana, «primeras horas», SOLO POR RESUMEN; una nota con hora de publicación 08:33, SOLO POR RESUMEN: anterior al cierre de ARGOS 143 (08:28) salvo un intervalo de cinco minutos · 2 muertos: dos hermanos, por titular (Proceso) (🔴 homicidio múltiple) · 13 disparos, SOLO POR RESUMEN · agresores en bicicleta eléctrica, por titular (El Universal) · ningún detenido publicado · SI RESULTA POSTERIOR A LAS 08:28 DEL 28, ES HECHO PROPIO DE ARGOS 144", "fuentes": ["Proceso (2026/10/28)", "Infobae (2026/10/28)", "El Gráfico (2026/10/28)"], "confianza": "★★★☆☆", "fecha": "2026-10-28", "hora": "mañana, «primeras horas» (solo por resumen); una nota publicada a las 08:33 (solo por resumen)"},
+  {"id": "ARG-144-REC-002", "estado": "MX-VER", "region": "Golfo", "color": "rec", "impacto": "grande", "hecho": "VENTANA DE ORIGEN: ARGOS 143 — HORA SOLO POR RESUMEN · Coatzacoalcos · AV. UNIVERSIDAD VERACRUZANA, FRENTE AL PODER JUDICIAL DE LA FEDERACIÓN, POR TITULAR · miércoles 28-OCT, por ruta (La Silla Rota 2026/10/28; Diario del Istmo 20261028; Sociedad Noticias 2026/10/28) · madrugada, SOLO POR RESUMEN (dos resúmenes independientes) · cabeza humana en una mochila, por titular (La Silla Rota; Quinta Fuerza; El Buen Tono); «hielera», por titular (TV Azteca; Avi Veracruz): CONTRADICHO · con mensaje de amenaza, por titular (N+; Telediario) (🔴 restos humanos exhibidos frente a una sede judicial) · contenido del mensaje: no publicado íntegro · víctima no identificada; resto del cuerpo no localizado · ningún detenido publicado · SI RESULTA POSTERIOR A LAS 08:28 DEL 28, ES HECHO PROPIO DE ARGOS 144", "fuentes": ["La Silla Rota (2026/10/28)", "Diario del Istmo (2026/10/28)", "Sociedad Noticias (2026/10/28)"], "confianza": "★★★☆☆", "fecha": "2026-10-28", "hora": "madrugada, «primeros minutos» del miércoles (solo por resumen)"},
+  {"id": "ARG-144-REC-003", "estado": "MX-SIN", "region": "Noroeste", "color": "rec", "impacto": "grande", "hecho": "VENTANA DE ORIGEN: ARGOS 143 — HORA SOLO POR RESUMEN · Culiacán · FRACC. VILLAS DEL REAL, POR SLUG (LUZ NOTICIAS) · noche del martes 27-OCT, SOLO POR RESUMEN; publicación del 28, por ruta (Luz Noticias 2026-10-28; El Diario de Chihuahua 2026/oct/28; El Diario del Noroeste 2026/oct/28) · 4 jóvenes privados de la libertad, por titular (El Diario de Chihuahua; El Diario del Noroeste); 6 en la versión inicial, por titular (Julio Astillero; Azteca Sinaloa): CONTRADICHO; 4, precisión atribuida a la Fiscalía de Sinaloa, SOLO POR RESUMEN (🔴 privación de la libertad múltiple por un convoy armado) · dos menores de edad, SOLO POR RESUMEN · localizados con vida, por slug (Luz Noticias; Revista Espejo) · circunstancias de la localización: no publicadas · ningún detenido publicado", "fuentes": ["Luz Noticias (2026/10/28)", "El Diario de Chihuahua (2026/10/28)", "El Diario del Noroeste (2026/10/28)", "Revista Espejo (2026/10/29)"], "confianza": "★★★☆☆", "fecha": "2026-10-27", "hora": "noche, ~22:00-23:00 (solo por resumen)"},
+  {"id": "ARG-144-REC-004", "estado": "MX-SIN", "region": "Noroeste", "color": "rec", "impacto": "grande", "hecho": "VENTANA DE ORIGEN: ARGOS 142 — HORA SOLO POR RESUMEN · Mazatlán · EXTERIOR DEL PALACIO MUNICIPAL, POR TITULAR · martes 27-OCT, por ruta (Central Municipal; Revista Espejo 2026/10/27) · ~06:00-06:30, SOLO POR RESUMEN: anterior a la apertura de ARGOS 143 (08:45 del 27) · hielera con restos humanos, por titular (Revista Espejo); cabeza humana, por titular (Central Municipal; La Razón) (🔴 restos humanos exhibidos frente a una sede de gobierno) · el Ayuntamiento condena el hallazgo, por titular (Revista Espejo) · dos sujetos en una camioneta, según el secretario de Seguridad municipal, SOLO POR RESUMEN · mensaje: contradicho entre medios y el secretario · ningún detenido publicado", "fuentes": ["Central Municipal (2026/10/27)", "Revista Espejo (2026/10/27)", "La Razón (2026/10/28)", "Infobae (2026/10/28)", "El Diario del Noroeste (2026/10/28)"], "confianza": "★★★☆☆", "fecha": "2026-10-27", "hora": "~06:00-06:30 (solo por resumen)"}
+];
+
+const EVENTOS_CORTE = EVENTOS.filter(function(e){ return e.color !== "rec"; });
+
+const EVENTOS_ARM = [
+  {"id": "ARG-144-ARM-001", "estado": "MX-NLE", "region": "Noreste", "color": "verde", "impacto": "mediano", "hecho": "General Bravo y China, Nuevo León: n/d cortas, n/d largas, 2 sin categoría, n/d especial, n/d cartuchos, n/d cargadores, n/d granadas, n/d AEI, n/d explosivos, 2 detenidos. FGJE Nuevo León <span class=\"muted-note\">(por titular de un medio)</span>. 2 armas sin clasificar, solo por resumen; cartuchos sin cifra; ver ARG-144-018. Ficha: ARG-144-018. Confianza Bajo", "fuentes": ["MVS (2026/10/28)", "Punto x Punto (2026/10/28)", "El Porvenir (sin fecha en la ruta)"], "confianza": "Bajo", "fecha": "2026-10-28", "hora": "no fijada"},
+  {"id": "ARG-144-ARM-002", "estado": "MX-CMX", "region": "Centro", "color": "verde", "impacto": "mediano", "hecho": "Gustavo A. Madero (col. Lindavista), Ciudad de México: 1 cortas, 1 largas, n/d sin categoría, n/d especial, n/d cartuchos, n/d cargadores, n/d granadas, n/d AEI, n/d explosivos, 6 detenidos. SSC, Fiscalía capitalina, SEMAR y GN <span class=\"muted-note\">(solo por resumen)</span>. armas solo por resumen; cartuchos sin cifra; ver ARG-144-019. Ficha: ARG-144-019. Confianza Bajo", "fuentes": ["La Silla Rota (2026/10/28)", "Publimetro (2026/10/28)", "NX Noticias (sin fecha en la ruta)"], "confianza": "Bajo", "fecha": "2026-10-28", "hora": "no fijada"},
+  {"id": "ARG-144-ARM-003", "estado": "MX-ROO", "region": "Sureste", "color": "verde", "impacto": "mediano", "hecho": "Benito Juárez (Cancún, Cielo Nuevo), Quintana Roo: n/d cortas, n/d largas, 1 sin categoría, n/d especial, n/d cartuchos, n/d cargadores, n/d granadas, n/d AEI, n/d explosivos, 3 detenidos. Policía de Cancún <span class=\"muted-note\">(solo por resumen)</span>. arma sin clasificar, solo por resumen; vinculado a ARG-144-011 (🟡 en el mapa); ver ARG-144-017. Ficha: ARG-144-017. Confianza Bajo", "fuentes": ["Noticaribe (2026/10/28)", "Por Esto (2026/10/28)", "Sol Quintana Roo (sin fecha en la ruta)"], "confianza": "Bajo", "fecha": "2026-10-28", "hora": "tarde (solo por resumen)"}
+];
+const REGION_ORDER = ["Noroeste","Noreste","Occidente","Centro","Golfo","Sureste","Pacífico"];
+const STATE_REGION = {
+  "MX-BCN":"Noroeste","MX-BCS":"Noroeste","MX-SON":"Noroeste","MX-CHH":"Noroeste","MX-SIN":"Noroeste","MX-DUR":"Noroeste",
+  "MX-COA":"Noreste","MX-NLE":"Noreste","MX-TAM":"Noreste","MX-SLP":"Noreste","MX-ZAC":"Noreste",
+  "MX-JAL":"Occidente","MX-COL":"Occidente","MX-NAY":"Occidente","MX-AGU":"Occidente","MX-MIC":"Occidente","MX-GUA":"Occidente",
+  "MX-CMX":"Centro","MX-MEX":"Centro","MX-MOR":"Centro","MX-PUE":"Centro","MX-TLA":"Centro","MX-HID":"Centro","MX-QUE":"Centro",
+  "MX-VER":"Golfo","MX-TAB":"Golfo",
+  "MX-CHP":"Sureste","MX-OAX":"Sureste","MX-GRO":"Sureste","MX-CAM":"Sureste","MX-YUC":"Sureste","MX-ROO":"Sureste"
+};
+const SEVERITY_RANK = { rojo:3, amarillo:2, verde:1 };
+const SEVERITY_COLOR = { rojo:"#ff3b3b", amarillo:"#ffd23f", verde:"#33d17a", rec:"#5a7f8c" };
+const SEVERITY_LABEL = { rojo:"🔴 Alto impacto", amarillo:"🟡 Violencia operativa", verde:"🟢 Acción institucional" , rec:"Recuperación — ventana anterior" };
+const GRIS = "#26314a";
+const SIZE_R = { grande:11, mediano:7.5, pequeno:5 };
+
+function argosHash(s){
+  let h = 0;
+  for (let i = 0; i < s.length; i++) { h = (h * 31 + s.charCodeAt(i)) | 0; }
+  return Math.abs(h);
+}
+
+function argosPolarPoint(cx, cy, r, angDeg){
+  const a = (angDeg * Math.PI) / 180;
+  return [cx + r * Math.cos(a), cy + r * Math.sin(a)];
+}
+
+function argosTopEventFor(evs){
+  return evs.slice().sort(function (a, b) {
+    const r = SEVERITY_RANK[b.color] - SEVERITY_RANK[a.color];
+    if (r !== 0) return r;
+    return (b.fecha || "").localeCompare(a.fecha || "");
+  })[0];
+}
+
+function argosBuildStateTooltip(sid, evs){
+  const name = (MEXICO_PATHS[sid] && MEXICO_PATHS[sid].name) || sid;
+  if (!evs || !evs.length) {
+    return "<b>" + name + "</b><br>Nivel: ⚪ Sin datos<br>Sin eventos relevantes durante el corte.";
+  }
+  const top = argosTopEventFor(evs);
+  let html = "<b>" + name + "</b>" +
+    "<br>Nivel: " + SEVERITY_LABEL[top.color] +
+    "<br>Evento: " + top.hecho +
+    "<br>ARG-ID: " + top.id +
+    "<br>Fuentes: " + (top.fuentes || []).join(", ") +
+    "<br>Confianza: " + (top.confianza || "—") +
+    "<br>Fecha y hora (hecho o publicación): " + (top.fecha || "—") + " " + (top.hora || "") + "<br>Consulta: " + CONSULTA_TXT;
+  if (evs.length > 1) {
+    html += "<br><i>+" + (evs.length - 1) + " evento(s) adicional(es) en esta entidad</i>";
+  }
+  return html;
+}
+
+function argosShowTooltip(e, html){
+  const tt = document.getElementById("argos-tooltip");
+  if (!tt) return;
+  tt.innerHTML = html;
+  const pad = 14;
+  let x = e.clientX + pad, y = e.clientY + pad;
+  tt.style.left = x + "px";
+  tt.style.top = y + "px";
+  tt.classList.add("show");
+}
+function argosHideTooltip(){
+  const tt = document.getElementById("argos-tooltip");
+  if (tt) tt.classList.remove("show");
+}
+
+function argosRenderMap(containerId, eventos){
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  const byState = {};
+  eventos.forEach(function (ev) {
+    if (!ev.estado) return;
+    (byState[ev.estado] = byState[ev.estado] || []).push(ev);
+  });
+  let svg = '<svg viewBox="' + MEXICO_VIEWBOX + '" preserveAspectRatio="xMidYMid meet">';
+  Object.keys(MEXICO_PATHS).forEach(function (sid) {
+    const st = MEXICO_PATHS[sid];
+    const evs = byState[sid];
+    const top = evs ? argosTopEventFor(evs) : null;
+    const fill = top ? SEVERITY_COLOR[top.color] : GRIS;
+    svg += '<path class="estado-path" data-sid="' + sid + '" d="' + st.d + '" fill="' + fill + '" fill-opacity="' + (top ? "0.88" : "0.55") + '"></path>';
+  });
+  svg += "</svg>";
+  el.innerHTML = svg;
+  el.querySelectorAll(".estado-path").forEach(function (path) {
+    const sid = path.dataset.sid;
+    path.addEventListener("mousemove", function (e) {
+      argosShowTooltip(e, argosBuildStateTooltip(sid, byState[sid]));
+    });
+    path.addEventListener("mouseleave", argosHideTooltip);
+    path.addEventListener("click", function () {
+      const evs = byState[sid];
+      if (evs && evs.length) { location.hash = argosTopEventFor(evs).id; }
+    });
+  });
+}
+
+function argosRenderRadar(containerId, statsId, eventos, corteFechaStr){
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  const W = 220, H = 220, CX = 110, CY = 110, RMAX = 98, RMIN = 20, WINDOW_DAYS = 2;
+  const sector = 360 / REGION_ORDER.length;
+  const corte = corteFechaStr ? new Date(corteFechaStr) : new Date();
+
+  let svg = '<svg viewBox="0 0 ' + W + ' ' + H + '">';
+  svg += '<defs><radialGradient id="rgrad-' + containerId + '" cx="50%" cy="50%" r="50%">' +
+    '<stop offset="0%" stop-color="rgba(76,230,255,.10)"/><stop offset="100%" stop-color="rgba(76,230,255,0)"/></radialGradient></defs>';
+  svg += '<circle cx="' + CX + '" cy="' + CY + '" r="' + RMAX + '" fill="url(#rgrad-' + containerId + ')"/>';
+  [1, 2, 3, 4].forEach(function (i) {
+    svg += '<circle class="radar-ring" cx="' + CX + '" cy="' + CY + '" r="' + (RMAX * i / 4) + '"/>';
+  });
+  svg += '<line class="radar-cross" x1="' + (CX - RMAX) + '" y1="' + CY + '" x2="' + (CX + RMAX) + '" y2="' + CY + '"/>';
+  svg += '<line class="radar-cross" x1="' + CX + '" y1="' + (CY - RMAX) + '" x2="' + CX + '" y2="' + (CY + RMAX) + '"/>';
+
+  const sweepAngle = 42;
+  const p0 = argosPolarPoint(CX, CY, RMAX, -90);
+  const p1 = argosPolarPoint(CX, CY, RMAX, -90 + sweepAngle);
+  const sweepPath = "M" + CX + " " + CY + " L" + p0[0].toFixed(1) + " " + p0[1].toFixed(1) +
+    " A" + RMAX + " " + RMAX + " 0 0 1 " + p1[0].toFixed(1) + " " + p1[1].toFixed(1) + " Z";
+  svg += '<g><path class="radar-sweep-path" d="' + sweepPath + '">' +
+    '<animateTransform attributeName="transform" type="rotate" from="0 ' + CX + ' ' + CY + '" to="360 ' + CX + ' ' + CY + '" dur="9s" repeatCount="indefinite"/>' +
+    "</path></g>";
+
+  const counts = { rojo: 0, amarillo: 0, verde: 0 };
+  const countedIds = {};
+  eventos.forEach(function (ev, idx) {
+    if (!countedIds[ev.id]) { counts[ev.color] = (counts[ev.color] || 0) + 1; countedIds[ev.id] = true; }
+    const ri = REGION_ORDER.indexOf(ev.region);
+    const baseAngle = (ri >= 0 ? ri * sector + sector / 2 : 0) - 90;
+    const jitterSeed = argosHash(ev.id + "-" + idx) % 100;
+    const jitter = (jitterSeed / 100 - 0.5) * (sector * 0.7);
+    const angle = baseAngle + jitter;
+    let daysAgo = WINDOW_DAYS;
+    if (ev.fecha) {
+      const d = new Date(ev.fecha);
+      daysAgo = Math.max(0, Math.round((corte - d) / 86400000));
+    }
+    const t = Math.min(1, daysAgo / WINDOW_DAYS);
+    const r = RMAX - t * (RMAX - RMIN);
+    const p = argosPolarPoint(CX, CY, r, angle);
+    const rad = SIZE_R[ev.impacto] || SIZE_R.pequeno;
+    const color = SEVERITY_COLOR[ev.color] || "#8fb8c8";
+    const cls = "eco" + (ev.color === "rojo" ? " pulse" : "");
+    svg += '<a href="#' + ev.id + '"><circle class="' + cls + '" cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) +
+      '" r="' + rad + '" fill="' + color + '"><title>' + ev.id + " — " + ev.hecho + " (" + (ev.fecha || "") + ")</title></circle></a>";
+  });
+
+  svg += "</svg>";
+  el.innerHTML = svg;
+
+  if (statsId) {
+    const st = document.getElementById(statsId);
+    if (st) {
+      st.innerHTML =
+        "<div>🔴 Alto impacto<br><b>" + (counts.rojo || 0) + "</b></div>" +
+        "<div>🟡 Violencia operativa<br><b>" + (counts.amarillo || 0) + "</b></div>" +
+        "<div>🟢 Acciones institucionales<br><b>" + (counts.verde || 0) + "</b></div>";
+    }
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  argosRenderMap("argos-map", EVENTOS_CORTE);
+  argosRenderRadar("argos-radar", "argos-radar-stats", EVENTOS_CORTE, CORTE_FECHA);
+  argosRenderMap("argos-map-arm", EVENTOS_ARM);
+});
+
+</script>
