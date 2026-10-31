@@ -112,3 +112,54 @@ Resumen del coordinador:
 - **General Bravo y China `-017`**: MVS y Punto por Punto 2026/10/28; Consulta Monterrey «el pasado miércoles» = 28 → cláusula no se ejecuta; «dos armas» solo por resumen.
 - **Sentencias**: Doctor Arroyo, NL 40 años, Fresnillo: PENDIENTE (dominios fiscalianl y fiscaliazacatecas devolvieron páginas, sin el caso) · Ramos Arizpe: sin resultado; `fge.coahuila.gob.mx` sin páginas · FGJE-370-2026 (Tamaulipas, ~6-oct) fuera.
 - **Cobertura**: Tamps propia / fgjtam SRIV / fgjtam (FGJE-370 fuera) · NL propia / NO REVISADA / REVISADA SRIV · Zac propia / REVISADA SRIV / REVISADA SRIV · Coah propia / sin dominio / dominio no confirmado · SLP regional / NO REVISADA / NO REVISADA.
+
+## controles — ronda 1
+
+## procedencia-cifras R1 — CORREGIR ANTES DE PUBLICAR (20 pases; 24 de 24 búsquedas)
+
+1. **ARG-145-002 Cancún**: ninguna ruta fechada ni titular con día (Sipse …-517019, Sol QRoo, Cambio22, Grupo Interactivo); «3 muertos» y «ningún detenido» por titular; viernes 30 y ~14:00 solo por resumen; tercer cuerpo a ~200 m / ~100 m (contradicho). Sin Embargo y Quintana Roo Hoy no reverificados → sin la excepción ratificada, **no se ficha**.
+2. **ARG-145-003 Valle de Chalco**: fuente única sin ruta fechada; **contradicción nueva**: Telediario (resumen) — Xico **2.ª** Secc., **1 muerto y 1 herido**, **madrugada del sábado**, misma calle → no fichar con fuente única.
+3. **ARG-145-004 Pénjamo**: sin tercera fuente; «versión posterior» de AM no sostenida (sin hora de publicación) → 🟡 con reserva o 🔴 marcado contradicho.
+4. **Culiacán, col. Díaz Ordaz**: **ruta fechada** — Ríodoce https://riodoce.mx/2026/10/29/abandonan-una-hielera-con-una-cabeza-humana-en-vivienda-de-la-diaz-ordaz-en-culiacan/ · UnoTV («segundo caso en 48 horas»), Sinaloahoy («…hielera con mensaje»), Meganoticias, Extraoficial, Los Noticieristas (2026/10), Azteca Sinaloa; jue 29, ~18:00 (Meganoticias) / 18:20 (Ríodoce) SOLO POR RESUMEN; calle Constituyente Enrique Colunga; cartulina con mensaje; FGE investiga; sin detenidos → **fichar 🔴**.
+5. **REC-001 Mazatlán**: «poco antes de las 11:00» SOLO POR RESUMEN (dos consultas) → sigue `REC`; Luz Noticias 2026-10-29 «…cobra su segunda víctima mortal»; El Diario del Noroeste 2026/oct/29.
+6. **REC-002 Coatzacoalcos**: hora no hallada; una nota describe tronco y extremidades (contradice «decapitado», resumen); «con un mensaje» singular por titular (La Nigua) → unificar.
+7. **ARG-145-001 Matamoros**: captura ~11:00 (RND, por resumen) → reescribir la cláusula: captura anterior, bloqueos y muertes posteriores con hora no fijada; si la cláusula retirara la ficha, las muertes pasan a fe de erratas de 144.
+8. «**Seis**» por titular con fecha más temprana: Proceso 2026/10/30 «Jornada violenta en Matamoros deja seis muertos; una niña de siete años está entre las víctimas»; La Jornada 2026/10/30; La Jornada San Luis / Red Metropolitana 2026/10/30 · «cinco»: Expreso 2026/10/31 (por titular; «citando a la Fiscalía» solo por resumen) · «siete» (Elefante Blanco): no reverificado · Infobae 2026/10/30 titula «murió **en operativo**», no «fuego cruzado» (ABC, no reverificado) · familiar atribuye el disparo a un helicóptero (resumen); «bala perdida» (La Parada Digital) · «52 vehículos calcinados» por titular (Excélsior, sin fecha) · «450» (Latinus) frente a «casi 500» (Infobae 2026/10/30): contradicción de titulares, no se imprime.
+9. **ARG-145-005 Mexicali**: titulares dicen **1 herido** (el subdirector); «dos heridos» solo por resumen → título y total a 1; «abatido» por titular (Jornada BC).
+10. **ARG-145-006 Vallecillo**: «noche de este jueves» y «agredidos a balazos durante un recorrido de vigilancia» (La Verdad, SOLO POR RESUMEN); «Fuerza Civil abate a dos en Vallecillo» (La Verdad 2026/10, titular); N+; Horacero → 🟡 se mantiene hasta fragmento; Conclusión 4: «abatidos», no «agresores».
+11. **ARG-145-012 Iztapalapa**: «tres detenidos» por titulares SIN fecha (Milenio, NX); La Silla Rota 2026/10/30 sin «3» ni «armas» en el titular; riesgo de homónimo (otros cateos en Iztapalapa con 3 detenidos en 2026) → rotular.
+12. **-013/-014**: «un arma larga» y «armas largas, cargadores y cartuchos» en el título solo por resumen → quitar; Institucional 0 (boletín por republicador); ARM-003 «No confirmado» → fuera del recuento. `site:gabinetedeseguridad.gob.mx`: no indexa el boletín del 29.
+13. **Tecate**: «hasta 16 años», «cuatro», «FGR», «2024» por titular (Red Metropolitana, El Imparcial 2026/10/30); penas individuales, «octubre» y «abreviado» solo por resumen.
+14. Aritmética del borrador: cuadra (12, 5, 1, 3; 0,29; 47 h 38 min).
+15. Conclusiones: «30 horas» y «48 horas» no sostenidas → «28 y 29-oct», «del 29 al 31-oct»; Valoración 1: Pénjamo no sostiene «múltiple».
+16. **Triple consulta federal, acciones del 30**: (a) día suelto, (b) rango, (c) título sin `site:` → **no existe**; `gob.mx/sspc` lista dos comunicados del 30-oct solo por título (AICM, droga en juguetes; dos detenidos en Tamaulipas) → **SRIV se mantiene**.
+
+## editor-duplicidad R1 — CORREGIR ANTES DE PUBLICAR (20 pases; 12 hallazgos; 0 duplicidades reales)
+
+1. **ARG-145-001 Matamoros** = desarrollo de ARG-144-008/-015 (misma fecha, lugar, tipo, emisor; niña «en operativo»; captura ~11:00) → no hecho propio; criterio doble con la identidad del capturado.
+2. **-002 Cancún y -003 Valle de Chalco**: rojos sin ruta fechada; excepción no ratificada → vistos (o declarar la excepción y aplicarla también a Díaz Ordaz).
+3. **-004 Pénjamo**: cifra contradicha contada y en 🔴 → 🟡 y segundo muerto fuera del total.
+4. **Detenidos de Iztapalapa**: CLAUDE.md cuenta solo detenidos con cifra de autoridad → n/d; ARM-002/-003 «0» con «no publicados» → n/d.
+5. Marcador `__CONSULTA__` sin resolver (17 fichas, JS, móvil, texto).
+6. Fe de erratas dentro del cartelón (párrafo de totales) → al archivo de fuentes; nombre del capturado y su armamento repetidos.
+7. Método en el cartelón: fila «Ciclo C», «las 14 NO REVISADA… revisadas», «de las 13… revisadas 5», deslinde de REC-003 («144 no lo publicó»), «cotejados contra el índice», «reclasificación… para decisión del destinatario».
+8. Portada: líneas 1 y 4 describen hechos; Matamoros en 7 sitios; Tuxtepec/Acatic en dos listas de vistos.
+9. Conclusiones: no repiten las de 144; C1 sin «vínculo no acreditado»; «unas 30 horas» con horas por resumen; C5 debe decir PENDIENTE en la primera frase.
+10. Cobertura de sentencias: 26 SRIV incluye Jal y Oax con título de condena → «24 + 2»; candidatos arrastrados (Tulantepec, Ramos Arizpe, Fresnillo): revisar umbral de dos ediciones.
+11. Deslindes: Piedras Negras (visto de 142: Puente Internacional II, 1 arma, 3 cargadores, 39 cartuchos, 1 detenida) · REC-002 Coatzacoalcos (homónimo col. Francisco Villa en `argos-2026-10-27-equipos.md`) · Coahuayana (144 solo vio Tecomán, 23-oct) · fuentes nacionales de -005 · marcas AP y cláusulas, conjuntos distintos.
+12. Índice de ARG-ID sin los ARG-ID de 145 (cierre).
+Cruces verificados sin duplicidad: REC-002/144-REC-002, REC-001/144-REC-004, REC-003, Vallecillo, Mexicali, Cancún, Pénjamo, Valle de Chalco, Iztapalapa, JRE, Santa Fe, Cuauhtémoc, Tijuana ×2, Mazatlán ×2. Aritmética y paridad limpias.
+
+## Aplicación de la ronda 1 (coordinador, 11:55)
+
+- **Matamoros** → `ARG-145-REC-001` (niña muerta, 2 heridos; ventana de 144: la niña «murió en operativo» por titular y la captura fue ~11:00 por resumen). Las muertes en choque, desarrollo de ARG-144-008, dentro de la misma ficha, fuera de totales. «Seis» con Proceso y La Jornada 2026/10/30; «siete» no reverificado.
+- **Culiacán, col. Díaz Ordaz** → `ARG-145-001` 🔴 (Ríodoce 2026/10/29; ~18:00-18:20 por resumen).
+- **Cancún y Valle de Chalco** → vistos `SIN RUTA FECHADA — NO SE FICHA` (excepción no ratificada; Valle de Chalco, además, contradicho).
+- **Pénjamo** → 🟡, 1 muerto; segunda víctima `CIFRA CONTRADICHA — NO SE INTEGRA AL TOTAL HASTA VALIDACIÓN`; «versión posterior» retirado.
+- **Mexicali** → 1 herido por titular (el subdirector); el segundo solo por resumen.
+- **Vallecillo** → «noche» por resumen; sin cláusula; agresión al patrullaje solo por resumen (🟡 con reserva).
+- **Detenidos y armas** → todos `n/d`; JRE (`ARM-004`) fuera del recuento (no confirmado); títulos de -011 y -012 sin cifras por resumen; Institucional 0 (republicadores).
+- **REC-002 Mazatlán**: «poco antes de las 11:00» por resumen; Luz Noticias y El Diario del Noroeste 2026/10/29 · **REC-003 Coatzacoalcos**: «con mensaje» (singular, La Nigua) frente a «mensajes»; descripción contradicha; deslinde del homónimo.
+- **Cartelón**: fe de erratas y método retirados (van a este archivo y al de fuentes); portada con cinco acciones sin describir hechos; Conclusiones reescritas (vínculo no acreditado en las cinco; sin «30 horas» ni «48 horas»; «abatidos»; C5 encabezada por PENDIENTE); cobertura de sentencias 24 + 2.
+- **No aplicado**: umbral de dos ediciones a Tulantepec, Ramos Arizpe y Fresnillo — sus cifras tienen respaldo por titular (sin pena en Tulantepec; «más de 7 años», El Siglo; «68 años», ECOdiario): no son cifras «sin respaldo citable»; siguen PENDIENTES.
+- Resultado: **12 hechos (1 🔴 · 8 🟡 · 3 🟢), 4 recuperaciones**; muertos 5, heridos 1, cuerpos 2; densidad 0,25; validador OK.
