@@ -150,7 +150,7 @@ Resumen del coordinador:
 12. Índice de ARG-ID sin los ARG-ID de 145 (cierre).
 Cruces verificados sin duplicidad: REC-002/144-REC-002, REC-001/144-REC-004, REC-003, Vallecillo, Mexicali, Cancún, Pénjamo, Valle de Chalco, Iztapalapa, JRE, Santa Fe, Cuauhtémoc, Tijuana ×2, Mazatlán ×2. Aritmética y paridad limpias.
 
-## Aplicación de la ronda 1 (coordinador, 11:55)
+## Aplicación de la ronda 1 (coordinador, tras las 11:39)
 
 - **Matamoros** → `ARG-145-REC-001` (niña muerta, 2 heridos; ventana de 144: la niña «murió en operativo» por titular y la captura fue ~11:00 por resumen). Las muertes en choque, desarrollo de ARG-144-008, dentro de la misma ficha, fuera de totales. «Seis» con Proceso y La Jornada 2026/10/30; «siete» no reverificado.
 - **Culiacán, col. Díaz Ordaz** → `ARG-145-001` 🔴 (Ríodoce 2026/10/29; ~18:00-18:20 por resumen).
@@ -163,3 +163,15 @@ Cruces verificados sin duplicidad: REC-002/144-REC-002, REC-001/144-REC-004, REC
 - **Cartelón**: fe de erratas y método retirados (van a este archivo y al de fuentes); portada con cinco acciones sin describir hechos; Conclusiones reescritas (vínculo no acreditado en las cinco; sin «30 horas» ni «48 horas»; «abatidos»; C5 encabezada por PENDIENTE); cobertura de sentencias 24 + 2.
 - **No aplicado**: umbral de dos ediciones a Tulantepec, Ramos Arizpe y Fresnillo — sus cifras tienen respaldo por titular (sin pena en Tulantepec; «más de 7 años», El Siglo; «68 años», ECOdiario): no son cifras «sin respaldo citable»; siguen PENDIENTES.
 - Resultado: **12 hechos (1 🔴 · 8 🟡 · 3 🟢), 4 recuperaciones**; muertos 5, heridos 1, cuerpos 2; densidad 0,25; validador OK.
+
+## controles — ronda 2 (en serie)
+
+## editor-duplicidad R2 — CORREGIR ANTES DE PUBLICAR (20 pases; 12 hallazgos menores; 0 duplicidades)
+
+1. Detenidos «0» en la tabla (armrow ignoraba `nd` en el índice 9) · 2. «fe de erratas» en Pénjamo, Vallecillo y Xochitlán · 3. explicaciones de color y método residual (Tijuana/buscador, El Congresista, señuelo, «fin de dos ediciones», acusación a 144 en el boletín federal, Valoración 1, orden del panorama) · 4. archivo de fuentes inexistente · 5. índice y pendientes sin actualizar · 6. Conclusión 2 sin ARG-144-REC-004 · 7. «sur del puerto» sin respaldo · 8. deslinde de -001: el visto de Díaz Ordaz es del 27-oct, tarde · 9. REC-003 posible misma víctima que ARG-144-REC-002 (slug de La Silla Rota) · 10. Coahuayana · 11. Tulantepec sin `HEREDADO — NO REVERIFICADO` · 12. cobertura de sentencias 23 + 3. Aritmética, paridad y validador: limpios. **Todos aplicados.**
+
+## procedencia-cifras R2 — CORREGIR ANTES DE PUBLICAR (20 pases; 6 de 6 búsquedas)
+
+1. Pénjamo: «1 muerto, por titular de ambas» inexacto (AM titula 2); topónimo de la carretera solo por resumen; Correo y AM coinciden en edades (19 y 38): mismo hecho; contradicción probablemente temporal, no arbitrada · 2. Matamoros: Elefante Blanco 2026/10/30 titula «Niña estadounidense y cinco adultos mueren…» (= 6), no «siete»; Expreso 2026/10/31 no reapareció (sí Expreso 2026/10/30 «Detención desata jornada violenta», sin cifra) · 3. hora de Matamoros: ningún titular la fija; Zócalo (sin fecha) «Muere niña en balaceras tras captura de “Axel”»; Vocería solo por resumen · 4. Vallecillo: 🟡 se sostiene; N+ de Vallecillo «martes 7 de mayo» es otro hecho; MVS 2026/10/30 «Refuerzan seguridad en NL tras hechos violentos en Matamoros» · 5. Cancún: sin ruta; PorEsto 2026/10/30 es compendio; «detienen en una combi» (Sol QRoo, sin fecha) no se liga · 6. acciones del 30: forma (c) sin boletín → SRIV · 7. `__CONSULTA__` · 8. «las 10» nombra 9 · 9. 52 frente a 72 · 10. reserva en la Conclusión 1. **Todos aplicados** (`__CONSULTA__` → 11:55).
+
+**Presupuesto final**: 2 + 18 + 150 + 24 + 6 = **200 de 200**. Edición sellada.
