@@ -1,0 +1,32 @@
+# ARGOS 145 — Archivo de equipos (corte 2026-10-31)
+
+## notas-coordinador
+
+# ARGOS 145 — Notas del coordinador (todas las búsquedas mode:"extended" salvo la de control en standard)
+
+0. **Bloque 0** (31-oct 08:30 CDMX): clon en `claude/argos-criminal-intelligence-otiawj` (rama de 142-143, no de sesión de 145; no es fallo). Seis fusiones `--ff-only`: cinco «Already up to date»; `claude/argos-144` trajo 144 en *fast-forward*. Último commit `090a21f`. **254 archivos** en `reports/`; última edición `argos-2026-10-29` (ARGOS 144). `curl https://www.gob.mx/fgr` → `000` (proxy: `connect_rejected`). Rama de trabajo: **`claude/argos-145`**, creada sobre `090a21f` y publicada.
+   - **«Procede» a las 11:14** (2 h 44 min tras el Bloque 0: **supera el umbral de dos horas**). Se avisa al destinatario y se cierra la ventana a la hora del «Procede». **Ventana 29-oct 11:36 → 31-oct 11:14 (47 h 38 min).** El Bloque 0 dio por error «68 h 54 min»; la orden decía «~70 h»: la ventana real es de dos días sobre tres fechas. Corregido ante el destinatario.
+   - **Decisiones del destinatario no recibidas** (Celaya `ARG-143-001`; excepción para rojos sin ruta fechada): se aplica el statu quo — Celaya 🟡; la excepción NO se usa. Siguen abiertas.
+1. **Control** («ataque armado muertos 29 de octubre 2026 México»): `standard` → nada fechado (notas 2020-2025; Michoacán 3-oct). `extended` → Mazatlán restaurante (El Diario de Chihuahua 2026/oct/29), Pénjamo (AM 2026/10/30), Valle de Chalco (noche del viernes), Tijuana (30), Iztapalapa (23-24, fuera). **Todo `extended`.**
+2-5. **Boletín federal, triple consulta**:
+   - (a) día suelto «28 de octubre» → **EXISTE el boletín de acciones del 28** (Milenio https://www.milenio.com/policia/acciones-relevantes-de-gabinete-de-seguridad-28-de-octubre-2026 · RED113 http://www.red113mx.com/2026/10/el-gabinete-de-seguridad-del-gobierno_0821630433.html · Certeza Diario · Argonmexico 2026/10/29): Chih/Manuel Ojinaga 2 detenidos (uno con fines de extradición), 100 kg mariguana, 7 cartuchos, 1 vehículo · Jal/Acatic cateo, 5 vehículos blindados · Sin/Ahome 15 kg feniletil · Sin/Culiacán 2 áreas de producción, 1,490 L y 400 kg · Oax/Tuxtepec 2 detenidos (uno jefe regional), armas, granadas, vehículos · 38 MDP. Todo SOLO POR RESUMEN. **Acciones del 28 = ventana de 144** (144 lo declaró SRIV al cierre): vistos 🟢, no entran en 145. Tuxtepec: el cateo del 27 y el del 28 deben deslindarse (encargo Sureste/Golfo).
+   - (a') día suelto «29 de octubre» → sin el boletín en esa forma (solo días previos: 9-11, 12, 15, 20, 23-25, 27).
+   - (a'') «30 de octubre» → **boletín de acciones del 29** (RED113 http://www.red113mx.com/2026/10/el-gabinete-de-seguridad-del-gobierno_01358922582.html · Tallapolítica https://www.tallapolitica.com.mx/gabinete-de-seguridad-del-gobierno-de-mexico-informa-acciones-relevantes-del-29-de-octubre-de-2026/): Coah, Gro, Jal, Mich, Mor, Sin, Tamps; Coahuila metanfetamina, cocaína y 1 arma larga; Culiacán áreas de producción; 42 MDP. SOLO POR RESUMEN. Agregado federal del día de apertura: no fija hora → `PUBLICADO EL DÍA DE APERTURA SIN HORA` para cada acción sin otra fuente. **Acciones del 30: `SIN RESULTADO INDEXADO EN VENTANA`.**
+   - (b) rango `site:gob.mx` «28, 29 y 30 de octubre» → solo boletines de 2025 y de marzo/mayo de 2026; el resumen menciona un listado SSPC del 30-oct con el boletín del 29, AICM (droga en juguetes) y aduanas de Chih/Tamps (armas y cartuchos), solo por resumen.
+6-18. **Recall nacional por día** (13):
+   - policía 29 → Ecuador (ajeno); Causa en Común 236 elementos (recuento, no se integra).
+   - servidores públicos «este viernes» → Indaparapeo (= ARG-144-002; Fiscalía: «por error», PCM Noticias) · **Veracruz: policía ministerial Juan Francisco Rueda Barrientos muere el vie 30 tras 17 días** (XEU) — agresión de ventana anterior · Colombia (ajeno).
+   - fosas 30 → nada nuevo fechado (Uruapan Cutzato = 142; Tecate = 143-REC-001; SLRC 26-oct; Ciudad del Maíz = 144-006).
+   - **instalaciones / base / sede** → Indaparapeo base de operaciones (vie 23-oct, ventana anterior) · Jacona (11-oct) · Celaya vinculación (hecho de 2025) · Tecate sentencia 16 años por disparar contra la GN (El Imparcial 2026/10/30, candidata).
+   - **bloqueos / quema** → ⚠️ **MATAMOROS**: «El Titán» Axel Alfredo Cárdenas Rodríguez (Los Ciclones); **seis personas ajenas muertas por los narcobloqueos** (Infobae 2026/10/31; La Opinión 2026/10/31; El Mañana 2026/10/31 «sexta víctima»); **niña de 7 años estadounidense muerta en el operativo** (Infobae 2026/10/30); 52 calcinados (La Opinión) / 72 retirados (La Jornada 2026/10/31); Río Bravo y Padilla; 450 elementos de la Defensa. 144 publicó `-008` (bloqueos, FRONTERA) y `-015` (detención). → Encargo 1 del Noreste.
+   - «este viernes» 30 → **Cancún Paseos del Mar, 3 muertos** (Sipse) · Pénjamo, 2 muertos ~14:15 · Valle de Chalco, 2 muertos y 1 herido ~22:00 · Mazatlán restaurante (jueves 29, El Financiero 2026/10/30).
+   - «este sábado» 31 → Mazatlán fracc. Santa Fe, joven (Luz Noticias 2026-10-31, mañana) · resto ajeno (Gua, Ecu, Col).
+   - enfrentamientos 29 → **Vallecillo (NL), 2 abatidos por Fuerza Civil, 2 largas** (ABC 2026/10/29) · **Mexicali col. Fundadores, FESC: subdirector operativo y otro agente heridos, agresor abatido** (En Línea BC 2026/10/30).
+   - Culiacán 30 → «6 jóvenes levantados» (La Razón 2026/10/29; Revista Espejo 2026/10/28) frente a REC-003 (4) → encargo Noroeste · «El Coco Ranas» (Noroeste).
+   - Gto/Mich 31 → nada fechado.
+   - cuerpos 30 → nada fechado.
+   - explosivos/drones 30 → Guadalajara molotov en banco (Infobae 2026/10/30) · Apatzingán drones y minas (27-oct) · El Terrero (19-oct).
+   - armamento 30 → Concordia 5 largas 1,138 cartuchos (fecha por fijar) · Iztapalapa Lomas Estrella 3 detenidos · Tamaulipas 2 largas 2 cortas (Potosinoticias 2026/10/30) · Jaral (= 144-020) · Erongarícuaro (26-oct).
+   - Gro/Mor/Edomex 29 → Morelos 7 homicidios (recuento, no se integra) · Zihuatanejo chofer ~15:00 · Cuernavaca ~07:00 (ventana de 144).
+**Cotejo grep del coordinador** (25-29 + índice + fuentes/equipos de 144): Paseos del Mar, Vallecillo, Fundadores, Tepuza, Rueda Barrientos, Acatic, Coco Ranas → sin coincidencias · Valle de Chalco → solo 123 (otros hechos) · Concordia → 142/143 · Titán → índice (por cotejar) · Ojinaga → 140 · Miguel Alemán → 143.
+**Presupuesto del coordinador**: 2 control + 18. Total al lanzar la ola: **20 de 200**. Ola: 6 × 25 (Ciclo C: Occidente y Sureste judicial primero).

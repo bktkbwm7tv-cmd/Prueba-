@@ -3,7 +3,7 @@
 Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 
 ## Ventana
-- ABRE: **jueves 29-oct-2026 11:36 CDMX** (donde cerró ARGOS 144). CIERRA: **hora real de arranque de la sesión de ARGOS 145** (el coordinador la escribe aquí al copiar la plantilla: ____).
+- ABRE: **jueves 29-oct-2026 11:36 CDMX** (donde cerró ARGOS 144). CIERRA: **hora real de arranque de la sesión de ARGOS 145** (el coordinador la escribe aquí al copiar la plantilla: **sábado 31-oct-2026 11:14 CDMX** — hora del «Procede», 2 h 44 min después del Bloque 0 de las 08:30).
 - Calendario: miércoles 28 · **jueves 29 · viernes 30 · sábado 31** · domingo 1-nov. Comprueba siempre el día de la semana que dice la fuente contra este calendario.
 - **ARGOS 144 (ventana 28-oct 08:28 → 29-oct 11:36) ya publicó 20 hechos propios** —Magdalena de Kino (-001), Indaparapeo (-002), Acámbaro Santiaguillo (-003), Chenalhó (-004), Irapuato col. Azteca (-005), Ciudad del Maíz (-006), Ecatepec Rústica Xalostoc restos (-007) y detención (-019), Matamoros bloqueos (-008) y detención (-015), Acapulco Emiliano Zapata (-009), Tecolutla (-010), Cancún Cielo Nuevo (-011) y detención (-016), Cuautla Tecnológico (-012), Valle de Santiago Ranchos Unidos (-013), Chetumal Nachicocom (-014), General Bravo y China (-017), Lindavista (-018), Jaral del Progreso (-020)— y **cuatro recuperaciones**: CDMX Centro (REC-001), Coatzacoalcos (REC-002), Culiacán Villas del Real (REC-003), Mazatlán hielera (REC-004). Un hecho del 28 (tras 08:28) o del 29 antes de las 11:36 que 144 NO publicó es de la ventana de 144: candidato `-REC-` **solo si es de alto impacto (🔴)**; si es 🟡 o 🟢, va a «VISTOS».
 - **Núcleo del corte**: hechos del **jueves 29 (tras las 11:36)** en adelante. Publicación del 29 sin hora fijada → `PUBLICADO EL DÍA DE APERTURA SIN HORA`; publicación del día de cierre sin hora → `FRONTERA DE VENTANA — HORA NO FIJADA`. ⚠️ **Si el único dato de día U HORA de una nota del 29 apunta a antes de las 11:36, el hecho es de la ventana de 144** (lecciones de Tabasco y de Irapuato).
@@ -14,12 +14,12 @@ Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 ## Red y herramientas
 - Egreso bloqueado (curl gob.mx → 000). **NO uses WebFetch.** Solo WebSearch.
 - **TODA búsqueda con mode:"extended".** Nunca "standard".
-- Respeta tu tope de búsquedas; declara al final `Búsquedas utilizadas: n de N`. Si te sobran, invierte en hechos de alto impacto del martes 27 antes de las 08:45 (solo 🔴, candidatos `-REC-`) y del día de cierre.
+- Respeta tu tope de búsquedas; declara al final `Búsquedas utilizadas: n de N`. Si te sobran, invierte en hechos de alto impacto del miércoles 28 (tras las 08:28) y del jueves 29 antes de las 11:36 que ARGOS 144 no publicó (solo 🔴, candidatos `-REC-`) y del día de cierre.
 - Pon la cifra de peso ENTRE COMILLAS en la consulta cuando busques una cifra concreta ("tres muertos", "21 años").
 
 ## Barrido obligatorio por equipo (además de los encargos)
-1. Búsqueda por día de la semana: «este miércoles» / «la noche del miércoles» / «este jueves» / «madrugada de este jueves» + entidades.
-2. Fecha en la ruta, UNA POR DÍA de la ventana («2026/10/28», «2026/10/29»…): **4 BÚSQUEDAS RESERVADAS** para esto, que no se gastan en otra cosa; hazlas AL FINAL.
+1. Búsqueda por día de la semana: «este jueves» / «la noche del jueves» / «este viernes» / «madrugada de este viernes» / «este sábado» + entidades.
+2. Fecha en la ruta, UNA POR DÍA de la ventana («2026/10/29», «2026/10/30», «2026/10/31»; la cuarta, a tu elección entre las tres): **4 BÚSQUEDAS RESERVADAS** para esto, que no se gastan en otra cosa; hazlas AL FINAL.
 3. «funcionario / director / servidor público / policía asesinado» en tu región.
 4. «fosa / colectivo / restos / cuerpos» en tu región, **UNA CONSULTA POR ENTIDAD FRONTERIZA** (BC, Son, Chih, Tamps) — en 135 la consulta regional no trajo Cachanillas ni Nogales.
 5b. ⚠️ **`site:` CON UN SOLO DOMINIO POR CONSULTA. NUNCA `OR` ENTRE DOMINIOS**: el buscador ignora el operador y la consulta se pierde (pasó en dos equipos de 140).
