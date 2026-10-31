@@ -2647,3 +2647,49 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 5. **Hora por resumen anterior a la apertura** (Irapuato Benito Juárez, ~07:15): retirado en el control. La lección (a) de 143 vale para la hora, no solo para el día.
 6. **Presupuesto de 144**: 2 + 18 + 150 + 6 + 22 + 2 = **200 de 200**; la ronda 2 de procedencia trabajó con 2 búsquedas.
 7. **Rama**: 139 a 144 viven fuera de `main`; 144 en `claude/argos-144`.
+
+## ARGOS 145 — lo que cierra esta edición
+
+| Pendiente | Disposición |
+|---|---|
+| **Cláusulas de retiro de 144 (12)** | Ninguna se ejecuta (`-003`, `-004`, `-005`, `-010`, `-013`, `-017`, `-018`, `-019` con día o franja dentro de 144; `-006`, `-007` sin día del hallazgo; `-020` sin resolver). Cerradas salvo `-006`, `-007`, `-012` (no consultada) y `-020` |
+| **Matamoros `-008` / `-015`** | Detenido identificado por titular (Axel Alfredo Cárdenas Rodríguez, «El Titán»); 2 detenidos; víctimas en `ARG-145-REC-001`; bloqueos levantados el 30. Cerrado salvo hora y comunicado oficial |
+| **Chetumal `-014`** | Hecho del 28 (~20:00, por resumen): sigue en 144 (`ARG-145-FE-003`). Cerrado |
+| **Tetlatlahuca** | Publicado como `ARG-145-REC-004` (Intolerancia Diario 2026/10/28) |
+| **Xochitlán de las Flores** | La Silla Rota 2026/10/28: ventana de 144, no de 143. Sin fe de erratas a 143. Cerrado |
+| **Tuxtepec** | Rutas del 28 (ventana de 144); los «16» son otros operativos. Cerrado |
+| **Boletín federal del 28 y 29** | Existen por republicadores (§4 del archivo de fuentes). Cerrado; el del 30, SRIV |
+| **Huejotzingo** | El boletín del dominio con «55 años» es otro caso (jul-2025): sigue candidato por medios |
+
+## Abiertos que ARGOS 146 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️ **Decisión del destinatario: excepción para rojos sin ruta fechada** | **Ahora decide dos rojos de 145**: Cancún, Paseos del Mar (3 muertos, vie 30, sin ruta) y Valle de Chalco, San Miguel Xico (2 muertos y 1 herido, sin ruta, contradicho). Si se ratifica: 🔴 por fe de erratas a 145. Si no: buscar ruta fechada |
+| ⚠️ **Decisión del destinatario: Celaya `ARG-143-001`** | Sigue 🟡 |
+| ⚠️ **Decisión del destinatario: muerte posterior de un agente** | Orizaba `ARG-132-002` (🟡): el ministerial murió el 30-oct. ¿Fe de erratas de color a 132? |
+| **Recuperaciones de 145** (`ARG-145-FE-001/-002`, condicionadas) | `REC-001` Matamoros: hora de la muerte de la niña; origen del disparo (Fiscalía); total de muertos 5/6/7 · `REC-002` Mazatlán Los Ranchos: hora (si posterior a 11:36 del 29, hecho propio de 145) · `REC-003` Coatzacoalcos: hora; cotejo genético con `ARG-144-REC-002` · `REC-004` Tetlatlahuca: día del hallazgo |
+| **Pénjamo `ARG-145-002`** | ¿Murió la segunda víctima? Si sí: 🔴 por fe de erratas |
+| **Vallecillo `ARG-145-004`** | Fragmento de «agredidos durante un recorrido de vigilancia»: si se acredita, 🔴 |
+| **Mexicali `ARG-145-003`** | Resultado de la revisión de uso de fuerza de la FGE-BC; segundo herido |
+| **Cláusulas de retiro de 145 (3)** | `-010` Iztapalapa (día del cateo), `-011` Piedras Negras y `-012` Juan R. Escudero (acciones del 29 sin hora) |
+| **Matamoros** | Comunicado de la Vocería / FGJ con la lista de víctimas; detenidos por los bloqueos |
+| **Culiacán `ARG-145-001`** | Identificación de la víctima; texto del mensaje |
+| **Concordia, La Guásima** | Día del aseguramiento (5 largas, 32 cargadores, 1,138 cartuchos, solo por resumen) |
+| **Detenidos de 144 por titular de medios** | General Bravo y China (2) y Lindavista (6) se integraron sin cifra de autoridad: evaluar fe de erratas a 144 (8 → n/d) |
+| **Jaral `ARG-144-020`** | Leer el cuerpo de La Silla Rota 2026/10/26 |
+| **Ciudad del Maíz `-006`, Ecatepec `-007`, Cuautla `-012`** | Día del hallazgo / día; víctimas |
+| **Sentencias candidatas** | **Tecate (FGR, 4 sentenciados, «hasta 16 años», titulares 2026/10/30)** · Mexicali (FGE-BC, 45 años) · Jalisco (dos feminicidas, título del 29-oct) · Oaxaca (violencia familiar, 29-oct) · Tenosique (7 a. 9 m. 10 d.) · Doctor Arroyo, NL 40 años · Huejotzingo · Ecatepec 68 · Fresnillo · Tulantepec (**5-nov**) · Ramos Arizpe — boletín oficial con término expreso |
+| **Seguimientos** | Indaparapeo (detenidos) · Chenalhó (detenidos extraoficiales) · Magdalena de Kino · Almoloya (vinculación de cuatro: fecha) · Xalapa `ARG-140-020` · Tehuacán `ARG-142-010` · Juchitán `ARG-140-021` · Tijuana `ARG-143-005` (hora; no consultado en 145) |
+| **Heredados sin avance** | Nogales · Ajuchitlán · Taxco · El Tívoli · Coquimatlán · Patamban · Tecuala · Hermosillo (armamento de 143) |
+| **Cobertura con prioridad sobre el ciclo en 146** | **Sentencias `NO REVISADA` (4)**: BC, SLP, Hgo, Qro; sin páginas: Coah; no confirmado: Camp. **Armamento `NO REVISADA` (22)**: BC, Son, Chih, Sin · NL, SLP · Jal, Col, Nay, Ags, Gto · Edomex, Mor, Tlax, Hgo, Qro · Chis, Oax, Gro, Camp, Yuc, QRoo (**prioridad: las 8 que arrastran dos ediciones — Chih, Sin, NL, Jal, Nay, Ags, Tlax, Camp**). **Alto impacto solo amplia (10)**: Dgo · SLP · Jal, Col, Nay, Ags, Mich · Chis, Gro (y Son solo por hechos). Después, **CICLO A** (Noroeste + Centro: 146 = A) |
+
+## Deuda de método (ARGOS 145)
+
+1. **Rojos sin ruta en el primer borrador**: Cancún y Valle de Chalco entraron como fichas y cayeron en R1. Un rojo sin ruta va a la R1 como verificación, no al borrador.
+2. **Franja de apertura**: tres recuperaciones de la mañana del 29 (Matamoros, Mazatlán, Coatzacoalcos) por horas solo por resumen.
+3. **Detenidos por titular de medios** integrados en 144 y en el primer borrador de 145, contra CLAUDE.md.
+4. **Armamento del Sureste**: cero consultas de armamento (seis entidades `NO REVISADA`) por encabezar el triaje judicial con 25 búsquedas.
+5. **Duración anunciada en la orden («~70 h») frente a la real (47 h 38 min)**; el Bloque 0 repitió el error (68 h 54 min). Calcular con `date`.
+6. **Presupuesto de 145**: 2 + 18 + 150 + 24 + 6 = **200 de 200**.
+7. **Rama**: 139 a 145 viven fuera de `main`; 145 en `claude/argos-145`.

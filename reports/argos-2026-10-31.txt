@@ -49,9 +49,8 @@ OFICIAL DE CANCÚN, VALLE DE CHALCO Y PÉNJAMO (ARG-145-002 y vistos del panoram
 ## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
 
 Ventana 29-oct 11:36 → 31-oct 11:14 CDMX (47 h 38 min) · 12 hechos propios en 8 entidades ·
-densidad 0,25 hechos/hora; duración y densidad, cálculo propio · dentro de cada color, por fecha
-y después por hora estimada solo por resumen; hora no fijada, al final de cada fecha · 4
-recuperaciones de alto impacto de ventanas anteriores, atenuadas, fuera de todos los totales
+densidad 0,25 hechos/hora; duración y densidad, cálculo propio · 4 recuperaciones de alto
+impacto de ventanas anteriores, atenuadas, fuera de todos los totales
 
   Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
   Sinaloa · Culiacán (col. Díaz Ordaz) · 29-OCT, POR RUTA | Cabeza humana en una hielera, con mensaje, en una vivienda | 🔴 Rojo | SIN BOLETÍN | UnoTV | ★★★☆☆ | ARG-145-001
@@ -88,16 +87,16 @@ y 1 cuerpo; efecto sobre ARGOS 144, en el archivo de fuentes. Cálculo propio.
 Vistos, fuera de totales — de la ventana de ARGOS 144 (🟢 o 🟡, no se recuperan): Guadalajara,
 robo a un banco con bomba molotov (~10:30 del 29, SOLO POR RESUMEN) · Morelos: Xochitepec,
 Temixco y Cuernavaca (Acapantzingo) · Coahuayana, 3 detenidos con órdenes de aprehensión
-(boletín federal del 29, SOLO POR RESUMEN): posible mismo operativo que la costa de Michoacán
-publicada el 29; no se ficha · sin ruta fechada ni titular con día — SIN RUTA FECHADA — NO SE
-FICHA: Cancún, Paseos del Mar, ataque armado: 3 muertos, por titular (Sipse; Cambio22); viernes
-30, ~14:00, SOLO POR RESUMEN · Valle de Chalco, San Miguel Xico: 2 muertos y 1 herido, por
-titular (Quadratín Edomex, fuente única); noche del viernes 30, SOLO POR RESUMEN; otra fuente, 1
-muerto y 1 herido en la 2.ª Secc., madrugada del sábado, SOLO POR RESUMEN: CIFRA CONTRADICHA ·
-Zihuatanejo, chofer de transporte (jue 29, ~15:00, SOLO POR RESUMEN) · Culiacán, Los Girasoles ·
-Ciudad Obregón, Las Haciendas · Cuautitlán, locutor muerto por bala perdida · Puebla, mujer
-asesinada en su vivienda · Cuernavaca (col. 1.º de Mayo) y Yautepec (noche del 29, solo por
-compendio).
+(boletín federal del 29, SOLO POR RESUMEN): posible mismo operativo que una nota del 29-oct
+(AFmedios) no fichada en ARGOS 144; no se ficha · sin ruta fechada ni titular con día — SIN RUTA
+FECHADA — NO SE FICHA: Cancún, Paseos del Mar, ataque armado: 3 muertos, por titular (Sipse;
+Cambio22); viernes 30, ~14:00, SOLO POR RESUMEN · Valle de Chalco, San Miguel Xico: 2 muertos y
+1 herido, por titular (Quadratín Edomex, fuente única); noche del viernes 30, SOLO POR RESUMEN;
+otra fuente, 1 muerto y 1 herido en la 2.ª Secc., madrugada del sábado, SOLO POR RESUMEN: CIFRA
+CONTRADICHA · Zihuatanejo, chofer de transporte (jue 29, ~15:00, SOLO POR RESUMEN) · Culiacán,
+Los Girasoles · Ciudad Obregón, Las Haciendas · Cuautitlán, locutor muerto por bala perdida ·
+Puebla, mujer asesinada en su vivienda · Cuernavaca (col. 1.º de Mayo) y Yautepec (noche del 29,
+solo por compendio).
 Seguimiento, fuera del semáforo: ARG-132-002 (Orizaba): el policía ministerial herido en el
 cateo del 13-oct murió el viernes 30, por titular (La Silla Rota; Golpe Político; Plumas Libres
 2026/10/30); esquela de la FGE, por titular (N+) · ARG-144-002 (Indaparapeo): la FGE atribuye el
@@ -131,10 +130,9 @@ resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 1 
 Abierta 0 · con fecha en la ruta: Ríodoce (2026/10/29) · Hecho: 2026-10-29 · Hora: ~18:00-18:20
 (solo por resumen) · Consulta: 2026-10-31, última búsqueda __CONSULTA__ · Estatus: Parcialmente
 corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
-Deslindes y reservas: Díaz Ordaz en ARGOS 144: ataque a una vivienda («28», solo por resumen),
-visto de la ventana de ARGOS 143: otro hecho. El «primer caso» de UnoTV es ARG-144-REC-004
-(Mazatlán, 27-oct): otro hecho, otra ciudad. Cuerpo hallado sin causa de muerte informada por
-autoridad.
+Deslindes y reservas: Díaz Ordaz en ARGOS 144: ataque a una vivienda (27-oct, tarde), visto de
+la ventana de ARGOS 143: otro hecho. El «primer caso» de UnoTV es ARG-144-REC-004 (Mazatlán,
+27-oct): otro hecho, otra ciudad. Cuerpo hallado sin causa de muerte informada por autoridad.
 
 ### GUANAJUATO · PÉNJAMO — ATAQUE ARMADO EN LA CARRETERA A ZAPOTE DE CESTAU: UN MUERTO; LA SEGUNDA VÍCTIMA, MUERTA O HERIDA SEGÚN LA FUENTE [AMARILLO]
 
@@ -144,9 +142,8 @@ Pénjamo · CARRETERA TEPUZA DE ORTIZ – ZAPOTE DE CESTAU, POR TITULAR (AM) · 
 ruta (AM 2026/10/30; Correo 2026/oct/30) · ~14:15, SOLO POR RESUMEN · 1 muerto, por titular de
 ambas fuentes · la segunda víctima: muerta, por titular (AM: «dos hombres muertos»), o herida,
 por titular (Correo: «un muerto y un herido»): CIFRA CONTRADICHA — NO SE INTEGRA AL TOTAL HASTA
-VALIDACIÓN (🟡 homicidio doloso; si se confirma la segunda muerte, 🔴 por fe de erratas) ·
-víctimas de 19 y 38 años, SOLO POR RESUMEN · agresores huyeron, por titular (AM) · ningún
-detenido publicado
+VALIDACIÓN (🟡) · víctimas de 19 y 38 años, SOLO POR RESUMEN · agresores huyeron, por titular
+(AM) · ningún detenido publicado
 
 ── TRAZABILIDAD
 
@@ -170,9 +167,9 @@ hombre atrincherado dispara contra agentes de la FESC, por titular (Jornada BC) 
 subdirector operativo de la FESC, por titular (Alfredo Álvarez); un segundo agente herido, SOLO
 POR RESUMEN: no se suma · agresor abatido, por titular (Jornada BC): del lado agresor, no se
 suma a muertos · quién inició: patrullaje o persona atrincherada, SOLO POR RESUMEN: no
-determinado (🟡 quién inició no determinado) · la FGE revisa la actuación policial, por titular
-(El Imparcial 2026/10/30); el uso de fuerza letal, en investigación, por titular (Zeta) ·
-escopeta del agresor, SOLO POR RESUMEN
+determinado (🟡) · la FGE revisa la actuación policial, por titular (El Imparcial 2026/10/30); el
+uso de fuerza letal, en investigación, por titular (Zeta) · escopeta del agresor, SOLO POR
+RESUMEN
 
 ── TRAZABILIDAD
 
@@ -183,8 +180,7 @@ Regional 5 · Abierta 0 · con fecha en la ruta: Punto Norte (2026/10/29) · Per
 tarde (solo por resumen) · Consulta: 2026-10-31, última búsqueda __CONSULTA__ · Estatus:
 Parcialmente corroborado · Conteo de armamento: sin fila — escopeta del agresor solo por resumen
 Deslindes y reservas: Col. Fundadores no figura en las cinco ediciones previas ni en el índice.
-Un resultado lo situó en Tijuana: error del buscador; es Mexicali. El abatido no se suma a
-muertos: se registra aparte.
+El abatido no se suma a muertos: se registra aparte.
 
 ### NUEVO LEÓN · VALLECILLO — FUERZA CIVIL ABATE A DOS EN UN OPERATIVO [AMARILLO]
 
@@ -195,10 +191,9 @@ Vallecillo · CAMINO A LA FORTUNA, SOLO POR RESUMEN · jueves 29-OCT, por ruta (
 abate a dos, por titular (La Verdad 2026/10; N+: «Confirma Fuerza Civil… Operativo Muralla»);
 «operativo… deja 2 muertos», por titular (ABC Noticias): del lado agresor, no se suman a muertos
 · agresión a balazos durante un recorrido de vigilancia, SOLO POR RESUMEN (La Verdad): quién
-inició, no acreditado por fragmento (🟡 enfrentamiento; si se acredita la agresión al patrullaje,
-🔴 por fe de erratas) · sin heridos de Fuerza Civil, SOLO POR RESUMEN · 2 armas largas, vehículo
-y municiones, SOLO POR RESUMEN · ningún detenido publicado · vínculo del operativo con la
-violencia de Tamaulipas: un medio, no acreditado
+inició, no acreditado por fragmento (🟡) · sin heridos de Fuerza Civil, SOLO POR RESUMEN · 2
+armas largas, vehículo y municiones, SOLO POR RESUMEN · ningún detenido publicado · vínculo del
+operativo con la violencia de Tamaulipas: un medio, no acreditado
 
 ── TRAZABILIDAD
 
@@ -258,8 +253,7 @@ Hecho: 2026-10-30 · Hora: ~15:00 (solo por resumen) · Consulta: 2026-10-31, ú
 __CONSULTA__ · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
 asegurado: no publicado
 Deslindes y reservas: Av. De las Aguas no figura en las cinco ediciones previas ni en el índice.
-Villas del Real de Culiacán (ARG-144-REC-003): otro hecho, otro estado. El Congresista fecha la
-nota en 2023: error de la fuente, se descarta.
+Villas del Real de Culiacán (ARG-144-REC-003): otro hecho, otro estado.
 
 ### BAJA CALIFORNIA · TIJUANA — ASESINAN A BALAZOS AL GERENTE DE UNA EMPRESA DE TRANSPORTE EN FORTÍN DE LAS FLORES [AMARILLO]
 
@@ -480,9 +474,11 @@ si resulta posterior, es hecho propio de ARGOS 145 · cuerpo de hombre decapitad
 (La Silla Rota; XEU; El Buen Tono), con mensaje, por titular (La Nigua); «mensajes», por titular
 (Gráfico al Día 2026/10/30): número contradicho · una nota describe tronco y extremidades, SOLO
 POR RESUMEN: descripción contradicha (🔴 restos humanos con mensaje) · dentro de una vivienda,
-por titular (Golpe Político) · «investigan posible relación» con la cabeza hallada frente al
-Poder Judicial (ARG-144-REC-002), por titular (XEU; La Aldea): vínculo no acreditado · víctima
-no identificada · ningún detenido publicado
+por titular (Golpe Político) · «tras hallazgo de cabeza, localizan cuerpo de hombre decapitado»,
+por slug (La Silla Rota); «investigan posible relación» con la cabeza hallada frente al Poder
+Judicial (ARG-144-REC-002), por titular (XEU; La Aldea): POSIBLE MISMA VÍCTIMA QUE
+ARG-144-REC-002 — CUERPOS NO SUMABLES ENTRE EDICIONES HASTA COTEJO GENÉTICO · víctima no
+identificada · ningún detenido publicado
 
 ── TRAZABILIDAD
 
@@ -559,10 +555,10 @@ Total nacional del corte: en la página de panorama.
 ## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
 
   ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
-  ARG-145-ARM-001 | Ciudad de México | Iztapalapa (col. Lomas Estrella) | pub. 30-oct; día del cateo solo por resumen | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 0 | SSC Ciudad de México (solo por resumen) | Bajo · cualitativo: «armas» por titular (Milenio), sin cifra citable (2 largas y 2 cargadores, solo por resumen); 3 detenidos por titulares sin fecha, sin cifra de autoridad: n/d; ver ARG-145-010
-  ARG-145-ARM-002 | Coahuila | Piedras Negras (col. Real del Norte) | acciones del 29-oct; hora no fijada | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 0 | Ejército, GN, Marina y FGE Coahuila (solo por resumen) | Bajo · cualitativo: «armamento» por titular (Potosinoticias), sin cifra citable (1 larga y 94 cartuchos, solo por resumen); detenidos no publicados; ver ARG-145-011
-  ARG-145-ARM-003 | Nuevo León | Vallecillo | 29-oct, por ruta; noche, solo por resumen | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 0 | Fuerza Civil (solo por resumen) | Bajo · cualitativo: aseguramiento tras enfrentamiento; 2 largas solo por resumen; ningún detenido publicado (2 abatidos); ver ARG-145-004
-  ARG-145-ARM-004 | Guerrero | Juan R. Escudero | acciones del 29-oct; hora no fijada | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 0 | Gabinete de Seguridad (republicadores, solo por resumen) | No confirmado · NO CONFIRMADO — NO SE INTEGRA: 10 largas, 16 cargadores y 338 cartuchos solo por resumen; fuente única (republicadores); ver ARG-145-012
+  ARG-145-ARM-001 | Ciudad de México | Iztapalapa (col. Lomas Estrella) | pub. 30-oct; día del cateo solo por resumen | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | SSC Ciudad de México (solo por resumen) | Bajo · cualitativo: «armas» por titular (Milenio), sin cifra citable (2 largas y 2 cargadores, solo por resumen); 3 detenidos por titulares sin fecha, sin cifra de autoridad: n/d; ver ARG-145-010
+  ARG-145-ARM-002 | Coahuila | Piedras Negras (col. Real del Norte) | acciones del 29-oct; hora no fijada | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | Ejército, GN, Marina y FGE Coahuila (solo por resumen) | Bajo · cualitativo: «armamento» por titular (Potosinoticias), sin cifra citable (1 larga y 94 cartuchos, solo por resumen); detenidos no publicados; ver ARG-145-011
+  ARG-145-ARM-003 | Nuevo León | Vallecillo | 29-oct, por ruta; noche, solo por resumen | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | Fuerza Civil (solo por resumen) | Bajo · cualitativo: aseguramiento tras enfrentamiento; 2 largas solo por resumen; ningún detenido publicado (2 abatidos); ver ARG-145-004
+  ARG-145-ARM-004 | Guerrero | Juan R. Escudero | acciones del 29-oct; hora no fijada | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | Gabinete de Seguridad (republicadores, solo por resumen) | No confirmado · NO CONFIRMADO — NO SE INTEGRA: 10 largas, 16 cargadores y 338 cartuchos solo por resumen; fuente única (republicadores); ver ARG-145-012
 
 Lectura regional: ninguna región con arma ni detenido integrado al total. Cálculo propio.
 Eventos cualitativos sin cantidad: los tres integrados de la tabla; Juan R. Escudero, no
@@ -578,8 +574,7 @@ titular, Meganoticias); día no fijado (boletín Ahome-Concordia): FECHA NO FIJA
 INTEGRA; no es Zavala (ARG-141-REC-005) · Acaponeta, Nay. (agregado estatal; 115 cartuchos, 4
 cargadores, SOLO POR RESUMEN; día no fijado) · Matamoros: armamento de la captura, ARG-144-015,
 ventana de ARGOS 144 · Xochitlán de las Flores, Tula, Hgo. (PGJEH; 1 corta y 1 larga, SOLO POR
-RESUMEN; La Silla Rota 2026/10/28): ventana de ARGOS 144, no de 143 — sin fe de erratas a ARGOS
-143.
+RESUMEN; La Silla Rota 2026/10/28): ventana de ARGOS 144.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-10-31 · Hora: 11:14 (CDMX) · Corte: Matutino · ARGOS N.° 145 · USO INSTITUCIONAL
@@ -607,10 +602,10 @@ RESUMEN; La Silla Rota 2026/10/28): ventana de ARGOS 144, no de 143 — sin fe d
   Oaxaca · sin municipio publicado | Violencia familiar contra dos adultos mayores; 3 sentenciados, SOLO POR RESUMEN · nuevo en ARGOS 145 | «más de 28 años» en suma, SOLO POR RESUMEN | FGE Oaxaca (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · sin URL ni ruta; penas individuales no publicadas | No confirmado
   Tabasco · Tenosique | Armas y granadas; 1 sentenciado; procedimiento abreviado, SOLO POR RESUMEN · candidato de ARGOS 144 | 7 años, 9 meses y 10 días, SOLO POR RESUMEN | FGR (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · fuente única sin fecha (Ahora Tabasco); comunicado no localizado | No confirmado
   Nuevo León · Doctor Arroyo · sin municipio | Homicidio simple (15 años) y revocación de absolución por abuso (40 años) · candidatos de ARGOS 144, sin cambio | 15 y 40 años, por titular (MVS 2026/10/28) | FGJE Nuevo León · tribunal de alzada | PENDIENTE DE CONFIRMACIÓN OFICIAL · fiscalianl.gob.mx sin el caso | No confirmado
-  Puebla · Huejotzingo | Feminicidio · candidato de ARGOS 144, sin cambio | 55 años, por titular (Heraldo de Puebla; Retodiario 2026/10/29) | FGE Puebla (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · el boletín del dominio con «55 años» es de otro caso (julio de 2025): señuelo por cifra, descartado | Bajo
+  Puebla · Huejotzingo | Feminicidio · candidato de ARGOS 144, sin cambio | 55 años, por titular (Heraldo de Puebla; Retodiario 2026/10/29) | FGE Puebla (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · el boletín del dominio con «55 años» es de otro caso (julio de 2025): otro caso | Bajo
   Estado de México · Ecatepec | Homicidio y tentativa · candidato de ARGOS 144, sin cambio | 68 años, por titular (Línea por Línea 2026/10/28) | FGJEM (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · fgjem.edomex.gob.mx solo devolvió edictos | No confirmado
   Zacatecas · Fresnillo | Juan Manuel «N» · candidato de ARGOS 143, sin cambio | 68 años, por titular (ECOdiario) | FGJ Zacatecas (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · fiscaliazacatecas.gob.mx sin el caso | Bajo
-  Hidalgo · Santiago Tulantepec | Triple feminicidio; fallo condenatorio del 9-oct · candidato de ARGOS 140 a 144 | Sin pena: la audiencia continúa el 5-nov, SOLO POR RESUMEN | Tribunal de Enjuiciamiento (por medios) | FALLO SIN PENA — PENDIENTE DE CONFIRMACIÓN OFICIAL · no consultado en esta edición | Bajo
+  Hidalgo · Santiago Tulantepec | Triple feminicidio; fallo condenatorio del 9-oct · candidato de ARGOS 140 a 144 | Sin pena: la audiencia continúa el 5-nov, SOLO POR RESUMEN | Tribunal de Enjuiciamiento (por medios) | FALLO SIN PENA — PENDIENTE DE CONFIRMACIÓN OFICIAL · HEREDADO — NO REVERIFICADO | Bajo
   Coahuila · Ramos Arizpe | Transporte de metanfetamina · candidato de ARGOS 141 a 144 | «más de 7 años», por titular (El Siglo de Torreón) | FGR | POSIBLE CASO HOMÓNIMO — NO INTEGRAR HASTA VALIDACIÓN · sin resultado nuevo | No confirmado
 
 Publicadas antes de la ventana, no integrables: FGE Oaxaca, boletín 2,930 (28-oct, SOLO POR
@@ -623,15 +618,15 @@ FGJE-370-2026 (~6-oct) · FGE Jalisco, comunicado 1939 (19-oct). NO SE INTEGRAN.
 
   Renglón | Resultado
   FGR revisada | Sí, por búsqueda dirigida: fgr.org.mx devolvió listados históricos, sin comunicado de la ventana: SIN RESULTADO INDEXADO EN VENTANA
-  Fiscalías revisadas en sentencias | 26 de 32, por búsqueda dirigida que devolvió páginas del dominio; acceso directo: 0 · BCS, Son, Chih, Sin, Dgo · NL, Zac, Tamps · Jal, Col, Nay, Ags, Gto, Mich · CDMX, Edomex, Mor, Pue, Tlax · Ver, Tab · Chis, Oax, Gro, Yuc, QRoo · de ellas, 3 solo devolvieron páginas normativas, edictos o convocatorias: Sin, Edomex, Son
+  Fiscalías revisadas en sentencias | 26 de 32, por búsqueda dirigida que devolvió páginas del dominio; acceso directo: 0 · BCS, Son, Chih, Sin, Dgo · NL, Zac, Tamps · Jal, Col, Nay, Ags, Gto, Mich · CDMX, Edomex, Mor, Pue, Tlax · Ver, Tab · Chis, Oax, Gro, Yuc, QRoo · 23 con páginas de boletines y 3 solo con páginas normativas, edictos o convocatorias (Sin, Edomex, Son)
   Fiscalías con sentencia publicada en la ventana | 0 en dominio oficial con fecha acreditada (Jalisco: título del 29-oct solo por resumen)
   SIN RESULTADO INDEXADO EN VENTANA | 24 fiscalías estatales revisadas · 2 con título de condena sin ruta fechada: Jal (29-oct, SOLO POR RESUMEN), Oax (28 y 29-oct, SOLO POR RESUMEN)
   SIN ACTUALIZACIÓN CONSTATADA | 0
   Dominio consultado sin páginas devueltas | 1: Coah (fge.coahuila.gob.mx) · dominio de la fiscalía no confirmado: 1, Camp
   NO REVISADA — sentencias | 4: BC, SLP, Hgo, Qro
   Páginas no disponibles · errores de acceso | Fuentes con error de acceso: bloqueo de egreso: curl a www.gob.mx/fgr, 31-oct 08:30: código 000 (proxy: conexión rechazada)
-  Alto impacto y armamento | Alto impacto: consulta propia en las 10 que ARGOS 144 dejó solo con consulta amplia —BCS · NL, Zac, Coah · Hgo, Qro (fin de dos ediciones seguidas) · Oax, Camp, Yuc— y QRoo por hechos, sin consulta de «bloqueos / instalaciones» · Tamps, Ver, Tab, Edomex, CDMX, Mor, Pue, Tlax, Gto, BC, Sin, Chih con consulta por hechos · SLP, Dgo, Jal, Col, Nay, Ags, Chis, Gro, Mich, Son: solo consulta regional amplia · armamento: 8 de 32 por dominio oficial —BCS, Dgo · Tamps, Zac · Mich · CDMX, Pue · Ver—, todas SIN RESULTADO INDEXADO EN VENTANA · dominio sin páginas: Tab, Coah · NO REVISADA (22): BC, Son, Chih, Sin · NL, SLP · Jal, Col, Nay, Ags, Gto · Edomex, Mor, Tlax, Hgo, Qro · Chis, Oax, Gro, Camp, Yuc, QRoo
-  Boletín federal | Acciones del 28-oct: publicadas por republicadores (Milenio, RED113, Certeza Diario): ventana de ARGOS 144 (que lo declaró SIN RESULTADO INDEXADO EN VENTANA al cierre) · acciones del 29-oct: por republicadores (RED113, Tallapolítica): misma fuente, sin indexar en gob.mx · acciones del 30-oct: SIN RESULTADO INDEXADO EN VENTANA en día suelto, por rango y por título · Guardia Nacional, Defensa y ANAM: NO REVISADAS
+  Alto impacto y armamento | Alto impacto: consulta propia en las 10 que ARGOS 144 dejó solo con consulta amplia —BCS · NL, Zac, Coah · Hgo, Qro · Oax, Camp, Yuc— y QRoo por hechos, sin consulta de «bloqueos / instalaciones» · Tamps, Ver, Tab, Edomex, CDMX, Mor, Pue, Tlax, Gto, BC, Sin, Chih con consulta por hechos · SLP, Dgo, Jal, Col, Nay, Ags, Chis, Gro, Mich, Son: solo consulta regional amplia · armamento: 8 de 32 por dominio oficial —BCS, Dgo · Tamps, Zac · Mich · CDMX, Pue · Ver—, todas SIN RESULTADO INDEXADO EN VENTANA · dominio sin páginas: Tab, Coah · NO REVISADA (22): BC, Son, Chih, Sin · NL, SLP · Jal, Col, Nay, Ags, Gto · Edomex, Mor, Tlax, Hgo, Qro · Chis, Oax, Gro, Camp, Yuc, QRoo
+  Boletín federal | Acciones del 28-oct: publicadas por republicadores (Milenio, RED113, Certeza Diario): ventana de ARGOS 144 · acciones del 29-oct: por republicadores (RED113, Tallapolítica): misma fuente, sin indexar en gob.mx · acciones del 30-oct: SIN RESULTADO INDEXADO EN VENTANA en día suelto, por rango y por título · Guardia Nacional, Defensa y ANAM: NO REVISADAS
   Techo de confianza del producto | ★★★★☆ (techo de política) · esta edición no supera ★★★☆☆: sin lectura directa de documento oficial · BLOQUEO DE EGRESO REVERIFICADO EL 31-OCT 08:30: GOB.MX
 
 ----------------------------------------------------------------------------
@@ -643,9 +638,8 @@ FGJE-370-2026 (~6-oct) · FGE Jalisco, comunicado 1939 (19-oct). NO SE INTEGRAN.
 
 ── VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL
 
-1. Un rojo propio (cálculo propio): restos humanos con mensaje en Culiacán (Sin); dos ataques
-con víctimas múltiples sin ruta fechada (QRoo, Edomex) quedan en vistos y uno con saldo
-contradicho (Gto) en amarillo: alza del riesgo nacional frente a ARGOS 144 no acreditada.
+1. Un rojo propio (cálculo propio): restos humanos con mensaje en Culiacán (Sin). Alza del
+riesgo nacional frente a ARGOS 144 no acreditada.
 2. Violencia operativa: ocho amarillos —cinco homicidios dolosos, uno con saldo contradicho; dos
 confrontaciones con corporaciones estatales con tres abatidos; un cuerpo hallado— en cinco
 entidades (cálculo propio).
@@ -666,15 +660,18 @@ ARG-144-008 (bloqueos) y ARG-145-REC-001 (víctimas); vínculo no acreditado ent
 los bloqueos y el grupo del capturado. Línea: solicitar a la Vocería de Seguridad y a la Defensa
 el protocolo de cierre carretero y retiro de vehículos incendiados ante capturas en la frontera
 tamaulipeca.
-2. RESTOS HUMANOS CON MENSAJE: TRES HALLAZGOS EN DOS ESTADOS EL 28 Y EL 29-OCT (cálculo propio;
-desarrolla la Conclusión 3 de ARGOS 144): ARG-144-REC-002 y ARG-145-REC-003 (Coatzacoalcos:
-cabeza frente al Poder Judicial de la Federación; cuerpo decapitado en una vivienda) y
-ARG-145-001 (Culiacán: cabeza en una hielera); vínculo no acreditado. Línea: solicitar a las
-fiscalías de Veracruz y Sinaloa el cotejo genético y el texto íntegro de los mensajes.
+2. RESTOS HUMANOS EXHIBIDOS O CON MENSAJE: CUATRO HALLAZGOS EN DOS ESTADOS DEL 27 AL 29-OCT, DOS
+CABEZAS EN HIELERA EN SINALOA (cálculo propio; desarrolla la Conclusión 3 de ARGOS 144):
+ARG-144-REC-004 (Mazatlán, hielera ante el Palacio Municipal) y ARG-145-001 (Culiacán, hielera
+con mensaje); ARG-144-REC-002 y ARG-145-REC-003 (Coatzacoalcos: cabeza frente al Poder Judicial
+de la Federación; cuerpo decapitado con mensaje, posible misma víctima); vínculo no acreditado.
+Línea: solicitar a las fiscalías de Veracruz y Sinaloa el cotejo genético y el texto íntegro de
+los mensajes.
 3. MAZATLÁN: TRES HECHOS CON VÍCTIMAS DEL 29 AL 31-OCT, UNO CONTRA COMENSALES DE UN RESTAURANTE
 (cálculo propio): ARG-145-REC-002 (2 muertos), ARG-145-008 (1 muerto) y ARG-145-009 (cuerpo,
 causa no informada); vínculo no acreditado. Línea: solicitar a la Fiscalía de Sinaloa el cotejo
-balístico de los dos ataques y vigilar la zona Marina y el sur del puerto.
+balístico de los dos ataques y vigilar la zona Marina, el fracc. Santa Fe y la playa Pato
+Blanco.
 4. TRES ABATIDOS EN DOS CONFRONTACIONES CON CORPORACIONES ESTATALES EL MISMO DÍA, EN DOS ESTADOS
 (cálculo propio, 29-oct): ARG-145-003 (Mexicali, FESC; la Fiscalía revisa el uso de la fuerza
 letal) y ARG-145-004 (Vallecillo, Fuerza Civil); quién inició, no acreditado en ninguno; vínculo
