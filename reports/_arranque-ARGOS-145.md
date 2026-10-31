@@ -16,7 +16,7 @@ Los comandos del mensaje de órdenes. **Estado esperado**: última edición `arg
 | Ventana | **abre 2026-10-29 11:36 CDMX** (cierre de 144) y cierra a la hora real de arranque |
 | Serie | 24 h 52 (141) · 24 h 08 (142) · 23 h 43 (143) · **27 h 08 (144)** |
 | Ciclo | **C** (Occidente + Sureste), tras la prioridad sobre el ciclo |
-| Archivo | `argos-2026-10-DD.html` (fecha del arranque, sin sufijo) · `WINDOW_DAYS` = fechas de calendario de la ventana |
+| Archivo | `argos-2026-10-31.html` (sábado 31-oct) · `WINDOW_DAYS` = **3** (29, 30 y 31; la plantilla de 144 trae 2) |
 
 ## BLOQUE 2 — LECTURA OBLIGATORIA
 
