@@ -1068,3 +1068,34 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-145-FE-001` | 145 | 2026-10-31 | ARG-145-FE-001 — ARGOS 144: REC-001, -002 y -003 → hechos 20→23, rojos 9→12, muertos 12→15, heridos 4→6, cuerpos 2→3, entidades 13→14, con rojo 8→10; condicionada (horas por resumen). NO PUBLICADA EN EL CARTELÓN |
 | `ARG-145-FE-002` | 145 | 2026-10-31 | ARG-145-FE-002 — ARGOS 144 o anterior: REC-004 (Tetlatlahuca) → +1 rojo, +Tlax; cuerpos sin cifra; condicionada al día del hallazgo. NO PUBLICADA EN EL CARTELÓN |
 | `ARG-145-FE-003` | 145 | 2026-10-31 | ARG-145-FE-003 — ARGOS 144, sin efecto en totales: ARG-144-014 (hecho del 28), ARG-144-015 (identidad, 2 detenidos), ARG-144-REC-003 (4 frente a 6), ARG-144-005 (hora contradicha), ARG-144-008 (muertes por choque en ARG-145-REC-001) |
+| `ARG-146-001` | 146 | 2026-11-01 | ARG-146-001 — Cuauhtémoc (col. Morelos, Tepito), Ciudad de México: Mujer y su hijo menor (3 o 4 años, contradicho) asesinados en Día de Muertos; 🔴; Tribuna (2026/11/02); confianza ★★★☆☆ |
+| `ARG-146-002` | 146 | 2026-11-02 | ARG-146-002 — Chinameca (panteón municipal), Veracruz: Ataque en el panteón en Día de Muertos: 2 muertos; 🔴; La Silla Rota (2026/11/3); confianza ★★★☆☆ |
+| `ARG-146-003` | 146 | 2026-11-03 | ARG-146-003 — Acapulco (El Veintiuno, km 21), Guerrero: Ataque a una fiesta: 2 muertos y 1 herido; 🔴; diario.mx (2026/nov/03); confianza ★★★☆☆ |
+| `ARG-146-004` | 146 | 2026-11-02 | ARG-146-004 — Celaya (col. Ejidal), Guanajuato: Ataque armado: 3 hombres muertos (saldo contradicho); 🔴; AM (2026/11/02); confianza ★★☆☆☆ |
+| `ARG-146-005` | 146 | 2026-11-02 | ARG-146-005 — Silao (Monte del Coecillo), Guanajuato: Ataque armado en una comunidad: 3 muertos; 🔴; Correo (2026/nov/02); confianza ★★★☆☆ |
+| `ARG-146-006` | 146 | 2026-11-04 | ARG-146-006 — Irapuato (col. Primavera), Guanajuato: Ataque armado: 2 muertos y 2 heridos; 🔴; Correo (2026/nov/04); confianza ★★★☆☆ |
+| `ARG-146-007` | 146 | 2026-11-02 | ARG-146-007 — Uruapan (calz. Benito Juárez, col. Mártires), Michoacán: Agresión armada contra militares desde una vivienda; sin víctimas publicadas; 🔴; Changoonga (2026/11/02); confianza ★★★☆☆ |
+| `ARG-146-008` | 146 | 2026-11-02 | ARG-146-008 — Reynosa (col. Los Muros), Tamaulipas: Elemento de la Guardia Estatal asesinado; 🔴; La Región (2026/11/02); confianza ★★★☆☆ |
+| `ARG-146-009` | 146 | 2026-11-02 | ARG-146-009 — Nuevo Laredo, Tamaulipas: Restos óseos localizados por un colectivo; número no publicado; 🔴; Diario Puntual (2026/11/03); confianza ★★★☆☆ |
+| `ARG-146-010` | 146 | 2026-11-03 | ARG-146-010 — Suaqui Grande, Sonora: Fosa clandestina con restos de al menos 4 personas; 🔴; El Imparcial (2026/11/03); confianza ★★★☆☆ |
+| `ARG-146-011` | 146 | 2026-11-02 | ARG-146-011 — Mexicali (poblado Miguel Alemán), Baja California: Fosa con restos humanos en el poblado Miguel Alemán y segundo hallazgo de restos óseos (3-nov); número no publicado; 🔴; El Imparcial (2026/11/02); confianza ★★★☆☆ |
+| `ARG-146-012` | 146 | 2026-10-31 | ARG-146-012 — Cuautitlán Izcalli (U.H. Infonavit Norte), Estado de México: Ataque en una chelería: 2 muertos y 1 herida; 🔴; El Monitor del Edomex (2026/11/01); confianza ★★★☆☆ |
+| `ARG-146-013` | 146 | 2026-11-01 | ARG-146-013 — Culiacán (col. Miguel Hidalgo), Sinaloa: Dueño de una taquería asesinado; 1 herido; 🟡; Luz Noticias (2026-11-01); confianza ★★★☆☆ |
+| `ARG-146-014` | 146 | 2026-11-01 | ARG-146-014 — San Martín Texmelucan (col. La Purísima), Puebla: Ataque tras el desfile: 1 muerto y 1 herido; 🟡; Intolerancia Diario (2026/11/02); confianza ★★★☆☆ |
+| `ARG-146-015` | 146 | 2026-11-02 | ARG-146-015 — Tultitlán (Prados Sur), Estado de México: Checador de transporte asesinado; 1 herido; 🟡; Sociedad Noticias (2026/11/03); confianza ★★★☆☆ |
+| `ARG-146-016` | 146 | 2026-11-02 | ARG-146-016 — San Pedro Tlaquepaque (San Martín de las Flores), Jalisco: Agresión a policías municipales durante una búsqueda; policías ilesos; 🟡; Informador (2026/11/02); confianza ★★★☆☆ |
+| `ARG-146-017` | 146 | 2026-11-02 | ARG-146-017 — Uruapan (col. Mártires), Michoacán: 2 detenidos tras la agresión a militares; arma corta y cartuchos (solo por resumen); 🟢; Changoonga (2026/11/02); confianza ★★★☆☆ |
+| `ARG-146-018` | 146 | 2026-11-02 | ARG-146-018 — San Pedro Tlaquepaque (San Martín de las Flores), Jalisco: 2 detenidos tras la agresión a policías; 🟢; Informador (2026/11/02); confianza ★★★☆☆ |
+| `ARG-146-019` | 146 | 2026-11-03 | ARG-146-019 — Cocula (detención) · Iguala (delito), Guerrero: Detenido «El Pikachu» (Los Tlacos) por un homicidio de 2025; 🟢; Proyecto Puente (2026/11/03); confianza ★★★☆☆ |
+| `ARG-146-020` | 146 | 2026-11-03 | ARG-146-020 — Chenalhó, Chiapas: 2 detenidos por el homicidio del defensor (ARG-144-004); 🟢; Diario de Yucatán (2026/11/03); confianza ★★★☆☆ |
+| `ARG-146-021` | 146 | 2026-11-03 | ARG-146-021 — Benito Juárez (Cancún), Quintana Roo: Detenido «Garabato» con otros dos, ligados a ataques armados; 🟢; Por Esto (2026/11/3); confianza ★★☆☆☆ |
+| `ARG-146-022` | 146 | 2026-11-02 | ARG-146-022 — Culiacán (Feria Ganadera), Sinaloa: Agresión armada contra las instalaciones de la Feria Ganadera; sin víctimas publicadas; 🟡; Infobae (2026/11/02); confianza ★★★☆☆ |
+| `ARG-146-023` | 146 | 2026-11-03 | ARG-146-023 — Culiacán, Sinaloa: 3 detenidos, uno menor de edad, por la agresión a la Feria Ganadera; 🟢; Proyecto Puente (2026/11/03); confianza ★★★☆☆ |
+| `ARG-146-024` | 146 | 2026-10-31 | ARG-146-024 — Ario de Rosales (El Ortigal), Michoacán: Ataque contra militares: 1 soldado muerto y 2 heridos; 🔴; Latinus (2026/10/31); confianza ★★★☆☆ |
+| `ARG-146-REC-001` | 146 | 2026-10-30 | ARG-146-REC-001 — Benito Juárez (Cancún, Paseos del Mar, región 251), Quintana Roo: Tres personas ejecutadas en un fraccionamiento; 🔴 de la ventana de ARGOS 145; Noticaribe (2026/10/30); fuera de totales |
+| `ARG-146-ARM-001` | 146 | 2026-11-02 | ARG-146-ARM-001 — Uruapan (col. Mártires), Michoacán: armas y detenidos sin cifra integrable; ficha ARG-146-017; Bajo |
+| `ARG-146-ARM-002` | 146 | 2026-11-02 | ARG-146-ARM-002 — San Pedro Tlaquepaque, Jalisco: armas y detenidos sin cifra integrable; ficha ARG-146-018; Bajo |
+| `ARG-146-ARM-003` | 146 | 2026-11-03 | ARG-146-ARM-003 — Cocula, Guerrero: armas y detenidos sin cifra integrable; ficha ARG-146-019; Bajo |
+| `ARG-146-ARM-004` | 146 | 2026-11-03 | ARG-146-ARM-004 — Culiacán, Sinaloa: armas y detenidos sin cifra integrable; ficha ARG-146-023; Bajo |
+| `ARG-146-FE-001` | 146 | 2026-11-04 | ARG-146-FE-001 — ARGOS 145: Pénjamo ARG-145-002 🟡 → 🔴 (segunda víctima muerta en hospital, solo por resumen; titular AM «dos hombres muertos»); rojos 1→2, muertos 5→6. NO PUBLICADA EN EL CARTELÓN |
+| `ARG-146-FE-002` | 146 | 2026-11-04 | ARG-146-FE-002 — ARGOS 145: Cancún Paseos del Mar, 🔴 de su ventana, publicado como ARG-146-REC-001 → rojos +1, muertos +3, +QRoo. NO PUBLICADA EN EL CARTELÓN |

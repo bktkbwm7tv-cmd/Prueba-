@@ -28,9 +28,9 @@ E = [
  # ======================= ROJOS
  dict(id="ARG-146-001", estado="MX-CMX", region="Centro", color="rojo", impacto="grande", fecha="2026-11-01", hora="noche (solo por resumen)", mu=2, he=0, cu=0, hk=21,
   ent="Ciudad de México", mun="Cuauhtémoc (col. Morelos, Tepito)", dia="1-NOV, POR RUTA",
-  title="CIUDAD DE MÉXICO · TEPITO — ASESINAN A UNA MUJER Y A SU HIJO DE TRES AÑOS MIENTRAS PEDÍAN CALAVERITA",
+  title="CIUDAD DE MÉXICO · TEPITO — ASESINAN A UNA MUJER Y A SU HIJO MENOR MIENTRAS PEDÍAN CALAVERITA",
   hecho="Col. Morelos (Tepito) · <code>CRUCE DE PEÑÓN Y TENOCHTITLÁN, SOLO POR RESUMEN</code> · domingo 1-NOV, noche, por titular («Día de Muertos»: Tribuna 2026/11/02) · <b>2 muertos</b>: una mujer y <b>su hijo de 3 años</b>, por titular (El Gráfico 2026/11/02; Tribuna); «4 años», por titular (Publimetro 2026/11/03; Diario de Yucatán 2026/11/03): <code>EDAD CONTRADICHA</code> (🔴 homicidio múltiple; víctima menor) · «mientras pedían calaverita», por titular (Publimetro) · dos agresores en bicicleta eléctrica, " + RES + " · vínculo de la víctima con La Unión Tepito: por titular de medios (Infobae 2026/11/03; Publimetro), <b>no acreditado por autoridad</b> · SSC y FGJCDMX en el lugar, " + RES + ": no es declaración · " + NOD,
-  panel="<b>Mujer y su hijo de 3 años asesinados</b> en Día de Muertos", inst=SB, nac="El Financiero · Infobae · Publimetro · El Gráfico", conf="★★★☆☆",
+  panel="<b>Mujer y su hijo menor (3 o 4 años, contradicho) asesinados</b> en Día de Muertos", inst=SB, nac="El Financiero · Infobae · Publimetro · El Gráfico", conf="★★★☆☆",
   campo="hora solo por resumen; edad del niño contradicha; ninguna fuente institucional", I=0, N=4, R=3, A=0,
   fechadas=["Tribuna (2026/11/02)", "El Gráfico (2026/11/02)", "El Financiero (2026/11/02)", "Infobae (2026/11/02)", "Publimetro (2026/11/03)", "Diario de Yucatán (2026/11/03)"], estatus="Parcialmente corroborado", arm=None,
   desl="Tepito en el índice: ARG-120-006 (16-sep, Rinconada y Toltecas, 2 mujeres muertas) y ARG-122-010 / ARG-122-ARM-004 (Iztapalapa, cateo vinculado a La Unión Tepito, 18-sep): otros hechos. Identidad y alias de la víctima: medios, no se reproducen."),
@@ -46,15 +46,15 @@ E = [
   ent="Guerrero", mun="Acapulco (El Veintiuno, km 21)", dia="3-NOV, POR RUTA",
   title="GUERRERO · ACAPULCO — COMANDO IRRUMPE EN UNA FIESTA EN EL KILÓMETRO 21: DOS MUERTOS Y UN HERIDO",
   hecho="Acapulco · <code>EL VEINTIUNO (KM 21), CALLE LIBÉLULA, SOLO POR RESUMEN</code> · martes 3-NOV, por ruta (diario.mx 2026/nov/03) · madrugada, ~05:30, " + RES + " · <b>2 muertos</b> y <b>1 herido</b>, por titular (Quadratín Guerrero: «2 muertos y un herido»; diario.mx: «mata a dos») (🔴 homicidio múltiple) · «irrumpen hombres armados en una fiesta», por titular (Bajo Palabra) · víctimas, tío y sobrino, " + RES + " · " + NOD,
-  panel="<b>Ataque a una fiesta: 2 muertos y 1 herido</b>", inst=SB, nac="diario.mx", conf="★★★☆☆",
-  campo="hora solo por resumen; ninguna fuente institucional", I=0, N=1, R=2, A=0,
-  fechadas=["diario.mx (2026/nov/03)"], estatus="Parcialmente corroborado", arm=None,
+  panel="<b>Ataque a una fiesta: 2 muertos y 1 herido</b>", inst=SB, nac="La Silla Rota", conf="★★★☆☆",
+  campo="hora y día (lunes o martes) solo por resumen; ninguna fuente institucional", I=0, N=1, R=3, A=0,
+  fechadas=["diario.mx (2026/nov/03)", "La Silla Rota (2026/11/3)"], estatus="Parcialmente corroborado", arm=None,
   desl="«El Veintiuno» (Quadratín) y «km 21» (Bajo Palabra): mismo hecho (calle, hora y saldo coinciden). La Silla Rota (2026/11/3) lo sitúa el lunes 2 por la noche: día contradicho, ambos dentro de la ventana. El herido, solo por el titular de Quadratín. No figura en las cinco ediciones previas ni en el índice."),
  dict(id="ARG-146-004", estado="MX-GUA", region="Occidente", color="rojo", impacto="grande", fecha="2026-11-02", hora="~01:00 (solo por resumen)", mu=3, he=0, cu=0, hk=1,
   ent="Guanajuato", mun="Celaya (col. Ejidal)", dia="2-NOV, POR RUTA",
   title="GUANAJUATO · CELAYA — ASESINAN A TRES HOMBRES EN UN ATAQUE ARMADO EN LA COLONIA EJIDAL",
   hecho="Celaya · <code>COL. EJIDAL, POR TITULAR (AM); CALLE EJIDO DEL BOSQUE, SOLO POR RESUMEN</code> · lunes 2-NOV, por ruta (AM 2026/11/02) · ~01:00, " + RES + " · <b>3 hombres muertos</b>, por titular (AM: «matan a 3 hombres») (🔴 homicidio múltiple); un balance de Correo da 1 muerto y 1 sobreviviente, " + RES + ": no se arbitra por resumen · " + NOD,
-  panel="<b>Ataque armado: 3 hombres muertos</b>", inst=SB, nac=NIN, conf="★★☆☆☆",
+  panel="<b>Ataque armado: 3 hombres muertos</b> (saldo contradicho)", inst=SB, nac=NIN, conf="★★☆☆☆",
   campo="fuente única por titular; saldo contradicho por resumen", I=0, N=0, R=1, A=0,
   fechadas=["AM (2026/11/02)"], estatus="Pendiente de corroboración", arm=None,
   desl="Col. Ejidal no figura en las cinco ediciones previas ni en el índice. ARG-143-001 (Celaya, asalto intervenido por la SSPC): otro hecho. Los balances de Día de Muertos de Guanajuato (Correo 2026/nov/02: nueve; Latinus 2026/11/3: ocho) no se reparten ni se integran."),
@@ -78,8 +78,8 @@ E = [
   ent="Michoacán", mun="Uruapan (calz. Benito Juárez, col. Mártires)", dia="2-NOV, POR RUTA",
   title="MICHOACÁN · URUAPAN — DISPARAN DESDE UNA VIVIENDA CONTRA MILITARES",
   hecho="Uruapan · <code>CALZ. BENITO JUÁREZ, COL. MÁRTIRES, SOLO POR RESUMEN</code> · lunes 2-NOV, por ruta (Changoonga 2026/11/02) · madrugada, " + RES + " · «ataque armado contra elementos del Ejército», por <i>slug</i> (Changoonga) (🔴 el grupo agrede a personal militar) · disparos desde una vivienda contra militares en recorrido de vigilancia, " + RES + ": <code>PATRULLAJE SOLO POR RESUMEN</code> · <b>sin muertos ni heridos publicados</b> · detención de dos hombres: ficha propia, ARG-146-017",
-  panel="<b>Agresión armada contra militares</b> desde una vivienda; sin víctimas publicadas", inst="Guardia Civil y Defensa" + PR, nac="El Universal · Quadratín", conf="★★★☆☆",
-  campo="patrullaje y hora solo por resumen", I=1, N=2, R=3, A=0,
+  panel="<b>Agresión armada contra militares</b> desde una vivienda; sin víctimas publicadas", inst="Guardia Civil y Defensa" + PR, nac="El Universal", conf="★★★☆☆",
+  campo="patrullaje y hora solo por resumen", I=0, N=1, R=4, A=0,
   fechadas=["Changoonga (2026/11/02)"], estatus="Parcialmente corroborado", arm=None, armtxt="armamento en ARG-146-017",
   desl="Calz. Benito Juárez de Uruapan: ARG-139-008 (restaurante baleado, 20-oct, sin víctimas): otro hecho. Delito y detención en la misma ventana: dos fichas."),
  dict(id="ARG-146-008", estado="MX-TAM", region="Noreste", color="rojo", impacto="mediano", fecha="2026-11-02", hora="~01:00 (solo por resumen)", mu=1, he=0, cu=0, hk=1,
@@ -119,7 +119,7 @@ E = [
   title="ESTADO DE MÉXICO · CUAUTITLÁN IZCALLI — ATAQUE ARMADO EN UNA CHELERÍA: DOS MUERTOS Y UNA MUJER HERIDA",
   hecho="Cuautitlán Izcalli · <code>U.H. INFONAVIT NORTE, POR TITULAR (MILENIO)</code> · publicado el domingo 1-NOV, por ruta (El Monitor del Edomex 2026/11/01) · sábado 31-OCT, tarde o noche («noche», Milenio), " + DSR + " · " + RET + " · <b>2 muertos y 1 mujer herida</b>, por titular (El Monitor del Edomex; Digitalmex) (🔴 homicidio múltiple) · ataque directo, según el presidente municipal, " + RES + " · " + NOD,
   panel="<b>Ataque en una chelería: 2 muertos y 1 herida</b>", inst="Presidente municipal" + PR, nac="Milenio", conf="★★★☆☆",
-  campo="día y hora solo por resumen", I=1, N=1, R=2, A=0,
+  campo="día y hora solo por resumen", I=0, N=1, R=2, A=0,
   fechadas=["El Monitor del Edomex (2026/11/01)"], estatus="Parcialmente corroborado", arm=None,
   desl="Cuautitlán Izcalli no figura en las cinco ediciones previas ni en el índice. Col. La Quebrada (1 muerto y 3 heridos, sin ruta): visto."),
  # ======================= AMARILLOS
@@ -138,7 +138,7 @@ E = [
   panel="<b>Ataque tras el desfile: 1 muerto y 1 herido</b>", inst=SB, nac="UnoTV", conf="★★★☆☆",
   campo="hora solo por resumen; ninguna fuente institucional", I=0, N=1, R=2, A=0,
   fechadas=["Intolerancia Diario (2026/11/02)"], estatus="Parcialmente corroborado", arm=None,
-  desl="Texmelucan: visto en los archivos de equipos de ARGOS 143 y 144 (col. Morelos, 27-28-oct, 1 muerto y 1 herido, sin ruta fechada; sin ARG-ID): otro hecho. ARG-119-006 (col. Ojo de Agua, septiembre): otro hecho."),
+  desl="Texmelucan: visto en los archivos de equipos de ARGOS 143 y 144 (col. Morelos, 27-28-oct, 1 muerto y 1 herido; Retodiario 2026/10/28; sin ARG-ID): otro hecho. ARG-119-006 (col. Ojo de Agua, septiembre): otro hecho."),
  dict(id="ARG-146-015", estado="MX-MEX", region="Centro", color="amarillo", impacto="pequeno", fecha="2026-11-02", hora="no fijada", mu=1, he=1, cu=0, hk=12,
   ent="Estado de México", mun="Tultitlán (Prados Sur)", dia="2-NOV, POR TITULAR",
   title="ESTADO DE MÉXICO · TULTITLÁN — ASESINAN A UN CHECADOR DE TRANSPORTE Y HIEREN A OTRO",
@@ -160,8 +160,8 @@ E = [
   ent="Michoacán", mun="Uruapan (col. Mártires)", dia="2-NOV, POR RUTA",
   title="MICHOACÁN · URUAPAN — GUARDIA CIVIL Y DEFENSA DETIENEN A DOS HOMBRES TRAS LA AGRESIÓN A MILITARES",
   hecho="Uruapan · lunes 2-NOV, por ruta (Changoonga 2026/11/02) · <b>2 hombres detenidos</b>, por titular (Quadratín; El Universal; Changoonga: «apañan a 2»): cifra de medios, sin comunicado citado · arma corta 9 mm, 22 cartuchos, marihuana y dos teléfonos, " + RES + " · Guardia Civil y Defensa, " + RES,
-  panel="<b>2 detenidos</b> tras la agresión a militares; arma corta y cartuchos (solo por resumen)", inst="Guardia Civil y Defensa" + PR, nac="El Universal · Quadratín", conf="★★★☆☆",
-  campo="armamento solo por resumen; detenidos por titular de medios", I=1, N=2, R=3, A=0,
+  panel="<b>2 detenidos</b> tras la agresión a militares; arma corta y cartuchos (solo por resumen)", inst="Guardia Civil y Defensa" + PR, nac="El Universal", conf="★★★☆☆",
+  campo="armamento solo por resumen; detenidos por titular de medios", I=0, N=1, R=4, A=0,
   fechadas=["Changoonga (2026/11/02)"], estatus="Parcialmente corroborado", arm="ARG-146-ARM-001",
   desl="Hecho delictivo: ARG-146-007. Detenidos fuera del conteo de armamento hasta cifra de autoridad."),
  dict(id="ARG-146-018", estado="MX-JAL", region="Occidente", color="verde", impacto="pequeno", fecha="2026-11-02", hora="no fijada", mu=0, he=0, cu=0, hk=12,
@@ -177,7 +177,7 @@ E = [
   title="GUERRERO · COCULA — DETIENEN A «EL PIKACHU», SEÑALADO COMO INTEGRANTE DE LOS TLACOS, POR UN HOMICIDIO EN IGUALA",
   hecho="Cocula · publicado el martes 3-NOV, por ruta (Proyecto Puente 2026/11/03; Cúspide 2026/11/03) · día de la detención no fijado · " + RET + " · <b>1 detenido</b>, por titular (Quadratín: «cae por homicidio El Pikachu, presunto integrante de Los Tlacos»); el homicidio de un abogado en Iguala, por titular (Infobae 2026/11/04) · delito original, octubre de 2025, " + RES + ": evento anterior, no se recalifica · pistola, cargador y cartuchos sin cifra, " + RES + " · FGE Guerrero, " + RES,
   panel="<b>Detenido «El Pikachu»</b> (Los Tlacos) por un homicidio de 2025", inst="FGE Guerrero" + PR, nac="Infobae · Milenio", conf="★★★☆☆",
-  campo="día de la detención no fijado; corporación solo por resumen", I=1, N=2, R=3, A=0,
+  campo="día de la detención no fijado; corporación solo por resumen", I=0, N=2, R=3, A=0,
   fechadas=["Proyecto Puente (2026/11/03)", "Cúspide (2026/11/03)", "Infobae (2026/11/04)"], estatus="Parcialmente corroborado", arm="ARG-146-ARM-003",
   desl="«El Pikachu» de Pánuco, Veracruz (Notiver): otro detenido, otro caso. «Los Tlacos» e Iguala en el índice: ARG-141-007 (3 detenidos por extorsión, 25-oct; Iguala y Copalillo) y ARG-110-REC-001 (San Miguel Totolapan): otros hechos, otros detenidos; vínculo no acreditado."),
  dict(id="ARG-146-020", estado="MX-CHP", region="Sureste", color="verde", impacto="mediano", fecha="2026-11-03", fecha_txt="publicado el 2026-11-03 — DÍA DE LAS DETENCIONES NO FIJADO", hora="no fijada", mu=0, he=0, cu=0, hk=12,
@@ -185,7 +185,7 @@ E = [
   title="CHIAPAS · CHENALHÓ — DETIENEN A DOS HOMBRES POR EL HOMICIDIO DEL DEFENSOR DE FAMILIAS DESPLAZADAS",
   hecho="Chenalhó · publicado el martes 3-NOV, por ruta (Diario de Yucatán 2026/11/03; MVS 2026/11/3; Herqles 2026/11/03; La Razón 2026/11/04) · día de las detenciones no fijado · " + RET + " · <b>2 detenidos</b>, por titular (Diario de Yucatán: «detienen a dos hombres por el homicidio de defensor de familias desplazadas»; La Razón: «caen 2») · el fiscal general informó las detenciones y la premeditación, " + RES + " · se busca a otros implicados, " + RES,
   panel="<b>2 detenidos</b> por el homicidio del defensor (ARG-144-004)", inst="FGE Chiapas" + PR, nac="MVS · La Razón", conf="★★★☆☆",
-  campo="día de las detenciones no fijado; declaración del fiscal solo por resumen", I=1, N=2, R=2, A=0,
+  campo="día de las detenciones no fijado; declaración del fiscal solo por resumen", I=0, N=2, R=2, A=0,
   fechadas=["Diario de Yucatán (2026/11/03)", "MVS (2026/11/3)", "Herqles (2026/11/03)", "La Razón (2026/11/04)"], estatus="Parcialmente corroborado", arm=None, armtxt="sin fila — sin aseguramiento publicado",
   desl="Hecho delictivo: ARG-144-004 (28-oct, ventana de ARGOS 144), no se recalifica. ARGOS 145 (archivo de fuentes): detenidos solo extraoficiales. Las cuatro rutas son coberturas de la misma información."),
  dict(id="ARG-146-021", estado="MX-ROO", region="Sureste", color="verde", impacto="pequeno", fecha="2026-11-03", fecha_txt="publicado el 2026-11-03 — DÍA DE LAS DETENCIONES NO FIJADO", hora="no fijada", mu=0, he=0, cu=0, hk=12,
@@ -207,11 +207,11 @@ E = [
  dict(id="ARG-146-023", estado="MX-SIN", region="Noroeste", color="verde", impacto="mediano", fecha="2026-11-03", fecha_txt="publicado el 2026-11-03 — DÍA DE LAS DETENCIONES NO FIJADO", hora="no fijada", mu=0, he=0, cu=0, hk=12,
   ent="Sinaloa", mun="Culiacán", dia="PUB. 3-NOV, POR RUTA",
   title="SINALOA · CULIACÁN — DETIENEN A TRES PERSONAS, UNA MENOR DE EDAD, POR LA AGRESIÓN A LA FERIA GANADERA",
-  hecho="Culiacán · publicado el martes 3-NOV, por ruta (Proyecto Puente 2026/11/03; QuieroTV 2026/11/03) · <b>3 detenidos, uno menor de edad</b>, por titular (Proyecto Puente: «detienen a tres personas… uno es menor de edad»): cifra de medios, sin comunicado citado · armas aseguradas: 3, 4 o 5 según la fuente, " + RES + ": <code>CIFRAS CONTRADICHAS — NO SE INTEGRAN</code> · 641 cartuchos, " + RES,
+  hecho="Culiacán · publicado el martes 3-NOV, por ruta (Proyecto Puente 2026/11/03; QuieroTV 2026/11/03) · <b>3 detenidos, uno menor de edad</b>, por titular (Proyecto Puente: «detienen a tres personas… uno es menor de edad»): cifra de medios, sin comunicado citado · armas aseguradas: 3, 4 o 5 según la fuente, " + RES + ": <code>CIFRAS CONTRADICHAS — NO SE INTEGRAN</code> · 641 cartuchos y 24 cargadores, " + RES,
   panel="<b>3 detenidos</b>, uno menor de edad, por la agresión a la Feria Ganadera", inst=SB, nac="UnoTV", conf="★★★☆☆",
   campo="armamento contradicho; detenidos por titular de medios", I=0, N=1, R=2, A=0,
   fechadas=["Proyecto Puente (2026/11/03)", "QuieroTV (2026/11/03)"], estatus="Parcialmente corroborado", arm="ARG-146-ARM-004",
-  desl="Hecho delictivo: ARG-146-022. Detención publicada al día siguiente del ataque: dentro de la ventana."),
+  desl="Hecho delictivo: ARG-146-022. Puede estar contenido en el renglón de Culiacán del agregado federal (22 armas, 76 cargadores, 1,054 cartuchos): nada se integra."),
  dict(id="ARG-146-024", estado="MX-MIC", region="Occidente", color="rojo", impacto="grande", fecha="2026-10-31", fecha_txt="publicado el 2026-10-31 — HORA NO FIJADA", hora="«mañana» (solo por resumen)", mu=1, he=2, cu=0, hk=9,
   ent="Michoacán", mun="Ario de Rosales (El Ortigal)", dia="PUB. 31-OCT, POR RUTA",
   title="MICHOACÁN · ARIO DE ROSALES — ATAQUE ARMADO CONTRA MILITARES EN EL ORTIGAL: UN SOLDADO MUERTO Y DOS HERIDOS",
@@ -249,16 +249,16 @@ ARM = [
   corp="Policía de Tlaquepaque <span class=\"muted-note\">(por titular)</span>", conf="Bajo",
   nota="cualitativo: un arma de fuego sin categoría, solo por resumen; 2 detenidos por titular de medios: n/d; ver ARG-146-018",
   fuentes=["Informador (2026/11/02)", "Crónica (2026/11/02)"]),
- dict(id="ARG-146-ARM-004", ficha="ARG-146-023", estado="MX-SIN", region="Noroeste", color="verde", ent="Sinaloa", mun="Culiacán",
-  fecha="2026-11-03", fecha_txt="pub. 3-nov; día de la detención no fijado", hora="no fijada", c=[0] * 10, nd=ND_ALL, integra=True,
-  corp="<span class=\"muted-note\">no publicada por titular</span>", conf="Bajo",
-  nota="cualitativo: 3, 4 o 5 armas según la fuente, 641 cartuchos, solo por resumen: cifras contradichas; 3 detenidos por titular de medios: n/d; ver ARG-146-023",
-  fuentes=["Proyecto Puente (2026/11/03)", "QuieroTV (2026/11/03)"]),
  dict(id="ARG-146-ARM-003", ficha="ARG-146-019", estado="MX-GRO", region="Sureste", color="verde", ent="Guerrero", mun="Cocula",
   fecha="2026-11-03", fecha_txt="pub. 3-nov; día de la detención no fijado", hora="no fijada", c=[0] * 10, nd=ND_ALL, integra=True,
   corp="FGE Guerrero <span class=\"muted-note\">(solo por resumen)</span>", conf="Bajo",
   nota="cualitativo: pistola, cargador y cartuchos sin cifra, solo por resumen; 1 detenido por titular: n/d; ver ARG-146-019",
   fuentes=["Proyecto Puente (2026/11/03)", "Cúspide (2026/11/03)"]),
+ dict(id="ARG-146-ARM-004", ficha="ARG-146-023", estado="MX-SIN", region="Noroeste", color="verde", ent="Sinaloa", mun="Culiacán",
+  fecha="2026-11-03", fecha_txt="pub. 3-nov; día de la detención no fijado", hora="no fijada", c=[0] * 10, nd=ND_ALL, integra=True,
+  corp="<span class=\"muted-note\">no publicada por titular</span>", conf="Bajo",
+  nota="cualitativo: 3, 4 o 5 armas según la fuente, 641 cartuchos y 24 cargadores, solo por resumen: cifras contradichas; 3 detenidos por titular de medios: n/d; ver ARG-146-023",
+  fuentes=["Proyecto Puente (2026/11/03)", "QuieroTV (2026/11/03)"]),
 ]
 TOT = [sum(a["c"][i] for a in ARM if a["integra"]) for i in range(10)]
 ARMAS = TOT[0] + TOT[1] + TOT[2] + TOT[3]
@@ -438,7 +438,7 @@ panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
     <b>Armamento</b>: ninguna arma ni detenido integrado al total: cifras solo por resumen o sin cifra de autoridad · <b>muertos por agresión</b>: {MU}, con los 3 de Celaya (ARG-146-004: saldo contradicho por resumen; con la versión de Correo, {MU-2}) · <b>cuerpos o restos hallados</b>: al menos {CU} (Suaqui Grande, cifra mínima por titular); Nuevo Laredo y Miguel Alemán, número no publicado · <b>marcas</b>: {NAP} de {len(E)} <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code> y {NFR} <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> · <b>totales sujetos a las cláusulas de retiro de {NRET} fichas</b> (día no fijado frente a las 11:14 del 31): ARG-146-012, -019, -020, -021 y -024 · <b>recuperación, fuera de totales</b>: {MU_REC} muertos; efecto sobre ARGOS 145, en el archivo de fuentes. <b>Cálculo propio</b>.
-    <br><b>Vistos, fuera de totales</b> — <b>de la ventana de ARGOS 145</b> (🟢 o 🟡, no se recuperan): Concordia, Sin. (militares agredidos tras localizar un campamento; 3 abatidos; 29-oct, ventana anterior) · aseguramientos de Huajicori y Huitzuco: en la página de armamento · <b>sin ruta fechada ni titular con día</b> — <code>SIN RUTA FECHADA — NO SE FICHA</code>: Valle de Chalco: San Miguel Xico 1.ª Secc., 2 muertos y 1 herido, noche del viernes (Quadratín, sin fecha en la ruta: probable ventana de ARGOS 145); 2.ª Secc., 1 muerto y 1 herido (Milenio; Telediario, sin fecha): posibles hechos distintos · Mazatlán, policía municipal herido (ruta sin día) · Acolman, 2 muertos en una tienda · Jiutepec, ataque a agentes · Culiacán, Alturas del Sur, mujer asesinada (pertenencia a la GN no confirmada) · Papantla · Acapulco, La Laja · Silao, El Escoplo y «Silao y Romita» · Tehuacán · Cuautitlán Izcalli, La Quebrada · Mexicali, Cerro Centinela (restos óseos en peritaje) · <b>balances, no se reparten ni se integran</b>: fin de semana (116 homicidios del 30-oct al 1-nov, {RES}) · Guanajuato (8 y 9 en Día de Muertos) · Morelos (8) · puente de Día de Muertos (42 detenidos y 149 armas) · Tabasco (12 detenidos) · Veracruz, SSP (34 detenidos).
+    <br><b>Vistos, fuera de totales</b> — <b>de la ventana de ARGOS 145</b> (🟢 o 🟡, no se recuperan): Concordia, Sin. (militares agredidos tras localizar un campamento; 3 abatidos; 29-oct, ventana anterior; aseguramiento de La Guásima, posible mismo operativo) · aseguramientos de Huajicori y Huitzuco: en la página de armamento · <b>sin ruta fechada ni titular con día</b> — <code>SIN RUTA FECHADA — NO SE FICHA</code>: Valle de Chalco: San Miguel Xico 1.ª Secc., 2 muertos y 1 herido, noche del viernes (Quadratín, sin fecha en la ruta: probable ventana de ARGOS 145); 2.ª Secc., 1 muerto y 1 herido (Milenio; Telediario, sin fecha): posibles hechos distintos · Mazatlán, policía municipal herido (ruta sin día) · Acolman, 2 muertos en una tienda · Jiutepec, ataque a agentes · Culiacán, Alturas del Sur, mujer asesinada (pertenencia a la GN no confirmada) · Papantla · Acapulco, La Laja · Silao, El Escoplo y «Silao y Romita» · Tehuacán · Cuautitlán Izcalli, La Quebrada · Mexicali, Cerro Centinela (restos óseos en peritaje) · <b>balances, no se reparten ni se integran</b>: fin de semana (116 homicidios del 30-oct al 1-nov, {RES}) · Guanajuato (8 y 9 en Día de Muertos) · Morelos (8) · puente de Día de Muertos (42 detenidos y 149 armas) · Tabasco (12 detenidos) · Veracruz, SSP (34 detenidos).
     <br><b>Seguimiento, fuera del semáforo</b>: <b>ARG-132-002 (Orizaba)</b>: el policía ministerial murió el 30-oct, por titular (La Silla Rota; Golpe Político; Plumas Libres 2026/10/30); vinculan a cuatro «por ataque a policías durante cateo», por titular (La Jornada Veracruz; N+, sin fecha); «por crimen de policía ministerial», por titular (La Silla Rota 2026/11/3); fecha de la vinculación no fijada · <b>ARG-144-008 / ARG-145-REC-001 (Matamoros)</b>: «seis personas ajenas» muertas en la jornada de bloqueos, por titular (Infobae 2026/10/31; El Mañana 2026/10/31); proyectil 7.62 con trayectoria descendente en la muerte de la niña, por titular (La Región 2026/11/03); sin comunicado oficial · <b>ARG-145-001 (Culiacán)</b>: víctima identificada por un medio, no por autoridad · <code>NINGUNO ES SENTENCIA</code>.
   </p>
 '''
@@ -510,7 +510,7 @@ arm2 = f'''  <div class="table-wrap"><table class="exec wide">
   <p class="muted-note" style="margin:6px 0 0 0;">
     <b>Lectura regional</b>: ninguna región con arma ni detenido integrado al total. <b>Cálculo propio</b>.
     <br><b>Eventos cualitativos sin cantidad</b>: los cuatro de la tabla.
-    <br><code>VISTOS, NO INTEGRADOS</code>: <b>boletín federal de acciones del 30 y 31-oct y 1 y 2-nov</b> (agregado sin día por acción, que abarca la ventana de ARGOS 145; solo por republicadores, misma fuente: Milenio, RED113, Tallapolítica, Certeza Diario): Culiacán (22 armas, 76 cargadores, 1,054 cartuchos), Huitzuco (66 armas), Ahumada, Chih. (7 detenidos, 5 armas), Texcoco–Chimalhuacán–Ecatepec (12 detenidos, 178,780 litros), Puebla, Unidad Antorchista (3 detenidos, 1 corta, 4 cargadores, 51 cartuchos), Nayarit (2 detenidos, 3 largas, 9 cargadores, 374 cartuchos), Iztapalapa (3 detenidos, 2 largas) y Matamoros (1 detenido, 1 larga, 71 cartuchos), todo {RES}: <code>FECHA NO FIJADA — NO SE INTEGRA</code> · <b>Culiacán, El Tepuche</b> (37 armas, 2,735 cartuchos; Luz Noticias 2026-11-03) y <b>Caminaguato–El Tepuche</b> (15 largas, 30 cargadores; Heraldo de México 2026/11/4), {RES}: <code>POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN</code> · <b>Huajicori, Nay.</b> (ntv 2026/11/03; hecho del 30-oct, ventana de ARGOS 145; 6 o 4 detenidos, cifras contradichas) · <b>Concordia, La Guásima</b>: día no fijado.
+    <br><code>VISTOS, NO INTEGRADOS</code>: <b>boletín federal de acciones del 30 y 31-oct y 1 y 2-nov</b> (agregado sin día por acción, que abarca la ventana de ARGOS 145; solo por republicadores, misma fuente: Milenio, RED113, Tallapolítica, Certeza Diario): Culiacán (22 armas, 76 cargadores, 1,054 cartuchos), Huitzuco (66 armas), Ahumada, Chih. (7 detenidos, 5 armas), Texcoco–Chimalhuacán–Ecatepec (12 detenidos, 178,780 litros), Puebla, Unidad Antorchista (3 detenidos, 1 corta, 4 cargadores, 51 cartuchos), Nayarit (2 detenidos, 3 largas, 9 cargadores, 374 cartuchos), Iztapalapa (3 detenidos, 2 largas) y Matamoros (1 detenido, 1 larga, 71 cartuchos), todo {RES}: <code>FECHA NO FIJADA — NO SE INTEGRA</code> · <b>Culiacán, El Tepuche</b> (37 armas, 2,735 cartuchos; Luz Noticias 2026-11-03) y <b>Caminaguato–El Tepuche</b> (15 largas, 30 cargadores; Heraldo de México 2026/11/4), {RES}: <code>POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN</code> · <b>Huajicori, Nay.</b> (ntv 2026/11/03; hecho del 30-oct, ventana de ARGOS 145; 6 o 4 detenidos, cifras contradichas) · <b>Concordia, La Guásima</b>: ver panorama; <code>POSIBLE DUPLICIDAD</code> con la agresión del 29-oct hasta validación.
   </p>
 '''
 
@@ -558,8 +558,8 @@ sent = f'''  <div class="conteo">
 cierre = f'''  <div class="alerta contexto">
     <div class="flag">VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL</div>
     <p>
-      <b>1.</b> <b>Trece rojos propios en nueve entidades</b> (cálculo propio): siete homicidios múltiples, un servidor público asesinado, dos agresiones a militares —una con un soldado muerto— y tres hallazgos de restos humanos. <b>Alza del riesgo nacional frente a ARGOS 145</b>: rojos por hora, de 0,02 a 0,14 (cálculo propio).
-      <br><b>2.</b> <b>Guanajuato</b>: tres de los trece rojos (Celaya, Silao, Irapuato), 8 muertos —con Celaya, saldo contradicho— y 2 heridos del 2 al 4-nov (cálculo propio).
+      <b>1.</b> <b>Trece rojos propios en nueve entidades</b> (cálculo propio): siete homicidios múltiples, un servidor público asesinado, dos agresiones a militares y tres hallazgos de restos humanos. <b>Alza del riesgo nacional frente a ARGOS 145</b>: 0,14 rojos por hora, frente a 0,06 como máximo en ARGOS 145 (cálculo propio).
+      <br><b>2.</b> <b>Guanajuato</b> concentra tres de los trece rojos (ARG-146-004, -005 y -006); saldo, en la Conclusión 1 (cálculo propio).
       <br><b>3.</b> <b>Violencia operativa</b>: cinco amarillos —tres homicidios dolosos con un herido cada uno, una agresión a policías municipales y una agresión armada contra las instalaciones de la Feria Ganadera de Culiacán— en cuatro entidades (cálculo propio).
       <br><b>4.</b> <b>Respuesta institucional</b>: seis verdes, ninguno con cifra de armamento o de detenidos citable; ninguna sentencia integrable (cálculo propio; totales, en el panorama).
       <br><b>5.</b> <code>VENTANA DE {DUR.upper()} CON FIN DE SEMANA Y DÍA DE MUERTOS: TOTALES NO COMPARABLES CON ARGOS 145 SIN NORMALIZAR POR HORA; CINCO DE VEINTICUATRO HECHOS CON CLÁUSULA DE RETIRO; UN ROJO RECUPERADO DE ARGOS 145. CÁLCULO PROPIO.</code>
@@ -569,10 +569,10 @@ cierre = f'''  <div class="alerta contexto">
   <div class="alerta contexto" style="margin-top:8px;">
     <div class="flag">CONCLUSIONES DE INTELIGENCIA CRIMINAL</div>
     <p>
-      <b>1. GUANAJUATO: TRES ATAQUES CON VÍCTIMAS MÚLTIPLES EN TRES MUNICIPIOS DEL CORREDOR CELAYA–SILAO–IRAPUATO EN MENOS DE 54 HORAS</b> (cálculo propio: cota por el cierre de la ventana; Irapuato, día no fijado; 8 muertos —Celaya, saldo contradicho— y 2 heridos): ARG-146-004, -005 y -006; vínculo no acreditado. Línea: <b>vigilar las colonias Ejidal (Celaya) y Primavera (Irapuato) y la comunidad Monte del Coecillo (Silao)</b>.
-      <br><b>2. MICHOACÁN: DOS AGRESIONES A MILITARES EN TRES DÍAS, UNA CON UN SOLDADO MUERTO</b> (cálculo propio): ARG-146-024 (Ario de Rosales, 31-oct) y ARG-146-007 (Uruapan, 2-nov; dos detenidos, ARG-146-017); vínculo no acreditado. Línea: <b>vigilar los recorridos militares en la región de Uruapan y Tacámbaro y cotejar el arma asegurada en Uruapan con los casquillos de El Ortigal</b>.
+      <b>1. GUANAJUATO: TRES ATAQUES CON VÍCTIMAS MÚLTIPLES EN TRES MUNICIPIOS DEL CORREDOR CELAYA–SILAO–IRAPUATO DEL 2 AL 4-NOV</b> (cálculo propio: Irapuato, día no fijado; 8 muertos —Celaya, saldo contradicho— y 2 heridos): ARG-146-004, -005 y -006; vínculo no acreditado. Línea: <b>vigilar las colonias Ejidal (Celaya) y Primavera (Irapuato) y la comunidad Monte del Coecillo (Silao)</b>.
+      <br><b>2. MICHOACÁN: DOS AGRESIONES A MILITARES EN TRES DÍAS, UNA CON UN SOLDADO MUERTO</b> (cálculo propio): ARG-146-024 (Ario de Rosales, 31-oct) y ARG-146-007 (Uruapan, 2-nov; dos detenidos, ARG-146-017); vínculo no acreditado. Línea: <b>vigilar los recorridos militares en las regiones de Ario de Rosales y Uruapan y solicitar a la fiscalía el cotejo balístico entre ambos hechos</b>.
       <br><b>3. RESTOS HUMANOS LOCALIZADOS POR COLECTIVOS EN TRES ESTADOS FRONTERIZOS DEL NORTE EN DOS DÍAS, NINGUNO CON CIFRA OFICIAL DE VÍCTIMAS</b> (cálculo propio, 2 y 3-nov): ARG-146-009 (Nuevo Laredo), -010 (Suaqui Grande) y -011 (Mexicali). Línea: <b>vigilar las jornadas de búsqueda de colectivos en curso en Sonora, Baja California y Tamaulipas</b>.
-      <br><b>4. ATAQUES EN ACTOS PÚBLICOS DE DÍA DE MUERTOS, CON UN MENOR (3 O 4 AÑOS, EDAD CONTRADICHA) ENTRE LAS VÍCTIMAS</b> (cálculo propio: 5 muertos y 1 herido): ARG-146-001 (Tepito), -002 (panteón de Chinameca) y -014 (desfile de Texmelucan); vínculo no acreditado. Línea: <b>vigilar panteones, desfiles y reuniones públicas en las celebraciones con presencia de células armadas</b>.
+      <br><b>4. ATAQUES EN ACTOS PÚBLICOS DE DÍA DE MUERTOS, CON UN MENOR (3 O 4 AÑOS, EDAD CONTRADICHA) ENTRE LAS VÍCTIMAS</b> (cálculo propio: 5 muertos y 1 herido): ARG-146-001 (Tepito), -002 (panteón de Chinameca) y -014 (desfile de Texmelucan); vínculo no acreditado. Línea: <b>vigilar panteones, desfiles y reuniones públicas en las próximas celebraciones</b>.
       <br><b>5. DETENCIONES POR HOMICIDIOS DE UN DEFENSOR Y DE UN ABOGADO: A UNA SEMANA EN CHENALHÓ Y A UN AÑO EN IGUALA</b> (cálculo propio: 28-oct a 3-nov; octubre de 2025 a 3-nov): ARG-146-020 y -019; ninguna sentencia. Línea: <b>vigilar la vinculación a proceso y medir la brecha hasta sentencia en ambos casos</b>.
     </p>
   </div>

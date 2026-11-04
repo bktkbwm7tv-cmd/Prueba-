@@ -8,7 +8,7 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 144 (corte 2026-10-29; ventana 28-oct 08:28 → 29-oct 11:36).
+**Última actualización**: ARGOS 146 (corte 2026-11-04; ventana 31-oct 11:14 → 4-nov 06:52, 91 h 38 min).
 
 ---
 
@@ -2693,3 +2693,48 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 5. **Duración anunciada en la orden («~70 h») frente a la real (47 h 38 min)**; el Bloque 0 repitió el error (68 h 54 min). Calcular con `date`.
 6. **Presupuesto de 145**: 2 + 18 + 150 + 24 + 6 = **200 de 200**.
 7. **Rama**: 139 a 145 viven fuera de `main`; 145 en `claude/argos-145`.
+
+## ARGOS 146 — lo que cierra esta edición
+
+| Pendiente | Disposición |
+|---|---|
+| **Rojos sin ruta de 145** | Cancún, Paseos del Mar: ruta Noticaribe 2026/10/30 → `ARG-146-REC-001` (`ARG-146-FE-002`). Valle de Chalco: sigue sin ruta; posiblemente dos hechos (1.ª y 2.ª Secc.) |
+| **Pénjamo `ARG-145-002`** | Segunda víctima muerta (solo por resumen) → `ARG-146-FE-001` (🔴 en 145) |
+| **Vallecillo `ARG-145-004`** | Sin fragmento: sigue 🟡. Cerrado salvo fragmento nuevo |
+| **Matamoros (REC-001 de 145)** | Total de la jornada: 6, por *slug* (Infobae 2026/10/31). Proyectil 7.62, por titular (La Región 2026/11/03). Cerrado salvo comunicado oficial |
+| **Cuautla `ARG-144-012`** | 28-oct por cinco rutas. Cerrado |
+| **Chenalhó (seguimiento)** | 2 detenidos: `ARG-146-020`. Cerrado salvo vinculación |
+| **Orizaba `ARG-132-002`** | Muerte del agente el 30-oct confirmada; vinculación de cuatro (fecha no fijada). Color: decisión del destinatario |
+| **Huejotzingo, Tecate, Mexicali, Jalisco** | Publicadas el 29 o 30-oct (ventana de 145): fuera de la ventana de 146; siguen candidatas sin boletín |
+
+## Abiertos que ARGOS 147 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️ **Decisiones del destinatario sin respuesta en 146** | (a) excepción para rojos sin ruta fechada (ahora: Valle de Chalco); (b) Celaya `ARG-143-001` (🟡 o 🔴); (c) Orizaba `ARG-132-002` (fe de erratas de color a 132) · y nuevas: (d) ratificar `ARG-146-FE-001` (Pénjamo) y `-FE-002` (Cancún); (e) Uruapan `ARG-146-007` 🔴 con patrullaje solo por resumen |
+| **Cláusulas de retiro de 146 (5)** | `-012` Cuautitlán Izcalli (¿sábado 31 tras las 11:14 o viernes 30?) · `-019` Cocula, `-020` Chenalhó, `-021` Cancún «Garabato» (día de la detención) · `-024` Ario de Rosales (hora; «mañana» solo por resumen) |
+| **Celaya `ARG-146-004`** | Saldo contradicho (AM 3 muertos; Correo, por resumen, 1 y 1 sobreviviente) |
+| **Feria Ganadera `ARG-146-022`** | ¿Se disparó contra los militares que resguardan? Si sí, 🔴 por fe de erratas. Armas: 3, 4 o 5 |
+| **Restos `-009`, `-010`, `-011`** | Número oficial de víctimas en Nuevo Laredo, Suaqui Grande (3 o 4 cráneos) y Mexicali; Mexicali: segundo hallazgo frente a Cerro Centinela |
+| **Tepito `-001`** | Edad del niño (3 o 4); detenidos; declaración de SSC o FGJCDMX |
+| **Acapulco `-003`** | Día (lunes 2 noche o martes 3 madrugada) |
+| **Cláusulas de retiro de 145 (3)** | `-010` Iztapalapa (las cifras coinciden con el agregado federal), `-011` Piedras Negras, `-012` Juan R. Escudero: siguen sin día |
+| **Recuperaciones de 145** | REC-002 Mazatlán (hora) · REC-003 Coatzacoalcos (cotejo genético) · REC-004 Tetlatlahuca (día) |
+| **Detenidos de 144 por titular** | General Bravo (2) y Lindavista (6): fe de erratas 8 → n/d si no aparece cifra de autoridad |
+| **Vistos sin ruta (posibles rojos)** | Valle de Chalco · Acolman (2 muertos) · Jiutepec (ataque a agentes) · Mazatlán (policía municipal herido) · Culiacán Alturas del Sur (¿integrante de la GN?) · Silao El Escoplo / Silao y Romita · Mazatlán, centro de rehabilitación (1 muerto, 4 heridos; sin cotejo) |
+| **Cotejos** | Meganoticias 784945 («detienen a dos hombres tras ataque armado contra militares», catalogada como CDMX): ¿es Uruapan (`-017`)? · Huajicori (6 o 4 detenidos; 15 AEI solo por resumen; ventana de 145) |
+| **Sentencias candidatas** | Tecate · Mexicali · Jalisco · Huejotzingo · FGR Campeche (metilfenidato, 3-nov) · Oaxaca · Tenosique · Doctor Arroyo, NL 40 años · Ecatepec 68 · Fresnillo · Ramos Arizpe · **Tulantepec (audiencia de pena del 5-nov)** — boletín oficial con término expreso |
+| **Seguimientos** | Indaparapeo · Magdalena de Kino · Mexicali `ARG-145-003` (uso de la fuerza) · Almoloya · Xalapa `ARG-140-020` · Tehuacán `ARG-142-010` · Juchitán `ARG-140-021` · Tijuana `ARG-143-005` (no consultados en 146: Tijuana, Tehuacán, Tulantepec) |
+| **Cobertura con prioridad sobre el ciclo en 147** | **Sentencias `NO REVISADA` (14)**: BCS, Chih · Tamps · Col, Ags, Mich, Gto · CDMX, Mor, Pue, Tlax · Chis, Yuc, QRoo; sin páginas: Son; dominio no confirmado: Coah, Camp (`ucs.campeche.gob.mx`, candidato). **Armamento `NO REVISADA` (11)**, primero las 4 con dos ediciones —BC, Son, Col, Edomex—, luego BCS, Dgo · Coah, Tamps, Zac · CDMX, Pue; Tab sin páginas. **Alto impacto solo amplia**: Nay (dos ediciones), Coah, Zac, Hgo, Qro, Oax, Camp, Yuc. Después, **CICLO B** (Noreste + Golfo: 147 = B) |
+| **Dominios nuevos en 146** | `sspo.gob.mx` (SSP Oaxaca, devuelve páginas) · `ucs.campeche.gob.mx` (comunicación social de Campeche) |
+
+## Deuda de método (ARGOS 146)
+
+1. **Rojo «sin ruta» que la tenía** (Feria Ganadera): la ola no la halló; R1 sí, en dos búsquedas. Búsqueda por topónimo exacto y día para todo rojo sin ruta, dentro de la ola.
+2. **Deslindes de memoria**: cinco deslindes del primer borrador citaban mal el archivo. El grep debe abrir la línea, no listar el archivo.
+3. **Frontera de apertura**: Ario de Rosales («mañana» solo por resumen) se integró a 146 con `PUBLICADO EL DÍA DE APERTURA SIN HORA` en vez de recuperarse a 145 por inferencia. CLAUDE.md solo nombra el día de cierre: conviene fijar la regla simétrica.
+4. **Agregado federal de cuatro días** (30-oct a 2-nov): cruza dos ventanas y no fija día; en ventanas largas el boletín federal no aporta cifras integrables.
+5. **Recuento «Institucional»**: dos criterios en el primer borrador; unificado a 0 cuando la declaración consta solo por resumen.
+6. **Decisiones del destinatario**: el «Procede» no respondió las tres preguntas del Bloque 0; se aplicó el estado vigente. Repetirlas en la orden de 147.
+7. **Presupuesto de 146**: 2 + 19 + 150 + 22 + 6 = **199 de 200**.
+8. **Rama**: 139 a 146 viven fuera de `main`; 146 en `claude/argos-146`.
