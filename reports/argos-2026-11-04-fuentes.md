@@ -25,7 +25,7 @@ Se plantearon en el Bloque 0. **El «Procede» no las resolvió**; se aplicó el
 | ARG-ID | Edición afectada | Corrección |
 |---|---|---|
 | `ARG-146-FE-001` | ARGOS 145 | **Pénjamo `ARG-145-002`**: la segunda víctima murió en el hospital (equipo Occidente, solo por resumen; titular de AM 2026/10/30 «dos hombres muertos»). **🟡 → 🔴**; ARGOS 145 pasa a 2 rojos y 6 muertos por agresión. Reserva: el fallecimiento posterior, solo por resumen |
-| `ARG-146-FE-002` | ARGOS 145 | **Cancún, Paseos del Mar**: con ruta fechada (Noticaribe 2026/10/30), es 🔴 de la ventana de 145 → publicado como `ARG-146-REC-001`. Efecto sobre 145: +1 rojo, +3 muertos (con FE-001: 3 rojos, 9 muertos). Reserva: R1 de procedencia no reencontró la ruta de Noticaribe; la aportó el equipo Sureste |
+| `ARG-146-FE-002` | ARGOS 145 | **Cancún, Paseos del Mar**: con ruta fechada (Noticaribe 2026/10/30), es 🔴 de la ventana de 145 → publicado como `ARG-146-REC-001`. Efecto sobre 145: +1 rojo, +3 muertos (con FE-001: 3 rojos, 9 muertos). Ruta de Noticaribe reencontrada en R2 de procedencia |
 | — | ARGOS 145 | **Matamoros `ARG-145-REC-001`**: «seis personas ajenas» por *slug* (Infobae 2026/10/31) y «sexta víctima» (El Mañana 2026/10/31): el total de la jornada se fija en **6** (145: «5 o 6, contradicho»). Sin cambio de color ni de totales de 145 |
 | — | ARGOS 144 | **Detenidos por titular de medios** (General Bravo y China 2; Lindavista 6): la cifra de Lindavista se atribuye a la SSC solo por resumen; General Bravo sin cifra de autoridad. **No se ejecuta todavía la fe de erratas 8 → n/d**: queda abierta |
 | — | ARGOS 144 | **Cuautla `ARG-144-012`**: día 28-oct fijado por cinco rutas; deja de ser fuente única |
@@ -92,13 +92,17 @@ Se plantearon en el Bloque 0. **El «Procede» no las resolvió**; se aplicó el
 
 **Ronda 2** (en serie): ver §9.
 
-## 9. Ronda 2
+## 9. Ronda 2 (en serie)
 
-(Se completa al cierre.)
+- `editor-duplicidad` R2 — CORREGIR (1 bloqueante, 10 editoriales; 0 duplicidades). **Aplicados**: Conclusión 2 sin «casquillos» ni «Tacámbaro» (no sostenidos) · Tepito, titular y panorama sin la edad como dato · Celaya en el panorama · Valoración 1 y 2 sin repetir las Conclusiones · Conclusión 1 «del 2 al 4-nov» · Concordia y La Guásima, posible duplicidad declarada · deslinde de Texmelucan con Retodiario 2026/10/28 · recuento «Institucional» con criterio único (0 cuando la declaración consta solo por resumen: -007, -012, -017, -019, -020) · diario.mx y Quadratín como regionales · Feria Ganadera: 24 cargadores y posible inclusión en el agregado federal · orden de ARM · «células armadas» retirado. **Aceptado sin cambio**: -019 y -020 como 🟢 de hoy (detención de delito pasado: regla de CLAUDE.md). Recuentos por tipo de las fichas = fuentes citadas en la ficha; la lista íntegra, en §6.
+- `procedencia-cifras` R2 — CORREGIR (10 hallazgos; 6 de 6 búsquedas; ninguna cifra de peso cae). **Aplicados**: Celaya con segundo titular fechado (Noticieros en Línea 2026/nov/03, «sube a tres»): **la atribución a Correo de «1 muerto y 1 sobreviviente» no tiene respaldo** y se retira; deja de ser fuente única (★★★☆☆) · Tepito: «3 años» por titulares del 2026/11/02 (Diario de Yucatán, El Heraldo de SLP), «4 años» por Vanguardia y Ejecentral sin fecha; día del hecho solo por resumen · Chinameca: día solo por resumen; N+ no sostiene la cifra; La Verdad añadida; lugar «en o cerca del panteón» · Acapulco: día solo por resumen · Silao: AM 2026/11/03 («dos muertos»), versión superada; Primer Plano Irapuato añadido · Tultitlán: día solo por *slug* «hoy-DD» · Conclusión 5: «seis días» y «unos 13 meses», con la fecha de 2025 solo por resumen · Conclusión 1: suma de fichas, no el balance de Latinus · Valoración 1: «0,02 a 0,06 en ARGOS 145» (publicado / con las correcciones de §3) · 116 homicidios retirado de indicadores (sigue en balances).
+- **Convención señalada y no corregida en bloque**: en las fichas con «lunes 2-NOV, por ruta» (Celaya, Silao, Uruapan, Tlaquepaque, Reynosa, Mexicali) la ruta fija la publicación del mismo día; el día del hecho coincide con la publicación y no cambia la ventana. Se mantiene la forma de 145.
+- **Construcción**: `python3 tools/datos-argos-146.py reports/argos-2026-10-31.html reports/argos-2026-11-04.html` · `python3 tools/gen-movil.py 146 2026-11-04 145 2026-10-31 06:52` (25/25 tarjetas; contadores 13/5/6; validación OK) · `python3 tools/gen-texto.py` · `node tools/validar.js reports/argos-2026-11-04.html 2026-10-31 2026-11-04` → **validación OK**. `validar.js` no aplica al móvil (falla igual sobre el móvil de 145); el móvil lo valida `gen-movil.py`.
+- **Marca «Consulta»**: 07:26 CDMX (cierre de la última búsqueda de R2).
 
 ## 10. Presupuesto de búsqueda
 
-Control 2 · coordinador 17 (más 2 de repetición federal = 19 de 20) · ola 150 (6 × 25) · procedencia R1 22 · R2: ver §9.
+Control 2 · coordinador 17 + 2 de repetición federal = 19 de 20 · ola 150 (6 × 25) · procedencia R1 22 de 24 · R2 6 de 6 · **total 199 de 200**.
 
 ## 11. Hallazgos de método (no van al cartelón)
 

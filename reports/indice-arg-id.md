@@ -1071,7 +1071,7 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-146-001` | 146 | 2026-11-01 | ARG-146-001 — Cuauhtémoc (col. Morelos, Tepito), Ciudad de México: Mujer y su hijo menor (3 o 4 años, contradicho) asesinados en Día de Muertos; 🔴; Tribuna (2026/11/02); confianza ★★★☆☆ |
 | `ARG-146-002` | 146 | 2026-11-02 | ARG-146-002 — Chinameca (panteón municipal), Veracruz: Ataque en el panteón en Día de Muertos: 2 muertos; 🔴; La Silla Rota (2026/11/3); confianza ★★★☆☆ |
 | `ARG-146-003` | 146 | 2026-11-03 | ARG-146-003 — Acapulco (El Veintiuno, km 21), Guerrero: Ataque a una fiesta: 2 muertos y 1 herido; 🔴; diario.mx (2026/nov/03); confianza ★★★☆☆ |
-| `ARG-146-004` | 146 | 2026-11-02 | ARG-146-004 — Celaya (col. Ejidal), Guanajuato: Ataque armado: 3 hombres muertos (saldo contradicho); 🔴; AM (2026/11/02); confianza ★★☆☆☆ |
+| `ARG-146-004` | 146 | 2026-11-02 | ARG-146-004 — Celaya (col. Ejidal), Guanajuato: Ataque armado: 3 hombres muertos (saldo actualizado); 🔴; AM (2026/11/02); confianza ★★★☆☆ |
 | `ARG-146-005` | 146 | 2026-11-02 | ARG-146-005 — Silao (Monte del Coecillo), Guanajuato: Ataque armado en una comunidad: 3 muertos; 🔴; Correo (2026/nov/02); confianza ★★★☆☆ |
 | `ARG-146-006` | 146 | 2026-11-04 | ARG-146-006 — Irapuato (col. Primavera), Guanajuato: Ataque armado: 2 muertos y 2 heridos; 🔴; Correo (2026/nov/04); confianza ★★★☆☆ |
 | `ARG-146-007` | 146 | 2026-11-02 | ARG-146-007 — Uruapan (calz. Benito Juárez, col. Mártires), Michoacán: Agresión armada contra militares desde una vivienda; sin víctimas publicadas; 🔴; Changoonga (2026/11/02); confianza ★★★☆☆ |
