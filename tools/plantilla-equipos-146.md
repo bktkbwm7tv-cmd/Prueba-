@@ -3,8 +3,8 @@
 Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 
 ## Ventana
-- ABRE: **sábado 31-oct-2026 11:14 CDMX** (donde cerró ARGOS 145). CIERRA: **hora real de arranque de la sesión de ARGOS 146** (o del «Procede») (el coordinador la escribe aquí al copiar la plantilla: ____).
-- Comprueba siempre el día de la semana que dice la fuente contra el calendario (sáb 31-oct · dom 1-nov · lun 2-nov…).
+- ABRE: **sábado 31-oct-2026 11:14 CDMX** (donde cerró ARGOS 145). CIERRA: **hora real de arranque de la sesión de ARGOS 146** (o del «Procede») **miércoles 4-nov-2026 06:52 CDMX** (duración 91 h 38 min).
+- Comprueba siempre el día de la semana que dice la fuente contra el calendario (sáb 31-oct · dom 1-nov · lun 2-nov · mar 3-nov · mié 4-nov).
 - **ARGOS 145 (ventana 29-oct 11:36 → 31-oct 11:14) ya publicó 12 hechos propios** —Culiacán Díaz Ordaz (-001), Pénjamo (-002), Mexicali Fundadores (-003), Vallecillo (-004), Cuauhtémoc Chih. (-005), Tijuana av. De las Aguas (-006) y Fortín de las Flores (-007), Mazatlán Santa Fe (-008) y Pato Blanco (-009), Iztapalapa Lomas Estrella (-010), Piedras Negras (-011), Juan R. Escudero (-012)— y **cuatro recuperaciones**: Matamoros niña (REC-001), Mazatlán Los Ranchos (REC-002), Coatzacoalcos col. Francisco Villa (REC-003), Tetlatlahuca (REC-004). **Vistos sin ruta**: Cancún Paseos del Mar y Valle de Chalco (rojos potenciales). Un hecho del 30 o del 31 antes de las 11:14 que 145 NO publicó es de la ventana de 145: candidato `-REC-` **solo si es 🔴**; si es 🟡 o 🟢, va a «VISTOS».
 - **Núcleo del corte**: hechos tras las **11:14 del sábado 31**. Publicación del 31 sin hora → `PUBLICADO EL DÍA DE APERTURA SIN HORA`; publicación del día de cierre sin hora → `FRONTERA DE VENTANA — HORA NO FIJADA`. ⚠️ Si el único dato de día U HORA apunta a antes de las 11:14 del 31, es de la ventana de 145.
 - **Fin de semana**: «fin de semana violento», «N muertos de viernes a domingo», balances de «Día de Muertos» son **balances**: nunca se reparten ni se integran.
@@ -14,12 +14,12 @@ Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 ## Red y herramientas
 - Egreso bloqueado (curl gob.mx → 000). **NO uses WebFetch.** Solo WebSearch.
 - **TODA búsqueda con mode:"extended".** Nunca "standard".
-- Respeta tu tope de búsquedas; declara al final `Búsquedas utilizadas: n de N`. Si te sobran, invierte en hechos de alto impacto del miércoles 28 (tras las 08:28) y del jueves 29 antes de las 11:36 que ARGOS 144 no publicó (solo 🔴, candidatos `-REC-`) y del día de cierre.
+- Respeta tu tope de búsquedas; declara al final `Búsquedas utilizadas: n de N`. Si te sobran, invierte en hechos de alto impacto del viernes 30 y del sábado 31 antes de las 11:14 que ARGOS 145 no publicó (solo 🔴, candidatos `-REC-`) y del día de cierre (mié 4, antes de las 06:52).
 - Pon la cifra de peso ENTRE COMILLAS en la consulta cuando busques una cifra concreta ("tres muertos", "21 años").
 
 ## Barrido obligatorio por equipo (además de los encargos)
-1. Búsqueda por día de la semana: «este jueves» / «la noche del jueves» / «este viernes» / «madrugada de este viernes» / «este sábado» + entidades.
-2. Fecha en la ruta, UNA POR DÍA de la ventana («2026/10/29», «2026/10/30», «2026/10/31»; la cuarta, a tu elección entre las tres): **4 BÚSQUEDAS RESERVADAS** para esto, que no se gastan en otra cosa; hazlas AL FINAL.
+1. Búsqueda por día de la semana: «este sábado» / «este domingo» / «Día de Muertos» / «este lunes» / «este martes» / «madrugada de este miércoles» + entidades.
+2. Fecha en la ruta, UNA POR DÍA de la ventana («2026/10/31», «2026/11/01» o «2026/11/02», «2026/11/03», «2026/11/04»): **4 BÚSQUEDAS RESERVADAS** para esto, que no se gastan en otra cosa; hazlas AL FINAL.
 3. «funcionario / director / servidor público / policía asesinado» en tu región.
 4. «fosa / colectivo / restos / cuerpos» en tu región, **UNA CONSULTA POR ENTIDAD FRONTERIZA** (BC, Son, Chih, Tamps) — en 135 la consulta regional no trajo Cachanillas ni Nogales.
 5b. ⚠️ **`site:` CON UN SOLO DOMINIO POR CONSULTA. NUNCA `OR` ENTRE DOMINIOS**: el buscador ignora el operador y la consulta se pierde (pasó en dos equipos de 140).
@@ -41,7 +41,7 @@ Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 ## ANTES DE PROPONER UN HECHO COMO NUEVO (obligatorio, también para cada -REC-)
 NO TIENES BASH. Usa la herramienta **Grep** (output_mode "files_with_matches", -i true, path /home/user/Prueba-/reports) con el topónimo como patrón y limita a estos archivos, y **PEGA LA SALIDA** en el hecho. Equivalente de referencia:
 ```
-grep -il '<topónimo>' reports/argos-2026-10-25.html reports/argos-2026-10-26.html reports/argos-2026-10-27.html reports/argos-2026-10-28.html reports/argos-2026-10-29.html reports/indice-arg-id.md reports/argos-2026-10-29-fuentes.md reports/argos-2026-10-29-equipos.md
+grep -il '<topónimo>' reports/argos-2026-10-26.html reports/argos-2026-10-27.html reports/argos-2026-10-28.html reports/argos-2026-10-29.html reports/argos-2026-10-31.html reports/indice-arg-id.md reports/argos-2026-10-31-fuentes.md reports/argos-2026-10-31-equipos.md
 ```
 Si sale algún archivo, abre la línea (`grep -n`) y declara si es el mismo hecho («es ARG-13X-0YY») o no. Sin la salida pegada, el hecho no se ficha.
 Busca la **primera publicación** del hecho (la URL con fecha más temprana).
