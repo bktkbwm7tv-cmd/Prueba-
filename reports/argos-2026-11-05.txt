@@ -10,8 +10,8 @@ Versión 3.0 · Corte matutino · USO INSTITUCIONAL
 
 [ RADAR CENTRAL — EN VIVO ]
 
-  · 🔴 Alto impacto · 5
-  · 🟡 Violencia operativa · 3
+  · 🔴 Alto impacto · 4
+  · 🟡 Violencia operativa · 6
   · 🟢 Acciones institucionales · 1
 
 [ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
@@ -20,9 +20,9 @@ Pase el cursor sobre un estado.
 
 ## SEMÁFORO ARGOS
 
-  · 🔴 ROJO — ALTO IMPACTO — 5 eventos
+  · 🔴 ROJO — ALTO IMPACTO — 4 eventos
 
-  · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 3 eventos
+  · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 6 eventos
 
   · 🟢 VERDE — ACCIONES INSTITUCIONALES — 1 eventos
 
@@ -30,12 +30,13 @@ Pase el cursor sobre un estado.
 
 1. SOLICITE A LA FISCALÍA DE MORELOS LAS LÍNEAS DE INVESTIGACIÓN Y EL ESTADO DE LAS DENUNCIAS
 PREVIAS DE AMENAZAS DEL REGIDOR ASESINADO (ARG-147-001).
-2. SOLICITE A LA FISCALÍA DE SINALOA EL DICTAMEN DE LOS ARTEFACTOS EXPLOSIVOS DE COTO PREMIER,
-INCLUIDO EL QUE NO ESTALLÓ (ARG-147-002).
-3. SOLICITE A LA DEFENSA Y A LA GUARDIA CIVIL DE MICHOACÁN EL PARTE SOBRE EL USO DE DRONES EN
-INDAPARAPEO Y VIGILE LAS HUERTAS DE LOS FRESNOS, TANCÍTARO (ARG-147-005 y -003).
+2. SOLICITE A LA DEFENSA Y A LA GUARDIA CIVIL DE MICHOACÁN EL PARTE SOBRE EL USO DE DRONES EN
+INDAPARAPEO Y VIGILE LAS HUERTAS DE LOS FRESNOS, TANCÍTARO (ARG-147-004 y -002).
+3. SOLICITE A LA FISCALÍA DE SINALOA EL DICTAMEN DEL ARTEFACTO SIN ESTALLAR DE COTO PREMIER Y
+LAS LÍNEAS DE INVESTIGACIÓN DE LOS CUATRO HOMICIDIOS DEL 4-NOV EN CULIACÁN Y MAZATLÁN
+(ARG-147-REC-003, -006, -008, -009 y -010).
 4. SOLICITE A LA FISCALÍA DE GUERRERO EL DESGLOSE OFICIAL POR MUNICIPIO DE LOS SIETE HOMICIDIOS
-DEL 4-NOV (ARG-147-004 y -008).
+DEL 4-NOV (ARG-147-003 y -007).
 5. SOLICITE A LA FISCALÍA DE CAMPECHE LA SITUACIÓN JURÍDICA DE LOS PRESUNTOS DETENIDOS POR EL
 ATAQUE DE CHAMPOTÓN Y A LA DE SINALOA LA DE LOS ATAQUES A CENTROS DE REHABILITACIÓN
 (ARG-147-REC-001 y -002).
@@ -47,20 +48,23 @@ ATAQUE DE CHAMPOTÓN Y A LA DE SINALOA LA DE LOS ATAQUES A CENTROS DE REHABILITA
 
 ## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
 
-Ventana 4-nov 06:52 → 5-nov 09:42 CDMX (26 h 50 min) · 9 hechos propios en 6 entidades ·
-densidad 0,34 hechos/hora; duración y densidad, cálculo propio · 2 recuperaciones de alto
+Ventana 4-nov 06:52 → 5-nov 09:42 CDMX (26 h 50 min) · 11 hechos propios en 6 entidades ·
+densidad 0,41 hechos/hora; duración y densidad, cálculo propio · 3 recuperaciones de alto
 impacto de la ventana anterior, atenuada, fuera de todos los totales
 
   Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
-  Michoacán · Indaparapeo (Colonia de Guadalupe y San Lucas Pío) · PUB. 5-NOV, POR RUTA | Enfrentamiento entre grupos con drones; sin víctimas publicadas | 🔴 Rojo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-147-005
+  Michoacán · Indaparapeo (Colonia de Guadalupe y San Lucas Pío) · PUB. 5-NOV, POR RUTA | Enfrentamiento entre grupos con drones; saldo no informado | 🔴 Rojo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-147-004
   Morelos · Cuernavaca (Ejidos de Acapantzingo) · 4-NOV, POR RUTA | Regidor de Cuernavaca asesinado a balazos; había denunciado amenazas | 🔴 Rojo | Fiscalía de Morelos (por titular) | La Razón · La Jornada · Infobae · Proceso | ★★★☆☆ | ARG-147-001
-  Michoacán · Tancítaro (Los Fresnos) · PUB. 4-NOV, POR RUTA | Dos hermanos asesinados a balazos en una huerta de aguacate | 🔴 Rojo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-147-003
-  Sinaloa · Mazatlán (fracc. Coto Premier) · 4-NOV, POR RUTA | Explosivos artesanales contra una vivienda; sin heridos publicados | 🔴 Rojo | SIN BOLETÍN | N+ · El Universal | ★★★☆☆ | ARG-147-002
-  Guerrero · Chilpancingo (col. Tierra y Libertad) · 4-NOV, POR RUTA Y TITULAR | Dos hombres asesinados (balazos y golpes) | 🔴 Rojo | SIN BOLETÍN | Infobae · El Universal | ★★☆☆☆ | ARG-147-004
-  Sinaloa · Culiacán (col. Alturas del Sur) · 4-NOV, POR RUTA | Joven asesinado a balazos | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-147-007
-  Guanajuato · Pénjamo (zona centro) · 4-NOV, POR RUTA | Ataque armado: 1 muerto y 2 heridos | 🟡 Amarillo | SIN BOLETÍN | Milenio · N+ | ★★★☆☆ | ARG-147-006
-  Guerrero · Olinalá (San Antonio Coyoacán) · 4-NOV, POR RUTA Y TITULAR | Enfrentamiento entre grupos armados: 2 muertos | 🟡 Amarillo | SIN BOLETÍN | Infobae · El Universal | ★★☆☆☆ | ARG-147-008
-  Yucatán · municipio no publicado · PUB. 4-NOV, POR RUTA | Detenido el presunto autor intelectual de un homicidio en Cancún | 🟢 Verde | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-147-009
+  Michoacán · Tancítaro (Los Fresnos) · PUB. 4-NOV, POR RUTA | Dos hermanos asesinados a balazos en una huerta de aguacate | 🔴 Rojo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-147-002
+  Guerrero · Chilpancingo (col. Tierra y Libertad) · 4-NOV, POR RUTA Y TITULAR | Dos hombres hallados asesinados y torturados | 🔴 Rojo | SIN BOLETÍN | Infobae · El Universal | ★★☆☆☆ | ARG-147-003
+  Sinaloa · Culiacán (col. Alturas del Sur) · 4-NOV, POR RUTA | Joven asesinado a balazos | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-147-006
+  Guanajuato · Pénjamo (zona centro) · 4-NOV, POR RUTA | Ataque armado: 1 muerto y 2 heridos | 🟡 Amarillo | SIN BOLETÍN | Milenio · N+ | ★★★☆☆ | ARG-147-005
+  Sinaloa · Culiacán (col. Guadalupe Victoria) · 4-NOV, POR RUTA | Hombre asesinado dentro de una vivienda | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-147-008
+  Sinaloa · Mazatlán (av. Carlos Canseco) · 4-NOV, POR RUTA | Abogada ejecutada mientras conducía | 🟡 Amarillo | SIN BOLETÍN | El Universal | ★★★☆☆ | ARG-147-010
+  Sinaloa · Mazatlán (Mercado Hidalgo) · 4-NOV, POR RUTA | Propietario de una frutería ejecutado | 🟡 Amarillo | SIN BOLETÍN | El Universal | ★★★☆☆ | ARG-147-009
+  Guerrero · Olinalá (San Antonio Coyoacán) · 4-NOV, POR RUTA Y TITULAR | Enfrentamiento entre grupos armados: 2 muertos | 🟡 Amarillo | SIN BOLETÍN | Infobae · El Universal | ★★☆☆☆ | ARG-147-007
+  Yucatán · municipio no publicado · PUB. 4-NOV, POR RUTA | Detenido el presunto autor intelectual de un homicidio en Cancún | 🟢 Verde | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-147-011
+  Sinaloa · Mazatlán (fracc. Coto Premier) · VENTANA ARGOS 146 | Explosivos artesanales contra una vivienda; sin heridos publicados | 🔴 Rojo (en su ventana) | SIN BOLETÍN | N+ · El Universal | ★★★☆☆ | ARG-147-REC-003
   Campeche · Champotón (Mayatecún II) · VENTANA ARGOS 146 | Ataque en un expendio de bebidas: 4 muertos y 2 heridos | 🔴 Rojo (en su ventana) | SIN BOLETÍN | TV Azteca | ★★★☆☆ | ARG-147-REC-001
   Sinaloa · Mazatlán (dos centros de rehabilitación) · VENTANA ARGOS 146 | Ataque a dos centros de rehabilitación: 3 muertos | 🔴 Rojo (en su ventana) | SIN BOLETÍN | El Universal | ★★★☆☆ | ARG-147-REC-002
 
@@ -69,15 +73,16 @@ impacto de la ventana anterior, atenuada, fuera de todos los totales
 NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
 
   Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Muertos por agresión | Heridos | Cuerpos o restos hallados | Armas cortas | Armas largas | Armas sin categoría | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos en aseguramiento | Entidades
-  9 | 5 | 3 | 1 | 2 | 9 | 2 | 0 | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 6
+  11 | 4 | 6 | 1 | 3 | 12 | 2 | 0 | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 6
 
 Armamento: ninguna arma ni detenido integrado al total: ningún aseguramiento con cifra de
-autoridad en la ventana · muertos por agresión: 9, cálculo propio de las fichas · cuerpos o
-restos hallados: 0 · marcas: 8 de 9 PUBLICADO EL DÍA DE APERTURA SIN HORA y 1 FRONTERA DE
-VENTANA — HORA NO FIJADA · totales sujetos a las cláusulas de retiro de 8 fichas (hora no fijada
-frente a las 06:52 del 4): ARG-147-001 a -004 y -006 a -009 · recuperaciones, fuera de totales:
-7 muertos y 3 heridos, por titular (4 heridos más del segundo centro de Mazatlán, solo por
-resumen, fuera del cálculo); efecto sobre ARGOS 146, en el archivo de fuentes. Cálculo propio.
+autoridad en la ventana · muertos por agresión: 12, cálculo propio de las fichas, incluidos 2
+integrantes de grupos armados (Olinalá) · cuerpos o restos hallados: 0 · marcas: 10 de 11
+PUBLICADO EL DÍA DE APERTURA SIN HORA y 1 FRONTERA DE VENTANA — HORA NO FIJADA · totales sujetos
+a las cláusulas de retiro de 10 fichas (hora no fijada frente a las 06:52 del 4): todas salvo
+ARG-147-004 · recuperaciones, fuera de totales: 7 muertos y 3 heridos, por titular (4 heridos
+más del segundo centro de Mazatlán, solo por resumen, fuera del cálculo); efecto sobre ARGOS
+146, en el archivo de fuentes. Cálculo propio.
 Vistos, fuera de totales — de la ventana de ARGOS 146 (🟢 o 🟡, no se recuperan): Tuxtla
 Gutiérrez, Chis. (6 detenidos; ver armamento) · Coatzacoalcos, «El Panda» (detenido el 3-nov;
 prisión preventiva, por titular, Hora Cero 2026/11/04) · Ixtapaluca, «El Patrón», líder de Los
@@ -86,15 +91,16 @@ Linos (3-nov) · Tijuana, coordinador del Movimiento del Sombrero asesinado (noc
 de Chihuahua 2026/nov/02) · Acolman, 2 muertos en una tienda (3-nov, SOLO POR RESUMEN) ·
 Irapuato, Las Heras (3-nov) · Tulum, Francisco Uh May (persecución, 1 muerto, 1 detenido;
 PorEsto 2026/11/3) · Papantla (2-nov) · sin ruta fechada propia o día no fijado — SIN RUTA
-FECHADA — NO SE FICHA: Guerrero, Culiacán y Mazatlán: en los deslindes de ARG-147-004, -007 y
--002 · Querétaro, col. Morelos (1 muerto) · San Luis Potosí, bulevar Río Santiago (persecución)
-· Reynosa, col. Puerta Sur, restos calcinados y fosa hallados por un colectivo (sin fecha;
-ARG-140-008 en el mismo predio, 22-oct) · Valle de Chalco · Jiutepec · cuerpos sin causa
-informada por autoridad: Cortazar, col. Chapingo (1, en bolsas; Noticieros en Línea 2026/nov/04)
-· Nogales, Ver. (1) · Tepic (2 adultos mayores, causa por determinar) · balances, no se reparten
-ni se integran: Guerrero, siete asesinados el 4-nov (Infobae 2026/11/05) · 42 homicidios en el
-país el 4-nov, Guanajuato 7 y Sinaloa 6 (diario.mx 2026/nov/05) · Guanajuato, «al menos ocho»
-(sin fecha).
+FECHADA — NO SE FICHA: Guerrero, Culiacán: en los deslindes de ARG-147-003 y -006 · Mazatlán,
+calle Cima de las Rocas (2 muertos en un automóvil, 1-nov, ventana de ARGOS 146, SOLO POR
+RESUMEN) · Querétaro, col. Morelos (1 muerto) · San Luis Potosí, bulevar Río Santiago
+(persecución) · Reynosa, col. Puerta Sur, restos calcinados y fosa hallados por un colectivo
+(sin fecha; ARG-140-008 en el mismo predio, 22-oct) · Valle de Chalco · Jiutepec · cuerpos sin
+causa informada por autoridad: Cortazar, col. Chapingo (1, en bolsas; Noticieros en Línea
+2026/nov/04) · Nogales, Ver. (1) · Tepic (2 adultos mayores, causa por determinar) · balances,
+no se reparten ni se integran: Guerrero, siete asesinados el 4-nov (Infobae 2026/11/05) · 42
+homicidios en el país el 4-nov, Guanajuato 7 y Sinaloa 6 (diario.mx 2026/nov/05) · Guanajuato,
+«al menos ocho» (sin fecha).
 Seguimiento, fuera del semáforo: ARG-146-006 (Irapuato): «cuatro lesionados», por titular
 (Latinus 2026/11/4), frente a «dos heridos» (Correo; La Silla Rota 2026/11/4): CIFRA DE HERIDOS
 CONTRADICHA · ARG-146-019, -020 y -021: detenciones del 3-nov, por ruta y por el boletín federal
@@ -108,7 +114,7 @@ helicóptero de la Guardia Estatal, por titular (Nación321 y Expreso 2026/11/02
 
 ============================================================================
 
-## CRIMEN ORGANIZADO (I) — ALTO IMPACTO: CUERNAVACA, MAZATLÁN, TANCÍTARO, CHILPANCINGO E INDAPARAPEO
+## CRIMEN ORGANIZADO (I) — ALTO IMPACTO: CUERNAVACA, TANCÍTARO, CHILPANCINGO E INDAPARAPEO
 
 ### MORELOS · CUERNAVACA — ASESINAN A BALAZOS AL REGIDOR GABRIEL RIVAS RÍOS [ROJO]
 
@@ -139,34 +145,6 @@ víctima no figura en las cinco ediciones previas ni en el índice. ARG-144-002 
 Indaparapeo, 28-oct): otro hecho, otra entidad. Acompañante del regidor en el vehículo, solo por
 resumen: lesiones no publicadas.
 
-### SINALOA · MAZATLÁN — ARROJAN EXPLOSIVOS ARTESANALES CONTRA UNA VIVIENDA EN COTO PREMIER [ROJO]
-
-── HECHO
-
-Mazatlán · FRACC. COTO PREMIER, POR TITULAR (NOROESTE) · miércoles 4-NOV, por ruta (Luz Noticias
-2026-11-04; Diario de Yucatán 2026/11/04) · PUBLICADO EL DÍA DE APERTURA SIN HORA · mañana, SOLO
-POR RESUMEN · SI RESULTA ANTERIOR A LAS 06:52 DEL 4, ES DE LA VENTANA DE ARGOS 146 Y SE RETIRA
-DE ESTE TOTAL · artefactos explosivos arrojados contra una vivienda, por titular (Noroeste:
-«arrojan dos explosivos artesanales»; N+: «lanzan dos explosivos artesanales»; Luz Noticias:
-«arrojan artefacto explosivo») (🔴 uso de explosivos) · uno detonó en la cochera y otro fue
-localizado sin estallar, SOLO POR RESUMEN: NÚMERO DE ARTEFACTOS CONTRADICHO · sin heridos, SOLO
-POR RESUMEN · Ejército en el lugar y vecinos evacuados, SOLO POR RESUMEN · composición y
-capacidad de los artefactos: no informadas por autoridad · ningún detenido publicado
-
-── TRAZABILIDAD
-
-ARG-147-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora y número de
-artefactos solo por resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional
-2 · Regional 6 · Abierta 0 · con fecha en la ruta: Luz Noticias (2026-11-04) · Diario de Yucatán
-(2026/11/04) · Los Noticieristas (2026/11) · Hecho: 2026-11-04 · Hora: mañana (solo por resumen)
-· Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Parcialmente corroborado · Conteo de
-armamento: sin fila — artefacto sin estallar localizado, solo por resumen: CANTIDAD NO
-DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO
-Deslindes y reservas: Coto Premier no figura en las cinco ediciones previas ni en el índice.
-Abogada asesinada en la av. Carlos Canseco y dueño de una frutería, reunidos con este hecho por
-Diario de Yucatán: día no fijado (3 o 4-nov), vistos fuera de totales. Centros de rehabilitación
-del 1-nov: ARG-147-REC-002, otro hecho.
-
 ### MICHOACÁN · TANCÍTARO — ASESINAN A BALAZOS A DOS HERMANOS EN UNA HUERTA DE AGUACATE [ROJO]
 
 ── HECHO
@@ -181,7 +159,7 @@ SOLO POR RESUMEN: no es declaración · ningún detenido publicado
 
 ── TRAZABILIDAD
 
-ARG-147-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora y lugar solo por
+ARG-147-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora y lugar solo por
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 6 ·
 Abierta 0 · con fecha en la ruta: Grupo Marmor (2026/11/04) · Media News (2026/11/05) · Hecho:
 2026-11-04 · Hora: ~mediodía (solo por resumen) · Consulta: 2026-11-05, última búsqueda 10:58 ·
@@ -192,31 +170,34 @@ Congresista atribuye un doble homicidio en Tancítaro a una disputa por herencia
 nombres y fecha «4 de octubre», solo por resumen: POSIBLE HECHO DISTINTO — NO SE INTEGRA.
 Identidad de las víctimas: medios, no se reproduce.
 
-### GUERRERO · CHILPANCINGO — DOS HOMBRES ASESINADOS EN LA COLONIA TIERRA Y LIBERTAD [ROJO]
+### GUERRERO · CHILPANCINGO — HALLAN A DOS HOMBRES ASESINADOS Y TORTURADOS EN UN TERRENO BALDÍO [ROJO]
 
 ── HECHO
 
 Chilpancingo · COL. TIERRA Y LIBERTAD, SOLO POR RESUMEN · miércoles 4-NOV, por ruta y titular
 (Informador 20261104: «jornada violenta en Guerrero deja siete muertos»; El Congresista: «en
-distintas localidades este miércoles») · PUBLICADO EL DÍA DE APERTURA SIN HORA · ~08:00, SOLO
-POR RESUMEN · SI RESULTA ANTERIOR A LAS 06:52 DEL 4, ES DE LA VENTANA DE ARGOS 146 Y SE RETIRA
-DE ESTE TOTAL · 2 hombres muertos con impactos de bala y golpes, SOLO POR RESUMEN (🔴 homicidio
-múltiple) · parte de «siete hombres asesinados en varios municipios de Guerrero en menos de ocho
-horas», por titular (Infobae 2026/11/05): el reparto por municipio, solo por resumen · causa de
-muerte no informada por autoridad · ningún detenido publicado
+distintas localidades este miércoles») · PUBLICADO EL DÍA DE APERTURA SIN HORA · hallazgo
+~07:30-07:54, SOLO POR RESUMEN · SI RESULTA ANTERIOR A LAS 06:52 DEL 4, ES DE LA VENTANA DE
+ARGOS 146 Y SE RETIRA DE ESTE TOTAL · 2 hombres hallados asesinados y torturados en un terreno
+baldío, por titular (Bajo Palabra; Milenio: «hallan dos cuerpos en lote baldío de Chilpancingo»;
+Meganoticias: «presuntamente torturados»; rutas sin fecha) (🔴 homicidio múltiple) · parte de
+«siete hombres asesinados en varios municipios de Guerrero en menos de ocho horas», por titular
+(Infobae 2026/11/05): cinco municipios y reparto, solo por resumen · causa de muerte no
+informada por autoridad · ningún detenido publicado
 
 ── TRAZABILIDAD
 
-ARG-147-004 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: municipio, colonia,
-hora y saldo solo por resumen; ninguna fuente institucional · Fuentes: Institucional 0 ·
-Nacional 2 · Regional 2 · Abierta 0 · con fecha en la ruta: Informador (20261104) · Infobae
-(2026/11/05) · Hecho: 2026-11-04 · Hora: ~08:00 (solo por resumen) · Consulta: 2026-11-05,
-última búsqueda 10:58 · Estatus: Pendiente de corroboración · Conteo de armamento: sin fila —
-armamento asegurado: no publicado
+ARG-147-003 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: día y colonia solo por
+resumen; titulares del hallazgo sin fecha en la ruta; ninguna fuente institucional · Fuentes:
+Institucional 0 · Nacional 3 · Regional 3 · Abierta 0 · con fecha en la ruta: Informador
+(20261104) · Infobae (2026/11/05) · Hecho: 2026-11-04 · Hora: hallazgo ~07:30-07:54 (solo por
+resumen) · Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Pendiente de corroboración ·
+Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Tierra y Libertad de Chilpancingo no figura en las cinco ediciones previas
-ni en el índice. Resto de la jornada: Olinalá, ficha propia (ARG-147-008); Tixtla (1),
-Zihuatanejo (1) y Acapulco, Nuevo Puerto Marqués (1): homicidios únicos o cuerpos sin causa,
-solo por resumen, vistos fuera de totales. La jornada no se integra como balance.
+ni en el índice; «Tierra y Libertad», El Diario de Chihuahua 2025/dec/30: otro hecho (2025).
+Resto de la jornada: Olinalá, ficha propia (ARG-147-007); Tixtla (1), Zihuatanejo (1) y
+Acapulco, Nuevo Puerto Marqués (1): homicidios únicos o cuerpos sin causa, solo por resumen,
+vistos fuera de totales. La jornada no se integra como balance.
 
 ### MICHOACÁN · INDAPARAPEO — ENFRENTAMIENTO ENTRE GRUPOS CRIMINALES CON USO DE DRONES [ROJO]
 
@@ -228,11 +209,11 @@ miércoles 4, SOLO POR RESUMEN · enfrentamiento entre grupos criminales con uso
 titular (Grupo Marmor; Respuesta; La Voz de Michoacán: «utilizan drones»); «drones explosivos»,
 por titular (La Redacción) (🔴 uso de drones armados) · capacidad explosiva no confirmada por
 autoridad · grupos señalados, SOLO POR RESUMEN: no se reproducen · se pidió apoyo al Ejército,
-la GN y la Guardia Civil, SOLO POR RESUMEN · sin víctimas publicadas · ningún detenido publicado
+la GN y la Guardia Civil, SOLO POR RESUMEN · saldo no informado · ningún detenido publicado
 
 ── TRAZABILIDAD
 
-ARG-147-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día solo por resumen;
+ARG-147-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día solo por resumen;
 capacidad de los drones no confirmada; republicaciones de una misma nota · Fuentes:
 Institucional 0 · Nacional 0 · Regional 2 · Abierta 0 · con fecha en la ruta: Grupo Marmor
 (2026/11/05) · RED113 (2026/11) · Hecho: 2026-11-04 · Hora: noche (solo por resumen) · Consulta:
@@ -247,53 +228,31 @@ Voz de Michoacán, Indicio e IMN publican la misma nota: una fuente.
 
 ============================================================================
 
-## CRIMEN ORGANIZADO (II) — VIOLENCIA OPERATIVA Y ACCIONES INSTITUCIONALES
+## CRIMEN ORGANIZADO (II) — VIOLENCIA OPERATIVA: PÉNJAMO, OLINALÁ Y CULIACÁN
 
 ### GUANAJUATO · PÉNJAMO — ATAQUE ARMADO EN UN PUESTO DE LA ZONA CENTRO: UN MUERTO Y DOS HERIDOS [AMARILLO]
 
 ── HECHO
 
-Pénjamo · ZONA CENTRO, PUESTO DE GELATINAS, POR TITULAR (AM; N+); JARDÍN ANA MARÍA GALLAGA, SOLO
-POR RESUMEN · miércoles 4-NOV, por ruta (Correo 2026/nov/04) · PUBLICADO EL DÍA DE APERTURA SIN
-HORA · ~19:00, SOLO POR RESUMEN · SI RESULTA ANTERIOR A LAS 06:52 DEL 4, ES DE LA VENTANA DE
-ARGOS 146 Y SE RETIRA DE ESTE TOTAL · 1 muerto y 2 heridos, por titular (Correo; AM 2026/11/05;
-Milenio; N+) (🟡 homicidio doloso único) · heridos, familiares de la víctima, SOLO POR RESUMEN ·
-la Fiscalía investiga, SOLO POR RESUMEN: no es declaración · ningún detenido publicado
+Pénjamo · ZONA CENTRO, POR TITULAR (CORREO); PUESTO DE GELATINAS, POR TITULAR (N+); CALLE
+DEGOLLADO, SOLO POR RESUMEN · miércoles 4-NOV, por ruta (Correo 2026/nov/04) · PUBLICADO EL DÍA
+DE APERTURA SIN HORA · ~19:00, SOLO POR RESUMEN · SI RESULTA ANTERIOR A LAS 06:52 DEL 4, ES DE
+LA VENTANA DE ARGOS 146 Y SE RETIRA DE ESTE TOTAL · 1 muerto y 2 heridos, por titular (Correo;
+AM 2026/11/05; Milenio; N+) (🟡 homicidio doloso único) · heridos, familiares de la víctima, SOLO
+POR RESUMEN · la Fiscalía investiga, SOLO POR RESUMEN: no es declaración · ningún detenido
+publicado
 
 ── TRAZABILIDAD
 
-ARG-147-006 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+ARG-147-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 2 · Regional 4 ·
 Abierta 0 · con fecha en la ruta: Correo (2026/nov/04) · AM (2026/11/05) · Hecho: 2026-11-04 ·
 Hora: ~19:00 (solo por resumen) · Consulta: 2026-11-05, última búsqueda 10:58 · Estatus:
 Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Pénjamo en el índice: ARG-138-013 (zona centro, 19-oct, abuelo y nieto),
 ARG-145-002 (carretera Tepuza de Ortiz–Zapote de Cestau, 30-oct), ARG-141-001, ARG-113-ARM-002 y
-ARG-94-001: otros hechos. Puesto de gelatinas y Jardín Ana María Gallaga: sin coincidencias.
-Identidad de las víctimas: medios, no se reproduce.
-
-### SINALOA · CULIACÁN — ASESINAN A BALAZOS A UN JOVEN EN ALTURAS DEL SUR [AMARILLO]
-
-── HECHO
-
-Culiacán · COL. ALTURAS DEL SUR, POR TITULAR · miércoles 4-NOV, por ruta (Línea Directa
-2026-11-04: «asesinan a balazos a un joven en Alturas del Sur») · PUBLICADO EL DÍA DE APERTURA
-SIN HORA · tarde-noche, SOLO POR RESUMEN · SI RESULTA ANTERIOR A LAS 06:52 DEL 4, ES DE LA
-VENTANA DE ARGOS 146 Y SE RETIRA DE ESTE TOTAL · 1 muerto: hombre de unos 25 años, afuera de un
-domicilio, SOLO POR RESUMEN (🟡 homicidio doloso único) · militares cercanos acudieron, SOLO POR
-RESUMEN · FUENTE ÚNICA · ningún detenido publicado
-
-── TRAZABILIDAD
-
-ARG-147-007 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: fuente única; hora
-solo por resumen · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con fecha en
-la ruta: Línea Directa (2026-11-04) · Hecho: 2026-11-04 · Hora: tarde-noche (solo por resumen) ·
-Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Pendiente de corroboración · Conteo de
-armamento: sin fila — armamento asegurado: no publicado
-Deslindes y reservas: Alturas del Sur: mujer hallada muerta, presunta integrante de la GN (2-nov
-o antes; vista en ARGOS 146; pertenencia no acreditada): otro hecho. Otros homicidios de
-Culiacán del 4-nov (fracc. Los Ángeles, col. Guadalupe Victoria, Infonavit Solidaridad): sin
-ruta fechada propia, vistos.
+ARG-94-001: otros hechos. Puesto de gelatinas y calle Degollado: sin coincidencias. Identidad de
+las víctimas: medios, no se reproduce.
 
 ### GUERRERO · OLINALÁ — ENFRENTAMIENTO ENTRE GRUPOS ARMADOS: DOS MUERTOS [AMARILLO]
 
@@ -309,14 +268,109 @@ determinado) · parte de los siete asesinados del 4-nov en Guerrero, por titular
 
 ── TRAZABILIDAD
 
-ARG-147-008 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: lugar, hora y
+ARG-147-007 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: lugar, hora y
 circunstancia solo por resumen; ninguna fuente institucional · Fuentes: Institucional 0 ·
 Nacional 2 · Regional 2 · Abierta 0 · con fecha en la ruta: Informador (20261104) · Infobae
 (2026/11/05) · Hecho: 2026-11-04 · Hora: ~11:00 (solo por resumen) · Consulta: 2026-11-05,
 última búsqueda 10:58 · Estatus: Pendiente de corroboración · Conteo de armamento: sin fila —
 armas largas de los fallecidos, solo por resumen: no consta aseguramiento
 Deslindes y reservas: Olinalá y San Antonio Coyoacán no figuran en las cinco ediciones previas
-ni en el índice. Chilpancingo: ARG-147-004.
+ni en el índice. Chilpancingo: ARG-147-003.
+
+### SINALOA · CULIACÁN — ASESINAN A BALAZOS A UN JOVEN EN ALTURAS DEL SUR [AMARILLO]
+
+── HECHO
+
+Culiacán · COL. ALTURAS DEL SUR, POR TITULAR · miércoles 4-NOV, por ruta (Línea Directa
+2026-11-04: «asesinan a balazos a un joven en Alturas del Sur») · PUBLICADO EL DÍA DE APERTURA
+SIN HORA · tarde-noche, SOLO POR RESUMEN · SI RESULTA ANTERIOR A LAS 06:52 DEL 4, ES DE LA
+VENTANA DE ARGOS 146 Y SE RETIRA DE ESTE TOTAL · 1 muerto: hombre de unos 25 años, afuera de un
+domicilio, SOLO POR RESUMEN (🟡 homicidio doloso único) · militares cercanos acudieron, SOLO POR
+RESUMEN · FUENTE ÚNICA · ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-147-006 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: fuente única; hora
+solo por resumen · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con fecha en
+la ruta: Línea Directa (2026-11-04) · Hecho: 2026-11-04 · Hora: tarde-noche (solo por resumen) ·
+Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Pendiente de corroboración · Conteo de
+armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Alturas del Sur: mujer hallada muerta, presunta integrante de la GN (2-nov
+o antes; vista en ARGOS 146; pertenencia no acreditada): otro hecho. Col. Guadalupe Victoria:
+ARG-147-008. Fracc. Los Ángeles e Infonavit Solidaridad: sin ruta fechada propia, vistos.
+
+### SINALOA · CULIACÁN — ASESINAN A UN HOMBRE EN UNA VIVIENDA DE LA COLONIA GUADALUPE VICTORIA [AMARILLO]
+
+── HECHO
+
+Culiacán · COL. GUADALUPE VICTORIA, POR TITULAR · miércoles 4-NOV, por ruta (Línea Directa
+2026-11-04: «asesinan a un hombre en una vivienda de la colonia Guadalupe Victoria») · PUBLICADO
+EL DÍA DE APERTURA SIN HORA · ~16:30, SOLO POR RESUMEN · SI RESULTA ANTERIOR A LAS 06:52 DEL 4,
+ES DE LA VENTANA DE ARGOS 146 Y SE RETIRA DE ESTE TOTAL · 1 muerto dentro de una vivienda, por
+titular (🟡 homicidio doloso único) · hombre de unos 50 años, SOLO POR RESUMEN · FUENTE ÚNICA ·
+ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-147-008 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: fuente única; hora
+solo por resumen · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con fecha en
+la ruta: Línea Directa (2026-11-04) · Hecho: 2026-11-04 · Hora: ~16:30 (solo por resumen) ·
+Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Pendiente de corroboración · Conteo de
+armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Col. Guadalupe Victoria (Las Tres Cruces) no figura en las cinco ediciones
+previas ni en el índice. Alturas del Sur: ARG-147-006, otro hecho.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-11-05 · Hora: 09:42 (CDMX) · Corte: Matutino · ARGOS N.° 147 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (III) — VIOLENCIA OPERATIVA EN MAZATLÁN Y ACCIONES INSTITUCIONALES
+
+### SINALOA · MAZATLÁN — EJECUTAN AL PROPIETARIO DE UNA FRUTERÍA EN EL MERCADO HIDALGO [AMARILLO]
+
+── HECHO
+
+Mazatlán · MERCADO HIDALGO, POR TITULAR · miércoles 4-NOV, por ruta (Luz Noticias 2026-11-04:
+«sicarios llegan al mercado Hidalgo y ejecutan a propietario de una frutería») · PUBLICADO EL
+DÍA DE APERTURA SIN HORA · ~11:20, SOLO POR RESUMEN · SI RESULTA ANTERIOR A LAS 06:52 DEL 4, ES
+DE LA VENTANA DE ARGOS 146 Y SE RETIRA DE ESTE TOTAL · 1 muerto: propietario de una frutería,
+por titular (🟡 homicidio doloso único) · dos agresores en motocicleta, SOLO POR RESUMEN ·
+«asesinan a dos personas en distintos hechos», por titular (El Universal, sin fecha en la ruta)
+· ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-147-009 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 1 · Regional 2 ·
+Abierta 0 · con fecha en la ruta: Luz Noticias (2026-11-04) · Hecho: 2026-11-04 · Hora: ~11:20
+(solo por resumen) · Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Parcialmente
+corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Mercado Hidalgo de Mazatlán no figura en las cinco ediciones previas ni en
+el índice. Abogada de la av. Carlos Canseco: ARG-147-010, otro hecho.
+
+### SINALOA · MAZATLÁN — EJECUTAN A UNA ABOGADA EN LA AVENIDA CARLOS CANSECO [AMARILLO]
+
+── HECHO
+
+Mazatlán · AV. CARLOS CANSECO, POR TITULAR · miércoles 4-NOV, por ruta (Luz Noticias 2026-11-04:
+«ejecutan a abogada por la avenida Carlos Canseco al norte de Mazatlán») · PUBLICADO EL DÍA DE
+APERTURA SIN HORA · hora no publicada · SI RESULTA ANTERIOR A LAS 06:52 DEL 4, ES DE LA VENTANA
+DE ARGOS 146 Y SE RETIRA DE ESTE TOTAL · 1 muerta: abogada, por titular (🟡 homicidio doloso
+único; la profesión no es agravante de la lista roja) · baleada mientras conducía, SOLO POR
+RESUMEN · «Fiscalía General del Estado investiga asesinato», por titular (Sinaloahoy, sin fecha
+en la ruta): no es declaración · ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-147-010 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora no fijada;
+ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 1 · Regional 2 · Abierta 0 ·
+con fecha en la ruta: Luz Noticias (2026-11-04) · Hecho: 2026-11-04 · Hora: no fijada ·
+Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Parcialmente corroborado · Conteo de
+armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Av. Carlos Canseco no figura en las cinco ediciones previas ni en el
+índice. El Universal fecha su nota el 3-nov solo por resumen: la ruta de Luz Noticias fija la
+publicación el 4. Identidad de la víctima: medios, no se reproduce.
 
 ### YUCATÁN — DETIENEN AL PRESUNTO AUTOR INTELECTUAL DE UN HOMICIDIO EN LA AVENIDA HUAYACÁN DE CANCÚN [VERDE]
 
@@ -332,28 +386,28 @@ detenido, SOLO POR RESUMEN · FUENTE ÚNICA
 
 ── TRAZABILIDAD
 
-ARG-147-009 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: fuente única; día de
+ARG-147-011 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: fuente única; día de
 la detención no fijado; detenido solo por resumen · Fuentes: Institucional 0 · Nacional 0 ·
 Regional 1 · Abierta 0 · con fecha en la ruta: Noticaribe (2026/11/04) · Hecho: 2026-11-04 ·
 Hora: no fijada · Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Pendiente de
 corroboración · Conteo de armamento: sin fila — aseguramiento no publicado
 Deslindes y reservas: Avenida Huayacán no figura en las cinco ediciones previas ni en el índice.
-Fecha y ventana del homicidio original: no fijadas; no se recalifica. «Garabato» (ARG-146-021,
-Cancún, 3 detenidos): otro detenido; vínculo no acreditado.
+Homicidio original: 22-jul-2026, solo por resumen: evento anterior, no se recalifica. «Garabato»
+(ARG-146-021, Cancún, 3 detenidos): otro detenido; vínculo no acreditado.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-11-05 · Hora: 09:42 (CDMX) · Corte: Matutino · ARGOS N.° 147 · USO INSTITUCIONAL
 
 ============================================================================
 
-## CRIMEN ORGANIZADO (III) — ALTO IMPACTO DE LA VENTANA DE ARGOS 146: CHAMPOTÓN Y MAZATLÁN
+## CRIMEN ORGANIZADO (IV) — ALTO IMPACTO DE LA VENTANA DE ARGOS 146: CHAMPOTÓN Y MAZATLÁN
 
 ### CAMPECHE · CHAMPOTÓN — ATAQUE ARMADO EN UN EXPENDIO DE BEBIDAS EN MAYATECÚN II: CUATRO MUERTOS Y DOS HERIDOS [RECUPERACIÓN]
 
 ── HECHO
 
-VENTANA DE ORIGEN: ARGOS 146 · Champotón · MAYATECÚN II, ESTABLECIMIENTO DE BEBIDAS, POR TITULAR
-(PORESTO); LUGAR EXACTO, SOLO POR RESUMEN · publicado el lunes 2-NOV, por ruta (La Prensa de
+VENTANA DE ORIGEN: ARGOS 146 · Champotón · MAYATECÚN II, POR TITULAR (TV AZTECA);
+ESTABLECIMIENTO DE BEBIDAS, SOLO POR RESUMEN · publicado el lunes 2-NOV, por ruta (La Prensa de
 Coahuila 2026/11/02) · domingo 1-NOV, DÍA SOLO POR RESUMEN · 4 muertos y 2 heridos, por titular
 (La Prensa de Coahuila; TV Azteca; Omnia; Tribuna Campeche) (🔴 homicidio múltiple) · «tras
 altercado», por titular · cinco muertos según un medio, SOLO POR RESUMEN: superado por los
@@ -377,24 +431,53 @@ de autoridad y día fijado.
 
 VENTANA DE ORIGEN: ARGOS 146 · Mazatlán · COLS. FELIPE ÁNGELES Y FLORES MAGÓN, SOLO POR RESUMEN
 · publicado el lunes 2-NOV, por ruta (Herqles 2026/11/02: «ataques a centros de rehabilitación
-en Mazatlán: tres muertos») · domingo 1-NOV, ~12:30, DÍA SOLO POR RESUMEN · 3 muertos en dos
-centros, por titular (Herqles; Guardia Nocturna 2026/11: «atacan dos centros contra adicciones…
-tres internos muertos») (🔴 homicidio múltiple) · primer centro: «dos internos muertos y un
-herido», por titular (Noroeste) · segundo centro: 1 muerto y 4 heridos, SOLO POR RESUMEN ·
-ningún detenido publicado
+en Mazatlán: tres muertos») · domingo 1-NOV, DÍA SOLO POR RESUMEN; hora no fijada · 3 muertos en
+dos centros, por titular (Herqles; Guardia Nocturna 2026/11: «atacan dos centros contra
+adicciones… tres internos muertos») (🔴 homicidio múltiple) · primer centro: «dos internos
+muertos y un herido», por titular (Noroeste) · segundo centro: 1 muerto y 4 heridos, SOLO POR
+RESUMEN · ningún detenido publicado
 
 ── TRAZABILIDAD
 
-ARG-147-REC-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día y hora solo
-por resumen; heridos del segundo centro solo por resumen; ninguna fuente institucional ·
-Fuentes: Institucional 0 · Nacional 1 · Regional 4 · Abierta 0 · con fecha en la ruta: Herqles
-(2026/11/02) · Guardia Nocturna (2026/11) · Hecho: 2026-11-01 · Hora: ~12:30 (solo por resumen)
-· Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Parcialmente corroborado · Ventana de
+ARG-147-REC-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día solo por
+resumen; hora no fijada; heridos del segundo centro solo por resumen; ninguna fuente
+institucional · Fuentes: Institucional 0 · Nacional 1 · Regional 4 · Abierta 0 · con fecha en la
+ruta: Herqles (2026/11/02) · Guardia Nocturna (2026/11) · Hecho: 2026-11-01 · Hora: no fijada ·
+Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Parcialmente corroborado · Ventana de
 origen: ARGOS 146 — fuera de todos los totales
 Deslindes y reservas: Visto en el archivo de equipos de ARGOS 146 («centro de rehabilitación, 1
 muerto, 4 heridos», sin fecha), no publicado en su cartelón: era el segundo centro. Heridos del
-segundo centro, solo por resumen: fuera del total. ARG-147-002 (Coto Premier) y ARG-145-REC-002
-(Los Ranchos): otros hechos.
+segundo centro, solo por resumen: fuera del total. Otro ataque del mismo día (calle Cima de las
+Rocas, 2 muertos en un automóvil), solo por resumen: visto. ARG-147-REC-003 (Coto Premier) y
+ARG-145-REC-002 (Los Ranchos): otros hechos.
+
+### SINALOA · MAZATLÁN — ARROJAN EXPLOSIVOS ARTESANALES CONTRA UNA VIVIENDA EN COTO PREMIER [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 146 · Mazatlán · FRACC. COTO PREMIER, POR TITULAR (NOROESTE) ·
+miércoles 4-NOV, por ruta (Luz Noticias 2026-11-04; Diario de Yucatán 2026/11/04) · ~06:34 del
+miércoles 4, SOLO POR RESUMEN (Noroeste): anterior a la apertura de esta ventana · artefactos
+explosivos arrojados contra una vivienda, por titular (Noroeste: «arrojan dos explosivos
+artesanales»; N+, por slug: «lanzan-dos-explosivos-artesanales»; Luz Noticias: «arrojan
+artefacto explosivo») (🔴 uso de explosivos) · «detonan artefacto en cochera y localizan otro
+junto a la vivienda», por titular (Los Noticieristas): NÚMERO DE ARTEFACTOS CONTRADICHO (uno,
+por titular de Luz Noticias; dos, por titular de Noroeste) · sin heridos, SOLO POR RESUMEN ·
+Ejército en el lugar y vecinos evacuados, SOLO POR RESUMEN · composición y capacidad de los
+artefactos: no informadas por autoridad · ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-147-REC-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; número de artefactos contradicho; ninguna fuente institucional · Fuentes: Institucional
+0 · Nacional 2 · Regional 6 · Abierta 0 · con fecha en la ruta: Luz Noticias (2026-11-04) ·
+Diario de Yucatán (2026/11/04) · Los Noticieristas (2026/11) · Hecho: 2026-11-04 · Hora: ~06:34
+(solo por resumen) · Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Parcialmente
+corroborado · Ventana de origen: ARGOS 146 — fuera de todos los totales
+Deslindes y reservas: Coto Premier no figura en las cinco ediciones previas ni en el índice.
+Abogada (av. Carlos Canseco) y frutería del Mercado Hidalgo, reunidos con este hecho por Diario
+de Yucatán: ARG-147-010 y -009. Centros de rehabilitación del 1-nov: ARG-147-REC-002, otro
+hecho. Artefacto sin estallar: CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-11-05 · Hora: 09:42 (CDMX) · Corte: Matutino · ARGOS N.° 147 · USO INSTITUCIONAL
@@ -417,11 +500,11 @@ Total nacional del corte: en la página de panorama.
 
   · Granadas: n/d — SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE
 
-  · AEI: n/d — Mazatlán: artefacto sin estallar, solo por resumen; cantidad no determinada (ARG-147-002)
+  · AEI: n/d — SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE
 
   · Explosivos: n/d — SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE
 
-  · Armamento especial: n/d — Indaparapeo: drones, por titular; no asegurados (ARG-147-005)
+  · Armamento especial: n/d — Indaparapeo: drones, por titular; no asegurados (ARG-147-004)
 
   · Detenidos: n/d — en el mismo evento de aseguramiento: ningún aseguramiento con cifra de autoridad en la ventana
 
@@ -436,8 +519,8 @@ Total nacional del corte: en la página de panorama.
   SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE — ningún aseguramiento con cifra publicada y día fijado entre el 4-nov 06:52 y el 5-nov 09:42
 
 Lectura regional: ninguna región con arma ni detenido integrado al total. Cálculo propio.
-Eventos cualitativos sin cantidad: ninguno con fila; artefacto sin estallar de Mazatlán y drones
-de Indaparapeo, en sus fichas.
+Eventos cualitativos sin cantidad: ninguno con fila; drones de Indaparapeo, en su ficha;
+artefacto sin estallar de Coto Premier, ventana de ARGOS 146 (ARG-147-REC-003).
 VISTOS, NO INTEGRADOS: boletín federal de acciones del 3-nov (ventana de ARGOS 146; gob.mx/sspc,
 por índice, y republicadores): Cocula, Gro. (2 largas, 1 corta, 12 cargadores, 335 cartuchos y 3
 detenidos, SOLO POR RESUMEN; es ARG-146-019 / ARG-146-ARM-003) · Tuxtla Gutiérrez, Chis.: 6
@@ -471,8 +554,8 @@ VENTANA.
 ## CANDIDATOS
 
   Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
-  Oaxaca · San Antonio de la Cal | Secuestro agravado (2011); 2 sentenciados, por titular · nuevo en ARGOS 147 | 157 años en conjunto, por titular (Primera Línea 2026/11/04); 87 años 6 meses y 70 años, SOLO POR RESUMEN · suma, cálculo del emisor | FGE Oaxaca (boletín 2,948, solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL · boletín no leído; solo republicadores del mismo comunicado; firmeza no informada; fecha de la sentencia no fijada | Bajo
-  Nuevo León · Los Ramones | Portación de arma; procedimiento abreviado; 1 sentenciado, por titular · nuevo en ARGOS 147 | «más de cinco años», por titular (MVS 2026/11/4); 5 años 5 meses, SOLO POR RESUMEN | FGE Nuevo León (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · fuente única; sin boletín del dominio | No confirmado
+  Oaxaca · San Antonio de la Cal | Secuestro agravado (2011); 2 sentenciados, por titular · nuevo en ARGOS 147 | 157 años, por titular (Primera Línea 2026/11/04); 87 años 6 meses y 70 años, SOLO POR RESUMEN: su suma da 157 años 6 meses, CIFRA CONTRADICHA | FGE Oaxaca (boletín 2,948, solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL · boletín no leído; solo republicadores del mismo comunicado; firmeza no informada; fecha de la sentencia no fijada | Bajo
+  Nuevo León · Los Ramones | Portación de arma de uso exclusivo y posesión de drogas, SOLO POR RESUMEN; procedimiento abreviado; 1 sentenciado, por titular · nuevo en ARGOS 147 | «más de cinco años», por titular (MVS 2026/11/4); 5 años 5 meses 19 días, SOLO POR RESUMEN | FGR (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · fuente única; sin boletín del dominio | No confirmado
   Tabasco | Portación de arma de fuego sin licencia; 1 sentenciado, SOLO POR RESUMEN · nuevo en ARGOS 147 | No publicada | FGR (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · sin URL, pena ni campos individualizadores | No confirmado
   Jalisco · Tlajomulco · Tlaquepaque | Dos feminicidios; 2 sentenciados · candidato anterior | 55 y 40 años, por titular de medios (Informador 20261029) | Fiscalía de Jalisco (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · publicado el 29-oct, fuera de esta ventana; boletín del dominio no localizado | Bajo
   Puebla · Huejotzingo | Feminicidio y aborto · candidato de ARGOS 144 | 55 años, por titular de medios | FGE Puebla (por medios) | POSIBLE CASO HOMÓNIMO — NO INTEGRAR HASTA VALIDACIÓN · el boletín de 55 años del dominio es de otro caso (secuestro, 2025) | No confirmado
@@ -506,35 +589,36 @@ RESUMEN) · FGE Tabasco (24-oct) · FGE Colima (15-oct) · FGE Quintana Roo (18-
 
 ── VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL
 
-1. Cinco rojos propios en cuatro entidades (cálculo propio), por víctima autoridad, explosivos,
-drones y homicidio múltiple. Alza del riesgo nacional frente a ARGOS 146: 0,19 rojos por hora (5
-en 26 h 50 min), frente a 0,14 publicado en ARGOS 146 (cálculo propio).
-2. Michoacán concentra dos de los cinco rojos (ARG-147-003 y -005) y Guerrero, un rojo y un
-amarillo en la misma jornada (ARG-147-004 y -008).
-3. Violencia operativa: tres amarillos en tres entidades (cálculo propio).
+1. Cuatro rojos propios en tres entidades (cálculo propio), por víctima autoridad, drones y
+homicidio múltiple. Riesgo nacional sostenido frente a ARGOS 146: 0,15 rojos por hora (4 en 26 h
+50 min), frente a 0,14 publicado en ARGOS 146 (cálculo propio).
+2. Michoacán concentra dos de los cuatro rojos (ARG-147-002 y -004); Guerrero, un rojo y un
+amarillo en la misma jornada (ARG-147-003 y -007).
+3. Violencia operativa: seis amarillos en tres entidades; cuatro en Sinaloa, en Culiacán y
+Mazatlán (cálculo propio).
 4. Respuesta institucional: un verde, de fuente única, sin cifra de armamento ni de detenidos
 citable; ninguna sentencia integrable; ningún boletín federal de acciones del 4-nov indexado
 (cálculo propio).
-5. VENTANA DE 26 H 50 MIN: OCHO DE NUEVE HECHOS PUBLICADOS EL DÍA DE APERTURA SIN HORA, CON
-CLÁUSULA DE RETIRO, Y UNO EN FRONTERA DE VENTANA; DOS ROJOS RECUPERADOS DE ARGOS 146, CON 7
+5. VENTANA DE 26 H 50 MIN: DIEZ DE ONCE HECHOS PUBLICADOS EL DÍA DE APERTURA SIN HORA, CON
+CLÁUSULA DE RETIRO, Y UNO EN FRONTERA DE VENTANA; TRES ROJOS RECUPERADOS DE ARGOS 146, CON 7
 MUERTOS, FUERA DE TOTALES. CÁLCULO PROPIO.
 
 ── CONCLUSIONES DE INTELIGENCIA CRIMINAL
 
 1. MICHOACÁN: EMPLEO DE DRONES ENTRE GRUPOS CRIMINALES EN EL ORIENTE DEL ESTADO Y VIOLENCIA
-LETAL EN LA FRANJA AGUACATERA, EN LA MISMA JORNADA (ARG-147-005 y -003); vínculo no acreditado.
+LETAL EN LA FRANJA AGUACATERA, EN LA MISMA JORNADA (ARG-147-004 y -002); vínculo no acreditado.
 Línea: solicitar a la Defensa y a la Guardia Civil el registro de drones del 4-nov en
-Indaparapeo y cruzarlo con los hechos de ARG-140-016 y ARG-144-002 en el mismo municipio.
+Indaparapeo y cruzarlo con ARG-140-016 y ARG-144-002, en el mismo municipio.
 2. VÍCTIMA SERVIDOR PÚBLICO CON DENUNCIA PREVIA DE AMENAZAS, POR TITULAR (ARG-147-001): perfil
 de víctima de riesgo. Línea: solicitar a la Fiscalía de Morelos el estado de esas denuncias y
 verificar medidas de protección de los demás integrantes del cabildo.
-3. EXPLOSIVO ARTESANAL CON UN ARTEFACTO SIN ESTALLAR RECUPERABLE, SOLO POR RESUMEN
-(ARG-147-002): primera muestra física de la serie en Mazatlán. Línea: solicitar a la FGE de
-Sinaloa el dictamen (carga, iniciador, fabricación local) y cotejarlo con futuros hallazgos de
-AEI en Sinaloa.
-4. GUERRERO: EJE CHILPANCINGO–TIXTLA–OLINALÁ CON GRUPOS ARMADOS CON CHALECO Y ARMA LARGA, SOLO
-POR RESUMEN (ARG-147-004 y -008; «cinco municipios», por titular de El Universal). Línea:
-vigilar el corredor Centro–Montaña de Guerrero.
+3. SINALOA: ARTEFACTO EXPLOSIVO ARTESANAL SIN ESTALLAR RECUPERABLE, POR TITULAR, Y CUATRO
+HOMICIDIOS DOLOSOS ÚNICOS EN CULIACÁN Y MAZATLÁN EL MISMO DÍA (ARG-147-REC-003, -006 y -008 a
+-010); vínculo no acreditado. Línea: solicitar a la FGE de Sinaloa el dictamen del artefacto
+(carga, iniciador, fabricación local) y vigilar el Mercado Hidalgo y Coto Premier.
+4. GUERRERO: EJE CENTRO–MONTAÑA CON HALLAZGO DE VÍCTIMAS TORTURADAS Y GRUPOS ARMADOS CON CHALECO
+Y ARMA LARGA (ARG-147-003 y -007; «varios municipios», por titular; cinco, solo por resumen).
+Línea: vigilar el corredor Chilpancingo–Tixtla–Olinalá.
 5. BLANCOS CON CONCURRENCIA DE PERSONAS: UN EXPENDIO DE BEBIDAS Y DOS CENTROS DE REHABILITACIÓN
 EL MISMO DOMINGO, 7 MUERTOS (cálculo propio; ARG-147-REC-001 y -002); vínculo no acreditado.
 Línea: vigilar centros de rehabilitación de Mazatlán y solicitar la situación jurídica de los

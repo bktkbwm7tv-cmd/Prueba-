@@ -34,16 +34,7 @@ E = [
   campo="hora solo por resumen; declaración de la Fiscalía solo a través del titular de un medio", I=1, N=8, R=4, A=0,
   fechadas=["La Razón (2026/11/04)", "La Jornada (2026/11/04)", "Infobae (2026/11/04)", "Proceso (2026/11/4)", "Informador (20261104)", "Central Municipal (2026/11/04)", "Código Qro (2026/11/04)", "Quinto Poder (2026/11/04)"], estatus="Parcialmente corroborado", arm=None,
   desl="Acapantzingo en ARGOS 145 (vistos de la ventana de 144): otro hecho. La víctima no figura en las cinco ediciones previas ni en el índice. ARG-144-002 (regidor de Indaparapeo, 28-oct): otro hecho, otra entidad. Acompañante del regidor en el vehículo, solo por resumen: lesiones no publicadas."),
- dict(id="ARG-147-002", estado="MX-SIN", region="Noroeste", color="rojo", impacto="mediano", fecha="2026-11-04", hora="mañana (solo por resumen)", mu=0, he=0, cu=0, hk=9,
-  ent="Sinaloa", mun="Mazatlán (fracc. Coto Premier)", dia="4-NOV, POR RUTA",
-  title="SINALOA · MAZATLÁN — ARROJAN EXPLOSIVOS ARTESANALES CONTRA UNA VIVIENDA EN COTO PREMIER",
-  hecho="Mazatlán · <code>FRACC. COTO PREMIER, POR TITULAR (NOROESTE)</code> · miércoles 4-NOV, por ruta (Luz Noticias 2026-11-04; Diario de Yucatán 2026/11/04) · " + AP + " · mañana, " + RES + " · " + RET + " · <b>artefactos explosivos arrojados contra una vivienda</b>, por titular (Noroeste: «arrojan dos explosivos artesanales»; N+: «lanzan dos explosivos artesanales»; Luz Noticias: «arrojan artefacto explosivo») (🔴 uso de explosivos) · uno detonó en la cochera y otro fue localizado sin estallar, " + RES + ": <code>NÚMERO DE ARTEFACTOS CONTRADICHO</code> · sin heridos, " + RES + " · Ejército en el lugar y vecinos evacuados, " + RES + " · composición y capacidad de los artefactos: no informadas por autoridad · " + NOD,
-  panel="<b>Explosivos artesanales contra una vivienda</b>; sin heridos publicados", inst=SB, nac="N+ · El Universal", conf="★★★☆☆",
-  campo="hora y número de artefactos solo por resumen; ninguna fuente institucional", I=0, N=2, R=6, A=0,
-  fechadas=["Luz Noticias (2026-11-04)", "Diario de Yucatán (2026/11/04)", "Los Noticieristas (2026/11)"], estatus="Parcialmente corroborado", arm=None,
-  armtxt="sin fila — artefacto sin estallar localizado, solo por resumen: <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code>",
-  desl="Coto Premier no figura en las cinco ediciones previas ni en el índice. Abogada asesinada en la av. Carlos Canseco y dueño de una frutería, reunidos con este hecho por Diario de Yucatán: día no fijado (3 o 4-nov), vistos fuera de totales. Centros de rehabilitación del 1-nov: ARG-147-REC-002, otro hecho."),
- dict(id="ARG-147-003", estado="MX-MIC", region="Occidente", color="rojo", impacto="grande", fecha="2026-11-04", hora="~mediodía (solo por resumen)", mu=2, he=0, cu=0, hk=12,
+ dict(id="ARG-147-002", estado="MX-MIC", region="Occidente", color="rojo", impacto="grande", fecha="2026-11-04", hora="~mediodía (solo por resumen)", mu=2, he=0, cu=0, hk=12,
   ent="Michoacán", mun="Tancítaro (Los Fresnos)", dia="PUB. 4-NOV, POR RUTA",
   title="MICHOACÁN · TANCÍTARO — ASESINAN A BALAZOS A DOS HERMANOS EN UNA HUERTA DE AGUACATE",
   hecho="Tancítaro · <code>LOS FRESNOS, HUERTA DE AGUACATE, SOLO POR RESUMEN</code> · publicado el miércoles 4-NOV, por ruta (Grupo Marmor 2026/11/04; Media News 2026/11/05) · " + AP + " · ~mediodía, " + RES + " · " + RET + " · <b>2 hombres muertos, hermanos</b>, por titular (Grupo Marmor; Respuesta; La Voz de Michoacán: «asesinan a balazos a dos hermanos en huerta de aguacate») (🔴 homicidio múltiple) · productores de aguacate, " + RES + " · la FGE realizó diligencias, " + RES + ": no es declaración · " + NOD,
@@ -51,40 +42,40 @@ E = [
   campo="hora y lugar solo por resumen; ninguna fuente institucional", I=0, N=0, R=6, A=0,
   fechadas=["Grupo Marmor (2026/11/04)", "Media News (2026/11/05)"], estatus="Parcialmente corroborado", arm=None,
   desl="Tancítaro no figura en las cinco ediciones previas ni en el índice. El Congresista atribuye un doble homicidio en Tancítaro a una disputa por herencia, con otros nombres y fecha «4 de octubre», solo por resumen: <code>POSIBLE HECHO DISTINTO — NO SE INTEGRA</code>. Identidad de las víctimas: medios, no se reproduce."),
- dict(id="ARG-147-004", estado="MX-GRO", region="Sureste", color="rojo", impacto="mediano", fecha="2026-11-04", hora="~08:00 (solo por resumen)", mu=2, he=0, cu=0, hk=8,
+ dict(id="ARG-147-003", estado="MX-GRO", region="Sureste", color="rojo", impacto="mediano", fecha="2026-11-04", hora="hallazgo ~07:30-07:54 (solo por resumen)", mu=2, he=0, cu=0, hk=8,
   ent="Guerrero", mun="Chilpancingo (col. Tierra y Libertad)", dia="4-NOV, POR RUTA Y TITULAR",
-  title="GUERRERO · CHILPANCINGO — DOS HOMBRES ASESINADOS EN LA COLONIA TIERRA Y LIBERTAD",
-  hecho="Chilpancingo · <code>COL. TIERRA Y LIBERTAD, SOLO POR RESUMEN</code> · miércoles 4-NOV, por ruta y titular (Informador 20261104: «jornada violenta en Guerrero deja siete muertos»; El Congresista: «en distintas localidades este miércoles») · " + AP + " · ~08:00, " + RES + " · " + RET + " · <b>2 hombres muertos</b> con impactos de bala y golpes, " + RES + " (🔴 homicidio múltiple) · parte de «siete hombres asesinados en varios municipios de Guerrero en menos de ocho horas», por titular (Infobae 2026/11/05): <b>el reparto por municipio, solo por resumen</b> · causa de muerte no informada por autoridad · " + NOD,
-  panel="<b>Dos hombres asesinados</b> (balazos y golpes)", inst=SB, nac="Infobae · El Universal", conf="★★☆☆☆",
-  campo="municipio, colonia, hora y saldo solo por resumen; ninguna fuente institucional", I=0, N=2, R=2, A=0,
+  title="GUERRERO · CHILPANCINGO — HALLAN A DOS HOMBRES ASESINADOS Y TORTURADOS EN UN TERRENO BALDÍO",
+  hecho="Chilpancingo · <code>COL. TIERRA Y LIBERTAD, SOLO POR RESUMEN</code> · miércoles 4-NOV, por ruta y titular (Informador 20261104: «jornada violenta en Guerrero deja siete muertos»; El Congresista: «en distintas localidades este miércoles») · " + AP + " · hallazgo ~07:30-07:54, " + RES + " · " + RET + " · <b>2 hombres hallados asesinados y torturados</b> en un terreno baldío, por titular (Bajo Palabra; Milenio: «hallan dos cuerpos en lote baldío de Chilpancingo»; Meganoticias: «presuntamente torturados»; rutas sin fecha) (🔴 homicidio múltiple) · parte de «siete hombres asesinados en varios municipios de Guerrero en menos de ocho horas», por titular (Infobae 2026/11/05): <b>cinco municipios y reparto, solo por resumen</b> · causa de muerte no informada por autoridad · " + NOD,
+  panel="<b>Dos hombres hallados asesinados y torturados</b>", inst=SB, nac="Infobae · El Universal", conf="★★☆☆☆",
+  campo="día y colonia solo por resumen; titulares del hallazgo sin fecha en la ruta; ninguna fuente institucional", I=0, N=3, R=3, A=0,
   fechadas=["Informador (20261104)", "Infobae (2026/11/05)"], estatus="Pendiente de corroboración", arm=None,
-  desl="Tierra y Libertad de Chilpancingo no figura en las cinco ediciones previas ni en el índice. Resto de la jornada: Olinalá, ficha propia (ARG-147-008); Tixtla (1), Zihuatanejo (1) y Acapulco, Nuevo Puerto Marqués (1): homicidios únicos o cuerpos sin causa, solo por resumen, vistos fuera de totales. La jornada no se integra como balance."),
- dict(id="ARG-147-005", estado="MX-MIC", region="Occidente", color="rojo", impacto="mediano", fecha="2026-11-04", hora="noche (solo por resumen)", mu=0, he=0, cu=0, hk=21,
+  desl="Tierra y Libertad de Chilpancingo no figura en las cinco ediciones previas ni en el índice; «Tierra y Libertad», El Diario de Chihuahua 2025/dec/30: otro hecho (2025). Resto de la jornada: Olinalá, ficha propia (ARG-147-007); Tixtla (1), Zihuatanejo (1) y Acapulco, Nuevo Puerto Marqués (1): homicidios únicos o cuerpos sin causa, solo por resumen, vistos fuera de totales. La jornada no se integra como balance."),
+ dict(id="ARG-147-004", estado="MX-MIC", region="Occidente", color="rojo", impacto="mediano", fecha="2026-11-04", hora="noche (solo por resumen)", mu=0, he=0, cu=0, hk=21,
   ent="Michoacán", mun="Indaparapeo (Colonia de Guadalupe y San Lucas Pío)", dia="PUB. 5-NOV, POR RUTA",
   title="MICHOACÁN · INDAPARAPEO — ENFRENTAMIENTO ENTRE GRUPOS CRIMINALES CON USO DE DRONES",
-  hecho="Indaparapeo · <code>COLONIA DE GUADALUPE Y SAN LUCAS PÍO, SOLO POR RESUMEN</code> · publicado el jueves 5-NOV, por ruta (Grupo Marmor 2026/11/05) · " + FR + " · noche del miércoles 4, " + RES + " · <b>enfrentamiento entre grupos criminales con uso de drones</b>, por titular (Grupo Marmor; Respuesta; La Voz de Michoacán: «utilizan drones»); «drones explosivos», por titular (La Redacción) (🔴 uso de drones armados) · capacidad explosiva no confirmada por autoridad · grupos señalados, " + RES + ": no se reproducen · se pidió apoyo al Ejército, la GN y la Guardia Civil, " + RES + " · sin víctimas publicadas · " + NOD,
-  panel="<b>Enfrentamiento entre grupos con drones</b>; sin víctimas publicadas", inst=SB, nac=NIN, conf="★★★☆☆",
+  hecho="Indaparapeo · <code>COLONIA DE GUADALUPE Y SAN LUCAS PÍO, SOLO POR RESUMEN</code> · publicado el jueves 5-NOV, por ruta (Grupo Marmor 2026/11/05) · " + FR + " · noche del miércoles 4, " + RES + " · <b>enfrentamiento entre grupos criminales con uso de drones</b>, por titular (Grupo Marmor; Respuesta; La Voz de Michoacán: «utilizan drones»); «drones explosivos», por titular (La Redacción) (🔴 uso de drones armados) · capacidad explosiva no confirmada por autoridad · grupos señalados, " + RES + ": no se reproducen · se pidió apoyo al Ejército, la GN y la Guardia Civil, " + RES + " · saldo no informado · " + NOD,
+  panel="<b>Enfrentamiento entre grupos con drones</b>; saldo no informado", inst=SB, nac=NIN, conf="★★★☆☆",
   campo="día solo por resumen; capacidad de los drones no confirmada; republicaciones de una misma nota", I=0, N=0, R=2, A=0,
   fechadas=["Grupo Marmor (2026/11/05)", "RED113 (2026/11)"], estatus="Parcialmente corroborado", arm=None,
   desl="Indaparapeo en el índice: ARG-140-016 (base de operaciones, 23-oct) y ARG-144-002 (El Triunfo, regidor, 28-oct): otros hechos, otro lugar. Grupo Marmor, Respuesta, La Voz de Michoacán, Indicio e IMN publican la misma nota: una fuente."),
  # ======================= AMARILLOS
- dict(id="ARG-147-006", estado="MX-GUA", region="Occidente", color="amarillo", impacto="mediano", fecha="2026-11-04", hora="~19:00 (solo por resumen)", mu=1, he=2, cu=0, hk=19,
+ dict(id="ARG-147-005", estado="MX-GUA", region="Occidente", color="amarillo", impacto="mediano", fecha="2026-11-04", hora="~19:00 (solo por resumen)", mu=1, he=2, cu=0, hk=19,
   ent="Guanajuato", mun="Pénjamo (zona centro)", dia="4-NOV, POR RUTA",
   title="GUANAJUATO · PÉNJAMO — ATAQUE ARMADO EN UN PUESTO DE LA ZONA CENTRO: UN MUERTO Y DOS HERIDOS",
-  hecho="Pénjamo · <code>ZONA CENTRO, PUESTO DE GELATINAS, POR TITULAR (AM; N+); JARDÍN ANA MARÍA GALLAGA, SOLO POR RESUMEN</code> · miércoles 4-NOV, por ruta (Correo 2026/nov/04) · " + AP + " · ~19:00, " + RES + " · " + RET + " · <b>1 muerto</b> y <b>2 heridos</b>, por titular (Correo; AM 2026/11/05; Milenio; N+) (🟡 homicidio doloso único) · heridos, familiares de la víctima, " + RES + " · la Fiscalía investiga, " + RES + ": no es declaración · " + NOD,
+  hecho="Pénjamo · <code>ZONA CENTRO, POR TITULAR (CORREO); PUESTO DE GELATINAS, POR TITULAR (N+); CALLE DEGOLLADO, SOLO POR RESUMEN</code> · miércoles 4-NOV, por ruta (Correo 2026/nov/04) · " + AP + " · ~19:00, " + RES + " · " + RET + " · <b>1 muerto</b> y <b>2 heridos</b>, por titular (Correo; AM 2026/11/05; Milenio; N+) (🟡 homicidio doloso único) · heridos, familiares de la víctima, " + RES + " · la Fiscalía investiga, " + RES + ": no es declaración · " + NOD,
   panel="<b>Ataque armado: 1 muerto y 2 heridos</b>", inst=SB, nac="Milenio · N+", conf="★★★☆☆",
   campo="hora solo por resumen; ninguna fuente institucional", I=0, N=2, R=4, A=0,
   fechadas=["Correo (2026/nov/04)", "AM (2026/11/05)"], estatus="Parcialmente corroborado", arm=None,
-  desl="Pénjamo en el índice: ARG-138-013 (zona centro, 19-oct, abuelo y nieto), ARG-145-002 (carretera Tepuza de Ortiz–Zapote de Cestau, 30-oct), ARG-141-001, ARG-113-ARM-002 y ARG-94-001: otros hechos. Puesto de gelatinas y Jardín Ana María Gallaga: sin coincidencias. Identidad de las víctimas: medios, no se reproduce."),
- dict(id="ARG-147-007", estado="MX-SIN", region="Noroeste", color="amarillo", impacto="pequeno", fecha="2026-11-04", hora="tarde-noche (solo por resumen)", mu=1, he=0, cu=0, hk=20,
+  desl="Pénjamo en el índice: ARG-138-013 (zona centro, 19-oct, abuelo y nieto), ARG-145-002 (carretera Tepuza de Ortiz–Zapote de Cestau, 30-oct), ARG-141-001, ARG-113-ARM-002 y ARG-94-001: otros hechos. Puesto de gelatinas y calle Degollado: sin coincidencias. Identidad de las víctimas: medios, no se reproduce."),
+ dict(id="ARG-147-006", estado="MX-SIN", region="Noroeste", color="amarillo", impacto="pequeno", fecha="2026-11-04", hora="tarde-noche (solo por resumen)", mu=1, he=0, cu=0, hk=20,
   ent="Sinaloa", mun="Culiacán (col. Alturas del Sur)", dia="4-NOV, POR RUTA",
   title="SINALOA · CULIACÁN — ASESINAN A BALAZOS A UN JOVEN EN ALTURAS DEL SUR",
   hecho="Culiacán · <code>COL. ALTURAS DEL SUR, POR TITULAR</code> · miércoles 4-NOV, por ruta (Línea Directa 2026-11-04: «asesinan a balazos a un joven en Alturas del Sur») · " + AP + " · tarde-noche, " + RES + " · " + RET + " · <b>1 muerto</b>: hombre de unos 25 años, afuera de un domicilio, " + RES + " (🟡 homicidio doloso único) · militares cercanos acudieron, " + RES + " · " + FU + " · " + NOD,
   panel="<b>Joven asesinado a balazos</b>", inst=SB, nac=NIN, conf="★★☆☆☆",
   campo="fuente única; hora solo por resumen", I=0, N=0, R=1, A=0,
   fechadas=["Línea Directa (2026-11-04)"], estatus="Pendiente de corroboración", arm=None,
-  desl="Alturas del Sur: mujer hallada muerta, presunta integrante de la GN (2-nov o antes; vista en ARGOS 146; pertenencia no acreditada): otro hecho. Otros homicidios de Culiacán del 4-nov (fracc. Los Ángeles, col. Guadalupe Victoria, Infonavit Solidaridad): sin ruta fechada propia, vistos."),
- dict(id="ARG-147-008", estado="MX-GRO", region="Sureste", color="amarillo", impacto="mediano", fecha="2026-11-04", hora="~11:00 (solo por resumen)", mu=2, he=0, cu=0, hk=11,
+  desl="Alturas del Sur: mujer hallada muerta, presunta integrante de la GN (2-nov o antes; vista en ARGOS 146; pertenencia no acreditada): otro hecho. Col. Guadalupe Victoria: ARG-147-008. Fracc. Los Ángeles e Infonavit Solidaridad: sin ruta fechada propia, vistos."),
+ dict(id="ARG-147-007", estado="MX-GRO", region="Sureste", color="amarillo", impacto="mediano", fecha="2026-11-04", hora="~11:00 (solo por resumen)", mu=2, he=0, cu=0, hk=11,
   ent="Guerrero", mun="Olinalá (San Antonio Coyoacán)", dia="4-NOV, POR RUTA Y TITULAR",
   title="GUERRERO · OLINALÁ — ENFRENTAMIENTO ENTRE GRUPOS ARMADOS: DOS MUERTOS",
   hecho="Olinalá · <code>SAN ANTONIO COYOACÁN, SOLO POR RESUMEN</code> · miércoles 4-NOV, por ruta y titular (Informador 20261104; El Congresista) · " + AP + " · ~11:00, " + RES + " · " + RET + " · <b>2 hombres muertos</b> en un enfrentamiento entre grupos armados, " + RES + "; ambos con chalecos tácticos y armas largas, " + RES + " (🟡 enfrentamiento; quién inició, no determinado) · parte de los siete asesinados del 4-nov en Guerrero, por titular (Infobae 2026/11/05) · ningún detenido ni aseguramiento publicado",
@@ -92,9 +83,33 @@ E = [
   campo="lugar, hora y circunstancia solo por resumen; ninguna fuente institucional", I=0, N=2, R=2, A=0,
   fechadas=["Informador (20261104)", "Infobae (2026/11/05)"], estatus="Pendiente de corroboración", arm=None,
   armtxt="sin fila — armas largas de los fallecidos, solo por resumen: no consta aseguramiento",
-  desl="Olinalá y San Antonio Coyoacán no figuran en las cinco ediciones previas ni en el índice. Chilpancingo: ARG-147-004."),
+  desl="Olinalá y San Antonio Coyoacán no figuran en las cinco ediciones previas ni en el índice. Chilpancingo: ARG-147-003."),
  # ======================= VERDES
- dict(id="ARG-147-009", estado="MX-YUC", region="Sureste", color="verde", impacto="pequeno", fecha="2026-11-04", hora="no fijada", mu=0, he=0, cu=0, hk=10,
+ dict(id="ARG-147-008", estado="MX-SIN", region="Noroeste", color="amarillo", impacto="pequeno", fecha="2026-11-04", hora="~16:30 (solo por resumen)", mu=1, he=0, cu=0, hk=16.5,
+  ent="Sinaloa", mun="Culiacán (col. Guadalupe Victoria)", dia="4-NOV, POR RUTA",
+  title="SINALOA · CULIACÁN — ASESINAN A UN HOMBRE EN UNA VIVIENDA DE LA COLONIA GUADALUPE VICTORIA",
+  hecho="Culiacán · <code>COL. GUADALUPE VICTORIA, POR TITULAR</code> · miércoles 4-NOV, por ruta (Línea Directa 2026-11-04: «asesinan a un hombre en una vivienda de la colonia Guadalupe Victoria») · " + AP + " · ~16:30, " + RES + " · " + RET + " · <b>1 muerto</b> dentro de una vivienda, por titular (🟡 homicidio doloso único) · hombre de unos 50 años, " + RES + " · " + FU + " · " + NOD,
+  panel="<b>Hombre asesinado</b> dentro de una vivienda", inst=SB, nac=NIN, conf="★★☆☆☆",
+  campo="fuente única; hora solo por resumen", I=0, N=0, R=1, A=0,
+  fechadas=["Línea Directa (2026-11-04)"], estatus="Pendiente de corroboración", arm=None,
+  desl="Col. Guadalupe Victoria (Las Tres Cruces) no figura en las cinco ediciones previas ni en el índice. Alturas del Sur: ARG-147-006, otro hecho."),
+ dict(id="ARG-147-009", estado="MX-SIN", region="Noroeste", color="amarillo", impacto="pequeno", fecha="2026-11-04", hora="~11:20 (solo por resumen)", mu=1, he=0, cu=0, hk=11.3,
+  ent="Sinaloa", mun="Mazatlán (Mercado Hidalgo)", dia="4-NOV, POR RUTA",
+  title="SINALOA · MAZATLÁN — EJECUTAN AL PROPIETARIO DE UNA FRUTERÍA EN EL MERCADO HIDALGO",
+  hecho="Mazatlán · <code>MERCADO HIDALGO, POR TITULAR</code> · miércoles 4-NOV, por ruta (Luz Noticias 2026-11-04: «sicarios llegan al mercado Hidalgo y ejecutan a propietario de una frutería») · " + AP + " · ~11:20, " + RES + " · " + RET + " · <b>1 muerto</b>: propietario de una frutería, por titular (🟡 homicidio doloso único) · dos agresores en motocicleta, " + RES + " · «asesinan a dos personas en distintos hechos», por titular (El Universal, sin fecha en la ruta) · " + NOD,
+  panel="<b>Propietario de una frutería ejecutado</b>", inst=SB, nac="El Universal", conf="★★★☆☆",
+  campo="hora solo por resumen; ninguna fuente institucional", I=0, N=1, R=2, A=0,
+  fechadas=["Luz Noticias (2026-11-04)"], estatus="Parcialmente corroborado", arm=None,
+  desl="Mercado Hidalgo de Mazatlán no figura en las cinco ediciones previas ni en el índice. Abogada de la av. Carlos Canseco: ARG-147-010, otro hecho."),
+ dict(id="ARG-147-010", estado="MX-SIN", region="Noroeste", color="amarillo", impacto="pequeno", fecha="2026-11-04", hora="no fijada", mu=1, he=0, cu=0, hk=13,
+  ent="Sinaloa", mun="Mazatlán (av. Carlos Canseco)", dia="4-NOV, POR RUTA",
+  title="SINALOA · MAZATLÁN — EJECUTAN A UNA ABOGADA EN LA AVENIDA CARLOS CANSECO",
+  hecho="Mazatlán · <code>AV. CARLOS CANSECO, POR TITULAR</code> · miércoles 4-NOV, por ruta (Luz Noticias 2026-11-04: «ejecutan a abogada por la avenida Carlos Canseco al norte de Mazatlán») · " + AP + " · hora no publicada · " + RET + " · <b>1 muerta</b>: abogada, por titular (🟡 homicidio doloso único; la profesión no es agravante de la lista roja) · baleada mientras conducía, " + RES + " · «Fiscalía General del Estado investiga asesinato», por titular (Sinaloahoy, sin fecha en la ruta): no es declaración · " + NOD,
+  panel="<b>Abogada ejecutada</b> mientras conducía", inst=SB, nac="El Universal", conf="★★★☆☆",
+  campo="hora no fijada; ninguna fuente institucional", I=0, N=1, R=2, A=0,
+  fechadas=["Luz Noticias (2026-11-04)"], estatus="Parcialmente corroborado", arm=None,
+  desl="Av. Carlos Canseco no figura en las cinco ediciones previas ni en el índice. El Universal fecha su nota el 3-nov solo por resumen: la ruta de Luz Noticias fija la publicación el 4. Identidad de la víctima: medios, no se reproduce."),
+ dict(id="ARG-147-011", estado="MX-YUC", region="Sureste", color="verde", impacto="pequeno", fecha="2026-11-04", hora="no fijada", mu=0, he=0, cu=0, hk=10,
   ent="Yucatán", mun="municipio no publicado", dia="PUB. 4-NOV, POR RUTA",
   title="YUCATÁN — DETIENEN AL PRESUNTO AUTOR INTELECTUAL DE UN HOMICIDIO EN LA AVENIDA HUAYACÁN DE CANCÚN",
   hecho="Yucatán, municipio no publicado · publicado el miércoles 4-NOV, por ruta (Noticaribe 2026/11/04) · " + AP + " · día de la detención no fijado · " + RET + " · detención del presunto autor intelectual de un homicidio en la avenida Huayacán (Cancún), por <i>slug</i> (Noticaribe) · operativo conjunto de las fiscalías de Quintana Roo y Yucatán, " + RES + " · señalado también por un ataque contra dos agentes de investigación, " + RES + " · 1 detenido, " + RES + " · " + FU,
@@ -102,26 +117,34 @@ E = [
   campo="fuente única; día de la detención no fijado; detenido solo por resumen", I=0, N=0, R=1, A=0,
   fechadas=["Noticaribe (2026/11/04)"], estatus="Pendiente de corroboración", arm=None,
   armtxt="sin fila — aseguramiento no publicado",
-  desl="Avenida Huayacán no figura en las cinco ediciones previas ni en el índice. Fecha y ventana del homicidio original: no fijadas; no se recalifica. «Garabato» (ARG-146-021, Cancún, 3 detenidos): otro detenido; vínculo no acreditado."),
+  desl="Avenida Huayacán no figura en las cinco ediciones previas ni en el índice. Homicidio original: 22-jul-2026, solo por resumen: evento anterior, no se recalifica. «Garabato» (ARG-146-021, Cancún, 3 detenidos): otro detenido; vínculo no acreditado."),
 ]
 # ---------------------------------------------------------------- RECUPERACIONES (solo alto impacto de ventanas anteriores)
 R = [
  dict(id="ARG-147-REC-001", estado="MX-CAM", region="Sureste", fecha="2026-11-01", hora="no fijada", orig="ARGOS 146", col_orig="rojo", mu=4, he=2, cu=0,
   ent="Campeche", mun="Champotón (Mayatecún II)", dia="2-NOV, POR RUTA",
   title="CAMPECHE · CHAMPOTÓN — ATAQUE ARMADO EN UN EXPENDIO DE BEBIDAS EN MAYATECÚN II: CUATRO MUERTOS Y DOS HERIDOS",
-  hecho="<code>VENTANA DE ORIGEN: ARGOS 146</code> · Champotón · <code>MAYATECÚN II, ESTABLECIMIENTO DE BEBIDAS, POR TITULAR (PORESTO); LUGAR EXACTO, SOLO POR RESUMEN</code> · publicado el lunes 2-NOV, por ruta (La Prensa de Coahuila 2026/11/02) · domingo 1-NOV, " + DSR + " · <b>4 muertos</b> y <b>2 heridos</b>, por titular (La Prensa de Coahuila; TV Azteca; Omnia; Tribuna Campeche) (🔴 homicidio múltiple) · «tras altercado», por titular · cinco muertos según un medio, " + RES + ": superado por los titulares · «presunta detención de dos responsables», por titular (PorEsto 2026/11/5): sin cifra de autoridad",
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 146</code> · Champotón · <code>MAYATECÚN II, POR TITULAR (TV AZTECA); ESTABLECIMIENTO DE BEBIDAS, SOLO POR RESUMEN</code> · publicado el lunes 2-NOV, por ruta (La Prensa de Coahuila 2026/11/02) · domingo 1-NOV, " + DSR + " · <b>4 muertos</b> y <b>2 heridos</b>, por titular (La Prensa de Coahuila; TV Azteca; Omnia; Tribuna Campeche) (🔴 homicidio múltiple) · «tras altercado», por titular · cinco muertos según un medio, " + RES + ": superado por los titulares · «presunta detención de dos responsables», por titular (PorEsto 2026/11/5): sin cifra de autoridad",
   panel="<b>Ataque en un expendio de bebidas: 4 muertos y 2 heridos</b>", inst=SB, nac="TV Azteca",
   conf="★★★☆☆", campo="día solo por resumen; ninguna fuente institucional", I=0, N=1, R=4, A=0,
   fechadas=["La Prensa de Coahuila (2026/11/02)", "PorEsto (2026/11/5)"],
   desl="Champotón en el índice: ARG-105-002 (rancho El Cerrito, 23-ago): otro hecho. Detención de dos presuntos responsables: seguimiento; ficha verde propia solo con cifra de autoridad y día fijado."),
- dict(id="ARG-147-REC-002", estado="MX-SIN", region="Noroeste", fecha="2026-11-01", hora="~12:30 (solo por resumen)", orig="ARGOS 146", col_orig="rojo", mu=3, he=1, cu=0,
+ dict(id="ARG-147-REC-002", estado="MX-SIN", region="Noroeste", fecha="2026-11-01", hora="no fijada", orig="ARGOS 146", col_orig="rojo", mu=3, he=1, cu=0,
   ent="Sinaloa", mun="Mazatlán (dos centros de rehabilitación)", dia="2-NOV, POR RUTA",
   title="SINALOA · MAZATLÁN — ATACAN DOS CENTROS DE REHABILITACIÓN: TRES INTERNOS MUERTOS",
-  hecho="<code>VENTANA DE ORIGEN: ARGOS 146</code> · Mazatlán · <code>COLS. FELIPE ÁNGELES Y FLORES MAGÓN, SOLO POR RESUMEN</code> · publicado el lunes 2-NOV, por ruta (Herqles 2026/11/02: «ataques a centros de rehabilitación en Mazatlán: tres muertos») · domingo 1-NOV, ~12:30, " + DSR + " · <b>3 muertos</b> en dos centros, por titular (Herqles; Guardia Nocturna 2026/11: «atacan dos centros contra adicciones… tres internos muertos») (🔴 homicidio múltiple) · primer centro: «dos internos muertos y un herido», por titular (Noroeste) · segundo centro: 1 muerto y 4 heridos, " + RES + " · " + NOD,
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 146</code> · Mazatlán · <code>COLS. FELIPE ÁNGELES Y FLORES MAGÓN, SOLO POR RESUMEN</code> · publicado el lunes 2-NOV, por ruta (Herqles 2026/11/02: «ataques a centros de rehabilitación en Mazatlán: tres muertos») · domingo 1-NOV, " + DSR + "; hora no fijada · <b>3 muertos</b> en dos centros, por titular (Herqles; Guardia Nocturna 2026/11: «atacan dos centros contra adicciones… tres internos muertos») (🔴 homicidio múltiple) · primer centro: «dos internos muertos y un herido», por titular (Noroeste) · segundo centro: 1 muerto y 4 heridos, " + RES + " · " + NOD,
   panel="<b>Ataque a dos centros de rehabilitación: 3 muertos</b>", inst=SB, nac="El Universal",
-  conf="★★★☆☆", campo="día y hora solo por resumen; heridos del segundo centro solo por resumen; ninguna fuente institucional", I=0, N=1, R=4, A=0,
+  conf="★★★☆☆", campo="día solo por resumen; hora no fijada; heridos del segundo centro solo por resumen; ninguna fuente institucional", I=0, N=1, R=4, A=0,
   fechadas=["Herqles (2026/11/02)", "Guardia Nocturna (2026/11)"],
-  desl="Visto en el archivo de equipos de ARGOS 146 («centro de rehabilitación, 1 muerto, 4 heridos», sin fecha), no publicado en su cartelón: era el segundo centro. Heridos del segundo centro, solo por resumen: fuera del total. ARG-147-002 (Coto Premier) y ARG-145-REC-002 (Los Ranchos): otros hechos."),
+  desl="Visto en el archivo de equipos de ARGOS 146 («centro de rehabilitación, 1 muerto, 4 heridos», sin fecha), no publicado en su cartelón: era el segundo centro. Heridos del segundo centro, solo por resumen: fuera del total. Otro ataque del mismo día (calle Cima de las Rocas, 2 muertos en un automóvil), solo por resumen: visto. ARG-147-REC-003 (Coto Premier) y ARG-145-REC-002 (Los Ranchos): otros hechos."),
+ dict(id="ARG-147-REC-003", estado="MX-SIN", region="Noroeste", fecha="2026-11-04", hora="~06:34 (solo por resumen)", orig="ARGOS 146", col_orig="rojo", mu=0, he=0, cu=0,
+  ent="Sinaloa", mun="Mazatlán (fracc. Coto Premier)", dia="4-NOV, POR RUTA",
+  title="SINALOA · MAZATLÁN — ARROJAN EXPLOSIVOS ARTESANALES CONTRA UNA VIVIENDA EN COTO PREMIER",
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 146</code> · Mazatlán · <code>FRACC. COTO PREMIER, POR TITULAR (NOROESTE)</code> · miércoles 4-NOV, por ruta (Luz Noticias 2026-11-04; Diario de Yucatán 2026/11/04) · <b>~06:34 del miércoles 4, " + RES + "</b> (Noroeste): anterior a la apertura de esta ventana · <b>artefactos explosivos arrojados contra una vivienda</b>, por titular (Noroeste: «arrojan dos explosivos artesanales»; N+, por <i>slug</i>: «lanzan-dos-explosivos-artesanales»; Luz Noticias: «arrojan artefacto explosivo») (🔴 uso de explosivos) · «detonan artefacto en cochera y localizan otro junto a la vivienda», por titular (Los Noticieristas): <code>NÚMERO DE ARTEFACTOS CONTRADICHO</code> (uno, por titular de Luz Noticias; dos, por titular de Noroeste) · sin heridos, " + RES + " · Ejército en el lugar y vecinos evacuados, " + RES + " · composición y capacidad de los artefactos: no informadas por autoridad · " + NOD,
+  panel="<b>Explosivos artesanales contra una vivienda</b>; sin heridos publicados", inst=SB, nac="N+ · El Universal", conf="★★★☆☆",
+  campo="hora solo por resumen; número de artefactos contradicho; ninguna fuente institucional", I=0, N=2, R=6, A=0,
+  fechadas=["Luz Noticias (2026-11-04)", "Diario de Yucatán (2026/11/04)", "Los Noticieristas (2026/11)"],
+  desl="Coto Premier no figura en las cinco ediciones previas ni en el índice. Abogada (av. Carlos Canseco) y frutería del Mercado Hidalgo, reunidos con este hecho por Diario de Yucatán: ARG-147-010 y -009. Centros de rehabilitación del 1-nov: ARG-147-REC-002, otro hecho. Artefacto sin estallar: <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code>."),
 ]
 for r in R:
     r["color"] = "rec"; r["impacto"] = "grande" if r["col_orig"] == "rojo" else "mediano"
@@ -148,12 +171,12 @@ DENS = f"{len(E) / HORAS:.2f}".replace(".", ",")
 ENT_ROJO = sorted(set(e["estado"] for e in E if e["color"] == "rojo"))
 DET = sum(a["c"][9] for a in ARM if a["integra"])
 assert TOT == [0] * 10 and ND == [True] * 10, (TOT, ND)
-assert cnt == {"rojo": 5, "amarillo": 3, "verde": 1}, cnt
-assert cnt_rec == {"rojo": 2, "amarillo": 0, "verde": 0}, cnt_rec
-assert (MU, HE, CU, MU_REC, HE_REC, CU_REC) == (9, 2, 0, 7, 3, 0), (MU, HE, CU, MU_REC, HE_REC, CU_REC)
-assert DENS == "0,34", DENS
-assert (NAP, NFR, NRET) == (8, 1, 8), (NAP, NFR, NRET)
-assert len(ENT) == 6 and len(ENT_ROJO) == 4, (ENT, ENT_ROJO)
+assert cnt == {"rojo": 4, "amarillo": 6, "verde": 1}, cnt
+assert cnt_rec == {"rojo": 3, "amarillo": 0, "verde": 0}, cnt_rec
+assert (MU, HE, CU, MU_REC, HE_REC, CU_REC) == (12, 2, 0, 7, 3, 0), (MU, HE, CU, MU_REC, HE_REC, CU_REC)
+assert DENS == "0,41", DENS
+assert (NAP, NFR, NRET) == (10, 1, 10), (NAP, NFR, NRET)
+assert len(ENT) == 6 and len(ENT_ROJO) == 3, (ENT, ENT_ROJO)
 assert sorted(e["id"] for e in E) == [f"ARG-147-{i+1:03d}" for i in range(len(E))]
 assert [r["id"] for r in R] == [f"ARG-147-REC-{i+1:03d}" for i in range(len(R))]
 for x in E + R:
@@ -273,9 +296,9 @@ port = f'''<section class="page">
     <div class="flag">LO QUE DEBE HACER EL MANDO</div>
     <p>
       <b>1. SOLICITE A LA FISCALÍA DE MORELOS LAS LÍNEAS DE INVESTIGACIÓN Y EL ESTADO DE LAS DENUNCIAS PREVIAS DE AMENAZAS DEL REGIDOR ASESINADO</b> (ARG-147-001).
-      <br><b>2. SOLICITE A LA FISCALÍA DE SINALOA EL DICTAMEN DE LOS ARTEFACTOS EXPLOSIVOS DE COTO PREMIER, INCLUIDO EL QUE NO ESTALLÓ</b> (ARG-147-002).
-      <br><b>3. SOLICITE A LA DEFENSA Y A LA GUARDIA CIVIL DE MICHOACÁN EL PARTE SOBRE EL USO DE DRONES EN INDAPARAPEO Y VIGILE LAS HUERTAS DE LOS FRESNOS, TANCÍTARO</b> (ARG-147-005 y -003).
-      <br><b>4. SOLICITE A LA FISCALÍA DE GUERRERO EL DESGLOSE OFICIAL POR MUNICIPIO DE LOS SIETE HOMICIDIOS DEL 4-NOV</b> (ARG-147-004 y -008).
+      <br><b>2. SOLICITE A LA DEFENSA Y A LA GUARDIA CIVIL DE MICHOACÁN EL PARTE SOBRE EL USO DE DRONES EN INDAPARAPEO Y VIGILE LAS HUERTAS DE LOS FRESNOS, TANCÍTARO</b> (ARG-147-004 y -002).
+      <br><b>3. SOLICITE A LA FISCALÍA DE SINALOA EL DICTAMEN DEL ARTEFACTO SIN ESTALLAR DE COTO PREMIER Y LAS LÍNEAS DE INVESTIGACIÓN DE LOS CUATRO HOMICIDIOS DEL 4-NOV EN CULIACÁN Y MAZATLÁN</b> (ARG-147-REC-003, -006, -008, -009 y -010).
+      <br><b>4. SOLICITE A LA FISCALÍA DE GUERRERO EL DESGLOSE OFICIAL POR MUNICIPIO DE LOS SIETE HOMICIDIOS DEL 4-NOV</b> (ARG-147-003 y -007).
       <br><b>5. SOLICITE A LA FISCALÍA DE CAMPECHE LA SITUACIÓN JURÍDICA DE LOS PRESUNTOS DETENIDOS POR EL ATAQUE DE CHAMPOTÓN Y A LA DE SINALOA LA DE LOS ATAQUES A CENTROS DE REHABILITACIÓN</b> (ARG-147-REC-001 y -002).
     </p>
   </div>
@@ -307,18 +330,19 @@ panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
     <tbody><tr><td><b>{len(E)}</b></td><td><b>{cnt["rojo"]}</b></td><td><b>{cnt["amarillo"]}</b></td><td><b>{cnt["verde"]}</b></td><td><b>{len(R)}</b></td><td><b>{MU}</b></td><td><b>{HE}</b></td><td><b>{CU}</b></td><td><b>{tv(0)}</b></td><td><b>{tv(1)}</b></td><td><b>{tv(2)}</b></td><td><b>{tv(4, fmt)}</b></td><td><b>{tv(5)}</b></td><td><b>{tv(6)}</b></td><td><b>{tv(7)}</b></td><td><b>{tv(8)}</b></td><td><b>{tv(9)}</b></td><td><b>{len(ENT)}</b></td></tr></tbody>
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
-    <b>Armamento</b>: ninguna arma ni detenido integrado al total: ningún aseguramiento con cifra de autoridad en la ventana · <b>muertos por agresión</b>: {MU}, cálculo propio de las fichas · <b>cuerpos o restos hallados</b>: {CU} · <b>marcas</b>: {NAP} de {len(E)} <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code> y {NFR} <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> · <b>totales sujetos a las cláusulas de retiro de {NRET} fichas</b> (hora no fijada frente a las 06:52 del 4): ARG-147-001 a -004 y -006 a -009 · <b>recuperaciones, fuera de totales</b>: {MU_REC} muertos y {HE_REC} heridos, por titular (4 heridos más del segundo centro de Mazatlán, solo por resumen, fuera del cálculo); efecto sobre ARGOS 146, en el archivo de fuentes. <b>Cálculo propio</b>.
-    <br><b>Vistos, fuera de totales</b> — <b>de la ventana de ARGOS 146</b> (🟢 o 🟡, no se recuperan): Tuxtla Gutiérrez, Chis. (6 detenidos; ver armamento) · Coatzacoalcos, «El Panda» (detenido el 3-nov; prisión preventiva, por titular, Hora Cero 2026/11/04) · Ixtapaluca, «El Patrón», líder de Los Linos (3-nov) · Tijuana, coordinador del Movimiento del Sombrero asesinado (noche del domingo 1-nov, {RES}; publicado el 4) · Mazatlán, policía municipal herido (2-nov, El Diario de Chihuahua 2026/nov/02) · Acolman, 2 muertos en una tienda (3-nov, {RES}) · Irapuato, Las Heras (3-nov) · Tulum, Francisco Uh May (persecución, 1 muerto, 1 detenido; PorEsto 2026/11/3) · Papantla (2-nov) · <b>sin ruta fechada propia o día no fijado</b> — <code>SIN RUTA FECHADA — NO SE FICHA</code>: Guerrero, Culiacán y Mazatlán: en los deslindes de ARG-147-004, -007 y -002 · Querétaro, col. Morelos (1 muerto) · San Luis Potosí, bulevar Río Santiago (persecución) · Reynosa, col. Puerta Sur, restos calcinados y fosa hallados por un colectivo (sin fecha; ARG-140-008 en el mismo predio, 22-oct) · Valle de Chalco · Jiutepec · <b>cuerpos sin causa informada por autoridad</b>: Cortazar, col. Chapingo (1, en bolsas; Noticieros en Línea 2026/nov/04) · Nogales, Ver. (1) · Tepic (2 adultos mayores, causa por determinar) · <b>balances, no se reparten ni se integran</b>: Guerrero, siete asesinados el 4-nov (Infobae 2026/11/05) · 42 homicidios en el país el 4-nov, Guanajuato 7 y Sinaloa 6 (diario.mx 2026/nov/05) · Guanajuato, «al menos ocho» (sin fecha).
+    <b>Armamento</b>: ninguna arma ni detenido integrado al total: ningún aseguramiento con cifra de autoridad en la ventana · <b>muertos por agresión</b>: {MU}, cálculo propio de las fichas, incluidos 2 integrantes de grupos armados (Olinalá) · <b>cuerpos o restos hallados</b>: {CU} · <b>marcas</b>: {NAP} de {len(E)} <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code> y {NFR} <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> · <b>totales sujetos a las cláusulas de retiro de {NRET} fichas</b> (hora no fijada frente a las 06:52 del 4): todas salvo ARG-147-004 · <b>recuperaciones, fuera de totales</b>: {MU_REC} muertos y {HE_REC} heridos, por titular (4 heridos más del segundo centro de Mazatlán, solo por resumen, fuera del cálculo); efecto sobre ARGOS 146, en el archivo de fuentes. <b>Cálculo propio</b>.
+    <br><b>Vistos, fuera de totales</b> — <b>de la ventana de ARGOS 146</b> (🟢 o 🟡, no se recuperan): Tuxtla Gutiérrez, Chis. (6 detenidos; ver armamento) · Coatzacoalcos, «El Panda» (detenido el 3-nov; prisión preventiva, por titular, Hora Cero 2026/11/04) · Ixtapaluca, «El Patrón», líder de Los Linos (3-nov) · Tijuana, coordinador del Movimiento del Sombrero asesinado (noche del domingo 1-nov, {RES}; publicado el 4) · Mazatlán, policía municipal herido (2-nov, El Diario de Chihuahua 2026/nov/02) · Acolman, 2 muertos en una tienda (3-nov, {RES}) · Irapuato, Las Heras (3-nov) · Tulum, Francisco Uh May (persecución, 1 muerto, 1 detenido; PorEsto 2026/11/3) · Papantla (2-nov) · <b>sin ruta fechada propia o día no fijado</b> — <code>SIN RUTA FECHADA — NO SE FICHA</code>: Guerrero, Culiacán: en los deslindes de ARG-147-003 y -006 · Mazatlán, calle Cima de las Rocas (2 muertos en un automóvil, 1-nov, ventana de ARGOS 146, {RES}) · Querétaro, col. Morelos (1 muerto) · San Luis Potosí, bulevar Río Santiago (persecución) · Reynosa, col. Puerta Sur, restos calcinados y fosa hallados por un colectivo (sin fecha; ARG-140-008 en el mismo predio, 22-oct) · Valle de Chalco · Jiutepec · <b>cuerpos sin causa informada por autoridad</b>: Cortazar, col. Chapingo (1, en bolsas; Noticieros en Línea 2026/nov/04) · Nogales, Ver. (1) · Tepic (2 adultos mayores, causa por determinar) · <b>balances, no se reparten ni se integran</b>: Guerrero, siete asesinados el 4-nov (Infobae 2026/11/05) · 42 homicidios en el país el 4-nov, Guanajuato 7 y Sinaloa 6 (diario.mx 2026/nov/05) · Guanajuato, «al menos ocho» (sin fecha).
     <br><b>Seguimiento, fuera del semáforo</b>: <b>ARG-146-006 (Irapuato)</b>: «cuatro lesionados», por titular (Latinus 2026/11/4), frente a «dos heridos» (Correo; La Silla Rota 2026/11/4): <code>CIFRA DE HERIDOS CONTRADICHA</code> · <b>ARG-146-019, -020 y -021</b>: detenciones del 3-nov, por ruta y por el boletín federal de acciones del 3-nov: cláusulas de retiro cerradas, se quedan en ARGOS 146 · <b>ARG-144-008 / ARG-145-REC-001 (Matamoros)</b>: el fiscal de Tamaulipas atribuye el disparo que mató a la niña a un helicóptero de la Guardia Estatal, por titular (Nación321 y Expreso 2026/11/02; Síntesis 2026/11/03) · <code>NINGUNO ES SENTENCIA</code>.
   </p>
 '''
 
 byid = {e["id"]: e for e in E}
 rbyid = {r["id"]: r for r in R}
-co1 = "\n".join(ficha(byid[f"ARG-147-{i:03d}"]) for i in (1, 2, 3, 4, 5))
-co2 = "\n".join(ficha(byid[f"ARG-147-{i:03d}"]) for i in (6, 7, 8, 9))
-co3 = "\n".join(ficha(rbyid[i], True) for i in ("ARG-147-REC-001", "ARG-147-REC-002"))
-assert sorted(re.findall(r'id="(ARG-147-0\d\d)"', co1 + co2)) == sorted(byid)
+co1 = "\n".join(ficha(byid[f"ARG-147-{i:03d}"]) for i in (1, 2, 3, 4))
+co2 = "\n".join(ficha(byid[f"ARG-147-{i:03d}"]) for i in (5, 7, 6, 8))
+co2b = "\n".join(ficha(byid[f"ARG-147-{i:03d}"]) for i in (9, 10, 11))
+co3 = "\n".join(ficha(rbyid[i], True) for i in ("ARG-147-REC-001", "ARG-147-REC-002", "ARG-147-REC-003"))
+assert sorted(re.findall(r'id="(ARG-147-0\d\d)"', co1 + co2 + co2b)) == sorted(byid)
 assert sorted(re.findall(r'id="(ARG-147-REC-\d\d\d)"', co3)) == sorted(rbyid)
 
 ico = re.findall(r'<div class="tile[^"]*"><svg class="ico ico-lg"[^>]*>.*?</svg>', tpl)
@@ -335,9 +359,9 @@ tiles = "\n".join([
  tile(3, "Cartuchos", tv(4, fmt), NI),
  tile(4, "Cargadores", tv(5), NI),
  tile(5, "Granadas", tv(6), NI),
- tile(6, "AEI", tv(7), "Mazatlán: artefacto sin estallar, solo por resumen; cantidad no determinada (ARG-147-002)"),
+ tile(6, "AEI", tv(7), NI),
  tile(7, "Explosivos", tv(8), NI),
- tile(8, "Armamento especial", tv(3), "Indaparapeo: drones, por titular; no asegurados (ARG-147-005)"),
+ tile(8, "Armamento especial", tv(3), "Indaparapeo: drones, por titular; no asegurados (ARG-147-004)"),
  tile(9, "Detenidos", tv(9), "<b>en el mismo evento de aseguramiento</b>: " + DSA),
 ])
 assert len(icos) == 10, len(icos)
@@ -377,7 +401,7 @@ arm2 = f'''  <div class="table-wrap"><table class="exec wide">
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
     <b>Lectura regional</b>: ninguna región con arma ni detenido integrado al total. <b>Cálculo propio</b>.
-    <br><b>Eventos cualitativos sin cantidad</b>: ninguno con fila; artefacto sin estallar de Mazatlán y drones de Indaparapeo, en sus fichas.
+    <br><b>Eventos cualitativos sin cantidad</b>: ninguno con fila; drones de Indaparapeo, en su ficha; artefacto sin estallar de Coto Premier, ventana de ARGOS 146 (ARG-147-REC-003).
     <br><code>VISTOS, NO INTEGRADOS</code>: <b>boletín federal de acciones del 3-nov</b> (ventana de ARGOS 146; <code>gob.mx/sspc</code>, por índice, y republicadores): Cocula, Gro. (2 largas, 1 corta, 12 cargadores, 335 cartuchos y 3 detenidos, {RES}; es ARG-146-019 / ARG-146-ARM-003) · <b>Tuxtla Gutiérrez, Chis.</b>: 6 detenidos, «diez armas y 895 cartuchos», por titular (La Nigua, sin fecha); 5 cortas, 5 largas y 36 cargadores, {RES}; primera publicación 3-nov (crprensa; Diario de Yucatán 2026/11/03): ventana de ARGOS 146 · <b>Villahermosa, Gaviotas Norte</b>: 3 detenidos, 1 corta, 1 cargador, {RES}: <code>FECHA NO FIJADA — NO SE INTEGRA</code> · <b>Sinaloa, Semar</b>: 15 largas, 30 cargadores (= Caminaguato–El Tepuche, visto en ARGOS 146) · <b>Edomex, operativo contra «Los Gigan»</b>: 32 detenidos, 20 armas, 178,780 litros, {RES}: <code>FECHA NO FIJADA — NO SE INTEGRA</code>; posible relación con Texcoco–Chimalhuacán–Ecatepec (12 detenidos, 178,780 litros, ARGOS 146): <code>POSIBLE DUPLICIDAD</code> · <b>boletín federal de acciones del 4-nov</b>: <code>SIN RESULTADO INDEXADO EN VENTANA</code>.
   </p>
 '''
@@ -394,8 +418,8 @@ sent = f'''  <div class="conteo">
   <div class="table-wrap"><table class="exec wide">
     <thead><tr><th>Entidad · Municipio</th><th>Caso</th><th>Pena publicada</th><th>Autoridad</th><th>Por qué NO se integra</th><th>Confianza</th></tr></thead>
     <tbody>
-      <tr><td><b>Oaxaca</b><br>San Antonio de la Cal</td><td>Secuestro agravado (2011); <b>2 sentenciados</b>, por titular · <b>nuevo en ARGOS 147</b></td><td><b>157 años</b> en conjunto, por titular (Primera Línea 2026/11/04); 87 años 6 meses y 70 años, {RES} · <b>suma, cálculo del emisor</b></td><td>FGE Oaxaca <span class="muted-note">(boletín 2,948, solo por resumen)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL</code> · boletín no leído; solo republicadores del mismo comunicado; firmeza no informada; fecha de la sentencia no fijada</td><td>Bajo</td></tr>
-      <tr><td><b>Nuevo León</b><br>Los Ramones</td><td>Portación de arma; procedimiento abreviado; <b>1 sentenciado</b>, por titular · <b>nuevo en ARGOS 147</b></td><td>«más de cinco años», por titular (MVS 2026/11/4); 5 años 5 meses, {RES}</td><td>FGE Nuevo León <span class="muted-note">(por medios)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · fuente única; sin boletín del dominio</td><td>No confirmado</td></tr>
+      <tr><td><b>Oaxaca</b><br>San Antonio de la Cal</td><td>Secuestro agravado (2011); <b>2 sentenciados</b>, por titular · <b>nuevo en ARGOS 147</b></td><td><b>157 años</b>, por titular (Primera Línea 2026/11/04); 87 años 6 meses y 70 años, {RES}: su suma da 157 años 6 meses, <code>CIFRA CONTRADICHA</code></td><td>FGE Oaxaca <span class="muted-note">(boletín 2,948, solo por resumen)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL</code> · boletín no leído; solo republicadores del mismo comunicado; firmeza no informada; fecha de la sentencia no fijada</td><td>Bajo</td></tr>
+      <tr><td><b>Nuevo León</b><br>Los Ramones</td><td>Portación de arma de uso exclusivo y posesión de drogas, {RES}; procedimiento abreviado; <b>1 sentenciado</b>, por titular · <b>nuevo en ARGOS 147</b></td><td>«más de cinco años», por titular (MVS 2026/11/4); 5 años 5 meses 19 días, {RES}</td><td>FGR <span class="muted-note">(solo por resumen)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · fuente única; sin boletín del dominio</td><td>No confirmado</td></tr>
       <tr><td><b>Tabasco</b></td><td>Portación de arma de fuego sin licencia; 1 sentenciado, {RES} · <b>nuevo en ARGOS 147</b></td><td>No publicada</td><td>FGR <span class="muted-note">(solo por resumen)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · sin URL, pena ni campos individualizadores</td><td>No confirmado</td></tr>
       <tr><td><b>Jalisco</b><br>Tlajomulco · Tlaquepaque</td><td>Dos feminicidios; <b>2 sentenciados</b> · candidato anterior</td><td><b>55 y 40 años</b>, por titular de medios (Informador 20261029)</td><td>Fiscalía de Jalisco <span class="muted-note">(por medios)</span></td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · publicado el 29-oct, fuera de esta ventana; boletín del dominio no localizado</td><td>Bajo</td></tr>
       <tr><td><b>Puebla</b><br>Huejotzingo</td><td>Feminicidio y aborto · candidato de ARGOS 144</td><td>55 años, por titular de medios</td><td>FGE Puebla <span class="muted-note">(por medios)</span></td><td><code>POSIBLE CASO HOMÓNIMO — NO INTEGRAR HASTA VALIDACIÓN</code> · el boletín de 55 años del dominio es de otro caso (secuestro, 2025)</td><td>No confirmado</td></tr>
@@ -427,21 +451,21 @@ sent = f'''  <div class="conteo">
 cierre = f'''  <div class="alerta contexto">
     <div class="flag">VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL</div>
     <p>
-      <b>1.</b> <b>Cinco rojos propios en cuatro entidades</b> (cálculo propio), por víctima autoridad, explosivos, drones y homicidio múltiple. <b>Alza del riesgo nacional frente a ARGOS 146</b>: 0,19 rojos por hora (5 en {DUR}), frente a 0,14 publicado en ARGOS 146 (cálculo propio).
-      <br><b>2.</b> <b>Michoacán</b> concentra dos de los cinco rojos (ARG-147-003 y -005) y <b>Guerrero</b>, un rojo y un amarillo en la misma jornada (ARG-147-004 y -008).
-      <br><b>3.</b> <b>Violencia operativa</b>: tres amarillos en tres entidades (cálculo propio).
+      <b>1.</b> <b>Cuatro rojos propios en tres entidades</b> (cálculo propio), por víctima autoridad, drones y homicidio múltiple. <b>Riesgo nacional sostenido frente a ARGOS 146</b>: 0,15 rojos por hora (4 en {DUR}), frente a 0,14 publicado en ARGOS 146 (cálculo propio).
+      <br><b>2.</b> <b>Michoacán</b> concentra dos de los cuatro rojos (ARG-147-002 y -004); <b>Guerrero</b>, un rojo y un amarillo en la misma jornada (ARG-147-003 y -007).
+      <br><b>3.</b> <b>Violencia operativa</b>: seis amarillos en tres entidades; cuatro en Sinaloa, en Culiacán y Mazatlán (cálculo propio).
       <br><b>4.</b> <b>Respuesta institucional</b>: un verde, de fuente única, sin cifra de armamento ni de detenidos citable; ninguna sentencia integrable; ningún boletín federal de acciones del 4-nov indexado (cálculo propio).
-      <br><b>5.</b> <code>VENTANA DE {DUR.upper()}: OCHO DE NUEVE HECHOS PUBLICADOS EL DÍA DE APERTURA SIN HORA, CON CLÁUSULA DE RETIRO, Y UNO EN FRONTERA DE VENTANA; DOS ROJOS RECUPERADOS DE ARGOS 146, CON 7 MUERTOS, FUERA DE TOTALES. CÁLCULO PROPIO.</code>
+      <br><b>5.</b> <code>VENTANA DE {DUR.upper()}: DIEZ DE ONCE HECHOS PUBLICADOS EL DÍA DE APERTURA SIN HORA, CON CLÁUSULA DE RETIRO, Y UNO EN FRONTERA DE VENTANA; TRES ROJOS RECUPERADOS DE ARGOS 146, CON 7 MUERTOS, FUERA DE TOTALES. CÁLCULO PROPIO.</code>
     </p>
   </div>
 
   <div class="alerta contexto" style="margin-top:8px;">
     <div class="flag">CONCLUSIONES DE INTELIGENCIA CRIMINAL</div>
     <p>
-      <b>1. MICHOACÁN: EMPLEO DE DRONES ENTRE GRUPOS CRIMINALES EN EL ORIENTE DEL ESTADO Y VIOLENCIA LETAL EN LA FRANJA AGUACATERA, EN LA MISMA JORNADA</b> (ARG-147-005 y -003); vínculo no acreditado. Línea: <b>solicitar a la Defensa y a la Guardia Civil el registro de drones del 4-nov en Indaparapeo y cruzarlo con los hechos de ARG-140-016 y ARG-144-002 en el mismo municipio</b>.
+      <b>1. MICHOACÁN: EMPLEO DE DRONES ENTRE GRUPOS CRIMINALES EN EL ORIENTE DEL ESTADO Y VIOLENCIA LETAL EN LA FRANJA AGUACATERA, EN LA MISMA JORNADA</b> (ARG-147-004 y -002); vínculo no acreditado. Línea: <b>solicitar a la Defensa y a la Guardia Civil el registro de drones del 4-nov en Indaparapeo y cruzarlo con ARG-140-016 y ARG-144-002, en el mismo municipio</b>.
       <br><b>2. VÍCTIMA SERVIDOR PÚBLICO CON DENUNCIA PREVIA DE AMENAZAS, POR TITULAR</b> (ARG-147-001): perfil de víctima de riesgo. Línea: <b>solicitar a la Fiscalía de Morelos el estado de esas denuncias y verificar medidas de protección de los demás integrantes del cabildo</b>.
-      <br><b>3. EXPLOSIVO ARTESANAL CON UN ARTEFACTO SIN ESTALLAR RECUPERABLE, SOLO POR RESUMEN</b> (ARG-147-002): primera muestra física de la serie en Mazatlán. Línea: <b>solicitar a la FGE de Sinaloa el dictamen (carga, iniciador, fabricación local) y cotejarlo con futuros hallazgos de AEI en Sinaloa</b>.
-      <br><b>4. GUERRERO: EJE CHILPANCINGO–TIXTLA–OLINALÁ CON GRUPOS ARMADOS CON CHALECO Y ARMA LARGA, SOLO POR RESUMEN</b> (ARG-147-004 y -008; «cinco municipios», por titular de El Universal). Línea: <b>vigilar el corredor Centro–Montaña de Guerrero</b>.
+      <br><b>3. SINALOA: ARTEFACTO EXPLOSIVO ARTESANAL SIN ESTALLAR RECUPERABLE, POR TITULAR, Y CUATRO HOMICIDIOS DOLOSOS ÚNICOS EN CULIACÁN Y MAZATLÁN EL MISMO DÍA</b> (ARG-147-REC-003, -006 y -008 a -010); vínculo no acreditado. Línea: <b>solicitar a la FGE de Sinaloa el dictamen del artefacto (carga, iniciador, fabricación local) y vigilar el Mercado Hidalgo y Coto Premier</b>.
+      <br><b>4. GUERRERO: EJE CENTRO–MONTAÑA CON HALLAZGO DE VÍCTIMAS TORTURADAS Y GRUPOS ARMADOS CON CHALECO Y ARMA LARGA</b> (ARG-147-003 y -007; «varios municipios», por titular; cinco, solo por resumen). Línea: <b>vigilar el corredor Chilpancingo–Tixtla–Olinalá</b>.
       <br><b>5. BLANCOS CON CONCURRENCIA DE PERSONAS: UN EXPENDIO DE BEBIDAS Y DOS CENTROS DE REHABILITACIÓN EL MISMO DOMINGO, 7 MUERTOS</b> (cálculo propio; ARG-147-REC-001 y -002); vínculo no acreditado. Línea: <b>vigilar centros de rehabilitación de Mazatlán y solicitar la situación jurídica de los presuntos detenidos de Champotón</b>.
     </p>
   </div>
@@ -455,9 +479,10 @@ cierre = f'''  <div class="alerta contexto">
 
 body = (port
  + page("PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD", panorama_body)
- + page("CRIMEN ORGANIZADO (I) — ALTO IMPACTO: CUERNAVACA, MAZATLÁN, TANCÍTARO, CHILPANCINGO E INDAPARAPEO", co1)
- + page("CRIMEN ORGANIZADO (II) — VIOLENCIA OPERATIVA Y ACCIONES INSTITUCIONALES", co2)
- + page("CRIMEN ORGANIZADO (III) — ALTO IMPACTO DE LA VENTANA DE ARGOS 146: CHAMPOTÓN Y MAZATLÁN", co3)
+ + page("CRIMEN ORGANIZADO (I) — ALTO IMPACTO: CUERNAVACA, TANCÍTARO, CHILPANCINGO E INDAPARAPEO", co1)
+ + page("CRIMEN ORGANIZADO (II) — VIOLENCIA OPERATIVA: PÉNJAMO, OLINALÁ Y CULIACÁN", co2)
+ + page("CRIMEN ORGANIZADO (III) — VIOLENCIA OPERATIVA EN MAZATLÁN Y ACCIONES INSTITUCIONALES", co2b)
+ + page("CRIMEN ORGANIZADO (IV) — ALTO IMPACTO DE LA VENTANA DE ARGOS 146: CHAMPOTÓN Y MAZATLÁN", co3)
  + page("CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS", arm1)
  + page("ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD", arm2)
  + page("RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES", sent)
