@@ -83,11 +83,14 @@
 
 ## 9. Ronda 2 (en serie)
 
-_Pendiente._
+- `editor-duplicidad` R2 — CORREGIR (7 hallazgos; 0 duplicidades; referencias de ARG-ID correctas tras la renumeración). **Aplicados**: hora de «Consulta» real (la del borrador, 10:58, era posterior a la redacción: corregida a 10:45, última búsqueda de R2) · «sin estallar / recuperable» retirado (el titular dice «localizan otro junto a la vivienda») · Conclusión 5: «el 1-nov, día solo por resumen» · `-009` y `-010`: día del hecho con reserva y cláusula ampliada · vistos repetidos retirados (Cima de las Rocas, Guerrero, Acolman, Papantla) · deslinde de Pénjamo con `ARG-141-001` y criterios.
+- `procedencia-cifras` R2 — CORREGIR (6 hallazgos; 6 de 6 búsquedas; ninguna cifra de peso cae). **Aplicados**: Coto Premier sigue en REC-003 (ninguna hora posterior a las 06:52) · `-009`: el 4-nov por agrupación de El Universal (*slug*) y Diario de Yucatán; «3-nov» no reencontrado; «mercado Juárez» (Meganoticias 785603): nombre contradicho · `-010`: día no fijado (3 o 4) · marcas de procedencia en vistos (Tulum, Querétaro, Cortazar, Nogales, Tepic, balances) · `HEREDADO — NO REVERIFICADO` en Semar, Texcoco y candidatos anteriores · «1 eventos» → «1 evento». **No aplicado**: «0,14 publicado en ARGOS 146» es la tasa propia de 146 (13 rojos en 91 h 38 min), no de 145: el control la leyó mal · `-001` Institucional 1: la declaración de la Fiscalía consta por titular (La Razón), no solo por resumen; se mantiene con el campo que lo declara · Chilpancingo: la versión de dos adolescentes de 17 años (una fuente, sin fecha) no se publica.
+- **Construcción**: `python3 tools/datos-argos-147.py reports/argos-2026-11-04.html reports/argos-2026-11-05.html` · `node tools/validar.js reports/argos-2026-11-05.html 2026-11-04 2026-11-05` → validación OK · `python3 tools/gen-movil.py 147 2026-11-05 146 2026-11-04 09:42` (14/14 tarjetas; contadores 4/6/1; validación OK) · `python3 tools/gen-texto.py reports/argos-2026-11-05.html reports/argos-2026-11-05.txt`.
+- **Marca «Consulta»**: 10:45 CDMX (cierre de la última búsqueda de R2).
 
 ## 10. Presupuesto de búsqueda
 
-Control 2 · coordinador 14 + Tijuana 1 + 2 de repetición federal = 17 de 18 · ola 148 de 150 (Noroeste 24, Noreste 25, Occidente 25, Centro 25, Golfo 25, Sureste 24) · procedencia R1 24 de 24 · R2 pendiente.
+Control 2 · coordinador 14 + Tijuana 1 + 2 de repetición federal = 17 de 18 · ola 148 de 150 (Noroeste 24, Noreste 25, Occidente 25, Centro 25, Golfo 25, Sureste 24) · procedencia R1 24 de 24 · R2 6 de 6 · **total 197 de 200**.
 
 ## 11. Hallazgos de método (no van al cartelón)
 

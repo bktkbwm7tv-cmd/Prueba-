@@ -1,0 +1,121 @@
+Eres el Analista Nacional de Inteligencia Criminal ARGOS. Vas a producir ARGOS 148
+con datos de HOY (fecha del día de arranque). Trabaja en español y dirígete a mí como
+Comisario.
+
+PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
+
+    TZ=America/Mexico_City date '+%Y-%m-%d %H:%M %Z'
+    git fetch origin
+    git branch -r | sed 's#origin/##' | sort
+    git merge --ff-only origin/main
+    git merge --ff-only origin/claude/argos-139-qe9f01
+    git merge --ff-only origin/claude/argos-140
+    git merge --ff-only origin/claude/argos-141-nacional-kh5fj6
+    git merge --ff-only origin/claude/argos-criminal-intelligence-otiawj
+    git merge --ff-only origin/claude/argos-144
+    git merge --ff-only origin/claude/argos-145
+    git merge --ff-only origin/claude/argos-146
+    git merge --ff-only origin/claude/argos-147
+    ls reports/ | grep '^argos-' | tail -6
+    ls reports/ | wc -l
+
+DEBES ENCONTRAR: última edición argos-2026-11-05 (ARGOS 147) y 275 archivos en
+reports/ (271 de la edición más índice, pendientes y las dos órdenes de 148). ARGOS
+139 a 147 NO ESTÁN EN main: cada una en su rama, encima de la anterior; 147 en
+claude/argos-147. El clon puede arrancar por detrás o en HEAD suelto: dilo y no es
+fallo. Si algún merge NO es fast-forward, PARA Y AVÍSAME.
+
+RED: curl -s -o /dev/null -m 12 -w '%{http_code}\n' https://www.gob.mx/fgr
+Si NO devuelve 000, DILO y lee los boletines directamente (WebFetch). Si devuelve
+000, sigue bloqueado: solo WebSearch.
+
+VENTANA: abre 2026-11-05 09:42 CDMX —donde cerró ARGOS 147— y cierra a la HORA REAL
+de tu arranque. CALCULA LA DURACIÓN CON date y escribe el calendario día por día en
+el Bloque 0. Si mi «Procede» llega más de DOS HORAS después del Bloque 0, AVÍSAME y
+propón cerrar la ventana a la hora del «Procede». 147: 26 h 50 min, densidad 0,41.
+FECHA DEL ARCHIVO: argos-<FECHA DE HOY>.html (sin sufijo). Radar: WINDOW_DAYS = número
+de fechas de calendario que toque la ventana (desde el 5-nov); la plantilla de 147
+trae 2: CÁMBIALO en el script y en la aserción del generador (el texto a reemplazar
+es «WINDOW_DAYS = 2;»).
+
+================================================================================
+MODO DE BÚSQUEDA
+================================================================================
+TODA BÚSQUEDA CON mode:"extended". Primera búsqueda: CONSULTA DE CONTROL en los dos
+modos. TOPE DE 200 BÚSQUEDAS POR TURNO, COMPARTIDO: CONTROL 2 · COORDINADOR 18 ·
+OLA 150 (6 × 25, cuatro de cada equipo reservadas a fecha en la ruta) ·
+procedencia-cifras 30 (R1 24 · R2 6). Cifra de peso ENTRE COMILLAS. UN DOMINIO POR
+CONSULTA site:, NUNCA OR. El coordinador hace el RECALL NACIONAL POR DÍA (con
+«instalaciones / sede» y «bloqueos») Y LA TRIPLE CONSULTA FEDERAL ANTES DE LA OLA.
+⚠️ LECCIONES DE 147: (a) LA HORA DE UN HECHO SE BUSCA TAMBIÉN EN NOTAS DE CONTEXTO
+DEL MISMO DÍA (Coto Premier: 06:34 en una nota sobre la GN → recuperación); (b)
+ANTES DE DECLARAR «SIN RUTA», BUSCAR EL TOPÓNIMO EN EL MEDIO QUE YA DIO RUTA (tres
+homicidios de Sinaloa); (c) UN TITULAR AGREGADO («siete en varios municipios») NO
+SOSTIENE EL REPARTO POR MUNICIPIO; (d) FIJAR POR TITULAR SI ES ATAQUE O HALLAZGO
+(Chilpancingo); (e) LA MARCA «CONSULTA» SE ESCRIBE DESPUÉS DE LA ÚLTIMA BÚSQUEDA.
+
+================================================================================
+ENCARGOS, PRIMERO Y SIN NEGOCIAR
+================================================================================
+ 0. CICLO: C (Occidente + Sureste), por la tabla de CLAUDE.md, después de la
+    prioridad sobre el ciclo.
+ 1. DECISIÓN PENDIENTE DEL DESTINATARIO (sin respuesta en 146 ni 147; pregúntamela
+    en el Bloque 0): (a) excepción para rojos sin ruta fechada (Reynosa Puerta Sur,
+    Valle de Chalco).
+ 2. CLÁUSULAS DE RETIRO DE 147 (10): todas salvo -004. Prioridad: -010 Mazatlán
+    abogada (día 3 o 4-nov) · -003 Chilpancingo (día) · -011 Yucatán (día de la
+    detención). Abiertas de 146: -012 Cuautitlán Izcalli · -024 Ario de Rosales.
+ 3. RECUPERACIONES DE 147: REC-001 Champotón (día; presuntos detenidos) · REC-002
+    Mazatlán centros de rehabilitación (hora) · REC-003 Coto Premier (si aparece
+    hora posterior a las 06:52 del 4, vuelve a 147 por fe de erratas).
+ 4. RESERVAS DE 147: -001 Cuernavaca (detenidos; comunicado) · -002 Tancítaro
+    (versión de herencia) · -004 Indaparapeo (saldo; drones) · -007 Olinalá
+    (titular propio) · -009 (mercado Hidalgo o Juárez).
+ 5. VISTOS SIN RUTA: Reynosa Puerta Sur · Culiacán Los Ángeles e Infonavit
+    Solidaridad · Querétaro col. Morelos · SLP Río Santiago · Mazatlán Cima de las
+    Rocas (1-nov, 2 muertos, rojo potencial de 146) · Valle de Chalco · Jiutepec.
+ 6. BOLETÍN FEDERAL: acciones del 4-nov (sin indexar al cierre de 147) y de cada día
+    de la ventana (triple consulta).
+ 7. SENTENCIAS CANDIDATAS: OAXACA 157 AÑOS (boletín 2,948 de la FGEO) · Los Ramones
+    (FGR) · FGR Tabasco · Tulantepec · Tecate · Mexicali · Jalisco · NL 40 años ·
+    Ecatepec · Fresnillo · Ramos Arizpe · Huejotzingo (posible homónimo).
+    Integrable SOLO con boletín oficial y término expreso.
+ 8. SEGUIMIENTO (fuera del semáforo): Matamoros (tirador del helicóptero) ·
+    Coatzacoalcos «El Panda» (audiencia del 9-nov) · Orizaba (fecha de la
+    vinculación) · Irapuato -146-006 (2 o 4 heridos) · Tijuana -143-005, Mexicali
+    -145-003, Almoloya, Tehuacán (no consultados en 147).
+
+================================================================================
+BARRIDO
+================================================================================
+ Plantilla: tools/plantilla-equipos-148.md (escribe la hora de cierre).
+ PRIORIDAD SOBRE EL CICLO: sentencias NO REVISADA (4): Sin, Dgo · Nay · Qro; Son sin
+ páginas; Coah y Camp sin dominio confirmado · armamento NO REVISADA (17): primero
+ Pue (dos ediciones), luego Chih · NL, SLP · Jal, Nay, Ags, Mich, Gto · Mor, Tlax,
+ Hgo, Qro · Camp, Gro, Yuc, QRoo · alto impacto solo amplia: BCS, Dgo · NL, SLP ·
+ Jal, Col, Ags · CDMX, Edomex, Pue, Tlax. Listas en _pendientes.md, «Abiertos que
+ ARGOS 148 hereda».
+
+================================================================================
+FORMA, CONSTRUCCIÓN Y CONTROLES
+================================================================================
+ · Parte de tools/datos-argos-147.py (copia a datos-argos-148.py) y de
+   reports/argos-2026-11-05.html como plantilla (su <title> dice «ARGOS 147 —
+   Reporte Nacional de Seguridad — 2026-11-05»). Actualiza el <title> que
+   reemplaza (hoy dice ARGOS 146), el reemplazo de WINDOW_DAYS (hoy 5 → 2: pasa a
+   2 → N), RET (06:52 del 4 → 09:42 del 5), HORAS, DUR, CONSULTA, las aserciones y
+   las listas de fichas por página.
+ · Criterio, totales, acciones como SOLICITUD, portada sin titulares, conclusiones
+   con «vínculo no acreditado» y sin repetir las de 147 (drones y franja
+   aguacatera en Michoacán, regidor con amenazas, explosivos y homicidios en
+   Sinaloa, eje Chilpancingo–Olinalá, blancos con concurrencia de personas).
+ · Móvil y texto SE GENERAN: gen-movil.py 148 <FECHA> 147 2026-11-05 <HORA> ·
+   gen-texto.py · node tools/validar.js reports/argos-<FECHA>.html 2026-11-05
+   <FECHA> → validación OK.
+ · editor-duplicidad y procedencia-cifras: VEINTE PASES, dos rondas; la ronda 2 EN
+   SERIE.
+ · Marca «Consulta»: hora real de la última búsqueda.
+ · Cierre: _pendientes.md, indice-arg-id.md y orden de ARGOS 149. Commit y push.
+ · Detalle completo: reports/_arranque-ARGOS-148.md.
+
+Empieza por el Bloque 0 y dime qué encuentras antes de seguir.

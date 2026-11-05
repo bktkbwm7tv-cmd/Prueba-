@@ -24,7 +24,7 @@ Pase el cursor sobre un estado.
 
   · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 6 eventos
 
-  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 1 eventos
+  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 1 evento
 
 ── LO QUE DEBE HACER EL MANDO
 
@@ -89,15 +89,17 @@ prisión preventiva, por titular, Hora Cero 2026/11/04) · Ixtapaluca, «El Patr
 Linos (3-nov) · Tijuana, coordinador del Movimiento del Sombrero asesinado (noche del domingo
 1-nov, SOLO POR RESUMEN; publicado el 4) · Mazatlán, policía municipal herido: día fijado, 2-nov
 (El Diario de Chihuahua 2026/nov/02) · Irapuato, Las Heras (3-nov) · Tulum, Francisco Uh May
-(persecución, 1 muerto, 1 detenido; PorEsto 2026/11/3) · sin ruta fechada propia o día no fijado
-— SIN RUTA FECHADA — NO SE FICHA: Guerrero, Culiacán: en los deslindes de ARG-147-003 y -006 ·
-Querétaro, col. Morelos (1 muerto) · San Luis Potosí, bulevar Río Santiago (persecución) ·
-Reynosa, col. Puerta Sur, restos calcinados y fosa hallados por un colectivo (sin fecha;
-ARG-140-008 en el mismo predio, 22-oct) · Valle de Chalco · Jiutepec · cuerpos sin causa
-informada por autoridad: Cortazar, col. Chapingo (1, en bolsas; Noticieros en Línea 2026/nov/04)
-· Nogales, Ver. (1) · Tepic (2 adultos mayores, causa por determinar) · balances, no se reparten
-ni se integran: Guerrero, ver ARG-147-003 · 42 homicidios en el país el 4-nov, Guanajuato 7 y
-Sinaloa 6 (diario.mx 2026/nov/05) · Guanajuato, «al menos ocho» (sin fecha).
+(persecución y balacera, 1 muerto, por slug; 1 detenido, SOLO POR RESUMEN; PorEsto 2026/11/3) ·
+sin ruta fechada propia o día no fijado — SIN RUTA FECHADA — NO SE FICHA: Guerrero, Culiacán: en
+los deslindes de ARG-147-003 y -006 · Querétaro, col. Morelos (1 muerto, por titular; día, SOLO
+POR RESUMEN) · San Luis Potosí, bulevar Río Santiago (persecución) · Reynosa, col. Puerta Sur,
+restos calcinados y fosa hallados por un colectivo (sin fecha; ARG-140-008 en el mismo predio,
+22-oct) · Valle de Chalco · Jiutepec · cuerpos sin causa informada por autoridad: Cortazar, col.
+Chapingo (1, en bolsas, por titular; Noticieros en Línea 2026/nov/04) · Nogales, Ver. (1, por
+titular; Golpe Político 2026/11/04) · Tepic (2 adultos mayores, por titular; causa por
+determinar; NTV 2026/11/04) · balances, no se reparten ni se integran: Guerrero, ver ARG-147-003
+· Guanajuato y Sinaloa, «13 asesinatos en un día», por titular (diario.mx 2026/nov/05); 42 en el
+país, SOLO POR RESUMEN · Guanajuato, «al menos ocho», por titular (Turquesa, sin fecha).
 Seguimiento, fuera del semáforo: ARG-146-006 (Irapuato): «cuatro lesionados», por titular
 (Latinus 2026/11/4), frente a «dos heridos» (Correo; La Silla Rota 2026/11/4): CIFRA DE HERIDOS
 CONTRADICHA · ARG-146-019, -020 y -021: detenciones del 3-nov, por ruta y por el boletín federal
@@ -135,7 +137,7 @@ Institucional 1 · Nacional 8 · Regional 4 · Abierta 0 · con fecha en la ruta
 (2026/11/04) · La Jornada (2026/11/04) · Infobae (2026/11/04) · Proceso (2026/11/4) · Informador
 (20261104) · Central Municipal (2026/11/04) · Código Qro (2026/11/04) · Quinto Poder
 (2026/11/04) · Hecho: 2026-11-04 · Hora: tarde, ~16:00 (solo por resumen) · Consulta:
-2026-11-05, última búsqueda 10:58 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
+2026-11-05, última búsqueda 10:45 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
 fila — armamento asegurado: no publicado
 Deslindes y reservas: Acapantzingo en ARGOS 145 (vistos de la ventana de 144): otro hecho. La
 víctima no figura en las cinco ediciones previas ni en el índice. ARG-144-002 (regidor de
@@ -159,7 +161,7 @@ SOLO POR RESUMEN: no es declaración · ningún detenido publicado
 ARG-147-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora y lugar solo por
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 6 ·
 Abierta 0 · con fecha en la ruta: Grupo Marmor (2026/11/04) · Media News (2026/11/05) · Hecho:
-2026-11-04 · Hora: ~mediodía (solo por resumen) · Consulta: 2026-11-05, última búsqueda 10:58 ·
+2026-11-04 · Hora: ~mediodía (solo por resumen) · Consulta: 2026-11-05, última búsqueda 10:45 ·
 Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no
 publicado
 Deslindes y reservas: Tancítaro no figura en las cinco ediciones previas ni en el índice. El
@@ -188,7 +190,7 @@ ARG-147-003 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sos
 resumen; titulares del hallazgo sin fecha en la ruta; ninguna fuente institucional · Fuentes:
 Institucional 0 · Nacional 3 · Regional 3 · Abierta 0 · con fecha en la ruta: Informador
 (20261104) · Infobae (2026/11/05) · Hecho: 2026-11-04 · Hora: hallazgo ~07:30-07:54 (solo por
-resumen) · Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Pendiente de corroboración ·
+resumen) · Consulta: 2026-11-05, última búsqueda 10:45 · Estatus: Pendiente de corroboración ·
 Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Tierra y Libertad de Chilpancingo no figura en las cinco ediciones previas
 ni en el índice; «Tierra y Libertad», El Diario de Chihuahua 2025/dec/30: otro hecho (2025).
@@ -214,7 +216,7 @@ ARG-147-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 capacidad de los drones no confirmada; republicaciones de una misma nota · Fuentes:
 Institucional 0 · Nacional 0 · Regional 2 · Abierta 0 · con fecha en la ruta: Grupo Marmor
 (2026/11/05) · RED113 (2026/11) · Hecho: 2026-11-04 · Hora: noche (solo por resumen) · Consulta:
-2026-11-05, última búsqueda 10:58 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
+2026-11-05, última búsqueda 10:45 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
 fila — armamento asegurado: no publicado
 Deslindes y reservas: Indaparapeo en el índice: ARG-140-016 (base de operaciones, 23-oct) y
 ARG-144-002 (El Triunfo, regidor, 28-oct): otros hechos, otro lugar. Grupo Marmor, Respuesta, La
@@ -244,7 +246,7 @@ publicado
 ARG-147-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 2 · Regional 4 ·
 Abierta 0 · con fecha en la ruta: Correo (2026/nov/04) · AM (2026/11/05) · Hecho: 2026-11-04 ·
-Hora: ~19:00 (solo por resumen) · Consulta: 2026-11-05, última búsqueda 10:58 · Estatus:
+Hora: ~19:00 (solo por resumen) · Consulta: 2026-11-05, última búsqueda 10:45 · Estatus:
 Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Pénjamo en el índice: ARG-141-001 (col. Lázaro Cárdenas, 25-oct, 1 muerto
 y 2 heridos, tres jóvenes; mismo saldo y medio): otro hecho por fecha, colonia y víctimas.
@@ -270,7 +272,7 @@ ARG-147-007 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sos
 circunstancia solo por resumen; ninguna fuente institucional · Fuentes: Institucional 0 ·
 Nacional 2 · Regional 2 · Abierta 0 · con fecha en la ruta: Informador (20261104) · Infobae
 (2026/11/05) · Hecho: 2026-11-04 · Hora: ~11:00 (solo por resumen) · Consulta: 2026-11-05,
-última búsqueda 10:58 · Estatus: Pendiente de corroboración · Conteo de armamento: sin fila —
+última búsqueda 10:45 · Estatus: Pendiente de corroboración · Conteo de armamento: sin fila —
 armas largas de los fallecidos, solo por resumen: no consta aseguramiento
 Deslindes y reservas: Olinalá y San Antonio Coyoacán no figuran en las cinco ediciones previas
 ni en el índice. Chilpancingo: ARG-147-003.
@@ -291,7 +293,7 @@ RESUMEN · FUENTE ÚNICA · ningún detenido publicado
 ARG-147-006 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: fuente única; hora
 solo por resumen · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con fecha en
 la ruta: Línea Directa (2026-11-04) · Hecho: 2026-11-04 · Hora: tarde-noche (solo por resumen) ·
-Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Pendiente de corroboración · Conteo de
+Consulta: 2026-11-05, última búsqueda 10:45 · Estatus: Pendiente de corroboración · Conteo de
 armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Alturas del Sur: mujer hallada muerta, presunta integrante de la GN (2-nov
 o antes; vista en ARGOS 146; pertenencia no acreditada): otro hecho. Col. Guadalupe Victoria:
@@ -313,7 +315,7 @@ ningún detenido publicado
 ARG-147-008 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: fuente única; hora
 solo por resumen · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con fecha en
 la ruta: Línea Directa (2026-11-04) · Hecho: 2026-11-04 · Hora: ~16:30 (solo por resumen) ·
-Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Pendiente de corroboración · Conteo de
+Consulta: 2026-11-05, última búsqueda 10:45 · Estatus: Pendiente de corroboración · Conteo de
 armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Col. Guadalupe Victoria (Las Tres Cruces) no figura en las cinco ediciones
 previas ni en el índice. Alturas del Sur: ARG-147-006, otro hecho.
@@ -331,21 +333,23 @@ previas ni en el índice. Alturas del Sur: ARG-147-006, otro hecho.
 
 Mazatlán · MERCADO HIDALGO, POR TITULAR · publicado el miércoles 4-NOV, por ruta (Luz Noticias
 2026-11-04: «sicarios llegan al mercado Hidalgo y ejecutan a propietario de una frutería») ·
-PUBLICADO EL DÍA DE APERTURA SIN HORA · ~11:20 del miércoles, SOLO POR RESUMEN; DÍA DEL HECHO
-CONTRADICHO (3 O 4-NOV): El Universal, solo por resumen, fecha el 3 · SI EL HECHO RESULTA
-ANTERIOR A LAS 06:52 DEL 4 (O DEL 3-NOV), ES DE LA VENTANA DE ARGOS 146 Y SE RETIRA DE ESTE
-TOTAL · 1 muerto: propietario de una frutería, por titular (🟡 homicidio doloso único) · dos
-agresores en motocicleta, SOLO POR RESUMEN · «asesinan a dos personas en distintos hechos», por
-titular (El Universal, sin fecha en la ruta) · ningún detenido publicado
+PUBLICADO EL DÍA DE APERTURA SIN HORA · ~11:20 del miércoles, SOLO POR RESUMEN · agrupado con la
+explosión del 4-nov por slug (El Universal) y por ruta (Diario de Yucatán 2026/11/04); una fecha
+del 3, solo por resumen, no reencontrada · «mercado Juárez», por titular (Meganoticias 785603):
+NOMBRE DEL MERCADO CONTRADICHO · SI EL HECHO RESULTA ANTERIOR A LAS 06:52 DEL 4 (O DEL 3-NOV),
+ES DE LA VENTANA DE ARGOS 146 Y SE RETIRA DE ESTE TOTAL · 1 muerto: propietario de una frutería,
+por titular (🟡 homicidio doloso único) · dos agresores en motocicleta, SOLO POR RESUMEN ·
+«asesinan a dos personas en distintos hechos», por titular (El Universal, sin fecha en la ruta)
+· ningún detenido publicado
 
 ── TRAZABILIDAD
 
-ARG-147-009 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día del hecho
-contradicho; hora solo por resumen; ninguna fuente institucional · Fuentes: Institucional 0 ·
-Nacional 1 · Regional 2 · Abierta 0 · con fecha en la ruta: Luz Noticias (2026-11-04) · Hecho:
-2026-11-04 · Hora: ~11:20 (solo por resumen) · Consulta: 2026-11-05, última búsqueda 10:58 ·
-Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no
-publicado
+ARG-147-009 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día por agrupación de
+medios; hora solo por resumen; nombre del mercado contradicho; ninguna fuente institucional ·
+Fuentes: Institucional 0 · Nacional 1 · Regional 2 · Abierta 0 · con fecha en la ruta: Luz
+Noticias (2026-11-04) · Hecho: 2026-11-04 · Hora: ~11:20 (solo por resumen) · Consulta:
+2026-11-05, última búsqueda 10:45 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
+fila — armamento asegurado: no publicado
 Deslindes y reservas: Mercado Hidalgo de Mazatlán no figura en las cinco ediciones previas ni en
 el índice. Abogada de la av. Carlos Canseco: ARG-147-010, otro hecho.
 
@@ -355,19 +359,20 @@ el índice. Abogada de la av. Carlos Canseco: ARG-147-010, otro hecho.
 
 Mazatlán · AV. CARLOS CANSECO, POR TITULAR · publicado el miércoles 4-NOV, por ruta (Luz
 Noticias 2026-11-04: «ejecutan a abogada por la avenida Carlos Canseco al norte de Mazatlán») ·
-PUBLICADO EL DÍA DE APERTURA SIN HORA · hora no publicada; DÍA DEL HECHO CONTRADICHO (3 O
-4-NOV): El Universal, solo por resumen, fecha el 3 · SI EL HECHO RESULTA ANTERIOR A LAS 06:52
-DEL 4 (O DEL 3-NOV), ES DE LA VENTANA DE ARGOS 146 Y SE RETIRA DE ESTE TOTAL · 1 muerta:
-abogada, por titular (🟡 homicidio doloso único; la profesión no es agravante de la lista roja) ·
-baleada mientras conducía, SOLO POR RESUMEN · «Fiscalía General del Estado investiga asesinato»,
-por titular (Sinaloahoy, sin fecha en la ruta): no es declaración · ningún detenido publicado
+PUBLICADO EL DÍA DE APERTURA SIN HORA · hora no publicada; DÍA DEL HECHO NO FIJADO (3 O 4-NOV):
+agrupado con la explosión del 4-nov por slug (El Universal); «en 48 horas, atacan a balazos a
+cuatro mujeres», por titular (El Universal) · SI EL HECHO RESULTA ANTERIOR A LAS 06:52 DEL 4 (O
+DEL 3-NOV), ES DE LA VENTANA DE ARGOS 146 Y SE RETIRA DE ESTE TOTAL · 1 muerta: abogada, por
+titular (🟡 homicidio doloso único; la profesión no es agravante de la lista roja) · baleada
+mientras conducía, SOLO POR RESUMEN · «Fiscalía General del Estado investiga asesinato», por
+titular (Sinaloahoy, sin fecha en la ruta): no es declaración · ningún detenido publicado
 
 ── TRAZABILIDAD
 
-ARG-147-010 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día del hecho
-contradicho; hora no fijada; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional
-1 · Regional 2 · Abierta 0 · con fecha en la ruta: Luz Noticias (2026-11-04) · Hecho: 2026-11-04
-· Hora: no fijada · Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Parcialmente
+ARG-147-010 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día del hecho no
+fijado; hora no publicada; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 1
+· Regional 2 · Abierta 0 · con fecha en la ruta: Luz Noticias (2026-11-04) · Hecho: 2026-11-04 ·
+Hora: no fijada · Consulta: 2026-11-05, última búsqueda 10:45 · Estatus: Parcialmente
 corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Av. Carlos Canseco no figura en las cinco ediciones previas ni en el
 índice. La ruta de Luz Noticias fija la publicación, no el hecho. Identidad de la víctima:
@@ -390,7 +395,7 @@ detenido, SOLO POR RESUMEN · FUENTE ÚNICA
 ARG-147-011 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: fuente única; día de
 la detención no fijado; detenido solo por resumen · Fuentes: Institucional 0 · Nacional 0 ·
 Regional 1 · Abierta 0 · con fecha en la ruta: Noticaribe (2026/11/04) · Hecho: 2026-11-04 ·
-Hora: no fijada · Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Pendiente de
+Hora: no fijada · Consulta: 2026-11-05, última búsqueda 10:45 · Estatus: Pendiente de
 corroboración · Conteo de armamento: sin fila — aseguramiento no publicado
 Deslindes y reservas: Avenida Huayacán no figura en las cinco ediciones previas ni en el índice.
 Homicidio original: 22-jul-2026, solo por resumen: evento anterior, no se recalifica. «Garabato»
@@ -420,7 +425,7 @@ de autoridad
 ARG-147-REC-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día solo por
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 1 · Regional 4 ·
 Abierta 0 · con fecha en la ruta: La Prensa de Coahuila (2026/11/02) · PorEsto (2026/11/5) ·
-Hecho: 2026-11-01 · Hora: no fijada · Consulta: 2026-11-05, última búsqueda 10:58 · Estatus:
+Hecho: 2026-11-01 · Hora: no fijada · Consulta: 2026-11-05, última búsqueda 10:45 · Estatus:
 Parcialmente corroborado · Ventana de origen: ARGOS 146 — fuera de todos los totales
 Deslindes y reservas: Champotón en el índice: ARG-105-002 (rancho El Cerrito, 23-ago): otro
 hecho. Detención de dos presuntos responsables: seguimiento; ficha verde propia solo con cifra
@@ -444,7 +449,7 @@ ARG-147-REC-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peo
 resumen; hora no fijada; heridos del segundo centro solo por resumen; ninguna fuente
 institucional · Fuentes: Institucional 0 · Nacional 1 · Regional 4 · Abierta 0 · con fecha en la
 ruta: Herqles (2026/11/02) · Guardia Nocturna (2026/11) · Hecho: 2026-11-01 · Hora: no fijada ·
-Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Parcialmente corroborado · Ventana de
+Consulta: 2026-11-05, última búsqueda 10:45 · Estatus: Parcialmente corroborado · Ventana de
 origen: ARGOS 146 — fuera de todos los totales
 Deslindes y reservas: Visto en el archivo de equipos de ARGOS 146 («centro de rehabilitación, 1
 muerto, 4 heridos», sin fecha), no publicado en su cartelón: era el segundo centro. Heridos del
@@ -473,7 +478,7 @@ ARG-147-REC-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peo
 resumen; número de artefactos contradicho; ninguna fuente institucional · Fuentes: Institucional
 0 · Nacional 2 · Regional 6 · Abierta 0 · con fecha en la ruta: Luz Noticias (2026-11-04) ·
 Diario de Yucatán (2026/11/04) · Los Noticieristas (2026/11) · Hecho: 2026-11-04 · Hora: ~06:34
-(solo por resumen) · Consulta: 2026-11-05, última búsqueda 10:58 · Estatus: Parcialmente
+(solo por resumen) · Consulta: 2026-11-05, última búsqueda 10:45 · Estatus: Parcialmente
 corroborado · Ventana de origen: ARGOS 146 — fuera de todos los totales
 Deslindes y reservas: Coto Premier no figura en las cinco ediciones previas ni en el índice.
 Abogada (av. Carlos Canseco) y frutería del Mercado Hidalgo, reunidos con este hecho por Diario
@@ -530,11 +535,11 @@ detenidos, «diez armas y 895 cartuchos», por titular (La Nigua, sin fecha); 5 
 36 cargadores, SOLO POR RESUMEN; primera publicación 3-nov (crprensa; Diario de Yucatán
 2026/11/03): ventana de ARGOS 146 · Villahermosa, Gaviotas Norte: 3 detenidos, 1 corta, 1
 cargador, SOLO POR RESUMEN: FECHA NO FIJADA — NO SE INTEGRA · Sinaloa, Semar: 15 largas, 30
-cargadores (= Caminaguato–El Tepuche, visto en ARGOS 146) · Edomex, operativo contra «Los
-Gigan»: 32 detenidos, 20 armas, 178,780 litros, SOLO POR RESUMEN: FECHA NO FIJADA — NO SE
-INTEGRA; posible relación con Texcoco–Chimalhuacán–Ecatepec (12 detenidos, 178,780 litros, ARGOS
-146): POSIBLE DUPLICIDAD · boletín federal de acciones del 4-nov: SIN RESULTADO INDEXADO EN
-VENTANA.
+cargadores, HEREDADO — NO REVERIFICADO (= Caminaguato–El Tepuche, visto en ARGOS 146) · Edomex,
+operativo contra «Los Gigan»: 32 detenidos, 20 armas, 178,780 litros, SOLO POR RESUMEN: FECHA NO
+FIJADA — NO SE INTEGRA; posible relación con Texcoco–Chimalhuacán–Ecatepec (12 detenidos,
+178,780 litros, ARGOS 146, HEREDADO — NO REVERIFICADO): POSIBLE DUPLICIDAD · boletín federal de
+acciones del 4-nov: SIN RESULTADO INDEXADO EN VENTANA.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-11-05 · Hora: 09:42 (CDMX) · Corte: Matutino · ARGOS N.° 147 · USO INSTITUCIONAL
@@ -561,7 +566,7 @@ VENTANA.
   Tabasco | Portación de arma de fuego sin licencia; 1 sentenciado, SOLO POR RESUMEN · nuevo en ARGOS 147 | No publicada | FGR (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL · sin URL, pena ni campos individualizadores | No confirmado
   Jalisco · Tlajomulco · Tlaquepaque | Dos feminicidios; 2 sentenciados · candidato anterior | 55 y 40 años, por titular de medios (Informador 20261029) | Fiscalía de Jalisco (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · publicado el 29-oct, fuera de esta ventana; boletín del dominio no localizado | Bajo
   Puebla · Huejotzingo | Feminicidio y aborto · candidato de ARGOS 144 | 55 años, por titular de medios | FGE Puebla (por medios) | POSIBLE CASO HOMÓNIMO — NO INTEGRAR HASTA VALIDACIÓN · el boletín de 55 años del dominio es de otro caso (secuestro, 2025) | No confirmado
-  BC · NL · Edomex · Zac · Coah · Hgo · Camp | Tecate (FGR, 4 sentenciados) · Mexicali (45 años) · NL 40 años y Doctor Arroyo, NL (15 años), ambos 28-oct · Ecatepec · Fresnillo · Ramos Arizpe · Tulantepec (audiencia de pena del 5-nov) · FGR Campeche (metilfenidato: no localizado) · candidatos anteriores | Ver ARGOS 146 | Fiscalías estatales y FGR (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · sin boletín del dominio en la ventana | No confirmado
+  BC · NL · Edomex · Zac · Coah · Hgo · Camp | Tecate (FGR, 4 sentenciados) · Mexicali (45 años) · NL 40 años y Doctor Arroyo, NL (15 años), ambos 28-oct · Ecatepec · Fresnillo · Ramos Arizpe · Tulantepec (audiencia de pena del 5-nov) · FGR Campeche (metilfenidato: no localizado) · candidatos anteriores | Ver ARGOS 146 · HEREDADO — NO REVERIFICADO | Fiscalías estatales y FGR (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · sin boletín del dominio en la ventana | No confirmado
 
 Publicadas antes de la ventana, no integrables: FGJ Tamaulipas (FGJE-424-2026, 29-oct, SOLO POR
 RESUMEN) · FGE Tabasco (24-oct) · FGE Colima (15-oct) · FGE Quintana Roo (18-oct) · FGE Guerrero

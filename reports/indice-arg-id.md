@@ -1099,3 +1099,22 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-146-ARM-004` | 146 | 2026-11-03 | ARG-146-ARM-004 — Culiacán, Sinaloa: armas y detenidos sin cifra integrable; ficha ARG-146-023; Bajo |
 | `ARG-146-FE-001` | 146 | 2026-11-04 | ARG-146-FE-001 — ARGOS 145: Pénjamo ARG-145-002 🟡 → 🔴 (segunda víctima muerta en hospital, solo por resumen; titular AM «dos hombres muertos»); rojos 1→2, muertos 5→6. NO PUBLICADA EN EL CARTELÓN |
 | `ARG-146-FE-002` | 146 | 2026-11-04 | ARG-146-FE-002 — ARGOS 145: Cancún Paseos del Mar, 🔴 de su ventana, publicado como ARG-146-REC-001 → rojos +1, muertos +3, +QRoo. NO PUBLICADA EN EL CARTELÓN |
+| `ARG-147-001` | 147 | 2026-11-04 | ARG-147-001 — Cuernavaca (Ejidos de Acapantzingo), Morelos: regidor Gabriel Rivas Ríos asesinado a balazos; había denunciado amenazas (titular); Fiscalía de Morelos por titular de La Razón; 🔴; ★★★☆☆ |
+| `ARG-147-002` | 147 | 2026-11-04 | ARG-147-002 — Tancítaro (Los Fresnos), Michoacán: dos hermanos asesinados en huerta de aguacate; Grupo Marmor 2026/11/04; 🔴; ★★★☆☆ |
+| `ARG-147-003` | 147 | 2026-11-04 | ARG-147-003 — Chilpancingo (col. Tierra y Libertad), Guerrero: dos hombres hallados asesinados y torturados (titulares sin fecha; día por Informador 20261104, solo resumen); 🔴; ★★☆☆☆ |
+| `ARG-147-004` | 147 | 2026-11-04 | ARG-147-004 — Indaparapeo (Colonia de Guadalupe / San Lucas Pío), Michoacán: enfrentamiento entre grupos con drones (titular); saldo no informado; FRONTERA; 🔴; ★★★☆☆ |
+| `ARG-147-005` | 147 | 2026-11-04 | ARG-147-005 — Pénjamo (zona centro), Guanajuato: 1 muerto y 2 heridos en un puesto; Correo 2026/nov/04; 🟡; ★★★☆☆ |
+| `ARG-147-006` | 147 | 2026-11-04 | ARG-147-006 — Culiacán (Alturas del Sur), Sinaloa: joven asesinado a balazos; Línea Directa 2026-11-04; fuente única; 🟡; ★★☆☆☆ |
+| `ARG-147-007` | 147 | 2026-11-04 | ARG-147-007 — Olinalá (San Antonio Coyoacán), Guerrero: 2 muertos en enfrentamiento entre grupos armados (solo resumen); 🟡; ★★☆☆☆ |
+| `ARG-147-008` | 147 | 2026-11-04 | ARG-147-008 — Culiacán (col. Guadalupe Victoria), Sinaloa: hombre asesinado en una vivienda; Línea Directa 2026-11-04; fuente única; 🟡; ★★☆☆☆ |
+| `ARG-147-009` | 147 | 2026-11-04 | ARG-147-009 — Mazatlán (Mercado Hidalgo / «Juárez»), Sinaloa: propietario de una frutería ejecutado; Luz Noticias 2026-11-04; 🟡; ★★★☆☆ |
+| `ARG-147-010` | 147 | 2026-11-04 | ARG-147-010 — Mazatlán (av. Carlos Canseco), Sinaloa: abogada ejecutada; día 3 o 4-nov no fijado; Luz Noticias 2026-11-04; 🟡; ★★★☆☆ |
+| `ARG-147-011` | 147 | 2026-11-04 | ARG-147-011 — Yucatán: detención del presunto autor intelectual de un homicidio en av. Huayacán, Cancún; Noticaribe 2026/11/04; fuente única; 🟢; ★★☆☆☆ |
+| `ARG-147-REC-001` | 147 | 2026-11-01 | ARG-147-REC-001 — Champotón (Mayatecún II), Campeche: ataque en expendio de bebidas, 4 muertos y 2 heridos (titular); día solo resumen; ventana de ARGOS 146; 🔴 en su ventana |
+| `ARG-147-REC-002` | 147 | 2026-11-01 | ARG-147-REC-002 — Mazatlán, Sinaloa: ataques a dos centros de rehabilitación, 3 muertos y 1 herido (titular); ventana de ARGOS 146; 🔴 en su ventana |
+| `ARG-147-REC-003` | 147 | 2026-11-04 | ARG-147-REC-003 — Mazatlán (Coto Premier), Sinaloa: explosivos artesanales contra vivienda, ~06:34 solo resumen; ventana de ARGOS 146; 🔴 en su ventana |
+| `ARG-147-FE-001` | 147 | 2026-11-05 | ARG-147-FE-001 — ARGOS 132: Orizaba ARG-132-002 🟡 → 🔴 (muerte del agente el 30-oct), por decisión del destinatario. NO PUBLICADA EN EL CARTELÓN |
+| `ARG-147-FE-002` | 147 | 2026-11-05 | ARG-147-FE-002 — ARGOS 146: Uruapan ARG-146-007 🔴 → 🟡 (patrullaje solo por resumen), por decisión del destinatario. NO PUBLICADA EN EL CARTELÓN |
+| `ARG-147-FE-003` | 147 | 2026-11-05 | ARG-147-FE-003 — ARGOS 145: ARG-146-FE-001 no ratificada; Pénjamo ARG-145-002 vuelve a 🟡. NO PUBLICADA EN EL CARTELÓN |
+| `ARG-147-FE-004` | 147 | 2026-11-05 | ARG-147-FE-004 — ARGOS 146: tres recuperaciones (REC-001 a -003) → 15 rojos, +7 muertos (con FE-002). NO PUBLICADA EN EL CARTELÓN |
+| `ARG-147-FE-005` | 147 | 2026-11-05 | ARG-147-FE-005 — ARGOS 146: cláusulas de retiro de -019, -020 y -021 cerradas (detenciones del 3-nov); ARGOS 144: detenidos por titular 8 → n/d. NO PUBLICADA EN EL CARTELÓN |

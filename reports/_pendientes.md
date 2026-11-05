@@ -8,7 +8,7 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 146 (corte 2026-11-04; ventana 31-oct 11:14 → 4-nov 06:52, 91 h 38 min).
+**Última actualización**: ARGOS 147 (corte 2026-11-05; ventana 4-nov 06:52 → 5-nov 09:42, 26 h 50 min).
 
 ---
 
@@ -30,6 +30,8 @@ sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le
 **ARGOS 143 publicado el 28-oct** (ventana 27-oct 08:45 → 28-oct 08:28, 23 h 43 min; rama `claude/argos-criminal-intelligence-otiawj`, encima de 142). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-144.md`** (y `_ordenes-ARGOS-144.txt`).
 
 **ARGOS 144 publicado el 29-oct** (ventana 28-oct 08:28 → 29-oct 11:36, 27 h 08 min; rama `claude/argos-144`, encima de `claude/argos-criminal-intelligence-otiawj`; **ninguna de 139 a 144 está en `main`**). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-145.md`** (y `_ordenes-ARGOS-145.txt`).
+
+**ARGOS 147 publicado el 5-nov** (ventana 4-nov 06:52 → 5-nov 09:42, 26 h 50 min; rama `claude/argos-147`, encima de 146). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-148.md`** (y `_ordenes-ARGOS-148.txt`).
 
 ⚠️ **25-oct: la orden de 140 del 22-oct no se ejecutó** (la sesión se detuvo tras el Bloque 0; no hay edición del 22 al 24). **Orden rehecha el 25-oct** en la rama `claude/argos-140`: ventana larga **21-oct 10:23 → domingo 25-oct**, archivo `argos-2026-10-25.html`, `WINDOW_DAYS = 5`, recall nacional por día.
 
@@ -2738,3 +2740,39 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 6. **Decisiones del destinatario**: el «Procede» no respondió las tres preguntas del Bloque 0; se aplicó el estado vigente. Repetirlas en la orden de 147.
 7. **Presupuesto de 146**: 2 + 19 + 150 + 22 + 6 = **199 de 200**.
 8. **Rama**: 139 a 146 viven fuera de `main`; 146 en `claude/argos-146`.
+
+## ARGOS 147 — lo que cierra esta edición
+
+| Cerrado | Cómo |
+|---|---|
+| **Decisiones del destinatario (b), (c), (d), (e)** | Celaya `ARG-143-001` sigue 🟡 · Orizaba `ARG-132-002` → 🔴 (`ARG-147-FE-001`) · Cancún `-146-FE-002` ratificada; Pénjamo `-146-FE-001` no ratificada (`-147-FE-003`) · Uruapan `-146-007` → 🟡 (`-147-FE-002`) |
+| **Cláusulas de 146** | `-019` Cocula, `-020` Chenalhó, `-021` Cancún: detenciones del 3-nov → cerradas (`-147-FE-005`) |
+| **Detenidos de 144 por titular** | General Bravo 2 y Lindavista 6: tercera edición sin cifra de autoridad → 8 → n/d (`-147-FE-005`) |
+| **Mazatlán, centro de rehabilitación (visto de 146)** | Eran dos centros, 3 muertos → `ARG-147-REC-002` |
+| **Suaqui Grande `-146-010`** | «cuatro cráneos», cifra del colectivo; la FGJE no publica cifra |
+| **Celaya `-146-004`** | Saldo 3 muertos por dos titulares; la versión «Correo, 1 muerto» no existía (cerrado en R2 de 146) |
+
+## Abiertos que ARGOS 148 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| ⚠️ **Decisión (a) del destinatario, sin respuesta en 146 ni en 147** | Excepción para rojos sin ruta fechada (Reynosa Puerta Sur, Valle de Chalco). Mientras no responda, se mantiene la regla |
+| **Cláusulas de retiro de 147 (10)** | Todas salvo `-004`: hora no fijada frente a las 06:52 del 4. Prioridad: `-010` (abogada, día 3 o 4-nov), `-003` Chilpancingo (día solo por la nota agregada), `-011` Yucatán (día de la detención) |
+| **Recuperaciones de 147** | `REC-001` Champotón (día; presuntos detenidos sin cifra de autoridad) · `REC-002` Mazatlán (hora; heridos del segundo centro) · `REC-003` Coto Premier (hora 06:34 solo por resumen: si aparece ancla posterior a las 06:52 del 4, vuelve a 147 por fe de erratas) |
+| **Reservas de 147** | `-001` Cuernavaca: detenidos, comunicado de la Fiscalía · `-002` Tancítaro: versión de herencia (El Congresista) · `-003` Chilpancingo: identidad (una fuente: dos adolescentes de 17 años, no confirmado) · `-004` Indaparapeo: saldo y capacidad de los drones · `-007` Olinalá: titular propio · `-009`: nombre del mercado (Hidalgo o Juárez) |
+| **Cláusulas abiertas de 146** | `-012` Cuautitlán Izcalli (sábado 31 tarde, solo resumen) · `-024` Ario de Rosales (hora) |
+| **Cláusulas de 145** | `-010`, `-011`, `-012`: sin novedad |
+| **Vistos sin ruta** | Reynosa, col. Puerta Sur (restos calcinados y fosa; ¿mismo predio que ARG-140-008?) · Culiacán: fracc. Los Ángeles, Infonavit Solidaridad · Querétaro col. Morelos · SLP bulevar Río Santiago · Mazatlán, Cima de las Rocas (1-nov, 2 muertos, solo resumen: rojo potencial de 146) · Valle de Chalco · Jiutepec |
+| **Sentencias candidatas** | Oaxaca 157 años (boletín 2,948 de la FGEO: leerlo; 157 a frente a 157 a 6 m) · Los Ramones, NL (FGR) · FGR Tabasco (portación) · Tulantepec (audiencia del 5-nov) · Tecate · Mexicali · Jalisco (dos feminicidas) · NL 40 años · Ecatepec · Fresnillo · Ramos Arizpe · Huejotzingo (posible homónimo) |
+| **Seguimientos** | Matamoros (fiscal: disparo desde helicóptero de la Guardia Estatal; identificación del tirador) · Coatzacoalcos «El Panda» (audiencia del 9-nov) · Orizaba (fecha de la vinculación) · Irapuato `-146-006` (2 o 4 heridos) · Tijuana `-143-005`, Mexicali `-145-003`, Almoloya, Tehuacán: no consultados en 147 |
+| **Cobertura con prioridad sobre el ciclo en 148** | **Sentencias `NO REVISADA` (4)**: Sin, Dgo · Nay · Qro; sin páginas: Son; dominio no confirmado: Coah, Camp. **Armamento `NO REVISADA` (17)**, primero Pue (dos ediciones); luego Chih · NL, SLP · Jal, Nay, Ags, Mich, Gto · Mor, Tlax, Hgo, Qro · Camp, Gro, Yuc, QRoo; Son sin páginas; Coah sin dominio. **Alto impacto solo amplia**: BCS, Dgo · NL, SLP · Jal, Col, Ags · CDMX, Edomex, Pue, Tlax. Después, **CICLO C** (Occidente + Sureste: 148 = C) |
+
+## Deuda de método (ARGOS 147)
+
+1. **Hora por resumen anterior a la apertura** (Coto Premier): buscar la hora también en notas de contexto del mismo día.
+2. **«Sin ruta» desigual**: antes de declarar sin ruta, buscar el topónimo en el medio que ya dio ruta (tres homicidios de Sinaloa).
+3. **Ventana corta con apertura de madrugada**: 10 de 11 hechos bajo cláusula; totales frágiles por construcción.
+4. **Seguimiento sin dato nuevo**: solo entra al cartelón con dato nuevo con fuente propia.
+5. **Hora de «Consulta»**: el primer borrador llevaba una hora planeada (10:58); R2 la detectó. La marca se escribe después de la última búsqueda, nunca antes.
+6. **Presupuesto de 147**: 2 + 17 + 148 + 24 + 6 = **197 de 200**.
+7. **Rama**: 139 a 147 viven fuera de `main`; 147 en `claude/argos-147`.
