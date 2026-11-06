@@ -1118,3 +1118,15 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-147-FE-003` | 147 | 2026-11-05 | ARG-147-FE-003 — ARGOS 145: ARG-146-FE-001 no ratificada; Pénjamo ARG-145-002 vuelve a 🟡. NO PUBLICADA EN EL CARTELÓN |
 | `ARG-147-FE-004` | 147 | 2026-11-05 | ARG-147-FE-004 — ARGOS 146: tres recuperaciones (REC-001 a -003) → 15 rojos, +7 muertos (con FE-002). NO PUBLICADA EN EL CARTELÓN |
 | `ARG-147-FE-005` | 147 | 2026-11-05 | ARG-147-FE-005 — ARGOS 146: cláusulas de retiro de -019, -020 y -021 cerradas (detenciones del 3-nov); ARGOS 144: detenidos por titular 8 → n/d. NO PUBLICADA EN EL CARTELÓN |
+| `ARG-148-001` | 148 | 2026-11-05 | ARG-148-001 — Pachuca (col. Real de Minas), Hidalgo: policía estatal / exdirector de la policía de Huehuetla asesinado en intento de asalto (cargo contradicho entre titulares); 🔴; ★★★☆☆ |
+| `ARG-148-002` | 148 | 2026-11-05 | ARG-148-002 — Chietla (Villa de Atencingo), Puebla: ataque frente al Banco del Bienestar, 2 muertos (saldo contradicho: 1 muerto y 1 herida); hora contradicha; 🔴; ★★★☆☆ |
+| `ARG-148-003` | 148 | 2026-11-05 | ARG-148-003 — Navolato (Las Trancas), Sinaloa: enfrentamiento entre militares y civiles armados, 3 abatidos; quién inició no acreditado; 🟡; ★★★☆☆ |
+| `ARG-148-004` | 148 | 2026-11-05 | ARG-148-004 — Naucalpan (Lomas Verdes), Edomex: abatido «El General» (Cártel Nuevo Imperio, homicidio de Milton Morales) y un segundo (titular del 6-nov); operativo repelido; 🟡; ★★★☆☆ |
+| `ARG-148-005` | 148 | 2026-11-05 | ARG-148-005 — Culiacán (col. CNOP), Sinaloa: hombre perseguido y asesinado a balazos; Línea Directa 2026-11-05; 🟡; ★★★☆☆ |
+| `ARG-148-006` | 148 | 2026-11-05 | ARG-148-006 — Pachuca, Hidalgo: 4 detenidos (según medios) por el asesinato del policía de ARG-148-001; 🟢; ★★★☆☆ |
+| `ARG-148-007` | 148 | 2026-11-05 | ARG-148-007 — Morelia, Michoacán: FGE, 4 cateos, 3 detenidos, 1 arma larga, 119 cartuchos (integrados, Bajo); día no fijado; 🟢; ★★★☆☆ |
+| `ARG-148-008` | 148 | 2026-11-05 | ARG-148-008 — Queréndaro, Cotija y Tacámbaro, Michoacán: Ejército y GN, armas, granadas y AEI solo por resumen; Tacámbaro posible duplicidad con Pedernales (3-nov); 🟢; ★★☆☆☆ |
+| `ARG-148-009` | 148 | 2026-11-05 | ARG-148-009 — Pacífico frente a Chiapas y Oaxaca (asignado a Chiapas): Marina, más de una tonelada de cocaína, 1 detenido; día de las operaciones no fijado; 🟢; ★★★☆☆ |
+| `ARG-148-ARM-001` | 148 | 2026-11-05 | ARG-148-ARM-001 — Morelia, Michoacán: 1 larga, 119 cartuchos; ficha ARG-148-007; Bajo |
+| `ARG-148-ARM-002` | 148 | 2026-11-05 | ARG-148-ARM-002 — Queréndaro, Cotija y Tacámbaro: cualitativo; ficha ARG-148-008; Bajo |
+| `ARG-148-ARM-003` | 148 | 2026-11-05 | ARG-148-ARM-003 — Navolato, Sinaloa: cualitativo (jeep, armamento sin cifra); ficha ARG-148-003; Bajo |

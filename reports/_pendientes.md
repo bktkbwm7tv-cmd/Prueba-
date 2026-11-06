@@ -8,7 +8,7 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 147 (corte 2026-11-05; ventana 4-nov 06:52 → 5-nov 09:42, 26 h 50 min).
+**Última actualización**: ARGOS 148 (corte 2026-11-06; ventana 5-nov 09:42 → 6-nov 07:30, 21 h 48 min).
 
 ---
 
@@ -30,6 +30,8 @@ sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le
 **ARGOS 143 publicado el 28-oct** (ventana 27-oct 08:45 → 28-oct 08:28, 23 h 43 min; rama `claude/argos-criminal-intelligence-otiawj`, encima de 142). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-144.md`** (y `_ordenes-ARGOS-144.txt`).
 
 **ARGOS 144 publicado el 29-oct** (ventana 28-oct 08:28 → 29-oct 11:36, 27 h 08 min; rama `claude/argos-144`, encima de `claude/argos-criminal-intelligence-otiawj`; **ninguna de 139 a 144 está en `main`**). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-145.md`** (y `_ordenes-ARGOS-145.txt`).
+
+**ARGOS 148 publicado el 6-nov** (ventana 5-nov 09:42 → 6-nov 07:30, 21 h 48 min; rama `claude/argos-148`, encima de 147). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-149.md`** (y `_ordenes-ARGOS-149.txt`).
 
 **ARGOS 147 publicado el 5-nov** (ventana 4-nov 06:52 → 5-nov 09:42, 26 h 50 min; rama `claude/argos-147`, encima de 146). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-148.md`** (y `_ordenes-ARGOS-148.txt`).
 
@@ -2776,3 +2778,36 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 5. **Hora de «Consulta»**: el primer borrador llevaba una hora planeada (10:58); R2 la detectó. La marca se escribe después de la última búsqueda, nunca antes.
 6. **Presupuesto de 147**: 2 + 17 + 148 + 24 + 6 = **197 de 200**.
 7. **Rama**: 139 a 147 viven fuera de `main`; 147 en `claude/argos-147`.
+
+## ARGOS 148 — lo que cierra esta edición
+
+| Cerrado | Cómo |
+|---|---|
+| **Decisión (a) del destinatario** | **Mantener la regla** (6-nov): rojos sin ruta fechada no se fichan. Cerrada |
+| **Cláusula de `ARG-147-010`** | Día 4-nov fijado (Luz Noticias 2026-11-04; Noroeste, «el miércoles») |
+| **`ARG-147-011` fuente única** | Diario de Yucatán 2026/11/05 y otros |
+| **Orizaba `ARG-132-002`** | Vinculación del 22-oct (La Silla Rota 2026/10/22) |
+| **Cobertura de sentencias `NO REVISADA` de 147 (Sin, Dgo, Nay, Qro)** | Revisadas |
+
+## Abiertos que ARGOS 149 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| **Cláusulas de retiro de 148 (9, todas)** | Prioridad: `-002` Atencingo (hora: mañana, mediodía o tarde; saldo 1 o 2) · `-007` Morelia (día de los cateos) · `-008` Michoacán (fecha; Tacámbaro = Pedernales 3-nov) · `-009` Marina (día de las operaciones) |
+| **Color de `ARG-148-001`** | Cargo de la víctima: policía estatal en activo o exdirector sin cargo vigente. Si declaración oficial de baja → 🟡 por fe de erratas |
+| **Reservas de 148** | `-003` Navolato: comunicado de Defensa sobre quién inició (si el grupo agredió en patrullaje → 🔴) · `-004` Naucalpan: segundo abatido, corporaciones, armamento asegurado · `-006` detenidos con cifra de autoridad (SSPH) |
+| **Cláusulas de 147** | Todas salvo `-004` y `-010` siguen abiertas (hora frente a las 06:52 del 4) |
+| **Recuperaciones de 147** | REC-001 Champotón (detenidos sin autoridad; 4 o 5 muertos) · REC-003 Coto Premier (hora 06:34 no corroborada) |
+| **Vistos sin ruta** | Chilpancingo, Urvan (1 muerto y 4 o 2 heridos; 18:30 del 5 solo por resumen) · Reynosa Puerta Sur / Nuevo México ITAVU (fosa; sin día) · Valle de Chalco |
+| **Sentencias candidatas** | Oaxaca 157 años (boletín 2,948: URL individual) · FGR Paraíso, Tabasco (posible mismo caso que el candidato de 147) · Chiapas, Palenque, 65 años · Los Ramones · Saltillo–Monclova · Tulantepec · Tecate · Mexicali · Jalisco · Huejotzingo · Ecatepec · Fresnillo · Ramos Arizpe |
+| **Seguimientos** | Matamoros (tirador del helicóptero) · «El Panda» (audiencia del 9-nov) · Cuernavaca `-147-001` (detenidos) · Indaparapeo `-147-004` · Tijuana `-143-005` · Mexicali `-145-003` y `-146-011` |
+| **Cobertura con prioridad sobre el ciclo en 149** | **Sentencias `NO REVISADA` (11)**: BC, BCS, Son, Chih · NL, Zac · CDMX, Edomex, Pue, Mor, Tlax; sin dominio: Coah, Camp. **Armamento `NO REVISADA` (9)**: BC, BCS, Son, Sin, Dgo · Coah · Col · CDMX, Edomex (CDMX y Edomex, dos ediciones); Nay sin páginas. **Alto impacto solo amplia (12)**: BCS, Dgo (dos ediciones) · Coah · Jal, Col, Nay, Ags (Jal, Col, Ags: dos ediciones) · CDMX (dos ediciones), Mor, Qro · Oax, Chis. Después, **CICLO A** (Noroeste + Centro: 149 = A) |
+
+## Deuda de método (ARGOS 148)
+
+1. **Apertura a media mañana**: cuatro hechos del 5 (Coscomatepec, megaoperativo, Coto Residencial Atlántico, Los Huizaches) resultaron de la madrugada: ventana de 147. Buscar la hora antes de fichar todo hecho del día de apertura.
+2. **Cifras de republicaciones**: el desglose de Michoacán parecía titular y era resumen; Tacámbaro coincidía con un hecho de dos días antes.
+3. **Cargo de la víctima contradicho** entre titulares (Pachuca): declarar, no elegir.
+4. **Recuento por tipo frente a la lista íntegra**: fijado el criterio en §6 de fuentes (un emisor por nota propia; Meganoticias y ediciones estatales, regionales).
+5. **Presupuesto de 148**: 2 + 13 + 148 + 24 + 6 = **193 de 200**.
+6. **Rama**: 139 a 148 viven fuera de `main`; 148 en `claude/argos-148`.

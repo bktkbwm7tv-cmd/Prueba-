@@ -67,11 +67,15 @@ Criterio del recuento por tipo en las fichas: un emisor por nota propia; Meganot
 - `editor-duplicidad` R1 — CORREGIR (9 hallazgos; 0 duplicidades). Aplicados: Tabasco como desarrollo del candidato de 147 · detenidos de Pachuca fuera del conteo de armamento · Institucional 0 en la Marina · heridos no integrados, declarados · Valoración sin «descenso» y con advertencia de comparabilidad · fila de la Marina asignada a Chiapas · Conclusiones 4 y 5 como patrón · Cihuatlán en un solo lugar · Ensenada «ventana de 146 o 147».
 - `procedencia-cifras` R1 — CORREGIR (12 hallazgos; 24 de 24 búsquedas). Aplicados: Los Huizaches retirado (§7.5) · 710 y desglose de Michoacán solo por resumen; Pedernales · Naucalpan: segundo abatido por Infobae 2026/11/06; corporaciones contradichas; sin armas presupuestas en portada y conclusiones · Pachuca: cargo contradicho, MVS, Effetá · Atencingo: «mediodía»; N+ como única nacional · Navolato: N+ retirado · Morelia: desglose del 119 sin consolidar · Marina: 273 millones como estimación de medio · Oaxaca: Primera Línea restituida.
 
-**Ronda 2** (en serie): pendiente.
+**Ronda 2** (en serie):
+- `editor-duplicidad` R2 — CORREGIR (5 hallazgos y menores; 0 duplicidades; referencias tras la renumeración correctas). Aplicados: Conclusiones 2 y 4 como patrón e hipótesis, sin titular ni «punto de pago» · recuento por tipo con criterio declarado (§6); Abierta 1 en Atencingo; Meganoticias regional; Marina con 5 nacionales · Orizaba reasignado a 147 como desarrollo · Tabasco «posible mismo caso» · Los Ramones como candidato de 147 · Cotija con ARG-132-005 · Michoacán «por medios» en la cobertura · Contramuro descartado (§7.7).
+- `procedencia-cifras` R2 — CORREGIR (marcado; 6 de 6 búsquedas; ninguna cifra crítica cae). Aplicados: Pachuca «director» por El Congresista y «policía estatal» por El Universal Hidalgo; La Jornada Hidalgo, «tres» en el slug y «cuatro» en el titular; «según medios» en portada y panorama · Naucalpan: segundo abatido por titular del 6-nov, no reencontrado en R2; El Financiero 2026/11/05 con la declaración del secretario; Milton Morales 20 o 21-jul-2024 · Marina: «273 millones» por titular de Proceso (estimación del medio); «1.1 toneladas» (Crónica) · muertos por agresión con Atencingo contradicho. **No aplicado**: color de Pachuca — los cargos son compatibles (exdirector de Huehuetla y agente estatal fuera de servicio); sin declaración oficial de baja, se mantiene 🔴 con reserva.
+- **Construcción**: `python3 tools/datos-argos-148.py reports/argos-2026-11-05.html reports/argos-2026-11-06.html` · `node tools/validar.js reports/argos-2026-11-06.html 2026-11-05 2026-11-06` → validación OK · `python3 tools/gen-movil.py 148 2026-11-06 147 2026-11-05 07:30` (9/9 tarjetas; contadores 2/3/4; validación OK) · `python3 tools/gen-texto.py`.
+- **Marca «Consulta»**: 07:58 CDMX (cierre de la última búsqueda de R2); el corte de la ventana es 07:30.
 
 ## 9. Presupuesto de búsqueda
 
-Control 2 · coordinador 13 de 18 · ola 148 de 150 (Noroeste 25, Noreste 25, Occidente 25, Centro 25, Golfo 23, Sureste 25) · procedencia R1 24 de 24 · R2 pendiente.
+Control 2 · coordinador 13 de 18 · ola 148 de 150 (Noroeste 25, Noreste 25, Occidente 25, Centro 25, Golfo 23, Sureste 25) · procedencia R1 24 de 24 · R2 6 de 6 · **total 193 de 200**.
 
 ## 10. Hallazgos de método (no van al cartelón)
 

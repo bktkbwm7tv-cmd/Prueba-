@@ -28,8 +28,8 @@ Pase el cursor sobre un estado.
 
 ── LO QUE DEBE HACER EL MANDO
 
-1. SOLICITE A LA SSPH Y A LA PROCURADURÍA DE HIDALGO LA SITUACIÓN JURÍDICA DE LOS CUATRO
-DETENIDOS Y LA CONDICIÓN DE SERVICIO DE LA VÍCTIMA (ARG-148-001 y -006).
+1. SOLICITE A LA SSPH Y A LA PROCURADURÍA DE HIDALGO LA SITUACIÓN JURÍDICA DE LOS DETENIDOS
+(CUATRO, SEGÚN MEDIOS) Y LA CONDICIÓN DE SERVICIO DE LA VÍCTIMA (ARG-148-001 y -006).
 2. SOLICITE A LA FISCALÍA DE PUEBLA EL SALDO OFICIAL, LA HORA Y LAS LÍNEAS DE INVESTIGACIÓN DEL
 ATAQUE DE ATENCINGO (ARG-148-002).
 3. SOLICITE A LA DEFENSA EL PARTE DE LAS TRANCAS: QUIÉN INICIÓ, ARMAMENTO ASEGURADO Y SITUACIÓN
@@ -55,9 +55,9 @@ impacto de la ventana anterior
   Hidalgo · Pachuca (col. Real de Minas) · 5-NOV, POR RUTA | Policía estatal, exdirector de la policía de Huehuetla, asesinado en un intento de asalto | 🔴 Rojo | SIN BOLETÍN | La Silla Rota · Milenio · El Universal · N+ | ★★★☆☆ | ARG-148-001
   Puebla · Chietla (Villa de Atencingo) · 5-NOV, POR RUTA | Ataque frente al Banco del Bienestar: 2 muertos (saldo contradicho) | 🔴 Rojo | SIN BOLETÍN | N+ | ★★★☆☆ | ARG-148-002
   Sinaloa · Culiacán (col. CNOP) · 5-NOV, POR RUTA | Hombre perseguido y asesinado a balazos | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-148-005
-  Estado de México · Naucalpan (Lomas Verdes) · 5-NOV, POR RUTA | Abatido el señalado por el homicidio del comisario Milton Morales y un acompañante | 🟡 Amarillo | SIN BOLETÍN | La Jornada · El Universal · Infobae | ★★★☆☆ | ARG-148-004
+  Estado de México · Naucalpan (Lomas Verdes) · 5-NOV, POR RUTA | Abatido el señalado por el homicidio del comisario Milton Morales; un segundo abatido, por titular del día siguiente | 🟡 Amarillo | SIN BOLETÍN | La Jornada · El Universal · Infobae | ★★★☆☆ | ARG-148-004
   Sinaloa · Navolato (Las Trancas) · 5-NOV, POR RUTA | Enfrentamiento entre militares y civiles armados: 3 abatidos | 🟡 Amarillo | SIN BOLETÍN | López-Dóriga | ★★★☆☆ | ARG-148-003
-  Hidalgo · Pachuca (autopista México–Pachuca) · 5-NOV, POR RUTA | 4 detenidos tras el asesinato del policía (ARG-148-001) | 🟢 Verde | SIN BOLETÍN | La Silla Rota · Milenio | ★★★☆☆ | ARG-148-006
+  Hidalgo · Pachuca (autopista México–Pachuca) · 5-NOV, POR RUTA | 4 detenidos, según medios, tras el asesinato del policía (ARG-148-001) | 🟢 Verde | SIN BOLETÍN | La Silla Rota · Milenio | ★★★☆☆ | ARG-148-006
   Chiapas · aguas del Pacífico frente a Chiapas y Oaxaca (asignado a Chiapas) · PUB. 5-NOV, POR RUTA | Más de una tonelada de cocaína asegurada en el Pacífico; 1 detenido | 🟢 Verde | SIN BOLETÍN | El Financiero · Proceso · La Silla Rota · El Universal · Excélsior | ★★★☆☆ | ARG-148-009
   Michoacán · Queréndaro, Cotija y Tacámbaro · PUB. 5-NOV, POR RUTA | Armas, granadas y explosivos asegurados en tres municipios; cifras solo por resumen | 🟢 Verde | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-148-008
   Michoacán · Morelia · PUB. 5-NOV, POR RUTA | 4 cateos: 3 detenidos, 1 arma larga y 119 cartuchos | 🟢 Verde | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-148-007
@@ -71,7 +71,8 @@ NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
 
 Armamento: 1 arma larga y 119 cartuchos (Morelia, confianza Bajo, día no fijado); el resto,
 cualitativo; ningún detenido con cifra de autoridad · muertos por agresión: 4, cálculo propio de
-las fichas · abatidos por la fuerza pública: 5 (Navolato 3, Naucalpan 2), fuera de «muertos por
+las fichas, incluidos los 2 de Atencingo con saldo contradicho (1 o 2) · abatidos por la fuerza
+pública: 5 (Navolato 3; Naucalpan 2, el segundo por titular del 6-nov), fuera de «muertos por
 agresión» · heridos: 0 integrados; los de ARG-148-002 (contradicho), -004 y -006 (solo por
 resumen), fuera del total · marcas: 9 de 9 PUBLICADO EL DÍA DE APERTURA SIN HORA · totales
 sujetos a las cláusulas de retiro de 9 fichas (hora no fijada frente a las 09:42 del 5): todas.
@@ -117,11 +118,11 @@ Síntesis 2026/11/05; Sociedad Noticias 2026/11/05) · PUBLICADO EL DÍA DE APER
 tarde, SOLO POR RESUMEN · SI RESULTA ANTERIOR A LAS 09:42 DEL 5, ES DE LA VENTANA DE ARGOS 147 Y
 SE RETIRA DE ESTE TOTAL · 1 muerto: «policía estatal», por titular (La Silla Rota; Síntesis);
 «exdirector de la policía de Huehuetla», por titular (Sociedad Noticias; Milenio; MVS
-2026/11/5); «director», por titular (El Universal): CARGO DE LA VÍCTIMA CONTRADICHO (🔴 víctima
-autoridad; si resulta exdirector sin cargo vigente, baja a 🟡) · fuera de servicio; intento de
-asalto, SOLO POR RESUMEN · «secuestran a su hijo y detienen a dos», por titular (Criterio
-Hidalgo): versión no confirmada por otras fuentes · detención de cuatro: ficha propia,
-ARG-148-006
+2026/11/5); «director», por titular (El Congresista); «policía estatal», por titular (El
+Universal Hidalgo): CARGO DE LA VÍCTIMA CONTRADICHO (🔴 víctima autoridad; si resulta exdirector
+sin cargo vigente, baja a 🟡) · fuera de servicio; intento de asalto, SOLO POR RESUMEN ·
+«secuestran a su hijo y detienen a dos», por titular (Criterio Hidalgo): versión no confirmada
+por otras fuentes · detención de cuatro: ficha propia, ARG-148-006
 
 ── TRAZABILIDAD
 
@@ -130,7 +131,7 @@ solo por resumen; cargo de la víctima contradicho entre titulares; ninguna fuen
 · Fuentes: Institucional 0 · Nacional 5 · Regional 4 · Abierta 0 · con fecha en la ruta: La
 Silla Rota (2026/11/5) · Síntesis (2026/11/05) · Sociedad Noticias (2026/11/05) · MVS
 (2026/11/5) · Hecho: 2026-11-05 · Hora: tarde (solo por resumen) · Consulta: 2026-11-06, última
-búsqueda 07:41 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
+búsqueda 07:58 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
 asegurado: no publicado
 Deslindes y reservas: Antecedente: secuestrado en 2022, por slug (Effetá). Real de Minas y
 Huehuetla no figuran en las cinco ediciones previas ni en el índice. Delito y detención en la
@@ -156,7 +157,7 @@ ARG-148-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 saldo contradicho entre titulares; ninguna fuente institucional · Fuentes: Institucional 0 ·
 Nacional 1 · Regional 8 · Abierta 1 · con fecha en la ruta: Síntesis (2026/11/05) · Retodiario
 (2026/11/05) · Hecho: 2026-11-05 · Hora: mañana, mediodía o tarde (solo por resumen,
-contradicho) · Consulta: 2026-11-06, última búsqueda 07:41 · Estatus: Parcialmente corroborado ·
+contradicho) · Consulta: 2026-11-06, última búsqueda 07:58 · Estatus: Parcialmente corroborado ·
 Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Chietla en el archivo de pendientes: ataque del domingo 18-oct (visto de
 ARGOS 137): otro hecho. Si el ataque fue por la mañana y antes de las 09:42 del 5, es de la
@@ -182,7 +183,7 @@ ARG-148-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 por medios; hora solo por resumen; ninguna fuente institucional · Fuentes: Institucional 0 ·
 Nacional 1 · Regional 7 · Abierta 0 · con fecha en la ruta: Línea Directa (2026-11-05) · Luz
 Noticias (2026-11-05) · Hecho: 2026-11-05 · Hora: tarde, ~15:00 o ~18:00 (solo por resumen) ·
-Consulta: 2026-11-06, última búsqueda 07:41 · Estatus: Parcialmente corroborado · Conteo de
+Consulta: 2026-11-06, última búsqueda 07:58 · Estatus: Parcialmente corroborado · Conteo de
 armamento: ARG-148-ARM-003
 Deslindes y reservas: Las Trancas no figura en las cinco ediciones previas ni en el índice.
 Navolato en el índice: ARG-130-005, ARG-132-001 y ARG-138-007 (La Palma, 🟡): otros hechos. Si
@@ -193,28 +194,31 @@ Defensa acredita que el grupo agredió a militares en patrullaje, sube a 🔴.
 ── HECHO
 
 Naucalpan · LOMAS VERDES, SOLO POR RESUMEN · jueves 5-NOV, por ruta (La Jornada 2026/11/05:
-«abaten a El General, señalado por homicidio de Milton Morales»; Quinto Poder 2026/11/05;
-Noticias Veracruz 2026/11/05) · PUBLICADO EL DÍA DE APERTURA SIN HORA · tarde, SOLO POR RESUMEN
-· SI RESULTA ANTERIOR A LAS 09:42 DEL 5, ES DE LA VENTANA DE ARGOS 147 Y SE RETIRA DE ESTE TOTAL
-· «abaten a El General», por titular (Quinto Poder) · 2 abatidos: «sujeto abatido junto con El
-General», por titular (Infobae 2026/11/06) · la autoridad ejecutaba una orden de aprehensión y
-fue recibida a balazos, según el secretario de Seguridad, SOLO POR RESUMEN (🟡 la autoridad
-ejecuta una acción y es repelida) · corporaciones y tipo de orden (SSPC, AIC-FGR y CNI con orden
-de aprehensión, o SSPC, Marina, FGR y CNI con órdenes de cateo), SOLO POR RESUMEN: CONTRADICHO ·
-un agente y un familiar heridos, SOLO POR RESUMEN · identidad del segundo abatido: no oficial
+«abaten a El General, señalado por homicidio de Milton Morales»; Quinto Poder 2026/11/05; El
+Financiero 2026/11/05) · PUBLICADO EL DÍA DE APERTURA SIN HORA · tarde, SOLO POR RESUMEN · SI
+RESULTA ANTERIOR A LAS 09:42 DEL 5, ES DE LA VENTANA DE ARGOS 147 Y SE RETIRA DE ESTE TOTAL ·
+«abaten a El General», por titular (Quinto Poder; El Financiero 2026/11/05: «… ordenó matar a
+Milton Morales: Harfuch») · 2 abatidos: 1 por titular del 5-nov; el segundo, «sujeto abatido
+junto con El General», por titular (Infobae 2026/11/06), no reencontrado en la segunda revisión
+· la autoridad ejecutaba una orden de aprehensión y fue recibida a balazos, según el secretario
+de Seguridad, SOLO POR RESUMEN (🟡 la autoridad ejecuta una acción y es repelida) · corporaciones
+y tipo de orden (SSPC, AIC-FGR y CNI con orden de aprehensión, o SSPC, Marina, FGR y CNI con
+órdenes de cateo), SOLO POR RESUMEN: CONTRADICHO · heridos, SOLO POR RESUMEN: identidad
+contradicha · identidad del segundo abatido: no oficial
 
 ── TRAZABILIDAD
 
 ARG-148-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: secuencia,
 corporaciones y heridos solo por resumen; segundo abatido por un titular del día siguiente ·
 Fuentes: Institucional 0 · Nacional 3 · Regional 2 · Abierta 0 · con fecha en la ruta: La
-Jornada (2026/11/05) · Quinto Poder (2026/11/05) · Noticias Veracruz (2026/11/05) · Infobae
+Jornada (2026/11/05) · Quinto Poder (2026/11/05) · El Financiero (2026/11/05) · Infobae
 (2026/11/06) · Hecho: 2026-11-05 · Hora: tarde (solo por resumen) · Consulta: 2026-11-06, última
-búsqueda 07:41 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
+búsqueda 07:58 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
 asegurado: no publicado
 Deslindes y reservas: Armamento asegurado: no publicado. Lomas Verdes y el Cártel Nuevo Imperio
-no figuran en las cinco ediciones previas ni en el índice. Homicidio de Milton Morales:
-21-jul-2024, hecho anterior, no se recalifica. Abatidos: no entran en «muertos por agresión».
+no figuran en las cinco ediciones previas ni en el índice. Homicidio de Milton Morales: 20 o
+21-jul-2024 (contradicho), hecho anterior, no se recalifica. Abatidos: no entran en «muertos por
+agresión».
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-11-06 · Hora: 07:30 (CDMX) · Corte: Matutino · ARGOS N.° 148 · USO INSTITUCIONAL
@@ -239,7 +243,7 @@ Noticieristas 2026/11: «corretean y asesinan a balazos a un hombre») (🟡 hom
 ARG-148-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 3 ·
 Abierta 0 · con fecha en la ruta: Línea Directa (2026-11-05) · Los Noticieristas (2026/11) ·
-Hecho: 2026-11-05 · Hora: noche (solo por resumen) · Consulta: 2026-11-06, última búsqueda 07:41
+Hecho: 2026-11-05 · Hora: noche (solo por resumen) · Consulta: 2026-11-06, última búsqueda 07:58
 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no
 publicado
 Deslindes y reservas: Col. CNOP no figura en las cinco ediciones previas ni en el índice.
@@ -253,8 +257,8 @@ Pachuca · jueves 5-NOV, por ruta (La Silla Rota 2026/11/5: «… 4 detenidos»;
 LAS 09:42 DEL 5, ES DE LA VENTANA DE ARGOS 147 Y SE RETIRA DE ESTE TOTAL · 4 detenidos, por
 titular: cifra de medios · tres hombres y una mujer, uno herido de bala; localizados por el C5i
 en la autopista México–Pachuca, según la SSPH, SOLO POR RESUMEN · «detienen a dos», por titular
-(Criterio Hidalgo), y «hay tres detenidos», por slug (La Jornada Hidalgo): versiones distintas ·
-puestos a disposición del MP por homicidio y asalto, SOLO POR RESUMEN
+(Criterio Hidalgo), y La Jornada Hidalgo, «tres» en el slug y «cuatro» en el titular: versiones
+distintas · puestos a disposición del MP por homicidio y asalto, SOLO POR RESUMEN
 
 ── TRAZABILIDAD
 
@@ -262,7 +266,7 @@ ARG-148-006 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 por titular de medios; declaración de la SSPH solo por resumen · Fuentes: Institucional 0 ·
 Nacional 2 · Regional 3 · Abierta 0 · con fecha en la ruta: La Silla Rota (2026/11/5) · Sociedad
 Noticias (2026/11/05) · Hecho: 2026-11-05 · Hora: tarde (solo por resumen) · Consulta:
-2026-11-06, última búsqueda 07:41 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
+2026-11-06, última búsqueda 07:58 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
 fila — aseguramiento no publicado
 Deslindes y reservas: Hecho delictivo: ARG-148-001.
 
@@ -294,7 +298,7 @@ ARG-148-007 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 fijado; categoría del arma por titular de un medio; detenidos sin cifra de autoridad citada ·
 Fuentes: Institucional 0 · Nacional 0 · Regional 8 · Abierta 0 · con fecha en la ruta: Esfera
 Noticias (2026/11/05) · RED113 (2026/11) · Hecho: 2026-11-05 · Hora: no fijada · Consulta:
-2026-11-06, última búsqueda 07:41 · Estatus: Parcialmente corroborado · Conteo de armamento:
+2026-11-06, última búsqueda 07:58 · Estatus: Parcialmente corroborado · Conteo de armamento:
 ARG-148-ARM-001
 Deslindes y reservas: Morelia, cateos de la FGE: sin coincidencia de colonia ni cifras en las
 cinco ediciones previas. Detenidos fuera del conteo de armamento hasta cifra de autoridad.
@@ -322,7 +326,7 @@ ARG-148-008 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sos
 resumen; día no fijado; parte de Tacámbaro posiblemente anterior; republicaciones de una misma
 nota · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con fecha en la ruta:
 RED Michoacán (2026/11/05) · Hecho: 2026-11-05 · Hora: no fijada · Consulta: 2026-11-06, última
-búsqueda 07:41 · Estatus: Pendiente de corroboración · Conteo de armamento: ARG-148-ARM-002
+búsqueda 07:58 · Estatus: Pendiente de corroboración · Conteo de armamento: ARG-148-ARM-002
 Deslindes y reservas: Tacámbaro en el índice: ARG-109-001, ARG-109-ARM-001 y ARG-110-004
 (agosto): otros hechos. Cotija y Tacámbaro, febrero de 2026 (Infobae 2026/02/03): otro hecho.
 Pedernales, Tacámbaro, 2 o 3-nov (RED Michoacán 2026/11/03; Contramuro): mismas cifras, posible
@@ -338,9 +342,10 @@ Proceso 2026/11/5; La Silla Rota 2026/11/5) · PUBLICADO EL DÍA DE APERTURA SIN
 operaciones no fijado · SI RESULTA ANTERIOR A LAS 09:42 DEL 5, ES DE LA VENTANA DE ARGOS 147 Y
 SE RETIRA DE ESTE TOTAL · más de una tonelada de cocaína y 1 detenido, por titular (El
 Financiero: «aseguran más de una tonelada… hay un detenido») · anuncio del secretario de
-Seguridad, por titular de un medio (La Silla Rota: «…: Harfuch») · «273 millones de pesos»,
-estimación de un medio, SOLO POR RESUMEN · 1,149 kg en 32 bultos, dos operaciones, SOLO POR
-RESUMEN · Semar
+Seguridad, por titular de un medio (La Silla Rota: «…: Harfuch») · «calcula golpe de 273
+millones de pesos», por titular (Proceso 2026/11/5): estimación del medio, no de autoridad ·
+«1.1 toneladas», por titular (Crónica 2026/11/05) · 1,149 kg en 32 bultos, dos operaciones, SOLO
+POR RESUMEN · Semar
 
 ── TRAZABILIDAD
 
@@ -348,7 +353,7 @@ ARG-148-009 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 operaciones no fijado; desglose solo por resumen; declaración del secretario solo a través del
 titular de un medio · Fuentes: Institucional 0 · Nacional 5 · Regional 2 · Abierta 0 · con fecha
 en la ruta: El Financiero (2026/11/05) · Proceso (2026/11/5) · La Silla Rota (2026/11/5) ·
-Hecho: 2026-11-05 · Hora: no fijada · Consulta: 2026-11-06, última búsqueda 07:41 · Estatus:
+Hecho: 2026-11-05 · Hora: no fijada · Consulta: 2026-11-06, última búsqueda 07:58 · Estatus:
 Parcialmente corroborado · Conteo de armamento: sin fila — aseguramiento de droga, no de
 armamento
 Deslindes y reservas: N+ «más de 4 toneladas de cocaína en embarcaciones en Chiapas y Oaxaca»
