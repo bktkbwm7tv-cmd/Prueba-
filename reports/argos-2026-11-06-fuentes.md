@@ -23,7 +23,7 @@
 | — | ARGOS 147 | **Yucatán `ARG-147-011`**: deja de ser fuente única (Diario de Yucatán 2026/11/05 «caen en Yucatán un capo de Cancún y un traficante de armas de Tabasco»; Ruptura360; La Revista; Palco). Versión de la víctima contradicha (civil, líder sindical o policías). Sin cambio de color |
 | — | ARGOS 147 | **Champotón `ARG-147-REC-001`**: «detienen a 2 presuntos implicados», por titular (Tribuna Campeche); lunes 2-nov, solo por resumen; sin cifra de autoridad. Saldo 4 (TV Azteca, Bajo Palabra) o 5 muertos (PorEsto) |
 | — | ARGOS 147 | **Vistos de su ventana publicados en 148**: Coscomatepec (12 cateos, 7 detenidos, ~04:00 del 5), megaoperativo de 38 cateos (anuncio de madrugada del 5), Mazatlán Coto Residencial Atlántico (antes de las 06:30 del 5), Culiacán Los Huizaches (hallazgo ~04:00 o ~07:10 del 5). Todos 🟢 o 🟡: no se recuperan |
-| — | ARGOS 132 | **Orizaba `ARG-132-002`**: vinculación de los cuatro el 22-oct (La Silla Rota 2026/10/22, «se quedan en prisión 4 detenidos»); causa 588/2026, por resumen |
+| — | ARGOS 147 | **Seguimiento de Orizaba `ARG-132-002`** (ya 🔴 por `ARG-147-FE-001`): la vinculación de los cuatro fue el 22-oct (La Silla Rota 2026/10/22, «se quedan en prisión 4 detenidos»), no la fecha de la nota del 3-nov que citaba 147; causa 588/2026, por resumen. Desarrollo, no corrección a 132 |
 
 ## 4. Boletín federal (triple consulta)
 
@@ -35,9 +35,11 @@
 - **Cláusulas de 147**: `-010` cerrada (4-nov) · las demás, sin ancla horaria nueva.
 - **Recuperaciones de 147**: REC-001 (detenidos por titular, sin autoridad) · REC-002 (sin novedad) · REC-003 Coto Premier (hora 06:34 no corroborada; ninguna hora posterior a las 06:52 del 4).
 - **Sentencias candidatas**: Oaxaca 157 años (boletín 2,948 en el listado de `portal.fgeo.gob.mx`, por resumen; Primera Línea 2026/11/04) · FGR Paraíso, Tabasco (desarrollo del candidato de 147) · Chiapas, Palenque, 65 años (4-nov) · Los Ramones (4-nov) · Saltillo–Monclova, 7 años (4-nov) · Tulantepec: sin resultado indexado.
-- **Seguimientos**: Matamoros (Fiscalía: disparo desde helicóptero de la Guardia Estatal, Proceso 2026/11/5) · «El Panda» (audiencia del 9-nov; fosas de Jáltipan 17 cuerpos, por medios) · Cuernavaca `ARG-147-001` (sin detenidos) · Indaparapeo `ARG-147-004` (sin saldo; cortes de luz y suspensión de clases) · Tijuana `-143-005` (llamada al 911 ~08:30-08:46) · Mexicali `-145-003` (sin conclusión) · Mexicali `-146-011` (fosa 26 / hallazgo 51, Zeta 2026/11).
+- **Seguimientos** (solo Matamoros, Cuernavaca, Mazatlán y Champotón van al cartelón; los demás, solo aquí): Matamoros (Fiscalía: disparo desde helicóptero de la Guardia Estatal, Proceso 2026/11/5) · «El Panda» (audiencia del 9-nov; fosas de Jáltipan 17 cuerpos, por medios) · Cuernavaca `ARG-147-001` (sin detenidos) · Indaparapeo `ARG-147-004` (sin saldo; cortes de luz y suspensión de clases) · Tijuana `-143-005` (llamada al 911 ~08:30-08:46) · Mexicali `-145-003` (sin conclusión) · Mexicali `-146-011` (fosa 26 / hallazgo 51, Zeta 2026/11).
 
 ## 6. Fuentes por ficha (lista íntegra)
+
+Criterio del recuento por tipo en las fichas: un emisor por nota propia; Meganoticias, El Universal Puebla y las ediciones estatales cuentan como regionales; las republicaciones de una misma nota (Michoacán, `-008`) cuentan una vez y se listan aquí.
 
 - **001 / 006 Pachuca**: La Silla Rota (2026/11/5), Síntesis, Sociedad Noticias (2026/11/05), MVS (2026/11/5); Milenio (dos notas), El Universal, Quadratín Hidalgo, Criterio Hidalgo, La Jornada Hidalgo, Effetá, N+ (sin fecha).
 - **002 Atencingo**: Síntesis, Retodiario (2026/11/05); N+, e-consulta, El Universal Puebla, Meganoticias (785870), Cinco Radio, MTP, Controversia, Carlos Martín Huerta, Quadratín Puebla (sin fecha); X de Municipios Puebla (abierta).
@@ -56,7 +58,7 @@
 4. **Atencingo `-002` 🔴**: 2 muertos en la mayoría de titulares; hora contradicha (mañana, mediodía o tarde) sin ancla anterior a las 09:42.
 5. **Los Huizaches**: retirado del borrador (era `-006`): hallazgo ~04:00 o ~07:10 del 5, antes de la apertura → ventana de 147, 🟡, visto.
 6. **Michoacán `-008`**: todas las cifras solo por resumen; la parte de Tacámbaro coincide con Pedernales (3-nov): posible duplicidad. Cualitativo.
-7. **Morelia `-007`**: 1 larga y 119 cartuchos por titular de dos medios (Bajo); se integran con cláusula de retiro.
+7. **Morelia `-007`**: 1 larga y 119 cartuchos por titular de dos medios (Bajo); se integran con cláusula de retiro. La reserva de Occidente sobre Contramuro («tres cateos… mil 400 dosis») no se reprodujo en R1: Contramuro titula el mismo hecho con «119 cartuchos»; se descarta.
 8. **Marina `-009`**: Institucional 0 (declaración del secretario solo a través del titular de un medio, mismo criterio que `-004`); asignado a Chiapas en mapa y recuento de entidades.
 
 ## 8. Controles editoriales

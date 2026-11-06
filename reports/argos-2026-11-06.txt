@@ -56,9 +56,9 @@ impacto de la ventana anterior
   Puebla · Chietla (Villa de Atencingo) · 5-NOV, POR RUTA | Ataque frente al Banco del Bienestar: 2 muertos (saldo contradicho) | 🔴 Rojo | SIN BOLETÍN | N+ | ★★★☆☆ | ARG-148-002
   Sinaloa · Culiacán (col. CNOP) · 5-NOV, POR RUTA | Hombre perseguido y asesinado a balazos | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-148-005
   Estado de México · Naucalpan (Lomas Verdes) · 5-NOV, POR RUTA | Abatido el señalado por el homicidio del comisario Milton Morales y un acompañante | 🟡 Amarillo | SIN BOLETÍN | La Jornada · El Universal · Infobae | ★★★☆☆ | ARG-148-004
-  Sinaloa · Navolato (Las Trancas) · 5-NOV, POR RUTA | Enfrentamiento entre militares y civiles armados: 3 abatidos | 🟡 Amarillo | SIN BOLETÍN | Meganoticias · López-Dóriga | ★★★☆☆ | ARG-148-003
+  Sinaloa · Navolato (Las Trancas) · 5-NOV, POR RUTA | Enfrentamiento entre militares y civiles armados: 3 abatidos | 🟡 Amarillo | SIN BOLETÍN | López-Dóriga | ★★★☆☆ | ARG-148-003
   Hidalgo · Pachuca (autopista México–Pachuca) · 5-NOV, POR RUTA | 4 detenidos tras el asesinato del policía (ARG-148-001) | 🟢 Verde | SIN BOLETÍN | La Silla Rota · Milenio | ★★★☆☆ | ARG-148-006
-  Chiapas · aguas del Pacífico frente a Chiapas y Oaxaca (asignado a Chiapas) · PUB. 5-NOV, POR RUTA | Más de una tonelada de cocaína asegurada en el Pacífico; 1 detenido | 🟢 Verde | SIN BOLETÍN | El Financiero · Proceso · La Silla Rota | ★★★☆☆ | ARG-148-009
+  Chiapas · aguas del Pacífico frente a Chiapas y Oaxaca (asignado a Chiapas) · PUB. 5-NOV, POR RUTA | Más de una tonelada de cocaína asegurada en el Pacífico; 1 detenido | 🟢 Verde | SIN BOLETÍN | El Financiero · Proceso · La Silla Rota · El Universal · Excélsior | ★★★☆☆ | ARG-148-009
   Michoacán · Queréndaro, Cotija y Tacámbaro · PUB. 5-NOV, POR RUTA | Armas, granadas y explosivos asegurados en tres municipios; cifras solo por resumen | 🟢 Verde | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-148-008
   Michoacán · Morelia · PUB. 5-NOV, POR RUTA | 4 cateos: 3 detenidos, 1 arma larga y 119 cartuchos | 🟢 Verde | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-148-007
 
@@ -154,7 +154,7 @@ RESUMEN: no es declaración · ningún detenido publicado
 
 ARG-148-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora contradicha;
 saldo contradicho entre titulares; ninguna fuente institucional · Fuentes: Institucional 0 ·
-Nacional 1 · Regional 8 · Abierta 0 · con fecha en la ruta: Síntesis (2026/11/05) · Retodiario
+Nacional 1 · Regional 8 · Abierta 1 · con fecha en la ruta: Síntesis (2026/11/05) · Retodiario
 (2026/11/05) · Hecho: 2026-11-05 · Hora: mañana, mediodía o tarde (solo por resumen,
 contradicho) · Consulta: 2026-11-06, última búsqueda 07:41 · Estatus: Parcialmente corroborado ·
 Conteo de armamento: sin fila — armamento asegurado: no publicado
@@ -180,7 +180,7 @@ publicado
 
 ARG-148-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: quién inició, solo
 por medios; hora solo por resumen; ninguna fuente institucional · Fuentes: Institucional 0 ·
-Nacional 2 · Regional 5 · Abierta 0 · con fecha en la ruta: Línea Directa (2026-11-05) · Luz
+Nacional 1 · Regional 7 · Abierta 0 · con fecha en la ruta: Línea Directa (2026-11-05) · Luz
 Noticias (2026-11-05) · Hecho: 2026-11-05 · Hora: tarde, ~15:00 o ~18:00 (solo por resumen) ·
 Consulta: 2026-11-06, última búsqueda 07:41 · Estatus: Parcialmente corroborado · Conteo de
 armamento: ARG-148-ARM-003
@@ -292,7 +292,7 @@ Morelia» (Mizitácuaro, sin fecha): POSIBLE HECHO DISTINTO
 
 ARG-148-007 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día de los cateos no
 fijado; categoría del arma por titular de un medio; detenidos sin cifra de autoridad citada ·
-Fuentes: Institucional 0 · Nacional 0 · Regional 6 · Abierta 0 · con fecha en la ruta: Esfera
+Fuentes: Institucional 0 · Nacional 0 · Regional 8 · Abierta 0 · con fecha en la ruta: Esfera
 Noticias (2026/11/05) · RED113 (2026/11) · Hecho: 2026-11-05 · Hora: no fijada · Consulta:
 2026-11-06, última búsqueda 07:41 · Estatus: Parcialmente corroborado · Conteo de armamento:
 ARG-148-ARM-001
@@ -326,7 +326,8 @@ búsqueda 07:41 · Estatus: Pendiente de corroboración · Conteo de armamento: 
 Deslindes y reservas: Tacámbaro en el índice: ARG-109-001, ARG-109-ARM-001 y ARG-110-004
 (agosto): otros hechos. Cotija y Tacámbaro, febrero de 2026 (Infobae 2026/02/03): otro hecho.
 Pedernales, Tacámbaro, 2 o 3-nov (RED Michoacán 2026/11/03; Contramuro): mismas cifras, posible
-mismo hecho de la ventana de ARGOS 146 o 147.
+mismo hecho de la ventana de ARGOS 146 o 147. Cotija: ARG-132-005 (El Metidero) y Plan del Cerro
+(visto de ARGOS 132): otros hechos, otras cifras.
 
 ### PACÍFICO · CHIAPAS Y OAXACA — LA MARINA ASEGURA MÁS DE UNA TONELADA DE COCAÍNA: UN DETENIDO [VERDE]
 
@@ -345,7 +346,7 @@ RESUMEN · Semar
 
 ARG-148-009 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día de las
 operaciones no fijado; desglose solo por resumen; declaración del secretario solo a través del
-titular de un medio · Fuentes: Institucional 0 · Nacional 3 · Regional 0 · Abierta 0 · con fecha
+titular de un medio · Fuentes: Institucional 0 · Nacional 5 · Regional 2 · Abierta 0 · con fecha
 en la ruta: El Financiero (2026/11/05) · Proceso (2026/11/5) · La Silla Rota (2026/11/5) ·
 Hecho: 2026-11-05 · Hora: no fijada · Consulta: 2026-11-06, última búsqueda 07:41 · Estatus:
 Parcialmente corroborado · Conteo de armamento: sin fila — aseguramiento de droga, no de
@@ -427,9 +428,9 @@ INDEXADO EN VENTANA.
 ## CANDIDATOS
 
   Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
-  Tabasco · Paraíso | Portación de arma de uso exclusivo; exsubdirector de Seguridad Pública municipal; procedimiento abreviado; 1 sentenciado, por titular · desarrollo del candidato de Tabasco de ARGOS 147 (portación, FGR) | «2 años», por titular (Quadratín); 2 años 8 meses, SOLO POR RESUMEN: CIFRA CONTRADICHA | FGR (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL · comunicado no leído; notas sin fecha en la ruta; fecha de la sentencia no fijada | Bajo
+  Tabasco · Paraíso | Portación de arma de uso exclusivo; exsubdirector de Seguridad Pública municipal; procedimiento abreviado; 1 sentenciado, por titular · posible mismo caso que el candidato de Tabasco de ARGOS 147 (portación, FGR; sin dos campos coincidentes) | «2 años», por titular (Quadratín); 2 años 8 meses, SOLO POR RESUMEN: CIFRA CONTRADICHA | FGR (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL · comunicado no leído; notas sin fecha en la ruta; fecha de la sentencia no fijada | Bajo
   Oaxaca · San Antonio de la Cal | Secuestro agravado (2011); 2 sentenciados · candidato de ARGOS 147 | 157 años, por titular (Primera Línea 2026/11/04); boletín 2,948 en el listado de portal.fgeo.gob.mx, SOLO POR RESUMEN; 157 años 6 meses por suma, SOLO POR RESUMEN: CIFRA CONTRADICHA | FGE Oaxaca | PENDIENTE DE CONFIRMACIÓN OFICIAL · URL individual del boletín no obtenida; publicado el 4-nov (ventana de ARGOS 147) | Bajo
-  Chiapas · NL · Coah | Palenque, feminicidio, 65 años (El Sol del Soconusco 2026/11/04) · Los Ramones, FGR, más de cinco años (MVS 2026/11/4) · Saltillo–Monclova, FGR, 7 años (La Prensa de Coahuila 2026/11/04) · publicados el 4-nov | Por titular de medios | FGE Chiapas y FGR (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · ventana de ARGOS 147; sin boletín del dominio | Bajo
+  Chiapas · NL · Coah | Palenque, feminicidio, 65 años (El Sol del Soconusco 2026/11/04) · Los Ramones, FGR, más de cinco años (MVS 2026/11/4; candidato de ARGOS 147) · Saltillo–Monclova, FGR, 7 años (La Prensa de Coahuila 2026/11/04) · publicados el 4-nov | Por titular de medios | FGE Chiapas y FGR (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · ventana de ARGOS 147; sin boletín del dominio | Bajo
   BC · Jal · Pue · Edomex · Zac · Coah · Hgo | Tecate · Mexicali · Jalisco (dos feminicidas) · Huejotzingo (posible homónimo) · Ecatepec · Fresnillo · Ramos Arizpe · Tulantepec (audiencia del 5-nov: sin resultado indexado) · candidatos anteriores | Ver ARGOS 147 · HEREDADO — NO REVERIFICADO | Fiscalías estatales y FGR (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · sin boletín del dominio en la ventana | No confirmado
 
 Publicadas antes de la ventana, no integrables: FGE Colima (3-nov) · FGE Durango (5-sep) · FGE
@@ -447,7 +448,7 @@ NO SE INTEGRAN.
   Dominio de la fiscalía no confirmado | 2: Coah y Camp
   NO REVISADA — sentencias | 11: BC, BCS, Son, Chih · NL, Zac · CDMX, Edomex, Pue, Mor, Tlax
   Páginas no disponibles · errores de acceso | Fuentes con error de acceso: bloqueo de egreso: curl a www.gob.mx/fgr, 6-nov 07:30: código 000 (proxy: conexión rechazada)
-  Alto impacto y armamento | Alto impacto: consulta propia en 20 entidades; solo consulta amplia en 12 —BCS, Dgo · Coah · Jal, Col, Nay, Ags · CDMX, Mor, Qro · Oax, Chis— · armamento: 22 de 32 por dominio oficial —Chih · NL, SLP, Zac, Tamps · Jal, Ags, Mich, Gto · Pue, Mor, Tlax, Hgo, Qro · Ver, Tab · Gro, Oax, Chis, Yuc, QRoo, Camp—, todas SIN RESULTADO INDEXADO EN VENTANA · dominio sin páginas: Nay · NO REVISADA (9): BC, BCS, Son, Sin, Dgo · Coah · Col · CDMX, Edomex
+  Alto impacto y armamento | Alto impacto: consulta propia en 20 entidades; solo consulta amplia en 12 —BCS, Dgo · Coah · Jal, Col, Nay, Ags · CDMX, Mor, Qro · Oax, Chis— · armamento: 22 de 32 por dominio oficial —Chih · NL, SLP, Zac, Tamps · Jal, Ags, Mich (los hechos de la edición, por medios), Gto · Pue, Mor, Tlax, Hgo, Qro · Ver, Tab · Gro, Oax, Chis, Yuc, QRoo, Camp—, todas SIN RESULTADO INDEXADO EN VENTANA · dominio sin páginas: Nay · NO REVISADA (9): BC, BCS, Son, Sin, Dgo · Coah · Col · CDMX, Edomex
   Boletín federal | Acciones del 4-nov: existe (Milenio; RED113; Tallapolítica): ventana de ARGOS 147 · acciones del 5-nov: SIN RESULTADO INDEXADO EN VENTANA en día suelto, rango y título, al inicio y al cierre · Guardia Nacional, Defensa y ANAM: NO REVISADAS
   Techo de confianza del producto | ★★★★☆ (techo de política) · esta edición no supera ★★★☆☆: sin lectura directa de documento oficial · BLOQUEO DE EGRESO REVERIFICADO EL 6-NOV 07:30: GOB.MX
 
@@ -480,16 +481,18 @@ ABATIDOS (cálculo propio; ARG-148-003 y -004); en Naucalpan, el objetivo era el
 homicidio de un mando policial; vínculo no acreditado. Línea: solicitar a la SSPC y a la Defensa
 si hubo armamento asegurado y su balística, y cruzarla con las investigaciones del Cártel Nuevo
 Imperio.
-2. EXMANDO POLICIAL MUNICIPAL ASESINADO EN UN INTENTO DE ASALTO, CON ANTECEDENTE DE SECUESTRO EN
-2022, POR SLUG (EFFETÁ) (ARG-148-001 y -006). Línea: verificar si el móvil fue robo o ataque
-dirigido y solicitar la situación de su protección previa.
+2. HIDALGO: MANDOS POLICIALES MUNICIPALES, ACTIVOS O RETIRADOS, COMO BLANCO DE ROBO O DE ATAQUE
+DIRIGIDO (ARG-148-001 y -006): móvil no establecido. Línea: solicitar a la Procuraduría de
+Hidalgo la línea de investigación y verificar medidas de protección para exmandos con
+antecedentes de secuestro.
 3. MICHOACÁN: GRANADAS, ARTEFACTOS EXPLOSIVOS IMPROVISADOS Y ARMAS LARGAS EN TRES MUNICIPIOS,
 SOLO POR RESUMEN (ARG-148-008): consistente con capacidad explosiva distribuida en el centro y
 occidente del estado; requiere validación. Línea: solicitar el dictamen de los artefactos
 explosivos de Cotija (10, solo por resumen).
-4. PUEBLA: ATAQUE ARMADO EN UN PUNTO DE PAGO DE PROGRAMAS SOCIALES CON UNA VÍCTIMA COLATERAL
-ADULTA MAYOR, SOLO POR RESUMEN (ARG-148-002). Línea: vigilar los días de pago frente a
-sucursales del Banco del Bienestar en la Mixteca poblana y solicitar a la FGE el móvil.
+4. PUEBLA: ATAQUE ARMADO EN LA VÍA PÚBLICA FRENTE A UNA SUCURSAL BANCARIA, CON OBJETIVO NO
+IDENTIFICADO (ARG-148-002): el ataque en un punto de alta afluencia es consistente con agresión
+dirigida sin cuidado de terceros; requiere validación. Línea: solicitar a la FGE de Puebla el
+móvil y la víctima objetivo.
 5. CORREDOR MARÍTIMO DEL PACÍFICO SUR ACTIVO FRENTE A CHIAPAS Y OAXACA (ARG-148-009). Línea:
 solicitar a la Semar el punto de aseguramiento, el tipo de embarcación y la nacionalidad del
 detenido.
