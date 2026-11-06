@@ -11,7 +11,7 @@ Versión 3.0 · Corte matutino · USO INSTITUCIONAL
 [ RADAR CENTRAL — EN VIVO ]
 
   · 🔴 Alto impacto · 2
-  · 🟡 Violencia operativa · 4
+  · 🟡 Violencia operativa · 3
   · 🟢 Acciones institucionales · 4
 
 [ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
@@ -22,22 +22,23 @@ Pase el cursor sobre un estado.
 
   · 🔴 ROJO — ALTO IMPACTO — 2 eventos
 
-  · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 4 eventos
+  · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 3 eventos
 
   · 🟢 VERDE — ACCIONES INSTITUCIONALES — 4 eventos
 
 ── LO QUE DEBE HACER EL MANDO
 
 1. SOLICITE A LA SSPH Y A LA PROCURADURÍA DE HIDALGO LA SITUACIÓN JURÍDICA DE LOS CUATRO
-DETENIDOS Y LA CONDICIÓN DE SERVICIO DE LA VÍCTIMA (ARG-148-001 y -007).
+DETENIDOS Y LA CONDICIÓN DE SERVICIO DE LA VÍCTIMA (ARG-148-001 y -006).
 2. SOLICITE A LA FISCALÍA DE PUEBLA EL SALDO OFICIAL, LA HORA Y LAS LÍNEAS DE INVESTIGACIÓN DEL
 ATAQUE DE ATENCINGO (ARG-148-002).
 3. SOLICITE A LA DEFENSA EL PARTE DE LAS TRANCAS: QUIÉN INICIÓ, ARMAMENTO ASEGURADO Y SITUACIÓN
 DEL PERSONAL (ARG-148-003).
-4. SOLICITE A LA FGE DE MICHOACÁN Y A LA FGR EL DESGLOSE OFICIAL DE LO ASEGURADO EN MORELIA,
-QUERÉNDARO, COTIJA Y TACÁMBARO, INCLUIDOS LOS 10 ARTEFACTOS EXPLOSIVOS (ARG-148-008 y -009).
-5. COTEJE LAS ARMAS ASEGURADAS EN NAUCALPAN CON LAS INVESTIGACIONES ABIERTAS DEL CÁRTEL NUEVO
-IMPERIO Y VIGILE LAS COLONIAS CNOP Y LOS HUIZACHES DE CULIACÁN (ARG-148-004, -005 y -006).
+4. SOLICITE A LA FGE DE MICHOACÁN Y A LA FGR EL DESGLOSE OFICIAL Y LA FECHA DE LO ASEGURADO EN
+MORELIA, QUERÉNDARO, COTIJA Y TACÁMBARO, INCLUIDOS LOS ARTEFACTOS EXPLOSIVOS (ARG-148-007 y
+-008).
+5. SOLICITE A LA SSPC Y A LA FGR EL PARTE DEL OPERATIVO DE NAUCALPAN: CORPORACIONES, ARMAMENTO
+ASEGURADO E IDENTIDAD DEL SEGUNDO ABATIDO (ARG-148-004).
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-11-06 · Hora: 07:30 (CDMX) · Corte: Matutino · ARGOS N.° 148 · USO INSTITUCIONAL
@@ -46,56 +47,58 @@ IMPERIO Y VIGILE LAS COLONIAS CNOP Y LOS HUIZACHES DE CULIACÁN (ARG-148-004, -0
 
 ## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
 
-Ventana 5-nov 09:42 → 6-nov 07:30 CDMX (21 h 48 min) · 10 hechos propios en 6 entidades ·
-densidad 0,46 hechos/hora; duración y densidad, cálculo propio · sin recuperaciones de alto
+Ventana 5-nov 09:42 → 6-nov 07:30 CDMX (21 h 48 min) · 9 hechos propios en 6 entidades ·
+densidad 0,41 hechos/hora; duración y densidad, cálculo propio · sin recuperaciones de alto
 impacto de la ventana anterior
 
   Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
   Hidalgo · Pachuca (col. Real de Minas) · 5-NOV, POR RUTA | Policía estatal, exdirector de la policía de Huehuetla, asesinado en un intento de asalto | 🔴 Rojo | SIN BOLETÍN | La Silla Rota · Milenio · El Universal · N+ | ★★★☆☆ | ARG-148-001
-  Puebla · Chietla (Villa de Atencingo) · 5-NOV, POR RUTA | Ataque frente al Banco del Bienestar: 2 muertos (saldo contradicho) | 🔴 Rojo | SIN BOLETÍN | N+ · El Universal · Meganoticias | ★★★☆☆ | ARG-148-002
+  Puebla · Chietla (Villa de Atencingo) · 5-NOV, POR RUTA | Ataque frente al Banco del Bienestar: 2 muertos (saldo contradicho) | 🔴 Rojo | SIN BOLETÍN | N+ | ★★★☆☆ | ARG-148-002
   Sinaloa · Culiacán (col. CNOP) · 5-NOV, POR RUTA | Hombre perseguido y asesinado a balazos | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-148-005
   Estado de México · Naucalpan (Lomas Verdes) · 5-NOV, POR RUTA | Abatido el señalado por el homicidio del comisario Milton Morales y un acompañante | 🟡 Amarillo | SIN BOLETÍN | La Jornada · El Universal · Infobae | ★★★☆☆ | ARG-148-004
-  Sinaloa · Navolato (Las Trancas) · 5-NOV, POR RUTA | Enfrentamiento entre militares y civiles armados: 3 abatidos | 🟡 Amarillo | SIN BOLETÍN | Meganoticias · N+ | ★★★☆☆ | ARG-148-003
-  Sinaloa · Culiacán (col. Los Huizaches) · 5-NOV, POR RUTA | Hombre hallado atado y asesinado, con huellas de tortura | 🟡 Amarillo | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-148-006
-  Hidalgo · Pachuca (autopista México–Pachuca) · 5-NOV, POR RUTA | 4 detenidos tras el asesinato del policía (ARG-148-001) | 🟢 Verde | SIN BOLETÍN | La Silla Rota · Milenio | ★★★☆☆ | ARG-148-007
-  Chiapas y Oaxaca · aguas del Pacífico frente a Chiapas y Oaxaca · PUB. 5-NOV, POR RUTA | Más de una tonelada de cocaína asegurada en el Pacífico; 1 detenido | 🟢 Verde | Secretario de Seguridad (por titular) | El Financiero · Proceso · La Silla Rota | ★★★☆☆ | ARG-148-010
-  Michoacán · Queréndaro, Cotija y Tacámbaro · PUB. 5-NOV, POR RUTA | Armas, granadas y explosivos asegurados en tres municipios; cifras solo por resumen | 🟢 Verde | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-148-009
-  Michoacán · Morelia · PUB. 5-NOV, POR RUTA | 4 cateos: 3 detenidos, 1 arma larga y 119 cartuchos | 🟢 Verde | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-148-008
+  Sinaloa · Navolato (Las Trancas) · 5-NOV, POR RUTA | Enfrentamiento entre militares y civiles armados: 3 abatidos | 🟡 Amarillo | SIN BOLETÍN | Meganoticias · López-Dóriga | ★★★☆☆ | ARG-148-003
+  Hidalgo · Pachuca (autopista México–Pachuca) · 5-NOV, POR RUTA | 4 detenidos tras el asesinato del policía (ARG-148-001) | 🟢 Verde | SIN BOLETÍN | La Silla Rota · Milenio | ★★★☆☆ | ARG-148-006
+  Chiapas · aguas del Pacífico frente a Chiapas y Oaxaca (asignado a Chiapas) · PUB. 5-NOV, POR RUTA | Más de una tonelada de cocaína asegurada en el Pacífico; 1 detenido | 🟢 Verde | SIN BOLETÍN | El Financiero · Proceso · La Silla Rota | ★★★☆☆ | ARG-148-009
+  Michoacán · Queréndaro, Cotija y Tacámbaro · PUB. 5-NOV, POR RUTA | Armas, granadas y explosivos asegurados en tres municipios; cifras solo por resumen | 🟢 Verde | SIN BOLETÍN | ninguna | ★★☆☆☆ | ARG-148-008
+  Michoacán · Morelia · PUB. 5-NOV, POR RUTA | 4 cateos: 3 detenidos, 1 arma larga y 119 cartuchos | 🟢 Verde | SIN BOLETÍN | ninguna | ★★★☆☆ | ARG-148-007
 
 ## TOTALES DEL CORTE — CÁLCULO PROPIO DE ARGOS
 
 NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
 
   Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Muertos por agresión | Heridos | Cuerpos o restos hallados | Armas cortas | Armas largas | Armas sin categoría | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos en aseguramiento | Entidades
-  10 | 2 | 4 | 4 | 0 | 5 | 0 | 0 | n/d | 1 | n/d | 119 | n/d | n/d | n/d | n/d | n/d | 6
+  9 | 2 | 3 | 4 | 0 | 4 | 0 | 0 | n/d | 1 | n/d | 119 | n/d | n/d | n/d | n/d | n/d | 6
 
 Armamento: 1 arma larga y 119 cartuchos (Morelia, confianza Bajo, día no fijado); el resto,
-cualitativo; ningún detenido con cifra de autoridad · muertos por agresión: 5, cálculo propio de
+cualitativo; ningún detenido con cifra de autoridad · muertos por agresión: 4, cálculo propio de
 las fichas · abatidos por la fuerza pública: 5 (Navolato 3, Naucalpan 2), fuera de «muertos por
-agresión» · marcas: 10 de 10 PUBLICADO EL DÍA DE APERTURA SIN HORA · totales sujetos a las
-cláusulas de retiro de 10 fichas (hora no fijada frente a las 09:42 del 5): todas. Cálculo
-propio.
+agresión» · heridos: 0 integrados; los de ARG-148-002 (contradicho), -004 y -006 (solo por
+resumen), fuera del total · marcas: 9 de 9 PUBLICADO EL DÍA DE APERTURA SIN HORA · totales
+sujetos a las cláusulas de retiro de 9 fichas (hora no fijada frente a las 09:42 del 5): todas.
+Cálculo propio.
 Vistos, fuera de totales — de la ventana de ARGOS 147 (🟢 o 🟡, no se recuperan): Coscomatepec,
 Tetelcingo (12 cateos, 7 detenidos; inicio ~04:00 del 5, SOLO POR RESUMEN) · Edomex y CDMX, 38
 cateos y 32 detenidos (anuncio «en plena madrugada» del 5, SOLO POR RESUMEN; = «Los Gigan»,
 visto en ARGOS 147) · Mazatlán, Coto Residencial Atlántico (vivienda baleada antes de las 06:30
-del 5, sin heridos) · Ensenada, «El Pariente» abatido y dos agentes estatales heridos (primeras
-horas del 4, SOLO POR RESUMEN; El Vigía 2026/11/5) · Tijuana, barbería de la Zona Centro, y
-Ciudad Juárez, col. Aldama (4-nov, 1 muerto cada uno) · Iztacalco, dos detenidos de la célula
-«Bebé Casasola» (4-nov; Infobae 2026/11/06) · sin ruta fechada — SIN RUTA FECHADA — NO SE FICHA:
-Chilpancingo, Urvan de la ruta Tribuna Nacional–Tomatal: «un muerto y 4 heridos», por titular
-(Quadratín Guerrero), o «un muerto y dos heridos», por titular (El Sur); 18:30 del jueves, SOLO
-POR RESUMEN · Reynosa, entre Puerta Sur y Nuevo México ITAVU: fosa, restos óseos y material
-calcinado (La Verdad 2026/11, sin día; ARG-140-008 en la misma zona) · balances, no se integran:
-Guanajuato y Sinaloa, «13 asesinatos en un día» (4-nov; diario.mx 2026/nov/05).
+del 5, sin heridos) · Culiacán, Los Huizaches: hombre atado y asesinado cerca de una caseta
+militar, por titular (Línea Directa 2026-11-05); hallazgo ~04:00 o ~07:10, SOLO POR RESUMEN,
+antes de la apertura · Ensenada, «El Pariente» abatido y dos agentes estatales heridos (primeras
+horas del 4, SOLO POR RESUMEN: ventana de ARGOS 146 o 147; El Vigía 2026/11/5) · Tijuana,
+barbería de la Zona Centro, y Ciudad Juárez, col. Aldama (4-nov, 1 muerto cada uno) · Iztacalco,
+dos detenidos de la célula «Bebé Casasola» (4-nov; Infobae 2026/11/06) · sin ruta fechada — SIN
+RUTA FECHADA — NO SE FICHA: Chilpancingo, Urvan de la ruta Tribuna Nacional–Tomatal: «un muerto
+y 4 heridos», por titular (Quadratín Guerrero), o «un muerto y dos heridos», por titular (El
+Sur); 18:30 del jueves, SOLO POR RESUMEN · Reynosa, entre Puerta Sur y Nuevo México ITAVU: fosa,
+restos óseos y material calcinado (La Verdad 2026/11, sin día; ARG-140-008 en la misma zona) ·
+balances, no se integran: Guanajuato y Sinaloa, «13 asesinatos en un día» (4-nov; diario.mx
+2026/nov/05).
 Seguimiento, fuera del semáforo: ARG-144-008 / ARG-145-REC-001 (Matamoros): «bala que mató a la
 niña Aranza salió de helicóptero de Guardia Estatal: Fiscalía», por titular (Proceso 2026/11/5);
 tirador no identificado · ARG-147-001 (Cuernavaca): sin detenidos; la Fiscalía de Morelos podría
 citar a regidores y magistrados, SOLO POR RESUMEN · ARG-147-010 (Mazatlán): día 4-nov fijado
 (Luz Noticias 2026-11-04; Noroeste, «el miércoles») · ARG-147-REC-001 (Champotón): «detienen a 2
-presuntos implicados», por titular (Tribuna Campeche); sin cifra de autoridad · Cihuatlán, Jal.:
-dos vinculados a proceso por portación de armas (Red Metropolitana 2026/11/05); aseguramiento de
-fecha no fijada · NINGUNO ES SENTENCIA.
+presuntos implicados», por titular (Tribuna Campeche); sin cifra de autoridad · NINGUNO ES
+SENTENCIA.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-11-06 · Hora: 07:30 (CDMX) · Corte: Matutino · ARGOS N.° 148 · USO INSTITUCIONAL
@@ -112,23 +115,26 @@ Pachuca · COL. REAL DE MINAS, POR TITULAR · jueves 5-NOV, por ruta (La Silla R
 «muere policía estatal tras asalto en la colonia Real de Minas de Pachuca; 4 detenidos»;
 Síntesis 2026/11/05; Sociedad Noticias 2026/11/05) · PUBLICADO EL DÍA DE APERTURA SIN HORA ·
 tarde, SOLO POR RESUMEN · SI RESULTA ANTERIOR A LAS 09:42 DEL 5, ES DE LA VENTANA DE ARGOS 147 Y
-SE RETIRA DE ESTE TOTAL · 1 muerto: «policía estatal», por titular (La Silla Rota; Quadratín);
-«exdirector de la policía de Huehuetla», por titular (Sociedad Noticias; Milenio; El Universal)
-(🔴 víctima autoridad) · CONDICIÓN DE AGENTE EN ACTIVO NO CONFIRMADA · fuera de servicio; intento
-de asalto, SOLO POR RESUMEN · familiar acompañante privado de la libertad, SOLO POR RESUMEN:
-CONTRADICHO · detención de cuatro: ficha propia, ARG-148-007
+SE RETIRA DE ESTE TOTAL · 1 muerto: «policía estatal», por titular (La Silla Rota; Síntesis);
+«exdirector de la policía de Huehuetla», por titular (Sociedad Noticias; Milenio; MVS
+2026/11/5); «director», por titular (El Universal): CARGO DE LA VÍCTIMA CONTRADICHO (🔴 víctima
+autoridad; si resulta exdirector sin cargo vigente, baja a 🟡) · fuera de servicio; intento de
+asalto, SOLO POR RESUMEN · «secuestran a su hijo y detienen a dos», por titular (Criterio
+Hidalgo): versión no confirmada por otras fuentes · detención de cuatro: ficha propia,
+ARG-148-006
 
 ── TRAZABILIDAD
 
 ARG-148-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora y circunstancia
-solo por resumen; condición de agente en activo no confirmada; ninguna fuente institucional ·
-Fuentes: Institucional 0 · Nacional 4 · Regional 4 · Abierta 0 · con fecha en la ruta: La Silla
-Rota (2026/11/5) · Síntesis (2026/11/05) · Sociedad Noticias (2026/11/05) · Hecho: 2026-11-05 ·
-Hora: tarde (solo por resumen) · Consulta: 2026-11-06, última búsqueda 07:41 · Estatus:
-Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
-Deslindes y reservas: Real de Minas y Huehuetla no figuran en las cinco ediciones previas ni en
-el índice. Delito y detención en la misma ventana: dos fichas. Identidad de la víctima: medios,
-no se reproduce.
+solo por resumen; cargo de la víctima contradicho entre titulares; ninguna fuente institucional
+· Fuentes: Institucional 0 · Nacional 5 · Regional 4 · Abierta 0 · con fecha en la ruta: La
+Silla Rota (2026/11/5) · Síntesis (2026/11/05) · Sociedad Noticias (2026/11/05) · MVS
+(2026/11/5) · Hecho: 2026-11-05 · Hora: tarde (solo por resumen) · Consulta: 2026-11-06, última
+búsqueda 07:41 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
+asegurado: no publicado
+Deslindes y reservas: Antecedente: secuestrado en 2022, por slug (Effetá). Real de Minas y
+Huehuetla no figuran en las cinco ediciones previas ni en el índice. Delito y detención en la
+misma ventana: dos fichas. Identidad de la víctima: medios, no se reproduce.
 
 ### PUEBLA · CHIETLA — ATAQUE ARMADO FRENTE AL BANCO DEL BIENESTAR DE ATENCINGO: DOS MUERTOS [ROJO]
 
@@ -136,8 +142,8 @@ no se reproduce.
 
 Chietla · VILLA DE ATENCINGO, FRENTE AL BANCO DEL BIENESTAR, POR TITULAR · jueves 5-NOV, por
 ruta (Síntesis 2026/11/05; Retodiario 2026/11/05) · PUBLICADO EL DÍA DE APERTURA SIN HORA · HORA
-CONTRADICHA: mañana o tarde, SOLO POR RESUMEN · SI RESULTA ANTERIOR A LAS 09:42 DEL 5, ES DE LA
-VENTANA DE ARGOS 147 Y SE RETIRA DE ESTE TOTAL · 2 muertos, por titular (Síntesis; N+;
+CONTRADICHA: mañana, mediodía o tarde, SOLO POR RESUMEN · SI RESULTA ANTERIOR A LAS 09:42 DEL 5,
+ES DE LA VENTANA DE ARGOS 147 Y SE RETIRA DE ESTE TOTAL · 2 muertos, por titular (Síntesis; N+;
 e-consulta; El Universal Puebla; Meganoticias: «cobra dos vidas»); «un hombre muerto y una mujer
 herida», por titular (Retodiario; Quadratín): la mujer murió después, SOLO POR RESUMEN: SALDO
 CONTRADICHO (🔴 homicidio múltiple) · un hombre adulto mayor y una mujer que vendía comida, SOLO
@@ -148,10 +154,10 @@ RESUMEN: no es declaración · ningún detenido publicado
 
 ARG-148-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora contradicha;
 saldo contradicho entre titulares; ninguna fuente institucional · Fuentes: Institucional 0 ·
-Nacional 3 · Regional 6 · Abierta 0 · con fecha en la ruta: Síntesis (2026/11/05) · Retodiario
-(2026/11/05) · Hecho: 2026-11-05 · Hora: mañana o tarde (solo por resumen, contradicho) ·
-Consulta: 2026-11-06, última búsqueda 07:41 · Estatus: Parcialmente corroborado · Conteo de
-armamento: sin fila — armamento asegurado: no publicado
+Nacional 1 · Regional 8 · Abierta 0 · con fecha en la ruta: Síntesis (2026/11/05) · Retodiario
+(2026/11/05) · Hecho: 2026-11-05 · Hora: mañana, mediodía o tarde (solo por resumen,
+contradicho) · Consulta: 2026-11-06, última búsqueda 07:41 · Estatus: Parcialmente corroborado ·
+Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Chietla en el archivo de pendientes: ataque del domingo 18-oct (visto de
 ARGOS 137): otro hecho. Si el ataque fue por la mañana y antes de las 09:42 del 5, es de la
 ventana de ARGOS 147. Identidad de las víctimas: medios, no se reproduce.
@@ -190,24 +196,25 @@ Naucalpan · LOMAS VERDES, SOLO POR RESUMEN · jueves 5-NOV, por ruta (La Jornad
 «abaten a El General, señalado por homicidio de Milton Morales»; Quinto Poder 2026/11/05;
 Noticias Veracruz 2026/11/05) · PUBLICADO EL DÍA DE APERTURA SIN HORA · tarde, SOLO POR RESUMEN
 · SI RESULTA ANTERIOR A LAS 09:42 DEL 5, ES DE LA VENTANA DE ARGOS 147 Y SE RETIRA DE ESTE TOTAL
-· 2 abatidos, entre ellos el señalado como líder del Cártel Nuevo Imperio, por titular (Quinto
-Poder; Noticias Veracruz) · SSPC, AIC-FGR y CNI cumplían una orden de aprehensión y fueron
-recibidos a balazos, según el secretario de Seguridad, SOLO POR RESUMEN (🟡 la autoridad ejecuta
-una acción y es repelida) · un agente y un familiar heridos, SOLO POR RESUMEN · identidad del
-segundo abatido: no oficial
+· «abaten a El General», por titular (Quinto Poder) · 2 abatidos: «sujeto abatido junto con El
+General», por titular (Infobae 2026/11/06) · la autoridad ejecutaba una orden de aprehensión y
+fue recibida a balazos, según el secretario de Seguridad, SOLO POR RESUMEN (🟡 la autoridad
+ejecuta una acción y es repelida) · corporaciones y tipo de orden (SSPC, AIC-FGR y CNI con orden
+de aprehensión, o SSPC, Marina, FGR y CNI con órdenes de cateo), SOLO POR RESUMEN: CONTRADICHO ·
+un agente y un familiar heridos, SOLO POR RESUMEN · identidad del segundo abatido: no oficial
 
 ── TRAZABILIDAD
 
-ARG-148-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: secuencia del
-enfrentamiento y heridos solo por resumen; declaración del secretario solo por resumen ·
+ARG-148-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: secuencia,
+corporaciones y heridos solo por resumen; segundo abatido por un titular del día siguiente ·
 Fuentes: Institucional 0 · Nacional 3 · Regional 2 · Abierta 0 · con fecha en la ruta: La
 Jornada (2026/11/05) · Quinto Poder (2026/11/05) · Noticias Veracruz (2026/11/05) · Infobae
 (2026/11/06) · Hecho: 2026-11-05 · Hora: tarde (solo por resumen) · Consulta: 2026-11-06, última
 búsqueda 07:41 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
 asegurado: no publicado
-Deslindes y reservas: Lomas Verdes y el Cártel Nuevo Imperio no figuran en las cinco ediciones
-previas ni en el índice. Homicidio de Milton Morales: 21-jul-2024, hecho anterior, no se
-recalifica. Abatidos: no entran en «muertos por agresión».
+Deslindes y reservas: Armamento asegurado: no publicado. Lomas Verdes y el Cártel Nuevo Imperio
+no figuran en las cinco ediciones previas ni en el índice. Homicidio de Milton Morales:
+21-jul-2024, hecho anterior, no se recalifica. Abatidos: no entran en «muertos por agresión».
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-11-06 · Hora: 07:30 (CDMX) · Corte: Matutino · ARGOS N.° 148 · USO INSTITUCIONAL
@@ -237,28 +244,6 @@ Hecho: 2026-11-05 · Hora: noche (solo por resumen) · Consulta: 2026-11-06, úl
 publicado
 Deslindes y reservas: Col. CNOP no figura en las cinco ediciones previas ni en el índice.
 
-### SINALOA · CULIACÁN — HALLAN A UN HOMBRE ATADO DE MANOS Y ASESINADO A BALAZOS CERCA DE UNA CASETA MILITAR [AMARILLO]
-
-── HECHO
-
-Culiacán · COL. LOS HUIZACHES, SOLO POR RESUMEN; CERCA DE UNA CASETA MILITAR, POR TITULAR ·
-jueves 5-NOV, por ruta (Línea Directa 2026-11-05: «atado de manos y asesinado a balazos hallan a
-un hombre cerca de una caseta militar») · PUBLICADO EL DÍA DE APERTURA SIN HORA · mañana, SOLO
-POR RESUMEN · SI RESULTA ANTERIOR A LAS 09:42 DEL 5, ES DE LA VENTANA DE ARGOS 147 Y SE RETIRA
-DE ESTE TOTAL · 1 muerto, por titular; «con huellas de tortura», por titular (Quadratín Sinaloa,
-sin fecha en la ruta) (🟡 homicidio doloso único) · ningún detenido publicado
-
-── TRAZABILIDAD
-
-ARG-148-006 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora del hallazgo
-solo por resumen (puede ser anterior a las 09:42); ninguna fuente institucional · Fuentes:
-Institucional 0 · Nacional 0 · Regional 2 · Abierta 0 · con fecha en la ruta: Línea Directa
-(2026-11-05) · Hecho: 2026-11-05 · Hora: mañana (solo por resumen) · Consulta: 2026-11-06,
-última búsqueda 07:41 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila —
-armamento asegurado: no publicado
-Deslindes y reservas: Col. Los Huizaches no figura en las cinco ediciones previas ni en el
-índice.
-
 ### HIDALGO · PACHUCA — DETIENEN A CUATRO PERSONAS TRAS EL ASESINATO DEL POLICÍA EN REAL DE MINAS [VERDE]
 
 ── HECHO
@@ -267,13 +252,13 @@ Pachuca · jueves 5-NOV, por ruta (La Silla Rota 2026/11/5: «… 4 detenidos»;
 2026/11/05: «detienen a cuatro») · PUBLICADO EL DÍA DE APERTURA SIN HORA · SI RESULTA ANTERIOR A
 LAS 09:42 DEL 5, ES DE LA VENTANA DE ARGOS 147 Y SE RETIRA DE ESTE TOTAL · 4 detenidos, por
 titular: cifra de medios · tres hombres y una mujer, uno herido de bala; localizados por el C5i
-en la autopista México–Pachuca, según la SSPH, SOLO POR RESUMEN · «dos detenidos», por titular
-(Criterio Hidalgo): versión previa · puestos a disposición del MP por homicidio y asalto, SOLO
-POR RESUMEN
+en la autopista México–Pachuca, según la SSPH, SOLO POR RESUMEN · «detienen a dos», por titular
+(Criterio Hidalgo), y «hay tres detenidos», por slug (La Jornada Hidalgo): versiones distintas ·
+puestos a disposición del MP por homicidio y asalto, SOLO POR RESUMEN
 
 ── TRAZABILIDAD
 
-ARG-148-007 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: cifra de detenidos
+ARG-148-006 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: cifra de detenidos
 por titular de medios; declaración de la SSPH solo por resumen · Fuentes: Institucional 0 ·
 Nacional 2 · Regional 3 · Abierta 0 · con fecha en la ruta: La Silla Rota (2026/11/5) · Sociedad
 Noticias (2026/11/05) · Hecho: 2026-11-05 · Hora: tarde (solo por resumen) · Consulta:
@@ -299,12 +284,13 @@ EL DÍA DE APERTURA SIN HORA · día de los cateos no fijado · SI RESULTA ANTER
 medios («FGE detiene a tres personas», La Primera de AM) · 1 arma larga, por titular (La Primera
 de AM); «arma de fuego», por titular (Esfera) · 119 cartuchos, por titular (Esfera; Quadratín) ·
 2 cargadores, rifle Remington en Tiníjaro, SOLO POR RESUMEN · FGE de Michoacán con apoyo de
-Defensa, GN y Policía Morelia, SOLO POR RESUMEN · «tres cateos… mil 400 dosis», por titular
-(Contramuro): POSIBLE DUPLICIDAD con otra versión
+Defensa, GN y Policía Morelia, SOLO POR RESUMEN · desglose del 119 (14 + 75 + 30), SOLO POR
+RESUMEN: no se consolida · «FGE detiene a dos personas y asegura armamento durante cateos en
+Morelia» (Mizitácuaro, sin fecha): POSIBLE HECHO DISTINTO
 
 ── TRAZABILIDAD
 
-ARG-148-008 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día de los cateos no
+ARG-148-007 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día de los cateos no
 fijado; categoría del arma por titular de un medio; detenidos sin cifra de autoridad citada ·
 Fuentes: Institucional 0 · Nacional 0 · Regional 6 · Abierta 0 · con fecha en la ruta: Esfera
 Noticias (2026/11/05) · RED113 (2026/11) · Hecho: 2026-11-05 · Hora: no fijada · Consulta:
@@ -320,22 +306,27 @@ cinco ediciones previas. Detenidos fuera del conteo de armamento hasta cifra de 
 Queréndaro, Cotija y Tacámbaro · publicado el jueves 5-NOV, por ruta (RED Michoacán 2026/11/05:
 «Ejército y GN decomisan armas, granadas, drogas y explosivos en tres municipios de Michoacán»)
 · PUBLICADO EL DÍA DE APERTURA SIN HORA · día del aseguramiento no fijado · SI RESULTA ANTERIOR
-A LAS 09:42 DEL 5, ES DE LA VENTANA DE ARGOS 147 Y SE RETIRA DE ESTE TOTAL · «710 cartuchos»,
-por titular de un solo medio (A Tiempo, sin fecha en la ruta) · desglose por municipio, SOLO POR
+A LAS 09:42 DEL 5, ES DE LA VENTANA DE ARGOS 147 Y SE RETIRA DE ESTE TOTAL · titulares sin cifra
+(A Tiempo: «aseguran explosivos y armas en tres municipios») · desglose por municipio, SOLO POR
 RESUMEN: Queréndaro, 2 largas, 320 cartuchos, 12 cargadores; Cotija, 10 artefactos explosivos
-improvisados; Tacámbaro, 2 largas, 390 cartuchos, 11 cargadores y 3 granadas · Ejército y GN;
-entrega a la FGR, SOLO POR RESUMEN · sin detenidos publicados · CANTIDAD NO DETERMINADA — NO SE
-INTEGRA AL TOTAL NUMÉRICO
+improvisados; Tacámbaro, 2 largas, 390 cartuchos, 11 cargadores y 3 granadas · sumas del
+resumen: 4 largas, 710 cartuchos, 23 cargadores (cálculo propio) · la parte de Tacámbaro
+coincide cifra por cifra con el arsenal abandonado en Pedernales, Tacámbaro (RED Michoacán
+2026/11/03): POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN · Ejército y GN; entrega
+a la FGR, SOLO POR RESUMEN · sin detenidos publicados · CANTIDAD NO DETERMINADA — NO SE INTEGRA
+AL TOTAL NUMÉRICO
 
 ── TRAZABILIDAD
 
-ARG-148-009 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: cifras solo por
-resumen o por un solo titular; día no fijado; republicaciones de una misma nota · Fuentes:
-Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con fecha en la ruta: RED Michoacán
-(2026/11/05) · Hecho: 2026-11-05 · Hora: no fijada · Consulta: 2026-11-06, última búsqueda 07:41
-· Estatus: Pendiente de corroboración · Conteo de armamento: ARG-148-ARM-002
+ARG-148-008 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: cifras solo por
+resumen; día no fijado; parte de Tacámbaro posiblemente anterior; republicaciones de una misma
+nota · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con fecha en la ruta:
+RED Michoacán (2026/11/05) · Hecho: 2026-11-05 · Hora: no fijada · Consulta: 2026-11-06, última
+búsqueda 07:41 · Estatus: Pendiente de corroboración · Conteo de armamento: ARG-148-ARM-002
 Deslindes y reservas: Tacámbaro en el índice: ARG-109-001, ARG-109-ARM-001 y ARG-110-004
 (agosto): otros hechos. Cotija y Tacámbaro, febrero de 2026 (Infobae 2026/02/03): otro hecho.
+Pedernales, Tacámbaro, 2 o 3-nov (RED Michoacán 2026/11/03; Contramuro): mismas cifras, posible
+mismo hecho de la ventana de ARGOS 146 o 147.
 
 ### PACÍFICO · CHIAPAS Y OAXACA — LA MARINA ASEGURA MÁS DE UNA TONELADA DE COCAÍNA: UN DETENIDO [VERDE]
 
@@ -346,18 +337,19 @@ Proceso 2026/11/5; La Silla Rota 2026/11/5) · PUBLICADO EL DÍA DE APERTURA SIN
 operaciones no fijado · SI RESULTA ANTERIOR A LAS 09:42 DEL 5, ES DE LA VENTANA DE ARGOS 147 Y
 SE RETIRA DE ESTE TOTAL · más de una tonelada de cocaína y 1 detenido, por titular (El
 Financiero: «aseguran más de una tonelada… hay un detenido») · anuncio del secretario de
-Seguridad, por titular (La Silla Rota: «…: Harfuch»): declaración nombrada · «golpe de 273
-millones de pesos», por titular (Proceso) · 1,149 kg en 32 bultos, dos operaciones, SOLO POR
+Seguridad, por titular de un medio (La Silla Rota: «…: Harfuch») · «273 millones de pesos»,
+estimación de un medio, SOLO POR RESUMEN · 1,149 kg en 32 bultos, dos operaciones, SOLO POR
 RESUMEN · Semar
 
 ── TRAZABILIDAD
 
-ARG-148-010 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día de las
-operaciones no fijado; desglose solo por resumen; declaración del secretario por titular de un
-medio · Fuentes: Institucional 1 · Nacional 3 · Regional 0 · Abierta 0 · con fecha en la ruta:
-El Financiero (2026/11/05) · Proceso (2026/11/5) · La Silla Rota (2026/11/5) · Hecho: 2026-11-05
-· Hora: no fijada · Consulta: 2026-11-06, última búsqueda 07:41 · Estatus: Parcialmente
-corroborado · Conteo de armamento: sin fila — aseguramiento de droga, no de armamento
+ARG-148-009 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día de las
+operaciones no fijado; desglose solo por resumen; declaración del secretario solo a través del
+titular de un medio · Fuentes: Institucional 0 · Nacional 3 · Regional 0 · Abierta 0 · con fecha
+en la ruta: El Financiero (2026/11/05) · Proceso (2026/11/5) · La Silla Rota (2026/11/5) ·
+Hecho: 2026-11-05 · Hora: no fijada · Consulta: 2026-11-06, última búsqueda 07:41 · Estatus:
+Parcialmente corroborado · Conteo de armamento: sin fila — aseguramiento de droga, no de
+armamento
 Deslindes y reservas: N+ «más de 4 toneladas de cocaína en embarcaciones en Chiapas y Oaxaca»
 (sin fecha; 13 o 16 detenidos): otro hecho, no se integra.
 
@@ -376,7 +368,7 @@ Total nacional del corte: en la página de panorama.
 
   · Sin categoría: n/d — SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE
 
-  · Cartuchos: 119 — Morelia; Queréndaro y Tacámbaro: 710, un solo titular
+  · Cartuchos: 119 — Morelia; Queréndaro y Tacámbaro: 710, solo por resumen
 
   · Cargadores: n/d — Morelia 2 y Michoacán 23, solo por resumen
 
@@ -388,7 +380,7 @@ Total nacional del corte: en la página de panorama.
 
   · Armamento especial: n/d — SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE
 
-  · Detenidos: n/d — en el mismo evento de aseguramiento: Morelia 3 y Pachuca 4, por titulares de medios: sin cifra de autoridad
+  · Detenidos: n/d — en el mismo evento de aseguramiento: Morelia 3, por titulares de medios: sin cifra de autoridad · Pachuca 4: sin aseguramiento, fuera de este conteo
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-11-06 · Hora: 07:30 (CDMX) · Corte: Matutino · ARGOS N.° 148 · USO INSTITUCIONAL
@@ -398,8 +390,8 @@ Total nacional del corte: en la página de panorama.
 ## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
 
   ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
-  ARG-148-ARM-001 | Michoacán | Morelia | pub. 5-nov; día de los cateos no fijado | n/d | 1 | n/d | n/d | 119 | n/d | n/d | n/d | n/d | n/d | FGE Michoacán (por titular de medios) | Bajo · 1 larga (titular de La Primera de AM) y 119 cartuchos (titulares de Esfera y Quadratín); 2 cargadores, solo por resumen; 3 detenidos por titular de medios, sin cifra de autoridad: n/d; día no fijado: cláusula de retiro; ver ARG-148-008
-  ARG-148-ARM-002 | Michoacán | Queréndaro, Cotija y Tacámbaro | pub. 5-nov; día no fijado | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | Ejército y GN (solo por resumen) | Bajo · cualitativo: 4 largas, 710 cartuchos, 23 cargadores, 3 granadas y 10 AEI, solo por resumen o por un solo titular; ver ARG-148-009
+  ARG-148-ARM-001 | Michoacán | Morelia | pub. 5-nov; día de los cateos no fijado | n/d | 1 | n/d | n/d | 119 | n/d | n/d | n/d | n/d | n/d | FGE Michoacán (por titular de medios) | Bajo · 1 larga (titular de La Primera de AM) y 119 cartuchos (titulares de Esfera y Quadratín); 2 cargadores, solo por resumen; 3 detenidos por titular de medios, sin cifra de autoridad: n/d; día no fijado: cláusula de retiro; ver ARG-148-007
+  ARG-148-ARM-002 | Michoacán | Queréndaro, Cotija y Tacámbaro | pub. 5-nov; día no fijado | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | Ejército y GN (solo por resumen) | Bajo · cualitativo: 4 largas, 710 cartuchos, 23 cargadores, 3 granadas y 10 AEI, solo por resumen (sumas, cálculo propio); Tacámbaro: posible duplicidad con Pedernales (3-nov); ver ARG-148-008
   ARG-148-ARM-003 | Sinaloa | Navolato (Las Trancas) | 5-nov, por ruta | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | Defensa (por medios) | Bajo · cualitativo: jeep, armamento y equipo táctico sin cifra, solo por resumen; sin detenidos; ver ARG-148-003
 
 Lectura regional: Occidente, 1 arma larga y 119 cartuchos (Michoacán); las demás regiones, sin
@@ -435,14 +427,14 @@ INDEXADO EN VENTANA.
 ## CANDIDATOS
 
   Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
-  Tabasco · Paraíso | Portación de arma de uso exclusivo; exsubdirector de Seguridad Pública municipal; procedimiento abreviado; 1 sentenciado, por titular · nuevo en ARGOS 148 | «2 años», por titular (Quadratín); 2 años 8 meses, SOLO POR RESUMEN: CIFRA CONTRADICHA | FGR (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL · comunicado no leído; notas sin fecha en la ruta; fecha de la sentencia no fijada | Bajo
-  Oaxaca · San Antonio de la Cal | Secuestro agravado (2011); 2 sentenciados · candidato de ARGOS 147 | 157 años, por titular del boletín 2,948 en el listado de portal.fgeo.gob.mx SOLO POR RESUMEN; 157 años 6 meses por suma, SOLO POR RESUMEN: CIFRA CONTRADICHA | FGE Oaxaca | PENDIENTE DE CONFIRMACIÓN OFICIAL · URL individual del boletín no obtenida; publicado el 4-nov (ventana de ARGOS 147) | Bajo
+  Tabasco · Paraíso | Portación de arma de uso exclusivo; exsubdirector de Seguridad Pública municipal; procedimiento abreviado; 1 sentenciado, por titular · desarrollo del candidato de Tabasco de ARGOS 147 (portación, FGR) | «2 años», por titular (Quadratín); 2 años 8 meses, SOLO POR RESUMEN: CIFRA CONTRADICHA | FGR (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL · comunicado no leído; notas sin fecha en la ruta; fecha de la sentencia no fijada | Bajo
+  Oaxaca · San Antonio de la Cal | Secuestro agravado (2011); 2 sentenciados · candidato de ARGOS 147 | 157 años, por titular (Primera Línea 2026/11/04); boletín 2,948 en el listado de portal.fgeo.gob.mx, SOLO POR RESUMEN; 157 años 6 meses por suma, SOLO POR RESUMEN: CIFRA CONTRADICHA | FGE Oaxaca | PENDIENTE DE CONFIRMACIÓN OFICIAL · URL individual del boletín no obtenida; publicado el 4-nov (ventana de ARGOS 147) | Bajo
   Chiapas · NL · Coah | Palenque, feminicidio, 65 años (El Sol del Soconusco 2026/11/04) · Los Ramones, FGR, más de cinco años (MVS 2026/11/4) · Saltillo–Monclova, FGR, 7 años (La Prensa de Coahuila 2026/11/04) · publicados el 4-nov | Por titular de medios | FGE Chiapas y FGR (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · ventana de ARGOS 147; sin boletín del dominio | Bajo
   BC · Jal · Pue · Edomex · Zac · Coah · Hgo | Tecate · Mexicali · Jalisco (dos feminicidas) · Huejotzingo (posible homónimo) · Ecatepec · Fresnillo · Ramos Arizpe · Tulantepec (audiencia del 5-nov: sin resultado indexado) · candidatos anteriores | Ver ARGOS 147 · HEREDADO — NO REVERIFICADO | Fiscalías estatales y FGR (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · sin boletín del dominio en la ventana | No confirmado
 
 Publicadas antes de la ventana, no integrables: FGE Colima (3-nov) · FGE Durango (5-sep) · FGE
 Querétaro (22-sep) · FGE Guerrero (12-ago) · FGE Quintana Roo (18-oct) · FGE Jalisco (19-oct).
-NO SE INTEGRAN. Cihuatlán, Jal.: vinculación a proceso, no sentencia.
+NO SE INTEGRAN.
 
 ## INDICADOR DE COBERTURA
 
@@ -469,35 +461,38 @@ NO SE INTEGRAN. Cihuatlán, Jal.: vinculación a proceso, no sentencia.
 ── VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL
 
 1. Dos rojos propios en dos entidades (cálculo propio), por víctima autoridad y homicidio
-múltiple. Descenso del riesgo nacional frente a ARGOS 147: 0,09 rojos por hora (2 en 21 h 48
-min), frente a 0,15 en ARGOS 147 (cálculo propio).
+múltiple. 0,09 rojos por hora (2 en 21 h 48 min), frente a 0,15 en ARGOS 147: no comparable sin
+más, por ventanas distintas y cláusulas de retiro en casi todos los hechos de ambas (cálculo
+propio).
 2. Centro concentra los dos rojos (Hidalgo y Puebla: ARG-148-001 y -002), ambos con condición de
 la víctima o saldo por confirmar.
-3. Violencia operativa: cuatro amarillos en dos entidades, con 5 abatidos por la fuerza pública
-en dos enfrentamientos (cálculo propio).
+3. Violencia operativa: tres amarillos en dos entidades, con 5 abatidos por la fuerza pública en
+dos enfrentamientos (cálculo propio).
 4. Respuesta institucional: cuatro verdes; 1 arma larga y 119 cartuchos integrados; ninguna
 sentencia integrable (cálculo propio; totales, en el panorama).
-5. VENTANA DE 21 H 48 MIN: LOS DIEZ HECHOS PUBLICADOS EL DÍA DE APERTURA SIN HORA, CON CLÁUSULA
+5. VENTANA DE 21 H 48 MIN: LOS NUEVE HECHOS PUBLICADOS EL DÍA DE APERTURA SIN HORA, CON CLÁUSULA
 DE RETIRO; SIN BOLETÍN FEDERAL DEL 5-NOV INDEXADO. CÁLCULO PROPIO.
 
 ── CONCLUSIONES DE INTELIGENCIA CRIMINAL
 
 1. ENFRENTAMIENTOS CON LA FUERZA PÚBLICA EN SINALOA Y EL ESTADO DE MÉXICO EL MISMO DÍA: 5
 ABATIDOS (cálculo propio; ARG-148-003 y -004); en Naucalpan, el objetivo era el señalado por el
-homicidio de un mando policial; vínculo no acreditado. Línea: solicitar la balística de las
-armas aseguradas y cruzarla con las investigaciones del Cártel Nuevo Imperio.
+homicidio de un mando policial; vínculo no acreditado. Línea: solicitar a la SSPC y a la Defensa
+si hubo armamento asegurado y su balística, y cruzarla con las investigaciones del Cártel Nuevo
+Imperio.
 2. EXMANDO POLICIAL MUNICIPAL ASESINADO EN UN INTENTO DE ASALTO, CON ANTECEDENTE DE SECUESTRO EN
-2022, POR SLUG (EFFETÁ) (ARG-148-001 y -007). Línea: verificar si el móvil fue robo o ataque
+2022, POR SLUG (EFFETÁ) (ARG-148-001 y -006). Línea: verificar si el móvil fue robo o ataque
 dirigido y solicitar la situación de su protección previa.
 3. MICHOACÁN: GRANADAS, ARTEFACTOS EXPLOSIVOS IMPROVISADOS Y ARMAS LARGAS EN TRES MUNICIPIOS,
-SOLO POR RESUMEN (ARG-148-009): consistente con capacidad explosiva distribuida en el centro y
-occidente del estado; requiere validación. Línea: solicitar el dictamen de los 10 AEI de Cotija.
-4. CULIACÁN: VÍCTIMA ATADA Y CON HUELLAS DE TORTURA CERCA DE UNA CASETA MILITAR, POR TITULAR
-(ARG-148-006). Línea: vigilar las colonias Los Huizaches y CNOP y solicitar a la FGE de Sinaloa
-causa y antecedentes.
-5. RUTA MARÍTIMA DEL PACÍFICO SUR: MÁS DE UNA TONELADA DE COCAÍNA FRENTE A CHIAPAS Y OAXACA, POR
-TITULAR (ARG-148-010). Línea: solicitar a la Semar el punto de aseguramiento, el tipo de
-embarcación y la nacionalidad del detenido.
+SOLO POR RESUMEN (ARG-148-008): consistente con capacidad explosiva distribuida en el centro y
+occidente del estado; requiere validación. Línea: solicitar el dictamen de los artefactos
+explosivos de Cotija (10, solo por resumen).
+4. PUEBLA: ATAQUE ARMADO EN UN PUNTO DE PAGO DE PROGRAMAS SOCIALES CON UNA VÍCTIMA COLATERAL
+ADULTA MAYOR, SOLO POR RESUMEN (ARG-148-002). Línea: vigilar los días de pago frente a
+sucursales del Banco del Bienestar en la Mixteca poblana y solicitar a la FGE el móvil.
+5. CORREDOR MARÍTIMO DEL PACÍFICO SUR ACTIVO FRENTE A CHIAPAS Y OAXACA (ARG-148-009). Línea:
+solicitar a la Semar el punto de aseguramiento, el tipo de embarcación y la nacionalidad del
+detenido.
 
 ## INDICADORES OFICIALES
 
