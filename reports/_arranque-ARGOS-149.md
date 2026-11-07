@@ -2,7 +2,7 @@
 
 La continuidad vive en el repositorio: esta orden, `CLAUDE.md`, `reports/_pendientes.md` («Abiertos que ARGOS 149 hereda» y «Deuda de método (ARGOS 148)»), `reports/argos-2026-11-06-fuentes.md` (ARGOS 148) y su archivo de equipos.
 
-⚠️ **El mensaje listo para pegar está en `reports/_ordenes-ARGOS-147.txt`.** Este archivo es el detalle.
+⚠️ **El mensaje listo para pegar está en `reports/_ordenes-ARGOS-149.txt`.** Este archivo es el detalle.
 
 ## BLOQUE 0 — VERIFICACIÓN DE BASE
 
@@ -16,7 +16,7 @@ Los comandos del mensaje de órdenes. **Estado esperado**: última edición `arg
 | Ventana | **abre 2026-11-06 07:30 CDMX** (cierre de 148) y cierra a la hora real de arranque (o del «Procede», si llega más de dos horas tarde) |
 | Serie | 26 h 50 (147) · **21 h 48 (148)** |
 | Ciclo | **A** (Noroeste + Centro), tras la prioridad sobre el ciclo |
-| Archivo | `argos-<FECHA>.html` · `WINDOW_DAYS` según las fechas de calendario que toque la ventana (la plantilla de 148 trae 2) |
+| Archivo | `argos-2026-11-07.html` (sábado 7-nov) · `WINDOW_DAYS` = **2** (6 y 7; la plantilla de 148 trae 2, sin cambio) · ventana de ≈29 h con viernes y sábado |
 
 ## BLOQUE 2 — LECTURA OBLIGATORIA
 
@@ -43,6 +43,6 @@ Tope de 200 por turno: control 2 · coordinador 18 · ola 150 (6 × 25; **4 por 
 
 ## BLOQUE 5 — FORMA Y CONSTRUCCIÓN
 
-- Parta de `tools/datos-argos-148.py` (copia a `datos-argos-149.py`): cambie `NUM`, `FECHA`, `HORA`, `CONSULTA`, `DUR`, `HORAS`, `RET` (07:30 del 6), la ventana del panorama, las aserciones, el `<title>` que reemplaza (plantilla `reports/argos-2026-11-06.html`, «ARGOS 148 — … — 2026-11-06»), el reemplazo de `WINDOW_DAYS` (la plantilla trae 2) y las listas de fichas por página.
+- Parta de `tools/datos-argos-148.py` (copia a `datos-argos-149.py`): cambie `NUM`, `FECHA`, `HORA`, `CONSULTA`, `DUR`, `HORAS`, `RET` (07:30 del 6), la ventana del panorama, las aserciones, el `<title>` que reemplaza (plantilla `reports/argos-2026-11-06.html`, «ARGOS 148 — … — 2026-11-06»), `WINDOW_DAYS` (2, sin cambio) y las listas de fichas por página.
 - Móvil: `python3 tools/gen-movil.py 149 <FECHA> 148 2026-11-06 <HORA>`. Texto: `gen-texto.py`. Validador: `node tools/validar.js reports/argos-<FECHA>.html 2026-11-06 <FECHA>` (solo escritorio; el móvil lo valida `gen-movil.py`).
 - Controles: dos rondas, veinte pases cada una; informes en `reports/argos-<FECHA>-equipos.md` y `-fuentes.md`; la ronda 2 en serie.
