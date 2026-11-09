@@ -107,9 +107,9 @@ estimada, por titular; operativo en el boletín federal del 5-nov, anunciado el 
 ventana de ARGOS 148 o anterior · Tabasco, 21 detenidos (3 a 5-nov) · del agregado federal del 6
 al 8, SOLO POR RESUMEN, sin ficha: Tlachichuca, otra acción en Agua Escondida El Salitrero (95
 mdp; CIFRA CONTRADICHA con los 4,132 del 5-nov) · Zitácuaro (laboratorio), Tepeyahualco
-(laboratorio, 2 detenidos), Nuevo Laredo (2 detenidos, armas sin cifra), Baila, Culiacán
-(laboratorio, 34 mdp, por titular) · Cuerámaro: comandante muerto por disparo de su arma de
-cargo: no es homicidio acreditado.
+(laboratorio, 2 detenidos; POSIBLE DUPLICIDAD con ARG-149-015), Nuevo Laredo (2 detenidos, armas
+sin cifra), Baila, Culiacán (laboratorio, 34 mdp, por titular) · Cuerámaro: comandante muerto
+por disparo de su arma de cargo: no es homicidio acreditado.
 FE DE ERRATAS — ARGOS 148: ARG-148-003 (Navolato) pasa de 🟡 a 🔴: «agresión contra militares…
 confirma Harfuch», por titular (Losnoticieristas 2026/11; Luz Noticias 2026-11-06); el grupo
 atacó a personal en recorrido, SOLO POR RESUMEN; quién inició: versión del secretario a través
@@ -158,7 +158,7 @@ ARG-149-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 del recorrido solo por resumen; ninguna fuente institucional leída · Fuentes: Institucional 0 ·
 Nacional 1 · Regional 4 · Abierta 0 · con fecha en la ruta: Correo (2026/nov/07) · Correo
 (2026/nov/08) · AM (2026/11/08) · Hecho: 2026-11-07 · Hora: poco antes de las 20:00 (solo por
-resumen) · Consulta: 2026-11-09, última búsqueda 16:56 · Estatus: Parcialmente corroborado ·
+resumen) · Consulta: 2026-11-09, última búsqueda 16:43 · Estatus: Parcialmente corroborado ·
 Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Valtierrilla no figura en las cinco ediciones previas ni en el índice.
 «Jornada violenta en Guanajuato deja seis muertos, incluido un militar» (La Prensa de Coahuila
@@ -183,7 +183,7 @@ ARG-149-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 servicio contradichas; ninguna fuente institucional leída · Fuentes: Institucional 0 · Nacional
 2 · Regional 3 · Abierta 0 · con fecha en la ruta: AM (2026/11/07) · Correo (2026/nov/07) · La
 Silla Rota (2026/11/8) · Hecho: 2026-11-07 · Hora: 20:00 o 21:00 (solo por resumen, contradicha)
-· Consulta: 2026-11-09, última búsqueda 16:56 · Estatus: Parcialmente corroborado · Conteo de
+· Consulta: 2026-11-09, última búsqueda 16:43 · Estatus: Parcialmente corroborado · Conteo de
 armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: «Guanajuato suma 4 policías municipales asesinados en 3 semanas, todos en
 sábado» (Correo 2026/nov/09): recuento de medios, no se integra. ARG-140-002 (Purísima del
@@ -205,7 +205,7 @@ homicidio múltiple) · la FGE inicia investigación, SOLO POR RESUMEN · ningú
 ARG-149-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 1 · Regional 3 ·
 Abierta 0 · con fecha en la ruta: AM (2026/11/07) · Correo (2026/nov/07) · Hecho: 2026-11-07 ·
-Hora: madrugada (solo por resumen) · Consulta: 2026-11-09, última búsqueda 16:56 · Estatus:
+Hora: madrugada (solo por resumen) · Consulta: 2026-11-09, última búsqueda 16:43 · Estatus:
 Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Duranes de Arriba, Valle de Santiago (21-sep, 3 muertos y 5 heridos): otro
 hecho, otra ventana. El Armadillo no figura en las cinco ediciones previas.
@@ -228,7 +228,7 @@ ARG-149-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 2 · Regional 2 ·
 Abierta 0 · con fecha en la ruta: El Financiero (2026/11/08) · AM (2026/11/08) · Correo
 (2026/nov/08) · La Silla Rota (2026/11/9) · Hecho: 2026-11-08 · Hora: tarde (solo por resumen) ·
-Consulta: 2026-11-09, última búsqueda 16:56 · Estatus: Parcialmente corroborado · Conteo de
+Consulta: 2026-11-09, última búsqueda 16:43 · Estatus: Parcialmente corroborado · Conteo de
 armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: La Silla Rota 2026/11/9 («matan a padre e hijo y hieren a una menor»):
 mismo hecho, no se duplica. «Privan de la libertad a familia… en Celaya» (Zona Franca, sin
@@ -261,7 +261,7 @@ secuestro solo por resumen; lugar y modo de la localización contradichos; decla
 secretario solo a través del titular de un medio · Fuentes: Institucional 0 · Nacional 4 ·
 Regional 3 · Abierta 0 · con fecha en la ruta: La Jornada (2026/11/08) · El Financiero
 (2026/11/08) · Proceso (2026/11/8) · La Silla Rota (2026/11/8) · Hecho: 2026-11-07 · Hora: tarde
-del 7 (solo por resumen); localizado el 8 · Consulta: 2026-11-09, última búsqueda 16:56 ·
+del 7 (solo por resumen); localizado el 8 · Consulta: 2026-11-09, última búsqueda 16:43 ·
 Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no
 publicado
 Deslindes y reservas: Río Bravo en el índice: ARG-139-REC-001 (diputada herida, 10-oct) y
@@ -288,7 +288,7 @@ ubicación exacta contradichos; ninguna fuente institucional («la Fiscalía abr
 es declaración) · Fuentes: Institucional 0 · Nacional 2 · Regional 3 · Abierta 0 · con fecha en
 la ruta: Línea Directa (2026-11-08) · Síntesis (2026/11/09) · Proyecto Puente (2026/11/09) · La
 Silla Rota (2026/11/9) · Hecho: 2026-11-08 · Hora: no fijada · Consulta: 2026-11-09, última
-búsqueda 16:56 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — chaleco
+búsqueda 16:43 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — chaleco
 táctico, cartuchos y cargadores hallados en la zona, cantidad no determinada, solo por resumen:
 evento cualitativo
 Deslindes y reservas: Libramiento de Mazatlán no figura en las cinco ediciones previas. Cuerpos
@@ -312,7 +312,7 @@ integra · ningún detenido publicado
 ARG-149-007 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 4 ·
 Abierta 0 · con fecha en la ruta: Línea Directa (2026-11-07) · Luz Noticias (2026-11-07) ·
-Hecho: 2026-11-07 · Hora: noche (solo por resumen) · Consulta: 2026-11-09, última búsqueda 16:56
+Hecho: 2026-11-07 · Hora: noche (solo por resumen) · Consulta: 2026-11-09, última búsqueda 16:43
 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no
 publicado
 Deslindes y reservas: «Seis hombres asesinados en Culiacán durante el fin de semana» (Diario de
@@ -332,21 +332,22 @@ armado en Culiacán deja cuatro muertos» (López Dóriga): hecho del 12-oct, ot
 
 Irapuato · LAS HUERTAS PRIMERA SECCIÓN, POR TITULAR · domingo 8-NOV, por ruta (Correo
 2026/nov/08: «ataque deja un muerto y 2 heridos») · 1 muerto y 2 heridos, por titular (🟡
-homicidio doloso único) · hora contradicha (madrugada, tarde o noche), SOLO POR RESUMEN ·
-«persecución con soldados», por titular (AM 2026/11/08): sin enfrentamiento publicado · ningún
-detenido publicado
+homicidio doloso único) · hora contradicha: noche del 7 (AM) o madrugada del 8 (Correo;
+Milenio), SOLO POR RESUMEN · agresores en motocicleta, SOLO POR RESUMEN · «persecución con
+soldados», por titular (AM 2026/11/08): sin enfrentamiento publicado · ningún detenido publicado
 
 ── TRAZABILIDAD
 
 ARG-149-008 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora contradicha,
 solo por resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 1 ·
 Regional 2 · Abierta 0 · con fecha en la ruta: Correo (2026/nov/08) · AM (2026/11/08) · Hecho:
-2026-11-08 · Hora: contradicha (solo por resumen) · Consulta: 2026-11-09, última búsqueda 16:56
+2026-11-08 · Hora: contradicha (solo por resumen) · Consulta: 2026-11-09, última búsqueda 16:43
 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no
 publicado
-Deslindes y reservas: No es el militar de ARG-149-001, que murió en un hospital de Irapuato tras
-el ataque de Valtierrilla: otra localidad, otro día y otra víctima. Las Huertas no figura en las
-cinco ediciones previas.
+Deslindes y reservas: No es Valtierrilla (ARG-149-001, Salamanca): Las Huertas es una colonia de
+Irapuato; aquí el Ejército persiguió a los agresores, SOLO POR RESUMEN; identidad de la víctima
+no publicada; la coincidencia 1 muerto y 2 heridos con ARG-149-001 no tiene otro vínculo. Las
+Huertas no figura en las cinco ediciones previas.
 
 ### CHIHUAHUA · CHIHUAHUA — ATAQUE ARMADO EN GRANJAS CERRO GRANDE: UN MUERTO Y UN HERIDO [AMARILLO]
 
@@ -364,7 +365,7 @@ ARG-149-009 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 entre titulares; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional
 3 · Abierta 0 · con fecha en la ruta: El Diario de Chihuahua (2026/nov/08) · En Blanco y Negro
 (2026/11/08) · Hecho: 2026-11-08 · Hora: tarde (solo por resumen) · Consulta: 2026-11-09, última
-búsqueda 16:56 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
+búsqueda 16:43 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
 asegurado: no publicado
 Deslindes y reservas: La pista inicial lo situaba el sábado: la ruta lo fija el domingo 8.
 
@@ -381,7 +382,7 @@ POR RESUMEN · 1 muerto (🟡 homicidio doloso único) · FUENTE ÚNICA · ning�
 ARG-149-010 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: fuente única; colonia
 y hora solo por resumen · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con
 fecha en la ruta: Proyecto Puente (2026/11/07) · Hecho: 2026-11-07 · Hora: mañana (solo por
-resumen) · Consulta: 2026-11-09, última búsqueda 16:56 · Estatus: Pendiente de corroboración ·
+resumen) · Consulta: 2026-11-09, última búsqueda 16:43 · Estatus: Pendiente de corroboración ·
 Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Herido en Puerta del Rey (Hermosillo), solo por resumen y sin fuente
 propia: no se integra.
@@ -401,7 +402,7 @@ ARG-149-011 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sos
 hecho solo por resumen · Fuentes: Institucional 0 · Nacional 0 · Regional 1 · Abierta 0 · con
 fecha en la ruta: Periodismo Negro (2026/11/07) · Hecho: vie 6-nov, DÍA SOLO POR RESUMEN;
 publicación 7-nov, por ruta · Hora: tarde (solo por resumen) · Consulta: 2026-11-09, última
-búsqueda 16:56 · Estatus: Pendiente de corroboración · Conteo de armamento: sin fila — armamento
+búsqueda 16:43 · Estatus: Pendiente de corroboración · Conteo de armamento: sin fila — armamento
 asegurado: no publicado
 Deslindes y reservas: Barbería de la Zona Centro: 4-nov, ventana de ARGOS 147, visto. Ningún
 hecho de Rancho Las Flores en las cinco ediciones previas.
@@ -423,7 +424,7 @@ publicado
 ARG-149-012 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día del hecho y
 ausencia de heridos solo por resumen; ninguna fuente institucional · Fuentes: Institucional 0 ·
 Nacional 1 · Regional 2 · Abierta 0 · con fecha en la ruta: Vanguardia (2026/11/07) · Hecho:
-2026-11-07 · Hora: no fijada · Consulta: 2026-11-09, última búsqueda 16:56 · Estatus:
+2026-11-07 · Hora: no fijada · Consulta: 2026-11-09, última búsqueda 16:43 · Estatus:
 Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Juchitán en el índice (ARG-122-006, ARG-125-018, ARG-138-001, ARG-139-003,
 ARG-140-021): otros hechos. Identidad: medios, no se reproduce.
@@ -443,7 +444,7 @@ detenido publicado
 ARG-149-013 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora no fijada
 (frontera de ventana); ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 1 ·
 Regional 3 · Abierta 0 · con fecha en la ruta: La Aldea de la Información (2026/11/09) · Hecho:
-2026-11-09 · Hora: no fijada · Consulta: 2026-11-09, última búsqueda 16:56 · Estatus:
+2026-11-09 · Hora: no fijada · Consulta: 2026-11-09, última búsqueda 16:43 · Estatus:
 Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Cosoleacaque en el índice (ARG-105-REC-004, ARG-140-018, ARG-141-003):
 otros hechos, otras fechas.
@@ -466,7 +467,7 @@ ARG-149-014 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 versión oficial a través de medios; día y hora no fijados · Fuentes: Institucional 0 · Nacional
 1 · Regional 3 · Abierta 0 · con fecha en la ruta: Quinto Poder (2026/11/08) · El Imparcial
 (2026/11/09) · Hecho: publicación 8-nov, por ruta; día no fijado (agregado federal 6 a 8-nov) ·
-Hora: no fijada; ~14:00 solo por resumen · Consulta: 2026-11-09, última búsqueda 16:56 ·
+Hora: no fijada; ~14:00 solo por resumen · Consulta: 2026-11-09, última búsqueda 16:43 ·
 Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no
 publicado
 Deslindes y reservas: Delito y detención en la misma ventana: dos fichas (ARG-149-014 y -018).
@@ -498,14 +499,15 @@ contradichas, SOLO POR RESUMEN: no se reproducen · armas: ninguna publicada
 ARG-149-015 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día del hecho solo
 por resumen; comunicado no leído íntegro · Fuentes: Institucional 1 · Nacional 3 · Regional 1 ·
 Abierta 0 · con fecha en la ruta: Diario Puntual (2026/11/07) · Latinus (2026/11/8) · Infobae
-(2026/11/08) · Hecho: vie 6-nov, DÍA SOLO POR RESUMEN; publicación 7-nov, por ruta · Hora: no
-fijada · Consulta: 2026-11-09, última búsqueda 16:56 · Estatus: Parcialmente corroborado ·
-Conteo de armamento: sin fila — aseguramiento de droga y precursores, no de armamento
-Deslindes y reservas: Tepeyahualco (agregado 6 a 8-nov: laboratorio, 2 detenidos, GN, Ejército y
-Policía Estatal, solo por resumen): otro municipio y otra corporación; duplicidad no descartada:
-ver archivo de fuentes. No es Tlachichuca (operativo del 5-nov, ventana de ARGOS 148: visto en
-el panorama). «4 mil 570 mdp» por los dos laboratorios (Crónica Puebla): suma de un medio, no se
-integra.
+(2026/11/08) · Capital Puebla (2026/11/08) · Hecho: vie 6-nov, DÍA SOLO POR RESUMEN; publicación
+7-nov, por ruta · Hora: no fijada · Consulta: 2026-11-09, última búsqueda 16:43 · Estatus:
+Parcialmente corroborado · Conteo de armamento: sin fila — aseguramiento de droga y precursores,
+no de armamento
+Deslindes y reservas: Tepeyahualco (agregado 6 a 8-nov, fuente única, solo por resumen): POSIBLE
+DUPLICIDAD con este hecho (mismos 2 detenidos; 5,200 L atribuidos también a Atempan por Capital
+Puebla, solo por resumen); no se integra ni se declara laboratorio distinto. No es Tlachichuca
+(operativo del 5-nov, ventana de ARGOS 148: visto en el panorama). «4 mil 570 mdp» por los dos
+laboratorios: suma de un medio, no se integra.
 
 ### MICHOACÁN · BUENAVISTA — FGE LOCALIZA SIETE EXPLOSIVOS PARA DRONES EN UN CATEO [VERDE]
 
@@ -525,7 +527,7 @@ ARG-149-016 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 fijado; comunicado de la FGE solo a través de medios · Fuentes: Institucional 0 · Nacional 0 ·
 Regional 5 · Abierta 0 · con fecha en la ruta: Changoonga (2026/11/08) · Hecho: publicación
 8-nov, por ruta; día del cateo no fijado · Hora: no fijada · Consulta: 2026-11-09, última
-búsqueda 16:56 · Estatus: Parcialmente corroborado · Conteo de armamento: ARG-149-ARM-002
+búsqueda 16:43 · Estatus: Parcialmente corroborado · Conteo de armamento: ARG-149-ARM-002
 Deslindes y reservas: Buenavista en el índice (ARG-99-002, ARG-104-REC-002, ARG-117-004): otros
 hechos. Esfera Noticias 2026/11/09 (cateos en Los Reyes): otro caso.
 
@@ -545,7 +547,7 @@ ARG-149-017 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 fijado por publicación; cartuchos y cargadores solo por resumen; ninguna fuente institucional
 leída · Fuentes: Institucional 0 · Nacional 0 · Regional 3 · Abierta 0 · con fecha en la ruta:
 El Imparcial (2026/11/08) · En Línea BC (2026/11/08) · Hecho: 2026-11-08 · Hora: no fijada ·
-Consulta: 2026-11-09, última búsqueda 16:56 · Estatus: Parcialmente corroborado · Conteo de
+Consulta: 2026-11-09, última búsqueda 16:43 · Estatus: Parcialmente corroborado · Conteo de
 armamento: ARG-149-ARM-001
 Deslindes y reservas: Cinco homicidios del 6-nov en Tecate: recuento por titular (El
 Congresista) de hechos separados con composición no resuelta: va a «rojos sin ruta», no a esta
@@ -567,7 +569,7 @@ ARG-149-018 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 emisor y corporaciones solo por resumen del boletín republicado · Fuentes: Institucional 0 ·
 Nacional 2 · Regional 1 · Abierta 0 · con fecha en la ruta: Quinto Poder (2026/11/08) · Infobae
 (2026/11/09) · Hecho: publicación 8-nov, por ruta; día no fijado (agregado federal 6 a 8-nov) ·
-Hora: no fijada · Consulta: 2026-11-09, última búsqueda 16:56 · Estatus: Parcialmente
+Hora: no fijada · Consulta: 2026-11-09, última búsqueda 16:43 · Estatus: Parcialmente
 corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Enfrentamiento: ARG-149-014. Vínculo con otros casos atribuido por medios:
 no acreditado. Zapopan sin coincidencia en las cinco ediciones previas.
@@ -589,7 +591,7 @@ ARG-149-019 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 no fijado; comunicado de la Semar solo a través de medios · Fuentes: Institucional 0 · Nacional
 4 · Regional 1 · Abierta 0 · con fecha en la ruta: Infobae (2026/11/09) · Proceso (2026/11/9) ·
 La Razón (2026/11/09) · MVS (2026/11/9) · Hecho: 2026-11-09 · Hora: no fijada · Consulta:
-2026-11-09, última búsqueda 16:56 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
+2026-11-09, última búsqueda 16:43 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
 fila — aseguramiento de droga, no de armamento
 Deslindes y reservas: No es ARG-148-009 (Chiapas y Oaxaca, 5-nov, 1 detenido): otro día, otra
 zona, otra cifra. Republicaciones del mismo comunicado: una fuente.
@@ -611,7 +613,7 @@ ARG-149-020 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 del agregado; desglose por categoría solo por resumen; boletín leído solo a través de un
 republicador · Fuentes: Institucional 1 · Nacional 1 · Regional 2 · Abierta 0 · con fecha en la
 ruta: Milenio (agregado 6, 7 y 8-nov, por ruta) · Hecho: 6 a 8-nov, agregado federal; día no
-fijado · Hora: día no fijado (agregado 6 a 8-nov) · Consulta: 2026-11-09, última búsqueda 16:56
+fijado · Hora: día no fijado (agregado 6 a 8-nov) · Consulta: 2026-11-09, última búsqueda 16:43
 · Estatus: Parcialmente corroborado · Conteo de armamento: ARG-149-ARM-003
 Deslindes y reservas: Republicador único del agregado: corroboración débil por construcción.
 Sanalona sin coincidencia en las cinco ediciones previas.
@@ -633,7 +635,7 @@ ARG-149-021 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 del agregado; cifra de detenidos de autoridad solo a través del resumen del boletín republicado
 · Fuentes: Institucional 1 · Nacional 1 · Regional 1 · Abierta 0 · con fecha en la ruta: Milenio
 (agregado 6, 7 y 8-nov, por ruta) · Hecho: 6 a 8-nov, agregado federal; día no fijado · Hora:
-día no fijado (agregado 6 a 8-nov) · Consulta: 2026-11-09, última búsqueda 16:56 · Estatus:
+día no fijado (agregado 6 a 8-nov) · Consulta: 2026-11-09, última búsqueda 16:43 · Estatus:
 Parcialmente corroborado · Conteo de armamento: ARG-149-ARM-004
 Deslindes y reservas: Fecha de la nota de Losnoticieristas solo de mes. Antecedentes en
 Escuinapa, otros hechos: ARG-111-002 / ARM-001 (29-ago: 3 detenidos, 5 largas, 27 cargadores,

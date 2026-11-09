@@ -191,11 +191,29 @@ Ronda 1 en paralelo; ronda 2 en serie.
   - C11: códigos FE al índice;
   - C12: residuos de método.
   - **No aplicado**: «partir los bloques del panorama en tabla». Se mantienen las notas compactas porque son trazabilidad (vistos, rojos sin ruta, fe de erratas y seguimiento), que son las excepciones admitidas.
-- **R2**: ver §8b, que se añade al cierre.
+- **R2**, en serie:
+  - **`editor-duplicidad` R2**: **CORREGIR**, por correcciones menores. Aplicado:
+    - A2: deslinde de Escuinapa frente a ARG-111-002/ARM-001, ARG-124-006 y ARG-132-REC-005.
+    - A3: la línea 5 de portada cita -014 y -018.
+    - A4 y A5: «día no fijado» en Zapopan, Sanalona y Escuinapa, en panorama, trazabilidad, tooltip e índice.
+    - A6: El Imparcial cuenta como regional.
+    - A7: Indaparapeo sin vínculo publicado con ARG-147-004.
+    - A8: la conclusión 5 ya no pide el armamento.
+    - A9: Tlachichuca 95 mdp pasa a la lista del agregado.
+    - A10: Tepeyahualco.
+    - A11: «dos pistolas» de -007 en cualitativos.
+    - A12: precisiones de -148-001 y -004 en el índice.
+    - A13: fila de Guanajuato en sentencias.
+    - A1 (Irapuato frente a Valtierrilla) pasó a procedencia R2.
+  - **`procedencia-cifras` R2** (6 de 6 búsquedas): **CORREGIR**. Aplicado:
+    - `-008` se mantiene separado de `-001`. Lo separan el lugar (Las Huertas, Irapuato, por titular) y el modus operandi: el Ejército persiguió a los agresores, solo por resumen. Hora: noche del 7 o madrugada del 8. La víctima no está identificada.
+    - `-015`: Tepeyahualco queda como `POSIBLE DUPLICIDAD` con Atempan. Los dos tienen 2 detenidos, y Capital Puebla atribuye también a Atempan los 5,200 L (2026/11/08, solo por resumen). Tepeyahualco no se integra.
+    - La suma de 4,570 mdp se atribuye a «un medio».
+  - Sin descuadres aritméticos en ninguna de las dos rondas: MU 14, HE 11, CU 6, largas 7, sin categoría 6, cartuchos 1,260, AEI 7, detenidos 3, densidad 0,26.
 
 ## 9. Presupuesto de búsqueda
 
-Control 2 · coordinador 18 (16 de recall y triple consulta + 2 de repetición al cierre) · ola 150 (6 × 25) · `procedencia-cifras` R1 23 · R2: ver §8b.
+Control 2 · coordinador 18 (16 de recall y triple consulta + 2 de repetición al cierre) · ola 150 (6 × 25) · `procedencia-cifras` R1 23 · R2 6 → **199 de 200**. Última búsqueda: **16:43** (marca «Consulta» del cartelón).
 
 ## 10. Hallazgos de método (no van al cartelón)
 

@@ -2837,7 +2837,7 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 | **Reservas de 149** | `-005` Río Bravo: lugar (SLP o Zac), rescate o fuga, acompañantes, autores · `-006` Mazatlán: identificación, causa de muerte, ¿fosa? · `-014` Zapopan: quién inició (testimonio independiente), armamento asegurado · `-009` Chihuahua: 1 o 2 muertos · `-002` SFR: en turno o descanso · `-010`, `-011`: fuente única |
 | **Rojos sin ruta de 149** | San Juan Cacahuatepec (2 muertos, dom 8) · Tecate (cinco homicidios del 6; Los Encinos 2 o 3) · Huaquechula (3 muertos) · Cañada Morelos (2) · Monterrey, taquería (2, riña) · Viesca, Doctor Coss, Nuevo Laredo (¿= ARG-146-009?), Reynosa |
 | **Cláusulas de 148 aún abiertas** | `-002` hora · `-007` Morelia día · `-009` Marina día |
-| **Agregado federal 6-8-nov sin ficha** | Zitácuaro (laboratorio) · Tepeyahualco (laboratorio, 2 detenidos) · Nuevo Laredo (2 detenidos, uno con orden de extradición) · Tlachichuca 95 mdp frente a 4,132 (contradicción) · Baila, Culiacán (34 mdp): buscar un segundo republicador o el boletín en gob.mx/sspc |
+| **Agregado federal 6-8-nov sin ficha** | Zitácuaro (laboratorio) · Tepeyahualco (laboratorio, 2 detenidos; POSIBLE DUPLICIDAD con ARG-149-015 Atempan) · Nuevo Laredo (2 detenidos, uno con orden de extradición) · Tlachichuca 95 mdp frente a 4,132 (contradicción) · Baila, Culiacán (34 mdp): buscar un segundo republicador o el boletín en gob.mx/sspc |
 | **Boletín federal** | Acciones del 9-nov y de cada día de la ventana de 150 (triple consulta) |
 | **Sentencias candidatas** | Apodaca, FGR, 83 migrantes, 2 sentenciados (6-nov) · FGR Guanajuato, 17 años 4 meses (boletines.guanajuato 2026/11/06; término expreso) · Ramos Arizpe, 13 años 4 meses (¿= 19-oct?) · «El Mochaorejas», 50 años (FGR) · Paraíso · Oaxaca 157 años · Palenque · Tulantepec (individualización) |
 | **Seguimientos** | «El Panda» (resultado de la audiencia del 9-nov) · Matamoros (tres policías investigados) · Cuernavaca `-147-001` (atracción por la FGR) · Mexicali `-146-011` (26 fosas / 51 hallazgos) · Champotón `-147-REC-001` |
@@ -2850,5 +2850,5 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 3. **Delito y detención fusionados en un verde** (Zapopan): los dos controles lo detectaron; el borrador debe abrir dos fichas cuando el operativo incluye un enfrentamiento dentro de la ventana.
 4. **Pista roja del recall sin causa verificada** (Cuerámaro): verificar la causa antes de pasar «policía muerto» como 🔴.
 5. **Códigos FE**: `gen-movil.py` los rechaza en el cartelón; van al índice y al archivo de fuentes.
-6. **Presupuesto de 149**: ver `argos-2026-11-09-fuentes.md` §9.
+6. **Presupuesto de 149**: 2 + 18 + 150 + 23 + 6 = **199 de 200**.
 7. **Rama**: 149 vive en `claude/zealous-mendel-baacj5` (encima de `claude/argos-148`).
