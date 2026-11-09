@@ -1143,14 +1143,14 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-149-011` | 149 | 2026-11-06 | ARG-149-011 — Tijuana (Rancho Las Flores), Baja California: hombre asesinado a balazos; día solo por resumen; fuente única; 🟡; ★★☆☆☆ |
 | `ARG-149-012` | 149 | 2026-11-07 | ARG-149-012 — Juchitán, Oaxaca: disparos contra el restaurante de un periodista con protección federal, sin heridos; 🟡; ★★★☆☆ |
 | `ARG-149-013` | 149 | 2026-11-09 | ARG-149-013 — Cosoleacaque (fracc. Los Prados), Veracruz: joven asesinado a balazos; frontera de ventana; 🟡; ★★★☆☆ |
-| `ARG-149-014` | 149 | 2026-11-08 | ARG-149-014 — Zapopan, Jalisco: enfrentamiento durante orden de la Marina en un restaurante, 2 heridos; inicio según versión oficial; 🟡; ★★★☆☆ |
+| `ARG-149-014` | 149 | 2026-11-08 | ARG-149-014 — Zapopan, Jalisco (día no fijado, pub. 8-nov): enfrentamiento durante orden de la Marina en un restaurante, 2 heridos; inicio según versión oficial; 🟡; ★★★☆☆ |
 | `ARG-149-015` | 149 | 2026-11-06 | ARG-149-015 — Atempan, Puebla: Marina desmantela laboratorio, 650 kg de metanfetamina, 2 detenidos; día solo por resumen; cláusula de retiro; 🟢; ★★★☆☆ |
 | `ARG-149-016` | 149 | 2026-11-08 | ARG-149-016 — Buenavista, Michoacán: FGE, 7 explosivos caseros para dron y 5 motocicletas en un cateo; día no fijado; cláusula de retiro; 🟢; ★★★☆☆ |
 | `ARG-149-017` | 149 | 2026-11-08 | ARG-149-017 — Tecate (col. Emiliano Zapata), Baja California: FESC y Marina, 2 fusiles abastecidos; 🟢; ★★★☆☆ |
-| `ARG-149-018` | 149 | 2026-11-08 | ARG-149-018 — Zapopan, Jalisco: detenido el líder de Los Rs («R2») y 19 personas; 🟢; ★★★☆☆ |
+| `ARG-149-018` | 149 | 2026-11-08 | ARG-149-018 — Zapopan, Jalisco (día no fijado, pub. 8-nov): detenido el líder de Los Rs («R2») y 19 personas; 🟢; ★★★☆☆ |
 | `ARG-149-019` | 149 | 2026-11-09 | ARG-149-019 — Pacífico frente a Acapulco, Guerrero: Marina, cerca de 1 t de cocaína, 6 detenidos; frontera de ventana; 🟢; ★★★☆☆ |
-| `ARG-149-020` | 149 | 2026-11-06 | ARG-149-020 — Culiacán (Sanalona), Sinaloa: Ejército y Policía Estatal, 6 armas y 1,260 cartuchos; agregado federal 6-8-nov; cláusula de retiro; 🟢; ★★★☆☆ |
-| `ARG-149-021` | 149 | 2026-11-06 | ARG-149-021 — Escuinapa, Sinaloa: 3 detenidos (una menor), 5 armas largas; agregado federal 6-8-nov; cláusula de retiro; 🟢; ★★★☆☆ |
+| `ARG-149-020` | 149 | 2026-11-06/08 | ARG-149-020 — Culiacán (Sanalona), Sinaloa: Ejército y Policía Estatal, 6 armas y 1,260 cartuchos; agregado federal 6-8-nov; cláusula de retiro; 🟢; ★★★☆☆ |
+| `ARG-149-021` | 149 | 2026-11-06/08 | ARG-149-021 — Escuinapa, Sinaloa: 3 detenidos (una menor), 5 armas largas; agregado federal 6-8-nov; cláusula de retiro; 🟢; ★★★☆☆ |
 | `ARG-149-ARM-001` | 149 | 2026-11-08 | ARG-149-ARM-001 — Tecate, BC: 2 largas; ficha ARG-149-017; Bajo |
 | `ARG-149-ARM-002` | 149 | 2026-11-08 | ARG-149-ARM-002 — Buenavista, Mich.: 7 AEI (explosivos caseros para dron); ficha ARG-149-016; Bajo |
 | `ARG-149-ARM-003` | 149 | 2026-11-06 | ARG-149-ARM-003 — Sanalona, Culiacán: 6 sin categoría, 1,260 cartuchos; ficha ARG-149-020; Bajo |
@@ -1160,3 +1160,4 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-149-FE-003` | 149 | 2026-11-09 | ARG-149-FE-003 — fe de erratas a ARG-148-002: saldo fijado en 2 muertos |
 | `ARG-149-FE-004` | 149 | 2026-11-09 | ARG-149-FE-004 — precisión a ARG-148-006: 4 detenidos atribuidos a la SSPH por titular |
 | `ARG-149-FE-005` | 149 | 2026-11-09 | ARG-149-FE-005 — precisión a ARGOS 148: el boletín federal del 5-nov existía (Milenio, RED113, Tallapolítica) e incluía Tlachichuca (🟢, no se recupera) |
+| — | 149 | 2026-11-09 | Precisiones sin código (ARGOS 149): ARG-148-001 se mantiene 🔴 (SSPH: «elemento de la Policía Estatal», solo por resumen) · ARG-148-004: segundo abatido confirmado por el Gabinete (resumen), identidad abierta |

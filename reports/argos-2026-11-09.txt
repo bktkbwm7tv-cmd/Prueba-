@@ -38,7 +38,7 @@ DE MUERTE DE LOS SEIS CUERPOS DE MAZATLÁN Y SU CRUCE CON FICHAS DE DESAPARICIÓ
 4. SOLICITE A LA FGE DE MICHOACÁN EL DICTAMEN DE LOS SIETE EXPLOSIVOS PARA DRON DE BUENAVISTA Y
 LA FECHA DEL CATEO (ARG-149-016).
 5. SOLICITE A LA SSPC Y A LA SEMAR EL PARTE DE ZAPOPAN: DÍA DEL ENFRENTAMIENTO, QUIÉN INICIÓ Y
-ARMAMENTO ASEGURADO (ARG-149-018).
+ARMAMENTO ASEGURADO (ARG-149-014 y -018).
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-11-09 · Hora: 16:07 (CDMX) · Corte: Matutino · ARGOS N.° 149 · USO INSTITUCIONAL
@@ -61,7 +61,7 @@ recuperaciones de alto impacto de la ventana anterior
   Guanajuato · Valle de Santiago (El Armadillo) · 7-NOV, POR RUTA | Grupo armado irrumpe en vivienda: 3 muertos y 1 herido | 🔴 Rojo | SIN BOLETÍN | Milenio | ★★★☆☆ | ARG-149-003
   Veracruz · Cosoleacaque (fracc. Los Prados) · 9-NOV, POR RUTA | Joven asesinado a balazos | 🟡 Amarillo | SIN BOLETÍN | N+ | ★★★☆☆ | ARG-149-013
   Chihuahua · Chihuahua (Granjas Cerro Grande) · 8-NOV, POR RUTA | Ataque armado: 1 muerto y 1 herido (saldo contradicho) | 🟡 Amarillo | SIN BOLETÍN | — | ★★★☆☆ | ARG-149-009
-  Jalisco · Zapopan (restaurante) · 8-NOV, POR RUTA | Enfrentamiento en un operativo de la Marina: 2 heridos | 🟡 Amarillo | SIN BOLETÍN | El Imparcial · Quinto Poder | ★★★☆☆ | ARG-149-014
+  Jalisco · Zapopan (restaurante) · PUB. 8-NOV, POR RUTA; DÍA NO FIJADO | Enfrentamiento en un operativo de la Marina: 2 heridos | 🟡 Amarillo | SIN BOLETÍN | Quinto Poder | ★★★☆☆ | ARG-149-014
   Guanajuato · Irapuato (Las Huertas 1.ª Sección) · 8-NOV, POR RUTA | Ataque armado: 1 muerto y 2 heridos | 🟡 Amarillo | SIN BOLETÍN | Milenio | ★★★☆☆ | ARG-149-008
   Oaxaca · Juchitán de Zaragoza · 7-NOV, POR RUTA | Disparos contra el restaurante de un periodista protegido; sin heridos | 🟡 Amarillo | SIN BOLETÍN | José Cárdenas | ★★★☆☆ | ARG-149-012
   Sonora · Hermosillo (col. El Mariachi) · 7-NOV, POR RUTA | Hombre asesinado a balazos en la entrada de su domicilio | 🟡 Amarillo | SIN BOLETÍN | — | ★★☆☆☆ | ARG-149-010
@@ -69,7 +69,7 @@ recuperaciones de alto impacto de la ventana anterior
   Guerrero · Acapulco (aguas del Pacífico) · 9-NOV, POR RUTA | Cerca de una tonelada de cocaína en una embarcación; 6 detenidos | 🟢 Verde | SIN BOLETÍN | Infobae · Proceso · La Razón · MVS | ★★★☆☆ | ARG-149-019
   Baja California · Tecate (col. Emiliano Zapata) · 8-NOV, POR RUTA | 2 fusiles abastecidos asegurados | 🟢 Verde | SIN BOLETÍN | — | ★★★☆☆ | ARG-149-017
   Michoacán · Buenavista · PUB. 8-NOV, POR RUTA; DÍA NO FIJADO | 7 explosivos caseros para drones y 5 motocicletas asegurados en un cateo | 🟢 Verde | SIN BOLETÍN | — | ★★★☆☆ | ARG-149-016
-  Jalisco · Zapopan · 8-NOV, POR RUTA | Detenido el líder de Los Rs y 19 personas más | 🟢 Verde | SIN BOLETÍN | Infobae · Quinto Poder | ★★★☆☆ | ARG-149-018
+  Jalisco · Zapopan · PUB. 8-NOV, POR RUTA; DÍA NO FIJADO | Detenido el líder de Los Rs y 19 personas más | 🟢 Verde | SIN BOLETÍN | Infobae · Quinto Poder | ★★★☆☆ | ARG-149-018
   Puebla · Atempan · 6-NOV, SOLO POR RESUMEN; PUB. 7-NOV, POR RUTA | Laboratorio desmantelado: 650 kg de metanfetamina; 2 detenidos | 🟢 Verde | Marina / SSPC (comunicado; texto no leído) | Infobae · Latinus · Excélsior | ★★★☆☆ | ARG-149-015
   Sinaloa · Culiacán (Sanalona) · 6 A 8-NOV, AGREGADO FEDERAL | 6 armas y 1,260 cartuchos asegurados | 🟢 Verde | Gabinete de Seguridad (boletín republicado; texto no leído) | Milenio | ★★★☆☆ | ARG-149-020
   Sinaloa · Escuinapa · 6 A 8-NOV, AGREGADO FEDERAL | 3 detenidos, una menor, con 5 armas largas | 🟢 Verde | Gabinete de Seguridad (boletín republicado; texto no leído) | Milenio | ★★★☆☆ | ARG-149-021
@@ -101,14 +101,15 @@ Vistos, fuera de totales: de la ventana de ARGOS 148 (🟡, no se recuperan): Ch
 Cuauhtémoc · Centro, Tab., ranchería González (1 muerto; mañana o tarde del 6) · Espinal, Ver.
 (adolescente; 7 u 8) · Coronango, Pue. (mujer de 22 años) · Atencingo, mototaxista · Culiacán,
 San Rafael y Díaz Ordaz · Indaparapeo: 6 detenidos por delitos contra la salud (8-nov), día no
-fijado · eventos anteriores publicados durante el corte (🟢, no se recuperan): Tlachichuca, Pue.:
-narcolaboratorio de 11 zonas, 4,132 mdp de afectación estimada, por titular; operativo en el
-boletín federal del 5-nov, anunciado el 6 sin hora: ventana de ARGOS 148 o anterior; el agregado
-del 6 al 8 reporta otra acción en el mismo paraje, 95 mdp, SOLO POR RESUMEN: CIFRA CONTRADICHA ·
-Tabasco, 21 detenidos (3 a 5-nov) · del agregado federal del 6 al 8, SOLO POR RESUMEN, sin
-ficha: Zitácuaro (laboratorio), Tepeyahualco (laboratorio, 2 detenidos), Nuevo Laredo (2
-detenidos, armas sin cifra), Baila, Culiacán (laboratorio, 34 mdp, por titular) · Cuerámaro:
-comandante muerto por disparo de su arma de cargo: no es homicidio acreditado.
+fijado; sin vínculo publicado con ARG-147-004 · eventos anteriores publicados durante el corte
+(🟢, no se recuperan): Tlachichuca, Pue.: narcolaboratorio de 11 zonas, 4,132 mdp de afectación
+estimada, por titular; operativo en el boletín federal del 5-nov, anunciado el 6 sin hora:
+ventana de ARGOS 148 o anterior · Tabasco, 21 detenidos (3 a 5-nov) · del agregado federal del 6
+al 8, SOLO POR RESUMEN, sin ficha: Tlachichuca, otra acción en Agua Escondida El Salitrero (95
+mdp; CIFRA CONTRADICHA con los 4,132 del 5-nov) · Zitácuaro (laboratorio), Tepeyahualco
+(laboratorio, 2 detenidos), Nuevo Laredo (2 detenidos, armas sin cifra), Baila, Culiacán
+(laboratorio, 34 mdp, por titular) · Cuerámaro: comandante muerto por disparo de su arma de
+cargo: no es homicidio acreditado.
 FE DE ERRATAS — ARGOS 148: ARG-148-003 (Navolato) pasa de 🟡 a 🔴: «agresión contra militares…
 confirma Harfuch», por titular (Losnoticieristas 2026/11; Luz Noticias 2026-11-06); el grupo
 atacó a personal en recorrido, SOLO POR RESUMEN; quién inició: versión del secretario a través
@@ -452,21 +453,22 @@ otros hechos, otras fechas.
 ── HECHO
 
 Zapopan · restaurante, SOLO POR RESUMEN · publicación 8-NOV, por ruta (Quinto Poder 2026/11/08)
-· hora: ~14:00, SOLO POR RESUMEN · Marina ejecuta una orden de localización; recibe disparos y
-repele, SOLO POR RESUMEN (🟡 operativo repelido) · INICIO DEL FUEGO SEGÚN VERSIÓN OFICIAL — SIN
-TESTIMONIO INDEPENDIENTE · «tras ataque a elementos», por titular (Meganoticias) · 2 heridos,
-por titular (El Imparcial 2026/11/09: «tras enfrentamiento armado que dejó dos heridos»): un
-marino y el detenido señalado como líder, SOLO POR RESUMEN · sin muertos publicados · armamento:
-no publicado · detenciones: ficha propia, ARG-149-018
+· día no fijado; domingo 8 hacia las 14:00, SOLO POR RESUMEN · Marina ejecuta una orden de
+localización; recibe disparos y repele, SOLO POR RESUMEN (🟡 operativo repelido) · INICIO DEL
+FUEGO SEGÚN VERSIÓN OFICIAL — SIN TESTIMONIO INDEPENDIENTE · «tras ataque a elementos», por
+titular (Meganoticias) · 2 heridos, por titular (El Imparcial 2026/11/09: «tras enfrentamiento
+armado que dejó dos heridos»): un marino y el detenido señalado como líder, SOLO POR RESUMEN ·
+sin muertos publicados · armamento: no publicado · detenciones: ficha propia, ARG-149-018
 
 ── TRAZABILIDAD
 
 ARG-149-014 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: quién inició solo por
-versión oficial a través de medios; hora solo por resumen · Fuentes: Institucional 0 · Nacional
-2 · Regional 2 · Abierta 0 · con fecha en la ruta: Quinto Poder (2026/11/08) · El Imparcial
-(2026/11/09) · Hecho: 2026-11-08 · Hora: no fijada; ~14:00 solo por resumen · Consulta:
-2026-11-09, última búsqueda 16:56 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
-fila — armamento asegurado: no publicado
+versión oficial a través de medios; día y hora no fijados · Fuentes: Institucional 0 · Nacional
+1 · Regional 3 · Abierta 0 · con fecha en la ruta: Quinto Poder (2026/11/08) · El Imparcial
+(2026/11/09) · Hecho: publicación 8-nov, por ruta; día no fijado (agregado federal 6 a 8-nov) ·
+Hora: no fijada; ~14:00 solo por resumen · Consulta: 2026-11-09, última búsqueda 16:56 ·
+Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no
+publicado
 Deslindes y reservas: Delito y detención en la misma ventana: dos fichas (ARG-149-014 y -018).
 Muerte de personal: no publicada.
 
@@ -499,8 +501,10 @@ Abierta 0 · con fecha en la ruta: Diario Puntual (2026/11/07) · Latinus (2026/
 (2026/11/08) · Hecho: vie 6-nov, DÍA SOLO POR RESUMEN; publicación 7-nov, por ruta · Hora: no
 fijada · Consulta: 2026-11-09, última búsqueda 16:56 · Estatus: Parcialmente corroborado ·
 Conteo de armamento: sin fila — aseguramiento de droga y precursores, no de armamento
-Deslindes y reservas: No es Tlachichuca (operativo del 5-nov, ventana de ARGOS 148: visto en el
-panorama). «4 mil 570 mdp» por los dos laboratorios (Crónica Puebla): suma de un medio, no se
+Deslindes y reservas: Tepeyahualco (agregado 6 a 8-nov: laboratorio, 2 detenidos, GN, Ejército y
+Policía Estatal, solo por resumen): otro municipio y otra corporación; duplicidad no descartada:
+ver archivo de fuentes. No es Tlachichuca (operativo del 5-nov, ventana de ARGOS 148: visto en
+el panorama). «4 mil 570 mdp» por los dos laboratorios (Crónica Puebla): suma de un medio, no se
 integra.
 
 ### MICHOACÁN · BUENAVISTA — FGE LOCALIZA SIETE EXPLOSIVOS PARA DRONES EN UN CATEO [VERDE]
@@ -562,9 +566,9 @@ detenidas, por titular (Infobae 2026/11/09: «detiene a un líder criminal y a o
 ARG-149-018 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora no fijada;
 emisor y corporaciones solo por resumen del boletín republicado · Fuentes: Institucional 0 ·
 Nacional 2 · Regional 1 · Abierta 0 · con fecha en la ruta: Quinto Poder (2026/11/08) · Infobae
-(2026/11/09) · Hecho: 2026-11-08 · Hora: no fijada · Consulta: 2026-11-09, última búsqueda 16:56
-· Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no
-publicado
+(2026/11/09) · Hecho: publicación 8-nov, por ruta; día no fijado (agregado federal 6 a 8-nov) ·
+Hora: no fijada · Consulta: 2026-11-09, última búsqueda 16:56 · Estatus: Parcialmente
+corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Enfrentamiento: ARG-149-014. Vínculo con otros casos atribuido por medios:
 no acreditado. Zapopan sin coincidencia en las cinco ediciones previas.
 
@@ -607,8 +611,8 @@ ARG-149-020 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 del agregado; desglose por categoría solo por resumen; boletín leído solo a través de un
 republicador · Fuentes: Institucional 1 · Nacional 1 · Regional 2 · Abierta 0 · con fecha en la
 ruta: Milenio (agregado 6, 7 y 8-nov, por ruta) · Hecho: 6 a 8-nov, agregado federal; día no
-fijado · Hora: no fijada · Consulta: 2026-11-09, última búsqueda 16:56 · Estatus: Parcialmente
-corroborado · Conteo de armamento: ARG-149-ARM-003
+fijado · Hora: día no fijado (agregado 6 a 8-nov) · Consulta: 2026-11-09, última búsqueda 16:56
+· Estatus: Parcialmente corroborado · Conteo de armamento: ARG-149-ARM-003
 Deslindes y reservas: Republicador único del agregado: corroboración débil por construcción.
 Sanalona sin coincidencia en las cinco ediciones previas.
 
@@ -628,11 +632,13 @@ cartuchos, SOLO POR RESUMEN: n/d
 ARG-149-021 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día no fijado dentro
 del agregado; cifra de detenidos de autoridad solo a través del resumen del boletín republicado
 · Fuentes: Institucional 1 · Nacional 1 · Regional 1 · Abierta 0 · con fecha en la ruta: Milenio
-(agregado 6, 7 y 8-nov, por ruta) · Hecho: 6 a 8-nov, agregado federal; día no fijado · Hora: no
-fijada · Consulta: 2026-11-09, última búsqueda 16:56 · Estatus: Parcialmente corroborado ·
-Conteo de armamento: ARG-149-ARM-004
-Deslindes y reservas: Meganoticias 772237 («tres detenidos, entre ellos un menor, con nueve
-armas en Escuinapa»): otro hecho, anterior. ARG-110-ARM-002 (Escuinapa): otro hecho.
+(agregado 6, 7 y 8-nov, por ruta) · Hecho: 6 a 8-nov, agregado federal; día no fijado · Hora:
+día no fijado (agregado 6 a 8-nov) · Consulta: 2026-11-09, última búsqueda 16:56 · Estatus:
+Parcialmente corroborado · Conteo de armamento: ARG-149-ARM-004
+Deslindes y reservas: Fecha de la nota de Losnoticieristas solo de mes. Antecedentes en
+Escuinapa, otros hechos: ARG-111-002 / ARM-001 (29-ago: 3 detenidos, 5 largas, 27 cargadores,
+703 cartuchos; una detenida estadounidense) · ARG-124-006 / ARM-004 (22-sep: 3 detenidos con una
+menor, 9 largas; = Meganoticias 772237) · ARG-132-REC-005 (octubre: 2 cortas) · ARG-110-ARM-002.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-11-09 · Hora: 16:07 (CDMX) · Corte: Matutino · ARGOS N.° 149 · USO INSTITUCIONAL
@@ -674,13 +680,14 @@ Total nacional del corte: en la página de panorama.
   ARG-149-ARM-001 | Baja California | Tecate (col. Emiliano Zapata) | pub. 8-nov, por ruta | n/d | 2 | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | FESC y Marina (por titular de medios) | Bajo · 2 largas por titular; cargadores y 60 cartuchos .223, solo por resumen: n/d; ningún detenido publicado; ver ARG-149-017
   ARG-149-ARM-002 | Michoacán | Buenavista | pub. 8-nov; día del cateo no fijado | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 7 | n/d | n/d | FGE Michoacán, Guardia Civil y GN (por titular de medios) | Bajo · 7 explosivos caseros para lanzarse desde drones, por titular: se clasifican como AEI (artefacto para dron), capacidad no dictaminada; 5 motocicletas; sin armas ni detenidos publicados; día no fijado: si es anterior a la ventana, se retira; ver ARG-149-016
   ARG-149-ARM-003 | Sinaloa | Culiacán (Sanalona) | 6 a 8-nov, agregado federal; día no fijado | n/d | n/d | 6 | n/d | 1,260 | n/d | n/d | n/d | n/d | n/d | Ejército y Policía Estatal (boletín federal republicado, solo por resumen) | Bajo · 6 armas y 1,260 cartuchos por titular (Meganoticias); se integran como «sin categoría» porque el desglose 3 largas y 3 cortas y los 50 cargadores son solo por resumen; ningún detenido publicado; día no fijado: si es anterior a las 07:30 del 6, se retira; ver ARG-149-020
-  ARG-149-ARM-004 | Sinaloa | Escuinapa | 6 a 8-nov, agregado federal; día no fijado | n/d | 5 | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 3 | Fuerzas federales (boletín federal republicado, solo por resumen) | Bajo · 5 largas y 3 detenidos (una menor) por titular (Losnoticieristas) y boletín federal por resumen; 29 cargadores y 435 cartuchos, solo por resumen: n/d; día no fijado: si es anterior a las 07:30 del 6, se retira; ver ARG-149-021
+  ARG-149-ARM-004 | Sinaloa | Escuinapa | 6 a 8-nov, agregado federal; día no fijado | n/d | 5 | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 3 | Fuerzas federales (boletín federal republicado, solo por resumen) | Bajo · 5 largas y 3 detenidos (una menor) por titular (Losnoticieristas, fecha solo de mes) y boletín federal por resumen; no es ARG-111-ARM-001 (27 cargadores, 703 cartuchos, 29-ago); 29 cargadores y 435 cartuchos, solo por resumen: n/d; día no fijado: si es anterior a las 07:30 del 6, se retira; ver ARG-149-021
 
 Lectura regional: Noroeste, 13 armas (Sinaloa 11, Baja California 2), 1,260 cartuchos y 3
 detenidos; Occidente, 7 artefactos explosivos para dron (Michoacán); las demás regiones, sin
 arma integrada. Cálculo propio.
 Eventos cualitativos sin cantidad: Mazatlán (ARG-149-006): chaleco táctico, cartuchos y
-cargadores sin cifra, SOLO POR RESUMEN.
+cargadores sin cifra, SOLO POR RESUMEN · Culiacán (ARG-149-007): «dos pistolas» junto a una
+víctima, SOLO POR RESUMEN.
 VISTOS, NO INTEGRADOS: Concordia, Sin.: 2 largas, 87 cartuchos, 1 detenido, SOLO POR RESUMEN ·
 Nuevo Laredo, Tamps.: armas sin cifra, agregado federal, SOLO POR RESUMEN · Celaya (San Isidro
 de Elguera) y Cerano, Gto.: armas, cartuchos y «posibles artefactos explosivos», SOLO POR
@@ -709,7 +716,7 @@ de ARGOS 148 · boletín federal del 5-nov: ventana de ARGOS 148.
 
   Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
   Nuevo León · Apodaca | Tráfico de personas: 83 migrantes en un camión; 2 sentenciados, por titular (ABC Noticias 2026/11/6: «sentencian a 2 hombres…») | 16 años 10 meses y multa, SOLO POR RESUMEN | FGR (solo por resumen) | PENDIENTE DE CONFIRMACIÓN OFICIAL — NO INTEGRAR AL CONTEO NACIONAL · sin boletín; publicado el día de apertura sin hora | Bajo
-  Guanajuato | Portación de armas, cargadores, cartuchos e inhibidor (aseguramiento de 2015); 2 personas, por titular (boletines.guanajuato.gob.mx 2026/11/06: «lleva FGR a prisión a dos personas…») | «Más de 17 años», por titular (La Prensa de Coahuila 2026/11/07) | FGR (boletín del gobierno estatal) | PENDIENTE DE CONFIRMACIÓN OFICIAL · el titular dice «lleva a prisión»; término expreso de condena no leído; publicado el día de apertura sin hora | Bajo
+  Guanajuato | Portación de armas, cargadores, cartuchos e inhibidor (aseguramiento de 2015); 2 personas, por titular (boletines.guanajuato.gob.mx 2026/11/06: «lleva FGR a prisión a dos personas…») | «Más de 17 años», por titular (La Prensa de Coahuila 2026/11/07) | FGR (boletín del gobierno estatal; la FGE de Guanajuato figura NO REVISADA) | PENDIENTE DE CONFIRMACIÓN OFICIAL · el titular dice «lleva a prisión»; término expreso de condena no leído; publicado el día de apertura sin hora | Bajo
   Coahuila · Ramos Arizpe | Robo de hidrocarburo; 1 sentenciado; procedimiento abreviado, SOLO POR RESUMEN (La Prensa de Coahuila 2026/11/08) | 13 años 4 meses, por titular | FGR (por medios) | POSIBLE CASO HOMÓNIMO — NO INTEGRAR HASTA VALIDACIÓN · «13 años por robo de hidrocarburo en Coahuila» publicado el 19-oct (Argon México 2026/10/19) | Bajo
   Federal | «El Mochaorejas»: otros 50 años, por titular (La Prensa de Coahuila 2026/11/08) | 50 años, por titular | FGR (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · comunicado no leído; fecha de la resolución no fijada | Bajo
   Tab · Oax · Chis · NL · Coah · Zac · Jal · Pue · Edomex · Hgo · BC | Paraíso (FGR, exsubdirector; pena 2 años o 2 años 8 meses) · Oaxaca 157 años (boletín 2,948 sin URL individual) · Palenque 65 años · Los Ramones y Saltillo–Monclova (4-nov) · Fresnillo (octubre) · Jalisco, dos feminicidas (29-oct) · Huejotzingo (29-oct) · Ecatepec (28-oct) · Tulantepec (sin pena publicada) · Tecate y Mexicali · candidatos anteriores | Ver ARGOS 147 y 148 · HEREDADO — NO REVERIFICADO salvo lo anotado | Fiscalías estatales y FGR (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · sin boletín del dominio; publicados antes de la ventana | No confirmado
@@ -772,7 +779,7 @@ coordinar los avisos anónimos con la Comisión Estatal de Búsqueda.
 5. JALISCO: UN LÍDER REGIONAL CAPTURADO CON 19 ACOMPAÑANTES EN UN RESTAURANTE DE ZAPOPAN, CON
 ENFRENTAMIENTO (ARG-149-014 y -018): consistente con escolta numerosa en zona urbana; vínculo
 con homicidios atribuido por medios, no acreditado. Línea: solicitar a la FGR la situación
-jurídica de los 20 detenidos y el armamento asegurado.
+jurídica de los 20 detenidos.
 
 ## INDICADORES OFICIALES
 
