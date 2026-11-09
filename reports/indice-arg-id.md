@@ -1119,14 +1119,44 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-147-FE-004` | 147 | 2026-11-05 | ARG-147-FE-004 — ARGOS 146: tres recuperaciones (REC-001 a -003) → 15 rojos, +7 muertos (con FE-002). NO PUBLICADA EN EL CARTELÓN |
 | `ARG-147-FE-005` | 147 | 2026-11-05 | ARG-147-FE-005 — ARGOS 146: cláusulas de retiro de -019, -020 y -021 cerradas (detenciones del 3-nov); ARGOS 144: detenidos por titular 8 → n/d. NO PUBLICADA EN EL CARTELÓN |
 | `ARG-148-001` | 148 | 2026-11-05 | ARG-148-001 — Pachuca (col. Real de Minas), Hidalgo: policía estatal / exdirector de la policía de Huehuetla asesinado en intento de asalto (cargo contradicho entre titulares); 🔴; ★★★☆☆ |
-| `ARG-148-002` | 148 | 2026-11-05 | ARG-148-002 — Chietla (Villa de Atencingo), Puebla: ataque frente al Banco del Bienestar, 2 muertos (saldo contradicho: 1 muerto y 1 herida); hora contradicha; 🔴; ★★★☆☆ |
-| `ARG-148-003` | 148 | 2026-11-05 | ARG-148-003 — Navolato (Las Trancas), Sinaloa: enfrentamiento entre militares y civiles armados, 3 abatidos; quién inició no acreditado; 🟡; ★★★☆☆ |
+| `ARG-148-002` | 148 | 2026-11-05 | ARG-148-002 — Chietla (Villa de Atencingo), Puebla: ataque frente al Banco del Bienestar, 2 muertos (saldo fijado por ARG-149-FE-003); hora contradicha; 🔴; ★★★☆☆ |
+| `ARG-148-003` | 148 | 2026-11-05 | ARG-148-003 — Navolato (Las Trancas), Sinaloa: enfrentamiento entre militares y civiles armados, 3 abatidos; agresión contra militares en recorrido según el secretario (titulares); 🔴 por ARG-149-FE-001 (antes 🟡); ★★★☆☆ |
 | `ARG-148-004` | 148 | 2026-11-05 | ARG-148-004 — Naucalpan (Lomas Verdes), Edomex: abatido «El General» (Cártel Nuevo Imperio, homicidio de Milton Morales) y un segundo (titular del 6-nov); operativo repelido; 🟡; ★★★☆☆ |
 | `ARG-148-005` | 148 | 2026-11-05 | ARG-148-005 — Culiacán (col. CNOP), Sinaloa: hombre perseguido y asesinado a balazos; Línea Directa 2026-11-05; 🟡; ★★★☆☆ |
 | `ARG-148-006` | 148 | 2026-11-05 | ARG-148-006 — Pachuca, Hidalgo: 4 detenidos (según medios) por el asesinato del policía de ARG-148-001; 🟢; ★★★☆☆ |
 | `ARG-148-007` | 148 | 2026-11-05 | ARG-148-007 — Morelia, Michoacán: FGE, 4 cateos, 3 detenidos, 1 arma larga, 119 cartuchos (integrados, Bajo); día no fijado; 🟢; ★★★☆☆ |
-| `ARG-148-008` | 148 | 2026-11-05 | ARG-148-008 — Queréndaro, Cotija y Tacámbaro, Michoacán: Ejército y GN, armas, granadas y AEI solo por resumen; Tacámbaro posible duplicidad con Pedernales (3-nov); 🟢; ★★☆☆☆ |
+| `ARG-148-008` | 148 | 2026-11-05 | ARG-148-008 — Queréndaro, Cotija y Tacámbaro, Michoacán: Ejército y GN, armas, granadas y AEI solo por resumen; tramo de Tacámbaro retirado por duplicidad con Pedernales (ARG-149-FE-002) (3-nov); 🟢; ★★☆☆☆ |
 | `ARG-148-009` | 148 | 2026-11-05 | ARG-148-009 — Pacífico frente a Chiapas y Oaxaca (asignado a Chiapas): Marina, más de una tonelada de cocaína, 1 detenido; día de las operaciones no fijado; 🟢; ★★★☆☆ |
 | `ARG-148-ARM-001` | 148 | 2026-11-05 | ARG-148-ARM-001 — Morelia, Michoacán: 1 larga, 119 cartuchos; ficha ARG-148-007; Bajo |
 | `ARG-148-ARM-002` | 148 | 2026-11-05 | ARG-148-ARM-002 — Queréndaro, Cotija y Tacámbaro: cualitativo; ficha ARG-148-008; Bajo |
 | `ARG-148-ARM-003` | 148 | 2026-11-05 | ARG-148-ARM-003 — Navolato, Sinaloa: cualitativo (jeep, armamento sin cifra); ficha ARG-148-003; Bajo |
+| `ARG-149-001` | 149 | 2026-11-07 | ARG-149-001 — Salamanca (Valtierrilla), Guanajuato: emboscada contra militares, 1 soldado muerto y 2 heridos; 🔴; ★★★☆☆ |
+| `ARG-149-002` | 149 | 2026-11-07 | ARG-149-002 — San Francisco del Rincón, Guanajuato: policía municipal asesinado (al salir de turno o en descanso, contradicho); 🔴; ★★★☆☆ |
+| `ARG-149-003` | 149 | 2026-11-07 | ARG-149-003 — Valle de Santiago (El Armadillo), Guanajuato: grupo armado irrumpe en vivienda, 3 muertos y 1 herido; 🔴; ★★★☆☆ |
+| `ARG-149-004` | 149 | 2026-11-08 | ARG-149-004 — Celaya (Segunda Fracción de Crespo), Guanajuato: ataque a una familia, 2 muertos y 3 heridos (una niña); 🔴; ★★★☆☆ |
+| `ARG-149-005` | 149 | 2026-11-07 | ARG-149-005 — SLP / Zacatecas (carretera San Tiburcio–Vanegas; lugar disputado): secuestro del alcalde de Río Bravo, Tamps., localizado con vida en Coahuila el 8-nov (rescate o fuga, contradicho); 🔴; ★★★☆☆ |
+| `ARG-149-006` | 149 | 2026-11-08 | ARG-149-006 — Mazatlán (Libramiento Mazatlán–Villa Unión), Sinaloa: colectivo localiza 6 cuerpos (fosa o superficie, contradicho); 🔴; ★★★☆☆ |
+| `ARG-149-007` | 149 | 2026-11-07 | ARG-149-007 — Culiacán (Ampliación 5 de Febrero, calle Plan de Ayala), Sinaloa: 2 hombres asesinados; 🔴; ★★★☆☆ |
+| `ARG-149-008` | 149 | 2026-11-08 | ARG-149-008 — Irapuato (Las Huertas 1.ª Sección), Guanajuato: ataque armado, 1 muerto y 2 heridos; 🟡; ★★★☆☆ |
+| `ARG-149-009` | 149 | 2026-11-08 | ARG-149-009 — Chihuahua (Granjas Cerro Grande), Chihuahua: ataque armado, 1 muerto y 1 herido (saldo contradicho); 🟡; ★★★☆☆ |
+| `ARG-149-010` | 149 | 2026-11-07 | ARG-149-010 — Hermosillo (El Mariachi), Sonora: hombre asesinado a balazos en su domicilio; fuente única; 🟡; ★★☆☆☆ |
+| `ARG-149-011` | 149 | 2026-11-06 | ARG-149-011 — Tijuana (Rancho Las Flores), Baja California: hombre asesinado a balazos; día solo por resumen; fuente única; 🟡; ★★☆☆☆ |
+| `ARG-149-012` | 149 | 2026-11-07 | ARG-149-012 — Juchitán, Oaxaca: disparos contra el restaurante de un periodista con protección federal, sin heridos; 🟡; ★★★☆☆ |
+| `ARG-149-013` | 149 | 2026-11-09 | ARG-149-013 — Cosoleacaque (fracc. Los Prados), Veracruz: joven asesinado a balazos; frontera de ventana; 🟡; ★★★☆☆ |
+| `ARG-149-014` | 149 | 2026-11-08 | ARG-149-014 — Zapopan, Jalisco: enfrentamiento durante orden de la Marina en un restaurante, 2 heridos; inicio según versión oficial; 🟡; ★★★☆☆ |
+| `ARG-149-015` | 149 | 2026-11-06 | ARG-149-015 — Atempan, Puebla: Marina desmantela laboratorio, 650 kg de metanfetamina, 2 detenidos; día solo por resumen; cláusula de retiro; 🟢; ★★★☆☆ |
+| `ARG-149-016` | 149 | 2026-11-08 | ARG-149-016 — Buenavista, Michoacán: FGE, 7 explosivos caseros para dron y 5 motocicletas en un cateo; día no fijado; cláusula de retiro; 🟢; ★★★☆☆ |
+| `ARG-149-017` | 149 | 2026-11-08 | ARG-149-017 — Tecate (col. Emiliano Zapata), Baja California: FESC y Marina, 2 fusiles abastecidos; 🟢; ★★★☆☆ |
+| `ARG-149-018` | 149 | 2026-11-08 | ARG-149-018 — Zapopan, Jalisco: detenido el líder de Los Rs («R2») y 19 personas; 🟢; ★★★☆☆ |
+| `ARG-149-019` | 149 | 2026-11-09 | ARG-149-019 — Pacífico frente a Acapulco, Guerrero: Marina, cerca de 1 t de cocaína, 6 detenidos; frontera de ventana; 🟢; ★★★☆☆ |
+| `ARG-149-020` | 149 | 2026-11-06 | ARG-149-020 — Culiacán (Sanalona), Sinaloa: Ejército y Policía Estatal, 6 armas y 1,260 cartuchos; agregado federal 6-8-nov; cláusula de retiro; 🟢; ★★★☆☆ |
+| `ARG-149-021` | 149 | 2026-11-06 | ARG-149-021 — Escuinapa, Sinaloa: 3 detenidos (una menor), 5 armas largas; agregado federal 6-8-nov; cláusula de retiro; 🟢; ★★★☆☆ |
+| `ARG-149-ARM-001` | 149 | 2026-11-08 | ARG-149-ARM-001 — Tecate, BC: 2 largas; ficha ARG-149-017; Bajo |
+| `ARG-149-ARM-002` | 149 | 2026-11-08 | ARG-149-ARM-002 — Buenavista, Mich.: 7 AEI (explosivos caseros para dron); ficha ARG-149-016; Bajo |
+| `ARG-149-ARM-003` | 149 | 2026-11-06 | ARG-149-ARM-003 — Sanalona, Culiacán: 6 sin categoría, 1,260 cartuchos; ficha ARG-149-020; Bajo |
+| `ARG-149-ARM-004` | 149 | 2026-11-06 | ARG-149-ARM-004 — Escuinapa, Sin.: 5 largas, 3 detenidos; ficha ARG-149-021; Bajo |
+| `ARG-149-FE-001` | 149 | 2026-11-09 | ARG-149-FE-001 — fe de erratas a ARG-148-003 (Navolato): 🟡 → 🔴 por «agresión contra militares», declaración del secretario en titulares; reserva: comunicado de Defensa no indexado |
+| `ARG-149-FE-002` | 149 | 2026-11-09 | ARG-149-FE-002 — fe de erratas a ARG-148-008: tramo de Tacámbaro = Pedernales (3-nov), retirado; sin efecto numérico |
+| `ARG-149-FE-003` | 149 | 2026-11-09 | ARG-149-FE-003 — fe de erratas a ARG-148-002: saldo fijado en 2 muertos |
+| `ARG-149-FE-004` | 149 | 2026-11-09 | ARG-149-FE-004 — precisión a ARG-148-006: 4 detenidos atribuidos a la SSPH por titular |
+| `ARG-149-FE-005` | 149 | 2026-11-09 | ARG-149-FE-005 — precisión a ARGOS 148: el boletín federal del 5-nov existía (Milenio, RED113, Tallapolítica) e incluía Tlachichuca (🟢, no se recupera) |

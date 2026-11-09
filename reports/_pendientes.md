@@ -2811,3 +2811,44 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 4. **Recuento por tipo frente a la lista íntegra**: fijado el criterio en §6 de fuentes (un emisor por nota propia; Meganoticias y ediciones estatales, regionales).
 5. **Presupuesto de 148**: 2 + 13 + 148 + 24 + 6 = **193 de 200**.
 6. **Rama**: 139 a 148 viven fuera de `main`; 148 en `claude/argos-148`.
+
+## ARGOS 149 — lo que cierra esta edición
+
+| Cerrado | Cómo |
+|---|---|
+| **Decisión del destinatario (9-nov)** | «Procede» 7 h 53 min después del Bloque 0: ventana cerrada a las **16:07** («A las 1607»); 80 h 37 min |
+| **Cláusula de `ARG-148-008`** | Tramo de Tacámbaro = Pedernales (3-nov): retirado (`ARG-149-FE-002`); Queréndaro y Cotija siguen sin fecha |
+| **Saldo de `ARG-148-002`** | 2 muertos (`ARG-149-FE-003`); la hora sigue abierta |
+| **Color de `ARG-148-003`** | 🔴 por «agresión contra militares», declaración del secretario en titulares (`ARG-149-FE-001`), con reserva |
+| **Color de `ARG-148-001`** | Se mantiene 🔴: la SSPH lo trata como «elemento de la Policía Estatal» (solo por resumen); sin declaración de baja |
+| **Detenidos de `ARG-148-006`** | 4, atribuidos a la SSPH por titular (`ARG-149-FE-004`) |
+| **Segundo abatido de `ARG-148-004`** | Confirmado por el Gabinete (resumen); identidad abierta |
+| **Boletín federal del 5-nov** | Existía (Milenio, RED113, Tallapolítica): `ARG-149-FE-005` |
+| **Vistos sin ruta de 148** | Chilpancingo, Urvan: ventana 148, 🟡, visto · Valle de Chalco: anterior a la ventana · Reynosa Puerta Sur: sigue sin ruta |
+| **Sentencias `NO REVISADA` de 148 (11)** | Revisadas las 11; Coahuila con dominio hallado (`sitio.fgecoahuila.gob.mx`) |
+| **Orizaba `ARG-132-002`** | Vinculación del 22-oct confirmada (causa 588/2026) |
+
+## Abiertos que ARGOS 150 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| **Cláusulas de retiro de 149 (4)** | `-015` Atempan (día: 6 por resumen; ¿antes de las 07:30?) · `-016` Buenavista (día del cateo) · `-020` Sanalona y `-021` Escuinapa (día dentro del agregado 6-8) |
+| **Frontera de ventana de 149 (2)** | `-013` Cosoleacaque y `-019` Acapulco (hora de publicación del 9-nov frente a las 16:07; día de la operación de la Marina) |
+| **Reservas de 149** | `-005` Río Bravo: lugar (SLP o Zac), rescate o fuga, acompañantes, autores · `-006` Mazatlán: identificación, causa de muerte, ¿fosa? · `-014` Zapopan: quién inició (testimonio independiente), armamento asegurado · `-009` Chihuahua: 1 o 2 muertos · `-002` SFR: en turno o descanso · `-010`, `-011`: fuente única |
+| **Rojos sin ruta de 149** | San Juan Cacahuatepec (2 muertos, dom 8) · Tecate (cinco homicidios del 6; Los Encinos 2 o 3) · Huaquechula (3 muertos) · Cañada Morelos (2) · Monterrey, taquería (2, riña) · Viesca, Doctor Coss, Nuevo Laredo (¿= ARG-146-009?), Reynosa |
+| **Cláusulas de 148 aún abiertas** | `-002` hora · `-007` Morelia día · `-009` Marina día |
+| **Agregado federal 6-8-nov sin ficha** | Zitácuaro (laboratorio) · Tepeyahualco (laboratorio, 2 detenidos) · Nuevo Laredo (2 detenidos, uno con orden de extradición) · Tlachichuca 95 mdp frente a 4,132 (contradicción) · Baila, Culiacán (34 mdp): buscar un segundo republicador o el boletín en gob.mx/sspc |
+| **Boletín federal** | Acciones del 9-nov y de cada día de la ventana de 150 (triple consulta) |
+| **Sentencias candidatas** | Apodaca, FGR, 83 migrantes, 2 sentenciados (6-nov) · FGR Guanajuato, 17 años 4 meses (boletines.guanajuato 2026/11/06; término expreso) · Ramos Arizpe, 13 años 4 meses (¿= 19-oct?) · «El Mochaorejas», 50 años (FGR) · Paraíso · Oaxaca 157 años · Palenque · Tulantepec (individualización) |
+| **Seguimientos** | «El Panda» (resultado de la audiencia del 9-nov) · Matamoros (tres policías investigados) · Cuernavaca `-147-001` (atracción por la FGR) · Mexicali `-146-011` (26 fosas / 51 hallazgos) · Champotón `-147-REC-001` |
+| **Cobertura con prioridad sobre el ciclo en 150** | **Armamento `NO REVISADA` (15)**: **Edomex (tercera edición)**, BC, BCS, Son (dos ediciones), Chih · Jal, Nay, Ags, Gto · Pue, Mor, Tlax, Hgo, Qro · Oax. **Sentencias `NO REVISADA` (11)**: Tamps, SLP · Nay, Ags, Gto, Mich · Hgo, Qro · Gro, Camp, Yuc. **Alto impacto solo amplia (13)**: **Qro (tercera)**, **CDMX (tercera)**, Son · NL, Zac, SLP · Tlax · Ver, Tab · Gro, Camp, Yuc, QRoo. Después, **CICLO B** (Noreste + Golfo: 150 = B) |
+
+## Deuda de método (ARGOS 149)
+
+1. **Anuncio federal del día de apertura = operativo del día anterior** (Tlachichuca): buscar todo anuncio del día de apertura en el boletín del día previo antes de ficharlo.
+2. **Agregado federal hallado solo por título al cierre** (6-8 nov, republicador único): repetir la triple consulta al final y buscar un segundo republicador.
+3. **Delito y detención fusionados en un verde** (Zapopan): los dos controles lo detectaron; el borrador debe abrir dos fichas cuando el operativo incluye un enfrentamiento dentro de la ventana.
+4. **Pista roja del recall sin causa verificada** (Cuerámaro): verificar la causa antes de pasar «policía muerto» como 🔴.
+5. **Códigos FE**: `gen-movil.py` los rechaza en el cartelón; van al índice y al archivo de fuentes.
+6. **Presupuesto de 149**: ver `argos-2026-11-09-fuentes.md` §9.
+7. **Rama**: 149 vive en `claude/zealous-mendel-baacj5` (encima de `claude/argos-148`).
