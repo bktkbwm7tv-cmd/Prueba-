@@ -1,15 +1,16 @@
-# ARGOS 147 — Instrucciones comunes a los seis equipos (léelas íntegras antes de la primera búsqueda)
+# ARGOS 149 — Instrucciones comunes a los seis equipos (léelas íntegras antes de la primera búsqueda)
 
 Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 
 ## Ventana
-- ABRE: **viernes 6-nov-2026 07:30 CDMX** (donde cerró ARGOS 148). CIERRA: **hora real de arranque de la sesión de ARGOS 147** (o del «Procede») (el coordinador la escribe aquí al copiar la plantilla: ____).
-- Comprueba siempre el día de la semana que dice la fuente contra el calendario (mié 4-nov · jue 5-nov · vie 6-nov…).
-- **ARGOS 147 (ventana 4-nov 06:52 → 5-nov 09:42) ya publicó 11 hechos propios** (`ARG-147-001` a `-011`: Cuernavaca regidor Gabriel Rivas Ríos, Tancítaro Los Fresnos, Chilpancingo Tierra y Libertad, Indaparapeo drones, Pénjamo zona centro, Culiacán Alturas del Sur y Guadalupe Victoria, Olinalá San Antonio Coyoacán, Mazatlán Mercado Hidalgo y av. Carlos Canseco, Yucatán detención por homicidio en av. Huayacán) y **tres recuperaciones** de 146 (Champotón Mayatecún II, Mazatlán centros de rehabilitación, Mazatlán Coto Premier). Un hecho del 5-nov antes de las 09:42 que 147 NO publicó es de la ventana de 147: candidato `-REC-` **solo si es 🔴**; si es 🟡 o 🟢, va a «VISTOS».
-- **Núcleo del corte**: hechos tras las **09:42 del jueves 5**. Publicación del 5 sin hora → `PUBLICADO EL DÍA DE APERTURA SIN HORA` (si el hecho puede ser anterior a las 09:42, cláusula de retiro); publicación del día de cierre (vie 6) sin hora → `FRONTERA DE VENTANA — HORA NO FIJADA`. ⚠️ Si el único dato de día U HORA apunta a antes de las 09:42 del 5, es de la ventana de 147. ⚠️ Con apertura a media mañana, la hora importa: busca la hora también en notas de contexto del mismo día.
-- **Fin de semana**: «fin de semana violento», «N muertos de viernes a domingo», balances de «Día de Muertos» son **balances**: nunca se reparten ni se integran.
+- ABRE: **viernes 6-nov-2026 07:30 CDMX** (donde cerró ARGOS 148). CIERRA: **lunes 9-nov-2026 16:07 CDMX** (hora del «Procede»; ventana de **80 h 37 min**).
+- Calendario: **vie 6-nov · sáb 7-nov · dom 8-nov · lun 9-nov**. Comprueba siempre el día de la semana que dice la fuente contra el calendario.
+- **ARGOS 148 (ventana 5-nov 09:42 → 6-nov 07:30) ya publicó 9 hechos propios** (`ARG-148-001` a `-009`: Pachuca policía y 4 detenidos, Atencingo Banco del Bienestar, Navolato Las Trancas, Naucalpan «El General», Culiacán CNOP, Morelia cateos, Queréndaro–Cotija–Tacámbaro, Marina cocaína en el Pacífico). Un hecho del 6-nov antes de las 07:30 que 148 NO publicó es de la ventana de 148: candidato `-REC-` **solo si es 🔴**; si es 🟡 o 🟢, va a «VISTOS».
+- **Núcleo del corte**: hechos tras las **07:30 del viernes 6**. Publicación del 6 sin hora → `PUBLICADO EL DÍA DE APERTURA SIN HORA` (si el hecho puede ser anterior a las 07:30, cláusula de retiro); publicación del día de cierre (lun 9) sin hora → `FRONTERA DE VENTANA — HORA NO FIJADA`. ⚠️ Si el único dato de día U HORA apunta a antes de las 07:30 del 6, es de la ventana de 148. ⚠️ Busca la hora de todo hecho del viernes 6 antes de proponerlo.
+- **Fin de semana completo**: «fin de semana violento», «N muertos de viernes a domingo», balances de fin de semana son **balances**: nunca se reparten ni se integran. Reparte tu recall POR DÍA (6, 7, 8 y 9).
 - Nunca infieras la hora. «Esta mañana» o «madrugada de este sábado» en un resumen NO fecha un hecho.
 - Criterio de inclusión: entra con marca el hecho con **ruta fechada o titular con día**; ⚠️ **un rojo sin ruta fechada se reporta en sección aparte «ROJOS SIN RUTA», no como hecho del corte**.
+- Fecha en la ruta: «2026/11/06», «2026/11/07», «2026/11/08», «2026/11/09» (una por día: tus 4 reservadas).
 
 ## Red y herramientas
 - Egreso bloqueado (curl gob.mx → 000). **NO uses WebFetch.** Solo WebSearch.
