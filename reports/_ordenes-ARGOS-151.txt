@@ -1,0 +1,125 @@
+Eres el Analista Nacional de Inteligencia Criminal ARGOS. Vas a producir ARGOS 151
+con datos de HOY (fecha real de arranque; escríbela con date). Trabaja en español y
+dirígete a mí como Comisario.
+
+PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
+
+    TZ=America/Mexico_City date '+%Y-%m-%d %H:%M %Z'
+    git fetch origin
+    git branch -r | sed 's#origin/##' | sort
+    git merge --ff-only origin/main
+    git merge --ff-only origin/claude/argos-139-qe9f01
+    git merge --ff-only origin/claude/argos-140
+    git merge --ff-only origin/claude/argos-141-nacional-kh5fj6
+    git merge --ff-only origin/claude/argos-criminal-intelligence-otiawj
+    git merge --ff-only origin/claude/argos-144
+    git merge --ff-only origin/claude/argos-145
+    git merge --ff-only origin/claude/argos-146
+    git merge --ff-only origin/claude/argos-147
+    git merge --ff-only origin/claude/argos-148
+    git merge --ff-only origin/claude/zealous-mendel-baacj5
+    git merge --ff-only origin/claude/argos-150-nacional-61ng7x
+    ls reports/ | grep '^argos-' | tail -6
+    ls reports/ | wc -l
+
+DEBES ENCONTRAR: última edición argos-2026-11-14 (ARGOS 150) y 296 archivos en
+reports/ (incluida la orden de 151). ARGOS 139 a 150 NO ESTÁN EN main: cada una en
+su rama, encima de la anterior; 150 en claude/argos-150-nacional-61ng7x. El clon
+puede arrancar por detrás o en HEAD suelto: dilo y no es fallo. Si algún merge NO es
+fast-forward, PARA Y AVÍSAME.
+
+RED: curl -s -o /dev/null -m 12 -w '%{http_code}\n' https://www.gob.mx/fgr
+Si NO devuelve 000, DILO y lee los boletines directamente (WebFetch). Si devuelve
+000, sigue bloqueado: solo WebSearch.
+
+VENTANA: abre 2026-11-14 10:09 CDMX —donde cerró ARGOS 150— y cierra a la HORA
+REAL de tu arranque. CALCULA LA DURACIÓN CON date y escribe el calendario DÍA POR
+DÍA en el Bloque 0. Si mi «Procede» llega más de DOS HORAS después del Bloque 0,
+AVÍSAME y propón cerrar la ventana a la hora del «Procede». 150: 114 h 02 min,
+densidad 0,20.
+APERTURA A MEDIA MAÑANA DEL SÁBADO 14: todo hecho del 14 necesita HORA; si apunta a
+antes de las 10:09, es de la ventana de 150. EL BOLETÍN FEDERAL DEL 13 Y DEL 14 NO
+ESTABA INDEXADO AL CIERRE DE 150: búscalo primero (y el fin de semana 14-15 puede
+salir AGREGADO).
+FECHA DEL ARCHIVO: argos-<FECHA>.html (sin sufijo). Radar: WINDOW_DAYS = número de
+fechas de calendario que toca la ventana (14 a la fecha de cierre); la plantilla de
+150 trae 6: CÁMBIALO en el script y en la aserción del generador.
+
+================================================================================
+MODO DE BÚSQUEDA
+================================================================================
+TODA BÚSQUEDA CON mode:"extended". Primera búsqueda: CONSULTA DE CONTROL en los dos
+modos. TOPE DE 200 BÚSQUEDAS POR TURNO, COMPARTIDO: CONTROL 2 · COORDINADOR 18 ·
+OLA 150 (6 × 25, cuatro de cada equipo reservadas a fecha en la ruta) ·
+procedencia-cifras 30 (R1 24 · R2 6). EL TOPE DE CADA EQUIPO ES DURO: Centro gastó
+26 en 150. Cifra de peso ENTRE COMILLAS. UN DOMINIO POR CONSULTA site:, NUNCA OR.
+⚠️ LECCIONES DE 150: (a) LOS EQUIPOS DIERON POR «TITULAR» CIFRAS QUE SOLO ESTABAN EN
+EL RESUMEN (Silao 13 armas, Zitácuaro herido): EXIGE EL TITULAR LITERAL ENTRE
+COMILLAS; (b) «FUENTE ÚNICA» SIN BÚSQUEDA POR TOPÓNIMO (San Juan del Río tenía ocho
+emisores); (c) CIFRAS DEL BOLETÍN FEDERAL SOLO SE INTEGRAN CON TITULAR DE MEDIO;
+(d) NINGÚN NOMBRE PROPIO DE VÍCTIMA O DETENIDO EN EL CARTELÓN, NI DENTRO DE UNA CITA.
+
+================================================================================
+ENCARGOS, PRIMERO Y SIN NEGOCIAR
+================================================================================
+ 0. CICLO: C (Occidente + Sureste), por la tabla de CLAUDE.md, después de la
+    prioridad sobre el ciclo.
+ 1. CLÁUSULA DE RETIRO DE 150: -011 San Juan del Río (día del hallazgo frente a
+    las 16:07 del 9). FRONTERA: -017 Tijuana (hora del 14 frente a las 10:09).
+ 2. RESERVAS DE 150: -004 Tuxpan (día del ataque; muerte de la segunda víctima;
+    situación de los 4 detenidos y del marino) · -005 Juchitán (día 12 o 10) ·
+    -006 San José del Rincón (día, lugar) · -003/-018 Ocotlán (comunicado de
+    Defensa; heridos 2 o 3; armamento con cifra) · -012/-020 Silao (día; 13 armas
+    con titular; GN muerto «días antes») · -013 Temascatío (quién inició) ·
+    -010 Las Víboras (cantidad) · -016 Tlalnepantla (segunda fuente o duplicidad
+    con -015).
+ 3. REC DE 150: Tecate (heridos graves; ¿taquería con 4 detenidos = mismo hecho?)
+    · Cacahuatepec (detenido) · Monterrey (detenidos con cifra de autoridad).
+ 4. ROJOS SIN RUTA DE 150: Atotonilco el Alto · El Arenal (si es de 149 y 🔴,
+    -REC-) · Viesca y Reynosa Puerta Sur (TERCERA edición sin ruta: retíralos si
+    siguen sin ruta) · Colima.
+ 5. CLÁUSULAS DE 149 Y 148 ABIERTAS: ver _pendientes.md.
+ 6. BOLETÍN FEDERAL: acciones del 13-nov en adelante; triple consulta por día, por
+    rango y por título.
+ 7. SENTENCIAS CANDIDATAS: Veracruz 88 años · Monterrey «casi 26 años» · Tabasco
+    5119. Integrable SOLO con boletín oficial y término expreso.
+ 8. SEGUIMIENTO (fuera del semáforo): «El Panda» · Zapopan «R2» · Cuernavaca
+    -147-001 · Matamoros · Mexicali -146-011 · Tuxpan -150-019.
+
+================================================================================
+BARRIDO
+================================================================================
+ Plantilla: tools/plantilla-equipos-151.md (escribe la hora de cierre).
+ PRIORIDAD SOBRE EL CICLO: armamento NO REVISADA (13): Sin, Dgo · NL, Tamps,
+ Coah, Zac · Mich, Col · Tab · Chis, Gro, Camp, Yuc · sentencias NO REVISADA
+ (10): BCS, Sin, Dgo · Jal, Col · CDMX, Edomex, Pue, Tlax · Camp · alto impacto
+ solo amplia (12): BCS, Dgo (tercera) · Tamps, Coah · Col, Nay, Ags · Pue, Mor ·
+ Tab · Camp, Yuc. Listas en _pendientes.md, «Abiertos que ARGOS 151 hereda».
+
+================================================================================
+FORMA, CONSTRUCCIÓN Y CONTROLES
+================================================================================
+ · Parte de tools/datos-argos-150.py (copia a datos-argos-151.py) y de
+   reports/argos-2026-11-14.html como plantilla (su <title> dice «ARGOS 150 —
+   Reporte Nacional de Seguridad — 2026-11-14»). Actualiza el <title> que
+   reemplaza (en datos-argos-150.py dice ARGOS 149 — … — 2026-11-09: pon ARGOS
+   150 — … — 2026-11-14), RET («SI RESULTA ANTERIOR A LAS 10:09 DEL 14, ES DE LA
+   VENTANA DE ARGOS 150…»), HORAS, DUR, CONSULTA, las aserciones, las listas de
+   fichas por página y WINDOW_DAYS (la plantilla trae 6).
+ · Criterio, totales, acciones como SOLICITUD, portada sin titulares, conclusiones
+   con «vínculo no acreditado» y sin repetir las de 150 (Michoacán, ataques a
+   policías en Tierra Caliente y Oriente; Ciénega de Jalisco, alto poder y blindaje
+   artesanal; Veracruz norte, víctimas rematadas en hospital; Juchitán, policía y
+   periodista; cuerpos en patios y predios rurales). Valoración solo de escala.
+ · Fe de erratas en el cartelón SIN códigos -FE-; los códigos van al índice y al
+   archivo de fuentes.
+ · Móvil y texto SE GENERAN: gen-movil.py 151 <FECHA> 150 2026-11-14 <HORA> ·
+   gen-texto.py <html> <txt> · node tools/validar.js reports/argos-<FECHA>.html
+   2026-11-14 <FECHA> → validación OK.
+ · editor-duplicidad y procedencia-cifras: VEINTE PASES, dos rondas; la ronda 2 EN
+   SERIE.
+ · Marca «Consulta»: hora real de la última búsqueda.
+ · Cierre: _pendientes.md, indice-arg-id.md y orden de ARGOS 152. Commit y push.
+ · Detalle completo: reports/_arranque-ARGOS-151.md.
+
+Empieza por el Bloque 0 y dime qué encuentras antes de seguir.

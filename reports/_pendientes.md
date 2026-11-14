@@ -2852,3 +2852,42 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 5. **Códigos FE**: `gen-movil.py` los rechaza en el cartelón; van al índice y al archivo de fuentes.
 6. **Presupuesto de 149**: 2 + 18 + 150 + 23 + 6 = **199 de 200**.
 7. **Rama**: 149 vive en `claude/zealous-mendel-baacj5` (encima de `claude/argos-148`).
+
+## ARGOS 150 — lo que cierra esta edición
+
+| Cerrado | Cómo |
+|---|---|
+| **Agregado federal 6-8-nov** | `gob.mx/sspc` indexado y segundo republicador (RED113): encargo cerrado; sin ficha nueva (ventana de 149) |
+| **Boletín federal del 9-nov** | Indexado en `gob.mx/sspc`; acciones del día de apertura sin hora: vistos en armamento |
+| **Rojos sin ruta de 149** | Tecate → `ARG-150-REC-001` · San Juan Cacahuatepec → `REC-002` · Monterrey taquería → `REC-003` · Huaquechula (julio), Cañada Morelos (25-jun), Doctor Coss (jun–jul): retirados (`ARG-150-FE-004`) |
+| **`ARG-149-009`** | 1 muerto y 1 herido fijado (`FE-002`) |
+| **`ARG-149-010`, `-011`** | Segunda fuente (`FE-003`) |
+| **Sentencia «Ramos Arizpe»** | Es General Cepeda, 19-oct, reciclada (`FE-005`) |
+| **«El Panda»** | Vinculado a proceso por desaparición por particulares y homicidio calificado (La Silla Rota 2026/11/10; Infobae 2026/11/11) |
+| **Sentencias candidatas de 149** | Apodaca, FGR Guanajuato, «El Mochaorejas», Oaxaca 157, Palenque, Champotón, Paraíso: fuera de la ventana de 150; sin boletín. Se dejan de perseguir salvo boletín oficial |
+
+## Abiertos que ARGOS 151 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| **Cláusula de retiro de 150 (1)** | `-011` San Juan del Río: día del hallazgo (publicado el 10) frente a las 16:07 del 9 |
+| **Frontera de ventana de 150 (1)** | `-017` Tijuana, Nuevo Milenio: hora del 14-nov frente a las 10:09; si es posterior, pasa a 151 |
+| **Reservas de 150** | `-004` Tuxpan: día del ataque (11 o 12), fecha de la muerte de la segunda víctima, situación jurídica de los 4 detenidos y del marino · `-005` Juchitán: día (12 o 10) · `-006` San José del Rincón: día (10 u 11) y lugar · `-003` / `-018` Ocotlán: comunicado de Defensa, heridos (2 o 3), armamento con cifra · `-013` Temascatío: quién inició · `-012` / `-020` Silao: día (12 o 13), inventario de las 13 armas con titular; elemento de la GN muerto «días antes» (un resumen) · `-001` Zitácuaro: herido · `-002` Tepalcatepec: heridos (2 o 3) · `-010` Las Víboras: cantidad de restos, segunda ruta · `-016` Tlalnepantla: fuente única; POSIBLE DUPLICIDAD con `-015` si aparece segunda ruta coincidente |
+| **Cláusulas de 149 aún abiertas** | `-015` Atempan (día 6 por resumen) · `-016` Buenavista (día del cateo) · `-020` Sanalona y `-021` Escuinapa (día dentro del agregado) · frontera `-013` Cosoleacaque («mañana del 9», resumen) y `-019` Acapulco |
+| **Reservas de 149 aún abiertas** | `-005` Río Bravo (lugar, rescate o fuga, autores) · `-006` Mazatlán (identificación, causa, ¿fosa?) · `-014` Zapopan (quién inició) · `-002` SFR (turno o descanso) |
+| **Cláusulas de 148** | `-002` hora · `-007` Morelia día (5-nov por resumen) · `-009` día |
+| **REC de 150** | `REC-001` Tecate: heridos «graves» (saldo puede subir); «4 detenidos por asesinato múltiple en una taquería de Tecate» (Uniradio, sin fecha): ¿mismo hecho? · `REC-002` Cacahuatepec: un detenido según un solo medio · `REC-003` Monterrey: detenidos con cifra de autoridad |
+| **Rojos sin ruta de 150** | Atotonilco el Alto (quema de vehículos, 12-nov) · El Arenal, Jal. (2 jóvenes, dom 8: si se fija ruta, `-REC-` de 149) · Viesca (dos ediciones sin ruta: retirar en 151 si sigue) · Reynosa Puerta Sur / Nuevo México ITAVU (dos ediciones: retirar si sigue) · Colima (3 muertos, 15 detenidos, sin fecha) |
+| **Boletín federal** | Acciones del 13-nov (`SIN RESULTADO INDEXADO` al cierre de 150) y del 14 en adelante: triple consulta. Cifras del boletín solo integrables con titular de medio |
+| **Sentencias candidatas** | Veracruz 88 años (secuestro agravado, 9 víctimas; Hoy Xalapa 2026/11/13) · Monterrey «casi 26 años» (MVS 2026/11/13; cuidado con el caso de la col. Alhambra) · Tabasco boletín 5119 (30 años, Jalpa de Méndez; URL individual) |
+| **Seguimientos** | «El Panda» (siguiente audiencia) · Zapopan «R2» (15 de 20 liberados, por resumen) · Cuernavaca `-147-001` (presunto autor material detenido en Xochitepec, por resumen) · Matamoros (tres policías declaran) · Mexicali `-146-011` (nuevos restos 12-nov) · Tuxpan `-150-019` |
+| **Cobertura con prioridad sobre el ciclo en 151** | **Armamento `NO REVISADA` (13)**: Sin, Dgo · NL, Tamps, Coah, Zac · Mich, Col · Tab · Chis, Gro, Camp, Yuc. **Sentencias `NO REVISADA` (10)**: BCS, Sin, Dgo · Jal, Col · CDMX, Edomex, Pue, Tlax · Camp (dominio no confirmado). **Alto impacto solo amplia (12)**: BCS, Dgo (tercera edición) · Tamps, Coah · Col, Nay, Ags · Pue, Mor · Tab · Camp, Yuc. Después, **CICLO C** (Occidente + Sureste: 151 = C) |
+
+## Deuda de método (ARGOS 150)
+
+1. **Ventana de seis fechas**: la ruta por día rinde poco con presupuesto de 4 por equipo; Noroeste solo hizo 3. Para ventanas largas, asignar las búsquedas de ruta a los días con más hechos del recall.
+2. **Cifras de equipos «por titular» que no lo eran**: Silao «13 armas» (Latinus), Zitácuaro herido (AF Medios), San Juan del Río «fuente única» con 8 emisores, Temascatío «abatido no oficial» con tres titulares. Exigir a los equipos el titular literal entre comillas.
+3. **Boletín del día de cierre de la edición anterior**: con cierre a media tarde, siempre llega a la siguiente; sus acciones quedan como día de apertura sin hora.
+4. **Centro excedió el tope (26 de 25)**: R2 de procedencia bajó a 5. Presupuesto: 2 + 18 + 151 + 24 + 5 = **200**.
+5. **Dominio nuevo**: `sspe.chihuahua.gob.mx` (SSPE de Chihuahua).
+6. **Rama**: 150 vive en `claude/argos-150-nacional-61ng7x` (encima de `claude/zealous-mendel-baacj5`).

@@ -24,7 +24,8 @@ Coordinador: 12 de recall repartidas 2 por fecha (9 a 14) más «fosas», «bloq
 
 - **23 hechos propios** en 12 entidades: **11 🔴 · 6 🟡 · 6 🟢**; densidad 0,20 hechos/hora (cálculo propio).
 - **3 recuperaciones** de la ventana de ARGOS 149 (🔴): Tecate, San Juan Cacahuatepec, Monterrey. Fuera de todos los totales.
-- Armamento integrado: 16 largas, 13 sin categoría, 1 especial, 39 cargadores, 2 granadas, 21 detenidos en aseguramiento (cálculo propio).
+- Armamento integrado: 16 largas, 1 especial (lanzagranadas), 39 cargadores, 2 granadas, 21 detenidos en aseguramiento; sin categoría n/d (Silao 13, solo por resumen, no integradas) (cálculo propio).
+- Muertos por agresión 15 · heridos 6 · cuerpos o restos 5 · abatidos por la fuerza pública 9 (cálculo propio).
 - Sentencias integrables: 0.
 
 ## 3. Fe de erratas a ediciones anteriores
@@ -80,13 +81,13 @@ Republicadores del mismo boletín: una fuente, corroboración débil por constru
 | 008 Ajacuba | Diario de Yucatán 2026/11/13 · Milenio · Zócalo · La Jornada Hidalgo (PGJEH, por titular) · La Verdad Hidalgo · News Hidalgo · Sin Filtro · Es Periodismo |
 | 009 Irapuato | AM 2026/11/12 · Correo 2026/nov/12 · Noticieros en Línea 2026/nov/13 · Quadratín Bajío · N+ · NPI |
 | 010 Las Víboras | Luz Noticias 2026-11-13 · Café Negro · Impacto Noticias · Quadratín Sinaloa |
-| 011 San Juan del Río | Noticias de Querétaro 2026/11/11 |
+| 011 San Juan del Río | Al Minuto 2026/11/10 · Expreso Querétaro 2026/11/10 · Quadratín Querétaro («riña deja 2 muertos») · Pensador Queretano · N+ · Crónica Regional · Libertad de Palabra · Amanecer Qro. «Macabro hallazgo» (Noticias de Querétaro 2026/11/11), citado por el equipo Centro, no se localizó en procedencia: retirado |
 | 012 / 020 Silao | Latinus 2026/11/13 · La Silla Rota 2026/11/13 · AM 2026/11/13 · La Jornada 2026/11/14 · Proyecto Puente 2026/11/13 · UnoTV · El Universal · Vanguardia · Meganoticias · El Otro Enfoque 2026/11/13 · Info7 · El Diario de Chihuahua 2026/nov/13 |
 | 013 / 021 Temascatío | Milenio (boletín del 11) · Certeza Diario · Diario de Yucatán 2026/11/12 · Infobae 2026/11/13 |
 | 014 Morelia | Quinto Poder 2026/11/10 · Publimetro 2026/11/10 · Grupo Marmor 2026/11/10 · La Razón 2026/11/11 · Excélsior |
 | 015 Naucalpan | El Monitor 2026/11/13 · Heraldo de México 2026/11/13 · Cúspide 2026/11/13 · Heraldo SLP 2026/11/13 · Telediario · López Dóriga · Ejecentral · Quadratín Edomex · N+ · Infobae 2026/11/13 |
 | 016 Tlalnepantla | Heraldo de México Edomex 2026/11/13 |
-| 017 Tijuana | El Imparcial 2026/11/14 |
+| 017 Tijuana | El Imparcial 2026/11/14 · Periodismo Negro 2026/11/14 · Uniradio · Blanco y Negro |
 | 018 Ocotlán | Ver 003 |
 | 019 Tuxpan | Ver 004 |
 | 022 Benemérito | Milenio (boletín del 10) · RED113 · Tallapolítica · Red Metropolitana 2026/11/11 · Heraldo de México 2026/11/11 · El Diario de Chihuahua 2026/nov/11 · Alerta Chiapas 2026/11/11 · Diario Puntual 2026/11/11 · Quadratín Chiapas · Meganoticias |
@@ -103,14 +104,17 @@ Recuento por tipo: un emisor por nota propia; ediciones estatales de medios naci
 2. **Silao 🟡**: la autoridad acude a una denuncia al 089 y es repelida (RES): confrontación derivada de una acción de la autoridad. Los 6 abatidos no mueven el color. Dos fichas.
 3. **Temascatío 🟡 con reserva**: «repelen ataque armado» por titular, «en recorrido de reconocimiento» solo por resumen: quién inició no determinado por titular → 🟡.
 4. **Morelia 🟡**: excomisario sin cargo vigente; la agravante de servidor público exige función actual.
-5. **Tuxpan 🔴 + 🟢**: dos muertos (la segunda víctima murió el 13, dentro de la ventana) y cuatro detenidos: dos fichas. Día del ataque contradicho (11 o 12).
+5. **Tuxpan 🔴 + 🟢**: dos muertos (la segunda víctima murió después; fecha no fijada, publicación del 13 por ruta) y cuatro detenidos: dos fichas. Día del ataque contradicho (11 o 12); primer ataque contra la misma víctima, martes 10, solo por resumen.
 6. **Monterrey (REC-003) 🔴**: homicidio múltiple por tipo de evento, aunque sea riña con arma blanca sin vínculo criminal publicado; reserva escrita en la ficha.
 7. **San Juan del Río 🔴**: tras procedencia R1, 2 muertos por titular (Al Minuto y Expreso Querétaro 2026/11/10) y causa contradicha (riña o ataque): muerte violenta en ambas versiones → «muertos por agresión», 🔴 por víctimas múltiples; cláusula de retiro (día del hallazgo frente a las 16:07 del 9).
-8. **Armamento por resumen**: las cifras de boletín leídas solo en el resumen del buscador no se integran (n/d); se integran solo las que trae un titular: Benemérito 12 largas y 14 detenidos; Chacaltianguis 4 largas, 39 cargadores, 2 granadas, 1 lanzagranadas; Silao 13 armas (sin categoría); Temascatío 6 detenidos; Ocotlán 1 detenido.
+8. **Armamento por resumen**: las cifras de boletín leídas solo en el resumen del buscador no se integran (n/d); se integran solo las que trae un titular: Benemérito 12 largas y 14 detenidos; Chacaltianguis 4 largas, 39 cargadores, 2 granadas, 1 lanzagranadas; Temascatío 6 detenidos; Ocotlán 1 detenido. **Silao, 13 armas: no se integra** — el titular de Latinus con la cifra no se localizó en `procedencia-cifras` R1; los titulares hallados dicen «aseguran armas».
 9. **Atotonilco el Alto**: quema de vehículos sin ruta con día y desmentido de narcobloqueo por titular: rojo sin ruta, no se ficha.
 10. **Puebla, bloqueos del 10-nov**: protesta de familiares de internos, sin quema de vehículos (Reto Diario 2026/11/10): ajeno.
 11. **Tijuana, 14-nov**: publicada el día de cierre sin hora: `FRONTERA DE VENTANA — HORA NO FIJADA`; si resulta posterior a las 10:09, pasa a 151.
 12. **Mazatlán, «6 cuerpos en fosa» (La Opinión 2026/11/10)**: es `ARG-149-006`, no hecho nuevo.
+13. **Escalas de confianza**: las fichas usan ★ y el módulo de armamento Alto/Medio/Bajo (CLAUDE.md). Que ARM-002 a -005 lleven «Bajo» y sus fichas ★★★☆☆ no es contradicción: el módulo baja porque el boletín no se leyó.
+14. **Institucional**: solo cuenta declaración o comunicado de autoridad nombrada **por titular** (SSP Michoacán, PGJEH) o boletín federal republicado; versiones de Defensa, Fiscalía o SSP leídas solo en el resumen cuentan 0 (Ocotlán, Silao, Tuxpan).
+15. **Sentencias sin fecha, no integrables** (vistas por los equipos): fgebc 16282 (robo de vehículo, 6 años 8 meses), Chihuahua «20 años, Juárez», Nayarit «40 años por violación equiparada» (portada de fgenay). Riesgo de homónimo: Monterrey «casi 26 años» frente a «25 años, col. Alhambra»; Tabasco 5119 frente a Bersain «N» (13 años 4 meses, 6-nov) y Cristóbal «N» (30 años, 30-oct).
 
 ## 8. Controles editoriales
 
