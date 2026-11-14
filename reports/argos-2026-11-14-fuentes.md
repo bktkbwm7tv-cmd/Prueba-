@@ -24,7 +24,7 @@ Coordinador: 12 de recall repartidas 2 por fecha (9 a 14) más «fosas», «bloq
 
 - **23 hechos propios** en 12 entidades: **11 🔴 · 6 🟡 · 6 🟢**; densidad 0,20 hechos/hora (cálculo propio).
 - **3 recuperaciones** de la ventana de ARGOS 149 (🔴): Tecate, San Juan Cacahuatepec, Monterrey. Fuera de todos los totales.
-- Armamento integrado: 16 largas, 1 especial (lanzagranadas), 39 cargadores, 2 granadas, 21 detenidos en aseguramiento; sin categoría n/d (Silao 13, solo por resumen, no integradas) (cálculo propio).
+- Armamento integrado: 16 largas, 13 sin categoría (Silao, un solo titular fechado), 1 especial (lanzagranadas), 39 cargadores, 2 granadas, 21 detenidos en aseguramiento (cálculo propio; mínimos: excluyen n/d).
 - Muertos por agresión 15 · heridos 6 · cuerpos o restos 5 · abatidos por la fuerza pública 9 (cálculo propio).
 - Sentencias integrables: 0.
 
@@ -74,23 +74,23 @@ Republicadores del mismo boletín: una fuente, corroboración débil por constru
 | 001 Zitácuaro | La Silla Rota 2026/11/13 · MVS 2026/11/13 (SSP, por titular) · Grupo Marmor 2026/11/13 · Contramuro 13112026 · La Voz de Michoacán · AF Medios · RED113 · NX Noticias |
 | 002 Tepalcatepec | La Jornada 2026/11/11 · Grupo Marmor 2026/11/11 · Infobae 2026/11/12 · Diario Puntual 2026/11/12 · Posta · La Voz · UnoTV · Heraldo de México 2026/11/11 · Excélsior |
 | 003 Ocotlán | La Jornada 2026/11/12 · Grupo Marmor 2026/11/12 · Lo de Hoy 2026/11/13 · El Universal · Milenio · Tribuna de la Bahía · Defensa (X, RES) · ABC Color 2026/11/12 (agencia) |
-| 004 Tuxpan | La Silla Rota 2026/11/12 · MVS 2026/11/12 · Diario de Yucatán 2026/11/12 y 2026/11/13 · Proyecto Puente 2026/11/12 · Proceso 2026/11/13 · La Aldea 2026/11/13 · Hoy Xalapa 2026/11/13 · Noticias Veracruz 2026/11/13 · El Universal · XEU · N+ · Meganoticias · TV Azteca |
-| 005 Juchitán | Latinus 2026/11/13 · La Silla Rota 2026/11/13 · Diario de Yucatán 2026/11/13 · Quadratín Oaxaca · Imparcial Oaxaca · Diario Marca 2026/11 · Entidad Oaxaca 2026/11 · Omnia |
+| 004 Tuxpan | La Silla Rota 2026/11/12 y 2026/11/13 («muere [nombre omitido], segunda víctima») · Golpe Político 2026/11/12 · El Buen Tono (marino en activo) · La Nigua · MVS 2026/11/12 · Diario de Yucatán 2026/11/12 y 2026/11/13 · Proyecto Puente 2026/11/12 · Proceso 2026/11/13 · La Aldea 2026/11/13 · Hoy Xalapa 2026/11/13 · Noticias Veracruz 2026/11/13 · El Universal · XEU · N+ · Meganoticias · TV Azteca |
+| 005 Juchitán | Latinus 2026/11/13 (titular verificado en R2) · Omnia · El Congresista (variante «martes») · La Silla Rota 2026/11/13 · Diario de Yucatán 2026/11/13 · Quadratín Oaxaca · Imparcial Oaxaca · Diario Marca 2026/11 · Entidad Oaxaca 2026/11 · Omnia |
 | 006 San José del Rincón | Seuno 2026/11/11 · Reporteros en Movimiento 2026/11/11 · Telediario · Digitalmex · Diario Evolución · Directiva · Ultranoticias · Poder Edomex |
 | 007 Chihuahua | El Diario de Chihuahua 2026/nov/12 · La Opción 20261112 · El Bordo 20261112 · Es Noticia 2026/11 · Tiempo · Impacto Noticias · Omnia · Noticias Delicias · Ocho Columnas 2026/11 |
 | 008 Ajacuba | Diario de Yucatán 2026/11/13 · Milenio · Zócalo · La Jornada Hidalgo (PGJEH, por titular) · La Verdad Hidalgo · News Hidalgo · Sin Filtro · Es Periodismo |
 | 009 Irapuato | AM 2026/11/12 · Correo 2026/nov/12 · Noticieros en Línea 2026/nov/13 · Quadratín Bajío · N+ · NPI |
 | 010 Las Víboras | Luz Noticias 2026-11-13 · Café Negro · Impacto Noticias · Quadratín Sinaloa |
 | 011 San Juan del Río | Al Minuto 2026/11/10 · Expreso Querétaro 2026/11/10 · Quadratín Querétaro («riña deja 2 muertos») · Pensador Queretano · N+ · Crónica Regional · Libertad de Palabra · Amanecer Qro. «Macabro hallazgo» (Noticias de Querétaro 2026/11/11), citado por el equipo Centro, no se localizó en procedencia: retirado |
-| 012 / 020 Silao | Latinus 2026/11/13 · La Silla Rota 2026/11/13 · AM 2026/11/13 · La Jornada 2026/11/14 · Proyecto Puente 2026/11/13 · UnoTV · El Universal · Vanguardia · Meganoticias · El Otro Enfoque 2026/11/13 · Info7 · El Diario de Chihuahua 2026/nov/13 |
+| 012 / 020 Silao | El Otro Enfoque 2026/11/13 («aseguran 13 armas») · Latinus 2026/11/13 (citado por el equipo; no localizado en procedencia) · La Silla Rota 2026/11/13 · AM 2026/11/13 · La Jornada 2026/11/14 · Proyecto Puente 2026/11/13 · UnoTV · El Universal · Vanguardia · Meganoticias · El Otro Enfoque 2026/11/13 · Info7 · El Diario de Chihuahua 2026/nov/13 |
 | 013 / 021 Temascatío | Milenio (boletín del 11) · Certeza Diario · Diario de Yucatán 2026/11/12 · Infobae 2026/11/13 |
 | 014 Morelia | Quinto Poder 2026/11/10 · Publimetro 2026/11/10 · Grupo Marmor 2026/11/10 · La Razón 2026/11/11 · Excélsior |
 | 015 Naucalpan | El Monitor 2026/11/13 · Heraldo de México 2026/11/13 · Cúspide 2026/11/13 · Heraldo SLP 2026/11/13 · Telediario · López Dóriga · Ejecentral · Quadratín Edomex · N+ · Infobae 2026/11/13 |
-| 016 Tlalnepantla | Heraldo de México Edomex 2026/11/13 |
+| 016 Tlalnepantla | Heraldo de México Edomex 2026/11/13 · Telediario («hoy-13-noviembre»: solo corrobora) · N+ |
 | 017 Tijuana | El Imparcial 2026/11/14 · Periodismo Negro 2026/11/14 · Uniradio · Blanco y Negro |
 | 018 Ocotlán | Ver 003 |
 | 019 Tuxpan | Ver 004 |
-| 022 Benemérito | Milenio (boletín del 10) · RED113 · Tallapolítica · Red Metropolitana 2026/11/11 · Heraldo de México 2026/11/11 · El Diario de Chihuahua 2026/nov/11 · Alerta Chiapas 2026/11/11 · Diario Puntual 2026/11/11 · Quadratín Chiapas · Meganoticias |
+| 022 Benemérito | La Nigua («detiene a 14 y asegura 12 armas largas») · Rotativo · Milenio (boletín del 10) · RED113 · Tallapolítica · Red Metropolitana 2026/11/11 · Heraldo de México 2026/11/11 · El Diario de Chihuahua 2026/nov/11 · Alerta Chiapas 2026/11/11 · Diario Puntual 2026/11/11 · Quadratín Chiapas · Meganoticias |
 | 023 Chacaltianguis | Milenio (boletín del 10) · RED113 · Poder y Crítica · El Buen Tono · La Nigua · Potosí Noticias 2026/11/12 |
 | REC-001 Tecate | Punto Norte 2026/11/07 · Zeta 2026/11 · El Congresista · Consulta Monterrey · Uniradio (taquería, sin fecha) |
 | REC-002 Cacahuatepec | Diario Puntual 2026/11/09 · El Imparcial 2026/11/10 · Quadratín Oaxaca · Diario Marca 2026/11 · Imparcial Oaxaca |
@@ -107,7 +107,7 @@ Recuento por tipo: un emisor por nota propia; ediciones estatales de medios naci
 5. **Tuxpan 🔴 + 🟢**: dos muertos (la segunda víctima murió después; fecha no fijada, publicación del 13 por ruta) y cuatro detenidos: dos fichas. Día del ataque contradicho (11 o 12); primer ataque contra la misma víctima, martes 10, solo por resumen.
 6. **Monterrey (REC-003) 🔴**: homicidio múltiple por tipo de evento, aunque sea riña con arma blanca sin vínculo criminal publicado; reserva escrita en la ficha.
 7. **San Juan del Río 🔴**: tras procedencia R1, 2 muertos por titular (Al Minuto y Expreso Querétaro 2026/11/10) y causa contradicha (riña o ataque): muerte violenta en ambas versiones → «muertos por agresión», 🔴 por víctimas múltiples; cláusula de retiro (día del hallazgo frente a las 16:07 del 9).
-8. **Armamento por resumen**: las cifras de boletín leídas solo en el resumen del buscador no se integran (n/d); se integran solo las que trae un titular: Benemérito 12 largas y 14 detenidos; Chacaltianguis 4 largas, 39 cargadores, 2 granadas, 1 lanzagranadas; Temascatío 6 detenidos; Ocotlán 1 detenido. **Silao, 13 armas: no se integra** — el titular de Latinus con la cifra no se localizó en `procedencia-cifras` R1; los titulares hallados dicen «aseguran armas».
+8. **Armamento por resumen**: las cifras de boletín leídas solo en el resumen del buscador no se integran (n/d); se integran solo las que trae un titular: Benemérito 12 largas y 14 detenidos; Chacaltianguis 4 largas, 39 cargadores, 2 granadas, 1 lanzagranadas; Temascatío 6 detenidos; Ocotlán 1 detenido. **Silao, 13 armas**: retiradas en R1 (el titular atribuido a Latinus no se localizó) y **reintegradas en R2** como «sin categoría» con un solo titular fechado (El Otro Enfoque 2026/11/13: «… aseguran 13 armas»); ficha a ★★☆☆☆; desglose 9 largas y 4 cortas, solo por resumen.
 9. **Atotonilco el Alto**: quema de vehículos sin ruta con día y desmentido de narcobloqueo por titular: rojo sin ruta, no se ficha.
 10. **Puebla, bloqueos del 10-nov**: protesta de familiares de internos, sin quema de vehículos (Reto Diario 2026/11/10): ajeno.
 11. **Tijuana, 14-nov**: publicada el día de cierre sin hora: `FRONTERA DE VENTANA — HORA NO FIJADA`; si resulta posterior a las 10:09, pasa a 151.
@@ -118,7 +118,14 @@ Recuento por tipo: un emisor por nota propia; ediciones estatales de medios naci
 
 ## 8. Controles editoriales
 
-Pendiente de completar tras R1 y R2.
+| Control | Ronda | Veredicto | Resultado |
+|---|---|---|---|
+| `procedencia-cifras` | R1 (24 búsquedas, 20 pases) | CORREGIR | 15 hallazgos, todos aplicados: San Juan del Río (ruta del 10, causa contradicha, no fuente única, cláusula de retiro), Temascatío (1 abatido por titular; abatidos 9), Silao 13 armas retiradas, Ocotlán heridos 2 o 3, Ajacuba lugar y Nacional 2, San José del Rincón Nacional 1, armamento por boletín a «Bajo», Zitácuaro herido no integrado (heridos 6), Tuxpan atribuciones, Juchitán día contradicho, Tijuana segunda fuente, Morelia recompensa de 2024, Tecate día por resumen, Cacahuatepec detenido no integrado. FE-002 a -004 quedan `HEREDADO — NO REVERIFICADO` |
+| `editor-duplicidad` | R1 (20 pases) | CORREGIR | 20 hallazgos; aplicados: conclusiones 3 y 4, nombre omitido en Tuxpan, El Imparcial regional, cobertura de sentencias 19 + 3, deslindes 015/016 y Ajacuba, Atotonilco fuera de portada y conclusiones, párrafo de cualitativos retirado, valoración solo de escala, Ocotlán por agravante, Las Víboras ★★☆☆☆, motivo del visto de Culiacán, portada 5, vistos completados. **No aplicados**: (12) San Juan del Río sigue 🔴 —tras R1 de procedencia tiene 2 muertos por titular en ambas versiones—; (16) escalas ★ y Alto/Medio/Bajo, distintas por diseño |
+| `editor-duplicidad` | R2 (20 pases, en serie) | CORREGIR | Aplicados: Tuxpan «días antes» y fecha de la segunda muerte no fijada, conclusión 4 sin número de días, Juchitán con fecha contradicha y deslinde de ARG-147-003, método retirado de fichas 011 y 020, color fuera de los deslindes de 003 y 012, «marino» fuera de la portada, conclusión 2 con «por resumen», Defensa como institucional 0, Temascatío Nacional 1, «no publicado en los medios leídos», cobertura de alto impacto 20 + 12, vistos de Romita, Pinotepa y Tenosique, nombres omitidos en el archivo de equipos. **No aplicados**: (13 y 15 menores) se mantienen las reservas «sube a 🔴 si…» en 013 y 015 como marcas de reserva |
+| `procedencia-cifras` | R2 (5 búsquedas, 20 pases, en serie) | CORREGIR | Aplicados: Silao 13 armas reintegradas con titular (El Otro Enfoque 2026/11/13), Tlalnepantla con segunda fuente y duplicidad con 015 no descartada (sensibilidad: 14 muertos y 5 heridos), Chacaltianguis con titular único declarado, nacionalidad del detenido de Ocotlán por resumen, filas de fuentes completadas, nota de «mínimos» en armamento. Aritmética sin descuadres |
+
+Marca «Consulta»: 10:50 CDMX, última búsqueda de `procedencia-cifras` R2 (hora aproximada al minuto por el cierre del control).
 
 ## 9. Presupuesto de búsqueda
 

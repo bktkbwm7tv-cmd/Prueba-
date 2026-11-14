@@ -1161,3 +1161,39 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-149-FE-004` | 149 | 2026-11-09 | ARG-149-FE-004 — precisión a ARG-148-006: 4 detenidos atribuidos a la SSPH por titular |
 | `ARG-149-FE-005` | 149 | 2026-11-09 | ARG-149-FE-005 — precisión a ARGOS 148: el boletín federal del 5-nov existía (Milenio, RED113, Tallapolítica) e incluía Tlachichuca (🟢, no se recupera) |
 | — | 149 | 2026-11-09 | Precisiones sin código (ARGOS 149): ARG-148-001 se mantiene 🔴 (SSPH: «elemento de la Policía Estatal», solo por resumen) · ARG-148-004: segundo abatido confirmado por el Gabinete (resumen), identidad abierta |
+| `ARG-150-001` | 150 | 2026-11-13 | ARG-150-001 — Zitácuaro (Curungueo), Michoacán: Emboscada contra la Guardia Civil: 2 agentes muertos; 🔴; ★★★☆☆ |
+| `ARG-150-002` | 150 | 2026-11-11 | ARG-150-002 — Tepalcatepec (El Toril), Michoacán: Ataque a la base de la Policía Municipal: 1 policía muerto, 2 o 3 heridos; 🔴; ★★★☆☆ |
+| `ARG-150-003` | 150 | 2026-11-12 | ARG-150-003 — Ocotlán, Jalisco: Agresión al Ejército: 2 agresores abatidos, 1 militar y 1 mujer heridos; 🔴; ★★★☆☆ |
+| `ARG-150-004` | 150 | 2026-11-12 | ARG-150-004 — Tuxpan (Centro Médico de Tuxpan), Veracruz: Ataque dentro de un hospital privado: 2 muertos; 🔴; ★★★☆☆ |
+| `ARG-150-005` | 150 | 2026-11-12 | ARG-150-005 — Juchitán de Zaragoza, Oaxaca: Policía municipal asesinado en su domicilio; 🔴; ★★★☆☆ |
+| `ARG-150-006` | 150 | 2026-11-10 | ARG-150-006 — San José del Rincón, Estado de México: Policía municipal asesinado al intentar frustrar un robo de vehículo; 🔴; ★★★☆☆ |
+| `ARG-150-007` | 150 | 2026-11-12 | ARG-150-007 — Chihuahua (Las Malvinas), Chihuahua: Doble homicidio; una víctima, expolicía municipal; 🔴; ★★★☆☆ |
+| `ARG-150-008` | 150 | 2026-11-12 | ARG-150-008 — Ajacuba (Tecomatlán), Hidalgo: Fosa con 3 cuerpos en una vivienda, hallada en un cateo; 🔴; ★★★☆☆ |
+| `ARG-150-009` | 150 | 2026-11-12 | ARG-150-009 — Irapuato (Cuchicuato–Tamahula), Guanajuato: Colectivo localiza 2 fosas con 2 cráneos y restos óseos; 🔴; ★★★☆☆ |
+| `ARG-150-010` | 150 | 2026-11-13 | ARG-150-010 — Culiacán (Las Víboras, sindicatura de Costa Rica), Sinaloa: Colectivo localiza restos humanos; cantidad no publicada; 🔴; ★★☆☆☆ |
+| `ARG-150-011` | 150 | 2026-11-10 | ARG-150-011 — San Juan del Río (San Pablo Potrerillos), Querétaro: 2 hombres muertos; causa contradicha (riña o ataque); 🔴; ★★★☆☆ |
+| `ARG-150-012` | 150 | 2026-11-12 | ARG-150-012 — Silao (La Aldea), Guanajuato: Operativo repelido: 6 agresores abatidos; 🟡; ★★★☆☆ |
+| `ARG-150-013` | 150 | 2026-11-11 | ARG-150-013 — Irapuato (La Trinidad de Temascatío), Guanajuato: Agresión a la GN y al Ejército, repelida: 1 agresor abatido; 🟡; ★★★☆☆ |
+| `ARG-150-014` | 150 | 2026-11-10 | ARG-150-014 — Morelia (Primo Tapia Poniente), Michoacán: Excomisario regional de Uruapan asesinado; 🟡; ★★★☆☆ |
+| `ARG-150-015` | 150 | 2026-11-13 | ARG-150-015 — Naucalpan (San Bartolo, base de la Ruta 05), Estado de México: Ataque a choferes de transporte público: 1 muerto y 1 herido; 🟡; ★★★☆☆ |
+| `ARG-150-016` | 150 | 2026-11-13 | ARG-150-016 — Tlalnepantla (El Arenal), Estado de México: Ataque armado: 1 muerto y 1 herido; 🟡; ★★☆☆☆ |
+| `ARG-150-017` | 150 | 2026-11-14 | ARG-150-017 — Tijuana (Nuevo Milenio), Baja California: Hombre asesinado a balazos dentro de una vivienda; 🟡; ★★★☆☆ |
+| `ARG-150-018` | 150 | 2026-11-12 | ARG-150-018 — Ocotlán, Jalisco: 1 detenido; armamento de alto poder sin cifra por titular; 🟢; ★★★☆☆ |
+| `ARG-150-019` | 150 | 2026-11-12 | ARG-150-019 — Tuxpan, Veracruz: 4 detenidos por el ataque al hospital; uno, marino en activo; 🟢; ★★★☆☆ |
+| `ARG-150-020` | 150 | 2026-11-12 | ARG-150-020 — Silao (La Aldea), Guanajuato: 13 armas aseguradas; desglose solo por resumen; 🟢; ★★☆☆☆ |
+| `ARG-150-021` | 150 | 2026-11-11 | ARG-150-021 — Irapuato (La Trinidad de Temascatío), Guanajuato: 6 detenidos; armas sin desglose por titular; 🟢; ★★★☆☆ |
+| `ARG-150-022` | 150 | 2026-11-10 | ARG-150-022 — Benemérito de las Américas (col. Bellavista), Chiapas: 14 detenidos y 12 armas largas; 🟢; ★★★☆☆ |
+| `ARG-150-023` | 150 | 2026-11-10 | ARG-150-023 — Chacaltianguis, Veracruz: 4 armas largas, 2 granadas y 1 lanzagranadas; 🟢; ★★★☆☆ |
+| `ARG-150-REC-001` | 150 | 2026-11-06 | ARG-150-REC-001 — Tecate (Los Encinos), Baja California: Ataque armado: 3 muertos y 2 heridos; recuperación de la ventana de ARGOS 149, 🔴 en su ventana, fuera de totales; ★★★☆☆ |
+| `ARG-150-REC-002` | 150 | 2026-11-08 | ARG-150-REC-002 — San Juan Cacahuatepec, Oaxaca: Ataque armado: 2 muertos y 1 herido; recuperación de la ventana de ARGOS 149, 🔴 en su ventana, fuera de totales; ★★★☆☆ |
+| `ARG-150-REC-003` | 150 | 2026-11-07 | ARG-150-REC-003 — Monterrey (taquería), Nuevo León: Riña con arma blanca: 2 muertos y 1 herido; recuperación de la ventana de ARGOS 149, 🔴 en su ventana, fuera de totales; ★★★☆☆ |
+| `ARG-150-ARM-001` | 150 | 2026-11-12 | ARG-150-ARM-001 — Silao (La Aldea), Guanajuato: 13 sin categoría; ficha ARG-150-020; Bajo |
+| `ARG-150-ARM-002` | 150 | 2026-11-10 | ARG-150-ARM-002 — Benemérito de las Américas, Chiapas: 12 largas, 14 detenidos; ficha ARG-150-022; Bajo |
+| `ARG-150-ARM-003` | 150 | 2026-11-10 | ARG-150-ARM-003 — Chacaltianguis, Veracruz: 4 largas, 1 especial, 39 cargadores, 2 granadas; ficha ARG-150-023; Bajo |
+| `ARG-150-ARM-004` | 150 | 2026-11-11 | ARG-150-ARM-004 — Irapuato (La Trinidad de Temascatío), Guanajuato: 6 detenidos; ficha ARG-150-021; Bajo |
+| `ARG-150-ARM-005` | 150 | 2026-11-12 | ARG-150-ARM-005 — Ocotlán, Jalisco: 1 detenido; ficha ARG-150-018; Bajo |
+| `ARG-150-FE-001` | 150 | 2026-11-14 | ARG-150-FE-001 — tres rojos de la ventana de 149 recuperados (ARG-150-REC-001 a -003): semáforo corregido de 149, 10 🔴, 7 🟡, 7 🟢 |
+| `ARG-150-FE-002` | 150 | 2026-11-14 | ARG-150-FE-002 — fe de erratas a ARG-149-009: saldo 1 muerto y 1 herido fijado; sin efecto numérico (HEREDADO — NO REVERIFICADO) |
+| `ARG-150-FE-003` | 150 | 2026-11-14 | ARG-150-FE-003 — precisión a ARG-149-010 y -011: dejan de ser fuente única; ★★★☆☆ (HEREDADO — NO REVERIFICADO) |
+| `ARG-150-FE-004` | 150 | 2026-11-14 | ARG-150-FE-004 — rojos sin ruta de 149 retirados: Huaquechula (julio), Cañada Morelos (25-jun), Doctor Coss (jun–jul) (HEREDADO — NO REVERIFICADO) |
+| `ARG-150-FE-005` | 150 | 2026-11-14 | ARG-150-FE-005 — candidato de sentencia «Ramos Arizpe» de 149 = General Cepeda, 19-oct, reciclado: retirado |

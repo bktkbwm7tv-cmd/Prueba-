@@ -2886,7 +2886,7 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 ## Deuda de método (ARGOS 150)
 
 1. **Ventana de seis fechas**: la ruta por día rinde poco con presupuesto de 4 por equipo; Noroeste solo hizo 3. Para ventanas largas, asignar las búsquedas de ruta a los días con más hechos del recall.
-2. **Cifras de equipos «por titular» que no lo eran**: Silao «13 armas» (Latinus), Zitácuaro herido (AF Medios), San Juan del Río «fuente única» con 8 emisores, Temascatío «abatido no oficial» con tres titulares. Exigir a los equipos el titular literal entre comillas.
+2. **Cifras de equipos «por titular» que no lo eran**: Silao «13 armas» (atribuida a Latinus; R2 halló el titular en El Otro Enfoque), Zitácuaro herido (AF Medios), San Juan del Río «fuente única» con 8 emisores, Temascatío «abatido no oficial» con tres titulares. Exigir a los equipos el titular literal entre comillas.
 3. **Boletín del día de cierre de la edición anterior**: con cierre a media tarde, siempre llega a la siguiente; sus acciones quedan como día de apertura sin hora.
 4. **Centro excedió el tope (26 de 25)**: R2 de procedencia bajó a 5. Presupuesto: 2 + 18 + 151 + 24 + 5 = **200**.
 5. **Dominio nuevo**: `sspe.chihuahua.gob.mx` (SSPE de Chihuahua).

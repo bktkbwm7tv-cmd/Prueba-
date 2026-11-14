@@ -5,7 +5,7 @@ Ventana: 9-nov 16:07 → 14-nov 10:09 CDMX. Archivo: argos-2026-11-14.html."""
 import sys, re, json, html as H
 
 NUM, FECHA, HORA = "150", "2026-11-14", "10:09"
-CONSULTA = "2026-11-14, última búsqueda 10:23"
+CONSULTA = "2026-11-14, última búsqueda 10:50"
 DUR = "114 h 02 min"
 ESTR = {"★★★☆☆": "🟡 Medio", "★★☆☆☆": "🟠 Bajo", "★★★★☆": "🟢 Alto"}
 FLAG = {"rojo": ("alto", "ROJO"), "amarillo": ("medio", "AMARILLO"), "verde": ("bajo", "VERDE"), "rec": ("sindato", "RECUPERACIÓN")}
@@ -126,10 +126,10 @@ E = [
   ent="Guanajuato", mun="Silao (La Aldea)", dia="12 O 13-NOV; PUB. 13-NOV, POR RUTA",
   fecha_txt="noche del 12 o madrugada del 13-nov, contradicho; publicación 13-nov, por ruta",
   title="GUANAJUATO · SILAO — FUERZAS ESTATALES Y FEDERALES ACUDEN A UNA DENUNCIA EN LA ALDEA Y SON ATACADAS: SEIS AGRESORES ABATIDOS",
-  hecho="Silao · <code>LA ALDEA, CALLE SOLIDARIDAD, POR TITULAR</code> (AM 2026/11/13) · <code>DÍA CONTRADICHO</code>: noche del jueves 12 o madrugada del viernes 13, " + RES + " · publicación 13-NOV, por ruta · Secretaría de Seguridad y Paz: denuncia anónima al 089; fuerzas estatales, Ejército y GN acuden y son atacadas desde un inmueble, " + RES + " (🟡 confrontación derivada de una acción de la autoridad) · <b>6 presuntos integrantes del CJNG abatidos</b>, por titular (Latinus 2026/11/13; La Silla Rota 2026/11/13) · ningún elemento lesionado, " + RES + " · aseguramiento: <a href=\"#ARG-150-020\"><code>ARG-150-020</code></a>",
-  panel="Operativo repelido: <b>6 agresores abatidos</b>", inst=SB, nac="Latinus · La Silla Rota · La Jornada", conf="★★★☆☆",
+  hecho="Silao · <code>LA ALDEA, CALLE SOLIDARIDAD, POR TITULAR</code> (AM 2026/11/13) · <code>DÍA CONTRADICHO</code>: noche del jueves 12 o madrugada del viernes 13, " + RES + " · publicación 13-NOV, por ruta · Secretaría de Seguridad y Paz: denuncia anónima al 089; fuerzas estatales, Ejército y GN acuden y son atacadas desde un inmueble, " + RES + " (🟡 confrontación derivada de una acción de la autoridad) · <b>6 presuntos integrantes del CJNG abatidos</b>, por titular (La Silla Rota 2026/11/13; Vanguardia) · ningún elemento lesionado, " + RES + " · aseguramiento: <a href=\"#ARG-150-020\"><code>ARG-150-020</code></a>",
+  panel="Operativo repelido: <b>6 agresores abatidos</b>", inst=SB, nac="La Silla Rota · Vanguardia · La Jornada", conf="★★★☆☆",
   campo="quién inició, según la versión oficial, solo por resumen; día contradicho", I=0, N=3, R=2, A=0,
-  fechadas=["Latinus (2026/11/13)", "La Silla Rota (2026/11/13)", "AM (2026/11/13)", "La Jornada (2026/11/14)"], estatus="Parcialmente corroborado", arm=None,
+  fechadas=["La Silla Rota (2026/11/13)", "AM (2026/11/13)", "El Otro Enfoque (2026/11/13)", "La Jornada (2026/11/14)"], estatus="Parcialmente corroborado", arm=None,
   armtxt="sin fila — aseguramiento en <a href=\"#ARG-150-020\"><code>ARG-150-020</code></a>",
   desl="Los abatidos no se suman a «muertos por agresión». Silao en el índice: ARG-146-005 y anteriores: otros hechos. Un elemento de la GN muerto «hace dos días en el mismo lugar»: un solo resumen, no verificado, no se ficha."),
  dict(id="ARG-150-013", estado="MX-GUA", region="Occidente", color="amarillo", impacto="mediano", fecha="2026-11-11", hora="no fijada", mu=0, he=0, cu=0, hk=12,
@@ -161,11 +161,11 @@ E = [
  dict(id="ARG-150-016", estado="MX-MEX", region="Centro", color="amarillo", impacto="mediano", fecha="2026-11-13", hora="no fijada", mu=1, he=1, cu=0, hk=12,
   ent="Estado de México", mun="Tlalnepantla (El Arenal)", dia="13-NOV, POR RUTA",
   title="ESTADO DE MÉXICO · TLALNEPANTLA — ATAQUE ARMADO EN EL ARENAL: UN MUERTO Y UN HERIDO",
-  hecho="Tlalnepantla · <code>COL. EL ARENAL, POR TITULAR</code> · viernes 13-NOV, por ruta (Heraldo de México, edición Edomex, 2026/11/13: «ataque armado en Tlalnepantla: matan a un hombre y dejan a otro herido») · <b>1 muerto y 1 herido</b>, por titular (🟡 homicidio doloso único) · " + FU + " · " + NOD,
+  hecho="Tlalnepantla · <code>COL. EL ARENAL, POR TITULAR</code> · viernes 13-NOV, por ruta (Heraldo de México, edición Edomex, 2026/11/13: «¡Ataque armado en Tlalnepantla! Matan a un hombre y dejan a otro herido») · <b>1 muerto y 1 herido</b>, por titular (🟡 homicidio doloso único) · el muerto, también por titular (Telediario: «balacera Tlalnepantla… deja muerto colonia Arenal»); el herido, en una sola fuente · " + NOD,
   panel="Ataque armado: <b>1 muerto y 1 herido</b>", inst=SB, nac="—", conf="★★☆☆☆",
-  campo="fuente única; hora no fijada", I=0, N=0, R=1, A=0,
+  campo="herido en una sola fuente; hora no fijada", I=0, N=0, R=2, A=0,
   fechadas=["Heraldo de México Edomex (2026/11/13)"], estatus="Pendiente de corroboración", arm=None,
-  desl="«Arenal» en el índice: Acapulco (ARG-110-REC-002) y El Arenal, Jal. (visto en este corte): otros lugares. No es ARG-150-015 (Naucalpan, base de la Ruta 05): mismo día y misma cifra, otro municipio y otra colonia; sin choferes de transporte en el titular."),
+  desl="«Arenal» en el índice: Acapulco (ARG-110-REC-002) y El Arenal, Jal. (visto en este corte): otros lugares. <code>DUPLICIDAD CON ARG-150-015 NO DESCARTADA</code>: mismo día, misma cifra y municipios colindantes sobre Gustavo Baz; otro municipio y otra colonia por titular; identidad de las víctimas no publicada. Si fuera el mismo hecho, los totales bajan a 14 muertos y 5 heridos."),
  dict(id="ARG-150-017", estado="MX-BCN", region="Noroeste", color="amarillo", impacto="mediano", fecha="2026-11-14", hora="no fijada", mu=1, he=0, cu=0, hk=6,
   ent="Baja California", mun="Tijuana (Nuevo Milenio)", dia="PUB. 14-NOV, POR RUTA",
   title="BAJA CALIFORNIA · TIJUANA — ASESINAN A BALAZOS A UN HOMBRE DENTRO DE UNA VIVIENDA EN NUEVO MILENIO",
@@ -178,9 +178,9 @@ E = [
  dict(id="ARG-150-018", estado="MX-JAL", region="Occidente", color="verde", impacto="mediano", fecha="2026-11-12", hora="no fijada", mu=0, he=0, cu=0, hk=13,
   ent="Jalisco", mun="Ocotlán", dia="12-NOV, POR RUTA",
   title="JALISCO · OCOTLÁN — DETENIDO UN HOMBRE TRAS LA AGRESIÓN AL EJÉRCITO; ARMAMENTO DE ALTO PODER SIN CIFRA FIJADA",
-  hecho="Ocotlán · jueves 12-NOV, por ruta (Grupo Marmor 2026/11/12) · <b>1 detenido</b>, de nacionalidad hondureña, por titular (Tribuna de la Bahía: «enfrentamiento en Ocotlán: dos muertos, un detenido»; Milenio: «deja muertos y detenidos») y Defensa, " + RES + " · armamento: 2 armas largas, 1 ametralladora 5.56 mm, 1 fusil Barrett calibre .50, 2 granadas de 40 mm y 1 vehículo con blindaje artesanal, " + RES + ": <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code> · delito: <a href=\"#ARG-150-003\"><code>ARG-150-003</code></a>",
+  hecho="Ocotlán · jueves 12-NOV, por ruta (Grupo Marmor 2026/11/12) · <b>1 detenido</b>, por titular (Tribuna de la Bahía: «enfrentamiento en Ocotlán: dos muertos, un detenido»; Milenio: «deja muertos y detenidos») y Defensa, " + RES + "; nacionalidad extranjera, " + RES + " · armamento: 2 armas largas, 1 ametralladora 5.56 mm, 1 fusil Barrett calibre .50, 2 granadas de 40 mm y 1 vehículo con blindaje artesanal, " + RES + ": <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code> · delito: <a href=\"#ARG-150-003\"><code>ARG-150-003</code></a>",
   panel="<b>1 detenido</b>; armamento de alto poder sin cifra por titular", inst=SB, nac="Milenio · El Universal", conf="★★★☆☆",
-  campo="armamento solo por resumen; cifra de detenido por titular de medio y Defensa por resumen", I=0, N=2, R=1, A=0,
+  campo="armamento solo por resumen; detenido en titulares sin fecha en la ruta; fecha del hecho por otra nota", I=0, N=2, R=1, A=0,
   fechadas=["Grupo Marmor (2026/11/12)", "Lo de Hoy (2026/11/13)"], estatus="Parcialmente corroborado", arm="ARG-150-ARM-005",
   desl="Delito y detención en la misma ventana: dos fichas. Identidad del detenido: no se reproduce."),
  dict(id="ARG-150-019", estado="MX-VER", region="Golfo", color="verde", impacto="mediano", fecha="2026-11-12", hora="no fijada", mu=0, he=0, cu=0, hk=6,
@@ -195,11 +195,11 @@ E = [
  dict(id="ARG-150-020", estado="MX-GUA", region="Occidente", color="verde", impacto="grande", fecha="2026-11-12", hora="noche del 12 o madrugada del 13 (solo por resumen)", mu=0, he=0, cu=0, hk=23,
   ent="Guanajuato", mun="Silao (La Aldea)", dia="12 O 13-NOV; PUB. 13-NOV, POR RUTA",
   fecha_txt="noche del 12 o madrugada del 13-nov, contradicho; publicación 13-nov, por ruta",
-  title="GUANAJUATO · SILAO — ASEGURAN ARMAS Y VEHÍCULOS TRAS EL ENFRENTAMIENTO DE LA ALDEA",
-  hecho="Silao · <code>LA ALDEA</code> · publicación 13-NOV, por ruta · «aseguran armas», por titular (Vanguardia; La Silla Rota) · <b>13 armas</b> (9 largas y 4 cortas), 3 vehículos, chalecos, cascos, cargadores y cartuchos, " + RES + ": <code>CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO</code> (cifra sin titular fechado) · prendas con insignias de grupos criminales, " + RES + " · Secretaría de Seguridad y Paz, Ejército y GN · <b>ningún detenido publicado</b> · enfrentamiento: <a href=\"#ARG-150-012\"><code>ARG-150-012</code></a>",
-  panel="<b>Armas aseguradas</b>; cifra solo por resumen", inst=SB, nac="Latinus · La Silla Rota · Vanguardia", conf="★★★☆☆",
-  campo="cifra de armas solo por resumen; ninguna fuente institucional leída", I=0, N=3, R=1, A=0,
-  fechadas=["Latinus (2026/11/13)", "La Silla Rota (2026/11/13)", "Proyecto Puente (2026/11/13)"], estatus="Parcialmente corroborado", arm="ARG-150-ARM-001",
+  title="GUANAJUATO · SILAO — ASEGURAN TRECE ARMAS TRAS EL ENFRENTAMIENTO DE LA ALDEA",
+  hecho="Silao · <code>LA ALDEA</code> · publicación 13-NOV, por ruta · <b>13 armas</b>, por titular (El Otro Enfoque 2026/11/13: «deja enfrentamiento seis muertos en La Aldea; aseguran 13 armas») · desglose 9 largas y 4 cortas, " + RES + ": n/d · 3 vehículos, chalecos, cascos, cargadores y cartuchos, " + RES + ": n/d · prendas con insignias de grupos criminales, " + RES + " · Secretaría de Seguridad y Paz, Ejército y GN · <b>ningún detenido publicado</b> · enfrentamiento: <a href=\"#ARG-150-012\"><code>ARG-150-012</code></a>",
+  panel="<b>13 armas aseguradas</b>; desglose solo por resumen", inst=SB, nac="La Silla Rota · Vanguardia", conf="★★☆☆☆",
+  campo="cifra de 13 armas en un solo titular fechado; desglose solo por resumen", I=0, N=2, R=2, A=0,
+  fechadas=["El Otro Enfoque (2026/11/13)", "La Silla Rota (2026/11/13)", "Proyecto Puente (2026/11/13)"], estatus="Parcialmente corroborado", arm="ARG-150-ARM-001",
   desl="Operativo con enfrentamiento: dos fichas. «Silao, autopista León–Salamanca, 8 largas y 3 cortas» del boletín federal del 9-nov: otro hecho, visto en armamento."),
  dict(id="ARG-150-021", estado="MX-GUA", region="Occidente", color="verde", impacto="mediano", fecha="2026-11-11", hora="no fijada", mu=0, he=0, cu=0, hk=12,
   ent="Guanajuato", mun="Irapuato (La Trinidad de Temascatío)", dia="11-NOV, BOLETÍN FEDERAL",
@@ -223,9 +223,9 @@ E = [
   ent="Veracruz", mun="Chacaltianguis", dia="10-NOV, BOLETÍN FEDERAL",
   fecha_txt="acciones del 10-nov, boletín federal",
   title="VERACRUZ · CHACALTIANGUIS — MARINA Y POLICÍA ESTATAL ASEGURAN CUATRO ARMAS LARGAS, DOS GRANADAS Y UN LANZAGRANADAS",
-  hecho="Chacaltianguis · Marina y Policía Estatal · boletín federal de acciones del 10-NOV republicado (Milenio, ruta con el día; RED113); inclusión del caso en ese boletín, " + DSR + " · <b>4 armas largas, 39 cargadores, 2 granadas y 1 lanzagranadas</b>, por titular (Poder y Crítica: «cuatro armas largas, 39 cargadores, dos granadas y un lanzagranadas integran el arsenal asegurado en Chacaltianguis») · 3 vehículos y 8 chalecos tácticos, " + RES + " · " + NOD,
+  hecho="Chacaltianguis · Marina y Policía Estatal · boletín federal de acciones del 10-NOV republicado (Milenio, ruta con el día; RED113); inclusión del caso en ese boletín, " + DSR + " · <b>4 armas largas, 39 cargadores, 2 granadas y 1 lanzagranadas</b>, por titular (Poder y Crítica: «cuatro armas largas, 39 cargadores, dos granadas y un lanzagranadas integran el arsenal asegurado en Chacaltianguis»); granadas y lanzagranadas, también por titular (La Nigua; El Buen Tono) · 3 vehículos y 8 chalecos tácticos, " + RES + " · " + NOD,
   panel="<b>4 armas largas, 2 granadas y 1 lanzagranadas</b>", inst="Gabinete de Seguridad <span class=\"muted-note\">(boletín republicado; texto no leído)</span>", nac="Milenio", conf="★★★☆☆",
-  campo="día del aseguramiento fijado solo por el boletín; titular del medio sin fecha en la ruta", I=1, N=1, R=3, A=0,
+  campo="4 largas y 39 cargadores en un solo titular sin fecha en la ruta (Poder y Crítica); día fijado solo por el boletín", I=1, N=1, R=3, A=0,
   fechadas=["Milenio (boletín de acciones del 10-nov, por ruta)", "Potosí Noticias (2026/11/12)"], estatus="Parcialmente corroborado", arm="ARG-150-ARM-003",
   desl="Chacaltianguis no figura en las cinco ediciones previas. Posible reiteración en el boletín del 11-nov, " + RES + ": se cuenta una sola vez."),
 ]
@@ -264,10 +264,10 @@ for r in R:
 ND_ALL = list(range(10))
 ARM = [
  dict(id="ARG-150-ARM-001", ficha="ARG-150-020", estado="MX-GUA", region="Occidente", color="amarillo", ent="Guanajuato", mun="Silao (La Aldea)",
-  fecha="2026-11-12", fecha_txt="12 o 13-nov; pub. 13-nov, por ruta", hora="no fijada", c=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], nd=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9], integra=False,
+  fecha="2026-11-12", fecha_txt="12 o 13-nov; pub. 13-nov, por ruta", hora="no fijada", c=[0, 0, 13, 0, 0, 0, 0, 0, 0, 0], nd=[0, 1, 3, 4, 5, 6, 7, 8, 9], integra=True,
   corp="Secretaría de Seguridad y Paz, Ejército y GN <span class=\"muted-note\">(por medios)</span>", conf="Bajo",
-  nota="13 armas (9 largas y 4 cortas), cargadores y cartuchos, solo por resumen: CANTIDAD NO DETERMINADA, no se integra; ningún detenido publicado; aseguramiento derivado de enfrentamiento (🟡); ver ARG-150-020",
-  fuentes=["Latinus (2026/11/13)", "La Silla Rota (2026/11/13)", "Proyecto Puente (2026/11/13)"]),
+  nota="13 armas por un solo titular fechado (El Otro Enfoque 2026/11/13), integradas como «sin categoría»; 9 largas y 4 cortas, cargadores y cartuchos, solo por resumen: n/d; ningún detenido publicado; aseguramiento derivado de enfrentamiento (🟡); ver ARG-150-020",
+  fuentes=["El Otro Enfoque (2026/11/13)", "La Silla Rota (2026/11/13)", "Proyecto Puente (2026/11/13)"]),
  dict(id="ARG-150-ARM-002", ficha="ARG-150-022", estado="MX-CHP", region="Sureste", color="verde", ent="Chiapas", mun="Benemérito de las Américas",
   fecha="2026-11-10", fecha_txt="acciones del 10-nov, boletín federal", hora="no fijada", c=[0, 12, 0, 0, 0, 0, 0, 0, 0, 14], nd=[0, 2, 3, 4, 5, 6, 7, 8], integra=True,
   corp="Defensa, Marina, SSPC, FGR, GN y Policía Estatal <span class=\"muted-note\">(boletín federal republicado)</span>", conf="Bajo",
@@ -307,8 +307,8 @@ HORAS = 114 + 2 / 60
 DENS = f"{len(E) / HORAS:.2f}".replace(".", ",")
 ENT_ROJO = sorted(set(e["estado"] for e in E if e["color"] == "rojo"))
 DET = sum(a["c"][9] for a in ARM if a["integra"])
-assert TOT == [0, 16, 0, 1, 0, 39, 2, 0, 0, 21], (TOT, ND)
-assert ND == [True, False, True, False, True, False, False, True, True, False], ND
+assert TOT == [0, 16, 13, 1, 0, 39, 2, 0, 0, 21], (TOT, ND)
+assert ND == [True, False, False, False, True, False, False, True, True, False], ND
 assert cnt == {"rojo": 11, "amarillo": 6, "verde": 6}, cnt
 assert cnt_rec == {"rojo": 3, "amarillo": 0, "verde": 0}, cnt_rec
 assert (MU, HE, CU, MU_REC, HE_REC, CU_REC) == (15, 6, 5, 7, 4, 0), (MU, HE, CU, MU_REC, HE_REC, CU_REC)
@@ -469,7 +469,7 @@ panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
     <tbody><tr><td><b>{len(E)}</b></td><td><b>{cnt["rojo"]}</b></td><td><b>{cnt["amarillo"]}</b></td><td><b>{cnt["verde"]}</b></td><td><b>{len(R)}</b></td><td><b>{MU}</b></td><td><b>{HE}</b></td><td><b>{CU}</b></td><td><b>{tv(0)}</b></td><td><b>{tv(1)}</b></td><td><b>{tv(2)}</b></td><td><b>{tv(4, fmt)}</b></td><td><b>{tv(5)}</b></td><td><b>{tv(6)}</b></td><td><b>{tv(7)}</b></td><td><b>{tv(8)}</b></td><td><b>{tv(9)}</b></td><td><b>{len(ENT)}</b></td></tr></tbody>
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
-    <b>Armamento</b>: desglose en su página; armamento especial: {tv(3)} (lanzagranadas) · <b>muertos por agresión</b>: {MU}, cálculo propio de las fichas, incluida la acompañante de Tuxpan, muerta después del ataque (fecha no fijada; publicación del 13); <b>heridos</b>: {HE} · <b>cuerpos o restos</b>: {CU} (Ajacuba 3, Irapuato 2 cráneos), sin causa de muerte informada por autoridad; Las Víboras, sin cifra · <b>abatidos por la fuerza pública</b>: 9, por titular (Silao 6, Ocotlán 2, Temascatío 1), fuera de «muertos por agresión» · <b>heridos contradichos fuera del cálculo</b>: Zitácuaro y el tercer herido de Tepalcatepec y de Ocotlán · <b>marcas</b>: {NFR} <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> (Tijuana, día de cierre) · <b>totales sujetos a {NRET} cláusula de retiro</b> (San Juan del Río: día del hallazgo no fijado frente a las 16:07 del 9) · <b>recuperaciones, fuera de totales</b>: {MU_REC} muertos y {HE_REC} heridos, por titular.
+    <b>Armamento</b>: desglose en su página; las cifras son suma de las que trae un titular y excluyen las n/d (mínimos); armamento especial: {tv(3)} (lanzagranadas) · <b>muertos por agresión</b>: {MU}, cálculo propio de las fichas, incluida la acompañante de Tuxpan, muerta después del ataque (fecha no fijada; publicación del 13); <b>heridos</b>: {HE} · <b>cuerpos o restos</b>: {CU} (Ajacuba 3, Irapuato 2 cráneos), sin causa de muerte informada por autoridad; Las Víboras, sin cifra · <b>abatidos por la fuerza pública</b>: 9, por titular (Silao 6, Ocotlán 2, Temascatío 1), fuera de «muertos por agresión» · <b>heridos contradichos fuera del cálculo</b>: Zitácuaro y el tercer herido de Tepalcatepec y de Ocotlán · <b>marcas</b>: {NFR} <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> (Tijuana, día de cierre) · <b>totales sujetos a {NRET} cláusula de retiro</b> (San Juan del Río: día del hallazgo no fijado frente a las 16:07 del 9) · <b>recuperaciones, fuera de totales</b>: {MU_REC} muertos y {HE_REC} heridos, por titular.
     <br><code>BALANCES, NO SE INTEGRAN NI SE REPARTEN</code>: «Michoacán llega a 36 policías asesinados» (La Silla Rota 2026/11/13) · «suman 21 agentes asesinados en el año» en Guanajuato (Proyecto Puente 2026/11/09) · Tabasco, «22 detenidos» del 9 al 12-nov (Diario de Tabasco 2026/11/13) · Quintana Roo, «mil personas heridas por arma de fuego» en 2026 (PorEsto 2026/11/13) · 2,395 detenidos por extorsión de julio de 2025 a octubre de 2026, mañanera del 10-nov, por titular de medio (Tiempo).
     <br><code>ROJOS SIN RUTA FECHADA — CANDIDATOS NO FICHADOS</code>: <b>Atotonilco el Alto, Jal.</b>: quema de un tractocamión y un camión y bloqueos tras Ocotlán, 12-nov {RES}; García Harfuch «descarta narcobloqueos», por titular (El Universal) · <b>El Arenal, Jal.</b>: dos jóvenes desaparecidos en Zapopan, hallados sin vida, domingo 8 {RES}: de la ventana de ARGOS 149 · <b>Silao, La Aldea</b>: elemento de la GN muerto días antes, un solo resumen · <b>Viesca, Coah.</b>: fosas, sin fecha · <b>Reynosa, Puerta Sur / Nuevo México ITAVU</b>: hallazgos del 4 al 6-nov, {RES}, sin ruta con día · <b>Colima</b>: enfrentamiento con 3 muertos y 15 detenidos, sin fecha.
     <br><b>Vistos, fuera de totales</b> (🟡 sin ruta propia, con fuente agregada o con momento del hecho no fijado): Mazatlán, Arboledas Infonavit (adulto mayor muerto y nieto herido) y Culiacán (adolescente; hombre en Infonavit Humaya), martes 10, nota agregada · Culiacán, joven privado de la libertad en Villa Bonita el 11 y hallado sin vida en la col. Universitaria (Luz Noticias 2026-11-13): 🟡, fuente única, momento de la muerte no fijado · Hermosillo, Álvaro Obregón (miércoles 11, {RES}) · Santo Domingo Tehuantepec, conductor (Diario de Yucatán 2026/11/13) · Iztapalapa, El Mirador (13-nov, no verificado) · Puebla, Guadalupe Hidalgo (1 muerto el 9 y el 10, sin hora) · Mamantel, Camp. (sin ruta) · <b>ajeno</b>: Puebla, ocho bloqueos de familiares de internos del penal de San Miguel (10-nov): protesta, sin quema de vehículos, por titular (Reto Diario 2026/11/10): no es narcobloqueo.
@@ -498,7 +498,7 @@ DSA = "Benemérito 14 y Temascatío 6 (boletín federal y titular) · Ocotlán 1
 tiles = "\n".join([
  tile(0, "Armas cortas", tv(0), "Silao 4 y Temascatío 1, solo por resumen: n/d"),
  tile(1, "Armas largas", tv(1), "Benemérito 12 y Chacaltianguis 4, por titular"),
- tile(2, "Sin categoría", tv(2), "Silao: 13, solo por resumen: no se integra"),
+ tile(2, "Sin categoría", tv(2), "Silao: 13, por titular (El Otro Enfoque 2026/11/13); desglose solo por resumen"),
  tile(3, "Cartuchos", tv(4, fmt), "Benemérito 882 y Temascatío 155, solo por resumen: n/d"),
  tile(4, "Cargadores", tv(5), "Chacaltianguis, por titular; Benemérito 97, solo por resumen"),
  tile(5, "Granadas", tv(6), "Chacaltianguis, por titular; Ocotlán 2 de 40 mm, solo por resumen"),
@@ -543,7 +543,7 @@ arm2 = f'''  <div class="table-wrap"><table class="exec wide">
     </tbody>
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
-    <b>Lectura regional</b>: Occidente, 7 detenidos (Guanajuato 6, Jalisco 1), sin arma integrada; Sureste, 12 largas y 14 detenidos (Chiapas); Golfo, 4 largas, 1 lanzagranadas, 2 granadas y 39 cargadores (Veracruz); Noroeste, Noreste y Centro, sin arma integrada. <b>Cálculo propio</b>.
+    <b>Lectura regional</b>: Occidente, 13 armas sin categoría (Silao) y 7 detenidos (Guanajuato 6, Jalisco 1); Sureste, 12 largas y 14 detenidos (Chiapas); Golfo, 4 largas, 1 lanzagranadas, 2 granadas y 39 cargadores (Veracruz); Noroeste, Noreste y Centro, sin arma integrada. <b>Cálculo propio</b>.
     <br><code>VISTOS, NO INTEGRADOS — BOLETÍN FEDERAL REPUBLICADO, CIFRAS SOLO POR RESUMEN</code>: <b>acciones del 9-nov</b> (<code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code>; si son anteriores a las 16:07, de la ventana de ARGOS 149): Silao, autopista León–Salamanca, 5 detenidos, 8 largas y 3 cortas · Concordia, Sin., 3 detenidos, 6 largas y 650 cartuchos · Santa Isabel, Chih., 4 detenidos, 3 armas, 19 cargadores y 280 cartuchos · Culiacán, 1 detenido y 1 arma · Mazatlán, 3 armas y un aditamento lanzagranadas · Romita, Gto., 2 detenidos por extorsión, sin armas · Pinotepa Nacional, Oax., 1 detenido, armas sin cifra · Jonuta, Tab., 5 detenidos (= Potosí Noticias 2026/11/13: <code>POSIBLE DUPLICIDAD</code>) · <b>acciones del 11-nov</b>: Nuevo Laredo, 2 detenidos, 12 armas con 2 Barrett, 92 cargadores y 2,256 cartuchos · Culiacán, 3 detenidos (un menor), 3 armas, 7 cargadores y 209 cartuchos · <b>acciones del 12-nov</b>: Nuevo Laredo, Villas de San Miguel, 2 largas, 58 cargadores y «más de 2,000» cartuchos (<code>POSIBLE DUPLICIDAD</code> con el del 11) · General Escobedo, NL, 4,220 cartuchos en una transmisión · Guadalupe y Calvo, Chih., 2 detenidos, 2 largas, 14 cargadores y 420 cartuchos · Mazatlán, El Roble, 2 detenidos, 2 largas, 8 cargadores y 210 cartuchos · Aquila y Carácuaro, Mich., laboratorio y precursores (afectación <code>CIFRA CONTRADICHA</code>: 2,540 o 2,638 mdp) · <b>medios</b>: Tenosique, Tab., 5 detenidos y 3 armas, un solo titular (Potosí Noticias 2026/11/10; <code>POSIBLE DUPLICIDAD</code> con los dos de Jonuta) · Morelia, cateos, 2 detenidos, armas contradichas · Chihuahua, SSPE, 2 cortas, 4 cargadores y 36 cartuchos, día no fijado.
   </p>
 '''
