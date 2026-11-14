@@ -3,7 +3,7 @@
 Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 
 ## Ventana
-- ABRE: **lunes 9-nov-2026 16:07 CDMX** (donde cerró ARGOS 149, hora del «Procede»). CIERRA: **hora real de arranque de la sesión de ARGOS 150** (o del «Procede») (el coordinador la escribe aquí al copiar la plantilla: ____).
+- ABRE: **lunes 9-nov-2026 16:07 CDMX** (donde cerró ARGOS 149, hora del «Procede»). CIERRA: **hora real de arranque de la sesión de ARGOS 150** (o del «Procede») (el coordinador la escribe aquí al copiar la plantilla: **sábado 14-nov-2026 10:09 CDMX**; duración 114 h 02 min).
 - Calendario: **lun 9-nov (desde 16:07) · mar 10 · mié 11 · jue 12 · vie 13 · sáb 14-nov** (≈114 h; cinco días sin edición). Comprueba siempre el día de la semana que dice la fuente contra el calendario.
 - **ARGOS 149 (ventana 6-nov 07:30 → 9-nov 16:07) publicó 21 hechos** (`ARG-149-001` a `-021`: Valtierrilla, San Francisco del Rincón, Valle de Santiago El Armadillo, Celaya Crespo, alcalde de Río Bravo, Mazatlán 6 cuerpos, Culiacán Ampliación 5 de Febrero, Irapuato Las Huertas, Chihuahua Cerro Grande, Hermosillo El Mariachi, Tijuana Rancho Las Flores, Juchitán restaurante de periodista, Cosoleacaque Los Prados, Zapopan enfrentamiento y detención de «R2», Atempan laboratorio, Buenavista explosivos para dron, Tecate fusiles, Acapulco cocaína, Sanalona, Escuinapa). Un hecho del 9-nov antes de las 16:07 que 149 NO publicó es de la ventana de 149: `-REC-` **solo si es 🔴**; si es 🟡 o 🟢, va a «VISTOS».
 - **Apertura a media tarde**: todo hecho del lunes 9 necesita HORA antes de proponerlo; publicación del 9 sin hora → `PUBLICADO EL DÍA DE APERTURA SIN HORA` con cláusula de retiro.
@@ -14,7 +14,7 @@ Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 ## Red y herramientas
 - Egreso bloqueado (curl gob.mx → 000). **NO uses WebFetch.** Solo WebSearch.
 - **TODA búsqueda con mode:"extended".** Nunca "standard".
-- Respeta tu tope de búsquedas; declara al final `Búsquedas utilizadas: n de N`. Si te sobran, invierte en hechos de alto impacto del martes 3 y del miércoles 4 antes de las 06:52 que ARGOS 146 no publicó (solo 🔴, candidatos `-REC-`) y del día de cierre.
+- Respeta tu tope de búsquedas; declara al final `Búsquedas utilizadas: n de N`. Si te sobran, invierte en hechos 🔴 del día de cierre (sáb 14 antes de las 10:09) y del lun 9 después de las 16:07.
 - Pon la cifra de peso ENTRE COMILLAS en la consulta cuando busques una cifra concreta ("tres muertos", "21 años").
 
 ## Barrido obligatorio por equipo (además de los encargos)
