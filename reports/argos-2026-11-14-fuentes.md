@@ -37,7 +37,7 @@ Coordinador: 12 de recall repartidas 2 por fecha (9 a 14) más «fosas», «bloq
 | `ARG-150-FE-004` | 149 | Rojos sin ruta retirados: Huaquechula (julio; Ángulo 7, Diario Cambio), Cañada Morelos (e-consulta 2026-06-25), Doctor Coss (MVS 2026/6/29) |
 | `ARG-150-FE-005` | 149 | Candidato de sentencia «Ramos Arizpe 13 años 4 meses» = General Cepeda, 19-oct (Red Metropolitana 2026/10/19; Miled 2026/10/19), republicado el 8-nov: se retira |
 
-Los códigos FE van solo aquí y al índice: `gen-movil.py` los rechaza en el cartelón.
+Los códigos FE van solo aquí y al índice: `gen-movil.py` los rechaza en el cartelón. **FE-002, -003 y -004 se apoyan en los informes de los equipos y no se reverificaron en `procedencia-cifras` R1: `HEREDADO — NO REVERIFICADO`.**
 
 ## 4. Boletín federal (triple consulta)
 
@@ -99,13 +99,13 @@ Recuento por tipo: un emisor por nota propia; ediciones estatales de medios naci
 
 ## 7. Procedencia: decisiones de clasificación
 
-1. **Ocotlán 🔴**: Defensa sitúa a su personal «atendiendo un reporte de vehículo robado» y agredido (RES); con una civil herida ajena al hecho, la agravante sube a 🔴 con independencia de quién inició. Dos fichas (agresión y detención).
+1. **Ocotlán 🔴**: Defensa sitúa a su personal «atendiendo un reporte de vehículo robado» (acción de la autoridad) y agredido (RES); el rojo lo fija **solo la agravante** de la civil herida ajena al hecho, con independencia de quién inició. Dos fichas (agresión y detención).
 2. **Silao 🟡**: la autoridad acude a una denuncia al 089 y es repelida (RES): confrontación derivada de una acción de la autoridad. Los 6 abatidos no mueven el color. Dos fichas.
 3. **Temascatío 🟡 con reserva**: «repelen ataque armado» por titular, «en recorrido de reconocimiento» solo por resumen: quién inició no determinado por titular → 🟡.
 4. **Morelia 🟡**: excomisario sin cargo vigente; la agravante de servidor público exige función actual.
 5. **Tuxpan 🔴 + 🟢**: dos muertos (la segunda víctima murió el 13, dentro de la ventana) y cuatro detenidos: dos fichas. Día del ataque contradicho (11 o 12).
 6. **Monterrey (REC-003) 🔴**: homicidio múltiple por tipo de evento, aunque sea riña con arma blanca sin vínculo criminal publicado; reserva escrita en la ficha.
-7. **San Juan del Río 🔴 con fuente única**: causa solo por resumen; se mantiene en rojo con ★★☆☆☆ y estatus pendiente.
+7. **San Juan del Río 🔴**: tras procedencia R1, 2 muertos por titular (Al Minuto y Expreso Querétaro 2026/11/10) y causa contradicha (riña o ataque): muerte violenta en ambas versiones → «muertos por agresión», 🔴 por víctimas múltiples; cláusula de retiro (día del hallazgo frente a las 16:07 del 9).
 8. **Armamento por resumen**: las cifras de boletín leídas solo en el resumen del buscador no se integran (n/d); se integran solo las que trae un titular: Benemérito 12 largas y 14 detenidos; Chacaltianguis 4 largas, 39 cargadores, 2 granadas, 1 lanzagranadas; Silao 13 armas (sin categoría); Temascatío 6 detenidos; Ocotlán 1 detenido.
 9. **Atotonilco el Alto**: quema de vehículos sin ruta con día y desmentido de narcobloqueo por titular: rojo sin ruta, no se ficha.
 10. **Puebla, bloqueos del 10-nov**: protesta de familiares de internos, sin quema de vehículos (Reto Diario 2026/11/10): ajeno.
