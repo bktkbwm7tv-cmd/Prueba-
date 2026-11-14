@@ -4,12 +4,12 @@ Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 
 ## Ventana
 - ABRE: **lunes 9-nov-2026 16:07 CDMX** (donde cerró ARGOS 149, hora del «Procede»). CIERRA: **hora real de arranque de la sesión de ARGOS 150** (o del «Procede») (el coordinador la escribe aquí al copiar la plantilla: ____).
-- Calendario: **lun 9-nov (desde 16:07) · mar 10-nov**. Comprueba siempre el día de la semana que dice la fuente contra el calendario.
+- Calendario: **lun 9-nov (desde 16:07) · mar 10 · mié 11 · jue 12 · vie 13 · sáb 14-nov** (≈114 h; cinco días sin edición). Comprueba siempre el día de la semana que dice la fuente contra el calendario.
 - **ARGOS 149 (ventana 6-nov 07:30 → 9-nov 16:07) publicó 21 hechos** (`ARG-149-001` a `-021`: Valtierrilla, San Francisco del Rincón, Valle de Santiago El Armadillo, Celaya Crespo, alcalde de Río Bravo, Mazatlán 6 cuerpos, Culiacán Ampliación 5 de Febrero, Irapuato Las Huertas, Chihuahua Cerro Grande, Hermosillo El Mariachi, Tijuana Rancho Las Flores, Juchitán restaurante de periodista, Cosoleacaque Los Prados, Zapopan enfrentamiento y detención de «R2», Atempan laboratorio, Buenavista explosivos para dron, Tecate fusiles, Acapulco cocaína, Sanalona, Escuinapa). Un hecho del 9-nov antes de las 16:07 que 149 NO publicó es de la ventana de 149: `-REC-` **solo si es 🔴**; si es 🟡 o 🟢, va a «VISTOS».
 - **Apertura a media tarde**: todo hecho del lunes 9 necesita HORA antes de proponerlo; publicación del 9 sin hora → `PUBLICADO EL DÍA DE APERTURA SIN HORA` con cláusula de retiro.
 - Nunca infieras la hora. «Esta tarde» en un resumen NO fecha un hecho.
 - Criterio de inclusión: entra con marca el hecho con **ruta fechada o titular con día**; ⚠️ **un rojo sin ruta fechada se reporta en sección aparte «ROJOS SIN RUTA», no como hecho del corte**.
-- Fecha en la ruta: «2026/11/09», «2026/11/10» (reparte tus 4 reservadas entre las dos).
+- Fecha en la ruta: «2026/11/09» a «2026/11/14»: tus 4 reservadas a los días con más hechos de tu región; prioriza 🔴.
 
 ## Red y herramientas
 - Egreso bloqueado (curl gob.mx → 000). **NO uses WebFetch.** Solo WebSearch.

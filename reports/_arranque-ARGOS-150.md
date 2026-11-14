@@ -16,7 +16,7 @@ Los comandos del mensaje de órdenes. **Estado esperado**: última edición `arg
 | Ventana | **abre 2026-11-09 16:07 CDMX** (cierre de 149, hora del «Procede») y cierra a la hora real de arranque (o del «Procede», si llega más de dos horas tarde) |
 | Serie | 21 h 48 (148) · **80 h 37 (149)** |
 | Ciclo | **B** (Noreste + Golfo), tras la prioridad sobre el ciclo |
-| Archivo | `argos-2026-11-10.html` (martes 10-nov) · `WINDOW_DAYS` = **2** (9 y 10; la plantilla de 149 trae 4) |
+| Archivo | `argos-2026-11-14.html` (sábado 14-nov) · `WINDOW_DAYS` = **6** (9 a 14; la plantilla de 149 trae 4) · ventana de ≈114 h tras cinco días sin edición; la orden fechada el 10-nov no se ejecutó |
 
 ## BLOQUE 2 — LECTURA OBLIGATORIA
 
@@ -43,6 +43,6 @@ Tope de 200 por turno: control 2 · coordinador 18 · ola 150 (6 × 25; **4 por 
 
 ## BLOQUE 5 — FORMA Y CONSTRUCCIÓN
 
-- Parta de `tools/datos-argos-149.py` (copia a `datos-argos-150.py`): cambie `NUM`, `FECHA`, `HORA`, `CONSULTA`, `DUR`, `HORAS`, `RET` (16:07 del 9), la ventana del panorama, las aserciones, el `<title>` que reemplaza (plantilla `reports/argos-2026-11-09.html`, «ARGOS 149 — … — 2026-11-09»), `WINDOW_DAYS` (4 → 2) y las listas de fichas por página.
+- Parta de `tools/datos-argos-149.py` (copia a `datos-argos-150.py`): cambie `NUM`, `FECHA`, `HORA`, `CONSULTA`, `DUR`, `HORAS`, `RET` (16:07 del 9), la ventana del panorama, las aserciones, el `<title>` que reemplaza (plantilla `reports/argos-2026-11-09.html`, «ARGOS 149 — … — 2026-11-09»), `WINDOW_DAYS` (4 → 6) y las listas de fichas por página.
 - Móvil: `python3 tools/gen-movil.py 150 <FECHA> 149 2026-11-09 <HORA>`. Texto: `python3 tools/gen-texto.py reports/argos-<FECHA>.html reports/argos-<FECHA>.txt`. Validador: `node tools/validar.js reports/argos-<FECHA>.html 2026-11-09 <FECHA>`.
 - Controles: dos rondas, veinte pases cada una; informes en `reports/argos-<FECHA>-equipos.md` y `-fuentes.md`; la ronda 2 en serie.
