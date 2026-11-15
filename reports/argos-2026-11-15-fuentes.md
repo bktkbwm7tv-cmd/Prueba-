@@ -9,7 +9,7 @@
 | Ventana | **sáb 14-nov 10:09 → dom 15-nov 10:24 CDMX** · duración **24 h 15 min** (cálculo con `date`) |
 | Calendario | sáb 14 (10:09–24:00, 13 h 51) · dom 15 (00:00–10:24, 10 h 24) |
 | Hora de arranque (Bloque 0) | 10:24 CDMX · «Procede» a las 10:46 (22 min): no se ajusta el cierre |
-| Consulta | última búsqueda del coordinador: 10:56 CDMX (se actualiza tras `procedencia-cifras` R2) |
+| Consulta | última búsqueda: 11:19 CDMX (cierre de `procedencia-cifras` R2) |
 | `WINDOW_DAYS` | 2 (la plantilla de 150 traía 6) |
 | Ciclo | **C** (Occidente + Sureste encabezan el triaje judicial), tras la prioridad sobre el ciclo |
 | Red | `curl https://www.gob.mx/fgr` → `000` (15-nov 10:24): egreso bloqueado; solo WebSearch |
@@ -100,11 +100,18 @@ Nota: los recuentos por tipo de cada ficha cuentan los emisores **distintos con 
 
 ## 8. Controles editoriales
 
-_Se completa tras las rondas R1 (paralelo) y R2 (serie)._
+| Control | Ronda | Veredicto | Correcciones aplicadas |
+|---|---|---|---|
+| `procedencia-cifras` | R1 (paralelo, 24 búsquedas) | CORREGIR | Jolalpan «cuatro muertos» por titular (Municipios Puebla; Diario Cambio): contradicción, se integran 2 · López Dóriga → Crónica Regional · Reforma retirada de -001 · Diario.mx → El Diario de Chihuahua 2026/nov/14 · calcinados 2 por titular (Quadratín) · -008 corroborado por tres notas sin día; disparos contra vivienda a vistos · GN y Policía Estatal en Nogales (resumen) · El Arenal: día y causa contradichos · Tepalcatepec, Silao, Tlalnepantla, Colima, Champotón, Monterrey: precisiones |
+| `editor-duplicidad` | R1 (paralelo) | CORREGIR | Tepehuacán de -REC- a ficha propia `-009` (criterio de frontera) · conclusión 4: «seis» → «siete» víctimas · Tuxpan fuera de la fe de erratas · deslindes de -006, -007, -008 · repeticiones del panorama (Otomí, Ciudad Victoria, balance de El Universal, Pueblo Nuevo) · seguimiento reducido a Zapopan con ARG-ID · tabla de sentencias reducida · portada sin cifras de ficha |
+| `editor-duplicidad` | R2 (serie) | CORREGIR | Cláusula de Tepehuacán reescrita · cláusulas sobrantes en -007/-008 retiradas · colores fuera de los deslindes · El Arenal: título sin causa y fecha contradicha · Tepalcatepec y Silao restituidos a sus titulares (los reprodujo Occidente) · Cajeme · Monterrey vuelve a «casi 26 años» · conclusiones con línea distinta de la portada |
+| `procedencia-cifras` | R2 (serie, 6 búsquedas) | CORREGIR | Crónica Regional pasa a regional (-002: N 1, R 7) · Aristegui añadida a -001 (N 4) · deslinde de -004 con la contradicción cliente/trabajador. **No aplicadas, con razón**: Golpe Político, Plumas Libres, Heraldo de México, Latinus («13 armas» en el *slug*) y Síntesis no aparecieron en R2 pero los reprodujeron con URL la ola (Golfo, Centro, Occidente) o R1; Fiscalía de Oaxaca como «Institucional 1 por titular de medio», mismo criterio que ARG-150-001 y -008 |
+
+Hallazgo de R2 pasado a pendientes: Noroeste, «ataque a balazos en zona turística de Mazatlán deja un muerto y una mujer herida» (sin fecha en la ruta): posible otro hecho o duplicidad con -004.
 
 ## 9. Presupuesto de búsqueda
 
-Control 2 + coordinador 18 + ola 150 (6 × 25) + `procedencia-cifras` R1 _n_ + R2 _n_ = _total_ (se completa al cierre).
+Control 2 + coordinador 18 + ola 150 (6 × 25) + `procedencia-cifras` R1 24 + R2 6 = **200**.
 
 ## 10. Hallazgos de método (no van al cartelón)
 

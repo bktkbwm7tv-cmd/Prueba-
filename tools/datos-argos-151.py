@@ -5,7 +5,7 @@ Ventana: 14-nov 10:09 → 15-nov 10:24 CDMX. Archivo: argos-2026-11-15.html."""
 import sys, re, json, html as H
 
 NUM, FECHA, HORA = "151", "2026-11-15", "10:24"
-CONSULTA = "2026-11-15, última búsqueda 10:56"
+CONSULTA = "2026-11-15, última búsqueda 11:19"
 DUR = "24 h 15 min"
 ESTR = {"★★★☆☆": "🟡 Medio", "★★☆☆☆": "🟠 Bajo", "★★★★☆": "🟢 Alto"}
 FLAG = {"rojo": ("alto", "ROJO"), "amarillo": ("medio", "AMARILLO"), "verde": ("bajo", "VERDE"), "rec": ("sindato", "RECUPERACIÓN")}
@@ -31,8 +31,8 @@ E = [
   ent="Veracruz", mun="Texhuacán (carretera Apoxteca–Aticpac)", dia="SÁB 14-NOV, POR RUTA",
   title="VERACRUZ · TEXHUACÁN — ASESINAN EN LA CARRETERA APOXTECA–ATICPAC A LA REGIDORA DEL AYUNTAMIENTO Y AL DIRIGENTE MUNICIPAL DEL PRI",
   hecho="Texhuacán · <code>CARRETERA ESTATAL APOXTECA–ATICPAC, SIERRA DE ZONGOLICA</code>, " + RES + " · sábado 14-NOV, por ruta (Informador 20261114: «Veracruz: asesinan a balazos a líder priísta y a regidora de Texhuacan»; Golpe Político 2026/11/14; El Independiente 2026/11/14: «ataque armado deja muertos a dirigente del PRI y a regidora en Veracruz») · ~14:20, " + RES + "; «(19:19 h)» en el titular de ADN Sureste es hora de la nota · " + FR + " · <b>2 muertos</b>, por titular: la <b>regidora del Ayuntamiento</b> y el <b>presidente del comité municipal del PRI</b> (🔴 víctima servidora pública; homicidio múltiple) · él, en el sitio; ella, horas después en hospital, " + RES + " · tercera ocupante herida, " + RES + ": no se integra · al menos 16 casquillos, " + RES + " (Plaza de Armas) · la FGE realizó diligencias, " + RES + ": no es declaración · " + NOD,
-  panel="<b>Regidora y dirigente municipal del PRI asesinados</b> en carretera", inst=SB, nac="El Universal · Excélsior · Infobae", conf="★★★☆☆",
-  campo="hora solo por resumen; ninguna fuente institucional", I=0, N=3, R=6, A=0,
+  panel="<b>Regidora y dirigente municipal del PRI asesinados</b> en carretera", inst=SB, nac="El Universal · Excélsior · Aristegui · Infobae", conf="★★★☆☆",
+  campo="hora solo por resumen; ninguna fuente institucional", I=0, N=4, R=5, A=0,
   fechadas=["Informador (20261114)", "El Independiente (2026/11/14)", "Plumas Libres (2026/11/14)", "Golpe Político (2026/11/14)", "Infobae (2026/11/15)"], estatus="Parcialmente corroborado", arm=None,
   desl="Texhuacán no figura en ninguna edición previa. Condena del PRI estatal y de MC: partidos, no autoridad. Versión distinta del dirigente nacional del PRI sobre la salud de la regidora, " + RES + ": superada por los titulares. Identidades: medios, no se reproducen."),
  dict(id="ARG-151-002", estado="MX-PUE", region="Centro", color="rojo", impacto="grande", fecha="2026-11-14", hora="tarde (solo por resumen)", mu=2, he=0, cu=0, hk=16,
@@ -40,8 +40,8 @@ E = [
   fecha_txt="sábado 14-nov, tarde, solo por resumen; publicación 15-nov, por ruta",
   title="PUEBLA · JOLALPAN — EMBOSCAN EN HUACHINANTLA A UN MANDO POLICIAL DE AXOCHIAPAN, MOR., Y A SU ESCOLTA: DOS POLICÍAS MUERTOS",
   hecho="Jolalpan · <code>HUACHINANTLA, CARRETERA AXOCHIAPAN–HUACHINANTLA</code>, " + RES + " · tarde del sábado 14-NOV, " + DSR + " · publicación 15-NOV, por ruta (Intolerancia Diario 2026/11/15: «matan a policías de Axochiapan, Morelos, durante emboscada en Jolalpan») · " + RET + " · <b>2 policías de Morelos muertos</b> —el responsable operativo de seguridad de Axochiapan y su escolta—, por titular (Diario de Morelos: «mando policiaco de Axochiapan y su escolta mueren en enfrentamiento armado en los límites de Morelos y Puebla»; El Universal Puebla: «matan a dos policías de Morelos tras emboscada en Jolalpan») (🔴 muerte de personal de seguridad) · perseguían una camioneta con reporte de robo, por titular (Crónica Regional: «dos policías de Morelos mueren al perseguir un vehículo robado hasta Puebla») · patrullas incendiadas, " + RES + " · «cuatro muertos», por titular (Municipios Puebla; Diario Cambio: «enfrentamiento armado entre policías y civiles deja cuatro muertos en Jolalpan»), frente a dos: <code>CIFRA CONTRADICHA — SE INTEGRAN 2, MÍNIMO COINCIDENTE; NO SE ARBITRA</code> · SSPC Morelos confirmó las muertes y SSP Puebla reforzó el operativo por aire y tierra, " + RES + " · " + NOD,
-  panel="<b>Emboscada a policías de Morelos: 2 muertos</b>, un mando y su escolta", inst=SB, nac="Milenio · Crónica Regional", conf="★★★☆☆",
-  campo="día y hora solo por resumen; cifra de muertos contradicha (2 o 4); declaraciones de SSPC Morelos y SSP Puebla solo por resumen", I=0, N=2, R=6, A=0,
+  panel="<b>Emboscada a policías de Morelos: 2 muertos</b>, un mando y su escolta", inst=SB, nac="Milenio", conf="★★★☆☆",
+  campo="día y hora solo por resumen; cifra de muertos contradicha (2 o 4); declaraciones de SSPC Morelos y SSP Puebla solo por resumen", I=0, N=1, R=7, A=0,
   fechadas=["Intolerancia Diario (2026/11/15)"], estatus="Parcialmente corroborado", arm=None,
   desl="Jolalpan, Huachinantla y Axochiapan no figuran en las ediciones previas. Atribución a «Los Michoacanos»: un solo medio (Periódico Central), <code>NO OFICIAL</code>. «Emboscada» o «enfrentamiento», según el medio. Identidades: medios, no se reproducen."),
  dict(id="ARG-151-003", estado="MX-CHP", region="Sureste", color="rojo", impacto="grande", fecha="2026-11-14", hora="mañana (solo por resumen)", mu=0, he=0, cu=4, hk=9,
@@ -70,7 +70,7 @@ E = [
   panel="Ataque en un bar: <b>1 muerto y 1 herido</b>", inst=SB, nac="—", conf="★★★☆☆",
   campo="día y hora solo por resumen; ninguna fuente institucional", I=0, N=0, R=3, A=0,
   fechadas=["Luz Noticias (2026-11-15)", "Línea Directa (2026-11-15)"], estatus="Parcialmente corroborado", arm=None,
-  desl="Zona Dorada y Camarón Sábalo no figuran en las ediciones previas. «Vigilante del bar … fallece y cliente resulta lesionado» (Sinaloahoy, madrugada del domingo): probable mismo hecho, no se suma."),
+  desl="Zona Dorada y Camarón Sábalo no figuran en las ediciones previas. «Vigilante del bar La Malinche fallece y cliente resulta lesionado en Mazatlán», por titular (Sinaloahoy; madrugada del domingo, " + RES + "): probable mismo hecho, no se suma; herido «cliente» o trabajador del lugar, según el medio."),
  dict(id="ARG-151-005", estado="MX-SIN", region="Noroeste", color="amarillo", impacto="mediano", fecha="2026-11-15", hora="noche del 14 o madrugada del 15 (solo por resumen)", mu=1, he=4, cu=0, hk=2,
   ent="Sinaloa", mun="Mazatlán (col. 12 de Mayo)", dia="14 O 15-NOV; PUB. 15-NOV, POR RUTA",
   fecha_txt="noche del 14 o madrugada del 15-nov, contradicho; publicación 15-nov, por ruta",
