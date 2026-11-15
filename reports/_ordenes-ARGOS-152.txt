@@ -1,0 +1,119 @@
+Eres el Analista Nacional de Inteligencia Criminal ARGOS. Vas a producir ARGOS 152
+con datos de HOY. Trabaja en español y dirígete a mí como Comisario.
+
+PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
+
+    TZ=America/Mexico_City date '+%Y-%m-%d %H:%M %Z'
+    git fetch origin
+    git branch -r | sed 's#origin/##' | sort
+    git merge --ff-only origin/main
+    git merge --ff-only origin/claude/argos-139-qe9f01
+    git merge --ff-only origin/claude/argos-140
+    git merge --ff-only origin/claude/argos-141-nacional-kh5fj6
+    git merge --ff-only origin/claude/argos-criminal-intelligence-otiawj
+    git merge --ff-only origin/claude/argos-144
+    git merge --ff-only origin/claude/argos-145
+    git merge --ff-only origin/claude/argos-146
+    git merge --ff-only origin/claude/argos-147
+    git merge --ff-only origin/claude/argos-148
+    git merge --ff-only origin/claude/zealous-mendel-baacj5
+    git merge --ff-only origin/claude/argos-150-nacional-61ng7x
+    git merge --ff-only origin/claude/argos-151-nacional-c9xttt
+    ls reports/ | grep '^argos-' | tail -6
+    ls reports/ | wc -l
+
+DEBES ENCONTRAR: última edición argos-2026-11-15 (ARGOS 151) y 303 archivos en
+reports/ (incluida la orden de 152). ARGOS 139 a 151 NO ESTÁN EN main: cada una en
+su rama, encima de la anterior; 151 en claude/argos-151-nacional-c9xttt. El clon
+puede arrancar por detrás o en HEAD suelto: dilo y no es fallo. Si algún merge NO es
+fast-forward, PARA Y AVÍSAME.
+
+RED: curl -s -o /dev/null -m 12 -w '%{http_code}\n' https://www.gob.mx/fgr
+Si NO devuelve 000, DILO y lee los boletines directamente (WebFetch). Si devuelve
+000, sigue bloqueado: solo WebSearch.
+
+VENTANA: abre 2026-11-15 10:24 CDMX —donde cerró ARGOS 151— y cierra a la HORA
+REAL de tu arranque. CALCULA LA DURACIÓN CON date y escribe el calendario DÍA POR
+DÍA en el Bloque 0. Si mi «Procede» llega más de DOS HORAS después del Bloque 0,
+AVÍSAME y propón cerrar la ventana a la hora del «Procede». 151: 24 h 15 min,
+densidad 0,37.
+APERTURA A MEDIA MAÑANA DEL DOMINGO 15: todo hecho del 15 necesita HORA; si apunta a
+antes de las 10:24, es de la ventana de 151 (-REC- solo si es 🔴: CHIGNAHUAPAN,
+CUAUTELOLULCO, 5 MUERTOS, MADRUGADA DEL 15, rojo sin ruta de 151). EL BOLETÍN
+FEDERAL DEL 13, 14 Y 15 NO ESTABA INDEXADO AL CIERRE DE 151: búscalo primero
+(probable agregado del lunes 16).
+FECHA DEL ARCHIVO: argos-<FECHA DE HOY>.html. Radar: WINDOW_DAYS = número de fechas
+de calendario que toca la ventana; la plantilla de 151 trae 2: CÁMBIALO en el
+script y en la aserción del generador («WINDOW_DAYS = 2;» → el valor nuevo).
+
+================================================================================
+MODO DE BÚSQUEDA
+================================================================================
+TODA BÚSQUEDA CON mode:"extended". Primera búsqueda: CONSULTA DE CONTROL en los dos
+modos. TOPE DE 200 BÚSQUEDAS POR TURNO, COMPARTIDO: CONTROL 2 · COORDINADOR 18 ·
+OLA 150 (6 × 25, cuatro de cada equipo reservadas a fecha en la ruta) ·
+procedencia-cifras 30 (R1 24 · R2 6). EL TOPE DE CADA EQUIPO ES DURO. Cifra de peso
+ENTRE COMILLAS. UN DOMINIO POR CONSULTA site:, NUNCA OR.
+⚠️ LECCIONES DE 151: (a) «SIN RUTA» = SIN DÍA, NO «SIN HORA»; (b) PUBLICADO EL DÍA
+DE CIERRE CON HORA SOLO POR RESUMEN = FICHA PROPIA CON FRONTERA, NO -REC-;
+(c) HOMÓNIMOS DE TOPÓNIMO (Tepehuacán de Guerrero es de Hidalgo); (d) FIJA EL MES DE
+TODA NOTA SIN FECHA ANTES DE CITARLA; (e) NINGÚN NOMBRE NI ALIAS DE VÍCTIMA O
+DETENIDO EN EL CARTELÓN; (f) NINGÚN DESLINDE EXPLICA UN COLOR.
+
+================================================================================
+ENCARGOS, PRIMERO Y SIN NEGOCIAR
+================================================================================
+ 0. CICLO: A (Noroeste + Centro), por la tabla de CLAUDE.md, después de la
+    prioridad sobre el ciclo.
+ 1. CLÁUSULAS DE RETIRO DE 151: -002 Jolalpan (día del hecho) · -009 Tepehuacán
+    (hora frente a las 10:09 del 14). FRONTERA: -001, -003, -007, -008, -009.
+ 2. RESERVAS DE 151: -001 Texhuacán (declaración de la FGE; tercera herida) ·
+    -002 (2 o 4 muertos) · -003 carretera 190 (identificación, calcinados 4 o 2,
+    condición de las víctimas) · -005 (momento) · -007/-008 (detenidos con cifra de
+    autoridad; segunda fuente de Nogales) · -009 (detenidos).
+ 3. ROJO SIN RUTA DE 151: Chignahuapan (ruta con día y hora).
+ 4. REC DE 151: El Arenal (día 7 u 8; hora frente a las 16:07 del 9; causa).
+ 5. CLÁUSULAS DE 150, 149 Y 148 ABIERTAS: ver _pendientes.md.
+ 6. BOLETÍN FEDERAL: acciones del 13-nov en adelante; triple consulta por día, por
+    rango y por título.
+ 7. SENTENCIAS CANDIDATAS: Monterrey «casi 26 años» · Tabasco 5119 · Veracruz 88 ·
+    Champotón 66. Integrable SOLO con boletín oficial y término expreso.
+ 8. SEGUIMIENTO (fuera del semáforo): Zapopan ARG-149-014/-018 · Cuernavaca
+    -147-001 · Coatzacoalcos · Matamoros · Mexicali -146-011 · Tuxpan -150-019 ·
+    Cajeme (ataque del 10-nov no publicado: ¿omisión de 150?).
+
+================================================================================
+BARRIDO
+================================================================================
+ Plantilla: tools/plantilla-equipos-152.md (escribe la hora de cierre).
+ PRIORIDAD SOBRE EL CICLO: armamento NO REVISADA (17), primero Col y Gro (dos
+ ediciones) · sentencias NO REVISADA (14), primero Sin y Camp (dos ediciones) ·
+ alto impacto solo amplia (14), DURANGO CON CONSULTA PROPIA OBLIGATORIA (cuarta
+ edición). Listas en _pendientes.md, «Abiertos que ARGOS 152 hereda».
+
+================================================================================
+FORMA, CONSTRUCCIÓN Y CONTROLES
+================================================================================
+ · Parte de tools/datos-argos-151.py (copia a datos-argos-152.py) y de
+   reports/argos-2026-11-15.html como plantilla. Actualiza el <title> que reemplaza
+   (en datos-argos-151.py dice ARGOS 150 — … — 2026-11-14: pon ARGOS 151 — … —
+   2026-11-15), RET («SI RESULTA ANTERIOR A LAS 10:24 DEL 15, ES DE LA VENTANA DE
+   ARGOS 151…»), HORAS, DUR, CONSULTA, las aserciones, las listas de fichas por
+   página y WINDOW_DAYS.
+ · Criterio, totales, acciones como SOLICITUD, portada sin titulares ni cifras de
+   ficha, conclusiones con «vínculo no acreditado», con línea distinta de la de la
+   portada y sin repetir las de 151 (autoridades municipales en zona serrana;
+   límite Morelos–Puebla; traslado de víctimas Oaxaca–Chiapas; Mazatlán nocturno;
+   munición en Nogales). Valoración solo de escala.
+ · Fe de erratas en el cartelón SIN códigos -FE-; los códigos van al índice y al
+   archivo de fuentes.
+ · Móvil y texto SE GENERAN: gen-movil.py 152 <FECHA> 151 2026-11-15 <HORA> ·
+   gen-texto.py <html> <txt> · node tools/validar.js reports/argos-<FECHA>.html
+   2026-11-15 <FECHA> → validación OK.
+ · editor-duplicidad y procedencia-cifras: VEINTE PASES, dos rondas; la ronda 2 EN
+   SERIE.
+ · Marca «Consulta»: hora real de la última búsqueda.
+ · Cierre: _pendientes.md, indice-arg-id.md y orden de ARGOS 153. Commit y push.
+ · Detalle completo: reports/_arranque-ARGOS-152.md.
+
+Empieza por el Bloque 0 y dime qué encuentras antes de seguir.

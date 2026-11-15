@@ -8,7 +8,7 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 148 (corte 2026-11-06; ventana 5-nov 09:42 → 6-nov 07:30, 21 h 48 min).
+**Última actualización**: ARGOS 151 (corte 2026-11-15; ventana 14-nov 10:09 → 15-nov 10:24, 24 h 15 min).
 
 ---
 
@@ -30,6 +30,8 @@ sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le
 **ARGOS 143 publicado el 28-oct** (ventana 27-oct 08:45 → 28-oct 08:28, 23 h 43 min; rama `claude/argos-criminal-intelligence-otiawj`, encima de 142). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-144.md`** (y `_ordenes-ARGOS-144.txt`).
 
 **ARGOS 144 publicado el 29-oct** (ventana 28-oct 08:28 → 29-oct 11:36, 27 h 08 min; rama `claude/argos-144`, encima de `claude/argos-criminal-intelligence-otiawj`; **ninguna de 139 a 144 está en `main`**). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-145.md`** (y `_ordenes-ARGOS-145.txt`).
+
+**ARGOS 151 publicado el 15-nov** (ventana 14-nov 10:09 → 15-nov 10:24, 24 h 15 min; rama `claude/argos-151-nacional-c9xttt`, encima de `claude/argos-150-nacional-61ng7x`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-152.md`** (y `_ordenes-ARGOS-152.txt`).
 
 **ARGOS 148 publicado el 6-nov** (ventana 5-nov 09:42 → 6-nov 07:30, 21 h 48 min; rama `claude/argos-148`, encima de 147). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-149.md`** (y `_ordenes-ARGOS-149.txt`).
 
@@ -2891,3 +2893,41 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 4. **Centro excedió el tope (26 de 25)**: R2 de procedencia bajó a 5. Presupuesto: 2 + 18 + 151 + 24 + 5 = **200**.
 5. **Dominio nuevo**: `sspe.chihuahua.gob.mx` (SSPE de Chihuahua).
 6. **Rama**: 150 vive en `claude/argos-150-nacional-61ng7x` (encima de `claude/zealous-mendel-baacj5`).
+
+## ARGOS 151 — lo que cierra esta edición
+
+| Cerrado | Cómo |
+|---|---|
+| **Frontera `-150-017` Tijuana** | Hora no fijada: se mantiene en 150 con su marca (cerrado como encargo; la marca es permanente) |
+| **REC de 150** | Tecate: la nota de Uniradio era del 4-jul (`ARG-151-FE-006`) · Cacahuatepec: sin detenido (`FE-007`) |
+| **Reservas de 150** | `-002` Tepalcatepec: 2 heridos (`FE-002`) · `-003` Ocotlán: Defensa por titular (`FE-003`) · `-020` Silao: 13 armas, segundo titular (`FE-004`) · `-016`: segunda nota del herido (`FE-005`) |
+| **Rojos sin ruta de 150** | El Arenal → `ARG-151-REC-001` (149) · Viesca y Reynosa Puerta Sur: retirados (tercera edición) · Colima: junio de 2025 · Atotonilco el Alto: 🟡 visto (`FE-008`) |
+| **Sentencias NO REVISADA de 150** | 8 de 10 revisadas (quedan Sin y Camp) |
+| **Armamento NO REVISADA de 150** | 11 de 13 revisadas (quedan Col y Gro) |
+
+## Abiertos que ARGOS 152 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| **Cláusulas de retiro de 151 (2)** | `-002` Jolalpan: día del hecho (ruta del 14 o declaración con hora) · `-009` Tepehuacán: hora (si una fuente fechada fija ~02:00 del 14, pasa a la ventana de 150 y se retira de 151) |
+| **Frontera de ventana de 151 (5)** | `-001` Texhuacán, `-003` carretera 190, `-007` Nogales, `-008` Mazatlán, `-009` Tepehuacán: hora frente a las 10:09 del 14 |
+| **Reservas de 151** | `-001`: declaración de la FGE Veracruz; tercera ocupante herida · `-002`: 2 o 4 muertos; atribución · `-003`: identificación (FGEO/FGE Chiapas), calcinados 4 o 2, condición de las víctimas (¿policías auxiliares?) · `-005`: momento (14 noche o 15 madrugada) · `-007`/`-008`: detenidos con cifra de autoridad; segunda fuente de Nogales · `-009`: detenidos (3 identificados por la PGJEH) |
+| **Rojo sin ruta de 151** | **Chignahuapan, Cuautelolulco**: 5 muertos, madrugada del 15 (MTP Noticias; El Quinto Medio 2026/11). Si se fija ruta con día 15 y hora anterior a las 10:24, es `-REC-` de 151; si posterior, hecho de 152 |
+| **REC de 151** | `REC-001` El Arenal: día (7 u 8) y hora del hallazgo frente a las 16:07 del 9; causa (bala o cráneo) |
+| **Cláusulas abiertas de 150** | `-011` San Juan del Río (día del hallazgo frente a las 16:07 del 9) · `-004` Tuxpan (día 11 o 12) · `-005` Juchitán (día) · `-006` San José del Rincón (día y lugar) · `-012` Silao (día 12 o 13); GN muerto «días antes»: sin nota propia · `-013` Temascatío (quién inició) · `-010` Las Víboras (cantidad) |
+| **Cláusulas de 149 y 148** | `-149-015` Atempan · `-016` Buenavista · `-020`/`-021` (día dentro del agregado; Sanalona: 1,260 cartuchos por titular, Meganoticias, validar contra `ARG-149-ARM-003`) · `-013` Cosoleacaque · `-019` Acapulco · `-005` Río Bravo · `-006` Mazatlán (superficie o fosa) · `-014` Zapopan · `-148-002` hora · `-148-007` día · `-148-009` día |
+| **Boletín federal** | Acciones del 13, 14 y 15-nov: `SIN RESULTADO INDEXADO` al cierre de 151 (fin de semana: probable agregado el lunes 16). Triple consulta; las del 14 desde las 10:09 y del 15 hasta las 10:24 son de 151; cifras solo con titular de medio |
+| **Sentencias candidatas** | Monterrey «casi 26 años» (MVS 2026/11/13; ¿pena compuesta?) · Tabasco 5119 (listado del 9-nov; posible homónimo) · Veracruz 88 años · Champotón 66 años (PorEsto 2026/11/6): todos de ventanas anteriores; integrables solo con boletín oficial |
+| **Seguimientos** | Zapopan (`ARG-149-014`/`-018`): 15 liberados, 5 imputados · Cuernavaca (`ARG-147-001`): detenido relacionado con el homicidio del regidor (boletín del 11-nov, resumen) · Coatzacoalcos «El Panda»: siguiente audiencia · Matamoros (`ARG-144-008`): sin detenidos · Mexicali (`ARG-146-011`) · Tuxpan (`ARG-150-019`): situación jurídica · Cajeme: detenciones del ataque del 10-nov (no publicado: ¿omisión de 150?) |
+| **Cobertura con prioridad sobre el ciclo en 152** | **Armamento `NO REVISADA` (17)**, primero las de dos ediciones: **Col, Gro**; luego BC, BCS, Son, Chih · SLP · Jal, Gto, Nay, Ags · Edomex, Hgo, Mor, Tlax, Qro · Oax. **Sentencias `NO REVISADA` (14)**, primero **Sin, Camp** (dos ediciones; Camp sin dominio confirmado); luego BC, Son, Chih · Tamps, Coah, Zac, SLP · Mich, Ags · Mor, Hgo, Qro. **Alto impacto solo amplia (14)**: **Dgo (cuarta edición)**, BC, Son, Chih · NL, Zac, SLP · CDMX, Edomex, Tlax, Qro · Chis, Gro, QRoo. Después, **CICLO A** (Noroeste + Centro: 152 = A) |
+
+## Deuda de método (ARGOS 151)
+
+1. **Criterio de frontera uniforme**: un hecho publicado el día de cierre de la edición anterior con hora solo por resumen se ficha en la edición que lo ve, con FRONTERA (Tepehuacán pasó de -REC- a ficha propia en R1). La hora del resumen nunca decide sola la ventana.
+2. **«Rojo sin ruta» mal usado por un equipo**: Golfo entregó Texhuacán, con tres rutas del 14, como «sin ruta» por falta de hora. Precisar en la plantilla: «sin ruta» = sin día por ruta o titular.
+3. **Homónimo de topónimo**: «Tepehuacán de Guerrero» (Hgo.) salió en búsquedas de Guerrero; tres equipos lo pasaron como ajeno.
+4. **Fuente de una REC sin mes fijado** (Tecate, Uniradio, julio): fijar el mes de toda nota sin fecha antes de citarla.
+5. **Colores en deslindes**: editor-duplicidad R2 retiró explicaciones de color de tres fichas; van al archivo de fuentes.
+6. **Detenidos en aseguramiento**: regla de cifra de autoridad aplicada (Nogales 3, Mazatlán 1 → n/d); 150 había integrado detenidos por titular (Ocotlán). Unificar en 152.
+7. **Presupuesto de 151**: control 2 + coordinador 18 + ola 150 + `procedencia-cifras` 24 + 6 = **200**.
+8. **Rama**: 151 vive en `claude/argos-151-nacional-c9xttt` (encima de `claude/argos-150-nacional-61ng7x`).

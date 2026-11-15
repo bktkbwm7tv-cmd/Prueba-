@@ -33,8 +33,8 @@ Resúmenes del coordinador sobre los informes íntegros de cada equipo (ola de 6
 - 150-001 Zitácuaro: Quadratín Bajío «Emboscada deja 2 guardias civiles muertos y uno herido en Michoacán» (sin fecha); Contramuro 13112026 «hay una mujer herida»; bloqueo de civiles 14-nov (Seuno 2026/11/14): protesta, desarrollo.
 - 150-002 Tepalcatepec: 2 heridos por titulares (La Jornada 2026/11/11; Síntesis 2026/11/12); «tres» solo Posta.
 - Atotonilco el Alto: Diario Puntual 2026/11/13; UnoTV y Zócalo titulares sin fecha; 2 camiones incendiados (resumen) → coordinador: 🟡 bloqueo aislado, ventana 150, no REC.
-- El Arenal, Jal.: Crónica 2026/11/09 «Investigan asesinato de pareja en El Arenal; estaban desaparecidos»; Milenio «Localizan sin vida a pareja desaparecida en El Arenal, Jalisco» → ARG-151-REC-002 (ventana 149).
-- Colima «3 muertos y 15 detenidos» = junio de 2025 (Infobae 2025/06/22) → retirar.
+- El Arenal, Jal.: Crónica 2026/11/09 «Investigan asesinato de pareja en El Arenal; estaban desaparecidos»; Milenio «Localizan sin vida a pareja desaparecida en El Arenal, Jalisco» → ARG-151-REC-001 (ventana 149).
+- Colima «3 muertos y 15 detenidos» = junio de 2025 (Infobae 2025/06/22; El Financiero 2025/06/23, reproducido en procedencia R1) → retirar.
 - 148-007 Morelia: día sin fijar; 3 detenidos y 119 cartuchos por titular.
 - Zapopan R2: N+ «Liberan a 15 de los 20 Detenidos…» y «Imputan a 5 de los 20…».
 - Vistos: Apatzingán motociclista (RED Michoacán 2026/11/14) · El Salto birria · Colima, Marina captura a jefe de célula (Infobae 2026/11/14; detención 13) · Pénjamo policía (probable 26-sep, descartado).

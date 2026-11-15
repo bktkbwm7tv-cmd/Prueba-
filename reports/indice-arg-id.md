@@ -1197,3 +1197,23 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-150-FE-003` | 150 | 2026-11-14 | ARG-150-FE-003 — precisión a ARG-149-010 y -011: dejan de ser fuente única; ★★★☆☆ (HEREDADO — NO REVERIFICADO) |
 | `ARG-150-FE-004` | 150 | 2026-11-14 | ARG-150-FE-004 — rojos sin ruta de 149 retirados: Huaquechula (julio), Cañada Morelos (25-jun), Doctor Coss (jun–jul) (HEREDADO — NO REVERIFICADO) |
 | `ARG-150-FE-005` | 150 | 2026-11-14 | ARG-150-FE-005 — candidato de sentencia «Ramos Arizpe» de 149 = General Cepeda, 19-oct, reciclado: retirado |
+| `ARG-151-001` | 151 | 2026-11-14 | ARG-151-001 — Texhuacán (carretera Apoxteca–Aticpac), Veracruz: Regidora y dirigente municipal del PRI asesinados en carretera; 🔴; ★★★☆☆; FRONTERA DE VENTANA |
+| `ARG-151-002` | 151 | 2026-11-14 | ARG-151-002 — Jolalpan (Huachinantla), Puebla: Emboscada a policías de Morelos: 2 muertos (4 según dos medios, contradicho); 🔴; ★★★☆☆; cláusula de retiro (día solo por resumen) |
+| `ARG-151-003` | 151 | 2026-11-14 | ARG-151-003 — Carretera federal 190 rumbo a Tonalá (límites con Oaxaca), Chiapas: 4 cuerpos junto a una camioneta quemada; serían los desaparecidos de Chahuites; 🔴; ★★★☆☆; FRONTERA DE VENTANA |
+| `ARG-151-004` | 151 | 2026-11-14 | ARG-151-004 — Mazatlán (Zona Dorada, av. Camarón Sábalo), Sinaloa: Ataque en un bar: 1 muerto y 1 herido; 🟡; ★★★☆☆ |
+| `ARG-151-005` | 151 | 2026-11-15 | ARG-151-005 — Mazatlán (col. 12 de Mayo), Sinaloa: Balacera en una reunión: 1 muerto y 4 heridos; 🟡; ★★★☆☆ |
+| `ARG-151-006` | 151 | 2026-11-15 | ARG-151-006 — Culiacán (col. Esthela Ortiz de Domínguez), Sinaloa: Hombre muerto tras ataque a balazos; 🟡; ★★★☆☆ |
+| `ARG-151-007` | 151 | 2026-11-14 | ARG-151-007 — Nogales, Sonora: 1,229 cartuchos asegurados por el Ejército; 3 detenidos solo por titular; 🟢; ★★☆☆☆; FRONTERA DE VENTANA |
+| `ARG-151-008` | 151 | 2026-11-14 | ARG-151-008 — Mazatlán, Sinaloa: 2 fusiles asegurados tras una persecución del Ejército; 1 detenido solo por titular; 🟢; ★★☆☆☆; FRONTERA DE VENTANA |
+| `ARG-151-009` | 151 | 2026-11-14 | ARG-151-009 — Tepehuacán de Guerrero (Acoxcatlán), Hidalgo: Ataque a la vivienda del alcalde: 2 policías municipales muertos; 🔴; ★★★☆☆; FRONTERA DE VENTANA y cláusula de retiro (~02:00 solo por resumen) |
+| `ARG-151-REC-001` | 151 | 2026-11-08 | ARG-151-REC-001 — El Arenal (ejido Huaxla), Jalisco: Pareja desaparecida localizada sin vida: 2 muertos; recuperación de la ventana de ARGOS 149, 🔴 en su ventana, fuera de totales; ★★★☆☆ |
+| `ARG-151-ARM-001` | 151 | 2026-11-14 | ARG-151-ARM-001 — Nogales, Sonora: 1,229 cartuchos; detenidos n/d; ficha ARG-151-007; Bajo |
+| `ARG-151-ARM-002` | 151 | 2026-11-14 | ARG-151-ARM-002 — Mazatlán, Sinaloa: 2 largas; detenidos n/d; ficha ARG-151-008; Bajo |
+| `ARG-151-FE-001` | 151 | 2026-11-15 | ARG-151-FE-001 — un rojo de la ventana de 149 recuperado (ARG-151-REC-001): semáforo corregido de 149, 11 🔴, 7 🟡, 7 🟢 |
+| `ARG-151-FE-002` | 151 | 2026-11-15 | ARG-151-FE-002 — precisión a ARG-150-002: heridos fijados en 2 (La Jornada 2026/11/11; Síntesis 2026/11/12); sin efecto en totales |
+| `ARG-151-FE-003` | 151 | 2026-11-15 | ARG-151-FE-003 — precisión a ARG-150-003: versión de Defensa por titular de medio (Infobae 2026/11/13) |
+| `ARG-151-FE-004` | 151 | 2026-11-15 | ARG-151-FE-004 — precisión a ARG-150-020: «13 armas», segundo titular fechado (Latinus 2026/11/13) |
+| `ARG-151-FE-005` | 151 | 2026-11-15 | ARG-151-FE-005 — precisión a ARG-150-016: herido con segunda nota (La Jornada Estado de México, solo por resumen) |
+| `ARG-151-FE-006` | 151 | 2026-11-15 | ARG-151-FE-006 — fe de erratas a ARG-150-REC-001: la nota de Uniradio sobre 4 detenidos en una taquería de Tecate es del ataque del 4-jul-2026; se retira |
+| `ARG-151-FE-007` | 151 | 2026-11-15 | ARG-151-FE-007 — fe de erratas a ARG-150-REC-002: ningún detenido publicado |
+| `ARG-151-FE-008` | 151 | 2026-11-15 | ARG-151-FE-008 — rojos sin ruta de 150 retirados: Viesca, Reynosa Puerta Sur (tercera edición), Colima (junio de 2025), Atotonilco el Alto (🟡, visto, ventana de 150) |
