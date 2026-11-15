@@ -16,7 +16,7 @@ Los comandos del mensaje de órdenes. **Estado esperado**: última edición `arg
 | Ventana | **abre 2026-11-14 10:09 CDMX** (cierre de 150) y cierra a la hora real de arranque (o del «Procede», si llega más de dos horas tarde) |
 | Serie | 80 h 37 (149) · **114 h 02 (150)** |
 | Ciclo | **C** (Occidente + Sureste), tras la prioridad sobre el ciclo |
-| Archivo | `argos-<FECHA>.html` · `WINDOW_DAYS` = fechas de calendario de la ventana (la plantilla de 150 trae 6) |
+| Archivo | `argos-2026-11-15.html` (domingo 15-nov) · `WINDOW_DAYS` = **2** (14 y 15; la plantilla de 150 trae 6) |
 
 ## BLOQUE 2 — LECTURA OBLIGATORIA
 
