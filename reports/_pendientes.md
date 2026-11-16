@@ -8,7 +8,7 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 151 (corte 2026-11-15; ventana 14-nov 10:09 → 15-nov 10:24, 24 h 15 min).
+**Última actualización**: ARGOS 152 (corte 2026-11-16; ventana 15-nov 10:24 → 16-nov 10:30, 24 h 06 min).
 
 ---
 
@@ -32,6 +32,8 @@ sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le
 **ARGOS 144 publicado el 29-oct** (ventana 28-oct 08:28 → 29-oct 11:36, 27 h 08 min; rama `claude/argos-144`, encima de `claude/argos-criminal-intelligence-otiawj`; **ninguna de 139 a 144 está en `main`**). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-145.md`** (y `_ordenes-ARGOS-145.txt`).
 
 **ARGOS 151 publicado el 15-nov** (ventana 14-nov 10:09 → 15-nov 10:24, 24 h 15 min; rama `claude/argos-151-nacional-c9xttt`, encima de `claude/argos-150-nacional-61ng7x`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-152.md`** (y `_ordenes-ARGOS-152.txt`).
+
+**ARGOS 152 publicado el 16-nov** (ventana 15-nov 10:24 → 16-nov 10:30, 24 h 06 min; rama `claude/argos-152-nacional-reqwch`, encima de `claude/argos-151-nacional-c9xttt`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-153.md`** (y `_ordenes-ARGOS-153.txt`).
 
 **ARGOS 148 publicado el 6-nov** (ventana 5-nov 09:42 → 6-nov 07:30, 21 h 48 min; rama `claude/argos-148`, encima de 147). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-149.md`** (y `_ordenes-ARGOS-149.txt`).
 
@@ -2932,3 +2934,44 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 6. **Detenidos en aseguramiento**: regla de cifra de autoridad aplicada (Nogales 3, Mazatlán 1 → n/d); 150 había integrado detenidos por titular (Ocotlán). Unificar en 152.
 7. **Presupuesto de 151**: control 2 + coordinador 18 + ola 150 + `procedencia-cifras` 24 + 6 = **200**.
 8. **Rama**: 151 vive en `claude/argos-151-nacional-c9xttt` (encima de `claude/argos-150-nacional-61ng7x`).
+
+## ARGOS 152 — lo que cierra esta edición
+
+| Cerrado | Cómo |
+|---|---|
+| **Rojo sin ruta de 151: Chignahuapan** | Seis rutas del 15 y «madrugada» por titular → `ARG-152-REC-001` (ventana de 151) |
+| **Posible duplicidad de 151 `-004`** | La nota de Noroeste «zona turística… un muerto y una mujer herida» (CM592554) es antigua: descartada |
+| **Reservas de 151 `-003`** | «Empresario, empleada y escoltas», por titular (Proceso 2026/11/15; `FE-003`); identificación sigue pendiente |
+| **Sentencias de Sinaloa** | `fiscaliasinaloa.mx` revisada (SRIV): sale de NO REVISADA |
+| **Armamento de Colima y Guerrero** | `fgecolima.mx` y `fiscaliaguerrero.gob.mx` revisados (SRIV) |
+| **Durango, consulta propia de alto impacto** | Hecha por Noroeste (dos búsquedas, sin hechos de la ventana) |
+| **Seguimiento Monterrey `-150-REC-003`** | La vinculación por secuestro agravado (MVS 2026/11/13) NO se ata al ARG-ID (caso homónimo posible): retirado |
+
+## Abiertos que ARGOS 153 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| **Cláusulas de retiro de 152 (4)** | `-002` Tecate (~01:00 del 15) · `-003` Gaviotas Sur (noche del 14 o madrugada del 15) · `-004` Lachigalla (~07:00) · `-005` Pueblo Nuevo (~00:40): hora por titular o declaración con hora; si es anterior a las 10:24 del 15, pasan a 151 (fe de erratas) |
+| **Frontera de 152 (8)** | `-002` a `-009`: hora frente a las 10:24 del 15 |
+| **Reservas de 152** | `-001` Galeana: heridos 2 o 3, declaración de la FGJNL, segundo enfrentamiento y cateo con armas (ABC) · `-002` Tecate: asesinados o no localizados; comunicado FGE BC · `-003`: cartulina (peritaje), Buenavista 1a. sección (día, segunda fuente) · `-006` Morelia: mecánica · `-007` Anapra: 1 o 2 muertos · `-009` Edomex: día de los cateos (¿madrugada del 13?), inventario con titular, cifra de autoridad de detenidos |
+| **REC de 152** | `REC-001` Chignahuapan: segunda fuente de hora · `REC-002` Tijuana La Postal: día por ruta o titular; Otay (Zeta) ¿mismo hecho? |
+| **Visto con posible ascenso** | «El Mike», Atotonilco el Alto, 14-nov: hora y quién inició por titular → `-REC-` 🔴 de 151 (o 150) |
+| **Posible omisión de 150** | Cajeme: ataque contra una familia con una niña de seis años muerta (día sin fijar); «suman 5 detenidos» (Heraldo 2026/11/13); disparos contra policías al huir (Fiscalía de Sonora, resumen) |
+| **Cláusulas de 151** | `-002` Jolalpan (día; 2/3/4 muertos) · `-009` Tepehuacán (hora ~02:00 del 14; 3 identificados, 0 detenidos) · frontera `-001`, `-003`, `-007`, `-008`, `-009` |
+| **Reservas de 151** | `-001` Texhuacán: detenidos; tercera ocupante · `-003`: identificación pericial; calcinados 4 o 2 · `-005`: momento · `-007`/`-008`: detenidos con cifra de autoridad; Nogales sin segunda fuente |
+| **Cláusulas de 150, 149 y 148** | Sin cambio: `-150-011` SJR · `-150-004` Tuxpan · `-150-005` Juchitán · `-150-006` · `-150-012` · `-150-013` · `-150-010` · `-149-015` · `-149-016` · `-149-020/-021` · `-149-013` · `-149-019` · `-149-005` · `-149-006` · `-149-014` · `-148-002` · `-148-007` · `-148-009` |
+| **Boletín federal** | Acciones del 13, 14, 15 y 16-nov: `SIN RESULTADO INDEXADO` al cierre de 152 (segundo día hábil sin agregado del fin de semana). Triple consulta; reparto por ventanas en la orden de 153 |
+| **Sentencias candidatas** | Monterrey, col. Bella Vista, 25 a 10 m (pena compuesta; `fiscalianl.gob.mx` sin boletines indexados) · Tabasco 5119 (URL individual) · Veracruz 88 · Champotón 66 (Campeche: **cuarta edición** sin dominio de fiscalía) |
+| **Seguimientos** | Zapopan: vinculación de 5 escoltas (15-nov) · Cuernavaca `-147-001`: audiencia 17-nov · Tuxpan `-150-019` · Coatzacoalcos «El Panda» · Matamoros `-144-008` · Mexicali `-146-011` (no consultado en 152) · muerte bajo custodia de un interno de alto perfil (Guadalajara, 15-nov): solo contexto |
+| **Cobertura con prioridad sobre el ciclo en 153** | **Armamento `NO REVISADA` (21)**, primero las seis del Noroeste (BC, BCS, Son, Chih, Sin, Dgo); luego NL, Tamps, Coah, Zac · Mich, Ags · CDMX, Edomex, Pue, Tlax, Hgo, Qro · Ver, Tab · Yuc. **Sentencias `NO REVISADA` (10)**, primero **BCS** y **Camp**; luego Jal, Gto, Col, Nay · Oax, Chis, Gro, QRoo. **Alto impacto solo amplia (9)**: Chih, BCS · Coah · Col, Nay, Ags · CDMX · Camp, Yuc. Después, **CICLO B** (Noreste + Golfo: 153 = B) |
+
+## Deuda de método (ARGOS 152)
+
+1. **Citas entrecomilladas inexistentes**: R1 halló cuatro (El Universal en Gaviotas, Quadratín Tlaxcala, un medio-persona en Tecate, E-consulta con texto de otro medio) y R2 dos más no reproducibles (La Silla Rota y El Heraldo de México en Chignahuapan). Exigir a los equipos el titular literal y la URL de cada cita; el coordinador no compone titulares.
+2. **Armamento por dominio en retroceso**: 11 de 32 (151: 15). Noroeste y Golfo no hicieron ninguna consulta `site:` de armamento.
+3. **Domingo como día de cierre**: ocho de nueve hechos con FRONTERA y cuatro rojos con cláusula de retiro (6 de 12 muertos). La serie depende del resumen del buscador para la hora.
+4. **Ninguna fiscalía con comunicado indexado** sobre los hechos del corte: todas las fichas «SIN BOLETÍN».
+5. **Hora de «Consulta»**: el generador traía una hora provisional posterior a la real; se fijó en la última búsqueda (10:58). Escribirla solo al cierre de R2.
+6. **Presupuesto de 152**: control 2 + coordinador 18 + ola 148 + `procedencia-cifras` 24 + 6 = **198**.
+7. **Rama**: 152 vive en `claude/argos-152-nacional-reqwch` (encima de `claude/argos-151-nacional-c9xttt`).
+

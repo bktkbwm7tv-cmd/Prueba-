@@ -5,7 +5,7 @@ Ventana: 15-nov 10:24 → 16-nov 10:30 CDMX. Archivo: argos-2026-11-16.html."""
 import sys, re, json, html as H
 
 NUM, FECHA, HORA = "152", "2026-11-16", "10:30"
-CONSULTA = "2026-11-16, última búsqueda 11:30"
+CONSULTA = "2026-11-16, última búsqueda 10:58"
 DUR = "24 h 06 min"
 ESTR = {"★★★☆☆": "🟡 Medio", "★★☆☆☆": "🟠 Bajo", "★★★★☆": "🟢 Alto"}
 FLAG = {"rojo": ("alto", "ROJO"), "amarillo": ("medio", "AMARILLO"), "verde": ("bajo", "VERDE"), "rec": ("sindato", "RECUPERACIÓN")}
@@ -68,7 +68,7 @@ E = [
   ent="Sinaloa", mun="Mazatlán (col. Pueblo Nuevo)", dia="DOM 15-NOV, POR RUTA",
   fecha_txt="domingo 15-nov, por ruta; ~00:40, solo por resumen",
   title="SINALOA · MAZATLÁN — ATAQUE ARMADO EN UNA FIESTA EN LA COLONIA PUEBLO NUEVO: DOS MUERTOS Y TRES MÚSICOS HERIDOS",
-  hecho="Mazatlán · <code>COL. PUEBLO NUEVO, CALLE ESTADO DE OCCIDENTE, FIESTA EN UNA VIVIENDA</code>, " + RES + " · domingo 15-NOV, por ruta (Informador 20261115: «Sinaloa: ataque armado en Mazatlán deja tres músicos heridos durante una fiesta»; Luz Noticias 2026-11-15: «aumenta a dos el saldo mortal de balacera durante fiesta en la colonia Pueblo Nuevo de Mazatlán»; Línea Directa 2026-11-15: «sube a dos la cifra de asesinados en ataque durante fiesta en Mazatlán; hay tres músicos heridos») · ~00:40, " + RES + " · " + FR + " · " + RET + " · <b>2 muertos y 3 heridos</b>, por titular; el segundo muerto, en el hospital (🔴 homicidio múltiple) · <code>SALDO ACTUALIZADO: 1 MUERTO EN EL PRIMER PARTE, POR TITULAR (LUZ NOTICIAS; NOROESTE; LOS NOTICIERISTAS), 2 EN LA ACTUALIZACIÓN (LUZ NOTICIAS; LÍNEA DIRECTA); EL TITULAR DE INFORMADOR SOLO TRAE LOS HERIDOS</code> · heridos, integrantes de la banda que amenizaba, por titular · peritos de la Fiscalía en el lugar, " + RES + " · " + NOD,
+  hecho="Mazatlán · <code>COL. PUEBLO NUEVO, CALLE ESTADO DE OCCIDENTE, FIESTA EN UNA VIVIENDA</code>, " + RES + " · domingo 15-NOV, por ruta (Informador 20261115: «Sinaloa: ataque armado en Mazatlán deja tres músicos heridos durante una fiesta»; Luz Noticias 2026-11-15: «aumenta a dos el saldo mortal de balacera durante fiesta en la colonia Pueblo Nuevo de Mazatlán»; Línea Directa 2026-11-15: «sube a dos la cifra de asesinados en ataque durante fiesta en Mazatlán; hay tres músicos heridos») · ~00:40, " + RES + " · " + FR + " · " + RET + " · <b>2 muertos y 3 heridos</b>, por titular; el segundo muerto, en el hospital (🔴 homicidio múltiple) · <code>SALDO ACTUALIZADO: 1 MUERTO EN EL PRIMER PARTE, POR TITULAR (LUZ NOTICIAS; NOROESTE; LOS NOTICIERISTAS), 2 EN LA ACTUALIZACIÓN (LUZ NOTICIAS; LÍNEA DIRECTA); LOS TITULARES DE INFORMADOR Y DE EL UNIVERSAL («ATAQUE ARMADO EN MAZATLÁN DEJA TRES MÚSICOS HERIDOS») SOLO TRAEN LOS HERIDOS</code> · heridos, integrantes de la banda que amenizaba, por titular · peritos de la Fiscalía en el lugar, " + RES + " · " + NOD,
   panel="Ataque en una fiesta: <b>2 muertos y 3 músicos heridos</b>", inst=SB, nac="El Universal", conf="★★★☆☆",
   campo="hora solo por resumen frente a la apertura; ninguna fuente institucional", I=0, N=1, R=4, A=0,
   fechadas=["Informador (20261115)", "Luz Noticias (2026-11-15)", "Línea Directa (2026-11-15)"], estatus="Parcialmente corroborado", arm=None,
@@ -98,7 +98,7 @@ E = [
   title="TLAXCALA · CALPULALPAN — MATAN A UN CAMPESINO ADULTO MAYOR PARA ROBARLE SU GANADO",
   hecho="Calpulalpan · <code>MAZAPA</code>, " + RES + " · publicación domingo 15-NOV, por ruta (Gente Tlx 2026/11/15: «asesinan a adulto mayor en Calpulalpan; presuntamente le robaron su ganado») · hora no fijada · " + FR + " · <b>1 hombre muerto</b>, adulto mayor, por titular (🟡 homicidio doloso único) · «matan a golpes a campesino de 75 años en Calpulalpan, Tlaxcala», por titular (Cinco Radio); «asesinan a campesino de 75 años durante robo de borregos en Tlaxcala», por titular (Meganoticias) · " + NOD,
   panel="<b>Campesino asesinado</b> en un robo de ganado", inst=SB, nac="—", conf="★★★☆☆",
-  campo="hora no fijada; mecánica solo por medios regionales; ninguna fuente institucional", I=0, N=0, R=2, A=0,
+  campo="hora no fijada; mecánica solo por medios regionales; ninguna fuente institucional", I=0, N=0, R=3, A=0,
   fechadas=["Gente Tlx (2026/11/15)"], estatus="Parcialmente corroborado", arm=None,
   desl="Calpulalpan y Mazapa no figuran en las ediciones previas. Móvil de robo de ganado: medios."),
  # ======================= VERDES
@@ -110,7 +110,7 @@ E = [
   panel="<b>Red de huachicol: 10 cateos y 4 detenidos</b>; ~15 mil litros de gas LP", inst=SB, nac="La Silla Rota · El Heraldo de México · SinEmbargo · López-Dóriga", conf="★★★☆☆",
   campo="día de los cateos no fijado; ninguna fuente institucional leída", I=0, N=4, R=2, A=0,
   fechadas=["La Silla Rota (2026/11/15)", "El Heraldo de México (2026/11/15)", "Proyecto Puente (2026/11/15)", "El Diario de Chihuahua (2026/nov/15)"], estatus="Parcialmente corroborado", arm="ARG-152-ARM-001",
-  desl="Huachicol en el Estado de México en el índice: hechos de agosto (ARG-91 a -98), otros. Operativo Otomí (acumulado de 50 días, visto en ARGOS 151): sin coincidencia publicada de fecha, cifras ni detenidos; vínculo no acreditado. Identidades: medios, no se reproducen."),
+  desl="Huachicol en el índice: ARG-92-004 y ARG-96-005 (agosto): otro tipo de hecho; sin gas LP previo. Operativo Otomí (acumulado de 50 días, visto en ARGOS 151): sin coincidencia publicada de fecha, cifras ni detenidos; vínculo no acreditado. Identidades: medios, no se reproducen."),
 ]
 # ---------------------------------------------------------------- RECUPERACIONES (solo alto impacto de ventanas anteriores)
 R = [
@@ -118,11 +118,11 @@ R = [
   ent="Puebla", mun="Chignahuapan (Cuautelolulco)", dia="DOM 15-NOV, MADRUGADA",
   fecha_txt="domingo 15-nov, por ruta; madrugada, por titular",
   title="PUEBLA · CHIGNAHUAPAN — CINCO HOMBRES MUERTOS A BALAZOS TRAS UN BAILE EN CUAUTELOLULCO",
-  hecho="<code>VENTANA DE ORIGEN: ARGOS 151</code> · Chignahuapan · <code>CUAUTELOLULCO, CARRETERA CHIGNAHUAPAN–COCULCO (PUE-112), KM 23</code>, " + RES + " · domingo 15-NOV, por ruta (Infobae 2026/11/15: «cinco hombres mueren en enfrentamiento armado tras baile en Chignahuapan, Puebla»; La Silla Rota 2026/11/15: «localizan cinco hombres muertos en carretera de Chignahuapan, Puebla»; El Heraldo de México 2026/11/15: «hallan cinco hombres ejecutados tras balacera en carretera de Chignahuapan, Puebla») · madrugada, por titular (TV Azteca: «¡Madrugada de terror en Puebla! Ataque armado deja cinco hombres muertos en Chignahuapan»); ~04:00, " + RES + " · <b>5 hombres muertos</b>, por titular (🔴 homicidio múltiple) · tras un baile de fiesta patronal, por titular · «enfrentamiento» o «riña» entre dos grupos, según el medio · dos vehículos baleados y armas, por titular (Diario Puntual 2026/11/16: «ejecutan a cinco hombres en Chignahuapan; hallan dos vehículos baleados y armas») · ~01:50 o ~04:00, " + RES + " · la FGE abrió carpeta, " + RES + " · " + NOD,
-  panel="<b>5 hombres muertos</b> tras un baile", inst=SB, nac="Infobae · La Silla Rota · El Heraldo de México · Latinus · TV Azteca",
-  conf="★★★☆☆", campo="hora solo por resumen (madrugada, por titular); ninguna fuente institucional", I=0, N=5, R=4, A=0,
-  fechadas=["Infobae (2026/11/15)", "Síntesis (2026/11/15)", "La Silla Rota (2026/11/15)", "El Heraldo de México (2026/11/15)", "El Heraldo de Puebla (2026/11/15)", "Latinus (2026/11/15)", "Diario Puntual (2026/11/16)"],
-  desl="Rojo sin ruta fechada en ARGOS 151 (MTP Noticias; El Quinto Medio): se recupera con seis rutas del 15. La madrugada descansa en un titular sin ruta fechada (TV Azteca): ancla de hora débil. Atribución a un grupo criminal: solo por resumen, no se reproduce. Identidades: no publicadas."),
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 151</code> · Chignahuapan · <code>CUAUTELOLULCO, CARRETERA CHIGNAHUAPAN–COCULCO (PUE-112), KM 23</code>, " + RES + " · domingo 15-NOV, por ruta (Infobae 2026/11/15: «cinco hombres mueren en enfrentamiento armado tras baile en Chignahuapan, Puebla»; Síntesis 2026/11/15: «baile patronal de Chignahuapan termina en balacera: hay 5 muertos»; El Universal Puebla: «enfrentamiento armado en baile popular deja cinco muertos en Chignahuapan») · madrugada, por titular (TV Azteca: «¡Madrugada de terror en Puebla! Ataque armado deja cinco hombres muertos en Chignahuapan»); ~01:50 o ~04:00, " + RES + " · <b>5 hombres muertos</b>, por titular (🔴 homicidio múltiple) · tras un baile de fiesta patronal, por titular · «enfrentamiento» o «riña» entre dos grupos, según el medio · dos vehículos baleados y armas, por titular (Diario Puntual 2026/11/16: «ejecutan a cinco hombres en Chignahuapan; hallan dos vehículos baleados y armas») · la FGE abrió carpeta, " + RES + " · " + NOD,
+  panel="<b>5 hombres muertos</b> tras un baile", inst=SB, nac="Infobae · Latinus · TV Azteca",
+  conf="★★★☆☆", campo="hora solo por resumen (madrugada, por titular); ninguna fuente institucional", I=0, N=3, R=5, A=0,
+  fechadas=["Infobae (2026/11/15)", "Síntesis (2026/11/15)", "El Heraldo de Puebla (2026/11/15)", "Latinus (2026/11/15)", "Diario Puntual (2026/11/16)"],
+  desl="Rojo sin ruta fechada en ARGOS 151 (MTP Noticias; El Quinto Medio): se recupera con seis rutas del 15. Atribución a un grupo criminal: solo por resumen, no se reproduce. Identidades: no publicadas."),
  dict(id="ARG-152-REC-002", estado="MX-BCN", region="Noroeste", fecha="2026-11-14", hora="tarde-noche (solo por resumen)", orig="ARGOS 151", col_orig="rojo", mu=2, he=0, cu=0,
   ent="Baja California", mun="Tijuana (col. La Postal)", dia="SÁB 14-NOV, POR RESUMEN",
   fecha_txt="sábado 14-nov, tarde-noche, solo por resumen; publicación 15-nov, por ruta",
@@ -455,8 +455,8 @@ cierre = f'''  <div class="alerta contexto">
     <p>
       <b>1. VIVIENDAS Y FIESTAS FAMILIARES COMO BLANCO NOCTURNO EN CUATRO ENTIDADES: 9 MUERTOS Y 8 HERIDOS —CÁLCULO PROPIO—, CON MENORES Y MÚSICOS ENTRE LAS VÍCTIMAS</b> (ARG-152-001, -003, -005 y -006): ataques contra ocupantes de viviendas y reuniones; forma de acceso no informada; -003 y -005 con cláusula de retiro; vínculo entre hechos no acreditado. Línea: <b>vigilar la reincidencia de ataques a domicilios en el sur de Nuevo León (Galeana)</b>.
       <br><b>2. CARTULINA CON PLAZO DE 24 HORAS EN VILLAHERMOSA</b> (ARG-152-003): es consistente con una disputa territorial abierta en Centro; los grupos no han sido identificados por autoridad. Línea: <b>vigilar en las 48 horas siguientes hechos armados en Centro, Tabasco, al vencer el plazo</b>.
-      <br><b>3. COMANDO NUMEROSO CONTRA CINCO VÍCTIMAS, ENTRE ELLAS MILITARES RETIRADOS Y UN AGENTE EN ACTIVO, EN UN RANCHO DE TECATE</b> (ARG-152-002): tres víctimas abandonadas esposadas en la carretera Tecate–Ensenada, solo por resumen; móvil, oficio de las víctimas y vínculo no acreditados. Línea: <b>vigilar hechos armados en el corredor Tecate–Ensenada</b>.
-      <br><b>4. AGENTE MUNICIPAL DE UNA COMUNIDAD INDÍGENA ATACADO EN UN ESPACIO COMUNITARIO</b> (ARG-152-004): la espera de los agresores, solo por resumen, sugiere un ataque dirigido; móvil no informado y vínculo con otros hechos no acreditado. Línea: <b>vigilar amenazas contra agentes municipales del distrito de Ejutla</b>.
+      <br><b>3. COMANDO NUMEROSO CONTRA CINCO VÍCTIMAS, ENTRE ELLAS MILITARES RETIRADOS Y UN AGENTE DE LA FGE, EN UN RANCHO DE TECATE</b> (ARG-152-002): tres víctimas abandonadas esposadas en la carretera Tecate–Ensenada, solo por resumen; móvil, oficio de las víctimas y vínculo no acreditados. Línea: <b>vigilar hechos armados en el corredor Tecate–Ensenada</b>.
+      <br><b>4. AGENTE MUNICIPAL DE SAN ANDRÉS NIÑO ATACADO ANTES DE UN TEQUIO</b> (ARG-152-004): autoridad comunitaria, solo por resumen; la espera de los agresores, solo por resumen, sugiere un ataque dirigido; móvil no informado y vínculo con otros hechos no acreditado. Línea: <b>vigilar amenazas contra agentes municipales del distrito de Ejutla</b>.
       <br><b>5. HUACHICOL DE GAS LP CON TRACTOCAMIONES Y PIPAS EN CINCO MUNICIPIOS DEL ESTADO DE MÉXICO</b> (ARG-152-009): el equipo, solo por resumen, es consistente con distribución a escala; vínculo del excandidato con la red no acreditado. Línea: <b>vigilar tomas y centros de carga de gas LP en el corredor Atlacomulco–Jocotitlán</b>.
     </p>
   </div>

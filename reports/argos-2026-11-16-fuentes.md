@@ -9,7 +9,7 @@
 | Ventana | **dom 15-nov 10:24 → lun 16-nov 10:30 CDMX** · duración **24 h 06 min** (cálculo con `date`) |
 | Calendario | dom 15 (10:24–24:00, 13 h 36) · lun 16 (00:00–10:30, 10 h 30) |
 | Hora de arranque (Bloque 0) | 10:30 CDMX · «Procede» a las 10:32 (2 min): no se ajusta el cierre |
-| Consulta | última búsqueda: ver marca «Consulta» del cartelón (cierre de `procedencia-cifras` R2) |
+| Consulta | última búsqueda: 10:58 CDMX (cierre de `procedencia-cifras` R2) |
 | `WINDOW_DAYS` | 2 (la plantilla de 151 ya traía 2: sin reemplazo; aserción `WINDOW_DAYS = 2;` única) |
 | Ciclo | **A** (Noroeste + Centro encabezan el triaje judicial), tras la prioridad sobre el ciclo |
 | Red | `curl https://www.gob.mx/fgr` → `000` (16-nov 10:30): egreso bloqueado (`connect_rejected`); solo WebSearch |
@@ -66,13 +66,13 @@ Segundo lunes sin agregado indexado del fin de semana: las acciones del 13 al 15
 ## 6. Fuentes por ficha (lista íntegra)
 
 - **ARG-152-001 Galeana**: Enfoque Monterrey (2026/11/16) · MVS Noticias (2026/11/16, dos notas: 753601 y 753613) · ABC Noticias (2026/11/16) · Punto x Punto (2026/11/16) · El Heraldo de México (2026/11/16) · Milenio · El Norte · Posta · Telediario · N+ · Meganoticias · ENfoque.
-- **ARG-152-002 Tecate**: Diario de Yucatán (2026/11/15) · Radar Tecate News (2026/11/15) · El Universal · El Tiempo MX · Alfredo Álvarez · Videa TV · El Congresista (dos notas) · Poder MX.
+- **ARG-152-002 Tecate**: Diario de Yucatán (2026/11/15) · Radar Tecate News (2026/11/15) · El Universal · El Tiempo MX · Videa TV · Poder MX («reportan dos desaparecidos»). Alfredo Álvarez y El Congresista: consultados por la ola, no localizados en R1; no contados.
 - **ARG-152-003 Gaviotas Sur**: Proceso (2026/11/15) · El Heraldo de México (2026/11/15) · Diario de Yucatán (2026/11/15) · El Universal · UnoTV · Posta · Quadratín Tabasco · XEVT.
 - **ARG-152-004 Lachigalla**: La Jornada (2026/11/15) · Proyecto Puente (2026/11/15) · El Universal Oaxaca · El Imparcial de Oaxaca · ADN Sureste («14:30 h») · Meganoticias · El Sol del Sureste · NVI Noticias · Zócalo.
 - **ARG-152-005 Pueblo Nuevo**: Informador (20261115) · Luz Noticias (2026-11-15, 315113) · Línea Directa (2026-11-15) · Noroeste · Infobae/EFE (2026/11/16, agregado).
 - **ARG-152-006 Colinas del Sur**: Grupo Marmor (2026/11/15) · Quadratín · MiMorelia · Contramuro · La Voz de Michoacán · A Tiempo.
 - **ARG-152-007 Anapra**: El Diario de Juárez (2026/nov/15) · NetNoticias.
-- **ARG-152-008 Calpulalpan**: Gente Tlx (2026/11/15) · Quadratín Tlaxcala.
+- **ARG-152-008 Calpulalpan**: Gente Tlx (2026/11/15) · Cinco Radio · Meganoticias · La Prensa de Tlaxcala (2026/11). Quadratín Tlaxcala: cita no localizada en R1, retirada.
 - **ARG-152-009 Edomex**: La Silla Rota (2026/11/15) · El Heraldo de México (2026/11/15) · Proyecto Puente (2026/11/15) · El Diario de Chihuahua (2026/nov/15) · El Diario del Noroeste (2026/nov/15) · SinEmbargo · López-Dóriga · Quadratín Edomex · Digitalmex · Mexiquense Digital (20261116).
 - **ARG-152-REC-001 Chignahuapan**: Infobae (2026/11/15) · Síntesis (2026/11/15) · La Silla Rota (2026/11/15) · El Heraldo de México (2026/11/15) · El Heraldo de Puebla (2026/11/15) · Latinus (2026/11/15) · Diario Puntual (2026/11/16) · TV Azteca · El Universal · MTP Noticias · El Congresista · Sucesos Puebla · Quadratín Puebla.
 - **ARG-152-REC-002 Tijuana**: Periodismo Negro (2026/11/15) · Diario Tijuana (2026/11) · Síntesis TV.
@@ -98,6 +98,9 @@ Segundo lunes sin agregado indexado del fin de semana: las acciones del 13 al 15
 |---|---|---|---|
 | `procedencia-cifras` | R1 (paralelo, 24 búsquedas) | CORREGIR | Galeana: heridos 1 → 2 (última cifra con titular, MVS 753613) · Tecate: titular contrario «reportan dos desaparecidos» (Poder MX) en lugar de un titular no localizado; El Congresista retirado · Gaviotas Sur: cita de El Universal mal atribuida → UnoTV, Quadratín Tabasco y El Universal («investiga FGE multihomicidio en Villahermosa») · Pueblo Nuevo: Infobae/EFE no es del hecho → El Universal; saldo de 1 muerto en el primer parte declarado · Morelia: motociclista por titular (La Voz) · Anapra: mujer herida solo por resumen; noche por resumen · Calpulalpan: cita de Quadratín Tlaxcala inexistente → Cinco Radio y Meganoticias · Edomex: «más de 15 mil» → «~15 mil» (SinEmbargo; López-Dóriga «casi 16 mil»); armas solo por resumen fuera de tarjetas; detención del 13 por resumen · Chignahuapan: «dos vehículos baleados y armas» por titular (Diario Puntual 2026/11/16) · fe de erratas de 151-002 y -003 con titulares literales |
 | `editor-duplicidad` | R1 (paralelo) | CORREGIR | Seguimiento de Monterrey atado a ARG-150-REC-003 retirado (caso homónimo: secuestro frente a riña) · nombre de un medio-persona retirado de -002 · interno de alto perfil sin nombre ni cargo criminal · conclusiones 1, 3 y 5 ajustadas a lo que dicen las fichas · portada 2 y 4 (la 4 repetía la de 151) · deslindes de -005 (nombra -151-004 y -005), -009 (Otomí) · repeticiones retiradas (Buenavista, Villas del Pedregal, Cocula, Querétaro, Mazatlán) · tarjetas n/d · fe de erratas con reserva de Tijuana · archivo de equipos: «El Mike» visto, no REC. **No aplicada, con razón**: Anapra «doble homicidio» en diario.mx es la misma URL de El Diario de Juárez, no segunda fuente |
+
+| `editor-duplicidad` | R2 (serie) | CORREGIR | Calpulalpan R 2 → 3 · conclusión 3: «agente de la FGE», no «en activo» · conclusión 4: San Andrés Niño y tequio (lo indígena, solo por resumen) · deslinde de -009 con los ARG-ID reales de huachicol · REC-001 sin hora duplicada ni deslinde de método · listas de fuentes de -002 y -008 reconciliadas con R1 |
+| `procedencia-cifras` | R2 (serie, 6 búsquedas) | CORREGIR | Chignahuapan: La Silla Rota y El Heraldo de México (aportados por Centro) no reproducidos en R1 ni R2 → sustituidos por Síntesis y El Universal Puebla, verificados; N 5 → 3 · Pueblo Nuevo: El Universal, solo heridos, nombrado en el hecho. **No aplicadas, con razón**: Quadratín Tabasco (Gaviotas Sur) lo reprodujo R1 por titular; la discrepancia de Galeana es entre dos medios distintos (Enfoque Monterrey, reproducido en R1, y ENfoque Noticias); Milenio y N+ los aportó Noreste con URL y R1 reprodujo N+. Criterio: Meganoticias, regional. Sin comunicado de la FGJNL ni confirmación de muertes de la FGE BC al cierre |
 
 Regla de criterio añadida a §7 (petición de R1): día contradicho entre dos versiones, ambas anteriores a las 10:24 del 15 (Gaviotas Sur) → ficha propia con cláusula de retiro; -REC- solo cuando la versión anterior es única (Tijuana).
 
