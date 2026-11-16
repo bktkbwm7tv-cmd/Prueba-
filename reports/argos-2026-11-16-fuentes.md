@@ -88,11 +88,18 @@ Segundo lunes sin agregado indexado del fin de semana: las acciones del 13 al 15
 - **«El Mike» (Atotonilco el Alto, 14-nov)**: hora no fijada (ventana de 150 o 151) y quién inició solo por resumen (versión de García Harfuch: recorrido de prevención, ocupantes abren fuego) → no se sube a rojo; visto. Si una fuente fija por titular el inicio por el grupo y la hora, es -REC- 🔴 de 151.
 - **Edomex huachicol**: 🟢 con FRONTERA; día de los cateos no fijado; armas solo por resumen → cualitativo; detenidos por titular de medio → n/d.
 - **Félix Gallardo**: muerte bajo custodia por causas médicas (comunicado de la SSP de Jalisco, por resumen): seguimiento, fuera del semáforo.
+- **Día contradicho entre dos versiones anteriores a las 10:24 (Gaviotas Sur)**: ficha propia con cláusula de retiro; -REC- solo cuando la versión anterior es única (Tijuana).
+- **Ninguna fiscalía** (FGE BC, FGJNL, FGE Tabasco, FGEO, FGE Puebla) publicó comunicado o declaración nombrada indexada sobre los hechos del corte: todas las fichas «SIN BOLETÍN».
 - **Nombres y alias**: ningún nombre o alias de víctima o detenido en el cartelón.
 
 ## 8. Controles editoriales
 
-(se completa tras R1 y R2)
+| Control | Ronda | Veredicto | Correcciones aplicadas |
+|---|---|---|---|
+| `procedencia-cifras` | R1 (paralelo, 24 búsquedas) | CORREGIR | Galeana: heridos 1 → 2 (última cifra con titular, MVS 753613) · Tecate: titular contrario «reportan dos desaparecidos» (Poder MX) en lugar de un titular no localizado; El Congresista retirado · Gaviotas Sur: cita de El Universal mal atribuida → UnoTV, Quadratín Tabasco y El Universal («investiga FGE multihomicidio en Villahermosa») · Pueblo Nuevo: Infobae/EFE no es del hecho → El Universal; saldo de 1 muerto en el primer parte declarado · Morelia: motociclista por titular (La Voz) · Anapra: mujer herida solo por resumen; noche por resumen · Calpulalpan: cita de Quadratín Tlaxcala inexistente → Cinco Radio y Meganoticias · Edomex: «más de 15 mil» → «~15 mil» (SinEmbargo; López-Dóriga «casi 16 mil»); armas solo por resumen fuera de tarjetas; detención del 13 por resumen · Chignahuapan: «dos vehículos baleados y armas» por titular (Diario Puntual 2026/11/16) · fe de erratas de 151-002 y -003 con titulares literales |
+| `editor-duplicidad` | R1 (paralelo) | CORREGIR | Seguimiento de Monterrey atado a ARG-150-REC-003 retirado (caso homónimo: secuestro frente a riña) · nombre de un medio-persona retirado de -002 · interno de alto perfil sin nombre ni cargo criminal · conclusiones 1, 3 y 5 ajustadas a lo que dicen las fichas · portada 2 y 4 (la 4 repetía la de 151) · deslindes de -005 (nombra -151-004 y -005), -009 (Otomí) · repeticiones retiradas (Buenavista, Villas del Pedregal, Cocula, Querétaro, Mazatlán) · tarjetas n/d · fe de erratas con reserva de Tijuana · archivo de equipos: «El Mike» visto, no REC. **No aplicada, con razón**: Anapra «doble homicidio» en diario.mx es la misma URL de El Diario de Juárez, no segunda fuente |
+
+Regla de criterio añadida a §7 (petición de R1): día contradicho entre dos versiones, ambas anteriores a las 10:24 del 15 (Gaviotas Sur) → ficha propia con cláusula de retiro; -REC- solo cuando la versión anterior es única (Tijuana).
 
 ## 9. Presupuesto de búsqueda
 
