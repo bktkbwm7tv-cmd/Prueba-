@@ -3,8 +3,8 @@
 Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 
 ## Ventana
-- ABRE: **domingo 15-nov-2026 10:24 CDMX** (donde cerró ARGOS 151). CIERRA: **hora real de arranque de la sesión de ARGOS 152** (o del «Procede») (el coordinador la escribe aquí al copiar la plantilla: ____).
-- Calendario: el coordinador lo escribe día por día. Comprueba siempre el día de la semana que dice la fuente contra el calendario.
+- ABRE: **domingo 15-nov-2026 10:24 CDMX** (donde cerró ARGOS 151). CIERRA: **hora real de arranque de la sesión de ARGOS 152** (o del «Procede») → **lunes 16-nov-2026 10:30 CDMX** (duración 24 h 06 min).
+- Calendario: **dom 15-nov (10:24–24:00, 13 h 36 min) · lun 16-nov (00:00–10:30, 10 h 30 min)**. Fechas en ruta de la ventana: `2026/11/15` y `2026/11/16` (dos reservadas a cada una). Comprueba siempre el día de la semana que dice la fuente contra el calendario.
 - **ARGOS 151 (ventana 14-nov 10:09 → 15-nov 10:24) publicó 9 hechos** (`ARG-151-001` a `-009`: Texhuacán regidora y dirigente del PRI, Jolalpan emboscada a policías de Morelos, carretera 190 cuatro cuerpos (Chahuites), Mazatlán bar Zona Dorada, Mazatlán col. 12 de Mayo, Culiacán Esthela Ortiz, Nogales 1,229 cartuchos, Mazatlán Ejército 2 fusiles, Tepehuacán de Guerrero vivienda del alcalde) y 1 `-REC-` (El Arenal, Jal.). Un hecho del 15-nov antes de las 10:24 que 151 NO publicó es de la ventana de 151: `-REC-` **solo si es 🔴** (candidato: **Chignahuapan, Cuautelolulco, 5 muertos, madrugada del 15**).
 - Todo hecho del 15 necesita HORA frente a las 10:24. Nunca infieras la hora. «Esta tarde» en un resumen NO fecha un hecho.
 - Criterio de inclusión: entra con marca el hecho con **ruta fechada o titular con día**. ⚠️ **«Rojo sin ruta» = sin DÍA por ruta o titular**; un hecho con día por ruta y sin hora NO es «sin ruta»: se entrega como hecho con la hora marcada «solo por resumen» (Texhuacán en 151).
