@@ -1,0 +1,591 @@
+ARGOS 152 — REPORTE NACIONAL DE SEGURIDAD
+REPORTE DIARIO DE INTELIGENCIA CRIMINAL
+«INVESTIGACIONES, BÚSQUEDA Y VERDAD»
+
+Corte informativo: 2026-11-16 · 10:30 (CDMX)
+Ventana: 15-nov 10:24 → 16-nov 10:30 CDMX (24 h 06 min)
+Versión 3.0 · Corte matutino · USO INSTITUCIONAL
+
+============================================================================
+
+[ RADAR CENTRAL — EN VIVO ]
+
+  · 🔴 Alto impacto · 5
+  · 🟡 Violencia operativa · 3
+  · 🟢 Acciones institucionales · 1
+
+[ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
+
+Pase el cursor sobre un estado.
+
+## SEMÁFORO ARGOS
+
+  · 🔴 ROJO — ALTO IMPACTO — 5 eventos
+
+  · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 3 eventos
+
+  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 1 evento
+
+── LO QUE DEBE HACER EL MANDO
+
+1. SOLICITE A LA FISCALÍA DE NUEVO LEÓN EL PARTE DEL ATAQUE DE GALEANA, LA CIFRA OFICIAL DE
+VÍCTIMAS Y EL REGISTRO DEL SEGUNDO ENFRENTAMIENTO REPORTADO POR TESTIGOS (ARG-152-001).
+2. SOLICITE A LA FISCALÍA DE BAJA CALIFORNIA LA SITUACIÓN OFICIAL DE LAS PERSONAS NO LOCALIZADAS
+EN TECATE Y LA RELACIÓN LABORAL DE LAS VÍCTIMAS CON EL PREDIO (ARG-152-002).
+3. SOLICITE A LA FISCALÍA DE TABASCO EL PERITAJE DE LA CARTULINA DE GAVIOTAS SUR Y SU COTEJO CON
+MENSAJES PREVIOS EN CENTRO (ARG-152-003).
+4. SOLICITE A LA FISCALÍA DE OAXACA LAS LÍNEAS DE INVESTIGACIÓN DEL ATAQUE AL AGENTE MUNICIPAL
+DE SAN ANDRÉS NIÑO, Y A LA DE SINALOA EL COTEJO BALÍSTICO DE LA FIESTA DE PUEBLO NUEVO CON LOS
+DEMÁS ATAQUES DEL FIN DE SEMANA EN MAZATLÁN (ARG-152-004 y -005).
+5. SOLICITE AL GABINETE DE SEGURIDAD EL INVENTARIO OFICIAL —ARMAS, COMBUSTIBLE Y VEHÍCULOS— Y LA
+FECHA DE LOS CATEOS CONTRA LA RED DE HUACHICOL DEL ESTADO DE MÉXICO (ARG-152-009).
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-11-16 · Hora: 10:30 (CDMX) · Corte: Matutino · ARGOS N.° 152 · USO INSTITUCIONAL
+
+============================================================================
+
+## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
+
+Ventana 15-nov 10:24 → 16-nov 10:30 CDMX (24 h 06 min) · dom 15 (desde 10:24) · lun 16 (hasta
+10:30) · 9 hechos propios en 9 entidades · densidad 0,37 hechos/hora; duración y densidad,
+cálculo propio · 2 recuperaciones de alto impacto (ventana de ARGOS 151), atenuadas, fuera de
+todos los totales
+
+  Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
+  Nuevo León · Galeana (ejido Boca del Refugio) · LUN 16-NOV, POR RUTA | Ataque a una familia: 3 muertos, dos de ellos menores | 🔴 Rojo | SIN BOLETÍN | El Heraldo de México · Milenio · N+ | ★★★☆☆ | ARG-152-001
+  Oaxaca · San Juan Lachigalla (San Andrés Niño, distrito de Ejutla) · DOM 15-NOV, POR RUTA | Agente municipal asesinado a balazos | 🔴 Rojo | SIN BOLETÍN | La Jornada | ★★★☆☆ | ARG-152-004
+  Baja California · Tecate (Las Juntas) · DOM 15-NOV, POR RUTA | Comando priva de la libertad a 5 hombres, entre ellos un agente de la FGE | 🔴 Rojo | SIN BOLETÍN | El Universal · El Congresista | ★★★☆☆ | ARG-152-002
+  Tabasco · Centro (Villahermosa, col. Gaviotas Sur) · 14 O 15-NOV; PUB. 15-NOV, POR RUTA | Ataque en una vivienda: 3 muertos y 1 herida; cartulina con plazo de 24 horas | 🔴 Rojo | SIN BOLETÍN | Proceso · El Universal · El Heraldo de México · UnoTV | ★★★☆☆ | ARG-152-003
+  Sinaloa · Mazatlán (col. Pueblo Nuevo) · DOM 15-NOV, POR RUTA | Ataque en una fiesta: 2 muertos y 3 músicos heridos | 🔴 Rojo | SIN BOLETÍN | Infobae (EFE) | ★★★☆☆ | ARG-152-005
+  Michoacán · Morelia (col. Colinas del Sur) · DOM 15-NOV, POR RUTA | Ataque en una vivienda: 1 muerto y 2 mujeres heridas | 🟡 Amarillo | SIN BOLETÍN | — | ★★★☆☆ | ARG-152-006
+  Chihuahua · Ciudad Juárez (Puerto de Anapra) · DOM 15-NOV, POR RUTA | Ataque a una pareja: 1 o 2 muertos, contradicho | 🟡 Amarillo | SIN BOLETÍN | — | ★★★☆☆ | ARG-152-007
+  Tlaxcala · Calpulalpan (Mazapa) · PUB. 15-NOV, POR RUTA | Campesino asesinado en un robo de ganado | 🟡 Amarillo | SIN BOLETÍN | — | ★★★☆☆ | ARG-152-008
+  Estado de México · Atlacomulco, Jiquipilco, Jocotitlán, Calimaya y Naucalpan (solo por resumen) · PUB. 15-NOV, POR RUTA | Red de huachicol: 10 cateos y 4 detenidos; más de 15 mil litros de gas LP | 🟢 Verde | SIN BOLETÍN | La Silla Rota · El Heraldo de México · SinEmbargo · López-Dóriga | ★★★☆☆ | ARG-152-009
+  Puebla · Chignahuapan (Cuautelolulco) · VENTANA ARGOS 151 | 5 hombres muertos tras un baile | 🔴 Rojo (en su ventana) | SIN BOLETÍN | Infobae · La Silla Rota · El Heraldo de México · Latinus · TV Azteca | ★★★☆☆ | ARG-152-REC-001
+  Baja California · Tijuana (col. La Postal) · VENTANA ARGOS 151 | 2 hombres muertos junto a las vías del tren | 🔴 Rojo (en su ventana) | SIN BOLETÍN | — | ★★★☆☆ | ARG-152-REC-002
+
+## TOTALES DEL CORTE — CÁLCULO PROPIO DE ARGOS
+
+NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
+
+  Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Muertos por agresión | Heridos | Cuerpos o restos hallados | Armas cortas | Armas largas | Armas sin categoría | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos en aseguramiento | Entidades
+  9 | 5 | 3 | 1 | 2 | 12 | 7 | 0 | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 9
+
+Armamento: ningún evento con cantidad integrable; el de huachicol, cualitativo · muertos por
+agresión: 12, cálculo propio de las fichas; fuera, las dos víctimas de Tecate de suerte
+contradicha y la segunda víctima de Anapra · heridos: 7, mínimos coincidentes · privados de la
+libertad: 5 (Tecate), por titular · detenidos: 4 (huachicol), solo por titular de medio, sin
+cifra de autoridad: n/d · marcas: 8 FRONTERA DE VENTANA — HORA NO FIJADA (todos los publicados
+el domingo 15, día de apertura) · totales sujetos a 4 cláusulas de retiro (Tecate, Gaviotas Sur,
+Lachigalla y Pueblo Nuevo: hora solo por resumen anterior a las 10:24) · recuperaciones, fuera
+de totales: 7 muertos, por titular.
+BALANCES, NO SE INTEGRAN NI SE REPARTEN: «Mazatlán suma siete asesinatos y nueve heridos tras 11
+ataques armados… durante el fin de semana» (Infobae 2026/11/16) · «7 homicidios este fin de
+semana en Michoacán» (Meganoticias) · balance mensual de armas de la SSP de Veracruz (Formato 7
+2026/11/15) · «15 miembros de cabildo asesinados» (La Razón 2026/11/16).
+Vistos, fuera de totales (ventana anterior por resumen, sin ruta con día o fuente única):
+Atotonilco el Alto, Jal., detención de un presunto operador de Los R's ligado al caso del
+alcalde de Uruapan, tras un enfrentamiento con un agresor muerto el sábado 14 (Expansión
+2026/11/14), hora no fijada —ventana de 150 o 151— y quién inició, solo por resumen · Irapuato,
+col. Esfuerzo Obrero, hombre muerto en el hospital (AM 2026/11/15; ~06:00 SOLO POR RESUMEN) y
+Venado de Yóstiro, joven asesinado en su casa (~03:30 SOLO POR RESUMEN): ventana de 151 ·
+Morelia, Villas del Pedregal (sábado 14, ~22:00 SOLO POR RESUMEN) · Apatzingán, motociclista
+(sábado 14 por la noche) · Poza Rica, local de telefonía, 1 muerto y 1 herida (sábado 14, ~21:00
+SOLO POR RESUMEN) · Torreón, vecino herido (~02:00 del 15 SOLO POR RESUMEN) · Chiautempan,
+Xaxala, hombre asesinado (Gente Tlx 2026/11/15, «esta noche»; sábado SOLO POR RESUMEN) ·
+Villahermosa, ranchería Buenavista 1a. sección, hombre asesinado (Proceso 2026/11/15), sin día
+ni hora propios · Culiacán, Ampliación El Mirador, hombre herido, sin día en la ruta · Navolato,
+Villa Juárez, cuerpo con golpes, sin causa informada por autoridad · Zacatelco, hombre herido
+por un conocido (Gente Tlx 2026/11/16) · Celaya, hombre asesinado en una gasolinera, y Uruapan,
+La Cedrera, sin día en la ruta · Querétaro, seis detenidos y una pistola tras un concierto, sin
+día · Cancún, Villas Otoch, dos detenidos por tentativa de homicidio (PorEsto 2026/11/16), hecho
+sin fecha · Cocula, Gro., vinculación a proceso de dos detenidos con dos armas largas (FGR),
+detención sin día.
+FE DE ERRATAS — ARGOS 151: dos rojos de la ventana de 151 se recuperan (Chignahuapan y Tijuana):
+6 rojos, 3 amarillos, 2 verdes (cálculo propio) · ARG-151-002: «tres muertos, entre ellos dos
+policías de Morelos», por titular (Cinco Radio; E-consulta): cifra 2, 3 o 4, contradicha; se
+mantienen 2 · ARG-151-003: «localizan calcinados a empresario, empleada y escoltas desaparecidos
+en Chahuites», por titular (Proceso 2026/11/15); identificación pericial pendiente.
+Seguimiento, fuera del semáforo: Zapopan (ARG-149-014 / -018): audiencia de vinculación de cinco
+presuntos escoltas el 15-nov (Infobae 2026/11/15), resultado no publicado · Monterrey
+(ARG-150-REC-003): dos vinculados a proceso por secuestro agravado (MVS 2026/11/13) ·
+Guadalajara: muere bajo custodia, en un hospital privado, el fundador del Cártel de Guadalajara
+(domingo 15; falla orgánica, comunicado de la SSP de Jalisco SOLO POR RESUMEN; ABC Noticias
+2026/11/15) · NO ES SENTENCIA.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-11-16 · Hora: 10:30 (CDMX) · Corte: Matutino · ARGOS N.° 152 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (I) — ALTO IMPACTO: ATAQUES EN VIVIENDAS Y FIESTAS
+
+### NUEVO LEÓN · GALEANA — ATACAN A UNA FAMILIA EN SU VIVIENDA EN EL EJIDO BOCA DEL REFUGIO: TRES MUERTOS, DOS DE ELLOS MENORES [ROJO]
+
+── HECHO
+
+Galeana · EJIDO BOCA DEL REFUGIO, VIVIENDA, SOLO POR RESUMEN · lunes 16-NOV, por ruta (Enfoque
+Monterrey 2026/11/16: «deja ataque armado tres muertos, entre ellos una menor, en Galeana»; ABC
+Noticias 2026/11/16: «tragedia en Galeana: matan a papá y a sus dos hijos»; El Heraldo de México
+2026/11/16: «atacan a familia en Galeana: mueren tres personas, dos de ellos menores de edad») ·
+madrugada, ~01:00, SOLO POR RESUMEN · 3 muertos, por titular: un hombre y sus dos hijos, una
+niña y un adolescente (🔴 homicidio múltiple) · heridos: «sube a dos heridos y tres muertos», por
+titular (MVS 2026/11/16), frente a un menor herido grave, SOLO POR RESUMEN: CIFRA DE HERIDOS
+CONTRADICHA — SE INTEGRA 1, MÍNIMO COINCIDENTE · primer parte, «un muerto y tres menores
+heridos», por titular (MVS 2026/11/16): superado por la actualización · FGJNL abrió carpeta;
+Fuerza Civil acudió, SOLO POR RESUMEN · regreso de los agresores y segundo enfrentamiento, SOLO
+POR RESUMEN: no se integra · ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-152-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; cifra de heridos contradicha; ninguna fuente institucional · Fuentes: Institucional 0 ·
+Nacional 3 · Regional 7 · Abierta 0 · con fecha en la ruta: Enfoque Monterrey (2026/11/16) · MVS
+Noticias (2026/11/16) · ABC Noticias (2026/11/16) · Punto x Punto (2026/11/16) · El Heraldo de
+México (2026/11/16) · Hecho: lunes 16-nov, por ruta; ~01:00, solo por resumen · Hora: ~01:00
+(solo por resumen) · Consulta: 2026-11-16, última búsqueda 11:30 · Estatus: Parcialmente
+corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Boca del Refugio no figura en las ediciones previas; Galeana, solo como
+localidad de Acapulco (ARG-117 y -118): otro lugar. «Ejecutan a dos hombres dentro de una
+vivienda en Galeana» (MVS 2026/9/30): otro hecho. Cateo y armas aseguradas en Galeana (ABC), sin
+vínculo publicado: no se integra. Identidades: medios, no se reproducen.
+
+### TABASCO · CENTRO — ATAQUE EN UNA VIVIENDA DE GAVIOTAS SUR: TRES HOMBRES MUERTOS, UNA MUJER HERIDA Y CARTULINA CON PLAZO DE 24 HORAS [ROJO]
+
+── HECHO
+
+Villahermosa, Centro · COL. GAVIOTAS SUR, VIVIENDA, por titular (El Universal: «ataque armado en
+colonia Gaviotas Sur deja tres hombres muertos y una mujer herida; Fiscalía de Tabasco investiga
+multihomicidio») · publicación 15-NOV, por ruta (Proceso 2026/11/15: «asesinan a cuatro hombres
+en Centro, Tabasco; dejan amenaza para abandonar la plaza en 24 horas»; El Heraldo de México
+2026/11/15: «ataque a balazos deja 3 personas fallecidas y una mujer lesionada»; Diario de
+Yucatán 2026/11/15: «investigan multihomicidio tras ataque armado en una vivienda de Tabasco») ·
+DÍA CONTRADICHO: noche del sábado 14 o madrugada del domingo 15, SOLO POR RESUMEN · FRONTERA DE
+VENTANA — HORA NO FIJADA · SI RESULTA ANTERIOR A LAS 10:24 DEL 15, ES DE LA VENTANA DE ARGOS 151
+Y SE RETIRA DE ESTE TOTAL · 3 hombres muertos y 1 mujer herida, por titular (🔴 homicidio
+múltiple) · cartulina con plazo de 24 horas a un grupo rival para abandonar la plaza, por
+titular (Proceso) · el cuarto muerto del titular de Proceso es otro ataque (ranchería Buenavista
+1a. sección, «horas después», SOLO POR RESUMEN): no se suma · la FGE inició carpeta por
+multihomicidio, SOLO POR RESUMEN · ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-152-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día y hora
+contradichos, solo por resumen; ninguna fuente institucional · Fuentes: Institucional 0 ·
+Nacional 5 · Regional 3 · Abierta 0 · con fecha en la ruta: Proceso (2026/11/15) · El Heraldo de
+México (2026/11/15) · Diario de Yucatán (2026/11/15) · Hecho: noche del 14 o madrugada del
+15-nov, contradicho, solo por resumen; publicación 15-nov, por ruta · Hora: noche del 14 o
+madrugada del 15 (solo por resumen) · Consulta: 2026-11-16, última búsqueda 11:30 · Estatus:
+Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Gaviotas Sur no figura en las ediciones previas; las «Gaviotas» y
+«Buenavista» del índice son de Sinaloa y Michoacán: otros hechos. Publicado el día de cierre de
+ARGOS 151 sin hora por fragmento: se integra en esta edición, la primera que lo ve. Buenavista
+1a. sección: una sola fuente, sin día ni hora propios; visto. Identidades: medios, no se
+reproducen.
+
+### SINALOA · MAZATLÁN — ATAQUE ARMADO EN UNA FIESTA EN LA COLONIA PUEBLO NUEVO: DOS MUERTOS Y TRES MÚSICOS HERIDOS [ROJO]
+
+── HECHO
+
+Mazatlán · COL. PUEBLO NUEVO, CALLE ESTADO DE OCCIDENTE, FIESTA EN UNA VIVIENDA, SOLO POR
+RESUMEN · domingo 15-NOV, por ruta (Informador 20261115: «Sinaloa: ataque armado en Mazatlán
+deja tres músicos heridos durante una fiesta»; Luz Noticias 2026-11-15: «aumenta a dos el saldo
+mortal de balacera durante fiesta en la colonia Pueblo Nuevo de Mazatlán»; Línea Directa
+2026-11-15: «sube a dos la cifra de asesinados en ataque durante fiesta en Mazatlán; hay tres
+músicos heridos») · ~00:40, SOLO POR RESUMEN · FRONTERA DE VENTANA — HORA NO FIJADA · SI RESULTA
+ANTERIOR A LAS 10:24 DEL 15, ES DE LA VENTANA DE ARGOS 151 Y SE RETIRA DE ESTE TOTAL · 2 muertos
+y 3 heridos, por titular; el segundo muerto, en el hospital (🔴 homicidio múltiple) · heridos,
+integrantes de la banda que amenizaba, por titular · peritos de la Fiscalía en el lugar, SOLO
+POR RESUMEN · ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-152-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por resumen
+frente a la apertura; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 1 ·
+Regional 4 · Abierta 0 · con fecha en la ruta: Informador (20261115) · Luz Noticias (2026-11-15)
+· Línea Directa (2026-11-15) · Hecho: domingo 15-nov, por ruta; ~00:40, solo por resumen · Hora:
+~00:40 (solo por resumen) · Consulta: 2026-11-16, última búsqueda 11:30 · Estatus: Parcialmente
+corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Visto en ARGOS 151 sin ruta con día («fiesta en la col. Pueblo Nuevo, 1
+muerto»): se ficha ahora, con el segundo fallecimiento. No es ARG-151-005 (col. 12 de Mayo, 1
+muerto y 4 heridos): otra colonia, otra cifra. Pueblo Nuevo de Escuinapa (ARG-132 y -133): otro
+municipio. Publicado el día de cierre de ARGOS 151 sin hora por fragmento: se integra en esta
+edición, la primera que lo ve. Recuento «Mazatlán suma siete asesinatos y nueve heridos tras 11
+ataques armados» (Infobae 2026/11/16): balance, no se reparte. Identidades: medios, no se
+reproducen.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-11-16 · Hora: 10:30 (CDMX) · Corte: Matutino · ARGOS N.° 152 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (II) — ALTO IMPACTO: PRIVACIÓN DE LA LIBERTAD Y AUTORIDAD COMUNITARIA
+
+### BAJA CALIFORNIA · TECATE — COMANDO PRIVA DE LA LIBERTAD EN UN RANCHO DE LAS JUNTAS A CINCO HOMBRES, ENTRE ELLOS UN AGENTE DE LA FISCALÍA ESTATAL [ROJO]
+
+── HECHO
+
+Tecate · RANCHO EN LAS JUNTAS, SOLO POR RESUMEN · domingo 15-NOV, por ruta (Diario de Yucatán
+2026/11/15: «comando armado secuestra a cinco hombres en Tecate; dos fueron asesinados»; Radar
+Tecate News 2026/11/15: «reportan dos muertos en Paraíso Jurásico») · ~01:00–01:30, SOLO POR
+RESUMEN · FRONTERA DE VENTANA — HORA NO FIJADA · SI RESULTA ANTERIOR A LAS 10:24 DEL 15, ES DE
+LA VENTANA DE ARGOS 151 Y SE RETIRA DE ESTE TOTAL · 5 hombres privados de la libertad, por
+titular, por un comando de unos 14 hombres armados, SOLO POR RESUMEN (🔴 secuestro múltiple;
+víctima autoridad) · entre ellos un agente de la FGE y militares retirados, por titular (El
+Universal: «comando secuestra a militares retirados, agente ministerial y excapitán aéreo en
+Tecate, BC; 2 fueron asesinados y 3 abandonados sobrevivientes») · tres liberados, esposados, en
+la carretera Tecate–Ensenada, SOLO POR RESUMEN · SUERTE DE DOS VÍCTIMAS CONTRADICHA: «DOS FUERON
+ASESINADOS», POR TITULAR, FRENTE A «BUSCAN A UN AGENTE DE LA FGE Y A UN MILITAR», POR TITULAR
+(ALFREDO ÁLVAREZ); NO LOCALIZADOS PARA LA FGE, SOLO POR RESUMEN — NO SE INTEGRAN AL TOTAL DE
+MUERTOS · «heridos», por titular (El Congresista): versión preliminar · ningún detenido
+publicado
+
+── TRAZABILIDAD
+
+ARG-152-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: suerte de dos
+víctimas contradicha; hora solo por resumen; sin comunicado de la FGE · Fuentes: Institucional 0
+· Nacional 2 · Regional 5 · Abierta 0 · con fecha en la ruta: Diario de Yucatán (2026/11/15) ·
+Radar Tecate News (2026/11/15) · Hecho: domingo 15-nov, por ruta; ~01:00–01:30, solo por resumen
+· Hora: ~01:00–01:30 (solo por resumen) · Consulta: 2026-11-16, última búsqueda 11:30 · Estatus:
+Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Las Juntas no figura en las ediciones previas; Tecate, por otros hechos
+(ARG-150-REC-001, Los Encinos, 6-nov): otro hecho. Publicado el día de cierre de ARGOS 151 sin
+hora por fragmento: se integra en esta edición, la primera que lo ve. Predio llamado «Rancho de
+los Dinosaurios» o «Paraíso Jurásico», según el medio. Identidades: medios, no se reproducen.
+
+### OAXACA · SAN JUAN LACHIGALLA — ASESINAN A BALAZOS AL AGENTE MUNICIPAL DE SAN ANDRÉS NIÑO ANTES DE UN TEQUIO [ROJO]
+
+── HECHO
+
+San Juan Lachigalla · AGENCIA DE SAN ANDRÉS NIÑO, CANCHA, DISTRITO DE EJUTLA, SOLO POR RESUMEN ·
+domingo 15-NOV, por ruta (La Jornada 2026/11/15: «asesinan a agente municipal de San Juan
+Lachigalla, Oaxaca»; Proyecto Puente 2026/11/15: «asesinan a agente municipal de San Andrés
+Niño, Oaxaca; fue atacado a balazos») · ~07:00, SOLO POR RESUMEN; «(14:30 h)» en el titular de
+ADN Sureste es hora de la nota · FRONTERA DE VENTANA — HORA NO FIJADA · SI RESULTA ANTERIOR A
+LAS 10:24 DEL 15, ES DE LA VENTANA DE ARGOS 151 Y SE RETIRA DE ESTE TOTAL · 1 agente municipal
+muerto, por titular (🔴 víctima autoridad) · atacado antes de un tequio, por titular (ADN
+Sureste: «ejecutan a agente municipal de San Andrés Niño previo a un tequio») · los agresores lo
+esperaban, línea de la FGEO, SOLO POR RESUMEN · ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-152-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por resumen
+frente a la apertura de las 10:24; ninguna fuente institucional · Fuentes: Institucional 0 ·
+Nacional 1 · Regional 8 · Abierta 0 · con fecha en la ruta: La Jornada (2026/11/15) · Proyecto
+Puente (2026/11/15) · Hecho: domingo 15-nov, por ruta; ~07:00, solo por resumen · Hora: ~07:00
+(solo por resumen) · Consulta: 2026-11-16, última búsqueda 11:30 · Estatus: Parcialmente
+corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: Lachigalla y San Andrés Niño no figuran en las ediciones previas.
+Publicado el día de cierre de ARGOS 151 sin hora por fragmento: se integra en esta edición, la
+primera que lo ve. Autoridad comunitaria electa por sistema normativo indígena, SOLO POR
+RESUMEN. Identidades: medios, no se reproducen.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-11-16 · Hora: 10:30 (CDMX) · Corte: Matutino · ARGOS N.° 152 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (III) — VIOLENCIA OPERATIVA Y ACCIONES INSTITUCIONALES
+
+### MICHOACÁN · MORELIA — ATAQUE ARMADO EN UNA VIVIENDA DE COLINAS DEL SUR: UN HOMBRE MUERTO Y DOS MUJERES HERIDAS [AMARILLO]
+
+── HECHO
+
+Morelia · COL. COLINAS DEL SUR, CALLE NANCHE, VIVIENDA, SOLO POR RESUMEN · domingo 15-NOV, por
+ruta (Grupo Marmor 2026/11/15: «agresión a balazos al sur de Morelia deja saldo de un fallecido
+y dos mujeres lesionadas») · noche, SOLO POR RESUMEN · FRONTERA DE VENTANA — HORA NO FIJADA · 1
+hombre muerto y 2 mujeres heridas, por titular (Quadratín: «ataque armado deja un hombre muerto
+y 2 mujeres heridas en Morelia») (🟡 homicidio doloso único) · una de las heridas estaría
+embarazada, por titular (MiMorelia), preliminar · Policía de Morelia y FGE, diligencias, SOLO
+POR RESUMEN · versión de un motociclista armado y un adulto mayor (La Voz de Michoacán), SOLO
+POR RESUMEN: MECÁNICA CONTRADICHA · ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-152-006 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; mecánica contradicha; ninguna fuente institucional · Fuentes: Institucional 0 ·
+Nacional 0 · Regional 6 · Abierta 0 · con fecha en la ruta: Grupo Marmor (2026/11/15) · Hecho:
+domingo 15-nov, por ruta; noche, solo por resumen · Hora: noche (solo por resumen) · Consulta:
+2026-11-16, última búsqueda 11:30 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
+fila — armamento asegurado: no publicado
+Deslindes y reservas: Colinas del Sur no figura en las ediciones previas. Morelia, Villas del
+Pedregal (sábado 14, ~22:00, SOLO POR RESUMEN): otro hecho, ventana de ARGOS 151, visto.
+
+### CHIHUAHUA · CIUDAD JUÁREZ — ATACAN A BALAZOS A UNA PAREJA EN PUERTO DE ANAPRA [AMARILLO]
+
+── HECHO
+
+Ciudad Juárez · PUERTO DE ANAPRA, CRUCE DE QUIMERA Y GUACHINANGO, SOLO POR RESUMEN · domingo
+15-NOV, por ruta (El Diario de Juárez 2026/nov/15: «asesinan a mujer y hombre a balazos en
+Puerto de Anapra») · hora no fijada · FRONTERA DE VENTANA — HORA NO FIJADA · SALDO CONTRADICHO:
+2 muertos, una mujer y un hombre, por titular (El Diario de Juárez), frente a 1 hombre muerto y
+la mujer herida, por titular (NetNoticias: «acribillan a pareja en Anapra, Juárez: muere
+hombre»): se integra 1 muerto, mínimo coincidente (🟡 homicidio doloso, cifra mínima) · FGE
+Chihuahua a cargo, SOLO POR RESUMEN · ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-152-007 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: saldo contradicho
+entre dos fuentes; hora no fijada; ninguna fuente institucional · Fuentes: Institucional 0 ·
+Nacional 0 · Regional 2 · Abierta 0 · con fecha en la ruta: El Diario de Juárez (2026/nov/15) ·
+Hecho: domingo 15-nov, por ruta; hora no fijada · Hora: no fijada · Consulta: 2026-11-16, última
+búsqueda 11:30 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
+asegurado: no publicado
+Deslindes y reservas: Anapra no figura en las ediciones previas; ataque de agosto de 2025 en
+Rancho Anapra (cuatro muertos): otro hecho, fuera de serie. Identidades: no publicadas.
+
+### TLAXCALA · CALPULALPAN — MATAN A UN CAMPESINO ADULTO MAYOR PARA ROBARLE SU GANADO [AMARILLO]
+
+── HECHO
+
+Calpulalpan · MAZAPA, SOLO POR RESUMEN · publicación domingo 15-NOV, por ruta (Gente Tlx
+2026/11/15: «asesinan a adulto mayor en Calpulalpan; presuntamente le robaron su ganado») · hora
+no fijada · FRONTERA DE VENTANA — HORA NO FIJADA · 1 hombre muerto, adulto mayor, por titular (🟡
+homicidio doloso único) · «matan a golpes a campesino para robarle sus borregos en Calpulalpan»,
+por titular (Quadratín Tlaxcala) · ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-152-008 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora no fijada;
+mecánica solo por medios regionales; ninguna fuente institucional · Fuentes: Institucional 0 ·
+Nacional 0 · Regional 2 · Abierta 0 · con fecha en la ruta: Gente Tlx (2026/11/15) · Hecho:
+publicación domingo 15-nov, por ruta; hora no fijada · Hora: no fijada · Consulta: 2026-11-16,
+última búsqueda 11:30 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila —
+armamento asegurado: no publicado
+Deslindes y reservas: Calpulalpan y Mazapa no figuran en las ediciones previas. Móvil de robo de
+ganado: medios.
+
+### ESTADO DE MÉXICO — DIEZ CATEOS CONTRA UNA RED DE HUACHICOL DE GAS LP: CUATRO DETENIDOS, ENTRE ELLOS UN EXCANDIDATO A ALCALDE [VERDE]
+
+── HECHO
+
+Estado de México · 10 cateos en cinco municipios —Atlacomulco, Jiquipilco, Jocotitlán, Calimaya
+y Naucalpan—, SOLO POR RESUMEN · publicación domingo 15-NOV, por ruta (La Silla Rota 2026/11/15:
+«excandidato de MC cae por presunta red de huachicol en Edomex»; El Heraldo de México
+2026/11/15: «cateos en Edomex dejan cuatro detenidos y más de 15 mil litros de gas»; Proyecto
+Puente 2026/11/15: «…realizan 10 cateos y detienen a cuatro personas») · DÍA DE LOS CATEOS NO
+FIJADO · FRONTERA DE VENTANA — HORA NO FIJADA · 10 cateos, por titular · más de 15 mil litros de
+gas LP, por titular (El Heraldo de México; SinEmbargo); «casi 16 mil», por titular (López-
+Dóriga): CIFRA DE LITROS CONTRADICHA — SE CONSIGNA «MÁS DE 15 MIL» · tractocamiones, pipas y
+semirremolques, SOLO POR RESUMEN · 4 armas cortas, 8 cargadores y 80 cartuchos, SOLO POR
+RESUMEN: CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO · Gabinete de Seguridad, con
+Marina, FGR, SSPC, GN y CNI, SOLO POR RESUMEN · detenidos: cifra solo por titular de medio, sin
+cifra de autoridad: n/d (4, por titular) · captura del excandidato en un operativo previo, el
+viernes 13, SOLO POR RESUMEN: POSIBLE DUPLICIDAD — NO CONFIRMADA
+
+── TRAZABILIDAD
+
+ARG-152-009 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día de los cateos no
+fijado; ninguna fuente institucional leída · Fuentes: Institucional 0 · Nacional 4 · Regional 2
+· Abierta 0 · con fecha en la ruta: La Silla Rota (2026/11/15) · El Heraldo de México
+(2026/11/15) · Proyecto Puente (2026/11/15) · El Diario de Chihuahua (2026/nov/15) · Hecho:
+publicación domingo 15-nov, por ruta; día de los cateos no fijado · Hora: no fijada · Consulta:
+2026-11-16, última búsqueda 11:30 · Estatus: Parcialmente corroborado · Conteo de armamento:
+ARG-152-ARM-001
+Deslindes y reservas: Huachicol en el Estado de México en el índice: hechos de agosto (ARG-91 a
+-98), otros. Operativo Otomí (acumulado de 50 días, visto en ARGOS 151): otro. Identidades:
+medios, no se reproducen.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-11-16 · Hora: 10:30 (CDMX) · Corte: Matutino · ARGOS N.° 152 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (IV) — ALTO IMPACTO DE LA VENTANA DE ARGOS 151: CHIGNAHUAPAN Y TIJUANA
+
+### PUEBLA · CHIGNAHUAPAN — CINCO HOMBRES MUERTOS A BALAZOS TRAS UN BAILE EN CUAUTELOLULCO [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 151 · Chignahuapan · CUAUTELOLULCO, CARRETERA CHIGNAHUAPAN–COCULCO
+(PUE-112), KM 23, SOLO POR RESUMEN · domingo 15-NOV, por ruta (Infobae 2026/11/15: «cinco
+hombres mueren en enfrentamiento armado tras baile en Chignahuapan, Puebla»; La Silla Rota
+2026/11/15: «localizan cinco hombres muertos en carretera de Chignahuapan, Puebla»; El Heraldo
+de México 2026/11/15: «hallan cinco hombres ejecutados tras balacera en carretera de
+Chignahuapan, Puebla») · madrugada, por titular (TV Azteca: «¡Madrugada de terror en Puebla!
+Ataque armado deja cinco hombres muertos en Chignahuapan»); ~04:00, SOLO POR RESUMEN · 5 hombres
+muertos, por titular (🔴 homicidio múltiple) · tras un baile de fiesta patronal, por titular ·
+«enfrentamiento» o «riña» entre dos grupos, según el medio · dos vehículos con impactos, SOLO
+POR RESUMEN · la FGE abrió carpeta, SOLO POR RESUMEN · ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-152-REC-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen (madrugada, por titular); ninguna fuente institucional · Fuentes: Institucional 0 ·
+Nacional 5 · Regional 4 · Abierta 0 · con fecha en la ruta: Infobae (2026/11/15) · Síntesis
+(2026/11/15) · La Silla Rota (2026/11/15) · El Heraldo de México (2026/11/15) · El Heraldo de
+Puebla (2026/11/15) · Latinus (2026/11/15) · Hecho: domingo 15-nov, por ruta; madrugada, por
+titular · Hora: madrugada, por titular; ~04:00, solo por resumen · Consulta: 2026-11-16, última
+búsqueda 11:30 · Estatus: Parcialmente corroborado · Ventana de origen: ARGOS 151 — fuera de
+todos los totales
+Deslindes y reservas: Rojo sin ruta fechada en ARGOS 151 (MTP Noticias; El Quinto Medio): se
+recupera con seis rutas del 15. Atribución a un grupo criminal: solo por resumen, no se
+reproduce. Identidades: no publicadas.
+
+### BAJA CALIFORNIA · TIJUANA — ASESINAN A DOS HOMBRES A BALAZOS JUNTO A LAS VÍAS DEL TREN EN LA COLONIA LA POSTAL [RECUPERACIÓN]
+
+── HECHO
+
+VENTANA DE ORIGEN: ARGOS 151 · Tijuana · COL. LA POSTAL, JUNTO A LAS VÍAS DEL TREN, por titular
+(Diario Tijuana 2026/11: «asesinan a dos hombres a balazos junto a las vías del tren en la
+colonia La Postal») · tarde-noche del sábado 14-NOV, DÍA SOLO POR RESUMEN · publicación 15-NOV,
+por ruta (Periodismo Negro 2026/11/15: «asesinan a dos hombres a balazos junto a las vías del
+tren en Tijuana») · 2 hombres muertos, por titular (🔴 homicidio múltiple) · heridas en la
+cabeza; el agresor huyó a pie por las vías, SOLO POR RESUMEN · FGE de Baja California,
+diligencias, SOLO POR RESUMEN · ningún detenido publicado
+
+── TRAZABILIDAD
+
+ARG-152-REC-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día solo por
+resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 3 ·
+Abierta 0 · con fecha en la ruta: Periodismo Negro (2026/11/15) · Hecho: sábado 14-nov, tarde-
+noche, solo por resumen; publicación 15-nov, por ruta · Hora: tarde-noche (solo por resumen) ·
+Consulta: 2026-11-16, última búsqueda 11:30 · Estatus: Parcialmente corroborado · Ventana de
+origen: ARGOS 151 — fuera de todos los totales
+Deslindes y reservas: La Postal no figura en las ediciones previas; doble homicidio en la col.
+Postal de septiembre de 2024 (Zeta): otro hecho. Doble homicidio junto a las vías en Otay
+(Zeta), SOLO POR RESUMEN: posible confusión de ubicación, no se suma. Si resultara del domingo
+15 después de las 10:24, es hecho de esta ventana. Alias de las víctimas: medios, no se
+reproducen.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-11-16 · Hora: 10:30 (CDMX) · Corte: Matutino · ARGOS N.° 152 · USO INSTITUCIONAL
+
+============================================================================
+
+## CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS
+
+Total nacional del corte: en la página de panorama.
+
+  · Armas cortas: n/d — Edomex: 4, solo por resumen; no se integran
+
+  · Armas largas: n/d — SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE
+
+  · Sin categoría: n/d — SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE
+
+  · Cartuchos: n/d — Edomex: 80, solo por resumen; no se integran
+
+  · Cargadores: n/d — Edomex: 8, solo por resumen; no se integran
+
+  · Granadas: n/d — SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE
+
+  · AEI: n/d — SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE
+
+  · Explosivos: n/d — SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE
+
+  · Armamento especial: n/d — SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE
+
+  · Detenidos: n/d — en el mismo evento de aseguramiento: Edomex 4, solo por titular de medio, sin cifra de autoridad
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-11-16 · Hora: 10:30 (CDMX) · Corte: Matutino · ARGOS N.° 152 · USO INSTITUCIONAL
+
+============================================================================
+
+## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
+
+  ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
+  ARG-152-ARM-001 | Estado de México | cinco municipios (solo por resumen) | pub. 15-nov, por ruta; día de los cateos no fijado | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | Gabinete de Seguridad (solo por resumen) | Bajo · 4 armas cortas, 8 cargadores y 80 cartuchos solo por resumen: CANTIDAD NO DETERMINADA — NO SE INTEGRA AL TOTAL NUMÉRICO; 4 detenidos por titular de medio, sin cifra de autoridad: n/d; FRONTERA DE VENTANA — HORA NO FIJADA; ver ARG-152-009
+
+SIN TOTAL NACIONAL VERIFICABLE DURANTE EL CORTE: ningún aseguramiento de la ventana con cantidad
+publicada por titular o por autoridad.
+Lectura regional: ninguna región con arma integrada; Centro, un evento cualitativo (Estado de
+México) sin cantidad determinada. Cálculo propio.
+BOLETÍN FEDERAL DE ACCIONES DEL 13, 14 Y 15-NOV: SIN RESULTADO INDEXADO EN VENTANA (día suelto,
+rango y título, al inicio y al cierre); último indexado: acciones del 12-nov.
+VISTOS, NO INTEGRADOS: Cocula, Gro., 2 armas largas, 11 cargadores y 263 cartuchos SOLO POR
+RESUMEN, detención sin día; operativo previo del 3-nov en Tlanipatlán con cifras parecidas
+(ARG-146-ARM-003): POSIBLE DUPLICIDAD — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN · Querétaro, una
+pistola, dos cargadores y 34 cartuchos tras un concierto SOLO POR RESUMEN, sin día · Tabasco,
+FIRT Olmeca, 22 detenidos del 9 al 12-nov (Diario de Tabasco 2026/11/13): ventana de 150 ·
+Matamoros, «Los Ciclones», Barrett .50 y granada (13-nov por ruta): ventana de 150, ya visto.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-11-16 · Hora: 10:30 (CDMX) · Corte: Matutino · ARGOS N.° 152 · USO INSTITUCIONAL
+
+============================================================================
+
+## RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES
+
+  · Sentencias condenatorias: 0 — NINGUNA SENTENCIA INTEGRABLE EN LA VENTANA
+
+  · Personas sentenciadas: 0 — ningún boletín de la ventana leído
+
+  · Pena acumulada: 0 — ningún caso integrable
+
+  · Reparación del daño: 0 — ningún monto integrable
+
+  · Fiscalías con resultado: 0 — ver indicador de cobertura
+
+## CANDIDATOS
+
+  Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
+  Nuevo León · Monterrey (col. Bella Vista) | Homicidio calificado y delitos contra la salud SOLO POR RESUMEN; 1 sentenciado (MVS 2026/11/13) | «Casi 26 años», por titular; 25 años 10 meses SOLO POR RESUMEN; PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA | Fiscalía de NL (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · sin boletín en el dominio · ventana de ARGOS 150 | Bajo
+  Tabasco · Jalpa de Méndez | Pederastia; boletín FGET 5119, fechado el 9-nov por el listado del dominio; nota de un medio con otro sentenciado posible: POSIBLE CASO HOMÓNIMO | 30 años, por titular del listado | FGE Tabasco (listado del dominio) | PENDIENTE DE CONFIRMACIÓN OFICIAL · URL individual no identificada · ventana de ARGOS 150 | Bajo
+  Sin novedad | Veracruz, 88 años por secuestro agravado (Hoy Xalapa 2026/11/13) · Champotón, 66 años 8 meses, procedimiento abreviado (PorEsto 2026/11/6): dominio de la fiscalía de Campeche no confirmado | — | — | PENDIENTE DE CONFIRMACIÓN OFICIAL | Bajo
+
+## INDICADOR DE COBERTURA
+
+  Renglón | Resultado
+  FGR revisada | No por dominio
+  Fiscalías revisadas en sentencias | 22 de 32, por búsqueda dirigida que devolvió páginas del dominio; acceso directo: 0 · BC, Son, Chih, Sin, Dgo · NL, Tamps, Coah, Zac, SLP · Mich, Ags · CDMX, Edomex, Pue, Tlax, Mor, Hgo, Qro · Ver, Tab · Yuc
+  Fiscalías con sentencia publicada en la ventana | 0 · candidatos de la tabla: publicados antes de la ventana
+  SIN RESULTADO INDEXADO EN VENTANA | 22 fiscalías estatales revisadas
+  SIN ACTUALIZACIÓN CONSTATADA | 0
+  Dominio de la fiscalía no confirmado | Camp, tercera edición (incluida en las 10 NO REVISADA)
+  NO REVISADA — sentencias | 10: BCS · Jal, Gto, Col, Nay · Oax, Chis, Gro, QRoo, Camp
+  Páginas no disponibles · errores de acceso | Fuentes con error de acceso: bloqueo de egreso: curl a www.gob.mx/fgr, 16-nov 10:30: código 000
+  Alto impacto y armamento | Alto impacto: consulta propia en 23 entidades, Durango incluida; solo consulta amplia en 9 —Chih, BCS · Coah · Col, Nay, Ags · CDMX · Camp, Yuc— · armamento: 11 de 32 por dominio oficial —SLP · Col, Jal, Gto, Nay · Mor · Gro, Oax, Camp, Chis, QRoo—, todas SIN RESULTADO INDEXADO EN VENTANA · NO REVISADA (21): BC, BCS, Son, Chih, Sin, Dgo · NL, Tamps, Coah, Zac · Mich, Ags · CDMX, Edomex, Pue, Tlax, Hgo, Qro · Ver, Tab · Yuc
+  Boletín federal | Acciones del 13, 14 y 15-nov: SIN RESULTADO INDEXADO EN VENTANA en día suelto, rango y título, al inicio y al cierre · último indexado: acciones del 12-nov (Milenio, Ultranoticias, SICOM, RED113, Tallapolítica, Certeza Diario) · Guardia Nacional, Defensa y ANAM: NO REVISADAS
+  Techo de confianza del producto | ★★★★☆ (techo de política) · esta edición no supera ★★★☆☆: sin lectura directa de documento oficial · BLOQUEO DE EGRESO REVERIFICADO EL 16-NOV: GOB.MX
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-11-16 · Hora: 10:30 (CDMX) · Corte: Matutino · ARGOS N.° 152 · USO INSTITUCIONAL
+
+============================================================================
+
+## VALORACIÓN ARGOS, CONCLUSIONES E INDICADORES
+
+── VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL
+
+1. Cinco rojos propios en cinco entidades: 0,21 rojos por hora (5 en 24 h 06 min), frente a 0,16
+en ARGOS 151 (cálculo propio).
+2. Rojos por región: Noroeste 2 · Noreste 1 · Golfo 1 · Sureste 1 · Occidente y Centro 0; dos
+recuperaciones de la ventana de 151, fuera de totales (cálculo propio).
+3. Violencia operativa: tres amarillos (Michoacán, Chihuahua y Tlaxcala).
+4. Respuesta institucional: un verde (huachicol, Estado de México) sin armamento integrable;
+ninguna sentencia integrable (totales, en el panorama).
+5. VENTANA DE 24 H 06 MIN SIN BOLETÍN FEDERAL INDEXADO; OCHO DE NUEVE HECHOS EN FRONTERA DE
+VENTANA Y CUATRO ROJOS CON CLÁUSULA DE RETIRO: TOTALES NO COMPARABLES SIN MÁS. CÁLCULO PROPIO.
+
+── CONCLUSIONES DE INTELIGENCIA CRIMINAL
+
+1. VIVIENDAS Y FIESTAS FAMILIARES COMO BLANCO NOCTURNO EN CUATRO ENTIDADES: 9 MUERTOS Y 7
+HERIDOS —CÁLCULO PROPIO—, CON MENORES Y MÚSICOS ENTRE LAS VÍCTIMAS (ARG-152-001, -003, -005 y
+-006): los agresores entran al domicilio o a la reunión; vínculo entre hechos no acreditado.
+Línea: vigilar la reincidencia de ataques a domicilios en la sierra sur de Nuevo León.
+2. CARTULINA CON PLAZO DE 24 HORAS EN VILLAHERMOSA (ARG-152-003): es consistente con una disputa
+territorial abierta en Centro; los grupos no han sido identificados por autoridad. Línea:
+vigilar en las 48 horas siguientes hechos armados en Centro, Tabasco, al vencer el plazo.
+3. PERSONAL EN RETIRO Y EN ACTIVO DE CORPORACIONES COMO CUSTODIA DE UN PREDIO RURAL EN TECATE
+(ARG-152-002): el comando eligió un objetivo con capacidad de fuego, consistente con planeación
+previa; móvil y vínculo no acreditados. Línea: vigilar el empleo de agentes en activo como
+custodia privada en la zona Tecate–Ensenada.
+4. AGENTE MUNICIPAL DE UNA COMUNIDAD INDÍGENA ATACADO EN UN ESPACIO COMUNITARIO (ARG-152-004):
+la espera de los agresores, solo por resumen, sugiere un ataque dirigido; móvil no informado y
+vínculo con otros hechos no acreditado. Línea: vigilar amenazas contra agentes municipales del
+distrito de Ejutla.
+5. HUACHICOL DE GAS LP CON FLOTA PROPIA EN EL NORTE DEL ESTADO DE MÉXICO (ARG-152-009):
+tractocamiones y pipas son consistentes con distribución a escala; participación política de un
+detenido no acreditada en proceso. Línea: vigilar tomas y centros de carga de gas LP en el
+corredor Atlacomulco–Jocotitlán.
+
+## INDICADORES OFICIALES
+
+gabinetedeseguridad.gob.mx — sin lectura directa; cifras preliminares de homicidio de la ventana
+no vistas · SESNSP e INEGI: NO REVISADOS en esta edición.
+Toda cifra de este cartelón sin emisor nombrado es cálculo propio de ARGOS.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-11-16 · Hora: 10:30 (CDMX) · Corte: Matutino · ARGOS N.° 152 · USO INSTITUCIONAL
