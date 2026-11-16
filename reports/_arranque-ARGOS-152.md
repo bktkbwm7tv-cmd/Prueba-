@@ -16,7 +16,7 @@ Los comandos del mensaje de órdenes. **Estado esperado**: última edición `arg
 | Ventana | **abre 2026-11-15 10:24 CDMX** (cierre de 151) y cierra a la hora real de arranque (o del «Procede», si llega más de dos horas tarde) |
 | Serie | 114 h 02 (150) · **24 h 15 (151)** |
 | Ciclo | **A** (Noroeste + Centro), tras la prioridad sobre el ciclo |
-| Archivo | `argos-<FECHA DEL DÍA>.html` · `WINDOW_DAYS` = número de fechas de calendario que toca la ventana (la plantilla de 151 trae 2) |
+| Archivo | `argos-2026-11-16.html` (lunes 16-nov) · `WINDOW_DAYS` = **2** (15 y 16; la plantilla de 151 ya trae 2) |
 
 ## BLOQUE 2 — LECTURA OBLIGATORIA
 
@@ -29,7 +29,7 @@ Los comandos del mensaje de órdenes. **Estado esperado**: última edición `arg
 
 Tope de 200 por turno: control 2 · coordinador 18 · ola 150 (6 × 25; **4 por equipo reservadas a fecha en la ruta**; tope duro) · `procedencia-cifras` 30 (**R1 24 · R2 6**). Todo `extended`.
 
-**Orden**: (1) Bloque 0 y control · (2) triple consulta federal (13, 14 y 15-nov, probable agregado del lunes 16) y recall nacional por día antes de la ola · (3) ola · (4) borrador · (5) controles R1 en paralelo, R2 en serie · (6) repetición de la triple consulta al final.
+**Orden**: (1) Bloque 0 y control · (2) triple consulta federal (agregado 13-15 probable hoy, lunes 16; repartir sus acciones entre 150, 151 y 152 solo con día por ruta o titular) y recall nacional por día antes de la ola · (3) ola · (4) borrador · (5) controles R1 en paralelo, R2 en serie · (6) repetición de la triple consulta al final.
 
 ## BLOQUE 4 — TRAMPAS VERIFICADAS EN 151
 
