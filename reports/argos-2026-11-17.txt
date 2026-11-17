@@ -54,7 +54,7 @@ cálculo propio · ninguna recuperación de ventanas anteriores
   Guanajuato · Santiago Maravatío (carretera Salvatierra–Yuriria, tramo de Casacuarán) · MAR 17-NOV, POR RUTA | Emboscada a policías municipales: 1 muerto y 1 herido grave | 🔴 Rojo | SIN BOLETÍN | Telediario | ★★★☆☆ | ARG-153-001
   Chihuahua · Ciudad Juárez (Puerto de Anapra) · LUN 16-NOV, POR RUTA | Doble homicidio: 2 muertos y 1 herido | 🔴 Rojo | SIN BOLETÍN | — | ★★★☆☆ | ARG-153-004
   Nayarit · Acaponeta (brecha a La Guásima, autopista Tepic–Mazatlán) · LUN 16-NOV, POR RUTA | Hallazgo de 7 cuerpos de hombres, embolsados | 🔴 Rojo | Fiscalía de Nayarit (por titular de medio) | MVS · Infobae · La Razón · Aristegui | ★★★☆☆ | ARG-153-002
-  Ciudad de México · Azcapotzalco (col. San Pedro Xalpa) · LUN 16-NOV, POR RESUMEN | Ataque a un automóvil: 2 muertos y 1 herido | 🔴 Rojo | SIN BOLETÍN | El Universal · N+ · TV Azteca | ★★★☆☆ | ARG-153-003
+  Ciudad de México · Azcapotzalco (col. San Pedro Xalpa) · LUN 16-NOV, POR RESUMEN | Ataque a un automóvil: 2 muertos y 1 herido | 🔴 Rojo | SIN BOLETÍN | El Universal · TV Azteca · Telediario | ★★★☆☆ | ARG-153-003
   Sinaloa · Mazatlán (fracc. Los Magueyes) · LUN 16-NOV, POR TITULAR | Ataque a un convivio: 1 muerto y 2 heridos | 🟡 Amarillo | SIN BOLETÍN | — | ★★★☆☆ | ARG-153-005
   Michoacán · Zamora (col. Ferrocarril) · LUN 16-NOV, POR RUTA | Hombre asesinado a balazos | 🟡 Amarillo | SIN BOLETÍN | — | ★★★☆☆ | ARG-153-007
   Tamaulipas · Ciudad Victoria (exterior del Hospital La Salle) · LUN 16-NOV, POR RUTA | Persecución y balacera: 2 heridos | 🟡 Amarillo | Vocería de Seguridad de Tamaulipas (mensaje republicado) | MVS · El Universal · Milenio · Infobae | ★★★☆☆ | ARG-153-006
@@ -75,13 +75,11 @@ autoridad: n/d · marcas: 5 PUBLICADO EL DÍA DE APERTURA SIN HORA · 1 FRONTERA
 NO FIJADA (Santiago Maravatío, publicado el día de cierre) · totales sujetos a 2 cláusulas de
 retiro (Azcapotzalco: hora solo por resumen anterior a las 10:30; Acaponeta: mañana o tarde,
 contradicho).
-BALANCES, NO SE INTEGRAN NI SE REPARTEN: «Mazatlán suma siete asesinatos y nueve heridos tras 11
-ataques armados… durante el fin de semana» (Infobae 2026/11/16) · «Lunes con 36 ejecutados» (Sol
-Yucatán) · «Suman ya 15 miembros de cabildo asesinados en un año» (La Razón 2026/11/16) · «Con
-más de 60 resoluciones judiciales y 45 imputaciones durante el fin de semana…» (Hoy Xalapa
-2026/11/16) · «Quintana Roo registró un total de 299 personas detenidas en una semana» (PorEsto
-2026/11/17) · «Detienen fuerzas del orden a 22 personas en pro de la seguridad» (Luces del Siglo
-2026/11/17; operativos al 12-nov).
+BALANCES, NO SE INTEGRAN NI SE REPARTEN: «Lunes con 36 ejecutados» (Sol Yucatán) · «Con más de
+60 resoluciones judiciales y 45 imputaciones durante el fin de semana…» (Hoy Xalapa 2026/11/16)
+· «Quintana Roo registró un total de 299 personas detenidas en una semana» (PorEsto 2026/11/17)
+· «Detienen fuerzas del orden a 22 personas en pro de la seguridad» (Luces del Siglo 2026/11/17;
+operativos al 12-nov).
 Vistos, fuera de totales (sin ruta con día, fuente única o ventana anterior): Chilapa, Gro.,
 col. Valle Dorado, comerciante asesinado, noche del lunes SOLO POR RESUMEN, fuente única sin
 fecha en la ruta · Cosoleacaque, Ver., fracc. Los Prados, hombre asesinado en un auto, lunes 16
@@ -101,22 +99,17 @@ Oax., 1 muerto y varios heridos por un grupo armado (domingo 15 SOLO POR RESUMEN
 persona sin vida en un domicilio (PorEsto 2026/11/15) · Morelia, dos detenidos armados en
 motocicleta (RED Michoacán 2026/11/15) · ventana de ARGOS 151 o 150, día y hora SOLO POR
 RESUMEN: Yautepec, Mor., 2 muertos tras una riña en una cabalgata, 🔴 (sábado 14 SOLO POR
-RESUMEN; Informador 20261116; La Silla Rota 2026/11/16) · Atotonilco el Alto, Jal., captura de
-un operador «tras agresión a elementos federales», por titular (Infobae 2026/11/15), 🟡: quién
-inició, no determinado; ~15:55 del sábado 14 y patrullaje, SOLO POR RESUMEN.
+RESUMEN; Informador 20261116; La Silla Rota 2026/11/16) · Atotonilco el Alto, Jal., visto
+también en ARGOS 152: captura de un operador «tras agresión a elementos federales», por titular
+(Infobae 2026/11/15), 🟡: quién inició, no determinado; ~15:55 del sábado 14 y patrullaje, SOLO
+POR RESUMEN.
 FE DE ERRATAS — ARGOS 152: ARG-152-002 Tecate: dos víctimas halladas sin vida, por titular
 (Tribuna 2026/11/16: «hallan sin vida a agente de la FGE y a capitán retirado en Baja
 California; habían sido secuestrados»); tres con vida, SOLO POR RESUMEN; hallazgo ~02:00 del 16
 SOLO POR RESUMEN · ARG-152-007 Anapra: 2 muertos, por titular (El Diario de Chihuahua
 2026/nov/16: «identifican a pareja asesinada en Anapra»); conserva 🟡 en su edición, sin
 recalificación retroactiva · muertos de 152: 12 → 15 (cálculo propio); si el hallazgo de Tecate
-resultara posterior a las 10:30 del 16, las dos muertes siguen en ARG-152-002, sin ficha nueva ·
-ARG-152-009: cateos en la madrugada del 13 SOLO POR RESUMEN: de confirmarse, evento anterior
-publicado durante el corte; sin efecto en cifras · FE DE ERRATAS — ARGOS 151: ARG-151-002
-Jolalpan: 3 muertos, por titular (Cinco Radio; e-consulta: «ataque armado en Jolalpan deja tres
-muertos; anuncian base de Guardia Nacional»), frente a 4, por titular (Diario Cambio:
-«enfrentamiento armado entre policías y civiles deja cuatro muertos en Jolalpan»), y 2, por
-titular (Periódico Central): CONTRADICHO — SE MANTIENEN 2; SIN EFECTO EN LOS TOTALES DE 151.
+resultara posterior a las 10:30 del 16, las dos muertes siguen en ARG-152-002, sin ficha nueva.
 Seguimiento, fuera del semáforo: Cuernavaca (ARG-147-001): audiencia de vinculación del presunto
 autor del asesinato del regidor, «inicia audiencia de vinculación a proceso contra presunto
 asesino de regidor de Cuernavaca, Morelos», por titular (UnoTV, sin fecha en la ruta): DÍA SOLO
@@ -157,12 +150,12 @@ ARG-153-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 1 · Regional 3 ·
 Abierta 0 · con fecha en la ruta: Noticieros en Línea (2026/nov/17) · Hecho: martes 17-nov, por
 ruta; ~09:00, solo por resumen · Hora: ~09:00 (solo por resumen) · Consulta: 2026-11-17, última
-búsqueda 14:00 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
+búsqueda 14:30 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
 asegurado: no publicado
 Deslindes y reservas: Santiago Maravatío no figura en las ediciones previas; Maravatío, Mich.
-(ARG-136-008): otro hecho. Emboscada de septiembre de 2024 en el mismo corredor: otro hecho;
-«fallecen dos policías de Santiago Maravatío…» (Agoragto, sin fecha en la ruta): fecha no
-determinada; su saldo contradice el 1 + 1: no se integra. Identidades: no publicadas.
+(ARG-136-008): otro hecho. «fallecen dos policías de Santiago Maravatío…» (Agoragto, sin fecha
+en la ruta): fecha no determinada; su saldo contradice el 1 + 1: no se integra. Identidades: no
+publicadas.
 
 ### NAYARIT · ACAPONETA — HALLAN SIETE CUERPOS DE HOMBRES ENVUELTOS EN PLÁSTICO EN UNA BRECHA JUNTO A LA AUTOPISTA TEPIC–MAZATLÁN [ROJO]
 
@@ -189,7 +182,7 @@ Nacional 4 · Regional 4 · Abierta 1 · con fecha en la ruta: MVS Noticias (202
 (2026/11/16) · Infobae (2026/11/17) · La Razón (2026/11/17) · RED Michoacán (2026/11/17) ·
 Potosinoticias (2026/11/17) · Hecho: hallazgo lunes 16-nov, por ruta; mañana o tarde,
 contradicho, solo por resumen · Hora: mañana o tarde, contradicho (solo por resumen) · Consulta:
-2026-11-17, última búsqueda 14:00 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
+2026-11-17, última búsqueda 14:30 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
 fila — armamento asegurado: no publicado
 Deslindes y reservas: Acaponeta figura por ARG-132-REC-004 (km 112+600, tres cuerpos, octubre):
 otro hecho, mismo corredor. Origen de las víctimas en Sinaloa, solo por medios: no confirmado.
@@ -229,7 +222,7 @@ resumen; todos los resúmenes apuntan a antes de la apertura; ninguna fuente ins
 Fuentes: Institucional 0 · Nacional 3 · Regional 4 · Abierta 0 · con fecha en la ruta: Diario
 Basta (2026/11/17) · Hecho: lunes 16-nov, DÍA SOLO POR RESUMEN; primeras horas del 16 o noche
 del 15, solo por resumen; ningún titular fija la hora · Hora: primeras horas del 16 o noche del
-15 (solo por resumen) · Consulta: 2026-11-17, última búsqueda 14:00 · Estatus: Parcialmente
+15 (solo por resumen) · Consulta: 2026-11-17, última búsqueda 14:30 · Estatus: Parcialmente
 corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: San Pedro Xalpa no figura en las ediciones previas; Azcapotzalco, por
 ARG-134-009 y -014 (col. Pasteros, octubre): otro hecho. Identidades: no publicadas.
@@ -251,7 +244,7 @@ ARG-153-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 4 ·
 Abierta 0 · con fecha en la ruta: El Diario de Chihuahua (2026/nov/16) · El Bordo (20261116) ·
 Puente Libre (17-nov-2026) · Hecho: lunes 16-nov, por ruta; ~18:00, solo por resumen · Hora:
-~18:00 (solo por resumen) · Consulta: 2026-11-17, última búsqueda 14:00 · Estatus: Parcialmente
+~18:00 (solo por resumen) · Consulta: 2026-11-17, última búsqueda 14:30 · Estatus: Parcialmente
 corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Anapra figura por ARG-152-007 (pareja, hombre y mujer, atacada el domingo
 15): otro hecho, del día anterior; aquí, dos hombres y un herido; el titular de El Diario lo
@@ -282,7 +275,7 @@ ARG-153-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 3 ·
 Abierta 0 · con fecha en la ruta: Luz Noticias (2026-11-17) · Línea Directa (2026-11-17) ·
 Hecho: noche del lunes 16-nov, por titular; ~23:30, solo por resumen · Hora: ~23:30 (solo por
-resumen) · Consulta: 2026-11-17, última búsqueda 14:00 · Estatus: Parcialmente corroborado ·
+resumen) · Consulta: 2026-11-17, última búsqueda 14:30 · Estatus: Parcialmente corroborado ·
 Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Los Magueyes no figura en las ediciones previas. Reporte18 (titular «dos
 asesinatos», slug «tres») da un muerto y un herido; las demás fuentes, dos heridos. «Mazatlán
@@ -314,7 +307,7 @@ resumen; quién inició no determinado; mensaje institucional solo republicado �
 Institucional 1 · Nacional 4 · Regional 5 · Abierta 0 · con fecha en la ruta: ABC Noticias
 (2026/11/16) · MVS Noticias (2026/11/16) · La Región (2026/11/16) · Infobae (2026/11/17) ·
 Hecho: lunes 16-nov, por ruta; ~11:40, solo por resumen · Hora: ~11:40 (solo por resumen) ·
-Consulta: 2026-11-17, última búsqueda 14:00 · Estatus: Parcialmente corroborado · Conteo de
+Consulta: 2026-11-17, última búsqueda 14:30 · Estatus: Parcialmente corroborado · Conteo de
 armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Hospital La Salle no figura en las ediciones previas; Ciudad Victoria, por
 aseguramientos de agosto (ARG-91-010, ARG-104-008): otros hechos. Identidades: no publicadas.
@@ -336,7 +329,7 @@ ARG-153-007 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 4 ·
 Abierta 0 · con fecha en la ruta: Grupo Marmor (2026/11/16) · Hecho: lunes 16-nov, por ruta;
 tarde, solo por resumen · Hora: tarde (solo por resumen) · Consulta: 2026-11-17, última búsqueda
-14:00 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado:
+14:30 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado:
 no publicado
 Deslindes y reservas: Colonia Ferrocarril no figura en las ediciones previas; Zamora, por hechos
 de agosto a octubre (ARG-98-002, ARG-129-REC-001, ARG-141-002): otros hechos. Identidades:
@@ -362,7 +355,7 @@ ARG-153-008 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 solo por titular de medio; identidad no confirmada; ninguna fuente institucional · Fuentes:
 Institucional 0 · Nacional 3 · Regional 2 · Abierta 1 · con fecha en la ruta: Potosinoticias
 (2026/11/16) · Infobae (2026/11/17) · Hecho: lunes 16-nov, por ruta; ~11:40, solo por resumen ·
-Hora: ~11:40 (solo por resumen) · Consulta: 2026-11-17, última búsqueda 14:00 · Estatus:
+Hora: ~11:40 (solo por resumen) · Consulta: 2026-11-17, última búsqueda 14:30 · Estatus:
 Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Mismo operativo que ARG-153-006: la detención se ficha aparte. Alias:
 medios, no se reproduce. Blog del Narco, NO OFICIAL.
@@ -443,7 +436,7 @@ anteriores a la ventana.
 
   Entidad · Municipio | Caso | Pena publicada | Autoridad | Por qué NO se integra | Confianza
   Nuevo León · Monterrey | Homicidio; 1 sentenciado, por titular (MVS 2026/11/17: «sentencian a 25 años a homicida en Monterrey») | 25 años, por titular | Fiscalía de NL (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · sin boletín en el dominio · publicado en la ventana | Bajo
-  Nuevo León · Monterrey (col. Bella Vista) | Homicidio calificado y delitos contra la salud SOLO POR RESUMEN; 1 sentenciado (MVS 2026/11/13); POSIBLE DUPLICIDAD con el renglón anterior (25 años + 10 meses = «casi 26 años»): no se cuentan como dos casos hasta validar | «Casi 26 años», por titular; PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA | Fiscalía de NL (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · sin boletín en el dominio · ventana de ARGOS 150 | Bajo
+  Nuevo León · Monterrey (col. Bella Vista) | Homicidio calificado y delitos contra la salud SOLO POR RESUMEN; 1 sentenciado (MVS 2026/11/13); POSIBLE DUPLICIDAD con el renglón anterior (25 años + 10 meses = «casi 26 años»): no se cuentan como dos casos hasta validar | «Casi 26 años», por titular; PENA COMPUESTA — REQUIERE REVISIÓN JURÍDICA | Fiscalía de NL (por medios) | PENDIENTE DE CONFIRMACIÓN OFICIAL · sin boletín en el dominio · ventana de ARGOS 150 · candidato ya publicado en ARGOS 152 | Bajo
 
 ## INDICADOR DE COBERTURA
 
@@ -472,15 +465,14 @@ anteriores a la ventana.
 1. Rojos por agravante: víctima autoridad (Guanajuato), hallazgo de restos humanos (Nayarit) y
 homicidio múltiple (Ciudad de México y Ciudad Juárez); 0,16 rojos por hora, frente a 0,21 en
 ARGOS 152 (cálculo propio).
-2. Rojos por región: Occidente 2 · Centro 1 · Noroeste 1 · Noreste, Golfo y Sureste 0; ninguna
-recuperación de ventanas anteriores (cálculo propio).
+2. Rojos por región: Occidente 2 · Centro 1 · Noroeste 1 · Noreste, Golfo y Sureste 0 (cálculo
+propio).
 3. Violencia operativa: una confrontación derivada de un operativo, con heridos (Tamaulipas), y
 dos homicidios dolosos únicos (Sinaloa y Michoacán).
 4. Respuesta institucional: detenciones tras el operativo de Ciudad Victoria, sin cifra de
 autoridad ni armamento publicado; ninguna sentencia integrable (totales, en el panorama).
-5. VENTANA DE 25 H 04 MIN SIN BOLETÍN FEDERAL DIARIO INDEXADO; CINCO DE OCHO HECHOS PUBLICADOS
-EL DÍA DE APERTURA SIN HORA FIJADA Y DOS ROJOS —2 DE LOS 7 MUERTOS Y LOS 7 CUERPOS— CON CLÁUSULA
-DE RETIRO: TOTALES NO COMPARABLES SIN MÁS. CÁLCULO PROPIO.
+5. TOTALES NO COMPARABLES SIN MÁS CON LOS DE OTRAS EDICIONES: PUBLICACIÓN DEL DÍA DE APERTURA
+SIN HORA Y DOS ROJOS CON CLÁUSULA DE RETIRO (DETALLE EN TOTALES DEL CORTE). CÁLCULO PROPIO.
 
 ── CONCLUSIONES DE INTELIGENCIA CRIMINAL
 

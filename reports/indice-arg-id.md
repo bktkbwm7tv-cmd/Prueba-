@@ -1240,5 +1240,5 @@ en que el ARG-ID fue **definido por primera vez**.
 | `ARG-153-006` | 153 | 2026-11-16 | ARG-153-006 — Ciudad Victoria (exterior del Hospital La Salle), Tamaulipas: Persecución y balacera: 2 heridos; Vocería por mensaje republicado; 🟡; ★★★☆☆ |
 | `ARG-153-007` | 153 | 2026-11-16 | ARG-153-007 — Zamora (col. Ferrocarril), Michoacán: Hombre asesinado a balazos; Grupo Marmor (2026/11/16); 🟡; ★★★☆☆ |
 | `ARG-153-008` | 153 | 2026-11-16 | ARG-153-008 — Ciudad Victoria (Hospital La Salle), Tamaulipas: 1 o 2 detenidos tras la persecución (contradicho); captura de un presunto jefe regional no confirmada por autoridad; 🟢; ★★★☆☆ |
-| `ARG-153-FE-001` | 153 | 2026-11-17 | ARG-153-FE-001 — fe de erratas sobre ARGOS 152: ARG-152-002 Tecate, dos víctimas halladas sin vida (Tribuna 2026/11/16); ARG-152-007 Anapra, 2 muertos (conserva 🟡); muertos de 152: 12 → 15; ARG-152-009, cateos del 13 por resumen |
-| `ARG-153-FE-002` | 153 | 2026-11-17 | ARG-153-FE-002 — precisión a ARG-151-002 Jolalpan: 2, 3 y 4 muertos por titular (Periódico Central; Cinco Radio y e-consulta; Diario Cambio): contradicho, se mantienen 2 |
+| `ARG-153-FE-001` | 153 | 2026-11-17 | ARG-153-FE-001 — fe de erratas sobre ARGOS 152: ARG-152-002 Tecate, dos víctimas halladas sin vida (Tribuna 2026/11/16); ARG-152-007 Anapra, 2 muertos (conserva 🟡); muertos de 152: 12 → 15 |
+| `ARG-153-FE-002` | 153 | 2026-11-17 | ARG-153-FE-002 — precisión a ARG-152-FE-002 (Jolalpan, ARG-151-002): el «4» es por titular (Diario Cambio); se mantienen 2. NO PUBLICADA EN EL CARTELÓN |
