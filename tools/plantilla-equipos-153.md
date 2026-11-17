@@ -3,8 +3,8 @@
 Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 
 ## Ventana
-- ABRE: **lunes 16-nov-2026 10:30 CDMX** (donde cerró ARGOS 152). CIERRA: **hora real de arranque de la sesión de ARGOS 153** (o del «Procede») (el coordinador la escribe aquí al copiar la plantilla: ____).
-- Calendario: el coordinador lo escribe día por día. Comprueba siempre el día de la semana que dice la fuente contra el calendario.
+- ABRE: **lunes 16-nov-2026 10:30 CDMX** (donde cerró ARGOS 152). CIERRA: **hora real de arranque de la sesión de ARGOS 153** (o del «Procede») (**martes 17-nov-2026 11:34 CDMX**; duración 25 h 04 min).
+- Calendario: **lun 16-nov (10:30–24:00, 13 h 30)** · **mar 17-nov (00:00–11:34, 11 h 34)**. Comprueba siempre el día de la semana que dice la fuente contra el calendario.
 - **ARGOS 152 (ventana 15-nov 10:24 → 16-nov 10:30) publicó 9 hechos** (`ARG-152-001` a `-009`: Galeana familia atacada, Tecate cinco privados de la libertad, Villahermosa Gaviotas Sur, Lachigalla agente municipal, Mazatlán Pueblo Nuevo fiesta, Morelia Colinas del Sur, Cd. Juárez Anapra, Calpulalpan, Edomex huachicol) y 2 `-REC-` (Chignahuapan, Tijuana La Postal). Un hecho del 16-nov antes de las 10:30 que 152 NO publicó es de la ventana de 152: `-REC-` **solo si es 🔴 y la hora la fija un titular**; con hora solo por resumen, ficha propia con FRONTERA y cláusula de retiro.
 - Todo hecho del 16 necesita HORA frente a las 10:30. Nunca infieras la hora. «Esta tarde» en un resumen NO fecha un hecho.
 - Criterio de inclusión: entra con marca el hecho con **ruta fechada o titular con día**. ⚠️ **«Rojo sin ruta» = sin DÍA por ruta o titular**; un hecho con día por ruta y sin hora NO es «sin ruta»: se entrega como hecho con la hora marcada «solo por resumen» (Texhuacán en 151).
