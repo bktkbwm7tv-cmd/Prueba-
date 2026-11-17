@@ -9,7 +9,7 @@
 | Ventana | **lun 16-nov 10:30 → mar 17-nov 11:34 CDMX** · duración **25 h 04 min** (cálculo con `date`) |
 | Calendario | lun 16 (10:30–24:00, 13 h 30) · mar 17 (00:00–11:34, 11 h 34) |
 | Hora de arranque (Bloque 0) | 11:34 CDMX · «Procede» a las 13:09 (1 h 35 min, dentro del margen de dos horas): no se ajusta el cierre |
-| Consulta | última búsqueda: __CONSULTA__ CDMX (cierre de `procedencia-cifras` R2) |
+| Consulta | última búsqueda: 13:40 CDMX (cierre de `procedencia-cifras` R2) |
 | `WINDOW_DAYS` | 2 (la plantilla de 152 ya traía 2: sin reemplazo; aserción `WINDOW_DAYS = 2;` única) |
 | Ciclo | **B** (Noreste + Golfo encabezan el triaje judicial), tras la prioridad sobre el ciclo |
 | Red | `curl https://www.gob.mx/fgr` → `000` (17-nov 11:34): egreso bloqueado; solo WebSearch |
@@ -84,3 +84,17 @@ Tercer día hábil sin agregado del fin de semana del 13 al 15: pasa a 154.
 | `procedencia-cifras` | R1 (paralelo, 24 búsquedas) | CORREGIR | El Diario de Chihuahua: titular corregido y ruta nov/16 (no 17) · Anapra tercer homicidio: «queman vivo…» (Puente Libre), no «baleado y vivienda incendiada» · Acaponeta: hora contradicha, cláusula de retiro, semanas contradichas (Infobae, Entre Líneas, resumen), comunicado 044/2026 retirado · Azcapotzalco: N+ retirado, día solo por resumen, «más de 20 disparos» por slug · Ciudad Victoria: N+ sustituido por Notigape y El Mañana · Zamora: PCM → Grupo Marmor 2026/11/16; día por ruta; ★★★☆☆ · Los Magueyes: discrepancia de Reporte18 · Jolalpan: «cuatro» de Diario Cambio · Agoragto: fecha no determinada · Tecate: solo Tribuna |
 | `editor-duplicidad` | R1 (paralelo) | CORREGIR | Terceras apariciones retiradas de las fichas (Rancho Anapra, Infonavit Playas, col. Valencia, bloqueos) · detenidos 1 o 2 contradicho · Cajeme a vistos · Cosoleacaque: posible duplicidad con -149-013 · seguimientos con dos campos (Cuernavaca con regidor y día solo por resumen; Zapopan solo -149-018; Texhuacán y Tepehuacán con titular) · Tecate Los Encinos: posible caso homónimo · FE reescrita (Jolalpan, se mantienen 2; Tecate condicional; -152-008 fuera) · Monterrey: posible duplicidad entre candidatos · «El Mike» 🟡 · Valoración sin reimprimir conteos · conclusiones sin cifras de ficha, líneas distintas de la portada · método fuera del indicador · fila «sin novedad» de sentencias fuera. **No aplicada, con razón**: Yautepec como -REC- (§7). Galeana arsenal: posible duplicidad con el cateo de ARG-152-001, marcado |
 | `editor-duplicidad` | R2 (serie) | CORREGIR | N+ retirado del panorama de Azcapotzalco (nacional: El Universal · TV Azteca · Telediario) · «emboscada de septiembre de 2024» retirada del deslinde de -001 (sin fuente) · fe de erratas de Jolalpan fuera del cartelón (`ARG-153-FE-002` reasignada a precisión de `ARG-152-FE-002`) · cláusula de `ARG-152-009` fuera de la FE · balances ya publicados en 152 retirados (Infobae Mazatlán; La Razón cabildos) · Valoración 2 y 5 sin reimprimir totales · Monterrey Bella Vista y «El Mike» marcados como ya publicados en 152. **No aplicada, con razón**: Yautepec como -REC- (§7; la ventana de origen 150 o 151 no es determinable, a diferencia de Tijuana, cuyo sábado tarde-noche caía entero en 151) |
+| `procedencia-cifras` | R2 (serie, 6 búsquedas) | CORREGIR | Correcciones de R1 comprobadas en el HTML · Potosinoticias, Infobae y Excélsior citables: «presunto líder del Cártel del Golfo» en lugar de «jefe regional» (paráfrasis); alias fuera · Notigape no localizada como nota propia: retirada (R 5 → 4) · Cuernavaca: el resultado sí está publicado (vinculación a proceso, UnoTV sin fecha en la ruta) · Zapopan: «escoltas» sin fragmento citable, retirado; prisión preventiva 4 o 5, contradicho · Candelero, Formato 7, Periódico Central, UnoTV y El Mañana citables por titular |
+
+## 9. Presupuesto de búsqueda
+
+Control 2 + coordinador 18 + ola 150 (6 × 25) + `procedencia-cifras` R1 24 + R2 6 = **200**.
+
+## 10. Hallazgos de método (no van al cartelón)
+
+1. **Armamento por dominio**: 31 de 32 (152: 11), por la exigencia de una consulta `site:` por entidad.
+2. **Rotación, ciclo B**: Noreste y Golfo revisaron las siete fiscalías de sus regiones (SRIV); aportaron dos candidatos de Monterrey (posible mismo caso) y la vía `ucs.campeche.gob.mx` para Campeche. Sentencias revisadas bajan de 22 a 17 por la reasignación de presupuesto a armamento.
+3. **N+ «Hoy»**: dos titulares de N+ aportados por equipos no se reprodujeron; tratarlos como liveblog.
+4. **Día de apertura a media mañana**: cinco de ocho hechos publicados el 16 sin hora por fragmento; dos rojos con cláusula de retiro.
+5. **Ninguna fiscalía con comunicado leído**; dos institucionales solo por titular de medio o republicación (Fiscalía de Nayarit, Vocería de Tamaulipas).
+
