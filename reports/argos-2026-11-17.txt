@@ -157,7 +157,7 @@ ARG-153-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 1 · Regional 3 ·
 Abierta 0 · con fecha en la ruta: Noticieros en Línea (2026/nov/17) · Hecho: martes 17-nov, por
 ruta; ~09:00, solo por resumen · Hora: ~09:00 (solo por resumen) · Consulta: 2026-11-17, última
-búsqueda 13:55 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
+búsqueda 14:00 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
 asegurado: no publicado
 Deslindes y reservas: Santiago Maravatío no figura en las ediciones previas; Maravatío, Mich.
 (ARG-136-008): otro hecho. Emboscada de septiembre de 2024 en el mismo corredor: otro hecho;
@@ -189,7 +189,7 @@ Nacional 4 · Regional 4 · Abierta 1 · con fecha en la ruta: MVS Noticias (202
 (2026/11/16) · Infobae (2026/11/17) · La Razón (2026/11/17) · RED Michoacán (2026/11/17) ·
 Potosinoticias (2026/11/17) · Hecho: hallazgo lunes 16-nov, por ruta; mañana o tarde,
 contradicho, solo por resumen · Hora: mañana o tarde, contradicho (solo por resumen) · Consulta:
-2026-11-17, última búsqueda 13:55 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
+2026-11-17, última búsqueda 14:00 · Estatus: Parcialmente corroborado · Conteo de armamento: sin
 fila — armamento asegurado: no publicado
 Deslindes y reservas: Acaponeta figura por ARG-132-REC-004 (km 112+600, tres cuerpos, octubre):
 otro hecho, mismo corredor. Origen de las víctimas en Sinaloa, solo por medios: no confirmado.
@@ -229,7 +229,7 @@ resumen; todos los resúmenes apuntan a antes de la apertura; ninguna fuente ins
 Fuentes: Institucional 0 · Nacional 3 · Regional 4 · Abierta 0 · con fecha en la ruta: Diario
 Basta (2026/11/17) · Hecho: lunes 16-nov, DÍA SOLO POR RESUMEN; primeras horas del 16 o noche
 del 15, solo por resumen; ningún titular fija la hora · Hora: primeras horas del 16 o noche del
-15 (solo por resumen) · Consulta: 2026-11-17, última búsqueda 13:55 · Estatus: Parcialmente
+15 (solo por resumen) · Consulta: 2026-11-17, última búsqueda 14:00 · Estatus: Parcialmente
 corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: San Pedro Xalpa no figura en las ediciones previas; Azcapotzalco, por
 ARG-134-009 y -014 (col. Pasteros, octubre): otro hecho. Identidades: no publicadas.
@@ -251,7 +251,7 @@ ARG-153-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 4 ·
 Abierta 0 · con fecha en la ruta: El Diario de Chihuahua (2026/nov/16) · El Bordo (20261116) ·
 Puente Libre (17-nov-2026) · Hecho: lunes 16-nov, por ruta; ~18:00, solo por resumen · Hora:
-~18:00 (solo por resumen) · Consulta: 2026-11-17, última búsqueda 13:55 · Estatus: Parcialmente
+~18:00 (solo por resumen) · Consulta: 2026-11-17, última búsqueda 14:00 · Estatus: Parcialmente
 corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Anapra figura por ARG-152-007 (pareja, hombre y mujer, atacada el domingo
 15): otro hecho, del día anterior; aquí, dos hombres y un herido; el titular de El Diario lo
@@ -282,7 +282,7 @@ ARG-153-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 3 ·
 Abierta 0 · con fecha en la ruta: Luz Noticias (2026-11-17) · Línea Directa (2026-11-17) ·
 Hecho: noche del lunes 16-nov, por titular; ~23:30, solo por resumen · Hora: ~23:30 (solo por
-resumen) · Consulta: 2026-11-17, última búsqueda 13:55 · Estatus: Parcialmente corroborado ·
+resumen) · Consulta: 2026-11-17, última búsqueda 14:00 · Estatus: Parcialmente corroborado ·
 Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Los Magueyes no figura en las ediciones previas. Reporte18 (titular «dos
 asesinatos», slug «tres») da un muerto y un herido; las demás fuentes, dos heridos. «Mazatlán
@@ -314,7 +314,7 @@ resumen; quién inició no determinado; mensaje institucional solo republicado �
 Institucional 1 · Nacional 4 · Regional 5 · Abierta 0 · con fecha en la ruta: ABC Noticias
 (2026/11/16) · MVS Noticias (2026/11/16) · La Región (2026/11/16) · Infobae (2026/11/17) ·
 Hecho: lunes 16-nov, por ruta; ~11:40, solo por resumen · Hora: ~11:40 (solo por resumen) ·
-Consulta: 2026-11-17, última búsqueda 13:55 · Estatus: Parcialmente corroborado · Conteo de
+Consulta: 2026-11-17, última búsqueda 14:00 · Estatus: Parcialmente corroborado · Conteo de
 armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Hospital La Salle no figura en las ediciones previas; Ciudad Victoria, por
 aseguramientos de agosto (ARG-91-010, ARG-104-008): otros hechos. Identidades: no publicadas.
@@ -336,7 +336,7 @@ ARG-153-007 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0 · Regional 4 ·
 Abierta 0 · con fecha en la ruta: Grupo Marmor (2026/11/16) · Hecho: lunes 16-nov, por ruta;
 tarde, solo por resumen · Hora: tarde (solo por resumen) · Consulta: 2026-11-17, última búsqueda
-13:55 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado:
+14:00 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado:
 no publicado
 Deslindes y reservas: Colonia Ferrocarril no figura en las ediciones previas; Zamora, por hechos
 de agosto a octubre (ARG-98-002, ARG-129-REC-001, ARG-141-002): otros hechos. Identidades:
@@ -362,7 +362,7 @@ ARG-153-008 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 solo por titular de medio; identidad no confirmada; ninguna fuente institucional · Fuentes:
 Institucional 0 · Nacional 3 · Regional 2 · Abierta 1 · con fecha en la ruta: Potosinoticias
 (2026/11/16) · Infobae (2026/11/17) · Hecho: lunes 16-nov, por ruta; ~11:40, solo por resumen ·
-Hora: ~11:40 (solo por resumen) · Consulta: 2026-11-17, última búsqueda 13:55 · Estatus:
+Hora: ~11:40 (solo por resumen) · Consulta: 2026-11-17, última búsqueda 14:00 · Estatus:
 Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Mismo operativo que ARG-153-006: la detención se ficha aparte. Alias:
 medios, no se reproduce. Blog del Narco, NO OFICIAL.
@@ -415,11 +415,12 @@ VISTOS, NO INTEGRADOS — DÍA NO FIJADO: Tlacotepec de Benito Juárez, Pue., lo
 Marina y Policía Municipal, 4 detenidos, 3 armas largas, 1 corta artesanal, 3 cargadores y 15
 cartuchos SOLO POR RESUMEN (agregado federal) · Arteaga, 1 detenido con un arma larga, cartuchos
 y placas balísticas SOLO POR RESUMEN (agregado federal) · Galeana, N.L., 14 armas largas, un
-fusil calibre .50, una ametralladora, ~50 cargadores y más de 800 cartuchos SOLO POR RESUMEN ·
-Sinaloa (Elota) y Michoacán, tres laboratorios de metanfetamina desmantelados por Marina, con
-armas y explosivos SOLO POR RESUMEN (Tus Buenas Noticias 2026/11/17) · Chihuahua, Aldama, 7
-armas, 900 cartuchos, 32 cargadores y 12 artefactos explosivos SOLO POR RESUMEN, comunicados de
-la SSPE del 4 al 13-nov: anteriores a la ventana.
+fusil calibre .50, una ametralladora, ~50 cargadores y más de 800 cartuchos SOLO POR RESUMEN:
+POSIBLE DUPLICIDAD con el cateo de Galeana citado en ARG-152-001 · Sinaloa (Elota) y Michoacán,
+tres laboratorios de metanfetamina desmantelados por Marina, con armas y explosivos SOLO POR
+RESUMEN (Tus Buenas Noticias 2026/11/17) · Chihuahua, Aldama, 7 armas, 900 cartuchos, 32
+cargadores y 12 artefactos explosivos SOLO POR RESUMEN, comunicados de la SSPE del 4 al 13-nov:
+anteriores a la ventana.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-11-17 · Hora: 11:34 (CDMX) · Corte: Matutino · ARGOS N.° 153 · USO INSTITUCIONAL
