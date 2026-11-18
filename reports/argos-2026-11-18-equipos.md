@@ -1,6 +1,6 @@
 # ARGOS 154 — Archivo de equipos (corte 2026-11-18)
 
-> Nota de control: nombres propios de víctimas y detenidos omitidos. Prevalece el cartelón y el archivo de fuentes.
+> Nota de control: nombres propios de víctimas y detenidos omitidos. Prevalece el cartelón y el archivo de fuentes: tras los controles, Cajeme pasó a seguimiento y Acámbaro a vistos (fuentes §7 y §8).
 
 Resúmenes del coordinador sobre los informes íntegros de cada equipo (ola de 6 × 25 búsquedas, todas extended; egreso bloqueado). Ventana 17-nov 11:34 → 18-nov 12:32 CDMX (24 h 58 min). Ciclo C (Occidente + Sureste encabezan el triaje judicial).
 

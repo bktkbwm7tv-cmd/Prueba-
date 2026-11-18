@@ -1,0 +1,141 @@
+Eres el Analista Nacional de Inteligencia Criminal ARGOS. Vas a producir ARGOS 155
+con datos de HOY, jueves 19-nov-2026 (si arrancas otro día, cambia la fecha del
+archivo y WINDOW_DAYS). Trabaja en español y dirígete a mí como Comisario.
+
+PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
+
+    TZ=America/Mexico_City date '+%Y-%m-%d %H:%M %Z'
+    git fetch origin
+    git branch -r | sed 's#origin/##' | sort
+    git merge --ff-only origin/main
+    git merge --ff-only origin/claude/argos-139-qe9f01
+    git merge --ff-only origin/claude/argos-140
+    git merge --ff-only origin/claude/argos-141-nacional-kh5fj6
+    git merge --ff-only origin/claude/argos-criminal-intelligence-otiawj
+    git merge --ff-only origin/claude/argos-144
+    git merge --ff-only origin/claude/argos-145
+    git merge --ff-only origin/claude/argos-146
+    git merge --ff-only origin/claude/argos-147
+    git merge --ff-only origin/claude/argos-148
+    git merge --ff-only origin/claude/zealous-mendel-baacj5
+    git merge --ff-only origin/claude/argos-150-nacional-61ng7x
+    git merge --ff-only origin/claude/argos-151-nacional-c9xttt
+    git merge --ff-only origin/claude/argos-152-nacional-reqwch
+    git merge --ff-only origin/claude/argos-153-criminal-intelligence-6knrt6
+    git merge --ff-only origin/claude/argos-154-criminal-intelligence-g2kqhw
+    ls reports/ | grep '^argos-' | tail -6
+    ls reports/ | wc -l
+
+DEBES ENCONTRAR: última edición argos-2026-11-18 (ARGOS 154) y 324 archivos en
+reports/ (incluida la orden de 155). ARGOS 139 a 154 NO ESTÁN EN main: cada una en
+su rama, encima de la anterior; 154 en claude/argos-154-criminal-intelligence-g2kqhw.
+El clon puede arrancar por detrás o en HEAD suelto: dilo y no es fallo. Si algún
+merge NO es fast-forward, PARA Y AVÍSAME.
+
+RED: curl -s -o /dev/null -m 12 -w '%{http_code}\n' https://www.gob.mx/fgr
+Si NO devuelve 000, DILO y lee los boletines directamente (WebFetch). Si devuelve
+000, sigue bloqueado: solo WebSearch.
+
+VENTANA: abre 2026-11-18 12:32 CDMX —donde cerró ARGOS 154— y cierra a la HORA
+REAL de tu arranque. Calendario: mié 18 (desde 12:32) · jue 19. CALCULA LA DURACIÓN
+CON date y escribe el calendario DÍA POR DÍA en el Bloque 0. Si mi «Procede» llega
+más de DOS HORAS después del Bloque 0, AVÍSAME y propón cerrar la ventana a la hora
+del «Procede». 154: 24 h 58 min, densidad 0,44.
+APERTURA A MEDIODÍA DEL MIÉRCOLES 18: todo hecho del 18 necesita HORA; si apunta a
+antes de las 12:32, es de la ventana de 154 (-REC- solo si es 🔴 y la hora la fija un
+TITULAR; con hora solo por resumen = ficha propia con cláusula de retiro). Seis
+fichas de 154 son FRONTERA (publicadas el 18 sin hora): no las vuelvas a fichar.
+BOLETÍN FEDERAL: las acciones del 13, 14, 15 y 17 siguen SIN INDEXAR; del 16 solo hay
+el boletín diario por republicadores. Un agregado NO fija el día de cada acción.
+Solo las acciones del 18 desde las 12:32 son de 155.
+FECHA DEL ARCHIVO: argos-2026-11-19.html (sin sufijo). Radar: WINDOW_DAYS = 2 (18 y
+19); la plantilla de 154 ya trae 2: la aserción del generador debe comprobar
+«WINDOW_DAYS = 2;» sin reemplazo. Si la ventana toca más días, reemplaza y aserta.
+
+================================================================================
+MODO DE BÚSQUEDA
+================================================================================
+TODA BÚSQUEDA CON mode:"extended". Primera búsqueda: CONSULTA DE CONTROL en los dos
+modos. TOPE DE 200 BÚSQUEDAS POR TURNO, COMPARTIDO: CONTROL 2 · COORDINADOR 18 ·
+OLA 150 (6 × 25, cuatro de cada equipo reservadas a fecha en la ruta) ·
+procedencia-cifras 30 (R1 24 · R2 6). EL TOPE DE CADA EQUIPO ES DURO. Cifra de peso
+ENTRE COMILLAS. UN DOMINIO POR CONSULTA site:, NUNCA OR.
+⚠️ LECCIONES DE 154: (a) PASA A procedencia-cifras R1 LOS INFORMES DE EQUIPO Y LA
+LISTA DE TITULARES Y RUTAS QUE EL COORDINADOR YA VIO (en 154 declaró «no localizado»
+lo visto); (b) UNA DETENCIÓN DEL DÍA PUEDE ESTAR YA DIFUNDIDA: busca la PRIMERA
+publicación de la detención (Cajeme: 12-nov), no solo del hecho; (c) BOLETÍN
+ESTATAL PUBLICADO HOY PUEDE FECHAR EL HECHO UN MES ANTES (Acámbaro: 17-oct por
+resumen): sin fragmento, no se integra; (d) ENCARGOS CON ENTIDAD Y MUNICIPIO COPIADOS
+DEL ÍNDICE (-152-005 es Mazatlán, no Gto.); (e) SALDO ACTUALIZADO POR TITULAR
+PREVALECE SOBRE EL PRIMER PARTE, CON MARCA; (f) siguen vigentes las de 153 (N+ «hoy»
+es liveblog; titular literal y URL completa; lo no fichado solo a vistos; Valoración
+sin conteos; Conclusiones sin cifras de ficha).
+
+================================================================================
+ENCARGOS, PRIMERO Y SIN NEGOCIAR
+================================================================================
+ 0. CICLO: A (Noroeste + Centro), por la tabla de CLAUDE.md, después de la
+    prioridad sobre el ciclo.
+ 1. CLÁUSULAS DE RETIRO DE 154: -005 Mazatlán, Santa Teresa (aviso ~11:30 del 17 por
+    resumen) · -008 Río Bravo (hallazgo «este martes» por resumen): hora y día por
+    TITULAR.
+ 2. RESERVAS DE 154: -002 Xochistlahuaca (noche del 17 o madrugada del 18) · -004
+    Chalco (heridos 1, 2 o 3) · -007 Poza Rica (vehículos 3 o más; detenidos; causa)
+    · -008 (número de víctimas; levantamiento) · -011 Zapopan (detenidos 3/4/5/6;
+    seis armas cortas: si hay cifra de autoridad, a armamento).
+ 3. ACÁMBARO (visto): fecha del hecho del boletín estatal 2026/11/18 (17-oct por
+    resumen, noviembre por medios): con fragmento de noviembre, fe de erratas a 154.
+ 4. CLÁUSULAS ABIERTAS: -153-003 Azcapotzalco · -153-002 Acaponeta · -152-002 Tecate
+    · -152-003 Gaviotas Sur · -152-004 Lachigalla · -152-005 PUEBLO NUEVO, MAZATLÁN
+    (Sin.): hora por titular.
+ 5. VISTOS CON POSIBLE ASCENSO: Huitzilac (38 hallazgos, Triple Frontera: desglose
+    por día → -REC-) · Yautepec.
+ 6. POSIBLE MISMO CASO: Tecate «cuádruple homicidio» (En Línea BC 2026/11/16) frente
+    a -150-REC-001: dos campos por titular.
+ 7. BOLETÍN FEDERAL: triple consulta por día, por rango y por título (13 al 18).
+ 8. SENTENCIAS CANDIDATAS: Monterrey (dos casos) · Tabasco 5119 · Veracruz 88 ·
+    Champotón · Copanatoyac, Gro. (feminicidio, solo resumen).
+ 9. SEGUIMIENTO (fuera del semáforo): Zapopan -154-011 (vinculación) · Cajeme
+    (vinculación de los 5) · Cuernavaca -147-001 · Zapopan -149-018 · Texhuacán
+    -151-001 (FGR) · Tepehuacán -151-009 · Mexicali -146-011 (sin consulta en 154).
+
+================================================================================
+BARRIDO
+================================================================================
+ Plantilla: tools/plantilla-equipos-155.md (escribe la hora de cierre).
+ PRIORIDAD SOBRE EL CICLO: armamento NO REVISADA (3): NL, Gto, Col · sentencias NO
+ REVISADA (5): BCS, Son (dominio sin páginas: prueba sin site:), Coah, Zac, Qro ·
+ alto impacto solo amplia (12): BC, Son, Chih, Sin · Coah · Mich, Col, Ags · Tlax,
+ Qro · Camp · Yuc; NO REVISADA: BCS. Listas en _pendientes.md, «Abiertos que ARGOS
+ 155 hereda».
+
+================================================================================
+FORMA, CONSTRUCCIÓN Y CONTROLES
+================================================================================
+ · Parte de tools/datos-argos-154.py (copia a datos-argos-155.py) y de
+   reports/argos-2026-11-18.html como plantilla. Actualiza el <title> que reemplaza
+   (en datos-argos-154.py dice ARGOS 153 — … — 2026-11-17: pon ARGOS 154 — … —
+   2026-11-18), RET («SI RESULTA ANTERIOR A LAS 12:32 DEL 18, ES DE LA VENTANA DE
+   ARGOS 154…»), HORAS, DUR, CONSULTA (default "13:04" en ARGOS_CONSULTA: cámbialo
+   a «__CONSULTA__» al copiar y sustitúyelo al cierre de R2), FED17 (texto del
+   boletín federal), las aserciones, las listas de fichas por página y WINDOW_DAYS.
+   El generador de 154 maneja ARM vacío (fila «SIN ACTUALIZACIÓN») y ARM con filas
+   (armrow); R vacío: si hay -REC-, recupera la página co4 del de 152.
+ · Criterio, totales, acciones como SOLICITUD, portada sin titulares ni cifras de
+   ficha, conclusiones con «vínculo no acreditado», con línea distinta de la de la
+   portada y sin repetir las de 154 (puentes Cazones y autopista Tuxpan–Poza Rica;
+   filtros ministeriales del norte de Guerrero; comercio callejero en el bulevar
+   Agricultores; represalias en Zapopan; predios rurales de Río Bravo). Valoración
+   de escala y agravantes, sin reimprimir conteos ni explicar colores.
+ · Fe de erratas en el cartelón SIN códigos -FE-; los códigos van al índice y al
+   archivo de fuentes.
+ · Móvil y texto SE GENERAN: gen-movil.py 155 2026-11-19 154 2026-11-18 <HORA> ·
+   gen-texto.py <html> <txt> · node tools/validar.js reports/argos-2026-11-19.html
+   2026-11-18 2026-11-19 → validación OK (el validador es solo de escritorio; el
+   móvil lo comprueba gen-movil: «tarjetas: móvil N / escritorio N»).
+ · editor-duplicidad y procedencia-cifras: dos rondas; la ronda 2 EN SERIE.
+ · Marca «Consulta»: hora real de la última búsqueda.
+ · Cierre: _pendientes.md, indice-arg-id.md y orden de ARGOS 156. Commit y push.
+ · Detalle completo: reports/_arranque-ARGOS-155.md.
+
+Empieza por el Bloque 0 y dime qué encuentras antes de seguir.
