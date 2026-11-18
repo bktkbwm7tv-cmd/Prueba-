@@ -3,8 +3,8 @@
 Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 
 ## Ventana
-- ABRE: **martes 17-nov-2026 11:34 CDMX** (donde cerró ARGOS 153). CIERRA: **hora real de arranque de la sesión de ARGOS 154** (o del «Procede») (el coordinador la escribe aquí al copiar la plantilla: ____).
-- Calendario: el coordinador lo escribe día por día. Comprueba siempre el día de la semana que dice la fuente contra el calendario.
+- ABRE: **martes 17-nov-2026 11:34 CDMX** (donde cerró ARGOS 153). CIERRA: **hora real de arranque de la sesión de ARGOS 154** (o del «Procede») (el coordinador la escribe aquí al copiar la plantilla: **miércoles 18-nov-2026 12:32 CDMX**; «Procede» a las 12:34, sin ajuste). Duración 24 h 58 min.
+- Calendario: **mar 17 (11:34–23:59, 12 h 26 min) · mié 18 (00:00–12:32, 12 h 32 min)**. «Este martes» = 17; «este miércoles» = 18; «ayer» en nota del 18 = 17 (verifica la hora frente a las 11:34); «el lunes» = 16 (ventana de 153). Comprueba siempre el día de la semana que dice la fuente contra el calendario.
 - **ARGOS 153 (ventana 16-nov 10:30 → 17-nov 11:34) publicó 8 hechos** (`ARG-153-001` a `-008`: Santiago Maravatío policías emboscados, Acaponeta siete cuerpos, Azcapotzalco San Pedro Xalpa, Cd. Juárez Anapra, Mazatlán Los Magueyes, Cd. Victoria Hospital La Salle (operativo y detención), Zamora col. Ferrocarril) y ninguna `-REC-`. Un hecho del 17-nov antes de las 11:34 que 153 NO publicó es de la ventana de 153: `-REC-` **solo si es 🔴 y la hora la fija un titular**; con hora solo por resumen, ficha propia con cláusula de retiro.
 - Todo hecho del 17 necesita HORA frente a las 11:34. Nunca infieras la hora. «Esta tarde» en un resumen NO fecha un hecho.
 - Criterio de inclusión: entra con marca el hecho con **ruta fechada o titular con día**. ⚠️ **«Rojo sin ruta» = sin DÍA por ruta o titular**; un hecho con día por ruta y sin hora NO es «sin ruta».
