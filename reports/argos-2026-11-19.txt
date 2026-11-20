@@ -29,7 +29,7 @@ Pase el cursor sobre un estado.
 ── LO QUE DEBE HACER EL MANDO
 
 1. SOLICITE A LA FISCALÍA DE MICHOACÁN EL PARTE DEL DOBLE HOMICIDIO DE LA AVENIDA LENIN, EN
-URUAPAN, Y EL COTEJO BALÍSTICO CON LOS ATAQUES PREVIOS DE LA COLONIA RUBÉN JARAMILLO
+URUAPAN, Y EL COTEJO BALÍSTICO CON HECHOS PREVIOS DE LA ZONA, VÍNCULO NO ACREDITADO
 (ARG-155-001).
 2. SOLICITE A LA SSP DE PUEBLA EL COMUNICADO CON LA HORA, EL DESGLOSE DE MUNICIONES Y LA
 SITUACIÓN JURÍDICA DE LOS DETENIDOS DE TEPEACA (ARG-155-009).
@@ -114,7 +114,8 @@ RESUMEN, sin desglose por día · Reynosa, nuevos puntos con restos humanos (La 
 6-nov SOLO POR RESUMEN: otro hecho que ARG-154-008 · Yautepec, Mor., cabalgata: sin cambio.
 FE DE ERRATAS — ARGOS 153: ARG-153-001 Santiago Maravatío: «Falleció el tercer policía de
 Santiago Maravatío tras la emboscada del 17 de noviembre», por titular (La Silla Rota
-2026/11/19) · muertos de 153: 8 → 9; heridos de la ficha: 1 → 0 (cálculo propio).
+2026/11/19) · muertos de 153: 8 → 9; heridos de la ficha: 1 → 0, supone que el herido era el
+policía fallecido (cálculo propio).
 FE DE ERRATAS — ARGOS 154: ARG-154-011 Zapopan: 8 detenidos, saldo posterior por titular («Suman
 ocho detenidos tras enfrentamiento en Jardines del Sol; hay tres muertos», Meganoticias; «Sube a
 ocho los detenidos en operativos contra ''El Topo'' del CJNG», NX Noticias; Infobae 2026/11/18;
@@ -170,8 +171,8 @@ resumen; lugar exacto contradicho; ninguna fuente institucional ni nacional · F
 Institucional 0 · Nacional 0 · Regional 4 · Abierta 0 · con fecha en la ruta: Media News
 (2026/11/19) · Grupo Marmor (2026/11/19) · Hecho: jueves 19-nov, por ruta; tarde, poco antes de
 las 14:00, solo por resumen · Hora: tarde, poco antes de las 14:00 (solo por resumen) ·
-Consulta: 2026-11-19, última búsqueda __CONSULTA__ · Estatus: Parcialmente corroborado · Conteo
-de armamento: sin fila — armamento asegurado: no publicado
+Consulta: 2026-11-19, última búsqueda 19:06 · Estatus: Parcialmente corroborado · Conteo de
+armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Rubén Jaramillo: dobles homicidios de septiembre (Contramuro; Respuesta;
 Primera Plana; Quadratín, «Ataque armado en la Rubén Jaramillo de Uruapan deja 2 muertos», sin
 fecha: POSIBLE CASO HOMÓNIMO — NO SE CITA): otros hechos. Col. Rubén Jaramillo del índice:
@@ -196,8 +197,8 @@ ARG-155-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 resumen; ninguna fuente institucional ni nacional · Fuentes: Institucional 0 · Nacional 0 ·
 Regional 4 · Abierta 0 · con fecha en la ruta: Luz Noticias (2026-11-19) · Hecho: jueves 19-nov,
 por ruta; ~08:55, solo por resumen · Hora: ~08:55 (solo por resumen) · Consulta: 2026-11-19,
-última búsqueda __CONSULTA__ · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila
-— armamento asegurado: no publicado
+última búsqueda 19:06 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila —
+armamento asegurado: no publicado
 Deslindes y reservas: Col. Miguel Hidalgo figura por ARG-146-013 (taquero, 1-nov): otro hecho.
 Identidad: no se reproduce.
 
@@ -205,20 +206,20 @@ Identidad: no se reproduce.
 
 ── HECHO
 
-Mazatlán · FRACC. SANTA FE, por titular · jueves 19-NOV, por ruta (Luz Noticias 2026-11-19:
-«Menor de 15 años muere tras ataque armado en el fraccionamiento Santa Fe en Mazatlán») · hora
-no publicada · FRONTERA DE VENTANA — HORA NO FIJADA · 1 adolescente muerto, de unos 15 años, por
-titular (Quadratín Sinaloa: «Muere adolescente tras ataque armado en Mazatlán») (🟡 homicidio
-doloso único) · ningún detenido publicado
+Mazatlán · FRACC. SANTA FE, por titular · jueves 19-NOV, por ruta (Línea Directa 2026-11-19:
+«Muere adolescente de 15 años tras ataque armado en Santa Fe, al sur de Mazatlán») · hora no
+publicada · FRONTERA DE VENTANA — HORA NO FIJADA · 1 adolescente muerto, de 15 años, por titular
+(Noroeste: «Matan a balazos a menor de 15 años en el fraccionamiento Santa Fe, en Mazatlán»;
+Quadratín Sinaloa: «Muere adolescente tras ataque armado en Mazatlán») (🟡 homicidio doloso
+único) · ningún detenido publicado
 
 ── TRAZABILIDAD
 
 ARG-155-003 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora no publicada;
-ninguna fuente institucional ni nacional · Fuentes: Institucional 0 · Nacional 0 · Regional 3 ·
-Abierta 0 · con fecha en la ruta: Luz Noticias (2026-11-19) · Línea Directa (2026-11-19) ·
-Hecho: jueves 19-nov, por ruta; hora no publicada · Hora: no publicada · Consulta: 2026-11-19,
-última búsqueda __CONSULTA__ · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila
-— armamento asegurado: no publicado
+ninguna fuente institucional ni nacional · Fuentes: Institucional 0 · Nacional 0 · Regional 5 ·
+Abierta 0 · con fecha en la ruta: Línea Directa (2026-11-19) · Hecho: jueves 19-nov, por ruta;
+hora no publicada · Hora: no publicada · Consulta: 2026-11-19, última búsqueda 19:06 · Estatus:
+Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Santa Fe figura por ARG-145-008 (31-oct, otra víctima): otro hecho;
 Mazatlán, por ARG-154-005 (Santa Teresa), ARG-153-005 y ARG-152-005: otros hechos. Identidad: no
 se reproduce.
@@ -249,7 +250,7 @@ ARG-155-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 resumen; detenido sin confirmación de autoridad; ninguna fuente institucional · Fuentes:
 Institucional 0 · Nacional 0 · Regional 3 · Abierta 0 · con fecha en la ruta: AM (2026/11/19) ·
 Correo (2026/nov/19) · Hecho: jueves 19-nov, por ruta; ~13:00, solo por resumen · Hora: ~13:00
-(solo por resumen) · Consulta: 2026-11-19, última búsqueda __CONSULTA__ · Estatus: Parcialmente
+(solo por resumen) · Consulta: 2026-11-19, última búsqueda 19:06 · Estatus: Parcialmente
 corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Ignacio Allende del índice: Acapulco (ARG-136-003), homónimo; Irapuato,
 por ARG-146-006 (col. Primavera) y otros: otros hechos. Identidades: no se reproducen.
@@ -272,8 +273,8 @@ ARG-155-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 resumen; colonia contradicha; ninguna fuente institucional ni nacional · Fuentes: Institucional
 0 · Nacional 0 · Regional 6 · Abierta 0 · con fecha en la ruta: Changoonga (2026/11/19) · Hecho:
 jueves 19-nov, por ruta; mañana, ~06:30 o ~07:00, solo por resumen · Hora: mañana, ~06:30 o
-~07:00 (solo por resumen) · Consulta: 2026-11-19, última búsqueda __CONSULTA__ · Estatus:
-Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
+~07:00 (solo por resumen) · Consulta: 2026-11-19, última búsqueda 19:06 · Estatus: Parcialmente
+corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Mismo patrón que ARG-155-002 (dueño de minisúper, Culiacán): otro hecho,
 otra entidad; vínculo no acreditado. Identidad: la ruta la contiene, no se reproduce.
 
@@ -296,8 +297,8 @@ por resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Naciona
 Abierta 0 · con fecha en la ruta: Correo (2026/nov/18) · Noticieros en Línea (2026/nov/19) ·
 Hecho: publicación miércoles 18-nov, por ruta; tarde del 18 o noche del 17, DÍA SOLO POR RESUMEN
 · Hora: tarde del 18 o noche del 17, contradicho (solo por resumen) · Consulta: 2026-11-19,
-última búsqueda __CONSULTA__ · Estatus: Pendiente de corroboración · Conteo de armamento: sin
-fila — armamento asegurado: no publicado
+última búsqueda 19:06 · Estatus: Pendiente de corroboración · Conteo de armamento: sin fila —
+armamento asegurado: no publicado
 Deslindes y reservas: Santa María de Cementos no figura en las ediciones 146 a 154. Publicado el
 día de apertura sin hora por fragmento: se integra en esta edición, la primera que lo ve.
 Identidad: no se reproduce.
@@ -328,8 +329,8 @@ ARG-155-007 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 resumen; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 2 · Regional 4 ·
 Abierta 0 · con fecha en la ruta: Gentetlx (2026/11/18) · Hecho: miércoles 18-nov, por ruta;
 noche, solo por resumen · Hora: noche (solo por resumen) · Consulta: 2026-11-19, última búsqueda
-__CONSULTA__ · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
-asegurado: no publicado
+19:06 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado:
+no publicado
 Deslindes y reservas: Ocotlán, Tlax., no figura en las ediciones previas; Ocotlán, Jal.
 (enfrentamiento del 12-nov): homónimo. La Prensa de Tlaxcala (2026/11) y 385grados reproducen la
 misma nota. Publicado el día de apertura sin hora por fragmento: se integra en esta edición, la
@@ -350,9 +351,9 @@ Noticias; Tribuna Campeche, comunicado de la SPSC, SOLO POR RESUMEN) · ningún 
 ARG-155-008 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: una sola ruta con
 fecha; hora no fijada; comunicado de la SPSC solo por resumen · Fuentes: Institucional 0 ·
 Nacional 0 · Regional 3 · Abierta 0 · con fecha en la ruta: PorEsto (2026/11/19) · Hecho: jueves
-19-nov, por ruta; hora no fijada · Hora: no fijada · Consulta: 2026-11-19, última búsqueda
-__CONSULTA__ · Estatus: Pendiente de corroboración · Conteo de armamento: sin fila — armamento
-asegurado: no publicado
+19-nov, por ruta; hora no fijada · Hora: no fijada · Consulta: 2026-11-19, última búsqueda 19:06
+· Estatus: Pendiente de corroboración · Conteo de armamento: sin fila — armamento asegurado: no
+publicado
 Deslindes y reservas: Villas de Santa Ana no figura en las ediciones 146 a 154. Identidad: no se
 reproduce.
 
@@ -368,12 +369,13 @@ miércoles», SOLO POR RESUMEN · publicación 19-NOV, por ruta (Infobae 2026/11
 DE LA VENTANA DE ARGOS 154 Y SE RETIRA DE ESTE TOTAL · 7 detenidos, por titular (La Jornada de
 Oriente: «Caen siete integrantes de "Los Tepeacas"; decomisan cinco armas largas»; Controversia
 Puebla: «Intervención de SSP y Marina permite detener a siete hombres armados en Tepeaca») · 5
-armas largas, por un titular (La Jornada de Oriente); Infobae, Intolerancia y boletín federal,
-SOLO POR RESUMEN (🟢 detención y aseguramiento) · más de 500 cartuchos, 22 cargadores, 5
-chalecos, 2 cascos, SOLO POR RESUMEN: CANTIDAD NO CITABLE — NO SE INTEGRA · célula dedicada a
-vigilar ductos de hidrocarburo; cinco detenidos originarios de Veracruz y uno del Estado de
-México, según la SSP, SOLO POR RESUMEN · SSP de Puebla y Marina · detenidos: cifra solo por
-titular de medio, sin cifra de autoridad: n/d
+armas largas, por titular (La Jornada de Oriente; La Nigua: «Caen siete en Tepeaca con cinco
+armas largas, 22 cargadores y equipo táctico»; Curul Puebla: «…aseguran cinco armas largas y
+vehículos»), rutas sin fecha · 22 cargadores, por un titular (La Nigua): NO SE INTEGRA (🟢
+detención y aseguramiento) · más de 500 cartuchos, 5 chalecos, 2 cascos, SOLO POR RESUMEN:
+CANTIDAD NO CITABLE — NO SE INTEGRA · célula dedicada a vigilar ductos de hidrocarburo; cinco
+detenidos originarios de Veracruz y uno del Estado de México, según la SSP, SOLO POR RESUMEN ·
+SSP de Puebla y Marina · detenidos: cifra solo por titular de medio, sin cifra de autoridad: n/d
 
 ── TRAZABILIDAD
 
@@ -382,11 +384,13 @@ resumen, en la frontera de apertura; cifras del boletín solo por resumen · Fue
 Institucional 1 · Nacional 3 · Regional 4 · Abierta 0 · con fecha en la ruta: Infobae
 (2026/11/19) · Intolerancia (2026/11/19) · Hecho: miércoles 18-nov, por titular del boletín
 federal de acciones del 18; mañana, solo por resumen; publicación 19-nov, por ruta · Hora:
-mañana (solo por resumen) · Consulta: 2026-11-19, última búsqueda __CONSULTA__ · Estatus:
-Parcialmente corroborado · Conteo de armamento: ARG-155-ARM-001
+mañana (solo por resumen) · Consulta: 2026-11-19, última búsqueda 19:06 · Estatus: Parcialmente
+corroborado · Conteo de armamento: ARG-155-ARM-001
 Deslindes y reservas: Tepeaca figura por ARG-121-004 (pipas de gas LP, septiembre): otro hecho.
-«Detienen al líder…» (El Universal Puebla): el cuerpo no sostiene «líder». Republicaciones del
-boletín (Edomex Al Día, Hoy Tamaulipas): una sola fuente. Nombres: no se reproducen.
+Publicado el día de apertura sin hora por fragmento: se integra en esta edición, la primera que
+lo ve. «Detienen al líder…» (El Universal Puebla): el cuerpo no sostiene «líder».
+Republicaciones del boletín (Edomex Al Día, Hoy Tamaulipas): una sola fuente. Nombres: no se
+reproducen.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-11-19 · Hora: 18:40 (CDMX) · Corte: Matutino · ARGOS N.° 155 · USO INSTITUCIONAL
@@ -416,12 +420,13 @@ ARG-155-010 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor so
 contenido del boletín solo por resumen · Fuentes: Institucional 1 · Nacional 2 · Regional 2 ·
 Abierta 0 · con fecha en la ruta: La Silla Rota (2026/11/19) · Proceso (2026/11/19) · Hecho:
 miércoles 18-nov, por titular del boletín federal de acciones del 18; publicación en medios
-19-nov, por ruta; hora no fijada · Hora: no fijada · Consulta: 2026-11-19, última búsqueda
-__CONSULTA__ · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — arma,
-cargador y cartuchos solo por resumen: cantidad no citable (ver vistos de armamento)
-Deslindes y reservas: Ometepec y Zacualpan no figuran en los cartelones de 151 a 154.
-Republicaciones del boletín: una sola fuente. Publicado el día de apertura sin hora por
-fragmento: se integra en esta edición, la primera que lo ve. Nombre y alias: no se reproducen.
+19-nov, por ruta; hora no fijada · Hora: no fijada · Consulta: 2026-11-19, última búsqueda 19:06
+· Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — arma, cargador y cartuchos
+solo por resumen: cantidad no citable (ver vistos de armamento)
+Deslindes y reservas: Ometepec y Zacualpan no figuran en los cartelones de 151 a 154; «Los
+Rusos», por ARG-115-002, ARG-118-REC-001 y ARG-130-007 (Acapulco): otros hechos. Republicaciones
+del boletín: una sola fuente. Publicado el día de apertura sin hora por fragmento: se integra en
+esta edición, la primera que lo ve. Nombre y alias: no se reproducen.
 
 ### HIDALGO · TEPEHUACÁN DE GUERRERO — CUATRO DETENIDOS POR EL ATAQUE A LA CASA DEL ALCALDE EN EL QUE MURIERON DOS POLICÍAS [VERDE]
 
@@ -448,7 +453,7 @@ capturas solo por resumen; declaración institucional solo por slug de medio · 
 Institucional 1 · Nacional 3 · Regional 3 · Abierta 0 · con fecha en la ruta: Síntesis
 (2026/11/19) · La Silla Rota (2026/11/19) · Zunoticia (2026/11/19) · Infobae (2026/11/19) ·
 Hecho: publicación jueves 19-nov, por ruta; capturas el martes 17 o el miércoles 18, SOLO POR
-RESUMEN; hora no fijada · Hora: no fijada · Consulta: 2026-11-19, última búsqueda __CONSULTA__ ·
+RESUMEN; hora no fijada · Hora: no fijada · Consulta: 2026-11-19, última búsqueda 19:06 ·
 Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armas sin cantidad
 publicada: evento cualitativo
 Deslindes y reservas: Desarrollo de ARG-151-009 (ataque del 14-nov, 2 policías muertos): la
@@ -475,8 +480,8 @@ solo por titular de medio; vínculo de 2 de 6 por un medio; ninguna fuente insti
 Fuentes: Institucional 0 · Nacional 0 · Regional 3 · Abierta 0 · con fecha en la ruta:
 Noticaribe (2026/11/19) · Hecho: publicación jueves 19-nov, por ruta; detención el miércoles 18,
 DÍA SOLO POR RESUMEN; hora no fijada · Hora: no fijada · Consulta: 2026-11-19, última búsqueda
-__CONSULTA__ · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento
-asegurado: no publicado
+19:06 · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado:
+no publicado
 Deslindes y reservas: Desarrollo de ARG-154-006 (3 muertos, Región 247, 18-nov): la detención se
 ficha aparte. «Capturan a seis por narcomenudeo; cuatro van por triple homicidio» (El Sureste):
 triple homicidio de Valle Verde, agosto: homónimo. Nombres: no se reproducen.
@@ -500,7 +505,7 @@ solo por resumen; corporación solo por titular de medio · Fuentes: Institucion
 · Regional 2 · Abierta 0 · con fecha en la ruta: Al Instante Chihuahua (2026/11/19) · El Diario
 de Chihuahua (2026/nov/19) · Hecho: publicación jueves 19-nov, por ruta; operativo el miércoles
 18, DÍA SOLO POR RESUMEN; hora no fijada · Hora: no fijada · Consulta: 2026-11-19, última
-búsqueda __CONSULTA__ · Estatus: Parcialmente corroborado · Conteo de armamento: ARG-155-ARM-002
+búsqueda 19:06 · Estatus: Parcialmente corroborado · Conteo de armamento: ARG-155-ARM-002
 Deslindes y reservas: Los dos medios describen el mismo aseguramiento: un solo evento. Chihuahua
 capital no figura en los cartelones de 151 a 154 por un hecho de esta clase. Nombres: no se
 reproducen.
@@ -542,7 +547,7 @@ Total nacional del corte: en la página de panorama.
 ## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
 
   ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
-  ARG-155-ARM-001 | Puebla | Tepeaca | acciones del 18-nov, por boletín; SI RESULTA ANTERIOR A LAS 12:32 DEL 18, SE RETIRA | 0 | 5 | 0 | 0 | n/d | n/d | 0 | 0 | 0 | n/d | SSP de Puebla y Marina | Bajo · 5 armas largas, por un titular (La Jornada de Oriente); Infobae, Intolerancia y boletín federal, solo por resumen; cartuchos y cargadores solo por resumen; detenidos sin cifra de autoridad citable
+  ARG-155-ARM-001 | Puebla | Tepeaca | acciones del 18-nov, por boletín; SI RESULTA ANTERIOR A LAS 12:32 DEL 18, SE RETIRA | 0 | 5 | 0 | 0 | n/d | n/d | 0 | 0 | 0 | n/d | SSP de Puebla y Marina | Bajo · 5 armas largas, por titular de tres medios (La Jornada de Oriente, La Nigua, Curul Puebla), rutas sin fecha; 22 cargadores por un titular, no integrados; cartuchos y cargadores solo por resumen; detenidos sin cifra de autoridad citable
   ARG-155-ARM-002 | Chihuahua | Chihuahua | publicación 19-nov, por ruta; operativo el 18, solo por resumen | 0 | 0 | 1 | 0 | n/d | n/d | 0 | 0 | 0 | n/d | SSPE de Chihuahua | Bajo · 1 arma, por titular de dos medios, sin categoría; desglose (corta 9 mm, cargador, cartuchos) solo por resumen; detenidos sin cifra de autoridad citable
 
 Lectura regional: Centro 5 armas largas (Tepeaca) · Noroeste 1 arma sin categoría (Chihuahua) ·
@@ -631,10 +636,10 @@ TOTALES DEL CORTE). CÁLCULO PROPIO.
 
 ── CONCLUSIONES DE INTELIGENCIA CRIMINAL
 
-1. DOBLE HOMICIDIO EN EL PONIENTE DE URUAPAN (ARG-155-001): ataque en la vía pública con huida
-en motocicleta; móvil y autoría no informados; vínculo con hechos previos de la colonia no
-acreditado. Línea: vigilar el eje de la avenida Lenin y la colonia Rubén Jaramillo ante
-réplicas.
+1. DOBLE HOMICIDIO EN EL PONIENTE DE URUAPAN (ARG-155-001): ataque en la vía pública o en una
+camioneta, lugar contradicho; huida en motocicleta, solo por resumen; móvil y autoría no
+informados; vínculo con hechos previos de la zona no acreditado. Línea: vigilar el eje de la
+avenida Lenin y la colonia Rubén Jaramillo ante réplicas.
 2. ATAQUES A COMERCIANTES EN SU NEGOCIO (ARG-155-002 y -005): dos dueños de minisúper asesinados
 el mismo día en Culiacán y Morelia; móviles no informados; vínculo entre ambos no acreditado.
 Línea: vigilar comercios de barrio en las colonias Miguel Hidalgo (Culiacán) y Adolfo López
@@ -647,9 +652,9 @@ región de Tepeaca.
 capturas por el ataque a la casa de un alcalde en Hidalgo y por el homicidio de un líder amuzgo
 en Guerrero; vínculo entre los casos no acreditado. Línea: dar seguimiento a la vinculación a
 proceso de los detenidos de ambos casos.
-5. VIOLENCIA DOMICILIARIA CON ARMAS LARGAS EN TLAXCALA (ARG-155-007): irrupción armada en una
-vivienda de la capital; móvil de narcomenudeo, solo versión de un medio, no acreditado. Línea:
-vigilar la zona de Ocotlán de la capital tlaxcalteca.
+5. VIOLENCIA DOMICILIARIA EN TLAXCALA (ARG-155-007): irrupción armada en una vivienda de la
+capital, con armas largas solo por resumen; móvil de narcomenudeo, solo versión de un medio, no
+acreditado. Línea: vigilar la zona de Ocotlán de la capital tlaxcalteca.
 
 ## INDICADORES OFICIALES
 

@@ -8,7 +8,7 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 154 (corte 2026-11-18; ventana 17-nov 11:34 → 18-nov 12:32, 24 h 58 min).
+**Última actualización**: ARGOS 155 (corte 2026-11-19; ventana 18-nov 12:32 → 19-nov 18:40, 30 h 08 min).
 
 ---
 
@@ -38,6 +38,8 @@ sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le
 **ARGOS 153 publicado el 17-nov** (ventana 16-nov 10:30 → 17-nov 11:34, 25 h 04 min; rama `claude/argos-153-criminal-intelligence-6knrt6`, encima de `claude/argos-152-nacional-reqwch`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-154.md`** (y `_ordenes-ARGOS-154.txt`).
 
 **ARGOS 154 publicado el 18-nov** (ventana 17-nov 11:34 → 18-nov 12:32, 24 h 58 min; rama `claude/argos-154-criminal-intelligence-g2kqhw`, encima de `claude/argos-153-criminal-intelligence-6knrt6`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-155.md`** (y `_ordenes-ARGOS-155.txt`).
+
+**ARGOS 155 publicado el 19-nov** (ventana 18-nov 12:32 → 19-nov 18:40, 30 h 08 min; rama `claude/argos-154-security-report-etkefe`, encima de `claude/argos-154-criminal-intelligence-g2kqhw`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-156.md`** (y `_ordenes-ARGOS-156.txt`).
 
 **ARGOS 148 publicado el 6-nov** (ventana 5-nov 09:42 → 6-nov 07:30, 21 h 48 min; rama `claude/argos-148`, encima de 147). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-149.md`** (y `_ordenes-ARGOS-149.txt`).
 
@@ -3058,3 +3060,42 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 4. **Detenciones de casos anteriores**: buscar la primera publicación de la detención (Cajeme: 12-nov) antes de fichar una detención del día.
 5. **Presupuesto**: control 2 + coordinador 18 + ola 150 + `procedencia-cifras` 24 + R2 6 = **200**.
 6. **Rama**: 154 vive en `claude/argos-154-criminal-intelligence-g2kqhw` (encima de `claude/argos-153-criminal-intelligence-6knrt6`).
+
+## ARGOS 155 — lo que cierra esta edición
+
+| Cerrado | Cómo |
+|---|---|
+| **Reserva de 153 `-001`** | Tercer policía fallecido (La Silla Rota 2026/11/19, titular): `ARG-155-FE-001` (muertos de 153: 8 → 9) |
+| **Reserva de 154 `-011`** | Detenidos: 8, saldo posterior por titular (Meganoticias; NX Noticias; Infobae 2026/11/18): `ARG-155-FE-002` |
+| **Boletín federal del 17 y 18** | Indexados en `gob.mx/sspc` por título (contenido solo por resumen) |
+| **Tepehuacán `-151-009`** | 4 detenidos acumulados: `ARG-155-011` (🟢) |
+| **Cancún `-154-006`** | 6 detenidos (Noticaribe 2026/11/19): `ARG-155-012` (🟢); vínculo de 2 por un medio |
+| **Huajicori / lanzagranadas** | El lanzagranadas del 17 es de La Yesca (Mesa de Chapalilla), no de Huajicori |
+| **Cobertura de 154** | Armamento Gto, Col saldadas; NL por `fiscalianl.gob.mx` · sentencias BCS, Coah, Zac, Qro saldadas · alto impacto: BC, Sin, Coah, Mich, Col, Ags, Camp, Yuc con consulta propia; BCS saldada |
+
+## Abiertos que ARGOS 156 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| **Cláusulas de retiro de 155 (3)** | `-009` Tepeaca: hora de la captura («mañana de este miércoles» por resumen; si antes de las 12:32 del 18, pasa a 154) · `-011` Tepehuacán: día de las tres capturas por orden (17 o 18) · `-006` León: día del homicidio (noche del 17 o tarde del 18) |
+| **Marcas de 155** | Apertura sin hora: `-006`, `-007`, `-009`, `-010` · Frontera: `-001`, `-002`, `-003`, `-004`, `-005`, `-008`, `-011`, `-012`, `-013` |
+| **Reservas de 155** | `-001` Uruapan: lugar exacto (camioneta o vía pública); Quadratín posible homónimo de septiembre · `-004` Irapuato: detenido sin cifra de autoridad · `-009`: cartuchos (>500), 22 cargadores, cinco armas por segundo titular · `-010`: corporación (GN o Defensa); arma solo por resumen · `-012`: cifra de autoridad; vínculo de 2 de 6 · `-013`: desglose del arma |
+| **Cláusulas de 154** | `-005` Mazatlán, Santa Teresa (~11:30/~11:45 por resumen) · `-008` Río Bravo (día y hora del hallazgo) |
+| **Reservas de 154** | `-002` día (noche del 17 por resumen; «tercer» o «segundo» aspirante) · `-004` Chalco heridos 1/2/3 · `-007` vehículos 3 o 4; detenidos; causa · `-008` número de víctimas; levantamiento · `-011` armas cortas 6 u 8 (solo resumen); vinculación |
+| **Cláusulas de 153 y 152** | `-153-003` Azcapotzalco (heridos 1 o 2) · `-153-002` Acaponeta · `-152-002` Tecate · `-152-003` Gaviotas Sur · `-152-004` Lachigalla · `-152-005` Pueblo Nuevo (Mazatlán, Sin.): hora por titular |
+| **Posible mismo caso** | Tecate «cuádruple homicidio» (En Línea BC 2026/11/16; N+) frente a `ARG-150-REC-001` (3 muertos): lugar y hora contradichos (Punto Norte ~22:30, Dr. Arturo Guerra; FGE BC ~20:20, Andador del Río); faltan dos campos individualizadores por titular |
+| **Vistos con posible ascenso** | Coyuca de Benítez, dos cuerpos en un vehículo (~14:00, sin ruta con día) · Xochitepec (miércoles 18, 17:19 por resumen, sin ruta) · Huitzilac (38 hallazgos, 9-13 nov, sin desglose) · Valle de las Palmas (fosa, «martes 16» incoherente) · Mazatlán, ataque con explosivos a compraventa de vehículos (martes 17 por resumen; posible `-REC-` 🔴 de 154 si un titular fija la hora) |
+| **Boletín federal** | Acciones del 13, 14 y 15-nov: SRIV (quinto día hábil); acciones del 19: SRIV al cierre; triple consulta del 19 y del 20 |
+| **Sentencias candidatas** | Iguala, caso Los Avispones (60 años al exalcalde; 25 personas más; juez federal; sin boletín; apelada) · Oaxaca, boletín 2,993 de la FGEO (14 años, violación; fecha) · Villahermosa, feminicidio, 45 años (índice FGET, 18-nov por resumen) · Monterrey · Tabasco 5119 · Veracruz 88 · Champotón · Copanatoyac |
+| **Seguimientos** | Zapopan `-154-011` y `-149-018`: vinculación · Tepehuacán `-155-011`: vinculación · Cancún `-155-012`: vinculación · Ometepec `-155-010` · Cajeme: vinculación de los 5 · Texhuacán `-151-001` (sin detenidos) · Tuxpan `-150-019` (posible segunda víctima, sin fecha) · Ciudad Juárez: dos vinculados por el ataque a federales del 11-nov (sin ficha previa) · Mexicali `-146-011` (tercera edición sin consulta) · Cuernavaca `-147-001` |
+| **Cobertura con prioridad sobre el ciclo en 156** | **Sentencias `NO REVISADA` (8)**: BC, Son (sin dominio), SLP, Gto, Col, Mich, Camp, Yuc. **Armamento `NO REVISADA` (11)**: BCS, Son, Dgo · Tamps · Edomex, Mor, Pue, Tlax, Hgo, Qro · Oax. **Alto impacto solo amplia (11)**: Son, Chih · NL, SLP, Zac · CDMX, Edomex, Mor, Pue, Tlax, Qro; **NO REVISADA (1)**: Dgo. Después, **CICLO B** (Noreste + Golfo: 156 = B) |
+
+## Deuda de método (ARGOS 155)
+
+1. **R1 de procedencia con los informes de equipo**: aplicado; R1 no declaró inexistente ningún titular visto («no reproducido en esta ronda»).
+2. **Fecha de publicación frente a fecha de la detención** (Cancún, Chihuahua): la ruta del 19 fecha la publicación; la detención era del 18 por resumen. Exigir en cada 🟢 el día de la captura, no el de la nota.
+3. **Saldo de un caso sin campos individualizadores** (Tecate): un titular con «cuádruple homicidio» y el mismo municipio no basta para corregir el saldo de otra ficha; R1 de duplicidad lo detuvo.
+4. **Deslindes «no figura en las ediciones previas»**: dos eran falsos (Santa Fe, Ignacio Allende); acotar siempre el rango revisado («146 a 154») o citar el ARG-ID.
+5. **Equipo Centro sin armamento por dominio en seis entidades**: el triaje judicial consumió el tope; exigir una `site:` de armamento por entidad aunque se encabece sentencias.
+6. **Presupuesto**: control 2 + coordinador 18 + ola 150 + `procedencia-cifras` 24 + R2 6 = **200**.
+7. **Rama**: 155 vive en `claude/argos-154-security-report-etkefe` (encima de `claude/argos-154-criminal-intelligence-g2kqhw`).
