@@ -3,8 +3,8 @@
 Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 
 ## Ventana
-- ABRE: **miércoles 18-nov-2026 12:32 CDMX** (donde cerró ARGOS 154). CIERRA: **hora real de arranque de la sesión de ARGOS 155** (o del «Procede») (el coordinador la escribe aquí al copiar la plantilla: ____).
-- Calendario: el coordinador lo escribe día por día. Comprueba siempre el día de la semana que dice la fuente contra el calendario.
+- ABRE: **miércoles 18-nov-2026 12:32 CDMX** (donde cerró ARGOS 154). CIERRA: **hora real de arranque de la sesión de ARGOS 155** (o del «Procede») (el coordinador la escribe aquí al copiar la plantilla: **jueves 19-nov-2026 18:40 CDMX**; duración 30 h 08 min, cálculo propio).
+- Calendario: **miércoles 18-nov (desde 12:32) · jueves 19-nov (hasta 18:40)**. «Ayer» en una nota del 19 = miércoles 18; «ayer» en una nota del 18 = martes 17 (ventana de 154). Comprueba siempre el día de la semana que dice la fuente contra el calendario.
 - **ARGOS 154 (ventana 17-nov 11:34 → 18-nov 12:32) publicó 11 hechos** (`ARG-154-001` a `-011`: Taxco filtro ministerial, Xochistlahuaca aspirante de Morena, Culiacán Vista Hermosa esquites, Chalco joyería, Mazatlán Santa Teresa madre e hija, Cancún Villas Otoch Región 247, Poza Rica narcobloqueos, Río Bravo restos calcinados, Zapopan Ciudad del Sol enfrentamiento y captura, Coatzacoalcos mecánico) y ninguna `-REC-`. Un hecho del 18-nov antes de las 12:32 que 154 NO publicó es de la ventana de 154: `-REC-` **solo si es 🔴 y la hora la fija un titular**; con hora solo por resumen, ficha propia con cláusula de retiro.
 - Todo hecho del 18 necesita HORA frente a las 12:32. Nunca infieras la hora. «Esta tarde» en un resumen NO fecha un hecho.
 - Criterio de inclusión: entra con marca el hecho con **ruta fechada o titular con día**. ⚠️ **«Rojo sin ruta» = sin DÍA por ruta o titular**; un hecho con día por ruta y sin hora NO es «sin ruta».
