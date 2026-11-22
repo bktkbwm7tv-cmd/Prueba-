@@ -8,7 +8,7 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 155 (corte 2026-11-19; ventana 18-nov 12:32 → 19-nov 18:40, 30 h 08 min).
+**Última actualización**: ARGOS 156 (corte 2026-11-22; ventana larga 19-nov 18:40 → 22-nov 09:34, 62 h 54 min).
 
 ---
 
@@ -42,6 +42,8 @@ sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le
 **ARGOS 155 publicado el 19-nov** (ventana 18-nov 12:32 → 19-nov 18:40, 30 h 08 min; rama `claude/argos-154-security-report-etkefe`, encima de `claude/argos-154-criminal-intelligence-g2kqhw`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-156.md`** (y `_ordenes-ARGOS-156.txt`).
 
 ⚠️ **22-nov: la orden de 156 del 20-nov no se ejecutó** (no hay edición del 20 ni del 21). **Orden rehecha el 22-nov**: ventana larga **19-nov 18:40 → domingo 22-nov**, archivo `argos-2026-11-22.html`, `WINDOW_DAYS = 4`, recall nacional por día.
+
+**ARGOS 156 publicado el 22-nov** (ventana larga 19-nov 18:40 → 22-nov 09:34, 62 h 54 min; rama `claude/argos-156-criminal-intelligence-kx9pts`, encima de `claude/argos-154-security-report-etkefe`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-157.md`** (y `_ordenes-ARGOS-157.txt`).
 
 **ARGOS 148 publicado el 6-nov** (ventana 5-nov 09:42 → 6-nov 07:30, 21 h 48 min; rama `claude/argos-148`, encima de 147). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-149.md`** (y `_ordenes-ARGOS-149.txt`).
 
@@ -3101,3 +3103,38 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 5. **Equipo Centro sin armamento por dominio en seis entidades**: el triaje judicial consumió el tope; exigir una `site:` de armamento por entidad aunque se encabece sentencias.
 6. **Presupuesto**: control 2 + coordinador 18 + ola 150 + `procedencia-cifras` 24 + R2 6 = **200**.
 7. **Rama**: 155 vive en `claude/argos-154-security-report-etkefe` (encima de `claude/argos-154-criminal-intelligence-g2kqhw`).
+
+## ARGOS 156 — lo que cierra esta edición
+
+- Mexicali `ARG-146-011`: consultado (sin novedad); deja de ser «sin consulta».
+- Reserva de `ARG-155-001` (lugar): camioneta, por titular (RED Michoacán 2026/11/19).
+- `ARG-155-002`: el balance del 20-nov es el mismo hecho; no hay desfase de fecha.
+- Monterrey: dos casos distintos (MVS 13 y 17-nov), fuera de ventana; se retira de candidatos vivos.
+- Cosoleacaque «lunes 16»: otro hecho que `ARG-149-013`, fuera de ventana.
+- Acapulco km 21 (pista del recall): 3-nov, no del 21.
+- Sentencias SLP, Gto, Col, Mich, BC, Yuc: saldadas (SRIV). Armamento BCS, Dgo, Edomex, Mor, Tlax, Hgo, Qro, Oax: saldadas. Alto impacto Dgo, Son, Chih, SLP, Zac, CDMX, Edomex, Mor, Pue: consulta propia.
+
+## Abiertos que ARGOS 157 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| **Cláusulas de retiro de 156 (4)** | `-003` Nopaltepec: hora del ataque (si un titular la fija antes de las 18:40 del 19, pasa a 155 como `-REC-` 🔴) · `-004` Pueblo Nuevo, Gto.: día y hora por titular (~21:20 del 19 por resumen) · `-012` Mexicali: día (noche del 19 por resumen) · `-016` Juchitán, 4 detenidos: hora de la captura del 19 |
+| **Reservas de 156** | `-001` Guasave: quién inició; saldo 4 frente a 2 muertos y 8 lesionados (primer parte); inventario de armamento (Barrett, lanzagranadas, explosivos) con cifra de autoridad · `-002`: número de vehículos; municipios distintos de Guasave · `-003`: saldo 1 o 2; declaración de FGR o FGJEM · `-005`: heridos 1 o 2; hora; móvil · `-006`: municipio (San Andrés Cholula u Ocoyucan); identidad · `-009`: localización de los tres jóvenes · `-010/-014`: cifra de armas del comunicado de la SSP de Veracruz · `-011`: heridos 1 o 2 · `-015/-016`: armamento de los boletines 2998 y 2992 con cifra citable |
+| **Posible duplicidad** | Mojolo, Guasave: 3 cuerpos junto al estadio = 3 de los 7 abatidos por titular de Infobae; si la Defensa los separa, ficha `-REC-` |
+| **Cláusulas heredadas** | 155: `-006` León, `-009` Tepeaca, `-011` Tepehuacán (audiencia 24-nov por resumen) · 154: `-005` Santa Teresa, `-008` Río Bravo · 153: `-002` Acaponeta, `-003` Azcapotzalco · 152: `-002` Tecate, `-003` Gaviotas Sur, `-004` Lachigalla, `-005` Pueblo Nuevo (Mazatlán) |
+| **Vistos con posible ascenso** | Chilapa–Atlixtac, restos (jornada del 18 por resumen; El Independiente 2026/11/21) · Mazatlán explosivos (17-nov por ruta; «hecho aislado») · Valle de las Palmas · Coyuca de Benítez · Culiacán, balance del 20-nov: homicidios de las col. Libertad y Felipe Ángeles sin ficha · Santa María Ostula (comunero muerto, sin fecha) · Puente Nacional (adolescente, viernes por resumen) |
+| **Boletín federal** | Acciones del 19: solo republicadores · 20, 21 y fin de semana: SRIV al cierre de 156; triple consulta del 20, 21, 22 y de un agregado «20, 21 y 22» |
+| **Sentencias candidatas** | Iguala, Los Avispones (boletín FGR o Poder Judicial; firmeza) · Oaxaca 2,993 (fecha de la sentencia) · Villahermosa, boletín 5126 (URL individual) · Copanatoyac (no revisado) |
+| **Seguimientos** | Guasave: vinculación de los 8 detenidos · Carlos A. Carrillo: situación de los 2 detenidos · Juchitán: vinculación de los 7 · Texhuacán `-151-001`: día de las 3 capturas · Tepehuacán `-155-011`: audiencia del 24-nov · Cajeme: vinculación de los 2 imputados · Ometepec `-155-010` · Cancún `-155-012` (6 frente a 3) · Zapopan `-154-011` · Tecate `-150-REC-001` · Cuernavaca `-147-001` (no revisado en 156) |
+| **Cobertura con prioridad sobre el ciclo en 157** | **Sentencias `NO REVISADA` (18)**: BCS, Chih, Sin, Dgo · Jal, Ags, Nay · CDMX, Edomex, Mor, Pue, Tlax, Hgo, Qro · Camp · Gro, Chis, QRoo. **Armamento `NO REVISADA` (7)**: BC, Son, Chih, Sin · Tamps · CDMX, Pue. **Alto impacto solo amplia (11)**: BCS · NL · Mich, Jal, Col · Tlax, Qro · Tab, Camp · Chis, Yuc; **NO REVISADA (1)**: Ags. Después, **CICLO C** (Occidente + Sureste: 157 = C) |
+
+## Deuda de método (ARGOS 156)
+
+1. **Cuerpos tras un operativo**: cruzar todo hallazgo de cuerpos en el municipio de un enfrentamiento con el saldo de abatidos antes de fichar (Mojolo).
+2. **Recall del coordinador**: dos pistas falsas (Acapulco km 21, 3-nov; «dos federales muertos» en Veracruz, Omealca, septiembre); fijar fecha por ruta antes de encargarla.
+3. **«Fuente única» sin búsqueda por topónimo**: dos casos (Stanza Torralba, Mexicali) corregidos en R1.
+4. **Titular de otro año**: Excélsior «Emboscada en Guasave…» era de 2025; comprobar el año de toda nota sin fecha en la ruta.
+5. **Ventana larga**: con 6 × 25 búsquedas, 11 entidades quedan solo con consulta amplia y Ags sin consulta; la madrugada del domingo 22 casi no se cubrió.
+6. **Centro sin sentencias**: el equipo Centro no consultó ninguna fiscalía en sentencias (siete NO REVISADA).
+7. **Presupuesto**: control 2 + coordinador 18 + ola 150 + `procedencia-cifras` 24 + R2 6 = **200**.
+8. **Rama**: 156 vive en `claude/argos-156-criminal-intelligence-kx9pts`.

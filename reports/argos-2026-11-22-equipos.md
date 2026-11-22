@@ -2,14 +2,17 @@
 
 > Nota de control: nombres propios de víctimas y detenidos omitidos. Prevalecen el cartelón y el archivo de fuentes.
 
+> Numeración: los ARG-ID de este archivo NO son los finales (Chilapa y Mojolo se retiraron en los controles); prevalece el cartelón.
+
 Resúmenes del coordinador sobre los informes íntegros de cada equipo (ola de 6 × 25 búsquedas, todas extended; egreso bloqueado). Ventana larga 19-nov 18:40 → 22-nov 09:34 CDMX (62 h 54 min; jue 19 · vie 20 · sáb 21 · dom 22). Ciclo B (Noreste + Golfo encabezan el triaje judicial), tras la prioridad sobre el ciclo.
 
-## Coordinador (control 2 + 15 de 18 antes de los controles)
+## Coordinador (control 2 + 18 de 18)
 
 - Control (2): «Gabinete de Seguridad acciones relevantes 20 de noviembre 2026»: standard sin boletín de 2026 (devuelve 2024 y 2025); extended: boletín de acciones del 19 en republicadores (RED113 2026/11; Tallapolítica; Certeza Diario; Ahora Tabasco), contenido por resumen (Guerrero 5 detenidos, 3 largas, 20 cargadores, 650 cartuchos; Tlaxcala 1 detenido, 5 largas, 4 cortas; Sayula de Alemán 4 detenidos).
 - Triple consulta federal (4): título «"acciones relevantes del 20 de noviembre"» (SRIV; Milenio y ContraRéplica: 2025) · rango «20, 21 y 22 de noviembre» (SRIV) · `site:gob.mx/sspc` noviembre (indexados 3, 5, 6-8, 9, 17 y 18; el 19 NO) · rango «13, 14 y 15» (SRIV; comunicados conjuntos sueltos en gabinetedeseguridad.gob.mx).
 - Recall por día (4): «este jueves» 19 noche (Nopaltepec, FGR) · «este viernes» 20 (Guasave, Carlos A. Carrillo, Nopaltepec, Ecatepec) · «este sábado» 21 (Cholula; Guasave saldo; Acapulco km 21) · «este domingo» 22 (Puebla; Ciudad Juárez Jeep; resto ajeno: Colombia, Guatemala).
 - Recall (4): «Chapo Isidro» (saldo Defensa 4 militares, 7 agresores, 8 detenidos; bloqueos en Ahome, Guamúchil, Guasave, Navolato por resumen) · policías emboscados (Pueblo Nuevo, Gto., jueves 19) · fosas (sin hallazgo de la ventana) · masacres (ninguna de la ventana).
+- Triple consulta al cierre (3): título «del 21 de noviembre» (SRIV; Heraldo 2025) · rango «20 y 21» (SRIV) · `site:gob.mx/sspc` «del 19 de noviembre» (no indexado; sí 2024 y 2025).
 - Verificación (1): Escuinapa, familia atacada en la carretera federal 15 (madrugada del 20 por resumen; La Silla Rota y La Jornada 2026/11/20).
 
 ## NOROESTE
