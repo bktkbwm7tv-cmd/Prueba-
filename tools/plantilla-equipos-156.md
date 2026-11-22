@@ -4,7 +4,7 @@ Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 
 ## Ventana
 - ABRE: **jueves 19-nov-2026 18:40 CDMX** (donde cerró ARGOS 155). CIERRA: **hora real de arranque de la sesión de ARGOS 156** (o del «Procede») (el coordinador la escribe aquí al copiar la plantilla: ____).
-- Calendario: el coordinador lo escribe día por día. Comprueba siempre el día de la semana que dice la fuente contra el calendario.
+- Calendario: el coordinador lo escribe día por día. **Ventana larga** (jue 19 desde 18:40 · vie 20 · sáb 21 · dom 22): las 4 búsquedas reservadas, **una fecha en la ruta por día**; los balances de fin de semana no fijan día. Comprueba siempre el día de la semana que dice la fuente contra el calendario.
 - **ARGOS 155 (ventana 18-nov 12:32 → 19-nov 18:40) publicó 13 hechos** (`ARG-155-001` a `-013`: Uruapan Rubén Jaramillo doble homicidio; Culiacán Miguel Hidalgo minisúper; Mazatlán Santa Fe adolescente; Irapuato Ignacio Allende; Morelia López Mateos minisúper; León Santa María de Cementos; Ocotlán Tlax.; Ciudad del Carmen Villas de Santa Ana; Tepeaca 7 detenidos y 5 largas; Ometepec «Beto Zacualpan»; Tepehuacán 4 detenidos; Cancún 6 detenidos; Chihuahua SSPE 2 detenidos) y ninguna `-REC-`. Un hecho del 19-nov antes de las 18:40 que 155 NO publicó es de la ventana de 155: `-REC-` **solo si es 🔴 y la hora la fija un titular**; con hora solo por resumen, ficha propia con cláusula de retiro.
 - Todo hecho del 19 necesita HORA frente a las 18:40. Nunca infieras la hora. «Esta tarde» en un resumen NO fecha un hecho.
 - Criterio de inclusión: entra con marca el hecho con **ruta fechada o titular con día**. ⚠️ **«Rojo sin ruta» = sin DÍA por ruta o titular**; un hecho con día por ruta y sin hora NO es «sin ruta».
