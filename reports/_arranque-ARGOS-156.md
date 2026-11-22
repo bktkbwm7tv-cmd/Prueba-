@@ -13,10 +13,10 @@ Los comandos del mensaje de órdenes. **Estado esperado**: última edición `arg
 | Campo | Valor |
 |---|---|
 | Número | **ARGOS 156** |
-| Ventana | **abre 2026-11-19 18:40 CDMX** (cierre de 155) y cierra a la hora real de arranque (o del «Procede», si llega más de dos horas tarde) |
+| Ventana | **abre 2026-11-19 18:40 CDMX** (cierre de 155) y cierra a la hora real de arranque (o del «Procede», si llega más de dos horas tarde). **Ventana larga** (orden del 20-nov no ejecutada; rehecha el 22-nov): jue 19 (desde 18:40) · vie 20 · sáb 21 · dom 22; precedente ARGOS 140; recall nacional por día |
 | Serie | 24 h 58 (154) · **30 h 08 (155)** |
 | Ciclo | **B** (Noreste + Golfo), tras la prioridad sobre el ciclo |
-| Archivo | `argos-2026-11-20.html` (viernes 20-nov; si es otro día, cámbialo) · `WINDOW_DAYS` = **2** (19 y 20; la plantilla de 155 ya trae 2) |
+| Archivo | `argos-2026-11-22.html` (domingo 22-nov; si es otro día, cámbialo) · `WINDOW_DAYS` = **4** (19, 20, 21 y 22; la plantilla de 155 trae 2: reemplazar y asertar) |
 
 ## BLOQUE 2 — LECTURA OBLIGATORIA
 
@@ -44,7 +44,7 @@ Tope de 200 por turno: control 2 · coordinador 18 · ola 150 (6 × 25; **4 por 
 
 ## BLOQUE 5 — FORMA Y CONSTRUCCIÓN
 
-- Parta de `tools/datos-argos-155.py` (copia a `datos-argos-156.py`): cambie `NUM`, `FECHA`, `HORA`, `DUR`, `HORAS`, `RET` («SI RESULTA ANTERIOR A LAS 18:40 DEL 19, ES DE LA VENTANA DE ARGOS 155…»), el default de `ARGOS_CONSULTA` («19:06» → «__CONSULTA__»), `FED17`, la ventana del panorama, las aserciones, el `<title>` que reemplaza (pon **ARGOS 155 — Reporte Nacional de Seguridad — 2026-11-19**, plantilla `reports/argos-2026-11-19.html`), `WINDOW_DAYS` (la plantilla trae 2), las tarjetas de armamento (subtítulos por categoría) y las listas de fichas por página. Para `-REC-`, recupere `co4` y `rows_rec` del generador de 152.
-- Móvil: `python3 tools/gen-movil.py 156 <FECHA> 155 2026-11-19 <HORA>`. Texto: `python3 tools/gen-texto.py reports/argos-<FECHA>.html reports/argos-<FECHA>.txt`. Validador (solo escritorio): `node tools/validar.js reports/argos-<FECHA>.html 2026-11-19 <FECHA>`.
+- Parta de `tools/datos-argos-155.py` (copia a `datos-argos-156.py`): cambie `NUM`, `FECHA`, `HORA`, `DUR`, `HORAS`, `RET` («SI RESULTA ANTERIOR A LAS 18:40 DEL 19, ES DE LA VENTANA DE ARGOS 155…»), el default de `ARGOS_CONSULTA` («19:06» → «__CONSULTA__»), `FED17`, la ventana del panorama, las aserciones, el `<title>` que reemplaza (pon **ARGOS 155 — Reporte Nacional de Seguridad — 2026-11-19**, plantilla `reports/argos-2026-11-19.html`), `WINDOW_DAYS` (la plantilla trae 2: pasar a 4 y asertar), las tarjetas de armamento (subtítulos por categoría) y las listas de fichas por página. Para `-REC-`, recupere `co4` y `rows_rec` del generador de 152.
+- Móvil: `python3 tools/gen-movil.py 156 2026-11-22 155 2026-11-19 <HORA>`. Texto: `python3 tools/gen-texto.py reports/argos-<FECHA>.html reports/argos-<FECHA>.txt`. Validador (solo escritorio): `node tools/validar.js reports/argos-<FECHA>.html 2026-11-19 <FECHA>`.
 - Controles: dos rondas; informes en `reports/argos-<FECHA>-equipos.md` y `-fuentes.md`; la ronda 2 en serie.
 - Cierre: `_pendientes.md`, `indice-arg-id.md`, orden de ARGOS 157. Commit y push.

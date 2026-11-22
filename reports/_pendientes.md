@@ -41,6 +41,8 @@ sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le
 
 **ARGOS 155 publicado el 19-nov** (ventana 18-nov 12:32 → 19-nov 18:40, 30 h 08 min; rama `claude/argos-154-security-report-etkefe`, encima de `claude/argos-154-criminal-intelligence-g2kqhw`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-156.md`** (y `_ordenes-ARGOS-156.txt`).
 
+⚠️ **22-nov: la orden de 156 del 20-nov no se ejecutó** (no hay edición del 20 ni del 21). **Orden rehecha el 22-nov**: ventana larga **19-nov 18:40 → domingo 22-nov**, archivo `argos-2026-11-22.html`, `WINDOW_DAYS = 4`, recall nacional por día.
+
 **ARGOS 148 publicado el 6-nov** (ventana 5-nov 09:42 → 6-nov 07:30, 21 h 48 min; rama `claude/argos-148`, encima de 147). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-149.md`** (y `_ordenes-ARGOS-149.txt`).
 
 **ARGOS 147 publicado el 5-nov** (ventana 4-nov 06:52 → 5-nov 09:42, 26 h 50 min; rama `claude/argos-147`, encima de 146). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-148.md`** (y `_ordenes-ARGOS-148.txt`).
