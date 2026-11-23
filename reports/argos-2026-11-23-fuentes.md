@@ -9,7 +9,7 @@
 | Ventana | **dom 22-nov 09:34 → lun 23-nov 08:35 CDMX** · duración **23 h 01 min** (cálculo con `date`) |
 | Calendario | dom 22 (09:34–23:59, 14 h 26) · lun 23 (00:00–08:35, 8 h 35) |
 | Hora de arranque (Bloque 0) | 08:35 CDMX · «Procede» a las 09:39 (1 h 04): dentro de las dos horas, no se ajusta el cierre |
-| Consulta | __CONSULTA_FUENTES__ |
+| Consulta | 10:04 CDMX (hora real tomada con `date` al regenerar tras el cierre de `procedencia-cifras` R2; el agente no informó su reloj) |
 | Red | `curl https://www.gob.mx/fgr` → `000` (23-nov 08:35): egreso bloqueado; solo WebSearch; techo ★★★★☆ |
 | Ciclo | **C** (Occidente + Sureste encabezan el triaje judicial), tras la prioridad sobre el ciclo |
 | Rama | `claude/argos-157-criminal-intelligence-qpwf2b` (encima de `claude/argos-156-criminal-intelligence-kx9pts`) |
@@ -83,8 +83,8 @@ Contenido del 19 por resumen (no fija día ni hora): Mocorito 6 detenidos con un
 |---|---|---|---|
 | `editor-duplicidad` | R1 (paralelo) | CORREGIR | FE de 156 con efecto completo · Nopaltepec como arbitraje de saldo · Pueblo Nuevo a seguimiento · deslinde Platanito/156-013 con discriminadores y reserva · inventario reasignado a «atribución no arbitrada» · Zinapécuaro con ARG-117-REC-001 · Irapuato -007 con ARG-155-004 · sentencias: reserva de 2,993, 5126 «No confirmado», Iguala HEREDADO · tarjetas SRIV · Ostula a `-REC-002` · valoración sin ciudades ni recuento de marcas · conclusión 2 con otro encabezado · vistos y seguimientos recortados · E-Consulta retirado de -002 · fecha de publicación en el mapa · títulos de -005 y -007 · portada con cotejo |
 | `procedencia-cifras` | R1 (paralelo, 24) | CORREGIR | Infobae liveblog retirado de -003/-009 · Lomas de Mazatlán 90 cartuchos por titular, ARM-001, sin «fuente única» ni GN · Tepexco: rutas 22, calcinados y móvil contradichos, 4 por UnoTV y E-Consulta · -003 retitulado · -007 con campo de futbol y Las Delicias por titular, «varios heridos» contradicho · I=0 uniforme · Nopaltepec sobre El Heraldo SLP, contradicción registrada · Jacona 16 años por titular, 15 años = 6-nov, «un muerto y dos lesionados» como reserva · citas literales (Línea Directa, Kuali) · -008 sin «ambulante» · .50 singular/plural |
-| `editor-duplicidad` | R2 (serie) | __R2E__ | __R2E_C__ |
-| `procedencia-cifras` | R2 (serie, 6) | __R2P__ | __R2P_C__ |
+| `editor-duplicidad` | R2 (serie) | CORREGIR (menor) | Valoración 3: tres entidades, no dos · Valoración 1 sin justificar el color · conclusión 2 con línea distinta de la portada (vigilar Sinaloa de Leyva y municipios con bloqueos) · emisor personal sustituido por el medio · panel de Tepexco «3 muertos, uno menor» · tarjetas y lectura regional sin repetir Lomas de Mazatlán. Alias «El Chapo Isidro»: se mantiene (precedente de 156) |
+| `procedencia-cifras` | R2 (serie, 6 de 6) | CORREGIR (menor) | RED Michoacán 2026/11/22 (Jacona) reproducido: día por ruta · 16 años por titular de La Voz de Michoacán (Quadratín no reproducido) · IMN, Nanchemichoacán y La Voz = una fuente · Tepexco: Mtp Noticias «dos cadáveres calcinados» frente a Quadratín «tres» · El Sol de Irapuato citado completo · Lomas de Mazatlán: corporación contradicha · El Platanito: lugar contradicho; saldo de Aristegui = ARG-156-001, no se suma · Noroeste sin fecha en la ruta (día por Luz Noticias) · marcador de consulta sustituido (10:04) |
 
 No corregido, con razón: los vistos y balances se mantienen en una línea cada uno (son trazabilidad de descarte, recortados a lo indispensable); el resto pasa a este archivo.
 
@@ -100,3 +100,5 @@ Control 2 + coordinador 18 + ola 150 (6 × 25) + `procedencia-cifras` R1 24 + R2
 4. **Señuelos de saldo idéntico en la misma colonia** (Chilpancingo, col. Del PRI: 1 muerto y 2 heridos en mayo de 2025 y el 11-nov en Coppel): sin ruta con fecha, no se fichó.
 5. **Encargos no cubiertos por presupuesto**: Noroeste no revisó Mazatlán explosivos, Culiacán Libertad, Cajeme, Tecate, ni las cláusulas 152-154 del Noroeste.
 6. **Federales** (GN, Defensa, Semar, FGR) sin consulta por dominio en ningún equipo.
+
+No corregido, con razón (R2): la marca `FRONTERA DE VENTANA` que propuso `procedencia-cifras` para Zinapécuaro y Tepexco no aplica (la frontera es para hechos publicados el día de **cierre**); ambos llevan la cláusula de retiro de apertura. Latinus, RED Michoacán y La Jornada 2026/11/23 (Zinapécuaro) y el «menor» de Tepexco (El Congresista) fueron reproducidos literalmente en R1; R2 no los volvió a ver por presupuesto: se mantienen.
