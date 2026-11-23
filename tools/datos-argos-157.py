@@ -36,29 +36,29 @@ E = [
   ent="Michoacán", mun="Zinapécuaro (brecha, por resumen)", dia="DOM 22-NOV, POR RUTA",
   fecha_txt="domingo 22-nov, por ruta; madrugada, solo por resumen",
   title="MICHOACÁN · ZINAPÉCUARO — EMBOSCAN A MILITARES: UN ELEMENTO MUERTO Y OTRO HERIDO",
-  hecho="Zinapécuaro · brecha de la región, " + RES + " · domingo 22-NOV, por ruta (Latinus 2026/11/22: «Muere militar tras emboscada de sujetos armados en Michoacán; otro elemento resulta herido»; RED Michoacán 2026/11/22: «Emboscada contra militares deja un elemento muerto en Zinapécuaro»; Changoonga 2026/11/22) · madrugada, " + RES + " · " + RET + " · <b>1 militar muerto</b> y <b>1 herido</b>, por titular (La Jornada 2026/11/23: «Un muerto y un herido, en emboscada contra militares en Zinapécuaro») (🔴 ataque a personal de las fuerzas armadas; muerte de personal) · «emboscada», por titular: el grupo inicia · cifras atribuidas a la Fiscalía de Michoacán, " + RES + " · agresores huidos, " + RES + " · " + NOD,
+  hecho="Zinapécuaro · brecha de la región, " + RES + " · «presunta emboscada», por titular (Changoonga), y «tiroteo», por titular (Atiempo) · domingo 22-NOV, por ruta (Latinus 2026/11/22: «Muere militar tras emboscada de sujetos armados en Michoacán; otro elemento resulta herido»; RED Michoacán 2026/11/22: «Emboscada contra militares deja un elemento muerto en Zinapécuaro»; Changoonga 2026/11/22) · madrugada, " + RES + " · " + RET + " · <b>1 militar muerto</b> y <b>1 herido</b>, por titular (La Jornada 2026/11/23: «Un muerto y un herido, en emboscada contra militares en Zinapécuaro») (🔴 ataque a personal de las fuerzas armadas; muerte de personal) · «emboscada», por titular: el grupo inicia · cifras atribuidas a la Fiscalía de Michoacán, " + RES + " · agresores huidos, " + RES + " · " + NOD,
   panel="<b>Emboscada a militares</b>: 1 muerto, 1 herido", inst=SB, nac="Latinus · La Jornada", conf="★★★☆☆",
   campo="hora solo por resumen frente a la apertura; declaración de la Fiscalía solo por resumen", I=0, N=2, R=4, A=0,
   fechadas=["Latinus (2026/11/22)", "RED Michoacán (2026/11/22)", "Changoonga (2026/11/22)", "La Jornada (2026/11/23)"], estatus="Parcialmente corroborado", arm=None,
-  desl="Zinapécuaro figura por ARG-101-003, ARG-102-003 y ARG-102-ARM-001 (agosto): otros hechos. «Emboscada en Zinapécuaro deja un militar muerto y tres heridos» (Meganoticias; La Voz de Michoacán; Siglo Veinte; 1plana): emboscada a la BOI de septiembre, otro hecho, no se suma. Identidad: no se reproduce."),
- dict(id="ARG-157-002", estado="MX-PUE", region="Centro", color="rojo", impacto="grande", fecha="2026-11-22", hora="madrugada, ~03:00 (solo por resumen)", mu=3, he=2, cu=0, hk=3,
-  ent="Puebla", mun="Tepexco (San Juan Calmeca)", dia="DOM 22-NOV, POR SLUG",
-  fecha_txt="domingo 22-nov, por slug; madrugada, ~03:00, solo por resumen",
+  desl="Zinapécuaro figura por ARG-117-REC-001 (emboscada a la BOI, 4-sep, Santa Cruz–San José Carpintero) y por ARG-101-003, ARG-102-003 y ARG-102-ARM-001 (agosto): otros hechos. «Emboscada en Zinapécuaro deja un militar muerto y tres heridos» (Meganoticias) y titulares equivalentes (Siglo Veinte; 1plana): la emboscada de septiembre, no se suma. Identidad: no se reproduce."),
+ dict(id="ARG-157-002", estado="MX-PUE", region="Centro", color="rojo", impacto="grande", fecha="2026-11-22", hora="madrugada, ~03:00, o aviso a las 23:50 (solo por resumen)", mu=3, he=2, cu=0, hk=3,
+  ent="Puebla", mun="Tepexco (San Juan Calmeca)", dia="DOM 22-NOV, POR RUTA",
+  fecha_txt="publicación domingo 22-nov, por ruta; madrugada, ~03:00, o aviso a las 23:50, solo por resumen",
   title="PUEBLA · TEPEXCO — ATAQUE ARMADO EN SAN JUAN CALMECA: TRES HOMBRES MUERTOS, UNO MENOR DE EDAD; VEHÍCULOS INCENDIADOS",
-  hecho="Tepexco · <code>SAN JUAN CALMECA</code>, por titular (UnoTV: «Violencia en la Mixteca de Puebla: queman mototaxi y asesinan a cuatro personas en San Juan Calmeca») · domingo 22-NOV, por slug (El Congresista «…/tres-muertos-tepexco-22-noviembre»: «Tepexco: ataque armado deja tres hombres muertos, entre ellos un menor; dos vehículos fueron incendiados») · madrugada, ~03:00, " + RES + " · " + RET + " · <b>3 hombres muertos</b>, uno menor de edad, por titular, frente a 4, por titular (UnoTV): <code>SALDO CONTRADICHO — SE CUENTAN 3</code> (🔴 homicidio múltiple y quema de vehículos) · <b>2 heridos</b>, por titular (Periódico Central: «Mueren tres personas durante ataque armado en Tepexco, Puebla; hubo dos heridos tras las agresiones»; La Jornada de Oriente: «Ataque armado en Tepexco deja tres muertos y dos heridos») · dos de las víctimas calcinadas, por titular (Carlos Martín Huerta); mototaxi incendiado, por titular (Urbano) · «riña», por titular de un medio (Mediatik), frente a ataque armado: móvil no informado · FGE de Puebla, diligencias, " + RES + " · " + NOD + ", por titular (E-Consulta: «… cero detenidos en Puebla»)",
+  hecho="Tepexco · <code>SAN JUAN CALMECA</code>, por titular (UnoTV: «Violencia en la Mixteca de Puebla: queman mototaxi y asesinan a cuatro personas en San Juan Calmeca») · publicación domingo 22-NOV, por ruta (Retodiario 2026/11/22: «Riña en Tepexco deja tres muertos y dos heridos; queman mototaxi con cuerpos»; Síntesis 2026/11/22: «Tras presunta riña, abandonan tres cadáveres en Tepexco») y por slug (El Congresista «…/tres-muertos-tepexco-22-noviembre»: «Tepexco: ataque armado deja tres hombres muertos, entre ellos un menor; dos vehículos fueron incendiados») · madrugada, ~03:00, o aviso a la policía a las 23:50, " + RES + " · " + RET + " · <b>3 hombres muertos</b>, uno menor de edad, por titular, frente a 4, por titular (UnoTV; E-Consulta: «Alcalde de Tepexco pide esclarecer homicidio de cuatro personas en Calmeca»): <code>SALDO CONTRADICHO — SE CUENTAN 3</code> (🔴 homicidio múltiple y quema de vehículos) · <b>2 heridos</b>, por titular (Periódico Central: «Mueren tres personas durante ataque armado en Tepexco, Puebla; hubo dos heridos tras las agresiones»; La Jornada de Oriente: «Ataque armado en Tepexco deja tres muertos y dos heridos») · dos o tres víctimas calcinadas, contradicho por titular (Carlos Martín Huerta: dos; Quadratín Puebla: «Hallan tres cuerpos calcinados y un mototaxi incendiado en Tepexco») · mototaxi incendiado, por titular · móvil contradicho por titular: riña (Mediatik; Retodiario; Síntesis) o ajuste de cuentas (Municipios Puebla) · FGE de Puebla, diligencias, " + RES + " · " + NOD,
   panel="<b>3 hombres muertos y 2 heridos</b>; vehículos incendiados", inst=SB, nac="UnoTV", conf="★★★☆☆",
-  campo="hora solo por resumen frente a la apertura; saldo contradicho; ninguna fuente institucional", I=0, N=1, R=6, A=0,
-  fechadas=["El Congresista (slug «22-noviembre»)"], estatus="Parcialmente corroborado", arm=None,
-  desl="Tepexco no figura en ediciones previas. «Siete ejecutados en 24 horas…» (E-Consulta): balance, no se integra. Identidades: no se reproducen."),
+  campo="hora solo por resumen frente a la apertura; saldo y móvil contradichos; ninguna fuente institucional", I=0, N=1, R=9, A=0,
+  fechadas=["Retodiario (2026/11/22)", "Síntesis (2026/11/22)", "El Congresista (slug «22-noviembre»)"], estatus="Parcialmente corroborado", arm=None,
+  desl="Tepexco no figura en ediciones previas. «Siete ejecutados en 24 horas y cero detenidos en Puebla» (E-Consulta): balance estatal, no se integra ni sostiene la ausencia de detenidos. Identidades: no se reproducen."),
  dict(id="ARG-157-003", estado="MX-SIN", region="Noroeste", color="rojo", impacto="grande", fecha="2026-11-22", hora="no fijada", mu=0, he=0, cu=0, hk=10,
   ent="Sinaloa", mun="Sinaloa de Leyva (El Platanito)", dia="PUBL. DOM 22-NOV, POR RUTA",
   fecha_txt="publicación domingo 22-nov, por ruta; día y hora del ataque no fijados",
-  title="SINALOA · SINALOA DE LEYVA — ATACAN A UNA PATRULLA MILITAR DE RECONOCIMIENTO EN EL PLATANITO",
-  hecho="Sinaloa de Leyva · <code>EL PLATANITO</code>, " + RES + " · publicación domingo 22-NOV, por ruta (La Razón 2026/11/22: «Detienen a ocho integrantes de facción del 'Chapo Isidro' tras ataque a militares en Sinaloa») · día y hora del ataque no fijados · " + AP + " · " + RET + " · <b>ataque a militares</b>, por titular (rotativo: «Ocho detenidos tras atacar a militares en Sinaloa de Leyva»; La Jornada 2026/11/23: «Sinaloa: detienen a ocho de los Beltrán Leyva en ataque a militares de élite»); patrulla de reconocimiento, " + RES + " (🔴 el grupo agrede a personal en patrullaje) · bajas militares: no informadas · agresión repelida; detención: ficha aparte",
-  panel="<b>Ataque a patrulla militar</b>", inst="Defensa (por titular de medio)", nac="La Razón · La Jornada · Proceso · Infobae", conf="★★★☆☆",
-  campo="día y hora del ataque no fijados; parte de la Defensa solo por titular de medio", I=1, N=4, R=1, A=0,
-  fechadas=["La Razón (2026/11/22)", "Proceso (2026/11/23)", "Infobae (2026/11/23)", "La Jornada (2026/11/23)"], estatus="Parcialmente corroborado", arm=None,
-  desl="El Platanito y Sinaloa de Leyva no figuran en ediciones previas. Otro episodio que ARG-156-001 (Guasave): «ocho integrantes más», por titular (Proceso 2026/11/23); ubicación en Culiacán, por titular de un medio (Yahoo): no se acoge."),
+  title="SINALOA · SINALOA DE LEYVA — ATACAN A MILITARES EN EL PLATANITO",
+  hecho="Sinaloa de Leyva · <code>EL PLATANITO</code>, " + RES + " · publicación domingo 22-NOV, por ruta (La Razón 2026/11/22: «Detienen a ocho integrantes de facción del 'Chapo Isidro' tras ataque a militares en Sinaloa») · día y hora del ataque no fijados · " + AP + " · " + RET + " · <b>ataque a militares</b>, por titular (Rotativo: «Ocho detenidos tras atacar a militares en Sinaloa de Leyva»; La Jornada 2026/11/22: «Sinaloa: Cae célula del 'Chapo Isidro' tras agresión al Ejército; hay 8 detenidos»); «tiroteo», por titular (Proceso) · patrulla de reconocimiento, " + RES + " (🔴 el grupo agrede a personal militar; inicia el grupo, por titular) · bajas militares: no informadas · agresión repelida; detención: ficha aparte",
+  panel="<b>Ataque a militares</b>", inst=SB, nac="La Razón · La Jornada · Proceso", conf="★★★☆☆",
+  campo="día y hora del ataque no fijados; patrulla solo por resumen; ninguna fuente institucional", I=0, N=3, R=2, A=0,
+  fechadas=["La Razón (2026/11/22)", "La Jornada (2026/11/22)", "Luz Noticias (2026-11-22)", "Proceso (2026/11/23)"], estatus="Parcialmente corroborado", arm=None,
+  desl="El Platanito y Sinaloa de Leyva no figuran en ediciones previas. Otro episodio que ARG-156-001 (Guasave): otro municipio, sin bajas militares publicadas, publicación de otro día. Ubicación en Culiacán, por titular de un medio (Yahoo): no se acoge."),
  # ======================= AMARILLOS
  dict(id="ARG-157-004", estado="MX-SIN", region="Noroeste", color="amarillo", impacto="mediano", fecha="2026-11-22", hora="tarde, ~16:30 (solo por resumen)", mu=1, he=1, cu=0, hk=16,
   ent="Sinaloa", mun="Culiacán (bulevar Universitarios)", dia="DOM 22-NOV, POR RUTA",
@@ -72,76 +72,90 @@ E = [
  dict(id="ARG-157-005", estado="MX-SIN", region="Noroeste", color="amarillo", impacto="mediano", fecha="2026-11-22", hora="tarde, ~14:30 (solo por resumen)", mu=1, he=0, cu=0, hk=14,
   ent="Sinaloa", mun="Mazatlán (fracc. Prados del Sol)", dia="DOM 22-NOV, POR RUTA",
   fecha_txt="domingo 22-nov, por ruta; tarde, ~14:30, solo por resumen",
-  title="SINALOA · MAZATLÁN — ASESINAN A UN HOMBRE EN SU DOMICILIO DEL FRACCIONAMIENTO PRADOS DEL SOL",
-  hecho="Mazatlán · <code>FRACC. PRADOS DEL SOL</code>, por titular · domingo 22-NOV, por ruta (Línea Directa 2026-11-22: asesinato «dentro de su casa en Prados del Sol en Mazatlán») · tarde, ~14:30, " + RES + " · <b>1 hombre muerto</b>, de 26 años, por titular (Los Noticieristas: «Asesinan a balazos a joven de 26 años frente a su domicilio en Prado del Sol, Mazatlán») (🟡 homicidio doloso único) · dentro o frente al domicilio, contradicho por titular · " + NOD,
-  panel="<b>Hombre asesinado</b> en su domicilio", inst=SB, nac="—", conf="★★★☆☆",
-  campo="hora solo por resumen; ninguna fuente institucional", I=0, N=0, R=3, A=0,
-  fechadas=["Línea Directa (2026-11-22)"], estatus="Parcialmente corroborado", arm=None,
+  title="SINALOA · MAZATLÁN — ASESINAN A UN HOMBRE EN EL FRACCIONAMIENTO PRADOS DEL SOL",
+  hecho="Mazatlán · <code>FRACC. PRADOS DEL SOL</code>, por titular · domingo 22-NOV, por ruta (Línea Directa 2026-11-22: «Asesinan a […] dentro de su casa en Prados del Sol, en Mazatlán»; Luz Noticias 2026-11-22: «Asesinan a balazos a joven de 26 años en Prados del Sol, en Mazatlán») · tarde, ~14:30, " + RES + " · <b>1 hombre muerto</b>, de 26 años, por titular (Los Noticieristas: «Asesinan a balazos a joven de 26 años frente a su domicilio en Prado del Sol, Mazatlán») (🟡 homicidio doloso único) · dentro o frente al domicilio, contradicho por titular · " + NOD,
+  panel="<b>Hombre asesinado</b>", inst=SB, nac="—", conf="★★★☆☆",
+  campo="hora solo por resumen; ninguna fuente institucional", I=0, N=0, R=4, A=0,
+  fechadas=["Línea Directa (2026-11-22)", "Luz Noticias (2026-11-22)"], estatus="Parcialmente corroborado", arm=None,
   desl="Prados del Sol de Culiacán (ARG-138-003, octubre): homónimo, otro hecho. Hombre herido en la calle Desierto del mismo fraccionamiento (Los Noticieristas), sin fecha: visto, no se suma. Identidad: no se reproduce."),
  dict(id="ARG-157-006", estado="MX-MIC", region="Occidente", color="amarillo", impacto="mediano", fecha="2026-11-22", hora="tarde (solo por resumen)", mu=1, he=0, cu=0, hk=15,
   ent="Michoacán", mun="Jacona (col. Nueva España)", dia="DOM 22-NOV, POR RUTA",
   fecha_txt="domingo 22-nov, por ruta; tarde, solo por resumen",
   title="MICHOACÁN · JACONA — ASESINAN A UN ADOLESCENTE EN LA COLONIA NUEVA ESPAÑA; DAÑOS EN DOS VEHÍCULOS Y UN INMUEBLE",
-  hecho="Jacona · <code>COL. NUEVA ESPAÑA</code>, " + RES + " · domingo 22-NOV, por ruta (RED Michoacán 2026/11/22: «Ataque armado deja un hombre muerto y daños en 2 vehículos y un inmueble, en Jacona») · tarde, " + RES + "; «esta tarde», por titular sin fecha (Radio Zitácuaro) · <b>1 adolescente muerto</b>, por titular (Respuesta Michoacán: «Ataque armado deja un adolescente muerto y daños en dos vehículos y un inmueble, en Jacona»); 16 años, " + RES + " (🟡 homicidio doloso único) · daños a dos vehículos y un inmueble, por titular · más de 40 casquillos, " + RES + " · " + NOD,
+  hecho="Jacona · <code>COL. NUEVA ESPAÑA</code>, " + RES + " · domingo 22-NOV, por ruta (RED Michoacán 2026/11/22: «Ataque armado deja un hombre muerto y daños en 2 vehículos y un inmueble, en Jacona») · tarde, " + RES + "; «esta tarde», por titular sin fecha (Radio Zitácuaro) · <b>1 adolescente muerto</b>, por titular (Respuesta Michoacán: «Ataque armado deja un adolescente muerto y daños en dos vehículos y un inmueble, en Jacona»); la ruta fechada dice «hombre»; 16 años, por titular (Quadratín: «Asesinan a hombre de 16 años en la colonia Nueva España de Jacona») (🟡 homicidio doloso único) · daños a dos vehículos y un inmueble, por titular · más de 40 casquillos, " + RES + " · " + NOD,
   panel="<b>Adolescente asesinado</b>", inst=SB, nac="—", conf="★★★☆☆",
-  campo="hora solo por resumen; ninguna fuente institucional", I=0, N=0, R=5, A=0,
+  campo="hora solo por resumen; la ruta fechada no reproducida en el control; ninguna fuente institucional", I=0, N=0, R=6, A=0,
   fechadas=["RED Michoacán (2026/11/22)"], estatus="Parcialmente corroborado", arm=None,
-  desl="Jacona figura por ARG-130-001 (bomberos, octubre): otro hecho. «Asesinan a adolescente de 15 años en Jacona» (La Voz de Michoacán), sin fecha: posible otro hecho, no se acoge la edad. Cuerpo desmembrado en Jacona (Respuesta Michoacán), sin fecha: visto. Identidad: no se reproduce."),
+  desl="Jacona figura por ARG-130-001 (bomberos, octubre): otro hecho. «Asesinan a adolescente de 15 años en Jacona» (La Voz de Michoacán): fracc. Manantiales del Curutarán, 6-nov, otro hecho. «Ataque armado en la colonia Nueva España, en Jacona, deja un muerto y dos lesionados» (La Voz de Michoacán), sin fecha: <code>MISMO HECHO NO ACREDITADO — HERIDOS NO INTEGRADOS</code>. Cuerpo desmembrado en Jacona (Respuesta Michoacán), sin fecha: visto. Identidad: no se reproduce."),
  dict(id="ARG-157-007", estado="MX-GUA", region="Occidente", color="amarillo", impacto="mediano", fecha="2026-11-22", hora="no fijada; tarde (solo por resumen)", mu=1, he=1, cu=0, hk=15,
-  ent="Guanajuato", mun="Irapuato (campo de futbol)", dia="DOM 22-NOV, POR RUTA",
+  ent="Guanajuato", mun="Irapuato (campos Estrella, col. Las Delicias)", dia="DOM 22-NOV, POR RUTA",
   fecha_txt="domingo 22-nov, por ruta; hora no fijada; tarde, solo por resumen",
-  title="GUANAJUATO · IRAPUATO — ATAQUE ARMADO EN UN CAMPO DE FUTBOL: UN MUERTO Y UN HERIDO",
-  hecho="Irapuato · <code>CAMPOS ESTRELLA</code>, por titular; colonia Las Delicias o Plan de Guanajuato, " + RES + ": <code>COLONIA NO FIJADA</code> · domingo 22-NOV, por ruta (Kuali 2026/11/22: «Ataque armado en Campos Estrella deja un muerto y un herido en Irapuato») · hora no fijada; tarde, " + RES + " · <b>1 hombre muerto</b> y <b>1 herido</b>, por titular (🟡 homicidio doloso único) · «Ataque armado en campo de futbol en colonia Plan de Guanajuato…», por titular sin fecha (Guanajuato Informa): <code>MISMO HECHO NO ACREDITADO</code> · " + NOD,
-  panel="<b>Ataque en campo de futbol</b>: 1 muerto, 1 herido", inst=SB, nac="—", conf="★★★☆☆",
-  campo="hora y colonia no fijadas; ninguna fuente institucional", I=0, N=0, R=3, A=0,
-  fechadas=["Kuali (2026/11/22)"], estatus="Parcialmente corroborado", arm=None,
-  desl="Campos Estrella no figura en ediciones previas. XEU lo republica bajo etiqueta de Veracruz: misma fuente, no otro hecho. Alias de la víctima por titular: no se reproduce."),
+  title="GUANAJUATO · IRAPUATO — ATAQUE ARMADO EN LOS CAMPOS DE FUTBOL ESTRELLA: UN MUERTO Y UN HERIDO",
+  hecho="Irapuato · <code>CAMPOS DE FUTBOL ESTRELLA, COL. LAS DELICIAS</code>, por titular (Milenio: «Irapuato: Ataque en campo de futbol La Estrella deja muerto y herido»; El Sol de Irapuato: «Asesinan a un hombre y lesionan a otro durante partido de futbol en Las Delicias, en Irapuato») · domingo 22-NOV, por ruta (Kuali 2026/11/22: «ATAQUE ARMADO EN CAMPOS ESTRELLA DEJA UN MUERTO Y UN HERIDO EN IRAPUATO»; AM 2026/11/22: «Convivían tras partido en campos de futbol de Irapuato cuando entraron y balearon a dos») · hora no fijada; tarde, " + RES + " · <b>1 hombre muerto</b> y <b>1 herido</b>, por titular (🟡 homicidio doloso único); «varios heridos», por titular sin fecha (Notus): <code>HERIDOS CONTRADICHOS — SE CUENTA 1</code> · colonia Plan de Guanajuato, por titular sin fecha (Guanajuato Informa): no se acoge · " + NOD,
+  panel="<b>Ataque en campo de futbol</b>: 1 muerto, 1 herido", inst=SB, nac="Milenio", conf="★★★☆☆",
+  campo="hora no fijada; heridos contradichos; ninguna fuente institucional", I=0, N=1, R=5, A=0,
+  fechadas=["Kuali (2026/11/22)", "AM (2026/11/22)"], estatus="Parcialmente corroborado", arm=None,
+  desl="Campos Estrella no figura en ediciones previas; Irapuato, col. Ignacio Allende (ARG-155-004, 19-nov): otro hecho. XEU lo republica bajo etiqueta de Veracruz: misma fuente, no otro hecho. Alias de la víctima por titular: no se reproduce."),
  dict(id="ARG-157-008", estado="MX-GUA", region="Occidente", color="amarillo", impacto="mediano", fecha="2026-11-23", hora="mañana; ~06:00 o ~07:15, contradicho (solo por resumen)", mu=1, he=0, cu=0, hk=6,
   ent="Guanajuato", mun="Irapuato (av. Siglo XXI, cerca de Inforum)", dia="LUN 23-NOV, POR RUTA",
   fecha_txt="lunes 23-nov, por ruta; mañana, hora contradicha, solo por resumen",
-  title="GUANAJUATO · IRAPUATO — ASESINAN A UN VENDEDOR AMBULANTE CERCA DE INFORUM",
+  title="GUANAJUATO · IRAPUATO — ASESINAN A UN VENDEDOR CERCA DE INFORUM",
   hecho="Irapuato · <code>AV. SIGLO XXI, CERCA DE INFORUM</code>, por titular · lunes 23-NOV, por ruta (AM 2026/11/23: «Ataque armado deja un vendedor muerto cerca de Inforum Irapuato») · ~06:00 o ~07:15, " + RES + ": " + FR + " · <b>1 hombre muerto</b>, vendedor, por titular (Agora GTO: «Le quitan la vida a vendedor de tamales y juegos, en Irapuato») (🟡 homicidio doloso único) · móvil no informado; posible asalto, " + RES + " · " + NOD,
   panel="<b>Vendedor asesinado</b>", inst=SB, nac="—", conf="★★★☆☆",
   campo="hora solo por resumen y contradicha; ninguna fuente institucional", I=0, N=0, R=2, A=0,
   fechadas=["AM (2026/11/23)"], estatus="Parcialmente corroborado", arm=None,
-  desl="Inforum no figura en ediciones previas. Publicado el día de cierre: si un ancla horaria lo sitúa después de las 08:35 del 23, se retira de este total y pasa a la edición siguiente."),
+  desl="Inforum no figura en ediciones previas. Giro contradicho, " + RES + " (desayunos o tamales). Publicado el día de cierre sin hora por titular."),
  # ======================= VERDES
  dict(id="ARG-157-009", estado="MX-SIN", region="Noroeste", color="verde", impacto="grande", fecha="2026-11-22", hora="no fijada", mu=0, he=0, cu=0, hk=10,
   ent="Sinaloa", mun="Sinaloa de Leyva (El Platanito)", dia="PUBL. DOM 22-NOV, POR RUTA",
   fecha_txt="publicación domingo 22-nov, por ruta; día y hora de la detención no fijados",
   title="SINALOA · SINALOA DE LEYVA — EL EJÉRCITO DETIENE A OCHO INTEGRANTES DE LA FACCIÓN DE «EL CHAPO ISIDRO» EN EL PLATANITO",
-  hecho="Sinaloa de Leyva · <code>EL PLATANITO</code>, " + RES + " · publicación domingo 22-NOV, por ruta (La Razón 2026/11/22) · " + AP + " · " + RET + " · <b>8 detenidos</b>, por titular (Proceso 2026/11/23: «Caen ocho integrantes más de la facción del Chapo Isidro tras tiroteo con militares»; Infobae 2026/11/23: «Ejército detiene a 8 sicarios de \"El Chapo Isidro\" tras agresión en Sinaloa: participaron en narcobloqueos»); cifra de la Defensa por titular de medio (🟢 detención) · un menor entre los detenidos, " + RES + " · participación en los bloqueos del 20-nov, por titular (Infobae) · ametralladoras calibre .50 y seis vehículos, " + RES + ": " + CND + " · puestos a disposición de la FGR en Culiacán, " + RES,
-  panel="<b>8 detenidos</b> de la facción de «El Chapo Isidro»", inst="Defensa (por titular de medio)", nac="Proceso · Infobae · La Razón · La Jornada · Excélsior", conf="★★★☆☆",
-  campo="día y hora de la detención no fijados; cifra de la Defensa solo por titular de medio", I=1, N=5, R=1, A=0,
-  fechadas=["La Razón (2026/11/22)", "Proceso (2026/11/23)", "Infobae (2026/11/23)", "La Jornada (2026/11/23)"], estatus="Parcialmente corroborado", arm=None, armtxt="sin fila — armamento sin cantidad publicada: evento cualitativo",
-  desl="Delito y detención en la misma ventana: dos fichas (ARG-157-003 y esta). «Ocho integrantes más», por titular: distintos de los ocho de ARG-156-013 (Guasave); la Defensa, " + RES + ", no acredita que otros reportes correspondan al mismo operativo. Total de 16, " + RES + " (La Razón): no se integra. Nombres: no se reproducen."),
+  hecho="Sinaloa de Leyva · <code>EL PLATANITO</code>, " + RES + " · publicación domingo 22-NOV, por ruta (La Razón 2026/11/22) · " + AP + " · " + RET + " · <b>8 detenidos</b>, por titular (Proceso 2026/11/23: «Caen ocho integrantes más de la facción del Chapo Isidro tras tiroteo con militares»; La Jornada 2026/11/22: «…hay 8 detenidos») (🟢 detención) · cifra atribuida a la Defensa por medios, sin documento · un menor entre los detenidos, " + RES + " · participación en bloqueos, por titular (adn40: «habrían participado en bloqueos y ataques»); los del 20-nov, " + RES + " · ametralladora(s) calibre .50, singular o plural contradicho, y vehículos, " + RES + ": " + CND + " · puestos a disposición de la FGR en Culiacán, " + RES,
+  panel="<b>8 detenidos</b> de la facción de «El Chapo Isidro»", inst=SB, nac="Proceso · La Razón · La Jornada · Excélsior · Crónica", conf="★★★☆☆",
+  campo="día y hora de la detención no fijados; cifra de la Defensa solo citada por medios", I=0, N=5, R=1, A=0,
+  fechadas=["La Razón (2026/11/22)", "La Jornada (2026/11/22)", "Luz Noticias (2026-11-22)", "Proceso (2026/11/23)", "Crónica (2026/11/23)"], estatus="Parcialmente corroborado", arm=None, armtxt="sin fila — armamento sin cantidad publicada: evento cualitativo",
+  desl="Delito y detención en la misma ventana: dos fichas (ARG-157-003 y esta). Infobae 2026/11/23: cobertura en vivo, no fecha ni sostiene. Frente a los ocho de ARG-156-013 (Guasave): presuntamente distintos, «ocho integrantes más», por titular (Proceso); total de 16, " + RES + " (La Razón); otro municipio; publicación de otro día · coinciden cifra, corporación, facción y vínculo con los bloqueos: <code>POSIBLE DUPLICIDAD CON ARG-156-013 NO DESCARTADA — DETENIDOS FUERA DE TOTALES</code>. Nombres: no se reproducen."),
  dict(id="ARG-157-010", estado="MX-SIN", region="Noroeste", color="verde", impacto="mediano", fecha="2026-11-22", hora="no fijada", mu=0, he=0, cu=0, hk=10,
   ent="Sinaloa", mun="Mazatlán (Lomas de Mazatlán)", dia="PUBL. DOM 22-NOV, POR RUTA",
   fecha_txt="publicación domingo 22-nov, por ruta; hora no fijada",
-  title="SINALOA · MAZATLÁN — POLICÍAS ESTATALES DETIENEN A DOS HOMBRES CON CARGADORES Y UNA MOTOCICLETA",
-  hecho="Mazatlán · <code>LOMAS DE MAZATLÁN</code>, " + RES + " · publicación domingo 22-NOV, por ruta (Línea Directa 2026-11-22: «Policías estatales detienen a dos hombres con cargadores y una moto en Mazatlán») · hora no fijada · " + AP + " · " + RET + " · <b>2 detenidos</b>" + TM + " (🟢 detención) · cargadores y motocicleta, por titular; 2 cargadores y 90 cartuchos, " + RES + ": " + CND + " · comunicado de la SSP de Sinaloa, " + RES + "; corporación contradicha (Policía Estatal o GN), " + RES,
-  panel="<b>2 detenidos</b> con cargadores", inst=SB, nac="—", conf="★★☆☆☆",
-  campo="hora no fijada; cifras de cargadores y cartuchos solo por resumen; una sola fuente con titular", I=0, N=0, R=1, A=0,
-  fechadas=["Línea Directa (2026-11-22)"], estatus="Pendiente de corroboración", arm=None, armtxt="sin fila — cifras solo por resumen: evento cualitativo",
-  desl="Lomas de Mazatlán no figura en ediciones previas. " + FU + "."),
+  title="SINALOA · MAZATLÁN — POLICÍAS ESTATALES DETIENEN A DOS HOMBRES CON 90 CARTUCHOS Y CARGADORES EN LOMAS DE MAZATLÁN",
+  hecho="Mazatlán · <code>LOMAS DE MAZATLÁN</code>, por titular · publicación domingo 22-NOV, por ruta (Línea Directa 2026-11-22: «Policías estatales detienen a dos hombres con cargadores y una moto en Mazatlán»; Luz Noticias 2026-11-22: «Detienen a dos hombres con 90 cartuchos y cargadores para armas de fuego en Lomas de Mazatlán») · hora no fijada · " + AP + " · " + RET + " · <b>2 detenidos</b>" + TM + " (🟢 detención) · <b>90 cartuchos</b>, por titular (Luz Noticias; Los Noticieristas: «Denuncia anónima al 089 termina con dos detenidos y 90 cartuchos asegurados en Mazatlán») · cargadores, por titular, sin número; 2, " + RES + ": " + CND + " · calibres, " + RES + " · Policía Estatal, por titular; denuncia al 089, por titular (Sinaloahoy)",
+  panel="<b>2 detenidos</b> con 90 cartuchos", inst=SB, nac="—", conf="★★★☆☆",
+  campo="hora no fijada; detenidos sin cifra de autoridad; ninguna fuente institucional", I=0, N=0, R=4, A=0,
+  fechadas=["Línea Directa (2026-11-22)", "Luz Noticias (2026-11-22)"], estatus="Parcialmente corroborado", arm="ARG-157-ARM-001",
+  desl="Lomas de Mazatlán no figura en ediciones previas."),
 ]
 R = [
  dict(id="ARG-157-REC-001", estado="MX-TLA", region="Centro", fecha="2026-11-20", hora="noche (solo por resumen)", orig="ARGOS 156", col_orig="rojo", mu=2, he=0, cu=0,
   ent="Tlaxcala", mun="Calpulalpan (col. El Palmar)", dia="VIE 20-NOV, POR RESUMEN",
   fecha_txt="viernes 20-nov por la noche, solo por resumen; publicación 21-nov, por ruta",
   title="TLAXCALA · CALPULALPAN — ATAQUE ARMADO EN UNA VIVIENDA DE EL PALMAR: MUEREN UN JOVEN Y UNA NIÑA DE SEIS AÑOS",
-  hecho="<code>VENTANA DE ORIGEN: ARGOS 156</code> · Calpulalpan · <code>COL. EL PALMAR, VIVIENDA</code>, por titular · publicación sábado 21-NOV, por ruta (Gentetlx 2026/11/21: «Confirma FGJE que niña fallecida en clínica de Calpulalpan murió tras ataque armado donde ejecutaron a un hombre en vivienda de El Palmar») · noche del viernes 20-NOV, " + DSR + " · <b>2 muertos</b>, un joven y una niña de seis años, por titular (N+: «Asesinan a Balazos a una Niña de Seis Años y a un Joven en Calpulalpan, Tlaxcala»; La Prensa de Tlaxcala 2026/11: «A balazos asesinan a un hombre y a una niña de seis años en Calpulalpan») (🔴 homicidio múltiple) · la niña murió en una clínica; confirmación de la FGJE, por titular de medio · 3 detenidos, " + RES + ": <code>NO SE INTEGRA</code>",
-  panel="<b>Un joven y una niña asesinados</b> en una vivienda", inst="FGJE de Tlaxcala (por titular de medio)", nac="N+ · Excélsior",
-  conf="★★★☆☆", campo="día y hora solo por resumen; confirmación de la FGJE solo por titular de medio", I=1, N=2, R=2, A=0,
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 156</code> · Calpulalpan · <code>COL. EL PALMAR, VIVIENDA</code>, por titular · publicación sábado 21-NOV, por ruta (Gentetlx 2026/11/21: «Confirma FGJE que niña fallecida en clínica de Calpulalpan murió tras ataque armado donde ejecutaron a un hombre en vivienda de El Palmar») · noche del viernes 20-NOV, " + DSR + " · <b>2 muertos</b>, un joven y una niña de seis años, por titular (N+: «Asesinan a Balazos a una Niña de Seis Años y a un Joven en Calpulalpan, Tlaxcala»; La Prensa de Tlaxcala 2026/11: «A balazos asesinan a un hombre y a una niña de seis años en Calpulalpan»; Quadratín Tlaxcala: «Muere joven y menor de edad tras ser agredidos a balazos en Calpulalpan») (🔴 homicidio múltiple) · la niña murió en una clínica; confirmación de la FGJE, por titular de medio · 3 detenidos, " + RES + ": <code>NO SE INTEGRA</code>",
+  panel="<b>Un joven y una niña asesinados</b> en una vivienda", inst=SB, nac="N+",
+  conf="★★★☆☆", campo="día y hora solo por resumen; confirmación de la FGJE solo citada por medios", I=0, N=1, R=3, A=0,
   fechadas=["Gentetlx (2026/11/21)"], estatus="Parcialmente corroborado",
   desl="Calpulalpan figura por ARG-152-008 (Mazapa, robo de ganado): otro hecho. No figura en el cartelón de ARGOS 156. «Calpulalpan suma seis muertes violentas en una semana» (385grados): recuento, no se integra. Identidades: no se reproducen."),
+ dict(id="ARG-157-REC-002", estado="MX-MIC", region="Occidente", fecha="2026-11-20", hora="~19:00 (solo por resumen)", orig="ARGOS 156", col_orig="rojo", mu=1, he=3, cu=0,
+  ent="Michoacán", mun="Aquila (Santa María Ostula)", dia="VIE 20-NOV, POR RESUMEN",
+  fecha_txt="viernes 20-nov, ~19:00, solo por resumen; publicación 21-nov, por ruta",
+  title="MICHOACÁN · AQUILA — EMBOSCAN A FAMILIAS NAHUAS DE SANTA MARÍA OSTULA: UN COMUNERO MUERTO Y TRES MUJERES HERIDAS",
+  hecho="<code>VENTANA DE ORIGEN: ARGOS 156</code> · Aquila · <code>SANTA MARÍA OSTULA</code>, por titular · publicación sábado 21-NOV, por ruta (El Independiente 2026/11/21: «Ataque armado en Ostula deja un comunero muerto y tres mujeres heridas»; El Diario de Chihuahua 2026/nov/21: «Emboscan a familias en Michoacán; hay 1 muerto y 3 heridas») · viernes 20-NOV, ~19:00, " + DSR + " · <b>1 comunero muerto</b> y <b>3 mujeres heridas</b>, una de ellas niña de 10 años, por titular (La Jornada 2026/11/21: «Presuntos integrantes del 'CJNG' emboscan y asesinan a comunero de Santa María Ostula y hieren a una niña de 10 años») (🔴 víctimas múltiples) · «emboscada», por titular: el grupo inicia · atribución al CJNG por la comunidad, por titular (La Jornada 2026/11/22: «Embosca el CJNG a familias de Santa María Ostula, acusan»): <code>NO ACREDITADA POR AUTORIDAD</code> · " + NOD,
+  panel="<b>Emboscada a familias</b>: 1 muerto, 3 heridas", inst=SB, nac="La Jornada · SinEmbargo · Milenio · Pie de Página",
+  conf="★★★☆☆", campo="día y hora solo por resumen; ninguna fuente institucional", I=0, N=4, R=2, A=0,
+  fechadas=["El Independiente (2026/11/21)", "La Jornada (2026/11/21)", "El Diario de Chihuahua (2026/nov/21)", "La Jornada (2026/11/22)"], estatus="Parcialmente corroborado",
+  desl="Visto de ARGOS 156 sin fecha (Milenio): se recupera con rutas del 21. Ostula no figura en el índice con ARG-ID. Identidades: no se reproducen."),
 ]
 for r in R:
     r["color"] = "rec"; r["impacto"] = "grande" if r["col_orig"] == "rojo" else "mediano"
 
 # ---------------------------------------------------------------- ARMAMENTO (solo hechos propios)
 # cortas, largas, sincat, especial, cartuchos, cargadores, granadas, aei, explosivos, detenidos
-ARM = []
+ARM = [
+ dict(id="ARG-157-ARM-001", ficha="ARG-157-010", estado="MX-SIN", region="Noroeste", color="verde", ent="Sinaloa", mun="Mazatlán (Lomas de Mazatlán)", fecha="2026-11-22", hora="no fijada",
+  fecha_txt="publicación 22-nov, por ruta; <code>SI RESULTA ANTERIOR A LAS 09:34 DEL 22, SE RETIRA</code>", c=[0, 0, 0, 0, 90, 0, 0, 0, 0, 0], nd=[5, 9], integra=True,
+  corp="Policía Estatal de Sinaloa", conf="Bajo", nota="90 cartuchos, por titular de dos medios (Luz Noticias 2026-11-22; Los Noticieristas), sin comunicado oficial leído; cargadores sin número por titular; detenidos sin cifra de autoridad",
+  fuentes=["Luz Noticias (2026-11-22)", "Línea Directa (2026-11-22)", "Los Noticieristas (2026/11)"]),
+]
 
 TOT = [sum(a["c"][i] for a in ARM if a["integra"]) for i in range(10)]
 ARMAS = TOT[0] + TOT[1] + TOT[2] + TOT[3]
@@ -159,9 +173,9 @@ DENS = f"{len(E) / HORAS:.2f}".replace(".", ",")
 RPH = f"{cnt['rojo'] / HORAS:.2f}".replace(".", ",")
 ENT_ROJO = sorted(set(e["estado"] for e in E if e["color"] == "rojo"))
 RREG = {g: sum(1 for e in E if e["color"] == "rojo" and e["region"] == g) for g in ("Noroeste", "Noreste", "Occidente", "Centro", "Golfo", "Sureste")}
-assert TOT == [0] * 10 and ARMAS == 0 and ND == [True] * 10, (TOT, ND)
+assert TOT == [0, 0, 0, 0, 90, 0, 0, 0, 0, 0] and ARMAS == 0, (TOT, ND)
 assert cnt == {"rojo": 3, "amarillo": 5, "verde": 2}, cnt
-assert cnt_rec == {"rojo": 1, "amarillo": 0, "verde": 0}, cnt_rec
+assert cnt_rec == {"rojo": 2, "amarillo": 0, "verde": 0}, cnt_rec
 assert (MU, HE, CU) == (9, 5, 0), (MU, HE, CU)
 assert DENS == "0,43" and RPH == "0,13", (DENS, RPH)
 assert (NAP, NFR, NRET) == (3, 1, 5), (NAP, NFR, NRET)
@@ -227,7 +241,7 @@ def strip(s): return H.unescape(re.sub(r"<[^>]+>", "", s))
 def ev_json(e):
     return {"id": e["id"], "estado": e["estado"], "region": e["region"], "color": e["color"], "impacto": e["impacto"],
             "hecho": strip(e["hecho"]), "fuentes": e["fechadas"] or ["Fuentes regionales sin fecha en la ruta"],
-            "confianza": e["conf"], "fecha": e["fecha"], "hora": e["hora"] + (" · día solo por resumen" if "DÍA SOLO POR RESUMEN" in e.get("fecha_txt", "") else "")}
+            "confianza": e["conf"], "fecha": e["fecha"], "hora": e["hora"] + (" · día solo por resumen" if "DÍA SOLO POR RESUMEN" in e.get("fecha_txt", "") else "") + (" · fecha de publicación; día del hecho no fijado" if e.get("dia", "").startswith("PUBL") else "")}
 
 def arm_json(a):
     c = [("n/d" if i in a.get("nd", []) else v) for i, v in enumerate(a["c"])]
@@ -289,11 +303,11 @@ port = f'''<section class="page">
   <div class="alerta contexto">
     <div class="flag">LO QUE DEBE HACER EL MANDO</div>
     <p>
-      <b>1. SOLICITE A LA DEFENSA Y A LA FISCALÍA DE MICHOACÁN LA HORA Y EL PARTE OFICIAL DE LA EMBOSCADA A PERSONAL MILITAR EN ZINAPÉCUARO</b> (ARG-157-001).
-      <br><b>2. SOLICITE A LA DEFENSA EL DÍA, LA HORA Y EL INVENTARIO DE ARMAMENTO DEL ATAQUE A LA PATRULLA Y DE LA DETENCIÓN EN EL PLATANITO, SINALOA DE LEYVA</b> (ARG-157-003 y -009).
-      <br><b>3. SOLICITE A LA FISCALÍA DE PUEBLA LA HORA, EL SALDO OFICIAL Y EL MÓVIL DEL ATAQUE EN SAN JUAN CALMECA, TEPEXCO</b> (ARG-157-002).
-      <br><b>4. SOLICITE A LA FISCALÍA DE TLAXCALA LA HORA, EL MÓVIL Y LA CIFRA OFICIAL DE DETENIDOS DEL ATAQUE EN EL PALMAR, CALPULALPAN</b> (ARG-157-REC-001).
-      <br><b>5. SOLICITE A LA SSP DE SINALOA EL COMUNICADO CON EL DESGLOSE DE LO ASEGURADO EN LOMAS DE MAZATLÁN</b> (ARG-157-010).
+      <b>1. SOLICITE A LA DEFENSA Y A LA FISCALÍA DE MICHOACÁN LA HORA Y EL PARTE OFICIAL</b> (ARG-157-001).
+      <br><b>2. COTEJE CON LA DEFENSA SI LOS OCHO DETENIDOS DE EL PLATANITO SON DISTINTOS DE LOS DE GUASAVE, Y SOLICITE EL INVENTARIO ASEGURADO</b> (ARG-157-009 y ARG-156-013).
+      <br><b>3. SOLICITE A LA FISCALÍA DE PUEBLA LA HORA, EL SALDO Y EL MÓVIL</b> (ARG-157-002).
+      <br><b>4. SOLICITE A LA SSP DE SINALOA EL DESGLOSE DE LO ASEGURADO EN LOMAS DE MAZATLÁN</b> (ARG-157-010).
+      <br><b>5. VIGILE LA SITUACIÓN DE LAS FAMILIAS NAHUAS DE SANTA MARÍA OSTULA TRAS LA EMBOSCADA</b> (ARG-157-REC-002).
     </p>
   </div>
 
@@ -305,7 +319,7 @@ rows_own = "\n".join(prow(e) for e in sorted(E, key=lambda x: (ORD[x["color"]], 
 rows_rec = "\n".join(prow(r, True) for r in sorted(R, key=lambda x: x["fecha"], reverse=True))
 panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
     Ventana <b>22-nov 09:34 → 23-nov 08:35 CDMX</b> (<b>{DUR}</b>) · dom 22 (desde 09:34) · lun 23 (hasta 08:35) · <b>{len(E)} hechos propios</b> en <b>{len(ENT)} entidades</b> ·
-    <b>densidad {DENS} hechos/hora</b>; duración y densidad, <b>cálculo propio</b> · <b>{len(R)} recuperación de alto impacto</b> (ventana de ARGOS 156), atenuada, <b>fuera de todos los totales</b>
+    <b>densidad {DENS} hechos/hora</b>; duración y densidad, <b>cálculo propio</b> · <b>{len(R)} recuperaciones de alto impacto</b> (ventana de ARGOS 156), atenuadas, <b>fuera de todos los totales</b>
   </p>
   <div class="table-wrap"><table class="exec">
     <thead><tr><th>Entidad · Municipio</th><th>Hecho</th><th>Nivel de riesgo</th><th>Fuente institucional</th><th>Fuente nacional</th><th>Confianza</th><th>ARG-ID</th></tr></thead>
@@ -324,11 +338,11 @@ panorama_body = f'''  <p class="muted-note" style="margin:0 0 6px 0;">
     <tbody><tr><td><b>{len(E)}</b></td><td><b>{cnt["rojo"]}</b></td><td><b>{cnt["amarillo"]}</b></td><td><b>{cnt["verde"]}</b></td><td><b>{len(R)}</b></td><td><b>{MU}</b></td><td><b>{HE}</b></td><td><b>{CU}</b></td><td><b>{tv(0)}</b></td><td><b>{tv(1)}</b></td><td><b>{tv(2)}</b></td><td><b>{tv(4, fmt)}</b></td><td><b>{tv(5)}</b></td><td><b>{tv(6)}</b></td><td><b>{tv(7)}</b></td><td><b>{tv(8)}</b></td><td><b>{tv(9)}</b></td><td><b>{len(ENT)}</b></td></tr></tbody>
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
-    <b>Armamento</b>: ningún aseguramiento de la ventana con cantidad publicada por titular o por autoridad: n/d · <b>muertos por agresión</b>: {MU}, cálculo propio de las fichas (Tepexco, 3 de 3 o 4, saldo contradicho) · <b>heridos</b>: {HE} · <b>cuerpos</b>: {CU} · <b>detenidos</b>: El Platanito 8 (cifra de la Defensa por titular de medio), Lomas de Mazatlán 2 (por titular de medio): sin cantidad de armamento, fuera del conteo de detenidos en aseguramiento · <b>marcas</b>: {NAP} <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code> (El Platanito, ataque y detención; Lomas de Mazatlán) · {NFR} <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> (Irapuato, Inforum) · <b>totales sujetos a {NRET} cláusulas de retiro</b> (Zinapécuaro y Tepexco: madrugada del 22 solo por resumen; El Platanito, dos fichas, y Lomas de Mazatlán: publicados el 22 sin hora).
-    <br><code>BALANCES, NO SE INTEGRAN NI SE REPARTEN</code>: «Deja jornada violenta cuatro muertos en Sinaloa» (El Diario de Chihuahua 2026/nov/22) · «Jornada violenta en Culiacán y Mazatlán deja tres muertos y cuatro heridos por disparos» (El Informador 20261123) · «Siete ejecutados en 24 horas y cero detenidos en Puebla» (E-Consulta) · «Delincuencia escala su arsenal de guerra» (Expreso 2026/11/23) · «Calpulalpan suma seis muertes violentas en una semana» (385grados).
-    <br><b>Vistos, fuera de totales</b> (sin ruta con día, fuente única o ventana anterior): Chilpancingo, col. Del PRI, un muerto y dos heridos, domingo 22 {RES}, ninguna ruta con fecha; mismo saldo y colonia en mayo de 2025 · Acayucan, Ver., estudiante asesinado en una fiesta, madrugada del domingo 22 {RES}, sin ruta · Hampolol, Camp., hombre ejecutado, ruta «/22/» sin mes, madrugada {RES}, fuente única: si es del 22, anterior a la apertura · Cuitzeo, Mich., dos hombres muertos rociados con diésel, domingo 22 {RES}, sin ruta · Jacona, cuerpo desmembrado, sin fecha · Cuautla, motociclista asesinado, domingo 22 {RES}, sin ruta · Chietla, Pue., pareja asesinada, día no fijado · Periférico Norte, Edomex, operador de transporte asesinado en un asalto, madrugada del 22 {RES}, sin ruta · Reynosa, joven muerto con arma blanca, 22 {RES}, sin ruta · Escobedo, NL, dos policías heridos y cinco detenidos, sin fecha · Culiacán, Tierra Blanca; Mazatlán, Prados del Sol, calle Desierto y Jardines de la Rivera, heridos; Escuinapa, Tecualilla, dos cuerpos: sin fecha en la ruta · <b>ventanas anteriores</b>: Santa María Ostula, Aquila, Mich., emboscada a familias nahuas, un comunero muerto y tres mujeres heridas, una de ellas niña, viernes 20 {RES}, por ruta del 21 (El Independiente 2026/11/21; La Jornada 2026/11/21; El Diario de Chihuahua 2026/nov/21): ventana de ARGOS 156, homicidio único, no admite recuperación · Puente Nacional, Ver., feminicidio de una joven de 17 años, hallazgo la noche del 20 {RES} (La Silla Rota 2026/11/21), un adolescente detenido {RES}: ventana de 156 · Libres, Pue., joven asesinado, sábado 21 {RES} · Chilapa–Atlixtac, restos óseos: hallazgo del miércoles 18 {RES} · Zihuatanejo, cinco detenidos: La Razón 2026/11/20 · «Michoacán: tres muertos y dos heridos» (Quinta Fuerza): Ario de Rosales, 20-21 de octubre (Latinus 2026/10/21).
-    <br><code>FE DE ERRATAS — ARGOS 156</code>: <b>ARG-156-003</b> (Nopaltepec): <b>2 agentes muertos</b>, por titular (Quadratín Edomex: «Asesinan a dos agentes de la FGR tras emboscada en Nopaltepec»; El Heraldo de San Luis Potosí 2026/11/20; Netnoticias; Amexi); el segundo murió en un hospital, {RES}: <b>muertos por agresión de 156: 16</b> (antes 15, cálculo propio) · <b>un rojo de la ventana de 156 se recupera</b> (Calpulalpan): <b>10 rojos, 3 amarillos, 4 verdes</b> (cálculo propio) · <b>ARG-156-004</b> (Pueblo Nuevo, Gto.): día del jueves 19 por ruta (AM 2026/11/19: «Asesinan en emboscada a director de la Policía de Pueblo Nuevo»); hora ~21:20 sigue {RES}: la cláusula de retiro queda solo por la hora.
-    <br><b>Seguimiento, fuera del semáforo</b>: <b>Guasave (ARG-156-001 y -013)</b>: «Operativo contra "El Chapo Isidro" en Guasave deja cuatro militares fallecidos y siete presuntos agresores abatidos…», por titular (El Imparcial 2026/11/21); ataque del grupo a militares en traslado, {RES}: quién inició sigue sin titular; inventario de armamento solo por resumen y en dos versiones; vinculación no publicada · <b>Nopaltepec (ARG-156-003)</b>: «Emboscada a agentes de la FGR agudiza la violencia en Nopaltepec» (El Independiente 2026/11/23); hora sin fijar · <b>Texhuacán (ARG-151-001)</b>: «Ellos son los 3 detenidos por asesinato de regidora de Texhuacan…» (La Silla Rota 2026/11/20): captura publicada el 20, día sin fijar; investigados por delitos contra la salud {RES} · <b>Carlos A. Carrillo (ARG-156-010 y -014)</b>: comunicado de la SSP (veracruz.gob.mx 2026/11/20) sin cifra de armas; sin vinculación publicada · <b>Tepehuacán (ARG-155-011)</b>: prisión preventiva; audiencia del 24-nov {RES} · <b>Cuernavaca (ARG-147-001)</b>: llevado a juicio el señalado por el homicidio del regidor, por titular (Infobae 2026/11/17): <code>NO ES SENTENCIA</code> · <b>Juchitán (ARG-156-015 y -016)</b>: boletín 2992 publicado el 19 por ruta (Oaxaca Capital 2026/11/19); hora de la captura sin fijar; vinculación de los siete no publicada · <b>Cancún (ARG-155-012)</b>: 3 o 6 detenidos, sin cifra de la FGE · <b>Stanza Torralba (ARG-156-009)</b>: sin localización publicada · <b>Mojolo</b>: tres cuerpos = tres de los siete abatidos de Guasave; ninguna fuente los separa · <b>cláusulas de 152 a 156</b> (Gaviotas Sur, Lachigalla, Tecate, Pueblo Nuevo de Mazatlán, Acaponeta, Azcapotzalco, Santa Teresa, Río Bravo, León, Tepeaca, Tepehuacán, Nopaltepec, Pueblo Nuevo, Mexicali, Juchitán): ningún titular fija la hora; siguen abiertas.
+    <b>Armamento</b>: un aseguramiento integrado, Lomas de Mazatlán, 90 cartuchos por titular de dos medios, confianza Bajo · <b>muertos por agresión</b>: {MU}, cálculo propio (Tepexco, 3 de 3 o 4, saldo contradicho) · <b>heridos</b>: {HE} · <b>detenidos</b>: El Platanito 8, sin cantidad de armamento; Lomas de Mazatlán 2, sin cifra de autoridad: n/d · <b>marcas</b>: {NAP} <code>PUBLICADO EL DÍA DE APERTURA SIN HORA</code> · {NFR} <code>FRONTERA DE VENTANA — HORA NO FIJADA</code> · <b>{NRET} cláusulas de retiro</b> (detalle en cada ficha).
+    <br><code>BALANCES, NO SE INTEGRAN</code>: «Deja jornada violenta cuatro muertos en Sinaloa» (El Diario de Chihuahua 2026/nov/22) · «Jornada violenta en Culiacán y Mazatlán deja tres muertos y cuatro heridos por disparos» (El Informador 20261123) · «Siete ejecutados en 24 horas y cero detenidos en Puebla» (E-Consulta).
+    <br><b>Vistos, fuera de totales</b> (día solo por resumen o sin ruta): Chilpancingo, col. Del PRI, un muerto y dos heridos · Acayucan, Ver., estudiante asesinado · Hampolol, Camp., hombre ejecutado, fuente única · Cuitzeo, Mich., dos hombres muertos rociados con diésel · Cuautla, Mor., motociclista asesinado · Periférico Norte, Edomex, operador de transporte asesinado en un asalto · Chietla, Pue., pareja asesinada · Reynosa, joven muerto con arma blanca · <b>ventana de 156, no rojos</b>: Puente Nacional, Ver., feminicidio de una joven de 17 años (La Silla Rota 2026/11/21) · Libres, Pue., joven asesinado.
+    <br><code>FE DE ERRATAS — ARGOS 156</code>: <b>ARG-156-003</b> (Nopaltepec): 156 contó 1 por saldo contradicho; se cuentan <b>2 agentes muertos</b> por titular (El Heraldo de San Luis Potosí 2026/11/20: «ASESINAN A DOS AGENTES DE LA FGR EN EMBOSCADA EN EL ESTADO DE MÉXICO»; Amexi; Angulo7), el segundo en un hospital {RES}; un solo fallecido, por titular (Diario Portal: «…uno muere»): saldo aún contradicho · <b>dos rojos de la ventana de 156 se recuperan</b> (Calpulalpan y Santa María Ostula) · <b>efecto sobre ARGOS 156</b> (cálculo propio): <b>18 hechos · 11 🔴 · 3 🟡 · 4 🟢 · 19 muertos por agresión (18 si en Nopaltepec murió un solo agente) · 5 heridos · 10 entidades</b>.
+    <br><b>Seguimiento, fuera del semáforo</b>: <b>Guasave (ARG-156-001 y -013)</b>: ataque del grupo a militares en traslado {RES}; quién inició sigue sin titular; vinculación no publicada · <b>Pueblo Nuevo, Gto. (ARG-156-004)</b>: publicación del 19 por ruta (AM 2026/11/19); día y hora del hecho siguen {RES} · <b>Nopaltepec (ARG-156-003)</b>: «Emboscada a agentes de la FGR agudiza la violencia en Nopaltepec» (El Independiente 2026/11/23) · <b>Texhuacán (ARG-151-001)</b>: captura publicada el 20 por ruta (La Silla Rota 2026/11/20), día sin fijar · <b>Cuernavaca (ARG-147-001)</b>: llevado a juicio el señalado por el homicidio del regidor, por titular (Infobae 2026/11/17): <code>NO ES SENTENCIA</code> · <b>Juchitán (ARG-156-016)</b>: boletín 2992 publicado el 19 por ruta (Oaxaca Capital 2026/11/19); hora de la captura sin fijar.
   </p>
 '''
 
@@ -338,7 +352,7 @@ rbyid = {r["id"]: r for r in R}
 co1 = "\n".join(ficha(byid[f"ARG-157-{i:03d}"]) for i in (1, 2, 3, 9))
 co2 = "\n".join(ficha(byid[f"ARG-157-{i:03d}"]) for i in (4, 5, 10))
 co3 = "\n".join(ficha(byid[f"ARG-157-{i:03d}"]) for i in (6, 7, 8))
-co4 = "\n".join(ficha(rbyid[f"ARG-157-REC-{i:03d}"], True) for i in (1,))
+co4 = "\n".join(ficha(rbyid[f"ARG-157-REC-{i:03d}"], True) for i in (1, 2))
 assert sorted(re.findall(r'id="(ARG-157-0\d\d)"', co1 + co2 + co3)) == sorted(byid)
 assert sorted(re.findall(r'id="(ARG-157-REC-\d\d\d)"', co4)) == sorted(rbyid)
 
@@ -347,19 +361,19 @@ icos = [re.search(r'<svg.*</svg>', x).group(0) for x in ico]
 def tile(i, lbl, num, sub):
     cero = " cero" if num in (0, "0", "n/d") else ""
     return f'    <div class="tile{cero}">{icos[i]}<span class="lbl">{lbl}</span><span class="num">{num}</span><span class="sub">{sub}</span></div>'
-NI = "<code>SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE</code>"
+NI = "<code>SIN RESULTADO INDEXADO EN VENTANA</code>"
 NDR = "solo por resumen: <b>cantidad no determinada</b>"
 tiles = "\n".join([
  tile(0, "Armas cortas", tv(0), NI),
- tile(1, "Armas largas", tv(1), "ametralladoras calibre .50 en El Platanito, " + NDR),
+ tile(1, "Armas largas", tv(1), NI),
  tile(2, "Sin categoría", tv(2), NI),
- tile(3, "Cartuchos", tv(4, fmt), "Lomas de Mazatlán, " + NDR),
- tile(4, "Cargadores", tv(5), "Lomas de Mazatlán, " + NDR),
+ tile(3, "Cartuchos", tv(4, fmt), "Lomas de Mazatlán, por titular; confianza Bajo"),
+ tile(4, "Cargadores", tv(5), "Lomas de Mazatlán: sin número por titular"),
  tile(5, "Granadas", tv(6), NI),
  tile(6, "AEI", tv(7), NI),
  tile(7, "Explosivos", tv(8), NI),
  tile(8, "Armamento especial", tv(3), "calibre .50 en El Platanito, " + NDR),
- tile(9, "Detenidos", tv(9), "<b>en el mismo evento de aseguramiento con cantidad</b>: ninguno"),
+ tile(9, "Detenidos", tv(9), "Lomas de Mazatlán: 2 por titular de medio, sin cifra de autoridad"),
 ])
 assert len(icos) == 10, len(icos)
 
@@ -385,7 +399,7 @@ def armrow(a):
     st = '' if a["integra"] else ' style="opacity:.72;"'
     return f'      <tr id="{a["id"]}"{st}><td>{('<a href="#'+a["ficha"]+'">') if a["ficha"] != a["id"] else ''}<code>{a["id"]}</code>{'</a>' if a["ficha"] != a["id"] else ''}</td><td>{a["ent"]}</td><td>{a["mun"]}</td><td>{a["fecha_txt"]}</td>{cells}<td>{det}</td><td>{a["corp"]}</td><td><b>{a["conf"]}</b><br><span class="muted-note">{a["nota"]}</span></td></tr>'
 
-armrows = "\n".join(armrow(a) for a in ARM) or '      <tr style="opacity:.72;"><td colspan="16"><code>SIN ACTUALIZACIÓN OFICIAL DURANTE EL CORTE</code> · ningún aseguramiento de la ventana con día fijado y cantidad publicada por titular o por autoridad</td></tr>'
+armrows = "\n".join(armrow(a) for a in ARM) or '      <tr style="opacity:.72;"><td colspan="16"><code>SIN RESULTADO INDEXADO EN VENTANA</code> (26 entidades por dominio; 6 <code>NO REVISADA</code>) · ningún aseguramiento de la ventana con día fijado y cantidad publicada por titular o por autoridad</td></tr>'
 
 arm2 = f'''  <div class="table-wrap"><table class="exec wide">
     <thead><tr>
@@ -398,9 +412,9 @@ arm2 = f'''  <div class="table-wrap"><table class="exec wide">
     </tbody>
   </table></div>
   <p class="muted-note" style="margin:6px 0 0 0;">
-    <b>Lectura regional</b>: ninguna región con arma integrada · aseguramientos sin cantidad publicada por titular en el Noroeste (El Platanito; Lomas de Mazatlán). <b>Cálculo propio</b>.
+    <b>Lectura regional</b>: Noroeste, 90 cartuchos (Mazatlán); ningún arma integrada en ninguna región. <b>Cálculo propio</b>.
     <br><b>BOLETÍN FEDERAL</b>: acciones del 19-nov: __FED17__ · acciones del 20, 21 y 22-nov y agregado «20, 21 y 22»: <code>SIN RESULTADO INDEXADO EN VENTANA</code> en día suelto, rango y título · <b>corroboración débil por construcción</b>; <b>un agregado no fija el día ni la hora de cada acción</b>.
-    <br><code>VISTOS, NO INTEGRADOS</code>: El Platanito (ARG-157-009): ametralladoras calibre .50 y seis vehículos {RES}, sin cantidad de armas · Lomas de Mazatlán (ARG-157-010): 2 cargadores y 90 cartuchos {RES} · Guasave (ARG-156-001 y -013): dos inventarios distintos {RES} (Barrett, lanzagranadas y granadas; seis largas y cuatro cortas): <code>POSIBLE DUPLICIDAD ENTRE VERSIONES — NO INTEGRAR</code> · Mocorito, Sin., seis detenidos (SSPC, Marina y FGR): boletín de acciones del 19 {RES}, día no fijado · Nuevo Laredo, 16 armas: hecho del 11-nov {RES}, <code>POSIBLE DUPLICIDAD CON LOS VISTOS DE ARGOS 150 — NO INTEGRAR</code> · Reynosa, dos fusiles Barrett, sin titular ni fecha · Juchitán (boletines 2992 y 2998): armas, cargadores y cartuchos {RES}, ventana de 156.
+    <br><code>VISTOS, NO INTEGRADOS</code>: inventario de seis armas largas, cuatro cortas y una ametralladora calibre .50 {RES} (Milenio; Infobae, cobertura en vivo): <code>ATRIBUCIÓN ENTRE GUASAVE (ARG-156-013) Y EL PLATANITO (ARG-157-009) NO ARBITRADA — NO INTEGRAR</code> · Mocorito, Sin., seis detenidos: boletín de acciones del 19 {RES} · Nuevo Laredo, 16 armas: hecho del 11-nov {RES}, <code>POSIBLE DUPLICIDAD CON LOS VISTOS DE ARGOS 150 — NO INTEGRAR</code> · Reynosa, dos fusiles Barrett, sin titular ni fecha.
   </p>
 '''
 
@@ -417,9 +431,9 @@ sent = f'''  <div class="conteo">
     <thead><tr><th>Entidad · Municipio</th><th>Caso</th><th>Pena publicada</th><th>Autoridad</th><th>Por qué NO se integra</th><th>Confianza</th></tr></thead>
     <tbody>
       <tr><td colspan="6"><b>Ninguna sentencia publicada en la ventana.</b> Candidatos heredados (Iguala, Oaxaca 2,993, Villahermosa 5126): si se confirman, pertenecen a la ventana de ARGOS 155.</td></tr>
-      <tr><td><b>Guerrero</b><br>Iguala (caso Los Avispones, 2014)</td><td>Exalcalde de Iguala y coacusados (25 o 26, contradicho); homicidio en grado de tentativa y homicidio calificado {RES}; causa 4/2018 y acumuladas {RES}</td><td>60 años, por titular (Proceso 2026/11/19; La Silla Rota 2026/11/19)</td><td>Juzgado federal en Matamoros {RES}</td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · sin comunicado de la FGR ni del Poder Judicial · fallo del 10-nov, publicado el 19 {RES} · apelada: no firme {RES}</td><td>Bajo</td></tr>
-      <tr><td><b>Oaxaca</b><br>Sierra de Flores Magón</td><td>Violación de una adulta mayor; boletín 2,993 de la FGEO</td><td>14 años, por titular del boletín («FGEO obtiene 14 años de prisión…»)</td><td>FGEO</td><td>Publicación 19-nov {RES} · fecha de la sentencia no publicada · firmeza no informada</td><td>Medio</td></tr>
-      <tr><td><b>Tabasco</b><br>Villahermosa</td><td>Feminicidio; boletín 5126 de la FGET, 18-nov, en el listado histórico del dominio</td><td>45 años, por titular del listado («45 años de prisión por feminicidio ocurrido en Villahermosa, obtiene la FGET»)</td><td>FGET</td><td>Ventana de ARGOS 155 · sin URL individual ni dos campos individualizadores</td><td>Medio</td></tr>
+      <tr><td><b>Guerrero</b><br>Iguala (caso Los Avispones, 2014)</td><td>Exalcalde de Iguala y coacusados (24 a 26, contradicho entre ediciones; <code>HEREDADO — NO REVERIFICADO</code>); homicidio en grado de tentativa y homicidio calificado {RES}; causa 4/2018 y acumuladas {RES}</td><td>60 años, por titular (Proceso 2026/11/19; La Silla Rota 2026/11/19)</td><td>Juzgado federal en Matamoros {RES}</td><td><code>PENDIENTE DE CONFIRMACIÓN OFICIAL</code> · sin comunicado de la FGR ni del Poder Judicial · fallo del 10-nov, publicado el 19 {RES} · apelada: no firme {RES}</td><td>Bajo</td></tr>
+      <tr><td><b>Oaxaca</b><br>Sierra de Flores Magón</td><td>Violación de una adulta mayor; boletín 2,993 de la FGEO</td><td>14 años, por titular del boletín («FGEO obtiene 14 años de prisión…»)</td><td>FGEO</td><td>Publicación 19-nov {RES} · fecha de la sentencia no publicada · el titular no lleva término de condena expreso · firmeza no informada</td><td>Medio</td></tr>
+      <tr><td><b>Tabasco</b><br>Villahermosa</td><td>Feminicidio; boletín 5126 de la FGET, 18-nov, en el listado histórico del dominio</td><td>45 años, por titular del listado («45 años de prisión por feminicidio ocurrido en Villahermosa, obtiene la FGET»)</td><td>FGET</td><td>Ventana de ARGOS 155 · sin URL individual ni dos campos individualizadores</td><td>No confirmado</td></tr>
       <tr><td><b>Chihuahua</b></td><td>Triple homicidio (La Opción 20261120: «Sentencian a responsable de triple homicidio»)</td><td>—</td><td>—</td><td>Condena del 13-nov {RES} · sin boletín de la FGE</td><td>Bajo</td></tr>
     </tbody>
   </table></div>
@@ -444,22 +458,22 @@ sent = f'''  <div class="conteo">
 cierre = f'''  <div class="alerta contexto">
     <div class="flag">VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL</div>
     <p>
-      <b>1.</b> <b>Rojo por agravante</b>: agresiones del crimen organizado a personal militar en dos entidades y homicidio múltiple con quema de vehículos en la Mixteca poblana; {RPH} rojos por hora (cálculo propio).
-      <br><b>2.</b> <b>Rojos por región</b>: Noroeste {RREG["Noroeste"]} · Occidente {RREG["Occidente"]} · Centro {RREG["Centro"]} · Noreste, Golfo y Sureste 0 (cálculo propio); los tres, sujetos a cláusula de retiro por hora o día.
-      <br><b>3.</b> <b>Violencia operativa</b>: homicidios dolosos únicos en Culiacán, Mazatlán, Jacona e Irapuato.
-      <br><b>4.</b> <b>Respuesta institucional</b>: detenciones en Sinaloa de Leyva y Mazatlán; ningún aseguramiento con cantidad integrable; ninguna sentencia integrable.
-      <br><b>5.</b> <code>TOTALES NO COMPARABLES SIN MÁS CON LOS DE OTRAS EDICIONES: VENTANA DE 23 H 01 MIN FRENTE A 62 H 54 MIN DE ARGOS 156, CINCO HECHOS CON CLÁUSULA DE RETIRO, TRES PUBLICADOS EL DÍA DE APERTURA SIN HORA Y UNO EN FRONTERA DE VENTANA. CÁLCULO PROPIO.</code>
+      <b>1.</b> <b>Rojo por agravante</b>: agresión de grupos armados a personal militar y homicidio múltiple con quema de vehículos; {RPH} rojos por hora (cálculo propio).
+      <br><b>2.</b> <b>Rojos por región</b>: Noroeste {RREG["Noroeste"]} · Occidente {RREG["Occidente"]} · Centro {RREG["Centro"]} · Noreste, Golfo y Sureste 0 (cálculo propio); ninguno de los tres con hora fijada por titular.
+      <br><b>3.</b> <b>Violencia operativa</b>: homicidios dolosos únicos en dos entidades, sin agresiones a autoridades.
+      <br><b>4.</b> <b>Respuesta institucional</b>: detenciones y un aseguramiento de munición de confianza baja; ningún arma integrada; ninguna sentencia integrable.
+      <br><b>5.</b> <code>TOTALES NO COMPARABLES SIN MÁS CON LOS DE OTRAS EDICIONES: VENTANA DE 23 H 01 MIN FRENTE A 62 H 54 MIN DE ARGOS 156, CON HECHOS SUJETOS A CLÁUSULA DE RETIRO. CÁLCULO PROPIO.</code>
     </p>
   </div>
 
   <div class="alerta contexto" style="margin-top:8px;">
     <div class="flag">CONCLUSIONES DE INTELIGENCIA CRIMINAL</div>
     <p>
-      <b>1. AGRESIONES A PERSONAL MILITAR EN CAMINOS RURALES DE DOS ENTIDADES</b> (ARG-157-001 y -003): emboscada en una brecha de Zinapécuaro y ataque a una patrulla de reconocimiento en la sierra de Sinaloa de Leyva; vínculo entre los casos no acreditado. Línea: <b>revisar los protocolos de recorrido en brechas del oriente de Michoacán, entre Zinapécuaro y Cuitzeo</b>.
-      <br><b>2. CONTINUIDAD DE LA REACCIÓN ARMADA TRAS LA CAPTURA DE UN JEFE REGIONAL EN SINALOA</b> (ARG-157-003 y -009): la misma facción agrede a militares fuera de Guasave; detenidos señalados por los bloqueos del 20-nov, por titular. Línea: <b>cotejar a los detenidos de El Platanito con los registros de los bloqueos del 20-nov y con los detenidos de ARG-156-013</b>.
-      <br><b>3. HOMICIDIO MÚLTIPLE CON VÍCTIMAS CALCINADAS EN LA MIXTECA POBLANA</b> (ARG-157-002): un menor entre las víctimas; móvil contradicho entre riña y ataque. Línea: <b>vigilar el corredor Tepexco–Chietla, donde ARGOS registró un homicidio doble el 5-nov (ARG-148-002); vínculo no acreditado</b>.
-      <br><b>4. MENORES DE EDAD ENTRE LAS VÍCTIMAS DE ATAQUES ARMADOS</b> (ARG-157-002, -006 y ARG-157-REC-001): Tepexco, Jacona y Calpulalpan; vínculo entre los casos no acreditado. Línea: <b>revisar antecedentes de amenazas y reportes previos en la col. Nueva España de Jacona y en El Palmar de Calpulalpan</b>.
-      <br><b>5. ATAQUES EN ESPACIOS PÚBLICOS DE IRAPUATO EN MENOS DE UN DÍA</b> (ARG-157-007 y -008): un campo de futbol y una avenida comercial; móviles no informados; vínculo no acreditado. Línea: <b>vigilar la av. Siglo XXI y los campos deportivos de Irapuato en horario matutino y vespertino</b>.
+      <b>1. AGRESIONES ARMADAS A PERSONAL MILITAR EN DOS ENTIDADES</b> (ARG-157-001 y -003): Zinapécuaro y El Platanito, Sinaloa de Leyva; lugar rural solo por resumen; vínculo no acreditado. Línea: <b>revisar los protocolos de desplazamiento de personal militar en Zinapécuaro</b>.
+      <br><b>2. LA FACCIÓN DE «EL CHAPO ISIDRO» SOSTIENE AGRESIONES FUERA DE GUASAVE</b> (ARG-157-003 y -009): detenidos señalados por los bloqueos del 20-nov, por titular. Línea: <b>cotejar a los detenidos de El Platanito con los de ARG-156-013</b>.
+      <br><b>3. VÍCTIMAS CALCINADAS EN LA MIXTECA POBLANA</b> (ARG-157-002): un menor entre los muertos; móvil contradicho. Línea: <b>vigilar el corredor Tepexco–Chietla (ARG-148-002, 5-nov); vínculo no acreditado</b>.
+      <br><b>4. MENORES DE EDAD ENTRE LAS VÍCTIMAS</b> (ARG-157-002, -006, -REC-001 y -REC-002): Tepexco, Jacona, Calpulalpan y Ostula; vínculo no acreditado. Línea: <b>revisar reportes previos de amenazas en la col. Nueva España de Jacona y en El Palmar de Calpulalpan</b>.
+      <br><b>5. DOS ATAQUES EN ESPACIOS PÚBLICOS DE IRAPUATO EN MENOS DE UN DÍA</b> (ARG-157-007 y -008): móviles no informados; vínculo no acreditado. Línea: <b>vigilar la av. Siglo XXI en horario matutino</b>.
     </p>
   </div>
 
@@ -479,7 +493,7 @@ body = (port
  + page("CRIMEN ORGANIZADO (I) — AGRESIONES A MILITARES EN MICHOACÁN Y SINALOA; HOMICIDIO MÚLTIPLE EN TEPEXCO; DETENCIÓN EN EL PLATANITO", co1)
  + page("CRIMEN ORGANIZADO (II) — SINALOA: HOMICIDIOS EN CULIACÁN Y MAZATLÁN; DETENCIÓN EN LOMAS DE MAZATLÁN", co2)
  + page("CRIMEN ORGANIZADO (III) — HOMICIDIOS EN JACONA E IRAPUATO", co3)
- + page("CRIMEN ORGANIZADO (IV) — RECUPERACIÓN DE LA VENTANA DE ARGOS 156: CALPULALPAN", co4)
+ + page("CRIMEN ORGANIZADO (IV) — RECUPERACIONES DE LA VENTANA DE ARGOS 156: CALPULALPAN Y SANTA MARÍA OSTULA", co4)
  + page("CONTEO NACIONAL DE ARMAMENTO Y ARTEFACTOS EXPLOSIVOS ASEGURADOS", arm1)
  + page("ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD", arm2)
  + page("RASTREO NACIONAL DE SENTENCIAS Y RESULTADOS JUDICIALES", sent)
