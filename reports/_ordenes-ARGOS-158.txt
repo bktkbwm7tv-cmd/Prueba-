@@ -40,7 +40,7 @@ Si NO devuelve 000, DILO y lee los boletines directamente (WebFetch). Si devuelv
 000, sigue bloqueado: solo WebSearch.
 
 VENTANA: abre 2026-11-23 08:35 CDMX —donde cerró ARGOS 157— y cierra a la HORA REAL
-de tu arranque (unas 24 h si arrancas el martes por la mañana). Calendario: lun 23
+de tu arranque (unas 25 h si arrancas el martes hacia las 10:00). Calendario: lun 23
 (desde 08:35) · mar 24. CALCULA LA DURACIÓN CON date y escribe el calendario DÍA POR
 DÍA en el Bloque 0. Si mi «Procede» llega más de DOS HORAS después del Bloque 0,
 AVÍSAME y propón cerrar la ventana a la hora del «Procede». 157: 23 h 01 min,
