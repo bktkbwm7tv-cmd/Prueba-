@@ -16,7 +16,7 @@ Los comandos del mensaje de órdenes. **Estado esperado**: última edición `arg
 | Ventana | **abre 2026-11-23 08:35 CDMX** (cierre de 157) y cierra a la hora real de arranque (o del «Procede», si llega más de dos horas tarde) |
 | Serie | 62 h 54 (156, ventana larga) · **23 h 01 (157)** |
 | Ciclo | **A** (Noroeste + Centro), tras la prioridad sobre el ciclo |
-| Archivo | `argos-2026-11-24.html` (martes 24-nov; si es otro día, cámbialo) · `WINDOW_DAYS` = **2** (23 y 24; la plantilla de 157 ya trae **2**: sin reemplazo, solo asertar) |
+| Archivo | `argos-2026-11-25.html` (miércoles 25-nov; si es otro día, cámbialo) · `WINDOW_DAYS` = **3** (23, 24 y 25; la plantilla de 157 trae **2**: reemplazo 2→3 y asertar) |
 
 ## BLOQUE 2 — LECTURA OBLIGATORIA
 
@@ -44,7 +44,7 @@ Tope de 200 por turno: control 2 · coordinador 18 · ola 150 (6 × 25; **4 por 
 
 ## BLOQUE 5 — FORMA Y CONSTRUCCIÓN
 
-- Parta de `tools/datos-argos-157.py` (copia a `datos-argos-158.py`): cambie `NUM`, `FECHA`, `HORA`, `DUR`, `HORAS`, `RET` («SI RESULTA ANTERIOR A LAS 08:35 DEL 23, ES DE LA VENTANA DE ARGOS 157…»), `FED17`, `ARM` (157 trae `ARG-157-ARM-001`: vacíelo o sustitúyalo), la ventana del panorama, las aserciones, el `<title>` que reemplaza (pon **ARGOS 157 — Reporte Nacional de Seguridad — 2026-11-23**, plantilla `reports/argos-2026-11-23.html`), `WINDOW_DAYS` (la plantilla trae **2**: quite el reemplazo 4→2 y deje solo la aserción) y las listas de fichas por página. Si no hay recuperaciones, retire `co4`, `rows_rec` y su página. El default de `ARGOS_CONSULTA` ya es «__CONSULTA__».
+- Parta de `tools/datos-argos-157.py` (copia a `datos-argos-158.py`): cambie `NUM`, `FECHA`, `HORA`, `DUR`, `HORAS`, `RET` («SI RESULTA ANTERIOR A LAS 08:35 DEL 23, ES DE LA VENTANA DE ARGOS 157…»), `FED17`, `ARM` (157 trae `ARG-157-ARM-001`: vacíelo o sustitúyalo), la ventana del panorama, las aserciones, el `<title>` que reemplaza (pon **ARGOS 157 — Reporte Nacional de Seguridad — 2026-11-23**, plantilla `reports/argos-2026-11-23.html`), `WINDOW_DAYS` (la plantilla trae **2**: cambie el reemplazo 4→2 por 2→3 y aserte una sola «WINDOW_DAYS = 3;») y las listas de fichas por página. Si no hay recuperaciones, retire `co4`, `rows_rec` y su página. El default de `ARGOS_CONSULTA` ya es «__CONSULTA__».
 - Móvil: `python3 tools/gen-movil.py 158 <FECHA> 157 2026-11-23 <HORA>`. Texto: `python3 tools/gen-texto.py reports/argos-<FECHA>.html reports/argos-<FECHA>.txt`. Validador (solo escritorio): `node tools/validar.js reports/argos-<FECHA>.html 2026-11-23 <FECHA>`.
 - Controles: dos rondas; informes en `reports/argos-<FECHA>-equipos.md` y `-fuentes.md`; la ronda 2 en serie.
 - Cierre: `_pendientes.md`, `indice-arg-id.md`, orden de ARGOS 159. Commit y push.
