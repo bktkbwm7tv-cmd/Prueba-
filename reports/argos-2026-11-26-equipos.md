@@ -65,4 +65,4 @@ Encargos: Zinapécuaro sin hora por titular (cláusula sigue) · Inforum ~06:00 
 Cobertura: armamento Jal, Mich (ssp.michoacan), Col, Ags, Nay, Gto (portal.fgeguanajuato) REVISADA SRIV; ssp.guanajuato sin páginas. Sentencias Jal, Col, Ags, Nay, Gto REVISADA SRIV; Mich NO REVISADA. Alto impacto propio: Jal, Mich, Gto, Nay; Col, Ags amplia.
 
 ## Presupuesto
-Control 2 · coordinador 14 + 2 (repetición federal antes de R2) · ola 151 (Noroeste 26) · procedencia-cifras R1 24 + R2 6 → 199 de 200.
+Control 2 · coordinador 14 + 2 (repetición federal antes de R2) · ola 151 (Noroeste 26) · procedencia-cifras R1 22 + R2 6 → 197 de 200.

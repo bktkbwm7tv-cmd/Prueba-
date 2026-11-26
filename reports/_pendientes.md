@@ -8,7 +8,7 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 157 (corte 2026-11-23; ventana 22-nov 09:34 → 23-nov 08:35, 23 h 01 min).
+**Última actualización**: ARGOS 158 (corte 2026-11-26; ventana 23-nov 08:35 → 26-nov 13:44, 77 h 09 min).
 
 ---
 
@@ -46,6 +46,8 @@ sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le
 **ARGOS 156 publicado el 22-nov** (ventana larga 19-nov 18:40 → 22-nov 09:34, 62 h 54 min; rama `claude/argos-156-criminal-intelligence-kx9pts`, encima de `claude/argos-154-security-report-etkefe`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-157.md`** (y `_ordenes-ARGOS-157.txt`).
 
 **ARGOS 157 publicado el 23-nov** (ventana 22-nov 09:34 → 23-nov 08:35, 23 h 01 min; rama `claude/argos-157-criminal-intelligence-qpwf2b`, encima de `claude/argos-156-criminal-intelligence-kx9pts`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-158.md`** (y `_ordenes-ARGOS-158.txt`).
+
+**ARGOS 158 publicado el 26-nov** (ventana 23-nov 08:35 → 26-nov 13:44, 77 h 09 min; «Procede» 7 h 34 después del Bloque 0, cierre a la hora del «Procede» aprobado por el Comisario; rama `claude/argos-158-criminal-intelligence-0wpevh`, encima de `claude/argos-158-criminal-intelligence-2goit7` y de `claude/argos-157-criminal-intelligence-qpwf2b`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-159.md`** (y `_ordenes-ARGOS-159.txt`).
 
 **ARGOS 148 publicado el 6-nov** (ventana 5-nov 09:42 → 6-nov 07:30, 21 h 48 min; rama `claude/argos-148`, encima de 147). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-149.md`** (y `_ordenes-ARGOS-149.txt`).
 
@@ -3177,3 +3179,41 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 6. **Recuperaciones amarillas no previstas**: Ostula se subió a rojo por víctimas múltiples (1 muerto y 3 heridas); fijar el criterio en CLAUDE.md si se repite.
 7. **Presupuesto**: control 2 + coordinador 18 + ola 150 + `procedencia-cifras` 24 + R2 6 = **200**.
 8. **Rama**: 157 vive en `claude/argos-157-criminal-intelligence-qpwf2b`.
+
+## ARGOS 158 — lo que cierra esta edición
+
+- Tepehuacán `ARG-155-011`: **4 vinculados a proceso por homicidio calificado** en la audiencia del 24-nov (La Silla Rota y Síntesis 2026/11/24): seguimiento cerrado en lo procesal.
+- Cuitzeo (visto de 157): fechado (rutas del 22) y **recuperado como `ARG-158-REC-003`** 🔴.
+- Chietla (visto de 157): **recuperado como `ARG-158-REC-002`** 🔴 de 156, con cláusula frente a `ARG-148-002`.
+- Periférico Norte (visto de 157): viernes 20 en Tlalnepantla → `ARG-158-FE-001`.
+- Calpulalpan `-157-REC-001`: 3 detenidos por titular (abctlax; La Prensa de Tlaxcala 2026/11).
+- Hampolol y Acayucan (vistos de 157): madrugada del 22, ventana 156, amarillos: cerrados.
+- Juárez, col. Manuel Valdez (rojo sin ruta del Noroeste) = `ARG-156-008`, ya publicado.
+- Cuarto Poder «Tres muertos y heridos…» (pista del recall): 18-sep, Tuxtla Gutiérrez: descartada.
+- Cobertura: sentencias Chih (saldada) · armamento BC, BCS, Dgo, Gto (saldadas) · alto impacto con consulta propia Son, Oax, Chis, Yuc, Nay (saldadas).
+
+## Abiertos que ARGOS 159 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| **Cláusulas de retiro de 158 (5)** | `-001` Santa Ana: hora del hallazgo del 23 (~10:01 por resumen; ¿domingo 22, por resumen de Meganoticias y Aristegui?) · `-005` Ixtapaluca: hora (madrugada del 23 por resumen → si se fija antes de las 08:35, pasa a 157 como `-REC-` 🔴) · `-008` Ahome: día (noche del 23 por resumen; fuente única EFE) · `-012` Progreso: hora de la detención del 23 · `-015` Mazatlán: día de la captura (24 por resumen; col. Rinconada del Valle) |
+| **Marcas de 158** | Apertura sin hora: `-012` · Frontera: `-018` Atzitzintla (día de cierre) |
+| **Reservas de 158** | `-001/-019`: un detenido por titular; «cuatro capturados» y «El Meny» (El Universal) solo por resumen; vínculo con «el Ponchis» · `-002/-013`: entidad (Mich o Jal); quién inició (Defensa por medios); inventario (33 armas por resumen) y **tres cifras del mismo despliegue** (Defensa 10 det.; boletín El Limoncito 11 det. y 43 armas; Peribán 26-nov 8 det., 20 armas, 158 cargadores, >5,500 cartuchos) · `-004`: 4 o 5 cuerpos; fechas de cada hallazgo (21 por resumen) · `-006`: heridos 2 o 4; ENfoque no reproducida · `-010`: saldo 1 o 2 (Crónica Regional) · `-014/-015`: ¿los 2 de Los Acantos están entre los 6? · `-016` Ajijic: cifras solo en el cuerpo del boletín; armas largas 4 o 6 · `-018`: audiencia del alcalde · `-REC-002` Chietla: día (21 solo por resumen) frente a `ARG-148-002` |
+| **Cláusulas heredadas** | 157: `-001` Zinapécuaro, `-002` Tepexco, `-003/-009` El Platanito, `-010` Lomas de Mazatlán, `-008` Inforum · 156: `-003` Nopaltepec, `-004`, `-012`, `-016` · 155: `-006`, `-009` · 154: `-005`, `-008` · 153: `-002`, `-003` · 152: `-002` a `-005` |
+| **Vistos con posible ascenso** | Chihuahua capital, yonke, 3 muertos y comandante estatal herido en Ciudad Aldama (25 por resumen; Excélsior; El Congresista; sin ruta) · Reynosa, estación Anzaldúas, restos óseos (lun 23 por resumen) · Nacajuca (Pomoca), dos hombres atados (homónimos de agosto) · Chilpancingo–Chichihualco, hombre decapitado (~07:30 del 23 por resumen; 🔴 de 157 si una ruta lo fija) · Temixco, El Estribo · Nezahualcóyotl, mujer asesinada · Atotonilco de Tula · Ulumal, Champotón · Macuspana · San Fernando (Marina, 1 muerto, 10-11 detenidos, N+ sin fecha) · Reynosa Valle Soleado (2 policías muertos, N+ sin fecha) |
+| **Armamento sin integrar** | Rosarito (4 detenidos, 6 armas por titular; aseguramiento de la noche del 22 por resumen: si se fija el día, corresponde a 157) · Los Lagartos, QRoo (7 largas, 24 cargadores, resumen) · Sonora 10 armas y 245 cartuchos (boletín del 23) |
+| **Boletín federal** | 20-22 y 24: solo republicadores · 23: indexado en `gob.mx/sspc` · 25: Milenio y Tallapolítica · 26: SRIV al cierre (14:14); triple consulta del 26 y de los días de la ventana de 159 |
+| **Sentencias candidatas** | FGR Hopelchén DPE/5332/2026 (4 años, 5 personas; boletín) · Chihuahua, 16 años y 8 meses (La Opción 20261125; boletín FGE) · FGR Hermosillo, 10 años a 3 (resumen) · FGR Jalisco 24-nov (no localizada) · Iguala, Los Avispones (**cuarta edición sin comunicado: `HEREDADO — NO REVERIFICADO`; si llega a 159 sin boletín, retirar de candidatos y dejar solo aquí**) |
+| **Seguimientos** | El Platanito / Guasave: separar los dos grupos de 8 · Texhuacán: orden de aprehensión por homicidio (Plumas Libres 2026/11/25) · Tepexco: bloqueo de la federal 160 (mar 24, resumen) · Atzitzintla: audiencia · Carrillo, Juchitán: vinculación · Lomas de Angelópolis: municipio (Ocoyucan por resumen) · Cajeme, Tecate, Ometepec, Cancún, Zapopan, Stanza Torralba, Lachigalla: no revisados en 158 |
+| **Cobertura con prioridad sobre el ciclo en 159** | **Sentencias `NO REVISADA` (4)**: Son (sin páginas), Sin (solo normatividad), Mich (no consultada), Camp (sin dominio). **Armamento `NO REVISADA` (4)**: Son, Sin, Chih · Oax. **Alto impacto solo amplia (11)**: BC, BCS, Chih, Dgo · Coah, SLP, Zac · Col, Ags · Qro · QRoo. Después, **CICLO B** (Noreste + Golfo: 159 = B) |
+
+## Deuda de método (ARGOS 158)
+
+1. **«Procede» 7 h 34 después del Bloque 0**: ventana de 77 h 09 min; 10 de 19 hechos fechados el 25; las búsquedas reservadas por fecha en la ruta no aportaron hechos nuevos.
+2. **Superlativo sin verificar**: la orden decía «la ventana más larga de la serie» y era falso (10-07: 320 h 34; 09-16: 117 h 50; 11-14: 114 h 02). Comprobar contra los `.txt` del archivo antes de escribir un superlativo.
+3. **Hechos del día de apertura que la ola trae con ruta del 25**: Ixtapaluca tenía rutas del 23 que solo vio `procedencia-cifras`; pedir a los equipos la PRIMERA publicación también en hechos de mitad de ventana.
+4. **Datos posteriores que cambian la clasificación** (Santa Ana: de cuerpos a homicidio por titulares del 24): en ventanas largas, una búsqueda de desarrollo por cada rojo antes del borrador.
+5. **Noroeste otra vez sobre el tope** (26 de 25) y sin armamento de Chihuahua; Occidente sin sentencias de Michoacán; Sureste sin armamento de Oaxaca.
+6. **Presupuesto**: control 2 + coordinador 16 + ola 151 + `procedencia-cifras` R1 22 + R2 6 = **197** (de 200).
+7. **Rama**: 158 vive en `claude/argos-158-criminal-intelligence-0wpevh`.
+

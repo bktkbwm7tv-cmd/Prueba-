@@ -6,10 +6,10 @@
 |---|---|
 | Número | ARGOS 158 |
 | Archivo | `reports/argos-2026-11-26.html` · móvil `-movil.html` · texto `.txt` |
-| Ventana | **lun 23-nov 08:35 → jue 26-nov 13:44 CDMX** · duración **77 h 09 min** (cálculo con `date`): la más larga de la serie (156: 62 h 54; 157: 23 h 01) |
+| Ventana | **lun 23-nov 08:35 → jue 26-nov 13:44 CDMX** · duración **77 h 09 min** (cálculo con `date`); 156: 62 h 54 · 157: 23 h 01 (no es la más larga del archivo: 10-07 registró 320 h 34) |
 | Calendario | lun 23 (08:35–23:59, 15 h 25) · mar 24 (24 h) · mié 25 (24 h) · jue 26 (00:00–13:44, 13 h 44) |
 | Hora de arranque (Bloque 0) | 06:10 CDMX · «Procede» a las 13:44 (7 h 34 después): el Comisario aprobó cerrar la ventana a la hora del «Procede» |
-| Consulta | __CONSULTA__ CDMX (hora real tomada con `date` al cierre de `procedencia-cifras` R2) |
+| Consulta | 14:14 CDMX (hora real tomada con `date` al cierre de `procedencia-cifras` R2; el agente no informó su reloj) |
 | Red | `curl https://www.gob.mx/fgr` → `000` (26-nov 06:10): egreso bloqueado; solo WebSearch; techo ★★★★☆ |
 | Ciclo | **A** (Noroeste + Centro encabezan el triaje judicial), tras la prioridad sobre el ciclo |
 | Rama | `claude/argos-158-criminal-intelligence-0wpevh` (encima de `claude/argos-158-criminal-intelligence-2goit7`, que trae la orden; esta encima de `claude/argos-157-criminal-intelligence-qpwf2b`) |
@@ -27,7 +27,7 @@
 ## 3. Fe de erratas a ediciones anteriores
 
 - `ARG-158-FE-001` → **ARGOS 157, vistos**: «Periférico Norte, Edomex, operador de transporte asesinado en un asalto» era del viernes 20, ~03:00, en Tlalnepantla (Infobae 2026/11/21; Seuno Noticias y Lo de Hoy 2026/11/23): ventana de 156, 🟡, no se recupera.
-- `ARG-158-FE-002` → **conteo de ARGOS 156**: + Ocuiltzapotlán y + Chietla (rojos). Efecto (cálculo propio, sobre `ARG-157-FE-002`): 20 hechos · 13 🔴 · 3 🟡 · 4 🟢 · 23 muertos por agresión (22 si Nopaltepec = 1) · 5 heridos · 11 entidades (+ Tabasco).
+- `ARG-158-FE-002` → **conteo de ARGOS 156**: + Ocuiltzapotlán y + Chietla (rojos). Efecto (cálculo propio, sobre `ARG-157-FE-002`): 20 hechos · 13 🔴 · 3 🟡 · 4 🟢 · 23 muertos por agresión (22 si Nopaltepec = 1) · 5 heridos · 11 entidades (+ Tabasco); si Chietla se retira (cláusula frente a ARG-148-002 o a la ventana de 157): 19 · 12 🔴 · 21 (20).
 - `ARG-158-FE-003` → **conteo de ARGOS 157**: + Cuitzeo (rojo; 2 cuerpos). Efecto (cálculo propio): 11 hechos · 4 🔴 · 5 🟡 · 2 🟢 · 9 muertos por agresión · 5 heridos · 2 cuerpos · 4 entidades.
 
 ## 4. Boletín federal (triple consulta)
@@ -91,15 +91,22 @@ Contenido por resumen (no fija hora; el del 23 puede incluir acciones anteriores
 
 ## 8. Controles editoriales
 
-__CONTROLES__
+| Control | Ronda | Veredicto | Correcciones aplicadas |
+|---|---|---|---|
+| `procedencia-cifras` | R1 (paralelo, 22 de 24) | CORREGIR | Santa Ana: FGJES por titular de medio (Proyecto Puente y Tribuna 2026/11/24) → 5 muertos por agresión y nueva ficha 🟢 -019 (El Imparcial 2026/11/24) · Monterrey: heridos 4/2 contradichos por titular → se cuentan 2 · Ixtapaluca: rutas del 23 (Cúspide; Seuno) → hecho del 23 con cláusula y posible ventana de 157 · Cerro del Cuatro: 4 o 5 por titular sin día; primer hallazgo el 21 por resumen · -013: «35 armas» solo por resumen · -016: retirada la falsa contradicción 4/6 · REC-001: R = 3 |
+| `editor-duplicidad` | R1 (paralelo) | CORREGIR | Valoración sin listado de hechos · Conclusión 1 sin «menores» no sostenidos; Conclusión 3 sin la carretera federal 15 (no estaba en la ficha); Conclusión 4 «vigilar» (no repite la acción de portada) · reserva recíproca -014/-015 · -013 con las tres cifras del mismo despliegue y ancla a -002/-013 · deslinde -013/-016 · Chietla frente a ARG-148-002 · fe de erratas «156 y 157» con vistos amarillos de 156 declarados · Rosarito en armamento con motivo · vistos de armamento reducidos a remisión · armamento en una página · Iguala `HEREDADO — NO REVERIFICADO` · Chilpancingo–Chichihualco, rojo si una ruta lo fija |
+| `editor-duplicidad` | R2 (serie) | CORREGIR (menor) | Valoración 5: retirado «la más larga de la serie» (el archivo registra 320 h 34 en 10-07, 117 h 50 en 09-16, 114 h 02 en 11-14…) · Conclusión 4 limitada a -007/-014 (-015 con día no fijado) · Conclusión 5 sin «sin acompañamiento oficial» · Chietla con cláusula de ventana 157 y efecto alternativo sobre 156; confianza ★★☆☆☆ · deslindes de Tepito (ARG-146-001), Ixtapaluca (visto de 148) y Hermosillo (ARG-149-010) · -019 hereda la reserva de ventana de -001 · panel de -001 con 4 nacionales |
+| `procedencia-cifras` | R2 (serie, 6 de 6) | CORREGIR (menor) | -019: un detenido por titular en singular; «cuatro capturados» (El Universal) solo por resumen, no se integra · -001: hallazgo del 22 solo por resumen (Meganoticias; Aristegui), cubierto por la cláusula · -005: «dos personas atacadas a balazos» (Reporteros en Movimiento 2026/11/23) · -006: ENfoque no reproducida en R2; N+ «Ataque Armado Deja Dos Heridos en Colonia San Bernabé» sostiene el 2 · -004: N+ y Zócalo no reproducidos; UnoTV (5) y Notisistema (4) · -015: El Heraldo de México y La Jornada 2026/11/25 |
+
+No corregido, con razón: «COTEJE» en las líneas 1 y 5 de la portada va dirigido al propio mando, no a una autoridad (no es exigencia) · la tabla índice no existe en el móvil por convención declarada del generador · los vistos y balances del panorama se mantienen en una línea cada uno (trazabilidad de descarte) · -015: «9 cargadores, 463 cartuchos» (una fuente, por resumen) no se transcribe.
 
 ## 9. Presupuesto de búsqueda
 
-Control 2 + coordinador 16 (14 antes de la ola + 2 de repetición federal) + ola 151 (6 × 25; el Noroeste usó 26) + `procedencia-cifras` R1 24 + R2 6 = **199** (de 200).
+Control 2 + coordinador 16 (14 antes de la ola + 2 de repetición federal) + ola 151 (6 × 25; el Noroeste usó 26) + `procedencia-cifras` R1 22 (de 24) + R2 6 = **197** (de 200).
 
 ## 10. Hallazgos de método (no van al cartelón)
 
-1. **Ventana larga sin control del «Procede»**: el «Procede» llegó 7 h 34 después del Bloque 0; la ventana se cerró a esa hora con aprobación del Comisario (77 h 09 min).
+1. **«Procede» tardío**: el «Procede» llegó 7 h 34 después del Bloque 0; la ventana se cerró a esa hora con aprobación del Comisario (77 h 09 min).
 2. **Concentración en el miércoles 25** (11 de 18 hechos): el lunes 23 y el jueves 26 quedaron con muy pocos hechos fijados por ruta; las búsquedas reservadas por fecha en la ruta no devolvieron hechos nuevos en ninguna región.
 3. **El Noroeste volvió a exceder el tope** (26 de 25) y dejó Chihuahua sin armamento por dominio; Occidente dejó la fiscalía de Michoacán sin sentencias; el Sureste, Oaxaca sin armamento.
 4. **Pista falsa del recall**: Cuarto Poder «Tres muertos y heridos tras un ataque armado» era del 18-sep (Tuxtla Gutiérrez).
