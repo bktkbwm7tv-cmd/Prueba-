@@ -52,7 +52,7 @@ APERTURA EL LUNES 23 A LAS 08:35: todo hecho del 23 necesita HORA; si apunta a a
 de las 08:35, es de la ventana de 157 (-REC- solo si es 🔴 y la hora la fija un
 TITULAR; con hora solo por resumen = ficha propia con cláusula de retiro).
 BOLETÍN FEDERAL: el del 19 solo por republicadores; 20, 21, 22 y 23 SIN INDEXAR al
-cierre de 157. Triple consulta por día (20 a 23) y por agregado «20 al 23». Un
+cierre de 157. Triple consulta por día (20 a 25) y por agregado «20 al 25». Un
 agregado NO fija el día de cada acción.
 FECHA DEL ARCHIVO: argos-2026-11-26.html (sin sufijo). Radar: WINDOW_DAYS = 4 (23, 24,
 25 y 26); la plantilla de 157 trae 2: REEMPLAZO 2→4 y aserta que queda una sola
@@ -93,7 +93,7 @@ ENCARGOS, PRIMERO Y SIN NEGOCIAR
  4. VISTOS CON POSIBLE ASCENSO: Chilpancingo col. Del PRI · Hampolol · Acayucan ·
     Cuitzeo (dos cuerpos con diésel) · Chietla (pareja) · Mazatlán explosivos ·
     Culiacán Libertad/Felipe Ángeles.
- 5. BOLETÍN FEDERAL: triple consulta del 20, 21, 22 y 23, y agregado.
+ 5. BOLETÍN FEDERAL: triple consulta del 20 al 25, día por día, y agregado.
  6. SENTENCIAS CANDIDATAS: Iguala, Los Avispones · Oaxaca 2,993 · Villahermosa
     5126 · Chihuahua, triple homicidio (La Opción 20261120) · Copanatoyac.
  7. SEGUIMIENTO (fuera del semáforo): Tepehuacán (RESULTADO de la audiencia del 24-nov) · vinculación
