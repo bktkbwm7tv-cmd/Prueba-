@@ -12,7 +12,7 @@ Versión 3.0 · Corte matutino · USO INSTITUCIONAL
 
   · 🔴 Alto impacto · 7
   · 🟡 Violencia operativa · 4
-  · 🟢 Acciones institucionales · 7
+  · 🟢 Acciones institucionales · 8
 
 [ MAPA NACIONAL — FOCOS DEL CORTE — GIS POR ENTIDAD ]
 
@@ -24,15 +24,15 @@ Pase el cursor sobre un estado.
 
   · 🟡 AMARILLO — VIOLENCIA OPERATIVA — 4 eventos
 
-  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 7 eventos
+  · 🟢 VERDE — ACCIONES INSTITUCIONALES — 8 eventos
 
 ── LO QUE DEBE HACER EL MANDO
 
 1. SOLICITE A LA DEFENSA EL PARTE DE LA BRECHA PERIBÁN–JILOTLÁN —QUIÉN INICIÓ, LUGAR E
 INVENTARIO— Y COTÉJELO CON LOS ASEGURAMIENTOS FEDERALES DE EL LIMONCITO Y PERIBÁN (ARG-158-002 y
 -013).
-2. SOLICITE A LA FISCALÍA DE SONORA LA HORA DEL HALLAZGO Y LA CAUSA DE MUERTE EN SANTA ANA
-(ARG-158-001).
+2. SOLICITE A LA FISCALÍA DE SONORA LA HORA DEL HALLAZGO EN SANTA ANA Y LA SITUACIÓN JURÍDICA
+DEL DETENIDO (ARG-158-001 y -019).
 3. SOLICITE A LA FISCALÍA DE NUEVO LEÓN EL SALDO DE HERIDOS Y LA LÍNEA DE INVESTIGACIÓN DEL
 ATAQUE EN SAN BERNABÉ (ARG-158-006).
 4. SOLICITE A LA FISCALÍA DEL ESTADO DE MÉXICO EL DÍA Y LA HORA DEL ATAQUE EN EL CERRO DEL
@@ -48,19 +48,19 @@ EN MAZATLÁN (ARG-158-014 y -015).
 ## PANORAMA DEL CORTE — ÍNDICE EJECUTIVO POR ENTIDAD
 
 Ventana 23-nov 08:35 → 26-nov 13:44 CDMX (77 h 09 min) · lun 23 (desde 08:35; 15 h 25) · mar 24
-· mié 25 · jue 26 (hasta 13:44; 13 h 44) · 18 hechos propios en 12 entidades · densidad 0,23
-hechos/hora · por fecha asignada: lun 23 3 · mar 24 3 · mié 25 11 · jue 26 1; duración, densidad
+· mié 25 · jue 26 (hasta 13:44; 13 h 44) · 19 hechos propios en 12 entidades · densidad 0,25
+hechos/hora · por fecha asignada: lun 23 4 · mar 24 4 · mié 25 10 · jue 26 1; duración, densidad
 y reparto, cálculo propio · 3 recuperaciones de alto impacto (ventanas de ARGOS 156 y 157),
 atenuadas, fuera de todos los totales
 
   Entidad · Municipio | Hecho | Nivel de riesgo | Fuente institucional | Fuente nacional | Confianza | ARG-ID
-  Nuevo León · Monterrey (col. San Bernabé) · MIÉ 25-NOV, POR RUTA | Ataque a una familia: niña y padre muertos, 4 heridos | 🔴 Rojo | SIN BOLETÍN | MVS · El Universal · Milenio · Excélsior | ★★★☆☆ | ARG-158-006
+  Nuevo León · Monterrey (col. San Bernabé) · MIÉ 25-NOV, POR RUTA | Ataque a una familia: niña y padre muertos, 2 o 4 heridos | 🔴 Rojo | SIN BOLETÍN | MVS · El Universal · Milenio · Excélsior | ★★★☆☆ | ARG-158-006
   Sinaloa · Mazatlán (fracc. Los Acantos) · MIÉ 25-NOV, POR RUTA | 2 mujeres asesinadas, 1 hombre herido | 🔴 Rojo | SIN BOLETÍN | — | ★★★☆☆ | ARG-158-007
   Michoacán–Jalisco · Peribán – Jilotlán de los Dolores (brecha limítrofe) · MIÉ 25-NOV, POR RUTA | Agresión a militares; 7 agresores abatidos | 🔴 Rojo | SIN BOLETÍN | Infobae · Crónica · Excélsior · El Independiente | ★★★☆☆ | ARG-158-002
-  Estado de México · Ixtapaluca (Santa Cruz Tlapacoya, Cerro del Elefante) · PUBL. MIÉ 25-NOV, POR RUTA | 2 muertos en ataque armado | 🔴 Rojo | SIN BOLETÍN | N+ · Info7 | ★★★☆☆ | ARG-158-005
-  Jalisco · San Pedro Tlaquepaque (Cerro del Cuatro) · MAR 24 Y MIÉ 25-NOV, POR RUTA | Fosa clandestina: restos humanos | 🔴 Rojo | SIN BOLETÍN | Milenio | ★★★☆☆ | ARG-158-004
+  Jalisco · San Pedro Tlaquepaque (Cerro del Cuatro) · MAR 24 Y MIÉ 25-NOV, POR RUTA | Fosa clandestina: restos humanos | 🔴 Rojo | SIN BOLETÍN | Milenio · N+ | ★★★☆☆ | ARG-158-004
   Guanajuato · Yuriria (San Pablo Casacuarán) · MAR 24-NOV, POR RUTA | Ataque a una familia: 2 muertos, 1 herido | 🔴 Rojo | SIN BOLETÍN | La Silla Rota · Milenio · N+ | ★★★☆☆ | ARG-158-003
-  Sonora · Santa Ana · LUN 23-NOV, POR RUTA | 5 hombres muertos en camioneta blindada | 🔴 Rojo | SIN BOLETÍN | La Jornada · El Heraldo de México · Aristegui | ★★★☆☆ | ARG-158-001
+  Sonora · Santa Ana · LUN 23-NOV, POR RUTA | 5 hombres asesinados en camioneta blindada | 🔴 Rojo | SIN BOLETÍN | La Jornada · El Heraldo de México · Aristegui | ★★★☆☆ | ARG-158-001
+  Estado de México · Ixtapaluca (Santa Cruz Tlapacoya, Cerro del Elefante) · LUN 23-NOV, POR RUTA | 2 muertos en ataque armado | 🔴 Rojo | SIN BOLETÍN | N+ · Info7 | ★★★☆☆ | ARG-158-005
   Ciudad de México · Cuauhtémoc (Tepito, col. Morelos) · MIÉ 25-NOV, POR RUTA | Mujer asesinada, menor herido | 🟡 Amarillo | SIN BOLETÍN | La Silla Rota · MVS · Infobae | ★★★☆☆ | ARG-158-010
   Sonora · Hermosillo (Centro; Garmendia y Luis Encinas) · MIÉ 25-NOV, POR RUTA | Hombre asesinado, mujer herida | 🟡 Amarillo | SIN BOLETÍN | — | ★★★☆☆ | ARG-158-011
   Veracruz · Hueyapan de Ocampo (Juan Díaz Covarrubias) · MAR 24-NOV, POR RESUMEN | Ex guardia nacional asesinado | 🟡 Amarillo | SIN BOLETÍN | MVS · Infobae | ★★★☆☆ | ARG-158-009
@@ -71,8 +71,9 @@ atenuadas, fuera de todos los totales
   Jalisco · Chapala (Ajijic) · MIÉ 25-NOV, POR TITULAR DEL BOLETÍN | Aseguramiento: Barrett, granadas, cartuchos | 🟢 Verde | SIN BOLETÍN | Milenio | ★★☆☆☆ | ARG-158-016
   Nayarit · Ixtlán del Río (Jala) · MIÉ 25-NOV, POR TITULAR DEL BOLETÍN | Narcolaboratorio inhabilitado | 🟢 Verde | SIN BOLETÍN | Excélsior · Milenio | ★★★☆☆ | ARG-158-017
   Sinaloa · Mazatlán · PUBL. MIÉ 25-NOV, POR RUTA | 6 detenidos con armas sin cifra | 🟢 Verde | SIN BOLETÍN | Infobae | ★★★☆☆ | ARG-158-015
+  Sonora · Santa Ana · PUBL. MAR 24-NOV, POR RUTA | 1 detenido por el multihomicidio | 🟢 Verde | SIN BOLETÍN | — | ★★★☆☆ | ARG-158-019
   Yucatán · Progreso (col. Ciénega 2000) · PUBL. LUN 23-NOV, POR RUTA | 5 detenidos por un homicidio | 🟢 Verde | SSP Yucatán (portal, sin fecha en la ruta) | — | ★★★☆☆ | ARG-158-012
-  Tabasco · Centro (Villa Ocuiltzapotlán) · VENTANA ARGOS 156 | Adolescente y hombre asesinados | 🔴 Rojo (en su ventana) | SIN BOLETÍN | Proceso | ★★☆☆☆ | ARG-158-REC-001
+  Tabasco · Centro (Villa Ocuiltzapotlán) · VENTANA ARGOS 156 | Adolescente y hombre asesinados | 🔴 Rojo (en su ventana) | SIN BOLETÍN | Proceso | ★★★☆☆ | ARG-158-REC-001
   Michoacán · Cuitzeo (San Juan Benito Juárez–Chehuayo Chico) · VENTANA ARGOS 157 | 2 cuerpos rociados con diésel | 🔴 Rojo (en su ventana) | SIN BOLETÍN | — | ★★★☆☆ | ARG-158-REC-003
   Puebla · Chietla (Villa de Atencingo) · VENTANA ARGOS 156 | Pareja asesinada frente a su casa | 🔴 Rojo (en su ventana) | SIN BOLETÍN | — | ★★★☆☆ | ARG-158-REC-002
 
@@ -81,13 +82,12 @@ atenuadas, fuera de todos los totales
 NINGUNA AUTORIDAD PUBLICÓ UN AGREGADO NACIONAL DE ESTA VENTANA.
 
   Hechos propios | 🔴 | 🟡 | 🟢 | Recup. | Muertos por agresión | Heridos | Cuerpos o restos hallados | Armas cortas | Armas largas | Armas sin categoría | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos en aseguramiento | Entidades
-  18 | 7 | 4 | 7 | 3 | 11 | 8 | 6 | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 12
+  19 | 7 | 4 | 8 | 3 | 16 | 6 | 1 | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | n/d | 12
 
 Armamento: ningún aseguramiento de la ventana con cantidad por titular o por autoridad: n/d ·
-muertos por agresión: 11, cálculo propio; 7 agresores abatidos en Peribán–Jilotlán, fuera de
-este total · heridos: 8 (San Bernabé, 4 por titular) · cuerpos o restos: 6 (Santa Ana 5; Cerro
-del Cuatro, al menos 1) · marcas: 1 PUBLICADO EL DÍA DE APERTURA SIN HORA · 1 FRONTERA DE
-VENTANA — HORA NO FIJADA · 5 cláusulas de retiro (detalle en cada ficha).
+muertos por agresión: 16, cálculo propio; 7 agresores abatidos en Peribán–Jilotlán, fuera de
+este total · heridos: 6 · cuerpos o restos: 1 · marcas: 1 PUBLICADO EL DÍA DE APERTURA SIN HORA
+· 1 FRONTERA DE VENTANA — HORA NO FIJADA · 5 cláusulas de retiro (detalle en cada ficha).
 BALANCES, NO SE INTEGRAN: «Violencia deja siete muertos en Puebla, entre ellos el sobrino de
 Rafael Caro Quintero» (Proceso 2026/11/23) · «Cinco ataques armados en Puebla dejan ocho muertos
 y cuatro heridos en menos de 48 horas» (La Jornada de Oriente) · «Campeche suma 12 ejecuciones
@@ -98,16 +98,16 @@ Anzaldúas, restos óseos hallados por un colectivo · Nacajuca, Tab., dos hombr
 baleados (homónimos de agosto) · Temixco, El Estribo, un muerto y una mujer herida ·
 Nezahualcóyotl, mujer asesinada (colonia y día contradichos) · Atotonilco de Tula, un muerto y
 una mujer herida · Hermosillo, cantante herido (solo cobertura en vivo) · Ulumal, Champotón,
-hombre ejecutado · Macuspana, cuerpo desmembrado · ventana de 157, no rojos:
-Chilpancingo–Chichihualco, hombre decapitado (~07:30 del 23 SOLO POR RESUMEN) · Rosarito, 4
-detenidos y 6 armas por titular (El Imparcial 2026/11/23), aseguramiento de la noche del 22 SOLO
-POR RESUMEN.
-FE DE ERRATAS — ARGOS 157: el visto «Periférico Norte, operador de transporte» era del viernes
-20 en Tlalnepantla (Infobae 2026/11/21): ventana de 156 · tres rojos de ventanas anteriores se
-recuperan (Ocuiltzapotlán y Chietla, de 156; Cuitzeo, de 157) · efecto (cálculo propio): ARGOS
-157: 11 hechos · 4 🔴 · 5 🟡 · 2 🟢 · 9 muertos por agresión · 5 heridos · 2 cuerpos · 4 entidades
-· ARGOS 156: 20 hechos · 13 🔴 · 3 🟡 · 4 🟢 · 23 muertos por agresión (22 si en Nopaltepec murió
-un solo agente) · 5 heridos · 11 entidades.
+hombre ejecutado · Macuspana, cuerpo desmembrado · ventana de 157, sin ruta con día:
+Chilpancingo–Chichihualco, hombre decapitado (~07:30 del 23 SOLO POR RESUMEN; 🔴 si una ruta lo
+fija) · Rosarito: ver armamento.
+FE DE ERRATAS — ARGOS 156 Y 157: el visto de 157 «Periférico Norte, operador de transporte» era
+del viernes 20 en Tlalnepantla (Infobae 2026/11/21) · vistos de la ventana de 156, 🟡, no
+integrados: Periférico Norte y el homicidio de Ciénega 2000, Progreso (madrugada del 22 SOLO POR
+RESUMEN) · tres rojos de ventanas anteriores se recuperan (Ocuiltzapotlán y Chietla, de 156;
+Cuitzeo, de 157) · efecto (cálculo propio): ARGOS 157: 11 hechos · 4 🔴 · 5 🟡 · 2 🟢 · 9 muertos
+por agresión · 5 heridos · 2 cuerpos · 4 entidades · ARGOS 156: 20 hechos · 13 🔴 · 3 🟡 · 4 🟢 ·
+23 muertos por agresión (22 si en Nopaltepec murió un solo agente) · 5 heridos · 11 entidades.
 Seguimiento, fuera del semáforo: Tepehuacán de Guerrero (ARG-155-011): 4 vinculados a proceso
 por homicidio calificado en la audiencia del 24, por titular (La Silla Rota 2026/11/24:
 «Vinculan a proceso a cuatro por homicidio de policías en Tepehuacán»; Síntesis 2026/11/24) · El
@@ -125,9 +125,9 @@ los ocho no publicada.
 
 ============================================================================
 
-## CRIMEN ORGANIZADO (I) — SANTA ANA; AGRESIÓN A MILITARES Y DETENCIONES EN PERIBÁN–JILOTLÁN; YURIRIA
+## CRIMEN ORGANIZADO (I) — SANTA ANA: MULTIHOMICIDIO Y CAPTURA; AGRESIÓN A MILITARES Y DETENCIONES EN PERIBÁN–JILOTLÁN
 
-### SONORA · SANTA ANA — HALLAN CINCO HOMBRES MUERTOS DENTRO DE UNA CAMIONETA BLINDADA [ROJO]
+### SONORA · SANTA ANA — CINCO INTEGRANTES DE UNA CÉLULA, ASESINADOS DENTRO DE UNA CAMIONETA BLINDADA [ROJO]
 
 ── HECHO
 
@@ -138,25 +138,51 @@ Ana, Sonora»; El Diario de Chihuahua 2026/nov/23: «Hallan a cinco hombres ases
 Sonora») · reporte a la FGJES ~10:01, SOLO POR RESUMEN · SI RESULTA ANTERIOR A LAS 08:35 DEL 23,
 ES DE LA VENTANA DE ARGOS 157 Y SE RETIRA DE ESTE TOTAL · 5 hombres muertos, por titular;
 «ejecutados», por titular (Aristegui «2311»: «Hallan cinco hombres ejecutados en Sonora») (🔴
-homicidio múltiple) · causa de muerte no informada por la autoridad: se cuentan como cuerpos
-hallados · chalecos antibalas y 4 armas largas en la escena, SOLO POR RESUMEN: CANTIDAD NO
-DETERMINADA · FGJES investiga, por titular (Radio Sonora: «Investiga Fiscalía de Sonora hallazgo
-de cinco hombres sin vida en Santa Ana») · vínculo con una estructura criminal, SOLO POR
-RESUMEN: NO ACREDITADO · ningún detenido publicado
+homicidio múltiple) · homicidio por una disputa interna de la célula, atribuido a la FGJES por
+titular de medio (Proyecto Puente 2026/11/24: «Disputa interna en célula criminal derivó en
+homicidio de 5 hombres en Santa Ana: FGJE Sonora»; Tribuna 2026/11/24: «FGJES confirma que
+pleito interno dejó cinco muertos dentro de camioneta blindada en Santa Ana») · chalecos
+antibalas y armas largas en la escena, SOLO POR RESUMEN: CANTIDAD NO DETERMINADA · posible
+vínculo con «el Ponchis», en investigación, por titular (UnoTV; El Universal): NO ACREDITADO ·
+detención del presunto responsable: ficha aparte (ARG-158-019)
 
 ── TRAZABILIDAD
 
 ARG-158-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por resumen
-en el día de apertura; causa de muerte no informada por autoridad · Fuentes: Institucional 0 ·
-Nacional 3 · Regional 2 · Abierta 0 · con fecha en la ruta: La Jornada (2026/11/23) · El Heraldo
-de México (2026/11/23) · El Diario de Chihuahua (2026/nov/23) · Hecho: lunes 23-nov, por ruta;
-reporte ~10:01, solo por resumen · Hora: reporte ~10:01 (solo por resumen) · Consulta:
-2026-11-26, última búsqueda __CONSULTA__ · Estatus: Parcialmente corroborado · Conteo de
-armamento: sin fila — evento cualitativo, cantidad no determinada
-Deslindes y reservas: Santa Ana, Sonora, no figura en ediciones previas (ARG-145-008 es Santa
-Ana de Mazatlán: otro hecho). La Opinión 2026/11/24 «Descubren 5 cuerpos sin vida dentro de una
-camioneta blindada en Sonora»: misma escena, publicación posterior. «Investiga Fiscalía» no es
-declaración nombrada: Institucional 0. Identidades: no se reproducen.
+en el día de apertura; declaración de la FGJES solo citada por medios · Fuentes: Institucional 0
+· Nacional 4 · Regional 5 · Abierta 0 · con fecha en la ruta: La Jornada (2026/11/23) · El
+Heraldo de México (2026/11/23) · El Diario de Chihuahua (2026/nov/23) · Proyecto Puente
+(2026/11/24) · Tribuna (2026/11/24) · Hecho: lunes 23-nov, por ruta; reporte ~10:01, solo por
+resumen · Hora: reporte ~10:01 (solo por resumen) · Consulta: 2026-11-26, última búsqueda
+__CONSULTA__ · Estatus: Parcialmente corroborado · Conteo de armamento: sin fila — evento
+cualitativo, cantidad no determinada
+Deslindes y reservas: Delito y detención en la misma ventana: dos fichas (esta y ARG-158-019).
+Santa Ana, Sonora, no figura en ediciones previas (ARG-145-008 es Santa Ana de Mazatlán: otro
+hecho). La Opinión 2026/11/24 «Descubren 5 cuerpos sin vida dentro de una camioneta blindada en
+Sonora»: misma escena, publicación posterior. Declaración de la FGJES conocida solo por medios:
+Institucional 0. Identidades: no se reproducen.
+
+### SONORA · SANTA ANA — CAPTURAN AL PRESUNTO RESPONSABLE DEL MULTIHOMICIDIO DE LA CAMIONETA BLINDADA [VERDE]
+
+── HECHO
+
+Santa Ana · publicación martes 24-NOV, por ruta (El Imparcial 2026/11/24: «Capturan al
+responsable del multihomicidio de cinco personas en Santa Ana; todos pertenecían a una célula
+delictiva») · día y hora de la captura no fijados · 1 detenido, por titular (🟢 detención) ·
+esclarecimiento atribuido a la FGJES, por titular de medio (El Vigía 2026/11/25: «La FGJES
+esclarece muerte de cinco integrantes de célula criminal en Santa Ana») · situación jurídica: no
+publicada
+
+── TRAZABILIDAD
+
+ARG-158-019 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día de la captura no
+fijado; declaración de la FGJES solo citada por medios · Fuentes: Institucional 0 · Nacional 0 ·
+Regional 3 · Abierta 0 · con fecha en la ruta: El Imparcial (2026/11/24) · El Vigía (2026/11/25)
+· Hecho: publicación martes 24-nov, por ruta; día y hora de la captura no fijados · Hora: no
+fijada · Consulta: 2026-11-26, última búsqueda __CONSULTA__ · Estatus: Parcialmente corroborado
+· Conteo de armamento: sin fila — sin aseguramiento de armamento publicado
+Deslindes y reservas: Delito y detención en la misma ventana: dos fichas (ARG-158-001 y esta).
+Nombre: no se reproduce.
 
 ### MICHOACÁN–JALISCO · PERIBÁN – JILOTLÁN — AGREDEN A MILITARES EN RECONOCIMIENTO: SIETE AGRESORES ABATIDOS (OPERACIÓN «ERANDI») [ROJO]
 
@@ -201,8 +227,8 @@ EFE vía Infobae 2026/11/26: «Siete muertos y diez detenidos tras enfrentamient
 oeste de México») (🟢 detención) · cifra atribuida a la Defensa por medios, sin documento · 4
 detenidos en los primeros partes, por titular: saldo superado · fusil Barrett calibre .50,
 ametralladora Minimi, «33 armas de fuego», una granada, cargadores, cartuchos y 4 vehículos,
-SOLO POR RESUMEN; 35 armas, por titular sin fecha (La Voz de Michoacán): CANTIDAD NO DETERMINADA
-· puestos a disposición de la FGR en Zamora, SOLO POR RESUMEN
+SOLO POR RESUMEN; 35, SOLO POR RESUMEN: CANTIDAD NO DETERMINADA · puestos a disposición de la
+FGR en Zamora, SOLO POR RESUMEN
 
 ── TRAZABILIDAD
 
@@ -214,10 +240,19 @@ hora no fijada · Hora: no fijada · Consulta: 2026-11-26, última búsqueda __C
 Parcialmente corroborado · Conteo de armamento: sin fila — armamento sin cantidad por titular:
 evento cualitativo
 Deslindes y reservas: Delito y detención en la misma ventana: dos fichas (ARG-158-002 y esta).
-Boletín federal del 25: Jilotlán, El Limoncito, 11 detenidos y 43 armas, SOLO POR RESUMEN, y
-Peribán, SSP y Defensa, 8 detenidos y 20 armas (Changoonga 2026/11/26: «SSP Y Defensa Repelen
-Ataque Armado En Límites De Michoacán Y Jalisco; Hay Ocho Detenidos»): POSIBLE DUPLICIDAD — NO
-INTEGRAR AL TOTAL HASTA VALIDACIÓN. Nombres: no se reproducen.
+Cifras discrepantes del mismo despliegue: boletín federal del 25, Jilotlán, El Limoncito, 11
+detenidos y 43 armas, SOLO POR RESUMEN, y Peribán, SSP y Defensa, 8 detenidos, 20 armas, 158
+cargadores y más de 5,500 cartuchos, SOLO POR RESUMEN (Changoonga 2026/11/26: «SSP Y Defensa
+Repelen Ataque Armado En Límites De Michoacán Y Jalisco; Hay Ocho Detenidos»): POSIBLE
+DUPLICIDAD CON ARG-158-002 Y -013 — NO INTEGRAR AL TOTAL HASTA VALIDACIÓN. Frente a ARG-158-016
+(Ajijic, Chapala): otro municipio y otras cifras, otro hecho. Nombres: no se reproducen.
+
+----------------------------------------------------------------------------
+  · Versión 3.0 · Fecha: 2026-11-26 · Hora: 13:44 (CDMX) · Corte: Matutino · ARGOS N.° 158 · USO INSTITUCIONAL
+
+============================================================================
+
+## CRIMEN ORGANIZADO (II) — YURIRIA; FOSA EN EL CERRO DEL CUATRO; HOMICIDIOS MÚLTIPLES EN IXTAPALUCA Y MONTERREY
 
 ### GUANAJUATO · YURIRIA — SICARIOS ENTRAN A UNA VIVIENDA EN CASACUARÁN: DOS MUERTOS Y UN HERIDO [ROJO]
 
@@ -242,13 +277,6 @@ Deslindes y reservas: Yuriria figura por ARG-125-013 (Valle de Santiago, 3-oct) 
 ARG-153-001 (emboscada a policías, 17-nov): otros hechos. Homónimos de AM de 2022 y 2025: otros
 años. Identidades: no se reproducen.
 
-----------------------------------------------------------------------------
-  · Versión 3.0 · Fecha: 2026-11-26 · Hora: 13:44 (CDMX) · Corte: Matutino · ARGOS N.° 158 · USO INSTITUCIONAL
-
-============================================================================
-
-## CRIMEN ORGANIZADO (II) — FOSA EN EL CERRO DEL CUATRO; HOMICIDIOS MÚLTIPLES EN IXTAPALUCA Y MONTERREY
-
 ### JALISCO · TLAQUEPAQUE — MADRES BUSCADORAS HALLAN RESTOS HUMANOS EN UNA FOSA CLANDESTINA DEL CERRO DEL CUATRO [ROJO]
 
 ── HECHO
@@ -258,42 +286,50 @@ martes 24-NOV, por ruta (El Informador 20261124: «Seguridad en Jalisco: Colecti
 hallazgo de cuerpo en el Cerro del Cuatro, Tlaquepaque»), y de más restos humanos en fosa
 clandestina el miércoles 25-NOV, por ruta (El Informador 20261125: «…Madres Buscadoras de
 Jalisco hallan más restos humanos en fosa clandestina del Cerro del Cuatro») (🔴 hallazgo de fosa
-clandestina) · «suman dos hallazgos», por titular (Milenio) · al menos 1 cuerpo, por titular;
-restos de 5 personas, SOLO POR RESUMEN: NÚMERO DE VÍCTIMAS NO DETERMINADO — SE CUENTA 1 ·
-inspecciones desde el 21-nov, SOLO POR RESUMEN · Madres Buscadoras de Jalisco, por titular ·
-causa de muerte no informada por la autoridad
+clandestina) · «suman dos hallazgos», por titular (Milenio) · al menos 1 cuerpo, por titular; 5
+cuerpos, por titular sin día en la ruta (N+: «Colectivos Encuentran Fosa Clandestina con 5
+Cadáveres en Tlaquepaque»; Zócalo: «…suman cinco cuerpos recuperados»), y un cuarto cuerpo, por
+titular (Notisistema): NÚMERO DE VÍCTIMAS NO DETERMINADO — SE CUENTA 1 · primer hallazgo el
+sábado 21 y cinco cuerpos anunciados el lunes 23, SOLO POR RESUMEN: PARTE DE LOS HALLAZGOS PUEDE
+SER DE LAS VENTANAS DE 156 Y 157 · Madres Buscadoras de Jalisco, por titular · causa de muerte
+no informada por la autoridad
 
 ── TRAZABILIDAD
 
-ARG-158-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: número de víctimas no
-determinado; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 1 · Regional 2 ·
-Abierta 0 · con fecha en la ruta: El Informador (20261124) · El Informador (20261125) · Hecho:
-publicaciones del martes 24 y del miércoles 25-nov, por ruta; hora no fijada · Hora: no fijada ·
-Consulta: 2026-11-26, última búsqueda __CONSULTA__ · Estatus: Parcialmente corroborado · Conteo
-de armamento: sin fila — armamento asegurado: no publicado
+ARG-158-004 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: número de víctimas y
+fechas de cada hallazgo no determinados; ninguna fuente institucional · Fuentes: Institucional 0
+· Nacional 2 · Regional 3 · Abierta 0 · con fecha en la ruta: El Informador (20261124) · El
+Informador (20261125) · Hecho: publicaciones del martes 24 y del miércoles 25-nov, por ruta;
+hora no fijada · Hora: no fijada · Consulta: 2026-11-26, última búsqueda __CONSULTA__ · Estatus:
+Parcialmente corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Cerro del Cuatro no figura en ARGOS 155 a 157. «Hallan cuatro cuerpos en
 fosa clandestina de Guadalajara» (UnoTV), sin fecha: no se integra.
 
-### ESTADO DE MÉXICO · IXTAPALUCA — ATAQUE ARMADO EN EL CERRO DEL ELEFANTE: DOS MUERTOS [ROJO]
+### ESTADO DE MÉXICO · IXTAPALUCA — DOS PERSONAS ASESINADAS EN EL CERRO DEL ELEFANTE [ROJO]
 
 ── HECHO
 
 Ixtapaluca · CERRO DEL ELEFANTE, por titular (Info7: «Ataque armado deja dos muertos en el Cerro
-del Elefante»); col. Santa Cruz Tlapacoya, SOLO POR RESUMEN · publicación miércoles 25-NOV, por
-ruta (El Independiente 2026/11/25: «Ataque armado deja dos muertos en Ixtapaluca») · día y hora
-del hecho no fijados; otra nota del 23, SOLO POR RESUMEN · SI RESULTA ANTERIOR A LAS 08:35 DEL
-23, ES DE LA VENTANA DE ARGOS 157 Y SE RETIRA DE ESTE TOTAL · 2 muertos, por titular (N+:
-«Homicidio en Ixtapaluca: Dos Personas Murieron Tras Ataque Armado en el Cerro del Elefante») (🔴
-homicidio múltiple) · FGJEM investiga, SOLO POR RESUMEN · ningún detenido publicado
+del Elefante»); col. Santa Cruz Tlapacoya, SOLO POR RESUMEN · lunes 23-NOV, por ruta (Cúspide
+2026/11/23: «Dos personas son halladas asesinadas en el Cerro del Elefante, en Ixtapaluca»;
+Seuno Noticias 2026/11/23: «Hallan dos cuerpos en Ixtapaluca…»); publicación posterior, por ruta
+(El Independiente 2026/11/25: «Ataque armado deja dos muertos en Ixtapaluca») · cuerpos
+abandonados en la madrugada, SOLO POR RESUMEN: POSIBLE VENTANA DE ARGOS 157 · SI RESULTA
+ANTERIOR A LAS 08:35 DEL 23, ES DE LA VENTANA DE ARGOS 157 Y SE RETIRA DE ESTE TOTAL · hallazgo,
+por titular (Cúspide), o ataque armado, por titular (El Independiente; Info7): DINÁMICA
+CONTRADICHA · 2 muertos, por titular (N+: «Homicidio en Ixtapaluca: Dos Personas Murieron Tras
+Ataque Armado en el Cerro del Elefante») (🔴 homicidio múltiple) · FGJEM investiga, SOLO POR
+RESUMEN · ningún detenido publicado
 
 ── TRAZABILIDAD
 
-ARG-158-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día del hecho no
-fijado; una sola ruta fechada; ninguna fuente institucional · Fuentes: Institucional 0 ·
-Nacional 2 · Regional 1 · Abierta 0 · con fecha en la ruta: El Independiente (2026/11/25) ·
-Hecho: publicación miércoles 25-nov, por ruta; día y hora del hecho no fijados · Hora: no fijada
-· Consulta: 2026-11-26, última búsqueda __CONSULTA__ · Estatus: Parcialmente corroborado ·
-Conteo de armamento: sin fila — armamento asegurado: no publicado
+ARG-158-005 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por resumen
+en el día de apertura, anterior a las 08:35; ninguna fuente institucional · Fuentes:
+Institucional 0 · Nacional 2 · Regional 3 · Abierta 0 · con fecha en la ruta: Cúspide
+(2026/11/23) · Seuno Noticias (2026/11/23) · El Independiente (2026/11/25) · Hecho: lunes
+23-nov, por ruta; madrugada, solo por resumen · Hora: madrugada (solo por resumen) · Consulta:
+2026-11-26, última búsqueda __CONSULTA__ · Estatus: Parcialmente corroborado · Conteo de
+armamento: sin fila — armamento asegurado: no publicado
 Deslindes y reservas: Ixtapaluca figura en el índice solo en ediciones antiguas: otros hechos.
 Identidades: no se reproducen.
 
@@ -305,22 +341,24 @@ Monterrey · COL. SAN BERNABÉ, por titular · miércoles 25-NOV, por ruta (MVS 
 armado en San Bernabé deja sin vida a una niña y a un hombre») · ~20:00, SOLO POR RESUMEN · 2
 muertos, una niña y su padre, por titular (Milenio: «Niña y su padre son asesinados a balazos en
 su casa en Monterrey»; Excélsior: «Asesinan a balazos a niña y a un hombre en Monterrey, Nuevo
-León») (🔴 homicidio múltiple) · al menos 4 heridos, por titular (El Universal: «Ataque a balazos
-contra una familia en Monterrey deja dos muertos, entre ellos, una niña; hay al menos cuatro
-heridos»); 2, SOLO POR RESUMEN · ataque en el domicilio, por titular · móvil no informado ·
-Agencia Estatal de Investigaciones, SOLO POR RESUMEN · ningún detenido publicado
+León») (🔴 homicidio múltiple) · heridos contradichos por titular: «al menos cuatro» (El
+Universal: «Ataque a balazos contra una familia en Monterrey deja dos muertos, entre ellos, una
+niña; hay al menos cuatro heridos»; Horacero: «…hay 4 heridos más») y dos (ENfoque 2026/11/25:
+«…dos personas resultan heridas»): HERIDOS CONTRADICHOS — SE CUENTAN 2 · ataque en el domicilio,
+por titular · móvil no informado · Agencia Estatal de Investigaciones, SOLO POR RESUMEN · ningún
+detenido publicado
 
 ── TRAZABILIDAD
 
 ARG-158-006 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
-resumen; heridos solo en un titular; ninguna fuente institucional · Fuentes: Institucional 0 ·
-Nacional 4 · Regional 1 · Abierta 0 · con fecha en la ruta: MVS (2026/11/25) · Hecho: miércoles
-25-nov, por ruta; ~20:00, solo por resumen · Hora: noche, ~20:00 (solo por resumen) · Consulta:
-2026-11-26, última búsqueda __CONSULTA__ · Estatus: Parcialmente corroborado · Conteo de
-armamento: sin fila — armamento asegurado: no publicado
-Deslindes y reservas: San Bernabé no figura en ediciones previas. Telediario, N+, Horacero y La
-Tarde: republicaciones, no se cuentan aparte. «Fomerrey 113» (ENfoque): no se acoge.
-Identidades: no se reproducen.
+resumen; heridos contradichos por titular; ninguna fuente institucional · Fuentes: Institucional
+0 · Nacional 4 · Regional 1 · Abierta 0 · con fecha en la ruta: MVS (2026/11/25) · ENfoque
+(2026/11/25) · Hecho: miércoles 25-nov, por ruta; ~20:00, solo por resumen · Hora: noche, ~20:00
+(solo por resumen) · Consulta: 2026-11-26, última búsqueda __CONSULTA__ · Estatus: Parcialmente
+corroborado · Conteo de armamento: sin fila — armamento asegurado: no publicado
+Deslindes y reservas: San Bernabé no figura en ediciones previas. Telediario, N+ y La Tarde:
+republicaciones, no se cuentan aparte. «Fomerrey 113» (ENfoque): ubicación no acogida; el saldo
+de heridos sí se registra. Identidades: no se reproducen.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-11-26 · Hora: 13:44 (CDMX) · Corte: Matutino · ARGOS N.° 158 · USO INSTITUCIONAL
@@ -370,7 +408,8 @@ Nacional 0 · Regional 2 · Abierta 0 · con fecha en la ruta: Ríodoce (2026/11
 2026-11-26, última búsqueda __CONSULTA__ · Estatus: Parcialmente corroborado · Conteo de
 armamento: sin fila — sin aseguramiento de armamento publicado
 Deslindes y reservas: Delito y detención en la misma ventana: dos fichas (ARG-158-007 y esta).
-Nombres: no se reproducen.
+Frente a ARG-158-015 (seis detenidos en Mazatlán, publicación del mismo día): POSIBLE DUPLICIDAD
+DE DETENIDOS ENTRE -014 Y -015 — NO SUMAR. Nombres: no se reproducen.
 
 ### SINALOA · MAZATLÁN — DETIENEN A SEIS PRESUNTOS INTEGRANTES DE «LOS CHAPITOS» CON ARMAS, CARGADORES Y CARTUCHOS [VERDE]
 
@@ -395,7 +434,10 @@ Parcialmente corroborado · Conteo de armamento: sin fila — armamento sin cant
 evento cualitativo
 Deslindes y reservas: «Caen cuatro armados, entre ellos dos menores de edad, en Mazatlán; GOES
 les asegura fusiles y una granada» (Extraoficial), sin fecha: otro conteo, no se integra.
-Nombres: no se reproducen.
+Boletín federal del 24 (Milenio; Tallapolítica): Sinaloa, seis detenidos y cuatro armas, SOLO
+POR RESUMEN: posible mismo hecho; día de la captura 24 y col. Rinconada del Valle, SOLO POR
+RESUMEN. Frente a ARG-158-014 (Los Acantos, dos detenidos, mismo día): POSIBLE DUPLICIDAD DE
+DETENIDOS ENTRE -014 Y -015 — NO SUMAR. Nombres: no se reproducen.
 
 ### SINALOA · AHOME — PERSECUCIÓN TERMINA EN ENFRENTAMIENTO ENTRE MARINA Y CIVILES ARMADOS [AMARILLO]
 
@@ -539,8 +581,8 @@ Gabinete de Seguridad republicado (Milenio: «Gabinete de seguridad: resultados 
 Tallapolítica: «Gabinete de Seguridad del Gobierno de México informa acciones relevantes del 25
 de noviembre 2026») (🟢 aseguramiento) · 2 fusiles Barrett, 4 armas largas, 73 cargadores, 1,507
 cartuchos, 10 granadas, equipo táctico y 2 vehículos, uno con reporte de robo en Estados Unidos,
-SOLO POR RESUMEN · «seis armas y diez granadas» en un agregado de medio (Hoy Tamaulipas): armas
-largas 4 o 6 · CANTIDAD NO DETERMINADA · ningún detenido publicado
+SOLO POR RESUMEN · «seis armas y diez granadas» en un agregado de medio (Hoy Tamaulipas) ·
+CANTIDAD NO DETERMINADA · ningún detenido publicado
 
 ── TRAZABILIDAD
 
@@ -552,7 +594,8 @@ fijada · Consulta: 2026-11-26, última búsqueda __CONSULTA__ · Estatus: Pendi
 corroboración · Conteo de armamento: sin fila — cifras solo por resumen del boletín: NO INTEGRAR
 HASTA DOCUMENTO
 Deslindes y reservas: Boletín del 25 no indexado en gob.mx/sspc: tomado de republicadores;
-corroboración débil por construcción. Ajijic no figura en ARGOS 155 a 157.
+corroboración débil por construcción. Ajijic no figura en ARGOS 155 a 157. Frente a ARG-158-013
+(Peribán–Jilotlán): otro municipio y otras cifras, otro hecho.
 
 ### NAYARIT · IXTLÁN DEL RÍO — FUERZAS FEDERALES INHABILITAN UN LABORATORIO DE DROGAS SINTÉTICAS [VERDE]
 
@@ -615,17 +658,18 @@ publicada.
 VENTANA DE ORIGEN: ARGOS 156 (madrugada del 22, SOLO POR RESUMEN; si resultara posterior a las
 09:34 del 22, sería de ARGOS 157) · Centro · VILLA OCUILTZAPOTLÁN, por titular · domingo 22-NOV,
 por ruta (Proceso 2026/11/22: «Tabasco: asesinan a adolescente de 13 años y a un hombre en
-Ocuiltzapotlán») · 2 muertos, un adolescente de 13 años y un hombre, por titular (🔴 homicidio
-múltiple) · ningún detenido publicado
+Ocuiltzapotlán»; Tabasco HOY: «Privan de la vida a una menor y a joven en Ocuiltzapotlán») · 2
+muertos, un adolescente de 13 años y un hombre, por titular (🔴 homicidio múltiple) · ningún
+detenido publicado
 
 ── TRAZABILIDAD
 
-ARG-158-REC-001 · Confianza: 🟠 Bajo (★★☆☆☆), la fija el campo peor sostenido: fuente única con
-fecha; hora solo por resumen · Fuentes: Institucional 0 · Nacional 1 · Regional 0 · Abierta 0 ·
-con fecha en la ruta: Proceso (2026/11/22) · Hecho: domingo 22-nov, por ruta; madrugada, solo
-por resumen · Hora: madrugada (solo por resumen) · Consulta: 2026-11-26, última búsqueda
-__CONSULTA__ · Estatus: Pendiente de corroboración · Ventana de origen: ARGOS 156 — fuera de
-todos los totales
+ARG-158-REC-001 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: hora solo por
+resumen; una sola ruta con fecha; ninguna fuente institucional · Fuentes: Institucional 0 ·
+Nacional 1 · Regional 3 · Abierta 0 · con fecha en la ruta: Proceso (2026/11/22) · Hecho:
+domingo 22-nov, por ruta; madrugada, solo por resumen · Hora: madrugada (solo por resumen) ·
+Consulta: 2026-11-26, última búsqueda __CONSULTA__ · Estatus: Parcialmente corroborado · Ventana
+de origen: ARGOS 156 — fuera de todos los totales
 Deslindes y reservas: Ocuiltzapotlán figura por ARG-143-REC-004 (tres cuerpos en el corredor
 Villahermosa–Frontera, octubre): otro hecho. No figura en ARGOS 156 ni 157. Identidades: no se
 reproducen.
@@ -647,12 +691,15 @@ publicado
 
 ARG-158-REC-002 · Confianza: 🟡 Medio (★★★☆☆), la fija el campo peor sostenido: día solo por
 resumen; ruta solo con mes; ninguna fuente institucional · Fuentes: Institucional 0 · Nacional 0
-· Regional 4 · Abierta 0 · con fecha en la ruta: El Quinto Medio (2026/11) · Hecho: sábado
-21-nov por la noche, solo por resumen; publicación nov-2026, por ruta · Hora: noche (solo por
-resumen) · Consulta: 2026-11-26, última búsqueda __CONSULTA__ · Estatus: Parcialmente
-corroborado · Ventana de origen: ARGOS 156 — fuera de todos los totales
-Deslindes y reservas: Visto de ARGOS 157 sin día. Chietla figura por ARG-148-002 (5-nov): otro
-hecho. Identidades: no se reproducen.
+· Regional 4 · Abierta 0 · con fecha en la ruta: El Quinto Medio (2026/11) · Retodiario
+(2026/11/23) · Hecho: sábado 21-nov por la noche, solo por resumen; publicación nov-2026, por
+ruta · Hora: noche (solo por resumen) · Consulta: 2026-11-26, última búsqueda __CONSULTA__ ·
+Estatus: Pendiente de corroboración · Ventana de origen: ARGOS 156 — fuera de todos los totales
+Deslindes y reservas: Visto de ARGOS 157 sin día. Chietla figura por ARG-148-002 (Banco del
+Bienestar, 5-nov): se separa por el punto (al llegar a su casa) y por la publicación del 22-23
+(Periódico Central, id 532620, contiguo al de Tepexco; Retodiario 2026/11/23), pero coinciden
+municipio, Villa de Atencingo y dos víctimas: SI RESULTARA EL HECHO DEL 5-NOV, SE RETIRA ESTA
+RECUPERACIÓN. Identidades: no se reproducen.
 
 ### MICHOACÁN · CUITZEO — HALLAN DOS HOMBRES MUERTOS Y ROCIADOS CON DIÉSEL EN UNA BRECHA [RECUPERACIÓN]
 
@@ -688,30 +735,23 @@ Total nacional del corte: en la página de panorama.
 
   · Armas cortas: n/d — SIN RESULTADO INDEXADO EN VENTANA
 
-  · Armas largas: n/d — Ajijic y Peribán–Jilotlán, solo por resumen: cantidad no determinada
+  · Armas largas: n/d — ver ARG-158-013 y -016: solo por resumen: cantidad no determinada
 
-  · Sin categoría: n/d — «33 armas» en Peribán–Jilotlán, solo por resumen: cantidad no determinada
+  · Sin categoría: n/d — ver ARG-158-013: solo por resumen: cantidad no determinada
 
-  · Cartuchos: n/d — Ajijic, solo por resumen: cantidad no determinada
+  · Cartuchos: n/d — ver ARG-158-016: solo por resumen: cantidad no determinada
 
-  · Cargadores: n/d — Ajijic, solo por resumen: cantidad no determinada
+  · Cargadores: n/d — ver ARG-158-016: solo por resumen: cantidad no determinada
 
-  · Granadas: n/d — Ajijic y Peribán–Jilotlán, solo por resumen: cantidad no determinada
+  · Granadas: n/d — ver ARG-158-013 y -016: solo por resumen: cantidad no determinada
 
   · AEI: n/d — SIN RESULTADO INDEXADO EN VENTANA
 
   · Explosivos: n/d — SIN RESULTADO INDEXADO EN VENTANA
 
-  · Armamento especial: n/d — fusiles Barrett .50, solo por resumen: cantidad no determinada
+  · Armamento especial: n/d — ver ARG-158-013 y -016: solo por resumen: cantidad no determinada
 
   · Detenidos: n/d — sin aseguramiento integrable
-
-----------------------------------------------------------------------------
-  · Versión 3.0 · Fecha: 2026-11-26 · Hora: 13:44 (CDMX) · Corte: Matutino · ARGOS N.° 158 · USO INSTITUCIONAL
-
-============================================================================
-
-## ARMAMENTO POR EVENTO — DESGLOSE CON TRAZABILIDAD
 
   ARG-ID | Entidad | Municipio | Fecha del hecho | Cortas | Largas | Sin categoría | Especial | Cartuchos | Cargadores | Granadas | AEI | Explosivos | Detenidos | Corporación | Confianza
   SIN ARMAMENTO INTEGRABLE EN LA VENTANA (28 entidades por dominio; 4 NO REVISADA) · ningún aseguramiento de la ventana con día fijado y cantidad publicada por titular o por autoridad
@@ -719,20 +759,19 @@ Total nacional del corte: en la página de panorama.
 Lectura regional: ningún arma integrada en ninguna región. Cálculo propio.
 BOLETÍN FEDERAL: acciones del 20, 21 y 22-nov (agregado): solo republicadores (RED113 2026/11;
 Tallapolítica; Certeza Diario) · acciones del 23-nov: indexado en gob.mx/sspc por título
-(Milenio; Tallapolítica) · acciones del 24-nov: solo republicadores (RED113 2026/11;
-Tallapolítica) · acciones del 25-nov: republicadores (Milenio; Tallapolítica) · contenido SOLO
-POR RESUMEN · corroboración débil por construcción; un agregado no fija el día ni la hora de
-cada acción.
-VISTOS, NO INTEGRADOS: Ajijic (ARG-158-016): dos Barrett, 4 armas largas, 73 cargadores, 1,507
-cartuchos y 10 granadas SOLO POR RESUMEN · Peribán–Jilotlán (ARG-158-013): Barrett, Minimi, «33
-armas» y una granada SOLO POR RESUMEN; El Limoncito, 11 detenidos y 43 armas, y Peribán, 8
-detenidos y 20 armas, SOLO POR RESUMEN: POSIBLE DUPLICIDAD — NO INTEGRAR · Mazatlán
-(ARG-158-015): armas sin número · Felipe Carrillo Puerto, Los Lagartos, QRoo: 7 armas largas y
+(Milenio; Tallapolítica) · acciones del 24-nov: republicadores (Milenio; RED113 2026/11;
+Tallapolítica) · acciones del 25-nov: republicadores (Milenio; Tallapolítica) · acciones del
+26-nov: SIN RESULTADO INDEXADO EN VENTANA al cierre · contenido SOLO POR RESUMEN · corroboración
+débil por construcción; un agregado no fija el día ni la hora de cada acción.
+NO INTEGRADOS: ARG-158-001, -013, -015 y -016: cantidades solo por resumen o sin número (motivo
+en cada ficha) · Rosarito, col. Lucio Blanco: 4 detenidos y 6 armas por titular (El Imparcial
+2026/11/23: «Detienen a cuatro hombres con seis armas en Rosarito; dos son expolicías»);
+aseguramiento de la noche del 22 SOLO POR RESUMEN: ventana de 157, día no fijado: no se integra
+a ningún total hasta fijar el día · Felipe Carrillo Puerto, Los Lagartos, QRoo: 7 armas largas y
 24 cargadores SOLO POR RESUMEN, día no fijado (Línea Directa 2026-11-24, republicador) · Sonora:
 10 armas y 245 cartuchos, boletín del 23 SOLO POR RESUMEN, sin titular · SSP de Veracruz, «En
 operativos del 23 al 24 de noviembre, se detuvo a 20 personas» (veracruz.gob.mx 2026/11/25):
-agregado, armas SOLO POR RESUMEN · Santa Ana (ARG-158-001): 4 armas largas en la escena SOLO POR
-RESUMEN.
+agregado, armas SOLO POR RESUMEN.
 
 ----------------------------------------------------------------------------
   · Versión 3.0 · Fecha: 2026-11-26 · Hora: 13:44 (CDMX) · Corte: Matutino · ARGOS N.° 158 · USO INSTITUCIONAL
@@ -757,7 +796,7 @@ RESUMEN.
   Campeche · Hopelchén | Cinco personas, posesión de armamento; comunicado DPE/5332/2026, SOLO POR RESUMEN | 4 años, SOLO POR RESUMEN | FGR | PENDIENTE DE CONFIRMACIÓN OFICIAL · listado de fgr.org.mx sin fecha en la ruta; 24-nov SOLO POR RESUMEN · boletín no leído · firmeza no informada | Bajo
   Chihuahua | Homicidio; un sentenciado (La Opción 20261125: «Sentenciado a 16 años y 8 meses de prisión por el delito de homicidio») | 16 años y 8 meses, por titular | — | PENDIENTE DE CONFIRMACIÓN OFICIAL · sin boletín de la FGE · sin dos campos individualizadores | Bajo
   Sonora · Hermosillo | Tres personas detenidas con armamento | 10 años, SOLO POR RESUMEN | FGR | PENDIENTE DE CONFIRMACIÓN OFICIAL · sin ruta con fecha; fechas contradichas entre medios | No confirmado
-  Guerrero · Iguala (caso Los Avispones, 2014) | Exalcalde de Iguala; homicidio en grado de tentativa SOLO POR RESUMEN | 60 años, por titular (La Silla Rota 2026/11/19; PorEsto 2026/11/19: «…defensa apela fallo») | Juzgado federal SOLO POR RESUMEN | Publicación del 19: ventana de ARGOS 155 · sin comunicado de la FGR ni del Poder Judicial · apelada: no firme | Bajo
+  Guerrero · Iguala (caso Los Avispones, 2014) | Exalcalde de Iguala; homicidio en grado de tentativa SOLO POR RESUMEN; HEREDADO — NO REVERIFICADO (cuarta edición sin comunicado oficial) | 60 años, por titular (La Silla Rota 2026/11/19; PorEsto 2026/11/19: «…defensa apela fallo») | Juzgado federal SOLO POR RESUMEN | Publicación del 19: ventana de ARGOS 155 · sin comunicado de la FGR ni del Poder Judicial · apelada: no firme | Bajo
   Fuera de ventana: Chihuahua, triple homicidio en Cerro de la Cruz, 30 años (La Opción 20261120) · FGEO 2,993 (19-nov SOLO POR RESUMEN) · FGET 5126 y 5127 (18-nov, listado histórico): publicaciones anteriores a la ventana.
 
 ## INDICADOR DE COBERTURA
@@ -771,7 +810,7 @@ RESUMEN.
   NO REVISADA — sentencias | 4: Son (dominio sin páginas), Sin (dominio solo con normatividad), Mich (fiscalía no consultada), Camp (dominio de la fiscalía no confirmado)
   Páginas no disponibles · errores de acceso | Fuentes con error de acceso: bloqueo de egreso: curl a www.gob.mx/fgr, 26-nov 06:10: código 000 · sin páginas: ucs.campeche.gob.mx, ssp.guanajuato.gob.mx
   Alto impacto y armamento | Alto impacto: consulta propia en 21 entidades; solo consulta amplia en 11 —BC, BCS, Chih, Dgo · Coah, SLP, Zac · Col, Ags · Qro · QRoo— · armamento: 28 de 32 por dominio oficial, todas SIN RESULTADO INDEXADO EN VENTANA · NO REVISADA (4): Son, Sin, Chih · Oax
-  Boletín federal | acciones del 20, 21 y 22-nov (agregado): solo republicadores (RED113 2026/11; Tallapolítica; Certeza Diario) · acciones del 23-nov: indexado en gob.mx/sspc por título (Milenio; Tallapolítica) · acciones del 24-nov: solo republicadores (RED113 2026/11; Tallapolítica) · acciones del 25-nov: republicadores (Milenio; Tallapolítica) · contenido SOLO POR RESUMEN · Defensa: SRIV en gob.mx/defensa (último indexado, 14-nov) · Guardia Nacional: sin páginas de 2026 indexadas · Semar: último indexado, 5-nov
+  Boletín federal | acciones del 20, 21 y 22-nov (agregado): solo republicadores (RED113 2026/11; Tallapolítica; Certeza Diario) · acciones del 23-nov: indexado en gob.mx/sspc por título (Milenio; Tallapolítica) · acciones del 24-nov: republicadores (Milenio; RED113 2026/11; Tallapolítica) · acciones del 25-nov: republicadores (Milenio; Tallapolítica) · acciones del 26-nov: SIN RESULTADO INDEXADO EN VENTANA al cierre · contenido SOLO POR RESUMEN · Defensa: SRIV en gob.mx/defensa (último indexado, 14-nov) · Guardia Nacional: sin páginas de 2026 indexadas · Semar: último indexado, 5-nov
   Techo de confianza del producto | ★★★★☆ (techo de política) · BLOQUEO DE EGRESO REVERIFICADO EL 26-NOV: GOB.MX
 
 ----------------------------------------------------------------------------
@@ -783,38 +822,37 @@ RESUMEN.
 
 ── VALORACIÓN ARGOS — NIVEL DE RIESGO NACIONAL
 
-1. Alto impacto: homicidios múltiples en ataques a domicilios y en la vía pública de cuatro
-entidades, un hallazgo de cinco cuerpos en Sonora, una fosa clandestina en la zona metropolitana
-de Guadalajara y una agresión a militares en la franja Michoacán–Jalisco; 0,09 rojos por hora
-(cálculo propio).
+1. Alto impacto: 7 eventos en 7 entidades —cinco homicidios múltiples, una fosa clandestina y
+una agresión a personal militar—; 0,09 rojos por hora (cálculo propio).
 2. Rojos por región: Occidente 3 · Noroeste 2 · Noreste 1 · Centro 1 · Golfo y Sureste 0
-(cálculo propio); menores y mujeres entre las víctimas de tres de ellos.
-3. Violencia operativa: homicidios dolosos únicos en Sonora, Ciudad de México y Veracruz, y un
-enfrentamiento de la Marina en Ahome sin iniciador determinado.
-4. Respuesta institucional: detenciones en cuatro entidades, un presidente municipal aprehendido
-y un laboratorio inhabilitado; armamento de alto poder asegurado sin cifra citable; ninguna
-sentencia integrable.
+(cálculo propio).
+3. Violencia operativa: 4 eventos —tres homicidios dolosos únicos y un enfrentamiento sin
+iniciador determinado—; ninguna agresión a autoridades en funciones.
+4. Respuesta institucional: 8 acciones —detenciones, una orden de aprehensión contra un servidor
+público y un laboratorio inhabilitado—; ningún arma con cifra citable; ninguna sentencia
+integrable.
 5. TOTALES NO COMPARABLES SIN MÁS CON LOS DE OTRAS EDICIONES: VENTANA DE 77 H 09 MIN, LA MÁS
-LARGA DE LA SERIE (62 H 54 MIN EN ARGOS 156; 23 H 01 MIN EN ARGOS 157), CON LA MAYORÍA DE LOS
-HECHOS FECHADOS EL MIÉRCOLES 25. CÁLCULO PROPIO.
+LARGA DE LAS EDICIONES CON DURACIÓN REGISTRADA (62 H 54 MIN EN ARGOS 156; 23 H 01 MIN EN ARGOS
+157), CON LA MAYORÍA DE LOS HECHOS FECHADOS EL MIÉRCOLES 25. CÁLCULO PROPIO.
 
 ── CONCLUSIONES DE INTELIGENCIA CRIMINAL
 
-1. ATAQUES A DOMICILIOS CON NIÑAS, ADOLESCENTES Y MUJERES ENTRE LAS VÍCTIMAS (ARG-158-003, -006
-y -007): Yuriria, Monterrey y Mazatlán; vínculo no acreditado. Línea: revisar denuncias previas
-de amenazas en San Pablo Casacuarán y en la col. San Bernabé.
+1. ATAQUES ARMADOS CONTRA VIVIENDAS OCUPADAS POR FAMILIAS (ARG-158-003 y -006): Yuriria y
+Monterrey; agresores que entran o disparan contra el domicilio; móvil no informado; vínculo no
+acreditado. Línea: identificar si las viviendas atacadas tenían antecedentes de extorsión o
+cobro de piso.
 2. FUSILES BARRETT EN DOS PUNTOS DE LA FRANJA JALISCO–MICHOACÁN EL MISMO DÍA (ARG-158-013 y
 -016): Peribán–Jilotlán y Ajijic, solo por resumen; vínculo no acreditado. Línea: solicitar a la
 FGR el rastreo de origen de los fusiles calibre .50 asegurados.
-3. CINCO HOMBRES CON CHALECO ANTIBALAS EN UNA CAMIONETA BLINDADA EN EL NORTE DE SONORA
-(ARG-158-001): perfil de grupo armado, solo por resumen; vínculo no acreditado. Línea: vigilar
-la carretera federal 15 en el tramo de Santa Ana.
-4. MAZATLÁN: HOMICIDIO MÚLTIPLE Y DOS DETENCIONES EL MISMO DÍA (ARG-158-007, -014 y -015);
-vínculo no acreditado. Línea: cotejar a los seis detenidos de «Los Chapitos» con los indicios
-del ataque en Los Acantos.
-5. FOSA CLANDESTINA EN EL CERRO DEL CUATRO, LOCALIZADA POR UN COLECTIVO (ARG-158-004): hallazgos
-en días consecutivos. Línea: dar custodia a las jornadas de búsqueda del colectivo en el Cerro
-del Cuatro.
+3. FRACTURA INTERNA DE UNA CÉLULA ARMADA EN EL NORTE DE SONORA (ARG-158-001 y -019): homicidio
+entre integrantes, según la FGJES citada por medios; vínculo con «el Ponchis» no acreditado.
+Línea: dar seguimiento a la recomposición de la célula y a posibles represalias en Santa Ana.
+4. CONCENTRACIÓN DE EVENTOS ARMADOS EN MAZATLÁN EN UN SOLO DÍA (ARG-158-007, -014 y -015);
+vínculo no acreditado. Línea: vigilar el fraccionamiento Los Acantos y las colonias contiguas
+ante represalias.
+5. HALLAZGOS DE COLECTIVOS SIN ACOMPAÑAMIENTO OFICIAL PUBLICADO (ARG-158-004): restos en días
+consecutivos; número de víctimas no determinado. Línea: dar custodia a las jornadas de búsqueda
+del colectivo en el Cerro del Cuatro.
 
 ## INDICADORES OFICIALES
 

@@ -17,12 +17,12 @@
 
 ## 2. Resultado del corte
 
-- **18 hechos propios** (🔴 7 · 🟡 4 · 🟢 7) en 12 entidades (Son, Sin, NL, Mich, Gto, Jal, Nay, Edomex, CDMX, Pue, Ver, Yuc); densidad 0,23 hechos/hora; 0,09 rojos/hora (cálculo propio). Por fecha asignada: lun 23 3 · mar 24 3 · mié 25 11 · jue 26 1.
+- **19 hechos propios** (🔴 7 · 🟡 4 · 🟢 8) en 12 entidades (Son, Sin, NL, Mich, Gto, Jal, Nay, Edomex, CDMX, Pue, Ver, Yuc); densidad 0,25 hechos/hora; 0,09 rojos/hora (cálculo propio). Por fecha asignada: lun 23 4 · mar 24 4 · mié 25 10 · jue 26 1.
 - **3 recuperaciones** rojas, fuera de totales: `ARG-158-REC-001` Ocuiltzapotlán (ventana 156; madrugada del 22 solo por resumen; Proceso 2026/11/22) · `-REC-002` Chietla (ventana 156; sábado 21 solo por resumen; ruta solo con mes) · `-REC-003` Cuitzeo (ventana 157; tarde del 22 solo por resumen; rutas del 22).
-- Muertos por agresión 11 · heridos 8 · cuerpos o restos 6 (Santa Ana 5, causa no informada por autoridad; Cerro del Cuatro, al menos 1). 7 agresores abatidos fuera del total.
+- Muertos por agresión 16 (Santa Ana 5, homicidio por disputa interna según la FGJES citada por medios) · heridos 6 (San Bernabé cuenta 2 de 2 o 4) · cuerpos o restos 1 (Cerro del Cuatro, al menos 1 de 4 o 5 por titular sin día). 7 agresores abatidos fuera del total.
 - Armamento integrado: **ninguno** (ninguna cifra por titular ni por autoridad de un aseguramiento de la ventana). Sentencias integrables: 0.
 - Marcas: 1 `PUBLICADO EL DÍA DE APERTURA SIN HORA` (-012) · 1 frontera (-018) · 5 cláusulas de retiro (-001, -005, -008, -012, -015).
-- Delito y detención en la misma ventana: Peribán–Jilotlán (-002 / -013) y Los Acantos (-007 / -014).
+- Delito y detención en la misma ventana: Santa Ana (-001 / -019), Peribán–Jilotlán (-002 / -013) y Los Acantos (-007 / -014).
 
 ## 3. Fe de erratas a ediciones anteriores
 
@@ -35,7 +35,7 @@
 | Momento | Día suelto | Rango | Título / dominio | Resultado |
 |---|---|---|---|---|
 | Inicio | «acciones relevantes "23 de noviembre"» · «"24 de noviembre"» · «"25 de noviembre"» | «"20, 21 y 22 de noviembre"» | «"Acciones relevantes del Gabinete de Seguridad"» sin dominio · `site:gob.mx/sspc` | 20-22 (agregado): solo republicadores (RED113 2026/11; Tallapolítica; Certeza Diario) · **23: indexado en `gob.mx/sspc`** y en Milenio y Tallapolítica · 24: solo republicadores (RED113 2026/11; Tallapolítica) · 25: Milenio y Tallapolítica · `gob.mx/sspc` indexa 3, 5, 6-8, 9, 17, 18 y 23 |
-| Cierre | __FEDCIERRE__ | | | |
+| Cierre | «"…del 24 de noviembre" OR "del 25 de noviembre"» · «"26 de noviembre"» | — | por título con `gob.mx/sspc` | 24: ahora también Milenio («resultados 24 de noviembre»); contenido por resumen: Sinaloa 6 detenidos y 4 armas (posible -015), La Paz 16 kilos de cocaína, Sonora orden por trata · 25: sin cambio · 26: SRIV; `gob.mx/sspc` publica el 26 la orden de Atzitzintla |
 
 Contenido por resumen (no fija hora; el del 23 puede incluir acciones anteriores a las 08:35): 23 — Rosarito 4 detenidos, 2 largas y 4 cortas; Sonora 1 detenido, 10 armas, 245 cartuchos; Felipe Carrillo Puerto (Los Lagartos) 7 largas y 24 cargadores; Nayarit 9 detenidos y 4 largas; Matamoros (Los Tres Ríos) 15 vehículos · 25 — Ajijic (ficha -016, sin fila); Ixtlán del Río/Jala laboratorio (ficha -017); Jilotlán, El Limoncito, 11 detenidos y 43 armas (posible duplicidad con -013). SSPC 26-nov: orden de aprehensión contra el presidente municipal de Atzitzintla (ficha -018).
 
@@ -54,12 +54,12 @@ Contenido por resumen (no fija hora; el del 23 puede incluir acciones anteriores
 
 ## 6. Fuentes por ficha (lista íntegra)
 
-- **ARG-158-001 Santa Ana**: La Jornada (2026/11/23) · El Heraldo de México (2026/11/23) · El Diario de Chihuahua (2026/nov/23) · Aristegui (/2311/) · Radio Sonora · La Opinión (2026/11/24) · El Universal.
+- **ARG-158-001 / -019 Santa Ana**: La Jornada (2026/11/23) · El Heraldo de México (2026/11/23) · El Diario de Chihuahua (2026/nov/23) · El Imparcial (2026/11/23 y 2026/11/24, captura) · Proyecto Puente (2026/11/24, FGJE) · Tribuna (2026/11/24, FGJES) · El Vigía (2026/11/25) · Soy Cobre · Aristegui (/2311/) · Radio Sonora · La Opinión (2026/11/24) · Latinus · Cúspide · UnoTV y El Universal («el Ponchis», en investigación).
 - **ARG-158-002 / -013 Peribán–Jilotlán**: ABC Noticias (2026/11/25) · Tribuna (2026/11/25) · Infobae (2026/11/26) · EFE vía Infobae (2026/11/26) · El Independiente (2026/11/26) · Crónica (2026/11/26) · Excélsior · El Informador (20261126) · La Voz de Michoacán · Yahoo · López-Dóriga · El Heraldo de México (2026/11/25, primer parte) · LJA · Angulo7 · Changoonga (2026/11/26, Peribán) · Quadratín (Peribán).
 - **ARG-158-003 Yuriria**: La Silla Rota (2026/11/24) · AM (2026/11/24) · N+ · Milenio · La Prensa de Coahuila (2026/11/24, agregado).
-- **ARG-158-004 Cerro del Cuatro**: El Informador (20261124 y 20261125) · Milenio · UnoTV (no se usa).
-- **ARG-158-005 Ixtapaluca**: El Independiente (2026/11/25) · Info7 · N+.
-- **ARG-158-006 Monterrey**: MVS (2026/11/25) · El Universal · Milenio · Meganoticias · Excélsior · Telediario · N+ · Horacero · Quinta Fuerza · La Tarde · ENfoque.
+- **ARG-158-004 Cerro del Cuatro**: El Informador (20261124 y 20261125) · Milenio · N+ («…5 Cadáveres») · Zócalo · Notisistema («cuarto cuerpo») · NNC · guardianocturna (2026/11, «dos cuerpos», 21-nov por resumen) · UnoTV (no se usa).
+- **ARG-158-005 Ixtapaluca**: Cúspide (2026/11/23) · Seuno Noticias (2026/11/23) · El Independiente (2026/11/25) · Info7 · N+ (incluida la cobertura «Edomex Hoy 23 de noviembre», liveblog: no se usa).
+- **ARG-158-006 Monterrey**: MVS (2026/11/25) · ENfoque (2026/11/25, dos heridos) · El Universal (al menos cuatro heridos) · Horacero (cuatro heridos) · Milenio · Meganoticias · Excélsior · Telediario · N+ · Quinta Fuerza · La Tarde.
 - **ARG-158-007 / -014 Los Acantos**: Ríodoce (2026/11/25) · Luz Noticias (2026-11-25) · Quadratín · Sinaloahoy · El Sol de Mazatlán · Meganoticias.
 - **ARG-158-008 Ahome**: Infobae/EFE (2026/11/24) · La Patilla (2026/11/24, republica).
 - **ARG-158-009 Hueyapan de Ocampo**: MVS (2026/11/25) · Infobae (2026/11/26) · AVC Noticias · e-veracruz.
@@ -70,17 +70,19 @@ Contenido por resumen (no fija hora; el del 23 puede incluir acciones anteriores
 - **ARG-158-016 Ajijic**: Milenio («resultados 25 de noviembre») · Tallapolítica · Hoy Tamaulipas (agregado) · Línea Directa (2026-11-26, agregado).
 - **ARG-158-017 Ixtlán del Río**: Milenio · Excélsior · Línea Directa (2026-11-26).
 - **ARG-158-018 Atzitzintla**: El Heraldo de México (2026/11/26) · Intolerancia (2026/11/26) · 24 Horas · Carlos Martín Huerta · Vadenuez · Diario de México · SSPC (portada, 26-nov, por resumen).
-- **ARG-158-REC-001 Ocuiltzapotlán**: Proceso (2026/11/22).
-- **ARG-158-REC-002 Chietla**: El Quinto Medio (2026/11) · Periódico Central (id 532620) · Urbano Puebla · Curul · Diario Cambio (vínculo con ARG-148-002).
+- **ARG-158-REC-001 Ocuiltzapotlán**: Proceso (2026/11/22) · Tabasco HOY · TV Azteca · Diario Presente / El Sol del Sureste · guardianocturna (2026/11).
+- **ARG-158-REC-002 Chietla**: El Quinto Medio (2026/11) · Retodiario (2026/11/23) · Periódico Central (id 532620) · Urbano Puebla · Curul · Diario Cambio (vínculo con ARG-148-002).
 - **ARG-158-REC-003 Cuitzeo**: RED Michoacán (2026/11/22) · Changoonga (2026/11/22) · RED113 (2026/11) · Mi Morelia · La Voz de Michoacán · Quadratín.
 
 ## 7. Procedencia: decisiones de clasificación
 
 - **Peribán–Jilotlán (-002)**: la Defensa, citada por medios, dice que el personal fue agredido «durante reconocimientos sobre una brecha»; «Ejército repele agresión» por titular → el grupo inicia contra personal en patrullaje → 🔴 (mismo criterio que El Platanito en 157). «Operativo contra “el Maniaco”» por titular deja la reserva escrita. Los 7 abatidos no se suman.
-- **Santa Ana (-001)**: «cinco hombres muertos», «asesinados» y «ejecutados» por titular, sin causa informada por autoridad → 🔴 y se cuentan como cuerpos hallados. Hora ~10:01 del 23 solo por resumen → cláusula de retiro.
+- **Santa Ana (-001 / -019)**: borrador con 5 cuerpos sin causa; R1 de procedencia halló titulares del 24 que atribuyen a la FGJES un homicidio por disputa interna y la captura del responsable → 5 muertos por agresión, 🔴, y ficha 🟢 aparte. Institucional 0 (FGJES solo citada por medios). Hora ~10:01 del 23 solo por resumen → cláusula de retiro.
 - **Tepito (-010), Hermosillo (-011)**: un muerto y un herido → 🟡 (criterio de 157 en Culiacán, -004). «Por accidente» en Tepito solo por resumen.
 - **Hueyapan (-009)**: exintegrante de la Guardia Nacional, no en funciones → 🟡.
-- **Ixtapaluca (-005)**: publicación 25 por ruta; otra nota del 23 solo por resumen → cláusula de retiro.
+- **Ixtapaluca (-005)**: R1 halló rutas del 23 (Cúspide; Seuno) con cuerpos abandonados de madrugada (solo por resumen) → hecho del 23 con hora anterior a las 08:35 por resumen: ficha propia con cláusula de retiro y `POSIBLE VENTANA DE ARGOS 157` (orden: -REC- solo con hora por titular).
+- **Monterrey (-006)**: heridos 4 (El Universal; Horacero) frente a 2 (ENfoque 2026/11/25) por titular → se cuentan 2.
+- **Cerro del Cuatro (-004)**: 5 cuerpos por titular sin día; 4 por otro titular; primer hallazgo el 21 por resumen → se cuenta 1; marca de posible ventana anterior para parte de los hallazgos.
 - **Mazatlán, seis detenidos (-015)**: día de la captura no fijado → cláusula de retiro.
 - **Ajijic (-016)**: cifras solo en el cuerpo del boletín republicado (Milenio; Tallapolítica = una fuente) → ficha 🟢 sin fila de armamento.
 - **Rosarito**: 4 detenidos y 6 armas por titular (El Imparcial 2026/11/23), aseguramiento de la noche del 22 solo por resumen → visto de la ventana de 157, no se integra.
