@@ -8,7 +8,7 @@ Convención: cada entrada indica desde qué edición está abierta, qué hay que
 Cuando algo se resuelve, se mueve a "Cerrados recientemente" con una línea, y se borra de ahí en la
 segunda edición siguiente.
 
-**Última actualización**: ARGOS 158 (corte 2026-11-26; ventana 23-nov 08:35 → 26-nov 13:44, 77 h 09 min).
+**Última actualización**: ARGOS 159 (corte 2026-11-27; ventana 26-nov 13:44 → 27-nov 08:03, 18 h 19 min).
 
 ---
 
@@ -48,6 +48,8 @@ sin él, la edición siguiente arranca a ciegas — que es exactamente lo que le
 **ARGOS 157 publicado el 23-nov** (ventana 22-nov 09:34 → 23-nov 08:35, 23 h 01 min; rama `claude/argos-157-criminal-intelligence-qpwf2b`, encima de `claude/argos-156-criminal-intelligence-kx9pts`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-158.md`** (y `_ordenes-ARGOS-158.txt`).
 
 **ARGOS 158 publicado el 26-nov** (ventana 23-nov 08:35 → 26-nov 13:44, 77 h 09 min; «Procede» 7 h 34 después del Bloque 0, cierre a la hora del «Procede» aprobado por el Comisario; rama `claude/argos-158-criminal-intelligence-0wpevh`, encima de `claude/argos-158-criminal-intelligence-2goit7` y de `claude/argos-157-criminal-intelligence-qpwf2b`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-159.md`** (y `_ordenes-ARGOS-159.txt`).
+
+**ARGOS 159 publicado el 27-nov** (ventana 26-nov 13:44 → 27-nov 08:03, 18 h 19 min; «Procede» a las 08:04; rama `claude/argos-159-criminal-intelligence-44b282`, encima de `claude/argos-158-criminal-intelligence-0wpevh`). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-160.md`** (y `_ordenes-ARGOS-160.txt`).
 
 **ARGOS 148 publicado el 6-nov** (ventana 5-nov 09:42 → 6-nov 07:30, 21 h 48 min; rama `claude/argos-148`, encima de 147). La orden vigente para la edición siguiente es **`reports/_arranque-ARGOS-149.md`** (y `_ordenes-ARGOS-149.txt`).
 
@@ -3217,3 +3219,42 @@ Los ARG-ID citados abajo como `ARG-139-…` **no existen**: el nuevo 139 asigna 
 6. **Presupuesto**: control 2 + coordinador 16 + ola 151 + `procedencia-cifras` R1 22 + R2 6 = **197** (de 200).
 7. **Rama**: 158 vive en `claude/argos-158-criminal-intelligence-0wpevh`.
 
+
+## ARGOS 159 — lo que cierra esta edición
+
+- Yonke de Chihuahua (rojo sin ruta de 158): fechado (El Diario de Chihuahua 2026/nov/25) y **recuperado como `ARG-159-REC-001`** 🔴; 4 muertos (el herido murió el 25).
+- Navolato, agresión a policías estatales (25-nov, El Financiero y Línea Directa): **`ARG-159-REC-002`** 🔴 de 158.
+- Ahome `ARG-158-008`: segunda fuente con ruta del 23 (`ARG-159-FE-001`); deja de ser fuente única; cláusula de hora sigue.
+- Chietla `ARG-158-REC-002` ≠ `ARG-148-002` (`ARG-159-FE-002`).
+- San Fernando (Marina, 1 muerto, 10-11 detenidos) = marzo de 2025; Reynosa Valle Soleado (2 policías) = 5-may-2026: descartados.
+- Hermosillo, vocalista de Doble Blindaje: noche del 25 (ventana 158), 🟡: cerrado como visto.
+- Iguala, Los Avispones: **retirado de candidatos** (quinta edición sin comunicado; apelado). Solo vive aquí: cerrar si aparece boletín FGR o del PJF.
+- Ometepec `ARG-155-010`: vinculado a proceso (La Razón 2026/11/23): seguimiento procesal cerrado.
+- Cancún `ARG-155-012`: los 6 = total del operativo del 18; 2 por el homicidio: cerrado.
+- Cobertura saldada: sentencias Sin, Mich (REVISADA) · armamento Chih, Oax (REVISADA) · alto impacto con consulta propia Chih, Col, Ags, Qro, QRoo.
+
+## Abiertos que ARGOS 160 hereda
+
+| Pendiente | Qué buscar |
+|---|---|
+| **Cláusulas de retiro de 159 (5)** | `-001` Mazatlán cerrajería: hora (~19:15 solo resumen) · `-002` Zinapécuaro: día y hora (noche del 26 solo resumen; rutas del 27) · `-003` Tamazula: día de la captura (25 Telediario / 26 mayoría, resumen) · `-004` Cerritos: hora (~14:00-14:30 resumen, a minutos de la apertura) · `-005` Prados del Sol: hora |
+| **Reservas de 159** | `-002`: heridos 2 o 3 (se cuentan 2); declaración de la FGE de Michoacán · `-003`: cifras de armamento (4 largas por un titular de La Nigua; 8 cargadores, 260 cartuchos, 6 chalecos solo resumen); comunicado SSPC «Marina y SSPC detienen a cuatro personas…» (listado gob.mx/sspc del 26) · `-001`: cruce (Agustín Melgar y Revolución o Constitución) · `-REC-002`: ¿patrullaje/reconocimiento? |
+| **Marcas de 159** | Apertura sin hora: `-001`, `-003`, `-004`, `-005` · Frontera: `-002` |
+| **Cláusulas heredadas** | 158: `-001` Santa Ana, `-005` Ixtapaluca, `-008` Ahome (hora), `-012` Progreso, `-015` Mazatlán · 157: `-001`, `-002`, `-003/-009`, `-008`, `-010` · 156: `-003`, `-004`, `-012`, `-016` · 155: `-006`, `-009` · 154: `-005`, `-008` · 153: `-002`, `-003` · 152: `-002` a `-005` |
+| **Reservas heredadas de 158** | `-002/-013` Peribán–Jilotlán: entidad; tres cifras + «3 detenidos y 10 armas» (Gabinete Mich, resumen) + 8 det/20 armas por titular (26-nov): posible duplicidad · `-004` Cerro del Cuatro: lote óseo del 26 sin hora; 4 o 5 · `-006` heridos (FGJNL «solo dos» por resumen) · `-014/-015` · `-016` Ajijic · `-018` Atzitzintla: día (25 por resumen, Milenio); audiencia |
+| **Vistos con posible ascenso** | Mazatlán, Chulavista (cuerpo junto a camioneta, noche del 26, ruta sin día; Los Noticieristas 2026/11; Noroeste) · Poza Rica, taxista (XEU sin fecha; «noche de este jueves 26» en texto) · Atotonilco de Tula (noche del 25, La Silla Rota 2026/11/26; 🟡 de 158) · Ciudad Aldama, comandante herido · Reynosa Anzaldúas y Viesca–Salitrillo (lunes 23 solo resumen: 🔴 de 158 si una ruta lo fija) · Chilpancingo–Chichihualco (Azteca «hoy lunes 23»: liveblog) · Nacajuca, Macuspana, Ulumal · Querétaro, nueve cateos (operación del 23) · Sinaloahoy «cuatro cuerpos en invasión de Mazatlán» (sin fecha) · Informaoriente «Tres camionetas baleadas y un muerto en el entronque de Ucareo» (¿= -002?) |
+| **Boletín federal** | 23: indexado · 24 y 25: republicadores · 26: SRIV al cierre (listado SSPC del 26 con Tamazula y Atzitzintla) · 27: SRIV; triple consulta del 26, 27 y días de la ventana de 160 |
+| **Sentencias candidatas** | **FGR 846/26** (26-nov, «más de 177 años», delincuencia organizada y secuestro; Puente Grande; penas por persona contradichas: comunicado en fgr.org.mx con URL propia) · **Jiquipilco, Edomex** (181 años y 3 meses c/u; boletín FGJEM; sintesis.yoporlajusticia.gob.mx 2026/11/27) · **Tamaulipas FGJE-476-2026** («125» años, Reynosa, por resumen; URL propia) · **Campeche 39 años** (PorEsto 2026/11/26; sin boletín) · Chihuahua 16 a 8 m (**2.ª edición**; posible homónimo: si llega a 160 sin boletín identificable, retirar) · FGR Hermosillo (no reverificado) |
+| **Seguimientos** | El Platanito / Guasave (no revisado en 159) · Texhuacán: orden por homicidio · Tepexco: bloqueo de la 160 · Atzitzintla: vinculación · Juchitán: vinculación (9 capturas, FGEO 3004) · Carrillo · Cajeme, Tecate, Zapopan, Stanza Torralba, Lachigalla, Lomas de Angelópolis |
+| **Cobertura con prioridad sobre el ciclo en 160** | **Sentencias `NO REVISADA` (8)**: BC, BCS, Son · NL (sin páginas del dominio) · CDMX, Pue · Camp (sin dominio, sexta edición) · Yuc. **Armamento `NO REVISADA` (12)**: BC, BCS, Son, Sin, Dgo · Jal, Col, Nay, Ags, Gto · Pue · Gro. **Alto impacto solo amplia (16)**: BC, BCS, Dgo · Coah, SLP, Zac (tercera edición) · Gto, Nay · CDMX, Edomex, Mor, Pue, Tlax, Hgo · Chis, Yuc. Después, **CICLO C** (Occidente + Sureste: 160 = C) |
+
+## Deuda de método (ARGOS 159)
+
+1. **Homicidios urbanos del mismo municipio que la ola no vio**: tres en Mazatlán el 26 (Cerritos, Prados del Sol, Chulavista) aparecieron solo en R1 por IDs contiguos de Luz Noticias. Encargar al equipo de cada rojo urbano una búsqueda «municipio + fecha en la ruta» del medio local.
+2. **Herido que muere el mismo día**: el yonke se fichó como «4 muertos + 1 herido» (5 víctimas) hasta R1. Exigir el titular del deceso antes de sumar heridos.
+3. **Titulares citados por equipos que no existen literalmente**: La Nigua (titular de gob.mx/sspc atribuido a un medio), El Siglo de Durango y El Porvenir (no reproducidos en R2). Pedir URL completa con cada titular citado.
+4. **Fe de erratas sobre vistos que el cartelón anterior no publicó** (San Fernando, Valle Soleado): solo al archivo de fuentes.
+5. **Ventana corta**: 18 h 19 min; 0 hechos con fecha del 27 (buscador sin indexar la madrugada). Las 24 búsquedas reservadas de fecha en la ruta no trajeron hechos nuevos.
+6. **Equipos sin armamento por dominio**: Occidente dejó Jal, Col, Nay, Ags, Gto; Noroeste BC, BCS, Son, Sin, Dgo.
+7. **Presupuesto**: control 2 + coordinador 18 + ola 150 + `procedencia-cifras` R1 24 + R2 6 = **200**.
+8. **Rama**: 159 vive en `claude/argos-159-criminal-intelligence-44b282`.

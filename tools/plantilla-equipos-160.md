@@ -1,0 +1,183 @@
+# ARGOS 160 — Instrucciones comunes a los seis equipos (léelas íntegras antes de la primera búsqueda)
+
+Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
+
+## Ventana
+- ABRE: **viernes 27-nov-2026 08:03 CDMX** (donde cerró ARGOS 159). CIERRA: **hora real de arranque de la sesión de ARGOS 160** (o del «Procede») (el coordinador la escribe aquí al copiar la plantilla: ____).
+- Calendario: el coordinador lo escribe día por día; si la ventana toca dos o más fechas, **una fecha en la ruta por día** en las 4 búsquedas reservadas. Comprueba siempre el día de la semana que dice la fuente contra el calendario.
+- **ARGOS 159 (ventana 26-nov 13:44 → 27-nov 08:03) publicó 5 hechos** (`ARG-159-001` a `-005`: Mazatlán cerrajería col. Benito Juárez; Zinapécuaro ataque contra vehículos cerca de Ucareo; Tamazula «El Chapo Félix»; Mazatlán Cerritos; Mazatlán Prados del Sol) y **dos `-REC-`** (yonke de Chihuahua; Navolato). Un hecho del 27-nov antes de las 08:03 que 159 NO publicó es de la ventana de 159: `-REC-` **solo si es 🔴 y la hora la fija un titular**; con hora solo por resumen, ficha propia con cláusula de retiro.
+- Todo hecho del 27 necesita HORA frente a las 08:03. Nunca infieras la hora. «Esta mañana» en un resumen NO fecha un hecho.
+- Criterio de inclusión: entra con marca el hecho con **ruta fechada o titular con día**. ⚠️ **«Rojo sin ruta» = sin DÍA por ruta o titular**.
+
+## Red y herramientas
+- Egreso bloqueado (curl gob.mx → 000). **NO uses WebFetch.** Solo WebSearch.
+- **TODA búsqueda con mode:"extended".** Nunca "standard".
+- **Tu tope es DURO** (Centro gastó 26 de 25 en 150); declara al final `Búsquedas utilizadas: n de N`. Si te sobran, invierte en hechos 🔴 del día de cierre.
+- Pon la cifra de peso ENTRE COMILLAS en la consulta cuando busques una cifra concreta ("tres muertos", "21 años").
+
+## Barrido obligatorio por equipo (además de los encargos)
+1. Búsqueda por día de la semana: «este miércoles» / «este jueves» / «este viernes» / «madrugada de este …» + entidades, según el calendario de la ventana.
+2. Fecha en la ruta, UNA POR DÍA de la ventana («2026/11/04», «2026/11/05»… una por fecha de la ventana; si sobran, la del día con más hechos): **4 BÚSQUEDAS RESERVADAS** para esto, que no se gastan en otra cosa; hazlas AL FINAL.
+3. «funcionario / director / servidor público / policía asesinado» en tu región.
+4. «fosa / colectivo / restos / cuerpos» en tu región, **UNA CONSULTA POR ENTIDAD FRONTERIZA** (BC, Son, Chih, Tamps) — en 135 la consulta regional no trajo Cachanillas ni Nogales.
+5b. ⚠️ **`site:` CON UN SOLO DOMINIO POR CONSULTA. NUNCA `OR` ENTRE DOMINIOS**: el buscador ignora el operador y la consulta se pierde (pasó en dos equipos de 140).
+5. Armamento: `site:` al dominio oficial de SSP/fiscalía de cada entidad que te toque por prioridad.
+6. Sentencias: `site:` al dominio de la fiscalía de cada entidad que te toque por prioridad, con «sentencia condenatoria» / «condena».
+
+## Criterio de cobertura (casillas)
+- `REVISADA` (armamento o sentencias) = una búsqueda dirigida devolvió páginas del **dominio oficial de esa institución**. Un hecho hallado por medios NO cubre el dominio. `boletines.guanajuato.gob.mx` es del gobierno estatal, no de la fiscalía.
+- Casillas: `SIN RESULTADO INDEXADO EN VENTANA` (SRIV, lo normal) · `SIN ACTUALIZACIÓN CONSTATADA` (no usar: no hay lectura directa) · `NO REVISADA` (no consultada). Alto impacto: declara qué entidades tuvieron consulta propia y cuáles solo consulta regional amplia.
+
+## Procedencia (reglas duras)
+- La fecha la fija la **URL o el titular**, nunca el resumen del buscador. Marca cada dato como «por fragmento/titular» o «SOLO POR RESUMEN».
+- *Liveblog* (`en-vivo`, `minuto-a-minuto`, `hoy-DD-de-MES`, agregados): nunca fecha un hecho ni es fuente única.
+- Fecha del hecho, de publicación y de consulta: campos distintos.
+- Criterio institucional: cuenta como fuente institucional solo una **declaración o comunicado citado de una autoridad nombrada** («la SSP informó», «la Fiscalía identificó»). «La Fiscalía investiga» NO cuenta.
+- Sentencias: solo con término expreso de condena; sin boletín oficial = `PENDIENTE DE CONFIRMACIÓN OFICIAL`. Para identificar un caso: dos campos individualizadores coincidentes.
+- Armamento: solo cantidades expresas; cortas/largas/cartuchos/cargadores por separado; «diverso armamento» = cualitativo.
+
+## ANTES DE PROPONER UN HECHO COMO NUEVO (obligatorio, también para cada -REC-)
+NO TIENES BASH. Usa la herramienta **Grep** (output_mode "files_with_matches", -i true, path /home/user/Prueba-/reports) con el topónimo como patrón y limita a estos archivos, y **PEGA LA SALIDA** en el hecho. Equivalente de referencia:
+```
+grep -il '<topónimo>' reports/argos-2026-10-27.html reports/argos-2026-10-28.html reports/argos-2026-10-29.html reports/argos-2026-10-31.html reports/argos-2026-11-04.html reports/indice-arg-id.md reports/argos-2026-11-04-fuentes.md reports/argos-2026-11-04-equipos.md
+```
+Si sale algún archivo, abre la línea (`grep -n`) y declara si es el mismo hecho («es ARG-13X-0YY») o no. Sin la salida pegada, el hecho no se ficha.
+Busca la **primera publicación** del hecho (la URL con fecha más temprana).
+
+## Semáforo (propón color con rótulo breve)
+- 🔴 homicidio múltiple, víctima autoridad/servidor público/periodista/persona defensora, ataque iniciado por el grupo contra fuerzas en patrullaje, fosa/restos, explosivos/drones, narcobloqueo, quema de vehículos.
+- 🟡 homicidio doloso único sin agravantes, enfrentamiento derivado de operativo, agresión sin muertos, quién inició no determinado.
+- 🟢 detenciones, aseguramientos, cateos, rescates. Delito y detención en la misma ventana = DOS hechos.
+- Muertos del lado criminal no mueven el color.
+
+## Formato del informe (además del formato de tu definición de agente)
+Para cada HECHO DEL CORTE: entidad · municipio/colonia · día y hora (fuente de cada uno) · víctimas (muertos/heridos, sexo) · corporación · detenidos · armamento · color propuesto con rótulo · fuentes con URL completa, separando institucional / nacional / regional / abierta, y marcando cuáles llevan fecha en la ruta · primera publicación · cotejo grep · reservas.
+Secciones obligatorias: ENCARGOS (respuesta a cada uno, aunque sea «sin novedad»), HECHOS DEL CORTE, CANDIDATOS -REC-, ARMAMENTO, SENTENCIAS, DESCARTADOS POR VENTANA, CORRECCIONES A EDICIONES ANTERIORES, INDICADOR DE COBERTURA por entidad (alto impacto / armamento / sentencias).
+Entrega el informe ÍNTEGRO en tu mensaje final: el coordinador lo pasará tal cual a los controles editoriales.
+
+## Novedades de 144 (lecciones de 143)
+- **Tope por equipo: 25 búsquedas, de ellas 4 reservadas a la fecha en la ruta por día.** Las pistas del recall vienen en tu encargo: verifícalas primero.
+- ⚠️ **NUEVO (143): «AYER» EN UNA NOTA DEL DÍA DE APERTURA.** Si el único dato del día (por resumen) sitúa el hecho en la ventana anterior, propónlo como `-REC-` (si es 🔴) o visto, no como hecho del corte.
+- ⚠️ **NUEVO (143): DECLARACIÓN NOMBRADA POR TITULAR.** En todo hecho con fuerzas federales o estatales, una búsqueda por «secretario / Harfuch / Fiscalía informa» + topónimo: en Celaya había cuatro titulares con la declaración del secretario.
+- ⚠️ **NUEVO (143): ANTES DE «FUENTE ÚNICA», UNA BÚSQUEDA POR EL TOPÓNIMO EXACTO.** Tres falsas fuentes únicas en 143.
+- ⚠️ **NUEVO (143): SEÑUELOS DE «ESTE MARTES / MIÉRCOLES».** Fija la fecha de toda pista roja con ruta antes de proponerla.
+- Siguen vigentes: rojo sin ruta fechada → una búsqueda antes de entregarlo · hora por titular ≠ hora por resumen · hora frente al cierre · agregado federal no fija día · sinónimos de municipio y colonia · REPUBLICACIONES = UNA FUENTE · ECO DE CONSULTA · RECUENTOS DE MEDIOS nunca se integran · cuerpos sin causa informada por autoridad, aparte · seguimientos procesales a «SEGUIMIENTOS» · `site:` con UN SOLO DOMINIO.
+- Secciones obligatorias: **ENCARGOS, HECHOS DEL CORTE, CANDIDATOS -REC-, SEGUIMIENTOS, ARMAMENTO, SENTENCIAS, AJENOS, DESCARTADOS POR VENTANA, CORRECCIONES, INDICADOR DE COBERTURA**; URL completa de TODO resultado que respalde un dato.
+- **Dominios confirmados (140-144; en 144 se halló además `spsc.campeche.gob.mx`, SSP de Campeche)**: `comunicacion.fiscaliaveracruz.gob.mx`, `portal.fgeo.gob.mx`, `fiscaliageneralqro.gob.mx`, `seguridad.slp.gob.mx`, `fgebc.gob.mx`, `fiscalia.chihuahua.gob.mx`, `fiscalia.durango.gob.mx`, `fgjcdmx.gob.mx`, `fiscalia.puebla.gob.mx`, `ssp.michoacan.gob.mx`, `fiscaliaguerrero.gob.mx`, `ssp.chiapas.gob.mx`, `fge.yucatan.gob.mx`, `fgjtam.gob.mx`, `fiscaliazacatecas.gob.mx`, `fiscaliasinaloa.mx`, `fiscaliatabasco.gob.mx`, `tabasco.gob.mx` (SSP), `portal.fgeguanajuato.gob.mx`, `fiscalia-aguascalientes.gob.mx`, `fgeqroo.gob.mx`, `fiscalianl.gob.mx`, `fiscaliaslp.gob.mx`, `fiscaliamorelos.gob.mx`, `fgjem.edomex.gob.mx`, `fiscalia.jalisco.gob.mx`, `fge.chiapas.gob.mx`, `fgecolima.mx`, `comunicacion.fiscaliamichoacan.gob.mx`, `pgjebcs.gob.mx`, `www.veracruz.gob.mx/seguridad/`, `ssp.yucatan.gob.mx`, `ssc.qroo.gob.mx`; **nuevos en 143**: `fgjtlaxcala.gob.mx` (Tlax), `procuraduria.hidalgo.gob.mx` (Hgo, PGJEH), `fgenay.gob.mx` (Nay), `fiscalia.sonora.gob.mx` (Son); FGR en `fgr.org.mx` (listados; último indexado en 143: 753/26 del 26-oct). **Sin páginas en 143**: `fiscaliageneral.coahuila.gob.mx`, `fiscalia.coahuila.gob.mx` (prueba `fge.coahuila.gob.mx` o la SSP), `fgecampeche.gob.mx`, `fiscaliacampeche.gob.mx` (busca el dominio real sin `site:`), `ssp.oaxaca.gob.mx`, `pgjhidalgo.gob.mx`.
+- Ciclo de 146: **A** (Noroeste + Centro encabezan el triaje judicial DESPUÉS de la prioridad sobre el ciclo).
+- **Prioridad sobre el ciclo** (cobertura de 144): **sentencias `NO REVISADA` (14)**: Chih, Sin · Nay, Ags, Gto · CDMX, Edomex, Mor, Tlax · Chis, Oax, Gro, Yuc, QRoo; **sin dominio**: Son, Coah (sin páginas), Camp (no confirmado; SSP en `spsc.campeche.gob.mx`). **Armamento `NO REVISADA` (13)**: BCS, Chih, Sin, Dgo · NL, Zac · Jal, Nay, Ags · CDMX, Pue, Tlax · Camp; sin páginas: Son, Coah, Oax. **Alto impacto con CONSULTA PROPIA obligatoria (10, solo amplia en 144)**: BCS · NL, Zac, Coah · Hgo, Qro (**dos ediciones seguidas**) · Oax, Camp, Yuc, QRoo.
+- **Boletín federal**: triple consulta para el 28-oct y el 29 (sin indexar al cierre de 144) y cada día de la ventana (la hace el coordinador, y la repite al final de la ola).
+- ⚠️ **NUEVO (144)**: rotula la CIFRA DE ARMAS «por titular» o «SOLO POR RESUMEN» (tres eventos de 144 tenían la cifra solo en el resumen) · el titular que propones para una ficha solo lleva datos por titular, *slug* o ruta · en todo hecho rojo, una búsqueda por «instalaciones / base / sede» y por «bloqueos» en tu región.
+
+## Novedades de 146 (lecciones de 145)
+- ⚠️ **DETENIDOS EN ASEGURAMIENTO: SOLO CIFRA DE AUTORIDAD** (comunicado o declaración nombrada). Un titular de medio no basta.
+- ⚠️ **ROJOS SIN RUTA FECHADA: sección propia**, con la búsqueda que intentaste; el coordinador no los ficha sin ruta.
+- ⚠️ **Equipo que encabeza el triaje judicial: al menos UNA consulta de armamento por entidad prioritaria** (el Sureste dejó seis entidades sin armamento en 145).
+- ⚠️ **¿Hecho nuevo o desarrollo?** Antes de proponer víctimas, detenidos o daños de un hecho ya publicado (p. ej. Matamoros, ARG-144-008), declara si es desarrollo de ese ARG-ID.
+- **Prioridad sobre el ciclo** (cobertura de 145): sentencias `NO REVISADA`: BC, SLP, Hgo, Qro; sin páginas: Coah; no confirmado: Camp · **armamento `NO REVISADA` (22)**, primero las 8 con dos ediciones: Chih, Sin, NL, Jal, Nay, Ags, Tlax, Camp; luego BC, Son · SLP · Col, Gto · Edomex, Mor, Hgo, Qro · Chis, Oax, Gro, Yuc, QRoo · **alto impacto con consulta propia (10)**: Dgo · SLP · Jal, Col, Nay, Ags, Mich · Chis, Gro; Son.
+- **Dominios nuevos o confirmados en 145**: `fiscalia.sonora.gob.mx` (Son, devuelve páginas), `ssc.cdmx.gob.mx` (CDMX), `riodoce.mx` (medio de Sinaloa con ruta fechada). **Sin páginas**: `fge.coahuila.gob.mx`, `tabasco.gob.mx` (SSP). `gabinetedeseguridad.gob.mx` no indexa los boletines diarios recientes.
+
+## Novedades de 149 (lecciones de 148)
+- **ARGOS 148 (ventana 5-nov 09:42 → 6-nov 07:30) publicó 9 hechos** (`ARG-148-001` a `-009`: Pachuca policía y 4 detenidos, Atencingo Banco del Bienestar, Navolato Las Trancas, Naucalpan «El General», Culiacán CNOP, Morelia cateos, Queréndaro–Cotija–Tacámbaro, Marina cocaína en el Pacífico). Un hecho del 6-nov antes de las 07:30 que 148 no publicó es de la ventana de 148: `-REC-` solo si es 🔴.
+- **Hora del día de apertura**: busca la hora antes de proponer; si apunta a antes del corte, va a la ventana anterior.
+- **Cifras**: exige titular; las de republicaciones suelen ser resumen. Aseguramiento con cifras idénticas a otro de días antes: POSIBLE DUPLICIDAD.
+- **Grep de cotejo**: `reports/argos-2026-10-31.html reports/argos-2026-11-04.html reports/argos-2026-11-05.html reports/argos-2026-11-06.html reports/indice-arg-id.md reports/argos-2026-11-06-fuentes.md reports/argos-2026-11-06-equipos.md`.
+- **Prioridad sobre el ciclo**: ver «Abiertos que ARGOS 149 hereda». **Ciclo A** (Noroeste + Centro encabezan el triaje judicial).
+
+## Novedades de 150 (lecciones de 149)
+- **Anuncio federal del día de apertura**: búscalo en el boletín del día anterior antes de proponerlo (Tlachichuca era del 5-nov).
+- **Operativo con enfrentamiento**: propón DOS hechos (enfrentamiento y detención) si ambos caen en la ventana (Zapopan).
+- **«Policía muerto»**: verifica la causa (Cuerámaro: arma de cargo).
+- **Grep de cotejo**: `reports/argos-2026-11-04.html reports/argos-2026-11-05.html reports/argos-2026-11-06.html reports/argos-2026-11-09.html reports/indice-arg-id.md reports/argos-2026-11-09-fuentes.md reports/argos-2026-11-09-equipos.md`.
+- **Dominio nuevo**: `sitio.fgecoahuila.gob.mx` (Fiscalía de Coahuila).
+- **Prioridad sobre el ciclo**: ver «Abiertos que ARGOS 150 hereda». **Ciclo B** (Noreste + Golfo encabezan el triaje judicial).
+
+## Novedades de 151 (lecciones de 150)
+- ⚠️ **TITULAR LITERAL ENTRE COMILLAS** para toda cifra que propongas «por titular»: en 150, Silao «13 armas» y el herido de Zitácuaro eran solo resumen.
+- ⚠️ **ANTES DE «FUENTE ÚNICA», BÚSQUEDA POR TOPÓNIMO EXACTO**: San Juan del Río tenía ocho emisores.
+- **Cifras del boletín federal**: solo con titular de un medio; si no, a «vistos».
+- **Nombres propios** de víctimas y detenidos: no los copies en el informe.
+- **Grep de cotejo**: `reports/argos-2026-11-05.html reports/argos-2026-11-06.html reports/argos-2026-11-09.html reports/argos-2026-11-14.html reports/indice-arg-id.md reports/argos-2026-11-14-fuentes.md reports/argos-2026-11-14-equipos.md`.
+- **Dominio nuevo**: `sspe.chihuahua.gob.mx` (SSPE de Chihuahua).
+- **Prioridad sobre el ciclo**: ver «Abiertos que ARGOS 151 hereda». **Ciclo C** (Occidente + Sureste encabezan el triaje judicial).
+
+## Novedades de 152 (lecciones de 151)
+- ⚠️ **«SIN RUTA» = SIN DÍA**, no «sin hora» (Golfo entregó Texhuacán como sin ruta teniendo tres rutas del 14).
+- ⚠️ **HOMÓNIMOS DE TOPÓNIMO**: «Tepehuacán de Guerrero» es de Hidalgo; «El Arenal» es colonia de Tlalnepantla y municipio de Jalisco. Fija entidad por titular.
+- ⚠️ **NOTA SIN FECHA EN UNA -REC- O EN UN DESLINDE**: fija su mes antes de citarla (Tecate: la nota de Uniradio era de julio).
+- **Detenidos en aseguramiento**: solo cifra de autoridad; el titular de un medio va a la ficha como «por titular», no al conteo.
+- **Grep de cotejo**: `reports/argos-2026-11-06.html reports/argos-2026-11-09.html reports/argos-2026-11-14.html reports/argos-2026-11-15.html reports/indice-arg-id.md reports/argos-2026-11-15-fuentes.md reports/argos-2026-11-15-equipos.md`.
+- **Prioridad sobre el ciclo**: ver «Abiertos que ARGOS 152 hereda». **Ciclo A** (Noroeste + Centro encabezan el triaje judicial). **Durango: consulta propia de alto impacto obligatoria (cuarta edición solo amplia).**
+
+## Novedades de 153 (lecciones de 152)
+- ⚠️ **TITULAR LITERAL Y URL DE CADA CITA**: en 152, seis citas entrecomilladas no existían o eran de otro medio. No parafrasees un titular dentro de comillas.
+- ⚠️ **SALDO ACTUALIZADO FRENTE A PRIMER PARTE**: entrega los dos titulares (Pueblo Nuevo: 1 → 2 muertos; Galeana: 3 → 2 heridos).
+- ⚠️ **UN AGREGADO O BALANCE NO ES FUENTE DEL HECHO** (Infobae «Mazatlán suma siete asesinatos…»).
+- ⚠️ **ARMAMENTO POR DOMINIO OBLIGATORIO**: al menos una consulta `site:` de armamento por entidad de tu región, también si encabezas sentencias (152: Noroeste y Golfo, cero).
+- **Seguimientos**: solo se atan a un ARG-ID con dos campos coincidentes (Monterrey: secuestro frente a riña).
+- **Grep de cotejo**: `reports/argos-2026-11-09.html reports/argos-2026-11-14.html reports/argos-2026-11-15.html reports/argos-2026-11-16.html reports/indice-arg-id.md reports/argos-2026-11-16-fuentes.md reports/argos-2026-11-16-equipos.md`.
+- **Prioridad sobre el ciclo**: ver «Abiertos que ARGOS 153 hereda». **Ciclo B** (Noreste + Golfo encabezan el triaje judicial). Campeche: cuarta edición sin dominio de fiscalía.
+
+## Novedades de 154 (lecciones de 153)
+- ⚠️ **N+ «BALACERA HOY DD DE MES» = LIVEBLOG**: no fecha ni sostiene cifras; busca otra fuente con ruta.
+- ⚠️ **URL COMPLETA Y TITULAR LITERAL**: en 153, El Diario de Chihuahua (`diario.mx`) llegó parafraseado y con el día de ruta equivocado; «PCM» era Grupo Marmor.
+- ⚠️ **HECHOS NO FICHABLES**: entrégalos en VISTOS, no dentro de otro hecho.
+- **Grep de cotejo**: `reports/argos-2026-11-14.html reports/argos-2026-11-15.html reports/argos-2026-11-16.html reports/argos-2026-11-17.html reports/indice-arg-id.md reports/argos-2026-11-17-fuentes.md reports/argos-2026-11-17-equipos.md`.
+- **Prioridad sobre el ciclo**: ver «Abiertos que ARGOS 154 hereda». **Ciclo C** (Occidente + Sureste encabezan el triaje judicial). **Noroeste: sentencias de BC, Son, Chih, Sin, Dgo obligatorias** (dos ediciones sin consulta).
+- **Dominios nuevos o confirmados en 153**: `ssc.qroo.gob.mx` (solo transparencia, sin sala de prensa indexada); Campeche: probar `ucs.campeche.gob.mx/category/fge/`.
+
+## Novedades de 155 (lecciones de 154)
+- ⚠️ **DETENCIÓN YA DIFUNDIDA**: antes de proponer una detención como hecho del corte, busca su PRIMERA publicación (Cajeme: detenciones del 17 ya publicadas el 12-nov).
+- ⚠️ **FECHA DEL HECHO EN BOLETÍN ESTATAL**: un boletín publicado hoy puede fechar el hecho semanas antes (Acámbaro: 17-oct); entrega la fecha del hecho que dé el boletín.
+- ⚠️ **SALDO ACTUALIZADO**: entrega primer parte y saldo posterior, cada uno con su titular (Chalco y Culiacán: 1 → 2).
+- ⚠️ **ENTIDAD DEL ÍNDICE**: `ARG-152-005` es Mazatlán (col. Pueblo Nuevo), Sinaloa.
+- **Grep de cotejo**: `reports/argos-2026-11-15.html reports/argos-2026-11-16.html reports/argos-2026-11-17.html reports/argos-2026-11-18.html reports/indice-arg-id.md reports/argos-2026-11-18-fuentes.md reports/argos-2026-11-18-equipos.md`.
+- **Prioridad sobre el ciclo**: ver «Abiertos que ARGOS 155 hereda». **Ciclo A** (Noroeste + Centro encabezan el triaje judicial). **BCS: alto impacto y sentencias sin consulta en 154.**
+- **Dominios en 154**: `ucs.campeche.gob.mx` (FGE Campeche, solo 2020-2021 indexado) · `fiscalia.sonora.gob.mx` sin páginas (probar sin `site:`) · `boletines.guanajuato.gob.mx` (gobierno estatal, no fiscalía).
+
+## Novedades de 156 (lecciones de 155)
+- ⚠️ **FECHA DE LA DETENCIÓN**: en todo 🟢, entrega el día de la captura con su fuente; la ruta de la nota fecha la publicación (Cancún y Chihuahua: ruta 19, captura 18 por resumen).
+- ⚠️ **SALDO DE OTRA FICHA**: para proponer corregirlo, dos campos individualizadores por titular (Tecate: «cuádruple homicidio» sin Los Encinos ni fecha en el titular).
+- ⚠️ **HOMÓNIMO EN TITULAR SIN FECHA**: comprueba el mes de toda nota sin fecha en la ruta antes de citarla (Quadratín Uruapan: posible septiembre).
+- ⚠️ **ARMAMENTO POR DOMINIO EN CADA ENTIDAD** aunque encabeces sentencias (Centro dejó seis entidades sin consulta en 155).
+- **Grep de cotejo**: `reports/argos-2026-11-16.html reports/argos-2026-11-17.html reports/argos-2026-11-18.html reports/argos-2026-11-19.html reports/indice-arg-id.md reports/argos-2026-11-19-fuentes.md reports/argos-2026-11-19-equipos.md`.
+- **Prioridad sobre el ciclo**: ver «Abiertos que ARGOS 156 hereda». **Ciclo B** (Noreste + Golfo encabezan el triaje judicial). **Durango: alto impacto sin consulta en 155. Mexicali `-146-011`: tercera edición sin consulta.**
+- **Dominios en 155**: `pgjebcs.gob.mx` (BCS, devuelve páginas sin fecha) · `sitio.fgecoahuila.gob.mx` (Coah, devuelve páginas) · `fiscalianl.gob.mx` (NL) · `portal.fgeo.gob.mx` (Oax, boletín 2,993) · `fiscalia.sonora.gob.mx` sigue sin páginas · `gob.mx/sspc` indexa los diarios del 17 y 18 por título.
+
+## Novedades de 157 (lecciones de 156)
+- ⚠️ **CUERPOS TRAS UN OPERATIVO**: antes de proponer cuerpos hallados en el municipio de un enfrentamiento, crúzalos con el saldo de abatidos (Mojolo = 3 de los 7 abatidos de Guasave, por titular de Infobae).
+- ⚠️ **AÑO DE LA NOTA**: comprueba el año de toda nota sin fecha en la ruta (Excélsior «Emboscada en Guasave…» era de 2025).
+- ⚠️ **«FUENTE ÚNICA»**: una búsqueda por topónimo exacto antes de declararla (Stanza Torralba y Mexicali tenían cuatro emisores).
+- ⚠️ **RESUMIDOR CON FECHAS FALSAS**: Jalisco (comunicado de junio presentado como del 20-nov) y Acapulco km 21 (3-nov presentado como sábado 21). Fecha por ruta o titular, siempre.
+- ⚠️ **EQUIPO QUE ENCABEZA ARMAMENTO: AL MENOS UNA site: DE SENTENCIAS POR ENTIDAD PRIORITARIA** (Centro dejó siete fiscalías sin sentencias en 156).
+- **Grep de cotejo**: `reports/argos-2026-11-17.html reports/argos-2026-11-18.html reports/argos-2026-11-19.html reports/argos-2026-11-22.html reports/indice-arg-id.md reports/argos-2026-11-22-fuentes.md reports/argos-2026-11-22-equipos.md`.
+- **Prioridad sobre el ciclo**: ver «Abiertos que ARGOS 157 hereda». **Ciclo C** (Occidente + Sureste encabezan el triaje judicial).
+- **Dominios en 156**: `ssp.zacatecas.gob.mx` (SSP Zac, devuelve páginas) · `fiscaliaslp.gob.mx` (sentencias sin fecha en ruta) · `veracruz.gob.mx/2026/11/20/…` (la SSP de Veracruz publica con fecha en la ruta) · `portal.fgeo.gob.mx` (boletines 2992, 2993, 2998) · `tamaulipas.gob.mx` sin páginas · `fiscalia.puebla.gob.mx` sin páginas · `fiscalia.sonora.gob.mx` solo convocatorias.
+
+## Novedades de 158 (lecciones de 157)
+- ⚠️ **LIVEBLOG CON RUTA DE OTRO DÍA**: Infobae «en-vivo-…-hoy-22-de-noviembre» con ruta 2026/11/23 no fecha ni sostiene.
+- ⚠️ **CIFRA EN TITULAR**: antes de marcar una cifra «solo por resumen», búscala entre comillas (Lomas de Mazatlán, «90 cartuchos», estaba en titular).
+- ⚠️ **SALDO IDÉNTICO EN LA MISMA COLONIA**: sin ruta con fecha, no se propone (Chilpancingo, col. Del PRI).
+- ⚠️ **VISTOS DE LA VENTANA ANTERIOR CON VÍCTIMAS MÚLTIPLES** (muerto + heridos): propónlos como `-REC-` 🔴 (Ostula).
+- ⚠️ **AUTORIDAD CITADA POR MEDIOS SIN DOCUMENTO**: Institucional 0.
+- **Grep de cotejo**: `reports/argos-2026-11-18.html reports/argos-2026-11-19.html reports/argos-2026-11-22.html reports/argos-2026-11-23.html reports/indice-arg-id.md reports/argos-2026-11-23-fuentes.md reports/argos-2026-11-23-equipos.md`.
+- **Prioridad sobre el ciclo**: ver «Abiertos que ARGOS 158 hereda». **Ciclo A** (Noroeste + Centro encabezan el triaje judicial).
+- **Dominios en 157**: `fiscaliaguerrero.gob.mx` (índice atrasado: último 2-oct) · `fiscaliatabasco.gob.mx/Boletin/Historico` (listado con números de boletín) · `fiscalia.sonora.gob.mx` y `fiscalia.chihuahua.gob.mx` sin páginas · `fiscaliasinaloa.mx` solo normatividad · `ssc.qroo.gob.mx` solo transparencia · `spsc.campeche.gob.mx` último indexado 27-oct.
+
+## Novedades de 159 (lecciones de 158)
+- ⚠️ **PRIMERA PUBLICACIÓN TAMBIÉN A MITAD DE VENTANA**: Ixtapaluca llegó con ruta del 25 y tenía rutas del 23.
+- ⚠️ **DESARROLLO DE CADA ROJO**: busca el día siguiente al hecho (Santa Ana: causa y captura por titulares del 24).
+- ⚠️ **TRES CIFRAS DEL MISMO DESPLIEGUE** (Defensa / boletín / SSP): entrégalas todas, sin arbitrar.
+- ⚠️ **DETENIDOS EN EL MISMO MUNICIPIO Y DÍA**: declara si pueden ser los mismos (Mazatlán).
+- **Grep de cotejo**: `reports/argos-2026-11-19.html reports/argos-2026-11-22.html reports/argos-2026-11-23.html reports/argos-2026-11-26.html reports/indice-arg-id.md reports/argos-2026-11-26-fuentes.md reports/argos-2026-11-26-equipos.md`.
+- **Prioridad sobre el ciclo**: ver «Abiertos que ARGOS 159 hereda». **Ciclo B** (Noreste + Golfo encabezan el triaje judicial).
+- **Dominios en 158**: `ssp.yucatan.gob.mx/noticia/NNNN` (SSP Yucatán, sin fecha en la ruta) · `fiscaliatabasco.gob.mx/Boletin/Historico` (último visible 5127) · `fgr.org.mx/es/FGR/Estatal` (listado; DPE/5332/2026) · `ssp.sonora.gob.mx` solo portada · `ssp.guanajuato.gob.mx` sin páginas · `ucs.campeche.gob.mx` sin páginas · `gob.mx/sspc` indexa el boletín del 23.
+
+## Novedades de 160 (lecciones de 159)
+- ⚠️ **ROJO URBANO: BÚSQUEDA «MUNICIPIO + FECHA EN LA RUTA» DEL MEDIO LOCAL**: tres homicidios de Mazatlán del 26 (Cerritos, Prados del Sol, Chulavista) solo los vio procedencia-cifras por IDs contiguos de Luz Noticias.
+- ⚠️ **HERIDO QUE MUERE EL MISMO DÍA**: busca el titular del deceso antes de sumar heridos (yonke de Chihuahua: «Muere único sobreviviente de ataque en yonke»).
+- ⚠️ **URL COMPLETA CON CADA TITULAR**: en 159 se atribuyó a La Nigua el título del listado de gob.mx/sspc; El Siglo de Durango y El Porvenir no se reprodujeron en R2.
+- ⚠️ **SEÑUELO DE AÑO EN EL BOLETÍN FEDERAL**: «acciones relevantes del 26 de noviembre» devuelve 2025.
+- **Grep de cotejo**: `reports/argos-2026-11-22.html reports/argos-2026-11-23.html reports/argos-2026-11-26.html reports/argos-2026-11-27.html reports/indice-arg-id.md reports/argos-2026-11-27-fuentes.md reports/argos-2026-11-27-equipos.md`.
+- **Prioridad sobre el ciclo**: ver «Abiertos que ARGOS 160 hereda». **Ciclo C** (Occidente + Sureste encabezan el triaje judicial).
+- **Dominios en 159**: `fgr.org.mx` (portada con comunicado 846/26 del 26-nov, por resumen) · `fgjtam.gob.mx` (portada con FGJE-476-2026; sin URL propia) · `portal.fgeo.gob.mx` (boletines hasta 3014, 25-nov) · `fiscaliaguerrero.gob.mx` (último 2-oct) · `fiscalia.jalisco.gob.mx` (comunicado-1939-20261019) · `sitio.fgecoahuila.gob.mx` (último 6-ago) · `fiscalianl.gob.mx` sin páginas en sentencias · `spsc.campeche.gob.mx` (último 27-oct) · FGE Campeche: sin dominio (sexta edición) · `sintesis.yoporlajusticia.gob.mx` (portal gubernamental, Edomex, no identificado como FGJEM).

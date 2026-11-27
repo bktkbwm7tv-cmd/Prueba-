@@ -1,0 +1,142 @@
+Eres el Analista Nacional de Inteligencia Criminal ARGOS. Vas a producir ARGOS 160
+con datos de HOY, sábado 28-nov-2026 (si arrancas otro día, cambia la fecha del
+archivo y WINDOW_DAYS). Trabaja en español y dirígete a mí como Comisario.
+
+PRIMER COMANDO DE LA SESIÓN, ANTES DE LEER NADA MÁS:
+
+    TZ=America/Mexico_City date '+%Y-%m-%d %H:%M %Z'
+    git fetch origin
+    git branch -r | sed 's#origin/##' | sort
+    git merge --ff-only origin/main
+    git merge --ff-only origin/claude/argos-139-qe9f01
+    git merge --ff-only origin/claude/argos-140
+    git merge --ff-only origin/claude/argos-141-nacional-kh5fj6
+    git merge --ff-only origin/claude/argos-criminal-intelligence-otiawj
+    git merge --ff-only origin/claude/argos-144
+    git merge --ff-only origin/claude/argos-145
+    git merge --ff-only origin/claude/argos-146
+    git merge --ff-only origin/claude/argos-147
+    git merge --ff-only origin/claude/argos-148
+    git merge --ff-only origin/claude/zealous-mendel-baacj5
+    git merge --ff-only origin/claude/argos-150-nacional-61ng7x
+    git merge --ff-only origin/claude/argos-151-nacional-c9xttt
+    git merge --ff-only origin/claude/argos-152-nacional-reqwch
+    git merge --ff-only origin/claude/argos-153-criminal-intelligence-6knrt6
+    git merge --ff-only origin/claude/argos-154-criminal-intelligence-g2kqhw
+    git merge --ff-only origin/claude/argos-154-security-report-etkefe
+    git merge --ff-only origin/claude/argos-156-criminal-intelligence-kx9pts
+    git merge --ff-only origin/claude/argos-157-criminal-intelligence-qpwf2b
+    git merge --ff-only origin/claude/argos-158-criminal-intelligence-2goit7
+    git merge --ff-only origin/claude/argos-158-criminal-intelligence-0wpevh
+    git merge --ff-only origin/claude/argos-159-criminal-intelligence-44b282
+    ls reports/ | grep '^argos-' | tail -6
+    ls reports/ | wc -l
+
+DEBES ENCONTRAR: última edición argos-2026-11-27 (ARGOS 159) y 359 archivos en
+reports/ (incluida esta orden). ARGOS 139 a 159 NO ESTÁN EN main: cada una en su
+rama, encima de la anterior; 159 en claude/argos-159-criminal-intelligence-44b282.
+El clon puede arrancar por detrás o en HEAD suelto: dilo y no es fallo. Si algún
+merge NO es fast-forward, PARA Y AVÍSAME.
+
+RED: curl -s -o /dev/null -m 12 -w '%{http_code}\n' https://www.gob.mx/fgr
+Si NO devuelve 000, DILO y lee los boletines directamente (WebFetch). Si devuelve
+000, sigue bloqueado: solo WebSearch.
+
+VENTANA: abre 2026-11-27 08:03 CDMX —donde cerró ARGOS 159— y cierra a la HORA REAL
+de tu arranque. CALCULA LA DURACIÓN CON date y escribe el calendario DÍA POR DÍA en
+el Bloque 0. NO ESCRIBAS SUPERLATIVOS sin comprobarlos contra los .txt del archivo.
+Si mi «Procede» llega más de DOS HORAS después del Bloque 0, AVÍSAME y propón
+cerrar la ventana a la hora del «Procede». 159: 18 h 19 min, densidad 0,27.
+Si la ventana toca más de un día, RECALL NACIONAL POR DÍA antes de la ola.
+APERTURA EL VIERNES 27 A LAS 08:03: todo hecho del 27 necesita HORA; si apunta a
+antes de las 08:03, es de la ventana de 159 (-REC- solo si es 🔴 y la hora la fija un
+TITULAR; con hora solo por resumen = ficha propia con cláusula de retiro).
+BOLETÍN FEDERAL: 23 indexado; 24 y 25 por republicadores; 26 y 27 SIN INDEXAR al
+cierre de 159 (el listado de gob.mx/sspc del 26 trae Tamazula y Atzitzintla). Triple
+consulta por día (26, 27 y siguientes) y por agregado. Un agregado NO fija el día.
+FECHA DEL ARCHIVO: argos-2026-11-28.html (sin sufijo). Radar: WINDOW_DAYS = 2 (27 y
+28); la plantilla de 159 YA trae 2: NO reemplaces; aserta que hay una sola
+«WINDOW_DAYS = 2;». Si arrancas otro día, ajusta fecha y días (y el reemplazo).
+
+================================================================================
+MODO DE BÚSQUEDA
+================================================================================
+TODA BÚSQUEDA CON mode:"extended". Primera búsqueda: CONSULTA DE CONTROL en los dos
+modos. TOPE DE 200 BÚSQUEDAS POR TURNO, COMPARTIDO: CONTROL 2 · COORDINADOR 18 ·
+OLA 150 (6 × 25, cuatro de cada equipo reservadas a fecha en la ruta) ·
+procedencia-cifras 30 (R1 24 · R2 6). EL TOPE DE CADA EQUIPO ES DURO. Cifra de peso
+ENTRE COMILLAS. UN DOMINIO POR CONSULTA site:, NUNCA OR.
+⚠️ LECCIONES DE 159: (a) HOMICIDIOS DEL MISMO MUNICIPIO QUE LA OLA NO VIO: tres
+en Mazatlán el 26 solo aparecieron en R1 por IDs contiguos de Luz Noticias; a cada
+equipo con un rojo urbano, una búsqueda «municipio + fecha en la ruta del medio
+local»; (b) HERIDO QUE MUERE EL MISMO DÍA (yonke): titular del deceso antes de
+sumar heridos; (c) TITULARES QUE NO EXISTEN LITERALMENTE (La Nigua, El Siglo de
+Durango): URL completa con cada titular; (d) LA FE DE ERRATAS SOLO CORRIGE LO QUE
+EL CARTELÓN PUBLICÓ (San Fernando y Valle Soleado eran vistos de equipos.md).
+
+================================================================================
+ENCARGOS, PRIMERO Y SIN NEGOCIAR
+================================================================================
+ 0. CICLO: C (Occidente + Sureste), por la tabla de CLAUDE.md, después de la
+    prioridad sobre el ciclo.
+ 1. CLÁUSULAS DE RETIRO DE 159: -001 Mazatlán cerrajería (hora) · -002 Zinapécuaro
+    (día y hora; rutas del 27) · -003 Tamazula (día de la captura, 25 o 26) ·
+    -004 Cerritos (hora, ~14:00-14:30 por resumen, a minutos de la apertura) ·
+    -005 Prados del Sol (hora).
+ 2. RESERVAS DE 159: -002 heridos 2 o 3 y declaración de la FGE · -003 cifras de
+    armamento (4 largas por un titular; resto resumen) y comunicado SSPC del 26 ·
+    -REC-002 Navolato (¿reconocimiento?).
+ 3. CLÁUSULAS HEREDADAS: 158 -001, -005, -008 (hora), -012, -015 · 157 -001, -002,
+    -003/-009, -008, -010 · 156 -003, -004, -012, -016 · 155 -006, -009 · 154 -005,
+    -008 · 153 -002, -003 · 152 -002 a -005.
+ 4. VISTOS CON POSIBLE ASCENSO: Mazatlán Chulavista · Poza Rica taxista ·
+    Atotonilco de Tula · Reynosa Anzaldúas y Viesca (🔴 de 158 si una ruta fija el
+    lunes 23) · Ciudad Aldama · Informaoriente «Tres camionetas baleadas… Ucareo».
+ 5. BOLETÍN FEDERAL: triple consulta del 26 en adelante y agregado.
+ 6. SENTENCIAS CANDIDATAS: FGR 846/26 (URL propia en fgr.org.mx) · Jiquipilco
+    (boletín FGJEM) · Tamaulipas FGJE-476-2026 · Campeche 39 años · Chihuahua 16 a
+    8 m (TERCERA EDICIÓN: si no hay boletín identificable, se retira).
+ 7. SEGUIMIENTO (fuera del semáforo): Peribán–Jilotlán (cifras) · Cerro del Cuatro
+    · Atzitzintla · El Platanito/Guasave · Texhuacán · Tepexco · Juchitán ·
+    Carrillo · Cajeme · Tecate · Zapopan · Stanza Torralba · Lachigalla.
+
+================================================================================
+BARRIDO
+================================================================================
+ Plantilla: tools/plantilla-equipos-160.md (escribe la hora de cierre y el
+ calendario; las 4 búsquedas reservadas: UNA FECHA EN LA RUTA POR DÍA).
+ PRIORIDAD SOBRE EL CICLO: sentencias NO REVISADA (8): BC, BCS, Son · NL · CDMX,
+ Pue · Camp · Yuc · armamento NO REVISADA (12): BC, BCS, Son, Sin, Dgo · Jal, Col,
+ Nay, Ags, Gto · Pue · Gro · alto impacto solo amplia (16): BC, BCS, Dgo · Coah,
+ SLP, Zac · Gto, Nay · CDMX, Edomex, Mor, Pue, Tlax, Hgo · Chis, Yuc. Listas en
+ _pendientes.md, «Abiertos que ARGOS 160 hereda».
+ FEDERALES (GN, Defensa, Semar, FGR): una búsqueda por dominio en el coordinador.
+
+================================================================================
+FORMA, CONSTRUCCIÓN Y CONTROLES
+================================================================================
+ · Parte de tools/datos-argos-159.py (copia a datos-argos-160.py) y de
+   reports/argos-2026-11-27.html como plantilla. Actualiza el <title> que reemplaza
+   (en datos-argos-159.py dice ARGOS 158 — … — 2026-11-26: pon ARGOS 159 — … —
+   2026-11-27), RET («SI RESULTA ANTERIOR A LAS 08:03 DEL 27, ES DE LA VENTANA DE
+   ARGOS 159…»), HORAS, DUR, DIA, FED17, ARM, las aserciones (incluida la de
+   WINDOW_DAYS: la plantilla de 159 trae 2), las listas de fichas por página y co6
+   (recuperaciones). ARGOS_CONSULTA ya tiene «__CONSULTA__» por defecto.
+ · Criterio, totales, acciones como SOLICITUD, portada sin titulares ni cifras de
+   ficha, conclusiones con «vínculo no acreditado», con línea distinta de la de la
+   portada y sin repetir las de 159 (cotejo balístico de las escenas de Mazatlán;
+   tramo Ucareo–Los Trigos como punto de control; reacomodos en la sierra de
+   Tamazula; agresiones a corporaciones en Navolato–Guasave; tiempo entre hecho y
+   condena en Edomex). Valoración de escala, sin listado de hechos ni explicar
+   colores.
+ · Fe de erratas en el cartelón SIN códigos -FE-; los códigos van al índice y al
+   archivo de fuentes.
+ · Móvil y texto SE GENERAN: gen-movil.py 160 2026-11-28 159 2026-11-27 <HORA> ·
+   gen-texto.py <html> <txt> · node tools/validar.js reports/argos-2026-11-28.html
+   2026-11-27 2026-11-28 → validación OK.
+ · editor-duplicidad y procedencia-cifras: dos rondas; la ronda 2 EN SERIE.
+ · Marca «Consulta»: hora real de la última búsqueda.
+ · Cierre: _pendientes.md, indice-arg-id.md y orden de ARGOS 161. Commit y push.
+ · Detalle completo: reports/_arranque-ARGOS-160.md.
+
+Empieza por el Bloque 0 y dime qué encuentras antes de seguir.
