@@ -3,8 +3,8 @@
 Repositorio: /home/user/Prueba- (lee CLAUDE.md si dudas de una regla).
 
 ## Ventana
-- ABRE: **jueves 26-nov-2026 13:44 CDMX** (donde cerró ARGOS 158). CIERRA: **hora real de arranque de la sesión de ARGOS 159** (o del «Procede») (el coordinador la escribe aquí al copiar la plantilla: ____).
-- Calendario: el coordinador lo escribe día por día; si la ventana toca dos o más fechas, **una fecha en la ruta por día** en las 4 búsquedas reservadas. Comprueba siempre el día de la semana que dice la fuente contra el calendario.
+- ABRE: **jueves 26-nov-2026 13:44 CDMX** (donde cerró ARGOS 158). CIERRA: **hora real de arranque de la sesión de ARGOS 159** (o del «Procede») → **viernes 27-nov-2026 08:03 CDMX** (18 h 19 min).
+- Calendario: **jue 26-nov 13:44 → 24:00 (10 h 16) · vie 27-nov 00:00 → 08:03 (8 h 03)**. Las 4 búsquedas reservadas: dos con «2026/11/26» y dos con «2026/11/27» (o «20261126»/«2026-11-27» según el medio); si la ventana toca dos o más fechas, **una fecha en la ruta por día** en las 4 búsquedas reservadas. Comprueba siempre el día de la semana que dice la fuente contra el calendario.
 - **ARGOS 158 (ventana 23-nov 08:35 → 26-nov 13:44) publicó 19 hechos** (`ARG-158-001` a `-019`: Santa Ana multihomicidio y captura; Peribán–Jilotlán agresión a militares y 10 detenidos; Yuriria; Cerro del Cuatro; Ixtapaluca; Monterrey San Bernabé; Mazatlán Los Acantos y detenidos; Ahome; Hueyapan de Ocampo; Tepito; Hermosillo; Progreso; Mazatlán «Chapitos»; Ajijic; Ixtlán del Río; Atzitzintla) y **tres `-REC-`** (Ocuiltzapotlán; Chietla; Cuitzeo). Un hecho del 26-nov antes de las 13:44 que 158 NO publicó es de la ventana de 158: `-REC-` **solo si es 🔴 y la hora la fija un titular**; con hora solo por resumen, ficha propia con cláusula de retiro.
 - Todo hecho del 26 necesita HORA frente a las 13:44. Nunca infieras la hora. «Esta mañana» en un resumen NO fecha un hecho.
 - Criterio de inclusión: entra con marca el hecho con **ruta fechada o titular con día**. ⚠️ **«Rojo sin ruta» = sin DÍA por ruta o titular**.
